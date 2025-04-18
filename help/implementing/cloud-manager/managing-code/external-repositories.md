@@ -4,10 +4,10 @@ description: 了解如何將外部存放庫新增至 Cloud Manager。Cloud Manag
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 186c4cfc11bcab38b0b9b74143cabbd2af317a81
+source-git-commit: a01bda5218b7cba488c490b6c29e5f5a535416d5
 workflow-type: tm+mt
-source-wordcount: '2307'
-ht-degree: 23%
+source-wordcount: '1866'
+ht-degree: 28%
 
 ---
 
@@ -27,7 +27,6 @@ ht-degree: 23%
 1. 為外部存放庫提供存取權杖。
 1. 驗證私人GitHub存放庫的所有權。
 1. [將webhook](#configure-webhook)設定到外部存放庫。
-
 
 
 ## 新增外部存放庫 {#add-ext-repo}
@@ -212,90 +211,5 @@ Cloud Manager可讓您為已新增的外部Git存放庫設定webhook。 請參�
 * 請確定Webhook URL包含有效的API金鑰。
 * 檢查您的Git廠商設定中是否已正確設定webhook事件。
 * 如果PR驗證或管道觸發程式無法運作，請確認Cloud Manager和您的Git供應商中的Webhook密碼都是最新的。
-
-
-## 從外部Git提供者部署至快速開發環境 {#deploy-to-rde}
-
->[!NOTE]
->
->此功能可透過早期採用者計畫取得。 如果您有興趣測試這項新功能並分享您的意見回饋，請從與Adobe ID相關聯的電子郵件地址傳送電子郵件至[CloudManager_BYOG@adobe.com](mailto:cloudmanager_byog@adobe.com)。 請務必包含您要使用的 Git 平台以及您是否使用私人/公開或企業存放庫結構。
-
-使用[自備Git (BYOG)設定](/help/implementing/cloud-manager/managing-code/external-repositories.md)時，Cloud Manager支援直接從外部Git提供者將程式碼部署到快速開發環境(RDE)。
-
-從外部Git存放庫部署到RDE需要下列專案：
-
-* 使用與Cloud Manager （BYOG設定）整合的外部Git存放庫。
-* 您的專案必須布建一或多個RDE環境。
-* 如果您使用`github.com`，則必須檢閱並接受更新的GitHub應用程式安裝，以授與必要的新許可權。
-
-**使用說明**
-
-* 目前僅支援AEM內容和Dispatcher套件部署至RDE。
-* 尚不支援部署其他套件型別(例如完整的AEM應用程式套件)。
-* 目前不支援使用註解重設RDE環境。 客戶必須使用現有的AIO CLI命令，如[此處所述](/help/implementing/developing/introduction/rapid-development-environments.md)。
-
-**運作方式**
-
-1. **程式碼品質驗證訊息。**
-
-   當提取請求(PR)觸發程式碼品質管道執行時，驗證結果會指出部署能否繼續前往RDE環境。
-
-   在GitHub Enterprise上的外觀：
-   GitHub Enterprise上的![程式碼品質驗證訊息](/help/implementing/cloud-manager/managing-code/assets/rde-github-enterprise-code-quality-validation-message.png)
-
-   在GitLab上的外觀：
-   GitLab上的![程式碼品質驗證訊息](/help/implementing/cloud-manager/managing-code/assets/rde-gitlab-code-quality-validation-message.png)
-
-   在Bitbucket上的外觀：
-   位元貯體](/help/implementing/cloud-manager/managing-code/assets/rde-bitbucket-code-quality-validation-message.png)上的![程式碼品質驗證訊息
-
-1. **使用註解觸發部署。**
-
-   若要啟動部署，請以下列格式將註解新增至PR： `deploy on rde-environment-<envName>`
-
-   ![使用註解觸發部署](/help/implementing/cloud-manager/managing-code/assets/rde-trigger-deployment-using-comment.png)
-
-   `<envName>`必須符合現有RDE環境的名稱。 如果找不到名稱，則會傳回指出環境無效的註解。
-
-   如果環境狀態尚未就緒，您會收到以下註解：
-
-   ![環境未準備好部署](/help/implementing/cloud-manager/managing-code/assets/rde-environment-not-ready.png)
-
-
-
-
-1. **環境檢查和成品部署。**
-
-   如果RDE準備就緒，Cloud Manager會張貼新支票給PR。
-
-   在GitHub Enterprise上的外觀：
-
-   GitHub上的![環境狀態](/help/implementing/cloud-manager/managing-code/assets/rde-github-environment-status-is-ready.png)
-
-   在GitLab上的外觀：
-
-   GitLab上的![環境狀態](/help/implementing/cloud-manager/managing-code/assets/rde-gitlab-deployment-1.png)
-
-   在Bitbucket上的外觀：
-
-   ![位元貯體上的環境狀態](/help/implementing/cloud-manager/managing-code/assets/rde-bitbucket-deployment-1.png)
-
-
-1. **部署訊息成功。**
-
-   部署完成時，Cloud Manager會張貼成功訊息，概述部署至目標環境的成品。
-
-   在GitHub Enterprise上的外觀：
-
-   GitHub上環境的![部署狀態](/help/implementing/cloud-manager/managing-code/assets/rde-github-environment-deployed-artifacts.png)
-
-   在GitLab上的外觀：
-
-   ![GitLab上環境的部署狀態](/help/implementing/cloud-manager/managing-code/assets/rde-gitlab-deployment-2.png)
-
-   在Bitbucket上的外觀：
-
-   ![位元貯體上環境的部署狀態](/help/implementing/cloud-manager/managing-code/assets/rde-bitbucket-deployment-2.png)
-
 
 
