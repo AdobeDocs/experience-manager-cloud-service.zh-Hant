@@ -4,9 +4,9 @@ description: 瞭解如何使用WYSIWYG範本編輯器建立 [!DNL Dynamic Media]
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 184149144d1f8d204241fcc477f937fa7c225895
+source-git-commit: c9a4a361561cb03b17e0b931b8946116791c62e1
 workflow-type: tm+mt
-source-wordcount: '3106'
+source-wordcount: '3172'
 ht-degree: 1%
 
 ---
@@ -83,12 +83,13 @@ ht-degree: 1%
    * 在&#x200B;**[!UICONTROL 編輯[!DNL Dynamic Media]設定頁面]**&#x200B;上，預設設定為&#x200B;**[!UICONTROL 已停用]**&#x200B;的&#x200B;**[!UICONTROL [!DNL Dynamic Media]同步處理模式]**&#x200B;未套用至所有AEM資料夾（**[!UICONTROL 同步處理所有內容]**&#x200B;已取消核取）。 如需詳細資訊，請參閱[設定Dynamic Media Cloud Service](/help/assets/dynamic-media/config-dm.md)。
    * 目的地資料夾或子資料夾的&#x200B;**[!UICONTROL [!DNL Dynamic Media]同步模式]**&#x200B;設定為&#x200B;**[!UICONTROL 啟用子資料夾]**，您會在建立後儲存範本。 如需詳細資訊，請參閱[設定 [!DNL Dynamic Media] Cloud Service](/help/assets/dynamic-media/config-dm.md)。
 
-## 建立[!DNL Dynamic Media] WYSIWYG範本{#how-to-create-dynamic-media-wysiwyg-template}
+## 建立[!DNL Dynamic Media]範本{#how-to-create-dynamic-media-template}
 
 執行以下步驟來建立[!DNL Dynamic Media]範本：
 
 1. 導覽至您的[!DNL Assets View]，並在![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**中[建立資料夾](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view)。 ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**&#x200B;中的資料夾樹狀結構會在&#x200B;**[!UICONTROL Dynamic Media Assets]**&#x200B;中復寫。 將您的[!DNL Dynamic Media]範本儲存在此[!UICONTROL Dynamic Media Assets]資料夾中。
-1. 選取![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**和[將您的影像同時上傳和發佈至 [!DNL AEM] 和 [!DNL Dynamic Media] 和](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation)，以使用這些影像來建立範本。 需要發佈影像才能產生範本的傳遞URL，此URL可用於下游應用程式。
+1. 選取![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**和[將您的影像上傳並發佈至 [!DNL AEM] 和 [!DNL Dynamic Media] 同時](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation)，以便在建立範本時使用。 建立範本後，需要發佈影像才能產生範本的傳遞URL，而此URL可用於下游應用程式。
+1. [執行資產上傳和發佈步驟](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation)，將您的字型檔案同時上傳和發佈至AEM和Dynamic Media，以在文字圖層中使用預設Adobe Sans F2字型系列以外的字型。 [支援的字型檔案格式為：AFM、OTF、PFB、PFM、PhotoFont、TTC、TTF](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats)。 請確定[重新處理](/help/assets/reprocessing-assets-view.md)較舊的字型(在[!DNL Assets View]首頁上，按一下![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**，瀏覽至字型檔案位置，一次選取一個字型檔案，然後按一下![重新處理](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL 重新處理]**)，以便在建立範本時使用它們。 請參閱[字型](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts)以進一步瞭解字型。
 1. [建立空白畫布](#create-a-canvas)
 1. [將影像新增至畫布](#add-images-to-the-canvas)
 1. [新增文字圖層至畫布](#add-text-to-the-canvas)
@@ -158,11 +159,7 @@ ht-degree: 1%
 1. 在「屬性」面板中選取「**[!UICONTROL 智慧型文字調整大小]**」，自動調整文字長度和字型大小，以最佳方式配合指定的區域。
    ![最佳自訂橫幅](/help/assets/assets/add-text-layer.png)
 
-請參閱[**[!UICONTROL 屬性面板]**](#reposition-resize-delete-a-layer)來重新定位、調整大小、旋轉或刪除圖層。 在面板的&#x200B;**[!UICONTROL 文字]**&#x200B;區段下的個別欄位中變更文字的值，將文字格式設定為所需的字型、大小、顏色、樣式、對齊方式（在圖層中）。
-
->[!NOTE]
->
-> 若要使用預設Adobe Sans F2字型系列以外的字型，您必須上傳字型檔案並發佈至[!AEM Assets]和[!DNL Dynamic Media]。 如果您的執行個體中有一些舊字型，請確定[重新處理](/help/assets/reprocessing-assets-view.md)以在範本編輯器中檢視這些字型。
+請參閱[**[!UICONTROL 屬性面板]**](#reposition-resize-delete-a-layer)來重新定位、調整大小、旋轉或刪除圖層。 在面板的&#x200B;**[!UICONTROL 文字]**&#x200B;區段下的個別欄位中變更文字的值，將文字格式設定為所需的字型、大小、顏色、樣式、對齊方式（在圖層中）。 如需字型相關資訊，請參閱「建立 [!DNL Dynamic Media] 範本](#how-to-create-dynamic-media-template)」區段中的[步驟3。
 
 ### 編輯或刪除圖層 {#edit-or-delete-a-layer}
 
@@ -361,3 +358,5 @@ ht-degree: 1%
 
 1. 探索[[!DNL Dynamic Media] 及其功能](/help/assets/dynamic-media/dynamic-media.md)
 1. 使用OpenAPI功能探索[[!DNL Dynamic Media] ](/help/assets/dynamic-media-open-apis-overview.md)
+
+
