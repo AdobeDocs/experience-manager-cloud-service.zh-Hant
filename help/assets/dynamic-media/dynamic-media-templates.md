@@ -4,9 +4,9 @@ description: 瞭解如何使用WYSIWYG範本編輯器建立 [!DNL Dynamic Media]
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 95873c3079efe91aedb049252435487a7ae646c8
+source-git-commit: b877c4385d68778d31f0174aa1d3d87548c6016a
 workflow-type: tm+mt
-source-wordcount: '3191'
+source-wordcount: '3222'
 ht-degree: 1%
 
 ---
@@ -88,7 +88,7 @@ ht-degree: 1%
 執行以下步驟來建立[!DNL Dynamic Media]範本：
 
 1. 導覽至您的[!DNL Assets View]，並在![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**中[建立資料夾](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view)。 ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**&#x200B;中的資料夾樹狀結構會在&#x200B;**[!UICONTROL Dynamic Media Assets]**&#x200B;中復寫。 將您的[!DNL Dynamic Media]範本儲存在此[!UICONTROL Dynamic Media Assets]資料夾中。
-1. 選取![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**和[將您的影像上傳並發佈至 [!DNL AEM] 和 [!DNL Dynamic Media] 同時](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation)，以便在建立範本時使用。 建立範本後，需要發佈影像才能產生範本的傳遞URL，而此URL可用於下游應用程式。
+1. 選取![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**和[將您的影像上傳並發佈至 [!DNL AEM] 和 [!DNL Dynamic Media] 同時](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation)，以便在建立範本時使用。 建立範本後，必須發佈影像才能產生範本的傳遞URL。 傳遞URL可用於下游應用程式。
 1. [執行這些資產上傳和發佈步驟](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation)，將字型檔案同時上傳和發佈至AEM和Dynamic Media，以便用於建立範本。 [!UICONTROL Adobe Sans F2]是文字圖層中唯一可用的預設字型。 [支援的字型檔案格式為：AFM、OTF、PFB、PFM、PhotoFont、TTC、TTF](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats)。 請確定[重新處理](/help/assets/reprocessing-assets-view.md)現有的字型，以便在建立範本時使用(在[!DNL Assets View]首頁上，按一下![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**，瀏覽至字型檔案位置，一次選取一個字型檔案，然後按一下![重新處理](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL 重新處理]**)。 請參閱[字型](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts)以進一步瞭解字型。
 1. [建立空白畫布](#create-a-canvas)
 1. [將影像新增至畫布](#add-images-to-the-canvas)
@@ -159,7 +159,7 @@ ht-degree: 1%
 1. 在「屬性」面板中選取「**[!UICONTROL 智慧型文字調整大小]**」，自動調整文字長度和字型大小，以最佳方式配合指定的區域。
    ![最佳自訂橫幅](/help/assets/assets/add-text-layer.png)
 
-請參閱[**[!UICONTROL 屬性面板]**](#reposition-resize-delete-a-layer)來重新定位、調整大小、旋轉或刪除圖層。 在面板的&#x200B;**[!UICONTROL 文字]**&#x200B;區段下的個別欄位中變更文字的值，將文字格式設定為所需的字型、大小、顏色、樣式、對齊方式（在圖層中）。 **[!UICONTROL 字型系列]**&#x200B;欄位會顯示重新處理的現有字型，以及新上傳和發佈的字型。 如需詳細資訊，請參閱上述「建立 [!DNL Dynamic Media] 範本](#how-to-create-dynamic-media-template)」一節中的[步驟3。
+請參閱[**[!UICONTROL 屬性面板]**](#reposition-resize-delete-a-layer)來重新定位、調整大小、旋轉或刪除圖層。 在面板的&#x200B;**[!UICONTROL 文字]**&#x200B;區段下的個別欄位中變更文字的值，將文字格式設定為所需的字型、大小、顏色、樣式、對齊方式（在圖層中）。 **[!UICONTROL 字型系列]**&#x200B;欄位會顯示[!UICONTROL Adobe Sans F2]預設字型、重新處理的現有字型，以及新上傳和發佈的字型。 如需詳細資訊，請參閱上述「建立 [!DNL Dynamic Media] 範本](#how-to-create-dynamic-media-template)」一節中的[步驟3。
 
 ### 編輯或刪除圖層 {#edit-or-delete-a-layer}
 
@@ -267,17 +267,19 @@ ht-degree: 1%
    ![即時建立內容](/help/assets/assets/dm-templates-publish-status.png)
 您也可以切換**[!UICONTROL 包含所有引數]**以編輯所有顯示的引數值，並在範本預覽中檢視更新。
    <br>
-1. 若要在預覽頁面上發佈範本，請按一下&#x200B;**[!UICONTROL 發佈]**&#x200B;並確認發佈。 **[!UICONTROL 發佈完成]**&#x200B;訊息顯示，且發佈狀態更新為&#x200B;**[!UICONTROL 已發佈]**。
+1. 若要從預覽頁面發佈範本，請按一下&#x200B;**[!UICONTROL 發佈]**&#x200B;並確認發佈。 顯示&#x200B;**[!UICONTROL 發佈完成]**&#x200B;訊息，且發佈狀態更新為&#x200B;**[!UICONTROL 已發佈]**。
 
->[!NOTE]
->
->發佈範本需要先發佈範本影像。
+   >[!NOTE]
+   >
+   >發佈範本需要先發佈範本影像。
 
 ### 複製傳遞URL
 
 在&#x200B;**[!UICONTROL 預覽]**&#x200B;頁面上選取的引數會成為範本URL中的URL引數。
 
-若要複製預覽中顯示的已發佈範本的URL：
+確認範本中的影像已發佈至AEM和Dynamic Media，以產生已發佈範本的傳遞URL。
+
+執行以下步驟，複製範本的傳遞URL：
 
 1. 按一下&#x200B;**[!UICONTROL 複製URL]**。 **[!UICONTROL 複製URL]**&#x200B;對話方塊隨即顯示。 選取並複製顯示的URL。 URL中的第一個引數在問號&#x200B;**([!UICONTROL ？])**&#x200B;和索引鍵/值組開頭為&#x200B;**[!UICONTROL $]**，結尾為&#x200B;**[!UICONTROL &amp;]**。 金鑰和值以等號分隔&#x200B;**([!UICONTROL =])**，金鑰在左側，值在右側。
 1. 將此URL貼到瀏覽器標籤中，即可檢視您的即時範本。 直接在URL中更新所需引數的值（索引鍵值），即時自訂範本，如&#x200B;**預覽和發佈**&#x200B;區段的[步驟2](#preview-and-publish-template-and-copy-template-deliver-url)所示。
