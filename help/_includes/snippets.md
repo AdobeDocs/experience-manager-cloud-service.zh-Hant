@@ -1,8 +1,8 @@
 ---
-source-git-commit: 92ad3ce6c880664e42fce761ab52b21b94a25a5c
-workflow-type: ht
-source-wordcount: '1497'
-ht-degree: 100%
+source-git-commit: 593b8c704c5b016bb55ae6a25420b577044b4126
+workflow-type: tm+mt
+source-wordcount: '1459'
+ht-degree: 98%
 
 ---
 # 程式碼片段 {#snippets}
@@ -144,7 +144,7 @@ ht-degree: 100%
 * [規則編輯器各個版本的差異](/help/forms/rule-editor-core-components-difference-tables.md)
 * [在最適化表單中使用非同步函數](/help/forms/using-async-funct-in-rule-editor.md)
 * [對於基於核心元件的表單，在視覺規則編輯器中調用服務增強功能](/help/forms/invoke-service-enhancements-rule-editor.md)
-* [以核心元件為主之最適化表單的自訂函數簡介](/help/forms/create-and-use-custom-functions.md)
+* [以核心元件為主之自適應表單的自訂函數簡介](/help/forms/create-and-use-custom-functions.md)
 * [建立以核心元件為主之最適化表單的自訂函數](/help/forms/custom-function-core-component-create-function.md)
 * [自訂函數中的範圍物件](/help/forms/custom-function-core-component-scope-function.md)
 * [開發和使用自訂函數的範例](/help/forms/custom-function-core-components-use-cases.md)
@@ -187,20 +187,7 @@ ht-degree: 100%
 
 >[!IMPORTANT]
 >
->[通用編輯器](/help/implementing/universal-editor/introduction.md)與 IP 允許清單不相容。
->
->如果您想要使用通用編輯器，則不得啟用 IP 允許清單。
-
-## 通用編輯器和 IP 允許清單 {#ue-ip-allow-lists}
-
->[!IMPORTANT]
->
->通用編輯器和 [IP 允許清單](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)不相容。
->
->如果您想使用通用編輯器，您必須採取下列其中一項動作：
->
->* 不啟用 IP 允許清單。
->* [執行您自己的通用編輯器服務執行個體](/help/implementing/universal-editor/local-dev.md)。
+>如果您使用[通用編輯器進行內容製作，](/help/implementing/universal-editor/introduction.md)您還必須[新增並套用具有通用編輯器服務IP位址的允許清單。](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#univeral-editor)
 
 ## 使用 Dynamic Media {#work-with-dynamic-media}
 

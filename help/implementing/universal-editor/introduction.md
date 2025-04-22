@@ -4,7 +4,7 @@ description: Universal Editor是現代化的視覺化撰寫工具，旨在讓您
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 8d608d1ba00764613fbf4a5c1e1a0fcdc603283c
+source-git-commit: ae59b00e7e8149477a87d0b0b63493a6c2cfebe7
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 13%
@@ -108,7 +108,7 @@ Universal Editor不僅提供立即可用的強大功能，更提供多種擴充�
 * 作為AEM的一部分，通用編輯器[支援與AEM相同的案頭瀏覽器。](/help/overview/supported-platforms.md)
    * 不支援這些瀏覽器的行動版本。
 
-{{ue-ip-allow-lists}}
+{{ip-allow-lists-ue}}
 
 ## 後續步驟 {#next-steps}
 
