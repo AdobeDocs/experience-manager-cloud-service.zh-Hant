@@ -4,8 +4,11 @@ description: 本手冊會協助您啟動並執行新的 Adobe Experience Manager
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+index: false
+hide: true
+hidefromtoc: true
+source-git-commit: 17c14a78c2cfa262e25c6196fa73c6c4b17e200a
+workflow-type: tm+mt
 source-wordcount: '1212'
 ht-degree: 100%
 
