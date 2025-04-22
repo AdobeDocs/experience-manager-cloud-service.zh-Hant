@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: e470244d2b6e039f47d06c332a0fb98cff1b0433
+source-git-commit: e302cb6c85937755b7c9324dc1ee6c60a7562b80
 workflow-type: tm+mt
-source-wordcount: '6152'
+source-wordcount: '6135'
 ht-degree: 99%
 
 ---
@@ -1078,19 +1078,14 @@ ht-degree: 99%
       + Sidekick {#sidekick}
          + [使用 Sidekick](/help/edge/docs/sidekick.md)
          + [安裝延伸模組](/help/edge/docs/sidekick-extension.md)
-         + [專案設定器](https://www.aem.live/tools/sidekick/)
          + [Sidekick 庫](/help/edge/docs/sidekick-library.md)
       + [常見問題集](/help/edge/docs/faq.md)
-      + [管理 API](https://www.aem.live/docs/admin.html)
-      + [AEM 狀態](https://status.adobe.com)
       + 工具 {#tools}
-         + [AEM Sidekick Chrome 延伸模組](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
-         + [Github 機器人](https://github.com/apps/aem-code-sync)
          + [稽核記錄](/help/edge/docs/auditlog.md)
 + Headless {#headless}
    + [什麼是 Headless CMS？](/help/headless/what-is-headless.md)
    + [AEM Headless 簡介](/help/headless/introduction.md)
-   + [開發人員入口網站 (其他資源)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-hant)
+   + [開發人員入口網站 (其他資源)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
    + [最佳做法 - 設定和使用](/help/headless/best-practices-setup-use.md)
    + 設定 {#setup}
       + [簡介](/help/headless/setup/introduction.md)
