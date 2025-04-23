@@ -4,21 +4,15 @@ description: 了解如何將 Adobe Experience Manager (AEM) as a Cloud Service �
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 3789904b4aa1ffa4a039e6b84af64f03f06a3206
+source-git-commit: 4f58a52c5ccc8178e768f9072e7b2047cbe3fb20
 workflow-type: tm+mt
-source-wordcount: '6021'
+source-wordcount: '5993'
 ht-degree: 92%
 
 ---
 
 
 # 與內容片段搭配使用的 AEM GraphQL API {#graphql-api-for-use-with-content-fragments}
-
->[!IMPORTANT]
->
->適用於內容片段的GraphQL API各項功能，可透過早期採用者計畫取得。
->
->若要檢視狀態，以及如果您有興趣要如何套用，請檢視[發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
 
 了解如何將 Adobe Experience Manager (AEM) as a Cloud Service 中的內容片段與 AEM GraphQL API 搭配使用，以實現 Headless 內容傳遞。
 
@@ -1187,7 +1181,7 @@ query allTeams {
 * 如果從遠端存放庫移除所參考的資產，這將導致內容片段資產參考損毀。
 * 使用者有權存取的所有傳遞資產存放庫都將可供選擇，可用的清單無法限制。
 * AEM執行個體和遠端資產存放庫執行個體都必須是相同版本。
-* 沒有透過[管理API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)和[傳送API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/sites/delivery/)公開的資產中繼資料。 您必須使用資產中繼資料API來擷取資產中繼資料詳細資訊。
+* 沒有透過[管理網站API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)和使用OpenAPI的[AEM內容片段傳送](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/contentfragments/delivery/)公開的資產中繼資料。 您必須使用資產中繼資料API來擷取資產中繼資料詳細資訊。
 
 ## GraphQL for AEM - 擴充功能摘要 {#graphql-extensions}
 

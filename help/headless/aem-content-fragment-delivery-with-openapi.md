@@ -3,20 +3,15 @@ title: 使用OpenAPI的AEM內容片段傳送
 description: 瞭解如何使用OpenAPI進行tAEM內容片段傳送
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
-source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
+exl-id: b298db37-1033-4849-bc12-7db29fb77777
+source-git-commit: 4f58a52c5ccc8178e768f9072e7b2047cbe3fb20
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '313'
 ht-degree: 0%
 
 ---
 
 # 使用OpenAPI的AEM內容片段傳送 {#aem-content-fragment-delivery-with-openapi}
-
->[!IMPORTANT]
->
->此API可透過早期採用者計畫取得。
->
->若要檢視狀態，以及如果您有興趣要如何套用，請檢視[發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
 
 在Adobe Experience Manager (AEM) as a Cloud Service中，用於內容片段傳送的AEM OpenAPI：
 
@@ -33,7 +28,7 @@ ht-degree: 0%
 
 * 是[AEM GraphQL API的HTTP REST替代方案，用於內容片段](/help/headless/graphql-api/content-fragments.md)
 
-如需完整檔案，請參閱[AEM Sites API結構描述 — 內容片段傳送API (2024.07-experimental)](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/sites/delivery/)。
+如需完整檔案，請參閱[使用OpenAPI的AEM內容片段傳送](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/contentfragments/delivery/)。
 
 >[!NOTE]
 >
