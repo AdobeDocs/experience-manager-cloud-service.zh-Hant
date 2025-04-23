@@ -1,10 +1,10 @@
 ---
 title: 頁面編輯器和通用編輯器
-description: 頁面編輯器仍受Adobe支援，但通用編輯器為您的新專案帶來令人興奮的可能性。
+description: Adobe仍支援頁面編輯器，但通用編輯器為您的新專案帶來令人興奮的可能性。
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
-source-git-commit: 4956552ca93351a7b319bc808e0c5ec930bcbe28
+source-git-commit: f21e21b0f7239ec9112d65b94b372344c4a07566
 workflow-type: tm+mt
 source-wordcount: '1065'
 ht-degree: 3%
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # 頁面編輯器和通用編輯器 {#page-editor-universal-editor}
 
-頁面編輯器仍受Adobe支援，但通用編輯器為您的新專案帶來令人興奮的可能性。
+Adobe仍支援頁面編輯器，但通用編輯器為您的新專案帶來令人興奮的可能性。
 
 ## 背景 {#background}
 
