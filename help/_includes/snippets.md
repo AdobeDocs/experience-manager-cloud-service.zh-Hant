@@ -1,8 +1,8 @@
 ---
-source-git-commit: 593b8c704c5b016bb55ae6a25420b577044b4126
+source-git-commit: a3c3ee1b3c5944ca9f5178209adc2cc0b2e5f7ff
 workflow-type: tm+mt
-source-wordcount: '1459'
-ht-degree: 98%
+source-wordcount: '1467'
+ht-degree: 97%
 
 ---
 # 程式碼片段 {#snippets}
@@ -187,7 +187,7 @@ ht-degree: 98%
 
 >[!IMPORTANT]
 >
->如果您使用[通用編輯器進行內容製作，](/help/implementing/universal-editor/introduction.md)您還必須[新增並套用具有通用編輯器服務IP位址的允許清單。](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#univeral-editor)
+>如果您使用[通用編輯器進行內容製作，](/help/implementing/universal-editor/introduction.md)，並且想要同時使用[IP允許清單，](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)您也必須使用Universal Editor服務的IP位址[新增並套用允許清單。](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#univeral-editor)
 
 ## 使用 Dynamic Media {#work-with-dynamic-media}
 
