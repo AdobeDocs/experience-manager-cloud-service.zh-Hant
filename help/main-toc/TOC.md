@@ -9,7 +9,7 @@ user-guide-title: 'AEM as a Cloud Service '
 source-git-commit: e302cb6c85937755b7c9324dc1ee6c60a7562b80
 workflow-type: tm+mt
 source-wordcount: '6135'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -1117,7 +1117,7 @@ ht-degree: 99%
       + [升級 UUID 參考的內容片段](/help/headless/graphql-api/uuid-reference-upgrade.md)
       + [GraphQL 查詢範例](/help/headless/graphql-api/sample-queries.md)
       + [疑難排解 GraphQL 查詢](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
-   + [使用OpenAPI的AEM內容片段傳送](/help/headless/aem-content-fragment-delivery-with-openapi.md)
+   + [透過 OpenAPI 傳遞 AEM 內容片段](/help/headless/aem-content-fragment-delivery-with-openapi.md)
    + [內容片段和模型 OpenAPI](/help/headless/content-fragment-openapis.md)
    + [Assets HTTP API 中的內容片段支援](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=zh-hant)
    + 安全性 {#security}
