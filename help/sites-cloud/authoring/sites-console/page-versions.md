@@ -5,9 +5,9 @@ exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: b39c455c9bd4b50eb3777cd1a4bdbada48786d62
 workflow-type: tm+mt
-source-wordcount: '1516'
+source-wordcount: '1574'
 ht-degree: 2%
 
 ---
@@ -25,6 +25,13 @@ ht-degree: 2%
 * 將頁面的目前版本與先前版本進行比較。
    * 文字和影像的差異會反白顯示。
 * Timewarp會使用頁面版本來判斷發佈環境的狀態。
+
+>[!NOTE]
+>
+>AEM存放庫中只會建立內容的版本。 程式碼、CSS和JavaScript等動態資源不會進行版本設定。
+>
+>* 檢視版本時，內容會與存放庫的最新程式碼、CSS和JavaScript一併檢視。
+>* 還原版本時，只會還原內容，並套用存放庫的最新程式碼、CSS和JavaScript。
 
 ## 建立新版本 {#creating-a-new-version}
 
@@ -83,7 +90,7 @@ ht-degree: 2%
 >
 >恢復頁面時，建立的版本是新分支的一部分。
 >
->舉例說明：
+>說明：
 >
 >1. 建立任何頁面的版本。
 >1. 初始標籤和版本節點名稱是1.0、1.1、1.2，依此類推。
@@ -226,7 +233,7 @@ ht-degree: 2%
 
 ### 時間扭曲限制 {#timewarp-limitations}
 
-Timewarp會盡力在選取的時間點重製頁面。 不過，由於在AEM中持續編寫內容的過程非常複雜，這種重製並不總是可能的。 使用Timewarp時，請牢記這些限制。
+Timewarp會盡力在選取的時間點重製頁面。 但由於在AEM中持續編寫內容的過程非常複雜，這種重製並不一定可行。 使用Timewarp時，請牢記這些限制。
 
 * **時間扭曲是根據已發佈的頁面來運作** — 僅當您之前已發佈頁面時，時間扭曲才會完全運作。 如果沒有，Timewarp會在作者環境中顯示目前頁面。
 * **時間扭曲使用頁面版本** — 如果您瀏覽到的頁面已從存放庫移除/刪除，如果該頁面的舊版本仍然位於存放庫中，則該頁面會正確呈現。
