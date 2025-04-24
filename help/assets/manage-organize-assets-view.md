@@ -5,10 +5,10 @@ role: User, Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: b7f8b4886372e2210ca8899260b3eb11b75ee798
+source-git-commit: 89c47db38bf26f8c5984278e49ad7727a8ec03e5
 workflow-type: tm+mt
-source-wordcount: '1734'
-ht-degree: 63%
+source-wordcount: '1700'
+ht-degree: 65%
 
 ---
 
@@ -214,10 +214,6 @@ Assets檢視可讓您根據您在「資產詳細資料」頁面上的&#x200B;**�
 
 
    如需可用選項的詳細資訊，請參閱[已核准資產的預設核准目標和發佈目的地](#default-approval-target-options-publish-destinations)。
-
-   >[!NOTE]
-   >
-   >設定核准目標是一項有限的可用性功能。 您可以透過建立支援票證來啟用或停用它。 如果您已啟用動態媒體與OpenAPI，預設為啟用。
 
    ![核准狀態](/help/assets/assets/approval-status-delivery.png)
 
