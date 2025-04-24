@@ -1,13 +1,13 @@
 ---
 title: Cloud Manager 2025.4.0 版發行說明
-description: 瞭解關於Adobe Experience Manager as a Cloud Service中的Cloud Manager 2025.4.0版。
+description: 了解 Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2025.4.0 的發行資訊。
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: fcd9ead02ca5061778001d954ae9a9fc6088d5d1
+source-git-commit: 7ae9d2bb3cf6066d13567c54b18f21fd4b1eff9e
 workflow-type: tm+mt
 source-wordcount: '614'
-ht-degree: 45%
+ht-degree: 98%
 
 ---
 
@@ -22,25 +22,25 @@ ht-degree: 45%
 
 ## 發行日期 {#release-date}
 
-AEM as a Cloud Service中的Cloud Manager 2025.4.0發行日期是2025年4月10日星期四。
+AEM as a Cloud Service 中 Cloud Manager 2025.4.0 的發行日期是 2025 年 4 月 10 日 (星期四)。
 
-下一個預計發行日期為2025年5月8日星期四。
+下一個版本預計於 2025 年 5 月 8 日 (星期四) 發行。
 
-## 最新資訊 {#what-is-new}
+## 新增功能 {#what-is-new}
 
-* **(UI)已改善部署可見性**
+* **(UI) 部署可見度改進**
 
-  當部署等待另一個部署完成時，Cloud Manager中的管道執行詳細資訊頁面現在會顯示狀態訊息（&quot;*正在等待 — 其他更新進行中*&quot;）。 此工作流程可讓您更容易瞭解環境部署期間的排序。 <!-- CMGR-66890 -->
+  當一個部署正在等待另一個部署完成時，Cloud Manager 中的管道執行詳細資訊頁面現在會顯示狀態訊息 (「*等待 - 其他更新正在進行中*」)。此工作流程使得理解環境部署期間的排序變得更加容易。<!-- CMGR-66890 -->
 
-  ![顯示詳細資訊和劃分的開發部署對話方塊](/help/implementing/cloud-manager/release-notes/assets/dev-deployment.png)
+  ![顯示詳細資訊和細分的開發部署對話框](/help/implementing/cloud-manager/release-notes/assets/dev-deployment.png)
 
-* **(UI)網域驗證增強功能**
+* **(UI) 網域驗證增強**
 
-  新增網域時，如果網域已安裝在Fastly帳戶中，Cloud Manager現在會顯示錯誤： &quot;*網域已安裝在Fastly帳戶中。 請先將它從此處移除，然後再新增至Cloud Service。*」
+  新增網域時，如果網域已安裝在 Fastly 帳戶中，Cloud Manager 現在會顯示錯誤：「*該網域已安裝在 Fastly 帳戶中。請先將其從那裡刪除，然後再新增到雲端服務。*」
 
 ## 早期採用方案 {#early-adoption}
 
-參與Cloud Manager的搶先採用計畫，在即將推出的功能正式發行前取得獨家存取權。
+參與 Cloud Manager 的早期採用計劃，在即將推出的功能正式發布之前獲得獨家使用權。
 
 目前提供下列早期採用機會：
 
@@ -76,17 +76,17 @@ If you are interested in testing this new capability and sharing your feedback, 
 
 ## 錯誤修正
 
-* **憑證遺失一般名稱(CN)欄位的問題**
+* **憑證缺少通用名稱 (CN) 欄位的問題**
 
-  處理主旨欄位中未包含一般名稱(CN)的EV/OV憑證時，Cloud Manager不再擲回NullPointerException (NPE)和500 HTTP回應。 現代憑證通常會省略CN，改用主體替代名稱(SAN)。 此修正可確保在SAN存在時，CN的缺失不會再導致組態建置流程失敗。<!-- CMGR-67548 -->
+  Cloud Manager 在處理主體欄位未包含通用名稱 (CN) 的 EV/OV 憑證時，不再擲回 NullPointerException (NPE) 和 500 HTTP 回應。現代憑證通常省略 CN，而是使用主體別名 (SAN)。此修正可確保當有 SAN 時，缺少 CN 不再導致設定建置程序發生失敗。<!-- CMGR-67548 -->
 
-* **網域驗證問題，憑證比對不正確**
+* **憑證匹配錯誤導致的網域驗證問題**
 
-  Cloud Manager不再使用錯誤的憑證來錯誤驗證網域。 以前，驗證邏輯使用以模式為基礎的比對，而非完全比對，這會導致`should-not-be-verified.example.com`之類的網域因為與`example.com`的有效憑證重疊而顯示為已驗證。 此修正確保網域驗證現在會檢查完全符合的專案，以防止錯誤的憑證關聯。<!-- CMGR-67225 -->
+  Cloud Manager 不再使用錯誤的憑證來錯誤地驗證網域。之前，驗證邏輯使用的是基於模式的匹配，而非精確匹配，這導致像 `should-not-be-verified.example.com` 這樣的網域，由於與 `example.com` 的有效憑證存在重疊，而被錯誤地顯示為已驗證。此修正確保網域驗證現在會檢查是否精確匹配，從而防止錯誤的憑證關聯。<!-- CMGR-67225 -->
 
-* **進階網路連線埠轉寄名稱的強制唯一性**
+* **強制執行進階網路連接埠轉送名稱的唯一性**
 
-  Cloud Manager現在對進階網路連線埠轉送強制執行唯一命名。 之前允許使用重複的名稱，這可能會導致衝突。 此修正可確保每個連線埠轉送專案都有不同的名稱，符合網路組態完整性的最佳實務。<!-- CMGR-67082 -->
+  Cloud Manager 現已強制進階網路連接埠轉送名稱具有唯一性。之前允許重複的名稱，這可能會導致衝突。此修正確保每個連接埠轉送項目都具有唯一名稱，符合網路設定完整性的最佳實務。<!-- CMGR-67082 -->
 
 
 <!-- ## Known issues {#known-issues} -->
