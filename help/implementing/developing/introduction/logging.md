@@ -4,9 +4,9 @@ description: 瞭解如何使用AEM as a Cloud Service的記錄來設定中央記
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 60bf6c6077ecfc6700ed9284834cf13e3772e25a
+source-git-commit: 7efbdecdddb66611cbde0dc23928a61044cc96d5
 workflow-type: tm+mt
-source-wordcount: '2364'
+source-wordcount: '2377'
 ht-degree: 9%
 
 ---
@@ -411,7 +411,7 @@ mod_rewrite記錄層級是由檔案`conf.d/variables/global.var`中的變數REWR
 
 ```
 Define REWRITE_LOG_LEVEL debug
-  
+
 <IfDefine ENVIRONMENT_STAGE>
   ...
   Define REWRITE_LOG_LEVEL warn
@@ -489,7 +489,7 @@ Dispatcher記錄層級是由檔案`conf.d/variables/global.var`中的變數DISP_
 
 ```
 Define DISP_LOG_LEVEL debug
-  
+
 <IfDefine ENVIRONMENT_STAGE>
   ...
   Define DISP_LOG_LEVEL warn
@@ -554,6 +554,7 @@ CDN記錄與其他記錄不同，因為它會遵循JSON格式。
 | *pop* | CDN 快取伺服器的資料中心。 |
 | *rules* | 任何相符的[流量篩選規則](/help/security/traffic-filter-rules-including-waf.md)和WAF旗標的名稱，也表示相符是否造成封鎖。 若沒有相符的規則，則為空白。 |
 
+您可以使用[要求/回應轉換](/help/implementing/dispatcher/cdn-configuring-traffic.md#logproperty)，以您自己的屬性擴充CDN記錄。
 
 ## 如何存取記錄檔 {#how-to-access-logs}
 
@@ -581,7 +582,7 @@ AEM記錄位於資料夾`crx-quickstart/logs`中，您可在此檢視下列記�
 * AEM HTTP要求記錄： `request.log`
 * AEM HTTP存取記錄檔： `access.log`
 
-Apache層記錄檔（包括Dispatcher）位於儲存Dispatcher的Docker容器中。 如需如何啟動Dispatcher的詳細資訊，請參閱[Dispatcher檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html)。
+Apache層記錄檔（包括Dispatcher）位於儲存Dispatcher的Docker容器中。 如需如何啟動Dispatcher的詳細資訊，請參閱[Dispatcher檔案](/help/implementing/dispatcher/disp-overview.md)。
 
 擷取記錄檔：
 

@@ -4,9 +4,9 @@ description: 瞭解如何在設定檔案中宣告規則和篩選器，並使用C
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: a43fdc3f9b9ef502eb0af232b1c6aedbab159f1f
+source-git-commit: 9e0217a4cbbbca1816b47f74a9f327add3a8882d
 workflow-type: tm+mt
-source-wordcount: '1390'
+source-wordcount: '1493'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ AEM as a Cloud Service提供可在[Adobe管理的CDN](/help/implementing/dispatc
 
 ## 評估順序 {#order-of-evaluation}
 
-從功能上講，前面提到的各種功能在以下序列中進行評估：
+在功能上，先前提到的各種功能會依下列順序評估：
 
 ![評估順序](/help/implementing/dispatcher/assets/order.png)
 
@@ -106,7 +106,6 @@ data:
         actions:
           - type: unset
             reqHeader: x-some-header
-
       - name: unset-matching-query-params-rule
         when:
           reqProperty: path
@@ -114,7 +113,6 @@ data:
         actions:
           - type: unset
             queryParamMatch: ^removeMe_.*$
-
       - name: unset-all-query-params-except-exact-two-rule
         when:
           reqProperty: path
@@ -122,7 +120,6 @@ data:
         actions:
           - type: unset
             queryParamMatch: ^(?!leaveMe$|leaveMeToo$).*$
-
       - name: multi-action
         when:
           reqProperty: path
@@ -134,7 +131,6 @@ data:
           - type: set
             reqHeader: x-header2
             value: '201'
-
       - name: replace-html
         when:
           reqProperty: path
@@ -145,6 +141,13 @@ data:
             op: replace
             match: \.html$
             replacement: ""
+      - name: log-on-request
+        when: "*"
+        actions:
+          - type: set
+            logProperty: forwarded_host
+            value:
+              reqHeader: x-forwarded-host
 ```
 
 **動作**
@@ -153,12 +156,20 @@ data:
 
 | 名稱 | 屬性 | 含義 |
 |-----------|--------------------------|-------------|
-| **設定** | （reqProperty、reqHeader、queryParam或reqCookie），值 | 將指定的請求引數（僅支援「path」屬性）或請求標頭、查詢引數或Cookie設定為給定值，該值可為字串常值或請求引數。 |
-|     | 變數，值 | 將指定的要求屬性設定為指定的值。 |
-| **取消設定** | reqProperty | 將指定的請求引數（僅支援「path」屬性），或請求標頭、查詢引數或Cookie移除至指定值，該值可為字串常值或請求引數。 |
-|         | 變數 | 移除指定的變數。 |
-|         | queryParamMatch | 移除符合指定規則運算式的所有查詢引數。 |
-|         | queryParamDoesNotMatch | 移除不符合指定規則運算式的所有查詢引數。 |
+| **設定** | reqProperty，值 | 設定指定的請求引數（只支援「path」屬性） |
+|     | reqHeader，值 | 將指定的要求標頭設定為指定的值。 |
+|     | queryParam，值 | 將指定的查詢引數設定為指定值。 |
+|     | reqCookie，值 | 將指定的要求Cookie設定為指定的值。 |
+|     | logProperty，值 | 將指定的CDN記錄屬性設定為指定的值。 |
+|     | 變數，值 | 將指定的變數設為指定值。 |
+| **取消設定** | reqProperty | 移除指定的請求引數（只支援「path」屬性） |
+|     | reqHeader，值 | 移除指定的請求標頭。 |
+|     | queryParam，值 | 移除指定的查詢引數。 |
+|     | reqCookie，值 | 移除指定的Cookie。 |
+|     | logProperty，值 | 移除指定的CDN記錄屬性。 |
+|     | 變數 | 移除指定的變數。 |
+|     | queryParamMatch | 移除符合指定規則運算式的所有查詢引數。 |
+|     | queryParamDoesNotMatch | 移除不符合指定規則運算式的所有查詢引數。 |
 | **轉換** | op：replace， （reqProperty或reqHeader、queryParam或reqCookie或var），match，replacement | 以新值取代部分請求引數（僅支援「path」屬性）、請求標頭、查詢引數、Cookie或變數。 |
 |              | op：tolower， （reqProperty或reqHeader、queryParam或reqCookie或var） | 將請求引數（僅支援「path」屬性）、請求標頭、查詢引數、Cookie或變數設定為小寫值。 |
 
@@ -240,9 +251,60 @@ data:
             value: some header value
 ```
 
+### 記錄屬性 {#logproperty}
+
+您可以使用請求和回應轉換，在CDN記錄中新增您自己的記錄屬性。
+
+設定範例：
+
+```
+requestTransformations:
+  rules:
+    - name: log-on-request
+      when: "*"
+      actions:
+        - type: set
+          logProperty: forwarded_host
+          value:
+            reqHeader: x-forwarded-host
+responseTransformations:
+  rules:
+    - name: log-on-response
+      when: '*'
+      actions:
+        - type: set
+          logProperty: cache_control
+          value:
+            respHeader: cache-control
+```
+
+記錄範例：
+
+```
+{
+"timestamp": "2025-03-26T09:20:01+0000",
+"ttfb": 19,
+"cli_ip": "147.160.230.112",
+"cli_country": "CH",
+"rid": "974e67f6",
+"req_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15",
+"host": "example.com",
+"url": "/content/hello.png",
+"method": "GET",
+"res_ctype": "image/png",
+"cache": "PASS",
+"status": 200,
+"res_age": 0,
+"pop": "PAR",
+"rules": "",
+"forwarded_host": "example.com",
+"cache_control": "max-age=300"
+}
+```
+
 ## 回應轉換 {#response-transformations}
 
-回應轉換規則可讓您設定和取消設定CDN傳出回應的標頭。 另請參閱上述範例，以參考先前在請求轉換規則中設定的變數。 亦可設定回應的狀態碼。
+回應轉換規則可讓您設定和取消設定CDN傳出回應的標題、Cookie和狀態。 另請參閱上述範例，以參考先前在請求轉換規則中設定的變數。
 
 設定範例：
 
@@ -262,7 +324,6 @@ data:
           - type: set
             value: value-set-by-resp-rule
             respHeader: x-resp-header
-
       - name: unset-response-header-rule
         when:
           reqProperty: path
@@ -270,8 +331,6 @@ data:
         actions:
           - type: unset
             respHeader: x-header1
-
-      # Example: Multi-action on response header
       - name: multi-action-response-header-rule
         when:
           reqProperty: path
@@ -283,7 +342,6 @@ data:
           - type: set
             respHeader: x-resp-header-2
             value: value-set-by-resp-rule-2
-      # Example: setting status code
       - name: status-code-rule
         when:
           reqProperty: path
@@ -291,7 +349,25 @@ data:
         actions:
           - type: set
             respProperty: status
-            value: '410'        
+            value: '410'
+      - name: set-response-cookie-with-attributes-as-object
+        when: '*'
+        actions:
+          - type: set
+            respCookie: first-name
+            value: first-value
+            attributes:
+              expires: '2025-08-29T10:00:00'
+              domain: example.com
+              path: /some-path
+              secure: true
+              httpOnly: true
+              extension: ANYTHING
+      - name: unset-response-cookie
+        when: '*'
+        actions:
+          - type: unset
+            respCookie: third-name
 ```
 
 **動作**
@@ -300,9 +376,15 @@ data:
 
 | 名稱 | 屬性 | 含義 |
 |-----------|--------------------------|-------------|
-| **設置** | reqHeader，值 | 將指定的標頭設定為回應中的指定值。 |
-|          | respProperty，值 | 設定回應屬性。 僅支援「status」屬性以設定狀態代碼。 |
+| **設定** | respProperty，值 | 設定回應屬性。 僅支援「status」屬性以設定狀態代碼。 |
+|     | respHeader，值 | 將指定的回應標頭設定為給定的值。 |
+|     | respCookie，屬性（到期、網域、路徑、安全、httpOnly、副檔名）、值 | 將具有特定屬性的指定請求Cookie設定為給定值。 |
+|     | logProperty，值 | 將指定的CDN記錄屬性設定為指定的值。 |
+|     | 變數，值 | 將指定的變數設為指定值。 |
 | **取消設定** | respHeader | 從回應中移除指定的標頭。 |
+|     | respCookie，值 | 移除指定的Cookie。 |
+|     | logProperty，值 | 移除指定的CDN記錄屬性。 |
+|     | 變數 | 移除指定的變數。 |
 
 ## 來源選取器 {#origin-selectors}
 
@@ -429,7 +511,7 @@ data:
 | **重新導向** | 位置 | 「Location」標頭的值。 |
 |     | 狀態（選擇性，預設為301） | 重新導向訊息中使用的HTTP狀態，預設為301，允許值為： 301、302、303、307、308。 |
 
-重新導向的位置可以是字串文本（例如，https://www.example.com/page），也可以是可選擇轉換的屬性的結果（例如，路徑），語法如下：
+重新導向的位置可以是字串常值(例如https://www.example.com/page)，或是由以下語法選擇性轉換的屬性（例如path）所產生：
 
 ```
 redirects:
