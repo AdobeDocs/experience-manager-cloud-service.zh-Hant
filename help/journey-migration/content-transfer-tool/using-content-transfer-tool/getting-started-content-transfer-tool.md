@@ -4,9 +4,9 @@ description: 瞭解如何開始使用內容轉移工具
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 feature: Migration
 role: Admin
-source-git-commit: ccd96892ccce0ed896cd01978f07e2a556c18527
+source-git-commit: 4dcfc36167a40b59e251750bb112b073beddc52f
 workflow-type: tm+mt
-source-wordcount: '1572'
+source-wordcount: '1642'
 ht-degree: 14%
 
 ---
@@ -95,11 +95,13 @@ ht-degree: 14%
 
    下列對話方塊隨即顯示。 請注意，移轉集將在長時間不活動後過期。 在專案卡片和移轉工作表格列顯示一段時間的警告後，移轉集將會到期，其資料將不再可用。 檢閱[移轉集到期日](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry)以取得詳細資料。
 
+   在建立移轉集期間，您可以挑選將儲存暫時移轉資料的地理區域。  建議您選擇最接近目標雲端環境的區域，以確保擷取期間的最佳效能。  在建立移轉集後無法變更區域；若要使用其他區域，您必須建立新的移轉集。
+
    ![影像](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam3.png)
 
    >[!NOTE]
    >
-   >名稱必須遵循與AEM節點相同的慣例，因此不能包含以下任一字元： . / ： [ ] | *
+   >名稱必須遵循與AEM節點相同的慣例，因此不能包含以下任一字元： &#39;. / ： [ ] | * &lt; > ^ ？ { } % # 」或任何不尋常的符號或emoji。
 
 1. 您現在應該會在清單檢視中看到移轉清單。 選取三點符號(**...**)以開啟下拉式清單，並選取&#x200B;**複製擷取金鑰**。 在提取階段您需要此金鑰。 複製此擷取金鑰。
 
