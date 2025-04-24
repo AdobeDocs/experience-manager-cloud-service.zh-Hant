@@ -4,9 +4,9 @@ description: 瞭解如何使用WYSIWYG範本編輯器建立 [!DNL Dynamic Media]
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 5bdbd0c7273a1e8a650a87a7d0b0c9749f5e1030
+source-git-commit: f3dea4724f757090a504c3144e17fca7075acc52
 workflow-type: tm+mt
-source-wordcount: '3176'
+source-wordcount: '3165'
 ht-degree: 1%
 
 ---
@@ -322,8 +322,7 @@ ht-degree: 1%
 
    ![新增CTA](/help/assets/assets/add-cta.png)
 
-1. 按一下&#x200B;**[!UICONTROL 預覽]**&#x200B;以預覽您的範本並檢視其定義的引數。
-1. 按一下&#x200B;**[!UICONTROL 發佈]**&#x200B;並選取&#x200B;**[!UICONTROL 是]**&#x200B;發佈您的範本（若未更早發佈）。
+1. 按一下[預覽]****&#x200B;並選取[發佈]****&#x200B;以發佈您的範本（若未更早發佈）。
 1. 導覽至儲存此範本的資料夾，選取此範本並按一下![詳細資料頁面](/help/assets/assets/details-page-icon.svg) **[!UICONTROL 詳細資料]**。
 1. 按一下&#x200B;**[!UICONTROL 複製選項]**&#x200B;並選取&#x200B;**[!UICONTROL 複製內嵌程式碼]**。 請確定將範本影像發佈至[!DNL AEM and Dynamic Media]以複製內嵌程式碼。
 
