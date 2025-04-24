@@ -5,9 +5,9 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
 source-git-commit: c5152543550b5f81bf0b79741f288b0c16648584
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '452'
-ht-degree: 46%
+ht-degree: 100%
 
 ---
 
@@ -18,40 +18,40 @@ ht-degree: 46%
 
 ## 版本 20476 {#20476}
 
-以下摘要說明維護版本20476數的持續改善，該版本於2025年4月15日公開發佈。 前一個維護版本是版本 20133。
+下面是 20476 維護版本持續改善內容的摘要；該版本於 2025 年 4 月 15 日公開發行。前一個維護版本是版本 20133。
 
 啟用 2025.4.0 功能將可使用此維護版本的完整功能集。如需詳細資訊，請參閱 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
 ### 增強功能 {#enhancements-20476}
 
-* CNTBF-411：新增刪除sling作業的可能性，以防JCR捨棄該作業。
-* CQ-4359813： AEM翻譯套件：3月20日。
-* CQ-4359811：Granite翻譯套件：3月20日。
+* CNTBF-411：在 JCR 捨棄 Sling 作業的情況下，新增刪除該作業的可能性。
+* CQ-4359813：AEM 翻譯套件：3 月 20 日。
+* CQ-4359811：Granite 翻譯套件：3 月 20 日。
 * GRANITE-57863：更新 Filevault 至 3.8.4 版。
-* GRANITE-56154：在oak-segment-azure中設定指數重試。
-* GRANITE-55999：改善UserPropertiesService的效能。
-* GRANITE-55781：避免重複重新設定使用者成員資格。
-* GRANITE-53956：將Azure SDK V8升級為V12，以使用oak-segment-azure。
-* GRANITE-50654：在主參與者許可權索引標籤上，移除預設在前端載入的「所有人」。
+* GRANITE-56154：在 oak-segment-azure 中設定指數型重試。
+* GRANITE-55999：提升 UserPropertiesService 的效能。
+* GRANITE-55781：避免對使用者會籍進行冗餘重新設定。
+* GRANITE-53956：將 oak-segment-azure 的 Azure SDK V8 升級至 V12。
+* GRANITE-50654：在主體權限標籤上，預設刪除前端的「所有人」負載。
 * SKYOPS-103444：更新至 Sling ResourceResolver 1.12.6。
-* SKYOPS-101147：更新Caconfig實作。
-* SKYOPS-97124：為過期版本的SPIFly套件組合新增分析器警告。
-* SKYOPS-95826：將執行階段Java版本更新為11.0.26和21.0.6。
-* SKYOPS-53671：在(RDE) AEM重新啟動時，使用功能模型中的客戶安裝成品。
+* SKYOPS-101147：更新 caconfig 實作。
+* SKYOPS-97124：針對 SPIFly 套件的過時版本新增分析器警告。
+* SKYOPS-95826：將執行階段 Java 版本更新至 11.0.26 和 21.0.6。
+* SKYOPS-53671：在 (RDE) AEM 重新啟動時使用客戶安裝的功能模型成品。
 
 ### 已修正的問題 {#fixed-issues-20476}
 
-* Assets-49027： [回歸] AemRequestEventFilter中斷對OSGI Web主控台的POST要求。
-* Assets-44956：無法選取任何Dynamic Media轉譯 — 指令碼標籤應載入頂層元件。
-* CNTBF-410： ContentCopy套件組合中的CheckJob getId null指標。
-* CNTBF-341： ContentCopy匯出索引超出界限。
-* CQ-4355411：工具提示仍顯示在「使用者偏好設定」對話方塊中。
-* GRANITE-57265：未選取下拉式清單選擇值。
-* GRANITE-57067 - UI上缺少有效原則。
+* ASSETS-49027：[迴歸] AemRequestEventFilter 會中斷對 OSGI 網頁主控台的 POST 要求。
+* ASSETS-44956：無法選取任何 Dynamic Media 轉譯 - 指令碼標籤應載入到頂層元件。
+* CNTBF-410：ContentCopy 套件中的 CheckJob getId 空指標。
+* CNTBF-341：ContentCopy 匯出索引超出範圍。
+* CQ-4355411：工具提示仍顯示在「使用者偏好設定」對話框中。
+* GRANITE-57265：下拉選單中的值未選取。
+* GRANITE-57067 - UI 中缺少有效的原則。
 * SITES-30727：在 AEM 編輯器內，子元件拖放可能會失敗。
-* SKYOPS-90607：Sling作業會在非使用中部署/可變內容中執行。
-* SKYOPS-95722：從AEM-SDK中的快速入門標幟中移除`MaxPermSize`大小。
-* SKYOPS-103569：某些影像無法以Java 21載入： `javax.imageio.IIOException: Cannot create Sun JPEGImageReader backend`。
+* SKYOPS-90607：Sling 作業在非使用中部署/可變內容中執行。
+* SKYOPS-95722：移除 AEM-SDK 中 quickstart 標幟的 `MaxPermSize` 大小。
+* SKYOPS-103569：某些影像無法使用 Java 21 載入：`javax.imageio.IIOException: Cannot create Sun JPEGImageReader backend`。
 
 ### 已知問題 {#known-issues-20476}
 
