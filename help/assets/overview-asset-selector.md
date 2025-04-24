@@ -4,9 +4,9 @@ description: 在應用程式內使用資產選擇器進行搜尋、尋找和取�
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
 source-git-commit: f78d0242a3cf681ab827c785b6f02565887f392d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1422'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -83,7 +83,7 @@ ht-degree: 98%
 
 * 該主機應用程式於 HTTPS 上執行。
 * 您無法於 `localhost` 上執行該應用程式。如果您想在本機上整合資產選擇器，則必須建立一個自訂網域，例如 `[https://<your_campany>.localhost.com:<port_number>]`，並在 `redirectUrl list` 中新增此自訂網域。
-* 您可以使用個別`imsClientId`來設定clientID並將其新增至AEM Cloud Service環境變數。
+* 您可以使用相應的 `imsClientId` 設定並新增 clientID 至 AEM Cloud Service 環境變數中。
 <!--* You can configure and add `ADOBE_PROVIDED_CLIENT_ID` into the AEM Cloud Service environment variable with the respective `imsClientId`.
 ![Asset Selector IMS Client id environment](assets/asset-selector-ims-client-id-env.png)-->
 * IMS 範圍清單需要在環境設定中進行定義。

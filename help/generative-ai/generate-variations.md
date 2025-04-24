@@ -5,9 +5,9 @@ exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
 feature: Generate Variations
 role: Admin, Architect, Developer
 source-git-commit: 85489b9d2c774af2f82efe4cde406d6d33057d4e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3287'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->建議您存取整合至AEM編輯器的[產生變數](/help/generative-ai/generate-variations-integrated-editor.md)，因為此頁面上描述的版本未來將停用。
+>建議存取[整合至 AEM 編輯器中的產生變化版本](/help/generative-ai/generate-variations-integrated-editor.md)，因為本頁面所描述的版本未來將棄用。
 
 如果您正在尋找一種將數位管道最佳化並加速內容建立的方法，您可以使用「產生變化版本」。「產生變化版本」使用生成式人工智慧 (AI)，根據提示來建立內容變化版本；這些提示是由 Adobe 提供，或由使用者建立和管理。建立變化版本後，您可以在網站上使用這些內容，也可以使用 [Edge Delivery Services](/help/edge/overview.md) 的「[實驗](https://www.aem.live/docs/experimentation)」功能來衡量其是否成功。
 
