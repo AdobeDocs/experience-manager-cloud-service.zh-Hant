@@ -3,10 +3,10 @@ title: 從Content Hub下載資產
 description: 瞭解如何從Content Hub入口網站下載資產
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: e108d25f3cdc025e0fbe8010854f245f62786baf
 workflow-type: tm+mt
-source-wordcount: '806'
-ht-degree: 8%
+source-wordcount: '938'
+ht-degree: 10%
 
 ---
 
@@ -15,19 +15,19 @@ ht-degree: 8%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 與 Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets 與 Edge Delivery Services 整合</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>使用者介面可擴充性</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用 Dynamic Media Prime 與 Ultimate</b></a>
         </td>
     </tr>
     <tr>
@@ -74,8 +74,8 @@ Content Hub可讓您下載和共用資產。 Content Hub使用者介面只會顯
 
    >[!NOTE]
    >
-   * 只有在使用[組態](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub)使用者介面啟用轉譯的可見度時，才會顯示轉譯。
-   * 您可以在下載資產時下載所有[靜態、動態和智慧型裁切轉譯](#types-of-renditions)。
+   >* 只有在使用[組態](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub)使用者介面啟用轉譯的可見度時，才會顯示轉譯。
+   >* 您可以在下載資產時下載所有[靜態、動態和智慧型裁切轉譯](#types-of-renditions)。
 
 1. 選取一或多個轉譯並按一下&#x200B;**[!UICONTROL 下載]**。
 
@@ -86,7 +86,7 @@ Content Hub可讓您下載和共用資產。 Content Hub使用者介面只會顯
 
 >[!NOTE]
 >
-有權存取[具有Open API功能的Dynamic Media ](/help/assets/dynamic-media-open-apis-overview.md)的使用者可以檢視及下載動態和智慧型裁切轉譯。
+> 有權存取[具有Open API功能的Dynamic Media ](/help/assets/dynamic-media-open-apis-overview.md)的使用者可以檢視及下載動態和智慧型裁切轉譯。
 
 ## 下載多個資產及其轉譯 {#download-multiple-assets-renditions}
 
@@ -103,8 +103,8 @@ Content Hub可讓您下載和共用資產。 Content Hub使用者介面只會顯
 
      >[!NOTE]
      >
-     * 只有在使用[組態](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub)使用者介面啟用轉譯的可見度時，才會顯示轉譯。
-     * 您只能在下載多個資產時下載[靜態轉譯](#types-of-renditions)。
+     >* 只有在使用[組態](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub)使用者介面啟用轉譯的可見度時，才會顯示轉譯。
+     >* 您只能在下載多個資產時下載[靜態轉譯](#types-of-renditions)。
 
    如果任何選取的資產是授權資產，請按一下左窗格中的資產授權以檢視其預覽，這可讓您選取&#x200B;**[!UICONTROL 我已閱讀並接受上述條款與條件]**，然後按一下&#x200B;**[!UICONTROL 下載]**。 只有在資產已使用Assets as a Cloud Service製作環境核準時，才會顯示授權預覽。 如需詳細資訊，請參閱[管理 Content Hub 上的授權資產](/help/assets/manage-licensed-assets-on-content-hub.md)。
 
@@ -153,17 +153,35 @@ The dialog box that displays depends on whether the download list includes expir
 
 * [靜態轉譯](/help/assets/renditions.md#static-renditions)：靜態轉譯是數位資產的預先建立版本，通常在資產擷取或修改期間產生。 它們針對特定用途和平台進行最佳化，例如網頁縮圖、回應式設計的行動裝置友好格式，或列印的高解析度檔案，提供簡化且一致的體驗。
 
-* [動態轉譯](/help/assets/renditions.md#dynamic-renditions)：動態轉譯是資產的即時、自訂版本，可執行各種動作，例如根據不同的裝置解析度調整影像大小或裁切以符合各種外觀比例。 這些轉譯可讓您根據更廣泛的需求，提供個人化和最佳化的體驗。 資產的動態轉譯是在[!DNL Adobe Experience Manager Assets]作者環境中建立。
+* [動態轉譯](/help/assets/renditions.md#dynamic-renditions)：動態轉譯是資產的即時、自訂版本，可執行各種動作，例如根據不同的裝置解析度調整影像大小或裁切以符合各種外觀比例。 這些轉譯可讓您根據更廣泛的需求，提供個人化和最佳化的體驗。 資產的動態轉譯是在[!DNL Adobe Experience Manager Assets]作者環境中建立。 如需啟用動態轉譯所需步驟的詳細資訊，請參閱[啟用動態轉譯](#enable-dynamic-media-renditions)。
 
 * [智慧型裁切](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles)：智慧型裁切在裁切程式進行期間，只著重於資產的重要部分。 適用於的Dynamic Media智慧型裁切運用由Adobe Sensei提供支援的人工智慧來追蹤地標，確保我們的資產在所有熒幕大小上看起來都最理想。 [!DNL Adobe Experience Manager]智慧型裁切會顯示資產轉譯的寬度和高度以及標題。 如需詳細資訊，請參閱[搭配AEM Assets Dynamic Media使用智慧型裁切](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use)。
 
+  智慧型裁切轉譯會顯示，而且只有在您能存取具有OpenAPI功能的[Dynamic Media ](/help/assets/dynamic-media-open-apis-overview.md)時，才能下載。 智慧型裁切轉譯僅適用於影像資產。
+
   ![轉譯型別](/help/assets/assets/renditions-types.png)
 
+### 啟用動態轉譯 {#enable-dynamic-media-renditions}
 
->[!NOTE]
-> 
-* 動態和智慧型裁切轉譯功能處於早期採用者階段。 若要存取此功能，[請建立並提交Adobe客戶支援案例](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html)。
-* 在[Dynamic Media Open API服務](/help/assets/dynamic-media-open-apis-overview.md)上新上線的客戶必須修訂其現有的影像預設集以進行核准。
+若要啟用動態轉譯：
+
+1. 確定您具有[Dynamic Media的OpenAPI功能](/help/assets/dynamic-media-open-apis-overview.md)存取權。
+
+   一旦您擁有使用OpenAPI功能的Dynamic Media存取權，所有標籤為`Approved`的資產都可使用Dynamic Media進行公開傳送。
+
+1. 將資產](/help/assets/approve-assets-content-hub.md#set-approval-target)的[核准目標設定為Content Hub，僅核准Content Hub的資產。
+
+1. 啟用[組態](/help/assets/configure-content-hub-ui-options.md#access-configuration-options-content-hub)使用者介面之&#x200B;**[!UICONTROL 轉譯]**&#x200B;索引標籤中可用的&#x200B;**[!UICONTROL 啟用轉譯可用性]**&#x200B;切換。
+
+1. 重新儲存現有的影像預設集，以便在Content Hub上使用。 此變數僅適用於您最近使用OpenAPI加入Dynamic Media時。
+
+   若要重新儲存現有的影像預設集，請導覽至[管理]檢視，並選取&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 影像預設集]**。 選取預設集，按一下&#x200B;**[!UICONTROL 編輯]**，然後按一下&#x200B;**[!UICONTROL 儲存]**。
+
+
+
+   >[!NOTE]
+   > 
+   > 動態轉譯僅適用於影像資產。
 
 
 

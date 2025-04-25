@@ -2,10 +2,10 @@
 title: 核准 Content Hub 的資產
 description: 瞭解如何在Assets as a Cloud Service中核准資產，以便在Content Hub中使用。
 exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: ba73cc52c337d16a2cd33438eb568adcabd492dd
 workflow-type: tm+mt
-source-wordcount: '865'
-ht-degree: 20%
+source-wordcount: '1276'
+ht-degree: 19%
 
 ---
 
@@ -14,19 +14,19 @@ ht-degree: 20%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 與 Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets 與 Edge Delivery Services 整合</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>使用者介面可擴充性</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用 Dynamic Media Prime 與 Ultimate</b></a>
         </td>
     </tr>
     <tr>
@@ -74,7 +74,7 @@ ht-degree: 20%
 
 >[!NOTE]
 >
-Assets as a Cloud Service和Content Hub必須使用相同的組織，資產才能在Content Hub中顯示。
+>Assets as a Cloud Service和Content Hub必須使用相同的組織，資產才能在Content Hub中顯示。
 
 若要使用AEM as a Cloud Service中的Assets檢視將資產狀態設為`approved`：
 
@@ -98,6 +98,52 @@ Assets as a Cloud Service和Content Hub必須使用相同的組織，資產才�
 1. 在右側面板「[!UICONTROL 屬性]」區段內提供的「**[!UICONTROL 狀態]**」欄位中，選取「**[!UICONTROL 已核准]**」。
 
 1. 按一下「**[!UICONTROL 儲存]**」。
+
+## 設定核准目標 {#set-approval-target}
+
+Assets檢視可讓您根據您在「資產詳細資料」頁面上的&#x200B;**核准目標**&#x200B;欄位中設定的值，使用OpenAPI功能、Content Hub或兩者將已核准的資產發佈到Dynamic Media。
+
+若要設定核准目標：
+
+1. 選取該資產，然後按一下工具列中的「**[!UICONTROL 詳細資料]**」。
+
+1. 在&#x200B;**[!UICONTROL 基本]**&#x200B;索引標籤中，從&#x200B;**[!UICONTROL 狀態]**&#x200B;下拉式清單中選取資產狀態。 可能的值包括「已核准」、「已拒絕」以及「無狀態」(預設)。
+
+1. 如果您在步驟2中選取&#x200B;**已核准**，請選取核准目標。 可能的值包括「傳送」和「Content Hub」。
+
+   * **傳送**&#x200B;是下拉式功能表中選取的預設選項，而且會透過OpenAPI](/help/assets/dynamic-media-open-apis-overview.md)將資產發佈至[Dynamic Media與[Content Hub](/help/assets/product-overview.md) (如果兩者都針對Experience Manager Assets啟用)。
+
+   * 選取&#x200B;**Content Hub**&#x200B;會將資產發佈至Content Hub。 只有在為Experience Manager Assets啟用Content Hub時，它才會顯示為選項。
+
+   * 如果您未從下拉式清單中選取選項，則為您的AEM as a Cloud Service環境啟用的預設選項會自動套用至資產。
+
+
+   如需可用選項的詳細資訊，請參閱[已核准資產的預設核准目標和發佈目的地](#default-approval-target-options-publish-destinations)。
+
+   >[!NOTE]
+   >
+   >設定核准目標是一項有限的可用性功能。 您可以透過建立支援票證來啟用或停用它。 如果您已啟用動態媒體與OpenAPI，預設為啟用。
+
+   ![核准狀態](/help/assets/assets/approval-status-delivery.png)
+
+1. 指定其他資產屬性，然後按一下&#x200B;**[!UICONTROL 儲存]**。
+
+其他需要注意的要點包括：
+
+* 當您未使用預設的中繼資料表單且無法檢視&#x200B;**[!UICONTROL 核准目標]**&#x200B;欄位時，[編輯您的中繼資料表單](/help/assets/metadata-assets-view.md#metadata-forms)以將&#x200B;**[!UICONTROL 的]**&#x200B;核准欄位從可用元件拖曳到中繼資料表單，然後按一下&#x200B;**[!UICONTROL 儲存]**。
+
+* 當您使用Assets檢視選取核准目標為`Content Hub`時，資產便可在Content Hub中提供給屬於相同組織的使用者使用。
+
+### 已核准資產的預設核准目標和發佈目的地 {#default-approval-target-options-publish-destinations}
+
+下表說明在您的AEM as a Cloud Service環境中使用OpenAPI和Content Hub啟用DM而顯示`Approval Target`下拉式清單和預設核准目標的先決條件：
+
+| 動態媒體與OpenAPI | Content Hub | 是否要顯示核准目標下拉式清單？ | 已核准資產的預設核准目標 | 發佈目的地 |
+| --- | --- | --- | --- |---|
+| 已啟用 | 已啟用 | 是 | 傳遞 | Dynamic Media (含OpenAPI和Content Hub) |
+| 未啟用 | 已啟用 | 是 | Content Hub | Content Hub |
+| 已啟用 | 未啟用 | 是 | 傳遞 | 動態媒體與OpenAPI |
+| 未啟用 | 未啟用 | 否 | N/A | N/A |
 
 ## 在管理員檢視中自動核准新擷取的資產 {#automate-approval-newly-ingested-assets}
 
@@ -135,7 +181,7 @@ Assets as a Cloud Service和Content Hub必須使用相同的組織，資產才�
 
 >[!NOTE]
 > 
-此方法會核准資料夾中新建立的資產。 針對資料夾中的現有資產，您需要手動選取並核准它們。
+>此方法會核准資料夾中新建立的資產。 針對資料夾中的現有資產，您需要手動選取並核准它們。
 
 ## 管理使用Content Hub上傳的資產 {#manage-assets-uploaded-using-content-hub}
 
