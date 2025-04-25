@@ -4,9 +4,9 @@ description: 瞭解如何為最適化Forms核心元件的記錄檔案(DoR)產生
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 2637adfbac0e266abe5a023b9253e7e702884709
 workflow-type: tm+mt
-source-wordcount: '3131'
+source-wordcount: '3152'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 ## 概觀 {#overview}
 
-填寫或提交表單時，您可以以列印或檔案格式來保留表單的記錄。 此記錄稱為記錄檔案(DoR)。 這是一份容易列印的已提交表格。 您也可以參考記錄檔案以瞭解客戶在稍後日期填寫的資訊，或使用「記錄檔案」以「PDF格式」將表單與內容一起封存。
+填寫或提交表單時，您可以以列印或檔案格式來保留表單的記錄。 此記錄稱為記錄檔案(DoR)。 這是一份容易列印的已提交表格。 您也可以參考記錄檔案以瞭解客戶在稍後日期填寫的資訊，或使用記錄檔案以PDF格式將表單和內容一起封存。
 
 ![記錄檔案](assets/document-of-record.png)
 
@@ -24,7 +24,7 @@ ht-degree: 1%
 您可以：
 
 * [產生以XFA為基礎的記錄檔案](#generate-an-XFA-based-document-of-record)
-* [產生以Acroform為基礎的(Acrobat表單PDF)記錄檔案](#generate-an-Acroform-based-document-of-record)
+* [產生以Acroform為基礎的(Acrobat Form PDF)記錄檔案](#generate-an-Acroform-based-document-of-record)
 * [自動生成記錄檔案](#auto-generate-a-document-of-record)
 
 ## 開始之前 {#components-to-automatically-generate-a-document-of-record}
@@ -50,13 +50,13 @@ ht-degree: 1%
 
 ## 產生以Acroform為基礎的記錄檔案 {#generate-an-Acroform-based-document-of-record}
 
-將Adobe AcrobatPDF(Acroform)上傳至AEM Forms執行個體。 執行以下步驟來設定最適化表單，以使用Adobe AcrobatPDF(Acroform)作為記錄檔案的範本：
+將Adobe Acrobat PDF (Acroform)上傳至AEM Forms執行個體。 執行以下步驟來設定最適化表單，以使用Adobe Acrobat PDF (Acroform)作為記錄檔案的範本：
 
 1. 在Experience Manager作者執行個體中，按一下&#x200B;**[!UICONTROL Forms]** > **[!UICONTROL Forms和檔案]。**
 1. 選取表單或&#x200B;**[!UICONTROL 建立最適化表單]**，然後按一下&#x200B;**[!UICONTROL 屬性]**。
 1. 在[內容]視窗中，選取&#x200B;**[!UICONTROL 表單模型]**。
 1. 在&#x200B;**[!UICONTROL 表單模型]**&#x200B;標籤的&#x200B;**[!UICONTROL 選取來源]**&#x200B;下拉式清單中，選取&#x200B;**[!UICONTROL 表單資料模型]**、**[!UICONTROL 結構描述]**&#x200B;或&#x200B;**[!UICONTROL 無]**。 您也可以在建立表單時選取表單模型。
-1. 在[表單模型]索引標籤的[記錄檔案範本組態]區段中，選取[**關聯表單範本作為記錄檔案範本**]。 選取此選項時，會顯示電腦上可用的所有AcrobatPDF(Acroform)。 選取您要使用的Acroform。
+1. 在[表單模型]索引標籤的[記錄檔案範本組態]區段中，選取[**關聯表單範本作為記錄檔案範本**]。 選取此選項時，會顯示電腦上可用的所有Acrobat PDF (Acroform)。 選取您要使用的Acroform。
 1. 按一下&#x200B;**[!UICONTROL 完成]**
 
 您的最適化表單現在已設定為使用Acroform作為記錄檔案的範本。 下一個步驟是[繫結最適化表單元件與對應的範本欄位](#bind-adaptive-form-components-with-template-fields)。
@@ -103,6 +103,9 @@ In the following video, Adaptive Form components are bound with corresponding Ac
 ![影像提交動作](/help/forms/assets/submit-actions-img.png)
 
 
+>[!NOTE]
+>
+> 您可以使用&#x200B;**[!UICONTROL 記錄檔案繫結參考欄位]**&#x200B;屬性，為任何表單資料模型儲存記錄檔案。
 
 ## 記錄檔案範本的增量更新 {#document-of-record-template-incremental-updates}
 
@@ -326,12 +329,12 @@ When you select a form model, configure Document of Record using options availab
 
    1. **基本屬性**：
       * **範本**：如果您想要選取自訂範本，請瀏覽並選取[!DNL AEM Forms]伺服器上的XDP。 如果您想要使用您的[!DNL AEM Forms]伺服器上未提供的範本，您應該先將XDP上傳到您的[!DNL AEM Forms]伺服器。
-      * **強調色**：在記錄檔案PDF中呈現標頭文字和分隔線的色彩。
-      * **字型系列**：記錄檔案PDF中文字的字型系列。
+      * **強調色**：在PDF記錄檔案中呈現標頭文字和分隔線的色彩。
+      * **字型系列**：記錄檔案PDF中的文字字型系列。
 
         >[!NOTE]
         >
-        > AEM Forms提供多種內建字型，可與PDF檔案緊密整合。 若要檢視支援的字型清單，[請按一下這裡](/help/forms/supported-out-of-the-box-fonts.md)。
+        > AEM Forms提供多種內建字型，可順暢地與PDF檔案整合。 若要檢視支援的字型清單，[請按一下這裡](/help/forms/supported-out-of-the-box-fonts.md)。
 
       * **包含未繫結至資料模型的表單物件**：設定屬性會包含記錄檔案中結構描述型最適化表單中未繫結的欄位。
 
@@ -381,7 +384,7 @@ When you select a form model, configure Document of Record using options availab
 
 ## 記錄檔案中面板的表格和欄配置 {#table-and-column-layouts-for-panels-in-document-of-record}
 
-您的調適型表單可能很長，包含多個表單欄位。 您可能不想將記錄檔案儲存為最適化表單的精確副本。 現在您可以選擇表格或欄版面配置，以將一或多個最適化表單面板儲存在記錄檔案PDF中。
+您的調適型表單可能很長，包含多個表單欄位。 您可能不想將記錄檔案儲存為最適化表單的精確副本。 現在您可以選擇表格或欄版面配置，以將一個或多個最適化表單面板儲存在記錄檔案PDF中。
 
 在產生記錄檔案之前，在面板的設定中，選取該面板的「記錄檔案配置」(Layout For The Document of Record)為「表格」或「欄」。 面板中的欄位會在記錄檔案中進行相應的組織。
 

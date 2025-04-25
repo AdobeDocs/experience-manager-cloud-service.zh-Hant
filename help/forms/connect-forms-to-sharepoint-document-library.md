@@ -4,13 +4,13 @@ Description: This article explains how to send data from your Adaptive Form to a
 keywords: 如何連線SharePoint檔案庫取得最適化表單、提交至SharePoint、建立SharePoint檔案庫設定、在最適化表單中使用提交至SharePoint提交動作、AEM Forms資料模型SharePoint檔案庫、Forms資料模型SharePoint檔案庫、將Forms資料模型整合至SharePoint檔案庫
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: 55e8f142e242f5f4010653a155a241ffcf801470
+exl-id: a00b4a93-2324-4c2a-824f-49146dc057b0
+source-git-commit: 1dddba99c5871d01bf51c335747363af1889738d
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 35%
+source-wordcount: '635'
+ht-degree: 33%
 
 ---
-
 
 # 將最適化表單連線至Microsoft® SharePoint檔案庫 {#connect-af-sharepoint-doc-library}
 
@@ -75,8 +75,14 @@ ht-degree: 35%
 1. 選取您要儲存資料的「**[!UICONTROL 儲存空間設定]**」。
 1. 按一下「**[!UICONTROL 儲存]**」以儲存「提交」設定。
 
-當您提交表單時，資料會儲存在指定的Microsoft® Sharepoint檔案庫儲存空間中。
-儲存資料的資料夾結構是 `/folder_name/form_name/year/month/date/submission_id/data`。
+>[!NOTE]
+>
+> 當您提交表單時，資料會儲存在指定的Microsoft® Sharepoint檔案庫儲存空間中。 儲存資料的資料夾結構是 `/folder_name/form_name/year/month/date/submission_id/data`。
+
+>[!NOTE]
+>
+> 附件也儲存在`/folder_name/form_name/year/month/date/submission_id/data`目錄中。 不過，如果您選取&#x200B;**以原始名稱儲存附件**，則附件會使用其原始檔案名稱儲存在資料夾中。
+> ![影像](/help/forms/assets/sp-doc-attachment-af2.png){height=50%，width=50%}
 
 ## 相關文章
 

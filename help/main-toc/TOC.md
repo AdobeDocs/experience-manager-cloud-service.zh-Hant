@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: e302cb6c85937755b7c9324dc1ee6c60a7562b80
+source-git-commit: 2f79251471d9ec3f586f838c737cde3533874b02
 workflow-type: tm+mt
-source-wordcount: '6135'
+source-wordcount: '6134'
 ht-degree: 100%
 
 ---
@@ -33,6 +33,7 @@ ht-degree: 100%
    + AEMaaCS 功能發行說明 {#release-notes}
       + [最新發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2025 {#2025}
+         + [2025.3.0 版發行說明](/help/release-notes/release-notes-cloud/2025/release-notes-2025-3-0.md)
          + [2025.2.0 版發行說明](/help/release-notes/release-notes-cloud/2025/release-notes-2025-2-0.md)
          + [2025.1.0 版發行說明](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md)
       + 2024 {#2024}
@@ -1039,7 +1040,6 @@ ht-degree: 100%
       + [重新導向](/help/edge/docs/redirects.md)
    + 建置表單 {#build-forms}
       + [概觀](/help/edge/docs/forms/overview.md)
-      + [Edge Delivery Services 表單如何運作？](/help/edge/docs/forms/universal-editor/edge-delivery-services-form.md)
       + [常見問題集](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
       + WYSIWYG 製作 {#universal-editor}
          + [Edge Delivery Services 的表單通用編輯器簡介：完整指南](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)

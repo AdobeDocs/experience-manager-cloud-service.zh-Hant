@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8191e113-f768-4b1e-a191-e3c722f19054
-source-git-commit: e5f22d925f9b9ec3a5f80f9506353e42e8879da3
+source-git-commit: bcf8f9e5273819eaee09875ec81251fe4330701c
 workflow-type: tm+mt
-source-wordcount: '1384'
+source-wordcount: '1561'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,21 @@ ht-degree: 0%
 本文提供根據核心元件之最適化表單的規則編輯器詳細範例，深入瞭解其針對不同情境的正確實施。 規則編輯器可讓開發人員定義和管理控制表單行為的邏輯。
 現在，讓我們討論規則編輯器的不同實作。
 
+## 如果第一個面板有效，請按一下按鈕時將焦點設定為另一個面板
+
+<span class="preview">這是一項預先發佈功能，可透過我們的[預先發佈管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)存取。</span>
+
+規則編輯器可讓您驗證面板版面，例如「水準標籤」、「垂直標籤」、「摺疊式面板」或「精靈」，只要按一下按鈕，即可在另一個面板中將焦點設定為表單物件。 您可以使用此功能來改善表單導覽和使用者體驗。
+
+想像使用精靈版面配置的多步驟應用程式表單。 您必須先完成`Personal Information`面板，才能移至`Employment Details`。 當您按一下「`Next`」按鈕時，規則編輯器會驗證`Personal Information`面板。 如果所有必填欄位都填寫正確，表單會自動將焦點移至`Employment Details`面板。 否則，它會顯示錯誤訊息，提示使用者完成缺少的欄位。
+
+您可以在`Next`按鈕上建立規則以驗證第一個面板：
+
+![下一個按鈕的規則](/help/forms/assets/next-rule.png){width=50%}
+
+當您按一下&#x200B;**下一步**&#x200B;按鈕時，**個人資訊**&#x200B;面板就會驗證。 如果輸入的詳細資料正確無誤，焦點會移至&#x200B;**帳戶安全性**&#x200B;面板；否則，錯誤訊息會提示您填寫遺漏的詳細資訊。
+
+<!--![Video]()-->
 
 ## 使用按鈕在面板之間導覽
 
@@ -120,9 +135,9 @@ Any scripts or expressions that you must have written in the Scripts tab are ava
 
 在貸款申請表單中，您想要擷取貸款申請人是否為現有客戶。 根據使用者提供的資訊，客戶ID欄位應顯示或隱藏。 此外，如果使用者是現有客戶，您想要將焦點設定在客戶ID欄位。 貸款申請表單包含下列元件：
 
-* 單選按鈕&#x200B;**[!UICONTROL 您是現有的Geometrixx客戶嗎？]**，提供[!UICONTROL 是]和[!UICONTROL 否]選項。 「是」的值為&#x200B;**0**，「否」的值為&#x200B;**1**。
+* 選項按鈕&#x200B;**[!UICONTROL 您是Geometrixx現有客戶嗎？]**，提供[!UICONTROL 是]和[!UICONTROL 否]選項。 「是」的值為&#x200B;**0**，「否」的值為&#x200B;**1**。
 
-* 文字欄位&#x200B;**[!UICONTROL 客戶ID]** Geometrixx，用以指定客戶ID。
+* 用於指定客戶ID的文字欄位&#x200B;**[!UICONTROL Geometrixx客戶ID]**。
 
 當您在選項按鈕上編寫實施此行為的When規則時，該規則在視覺規則編輯器中會顯示如下。
 

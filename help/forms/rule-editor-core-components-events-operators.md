@@ -1,13 +1,13 @@
 ---
-title: 基於核心元件規則自適應窗體的編輯者中可用的各種運算符類型和事件有哪些？
-description: 自適應Forms規則編輯者支持各種運算符類型和事件。
+title: 根據核心元件的適用性表單的規則編輯器中可用的各種運運算元型別和事件有哪些？
+description: 最適化Forms規則編輯器支援各種運運算元型別和事件。
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: ac85ff04-25dc-4566-a986-90ae374bf383
-source-git-commit: dab2b94d1e456622f061741ba1b5192c9163c295
+source-git-commit: 321116ce8d6da53c431f68f437cbf7c0050a47e8
 workflow-type: tm+mt
-source-wordcount: '2171'
+source-wordcount: '2333'
 ht-degree: 2%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 最適化表單的規則編輯器中可用的運運算元型別，提供完善的結構來建構精確條件。 它們可讓您以邏輯且一致的方式操控資料、執行計算以及結合多個條件。 無論您是要比較值、執行算術運算或操控字串，這些運運算元都能確保您的規則既靈活又強大。
 
-規則編輯器中的事件會作為啟動規則的觸發器。 它們定義了在滿足某些條件時發生的特定作。 通過利用不同類型的事件，您可以自動響應各種方案，例如，用戶交互、計劃時間、數據更改和系統狀態。 通過指定這些觸發器，您可以創建滿足特定要求的動態和回應式規則。
+規則編輯器中的事件會作為啟動規則的觸發器。 它們定義當滿足某些條件時會發生的特定動作。 運用不同型別的事件，您可以自動回應廣泛的情境，例如使用者互動、排程時間、資料變更和系統狀態。 有了指定這些觸發器的功能，您可以建立動態且回應式規則，以符合您的特定需求。
 
 透過瞭解並使用可用的運運算元型別和事件，您可以解鎖規則編輯器的完整潛能，這可讓您建立有效率且有效的規則，以滿足您獨特的需求並改善整體系統功能。
 
@@ -26,17 +26,21 @@ ht-degree: 2%
 
 規則編輯器提供下列邏輯運運算元和事件，您可使用它們建立規則。
 
-* **等於**
-* **不等於**
-* **開頭為**
-* **結尾為**
-* **包含**
-* **不包含**
-* **是空的**
-* **不是空的**
-* **已選取：**&#x200B;當使用者選取核取方塊、下拉式清單單選按鈕的特定選項時，傳回True。
-* **已初始化（事件）：**&#x200B;當表單物件在瀏覽器中呈現時傳回True。
-* **已變更（事件）：**&#x200B;當使用者變更表單物件的輸入值或選取的選項時，傳回true。
+* **等於** — 檢查表單物件是否符合指定的值。
+* **不等於** — 檢查表單物件是否不符合指定的值。
+* **開始於** – 檢查表單物件是否以指定的字串開頭。
+* **終止於** – 檢查表單物件是否以指定的字串結尾。
+* **包含** – 檢查表單物件是否包含指定的子字串。
+* **不包含** – 檢查表單物件是否不包含指定的子字串。
+* **為空** – 檢查表單物件是否為空或未提供。
+* **非空** – 檢查表單物件是否存在且不為空。
+* **已選取** — 當使用者選取特定的核取方塊、下拉式清單或選項按鈕選項時，傳回True。
+* **已初始化（事件）** — 在瀏覽器中轉譯表單物件時傳回true。
+* **已變更（事件）** — 當使用者修改表單物件的值或選取範圍時，傳回true。
+* **已點按（事件）** — 當使用者按一下表單物件（例如按鈕）時，傳回true。 使用者可以[新增多個條件至按鈕點按](/help/forms/rule-editor-core-components-usecases.md#set-focus-to-another-panel-on-button-click-if-the-first-panel-is-valid)。
+* **有效** — 檢查表單物件是否符合驗證准則。
+* **無效** — 檢查表單物件是否通過驗證准則。
+
 
 <!--
 * **Navigation(event):** Returns true when the user clicks a navigation object. Navigation objects are used to move between panels. 
@@ -89,11 +93,11 @@ _
 
 在 When **** 条件中，您可以選擇添加除應用規則的欄位之外的其他字段。
 
-例如，使用 When 規則 類型，可以評估不同表單物件上的條件並執行作：
+例如，使用When規則型別，您可以評估不同表單物件的條件並執行動作：
 
-什麼時候：
+時間：
 
-（物件 A 條件 1）
+（物件A條件1）
 
 和/或
 
@@ -112,6 +116,10 @@ _
 * 請確定[核心元件設定為3.0.14版或更新版本](https://github.com/adobe/aem-core-forms-components)，以便在規則編輯器中使用此功能。
 * 如果規則套用至When條件內的不同欄位，即使這些欄位中只有一個已變更，規則也會觸發。
 * 您只能為&#x200B;**AND**&#x200B;規則在&#x200B;**When**&#x200B;條件中新增多個欄位。 **OR**&#x200B;規則無法執行。
+
+>[!NOTE]
+>
+> 若要新增多個包含按鈕點選的條件，請確定將按鈕點選事件設為第一個條件。 例如，`When button is clicked AND text input equals '5'`有效，但不支援`When text input equals '5' AND button is clicked`。
 
 <!--
 * It is not possible to add multiple fields in the When condition while applying rules to a button.
@@ -132,10 +140,10 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 如果「條件」功能中允許的多個欄位發生任何問題，請遵循下列疑難排解步驟：
 
-1. 在編輯模式下打開表單。
-1. 開啟「內容」瀏覽器，然後選擇 **[!UICONTROL 最適化表單的「引導容器]** 」元件。
+1. 以編輯模式開啟表單。
+1. 開啟內容瀏覽器，然後選取最適化表單的&#x200B;**[!UICONTROL 指南容器]**&#x200B;元件。
 1. 按一下「指引容器」屬性 ![指引屬性](/help/forms/assets/configure-icon.svg) 圖示。此時會開啟「最適化表單容器」對話框。
-1. 按兩下完成，再次儲存對話框。
+1. 按一下完成，然後再次儲存對話方塊。
 
 **[!UICONTROL 隱藏]**&#x200B;隱藏指定的物件。
 
@@ -145,19 +153,19 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 **[!UICONTROL 停用]**&#x200B;停用指定的物件。
 
-**[!UICONTROL 啟動服務]**&#x200B;啟動表單資料模型(FDM)中設定的服務。 選擇「啟動服務」作業時，會出現一個欄位。 點擊該欄位時，它會顯示執行個體 [!DNL Experience Manager] 上所有表單數據模型 （FDM） 中配置的所有服務。 選擇表單數據模型服務時，將顯示更多欄位，您可以在其中將表單物件與指定服務的輸入參數進行映射。 您可以通過指定服務的事件有效負載選項映射輸出參數。 您也可以使用規則編輯器，建立處理叫用服務作業成功和失敗回應的規則。
+**[!UICONTROL 啟動服務]**&#x200B;啟動表單資料模型(FDM)中設定的服務。 選擇「啟動服務」作業時，會出現一個欄位。 點選欄位時，它會顯示您[!DNL Experience Manager]執行個體上所有表單資料模型(FDM)中設定的所有服務。 選擇表單資料模型服務時，會出現更多欄位，您可在其中使用指定服務的輸入引數對應表單物件。 您可以透過指定服務的事件裝載選項對應輸出引數。 您也可以使用規則編輯器，建立處理叫用服務作業成功和失敗回應的規則。
 
 >[!NOTE]
 >
-> 若要進一步瞭解Invoke服務，[請按一下這裡](/help/forms/invoke-service-enhancements-rule-editor.md)。
+> 要瞭解有關調用服務的更多資訊， [請按兩下此處](/help/forms/invoke-service-enhancements-rule-editor.md)。
 
-請參閱叫用表單資料模型(FDM)服務的規則範例。
+請參閱有關叫用窗體數據模型 （FDM） 服務的範例規則。
 
-除了「表單資料模型」服務之外，您還可以指定直接的WSDL URL來叫用Web服務。 不過，表單資料模型服務有許多優點，且建議叫用服務的方法。
+除了表單資料模型服務之外，您還可指定直接 WSDL URL來叫用網站服務。 然而，表單數據模型服務有許多優點，而且是叫用服務的建議方法。
 
-如需有關在表單資料模型(FDM)中設定服務的詳細資訊，請參閱[[!DNL Experience Manager Forms] 資料整合](data-integration.md)。
+有關在表單數據模型 （FDM） 中配置服務的更多資訊，請參閱 [[!DNL Experience Manager Forms] 數據集成](data-integration.md)。
 
-**[!UICONTROL 設定值]**&#x200B;計算並設定指定物件的值。 您可以將物件值設為字串、其他物件的值、使用數學運算式或函式的計算值、物件屬性的值，或來自已設定表單資料模型服務的輸出值。 當您選擇Web服務選項時，它會顯示您[!DNL Experience Manager]執行個體上所有表單資料模型(FDM)中設定的所有服務。 選擇表單資料模型服務時，會出現更多欄位，您可在其中對應具有指定服務的輸入和輸出引數的表單物件。
+**[!UICONTROL 設置計算的值]** 並設置指定物件的值。 您可以將物件值設為字串、其他物件的值、使用數學運算式或函式的計算值、物件屬性的值，或來自已設定表單資料模型服務的輸出值。 當您選擇Web服務選項時，它會顯示您[!DNL Experience Manager]執行個體上所有表單資料模型(FDM)中設定的所有服務。 選擇表單資料模型服務時，會出現更多欄位，您可在其中對應具有指定服務的輸入和輸出引數的表單物件。
 
 如需有關在表單資料模型(FDM)中設定服務的詳細資訊，請參閱[[!DNL Experience Manager Forms] 資料整合](data-integration.md)。
 
@@ -228,15 +236,15 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 （條件 1 和條件 2 和條件 3） 為 TRUE;
 
-下面的示例選擇 as `True` 的值`Question2`並設置 as `correct`的值`Result`。
+下列範例選取`Question2`的值做為`True`，並將`Result`的值設定為`correct`。
 
 ![Set-value-web-service](assets/set-value-web-service.png)
 
-使用表單數據模型服務設定值規則的範例。
+使用表單資料模型服務的設定值規則範例。
 
-#### [!UICONTROL 顯示] {#show}
+#### [!UICONTROL 節目] {#show}
 
-**[!UICONTROL 使用 顯示]** 規則 類型，您可以編寫一個規則，以根據是否滿足條件來显示或隱藏表單物件。Show規則型別也會觸發Hide動作，以防條件未滿足或傳回`False`。
+使用&#x200B;**[!UICONTROL 顯示]**&#x200B;規則型別，您可以撰寫規則來根據條件是否滿足來顯示或隱藏表單物件。 Show規則型別也會觸發Hide動作，以防條件未滿足或傳回`False`。
 
 典型的Show規則結構如下：
 
@@ -252,9 +260,9 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 #### [!UICONTROL 隱藏] {#hide}
 
-與「顯示」規則型別類似，您可以使用&#x200B;**[!UICONTROL 隱藏]**&#x200B;規則型別，根據是否符合條件來顯示或隱藏表單物件。 隱藏規則類型也會在條件不滿足或返回 `False`時觸發顯示作。
+與「顯示」規則型別類似，您可以使用&#x200B;**[!UICONTROL 隱藏]**&#x200B;規則型別，根據是否符合條件來顯示或隱藏表單物件。 Hide規則型別也會觸發Show動作，以防條件不滿足或傳回`False`。
 
-典型的隱藏規則結構如下：
+典型的「隱藏」規則結構如下：
 
 `Hide Object A;`
 
@@ -268,9 +276,9 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 #### [!UICONTROL 啟用] {#enable}
 
-**[!UICONTROL 啟用]**&#x200B;規則型別可讓您根據條件是否滿足來啟用或停用表單物件。 Enable規則型別也會觸發Disable動作，以防條件不滿足或傳回`False`。
+]**啟用**[!UICONTROL &#x200B;規則“類型允許您根據是否滿足條件來啟用或禁用表單物件。啟用規則類型還會在條件不滿足或返回 `False`時觸發禁用作。
 
-典型的Enable規則結構如下：
+典型的啟用規則結構如下：
 
 `Enable Object A;`
 
@@ -282,9 +290,9 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 `Disable Object A;`
 
-#### [!UICONTROL 停用] {#disable}
+#### [!UICONTROL 禁用] {#disable}
 
-與「啟用」規則型別類似，**[!UICONTROL 停用]**&#x200B;規則型別可讓您根據條件是否滿足來啟用或停用表單物件。 Disable規則型別也會觸發Enable動作，以防條件不滿足或傳回`False`。
+與“啟用規則”類型類似， **[!UICONTROL “禁用]** ”規則類型允許您根據是否滿足條件來啟用或禁用表單物件。 禁用規則類型還會在條件不滿足或返回 `False`時觸發啟用作。
 
 典型的「停用」規則結構如下：
 
@@ -342,13 +350,13 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 如需有關如何建立規則以在面板中導覽的詳細資訊，[請按一下這裡](/help/forms/rule-editor-core-components-usecases.md#navigating-between-panels-using-buttons)。
 
-#### [!UICONTROL 非同步函式呼叫]
+#### [!UICONTROL 異步函數呼叫]
 
 <span class="preview">這是一項預先發佈功能，可透過我們的[預先發佈管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)存取。</span>
 
-**[!UICONTROL 非同步函式呼叫]**&#x200B;規則型別可讓您執行非同步函式。 它可讓您啟動獨立於主要執行緒運作的函式呼叫，讓其他處理程式繼續執行，而不需要等候非同步函式完成。
+**[!UICONTROL 異步函數調用]**&#x200B;規則類型允許您執行異步函數。它使您能夠啟動獨立於主執行線程運行的函數調用，從而允許其他進程繼續運行，而無需等待異步函數完成。
 
-用來執行非同步函式的典型Async函式呼叫規則的結構如下：
+用於執行異步函數的典型異步函數調用規則的結構如下：
 
 `When:`
 

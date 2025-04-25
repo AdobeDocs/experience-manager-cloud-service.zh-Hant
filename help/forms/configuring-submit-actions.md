@@ -4,9 +4,9 @@ description: 最適化表單提供多個提交動作。提交動作會定義提�
 feature: Adaptive Forms, Foundation Components
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
 role: User, Developer
-source-git-commit: db0487ab11f48690cb36b410b895324e0d4cf684
+source-git-commit: 1dddba99c5871d01bf51c335747363af1889738d
 workflow-type: tm+mt
-source-wordcount: '3929'
+source-wordcount: '3957'
 ht-degree: 72%
 
 ---
@@ -19,9 +19,9 @@ ht-degree: 72%
 | AEM as a Cloud Service （核心元件） | [按一下這裡](/help/forms/configure-submit-actions-core-components.md) |
 | AEM as a Cloud Service （基礎元件） | 本文章 |
 
-**套用至**： ✔️最適化表單基礎元件。 ❌ [最適化表單核心元件](/help/forms/configure-submit-actions-core-components.md)。 Adobe建議使用核心元件[將最適化Forms新增至AEM Sites頁面](create-or-add-an-adaptive-form-to-aem-sites-page.md)或[建立獨立的最適化Forms](creating-adaptive-form-core-components.md)。
+**套用至**： ✔️最適化表單基礎元件。 ❌ [最適化表單核心元件](/help/forms/configure-submit-actions-core-components.md)。 Adobe建議使用核心元件來[將最適化Forms新增至AEM Sites頁面](create-or-add-an-adaptive-form-to-aem-sites-page.md)或[建立獨立的最適化Forms](creating-adaptive-form-core-components.md)。
 
-當使用者按一下最適化表單上的&#x200B;**[!UICONTROL 提交]**&#x200B;按鈕時，就會觸發提交動作。 Formsas a Cloud Service提供下列立即可用的提交動作。
+當使用者按一下最適化表單上的&#x200B;**[!UICONTROL 提交]**&#x200B;按鈕時，就會觸發提交動作。 Forms as a Cloud Service提供下列立即可用的提交動作。
 
 * [提交到 REST 端點](#submit-to-rest-endpoint)
 * [寄送電子郵件](#send-email)
@@ -193,7 +193,7 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
 若要將AEM Forms連線至您的Microsoft® Sharepoint檔案庫儲存空間：
 
-1. 前往您的&#x200B;**AEM Forms Author**&#x200B;執行個體> **[!UICONTROL 工具]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Microsoft® SharePoint]**。
+1. 前往您的&#x200B;**AEM Forms作者**&#x200B;執行個體> **[!UICONTROL 工具]** > **[!UICONTROL 雲端服務]** > **[!UICONTROL Microsoft® SharePoint]**。
 1. 選取&#x200B;**[!UICONTROL Microsoft® SharePoint]**&#x200B;後，系統會將您重新導向至&#x200B;**[!UICONTROL SharePoint瀏覽器]**。
 1. 選取一個&#x200B;**設定容器**。設定會儲存在選取的設定容器中。
 1. 從下拉式清單中按一下&#x200B;**[!UICONTROL 建立]** > **[!UICONTROL SharePoint檔案庫]**。 此時會顯示 SharePoint 設定精靈。
@@ -232,12 +232,17 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
    > * 如果沒有選取「[!UICONTROL 設定容器]」，「提交動作」屬性視窗中會顯示全域「[!UICONTROL 儲存空間設定]」資料夾。
 
 1. 選取「**提交動作**」做為「**[!UICONTROL 提交到 SharePoint]**」。
-   ![SharepointGIF](/help/forms/assets/sharedrive-video.gif)
+   ![Sharepoint GIF](/help/forms/assets/sharedrive-video.gif)
 1. 選取您要儲存資料的「**[!UICONTROL 儲存空間設定]**」。
 1. 按一下「**[!UICONTROL 儲存]**」以儲存「提交」設定。
 
 當您提交表單時，資料會儲存在指定的Microsoft® Sharepoint檔案庫儲存空間中。
 儲存資料的資料夾結構是 `/folder_name/form_name/year/month/date/submission_id/data`。
+
+>[!NOTE]
+>
+> 附件也儲存在`/folder_name/form_name/year/month/date/submission_id/data`目錄中。 不過，如果您選取&#x200B;**以原始名稱儲存附件**，則附件會使用其原始檔案名稱儲存在資料夾中。
+> ![影像](/help/forms/assets/sp-doc-attachment-af1.png){height=50%，width=50%}
 
 ### 將最適化表單連線至Microsoft® SharePoint清單 {#connect-af-sharepoint-list}
 
@@ -252,7 +257,7 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
 若要將AEM Forms連線至您的Microsoft®Sharepoint清單：
 
-1. 移至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Microsoft® SharePoint]**。
+1. 移至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 雲端服務]** > **[!UICONTROL Microsoft® SharePoint]**。
 1. 選取一個&#x200B;**設定容器**。設定會儲存在選取的設定容器中。
 1. 從下拉式清單中按一下&#x200B;**[!UICONTROL 建立]** > **[!UICONTROL SharePoint清單]**。 此時會顯示 SharePoint 設定精靈。
 1. 指定「**[!UICONTROL 標題]**」、「**[!UICONTROL 用戶端 ID]**」、「**[!UICONTROL 用戶端密碼]**」和「**[!UICONTROL OAuth URL]**」。如需有關如何擷取 OAuth URL 之用戶端 ID、用戶端密碼、租用戶 ID 的資訊，請參閱 [Microsoft® 文件](https://learn.microsoft.com/en-us/graph/auth-register-app-v2)。
@@ -274,9 +279,9 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
 您可以在調適型表單中使用已建立的SharePoint清單設定，以在SharePoint清單中儲存資料或產生的記錄檔案。 執行以下步驟，在最適化表單中使用SharePoint清單儲存體設定：
 
-1. [使用Microsoft® SharePoint清單設定建立表單資料模型(FDM)](/help/forms/create-form-data-models.md)
+1. [使用Microsoft建立表單資料模型(FDM)](/help/forms/create-form-data-models.md)
 1. [設定表單資料模型(FDM)以擷取及傳送資料](/help/forms/work-with-form-data-model.md#configure-services)
-1. [建立最適化表單](/help/forms/creating-adaptive-form.md)
+1. [建立自適應表單](/help/forms/creating-adaptive-form.md)
 1. [使用表單資料模型(FDM)設定提交動作](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
 
 提交表單時，資料會儲存在指定的Microsoft® Sharepoint清單儲存空間中。

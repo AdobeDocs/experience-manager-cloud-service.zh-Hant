@@ -4,10 +4,10 @@ description: 本教學課程可協助您啟動並執行新的 Adobe Experience M
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 3db311812f6c4521baf1364523a0e0b1134fee65
-workflow-type: ht
+source-git-commit: bcf8f9e5273819eaee09875ec81251fe4330701c
+workflow-type: tm+mt
 source-wordcount: '1857'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -26,7 +26,8 @@ ht-degree: 100%
 
 AEM Forms 會提供一個稱為「最適化表單區塊」的區塊，協助您輕鬆建立 Edge Delivery Services 表單來擷取和儲存資料。您可以[建立使用最適化表單區塊預先設定的新 AEM 專案](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block)，或[將最適化表單區塊新增至現有 AEM 專案](#add-adaptive-forms-block-to-your-existing-aem-project)。
 
-![Github 存放庫工作流程](/help/edge/assets/repo-workflow.png){width="50%" align="center" height="50%"}
+<!-->
+![Github存放庫工作流程](/help/edge/assets/repo-workflow.png){width="50%" align="center" height="50%"}—>
 
 此教學課程將指導您使用通用編輯器的所見即所得製作功能，在新的或現有的 Adobe Experience Manager Site 專案中，建立、預覽和發佈您自己的表單。
 
