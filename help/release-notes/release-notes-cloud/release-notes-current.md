@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 11d019e10dc9246e5560f7fe27472d047cdc7caa
+source-git-commit: 32aaabb3f47d2352245ab69f68a6ac98b9828449
 workflow-type: tm+mt
-source-wordcount: '1551'
-ht-degree: 46%
+source-wordcount: '1713'
+ht-degree: 42%
 
 ---
 
@@ -162,6 +162,20 @@ CDN規則現在可以根據地區、大陸和組織來比對使用案例，包�
 >[!IMPORTANT]
 >
 > Java 21 **執行階段**&#x200B;已於 2 月份部署到您的 dev/RDE 環境，並將於 **4 月 28 日和 29 日**&#x200B;套用至您的中繼/生產環境。請注意，使用 Java 21 (或 Java 17) **建置程式碼** 與 Java 21 執行階段無關 - 您必須明確地採取步驟，使用 Java 21 (或 Java 17) 來建置程式碼。
+
+### 實施AEM的記錄設定原則 {#logconfig-policy}
+
+為了確保有效監控客戶環境，AEM Java記錄必須保持一致的格式，並且不應由自訂設定覆寫。 記錄輸出必須保持指向預設檔案。 對於AEM產品程式碼，必須保留預設記錄層級。 不過，調整客戶開發程式碼的記錄層級是可接受的。
+
+為此，不應變更下列OSGi屬性：
+* **Apache Sling記錄設定** (PID： `org.apache.sling.commons.log.LogManager`) — *所有屬性*
+* **Apache Sling記錄記錄器組態** （工廠PID： `org.apache.sling.commons.log.LogManager.factory.config`）：
+   * `org.apache.sling.commons.log.file`
+   * `org.apache.sling.commons.log.pattern`
+
+5月中旬，AEM將強制執行將忽略對這些屬性的任何自訂修改的原則。 請檢閱並據此調整您的下游流程。 例如，如果您使用記錄轉送功能：
+* 如果您的記錄目的地需要自訂（非預設）記錄格式，您可能需要更新擷取規則。
+* 如果記錄層級的變更降低了記錄詳細程度，請注意，預設記錄層級可能會導致記錄磁碟區顯著增加。
 
 ### AEM記錄轉送至更多目的地 — Beta計畫 {#log-forwarding-earlyadopter}
 
