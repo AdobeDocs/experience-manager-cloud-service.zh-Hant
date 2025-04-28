@@ -4,9 +4,9 @@ description: 善用行動中心，方便處理事件和其他重要資訊
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 feature: Operations
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 821dd9f172ea286a7a3de74cf8dec8001e9afee9
 workflow-type: tm+mt
-source-wordcount: '1116'
+source-wordcount: '1133'
 ht-degree: 50%
 
 ---
@@ -47,7 +47,7 @@ AEM as Cloud Service 在發生需要立即採取行動的嚴重事件時會傳�
 
 ![通知清單](/help/operations/assets/notification-list.png)
 
-在大多數情況下，快顯視窗應該會提供所有解決問題所需的內容。 不過，如果Adobe支援有任何問題，您可以按一下快顯視窗中的&#x200B;**連絡支援**&#x200B;連結。 這將彈出一個表格，您可以在表格中描述問題並提交它以建立支援票證，其中可包含對特定通知的參考，以便 Adobe 支援工程師了解相關內容。
+在大多數情況下，快顯視窗應該會提供所有解決問題所需的內容。 不過，如果Adobe支援有任何問題，您可以按一下快顯視窗中的&#x200B;**聯絡支援**&#x200B;連結。 這將彈出一個表格，您可以在表格中描述問題並提交它以建立支援票證，其中可包含對特定通知的參考，以便 Adobe 支援工程師了解相關內容。
 
 ![聯絡支援 1](/help/operations/assets/contact-support1.png)
 
@@ -75,9 +75,9 @@ AEM as a Cloud Service 有多種類型的通知，但只有一部分出現在行
 |---------------------------------|-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 鎖定的複製佇列 | 事件 | 按照[複製文件](/help/operations/replication.md#troubleshooting)中的說明解鎖佇列 |
 | 無效的GraphQL查詢 | 事件 | 參考[持續的GraphQL查詢疑難排解檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html)，修正無效的GraphQL查詢 |
-| 來源處的流量尖峰 | 事件 | 透過設定在低於來源預設流量尖峰警報的臨界值處觸發的速率限制流量篩選規則，Protect您的來源。  請參閱參考教學課程之流量篩選規則檔案中的[使用流量規則封鎖DoS和DDoS攻擊](/help/security/traffic-filter-rules-including-waf.md#blocking-dos-and-ddos-attacks-using-traffic-filter-rules)一節。 |
+| 來源處的流量尖峰 | 事件 | 設定在低於來源預設流量尖峰警報觸發的速率限制流量篩選規則，以保護您的來源。  請參閱參考教學課程之流量篩選規則檔案中的[使用流量規則封鎖DoS和DDoS攻擊](/help/security/traffic-filter-rules-including-waf.md#blocking-dos-and-ddos-attacks-using-traffic-filter-rules)一節。 |
 | 已觸發CDN流量篩選器規則 | 事件 | 如果相符的流量篩選規則反映攻擊，而您的網站沒有封鎖該流量，請在封鎖模式中設定流量篩選規則來保護您的網站。 請參閱流量篩選規則檔案中的[使用流量篩選規則(包括WAF規則)保護網站](/help/security/traffic-filter-rules-including-waf.md#tutorial-protecting-websites)一節，其中會參考教學課程。 |
-| Splunk記錄轉送錯誤 | 事件 | 檢查您的Splunk端點是否正常運作，以及是否可從您的AEM Cloud Service環境連線。 如需記錄轉送的詳細資訊，請瀏覽[Splunk記錄轉送檔案](/help/implementing/developing/introduction/logging.md#splunk-logs)。 如果您需要協助疑難排解，或需要變更記錄設定，請Adobe提出支援票證。 |
+| Splunk記錄轉送錯誤 | 事件 | 檢查您的Splunk端點是否正常運作，以及是否可以從您的AEM Cloud Service環境連線。 如需記錄轉送的詳細資訊，請瀏覽[Splunk記錄轉送檔案](/help/implementing/developing/introduction/logging.md#splunk-logs)。 如果您需要協助疑難排解，或需要變更記錄設定，請向Adobe提出支援票證。 |
 | 頁面包含大量節點 | 主動 | 減少頁面中的節點總數。 請參閱[頁面複雜性檔案](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/pcx) | |
 | 大量執行中的工作流程例項 | 主動 | 終止不再需要的執行中工作流程。 瞭解如何[設定清除工作](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/operations/maintenance) |               |
 | 即將到期的 S2S 認證 | 主動 | 在[為伺服器端 API 產生權杖文件](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials)中，了解如何重新整理認證 | 高連線計數 | 主動 | 瞭解在[連線集區以及進階網路檔案](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking)中的連線集區 |
@@ -87,4 +87,5 @@ AEM as a Cloud Service 有多種類型的通知，但只有一部分出現在行
 | 缺少JCR內容 | 主動 | 新增遺失的JCR內容節點。 請參閱[Assets內容驗證器檔案](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) | |
 | 已完成的工作流程未清除 | 主動 | 將工作流程例項的數目降至最低，並透過清除超過90天之前的工作流程例項來改善效能。 瞭解如何[設定維護工作](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/operations/maintenance) | |
 | 頁面中缺少Sling資源型別 | 主動 | 新增缺少的Sling資源型別節點。 請參閱[Assets內容驗證器檔案](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) | |
-| 緩慢查詢 | 主動 | 依照[JCQ查詢速查表](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf)的建議，定義正確的索引定義，以修正緩慢查詢 |
+| 緩慢查詢 | 主動 | 依照[JCQ查詢速查表](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf)的建議，定義正確的索引定義，以修正緩慢查詢 | |
+| 沒有索引的查詢 | 主動 | 避免執行未使用索引的查詢 — [索引檔案的連結](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/operations/indexing) |
