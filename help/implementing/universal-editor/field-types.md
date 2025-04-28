@@ -4,9 +4,9 @@ description: 透過範例瞭解通用編輯器可在屬性面板中編輯的欄�
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: d0a037090e4b31f18deb0a9bd3238cab0a8d185e
+source-git-commit: 3583c8dad2ad8dce941845003dbf850ea0b8ad2a
 workflow-type: tm+mt
-source-wordcount: '1526'
+source-wordcount: '1500'
 ht-degree: 11%
 
 ---
@@ -703,12 +703,7 @@ AEM內容元件型別會啟用AEM內容選擇器，可用來選取任何AEM資�
 
 #### RTF 文字 {#rich-text}
 
-RTF允許多行RTF輸入。 它提供額外的驗證型別。
-
-| 驗證類型 | 數值類型 | 描述 | 必填 |
-|---|---|---|---|
-| `maxSize` | `number` | 允許的最大字元數 | 否 |
-| `customErrorMsg` | `string` | 超過`maxSize`時顯示的訊息 | 否 |
+RTF允許多行RTF輸入。
 
 >[!BEGINTABS]
 
@@ -723,26 +718,6 @@ RTF允許多行RTF輸入。 它提供額外的驗證型別。
       "name": "rte",
       "label": "Rich Text",
       "valueType": "string"
-    }
-  ]
-}
-```
-
->[!TAB 範例2]
-
-```json
-{
-  "id": "another-richtext",
-  "fields": [
-    {
-      "component": "richtext",
-      "name": "rte",
-      "label": "Rich Text",
-      "valueType": "string",
-      "validation": {
-        "maxSize": 1000,
-        "customErrorMsg": "That's about as funny as a screen door on a battleship."
-      }
     }
   ]
 }
