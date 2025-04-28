@@ -4,7 +4,7 @@ description: 瞭解如何使用WYSIWYG範本編輯器建立 [!DNL Dynamic Media]
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: f3dea4724f757090a504c3144e17fca7075acc52
+source-git-commit: e1c571c4798152732d78b8a2c823d5da9664cb9e
 workflow-type: tm+mt
 source-wordcount: '3165'
 ht-degree: 1%
@@ -72,6 +72,9 @@ ht-degree: 1%
 >[!NOTE]
 >
 >訂閱Enhanced Security SKU的客戶無法在該雲端服務方案上使用任何[!DNL Dynamic Media]功能，包括[!DNL Dynamic Media]範本。
+
+瞭解如何在此影片中逐步建立[!DNL Dynamic Media]範本。
+>[!VIDEO](https://video.tv.adobe.com/v/3443281)
 
 ## 開始之前{#prerequisites-for-dynamic-media-wysiwyg-template}
 
@@ -284,9 +287,6 @@ ht-degree: 1%
 1. 按一下&#x200B;**[!UICONTROL 複製URL]**。 **[!UICONTROL 複製URL]**&#x200B;對話方塊隨即顯示。 選取並複製顯示的URL。 URL中的第一個引數在問號&#x200B;**([!UICONTROL ？])**&#x200B;和索引鍵/值組開頭為&#x200B;**[!UICONTROL $]**，結尾為&#x200B;**[!UICONTROL &amp;]**。 金鑰和值以等號分隔&#x200B;**([!UICONTROL =])**，金鑰在左側，值在右側。
 1. 將此URL貼到瀏覽器標籤中，即可檢視您的即時範本。 直接在URL中更新所需引數的值（索引鍵值），即時自訂範本，如&#x200B;**預覽和發佈**&#x200B;區段的[步驟2](#preview-and-publish-template-and-copy-template-deliver-url)所示。
 1. 使用此URL來快速銷售您的產品或服務。 您可以與客戶共用此URL，或將其整合至您的網站或任何下游第三方應用程式，以顯示橫幅並即時更新以反映持續優惠。
-
-瞭解如何在此影片中逐步建立[!DNL Dynamic Media]範本。
->[!VIDEO](https://video.tv.adobe.com/v/3443281)
 
 ## 從URL即時更新範本{#update-the-template-from-the-url}
 
