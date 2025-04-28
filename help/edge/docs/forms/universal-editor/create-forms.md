@@ -6,10 +6,10 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
-source-git-commit: bcf8f9e5273819eaee09875ec81251fe4330701c
+source-git-commit: 1e5711a1b671663653fe22ee08bc01f584655d76
 workflow-type: tm+mt
-source-wordcount: '1580'
-ht-degree: 26%
+source-wordcount: '403'
+ht-degree: 15%
 
 ---
 
@@ -45,274 +45,274 @@ Adobe Experience Manager (AEM)可讓您建立吸引人、回應式且動態的�
 
 <!--A decision flow diagram to guide the setup and publishing of Adaptive Forms:
 
-![Github Repository Workflow](/help/edge/assets/repo-workflow.png){width=auto}-->
+![Github Repository Workflow](/help/forms/assets/repo-workflow.png){width=auto}
 
-## 在AEM中製作表單並將其發佈到Edge Delivery Services
+## Authoring forms in AEM and publishing them to Edge Delivery Services
 
-請依照下列步驟在AEM中撰寫表單，並在Edge Delivery Services上發佈：
+Follow these steps to author forms in AEM and publish them on Edge Delivery Services:
 
-[1.選擇樣版並建立表單](#choose-a-template-and-create-the-form)
+[1. Choose a template and create the form](#choose-a-template-and-create-the-form)
 
-[2.撰寫表單](#author-the-form)
+[2. Author the form](#author-the-form)
 
-[3.建立Edge Delivery Services設定](#create-an-edge-delivery-services-configuration)
+[3. Publish a form](#publish-a-form)
 
-[4.發佈表單](#publish-a-form)
+### Choose a template and create the form 
 
-[5.存取Edge Delivery Services上的表單](#access-the-form-on-edge-delivery-services)
-
-### 選擇範本並建立表單
-
-您可以在AEM例項上建立表單，以使用發佈至Edge Delivery Services：
-
-* Edge Delivery Services範本
-* 核心元件型範本
-
-執行以下步驟來選擇範本並建立表單：
-
-1. 登入AEM Forms as a Cloud Service作者例項。
-1. 選取「**[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 表單]** > **[!UICONTROL 表單與文件]**」。
-1. 選取「**[!UICONTROL 建立]**  > **[!UICONTROL 最適化表單]**」。此時會開啟精靈。
-1. 選取範本。 您可以選取下列其中一項：
-   * 以Edge Delivery Services為基礎的範本&#x200B;****
-
-     在&#x200B;**Source**&#x200B;索引標籤中，選取&#x200B;**Edge Delivery Services範本**：
-
-     ![建立 EDS 表單](/help/edge/assets/create-eds-forms.png)
-
-     當您選取&#x200B;**Edge Delivery Services範本**&#x200B;時，**[!UICONTROL 建立]**&#x200B;按鈕已啟用。
-
-      * 核心元件型範本的&#x200B;****
-
-     在&#x200B;**Source**&#x200B;索引標籤中，選取&#x200B;**以核心元件為基礎的範本**&#x200B;和&#x200B;**佈景主題**，已啟用&#x200B;**[!UICONTROL 建立]**&#x200B;按鈕：
-
-     ![以核心元件為基礎的範本](/help/forms/assets/core-component-based-template.png)
-
-1. (選用) 您在「**[!UICONTROL 資料來源]**」或「**[!UICONTROL 提交]**」標籤中可以選取資料來源或提交動作。
-1. (選用) 在「**[!UICONTROL 傳送]**」標籤中，您可以指定表單的發佈日期或取消發佈日期。
-1. 按一下「**[!UICONTROL 建立]**」，系統就會針對下列專案顯示「**建立表單**」精靈：
-
-   * **Edge Delivery Services範本式表單**
-
-      1. 設定「**名稱**」和「**標題**」。
-      2. 指定 **GitHub URL**。例如，若您的 GitHub 存放庫名稱為 `edsforms`、位於帳戶 `wkndforms` 之下，則 URL 為：
-         `https://github.com/wkndforms/edsforms`
-
-         ![建立表單精靈](/help/edge/assets/create-form-wizard.png)
-
-         當您按一下「**[!UICONTROL 建立]**」時，通用編輯器中便會開啟表單供您製作。
-
-         ![製作表單](/help/edge/assets/author-form.png)
-
-   * **以核心元件範本為基礎的表單**
-
-      1. 設定「**名稱**」和「**標題**」。
-      1. 在&#x200B;**路徑**&#x200B;欄位中指定最適化表單的儲存位置。
-
-         ![建立表單精靈](/help/forms/assets/create-cc-form.png)
-
-         當您按一下&#x200B;**[!UICONTROL 建立]**&#x200B;時，表單會在最適化表單編輯器中開啟以進行編寫。
-
-         ![最適化表單編輯器](/help/forms/assets/af-editor-form.png)
-
-1. 按一下&#x200B;**[!UICONTROL 建立]**&#x200B;以建立表單。 現在，您可以使用通用編輯器或調適型表單編輯器來編寫表單。
-
-### 撰寫表單
-
-使用Edge Delivery Services範本建立的表單會在[通用編輯器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)中開啟以進行編寫。 不過，使用核心元件式範本建立的表單會在最適化表單編輯器中開啟以進行編寫。
-
-執行以下步驟來使用Edge Delivery Services範本的通用編輯器或核心元件範本的調適型表單編輯器製作表單：
+You can create forms on an AEM instance for publishing to Edge Delivery Services using:
 
 >[!BEGINTABS]
 
->[!TAB Edge Delivery Services範本]
+>[!TAB Edge Delivery Services-based template]
 
+Perform the following steps to choose the template and create the form:
 
-1. 開啟內容瀏覽器，然後導覽至&#x200B;**內容樹**&#x200B;中的&#x200B;**[!UICONTROL 最適化表單]**&#x200B;元件。
+1. Login in to your AEM Forms as a Cloud Service author instance.
+1. Select **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms & Documents]**.
+1. Select **[!UICONTROL Create]**  &gt; **[!UICONTROL Adaptive Forms]**. The Wizard opens.
+1. In the **Source** tab, select an **Edge Delivery Services-based template**:
 
-   ![內容樹](/help/edge/assets/content-tree.png)
+      ![Create EDS Forms](/help/edge/assets/create-eds-forms.png)
 
-1. 按一下「**[!UICONTROL 新增]**」圖示，然後從&#x200B;**最適化表單元件**清單新增所需元件。
-   ![新增元件](/help/edge/assets/add-component.png)
+      When you select an **Edge Delivery Services-based template**, the **[!UICONTROL Create]** button is enabled. 
+1. (Optional) In the **[!UICONTROL Data Source]** or **[!UICONTROL Submission]** tabs, you can select a data source or submit action.
+1. (Optional) In the **[!UICONTROL Delivery]** tab, you can specify a publishing or unpublishing date for a form. 
+1. Click **[!UICONTROL Create]** and the **Create Form** wizard appears:
+   
+    1. Specify the **Name** and **Title**. 
+    1. Specify the **GitHub URL**. For example, if your GitHub repository is named `edsforms`, it is located under the account `wkndforms`,the URL is:
+    `https://github.com/wkndforms/edsforms`
 
-   底下熒幕擷圖顯示通用編輯器中編寫的`Registration Form`：
+    ![Create Form wizard](/help/edge/assets/create-form-wizard.png)
 
-   ![聯絡我們表單](/help/edge/assets/contact-us.png)
+    When you click **[!UICONTROL Create]**, the form opens in the Universal Editor for authoring.
 
->[!NOTE]
->
-> 如需使用通用編輯器製作最適化表單的詳細指示，[請按一下這裡](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#author-forms-using-wysiwyg)。
+    ![author the form](/help/edge/assets/author-form.png)
+1. Click **[!UICONTROL Create]** to create the form. Now, you can [author the form using the Universal Editor](#author-the-form).
 
-您現在可以[設定與自訂表單的提交動作](/help/edge/docs/forms/universal-editor/submit-action.md)。
+>[!TAB Core Component-based template]
 
->[!TAB 核心元件型範本]
+Perform the following steps to choose the template and create the form:
 
-1. 在&#x200B;**將元件拖曳到這裡**&#x200B;區段中，按一下&#x200B;**[!UICONTROL 插入元件]**。
+1. Login in to your AEM Forms as a Cloud Service author instance.
+1. Select **[!UICONTROL Adobe Experience Manager]** &gt; **[!UICONTROL Forms]** &gt; **[!UICONTROL Forms & Documents]**.
+1. Select **[!UICONTROL Create]**  &gt; **[!UICONTROL Adaptive Forms]**. The Wizard opens.
+1. In the **Source** tab, select a **Core Component based template** and a **theme**, the **[!UICONTROL Create]** button is enabled.:
+          
+  ![Core Component based template](/help/forms/assets/core-component-based-template.png)
 
-   ![將元件拖曳到這裡](/help/forms/assets/drag-components-af-editor.png)
+1. (Optional) In the **[!UICONTROL Data Source]** or **[!UICONTROL Submission]** tabs, you can select a data source or submit action.
+1. (Optional) In the **[!UICONTROL Delivery]** tab, you can specify a publishing or unpublishing date for a form. 
+1. Click **[!UICONTROL Create]** and the **Create Form** wizard appears for:
+     1. Specify the **Name** and **Title**.
+     2. Specify the location in the **Path** field where the Adaptive Form is to be saved.
+          
+      ![Create Form Wizard](/help/forms/assets/create-cc-form.png)
 
-1. 從&#x200B;**最適化表單元件**&#x200B;清單新增所需的元件。
+      When you click **[!UICONTROL Create]**, the form opens in the Adaptive Form Editor for authoring. 
 
-   ![新增元件](/help/forms/assets/add-component-af.png)
+      ![Adaptive Form Editor](/help/forms/assets/af-editor-form.png)
 
-底下熒幕擷圖顯示最適化表單編輯器中編寫的`Enrollment Form`：
-
-![最適化表單編輯器](/help/forms/assets/af-editor-form.png)
-
->[!NOTE]
->
-> 如需根據核心元件範本建立最適化表單的詳細指引，[請按一下這裡](/help/forms/creating-adaptive-form-core-components.md)。
-
-現在您可以[設定表單](/help/forms/configure-submit-actions-core-components.md)的提交動作。
+1. Click **[!UICONTROL Create]** to create the form. Now, you can [author the form using the Adaptive Form Editor](#author-the-form).
 
 >[!ENDTABS]
 
-### 建立Edge Delivery Services設定
+### Author the form
 
-若要在Edge Delivery Services上發佈調適型表單，您需要在AEM執行個體上建立Edge Delivery Services設定。 執行以下步驟來建立Edge Delivery Services設定：
+The forms created using the Edge Delivery Services-based template open in the [Universal Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) for authoring. However, the forms created using the Core Component-based template open in the Adaptive Form Editor for authoring.
+
+Perform the following steps to author forms using the Universal Editor for Edge Delivery Services-based template or using Adaptive Form Editor for  Core Component based template:
 
 >[!BEGINTABS]
->[!TAB 針對使用Edge Delivery Services範本建立的表單]
 
+>[!TAB Edge Delivery Services-based template]
+  
 
-在表單的設定容器中，會自動建立以Edge Delivery Services為基礎之範本的表單之Edge Delivery Services設定。
+ 1. Open the Content browser, and navigate to the **[!UICONTROL Adaptive Form]** component in the **Content tree**.
 
-![Edge Delivery Services設定](/help/edge/assets/aem-instance-eds-configuration.png)
+    ![content tree](/help/edge/assets/content-tree.png)
 
->[!TAB 針對使用核心元件型範本建立的表單]
+ 1. Click the **[!UICONTROL Add]** icon and add the desired components from the **Adaptive Form Components** list. 
+    ![add component](/help/edge/assets/add-component.png)
 
-1. 在您的 AEM Forms 作為雲端服務作者執行個體上，瀏覽至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 雲端服務]** > **[!UICONTROL Edge Delivery Services 設定]**。
+     The screenshot below displays the `Registration Form` authored in the Universal Editor:
 
-   ![選取Edge Delivery Services設定](/help/edge/assets/select-eds-conf.png)
+     ![contact us form](/help/edge/assets/contact-us.png)
 
-1. 選取與表單名稱相符的資料夾。例如，如果您的表單名為`enrollment-form`，請選擇資料夾`forms/enrollment-form`並按一下&#x200B;**[!UICONTROL 建立]** > **[!UICONTROL 設定]**：
+  >[!NOTE]
+  >
+  > For detailed instructions on authoring an Adaptive Form using the Universal Editor, [click here](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#author-forms-using-wysiwyg).
 
-   ![Edge Delivery Services設定](/help/forms/assets/create-eds-conf.png)
+  Now you can [configure and customize the submit actions for forms](/help/edge/docs/forms/universal-editor/submit-action.md).
 
-1. 按一下&#x200B;**[!UICONTROL Edge Delivery Services設定]**，然後按一下&#x200B;**[!UICONTROL 屬性]**&#x200B;以開啟屬性：
+>[!TAB Core Component-based template]
 
-   ![自動建立的組態](/help/forms/assets/eds-conf.png)
+  1. Click **[!UICONTROL Insert component]** in the **Drag components here** section.
 
-   Edge Delivery Services設定隨即顯示。
+     ![Drag components here](/help/forms/assets/drag-components-af-editor.png)
 
-1. 在Edge Delivery Services設定中指定下列專案：
+  1. Add the desired components from the **Adaptive Form Components** list. 
 
-   * **組織**：指定您的GitHub組織名稱。
+     ![Add components](/help/forms/assets/add-component-af.png)
 
-   * **網站名稱**：指定您的GitHub存放庫名稱。
-   * **分支**：指定分支名稱。 如果使用主要分支，請將文字方塊保留空白。
-   * **（選用） Edge主機**：保留Edge主機選項。 表單會發佈到預覽(.page)和即時(.live)環境。
-   * **（選擇性）網站驗證Token**：使用網站驗證Token，在您的AEM執行個體與Edge Delivery Services之間安全地驗證請求。
+   The screenshot below displays the `Enrollment Form` authored in the Adaptive Form Editor:
 
-1. 按一下&#x200B;**[!UICONTROL 儲存並關閉]**。設定已建立。
+   ![Adaptive Form Editor](/help/forms/assets/af-editor-form.png)
+
+  >[!NOTE]
+  >
+  > For detailed guidance on creating an Adaptive Form based on the Core Component template, [click here](/help/forms/creating-adaptive-form-core-components.md).
+
+  Now you can [configure the submit actions for forms](/help/forms/configure-submit-actions-core-components.md).
 
 >[!ENDTABS]
 
-### 發佈表單
+### Publish the Form
 
-若要在Edge Delivery Services上存取表單，必須發佈表單。
+To publish an Adaptive Form on Edge Delivery Services, you need to [create an Edge Delivery Services Configuration on an AEM](#create-an-edge-delivery-services-configuration) instance. 
 
-執行以下步驟以發佈表單：
+#### Create an Edge Delivery Services Configuration
+
+Perform the following steps to create the Edge Delivery Services Configuration:
 
 >[!BEGINTABS]
->在通用編輯器上[!TAB ]
+>[!TAB For forms created using the Edge Delivery Services-based template]
 
-1. 按一下通用編輯器右上角的&#x200B;**[!UICONTROL 發佈]**&#x200B;按鈕以發佈表單。
 
-![發佈表單](/help/edge/assets/publish-form.png)
+  The Edge Delivery Services configuration for forms based on the Edge Delivery Services-based template is created automatically in the form's configuration container.
 
->[!NOTE]
->
-> 若要了解如何將表單發佈至 Edge Delivery Services，請參閱「[發佈及部署](/help/edge/docs/forms/universal-editor/publish-forms.md)」一文。
+  ![Edge Delivery Services Configuration](/help/edge/assets/aem-instance-eds-configuration.png)
 
->在最適化表單編輯器上[!TAB ]
+>[!TAB For forms created using the Core Component-based template]
 
-1. 從Experience Manager Forms主控台，導覽至上層資料夾，並選取您要發佈的表單。
+  1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Edge Delivery Services Configuration]** on your AEM Forms as a Cloud Service author instance.
 
-1. 按一下工具列中的「發佈&#x200B;****」選項，檢視所有將隨表單發佈的參考資產。
+     ![Select Edge Delivery Services Configuration](/help/edge/assets/select-eds-conf.png)
 
-![在最適化表單編輯器上發佈表單](/help/forms/assets/publish-af-editor.png)
+  1. Select the folder that matches the form's name. For example, if your form is called `enrollment-form`, choose the folder `forms/enrollment-form` and click **[!UICONTROL Create]** > **[!UICONTROL Configuration]**:
 
->[!NOTE]
->
-> 請參閱[在Experience Manager Forms中管理發布](/help/forms/manage-publication.md)一文，瞭解如何在最適化表單編輯器中發佈表單。
+     ![Edge Delivery Services Configuration](/help/forms/assets/create-eds-conf.png)
+
+  1. Click the **[!UICONTROL Edge Delivery Services Configuration]** and click **[!UICONTROL Properties]** to open the properties:   
+     
+     ![Automatically created configuration](/help/forms/assets/eds-conf.png)
+
+     The Edge Delivery Services Configuration appears.
+
+  1. Specify the following in the Edge Delivery Services Configuration:
+
+     * **Organization**: Specify your GitHub organization name.
+
+     * **Site Name**: Specify your GitHub repository name.
+     * **Branch**: Specify the branch name. Leave the textbox empty if using the main branch.
+     * **(Optional) Edge Host**: Leave the Edge Host option as it is. The form is published to both preview (.page) and live (.live) environments.
+     * **(Optional) Site Authentication Token**: Use the Site Authentication Token to securely authenticate requests between your AEM instance and Edge Delivery Services.
+
+  1. Click **[!UICONTROL Save and Close]**. The configuration is created.
 
 >[!ENDTABS]
 
-## 存取Edge Delivery Services上的表單
+#### Access the form on Edge Delivery Services
 
-* **暫存版本 (用於測試)**：暫存版本會顯示表單未發佈的工作版本，以用於測試目的。使用下列 URL 格式在表單上線之前預覽表單：
-
-  `https://<branch>--<repo>--<owner>.aem.page/content/forms/af/<form_name>`
-
-
-
-* **即時版本 (發佈形式)**：即時版本會顯示表單的最新發佈版本，可供終端使用者存取。使用以下 URL 格式存取表單的已發佈即時版本：
-
-  `https://<branch>--<repo>--<owner>.aem.live/content/forms/af/<form_name>`
-
-  暫存和即時版本的 URL 結構都保持不變。不過，您看到的內容會因內容而異。
-
-以下熒幕擷取畫面會比較各階段和即時表單URL，以及使用Edge Delivery Services範本和核心元件範本建立之表單的視覺化預覽：
+To access the form on Edge Delivery Services, it is mandatory to publish the form. Perform the following steps to publish the form:
 
 >[!BEGINTABS]
->[!TAB 存取使用Edge Delivery Services範本建立的表單]
+>[!TAB On Universal Editor]
 
-<table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
+   1. Publish the form by clicking the **[!UICONTROL Publish]** button in the upper-right corner of the Universal Editor.
+
+  ![publish form](/help/edge/assets/publish-form.png)
+
+   >[!NOTE]
+   >
+   > Refer to the [Publish and Deploy](/help/edge/docs/forms/universal-editor/publish-forms.md) article to learn how to publish a form to Edge Delivery Services.
+
+>[!TAB On Adaptive Form Editor]
+
+  1. From the Experience Manager Forms console, navigate to the parent folder and select a form that you want to publish.
+
+  1. Click **[!UICONTROL Publish]**  option from the toolbar, take a look at all the reference assets that would be published with form.
+
+  ![Publish Form on Adaptive Form Editor](/help/forms/assets/publish-af-editor.png)
+
+  >[!NOTE]
+  >
+  > Refer to the [Manage Publication in Experience Manager Forms](/help/forms/manage-publication.md) article to learn how to publish a form on Adaptive Form Editor.
+
+>[!ENDTABS]
+
+* **Staged Version (for testing)**: The staged version displays the unpublished, working version of the form for testing purposes. Use the following URL format to preview the form before it goes live:
+
+    `https://<branch>--<repo>--<owner>.aem.page/content/forms/af/<form_name>`
+
+    
+
+* **Live Version (published form)**:   The live version displays the most recently published version of the form, accessible to end users. Use the following URL format to access the published, live version of the form:
+
+    `https://<branch>--<repo>--<owner>.aem.live/content/forms/af/<form_name>`
+
+     The URL structure remains the same for both staged and live versions. However, the content you see differs based on the context.
+
+The below screenshots compares staged and live form URLs and visual previews for forms created using Edge Delivery Services-based and Core Component-based templates:
+
+>[!BEGINTABS]
+>[!TAB Accessing forms created using Edge Delivery Services-based Template]
+
+  <table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
     <thead>
     <tr>
-      <th style="width: 20%;"><strong>版本</strong></th>
-      <th style="width: 80%;"><strong>影像</strong></th>
+      <th style="width: 20%;"><strong>Version</strong></th>
+      <th style="width: 80%;"><strong>Image</strong></th>
     </tr>
     </thead>
     <tbody>
     <tr>
-      <td>分段版本</td>
-      <td><img src="/help/forms/assets/registration-form-staged-version.png" alt="登錄檔單的階段版本" style="width: 100%; height: auto;" /></td>
+      <td>Staged Version</td>
+      <td><img src="/help/forms/assets/registration-form-staged-version.png" alt="Staged version of registration form" style="width: 100%; height: auto;" /></td>
     </tr>
     <tr>
-      <td>即時版本</td>
-      <td><img src="/help/forms/assets/registration-form-live-version.png" alt="登錄檔單的即時版本" style="width: 100%; height: auto;" /></td>
+      <td>Live Version</td>
+      <td><img src="/help/forms/assets/registration-form-live-version.png" alt="Live version of registration form" style="width: 100%; height: auto;" /></td>
     </tr>
     </tbody>
   </table>
 
->[!TAB 存取使用核心元件範本建立的表單]
+>[!TAB Accessing forms created using Core Component-based Template]
 
-<table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
+  <table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
   <thead>
     <tr>
-      <th style="width: 20%;"><strong>版本</strong></th>
-      <th style="width: 80%;"><strong>影像</strong></th>
+      <th style="width: 20%;"><strong>Version</strong></th>
+      <th style="width: 80%;"><strong>Image</strong></th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>分段版本</td>
-      <td><img src="/help/forms/assets/enrollment-form-staged-version.png" alt="登錄檔單的階段化版本" style="width: 100%; height: auto;" /></td>
+      <td>Staged Version</td>
+      <td><img src="/help/forms/assets/enrollment-form-staged-version.png" alt="Staged version of enrollment form" style="width: 100%; height: auto;" /></td>
     </tr>
     <tr>
-      <td>即時版本</td>
-      <td><img src="/help/forms/assets/enrollment-form-live-version.png" alt="登錄檔單的即時版本" style="width: 100%; height: auto;" /></td>
+      <td>Live Version</td>
+      <td><img src="/help/forms/assets/enrollment-form-live-version.png" alt="Live version of enrollment form" style="width: 100%; height: auto;" /></td>
     </tr>
   </tbody>
   </table>
 
 >[!ENDTABS]
 
-## 疑難排解
+## Troubleshooting 
 
-載入表單時是否遇到問題？以下是一些常見問題以及修正的方法：
+Having trouble loading your form? Here are some common issues and how to fix them:
 
-* **表單 URL**：仔細確認您表單的 URL 尾端並未包括副檔名 &quot;.html&quot;。Edge Deliver Service 不需要此副檔名。
+* **Form URL**: Double-check that your form's URL doesn't include the ".html" extension at the end. Edge Deliver Service does not require this extension.
 
-* **AEM 作者 UR** L：確保 `fstab.yaml` 檔案中所列的 AEM 作者 URL 格式正確。它應包括下列詳細資料：
+* **AEM Author UR**L: Make sure the AEM Author URL listed in your `fstab.yaml` file is formatted correctly. It should include the following details:
 
-   * 正確的 GitHub 所有者
-   * 正確的存放庫名稱
-   * 您用於 Edge Delivery Services 的特定分支
+    * The correct GitHub owner
+    * The correct repository name
+    * The specific branch that you're using for Edge Delivery Services
 
-## 開始建立表單
+## Start creating forms
 
 {{universal-editor-see-also}}
 
