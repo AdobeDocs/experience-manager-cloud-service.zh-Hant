@@ -5,20 +5,14 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 3789904b4aa1ffa4a039e6b84af64f03f06a3206
+source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
 workflow-type: tm+mt
-source-wordcount: '2847'
+source-wordcount: '2817'
 ht-degree: 5%
 
 ---
 
 # 製作內容片段 {#authoring-content-fragments}
-
->[!IMPORTANT]
->
->透過早期採用者計畫可以使用內容片段編輯器的各種功能。
->
->若要檢視狀態，以及如果您有興趣要如何套用，請檢視[發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
 
 編寫您的內容片段時同時注重Headless傳送和頁面編寫。
 
@@ -76,7 +70,7 @@ ht-degree: 5%
   >
   >根據基礎模型中的定義，欄位可能會受特定型別的[驗證](/help/assets/content-fragments/content-fragments-models.md#validation)的限制。
 
-![內容片段編輯器 — 概觀](assets/cf-authoring-overview.png)
+![內容片段編輯器 - 概觀](assets/cf-authoring-overview.png)
 
 ## 導覽內容片段結構 {#navigate-structure}
 

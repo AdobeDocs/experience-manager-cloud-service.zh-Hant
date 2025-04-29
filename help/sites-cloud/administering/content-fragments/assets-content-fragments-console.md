@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 865e1fa8-2956-45cf-9dd7-034d491808fe
 solution: Experience Manager Sites
-source-git-commit: 175a7c069f57069b7a5ff1f0e5785147d9a4f6c9
+source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
 workflow-type: tm+mt
-source-wordcount: '277'
-ht-degree: 5%
+source-wordcount: '247'
+ht-degree: 6%
 
 ---
 
@@ -17,12 +17,6 @@ ht-degree: 5%
 依預設，Adobe Experience Manager as a Cloud Service的[內容片段主控台](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)會顯示您的[內容片段](/help/sites-cloud/administering/content-fragments/overview.md)。
 
 不過，您也可以在此&#x200B;**內容片段主控台**&#x200B;中檢視及管理所有其他型別的&#x200B;**Assets**。
-
->[!IMPORTANT]
->
->透過早期採用者計畫可以使用內容片段控制檯的各種功能。
->
->若要檢視狀態，以及如果您有興趣要如何套用，請檢視[發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
 
 >[!NOTE]
 >

@@ -3,26 +3,21 @@ title: 升級您的內容片段以供UUID參考使用
 description: 瞭解如何升級您的內容片段，以在Adobe Experience Manager as a Cloud Service中最佳化UUID參考，進而進行Headless內容傳送。
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: 5aa04f3b042f8e9f9af97148ceab0288ff210238
+exl-id: 004d1340-8e3a-4e9a-82dc-fa013cea45a7
+source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
 workflow-type: tm+mt
-source-wordcount: '1157'
+source-wordcount: '1123'
 ht-degree: 2%
 
 ---
 
 # 升級您的內容片段以供UUID參考使用 {#upgrade-content-fragments-for-UUID-references}
 
->[!IMPORTANT]
->
->適用於內容片段的GraphQL API各項功能，可透過早期採用者計畫取得。
->
->若要檢視狀態，以及如果您有興趣要如何套用，請檢視[發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
-
 為了最佳化GraphQL篩選器的穩定性，您可以升級內容片段中的內容和片段參考，以便使用通用唯一識別碼(UUID)。
 
 原本的內容片段模型提供&#x200B;**內容參考**&#x200B;和&#x200B;**片段參考**&#x200B;的資料型別。 這兩個參照都使用路徑指向參照的資源，如果移動資源，此路徑可能會過期。 雖然在大多數情況下這類參考已足夠，但內容片段模型已擴充為也根據UUID提供參考：
 
-* **內容參考(UUID)**
+* **內容參考 (UUID)**
 * **片段參考(UUID)**。
 
 這些新參考型別可用於新內容片段模型和片段，以及擴充現有例項。
@@ -127,7 +122,7 @@ ht-degree: 2%
 | 模式 | `replicate`、`noReplicate` | <ul><li>`replicate`：在所有AEM Publish執行個體上復寫相同工作</li><li>`noReplicate`：僅在AEM Author執行個體上執行工作</li></ul> |
 | 練習版 |  `true`，`false` | <ul><li>`false`：模擬內容升級，不儲存任何內容變更</li><li>`true`：執行內容升級，並儲存內容變更</li></ul> |
 | **回應詳細資料** | **值** | |
-| jobId | `UUID` |  執行內容升級的工作的ID。<ul><li>任何與此執行相關的後續呼叫都需要此ID。</li><li>如果`mode`值設為`replicate`，AEM Publish執行個體上的執行也需要位於相同的`jobId`下。</li></ul> |
+| jobId | `UUID` |  執行內容升級的工作的ID。<ul><li>任何與此執行相關的後續呼叫都需要此ID。</li><li>如果`mode`值設為`replicate`，則在AEM Publish執行個體上執行也需要位於相同的`jobId`下。</li></ul> |
 | 引數 | 內容升級引數 | 這些包括用於啟動內容升級的初始引數，以及一些內部預設值。 |
 
 

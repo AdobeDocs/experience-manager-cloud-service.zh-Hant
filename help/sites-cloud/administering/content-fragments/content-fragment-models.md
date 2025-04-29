@@ -5,20 +5,14 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 solution: Experience Manager Sites
-source-git-commit: 806f6bb210a04a4c0512414e0550c64640ebe8b6
+source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
 workflow-type: tm+mt
-source-wordcount: '2260'
-ht-degree: 4%
+source-wordcount: '2230'
+ht-degree: 7%
 
 ---
 
 # 定義內容片段模型 {#defining-content-fragment-models}
-
->[!IMPORTANT]
->
->透過早期採用者計畫可以使用內容片段模型的各種功能。
->
->若要檢視狀態，以及如果您有興趣要如何套用，請檢視[發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
 
 Adobe Experience Manager (AEM) as a Cloud Service中的內容片段模型定義[內容片段](/help/sites-cloud/administering/content-fragments/overview.md)的內容結構。 這些片段隨後可用於頁面製作，或用作Headless內容的基礎。
 
@@ -131,13 +125,13 @@ Adobe Experience Manager (AEM) as a Cloud Service中的內容片段模型定義[
       * 根據適當的模式建立新的內容片段
       * 建立欄位的新執行個體
    * 參考指定參考資源的路徑；例如`/content/dam/path/to/resource`
-* **片段參考(UUID)**
+* **片段參考 (UUID)**
    * 參考其他內容片段；可用於[建立巢狀內容](#using-references-to-form-nested-content)
    * 可以設定此資料類型以允許片段作者：
       * 直接編輯參考的片段。
       * 根據適當的模式建立新的內容片段
       * 建立欄位的新執行個體
-   * 在編輯器中，參考會指定參考資源的路徑；在內部參考會儲存為參考資源的通用唯一ID (UUID)
+   * 在編輯器中，參考會指定所參考資源的路徑；在內部，參考被視為參考資源的通用唯識別碼 (UUID)。
       * 您不需要知道UUID；在片段編輯器中，您可以瀏覽到所需的片段
 
 * **內容參考**
@@ -145,11 +139,11 @@ Adobe Experience Manager (AEM) as a Cloud Service中的內容片段模型定義[
    * 如果參照了影像，您可以選擇顯示縮圖
    * 欄位可設定為允許片段作者建立欄位的新執行個體
    * 參考指定參考資源的路徑；例如`/content/dam/path/to/resource`
-* **內容參考(UUID)**
+* **內容參考 (UUID)**
    * 參考任何型別的其他內容；可用於[建立巢狀內容](#using-references-to-form-nested-content)
    * 如果參照了影像，您可以選擇顯示縮圖
    * 欄位可設定為允許片段作者建立欄位的新執行個體
-   * 在編輯器中，參考會指定參考資源的路徑；在內部參考會儲存為參考資源的通用唯一ID (UUID)
+   * 在編輯器中，參考會指定所參考資源的路徑；在內部，參考被視為參考資源的通用唯識別碼 (UUID)。
       * 您不需要知道UUID；在片段編輯器中，您可以瀏覽到所需的資產資源
 
 * **JSON物件**

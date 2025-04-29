@@ -5,20 +5,14 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: 715283a9b7c7930ba11063475dbc19f71baacb05
+source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
 workflow-type: tm+mt
-source-wordcount: '2010'
+source-wordcount: '1977'
 ht-degree: 4%
 
 ---
 
 # 使用內容片段的概觀 {#overview-working-with-content-fragments}
-
->[!IMPORTANT]
->
->透過早期採用者計畫提供內容片段和內容片段模型的各種功能。
->
->若要檢視狀態，以及如果您有興趣要如何套用，請檢視[發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
 
 透過Adobe Experience Manager (AEM) as a Cloud Service，內容片段可讓您設計、建立、管理和發佈獨立於頁面的內容。 它們可讓您準備內容以用於多個位置及多個管道，非常適合[Headless傳遞](/help/headless/what-is-headless.md)及[頁面製作](/help/sites-cloud/authoring/fragments/content-fragments.md)。
 

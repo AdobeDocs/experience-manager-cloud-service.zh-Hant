@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 solution: Experience Manager Sites
 exl-id: f94f75c2-12fa-47c0-a71b-327f4210077d
-source-git-commit: 3e4775df58a03136e925be73dab6faf673e7215e
+source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
 workflow-type: tm+mt
-source-wordcount: '2290'
+source-wordcount: '2260'
 ht-degree: 2%
 
 ---
@@ -17,12 +17,6 @@ ht-degree: 2%
 您可以從內容片段主控台管理內容片段模型，然後[開啟編輯器](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)以定義結構。
 
 Adobe Experience Manager (AEM) as a Cloud Service中的內容片段模型定義[內容片段](/help/sites-cloud/administering/content-fragments/overview.md)的內容結構。 然後，這些片段就可以用作Headless內容或頁面編寫的基礎。
-
->[!IMPORTANT]
->
->透過早期採用者計畫可以使用內容片段控制檯的各種功能。
->
->若要檢視狀態，以及如果您有興趣要如何套用，請檢視[發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
 
 >[!NOTE]
 >
@@ -255,7 +249,7 @@ Adobe Experience Manager (AEM) as a Cloud Service中的內容片段模型定義[
 
    ![標題和說明](assets/cf-managing-content-fragment-models-create.png)
 
-1. 使用&#x200B;**建立**&#x200B;儲存空的模型，或使用&#x200B;**建立並開啟**。
+1. 使用「**建立**」來儲存空模型，或選擇「**建立並開啟**」。
 
 ### 啟用內容片段模型 {#enabling-a-content-fragment-model}
 

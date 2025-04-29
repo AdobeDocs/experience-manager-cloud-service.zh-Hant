@@ -4,22 +4,16 @@ description: 透過探索範例內容和查詢，了解如何搭配使用 GraphQ
 feature: Headless, Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 role: Admin, Developer
-source-git-commit: bc578aca8e07b010194143062322d9fd8820b408
+source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
 workflow-type: tm+mt
-source-wordcount: '1972'
-ht-degree: 92%
+source-wordcount: '1938'
+ht-degree: 94%
 
 ---
 
 # 了解搭配使用 GraphQL 與 AEM - 範例內容和查詢 {#learn-graphql-with-aem-sample-content-queries}
 
 透過探索範例內容和查詢，了解如何搭配使用 GraphQL 與 AEM 以提供 Headless 內容。
-
->[!IMPORTANT]
->
->適用於內容片段的GraphQL API各項功能，可透過早期採用者計畫取得。
->
->若要檢視狀態，以及如果您有興趣要如何套用，請檢視[發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
 
 >[!NOTE]
 >

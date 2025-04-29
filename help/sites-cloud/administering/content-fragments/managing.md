@@ -5,28 +5,16 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: b8a56b73f8178c432941b50821be91777f203dec
+source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
 workflow-type: tm+mt
-source-wordcount: '2629'
+source-wordcount: '2566'
 ht-degree: 2%
 
 ---
 
 # 管理內容片段 {#managing-content-fragments}
 
->[!IMPORTANT]
->
->透過早期採用者計畫提供內容片段和內容片段模型的各種功能。
->
->若要檢視狀態，以及如果您有興趣要如何套用，請檢視[發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
-
 瞭解如何從專用的[內容片段主控台](#content-fragments-console)和[內容片段編輯器](/help/sites-cloud/administering/content-fragments/authoring.md#content-fragment-editor)，在Adobe Experience Manager (AEM) as a Cloud Service中管理您的&#x200B;**內容片段**。 這些內容片段可用作Headless內容的基礎，或用於編寫頁面。
-
->[!IMPORTANT]
->
->透過早期採用者計畫可以使用內容片段控制檯的各種功能。
->
->若要檢視狀態，以及如果您有興趣要如何套用，請檢視[發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
 
 >[!NOTE]
 >
