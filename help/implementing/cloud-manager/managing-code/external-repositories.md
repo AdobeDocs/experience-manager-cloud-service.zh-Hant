@@ -5,9 +5,9 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="早期採用者" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: ad74d7a68bfb1be9e72cc7faec4808c36fa0af03
+source-git-commit: 46d3c18f04f8cfb3daef48688f9fbe197fa0ea9a
 workflow-type: tm+mt
-source-wordcount: '1871'
+source-wordcount: '1872'
 ht-degree: 27%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 27%
 
 ## 設定外部存放庫
 
-在 Cloud Manager 中設定存放庫包含三個步驟：
+在Cloud Manager中設定外部存放庫包含下列步驟：
 
 1. [新增外部存放庫](#add-external-repo)至所選方案。
 1. 為外部存放庫提供存取權杖。
