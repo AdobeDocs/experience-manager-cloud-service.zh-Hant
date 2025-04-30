@@ -4,10 +4,10 @@ description: 本文說明如何在表單建立精靈中選取核心元件或Edge
 feature: Edge Delivery Services
 role: User
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
-source-git-commit: c68e98cfe442d0b5a928fde596e193073d5cac21
+source-git-commit: e2ea802856a2fbab90d4ddb1ecf7280ce789d59c
 workflow-type: tm+mt
-source-wordcount: '1644'
-ht-degree: 28%
+source-wordcount: '1626'
+ht-degree: 29%
 
 ---
 
@@ -97,13 +97,13 @@ Adobe Experience Manager (AEM)可讓您建立吸引人、回應式且動態的�
 1. 選取「**[!UICONTROL 建立]**  > **[!UICONTROL 最適化表單]**」。此時會開啟精靈。
 1. 在&#x200B;**Source**&#x200B;索引標籤中，選取&#x200B;**以核心元件為基礎的範本**&#x200B;和&#x200B;**佈景主題**，已啟用&#x200B;**[!UICONTROL 建立]**&#x200B;按鈕：
 
-![以核心元件為基礎的範本](/help/forms/assets/core-component-based-template.png)
+   ![以核心元件為基礎的範本](/help/forms/assets/core-component-based-template.png)
 
 1. (選用) 您在「**[!UICONTROL 資料來源]**」或「**[!UICONTROL 提交]**」標籤中可以選取資料來源或提交動作。
 1. (選用) 在「**[!UICONTROL 傳送]**」標籤中，您可以指定表單的發佈日期或取消發佈日期。
 1. 按一下「**[!UICONTROL 建立]**」，系統就會針對下列專案顯示「**建立表單**」精靈：
    1. 設定「**名稱**」和「**標題**」。
-   2. 在&#x200B;**路徑**&#x200B;欄位中指定最適化表單的儲存位置。
+   1. 在&#x200B;**路徑**&#x200B;欄位中指定最適化表單的儲存位置。
 
    ![建立表單精靈](/help/forms/assets/create-cc-form.png)
 
@@ -174,30 +174,30 @@ Adobe Experience Manager (AEM)可讓您建立吸引人、回應式且動態的�
 執行以下步驟來建立Edge Delivery Services設定：
 
 >[!BEGINTABS]
->[!TAB 針對使用Edge Delivery Services範本建立的表單]
+>[!TAB Edge Delivery Services範本]
 
 
 在表單的設定容器中，會自動建立以Edge Delivery Services為基礎之範本的表單之Edge Delivery Services設定。
 
 ![Edge Delivery Services設定](/help/edge/assets/aem-instance-eds-configuration.png)
 
->[!TAB 針對使用核心元件型範本建立的表單]
+>[!TAB 核心元件型範本]
 
 1. 在您的 AEM Forms 作為雲端服務作者執行個體上，瀏覽至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 雲端服務]** > **[!UICONTROL Edge Delivery Services 設定]**。
 
    ![選取Edge Delivery Services設定](/help/edge/assets/select-eds-conf.png)
 
-1. 選取與表單名稱相符的資料夾。例如，如果您的表單名為`enrollment-form`，請選擇資料夾`forms/enrollment-form`並按一下&#x200B;**[!UICONTROL 建立]** > **[!UICONTROL 設定]**：
+2. 選取與表單名稱相符的資料夾。例如，如果您的表單名為`enrollment-form`，請選擇資料夾`forms/enrollment-form`並按一下&#x200B;**[!UICONTROL 建立]** > **[!UICONTROL 設定]**：
 
    ![Edge Delivery Services設定](/help/forms/assets/create-eds-conf.png)
 
-1. 按一下&#x200B;**[!UICONTROL Edge Delivery Services設定]**，然後按一下&#x200B;**[!UICONTROL 屬性]**&#x200B;以開啟屬性：
+3. 按一下&#x200B;**[!UICONTROL Edge Delivery Services設定]**，然後按一下&#x200B;**[!UICONTROL 屬性]**&#x200B;以開啟屬性：
 
    ![自動建立的組態](/help/forms/assets/eds-conf.png)
 
    Edge Delivery Services設定隨即顯示。
 
-1. 在Edge Delivery Services設定中指定下列專案：
+4. 在Edge Delivery Services設定中指定下列專案：
 
    * **組織**：指定您的GitHub組織名稱。
 
@@ -206,7 +206,7 @@ Adobe Experience Manager (AEM)可讓您建立吸引人、回應式且動態的�
    * **（選用） Edge主機**：保留Edge主機選項。 表單會發佈到預覽(.page)和即時(.live)環境。
    * **（選擇性）網站驗證Token**：使用網站驗證Token，在您的AEM執行個體與Edge Delivery Services之間安全地驗證請求。
 
-1. 按一下&#x200B;**[!UICONTROL 儲存並關閉]**。設定已建立。
+5. 按一下&#x200B;**[!UICONTROL 儲存並關閉]**。設定已建立。
 
 >[!ENDTABS]
 
@@ -254,7 +254,7 @@ Adobe Experience Manager (AEM)可讓您建立吸引人、回應式且動態的�
 以下熒幕擷取畫面會比較各階段和即時表單URL，以及使用Edge Delivery Services範本和核心元件範本建立之表單的視覺化預覽：
 
 >[!BEGINTABS]
->[!TAB 存取使用Edge Delivery Services範本建立的表單]
+>[!TAB Edge Delivery Services範本]
 
 <table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
     <thead>
@@ -275,7 +275,7 @@ Adobe Experience Manager (AEM)可讓您建立吸引人、回應式且動態的�
     </tbody>
   </table>
 
->[!TAB 存取使用核心元件範本建立的表單]
+>[!TAB 核心元件型範本]
 
 <table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
   <thead>
