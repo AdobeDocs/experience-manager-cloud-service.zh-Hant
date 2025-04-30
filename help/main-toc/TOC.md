@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: 2f79251471d9ec3f586f838c737cde3533874b02
+source-git-commit: 4144c726a6f8551df9497732c2ca95b8eec5c63a
 workflow-type: tm+mt
-source-wordcount: '6134'
-ht-degree: 100%
+source-wordcount: '6142'
+ht-degree: 99%
 
 ---
 
@@ -742,6 +742,7 @@ ht-degree: 100%
          + [將最適化表單與 Microsoft Power Automate 整合](/help/forms/forms-microsoft-power-automate-integration.md)
          + [在 AEM Sites 頁面中內嵌最適化表單](/help/forms/embed-adaptive-form-aem-sites.md)
          + [將根據核心元件的最適化表單內嵌至外部網頁](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
+         + [AEM Forms與Adobe Experience Platform (AEP)整合](/help/forms/aem-forms-aep-connector.md)
          + [將根據基礎元件的最適化表單內嵌至外部網頁](/help/forms/embed-adaptive-form-external-web-page.md)
          + 將自適應表單與 Adobe Marketo Engage 進行整合{#integrate-adaptive-form-with-market-engage}
             + [將 Adobe Marketo Engage 與 AEM Forms 進行整合](/help/forms/integrate-form-to-marketo-engage.md)

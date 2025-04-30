@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 664aa2091a3853fdcea792ba5015d685c9285764
+source-git-commit: 4144c726a6f8551df9497732c2ca95b8eec5c63a
 workflow-type: tm+mt
-source-wordcount: '2286'
-ht-degree: 27%
+source-wordcount: '2356'
+ht-degree: 26%
 
 ---
 
@@ -139,6 +139,12 @@ Cloud上的互動式通訊是建立、管理和提供資料導向互動式通訊
 * 管理資料導向互動式對應關係的建立、組裝和傳遞
 
 準備好開始了嗎？ 互動式通訊編輯器可在Forms as a Cloud Service部署的搶先存取計畫下取得。 若要要求存取權，請從您的正式地址將您的組織ID和方案詳細資料以電子郵件傳送至[aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)。
+
+### AEM Forms與Adobe Experience Platform (AEP)整合
+
+您可以連結AEM Forms與Adobe Experience Platform (AEP)，以運用客戶設定檔和資料提供個人化表單體驗，並根據表單提交觸發下游工作流程。 透過直接將表單資料傳送到AEP資料集，您可以豐富客戶設定檔，並深入瞭解使用者互動。
+
+準備好開始了嗎？ [進一步瞭解如何整合AEM Forms與Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md)。
 
 ## 其他早期存取創新
 
