@@ -4,10 +4,10 @@ description: 了解如何將內容傳遞網路設定新增至 Edge Delivery 網�
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 960aa3c6-27b9-44b1-81ea-ad8c5bbc99a5
-source-git-commit: a078d45f81fc7081012ebf24fa8f46dc1a218cd7
+source-git-commit: f8135fea6cb1e43ec27a250d4664b12fa577ed4b
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 100%
+source-wordcount: '712'
+ht-degree: 76%
 
 ---
 
@@ -59,6 +59,109 @@ ht-degree: 100%
    * 在頁面左上角，按一下 ![顯示選單圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) 以顯示左側選單。在「**服務**」標題下方，按一下 ![Edge Delivery 網站的網頁圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg)「**Edge Delivery 網站**」。在 Edge Delivery 網站表格中，按一下要移除之網站列末端的![更多圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。按一下![刪除 Edge Delivery 網站圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)「**刪除**」，然後再按一下「**刪除**」以確認移除網站。
 
      ![從「Edge Delivery 網站」按鈕新增 Edge Delivery 網站](/help/implementing/cloud-manager/assets/cm-eds-delete2.png)
+
+## 在Helix 4和Helix 5之間管理Edge Delivery網站
+
+使用`/program/{programId}/site/{siteId}` API端點在Helix 4和Helix 5之間移轉Edge Delivery網站。
+
+Helix 4網站的CDN設定無法自動移轉至Helix 5。 此限制之所以存在，是因為客戶生產網站可能仍在Helix 4上執行，而其Helix 5版本仍在開發中。
+
+**必備條件**
+
+* `sitename`必須已存在。
+* 知道適當的`branchName`、Helix `version`和`repo`值。
+* 移轉只會修改`branchName`、Helix `version`和`repo`。 無法變更擁有者欄位。
+
+**API格式**
+
+```http
+PUT /api/program/{programId}/site/{siteId}
+```
+
+**要求內文引數**
+為Edge Delivery網站建立覆寫，以強制執行要求內文中指定的來源。
+
+```json
+{
+  "sitename": "<required site name>",
+  "branchName": "<git branch>",
+  "version": "v4" | "v5",
+  "repo": "<git repository name>"
+}
+```
+
+### 範例1：移轉至Helix 5
+
+**http**
+
+```http
+PUT /api/program/{programId}/site/{siteId}
+```
+
+**json**
+
+```json
+{
+  "sitename": "test-site-new-helix5",
+  "branchName": "branch",
+  "version": "v5",
+  "repo": "my-website"
+}
+```
+
+**原始URL結果**
+傳回具有以下來源URL的Edge Delivery網站：
+
+`"origin": "branch--my-website–Teo48.aem.live"`
+
+
+### 範例2：移轉至Helix 4
+
+**http**
+
+```http
+PUT /api/program/{programId}/site/{siteId}
+```
+
+**json**
+
+```json
+{
+  "sitename": "test-site-new-helix4",
+  "branchName": "branch",
+  "version": "v4",
+  "repo": "my-website"
+}
+```
+
+**原始URL結果**
+傳回具有以下來源URL的Edge Delivery網站：
+
+`"origin": "branch--my-website--Teo48.hlx.live"`
+
+### 範例3：將重寫程式網站移轉至Helix 5
+
+**http**
+
+```http
+PUT /api/program/{programId}/site/{siteId}
+```
+
+**json**
+
+```json
+{
+  "sitename": "test-reposless-website",
+  "branchName": "main",
+  "version": "v5",
+  "repo": "my-reposless-website"
+}
+```
+
+**原始URL結果**
+傳回具有以下來源URL的Edge Delivery網站：
+
+`"origin": "main--my-repoless-website--Teo48.aem.live"`
 
 ## 記錄支援服務單 {#eds-support-ticket}
 
