@@ -37,7 +37,7 @@ ht-degree: 99%
 
 請觀看 2024 年 11 月發行概觀影片，了解 2024.11.0 版本的新增功能摘要：
 
->[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440931?quality=12&captions=chi_hant)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 

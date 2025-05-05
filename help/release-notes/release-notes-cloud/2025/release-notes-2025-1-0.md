@@ -37,7 +37,7 @@ ht-degree: 92%
 
 請觀看 2025 年 1 月發行概觀影片，了解 2025.1.0 版本新增功能摘要：
 
->[!VIDEO](https://video.tv.adobe.com/v/3456072?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3456085?quality=12&captions=chi_hant)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 

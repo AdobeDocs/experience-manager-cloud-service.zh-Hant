@@ -37,7 +37,7 @@ ht-degree: 99%
 
 請觀看 2024 年 5 月版本概觀影片，了解 2024.5.0 版本新增功能的摘要：
 
->[!VIDEO](https://video.tv.adobe.com/v/3429503?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3448073?quality=12&captions=chi_hant)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 

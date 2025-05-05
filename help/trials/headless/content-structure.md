@@ -25,7 +25,7 @@ ht-degree: 100%
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide"
 >title="啟動模式主控台"
 >abstract="讓我們探討如何在 Adobe Experience Manager as a Cloud Service 中，為您的內容建立一個可重複使用的結構描述，稱為內容片段模式。觀看影片，以便了解為什麼這個步驟很重要。<br><br>在本學習單元中，您會使用旅遊網站作為範例，並逐步建立一個代表旅行的模式。<br><br>點選下方按鈕，在新標籤中啟動此單元，然後按照本指南進行操作。"
->additional-url="https://video.tv.adobe.com/v/3413261" text="內容結構介紹影片"
+>additional-url="https://video.tv.adobe.com/v/3436551?captions=chi_hant" text="內容結構介紹影片"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide_footer"

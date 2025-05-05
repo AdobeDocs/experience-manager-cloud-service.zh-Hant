@@ -32,7 +32,7 @@ AEM as a Cloud Service 是一種功能強大且靈活的工具，具有眾多可
 
 該影片總結了此歷程中的入門流程，旨在作為選項概觀。影片中的所有主題都在歷程中詳細介紹。
 
->[!VIDEO](https://video.tv.adobe.com/v/336959/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3431507/?quality=12&learn=on&captions=chi_hant)
 
 ## 您的合約 {#contract}
 
