@@ -5,10 +5,10 @@ exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 feature: Content Fragments
 role: User, Admin
 solution: Experience Manager Sites
-source-git-commit: 715283a9b7c7930ba11063475dbc19f71baacb05
+source-git-commit: 74e2f015d6bcb36505c2dc6471bb68d69d98db99
 workflow-type: tm+mt
-source-wordcount: '1907'
-ht-degree: 7%
+source-wordcount: '1925'
+ht-degree: 6%
 
 ---
 
@@ -37,11 +37,19 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->內容片段是 Sites 的一項功能，但儲存為&#x200B;**資產**。
+>內容片段是&#x200B;**網站**&#x200B;功能，但儲存為&#x200B;**Assets**。
 >
->目前主要透過&#x200B;**[內容片段](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)**&#x200B;主控台管理，但仍可從&#x200B;**Assets**&#x200B;主控台管理。 本節涵蓋&#x200B;**Assets**&#x200B;主控台的管理功能。
+>它們主要透過&#x200B;**[內容片段](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)**&#x200B;主控台管理，不過仍可從&#x200B;**[Assets](/help/assets/content-fragments/content-fragments-managing.md)**&#x200B;主控台管理。
 >
->編寫內容片段有兩個編輯器；雖然基本功能相同，但有一些差異。 本節涵蓋原始編輯器，主要是從&#x200B;**Assets**&#x200B;主控台存取。 請參閱網站檔案[內容片段 — 製作](/help/sites-cloud/administering/content-fragments/authoring.md)，以取得新編輯器的詳細資訊（主要從&#x200B;**內容片段**&#x200B;主控台存取）。 兩個編輯器在頂部工具欄中都有一個切換開關，用於提供對另一個編輯器的快速存取。
+>編寫內容片段有兩個編輯器 — 新編輯器和原始編輯器。 新編輯器為預設值。 雖然基本功能相同，但還是有一些差異。
+>
+>本節介紹原始編輯器。
+>
+>[內容片段 — 製作](/help/sites-cloud/administering/content-fragments/authoring.md)的預設編輯器是新的編輯器，可從&#x200B;**內容片段**&#x200B;主控台和&#x200B;**Assets**&#x200B;主控台存取。 如需新編輯器的詳細資訊，請參閱Sites檔案[內容片段 — 製作](/help/sites-cloud/administering/content-fragments/authoring.md)。
+>
+>若要使用[原始編輯器](/help/assets/content-fragments/content-fragments-variations.md)，請先開啟新編輯器，然後停用&#x200B;**新編輯器**&#x200B;引數。
+>
+>兩個編輯器在頂部工具欄中都有一個切換開關，用於提供對另一個編輯器的快速存取。
 
 ## 建立內容片段 {#creating-content-fragments}
 
@@ -132,23 +140,23 @@ ht-degree: 7%
 
 ## 開啟片段編輯器 {#opening-the-fragment-editor}
 
-若要開啟片段進行編輯：
+若要在原始編輯器中開啟片段進行編輯：
 
 >[!CAUTION]
 >
 >若要編輯內容片段，您需要[適當的許可權](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions)。 如果您遇到問題，請聯絡您的系統管理員。
 
-1. 使用&#x200B;**Assets**&#x200B;主控台導覽至內容片段的位置。
-1. 透過以下任一方式開啟片段進行編輯：
+1. 導覽至您的內容片段位置。
 
-   * 按一下/點選片段或片段連結（這取決於主控台檢視）。
-   * 選取片段，然後從工具列&#x200B;**編輯**。
+1. 開啟片段進行編輯。
 
-1. 片段編輯器隨即開啟。 視需要進行變更：
+1. 片段會在新編輯器中開啟。 停用&#x200B;**新編輯器**&#x200B;引數（右上方）以開啟原始編輯器：
 
    ![片段編輯器](assets/cfm-managing-03.png)
 
-1. 進行變更後，視需要使用&#x200B;**儲存**、**儲存並關閉**&#x200B;或&#x200B;**關閉**。
+1. 視需要進行變更。
+
+1. 準備就緒後，視需要使用&#x200B;**儲存**、**儲存並關閉**&#x200B;或&#x200B;**關閉**。
 
    >[!NOTE]
    >

@@ -5,9 +5,9 @@ exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 solution: Experience Manager Sites
 feature: Authoring, Content Fragments
 role: User
-source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
+source-git-commit: 369f0be002413d164911515349b3e25d33eb8b2f
 workflow-type: tm+mt
-source-wordcount: '1267'
+source-wordcount: '1272'
 ht-degree: 2%
 
 ---
@@ -24,12 +24,11 @@ Adobe Experience Manager (AEM) as a Cloud Service中的內容片段是[建立並
 >
 >內容片段是&#x200B;**網站**&#x200B;功能，但儲存為&#x200B;**Assets**。
 >
->目前主要透過&#x200B;**[內容片段](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)**&#x200B;主控台管理，但仍可從&#x200B;**[Assets](/help/assets/content-fragments/content-fragments-managing.md)**&#x200B;主控台管理。
+>它們主要透過&#x200B;**[內容片段](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)**&#x200B;主控台管理，不過仍可從&#x200B;**[Assets](/help/assets/content-fragments/content-fragments-managing.md)**&#x200B;主控台管理。
 >
->編寫內容片段有兩個編輯器：
+>[內容片段 — 製作](/help/sites-cloud/administering/content-fragments/authoring.md)的預設編輯器是新的編輯器；可從&#x200B;**內容片段**&#x200B;主控台和&#x200B;**Assets**&#x200B;主控台存取。
 >
->* [內容片段的新編輯器 — 製作](/help/sites-cloud/administering/content-fragments/authoring.md)主要從&#x200B;**內容片段**&#x200B;主控台存取。
->* [原始編輯器](/help/assets/content-fragments/content-fragments-variations.md)主要是從&#x200B;**Assets**&#x200B;主控台存取。
+>若要使用[原始編輯器](/help/assets/content-fragments/content-fragments-variations.md)，請先開啟新編輯器，然後停用&#x200B;**新編輯器**&#x200B;引數。
 
 >[!NOTE]
 >

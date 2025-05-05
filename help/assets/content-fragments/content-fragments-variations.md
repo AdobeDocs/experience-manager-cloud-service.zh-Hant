@@ -5,9 +5,9 @@ exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 74e2f015d6bcb36505c2dc6471bb68d69d98db99
 workflow-type: tm+mt
-source-wordcount: '2518'
+source-wordcount: '2530'
 ht-degree: 6%
 
 ---
@@ -20,7 +20,11 @@ ht-degree: 6%
 >
 >內容片段是 Sites 的一項功能，但儲存為&#x200B;**資產**。
 >
->編寫內容片段有兩個編輯器；雖然基本功能相同，但有一些差異。 本節涵蓋原始編輯器，主要是從&#x200B;**Assets**&#x200B;主控台存取。 請參閱網站檔案[內容片段 — 製作](/help/sites-cloud/administering/content-fragments/authoring.md)，以取得新編輯器的詳細資訊（主要從&#x200B;**內容片段**&#x200B;主控台存取）。
+>編寫內容片段有兩個編輯器 — 新編輯器和原始編輯器。 新編輯器為預設值。 雖然基本功能相同，但還是有一些差異。
+>
+>本節介紹原始編輯器。 這是透過新編輯器](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor)開啟的[。
+>
+>如需新編輯器的完整詳細資訊，請參閱Sites檔案[內容片段 — 製作](/help/sites-cloud/administering/content-fragments/authoring.md)。
 
 您可以從&#x200B;**變數**&#x200B;標籤執行下列動作：
 
@@ -47,7 +51,7 @@ ht-degree: 6%
 
 ## 製作您的內容 {#authoring-your-content}
 
-當您開啟內容片段進行編輯時，**變數**&#x200B;索引標籤預設為開啟。 您可以在此處為主要或任何變數創作內容。 結構化片段包含在內容模型中定義的各種資料型別的欄位。
+當您在原始編輯器中開啟要編輯的內容片段時，**變數**&#x200B;索引標籤預設為開啟。 您可以在此處為主要或任何變數創作內容。 結構化片段包含在內容模型中定義的各種資料型別的欄位。
 
 例如：
 
