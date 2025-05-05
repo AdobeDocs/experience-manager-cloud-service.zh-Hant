@@ -86,7 +86,7 @@ ht-degree: 13%
    >* 依預設，`forms-ootb-storage-adaptive-forms-submission`存在於選取的SharePoint網站。
    >* 按一下&#x200B;**建立資料夾**，將資料夾建立為`forms-ootb-storage-adaptive-forms-submission` (如果尚未存在於所選SharePoint網站的`Documents`資料庫中)。
 
-現在，您可以在最適化表單](/help/forms/configure-submit-action-sharepoint.md#use-sharepoint-document-library-configuration-in-an-adaptive-form-use-sharepoint-configuartion-in-af)中針對提交動作使用此[SharePoint Sites設定。
+現在，您可以在最適化表單[&#128279;](/help/forms/configure-submit-action-sharepoint.md#use-sharepoint-document-library-configuration-in-an-adaptive-form-use-sharepoint-configuartion-in-af)中針對提交動作使用此SharePoint Sites設定。
 
 ## 額外的位元組
 

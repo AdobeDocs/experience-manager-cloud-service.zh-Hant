@@ -79,6 +79,7 @@ Adobe Experience Manager (AEM)可讓您建立吸引人、回應式且動態的�
 
    1. 設定「**名稱**」和「**標題**」。
    1. 指定 **GitHub URL**。例如，若您的 GitHub 存放庫名稱為 `edsforms`、位於帳戶 `wkndforms` 之下，則 URL 為：
+
       `https://github.com/wkndforms/edsforms`
 
    ![建立表單精靈](/help/edge/assets/create-form-wizard.png)
@@ -130,7 +131,7 @@ Adobe Experience Manager (AEM)可讓您建立吸引人、回應式且動態的�
 
    ![內容樹](/help/edge/assets/content-tree.png)
 
-1. 按一下「**[!UICONTROL 新增]**」圖示，然後從&#x200B;**最適化表單元件**清單新增所需元件。
+1. 按一下「**[!UICONTROL 新增]**」圖示，然後從&#x200B;**最適化表單元件**&#x200B;清單新增所需元件。
    ![新增元件](/help/edge/assets/add-component.png)
 
    底下熒幕擷圖顯示通用編輯器中編寫的`Registration Form`：
@@ -215,7 +216,7 @@ Adobe Experience Manager (AEM)可讓您建立吸引人、回應式且動態的�
 若要在Edge Delivery Services上存取表單，必須發佈表單。 執行以下步驟以發佈表單：
 
 >[!BEGINTABS]
->在通用編輯器上[!TAB ]
+>[!TAB 在通用編輯器上] 
 
 1. 按一下通用編輯器右上角的&#x200B;**[!UICONTROL 發佈]**&#x200B;按鈕以發佈表單。
 
@@ -224,12 +225,11 @@ Adobe Experience Manager (AEM)可讓您建立吸引人、回應式且動態的�
 >[!NOTE]
 >
 > 若要了解如何將表單發佈至 Edge Delivery Services，請參閱「[發佈及部署](/help/edge/docs/forms/universal-editor/publish-forms.md)」一文。
-
->在最適化表單編輯器上[!TAB ]
+>[!TAB 在最適化表單編輯器上] 
 
 1. 從Experience Manager Forms主控台，導覽至上層資料夾，並選取您要發佈的表單。
 
-1. 按一下工具列中的「發佈&#x200B;****」選項，檢視所有將隨表單發佈的參考資產。
+1. 按一下工具列中的「發佈&#x200B;**&#x200B;**」選項，檢視所有將隨表單發佈的參考資產。
 
 ![在最適化表單編輯器上發佈表單](/help/forms/assets/publish-af-editor.png)
 

@@ -38,7 +38,7 @@ ht-degree: 7%
 
 在作者環境中，作者可以透過存取頁面屬性並在&#x200B;**標籤/關鍵字**&#x200B;欄位中輸入一或多個標籤來套用標籤。
 
-若要套用預先定義的標籤，請在「頁面屬 **性** 」視窗中使用「標籤 **」欄位和「選** 取標籤 **** 」視窗。「標 **準標籤** 」標籤是預設的命名空間，這表示分類 `namespace-string:` 沒有前置詞。<!-- To apply [pre-defined tags](/help/sites-administering/tags.md), in the **Page Properties** window use the **Tags** field and the **Select Tags** window.-->
+若要套用預先定義的標籤，請在「頁面屬 **性** 」視窗中使用「標籤 **」欄位和「選** 取標籤 **&#x200B;**&#x200B;」視窗。「標 **準標籤** 」標籤是預設的命名空間，這表示分類 `namespace-string:` 沒有前置詞。<!-- To apply [pre-defined tags](/help/sites-administering/tags.md), in the **Page Properties** window use the **Tags** field and the **Select Tags** window.-->
 
 ![選取多個標籤](/help/sites-cloud/authoring/assets/tags-select.png)
 

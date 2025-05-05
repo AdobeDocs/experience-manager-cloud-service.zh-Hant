@@ -293,7 +293,7 @@ Live Copy 的來源可以是一般頁面或藍圖設定所包含的頁面。兩�
 
 ### 推出衝突 {#rollout-conflicts}
 
-推出可能會變得複雜，尤其是當作者同時在來源和 Live Copy 中編輯內容時。因此，瞭解AEM如何處理轉出](rollout-conflicts.md)期間可能發生的任何[衝突會很有用。
+推出可能會變得複雜，尤其是當作者同時在來源和 Live Copy 中編輯內容時。因此，瞭解AEM如何處理轉出[&#128279;](rollout-conflicts.md)期間可能發生的任何衝突會很有用。
 
 ### 暫停和取消繼承和同步 {#suspending-and-cancelling-inheritance-and-synchronization}
 

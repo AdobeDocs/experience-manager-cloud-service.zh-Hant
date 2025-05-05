@@ -230,7 +230,7 @@ AEM FormsCloud Service提供最適化表單容器和Adaptive Forms — 內嵌元
 
 ### 使用表單資料模型預填服務預先填入AEM Sites頁面或體驗片段中表單的欄位 {#fdm-prefill-service}
 
-您可以使用表單資料模型預填服務來預先填入AEM Sites頁面中適用性表單的欄位，或使用表單資料模型或自訂預填服務的體驗片段。 表單資料模型預填服務使用已設定的表單資料模型](work-with-form-data-model.md#add-data-model-objects-and-services-add-data-model-objects-and-services)的[Get服務來擷取資料。 若要針對最適化表單使用表單資料模型預填服務：
+您可以使用表單資料模型預填服務來預先填入AEM Sites頁面中適用性表單的欄位，或使用表單資料模型或自訂預填服務的體驗片段。 表單資料模型預填服務使用已設定的表單資料模型[&#128279;](work-with-form-data-model.md#add-data-model-objects-and-services-add-data-model-objects-and-services)的Get服務來擷取資料。 若要針對最適化表單使用表單資料模型預填服務：
 
 1. 開啟包含最適化表單的AEM頁面編輯器或體驗片段。
 1. 開啟內容樹狀結構，然後選取裝載您最適化表單的&#x200B;**[!UICONTROL 最適化Forms容器]**。 一個AEM Sites頁面可以託管多個最適化Forms。 因此，請仔細選取正確的最適化Forms容器。

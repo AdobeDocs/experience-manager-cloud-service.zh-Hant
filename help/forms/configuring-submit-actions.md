@@ -142,7 +142,7 @@ For information about how to configure the Submit to forms workflow Submit Actio
 
 ## 使用表單資料模型(FDM)提交 {#submit-using-form-data-model}
 
-使用表單資料模型&#x200B;]**提交動作的**[!UICONTROL &#x200B;提交會將表單資料模型(FDM)中指定資料模型物件的已提交最適化表單資料寫入其資料來源。 設定提交動作時，您可以選擇要將其提交資料寫回其資料來源的資料模型物件。
+使用表單資料模型&#x200B;**提交動作的**&#x200B;提交會將表單資料模型(FDM)中指定資料模型物件的已提交最適化表單資料寫入其資料來源。 設定提交動作時，您可以選擇要將其提交資料寫回其資料來源的資料模型物件。
 
 此外，您可以使用表單資料模型(FDM)和記錄檔案(DoR)將表單附件提交至資料來源。 如需表單資料模型(FDM)的相關資訊，請參閱[[!DNL AEM Forms] 資料整合](data-integration.md)。
 

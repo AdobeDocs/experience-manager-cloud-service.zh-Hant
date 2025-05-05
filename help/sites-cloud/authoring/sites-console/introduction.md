@@ -185,7 +185,7 @@ AEM工具列最右邊的&#x200B;**檢視**&#x200B;圖示表示目前選取的檢
 
 ![快速動作](assets/sites-console-quick-actions.png)
 
-您可以點選/按一下卡片來向下瀏覽樹狀結構（注意避免點選快速動作），或使用標頭](#the-header)中的[階層連結來再次向上瀏覽。
+您可以點選/按一下卡片來向下瀏覽樹狀結構（注意避免點選快速動作），或使用標頭[&#128279;](#the-header)中的階層連結來再次向上瀏覽。
 
 ### 清單檢視 {#list-view}
 
@@ -193,8 +193,8 @@ AEM工具列最右邊的&#x200B;**檢視**&#x200B;圖示表示目前選取的檢
 
 ![清單檢視](assets/sites-console-list-view.png)
 
-* 您可以點選/按一下資源名稱，在樹狀結構中向下導覽，並使用標頭](#the-header)中的[階層連結進行備份。
-* 若要輕鬆選取清單中的所有專案，請使用工具列](#select-all)中的&#x200B;[**全選**&#x200B;核取方塊。
+* 您可以點選/按一下資源名稱，在樹狀結構中向下導覽，並使用標頭[&#128279;](#the-header)中的階層連結進行備份。
+* 若要輕鬆選取清單中的所有專案，請使用工具列[&#128279;](#select-all)中的&#x200B;**全選**&#x200B;核取方塊。
 
 * 使用位於[檢視]按鈕下方的&#x200B;**檢視設定**&#x200B;選項來選取要顯示的欄。 下列欄可供顯示：
 
@@ -262,4 +262,4 @@ AEM工具列最右邊的&#x200B;**檢視**&#x200B;圖示表示目前選取的檢
 
 ## 範本
 
-在「欄檢視」或「清單檢視」中選取頁面時，您可輕鬆查看該頁 [**面所依據**](/help/sites-cloud/authoring/basic-handling.md#column-view)[**的範本**](/help/sites-cloud/authoring/basic-handling.md#list-view)。
+在「欄檢視」或「清單檢視」中選取頁面時，您可輕鬆查看該頁 [**面所依據**](/help/sites-cloud/authoring/basic-handling.md#column-view) [**的範本**](/help/sites-cloud/authoring/basic-handling.md#list-view)。

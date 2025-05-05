@@ -44,7 +44,7 @@ ht-degree: 15%
 >
 >* 如果 `xt_only` Adobe Target租 **用戶** (clientcode)上未啟用選項，您可以在AEM中建立 **XT** 和A/B活動。
 >
->**** 其他附註：選 `xt_only` 項是套用於特定Target租用戶(clientcode)的設定，且只能在Adobe target中直接修改。您無法在AEM中啟用或停用此選項。
+>**&#x200B;** 其他附註：選 `xt_only` 項是套用於特定Target租用戶(clientcode)的設定，且只能在Adobe target中直接修改。您無法在AEM中啟用或停用此選項。
 
 >[!CAUTION]
 >
@@ -74,16 +74,16 @@ ht-degree: 15%
 
 新增活動或編輯現有活動，以將您的行銷工作聚焦於特定對象。 建立/編輯活動時，請指定下列資訊：
 
-* **** 名稱：活動的名稱。
-* **** 定位引擎：AEM [](/help/sites-cloud/authoring/personalization/overview.md#aem) 或 [Adobe Target](/help/sites-cloud/authoring/personalization/overview.md#adobe-target) ，做為目標內容的引擎。
-* **** 選擇目標配置： (僅限Adobe Target) 此活動應用來連線至Adobe Target的雲端設定。只有在為「定位引擎」選取Adobe Target時，才會顯示此選項。
+* **&#x200B;**&#x200B;名稱：活動的名稱。
+* **&#x200B;**&#x200B;定位引擎：AEM [&#128279;](/help/sites-cloud/authoring/personalization/overview.md#aem) 或 [Adobe Target](/help/sites-cloud/authoring/personalization/overview.md#adobe-target) ，做為目標內容的引擎。
+* **&#x200B;**&#x200B;選擇目標配置： (僅限Adobe Target) 此活動應用來連線至Adobe Target的雲端設定。只有在為「定位引擎」選取Adobe Target時，才會顯示此選項。
 * **活動型別**：活動型別 — A/B測試或體驗鎖定目標
-* **** 目標：(可選) 活動的說明。
-* **** 體驗：對象名稱與您所定位之行銷區段之間的對應。
-* **** 流量百分比：如果選取A/B測試，您可以變更每個體驗的流量 (百分比)。
-* **** 持續時間：套用活動的時段。
-* **** 優先順序：活動的相對優先順序。當活動提供相同使用者區段的內容時，優先順序較高的活動優先。
-* **** 目標量度：如果選取Adobe target作為定位引擎，您可以將成功度量新增至活動。需要一個成功度量。
+* **&#x200B;**&#x200B;目標：(可選) 活動的說明。
+* **&#x200B;**&#x200B;體驗：對象名稱與您所定位之行銷區段之間的對應。
+* **&#x200B;**&#x200B;流量百分比：如果選取A/B測試，您可以變更每個體驗的流量 (百分比)。
+* **&#x200B;**&#x200B;持續時間：套用活動的時段。
+* **&#x200B;**&#x200B;優先順序：活動的相對優先順序。當活動提供相同使用者區段的內容時，優先順序較高的活動優先。
+* **&#x200B;**&#x200B;目標量度：如果選取Adobe target作為定位引擎，您可以將成功度量新增至活動。需要一個成功度量。
 
 >[!NOTE]
 >

@@ -126,7 +126,7 @@ As a best practice for image format, start with the most common setting `&fmt=JP
 
 將單色引數設定保留為0。
 
-### JPEF壓縮(`&qlt=`) {#best-practices-for-jpef-compression-qlt}的最佳作法
+### JPEF壓縮(`&qlt=`)的最佳作法 {#best-practices-for-jpef-compression-qlt}
 
 * 此引數會控制JPG編碼品質。 較高的值表示影像品質較高，但檔案大小較大；或者，較低的值表示影像品質較低，但檔案大小較小。 此引數的範圍為0至100。
 * 若要最佳化品質，請勿將引數值設為100。 設定90或95與100之間的差異幾乎無法察覺。 然而100卻不必要地增加了影像檔案的大小。 因此，若要最佳化品質但避免影像檔案變得太大，請將`qlt= value`設為90或95。

@@ -40,7 +40,7 @@ ht-degree: 0%
 1. 導覽至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Forms]** > **[!UICONTROL 整合式儲存聯結器]**。
 
 1. 在&#x200B;**[!UICONTROL 工作流程]**&#x200B;區段中，從「儲存」下拉式清單中選取&#x200B;**[!UICONTROL Azure]**。
-1. 在&#x200B;**[!UICONTROL 儲存設定路徑]**&#x200B;欄位中指定Azure儲存體設定](#create-azure-storage-configuration)的[設定路徑。
+1. 在&#x200B;**[!UICONTROL 儲存設定路徑]**&#x200B;欄位中指定Azure儲存體設定[&#128279;](#create-azure-storage-configuration)的設定路徑。
 1. 選取&#x200B;**[!UICONTROL 發佈]**，然後選取&#x200B;**[!UICONTROL 儲存]**&#x200B;以儲存組態。
 
 ### 設定外部資料儲存的AEM工作流程模型 {#configure-workflow-external-data-storage}

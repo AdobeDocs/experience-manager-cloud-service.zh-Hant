@@ -87,7 +87,7 @@ AEM Forms提供基礎元件和核心元件，以建立表單體驗。 核心元�
    1. 將AEM Forms附加元件(.far)檔案新增至「`AEM SDK/crx-quickstart/install`」資料夾，
    1. 重新啟動AEM SDK。
 
-+++
+   +++
 
 1. [設定使用者許可權](/help/forms/setup-local-development-environment.md#configure-users-and-permissions)：建立具有開發、編寫和其他許可權的使用者，並將這些使用者新增至預先定義的表單群組。
 
@@ -116,7 +116,7 @@ AEM Forms提供基礎元件和核心元件，以建立表單體驗。 核心元�
 
    部署AEM專案後，您可以在環境中檢視最適化Forms範本。
 
-+++
+   +++
 
 
 如需有關設定本機AEM Forms開發環境的詳細指示和逐步指南，請參閱[為AEM Forms設定本機開發環境](/help/forms/setup-local-development-environment.md)文章。

@@ -38,7 +38,7 @@ ht-degree: 7%
    ![新增存放庫對話方塊](assets/add-adobe-repository.png)
 
 1. 按一下&#x200B;**儲存**。
-您的新存放庫會顯示在**存放庫**&#x200B;頁面的表格中。
+您的新存放庫會顯示在&#x200B;**存放庫**&#x200B;頁面的表格中。
 
 您現在可以將[CI/CD管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)與其建立關聯，或在&#x200B;[**存放庫**&#x200B;頁面](managing-repositories.md)中管理它。
 

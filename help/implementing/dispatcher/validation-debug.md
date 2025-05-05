@@ -324,7 +324,7 @@ Phase 3 finished
 
 **包含的檔案(...)必須命名為： ...**
 
-您的伺服器陣列設定中有兩個區段，**必須**包含一個
+您的伺服器陣列設定中有兩個區段，**必須**&#x200B;包含一個
 特定檔案： `/cache`區段中的`/renders`和`/allowedClients`。 這些
 區段必須如下所示：
 
@@ -406,7 +406,7 @@ Phase 3 finished
 Include conf.d/includes/mynewdirectory/myincludefile.conf
 ```
 
-或者，您也可以包含名稱為`conf.d/rewrites/default_rewrite.rules`的&#x200B;**預設**版本重寫規則。
+或者，您也可以包含名稱為`conf.d/rewrites/default_rewrite.rules`的&#x200B;**預設**&#x200B;版本重寫規則。
 請注意，變數檔案沒有預設版本。
 
 **偵測到已棄用的組態配置，正在啟用相容性模式**

@@ -48,7 +48,7 @@ ht-degree: 35%
 
 * [!DNL Experience Manager Assets]包含[!DNL Document Cloud]個PDF檢視器以原生預覽PDF檔案。 此功能可讓使用者預覽多頁PDF檔案，而不需進行任何檔案處理或轉換。 此功能改善與[!DNL Experience Manager] 6.5的同等性。檢視器中可用的控制項包括縮放、瀏覽至頁面、取消固定控制項，以及全熒幕檢視。 使用者也可以預覽並跳至頁面和書籤。 支援檔案本身的註解。 對PDF檔案中的內容發表評論和註解計畫於未來版本推出。
 
-  使用PDF檢視器在[!DNL Experience Manager]中預覽PDF檔案](/help/assets/assets/preview-pdf-file-viewer.png)![
+  使用PDF檢視器在[!DNL Experience Manager]中預覽PDF檔案![&#128279;](/help/assets/assets/preview-pdf-file-viewer.png)
 
 * 連結共用下載功能使用可提高下載速度的非同步下載。 如需詳細資訊，請參閱[下載使用連結共用的資產](/help/assets/download-assets-from-aem.md#link-share-download)。
 

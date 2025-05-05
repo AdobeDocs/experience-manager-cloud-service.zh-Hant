@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # 設定AEM Forms的本機開發環境 {#overview}
 
-當您將[!DNL  Adobe Experience Manager Forms]設定為[!DNL  Cloud Service]環境時，您會在雲端上設定開發、測試和生產環境。 此外，您也可以設定本機開發環境。
+當您將[!DNL &#x200B; Adobe Experience Manager Forms]設定為[!DNL &#x200B; Cloud Service]環境時，您會在雲端上設定開發、測試和生產環境。 此外，您也可以設定本機開發環境。
 
 您可以使用本機開發環境執行以下動作，而無需登入雲端開發環境：
 

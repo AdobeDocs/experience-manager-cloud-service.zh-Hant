@@ -74,7 +74,7 @@ ht-degree: 1%
      >[!NOTE]
      >存取Token每24小時過期一次，且必須建立新的Token。 若要建立Token，請返回[Adobe Developer Console](https://developer.adobe.com/console/)，選擇您的專案，按一下&#x200B;**使用者管理API**，然後將相同的私密金鑰貼到方塊中。
 
-1. 填入欄位後，按一下&#x200B;**測試組態**&#x200B;以測試使用者管理API服務的連線。 如果連線成功，您可以按一下[儲存]儲存組態。****
+1. 填入欄位後，按一下&#x200B;**測試組態**&#x200B;以測試使用者管理API服務的連線。 如果連線成功，您可以按一下[儲存]儲存組態。**&#x200B;**
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-access4.png)
 

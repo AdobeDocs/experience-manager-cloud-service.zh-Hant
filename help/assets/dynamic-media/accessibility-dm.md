@@ -22,7 +22,7 @@ Dynamic Media在編寫使用者介面中支援鍵盤控制和輔助技術，例�
 
 ## Dynamic Media中的鍵盤協助工具支援 {#keyboard-support-in-dm}
 
-因為Dynamic Media是[!DNL Experience Manager Assets]的外掛程式，所以大部分的鍵盤控制項行為與[!DNL Experience Manager Assets]中的相同。 例如，Dynamic Media中的`Cancel`按鈕與[!DNL Experience Manager Assets]中的焦點反白顯示相同。 它也會回應`Spacebar`金鑰，如[!DNL Experience Manager Assets]。 請參閱Assets](/help/assets/accessibility.md#keyboard-shortcuts)中的[鍵盤快速鍵。
+因為Dynamic Media是[!DNL Experience Manager Assets]的外掛程式，所以大部分的鍵盤控制項行為與[!DNL Experience Manager Assets]中的相同。 例如，Dynamic Media中的`Cancel`按鈕與[!DNL Experience Manager Assets]中的焦點反白顯示相同。 它也會回應`Spacebar`金鑰，如[!DNL Experience Manager Assets]。 請參閱Assets[&#128279;](/help/assets/accessibility.md#keyboard-shortcuts)中的鍵盤快速鍵。
 
 Dynamic Media中個別使用者介面元素支援的按鍵在大多數情況下顯而易見，很容易找到。 Dynamic Media中的鍵盤控制項與下列內容有關：
 
@@ -47,7 +47,7 @@ Dynamic Media中個別使用者介面元素支援的按鍵在大多數情況下�
 
 <!-- I would not get into much of details of specific keyboard support logic of these editors. One of the reasons - chances are that accessibility support will receive Phase2-like attention, with more holistic approach. -->
 
-## Dynamic Media {#assistive-technology=support-for-dm}的輔助技術支援
+## Dynamic Media的輔助技術支援 {#assistive-technology=support-for-dm}
 
 Dynamic Media使用者介面元素可與熒幕閱讀器等輔助技術搭配使用。 例如，當您使用鍵盤快速鍵`D`瀏覽地標或使用鍵盤快速鍵`R`瀏覽區域時，它可以辨識頁面上的地標。 它也會在使用標題鍵盤快速鍵`H`導覽時提供標題旁白。
 
@@ -57,10 +57,10 @@ Dynamic Media使用者介面元素可與熒幕閱讀器等輔助技術搭配使�
 
 請參閱Dynamic Media檢視器參考指南中的[鍵盤協助工具與導覽](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html)。
 
-## Dynamic Media檢視器{#assistive-technology=support-for-dm-viewers}中的輔助技術支援
+## Dynamic Media檢視器中的輔助技術支援{#assistive-technology=support-for-dm-viewers}
 
 所有Dynamic Media檢視器元件都支援ARIA （可存取的豐富網際網路應用程式）角色和屬性，以改進與熒幕閱讀器等輔助技術的整合。
-請參閱Dynamic Media檢視器參考指南中任何自訂檢視器主題的**輔助技術支援**&#x200B;說明主題。 例如，請參閱視訊檢視器的[輔助技術支援](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html)，或互動式影像檢視器的[輔助技術支援](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html#viewers-for-aem-assets-only)。
+請參閱Dynamic Media檢視器參考指南中任何自訂檢視器主題的&#x200B;**輔助技術支援**&#x200B;說明主題。 例如，請參閱視訊檢視器的[輔助技術支援](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html)，或互動式影像檢視器的[輔助技術支援](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html#viewers-for-aem-assets-only)。
 
 ## [!DNL Dynamic Media]中的隱藏式字幕支援 {#closed-caption-support}
 

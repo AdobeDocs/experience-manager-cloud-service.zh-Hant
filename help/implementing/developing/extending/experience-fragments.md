@@ -64,7 +64,7 @@ HTML轉譯是使用Sling重寫程式管道產生的。 管道定義於`/libs/exp
    * 最終轉譯中允許的HTML標籤清單。
    * 預設允許下列標籤（不需要設定）： html、head、title、body、img、p、span、ul、li、a、b、i、em、strong、h1、h2、h3、h4、h5、h6、br、noscript、div、link和script
 
-Adobe建議使用覆蓋來設定重寫程式。 檢視AEM as a Cloud Service](/help/implementing/developing/introduction/overlays.md)中的[覆蓋。
+Adobe建議使用覆蓋來設定重寫程式。 檢視AEM as a Cloud Service[&#128279;](/help/implementing/developing/introduction/overlays.md)中的覆蓋。
 
 ## 體驗片段的範本 {#templates-for-experience-fragments}
 
@@ -87,9 +87,11 @@ Adobe建議使用覆蓋來設定重寫程式。 檢視AEM as a Cloud Service](/h
 1. 兩者：
 
    1. 範本的資源型別（初始節點）必須繼承自：
+
       `cq/experience-fragments/components/xfpage`
 
    1. 範本的名稱必須以下列專案開頭：
+
       `experience-fragments`
 此模式可讓使用者在/content/experience-fragments中建立體驗片段，因為此資料夾的`cq:allowedTemplates`屬性包含名稱以`experience-fragment`開頭的所有範本。 客戶可以更新此屬性以包含他們自己的命名配置或範本位置。
 

@@ -26,8 +26,8 @@ AEM as a Cloud Service CDN中HTTP回應的快取是由以下來自來源的HTTP�
 
 CDN資源的快取索引鍵包含完整的請求url，包括查詢引數，因此每個不同的查詢引數都會產生不同的快取專案。 請考慮移除不要的查詢引數；[請參閱下文](#marketing-parameters)以改進快取命中率。
 
-在`Cache-Control`中包含`private`、`no-cache`或`no-store`的原始回應不會由AEM as a Cloud Service的CDN快取（請參閱[如何停用CDN快取）
-](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/disable-caching)以取得詳細資料)。  此外，設定Cookie （即具有`Set-Cookie`回應標題）的回應不會由CDN快取。
+在`Cache-Control`中包含`private`、`no-cache`或`no-store`的原始回應不會由AEM as a Cloud Service的CDN快取（請參閱[&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/disable-caching)如何停用CDN快取）
+以取得詳細資料)。  此外，設定Cookie （即具有`Set-Cookie`回應標題）的回應不會由CDN快取。
 
 ### HTML/文字 {#html-text}
 

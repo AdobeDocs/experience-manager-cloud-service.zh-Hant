@@ -38,7 +38,7 @@ AEM as a Cloud Service提供許多管理AEM專案的新功能，並帶來許多�
 
 隨著這些改善，與AEM as a Cloud Service相比，AEM的內部部署安裝和Adobe Managed Services之間也引進了幾項差異。
 
-下表中的專案清單是與移轉至AEM as a Cloud Service最相關的變更子集。 您可以參閱Adobe Experience Manager as a Cloud Service](/help/release-notes/aem-cloud-changes.md)的[重大變更完整清單。
+下表中的專案清單是與移轉至AEM as a Cloud Service最相關的變更子集。 您可以參閱Adobe Experience Manager as a Cloud Service[&#128279;](/help/release-notes/aem-cloud-changes.md)的重大變更完整清單。
 
 <table>
 <thead>

@@ -91,7 +91,7 @@ _
 
 ##### 允許的多個字段 [!UICONTROL 時間] {#allowed-multiple-fields}
 
-在 When **** 条件中，您可以選擇添加除應用規則的欄位之外的其他字段。
+在 When **&#x200B;**&#x200B;条件中，您可以選擇添加除應用規則的欄位之外的其他字段。
 
 例如，使用When規則型別，您可以評估不同表單物件的條件並執行動作：
 
@@ -220,7 +220,7 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 #### [!UICONTROL 設定值] {#set-value-of}
 
-]**規則型別的**[!UICONTROL &#x200B;設定值可讓您依據指定的條件是否符合，來設定表單物件的值。 值可以設定為另一個物件的值、常值字串、衍生自數學運算式或函式的值、另一個物件的屬性值，或表單資料模型服務的輸出。 同樣地，您可以檢查元件、字串、屬性或衍生自函式或數學運算式的值的條件。
+**規則型別的**&#x200B;設定值可讓您依據指定的條件是否符合，來設定表單物件的值。 值可以設定為另一個物件的值、常值字串、衍生自數學運算式或函式的值、另一個物件的屬性值，或表單資料模型服務的輸出。 同樣地，您可以檢查元件、字串、屬性或衍生自函式或數學運算式的值的條件。
 
 **Set Value Of**&#x200B;規則型別不適用於所有表單物件，例如面板和工具列按鈕。 標準的「設定值」規則具有以下結構：
 
@@ -276,7 +276,7 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 #### [!UICONTROL 啟用] {#enable}
 
-]**啟用**[!UICONTROL &#x200B;規則“類型允許您根據是否滿足條件來啟用或禁用表單物件。啟用規則類型還會在條件不滿足或返回 `False`時觸發禁用作。
+**啟用**&#x200B;規則“類型允許您根據是否滿足條件來啟用或禁用表單物件。啟用規則類型還會在條件不滿足或返回 `False`時觸發禁用作。
 
 典型的啟用規則結構如下：
 
@@ -366,7 +366,7 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 `[Callback Function];`
 
-如需如何在視覺規則編輯器中使用非同步函式呼叫的詳細資訊，請參閱規則編輯器](/help/forms/using-async-funct-in-rule-editor.md)中的[使用非同步函式呼叫一文。
+如需如何在視覺規則編輯器中使用非同步函式呼叫的詳細資訊，請參閱規則編輯器[&#128279;](/help/forms/using-async-funct-in-rule-editor.md)中的使用非同步函式呼叫一文。
 
 <!--
 ### [!UICONTROL Set Options Of] {#setoptionsof}
@@ -390,7 +390,7 @@ To define a rule based on a form data model:
 
 ## 下一步
 
-讓我們現在瞭解根據核心元件](/help/forms/rule-editor-core-components-usecases.md)的最適化表單的規則編輯器的各種[範例。
+讓我們現在瞭解根據核心元件[&#128279;](/help/forms/rule-editor-core-components-usecases.md)的最適化表單的規則編輯器的各種範例。
 
 ## 另請參閱
 

@@ -50,7 +50,7 @@ Externalizer服務可讓您集中定義網域，以程式設計方式為資源�
 
 >[!NOTE]
 >
->如同為AEM as a Cloud Service](/help/implementing/deploying/overview.md#osgi-configuration)套用任何[OSGi設定一樣，下列步驟應該在本機開發人員執行個體上執行，然後提交至您的專案程式碼以進行部署。
+>如同為AEM as a Cloud Service[&#128279;](/help/implementing/deploying/overview.md#osgi-configuration)套用任何OSGi設定一樣，下列步驟應該在本機開發人員執行個體上執行，然後提交至您的專案程式碼以進行部署。
 
 若要定義Externalizer服務的網域對應：
 
@@ -93,7 +93,7 @@ Externalizer服務可讓您集中定義網域，以程式設計方式為資源�
    >
    >自訂組態可讓您新增類別，例如`production`、`staging`，甚至外部非AEM系統，例如`my-internal-webservice`。 避免在專案的程式碼基底中跨不同位置對這類URL進行硬式編碼很有用。
 
-1. 按一下[儲存]儲存變更。****
+1. 按一下[儲存]儲存變更。**&#x200B;**
 
 ### 使用Externalizer服務 {#using-the-externalizer-service}
 

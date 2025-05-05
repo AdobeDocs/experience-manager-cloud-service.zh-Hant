@@ -57,7 +57,7 @@ Key considerations include:
 
 * 簡單性
 
-   * 開發人員通常（會）熟悉HTTP和REST。 根據API報告](https://www.postman.com/state-of-api/)的[Postman狀態，有高比例的開發人員使用REST。
+   * 開發人員通常（會）熟悉HTTP和REST。 根據API報告[&#128279;](https://www.postman.com/state-of-api/)的Postman狀態，有高比例的開發人員使用REST。
 
    * 透過簡單而熟悉。 使用REST時，不會出現關於誰擁有查詢以及誰擁有應用程式的組織問題，而GraphQL則可能出現這些問題。
 

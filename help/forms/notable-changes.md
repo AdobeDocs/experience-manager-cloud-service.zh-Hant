@@ -37,7 +37,7 @@ ht-degree: 1%
 
 * 在搭配Forms as a Cloud Service使用客戶套件組合之前，請先使用最新版adobe-aemfd-docmanager重新編譯自訂程式碼。
 
-* 使用[AEM Formsas a Cloud Service移轉公用程式](/help/forms/migrate-to-forms-as-a-cloud-service.md)，準備並移轉最適化Forms、主題、範本和雲端設定，從OSGi上的<!-- AEM 6.3 Forms--> AEM 6.4 Forms和OSGi上的AEM 6.5 Forms移轉到[!DNL AEM] as a Cloud Service。 使用程式](/help/implementing/cloud-manager/managing-code/managing-repositories.md)的[Git存放庫匯入現有的最適化表單範本。
+* 使用[AEM Formsas a Cloud Service移轉公用程式](/help/forms/migrate-to-forms-as-a-cloud-service.md)，準備並移轉最適化Forms、主題、範本和雲端設定，從OSGi上的<!-- AEM 6.3 Forms--> AEM 6.4 Forms和OSGi上的AEM 6.5 Forms移轉到[!DNL AEM] as a Cloud Service。 使用程式[&#128279;](/help/implementing/cloud-manager/managing-code/managing-repositories.md)的Git存放庫匯入現有的最適化表單範本。
 
 * 電子郵件預設僅支援HTTP和HTTP通訊協定。 [請連絡支援團隊](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#sending-email)以啟用連線埠來傳送電子郵件，並為您的環境啟用SMTP通訊協定。
 

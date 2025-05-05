@@ -130,7 +130,7 @@ ht-degree: 0%
 
 已刪除的欄位也會標示圖示，以指出欄位中的錯誤。
 
-欄位](assets/error-field.png)中的![錯誤圖示
+欄位![&#128279;](assets/error-field.png)中的錯誤圖示
 
 >[!NOTE]
 >

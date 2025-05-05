@@ -158,7 +158,7 @@ Forms轉換公用程式會將以舊版基礎元件為基礎的最適化Forms轉�
 
    ![AEM現代化工具目的地資料夾](/help/forms/assets/aem-modernize-tools-destination-folder.png)
 
-1. 選取&#x200B;**[!UICONTROL 儲存並關閉]**以再次儲存轉換表單的內容。
+1. 選取&#x200B;**[!UICONTROL 儲存並關閉]**&#x200B;以再次儲存轉換表單的內容。
    ![AEM現代化工具最適化表單屬性](/help/forms/assets/aem-modernize-tools-af-properties.png)
 
 您現在可以看到，以Foundation Components為基礎的最適化表單已轉換為以核心元件為基礎的最適化表單。

@@ -74,7 +74,7 @@ Experience Manager中的中央資產控管可讓DAM管理員或品牌管理員�
 
 >[!NOTE]
 >
-此功能目前不是自助式。 若要限制IMS [使用者](https://helpx.adobe.com/in/enterprise/using/manage-directory-users.html)和[群組](https://helpx.adobe.com/in/enterprise/using/user-groups.html)的資產傳遞，請洽詢您的企業支援團隊，以取得如何從[Adobe Admin Console](https://adminconsole.adobe.com/)入口網站擷取限制存取所需的資訊，以及如何在AEM as a Cloud Service作者服務中設定存取許可權的相關指引。
+>此功能目前不是自助式。 若要限制IMS [使用者](https://helpx.adobe.com/in/enterprise/using/manage-directory-users.html)和[群組](https://helpx.adobe.com/in/enterprise/using/user-groups.html)的資產傳遞，請洽詢您的企業支援團隊，以取得如何從[Adobe Admin Console](https://adminconsole.adobe.com/)入口網站擷取限制存取所需的資訊，以及如何在AEM as a Cloud Service作者服務中設定存取許可權的相關指引。
 
 ### 使用開啟和關閉日期與時間限制資產傳遞 {#restrict-delivery-assets-date-time}
 
@@ -122,7 +122,7 @@ IMS持有人權杖會在AEM Cloud Service作者服務和Asset Selector上自動�
 
 >[!NOTE]
 >
-若要進一步瞭解如何在AEM Asset Selector型整合上啟用IMS驗證，請聯絡企業支援
+>若要進一步瞭解如何在AEM Asset Selector型整合上啟用IMS驗證，請聯絡企業支援
 
 1. 對於非Asset Selector型體驗，AEM as a Cloud Service和具有OpenAPI功能的Dynamic Media目前支援伺服器端API整合，且可產生IMS持有人權杖。
    * 依照[這裡](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#the-server-to-server-flow)的指示，執行可透過[AEM as a Cloud Service Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console)擷取IMS持有人權杖的服務對伺服器API整合

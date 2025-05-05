@@ -58,7 +58,7 @@ Adobe提供數個內建品質閘道，而其他閘道則需要您的介入以進
 
 建議您為AEM應用程式提供單元測試，這是每個測試策略的基礎。 這些設定旨在快速且經常地執行，並提供早期且快速的意見反應。 它們已緊密整合到開發人員工作流程、您自己的CI/CD和AEM雲端服務部署管道中。
 
-它們會使用JUnit實作，並使用Maven執行。 請參閱AEM Project Archetype](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using#unit-tests)的[核心模組，以取得AEM及入門的單元測試範例。
+它們會使用JUnit實作，並使用Maven執行。 請參閱AEM Project Archetype[&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using#unit-tests)的核心模組，以取得AEM及入門的單元測試範例。
 
 ### 程式碼品質
 
@@ -83,7 +83,7 @@ Adobe提供數個內建品質閘道，而其他閘道則需要您的介入以進
 
 為了維持有效的管道執行，Adobe建議專注於關鍵功能和主要使用者互動流程，目標是大約15分鐘或更短時間的功能測試執行時間。 超過此時間的完整功能測試套裝應在開發過程中作為一般客戶驗證管道的一部分執行。
 
-如需範例，請參閱[開放來源產品測試](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke)或AEM專案原型](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests)的[it.tests模組。
+如需範例，請參閱[開放來源產品測試](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke)或AEM專案原型[&#128279;](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests)的it.tests模組。
 
 如需詳細資訊，請參閱 [Java 功能測試](/help/implementing/cloud-manager/java-functional-testing.md)。
 
@@ -101,7 +101,7 @@ Adobe提供數個內建品質閘道，而其他閘道則需要您的介入以進
 
 為了保持管道執行效率，Adobe建議專注於關鍵功能和主要使用者互動流程。 超出此品質閘道的完整UI測試套裝應該作為一般客戶驗證管道的一部分執行。 將其整合至客戶的開發流程中。
 
-如需範例，請參閱[開放來源範例測試](https://github.com/adobe/aem-test-samples/tree/aem-cloud/)或AEM專案原型](/help/implementing/cloud-manager/ui-testing.md)的[ui.tests模組。
+如需範例，請參閱[開放來源範例測試](https://github.com/adobe/aem-test-samples/tree/aem-cloud/)或AEM專案原型[&#128279;](/help/implementing/cloud-manager/ui-testing.md)的ui.tests模組。
 
 如需詳細資訊，請參閱[自訂 UI 測試](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing)。
 

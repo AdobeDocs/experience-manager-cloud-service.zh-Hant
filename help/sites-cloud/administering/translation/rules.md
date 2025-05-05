@@ -172,7 +172,7 @@ ht-degree: 1%
 
    ![選取內容](../assets/select-context.png)
 
-1. 接著您必須選取內容，然後按一下[編輯]。**** 如此將可開啟翻譯規則編輯器。
+1. 接著您必須選取內容，然後按一下[編輯]。**&#x200B;** 如此將可開啟翻譯規則編輯器。
 
    ![翻譯規則編輯器](../assets/translation-rules-editor.png)
 

@@ -111,7 +111,7 @@ ht-degree: 0%
 
 ### [!UICONTROL 什麼時候] {#whenruletype}
 
-When **** 規則 類型遵循條件-操作-交替操作&#x200B;**規則構造，或者有時僅**&#x200B;遵循&#x200B;**條件-操作**&#x200B;構造。在此規則類型中，首先指定評估條件，然後在滿足條件時觸發操作 （ `True`）。 使用 When 規則 類型時，可以使用多個 AND 和 OR 運算符來創建 [嵌套表達式](#nestedexpressions)。
+When **&#x200B;**&#x200B;規則 類型遵循條件-操作-交替操作&#x200B;**規則構造，或者有時僅**&#x200B;遵循&#x200B;**條件-操作**&#x200B;構造。在此規則類型中，首先指定評估條件，然後在滿足條件時觸發操作 （ `True`）。 使用 When 規則 類型時，可以使用多個 AND 和 OR 運算符來創建 [嵌套表達式](#nestedexpressions)。
 
 使用 When 規則 類型，您可以評估表單對象的條件並對一個或多個物件執行操作。
 
@@ -205,7 +205,7 @@ _
 
 ### [!UICONTROL 設定值] {#set-value-of}
 
-]**規則型別的**[!UICONTROL &#x200B;設定值可讓您依據指定的條件是否符合，來設定表單物件的值。 值可以設定為另一個物件的值、常值字串、衍生自數學運算式或函式的值、另一個物件的屬性值，或表單資料模型服務的輸出。 同樣地，您可以檢查元件、字串、屬性或衍生自函式或數學運算式的值的條件。
+**規則型別的**&#x200B;設定值可讓您依據指定的條件是否符合，來設定表單物件的值。 值可以設定為另一個物件的值、常值字串、衍生自數學運算式或函式的值、另一個物件的屬性值，或表單資料模型服務的輸出。 同樣地，您可以檢查元件、字串、屬性或衍生自函式或數學運算式的值的條件。
 
 “ **設置值** 規則類型”並非適用於所有表單物件，例如面板和工具列按鈕。 標準的「規則集值」具有下列結構：
 
@@ -449,7 +449,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
    ![write-rules-visual-editor-5](assets/write-rules-visual-editor-5.png)
 
-1. 從&#x200B;**[!UICONTROL 拖放物件上的[表單物件]索引標籤中拖放**[!UICONTROL &#x200B;配偶薪資&#x200B;]**欄位，或選取這裡]**&#x200B;欄位。 或者，選取&#x200B;**[!UICONTROL 拖放物件或選取這裡]**&#x200B;欄位，然後從躍現式選單中選取&#x200B;**[!UICONTROL 配偶薪資]**&#x200B;欄位，這會列出表單中的所有表單物件。
+1. 從&#x200B;**[!UICONTROL 拖放物件上的[表單物件]索引標籤中拖放**&#x200B;[!UICONTROL &#x200B;配偶薪資&#x200B;]&#x200B;**欄位，或選取這裡]**&#x200B;欄位。 或者，選取&#x200B;**[!UICONTROL 拖放物件或選取這裡]**&#x200B;欄位，然後從躍現式選單中選取&#x200B;**[!UICONTROL 配偶薪資]**&#x200B;欄位，這會列出表單中的所有表單物件。
 
    ![write-rules-visual-editor-6](assets/write-rules-visual-editor-6.png)
 
@@ -483,11 +483,11 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 1. 在運算式欄位中：
 
-   * 從Forms物件標籤中選取或拖放第一個&#x200B;**[!UICONTROL 放置物件中的**[!UICONTROL  Salary ]**欄位，或選取這裡]**&#x200B;欄位。
+   * 從Forms物件標籤中選取或拖放第一個&#x200B;**[!UICONTROL 放置物件中的**&#x200B;[!UICONTROL &#x200B; Salary &#x200B;]&#x200B;**欄位，或選取這裡]**&#x200B;欄位。
 
    * 從&#x200B;**[!UICONTROL 選取運運算元]**&#x200B;欄位中選取&#x200B;**[!UICONTROL 加號]**。
 
-   * 從「Forms物件」標籤中選取或拖放其他&#x200B;**[!UICONTROL 拖放物件的**[!UICONTROL &#x200B;配偶薪資&#x200B;]**欄位，或選取這裡]**&#x200B;欄位。
+   * 從「Forms物件」標籤中選取或拖放其他&#x200B;**[!UICONTROL 拖放物件的**&#x200B;[!UICONTROL &#x200B;配偶薪資&#x200B;]&#x200B;**欄位，或選取這裡]**&#x200B;欄位。
 
    ![write-rules-visual-editor-12](assets/write-rules-visual-editor-12.png)
 
@@ -511,7 +511,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
    在When陳述式中：
 
-   * 從Forms物件索引標籤中選取或拖放第一個&#x200B;**[!UICONTROL 放置物件的**[!UICONTROL &#x200B;婚姻狀況&#x200B;]**欄位，或選取這裡]**&#x200B;欄位。
+   * 從Forms物件索引標籤中選取或拖放第一個&#x200B;**[!UICONTROL 放置物件的**&#x200B;[!UICONTROL &#x200B;婚姻狀況&#x200B;]&#x200B;**欄位，或選取這裡]**&#x200B;欄位。
 
    * 從&#x200B;**[!UICONTROL 選取運運算元]**&#x200B;欄位中選取&#x200B;**[!UICONTROL 等於]**。
 
@@ -651,7 +651,7 @@ While writing JavaScript code in the rule editor, the following visual cues help
 在CRX存放庫中新增使用者端程式庫後，請於最適化表單中使用。 它可讓您使用自訂函式作為表單中的規則。 若要在最適化表單中新增使用者端程式庫，請執行下列步驟：
 
 1. 在編輯模式中開啟您的表單。
-若要以編輯模式開啟表單，請選取表單並選取**[!UICONTROL 開啟]**。
+若要以編輯模式開啟表單，請選取表單並選取&#x200B;**[!UICONTROL 開啟]**。
 1. 在編輯模式中，選取元件，然後選取![欄位層級](assets/select_parent_icon.svg) > **[!UICONTROL 最適化表單容器]**，然後選取![cmppr](assets/configure-icon.svg)。
 1. 在側邊欄中的「使用者端資料庫名稱」下方，新增您的使用者端資料庫。 （範例中為`customfunction`。）
 

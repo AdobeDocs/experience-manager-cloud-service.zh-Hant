@@ -27,7 +27,8 @@ ht-degree: 1%
 
 * 頁面編輯器：
 
-   * 選取&#x200B;**導覽**以在主控台中開啟啟動項的結構：
+   * 選取&#x200B;**導覽**&#x200B;以在主控台中開啟啟動項的結構：
+
      ![從頁面編輯器導覽啟動項](/help/sites-cloud/authoring/assets/launches-navigate-page-editor.png)
 
      >[!NOTE]
@@ -36,12 +37,12 @@ ht-degree: 1%
      >
      >* **離開**&#x200B;啟動項並返回編輯來源頁面
 
-* **啟動**主控台：
+* **啟動**&#x200B;主控台：
 如果您選取特定啟動，可以接著選取「**管理內容**」：
   ![啟動主控台 — 管理內容](/help/sites-cloud/authoring/assets/launches-navigate-launches-console.png)
 
-* **網站**主控台：
-如果您選取特定來源頁面並開啟**參考資料**，您可以接著選取&#x200B;**啟動**，然後選取&#x200B;**管理內容**：
+* **網站**&#x200B;主控台：
+如果您選取特定來源頁面並開啟&#x200B;**參考資料**，您可以接著選取&#x200B;**啟動**，然後選取&#x200B;**管理內容**：
 
   ![啟動主控台 — 管理內容](/help/sites-cloud/authoring/assets/launches-navigate-sites-console.png)
 
@@ -55,7 +56,7 @@ ht-degree: 1%
 * **建立**&#x200B;新頁面，
 * 選取現有頁面並採取行動；例如，**編輯**、開啟&#x200B;**屬性**、**鎖定**、**複製**、**貼上**&#x200B;和&#x200B;**刪除**
   從「管理內容」導覽Sites Console中的啟動項![](/help/sites-cloud/authoring/assets/launches-navigate-manage-content.png)
-* 使用&#x200B;**參考**&#x200B;邊欄返回&#x200B;**啟動Source**頁面：
+* 使用&#x200B;**參考**&#x200B;邊欄返回&#x200B;**啟動Source**&#x200B;頁面：
   ![網站主控台 — 啟動Source](/help/sites-cloud/authoring/assets/launches-navigate-launch-source.png)
 
 ## 將頁面新增至您的啟動項 {#add-pages-to-launch}

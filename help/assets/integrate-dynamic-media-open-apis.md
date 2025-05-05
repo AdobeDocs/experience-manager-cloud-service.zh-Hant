@@ -67,6 +67,6 @@ Adobe的Micro-Frontend Asset Selector提供使用者介面，可輕鬆與[!DNL E
 
 >[!MORELIKETHIS]
 >
-* [整合資產選擇器與各種應用程式](/help/assets/integrate-asset-selector.md)
-* [資產選擇器屬性](/help/assets/asset-selector-properties.md)
-* [資產選擇器自訂](/help/assets/asset-selector-customization.md)
+>* [整合資產選擇器與各種應用程式](/help/assets/integrate-asset-selector.md)
+>* [資產選擇器屬性](/help/assets/asset-selector-properties.md)
+>* [資產選擇器自訂](/help/assets/asset-selector-customization.md)

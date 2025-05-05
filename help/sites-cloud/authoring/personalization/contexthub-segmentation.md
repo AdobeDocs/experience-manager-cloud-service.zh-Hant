@@ -215,6 +215,7 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 1. 資料夾會出現在區段清單中。
    * 排序欄的方式將影響新資料夾在清單中的顯示位置。
    * 您可以選取欄標題來調整您的排序。
+
      ![新資料夾](../assets/contexthub-folder.png)
 
 ### 修改現有資料夾 {#modify-folders}
@@ -282,7 +283,7 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 
 這類測試也可以在內容頁面上執行，並與目標內容和相關的&#x200B;**活動**&#x200B;和&#x200B;**體驗**&#x200B;相結合。
 
-如果您已設定活動和體驗，您可以使用活動輕鬆測試區段。 如需有關設定活動的詳細資訊，請參閱有關編寫目標內容](targeted-content.md)的[檔案。
+如果您已設定活動和體驗，您可以使用活動輕鬆測試區段。 如需有關設定活動的詳細資訊，請參閱有關編寫目標內容[&#128279;](targeted-content.md)的檔案。
 
 1. 在您設定目標內容的頁面的編輯模式中，您可以看到已透過內容上的箭頭圖示目標內容。
 1. 切換到預覽模式並使用內容中樞，切換到與為體驗設定的分段不符的角色。

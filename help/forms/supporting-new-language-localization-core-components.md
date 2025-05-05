@@ -265,7 +265,7 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 
 1. 找到範例英文檔案：
 
-   AEM Forms在GitHub](https://github.com/adobe/aem-core-forms-components/blob/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/af-clientlibs/core-forms-components-runtime-all/resources/i18n/en.json)上提供[範例英文地區設定檔(.json)。
+   AEM Forms在GitHub[&#128279;](https://github.com/adobe/aem-core-forms-components/blob/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/af-clientlibs/core-forms-components-runtime-all/resources/i18n/en.json)上提供範例英文地區設定檔(.json)。
 
    英文檔案包含預設的參考字串集。 您的地區設定特定檔案應模擬英文檔案的結構。
 

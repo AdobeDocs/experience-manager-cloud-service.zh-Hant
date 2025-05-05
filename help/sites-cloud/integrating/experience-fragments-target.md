@@ -239,7 +239,7 @@ ht-degree: 1%
 
 1. 在您的Target設定頁面上，按一下「可用設定」旁的&#x200B;**+** （加號）。
 
-1. 在[建立架構]對話方塊中，指定&#x200B;**標題**，選取&#x200B;**Adobe Target架構**，然後按一下[建立]****。
+1. 在[建立架構]對話方塊中，指定&#x200B;**標題**，選取&#x200B;**Adobe Target架構**，然後按一下[建立]&#x200B;**&#x200B;**。
 
    <!-- ![config-target-framework-dialog](assets/config-target-framework-dialog.png) -->
 
@@ -333,7 +333,7 @@ When you associate a page with the framework, the child pages inherit the associ
 
    >[!NOTE]
    >
-   >如果體驗片段已匯出，請選取「在Adobe Target中更新」****。
+   >如果體驗片段已匯出，請選取「在Adobe Target中更新」**&#x200B;**。
 
 1. 視需要選取&#x200B;**不發佈**&#x200B;或&#x200B;**Publish**&#x200B;的匯出。
 

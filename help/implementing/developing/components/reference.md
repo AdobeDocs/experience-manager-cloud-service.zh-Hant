@@ -172,7 +172,7 @@ AEM元件的結構既強大又靈活。 主要部分為：
 | `cq:isContainer` | `Boolean` | 這表示元件是否為容器元件，因此可包含其他元件，例如段落系統。 |
 | `cq:dialog` | `nt:unstructured` | 這是元件之「編輯」對話方塊的定義。 |
 | `cq:design_dialog` | `nt:unstructured` | 這是元件之「設計」對話方塊的定義。 |
-| `cq:editConfig` | `cq:EditConfig` | 這會定義元件](#edit-behavior)的[編輯組態。 |
+| `cq:editConfig` | `cq:EditConfig` | 這會定義元件[&#128279;](#edit-behavior)的編輯組態。 |
 | `cq:htmlTag` | `nt:unstructured` | 這會傳回新增至周圍HTML標籤的其他標籤屬性。 啟用向自動產生的div新增屬性。 |
 | `cq:noDecoration` | `Boolean` | 如果為true，則元件不會使用自動產生的div和css類別轉譯。 |
 | `cq:template` | `nt:unstructured` | 如果找到，從元件瀏覽器新增元件時，會將此節點作為內容範本使用。 |
@@ -181,7 +181,7 @@ AEM元件的結構既強大又靈活。 主要部分為：
 | `jcr:title` | `String` | 這是元件的標題。 |
 | `sling:resourceSuperType` | `String` | 設定後，元件會繼承自此元件。 |
 | `component.html` | `nt:file` | 這是元件的HTL指令碼檔案。 |
-| `cq:icon` | `String` | 此值指向元件](#component-icon)的[圖示，並出現在「元件瀏覽器」中。 |
+| `cq:icon` | `String` | 此值指向元件[&#128279;](#component-icon)的圖示，並出現在「元件瀏覽器」中。 |
 
 如果檢視&#x200B;**Text**&#x200B;元件，您可以看到幾個元素：
 
@@ -225,7 +225,7 @@ AEM元件的對話方塊：
 
 「設計」對話方塊類似於用來編輯和設定內容的對話方塊，但它們為範本作者提供了介面，讓他們可以預先設定，並為頁面範本上的該元件提供設計詳細資訊。 然後，內容作者會使用頁面範本來建立內容頁面。 如需如何建立範本的詳細資訊，請參閱[範本檔案](/help/sites-cloud/authoring/page-editor/templates.md)。
 
-編輯頁面範本](/help/sites-cloud/authoring/page-editor/templates.md)時會使用[設計對話方塊，不過並非所有元件都需要。 例如，**Title**&#x200B;和&#x200B;**影像元件**&#x200B;都有設計對話方塊，而&#x200B;**社群媒體共用元件**&#x200B;則沒有。
+編輯頁面範本[&#128279;](/help/sites-cloud/authoring/page-editor/templates.md)時會使用設計對話方塊，不過並非所有元件都需要。 例如，**Title**&#x200B;和&#x200B;**影像元件**&#x200B;都有設計對話方塊，而&#x200B;**社群媒體共用元件**&#x200B;則沒有。
 
 ### Coral UI和Granite UI {#coral-and-granite}
 

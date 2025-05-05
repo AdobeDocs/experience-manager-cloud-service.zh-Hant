@@ -55,9 +55,9 @@ hidefromtoc: yes -->
    * [Illustrator](#illustrator-tab)索引標籤
 
    ![Dynamic Media一般設定頁面](/help/assets/assets-dm/dm-general-settings.png)
-   *Dynamic Media一般設定頁面，已選取&#x200B;**[!UICONTROL 影像編輯]**標籤。*<br><br>
+   *Dynamic Media一般設定頁面，已選取&#x200B;**[!UICONTROL 影像編輯]**&#x200B;標籤。*<br><br>
 
-1. 完成後，在頁面的右上角附近，按一下[儲存]。****
+1. 完成後，在頁面的右上角附近，按一下[儲存]。**&#x200B;**
 
 ## 伺服器 {#server-general-setting}
 

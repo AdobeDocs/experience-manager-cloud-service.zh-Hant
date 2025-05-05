@@ -104,7 +104,7 @@ ht-degree: 29%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager，並選取適當的組織和方案。
 1. 從左側功能表，按一下![工作流程圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **管道**。
-1. 在&#x200B;**管道**頁面的表格中，選取您要執行管道旁的核取方塊。
+1. 在&#x200B;**管道**&#x200B;頁面的表格中，選取您要執行管道旁的核取方塊。
 如有必要，請按一下![篩選圖示、漏斗](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) **篩選**，依名稱、環境、已部署的程式碼型別或這三個專案的組合來排序管道。
 1. 在頁面的右上角附近，按一下&#x200B;**執行選取的專案(x)**。
 1. 在&#x200B;**執行選取的管道(x)**&#x200B;對話方塊中，按一下&#x200B;**執行(x)**。

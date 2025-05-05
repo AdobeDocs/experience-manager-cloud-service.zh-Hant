@@ -108,7 +108,7 @@ ht-degree: 5%
 
 ## 網站 {#site}
 
-側面板的&#x200B;**網站**&#x200B;檢視會顯示使用網站範本](/help/sites-cloud/administering/site-creation/create-site.md)建立的網站[的詳細資料。
+側面板的&#x200B;**網站**&#x200B;檢視會顯示使用網站範本[&#128279;](/help/sites-cloud/administering/site-creation/create-site.md)建立的網站的詳細資料。
 
 ![網站面板](assets/console-side-panel-site-paenl.png)
 

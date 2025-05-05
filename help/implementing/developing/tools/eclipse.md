@@ -17,7 +17,7 @@ ht-degree: 2%
 
 ## 概觀 {#overview}
 
-_適用於Eclipse的Experience Manager Developer Tools_&#x200B;是根據在Apache License 2底下發行的Apache Sling](https://sling.apache.org/documentation/development/ide-tooling.html)適用的[Eclipse外掛程式，為Eclipse外掛程式。
+_適用於Eclipse的Experience Manager Developer Tools_&#x200B;是根據在Apache License 2底下發行的Apache Sling[&#128279;](https://sling.apache.org/documentation/development/ide-tooling.html)適用的Eclipse外掛程式，為Eclipse外掛程式。
 
 它提供數項功能，讓AEM開發更容易：
 

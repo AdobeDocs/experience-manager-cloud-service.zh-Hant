@@ -35,7 +35,7 @@ ht-degree: 2%
 >
 >可以使用內容片段：
 >
->* 使用內容片段搭配GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)的[Headless內容傳遞，
+>* 使用內容片段搭配GraphQL[&#128279;](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)的Headless內容傳遞，
 >* 編寫頁面時；請參閱[使用內容片段編寫頁面](/help/sites-cloud/authoring/fragments/content-fragments.md)。
 
 >[!NOTE]
@@ -139,7 +139,7 @@ ht-degree: 2%
 
 在主控台中，您可以直接或在選取特定片段後使用一系列動作：
 
-* 可以從主控台](#actions-unselected)直接使用各種動作[
+* 可以從主控台[&#128279;](#actions-unselected)直接使用各種動作
 * 您可以[選取一或多個內容片段以顯示適當的動作](#actions-selected-content-fragment)
 
 ### 動作（未選取） {#actions-unselected}
@@ -395,7 +395,7 @@ ht-degree: 2%
 可以從以下位置存取語言副本的詳細資料：
 
 * [內容片段主控台](#information-content-fragments)的&#x200B;**語言**&#x200B;資料行
-* 內容片段編輯器](/help/sites-cloud/administering/content-fragments/authoring.md#view-language-copies)的[語言副本索引標籤
+* 內容片段編輯器[&#128279;](/help/sites-cloud/administering/content-fragments/authoring.md#view-language-copies)的語言副本索引標籤
 
 圖示會指出內容片段的地區設定，以及與內容片段相關的地區設定/語言副本總數。 例如，從主控台：
 

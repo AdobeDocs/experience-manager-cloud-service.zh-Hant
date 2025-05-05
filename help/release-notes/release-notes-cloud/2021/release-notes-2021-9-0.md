@@ -70,7 +70,7 @@ CQ-4328183 was not reported on CS so not documented here.
 
 * **Analytics for Adaptive Forms** — 您現在可以透過Adobe Analytics for Adaptive Forms擷取及追蹤一般使用者行為，以收集一般使用者的深入解析。 它可幫助您根據資料來進行明智的決策，以改善一般使用者體驗。
 
-* **輕鬆將Adobe Experience Manager (AEM) Forms與Microsoft® Dynamics和Salesforce連線** — 此服務會提供Microsoft® Dynamics和Salesforce適用的現成資料來源設定和資料模型。 這可讓開發人員更快且更輕鬆地將Microsoft® Dynamics和Salesforce設定為最適化表單的資料來源](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html)。[
+* **輕鬆將Adobe Experience Manager (AEM) Forms與Microsoft® Dynamics和Salesforce連線** — 此服務會提供Microsoft® Dynamics和Salesforce適用的現成資料來源設定和資料模型。 這可讓開發人員更快且更輕鬆地將Microsoft® Dynamics和Salesforce設定為最適化表單的資料來源[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html)。
 
 * **使用DocuSign在最適化表單上進行電子簽章** — 您可以使用DocuSign在最適化表單上進行電子簽章。 此服務提供自訂提交動作，可搭配最適化表單使用DocuSign。 您可以安裝Software Distribution上可用的套件，以匯入提交動作。
 

@@ -66,9 +66,9 @@ Designer是一款點選式圖形化表單設計工具，可簡化XDP和PDF表單
 1. 從[Software Distribution](https://experience.adobe.com/downloads)下載Designer。
 1. 連按兩下setup.exe以執行安裝程式。
 1. 繼續並在Personalization畫面中提供您的詳細資料。
-1. 如果您接受授權合約，請按[下一步] ****&#x200B;繼續。
+1. 如果您接受授權合約，請按[下一步] **&#x200B;**&#x200B;繼續。
 1. （可選）變更預設安裝路徑，以便在您選擇的位置安裝Designer。 按一下「**[!UICONTROL 下一步]**」。
-1. 按一下&#x200B;**[!UICONTROL 上一步]**&#x200B;以變更任何偏好設定。 若要安裝Designer，請按一下[安裝]。****
+1. 按一下&#x200B;**[!UICONTROL 上一步]**&#x200B;以變更任何偏好設定。 若要安裝Designer，請按一下[安裝]。**&#x200B;**
 1. 安裝完成時，按一下&#x200B;**[!UICONTROL 完成]**。
 
 ## 另請參閱 {#see-also}

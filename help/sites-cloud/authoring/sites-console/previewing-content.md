@@ -34,7 +34,7 @@ AEM提供Sites預覽服務，可讓開發人員和內容作者在網站到達發
 
    ![受管理的出版物](/help/sites-cloud/authoring/assets/previewmanagedpublication.png)
 
-1. 按一下[下一步]****，然後按一下[Publish]**進行確認。**
+1. 按一下[下一步]&#x200B;**&#x200B;**，然後按一下[Publish]&#x200B;**進行確認。**
 
 1. 對話方塊將顯示用於在預覽環境中存取內容的URL。
 

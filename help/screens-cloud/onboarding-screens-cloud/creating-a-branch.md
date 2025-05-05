@@ -26,7 +26,7 @@ ht-degree: 4%
 
 1. 導覽至Cloud Manager並選取圖示，即可前往Cloud Manager概觀頁面。
 
-1. 若要建立分支和專案，請按一下[建立]。****
+1. 若要建立分支和專案，請按一下[建立]。**&#x200B;**
 
    ![影像](/help/screens-cloud/assets/onboarding/create-branch1.png)
 

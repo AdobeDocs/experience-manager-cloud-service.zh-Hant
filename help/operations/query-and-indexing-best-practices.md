@@ -69,7 +69,7 @@ AEM as a Cloud Service提供[查詢效能工具](#query-performance-tool)，其�
 * 它會顯示已執行的查詢及其相關效能特性及查詢計畫。
 * 它允許在不同層級執行特定查詢，從僅顯示查詢計畫到執行完整查詢。
 
-查詢效能工具可透過Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries)中的[Developer Console存取。 與AEM 6.x版相比，AEM as a Cloud Service的查詢效能工具可提供更多有關查詢執行細節的資訊。
+查詢效能工具可透過Cloud Manager[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries)中的Developer Console存取。 與AEM 6.x版相比，AEM as a Cloud Service的查詢效能工具可提供更多有關查詢執行細節的資訊。
 
 此圖表說明使用查詢效能工具最佳化查詢的一般流程。
 
@@ -111,7 +111,7 @@ AEM as a Cloud Service提供[查詢效能工具](#query-performance-tool)，其�
 
 ## 查詢效能工具 {#query-performance-tool}
 
-查詢效能工具(位於`/libs/granite/operations/content/diagnosistools/queryPerformance.html`，可透過Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries)中的[Developer Console取得)提供 — 
+查詢效能工具(位於`/libs/granite/operations/content/diagnosistools/queryPerformance.html`，可透過Cloud Manager[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries)中的Developer Console取得)提供 — 
 * 任何「緩慢查詢」的清單；目前定義為讀取/掃描超過5000列的查詢。
 * 「常見查詢」清單
 * 「說明查詢」工具，用於瞭解Oak將如何執行特定查詢。

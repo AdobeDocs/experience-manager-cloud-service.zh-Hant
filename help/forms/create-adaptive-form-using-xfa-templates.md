@@ -76,7 +76,7 @@ AEM as a Cloud Service讓使用者可選擇使用XFA (XML Forms Architecture)表
 
    ![選取XDP檔案](/help/forms/assets/select-xdp-file.png)
 
-   熒幕上會顯示警告對話方塊。 按一下[確定]****&#x200B;以繼續進行。
+   熒幕上會顯示警告對話方塊。 按一下[確定]&#x200B;**&#x200B;**&#x200B;以繼續進行。
 
    ![警告對話方塊](/help/forms/assets/fdm-warning.png)
 

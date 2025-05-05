@@ -36,7 +36,7 @@ ht-degree: 13%
 
 * **大量資產擷取**：為客戶提供使用[!DNL Experience Manager]as a Cloud Service架構（包括資產微服務）的可擴充、雲端原生擷取服務。 主要使用案例包括大規模內嵌與監控、報告和排程，同時允許使用通用雲端上傳工具將資產初始傳輸到雲端資料存放區。 請參閱[資產大量擷取器工具](/help/assets/add-assets.md#asset-bulk-ingestor)。
 
-  此工具適用於系統管理員、顧問或實作合作夥伴角色。 此功能可進行大規模擷取，最好在初始擷取或偶爾大量擷取期間使用。 對於較小的內嵌工作，請使用[[!DNL Experience Manager] 案頭應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)或使用Assets使用者介面](/help/assets/add-assets.md#upload-assets)的[上傳。
+  此工具適用於系統管理員、顧問或實作合作夥伴角色。 此功能可進行大規模擷取，最好在初始擷取或偶爾大量擷取期間使用。 對於較小的內嵌工作，請使用[[!DNL Experience Manager] 案頭應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)或使用Assets使用者介面[&#128279;](/help/assets/add-assets.md#upload-assets)的上傳。
 
   ![大量匯入工具的設定](/help/assets/assets/bulk-import-config-low-res.png)
 
@@ -44,7 +44,7 @@ ht-degree: 13%
 
   ![排序資產](/help/assets/assets/asset-sort-options.png)
 
-* 此版本中的[!DNL Experience Manager Assets]已針對協助工具完成下列增強功能。 如需詳細資訊，請參閱 [!DNL Assets]](/help/assets/accessibility.md)中的[協助工具功能。
+* 此版本中的[!DNL Experience Manager Assets]已針對協助工具完成下列增強功能。 如需詳細資訊，請參閱 [!DNL Assets][&#128279;](/help/assets/accessibility.md)中的協助工具功能。
 
    * 使用鍵盤導覽時間軸時，Esc鍵可以摺疊「全部顯示」選項而不會失去焦點。
    * 使用鍵盤Tab鍵導覽時，從新增的標籤中移除最後一個標籤後，標籤欄位會保持焦點。
@@ -69,7 +69,7 @@ ht-degree: 13%
    * 鍵盤和熒幕助讀程式的使用者可以使用裁切功能。
    * 鍵盤使用者可以更妥善地管理熱點。
 
-  檢視 [!DNL Dynamic Media]](/help/assets/dynamic-media/accessibility-dm.md)中的[協助工具。
+  檢視 [!DNL Dynamic Media][&#128279;](/help/assets/dynamic-media/accessibility-dm.md)中的協助工具。
 
 ## Adobe Experience Manager Commerceas a Cloud Service {#cloud-services-commerce}
 

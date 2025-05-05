@@ -29,7 +29,7 @@ AEM中的![Extension Manager](/help/implementing/developing/extending/assets/hom
 
 * Extension Manager：
 
-   * AEM Experience Manager](https://developer.adobe.com/uix/docs/extension-manager/)中的[Extension Manager
+   * AEM Experience Manager[&#128279;](https://developer.adobe.com/uix/docs/extension-manager/)中的Extension Manager
    * [由Adobe開發的擴充功能](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)
 
 * AEM App Builder

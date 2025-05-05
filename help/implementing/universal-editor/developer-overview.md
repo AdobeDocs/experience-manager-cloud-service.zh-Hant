@@ -26,14 +26,14 @@ ht-degree: 1%
 >
 >本檔案採取額外步驟說明通用編輯器的運作方式，旨在加深開發人員對編輯器的瞭解。 因此，它不會採取最直接的方式檢測應用程式，而是採用最能說明通用編輯器及其運作方式的方式。
 >
->如果您想要儘快啟動並執行，請參閱AEM](/help/implementing/universal-editor/getting-started.md)中的[通用編輯器快速入門。
+>如果您想要儘快啟動並執行，請參閱AEM[&#128279;](/help/implementing/universal-editor/getting-started.md)中的通用編輯器快速入門。
 
 ## 先決條件 {#prerequisites}
 
 若要遵循本概述，您需要下列可用專案。
 
 * [AEM as a Cloud Service的本機開發執行個體](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
-   * 您的本機開發執行個體必須在`localhost`](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html)上以HTTPS設定[，以進行開發。
+   * 您的本機開發執行個體必須在`localhost`[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html)上以HTTPS設定，以進行開發。
    * [必須安裝WKND示範網站](https://github.com/adobe/aem-guides-wknd)。
 * [存取通用編輯器](/help/implementing/universal-editor/getting-started.md#onboarding)。
 * [本機通用編輯器服務](/help/implementing/universal-editor/local-dev.md)正在執行以進行開發。
@@ -43,7 +43,7 @@ ht-degree: 1%
 
 ## 啟動AEM並登入通用編輯器 {#sign-in}
 
-如果您尚未安裝，則必須安裝本機AEM開發執行個體，並安裝WKND及啟用HTTPS，如先決條件](#prerequisites)所詳述。 [此概觀假設您的執行個體在`https://localhost:8443`執行。
+如果您尚未安裝，則必須安裝本機AEM開發執行個體，並安裝WKND及啟用HTTPS，如先決條件[&#128279;](#prerequisites)所詳述。 此概觀假設您的執行個體在`https://localhost:8443`執行。
 
 1. 在AEM編輯器中開啟WKND英文主版頁面。
 
@@ -316,7 +316,7 @@ WKND頁面現在會在Universal Editor中成功載入，且JavaScript程式庫�
 
 1. 在Universal Editor介面中，按一下工具列中的&#x200B;**Authentication Headers**&#x200B;圖示。
 
-1. 複製必要的驗證標頭以驗證您的本機AEM執行個體，然後按一下[儲存]。****
+1. 複製必要的驗證標頭以驗證您的本機AEM執行個體，然後按一下[儲存]。**&#x200B;**
 
    ![正在設定驗證標頭](assets/dev-authentication-headers.png)
 
@@ -352,7 +352,7 @@ WKND頁面現在會在Universal Editor中成功載入，且JavaScript程式庫�
 
 您可以在JCR中看到持續存在的變更。
 
-在JCR](assets/dev-write-back-jcr.png)中更新![
+在JCR![&#128279;](assets/dev-write-back-jcr.png)中更新
 
 >[!TIP]
 >
@@ -463,7 +463,7 @@ WKND頁面現在會在Universal Editor中成功載入，且JavaScript程式庫�
    </script>
    ```
 
-1. 按一下工具列中的「儲存全部&#x200B;****」。
+1. 按一下工具列中的「儲存全部&#x200B;**&#x200B;**」。
 
 ## 這是什麼意思？ {#what-does-it-mean-2}
 
@@ -594,7 +594,7 @@ WKND頁面現在會在Universal Editor中成功載入，且JavaScript程式庫�
 
 請參閱下列檔案，瞭解通用編輯器功能的詳細資訊和詳細資訊。
 
-* 如果您想要儘快啟動並執行，請參閱AEM](/help/implementing/universal-editor/getting-started.md)中的[通用編輯器快速入門。
+* 如果您想要儘快啟動並執行，請參閱AEM[&#128279;](/help/implementing/universal-editor/getting-started.md)中的通用編輯器快速入門。
 * 如需有關必要OSGi設定的詳細資訊，請參閱檔案[AEM中的Universal Editor快速入門](/help/implementing/universal-editor/getting-started.md#sameorigin)。
 * 如需有關連線中繼資料的詳細資訊，請參閱檔案[AEM中的通用編輯器快速入門](/help/implementing/universal-editor/getting-started.md#connection)。
 * 如需有關通用編輯器結構的詳細資訊，請參閱檔案[通用編輯器架構](/help/implementing/universal-editor/architecture.md#service)。

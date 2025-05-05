@@ -55,7 +55,7 @@ ht-degree: 32%
 
      ![建立CSV選項](/help/sites-cloud/authoring/assets/csv-create.png)
 
-1. 從工具列中，依序選 **取「建立****CSV報表** 」以開啟精靈：
+1. 從工具列中，依序選 **取「建立**&#x200B;**CSV報表** 」以開啟精靈：
 
    ![CSV匯出選項](/help/sites-cloud/authoring/assets/csv-options.png)
 

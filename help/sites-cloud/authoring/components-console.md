@@ -26,7 +26,7 @@ ht-degree: 14%
 
 ## 搜尋 {#search-field}
 
-使用「 **僅內容****** 」圖示 (左上角)，您可以開啟「搜尋」面板以搜尋和/或篩選元件：
+使用「 **僅內容**&#x200B;**&#x200B;** 」圖示 (左上角)，您可以開啟「搜尋」面板以搜尋和/或篩選元件：
 
 ![在元件主控台中搜尋](/help/sites-cloud/authoring/assets/components-console-search.png)
 

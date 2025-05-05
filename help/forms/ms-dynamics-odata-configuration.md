@@ -36,7 +36,7 @@ ht-degree: 2%
 * MS Dynamics OData Cloud Service (OData Service)-->
 <!--* Form Data Model with preconfigured [!DNL Microsoft Dynamics] entities and services.-->
 
-<!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  MS Dynamics OData Cloud Service （OData服務）適用於所有執行模式。 如需設定[!DNL Experience Manager]執行個體的執行模式的詳細資訊，請參閱[執行模式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#runmodes)。
+&#x200B;<!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  MS Dynamics OData Cloud Service （OData服務）適用於所有執行模式。 如需設定[!DNL Experience Manager]執行個體的執行模式的詳細資訊，請參閱[執行模式](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#runmodes)。
 
 AEM as a Cloud Service提供多種立即可用的提交動作，用於處理表單提交。 您可以在[最適化表單提交動作](/help/forms/configure-submit-actions-core-components.md)文章中進一步瞭解這些選項。
 
@@ -105,6 +105,7 @@ AEM as a Cloud Service提供多種立即可用的提交動作，用於處理表�
 
    * `Client-ID`是您可以使用任何GUID產生器產生的使用者端ID。
    * `redirect-uri`是[!DNL Experience Manager Forms]上[!DNL Microsoft Dynamics] OData雲端服務的URL。 與[!DNL Experience Manager Forms]一起安裝的預設雲端服務部署在以下URL：
+
      `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
 
 1. 執行以下命令來授予AD FS電腦上的存取權：
@@ -132,7 +133,7 @@ OData服務由其服務根URL識別。 若要在[!DNL Experience Manager] as a C
    請參閱[設定雲端服務設定的資料夾](#cloud-folder)，以取得關於建立和設定雲端服務設定的資料夾的資訊。
 
 1. 選取&#x200B;**[!UICONTROL 建立]**&#x200B;以開啟&#x200B;**[!UICONTROL 建立資料Source設定精靈]**。 指定組態的名稱與標題，從&#x200B;**[!UICONTROL 服務型別]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL OData服務]**，選擇性地瀏覽並選取組態的縮圖影像，然後選取&#x200B;**[!UICONTROL 下一步]**。
-在**[!UICONTROL 驗證設定]**&#x200B;索引標籤中：
+在&#x200B;**[!UICONTROL 驗證設定]**&#x200B;索引標籤中：
 
    1. 輸入&#x200B;**[!UICONTROL 服務根]**&#x200B;欄位的值。 移至Dynamics執行個體並導覽至&#x200B;**[!UICONTROL 開發人員資源]**，以檢視[服務根目錄]欄位的值。 例如， https://&lt;tenant-name>/api/data/v9.1/
 

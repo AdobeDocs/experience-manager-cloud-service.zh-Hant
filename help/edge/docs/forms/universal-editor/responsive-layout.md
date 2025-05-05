@@ -29,7 +29,7 @@ ht-degree: 1%
 若要在回應模式中預覽表單：
 
 1. 在通用編輯器中開啟表單以進行編輯。
-2. 按一下工具列中顯示裝置預覽符號](/help/edge/docs/forms/universal-editor/assets/emulator.png){height=2%，width=2%}圖示的![模擬器圖示。
+2. 按一下工具列中顯示裝置預覽符號![&#128279;](/help/edge/docs/forms/universal-editor/assets/emulator.png){height=2%，width=2%}圖示的模擬器圖示。
 3. 選取裝置格式：
    - 案頭（預設）
    - 平板電腦

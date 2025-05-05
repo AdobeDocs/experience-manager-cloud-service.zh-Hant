@@ -298,7 +298,7 @@ ht-degree: 3%
 
 ### 從Sites Console — 多個頁面 {#from-the-sites-console-multiple-pages}
 
-從Sites **** Console中，您可以選取數個頁面，然後使用 **View Properties**  (檢視屬性) 來檢視和/或編輯頁面屬性。這稱為頁面屬性的大量編輯。
+從Sites **&#x200B;**&#x200B;Console中，您可以選取數個頁面，然後使用 **View Properties**  (檢視屬性) 來檢視和/或編輯頁面屬性。這稱為頁面屬性的大量編輯。
 
 您可以選取多個頁面以透過各種方法進行大量編輯，包括：
 

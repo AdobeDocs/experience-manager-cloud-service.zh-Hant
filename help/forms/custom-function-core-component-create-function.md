@@ -109,6 +109,7 @@ ht-degree: 5%
          #base=js
        function.js
    ```
+
 1. 在`js`資料夾中，將JavaScript檔案新增為`function.js`，其中包含自訂函式：
 
    ```javascript
@@ -133,6 +134,7 @@ ht-degree: 5%
     return age;
     }
    ```
+
 1. 儲存檔案。
 
 ![自訂函式資料夾結構](/help/forms/assets/custom-function-added-files.png)
@@ -187,11 +189,11 @@ ht-degree: 5%
 
 1. 按一下&#x200B;**[!UICONTROL 「完成」]**。
 
-您可以使用[JavaScript註解](##js-annotations)，在最適化表單](/help/forms/rule-editor-core-components.md)的[規則編輯器中使用自訂函式。
+您可以使用[JavaScript註解](##js-annotations)，在最適化表單[&#128279;](/help/forms/rule-editor-core-components.md)的規則編輯器中使用自訂函式。
 
 ## 在最適化表單中使用自訂函式
 
-在最適化表單中，您可以在規則編輯器](/help/forms/rule-editor-core-components.md)中使用[自訂函式。 讓我們將下列程式碼新增至JavaScript檔案（`Function.js`檔案），以根據出生日期計算年齡(YYYY-MM-DD)。 建立自訂函式為`calculateAge()`，它以出生日期作為輸入並傳回年齡：
+在最適化表單中，您可以在規則編輯器[&#128279;](/help/forms/rule-editor-core-components.md)中使用自訂函式。 讓我們將下列程式碼新增至JavaScript檔案（`Function.js`檔案），以根據出生日期計算年齡(YYYY-MM-DD)。 建立自訂函式為`calculateAge()`，它以出生日期作為輸入並傳回年齡：
 
 ```javascript
     /**

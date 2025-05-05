@@ -55,14 +55,14 @@ AEM Forms as a Cloud Service支援下列驗證碼解決方案：
    1. 選取&#x200B;**[!UICONTROL reCAPTCHA]**。 「組態」頁面隨即開啟。 選取您建立的組態容器，並選取&#x200B;**[!UICONTROL 建立]**。
    1. 選取版本為[!DNL reCAPTCHA Enterprise]，並指定reCAPTCHA Enterprise服務的名稱、專案ID、網站金鑰和API金鑰（在步驟2中取得）。
    1. 選取金鑰型別，金鑰型別應與您在[Google Cloud專案](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#before-you-begin)中設定的網站金鑰相同，例如，**核取方塊網站金鑰**&#x200B;或&#x200B;**以分數為基礎的網站金鑰**。
-   1. 指定0到1](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores)範圍內的[臨界值分數。 分數大於或等於臨界值分數會識別人類互動，否則會被視為機器人互動。
+   1. 指定0到1[&#128279;](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores)範圍內的臨界值分數。 分數大於或等於臨界值分數會識別人類互動，否則會被視為機器人互動。
    1. 選取&#x200B;**[!UICONTROL 建立]**&#x200B;以建立雲端服務組態。
 
 <!--
     1. In the Edit Component dialog, specify the name, project ID, site key, API key (obtained in steps 2 and 3), select the key type, and enter the threshold score. Select **[!UICONTROL Save Settings]** and then select **[!UICONTROL OK]** to complete the configuration.
 -->
 
-reCAPTCHA Enterprise服務啟用後，就可在調適型表單中使用。 請參閱在最適化表單](#using-reCAPTCHA)中使用驗證碼[。
+reCAPTCHA Enterprise服務啟用後，就可在調適型表單中使用。 請參閱在最適化表單[&#128279;](#using-reCAPTCHA)中使用驗證碼。
 
 <!--
 ![reCAPTCHA Enterprise](/help/forms/assets/recaptcha1-enterprise.png)
@@ -134,8 +134,8 @@ reCAPTCHA Enterprise服務啟用後，就可在調適型表單中使用。 請�
      >[!NOTE]
      >* 基於類似目的，您的環境中可以有多個雲端設定。 因此，請謹慎選擇服務。 如果未列出任何服務，請參閱[透過Google將您的AEM Forms環境與reCAPTCHA服務連線](#connect-your-forms-environment-with-recaptcha-service-by-google)，以瞭解如何建立將您的AEM Forms環境與Google的reCAPTCHA服務連線的Cloud Service。
 
-   * **驗證碼大小：**&#x200B;您可以選取Google reCAPTCHA挑戰對話方塊的顯示大小。 使用&#x200B;**[!UICONTROL Compact]**&#x200B;選項可顯示小尺寸，使用&#x200B;**[!UICONTROL Normal]**選項可顯示相對大尺寸的Google reCAPTCHA挑戰對話方塊。
-如果您選取**reCAPTCHA v2**&#x200B;版本：
+   * **驗證碼大小：**&#x200B;您可以選取Google reCAPTCHA挑戰對話方塊的顯示大小。 使用&#x200B;**[!UICONTROL Compact]**&#x200B;選項可顯示小尺寸，使用&#x200B;**[!UICONTROL Normal]**&#x200B;選項可顯示相對大尺寸的Google reCAPTCHA挑戰對話方塊。
+如果您選取&#x200B;**reCAPTCHA v2**&#x200B;版本：
       1. 您可以為reCAPTCHA Widget選取大小為&#x200B;**[!UICONTROL Normal]**&#x200B;或&#x200B;**[!UICONTROL Compact]**。
       1. 您可以選取&#x200B;**[!UICONTROL 隱藏]**&#x200B;選項，只在可疑活動時才顯示驗證碼質詢。
 
@@ -145,7 +145,7 @@ reCAPTCHA Enterprise服務啟用後，就可在調適型表單中使用。 請�
 
 1. 選取「**[!UICONTROL 完成]**」。
 
-   現在，您的最適化表單上會顯示受reCAPTCHA保護的&#x200B;****。 它會顯示在所有設定為可使用Google reCAPTCHA服務的最適化Forms上。
+   現在，您的最適化表單上會顯示受reCAPTCHA保護的&#x200B;**&#x200B;**。 它會顯示在所有設定為可使用Google reCAPTCHA服務的最適化Forms上。
 
    現在，僅允許提交合法表單，其中表單填寫者成功清除Google reCAPTCHA服務帶來的挑戰。
 

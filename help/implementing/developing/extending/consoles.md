@@ -27,7 +27,7 @@ Clientlib 可讓您擴充預設實作以提供新功能，同時會重複使用�
 
 覆蓋可用於多種方式，以擴充您的 AEM 主控台。以下章節會提供幾個範例。
 
-另請參閱Adobe Experience Manager as a Cloud Service](/help/implementing/developing/introduction/overlays.md)的[覆蓋。
+另請參閱Adobe Experience Manager as a Cloud Service[&#128279;](/help/implementing/developing/introduction/overlays.md)的覆蓋。
 
 >[!TIP]
 >

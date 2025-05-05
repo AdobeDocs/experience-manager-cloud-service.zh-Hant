@@ -155,7 +155,7 @@ Adobe Experience Manager (AEM) as a Cloud Service中的內容片段模型定義[
 
 選取資料夾（在左側面板中）後，您就可以直接或選取特定模型後，使用一系列動作：
 
-* 可以從主控台](#actions-unselected)直接使用各種動作[
+* 可以從主控台[&#128279;](#actions-unselected)直接使用各種動作
 * 您可以[選取一或多個內容片段模型以顯示適當的動作](#actions-selected-content-fragment)
 
 ### 動作（未選取） {#actions-unselected}
@@ -239,7 +239,7 @@ Adobe Experience Manager (AEM) as a Cloud Service中的內容片段模型定義[
    您也可以定義各種屬性：
 
    * **標題**
-如果您先輸入**Title**，則會從該標題產生&#x200B;**Name**。
+如果您先輸入&#x200B;**Title**，則會從該標題產生&#x200B;**Name**。
    * **描述**
    * **啟用模型**&#x200B;以[啟用模型](#enabling-disabling-a-content-fragment-model)
 

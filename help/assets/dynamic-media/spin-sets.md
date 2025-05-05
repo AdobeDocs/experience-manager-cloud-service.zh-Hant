@@ -92,7 +92,7 @@ ht-degree: 9%
 
 如需迴轉集支援的格式清單，請參閱[Dynamic Media — 支援的光柵影像格式](/help/assets/file-format-support.md#image-support-dynamic-media)。
 
-您可以像在Experience Manager Assets](/help/assets/manage-digital-assets.md)中[上傳任何其他資產一樣上傳迴轉集的影像。
+您可以像在Experience Manager Assets[&#128279;](/help/assets/manage-digital-assets.md)中上傳任何其他資產一樣上傳迴轉集的影像。
 
 ### 擷取迴轉集影像的准則 {#guidelines-for-shooting-spin-set-images}
 
@@ -110,7 +110,7 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->您也可以透過批次集預設集自動 [建立回轉集](/help/assets/dynamic-media/config-dm.md)。**** 重要：批集由IPS(Image Production System)建立，作為資產提取的一部分。
+>您也可以透過批次集預設集自動 [建立回轉集](/help/assets/dynamic-media/config-dm.md)。**&#x200B;** 重要：批集由IPS(Image Production System)建立，作為資產提取的一部分。
 >
 >請參閱[設定Dynamic Media](/help/assets/dynamic-media/config-dm.md)中的「建立批次集預設集以自動生成影像集和迴轉集」。
 
@@ -148,7 +148,7 @@ ht-degree: 9%
 
    選取您要納入迴轉集的資產。 選取的資產上面有核取標籤圖示。完成後，在頁面的右上角附近，選取&#x200B;**[!UICONTROL 選取]**。
 
-   使用「資產選擇器」，您可以輸入關鍵字並點選「回報」來搜尋 **[!UICONTROL 資產]**。您也可以套用篩選條件來調整搜尋結果。您可以依路徑、系列、檔案類型和標籤來篩選。選取篩選，然後在工具列上選取&#x200B;**[!UICONTROL 篩選]**&#x200B;圖示。 點選「檢視」圖示並選取「欄檢視」、「卡片檢視」或「清 **[!UICONTROL 單檢視」]**, **[!UICONTROL 以變更]**&#x200B;檢視 ****。
+   使用「資產選擇器」，您可以輸入關鍵字並點選「回報」來搜尋 **[!UICONTROL 資產]**。您也可以套用篩選條件來調整搜尋結果。您可以依路徑、系列、檔案類型和標籤來篩選。選取篩選，然後在工具列上選取&#x200B;**[!UICONTROL 篩選]**&#x200B;圖示。 點選「檢視」圖示並選取「欄檢視」、「卡片檢視」或「清 **[!UICONTROL 單檢視」]**, **[!UICONTROL 以變更]**&#x200B;檢視 **&#x200B;**。
 
    請參閱[使用選取器](/help/assets/dynamic-media/working-with-selectors.md)。
 
@@ -222,6 +222,7 @@ ht-degree: 9%
    * 若要刪除資產，請選取該資產，然後選取&#x200B;**[!UICONTROL 刪除資產]**。
    * 若要套用預設集，請選取「預設集」圖示並選取預設集。
    * 若要刪除整個迴轉集，請導覽至該迴轉集，選取它，然後選取&#x200B;**[!UICONTROL 刪除]**
+
    >[!NOTE]
    >
    >您可以導覽至迴轉集編輯影像，選取左側邊欄中的&#x200B;**[!UICONTROL 設定成員]**，然後選取個別資產上的「鉛筆」圖示以開啟編輯視窗。

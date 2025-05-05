@@ -36,7 +36,7 @@ Adobe Experience Manager as a Cloud Service使用[Sling內容發佈](https://sli
 
 ### 開啟和關閉時間 — 觸發器設定 {#on-and-off-times-trigger-configuration}
 
-**開啟時間**&#x200B;和&#x200B;**關閉時間**&#x200B;的其他可能性可從頁面屬性](/help/sites-cloud/authoring/sites-console/page-properties.md#basic)的[基本索引標籤取得。
+**開啟時間**&#x200B;和&#x200B;**關閉時間**&#x200B;的其他可能性可從頁面屬性[&#128279;](/help/sites-cloud/authoring/sites-console/page-properties.md#basic)的基本索引標籤取得。
 
 若要實現此功能的自動復寫，請在[OSGi設定](/help/implementing/deploying/configuring-osgi.md) **開啟關閉觸發程式設定**&#x200B;中啟用&#x200B;**自動復寫**：
 
@@ -193,6 +193,7 @@ Adobe Experience Manager as a Cloud Service使用[Sling內容發佈](https://sli
 ```
 21.04.2021 19:14:58.541 [cm-p123-e456-aem-author-797aaaf-wkkqt] *INFO* [JobHandler: /var/workflow/instances/server60/2021-04-20/brian-tree-replication-test-2_1:/content/wknd/us/en/adventures] com.day.cq.wcm.workflow.process.impl.ChunkedReplicator closing chunkedReplication-VolatileWorkItem_node1_var_workflow_instances_server60_2021-04-20_brian-tree-replication-test-2_1, 17 paths replicated in 2971 ms
 ```
+
 </details>
 
 ### 復寫API {#replication-api}

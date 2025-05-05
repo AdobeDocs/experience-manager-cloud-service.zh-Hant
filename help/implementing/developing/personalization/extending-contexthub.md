@@ -60,11 +60,11 @@ ContextHub.Utils.storeCandidates.registerStoreCandidate(myStoreCandidate,
                                 'contexthub.mystorecandidate', 0);
 ```
 
-在大多數情況下，只需要一個候選者，而且優先順序可以設定為`0`，但如果您有興趣，可以瞭解更多進階註冊](contexthub-api.md#registerstorecandidate-store-storetype-priority-applies)，這可讓您根據javascript條件(`applies`)和候選者優先順序，選擇少數幾個商店實作之一。[
+在大多數情況下，只需要一個候選者，而且優先順序可以設定為`0`，但如果您有興趣，可以瞭解更多進階註冊[&#128279;](contexthub-api.md#registerstorecandidate-store-storetype-priority-applies)，這可讓您根據javascript條件(`applies`)和候選者優先順序，選擇少數幾個商店實作之一。
 
 ## 建立ContextHub UI模組型別 {#creating-contexthub-ui-module-types}
 
-當與ContextHub](sample-modules.md)一起安裝的[模組不符合您的需求時，請建立自訂UI模組型別。 若要建立UI模組型別，請擴充`ContextHub.UI.BaseModuleRenderer`類別，然後向`ContextHub.UI`註冊，以建立UI模組轉譯器。
+當與ContextHub[&#128279;](sample-modules.md)一起安裝的模組不符合您的需求時，請建立自訂UI模組型別。 若要建立UI模組型別，請擴充`ContextHub.UI.BaseModuleRenderer`類別，然後向`ContextHub.UI`註冊，以建立UI模組轉譯器。
 
 若要建立UI模組轉譯器，請建立包含轉譯UI模組的邏輯的`Class`物件。 您的類別至少必須執行下列動作：
 

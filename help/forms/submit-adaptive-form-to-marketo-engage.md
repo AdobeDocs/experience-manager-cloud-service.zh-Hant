@@ -30,7 +30,7 @@ ht-degree: 4%
 
 設定提交動作以Marketo Engage的先決條件：
 
-* 設定最適化表單](/help/forms/use-marketo-engage-data-source-in-form.md)的[Marketo Engage資料來源，並將表單元素與Marketo Engage欄位繫結。
+* 設定最適化表單[&#128279;](/help/forms/use-marketo-engage-data-source-in-form.md)的Marketo Engage資料來源，並將表單元素與Marketo Engage欄位繫結。
 
 ## 如何設定提交動作以Marketo Engage現有表單？
 

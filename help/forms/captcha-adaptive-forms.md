@@ -65,14 +65,14 @@ AEM Formsas a Cloud Service支援下列CAPTCHA解決方案：
    1. 選取&#x200B;**[!UICONTROL reCAPTCHA]**。 「組態」頁面隨即開啟。 選取您建立的組態容器，並選取&#x200B;**[!UICONTROL 建立]**。
    1. 選取版本為[!DNL reCAPTCHA Enterprise]，並指定reCAPTCHA Enterprise服務的名稱、專案ID、網站金鑰和API金鑰（在步驟2中取得）。
    1. 選取金鑰型別，金鑰型別應與您在[Google Cloud專案](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#before-you-begin)中設定的網站金鑰相同，例如，**核取方塊網站金鑰**&#x200B;或&#x200B;**以分數為基礎的網站金鑰**。
-   1. 指定0到1](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores)範圍內的[臨界值分數。 分數大於或等於臨界值分數會識別人類互動，否則會被視為機器人互動。
+   1. 指定0到1[&#128279;](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores)範圍內的臨界值分數。 分數大於或等於臨界值分數會識別人類互動，否則會被視為機器人互動。
    1. 選取&#x200B;**[!UICONTROL 建立]**&#x200B;以建立雲端服務組態。
 
 <!--
     1. In the Edit Component dialog, specify the name, project ID, site key, API key (obtained in steps 2 and 3), select the key type, and enter the threshold score. Select **[!UICONTROL Save Settings]** and then select **[!UICONTROL OK]** to complete the configuration.
 -->
 
-reCAPTCHA Enterprise服務啟用後，就可在調適型表單中使用。 請參閱在最適化表單](#using-reCAPTCHA)中使用驗證碼[。
+reCAPTCHA Enterprise服務啟用後，就可在調適型表單中使用。 請參閱在最適化表單[&#128279;](#using-reCAPTCHA)中使用驗證碼。
 
 <!--
 ![reCAPTCHA Enterprise](/help/forms/assets/recaptcha1-enterprise.png)
@@ -119,7 +119,7 @@ reCAPTCHA Enterprise服務啟用後，就可在調適型表單中使用。 請�
 
 1. 選取您新增的Captcha元件，並選取![cmppr](assets/cmppr.png)以編輯其屬性。
 1. 指定驗證碼介面工具集的標題。 預設值為&#x200B;**驗證碼**。 如果您不想顯示標題，請選取&#x200B;**隱藏標題**。
-1. 從&#x200B;**Captcha服務**&#x200B;下拉式清單中，選取&#x200B;**reCAPTCHA**&#x200B;以啟用reCAPTCHA服務(若您已依照Google](#google-reCAPTCHA)的[reCAPTCHA服務說明進行設定)。
+1. 從&#x200B;**Captcha服務**&#x200B;下拉式清單中，選取&#x200B;**reCAPTCHA**&#x200B;以啟用reCAPTCHA服務(若您已依照Google[&#128279;](#google-reCAPTCHA)的reCAPTCHA服務說明進行設定)。
 1. 從「設定」下拉式清單中選取&#x200B;**reCAPTCHA Enterprise**&#x200B;或&#x200B;**reCAPTCHA v2**&#x200B;的組態
    1. 若您選取&#x200B;**reCAPTCHA Enterprise**&#x200B;版本，金鑰型別可以是&#x200B;**核取方塊**&#x200B;或&#x200B;**以分數為基礎**，其依據是您在設定網站的[網站金鑰時的選擇](https://cloud.google.com/recaptcha-enterprise/docs/create-key#create-key)：
 
@@ -207,7 +207,7 @@ reCAPTCHA Enterprise服務啟用後，就可在調適型表單中使用。 請�
    1. 您可以為reCAPTCHA Widget選取大小為&#x200B;**[!UICONTROL Normal]**&#x200B;或&#x200B;**[!UICONTROL Compact]**。
    1. 您可以選取&#x200B;**[!UICONTROL 隱藏]**&#x200B;選項，只在可疑活動時才顯示驗證碼質詢。
 
-   已針對最適化表單啟用reCAPTCHA服務。 您可以預覽表單，並檢視驗證碼是否正常運作。 受reCAPTCHA **保護的**徽章（如下所示）會顯示在受保護的表單上。
+   已針對最適化表單啟用reCAPTCHA服務。 您可以預覽表單，並檢視驗證碼是否正常運作。 受reCAPTCHA **保護的**&#x200B;徽章（如下所示）會顯示在受保護的表單上。
    ![受reCAPTCHA徽章保護的Google](/help/forms/assets/google-recaptcha-v2.png)
 
 1. 儲存屬性。

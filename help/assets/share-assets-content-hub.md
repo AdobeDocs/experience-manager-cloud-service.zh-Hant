@@ -91,7 +91,7 @@ ht-degree: 11%
 
 ## 預覽和共用資產 {#preview-assets}
 
-您可以預覽，在與連結收件者共用前，檢視您要共用的數位資產的外觀。 按一下您需要預覽的資產。 [!DNL Content Hub]會顯示資產](asset-properties-content-hub.md)的[詳細檢視。
+您可以預覽，在與連結收件者共用前，檢視您要共用的數位資產的外觀。 按一下您需要預覽的資產。 [!DNL Content Hub]會顯示資產[&#128279;](asset-properties-content-hub.md)的詳細檢視。
 
 按一下![共用圖示](assets/share.svg)圖示以共用資產。 使用&#x200B;**[!UICONTROL 到期]**&#x200B;欄位來指定連結的到期日。 選取其中一個可用選項，例如24小時、1週、30天、90天、1年或指定自訂日期。 按一下&#x200B;**[!UICONTROL 複製共用連結]**。 接著，您就可以與收件者共用複製的連結。
 

@@ -23,7 +23,7 @@ ht-degree: 1%
 
 [Commerce integration framework (CIF)](https://github.com/adobe/aem-core-cif-components)核心元件提供與[Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-overview.html?lang=en)的緊密整合，以從使用者端互動（例如&#x200B;__加入購物車__）轉送店面事件及其資料。
 
-[AEM CIF核心元件](https://github.com/adobe/aem-core-cif-components)專案為Adobe Commerce](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector)提供名為[Adobe Experience Platform connector的JavaScript資料庫，以從Commerce店面收集事件資料。 該事件資料會傳送至Experience Platform，並用於其他Adobe Experience Cloud產品(例如Adobe Analytics和Adobe Target)，以建立涵蓋客戶歷程的360度個人資料。 透過將Commerce資料連線到Adobe Experience Cloud中的其他產品，您可以執行分析您網站上的使用者行為、執行AB測試和建立個人化行銷活動等工作。
+[AEM CIF核心元件](https://github.com/adobe/aem-core-cif-components)專案為Adobe Commerce[&#128279;](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector)提供名為Adobe Experience Platform connector的JavaScript資料庫，以從Commerce店面收集事件資料。 該事件資料會傳送至Experience Platform，並用於其他Adobe Experience Cloud產品(例如Adobe Analytics和Adobe Target)，以建立涵蓋客戶歷程的360度個人資料。 透過將Commerce資料連線到Adobe Experience Cloud中的其他產品，您可以執行分析您網站上的使用者行為、執行AB測試和建立個人化行銷活動等工作。
 
 深入瞭解[Experience Platform資料收集](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html)技術套件，可讓您從使用者端來源收集客戶體驗資料。
 
@@ -329,7 +329,7 @@ npm i --save @adobe/aem-core-cif-experience-platform-connector --force
    - 使用指定的Experience Platform和/或ACDS設定來初始化它們
    - 從Peregrine訂閱所有事件並將它們轉送到SDK事件
 
-   您可以檢閱`EventCollectorContext`的實作詳細資料。 請參閱GitHub](https://github.com/adobe/aem-core-cif-components/blob/3d4e44d81fff2f398fd2376d24f7b7019f20b31b/extensions/experience-platform-connector/src/events-collector/EventCollectorContext.js)上的[aem-core-cif-components。
+   您可以檢閱`EventCollectorContext`的實作詳細資料。 請參閱GitHub[&#128279;](https://github.com/adobe/aem-core-cif-components/blob/3d4e44d81fff2f398fd2376d24f7b7019f20b31b/extensions/experience-platform-connector/src/events-collector/EventCollectorContext.js)上的aem-core-cif-components。
 
 ### 建置和部署更新的AEM專案
 
@@ -364,7 +364,7 @@ npm i --save @adobe/aem-core-cif-experience-platform-connector --force
 
 >[!TIP]
 >
->如需詳細資訊，請參閱結構描述組合](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html)的[基本概念。
+>如需詳細資訊，請參閱結構描述組合[&#128279;](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html)的基本概念。
 
 ### 建立資料集
 
@@ -460,7 +460,7 @@ npm i --save @adobe/aem-core-cif-experience-platform-connector --force
 
 ## 實作詳細資料 {#implementation-details}
 
-[CIF Experience Platform Connector](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector)建置在Adobe Commerce](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html)的[資料連線上，這是[PWA Studio](https://developer.adobe.com/commerce/pwa-studio/)專案的一部分。
+[CIF Experience Platform Connector](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector)建置在Adobe Commerce[&#128279;](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html)的資料連線上，這是[PWA Studio](https://developer.adobe.com/commerce/pwa-studio/)專案的一部分。
 
 PWA Studio專案可讓您建立由Adobe Commerce或Magento Open Source支援的Progressive Web Application (PWA)店面。 專案也包含名為[Peregrin](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/)的元件庫，用於新增邏輯至視覺元件。 [Peregrin資料庫](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/)也提供[CIF Experience Platform Connector](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector)用來與Experience Platform無縫整合的自訂React鉤點。
 

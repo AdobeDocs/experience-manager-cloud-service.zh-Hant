@@ -40,7 +40,7 @@ ht-degree: 35%
 
 * 資產微服務的中繼資料擷取已改善效能。 這可增加整體資產擷取輸送量。
 
-* 使用處理設定檔，以使用計算服務產生自訂中繼資料。 檢視使用處理設定檔](/help/assets/manage-metadata.md#metadata-compute-service)的[自訂中繼資料。
+* 使用處理設定檔，以使用計算服務產生自訂中繼資料。 檢視使用處理設定檔[&#128279;](/help/assets/manage-metadata.md#metadata-compute-service)的自訂中繼資料。
 
 * 給Brand Portal使用者更簡單的下載體驗，管理員可加以設定。 請參閱[下載體驗總覽](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html#download-configurations)。
 

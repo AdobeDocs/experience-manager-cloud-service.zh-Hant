@@ -111,7 +111,7 @@ ContextHub提供[`ContextHub.Utils.JSON.tree`](contexthub-api.md#contexthub-util
 >
 >ContextHub預設不會知道發佈伺服器上目前使用的登入，並且ContextHub會將此類使用者視為「匿名」。
 >
->您可以載入設定檔存放區，讓ContextHub知道登入的使用者。 檢視範常式式碼： GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js)上的[aem-sample-we-retail。
+>您可以載入設定檔存放區，讓ContextHub知道登入的使用者。 檢視範常式式碼： GitHub[&#128279;](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js)上的aem-sample-we-retail。
 
 ### ContextHub事件 {#contexthub-eventing}
 

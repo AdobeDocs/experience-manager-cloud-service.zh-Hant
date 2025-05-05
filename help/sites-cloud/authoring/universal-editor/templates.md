@@ -67,7 +67,7 @@ ht-degree: 26%
 
 ## 從範本建立頁面 {#creating-from-template}
 
-從範本建立可透過Universal Editor編輯的頁面，與建立任何其他頁面](/help/sites-cloud/authoring/sites-console/creating-pages.md)的工作流程相同。[
+從範本建立可透過Universal Editor編輯的頁面，與建立任何其他頁面[&#128279;](/help/sites-cloud/authoring/sites-console/creating-pages.md)的工作流程相同。
 
 1. 使用 **Sites** 主控台[導覽到您希望在其中建立新頁面的位置](/help/sites-cloud/authoring/sites-console/introduction.md#selecting-resources)。
 

@@ -94,7 +94,7 @@ Dynamic Media Viewer最佳實務是基本准則，旨在最佳化AEM上Dynamic M
 在您的頁面上僅包含主要檢視器JavaScript檔案。 避免參照檢視器的執行階段邏輯可能下載的其他JavaScript檔案。 具體而言，請勿從`/s7viewers`內容路徑(稱為整合的HTML包含)直接連結至SDK5 SDK `Utils.js`資料庫。 檢視器的邏輯會管理`Utils.js`或類似的執行階段檢視器程式庫的位置，這些程式庫可能會在發行版本之間變更。 Adobe不會保留伺服器上較舊的次要檢視器版本，因此直接參照這些版本可能會在日後的更新中破壞檢視器功能。
 * **內嵌准則：**
 使用本檔案內嵌每個檢視器特有的准則。
-想要進一步瞭解嗎？ 移至AEM Assets ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers)的[檢視器。
+想要進一步瞭解嗎？ 移至AEM Assets [&#128279;](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers)的檢視器。
 * **SDK教學課程與範例：**
 檢閱[檢視器SDK教學課程](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-tutorial)和[HTML5 SDK應用程式範例](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html)，以深入瞭解SDK元件API。
 

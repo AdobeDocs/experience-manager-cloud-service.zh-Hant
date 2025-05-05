@@ -34,7 +34,7 @@ ht-degree: 9%
    * 若要關聯衍生檔案，請從清單中選取&#x200B;**[!UICONTROL 新增衍生檔案]**。 您可以在此類別中關聯多個資產。
    * 若要在資產之間建立雙向關係，請從清單中選取&#x200B;**[!UICONTROL 新增其他]**。 您可以在此類別中關聯多個資產。
 
-1. 從&#x200B;**[!UICONTROL 選取Assets]**&#x200B;畫面中，導覽至您要建立關聯的資產位置，然後選取該資產。 您可以在按一下時按住Shift鍵，一次選取單一資產或多個資產，其中可能包括Assets檢視](/help/assets/supported-file-formats-assets-view.md)支援的任何[檔案格式。
+1. 從&#x200B;**[!UICONTROL 選取Assets]**&#x200B;畫面中，導覽至您要建立關聯的資產位置，然後選取該資產。 您可以在按一下時按住Shift鍵，一次選取單一資產或多個資產，其中可能包括Assets檢視[&#128279;](/help/assets/supported-file-formats-assets-view.md)支援的任何檔案格式。
 
    ![新增相關資產](assets/add-related-asset.png)
 

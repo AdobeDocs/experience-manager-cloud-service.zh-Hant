@@ -40,7 +40,7 @@ ht-degree: 1%
 有些OpenAPI型AEM API需要驗證，這需要使用[Adobe Developer Console](https://developer.adobe.com/developer-console/)產生認證。 設定涉及以下步驟：
 
 1. AEM as a Cloud Service環境的現代化。
-1. 使用產品設定檔](/help/onboarding/aem-cs-team-product-profiles.md#aem-product-profiles)啟用對AEM API [的存取權。
+1. 使用產品設定檔[&#128279;](/help/onboarding/aem-cs-team-product-profiles.md#aem-product-profiles)啟用對AEM API 的存取權。
 1. 建立Adobe Developer Console (ADC)專案。
 1. 設定ADC專案。 這可產生認證，稍後在叫用API時，這些認證將用於交換持有人權杖。
 1. 設定AEM執行個體以啟用ADC專案通訊。 這涉及透過設定和部署YAML檔案來向環境註冊使用者端ID，如下面的[註冊使用者端ID](#registering-a-client-id)一節所述。

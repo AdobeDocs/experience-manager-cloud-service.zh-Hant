@@ -62,7 +62,7 @@ Content Hub可讓您下載和共用資產。 Content Hub使用者介面只會顯
 
 您可以使用Content Hub下載單一或多個資產及其可用的轉譯。
 
-檢視Content Hub](#types-of-renditions)中可用的[轉譯型別。
+檢視Content Hub[&#128279;](#types-of-renditions)中可用的轉譯型別。
 
 ## 下載資產及其轉譯 {#download-asset-renditions}
 
@@ -169,7 +169,7 @@ The dialog box that displays depends on whether the download list includes expir
 
    一旦您擁有使用OpenAPI功能的Dynamic Media存取權，所有標籤為`Approved`的資產都可使用Dynamic Media進行公開傳送。
 
-1. 將資產](/help/assets/approve-assets-content-hub.md#set-approval-target)的[核准目標設定為Content Hub，僅核准Content Hub的資產。
+1. 將資產[&#128279;](/help/assets/approve-assets-content-hub.md#set-approval-target)的核准目標設定為Content Hub，僅核准Content Hub的資產。
 
 1. 啟用[組態](/help/assets/configure-content-hub-ui-options.md#access-configuration-options-content-hub)使用者介面之&#x200B;**[!UICONTROL 轉譯]**&#x200B;索引標籤中可用的&#x200B;**[!UICONTROL 啟用轉譯可用性]**&#x200B;切換。
 

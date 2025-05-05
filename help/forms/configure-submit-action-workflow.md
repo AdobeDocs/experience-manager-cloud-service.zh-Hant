@@ -53,7 +53,7 @@ Before using the **[!UICONTROL Invoke an AEM Workflow]** Submit Action configure
    傳送電子郵件的![動作設定](/help/forms/assets/configure-invoke-aem-workflow.png)
 
 1. 從&#x200B;**[!UICONTROL 工作流程模型]**&#x200B;下拉式清單中選取工作流程模型。
-1. 使用&#x200B;]**下拉式清單，從**[!UICONTROL &#x200B;儲存資料檔中選取選項。
+1. 使用&#x200B;**下拉式清單，從**&#x200B;儲存資料檔中選取選項。
 
    **資料檔案**：包含提交給最適化表單的資料。您可以使用「**[!UICONTROL 資料檔案路徑]**」選項來指定相對於承載的檔案名稱和檔案路徑。例如，`/addresschange/data.xml` 路徑會建立一個名為 `addresschange` 的資料夾，並將其置於相對於承載的位置。您也可以僅指定 `data.xml`，僅發送提交的資料而不建立資料夾階層。如果工作流程標記為外部資料儲存空間，請使用變數選項並從工作流程模型可用的變數清單中選取變數。
 

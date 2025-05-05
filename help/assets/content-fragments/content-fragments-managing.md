@@ -33,7 +33,7 @@ ht-degree: 6%
 >可以使用內容片段：
 >
 >* 編寫頁面時；請參閱[使用內容片段編寫頁面](/help/sites-cloud/authoring/fragments/content-fragments.md)。
->* 使用內容片段搭配GraphQL](/help/assets/content-fragments/content-fragments-graphql.md)的[Headless內容傳遞。
+>* 使用內容片段搭配GraphQL[&#128279;](/help/assets/content-fragments/content-fragments-graphql.md)的Headless內容傳遞。
 
 >[!NOTE]
 >
@@ -136,7 +136,7 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->其中許多是Assets](/help/assets/manage-digital-assets.md)和/或[AEM案頭應用程式](https://helpx.adobe.com/tw/experience-manager/desktop-app/aem-desktop-app.html)的[標準動作。
+>其中許多是Assets[&#128279;](/help/assets/manage-digital-assets.md)和/或[AEM案頭應用程式](https://helpx.adobe.com/tw/experience-manager/desktop-app/aem-desktop-app.html)的標準動作。
 
 ## 開啟片段編輯器 {#opening-the-fragment-editor}
 
@@ -380,7 +380,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 此檔案可存取：
 
-* 建立之後；使用Assets主控台](#actions-for-a-content-fragment-assets-console)中可用的[動作。
+* 建立之後；使用Assets主控台[&#128279;](#actions-for-a-content-fragment-assets-console)中可用的動作。
 * 從[內容片段編輯器](#toolbar-actions-in-the-content-fragment-editor)。
 
 此外，當您[發佈使用片段](/help/sites-cloud/authoring/fragments/content-fragments.md#publishing)的頁面時；片段會列在頁面參考中。

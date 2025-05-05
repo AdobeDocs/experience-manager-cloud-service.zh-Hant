@@ -41,7 +41,7 @@ ht-degree: 40%
 
 1. **擷取**：擷取指的是從&#x200B;*移轉集*&#x200B;擷取內容，並存放至目標雲端服務例項。
 
-   如需詳細資訊，請參閱內容轉移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)中的[擷取程式。
+   如需詳細資訊，請參閱內容轉移[&#128279;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)中的擷取程式。
 
 ## 移轉集的屬性 {#attributes-migration-set}
 

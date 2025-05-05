@@ -87,7 +87,7 @@ ht-degree: 76%
 
 ### 新增功能 {#what-is-new-foundation}
 
-* AEM as a Cloud Service (作者服務) 現在與 Unified Shell 整合，以改進使用者體驗，並將其與所有其他 Experience Cloud 應用程式統一。 如需詳細資訊，請參閱Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md)上的AEM as a [Cloud Service。
+* AEM as a Cloud Service (作者服務) 現在與 Unified Shell 整合，以改進使用者體驗，並將其與所有其他 Experience Cloud 應用程式統一。 如需詳細資訊，請參閱Unified Shell[&#128279;](/help/overview/aem-cloud-service-on-unified-shell.md)上的AEM as a Cloud Service。
 
 * 如先前在發行說明中所述，使用復寫代理程式管理畫面或復寫API來分發大於10 MB的內容套件（具有屬性的節點，不包括二進位檔案）現在已棄用和強制執行。 如需復寫這些大型內容套件的建議方法，請參閱[管理出版物](/help/operations/replication.md#manage-publication)或[Publish內容樹狀工作流程](/help/operations/replication.md#publish-content-tree-workflow)。
 

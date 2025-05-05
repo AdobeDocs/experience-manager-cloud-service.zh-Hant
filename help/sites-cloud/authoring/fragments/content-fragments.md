@@ -157,7 +157,7 @@ Adobe Experience Manager (AEM) as a Cloud Service中的內容片段是[建立並
 
 ### 使用關聯內容 {#using-associated-content}
 
-如果您有[與[內容片段](/help/assets/content-fragments/content-fragments.md)相關聯的內容](/help/assets/content-fragments/content-fragments-assoc-content.md)，這些資產便可從側面板使用（在您將片段放在內容頁面後）。 關聯內容實際上是[中間內容](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments)的特殊內容來源。
+如果您有[&#128279;](/help/assets/content-fragments/content-fragments-assoc-content.md)與[內容片段](/help/assets/content-fragments/content-fragments.md)相關聯的內容，這些資產便可從側面板使用（在您將片段放在內容頁面後）。 關聯內容實際上是[中間內容](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments)的特殊內容來源。
 
 >[!NOTE]
 >

@@ -72,7 +72,7 @@ ht-degree: 11%
 1. 向下捲動並按一下&#x200B;**[!UICONTROL 檢閱狀態]**。
 1. 按一下右側面板上的&#x200B;**[!UICONTROL 規則]**&#x200B;標籤。
 1. 取消勾選&#x200B;**[!UICONTROL 停用編輯]**。
-如果您需要檢視**[!UICONTROL 檢閱狀態]**&#x200B;欄位對應到的屬性，請瀏覽至&#x200B;**[!UICONTROL 設定]**&#x200B;標籤，並檢視&#x200B;**[!UICONTROL 對應到屬性]**&#x200B;欄位中的`./jcr:content/metadata/dam:status`值。
+如果您需要檢視&#x200B;**[!UICONTROL 檢閱狀態]**&#x200B;欄位對應到的屬性，請瀏覽至&#x200B;**[!UICONTROL 設定]**&#x200B;標籤，並檢視&#x200B;**[!UICONTROL 對應到屬性]**&#x200B;欄位中的`./jcr:content/metadata/dam:status`值。
 1. 將&#x200B;**[!UICONTROL 下拉式清單]**&#x200B;欄位從右側的&#x200B;**[!UICONTROL 建置表單]**&#x200B;區段拖放到表單的中繼資料區段。
 1. 按一下新新增的欄位，然後在&#x200B;**[!UICONTROL 設定]**&#x200B;面板中執行下列更新：
    1. 將&#x200B;**[!UICONTROL 欄位標籤]**&#x200B;變更為&#x200B;_核准目標_。
@@ -81,13 +81,13 @@ ht-degree: 11%
 
    >[!NOTE]
    >
-   當您使用Assets檢視選取核准目標為Content Hub時，屬於相同組織的使用者可在Content Hub中使用資產。 當您選取核准目標為傳送時，資產可供所有使用者使用。
+   >當您使用Assets檢視選取核准目標為Content Hub時，屬於相同組織的使用者可在Content Hub中使用資產。 當您選取核准目標為傳送時，資產可供所有使用者使用。
 
 1. 按一下「**[!UICONTROL 儲存]**」。
 
 >[!NOTE]
 >
-如果您的資產或資料夾具有不同的預設結構描述，請務必在該特定結構描述中進行此更新。
+>如果您的資產或資料夾具有不同的預設結構描述，請務必在該特定結構描述中進行此更新。
 
 ## 核准資產 {#approve-assets}
 
@@ -112,7 +112,7 @@ ht-degree: 11%
 1. 導覽至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 中繼資料設定檔]**。
 1. 按一下頁面右上方的&#x200B;**[!UICONTROL 「建立]**」。
 1. 新增設定檔標題並按一下&#x200B;**[!UICONTROL 建立]**。 已成功建立中繼資料設定檔。
-1. 選取新建立的中繼資料設定檔，然後按一下&#x200B;**[!UICONTROL 編輯&#x200B;_(e)_]**。 <br>會開啟&#x200B;**[!UICONTROL 編輯中繼資料設定檔]**表單，並反白顯示&#x200B;**[!UICONTROL 基本]**索引標籤。
+1. 選取新建立的中繼資料設定檔，然後按一下&#x200B;**[!UICONTROL 編輯&#x200B;_(e)_]**。 <br>會開啟&#x200B;**[!UICONTROL 編輯中繼資料設定檔]**&#x200B;表單，並反白顯示&#x200B;**[!UICONTROL 基本]**&#x200B;索引標籤。
 1. 將&#x200B;**[!UICONTROL 單行文字欄位]**&#x200B;從右側的&#x200B;**[!UICONTROL 建置表單]**&#x200B;區段拖放到表單的中繼資料區段。
 1. 按一下新新增的欄位，然後在&#x200B;**[!UICONTROL 設定]**&#x200B;面板中執行下列更新：
    1. 將&#x200B;**[!UICONTROL 欄位標籤]**&#x200B;變更為&#x200B;_已核准的Assets_。
@@ -127,18 +127,18 @@ ht-degree: 11%
 
    >[!NOTE]
    >
-   當您使用Assets檢視選取核准目標為Content Hub時，屬於相同組織的使用者可在Content Hub中使用資產。 當您選取核准目標為傳送時，資產可供所有使用者使用。
+   >當您使用Assets檢視選取核准目標為Content Hub時，屬於相同組織的使用者可在Content Hub中使用資產。 當您選取核准目標為傳送時，資產可供所有使用者使用。
 1. 按一下「**[!UICONTROL 儲存]**」。
 1. 在&#x200B;**[!UICONTROL 中繼資料設定檔]**&#x200B;頁面中，選取新建立的中繼資料設定檔。
 1. 按一下頂端動作列中的&#x200B;**[!UICONTROL 套用中繼資料設定檔至資料夾]**。
-1. 選取您需要核准的資料夾，然後按一下[套用]。****
+1. 選取您需要核准的資料夾，然後按一下[套用]。**&#x200B;**
    <br>整個資料夾的許可權已設定為待核准，且任何上傳至此資料夾的資產都會自動核准。
 
    >[!VIDEO](https://video.tv.adobe.com/v/3427431)
 
 >[!NOTE]
 > 
-此方法會核准資料夾中新建立的資產。 針對資料夾中的現有資產，您需要手動選取並核准它們。 <br>或者，您可以使用&#x200B;**[!UICONTROL 重新處理]**&#x200B;選項，將中繼資料設定檔的變更套用至較舊的資產。
+>此方法會核准資料夾中新建立的資產。 針對資料夾中的現有資產，您需要手動選取並核准它們。 <br>或者，您可以使用&#x200B;**[!UICONTROL 重新處理]**&#x200B;選項，將中繼資料設定檔的變更套用至較舊的資產。
 
 同樣地，若要在Assets檢視中大量核准資料夾內的資產：
 
@@ -157,7 +157,7 @@ ht-degree: 11%
 
    >[!NOTE]
    >
-   如果您使用組織內的Assets檢視選取核准目標為`Content Hub`，則屬於相同組織的使用者可在Content Hub中使用資產。
+   >如果您使用組織內的Assets檢視選取核准目標為`Content Hub`，則屬於相同組織的使用者可在Content Hub中使用資產。
 
 1. 按一下「**[!UICONTROL 儲存]**」。
 
@@ -173,11 +173,11 @@ ht-degree: 11%
 
 1. 選取&#x200B;**[!UICONTROL Dynamic Media]**&#x200B;面板中可用的&#x200B;**[!UICONTROL Dynamic Media with OpenAPI]**。
 
-1. 按一下&#x200B;**[!UICONTROL 複製URL]**以複製資產的傳遞URL。
+1. 按一下&#x200B;**[!UICONTROL 複製URL]**&#x200B;以複製資產的傳遞URL。
    ![動態轉譯](/help/assets/assets/dm-with-openapi-non-image-assets.png)
 
    >[!NOTE]
    >
-   在Assets檢視中，剛提供複製已核准資產之傳送URL的選項。
+   >在Assets檢視中，剛提供複製已核准資產之傳送URL的選項。
 
 如需Dynamic Media面板中顯示之其他轉譯的相關資訊，請參閱[檢視及下載Dynamic Media轉譯](/help/assets/renditions.md#view-download-dm-renditions)。

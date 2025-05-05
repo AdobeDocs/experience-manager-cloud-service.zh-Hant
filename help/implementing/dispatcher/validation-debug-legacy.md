@@ -245,7 +245,7 @@ Phase 3 finished
 
 **包含的檔案(...)必須命名為： ...**
 
-您的伺服器陣列設定中有兩個區段，**必須**包含一個
+您的伺服器陣列設定中有兩個區段，**必須**&#x200B;包含一個
 特定檔案： `/cache`區段中的`/renders`和`/allowedClients`。 這些
 區段必須如下所示：
 
@@ -318,7 +318,7 @@ Apache虛擬主機設定中有兩種型別的檔案可指定為包含：重寫�
 >
 >為了能夠以更少限制的方式包含更多檔案，您可能會想要切換為彈性的Dispatcher設定模式。 如需有關彈性模式的詳細資訊，請參閱[使用Dispatcher工具進行驗證和偵錯](/help/implementing/dispatcher/validation-debug.md)。
 
-或者，您也可以包含名稱為`conf.d/rewrites/default_rewrite.rules`的&#x200B;**預設**版本重寫規則。
+或者，您也可以包含名稱為`conf.d/rewrites/default_rewrite.rules`的&#x200B;**預設**&#x200B;版本重寫規則。
 請注意，變數檔案沒有預設版本。
 
 **偵測到已棄用的組態配置，正在啟用相容性模式**

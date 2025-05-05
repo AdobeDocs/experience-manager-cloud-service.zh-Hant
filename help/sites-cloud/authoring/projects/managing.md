@@ -34,10 +34,10 @@ AEM提供這些立即可用的範本，供您在建立專案時選擇：
 * Product Photo Shoot Project 
 -->
 
-從專案到專案，建立專案的程式都相同。專案類型之間的差異包括可用的使 [用者角色](/help/sites-cloud/authoring/projects/overview.md)[和工作流程](/help/sites-cloud/authoring/projects/workflows.md)。若要建立專案：
+從專案到專案，建立專案的程式都相同。專案類型之間的差異包括可用的使 [用者角色](/help/sites-cloud/authoring/projects/overview.md) [和工作流程](/help/sites-cloud/authoring/projects/workflows.md)。若要建立專案：
 
 1. 在&#x200B;**專案**&#x200B;中，選取&#x200B;**建立**&#x200B;以開啟&#x200B;**建立專案**&#x200B;精靈：
-1. 選取範本並按一下[下一步] ****。
+1. 選取範本並按一下[下一步] **&#x200B;**。
 
    ![正在建立專案](/help/sites-cloud/authoring/assets/projects-create.png)
 
@@ -138,7 +138,7 @@ AEM提供這些立即可用的範本，供您在建立專案時選擇：
 
    >[!NOTE]
    >
-   如果您的專案中尚未包含此圖磚，您可能需要新增此圖磚。 請參閱[新增圖磚](#adding-items-to-a-tile)。
+   >如果您的專案中尚未包含此圖磚，您可能需要新增此圖磚。 請參閱[新增圖磚](#adding-items-to-a-tile)。
 
 1. 選取&#x200B;**編輯**。
 1. 將選取器從&#x200B;**作用中**&#x200B;變更為&#x200B;**非作用中** （反之亦然）。

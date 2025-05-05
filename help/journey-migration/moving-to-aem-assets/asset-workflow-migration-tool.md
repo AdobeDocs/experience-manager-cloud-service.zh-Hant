@@ -31,7 +31,7 @@ ht-degree: 30%
 * `UNNECESSARY`： [!DNL Experience Manager Assets]as a Cloud Service中不需要功能。
 * `NUI_OOTB`： [Asset compute服務](/help/assets/asset-microservices-configure-and-use.md)所提供的功能。
 * `DMS7_OOTB`：預設[!DNL Dynamic Media]聯結器所提供的功能。
-* `NUI_MIGRATED`：已移轉至Asset compute服務](/help/assets/asset-microservices-configure-and-use.md)的[處理設定檔。
+* `NUI_MIGRATED`：已移轉至Asset compute服務[&#128279;](/help/assets/asset-microservices-configure-and-use.md)的處理設定檔。
 * `UNSUPPORTED`： [!DNL Experience Manager Assets]as a Cloud Service目前不支援。
 
 ## 使用資產工作流程移轉工具 {#use-workflow-migrator}

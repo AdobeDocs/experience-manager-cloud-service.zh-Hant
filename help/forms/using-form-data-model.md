@@ -163,7 +163,7 @@ Edit Properties dialog for an interactive communication-->
 
 ### 使用自訂函式叫用表單資料模型(FDM) {#invoke-form-data-model-using-custom-functions}
 
-您可以使用自訂函式](/help/forms/rule-editor.md#custom-functions-in-rule-editor-custom-functions)，從規則編輯器[叫用表單資料模型。 若要叫用表單資料模型(FDM)，請將表單資料模型新增至允許清單。 若要將表單資料模型新增至允許清單：
+您可以使用自訂函式[&#128279;](/help/forms/rule-editor.md#custom-functions-in-rule-editor-custom-functions)，從規則編輯器叫用表單資料模型。 若要叫用表單資料模型(FDM)，請將表單資料模型新增至允許清單。 若要將表單資料模型新增至允許清單：
 
 1. 前往`https://server:host/system/console/configMgr`的Experience Manager Web主控台。
 1. 尋找&#x200B;**[!UICONTROL 用於服務引動的最適化表單層級白名單 — 組態處理站]**。

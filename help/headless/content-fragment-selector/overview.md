@@ -94,7 +94,7 @@ ht-degree: 11%
 
 ![內容片段選擇器](/help/headless/assets/content-fragment-repository-selector.png)
 
-下拉清單中可用的存放庫選項是根據`repositoryId``index.html`檔案中定義的屬性。此屬性以目前登入之使用者存取之所選IMS組織的環境為基礎。
+下拉清單中可用的存放庫選項是根據`repositoryId` `index.html`檔案中定義的屬性。此屬性以目前登入之使用者存取之所選IMS組織的環境為基礎。
 
 消費者可以傳遞偏好的`repositoryID`以從特定存放庫轉譯片段，並停止轉譯存放庫切換器。
 

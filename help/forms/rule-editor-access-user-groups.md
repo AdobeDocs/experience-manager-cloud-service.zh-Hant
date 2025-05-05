@@ -29,7 +29,7 @@ ht-degree: 2%
 
    ![1-2](assets/1-2.png)
 
-1. 在[!UICONTROL 網頁主控台]視窗中，找到並按一下&#x200B;**[!UICONTROL 最適化表單設定服務]**。 **[!UICONTROL 最適化表單設定服務]**&#x200B;對話方塊就會顯示。 不要變更任何值，然後按一下[儲存]。****
+1. 在[!UICONTROL 網頁主控台]視窗中，找到並按一下&#x200B;**[!UICONTROL 最適化表單設定服務]**。 **[!UICONTROL 最適化表單設定服務]**&#x200B;對話方塊就會顯示。 不要變更任何值，然後按一下[儲存]。**&#x200B;**
 
    它會在CRX-repository中建立檔案`/apps/system/config/com.adobe.aemds.guide.service.impl.AdaptiveFormConfigurationServiceImpl.config`。
 

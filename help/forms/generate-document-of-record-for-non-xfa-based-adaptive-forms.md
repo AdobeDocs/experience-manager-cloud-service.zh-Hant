@@ -320,7 +320,7 @@ When you select a form model, configure Document of Record using options availab
 
 1. 選取&#x200B;**[!UICONTROL Forms — 記錄檔案]**&#x200B;類別。
 1. 選取&#x200B;**[!UICONTROL DoR基底範本]**。
-1. 按一下[下一步]****&#x200B;並提供必要的資訊。
+1. 按一下[下一步]&#x200B;**&#x200B;**&#x200B;並提供必要的資訊。
 
 1. （選擇性）修改您要在記錄檔案中欄位上套用的欄位樣式和外觀。
 1. 儲存表單。
@@ -450,7 +450,7 @@ When you select a form model, configure Document of Record using options availab
 **表單層級設定**
 
 * **包含未繫結欄位於DoR：**&#x200B;設定屬性包含記錄檔案中結構描述型最適化表單的未繫結欄位。 預設為true。
-* **若隱藏則從DoR排除欄位：**&#x200B;設定屬性以在提交表單時從記錄檔案中排除隱藏欄位。 當您在伺服器](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form)上啟用[重新驗證時，伺服器會先重新計算隱藏的欄位，然後再將這些欄位從記錄檔案中排除。
+* **若隱藏則從DoR排除欄位：**&#x200B;設定屬性以在提交表單時從記錄檔案中排除隱藏欄位。 當您在伺服器[&#128279;](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form)上啟用重新驗證時，伺服器會先重新計算隱藏的欄位，然後再將這些欄位從記錄檔案中排除。
 
 ## 使用自訂XCI檔案
 

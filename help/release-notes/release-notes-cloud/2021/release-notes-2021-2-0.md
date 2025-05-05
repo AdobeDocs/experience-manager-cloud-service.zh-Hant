@@ -59,7 +59,7 @@ ht-degree: 31%
 
 * [!DNL Experience Manager Assets] as a [!DNL Cloud Service]有權擁有預先設定的[!DNL Brand Portal]執行個體。 [!DNL Cloud Manager]使用者可以在[!DNL Experience Manager Assets]啟動[!DNL Brand Portal]做為[!DNL Cloud Service]。 請參閱[啟用Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html)。
 
-* 企業現在可以使用[!DNL Brand Portal]來取得資產。 資產來源功能使用[!DNL Brand Portal]來協助客戶與機構使用者互動，以獲取資產用於新的行銷活動、攝影和專案。 請參閱 [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=zh-Hant)中的[資產來源。
+* 企業現在可以使用[!DNL Brand Portal]來取得資產。 資產來源功能使用[!DNL Brand Portal]來協助客戶與機構使用者互動，以獲取資產用於新的行銷活動、攝影和專案。 請參閱 [!DNL Brand Portal][&#128279;](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=zh-Hant)中的資產來源。
 
 * [!DNL Brand Portal]使用報告現在只會顯示作用中的使用者。 現在不會顯示非作用中的使用者。 作用中的使用者是指已在[!DNL Admin Console]中將其帳戶指派給產品設定檔的使用者。 檢視[[!DNL Brand Portal] 報告](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/admin-tools/brand-portal-reports.html)。
 

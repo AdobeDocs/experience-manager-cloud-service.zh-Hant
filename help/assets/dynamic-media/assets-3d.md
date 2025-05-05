@@ -25,7 +25,7 @@ Dynamic Media可讓您上傳、管理、檢視及傳送3D資產，盡享沈浸�
 
 在Dynamic Media中使用3D資產無需額外安裝。
 
-3d](/help/assets/dynamic-media/assets/3d-dimensional-viewer-quickpublish-url-embed2a.png)中的![鞋
+3d![&#128279;](/help/assets/dynamic-media/assets/3d-dimensional-viewer-quickpublish-url-embed2a.png)中的鞋
 
 <!-- See also [Dynamic Media 3D Release Notes](/help/release-notes/aem3d-release-notes.md). -->
 
@@ -143,8 +143,8 @@ Dynamic Media支援下列3D檔案格式。
    * 在頁面右上角附近，按一下&#x200B;**[!UICONTROL 預覽]**&#x200B;以進入&#x200B;**[!UICONTROL 預覽]**&#x200B;模式。
    * 從瀏覽器中的頁面URL刪除`/editor.html`。
 
-   顯示3D媒體元件](/help/assets/dynamic-media/assets/3d-asset-in-3d-mediaa.png)內的![3D資產
-以**[!UICONTROL 預覽]**&#x200B;模式顯示的完全互動式3D資產。
+   顯示3D媒體元件![&#128279;](/help/assets/dynamic-media/assets/3d-asset-in-3d-mediaa.png)內的3D資產
+以&#x200B;**[!UICONTROL 預覽]**&#x200B;模式顯示的完全互動式3D資產。
 
 1. 在&#x200B;**[!UICONTROL 預覽]**&#x200B;模式中時，請執行下列任一項動作：
 
@@ -241,7 +241,7 @@ Dynamic Media接受Dynamic Media支援的各種3D檔案格式為&#x200B;*靜態�
 
 另請參閱[取得靜態資產的URL](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-a-static-asset)。
 
-在&#x200B;**[!UICONTROL 卡片檢視]**&#x200B;中，資產名稱正下方及其日期和時間左側會顯示一個小型全球圖示，以指出資產已發佈。 在「清 **[!UICONTROL 單檢視]**」中，「已發佈」 **** 欄會指出已發佈或未發佈的資產。
+在&#x200B;**[!UICONTROL 卡片檢視]**&#x200B;中，資產名稱正下方及其日期和時間左側會顯示一個小型全球圖示，以指出資產已發佈。 在「清 **[!UICONTROL 單檢視]**」中，「已發佈」 **&#x200B;**&#x200B;欄會指出已發佈或未發佈的資產。
 
 如果您使用[!DNL Experience Manager]做為WCM，請使用此發佈方法直接在網頁上新增Dynamic Media 3D資產。
 

@@ -31,7 +31,7 @@ ht-degree: 2%
 2. 選取&#x200B;**Adobe Analytics**。
    ![Adobe Analytics視窗](assets/analytics_screen2.png "Adobe Analytics視窗")
 3. 選取&#x200B;**建立**&#x200B;按鈕。
-4. 填寫詳細資料（請參閱下文），然後按一下[連線]。****。
+4. 填寫詳細資料（請參閱下文），然後按一下[連線]。**&#x200B;**。
 
 ### 設定引數 {#configuration-parameters}
 

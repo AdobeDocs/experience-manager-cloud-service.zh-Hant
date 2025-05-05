@@ -677,7 +677,7 @@ ContextHub.Utils.Cookie.setItem("name", "mycookie", {
 
 ##### 參數 {#parameters-off}
 
-* **`name`：**&#x200B;您要解除繫結函式的事件](#contexthub-utils-eventing)的[名稱。
+* **`name`：**&#x200B;您要解除繫結函式的事件[&#128279;](#contexthub-utils-eventing)的名稱。
 * **`selector`：**&#x200B;識別繫結的選擇器。 （請參閱[`on`](#on-name-handler-selector-triggerforpastevents)和[`once`](#once-name-handler-selector-triggerforpastevents)函式的`selector`引數）。
 
 ##### 傳回 {#returns-off}
@@ -690,7 +690,7 @@ ContextHub.Utils.Cookie.setItem("name", "mycookie", {
 
 ##### 參數 {#parameters-on}
 
-* **`name`：** （字串）您要繫結函式的事件](#contexthub-utils-eventing)的[名稱。
+* **`name`：** （字串）您要繫結函式的事件[&#128279;](#contexthub-utils-eventing)的名稱。
 * **`handler`：** （函式）要繫結至事件的函式。
 * **`selector`：** （字串）繫結的唯一識別碼。 如果要使用`off`函式移除繫結，則需要選取器識別繫結。
 * **`triggerForPastEvents`：** （布林值）指出是否應針對過去發生的事件執行處理常式。 `true`的值會呼叫過去事件的處理常式。 `false`的值會呼叫未來事件的處理常式。 預設值為 `true`。
@@ -730,7 +730,7 @@ ContextHub.Utils.Cookie.setItem("name", "mycookie", {
 
 ##### 參數 {#parameters-once}
 
-* **`name`：** （字串）您要繫結函式的事件](#contexthub-utils-eventing)的[名稱。
+* **`name`：** （字串）您要繫結函式的事件[&#128279;](#contexthub-utils-eventing)的名稱。
 * **`handler`：** （函式）要繫結至事件的函式。
 * **`selector`：** （字串）繫結的唯一識別碼。 如果要使用`off`函式移除繫結，則需要選取器識別繫結。
 * **`triggerForPastEvents`：** （布林值）指出是否應針對過去發生的事件執行處理常式。 `true`的值會呼叫過去事件的處理常式。 `false`的值會呼叫未來事件的處理常式。 預設值為 `true`。

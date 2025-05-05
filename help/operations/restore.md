@@ -31,7 +31,7 @@ Cloud Manager 提供兩種型別的備份，您可以從中還原內容。
 
 >[!TIP]
 >
->也可以使用公用API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)還原備份[。
+>也可以使用公用API[&#128279;](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)還原備份。
 
 >[!WARNING]
 >

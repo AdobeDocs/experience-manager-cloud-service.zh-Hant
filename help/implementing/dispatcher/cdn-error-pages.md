@@ -47,6 +47,7 @@ data:
       cssUrl: https://www.example.com/error.css
       jsUrl: https://www.example.com/error.js
 ```
+
 請參閱[使用設定管道](/help/operations/config-pipeline.md#common-syntax)，以取得資料節點上方屬性的說明。 kind屬性值應該是&#x200B;*CDN*，且`version`屬性應該設定為&#x200B;*1*。
 
 

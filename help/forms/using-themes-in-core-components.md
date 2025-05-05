@@ -114,7 +114,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
       git clone [Path of Git Repository of the theme]
    ```
 
-   將主題]的Git存放庫的[路徑取代為主題對應的Git存放庫的實際URL
+   將主題&rbrack;的Git存放庫的&lbrack;路徑取代為主題對應的Git存放庫的實際URL
 
    例如，若要複製畫布主題，請執行下列命令：
 
@@ -380,7 +380,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 1. 根據Cloud Service環境選取&#x200B;**[!UICONTROL 新增非生產管道]**&#x200B;或&#x200B;**[!UICONTROL 新增生產管道]**。 例如，此處已選取&#x200B;**[!UICONTROL 新增生產管道]**&#x200B;選項。
 1. 在&#x200B;**[!UICONTROL 新增生產管道]**&#x200B;對話方塊中，作為&#x200B;**[!UICONTROL 設定]**&#x200B;步驟的一部分，請指定管道的名稱。 例如，管道的名稱為`customcanvastheme`。
 1. 按一下「**[!UICONTROL 繼續]**」。
-1. 選取&#x200B;**[!UICONTROL 目標部署]** > **[!UICONTROL 前端計畫碼]**選項，在
+1. 選取&#x200B;**[!UICONTROL 目標部署]** > **[!UICONTROL 前端計畫碼]**&#x200B;選項，在
 **[!UICONTROL Source程式碼]**&#x200B;步驟。
 1. 選取包含您最新變更的&#x200B;**[!UICONTROL 存放庫]**&#x200B;和&#x200B;**[!UICONTROL Git分支]**&#x200B;值。 例如，此處選取的存放庫名稱為`custom-canvas-theme-repo`，而Git分支為`main`。
 1. 如果您的變更出現在根資料夾中，請選取&#x200B;**[!UICONTROL 程式碼位置]**&#x200B;作為`/`。
@@ -396,7 +396,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 建置完成後，主題即可在製作例項上使用。 建立最適化表單時，它出現在最適化表單建立精靈的&#x200B;**[!UICONTROL 樣式]**&#x200B;標籤下。
 
-樣式標籤](/help/forms/assets/custom-theme-style-tab.png)下有![個可用的自訂主題
+樣式標籤![&#128279;](/help/forms/assets/custom-theme-style-tab.png)下有個可用的自訂主題
 
 自訂主題有助於建立核心元件型Adaptive Forms的品牌體驗。
 

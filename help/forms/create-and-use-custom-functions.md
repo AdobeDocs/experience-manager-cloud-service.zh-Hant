@@ -168,6 +168,7 @@ JavaScript註解是用來提供JavaScript程式碼的中繼資料。 其中包�
             // code to be executed
         }
 ```
+
 如果使用者未將任何JavaScript註解新增至自訂函式，則會依函式名稱在規則編輯器中列出。 不過，建議您加入JavaScript註解，以提升自訂函式的可讀性。
 
 ### 箭頭功能與強制JavaScript註解或註解

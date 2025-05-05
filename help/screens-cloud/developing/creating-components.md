@@ -44,4 +44,4 @@ AEM元件可用來保留、格式化及轉譯可在網頁上使用的內容。
 
 >[!NOTE]
 >
->若要開發自訂元件，請使用***[AEM Screens範例元件範本](https://github.com/Adobe-Marketing-Cloud/aem-screens-component-template)***。
+>若要開發自訂元件，請使用&#x200B;***[AEM Screens範例元件範本](https://github.com/Adobe-Marketing-Cloud/aem-screens-component-template)***。

@@ -62,7 +62,7 @@ SPA應該僅依賴內容的動態呈現。 此預期是AEM擷取並轉譯內容�
 
 ## SPA設計模型 {#spa-design-models}
 
-如果遵循AEM](#spa-development-principles-for-aem)中開發SPA的[原則，則您的SPA可運作所有支援的AEM內容製作功能。
+如果遵循AEM[&#128279;](#spa-development-principles-for-aem)中開發SPA的原則，則您的SPA可運作所有支援的AEM內容製作功能。
 
 但是，在某些情況下，此功能並非完全必要。 下表概述各種設計模型、其優點和缺點。
 
@@ -97,7 +97,7 @@ SPA應該僅依賴內容的動態呈現。 此預期是AEM擷取並轉譯內容�
 
 ## 將現有SPA移轉至AEM {#migrating-existing-spas-to-aem}
 
-一般而言，如果您的SPA遵循AEM](#spa-development-principles-for-aem)的[SPA開發原則，則您的SPA可在AEM中運作，並可使用AEM SPA編輯器進行編輯。
+一般而言，如果您的SPA遵循AEM[&#128279;](#spa-development-principles-for-aem)的SPA開發原則，則您的SPA可在AEM中運作，並可使用AEM SPA編輯器進行編輯。
 
 請依照下列步驟操作，讓現有的SPA準備好搭配AEM使用。
 

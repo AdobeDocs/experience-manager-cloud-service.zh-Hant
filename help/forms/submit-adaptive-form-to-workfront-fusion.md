@@ -102,7 +102,7 @@ AEM Formsas a Cloud Service提供OOTB聯結器，用於連線並將最適化表�
    >
    > 執行個體URL是指向特定AEM Forms執行個體的唯一網址。
 
-   您可以從建立連線所需的開發人員主控台](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html)擷取[服務認證。
+   您可以從建立連線所需的開發人員主控台[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html)擷取服務認證。
 
 1. 從開發人員主控台中的服務認證中，將&#x200B;**IMS端點**&#x200B;中的`ims-na1.adobelogin.com`取代為&#x200B;**imsEndpoint**&#x200B;的值。
 

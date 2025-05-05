@@ -82,7 +82,7 @@ ht-degree: 3%
 
       * **[!UICONTROL 中繼資料]：**&#x200B;當您想要擷取所選資產的中繼資料資訊和智慧標籤時，請選擇此選項。
 
-      * **[!UICONTROL 處理設定檔]：**&#x200B;當您要重新處理選取的設定檔時，請選擇此選項。 您可以選擇&#x200B;**[!UICONTROL 完整處理序]**選項，以包含預設處理以及在資料夾層級指派的自訂設定檔。
+      * **[!UICONTROL 處理設定檔]：**&#x200B;當您要重新處理選取的設定檔時，請選擇此選項。 您可以選擇&#x200B;**[!UICONTROL 完整處理序]**&#x200B;選項，以包含預設處理以及在資料夾層級指派的自訂設定檔。
         <!--When assets are uploaded to a folder, [!DNL Assets ~~view~~] checks the containing folder's properties for a processing profile. If none is applied, a parent folder in the hierarchy is checked for a processing profile to apply.-->
 
       * **[!UICONTROL 後續處理工作流程]：**&#x200B;如果必須使用處理設定檔才能完成額外的資產處理，請選擇此選項。 可以將其他後處理工作流程新增到設定。 後處理可讓您在使用資產微服務的可設定處理之上新增完全自訂處理。
@@ -103,7 +103,7 @@ ht-degree: 3%
 
 相較於自然語言辭彙，根據商業分類法標籤數位資產有助於讓其與公司的業務保持一致，並確保最相關的資產出現在搜尋中。
 
-深入瞭解視訊資產](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/smart-tags-video-assets.html?lang=en)的[智慧標籤。
+深入瞭解視訊資產[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/smart-tags-video-assets.html?lang=en)的智慧標籤。
 
 深入瞭解[重新處理DAM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en#color-tags-existing-images)中現有影像的顏色標籤。
 

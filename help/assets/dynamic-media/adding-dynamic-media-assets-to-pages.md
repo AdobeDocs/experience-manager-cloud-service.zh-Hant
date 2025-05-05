@@ -16,7 +16,7 @@ ht-degree: 5%
 
 若要將動態媒體功能新增至您在網站上使用的資產，您可以直接在頁面上新增&#x200B;**動態媒體**、**互動媒體**、**全景媒體**&#x200B;或&#x200B;**Video 360 Media**&#x200B;元件。 您進入「版面」模式並啟用「動態媒體」元件。 然後，將這些元件新增至頁面，並新增資產至元件。 動態媒體元件是智慧型的——他們知道您是新增影像還是視訊，而可用的設定選項也會隨之變更。
 
-如果您使用[!DNL Adobe Experience Manager]做為WCM，請直接將Dynamic Media資產新增至頁面。 如果您使用協力廠商來處理WCM，請連結 [或](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)[內嵌資](/help/assets/dynamic-media/embed-code.md) 產。如需回應式協力廠商網站，請參閱[將最佳化的影像傳送至回應式網站](/help/assets/dynamic-media/responsive-site.md)。
+如果您使用[!DNL Adobe Experience Manager]做為WCM，請直接將Dynamic Media資產新增至頁面。 如果您使用協力廠商來處理WCM，請連結 [或](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) [內嵌資](/help/assets/dynamic-media/embed-code.md) 產。如需回應式協力廠商網站，請參閱[將最佳化的影像傳送至回應式網站](/help/assets/dynamic-media/responsive-site.md)。
 
 >[!NOTE]
 >
@@ -141,7 +141,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->依預設，動態媒體影像元件是可調式的。如果要使其成為固定大小，請在「高級」( **[!UICONTROL Advanced]** )頁籤的元件中使用「寬度」( **[!UICONTROL Width)和「高度」(Height]** )設定它 ****。
+>依預設，動態媒體影像元件是可調式的。如果要使其成為固定大小，請在「高級」( **[!UICONTROL Advanced]** )頁籤的元件中使用「寬度」( **[!UICONTROL Width)和「高度」(Height]** )設定它 **&#x200B;**。
 
 * **[!UICONTROL 檢視器預設集]** — 從下拉式清單中選取現有的檢視器預設集。 如果您要尋找的檢視器預設集未顯示，您必須讓它顯示。 請參閱管理檢視器預設集。 如果您使用影像預設集，則無法選取檢視器預設集，反之亦然。
 
@@ -231,7 +231,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->依預設，動態媒體影像元件是可調式的。如果要使其成為固定大小，請在「高級」( **[!UICONTROL Advanced]** )頁籤的元件中使用「寬度」( **[!UICONTROL Width)和「高度」(Height]** )設定它 ****。
+>依預設，動態媒體影像元件是可調式的。如果要使其成為固定大小，請在「高級」( **[!UICONTROL Advanced]** )頁籤的元件中使用「寬度」( **[!UICONTROL Width)和「高度」(Height]** )設定它 **&#x200B;**。
 
 * **[!UICONTROL 影像修飾元]** — 您可以提供更多影像命令來套用影像效果。 這些命令在「影像預設集」和「影像伺服命令」參考中進行了說明。
 
@@ -311,7 +311,7 @@ ht-degree: 5%
 * 外觀比例為2:1。
 * 以關鍵字`equirectangular`或(`spherical` + `panorama`)或(`spherical` + `panoramic`)標籤。 請參閱[使用標籤](/help/sites-cloud/authoring/sites-console/tags.md)。
 
-外觀比例和關鍵字條件都適用於資產詳細資料頁面和全景媒體 **** WCM元件的全景資產。
+外觀比例和關鍵字條件都適用於資產詳細資料頁面和全景媒體 **&#x200B;**&#x200B;WCM元件的全景資產。
 
 >[!NOTE]
 >

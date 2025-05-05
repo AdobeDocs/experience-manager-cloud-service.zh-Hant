@@ -62,7 +62,7 @@ URL紅色的第一部分是參照伺服器網域本身。 在此案例中，Dyna
 請注意，已產生新的手錶轉譯。 要瞭解這項變更影像寬度簡易練習，關鍵是要注意，看到的影像是100%以動態方式產生。
 
 現在將`500`畫素的寬度值變更為`1000`畫素，然後按&#x200B;**[!UICONTROL Enter]**。 [試用](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000){target="_blank}。
-當您按下**[!UICONTROL Enter]**&#x200B;時，瀏覽器會回到Dynamic Media影像伺服器。 它會根據您剛輸入的新寬度值，產生全新的手錶轉譯，然後將新影像傳回瀏覽器，並加以快取。
+當您按下&#x200B;**[!UICONTROL Enter]**&#x200B;時，瀏覽器會回到Dynamic Media影像伺服器。 它會根據您剛輸入的新寬度值，產生全新的手錶轉譯，然後將新影像傳回瀏覽器，並加以快取。
 
 Dynamic Media有許多影像處理引數，可用來微調網頁上的影像資產。 您可以[在這裡](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=en)檢視他們的清單。
 

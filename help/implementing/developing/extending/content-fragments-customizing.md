@@ -63,6 +63,7 @@ ht-degree: 1%
 * 所有內容都儲存在資產的`jcr:content/data`節點下：
 
    * 元素資料儲存在主子節點下：
+
      `jcr:content/data/master`
 
    * 變數會儲存在具有變數名稱的子節點下：

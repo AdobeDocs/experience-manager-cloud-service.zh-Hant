@@ -26,7 +26,7 @@ ht-degree: 24%
 
 * **[核心元件2.12.0](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-hant)**： Adobe Experience Manager as a Cloud Service受益於核心元件最新版本的自動更新。 版本2.12.0包含社群貢獻的最新改善。 改良功能包括[新的POST表單處理常式；](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-container.html#post-data)可透過內容感知組態包含自訂CSS、JavaScript和中繼資料[標籤；](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading)以及[`DataLayerBuilder`](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html#enabling-custom-components)公用程式，以簡化自訂元件中的Adobe資料層整合。 檢視2.12.0中的[變更清單](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.0)。
 
-* **[專案原型24](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)**：啟動新Experience Manager專案的建議基礎已有所改善。 它現在包含新的[Adobe使用者端資料層](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html)、[在AMP中傳遞網站的選項](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html)，以及新增專案CSS/JS](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading)的新[延伸功能點。
+* **[專案原型24](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)**：啟動新Experience Manager專案的建議基礎已有所改善。 它現在包含新的[Adobe使用者端資料層](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html)、[在AMP中傳遞網站的選項](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html)，以及新增專案CSS/JS[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html#context-aware-loading)的新延伸功能點。
 
 * **[ContextHub資料夾](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md#organizing-segments)**：能夠建立對象資料夾，以輕鬆組織、尋找和選取要用於ContextHub選件鎖定目標功能的對象區段。
 
@@ -91,7 +91,7 @@ Experience Manageras a Cloud Service2020.10.0中的Cloud Manager發行日期是2
 
 * 每個環境的環境變數數量提高至 200 個。
 
-* 總覽頁面上的環境卡現在會列出最多三個環境。 使用者可以選擇&#x200B;**全部顯示**按鈕，瀏覽到「環境摘要」頁面以查看包含完整環境清單的表格。
+* 總覽頁面上的環境卡現在會列出最多三個環境。 使用者可以選擇&#x200B;**全部顯示**&#x200B;按鈕，瀏覽到「環境摘要」頁面以查看包含完整環境清單的表格。
 如需更多詳細資訊，請參閱[檢視環境](/help/implementing/cloud-manager/manage-environments.md#viewing-environment)。
 
 ### 錯誤修正 {#bug-fixes-cloud-manager}

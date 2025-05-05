@@ -183,14 +183,17 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 1. 將以下屬性新增至此節點：
 
    * **名稱**：`jcr:title`
+
      **類型**：`String`
      **值**：會在 UI 中顯示的識別標題
 
    * **名稱**：`jcr:description`
+
      **類型**：`String`
      **值**：選用的說明。
 
    * **名稱**：`cq:trigger`
+
      **類型**：`String`
      **值**：所要使用的[推出觸發器](/help/sites-cloud/administering/msm/live-copy-sync-config.md#rollout-triggers)
       * `rollout`
@@ -636,6 +639,7 @@ MSM 會使用儲存的語言和國家/地區代碼清單來確定和頁面語言
       * **類型**：`String`
       * **值**：持有考慮中的屬性名稱，並相當於屬性 `name` 的值
          * 如需範例，請參閱
+
            `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
 
 若已定義 `cq-msm-lockable`，則毀損/關閉鏈會以下列方式和 MSM 互動：

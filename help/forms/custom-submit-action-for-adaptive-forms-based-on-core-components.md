@@ -44,6 +44,7 @@ ht-degree: 4%
    ```
    git clone https://git.cloudmanager.adobe.com/<organization-name>/<app-id>/
    ```
+
    **在哪裡可以找到此資訊？**
 
    如需尋找這些詳細資訊的逐步指示，請參閱Adobe Experience League文章&quot;[存取Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)&quot;。
@@ -67,6 +68,7 @@ ht-degree: 4%
    ```
    /ui.apps/src/main/content/jcr_root/apps/<app-id>/
    ```
+
    **重要**：將`<app-id>`取代為您的實際應用程式識別碼。
 
 1. 為您自訂提交動作建立新資料夾，並為它指定您選擇的名稱。 例如，將資料夾命名為`customsubmitaction`。
@@ -79,7 +81,7 @@ ht-degree: 4%
 
    `/ui.apps/src/main/content/jcr_root/apps/<app-id>/customsubmitaction/`
 
-   `Important`：取代 <app-id> 以及您的實際應用程式ID。
+   `Important`：取代 &lt;app-id> 以及您的實際應用程式ID。
 
 1. 建立新的組態檔。
 在`customsubmitaction`資料夾中，建立名為`.content.xml`的新檔案。
@@ -117,6 +119,7 @@ ht-degree: 4%
    ```
    <filter root="/apps/<app-id>/[customsubmitaction-folder]"/>
    ```
+
    例如，新增下列程式碼行以在`filter.xml`檔案中新增`customsubmitaction`資料夾：
 
    ```
@@ -131,7 +134,7 @@ ht-degree: 4%
 
 1. 導覽至`[AEMaaCS project directory]`中的下列目錄：
    `/core/src/main/java/com/<app-id>/core/service/`
-   `Important`：取代 <app-id> 以及您的實際應用程式ID。
+   `Important`：取代 &lt;app-id> 以及您的實際應用程式ID。
 1. 建立新的Java檔案來實作新增提交動作的服務。 例如，將新的Java檔案新增為`CustomSubmitService.java`。
 
    ![自訂提交動作資料夾](/help/forms/assets/custom-submit-action-custom-submit-folder.png)
@@ -198,6 +201,7 @@ ht-degree: 4%
       ```
       mvn -PautoInstallPackage clean install
       ```
+
       ![本機部署](/help/forms/assets/custom-submit-action-local-deployment.png)
 
 **部署Cloud Service環境的程式碼**

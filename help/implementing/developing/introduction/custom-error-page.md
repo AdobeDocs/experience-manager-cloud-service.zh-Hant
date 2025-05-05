@@ -21,7 +21,7 @@ AEM隨附處理HTTP錯誤的標準錯誤處理常式；例如，顯示：
 
 >[!TIP]
 >
->由於AEM是以Apache Sling為基礎，在Apache錯誤處理檔案](https://sling.apache.org/documentation/the-sling-engine/errorhandling.html)中可取得進一步資訊[。
+>由於AEM是以Apache Sling為基礎，在Apache錯誤處理檔案[&#128279;](https://sling.apache.org/documentation/the-sling-engine/errorhandling.html)中可取得進一步資訊。
 
 >[!NOTE]
 >

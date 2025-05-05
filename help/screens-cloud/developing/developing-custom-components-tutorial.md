@@ -107,7 +107,7 @@ AEM Screens有一些有趣的限制，不適用於傳統WCM Sites元件。
        componentGroup="We.Retail Run - Content"
    ```
 
-   /apps/weretail-run/components/content/helloworld](/help/screens-cloud/developing/assets/2018-04-28_at_4_23pm.png)的![屬性
+   /apps/weretail-run/components/content/helloworld![&#128279;](/help/screens-cloud/developing/assets/2018-04-28_at_4_23pm.png)的屬性
 
    /apps/weretail-run/components/content/helloworld的屬性
 
@@ -285,7 +285,7 @@ AEM Screens元件在編輯模式與預覽/生產模式中的轉譯方式不同�
 
    * `categories`| 字串[] | `cq.screens.components`
 
-   /apps/weretail-run/components/content/helloworld/clientlibs/shared](/help/screens-cloud/developing/assets/2018-05-03_at_1026pm.png)的![屬性
+   /apps/weretail-run/components/content/helloworld/clientlibs/shared![&#128279;](/help/screens-cloud/developing/assets/2018-05-03_at_1026pm.png)的屬性
 
    /apps/weretail-run/components/content/helloworld/clientlibs/shared的屬性
 
@@ -548,7 +548,7 @@ public class MyCustomHandler extends AbstractResourceHandler {
 
 ## 完成的程式碼 {#finished-code}
 
-以下是教學課程中完成的程式碼。 **screens-weretail-run.ui.apps-0.0.1-SNAPSHOT.zip**&#x200B;和&#x200B;**screens-weretail-run.ui.content-0.0.1-SNAPSHOT.zip**&#x200B;是編譯的AEM套件。 **SRC-screens-weretail-run-0.0.1.zip **是可以使用Maven部署的未編譯原始程式碼。
+以下是教學課程中完成的程式碼。 **screens-weretail-run.ui.apps-0.0.1-SNAPSHOT.zip**&#x200B;和&#x200B;**screens-weretail-run.ui.content-0.0.1-SNAPSHOT.zip**&#x200B;是編譯的AEM套件。 **SRC-screens-weretail-run-0.0.1.zip &#x200B;** 是可以使用Maven部署的未編譯原始程式碼。
 
 [取得檔案](/help/screens-cloud/developing/assets/screens-weretail-runuiapps-001-snapshot.zip)
 

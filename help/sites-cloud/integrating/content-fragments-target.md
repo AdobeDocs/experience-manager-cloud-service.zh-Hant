@@ -237,7 +237,7 @@ ht-degree: 0%
 
 1. 在您的Target設定頁面上，按一下「可用設定」旁的&#x200B;**+** （加號）。
 
-1. 在[建立架構]對話方塊中，指定&#x200B;**標題**，選取&#x200B;**Adobe Target架構**，然後按一下[建立]****。
+1. 在[建立架構]對話方塊中，指定&#x200B;**標題**，選取&#x200B;**Adobe Target架構**，然後按一下[建立]&#x200B;**&#x200B;**。
 
    <!-- ![Configure Target Framework Dialog](assets/config-target-framework-dialog.png) -->
 
@@ -377,7 +377,7 @@ When you associate a page with the framework, the child pages inherit the associ
 
 就像匯出一樣，一旦選取片段，您也可以從&#x200B;**Assets**&#x200B;主控台的頂端工具列選取從Adobe Target刪除內容片段：
 
-在Adobe Target](assets/cfm-export-target-02.png)中刪除![
+在Adobe Target![&#128279;](assets/cfm-export-target-02.png)中刪除
 
 如果片段已用於Target的選件，刪除已匯出至Target的內容片段可能會導致問題。 刪除片段會導致選件無法使用，因為AEM正在傳遞片段內容。
 

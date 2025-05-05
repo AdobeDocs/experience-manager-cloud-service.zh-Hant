@@ -43,7 +43,7 @@ ht-degree: 5%
 >![Converting component to Experience Fragment](/help/sites-cloud/authoring/assets/offers-convert-legacy-icon.png)
 -->
 
-您可以使用AEM或Adobe Target作為目標定位引擎(您必須具備有效的Adobe Target帳戶才能使用Adobe Target)。 如果您使用Adobe Target，必須先設定整合。 請參閱與Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)整合的[指示。
+您可以使用AEM或Adobe Target作為目標定位引擎(您必須具備有效的Adobe Target帳戶才能使用Adobe Target)。 如果您使用Adobe Target，必須先設定整合。 請參閱與Adobe Target[&#128279;](/help/sites-cloud/integrating/integrating-adobe-target.md)整合的指示。
 
 ![目標定位內容](../assets/targeted-content.png)
 
@@ -160,7 +160,7 @@ ht-degree: 5%
 >
 >選件是目標元件的內容。
 
-體驗會顯示在「對象」窗格中。在下列範例中，體驗包 **括Default**、 **Femole**、 **Femole 30歲以上，******&#x200B;以及Femole 30歲以下。此範例顯示目標影像元件的「預設 **」選件** 。
+體驗會顯示在「對象」窗格中。在下列範例中，體驗包 **括Default**、 **Femole**、 **Femole 30歲以上，**&#x200B;**&#x200B;**&#x200B;以及Femole 30歲以下。此範例顯示目標影像元件的「預設 **」選件** 。
 
 ![目標影像元件](../assets/targeted-image-component.png)
 
@@ -168,7 +168,7 @@ ht-degree: 5%
 
 ![目標影像元件已變更](../assets/targeted-image-different.png)
 
-當選取體驗且目標元件不包含該體驗的選件時，元件會顯示疊加在半透明預設選件上的「新增選件 **** 」。當未建立任何體驗的選件時，會針對對應至 **體驗的區段顯示** 「預設」選件。
+當選取體驗且目標元件不包含該體驗的選件時，元件會顯示疊加在半透明預設選件上的「新增選件 **&#x200B;**&#x200B;」。當未建立任何體驗的選件時，會針對對應至 **體驗的區段顯示** 「預設」選件。
 
 ![新增選件](../assets/targeted-add-offer.png)
 
@@ -180,7 +180,7 @@ ht-degree: 5%
 
 ![自訂優惠圖示](../assets/targeted-custom-offer-icon.png)
 
-從選件資料庫](#adding-an-offer-from-an-offer-library)新增的[選件會與下列影像重疊：
+從選件資料庫[&#128279;](#adding-an-offer-from-an-offer-library)新增的選件會與下列影像重疊：
 
 ![資料庫選件圖示](../assets/targeted-library-offer-icon.png)
 
@@ -229,7 +229,7 @@ ht-degree: 5%
 
 1. 選取體驗名稱旁的箭頭。
 1. 按一下&#x200B;**複製**&#x200B;並選擇對象。
-1. 如有需要，請重新命名體驗，然後按一下[確定]。****
+1. 如有需要，請重新命名體驗，然後按一下[確定]。**&#x200B;**
 
 ### 使用定位模式建立選件 {#creating-offers-using-targeting-mode}
 
@@ -517,13 +517,13 @@ ht-degree: 5%
    * **指定的日期和時間**：特定時間。 選取此選項時，請選取日曆圖示，選取日期，並指定活動結束時間。
 
 1. 若要指定活動的優先順序，請使用滑桿來選取&#x200B;**低**、**正常**&#x200B;或&#x200B;**高**。
-1. 如果您已使用Adobe target帳戶設定Adobe Analytics，則會看到「報 **告來源** 」下拉式功能表。選取 **Adobe Target****或** Adobe Analytics做為來源。
+1. 如果您已使用Adobe target帳戶設定Adobe Analytics，則會看到「報 **告來源** 」下拉式功能表。選取 **Adobe Target**&#x200B;**或** Adobe Analytics做為來源。
 
    如果您選取&#x200B;**Adobe Analytics**，請選取公司與報表套裝。 如果您選取&#x200B;**Adobe Target**，則不需要採取任何動作。
 
    ![報告來源](../assets/targeted-reporting-source.png)
 
-1. 在「目 **標量度** 」區域的「我的主要目標 **** 」下方，選取您要追蹤的成功量度——轉換、收入、參與——並輸入量度的測量方式 (或觀眾採取哪些動作來指出已達成目標)。請參閱上表中目標量度的定義，並參閱 [Adobe Target成功量度的相關檔案](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html) 。
+1. 在「目 **標量度** 」區域的「我的主要目標 **&#x200B;**&#x200B;」下方，選取您要追蹤的成功量度——轉換、收入、參與——並輸入量度的測量方式 (或觀眾採取哪些動作來指出已達成目標)。請參閱上表中目標量度的定義，並參閱 [Adobe Target成功量度的相關檔案](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html) 。
 
    您可以按一下右上角的三個點並選取「重新命名」，以重新命名目 **標**。
 
@@ -561,10 +561,10 @@ ht-degree: 5%
 下列條件會決定模擬訪客體驗時顯示的內容：
 
 * 使用者工作階段存放區中的資料（透過Context Hub）。
-* 在](/help/sites-cloud/authoring/personalization/activities.md)上的[活動。
-* 定義區段](/help/sites-cloud/authoring/personalization/segmentation.md)的[規則。
+* 在[&#128279;](/help/sites-cloud/authoring/personalization/activities.md)上的活動。
+* 定義區段[&#128279;](/help/sites-cloud/authoring/personalization/segmentation.md)的規則。
 * Target元件中的體驗內容。
-* 定位引擎](/help/sites-cloud/authoring/personalization/activities.md)的[設定。
+* 定位引擎[&#128279;](/help/sites-cloud/authoring/personalization/activities.md)的設定。
 
 如果您在載入設定檔時頁面上出現非預期的內容，請檢查此清單中每個專案的設定。
 
@@ -635,6 +635,6 @@ ht-degree: 5%
 >
 >如果您要將AEM與Adobe Campaign整合，請選取&#x200B;**Adobe Campaign**&#x200B;作為引擎。 如需詳細資訊，請參閱整合AEM與Adobe Campaign 。
 >
->如果您使用ContextHub進行目標定位，請選取&#x200B;**ContextHub**作為引擎。 如需詳細資訊，請參閱設定ContextHub 。
+>如果您使用ContextHub進行目標定位，請選取&#x200B;**ContextHub**&#x200B;作為引擎。 如需詳細資訊，請參閱設定ContextHub 。
 <!--You select **Adobe Campaign** as the engine if you are integrating AEM with Adobe Campaign. See [Integrating AEM with Adobe Campaign](/help/sites-administering/campaign.md) for more information.-->
 <!--Select **ContextHub** as the engine if you are using ContextHub for targeting. See [Configuring ContextHub](/help/sites-administering/contexthub-config.md).-->

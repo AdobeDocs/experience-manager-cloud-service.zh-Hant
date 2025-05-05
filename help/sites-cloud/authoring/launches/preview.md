@@ -16,7 +16,7 @@ ht-degree: 0%
 
 [時間扭曲](/help/sites-cloud/authoring/sites-console/page-versions.md#timewarp)可以搭配也包含在啟動中的頁面使用：
 
-1. 從頁面編輯器選取&#x200B;**時間扭曲**模式時，系統會要求您提供日期。 選取啟動項促銷日期之後的日期：
+1. 從頁面編輯器選取&#x200B;**時間扭曲**&#x200B;模式時，系統會要求您提供日期。 選取啟動項促銷日期之後的日期：
    ![從頁面編輯器導覽啟動項](/help/sites-cloud/authoring/assets/launches-timewarp-01.png)
 
 1. 將顯示適合該日期的內容：

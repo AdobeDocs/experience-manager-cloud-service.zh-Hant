@@ -40,7 +40,7 @@ AEM中的內容片段模型定義您[內容片段](/help/assets/content-fragment
    >如果[尚未啟用使用內容片段模型](/help/assets/content-fragments/content-fragments-configuration-browser.md)，則&#x200B;**建立**&#x200B;選項將無法使用。
 
 1. 指定&#x200B;**模型標題**。
-您也可以定義各種屬性；例如，新增**標籤**、**描述**，並選取&#x200B;**啟用模型**&#x200B;以[啟用模型](#enabling-disabling-a-content-fragment-model) （如有必要）。
+您也可以定義各種屬性；例如，新增&#x200B;**標籤**、**描述**，並選取&#x200B;**啟用模型**&#x200B;以[啟用模型](#enabling-disabling-a-content-fragment-model) （如有必要）。
 
    >[!NOTE]
    >
@@ -87,9 +87,9 @@ AEM中的內容片段模型定義您[內容片段](/help/assets/content-fragment
 
         >[!CAUTION]
         >
-        手動更新資料型別的屬性&#x200B;**屬性名稱**&#x200B;時，請注意，名稱必須僅包含A-Z、a-z、0-9和下劃線「_」作為特殊字元。
+        >手動更新資料型別的屬性&#x200B;**屬性名稱**&#x200B;時，請注意，名稱必須僅包含A-Z、a-z、0-9和下劃線「_」作為特殊字元。
         >
-        如果在舊版AEM中建立的模型包含非法字元，請移除或更新這些字元。
+        >如果在舊版AEM中建立的模型包含非法字元，請移除或更新這些字元。
 
      例如：
 
@@ -121,9 +121,9 @@ AEM中的內容片段模型定義您[內容片段](/help/assets/content-fragment
 
   >[!NOTE]
   >
-  文字區域是否為RTF、純文字或Markdown，是由屬性&#x200B;**預設型別**&#x200B;在模型中定義。
+  >文字區域是否為RTF、純文字或Markdown，是由屬性&#x200B;**預設型別**&#x200B;在模型中定義。
   >
-  此格式無法從[內容片段編輯器](/help/sites-cloud/administering/content-fragments/authoring.md)變更，只能從模型變更。
+  >此格式無法從[內容片段編輯器](/help/sites-cloud/administering/content-fragments/authoring.md)變更，只能從模型變更。
 
 * **數字**
    * 新增數值欄位
@@ -167,7 +167,7 @@ AEM中的內容片段模型定義您[內容片段](/help/assets/content-fragment
 
      >[!NOTE]
      >
-     此資料型別僅用於格式設定，AEM GraphQL結構描述會忽略此資料型別。
+     >此資料型別僅用於格式設定，AEM GraphQL結構描述會忽略此資料型別。
 
 ## 屬性 {#properties}
 
@@ -179,18 +179,18 @@ AEM中的內容片段模型定義您[內容片段](/help/assets/content-fragment
 
   >[!CAUTION]
   >
-  如果在舊版AEM中建立的模型包含非法字元，請移除或更新這些字元。
+  >如果在舊版AEM中建立的模型包含非法字元，請移除或更新這些字元。
 
 * **呈現為**
-在片段中實現/轉譯欄位的各種選項。 通常，此屬性可讓您定義作者是否看到欄位的單一例項，或允許建立多個例項。 使用**多個欄位**&#x200B;時，您可以定義專案的最小和最大數量 — 如需詳細資訊，請參閱[驗證](#validation)。
+在片段中實現/轉譯欄位的各種選項。 通常，此屬性可讓您定義作者是否看到欄位的單一例項，或允許建立多個例項。 使用&#x200B;**多個欄位**&#x200B;時，您可以定義專案的最小和最大數量 — 如需詳細資訊，請參閱[驗證](#validation)。
 
 * **欄位標籤**
-輸入**欄位標籤**&#x200B;將會自動產生&#x200B;**屬性名稱**，然後可視需要手動更新。
+輸入&#x200B;**欄位標籤**&#x200B;將會自動產生&#x200B;**屬性名稱**，然後可視需要手動更新。
 
 * **驗證**
-基本驗證可由機制使用，例如**Required**&#x200B;屬性。 有些資料型別有額外的驗證欄位。 如需詳細資訊，請參閱[驗證](#validation)。
+基本驗證可由機制使用，例如&#x200B;**Required**&#x200B;屬性。 有些資料型別有額外的驗證欄位。 如需詳細資訊，請參閱[驗證](#validation)。
 
-* 對於「多行」 **資料類型** ，可將「預設類型 **** 」定義為：
+* 對於「多行」 **資料類型** ，可將「預設類型 **&#x200B;**&#x200B;」定義為：
 
    * **RTF格式**
    * **Markdown**
@@ -209,15 +209,15 @@ AEM中的內容片段模型定義您[內容片段](/help/assets/content-fragment
 
   >[!NOTE]
   >
-  確保每個語言根的唯一性。
+  >確保每個語言根的唯一性。
 
   >[!NOTE]
   >
-  變數可以有與相同片段變數相同的&#x200B;*唯一*&#x200B;值，但與其他片段變數中使用的值不同。
+  >變數可以有與相同片段變數相同的&#x200B;*唯一*&#x200B;值，但與其他片段變數中使用的值不同。
 
   >[!CAUTION]
   >
-  如果您想使用MSM （這會建立內容片段的復本），則應該從個別內容片段模式中使用的任何資料型別中移除任何&#x200B;**唯一**&#x200B;限制。
+  >如果您想使用MSM （這會建立內容片段的復本），則應該從個別內容片段模式中使用的任何資料型別中移除任何&#x200B;**唯一**&#x200B;限制。
 
 * 如需特定資料型別及其屬性的詳細資訊，請參閱&#x200B;**[內容參考](#content-reference)**。
 
@@ -270,18 +270,18 @@ AEM中的內容片段模型定義您[內容片段](/help/assets/content-fragment
 
      >[!NOTE]
      >
-     此方法與搭配GraphQL](/help/assets/content-fragments/content-fragments-graphql.md)使用內容片段的[Headless內容傳遞特別相關。
+     >此方法與搭配GraphQL[&#128279;](/help/assets/content-fragments/content-fragments-graphql.md)使用內容片段的Headless內容傳遞特別相關。
    * 可以為一個或多個參考（在產生的片段中）設定。
 
 >[!NOTE]
 >
-AEM對下列專案提供週期性保護：
+>AEM對下列專案提供週期性保護：
 >
-* 內容參照
-這可防止使用者新增對目前片段的引用。 這可能會導致空的片段參考選擇器對話方塊。
+>* 內容參照
+>這可防止使用者新增對目前片段的引用。 這可能會導致空的片段參考選擇器對話方塊。
 >
-* GraphQL中的片段參考
-如果您建立深層查詢，且該查詢傳回多個互相參照的內容片段，則該查詢在第一次出現時會傳回null。
+>* GraphQL中的片段參考
+>如果您建立深層查詢，且該查詢傳回多個互相參照的內容片段，則該查詢在第一次出現時會傳回null。
 
 ### 內容參考 {#content-reference}
 
@@ -323,7 +323,7 @@ type CompanyModel {
 
 >[!NOTE]
 >
-這與[搭配GraphQL](/help/assets/content-fragments/content-fragments-graphql.md)使用內容片段的Headless內容傳遞特別相關。
+>這與[搭配GraphQL](/help/assets/content-fragments/content-fragments-graphql.md)使用內容片段的Headless內容傳遞特別相關。
 
 除了標準屬性之外，您還可以定義：
 
@@ -349,9 +349,9 @@ type CompanyModel {
 
 >[!NOTE]
 >
-已建立重複保護機制。 它禁止使用者在片段參考中選取目前的內容片段。 這可能會導致空的片段參考選擇器對話方塊。
+>已建立重複保護機制。 它禁止使用者在片段參考中選取目前的內容片段。 這可能會導致空的片段參考選擇器對話方塊。
 >
-GraphQL中也有片段參考的週期性保護。 如果您在兩個相互參照的內容片段間建立深層查詢，則會傳回null。
+>GraphQL中也有片段參考的週期性保護。 如果您在兩個相互參照的內容片段間建立深層查詢，則會傳回null。
 
 ## 內容片段模型 — 屬性 {#content-fragment-model-properties}
 
@@ -366,7 +366,7 @@ GraphQL中也有片段參考的週期性保護。 如果您在兩個相互參照
 
      >[!NOTE]
      >
-     此僅供&#x200B;*新*&#x200B;內容片段編輯器使用。 如需進一步資訊，請參閱[內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties)。
+     >此僅供&#x200B;*新*&#x200B;內容片段編輯器使用。 如需進一步資訊，請參閱[內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties)。
 
 
 ## 啟用或停用內容片段模型 {#enabling-disabling-a-content-fragment-model}
@@ -416,7 +416,7 @@ GraphQL中也有片段參考的週期性保護。 如果您在兩個相互參照
 
 >[!NOTE]
 >
-此機制類似於[允許在頁面的進階屬性中，為頁面及其子頁面設定頁面範本](/help/sites-cloud/authoring/page-editor/templates.md#allowing-a-template-author)。
+>此機制類似於[允許在頁面的進階屬性中，為頁面及其子頁面設定頁面範本](/help/sites-cloud/authoring/page-editor/templates.md#allowing-a-template-author)。
 
 若要為&#x200B;**允許的內容片段模型**&#x200B;設定&#x200B;**原則**：
 
@@ -451,7 +451,7 @@ GraphQL中也有片段參考的週期性保護。 如果您在兩個相互參照
 
 >[!CAUTION]
 >
-刪除內容片段模型可能會影響相依片段。
+>刪除內容片段模型可能會影響相依片段。
 
 若要刪除內容片段模型：
 
@@ -462,7 +462,7 @@ GraphQL中也有片段參考的週期性保護。 如果您在兩個相互參照
 
    >[!NOTE]
    >
-   如果參照模型，則會發出警告。 採取適當行動。
+   >如果參照模型，則會發出警告。 採取適當行動。
 
 ## 發佈內容片段模型 {#publishing-a-content-fragment-model}
 
@@ -478,7 +478,7 @@ GraphQL中也有片段參考的週期性保護。 如果您在兩個相互參照
 
    >[!NOTE]
    >
-   如果您發佈的內容片段尚未發佈模型，選擇清單會指出這一點，模型會與片段一起發佈。
+   >如果您發佈的內容片段尚未發佈模型，選擇清單會指出這一點，模型會與片段一起發佈。
 
 ## 取消發佈內容片段模型 {#unpublishing-a-content-fragment-model}
 
@@ -528,7 +528,7 @@ GraphQL中也有片段參考的週期性保護。 如果您在兩個相互參照
 
 為了解決這些問題，內容片段模型在發佈後立即在作者上&#x200B;*鎖定*&#x200B;為唯讀模式。 這表示為&#x200B;**已鎖定**：
 
-鎖定內容片段模型](assets/cfm-model-locked.png)的![卡片
+鎖定內容片段模型![&#128279;](assets/cfm-model-locked.png)的卡片
 
 當模型為&#x200B;**鎖定** （在「唯讀」模式中）時，您可以檢視模型的內容和結構，但無法進行編輯。
 
@@ -542,8 +542,8 @@ GraphQL中也有片段參考的週期性保護。 如果您在兩個相互參照
 
    * 您可以&#x200B;**解鎖**&#x200B;模型以啟用編輯。
 
-     如果您選取&#x200B;**解除鎖定**，會顯示警告，而且您必須確認&#x200B;**解除鎖定**動作：
-     解鎖內容片段模型](assets/cfm-model-unlock-message.png)時出現![訊息
+     如果您選取&#x200B;**解除鎖定**，會顯示警告，而且您必須確認&#x200B;**解除鎖定**&#x200B;動作：
+     解鎖內容片段模型![&#128279;](assets/cfm-model-unlock-message.png)時出現訊息
 
      然後您可以開啟模型以進行編輯。
 
@@ -566,6 +566,6 @@ GraphQL中也有片段參考的週期性保護。 如果您在兩個相互參照
 
      >[!NOTE]
      >
-     頂端可能仍會顯示警告，但此時模型已由現有內容片段使用。
+     >頂端可能仍會顯示警告，但此時模型已由現有內容片段使用。
 
    * **取消**&#x200B;將返回主控台。

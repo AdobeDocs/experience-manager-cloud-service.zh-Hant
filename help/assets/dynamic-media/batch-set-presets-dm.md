@@ -75,7 +75,7 @@ ht-degree: 0%
 
 1. 在&#x200B;**[!UICONTROL 預設集型別]**&#x200B;下拉式清單中，選取&#x200B;**[!UICONTROL 影像集]**&#x200B;或&#x200B;**[!UICONTROL 迴轉集]**。 請確定您選擇正確的預設集型別；之後將無法編輯。
 1. 選取「**[!UICONTROL 建立]**」。
-1. 在&#x200B;**[!UICONTROL 編輯批次集預設集]**&#x200B;頁面的右側，在&#x200B;**[!UICONTROL 預設集詳細資料]**&#x200B;和&#x200B;**[!UICONTROL 設定命名慣例]**標題下設定您想要的可編輯選項。
+1. 在&#x200B;**[!UICONTROL 編輯批次集預設集]**&#x200B;頁面的右側，在&#x200B;**[!UICONTROL 預設集詳細資料]**&#x200B;和&#x200B;**[!UICONTROL 設定命名慣例]**&#x200B;標題下設定您想要的可編輯選項。
 若要深入瞭解您可用的可編輯選項，請參閱[預設集詳細資訊、設定命名慣例和規則結果 — RegX選項](#features-options-bsp)。
 
    ![bsp-create4.png](/help/assets/assets-dm/bsp-create4.png)
@@ -257,7 +257,7 @@ ht-degree: 0%
 
 1. 在&#x200B;**[!UICONTROL 刪除批次集預設集]**&#x200B;對話方塊中，選取&#x200B;**[!UICONTROL 刪除]**。
 
-   如果您要刪除的預設集已由資產資料夾參考，請改為選取「強制刪除」****。
+   如果您要刪除的預設集已由資產資料夾參考，請改為選取「強制刪除」**&#x200B;**。
 
    ![bsp-delete3.png](/help/assets/assets-dm/bsp-delete3.png)
 
