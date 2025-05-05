@@ -22,7 +22,7 @@ ht-degree: 12%
 >id="aemcloud_ctt_guidelines"
 >title="Guidelines and Best Practices"
 >abstract="Review guidelines and best practices to use the Content Transfer tool including revision cleanup tasks, Disk space considerations and more."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html" text="Important Considerations for using Content Transfer Tool"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=zh-Hant" text="Important Considerations for using Content Transfer Tool"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/group-migration.md#important-considerations" text="Important Considerations when Migrating Groups" 
 
 -->
@@ -38,7 +38,7 @@ ht-degree: 12%
 
 下列准則和最佳實務適用於新版「內容轉移工具」：
 
-* 對&#x200B;**來源**&#x200B;存放庫執行[修訂清理](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html)和[資料存放區一致性檢查](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16550.html)，以便識別潛在問題並降低存放庫大小。
+* 對&#x200B;**來源**&#x200B;存放庫執行[修訂清理](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=zh-Hant)和[資料存放區一致性檢查](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16550.html?lang=zh-Hant)，以便識別潛在問題並降低存放庫大小。
 
 * 在擷取階段中，Adobe建議您使用已啟用的&#x200B;*擦去*&#x200B;模式來執行擷取，並刪除目標Adobe Experience Manager (AEM)Cloud Service環境中的現有存放庫(Author或Publish)。 然後，以移轉集資料更新。 此模式比非擦去模式更快，因為在非擦去模式中，移轉集會套用在目前內容的頂端。
 
@@ -72,7 +72,7 @@ ht-degree: 12%
 
 * 擷取金鑰的有效期為從建立或更新後的14天。 可隨時續約。 如果擷取金鑰已過期，您將無法執行擷取。
 
-* 在將內容從來源例項轉移至目標例項之前，內容轉移工具(CTT)不會執行任何型別的內容分析。 例如，將內容擷取至Publish環境時，CTT不會區分已發佈和未發佈的內容。 移轉集中指定的任何內容都會擷取到所選的目標例項。 使用者可以將移轉集內嵌至「作者」例項或「Publish」例項，或兩者皆內嵌。 Adobe建議，將內容移動至生產執行個體時，CTT應安裝在來源製作執行個體上，以將內容移動至目標製作執行個體。 同樣地，請在來源Publish例項上安裝CTT，將內容移至目標Publish例項。 如需詳細資訊，請參閱[在Publish執行個體上執行內容轉移工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#running-tool)。
+* 在將內容從來源例項轉移至目標例項之前，內容轉移工具(CTT)不會執行任何型別的內容分析。 例如，將內容擷取至Publish環境時，CTT不會區分已發佈和未發佈的內容。 移轉集中指定的任何內容都會擷取到所選的目標例項。 使用者可以將移轉集內嵌至「作者」例項或「Publish」例項，或兩者皆內嵌。 Adobe建議，將內容移動至生產執行個體時，CTT應安裝在來源製作執行個體上，以將內容移動至目標製作執行個體。 同樣地，請在來源Publish例項上安裝CTT，將內容移至目標Publish例項。 如需詳細資訊，請參閱[在Publish執行個體上執行內容轉移工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=zh-Hant#running-tool)。
 
 * 「內容轉移工具」所轉移的群組只是內容滿足許可權所需的群組。 _擷取_&#x200B;程式會將整個`/home/groups`複製到移轉集。 如需詳細資訊，請參閱[群組移轉](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md)。 _內嵌_&#x200B;程式會複製已移轉內容ACL中參考的所有群組。 請參閱[移轉封閉式使用者群組](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md)，以了解封閉式使用者群組(CUG)原則中所使用群組的額外考量事項。
 
@@ -82,7 +82,7 @@ ht-degree: 12%
 
 * 使用`Amazon S3`或`Azure`做為來源AEM系統上的資料存放區時，資料存放區應設定為無法刪除已儲存的Blob （記憶體回收）。 這可確保索引資料的完整性，如果無法以這種方式設定，可能會導致擷取失敗，因為此索引資料缺乏完整性。
 
-* 如果您使用自訂索引，您必須確定在執行「內容轉移工具」之前使用`tika`節點設定自訂索引。 如需詳細資訊，請參閱[準備新的索引定義](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html#preparing-the-new-index-definition)。
+* 如果您使用自訂索引，您必須確定在執行「內容轉移工具」之前使用`tika`節點設定自訂索引。 如需詳細資訊，請參閱[準備新的索引定義](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=zh-Hant#preparing-the-new-index-definition)。
 
 * 如果您打算進行追加提取，則現有內容的內容結構決不能從初次提取的時間變更為執行追加提取的時間。 追加無法針對自初始擷取以來結構已變更的內容執行。 請務必在移轉程式期間限制此專案。
 
@@ -90,7 +90,7 @@ ht-degree: 12%
 
 * 內容轉移工具(CTT)不支援合併擷取。 若要將來自多個系統的內容整合至單一Cloud Service例項，只能移轉來自單一來源系統的版本。 此程式需要使用具有wipe=false引數的移轉，由於作業的增量性質，這可能會導致擷取時間延長。 可能的話，請在開始移轉前將內容整合至單一來源系統，免除合併內容的必要。
 
-* 移轉集會在長時間不活動後過期，之後其資料就無法再使用。 檢閱[移轉集到期日](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html#migration-set-expiry)以取得詳細資料。
+* 移轉集會在長時間不活動後過期，之後其資料就無法再使用。 檢閱[移轉集到期日](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=zh-Hant#migration-set-expiry)以取得詳細資料。
 
 ## 下一步 {#whats-next}
 

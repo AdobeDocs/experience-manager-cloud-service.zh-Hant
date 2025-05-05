@@ -19,7 +19,7 @@ ht-degree: 1%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service （核心元件） | 本文章 |
 | AEM as a Cloud Service （基礎元件） | [按一下這裡](/help/forms/rule-editor.md) |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=zh-Hant) |
 
 在基於核心元件的調適型表單中，規則編輯器功能可讓業務使用者和開發人員編寫調適型表單物件的規則。 這些規則會根據預設條件、使用者輸入及使用者對表單的動作，定義要在表單物件上觸發的動作。 此功能有助於進一步簡化表單填寫體驗，確保準確性和速度。
 

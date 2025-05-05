@@ -229,15 +229,15 @@ Click **[!UICONTROL Collections]** in the left rail and use the Search box to sp
 
 ## 管理私有集合的權限{#manage-permissions-private-collection}
 
-您可以允許管理員管理存放庫中可用私有集合的[存取層級](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions)。您可以將權限指派給使用者群組或使用者，例如 `Can View` 和 `Can Edit`。您還可以將權限管理權委派給使用者群組。建立私有集合的使用者即為集合的擁有者。他們可以使用「[!UICONTROL 管理權限]」動作向其他使用者授予存取權。此外，管理員還可以檢視及管理 [!DNL Experience Manager] 存放庫中私有集合的權限。
+您可以允許管理員管理存放庫中可用私有集合的[存取層級](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions)。您可以將權限指派給使用者群組或使用者，例如 `Can View` 和 `Can Edit`。您還可以將權限管理權委派給使用者群組。建立私有集合的使用者即為集合的擁有者。他們可以使用「[!UICONTROL 管理權限]」動作向其他使用者授予存取權。此外，管理員還可以檢視及管理 [!DNL Experience Manager] 存放庫中私有集合的權限。
 <!--
 >[!NOTE]
 >
 >Adobe does not recommend to assign permissions to users.
 -->
-如需如何為使用者群組指派可用權限的相關資訊，請參閱「[對使用者群組新增權限](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions)」。
+如需如何為使用者群組指派可用權限的相關資訊，請參閱「[對使用者群組新增權限](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions)」。
 
-如要進一步了解端對端工作流程，請參閱「[管理權限](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions)」。
+如要進一步了解端對端工作流程，請參閱「[管理權限](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions)」。
 
 ## 後續步驟 {#next-steps}
 
@@ -245,4 +245,4 @@ Click **[!UICONTROL Collections]** in the left rail and use the Search box to sp
 
 * 若要提供文件意見回饋，請使用右側邊欄提供的[!UICONTROL 編輯此頁面]![來編輯頁面](assets/do-not-localize/edit-page.png)或[!UICONTROL 記錄問題]![來建立 GitHub 問題](assets/do-not-localize/github-issue.png)
 
-* 聯絡[客戶服務](https://experienceleague.adobe.com/?support-solution=General#support)
+* 聯絡[客戶服務](https://experienceleague.adobe.com/zh-hant?support-solution=General#support)

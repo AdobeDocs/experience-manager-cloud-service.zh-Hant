@@ -22,7 +22,7 @@ ht-degree: 73%
 >
 >您可以透過AEM as a Cloud Service UI或使用Cloud Manager API （例如cURL），在Cloud Manager中設定進階網路。
 >
->本文主要說明如何使用UI方法。 如果您偏好透過API自動設定，請參閱[虛擬私人網路(VPN)教學課程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/vpn)。
+>本文主要說明如何使用UI方法。 如果您偏好透過API自動設定，請參閱[虛擬私人網路(VPN)教學課程](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/networking/vpn)。
 >
 >**使用API自動化進階網路**
 >若要自動進行進階網路設定（例如VPN建立），您可以使用Cloud Manager API：
@@ -44,7 +44,7 @@ ht-degree: 73%
 >   }'
 >```
 >
->請參閱[虛擬私人網路(VPN)教學課程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/vpn)中的完整教學課程和更多API範例。
+>請參閱[虛擬私人網路(VPN)教學課程](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/networking/vpn)中的完整教學課程和更多API範例。
 >
 
 ## 概觀 {#overview}
@@ -59,7 +59,7 @@ AEM as a Cloud Service 提供以下進階網路選項：
 
 >[!CAUTION]
 >
->如果您已佈建舊版專用輸出技術並想設定這些進階網路選項之一，[聯絡 Adobe Client Care](https://experienceleague.adobe.com/?support-solution=Experience+Manager#home)。
+>如果您已佈建舊版專用輸出技術並想設定這些進階網路選項之一，[聯絡 Adobe Client Care](https://experienceleague.adobe.com/zh-hant?support-solution=Experience+Manager#home)。
 >
 >嘗試使用舊版專用輸出技術設定進階網路時，可能會影響網站連線。
 

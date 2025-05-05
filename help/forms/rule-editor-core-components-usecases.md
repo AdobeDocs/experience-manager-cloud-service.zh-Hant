@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## 如果第一個面板有效，請按一下按鈕時將焦點設定為另一個面板
 
-<span class="preview">這是一項預先發佈功能，可透過我們的[預先發佈管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)存取。</span>
+<span class="preview">這是一項預先發佈功能，可透過我們的[預先發佈管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hant#new-features)存取。</span>
 
 規則編輯器可讓您驗證面板版面，例如「水準標籤」、「垂直標籤」、「摺疊式面板」或「精靈」，只要按一下按鈕，即可在另一個面板中將焦點設定為表單物件。 您可以使用此功能來改善表單導覽和使用者體驗。
 

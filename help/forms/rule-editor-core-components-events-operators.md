@@ -352,7 +352,7 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 #### [!UICONTROL 異步函數呼叫]
 
-<span class="preview">這是一項預先發佈功能，可透過我們的[預先發佈管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)存取。</span>
+<span class="preview">這是一項預先發佈功能，可透過我們的[預先發佈管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hant#new-features)存取。</span>
 
 **[!UICONTROL 異步函數調用]**&#x200B;規則類型允許您執行異步函數。它使您能夠啟動獨立於主執行線程運行的函數調用，從而允許其他進程繼續運行，而無需等待異步函數完成。
 

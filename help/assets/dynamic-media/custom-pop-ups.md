@@ -102,8 +102,8 @@ Dynamic Media中的下列檢視器支援快速檢視：
 
    若要進一步瞭解`setHandlers()`方法，請前往下列網址：
 
-   * 互動式影像檢視器 — [塞桑德勒](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
-   * 互動式視訊檢視器 — [塞桑德勒](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
+   * 互動式影像檢視器 — [塞桑德勒](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html?lang=zh-Hant)
+   * 互動式視訊檢視器 — [塞桑德勒](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html?lang=zh-Hant)
 
 1. 現在設定`quickViewActivate`處理常式。
 
@@ -134,9 +134,9 @@ Dynamic Media中的下列檢視器支援快速檢視：
 
    若要進一步瞭解`quickViewActivate`方法，請前往下列網址：
 
-   * 互動影像檢視器 — [事件回呼](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-event-callbacks.html)
-   * 互動視訊檢視器 — [事件回呼](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-event-callbacks.html)
-   * 互動視訊檢視器中的互動資料支援 — [互動資料支援](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-int-data-support.html)
+   * 互動影像檢視器 — [事件回呼](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-event-callbacks.html?lang=zh-Hant)
+   * 互動視訊檢視器 — [事件回呼](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-event-callbacks.html?lang=zh-Hant)
+   * 互動視訊檢視器中的互動資料支援 — [互動資料支援](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-int-data-support.html?lang=zh-Hant)
 
 1. 請執行下列動作：
 
@@ -211,8 +211,8 @@ Dynamic Media中的下列檢視器支援快速檢視：
 
    若要進一步瞭解`init()`方法，請前往下列網址：
 
-   * 互動式影像檢視器 — [初始](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-init.html)
-   * 互動視訊檢視器 — [初始](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-init.html)
+   * 互動式影像檢視器 — [初始](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-init.html?lang=zh-Hant)
+   * 互動視訊檢視器 — [初始](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-init.html?lang=zh-Hant)
 
 1. 若要將前述步驟所述的快顯視窗附加至檢視器，請使用下列程式碼：
 

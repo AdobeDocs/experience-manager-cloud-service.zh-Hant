@@ -23,8 +23,8 @@ ht-degree: 93%
 
 了解目前版本的新功能、增強功能，以及 [!DNL Experience Manager Assets] 和 [!DNL Dynamic Media] 的錯誤修正。
 
-* [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) 支援 Experience Manager Assets 的資產發佈使用案例。[!DNL Brand Portal] 藉由安全方式向外部機構、合作夥伴、內部團隊和經銷商散佈經過核准的品牌和產品資產以供下載，協助組織滿足其行銷需求。
-   * [!DNL Brand Portal] 設定已透過 [!DNL Adobe I/O] 控制台完成。請參閱[設定 Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)。
+* [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=zh-Hant) 支援 Experience Manager Assets 的資產發佈使用案例。[!DNL Brand Portal] 藉由安全方式向外部機構、合作夥伴、內部團隊和經銷商散佈經過核准的品牌和產品資產以供下載，協助組織滿足其行銷需求。
+   * [!DNL Brand Portal] 設定已透過 [!DNL Adobe I/O] 控制台完成。請參閱[設定 Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html?lang=zh-Hant)。
    * [!DNL Experience Manager] as a Cloud Service 尚不支援 [!DNL Brand Portal] 的資產來源取得。
 
 * [Adobe Asset Link](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html) v2.0 可搭配 [!DNL Experience Manager] Cloud Service 運作。透過經由應用程式內的 [!DNL Asset Link] 面板來連接 [!DNL Experience Manager Assets] 與 [!DNL Creative Cloud] 桌面應用程式 [!DNL Adobe Photoshop]、[!DNL Adobe Illustrator] 和 [!DNL Adobe InDesign]，[!DNL Adobe Asset Link] 可簡化創意人員與行銷人員在內容建立過程中的協作。
@@ -50,9 +50,9 @@ ht-degree: 93%
 >[!MORELIKETHIS]
 >
 >* [關於 Adobe Asset Link](https://www.adobe.com/tw/creativecloud/business/enterprise/adobe-asset-link.html)
->* [設定 Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)
+>* [設定 Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html?lang=zh-Hant)
 >* [設定 Experience Manager 以搭配 Asset Link 運作](https://helpx.adobe.com/tw/enterprise/using/configure-aem-assets-for-asset-link.html)
->* [使用資產微服務在Experience Manager中建立工作流程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows)
+>* [使用資產微服務在Experience Manager中建立工作流程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html?lang=zh-Hant#post-processing-workflows)
 
 ## Cloud Manager的新增功能 {#whats-new-cloud-manager}
 

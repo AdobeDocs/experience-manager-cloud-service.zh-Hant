@@ -17,7 +17,7 @@ Repository Modernizer是專為重組現有專案套件而開發的公用程式�
 
 ## 簡介 {#introduction}
 
-Adobe Experience Manager as a Cloud Service為AEM專案提供許多新功能和可能性。 不過，Adobe Experience Manager Maven專案必須進行一些變更，才能與AEM Cloud Service相容。 在高層級，AEM需要將&#x200B;**內容**&#x200B;和&#x200B;**程式碼**&#x200B;分離為離散的子套件，以遵循可變和不可變內容之間的分割。 請參閱[AEM專案結構](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html)，以取得有關Cloud Service的新AEM專案結構的詳細資訊。
+Adobe Experience Manager as a Cloud Service為AEM專案提供許多新功能和可能性。 不過，Adobe Experience Manager Maven專案必須進行一些變更，才能與AEM Cloud Service相容。 在高層級，AEM需要將&#x200B;**內容**&#x200B;和&#x200B;**程式碼**&#x200B;分離為離散的子套件，以遵循可變和不可變內容之間的分割。 請參閱[AEM專案結構](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html?lang=zh-Hant)，以取得有關Cloud Service的新AEM專案結構的詳細資訊。
 
 Repository Modernizer會建立下列部署結構，以建立相容的AEM Cloud Service專案結構：
 

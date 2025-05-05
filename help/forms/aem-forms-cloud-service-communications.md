@@ -47,11 +47,11 @@ Formsas a Cloud Service — 通訊功能提供隨選和批次API （非同步API
 
 * **權杖式驗證：**&#x200B;權杖式驗證使用存取權杖（持有者驗證權杖）向Experience Manageras a Cloud Service發出要求。 AEM Formsas a Cloud Service提供API以安全地擷取存取Token。 若要擷取並使用權杖來驗證請求：
 
-   1. [從Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html)擷取Experience Manageras a Cloud Service認證。
-   1. [在您的環境中安裝Experience Manageras a Cloud Service認證](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html)。 (應用程式伺服器、Web伺服器或其他非AEM伺服器)設定為傳送要求給（進行呼叫）雲端服務。
-   1. [產生JWT權杖並與Adobe IMS API交換存取權杖](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html)。
+   1. [從Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=zh-Hant)擷取Experience Manageras a Cloud Service認證。
+   1. [在您的環境中安裝Experience Manageras a Cloud Service認證](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=zh-Hant)。 (應用程式伺服器、Web伺服器或其他非AEM伺服器)設定為傳送要求給（進行呼叫）雲端服務。
+   1. [產生JWT權杖並與Adobe IMS API交換存取權杖](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=zh-Hant)。
    1. 以存取權杖作為持有者驗證權杖來執行Experience ManagerAPI。
-   1. [在Experience Manager環境中為技術帳戶使用者設定適當的許可權](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem)。
+   1. [在Experience Manager環境中為技術帳戶使用者設定適當的許可權](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=zh-Hant#configure-access-in-aem)。
 
   >[!NOTE]
   >

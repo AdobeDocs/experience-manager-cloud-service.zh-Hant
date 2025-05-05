@@ -44,7 +44,7 @@ Cloud Acceleration Manager (CAM)提供遷移的一站式體驗。 它以引導�
 >id="aemcloud_cam_gettingstarted"
 >title="Cloud Acceleration Manager 快速入門"
 >abstract="建立您的專案並啟動您的 AEM as a Cloud Service 歷程。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/introduction-cam/benefits-cam.html" text="使用 Cloud Acceleration Manager 的好處"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/introduction-cam/benefits-cam.html?lang=zh-Hant" text="使用 Cloud Acceleration Manager 的好處"
 
 Cloud Acceleration Manager (CAM)的登陸頁面可讓您建立和編輯多個專案。
 
@@ -103,4 +103,4 @@ Cloud Acceleration Manager (CAM)的登陸頁面可讓您建立和編輯多個專
 
 ## 下一步 {#whats-next}
 
-在瞭解如何登入Cloud Acceleration Manager以及如何建立專案後，您就可以開始檢閱[整備階段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html)的下一步。
+在瞭解如何登入Cloud Acceleration Manager以及如何建立專案後，您就可以開始檢閱[整備階段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=zh-Hant)的下一步。

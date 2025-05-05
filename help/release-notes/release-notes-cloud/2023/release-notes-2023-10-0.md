@@ -19,11 +19,11 @@ ht-degree: 91%
 >
 >從這裡，您可以導覽至先前版本的發行說明，例如 2021 或 2022。
 >
->查看 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)，了解關於 [!DNL Experience Manager] as a Cloud Service 未來功能的啟用。
+>查看 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=zh-Hant)，了解關於 [!DNL Experience Manager] as a Cloud Service 未來功能的啟用。
 
 >[!NOTE]
 >
->請參閱[近期文件更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)瞭解與版本不直接相關的文件更新的詳細資料。
+>請參閱[近期文件更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=zh-Hant)瞭解與版本不直接相關的文件更新的詳細資料。
 
 ## 發行日期 {#release-date}
 
@@ -88,7 +88,7 @@ ht-degree: 91%
 
 [篩選 Adob&#x200B;&#x200B;e Managed CDN 的流量](/help/security/traffic-filter-rules-including-waf.md)，方法是透過聲明按屬性 (包括 url、IP 位址和使用者代理程式) 來匹配網站流量的規則，或設定自訂流量速率限制以防範 DoS 攻擊。客戶還可以授權一組進階 Web 應用程式防火牆 (WAF) 規則，以針對複雜的網站威脅提供額外的保護。
 
-我們鼓勵您[嘗試教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html)，以熟悉流量篩選規則！ 此課程可引導您完成設定新的 Cloud Manager 設定管道、在設定檔中聲明規則，以及分析 CDN 記錄中的惡意流量。
+我們鼓勵您[嘗試教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html?lang=zh-Hant)，以熟悉流量篩選規則！ 此課程可引導您完成設定新的 Cloud Manager 設定管道、在設定檔中聲明規則，以及分析 CDN 記錄中的惡意流量。
 
 流量篩選規則現可在開發環境中使用，且 11 月將逐步可在中繼和生產環境中使用。您可以透過傳送電子郵件至：**aemcs-waf-adopter@adobe.com**，要求提前在中繼和生產環境中存取。
 

@@ -58,7 +58,7 @@ Adobe Experience Manager as a Cloud Service使用[Sling內容發佈](https://sli
 
 1. 從AEM as a Cloud Service首頁，移至&#x200B;**工具 — 工作流程 — 模型**。
 1. 在「工作流程模型」頁面中，按畫面右上角的&#x200B;**建立**。
-1. 新增標題和名稱至您的模型。 如需詳細資訊，請參閱[建立工作流程模型](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html)。
+1. 新增標題和名稱至您的模型。 如需詳細資訊，請參閱[建立工作流程模型](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=zh-Hant)。
 1. 從清單中選取建立的模型，然後按&#x200B;**編輯**
 1. 在下列視窗中，刪除預設顯示的「步驟」
 1. 將「處理步驟」拖放至目前的模型流程：
@@ -135,13 +135,13 @@ Adobe Experience Manager as a Cloud Service使用[Sling內容發佈](https://sli
 
 請勿叫用原始模型。 相反，請務必先複製模型並叫用該副本。
 
-如同所有工作流程，您也可以透過API叫用。 如需詳細資訊，請參閱[以程式設計方式與工作流程互動](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html#extending-aem)。
+如同所有工作流程，您也可以透過API叫用。 如需詳細資訊，請參閱[以程式設計方式與工作流程互動](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html?lang=zh-Hant#extending-aem)。
 
 或者，您也可以建立使用`Publish Content Tree`處理步驟的工作流程模型。
 
 1. 從AEM as a Cloud Service首頁，移至&#x200B;**工具 — 工作流程 — 模型**。
 1. 在「工作流程模型」頁面中，按畫面右上角的&#x200B;**建立**。
-1. 新增標題和名稱至您的模型。 如需詳細資訊，請參閱[建立工作流程模型](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html)。
+1. 新增標題和名稱至您的模型。 如需詳細資訊，請參閱[建立工作流程模型](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=zh-Hant)。
 1. 從清單中選取建立的模型，然後按&#x200B;**編輯**
 1. 在下列視窗中，將「處理步驟」拖放至目前的模型流程：
 

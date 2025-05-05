@@ -20,7 +20,7 @@ ht-degree: 32%
 
 >[!NOTE]
 >
->請參閱[近期文件更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)瞭解與版本不直接相關的文件更新的詳細資料。
+>請參閱[近期文件更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=zh-Hant)瞭解與版本不直接相關的文件更新的詳細資料。
 
 ## 發行日期 {#release-date}
 
@@ -64,7 +64,7 @@ Add a Boolean or radio widget type to metadata schema setup. -->
 
 AEM Forms在多年來已幫助許多組織提供絕佳的上線和註冊體驗。 這些體驗已幫助組織將銷售線索轉換為銷售、處理擷取的客戶資料、根據受眾個人資料提供回應靈敏的體驗等等。 現在，AEM Forms以Cloud Service的形式提供。
 
-您可以使用[AEM Formsas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html)來建立數位表格、將表格連結到現有的資料來源、將表格與Adobe Sign整合以將電子簽章新增至表格、產生記錄檔案(DoR)以將提交的表格封存為PDF檔案。 此服務也可以將您現有的PDF forms轉換為數位表格。 除了標準AEM Forms功能外，此服務也提供幾個雲端原生功能，像是自動縮放、升級時的零停機時間，以及雲端原生開發環境。
+您可以使用[AEM Formsas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html?lang=zh-Hant)來建立數位表格、將表格連結到現有的資料來源、將表格與Adobe Sign整合以將電子簽章新增至表格、產生記錄檔案(DoR)以將提交的表格封存為PDF檔案。 此服務也可以將您現有的PDF forms轉換為數位表格。 除了標準AEM Forms功能外，此服務也提供幾個雲端原生功能，像是自動縮放、升級時的零停機時間，以及雲端原生開發環境。
 
 您可以聯絡您的Adobe代表來要求示範或註冊此服務。
 
@@ -149,7 +149,7 @@ AEM as a Cloud Service 2021.3.0中Cloud Manager的發行日期為2021年3月11�
 ### 內容轉移工具的新增功能 {#what-is-new-ctt-march}
 
 * CTT現在安裝至`/apps`，而非`/libs`。特定頁面的瀏覽器書籤可能已失效。
-* 安裝CTT時，使用者必須瀏覽其他層級，才能前往「內容轉移」頁面。 如需詳細資訊，請參閱[使用內容轉移工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html)。
+* 安裝CTT時，使用者必須瀏覽其他層級，才能前往「內容轉移」頁面。 如需詳細資訊，請參閱[使用內容轉移工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=zh-Hant)。
 
 ### 錯誤修正 {#bug-fixes-ctt-march}
 

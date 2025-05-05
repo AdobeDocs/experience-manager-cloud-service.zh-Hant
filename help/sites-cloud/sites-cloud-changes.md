@@ -26,7 +26,7 @@ AEM Sites as a Cloud Service 提供體驗管理功能，作為雲端原生 AEM a
 >* [AEM as a Cloud Service 重大變更 (發行說明)](/help/release-notes/aem-cloud-changes.md)
 >* [AEM Assets as a Cloud Service 重大變更](/help/assets/assets-cloud-changes.md)
 >* [AEM Assets as a Cloud Service 簡介](/help/assets/overview.md)
->* [Adobe Experience Manager as a Cloud Service 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
+>* [Adobe Experience Manager as a Cloud Service 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=zh-Hant)
 
 AEM Sites as a Cloud Service 中的變更與新增內容如下：
 

@@ -165,5 +165,5 @@ Forms轉換公用程式會將以舊版基礎元件為基礎的最適化Forms轉�
 
 ## 最佳做法 {#best-practices}
 
-* 確定您的Foundation元件式表單，僅使用具有同等可用[核心元件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type)的元件。 若您使用沒有對等核心元件的基礎元件，則不會轉換基礎元件。 因此，它在編寫表單時無法正常運作
+* 確定您的Foundation元件式表單，僅使用具有同等可用[核心元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type)的元件。 若您使用沒有對等核心元件的基礎元件，則不會轉換基礎元件。 因此，它在編寫表單時無法正常運作
 * 請確定將基礎元件轉換為核心元件的規則已格式化為XML。

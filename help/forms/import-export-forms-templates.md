@@ -16,7 +16,7 @@ ht-degree: 3%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/manage-administer-aem-forms/import-export-forms-templates) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/forms/manage-administer-aem-forms/import-export-forms-templates) |
 | AEM as a Cloud Service  | 本文章 |
 
 # 匯入或匯出最適化Forms和AEM Forms資產 {#importing-and-exporting-assets-to-aem-forms}
@@ -183,7 +183,7 @@ ht-degree: 3%
 
    ![搜尋資產](/help/forms/assets/search-bar.png)
 
-如需有關使用搜尋的詳細資訊與指示，請參閱[搜尋](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html)。
+如需有關使用搜尋的詳細資訊與指示，請參閱[搜尋](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=zh-Hant)。
 
 <!--
 ## Export or create a package {#export-a-workflow-application}

@@ -24,7 +24,7 @@ Experience Cloud設定自動化透過簡單的UI精靈介面，提供簡單且�
 
 ## 要求
 
-自動化設定是專為立即使用以[AEM核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)建置的AEM站台，並啟用[Adobe使用者端資料層](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html)所設計。 您可以使用[AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)或使用[網站範本](/help/journey-sites/quick-site/create-site.md)建立網站，來產生已自動啟用這些功能的新網站。
+自動化設定是專為立即使用以[AEM核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)建置的AEM站台，並啟用[Adobe使用者端資料層](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=zh-Hant)所設計。 您可以使用[AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)或使用[網站範本](/help/journey-sites/quick-site/create-site.md)建立網站，來產生已自動啟用這些功能的新網站。
 
 ## 先決條件 {#prerequisites}
 
@@ -51,7 +51,7 @@ Experience Cloud設定自動化透過簡單的UI精靈介面，提供簡單且�
 1. 選取&#x200B;**整合Analytics**&#x200B;按鈕。
 1. 在產生的對話方塊中，提供&#x200B;**報表套裝ID**&#x200B;的名稱。
 
-   此字串用來在Adobe Analytics中建立[報告套裝ID](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html)，作為所選AEM網站分析資料的資料存放區。 提供的字串會附加環境和層級識別碼以確保唯一性。
+   此字串用來在Adobe Analytics中建立[報告套裝ID](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=zh-Hant)，作為所選AEM網站分析資料的資料存放區。 提供的字串會附加環境和層級識別碼以確保唯一性。
 
 1. 重新整理頁面和面板，然後選取&#x200B;**檢查整合狀態**&#x200B;以檢查自動化的狀態。
 

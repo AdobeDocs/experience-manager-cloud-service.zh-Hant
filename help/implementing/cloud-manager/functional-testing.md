@@ -58,7 +58,7 @@ Adobe提供數個內建品質閘道，而其他閘道則需要您的介入以進
 
 建議您為AEM應用程式提供單元測試，這是每個測試策略的基礎。 這些設定旨在快速且經常地執行，並提供早期且快速的意見反應。 它們已緊密整合到開發人員工作流程、您自己的CI/CD和AEM雲端服務部署管道中。
 
-它們會使用JUnit實作，並使用Maven執行。 請參閱AEM Project Archetype[&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using#unit-tests)的核心模組，以取得AEM及入門的單元測試範例。
+它們會使用JUnit實作，並使用Maven執行。 請參閱AEM Project Archetype[&#128279;](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/developing/archetype/using#unit-tests)的核心模組，以取得AEM及入門的單元測試範例。
 
 ### 程式碼品質
 

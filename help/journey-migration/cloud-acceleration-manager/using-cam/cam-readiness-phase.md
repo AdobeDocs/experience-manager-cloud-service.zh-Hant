@@ -53,7 +53,7 @@ ht-degree: 7%
    1. 導覽至[軟體發佈](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=best*)入口網站，並下載Best Practices Analyzer做為ZIP檔。
 
       >[!NOTE]
-      >檢閱[使用Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html#imp-considerations)以瞭解如何執行BPA。
+      >檢閱[使用Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=zh-Hant#imp-considerations)以瞭解如何執行BPA。
 
 1. 在CAM中，按一下&#x200B;**取得上傳金鑰**，以便取得用來設定系統以直接將BPA報告自動上傳至CAM的金鑰。
 
@@ -161,7 +161,7 @@ ht-degree: 7%
 ![報告篩選器](/help/journey-migration/cloud-acceleration-manager/assets/report-overview3.png)
 
 >[!NOTE]
->請參閱[解譯Best Practices Analyzer報告](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html)，瞭解發現專案類別和重要性層級。
+>請參閱[解譯Best Practices Analyzer報告](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=zh-Hant)，瞭解發現專案類別和重要性層級。
 
 #### 最佳實務評估 {#best-practices-assessment}
 
@@ -222,4 +222,4 @@ ht-degree: 7%
 
 ## 後續步驟 {#whats-next}
 
-瞭解如何登入Cloud Acceleration Manager以及如何建立專案後，您現在已準備好繼續檢閱[實作階段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html)的下一個步驟。
+瞭解如何登入Cloud Acceleration Manager以及如何建立專案後，您現在已準備好繼續檢閱[實作階段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=zh-Hant)的下一個步驟。

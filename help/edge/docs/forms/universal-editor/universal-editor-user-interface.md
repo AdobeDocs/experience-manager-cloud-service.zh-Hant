@@ -191,7 +191,7 @@ Experience Cloud標題會顯示在主控台頂端，提供更廣泛的Adobe Expe
 
   >[!NOTE]
   >
-  > 如需使用表單產生變數的詳細指示，請參閱[產生變數](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)文章。
+  > 如需使用表單產生變數的詳細指示，請參閱[產生變數](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)文章。
 
 - **實驗中**
 

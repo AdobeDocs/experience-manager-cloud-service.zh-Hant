@@ -135,4 +135,4 @@ ht-degree: 3%
 
 ## 下一步 {#whats-next}
 
-現在您已瞭解如何建立和管理專案的顯示器，接下來應該檢閱檔案[指派頻道給Screens中的顯示器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html)，以繼續您的Screensas a Cloud Service歷程as a Cloud Service。
+現在您已瞭解如何建立和管理專案的顯示器，接下來應該檢閱檔案[指派頻道給Screens中的顯示器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html?lang=zh-Hant)，以繼續您的Screensas a Cloud Service歷程as a Cloud Service。

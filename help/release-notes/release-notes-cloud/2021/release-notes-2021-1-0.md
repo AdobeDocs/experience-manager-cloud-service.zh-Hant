@@ -76,7 +76,7 @@ AEM as a Cloud Service 2021.1.0 中的 Cloud Manager 發行日期是 2021 年 1 
 
 ### [!DNL Code Refactoring Tools] 的新增功能 {#what-is-new-crt}
 
-* 新版AIO-CLI外掛程式已發行。 此增效模組的最新版本修正AEM Dispatcher Converter和Repository Modernizer的錯誤，也支援全新公用程式Index Converter。 請參閱[整合式體驗](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html#benefits)，深入瞭解此外掛程式。
+* 新版AIO-CLI外掛程式已發行。 此增效模組的最新版本修正AEM Dispatcher Converter和Repository Modernizer的錯誤，也支援全新公用程式Index Converter。 請參閱[整合式體驗](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=zh-Hant#benefits)，深入瞭解此外掛程式。
 
 * Index Converter公用程式可將客戶的自訂OAK索引定義轉換成與AEM as a Cloud Service相容的OAK索引定義。 如需詳細資訊，請參閱[索引轉換器](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)。
 
@@ -90,7 +90,7 @@ AEM as a Cloud Service 2021.1.0 中的 Cloud Manager 發行日期是 2021 年 1 
 
 ### 新增功能 {#what-is-new-foundation}
 
-* 伺服器對伺服器的驗證API呼叫 — 產生適當的存取權杖，以在您的外部應用程式和AEM as a Cloud Service環境之間執行已驗證的伺服器對伺服器API呼叫。 閱讀[檔案](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)或參閱[教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html#authentication)以瞭解更多資訊。
+* 伺服器對伺服器的驗證API呼叫 — 產生適當的存取權杖，以在您的外部應用程式和AEM as a Cloud Service環境之間執行已驗證的伺服器對伺服器API呼叫。 閱讀[檔案](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)或參閱[教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=zh-Hant#authentication)以瞭解更多資訊。
 
 ### SDK建置分析器 {#sdk-build-analyzers}
 
@@ -101,7 +101,7 @@ AEM as a Cloud Service SDK Build Analyzer Maven外掛程式會偵測maven專案�
 * repoinit analyzer
 * bundle-nativecode
 
-如需詳細資訊，請參閱檔案[這裡](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html#developing)。
+如需詳細資訊，請參閱檔案[這裡](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=zh-Hant#developing)。
 
 ## 雲端轉換工具 {#code-transition-tools}
 
@@ -111,6 +111,6 @@ AEM as a Cloud Service SDK Build Analyzer Maven外掛程式會偵測maven專案�
 
 ### [!DNL Content Transfer Tool] 的新增功能 {#what-is-new-ctt}
 
-* 內容轉移工具新增功能和UI — 使用者對應工具。 此功能會在內容移轉活動過程中，自動將現有的使用者和群組對應至其AdobeIdentity Management系統ID。 如需詳細資訊，請參閱[使用使用者對應工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html)。
+* 內容轉移工具新增功能和UI — 使用者對應工具。 此功能會在內容移轉活動過程中，自動將現有的使用者和群組對應至其AdobeIdentity Management系統ID。 如需詳細資訊，請參閱[使用使用者對應工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=zh-Hant)。
 * 內容轉移工具現在會移轉在移轉集中參考的所有群組和使用者（包括子項）。
 * 建立移轉集時，允許使用者選取`/etc`下的特定路徑。

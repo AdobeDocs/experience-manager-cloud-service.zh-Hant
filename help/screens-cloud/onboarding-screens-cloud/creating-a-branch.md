@@ -16,7 +16,7 @@ ht-degree: 4%
 本節說明如何在Cloud Manager中為您的方案建立分支。
 
 >[!NOTE]
->請參閱[在Cloud Manager中使用精靈](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/using-the-wizard.html)，瞭解如何使用精靈在Cloud Manager中建立AEM應用程式專案。
+>請參閱[在Cloud Manager中使用精靈](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/using-the-wizard.html?lang=zh-Hant)，瞭解如何使用精靈在Cloud Manager中建立AEM應用程式專案。
 
 ## 目標 {#objective}
 

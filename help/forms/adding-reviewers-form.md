@@ -60,7 +60,7 @@ ht-degree: 0%
 執行以下步驟之前，請參閱[先決條件](adding-reviewers-form.md#prerequisite)。
 
 若要建立群組並新增成員，請瀏覽至&#x200B;**工具** > **作業** > **安全性** > **群組**。
-如需詳細資訊，請參閱[使用者管理與服務](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html)。
+如需詳細資訊，請參閱[使用者管理與服務](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=zh-Hant)。
 請確定您將建立的群組新增為現成使用者群組的成員： **forms-submission-reviewers**。 此使用者群組已隨附[!DNL AEM Forms]，而且可確保將使用者新增為提交稽核者。
 
 若要將使用者群組與最適化表單產生關聯：

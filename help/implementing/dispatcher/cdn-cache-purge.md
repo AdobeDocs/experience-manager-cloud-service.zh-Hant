@@ -31,7 +31,7 @@ AEM as a Cloud Service可讓您設定清除API Token，然後將其用於清除A
 >[!CAUTION]
 >清除CDN快取（尤其是使用硬標幟）將會增加來源處的流量，且如果未正確執行，可能會導致中斷。
 
-您可以參考以設定清除金鑰和執行CDN快取清除為重點的[教學課程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache)。
+您可以參考以設定清除金鑰和執行CDN快取清除為重點的[教學課程](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache)。
 
 ## 單一URL清除 {#single-purge}
 

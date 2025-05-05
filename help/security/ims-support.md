@@ -21,7 +21,7 @@ ht-degree: 100%
 
 >[!TIP]
 >
->請參閱[為管理員設定 AEM 存取權](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem_zh-hant)，了解使用者如何使用 Adobe IMS 向 AEM as a Cloud Service 進行驗證，同時了解如何使用 Adobe IMS 使用者、使用者群組和產品設定檔來控制對 AEM 及其特性和功能的存取。需要 Adobe ID。
+>請參閱[為管理員設定 AEM 存取權](https://experienceleague.adobe.com/?lang=zh-hant&recommended=ExperienceManager-A-1-2020.1.aem_zh-hant)，了解使用者如何使用 Adobe IMS 向 AEM as a Cloud Service 進行驗證，同時了解如何使用 Adobe IMS 使用者、使用者群組和產品設定檔來控制對 AEM 及其特性和功能的存取。需要 Adobe ID。
 
 ## 重要焦點 {#key-highlights}
 

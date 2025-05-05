@@ -29,17 +29,17 @@ ht-degree: 1%
 
 * 此服務提供SDK，在將程式碼部署至Cloud Service之前，可在本機環境（本機電腦）中開發和測試自訂程式碼。 開發人員在本機電腦上使用SDK來開發和測試自訂元件、主題、工作流程應用程式、設定、範本等。 在其本機開發環境中測試自訂程式碼後，他們將自訂程式碼部署到[Forms CS環境開發或中繼環境](/help/implementing/cloud-manager/deploy-code.md)以進行進一步測試，然後再將它升級至生產環境。
 
-* 開發人員在通用[Git存放庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/cloud-manager-repositories.html)中維護Cloud Service和本機開發環境的程式碼。 建立AEM as a Cloud Service程式時，會自動以AEM原型為基礎的Git存放庫建立。
+* 開發人員在通用[Git存放庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/cloud-manager-repositories.html?lang=zh-Hant)中維護Cloud Service和本機開發環境的程式碼。 建立AEM as a Cloud Service程式時，會自動以AEM原型為基礎的Git存放庫建立。
 
   在AEM as a Cloud Service程式上![自動建立Git存放庫](/help/forms/assets/git-repo-local-and-forms-cs.png)
 
-* Formsas a Cloud Service的開發流程會與AEM Cloud Service的AEM Archetype一致。 不過，Adobe Experience Manager Maven專案必須進行一些變更，才能與AEM Cloud Service相容。 在高層面上，AEM需要將內容和程式碼分離為離散的子套件，以遵循可變和不可變內容之間的分割。 使用[Repository Modernizer工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/repo-modernizer.html)，將內容和程式碼分割為獨立套件，以與Adobe Experience Manager as a Cloud Service定義的專案結構相容，藉此重新建構現有的專案套件。
+* Formsas a Cloud Service的開發流程會與AEM Cloud Service的AEM Archetype一致。 不過，Adobe Experience Manager Maven專案必須進行一些變更，才能與AEM Cloud Service相容。 在高層面上，AEM需要將內容和程式碼分離為離散的子套件，以遵循可變和不可變內容之間的分割。 使用[Repository Modernizer工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/repo-modernizer.html?lang=zh-Hant)，將內容和程式碼分割為獨立套件，以與Adobe Experience Manager as a Cloud Service定義的專案結構相容，藉此重新建構現有的專案套件。
 
 * 在搭配Forms as a Cloud Service使用客戶套件組合之前，請先使用最新版adobe-aemfd-docmanager重新編譯自訂程式碼。
 
 * 使用[AEM Formsas a Cloud Service移轉公用程式](/help/forms/migrate-to-forms-as-a-cloud-service.md)，準備並移轉最適化Forms、主題、範本和雲端設定，從OSGi上的<!-- AEM 6.3 Forms--> AEM 6.4 Forms和OSGi上的AEM 6.5 Forms移轉到[!DNL AEM] as a Cloud Service。 使用程式[&#128279;](/help/implementing/cloud-manager/managing-code/managing-repositories.md)的Git存放庫匯入現有的最適化表單範本。
 
-* 電子郵件預設僅支援HTTP和HTTP通訊協定。 [請連絡支援團隊](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#sending-email)以啟用連線埠來傳送電子郵件，並為您的環境啟用SMTP通訊協定。
+* 電子郵件預設僅支援HTTP和HTTP通訊協定。 [請連絡支援團隊](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=zh-Hant#sending-email)以啟用連線埠來傳送電子郵件，並為您的環境啟用SMTP通訊協定。
 
 ## 本地化
 
@@ -56,11 +56,11 @@ ht-degree: 1%
 
 <!--* **Prefill Service:** By default, the prefill service merges data with an Adaptive Form at client as opposed to merging data on Server in AEM 6.5 Forms. The feature helps improve the time required to prefill an Adaptive Form. You can always configure to run the merge action on the Adobe Experience Manager Forms Server.-->
 
-* **預填服務：**&#x200B;預填服務會從伺服器擷取資料，並合併以在使用者端預填您的Adaptive Forms。 此功能有助於改善填寫最適化表單所需的時間。 您一律可以設定[預填服務](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/prefill-service-adaptive-forms-article-use.html)在Adobe Experience Manager Forms伺服器上執行合併動作。
+* **預填服務：**&#x200B;預填服務會從伺服器擷取資料，並合併以在使用者端預填您的Adaptive Forms。 此功能有助於改善填寫最適化表單所需的時間。 您一律可以設定[預填服務](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/prefill-service-adaptive-forms-article-use.html?lang=zh-Hant)在Adobe Experience Manager Forms伺服器上執行合併動作。
 
 * **提交動作：** **電子郵件**&#x200B;提交動作提供傳送附件和將記錄檔案(DoR)附加於電子郵件的選項。 您可以使用它來取代AEM 6.5 Forms中可用的&#x200B;**電子郵件作為PDF**&#x200B;動作。
 
-* **Automated forms conversion服務**：服務未提供Automated forms conversion服務的中繼模型。 您可以[從Automated forms conversion服務檔案](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=en#default-meta-model)下載。
+* **Automated forms conversion服務**：服務未提供Automated forms conversion服務的中繼模型。 您可以[從Automated forms conversion服務檔案](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=zh-Hant#default-meta-model)下載。
 
 * **XSD型最適化Forms：**&#x200B;您可以使用XDP範本為記錄檔案設計範本。 此服務不支援XFA型最適化Forms
 
@@ -82,7 +82,7 @@ Formsas a Cloud Service提供Document Generation和Document Manipulation RESTful
 
    * 依賴檔案服務或應用程式的作業無法使用。 例如，不支援Microsoft®Word對PDF、Microsoft®Excel對PDF、HTML對PDF、PostScript (PS)對PDF、XDP對PDF forms。 這些作業分別依賴Microsoft®Office、Adobe Acrobat、AdobeDistiller、Forms Document Service。
 
-   * 在將非PDF格式的檔案與Communications Document Manipulation API搭配使用之前，請先將其轉換為PDF格式。 例如，如果您的檔案是Microsoft® Office、HTML、PostScript (PS)、XDP格式，請先將這些檔案轉換為PDF格式，然後再將這些檔案與PDF檔案一起使用。 您可以使用[ConvertPDF](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/using-convertpdf-service.html)服務進行這類轉換。
+   * 在將非PDF格式的檔案與Communications Document Manipulation API搭配使用之前，請先將其轉換為PDF格式。 例如，如果您的檔案是Microsoft® Office、HTML、PostScript (PS)、XDP格式，請先將這些檔案轉換為PDF格式，然後再將這些檔案與PDF檔案一起使用。 您可以使用[ConvertPDF](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/using-convertpdf-service.html?lang=zh-Hant)服務進行這類轉換。
 
    * 您可以使用AEM 6.5 Forms環境進行數位簽名、加密、Reader延伸、傳送至印表機、轉換PDF和條碼Forms服務。
 
@@ -111,7 +111,7 @@ Formsas a Cloud Service提供Document Generation和Document Manipulation RESTful
 
    * 將您的XDP型表單轉譯為HTML5 Forms。 此服務不支援HTML5 Forms。
 
-   * 離線擷取資料，並在下次您使用[AEM Forms Workspace](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-aem-forms-workspace/introduction-html-workspace.html)應用程式返回線上時進行同步處理。
+   * 離線擷取資料，並在下次您使用[AEM Forms Workspace](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-aem-forms-workspace/introduction-html-workspace.html?lang=zh-Hant)應用程式返回線上時進行同步處理。
 
 ## 互動式通訊
 

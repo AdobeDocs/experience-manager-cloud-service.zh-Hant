@@ -36,7 +36,7 @@ ht-degree: 13%
 
 * **大量資產擷取**：為客戶提供使用[!DNL Experience Manager]as a Cloud Service架構（包括資產微服務）的可擴充、雲端原生擷取服務。 主要使用案例包括大規模內嵌與監控、報告和排程，同時允許使用通用雲端上傳工具將資產初始傳輸到雲端資料存放區。 請參閱[資產大量擷取器工具](/help/assets/add-assets.md#asset-bulk-ingestor)。
 
-  此工具適用於系統管理員、顧問或實作合作夥伴角色。 此功能可進行大規模擷取，最好在初始擷取或偶爾大量擷取期間使用。 對於較小的內嵌工作，請使用[[!DNL Experience Manager] 案頭應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)或使用Assets使用者介面[&#128279;](/help/assets/add-assets.md#upload-assets)的上傳。
+  此工具適用於系統管理員、顧問或實作合作夥伴角色。 此功能可進行大規模擷取，最好在初始擷取或偶爾大量擷取期間使用。 對於較小的內嵌工作，請使用[[!DNL Experience Manager] 案頭應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=zh-Hant)或使用Assets使用者介面[&#128279;](/help/assets/add-assets.md#upload-assets)的上傳。
 
   ![大量匯入工具的設定](/help/assets/assets/bulk-import-config-low-res.png)
 
@@ -107,7 +107,7 @@ AEM as a Cloud Service 2020.11.0 中的 Cloud Manager 發行日期是 2020 年 1
 
 ### 工作流程 {#workflows}
 
-* 已新增根據工作流程標題、工作流程模型、狀態、發起人、裝載路徑和開始日期來搜尋工作流程例項的支援。 請參閱[搜尋工作流程執行個體](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/administering/workflows-administering.html)。
+* 已新增根據工作流程標題、工作流程模型、狀態、發起人、裝載路徑和開始日期來搜尋工作流程例項的支援。 請參閱[搜尋工作流程執行個體](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/administering/workflows-administering.html?lang=zh-Hant)。
 
 ### Publish層級使用者資料同步 {#user-sync}
 
@@ -115,7 +115,7 @@ AEM as a Cloud Service 2020.11.0 中的 Cloud Manager 發行日期是 2020 年 1
 
 ### SDK建置分析器 {#analyzers}
 
-AEM as a Cloud Service SDK Build Analyzer Maven外掛程式會偵測maven專案中的問題，包括遺漏的相依專案。 它讓開發人員有機會在本機開發期間以及使用Cloud Manager部署到雲端環境之前發現問題。 如需詳細資訊，請參閱檔案[這裡](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html#developing)和[這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html#building-for-the-sdk)。
+AEM as a Cloud Service SDK Build Analyzer Maven外掛程式會偵測maven專案中的問題，包括遺漏的相依專案。 它讓開發人員有機會在本機開發期間以及使用Cloud Manager部署到雲端環境之前發現問題。 如需詳細資訊，請參閱檔案[這裡](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=zh-Hant#developing)和[這裡](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=zh-Hant#building-for-the-sdk)。
 
 ### 其他 {#others-foundation}
 
@@ -123,7 +123,7 @@ AEM as a Cloud Service SDK Build Analyzer Maven外掛程式會偵測maven專案�
 
 ## 內容轉移工具 {#content-transfer-tool}
 
-請詳閱本節，瞭解[內容轉移工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html)版本v1.1.12的新增功能和更新。
+請詳閱本節，瞭解[內容轉移工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=zh-Hant)版本v1.1.12的新增功能和更新。
 
 ### 新增功能 {#what-is-new-ctt}
 

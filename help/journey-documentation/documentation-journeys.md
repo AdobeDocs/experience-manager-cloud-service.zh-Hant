@@ -20,7 +20,7 @@ ht-degree: 100%
 
 文件歷程提供敘述來協助剛開始使用 AEM 的讀者，讓他們能從頭到尾理解和解決業務問題，同時將採用的先前主題或 AEM 知識降至最低，藉以連結許多不同且複雜的主題和功能。
 
-文件歷程與 AEM 的現有技術文件形成對比，AEM 的現有技術文件主要側重於單一功能和記載任務，並且假設熟悉 AEM。透過專注於概念並將深入的細節委派到現有技術文件，文件歷程為 AEM 入門讀者提供了一個開始了解如何透過使用最佳實務來解決常見業務需求和工作流程來使用該平台的地方。由於這個原因，文件歷程並非用於取代而是補充 [AEM 現有技術文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)。
+文件歷程與 AEM 的現有技術文件形成對比，AEM 的現有技術文件主要側重於單一功能和記載任務，並且假設熟悉 AEM。透過專注於概念並將深入的細節委派到現有技術文件，文件歷程為 AEM 入門讀者提供了一個開始了解如何透過使用最佳實務來解決常見業務需求和工作流程來使用該平台的地方。由於這個原因，文件歷程並非用於取代而是補充 [AEM 現有技術文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=zh-Hant)。
 
 ### 透過敘述學習 {#narrative}
 

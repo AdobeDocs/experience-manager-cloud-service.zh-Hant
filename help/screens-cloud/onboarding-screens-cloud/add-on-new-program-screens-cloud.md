@@ -16,7 +16,7 @@ ht-degree: 3%
 本節說明如何在Cloud Manager中將Screens作為附加元件新增到新計畫中。
 
 >[!NOTE]
->請參閱[瞭解計畫和計畫型別](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/program-types.html)以進一步瞭解Cloud Manager計畫。
+>請參閱[瞭解計畫和計畫型別](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/program-types.html?lang=zh-Hant)以進一步瞭解Cloud Manager計畫。
 
 ## 目標 {#objective}
 
@@ -29,7 +29,7 @@ ht-degree: 3%
 1. 導覽至[Cloud Manager](https://my.cloudmanager.adobe.com/)。
 
    >[!NOTE]
-   >請參閱[Cloud Manager簡介](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager.html)以瞭解Cloud Manager。
+   >請參閱[Cloud Manager簡介](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager.html?lang=zh-Hant)以瞭解Cloud Manager。
 
 1. 從Cloud Manager登陸頁面按一下&#x200B;**新增程式**。
 

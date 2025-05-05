@@ -37,7 +37,7 @@ AEM as a Cloud Service使用數百台雲端原生監視器，一年365天持續�
 
 >[!NOTE]
 >
-> 此功能僅提供給具有[進階雲端支援](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html#support-add-ons)的生產環境和客戶。 如有任何問題，請聯絡您的Adobe客戶團隊。
+> 此功能僅提供給具有[進階雲端支援](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html?lang=zh-Hant#support-add-ons)的生產環境和客戶。 如有任何問題，請聯絡您的Adobe客戶團隊。
 
 ## 內部模組監控 {#module-monitoring}
 
@@ -55,10 +55,10 @@ AEM as a Cloud Service使用數百台雲端原生監視器，一年365天持續�
 
 ## 客戶可觀察性 {#customer-observability}
 
-客戶可以使用[New Relic應用程式效能監視](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html)套裝，提供即時效能資料，收集並繪製圖表以供分析和疑難排解。 透過使用監控套件，客戶可以直接觀察各種量度，例如：JVM效能量度、Java™的交易時間、背景外部呼叫和資料庫呼叫。
+客戶可以使用[New Relic應用程式效能監視](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html?lang=zh-Hant)套裝，提供即時效能資料，收集並繪製圖表以供分析和疑難排解。 透過使用監控套件，客戶可以直接觀察各種量度，例如：JVM效能量度、Java™的交易時間、背景外部呼叫和資料庫呼叫。
 
 ## 其他資源 {#resources}
 
-* [New Relic應用程式效能監視](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html)
-* [正在記錄AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/logging.html)
-* [監視環境](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/monitoring-environments.html)
+* [New Relic應用程式效能監視](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html?lang=zh-Hant)
+* [正在記錄AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/logging.html?lang=zh-Hant)
+* [監視環境](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/monitoring-environments.html?lang=zh-Hant)

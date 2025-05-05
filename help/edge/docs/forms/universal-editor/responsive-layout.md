@@ -97,7 +97,7 @@ Universal Editor支援下列型別的表單版面：
 
 **回應式行為：**&#x200B;在行動裝置上，精靈會維持其逐步方式，但會調整每個步驟中的內容以適合較窄的熒幕，通常會棧疊在較大熒幕上並排顯示的元素。
 
-您可以使用[精靈元件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard)在表單中新增精靈配置。 如需有關如何設定精靈元件各種屬性的詳細指示，請參閱[精靈元件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard)文章。
+您可以使用[精靈元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard)在表單中新增精靈配置。 如需有關如何設定精靈元件各種屬性的詳細指示，請參閱[精靈元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard)文章。
 
 ### 收合式選單版面配置
 
@@ -109,7 +109,7 @@ Universal Editor支援下列型別的表單版面：
 
 **回應式行為：**&#x200B;摺疊式功能表在行動裝置上特別好用，因為摺疊式功能表只會顯示擴充的內容區段，自然就能節省垂直空間，非常適合用於較小的熒幕。
 
-您可以使用[摺疊式功能表元件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion)，在表單中新增摺疊式功能表配置。 如需如何設定摺疊式功能表元件的各種屬性的詳細指示，請參閱[摺疊式功能表元件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion)文章。
+您可以使用[摺疊式功能表元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion)，在表單中新增摺疊式功能表配置。 如需如何設定摺疊式功能表元件的各種屬性的詳細指示，請參閱[摺疊式功能表元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion)文章。
 
 ### 如何選擇正確的版面？
 

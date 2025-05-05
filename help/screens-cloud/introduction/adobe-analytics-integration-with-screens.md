@@ -63,4 +63,4 @@ AEM Screens客戶想要瞭解內容在何時顯示，以及顯示時間（彙總
 Analytics事件會離線儲存在indexedDB中，並在稍後加入區塊並傳送至雲端。
 
 >[!NOTE]
->若要進一步瞭解事件的順序和標準資料模型，請參閱[為AEM Screens設定Adobe Analytics](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/administering/analytics-integration/configuring-adobe-analytics-aem-screens.html)以取得詳細資料。
+>若要進一步瞭解事件的順序和標準資料模型，請參閱[為AEM Screens設定Adobe Analytics](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/administering/analytics-integration/configuring-adobe-analytics-aem-screens.html?lang=zh-Hant)以取得詳細資料。

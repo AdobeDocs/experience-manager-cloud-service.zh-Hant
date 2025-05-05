@@ -19,7 +19,7 @@ CSS和LESS架構的相關知識。
 
 ## 可自訂的專案 {#what-can-be-customized}
 
-本文列出最適化Forms的公開可用css類別。 您可以使用這些類別來設定最適化表單各種元件的樣式。 製作元件的樣式（例如顯示警告的對話方塊和狀態列）超出本文範圍。 只有在無法使用[主題編輯器](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html)來設定元件樣式時，才使用這些樣式建構來建立樣式（使用CSS或更少）。
+本文列出最適化Forms的公開可用css類別。 您可以使用這些類別來設定最適化表單各種元件的樣式。 製作元件的樣式（例如顯示警告的對話方塊和狀態列）超出本文範圍。 只有在無法使用[主題編輯器](https://helpx.adobe.com/tw/experience-manager/6-3/forms/using/themes.html)來設定元件樣式時，才使用這些樣式建構來建立樣式（使用CSS或更少）。
 
 ## 在最適化Forms中自訂樣式 {#customizing-styles-in-adaptive-forms}
 

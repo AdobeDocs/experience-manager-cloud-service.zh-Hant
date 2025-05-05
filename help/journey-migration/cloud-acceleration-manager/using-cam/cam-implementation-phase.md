@@ -107,9 +107,9 @@ AEM as a Cloud Service部署卡片提供所有相關內容，可協助您將程�
    >移轉集會在長時間不活動後過期。 如需詳細資訊，請參閱[移轉集到期日](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry)。
 
    >[!NOTE]
-   >使用「內容轉移工具」之前，請先參閱[必要條件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html)以及[最佳實務和指導方針](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html)。
+   >使用「內容轉移工具」之前，請先參閱[必要條件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=zh-Hant)以及[最佳實務和指導方針](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=zh-Hant)。
 
-1. 下載並安裝內容轉移工具以填入移轉集並完成內容轉移的提取階段。 檢閱[內容轉移工具快速入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html)以瞭解如何使用內容轉移工具。
+1. 下載並安裝內容轉移工具以填入移轉集並完成內容轉移的提取階段。 檢閱[內容轉移工具快速入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=zh-Hant)以瞭解如何使用內容轉移工具。
 
 1. 若要將內容從移轉集內嵌至AEM as a Cloud Service上的環境，您必須開始內嵌。 導覽至&#x200B;**擷取工作**，然後按一下&#x200B;**新增擷取**。 檢閱[將內容擷取至Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)，以瞭解如何完成內容轉移的擷取階段。
 
@@ -130,4 +130,4 @@ You can also estimate the size of specific repository paths by using the `path` 
 
 ## 下一步 {#whats-next}
 
-在您瞭解如何登入Cloud Acceleration Manager以及如何使用實作階段後，您就可以繼續檢閱[上線階段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-golive-phase.html)的下一個步驟了。
+在您瞭解如何登入Cloud Acceleration Manager以及如何使用實作階段後，您就可以繼續檢閱[上線階段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-golive-phase.html?lang=zh-Hant)的下一個步驟了。

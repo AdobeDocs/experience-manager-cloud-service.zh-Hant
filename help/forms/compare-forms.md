@@ -14,7 +14,7 @@ ht-degree: 11%
 
 # 比較最適化表單 {#compare-two-forms}
 
-<span class="preview">這是一項預先發佈功能，可透過我們的[預先發佈管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)存取。</span>
+<span class="preview">這是一項預先發佈功能，可透過我們的[預先發佈管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hant#new-features)存取。</span>
 
 當表單作者需要根據欄位、內容和表單元件比較兩個不同的表單時，他們會比較兩個表單。 表單作者必須確定兩個表單位於相同的目錄或資料夾中，才能進行比較。 若要比較兩個不同的調適型表單，請執行以下步驟：
 

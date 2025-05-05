@@ -55,8 +55,8 @@ ht-degree: 1%
 >
 >* [Adobe Target開發](https://developers.adobetarget.com/)
 >* [核心元件 — 體驗片段](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)
->* [Adobe Target — 如何使用Adobe Experience Manager (AEM)體驗片段？](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html)
->* [AEM 6.5 — 手動設定與Adobe Target的整合 — 建立Target雲端設定](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-configuring.html#creating-a-target-cloud-configuration)
+>* [Adobe Target — 如何使用Adobe Experience Manager (AEM)體驗片段？](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html?lang=zh-Hant)
+>* [AEM 6.5 — 手動設定與Adobe Target的整合 — 建立Target雲端設定](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-configuring.html?lang=zh-Hant#creating-a-target-cloud-configuration)
 
 ## 先決條件 {#prerequisites}
 
@@ -98,7 +98,7 @@ ht-degree: 1%
    >
    >可自訂體驗片段選件的JSON格式。 若要這麼做，請定義客戶體驗片段元件，然後註明如何在元件Sling模型中匯出其屬性。
    >
-   >檢視核心元件： [核心元件 — 體驗片段](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html)
+   >檢視核心元件： [核心元件 — 體驗片段](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html?lang=zh-Hant)
 
 1. 在&#x200B;**Adobe Target**&#x200B;下選取：
 
@@ -198,7 +198,7 @@ ht-degree: 1%
 
      >[!NOTE]
      >
-     >Target程式庫檔案[AT.JS](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html)是新的Adobe Target實作程式庫，專為典型Web實作和單頁應用程式而設計。
+     >Target程式庫檔案[AT.JS](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html?lang=zh-Hant)是新的Adobe Target實作程式庫，專為典型Web實作和單頁應用程式而設計。
      >
      >mbox.js已過時，並將在稍後階段移除。
      >
@@ -270,7 +270,7 @@ ht-degree: 1%
 <!--
 ### Associating Activities With the Target Cloud Configuration  {#associating-activities-with-the-target-cloud-configuration}
 
-Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html).
+Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html?lang=zh-Hant).
 
 >[!NOTE]
 >
@@ -359,7 +359,7 @@ When you associate a page with the framework, the child pages inherit the associ
 
 ## 在Adobe Target中使用您的體驗片段 {#using-your-experience-fragments-in-adobe-target}
 
-執行先前的工作後，體驗片段會顯示在Target的「選件」頁面中。 請參閱[特定的Target檔案](https://experiencecloud.adobe.com/resources/help/en_US/target/target/aem-experience-fragments.html)，瞭解您可以達到的目標。
+執行先前的工作後，體驗片段會顯示在Target的「選件」頁面中。 請參閱[特定的Target檔案](https://experiencecloud.adobe.com/resources/help/zh_TW/target/target/aem-experience-fragments.html)，瞭解您可以達到的目標。
 
 >[!NOTE]
 >

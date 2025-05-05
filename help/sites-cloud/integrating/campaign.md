@@ -21,7 +21,7 @@ ht-degree: 2%
 >
 >本檔案說明如何整合Adobe Campaign與雲端原生AEM解決方案AEM as a Cloud Service 。
 >
->如需整合Adobe Campaign與AEM 6.5、內部部署或AMS託管的AEM解決方案的詳細資訊，[請參閱此檔案](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaign.html)。
+>如需整合Adobe Campaign與AEM 6.5、內部部署或AMS託管的AEM解決方案的詳細資訊，[請參閱此檔案](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaign.html?lang=zh-Hant)。
 
 ## 與Adobe Campaign v7/v8整合 {#acc}
 
@@ -29,10 +29,10 @@ ht-degree: 2%
 
 | Campaign版本 | 與AEMaaCS整合 |
 |---|---|
-| [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic.html) | 不支援 |
-| [Campaign v8 （使用者端主控台）](https://experienceleague.adobe.com/docs/campaign-v8.html) | 不支援 |
-| Campaign Web 使用者介面 | 支援。 [進一步瞭解](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-aem) |
+| [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic.html?lang=zh-Hant) | 不支援 |
+| [Campaign v8 （使用者端主控台）](https://experienceleague.adobe.com/docs/campaign-v8.html?lang=zh-Hant) | 不支援 |
+| Campaign Web 使用者介面 | 支援。 [進一步瞭解](https://experienceleague.adobe.com/zh-hant/docs/campaign/campaign-v8/connect/ac-aem) |
 
 ## 與Adobe Campaign Standard整合 {#acs}
 
-AEM as a Cloud Service不支援與[Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard.html) (ACS)整合。
+AEM as a Cloud Service不支援與[Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard.html?lang=zh-Hant) (ACS)整合。

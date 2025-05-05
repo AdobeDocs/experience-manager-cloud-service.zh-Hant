@@ -70,7 +70,7 @@ Cloud Manager 是 AEM as a Cloud Service 的重要元件，可作為您團隊的
 Cloud Manager 方案表示支援業務方案的邏輯分組的 Cloud Manager 環境集。這些分組通常對應於購買的服務水平協議 (SLA)。例如，一個方案可能代表 AEM 資源以支援組織的公共網站，而另一個方案代表內部 DAM。
 
 
-請觀看這段[影片](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html)了解有關使用 Cloud Manager 方案的更多資訊。
+請觀看這段[影片](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=zh-Hant)了解有關使用 Cloud Manager 方案的更多資訊。
 
 使用者可以建立&#x200B;**沙箱**&#x200B;或&#x200B;**生產**&#x200B;方案。
 
@@ -92,7 +92,7 @@ Cloud Manager 方案表示支援業務方案的邏輯分組的 Cloud Manager 環
 
 >[!TIP]
 >
-> 請參閱[使用 Adobe Cloud Manager 環境](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html)影片，其中概述可用的環境。
+> 請參閱[使用 Adobe Cloud Manager 環境](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=zh-Hant)影片，其中概述可用的環境。
 >
 >請參閱[管理環境](/help/implementing/cloud-manager/manage-environments.md)，深入了解使用者可以建立的環境類型以及使用者如何建立環境。
 

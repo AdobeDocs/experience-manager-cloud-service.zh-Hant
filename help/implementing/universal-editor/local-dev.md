@@ -45,7 +45,7 @@ Universal Editor 服務綁定 Universal Editor 和後端系統。若要能夠在
 
 為此，您需要將 AEM 設定為在 HTTPS 上執行。出於開發目的，您可以使用自我簽署憑證。
 
-[請參閱此檔案](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html)，瞭解如何設定在HTTPS上執行的AEM，包括您可使用的自我簽署憑證。
+[請參閱此檔案](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html?lang=zh-Hant)，瞭解如何設定在HTTPS上執行的AEM，包括您可使用的自我簽署憑證。
 
 ## 安裝 Universal Editor 服務 {#install-ue-service}
 
@@ -53,7 +53,7 @@ Universal Editor服務並非Universal Editor的完整復本，而是其功能的
 
 需要[NodeJS版本20](https://nodejs.org/en/download/releases)才能執行通用編輯器服務的本機復本。
 
-Universal Editor服務可透過Software Distribution取得。 如需如何存取軟體的詳細資訊，請參閱[軟體發佈檔案](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)。
+Universal Editor服務可透過Software Distribution取得。 如需如何存取軟體的詳細資訊，請參閱[軟體發佈檔案](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hant)。
 
 將`universal-editor-service.cjs`檔案從Software Distribution儲存至您的本機開發環境。
 

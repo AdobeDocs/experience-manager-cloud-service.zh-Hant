@@ -32,7 +32,7 @@ ht-degree: 8%
 
 * [!DNL Dynamic Media]功能現在可透過AEM [!DNL Sites]影像型核心元件存取。 作者可在建立網頁時快速設定元件，以使用影像預設集、智慧型裁切和影像修飾元。 請參閱[核心元件2.13.0版本](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.13.0)。
 
-* [!DNL Experience Manager]案頭應用程式可讓使用者在案頭應用程式介面上，從Windows檔案總管或Mac Finder拖曳檔案，以上傳檔案和資料夾。 請參閱[使用案頭應用程式](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/using#upload-and-add-new-assets-to-aem)新增資產。
+* [!DNL Experience Manager]案頭應用程式可讓使用者在案頭應用程式介面上，從Windows檔案總管或Mac Finder拖曳檔案，以上傳檔案和資料夾。 請參閱[使用案頭應用程式](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-desktop-app/using/using#upload-and-add-new-assets-to-aem)新增資產。
 
 ## Adobe Experience Manager Commerceas a Cloud Service {#cloud-services-commerce}
 
@@ -66,7 +66,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 2020.12.0中的Cloud Manager�
 
 ### [!DNL Code Refactoring Tools] 的新增功能 {#what-is-new-crt}
 
-* 新版AIO-CLI外掛程式已發行。 此增效模組的最新版本修正AEM Dispatcher Converter和Repository Modernizer的錯誤，並支援全新公用程式Index Converter。 請參閱[Unified Experience](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience#benefits)，您可以在此瞭解更多關於此外掛程式的資訊。
+* 新版AIO-CLI外掛程式已發行。 此增效模組的最新版本修正AEM Dispatcher Converter和Repository Modernizer的錯誤，並支援全新公用程式Index Converter。 請參閱[Unified Experience](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience#benefits)，您可以在此瞭解更多關於此外掛程式的資訊。
 
 * Index Converter公用程式可將客戶的自訂Oak索引定義轉換成與AEM as a Cloud Service相容的Oak索引定義。 如需詳細資訊，請參閱[索引轉換器](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter)。
 

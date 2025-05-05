@@ -16,7 +16,7 @@ ht-degree: 4%
 本節說明如何在Cloud Manager中針對您的程式執行管道和部署程式碼。
 
 >[!NOTE]
->請參閱[設定您的CI-CD管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html)和[部署您的程式碼](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html)，瞭解如何在Cloud Manager中執行您程式的管道。
+>請參閱[設定您的CI-CD管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?lang=zh-Hant)和[部署您的程式碼](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=zh-Hant)，瞭解如何在Cloud Manager中執行您程式的管道。
 
 ## 目標 {#objective}
 
@@ -37,14 +37,14 @@ ht-degree: 4%
 1. 從&#x200B;**安裝管道**&#x200B;精靈中選取您的選項。 按一下「**儲存**」。
 
    >[!NOTE]
-   >若要瞭解設定管道精靈中的選項，請參閱[從Cloud Manager設定管道設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html)以取得詳細資訊。
+   >若要瞭解設定管道精靈中的選項，請參閱[從Cloud Manager設定管道設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?lang=zh-Hant)以取得詳細資訊。
 
    ![影像](/help/screens-cloud/assets/onboarding/run-pipeline2-a.png)
 
 1. 設定管道完成後，會更新行動號召卡。
 
    >[!NOTE]
-   >若要瞭解Cloud Manager中的部署階段，請參閱[部署程式碼](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html)以取得詳細資訊。
+   >若要瞭解Cloud Manager中的部署階段，請參閱[部署程式碼](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=zh-Hant)以取得詳細資訊。
 
    ![影像](/help/screens-cloud/assets/onboarding/run-pipeline3.png)
 

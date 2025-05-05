@@ -16,7 +16,7 @@ ht-degree: 5%
 本節說明如何在Cloud Manager中為您的方案建立環境。
 
 >[!NOTE]
->請參閱[在Cloud Manager中管理環境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html)，瞭解使用者如何建立環境。
+>請參閱[在Cloud Manager中管理環境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=zh-Hant)，瞭解使用者如何建立環境。
 
 ## 目標 {#objective}
 

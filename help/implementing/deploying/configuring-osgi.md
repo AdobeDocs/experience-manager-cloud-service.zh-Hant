@@ -48,7 +48,7 @@ OSGi設定檔案定義於：
 
 >[!NOTE]
 >
->OSGi設定不會像雲端中的典型AEM例項那樣儲存在外部位置中的/apps底下。 簽入Cloud Manager [Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#configurations)以檢視OSGi設定。
+>OSGi設定不會像雲端中的典型AEM例項那樣儲存在外部位置中的/apps底下。 簽入Cloud Manager [Developer Console](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#configurations)以檢視OSGi設定。
 
 ## 執行模式解析度 {#runmode-resolution}
 
@@ -84,7 +84,7 @@ AEM as a Cloud Service執行模式會根據環境型別和服務妥善定義。 
 
 可由以下驗證執行模式指定的OSGi設定值：
 
-1. 正在開啟AEM as a Cloud Service環境的[Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html)
+1. 正在開啟AEM as a Cloud Service環境的[Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=zh-Hant)
 1. 使用&#x200B;__Pod__&#x200B;下拉式清單選取要檢查的服務層
 1. 正在選取&#x200B;__狀態__&#x200B;標籤
 1. 從&#x200B;__狀態傾印__&#x200B;下拉式清單中選取&#x200B;__組態__

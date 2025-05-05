@@ -54,7 +54,7 @@ AEM使用一組機製為頁面實現回應式佈局：
 
 ## 啟用模擬器 {#enabling-emulator}
 
-[專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)和[標準網站範本](/help/sites-cloud/administering/site-creation/site-templates.md#standard-site-template)已經啟用，可以使用模擬器。 如果您不是根據核心元件或原型開發自己的內容，請參閱檔案[回應式設計](/help/implementing/developing/introduction/responsive-design.md)，瞭解如何利用這些功能開發元件的詳細資訊。
+[專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)和[標準網站範本](/help/sites-cloud/administering/site-creation/site-templates.md#standard-site-template)已經啟用，可以使用模擬器。 如果您不是根據核心元件或原型開發自己的內容，請參閱檔案[回應式設計](/help/implementing/developing/introduction/responsive-design.md)，瞭解如何利用這些功能開發元件的詳細資訊。
 
 ## 啟用網站的佈局模式 {#activate-layout-mode-for-your-site}
 

@@ -21,7 +21,7 @@ ht-degree: 16%
 
 >[!NOTE]
 >
->請參閱[近期文件更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)瞭解與版本不直接相關的文件更新的詳細資料。
+>請參閱[近期文件更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=zh-Hant)瞭解與版本不直接相關的文件更新的詳細資料。
 
 ## 發行日期 {#release-date}
 
@@ -41,7 +41,7 @@ ht-degree: 16%
 
 * [內容片段主控台](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)現在支援[鍵盤快速鍵](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)。
 
-* AEM作為Cloud Service的[網頁最佳化影像傳遞](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html)，可傳遞如WebP等格式，大幅提升頁面速度。 這項新服務也提供更彈性的影像調整大小和變形選項。 所有版本的[核心影像元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html)都可讓您使用此服務，並藉由按一下影像元件原則中的選項將影像傳遞為WebP。
+* AEM作為Cloud Service的[網頁最佳化影像傳遞](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=zh-Hant)，可傳遞如WebP等格式，大幅提升頁面速度。 這項新服務也提供更彈性的影像調整大小和變形選項。 所有版本的[核心影像元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=zh-Hant)都可讓您使用此服務，並藉由按一下影像元件原則中的選項將影像傳遞為WebP。
 
 * AEM個人化活動現在可以使用體驗片段，以取代我們的舊版選件。 此功能：
    * 啟用移轉路徑，其中AEM內容會推廣體驗片段選件，而非舊版資料庫選件，以提供符合未來大規模個人化、樣式設定適當的內容。
@@ -118,7 +118,7 @@ ht-degree: 16%
 
 ## Adobe Learning Manager聯結器 {#learn-manage}
 
-* 新的Adobe Learning Manager具有連線至Adobe Experience Manager Sites、Marketo Engage和Adobe Commerce的聯結器。 若要深入瞭解，請參閱： [Adobe Learning Manager使用手冊](https://helpx.adobe.com/learning-manager/user-guide.html)。
+* 新的Adobe Learning Manager具有連線至Adobe Experience Manager Sites、Marketo Engage和Adobe Commerce的聯結器。 若要深入瞭解，請參閱： [Adobe Learning Manager使用手冊](https://helpx.adobe.com/tw/learning-manager/user-guide.html)。
 
 ## Cloud Manager {#cloud-manager}
 

@@ -42,4 +42,4 @@ Best Practices Analyzer v2.1.26的發行日期為2022年3月16日。
 
 ### 新增功能 {#what-is-new-ctt}
 
-* 檢查大小護欄 — 內容轉移工具檢查大小功能有助於減少失敗的內容轉移。 使用檢查大小功能，使用者可以在擷取前先判斷在`crx-quickstart`子目錄中是否有足夠的磁碟空間。 此外，他們可以估計移轉集大小，並驗證其是否受支援。 如果違反了其中一項或兩項檢查，使用者會在CTT使用者介面中看到警告。 有了這道護欄，您可以避免內容轉移失敗，並主動與Adobe客戶服務討論移轉選項。 如需詳細資訊，請參閱[決定移轉集大小和磁碟空間](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#migration-set-size)。
+* 檢查大小護欄 — 內容轉移工具檢查大小功能有助於減少失敗的內容轉移。 使用檢查大小功能，使用者可以在擷取前先判斷在`crx-quickstart`子目錄中是否有足夠的磁碟空間。 此外，他們可以估計移轉集大小，並驗證其是否受支援。 如果違反了其中一項或兩項檢查，使用者會在CTT使用者介面中看到警告。 有了這道護欄，您可以避免內容轉移失敗，並主動與Adobe客戶服務討論移轉選項。 如需詳細資訊，請參閱[決定移轉集大小和磁碟空間](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=zh-Hant#migration-set-size)。

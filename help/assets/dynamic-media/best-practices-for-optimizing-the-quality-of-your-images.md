@@ -27,7 +27,7 @@ Adobe Experience Manager包含100多項Dynamic Media影像傳送命令，用於�
 **智慧型影像處理：**
 
 * 在Dynamic Media中啟用智慧型影像可讓您根據使用者端瀏覽器功能，自動最佳化影像格式、大小和品質。
-想要進一步瞭解嗎？ 移至[智慧型影像](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/imaging-faq)。
+想要進一步瞭解嗎？ 移至[智慧型影像](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/dynamicmedia/imaging-faq)。
 * 它可動態調整這些引數，藉以強化影像傳送效能。
 * 您可以使用自我評估工具[快照](https://snapshot.scene7.com/)來評估智慧型影像。
 
@@ -87,7 +87,7 @@ As a best practice for image format, start with the most common setting `&fmt=JP
 
 * 最佳實務白皮書[Adobe Dynamic Media Classic影像品質和銳利化最佳實務](/help/assets/dynamic-media/assets/sharpening_images.pdf)也適用於Experience Manager。
 
-* 觀看[搭配Experience Manager - Dynamic Media使用影像銳利化](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media)。
+* 觀看[搭配Experience Manager - Dynamic Media使用影像銳利化](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media)。
 
 有了Experience Manager，您可以在內嵌和/或傳送時銳利化影像。 不過，通常最好只使用一種方法或另一種方法來銳利化影像，但不要同時使用兩者。 在URL上傳送影像時銳利化，通常能提供最佳結果。
 
@@ -111,7 +111,7 @@ As a best practice for image format, start with the most common setting `&fmt=JP
 
       * 最佳實務白皮書[Adobe Dynamic Media Classic影像品質和銳利化最佳實務](/help/assets/dynamic-media/assets/sharpening_images.pdf)也適用於Experience Manager。
 
-      * 觀看[搭配Experience Manager - Dynamic Media使用影像銳利化](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media)。
+      * 觀看[搭配Experience Manager - Dynamic Media使用影像銳利化](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media)。
 
       * Experience Manager也可讓您控制第四個引數：單色(0,1)。 此引數決定使用0值將遮色片銳利化調整分別套用至每個色彩元件，或是使用1值將影像亮度/強度套用至影像。
 

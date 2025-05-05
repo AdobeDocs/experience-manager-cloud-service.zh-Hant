@@ -97,7 +97,7 @@ ht-degree: 1%
 
    >[!IMPORTANT]
    >
-   >* 使用者對應完成後，您可以使用階層連結導覽回「內容移轉」頁面。 「使用者對應」卡片會顯示狀態和時間戳記。 按一下&#x200B;**內容轉移**，以便建立移轉集以執行擷取。 如需詳細資訊，請參閱[執行內容轉移工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#running-tool)。
+   >* 使用者對應完成後，您可以使用階層連結導覽回「內容移轉」頁面。 「使用者對應」卡片會顯示狀態和時間戳記。 按一下&#x200B;**內容轉移**，以便建立移轉集以執行擷取。 如需詳細資訊，請參閱[執行內容轉移工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=zh-Hant#running-tool)。
 
 ### 繼續使用者對應程式 {#resume-user-mapping-process}
 

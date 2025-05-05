@@ -21,7 +21,7 @@ ht-degree: 1%
 * 已重新命名的HTML頁面。
 * SEO最佳化。
 
-AEM as a Cloud Service提供[數個實作伺服器端重新導向的方法](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/url-redirection)，不過本文所述的策略（管線免費重新導向）在以下情況下是很好的選擇：
+AEM as a Cloud Service提供[數個實作伺服器端重新導向的方法](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/foundation/administration/url-redirection)，不過本文所述的策略（管線免費重新導向）在以下情況下是很好的選擇：
 
 * 維護重新導向的使用者為商務使用者，他們沒有認可原始檔控制檔案變更的必要存取權，或無法執行Cloud Manager Web層設定管道。
 * 重新導向的次數範圍從數到數萬不等。
@@ -40,7 +40,7 @@ AEM as a Cloud Service提供[數個實作伺服器端重新導向的方法](http
 >[!NOTE]
 > 此功能使用重新導向地圖管理員需要ACS Commons版本&#x200B;**6.7.0或更新版本**，而使用重新導向管理員需要版本&#x200B;**6.10.0或更新版本**。
 
-如需詳細的逐步實作指南，請參閱[實作管道免費URL重新導向](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects)教學課程。
+如需詳細的逐步實作指南，請參閱[實作管道免費URL重新導向](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects)教學課程。
 
 ## 重寫對應 {#rewrite-map}
 
@@ -87,5 +87,5 @@ RewriteRule ^(.*)$ ${map.foo:$1|/} [L,R=301]
 
 ## 教學課程 {#tutorials}
 
-1. [正在實作無管道URL重新導向](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects)
-1. [URL重新導向](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/url-redirection)
+1. [正在實作無管道URL重新導向](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects)
+1. [URL重新導向](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/foundation/administration/url-redirection)

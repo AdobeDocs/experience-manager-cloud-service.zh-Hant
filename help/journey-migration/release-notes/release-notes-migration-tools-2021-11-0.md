@@ -27,6 +27,6 @@ ht-degree: 4%
 
 ### 新增功能 {#what-is-new-ctt}
 
-* 新增選用的[預先複製](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html)步驟支援，以便在來源AEM執行個體設定為使用檔案資料存放區時，與內容轉移工具搭配使用，大幅加快擷取階段。
+* 新增選用的[預先複製](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=zh-Hant)步驟支援，以便在來源AEM執行個體設定為使用檔案資料存放區時，與內容轉移工具搭配使用，大幅加快擷取階段。
 
 * 在內容轉移工具UI中，擷取階段新增了其他描述性訊息，以指示何時正在進行索引和蒙哥復原步驟。

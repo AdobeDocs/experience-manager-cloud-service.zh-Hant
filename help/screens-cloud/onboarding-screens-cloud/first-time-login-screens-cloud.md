@@ -20,7 +20,7 @@ ht-degree: 1%
 
 ## 新增使用者至Adobe Admin Console {#admin-console}
 
-布建AdobeIdentity Management System (IMS)組織ID後，您現在即可存取[Adobe Admin Console](https://adminconsole.adobe.com/)。 請參閱[Adobe Admin Console使用者](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/users.ug.html)，深入瞭解如何新增使用者至Admin Console。
+布建AdobeIdentity Management System (IMS)組織ID後，您現在即可存取[Adobe Admin Console](https://adminconsole.adobe.com/)。 請參閱[Adobe Admin Console使用者](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/users.ug.html)，深入瞭解如何新增使用者至Admin Console。
 
 >[!NOTE]
 >使用者有權存取AEM Cloud Service產品設定檔，以便使用Adobe ID或Federated ID登入AEM。

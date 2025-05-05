@@ -82,17 +82,17 @@ Web應用程式通常提供帳戶管理功能，讓使用者可在網站上註�
 >
 >IdP只會驗證使用者認證的初始驗證，而只要AEM有Cookie可用，後續對AEM的請求就會使用登入權杖Cookie執行。
 
-請參閱檔案以取得有關[SAML 2.0驗證處理常式](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/authentication/saml-2-0.html)的詳細資訊。
+請參閱檔案以取得有關[SAML 2.0驗證處理常式](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/authentication/saml-2-0.html?lang=zh-Hant)的詳細資訊。
 
 **OAuth/SSO**
 
-請參閱[單一登入(SSO)檔案](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/single-sign-on.html)，以取得使用AEM SSO驗證處理常式服務的相關資訊。
+請參閱[單一登入(SSO)檔案](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/single-sign-on.html?lang=zh-Hant)，以取得使用AEM SSO驗證處理常式服務的相關資訊。
 
 您可以使用您選擇的OAuth提供者實作`com.adobe.granite.auth.oauth.provider`介面。
 
 **先決條件：**
 
-依據最佳做法的要求，在儲存使用者特定資料時，請一律依賴idP （身分提供者）當作單一信任點。 如果其他使用者資訊儲存在本機存放庫中（不是idP的一部分），請透過提交要求給客戶支援，指出適當的程式和環境，以啟用[資料同步處理](#data-synchronization-data-synchronization)。 除了[資料同步處理](#data-synchronization-data-synchronization)，在SAML驗證提供者的情況下，請確定已啟用[動態群組成員資格](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)。
+依據最佳做法的要求，在儲存使用者特定資料時，請一律依賴idP （身分提供者）當作單一信任點。 如果其他使用者資訊儲存在本機存放庫中（不是idP的一部分），請透過提交要求給客戶支援，指出適當的程式和環境，以啟用[資料同步處理](#data-synchronization-data-synchronization)。 除了[資料同步處理](#data-synchronization-data-synchronization)，在SAML驗證提供者的情況下，請確定已啟用[動態群組成員資格](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)。
 
 ### 粘性工作階段和封裝的Token {#sticky-sessions-and-encapsulated-tokens}
 
@@ -109,7 +109,7 @@ AEM as a Cloud Service會啟用Cookie式粘性工作階段，確保每個請求�
 使用者設定檔資訊的寫入和讀取方式有兩種：
 
 * 伺服器端使用搭配`com.adobe.granite.security.user` Interface UserPropertiesManager介面，這會將資料放在`/home/users`的使用者節點下。 確保不快取每位使用者不重複的頁面。
-* 使用ContextHub的使用者端，如[檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/personalization/contexthub.html#personalization)所述。
+* 使用ContextHub的使用者端，如[檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/personalization/contexthub.html?lang=zh-Hant#personalization)所述。
 
 **先決條件：**
 
@@ -129,7 +129,7 @@ AEM as a Cloud Service會啟用Cookie式粘性工作階段，確保每個請求�
 
 ## 許可權（已關閉的使用者群組） {#permissions-closed-user-groups}
 
-Publish層存取原則(也稱為封閉式使用者群組(CUG))是在AEM作者中定義的，請參閱[建立封閉式使用者群組](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html#applying-your-closed-user-group-to-content-pages)。 若要限制某些使用者存取網站的某些區段或頁面，請視需要使用AEM作者套用CUG （如此處所述），並將它們復寫至發佈階層。
+Publish層存取原則(也稱為封閉式使用者群組(CUG))是在AEM作者中定義的，請參閱[建立封閉式使用者群組](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html?lang=zh-Hant#applying-your-closed-user-group-to-content-pages)。 若要限制某些使用者存取網站的某些區段或頁面，請視需要使用AEM作者套用CUG （如此處所述），並將它們復寫至發佈階層。
 
 * 如果使用者透過使用SAML向身分提供者(IdP)進行驗證來登入，驗證處理常式將識別使用者的群組成員資格（應與發佈層上的CUG相符），並透過存放庫記錄保留使用者與群組之間的關聯
 * 如果在沒有IdP整合的情況下完成登入，則自訂程式碼可以套用相同的存放庫結構關係。

@@ -21,7 +21,7 @@ ht-degree: 25%
 
 >[!NOTE]
 >
->請參閱[近期文件更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)瞭解與版本不直接相關的文件更新的詳細資料。
+>請參閱[近期文件更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=zh-Hant)瞭解與版本不直接相關的文件更新的詳細資料。
 
 ## 發行日期 {#release-date}
 
@@ -62,11 +62,11 @@ ht-degree: 25%
 
 ### [!DNL Forms] 的新增功能 {#what-is-new-forms}
 
-* automated forms conversion服務可以[將義大利文和葡萄牙文的PDF forms](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model)轉換為最適化Forms。
+* automated forms conversion服務可以[將義大利文和葡萄牙文的PDF forms](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=zh-Hant&#language-specific-meta-model)轉換為最適化Forms。
 
-* **根據 Acroform 的記錄文件**：除了根據 PDF 的表單範本以外，AEM Forms as a Cloud Service 也支援使用 [Adobe Acrobat Form PDF (Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) 作為 XFA 式表格範本以外的記錄文件範本。
+* **根據 Acroform 的記錄文件**：除了根據 PDF 的表單範本以外，AEM Forms as a Cloud Service 也支援使用 [Adobe Acrobat Form PDF (Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=zh-Hant) 作為 XFA 式表格範本以外的記錄文件範本。
 
-* **Microsoft® Azure資料存放區聯結器**：您現在可以[將表單資料模型連線至Microsoft® Azure儲存體](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html)。 它可讓您擷取最適化表單資料，並將該資料作為BLOB儲存於Microsoft® Azure儲存體。
+* **Microsoft® Azure資料存放區聯結器**：您現在可以[將表單資料模型連線至Microsoft® Azure儲存體](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html?lang=zh-Hant)。 它可讓您擷取最適化表單資料，並將該資料作為BLOB儲存於Microsoft® Azure儲存體。
 
 ### [!DNL Forms] 發行前通道中可用的新功能 {#prerelease-features-forms}
 
@@ -98,7 +98,7 @@ AEM as a Cloud Service 2021.8.0中Cloud Manager的發行日期為2021年8月12�
 ### 新增功能 {#what-is-new-aug}
 
 * Cloud Service 客戶現在可以在 Cloud Manager 中檢視服務等級協定 (SLA) 報告。我們即將在未來幾個月以漸進方式推出這項功能。
-請參閱 [SLA 報告](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/sla-reporting.html)。
+請參閱 [SLA 報告](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/sla-reporting.html?lang=zh-Hant)。
 
 * IndexType 和 `IndexDamAssetLucene` 品質規則的類型和嚴重性已變更。這兩個規則現在都是封鎖程式&#x200B;*嚴重性*&#x200B;的Bug。
 

@@ -22,7 +22,7 @@ Dynamic Media提供360個視訊資產傳送的原生支援。 依預設，檢視
 
 目前不支援空間音訊；如果音訊混合在立體聲中，平衡(L/R)不會隨著客戶變更相機視角而改變。
 
-請參閱[使用Dynamic Media 360影片和自訂影片縮圖與AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.html#dynamic-media)。
+請參閱[使用Dynamic Media 360影片和自訂影片縮圖與AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-360-video-custom-thumbnail-feature-video-use.html?lang=zh-Hant#dynamic-media)。
 
 另請參閱[管理檢視器預設集](/help/assets/dynamic-media/managing-viewer-presets.md)。
 
@@ -37,7 +37,7 @@ Dynamic Media提供360個視訊資產傳送的原生支援。 依預設，檢視
 
 您可以使用Adobe Premier Pro來檢視和編輯360/VR素材。 例如，您可以在場景中正確放置標誌和文字，並套用專為等矩形媒體設計的效果和轉場。
 
-請參閱[編輯360/VR視訊](https://helpx.adobe.com/premiere-pro/how-to/edit-360-vr-video.html)。
+請參閱[編輯360/VR視訊](https://helpx.adobe.com/tw/premiere-pro/how-to/edit-360-vr-video.html)。
 
 ## 上傳資產以與360視訊檢視器搭配使用 {#uploading-assets-for-use-with-the-video-viewer}
 

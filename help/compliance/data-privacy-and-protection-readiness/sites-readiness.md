@@ -78,13 +78,13 @@ Adobe Experience Manager 受用於管理使用者選擇加入/選擇退出的 co
 
 AEM Sites 包括與 Analytics Foundation 的選擇性整合，後者使用 Adobe Analytics 隨選服務中的功能。
 
-如需深入了解如何管理 Adobe Analytics 相關的資料主體要求，請參閱 [Adobe Analytics 和資料隱私權](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html)。
+如需深入了解如何管理 Adobe Analytics 相關的資料主體要求，請參閱 [Adobe Analytics 和資料隱私權](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html?lang=zh-Hant)。
 
 ## Personalization Foundation by Target {#personalization-foundation-by-target}
 
 AEM Sites 包括與 Personalization Foundation by Target 的選擇性整合，後者使用 Adobe Target 隨選服務中的功能。
 
-如需深入了解如何管理 Adobe Target 相關的資料主體要求，請參閱[Adobe Target - 隱私權和一般資料保護規範](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html)。
+如需深入了解如何管理 Adobe Target 相關的資料主體要求，請參閱[Adobe Target - 隱私權和一般資料保護規範](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html?lang=zh-Hant)。
 
 ## ContextHub {#contexthub}
 

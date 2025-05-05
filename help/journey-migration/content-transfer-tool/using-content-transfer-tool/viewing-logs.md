@@ -18,7 +18,7 @@ ht-degree: 36%
 >id="aemcloud_ctt_logs"
 >title="檢視記錄檔"
 >abstract="提取和攝入完成後，檢查記錄檔中是否有任何錯誤/警告。如有任何錯誤應立即處理，方法是處理回報的問題或聯絡 Adobe 支援人員。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html#troubleshooting" text="疑難排解"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=zh-Hant#troubleshooting" text="疑難排解"
 >additional-url="https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html" text="連絡 Adobe 支援人員"
 
 完成每個步驟（擷取和擷取）後，請檢查記錄檔並尋找錯誤。  如有任何錯誤應立即處理，方法是處理回報的問題或聯絡 Adobe 支援人員。

@@ -25,7 +25,7 @@ ht-degree: 15%
 
 >[!NOTE]
 >**必備條件**
->在開始閱讀本節之前，請參閱[設定Screens服務提供者](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html)，瞭解如何從Screens服務提供者導覽至此使用者介面。
+>在開始閱讀本節之前，請參閱[設定Screens服務提供者](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=zh-Hant)，瞭解如何從Screens服務提供者導覽至此使用者介面。
 
 請依照下列步驟登入Screens內容提供者：
 
@@ -42,7 +42,7 @@ ht-degree: 15%
    Cloud Manager概觀頁面的![圖示會顯示在工具列的最左側。](/help/screens-cloud/assets/configure/screens-cp-1.png)
 
    >[!NOTE]
-   >如果您尚未建立任何程式，請參閱[首次登入Screensas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/onboarding-screens-cloud/first-time-login-screens-cloud.html)。 本主題將引導您在Cloud Manager中新增Screens as a Cloud Service的計畫。
+   >如果您尚未建立任何程式，請參閱[首次登入Screensas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/onboarding-screens-cloud/first-time-login-screens-cloud.html?lang=zh-Hant)。 本主題將引導您在Cloud Manager中新增Screens as a Cloud Service的計畫。
 
 1. 從&#x200B;**環境**&#x200B;卡片選取連結，以便您可以存取Screens內容提供者。
 
@@ -58,4 +58,4 @@ ht-degree: 15%
 
 ## 下一步 {#whats-next}
 
-現在您已瞭解如何導覽至Screens內容提供者，請檢閱檔案以繼續您的Screensas a Cloud Service歷程，[在Screens中建立和管理專案as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html)。
+現在您已瞭解如何導覽至Screens內容提供者，請檢閱檔案以繼續您的Screensas a Cloud Service歷程，[在Screens中建立和管理專案as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html?lang=zh-Hant)。

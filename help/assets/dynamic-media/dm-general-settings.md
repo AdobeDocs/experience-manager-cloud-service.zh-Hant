@@ -89,7 +89,7 @@ hidefromtoc: yes -->
 
   控制任何現有手動裁切定義的保留。
 
-  另請參閱Dynamic Media檢視器參考指南中的[UploadPostJob](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job)和[ReprocessAssetsJob](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job)中的`preserveCrop`。
+  另請參閱Dynamic Media檢視器參考指南中的[UploadPostJob](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job)和[ReprocessAssetsJob](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job)中的`preserveCrop`。
 
 ## 預設上傳選項 {#default-upload-options}
 
@@ -106,7 +106,7 @@ hidefromtoc: yes -->
 | **[!UICONTROL 閾值]** | 必填。<br>臨界值是套用「遮色片銳利化調整」濾鏡時忽略的對比範圍。 此效果很重要，因此使用此濾鏡時，影像不會引入「雜訊」。 值範圍是`0` - `255`，這是灰階影像中的亮度階數。 `0`=黑色，`128`=50%灰色和`255`=白色。<br>閾值為`12`時，會忽略膚色亮度的細微變化，以避免增加雜訊，但還是會增加邊緣對比度，讓相異區域如睫毛與皮膚相遇的區域。<br>如果您有某個人的臉部像片，「遮色片銳利化調整」會影響影像的反差部分。 例如，睫毛和皮膚會合，以建立明顯的對比區域，以及平滑的皮膚本身。 即使最平滑的皮膚也會顯示亮度值的細微變化。 如果您不使用臨界值，濾鏡會強調外觀畫素中的這些細微變化。 反過來，會建立雜訊和不想要的效果，同時增加睫毛的對比，增強銳利度。<br>為了避免此問題，系統引入臨界值，告訴濾鏡忽略不會大幅改變對比度的畫素，例如平滑外觀。<br>在先前顯示的拉鍊圖形中，請注意拉鍊旁的紋理。 因為臨界值太低，無法抑制雜訊，所以會顯示影像雜訊。 |
 | **[!UICONTROL 單色]** | 選取「 」以取消遮色片影像亮度（強度）的銳利化。<br>取消選取以分別取消銳利化遮色片每個色彩元件。 |
 
-另請參閱[在Adobe Dynamic Media和影像伺服器](https://experienceleague.adobe.com/docs/experience-manager-65/assets/sharpening_images.pdf?lang=en)上銳利化影像。
+另請參閱[在Adobe Dynamic Media和影像伺服器](https://experienceleague.adobe.com/docs/experience-manager-65/assets/sharpening_images.pdf?lang=zh-Hant)上銳利化影像。
 
 ### PostScript索引標籤 {#postscript-tab}
 

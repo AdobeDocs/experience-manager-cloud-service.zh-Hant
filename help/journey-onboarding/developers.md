@@ -148,8 +148,8 @@ ht-degree: 100%
 
 * [存取存放庫](/help/implementing/cloud-manager/managing-code/accessing-repos.md) - 了解如何使用 Cloud Manager 中的自助服務 Git 帳戶管理存取和管理您的 Git 存放庫。
 * [將 Git 與 Cloud Manager 搭配使用](/help/implementing/cloud-manager/managing-code/integrating-with-git.md) - 了解如何使用 Cloud Manager 的 Git 存放庫以及如何將您內部部署客戶管理的 Git 存放庫與 Cloud Manager 整合。
-* [本機開發環境設定](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) - 本教程將引導您使用 AEM as a Cloud Service SDK 為 Adobe Experience Manager (AEM) 設定本機開發環境。
-* [開始使用 AEM Sites - WKND 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) - 這個多部分教學課程是專為 Adobe Experience Manager 的新手開發人員設計的。此教學課程會逐步引導您實作虛擬生活風格品牌 WKND 的 AEM 網站。此教學課程涵蓋基礎的主題，例如專案設定、核心元件、可編輯的範本、用戶端資料庫以及使用 Adobe Experience Manager Sites 的元件開發。
+* [本機開發環境設定](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=zh-Hant) - 本教程將引導您使用 AEM as a Cloud Service SDK 為 Adobe Experience Manager (AEM) 設定本機開發環境。
+* [開始使用 AEM Sites - WKND 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hant) - 這個多部分教學課程是專為 Adobe Experience Manager 的新手開發人員設計的。此教學課程會逐步引導您實作虛擬生活風格品牌 WKND 的 AEM 網站。此教學課程涵蓋基礎的主題，例如專案設定、核心元件、可編輯的範本、用戶端資料庫以及使用 Adobe Experience Manager Sites 的元件開發。
 * [使用 React 在 AEM 中開始使用 SPA](/help/implementing/developing/hybrid/getting-started-react.md) - 本文會介紹一個 SPA 應用程式範例，說明其組合方式，並可讓您使用 React 架構快速啟動並執行您自己的 SPA。
 * [使用 Angular 在 AEM 中開始使用 SPA](/help/implementing/developing/hybrid/getting-started-angular.md) - 本文會介紹一個 SPA 應用程式範例，說明其組合方式，並可讓您使用 Angular 架構快速啟動並執行您自己的 SPA。
 * [ Headless 開發人員歷程](/help/journey-headless/developer/overview.md) - 開始學習使用 AEM 開發 Headless 應用程式的引導課程。

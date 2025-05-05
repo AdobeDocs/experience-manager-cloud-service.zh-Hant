@@ -22,7 +22,7 @@ AEM聯結器列於[Adobe Exchange](https://partners.adobe.com/technologyprogram/
 關於如何將套件包含在專案中，有多種選擇：
 
 1. 合作夥伴的公共存放庫 — 合作夥伴將在可公開存取的maven存放庫中託管內容包
-1. 合作夥伴的受密碼保護的存放庫 — 合作夥伴將在受密碼保護的maven存放庫中託管內容包。 如需指示，請參閱[受密碼保護的maven存放庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/setting-up-project.html#password-protected-maven-repositories)。
+1. 合作夥伴的受密碼保護的存放庫 — 合作夥伴將在受密碼保護的maven存放庫中託管內容包。 如需指示，請參閱[受密碼保護的maven存放庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/setting-up-project.html?lang=zh-Hant#password-protected-maven-repositories)。
 1. 套件式成品 — 在此情況下，聯結器套件會在本機包含在客戶的maven專案中。
 
 無論套件的託管位置為何，都必須將套件參照為pom.xml中的相依性（如廠商所提供）。

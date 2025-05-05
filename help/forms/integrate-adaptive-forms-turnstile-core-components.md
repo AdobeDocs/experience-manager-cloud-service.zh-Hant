@@ -70,7 +70,7 @@ Cloudflare的Turnstile驗證碼是一種安全性措施，旨在保護表單和�
    >
    > 使用者不需要修改使用者端JavaScript驗證URL和伺服器端驗證URL，因為已預先填入Turnstile驗證。
 
-   設定Turnstile Captcha服務後，即可用於根據核心元件的[最適化表單](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction)。
+   設定Turnstile Captcha服務後，即可用於根據核心元件的[最適化表單](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/introduction)。
 
 ## 在最適化表單中使用 Turnstile {#using-turnstile-core-components}
 

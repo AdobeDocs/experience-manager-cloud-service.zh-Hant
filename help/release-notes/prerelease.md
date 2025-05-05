@@ -18,7 +18,7 @@ ht-degree: 100%
 
 ## 簡介 {#introduction}
 
-Adobe Experience Manager as a Cloud Service 根據 [Experience Manager 發行路徑圖](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)定期提供新功能。
+Adobe Experience Manager as a Cloud Service 根據 [Experience Manager 發行路徑圖](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=zh-Hant#aem-as-cloud-service)定期提供新功能。
 
 若要熟悉排定在下個功能發行上線的功能，您可以訂閱發行前通道，您可藉由設定您的開發環境或任何沙箱環境來存取該通道。您可以預覽可透過 AEM 使用者介面存取的變更，也可以針對任何新的發行前 API 建置程式碼。
 
@@ -50,7 +50,7 @@ AEM as a Cloud Service 有兩種發行。
 
 ## 標示您的行事曆 {#mark-calendars}
 
-功能發行的排程已事先安排妥當，並於 [Adobe Experience League](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service) 上發佈功能發行啟用日期。
+功能發行的排程已事先安排妥當，並於 [Adobe Experience League](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=zh-Hant#aem-as-cloud-service) 上發佈功能發行啟用日期。
 
 記下發行日期，以便您可以規劃時間來檢閱和測試即將推出的功能。
 
@@ -187,7 +187,7 @@ Javadoc 會發佈到 Maven Central。
 > 
 > 部署到中繼或生產環境時，絕不能使用 `aem-prerelease-sdk-api` artifactId。透過生產管道部署時，請一律使用 `aem-sdk-api`。同樣地，參照發行前 API 的程式碼不應該透過生產管道進行部署。
 
-[AEM CS SDK Build Analyzer Maven 外掛程式 v1.0 及更高版本](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html#developing)將透過檢查相依性來偵測專案中是否使用了發行前 API。如果該分析器有找到，它將使用發行前 SDK API 來分析專案。
+[AEM CS SDK Build Analyzer Maven 外掛程式 v1.0 及更高版本](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=zh-Hant#developing)將透過檢查相依性來偵測專案中是否使用了發行前 API。如果該分析器有找到，它將使用發行前 SDK API 來分析專案。
 
 ## 訓練您的使用者 {#train-users}
 
@@ -195,8 +195,8 @@ Javadoc 會發佈到 Maven Central。
 
 Adobe Experience League 提供了用來學習 AEMaaCS 的大量資源。
 
-* [AEMaaCS 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)
-* [教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-tutorials/overview.html)
+* [AEMaaCS 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=zh-Hant)
+* [教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-tutorials/overview.html?lang=zh-Hant)
 * 發行說明中的[每月發行概觀影片](/help/release-notes/release-notes-cloud/release-notes-current.md#release-video)
 
 ## 考量事項 {#considerations}

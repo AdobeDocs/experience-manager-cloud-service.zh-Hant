@@ -20,7 +20,7 @@ ht-degree: 1%
 
 ![chlimage_1-152](assets/chlimage_1-368.png)
 
-在上圖所示的網頁上，檢視動作[&#128279;](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html)中的互動式影像。
+在上圖所示的網頁上，檢視動作[&#128279;](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html?lang=zh-Hant)中的互動式影像。
 
 ## 觀看互動式影像橫幅的建立方式 {#watch-how-interactive-image-banners-are-created}
 
@@ -30,7 +30,7 @@ ht-degree: 1%
 
 下列逐步工作流程說明可協助您在Adobe Experience Manager Assets中快速啟動並執行互動式影像。
 
-在部分快速入門工作中尋找&#x200B;**範例**&#x200B;標題。 此教學課程包含以尚未新增互動影像的[網頁範例為基礎的簡短教學課程](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)。
+在部分快速入門工作中尋找&#x200B;**範例**&#x200B;標題。 此教學課程包含以尚未新增互動影像的[網頁範例為基礎的簡短教學課程](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=zh-Hant)。
 
 
 
@@ -146,7 +146,7 @@ ht-degree: 1%
 
 **範例**
 
-您可以將上述三個範例中所使用的方法套用至[示範網頁](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)。
+您可以將上述三個範例中所使用的方法套用至[示範網頁](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=zh-Hant)。
 
 示範網頁具有多個產品縮圖，每個縮圖都有一個標示為「檢視更多」的「快速檢視」按鈕。 在您的Web瀏覽器偵錯工具仍然啟動的情況下，選取每個按鈕並記下錄製的「快速檢視」URL。 啟用頁面上所有可用的四個產品快速檢視後，您會取得向後端發出的快速檢視請求清單：
 
@@ -342,13 +342,13 @@ ht-degree: 1%
 
 **範例**
 
-以[示範網站為例](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)，請注意這三人的圖片是靜態`IMG`標籤：
+以[示範網站為例](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=zh-Hant)，請注意這三人的圖片是靜態`IMG`標籤：
 
 ```xml {.line-numbers}
 <img class="img-responsive" width="100%" title="Hero Image 2" alt="Hero Image 2" src="images/shoppable-banner.jpg">
 ```
 
-整合很簡單，只要移除`IMG`標籤，並以Experience Manager Assets中複製的內嵌程式碼加以取代。 您會看到結果[在含有三個圓圈熱點](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html)的頁面上顯示可購物互動影像。
+整合很簡單，只要移除`IMG`標籤，並以Experience Manager Assets中複製的內嵌程式碼加以取代。 您會看到結果[在含有三個圓圈熱點](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html?lang=zh-Hant)的頁面上顯示可購物互動影像。
 
 >[!NOTE]
 >
@@ -356,9 +356,9 @@ ht-degree: 1%
 
 若要針對回應式環境將「裁切」套用至可購物互動影像，請將互動影像設定屬性`ZoomView.iscommand`納入路徑。 在此情況下，會呼叫`ZoomView`元件，而`iscommand`是您套用的「裁切」影像伺服命令。
 
-請參閱[ZoomView.iscommand](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html)組態屬性。
+請參閱[ZoomView.iscommand](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html?lang=zh-Hant)組態屬性。
 
-請參閱[裁切](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html)影像伺服命令。
+請參閱[裁切](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html?lang=zh-Hant)影像伺服命令。
 
 您現在已準備好將互動式影像與網站上現有的快速檢視整合。
 
@@ -495,7 +495,7 @@ loadQuickView(quickViewUrl);
  s7interactiveimageviewer.init();
 ```
 
-[最終示範網站具有完全整合的互動式影像](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html)。
+[最終示範網站具有完全整合的互動式影像](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html?lang=zh-Hant)。
 
 ## 使用 Quickview 建立自訂快顯視窗 {#using-quickviews-to-create-custom-pop-ups}
 

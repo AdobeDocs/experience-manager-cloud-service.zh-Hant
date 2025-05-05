@@ -36,7 +36,7 @@ ht-degree: 68%
    * 這些分類法在整個 AEM 中都適用。
 * 標記可以由作者套用，並可供網站訪客使用。
 * 無論由誰建立，所有形式的標記都可在指定給頁面或搜尋時用於選取。
-* 標記會由[清單元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html)用於根據選取的標記產生動態清單。
+* 標記會由[清單元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=zh-Hant)用於根據選取的標記產生動態清單。
 
 ## 標記需求 {#requirements}
 

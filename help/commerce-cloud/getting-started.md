@@ -18,7 +18,7 @@ ht-degree: 1%
 
 # AEM Commerce as a Cloud Service快速入門 {#start}
 
-若要開始使用Adobe Experience Manager (AEM) Commerce as a Cloud Service，您的Experience Manager Cloud Service必須布建Commerce integration framework (CIF)附加元件。 CIF附加元件是在[AEM Sites as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/home.html)之上的額外模組。
+若要開始使用Adobe Experience Manager (AEM) Commerce as a Cloud Service，您的Experience Manager Cloud Service必須布建Commerce integration framework (CIF)附加元件。 CIF附加元件是在[AEM Sites as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/home.html?lang=zh-Hant)之上的額外模組。
 
 ## 上線 {#onboarding}
 
@@ -29,7 +29,7 @@ AEM Commerce as a Cloud Service的上線流程分為兩個步驟：
 
 Adobe已完成第一個入門步驟。 如需有關定價和布建的詳細資訊，請洽詢您的銷售代表。
 
-布建CIF附加元件後，它會套用至任何現有的Cloud Manager方案。 如果您沒有Cloud Manager計畫，則必須建立一個計畫。 如需詳細資訊，請參閱[設定您的程式](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html)。
+布建CIF附加元件後，它會套用至任何現有的Cloud Manager方案。 如果您沒有Cloud Manager計畫，則必須建立一個計畫。 如需詳細資訊，請參閱[設定您的程式](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html?lang=zh-Hant)。
 
 第二步是每個AEM as a Cloud Service環境的自助服務。 在CIF附加元件初始布建後，您必須進行一些其他設定。
 
@@ -70,7 +70,7 @@ CIF附加元件可選擇性支援對Adobe Commerce Enterprise/Cloud作者使用�
 
 1. 使用Cloud Manager外掛程式取得Adobe I/O CLI
 
-   請檢視[Adobe Cloud Manager檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)，瞭解如何下載、設定和使用[Adobe I/O CLI](https://github.com/adobe/aio-cli)搭配[Cloud Manager CLI外掛程式](https://github.com/adobe/aio-cli-plugin-cloudmanager)。
+   請檢視[Adobe Cloud Manager檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=zh-Hant)，瞭解如何下載、設定和使用[Adobe I/O CLI](https://github.com/adobe/aio-cli)搭配[Cloud Manager CLI外掛程式](https://github.com/adobe/aio-cli-plugin-cloudmanager)。
 
 2. 使用AEM as a Cloud Service程式驗證Adobe I/O CLI
 

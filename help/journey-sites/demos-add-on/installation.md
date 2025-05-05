@@ -110,6 +110,6 @@ AEM 參考示範附加元件包含多個範本，滿足各種測試和示範需�
 
 雖然建議您檢閱「[建立方案和管理](create-program.md)」以繼續快速建立網站歷程的下一部分，但下列是一些其他選用資源。這些資源深入探討本文件提及的概念。但是這並不是繼續執行歷程的必要條件。
 
-* [了解方案和方案類型](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/program-types.html) - 從這裡開始了解即時方案和沙箱方案之間的差異。
+* [了解方案和方案類型](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/program-types.html?lang=zh-Hant) - 從這裡開始了解即時方案和沙箱方案之間的差異。
 * [網站範本](/help/sites-cloud/administering/site-creation/site-templates.md) - 如果您想了解有關網站範本的結構以及如何使用它們建立網站的更多資訊，請參閱本文件。
-* [Cloud Manager 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/cloud-manager-introduction.html) - 如果您想要 Cloud Manager 功能的更多詳細資訊，您可能想直接查閱深入的技術文件。
+* [Cloud Manager 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=zh-Hant) - 如果您想要 Cloud Manager 功能的更多詳細資訊，您可能想直接查閱深入的技術文件。

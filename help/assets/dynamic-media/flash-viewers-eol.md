@@ -16,4 +16,4 @@ ht-degree: 7%
 
 自2017年1月31日起，Flash檢視器平台支援服務正式終止。
 
-如需最新支援的檢視器，請參閱[Dynamic Media檢視器參考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html)。
+如需最新支援的檢視器，請參閱[Dynamic Media檢視器參考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=zh-Hant)。

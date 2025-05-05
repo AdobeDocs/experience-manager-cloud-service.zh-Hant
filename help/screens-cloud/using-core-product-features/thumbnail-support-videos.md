@@ -40,7 +40,7 @@ ht-degree: 1%
 1. 導覽至現有的Screens頻道或建立頻道。
 
    >[!NOTE]
-   >若要瞭解如何建立管道並將內容新增至管道，請參閱[在Screens中建立和管理管道as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html)。
+   >若要瞭解如何建立管道並將內容新增至管道，請參閱[在Screens中建立和管理管道as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html?lang=zh-Hant)。
 
 1. 選取頻道。 在動作列上，按一下&#x200B;**編輯**&#x200B;以開啟編輯器。
 

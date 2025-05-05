@@ -272,7 +272,7 @@ Adobe Experience Manager Assets as a Cloud Service 為企業提供一種雲端�
 * [AEM Sites as a Cloud Service 重大變更](/help/sites-cloud/sites-cloud-changes.md)
 * [AEM Assets as a Cloud Service 重大變更](/help/assets/assets-cloud-changes.md)
 * [AEM Assets as a Cloud Service 簡介](/help/assets/overview.md)
-* [Adobe Experience Manager as a Cloud Service 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
+* [Adobe Experience Manager as a Cloud Service 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=zh-Hant)
 
 >[!TIP]
 >

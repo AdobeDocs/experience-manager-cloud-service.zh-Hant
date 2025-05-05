@@ -22,7 +22,7 @@ ht-degree: 1%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service （基礎元件） | 本文章 |
 | AEM as a Cloud Service （核心元件） | [按一下這裡](/help/forms/adaptive-form-fragments-core-components.md) |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html?lang=en) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html?lang=zh-Hant) |
 
 雖然每個表單都是為特定目的而設計的，但大多數表單中有一些常見的部分，例如提供個人詳細資訊按讚姓名和位址、家庭詳細資訊、收入詳細資訊等。 每次建立新表單時，表單開發人員都必須建立這些通用區段。 自適應Forms提供了一種方便的機制，只需區段 按讚面板或字段群組創建表單一次，並在自適應Forms中重複使用它們。 這些可重複使用的獨立區段稱為「最適化表單片段」。
 

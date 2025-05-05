@@ -57,7 +57,7 @@ ht-degree: 8%
 
 您可以透過HTL指令碼及其相關邏輯，完全控制包裝函式標籤的行為。
 
-如需使用HTL開發的詳細資訊，請參閱[HTL檔案](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)。
+如需使用HTL開發的詳細資訊，請參閱[HTL檔案](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=zh-Hant)。
 
 ### 決策樹 {#decision-tree}
 

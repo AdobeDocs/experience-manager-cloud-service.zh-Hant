@@ -20,7 +20,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->如需 AEM 中 CORS 資源共用原則的詳細概述，請參閱[了解跨原始資源共用 (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html#understand-cross-origin-resource-sharing-(cors))。
+>如需 AEM 中 CORS 資源共用原則的詳細概述，請參閱[了解跨原始資源共用 (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=zh-Hant#understand-cross-origin-resource-sharing-(cors))。
 
 若要存取 GraphQL 端點，必須設定 CORS 原則並新增至[透過 Cloud Manager 部署到 AEM](/help/implementing/cloud-manager/deploy-code.md) 的 AEM 專案。做法是為所需端點新增適當的 OSGi CORS 設定。可以建立多個 CORS 設定並將其部署到不同環境。[WKND 參考網站](https://github.com/adobe/aem-guides-wknd/tree/master/ui.config/src/main/content/jcr_root/apps/wknd/osgiconfig)有提供範例
 

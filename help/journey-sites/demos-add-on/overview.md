@@ -62,5 +62,5 @@ AEM 是用於建立和管理數位體驗的強大工具集。內容作者可以�
 
 查看這些其他資源，進一步了解 AEM 的強大功能如何協同運作。
 
-* [Cloud Manager 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager.html) - 如果您想要 Cloud Manager 功能的更多詳細資訊，您可能想要直接查閱深入的技術文件。
-* [AEM as a Cloud Service 技術文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) - 如果您已經對 AEM 有深入的了解，您可能想要直接查閱深入的技術文件。
+* [Cloud Manager 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager.html?lang=zh-Hant) - 如果您想要 Cloud Manager 功能的更多詳細資訊，您可能想要直接查閱深入的技術文件。
+* [AEM as a Cloud Service 技術文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=zh-Hant) - 如果您已經對 AEM 有深入的了解，您可能想要直接查閱深入的技術文件。

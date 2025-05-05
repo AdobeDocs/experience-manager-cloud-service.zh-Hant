@@ -95,7 +95,7 @@ ht-degree: 7%
 >
 >切勿在範本中輸入任何必須是[國際化](/help/implementing/developing/extending/i18n/dev.md)的資訊。
 >
->對於必須本地化的範本元素（例如頁首和頁尾），請使用核心元件的[本地化功能](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)。
+>對於必須本地化的範本元素（例如頁首和頁尾），請使用核心元件的[本地化功能](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=zh-Hant)。
 
 ### 建立範本資料夾 — 管理員 {#creating-a-template-folder-admin}
 
@@ -518,7 +518,7 @@ ht-degree: 7%
 >
 >初始內容旨在準備元件和作為建立內容起點的頁面配置。 此並非意圖讓實際內容維持原狀。 因此，初始內容無法翻譯。
 >
->如果您需要在範本中加入可翻譯的文字（例如頁首或頁尾），可以使用核心元件的[本地化功能](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)。
+>如果您需要在範本中加入可翻譯的文字（例如頁首或頁尾），可以使用核心元件的[本地化功能](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=zh-Hant)。
 
 ### 編輯範本 — 版面 — 範本作者 {#editing-a-template-layout-template-author}
 

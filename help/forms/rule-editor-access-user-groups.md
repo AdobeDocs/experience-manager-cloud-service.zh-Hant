@@ -54,5 +54,5 @@ ht-degree: 2%
 
    沒有規則編輯器存取許可權的使用者看得見的元件工具列
 
-   如需將使用者新增至群組的說明，請參閱[使用者管理與安全性](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html)。
+   如需將使用者新增至群組的說明，請參閱[使用者管理與安全性](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=zh-Hant)。
 

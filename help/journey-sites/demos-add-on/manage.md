@@ -105,9 +105,9 @@ ht-degree: 100%
 
 ## 其他資源 {#additional-resources}
 
-* [Cloud Manager 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - 如果您想要 Cloud Manager 功能的更多詳細資訊，您可能想直接查閱深入的技術文件。
+* [Cloud Manager 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=zh-Hant) - 如果您想要 Cloud Manager 功能的更多詳細資訊，您可能想直接查閱深入的技術文件。
 * [建立網站](/help/sites-cloud/administering/site-creation/create-site.md) - 了解如何在 AEM 中利用網站範本來定義網站的樣式與結構以便建立網站。
 * [AEM 的頁面命名慣例](/help/sites-cloud/authoring/sites-console/organizing-pages.md#page-name-restrictions-and-best-practices)- 請參閱此頁面以了解組織 AEM 頁面的慣例。
 * [AEM 基本處理](/help/sites-cloud/authoring/basic-handling.md) - 如果您初次使用 AEM，請探索此文件以了解導覽和主控台組織等基本概念。
-* [AEM as a Cloud Service 技術文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) - 如果您已經對 AEM 有深入的了解，您可能想直接查閱深入的技術文件。
+* [AEM as a Cloud Service 技術文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=zh-Hant) - 如果您已經對 AEM 有深入的了解，您可能想直接查閱深入的技術文件。
 * [網站範本](/help/sites-cloud/administering/site-creation/site-templates.md) - 如果您想了解有關網站範本的結構以及如何使用它們建立網站的更多資訊，請參閱本文件。

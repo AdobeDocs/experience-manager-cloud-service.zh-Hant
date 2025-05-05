@@ -15,7 +15,7 @@ ht-degree: 3%
 
 Content Transformer (CT)是由Adobe開發的工具，在將內容從您目前的AEM實作(內部部署或Managed Services)移轉至AEM as a Cloud Service之前，可用來自動偵測和修正[最佳實務分析器(BPA)](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md)所回報的內容相關問題。
 
-內容轉換器可以允許使用者執行大量動作，例如移動或刪除，以協助解決屬於下列[BPA模式類別](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html) （如下表所示）的問題。 這可大幅減少與移轉專案相關的時間並降低複雜性。
+內容轉換器可以允許使用者執行大量動作，例如移動或刪除，以協助解決屬於下列[BPA模式類別](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=zh-Hant) （如下表所示）的問題。 這可大幅減少與移轉專案相關的時間並降低複雜性。
 
 ## 內容轉換器涵蓋的模式類別和建議的解決方案 {#pattern-categories-and-benefits}
 

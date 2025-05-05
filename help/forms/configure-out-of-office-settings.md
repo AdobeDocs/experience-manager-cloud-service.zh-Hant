@@ -16,7 +16,7 @@ ht-degree: 1%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/configure-out-of-office-settings.html) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/configure-out-of-office-settings.html?lang=zh-Hant) |
 | AEM as a Cloud Service  | 本文章 |
 
 如果您計畫不在辦公室，則可以指定指定指定給您該期間之料號的變更。

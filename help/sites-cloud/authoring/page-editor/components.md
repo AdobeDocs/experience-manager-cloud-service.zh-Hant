@@ -46,7 +46,7 @@ AEM隨附多種現成可用的元件，可為網站作者提供全方位功能�
 
 它們是使用AEM最佳實務建置的，也是AEM編寫體驗的基礎。 開發人員可輕鬆擴充核心元件，以符合特定專案需求。
 
-除了WCM核心元件之外，您也可以使用[最適化Forms核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features)。 這些核心元件提供標準且簡單的方法，可[建立表單或新增表單至AEM Sites頁面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。
+除了WCM核心元件之外，您也可以使用[最適化Forms核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant#features)。 這些核心元件提供標準且簡單的方法，可[建立表單或新增表單至AEM Sites頁面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。
 
 ### 設定範本 {#configuring-templates}
 

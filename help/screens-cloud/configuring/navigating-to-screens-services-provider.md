@@ -49,11 +49,11 @@ ht-degree: 4%
 1. 按一下&#x200B;**儲存**&#x200B;以連線至Screens內容提供者。
 
 1. 如果您已透過Cloud Manager的IP允許清單功能將AEM發佈執行個體設定為僅允許存取受信任的IP位址，則您需要在設定對話方塊中使用金鑰值來設定標頭，如下所示。
-需要列入白名單的IP也需要移至設定檔，並且需要從Cloud Manager設定中[取消套用](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list)。
+需要列入白名單的IP也需要移至設定檔，並且需要從Cloud Manager設定中[取消套用](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list)。
 
    ![影像](/help/screens-cloud/assets/configure/configure-screens20b.png)
-需要在AEM CDN設定中設定相同的金鑰。  建議不要直接將標頭值放入GITHub中，並使用[機密參考](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-credentials-authentication#rotating-secrets)。
-以下提供範例[CDN設定](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf)：
+需要在AEM CDN設定中設定相同的金鑰。  建議不要直接將標頭值放入GITHub中，並使用[機密參考](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-credentials-authentication#rotating-secrets)。
+以下提供範例[CDN設定](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf)：
 
    ```kind: "CDN"
        version: "1"
@@ -98,4 +98,4 @@ ht-degree: 4%
 
 ## 下一步 {#whats-next}
 
-瞭解如何設定Screens服務提供者後，請瀏覽至[使用Screens內容提供者](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html#screens-content-provider)以取得詳細資訊。
+瞭解如何設定Screens服務提供者後，請瀏覽至[使用Screens內容提供者](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=zh-Hant#screens-content-provider)以取得詳細資訊。

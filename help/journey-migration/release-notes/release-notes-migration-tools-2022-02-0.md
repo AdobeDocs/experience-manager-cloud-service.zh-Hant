@@ -40,7 +40,7 @@ Best Practices Analyzer v2.1.24的發行日期為2022年2月1日。
 
 ### 新增功能 {#what-is-new-ctt}
 
-* 內容驗證 — 使用者可以可靠地判斷「內容轉移工具」擷取的所有內容是否已成功擷取至目標例項。 若要使用此功能，請在來源AEM環境的`System Console`中啟用它。 如需詳細資訊，請參閱[驗證內容傳輸 — 快速入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html#getting-started)。
+* 內容驗證 — 使用者可以可靠地判斷「內容轉移工具」擷取的所有內容是否已成功擷取至目標例項。 若要使用此功能，請在來源AEM環境的`System Console`中啟用它。 如需詳細資訊，請參閱[驗證內容傳輸 — 快速入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=zh-Hant#getting-started)。
 
 ### 錯誤修正 {#bug-fixes-ctt}
 

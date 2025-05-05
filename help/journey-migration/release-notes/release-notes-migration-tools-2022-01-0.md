@@ -23,7 +23,7 @@ ht-degree: 6%
 
 ### 新增功能 {#what-is-new-ctt}
 
-* 切換已新增到內容轉移工具中的擷取階段，以允許使用者在擷取期間停用[預先複製](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html)。 為獲得最佳擷取速度，若是小型移轉集或在上次擷取後只新增了數個blob，擷取期間的預先複製功能應停用。
+* 切換已新增到內容轉移工具中的擷取階段，以允許使用者在擷取期間停用[預先複製](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=zh-Hant)。 為獲得最佳擷取速度，若是小型移轉集或在上次擷取後只新增了數個blob，擷取期間的預先複製功能應停用。
 
 ### 錯誤修正 {#bug-fixes-ctt}
 

@@ -21,7 +21,7 @@ ht-degree: 14%
 
 >[!NOTE]
 >
->請參閱[近期文件更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)瞭解與版本不直接相關的文件更新的詳細資料。
+>請參閱[近期文件更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=zh-Hant)瞭解與版本不直接相關的文件更新的詳細資料。
 
 ## 發行日期 {#release-date}
 
@@ -115,7 +115,7 @@ ht-degree: 14%
 
 ### 新增功能 {#what-is-new-ctt}
 
-* 檢查大小護欄 — 內容轉移工具檢查大小功能有助於減少失敗的內容轉移。  使用檢查大小功能，使用者可以1)在擷取前先判斷在`crx-quickstart`子目錄中是否有足夠的磁碟空間，以及2)估計移轉集大小並驗證其是否受支援。 如果違反了其中一項或兩項檢查，使用者會在CTT UI中看到警告。 有了這道護欄，您可以避免內容轉移失敗，並主動與Adobe客戶服務討論移轉選項。 如需詳細資訊，請參閱[決定移轉集大小和磁碟空間](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#migration-set-size)。
+* 檢查大小護欄 — 內容轉移工具檢查大小功能有助於減少失敗的內容轉移。  使用檢查大小功能，使用者可以1)在擷取前先判斷在`crx-quickstart`子目錄中是否有足夠的磁碟空間，以及2)估計移轉集大小並驗證其是否受支援。 如果違反了其中一項或兩項檢查，使用者會在CTT UI中看到警告。 有了這道護欄，您可以避免內容轉移失敗，並主動與Adobe客戶服務討論移轉選項。 如需詳細資訊，請參閱[決定移轉集大小和磁碟空間](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=zh-Hant#migration-set-size)。
 
 ## 最佳做法分析工具 {#bpa-release}
 

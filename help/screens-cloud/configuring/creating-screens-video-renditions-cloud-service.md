@@ -27,7 +27,7 @@ ht-degree: 0%
 1. 在Screens內容提供者中導覽至您的管道。
 
    >[!NOTE]
-   >如需詳細資訊，請參閱[使用Screens內容提供者](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html#screens-content-provider)。
+   >如需詳細資訊，請參閱[使用Screens內容提供者](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=zh-Hant#screens-content-provider)。
 
 1. 從左側導覽列按一下[工具]區段，然後按一下&#x200B;**Assets**，然後按一下&#x200B;**處理設定檔**。
 

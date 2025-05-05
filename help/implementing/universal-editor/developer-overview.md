@@ -32,8 +32,8 @@ ht-degree: 1%
 
 若要遵循本概述，您需要下列可用專案。
 
-* [AEM as a Cloud Service的本機開發執行個體](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
-   * 您的本機開發執行個體必須在`localhost`[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html)上以HTTPS設定，以進行開發。
+* [AEM as a Cloud Service的本機開發執行個體](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hant)
+   * 您的本機開發執行個體必須在`localhost`[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html?lang=zh-Hant)上以HTTPS設定，以進行開發。
    * [必須安裝WKND示範網站](https://github.com/adobe/aem-guides-wknd)。
 * [存取通用編輯器](/help/implementing/universal-editor/getting-started.md#onboarding)。
 * [本機通用編輯器服務](/help/implementing/universal-editor/local-dev.md)正在執行以進行開發。

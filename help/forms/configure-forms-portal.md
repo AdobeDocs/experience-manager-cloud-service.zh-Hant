@@ -16,7 +16,7 @@ ht-degree: 4%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/introduction-publishing-forms.html) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/introduction-publishing-forms.html?lang=zh-Hant) |
 | AEM as a Cloud Service （核心元件） | 本文章 |
 
 Forms Portal提供在AEM Sites頁面上顯示和列出最適化Forms的有效方式。 對於需要平台來系統地向其使用者呈現各種形式的組織來說，這個範本非常有用。

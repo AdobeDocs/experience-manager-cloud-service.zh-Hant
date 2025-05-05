@@ -29,7 +29,7 @@ Dispatcher的設定結構在Managed Services和AEM as a Cloud Service之間有�
 ## 如何將AMS轉換為AEM as a Cloud Service Dispatcher設定
 
 以下章節提供如何轉換AMS設定的逐步指示。 其假設
-您的封存具有類似於[Cloud Manager Dispatcher設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html)中說明的結構
+您的封存具有類似於[Cloud Manager Dispatcher設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/dispatcher-configurations.html?lang=zh-Hant)中說明的結構
 
 ### 提取封存並移除最終首碼
 

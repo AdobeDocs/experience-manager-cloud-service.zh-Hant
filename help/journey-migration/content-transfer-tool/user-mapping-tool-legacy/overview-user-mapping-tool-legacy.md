@@ -28,8 +28,8 @@ NOTE: "LEGACY" for user mapping includes everything before (that is, not includi
 >id="aemcloud_ctt_usermapping"
 >title="User Mapping Tool"
 >abstract="The Content Transfer Tool helps you move users and groups from your existing AEM system to AEM as a Cloud Service. Existing users and groups need to be mapped to their IMS IDs to avoid duplicate users and groups on the Cloud Service author instance."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html#important-considerations" text="Important Considerations for using User Mapping Tool"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html#using-user-mapping-tool" text="Using User Mapping Tool"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=zh-Hant#important-considerations" text="Important Considerations for using User Mapping Tool"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=zh-Hant#using-user-mapping-tool" text="Using User Mapping Tool"
 
 -->
 
@@ -37,7 +37,7 @@ NOTE: "LEGACY" for user mapping includes everything before (that is, not includi
 
 在轉換至Adobe Experience Manager (AEM) as a Cloud Service的歷程中，您必須將使用者和群組從您現有的AEM系統移至AEM as a Cloud Service。 此移轉作業會由「內容轉移工具」完成。
 
-AEM as a Cloud Service的一項重大變更是完全整合式使用AdobeID來存取作者階層。 此整合需要使用[Adobe Admin Console](https://helpx.adobe.com/tw/enterprise/using/admin-console.html)來管理使用者和使用者群組。 使用者設定檔資訊會集中在AdobeIdentity Management系統(IMS)中，可提供所有Adobe雲端應用程式的單一登入。 如需詳細資訊，請參閱[Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html#identity-management)。 由於此變更，現有使用者和群組必須對應至其IMS ID，以避免Cloud Service作者執行個體上重複的使用者和群組。
+AEM as a Cloud Service的一項重大變更是完全整合式使用AdobeID來存取作者階層。 此整合需要使用[Adobe Admin Console](https://helpx.adobe.com/tw/enterprise/using/admin-console.html)來管理使用者和使用者群組。 使用者設定檔資訊會集中在AdobeIdentity Management系統(IMS)中，可提供所有Adobe雲端應用程式的單一登入。 如需詳細資訊，請參閱[Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html?lang=zh-Hant#identity-management)。 由於此變更，現有使用者和群組必須對應至其IMS ID，以避免Cloud Service作者執行個體上重複的使用者和群組。
 
 ## 使用者對應工具 {#mapping-tool}
 
