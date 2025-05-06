@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: 4144c726a6f8551df9497732c2ca95b8eec5c63a
+source-git-commit: ec5d15d6ca0e4dc75d1f8abbbd6f794534d8bed7
 workflow-type: tm+mt
-source-wordcount: '6142'
+source-wordcount: '6149'
 ht-degree: 99%
 
 ---
@@ -256,7 +256,7 @@ ht-degree: 99%
    + [Sling Service 使用者對應和服務使用者定義的最佳做法](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
    + [Adobe as a Cloud Service 的客戶自控金鑰](/help/security/customer-managed-keys.md)
 + 上線 {#onboarding}
-   + [從這裡開始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=zh-Hant)
+   + [從這裡開始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
    + 上線歷程 {#journey}
       + [上線歷程概觀](/help/journey-onboarding/overview.md)
       + [上線準備](/help/journey-onboarding/preparation.md)
@@ -634,7 +634,7 @@ ht-degree: 99%
       + [為回應式網站傳遞最佳化影像](/help/assets/dynamic-media/responsive-site.md)
       + [預覽 Dynamic Media 資產](/help/assets/dynamic-media/previewing-assets.md)
       + [將 Dynamic Media 資產新增至頁面](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
-      + [將 Dynamic Video 或影像檢視器內嵌在網頁上](/help/assets/dynamic-media/embed-code.md)
+      + [將 Dynamic Video 或影像檢視器嵌入在網頁上](/help/assets/dynamic-media/embed-code.md)
       + [將 URL 連結至您的網頁應用程式](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)
       + [要求傳遞失敗 URL 的錯誤報告](/help/assets/dynamic-media/reporting-dm.md)
       + [使用規則集轉換 URL](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md)
@@ -740,10 +740,10 @@ ht-degree: 99%
          + [檢視並了解 Adaptive Forms Analytics 報告](/help/forms/view-understand-aem-forms-analytics-reports.md)
          + [向 Adobe Workfront Fusion 提交最適化表單](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
          + [將最適化表單與 Microsoft Power Automate 整合](/help/forms/forms-microsoft-power-automate-integration.md)
-         + [在 AEM Sites 頁面中內嵌最適化表單](/help/forms/embed-adaptive-form-aem-sites.md)
-         + [將根據核心元件的最適化表單內嵌至外部網頁](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
+         + [在 AEM Sites 頁面中嵌入最適化表單](/help/forms/embed-adaptive-form-aem-sites.md)
+         + [將根據核心元件的最適化表單嵌入至外部網頁](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
          + [AEM Forms與Adobe Experience Platform (AEP)整合](/help/forms/aem-forms-aep-connector.md)
-         + [將根據基礎元件的最適化表單內嵌至外部網頁](/help/forms/embed-adaptive-form-external-web-page.md)
+         + [將根據基礎元件的最適化表單嵌入至外部網頁](/help/forms/embed-adaptive-form-external-web-page.md)
          + 將自適應表單與 Adobe Marketo Engage 進行整合{#integrate-adaptive-form-with-market-engage}
             + [將 Adobe Marketo Engage 與 AEM Forms 進行整合](/help/forms/integrate-form-to-marketo-engage.md)
             + [設定新表單以與 Marketo Engage 進行整合](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
@@ -762,7 +762,8 @@ ht-degree: 99%
          + [使用表單資料模型](/help/forms/using-form-data-model.md)
          + [設計最適化表單的 XML 結構](/help/forms/adaptive-form-xml-schema-form-model.md)
    + 自適應表單 {#adaptive-forms-authoring}
-      + [建立最適化表單](/help/forms/create-an-adaptive-form.md)
+      + [建立自適應表單](/help/forms/create-an-adaptive-form.md)
+      + [哪個最適化Forms最適合您？](/help/edge/docs/forms/authoring-a-form.md)
       + [建立最適化表單片段](/help/forms/adaptive-form-fragments.md)
       + [新增自適應表單至 AEM Sites 頁面或體驗片段](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
       + 核心元件 {#authoring-adaptive-forms-core-components}
@@ -1086,7 +1087,7 @@ ht-degree: 99%
 + Headless {#headless}
    + [什麼是 Headless CMS？](/help/headless/what-is-headless.md)
    + [AEM Headless 簡介](/help/headless/introduction.md)
-   + [開發人員入口網站 (其他資源)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hant)
+   + [開發人員入口網站 (其他資源)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
    + [最佳做法 - 設定和使用](/help/headless/best-practices-setup-use.md)
    + 設定 {#setup}
       + [簡介](/help/headless/setup/introduction.md)
