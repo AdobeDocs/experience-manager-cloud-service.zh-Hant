@@ -4,7 +4,7 @@ description: 了解如何將內容傳遞網路設定新增至 Edge Delivery 網�
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 960aa3c6-27b9-44b1-81ea-ad8c5bbc99a5
-source-git-commit: 8e4d988934b927ecbbb29277acdd373a87193ea9
+source-git-commit: 4fa8c65d9744b9451089423de0da63b39530973e
 workflow-type: tm+mt
 source-wordcount: '712'
 ht-degree: 76%
@@ -64,7 +64,9 @@ ht-degree: 76%
 
 使用`/program/{programId}/site/{siteId}` API端點在Helix 4和Helix 5之間移轉Edge Delivery網站。
 
-Helix 4網站的CDN設定無法自動移轉至Helix 5。 此限制之所以存在，是因為客戶生產網站可能仍在Helix 4上執行，而其Helix 5版本仍在開發中。
+>[!IMPORTANT]
+>
+>Helix 4網站的CDN設定無法自動移轉至Helix 5。 此限制之所以存在，是因為客戶生產網站可能仍在Helix 4上執行，而其Helix 5版本仍在開發中。
 
 **必備條件**
 
