@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: da14ed18b786c1f19d76926ed027d13a53275af3
+source-git-commit: a2039c99cd1c7e163086ba20af3b41b48fa93683
 workflow-type: tm+mt
-source-wordcount: '1395'
-ht-degree: 30%
+source-wordcount: '2133'
+ht-degree: 20%
 
 ---
 
@@ -192,6 +192,122 @@ ht-degree: 30%
 
 在預覽模式中，點選或按一下內容的反應就像對內容的讀者一樣。 若要選取要編輯的內容，請切換出[預覽模式](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)。
 
+## 編輯元件繼承 {#inheritance}
+
+繼承是可連結內容的機制，如此一來變更一個會自動變更另一個。
+
+使用通用編輯器，您只需更新內容即可取消內容的繼承。 編輯器會自動停用該頁面上作者所做所有變更的繼承，以確保在從Blueprint同步更新時保留修改的內容。
+
+如果您的程式已啟用&#x200B;**AEM多網站管理(MSM)擴充功能**，您就有[額外的工具列選項](#inheritance-extension)可檢視和變更通用編輯器中個別元件的繼承狀態。
+
+如需有關使用通用編輯器繼承如何運作的詳細資訊，請參閱[通用編輯器中的內容繼承](/help/sites-cloud/authoring/universal-editor/inheritance.md)。
+
+
+## 選擇性工具列選項{#toolbar-options}
+
+其他功能可作為通用編輯器的擴充功能使用，協助您進一步管理頁面和內容。 [這些擴充功能必須由系統管理員在程式中啟用](/help/implementing/universal-editor/extending.md)，您才能在[通用編輯器工具列](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)中以內容作者身分看到它們。
+
+### 繼承 {#inheritance-extension}
+
+**AEM多網站管理(MSM)擴充功能**&#x200B;會顯示所選元件的目前繼承狀態，並可讓您[中斷或復原繼承。](/help/sites-cloud/authoring/universal-editor/inheritance.md)
+
+「通用編輯器」工具列中的&#x200B;**已安裝繼承**&#x200B;圖示顯示，所選元件的繼承仍然有效。
+
+![已安裝的繼承圖示](assets/inheritance-installed-icon.png)
+
+點選或按一下圖示以中斷所選元件的繼承。 如果您編輯元件，繼承會自動中斷。
+
+**繼承中斷**&#x200B;圖示顯示所選元件的繼承已中斷。
+
+![繼承中斷圖示](assets/inheritance-broken-icon.png)
+
+點選或按一下圖示，以恢復所選元件的繼承。 您需要重新載入頁面以重新整理內容，才能顯示繼承的內容。
+
+如需如何啟用此擴充功能的詳細資訊，[請參閱Extension Manager檔案。](https://developer.adobe.com/uix/docs/extension-manager/)
+
+>[!NOTE]
+>
+>**已安裝繼承**&#x200B;和&#x200B;**繼承中斷**&#x200B;圖示只有在選取元件且頁面以Blueprint為基礎時才會顯示。
+
+>[!NOTE]
+>
+>**AEM Multi-Site-Management (MSM) Extension**&#x200B;僅適用於頁面，不適用於內容片段。
+
+### 存取頁面屬性 {#page-properties}
+
+**AEM頁面屬性擴充功能**&#x200B;可讓您快速存取目前編輯之頁面的[頁面屬性視窗](/help/sites-cloud/authoring/sites-console/page-properties.md)。
+
+![頁面屬性圖示](assets/page-properties-icon.png)
+
+在通用編輯器工具列中點選或按一下&#x200B;**頁面屬性**&#x200B;圖示，以在新的瀏覽器標籤中開啟頁面的頁面屬性。
+
+如需如何啟用此擴充功能的詳細資訊，[請參閱Extension Manager檔案。](https://developer.adobe.com/uix/docs/extension-manager/)
+
+>[!NOTE]
+>
+>**AEM頁面屬性擴充功能**&#x200B;僅適用於頁面，不適用於內容片段。
+
+### 存取網站主控台 {#sites-console}
+
+**AEM網站管理擴充功能**&#x200B;可讓您快速存取AEM的[網站主控台](/help/sites-cloud/authoring/sites-console/introduction.md)中正在編輯的頁面，讓您在主控台中導覽網站樹狀結構或執行頁面層級的動作。
+
+![在網站管理員圖示中開啟](assets/open-in-site-admin-icon.png)
+
+點選或按一下圖示，在新的瀏覽器標籤中開啟「網站主控台」，並導覽至目前位於編輯器中的頁面。
+
+如需如何啟用此擴充功能的詳細資訊，[請參閱Extension Manager檔案。](https://developer.adobe.com/uix/docs/extension-manager/)
+
+### 鎖定和解鎖頁面 {#locking-pages}
+
+**AEM頁面鎖定擴充功能**&#x200B;會在編輯器中顯示頁面的目前鎖定狀態，並可讓您[鎖定或解除鎖定頁面。](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page)
+
+通用編輯器工具列中的&#x200B;**解除鎖定**&#x200B;圖示顯示編輯器中目前沒有鎖定頁面。
+
+![解除鎖定圖示](assets/unlocked-icon.png)
+
+點選或按一下圖示以鎖定頁面。
+
+通用編輯器工具列中的&#x200B;**已鎖定**&#x200B;圖示顯示編輯器中目前的頁面已鎖定。 將滑鼠停留在圖示上，就會顯示工具提示，指出鎖定頁面的使用者。
+
+![鎖定的圖示](assets/locked-icon.png)
+
+如果您是鎖定頁面的使用者，請點選或按一下圖示以解除鎖定頁面。
+
+如需如何啟用此擴充功能的詳細資訊，[請參閱Extension Manager檔案。](https://developer.adobe.com/uix/docs/extension-manager/)
+
+>[!NOTE]
+>
+>**AEM頁面鎖定擴充功能**&#x200B;僅適用於頁面，不適用於內容片段。
+
+### 工作流程 {#workflows}
+
+**AEM工作流程擴充功能**&#x200B;可讓您[在目前編輯器的頁面上啟動工作流程](/help/sites-cloud/authoring/workflows/overview.md)。
+
+![工作流程圖示](assets/workflows-icon.png)
+
+在Universal Editor工具列中點選或按一下&#x200B;**工作流程**&#x200B;圖示，以開啟&#x200B;**啟動工作流程**&#x200B;強制回應視窗。 此視窗會列出您可以套用工作流程的可能內容。
+
+![開始工作流程強制回應視窗](assets/start-a-workflow.png)
+
+1. 在&#x200B;**工作流程模型**&#x200B;下拉式清單中，選取要套用的工作流程。
+1. 在&#x200B;**名稱**&#x200B;欄位中提供工作流程的說明。
+1. 在要包含在工作流程&#x200B;**清單中的**&#x200B;內容中，使用核取方塊來定義要包含在工作流程中的內容。
+1. 點選或按一下&#x200B;**開始工作流程**&#x200B;以開始工作流程，或點選或按一下&#x200B;**關閉**&#x200B;以中止。
+
+如需如何啟用此擴充功能的詳細資訊，[請參閱Extension Manager檔案。](https://developer.adobe.com/uix/docs/extension-manager/)
+
+### 開發人員登入 {#developer-login}
+
+**AEM Universal Editor Dev Login Extension**&#x200B;對於在本機開發的開發人員很有用，可讓您以方便的方式驗證本機AEM SDK以進行測試。
+
+![開發人員登入圖示](assets/developer-login-icon.png)
+
+在Universal Editor工具列中，點選或按一下&#x200B;**開發人員登入**&#x200B;圖示，提供您的本機登入認證，以登入您本機的AEM SDK。
+
+![開發人員登入模式](assets/developer-login.png)
+
+如需如何啟用此擴充功能的詳細資訊，[請參閱Extension Manager檔案。](https://developer.adobe.com/uix/docs/extension-manager/)
+
 ## 其他資源 {#additional-resources}
 
 若要瞭解如何使用通用編輯器發佈內容，請參閱本檔案。
@@ -205,11 +321,3 @@ ht-degree: 30%
 * [Universal Editor 架構](/help/implementing/universal-editor/architecture.md) - 了解 Universal Editor 的架構，以及資料如何在其服務和階層之間流動。
 * [屬性和類型](/help/implementing/universal-editor/attributes-types.md) - 了解 Universal Editor 需要的資料屬性和類型。
 * [Universal Editor 驗證](/help/implementing/universal-editor/authentication.md) - 了解 Universal Editor 如何進行驗證。
-
-## 編輯元件繼承 {#inheritance}
-
-繼承是可連結內容的機制，如此一來變更一個會自動變更另一個。
-
-使用通用編輯器，您只需更新內容即可取消內容的繼承。 編輯器會自動停用該頁面上作者所做所有變更的繼承，以確保在從Blueprint同步更新時保留修改的內容。
-
-如需有關使用通用編輯器繼承如何運作的詳細資訊，請參閱[通用編輯器中的內容繼承](/help/sites-cloud/authoring/universal-editor/inheritance.md)。
