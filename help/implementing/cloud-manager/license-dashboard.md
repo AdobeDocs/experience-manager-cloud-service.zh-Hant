@@ -5,10 +5,10 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: e25e337e4b71ed6c0d15bddcb306be243d970501
+source-git-commit: 6b3e2b960869786427a22d077216aa75a5ca0717
 workflow-type: tm+mt
 source-wordcount: '890'
-ht-degree: 23%
+ht-degree: 26%
 
 ---
 
@@ -19,7 +19,7 @@ Cloud Manager 提供了一個儀表板，用於輕鬆查看您的組織或租用
 
 >[!IMPORTANT]
 >
->授權儀表板僅適用於AEM as a Cloud Service計畫。 [AMS程式](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-manager/content/introduction)未包含在授權儀表板中。
+>授權儀表板僅適用於AEM as a Cloud Service計畫。 [AMS程式](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)未包含在授權儀表板中。
 >
 >若要判斷您的程式具有的服務型別（AMS或AEMaaCS），請參閱[瀏覽Cloud Manager UI](/help/implementing/cloud-manager/navigation.md#program-cards)。
 
@@ -100,7 +100,7 @@ The right side of the window presents an area chart showing the usage broken dow
 
 ## 常見問題 {#faq}
 
-+++**什麼是內容要求？**{#what-is-a-content-request}
+### 什麼是內容請求？{#what-is-a-content-request}
 
 內容請求是任何導向至AEM Sites或客戶提供的快取系統（例如內容傳遞網路）的請求。 它會擷取HTML格式的內容或資料以供頁面檢視。 或者，以JSON格式用於API呼叫。
 
@@ -109,29 +109,25 @@ The right side of the window presents an area chart showing the usage broken dow
 內容請求會排除僅為了提供產品和服務而由或代表Adobe提出的請求或活動。 Adobe 識別的來自與常見搜索引擎和社交媒體服務相關的機器人、爬蟲和蜘蛛的使用者代理流量也被排除在外。
 
 另請參閱[瞭解Cloud Service內容要求](/help/implementing/cloud-manager/content-requests.md)。
-+++
 
-+++**Adobe Experience Manager如何測量內容請求？**{#how-are-content-requests-measured}
+### Adobe Experience Manager 如何衡量內容請求？{#how-are-content-requests-measured}
 
 內容請求在 AEM as a Cloud Service 的邊緣伺服器進行追蹤。原始流量不計入內容請求。AEM as a Cloud Service 內建的 CDN 可跟踪有效的 HTML 和 JSON 請求。
 
 AEM 還制定了排除知名機器人的規則，包括定期存取該網站以刷新其搜索索引或服務的知名服務。
 
 另請參閱[瞭解Cloud Service內容請求](/help/implementing/cloud-manager/content-requests.md)。
-+++
 
-+++**為什麼我的Analytics報告顯示的結果與AEM內容請求不同？**{#why-are-reports-different}
+### 為什麼我的Analytics報表顯示的結果與AEM內容請求不同？{#why-are-reports-different}
 
 內容請求可能與組織的Analytics報告工具不同。 如需詳細資訊，請參閱[瞭解Cloud Service內容要求](/help/implementing/cloud-manager/content-requests.md)。
-+++
 
-+++**如果我想進一步瞭解我的內容請求量，該怎麼辦？**{#current-request-volumes}
+### 如果我想了解更多有關我的內容請求量的資訊呢?{#current-request-volumes}
 
 如果您想進一步瞭解授權儀表板中顯示的內容請求量，您的Adobe團隊可以提供一份報告，顯示內容請求的主要數量驅動因素。 請聯絡您的Adobe團隊或Adobe客戶支援，以請求最高使用量報告。
-+++
 
-+++**如果我使用自己的CDN怎麼辦？**{#using-own-cdn}
+### 如果我使用自己的 CDN 怎麼辦？{#using-own-cdn}
 
 授權儀表板只會顯示Cloud Service CDN追蹤的資料。 如果您選擇使用自己的CDN (BYOCDN)，請按照合約中的規定每年向Adobe報告您的內容請求量。
-+++
+
 
