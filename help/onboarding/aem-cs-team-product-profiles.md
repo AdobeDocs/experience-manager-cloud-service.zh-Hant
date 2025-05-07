@@ -4,10 +4,10 @@ description: 了解 AEM as a Cloud Service 團隊和產品設定檔如何能夠�
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 86bb2e020a003fd418f8b1cf7bdf55987a2eaf3d
-workflow-type: ht
-source-wordcount: '2062'
-ht-degree: 100%
+source-git-commit: b9cc5450effb70afcb67725fe38826646d947da9
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -143,11 +143,10 @@ Forms Communication 解決方案獲得授權時，對應的產品設定檔也會
         <td>AEM Assets 協作者使用者</td>
         <td>
         <ul>
-                <li>適用於對 DAM 的唯讀存取權。此產品設定檔中的使用者會是「投稿人」AEM 群組的成員，且該群組是在 AEM 中自動建立。
+                <li>透過整合其他 Adobe 產品和非 Adobe 應用程式中可供貴組織使用的資產來運用 Experience Manager 中的資產。
                 </li>
-                <li>
-                此外，它還提供 Adobe Express 權益來建立資產變化版本。
-                </li>
+                <li>使用內建的 Adobe Express 和 Firefly，善用專業設計的範本、品牌套件、Adobe Stock 資產等等，以建立和編輯資產。</li>
+                <li>透過 AEM Assets Content Hub 入口網站來存取貴組織中已核准的資產並加以運用。</li>
           <ul>
     </tr>
     <tr>
@@ -156,11 +155,11 @@ Forms Communication 解決方案獲得授權時，對應的產品設定檔也會
         <td>AEM Assets 進階使用者</td>
 <td>
         <ul>
-                <li>適用於對 DAM 的唯讀存取權。此產品設定檔中的使用者會是「投稿人」AEM 群組的成員，且該群組是在 AEM 中自動建立。
+                <li>存取所有 AEM Assets 功能，包含管理資產、中繼資料，以及有關數位資產的整體控管和自動化。</li>
+                <li>透過整合其他 Adobe 產品和非 Adobe 應用程式中可供貴組織使用的資產來運用 Experience Manager 中的資產。
                 </li>
-                <li>
-                此外，它還提供 Adobe Express 權益來建立資產變化版本。
-                </li>
+                <li>使用內建的 Adobe Express 和 Firefly，善用專業設計的範本、品牌套件、Adobe Stock 資產等等，以建立和編輯資產。</li>
+                <li>透過 AEM Assets Content Hub 入口網站來存取貴組織中已核准的資產並加以運用。</li>
           <ul>
 </td>
     </tr>
