@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: eddccf5a9d5c6be8d07120ea2f9e36007f7f909f
+source-git-commit: c6d03117494d913e5b93edde9d7b38544e566c8a
 workflow-type: tm+mt
-source-wordcount: '1698'
-ht-degree: 28%
+source-wordcount: '1729'
+ht-degree: 27%
 
 ---
 
@@ -79,7 +79,7 @@ Experience Cloud 標頭會始終顯示在畫面頂端。這是一個錨點，說
 
 #### Experience Manager {#experience-manager}
 
-選取標頭左側的Adobe Experience Cloud連結，即可導覽至Experience Manager解決方案的根目錄，以存取如[Cloud Manager](/help/onboarding/cloud-manager-introduction.md)、[Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)和[Software Distribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hant)之類的工具。
+選取標頭左側的Adobe Experience Cloud連結，即可導覽至Experience Manager解決方案的根目錄，以存取如[Cloud Manager](/help/onboarding/cloud-manager-introduction.md)、[Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)和[Software Distribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)之類的工具。
 
 ![全域導覽按鈕](assets/global-navigation.png)
 
@@ -219,9 +219,9 @@ Universal Editor工具列永遠出現在熒幕頂端[Experience Cloud標題](#ex
 
 Universal Editor提供可自訂且可擴充的撰寫體驗。 如果您在工具列中看到其他按鈕，表示您的通用編輯器已擴展。
 
-* 如需個別擴充功能如何運作的詳細資訊，[請參閱通用編輯器編寫檔案。](/help/sites-cloud/authoring/universal-editor/authoring.md#managing-page-content)
-* 如需擴充功能的詳細資訊，請參閱[擴充通用編輯器](/help/implementing/universal-editor/extending.md)。
-* 如需如何安裝個別擴充功能的詳細資訊，請參閱[Extension Manager檔案](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)。
+* 如需個別擴充功能如何運作的詳細資訊，[請參閱通用編輯器編寫檔案。](/help/sites-cloud/authoring/universal-editor/authoring.md#toolbar-options)
+* 如需擴充功能的詳細資訊，請參閱[擴充通用編輯器。](/help/implementing/universal-editor/extending.md)
+* 如需如何安裝個別擴充功能的詳細資訊，請參閱[Extension Manager檔案。](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)
 
 ### 編輯器 {#editor}
 
@@ -236,6 +236,8 @@ Universal Editor提供可自訂且可擴充的撰寫體驗。 如果您在工具
 屬性面板會一直沿著編輯器的右側顯示。 視其模式而定，可能會顯示在內容或頁面內容之階層中選取的元件詳細資訊。
 
 ![屬性面板](assets/properties-rail.png)
+
+根據您的程式組態，它也可以呈現已由您的管理員啟用為擴充功能的[額外功能。](#additional-properties-panel-buttons)
 
 #### 屬性模式 {#properties-mode}
 
@@ -315,12 +317,13 @@ Universal Editor提供可自訂且可擴充的撰寫體驗。 如果您在工具
 >
 >使用快速鍵`Shift+Backspace`從容器中刪除選取的元件。
 
-## 其他功能 {#additional-features}
+#### 其他按鈕 {#additional-properties-panel-buttons}
 
-Universal Editor提供可自訂和可擴充的撰寫體驗。 如果您在屬性面板或工具列中看到其他按鈕或選項，表示已擴充您的通用編輯器。
+Universal Editor提供可自訂且可擴充的撰寫體驗。 如果您在屬性面板中看到其他按鈕，表示您的通用編輯器已擴充。
 
-* 如需擴充功能的詳細資訊，請參閱[自訂及擴充通用編輯器](/help/implementing/universal-editor/customizing.md)。
-* 如需個別擴充功能運作方式的詳細資訊，請參閱[Extension Manager檔案](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)。
+* 如需個別擴充功能如何運作的詳細資訊，[請參閱通用編輯器編寫檔案。](/help/sites-cloud/authoring/universal-editor/authoring.md#properties-panel-options)
+* 如需擴充功能的詳細資訊，請參閱[擴充通用編輯器。](/help/implementing/universal-editor/extending.md)
+* 如需如何安裝個別擴充功能的詳細資訊，請參閱[Extension Manager檔案。](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)
 
 ## 後續步驟 {#next-steps}
 

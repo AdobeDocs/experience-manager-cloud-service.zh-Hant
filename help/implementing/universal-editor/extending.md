@@ -4,9 +4,9 @@ description: 瞭解擴充Universal Editor功能的不同選項，以支援內容
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
-source-git-commit: ff8025914a7ece20211ee154e03ce2cd602f81b6
+source-git-commit: 36a27d7fb36c9832b78c13d7544a43df2cbd0fa0
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '559'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,7 @@ ht-degree: 0%
 * **[AEM頁面鎖定擴充功能](/help/sites-cloud/authoring/universal-editor/authoring.md#locking-pages)**：從通用編輯器檢視並變更頁面鎖定狀態
 * **[AEM工作流程擴充功能](/help/sites-cloud/authoring/universal-editor/authoring.md#workflows)**：從通用編輯器開始頁面上的工作流程和頁面內容
 * **[AEM Universal Editor Dev登入擴充功能](/help/sites-cloud/authoring/universal-editor/authoring.md#developer-login)**：在本機開發時可輕鬆驗證您本機的AEM SDK
+* **[產生變數](/help/generative-ai/generate-variations-integrated-editor.md)**：使用產生式人工智慧(AI)，直接在屬性面板中建立內容的變數。
 * **[Universal Editor的AEM產品選擇器](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/ue-product-picker/)**：從編輯器選取或移除產品資料，以整合Adobe Commerce資料。
 * **[通用編輯器內容草稿](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/universal-editor-content-drafts/)**：建立、編輯及管理多個內容草稿。
 * **[可設定的資產選取器](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/)**：啟用從已編輯頁面所使用存放庫以外的存放庫選取資產。
@@ -48,7 +49,7 @@ Universal Editor的UI擴充功能是使用Adobe App Builder建置的JavaScript�
 
 >[!TIP]
 >
->如果您偏好以範例學習，請參閱[AEM UI擴充功能教學課程](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview)。 雖然重點在於擴充內容片段主控台，但在通用編輯器中實作UI擴充功能的概念是相同的。
+>如果您偏好以範例學習，請參閱[AEM UI擴充功能教學課程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview)。 雖然重點在於擴充內容片段主控台，但在通用編輯器中實作UI擴充功能的概念是相同的。
 
 [在AEM Sites中使用Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/)，您可以為每個執行個體啟用或停用擴充功能、存取Adobe的第一方擴充功能（包括Universal Editor的擴充功能）等等。
 

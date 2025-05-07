@@ -4,10 +4,10 @@ description: 了解「產生變化版本」，可透過 AEM as a Cloud Service �
 feature: Generate Variations
 role: Admin, Architect, Developer, User
 exl-id: d380ddd6-43f9-4bbf-8167-a6a472b9fc01
-source-git-commit: 056ad9a00ad725d2c10a17a5feff06126eb3c30b
+source-git-commit: c6d03117494d913e5b93edde9d7b38544e566c8a
 workflow-type: tm+mt
-source-wordcount: '1372'
-ht-degree: 98%
+source-wordcount: '1401'
+ht-degree: 95%
 
 ---
 
@@ -313,7 +313,10 @@ The brand score shows you how on-brand the generated variation is.
 
 ### 從 AEM 通用編輯器存取 {#access-aem-universal-editor}
 
-所實施的「從 [AEM 通用編輯器](/help/sites-cloud/authoring/universal-editor/authoring.md)存取」是一項擴充功能。如需其他詳細資訊，請參閱「[AEM Experience Manager 中的 Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/)」。
+從[AEM Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md)的存取已實作為擴充功能。
+
+* 如需有關如何從通用編輯器存取產生變異的詳細資訊，請參閱檔案[使用通用編輯器編寫內容。](/help/sites-cloud/authoring/universal-editor/authoring.md#generate-variations)
+* 如需如何啟用擴充功能的詳細資訊，請參閱檔案： [AEM Experience Manager中的Extension Manager。](https://developer.adobe.com/uix/docs/extension-manager/)
 
 ### 從 AEM 內容片段編輯器存取 {#access-aem-content-fragment-editor}
 
@@ -325,9 +328,9 @@ The brand score shows you how on-brand the generated variation is.
 
 * [GitHub 上的 GenAI 產生變化版本](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
 * [Edge Delivery Services 實驗](https://www.aem.live/docs/experimentation)
-* [Experience Cloud產品中的Generative AI](https://experienceleague.adobe.com/zh-hant/docs/core-services/interface/features/generative-ai)
+* [Experience Cloud產品中的Generative AI](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai)
 
-   * [Experience Cloud產品中的Generative AI - Adobe Experience Manager](https://experienceleague.adobe.com/zh-hant/docs/core-services/interface/features/generative-ai#aem)
+   * [Experience Cloud產品中的Generative AI - Adobe Experience Manager](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai#aem)
 
 ## 發行歷史記錄 {#release-history}
 

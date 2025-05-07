@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: a2039c99cd1c7e163086ba20af3b41b48fa93683
+source-git-commit: 36a27d7fb36c9832b78c13d7544a43df2cbd0fa0
 workflow-type: tm+mt
-source-wordcount: '2133'
-ht-degree: 20%
+source-wordcount: '2222'
+ht-degree: 19%
 
 ---
 
@@ -178,14 +178,6 @@ ht-degree: 20%
 >
 >如果目標容器[元件篩選器](/help/implementing/universal-editor/filtering.md)允許選取的元件，則元件只能在容器之間移動。
 
-### 使用GenAI建立變化並產生變化 {#generate-variations-ai}
-
-使用Generative Variations來利用Generative AI加速內容建立。
-
-開啟「通用編輯器」以尋找「產生變化」的進入點。
-
-如需瞭解詳細資訊，請參閱[產生變數 — 整合至AEM編輯器](/help/generative-ai/generate-variations-integrated-editor.md)。
-
 ## 預覽內容 {#previewing-content}
 
 內容編輯完成後，您通常會希望瀏覽其內容，以查看它在其他頁面內容中的樣子。在[預覽模式](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)中，您可以點選連結，像讀者一樣瀏覽您的內容。內容在編輯器中呈現的樣子就是將會發佈的樣子。
@@ -202,8 +194,7 @@ ht-degree: 20%
 
 如需有關使用通用編輯器繼承如何運作的詳細資訊，請參閱[通用編輯器中的內容繼承](/help/sites-cloud/authoring/universal-editor/inheritance.md)。
 
-
-## 選擇性工具列選項{#toolbar-options}
+## 選用的工具列功能 {#toolbar-options}
 
 其他功能可作為通用編輯器的擴充功能使用，協助您進一步管理頁面和內容。 [這些擴充功能必須由系統管理員在程式中啟用](/help/implementing/universal-editor/extending.md)，您才能在[通用編輯器工具列](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)中以內容作者身分看到它們。
 
@@ -305,6 +296,20 @@ ht-degree: 20%
 在Universal Editor工具列中，點選或按一下&#x200B;**開發人員登入**&#x200B;圖示，提供您的本機登入認證，以登入您本機的AEM SDK。
 
 ![開發人員登入模式](assets/developer-login.png)
+
+如需如何啟用此擴充功能的詳細資訊，[請參閱Extension Manager檔案。](https://developer.adobe.com/uix/docs/extension-manager/)
+
+## 選用的屬性面板功能 {#properties-panel-options}
+
+其他功能可作為通用編輯器的擴充功能使用，協助您進一步管理頁面內容。 [這些擴充功能必須由系統管理員在程式中啟用](/help/implementing/universal-editor/extending.md)，您才能在[通用編輯器屬性面板](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)中以內容作者身分看到它們。
+
+### 產生變化版本 {#generate-variations}
+
+**產生變數**&#x200B;擴充功能可讓您使用產生式人工智慧(AI)，直接在屬性面板中建立內容的變數。
+
+![產生變數圖示](assets/generate-variations-icon.png)
+
+在Universal Editor屬性面板中，點選或按一下&#x200B;**產生變化**&#x200B;圖示，以接收建議並建立變化。 請參閱檔案[產生變數 — 整合在AEM編輯器中](/help/generative-ai/generate-variations-integrated-editor.md)，以取得有關產生變數如何運作的詳細資訊。
 
 如需如何啟用此擴充功能的詳細資訊，[請參閱Extension Manager檔案。](https://developer.adobe.com/uix/docs/extension-manager/)
 
