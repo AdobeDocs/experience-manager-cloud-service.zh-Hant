@@ -5,9 +5,9 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 83def24319831c3f14f396f2f6b92b053a9d46a9
+source-git-commit: f102cdbab6b38ffabc370691e507754227b91f4e
 workflow-type: tm+mt
-source-wordcount: '1569'
+source-wordcount: '1595'
 ht-degree: 28%
 
 ---
@@ -84,7 +84,7 @@ Cloud Manager建置流程預設會使用Oracle 8 JDK建置專案，但AEM Cloud 
 
 #### 移轉至使用Java 21或Java 17建置的先決條件 {#prereq-for-building}
 
-若要移轉至使用Java 21或Java 17的建置版本，您必須先升級至最新的SonarQube版本。 如需詳細資訊，請參閱[Cloud Manager 2025.1.0](/help/implementing/cloud-manager/release-notes/current.md#what-is-new)發行說明。
+為了使用Java 21或Java 17進行建置，Cloud Manager現在使用SonarQube 9.9，其與這些Java版本相容。 此變更已在Cloud Manager 2025.1.0版中引入。升級SonarQube不需要客戶採取任何動作。 如需詳細資訊及瞭解變更，請參閱[Cloud Manager 2025.1.0](/help/implementing/cloud-manager/release-notes/2025/2025-1-0.md)發行說明。
 
 將應用程式移轉至新的Java組建版本和執行階段版本時，請先在開發和測試環境中徹底測試，然後再部署到生產環境。
 
