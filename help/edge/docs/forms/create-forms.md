@@ -1,12 +1,13 @@
 ---
-title: 開始使用 AEM Forms 適用的 Edge Delivery Services。建立表單。
-description: 快速製作完美表單！⚡ AEM Forms Edge Delivery 文件型製作 = 驚人的速度和 SEO 友善表單，讓使用者更滿意且適用於搜尋引擎。
+title: 使用最適化Forms區塊建立表單
+description: 開始使用適用於AEM Forms的Edge Delivery Services。 快速製作完美表單！AEM Forms Edge Delivery以檔案為基礎的製作=速度飛快，適合SEO使用的表單，適合更快樂的使用者和搜尋引擎。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 04fb65b4ec2d8bf6f54e1927469cda4bf94cbec8
+exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
+source-git-commit: efd4fbb38724632865d87b80827611899e2c6d1f
 workflow-type: tm+mt
-source-wordcount: '781'
-ht-degree: 98%
+source-wordcount: '784'
+ht-degree: 96%
 
 ---
 
@@ -113,7 +114,7 @@ Ensure a smooth GitHub build process by addressing potential issues:
 
 +++
 
-+++ 步驟2：使用您的Edge Delivery Services頁面預覽表單。
++++ 步驟 2：使用 Edge Delivery Service 頁面預覽表單。
 
 
 到目前為止，您已經準備好表單的結構。現在，若要預覽表單：
