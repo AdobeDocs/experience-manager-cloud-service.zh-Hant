@@ -1,8 +1,8 @@
 ---
-source-git-commit: a3c3ee1b3c5944ca9f5178209adc2cc0b2e5f7ff
-workflow-type: ht
-source-wordcount: '1467'
-ht-degree: 100%
+source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
+workflow-type: tm+mt
+source-wordcount: '1491'
+ht-degree: 98%
 
 ---
 # 程式碼片段 {#snippets}
@@ -222,7 +222,7 @@ ht-degree: 100%
 
 **若要記錄支援服務單：**
 
-1. [遵循標準支援流程](https://experienceleague.adobe.com/zh-hant?support-tab=home#support)並建立服務單。
+1. [遵循標準支援流程](https://experienceleague.adobe.com/?support-tab=home#support)並建立服務單。
 1. 將 **Edge Delivery** 加入服務單標題中。
 1. 在描述中，除了問題描述之外，還提供以下詳細資訊：
 
@@ -259,3 +259,9 @@ ht-degree: 100%
 * [提交表單後顯示自訂感謝訊息](/help/edge/docs/forms/thank-you-page-form.md)
 * [最適化表單區塊元件及其屬性](/help/edge/docs/forms/form-components.md)
 * [使用表單提交服務](/help/forms/forms-submission-service.md)
+
+## 通用編輯器Headless驗證 {#ue-headless-auth}
+
+>[!NOTE]
+>
+>如果您在Headless使用案例中使用通用編輯器，您的Headless應用程式必須管理其自己的驗證。

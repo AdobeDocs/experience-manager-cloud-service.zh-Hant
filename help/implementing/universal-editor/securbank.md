@@ -4,7 +4,7 @@ description: 透過使用SecurBank應用程式來瞭解具有實作體驗的通�
 exl-id: 97e1395f-b51e-4cee-b1d0-2466a08f96af
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 1%
@@ -25,7 +25,7 @@ ht-degree: 1%
 SecurBank應用程式的安裝很簡單，但由於涉及AEM as a Cloud Service的許多領域，因此需要執行許多步驟。 以下是主要步驟的概觀。
 
 1. [在Cloud Manager中建立沙箱計畫](#create-sandbox-program)。
-1. [復製程式的Git存放庫並更新為SecurBank AEM專案內容](#clone-and-update)。
+1. [復製程式的Git存放庫並更新SecurBank AEM專案內容](#clone-and-update)。
 1. [執行管道以部署SecurBank AEM專案](#run-pipeline)。
 1. [擷取Cloud Manager認證以進行本機Web應用程式開發](#retrieve-credentials)。
 1. [下載並設定SecurBank網頁應用程式](#download-web-app)。
@@ -137,3 +137,6 @@ SecurBank的AEM專案已送交沙箱存放庫後，便可隨管道部署。
 如果內容尚未顯示，請確定您執行的&#x200B;**部署至開發**&#x200B;管道已成功完成。
 
 瀏覽器中的![SecurBank應用程式](assets/securbank.png)
+
+{{ue-headless-auth}}
+

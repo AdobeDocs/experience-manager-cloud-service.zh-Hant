@@ -4,7 +4,7 @@ description: 了解如何存取 Universal Editor，以及如何開始檢測您�
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 722d9a14ccac2f9f1c6dd32455935bafc4897a68
+source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
 workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 37%
@@ -18,7 +18,7 @@ ht-degree: 37%
 
 >[!TIP]
 >
->如果您想直接深入瞭解範例，可以在GitHub[&#128279;](https://github.com/adobe/universal-editor-sample-editable-app)上檢閱通用編輯器範例應用程式。
+>如果您想直接深入瞭解範例，可以在GitHub](https://github.com/adobe/universal-editor-sample-editable-app)上檢閱[通用編輯器範例應用程式。
 
 雖然通用編輯器可以編輯任何來源的內容，但本檔案將以AEM應用程式為例。 本文件將引導您完成這些步驟。
 
@@ -178,6 +178,8 @@ data-aue-resource="urn:<referenceName>:<resource>"
 您的應用程式現在可以使用 Universal Editor 了！
 
 請參閱[使用 Universal Editor 編寫內容](/help/sites-cloud/authoring/universal-editor/authoring.md)以了解內容作者使用 Universal Editor 建立內容有多簡單和直覺。
+
+{{ue-headless-auth}}
 
 ## 其他資源 {#additional-resources}
 

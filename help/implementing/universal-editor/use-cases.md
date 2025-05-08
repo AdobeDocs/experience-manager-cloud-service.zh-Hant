@@ -4,7 +4,7 @@ description: 瞭解Universal Editor的主要使用案例，以及如何最好地
 exl-id: 398ad0e2-c299-4c49-9784-05c84c67bec2
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: cdad4954b13f5582bebfd604220da90529231ccd
+source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
 workflow-type: tm+mt
 source-wordcount: '878'
 ht-degree: 0%
@@ -56,6 +56,8 @@ Universal Editor為您的內容作者提供方便、直觀的視覺編輯器，�
 
 閱讀該檔案後，您可以返回本頁瞭解WYSIWYG編寫使用案例以及Universal Editor的一般運作方式。
 
+{{ue-headless-auth}}
+
 ## 通用編輯器的運作方式 {#how-ue-works}
 
 Universal Editor的強大功能是能夠就地撰寫任何內容，因此無論內容為何，都可為內容作者提供完全直覺式且統一的UI。
@@ -63,7 +65,7 @@ Universal Editor的強大功能是能夠就地撰寫任何內容，因此無論�
 Universal Editor的運作方式如下。
 
 1. 開發人員會測試應用程式或頁面，以使用通用編輯器。 此檢測會告知編輯器哪些內容可編輯以及如何將其保留。
-   * 如果您使用Edge Delivery Services[&#128279;](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)檔案遵循WYSIWYG製作的開發人員快速入門手冊，您的頁面會自動進行檢測。
+   * 如果您使用Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)檔案遵循WYSIWYG製作的[開發人員快速入門手冊，您的頁面會自動進行檢測。
    * 針對Headless編寫，可輕鬆檢測您的應用程式。
 1. 內容作者會載入通用編輯器，接著再載入您的頁面進行編輯。 由於是儀器式的，因此它知道哪些內容可以編輯，以及如何表示和持續儲存內容。
 1. 內容作者可在直覺式的WYSIWYG介面中編輯頁面內容，就地編輯。
