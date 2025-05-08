@@ -18,7 +18,7 @@ ht-degree: 37%
 
 >[!TIP]
 >
->如果您想直接深入瞭解範例，可以在GitHub](https://github.com/adobe/universal-editor-sample-editable-app)上檢閱[通用編輯器範例應用程式。
+>如果您想直接深入瞭解範例，可以在GitHub[&#128279;](https://github.com/adobe/universal-editor-sample-editable-app)上檢閱通用編輯器範例應用程式。
 
 雖然通用編輯器可以編輯任何來源的內容，但本檔案將以AEM應用程式為例。 本文件將引導您完成這些步驟。
 
