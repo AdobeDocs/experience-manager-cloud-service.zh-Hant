@@ -5,9 +5,9 @@ exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
 source-git-commit: 20d4ea369676baad28c43246fe399e2e2f4b1db7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4278'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -184,7 +184,7 @@ data:
 
 | **屬性** | **類型** | **說明** |
 |---|---|---|
-| reqProperty | `string` | 要求屬性。<br><br>之一：<br><ul><li>`path`：傳回不包含查詢參數的 URL 完整路徑。(使用未轉義變體的 `pathRaw`)</li><li>`url`：傳回含查詢參數的完整 URL。(使用未轉義變體的 `urlRaw`)</li><li>`queryString`：傳回 URL 的查詢部分</li><li>`method`：傳回要求中所使用的 HTTP 方法。</li><li>`tier`：傳回 `author`、`preview` 或 `publish` 其中之一。</li><li>`domain`：傳回小寫的網域屬性 (如 `Host` 標頭的定義)</li><li>`clientIp`：傳回用戶端 IP 位址。</li><li>`forwardedDomain`：傳回`X-Forwarded-Host` 標頭內定義的第一個小寫網域</li><li>`forwardedIp`：傳回 `X-Forwarded-For` 標頭中的第一個 IP 位址。</li><li>`clientRegion`：傳回識別使用者端所在區域的國家/地區細分代碼，如[ISO 3166-2](https://en.wikipedia.org/wiki/ISO_3166-2)所述。</li><li>`clientCountry`：傳回兩個字母的代碼 ([區域指示器符號](https://zh.wikipedia.org/wiki/tw/Regional_indicator_symbol))，可識別客戶位於哪個國家/地區。</li><li>`clientContinent`：傳回可識別使用者端所在大陸的兩個字母代碼(AF、AN、AS、EU、NA、OC、SA)。</li><li>`clientAsNumber`：傳回與使用者端IP相關聯的[自治系統](https://en.wikipedia.org/wiki/Autonomous_system_(Internet))號碼。</li><li>`clientAsName`：傳回與自治系統編號相關聯的名稱。</li></ul> |
+| reqProperty | `string` | 要求屬性。<br><br>之一：<br><ul><li>`path`：傳回不包含查詢參數的 URL 完整路徑。(使用未轉義變體的 `pathRaw`)</li><li>`url`：傳回含查詢參數的完整 URL。(使用未轉義變體的 `urlRaw`)</li><li>`queryString`：傳回 URL 的查詢部分</li><li>`method`：傳回要求中所使用的 HTTP 方法。</li><li>`tier`：傳回 `author`、`preview` 或 `publish` 其中之一。</li><li>`domain`：傳回小寫的網域屬性 (如 `Host` 標頭的定義)</li><li>`clientIp`：傳回用戶端 IP 位址。</li><li>`forwardedDomain`：傳回`X-Forwarded-Host` 標頭內定義的第一個小寫網域</li><li>`forwardedIp`：傳回 `X-Forwarded-For` 標頭中的第一個 IP 位址。</li><li>`clientRegion`：傳回國家/地區細分代碼，指出客戶所在的區域，如 [ISO 3166-2](https://en.wikipedia.org/wiki/ISO_3166-2) 所述。</li><li>`clientCountry`：傳回兩個字母的代碼 ([區域指示符](https://en.wikipedia.org/wiki/Regional_indicator_symbol))，可識別客戶位於哪個國家/地區。</li><li>`clientContinent`：傳回兩個字母的代碼 (AF、AN、AS、EU、NA、OC、SA)，可識別客戶位於哪個洲。</li><li>`clientAsNumber`：傳回與用戶端 IP 相關的[自治系統](https://en.wikipedia.org/wiki/Autonomous_system_(網際網路))編號。</li><li>`clientAsName`：傳回與自治系統編號相關的名稱。</li></ul> |
 | reqHeader | `string` | 傳回具有指定名稱的要求標頭 |
 | queryParam | `string` | 傳回具有指定名稱的查詢參數 |
 | reqCookie | `string` | 傳回具有指定名稱的 Cookie |
@@ -568,7 +568,7 @@ CDN 記錄可能會延遲最多五分鐘。
 這些規則的行為方式如下：
 
 * 任何符合規則的客戶宣告規則名稱會列於 `match` 屬性中。
-* `action` 屬性會確定規則是阻止、允許或記錄。
+*  `action` 屬性會確定規則是阻止、允許或記錄。
 * 如果 WAF 已取得授權並啟用， `waf` 屬性會列出所有偵測到的 WAF 標幟 (例如 SQLI)。無論 WAF 標幟是否列在任何規則中，都是如此。這是提供深入分析要宣告的潛在新規則。
 * 如果沒有客戶宣告的規則相符且沒有 WAF 規則相符，則 `rules` 屬性為空。
 
