@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 2a1b87c2-29b9-4689-9a15-e17942439160
-source-git-commit: 20f57e2b1b502f48f54e8a03d35a231d0c905739
+source-git-commit: 9941c652a1509934662cdaae6d187d1a28a1cc31
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '549'
 ht-degree: 3%
 
 ---
@@ -59,7 +59,9 @@ Universal Editor不會影響繼承的基礎機制。 如需繼承如何運作的
 
 如果已安裝，**AEM Multi-Site-Management (MSM) Extension**&#x200B;會顯示所選元件的目前繼承狀態，並可讓您中斷或恢復元件層級的繼承。
 
-如需詳細資訊，請參閱[撰寫檔案。](/help/sites-cloud/authoring/universal-editor/authoring.md#inheritance)
+請參閱[撰寫檔案以取得有關如何使用此擴充功能的詳細資訊。](/help/sites-cloud/authoring/universal-editor/authoring.md#inheritance)
+
+如需如何啟用此擴充功能的詳細資訊，[請參閱Extension Manager檔案。](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 ## 限制 {#limitations}
 

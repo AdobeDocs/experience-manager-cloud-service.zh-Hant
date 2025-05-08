@@ -4,9 +4,9 @@ description: 瞭解擴充Universal Editor功能的不同選項，以支援內容
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
-source-git-commit: 36a27d7fb36c9832b78c13d7544a43df2cbd0fa0
+source-git-commit: 9941c652a1509934662cdaae6d187d1a28a1cc31
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '580'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## 擴充功能 {#extensions}
 
-作為Adobe Experience Cloud服務，Universal Editor的UI可以使用App Builder和Experience Manager進行擴充。 Adobe提供許多您專案可使用的現成擴充功能。
+作為Adobe Experience Cloud服務，Universal Editor的UI可以使用App Builder和Experience Manager進行擴充。 Adobe透過[Extension Manager](https://experience.adobe.com/aem/extension-manager)提供許多您專案可用的現成擴充功能。
 
 * **[AEM Multi-Site-Management (MSM) Extension](/help/sites-cloud/authoring/universal-editor/authoring.md#inheritance)**：在元件層級中斷或復原繼承
 * **[AEM頁面屬性擴充功能](/help/sites-cloud/authoring/universal-editor/authoring.md#page-properties)**：存取通用編輯器中頁面的頁面屬性視窗
@@ -37,6 +37,8 @@ ht-degree: 0%
 * **[將內容片段匯出至Adobe Target](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/exporting-content-fragment-to-adobe-target/)**：將在Adobe Experience Manager as a Cloud Service中建立的內容片段匯出至Adobe Target，以在Target活動中作為選件使用，以大規模測試並個人化體驗。
 * **[內容片段工作流程](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/content-fragments-workflows/)**：起始所選內容片段的AEM工作流程。
 
+如需如何啟用這些擴充功能的詳細資訊，[請參閱Extension Manager檔案。](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
+
 ## 擴充UI {#extending-ui}
 
 Universal Editor的UI擴充功能是使用Adobe App Builder建置的JavaScript應用程式。 使用這些相同的工具，您還可以將自己的按鈕和動作新增到頁首選單和屬性面板，並為通用編輯器建立自己的事件。
@@ -49,7 +51,7 @@ Universal Editor的UI擴充功能是使用Adobe App Builder建置的JavaScript�
 
 >[!TIP]
 >
->如果您偏好以範例學習，請參閱[AEM UI擴充功能教學課程](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview)。 雖然重點在於擴充內容片段主控台，但在通用編輯器中實作UI擴充功能的概念是相同的。
+>如果您偏好以範例學習，請參閱[AEM UI擴充功能教學課程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview)。 雖然重點在於擴充內容片段主控台，但在通用編輯器中實作UI擴充功能的概念是相同的。
 
 [在AEM Sites中使用Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/)，您可以為每個執行個體啟用或停用擴充功能、存取Adobe的第一方擴充功能（包括Universal Editor的擴充功能）等等。
 

@@ -5,7 +5,7 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 36a27d7fb36c9832b78c13d7544a43df2cbd0fa0
+source-git-commit: 9941c652a1509934662cdaae6d187d1a28a1cc31
 workflow-type: tm+mt
 source-wordcount: '2222'
 ht-degree: 19%
@@ -214,7 +214,7 @@ ht-degree: 19%
 
 點選或按一下圖示，以恢復所選元件的繼承。 您需要重新載入頁面以重新整理內容，才能顯示繼承的內容。
 
-如需如何啟用此擴充功能的詳細資訊，[請參閱Extension Manager檔案。](https://developer.adobe.com/uix/docs/extension-manager/)
+如需如何啟用此擴充功能的詳細資訊，[請參閱Extension Manager檔案。](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 >[!NOTE]
 >
@@ -232,7 +232,7 @@ ht-degree: 19%
 
 在通用編輯器工具列中點選或按一下&#x200B;**頁面屬性**&#x200B;圖示，以在新的瀏覽器標籤中開啟頁面的頁面屬性。
 
-如需如何啟用此擴充功能的詳細資訊，[請參閱Extension Manager檔案。](https://developer.adobe.com/uix/docs/extension-manager/)
+如需如何啟用此擴充功能的詳細資訊，[請參閱Extension Manager檔案。](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 >[!NOTE]
 >
@@ -246,7 +246,7 @@ ht-degree: 19%
 
 點選或按一下圖示，在新的瀏覽器標籤中開啟「網站主控台」，並導覽至目前位於編輯器中的頁面。
 
-如需如何啟用此擴充功能的詳細資訊，[請參閱Extension Manager檔案。](https://developer.adobe.com/uix/docs/extension-manager/)
+如需如何啟用此擴充功能的詳細資訊，[請參閱Extension Manager檔案。](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 ### 鎖定和解鎖頁面 {#locking-pages}
 
@@ -264,7 +264,7 @@ ht-degree: 19%
 
 如果您是鎖定頁面的使用者，請點選或按一下圖示以解除鎖定頁面。
 
-如需如何啟用此擴充功能的詳細資訊，[請參閱Extension Manager檔案。](https://developer.adobe.com/uix/docs/extension-manager/)
+如需如何啟用此擴充功能的詳細資訊，[請參閱Extension Manager檔案。](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 >[!NOTE]
 >
@@ -285,7 +285,7 @@ ht-degree: 19%
 1. 在要包含在工作流程&#x200B;**清單中的**&#x200B;內容中，使用核取方塊來定義要包含在工作流程中的內容。
 1. 點選或按一下&#x200B;**開始工作流程**&#x200B;以開始工作流程，或點選或按一下&#x200B;**關閉**&#x200B;以中止。
 
-如需如何啟用此擴充功能的詳細資訊，[請參閱Extension Manager檔案。](https://developer.adobe.com/uix/docs/extension-manager/)
+如需如何啟用此擴充功能的詳細資訊，[請參閱Extension Manager檔案。](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 ### 開發人員登入 {#developer-login}
 
@@ -297,7 +297,7 @@ ht-degree: 19%
 
 ![開發人員登入模式](assets/developer-login.png)
 
-如需如何啟用此擴充功能的詳細資訊，[請參閱Extension Manager檔案。](https://developer.adobe.com/uix/docs/extension-manager/)
+如需如何啟用此擴充功能的詳細資訊，[請參閱Extension Manager檔案。](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 ## 選用的屬性面板功能 {#properties-panel-options}
 
@@ -311,7 +311,7 @@ ht-degree: 19%
 
 在Universal Editor屬性面板中，點選或按一下&#x200B;**產生變化**&#x200B;圖示，以接收建議並建立變化。 請參閱檔案[產生變數 — 整合在AEM編輯器中](/help/generative-ai/generate-variations-integrated-editor.md)，以取得有關產生變數如何運作的詳細資訊。
 
-如需如何啟用此擴充功能的詳細資訊，[請參閱Extension Manager檔案。](https://developer.adobe.com/uix/docs/extension-manager/)
+如需如何啟用此擴充功能的詳細資訊，[請參閱Extension Manager檔案。](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
 
 ## 其他資源 {#additional-resources}
 
