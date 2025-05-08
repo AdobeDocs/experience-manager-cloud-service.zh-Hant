@@ -1,8 +1,8 @@
 ---
 source-git-commit: a3c3ee1b3c5944ca9f5178209adc2cc0b2e5f7ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1467'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 # 程式碼片段 {#snippets}
@@ -187,7 +187,7 @@ ht-degree: 97%
 
 >[!IMPORTANT]
 >
->如果您使用[通用編輯器進行內容製作，](/help/implementing/universal-editor/introduction.md)，並且想要同時使用[IP允許清單，](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)您也必須使用Universal Editor服務的IP位址[新增並套用允許清單。](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#univeral-editor)
+>如果您使用[通用編輯器進行內容製作，](/help/implementing/universal-editor/introduction.md)而且也希望使用 [IP 允許清單，](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)則您也必須[新增並套用包含通用編輯器 IP 位址的允許清單。](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#univeral-editor)
 
 ## 使用 Dynamic Media {#work-with-dynamic-media}
 
@@ -222,7 +222,7 @@ ht-degree: 97%
 
 **若要記錄支援服務單：**
 
-1. [遵循標準支援流程](https://experienceleague.adobe.com/zh-hant?support-tab=home#support)並建立服務單。
+1. [遵循標準支援流程](https://experienceleague.adobe.com/?support-tab=home#support)並建立服務單。
 1. 將 **Edge Delivery** 加入服務單標題中。
 1. 在描述中，除了問題描述之外，還提供以下詳細資訊：
 

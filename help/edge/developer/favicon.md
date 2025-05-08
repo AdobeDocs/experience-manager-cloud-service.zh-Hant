@@ -1,5 +1,5 @@
 ---
-description: 在您的網站新增Favicon，可讓您在訪客的瀏覽器中擁有專業的外觀：
+description: 為您的網站加入網站圖示，在訪客的瀏覽器中展現專業形象：
 title: Favicon
 feature: Edge Delivery Services
 exl-id: e5225611-8bc7-4239-96db-83f7819410d7
@@ -8,9 +8,9 @@ index: false
 hide: true
 hidefromtoc: true
 source-git-commit: 1e69fd3abf8dad01886007bc16b2ed0d0df0777c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '17'
-ht-degree: 11%
+ht-degree: 100%
 
 ---
 
