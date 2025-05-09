@@ -1,8 +1,8 @@
 ---
-source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
+source-git-commit: 8d31907392e09bc5b3c669b8f8f23d6a2a26ced4
 workflow-type: tm+mt
-source-wordcount: '1491'
-ht-degree: 98%
+source-wordcount: '1523'
+ht-degree: 96%
 
 ---
 # 程式碼片段 {#snippets}
@@ -222,7 +222,7 @@ ht-degree: 98%
 
 **若要記錄支援服務單：**
 
-1. [遵循標準支援流程](https://experienceleague.adobe.com/zh-hant?support-tab=home#support)並建立服務單。
+1. [遵循標準支援流程](https://experienceleague.adobe.com/?support-tab=home#support)並建立服務單。
 1. 將 **Edge Delivery** 加入服務單標題中。
 1. 在描述中，除了問題描述之外，還提供以下詳細資訊：
 
@@ -265,3 +265,11 @@ ht-degree: 98%
 >[!NOTE]
 >
 >如果您在Headless使用案例中使用通用編輯器，您的Headless應用程式必須管理其自己的驗證。
+
+## 淘汰PWA {#pwa-deprecation}
+
+>[!IMPORTANT]
+>
+>已棄用AEM Sites [的漸進式網頁應用程式(PWA)功能](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md#pwa-features)。
+>
+>使用此功能的現有專案將繼續獲得支援，但新專案不應使用此功能。

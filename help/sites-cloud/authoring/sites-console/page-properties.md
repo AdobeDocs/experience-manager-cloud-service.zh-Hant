@@ -5,9 +5,9 @@ exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 8d4d60a2105915108393cc295949491e59e5fc2b
+source-git-commit: 8d31907392e09bc5b3c669b8f8f23d6a2a26ced4
 workflow-type: tm+mt
-source-wordcount: '2296'
+source-wordcount: '2454'
 ht-degree: 3%
 
 ---
@@ -242,7 +242,9 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->請參閱[啟用漸進式網頁應用程式功能](/help/sites-cloud/authoring/sites-console/enable-pwa.md)。
+>如需詳細資訊，請參閱[啟用漸進式網頁應用程式功能](/help/sites-cloud/authoring/sites-console/enable-pwa.md)。
+
+{{pwa-deprecation}}
 
 * **設定可安裝的體驗**
 
@@ -298,7 +300,7 @@ ht-degree: 3%
 
 ### 從Sites Console — 多個頁面 {#from-the-sites-console-multiple-pages}
 
-從Sites **&#x200B;**&#x200B;Console中，您可以選取數個頁面，然後使用 **View Properties**  (檢視屬性) 來檢視和/或編輯頁面屬性。這稱為頁面屬性的大量編輯。
+從Sites **** Console中，您可以選取數個頁面，然後使用 **View Properties**  (檢視屬性) 來檢視和/或編輯頁面屬性。這稱為頁面屬性的大量編輯。
 
 您可以選取多個頁面以透過各種方法進行大量編輯，包括：
 
@@ -337,3 +339,35 @@ ht-degree: 3%
       * 當您選取&#x200B;**完成**&#x200B;時，新值會套用至所有選取的頁面。
       * 當欄位有多個值時（例如「標籤」），您可以附加新值或移除通用值。
    * 不同頁面中相同但值不同的欄位會以特殊值（例如文字`<Mixed Entries>`）表示。
+
+## 屬性繼承 {#inheritance}
+
+如果頁面是根據Blueprint或繼承其他頁面的內容，繼承會反映在個別欄位的&#x200B;**頁面屬性**&#x200B;視窗中。
+
+![繼承的屬性](assets/property-inhertiance.png)
+
+繼承的屬性無法編輯。 點選或按一下特定欄位旁的&#x200B;**取消繼承**&#x200B;圖示以中斷其繼承。
+
+![取消繼承](assets/cancel-inheritance.png)
+
+在&#x200B;**取消繼承**&#x200B;強制回應視窗中確認取消。
+
+![取消繼承確認模式](assets/cancel-inheriance-confirmation.png)
+
+取消欄位的繼承後，該欄位就會變成可編輯。
+
+![已取消繼承](assets/property-inheritance-broken.png)
+
+若要恢復繼承，請點選或按一下欄位旁的&#x200B;**還原繼承**&#x200B;圖示。
+
+![還原繼承](assets/revert-inheritance.png)
+
+在&#x200B;**還原繼承**&#x200B;強制回應中確認重新版本。
+
+![還原繼承確認強制回應視窗](assets/revert-inhertiance-confirmation.png)
+
+在恢復繼承&#x200B;**後選取「**&#x200B;同步頁面」以使用Blueprint中的最新值更新欄位。 否則，下次同步化LiveCopy時將會更新值。
+
+>[!TIP]
+>
+>如需繼承的詳細資訊，請參閱檔案[多網站管理員與翻譯](/help/sites-cloud/administering/msm-and-translation.md)
