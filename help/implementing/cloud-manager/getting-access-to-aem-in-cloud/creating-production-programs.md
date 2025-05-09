@@ -5,7 +5,7 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: cb9707e4f53e32ed6e5aec244b1ef2240fcf376c
+source-git-commit: 87836c7f28c9e3c8269fac073f46c53ce73fecfa
 workflow-type: tm+mt
 source-wordcount: '1098'
 ht-degree: 11%
@@ -50,7 +50,7 @@ ht-degree: 11%
 
    * 如果您不確定是否需要一個或多個計畫以使用各種您可用的解決方案，請選取您最感興趣的一個。您之後可以[編輯計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)來啟用其他解決方案。如需更多計畫設定建議，請參閱[生產計畫簡介文件](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)。
    * 程式建立至少需要一個解決方案。
-   * 針對最佳化數位體驗的完整受管理CDN解決方案，選取&#x200B;**Edge Deliver Services**。 請參閱[關於使用Edge Delivery Services傳遞您的Cloud Manager專案](#edge-overview)
+   * 針對最佳化數位體驗的完整受管理CDN解決方案，選取&#x200B;**Edge Delivery Services**。 請參閱[關於使用Edge Delivery Services傳遞您的Cloud Manager專案](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
    * 如果您選取了&#x200B;**[啟用增強式安全性](#security)**&#x200B;選項，您只能選取可使用HIPAA許可權的解決方案。
 
      ![選取解決方案](/help/implementing/cloud-manager/assets/add-production-program-with-edge.png)
@@ -59,7 +59,7 @@ ht-degree: 11%
 
    ![選取附加元件](assets/setup-prod-commerce.png)
 
-1. 選取完解決方案和附加元件後，請按一下[繼續]。**&#x200B;**
+1. 選取完解決方案和附加元件後，請按一下[繼續]。****
 
 1. 在&#x200B;**上線日期**&#x200B;索引標籤上，輸入您計畫讓生產計畫上線的日期。
 
@@ -70,7 +70,7 @@ ht-degree: 11%
 
 1. 按一下「**建立**」。Cloud Manager會建立您的程式，並將其顯示在登陸頁面上以供選取。
 
-   ![Cloud Manager 概覽](assets/navigate-cm.png)
+   ![Cloud Manager 概觀](assets/navigate-cm.png)
 
 ## 其他生產計畫選項 {#options}
 
@@ -124,13 +124,13 @@ Sites和Forms提供標準的99.9% service level agreement (SLA)。 **99.99% Serv
 
 1. 當您在登入頁面上看到您的程式卡時，請按一下![更多圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)以檢視您可用的功能表選項。
 
-   ![計畫概觀](assets/program-overview.png)
+   ![計劃概觀](assets/program-overview.png)
 
-1. 選取&#x200B;**計畫概覽**&#x200B;導覽至 Cloud Manager 的&#x200B;**概覽**&#x200B;頁面。
+1. 選取&#x200B;**計劃概觀**&#x200B;導覽至 Cloud Manager 的&#x200B;**概觀**&#x200B;頁面。
 
-1. 概覽頁面上的主要號召性用語卡片會引導您建立環境、非生產管道，最後是生產管道。
+1. 概觀頁面上的主要call-to-action卡片會引導您建立環境、非生產管道，最後是生產管道。
 
-   ![方案概觀](assets/set-up-prod5.png)
+   ![計劃概觀](assets/set-up-prod5.png)
 
 >[!TIP]
 >

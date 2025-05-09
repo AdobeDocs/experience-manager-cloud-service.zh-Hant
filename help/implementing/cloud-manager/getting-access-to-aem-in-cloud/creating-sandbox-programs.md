@@ -5,7 +5,7 @@ exl-id: 10011392-3059-4bb0-88db-0af1d390742e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8b15b203d0d6a5947a80c9bd217c7fdcdb8f494c
+source-git-commit: 87836c7f28c9e3c8269fac073f46c53ce73fecfa
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 15%
@@ -57,7 +57,7 @@ ht-degree: 15%
 
 1. 從Cloud Manager登陸頁面，在沙箱計畫中，在您的建立的沙箱計畫上按一下![更多小型清單圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
 
-   ![存取計畫概觀](assets/program-overview-sandbox.png)
+   ![存取計劃概觀](assets/program-overview-sandbox.png)
 
 1. 專案建立步驟完成時，您可以按一下&#x200B;**存取存放庫資訊**&#x200B;連結，以便能夠使用您的Git存放庫。
 
@@ -71,7 +71,7 @@ ht-degree: 15%
 
    ![存取 AEM 連結](assets/create-program5.png)
 
-1. 部署到開發的非生產管道完成時，行動號召中的精靈會引導您存取AEM開發環境或將計畫碼部署到開發環境。
+1. 部署到開發的非生產管道完成時，call-to-action中的精靈會引導您存取AEM開發環境或將計畫碼部署到開發環境。
 
    ![部署沙箱](assets/create-program-setup-deploy.png)
 

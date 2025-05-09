@@ -5,9 +5,9 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: bd207a7c3e9e5e52202456fa95dd31293639725f
+source-git-commit: 23ee3857bb0440ba9f386002b859217d0b5f8f37
 workflow-type: tm+mt
-source-wordcount: '1464'
+source-wordcount: '1476'
 ht-degree: 3%
 
 ---
@@ -19,6 +19,10 @@ ht-degree: 3%
 內容請求包括傳送至AEM Sites的請求。 這些請求可能會透過Edge Delivery Services或客戶提供的快取系統(例如內容傳遞網路(CDN))路由。 這些請求會以HTML或JSON格式傳送結構化資料，並支援頁面檢視（例如頁面和體驗片段）或JSON以Headless方式透過API傳回。
 
 當使用者使用HTML或JSON檢視頁面時，系統會計算內容請求。 它會在第一快取系統收到請求的位置測量請求。 出於計算內容請求的目的，包含或排除某些HTTP請求。 檢視HTTP [包含的內容要求](#included-content-requests)和[排除的內容要求](#excluded-content-request)的完整清單。
+
+>[!NOTE]
+>
+>內容請求檢視中顯示的資料每24小時會重新整理一次。
 
 ## 關於Cloud Service內容請求 {#understanding-cloud-service-content-requests}
 
