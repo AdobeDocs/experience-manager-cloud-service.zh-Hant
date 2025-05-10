@@ -4,8 +4,8 @@ description: 了解如何使用 Edge Delivery Services 傳遞您的 Cloud Manage
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 086aaf323291279d0782c71982baa1a5867784a1
-workflow-type: ht
+source-git-commit: 54ea92b53d97be314dcef1ed3afbde35b16f9949
+workflow-type: tm+mt
 source-wordcount: '812'
 ht-degree: 100%
 
@@ -30,7 +30,7 @@ AEM as a Cloud Service 中的 Cloud Manager 可讓您為專案啟用 Edge Delive
 
 ## 關於 Cloud Manager 中的 Edge Delivery Services {#edge-in-cloud-manager}
 
-如果您已在 Adobe Experience Manager Sites 中獲得 Edge Delivery Services 授權，現在可以直接在 Cloud Manager 中使用 Edge Delivery Services 讓您的網站上線，並[使用引導式自助服務體驗](/help/implementing/cloud-manager/managing-code/private-repositories.md)來啟用網站。
+如果您已在 Adobe Experience Manager Sites 中獲得 Edge Delivery Services 授權，現在可以直接在 Cloud Manager 中使用 Edge Delivery Services 讓您的網站上線，並[使用引導式自助服務體驗](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)來啟用網站。
 
 此外，您還可以獲得整合的體驗來管理所有 AEM 屬性，同時確保重要工作流程的一致性。這些工作流程包括網域名稱管理、SSL 憑證管理和內容傳遞網路對應。
 
@@ -83,7 +83,7 @@ Cloud Manager 中的 **Edge Delivery 待辦事項清單**&#x200B;是上線任務
 | 7 | 設定推播驗證 | 請參閱「[為 Edge Delivery 網站設定推播驗證](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)」。 |
 | 8 | 上線 | 請參閱「[上線檢查清單](/help/edge/docs/go-live-checklist.md)」。 |
 
->[!VIDEO](https://video.tv.adobe.com/v/3441574?learn=on&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## 記錄支援服務單 {#eds-support-ticket}
 

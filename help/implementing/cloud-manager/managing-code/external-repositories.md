@@ -5,7 +5,7 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="早期採用者" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: a0eac2f3f513b9fecd595a86bb2110083fa0b80f
+source-git-commit: d0cf86d429c7374ad12f6eeb9f287b0ace3406ec
 workflow-type: tm+mt
 source-wordcount: '2074'
 ht-degree: 23%
@@ -96,8 +96,9 @@ ht-degree: 23%
 1. 新增或編輯管道：
    * [新增生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
    * [新增非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
-   <!-- * [Add an Edge Delivery Pipeline]() -->
    * [編輯管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#editing-pipelines)
+
+   <!-- Add an Edge Delivery Pipeline -->
 
    ![管道的來源代碼存放庫和 Git 分支](/help/implementing/cloud-manager/managing-code/assets/pipeline-repo-gitbranch.png)
    *新增非生產管道對話框，其中包含選取的存放庫和 Git 分支，*
