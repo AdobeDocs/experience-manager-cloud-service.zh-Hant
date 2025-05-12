@@ -4,9 +4,9 @@ description: 了解 Adobe Experience Manager as a Cloud Service 中 Cloud Manage
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: effa19a98d59993e330e925fb933a436ff9d20d7
+source-git-commit: 6b18623cc940856383009cd6b4ba011515c12ab5
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '780'
 ht-degree: 18%
 
 ---
@@ -40,9 +40,9 @@ Helix 4和Helix 5的內容來源組態有下列差異：
 
 本文提供這兩個版本的完整設定步驟、範例和驗證指示。
 
-B **在您開始之前**
+**開始之前**
 
-如果您在Cloud Manager[&#128279;](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site)中使用按一下Edge Delivery，則您的網站為具有單一存放庫的Helix 5。 遵循Helix 5指示，使用提供的Helix 4 YAML版本作為後援。
+如果您在Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site)中使用[按一下Edge Delivery，則您的網站為具有單一存放庫的Helix 5。 遵循Helix 5指示，使用提供的Helix 4 YAML版本作為後援。
 
 **決定您的Helix版本**
 
@@ -131,7 +131,7 @@ Helix 5是重寫程式，不使用`fstab.yaml`，並支援多個網站共用相�
 1. 透過API金鑰或存取權杖進行驗證。
 1. 進行下列`PUT` API呼叫：
 
-   ```bash
+   ```bash {.line-numbering}
    PUT /api/{program}/{programId}/site/{siteId}
    Content-Type: application/json
    
