@@ -4,9 +4,9 @@ description: 瞭解如何使用AEM as a Cloud Service的記錄來設定中央記
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 7efbdecdddb66611cbde0dc23928a61044cc96d5
+source-git-commit: f799dd9a4a2e5138776eb57a04c116df49d28030
 workflow-type: tm+mt
-source-wordcount: '2377'
+source-wordcount: '2546'
 ht-degree: 9%
 
 ---
@@ -99,6 +99,10 @@ AEM as a Cloud Service可讓您存取Java記錄陳述式。 AEM應用程式的�
 
 AEM記錄層級是透過OSGi設定根據環境型別設定，而這些設定又會提交至Git，並透過Cloud Manager部署至AEM as a Cloud Service。 因此，最好讓記錄陳述一致且對於環境型別而言是眾所周知的，以確保透過AEM as Cloud Service取得的記錄可在最佳記錄層級使用，而不需要以更新的記錄層級設定重新部署應用程式。
 
+>[!NOTE]
+>
+>為確保有效監控客戶環境，請勿變更預設記錄層級。 此外，請勿修改預設的記錄格式。 記錄輸出必須保持指向預設檔案。 如需特定准則，請參閱[下方](#configuration-loggers)一節。
+
 **範例記錄輸出**
 
 ```
@@ -153,6 +157,19 @@ AEM Java記錄檔會定義為OSGi設定，因此可使用執行模式資料夾�
 | `org.apache.sling.commons.log.file` | 指定輸出的目標： `logs/error.log` |
 
 變更其他LogManager OSGi設定屬性可能會導致AEM as a Cloud Service中的可用性問題。
+
+如上一節所述，為確保有效監控客戶環境：
+* AEM產品程式碼的Java記錄必須保留其預設記錄層級「INFO」，且不得由自訂設定覆寫。
+* 針對產品程式碼將記錄層級設定為DEBUG是可以接受的，但請謹慎使用以防止效能降低，並在不再需要時還原回INFO。
+* 調整客戶開發程式碼的記錄層級是可接受的。
+* 所有記錄(AEM產品程式碼和客戶開發的程式碼)都必須保持預設的記錄格式。
+* 記錄輸出必須保持導向到預設檔案&quot;logs/error.log&quot;。
+
+為此，不得對以下OSGi屬性進行變更：
+* **Apache Sling記錄設定** (PID： `org.apache.sling.commons.log.LogManager`) — *所有屬性*
+* **Apache Sling記錄記錄器組態** （工廠PID： `org.apache.sling.commons.log.LogManager.factory.config`）：
+   * `org.apache.sling.commons.log.file`
+   * `org.apache.sling.commons.log.pattern`
 
 以下是三種AEM as a Cloud Service環境型別的建議記錄設定範例（使用`com.example`的預留位置Java套件）。
 
