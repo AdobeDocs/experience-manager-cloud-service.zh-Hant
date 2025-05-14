@@ -4,9 +4,9 @@ description: 瞭解AEM as a Cloud Service中的內容搜尋和索引。
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 feature: Operations
 role: Admin
-source-git-commit: bf8ec70fa6f6678c4a2ffb49aea453be11fa26f1
+source-git-commit: e6b1a42c36d85ca255138a115bffddb087370a62
 workflow-type: tm+mt
-source-wordcount: '2767'
+source-wordcount: '2850'
 ht-degree: 1%
 
 ---
@@ -31,9 +31,9 @@ ht-degree: 1%
 
 限制:
 
-* 目前，僅型別`lucene`的索引支援AEM as a Cloud Service上的索引管理。
-* 僅支援標準分析器（即產品隨附的分析器）。 不支援自訂分析器。
+* 目前，僅型別`lucene`的索引支援AEM as a Cloud Service上的索引管理。 這表示所有索引自訂都必須是型別`lucene`。 `async`屬性只能是下列其中一項： `[async]`、`[async,nrt]`或`[fulltext-async]`。
 * 在內部，可以設定其他索引並用於查詢。 例如，在Skyline上，針對`damAssetLucene`索引編寫的查詢實際上可能會針對此索引的Elasticsearch版本執行。 應用程式和使用者通常不會看到這個差異，但是，某些工具（例如`explain`功能）會報告不同的索引。 如需Lucene索引與Elastic索引之間的差異，請參閱[Apache Jackrabbit Oak中的Elastic檔案](https://jackrabbit.apache.org/oak/docs/query/elastic.html)。 客戶不需要直接設定Elasticsearch索引，也無法直接設定。
+* 僅支援標準分析器（即產品隨附的分析器）。 不支援自訂分析器。
 * 不支援按類似特徵向量(`useInSimilarity = true`)搜尋。
 
 >[!TIP]
@@ -79,6 +79,9 @@ ht-degree: 1%
 
 `<prefix>.<indexName>-<productVersion>-custom-<customVersion>`
 
+如限制區段中所述，即使使用封裝管理員擷取的索引定義是其他型別（例如`elasticsearch`），自訂索引定義的`type`必須一律設為`lucene`。
+如果擷取的索引定義設為`elastic-async`，也必須變更`async`屬性。 對於自訂索引定義，`async`屬性必須設定為下列其中一個： `[async]`、`[async,nrt]`或`[fulltext-async]`。
+
 <!-- Alexandru: temporarily drafting this statement due to CQDOC-17701
 
 The package from the above sample is built as `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`. -->
@@ -96,7 +99,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 為了說明如何部署現成可用的索引`damAssetLucene-8`的自訂版本，我們將提供逐步指南。 在此範例中，我們將它重新命名為`damAssetLucene-8-custom-1`。 然後程式如下：
 
 1. 在`ui.apps`目錄中建立具有更新索引名稱的新資料夾：
-   * 範例： `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/`
+   * 範例：`ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/`
 
 2. 新增組態檔`.content.xml`，其自訂組態位於建立的資料夾內。 以下是自訂的範例：
 檔案名稱： `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-8-custom-1/.content.xml`
