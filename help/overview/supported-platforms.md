@@ -1,19 +1,19 @@
 ---
-title: 支援的使用者端平台
+title: 支援的用戶端平台
 description: 瞭解哪些瀏覽器支援透過Adobe Experience Manager as a Cloud Service製作內容及存取透過AEM發佈的網站。
 topic-tags: platform
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 22d4e6b5f87221b2739cf1dd9d59b4652a014316
+exl-id: 7ddd0a75-621a-4499-91d1-7b3408a68269
+source-git-commit: e57610e4c5e498ddfdbaa0ba39c9197ecfb5d177
 workflow-type: tm+mt
 source-wordcount: '425'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
-
-# 支援的使用者端平台 {#supported-platforms}
+# 支援的用戶端平台 {#supported-platforms}
 
 瞭解哪些瀏覽器支援透過Adobe Experience Manager as a Cloud Service製作內容及存取透過AEM發佈的網站。
 
@@ -35,7 +35,7 @@ Adobe會定義AEM使用者端平台的下列支援等級。
 
 AEM使用者介面已針對筆記型電腦、桌上型電腦和平板電腦裝置(例如Apple iPad或Microsoft Surface)的大型熒幕進行最佳化。 電話外型規格不支援任何製作使用案例。
 
-根據[編寫方法，Adobe Experience Manager使用者介面可與下列使用者端平台搭配使用。](/help/edge/authoring-methods.md)
+根據[編寫方法，Adobe Experience Manager使用者介面可與下列使用者端平台搭配使用。](/help/edge/overview.md#authoring-method)
 
 * [通用編輯器](/help/sites-cloud/authoring/universal-editor/authoring.md)
 * [頁面編輯器](/help/sites-cloud/authoring/page-editor/introduction.md)

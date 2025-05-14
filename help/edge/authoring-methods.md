@@ -4,8 +4,11 @@ description: 了解在決定如何在 AEM 中製作內容時有哪些重要考�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: a75e7051-e5ec-4d2a-848a-a66989e2f30b
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+index: false
+hide: true
+hidefromtoc: true
+source-git-commit: e57610e4c5e498ddfdbaa0ba39c9197ecfb5d177
+workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 100%
 
