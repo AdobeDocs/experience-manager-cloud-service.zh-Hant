@@ -4,10 +4,10 @@ description: 了解 Adobe Experience Manager as a Cloud Service 中 Cloud Manage
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: f9f4226bff8a0772878c144773eb8ff841a0a8d0
+source-git-commit: 3db5ee2852fadc9c86b3a7979ce40296bbaca858
 workflow-type: tm+mt
-source-wordcount: '830'
-ht-degree: 17%
+source-wordcount: '1038'
+ht-degree: 14%
 
 ---
 
@@ -42,7 +42,7 @@ Helix 4和Helix 5的內容來源組態有下列差異：
 
 **開始之前**
 
-如果您在Cloud Manager[&#128279;](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site)中使用按一下Edge Delivery，則您的網站為具有單一存放庫的Helix 5。 遵循Helix 5指示，並使用提供的Helix 4 YAML版本指示作為後援。
+如果您在Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site)中使用[按一下Edge Delivery，則您的網站為具有單一存放庫的Helix 5。 遵循Helix 5指示，並使用提供的Helix 4 YAML版本指示作為後援。
 
 **決定您的Helix版本**
 
@@ -60,7 +60,7 @@ mountpoints:
   /: https://drive.google.com/drive/folders/your-folder-id
 ```
 
-此範例僅供說明之用。 實際URL應指向您的內容來源，例如特定的Google磁碟機資料夾、SharePoint目錄或AEM路徑。
+此範例僅供說明之用。 實際URL應指向您的內容來源，例如Google磁碟機資料夾、SharePoint目錄或AEM路徑。
 
 **設定Helix 4的內容來源：**
 
@@ -190,6 +190,16 @@ Helix 5是重寫程式，不使用`fstab.yaml`，並支援多個網站共用相�
 ![新增存放庫對話框](/help/implementing/cloud-manager/release-notes/assets/azure-repo.png)
 
 如果您有興趣測試此新功能並分享您的意見回饋，請使用與您的 Adobe ID 關聯的電子郵件地址向 [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) 傳送電子郵件。請務必包含您要使用的 Git 平台以及您是否使用私人/公開或企業存放庫結構。
+
+#### 自備Git的相關常見問題
+
+| 問號 | 答案 |
+|---|---|
+| *專案如何視需要切換回Adobe管理的Git存放庫？* | 直接切換回原位。 [更新管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)以指向Adobe存放庫，如果不再需要外部存放庫，則將其移除。 |
+| *是否可以針對不同的環境（例如，非生產環境與生產環境）設定不同的存放庫，以允許先在非生產環境中測試？* | 可以，可以為不同的環境設定不同的存放庫。 例如，開發或程式碼品質管道可指向外部存放庫，而生產管道仍會連線至Adobe存放庫。 在此設定期間，請確定兩個存放庫之間的同步處理作業保持作用中。 |
+| *現有的設定（例如IP允許清單）是否仍可繼續運作？* | 是的，現有的IP允許清單會照常繼續運作。 不過，如果外部Git存放庫受到防火牆保護，則必須將必要的[Adobe IP位址新增至允許清單](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)。 |
+| *所有GitLab存放庫URL都運作嗎？ 使用的存放庫URL格式為`https://gitlab_dedicated_url.com/path/repo-name.git`，不同於檔案中的範例。* | 是，支援任何支援API V3或V4的GitLab存放庫，包括自我託管的GitLab URL，例如[在Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md) (`https://git-vendor-name.com/org-name/repo-name.git`)中新增外部存放庫中所述。 |
+
 
 <!--
 ## Bug fixes
