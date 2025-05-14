@@ -1,31 +1,31 @@
 ---
-title: 新增內容傳遞網路設定
-description: 瞭解如何為Edge Delivery網站或Cloud Manager環境新增CDN設定。
+title: 新增網域對應
+description: 瞭解如何為Edge Delivery網站或Cloud Manager環境新增網域對應。
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: 70ee0ca9e7bb37abc6b82413fc02e37347893011
+source-git-commit: b3254d0a2194cb90d9eafd39978dcbdbd5e93610
 workflow-type: tm+mt
 source-wordcount: '453'
-ht-degree: 11%
+ht-degree: 9%
 
 ---
 
 
-# 新增內容傳遞網路設定 {#add-cdn}
+# 新增網域對應 {#add-cdn}
 
 若要將網域與計畫內Adobe管理的CDN上的SSL憑證連結，您必須新增CDN （內容傳遞網路）設定。
 
-對於Adobe管理的CDN，使用DV SSL憑證時，只允許具有ACME驗證的網站。
+若是Adobe管理的CDN，使用DV SSL憑證時，只允許使用ACME驗證的網站。
 
 >[!IMPORTANT]
 >
 >您[是否已新增自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)和[是否已分別新增SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)？ 如果沒有，則必須先完成這兩個工作才能新增CDN設定。
 
-另請參閱[Adobe管理的CDN](https://www.aem.live/docs/byo-cdn-adobe-managed)。
+另請參閱[Adobe Managed CDN](https://www.aem.live/docs/byo-cdn-adobe-managed)。
 
-**若要新增CDN設定：**
+**若要新增網域對應：**
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
@@ -40,16 +40,16 @@ ht-degree: 11%
 
    ![設定CDN對話方塊](/help/implementing/cloud-manager/assets/configure-cdn-dialog.png)
 
-   | 來源 | 說明 |
+   | 來源 | 描述 |
    | --- | --- |
    | Sites | 選取Edge Delivery網站。 |
-   | 環境 | 選取您要在AEM設定中鎖定的特定Cloud Service環境。<br>在&#x200B;**第**&#x200B;層下拉式清單中，選取下列其中一項：<br>·選取&#x200B;**Publish**，將目標設定為內容傳送給使用者的即時生產環境。<br>·針對您要在變更上線前測試的測試或非生產環境，選取&#x200B;**預覽**。 |
+   | 環境 | 選取您要在AEM設定中鎖定的特定Cloud Service環境。<br>在&#x200B;**層**&#x200B;下拉式清單中，選取下列其中一項：<br>·選取&#x200B;**發佈**，將內容傳送至使用者的即時生產環境作為目標。<br>·針對您要在變更上線前測試的測試或非生產環境，選取&#x200B;**預覽**。 |
 
 1. 選取下列其中一項，以選取您的CDN型別和關聯的設定：
 
    | CDN型別 | 設定詳細資料 |
    | --- | --- |
    | Adobe 管理的 CDN | 在&#x200B;**組態詳細資料**&#x200B;底下，執行下列動作：<br>a。在&#x200B;**網域**&#x200B;下拉式清單中，選取您要使用的網域名稱。<br>下拉式清單中沒有已驗證的網域嗎？ 請參閱[新增自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。<br>b。在&#x200B;**SSL憑證**&#x200B;下拉式清單中，選取您要使用的憑證。<br>下拉式清單中沒有可用的SSL憑證嗎？ 請參閱[新增SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)。 |
-   | 其他 CDN 提供者 | 如果您使用自己的CDN提供者，而不是Adobe管理的CDN，請選取此選項。<br>在&#x200B;**設定詳細資料**&#x200B;下，在&#x200B;**網域**&#x200B;下拉式清單中，選取您要使用的網域名稱。<br>下拉式清單中沒有已驗證的網域嗎？ 請參閱[新增自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。 |
+   | 其他 CDN 提供者 | 如果您使用自己的CDN提供者，而不是您可用的Adobe管理的CDN，請選取此選項。<br>在&#x200B;**設定詳細資料**&#x200B;下，在&#x200B;**網域**&#x200B;下拉式清單中，選取您要使用的網域名稱。<br>下拉式清單中沒有已驗證的網域嗎？ 請參閱[新增自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。 |
 
 1. 按一下「**儲存**」。
