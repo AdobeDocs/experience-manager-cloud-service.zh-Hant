@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 158b808c2f97bea52d285d4f2611c6e297375ca1
+source-git-commit: d3a935a061831befaebd2ce25c00f8bf10522f6c
 workflow-type: tm+mt
-source-wordcount: '1563'
+source-wordcount: '1553'
 ht-degree: 13%
 
 ---
@@ -33,9 +33,8 @@ ht-degree: 13%
 * SITES-27775：發佈期間最佳化的參考搜尋。
 * SITES-30885：在持續性查詢中最佳化的JSON處理。
 * SITES-25433：搭配通用編輯器的Edge Delivery：比較舊版本時，支援完整頁面轉譯。
-* SITES-27792：使用通用編輯器的Edge Delivery：將EDS設定完全移至CA設定。
+* SITES-27792：使用Universal Editor的Edge Delivery：新增Edge Delivery服務設定的特定範本
 * SITES-19754：使用通用編輯器的Edge Delivery：當設定損壞時，出現令人信服的錯誤訊息。
-* SITES-30267：使用通用編輯器的Edge Delivery：工作表V2 （搶先使用）。
 * SITES-30328：使用通用編輯器的Edge Delivery：從Sidekick預覽支援。
 * SITES-23499：搭配通用編輯器的Edge Delivery：允許多個欄位用於區塊選項。
 * SITES-29987：在建立內容片段模型時新增設定`previewUrlPattern`的功能。
