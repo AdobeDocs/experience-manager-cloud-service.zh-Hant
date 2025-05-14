@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: 3a35378389765538fc085fdf009816807c417f1f
+source-git-commit: 962276d9645d273f5828ad3feea133bce9614668
 workflow-type: tm+mt
 source-wordcount: '6157'
 ht-degree: 99%
@@ -258,7 +258,7 @@ ht-degree: 99%
    + [Sling Service 使用者對應和服務使用者定義的最佳做法](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
    + [Adobe as a Cloud Service 的客戶自控金鑰](/help/security/customer-managed-keys.md)
 + 上線 {#onboarding}
-   + [從這裡開始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=zh-Hant)
+   + [從這裡開始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
    + 上線歷程 {#journey}
       + [上線歷程概觀](/help/journey-onboarding/overview.md)
       + [上線準備](/help/journey-onboarding/preparation.md)
@@ -744,8 +744,8 @@ ht-degree: 99%
          + [將最適化表單與 Microsoft Power Automate 整合](/help/forms/forms-microsoft-power-automate-integration.md)
          + [在 AEM Sites 頁面中嵌入最適化表單](/help/forms/embed-adaptive-form-aem-sites.md)
          + [將根據核心元件的最適化表單嵌入至外部網頁](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
-         + [AEM Forms與Adobe Experience Platform (AEP)整合](/help/forms/aem-forms-aep-connector.md)
-         + [將根據基礎元件的最適化表單嵌入至外部網頁](/help/forms/embed-adaptive-form-external-web-page.md)
+         + [Adobe Experience Platform (AEP) 與 AEM Forms 的整合](/help/forms/aem-forms-aep-connector.md)
+         + [將以 Foundation 元件為基礎的自適應表單嵌入至外部網頁](/help/forms/embed-adaptive-form-external-web-page.md)
          + 將自適應表單與 Adobe Marketo Engage 進行整合{#integrate-adaptive-form-with-market-engage}
             + [將 Adobe Marketo Engage 與 AEM Forms 進行整合](/help/forms/integrate-form-to-marketo-engage.md)
             + [設定新表單以與 Marketo Engage 進行整合](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
@@ -765,8 +765,8 @@ ht-degree: 99%
          + [設計最適化表單的 XML 結構](/help/forms/adaptive-form-xml-schema-form-model.md)
    + 自適應表單 {#adaptive-forms-authoring}
       + [建立自適應表單](/help/forms/create-an-adaptive-form.md)
-      + [哪個最適化Forms最適合您？](/help/edge/docs/forms/authoring-a-form.md)
-      + [建立最適化表單片段](/help/forms/adaptive-form-fragments.md)
+      + [哪種自適應表單最適合您？](/help/edge/docs/forms/authoring-a-form.md)
+      + [建立自適應表單片段](/help/forms/adaptive-form-fragments.md)
       + [新增自適應表單至 AEM Sites 頁面或體驗片段](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
       + 核心元件 {#authoring-adaptive-forms-core-components}
          + 建立自適應表單 {#create-an-adaptive-form-on-forms-cs}
@@ -1089,7 +1089,7 @@ ht-degree: 99%
 + Headless {#headless}
    + [什麼是 Headless CMS？](/help/headless/what-is-headless.md)
    + [AEM Headless 簡介](/help/headless/introduction.md)
-   + [開發人員入口網站 (其他資源)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hant)
+   + [開發人員入口網站 (其他資源)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
    + [最佳做法 - 設定和使用](/help/headless/best-practices-setup-use.md)
    + 設定 {#setup}
       + [簡介](/help/headless/setup/introduction.md)
@@ -1242,8 +1242,8 @@ ht-degree: 99%
          + [SSL 憑證錯誤疑難排解](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md)
          + [管理 SSL 憑證](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       + CDN 設定 {#cdn-configurations}
-         + [新增內容傳遞網路設定](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
-         + [管理內容傳遞網路設定](/help/implementing/cloud-manager/cdn-configurations/manage-cdn-config.md)
+         + [新增網域對應](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
+         + [管理網域對應](/help/implementing/cloud-manager/cdn-configurations/manage-cdn-config.md)
       + IP 允許清單 {#ip-allow-lists}
          + [IP 允許清單簡介](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
          + [新增 IP 允許清單](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
