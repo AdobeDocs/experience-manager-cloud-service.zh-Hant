@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: d3a935a061831befaebd2ce25c00f8bf10522f6c
+source-git-commit: 088d470333d8f5a26f1a938380028541a1e945a1
 workflow-type: tm+mt
-source-wordcount: '1553'
-ht-degree: 13%
+source-wordcount: '1750'
+ht-degree: 11%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 13%
 
 ## 版本 20783 {#20783}
 
-以下摘要說明維護版本20783數的持續改善，該版本於2025年5月13日公開發佈。 前一個維護版本是版本 20626。
+以下摘要說明維護版本20783數的持續改善，該版本於2025年5月13日公開發佈。 前一個維護版本為版本 20626。
 
 啟用 2025.5.0 功能將可使用此維護版本的完整功能集。如需詳細資訊，請參閱 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
@@ -30,6 +30,7 @@ ht-degree: 13%
 * Forms-19125：核心元件最適化表單編輯器已增強，可在資料來源樹狀結構的對應區段放入表單畫布時，支援自動對應可用的最適化表單片段。 這會將基礎編輯器的重要生產力功能帶給核心元件。
 * Forms-17887： AEM Forms現在可透過其輸出服務產生AFP （進階函式簡報）格式的檔案。 此增強功能符合客戶對通常使用AFP的高速、大量列印環境的需求。
 * Forms-15089： AEM Forms已推出一項功能，可在表單發佈時建立版本，使其所有組成片段內嵌（內嵌）至該特定已發佈版本。 這可確保表單在發佈時呈現的精確且獨立顯示，這對於封存、法律或法規遵循用途而言至關重要。
+* Forms-17107： AEM Forms現在提供增強的使用者端自訂函式剖析功能。 這包括支援現代JavaScript功能(ECMAScript ES10+)，例如選用的鏈結，並引進在自訂函式指令碼中使用靜態匯入的功能。 如此一來，開發人員就能更妥善地組織程式碼、利用ESM模組，以及移除最適化Forms v2和Edge Delivery Services中自訂函式先前遇到的限制，尤其是針對先前需要這些功能因應措施的使用者。
 * SITES-27775：發佈期間最佳化的參考搜尋。
 * SITES-30885：在持續性查詢中最佳化的JSON處理。
 * SITES-25433：搭配通用編輯器的Edge Delivery：比較舊版本時，支援完整頁面轉譯。
@@ -70,6 +71,8 @@ ht-degree: 13%
 * Forms-19629： JSON結構描述剖析器產生無效結果，或錯誤解讀某些客戶提供的JSON結構描述。 此問題可能會對依賴正確結構描述剖析的功能造成負面影響，例如自動對應片段。
 * Forms-19380：針對核心元件推出版本設定支援最適化Forms，可在無意間為各種其他資產型別(例如Foundation Forms、PDF檔案、主題、FDM)啟用版本設定功能，無需對這些資產型別進行特定設計或測試。 這個非預期的副作用正在調查中。
 * Forms-17707：AEP (Adobe Experience Platform)聯結器在設定為連線至AEP平台「舞台」環境時無法正常運作。
+Forms-18526：複製具有根據多個欄位之條件的規則時，在規則的條件或動作中參照的欄位（不是觸發規則的主要欄位）不會更新，以正確參照要向其複製規則的新欄位。 而是會繼續參照複製規則的原始來源欄位。
+Forms-18474：此規則設計為在特定欄位的值變更（例如欄位「A」）因表單上任何欄位的變更而錯誤觸發時，將焦點設定在特定面板或元件。 例如，如果欄位「B」被修改，即使規則僅針對欄位「A」的變更進行設定，焦點仍會設定為指定的面板。
 * GRANITE-58276： OSGi相依性週期導致HTL指令碼引擎工廠無法正常運作。
 * Oak-11673：Oak-segment-azure v12CPU增加是由於refreshLease所導致。
 * SITES-30752：產生持續查詢回應時，請勿使用`If-modified-since`/`last-modified`標頭。
