@@ -6,8 +6,8 @@ feature: Release Information
 role: Admin
 source-git-commit: 637d0a00e4658905df4a0240a3fdc7700b0bfe65
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2554'
+ht-degree: 97%
 
 ---
 
@@ -226,10 +226,10 @@ Adobe 會持續評估產品功能，以逐漸利用更現代化的替代方案�
 </table>
 </details>
 
-以下是已移除AEM API的詳盡清單。
+以下為已移除之 AEM API 的詳細清單。
 
 <details>
-  <summary>展開以檢視已移除的API清單。</summary>
+  <summary>展開以查看已移除的 API 清單。</summary>
 <table style="table-layout:auto">
   <tr>
     <th>套件/類別</th>
@@ -289,7 +289,7 @@ Adobe 會持續評估產品功能，以逐漸利用更現代化的替代方案�
   </tr>
   <tr>
     <td>com.github.jknack.handlebars.js</td>
-    <td>由於一項安全性漏洞，Handlebars 必須從 4.0.5 升級到 4.3.0。此封裝不會再出現於升級後的 Handlebars 中。</td>
+    <td>由於一項安全性弱點，Handlebars 必須從 4.0.5 升級到 4.3.0。此封裝不會再出現於升級後的 Handlebars 中。</td>
   </tr>
   <tr>
     <td>com.adobe.granite.resourceresolverhelper</td>
@@ -307,7 +307,7 @@ Adobe 會持續評估產品功能，以逐漸利用更現代化的替代方案�
 </table>
 </details>
 
-### 移除`org.apache.sling.commons.auth*` {#org.apache.sling.commons.auth}
+### 移除 `org.apache.sling.commons.auth*` {#org.apache.sling.commons.auth}
 
 如果您正在使用 `org.apache.sling.commons.auth` 或 `org.apache.sling.commons.auth.spi`，或兩者皆使用，可以分別透過將程式碼移轉至 `org.apache.sling.auth` 來取代。`org.apache.sling.auth.spi`。如果您使用的是舊版本的 [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)，請務必更新至最新版本。
 
@@ -316,7 +316,7 @@ Adobe 會持續評估產品功能，以逐漸利用更現代化的替代方案�
 * 將 ACS AEM Commons 更新至最新版本
 * 從 `org.apache.sling.commons.auth` 和/或 `org.apache.sling.commons.auth.spi` 分別移轉至 `org.apache.sling.auth` `org.apache.sling.auth.spi`。
 
-### 移除`org.eclipse.jetty*` {#org.eclipse.jetty}
+### 移除 `org.eclipse.jetty*` {#org.eclipse.jetty}
 
 如果您使用封裝 `org.eclipse.jetty` 中的任何項目或其子封裝中的一項，您可能會想要移轉至具備類似功能的其他第三方程式庫。如果移轉不可行，請將下面清單中所需的套件組合新增至您的專案。
 
@@ -333,7 +333,7 @@ Adobe 會持續評估產品功能，以逐漸利用更現代化的替代方案�
    * `org.eclipse.jetty:jetty-util:9.4.54.v20240208`
    * `org.eclipse.jetty:jetty-util-ajax:9.4.54.v20240208`
 
-### 移除`com.mongodb` {#com.mongodb}
+### 移除 `com.mongodb` {#com.mongodb}
 
 將 Mongo 用戶端 API 新增到您的專案中。
 
@@ -342,7 +342,7 @@ Adobe 會持續評估產品功能，以逐漸利用更現代化的替代方案�
 * 將此套件組合新增至您的專案
    * `org.mongodb:mongo-java-driver:3.12.7`
 
-### `org.apache.abdera*`和`org.apache.sling.atom.taglib`的使用情況 {#org.apache.abdera_or_org.apache.sling.atom.taglib}
+### 使用 `org.apache.abdera*` 和 `org.apache.sling.atom.taglib` {#org.apache.abdera_or_org.apache.sling.atom.taglib}
 
 將使用來自 `org.apache.abdera` 和 `org.apache.sling.atom.taglib` 的任何封裝，取代為提供類似功能的第三方程式庫或您自己的程式碼。
 
@@ -350,7 +350,7 @@ Adobe 會持續評估產品功能，以逐漸利用更現代化的替代方案�
 
 * 將使用來自 `org.apache.abdera` 和 `org.apache.sling.atom.taglib` 的封裝取代為其他第三方程式庫/自己的程式碼。
 
-### `org.apache.felix.http.whiteboard`的使用狀況 {#org.apache.felix.http.whiteboard}
+### 使用 `org.apache.felix.http.whiteboard` {#org.apache.felix.http.whiteboard}
 
 將使用 `org.apache.felix.http.whiteboard` 更換為 [OSGi Http Whiteboard](https://docs.osgi.org/specification/osgi.cmpn/7.0.0/service.http.whiteboard.html)。官方 OSGi API 具備類似的功能，且更換通常只需要變更服務註冊屬性。
 
