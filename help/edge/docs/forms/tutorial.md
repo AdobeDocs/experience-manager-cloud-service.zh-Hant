@@ -236,7 +236,7 @@ URL：`https://main--wefinance--wkndform.aem.live/enquiry`
        npm install -g @adobe/aem-cli
    ```
 
-1. 複製您的 GitHub 專案：使用以下命令從 GitHub 原地複製您的專案存放庫，更換為 <owner> 存放庫所有者和 <repo> 存放庫名稱：
+1. 複製您的 GitHub 專案：使用以下命令從 GitHub 原地複製您的專案存放庫，更換為 &lt;owner> 存放庫所有者和 &lt;repo> 存放庫名稱：
 
    ```
    git clone https://github.com/<owner>/<repo>
@@ -279,7 +279,7 @@ URL：`https://main--wefinance--wkndform.aem.live/enquiry`
    * [表單區塊](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form)資料夾
    * [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) 檔案
    * [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css) 檔案
-1. 導覽至您AEM專案中的`/scripts/editor-support.js`檔案，並在AEM Forms範本](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js)中使用[editor-support.js檔案進行更新
+1. 導覽至您AEM專案中的`/scripts/editor-support.js`檔案，並在AEM Forms範本[&#128279;](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js)中使用editor-support.js檔案進行更新
 1. 導覽至AEM專案中的`/models/_section.json`，並將「form」和「embed-adaptive-form」附加至`filters`物件的元件陣列：
 
    ```
