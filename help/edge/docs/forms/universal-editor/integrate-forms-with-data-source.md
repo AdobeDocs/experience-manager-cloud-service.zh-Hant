@@ -3,13 +3,11 @@ title: 在通用編輯器中如何整合表單的表單資料模型 (FDM)？
 description: 了解如何根據表單資料模型 (FDM) 建立表單。產生並編輯 FDM 中資料模型物件的樣本資料。
 feature: Edge Delivery Services, Form Data Model
 role: Admin, User
-hide: true
-hidefromtoc: true
 exl-id: 9ce51223-57d0-47d8-8868-84b37d4e8e3e
-source-git-commit: 381aad580762fe957e1dc1d5824e4d35098f1ca4
-workflow-type: ht
-source-wordcount: '1036'
-ht-degree: 100%
+source-git-commit: 95998daf04ae579ca11896953903852e6140c3a4
+workflow-type: tm+mt
+source-wordcount: '1207'
+ht-degree: 82%
 
 ---
 
@@ -18,6 +16,12 @@ ht-degree: 100%
 在通用編輯器中整合表單與表單資料模型 (FDM)，讓您可以使用不同的後端資料來源來建立表單資料模型 (FDM)。您可以在不同的表單工作流程中，使用表單資料模型 (FDM) 作為綱要。設定資料來源並根據資料來源中可用的資料模型物件和服務建立表單資料模型 (FDM)。
 
 ## 考量事項
+
+* 如果您在通用編輯器介面中未看到&#x200B;**資料來源**&#x200B;圖示，或在右側屬性面板中未看到&#x200B;**繫結參考**&#x200B;屬性，請在&#x200B;**Extension Manager**&#x200B;中啟用&#x200B;**資料來源**&#x200B;擴充功能。
+
+  ![延伸管理員](/help/edge/docs/forms/universal-editor/assets/extension-manager.png)
+
+  請參閱[Extension Manager功能摘要](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)文章，瞭解如何在通用編輯器中啟用和停用擴充功能。
 
 * 通用編輯器目前不支援表單預填服務。
 
@@ -32,6 +36,7 @@ ht-degree: 100%
 ## 在通用編輯器中使用表單資料模型建立表單
 
 在通用編輯器中，您可以建立：
+
 * [綱要型表單](#schema-based-form)：綱要型表單使用在「**資料**」標籤中建立表單時所設定的資料來源，自動將資料繫結至表單欄位。
 * [非綱要型表單](#non-schema-based-form)：您必須手動新增非綱要型表單的資料來源，並從內容樹繫結每個欄位。
 
@@ -44,14 +49,14 @@ ht-degree: 100%
 建立綱要型表單時，系統會自動設定資料來源，並透過資料繫結將表單欄位連結至資料。如要使用表單建立精靈建立綱要型表單，請執行下列步驟：
 
 1. 登入您的 [!DNL Experience Manager Forms] 作者實例。
-2. 在 Experience Manager 登入頁面上輸入您的認證。登入後，在左上角選取「**[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 表單]** > **[!UICONTROL 表單與文件]**」。
-3. 選取「**[!UICONTROL 建立]**  > **[!UICONTROL 最適化表單]**」。此時會開啟精靈。在「**來源**」標籤中，選取一個範本：
+1. 在 Experience Manager 登入頁面上輸入您的認證。登入後，在左上角選取「**[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 表單]** > **[!UICONTROL 表單與文件]**」。
+1. 選取「**[!UICONTROL 建立]**  > **[!UICONTROL 最適化表單]**」。此時會開啟精靈。在「**來源**」標籤中，選取一個範本：
 
    ![Edge Delivery Services 範本](/help/edge/assets/create-eds-forms.png)
 
    當您選取 Edge Delivery Services 的範本時，便會啟用「**[!UICONTROL 建立]**」按鈕。您可以前往「**[!UICONTROL 資料來源]**」或「**[!UICONTROL 提交]**」標籤來選取資料來源或提交動作。
 
-4. 在「**資料**」標籤中，您可以選取以下其中一種資料模型：
+1. 在「**資料**」標籤中，您可以選取以下其中一種資料模型：
 
    * **表單資料模型 (FDM)**：將來自資料來源的資料模型物件和服務整合至您的表單中。若您的表單需要從多個來源讀取和寫入資料，請選擇表單資料模型 (FDM)。
 
@@ -64,11 +69,11 @@ ht-degree: 100%
 
      根據預設，系統會自動選取相關聯 JSON 綱要或表單資料模型 (FDM) 的所有欄位，並轉換成對應的表單元件，進而簡化製作流程。此精靈亦提供核取方塊，讓您能自由選擇表單中要包含的欄位。
 
-5. 按一下「**[!UICONTROL 建立]**」，便會出現「**建立表單**」精靈。
-6. 設定「**名稱**」和「**標題**」。
-7. 指定 **GitHub URL**。例如，若您的 GitHub 存放庫名稱為 `edsforms`、位於帳戶 `wkndforms` 之下，則 URL 為：
+1. 按一下「**[!UICONTROL 建立]**」，便會出現「**建立表單**」精靈。
+1. 設定「**名稱**」和「**標題**」。
+1. 指定 **GitHub URL**。例如，若您的 GitHub 存放庫名稱為 `edsforms`、位於帳戶 `wkndforms` 之下，則 URL 為：
    `https://github.com/wkndforms/edsforms`
-8. 按一下「**[!UICONTROL 建立]**」。
+1. 按一下「**[!UICONTROL 建立]**」。
 
    ![建立綱要型表單](/help/edge/docs/forms/universal-editor/assets/create-schema-based-form.png)
 
@@ -128,12 +133,29 @@ ht-degree: 100%
 
    ![建置表單](/help/edge/docs/forms/universal-editor/assets/non-schema-form.png)
 
-   您必須手動將資料繫結新增至表單元素，只要在表單元素的「**繫結參考**」屬性中指定資料繫結即可。
-例如，我們對表單中已經存在的文字方塊「**寵物姓名**」新增資料繫結參考：
+您可以從&#x200B;**繫結參考**&#x200B;屬性中選取資料繫結，以新增資料繫結至表單欄位。 例如，我們將資料繫結參考新增至表單中已存在的&#x200B;**Id**文字方塊。
+若要從資料來源樹狀結構選取表單欄位的資料繫結，請執行下列步驟：
+
+1. 開啟您要新增資料繫結參考之表單欄位的屬性。
+1. 移至&#x200B;**繫結參考**&#x200B;屬性，然後按一下&#x200B;**瀏覽**&#x200B;圖示。
 
    ![手動新增表單欄位的資料繫結](/help/edge/docs/forms/universal-editor/assets/non-schema-add-data-binding.png)
 
-   您現在能為表單新增及[設定提交動作](/help/edge/docs/forms/universal-editor/submit-action.md)。
+1. 從&#x200B;**選取繫結參考**&#x200B;精靈中的資料來源樹狀結構選擇資料繫結參考。
+
+   ![選取資料繫結參考](/help/edge/docs/forms/universal-editor/assets/select-bind-reference.png)
+
+1. 從資料來源樹狀結構選取要繫結至表單欄位的資料元素，然後按一下&#x200B;**選取**。
+
+   ![選取資料元素](/help/edge/docs/forms/universal-editor/assets/select-data-element.png)
+
+   表單欄位繫結至資料元素，並出現在&#x200B;**繫結參考**&#x200B;屬性中。
+
+   ![自動資料繫結](/help/edge/docs/forms/universal-editor/assets/schema-based-form-data-binding.png)
+
+   您也可以手動編輯表單欄位的&#x200B;**繫結參考**&#x200B;屬性。
+
+您現在能為表單新增及[設定提交動作](/help/edge/docs/forms/universal-editor/submit-action.md)。
 
 ## 另請參閱
 

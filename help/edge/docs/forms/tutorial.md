@@ -4,10 +4,10 @@ description: 本教學課程可協助您啟動並執行新的 Adobe Experience M
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: e2259e542df5a12748705af901d073e4486292c4
-workflow-type: ht
-source-wordcount: '1907'
-ht-degree: 100%
+source-git-commit: 95998daf04ae579ca11896953903852e6140c3a4
+workflow-type: tm+mt
+source-wordcount: '1899'
+ht-degree: 91%
 
 ---
 
@@ -40,10 +40,10 @@ AEM Forms 範本可協助您很快開始使用預先設定最適化表單區塊�
 1. 為您的 AEM 專案建立 GitHub 存放庫。若要建立存放庫：
    1. 前往 [https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms) 。
 
-      ![AEM Forms 範本](/help/edge/assets/aem-forms-boilerplate.png)
+      ![AEM Forms 範本](/help/edge/docs/forms/assets/eds-form-boilerplate.png)
    1. 按一下「**使用此範本**」選項，然後選取「 **建立新存放庫**」選項。建立新存放庫畫面會開啟。
 
-      ![使用 AEM Forms 範本建立新存放庫](/help/edge/assets/create-new-repository-using-aem-forms-boilerplate.png)
+      ![使用 AEM Forms 範本建立新存放庫](/help/edge/docs/forms/assets/use-eds-form-template.png)
 
    1. 在建立新存放庫畫面上，選取「**所有者**」，並指定「**存放庫名稱**」 。Adobe 建議將存放庫設定為 「**公開**」。因此，選取「**公開**」選項，然後按一下「**建立存放庫**」。
 
@@ -268,33 +268,87 @@ URL：`https://main--wefinance--wkndform.aem.live/enquiry`
 >[!NOTE]
 >
 >
-> 此步驟適用於使用 [AEM 範本](https://github.com/adobe/aem-boilerplate)建置的專案。如果您使用 [AEM Forms 範本](https://github.com/adobe-rnd/aem-boilerplate-forms)建立 AEM 專案，則可以省略此步驟。
+> 此步驟適用於使用[AEM Boilerplate XWalk](https://github.com/adobe/aem-boilerplate)建置的專案。 如果您使用 [AEM Forms 範本](https://github.com/adobe-rnd/aem-boilerplate-forms)建立 AEM 專案，則可以省略此步驟。
 
 若要整合：
 
-1. **新增所需檔案和資料夾**
-   1. 將下列資料夾和檔案從 [AEM Forms 範本](https://github.com/adobe-rnd/aem-boilerplate-forms)複製並貼到您的 AEM 專案中：
+1. 導覽至本機系統上的AEM專案存放庫資料夾。
 
-      * [表單區塊](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form)資料夾
-      * [form-common](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-common) 資料夾
-      * [form-components](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-components) 資料夾
-      * [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) 檔案
-      * [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css) 檔案
+1. 將下列資料夾和檔案從 [AEM Forms 範本](https://github.com/adobe-rnd/aem-boilerplate-forms)複製並貼到您的 AEM 專案中：
 
-1. **更新元件定義和模型檔案**
-   1. 瀏覽至 AEM 專案中的 `../models/_component-definition.json` 檔案，並使用 [AEM Forms 範本中 component-definition.json 檔案](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-definition.json#L39-L48)的變更對其進行更新。
+   * [表單區塊](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form)資料夾
+   * [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) 檔案
+   * [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css) 檔案
+1. 導覽至您AEM專案中的`/scripts/editor-support.js`檔案，並在AEM Forms範本](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js)中使用[editor-support.js檔案進行更新
+1. 導覽至AEM專案中的`/models/_section.json`，並將「form」和「embed-adaptive-form」附加至`filters`物件的元件陣列：
 
-   1. 瀏覽至 AEM 專案中的 `../models/_component-models.json` 檔案，並使用 [AEM Forms 範本中 component-models.json 檔案](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-models.json#L24-L26)的變更對其進行更新
+   ```
+       "filters": [
+       {
+     "id": "section",
+     "components": [
+       .
+       .
+       .
+       "form",
+       "embed-adaptive-form"
+     ]
+    }]
+   ```
 
-1. **在編輯器指令碼中新增表單編輯器**
-   1. 瀏覽至 AEM 專案中的 `../scripts/editor-support.js` 檔案，並使用 [AEM Forms 範本中 editor-support.js 檔案](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js#L105-L106)的變更對其進行更新
-1. **更新 ESLint 設定檔**
-   1. 瀏覽至 AEM 專案中的 `../.eslintignore` 檔案並新增下列程式碼，以防止與表單區塊規則引擎相關的錯誤：
+1. （選用）導覽至您AEM專案中的`/.eslintignore`，然後新增下列幾行程式碼：
 
-      ```
-          blocks/form/rules/formula/*
-          blocks/form/rules/model/*
-      ```
+   ```
+   blocks/form/rules/formula/*
+   blocks/form/rules/model/*
+   blocks/form/rules/functions.js
+   scripts/editor-support.js
+   scripts/editor-support-rte.js
+   ```
+
+1. （選用）導覽至AEM專案中的`/.eslintrc.js`，並在`rules`物件中新增下列幾行程式碼：
+
+   ```
+   'xwalk/max-cells': ['error', {
+     '*': 4, // default limit for all models
+     form: 15,
+     wizard: 12,
+     'form-button': 7,
+     'checkbox-group': 20,
+     checkbox: 19,
+     'date-input': 21,
+     'drop-down': 19,
+     email: 22,
+     'file-input': 20,
+     'form-fragment': 15,
+     'form-image': 7,
+     'multiline-input': 23,
+     'number-input': 22,
+     panel: 17,
+     'radio-group': 20,
+     'form-reset-button': 7,
+     'form-submit-button': 7,
+     'telephone-input': 20,
+     'text-input': 23,
+     accordion: 14,
+     modal: 11,
+     rating: 18,
+     password: 20,
+     tnc: 12,
+   }],
+   'xwalk/no-orphan-collapsible-fields': 'off', // Disable until enhancement is done for Forms properties
+   ```
+
+1. 開啟終端機，然後執行下列命令：
+
+   ```
+   npm i
+   npm run build:json
+   ```
+
+   >[!NOTE]
+   >
+   > 在GitHub上將變更推送至您的AEM專案存放庫之前，請確定位於AEM專案根層級的`component-definition.json`、`component-models.json`和`component-filters.json`檔案已更新為表單相關的物件。
 
 1. 認可和推播這些變更至 GitHub 的 AEM 專案存放庫。
 
@@ -305,7 +359,7 @@ URL：`https://main--wefinance--wkndform.aem.live/enquiry`
 解決潛在問題以確保 GitHub 建置流程順利進行：
 
 * **解決模組路徑錯誤：**
-如果遇到「無法解決 &quot;../../scripts/lib-franklin.js&quot; 模組的路徑」錯誤，請瀏覽至 [EDS Project]/blocks/forms/form.js 檔案。透過將 lib-franklin.js 檔案更換為 aem.js 檔案來更新匯入語句。
+如果您發生「無法解析模組&#39;&#39;&#39;/scripts/lib-franklin.js&#39;&#39;的路徑」錯誤，請瀏覽至[EDS專案]/blocks/forms/form.js檔案。 透過將 lib-franklin.js 檔案更換為 aem.js 檔案來更新匯入語句。
 
 * **處理 Linting 錯誤：**&#x200B;如果您遇到任何 linting 錯誤，您可以略過不予處理。開啟 [EDS Project]/package.json 檔案並將 &quot;lint&quot; 指令碼從 `"lint": "npm run lint:js && npm run lint:css"` 修改為 `"lint": "echo 'skipping linting for now'"`。儲存檔案並將變更提交至您的 GitHub 專案。
 
