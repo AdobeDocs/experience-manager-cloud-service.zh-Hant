@@ -5,7 +5,7 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: f0d60086-e92e-4492-ad50-bef84fed2a82
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: bcf0940d3365ecde6788772d28d32f22f367816d
 workflow-type: tm+mt
 source-wordcount: '763'
 ht-degree: 26%
@@ -67,7 +67,7 @@ ht-degree: 26%
 
 ## 從範本建立頁面 {#creating-from-template}
 
-從範本建立可透過Universal Editor編輯的頁面，與建立任何其他頁面[&#128279;](/help/sites-cloud/authoring/sites-console/creating-pages.md)的工作流程相同。
+從範本建立可透過Universal Editor編輯的頁面，與建立任何其他頁面](/help/sites-cloud/authoring/sites-console/creating-pages.md)的工作流程相同。[
 
 1. 使用 **Sites** 主控台[導覽到您希望在其中建立新頁面的位置](/help/sites-cloud/authoring/sites-console/introduction.md#selecting-resources)。
 
@@ -87,6 +87,6 @@ ht-degree: 26%
 
 ## 可編輯的範本 {#editable-templates}
 
-使用[頁面編輯器](/help/sites-cloud/authoring/page-editor/introduction.md)建立的頁面也可以以範本為基礎。 用來為通用編輯器和頁面編輯器建立頁面的範本都運用AEM [可編輯的範本](/help/implementing/developing/components/templates.md)。
+使用[頁面編輯器](/help/sites-cloud/authoring/page-editor/introduction.md)建立的頁面也可以以範本為基礎。 用來為通用編輯器和頁面編輯器建立頁面的範本都運用AEM的[可編輯範本](/help/implementing/developing/components/templates.md)。
 
-用來建立可透過頁面編輯器編輯的頁面的範本，會使用可編輯範本的所有功能。 用來建立可透過通用編輯器編輯的頁面的範本僅使用初始內容功能。
+用來建立可透過頁面編輯器編輯的頁面的範本，會使用可編輯範本的所有功能。 用來建立可透過通用編輯器編輯的頁面的範本只會使用初始內容功能。
