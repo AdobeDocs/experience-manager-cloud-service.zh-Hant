@@ -4,10 +4,10 @@ description: 了解 Adobe Experience Manager as a Cloud Service 中 Cloud Manage
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 3db5ee2852fadc9c86b3a7979ce40296bbaca858
+source-git-commit: 12388df411b9bf0693358a82de17fec90d83877a
 workflow-type: tm+mt
-source-wordcount: '1038'
-ht-degree: 14%
+source-wordcount: '1050'
+ht-degree: 13%
 
 ---
 
@@ -42,7 +42,7 @@ Helix 4和Helix 5的內容來源組態有下列差異：
 
 **開始之前**
 
-如果您在Cloud Manager[&#128279;](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site)中使用按一下Edge Delivery，則您的網站為具有單一存放庫的Helix 5。 遵循Helix 5指示，並使用提供的Helix 4 YAML版本指示作為後援。
+如果您在Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site)中使用[按一下Edge Delivery，則您的網站為具有單一存放庫的Helix 5。 遵循Helix 5指示，並使用提供的Helix 4 YAML版本指示作為後援。
 
 **決定您的Helix版本**
 
@@ -166,11 +166,11 @@ Helix 5是重寫程式，不使用`fstab.yaml`，並支援多個網站共用相�
 
 目前提供下列早期採用者機會：
 
-### 新增 Edge Delivery 管道 {#add-eds-pipeline}
+### 新增Edge Delivery設定管道 {#add-eds-pipeline}
 
-**管道**&#x200B;現在支援使用Edge Delivery Services建置的網站，此功能已擴充到不只是Cloud Service環境。 您可以視情況使用&#x200B;**管道**&#x200B;來管理設定，例如流量篩選規則和Web應用程式防火牆(WAF)設定。 請參閱[支援的組態](/help/operations/config-pipeline.md#configurations)。
+使用Edge Delivery Services建置的網站現在支援設定管道，將此功能擴展到Cloud Service環境以外。 您可以視情況使用&#x200B;**設定管道**&#x200B;來管理設定，例如流量篩選規則和Web應用程式防火牆(WAF)設定。 請參閱[支援的組態](/help/operations/config-pipeline.md#configurations)。
 
-<!-- ![Add Edge Delivery pipeline in Add Pipeline drop-down list](/help/implementing/cloud-manager/release-notes/assets/add-edge-delivery-pipeline.png) -->
+![在新增管道下拉式清單中新增Edge Delivery管道](/help/implementing/cloud-manager/release-notes/assets/add-edge-delivery-pipeline.png)
 
 如果您有興趣測試這項新功能並分享您的意見回饋，請從與Adobe ID相關聯的電子郵件地址傳送電子郵件至[grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com)。
 
