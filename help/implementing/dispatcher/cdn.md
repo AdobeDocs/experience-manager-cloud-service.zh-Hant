@@ -1,10 +1,10 @@
 ---
 title: AEM as a Cloud Service 中的 CDN
-description: 瞭解如何使用AEM管理的CDN以及如何將您自己的CDN指向AEM管理的CDN。
+description: 瞭解如何使用AEM管理的CDN，以及如何將您自己的CDN指向AEM管理的CDN。
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
+source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
 workflow-type: tm+mt
 source-wordcount: '1729'
 ht-degree: 11%
@@ -23,31 +23,31 @@ AEM as a Cloud Service隨附整合式CDN，旨在從接近使用者瀏覽器的�
 
 AEM管理的CDN符合大部分客戶的效能與安全性需求。 對於發佈層級，客戶可以選擇透過他們自己的CDN路由流量，他們必須管理此CDN。 此選項依具體情況而定，尤其是當客戶與難以取代的CDN提供者已有舊版整合時。
 
-想要發佈至Edge Delivery Services階層的客戶，可利用Adobe的受管理CDN。 檢視[AdobeManaged CDN](#aem-managed-cdn)。<!-- CQDOC-21758, 5b -->
+想要發佈至Edge Delivery Services階層的客戶，可利用Adobe的受管理CDN。 檢視[Adobe Managed CDN](#aem-managed-cdn)。<!-- CQDOC-21758, 5b -->
 
 
 <!-- ERROR: NEITHER URL IS FOUND (HTTP ERROR 404) Also, see the following videos [Cloud 5 AEM CDN Part 1](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part1.html) and [Cloud 5 AEM CDN Part 2](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part2.html) for additional information about CDN in AEM as a Cloud Service. -->
 
-## Adobe管理的CDN {#aem-managed-cdn}
+## Adobe Managed CDN {#aem-managed-cdn}
 
 <!-- CQDOC-21758, 5a -->
 
-若要透過Cloud Manager的自助UI使用AEM的內建CDN為內容傳送做好準備，您可以利用Adobe的受管CDN功能。 此功能可讓您處理自助式CDN管理，包括設定和安裝SSL憑證，例如DV （網域驗證）或EV/OV （延伸/組織驗證）憑證。 如需這些方法的詳細資訊，請參閱下列內容：
+若要透過AEM的自助UI使用Cloud Manager的內建CDN準備內容傳送，您可以利用Adobe的受管理CDN功能。 此功能可讓您處理自助式CDN管理，包括設定和安裝SSL憑證，例如DV （網域驗證）或EV/OV （延伸/組織驗證）憑證。 如需這些方法的詳細資訊，請參閱下列內容：
 
 * [Cloud Manager中的Edge Delivery Services](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
 * [自訂網域名稱簡介](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
 * [SSL 憑證簡介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)
-* [設定CDN](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
+* [設定CDN](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md)
 
 **限制流量**
 
-根據預設，對於AEM管理的CDN設定，所有公用流量都可以在生產和非生產（開發和中繼）環境中前往發佈服務。 您可以透過Cloud Manager使用者介面限制特定環境的發佈服務流量（例如，依IP位址範圍限制分段）。
+根據預設，對於AEM管理的CDN設定，所有公用流量都可進入發佈服務，無論是生產環境還是非生產（開發和中繼）環境。 您可以透過Cloud Manager使用者介面限制特定環境的發佈服務流量（例如，依IP位址範圍限制分段）。
 
 如需詳細資訊，請參閱[管理 IP 允許清單](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)。
 
 >[!CAUTION]
 >
->AEM管理的CDN只會提供來自允許IP的請求。 如果您將自己的CDN指向AEM管理的CDN，則請確定CDN的IP包含在IP允許清單中。
+>AEM的Managed CDN只會提供來自允許IP的請求。 如果您將自己的CDN指向AEM管理的CDN，則請確定CDN的IP包含在IP允許清單中。
 
 ### 在CDN設定流量 {#cdn-configuring-cloud}
 
@@ -81,7 +81,7 @@ AEM管理的CDN符合大部分客戶的效能與安全性需求。 對於發佈�
 >title="客戶 CDN 會指向 AEM 管理的 CDN"
 >abstract="AEM as Cloud Service 為客戶提供了使用其現有 CDN 的選項。對於發佈層級，客戶可以選擇從他們自己必須管理的 CDN 指向它。依不同個案可允許此情況，以滿足特定先決條件為基礎，包括但不限於客戶和他們的 CDN 供應商有一個難以放棄的舊版整合。"
 
-如果客戶必須使用其現有的CDN，則可以管理該CDN，並將其指向AEM管理的CDN，前提是滿足以下條件：
+如果客戶必須使用其現有的CDN，則可以管理該CDN，並將其指向AEM管理的CDN，前提是符合以下條件：
 
 * 客戶必須擁有現有的CDN，且必須重新安裝CDN，如此將十分麻煩。
 * 客戶必須管理它。
@@ -91,18 +91,18 @@ AEM管理的CDN符合大部分客戶的效能與安全性需求。 對於發佈�
 
 設定指示：
 
-1. 將您的CDN指向AdobeCDN的輸入作為其原始網域。 例如，`publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`。
-1. 將SNI設為AdobeCDN的入口。
+1. 將您的CDN指向Adobe CDN的輸入作為其原始網域。 例如，`publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`。
+1. 將SNI設為Adobe CDN的入口。
 1. 將Host標頭設定為原始網域。 例如：`Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`。
 1. 使用網域名稱設定`X-Forwarded-Host`標頭，讓AEM可以判斷主機標頭。 例如：`X-Forwarded-Host:example.com`。
 1. 設定`X-AEM-Edge-Key`。 應該使用Cloud Manager設定管道來設定值，如[本文章](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value)所述。
 
-   * 需要，以便AdobeCDN可以驗證要求的來源，並將`X-Forwarded-*`標頭傳遞至AEM應用程式。 例如，`X-Forwarded-For`是用來判斷使用者端IP。 因此，受信任的呼叫者（即客戶管理的CDN）有責任確保`X-Forwarded-*`標頭的正確性（請參閱以下附註）。
-   * 您可以選擇是否在`X-AEM-Edge-Key`不存在時封鎖對AdobeCDN輸入端的存取。 如果您需要直接存取AdobeCDN的入口（將被封鎖），請通知Adobe。
+   * 需要，以便Adobe CDN可以驗證要求的來源，並將`X-Forwarded-*`標頭傳遞至AEM應用程式。 例如，`X-Forwarded-For`是用來判斷使用者端IP。 因此，受信任的呼叫者（即客戶管理的CDN）有責任確保`X-Forwarded-*`標頭的正確性（請參閱以下附註）。
+   * 您可以選擇是否在`X-AEM-Edge-Key`不存在時封鎖對Adobe CDN輸入端的存取。 如果您需要直接存取Adobe CDN的入口（將被封鎖），請通知Adobe。
 
 請參閱[範例CDN廠商組態](#sample-configurations)一節，以取得主要CDN廠商的組態範例。
 
-在接受即時流量之前，您應該向Adobe的客戶支援驗證端對端流量路由是否正常運作。
+在接受即時流量之前，您應向Adobe的客戶支援驗證端對端流量路由是否正常運作。
 
 設定`X-AEM-Edge-Key`後，您可以依照以下方式測試要求是否正確路由。
 
@@ -120,7 +120,7 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 >[!NOTE]
 >
->使用您自己的CDN時，您不需要在Cloud Manager中安裝網域和憑證。 AdobeCDN中的路由是使用預設網域`publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`完成的，該預設網域應在請求`Host`標頭中傳送。 使用自訂網域名稱覆寫要求`Host`標頭可能會透過AdobeCDN將要求錯誤路由或導致421錯誤。
+>使用您自己的CDN時，您不需要在Cloud Manager中安裝網域和憑證。 Adobe CDN中的路由是使用預設網域`publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`完成的，應該以要求`Host`標頭傳送。 使用自訂網域名稱覆寫請求`Host`標頭可能會透過Adobe CDN將請求錯誤路由或導致421錯誤。
 
 >[!NOTE]
 >
@@ -203,7 +203,7 @@ x-aem-debug: byocdn=true,edge=true,edge-auth=edge-auth,edge-key=edgeKey1,X-AEM-E
 
 ## 地理位置標題 {#geo-headers}
 
-AEM Managed CDN會新增標頭至具有下列各項的每個要求：
+AEM管理的CDN會透過以下方式將標頭新增至每個請求：
 
 * 國家/地區代碼： `x-aem-client-country`
 * 大陸代碼： `x-aem-client-continent`

@@ -4,10 +4,10 @@ description: 了解如何使用 Edge Delivery Services 傳遞您的 Cloud Manage
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 54ea92b53d97be314dcef1ed3afbde35b16f9949
+source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
 workflow-type: tm+mt
 source-wordcount: '812'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -79,11 +79,11 @@ Cloud Manager 中的 **Edge Delivery 待辦事項清單**&#x200B;是上線任務
 | 3 | 新增 Edge Delivery 網站或<br>立即建立網站 | 請參閱「[新增 Edge Delivery 網站](#eds-add-site)」。<br>請參閱「[在 Cloud Manager 中建立 Edge Delivery 網站](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)」。 |
 | 4 | 新增網域 | 請參閱[新增自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。 |
 | 5 | 新增 SSL 憑證 | 請參閱[新增 SSL 憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)。 |
-| 6 | 設定 Edge Delivery 網站的內容傳遞網路 | 請參閱[新增內容傳遞網路設定](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)。 |
+| 6 | 設定 Edge Delivery 網站的內容傳遞網路 | 請參閱[新增網域對應](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md)。 |
 | 7 | 設定推播驗證 | 請參閱「[為 Edge Delivery 網站設定推播驗證](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)」。 |
 | 8 | 上線 | 請參閱「[上線檢查清單](/help/edge/docs/go-live-checklist.md)」。 |
 
->[!VIDEO](https://video.tv.adobe.com/v/3441574?learn=on&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## 記錄支援服務單 {#eds-support-ticket}
 

@@ -5,7 +5,7 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d35610b204cc2e06fefa93e048c16940cf1c47c
+source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
 workflow-type: tm+mt
 source-wordcount: '1028'
 ht-degree: 16%
@@ -49,7 +49,7 @@ ht-degree: 16%
 
 1. 在&#x200B;**網域設定**&#x200B;頁面的右上角附近，按一下&#x200B;**新增網域**。
 
-1. 在&#x200B;**新增網域**&#x200B;對話方塊的&#x200B;**網域名稱**&#x200B;欄位中，輸入您正在使用的自訂網域名稱。
+1. 在&#x200B;**新增網域**&#x200B;對話方塊的&#x200B;**網域名稱**欄位中，輸入您正在使用的自訂網域名稱。
 輸入網域名稱時，請勿包含`http://`、`https://`或空格。
 
    >[!NOTE]
@@ -57,7 +57,7 @@ ht-degree: 16%
    >如果您需要網域的`www`和`non-www`版本，則必須分別新增它們。 例如，`example.com`和`www.example.com`。
    <!-- Marius Petria on SLACK tmp-skyline-cdn-certificates - Actually  my opinion is that this option should be explicit in UI (that was present in the initial mocks of the design but for some reason it was dropped). I think when adding a domain there should be a check mark to also add www.domain. When adding example.com Customer should be prompted with the following options: Do you also want to add www.example.com and have a redirect example.com -> www.example.com?Do you also want to add www.example.com and have a redirect www.example.com -> example.com? -->
 
-1. 按一下&#x200B;**建立**。
+1. 按一下「**建立**」。
 
 1. 在&#x200B;**驗證網域**&#x200B;對話方塊中，在&#x200B;**您打算搭配此網域使用哪種憑證型別？**&#x200B;下拉式清單，選取下列其中一個選項：
 
@@ -75,7 +75,7 @@ ht-degree: 16%
 
    >[!NOTE]
    >
-   >如果您使用自己的客戶管理（OV/EV或DV） SSL憑證，則不需要新增SSL憑證。 如果您打算使用客戶管理的CDN （內容傳遞網路） ***提供者***，此規則也適用。 準備就緒後，請直接移至[新增CDN設定](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)。
+   >如果您使用自己的客戶管理（OV/EV或DV） SSL憑證，則不需要新增SSL憑證。 如果您打算使用客戶管理的CDN （內容傳遞網路） ***提供者***，此規則也適用。 準備就緒後，請直接前往[新增網域對應](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md)。
 
 
 ### Adobe managed certificate步驟 {#adobe-managed-cert-steps}

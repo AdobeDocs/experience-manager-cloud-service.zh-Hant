@@ -5,7 +5,7 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: bf903736e256bb9275bad6c0271b31b8dbdec625
+source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
 workflow-type: tm+mt
 source-wordcount: '1021'
 ht-degree: 6%
@@ -19,7 +19,7 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->如果您使用客戶管理的(OV/EV) SSL憑證和客戶管理的CDN提供者，您可以略過新增SSL憑證，並在就緒後直接前往[新增CDN設定](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)。
+>如果您使用客戶管理的(OV/EV) SSL憑證和客戶管理的CDN提供者，您可以略過新增SSL憑證，並在就緒後直接前往[新增網域對應](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md)。
 
 布建憑證可能需要幾天時間。 因此，Adobe建議您在任何期限或上線日期之前及早布建自己的憑證，以避免延遲。
 
@@ -67,7 +67,7 @@ ht-degree: 6%
 
    ![正在新增SSL憑證](/help/implementing/cloud-manager/assets/ssl/ssl-cert-add.png)
 
-1. 在[SSL憑證]頁面的右上角附近，按一下[新增SSL憑證]。**&#x200B;**
+1. 在[SSL憑證]頁面的右上角附近，按一下[新增SSL憑證]。****
 
 1. 在&#x200B;**新增SSL憑證**&#x200B;對話方塊中，根據[您的特定使用案例](#which-ssl-to-add)，選取&#x200B;**Adobe Managed (DV)**。
 
@@ -85,7 +85,7 @@ ht-degree: 6%
 
 您現在已為專案新增有效的Adobe Managed DV SSL憑證。 此步驟通常是第一個設定自訂網域名稱的步驟。
 
-您現在已準備好新增[CDN設定](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)。
+您現在已準備好新增[CDN設定](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md)。
 
 ## 新增客戶管理的(OV/ED) SSL憑證 {#add-customer-managed-ssl-cert}
 
@@ -109,11 +109,11 @@ ht-degree: 6%
 
    ![正在新增SSL憑證](/help/implementing/cloud-manager/assets/ssl/ssl-cert-add.png)
 
-1. 在[SSL憑證]頁面的右上角附近，按一下[新增SSL憑證]。**&#x200B;**
+1. 在[SSL憑證]頁面的右上角附近，按一下[新增SSL憑證]。****
 
 1. 在&#x200B;**新增SSL憑證**&#x200B;對話方塊中，根據[您的特定使用案例](#which-ssl-to-add)，選取&#x200B;**客戶管理(OV/EV)**。
 
-1. 在&#x200B;**憑證名稱**&#x200B;欄位中，輸入憑證的名稱。
+1. 在&#x200B;**憑證名稱**欄位中，輸入憑證的名稱。
 此欄位僅供參考，可以是任何有助於您輕鬆參考SSL憑證的名稱。
 
 1. 在&#x200B;**憑證**、**私密金鑰**&#x200B;和&#x200B;**憑證鏈**&#x200B;欄位中，複製OV或EV SSL憑證的必要值，並將其貼到對話方塊中各自的欄位中。
@@ -132,7 +132,7 @@ ht-degree: 6%
 
 您現在已為專案新增有效的SSL憑證。 此步驟通常是第一個設定自訂網域名稱的步驟。
 
-您現在已準備好新增[CDN設定](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)。
+您現在已準備好新增[CDN設定](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md)。
 
 
 

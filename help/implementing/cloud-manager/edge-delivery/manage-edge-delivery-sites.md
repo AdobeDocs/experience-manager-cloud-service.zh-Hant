@@ -4,10 +4,10 @@ description: 了解如何將內容傳遞網路設定新增至 Edge Delivery 網�
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 960aa3c6-27b9-44b1-81ea-ad8c5bbc99a5
-source-git-commit: 4fa8c65d9744b9451089423de0da63b39530973e
+source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
 workflow-type: tm+mt
 source-wordcount: '712'
-ht-degree: 76%
+ht-degree: 97%
 
 ---
 
@@ -15,9 +15,9 @@ ht-degree: 76%
 
 了解如何透過將內容傳遞網路設定新增至現有網站，藉此在 Cloud Manager 中管理 Edge Delivery 網站。或了解如何刪除 Edge Delivery 網站。
 
-## 將內容傳遞網路設定新增至現有的 Edge Delivery 網站 {#add-cdn-to-edge-delivery-site}
+## 將網域對應新增至現有的Edge Delivery網站 {#add-cdn-to-edge-delivery-site}
 
-請參閱[新增內容傳遞網路設定](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)。
+請參閱[新增網域對應](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md)。
 
 ## 將 Edge Delivery 網站重新命名 (#rename-edge-delivery-site)
 
@@ -60,28 +60,28 @@ ht-degree: 76%
 
      ![從「Edge Delivery 網站」按鈕新增 Edge Delivery 網站](/help/implementing/cloud-manager/assets/cm-eds-delete2.png)
 
-## 在Helix 4和Helix 5之間管理Edge Delivery網站
+## 管理 Helix 4 和 Helix 5 之間的 Edge Delivery 網站
 
-使用`/program/{programId}/site/{siteId}` API端點在Helix 4和Helix 5之間移轉Edge Delivery網站。
+使用 `/program/{programId}/site/{siteId}` API 端點移轉在 Helix 4 和 Helix 5 之間的 Edge Delivery 網站。
 
 >[!IMPORTANT]
 >
->Helix 4網站的CDN設定無法自動移轉至Helix 5。 此限制之所以存在，是因為客戶生產網站可能仍在Helix 4上執行，而其Helix 5版本仍在開發中。
+>Helix 4 網站的 CDN 設定無法自動移轉到 Helix 5。此限制存在的原因是客戶的生產環境可能仍在 Helix 4 上執行，而其 Helix 5 版本仍在開發中。
 
-**必備條件**
+**先決條件**
 
-* `sitename`必須已存在。
-* 知道適當的`branchName`、Helix `version`和`repo`值。
-* 移轉只會修改`branchName`、Helix `version`和`repo`。 無法變更擁有者欄位。
+* `sitename` 必須已經存在。
+* 知道適當的 `branchName`、Helix `version`和 `repo` 值。
+* 移轉僅會修改 `branchName`、Helix `version`和 `repo`。所有者欄位無法變更。
 
-**API格式**
+**API 格式**
 
 ```http
 PUT /api/program/{programId}/site/{siteId}
 ```
 
-**要求內文引數**
-為Edge Delivery網站建立覆寫，以強制執行要求內文中指定的來源。
+**請求內文參數**
+為 Edge Delivery 網站建立覆寫，以強制執行請求內文中指定的來源。
 
 ```json
 {
@@ -92,7 +92,7 @@ PUT /api/program/{programId}/site/{siteId}
 }
 ```
 
-### 範例1：移轉至Helix 5
+### 範例 1：移轉至 Helix 5
 
 **http**
 
@@ -111,13 +111,13 @@ PUT /api/program/{programId}/site/{siteId}
 }
 ```
 
-**原始URL結果**
-傳回具有以下來源URL的Edge Delivery網站：
+**來源 URL 結果**
+傳回具有以下來源 URL 的 Edge Delivery 網站：
 
 `"origin": "branch--my-website–Teo48.aem.live"`
 
 
-### 範例2：移轉至Helix 4
+### 範例 2：移轉至 Helix 4
 
 **http**
 
@@ -136,12 +136,12 @@ PUT /api/program/{programId}/site/{siteId}
 }
 ```
 
-**原始URL結果**
-傳回具有以下來源URL的Edge Delivery網站：
+**來源 URL 結果**
+傳回具有以下來源 URL 的 Edge Delivery 網站：
 
 `"origin": "branch--my-website--Teo48.hlx.live"`
 
-### 範例3：將重寫程式網站移轉至Helix 5
+### 範例 3：將無存放庫網站移轉至 Helix 5
 
 **http**
 
@@ -160,8 +160,8 @@ PUT /api/program/{programId}/site/{siteId}
 }
 ```
 
-**原始URL結果**
-傳回具有以下來源URL的Edge Delivery網站：
+**來源 URL 結果**
+傳回具有以下來源 URL 的 Edge Delivery 網站：
 
 `"origin": "main--my-repoless-website--Teo48.aem.live"`
 
