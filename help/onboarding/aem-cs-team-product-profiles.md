@@ -1,24 +1,24 @@
 ---
 title: AEM as a Cloud Service 團隊和產品設定檔
-description: 了解 AEM as a Cloud Service 團隊和產品設定檔如何能夠授與和限制您的授權 Adobe 解決方案的存取權。
+description: 了解 AEM as a Cloud Service 團隊和產品設定檔如何能夠授予和限制您的授權 Adobe 解決方案的存取權。
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: b9cc5450effb70afcb67725fe38826646d947da9
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '2124'
+ht-degree: 100%
 
 ---
 
 
 # AEM as a Cloud Service 團隊和產品設定檔 {#product-profiles}
 
-了解 AEM as a Cloud Service 團隊和產品設定檔如何能夠授與和限制您的授權 Adobe 解決方案的存取權。
+了解 AEM as a Cloud Service 團隊和產品設定檔如何能夠授予和限制您的授權 Adobe 解決方案的存取權。
 
 ## 產品設定檔 {#profiles}
 
-在授與使用者特定 Adobe 解決方案的存取權時，您不一定要授與他們完整的存取權。產品設定檔使每個解決方案都可以擁有自己的一組使用者權限。這些可透過 [Admin Console](/help/journey-onboarding/admin-console.md) 取得和存取。
+在授予使用者特定 Adobe 解決方案的存取權時，您不一定想要授予他們完整的存取權。產品設定檔使每個解決方案都可以擁有自己的一組使用者權限。這些可透過 [Admin Console](/help/journey-onboarding/admin-console.md) 取得和存取。
 
 Adobe Admin Console 具有產品、產品執行個體和產品設定檔的結構化階層，可為組織的內部使用者指派會籍，使其能夠存取授權的解決方案和功能。
 
@@ -34,7 +34,7 @@ Your AEM as a Cloud Service team members are added and assigned to one or more o
 
 ## AEM as a Cloud Service 產品設定檔 {#aem-product-profiles}
 
-AEM as a Cloud Service 是完全的雲端原生產品，可提供 AEM 即服務。它以雲端原生方式提供 AEM，具有永遠可用、永遠最新、永遠安全和永遠可擴展等新屬性。同時，它保留了 AEM 作為可自訂平台提供給客戶的主要價值提議，並允許企業級團隊整合到他們的開發和交付方案中。若要深入了解 AEM as a Cloud Service，請參閱 [Adobe Experience Manager as a Cloud Service 簡介](/help/overview/introduction.md)。
+AEM as a Cloud Service 是完全的雲端原生產品，可提供 AEM 即服務。它以雲端原生方式提供 AEM，具有永遠可用、永遠最新、永遠安全和永遠可擴展等新屬性。同時，它讓客戶仍能享有 AEM 作為可自訂平台的重要價值主張，並允許企業級團隊整合到他們的開發和交付程序中。若要深入了解 AEM as a Cloud Service，請參閱 [Adobe Experience Manager as a Cloud Service 簡介](/help/overview/introduction.md)。
 
 ### 組織層級產品執行個體 {#org-level-product-instances}
 
@@ -63,11 +63,11 @@ Forms Communication 解決方案獲得授權時，對應的產品設定檔也會
 
 ### 環境和層級產品執行個體 {#environment-and-tier-level-product-instances}
 
-在使用一或多個 AEM 環境佈建新方案時，每個環境都會出現兩個產品執行個體，分別包含用於製作和發佈的產品設定檔。
+在使用一或多個 AEM 環境佈建新方案時，每個環境都會出現兩個產品執行個體，分別包含用於編寫和發佈的產品設定檔。
 
 ![環境產品執行個體](/help/onboarding/assets/env-productinstances.png)
 
-以下為製作產品執行個體中的產品設定檔，適用於已在包含 AEM Sites 的方案中佈建環境的組織：
+以下為編寫產品執行個體中的產品設定檔，適用於已在包含 AEM Sites 的方案中佈建環境的組織：
 
 ![Sites 產品執行個體](/help/onboarding/assets/sites-product-instances.png)
 
@@ -86,7 +86,7 @@ Forms Communication 解決方案獲得授權時，對應的產品設定檔也會
         <td>AEM Sites 內容經理</td>
         <td>
             <ul>
-                <li>適用於控制此環境中 AEM Sites 製作功能的存取權。此產品設定檔中的使用者將是 AEM Sites 內容作者 AEM 群組的成員，而該群組是在 AEM 中自動建立。應在 AEM 中使用所需的存取層級設定 AEM 群組權限。</li><br>
+                <li>適用於控制此環境中 AEM Sites 編寫功能的存取權。此產品設定檔中的使用者將是 AEM Sites 內容作者 AEM 群組的成員，而該群組是在 AEM 中自動建立。應在 AEM 中使用所需的存取層級設定 AEM 群組權限。</li><br>
                 <li>如果預設服務保持選取狀態
                     <ul>
                         <li>此產品設定檔中的使用者也會是「AEM Sites 內容經理 - 服務」AEM 群組的成員。</li>
@@ -103,7 +103,7 @@ Forms Communication 解決方案獲得授權時，對應的產品設定檔也會
         <td>AEM 管理員</td>
         <td>
             <ul>
-                <li>適用於不受限制地存取 AEM 製作和發佈環境功能。此產品設定檔中的使用者會是 AEM 管理員作者 AEM 群組的成員，而該群組是在 AEM 中自動建立。</li><br>
+                <li>適用於不受限制地存取 AEM 編寫和發佈環境功能。此產品設定檔中的使用者會是 AEM 管理員作者 AEM 群組的成員，而該群組是在 AEM 中自動建立。</li><br>
                 <li>如果預設服務保持選取狀態
                     <ul>
                         <li>此產品設定檔中的使用者也會是「AEM 管理員 - 服務」AEM 群組的成員</li>
@@ -118,7 +118,7 @@ Forms Communication 解決方案獲得授權時，對應的產品設定檔也會
         <td>AEM 使用者</td>
         <td>
             <ul>
-                <li>適用於極有限制地存取 AEM 製作環境功能。此產品設定檔中的使用者會是「投稿人」AEM 群組的成員，且該群組是在 AEM 中自動建立</li><br>
+                <li>適用於極有限制地存取 AEM 編寫環境功能。此產品設定檔中的使用者會是「投稿人」AEM 群組的成員，且該群組是在 AEM 中自動建立</li><br>
                 <li>如果預設服務保持選取狀態
                     <ul>
                         <li>此產品設定檔中的使用者也會是「AEM 使用者 - 服務」AEM 群組的成員</li>
@@ -133,7 +133,7 @@ Forms Communication 解決方案獲得授權時，對應的產品設定檔也會
         <td>AEM 報告者</td>
         <td>
             <ul>
-                <li>目前未使用，但未來可能會提供對此環境之製作階層相關報告資訊的存取權。</li>
+                <li>目前未使用，但未來可能會提供對此環境之編寫階層相關報告資訊的存取權。</li>
             </ul>
         </td>
     </tr>
@@ -155,7 +155,7 @@ Forms Communication 解決方案獲得授權時，對應的產品設定檔也會
         <td>AEM Assets 進階使用者</td>
 <td>
         <ul>
-                <li>存取所有 AEM Assets 功能，包含管理資產、中繼資料，以及有關數位資產的整體控管和自動化。</li>
+                <li>存取所有 AEM Assets 功能，包含管理資產、中繼資料，以及有關數位資產的整體治理和自動化。</li>
                 <li>透過整合其他 Adobe 產品和非 Adobe 應用程式中可供貴組織使用的資產來運用 Experience Manager 中的資產。
                 </li>
                 <li>使用內建的 Adobe Express 和 Firefly，善用專業設計的範本、品牌套件、Adobe Stock 資產等等，以建立和編輯資產。</li>
@@ -169,7 +169,7 @@ Forms Communication 解決方案獲得授權時，對應的產品設定檔也會
         <td>AEM Forms 內容經理</td>
         <td>
             <ul>
-                <li>適用於控制此環境中 AEM Forms 製作功能的存取權。此產品設定檔中的使用者會是 AEM Forms 表單使用者 AEM 群組的成員，且該群組是在 AEM 中自動建立。</li><br>
+                <li>適用於控制此環境中 AEM Forms 編寫功能的存取權。此產品設定檔中的使用者會是 AEM Forms 表單使用者 AEM 群組的成員，且該群組是在 AEM 中自動建立。</li><br>
                 <li>如果預設服務保持選取狀態
                     <ul>
                         <li>此產品設定檔中的使用者也會是「AEM Forms 內容經理 - 服務」AEM 群組的成員。</li>
@@ -184,7 +184,7 @@ Forms Communication 解決方案獲得授權時，對應的產品設定檔也會
         <td>AEM Forms 開發人員</td>
         <td>
             <ul>
-                <li>適用於控制此環境中 AEM Forms 製作功能的存取權。此產品設定檔中的使用者會是 AEM Forms 表單進階使用者 AEM 群組的成員，且該群組是在 AEM 中自動建立。除了正常的表單製作任務之外，這些使用者還有權上傳 XDP 和製作表單資料模型。</li><br>
+                <li>適用於控制此環境中 AEM Forms 編寫功能的存取權。此產品設定檔中的使用者會是 AEM Forms 表單進階使用者 AEM 群組的成員，且該群組是在 AEM 中自動建立。除了正常的表單編寫任務之外，這些使用者還有權上傳 XDP 和編寫表單資料模型。</li><br>
                 <li>如果預設服務保持選取狀態
                     <ul>
                         <li>此產品設定檔中的使用者也會是「AEM Forms 開發人員 - 服務」AEM 群組的成員。</li>
@@ -214,7 +214,7 @@ Forms Communication 解決方案獲得授權時，對應的產品設定檔也會
         <td>AEM 使用者</td>
         <td>
             <ul>
-                <li>適用於極有限制地存取 AEM 製作環境功能。此產品設定檔中的使用者會是「投稿人」AEM 群組的成員，且該群組是在 AEM 中自動建立</li><br>
+                <li>適用於極有限制地存取 AEM 編寫環境功能。此產品設定檔中的使用者會是「投稿人」AEM 群組的成員，且該群組是在 AEM 中自動建立</li><br>
                 <li>如果預設服務保持選取狀態
                     <ul>
                         <li>此產品設定檔中的使用者也會是「AEM 使用者 - 服務」AEM 群組的成員。</li>
@@ -256,7 +256,7 @@ AEM 中與該服務相關聯的 AEM 群組會有一組彙總的使用者，且�
 
 ![服務](/help/onboarding/assets/services.png)
 
-下圖內容代表反映出 AEM Sites 內容經理製作階層產品設定檔和服務的 AEM 群組。
+下圖內容代表反映出 AEM Sites 內容經理編寫階層產品設定檔和服務的 AEM 群組。
 
 ![AEM 群組與服務的對應](/help/onboarding/assets/profile-to-service-mapping.png)
 
@@ -264,7 +264,7 @@ AEM 中與該服務相關聯的 AEM 群組會有一組彙總的使用者，且�
 >
 >指派給 AEM as a Cloud Service 產品設定檔的每個使用者透過&#x200B;**雲端管理員使用者**&#x200B;角色具有對 Cloud Manager 的唯讀存取權。
 >
->唯具有&#x200B;**雲端管理員使用者**&#x200B;角色的使用者可以使用「**方案**」選單選項，登入 Cloud Manager 並瀏覽至 AEM 製作環境 (如果存在)。**雲端管理員使用者**&#x200B;角色不足以存取方案詳細資料。如果需要此類存取權，系統管理員必須授予使用者其他角色。
+>唯具有&#x200B;**雲端管理員使用者**&#x200B;角色的使用者可以使用「**方案**」選單選項，登入 Cloud Manager 並瀏覽至 AEM 編寫環境 (如果存在)。**雲端管理員使用者**&#x200B;角色不足以存取方案詳細資料。如果需要此類存取權，系統管理員必須授予使用者其他角色。
 
 >[!WARNING]
 >

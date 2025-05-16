@@ -5,9 +5,9 @@ feature: Generate Variations
 role: Admin, Architect, Developer, User
 exl-id: d380ddd6-43f9-4bbf-8167-a6a472b9fc01
 source-git-commit: c6d03117494d913e5b93edde9d7b38544e566c8a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1401'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -21,13 +21,13 @@ ht-degree: 95%
 
 您可以利用下列編輯器[存取「產生變化版本」](#access-generate-variations)([當編輯器設定完成後](#access-generate-variations))：
 
-* [在 AEM Edge Delivery Services 的 Sidekick 中；用於文件型製作](#access-aem-sidekick)
+* [在 AEM Edge Delivery Services 的 Sidekick 中；用於文件型編寫](#access-aem-sidekick)
 * [在通用編輯器中](#access-aem-universal-editor)
 * [在內容片段編輯器中](#access-aem-content-fragment-editor)
 
 >[!IMPORTANT]
 >
->此頁面使用文件型製作當成範例的基礎，但其原則也適用於其他編輯器。
+>此頁面使用文件型編寫當成範例的基礎，但其原則也適用於其他編輯器。
 
 >[!NOTE]
 >
@@ -69,7 +69,7 @@ Before using Generate Variations you are recommended to read the [Adobe Experien
 
 當您開啟與編輯器整合的「產生變化版本」時，會看到具有三個索引標籤的浮動面板擴充功能。
 
-![產生變化版本：文件型製作概觀](assets/generate-variations-doc-based-overview.png)
+![產生變化版本：文件型編寫概觀](assets/generate-variations-doc-based-overview.png)
 
 * 編輯器：
    * 呈現編輯器中的內容流程。
@@ -139,9 +139,9 @@ The brand score shows you how on-brand the generated variation is.
 
 ### 使用所產生的變化版本 {#use-a-generated-variation}
 
-若要使用生成式 AI 所產生的內容，您必須先選取然後「**匯出為 CSV**」。
+若要使用生成式 AI 所產生的內容，您必須先選取該內容，然後「**匯出為 CSV**」。
 
-匯出後，您可以在其他地方使用該內容；例如，在為您的網站製作內容時。您也可以執行[實驗](https://www.aem.live/docs/experimentation)。
+匯出後，您可以在其他地方使用該內容 (例如為您的網站編寫內容時)。您也可以執行[實驗](https://www.aem.live/docs/experimentation)。
 
 >[!NOTE]
 >
@@ -182,23 +182,23 @@ The brand score shows you how on-brand the generated variation is.
 
 若要使用「產生變化版本」，必須確保符合先決條件：
 
-* [存取具有 Edge Delivery Services 的 Experience Manager as a Cloud Service](#access-to-aemaacs-with-edge-delivery-services)
+* [存取包含 Edge Delivery Services 的 Experience Manager as a Cloud Service](#access-to-aemaacs-with-edge-delivery-services)
 
-#### 存取具有 Edge Delivery Services 的 Experience Manager as a Cloud Service{#access-to-aemaacs-with-edge-delivery-services}
+#### 存取包含 Edge Delivery Services 的 Experience Manager as a Cloud Service{#access-to-aemaacs-with-edge-delivery-services}
 
-需要存取「產生變化版本」的使用者，必須有權使用具有 Edge Delivery Services 的 Experience Manager as a Cloud Service 環境。
+需要存取「產生變化版本」的使用者，必須有權使用包含 Edge Delivery Services 的 Experience Manager as a Cloud Service 環境。
 
 >[!NOTE]
 >
 >如果您的 AEM Sites as a Cloud Service 合約未包含 Edge Delivery Services，就需要簽署新合約才能獲得存取權。
 >
->您應與客戶團隊聯絡，討論如何移轉至具有 Edge Delivery Services 的 AEM Sites as a Cloud Service。
+>您應與客戶團隊聯絡，討論如何移轉至包含 Edge Delivery Services 的 AEM Sites as a Cloud Service。
 
 若要授予存取權給特定使用者，請將他們的使用者帳戶指派至相應的產品設定檔。如需其他詳細資訊，請參閱[指派 AEM 產品設定檔](/help/journey-onboarding/assign-profiles-cloud-manager.md)。
 
-### 適用於文件型製作的「從 AEM Sidekick 存取」 {#access-aem-sidekick}
+### 適用於文件型編寫的「從 AEM Sidekick 存取」 {#access-aem-sidekick}
 
-「從 AEM Sidekick 存取」適用於[文件型製作](/help/edge/wysiwyg-authoring/authoring.md)。
+「從 AEM Sidekick 存取」適用於[文件型編寫](/help/edge/wysiwyg-authoring/authoring.md)。
 
 在您可以從 (Edge Delivery Services 的) Sidekick 存取「產生變化版本」之前，需要進行一些設定。
 
@@ -301,11 +301,11 @@ The brand score shows you how on-brand the generated variation is.
      import('../tools/sidekick/aem-genai-variations.js');
    ```
 
-   這能確保 `/tools/sidekick/aem-genai-variations.js`是作為延遲載入過程的一部分載入。
+   這能確保 `/tools/sidekick/aem-genai-variations.js` 是作為延遲載入過程的一部分載入。
 
    ![產生變化版本：延遲載入器](assets/generate-variations-sidekick-lazyloader.png)
 
-1. 然後，您可能需要確保使用者能夠[存取具有 Edge Delivery Services 的 Experience Manager as a Cloud Service](#access-to-aemaacs-with-edge-delivery-services)。
+1. 然後，您可能需要確保使用者能夠[存取包含 Edge Delivery Services 的 Experience Manager as a Cloud Service](#access-to-aemaacs-with-edge-delivery-services)。
 
 1. 接著，您可以從 Sidekick 工具列中選取「**以 AI 產生**」來存取該功能：
 
@@ -313,14 +313,14 @@ The brand score shows you how on-brand the generated variation is.
 
 ### 從 AEM 通用編輯器存取 {#access-aem-universal-editor}
 
-從[AEM Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md)的存取已實作為擴充功能。
+以擴充功能的形式，實施從 [AEM 通用編輯器](/help/sites-cloud/authoring/universal-editor/authoring.md)存取的功能。
 
-* 如需有關如何從通用編輯器存取產生變異的詳細資訊，請參閱檔案[使用通用編輯器編寫內容。](/help/sites-cloud/authoring/universal-editor/authoring.md#generate-variations)
-* 如需如何啟用擴充功能的詳細資訊，請參閱檔案： [AEM Experience Manager中的Extension Manager。](https://developer.adobe.com/uix/docs/extension-manager/)
+* 如需有關如何從通用編輯器存取「產生變化版本」的詳細資訊，請參閱文件[使用通用編輯器編寫內容。](/help/sites-cloud/authoring/universal-editor/authoring.md#generate-variations)
+* 有關如何啟用擴充功能的詳細資訊，請參閱文件 [AEM Experience Manager 中的 Extension Manager。](https://developer.adobe.com/uix/docs/extension-manager/)
 
 ### 從 AEM 內容片段編輯器存取 {#access-aem-content-fragment-editor}
 
-所實施的「從 [AEM 內容片段編輯器](/help/sites-cloud/administering/content-fragments/authoring.md#generate-variations-ai)存取」是一項擴充功能。如需其他詳細資訊，請參閱「[AEM Experience Manager 中的 Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/)」。
+「從 [AEM 內容片段編輯器](/help/sites-cloud/administering/content-fragments/authoring.md#generate-variations-ai)存取」需以擴充功能的形式實施。如需其他詳細資訊，請參閱「[AEM Experience Manager 中的 Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/)」。
 
 ## 更多資訊 {#further-information}
 
@@ -328,9 +328,9 @@ The brand score shows you how on-brand the generated variation is.
 
 * [GitHub 上的 GenAI 產生變化版本](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
 * [Edge Delivery Services 實驗](https://www.aem.live/docs/experimentation)
-* [Experience Cloud產品中的Generative AI](https://experienceleague.adobe.com/zh-hant/docs/core-services/interface/features/generative-ai)
+* [Experience Cloud 產品中的生成式 AI](https://experienceleague.adobe.com/zh-hant/docs/core-services/interface/features/generative-ai)
 
-   * [Experience Cloud產品中的Generative AI - Adobe Experience Manager](https://experienceleague.adobe.com/zh-hant/docs/core-services/interface/features/generative-ai#aem)
+   * [Experience Cloud 產品中的生成式 AI - Adobe Experience Manager](https://experienceleague.adobe.com/zh-hant/docs/core-services/interface/features/generative-ai#aem)
 
 ## 發行歷史記錄 {#release-history}
 
