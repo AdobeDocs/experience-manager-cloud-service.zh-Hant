@@ -37,7 +37,7 @@ ht-degree: 92%
 
 請觀看 2024 年 3 月發行概觀影片，以了解 2024.3.0 版本新增功能摘要：
 
->[!VIDEO](https://video.tv.adobe.com/v/3428342?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3450370?quality=12&captions=chi_hant)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
