@@ -4,10 +4,10 @@ description: 了解「產生變化版本」，可透過 AEM as a Cloud Service �
 feature: Generate Variations
 role: Admin, Architect, Developer, User
 exl-id: d380ddd6-43f9-4bbf-8167-a6a472b9fc01
-source-git-commit: c6d03117494d913e5b93edde9d7b38544e566c8a
-workflow-type: ht
-source-wordcount: '1401'
-ht-degree: 100%
+source-git-commit: 743f9c43b90a6ad9c9fd41f4089680da44a9c8ff
+workflow-type: tm+mt
+source-wordcount: '1409'
+ht-degree: 99%
 
 ---
 
@@ -331,6 +331,8 @@ The brand score shows you how on-brand the generated variation is.
 * [Experience Cloud 產品中的生成式 AI](https://experienceleague.adobe.com/zh-hant/docs/core-services/interface/features/generative-ai)
 
    * [Experience Cloud 產品中的生成式 AI - Adobe Experience Manager](https://experienceleague.adobe.com/zh-hant/docs/core-services/interface/features/generative-ai#aem)
+
+* 在Experience Cloud上[產生變數登陸頁面](https://experience.adobe.com/solutions/aem-sites-genai-aem-genai-variations-mfe/static-assets/resources/ga.html)
 
 ## 發行歷史記錄 {#release-history}
 
