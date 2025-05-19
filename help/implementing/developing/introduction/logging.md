@@ -4,10 +4,10 @@ description: 瞭解如何使用AEM as a Cloud Service的記錄來設定中央記
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: f799dd9a4a2e5138776eb57a04c116df49d28030
+source-git-commit: 783210b4b72cf6efbdb4cf8c8cab08dbcd3004c6
 workflow-type: tm+mt
-source-wordcount: '2546'
-ht-degree: 9%
+source-wordcount: '2540'
+ht-degree: 10%
 
 ---
 
@@ -101,7 +101,7 @@ AEM記錄層級是透過OSGi設定根據環境型別設定，而這些設定又�
 
 >[!NOTE]
 >
->為確保有效監控客戶環境，請勿變更預設記錄層級。 此外，請勿修改預設的記錄格式。 記錄輸出必須保持指向預設檔案。 如需特定准則，請參閱[下方](#configuration-loggers)一節。
+>為確保有效監控客戶環境，請勿變更預設記錄層級。 此外，請勿修改預設的記錄格式。 記錄輸出必須維持導向預設檔案。如需特定准則，請參閱[下方](#configuration-loggers)一節。
 
 **範例記錄輸出**
 
@@ -154,7 +154,6 @@ AEM Java記錄檔會定義為OSGi設定，因此可使用執行模式資料夾�
 |---|---|
 | `org.apache.sling.commons.log.names` | 要收集其記錄陳述式的Java套件。 |
 | `org.apache.sling.commons.log.level` | `org.apache.sling.commons.log.names`所指定的Java封裝記錄層級 |
-| `org.apache.sling.commons.log.file` | 指定輸出的目標： `logs/error.log` |
 
 變更其他LogManager OSGi設定屬性可能會導致AEM as a Cloud Service中的可用性問題。
 
@@ -166,8 +165,8 @@ AEM Java記錄檔會定義為OSGi設定，因此可使用執行模式資料夾�
 * 記錄輸出必須保持導向到預設檔案&quot;logs/error.log&quot;。
 
 為此，不得對以下OSGi屬性進行變更：
-* **Apache Sling記錄設定** (PID： `org.apache.sling.commons.log.LogManager`) — *所有屬性*
-* **Apache Sling記錄記錄器組態** （工廠PID： `org.apache.sling.commons.log.LogManager.factory.config`）：
+* **Apache Sling 記錄設定** (PID: `org.apache.sling.commons.log.LogManager`)：*所有屬性*
+* **Apache Sling 記錄記錄器設定** (工廠 PID: `org.apache.sling.commons.log.LogManager.factory.config`)：
    * `org.apache.sling.commons.log.file`
    * `org.apache.sling.commons.log.pattern`
 
