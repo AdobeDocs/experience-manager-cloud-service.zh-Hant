@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 6493c48797c09fa4598c2c0ff86c9cc1fafa758c
+source-git-commit: 53a2dd005de075c0f1e4bf83675995608e5f785d
 workflow-type: tm+mt
-source-wordcount: '1448'
-ht-degree: 14%
+source-wordcount: '1482'
+ht-degree: 13%
 
 ---
 
@@ -16,13 +16,17 @@ ht-degree: 14%
 
 下節是 Experience Manager as a Cloud Service 目前維護版本的技術版本發行說明。
 
-## 版本 20783 {#20783}
+## 版本 20936 {#20936}
 
-以下摘要說明維護版本20783數的持續改善，該版本於2025年5月13日公開發佈。 前一個維護版本為版本 20626。
+以下摘要說明維護版本20936數的持續改善，該版本於2025年5月19日公開發佈。 前一個維護版本為版本 20626。
 
 啟用 2025.5.0 功能將可使用此維護版本的完整功能集。如需詳細資訊，請參閱 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
-### 增強功能 {#enhancements-20783}
+>[!NOTE]
+>
+>發行說20783已於5月19日設為私人，並已由發行說20936取代。
+
+### 增強功能 {#enhancements-20936}
 
 * Forms-19125：核心元件最適化表單編輯器已增強，可在資料來源樹狀結構的對應區段放入表單畫布時，支援自動對應可用的最適化表單片段。 這會將基礎編輯器的重要生產力功能帶給核心元件。
 * Forms-17107： AEM Forms現在提供增強的使用者端自訂函式剖析功能。 這包括支援現代JavaScript功能(ECMAScript ES10+)，例如選用的鏈結，並引進在自訂函式指令碼中使用靜態匯入的功能。 如此一來，開發人員就能更妥善地組織程式碼、利用ESM模組，以及移除先前在基於核心元件和Edge Delivery Services的最適化Forms中使用自訂函式時遇到的限制，尤其是針對先前需要這些功能因應措施的使用者。
@@ -46,7 +50,7 @@ ht-degree: 14%
 * SITES-26711： RTE文字欄位的連結未更新為指向MSM轉出的即時副本。
 * SITES-25976：體驗片段內的連結在MSM轉出後不適用。
 
-### 已修正的問題 {#fixed-issues-20783}
+### 已修正的問題 {#fixed-issues-20936}
 
 * Assets-50994：在AemRequestEventFilter封鎖傳入流量。
 * CQ-4358591：從具有「建立翻譯專案」選項的網站參考面板建立語言副本時，缺少少數語言的專案。
@@ -92,21 +96,22 @@ ht-degree: 14%
 * SITES-31020：增強建立即時副本工作UI以顯示客戶進度。
 * SITES-29816：建立體驗片段的即時副本時出現「找不到資源」錯誤。
 * SITES-29363：重設 Live Copy 按鈕不適用於巢狀的 Live Copy 內容階層。
+* SITES-31467：頁面編輯器中的`contexthub.authoring-hook.js`出現JS錯誤。
 * SKYOPS-106509：新增輔助的附加開啟標幟，以支援Java 21上的GSON反射式存取。
 
-### 已知問題 {#known-issues-20783}
+### 已知問題 {#known-issues-20936}
 
-無。
+* SITES-28030：選取鎖定目標選項時遺失開始鎖定目標選項。
 
-### 已過時的功能和 API {#deprecated-20783}
+### 已過時的功能和 API {#deprecated-20936}
 
 [「已過時和已移除的功能及 API」](/help/release-notes/deprecated-removed-features.md)文件中詳細介紹 AEM as a Cloud Service 中已過時和已移除的功能及 API。
 
-### 安全性修正 {#security-20783}
+### 安全性修正 {#security-20936}
 
 AEM as a Cloud Service 專門負責將您的平台的安全性與效能最佳化。此維護版本解決了 19 個已確認的弱點，強化我們提供健全系統保護的承諾。
 
-### 嵌入技術 {#embedded-tech-20783}
+### 嵌入技術 {#embedded-tech-20936}
 
 | 技術 | 版本 | 連結 |
 |---|---|---|
