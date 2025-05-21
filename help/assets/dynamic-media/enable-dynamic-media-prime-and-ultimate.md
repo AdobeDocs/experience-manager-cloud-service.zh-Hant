@@ -216,7 +216,7 @@ ht-degree: 4%
 
 1. [新增自訂網域名稱](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name#adding-cdn-settings)。
 
-1. 瀏覽到環境詳細資訊頁面，並[新增CDN設定](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/domain-mappings/add-domain-mapping)。 新增設定時，請在&#x200B;**[!UICONTROL 設定CDN]**&#x200B;對話方塊的&#x200B;**[!UICONTROL 層]**&#x200B;欄位中選取&#x200B;**[!UICONTROL 傳遞]**。
+1. 瀏覽到環境詳細資訊頁面，並[新增CDN設定](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/domain-mappings/add-domain-mapping)。 新增設定時，請在&#x200B;**[!UICONTROL 設定CDN]**&#x200B;對話方塊的&#x200B;**[!UICONTROL 層]**&#x200B;欄位中選取&#x200B;**[!UICONTROL 傳遞]**。
 
    ![設定CDN](/help/assets/assets/select-delivery-tier-in-configure-cdn-form.png)
 
