@@ -4,10 +4,10 @@ description: 了解如何將 Edge Delivery 網站新增至您的生產程式或�
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
-source-git-commit: 54ea92b53d97be314dcef1ed3afbde35b16f9949
+source-git-commit: a7e8e340355d85236a0997b28e0a04296b2ef5b4
 workflow-type: tm+mt
-source-wordcount: '473'
-ht-degree: 94%
+source-wordcount: '502'
+ht-degree: 91%
 
 ---
 
@@ -15,10 +15,13 @@ ht-degree: 94%
 
 >[!IMPORTANT]
 >
->瞭解為何您必須將Edge交付服務網站帶入Cloud Manager。 檢視[針對Edge Delivery Services使用Adobe建議路徑的好處](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds)。
+>瞭解為何您必須將Edge Delivery Services網站帶入Cloud Manager。
+>請參閱[Edge Delivery Services 使用 Adobe 建議路徑的優勢](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds)。
 
 **若要新增 Edge Delivery 網站至 Cloud Manager：**
 
+1. 在Cloud Manager中加入Edge Delivery Services網站之前，請務必先使用Edge Delivery授權建立您的程式。
+請參閱[建立生產計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)。
 1. 在 [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager，然後選取適當的程式。
 1. 執行下列任一項作業：
 
