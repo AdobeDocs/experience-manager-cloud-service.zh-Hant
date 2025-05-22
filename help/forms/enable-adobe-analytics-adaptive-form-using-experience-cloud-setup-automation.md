@@ -1,25 +1,30 @@
 ---
 title: 如何啟用Adobe Analytics以快速追蹤分析最適化表單？
-description: Experience Cloud設定自動化協助將Adobe Analytics連結至最適化表單，以快速追蹤訪客互動和參與的分析及深入分析。
-keywords: 使用Experience Cloud設定自動化啟用最適化表單的Adobe Analytics、在Forms中啟用Adobe Analytics、在最適化Forms中啟用Adobe Analytics、Forms分析整合、Forms和Adobe Analytics
+description: Experience Cloud Setup Automation協助將Adobe Analytics連線至最適化表單，以快速追蹤訪客互動和參與的相關分析和見解。
+keywords: 使用Adobe Analytics Setup Automation為最適化表單啟用Experience Cloud、在Forms中啟用Adobe Analytics、在最適化Forms中啟用Adobe Analytics、Forms Analytics整合、Forms和Adobe Analytics
 feature: Adaptive Forms
 role: Admin, User
 exl-id: 0e1aa040-08b4-4c1a-b247-ad6fff410187
-source-git-commit: a23576b5dc6d78a29fe19cd23f3c4788f2bee23e
+source-git-commit: a58f7e8de662255e3fce1c168b2293a72a9863df
 workflow-type: tm+mt
-source-wordcount: '1588'
+source-wordcount: '1597'
 ht-degree: 50%
 
 ---
 
-# 使用 Experience Cloud Setup Automation 為最適化表單啟用 Adobe Analytics {#integrate-adobe-analytics-to-aem-forms-with-experience-cloud-setup-automation}
+# （已棄用）使用Adobe Analytics Setup Automation為最適化表單啟用Experience Cloud {#integrate-adobe-analytics-to-aem-forms-with-experience-cloud-setup-automation}
+
+>[!CAUTION]
+>
+>Experience Cloud設定自動化功能已過時。
+
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service  | 本文章 |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/configure-analytics-forms-documents.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/configure-analytics-forms-documents.html) |
 
-Experience Cloud設定自動化有助於將Adobe Analytics連結到Adaptive Forms，這有助於快速追蹤分析使用者與您的表單的互動，並提供訪客互動和參與情況的深入分析。 Experience Cloud Setup Automation 也可協助監控表單效能，其中涉及評估像是完成時間和退出點等量度。此分析有助於優化表單以提供更好的使用者體驗，同時根據登入狀態 (例如匿名使用者) 區分使用者行為，以識別整體趨勢和模式。
+Experience Cloud Setup Automation協助將Adobe Analytics連結到Adaptive Forms，這有助於快速追蹤分析使用者與您的表單的互動，並提供訪客互動和參與情況的深入分析。 Experience Cloud Setup Automation 也可協助監控表單效能，其中涉及評估像是完成時間和退出點等量度。此分析有助於優化表單以提供更好的使用者體驗，同時根據登入狀態 (例如匿名使用者) 區分使用者行為，以識別整體趨勢和模式。
 
 ## 將 Adobe Analytics 整合至最適化表單的優勢 {#advantages-of-integrating-adobe-analytics-with-aem-forms}
 
@@ -33,7 +38,7 @@ Adobe Analytics提供全方位的Adaptive Forms效能量度，旨在提供表單
 
 * **表單轉譯、表單提交、驗證錯誤、不重複訪客**，可讓您評估表單的使用情況和有效性。
 
-* **訪客深入見解**，其中包括造訪和提交頻率以及不重複訪客計數，提供表單對象的全面檢視。
+* **訪客深入見解**，其中包括造訪和提交頻率以及不重複訪客計數，提供表單客群的全貌。
 
 * **裝置類型**&#x200B;資料告知您使用者用來存取表單之裝置的資料。
 
@@ -58,11 +63,11 @@ Adobe Analytics提供全方位的Adaptive Forms效能量度，旨在提供表單
 Analytics, Data Collection (Formerly Adobe Launch), and Experience Manager (experience.adobe.com)
 -->
 
-Experience Cloud設定自動化需要&#x200B;**Adobe Analytics授權**、**資料彙集(先前的Adobe啟動)**&#x200B;來管理追蹤指令碼，以及&#x200B;**Experience Manager Forms授權**&#x200B;以簡化資料彙總和深入分析產生。
+Experience Cloud Setup Automation需要&#x200B;**Adobe Analytics授權**、**Data Collection (先前稱為Adobe Launch)**&#x200B;來管理追蹤指令碼，以及&#x200B;**Experience Manager Forms授權**&#x200B;來簡化資料彙總與insight產生。
 
-如果您有&#x200B;**Adobe Analytics**&#x200B;和&#x200B;**Experience Manager Forms**&#x200B;的有效授權，而且您已與&#x200B;**資料收集(先前為Adobe啟動)**&#x200B;整合，您應在開發人員主控台中驗證其可用性。
+如果您有&#x200B;**Adobe Analytics**&#x200B;和&#x200B;**Experience Manager Forms**&#x200B;的有效授權，而且您已與&#x200B;**資料收集(先前稱為Adobe Launch)**&#x200B;整合，您應在開發人員主控台中驗證其可用性。
 
-若要確認上述可適用於您的Formsas a Cloud Service環境，請造訪[開發人員主控台](https://developer.adobe.com/console/projects)，瀏覽至專案並使用方案ID — 環境ID搜尋您的專案，例如，使用URL `https://author-p45913-e175111-cmstg.adobeaemcloud.com/index.html`、方案ID — 環境ID為`p45913-e175111`的環境。 確保有列出 Experience Cloud Setup Automation、Adobe Analytics 和 Experience Platform Launch API。如果列出了這些專案，您可以啟用Adobe Analytics，以快速追蹤分析您的最適化Forms。
+若要確認上述可適用於您的Forms as a Cloud Service環境，請造訪[開發人員主控台](https://developer.adobe.com/console/projects)，瀏覽至專案並使用方案ID — 環境ID搜尋您的專案，例如，使用URL `https://author-p45913-e175111-cmstg.adobeaemcloud.com/index.html`、方案ID — 環境ID為`p45913-e175111`的環境。 確保有列出 Experience Cloud Setup Automation、Adobe Analytics 和 Experience Platform Launch API。如果列出了這些專案，您可以啟用Adobe Analytics，以快速追蹤分析您的最適化Forms。
 
 ![先決條件表單分析整合](assets/analytics-aem.png){width="100%"}
 
@@ -71,7 +76,7 @@ Experience Cloud設定自動化需要&#x200B;**Adobe Analytics授權**、**資�
 > If you have an active licenses for Experience Cloud Setup Automation, Adobe Analytics, and Experience Platform Launch API, you should verify their availability within your developer console.
 -->
 
-<!-- For more information about your available integrations, see [troubleshooting Adaptive Forms with Analytics Integration](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html?lang=zh-Hant)
+<!-- For more information about your available integrations, see [troubleshooting Adaptive Forms with Analytics Integration](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html)
 -->
 
 ## 設定 Adobe Analytics {#configure-adobe-analytics}
@@ -95,7 +100,7 @@ Experience Cloud設定自動化需要&#x200B;**Adobe Analytics授權**、**資�
 1. 建立雲端服務的設定容器：
    1. 前往&#x200B;**[!UICONTROL 工具 > 一般 > 設定瀏覽器]**。
    1. 選取或建立設定容器，並啟用&#x200B;**[!UICONTROL 雲端設定]**&#x200B;資料夾。
-   1. 選取&#x200B;**[!UICONTROL 儲存並關閉]**&#x200B;以儲存設定並結束對話方塊。
+   1. 選取「**[!UICONTROL 儲存並關閉]**」，即可儲存設定並退出對話框。
 1. 在您的 AEM 執行個體上，前往 **[Forms]** >> **[表單和文件]**。
 1. 選取您的&#x200B;**[!UICONTROL 表單]** >> **[!UICONTROL 屬性]**，在&#x200B;**[!UICONTROL 設定容器]**&#x200B;中，選取您在步驟 1 於&#x200B;**[!UICONTROL 設定瀏覽器]** 建立或選取的設定容器。
 1. 選取左邊欄的任務面板，然後按一下&#x200B;**設定 Analytics** 和&#x200B;**啟動 Adobe Analytics**。
@@ -147,9 +152,9 @@ Experience Cloud設定自動化需要&#x200B;**Adobe Analytics授權**、**資�
 
 ### 在Sites中連線最適化Forms以啟用Analytics {#Connect-analytics-to-adaptive-forms}
 
-若要在AEM Sites頁面中連線最適化表單以啟用Analytics以進行快速追蹤分析，請使用AEM Archetype/Git存放庫和部署管道將`customfooterlibs`使用者端程式庫包含到AEM Sites頁面。
+若要在AEM Sites頁面中連線最適化表單以啟用Analytics以進行快速追蹤分析，請使用AEM Archetype/Git存放庫和部署管道，將`customfooterlibs`使用者端程式庫包含到AEM Sites頁面。
 
-1. 在文字編輯器中開啟您的[AEM Forms原型或複製的Git存放庫](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)專案。 例如，Visual Studio Code。
+1. 在文字編輯器中開啟您的[AEM Forms原型或複製的Git存放庫](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)專案。 例如，Visual Studio Code。
 
 1. 導覽至您最適化表單所在的網站頁面，例如，在此示範專案中，我們有`ui.apps/src/main/content/jcr_root/apps/corecomponents/components/page/.content.xml`。
 
@@ -172,7 +177,7 @@ Experience Cloud設定自動化需要&#x200B;**Adobe Analytics授權**、**資�
 
    `customfooterlibs.html`用於JavaScript。
 
-1. [執行管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html?lang=zh-Hant)以部署變更。
+1. [執行管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html)以部署變更。
 
 ### 啟用表單分析規則至網站中的Forms {#bind-forms-analytics-rules-to-forms-in-sites}
 
@@ -238,5 +243,5 @@ Experience Cloud設定自動化需要&#x200B;**Adobe Analytics授權**、**資�
 ## 另請參閱 {#see-also}
 
 * [檢視和瞭解最適化Forms分析報表](/help/forms/view-understand-aem-forms-analytics-reports.md)
-* [新增最適化表單至 AEM Sites 頁面或體驗片段](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [新增自適應表單至 AEM Sites 頁面或體驗片段](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [將AEM Forms與Adobe Analytics整合](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
