@@ -4,10 +4,10 @@ description: 了解產生變化版本，可透過 AEM as a Cloud Service 和 Edg
 exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
 feature: Generate Variations
 role: Admin, Architect, Developer
-source-git-commit: 85489b9d2c774af2f82efe4cde406d6d33057d4e
-workflow-type: ht
-source-wordcount: '3287'
-ht-degree: 100%
+source-git-commit: 8c4908bf52ca03798d7d40ed66647c17fc0faf14
+workflow-type: tm+mt
+source-wordcount: '3294'
+ht-degree: 99%
 
 ---
 
@@ -426,17 +426,17 @@ Adobe 提供許多客群可供使用。
 
 若要使用「產生變化版本」，必須確保符合先決條件：
 
-* [存取具有 Edge Delivery Services 的 Experience Manager as a Cloud Service](#access-to-aemaacs-with-edge-delivery-services)
+* [存取包含 Edge Delivery Services 的 Experience Manager as a Cloud Service](#access-to-aemaacs-with-edge-delivery-services)
 
-#### 存取具有 Edge Delivery Services 的 Experience Manager as a Cloud Service{#access-to-aemaacs-with-edge-delivery-services}
+#### 存取包含 Edge Delivery Services 的 Experience Manager as a Cloud Service{#access-to-aemaacs-with-edge-delivery-services}
 
-需要存取「產生變化版本」的使用者，必須有權使用具有 Edge Delivery Services 的 Experience Manager as a Cloud Service 環境。
+需要存取「產生變化版本」的使用者，必須有權使用包含 Edge Delivery Services 的 Experience Manager as a Cloud Service 環境。
 
 >[!NOTE]
 >
 >如果您的 AEM Sites as a Cloud Service 合約未包含 Edge Delivery Services，就需要簽署新合約才能獲得存取權。
 >
->您應與客戶團隊聯絡，討論如何移轉至具有 Edge Delivery Services 的 AEM Sites as a Cloud Service。
+>您應與客戶團隊聯絡，討論如何移轉至包含 Edge Delivery Services 的 AEM Sites as a Cloud Service。
 
 若要授予存取權給特定使用者，請將他們的使用者帳戶指派至相應的產品設定檔。如需其他詳細資訊，請參閱[指派 AEM 產品設定檔](/help/journey-onboarding/assign-profiles-cloud-manager.md)。
 
@@ -490,6 +490,7 @@ Adobe 提供許多客群可供使用。
 
 * [GitHub 上的 GenAI 產生變化版本](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
 * [Edge Delivery Services 實驗](https://www.aem.live/docs/experimentation)
+* [AEM as a Cloud Service中的創作](/help/generative-ai/generative-ai-in-aem.md)
 
 ## 常見問題 {#faqs}
 
