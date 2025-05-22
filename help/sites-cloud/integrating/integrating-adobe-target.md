@@ -36,7 +36,7 @@ ht-degree: 1%
 1. 導覽至&#x200B;**雲端服務**→的&#x200B;**工具**。
    ![導覽](assets/cloudservice1.png "導覽")
 2. 選取「**Adobe Target**」。
-3. 選取&#x200B;**建立**按鈕。
+3. 選取&#x200B;**建立**&#x200B;按鈕。
    ![建立](assets/tenant1.png "建立")
 4. 填寫詳細資料（請參閱下文），然後選取&#x200B;**連線**。
    ![連線](assets/open_screen1.png "連線")
@@ -117,7 +117,7 @@ AEM提供與Experience Platform Launch的現成整合。 將Adobe Target擴充�
 1. 選取&#x200B;**新增屬性**&#x200B;按鈕。
 2. 提供屬性的名稱。
 3. 網域請輸入要載入Launch程式庫的IP/主機。
-4. 選取&#x200B;**儲存**按鈕。
+4. 選取&#x200B;**儲存**&#x200B;按鈕。
    ![Launchproperty](assets/properties_newproperty1.png "Launchproperty")
 
 ### 新增必要的擴充功能 {#add-extension}
@@ -128,7 +128,7 @@ AEM提供與Experience Platform Launch的現成整合。 將Adobe Target擴充�
 2. 選取&#x200B;**Adobe Target** at.js，然後按一下[安裝]選項。
    ![目標搜尋](assets/search_ext1.png "目標搜尋")
 3. 選取&#x200B;**設定**&#x200B;按鈕。 請注意已匯入Target帳戶憑證的設定視窗，以及此擴充功能的at.js版本。
-4. 選取&#x200B;**儲存**&#x200B;將Target擴充功能新增至您的Launch屬性。 您應該能夠看到&#x200B;**已安裝的擴充功能**清單下列出的Target擴充功能。
+4. 選取&#x200B;**儲存**&#x200B;將Target擴充功能新增至您的Launch屬性。 您應該能夠看到&#x200B;**已安裝的擴充功能**&#x200B;清單下列出的Target擴充功能。
    ![儲存擴充功能](assets/configure_extension1.png "儲存擴充功能")
 5. 重複上述步驟以搜尋&#x200B;**Adobe ContextHub**&#x200B;擴充功能並安裝它（此擴充功能是與ContextHub引數整合的必要專案，視目標定位完成而定）。
 
