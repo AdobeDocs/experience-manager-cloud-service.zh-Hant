@@ -6,10 +6,10 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: b39601a1-7f37-4a7d-a4c8-7e79dca074e5
-source-git-commit: babddee34b486960536ce7075684bbe660b6e120
-workflow-type: ht
-source-wordcount: '298'
-ht-degree: 100%
+source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
+workflow-type: tm+mt
+source-wordcount: '296'
+ht-degree: 98%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 100%
 **答：**&#x200B;有多種分析與追蹤選項：
 
 - Adobe Experience Platform Web SDK (主要建議)
-- 針對取樣量度的真實使用者監視 (RUM)
+- 抽樣量度的作業遙測
 - 根據需要與其他分析系統整合
 
 ## 文件與資源

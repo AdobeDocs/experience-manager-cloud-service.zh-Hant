@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.5.0 版�
 feature: Release Information
 role: Admin
 exl-id: 7b7a27f9-ba57-4eb2-9fcb-653b5213af04
-source-git-commit: a8c74573134597e83c2720de3b2a0f75ff7896a2
+source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
 workflow-type: tm+mt
-source-wordcount: '1949'
-ht-degree: 99%
+source-wordcount: '1943'
+ht-degree: 98%
 
 ---
 
@@ -19,11 +19,11 @@ ht-degree: 99%
 >
 >從這裡，您可以導覽至先前版本的發行說明，例如 2022 或 2023。
 >
->查看 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=zh-Hant)，了解關於 [!DNL Experience Manager] as a Cloud Service 未來功能的啟用。
+>查看 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)，了解關於 [!DNL Experience Manager] as a Cloud Service 未來功能的啟用。
 
 >[!NOTE]
 >
->請參閱[近期文件更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=zh-Hant)瞭解與版本不直接相關的文件更新的詳細資料。
+>請參閱[近期文件更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)瞭解與版本不直接相關的文件更新的詳細資料。
 
 ## 發行日期 {#release-date}
 
@@ -37,7 +37,7 @@ ht-degree: 99%
 
 請觀看 2024 年 5 月版本概觀影片，了解 2024.5.0 版本新增功能的摘要：
 
->[!VIDEO](https://video.tv.adobe.com/v/3448073?quality=12&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3429503?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -59,9 +59,10 @@ ht-degree: 99%
 * `TRANSLATION_JOB_CANCELLED`
 * `TRANSLATION_JOB_ERROR`
 
-#### 實際使用監控 (RUM) 資料服務 {#real-use-monitoring}
+#### 操作遙測服務 {#real-use-monitoring}
 
-* **[實際使用監控 (RUM) 資料服務現在已正式推出](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**，讓 AEM as a Cloud Service 能夠收集用戶端的資料。實際使用監控服務，即用戶端資料收集，可以更準確地反映互動情形，確保網站參與度的測量結果可信。它為客戶提供有關頁面流量和效能的進階深入分析。這是深入了解您的頁面效能並透過深入分析進行改善的絕佳機會。
+* **[操作遙測服務現在為GA](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**，可啟用AEM as a Cloud Service的使用者端資料收集。
+實際使用監控服務，即用戶端資料收集，可以更準確地反映互動情形，確保網站參與度的測量結果可信。它為客戶提供有關頁面流量和效能的進階深入分析。這是深入了解您的頁面效能並透過深入分析進行改善的絕佳機會。
 
 #### Edge Delivery Services 的 AEM 製作 {#edge-enhancements}
 
@@ -171,7 +172,7 @@ Adobe Developer Console 是用來產生存取各種 API 的認證。其中一種
 
 #### RDE 支援使用網站主題和網站範本的前端程式碼 {#rde-frontend}
 
-[RDE 現在支援以](/help/implementing/developing/introduction/rapid-development-environments.md#deploying-themes-to-rde) [網站主題](/help/sites-cloud/administering/site-creation/site-themes.md)和[網站範本](/help/sites-cloud/administering/site-creation/site-templates.md)為基礎的前端程式碼，方便早期採用者使用。經由 RDE，我們可以使用命令列指令完成，而不是使用[前端管道](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)來完成。
+[RDE 現在支援以](/help/implementing/developing/introduction/rapid-development-environments.md#deploying-themes-to-rde)[網站主題](/help/sites-cloud/administering/site-creation/site-themes.md)和[網站範本](/help/sites-cloud/administering/site-creation/site-templates.md)為基礎的前端程式碼，方便早期採用者使用。經由 RDE，我們可以使用命令列指令完成，而不是使用[前端管道](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)來完成。
 
 #### 增強 RDE 記錄 {#rde-logging}
 

@@ -4,10 +4,10 @@ description: Adobe Experience Manager as a Cloud Service 架構簡介。
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 feature: Release Information
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '2713'
-ht-degree: 100%
+source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
+workflow-type: tm+mt
+source-wordcount: '2712'
+ht-degree: 99%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 >id="intro_aem_cloudservice_architecture"
 >title="AEM as a Cloud Service Architecture 簡介"
 >abstract="在此索引標籤中，您可以檢視 AEM as a Cloud Service 的新架構並了解變更。AEM 產生了具有可變影像數量的動態架構，因此請務必花時間了解雲端架構。"
->additional-url="https://video.tv.adobe.com/v/330542/" text="架構概述"
+>additional-url="https://video.tv.adobe.com/v/330542/" text="架構概觀"
 
 Adobe Experience Manager (AEM) as a Cloud Service 提供一組可組合的服務，用於建立和管理高影響力的體驗。
 
@@ -138,7 +138,7 @@ AEM as a Cloud Service 中的高層級可組合服務清單可以用兩個區段
 * 資料服務：
    * 負責公開客戶資料，例如授權指標 (例如內容要求、儲存、使用者) 或使用報告 (例如上傳、下載數量)。
    * 客戶資料可以透過 API 以及在產品使用者介面中 (例如 Cloud Manager) 公開。
-* 真實使用者指標 (RUM) 服務：
+* 操作遙測服務：
    * 負責從客戶體驗中收集關鍵量度 (例如頁面瀏覽次數、Core Web Vitals、轉換事件)，並回應相關聯查詢 (例如過去 7 天內指定網域的熱門頁面瀏覽次數)。
 * Assets Compute 服務：
    * 負責處理上傳的影像、影片和文件；例如 PDF 和 Adobe Photoshop 檔案。處理可以使用 Adobe Sensei 擷取影像和影片中繼資料 (例如描述性標籤或原色色調)，然後產生再現 (例如不同的尺寸或格式)，而且可存取 Adobe Photoshop 和 Adobe Lightroom API 等 API。
@@ -239,4 +239,4 @@ Cloud Manager 會透過滾動式更新模式來更新所有服務節點，藉此
 * Edge Delivery Services：
    * [AEM as a Cloud Service 概觀 - 含 Edge Delivery Services](/help/edge/overview.md)
    * [使用 Edge Delivery Services](/help/edge/using.md)
-   * [探索 AEM as a Cloud Service 含 Edge Delivery Services 的基本架構和重要元件。](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html?lang=zh-Hant)
+   * [探索 AEM as a Cloud Service 含 Edge Delivery Services 的基本架構和重要元件。](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html)
