@@ -5,9 +5,9 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 87836c7f28c9e3c8269fac073f46c53ce73fecfa
+source-git-commit: 8ca3546725f2a95d233497a899afe3b4f6036775
 workflow-type: tm+mt
-source-wordcount: '1098'
+source-wordcount: '1079'
 ht-degree: 11%
 
 ---
@@ -49,17 +49,22 @@ ht-degree: 11%
 1. 在&#x200B;**解決方案和附加元件**&#x200B;清單方塊中，選取一或多個要包含在計畫中的解決方案。
 
    * 如果您不確定是否需要一個或多個計畫以使用各種您可用的解決方案，請選取您最感興趣的一個。您之後可以[編輯計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)來啟用其他解決方案。如需更多計畫設定建議，請參閱[生產計畫簡介文件](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)。
-   * 程式建立至少需要一個解決方案。
-   * 針對最佳化數位體驗的完整受管理CDN解決方案，選取&#x200B;**Edge Delivery Services**。 請參閱[關於使用Edge Delivery Services傳遞您的Cloud Manager專案](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
-   * 如果您選取了&#x200B;**[啟用增強式安全性](#security)**&#x200B;選項，您只能選取可使用HIPAA許可權的解決方案。
+   * 您必須至少選取一個解決方案才能建立程式。 例如，您可以選擇選取&#x200B;**Edge Delivery Services**，使用可最佳化數位體驗的完整受管理CDN解決方案。 請參閱[關於使用Edge Delivery Services傳遞您的Cloud Manager專案](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
 
-     ![選取解決方案](/help/implementing/cloud-manager/assets/add-production-program-with-edge.png)
+   ![選取解決方案](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/add-production-program-with-edge-v2.png)
 
-   * 按一下解決方案名稱左邊的![V形大小300圖示](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize300.svg)，即可顯示任何選用的附加元件，例如&#x200B;**Sites**&#x200B;下的&#x200B;**Commerce**&#x200B;附加選項。
+
+
+
+   <!-- * If you selected the **[Enable Enhanced Security](#security)** option, you can select only as many solutions for which HIPAA entitlements are available. -->
+
+
+
+   * 按一下解決方案名稱左邊的![V形大小300圖示](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize300.svg)以顯示任何選用的附加元件。<!-- such as the **Commerce** add-on option under **Sites**. -->
 
    ![選取附加元件](assets/setup-prod-commerce.png)
 
-1. 選取完解決方案和附加元件後，請按一下[繼續]。**&#x200B;**
+1. 選取完解決方案和附加元件後，請按一下[繼續]。****
 
 1. 在&#x200B;**上線日期**&#x200B;索引標籤上，輸入您計畫讓生產計畫上線的日期。
 
