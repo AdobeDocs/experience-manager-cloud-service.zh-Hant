@@ -3,10 +3,10 @@ title: AEM as a Cloud Service中的Generative AI
 description: 瞭解Adobe Experience Manager as a Cloud Service中的Generative AI
 feature: Generative AI
 role: Admin, Architect, Developer, User
-source-git-commit: 137f39e4706ee431e1773024595887e3f0aa34e5
+source-git-commit: 2eb6e9e06df282b28f7f977ce51accf5d686245b
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 28%
+source-wordcount: '292'
+ht-degree: 32%
 
 ---
 
@@ -44,3 +44,7 @@ Generative AI在整個AEM中使用：
 ## 更多資訊 {#further-information}
 
 * [Adobe AI總覽](https://www.adobe.com/ai/overview.html)
+
+* [Experience Cloud 產品中的生成式 AI](https://experienceleague.adobe.com/zh-hant/docs/core-services/interface/features/generative-ai)
+
+   * [Experience Cloud 產品中的生成式 AI - Adobe Experience Manager](https://experienceleague.adobe.com/zh-hant/docs/core-services/interface/features/generative-ai#aem)
