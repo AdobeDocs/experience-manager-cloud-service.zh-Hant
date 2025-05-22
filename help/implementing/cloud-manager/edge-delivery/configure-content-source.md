@@ -1,21 +1,25 @@
 ---
 title: 設定您的內容Source
-description: 瞭解如何在Helix 4中使用fstab.yaml，或在Helix 5中使用Cloud Manager中的引導式精靈（或設定服務API），來設定Edge Delivery網站的內容來源。
+description: 瞭解如何設定Edge Delivery網站的內容來源。 搭配Helix 4架構使用「fstab.yaml」，或搭配Helix 5架構使用Cloud Manager中的引導式精靈（或設定服務API）。
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: f82eafc0-03d0-4c69-9b28-e769a012531b
-source-git-commit: 56ab7a402a2fa7bdcf30bd66045b04e9314bed64
+source-git-commit: 71618a5603328990603db2ee7554048c9020a883
 workflow-type: tm+mt
-source-wordcount: '520'
-ht-degree: 83%
+source-wordcount: '580'
+ht-degree: 63%
 
 ---
 
 # 按一下即可設定Edge Delivery Services的內容來源 {#config-content-source}
 
+>[!IMPORTANT]
+>
+>*Helix*&#x200B;是基礎架構的內部名稱，可支援AEM Sites的檔案式撰寫。 它不是功能或產品名稱。 在本文中，*Helix*&#x200B;是指您的Edge Delivery網站所使用的架構版本。 Helix 5是基礎架構的最新版本；Helix 4是舊版。
+
 Adobe Experience Manager (AEM) Edge Delivery Services 透過快速、遍布全球的邊緣網路，允許透過多個來源 (例如 Google Drive、SharePoint 或 AEM 本身) 進行內容傳遞。
 
-Helix 4 和 Helix 5 的內容來源設定差異如下所示：
+這兩個架構版本的內容來源設定有所不同，其方式如下：
 
 | 版本 | 內容來源設定方法 |
 | --- | --- |
@@ -26,7 +30,7 @@ Helix 4 和 Helix 5 的內容來源設定差異如下所示：
 
 **開始之前**
 
-如果您使用 [Cloud Manager 的一鍵式 Edge Delivery](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site)，您的網站便是具有單一存放庫的 Helix 5。[遵循Helix 5指示](#config-helix5)，並使用提供的Helix 4 YAML版本指示作為遞補。
+如果您在Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site)中使用[按一下Edge Delivery，您的網站會將Helix 5與單一存放庫搭配使用。 [遵循Helix 5指示](#config-helix5)，並使用提供的Helix 4 YAML版本指示作為遞補。
 
 **確定您的 Helix 版本**
 
@@ -37,14 +41,14 @@ Helix 4 和 Helix 5 的內容來源設定差異如下所示：
 
 ## 設定 Helix 4 的內容來源
 
-在 Helix 4 中，fstab.yaml 檔案定義您網站的內容來源。此檔案位於 GitHub 存放庫的根目錄，將 URL 路徑前置詞 (稱為掛接點) 對應至外部內容來源。典型範例如下圖所示：
+在Helix 4中，`fstab.yaml`檔案會定義您網站的內容來源。 此檔案位於 GitHub 存放庫的根目錄，將 URL 路徑前置詞 (稱為掛接點) 對應至外部內容來源。典型範例如下圖所示：
 
 ```yaml
 mountpoints:
   /: https://drive.google.com/drive/folders/your-folder-id
 ```
 
-此範例僅供說明使用。實際 URL 應該指向您的內容來源，例如 Google Drive 資料夾、SharePoint 目錄或 AEM 路徑。
+以上範例僅供說明之用。 實際 URL 應該指向您的內容來源，例如 Google Drive 資料夾、SharePoint 目錄或 AEM 路徑。
 
 **若要設定 Helix 4 的內容來源：**
 
@@ -97,7 +101,7 @@ mountpoints:
 
 ## 設定 Helix 5 的內容來源 {#config-helix5}
 
-Helix 5 無存放庫、不使用 `fstab.yaml`，並且支援多個網站共用同一個目錄。透過設定服務 API 或 Edge Delivery Services UI 來管理設定。設定為網站層級 (非存放庫層級)。
+Helix 5 無存放庫、不使用 `fstab.yaml`，並且支援多個網站共用同一個目錄。透過設定服務API或Edge Delivery Sites使用者介面管理設定。 設定為網站層級 (非存放庫層級)。
 
 概念性差異如下：
 
