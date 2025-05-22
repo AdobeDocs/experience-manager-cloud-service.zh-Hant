@@ -30,7 +30,7 @@ Adobe Experience Manager (AEM) Edge Delivery Services 透過快速、遍布全�
 
 **開始之前**
 
-如果您在Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site)中使用[按一下Edge Delivery，您的網站會將Helix 5與單一存放庫搭配使用。 [遵循Helix 5指示](#config-helix5)，並使用提供的Helix 4 YAML版本指示作為遞補。
+如果您在Cloud Manager[&#128279;](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site)中使用按一下Edge Delivery，您的網站會將Helix 5與單一存放庫搭配使用。 [遵循Helix 5指示](#config-helix5)，並使用提供的Helix 4 YAML版本指示作為遞補。
 
 **確定您的 Helix 版本**
 
