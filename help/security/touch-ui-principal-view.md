@@ -63,7 +63,7 @@ CRXDE可管理進階許可權和限制。 它已在相同檢視中合併。
 
 >[!NOTE]
 >
->如需完整的許可權和說明清單，請參閱[使用者、群組和存取許可權管理](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/user-group-ac-admin#access-right-management)。
+>如需完整的許可權和說明清單，請參閱[使用者、群組和存取許可權管理](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/security/user-group-ac-admin#access-right-management)。
 
 指定路徑的![搜尋許可權。](assets/image2019-3-21_0-5-47.png) ![新增&#39;dam-users&#39;專案，如在垂直欄中選取的路徑所示。](assets/image2019-3-21_0-6-53.png)
 
