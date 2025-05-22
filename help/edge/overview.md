@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 role: Admin, Architect, Developer
 source-git-commit: bf0e840fb3cd1ea5bc832823c522415c066f0018
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1286'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 76%
 透過 Edge Delivery Services，您可以：
 
 * 建立具有完善 Lighthouse 分數功能的快速網站，並透過真實使用者監控 (RUM) 持續監控您的網站效能。
-* 透過分離內容來源來提高編寫工作效率。開箱即用地將AEM製作與通用編輯器搭配使用，也能使用檔案式製作。 因此，您可以在同一網站上使用多個內容來源。
+* 透過分離內容來源來提高編寫工作效率。您可以使用通用編輯器進行 AEM 製作及文件型製作，兩者都是現成的功能。因此，您可以在同一網站上使用多個內容來源。
 * 使用內建的實驗框架，允許快速建立、執行測試而不影響效能，並快速發布測試獲勝者的生產。
 
 ## 敏捷反應商務需求 {#agile-reaction}
@@ -46,9 +46,9 @@ ht-degree: 76%
 
 ## 為您的內容創作者提供靈活的創作工具 {#overview}
 
-Edge Delivery Services 是一組可組合的服務，可讓您以高度靈活的方式在網站上製作內容。您可以使用[AEM內容管理](/help/sites-cloud/authoring/author-publish.md)和使用[通用編輯器](/help/sites-cloud/authoring/universal-editor/authoring.md)的內容製作，以及[檔案式製作。](https://www.aem.live/docs/authoring)
+Edge Delivery Services 是一組可組合的服務，可讓您以高度靈活的方式在網站上製作內容。[AEM 內容管理](/help/sites-cloud/authoring/author-publish.md)和內容製作皆可使用[通用編輯器](/help/sites-cloud/authoring/universal-editor/authoring.md)以及[文件型製作的方式完成。](https://www.aem.live/docs/authoring)
 
-下圖說明如何使用Universal Editor在Microsoft Word （檔案式製作）中編輯內容，以及發佈至Edge Delivery Services並同時進行AEM內容製作。
+下圖說明如何在 Microsoft Word (文件型製作) 中編輯內容並發佈至 Edge Delivery Services，以及如何使用通用編輯器進行 AEM 內容製作。
 
 ![Edge Delivery 架構](assets/AEM-with-EDS-publishing-simple2.png)
 
@@ -67,25 +67,25 @@ Edge Delivery Services 會使用 GitHub，可讓您直接從自己的 GitHub 存
 
 進一步閱讀文件型製作文件：
 
-* 如需如何開始使用Edge Delivery的詳細資訊，請參閱aem.live檔案的[組建區段。](https://www.aem.live/docs/#build)
-* 若要瞭解如何使用Edge Delivery製作和發佈內容，請參閱aem.live檔案的[Publish區段。](https://www.aem.live/docs/authoring)
-* 若要瞭解如何正確啟動您的網站專案，請參閱aem.live檔案的[啟動區段](https://www.aem.live/docs/#launch)
+* 有關如何開始使用 Edge Delivery 的詳細資訊，請參閱 [aem.live 文件的「建置」區段。](https://www.aem.live/docs/#build)
+* 若要了解如何使用 Edge Delivery 製作和發佈內容，請參閱 [aem.live 文件的「發佈」區段](https://www.aem.live/docs/authoring)。
+* 若要了解如何正確啟動您的網站專案，請參閱 [aem.live 文件的「啟動」區段](https://www.aem.live/docs/#launch)
 
-### 使用通用編輯器進行AEM製作{#wysiwyg-authoring}
+### 使用通用編輯器進行 AEM 製作{#wysiwyg-authoring}
 
-通用編輯器是可自訂的「所見即所得」(WYSIWYG)一站式位置，可讓您透過視覺預覽即時編輯內容與內容中的內容。
+通用編輯器是一種所見即所得 (WYSIWYG)、可自訂的一站式工具，讓您透過視覺化預覽即時編輯內容及維持內容正確脈絡。
 
-* 使用Universal Editor進行AEM撰寫時，無論Headless或Headful均可提升撰寫效率。
+* 使用通用編輯器進行 AEM 製作，無論是 Headless 還是 Headful，皆可提高作者的效率。
 * 您可以利用 AEM 全面的內容管理功能，包括工作流程和治理。
 * 利用眾多擴充點來支援您自己的流程和整合。
 * 您可以使用 GitHub 中的 CSS 和 JavaScript 來開發網站的功能。
 
-使用通用編輯器![AEM編寫](assets/wysiwyg-authoring.png)
+![使用通用編輯器進行 AEM 製作](assets/wysiwyg-authoring.png)
 
-使用Universal Editor和Edge Delivery Services開始編寫AEM：
+使用通用編輯器和 Edge Delivery Services 開始進行 AEM 製作：
 
-* 如需使用Universal Editor編寫AEM的概觀，請參閱aem.live檔案中的檔案[使用AEM為Edge Delivery Services編寫](https://www.aem.live/docs/aem-authoring)。
-* 如需開發人員概覽，請參閱aem.live檔案中的檔案[快速入門 — Universal Editor開發人員教學課程](https://www.aem.live/developer/ue-tutorial)。
+* 有關使用通用編輯器進行 AEM 製作的概觀，請參閱 aem.live 文件中[使用適用於 Edge Delivery Services 的 AEM 進行製作](https://www.aem.live/docs/aem-authoring)的文件。
+* 有關開發人員概觀，請參閱 aem.live 文件中[開始使用 - 通用編輯器開發人員教學課程](https://www.aem.live/developer/ue-tutorial)的文件。
 
 ### 決定您的製作方法 {#authoring-method}
 
@@ -100,9 +100,9 @@ AEM 的靈活性可確保滿足您的創作需求。Adobe 可以幫助您確定�
 
 Edge Delivery Services 是 Adobe Experience Manager 的一部分。因此，Edge Delivery Services 和 AEM Sites 可以在同一網域中共存，這是大型網站的常見使用案例。此外，您的 AEM Sites 頁面可以無縫地使用 Edge Delivery Services 中的內容，反之亦然。
 
-請參閱aem.live檔案中的檔案[快速入門 — Universal Editor開發人員教學課程](https://www.aem.live/developer/ue-tutorial)，瞭解如何開始使用AEM和Edge Delivery Services編寫您自己的專案。
+請參閱 aem.live 文件中[開始使用 - 通用編輯器開發人員教學課程](https://www.aem.live/developer/ue-tutorial)的文件，了解如何展開您自己的專案並使用 AEM 和 Edge Delivery Services 進行製作。
 
-您也可以將Edge Delivery Services與[Adobe Target](https://www.aem.live/developer/target-integration)、[即時使用監控(RUM)](https://www.aem.live/developer/rum)搭配使用，以診斷您網站的使用情況和效能，以及[啟動。](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/home)
+Edge Delivery Services 也可以與 [Adobe Target](https://www.aem.live/developer/target-integration)、用來診斷網站使用情況和效能的[實際使用監視 (RUM)](https://www.aem.live/developer/rum) 以及 [Launch](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/home) 搭配使用。
 
 ## 取得 Adobe 的協助 {#getting-help}
 
@@ -114,7 +114,7 @@ Adobe 提供三個頻道來幫助您使用 Edge Delivery Services：
 
 ### 存取社群資源 {#community-resources}
 
-Adobe致力於為您提供最佳社群參與度，以及對Edge Delivery Services、使用通用編輯器進行AEM製作和檔案式製作的支援。
+透過為 Edge Delivery Services、使用通用編輯器進行 AEM 製作以及文件型製作提供最佳的社群參與和支援服務，Adobe 致力於增強您的能力。
 
 * 參與 [Experience League 社群](https://adobe.ly/3Q6kTKl)，提出問題、分享回饋意見、發起討論、尋求 Adobe 專家和 AEM 顧問/達人的協助，以及與志趣相投的人即時交流。
 * 加入 [Discord 頻道](https://discord.gg/aem-live)，這個較輕鬆的平台可讓您即時互動和交換靈感。
