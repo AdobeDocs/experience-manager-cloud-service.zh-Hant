@@ -5,9 +5,9 @@ feature: Edge Delivery Services, Form Data Model
 role: Admin, User
 exl-id: 9ce51223-57d0-47d8-8868-84b37d4e8e3e
 source-git-commit: 95998daf04ae579ca11896953903852e6140c3a4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1207'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 82%
 
 ## 考量事項
 
-* 如果您在通用編輯器介面中未看到&#x200B;**資料來源**&#x200B;圖示，或在右側屬性面板中未看到&#x200B;**繫結參考**&#x200B;屬性，請在&#x200B;**Extension Manager**&#x200B;中啟用&#x200B;**資料來源**&#x200B;擴充功能。
+* 如果您在通用編輯器介面中沒有看到「**資料來源**」圖示，或在右側屬性面板中沒有看到「**繫結參考**」屬性，請在 **Extension Manager** 中啟用&#x200B;**資料來源**&#x200B;擴充功能。
 
-  ![延伸管理員](/help/edge/docs/forms/universal-editor/assets/extension-manager.png)
+  ![Extension Manager](/help/edge/docs/forms/universal-editor/assets/extension-manager.png)
 
-  請參閱[Extension Manager功能摘要](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)文章，瞭解如何在通用編輯器中啟用和停用擴充功能。
+  請參閱[Extension Manager 功能重點介紹](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)文章，了解如何在通用編輯器中啟用和停用擴充功能。
 
 * 通用編輯器目前不支援表單預填服務。
 
@@ -133,27 +133,27 @@ ht-degree: 82%
 
    ![建置表單](/help/edge/docs/forms/universal-editor/assets/non-schema-form.png)
 
-您可以從&#x200B;**繫結參考**&#x200B;屬性中選取資料繫結，以新增資料繫結至表單欄位。 例如，我們將資料繫結參考新增至表單中已存在的&#x200B;**Id**&#x200B;文字方塊。
-若要從資料來源樹狀結構選取表單欄位的資料繫結，請執行下列步驟：
+您從「**繫結參考**」屬性中選取資料繫結，即可把資料繫結新增至表單欄位。例如，我們對表單中已存在的文字方塊「**ID**」新增資料繫結參考：
+若要從資料來源樹中選取表單欄位的資料繫結，請執行下列步驟：
 
-1. 開啟您要新增資料繫結參考之表單欄位的屬性。
-1. 移至&#x200B;**繫結參考**&#x200B;屬性，然後按一下&#x200B;**瀏覽**&#x200B;圖示。
+1. 開啟要新增資料繫結參考的表單欄位屬性。
+1. 前往「**繫結參考**」屬性，然後按一下「**瀏覽**」圖示。
 
    ![手動新增表單欄位的資料繫結](/help/edge/docs/forms/universal-editor/assets/non-schema-add-data-binding.png)
 
-1. 從&#x200B;**選取繫結參考**&#x200B;精靈中的資料來源樹狀結構選擇資料繫結參考。
+1. 從「**選取繫結參考**」精靈中的資料來源樹，選擇資料繫結參考。
 
    ![選取資料繫結參考](/help/edge/docs/forms/universal-editor/assets/select-bind-reference.png)
 
-1. 從資料來源樹狀結構選取要繫結至表單欄位的資料元素，然後按一下&#x200B;**選取**。
+1. 從資料來源樹中選取要繫結至表單欄位的資料元素，然後按一下「**選取**」。
 
    ![選取資料元素](/help/edge/docs/forms/universal-editor/assets/select-data-element.png)
 
-   表單欄位繫結至資料元素，並出現在&#x200B;**繫結參考**&#x200B;屬性中。
+   該表單欄位繫結至資料元素，並顯示在「**繫結參考**」屬性中。
 
    ![自動資料繫結](/help/edge/docs/forms/universal-editor/assets/schema-based-form-data-binding.png)
 
-   您也可以手動編輯表單欄位的&#x200B;**繫結參考**&#x200B;屬性。
+   您也可以手動編輯表單欄位的「**繫結參考**」屬性。
 
 您現在能為表單新增及[設定提交動作](/help/edge/docs/forms/universal-editor/submit-action.md)。
 

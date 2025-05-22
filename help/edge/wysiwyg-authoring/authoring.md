@@ -8,9 +8,9 @@ index: false
 hide: true
 hidefromtoc: true
 source-git-commit: e57610e4c5e498ddfdbaa0ba39c9197ecfb5d177
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '452'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -59,4 +59,4 @@ ht-degree: 95%
 
 所見即所得製作對於內容作者來說是一個強大且直覺的工具。但是，會有許多不同的製作使用案例，這也就是 AEM 可作為額外製作解決方案的原因。
 
-請參閱檔案[Edge Delivery Services概述](/help/edge/overview.md#authoring-method)，深入瞭解AEM提供的撰寫解決方案，包括檔案式撰寫和headless。
+請參閱 [Edge Delivery Services 概觀](/help/edge/overview.md#authoring-method)的文件，了解更多有關 AEM 提供的製作解決方案，包括文件型製作和 Headless 功能的詳細資訊。

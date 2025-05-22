@@ -5,9 +5,9 @@ feature: Asset Management
 role: User, Admin
 exl-id: 3ae96cd2-e0ac-43a5-a0bf-bebb1a028b10
 source-git-commit: ccd2334528ed7309c271d069209adec333de356c
-workflow-type: tm+mt
-source-wordcount: '902'
-ht-degree: 94%
+workflow-type: ht
+source-wordcount: '882'
+ht-degree: 100%
 
 ---
 
@@ -138,6 +138,6 @@ Assets as a Cloud Service 提供四種使用者類型。每種使用者類型都
 | AEM > 生產作者執行個體 > AEM 管理員 | − | − | − | ✓ |
 | **更多資訊** | 請參閱[啟用 Content Hub](/help/assets/enable-assets-ultimate.md##enable-assets-ultimate-new-users) | 請參閱[協作者使用者上線](/help/assets/enable-assets-ultimate.md#onboard-collaborator-users) | 請參閱[進階使用者上線](/help/assets/enable-assets-ultimate.md#onboard-power-users) | - |
 
-如需開始使用Assets Ultimate的相關資訊，請參閱[啟用AEM Assets Ultimate](/help/assets/enable-assets-ultimate.md)。 如果現有AEM Assets使用者對何時可升級至Assets Ultimate有任何疑問，請聯絡您的Adobe客戶代表。 如需詳細資訊，您也可以參閱[為現有客戶啟用Assets Ultimate](/help/assets/enable-assets-ultimate.md#enable-assets-ultimate-existing-customers)。
+如需有關如何開始使用 Assets Ultimate 的資訊，請參閱[啟用 AEM Assets Ultimate](/help/assets/enable-assets-ultimate.md)。如果現有的 AEM Assets 使用者對何時可以升級至 Assets Ultimate 有疑問，請聯絡您的 Adobe 客戶代表。您也可以參閱[為現有客戶啟用 Assets Ultimate](/help/assets/enable-assets-ultimate.md#enable-assets-ultimate-existing-customers)，以了解更多資訊。
 
 對於沒有進階要求 (例如使用者介面可擴展性、API 驅動的自動化，及自訂程式碼部署) 的客戶，AEM Assets 也提供較輕量級的 DAM。如需更多資訊，請參閱 [AEM Assets Prime](/help/assets/assets-prime.md)。

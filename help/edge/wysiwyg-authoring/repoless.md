@@ -1,6 +1,6 @@
 ---
 title: 跨網站重複使用程式碼
-description: 如果您有許多相似的網站，大部分外觀和行為相同，但內容不同，請瞭解如何在一個重寫模式中跨多個網站共用程式碼。
+description: 如果您擁有許多類似的網站，其外觀和行為大多相同但擁有不同的內容，請了解如何在無存放庫模型中跨多個網站共用程式碼。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: a6bc0f35-9e76-4b5a-8747-b64e144c08c4
@@ -8,74 +8,74 @@ index: false
 hide: true
 hidefromtoc: true
 source-git-commit: 17c14a78c2cfa262e25c6196fa73c6c4b17e200a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1039'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
 # 跨網站重複使用程式碼 {#repoless}
 
-如果您有許多相似的網站，大部分外觀和行為相同，但內容不同，請瞭解如何在一個重寫模式中跨多個網站共用程式碼。
+如果您擁有許多類似的網站，其外觀和行為大多相同但擁有不同的內容，請了解如何在無存放庫模型中跨多個網站共用程式碼。
 
-## 適用於多個網站的一個程式碼基底 {#one-codebase}
+## 單一程式碼基底適用於多個網站 {#one-codebase}
 
-依預設，AEM會與您的程式碼存放庫緊密繫結，以符合大部分的使用案例。 不過，您可能有多個網站的主要內容不同，但可能利用相同的程式碼基底。
+在預設情況下，AEM 與您的程式碼存放庫緊密連結，可滿足大多數的使用案例。然而，您可能擁有多個網站而且其大部分內容並不相同，但可以善用相同的程式碼基底。
 
-AEM支援從相同程式碼基底執行多個網站，而不需建立多個GitHub存放庫並在專用GitHub存放庫之外執行每個網站，同時保持同步。
+AEM 支援使用相同的程式碼基底執行多個網站，而非建立多個 GitHub 存放庫，並在專用 GitHub 存放庫執行每個網站並保持同步。
 
-這個簡化的設定可免除程式碼復寫的需求，也稱為[「repoless」](https://www.aem.live/docs/repoless)，因為除了您的第一個網站以外，其他網站不需要自己的GitHub存放庫。
+此簡化設定消除程式碼複寫需求，也稱為[「無存放庫」](https://www.aem.live/docs/repoless)，因為除了您的第一個網站之外，其他的所有網站均不需要自己的 GitHub 存放庫。
 
-如果您的專案需要重複使用跨網站程式碼的靈活性，您可以啟動該功能。
+如果您的專案需要無存放庫的彈性，以便跨網站重複使用程式碼，您可以啟用此功能。
 
-無論您最終想要以粗略方式建立多少網站，都必須建立您的第一個網站，做為您的基礎網站。 本檔案說明如何建立您的第一個網站以供重複使用。
+無論最終想以無存放庫的方式建立多少個網站，您必須建立作為基礎網站的第一個網站。此文件說明如何建立您的第一個無存放庫網站。
 
 ## 先決條件 {#prerequisites}
 
-若要利用此功能，請確定您已完成下列操作。
+若要利用此功能，請確保您已執行下列動作。
 
-* 依照檔案[使用Edge Delivery Services編寫WYSIWYG的開發人員快速入門手冊](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)，您的網站已完整設定。
-* 您至少要執行AEM as a Cloud Service 2024.08。
+* 您的網站按照[使用 Edge Delivery Services 進行所見即所得製作的開發人員快速入門手冊](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)文件，已完成所有設定。
+* 您至少正在執行 AEM as a Cloud Service 2024.08。
 
-您還需要要求Adobe為您設定下列專案。 透過您的Slack管道聯絡或提出支援問題，以請求Adobe進行這些變更：
+您也需要要求 Adobe 協助您設定下列項目。透過您的 Slack 頻道聯絡或提出支援問題，要求 Adobe 進行下列變更：
 
-* 要求啟用您環境的[aem.live設定服務](https://www.aem.live/docs/config-service-setup#prerequisites)，而且您已設定為管理員。
-* 請求由Adobe為您的方案啟用重新導向功能。
-* 要求Adobe為您建立組織。
+* 要求為您的環境啟用「[aem.live 設定服務](https://www.aem.live/docs/config-service-setup#prerequisites)」，並將您設定為管理員。
+* 要求 Adobe 為您的方案啟用無存放庫功能。
+* 要求 Adobe 為您建立組織。
 
-## 啟動重新導向功能 {#activate}
+## 啟用無存放庫功能 {#activate}
 
-若要針對您的專案啟用重新導向功能，有幾個步驟可執行。
+下列是為您的專案啟用無存放庫功能所需的數個步驟。
 
-1. [擷取存取權杖](#access-token)
-1. [設定組態服務](#config-service)
+1. [獲取存取權杖](#access-token)
+1. [建置設定服務](#config-service)
 1. [新增網站設定和技術帳戶](#access-control)
-1. [更新AEM設定](#update-aem)
+1. [更新 AEM 設定](#update-aem)
 1. [驗證網站](#authenticate-site)
 
-這些步驟以網站`https://wknd.site`為例。 適當地替換您自己的。
+這些步驟使用 `https://wknd.site` 網站作為範例。請適當地替換成您自己的網站。
 
-### 擷取存取Token {#access-token}
+### 獲取存取權杖 {#access-token}
 
-您首先需要存取Token才能使用設定服務，並針對重新導向使用案例進行設定。
+您首先需要存取權杖來使用設定服務，並針對無存放庫使用案例進行設定。
 
-1. 移至`https://admin.hlx.page/login`並使用`login_adobe`位址登入Adobe身分提供者。
-1. 您將會轉寄到`https://admin.hlx.page/profile`。
-1. 使用瀏覽器的開發人員工具，從`admin.hlx.page`頁面設定的JSON Web權杖Cookie複製`x-auth-token`的值。
+1. 前往 `https://admin.hlx.page/login`，並使用 `login_adobe` 位址以 Adobe 身分識別提供者的身分登入。
+1. 您將轉送至 `https://admin.hlx.page/profile`。
+1. 透過使用瀏覽器的開發人員工具，從 `admin.hlx.page` 頁面設定的 JSON 網頁權杖 Cookie 中複製 `x-auth-token` 的值。
 
-取得存取Token後，就能在cURL要求的標頭中，以下列格式傳遞。
+您獲得存取權杖後，可使用以下列格式將其傳遞至 cURL 請求的標題中。
 
 ```text
 --header 'x-auth-token: <your-token>'
 ```
 
-### 新增網站設定的路徑對應並設定技術帳戶 {#access-control}
+### 新增網站設定的路徑對應，並設定技術帳戶 {#access-control}
 
 您需要建立網站設定，並將其新增至路徑對應。
 
-1. 在網站的根目錄建立新頁面，並選擇&#x200B;[**組態**&#x200B;範本](/help/edge/wysiwyg-authoring/tabular-data.md#other)。
-   * 您可以讓設定保持空白，只保留預先定義的`key`和`value`欄。 您只需要建立它。
-1. 使用類似下列的cURL命令，在公用組態中建立與站台組態的對應。
+1. 在您的網站根目錄建立新頁面，並選擇&#x200B;[**設定** 範本](/help/edge/wysiwyg-authoring/tabular-data.md#other)。
+   * 您可以將設定保持空白，僅保留預先定義的 `key` 和 `value` 欄。您只要建立即可。
+1. 使用類似於下列內容的 cURL 命令，在公開設定中建立與網站設定的對應。
 
    ```text
    curl --request POST \
@@ -94,28 +94,27 @@ AEM支援從相同程式碼基底執行多個網站，而不需建立多個GitHu
        }
    }'
    ```
-
-1. 驗證是否已設定公用設定，以及是否可使用類似下列的cURL命令。
+1. 使用類似下列內容的 cURL 命令，驗證公開設定是否已完成設定並可用。
 
    ```text
    curl 'https://main--<your-aem-project>--<your-github-org>.aem.live/config.json'
    ```
 
-對應網站設定後，您可以定義技術帳戶以設定存取控制，使其具有發佈許可權。
+對應網站設定後，只要定義您的技術帳戶使其具有發佈權限，即可設定存取控制。
 
-1. 登入AEM作者執行個體並移至&#x200B;**工具** -> **雲端服務** -> **Edge Delivery Services設定**，然後選取為您的網站自動建立的設定，並點選或按一下工具列中的&#x200B;**屬性**。
+1. 登入 AEM 作者實例，並前往「**工具**」->「**雲端服務**」->「**Edge Delivery Services 設定**」，選取為您的網站自動建立的設定，然後點選或按一下工具列中的「**屬性**」。
 
-1. 在&#x200B;**Edge Delivery Services設定**&#x200B;視窗中，選取&#x200B;**驗證**&#x200B;標籤，並複製&#x200B;**技術帳戶ID**&#x200B;的值。
+1. 在「**Edge Delivery Services 設定**」視窗中，選取「**驗證**」索引標籤，並複製&#x200B;**技術帳戶 ID** 的值。
 
-   * 它看起來類似於`<tech-account-id>@techacct.adobe.com`
-   * 對於單一AEM作者環境中的所有網站，技術帳戶都相同。
+   * 看起來與 `<tech-account-id>@techacct.adobe.com` 類似
+   * 單一 AEM 製作環境中所有網站的技術帳戶皆相同。
 
-1. 使用類似以下的cURL命令，使用您複製的技術帳戶ID，為您的重新配置設定技術帳戶。
+1. 使用類似下列內容的 cURL 命令，並使用您複製的技術帳戶 ID，設定無存放庫設定適用的技術帳戶。
 
-   * 調整`admin`區塊以定義應具備網站完整管理存取權的使用者。
-      * 這是一系列電子郵件地址。
-      * 可以使用萬用字元`*`。
-      * 如需詳細資訊，請參閱檔案[為作者設定驗證](https://www.aem.live/docs/authentication-setup-authoring#default-roles)。
+   * 調整 `admin` 區塊，以定義應該具有網站完整管理存取權的使用者。
+      * 這個區塊包含許多電子郵件。
+      * 可以使用萬用字元「`*`」。
+      * 請參閱[設定作者驗證](https://www.aem.live/docs/authentication-setup-authoring#default-roles)的文件，以了解更多資訊。
 
    ```text
    curl --request POST \
@@ -137,42 +136,42 @@ AEM支援從相同程式碼基底執行多個網站，而不需建立多個GitHu
    }'
    ```
 
-由於您現在使用設定服務，因此您可以從您的Git存放庫中移除`fstab.yaml`和`paths.json`。
+由於您現在使用設定服務，因此您可以從 Git 存放庫移除 `fstab.yaml` 和 `paths.json`。
 
 >[!NOTE]
 >
->使用設定服務並透過`config.json`公開路徑對應，會忽略`path.json`檔案。
+>透過使用設定服務，並透過 `config.json` 公開路徑對應，將忽略此 `path.json` 檔案。
 
-設定AEM供重新使用後，您必須使用設定服務，並提供包含路徑對應的有效`config.json`。
+只要 AEM 已經設定為無存放庫的使用模式後，您必須使用設定服務並提供包含路徑對應的有效的 `config.json`。
 
-### 更新AEM設定 {#update-aem}
+### 更新 AEM 設定 {#update-aem}
 
-現在您已準備好在AEM中對Edge Delivery Services進行必要的變更。
+現在您已準備好對 AEM 中的 Edge Delivery Services 進行必要的變更。
 
-1. 登入AEM作者執行個體並移至&#x200B;**工具** -> **雲端服務** -> **Edge Delivery Services設定**，然後選取為您的網站自動建立的設定，並點選或按一下工具列中的&#x200B;**屬性**。
-1. 在&#x200B;**Edge Delivery Services設定**&#x200B;視窗中，將專案型別變更為&#x200B;**aem.live （使用重新設定設定）**，然後點選或按一下&#x200B;**儲存並關閉**。
-   ![Edge Delivery Services設定](/help/edge/wysiwyg-authoring/assets/repoless/edge-delivery-services-configuration.png)
-1. 使用通用編輯器返回您的網站，並確定它仍正確呈現。
+1. 登入 AEM 作者實例，並前往「**工具**」->「**雲端服務**」->「**Edge Delivery Services 設定**」，選取為您的網站自動建立的設定，然後點選或按一下工具列中的「**屬性**」。
+1. 在「**Edge Delivery Services 設定**」視窗中，將專案類型變更為「**aem.live」並使用無存放庫設定**，然後點選或按一下「**儲存並關閉**」。
+   ![Edge Delivery Services 設定](/help/edge/wysiwyg-authoring/assets/repoless/edge-delivery-services-configuration.png)
+1. 使用通用編輯器返回您的網站，並確保其仍然正確轉譯。
 1. 修改部分內容並重新發佈。
-1. 請造訪您在`https://main--<your-aem-project>--<your-github-org>.aem.page/`發佈的網站，並確認變更已正確反映。
+1. 請造訪您發佈的網站，網址為 `https://main--<your-aem-project>--<your-github-org>.aem.page/`，並確認是否已經正確反映相關變更。
 
-您的專案現已設定為可重複使用。
+您的專案現已設定為無存放庫的使用模式。
 
 ## 後續步驟 {#next-steps}
 
-現在，您的基本網站已設定為可重複使用，您可以建立其他利用相同程式碼庫的網站。 根據您的使用案例，請參閱以下檔案。
+現在您的基本網站已設定為無存放庫的使用模式，您可以建立利用相同程式碼基底的其他網站。根據您的使用案例，請參考下列文件。
 
 * [無存放庫多網站管理](/help/edge/wysiwyg-authoring/repoless-msm.md)
 * [無存放庫階段及生產環境](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
-* [用於內容製作的網站驗證](/help/edge/wysiwyg-authoring/site-authentication.md)
+* [內容製作的網站驗證](/help/edge/wysiwyg-authoring/site-authentication.md)
 
 ## 疑難排解 {#troubleshooting}
 
-在設定可重複使用案例後，最常見的問題是通用編輯器中的頁面不再轉譯，或您收到白色頁面或一般AEM as a Cloud Service錯誤訊息。 在這種情況下：
+設定無存放庫使用案例後，最常發生的問題是通用編輯器的頁面不再轉譯，或者會收到白色頁面或一般的 AEM as a Cloud Service 錯誤訊息。在這類情況下：
 
 * 檢視轉譯頁面的來源。
-   * 是否確實轉譯了某些內容(包含`scripts.js`、`aem.js`和編輯器相關JSON檔案的正確HTML標題)？
-* 檢查作者執行個體的AEM `error.log`是否有例外。
-   * 最常見的問題是頁面元件因404錯誤而失敗。
-   * 無法載入`config.json or paths.json`
-   * `component-definition.json`等 無法載入
+   * 是否已有實際轉譯的部分內容 (具有 `scripts.js`、`aem.js` 的正確 HTML 標頭，以及與編輯器相關的 JSON 檔案)？
+* 檢查作者實例的 AEM `error.log` 尋找異常狀況。
+   * 最常見的問題是頁面元件失敗，並出現 404 錯誤。
+   * 無法載入 `config.json or paths.json`
+   * `component-definition.json` 等無法載入

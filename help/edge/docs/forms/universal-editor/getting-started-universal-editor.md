@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
 source-git-commit: 95998daf04ae579ca11896953903852e6140c3a4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1853'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -71,7 +71,6 @@ AEM Forms 範本可協助您很快開始使用預先設定最適化表單區塊�
       ![開啟 fstab.yaml 檔案](/help/edge/docs/forms/assets/open-fstab.png)
 
    1. 編輯 **fstab.yaml** 檔案，以更新專案的掛載點。將此 URL 取代為 AEM as a Cloud Service 製作執行個體的 URL。
-
       `https://<aem-author>/bin/franklin.delivery/<owner>/<repository>/main`
 
       ![編輯 fstab.yaml 檔案](/help/edge/docs/forms/assets/edit-fstab-file.png)
@@ -160,24 +159,24 @@ AEM Forms 範本可協助您很快開始使用預先設定最適化表單區塊�
 
 ## 將最適化表單區塊新增至您現有的 AEM 專案
 
-如果您有現有的 AEM 專案，則可以將最適化表單區塊整合至目前專案中並開始建立表單。
+如果擁有現有的 AEM 專案，您可以將自適應表單區塊整合至目前專案中，並開始建立表單。
 
 >[!NOTE]
 >
 >
-> 此步驟適用於使用[AEM Boilerplate XWalk](https://github.com/adobe-rnd/aem-boilerplate-xwalk)建置的專案。 如果您使用 [AEM Forms 範本](https://github.com/adobe-rnd/aem-boilerplate-forms)建立 AEM 專案，即可省略此步驟。
+> 此步驟適用於使用 [ AEM 範本 XWalk](https://github.com/adobe-rnd/aem-boilerplate-xwalk) 建置的專案。如果您使用 [AEM Forms 範本](https://github.com/adobe-rnd/aem-boilerplate-forms)建立 AEM 專案，即可省略此步驟。
 
 若要整合：
 
-1. 導覽至本機系統上的AEM專案存放庫資料夾。
+1. 導覽至本機系統上的 AEM 專案存放庫資料夾。
 
-1. 將下列資料夾和檔案從 [AEM Forms 範本](https://github.com/adobe-rnd/aem-boilerplate-forms)複製並貼到您的 AEM 專案中：
+1. 從 [AEM Forms 範本](https://github.com/adobe-rnd/aem-boilerplate-forms)複製下列資料夾和檔案，並貼到您的 AEM 專案中：
 
    * [表單區塊](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form)資料夾
    * [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) 檔案
    * [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css) 檔案
-1. 導覽至您AEM專案中的`/scripts/editor-support.js`檔案，並在AEM Forms範本[&#128279;](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js)中使用editor-support.js檔案進行更新
-1. 導覽至AEM專案中的`/models/_section.json`，並將「form」和「embed-adaptive-form」附加至`filters`物件的元件陣列：
+1. 導覽至 AEM 專案中的 `/scripts/editor-support.js` 檔案，並使用 [AEM Forms 範本中 editor-support.js 檔案](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js)來更新檔案
+1. 導覽至 AEM 專案中的 `/models/_section.json`，並將「form」和「embed-adaptive-form」附加至 `filters` 物件的元件陣列：
 
    ```
        "filters": [
@@ -193,7 +192,7 @@ AEM Forms 範本可協助您很快開始使用預先設定最適化表單區塊�
     }]
    ```
 
-1. （選用）導覽至您AEM專案中的`/.eslintignore`，然後新增下列幾行程式碼：
+1. (選用) 導覽至 AEM 專案中的 `/.eslintignore`，並新增下列數行程式碼：
 
    ```
    blocks/form/rules/formula/*
@@ -203,7 +202,7 @@ AEM Forms 範本可協助您很快開始使用預先設定最適化表單區塊�
    scripts/editor-support-rte.js
    ```
 
-1. （選用）導覽至AEM專案中的`/.eslintrc.js`，並在`rules`物件中新增下列幾行程式碼：
+1. (選用) 導覽至 AEM 專案中的 `/.eslintrc.js`，並在 `rules` 物件中新增下列數行程式碼：
 
    ```
    'xwalk/max-cells': ['error', {
@@ -236,7 +235,7 @@ AEM Forms 範本可協助您很快開始使用預先設定最適化表單區塊�
    'xwalk/no-orphan-collapsible-fields': 'off', // Disable until enhancement is done for Forms properties
    ```
 
-1. 開啟終端機，然後執行下列命令：
+1. 開啟終端機並執行下列命令：
 
    ```
    npm i
@@ -245,7 +244,7 @@ AEM Forms 範本可協助您很快開始使用預先設定最適化表單區塊�
 
    >[!NOTE]
    >
-   > 在GitHub上將變更推送至您的AEM專案存放庫之前，請確定位於AEM專案根層級的`component-definition.json`、`component-models.json`和`component-filters.json`檔案已更新為表單相關的物件。
+   > 將變更推送至 GitHub 上的 AEM 專案存放庫之前，請確保位於 AEM 專案根目錄層級的 `component-definition.json`、`component-models.json`，以及 `component-filters.json` 檔案已使用表單相關物件進行更新。
 
 1. 認可和推播這些變更至 GitHub 的 AEM 專案存放庫。
 
@@ -344,7 +343,7 @@ AEM Forms 範本可協助您很快開始使用預先設定最適化表單區塊�
        npm install -g @adobe/aem-cli
    ```
 
-1. **原地複製您的 GitHub 專案**：使用下列命令從 GitHub 原地複製您的 AEM 專案存放庫，取代為 &lt;owner> 存放庫所有者和 &lt;repo> 存放庫名稱：
+1. **原地複製您的 GitHub 專案**：使用下列命令從 GitHub 原地複製您的 AEM 專案存放庫，取代為 <owner> 存放庫所有者和 <repo> 存放庫名稱：
 
    ```
    git clone https://github.com/<owner>/<repo>
@@ -372,8 +371,8 @@ AEM Forms 範本可協助您很快開始使用預先設定最適化表單區塊�
 
 * **處理 Linting 錯誤：**&#x200B;如果您遇到任何 linting 錯誤，您可以略過不予處理。開啟 [EDS Project]/package.json 檔案並將 &quot;lint&quot; 指令碼從 `"lint": "npm run lint:js && npm run lint:css"` 修改為 `"lint": "echo 'skipping linting for now'"`。儲存檔案並將變更提交至您的 GitHub 專案。
 
-* **解決模組路徑錯誤：**
-如果您發生「無法解析模組&#39;&#39;&#39;/scripts/lib-franklin.js&#39;&#39;的路徑」錯誤，請瀏覽至[EDS專案]/blocks/forms/form.js檔案。 透過將 lib-franklin.js 檔案更換為 aem.js 檔案來更新匯入語句。
+* **解析模組路徑錯誤：**
+如果遇到錯誤「無法解析模組路徑 &#39;/scripts/lib-franklin.js&#39;」，請導覽至 [EDS Project]/blocks/forms/form.js 檔案。將 lib-franklin.js 檔案更換為 aem.js 檔案來更新匯入語句。
 
 ## 另請參閱
 
