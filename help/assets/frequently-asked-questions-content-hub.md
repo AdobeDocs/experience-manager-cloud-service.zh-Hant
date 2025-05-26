@@ -2,10 +2,10 @@
 title: Content Hub 常見問題 (FAQ)
 description: 了解一些 Content Hub 最常見問題 (FAQ) 的答案。
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 95c643151e4828fa2eae0725dc1081aeeabc42fb
 workflow-type: tm+mt
-source-wordcount: '1140'
-ht-degree: 97%
+source-wordcount: '1367'
+ht-degree: 77%
 
 ---
 
@@ -14,19 +14,19 @@ ht-degree: 97%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 與 Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets 與 Edge Delivery Services 整合</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>使用者介面可擴充性</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用 Dynamic Media Prime 與 Ultimate</b></a>
         </td>
     </tr>
     <tr>
@@ -111,9 +111,23 @@ Content Hub 目前尚不適用於非生產環境 (中繼和開發)。Assets Ulti
 
 1. 使用「**[!UICONTROL 修改日期]**」欄位對資產進行排序。
 
-## 為什麼我不能使用資產卡片上的 Adobe Express 選項來檢視編輯內容，藉此混編資產以建立新的變化版本？ {#edit-using-express-not-available}
+## 為什麼我的資產卡上沒有顯示使用Adobe Express編輯選項來重新混合資產，以建立新的變數？ {#edit-using-express-not-available}
 
-若要使用資產卡片上的 Adobe Express 選項來檢視編輯內容，除了 [Content Hub 使用者的權限 (有權將資產混編為新的變化版本)](#onboard-content-hub-users-add-assets) 之外，您還必須擁有 Adobe Express 授權。Adobe Express 必須部署在與 Adobe Experience Manager 部署位置相同之 Adobe Admin Console 的組織中。
+若要檢視資產卡上的「使用Adobe Express編輯&#x200B;**」**&#x200B;選項，使用者必須擁有Adobe Express Enterprise或Teams權利（請參閱[計畫](https://www.adobe.com/express/pricing)），以及[Content Hub使用者有權將資產重新混合成新變數](#onboard-content-hub-users-add-assets)的許可權。
+
+有一些使用者指派至[!DNL Content Hub]與[!DNL Adobe Express]的設定：
+
+1. 組織有[Assets Ultimate](/help/assets/assets-ultimate-overview.md)或[Assets Prime](/help/assets/assets-prime.md)授權，且使用者已指派給Admin Console中的其中一個Experience Manager設定檔，其中包括Adobe Express權益（共同作業人員或超級使用者）。 整合無需任何其他設定即可運作。
+
+1. [!DNL Adobe Express]部署在與[!DNL Experience Manager Assets]相同的[!DNL Adobe Admin Console]中，具有[!DNL Content Hub]。 整合無需任何其他設定即可運作。
+
+1. [!DNL Adobe Express]部署在與[!DNL Experience Manager Assets]不同的[!DNL Adobe Admin Console]與[!DNL Content Hub]。 在這種情況下，[!DNL Assets]管理員可以設定整合（請參閱[檔案](/help/assets/connect-assets-with-creative-cloud.md)），讓整合發揮作用。
+
+   >[!NOTE]
+   >
+   >在兩個Admin Console中指派給Express和Assets產品設定檔的使用者，必須有相同的電子郵件地址，並使用企業&#x200B;**企業或學校**&#x200B;帳戶，而非&#x200B;**個人**&#x200B;帳戶。 理想的設定是將Admin Console設定為&#x200B;**Federated ID**，並在兩者之間設定信任關係，讓使用者獲得順暢的單一登入體驗。 部分Express計畫（例如Express團隊）不支援Federated ID /單一登入。
+
+除了正確的產品許可權，Content Hub中的Adobe Express整合要求指派的使用者必須在支援Content Hub的Assets製作環境中，至少在&#x200B;**[#UICONTROL /content/dam/hydrated-assets/]**&#x200B;資料夾階層中，擁有至少[!UICONTROL 可編輯]許可權，Content Hub使用者可在其中儲存他們使用Express建立的內容。 請參閱Admin檢視（觸控式UI）中的[許可權管理](/help/security/touch-ui-principal-view.md)或Assets檢視](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions)中簡化的[許可權管理。
 
 ## 我可以設定 Content Hub，以便本組織的品牌指導方針在首頁上顯示為連結嗎？ {#content-hub-setup-brand-guidelines}
 
