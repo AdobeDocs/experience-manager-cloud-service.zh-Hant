@@ -2,7 +2,7 @@
 title: Content Hub 概觀
 description: 深入了解 Content Hub、其主要優勢、如何存取，以及如何針對 Content Hub 中的選項提供意見反應。
 exl-id: c5908058-f1ad-4aaa-9e8e-c0157e107ed1
-source-git-commit: 89c565a28cabe50ac539defd29ce9054c231297f
+source-git-commit: f728e29110808b6b5a8181120086ab82349c9835
 workflow-type: tm+mt
 source-wordcount: '736'
 ht-degree: 99%
@@ -77,7 +77,7 @@ Content Hub 可讓您使用 Adobe Express 來建立新內容 (如果您具有 Ad
 
 ## Content Hub示範 {#content-hub-demo}
 
->[!VIDEO](https://video.tv.adobe.com/v/3459544)
+>[!VIDEO](https://video.tv.adobe.com/v/3459547)
 
 ## 先決條件 {#prerequisites-content-hub}
 
