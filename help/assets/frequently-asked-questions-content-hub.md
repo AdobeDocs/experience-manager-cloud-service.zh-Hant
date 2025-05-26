@@ -127,7 +127,7 @@ Content Hub 目前尚不適用於非生產環境 (中繼和開發)。Assets Ulti
    >
    >在兩個Admin Console中指派給Express和Assets產品設定檔的使用者，必須有相同的電子郵件地址，並使用企業&#x200B;**企業或學校**&#x200B;帳戶，而非&#x200B;**個人**&#x200B;帳戶。 理想的設定是將Admin Console設定為&#x200B;**Federated ID**，並在兩者之間設定信任關係，讓使用者獲得順暢的單一登入體驗。 部分Express計畫（例如Express團隊）不支援Federated ID /單一登入。
 
-除了正確的產品許可權，Content Hub中的Adobe Express整合要求指派的使用者必須在支援Content Hub的Assets製作環境中，至少在&#x200B;**[!UICONTROL # /content/dam/hydrated-assets/]**&#x200B;資料夾階層中，擁有至少[!UICONTROL 可編輯]許可權，Content Hub使用者可在其中儲存他們使用Express建立的內容。 請參閱Admin檢視（觸控式UI）中的[許可權管理](/help/security/touch-ui-principal-view.md)或Assets檢視[&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions)中簡化的許可權管理。
+除了正確的產品許可權，Content Hub中的Adobe Express整合要求指派的使用者必須在支援Content Hub的Assets製作環境中，至少在&#x200B;**[!UICONTROL # /content/dam/hydrated-assets/]**&#x200B;資料夾階層中，擁有至少[!UICONTROL 可編輯]許可權，Content Hub使用者可在其中儲存他們使用Express建立的內容。 請參閱Admin檢視（觸控式UI）中的[許可權管理](/help/security/touch-ui-principal-view.md)或Assets檢視[&#128279;](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions)中簡化的許可權管理。
 
 ## 我可以設定 Content Hub，以便本組織的品牌指導方針在首頁上顯示為連結嗎？ {#content-hub-setup-brand-guidelines}
 
