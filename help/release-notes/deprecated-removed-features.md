@@ -4,10 +4,10 @@ description: 特定於  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 6b9ac17640c0a470cb175748564ccb72bed4affd
+source-git-commit: 3d294b2b4fbd11f16ee8b0fbb5a9a46ab039dbae
 workflow-type: tm+mt
-source-wordcount: '2560'
-ht-degree: 99%
+source-wordcount: '2858'
+ht-degree: 90%
 
 ---
 
@@ -103,24 +103,24 @@ Adobe 會持續評估產品功能，以逐漸利用更現代化的替代方案�
   </tr>
   <tr>
     <td>org.apache.commons.lang<br>org.apache.commons.lang.enums<br>org.apache.commons.lang.builder<br>org.apache.commons.lang.exception<br>org.apache.commons.lang.math<br>org.apache.commons.lang.mutable<br>org.apache.commons.lang.reflect<br>org.apache.commons.lang.text<br>org.apache.commons.lang.time</td>
-    <td>Commons Lang 2 處於維護模式。應該改用 Commons Lang 3。</td>
+    <td>Commons Lang 2 處於維護模式。應該改用Commons Lang 3。 <a href="#apache.commons">請參閱下面的移除說明。</a></td>
     <td>2021/4/30</td>
     <td>2021/12/31</td>
   </tr>
   <tr>
     <td>org.apache.commons.collections<br>org.apache.commons.collections.bag<br>org.apache.commons.collections.bidimap<br>org.apache.commons.collections.buffer<br>org.apache.commons.collections.collection<br>org.apache.commons.collections.comparators<br>org.apache.commons.collections.functors<br>org.apache.commons.collections.iterators<br>org.apache.commons.collections.keyvalue<br>org.apache.commons.collections.list<br>org.apache.commons.collections.map<br>org.apache.commons.collections.set</td>
-    <td>Commons Collections 3 處於維護模式。應該改用 Collections 4。</td>
+    <td>Commons Collections 3 處於維護模式。應該改用Commons Collections 4。 <a href="#apache.commons">請參閱下面的移除說明。</a></td>
     <td>2021/4/30</td>
     <td>2021/12/31</td>
   </tr>
   <tr>
     <td>org.apache.felix.webconsole<br>org.apache.felix.webconsole.bundleinfo<br>org.apache.felix.webconsole.i18n<br>org.apache.felix.webconsole.spi</td>
-    <td>雲端環境不支援 Felix 網頁主控台</td>
+    <td>雲端環境不支援Felix Web主控台。 <a href="#org.apache.felix.webconsole">請參閱下面的移除說明。</a></td>
     <td>2021/4/30</td>
     <td>2025/8/31</td>
   </tr>
   <tr>
-<td>org.eclipse.jetty.client<br>org.eclipse.jetty.client.api<br>org.eclipse.jetty.client.http<br>org.eclipse.jetty.client.util<br>org.eclipse.jetty.http<br>org.eclipse.jetty.http.pathmap<br>org.eclipse.jetty.io<br>org.eclipse.jetty.io.ssl<br>org.eclipse.jetty.security<br>org.eclipse.jetty.server<br>org.eclipse.jetty.server.handler<br>org.eclipse.jetty.server.handler.gzip<br>org.eclipse.jetty.server.session<br>org.eclipse.jetty.servlet<br>org.eclipse.jetty.servlet.listener<br>org.eclipse.jetty.util<br>org.eclipse.jetty.util.annotation<br>org.eclipse.jetty.util.component<br>org.eclipse.jetty.util.log<br>org.eclipse.jetty.util.resource<br>org.eclipse.jetty.util.security<br>org.eclipse.jetty.util.ssl<br>org.eclipse.jetty.util.statistic<br>org.eclipse.jetty.util.thread</td>   
+<td>org.eclipse.jetty.client<br>org.eclipse.jetty.client.api<br>org.eclipse.jetty.client.http<br>org.eclipse.jetty.client.util<br>org.eclipse.jetty.http<br>org.eclipse.jetty.http.pathmap<br>org.eclipse.jetty.io<br>org.eclipse.jetty.io.ssl<br>org.eclipse.jetty.security<br>org.eclipse.jetty.server<br>org.eclipse.jetty.server.handler<br>org.eclipse.jetty.server.handler.gzip<br>org.eclipse.jetty.server.session<br>org.eclipse.jetty.servlet<br>org.eclipse.jetty.servlet.listener<br>org.eclipse.jetty.util<br>org.eclipse.jetty.util.annotation<br>org.eclipse.jetty.util.component<br>org.eclipse.jetty.util.log<br>org.eclipse.jetty.util.resource<br>org.eclipse.jetty.util.security<br>org.eclipse.jetty.util.ssl<br>org.eclipse.jetty.util.statistic<br>org.eclipse.jetty.util.thread</td>
     <td>不再支援 Eclipse Jetty 和 Felix Http Jetty 套件。<a href="#org.eclipse.jetty">請參閱下面的移除說明。</a></td>
     <td>2021/5/27</td>
     <td>2025/8/31</td>
@@ -138,7 +138,7 @@ Adobe 會持續評估產品功能，以逐漸利用更現代化的替代方案�
   </tr>
   <tr>
     <td>org.apache.abdera.ext.opensearch<br>org.apache.abdera.ext.opensearch.model<br>org.apache.abdera.ext.opensearch.server<br>org.apache.abdera.ext.opensearch.server.impl<br>org.apache.abdera.ext.opensearch.server.processors<br>org.apache.abdera.i18n.iri.data<br>org.apache.abdera.i18n.lang<br>org.apache.abdera.i18n.templates<br>org.apache.abdera.i18n.unicode.data<br>org.apache.abdera.parser.stax<br>org.apache.abdera.parser.stax.util<br>org.apache.abdera.protocol<br>org.apache.abdera.protocol.client<br>org.apache.abdera.protocol.client.cache<br>org.apache.abdera.protocol.client.util<br>org.apache.abdera.protocol.error<br>org.apache.abdera.protocol.server<br>org.apache.abdera.protocol.server.context<br>org.apache.abdera.protocol.server.filters<br>org.apache.abdera.protocol.server.impl<br>org.apache.abdera.protocol.server.multipart<br>org.apache.abdera.protocol.server.processors<br>org.apache.abdera.protocol.server.provider.basic<br>org.apache.abdera.protocol.server.provider.managed<br>org.apache.abdera.protocol.server.servlet<br>org.apache.abdera.protocol.util<br>org.apache.abdera.util.filter</td>
-    <td>此 API 已過時，因為 Apache Abdera 自 2017 年以來已為淘汰專案。</td>
+    <td>此 API 已過時，因為 Apache Abdera 自 2017 年以來已為淘汰專案。<a href="#org.apache.abdera_or_org.apache.sling.atom.taglib">請參閱下面的移除說明。</a></td>
     <td>2019/4/8</td>
     <td>2025/8/31</td>
   </tr>
@@ -156,19 +156,19 @@ Adobe 會持續評估產品功能，以逐漸利用更現代化的替代方案�
   </tr>
   <tr>
     <td>ch.qos.logback.classic<br>ch.qos.logback.classic.boolex<br>ch.qos.logback.classic.db.names<br>ch.qos.logback.classic.db.script<br>ch.qos.logback.classic.encoder<br>ch.qos.logback.classic.filter<br>ch.qos.logback.classic.helpers<br>ch.qos.logback.classic.html<br>ch.qos.logback.classic.jmx<br>ch.qos.logback.classic.joran<br>ch.qos.logback.classic.joran.action<br>ch.qos.logback.classic.jul<br>ch.qos.logback.classic.layout<br>ch.qos.logback.classic.log4j<br>ch.qos.logback.classic.net<br>ch.qos.logback.classic.net.server<br>ch.qos.logback.classic.pattern<br>ch.qos.logback.classic.pattern.color<br>ch.qos.logback.classic.selector<br>ch.qos.logback.classic.selector.servlet<br>ch.qos.logback.classic.servlet<br>ch.qos.logback.classic.sift<br>ch.qos.logback.classic.spi<br>ch.qos.logback.classic.turbo<br>ch.qos.logback.classic.util<br>ch.qos.logback.core<br>ch.qos.logback.core.boolex<br>ch.qos.logback.core.encoder<br>ch.qos.logback.core.filter<br>ch.qos.logback.core.helpers<br>ch.qos.logback.core.hook<br>ch.qos.logback.core.html<br>ch.qos.logback.core.joran<br>ch.qos.logback.core.joran.action<br>ch.qos.logback.core.joran.conditional<br>ch.qos.logback.core.joran.event<br>ch.qos.logback.core.joran.event.stax<br>ch.qos.logback.core.joran.node<br>ch.qos.logback.core.joran.spi<br>ch.qos.logback.core.joran.util<br>ch.qos.logback.core.joran.util.beans<br>ch.qos.logback.core.layout<br>ch.qos.logback.core.net<br>ch.qos.logback.core.net.server<br>ch.qos.logback.core.net.ssl<br>ch.qos.logback.core.pattern<br>ch.qos.logback.core.pattern.color<br>ch.qos.logback.core.pattern.parser<br>ch.qos.logback.core.pattern.util<br>ch.qos.logback.core.property<br>ch.qos.logback.core.read<br>ch.qos.logback.core.recovery<br>ch.qos.logback.core.rolling<br>ch.qos.logback.core.rolling.helper<br>ch.qos.logback.core.sift<br>ch.qos.logback.core.spi<br>ch.qos.logback.core.status<br>ch.qos.logback.core.subst<br>ch.qos.logback.core.util</td>
-    <td>AEM as a Cloud Service 不支援此內部 Logback API。</td>
+    <td>AEM as a Cloud Service不支援此內部回登API。 <a href="#ch.qos.logback">請參閱下面的移除說明。</a></td>
     <td>2022/1/27</td>
     <td>2025/8/31</td>
   </tr>
   <tr>
     <td>org.slf4j.spi</td>
-    <td>AEM as a Cloud Service 不支援此內部 log4j API。</td>
+    <td>AEM as a Cloud Service不支援此內部log4j API。 <a href="#org.slf4j">請參閱下面的移除說明。</a></td>
     <td>2022/1/27</td>
     <td>2025/8/31</td>
   </tr>
   <tr>
     <td>org.apache.log4j<br>org.apache.log4j.helpers<br>org.apache.log4j.spi<br>org.apache.log4j.xml</td>
-    <td>Apache Log4j 1 已於 2015 年結束其生命週期，不再受支援。</td>
+    <td>Apache Log4j 1已於2015年結束生命週期，不再受支援。 <a href="#org.apache.log4j">請參閱下面的移除說明。</a></td>
     <td>2022/1/27</td>
     <td>2025/8/31</td>
   </tr>
@@ -189,7 +189,7 @@ Adobe 會持續評估產品功能，以逐漸利用更現代化的替代方案�
   </tr>
   <tr>
     <td>org.slf4j.event</td>
-    <td>AEM as a Cloud Service 不支援此內部 slf4j API。</td>
+    <td>AEM as a Cloud Service不支援此內部slf4j API。 <a href="#org.slf4j">請參閱下面的移除說明。</a></td>
     <td>2022/4/11</td>
     <td>2025/8/31</td>
   </tr>
@@ -204,7 +204,7 @@ Adobe 會持續評估產品功能，以逐漸利用更現代化的替代方案�
     <td>請改用 org.apache.sling.xss。</td>
     <td>2023 年 12 月 12 日</td>
     <td>2024 年 6 月 30 日</td>
-  </tr>  
+  </tr>
   <tr>
     <td>com.drew.*</td>
     <td>若要從影像和影片中擷取中繼資料，應透過 Cloud Service 中的 Asset Compute 或透過 Apache POI 或 Apache Tika 完成。</td>
@@ -216,13 +216,19 @@ Adobe 會持續評估產品功能，以逐漸利用更現代化的替代方案�
     <td>此 API 僅供內部使用。</td>
     <td>2024/9/23</td>
     <td>2025/8/31</td>
-  </tr>       
+  </tr>
   <tr>
     <td>org.apache.jackrabbit.oak.plugins.memory</td>
     <td>此 API 僅供內部使用。</td>
     <td>2024/9/23</td>
     <td>2025/8/31</td>
-  </tr>       
+  </tr>
+  <tr>
+    <td>org.bson<br/>org.bson.assertions<br/>org.bson.codecs<br/>org.bson.codecs.configuration<br/>org.bson.codecs.pojo<br/>org.bson.codecs.pojo.annotations<br/>org.bson.conversions<br/>org.bson.diagnostics<br/>org.bson.internal<br/>org.bson.io<br/>org.bson.json<br/>org.bson.types<br/>org.bson.util</td>
+    <td>AEM as a Cloud Service 不支援使用此 API。</td>
+    <td>10/31/2022</td>
+    <td>2025/8/31</td>
+  </tr>
 </tbody>
 </table>
 </details>
@@ -259,7 +265,7 @@ Adobe 會持續評估產品功能，以逐漸利用更現代化的替代方案�
   </tr>
   <tr> <td>org.apache.felix.http.jetty<br>org.eclipse.jetty.client.jmx<br>org.eclipse.jetty.jmx<br>org.eclipse.jetty.server.handler.jmx<br>org.eclipse.jetty.server.nio<br>org.eclipse.jetty.server.jmx<br>org.eclipse.jetty.servlet.jmx<br>org.eclipse.jetty.util.preventers<br>org.eclipse.jetty.util.thread.strategy<br>org.eclipse.jetty.webapp<br>org.eclipse.jetty.websocket.api<br>org.eclipse.jetty.websocket.api.annotations<br>org.eclipse.jetty.websocket.api.extensions<br>org.eclipse.jetty.websocket.api.util<br>org.eclipse.jetty.websocket.client<br>org.eclipse.jetty.websocket.client.io<br>org.eclipse.jetty.websocket.client.masks<br>org.eclipse.jetty.websocket.common<br>org.eclipse.jetty.websocket.common.events<br>org.eclipse.jetty.websocket.common.events.annotated<br>org.eclipse.jetty.websocket.common.extensions<br>org.eclipse.jetty.websocket.common.extensions.compress<br>org.eclipse.jetty.websocket.common.extensions.fragment<br>org.eclipse.jetty.websocket.common.extensions.identity<br>org.eclipse.jetty.websocket.common.frames<br>org.eclipse.jetty.websocket.common.io<br>org.eclipse.jetty.websocket.common.io.http<br>org.eclipse.jetty.websocket.common.io.payload<br>org.eclipse.jetty.websocket.common.message<br>org.eclipse.jetty.websocket.common.scopes<br>org.eclipse.jetty.websocket.common.util<br>org.eclipse.jetty.websocket.server<br>org.eclipse.jetty.websocket.server.pathmap<br>org.eclipse.jetty.websocket.servlet<br>org.eclipse.jetty.xml</td>
     <td>不再支援 Eclipse Jetty 和 Felix Http Jetty 套件。</td>
-  </tr>  
+  </tr>
   <tr>
     <td>org.apache.felix.metatype<br>org.apache.felix.scr<br>org.apache.felix.scr.info<br>org.apache.felix.scr.component</td>
     <td>Apache Felix 中繼類型和 SCR API 已過時。請改用 OSGi 中繼類型和宣告式服務 API。</td>
@@ -314,8 +320,16 @@ Adobe 會持續評估產品功能，以逐漸利用更現代化的替代方案�
 
 動作清單：
 
-* 將 ACS AEM Commons 更新至最新版本
+* 將ACS AEM Commons更新至最新版本（至少6.11.0）
 * 從 `org.apache.sling.commons.auth` 和/或 `org.apache.sling.commons.auth.spi` 分別移轉至 `org.apache.sling.auth` `org.apache.sling.auth.spi`。
+
+### 移除 `org.apache.felix.webconsole*` {#org.apache.felix.webconsole}
+
+如果您使用`org.apache.felix.webconsole*`的套件，請從專案移除此程式碼。 在Cloud Service中無法存取Webconsole。
+
+動作清單：
+
+* 從`org.apache.felix.webconsole*`使用套件移除程式碼
 
 ### 移除 `org.eclipse.jetty*` {#org.eclipse.jetty}
 
@@ -343,6 +357,16 @@ Adobe 會持續評估產品功能，以逐漸利用更現代化的替代方案�
 * 將此套件組合新增至您的專案
    * `org.mongodb:mongo-java-driver:3.12.7`
 
+### 移除 `Apache Commons Lang 2 and Apache Commons Collections 3` {#apache.commons}
+
+移除未維護的Apache Commons程式庫的使用方式，並將其取代為支援版本的使用方式。 在大多數情況下，這只需要調整套件匯入，只有在某些情況下類別或方法已重新命名。 如果您使用的是舊版本的 [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)，請務必更新至最新版本。
+
+動作清單：
+
+* 將ACS AEM Commons更新至最新版本（至少6.11.0）
+* 以`org.apache.commons.lang3`取代`org.apache.commons.lang*`的匯入
+* 以`org.apache.commons.collecitons4`取代`org.apache.commons.collections*`的匯入
+
 ### 使用 `org.apache.abdera*` 和 `org.apache.sling.atom.taglib` {#org.apache.abdera_or_org.apache.sling.atom.taglib}
 
 將使用來自 `org.apache.abdera` 和 `org.apache.sling.atom.taglib` 的任何封裝，取代為提供類似功能的第三方程式庫或您自己的程式碼。
@@ -358,6 +382,32 @@ Adobe 會持續評估產品功能，以逐漸利用更現代化的替代方案�
 動作清單：
 
 * 將使用 `org.apache.felix.http.whiteboard` 更換為 [OSGi Http Whiteboard](https://docs.osgi.org/specification/osgi.cmpn/7.0.0/service.http.whiteboard.html)
+
+### 使用 `ch.qos.logback*` {#ch.qos.logback}
+
+Cloud Service不支援Logback，請移除其所有使用方式。 如果您使用的是舊版本的 [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)，請務必更新至最新版本。
+
+動作清單：
+
+* 將ACS AEM Commons更新至最新版本（至少6.11.0）
+* 從`ch.qos.logback`使用套件移除程式碼
+
+### 使用 `org.slf4j.event and org.slf4j.spi` {#org.slf4j}
+
+如果您正在使用`org.slf4j.event`或`org.slf4j.spi`，請移除其所有使用方式。 如果您使用的是舊版本的 [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)，請務必更新至最新版本。
+
+動作清單：
+
+* 將ACS AEM Commons更新至最新版本（至少6.11.0）
+* 使用`org.slf4j.event`和`org.slf4j.spi`移除程式碼
+
+### 使用 `org.apache.log4j` {#org.apache.log4j}
+
+如果您使用`org.apache.log4j`切換至SLF4J (`org.slf4j`)或Log4J 2.x (`org.apache.logging.log4j`)。
+
+動作清單：
+
+* 使用`org.slf4j` （建議）或`org.apache.logging.log4j`取代`org.apache.log4j`的使用方式
 
 ## OSGI 設定 {#osgi-configuration}
 
@@ -542,7 +592,7 @@ Update the usage of maven-bundle-plugin to version 5.1.5 or higher to ensure sup
 
 #### Update dependencies in maven-scr-plugin  {#maven-scr-plugin}
 
-The `maven-scr-plugin` is not directly compatible with Java 17 and 21. However, it is possible to generate the descriptor files by updating the ASM dependency version within the plugin configuration, similar to the snippet below: 
+The `maven-scr-plugin` is not directly compatible with Java 17 and 21. However, it is possible to generate the descriptor files by updating the ASM dependency version within the plugin configuration, similar to the snippet below:
 
 ```
 [source,xml]
