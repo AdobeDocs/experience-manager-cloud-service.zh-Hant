@@ -5,10 +5,10 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a91b15836d0ca0308fbc860ec57aacda908f610d
+source-git-commit: b0c8769b5941ed772a91cf189e8c7355d1db766b
 workflow-type: tm+mt
-source-wordcount: '1088'
-ht-degree: 18%
+source-wordcount: '1160'
+ht-degree: 17%
 
 ---
 
@@ -58,6 +58,10 @@ Cloud Manager提供自助服務工具來安裝和管理SSL憑證，確保使用�
 DV憑證是最基本的SSL憑證等級，通常用於測試目的或透過基本加密保護網站。 DV憑證可在[生產程式和沙箱程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)中使用。
 
 建立DV憑證後，Adobe會每三個月自動更新一次，除非該憑證被刪除。
+
+>[!IMPORTANT]
+>
+>如果您的環境使用(DV) SSL憑證進行CNAME型驗證，請注意，在自動憑證續約之前移除CNAME記錄可能會導致續約失敗。 移除可能會導致憑證過期和服務中斷。 若要避免此問題，請確定CNAME記錄在整個續約過程中保持不變。 續約程式需仰賴CNAME記錄的存在以進行網域擁有權驗證。
 
 ### 客戶管理的(OV/EV) SSL憑證 {#customer-managed}
 
