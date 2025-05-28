@@ -14,19 +14,19 @@ ht-degree: 6%
 
 # 使用Adobe Journey Optimizer的內容片段 {#content-fragments-with-journey-optimizer}
 
-[Adobe Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/get-started)可協助您為客戶提供連結、情境式和個人化的體驗。 透過整合Adobe Experience Manager (AEM) as a Cloud Service與Adobe Journey Optimizer (AJO)，您可以在AJO對外頻道（包括網頁、簡訊和電子郵件）中重複使用AEM內容。
+[Adobe Journey Optimizer](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/get-started/get-started)可協助您為客戶提供連結、情境式和個人化的體驗。 透過整合Adobe Experience Manager (AEM) as a Cloud Service與Adobe Journey Optimizer (AJO)，您可以在AJO對外頻道（包括網頁、簡訊和電子郵件）中重複使用AEM內容。
 
 例如，您可以：
 
-* 將您的[AEM內容片段](/help/sites-cloud/administering/content-fragments/overview.md)緊密整合至您的[Journey Optimizer電子郵件](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/get-started-email)內容
+* 將您的[AEM內容片段](/help/sites-cloud/administering/content-fragments/overview.md)緊密整合至您的[Journey Optimizer電子郵件](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/channels/email/get-started-email)內容
 * 直接從AEM預覽AJO體驗
 
 內容片段和AJO之間的連線可簡化存取及運用AEM內容的程式，讓您建立個人化和動態的行銷活動和歷程。
 
 如需詳細資訊，請從AJO檔案開始：
 
-* [在AJO中使用內容片段](https://experienceleague.adobe.com/docs/journey-optimizer/using/integrations/aem-fragments.html#integrations)
-* [整合AJO選件與內容片段](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/managing-offers-in-the-offer-library/configure-offers/add-representations#urls)
+* [在AJO中使用內容片段](https://experienceleague.adobe.com/docs/journey-optimizer/using/integrations/aem-fragments.html?lang=zh-Hant#integrations)
+* [整合AJO選件與內容片段](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/decisioning/offer-decisioning/managing-offers-in-the-offer-library/configure-offers/add-representations#urls)
 
 ## 更多資訊 {#further-information}
 
@@ -45,7 +45,7 @@ For integration, and preparation for use, several steps need to be completed in 
 
 >[!IMPORTANT]
 >
->You must also [configure AJO](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/integrations/aem-fragments).
+>You must also [configure AJO](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/integrations/aem-fragments).
 
 ### Create the AEM tag for AJO synchronization {#create-the-aem-tag-for-AJO-synchronization}
 
@@ -86,7 +86,7 @@ If required, [publish your Content Fragment](/help/sites-cloud/administering/con
 
 ## Use your Content Fragment in Journey Optimizer {#use-your-content-fragment-in-journey-optimizer}
 
-You can now [use your fragment in AJO](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/integrations/aem-fragments).
+You can now [use your fragment in AJO](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/integrations/aem-fragments).
 
 ## Preview AJO experiences from AEM {#preview-ajo-experiences-from-aem}
 
@@ -135,22 +135,22 @@ To use the extension:
 
 For full information see:
 
-* [Get started with AJO Campaigns](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/get-started-with-campaigns)
-* [Preview and test your content](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/test/preview-test/preview-test)
+* [Get started with AJO Campaigns](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/campaigns/get-started-with-campaigns)
+* [Preview and test your content](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/test/preview-test/preview-test)
 
 ### Preview AJO Journeys {#preview-ajo-journeys}
 
 For full information see:
 
-* [Get started with AJO Journeys](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/journey).
-* [Preview and test your content](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/test/preview-test/preview-test)
+* [Get started with AJO Journeys](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/orchestrate-journeys/journey).
+* [Preview and test your content](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/test/preview-test/preview-test)
 
 ### Preview AJO Template {#preview-ajo-templates}
 
 For full information see:
 
-* [Get started with AJO Content Templates](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-templates/content-templates).
-* [Preview and test your content](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/test/preview-test/preview-test)
+* [Get started with AJO Content Templates](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/content-management/content-templates/content-templates).
+* [Preview and test your content](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/test/preview-test/preview-test)
 
 ## Limitations {#limitations}
 
