@@ -259,7 +259,7 @@ ht-degree: 99%
    + [Sling Service 使用者對應和服務使用者定義的最佳做法](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
    + [Adobe as a Cloud Service 的客戶自控金鑰](/help/security/customer-managed-keys.md)
 + 上線 {#onboarding}
-   + [從這裡開始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=zh-Hant)
+   + [從這裡開始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
    + 上線歷程 {#journey}
       + [上線歷程概觀](/help/journey-onboarding/overview.md)
       + [上線準備](/help/journey-onboarding/preparation.md)
@@ -497,7 +497,7 @@ ht-degree: 99%
       + [將內容片段匯出到 Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [將體驗片段匯出到 Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [與 Adobe Campaign 整合](/help/sites-cloud/integrating/campaign.md)
-   + [AEM as a Cloud Service的作業遙測](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
+   + [AEM as a Cloud Service 的操作遙測](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Assets {#assets}
    + [概觀與新增功能](/help/assets/overview.md)
    + [ [!DNL Assets] as a [!DNL Cloud Service] 重大變更](/help/assets/assets-cloud-changes.md)
@@ -1080,7 +1080,7 @@ ht-degree: 99%
          + [製作全球適用的表單：表單翻譯指南](/help/edge/docs/forms/translate-forms.md)
          + [保護表單：新增 reCAPTCHA 安全性](/help/edge/docs/forms/recaptacha-forms.md)
          + [建置自訂表單元件：開發人員指南](/help/edge/docs/forms/custom-components-forms.md)
-         + [監視器表單效能：作業遙測指南](/help/edge/docs/forms/operational-telemetry-for-forms.md)
+         + [監視表單效能：操作遙測指南](/help/edge/docs/forms/operational-telemetry-for-forms.md)
    + Edge Delivery 資源 {#resources}
       + Sidekick {#sidekick}
          + [使用 Sidekick](/help/edge/docs/sidekick.md)
@@ -1092,7 +1092,7 @@ ht-degree: 99%
 + Headless {#headless}
    + [什麼是 Headless CMS？](/help/headless/what-is-headless.md)
    + [AEM Headless 簡介](/help/headless/introduction.md)
-   + [開發人員入口網站 (其他資源)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hant)
+   + [開發人員入口網站 (其他資源)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
    + [最佳做法 - 設定和使用](/help/headless/best-practices-setup-use.md)
    + 設定 {#setup}
       + [簡介](/help/headless/setup/introduction.md)
@@ -1169,7 +1169,7 @@ ht-degree: 99%
          + [了解如何在內容片段中使用參照](/help/journey-headless/author/references.md)
          + [了解如何為內容片段定義中繼資料和標記](/help/journey-headless/author/metadata-tagging.md)
 + 生成式 AI {#generative-ai}
-   + [AEM as a Cloud Service中的Generative AI](/help/generative-ai/generative-ai-in-aem.md)
+   + [AEM as a Cloud Service 中的生成式 AI](/help/generative-ai/generative-ai-in-aem.md)
    + [產生變化版本：與 AEM 編輯器整合](/help/generative-ai/generate-variations-integrated-editor.md)
    + [產生變化版本](/help/generative-ai/generate-variations.md)
    + [助理 (限量 Beta)](/help/implementing/cloud-manager/aem-ai-assistant.md)
@@ -1231,9 +1231,9 @@ ht-degree: 99%
       + Edge Delivery Sites {#edge-delivery-sites}
          + [Cloud Manager 的 Edge Delivery Services 簡介](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
          + [新增 Edge Delivery 網站至 Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
-         + [按一下即可建立您的第一個Edge Delivery網站](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
-         + [為 Edge Delivery 網站設定推播驗證](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)
-         + [設定您的內容Source](/help/implementing/cloud-manager/edge-delivery/configure-content-source.md)
+         + [一鍵式建立您的第一個 Edge Delivery Site](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
+         + [設定 Edge Delivery Site 的推播驗證](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)
+         + [設定您的內容來源](/help/implementing/cloud-manager/edge-delivery/configure-content-source.md)
          + [在 Cloud Manager 中管理 Edge Delivery Sites](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
       + 網域設定 {#custom-domain-names}
          + [網域設定簡介](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
