@@ -5,9 +5,9 @@ exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '798'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 89%
 Edge Delivery Services 是一組可組合的服務，可讓您以高度靈活的方式在網站上製作內容。此功能可讓您執行以下操作：
 
 * 建立具有完美 Lighthouse 分數的快速網站。
-* 透過作業遙測持續監控效能。
+* 透過操作遙測持續監視效能。
 * 透過分離內容來源提高編寫工作效率。
 
 您可以透過通用編輯器與文件型製作來使用 AEM 內容管理和所見即所得製作。
@@ -43,12 +43,12 @@ AEM as a Cloud Service 中的 Cloud Manager 可讓您為專案啟用 Edge Delive
 * [存取 SLA 報告](/help/implementing/cloud-manager/sla-reporting.md) (*即將推出*)
 * 為您註冊的生產程式[取得 Adobe 支援存取權](/help/edge/overview.md#support-ticket)。
 
-如果您擁有Edge Delivery Services (EDS)授權，則可以在您的Edge Delivery網站上使用[Adobe管理的CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn)，並利用如自助服務CDN管理和每三個月自動續約DV憑證等功能（除非它被刪除）。
+如果您擁有 Edge Delivery Services (EDS) 憑證，則可以讓您的 Edge Delivery Site 使用 [Adobe 託管 CDN](/help/implementing/dispatcher/cdn.md#aem-managed-cdn)，並利用自助 CDN 管理和每三個月自動續約的 DV 憑證 (除非刪除) 等功能。
 
-或者，如果您選擇使用您的CDN (即非Adobe管理的CDN)，無論您的Edge Delivery Services授權為何，您都必須在`aem.live`平台上設定它。 請參閱[BYO CDN設定](https://www.aem.live/docs/byo-cdn-setup)。
+或者，如果您選擇使用您的 CDN (即非 Adobe 託管的 CDN)，無論您的 Edge Delivery Services 授權情形如何，您都必須在 `aem.live` 平台上對其進行設定。請參閱 [BYO CDN 設定](https://www.aem.live/docs/byo-cdn-setup)。
 
 
-## 關於將 Edge Delivery Services 新增至生產程式或沙箱程式
+## 關於在生產程式或沙箱程式新增 Edge Delivery Services
 
 根據專案的開始方式或是預計建立網站的時間，您可以透過多種不同方法新增 Edge Delivery Services。
 
@@ -86,7 +86,7 @@ Cloud Manager 中的 **Edge Delivery 待辦事項清單**&#x200B;是上線任務
 | 7 | 設定推播驗證 | 請參閱「[為 Edge Delivery 網站設定推播驗證](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)」。 |
 | 8 | 上線 | 請參閱「[上線檢查清單](/help/edge/docs/go-live-checklist.md)」。 |
 
->[!VIDEO](https://video.tv.adobe.com/v/3441574?learn=on&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## 記錄支援服務單 {#eds-support-ticket}
 

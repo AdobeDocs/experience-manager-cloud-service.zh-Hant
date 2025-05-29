@@ -1,19 +1,19 @@
 ---
-title: 按一下即可建立您的第一個Edge Delivery網站
-description: 了解如何透過點按按鈕，在 Cloud Manager 中快速建立 Edge Delivery 網站。
+title: 一鍵式建立您的第一個 Edge Delivery Site
+description: 了解如何透過點按按鈕，在 Cloud Manager 中快速建立 Edge Delivery Site。
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 292bf0b4-990b-4980-b971-91b8aedde3de
 source-git-commit: 0c4ef0eb5bb7caa5cd68dac6c788b37f564e1770
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '945'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
-# 按一下即可建立您的第一個Edge Delivery網站{#about-one-click-edge-delivery-site}
+# 一鍵式建立您的第一個 Edge Delivery Site{#about-one-click-edge-delivery-site}
 
-按一下即可建立您的第一個Edge Delivery網站，協助您在Cloud Manager中自動上線和部署Edge Delivery網站。 只需按一下按鈕即可，大幅簡化了流程。按一下即可佈建所需的基礎結構，與 GitHub 整合以進行版本控制，並在 Google Drive 中設定您的文件和資產儲存體。
+一鍵式建立您的第一個 Edge Delivery Site 之功能，目的為協助您在 Cloud Manager 中自動完成 Edge Delivery Sites 上線和部署的工作。只需按一下按鈕即可，大幅簡化了流程。按一下即可佈建所需的基礎結構，與 GitHub 整合以進行版本控制，並在 Google Drive 中設定您的文件和資產儲存體。
 
 這種自動化有助於減少設定初始網站所需的手動工作。這可確保無縫的工作流程和可擴縮性，並在管理 Edge 內容方面提高團隊的效能。
 

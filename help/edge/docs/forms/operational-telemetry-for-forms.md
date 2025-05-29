@@ -1,23 +1,23 @@
 ---
-title: AEM Forms as a Cloud Service的Edge Delivery Services作業遙測
-description: AEM Forms as a Cloud Service的Edge Delivery Services作業遙測功能包括持續追蹤和分析使用者與表單的互動。
+title: AEM Forms as a Cloud Service 之 Edge Delivery Services 的操作遙測
+description: AEM Forms as a Cloud Service 之 Edge Delivery Services 的操作遙測包含持續追蹤和分析使用者與表單的互動情形。
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 role: Admin, Architect, Developer
 exl-id: 184fc7dc-d583-4a63-9e30-80d324ec9d7e
 source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '789'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
-# AEM Forms as a Cloud Service的Edge Delivery Services作業遙測
+# AEM Forms as a Cloud Service 之 Edge Delivery Services 的操作遙測
 
-作業遙測功能可讓您深入瞭解訪客與您Adobe Experience Manager (AEM)網站的互動情形。 這個內建工具提供重要的資料，協助了解使用者行為、診斷效能問題，以及測量網站實驗的效益。作業遙測可擷取真實使用的互動，提供更精確的網站效能圖，超越合成測試。
+操作遙測讓您可以獲得關於現實中訪客與 Adobe Experience Manager (AEM) 網站互動方式的見解。這項內建工具提供重要的資料，協助了解使用者行為、診斷效能問題，以及測量網站實驗的效益。操作遙測能擷取實際使用的互動情形，超越綜合測試，更準確地了解您的網站效能情況。
 
-不過，作業遙測會優先處理訪客隱私權。 其利用抽樣技巧從具有代表性的使用者子集收集資料，確保不會擷取任何個人識別資訊 (PII)。此外，作業遙測的設計也考慮資料最小化，只收集效能分析所需的必要量度。 您可以利用這個方法將 AEM 網站最佳化，同時維持使用者信任。
+不過，操作遙測會優先考慮訪客的隱私。其利用抽樣技巧從具有代表性的使用者子集收集資料，確保不會擷取任何個人識別資訊 (PII)。此外，操作遙測的設計將資料最小化納入考量，僅收集效能分析所需的基本量度。您可以利用這個方法將 AEM 網站最佳化，同時維持使用者信任。
 
 
 ## 必要條件
@@ -26,7 +26,7 @@ ht-degree: 83%
 
 https://data.aem.live/?ext=forms
 
-適用於Forms的![Edge Delivery Services的作業遙測登入畫面](/help/edge/assets/rum-login-screen.png)
+![Edge Delivery Services for Forms 的操作遙測登入畫面](/help/edge/assets/rum-login-screen.png)
 
 若要登入 Edge Delivery Services for AEM Forms as a Cloud Service 的監視儀表板，請輸入以下內容：
 
@@ -40,7 +40,7 @@ https://data.aem.live/?ext=forms
 
 下圖示範 Edge Delivery Services for AEM Forms as a Cloud Service 的儀表板：
 
-![操作遙測Forms儀表板](/help/edge/assets/rum-forms-dashboard.png)
+![操作遙測表單儀表板](/help/edge/assets/rum-forms-dashboard.png)
 
 ### 表單儀表板的不同關鍵量度 {#different-metrics-operational-telemetry-dashboard-forms}
 
