@@ -1,12 +1,12 @@
 ---
-title: 適用於  [!DNL Adobe Experience Manager]  as a  [!DNL Cloud Service] 的資產選擇器
-description: 在應用程式內使用資產選擇器搜尋、查找和檢索資產的中繼資料和轉譯。
+title: 資產選擇器集合
+description: 使用資產選擇器集合。
 role: Admin,User
 exl-id: 1687e7d5-eb7e-4eb7-8747-e5dc6afacd5b
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 08fc43bc8edeea91bfeb01f053d435e136658e7f
 workflow-type: tm+mt
-source-wordcount: '507'
-ht-degree: 14%
+source-wordcount: '495'
+ht-degree: 15%
 
 ---
 
@@ -15,19 +15,19 @@ ht-degree: 14%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 與 Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets 與 Edge Delivery Services 整合</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>使用者介面可擴充性</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用 Dynamic Media Prime 與 Ultimate</b></a>
         </td>
     </tr>
     <tr>
@@ -70,7 +70,7 @@ Additionally, you can [customize](/help/assets/asset-selector-customization.md) 
 
 ## 檢視集合 {#view-collections}
 
-資產選取器可讓您在![清單檢視](assets/do-not-localize/list-view.png)清單檢視或![格線檢視](assets/do-not-localize/grid-view.png)格線檢視中檢視集合。 檢視資產選擇器[&#128279;](overview-asset-selector.md#types-of-view)中的檢視型別。
+資產選取器可讓您在![清單檢視](assets/do-not-localize/list-view.png)清單檢視或![格線檢視](assets/do-not-localize/grid-view.png)格線檢視中檢視集合。 檢視資產選擇器](overview-asset-selector.md#types-of-view)中的[檢視型別。
 
 ## 將資產拖放至收藏集 {#collection-drag-and-drop}
 

@@ -4,10 +4,10 @@ description: 瞭解AEM Assets和Dynamic Media如何使用靜態和動態影像�
 exl-id: 006dc493-c400-4d0f-b314-c1978582b7fb
 feature: Renditions
 role: User
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: b6c753ec581a80991f0f79134bec019c3ad6d1d0
 workflow-type: tm+mt
 source-wordcount: '692'
-ht-degree: 3%
+ht-degree: 7%
 
 ---
 
@@ -16,19 +16,19 @@ ht-degree: 3%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 與 Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets 與 Edge Delivery Services 整合</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>使用者介面可擴充性</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用 Dynamic Media Prime 與 Ultimate</b></a>
         </td>
     </tr>
     <tr>
@@ -86,7 +86,7 @@ Dynamic Media影像預設集和智慧型裁切轉譯可促進符合品牌標準�
    * [影像預設集](/help/assets/dynamic-media/managing-image-presets.md)
 
   您可以[稍後切換檢視](/help/assets/assets-view-introduction.md#how-to-access-assets-view)以在Assets檢視中預覽動態轉譯。
-* 將資產發佈至Dynamic Media，以便在Assets檢視中使用Dynamic Media轉譯。 如需詳細資訊，請參閱[將Assets發佈到AEM和Dynamic Media](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm)。
+* 將資產發佈至Dynamic Media，以便在Assets檢視中使用Dynamic Media轉譯。 如需詳細資訊，請參閱[將Assets發佈到AEM和Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm)。
 
 
 ### 檢視和下載Dynamic Media轉譯 {#view-download-dm-renditions}
@@ -105,7 +105,7 @@ Dynamic Media影像預設集和智慧型裁切轉譯可促進符合品牌標準�
    <!-- ![dynamic renditions](assets/preset_smart_crop_view.png) -->
 
 1. 選取要預覽的轉譯，然後按一下&#x200B;**複製URL**&#x200B;以複製所選轉譯的URL。 按一下「**下載轉譯**」即可下載影像資產的轉譯。
-1. 選取要預覽的智慧型裁切轉譯，然後按一下「複製URL」**&#x200B;**&#x200B;以複製所選轉譯的URL。
+1. 選取要預覽的智慧型裁切轉譯，然後按一下「複製URL」****&#x200B;以複製所選轉譯的URL。
 1. 按一下![下載圖示](assets/do-not-localize/download-icon.png)，將所有可用的智慧型裁切轉譯下載為單一zip檔案。
    ![下載圖示](/help/assets/assets/smartcrop-rendition.png)
 
@@ -115,7 +115,7 @@ Dynamic Media影像預設集和智慧型裁切轉譯可促進符合品牌標準�
 
 ## 具有OpenAPI功能轉譯的Dynamic Media {#dm-with-openapi-renditions}
 
-### 開始之前
+### 開始之前 {#prereqs-dm-with-openapi-renditions}
 
 * 您必須是授權的AEM Dynamic Media使用者。
 * Assets必須獲得核准，才能顯示具有OpenAPI功能轉譯的Dynamic Media。 如需詳細資訊，請參閱[在Experience Manager中核准資產](/help/assets/approve-assets.md#copy-delivery-url-approved-assets)

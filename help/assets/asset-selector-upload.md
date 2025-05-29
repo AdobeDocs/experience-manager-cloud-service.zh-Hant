@@ -1,12 +1,12 @@
 ---
-title: 適用於  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 的資產選擇器
-description: 使用「資產」選擇器來搜尋、尋找及擷取應用程式內的資產中繼資料和轉譯。
+title: 在「資產選擇器」中上傳資產
+description: 使用上傳功能在資產選擇器MFE中上傳資產
 role: Admin,User
 exl-id: d6ff601c-3111-421a-9a94-cc524ce7e432
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 08fc43bc8edeea91bfeb01f053d435e136658e7f
 workflow-type: tm+mt
-source-wordcount: '563'
-ht-degree: 6%
+source-wordcount: '556'
+ht-degree: 10%
 
 ---
 
@@ -15,19 +15,19 @@ ht-degree: 6%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 與 Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets 與 Edge Delivery Services 整合</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>使用者介面可擴充性</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用 Dynamic Media Prime 與 Ultimate</b></a>
         </td>
     </tr>
     <tr>
@@ -71,7 +71,7 @@ ht-degree: 6%
 
 您可以將中繼資料新增到資產，同時立即將資產上傳到您的應用程式。 中繼資料包含各種欄位，例如業務主旨列、產品詳細資訊、行銷活動等。 要執行此操作，請使用`metadataSchema`屬性。 移至[資產選擇器屬性](/help/assets/asset-selector-properties.md)以進一步瞭解`metadataSchema`屬性。
 
-請參閱使用中繼資料[&#128279;](/help/assets/asset-selector-customization.md#upload-with-metadata)上傳以取得組態所需的程式碼片段。
+請參閱使用中繼資料](/help/assets/asset-selector-customization.md#upload-with-metadata)上傳[以取得組態所需的程式碼片段。
 
 ![上傳包含中繼資料的資產](assets/upload-with-metadata.png)
 

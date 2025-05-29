@@ -1,11 +1,11 @@
 ---
-title: 適用於  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 的資產選擇器
+title: 自訂資產選擇器應用程式
 description: 使用函式來自訂應用程式內的資產選擇器。
 role: Admin, User
 exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
-source-git-commit: 97a432270c0063d16f2144d76beb437f7af2895a
+source-git-commit: 08fc43bc8edeea91bfeb01f053d435e136658e7f
 workflow-type: tm+mt
-source-wordcount: '1293'
+source-wordcount: '1292'
 ht-degree: 28%
 
 ---
@@ -205,7 +205,7 @@ interface SelectedAsset {
 
 下表說明選取之資產物件的一些重要屬性。
 
-| 屬性 | 類型 | 描述 |
+| 屬性 | 類型 | 說明 |
 |---|---|---|
 | *repo:repositoryId* | 字串 | 儲存資產之存放庫的唯一識別碼。 |
 | *repo:id* | 字串 | 資產的唯一識別碼。 |

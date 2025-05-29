@@ -3,10 +3,10 @@ title: 適用於  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 的�
 description: 在應用程式內使用資產選擇器進行搜尋、尋找和取得資產的中繼資料與轉譯。
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: f78d0242a3cf681ab827c785b6f02565887f392d
-workflow-type: ht
-source-wordcount: '1422'
-ht-degree: 100%
+source-git-commit: fb1e73b24e0717998a69132cc8f196193c87bab4
+workflow-type: tm+mt
+source-wordcount: '1598'
+ht-degree: 88%
 
 ---
 
@@ -203,6 +203,46 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
 * ![圖庫檢視](assets/do-not-localize/gallery-view.png) [!UICONTROL **圖庫檢視**] 圖庫檢視會在居中鎖定的水平清單中顯示檔案或資料夾。
 * ![瀑布檢視](assets/do-not-localize/waterfall-view.png) [!UICONTROL **瀑布**&#x200B;檢視] 瀑布檢視會以 Bridge 的形式顯示檔案或資料夾。
 
+### 資產詳細資料和中繼資料 {#asset-details-and-metadata}
+
+「資產詳細資訊」頁面提供特定資產的完整檢視，將所有重要資訊整合到一個地方。 其中包括包含名稱、檔案格式、狀態的概觀、簡短說明，以及便於視覺識別的預覽或縮圖。 其中也包含資產的中繼資料，例如建立日期、作者、大小、色彩配置等。 這些屬性有助於有效率地搜尋、篩選和分類資產。 Asset Selector的邊欄和模組檢視中都有資產詳細資料面板。 在邊欄檢視中，必須啟用並設定`onDrop`屬性以傳回資產。 或者，在模組檢視中，`handleSelection`屬性會傳回資產。 請參閱[資產選擇器屬性](asset-selector-properties.md)。
+
+若要檢視資產和中繼資料的詳細資訊，請執行以下步驟：
+
+1. 開啟資產選擇器MFE並導覽至資產。
+1. 將游標暫留在資產上，然後按一下![資訊圖示](/help/assets/assets/info-icon-solid-black.svg)。
+1. 移至&#x200B;**[!UICONTROL 資訊]**&#x200B;標籤以檢視資產的詳細資料。<!--Otherwise, go to the **[Renditions](#asset-renditions)** tab to see renditions of an asset.-->
+
+若要自訂資產的詳細資料檢視面板，請參閱[在模組檢視中自訂資訊](asset-selector-customization.md#customize-info-in-modal-view)。
+
+![資產詳細資料](assets/asset-details.png)
+
+<!--
+
+#### Asset renditions {#asset-renditions}
+
+Renditions in Adobe Experience Manager (AEM) are customized versions of digital assets, such as images, designed for different devices and platforms to ensure optimal performance. See [Dynamic Media renditions](/help/assets/renditions.md#dynamic-media-renditions).
+
+>[!NOTE]
+>
+>* Prerequisites to [Dynamic Media with OpenAPI Capabilities renditions](/help/assets/renditions.md##prereqs-dm-with-openapi-renditions).
+>* Renditions tab in the details panel of an asset shows up if `featureSet`  props is set to `['detail-panel', 'dm-renditions']`.
+>* An asset should be approved to see Dynamic Media with OpenAPI renditions and/or ensure processing/publishing of the asset to Dynamic Media is complete (for images only).
+
+![Asset details dynamic media renditions](assets/asset-details-dm-renditions.png)
+
+For assets that are approved and have renditions enabled, you see the **Dynamic Media with Open API** badge. 
+
+![Dynamic Media Open API stamp](assets/dm-open-api-stamp.png)
+
+Additionally, see [Asset Selector user interface for Dynamic Media with OpenAPI capabilities](integrate-asset-selector-dynamic-media-open-api.md##interface-dynamic-media-open-api).
+
+##### Add modifiers {#modifiers-dm-media-renditions}
+
+Beyond the common image settings available in the UI, Dynamic Media supports numerous advanced image modifications that you can specify in the Image Modifiers field. See [Defining image preset options with Image Modifiers](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/managing-image-presets#defining-image-preset-options-with-image-modifiers).
+
+-->
+
 ## 深入了解重要功能 {#key-capabilities-asset-selector}
 
 <table>
@@ -216,39 +256,39 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
      </td>
     <td>
         <img src="assets/with-adobe-app.gif" width="70px" height="70px" alt="整合資產選擇器與 Adobe 應用程式圖形"><br/>
-        <a href="integrate-asset-selector.md">整合資產選擇器與 Adobe 應用程式</a>
+        <a href="integrate-asset-selector-adobe-app.md">整合資產選擇器與 Adobe 應用程式</a>
         <p>
         <em>了解如何將資產選擇器與各種 Adobe 應用程式整合。</em>
         </p>
     </td>
     <td>
         <img src="assets/third-party-app.gif" width="70px" height="70px" alt="整合資產選擇器圖形"><br/>
-        <a href="integrate-asset-selector.md">整合資產選擇器與第三方應用程式</a>
+        <a href="integrate-asset-selector-non-adobe-app.md">整合資產選擇器與第三方應用程式</a>
         <p>
         <em>挖掘將資產選擇器與非 Adobe 應用程式整合的功能。</em>
         </p>
     </td>
     <td>
         <img src="assets/with-dynamic-media-open-api.gif" width="70px" height="70px" alt="整合資產選擇器圖形"><br/>
-        <a href="integrate-asset-selector.md">整合資產選擇器與 Dynamic Media Open API</a>
+        <a href="integrate-asset-selector-dynamic-media-open-api.md">整合資產選擇器與 Dynamic Media Open API</a>
         <p>
         <em>了解如何整合資產選擇器與 Dynamic Media Open API。</em>
         </p>
      </td>
      <td>
-        <img src="assets/asset-selector-examples.gif" width="70px" height="70px" alt="資產選擇器屬性圖形"><br/>
-        <a href="asset-selector-customization.md">資產選擇器屬性</a>
+        <img src="assets/asset-selector-properties.gif" width="70px" height="70px" alt="資產選擇器範例圖形"><br/>
+        <a href="asset-selector-properties.md">資產選擇器屬性</a>
         <p>
-        <em>了解自訂資產選擇器各個元件的基礎知識，例如篩選器、資產選擇、過期資產等等。</em>
+        <em>以實際的方式了解屬性的使用狀況。</em>
         </p>
     </td>
 </tr>
 <tr>
     <td>
-        <img src="assets/asset-selector-properties.gif" width="70px" height="70px" alt="資產選擇器範例圖形"><br/>
-        <a href="asset-selector-customization.md">資產選擇器範例</a>
+        <img src="assets/asset-selector-examples.gif" width="70px" height="70px" alt="資產選擇器屬性圖形"><br/>
+        <a href="asset-selector-examples.md">資產選擇器範例</a>
         <p>
-        <em>以實際的方式了解屬性的使用狀況。</em>
+        <em>了解自訂資產選擇器各個元件的基礎知識，例如篩選器、資產選擇、過期資產等等。</em>
         </p>
     </td>
     <td>
@@ -269,7 +309,7 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
         <img src="assets/asset-selector-collections.gif" width="70px" height="70px" alt="資產選擇器集合圖形"><br/>
         <a href="asset-selector-collections.md">資產選擇器集合</a>
         <p>
-        <em>了解如何使用 Experience Manager 存放庫，在資產選擇器內使用集合。</em>
+        <em>瞭解如何使用Experience Manager存放庫在Asset Selector中使用集合。</em>
         </p>
     </td>
     <td>
