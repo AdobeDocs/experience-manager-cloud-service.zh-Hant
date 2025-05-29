@@ -19,7 +19,7 @@ ht-degree: 97%
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service  | 本文章 |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html?lang=zh-Hant) |
 
 在快速發展的數位分析領域，跟上全球趨勢對於做出明智的決策和優化數位體驗至關重要。為此，最適化表單可順暢地與 Adobe Analytics 整合，以擷取和追蹤已發佈表單和文件的效能量度。分析這些量度的目的是做出資料導向式決策，使用量度和分析來增強表單的可用性和有效性。
 
@@ -65,7 +65,7 @@ Adobe Analytics 提供了一系列全面的最適化表單效能量度，旨在�
 可以協助您獲得有關訪客在表單上的活動的寶貴深入見解：
 
 * **造訪和提交**：描述了在某個日期範圍內您的表單被造訪的頻率以及對應的表單提交次數，如需相關詳細資訊，請按一下[造訪次數](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=zh-Hant)。
-* **不重複訪客及其總造訪次數**：它可區別新使用者和回訪使用者。例如，某位訪客可能在一個月內每天造訪您的網站，但這仍會計為單一不重複訪客。造訪[不重複訪客](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html)了解詳細資訊。
+* **不重複訪客及其總造訪次數**：它可區別新使用者和回訪使用者。例如，某位訪客可能在一個月內每天造訪您的網站，但這仍會計為單一不重複訪客。造訪[不重複訪客](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html?lang=zh-Hant)了解詳細資訊。
 
   ![表單訪客](assets/forms-visitors.png){width="100%"}
 
