@@ -119,7 +119,7 @@ Cloud Manager會依&#x200B;**效能**、**協助工具**、**最佳實務**&#x20
 您可以執行下列操作來檢視完整的體驗稽核報表：
 
 * 在&#x200B;**[最慢的5頁](#view-slowest-pages)**&#x200B;對話方塊中按一下&#x200B;**`View full report`**。
-* 檢視管道](#results)的[執行時，請按一下&#x200B;**`View full report`**。
+* 檢視管道[&#128279;](#results)的執行時，請按一下&#x200B;**`View full report`**。
 * 按一下Cloud Manager中的&#x200B;**報表**&#x200B;索引標籤。
 
 Cloud Manager的&#x200B;**報告**&#x200B;標籤已開啟，顯示&#x200B;**體驗稽核**。
