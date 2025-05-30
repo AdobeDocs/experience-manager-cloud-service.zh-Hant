@@ -5,10 +5,10 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 6d729c8e7f84dccce9c11f1ca13553763d0547f8
+source-git-commit: 932f4b864e179760c9f4cbcf5ce1ea74764df5c4
 workflow-type: tm+mt
-source-wordcount: '2124'
-ht-degree: 77%
+source-wordcount: '2448'
+ht-degree: 76%
 
 ---
 
@@ -17,19 +17,19 @@ ht-degree: 77%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 與 Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets 與 Edge Delivery Services 整合</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>使用者介面可擴充性</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用 Dynamic Media Prime 與 Ultimate</b></a>
         </td>
     </tr>
     <tr>
@@ -69,7 +69,7 @@ ht-degree: 77%
 
 ![檢視資產的中繼資料](assets/metadata-view.png)
 
-*圖：若要檢視資產及其中繼資料，請從工具列按一下&#x200B;**[!UICONTROL 詳細資訊]**&#x200B;或按兩下資產。*
+*圖：若要檢視資產及其中繼資料，請從工具列按一下&#x200B;**[!UICONTROL 詳細資訊]**或按兩下資產。*
 
 標題、說明和上傳日期之類的基本中繼資料可在[!UICONTROL 基本]標籤中取得。[!UICONTROL 進階]標籤包含更進階的中繼資料，例如相機型號、鏡頭詳細資訊和地理標籤。[!UICONTROL 標記]標籤會根據影像內容包含自動套用的標記。
 
@@ -85,7 +85,7 @@ ht-degree: 77%
 
 ![檢視資產的智慧型標記](assets/metadata-view-tags.png)
 
-*圖：若要檢視智慧標記，請從工具列按一下&#x200B;**[!UICONTROL 詳細資訊]**&#x200B;或按兩下資產。*
+*圖：若要檢視智慧標記，請從工具列按一下&#x200B;**[!UICONTROL 詳細資訊]**或按兩下資產。*
 
 智慧型標記也包含信賴分數 (以百分比呈現)。這表示與套用標記相關的信賴度。您可以審核自動套用的智慧型標記。
 
@@ -204,7 +204,7 @@ MIME 子類型 > MIME 類型 > `default` 表單 > 現成可用的表單
 
 您也可以導覽至資料夾詳細資料頁面，然後從「**[!UICONTROL 中繼資料表單]**」欄位中選取「**[!UICONTROL 系統對應中繼資料表單]**」，即可從資料夾中刪除已指派的中繼資料表單。
 
-### 使用中繼資料表單的「連結」元件 {#link-component-metadata-form}
+### 使用中繼資料表單中的連結元件 {#link-component-metadata-form}
 
 此連結元件是用來啟用外部 URL，包括儲存連結、版權資訊、聯絡表單等。若要在中繼資料表單上使用連結元件，您需要[設定中繼資料表單](#metadata-forms)。
 
@@ -218,23 +218,23 @@ MIME 子類型 > MIME 類型 > `default` 表單 > 現成可用的表單
 1. 按一下「**[!UICONTROL 儲存]**」以儲存變更。
 
 
-### 使用中繼資料表單中的標籤元件 {#tag-component-metadata-form}
+### 使用中繼資料表單中的標記元件 {#tag-component-metadata-form}
 
-根元素代表標籤的樹狀結構，您可以與資產建立關聯，協助您根據指派給資產的標籤識別資產。 此外，在中繼資料編輯器中設定中繼資料表單時，您可以限制特定分類法的存取權。
+根元素代表可與資產建立關聯之標記的樹狀結構，有助於根據指派給資產的標記來識別該資產。此外，當在中繼資料編輯器中設定中繼資料表單時，您還可以限制特定分類法的存取。
 
-#### 標籤元件設定 {#tags-component-configuration}
+#### 標記元件設定 {#tags-component-configuration}
 
-執行下列步驟來設定標籤元件：
+請執行下列步驟來設定標記元件：
 
-1. 前往中繼資料編輯器，導覽至&#x200B;**[!UICONTROL 標籤]**&#x200B;並將其置於畫布上。
-1. 重新命名畫布上的元件。 若要這麼做，請移至[設定]面板中[!UICONTROL 中繼資料屬性]下的&#x200B;**[!UICONTROL 標籤]**，並新增其識別文字。
-1. 在設定面板的[!UICONTROL 中繼資料屬性]下，搜尋您要指派給元件的中繼資料屬性。
-1. 按一下&#x200B;**[!UICONTROL 限製為特定分類]**&#x200B;以限制分類的根路徑。 要執行此操作，請瀏覽標籤並選擇特定路徑的分類法。
+1. 前往中繼資料編輯器，然後導覽至「**[!UICONTROL 標記]**」，並將其放置在畫布上。
+1. 重新命名畫布上的元件。若要這麼做，請前往「設定」面板中「[!UICONTROL 中繼資料屬性]」下方的「**[!UICONTROL 標籤]**」，並新增用於識別的文字。
+1. 在「設定」面板中的「[!UICONTROL 中繼資料屬性]」下方，搜尋您想要指派給元件的中繼資料屬性。
+1. 按一下「**[!UICONTROL 限制在特定的分類法]**」以限制分類法的根路徑。若要這麼做，請瀏覽標記並選擇特定路徑的分類法。
 1. 按一下「**[!UICONTROL 儲存]**」以儲存變更。
 
-   ![根標籤設定](assets/root-tag-config.png)
+   ![根標記設定](assets/root-tag-config.png)
 
-1. [將中繼資料表單指派給資料夾](#assign-metadata-form-folder)。
+1. [將中繼資料表單指派至資料夾](#assign-metadata-form-folder)。
 
 <!--
 #### Mapping between assets and taxonomy {#asset-taxonomy-mapping}
@@ -248,17 +248,44 @@ See [Assign metadata form to folders](#assign-metadata-form-folder). Follow the 
 1. Click **[!UICONTROL Assign]**.
 -->
 
-若要檢視已設定的根標籤，請前往資產的詳細資訊頁面，其中執行中繼資料表單與根標籤之間的對應。
+若要檢視已設定的根標記，請前往資產的詳細資料頁面，該頁面上會執行中繼資料表單和根標記之間的對應。
+
+## 使用AI產生的智慧標籤增強內容探索 {#ai-smart-tags}
+
+AI不會依賴手動輸入，而是自動將描述性標籤指派給數位資產。 這些AI產生的標籤可增強中繼資料品質，讓資產更容易搜尋、分類和推薦。 此方法不僅可避免手動標籤，進而提升效率，還可確保大量數位內容的一致性和擴充性。 例如，如果資產是影像，AI可以識別其中的物件、場景、情感，或甚至品牌標誌，並產生相關標籤，例如「日落」、「海灘」、「假期」或「微笑」。 AI產生的內容可運用語意和辭彙搜尋技術來增強資產搜尋。 檢視更多[搜尋Assets](search-assets-view.md)。<!--If the asset is a document, AI reads and interprets the text to assign meaningful keywords that summarize its content—such as "climate change," "policy," or "renewable energy.-->
+
+![增強型智慧標籤](assets/enhanced-smart-tags.png)
+
+### 使用AI產生的智慧標籤 {#using-ai-generated-smart-tags}
+
+<!--[!NOTE]
+>
+>The enhanced smart tags capability is available only for the newly uploaded assets.
+-->
+
+若要使用增強智慧標籤功能，請執行下列步驟：
+
+1. 在[!DNL Experience Manager]介面中，前往所需的資料夾，然後按一下&#x200B;**[!UICONTROL 新增Assets]**。 <!--Alternatively, to update enhanced smart tags in an existing content, click **[!UICONTROL reprocess]**.-->相容的影像檔案格式為`png`、`jpg`、`jpeg`、`psd`、`tiff`、`gif`、`webp`、`crw`、`cr2`、`3fr`、`nef`、`arw`和`bmp`。
+
+1. 等候新上傳的資產處理完畢。 完成後，前往資產詳細資訊。
+
+1. 移至&#x200B;**[!UICONTROL AI產生的]**&#x200B;標籤。 如果[!DNL Experience Manager]版本不相容或未更新，則不會顯示此索引標籤。 需要的最低AEM發行版本為`20626`。 有以下欄位：
+
+   * **[!UICONTROL 產生的標題]：**&#x200B;標題提供簡潔的標題，擷取上傳資產的核心概念，讓您一眼就能輕鬆理解。 新增資產時，如果您提供標題（在`dc:title`中），資產瀏覽檢視中會顯示該標題。 如果保留為空白，則會自動指派AI產生的標題。
+   * **[!UICONTROL 已產生描述]：**&#x200B;描述提供資產相關資訊的簡短摘要，協助使用者和搜尋模組快速掌握其關聯性。
+   * **[!UICONTROL 產生的關鍵字]：**&#x200B;關鍵字是代表資產主要主題的目標辭彙，有助於標籤和內容篩選。
+
+1. [選擇性]如果您覺得遺漏任何相關標籤，可以新增其他標籤或建立自己的標籤。 若要這麼做，請在&#x200B;**[!UICONTROL 產生的關鍵字]**&#x200B;欄位中寫入您的標籤，然後按一下&#x200B;**[!UICONTROL 儲存]**。
 
 ## 後續步驟 {#next-steps}
 
-* [觀看在Assets檢視中管理中繼資料表單的相關影片](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html?lang=zh-Hant)
+* [觀看在Assets檢視中管理中繼資料表單的相關影片](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html)
 
 * 使用資產檢視使用者介面所提供的[!UICONTROL 意見回饋]選項提供產品意見回饋
 
 * 若要提供文件意見回饋，請使用右側邊欄提供的[!UICONTROL 編輯此頁面]![來編輯頁面](assets/do-not-localize/edit-page.png)或[!UICONTROL 記錄問題]![來建立 GitHub 問題](assets/do-not-localize/github-issue.png)
 
-* 聯絡[客戶服務](https://experienceleague.adobe.com/zh-hant?support-solution=General#support)
+* 聯絡[客戶服務](https://experienceleague.adobe.com/?support-solution=General#support)
 
 <!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
 To reuse an existing form to create a form, do one of these:
