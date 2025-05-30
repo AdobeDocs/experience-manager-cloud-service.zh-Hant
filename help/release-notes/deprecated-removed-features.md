@@ -4,9 +4,9 @@ description: 特定於  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 3d294b2b4fbd11f16ee8b0fbb5a9a46ab039dbae
+source-git-commit: 55b7029ccdd0da08566066c02c8f7b8eff1e032f
 workflow-type: tm+mt
-source-wordcount: '2858'
+source-wordcount: '2889'
 ht-degree: 90%
 
 ---
@@ -39,6 +39,7 @@ Adobe 會持續評估產品功能，以逐漸利用更現代化的替代方案�
 | Sites | [SPA 編輯器](/help/implementing/developing/hybrid/introduction.md) | AEM 中用於管理 Headless 內容的首選編輯器為：<br>- [通用編輯器](/help/edge/wysiwyg-authoring/authoring.md)，用於視覺化編輯。<br>- [內容片段編輯器](/help/assets/content-fragments/content-fragments-managing.md)，用於表單型編輯。 |
 | [!DNL Sites] | [JavaScript Use API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [Java Use API](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-htl/content/java-use-api) |
 | [!DNL Sites] | **社交媒體狀態**&#x200B;的體驗片段屬性。 | 此功能規劃於近日移除。 |
+| Sites | [Experience Cloud 設定自動化](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md) | 無 |
 | [!DNL Sites] | 基於範例的簡單內容片段。 | 現在[基於模型的結構化內容片段](/help/assets/content-fragments/content-fragments-models.md)。 |
 | [!DNL Assets] | 處理所擷取影像的 `DAM Asset Update` 工作流程。 | 資產擷取現在使用[資產微服務](/help/assets/asset-microservices-overview.md)。 |
 | [!DNL Assets] | 直接將資產上傳到 [!DNL Experience Manager]。請參閱[已過時的資產上傳 API](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api)。 | 使用[直接二進位上傳](/help/assets/add-assets.md)。如需技術詳細資訊，請參閱[直接上傳 API](/help/assets/developer-reference-material-apis.md#upload-binary)。 |
@@ -48,8 +49,7 @@ Adobe 會持續評估產品功能，以逐漸利用更現代化的替代方案�
 | [!DNL Foundation] | 複寫代理程式管理員畫面的「散發」標籤和複寫 API 無法用來複寫超過 10MB 的內容封裝。 | [管理發佈](/help/operations/replication.md#manage-publication)或[啟用樹狀工作流程步驟](/help/operations/replication.md#tree-activation) |
 | [!DNL Foundation] | 使用自 Adobe Developer Console 專案產生的憑證進行整合，已逐漸不再具備對服務帳戶 (JWT) 認證的支援。自 2024 年 5 月 1 日起，無法在 Adobe Developer Console 中建立新的服務帳戶 (JWT) 認證。現有的服務帳戶 (JWT) 認證在 2025 年 1 月 1 日之前仍可用於已設定的整合，之後將停止運作，且會要求客戶移轉至 OAuth 伺服器對伺服器認證。[了解更多](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console)。 | [移轉](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview)至 OAuth Server-to-Server 憑證。 |
 | [!DNL Foundation] | 用於複寫內容階層的發佈內容樹狀工作流程和相關的發佈內容樹狀工作流程步驟。 | 使用[啟用樹狀工作流程步驟](/help/operations/replication.md#tree-activation)，其效能更佳。 |
-| Sites | [Experience Cloud安裝程式自動化](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md) | 無 |
-
+| [!DNL Foundation] | 使用YUI壓縮/縮制JavaScript使用者端程式庫。 Adobe不打算進一步更新YUI資料庫。 | Adobe建議客戶切換至Google Closure Compiler (GCC)進行實作。 |
 
 ## 移除的功能 {#removed-features}
 
