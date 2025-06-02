@@ -4,19 +4,19 @@ description: 瞭解如何在設定檔案中宣告規則，再使用Cloud Manager
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: ab855192e4b60b25284b19cc0e3a8e9da5a7409c
 workflow-type: tm+mt
-source-wordcount: '1497'
-ht-degree: 4%
+source-wordcount: '1712'
+ht-degree: 3%
 
 ---
 
 
 # 設定內容傳遞網路憑證和身份驗證 {#cdn-credentials-authentication}
 
-Adobe提供的CDN具有多項功能和服務，部分功能和服務需仰賴憑證和驗證，以確保適當等級的企業安全性。 透過在使用Cloud Manager [設定管道](/help/operations/config-pipeline.md)部署的設定檔案中宣告規則，客戶可以自助方式設定以下專案：
+Adobe提供的CDN具有多項功能和服務，部分功能和服務會仰賴憑證和驗證，以確保適當等級的企業安全性。 透過在使用Cloud Manager [設定管道](/help/operations/config-pipeline.md)部署的設定檔案中宣告規則，客戶可以自助方式設定以下專案：
 
-* AdobeCDN用來驗證來自客戶管理CDN之請求的X-AEM-Edge-Key HTTP標題值。
+* Adobe CDN用來驗證來自客戶管理CDN之請求的X-AEM-Edge-Key HTTP標題值。
 * 用來清除CDN快取中資源的API權杖。
 * 透過提交基本驗證表單，可存取受限制內容的使用者名稱/密碼組合清單。
 
@@ -24,13 +24,19 @@ Adobe提供的CDN具有多項功能和服務，部分功能和服務需仰賴憑
 
 有一節說明如何[旋轉金鑰](#rotating-secrets)，這是良好的安全性作法。
 
+>[!NOTE]
+> 定義為環境變數的秘密應視為不可變。 您應建立具有新名稱的新密碼並在設定中參照該密碼，而不是變更其值。 若未這麼做，將會導致秘密更新不可靠。
+
+>[!WARNING]
+>請勿移除CDN設定中參照的環境變數。 這樣做可能會導致更新CDN設定失敗（例如，更新規則或自訂網域和憑證）。
+
 ## 客戶管理的CDN HTTP標頭值 {#CDN-HTTP-value}
 
-如AEM as a Cloud Service[&#128279;](/help/implementing/dispatcher/cdn.md#point-to-point-CDN)頁面中的CDN中所述，客戶可以選擇透過自己的CDN路由流量，這稱為「客戶CDN」（有時也稱為BYOCDN）。
+如AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md#point-to-point-CDN)頁面中的[CDN中所述，客戶可以選擇透過自己的CDN路由流量，這稱為「客戶CDN」（有時也稱為BYOCDN）。
 
-在設定過程中，AdobeCDN和客戶CDN必須同意`X-AEM-Edge-Key` HTTP標頭的值。 此值在傳送至AdobeCDN之前，會先在客戶CDN的每個要求上設定，接著系統會驗證值是否如預期般符合，因此可信任其他HTTP標頭，包括有助於將要求傳送至適當AEM來源的那些標頭。
+在設定過程中，Adobe CDN和客戶CDN必須同意`X-AEM-Edge-Key` HTTP標題的值。 此值在傳送至Adobe CDN之前，會先在客戶CDN的每個要求上設定，接著由CDN驗證值是否如預期般符合，因此可信任其他HTTP標頭，包括有助於將要求傳送至適當AEM來源的標頭。
 
-*X-AEM-Edge-Key*&#x200B;值由名為`cdn.yaml`或類似檔案中的`edgeKey1`和`edgeKey2`屬性參考，位於最上層`config`資料夾的某處。 閱讀[使用設定管道](/help/operations/config-pipeline.md#folder-structure)，以取得資料夾結構以及如何部署設定的詳細資訊。  以下範例說明語法。
+*X-AEM-Edge-Key*&#x200B;值由名為`cdn.yaml`或類似檔案中的`edgeKey1`和`edgeKey2`屬性參考，位於最上層`config`資料夾的某個位置。 閱讀[使用設定管道](/help/operations/config-pipeline.md#folder-structure)，以取得資料夾結構以及如何部署設定的詳細資訊。  以下範例說明語法。
 
 如需進一步偵錯資訊和常見錯誤，請檢查[常見錯誤](/help/implementing/dispatcher/cdn.md#common-errors)。
 
@@ -59,7 +65,7 @@ data:
 
 請參閱[「使用設定管道」](/help/operations/config-pipeline.md#common-syntax)，取得 `data` 節點上方屬性的描述。`kind`屬性值應該是&#x200B;*CDN*，且`version`屬性應該設定為`1`。
 
-如需詳細資訊，請參閱[設定和部署HTTP標頭驗證CDN規則](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule)教學課程步驟。
+如需詳細資訊，請參閱[設定和部署HTTP標頭驗證CDN規則](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule)教學課程步驟。
 
 其他屬性包括：
 
@@ -81,7 +87,7 @@ data:
 
 ### 安全地移轉，以減少流量受阻的風險 {#migrating-safely}
 
-如果您的網站已上線，請謹慎移轉至客戶管理的CDN，因為設定錯誤可能會封鎖公開流量，因為AdobeCDN只會接受具有預期X-AEM-Edge-Key標頭值的請求。 建議您在驗證規則中暫時包含其他條件的情況下，採取此做法，如此一來，只有在包含測試標頭或路徑符合時，才會封鎖請求：
+如果您的網站已上線，請謹慎移轉至客戶管理的CDN，因為設定錯誤可能會封鎖公開流量，這是因為Adobe CDN只會接受具有預期X-AEM-Edge-Key標頭值的請求。 建議您在驗證規則中暫時包含其他條件的情況下，採取此做法，如此一來，只有在包含測試標頭或路徑符合時，才會封鎖請求：
 
 ```
     - name: edge-auth-rule
@@ -158,7 +164,7 @@ data:
 >[!NOTE]
 >在部署參考清除金鑰的組態之前，必須將清除金鑰設定為[機密型別Cloud Manager環境變數](/help/operations/config-pipeline.md#secret-env-vars)。 建議使用至少32個位元組長度的唯一隨機金鑰；例如，Open SSL密碼編譯程式庫可以透過執行命令openssl rand -hex 32來產生隨機金鑰
 
-您可以參考以設定清除金鑰和執行CDN快取清除為重點的[教學課程](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache)。
+您可以參考以設定清除金鑰和執行CDN快取清除為重點的[教學課程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache)。
 
 ## 基本驗證 {#basic-auth}
 
@@ -216,7 +222,9 @@ data:
 
 ## 旋轉密碼 {#rotating-secrets}
 
-1. 不定期變更認證是很好的安全性做法。 雖然清除金鑰使用相同的策略，但還是可以透過邊緣金鑰的範例來達到此目的。
+定期變更認證是良好的安全性做法。 請記住，環境變數不應直接變更，而是應建立新密碼並在設定中參照新名稱。
+
+此使用案例使用邊緣索引鍵的範例說明如下，不過相同的策略也可以用於清除索引鍵。
 
 1. 一開始只定義了`edgeKey1`，在此案例中是參考為`${{CDN_EDGEKEY_052824}}`，這作為建議的慣例，會反映其建立日期。
 
@@ -227,7 +235,6 @@ data:
          type: edge
          edgeKey1: ${{CDN_EDGEKEY_052824}}
    ```
-
 1. 輪換金鑰時，請建立新的Cloud Manager密碼，例如`${{CDN_EDGEKEY_041425}}`。
 1. 在設定中，從`edgeKey2`參照並部署。
 
@@ -249,7 +256,6 @@ data:
          type: edge
          edgeKey2: ${{CDN_EDGEKEY_041425}}
    ```
-
 1. 從Cloud Manager刪除舊密碼參考(`${{CDN_EDGEKEY_052824}}`)並進行部署。
 
 1. 準備好進行下一次輪換時，請遵循相同的程式，不過這次您會新增`edgeKey1`至組態，並參考名為的新Cloud Manager環境密碼，例如`${{CDN_EDGEKEY_031426}}`。
@@ -262,3 +268,47 @@ data:
          edgeKey2: ${{CDN_EDGEKEY_041425}}
          edgeKey1: ${{CDN_EDGEKEY_031426}}
    ```
+
+旋轉在請求標頭中設定的秘密時（例如驗證後端），建議分兩個步驟進行旋轉，以確保標頭值切換時不會出現暫時間隙。
+
+1. 旋轉前的初始設定。 在此狀態下，會將舊金鑰傳送至後端。
+
+   ```
+   requestTransformations:
+     rules:
+       - name: set-api-key-header
+         actions:
+           - type: set
+             reqHeader: x-api-key
+             value ${{API_KEY_1}}
+   ```
+
+1. 將相同的標頭設定兩次，以引入新的索引鍵`API_KEY_2` （新索引鍵應設定在舊索引鍵之後）。 部署此專案後，您會在後端看到新索引鍵。
+
+   ```
+   requestTransformations:
+     rules:
+       - name: set-api-key-header
+         actions:
+           - type: set
+             reqHeader: x-api-key
+             value ${{API_KEY_1}}
+           - type: set
+             reqHeader: x-api-key
+             value ${{API_KEY_2}}
+   ```
+
+1. 從設定中移除舊金鑰`API_KEY_1`。 部署此專案後，您會在後端看到新金鑰，然後可以安全地移除舊金鑰的環境變數。
+
+
+   ```
+   requestTransformations:
+     rules:
+       - name: set-api-key-header
+         actions:
+           - type: set
+             reqHeader: x-api-key
+             value ${{API_KEY_2}}
+   ```
+
+

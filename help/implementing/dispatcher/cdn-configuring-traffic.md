@@ -4,9 +4,9 @@ description: 瞭解如何在設定檔案中宣告規則和篩選器，並使用C
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 9e0217a4cbbbca1816b47f74a9f327add3a8882d
+source-git-commit: ab855192e4b60b25284b19cc0e3a8e9da5a7409c
 workflow-type: tm+mt
-source-wordcount: '1493'
+source-wordcount: '1508'
 ht-degree: 1%
 
 ---
@@ -60,9 +60,11 @@ AEM as a Cloud Service提供可在[Adobe管理的CDN](/help/implementing/dispatc
 
 規則由名稱、條件「when子句」和動作參考。
 
-when子句會根據包括網域、路徑、查詢字串、標頭和Cookie在內的屬性，決定是否評估規則。 各規則型別的語法相同；如需詳細資訊，請參閱「流量篩選規則」文章中的[條件結構區段](/help/security/traffic-filter-rules-including-waf.md#condition-structure)。
+「when」子句會根據包括網域、路徑、查詢字串、標頭和Cookie在內的屬性，決定是否評估規則。 各規則型別的語法相同；如需詳細資訊，請參閱「流量篩選規則」文章中的[條件結構區段](/help/security/traffic-filter-rules-including-waf.md#condition-structure)。
 
 動作節點的詳細資訊因規則型別而異，以下各節將概述這些詳細資訊。
+
+在設定規則中，您可以參考定義為環境變數的密碼（請參閱[設定密碼](/help/implementing/dispatcher/cdn-credentials-authentication.md)）。
 
 ## 要求轉換 {#request-transformations}
 
