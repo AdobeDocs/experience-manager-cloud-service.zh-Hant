@@ -5,10 +5,10 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d35610b204cc2e06fefa93e048c16940cf1c47c
+source-git-commit: d9e067ec7aa9226721853a3e35a8863445a5002e
 workflow-type: tm+mt
-source-wordcount: '849'
-ht-degree: 22%
+source-wordcount: '920'
+ht-degree: 20%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 22%
 
 1. 在「**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**」控制台中，選取程式。
 
-1. 從&#x200B;**概觀**&#x200B;頁面，瀏覽到&#x200B;**環境**&#x200B;畫面。
+1. 從&#x200B;**概觀**&#x200B;頁面瀏覽到&#x200B;**環境**&#x200B;畫面。
 
 1. 按一下左側功能表中的&#x200B;**網域設定**。
 
@@ -62,7 +62,13 @@ Cloud Manager透過客戶管理的(OV/EV) SSL憑證驗證網域所有權。 完�
 
 ### 未安裝網域錯誤 {#domain-not-installed}
 
-此錯誤可能發生在EV/OV憑證的網域驗證期間，即使您已經檢查憑證是否已適當更新。
+<!-- This error may occur during domain validation of the EV/OV certificate even after you have checked that the certificate has been updated appropriately. -->
+
+當您在Cloud Manager中新增網域對應時，可能會遇到以下錯誤訊息：
+
+*網域已安裝在Fastly帳戶中。 請先將它從此處移除，然後再新增至Cloud Service。*
+
+此訊息表示網域目前與其他Fastly帳戶相關聯，通常在Adobe的控制範圍之外。 若要繼續，必須先將網域與其他帳戶解除關聯，才能將其新增至Adobe管理的Cloud Service。 在非Adobe Fastly設定中，當相同的網域已對應到不同的來源時，通常會發生此問題。
 
 #### 錯誤原因 {#cause}
 
