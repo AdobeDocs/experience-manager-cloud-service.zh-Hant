@@ -4,10 +4,10 @@ description: 本教學課程可協助您啟動並執行新的 Adobe Experience M
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 95998daf04ae579ca11896953903852e6140c3a4
-workflow-type: ht
-source-wordcount: '1899'
-ht-degree: 100%
+source-git-commit: 67416999d068af6350748d610e7c1c7b1d991bc4
+workflow-type: tm+mt
+source-wordcount: '1922'
+ht-degree: 98%
 
 ---
 
@@ -188,6 +188,10 @@ AEM Forms 範本可協助您很快開始使用預先設定最適化表單區塊�
 
 ![查詢表單](/help/edge/docs/forms/assets/enquiry-form-microsoft-sharepoint.png)
 
+>[!IMPORTANT]
+>
+>**表單編寫所在的工作表有可命名內容的限制。 只有`helix-default`和`shared-aem`可以做為工作表名稱。**
+
 讓我們從更新欄位標籤開始。 開啟「查詢」表進行編輯，將提交按鈕的標籤變更為`Let's Talk`，並使用 AEM Sidekick 預覽和發佈檔案。
 
 ![查詢表單](/help/edge/assets/enquiry-form-preview-publish.png)
@@ -263,7 +267,7 @@ URL：`https://main--wefinance--wkndform.aem.live/enquiry`
 <!--
 >[!VIDEO](https://video.tv.adobe.com/v/3427789)-->
 
-如果您有現有的 AEM 專案，則可以將最適化表單區塊整合至目前專案中並開始建立表單。
+如果擁有現有的 AEM 專案，您可以將自適應表單區塊整合至目前專案中，並開始建立表單。
 
 >[!NOTE]
 >
@@ -359,7 +363,7 @@ URL：`https://main--wefinance--wkndform.aem.live/enquiry`
 解決潛在問題以確保 GitHub 建置流程順利進行：
 
 * **解析模組路徑錯誤：**
-如果遇到錯誤「無法解析模組路徑 &#39;/scripts/lib-franklin.js&#39;」，請導覽至 [EDS Project]/blocks/forms/form.js 檔案。透過將 lib-franklin.js 檔案更換為 aem.js 檔案來更新匯入語句。
+如果遇到錯誤「無法解析模組路徑 &#39;/scripts/lib-franklin.js&#39;」，請導覽至 [EDS Project]/blocks/forms/form.js 檔案。將 lib-franklin.js 檔案更換為 aem.js 檔案來更新匯入語句。
 
 * **處理 Linting 錯誤：**&#x200B;如果您遇到任何 linting 錯誤，您可以略過不予處理。開啟 [EDS Project]/package.json 檔案並將 &quot;lint&quot; 指令碼從 `"lint": "npm run lint:js && npm run lint:css"` 修改為 `"lint": "echo 'skipping linting for now'"`。儲存檔案並將變更提交至您的 GitHub 專案。
 

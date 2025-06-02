@@ -5,16 +5,16 @@ Keywords: Use form submission service, Submit form using form submission service
 feature: Edge Delivery Services
 Role: User, Developer
 exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
-source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
+source-git-commit: 67416999d068af6350748d610e7c1c7b1d991bc4
 workflow-type: tm+mt
-source-wordcount: '883'
-ht-degree: 1%
+source-wordcount: '906'
+ht-degree: 6%
 
 ---
 
 # 使用Edge Delivery Services Forms的Forms提交服務
 
-<span class="preview">此功能可透過搶先存取計畫使用。 若要要求存取權，請將您的GitHub組織名稱和存放庫名稱從您的官方地址傳送電子郵件至<a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> 。 例如，如果存放庫URL是https://github.com/adobe/abc，組織名稱是adobe，存放庫名稱是abc。</span>
+<span class="preview">您可以透過搶先體驗方案使用這項功能。若要請求存取權，請使用您的官方地址發送電子郵件至 <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>，郵件內容須包含您的 GitHub 組織名稱和存放庫名稱。例如，若存放庫 URL 為 https://github.com/adobe/abc,，則組織名稱為 adobe，存放庫名稱為 abc。</span>
 
 Forms提交服務可讓您將表單提交的資料儲存在任何試算表中(例如OneDrive、SharePoint或Google Sheets)，讓您在自己的試算表平台中輕鬆存取和管理表單資料。
 
@@ -37,7 +37,7 @@ Forms提交服務可讓您將表單提交的資料儲存在任何試算表中(�
 
 ## 設定Forms提交服務
 
-建立以最適化AEM區塊設定的新Forms專案。 請參閱[快速入門 — 開發人員教學課程](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial)文章，瞭解如何建立新的AEM專案。 更新專案中的`fstab.yaml`檔案。 將現有的參考取代為您與`forms@adobe.com`共用的資料夾路徑。
+建立以最適化AEM區塊設定的新Forms專案。 請參閱[快速入門 — 開發人員教學課程](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial)文章，瞭解如何建立新的AEM專案。 更新專案中的`fstab.yaml`檔案。 將現有的參考取代為您與`forms@adobe.com`共用的資料夾路徑。
 
 您可以[手動設定Forms提交服務](#configuring-the-forms-submission-service-manually)或[使用API設定Forms提交服務](#configuring-the-forms-submission-service-using-api)。
 
@@ -47,15 +47,19 @@ Forms提交服務可讓您將表單提交的資料儲存在任何試算表中(�
 
 #### 1.使用表單定義建立表單
 
-使用Google Sheets或Microsoft Excel製作表單。 若要瞭解如何使用Microsoft Excel或Google Sheets中的表單定義來建立表單，[請按一下這裡](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)。
+使用Google Sheets或Microsoft Excel製作表單。 若要瞭解如何使用Microsoft Excel或Google Sheets中的表單定義來建立表單，[請按一下這裡](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)。
 
 以下熒幕擷圖顯示用來建立表單的表單定義：
 
 ![表單定義](/help/forms/assets/form-submission-definition.png)
 
+>[!IMPORTANT]
+>
+>**表單編寫所在的工作表有可命名內容的限制。 只有`helix-default`和`shared-aem`可以做為工作表名稱。**
+
 #### 2.啟用試算表以接受資料。
 
-建立並預覽表單後，請啟用對應的試算表以開始接收資料。 新增工作表做為`incoming`。 您可以[手動啟用試算表以接受資料](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/submit-forms#manually-enable-the-spreadsheet-to-accept-data)。
+建立並預覽表單後，請啟用對應的試算表以開始接收資料。 新增工作表做為`incoming`。 您可以[手動啟用試算表以接受資料](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/submit-forms#manually-enable-the-spreadsheet-to-accept-data)。
 
 ![傳入工作表](/help/forms/assets/form-submission-incoming-sheet.png)
 
@@ -69,7 +73,7 @@ Forms提交服務可讓您將表單提交的資料儲存在任何試算表中(�
 
 1. 在Excel或Google工作表中，按一下右上角的&#x200B;**共用**&#x200B;按鈕。
 1. 新增`forms@adobe.com`帳戶並
-按一下眼睛圖示，選取&#x200B;**編輯**&#x200B;存取權，然後按一下&#x200B;**傳送**。
+按一下眼睛圖示，選取**編輯**&#x200B;存取權，然後按一下&#x200B;**傳送**。
 
    ![共用傳入工作表](/help/forms/assets/form-submission-share-incoming.png)
 
@@ -146,17 +150,18 @@ Forms提交服務可讓您將表單提交的資料儲存在任何試算表中(�
 
 
 >[!BEGINTABS]
->[!TAB 適用於macOS的] 
 
-    &grave;&grave;json
+>適用於macOS]的[!TAB 
+
+    ``json
     curl -X POST &quot;https://forms.adobe.com/adobe/forms/af/submit/{id}&quot; \
-     — 標頭&grave;Content-Type： application/json&quot; \
-     — 標頭&grave;x-adobe-routing： tier=live，bucket=main—[site/repository]—[organization]&quot; \
-     — 資料&grave;&lbrace;
-    `data`： &lbrace;
-    &grave;startDate&quot;： &quot;2025-01-10&quot;，
-    &grave;endDate&quot;： &quot;2025-01-25&quot;，
-    &grave;destination&quot;澳洲」，
+     — 標頭`Content-Type： application/json&quot; \
+     — 標頭`x-adobe-routing： tier=live，bucket=main—[site/repository]—[organization]&quot; \
+     — 資料`{
+    `data`： {
+    `startDate&quot;： &quot;2025-01-10&quot;，
+    `endDate&quot;： &quot;2025-01-25&quot;，
+    `destination&quot;澳洲」，
     「class」：「First Class」，
     「budget」：「2000」，
     「amount」：「1000000」，
@@ -164,14 +169,14 @@ Forms提交服務可讓您將表單提交的資料儲存在任何試算表中(�
     「age」：「35」，
     「subscribe」： null，
     「email」：「mary@gmail.com」
-    &rbrace;
-    &rbrace;&#39;
+    }
+    }&#39;
     
     」&#39;
 
->[!TAB 適用於Windows作業系統的] 
+>適用於Windows作業系統的[!TAB ]
 
-    &grave;&grave;json
+    ``json
     
     curl -X POST &quot;https://forms.adobe.com/adobe/forms/af/submit/{id}&quot; ^
      — 標頭&quot;Content-Type： application/json&quot; ^

@@ -4,10 +4,10 @@ description: 開始使用 AEM Forms 適用的 Edge Delivery Services。快速製
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: efd4fbb38724632865d87b80827611899e2c6d1f
-workflow-type: ht
-source-wordcount: '784'
-ht-degree: 100%
+source-git-commit: 67416999d068af6350748d610e7c1c7b1d991bc4
+workflow-type: tm+mt
+source-wordcount: '807'
+ht-degree: 97%
 
 ---
 
@@ -82,6 +82,10 @@ Ensure a smooth GitHub build process by addressing potential issues:
 1. 開啟建立的試算表並將預設工作表重新命名為 &quot;shared-aem&quot;。
 
    ![將預設試算表重新命名為 &quot;shared-default&quot;](/help/edge/assets/rename-sheet-to-shared-default.png)
+
+   >[!IMPORTANT]
+   >
+   >**表單編寫所在的工作表有可命名內容的限制。 只有`helix-default`和`shared-aem`可以做為工作表名稱。**
 
 1. 若要新增表單欄位，請將列和欄標題插入 &quot;shared-aem&quot; 工作表中。每列應該代表一個 [表單欄位](/help/edge/docs/forms/form-components.md#available-components)，且有定義對應欄[屬性](/help/edge/docs/forms/form-components.md#components-properties)的欄標題。
 
