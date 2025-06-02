@@ -5,10 +5,10 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d9e067ec7aa9226721853a3e35a8863445a5002e
+source-git-commit: 3ecb3f0f49160536ba9abd1261477b0985a03c07
 workflow-type: tm+mt
-source-wordcount: '920'
-ht-degree: 20%
+source-wordcount: '863'
+ht-degree: 19%
 
 ---
 
@@ -64,23 +64,21 @@ Cloud Manager透過客戶管理的(OV/EV) SSL憑證驗證網域所有權。 完�
 
 <!-- This error may occur during domain validation of the EV/OV certificate even after you have checked that the certificate has been updated appropriately. -->
 
-當您在Cloud Manager中新增網域對應時，可能會遇到以下錯誤訊息：
+當您嘗試在Cloud Manager中新增網域對應時，可能會遇到以下錯誤訊息：
 
 *網域已安裝在Fastly帳戶中。 請先將它從此處移除，然後再新增至Cloud Service。*
 
-此訊息表示網域目前與其他Fastly帳戶相關聯，通常在Adobe的控制範圍之外。 若要繼續，必須先將網域與其他帳戶解除關聯，才能將其新增至Adobe管理的Cloud Service。 在非Adobe Fastly設定中，當相同的網域已對應到不同的來源時，通常會發生此問題。
+<!-- This message indicates that the domain is currently associated with a different Fastly account—typically outside of Adobe's control. To proceed, the domain must be disassociated from the other account before it can be added to the Adobe-managed Cloud Service. This issue usually occurs when the same domain is already mapped to a different origin in a non-Adobe Fastly configuration. -->
 
-#### 錯誤原因 {#cause}
-
+**錯誤原因**
 Fastly會將網域鎖定到首先註冊它的帳戶，而其他帳戶必須請求許可權以註冊子網域。 此外，Fastly 只會讓您將一個頂點網域和關聯的子網域指派給一個 Fastly 服務和帳戶。如果您有現有的Fastly帳戶，該帳戶連結了用於AEM Cloud Service網域的相同頂點和子網域，您會看到此錯誤。
 
-#### 錯誤解決 {#resolution}
-
-錯誤可依如下方式修正：
+**錯誤解決**
+錯誤可依下列方式修正：
 
 * 在 Cloud Manager 中安裝網域之前，從現有帳戶中移除頂點和子網域。
 
-* 使用此選項可將頂點網域和所有子網域連結到 AEM as a Cloud Service Fastly 帳戶。如需詳細資訊，請參閱[在 Fastly 文件中使用網域](https://docs.fastly.com/en/guides/working-with-domains)。
+* 使用此選項可將頂點網域和所有子網域連結到 AEM as a Cloud Service Fastly 帳戶。如需詳細資訊，請參閱Fastly檔案中的[使用網域](https://www.fastly.com/documentation/guides/getting-started/domains/working-with-domains/working-with-domains/)。
 
 * 如果您的Apex網域有多個子網域供AEM as a Cloud Service和非AEM網站使用，需要連結到不同的Fastly帳戶，請嘗試在Cloud Manager中安裝網域。 此過程有助於管理不同Fastly帳戶之間的子網域連線。 如果網域安裝失敗，請建立Fastly的客戶支援票證，讓Adobe可以代表您跟進Fastly。
 
