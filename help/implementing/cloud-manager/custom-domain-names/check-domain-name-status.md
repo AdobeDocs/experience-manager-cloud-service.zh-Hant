@@ -5,7 +5,7 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3ecb3f0f49160536ba9abd1261477b0985a03c07
+source-git-commit: 68da11037cb3572a6f869fe8bd6a898e0aad87ec
 workflow-type: tm+mt
 source-wordcount: '863'
 ht-degree: 19%
@@ -58,7 +58,7 @@ Cloud Manager透過客戶管理的(OV/EV) SSL憑證驗證網域所有權。 完�
 
 ## 網域名稱錯誤 {#domain-error}
 
-以下是一些常見的網域名稱驗證錯誤及其一般解析度。
+以下是常見的網域名稱驗證錯誤及其典型解決方案。
 
 ### 未安裝網域錯誤 {#domain-not-installed}
 
