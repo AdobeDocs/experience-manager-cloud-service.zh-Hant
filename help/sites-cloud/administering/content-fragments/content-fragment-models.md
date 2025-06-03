@@ -64,9 +64,9 @@ Adobe Experience Manager (AEM) as a Cloud Service中的內容片段模型定義[
 
         >[!CAUTION]
         >
-        手動更新資料型別的屬性&#x200B;**Property Name**&#x200B;時，名稱必須僅包含&#x200B;*個* A-Z、a-z、0-9和下劃線「_」作為特殊字元。
+        >手動更新資料型別的屬性&#x200B;**Property Name**&#x200B;時，名稱必須僅包含&#x200B;*個* A-Z、a-z、0-9和下劃線「_」作為特殊字元。
         >
-        如果在舊版AEM中建立的模型包含非法字元，請移除或更新這些字元。
+        >如果在舊版AEM中建立的模型包含非法字元，請移除或更新這些字元。
 
      例如：
 
@@ -98,9 +98,9 @@ Adobe Experience Manager (AEM) as a Cloud Service中的內容片段模型定義[
 
   >[!NOTE]
   >
-  文字區域是否為RTF、純文字或Markdown，是由屬性&#x200B;**預設型別**&#x200B;在模型中定義。
+  >文字區域是否為RTF、純文字或Markdown，是由屬性&#x200B;**預設型別**&#x200B;在模型中定義。
   >
-  此格式無法從[內容片段編輯器](/help/sites-cloud/administering/content-fragments/authoring.md)變更，只能從模型變更。
+  >此格式無法從[內容片段編輯器](/help/sites-cloud/administering/content-fragments/authoring.md)變更，只能從模型變更。
 
 * **數字**
    * 新增數值欄位
@@ -137,7 +137,7 @@ Adobe Experience Manager (AEM) as a Cloud Service中的內容片段模型定義[
 
   >[!NOTE]
   >
-  UUID是存放庫專屬的。 如果您使用[內容複製工具](/help/implementing/developing/tools/content-copy.md)來複製內容片段，將會在目標環境中重新計算UUID。
+  >UUID是存放庫專屬的。 如果您使用[內容複製工具](/help/implementing/developing/tools/content-copy.md)來複製內容片段，將會在目標環境中重新計算UUID。
 
 * **內容參考**
    * 參考任何型別的其他內容；可用於[建立巢狀內容](#using-references-to-form-nested-content)
@@ -154,7 +154,7 @@ Adobe Experience Manager (AEM) as a Cloud Service中的內容片段模型定義[
 
   >[!NOTE]
   >
-  UUID是存放庫專屬的。 如果您使用[內容複製工具](/help/implementing/developing/tools/content-copy.md)來複製內容片段，將會在目標環境中重新計算UUID。
+  >UUID是存放庫專屬的。 如果您使用[內容複製工具](/help/implementing/developing/tools/content-copy.md)來複製內容片段，將會在目標環境中重新計算UUID。
 
 * **JSON物件**
    * 允許內容片段作者在片段的對應元素中輸入JSON語法。
@@ -169,7 +169,7 @@ Adobe Experience Manager (AEM) as a Cloud Service中的內容片段模型定義[
 
      >[!NOTE]
      >
-     此資料型別僅用於格式設定，AEM GraphQL結構描述會忽略此資料型別。
+     >此資料型別僅用於格式設定，AEM GraphQL結構描述會忽略此資料型別。
 
 ## 屬性（資料型別） {#properties}
 
@@ -181,19 +181,19 @@ Adobe Experience Manager (AEM) as a Cloud Service中的內容片段模型定義[
 
   >[!CAUTION]
   >
-  如果在舊版AEM中建立的模型包含非法字元，請移除或更新這些字元。
+  >如果在舊版AEM中建立的模型包含非法字元，請移除或更新這些字元。
 
 * **呈現為**
 
   在片段中實現/轉譯欄位的各種選項。 這通常可讓您定義作者將看到欄位的單一例項，還是允許建立多個例項。 使用&#x200B;**多個欄位**&#x200B;時，您可以定義專案的最小和最大數量 — 如需詳細資訊，請參閱[驗證](#validation)。
 
 * **欄位標籤**
-輸入**欄位標籤**&#x200B;會自動產生&#x200B;**屬性名稱**，然後可視需要手動更新。
+輸入&#x200B;**欄位標籤**&#x200B;會自動產生&#x200B;**屬性名稱**，然後可視需要手動更新。
 
 * **驗證**
-基本驗證可由機制使用，例如**Required**&#x200B;屬性。 有些資料型別有額外的驗證欄位。 如需詳細資訊，請參閱[驗證](#validation)。
+基本驗證可由機制使用，例如&#x200B;**Required**&#x200B;屬性。 有些資料型別有額外的驗證欄位。 如需詳細資訊，請參閱[驗證](#validation)。
 
-* 對於「多行」 **資料類型** ，可將「預設類型 **** 」定義為：
+* 對於「多行」 **資料類型** ，可將「預設類型 **&#x200B;**&#x200B;」定義為：
 
    * **RTF格式**
    * **Markdown**
@@ -212,11 +212,11 @@ Adobe Experience Manager (AEM) as a Cloud Service中的內容片段模型定義[
 
   >[!NOTE]
   >
-  確保每個語言根的唯一性。
+  >確保每個語言根的唯一性。
 
   >[!NOTE]
   >
-  變數可以有與相同片段變數相同的&#x200B;*唯一*&#x200B;值，但與其他片段變數中使用的值不同。
+  >變數可以有與相同片段變數相同的&#x200B;*唯一*&#x200B;值，但與其他片段變數中使用的值不同。
 
 * 如需特定資料型別及其屬性的詳細資訊，請參閱&#x200B;**[內容參考](#content-reference)**。
 
@@ -272,28 +272,28 @@ Adobe Experience Manager (AEM) as a Cloud Service中的內容片段模型定義[
 
      >[!NOTE]
      >
-     當您透過GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)使用內容片段的[Headless內容傳遞時，此方法特別令人感興趣。
+     >當您透過GraphQL[&#128279;](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)使用內容片段的Headless內容傳遞時，此方法特別令人感興趣。
    * 可以為一個或多個參考（在產生的片段中）設定。
 
 >[!NOTE]
 >
-請參閱[升級您的UUID參考內容片段](/help/headless/graphql-api/uuid-reference-upgrade.md)，以取得有關內容/片段參考和內容/片段參考(UUID)以及升級為UUID型資料型別的進一步資訊。
+>請參閱[升級您的UUID參考內容片段](/help/headless/graphql-api/uuid-reference-upgrade.md)，以取得有關內容/片段參考和內容/片段參考(UUID)以及升級為UUID型資料型別的進一步資訊。
 
 >[!NOTE]
 >
-AEM針對下列專案提供週期性保護：
+>AEM針對下列專案提供週期性保護：
 >
-* 內容參照
-這可防止使用者新增對目前片段的引用，並可能導致空白的片段引用選取器對話方塊。
+>* 內容參照
+>這可防止使用者新增對目前片段的引用，並可能導致空白的片段引用選取器對話方塊。
 >
-* GraphQL中的片段參考
-如果您建立深層查詢，且該查詢傳回多個互相參照的內容片段，則它會在第一次出現時傳回null。
+>* GraphQL中的片段參考
+>如果您建立深層查詢，且該查詢傳回多個互相參照的內容片段，則它會在第一次出現時傳回null。
 
 >[!CAUTION]
 >
-如果要查詢多個引用的片段，則建議不要讓各種片段模式具有名稱相同，但型別不同的欄位名稱。
+>如果要查詢多個引用的片段，則建議不要讓各種片段模式具有名稱相同，但型別不同的欄位名稱。
 >
-如需詳細資訊，請參閱搭配內容片段使用的[AEM GraphQL API — 限制](/help/headless/graphql-api/content-fragments.md#limitations)
+>如需詳細資訊，請參閱搭配內容片段使用的[AEM GraphQL API — 限制](/help/headless/graphql-api/content-fragments.md#limitations)
 
 ### 內容參考 {#content-reference}
 
@@ -304,16 +304,16 @@ AEM針對下列專案提供週期性保護：
 * **根路徑**，指定或代表要儲存任何參考內容的位置
   >[!NOTE]
   >
-  如果您想在使用內容片段編輯器時直接在此欄位上傳和參考影像，則必須使用此選項。
+  >如果您想在使用內容片段編輯器時直接在此欄位上傳和參考影像，則必須使用此選項。
   >
-  如需詳細資訊，請參閱[參考影像](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images)。
+  >如需詳細資訊，請參閱[參考影像](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images)。
 
 * 可參考的內容型別
   >[!NOTE]
   >
-  如果您想要在使用內容片段編輯器時直接上傳和參考此欄位中的影像，這些必須包含&#x200B;**影像**。
+  >如果您想要在使用內容片段編輯器時直接上傳和參考此欄位中的影像，這些必須包含&#x200B;**影像**。
   >
-  如需詳細資訊，請參閱[參考影像](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images)。
+  >如需詳細資訊，請參閱[參考影像](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images)。
 
 * 檔案大小限制
 * 如果參照影像：
@@ -347,7 +347,7 @@ type CompanyModel {
 
 >[!NOTE]
 >
-片段參考對搭配GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)使用內容片段的[Headless內容傳遞特別感興趣。
+>片段參考對搭配GraphQL[&#128279;](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)使用內容片段的Headless內容傳遞特別感興趣。
 
 除了標準屬性之外，您還可以定義：
 
@@ -373,6 +373,6 @@ type CompanyModel {
 
 >[!NOTE]
 >
-已建立重複保護機制。 它禁止使用者在片段參考中選取目前的內容片段，並可能導致空白的片段參考選擇器對話方塊。
+>已建立重複保護機制。 它禁止使用者在片段參考中選取目前的內容片段，並可能導致空白的片段參考選擇器對話方塊。
 >
-GraphQL中也有片段參考的週期性保護。 如果您在兩個互相參照的內容片段間建立深層查詢，則會傳回null。
+>GraphQL中也有片段參考的週期性保護。 如果您在兩個互相參照的內容片段間建立深層查詢，則會傳回null。
