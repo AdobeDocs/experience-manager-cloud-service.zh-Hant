@@ -4,10 +4,10 @@ description: 內容複製工具可讓使用者根據需求，從AEM as a Cloud S
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: fef97af53726d45cae36e2c9c6a5d82aa2f872c2
+source-git-commit: cf2f64dec2ff39ea237dd092b3049bf9b8cd40e7
 workflow-type: tm+mt
-source-wordcount: '1286'
-ht-degree: 36%
+source-wordcount: '1321'
+ht-degree: 35%
 
 ---
 
@@ -109,7 +109,7 @@ ht-degree: 36%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和計畫。
 
-1. 從&#x200B;**概觀**&#x200B;頁面，瀏覽到&#x200B;**環境**&#x200B;畫面。
+1. 從&#x200B;**概觀**&#x200B;頁面瀏覽到&#x200B;**環境**&#x200B;畫面。
 
 1. 從&#x200B;**環境**&#x200B;畫面瀏覽&#x200B;**內容集**&#x200B;頁面。
 
@@ -146,7 +146,7 @@ ht-degree: 36%
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和計畫。
 
-1. 從&#x200B;**概觀**&#x200B;頁面，瀏覽到&#x200B;**環境**&#x200B;畫面。
+1. 從&#x200B;**概觀**&#x200B;頁面瀏覽到&#x200B;**環境**&#x200B;畫面。
 
 1. 從&#x200B;**環境**&#x200B;畫面瀏覽&#x200B;**複製內容活動**&#x200B;頁面。
 
@@ -200,3 +200,4 @@ ht-degree: 36%
 * 內容複製工具沒有版本設定功能，且自上次內容復製作業以來，無法自動在內容集中的來源環境中偵測修改的內容或建立的內容。
    * 如果您只想使用內容變更來更新目的地環境，則自上次內容復製作業以來，您必須建立內容集。 然後，指定自上次內容復製作業以來進行變更的來源例項上的路徑。
 * 版本資訊不包含在內容副本中。
+* [內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)可以根據通用唯一識別碼(UUID)指定參考欄位。 此類UUID是存放庫專屬的，因此在複製內容片段時，內容複製工具會在目標環境中重新計算這些UUID。
