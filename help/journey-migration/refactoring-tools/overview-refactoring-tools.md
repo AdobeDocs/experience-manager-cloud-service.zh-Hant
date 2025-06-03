@@ -14,7 +14,7 @@ ht-degree: 2%
 >id="aemcloud_rs_overview"
 >title="概觀"
 >abstract="重構工具是由Adobe開發的解決方案，可協助重構現有的AEM專案，以與AEM as a Cloud Service相容。 這些工具會透過Cloud Acceleration Manager (CAM)來執行，並自動化重要的現代化工作。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html" text="準則和最佳做法"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=zh-Hant" text="準則和最佳做法"
 
 # 重構工具快速入門 {#getting-started-refactoring-tools}
 
