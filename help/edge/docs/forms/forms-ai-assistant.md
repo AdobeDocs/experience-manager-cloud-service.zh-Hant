@@ -5,22 +5,26 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: 67416999d068af6350748d610e7c1c7b1d991bc4
+source-git-commit: d3ade6ee9216b44b55d6808d8acffe83f1e263c9
 workflow-type: tm+mt
-source-wordcount: '1657'
-ht-degree: 2%
+source-wordcount: '2061'
+ht-degree: 1%
 
 ---
+
 
 # AEM Forms的AI助理(Forms Experience Builder)
 
 >[!NOTE]
 >
 >
-> AEM Forms的AI助理(Forms Experience Builder)功能可在率先採用者方案下使用。 如果您有興趣，請從您的工作地址快速傳送電子郵件至mailto:aem-forms-ea@adobe.com，以請求存取功能。
+> 適用於AEM Forms的AI助理(Forms Experience Builder)功能可在&#x200B;**早期採用者方案**&#x200B;下使用。 如果您有興趣，請從您的工作地址快速傳送電子郵件至mailto:aem-forms-ea@adobe.com，以請求存取功能。
 
+>[!IMPORTANT]
+>
+> **檔案可能會有所變更**：此檔案目前正針對產品進行測試，可能會有更新和修訂。 隨著適用於AEM Forms的AI Assistant在早期採用者計畫期間不斷演化，功能、命令和範例可能會發生變化。
 
-AEM Forms的AI Assistant (Forms Experience Builder)透過自然語言提示簡化常見的表單建置工作，進而增強您的撰寫體驗。 此編輯器可用於Forms Manager、Adaptive Forms Editor和Universal Editor，可支援建立和設定動作，讓您更聰明、更快速地建置。 本指南將幫助您開始使用並充分利用其功能。
+AEM Forms的AI Assistant (Forms Experience Builder)透過自然語言提示簡化常見的表單建置工作，進而增強您的撰寫體驗。 它適用於Forms Management UI、Adaptive Forms Editor和Universal Editor，可支援建立和設定動作，讓您更聰明、更快速地建置。 本指南將幫助您開始使用並充分利用其功能。
 
 ## 快速入門
 
@@ -30,7 +34,7 @@ AEM Forms的AI Assistant (Forms Experience Builder)透過自然語言提示簡�
 
 您可以從AEM Forms中的三個不同位置存取AI助理：
 
-1. **Forms Manager**
+1. **Forms管理UI**
    - 導覽至： 「Adobe Experience Manager > Forms > Forms與檔案」
    - 尋找介面左側的AI助理圖示
    - 按一下圖示以開啟AI助理面板
@@ -57,6 +61,7 @@ AI Assistant會根據您目前的位置和任務調整其功能，為每個內�
 - 只要以自然語言輸入您的要求即可。
 - 使用`/`檢視可用命令或快速動作的清單。
 - 當您想要助理員設定或更新特定欄位時，請使用`@fieldName` （例如`@firstName`、`@emailAddress`）參考特定表單欄位。
+- 您可以上傳影像、PDF、Figma檔案或其他設計資產，以協助AI助理更清楚瞭解您的需求。
 
 
 ### 快速入門
@@ -72,13 +77,13 @@ AI Assistant會根據您目前的位置和任務調整其功能，為每個內�
 
 | 指令 | 說明 | 用途 | 使用內容 | 範例 | 主要功能 |
 |---------|-------------|---------|---------------|----------|--------------|
-| /create-form | 在Forms Manager或Forms編輯器中開始新表單 | 從頭開始建立全新表單 | Forms Manager，最適化Forms編輯器 | /create-form客戶意見調查 | 提供表單結構的選項並建立表單 |
-| /add-form | 在通用編輯器中新增表單 | 在通用編輯器中新增表單區塊或元件 | 適用於Edge Delivery Services的通用編輯器 | /add-form連絡人表單，包含名稱及電子郵件 | 插入表單區塊，適用於區塊式編輯 |
+| /create-form | 在Forms管理UI或Forms編輯器中開始新表單 | 從頭開始建立全新表單 | Forms管理UI、最適化Forms編輯器 | /create-form以附加的PDF為基礎的客戶意見調查 | 提供表單結構的選項並建立表單。 **支援設計參考的附件** |
+| /add-form | 在通用編輯器中新增表單 | 在通用編輯器中新增表單區塊或元件 | 適用於Edge Delivery Services的通用編輯器 | /add-form連絡人表單，包含名稱及電子郵件 | 插入表單區塊，適用於區塊式編輯。 **支援佈局指南的附件** |
 | /update-layout | 將表單版面變更為摺疊式功能表、定位點式、精靈或單頁回應式設計 | 修改整體結構版面配置與導覽模式 | 所有編輯環境 | /update-layout精靈，包含3個步驟 | 摺疊面板、標籤、精靈、單頁回應式選項 |
-| /update-field | 修改現有表單欄位的屬性和設定 | 變更欄位屬性，例如，標籤、驗證、格式、行為 | 所有編輯環境 | /update-field@email數必須搭配驗證 | 標籤、驗證規則、欄位型別、預設值、可見度 |
+| /update-field | 修改現有表單欄位的屬性和設定 | 變更欄位屬性，例如，標籤、驗證、格式、行為 | 所有編輯環境 | /update-field@email數必須搭配驗證 | 標籤、驗證規則、欄位型別、預設值、可見度。 **支援欄位設計範例的附件** |
 | /create-rule | 為表單建立動態行為和條件式邏輯 | 實作商業邏輯、計算、條件式互動 | 所有編輯環境 | /create-rule在@maritalStatus等於「已婚」時顯示@spouseName | 條件式可視性、計算、驗證、值設定 |
-| /create-panel | 建立新面板（群組相關欄位的容器） | 新增結構性容器以邏輯地組織表單欄位 | 所有編輯環境 | /create-panel個人資訊，包括名稱、電子郵件、電話 | 欄位分組、標題、版面配置選項、可摺疊區段 |
-| /add-panel | 在通用編輯器中將影像轉換為表單面板 | 使用AI來分析上傳的影像並轉換為結構化表單面板 | 通用編輯器 | /add-panel從已上傳的表單影像 | 影像辨識、視覺到功能轉換、版面保留 |
+| /create-panel | 建立新面板（群組相關欄位的容器） | 新增結構性容器以邏輯地組織表單欄位 | 所有編輯環境 | /create-panel個人資訊，包括名稱、電子郵件、電話 | 欄位分組、標題、版面配置選項、可摺疊區段。 **支援面板配置參考的附件** |
+| /add-panel | 在通用編輯器中將影像轉換為表單面板 | 使用AI來分析上傳的影像並轉換為結構化表單面板 | 通用編輯器 | /add-panel從已上傳的表單影像 | 影像辨識、視覺到功能轉換、版面保留。 **需要附件**&#x200B;才能進行影像分析 |
 | /configure-submit | 設定表單提交動作和資料處理 | 定義使用者提交完成的表單時會發生什麼情況 | 所有編輯環境 | /configure-submit傳送電子郵件給`support@company.com` | 電子郵件、REST API、工作流程、試算表、資料庫、Power Automate |
 | /help | 存取AI助理中的協助和檔案 | 提供有關AEM Forms的關聯式說明、指引和答案 | 所有編輯環境 | /help如何建立多步驟表單？ | 功能說明、指南、最佳作法、疑難排解 |
 
@@ -107,7 +112,7 @@ AI Assistant會根據您目前的位置和任務調整其功能，為每個內�
 
 | 環境 | 可用命令 | 特殊功能 |
 |-------------|-------------------|------------------|
-| Forms Manager | /create-form， /help | 表單層級的建立與管理 |
+| Forms管理UI | /create-form， /help | 表單層級的建立與管理 |
 | 最適化Forms編輯器和通用編輯器 | 所有命令 | 完整功能集，詳細設定 |
 
 
@@ -142,17 +147,17 @@ AI Assistant可瞭解廣泛的命令。 以下範例將說明其功能。 請記
 
 | 功能類別 | 說明 | 提示範例 |
 | ------------------------- | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **表單建立** | 從頭開始新表單，或根據說明開始新表單。 | `Create a new form titled 'Employee Onboarding'.` <br> `Generate a customer feedback form with fields for name, email, rating (1-5 stars), and comments.` <br> `Start a simple contact form with name, email, and message fields.` <br> `Design a multi-page registration form for an event.` |
-| **匯入設計** | 將現有設計(影像、Figma、PDF)轉換為AEM表單。 | `Import the form design from this uploaded PDF file.` <br> `Convert the uploaded Figma design into an adaptive form, focusing on the 'User Profile' frame.` <br> `Use this JPEG image of our old paper form to create a new digital version.` <br> `Create a form based on the layout of the attached PNG.` |
-| **新增元件與面板** | 新增各種表單欄位和結構容器（面板）。 | `Add a text input field for 'First Name'.` <br> `Add a 'Personal Details' panel with fields for full name, date of birth, and phone number.` <br> `Insert a checkbox group for 'Interests' with options: Technology, Sports, Music.` <br> `Add a file upload component for 'Resume'.` <br> `Create a repeatable panel named 'WorkExperience' with fields for company, title, and dates.` |
-| **配置調整** | 修改表單版面的結構和外觀。 | `Change the 'Personal Details' panel to a two-column layout.` <br> `Set the overall form layout to a wizard (multi-step) navigation.` <br> `Make the header section span the full width of the form.` <br> `Adjust the spacing between fields in the 'Address' panel to be compact.` <br> `Align all field labels to the left.` |
+| **表單建立** | 從頭開始新表單，或根據說明開始新表單。 | `Create a new form titled 'Employee Onboarding'.` <br> `Generate a customer feedback form with fields for name, email, rating (1-5 stars), and comments.` <br> `Start a simple contact form with name, email, and message fields.` <br> `Design a multi-page registration form for an event.` <br> `Create a form based on the attached PDF template.` |
+| **匯入設計** | 將現有設計(影像、Figma、PDF)轉換為AEM表單。 | `Import the form design from this uploaded PDF file.` <br> `Convert the uploaded Figma design into an adaptive form, focusing on the 'User Profile' frame.` <br> `Use this JPEG image of our old paper form to create a new digital version.` <br> `Create a form based on the layout of the attached PNG.` <br> `Recreate the form shown in the attached screenshot with modern styling.` |
+| **新增元件與面板** | 新增各種表單欄位和結構容器（面板）。 | `Add a text input field for 'First Name'.` <br> `Add a 'Personal Details' panel with fields for full name, date of birth, and phone number.` <br> `Insert a checkbox group for 'Interests' with options: Technology, Sports, Music.` <br> `Add a file upload component for 'Resume'.` <br> `Create a repeatable panel named 'WorkExperience' with fields for company, title, and dates.` <br> `Add a panel matching the layout shown in the attached design mockup.` |
+| **配置調整** | 修改表單版面的結構和外觀。 | `Change the 'Personal Details' panel to a two-column layout.` <br> `Set the overall form layout to a wizard (multi-step) navigation.` <br> `Make the header section span the full width of the form.` <br> `Adjust the spacing between fields in the 'Address' panel to be compact.` <br> `Align all field labels to the left.` <br> `Update the form layout to match the attached wireframe.` |
 | **規則建立與邏輯** | 實作動態行為、計算和條件式可見度。 | `Make the 'Spouse Name' field visible only if 'Marital Status' is selected as 'Married'.` <br> `Calculate the 'Total Amount' by multiplying @quantity and @price.` <br> `Enable the submit button only when the @termsAndConditions checkbox is checked.` <br> `Set the value of @countryCode to '+1' if @country is 'United States'.` <br> `If @age is less than 18, show a message 'Must be 18 or older'.` |
-| **欄位屬性更新** | 修改特定表單欄位（如標籤、預留位置等）的屬性。 | `Change the label of @email to 'Primary Email Address'.` <br> `Set the @comment field to be a multi-line text area.` <br> `Make the @phoneNumber field mandatory.` <br> `Add placeholder text 'Enter your ZIP code' to the @zipCode field.` <br> `Change the @country field to a dropdown and populate it with: USA, Canada, UK, Germany.` <br> `Update the help description for @password to 'Must include an uppercase letter, a number, and be at least 8 characters long.'` <br> `Set the maximum length of the @username field to 15 characters.` <br> `Configure the @dateOfBirth field to use a date picker.` |
+| **欄位屬性更新** | 修改特定表單欄位（如標籤、預留位置等）的屬性。 | `Change the label of @email to 'Primary Email Address'.` <br> `Set the @comment field to be a multi-line text area.` <br> `Make the @phoneNumber field mandatory.` <br> `Add placeholder text 'Enter your ZIP code' to the @zipCode field.` <br> `Change the @country field to a dropdown and populate it with: USA, Canada, UK, Germany.` <br> `Update the help description for @password to 'Must include an uppercase letter, a number, and be at least 8 characters long.'` <br> `Set the maximum length of the @username field to 15 characters.` <br> `Configure the @dateOfBirth field to use a date picker.` <br> `Style the @email field to match the design shown in the attached image.` |
 | **提交動作** | 定義使用者提交表單時會發生什麼情況。 | `Configure the form to submit data to the REST endpoint /api/v2/application-submit.` <br> `Set up an email submission to hr@example.com and sales@example.com on successful submission.` <br> `Trigger an AEM workflow named 'NewLeadProcessing' when this form is submitted.` <br> `On submit, redirect the user to a thank you page at /content/thankyou.html.` |
-| **佈景主題** | 套用現有的AEM Forms主題來設定表單樣式。 | `Apply the 'Modern Business' theme to this form.` <br> `Switch to the 'Accessible Dark' theme.` <br> `Revert to the default canvas theme.` |
+| **佈景主題** | 套用現有的AEM Forms主題來設定表單樣式。 | `Apply the 'Modern Business' theme to this form.` <br> `Switch to the 'Accessible Dark' theme.` <br> `Revert to the default canvas theme.` <br> `Apply styling that matches the brand guidelines shown in the attached style guide.` |
 | **導覽與結構** | 新增導覽元素或重新組織表單部分。 | `Add a 'Next' button to the current panel and a 'Previous' button to the next panel.` <br> `Create a Table of Contents based on the form's panels.` <br> `Move the 'Address' panel to be before the 'Contact Information' panel.` |
 | **驗證** | 設定欄位的特定驗證規則。 | `Set a regex pattern for the @employeeID field to be 'EMP\d{5}'.` <br> `Ensure the @age field only accepts numeric values between 18 and 99.` <br> `Validate the @email field to ensure it is a valid email format.` |
-| **檢閱計畫** （通用編輯器） | 在執行前預覽助理的建議變更。 | `Add a contact form with fields for name, email, subject, and message.` （助理會顯示要建立的元件和屬性計畫，然後按一下[套用]）。 |
+| **檢閱計畫** （通用編輯器） | 在執行前預覽助理的建議變更。 | `Add a contact form with fields for name, email, subject, and message.` (助理會顯示要建立的元件和屬性計畫，然後您按一下[套用]。<br> `Create a form based on the attached design file.` （助理會在實作前分析附件並顯示詳細計畫）。 |
 
 ## 取得最佳結果的最佳實務
 
@@ -184,7 +189,7 @@ AI Assistant可瞭解廣泛的命令。 以下範例將說明其功能。 請記
 
 ### 如何尋求協助：
 
-1. 在Forms Manager或最適化Forms編輯器中開啟AI助理。
+1. 在Forms Management UI或最適化Forms編輯器中開啟AI助理。
 2. 以自然語言輸入您的問題（例如「如何新增可重複的面板？」）。
 3. 助理員會回應如下：
    - 逐步指示。
@@ -201,7 +206,7 @@ AI Assistant可瞭解廣泛的命令。 以下範例將說明其功能。 請記
 ## 疑難排解常見問題
 
 - **助理未回應：**
-   - 確保您在支援的環境中主動工作(Forms Manager、Adaptive Forms Editor或Universal Editor)。
+   - 確保您在支援的環境中主動工作(Forms管理UI、Adaptive Forms編輯器或Universal Editor)。
    - 檢查您的網際網路連線。
    - 請嘗試關閉AI助理面板再重新開啟。
 
@@ -231,3 +236,65 @@ AI Assistant可瞭解廣泛的命令。 以下範例將說明其功能。 請記
 ## 相關內容
 
 [AEM Forms AI助理 — 提示程式庫](/help/edge/docs/forms/ai-assistant-prompt-library.md)
+
+## 使用附件
+
+AI Assistant支援檔案附件，以增強您的表單建立和設定體驗。 您可以附加各種檔案型別，以提供要轉換的視覺內容、設計參照或現有表單。
+
+### 支援的附件型別
+
+| 檔案類型 | 使用案例 | 支援附件的命令 | 範例 |
+|-----------|-----------|-----------------------------------|----------|
+| **影像** (PNG、JPG、JPEG、GIF) | 表單版面參考、UI模型、紙張表單掃描 | /create-form， /add-form， /create-panel， /add-panel， /update-field | 上傳所需版面的熒幕擷圖 |
+| **PDF檔案** | 要轉換的現有表單，設計規格 | /create-form， /add-form， /create-panel， /add-panel | 轉換PDF應用程式表單 |
+| **Figma檔案** | 設計系統參考、UI原型 | /create-form， /add-form， /create-panel | 匯入圖形設計框架 |
+| **設計檔案** (Sketch、Adobe XD匯出) | 視覺化設計參考 | /create-form， /add-form， /create-panel | 參考設計系統元件 |
+
+### 如何使用附件
+
+1. **附加在之前或使用您的命令：**
+
+   - 按一下AI助理介面中的附件圖示
+   - 從裝置選取檔案
+   - 輸入參考附加檔案的指令
+
+2. **在命令中參考附件：**
+
+   ```
+   /create-form based on the attached PDF application form
+   /add-panel using the layout shown in the uploaded image
+   /create-panel following the design in the attached Figma file
+   /update-field @email to match the style in the attached screenshot
+   ```
+
+3. **多個附件：**
+
+   - 您可以附加多個檔案以供比較或參考
+   - 指定要使用的附件：「使用第一個附加的影像」或「根據PDF檔案」
+
+### 附件最佳實務
+
+- **清晰、高品質的影像：**&#x200B;確保上傳的影像清晰易讀，以便進行AI分析
+- **相關檔案名稱：**&#x200B;使用描述性檔案名稱來協助AI瞭解內容
+- **單一焦點：**&#x200B;每個附件都應專注於一個特定方面（版面配置、欄位設計等）
+- **支援的格式：**&#x200B;請遵循常用格式(PNG、JPG、PDF)以獲得最佳相容性
+- **檔案大小：**&#x200B;將附件保持在10MB以下，以獲得最佳處理速度
+
+### 範例附件工作流程
+
+**轉換紙張表單：**
+
+1. 清晰的掃描或拍攝紙張表單
+2. 上傳影像檔案
+3. 使用命令： `/create-form based on the attached form image, converting all fields to digital equivalents`
+
+**符合設計系統：**
+
+1. 匯出或熒幕擷圖相關的設計元件
+2. 附加設計參考
+3. 使用命令： `/create-panel following the visual style and layout shown in the attached design`
+
+**欄位樣式參考：**
+
+1. 附加所需欄位外觀的熒幕擷圖
+2. 使用命令： `/update-field @email to match the styling and layout shown in the attached image`
