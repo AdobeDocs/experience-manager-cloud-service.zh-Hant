@@ -4,9 +4,9 @@ description: 瞭解Adobe Experience Manager HTTP API支援內容片段，這是A
 feature: Content Fragments, Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
 role: User, Admin
-source-git-commit: 04d1f4f312c9cd256430a2134b308e45dde2c4d7
+source-git-commit: 1995c84bb669fd52ecd53c7e695acc518a5226e8
 workflow-type: tm+mt
-source-wordcount: '1859'
+source-wordcount: '1857'
 ht-degree: 14%
 
 ---
@@ -17,14 +17,14 @@ ht-degree: 14%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/assets-api-content-fragments.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/assets-api-content-fragments.html) |
 | AEM as a Cloud Service  | 本文章 |
 
 >[!CAUTION]
 >
 >Assets HTTP API中的內容片段支援現在[已棄用](/help/release-notes/deprecated-removed-features.md)。
 >
->已由[OpenAPI的內容片段傳送](/help/headless/aem-content-fragment-delivery-with-openapi.md)以及[內容片段和內容片段模型管理OpenAPI](/help/headless/content-fragment-openapis.md)取代。
+>已由[使用OpenAPI的內容片段傳送](/help/headless/aem-content-fragment-delivery-with-openapi.md)以及[內容片段和內容片段模型管理OpenAPI](/help/headless/content-fragment-openapis.md)取代。
 
 瞭解Assets HTTP API支援內容片段，這是Adobe Experience Manager (AEM) Headless傳送功能的重要一環。
 
@@ -53,7 +53,7 @@ ht-degree: 14%
 
 例如，[單頁應用程式(SPA)](/help/implementing/developing/hybrid/introduction.md) （以框架為基礎或自訂）需要透過HTTP API提供的內容，通常為JSON格式。
 
-雖然[AEM核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)提供可自訂的API，可提供此用途的必要讀取作業，並可自訂其JSON輸出，但實作時確實需要AEM WCM （Web內容管理）技術。 這是因為它們必須在以專用的AEM範本為基礎的頁面中託管。 並非所有SPA開發組織都能直接存取這些知識。
+雖然[AEM核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)提供可自訂的API，可提供此用途的必要讀取作業，並可自訂其JSON輸出，但實作時確實需要AEM WCM （Web內容管理）技術。 這是因為它們必須在以專用的AEM範本為基礎的頁面中託管。 並非所有SPA開發組織都能直接存取這些知識。
 
 此時可使用Assets REST API。 它可讓開發人員直接存取資產（例如影像和內容片段），而不需要先將資產內嵌在頁面中，並以序列化JSON格式傳送其內容。
 
@@ -170,8 +170,8 @@ HTTP 方法決定要執行的操作：
 >
 >如需詳細資訊，請參閱：
 >
->* [CORS/AEM 說明](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=zh-Hant)
->* [影片 — 使用AEM開發CORS (04:06)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=zh-Hant)
+>* [CORS/AEM 說明](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html)
+>* [影片 — 使用AEM開發CORS (04:06)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html)
 >
 
 在有特定驗證需求的環境中，建議使用OAuth。
@@ -383,4 +383,4 @@ Assets可以有多個轉譯。 這些通常會顯示為子實體，其中一個�
 如需詳細資訊，請參閱：
 
 * [Assets HTTP API檔案](/help/assets/mac-api-assets.md)
-* [AEM Gem工作階段： OAuth](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-oauth-server-functionality-in-aem.html?lang=zh-Hant)
+* [AEM Gem工作階段： OAuth](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-oauth-server-functionality-in-aem.html)

@@ -4,12 +4,13 @@ description: 瞭解如何使用OpenAPI進行tAEM內容片段傳送
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: b298db37-1033-4849-bc12-7db29fb77777
-source-git-commit: 163964a7183996226b14f3c803afa4c5bd58f848
+source-git-commit: 1995c84bb669fd52ecd53c7e695acc518a5226e8
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '475'
+ht-degree: 3%
 
 ---
+
 
 # 透過 OpenAPI 傳遞 AEM 內容片段 {#aem-content-fragment-delivery-with-openapi}
 
