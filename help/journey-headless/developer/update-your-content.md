@@ -50,7 +50,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 為內容片段的結構化內
 
 >[!NOTE]
 >
->Assets HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)中的[內容片段支援現在[已棄用](/help/release-notes/deprecated-removed-features.md)。 已由[OpenAPI的內容片段傳送](/help/headless/aem-content-fragment-delivery-with-openapi.md)以及[內容片段和內容片段模型管理OpenAPI](/help/headless/content-fragment-openapis.md)取代。
+>Assets HTTP API[&#128279;](/help/assets/content-fragments/assets-api-content-fragments.md)中的內容片段支援現在[已棄用](/help/release-notes/deprecated-removed-features.md)。 已由[OpenAPI的內容片段傳送](/help/headless/aem-content-fragment-delivery-with-openapi.md)以及[內容片段和內容片段模型管理OpenAPI](/help/headless/content-fragment-openapis.md)取代。
 
 ## 下一步 {#whats-next}
 

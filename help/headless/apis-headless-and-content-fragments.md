@@ -30,7 +30,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 為內容片段的結構化內
 
 >[!NOTE]
 >
->Assets HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)中的[內容片段支援現在[已棄用](/help/release-notes/deprecated-removed-features.md)。 已由[使用OpenAPI的內容片段傳送](/help/headless/aem-content-fragment-delivery-with-openapi.md)以及[內容片段和內容片段模型管理OpenAPI](/help/headless/content-fragment-openapis.md)取代。
+>Assets HTTP API[&#128279;](/help/assets/content-fragments/assets-api-content-fragments.md)中的內容片段支援現在[已棄用](/help/release-notes/deprecated-removed-features.md)。 已由[使用OpenAPI的內容片段傳送](/help/headless/aem-content-fragment-delivery-with-openapi.md)以及[內容片段和內容片段模型管理OpenAPI](/help/headless/content-fragment-openapis.md)取代。
 
 ## REST與GraphQL {#rest-vs-graphql}
 
@@ -40,7 +40,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 為內容片段的結構化內
 
 * 簡單性
 
-   * 開發人員通常（會）熟悉HTTP和REST。 根據API報告](https://www.postman.com/state-of-api/)的[Postman狀態，有高比例的開發人員使用REST。
+   * 開發人員通常（會）熟悉HTTP和REST。 根據API報告[&#128279;](https://www.postman.com/state-of-api/)的Postman狀態，有高比例的開發人員使用REST。
 
    * 透過簡單而熟悉。 使用REST時，不會出現關於誰擁有查詢以及誰擁有應用程式的組織問題，而GraphQL則可能出現這些問題。
 
