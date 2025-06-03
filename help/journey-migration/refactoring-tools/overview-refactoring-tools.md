@@ -14,7 +14,7 @@ ht-degree: 2%
 >id="aemcloud_rs_overview"
 >title="概觀"
 >abstract="重構工具是由Adobe開發的解決方案，可協助重構現有的AEM專案，以與AEM as a Cloud Service相容。 這些工具會透過Cloud Acceleration Manager (CAM)來執行，並自動化重要的現代化工作。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=zh-Hant" text="準則和最佳做法"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html" text="準則和最佳做法"
 
 # 重構工具快速入門 {#getting-started-refactoring-tools}
 
@@ -22,7 +22,7 @@ ht-degree: 2%
 
 「重構工具」先前僅以CLI公用程式的形式提供，現在可提供具有自動化檢查、組態產生及工作執行等功能的統一介面，減少手動開銷並提升可見度。
 
-&#x200B;---
+---
 
 ## 檢查工作流程 {#inspection-workflow}
 
@@ -34,7 +34,7 @@ ht-degree: 2%
 * **組態產生** — 工具會檢查上傳的原始程式碼並產生必要的組態。
 * **裝載提交** — 這些設定會直接傳遞至選取的工具以供執行。
 
-&#x200B;---
+---
 
 ## 可用的重構工具
 
@@ -46,7 +46,7 @@ ht-degree: 2%
 
 **程式碼轉換器**&#x200B;使用智慧型模式辨識和AI驅動的分析，偵測並更新與AEMaaCS不相容的程式碼區段。 此工具可簡化移轉工作，並減少手動程式碼變更。
 
-&#x200B;---
+---
 
 ## 重構工作流程階段 {#phases-in-refactoring-tools}
 
@@ -60,7 +60,7 @@ ht-degree: 2%
 >[!NOTE]
 >在檢查程式期間，不允許上傳其他專案。
 
-&#x200B;---
+---
 
 ### 階段2：觸發重構工作
 

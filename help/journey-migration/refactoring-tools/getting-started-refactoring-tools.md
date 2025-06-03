@@ -17,7 +17,7 @@ ht-degree: 2%
 >[!CONTEXTUALHELP]
 >id="aemcloud_rs_upload"
 >title="Download"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=zh-Hant" text="Release Notes"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html" text="Release Notes"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Software Distribution Portal"
 
 -->
@@ -35,7 +35,7 @@ ht-degree: 2%
 
    ![影像](/help/journey-migration/refactoring-tools/assets/rscam2.png)
 
-&#x200B;---
+---
 
 ## 上傳Source程式碼 {#uploading}
 
@@ -72,7 +72,7 @@ ht-degree: 2%
 >[!NOTE]
 >只有在原始程式碼上傳成功時，才能執行重構作業。
 
-&#x200B;---
+---
 
 ## 重構工作 {#refactoring-jobs}
 
@@ -91,7 +91,7 @@ ht-degree: 2%
 >[!NOTE]
 >您可以使用&#x200B;**所有工具一起**&#x200B;選項，觸發個別重構工作或一次執行所有可用工具。
 
-&#x200B;---
+---
 
 ### 2.工作狀態
 
