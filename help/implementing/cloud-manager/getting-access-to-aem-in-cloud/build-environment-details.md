@@ -5,10 +5,10 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f102cdbab6b38ffabc370691e507754227b91f4e
+source-git-commit: 1df836c55e7276cf05a84e5512220b51de7131a8
 workflow-type: tm+mt
-source-wordcount: '1595'
-ht-degree: 28%
+source-wordcount: '1547'
+ht-degree: 29%
 
 ---
 
@@ -103,9 +103,7 @@ Adobe建議下列部署策略：
 
 #### 執行階段需求 {#runtime-requirements}
 
-Java 21執行階段用於具有Java 21和Java 17的組建，並將逐步套用至Java 11組建（請參閱下方的注意事項）。 環境必須位於AEM版本17098本或更高版本上才能接收Java 21更新。 為確保相容性，需要進行下列調整。
-
-程式庫更新可隨時套用，因為維持與舊版Java相容。
+Java 21執行階段已套用至所有符合資格的環境，這些環境是指在AEM發行說17098或更新版本上符合以下條件的環境。 如果環境不符合條件，請務必進行調整，以確保效能、可用性和安全性。
 
 * **ASM的最低版本：**
 將Java套件`org.objectweb.asm` （通常整合在`org.ow2.asm.*`成品中）的使用更新至9.5版或更新版本，以確保支援較新的JVM執行階段。
@@ -127,8 +125,7 @@ AEM Cloud Service SDK支援Java 21，讓您在執行Cloud Manager管道之前，
 
 >[!IMPORTANT]
 >
->當`.cloudmanager/java-version`設定為`21`或`17`時，就會部署Java 21執行階段。 Java 21執行階段已排定從2025年2月4日星期二開始逐步推出至所有環境（不僅僅是使用Java 11建置程式碼的那些環境）。 開始使用沙箱和開發環境，隨後在2025年4月推出所有生產環境。 想要採用Java 21執行階段&#x200B;*較早*&#x200B;的客戶可透過[aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com)聯絡Adobe。
-
+>如果環境尚未自動更新為Java 21執行階段，您可以使用Java 17或21建置以觸發它。 將`.cloudmanager/java-version`設定為`21`或`17`即可完成這項作業。 如有疑問，請連絡Adobe： [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com)。
 
 #### 建置時間需求 {#build-time-reqs}
 
