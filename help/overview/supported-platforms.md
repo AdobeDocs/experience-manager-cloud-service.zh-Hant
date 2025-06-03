@@ -6,10 +6,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 7ddd0a75-621a-4499-91d1-7b3408a68269
-source-git-commit: e57610e4c5e498ddfdbaa0ba39c9197ecfb5d177
-workflow-type: ht
-source-wordcount: '425'
-ht-degree: 100%
+source-git-commit: d53bfe103ff8e40c8221805a2d66faf3c5cd3823
+workflow-type: tm+mt
+source-wordcount: '419'
+ht-degree: 99%
 
 ---
 
@@ -50,10 +50,9 @@ AEM 使用者介面已針對筆記型電腦、桌上型電腦及平板電腦裝�
 | Mozilla Firefox (永久) | A：支援 | A：支援 | Z：不支援 |
 | Mozilla Firefox 最新 ESR [ 1] | A：支援 | A：支援 | Z：不支援 |
 | macOS 上的 Safari (永久) | A：支援 | A：支援 | Z：不支援 |
-| iOS 上的 Safari (永久) [2] | Z：不支援 | A：支援 | Z：不支援 |
+| iPadOS上的Safari （常青） | Z：不支援 | A：支援 | Z：不支援 |
 
 1. Firefox 的擴充支援版本 ([請造訪 mozilla.org 以了解更多資訊](https://www.mozilla.org/en-US/firefox/enterprise/))
-1. 僅支援 Apple iPad
 
 >[!NOTE]
 >
