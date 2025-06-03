@@ -940,4 +940,4 @@ In Universal Editor, create a **responsive contact form** for the company websit
 6. **使用者驗收測試** — 在部署之前讓真實的使用者測試表單
 
 
-*此提示程式庫會根據使用者意見與新的AI助理功能持續更新。 如需最新功能和範例，請檢視[AEM Forms檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html)。*
+*此提示程式庫會根據使用者意見與新的AI助理功能持續更新。 如需最新功能和範例，請檢視[AEM Forms檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=zh-Hant)。*
