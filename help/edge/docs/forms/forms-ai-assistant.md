@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: d3ade6ee9216b44b55d6808d8acffe83f1e263c9
+source-git-commit: 2db966405b5326d735083a66b2625d6d973ad7db
 workflow-type: tm+mt
-source-wordcount: '2061'
+source-wordcount: '2354'
 ht-degree: 1%
 
 ---
@@ -232,6 +232,69 @@ AI Assistant可瞭解廣泛的命令。 以下範例將說明其功能。 請記
 - **提供意見回饋：**&#x200B;使用AI助理介面中的內建&#x200B;**「提供意見回饋」命令或按鈕**，共用您的體驗、報告問題或建議增強功能。 （例如，您可以輸入`/feedback`或尋找意見回饋圖示）。
 - **官方支援：**&#x200B;若有嚴重問題或需要進一步的協助，請透過官方Adobe支援管道或貴組織的指定支援聯絡人來聯絡。
 
+
+
+## 使用附件
+
+AI Assistant支援檔案附件，以增強您的表單建立和設定體驗。 您可以附加各種檔案型別，以提供要轉換的視覺內容、設計參照或現有表單。
+
+### 支援的附件型別
+
+| 檔案類型 | 使用案例 | 支援附件的命令 | 範例 |
+|-----------|-----------|-----------------------------------|----------|
+| **影像** (PNG、JPG、JPEG、GIF) | 表單版面參考、UI模型、紙張表單掃描 | /create-form， /add-form， /create-panel， /add-panel， /update-field | 上傳所需版面的熒幕擷圖 |
+| **PDF檔案** | 要轉換的現有表單，設計規格 | /create-form， /add-form， /create-panel， /add-panel | 轉換PDF應用程式表單 |
+| **Figma檔案** | 設計系統參考、UI原型 | /create-form， /add-form， /create-panel | 匯入圖形設計框架 |
+| **設計檔案** (Sketch、Adobe XD匯出) | 視覺化設計參考 | /create-form， /add-form， /create-panel | 參考設計系統元件 |
+
+### 如何使用附件
+
+1. **附加在之前或使用您的命令：**
+
+   - 按一下AI助理介面中的附件圖示
+   - 從裝置選取檔案
+   - 輸入參考附加檔案的指令
+
+2. **在命令中參考附件：**
+
+   ```
+   /create-form based on the attached PDF application form
+   /add-panel using the layout shown in the uploaded image
+   /create-panel following the design in the attached Figma file
+   /update-field @email to match the style in the attached screenshot
+   ```
+
+3. **多個附件：**
+
+   - 您可以附加多個檔案以供比較或參考
+   - 指定要使用的附件：「使用第一個附加的影像」或「根據PDF檔案」
+
+### 附件最佳實務
+
+- **清晰、高品質的影像：**&#x200B;確保上傳的影像清晰易讀，以便進行AI分析
+- **相關檔案名稱：**&#x200B;使用描述性檔案名稱來協助AI瞭解內容
+- **單一焦點：**&#x200B;每個附件都應專注於一個特定方面（版面配置、欄位設計等）
+- **支援的格式：**&#x200B;請遵循常用格式(PNG、JPG、PDF)以獲得最佳相容性
+- **檔案大小：**&#x200B;將附件保持在10MB以下，以獲得最佳處理速度
+
+### 範例附件工作流程
+
+**轉換紙張表單：**
+
+1. 清晰的掃描或拍攝紙張表單
+2. 上傳影像檔案
+3. 使用命令： `/create-form based on the attached form image, converting all fields to digital equivalents`
+
+**符合設計系統：**
+
+1. 匯出或熒幕擷圖相關的設計元件
+2. 附加設計參考
+3. 使用命令： `/create-panel following the visual style and layout shown in the attached design`
+
+**欄位樣式參考：**
+
+1. 附加所需欄位外觀的熒幕擷圖
+2. 使用命令： `/update-field @email to match the styling and layout shown in the attached image`
 
 ## 相關內容
 

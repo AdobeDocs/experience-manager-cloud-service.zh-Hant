@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 hide: false
 hidefromtoc: true
 exl-id: 6cdf7f65-7112-420a-90c1-564f0ef8ceaf
-source-git-commit: d3ade6ee9216b44b55d6808d8acffe83f1e263c9
+source-git-commit: 2db966405b5326d735083a66b2625d6d973ad7db
 workflow-type: tm+mt
 source-wordcount: '1122'
 ht-degree: 1%
@@ -49,7 +49,7 @@ AI Assistant目前的範圍著重於解決Adobe Experience Manager as a Cloud Se
 
 ## AEM Forms的AI助理(Forms Experience Builder) {#ai-forms-builder}
 
-除了用於產品知識的一般AI助理之外，AEM還為AEM Forms (Forms Experience Builder)**提供專門的** AI助理。 此增強型助理可以透過自然語言提示和回答表單特定問題，主動協助您建立及設定表單。
+除了用於產品知識的一般AI助理之外，AEM還為AEM Forms (Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant.md)**提供專門的**[ AI助理。 此增強型助理可以透過自然語言提示和回答表單特定問題，主動協助您建立及設定表單。
 
 ### 主要功能
 
@@ -76,7 +76,7 @@ AEM Forms的AI助理提供：
 >
 > 適用於AEM Forms的AI助理(Forms Experience Builder)可在率先採用者方案下使用。 從您的工作地址傳送電子郵件至[aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)以要求存取權。
 
-若要進一步瞭解使用適用於AEM Forms的AI助理員，包括詳細範例和最佳實務，請參閱AEM Forms的AI助理員檔案。
+若要進一步瞭解如何使用AEM Forms的AI助理，包括詳細的範例和最佳實務，請參閱[AEM Forms的AI助理檔案](/help/edge/docs/forms/forms-ai-assistant.md)。
 
 ### 範例使用案例
 
@@ -116,7 +116,7 @@ AEM Forms的AI助理提供：
 **若要啟動或重設交談：**
 
 1. 在AI助理上，按一下![更多圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
-1. 若要通知AI助理有關新主題或主題變更，請按一下[開始新交談] **&#x200B;**。
+1. 若要通知AI助理有關新主題或主題變更，請按一下[開始新交談] ****。
 
 ### 使用可發現性
 
