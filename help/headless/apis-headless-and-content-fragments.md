@@ -4,10 +4,10 @@ description: 瞭解可用於結構化內容傳遞和內容片段管理的API
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: 95aecd30-566a-42a9-b97a-7efe45fd389c
-source-git-commit: e427bd34867974c663e67a2124f257cd12e946ae
+source-git-commit: 243adc6f6428cea23c04ca788bd8ad0bda7e4501
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '516'
+ht-degree: 28%
 
 ---
 
@@ -27,12 +27,10 @@ Adobe Experience Manager (AEM) as a Cloud Service 為內容片段的結構化內
    * 這些 API 是用來管理結構化內容。
    * 各 GET 運算子並未針對內容傳遞進行最佳化。
    * 此 API 以 REST 為基礎。
-* [AEM Assets HTTP API 中的內容片段支援](/help/assets/content-fragments/assets-api-content-fragments.md)
-   * 適用於 JSON 輸出的原始 API，可在 AEM 中傳遞結構化內容。
-      * 儘管功能強大且經過驗證，但此 API 無法提供&#x200B;*完全水合的* JSON 輸出。參考只會輸出成路徑，要擷取更多內容需要次要 API 請求。
-   * Assets HTTP API 也可用於管理內容片段和內容片段模型 (CRUD)。
-   * 此 API 以 REST 為基礎。
-   * Assets HTTP API 中的內容片段支援將在未來停用，因為將被 Edge Delivery Services JSON REST API 取代。時間表尚未確定。
+
+>[!NOTE]
+>
+>Assets HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)中的[內容片段支援現在[已棄用](/help/release-notes/deprecated-removed-features.md)。 已由[使用OpenAPI的內容片段傳送](/help/headless/aem-content-fragment-delivery-with-openapi.md)以及[內容片段和內容片段模型管理OpenAPI](/help/headless/content-fragment-openapis.md)取代。
 
 ## REST與GraphQL {#rest-vs-graphql}
 
@@ -42,7 +40,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 為內容片段的結構化內
 
 * 簡單性
 
-   * 開發人員通常（會）熟悉HTTP和REST。 根據API報告[&#128279;](https://www.postman.com/state-of-api/)的Postman狀態，有高比例的開發人員使用REST。
+   * 開發人員通常（會）熟悉HTTP和REST。 根據API報告](https://www.postman.com/state-of-api/)的[Postman狀態，有高比例的開發人員使用REST。
 
    * 透過簡單而熟悉。 使用REST時，不會出現關於誰擁有查詢以及誰擁有應用程式的組織問題，而GraphQL則可能出現這些問題。
 
