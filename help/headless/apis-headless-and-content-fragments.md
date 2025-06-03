@@ -4,50 +4,35 @@ description: 瞭解可用於結構化內容傳遞和內容片段管理的API
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: 95aecd30-566a-42a9-b97a-7efe45fd389c
-source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
+source-git-commit: e427bd34867974c663e67a2124f257cd12e946ae
 workflow-type: tm+mt
-source-wordcount: '591'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # 用於傳遞和管理結構化內容的 AEM API {#aem-apis-structured-content-delivery-and-management}
 
-Adobe Experience Manager (AEM) as a Cloud Service提供多個API，用於內容片段和內容片段管理的結構化內容傳遞。 如需特定API的詳細資訊，請參閱個別頁面。
+Adobe Experience Manager (AEM) as a Cloud Service 為內容片段的結構化內容傳遞和內容片段管理提供多個 API。關於特定 API 的更多詳細資訊，請參閱個別頁面。
 
-* [使用OpenAPI的AEM內容片段傳送](/help/headless/aem-content-fragment-delivery-with-openapi.md)
-   * 此API會建立JSON回應，用於從AEM中的內容片段傳送結構化內容。
-   * 它使用內容片段的路徑作為端點。
-   * 此API以REST為基礎。
-   * 它已針對內容傳遞（包括CDN整合）進行最佳化。
-* [用於內容片段傳送的AEM GraphQL API](/help/headless/graphql-api/content-fragments.md)
-   * 此API以結構描述為基礎。 API結構描述由內容片段模式表示，這些模式會定義內容結構。
-   * 此API以GraphQL為基礎。
+* [透過 OpenAPI 傳遞 AEM 內容片段](/help/headless/aem-content-fragment-delivery-with-openapi.md)
+   * 此 API 建立 JSON 回應，用於在 AEM 中傳遞來自內容片段的結構化內容。
+   * 其使用內容片段的路徑做為端點。
+   * 此 API 以 REST 為基礎。
+   * 其針對內容傳遞包括 CDN 整合進行最佳化。
+* [用於傳遞內容片段的 AEM GraphQL API](/help/headless/graphql-api/content-fragments.md)
+   * 此 API 以結構描述為基礎。API 結構描述由內容片段模型呈現，其會定義內容結構。
+   * 此 API 以 GraphQL 為基礎。
 * [內容片段和內容片段模型的 OpenAPI](/help/headless/content-fragment-openapis.md)
-   * 這些API旨在用於結構化內容管理。
-   * 個別的GET運運算元未針對內容傳遞進行最佳化。
-   * 此API以REST為基礎。
-* [AEM Assets HTTP API中的內容片段支援](/help/assets/content-fragments/assets-api-content-fragments.md)
-   * 用於AEM中結構化內容傳遞的JSON輸出的原始API。
-      * 雖然此API健全且經過證明，但並未提供&#x200B;*完全水合的* JSON輸出。 參考僅輸出為路徑，需要次要API請求以擷取更多內容。
-   * Assets HTTP API也可用來管理內容片段和內容片段模式(CRUD)。
-   * 此API以REST為基礎。
-   * Assets HTTP API中的內容片段支援未來將停止使用，因為Edge Delivery Services JSON REST API將成功提供支援。 時間刻度尚未決定。
-
-<!--
-## JSON vs HTML {#json-vs-HTML}
-
-The content delivery format used is driven by frontend implementation. Unstructured content/HTML for full-stack implementations, structured content/JSON for headless implementations, or a combination of both in hybrid implementations. 
-
-Key considerations include:
-
-* Definition
-  * JSON (JavaScript Object Notation) - used to represent, access and process structured data. 
-  * HTML (HyperText Markup Language) - a markup language of tags and elements in a hierarchical structure.
-* Primary Purpose
-  * JSON is often used for transferring structure content between the server and client app.
-  * HTML is the standard markup language for creating and rendering web pages in a browser.
--->
+   * 這些 API 是用來管理結構化內容。
+   * 各 GET 運算子並未針對內容傳遞進行最佳化。
+   * 此 API 以 REST 為基礎。
+* [AEM Assets HTTP API 中的內容片段支援](/help/assets/content-fragments/assets-api-content-fragments.md)
+   * 適用於 JSON 輸出的原始 API，可在 AEM 中傳遞結構化內容。
+      * 儘管功能強大且經過驗證，但此 API 無法提供&#x200B;*完全水合的* JSON 輸出。參考只會輸出成路徑，要擷取更多內容需要次要 API 請求。
+   * Assets HTTP API 也可用於管理內容片段和內容片段模型 (CRUD)。
+   * 此 API 以 REST 為基礎。
+   * Assets HTTP API 中的內容片段支援將在未來停用，因為將被 Edge Delivery Services JSON REST API 取代。時間表尚未確定。
 
 ## REST與GraphQL {#rest-vs-graphql}
 
@@ -57,7 +42,7 @@ Key considerations include:
 
 * 簡單性
 
-   * 開發人員通常（會）熟悉HTTP和REST。 根據API報告[&#128279;](https://www.postman.com/state-of-api/)的Postman狀態，有高比例的開發人員使用REST。
+   * 開發人員通常（會）熟悉HTTP和REST。 根據API報告](https://www.postman.com/state-of-api/)的[Postman狀態，有高比例的開發人員使用REST。
 
    * 透過簡單而熟悉。 使用REST時，不會出現關於誰擁有查詢以及誰擁有應用程式的組織問題，而GraphQL則可能出現這些問題。
 

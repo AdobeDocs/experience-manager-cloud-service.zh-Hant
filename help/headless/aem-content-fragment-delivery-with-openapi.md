@@ -4,10 +4,10 @@ description: 瞭解如何使用OpenAPI進行tAEM內容片段傳送
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: b298db37-1033-4849-bc12-7db29fb77777
-source-git-commit: 7f7ed3adcbd01f688f48f3ba4a0c25293b8b1551
+source-git-commit: 163964a7183996226b14f3c803afa4c5bd58f848
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -34,6 +34,14 @@ ht-degree: 4%
 >
 >請參閱[結構化內容傳遞與管理的AEM API](/help/headless/apis-headless-and-content-fragments.md)，以取得各種可用API的概觀，以及所涉及概念的比較。
 
+>[!IMPORTANT]
+>
+>若要在AEM as a Cloud Service上使用OpenAPI啟用內容片段傳送，請確保尚未啟用，然後提交標題為「**使用OpenAPI啟用內容片段傳送**」的Adobe支援票證，並指定：
+>
+>* Cloud Service程式和環境ID
+>* 您要使用內容片段傳送OpenAPI解決的使用案例詳細資訊
+>* Adobe應回應並隨時通知有關請求和專案的所有聯絡人的詳細資訊（如有需要）
+
 ## 快取 {#caching}
 
 AEM與AEM CDN Fastly整合。 這表示會在Fastly層級快取發佈層級上提供的JSON回應。
@@ -49,4 +57,28 @@ AEM與AEM CDN Fastly整合。 這表示會在Fastly層級快取發佈層級上�
 * 過時內容可錯誤提供長達1天的服務
    * `stale-on-error`=`86400`
 
-AEM也隨附使用中CDN快取失效機制。 這代表每當內容更新或發佈時，對應的JSON OpenAPI回應都會透過對Fastly的軟清除請求自動失效。 這可讓您在到達實際CDN快取存留期(`s-maxage`)之前，檢視JSON輸出中反映的變更。
+使用OpenAPI的內容片段傳送支援作用中CDN快取失效。 這代表每當內容更新或發佈時，對應的JSON OpenAPI回應都會透過對Fastly的軟清除請求自動失效。 這可讓您在到達實際CDN快取存留期(`s-maxage`)之前，檢視JSON輸出中反映的變更。
+
+## 可用性 {#availability}
+
+預覽和發佈層級提供OpenAPI的內容片段傳送。 OpenAPI會傳送JSON格式的內容片段，以供預覽和即時傳送。
+
+若要使用OpenAPI預覽內容片段傳送，可以：
+
+* 發佈到預覽
+* 啟用存取以使用IP允許清單預覽
+* 取得預覽URL
+
+## CORS {#cors}
+
+[CORS允許的原始項](/help/headless/deployment/cross-origin-resource-sharing.md)定義可以呼叫API的原始項。
+
+此API不會考慮在Dispatcher設定端定義(特別是為GraphQL定義)的CORS允許來源。
+
+<!-- 
+## API Rate Limits {#api-rate-limits}
+-->
+
+<!-- 
+## Limitations {#limitations}
+-->
