@@ -4,10 +4,10 @@ description: 特定於  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: f595cb1030f49e3213b93cac897de9598060131d
+source-git-commit: aaa0d9c547af360aff4cabb2ce024b586a3870df
 workflow-type: tm+mt
-source-wordcount: '2912'
-ht-degree: 89%
+source-wordcount: '3028'
+ht-degree: 71%
 
 ---
 
@@ -18,20 +18,19 @@ ht-degree: 89%
 >title="AEM as a Cloud Service 中已棄用和已移除的功能"
 >abstract="AEM as a Cloud Service 具有雲端原生部署模型。此索引標籤會醒目提示已由其對應之雲生原生功能取代的特色與功能。"
 
-Adobe 會持續評估產品功能，以逐漸利用更現代化的替代方案重塑或取代舊功能，藉此提升整體客戶價值，也會隨時謹慎考量是否回溯相容性。由於 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 使用雲端原生部署模型，因此會以對應的雲端原生功能取代某些功能。
+Adobe會定期審查功能（包括API和設定），以確保其符合AEM as a Cloud Service的效能、安全性和整體價值方面不斷變化的標準。 根據這些評估，某些功能可能會標籤為過時。 可行時，Adobe會提供合適的替代方案。
 
-若要傳達 [!DNL Experience Manager] 功能即將移除/取代的訊息，請套用下列規則：
+當宣佈淘汰時，功能僅會在有限的時間內保持可用，客戶必須在任何指定的移除日期之前移除所有使用量。 Adobe將提供合理的通知和指引，以支援順利轉換。
 
-1. 首先需公告功能已過時。過時的功能仍可使用，但往後不會有所改善。
-1. 已宣佈過時的功能最快會從後續的主要版本中移除。公告預定的實際移除日期。
+在淘汰時間期間，Adobe會透過電子郵件通知、動作中心警示或Cloud Manager中的提醒，提醒客戶為從使用功能轉換到別處所需採取的動作。
 
-此程序可讓客戶在功能真正移除之前，至少還有一個發行週期，讓實作適應過時功能的新版本或後續版本。
+>[!WARNING]
+>
+>在某些情況下，在部署新的Cloud Manager組建或升級至最新版本的AEM as a Cloud Service之前，可能需要移除功能。
 
-## 過時的功能 {#deprecated-features}
+## 已棄用功能 {#deprecated-features}
 
-本節提供 [!DNL Experience Manager] as a [!DNL Cloud Service] 中標示為過時的功能。 日後版本通常會先將要移除的功能設定為過時，並提供其他選項。
-
-建議客戶檢閱是否在目前的部署中使用這些功能，並規劃變更實作，改用所提供的替代方案。
+下表中的功能已宣佈淘汰，但尚未移除。  功能必須在目標移除日期之前停止使用，否則您就可能會面臨效能、可用性及安全性相關的問題。
 
 | 功能 | 汰除功能 | 替代方案 |
 | ------------ | ------------------ | ----------- |
@@ -54,7 +53,7 @@ Adobe 會持續評估產品功能，以逐漸利用更現代化的替代方案�
 
 ## 移除的功能 {#removed-features}
 
-本節提供已從具 [!DNL Experience Manager] 之 [!DNL Experience Manager] as a [!DNL Cloud Service] 中移除的功能。
+本節列出已移除的功能。
 
 | 區域 | 功能 | 替代方案 | 目標移除日期 |
 | ------------ | ------------------ | ----------- | ------------------- |
@@ -68,11 +67,11 @@ Adobe 會持續評估產品功能，以逐漸利用更現代化的替代方案�
 | [!DNL Foundation] | 支援 Apache Felix Http Whiteboard | OSGi Http Whiteboard | 2022 年 3 月 |
 | [!DNL Foundation] | 支援 com.adobe.granite.oauth.server | Adobe IMS 整合  | 2023 年 3 月 |
 | [!DNL Foundation] | 支援 org.apache.sling.serviceusermapping 功能以[取得服務使用者 ID](https://sling.apache.org/apidocs/sling12/org/apache/sling/serviceusermapping/ServiceUserMapper.html#getServiceUserID-org.osgi.framework.Bundle-java.lang.String-) | 不適用 | 2024 年 8 月 30 日 |
+| [!DNL Foundation] | Java 11執行階段已淘汰，並由Adobe和Java 21執行階段取代。 請注意，程式碼仍使用Java 11建置是可以接受的（Java 17和21是其他選項） | 已套用Java 21執行階段。 若要確保相容性，必須依照[執行階段需求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)所述更新程式庫版本 | 2025年3月5日/29 |
 
+## 已過時 API {#aem-apis}
 
-## AEM API {#aem-apis}
-
-以下是已過時的 AEM API 及其預期移除日期的詳盡清單。客戶應在目標移除日期之前從他們的程式碼中移除 API。若在移除日期之後使用 API，可能會在本機 SDK/開發環境和 Cloud Manager 建置過程中產生錯誤。
+下表中的API （按一下以展開檢視）已宣告棄用，但尚未移除。  您必須在目標移除日期前停止使用這些API，否則可能會面臨效能、可用性和安全性相關問題。 有些API參考以下的API移除指南一節。
 
 <details>
   <summary>展開以查看已過時的 API 清單。</summary>
@@ -91,47 +90,17 @@ Adobe 會持續評估產品功能，以逐漸利用更現代化的替代方案�
     <td>2025/8/31</td>
   </tr>
   <tr>
-    <td>org.apache.sling.runmode</td>
-    <td></td>
-    <td>2015</td>
-    <td>2021/7/30</td>
-  </tr>
-  <tr>
-    <td>org.json</td>
-    <td>建議並應該使用 Apache Johnzon 的 <a href="https://johnzon.apache.org/index.html">javax.json</a> 實作。 </td>
-    <td>2021/4/30</td>
-    <td>2021/12/31</td>
-  </tr>
-  <tr>
-    <td>org.apache.commons.lang<br>org.apache.commons.lang.enums<br>org.apache.commons.lang.builder<br>org.apache.commons.lang.exception<br>org.apache.commons.lang.math<br>org.apache.commons.lang.mutable<br>org.apache.commons.lang.reflect<br>org.apache.commons.lang.text<br>org.apache.commons.lang.time</td>
-    <td>Commons Lang 2 處於維護模式。應該改用Commons Lang 3。 <a href="#apache.commons">請參閱下面的移除說明。</a></td>
-    <td>2021/4/30</td>
-    <td>2021/12/31</td>
-  </tr>
-  <tr>
-    <td>org.apache.commons.collections<br>org.apache.commons.collections.bag<br>org.apache.commons.collections.bidimap<br>org.apache.commons.collections.buffer<br>org.apache.commons.collections.collection<br>org.apache.commons.collections.comparators<br>org.apache.commons.collections.functors<br>org.apache.commons.collections.iterators<br>org.apache.commons.collections.keyvalue<br>org.apache.commons.collections.list<br>org.apache.commons.collections.map<br>org.apache.commons.collections.set</td>
-    <td>Commons Collections 3 處於維護模式。應該改用Commons Collections 4。 <a href="#apache.commons">請參閱下面的移除說明。</a></td>
-    <td>2021/4/30</td>
-    <td>2021/12/31</td>
-  </tr>
-  <tr>
-    <td>org.apache.felix.webconsole<br>org.apache.felix.webconsole.bundleinfo<br>org.apache.felix.webconsole.i18n<br>org.apache.felix.webconsole.spi</td>
-    <td>雲端環境不支援Felix Web主控台。 <a href="#org.apache.felix.webconsole">請參閱下面的移除說明。</a></td>
-    <td>2021/4/30</td>
-    <td>2025/8/31</td>
-  </tr>
-  <tr>
 <td>org.eclipse.jetty.client<br>org.eclipse.jetty.client.api<br>org.eclipse.jetty.client.http<br>org.eclipse.jetty.client.util<br>org.eclipse.jetty.http<br>org.eclipse.jetty.http.pathmap<br>org.eclipse.jetty.io<br>org.eclipse.jetty.io.ssl<br>org.eclipse.jetty.security<br>org.eclipse.jetty.server<br>org.eclipse.jetty.server.handler<br>org.eclipse.jetty.server.handler.gzip<br>org.eclipse.jetty.server.session<br>org.eclipse.jetty.servlet<br>org.eclipse.jetty.servlet.listener<br>org.eclipse.jetty.util<br>org.eclipse.jetty.util.annotation<br>org.eclipse.jetty.util.component<br>org.eclipse.jetty.util.log<br>org.eclipse.jetty.util.resource<br>org.eclipse.jetty.util.security<br>org.eclipse.jetty.util.ssl<br>org.eclipse.jetty.util.statistic<br>org.eclipse.jetty.util.thread</td>
     <td>不再支援 Eclipse Jetty 和 Felix Http Jetty 套件。<a href="#org.eclipse.jetty">請參閱下面的移除說明。</a></td>
     <td>2021/5/27</td>
     <td>2025/8/31</td>
   </tr>
-  <tr>     <td>com.mongodb<br>com.mongodb.annotations<br>com.mongodb.assertions<br>com.mongodb.async<br>com.mongodb.binding<br>com.mongodb.bulk<br>com.mongodb.client<br>com.mongodb.client.gridfs<br>com.mongodb.client.gridfs.codecs<br>com.mongodb.client.gridfs.model<br>com.mongodb.client.jndi<br>com.mongodb.client.model<br>com.mongodb.client.model.changestream<br>com.mongodb.client.model.geojson<br>com.mongodb.client.model.geojson.codecs<br>com.mongodb.client.result<br>com.mongodb.connection<br>com.mongodb.connection.netty<br>com.mongodb.diagnostics.logging<br>com.mongodb.event<br>com.mongodb.gridfs<br>com.mongodb.internal<br>com.mongodb.internal.async<br>com.mongodb.internal.authentication<br>com.mongodb.internal.connection<br>com.mongodb.internal.dns<br>com.mongodb.internal.event<br>com.mongodb.internal.management.jmx<br>com.mongodb.internal.session<br>com.mongodb.internal.thread<br>com.mongodb.internal.validator<br>com.mongodb.management<br>com.mongodb.operation<br>com.mongodb.selector<br>com.mongodb.session<br>com.mongodb.util</td>
+ <tr>     <td>com.mongodb<br>com.mongodb.annotations<br>com.mongodb.assertions<br>com.mongodb.async<br>com.mongodb.binding<br>com.mongodb.bulk<br>com.mongodb.client<br>com.mongodb.client.gridfs<br>com.mongodb.client.gridfs.codecs<br>com.mongodb.client.gridfs.model<br>com.mongodb.client.jndi<br>com.mongodb.client.model<br>com.mongodb.client.model.changestream<br>com.mongodb.client.model.geojson<br>com.mongodb.client.model.geojson.codecs<br>com.mongodb.client.result<br>com.mongodb.connection<br>com.mongodb.connection.netty<br>com.mongodb.diagnostics.logging<br>com.mongodb.event<br>com.mongodb.gridfs<br>com.mongodb.internal<br>com.mongodb.internal.async<br>com.mongodb.internal.authentication<br>com.mongodb.internal.connection<br>com.mongodb.internal.dns<br>com.mongodb.internal.event<br>com.mongodb.internal.management.jmx<br>com.mongodb.internal.session<br>com.mongodb.internal.thread<br>com.mongodb.internal.validator<br>com.mongodb.management<br>com.mongodb.operation<br>com.mongodb.selector<br>com.mongodb.session<br>com.mongodb.util</td>
     <td>AEM as a Cloud Service 不支援使用此 API。<a href="#com.mongodb">請參閱下面的移除說明。</a></td>
     <td>2021/5/27</td>
     <td>2025/8/31</td>
   </tr>
-  <tr>
+   <tr>
     <td>org.apache.abdera<br>org.apache.abdera.model<br>org.apache.abdera.factory<br>org.apache.abdera.ext.media<br>org.apache.abdera.util<br>org.apache.abdera.i18n.iri<br>org.apache.abdera.writer<br>org.apache.abdera.i18n.rfc4646<br>org.apache.abdera.i18n.rfc4646.enums<br>org.apache.abdera.i18n.text<br>org.apache.abdera.filter<br>org.apache.abdera.xpath<br>org.apache.abdera.i18n.text.io<br>org.apache.abdera.i18n.text.data<br>org.apache.abdera.parser</td>
     <td>此 API 已過時，因為 Apache Abdera 自 2017 年以來已為淘汰專案。<a href="#org.apache.abdera_or_org.apache.sling.atom.taglib">請參閱下面的移除說明。</a></td>
     <td>2021/7/29</td>
@@ -173,17 +142,7 @@ Adobe 會持續評估產品功能，以逐漸利用更現代化的替代方案�
     <td>2022/1/27</td>
     <td>2025/8/31</td>
   </tr>
-  <tr>
-    <td>com.day.cq.contentsync.handler.util</td>
-    <td>此 API 已過時。請改用 Apache Sling 的產生器。</td>
-    <td>10/31/2022</td>
-    <td>1/01/2023</td>
-  </tr>
-  <tr><td>org.apache.sling.commons.json<br>org.apache.sling.commons.json.http<br>org.apache.sling.commons.json.io<br>org.apache.sling.commons.json.jcr<br>org.apache.sling.commons.json.sling<br>org.apache.sling.commons.json.util<br>org.apache.sling.commons.json.xml</td>
-    <td>AEM as a Cloud Service 不支援此 API。</td>
-    <td>5/15/2023</td>
-    <td>6/15/2023</td>
-  </tr><td>com.google.common.annotations<br>com.google.common.base<br>com.google.common.cache<br>com.google.common.collect<br>com.google.common.escape<br>com.google.common.eventbus<br>com.google.common.hash<br>com.google.common.html<br>com.google.common.io<br>com.google.common.math<br>com.google.common.net<br>com.google.common.primitives<br>com.google.common.reflect<br>com.google.common.util.concurrent<br>com.google.common.xml</td>
+  <tr>  <td>com.google.common.annotations<br>com.google.common.base<br>com.google.common.cache<br>com.google.common.collect<br>com.google.common.escape<br>com.google.common.eventbus<br>com.google.common.hash<br>com.google.common.html<br>com.google.common.io<br>com.google.common.math<br>com.google.common.net<br>com.google.common.primitives<br>com.google.common.reflect<br>com.google.common.util.concurrent<br>com.google.common.xml</td>
     <td>Google Guava 核心程式庫已過時。</td>
     <td>5/15/2023</td>
     <td>2025/8/31</td>
@@ -193,20 +152,8 @@ Adobe 會持續評估產品功能，以逐漸利用更現代化的替代方案�
     <td>AEM as a Cloud Service不支援此內部slf4j API。 <a href="#org.slf4j">請參閱下面的移除說明。</a></td>
     <td>2022/4/11</td>
     <td>2025/8/31</td>
-  </tr>
-  <tr>
-    <td>com.day.cq.xss<br>com.day.cq.xss.taglib<br>com.day.cq.xss.impl</td>
-    <td>請改用 org.apache.sling.xss。</td>
-    <td>2023 年 12 月 12 日</td>
-    <td>2024 年 6 月 30 日</td>
-  </tr>
-  <tr>
-    <td>com.adobe.granite.xss<br>com.adobe.granite.xss.impl</td>
-    <td>請改用 org.apache.sling.xss。</td>
-    <td>2023 年 12 月 12 日</td>
-    <td>2024 年 6 月 30 日</td>
-  </tr>
-  <tr>
+  </tr> 
+    <tr>
     <td>com.drew.*</td>
     <td>若要從影像和影片中擷取中繼資料，應透過 Cloud Service 中的 Asset Compute 或透過 Apache POI 或 Apache Tika 完成。</td>
     <td>2024 年 9 月 17 日</td>
@@ -225,16 +172,70 @@ Adobe 會持續評估產品功能，以逐漸利用更現代化的替代方案�
     <td>2025/8/31</td>
   </tr>
   <tr>
-    <td>org.bson<br/>org.bson.assertions<br/>org.bson.codecs<br/>org.bson.codecs.configuration<br/>org.bson.codecs.pojo<br/>org.bson.codecs.pojo.annotations<br/>org.bson.conversions<br/>org.bson.diagnostics<br/>org.bson.internal<br/>org.bson.io<br/>org.bson.json<br/>org.bson.types<br/>org.bson.util</td>
+<td>org.apache.felix.webconsole<br>org.apache.felix.webconsole.bundleinfo<br>org.apache.felix.webconsole.i18n<br>org.apache.felix.webconsole.spi</td>
+    <td>雲端環境不支援Felix Web主控台。 <a href="#org.apache.felix.webconsole">請參閱下面的移除說明。</a></td>
+    <td>2021/4/30</td>
+    <td>2025/8/31</td>
+  </tr>
+<td>org.bson<br/>org.bson.assertions<br/>org.bson.codecs<br/>org.bson.codecs.configuration<br/>org.bson.codecs.pojo<br/>org.bson.codecs.pojo.annotations<br/>org.bson.conversions<br/>org.bson.diagnostics<br/>org.bson.internal<br/>org.bson.io<br/>org.bson.json<br/>org.bson.types<br/>org.bson.util</td>
     <td>AEM as a Cloud Service 不支援使用此 API。</td>
     <td>10/31/2022</td>
     <td>2025/8/31</td>
+  </tr>  
+  <tr>
+    <td>org.apache.sling.runmode</td>
+    <td></td>
+    <td>2015</td>
+    <td>待定</td>
   </tr>
-</tbody>
+  <tr>
+    <td>org.json</td>
+    <td>建議並應該使用 Apache Johnzon 的 <a href="https://johnzon.apache.org/index.html">javax.json</a> 實作。 </td>
+    <td>2021/4/30</td>
+    <td>待定</td>
+  </tr>
+  <tr>
+<td>org.apache.commons.lang<br>org.apache.commons.lang.enums<br>org.apache.commons.lang.builder<br>org.apache.commons.lang.exception<br>org.apache.commons.lang.math<br>org.apache.commons.lang.mutable<br>org.apache.commons.lang.reflect<br>org.apache.commons.lang.text<br>org.apache.commons.lang.time</td>
+    <td>Commons Lang 2 處於維護模式。應該改用Commons Lang 3。 <a href="#apache.commons">請參閱下面的移除說明。</a></td>
+    <td>2021/4/30</td>
+    <td>待定</td>
+  </tr>
+  <tr>
+    <td>org.apache.commons.collections<br>org.apache.commons.collections.bag<br>org.apache.commons.collections.bidimap<br>org.apache.commons.collections.buffer<br>org.apache.commons.collections.collection<br>org.apache.commons.collections.comparators<br>org.apache.commons.collections.functors<br>org.apache.commons.collections.iterators<br>org.apache.commons.collections.keyvalue<br>org.apache.commons.collections.list<br>org.apache.commons.collections.map<br>org.apache.commons.collections.set</td>
+    <td>Commons Collections 3 處於維護模式。應該改用Commons Collections 4。 <a href="#apache.commons">請參閱下面的移除說明。</a></td>
+    <td>2021/4/30</td>
+    <td>待定</td>
+  </tr>
+  <tr>
+    <td>com.day.cq.contentsync.handler.util</td>
+    <td>此 API 已過時。請改用 Apache Sling 的產生器。</td>
+    <td>10/31/2022</td>
+    <td>待定</td>
+  </tr>
+  <tr><td>org.apache.sling.commons.json<br>org.apache.sling.commons.json.http<br>org.apache.sling.commons.json.io<br>org.apache.sling.commons.json.jcr<br>org.apache.sling.commons.json.sling<br>org.apache.sling.commons.json.util<br>org.apache.sling.commons.json.xml</td>
+    <td>AEM as a Cloud Service 不支援此 API。</td>
+    <td>5/15/2023</td>
+    <td>待定</td>
+  </tr>
+  <tr>
+    <td>com.day.cq.xss<br>com.day.cq.xss.taglib<br>com.day.cq.xss.impl</td>
+    <td>請改用 org.apache.sling.xss。</td>
+    <td>2023 年 12 月 12 日</td>
+    <td>待定</td>
+  </tr>
+  <tr>
+    <td>com.adobe.granite.xss<br>com.adobe.granite.xss.impl</td>
+    <td>請改用 org.apache.sling.xss。</td>
+    <td>2023 年 12 月 12 日</td>
+    <td>待定</td>
+  </tr>
+  </tbody>
 </table>
 </details>
 
-以下為已移除之 AEM API 的詳細清單。
+## 已移除的API {#removed-apis}
+
+本節列出已過時和移除的API。 有些API參考以下的API移除指南一節。
 
 <details>
   <summary>展開以查看已移除的 API 清單。</summary>
@@ -314,6 +315,10 @@ Adobe 會持續評估產品功能，以逐漸利用更現代化的替代方案�
 </tbody>
 </table>
 </details>
+
+## API移除指引 {#api-removal-guidance}
+
+本節反映上表中各種API的API移除指引。
 
 ### 移除 `org.apache.sling.commons.auth*` {#org.apache.sling.commons.auth}
 
@@ -412,7 +417,7 @@ Cloud Service不支援Logback，請移除其所有使用方式。 如果您使�
 
 ## OSGI 設定 {#osgi-configuration}
 
-以下兩個清單列出了 AEM as a Cloud Service OSGi 設定介面，說明客戶可以設定的內容。
+以下各節反映AEM as a Cloud Service OSGi設定表面，說明客戶可設定的專案。
 
 1. 客戶程式碼不得設定所列出的 OSGi 設定。
 1. 可以設定其屬性的 OSGi 設定清單，但必須遵守指定的驗證規則。這些規則包括是否需要聲明屬性、其類型以及在某些情況下允許的值範圍。
@@ -423,212 +428,115 @@ Cloud Service不支援Logback，請移除其所有使用方式。 如果您使�
 
 有關 OSGI 設定的其他資訊可以在[此位置](/help/implementing/deploying/configuring-osgi.md)找到。
 
-+++無法修改的 OSGi 設定。
+### 已棄用的OSGi屬性（不再可修改的屬性） {#deprecated-osgi-properties}
 
-* **`org.apache.felix.webconsole.internal.servlet.OsgiManager`**(公告日期：2021 年 4 月 30 日，執行日期：2021 年 7 月 31 日)
-* **`com.day.cq.auth.impl.cug.CugSupportImpl`**(公告日期：2021 年 4 月 30 日，執行日期：2021 年 7 月 31 日)
-* **`com.day.cq.jcrclustersupport.ClusterStartLevelController`**(公告日期：2021 年 4 月 30 日，執行日期：2021 年 7 月 31 日)
-* **`org.apache.felix.http (Factory)`**(公告日期：2021 年 4 月 30 日，執行日期：2021 年 7 月 31 日)
-* **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`**(公告日期：2021 年 8 月 25 日，執行日期：2021 年 11 月 26 日)
-+++
+無法再修改下列OSGi元件PID的某些屬性。 這將在下述時間範圍內執行。
 
-+++OSGi 設定須遵守建置驗證規則。
+| **OSGI元件識別碼** | **無法修改的屬性** | **棄用** | **強制** |
+|---|---|---|---|
+| **`org.apache.sling.commons.log.LogManager`** | 全部 | 4/24/25 | 2025年8月31日（設定在6月被忽略） |
+| **`org.apache.sling.commons.log.LogManager.factory.config`** | org.apache.sling.commons.log.file， org.apache.sling.commons.log.pattern | 4/24/25 | 2025年8月31日（設定在6月被忽略） |
+| **`org.apache.felix.webconsole.internal.servlet.OsgiManager`** | 全部 | 2024 | 8/31/25 |
+| **`com.day.cq.auth.impl.cug.CugSupportImpl`** | 全部 | 2024 |
+| **`com.day.cq.jcrclustersupport.ClusterStartLevelController`** | 全部 | 2024 | 8/31/25 |
+| **`org.apache.felix.http (Factory)`** | 全部 | 2024 | 8/31/25 |
+| **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`** | 全部 | 2024 | 8/31/25 |
+| **`com.adobe.granite.toggle.impl.ToggleRouterImpl`** | 全部 | 6/3/25 | 8/31/25 |
+| **`org.apache.sling.engine.impl.log.RequestLoggerFilter`** | 全部 | 6/3/25 | 8/31/25 |
+| **`org.apache.sling.feature.apiregions.impl`** | 全部 | 6/3/25 | 8/31/25 |
+| **`com.adobe.granite.toggle.impl.dev.DynamicToggleProviderImpl`** | 全部 | 6/3/25 | 8/31/25 |
+| **`org.apache.sling.jcr.resource.internal.helper.jcr.BinaryDownloadUriProvider`** | 全部 | 6/3/25 | 8/31/25 |
+| **`com.adobe.cq.unifiedshell.impl.discovery.DiscoveryServlet`** | 全部 | 6/3/25 | 8/31/25 |
+| **`com.adobe.cq.unifiedshell.impl.ui.FrameErrorHandler`** | 全部 | 6/3/25 | 8/31/25 |
+| **`com.adobe.cq.unifiedshell.impl.config.UnifiedShellConfService`** | 全部 | 6/3/25 | 8/31/25 |
+| **`com.adobe.cq.unifiedshell.impl.config.RepositoryIdentifier`** | 全部 | 6/3/25 | 8/31/25 |
+| **`org.apache.http.proxyconfigurator`** | 全部 | 6/3/25 | 8/31/25 |
+| **`org.apache.sling.feature.apiregions.factory`** | 全部 | 6/3/25 | 8/31/25 |
+| **`com.adobe.granite.toggle.monitor.systemproperty`** | 全部 | 6/3/25 | 8/31/25 |
 
-* **`org.apache.felix.eventadmin.impl.EventAdmin`**(公告日期：2021 年 4 月 30 日，執行日期：2021 年 7 月 31 日)
-* `org.apache.felix.eventadmin.ThreadPoolSize`
-   * 類型：整數
-   * 所需範圍：2-100
-* `org.apache.felix.eventadmin.AsyncToSyncThreadRatio`
-   * 類型：兩次
-* `org.apache.felix.eventadmin.Timeout`
-   * 類型：整數
-* `org.apache.felix.eventadmin.RequireTopic`
-   * 類型：布林值
-* `org.apache.felix.eventadmin.IgnoreTimeout`
-   * 必填
-   * 類型：字串陣列
-   * 所需範圍：必須至少包括全部 `org.apache.felix*`、`org.apache.sling*`、`come.day*`、`com.adobe*`
-* `org.apache.felix.eventadmin.IgnoreTopic`
-   * 類型：字串陣列
-* **`org.apache.felix.http`**(公告日期：2021 年 4 月 30 日，執行日期：2021 年 7 月 31 日)
-   * `org.apache.felix.http.timeout`
-      * 類型：整數
-   * `org.apache.felix.http.session.timeout`
-      * 類型：整數
-   * `org.apache.felix.http.jetty.threadpool.max`
-      * 類型：整數
-   * `org.apache.felix.http.jetty.headerBufferSize`
-      * 類型：整數
-   * `org.apache.felix.http.jetty.requestBufferSize`
-      * 類型：整數
-   * `org.apache.felix.http.jetty.responseBufferSize`
-      * 類型：整數
-   * `org.apache.felix.http.jetty.maxFormSize`
-      * 類型：整數
-   * `org.apache.felix.https.jetty.session.cookie.httpOnly`
-      * 類型：布林值
-   * `org.apache.felix.https.jetty.session.cookie.secure`
-      * 類型：布林值
-   * `org.eclipse.jetty.servlet.SessionIdPathParameterName`
-      * 類型：字串
-   * `org.eclipse.jetty.servlet.CheckingRemoteSessionIdEncoding`
-      * 類型：布林值
-   * `org.eclipse.jetty.servlet.SessionCookie`
-      * 類型：字串
-   * `org.eclipse.jetty.servlet.SessionDomain`
-      * 類型：字串
-   * `org.eclipse.jetty.servlet.SessionPath`
-      * 類型：字串
-   * `org.eclipse.jetty.servlet.MaxAge`
-      * 類型：整數
-   * `org.eclipse.jetty.servlet.SessionScavengingInterval`
-      * 類型：整數
-   * `org.apache.felix.jetty.gziphandler.enable`
-      * 類型：布林值
-   * `org.apache.felix.jetty.gzip.minGzipSize`
-      * 類型：整數
-   * `org.apache.felix.jetty.gzip.compressionLevel`
-      * 類型：整數
-   * `org.apache.felix.jetty.gzip.inflateBufferSize`
-      * 類型：整數
-   * `org.apache.felix.jetty.gzip.syncFlush`
-      * 類型：布林值
-   * `org.apache.felix.jetty.gzip.excludedUserAgents`
-      * 類型：字串
-   * `org.apache.felix.jetty.gzip.includedMethods`
-      * 類型：字串陣列
-   * `org.apache.felix.jetty.gzip.excludedMethods`
-      * 類型：字串陣列
-   * `org.apache.felix.jetty.gzip.includedPaths`
-      * 類型：字串陣列
-   * `org.apache.felix.jetty.gzip.excludedPaths`
-      * 類型：字串陣列
-   * `org.apache.felix.jetty.gzip.includedMimeTypes`
-      * 類型：字串陣列
-   * `org.apache.felix.jetty.gzip.excludedMimeTypes`
-      * 類型：字串陣列
-   * `org.apache.felix.http.session.invalidate`
-      * 類型：布林值
-   * `org.apache.felix.http.session.container.attribute`
-      * 類型：字串陣列
-   * `org.apache.felix.http.session.uniqueid`
-      * 類型：布林值
-* **`org.apache.sling.scripting.cache`**(公告日期：2021 年 4 月 30 日，執行日期：2021 年 7 月 31 日)
-   * `org.apache.sling.scripting.cache.size`
-      * 類型：整數
-      * 所需範圍：>= 2048
-   * `org.apache.sling.scripting.cache.additional_extensions`
-      * 必填
-      * 類型：字串陣列
-      * 所需範圍：必須包含 js
-* **`com.day.cq.mailer.DefaultMailService`**(公告日期：2021 年 4 月 30 日，執行日期：2021 年 7 月 31 日)
-   * `smtp.host`
-      * 類型：字串
-   * `smtp.port`
-      * 類型：整數
-      * 所需範圍：465、587 或 25
-   * `smtp.user`
-      * 類型：字串
-   * `smtp.password`
-      * 類型：字串
-   * `from.address`
-      * 類型：字串
-   * `smtp.ssl`
-      * 類型：字串
-   * `smtp.starttls`
-      * 類型：布林值
-   * `smtp.requiretls`
-      * 類型：布林值
-   * `debug.email`
-      * 類型：布林值
-   * `oauth.flow`
-      * 類型：布林值
-* **`org.apache.sling.commons.log.LogManager.factory.config`**(公告日期：2021 年 11 月 16 日，執行日期：2021 年 2 月 16 日)
-   * `org.apache.sling.commons.log.level`
-      * 類型：分項清單
-      * 所需範圍：INFO、DEBUG 或 TRACE
-   * `org.apache.sling.commons.log.names`
-      * 類型：字串
-   * `org.apache.sling.commons.log.file`
-      * 類型：字串
-   * `org.apache.sling.commons.log.additiv`
-      * 類型：布林值
-+++
+<!--
+### Unmodifiable OSGi properties {#unmodifiable-osgi-properties}
+
+Properties for the following OSGi component PIDs cannot be modified, as described below.
+-->
+
+### OSGi屬性限制 {#restrictions-osgi-properties}
+
+某些OSGi屬性的值限製為以下所述的規則。
+
+| OSGi元件PID |   | 必填 | 類型 | 限制（如果適用） |
+|---|---|---|---|---|
+| `org.apache.felix.eventadmin.impl.EventAdmin` | `org.apache.felix.eventadmin.ThreadPoolSize` | 是 | 整數 | 2-100 |
+|   | `org.apache.felix.eventadmin.AsyncToSyncThreadRatio` |   | 兩次 | — |
+|   | `org.apache.felix.eventadmin.AsyncToSyncThreadRatio` |   | 整數 | — |
+|   | `org.apache.felix.eventadmin.RequireTopic` |   | 布林值 | — |
+|   | `org.apache.felix.eventadmin.IgnoreTimeout` | 是 | 字串陣列 | 必須包含至少所有`org.apache.felix*`、`org.apache.sling*`、`come.day*`、`com.adobe*` |
+|   | `org.apache.felix.eventadmin.IgnoreTopic` |   | 字串陣列 | — |
+| `org.apache.felix.http` | `org.apache.felix.http.timeout` |   | 整數 |   |
+|   | `org.apache.felix.http.session.timeout` |   | 整數 |   |
+|   | `org.apache.felix.http.jetty.threadpool.max` |   | 整數 |   |
+|   | `org.apache.felix.http.jetty.headerBufferSize` |   | 整數 |   |
+|   | `org.apache.felix.http.jetty.requestBufferSize` |   | 整數 |   |
+|   | `org.apache.felix.http.jetty.responseBufferSize` |   | 整數 |   |
+|   | `org.apache.felix.http.jetty.maxFormSize` |   | 整數 |   |
+|   | `org.apache.felix.https.jetty.session.cookie.httpOnly` |   | 布林值 |   |
+|   | `org.apache.felix.https.jetty.session.cookie.secure` |   | 布林值 |   |
+|   | `org.eclipse.jetty.servlet.SessionIdPathParameterName` |   | 字串 |   |
+|   | `org.eclipse.jetty.servlet.CheckingRemoteSessionIdEncoding` |   | 布林值 |   |
+|   | `org.eclipse.jetty.servlet.SessionCookie` |   | 字串 |   |
+|   | `org.eclipse.jetty.servlet.SessionDomain` |   | 字串 |   |
+|   | `org.eclipse.jetty.servlet.SessionPath` |   | 字串 |   |
+|   | `org.eclipse.jetty.servlet.MaxAge` |   | 整數 |   |
+|   | `org.eclipse.jetty.servlet.SessionScavengingInterval` |   | 整數 |   |
+|   | `org.apache.felix.jetty.gziphandler.enable` |   | 布林值 |   |
+|   | `org.apache.felix.jetty.gzip.minGzipSize` |   | 整數 |   |
+|   | `org.apache.felix.jetty.gzip.compressionLevel` |   | 整數 |   |
+|   | `org.apache.felix.jetty.gzip.inflateBufferSize` |   | 整數 |   |
+|   | `org.apache.felix.jetty.gzip.syncFlush` |   | 布林值 |   |
+|   | `org.apache.felix.jetty.gzip.excludedUserAgents` |   | 字串 |   |
+|   | `org.apache.felix.jetty.gzip.includedMethods` |   | 字串陣列 |   |
+|   | `org.apache.felix.jetty.gzip.excludedMethods` |   | 字串陣列 |   |
+|   | `org.apache.felix.jetty.gzip.includedPaths` |   | 字串陣列 |   |
+|   | `org.apache.felix.jetty.gzip.excludedPaths` |   | 字串陣列 |   |
+|   | `org.apache.felix.jetty.gzip.includedMimeTypes` |   | 字串陣列 |   |
+|   | `org.apache.felix.http.session.invalidate` |   | 布林值 |   |
+|   | `org.apache.felix.http.session.container.attribute` |   | 字串陣列 |   |
+|   | `org.apache.felix.http.session.uniqueid` |   | 布林值 |   |
+| `org.apache.sling.scripting.cache` | `org.apache.sling.scripting.cache.size` | 是 | 整數 | >= 2048 |
+|   | `org.apache.sling.scripting.cache.additional_extensions` | 是 | 字串陣列 | 必須包含「js」 |
+| `com.day.cq.mailer.DefaultMailService` | `smtp.host` |   | 字串 |   |
+|   | `smtp.port` | 是 | 整數 | 「465」、「587」或「25」 |
+|   | `smtp.user` |   | 字串 |   |
+|   | `smtp.password` |   | 字串 |   |
+|   | `from.address` |   | 字串 |   |
+|   | `smtp.ssl` |   | 字串 |   |
+|   | `smtp.starttls` |   | 布林值 |   |
+|   | `smtp.requiretls` |   | 布林值 |   |
+|   | `debug.email` |   | 布林值 |   |
+|   | `oauth.flow` |   | 布林值 |   |
+| `org.apache.sling.commons.log.LogManager.factory.config` | `org.apache.sling.commons.log.level` | 是 | 字串 | &quot;INFO&quot;、&quot;DEBUG&quot;或&quot;TRACE&quot; |
+|   | `org.apache.sling.commons.log.names` |   | 字串陣列 |   |
+|   | `org.apache.sling.commons.log.additiv` |   | 布林值 |   |
+| `org.apache.sling.engine.impl.log.RequestLogger` | `request.log.output` | 否 | 字串 |   |
+|   | `request.log.outputtype` | 否 | 字串 |   |
+|   | `request.log.entry.format` | 否 | 字串 |   |
+|   | `request.log.exit.format` | 否 | 字串 |   |
+|   | `request.log.enabled` | 否 | 字串 |   |
+|   | `access.log.output` | 否 | 字串 |   |
+|   | `access.log.outputtype` | 否 | 字串 |   |
+|   | `access.log.enabled` | 否 | 字串 |   |
+| `org.apache.sling.servlets.resolver.SlingServletResolver` | `servletresolver.servletRoot` | 否 | 字串 |   |
+|   | `servletresolver.cacheSize` | 否 | 整數 |   |
+|   | `servletresolver.paths` | 否 | 字串[] |   |
+|   | `servletresolver.defaultExtensions` | 否 | 字串 |   |
+|   | `servletresolver.mountProviders` | 否 | 布林值 |   |
+|   | `servletresolver.scriptUser` | 否 | 字串 | 已棄用，請勿使用 |
+| `com.day.cq.commons.impl.ExternalizerImpl` | `externalizer.domains` | 否 | 字串[] |   |
+|   | `externalizer.encodedpath` | 否 | 布林值 |   |
+|   | `externalizer.host` | 否 | 字串 |   |
+|   | `externalizer.contextpath` | 否 | 字串 |   |
 
 ## Java Runtime 更新至 21 版 {#java-runtime-update-21}
 
-Adobe Experience Manager as a Cloud Service 正在轉變為 Java 21 執行階段。為了確保相容性，一定要按照「[執行階段需求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)」中所述更新資料庫版本 。
+Adobe Experience Manager as a Cloud Service已轉換為Java 21執行階段。 為了確保相容性，一定要按照「[執行階段需求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)」中所述更新資料庫版本 。
 
-<!-- (OLD Removed from here to end of topic 1/16/25 as per instruction in https://wiki.corp.adobe.com/pages/viewpage.action?pageId=3359689801) AEM as a Cloud Service will be moving to Java 21 runtime. In order to ensure compatibility, it is essential to make the following adjustments:
-
-### Runtime Requirements
-
-These adjustments are required to ensure compatibility with the Java 21 runtime. The libraries can be updated at any time as they are compatible with older versions of Java.
-
-#### Minimum version of org.objectweb.asm {#org.objectweb.asm}
-
-Update the usage of org.objectweb.asm to version 9.5 or higher to ensure support for newer JVM runtimes.
-
-#### Minimum version of org.apache.groovy {#org.apache.groovy}
-
-Update the usage of org.apache.groovy to version 4.0.22 or higher to ensure support for newer JVM runtimes.
-
-This bundle can be indirectly included by adding third party dependencies such as the AEM Groovy Console.
-
-### Build-time Requirements
-
-These adjustments are required to allow building the project with newer versions of Java but not required for runtime compatibility. The Maven plug-ins can be updated at any time as they are compatible with older versions of Java.
-
-#### Minimum version of bnd-maven-plugin {#bnd-maven-plugin}
-
-Update the usage of bnd-maven-plugin to version 6.4.0 to ensure support for newer JVM runtimes. Versions 7 or higher are not compatible with Java 11 or lower so an upgrade to that version is not recommended at this time.
-
-#### Minimum version of aemanalyser-maven-plugin {#aemanalyser-maven-plugin}
-
-Update the usage of aemanalyser-maven-plugin to version 1.6.6 or higher to ensure support for newer JVM runtimes.
-
-#### Minimum version of maven-bundle-plugin  {#maven-bundle-plugin}
-
-Update the usage of maven-bundle-plugin to version 5.1.5 or higher to ensure support for newer JVM runtimes.
-
-#### Update dependencies in maven-scr-plugin  {#maven-scr-plugin}
-
-The `maven-scr-plugin` is not directly compatible with Java 17 and 21. However, it is possible to generate the descriptor files by updating the ASM dependency version within the plugin configuration, similar to the snippet below:
-
-```
-[source,xml]
- <project>
-   ...
-   <build>
-     ...
-     <plugins>
-       ...
-       <plugin>
-         <groupId>org.apache.felix</groupId>
-         <artifactId>maven-scr-plugin</artifactId>
-         <version>1.26.4</version>
-         <executions>
-           <execution>
-             <id>generate-scr-scrdescriptor</id>
-             <goals>
-               <goal>scr</goal>
-             </goals>
-           </execution>
-         </executions>
-         <dependencies>
-           <dependency>
-             <groupId>org.ow2.asm</groupId>
-             <artifactId>asm-analysis</artifactId>
-             <version>9.7.1</version>
-             <scope>compile</scope>
-           </dependency>
-         </dependencies>
-       </plugin>
-       ...
-     </plugins>
-     ...
-   </build>
-   ...
- </project>
-```
--->
