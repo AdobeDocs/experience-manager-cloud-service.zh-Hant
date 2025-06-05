@@ -3,9 +3,9 @@ title: Content Hub 常見問題 (FAQ)
 description: 了解一些 Content Hub 最常見問題 (FAQ) 的答案。
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
 source-git-commit: 95c643151e4828fa2eae0725dc1081aeeabc42fb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1367'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -111,23 +111,23 @@ Content Hub 目前尚不適用於非生產環境 (中繼和開發)。Assets Ulti
 
 1. 使用「**[!UICONTROL 修改日期]**」欄位對資產進行排序。
 
-## 為什麼我的資產卡上沒有顯示使用Adobe Express編輯選項來重新混合資產，以建立新的變數？ {#edit-using-express-not-available}
+## 為什麼我在資產卡上沒有看到「使用 Adobe Express 編輯」選項，以便我能夠混編資產以建立新的變化版本？ {#edit-using-express-not-available}
 
-若要檢視資產卡上的「使用Adobe Express編輯&#x200B;**」**&#x200B;選項，使用者必須擁有Adobe Express Enterprise或Teams權利（請參閱[計畫](https://www.adobe.com/express/pricing)），以及[Content Hub使用者有權將資產重新混合成新變數](#onboard-content-hub-users-add-assets)的許可權。
+若要在資產卡上檢視「**使用 Adobe Express 編輯**」選項，除了擁有 [Content Hub 使用者的權限 (有權將資產混編為新的變化版本)](#onboard-content-hub-users-add-assets) 之外，使用者還必須擁有 Adobe Express 企業版或團隊版權益 (請參閱[計劃](https://www.adobe.com/tw/express/pricing))。
 
-有一些使用者指派至[!DNL Content Hub]與[!DNL Adobe Express]的設定：
+對於如何將使用者指派至 [!DNL Content Hub] 和 [!DNL Adobe Express]，有以下幾種設定：
 
-1. 組織有[Assets Ultimate](/help/assets/assets-ultimate-overview.md)或[Assets Prime](/help/assets/assets-prime.md)授權，且使用者已指派給Admin Console中的其中一個Experience Manager設定檔，其中包括Adobe Express權益（共同作業人員或超級使用者）。 整合無需任何其他設定即可運作。
+1. 組織擁有 [Assets Ultimate](/help/assets/assets-ultimate-overview.md) 或 [Assets Prime](/help/assets/assets-prime.md) 授權，並且在 Admin Console 中將使用者指派至包含 Adobe Express 權益 (協作者或進階使用者) 的其中一個 Experience Manager 設定檔。此整合無需任何額外設定即可運作。
 
-1. [!DNL Adobe Express]部署在與[!DNL Experience Manager Assets]相同的[!DNL Adobe Admin Console]中，具有[!DNL Content Hub]。 整合無需任何其他設定即可運作。
+1. [!DNL Adobe Express] 與含有 [!DNL Content Hub] 的 [!DNL Experience Manager Assets] 是部署在同一個 [!DNL Adobe Admin Console] 中。此整合無需任何額外設定即可運作。
 
-1. [!DNL Adobe Express]部署在與[!DNL Experience Manager Assets]不同的[!DNL Adobe Admin Console]與[!DNL Content Hub]。 在這種情況下，[!DNL Assets]管理員可以設定整合（請參閱[檔案](/help/assets/connect-assets-with-creative-cloud.md)），讓整合發揮作用。
+1. [!DNL Adobe Express] 與含有 [!DNL Content Hub] 的 [!DNL Experience Manager Assets] 是部署在不同的 [!DNL Adobe Admin Console] 中。在這種情況下，[!DNL Assets] 管理員可以設定整合 (請參閱[說明文件](/help/assets/connect-assets-with-creative-cloud.md)) 以使整合正常運作。
 
    >[!NOTE]
    >
-   >在兩個Admin Console中指派給Express和Assets產品設定檔的使用者，必須有相同的電子郵件地址，並使用企業&#x200B;**企業或學校**&#x200B;帳戶，而非&#x200B;**個人**&#x200B;帳戶。 理想的設定是將Admin Console設定為&#x200B;**Federated ID**，並在兩者之間設定信任關係，讓使用者獲得順暢的單一登入體驗。 部分Express計畫（例如Express團隊）不支援Federated ID /單一登入。
+   >在兩個 Admin Console 中都指派至 Express 和 Assets 產品設定檔的使用者必須具有相同的電子郵件地址，並使用&#x200B;**企業或學校**&#x200B;帳戶，而不是&#x200B;**個人**&#x200B;帳戶。理想的設定是將兩個 Admin Consoles 都設定為 **Federated ID**，並在它們之間建立信任關係，讓使用者擁有順暢的單一登入體驗。有些 Express 計劃 (例如 Express 團隊版) 不支援 Federated ID/單一登入。
 
-除了正確的產品許可權，Content Hub中的Adobe Express整合要求指派的使用者必須在支援Content Hub的Assets製作環境中，至少在&#x200B;**[!UICONTROL # /content/dam/hydrated-assets/]**&#x200B;資料夾階層中，擁有至少[!UICONTROL 可編輯]許可權，Content Hub使用者可在其中儲存他們使用Express建立的內容。 請參閱Admin檢視（觸控式UI）中的[許可權管理](/help/security/touch-ui-principal-view.md)或Assets檢視[&#128279;](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions)中簡化的許可權管理。
+除了正確的產品權益外，Content Hub 中的 Adobe Express 整合還會要求被指派的使用者至少對支援 Content Hub 的 Assets 製作環境擁有「[!UICONTROL 可以編輯]」權限，並且至少在 **[#UICONTROL /content/dam/hydrated-assets/]** 資料夾階層中擁有該權限，以便 Content Hub 使用者在其中儲存使用 Express 製作的內容。請參閱「管理員」檢視 (觸控式 UI) 中的[權限管理](/help/security/touch-ui-principal-view.md)或[「資產」檢視中簡化的權限管理](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions)。
 
 ## 我可以設定 Content Hub，以便本組織的品牌指導方針在首頁上顯示為連結嗎？ {#content-hub-setup-brand-guidelines}
 
