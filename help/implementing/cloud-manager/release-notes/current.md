@@ -1,39 +1,55 @@
 ---
-title: Cloud Manager 2025.5.0 版發行說明
-description: 了解有關 Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2025.5.0 的發行資訊。
+title: Cloud Manager 2025.6.0 版發行說明
+description: 了解有關 Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2025.6.0 的發行資訊。
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 8696cf8a7e7cfc439450b34fa6fda10b38cd415e
+source-git-commit: 2d0153d9a7c18097266d94575c2a61e471ccd536
 workflow-type: tm+mt
-source-wordcount: '640'
-ht-degree: 95%
+source-wordcount: '961'
+ht-degree: 57%
 
 ---
 
-# Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2025.5.0 的發行說明 {#release-notes}
+# Adobe Experience Manager as a Cloud Service 中 Cloud Manager 2025.6.0 的發行說明 {#release-notes}
 
 <!-- https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2025.03.0+Release -->
 
-了解有關 AEM (Adobe Experience Manager) as a Cloud Service 中 Cloud Manager 2025.5.0 的發行資訊。
+了解有關 AEM (Adobe Experience Manager) as a Cloud Service 中 Cloud Manager 2025.6.0 的發行資訊。
 
 另請參閱 [Adobe Experience Manager as a Cloud Service 最新發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)。
 
 ## 發行日期 {#release-date}
 
-AEM as a Cloud Service 中 Cloud Manager 2025.5.0 的發行日期是 2025 年 5 月 8 日 (星期四)。
+AEM as a Cloud Service中的Cloud Manager 2025.6.0發行日期是2025年6月5日星期四。
 
-下一個版本預計於 2025 年 6 月 5 日 (星期四) 發行。
+下一個預計發行日期為2025年7月10日星期四。
 
 ## 新增功能 {#what-is-new}
 
-### 一鍵設定 Edge Delivery Services 的內容來源
+* **(UI)授權儀表板現在包含Edge Delivery Services授權**
 
-Adobe Experience Manager (AEM) Edge Delivery Services 透過快速、遍布全球的邊緣網路，允許透過多個來源 (例如 Google Drive、SharePoint 或 AEM 本身) 進行內容傳遞。
+  Edge Delivery Services授權使用方式現在顯示在授權儀表板中，讓您更清楚地檢視您的權益和狀態。<!-- CMGR-67686 -->
 
-Helix 4和Helix 5的內容來源組態不同。 瞭解差異，並遵循兩個版本的完整設定步驟、範例和驗證指示。
+  ![授權儀表板](/help/implementing/cloud-manager/assets/license-dashboard.png)
 
-請參閱[設定您的內容來源](/help/implementing/cloud-manager/edge-delivery/configure-content-source.md)。
+  請參閱[授權儀表板](/help/implementing/cloud-manager/license-dashboard.md)。
+
+* **(UI) Edge Delivery網站設定已更新**
+
+  要求&#x200B;**Edge Delivery Origin**&#x200B;而非&#x200B;**存放庫URL**，簡化新增Edge Delivery網站的流程，讓上線和設定更快速且更直覺<!-- CMGR-67686 -->
+
+  ![新增Edge Delivery網站對話方塊](/help/implementing/cloud-manager/release-notes/assets/add-edge-delivery-site.png)
+
+  請參閱[新增Edge Delivery網站](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)。
+
+* **(UI)管道我的最愛**
+
+  在此版本中，Cloud Manager引入釘選我的最愛管道的功能，可讓您將特定管道標示為我的最愛，以便這些管道顯示在&#x200B;**管道**&#x200B;頁面上的清單頂端。 此增強功能使經常存取的管道更容易找到和執行。<!-- CMGR-68293 -->
+
+  ![管道標示為我的最愛](/help/implementing/cloud-manager/release-notes/assets/pipeline-favorites.png) *兩個管道標示為我的最愛。*
+
+  檢視[標示管道我的最愛](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipeline-favorites)。
 
 
 ## 早期採用者計劃 {#early-adoption}
@@ -42,13 +58,26 @@ Helix 4和Helix 5的內容來源組態不同。 瞭解差異，並遵循兩個�
 
 目前提供以下早期採用者機會：
 
-### 新增 Edge Delivery 設定管道 {#add-eds-pipeline}
 
-現在，使用 Edge Delivery Services 建置的網站已支援設定管道，所以在 Cloud Service 環境以外也可以使用這項功能。您可以使用&#x200B;**設定管道**&#x200B;來管理設定，例如流量篩選規則和 Web 應用程式防火牆 (WAF) 設定等 (如適用)。請參閱[支援的設定](/help/operations/config-pipeline.md#configurations)。
+### 管理存取權杖{#manage-access-tokens}
 
-![在「新增管道」下拉式清單中新增 Edge Delivery 管道](/help/implementing/cloud-manager/release-notes/assets/add-edge-delivery-pipeline.png)
+在Cloud Manager中使用&#x200B;**管理存取權杖**&#x200B;來檢視、重新命名和刪除與自備Git存放庫相關的存取權杖，例如GitHub Enterprise、GitLab、Bitbucket和Azure DevOps。
 
-如果您有興趣測試這個新功能並分享意見回饋，請使用與您的 Adobe ID 相關聯的電子郵件寄送電子郵件至 [grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com)。
+檢視[管理存取權杖](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)
+
+如果您有興趣測試這項新功能及分享您的意見回饋，請從與Adobe ID相關聯的電子郵件地址傳送電子郵件至。
+
+
+### 專用測試環境 {#specialized-test-environment}
+
+Cloud Manager現在支援新增名為&#x200B;**特殊測試環境**&#x200B;的新環境型別。 此環境旨在協助團隊在接近生產的情況下驗證功能，然後再上線。 此環境型別不同於&#x200B;*生產+階段*、*開發*&#x200B;或&#x200B;*快速開發*&#x200B;環境，並提供執行進階驗證案例的重點空間。
+
+請參閱[新增專業測試環境](/help/implementing/cloud-manager/specialized-test-environment.md)。
+
+![已選取「特殊化測試環境」選項按鈕的「新增環境」對話方塊](/help/implementing/cloud-manager/release-notes/assets/specialized-test-environment.png)
+
+如果您有興趣測試這項新功能並分享您的意見回饋，請從與Adobe ID相關聯的電子郵件地址傳送電子郵件至[grp-earlyadopter_cs_advtestenvironment@adobe.com](mailto:grp-earlyadopter_cs_advtestenvironment@adobe.com)。
+
 
 ### 自備 Git - 現在支援 Azure DevOps {#gitlab-bitbucket-azure-vsts}
 
@@ -67,6 +96,7 @@ Helix 4和Helix 5的內容來源組態不同。 瞭解差異，並遵循兩個�
 
 如果您有興趣測試此新功能並分享您的意見回饋，請使用與您的 Adobe ID 關聯的電子郵件地址向 [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) 傳送電子郵件。請務必包含您要使用的 Git 平台以及您是否使用私人/公開或企業存放庫結構。
 
+
 #### 有關自備 Git 的常見問題
 
 | 問題 | 答案 |
@@ -77,15 +107,22 @@ Helix 4和Helix 5的內容來源組態不同。 瞭解差異，並遵循兩個�
 | *所有 GitLab 存放庫 URL 是否均可運作？使用中的存放庫 URL 遵循 `https://gitlab_dedicated_url.com/path/repo-name.git` 格式，與文件中的範例不同。* | 是的，支援所有支援 API V3 或 V4 的 GitLab 存放庫，包括自行託管的 GitLab URL，例如[在 Cloud Manager 中新增外部存放庫](/help/implementing/cloud-manager/managing-code/external-repositories.md) (`https://git-vendor-name.com/org-name/repo-name.git`) 中所說明的 URL。 |
 
 
-<!--
-## Bug fixes
+### 新增 Edge Delivery 設定管道 {#add-eds-pipeline}
 
-* Issue
+現在，使用 Edge Delivery Services 建置的網站已支援設定管道，所以在 Cloud Service 環境以外也可以使用這項功能。您可以使用&#x200B;**設定管道**&#x200B;來管理設定，例如流量篩選規則和 Web 應用程式防火牆 (WAF) 設定等 (如適用)。請參閱[支援的設定](/help/operations/config-pipeline.md#configurations)。
 
-* Issue
+![在新增管道下拉式清單中新增Edge Delivery管道](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *從&#x200B;**方案總覽**頁面，**管道**卡新增Edge Delivery管道。*
 
-* Issue
--->
+![新增Edge Delivery管道對話方塊](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *新增Edge Delivery管道對話方塊。*
+
+如果您有興趣測試這個新功能並分享意見回饋，請使用與您的 Adobe ID 相關聯的電子郵件寄送電子郵件至 [grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com)。
+
+
+## 錯誤修正
+
+* 先前標示為`HIBERNATED`的沙箱環境不再卡在該狀態，讓管道執行或部署可如預期繼續進行。<!-- CMGR-67705 -->
+* 現在，AEM Cloud Manager在擷取客戶成品時，正確對應了409錯誤所導致的Maven建置失敗（衝突）與客戶導致的失敗。 此變更透過區分內部錯誤和與客戶環境設定相關的問題來改善錯誤訊息。<!-- CMGR-66673 -->
+
 
 <!-- ## Known issues {#known-issues} -->
 
