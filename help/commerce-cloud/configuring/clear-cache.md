@@ -27,6 +27,7 @@ ht-degree: 2%
 * 啟用接聽程式，以在您的專案中新增`com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json`設定，以清除每個AEM執行個體（發佈與作者）的快取，如[這裡](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json)所示。
    * 作者和發佈執行個體皆應啟用設定。
    * 啟用Dispatcher快取（選用）：您可以透過在上述設定中將`enableDispatcherCacheInvalidation`屬性設定為true來啟用Dispatcher清除快取設定。 這提供了從Dispatcher清除快取的功能。
+
   >[!NOTE]
   >
   > 這僅適用於發佈執行個體。
@@ -59,6 +60,7 @@ ht-degree: 2%
        "storePath": "/content/venia/us/en", // Mandatory : Needs to be given to know for which site we are removing the clear cache.
    }'
    ```
+
 如果一切順利，新變更會反映在每個執行個體中。 如果變更沒有反映在發佈執行個體中，請檢視私人視窗中的對應PLP和PDP頁面。
 
 >[!NOTE]

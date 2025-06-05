@@ -106,7 +106,7 @@ Content Hub現在也可讓您將選取的資產及其轉譯下載為ZIP檔案，
 
 直接從Content Hub使用者介面存取下載的所有Dynamic Media預設集轉譯和智慧型裁切。
 
-{&#x200B;0}Dynamic Media轉譯](/help/assets/assets/dm-renditions-content-hub.png)![
+{&#x200B;0}Dynamic Media轉譯![&#128279;](/help/assets/assets/dm-renditions-content-hub.png)
 
 ### Dynamic Media中的新功能 {#new-features-dynamic-media}
 
@@ -114,7 +114,7 @@ Content Hub現在也可讓您將選取的資產及其轉譯下載為ZIP檔案，
 
 Experience Manager (AEM) Dynamic Media與Journey Optimizer (AJO) B2C的原生整合，使行銷人員可輕鬆將AEM Dynamic Media資產（轉譯和DM範本）內嵌至AJO內容，並提供即時更新和跨管道的超個人化體驗。
 
-{&#x200B;0}Dynamic Media轉譯](/help/assets/assets/dm-ajo-integration.png)![
+{&#x200B;0}Dynamic Media轉譯![&#128279;](/help/assets/assets/dm-ajo-integration.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
