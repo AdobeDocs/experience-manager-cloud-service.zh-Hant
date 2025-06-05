@@ -4,9 +4,9 @@ description: 了解有關 Adobe Experience Manager as a Cloud Service 中 Cloud 
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 2d0153d9a7c18097266d94575c2a61e471ccd536
+source-git-commit: 6365b1c4109c2f2a77fbc332d11e1a8906d2cc6d
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '958'
 ht-degree: 57%
 
 ---
@@ -27,7 +27,7 @@ AEM as a Cloud Service中的Cloud Manager 2025.6.0發行日期是2025年6月5日
 
 ## 新增功能 {#what-is-new}
 
-* **(UI)授權儀表板現在包含Edge Delivery Services授權**
+* **授權儀表板現在包含Edge Delivery Services授權**
 
   Edge Delivery Services授權使用方式現在顯示在授權儀表板中，讓您更清楚地檢視您的權益和狀態。<!-- CMGR-67686 -->
 
@@ -35,7 +35,7 @@ AEM as a Cloud Service中的Cloud Manager 2025.6.0發行日期是2025年6月5日
 
   請參閱[授權儀表板](/help/implementing/cloud-manager/license-dashboard.md)。
 
-* **(UI) Edge Delivery網站設定已更新**
+* **Edge Delivery網站設定已更新**
 
   要求&#x200B;**Edge Delivery Origin**&#x200B;而非&#x200B;**存放庫URL**，簡化新增Edge Delivery網站的流程，讓上線和設定更快速且更直覺<!-- CMGR-67686 -->
 
@@ -43,7 +43,7 @@ AEM as a Cloud Service中的Cloud Manager 2025.6.0發行日期是2025年6月5日
 
   請參閱[新增Edge Delivery網站](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)。
 
-* **(UI)管道我的最愛**
+* **管道我的最愛**
 
   在此版本中，Cloud Manager引入釘選我的最愛管道的功能，可讓您將特定管道標示為我的最愛，以便這些管道顯示在&#x200B;**管道**&#x200B;頁面上的清單頂端。 此增強功能使經常存取的管道更容易找到和執行。<!-- CMGR-68293 -->
 
@@ -111,7 +111,7 @@ Cloud Manager現在支援新增名為&#x200B;**特殊測試環境**&#x200B;的�
 
 現在，使用 Edge Delivery Services 建置的網站已支援設定管道，所以在 Cloud Service 環境以外也可以使用這項功能。您可以使用&#x200B;**設定管道**&#x200B;來管理設定，例如流量篩選規則和 Web 應用程式防火牆 (WAF) 設定等 (如適用)。請參閱[支援的設定](/help/operations/config-pipeline.md#configurations)。
 
-![在新增管道下拉式清單中新增Edge Delivery管道](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *從&#x200B;**方案總覽**&#x200B;頁面，**管道**&#x200B;卡新增Edge Delivery管道。*
+![在新增管道下拉式清單中新增Edge Delivery管道](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *從&#x200B;**方案總覽**頁面，**管道**卡新增Edge Delivery管道。*
 
 ![新增Edge Delivery管道對話方塊](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *新增Edge Delivery管道對話方塊。*
 
