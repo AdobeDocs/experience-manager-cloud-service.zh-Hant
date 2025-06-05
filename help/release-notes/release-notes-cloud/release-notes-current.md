@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 949a3956a88ae8075e1c518e50400f81b603924d
+source-git-commit: f01e5f505074ea32f313ba781ddb4e026cd47888
 workflow-type: tm+mt
 source-wordcount: '2067'
 ht-degree: 30%
@@ -41,7 +41,7 @@ ht-degree: 30%
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440931?quality=12&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -106,7 +106,7 @@ Content Hub現在也可讓您將選取的資產及其轉譯下載為ZIP檔案，
 
 直接從Content Hub使用者介面存取下載的所有Dynamic Media預設集轉譯和智慧型裁切。
 
-{&#x200B;0}Dynamic Media轉譯![&#128279;](/help/assets/assets/dm-renditions-content-hub.png)
+{&#x200B;0}Dynamic Media轉譯](/help/assets/assets/dm-renditions-content-hub.png)![
 
 ### Dynamic Media中的新功能 {#new-features-dynamic-media}
 
@@ -114,7 +114,7 @@ Content Hub現在也可讓您將選取的資產及其轉譯下載為ZIP檔案，
 
 Experience Manager (AEM) Dynamic Media與Journey Optimizer (AJO) B2C的原生整合，使行銷人員可輕鬆將AEM Dynamic Media資產（轉譯和DM範本）內嵌至AJO內容，並提供即時更新和跨管道的超個人化體驗。
 
-{&#x200B;0}Dynamic Media轉譯![&#128279;](/help/assets/assets/dm-ajo-integration.png)
+{&#x200B;0}Dynamic Media轉譯](/help/assets/assets/dm-ajo-integration.png)![
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -247,7 +247,7 @@ Edge運算可讓您在CDN層執行JavaScript，讓資料處理更貼近使用者
 
 我們對於即時生產網站的AEM發佈傳遞或Edge Delivery Services專案的可用機會有限。 若您有興趣參與或想深入瞭解，請傳送電子郵件至[aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com)，簡述您的使用案例。
 
-### 適用於Edge Delivery Services (Beta計畫)的CDN設定 {#cdn-eds-beta}
+### Edge Delivery Services (Beta計畫)的CDN設定 {#cdn-eds-beta}
 
 Adobe-Managed CDN提供彈性的設定選項，如[設定管道文章](/help/operations/config-pipeline.md#configurations)所述。
 
