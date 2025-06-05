@@ -259,7 +259,7 @@ ht-degree: 99%
    + [Sling Service 使用者對應和服務使用者定義的最佳做法](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
    + [Adobe as a Cloud Service 的客戶自控金鑰](/help/security/customer-managed-keys.md)
 + 上線 {#onboarding}
-   + [從這裡開始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=zh-Hant)
+   + [從這裡開始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
    + 上線歷程 {#journey}
       + [上線歷程概觀](/help/journey-onboarding/overview.md)
       + [上線準備](/help/journey-onboarding/preparation.md)
@@ -442,8 +442,8 @@ ht-degree: 99%
          + [刪除考量事項](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
          + [分析結構](/help/sites-cloud/administering/content-fragments/analysis.md)
          + [內容片段主控台中的資產](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
-         + [使用Adobe Journey Optimizer的內容片段](/help/sites-cloud/administering/content-fragments/content-fragments-with-journey-optimizer.md)
-         + [內容片段AJO外部參考擴充功能](/help/sites-cloud/administering/content-fragments/extension-content-fragment-ajo-external-references.md)
+         + [使用 Adobe Journey Optimizer 的內容片段](/help/sites-cloud/administering/content-fragments/content-fragments-with-journey-optimizer.md)
+         + [內容片段 AJO 外部參考擴充](/help/sites-cloud/administering/content-fragments/extension-content-fragment-ajo-external-references.md)
          + [鍵盤快速鍵](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)
       + 建立網站 {#site-creation}
          + [建立新網站](/help/sites-cloud/administering/site-creation/create-site.md)
@@ -1095,7 +1095,7 @@ ht-degree: 99%
 + Headless {#headless}
    + [什麼是 Headless CMS？](/help/headless/what-is-headless.md)
    + [AEM Headless 簡介](/help/headless/introduction.md)
-   + [開發人員入口網站 (其他資源)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hant)
+   + [開發人員入口網站 (其他資源)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
    + [最佳做法 - 設定和使用](/help/headless/best-practices-setup-use.md)
    + 設定 {#setup}
       + [簡介](/help/headless/setup/introduction.md)
