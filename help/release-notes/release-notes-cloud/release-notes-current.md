@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
+source-git-commit: 949a3956a88ae8075e1c518e50400f81b603924d
 workflow-type: tm+mt
-source-wordcount: '1713'
-ht-degree: 99%
+source-wordcount: '2067'
+ht-degree: 30%
 
 ---
 
@@ -28,7 +28,8 @@ ht-degree: 99%
 
 ## 發行日期 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 目前功能版本 (2025.4.0) 的發行日期是 2025 年 4 月 24 日。下一個功能版本 (2025.5.0) 預計於 2025 年 6 月 5 日發行。
+
+[!DNL Adobe Experience Manager]作為[!DNL Cloud Service]目前功能版本(2025.5.0)的發行日期是2025年6月5日。 下一個功能版本(2025.6.0)計畫於2025年6月26日發行。
 
 ## 維護版本發行說明 {#maintenance}
 
@@ -40,52 +41,80 @@ ht-degree: 99%
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440931?quality=12&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
-## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
-
-### Experience Manager Sites 的新功能 {#enhancements-sites}
-
-**新的內容片段模型管理員使用者介面**
-
-在使用 AEM 內容片段時，為了進一步完善新的用戶端使用者介面清單，現在已針對內容片段模型提供新的管理 UI。新的使用者介面具有簡潔、現代的清單視圖，能使用篩選器搜尋模型，並顯示模型標記和以特定模型為基礎的內容片段。相關文件請參閱[此處](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)。
-
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Dynamic Media (Scene7) {#dynamic-media-scene7}
+**AI產生的中繼資料**
 
-**增強式安全性環境不支援 Dynamic Media (Scene7)**
+AEM Assets現在使用[AI來自動產生中繼資料，包括標題、說明和關鍵字](/help/assets/metadata-assets-view.md#ai-smart-tags)。 這些AI產生的欄位可增強中繼資料的準確性，讓資產更容易搜尋、分類和推薦。 此方法不僅可避免手動標籤，進而提升效率，還可確保大量數位內容的一致性和擴充性。
 
-AEM as a Cloud Service 上的 Dynamic Media (Scene7) 不符合 HIPAA 標準，因此無法在啟用增強式安全性的 AEM 環境中使用。
+![AI產生的中繼資料](/help/assets/assets/enhanced-smart-tags.png)
 
-自 2025 年 4 月的 AEM as a Cloud Service 版本開始，會設有技術限制以防止在具有增強式安全性的環境中設定 Dynamic Media (Scene7)。因此，在這些環境中，於「**工具** > **雲端服務**」下不會再出現 **Dynamic Media 設定**&#x200B;卡片。
+**與Figma整合**
 
-此外，使用 AEM 6.5 的客戶應注意 Dynamic Media (Scene7) 堆疊不符合 HIPAA 標準。
+AEM Assets與Figma原生整合，可讓設計人員從Figma使用者介面內直接存取AEM Assets中儲存的資產。 您可以在Figma畫布中置入AEM Assets中管理的內容，然後將新內容或編輯過的內容儲存在AEM Assets存放庫中。
 
-### Dynamic Media Classic {#dynamic-media-classic}
-
-**報告**
-
-自 2025 年 4 月起，不再支援 Dynamic Media Classic 報告儀表板中的「頻寬」索引標籤。
-
-請參閱[頻寬和儲存、報告類型](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-classic/using/setup/administration-setup#types-of-reports)。
+![與Figma整合](/help/assets/assets/figma-integration.png)
 
 
-## 資產視圖的新功能 {#new-features-assets-view}
+### Content Hub中的新功能 {#new-features-content-hub}
 
-**資產關係**
+**以屬性為基礎的存取控制(ABAC)**
 
-資產視圖現在支援在簡化的資產詳細資料面板中檢視和編輯資產關係。輕鬆地將來源和衍生等關係加入內容中，讓使用者能更有效地找到相關的主要內容。
+Content Hub現在可讓您套用規則型限制來存取資產。 資產許可權可確保治理，也確保使用者只能存取相關的資產。
 
-![資產關係範例](/help/assets/assets/asset-relations-example.png)
+資產限制規則是根據中繼資料，如果規則中定義的條件符合資產中繼資料，則會向使用者群組顯示資產。
 
-**比較資產的不同版本**
+屬性式存取控制的一些主要優點包括：
 
-您現在可以使用資產視圖快速選取資產的任何版本，並與其最新版本進行比較。
+* 消除許可權對檔案夾結構的相依性
 
-![比較資產的不同版本](/help/assets/assets/version-compare2.png)
+* 允許管理員上傳資產並回溯決定許可權結構
+
+* 減少重複專案數量 — 改善資產完整性。 當相同的資產與不同群組共用時，資料夾型許可權需要重複專案。
+
+**UI品牌**
+
+Content Hub現在可讓管理員使用品牌特定元素來自訂使用者介面，包括橫幅影像、橫幅標題和本文文字，以及主要和次要顏色。 這些增強功能有助於確保品牌一致性、簡化使用者上線並建立信任。
+
+![UI品牌](/help/assets/assets/content-hub-ui-branding.png)
+
+**公用連結共用**
+
+Content Hub現在支援產生分享連結，讓沒有應用程式存取權的外部使用者檢視資產中繼資料或下載資產。
+
+![UI品牌](/help/assets/assets/public-and-private-link.png)
+
+**集合治理**
+
+Content Hub現在可讓您在建立期間控制對集合的存取權，確保只有授權使用者才能檢視或管理已分組的資產。 它可確保改善安全性、改善共同作業、井然有序的資產管理，以及簡化治理。
+
+![集合治理](/help/assets/assets/collection-permissions.png)
+
+>[!NOTE]
+>
+>集合治理是有限的可用性功能。 您可以透過建立支援票證來啟用它。
+
+**以ZIP檔下載多個資產**
+
+Content Hub現在也可讓您將選取的資產及其轉譯下載為ZIP檔案，而非個別檔案，以簡化您的檔案管理。
+
+**Content Hub中的Dynamic Media轉譯**
+
+直接從Content Hub使用者介面存取下載的所有Dynamic Media預設集轉譯和智慧型裁切。
+
+{&#x200B;0}Dynamic Media轉譯](/help/assets/assets/dm-renditions-content-hub.png)![
+
+### Dynamic Media中的新功能 {#new-features-dynamic-media}
+
+**Dynamic Media與AJO B2C原生整合&#x200B;**
+
+Experience Manager (AEM) Dynamic Media與Journey Optimizer (AJO) B2C的原生整合，使行銷人員可輕鬆將AEM Dynamic Media資產（轉譯和DM範本）內嵌至AJO內容，並提供即時更新和跨管道的超個人化體驗。
+
+{&#x200B;0}Dynamic Media轉譯](/help/assets/assets/dm-ajo-integration.png)![
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -111,94 +140,126 @@ AEM Forms 搶先體驗計劃為您提供獨一無二的機會，獲得先進創�
 
 早期採用者現在可以使用 Forms 和 AEP 之間的整合功能。
 
-## CIF 附加元件 {#cloud-services-cif}
-
-### 增強功能 {#enhancements-cif}
-
-* 新增 CIF 產品參考資料類型的產品變體選擇
-* [實驗性]：PDP 內 CIF 核心元件中的 JSON+LD
-* [實驗性]：CIF 清除快取的能力
-
-### 錯誤修正 {#bug-fixes-cif}
-
-* 修正產品欄位的搜尋問題
-* #variant_sku 的產品 URL 格式未如預期運作
-* 無法在產品清單元件上新增超過 20 個 SKU
-
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### 以 OpenAPI 為基礎之 API {#open-apis}
+### 已更新淘汰流程 {#updated-deprecation-process}
 
-開發人員可以將 AEM as Cloud Service 功能深度整合到自己的應用程式和工具中。新的 AEM as a Cloud Service API 將會遵循 OpenAPI 規範，目標是維持一致性、妥善記錄且簡單易用。需要驗證的端點憑證可藉由建立 Adobe Developer Console 專案產生，並支援 OAuth Server-to-Server、網頁應用程式，及單一頁面應用程式 (SPA)。
+Adobe會定期審查功能、程式庫、API和設定，以確保符合效能、安全性和價值標準。 當功能不再符合這些標準時，就會標示為過時，並且必須在指定的移除日期前停止使用。 在此日期之前，Adobe會透過電子郵件通知提醒客戶，以及在繼續或部署新組建之前需要在Cloud Manager中採取的動作。 若未採取必要的行動，可能會導致無法升級至新版AEM，進而對安全性、效能、可靠性和可用性造成潛在影響。
 
-查看以 OpenAPI 為基礎之 API 的[完整清單](https://developer.adobe.com/experience-cloud/experience-manager-apis/#openapi-based-apis)，[了解更多](/help/implementing/developing/open-api-based-apis.md)，並嘗試一堂說明設定和使用方法的[端對端教學課程](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-s2s)。
+如需進一步資訊，請參閱[過時文章](/help/release-notes/deprecated-removed-features.md)。
 
-觀看此影片，了解如何設定經驗證的 API 供稍後使用：
+#### 即將移除的棄用Java API和OSGi設定 {#deprecated-near-removals}
 
->[!VIDEO](https://video.tv.adobe.com/v/3457510?quality=12&learn=on)
+展開下列清單以檢視不再使用的已棄用API和OSGi設定。 如需完整詳細資訊（包括移除時間表），請參閱淘汰文章。
 
-### 網域對應相關的增強功能 {#cdn-enhancements}
+<details>
+  <summary>展開以檢視棄用的專案</summary>
 
-Adobe 管理之 CDN 提供靈活的設定選項，如[設定管道文章](/help/operations/config-pipeline.md#configurations)中所述。以下為一些最新功能：
+Java API：
+* `org.apache.sling.commons.auth`
+* `org.apache.felix.webconsole`
+* `org.eclipse.jetty`
+* `com.mongodb`
+* `org.apache.abdera`
+* `org.apache.felix.http.whiteboard`
+* `org.apache.cocoon.xml`
+* `ch.qos.logback`
+* `org.slf4j.spi`
+* `org.slf4j.event`
+* `org.apache.log4j`
+* `com.google.common`
+* `com.drew`
+* `org.bson`
+* `org.apache.jackrabbit.oak.plugins.blob`
+* `org.apache.jackrabbit.oak.plugins.memory`
 
-#### 在 CDN 記錄中納入其他屬性 {#props-in-cdnlogs}
+OSGi屬性：
 
-您可以設定[要求和回應轉換](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations)中的 `logProperty` 動作，在 CDN 記錄中納入預設屬性之外的更多資訊，這對於包括偵錯和資料分析的情境來說很有用。
+* `org.apache.sling.commons.log.LogManager` （所有屬性）
+* `org.apache.sling.commons.log.LogManager.factory.config` (`org.apache.sling.commons.log.file`， `org.apache.sling.commons.log.pattern`)
 
-#### 區域、洲別和組織屬性作為比對條件 {#matching-conditions}
+</details>
 
-CDN 規則現在可以針對包括封鎖流量和重新導向在內的使用案例，根據區域、洲別和組織進行比對。`clientRegion` 和 `clientContinent` 能增強已支援的 `clientCountry`，根據地理位置進行比對，而 `clientAsName` 和 `clientAsNumber` 能與自治系統比對，用於識別大型 ISP、公司或雲端提供者。了解更多關於這些[新公開之要求屬性](/help/security/traffic-filter-rules-including-waf.md#condition-structure)的資訊。
+### 不再使用Java 11執行階段 {#java11-runtime-deprecation}
 
-#### 設定 Cookie 值 {#cookie-attributes}
+**Java 11執行階段**&#x200B;現已棄用，且大部分環境已升級至效能更高的&#x200B;**Java 21執行階段**。
 
-您可以在[回應轉換](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations)中設定 Cookie 屬性。
+如果因為不受支援的相依性而無法升級您的環境（請參閱[Java 21執行階段需求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)），您應該已經收到來自Adobe的電子郵件，其中包含特定的後續步驟。 請確定所有必要的更新已於&#x200B;**2025年8月28日**&#x200B;前完成，以便您的環境可以升級而不會中斷。
 
-### 支援 Java 21 {#java21}
+注意：執行階段版本與您的程式碼組建版本不同。 雖然我們建議您使用Java 21進行建置，但目前仍支援Java 11建置。 未來將針對Java 11組建分享獨立的淘汰通知。
 
-自 1 月份的版本開始，您可以使用 Java 21 和 Java 17 建置程式碼。您可以存取模式比對、密封類別和各種效能改善等新功能。若要了解設定步驟 (包括更新 Maven 專案和資料庫版本)，請參閱文章「[建置環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support)」。
+### 實施AEM Java記錄檔設定原則 {#logconfig-policy}
 
-當偵測到 Java 17 或 21 版本時，會自動部署效能較佳的 Java 21 **執行階段**。但是，對於建置在 Java 11 上的環境，Adobe 也建議選擇使用 Java 21 執行階段，請寄送電子郵件至 [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com)。了解 [Java 21 執行階段要求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)。
+如4月發行說明中所述，AEM Java記錄必須遵循標準格式，以確保在所有客戶環境中進行可靠的監控。 不再支援自訂日誌配置，例如對日誌格式、輸出檔案或預設日誌層級的變更。 記錄檔必須保持導向至預設檔案，且AEM產品代碼的預設記錄層級必須保留。 請參閱[記錄文章](/help/implementing/developing/introduction/logging.md#configuration-loggers)中的完整詳細資料。
 
->[!IMPORTANT]
->
-> Java 21 **執行階段**&#x200B;已於 2 月份部署到您的 dev/RDE 環境，並將於 **4 月 28 日和 29 日**&#x200B;套用至您的中繼/生產環境。請注意，使用 Java 21 (或 Java 17) **建置程式碼** 與 Java 21 執行階段無關，您必須明確地採取步驟，使用 Java 21 (或 Java 17) 建置程式碼。
+從&#x200B;**8月**&#x200B;日下旬開始，任何不支援的自訂記錄覆寫都會被忽略。 根據我們的分析，大部分客戶將不會受到影響，而Adobe將直接聯絡其目前設定可能受到影響的任何客戶。
 
-### 執行 AEM 的記錄設定原則 {#logconfig-policy}
+請檢閱並更新依賴自訂記錄行為的任何下遊程式。 例如：
 
-為確保能有效監視客戶環境，AEM Java 記錄必須維持一致的格式，且不應被自訂設定覆寫。記錄輸出必須維持導向預設檔案。針對 AEM 產品程式碼，必須保留預設記錄等級。不過，可以針對客戶開發的程式碼調整記錄等級。
+* 如果您的記錄轉送系統需要自訂記錄格式，您可能需要調整擷取規則。
+* 如果您先前已透過變更記錄層級來減少記錄詳細程度，請注意，回覆至預設層級可能會增加記錄數量。
 
-為此，不應變更以下 OSGi 屬性：
-* **Apache Sling 記錄設定** (PID: `org.apache.sling.commons.log.LogManager`)：*所有屬性*
-* **Apache Sling 記錄記錄器設定** (工廠 PID: `org.apache.sling.commons.log.LogManager.factory.config`)：
-   * `org.apache.sling.commons.log.file`
-   * `org.apache.sling.commons.log.pattern`
+### 預設清除舊版和稽核記錄 {#mt-defaults}
 
-5 月中旬，AEM 將強制執行一項原則，屆時會忽略對這些屬性的任何自訂修改。請檢閱並從而調整您的下游流程。舉例來說，若您使用記錄轉送功能：
-* 如果您的記錄目標需要自訂 (非預設) 記錄格式，則可能需要更新您的攝取規則。
-* 若記錄等級的變更會使記錄的詳細程度降低，請注意預設的記錄等級可能會導致記錄量顯著增加。
+目前，內容版本和稽核記錄預設會停用其相關聯的&#x200B;*清除維護任務*，因此除非透過其各自的OSGi屬性明確設定，否則不會移除任何資料。
 
-### AEM 記錄轉送至更多目標：Beta 版方案 {#log-forwarding-earlyadopter}
+但是，為了最佳化存放庫效能，從&#x200B;**2025年6月下旬**&#x200B;開始，將依照以下准則預設啟用清除：
 
-現在提供 Beta 版，您可以將 AEM 記錄轉送至 New Relic (使用 HTTPS)、Amazon S3 和 Sumo Logic。請注意，支援 AEM 記錄 (包括 Apache/Dispatcher)，但不支援 CDN 記錄。發送電子郵件至 [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) 以獲得存取權。
+#### 內容版本 {#mt-content}
 
-雖然可以從 Cloud Manager 下載記錄，但許多組織發現將這些記錄串流至偏好的記錄目標是很有幫助的。AEM 已經支援將 (GA) AEM 和 CDN 記錄轉送到 Azure Blob 儲存體、Datadog、HTTPS、Elasticsearch (和 OpenSearch) 以及 Splunk。此功能是以自助方式設定，並透過設定管道進行部署。
+* **新環境** (建立於即將來臨的日期之後（稍後通知）
+   * 將定期刪除超過&#x200B;**30天**&#x200B;的版本。
+   * 會保留最近30天內的5個版本，以及最新版本和目前版本，無論其年齡為何。
+
+* **現有環境** （在此即將到來的日期之前建立）：
+   * 將定期刪除超過&#x200B;**7年**&#x200B;的版本。
+   * 系統會保留過去7年內的所有版本。
+   * 此高預設臨界值可防止近期資料意外移除。 不過，建議設定較低的值，將存放庫效能最佳化。
+
+* 您可以透過OSGi設定覆寫來修改這些預設值。
+
+#### 稽核記錄 {#mt-auditlogs}
+
+* **新環境** （建立於即將來臨的日期之後，將另行通知）：
+   * 將定期刪除超過&#x200B;**7天**&#x200B;的復寫、DAM和頁面稽核記錄。
+   * 預設會記錄所有事件。
+
+* **現有環境** （在此即將到來的日期之前建立）：
+   * 將定期刪除超過&#x200B;**7年**&#x200B;的復寫、DAM和頁面稽核記錄。
+   * 預設會記錄所有事件。
+   * 此高預設臨界值可防止近期資料意外移除。 不過，建議設定較低的值，將存放庫效能最佳化。
+
+* 您可以透過OSGi設定覆寫來修改這些預設值。
+
+如需詳細資訊，請參閱[維護任務文章](/help/operations/maintenance.md#default)。
+
+### Edge運算(Alpha計畫) {#edge-computing}
+
+Edge運算可讓您在CDN層執行JavaScript，讓資料處理更貼近使用者。 這能減少延遲，並啟用邊緣的回應式動態體驗。
+
+常見使用案例包含：
+
+* 在授與內容的存取權之前，使用身分提供者來驗證使用者
+* 根據地理位置、裝置型別或使用者屬性製作個人化內容
+* 充當CDN與您的來源之間的中介軟體
+* 將來自協力廠商API的回應重新格式化（並可能彙總多個API回應），然後再傳送給瀏覽器
+* 使用從不同後端拼接的內容，在邊緣構成及提供伺服器轉譯的HTML
+
+我們對於即時生產網站的AEM發佈傳遞或Edge Delivery Services專案的可用機會有限。 若您有興趣參與或想深入瞭解，請傳送電子郵件至[aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com)，簡述您的使用案例。
+
+### 適用於Edge Delivery Services (Beta計畫)的CDN設定 {#cdn-eds-beta}
+
+Adobe-Managed CDN提供彈性的設定選項，如[設定管道文章](/help/operations/config-pipeline.md#configurations)所述。
+
+現在在Beta版中，針對包括CDN來源選擇器、回應和請求轉換等功能部署設定管道。 請聯絡[aemcs-cdn-config-adopter@adobe.com](mailto:aemcs-cdn-config-adopter@adobe.com)並提供您使用案例的詳細資料。
+
+### AEM記錄轉送至更多目的地(Beta計畫) {#log-forwarding-beta}
+
+雖然可以從 Cloud Manager 下載記錄，但許多組織發現將這些記錄串流至偏好的記錄目標是很有幫助的。AEM已支援AEM和CDN記錄轉送至Azure Blob Storage、Datadog、HTTPS、Elasticsearch （和OpenSearch）和Splunk。 此功能是以自助方式設定，並透過設定管道進行部署。
+
+現在處於Beta版，您可以將AEM記錄轉送至Amazon S3、Sumo Logic和您自己的New Relic帳戶(非Adobe提供的帳戶)。 請注意，這些記錄目的地支援AEM記錄(包括Apache/Dispatcher)，但CDN記錄不受支援。 發送電子郵件至 [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) 以獲得存取權。
 
 如需了解更多，請參閱[記錄轉送文件](/help/implementing/developing/introduction/log-forwarding.md)。
-
-### 邊緣運算 - 請求意見回饋！ {#edge-computing-feedback}
-
-邊緣運算可讓資料處理更接近瀏覽器，其優點包括減少延遲。Adobe 想要知道，您覺得這項技術對於 AEM Publish Delivery 和 Edge Delivery Services 專案來說是否實用。此外，我們也想知道您預計會如何使用它，以作為我們擬定產品路徑圖的參考。
-
-一些可能的使用案例：
-
-* 使用 IdP 進行驗證以控制內容存取
-* 根據地理位置、裝置類型、使用者屬性等轉譯動態內容以進行個人化。
-* 進階影像處理
-* CDN 與來源之間的中介軟體
-* 瀏覽器和第三方 API 之間的一層，可能用於重新設定 API 回應的格式
-* 彙總來自多個來源的資料，讓用戶端瀏覽器更容易轉譯它
-
-請寄送電子郵件至 [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com)，並附上您的問題和評論！
 
 ## [!DNL Experience Manager] Guides {#guides}
 
