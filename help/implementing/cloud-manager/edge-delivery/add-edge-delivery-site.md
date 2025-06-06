@@ -4,10 +4,10 @@ description: 了解如何將 Edge Delivery 網站新增至您的生產程式或�
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
-source-git-commit: a7e8e340355d85236a0997b28e0a04296b2ef5b4
-workflow-type: ht
-source-wordcount: '502'
-ht-degree: 100%
+source-git-commit: 88c1712e2021eda2ea66304c65f6d96a1a8155be
+workflow-type: tm+mt
+source-wordcount: '521'
+ht-degree: 90%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 100%
    | 文字欄位 | 說明 |
    | - | --- |
    | 網站名稱 | 輸入您要新增之 Edge Delivery 網站的名稱。<br>此名稱會作為該網站在 Cloud Manager 中的唯一識別碼。 |
-   | 存放庫 URL | 輸入儲存網站程式碼的 Git 存放庫。<br>此欄位可讓 Cloud Manager 在部署過程中從該存放庫內提取程式碼。 |
+   | Edge Delivery Origin | 此值會指定您在Edge Delivery Services中網站內容來源的URL路徑。 它也會將Cloud Manager連結至您的即時網站。<br>URL通常包含&#x200B;*分支*、*專案*&#x200B;和&#x200B;*租使用者*，如下列範例所示（僅供說明之用）：<br>`https://main--projectname--tenant.aem.live` |
    | 網站說明 (選用) | 輸入您要新增之 Edge Delivery 網站的簡短說明。<br>說明有助於辨別和區分網站，進而更輕鬆地管理和識別您新增的其他網站。 |
 
 1. 在對話框右下角，按一下「**新增**」。

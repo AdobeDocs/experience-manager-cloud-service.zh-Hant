@@ -5,10 +5,10 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="早期採用者" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: d0cf86d429c7374ad12f6eeb9f287b0ace3406ec
+source-git-commit: e881c3d8af7127e030aa9a0a2c163eaf04870c2b
 workflow-type: tm+mt
-source-wordcount: '2074'
-ht-degree: 23%
+source-wordcount: '2079'
+ht-degree: 25%
 
 ---
 
@@ -18,12 +18,13 @@ ht-degree: 23%
 
 客戶現在也可以將其Azure DevOps Git存放庫加入Cloud Manager，並支援現代Azure DevOps和舊版VSTS (Visual Studio Team Services)存放庫。
 
-* 對於Edge Delivery Services使用者，已上線的存放庫可用於同步和部署網站程式碼。
-* 對於AEM as a Cloud Service和Adobe Managed Services (AMS)使用者，存放庫可以連結到完整棧疊和前端管道。
-『
+* Edge Delivery Services 使用者可以使用所加入的存放庫來同步處理及部署網站程式碼。
+* AEM as a Cloud Service 和 Adobe Managed Services (AMS) 使用者可以將此存放庫連結至全堆疊以及前端管道。
+
 >[!NOTE]
 >
 >本文所述功能僅可透過早期採用計畫使用。 如需詳細資訊，以及要註冊為早期採用者，請參閱[自備Git](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket)。
+
 
 ## 設定外部存放庫
 
@@ -83,13 +84,16 @@ ht-degree: 23%
    | | **存放庫型別： Bitbucket**<ul><li>在&#x200B;**Token名稱**&#x200B;文字欄位中，輸入您要建立之存取權杖的名稱。<li>使用[Bitbucket檔案](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/)建立存放庫存取權杖。<li>Bitbucket個人存取Token (PAT)的必要許可權<br>這些許可權可讓Cloud Manager存取存放庫內容、管理提取請求，以及設定或回應webhook事件。<br>當您在Bitbucket中建立應用程式密碼時，請確定它包含下列必要的應用程式密碼許可權：<ul><li>存放庫（唯讀）<li>提取請求（讀取和寫入）<li>Webhook （讀取和寫入）</li></li></ul></li></li></ul></ul></ul><ul><li>在&#x200B;**存取Token**&#x200B;欄位中，貼上您剛建立的權杖。 |
    | | **存放庫型別： Azure DevOps**<ul><li>在&#x200B;**Token名稱**&#x200B;文字欄位中，輸入您要建立之存取權杖的名稱。<li>使用[Azure DevOps檔案](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&amp;tabs=Windows)建立存放庫存取權杖。<li>Azure DevOps個人存取權杖(PAT)的必要許可權。<br>這些許可權可讓Cloud Manager存取存放庫內容、管理提取請求，以及設定或回應webhook事件。<br>當您在Azure DevOps中建立應用程式密碼時，請確定它包含下列必要的應用程式密碼許可權：<ul><li>存放庫（唯讀）</li></ul></li></li></ul></ul></ul><ul><li>在&#x200B;**存取Token**&#x200B;欄位中，貼上您剛建立的權杖。 |
 
+   另請參閱[管理存取權杖](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)。
+
    >[!IMPORTANT]
    >
    >功能&#x200B;**新增存取權杖**&#x200B;目前處於早期採用者階段。 其他的功能正在規劃中。因此，存取權杖所需的權限可能會變更。另外，用於管理權杖的使用者介面可能會更新，可能包括權杖過期日期等功能。並且，自動檢查以確保連結至存放庫的權杖保持有效。
 
 1. 按一下「**驗證**」。
 
-驗證之後，外部存放庫即可使用並連結至管道。
+   驗證之後，外部存放庫即可使用並連結至管道。
+
 
 ## 將驗證的外部存放庫連結至管道。 {#validate-ext-repo}
 
@@ -113,6 +117,7 @@ ht-degree: 23%
 >[!TIP]
 >
 >如需關於在 Cloud Manager 管理存放庫的詳細資訊，請參閱「[Cloud Manager 存放庫](/help/implementing/cloud-manager/managing-code/managing-repositories.md)」。
+
 
 ## 為外部存放庫設定webhook {#configure-webhook}
 
@@ -172,6 +177,7 @@ Cloud Manager可讓您為已新增的外部Git存放庫設定webhook。 請參�
    | GitLab | 這些webhook事件可讓Cloud Manager在推送程式碼或提交合併請求時觸發管道。 也會追蹤與提取請求驗證相關的註解（透過附註事件）。<br>請確定webhook已設定為在下列必要webhook事件上觸發<ul><li>推送事件<li>合併請求事件<li>附註事件</li></li></li></ul></ul></ul> |
    | Bitbucket | 這些事件確保Cloud Manager可以驗證提取請求、回應程式碼推送，以及與評論互動以協調管道。<br>請確定webhook已設定為在下列必要webhook事件上觸發<ul><li>提取請求：已建立<li>提取請求：已更新<li>提取請求：已合併<li>提取請求：註解<li>存放庫：推播</li></li></li></ul></ul></ul> |
    | Azure DevOps | 這些事件確保Cloud Manager可以驗證提取請求、回應程式碼推送，以及與評論互動以協調管道。<br>請確定webhook已設定為在下列必要webhook事件上觸發<ul><li>存放庫：推播</li></li></ul></ul></ul> |
+
 
 ### 使用Webhook驗證提取請求
 

@@ -6,10 +6,10 @@ exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: fdf28905b16b4cc5c6947b8b216940b0c43b2a6a
+source-git-commit: 4ddca61044d7923db9fd08b96cb18cedfd71cf70
 workflow-type: tm+mt
-source-wordcount: '1377'
-ht-degree: 29%
+source-wordcount: '1493'
+ht-degree: 42%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 29%
 
 ## 管道資訊卡 {#pipeline-card}
 
-此&#x200B;**管道**&#x200B;卡位於 Cloud Manager 中的&#x200B;**方案總覽**&#x200B;頁面上，可讓您總覽您所有的管道及其目前狀態。
+此&#x200B;**管道**&#x200B;卡位於 Cloud Manager 中的&#x200B;**方案概觀**&#x200B;頁面上，可讓您概觀您所有的管道及其目前狀態。
 
 ![Cloud Manager 中的管道卡](/help/implementing/cloud-manager/assets/configure-pipeline/pipelines-card.png)
 
@@ -60,6 +60,19 @@ ht-degree: 29%
 
 ![管道動作](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-actions.png)
 
+### 標示管道我的最愛{#pipeline-favorites}
+
+您可以將特定管道標示為我的最愛，好讓這些管道顯示在&#x200B;**管道**&#x200B;頁面上的清單頂端。 此功能讓經常存取的管道更容易找到和執行。
+
+**若要標示管道我的最愛：**
+
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
+1. 在「**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**」控制台中，選取程式。
+1. 從&#x200B;**方案總覽**&#x200B;頁面，按一下![管道標籤 — 工作流程圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **管道**&#x200B;標籤。
+1. 在管道頁面上，在管道名稱和型別的左側，按一下取消我的最愛管道的![星形外框圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_StarOutline_18_N.svg)以將其新增到我的最愛清單。
+或者，按一下我的最愛管道](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Star_18_N.svg)的![星形圖示，將該管道從我的最愛清單中移除。
+
+
 ## 活動頁面 {#activity}
 
 **活動**&#x200B;頁面會顯示所選方案和其他重要方案事件的所有管道執行的完整清單。
@@ -98,20 +111,20 @@ ht-degree: 29%
 
 ## 執行多個管道 {#run-multiple-pipelines}
 
-有了Cloud Manager，您可以同時執行多個管道，為AEM as a Cloud Service客戶提高部署效率。 **執行選取的**&#x200B;功能可讓您選取多個管道並觸發它們一次執行。 它可減少個別執行管道的手動工作量，並最佳化建置和部署工作流程。
+有了Cloud Manager，您可以同時執行多個管道，為AEM as a Cloud Service客戶提高部署效率。 您可以使用&#x200B;**執行所選**&#x200B;功能選取多個管道，並觸發這些管道立即執行。它減少手動執行個別管道的工作量，並最佳化建置和部署工作流程。
 
 **若要執行多個管道：**
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager，並選取適當的組織和方案。
-1. 從左側功能表，按一下![工作流程圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **管道**。
-1. 在&#x200B;**管道**&#x200B;頁面的表格中，選取您要執行管道旁的核取方塊。
-如有必要，請按一下![篩選圖示、漏斗](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) **篩選**，依名稱、環境、已部署的程式碼型別或這三個專案的組合來排序管道。
-1. 在頁面的右上角附近，按一下&#x200B;**執行選取的專案(x)**。
-1. 在&#x200B;**執行選取的管道(x)**&#x200B;對話方塊中，按一下&#x200B;**執行(x)**。
+1. 在左側選單中，按一下「![工作流程圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg)**管道**」。
+1. 在「**管道**」頁面的表格中，選取要執行的管道旁邊的核取方塊。
+如有必要，按一下「![篩選器圖示，漏斗](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg)**篩選器**」，根據名稱、環境、部署的程式碼類型或上述三者的組合，對管道進行排序。
+1. 在此頁面的右上角附近，按一下「**執行所選 (x)**」。
+1. 在「**執行所選管道 (x)**」對話框中，按一下「**執行 (x)**」。
 
-   **執行**&#x200B;按鈕反映了可繼續的管道數。 例如，您可能選取了四個管道，但其中一個已經在執行。 或者，連結至所選管道的環境已不存在。 在這種情況下，系統會進行相應的調整。 按鈕更新為「執行(3)」，表示三個管道可以繼續。
+   「**執行**」按鈕會反映可繼續執行的管道數量。例如，您可能已選取四個管道，但其中一個已經在執行中，或者連結至所選管道的環境已不存在。在這類情況下，系統會隨之調整。按鈕會更新為「執行 (3)」，表示三個管道可以繼續執行。
 
-1. 管道開始執行，且已在&#x200B;**管道**&#x200B;清單中更新其狀態。
+1. 管道開始執行，並且會在「**管道**」清單中更新其狀態。
 
 ## 編輯管道 {#editing-pipelines}
 
@@ -131,7 +144,7 @@ ht-degree: 29%
    * [設定生產管道](configuring-production-pipelines.md)
    * [設定非生產管道](configuring-non-production-pipelines.md)
 
-1. 完成時，按一下&#x200B;**更新**。
+1. 完成後，按一下「**更新**」。
 
 >[!NOTE]
 >
@@ -209,3 +222,4 @@ ht-degree: 29%
    ![取消管道詳細資料](/help/implementing/cloud-manager/assets/cancel-pipeline-details.png)
 
 1. 按一下&#x200B;**取消**。
+
