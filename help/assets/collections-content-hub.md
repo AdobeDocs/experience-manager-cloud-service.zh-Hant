@@ -13,77 +13,41 @@ ht-degree: 9%
 # 管理[!DNL Content Hub]中的集合 {#manage-collections}
 
 <table>
-
     <tr>
-
         <td>
-
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 與 Ultimate</b></a>
-
         </td>
-
         <td>
-
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-
         </td>
-
         <td>
-
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets 與 Edge Delivery Services 整合</b></a>
-
         </td>
-
         <td>
-
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>使用者介面可擴充性</b></a>
-
         </td>
-
           <td>
-
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用 Dynamic Media Prime 與 Ultimate</b></a>
-
         </td>
-
     </tr>
-
     <tr>
-
         <td>
-
             <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
-
         </td>
-
         <td>
-
             <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
-
         </td>
-
         <td>
-
             <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-
         </td>
-
         <td>
-
             <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
-
         </td>
-
         <td>
-
             <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
-
         </td>
-
     </tr>
-
 </table>
-
 <!-- ![Manage collections](assets/manage-collections.jpg) -->
 ![管理集合](assets/manage-collection.png)
 
