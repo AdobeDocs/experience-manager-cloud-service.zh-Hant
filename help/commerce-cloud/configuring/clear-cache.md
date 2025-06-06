@@ -4,9 +4,9 @@ description: 瞭解如何在AEM CIF中啟用及驗證清除快取功能。
 feature: Commerce Integration Framework
 role: Admin
 exl-id: f89c07c7-631f-41a4-b5b9-0f629ffc36f0
-source-git-commit: f6d3ffd80e84f7c1d56fe24a395c9998ec209908
+source-git-commit: 27d8b5f6f358176c828d01f2ff51886d0433017c
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '881'
 ht-degree: 2%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 2%
 # 元件和GraphQL清除快取 {#clear-cache}
 
 本檔案提供在AEM CIF中啟用及驗證清除快取功能的完整指南。
+
+>[!NOTE]
+>
+> 此功能屬於實驗性質。
 
 ## 在CIF設定中啟用清除快取功能 {#enable-clear-cache}
 
@@ -27,10 +31,9 @@ ht-degree: 2%
 * 啟用接聽程式，以在您的專案中新增`com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json`設定，以清除每個AEM執行個體（發佈與作者）的快取，如[這裡](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json)所示。
    * 作者和發佈執行個體皆應啟用設定。
    * 啟用Dispatcher快取（選用）：您可以透過在上述設定中將`enableDispatcherCacheInvalidation`屬性設定為true來啟用Dispatcher清除快取設定。 這提供了從Dispatcher清除快取的功能。
-
-  >[!NOTE]
-  >
-  > 這僅適用於發佈執行個體。
+     >[!NOTE]
+     >
+     > 這僅適用於發佈執行個體。
 
    * 此外，請務必提供適合您的產品、類別和CMS頁面的對應模式，以便將其新增至上述設定檔案，從Dispatcher快取中移除。
 
@@ -60,7 +63,6 @@ ht-degree: 2%
        "storePath": "/content/venia/us/en", // Mandatory : Needs to be given to know for which site we are removing the clear cache.
    }'
    ```
-
 如果一切順利，新變更會反映在每個執行個體中。 如果變更沒有反映在發佈執行個體中，請檢視私人視窗中的對應PLP和PDP頁面。
 
 >[!NOTE]
@@ -98,7 +100,6 @@ ht-degree: 2%
 | 屬性 | 值 | 型別（陣列/字串/布林值） | 這是否會清除Dispatcher快取？ | 評論 |
 |------------------------------|-------------------|---|---|---|
 | `storePath` | 需要移除快取的網站路徑對應值（範例： `/content/venia/us/en`作為與venia專案的參考）。 | 字串 | 是 | 需要以`invalidateType.`的組合提供此專案 |
-
 
 ### 範例API請求
 
