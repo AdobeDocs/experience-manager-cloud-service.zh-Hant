@@ -16,7 +16,7 @@ ht-degree: 90%
 >[!IMPORTANT]
 >
 >了解為何必須在 Cloud Manager 加入 Edge Delivery Services 網站。
->>請參閱[Edge Delivery Services 使用 Adobe 建議路徑的優勢](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds)。
+>&#x200B;>請參閱[Edge Delivery Services 使用 Adobe 建議路徑的優勢](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds)。
 
 **若要在 Cloud Manager 新增 Edge Delivery Site：**
 

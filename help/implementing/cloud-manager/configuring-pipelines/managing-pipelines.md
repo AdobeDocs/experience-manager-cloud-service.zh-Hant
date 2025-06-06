@@ -70,7 +70,7 @@ ht-degree: 42%
 1. 在「**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**」控制台中，選取程式。
 1. 從&#x200B;**方案總覽**&#x200B;頁面，按一下![管道標籤 — 工作流程圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **管道**&#x200B;標籤。
 1. 在管道頁面上，在管道名稱和型別的左側，按一下取消我的最愛管道的![星形外框圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_StarOutline_18_N.svg)以將其新增到我的最愛清單。
-或者，按一下我的最愛管道](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Star_18_N.svg)的![星形圖示，將該管道從我的最愛清單中移除。
+或者，按一下我的最愛管道![&#128279;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Star_18_N.svg)的星形圖示，將該管道從我的最愛清單中移除。
 
 
 ## 活動頁面 {#activity}
