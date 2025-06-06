@@ -16,7 +16,7 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->>本文所述功能僅可透過早期採用計畫使用。 若要註冊為早期採用者，請參閱[專業測試環境](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment)。
+>&#x200B;>本文所述功能僅可透過早期採用計畫使用。 若要註冊為早期採用者，請參閱[專業測試環境](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment)。
 
 Specialized Testing Environment (DevXL)是您可以建立的新型Cloud Manager環境。 其設計可支援進階使用案例，例如使用者驗收測試(UAT)和效能驗證。 與傳統開發、快速開發或預備環境不同，DevXL環境會在生產部署管道之外操作。 因此，它們可為您提供更大的彈性，同時維持嚴格的隔離以防止干擾生產工作流程。
 
