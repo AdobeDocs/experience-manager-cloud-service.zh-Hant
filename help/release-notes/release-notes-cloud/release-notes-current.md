@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 6f4c2a8d6e4d4e67bfd0bd4da68bcef11668b8c5
+source-git-commit: 1b6316d07153fdf93481a252173334af45137a29
 workflow-type: tm+mt
-source-wordcount: '2067'
-ht-degree: 30%
+source-wordcount: '2062'
+ht-degree: 31%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 30%
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440931?quality=12&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -64,7 +64,7 @@ AEM Assets與Figma原生整合，可讓設計人員從Figma使用者介面內直
 
 **以屬性為基礎的存取控制(ABAC)**
 
-Content Hub現在可讓您套用規則型限制來存取資產。 資產許可權可確保治理，也確保使用者只能存取相關的資產。
+[Content Hub現在可讓您套用規則型限制來存取資產](/help/assets/attribute-based-access-control.md)。 資產許可權可確保治理，也確保使用者只能存取相關的資產。
 
 資產限制規則是根據中繼資料，如果規則中定義的條件符合資產中繼資料，則會向使用者群組顯示資產。
 
@@ -78,21 +78,21 @@ Content Hub現在可讓您套用規則型限制來存取資產。 資產許可�
 
 **UI品牌**
 
-Content Hub現在可讓管理員使用品牌特定元素來自訂使用者介面，包括橫幅影像、橫幅標題和本文文字，以及主要和次要顏色。 這些增強功能有助於確保品牌一致性、簡化使用者上線並建立信任。
+Content Hub現在可讓管理員[使用品牌特定元素自訂使用者介面](/help/assets/configure-content-hub-ui-options.md##configure-branding-content-hub)，包括橫幅影像、橫幅標題與內文，以及主要和次要顏色。 這些增強功能有助於確保品牌一致性、簡化使用者上線並建立信任。
 
 ![UI品牌](/help/assets/assets/content-hub-ui-branding.png)
 
 **公用連結共用**
 
-Content Hub現在支援產生分享連結，讓沒有應用程式存取權的外部使用者檢視資產中繼資料或下載資產。
+Content Hub現在支援[產生分享連結以允許沒有應用程式存取權的外部使用者](/help/assets/share-assets-content-hub.md##share-assets)檢視資產中繼資料或下載資產。
 
 ![UI品牌](/help/assets/assets/public-and-private-link.png)
 
 **集合治理**
 
-Content Hub現在可讓您在建立期間控制對集合的存取權，確保只有授權使用者才能檢視或管理已分組的資產。 它可確保改善安全性、改善共同作業、井然有序的資產管理，以及簡化治理。
+Content Hub現在可讓您在建立期間[控制對集合的存取權，確保只有授權的使用者才能檢視或管理分組的資產](/help/assets/collections-content-hub.md##create-collections)。 它可確保改善安全性、改善共同作業、井然有序的資產管理，以及簡化治理。
 
-![集合治理](/help/assets/assets/collection-permissions.png)
+>[!VIDEO](https://video.tv.adobe.com/v/3463336)
 
 >[!NOTE]
 >
@@ -100,21 +100,21 @@ Content Hub現在可讓您在建立期間控制對集合的存取權，確保只
 
 **以ZIP檔下載多個資產**
 
-Content Hub現在也可讓您將選取的資產及其轉譯下載為ZIP檔案，而非個別檔案，以簡化您的檔案管理。
+Content Hub現在也可讓您[將選取的資產及其轉譯下載為ZIP檔案](/help/assets/download-assets-content-hub.md#download-asset-renditions)，而非個別檔案，以簡化檔案管理。
 
 **Content Hub中的Dynamic Media轉譯**
 
-直接從Content Hub使用者介面存取下載的所有Dynamic Media預設集轉譯和智慧型裁切。
+直接從Content Hub使用者介面](/help/assets/download-assets-content-hub.md#download-asset-renditions)存取您所有的[Dynamic Media預設集轉譯和智慧型裁切以供下載。
 
-{&#x200B;0}Dynamic Media轉譯![&#128279;](/help/assets/assets/dm-renditions-content-hub.png)
+{&#x200B;0}Dynamic Media轉譯](/help/assets/assets/dm-renditions-content-hub.png)![
 
 ### Dynamic Media中的新功能 {#new-features-dynamic-media}
 
 **Dynamic Media與AJO B2C原生整合&#x200B;**
 
-Experience Manager (AEM) Dynamic Media與Journey Optimizer (AJO) B2C的原生整合，使行銷人員可輕鬆將AEM Dynamic Media資產（轉譯和DM範本）內嵌至AJO內容，並提供即時更新和跨管道的超個人化體驗。
+[原生整合Experience Manager (AEM) Dynamic Media與Journey Optimizer (AJO) B2C](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/aem-dynamic)，讓行銷人員輕鬆將AEM Dynamic Media資產（轉譯和DM範本）內嵌至AJO內容，並跨管道提供即時更新和超個人化體驗。
 
-{&#x200B;0}Dynamic Media轉譯![&#128279;](/help/assets/assets/dm-ajo-integration.png)
+>[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
