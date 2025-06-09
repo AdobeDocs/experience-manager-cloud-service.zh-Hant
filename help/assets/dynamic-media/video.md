@@ -135,7 +135,7 @@ Dynamic Media中的視訊是端對端解決方案，可讓您輕鬆發佈高品�
 * 使用完整中繼資料支援來組織、瀏覽和搜尋視訊，以有效管理視訊資產。
 * 將最適化視訊集傳送至網頁版、桌上型電腦、平板電腦和行動裝置。
 
-各種iOS平台均支援最適化視訊串流。 請參閱[Dynamic Media檢視器參考指南](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference)。
+各種iOS平台均支援最適化視訊串流。 請參閱[Dynamic Media檢視器參考指南](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference)。
 
 <!-- OUTDATED 2/28/22 BASED ON CQDOC-18692 Dynamic Media supports mobile video playback for MP4 H.264 video. You can find BlackBerry&reg; devices that support this video format at the following: [Supported video formats on BlackBerry&reg;](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
@@ -151,7 +151,7 @@ OUTDATED 2/28/22 BASED ON CQDOC-18692 You can find Windows&reg; devices that sup
 
 <!-- GIVES a 404 See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480) sample. -->
 
-另請參閱[Dynamic Media檢視器參考指南](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources)中的[Experience Manager Assets檢視器與Dynamic Media Classic ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc)以及[僅適用於Experience Manager Assets的檢視器](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only)。
+另請參閱[Dynamic Media檢視器參考指南](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources)中的[Experience Manager Assets檢視器與Dynamic Media Classic ](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc)以及[僅適用於Experience Manager Assets的檢視器](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only)。
 
 ## 最佳實務：使用HTML5視訊檢視器 {#best-practice-using-the-html-video-viewer}
 
@@ -163,7 +163,7 @@ Dynamic Media HTML5視訊檢視器預設集是強大的視訊播放器。 您可
 
 您可以使用HTML5和CSS將設計播放元件的功能結合為單一播放器。 它可以內嵌播放，並根據瀏覽器的功能使用最適化和漸進式串流。 所有這些功能都表示您可以將多媒體內容的觸角伸展至桌上型電腦和行動使用者，並確保簡化的視訊體驗。
 
-另請參閱[Dynamic Media檢視器參考指南](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources)中的[僅適用於Experience Manager Assets的檢視器](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only)。
+另請參閱[Dynamic Media檢視器參考指南](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources)中的[僅適用於Experience Manager Assets的檢視器](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only)。
 
 
 ### 使用HTML5視訊檢視器在桌上型電腦和行動裝置上播放視訊 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
@@ -183,7 +183,7 @@ DASH是國際標準，HLS是Apple標準。 兩者都用於自我調整視訊串�
 
 漸進式視訊的傳送方式，是將視訊下載並儲存在使用者的案頭系統或行動裝置上。
 
-下表說明使用[Dynamic Media HTML5視訊檢視器](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video#interactive-video)在桌上型電腦和行動裝置上播放視訊的裝置、瀏覽器和方法。
+下表說明使用[Dynamic Media HTML5視訊檢視器](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video#interactive-video)在桌上型電腦和行動裝置上播放視訊的裝置、瀏覽器和方法。
 
 <table>
  <tbody>
@@ -460,7 +460,7 @@ If you are using an out-of-box video viewer provided by Dynamic Media, or if you
 
 Use the Dynamic Media Viewers Reference and the Dynamic Media HTML5 Viewers SDK to create your own video viewers.
 
-See [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
+See [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=zh-Hant).
 
 Download the Scene7 HTML Viewer SDK from Adobe Developer Connection.
 
@@ -920,7 +920,7 @@ These features in Dynamic Media make AI-powered video aptions a valuable tool fo
 
 Dynamic Media可以將註解檔案轉換為JSON (JavaScript物件標籤法)格式。 此轉換表示您可以將JSON文字內嵌至網頁，做為影片隱藏但完整的文字記錄。 搜尋引擎接著可以編目/索引內容，讓影片更容易找到，並為客戶提供更多有關影片內容的詳細資料。
 
-如需在URL中使用JSON函式的詳細資訊，請參閱[提供靜態（非影像）內容](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents#image-serving-api)。
+如需在URL中使用JSON函式的詳細資訊，請參閱[提供靜態（非影像）內容](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents#image-serving-api)。
 
 **若要在視訊中新增字幕：**
 
@@ -1539,7 +1539,7 @@ Enabling any of the above three capabilities, enables all of them. So, if you on
 
 **To enable DASH, multi-captions and multi-audio tracks, and AI-generated captions support on your Dynamic Media account:** 
 
-1. [Use the Admin Console to start the creation of a new support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+1. [Use the Admin Console to start the creation of a new support case](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html).
 1. To create a support case, follow the instructions while ensuring you provide the following information:
 
     * Primary contact name, email, phone.
