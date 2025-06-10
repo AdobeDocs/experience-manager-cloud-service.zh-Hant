@@ -4,10 +4,10 @@ description: 了解如何使用發行前通道來取得即將推出的 AEM as a 
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 feature: Release Information
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '1264'
-ht-degree: 100%
+source-git-commit: 36da09746f02daad82875329b0aa53ee4eb7c074
+workflow-type: tm+mt
+source-wordcount: '889'
+ht-degree: 58%
 
 ---
 
@@ -18,78 +18,43 @@ ht-degree: 100%
 
 ## 簡介 {#introduction}
 
-Adobe Experience Manager as a Cloud Service 根據 [Experience Manager 發行路徑圖](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=zh-Hant#aem-as-cloud-service)定期提供新功能。
+Adobe Experience Manager as a Cloud Service會定期提供新功能。 特定功能發行版本的新功能及即將推出的功能清單已發佈在[發行說明中。](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
-若要熟悉排定在下個功能發行上線的功能，您可以訂閱發行前通道，您可藉由設定您的開發環境或任何沙箱環境來存取該通道。您可以預覽可透過 AEM 使用者介面存取的變更，也可以針對任何新的發行前 API 建置程式碼。
+即將推出的功能通常以下列兩種方式之一提供：
 
-特定功能發行的發行前功能清單會在[發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)中發佈。
+* 作為率先採用者計畫的一部分
+* 作為發行前管道的一部分
 
-## AEM as a Cloud Service 發行 {#releases}
+本檔案說明如何啟用發行前通道。 發行前通道可讓您存取將在AEM的未來功能版本中推出的早期功能。 這讓您有機會驗證新功能，並在未來發行前規劃採用。 如需Adobe Experience Manager (AEM) as a Cloud Service](/help/release-notes/home.md)發行排程的詳細資訊，請參閱檔案[AEM發行說明。
 
-AEM as a Cloud Service 有兩種發行。
+## 啟用發行前通道以存取及試用即將推出的功能 {#enable-prerelease}
 
-* 啟動時，**功能發行**&#x200B;會在 AEM as a Cloud Service 中新增功能和特性
-* **維護發行**&#x200B;會新增安全性更新、效能增強和錯誤修正，並且會定期頻繁地套用。
+可以在任何開發或沙箱環境中啟用發行前通道。中繼或生產環境中無法啟用發行前通道。
 
-此模式可確保持續發行而不會中斷服務。
-
-發行前通道可讓您預覽即將到來的功能發行中預定推出的功能，以便您可以評估即將推出的功能，並針對其可能在您自己專案中的實作方式進行規劃。它可讓您提前規劃下個功能發行。
-
-例如，假設現在是五月，而且您訂閱了發行前通道，您可以評估即將推出的六月發行中的功能。
-
-![發行前步調圖形](assets/prerelease-cadence.png)
-
-發行前版本為您提供為期一個月的滾動時段，讓您了解即將推出的 AEMaaCS 功能，讓您有時間評估任何新功能對您專案和自訂內容的影響，並且規劃推出此類功能、測試和使用者培訓。
-
-有效利用發行前通道需要採取四個步驟。
-
-1. [標示您的行事曆](#mark-calendars)
-1. [檢閱發行說明](#release-notes)
-1. [存取及試用新功能](#new-features)
-1. [訓練您的使用者](#train-users)
-
-## 標示您的行事曆 {#mark-calendars}
-
-功能發行的排程已事先安排妥當，並於 [Adobe Experience League](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=zh-Hant#aem-as-cloud-service) 上發佈功能發行啟用日期。
-
-記下發行日期，以便您可以規劃時間來檢閱和測試即將推出的功能。
-
-## 檢閱發行說明 {#release-notes}
-
-在行事曆上標示發行日期後，請務必在發行當天查看 [Adobe Experience League](/help/release-notes/release-notes-cloud/release-notes-current.md) 網站以取得最新的發行說明。
-
-每個版本都附有發行說明，其中不僅記錄了該版本中的新功能，也記錄了可用於發行前評估的功能。取提前掌握情況，並為利用 AEMaaCS 的最新功能進行規劃！
-
-您還可以查看與每個版本一起發佈的[已知問題](/help/release-notes/maintenance/latest.md)，這樣您也可以了解可能對您評估或最終採用任何新功能構成挑戰的任何技術問題。
-
-## 啟用發行前通道來存取及試用新功能 {#new-features}
-
-可以在任何開發或沙箱環境中啟用發行前通道。中繼環境或生產環境中不可啟用發行前通道。
-
-可以透過不同方式體驗發行前功能：
+有兩種不同的方式可存取發行前通道：
 
 * [雲端環境](#cloud-environments)
 * [本機 SDK](#local-sdk)
 
 ### 雲端環境 {#cloud-environments}
 
-若要更新雲端環境來使用發行前版本，您必須增加一個新的環境變數。您可以使用 Cloud Manager UI 或透過 CLI 執行此操作。
+若要更新雲端環境以使用發行前通道，您必須新增一個環境變數。 您可以使用 Cloud Manager UI 或透過 CLI 執行此操作。
 
 #### 使用 UI 新增環境變數 {#add-with-ui}
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
-1. 瀏覽至您要啟用發行前版本的計畫。
+1. 瀏覽至您要啟用發行前通道的程式。
 
-1. 選取您要啟用發行前版本的環境，並透過&#x200B;**計畫** > **環境** > **環境設定**&#x200B;存取其設定。
+1. 選取您要啟用發行前通道的環境，並透過&#x200B;**方案** > **環境** > **環境設定**&#x200B;存取其設定。
 
-1. 新增一個新的[環境變數](../implementing/cloud-manager/environment-variables.md)
+1. 新增一個新的[環境變數](/help/implementing/cloud-manager/environment-variables.md)
 
    | 名稱 | 值 | 套用的服務 | 類型 |
    |------|-------|-----------------|------|
    | `AEM_RELEASE_CHANNEL` | `prerelease` | 全部 | 變數 |
 
-1. 儲存變更，環境將重新整理並啟用發行前功能切換。
+1. 儲存變更，環境將在啟用發行前通道後重新整理。
 
    ![新環境變數](assets/env-configuration-prerelease.png)
 
@@ -116,15 +81,15 @@ AEM as a Cloud Service 有兩種發行。
   aio cloudmanager:environment:set-variables <ENVIRONMENT_ID> --programId=<PROGRAM_ID> --variable AEM_RELEASE_CHANNEL "prerelease
   ```
 
-如果您希望環境還原為一般 (非發行前) 通道的行為，可以刪除該變數或將其設回不同的值。
+如果您想要將環境還原為標準行為（非發行前通道），可以刪除變數。
 
 ### 本機 SDK {#local-sdk}
 
-您可以在本機快速入門 SDK 的 Sites 主控台中查看新功能，並藉由設定您的 Maven 專案來參照位於 Maven Central 中的發行前 `API Jar`，針對發行前版本中的新 API 進行編碼。您也可以藉由在發行前模式下啟動一般快速入門 SDK，在本機開發環境中查看這些發行前功能。
+您可以在本機快速入門SDK的發行前通道中存取即將推出的功能，並藉由設定您的Maven專案來參照位於Maven Central的發行前通道`API Jar`，針對新API進行編碼。 您也可以透過在發行前模式下啟動一般快速入門SDK，在本機開發環境中檢視存取發行前通道。
 
 #### 在發行前模式下啟動快速入門 SDK {#prerelease-mode}
 
-1. 從軟體散發入口網站下載 SDK 並按照[存取 AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) 中所述進行安裝。
+1. 從軟體散發及安裝下載SDK，如[存取AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)中所述。
 1. 啟動 SDK 快速入門時，請包含引數 `-r prerelease`。
 
 值為 sticky，因此只能在第一次啟動時選取它。重新安裝 SDK 以變更命令列選項。
@@ -181,23 +146,13 @@ Javadoc 會發佈到 Maven Central。
 
 1. 部署到您的本機伺服器。
 
-1. 如果您滿意它在本機有如預期般運作，請將程式碼提交到開發分支並使用 Cloud Manager 非生產管道，以部署到有訂閱發行前通道的環境。
+1. 如果滿意它在本機如預期般運作，請將程式碼提交至開發分支，並使用Cloud Manager非生產管道來部署至已啟用發行前通道的[環境。](#cloud-environments)
 
 >[!CAUTION]
 > 
 > 部署到中繼或生產環境時，絕不能使用 `aem-prerelease-sdk-api` artifactId。透過生產管道部署時，請一律使用 `aem-sdk-api`。同樣地，參照發行前 API 的程式碼不應該透過生產管道進行部署。
 
-[AEM CS SDK Build Analyzer Maven 外掛程式 v1.0 及更高版本](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=zh-Hant#developing)將透過檢查相依性來偵測專案中是否使用了發行前 API。如果該分析器有找到，它將使用發行前 SDK API 來分析專案。
-
-## 訓練您的使用者 {#train-users}
-
-一旦您在發行前通道中測試了新功能，並已決定在您的專案中使用這些功能後，您就需要訓練您的使用者。
-
-Adobe Experience League 提供了用來學習 AEMaaCS 的大量資源。
-
-* [AEMaaCS 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=zh-Hant)
-* [教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-tutorials/overview.html?lang=zh-Hant)
-* 發行說明中的[每月發行概觀影片](/help/release-notes/release-notes-cloud/release-notes-current.md#release-video)
+[AEM CS SDK Build Analyzer Maven 外掛程式 v1.0 及更高版本](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html#developing)將透過檢查相依性來偵測專案中是否使用了發行前 API。如果該分析器有找到，它將使用發行前 SDK API 來分析專案。
 
 ## 考量事項 {#considerations}
 
@@ -205,6 +160,6 @@ Adobe Experience League 提供了用來學習 AEMaaCS 的大量資源。
 
 * 發行前通道不一定包含所有將在下一版中推出的新功能。
 * 發行前版本中的功能經過嚴格的品質保證，旨在提供完整的功能而不是測試版品質。如果您發現任何問題，請提報，就像您在懷疑一般 AEM 版本中的功能存在錯誤時所做的。
-* 若要判斷是否為發行前通道設定了環境，請前往 AEM 主控台的&#x200B;**關於**&#x200B;頁面，並檢查 AEM 版本號碼是否包含 *prerelease* 尾碼，例如 ```Adobe Experience Manager 2021.4.5226.20210427T070726Z-210429-PRERELEASE```。
+* 若要判斷是否為發行前通道設定了環境，請前往AEM主控台的&#x200B;**關於**&#x200B;頁面，並檢查AEM版本號碼是否包含`PRERELEASE`尾碼，例如`Adobe Experience Manager 2021.4.5226.20210427T070726Z-210429-PRERELEASE`。
 
 ![關於](/help/release-notes/assets/about.png)
