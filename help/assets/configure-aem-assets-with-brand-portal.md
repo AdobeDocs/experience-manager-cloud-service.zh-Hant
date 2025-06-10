@@ -238,7 +238,7 @@ Along with the automation workflow to activate Brand Portal on Experience Manage
 >[!NOTE]
 >
 > 從2024年6月起，您無法建立新的JWT憑證。 此後，只會建立OAuth認證。
-> > 檢視更多[建立OAuth設定](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#creating-oauth-configuration:~:text=For%20example%3A-,Creating%20an%20OAuth%20configuration,-To%20create%20a)。
+> &#x200B;> 檢視更多[建立OAuth設定](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#creating-oauth-configuration:~:text=For%20example%3A-,Creating%20an%20OAuth%20configuration,-To%20create%20a)。
 
 以下章節說明如何使用Adobe Developer Console手動設定Experience Manager Assets as a [!DNL Cloud Service]與Brand Portal。
 
@@ -472,7 +472,7 @@ Ensure that you have performed the following steps:
 
 您現在可以檢查發佈代理程式，並將資產發佈到Brand Portal以測試設定。
 
-如果啟用安全預覽，則在SPS中允許清單輸出IP ****
+如果啟用安全預覽，則在SPS中允許清單輸出IP **&#x200B;**
 如果使用具有為公司啟用[安全預覽](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en)的Dynamic Media-Scene7，則建議Scene7公司管理員[允許列出使用SPS (Scene7 Publishing System) Flash UI之個別地區的公開輸出IP](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en#testing-the-secure-testing-service)。
 輸出IP如下：
 
