@@ -3,7 +3,7 @@ title: Dynamic Media Prime 與 Ultimate
 description: 進一步瞭解Dynamic Media Prime和Ultimate、其優點以及兩者之間的差異。
 role: User
 exl-id: fd049d9c-7940-4638-a17a-21d1f85e9c52
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: 3d198ef51c399093da35a9d5821ee16e03fb0543
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 12%
@@ -45,13 +45,13 @@ Dynamic Media Ultimate是Experience Manager Assets的啟用服務，包含[具�
 * [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md)進階功能，例如：
 
    * 安全傳送資產，
-   * [智慧型裁切、智慧型影像、影像預設集和其他影像修飾元](https://adobe-aem-assets-delivery-advancemodifiers.redoc.ly/)。
+   * [智慧型裁切、智慧型影像、影像預設集和其他影像修飾元](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat)。
 
 * [AEM as a Cloud Service中的Dynamic Media解決方案](/help/assets/dynamic-media/dynamic-media.md)，其中也包含下列主要功能：
 
    * [Dynamic Media 範本](/help/assets/dynamic-media/dynamic-media-templates.md)
-   * [基本範本](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics)
-   * [視覺設定](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-classic/using/master-files/vignette-window-covering-cabinet-files)
+   * [基本範本](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics)
+   * [視覺設定](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/master-files/vignette-window-covering-cabinet-files)
 
 ### 先決條件 {#pre-requisites-dm-ultimate}
 
