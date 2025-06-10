@@ -49,7 +49,7 @@ Universal Editor支援下列兩個AEM主要設定：
 下列專案支援通用編輯器：
 
 * AEM as a Cloud Service （版本`2023.8.13099`或更新版本）
-* [AEM 6.5 LTS](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/implementing/developing/headless/universal-editor/introduction)
+* [AEM 6.5 LTS](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65-lts/content/implementing/developing/headless/universal-editor/introduction)
    * 同時支援內部部署和AMS託管。
 * [AEM 6.5](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)
    * 同時支援內部部署和AMS託管。
@@ -104,7 +104,7 @@ Universal Editor不僅提供立即可用的強大功能，更提供多種擴充�
 當您探索通用編輯器並在您自己的專案中進一步實作時，請記住以下限制。
 
 * 不應超過25個AEM資源(內容片段、頁面、體驗片段、Assets等)在單一頁面上作為檢測參照。
-* AEM as a Cloud Service、[AEM 6.5 LTS](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/implementing/developing/headless/universal-editor/introduction)和[AEM 6.5](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)是唯一受支援的AEM後端。
+* AEM as a Cloud Service、[AEM 6.5 LTS](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65-lts/content/implementing/developing/headless/universal-editor/introduction)和[AEM 6.5](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)是唯一受支援的AEM後端。
 * AEM as a Cloud Service需要版本`2023.8.13099`或更新版本。
 * 內容作者必須擁有自己的個別Experience Cloud帳戶。
 * 作為AEM的一部分，通用編輯器[支援與AEM相同的案頭瀏覽器。](/help/overview/supported-platforms.md)
