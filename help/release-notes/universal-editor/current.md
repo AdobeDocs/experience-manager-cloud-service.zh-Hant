@@ -1,20 +1,20 @@
 ---
-title: 通用編輯器 2025.04.04 發行說明
-description: 以下是通用編輯器 2025.04.04 版本的發行說明。
+title: 通用編輯器 2025.05.21 發行說明
+description: 以下是通用編輯器 2025.05.21 版本的發行說明。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 593b8c704c5b016bb55ae6a25420b577044b4126
-workflow-type: ht
-source-wordcount: '126'
-ht-degree: 100%
+source-git-commit: 34b83022f3bcc8b6111b83fee207b337f6d4fed2
+workflow-type: tm+mt
+source-wordcount: '72'
+ht-degree: 62%
 
 ---
 
 
-# 通用編輯器 2025.04.04 發行說明 {#release-notes}
+# 通用編輯器 2025.05.21 發行說明 {#release-notes}
 
-以下是通用編輯器 2025 年 4 月 4 日版本的發行說明。
+以下是2025年5月21日發行的Universal Editor的發行說明。
 
 >[!TIP]
 >
@@ -22,11 +22,4 @@ ht-degree: 100%
 
 ## 新增功能 {#what-is-new}
 
-* **具有 OpenAPI 支援的 Dynamic Media** - 通用編輯器中的[資產選擇器](/help/assets/overview-asset-selector.md#repository-switcher)現在支援[具有 OpenAPI 和遠端資產的 Dynamic Media](/help/assets/integrate-remote-approved-assets-with-sites.md)
-* **IP 允許清單** - 通用編輯器現在支援 [IP 允許清單。](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#universal-editor) 您可以使用[此端點](http://universal-editor-service.adobe.io/ip-ranges)檢查通用編輯器服務的 IP。
-
-## 其他改良功能 {#other-improvements}
-
-* 移除版面內容已修正。
-* e2e 測試已改進。
-* 已進行相依性更新和程式碼清理。
+* **停用開啟頁面按鈕** — 現在可以停用開啟頁面按鈕[。](/help/implementing/universal-editor/customizing.md#open-page)

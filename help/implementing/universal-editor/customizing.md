@@ -4,9 +4,9 @@ description: 瞭解自訂Universal Editor的各種選項，以支援內容作者
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 98879fe30482e042da05a390e75d11c0adf7dba9
+source-git-commit: 6976f0c9926fb4cb64b0b2d7f8d2daf004c6b936
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '353'
 ht-degree: 8%
 
 ---
@@ -40,13 +40,21 @@ ht-degree: 8%
 <meta name="urn:adobe:aue:config:disable" content="publish-preview"/>
 ```
 
+## 停用開啟頁面 {#open-page}
+
+新增下列中繼資料，可完全在應用程式中隱藏&#x200B;**開啟頁面**&#x200B;按鈕。
+
+```html
+<meta name="urn:adobe:aue:config:disable" content="header-open-page" />
+```
+
 ## 篩選元件 {#filtering-components}
 
 您可以使用元件篩選器，在通用編輯器中限制每個容器允許的元件。 如需詳細資訊，請參閱檔案[篩選元件](/help/implementing/universal-editor/filtering.md)。
 
 ## 有條件地顯示和隱藏屬性面板中的元件 {#conditionally-hide}
 
-雖然元件通常可供作者使用，但在某些情況下卻可能沒有意義。 在這種情況下，您可以將`condition`屬性新增至元件模型[&#128279;](/help/implementing/universal-editor/field-types.md#fields)的欄位，以隱藏屬性面板中的元件。
+雖然元件通常可供作者使用，但在某些情況下卻可能沒有意義。 在這種情況下，您可以將`condition`屬性新增至元件模型](/help/implementing/universal-editor/field-types.md#fields)的[欄位，以隱藏屬性面板中的元件。
 
 可以使用[JsonLogic結構描述](https://jsonlogic.com/)定義條件。 如果條件為true，則會顯示欄位。 如果條件為false，則會隱藏欄位。
 

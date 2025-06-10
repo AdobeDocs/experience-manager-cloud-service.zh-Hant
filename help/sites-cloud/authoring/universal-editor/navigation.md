@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: c6d03117494d913e5b93edde9d7b38544e566c8a
+source-git-commit: 6976f0c9926fb4cb64b0b2d7f8d2daf004c6b936
 workflow-type: tm+mt
-source-wordcount: '1729'
+source-wordcount: '1756'
 ht-degree: 27%
 
 ---
@@ -79,7 +79,7 @@ Experience Cloud 標頭會始終顯示在畫面頂端。這是一個錨點，說
 
 #### Experience Manager {#experience-manager}
 
-選取標頭左側的Adobe Experience Cloud連結，即可導覽至Experience Manager解決方案的根目錄，以存取如[Cloud Manager](/help/onboarding/cloud-manager-introduction.md)、[Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)和[Software Distribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hant)之類的工具。
+選取標頭左側的Adobe Experience Cloud連結，即可導覽至Experience Manager解決方案的根目錄，以存取如[Cloud Manager](/help/onboarding/cloud-manager-introduction.md)、[Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)和[Software Distribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)之類的工具。
 
 ![全域導覽按鈕](assets/global-navigation.png)
 
@@ -183,9 +183,9 @@ Universal Editor工具列永遠出現在熒幕頂端[Experience Cloud標題](#ex
 >
 >使用快速鍵`p`切換至預覽模式，或切換自預覽模式。
 
-#### 開啟應用程式預覽 {#open-app-preview}
+#### 開啟頁面 {#open-page}
 
-選取開啟應用程式預覽圖示，即可使用自己的瀏覽器標籤開啟您目前正在編輯的頁面，無須使用編輯器即可預覽您的內容。
+選取開啟頁面圖示，以在其本身的瀏覽器標籤中開啟您目前編輯的頁面，無須使用編輯器即可預覽您的內容。
 
 ![開啟應用程式預覽](assets/open-app-preview.png)
 
@@ -197,6 +197,10 @@ Universal Editor工具列永遠出現在熒幕頂端[Experience Cloud標題](#ex
 >
 >您應用程式[的預覽URL可以自訂](/help/implementing/universal-editor/customizing.md#custom-preview-urls)。
 
+>[!NOTE]
+>
+>開啟頁面按鈕[可以停用](/help/implementing/universal-editor/customizing.md#open-page)，因此可能不會出現在您的編輯器中。
+
 #### 發佈 {#publish}
 
 選取發佈按鈕，以便將變更發佈到內容上線以供讀者使用或發佈到預覽環境以供稽核。
@@ -206,6 +210,10 @@ Universal Editor工具列永遠出現在熒幕頂端[Experience Cloud標題](#ex
 >[!TIP]
 >
 >請參閱檔案[使用通用編輯器發佈內容](publishing.md)，以取得使用通用編輯器發佈的詳細資訊。
+
+>[!NOTE]
+>
+>發佈按鈕[可以停用](/help/implementing/universal-editor/customizing.md#disable-publish)，因此可能不會出現在您的編輯器中。
 
 #### 省略符號 {#ellipsis}
 
