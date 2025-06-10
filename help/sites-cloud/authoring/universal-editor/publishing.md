@@ -36,7 +36,7 @@ ht-degree: 31%
    * 已發佈&#x200B;**已修改的**&#x200B;內容，但自上次發佈後已修改。
    * **已發佈**&#x200B;自該發佈以來未曾修改的內容。
 
-   視需要點選或按一下這些專案旁的核取方塊，以包含/排除它們。 點選或按一下「延伸&#x200B;****」，檢視三個類別總計中包含的個別專案，以及能夠個別加入/排除它們。
+   視需要點選或按一下這些專案旁的核取方塊，以包含/排除它們。 點選或按一下「延伸&#x200B;**&#x200B;**」，檢視三個類別總計中包含的個別專案，以及能夠個別加入/排除它們。
 
    ![發佈專案](assets/publish-items.png)
 
@@ -56,7 +56,7 @@ ht-degree: 31%
 
 ## 從網站主控台發佈與取消發佈 {#publishing-sites-console}
 
-您也可以從Sites主控台](/help/sites-cloud/authoring/sites-console/publishing-pages.md)發佈[，當您想要發佈多個內容頁面，或排程發佈或取消發佈時，這會很有用。
+您也可以從Sites主控台[&#128279;](/help/sites-cloud/authoring/sites-console/publishing-pages.md)發佈，當您想要發佈多個內容頁面，或排程發佈或取消發佈時，這會很有用。
 
 ## 其他資源 {#additional-resources}
 

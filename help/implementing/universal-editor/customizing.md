@@ -54,7 +54,7 @@ ht-degree: 8%
 
 ## 有條件地顯示和隱藏屬性面板中的元件 {#conditionally-hide}
 
-雖然元件通常可供作者使用，但在某些情況下卻可能沒有意義。 在這種情況下，您可以將`condition`屬性新增至元件模型](/help/implementing/universal-editor/field-types.md#fields)的[欄位，以隱藏屬性面板中的元件。
+雖然元件通常可供作者使用，但在某些情況下卻可能沒有意義。 在這種情況下，您可以將`condition`屬性新增至元件模型[&#128279;](/help/implementing/universal-editor/field-types.md#fields)的欄位，以隱藏屬性面板中的元件。
 
 可以使用[JsonLogic結構描述](https://jsonlogic.com/)定義條件。 如果條件為true，則會顯示欄位。 如果條件為false，則會隱藏欄位。
 
