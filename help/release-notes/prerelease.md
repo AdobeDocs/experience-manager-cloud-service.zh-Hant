@@ -25,7 +25,7 @@ Adobe Experience Manager as a Cloud Service會定期提供新功能。 特定功
 * 作為率先採用者計畫的一部分
 * 作為發行前管道的一部分
 
-本檔案說明如何啟用發行前通道。 發行前通道可讓您存取將在AEM的未來功能版本中推出的早期功能。 這讓您有機會驗證新功能，並在未來發行前規劃採用。 如需Adobe Experience Manager (AEM) as a Cloud Service](/help/release-notes/home.md)發行排程的詳細資訊，請參閱檔案[AEM發行說明。
+本檔案說明如何啟用發行前通道。 發行前通道可讓您存取將在AEM的未來功能版本中推出的早期功能。 這讓您有機會驗證新功能，並在未來發行前規劃採用。 如需Adobe Experience Manager (AEM) as a Cloud Service[&#128279;](/help/release-notes/home.md)發行排程的詳細資訊，請參閱檔案AEM發行說明。
 
 ## 啟用發行前通道以存取及試用即將推出的功能 {#enable-prerelease}
 
