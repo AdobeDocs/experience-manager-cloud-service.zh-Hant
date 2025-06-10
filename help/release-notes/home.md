@@ -38,7 +38,7 @@ ht-degree: 42%
 
 這種節奏為您提供滾動視窗，以評估任何即將推出的功能對您的專案和自訂的影響，並計畫推出此類功能、測試和使用者培訓。
 
-請檢視[Experience Manager發行藍圖](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)，以取得有關即將發行的詳細資訊。
+請檢視[Experience Manager發行藍圖](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=zh-Hant#aem-as-cloud-service)，以取得有關即將發行的詳細資訊。
 
 ## 如何準備發行 {#how-to-prepare}
 
@@ -51,7 +51,7 @@ ht-degree: 42%
 
 ## 標示您的行事曆 {#mark-calendars}
 
-功能發行都會事先安排好，並於 [Adobe Experience League](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service) 上發佈功能發行啟用日期。
+功能發行都會事先安排好，並於 [Adobe Experience League](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=zh-Hant#aem-as-cloud-service) 上發佈功能發行啟用日期。
 
 記下發行日期，以便您可以規劃時間來檢閱和測試即將推出的功能。
 
@@ -81,8 +81,8 @@ ht-degree: 42%
 
 Adobe Experience League 提供了用來學習 AEMaaCS 的大量資源。
 
-* [AEMaaCS 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)
-* [教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-tutorials/overview.html)
+* [AEMaaCS 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=zh-Hant)
+* [教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-tutorials/overview.html?lang=zh-Hant)
 * 發行說明中的[每月發行概觀影片](/help/release-notes/release-notes-cloud/release-notes-current.md#release-video)
 
 ## 重要發行資訊 {#key-articles}
