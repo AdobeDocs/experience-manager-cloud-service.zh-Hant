@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Headless, Content Fragments, GraphQL API
 role: Admin, Architect, Developer
 source-git-commit: 1995c84bb669fd52ecd53c7e695acc518a5226e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '503'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 為內容片段的結構化內
 
 >[!NOTE]
 >
->Assets HTTP API[&#128279;](/help/assets/content-fragments/assets-api-content-fragments.md)中的內容片段支援現在[已棄用](/help/release-notes/deprecated-removed-features.md)。 已由[使用OpenAPI的內容片段傳送](/help/headless/aem-content-fragment-delivery-with-openapi.md)以及[內容片段和內容片段模型管理OpenAPI](/help/headless/content-fragment-openapis.md)取代。
+>[Assets HTTP API 中支援內容片段](/help/assets/content-fragments/assets-api-content-fragments.md)的功能現在[已棄用](/help/release-notes/deprecated-removed-features.md)。目前已由[透過 OpenAPI 傳遞 AEM 內容片段](/help/headless/aem-content-fragment-delivery-with-openapi.md)以及[內容片段與內容片段模型管理 OpenAPI](/help/headless/content-fragment-openapis.md) 取代上述功能。
 
 ## 下一步 {#whats-next}
 
@@ -70,9 +70,9 @@ Adobe Experience Manager (AEM) as a Cloud Service 為內容片段的結構化內
 * [內容片段和內容片段模型的 OpenAPI](/help/headless/content-fragment-openapis.md)
 * [AEM Assets HTTP API 中的內容片段支援](/help/assets/content-fragments/assets-api-content-fragments.md)
 * [使用內容片段](/help/sites-cloud/administering/content-fragments/overview.md)
-* [AEM 核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)
+* [AEM 核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [CORS/AEM 說明](https://helpx.adobe.com/tw/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 * [影片 - 使用 AEM 開發 CORS](https://helpx.adobe.com/tw/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
 * [AEM as a Headless CMS 簡介](/help/headless/introduction.md)
-* [AEM 開發人員入口網站](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hant)
-* [AEM 中的 Headless 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=zh-Hant)
+* [AEM 開發人員入口網站](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* [AEM 中的 Headless 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)

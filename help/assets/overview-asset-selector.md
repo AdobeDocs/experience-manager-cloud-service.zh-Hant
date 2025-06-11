@@ -4,9 +4,9 @@ description: 在應用程式內使用資產選擇器進行搜尋、尋找和取�
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
 source-git-commit: fb1e73b24e0717998a69132cc8f196193c87bab4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1598'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -155,7 +155,7 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
 
 ### 存放庫切換器 {#repository-switcher}
 
-資產選擇器也可讓您切換存放庫進行資產選擇。您可以從左側面板中的下拉清單中選擇您要的存放庫。下拉清單中可用的存放庫選項是根據`repositoryId` `index.html`檔案中定義的屬性。它是以登入使用者所存取的選定 IMS org 環境為基礎。消費者可以傳遞一個偏好的`repositoryID`，而且在該情況下，資產選擇器將停止呈現 repo 切換器，並僅從指定的存放庫呈現資產。
+資產選擇器也可讓您切換存放庫進行資產選擇。您可以從左側面板中的下拉清單中選擇您要的存放庫。下拉清單中可用的存放庫選項是根據`repositoryId``index.html`檔案中定義的屬性。它是以登入使用者所存取的選定 IMS org 環境為基礎。消費者可以傳遞一個偏好的`repositoryID`，而且在該情況下，資產選擇器將停止呈現 repo 切換器，並僅從指定的存放庫呈現資產。
 
 ### 資產存放庫
 
@@ -205,15 +205,15 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
 
 ### 資產詳細資料和中繼資料 {#asset-details-and-metadata}
 
-「資產詳細資訊」頁面提供特定資產的完整檢視，將所有重要資訊整合到一個地方。 其中包括包含名稱、檔案格式、狀態的概觀、簡短說明，以及便於視覺識別的預覽或縮圖。 其中也包含資產的中繼資料，例如建立日期、作者、大小、色彩配置等。 這些屬性有助於有效率地搜尋、篩選和分類資產。 Asset Selector的邊欄和模組檢視中都有資產詳細資料面板。 在邊欄檢視中，必須啟用並設定`onDrop`屬性以傳回資產。 或者，在模組檢視中，`handleSelection`屬性會傳回資產。 請參閱[資產選擇器屬性](asset-selector-properties.md)。
+資產詳細資料頁面提供特定資產的全方位視圖，將所有關鍵資訊整合到一個地方。其中包含顯示名稱、檔案格式、狀態和簡要說明的概觀，以及方便視覺識別的預覽或縮圖。另外亦包括某項資產的中繼資料，例如建立日期、作者、大小、色彩配置等。這些屬性有助於提高資產搜尋、過濾和分類的效率。在資產選擇器的邊欄視圖和模態視圖中皆可看見資產詳細資料面板。在邊欄視圖中，必須啟用並設定 `onDrop` 屬性才能傳回資產。或者，在模態視圖中，`handleSelection` 屬性會傳回一項資產。請參閱[資產選擇器屬性](asset-selector-properties.md)。
 
-若要檢視資產和中繼資料的詳細資訊，請執行以下步驟：
+要查看資產和中繼資料的詳細資料，請執行以下步驟：
 
-1. 開啟資產選擇器MFE並導覽至資產。
-1. 將游標暫留在資產上，然後按一下![資訊圖示](/help/assets/assets/info-icon-solid-black.svg)。
-1. 移至&#x200B;**[!UICONTROL 資訊]**&#x200B;標籤以檢視資產的詳細資料。<!--Otherwise, go to the **[Renditions](#asset-renditions)** tab to see renditions of an asset.-->
+1. 開啟資產選擇器 MFE 並導覽至一項資產。
+1. 將滑鼠懸停在資產上方並點選![資訊圖示](/help/assets/assets/info-icon-solid-black.svg)。
+1. 前往「**[!UICONTROL 資訊]**」索引標籤來查看資產的詳細資料。<!--Otherwise, go to the **[Renditions](#asset-renditions)** tab to see renditions of an asset.-->
 
-若要自訂資產的詳細資料檢視面板，請參閱[在模組檢視中自訂資訊](asset-selector-customization.md#customize-info-in-modal-view)。
+若要自訂資產的詳細資料視圖面板，請參閱[在模態視圖中自訂資訊](asset-selector-customization.md#customize-info-in-modal-view)。
 
 ![資產詳細資料](assets/asset-details.png)
 
@@ -239,7 +239,7 @@ Additionally, see [Asset Selector user interface for Dynamic Media with OpenAPI 
 
 ##### Add modifiers {#modifiers-dm-media-renditions}
 
-Beyond the common image settings available in the UI, Dynamic Media supports numerous advanced image modifications that you can specify in the Image Modifiers field. See [Defining image preset options with Image Modifiers](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/assets/dynamic/managing-image-presets#defining-image-preset-options-with-image-modifiers).
+Beyond the common image settings available in the UI, Dynamic Media supports numerous advanced image modifications that you can specify in the Image Modifiers field. See [Defining image preset options with Image Modifiers](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/managing-image-presets#defining-image-preset-options-with-image-modifiers).
 
 -->
 
@@ -279,7 +279,7 @@ Beyond the common image settings available in the UI, Dynamic Media supports num
         <img src="assets/asset-selector-properties.gif" width="70px" height="70px" alt="資產選擇器範例圖形"><br/>
         <a href="asset-selector-properties.md">資產選擇器屬性</a>
         <p>
-        <em>以實際的方式了解屬性的使用狀況。</em>
+        <em>以實際的方式了解屬性的使用情形。</em>
         </p>
     </td>
 </tr>
@@ -309,7 +309,7 @@ Beyond the common image settings available in the UI, Dynamic Media supports num
         <img src="assets/asset-selector-collections.gif" width="70px" height="70px" alt="資產選擇器集合圖形"><br/>
         <a href="asset-selector-collections.md">資產選擇器集合</a>
         <p>
-        <em>瞭解如何使用Experience Manager存放庫在Asset Selector中使用集合。</em>
+        <em>了解如何使用 Experience Manager 存放庫，在資產選擇器內使用集合。</em>
         </p>
     </td>
     <td>

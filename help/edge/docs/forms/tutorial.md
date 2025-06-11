@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
 source-git-commit: 67416999d068af6350748d610e7c1c7b1d991bc4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1922'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -190,7 +190,7 @@ AEM Forms 範本可協助您很快開始使用預先設定最適化表單區塊�
 
 >[!IMPORTANT]
 >
->**表單編寫所在的工作表有可命名內容的限制。 只有`helix-default`和`shared-aem`可以做為工作表名稱。**
+>**用來製作表單的工作表有命名限制。工作表名稱僅限使用 `helix-default` 和 `shared-aem`。**
 
 讓我們從更新欄位標籤開始。 開啟「查詢」表進行編輯，將提交按鈕的標籤變更為`Let's Talk`，並使用 AEM Sidekick 預覽和發佈檔案。
 
@@ -240,7 +240,7 @@ URL：`https://main--wefinance--wkndform.aem.live/enquiry`
        npm install -g @adobe/aem-cli
    ```
 
-1. 複製您的 GitHub 專案：使用以下命令從 GitHub 原地複製您的專案存放庫，更換為 &lt;owner> 存放庫所有者和 &lt;repo> 存放庫名稱：
+1. 複製您的 GitHub 專案：使用以下命令從 GitHub 原地複製您的專案存放庫，更換為 <owner> 存放庫所有者和 <repo> 存放庫名稱：
 
    ```
    git clone https://github.com/<owner>/<repo>

@@ -7,9 +7,9 @@ feature: Deploying
 role: Admin
 exl-id: 7ddd0a75-621a-4499-91d1-7b3408a68269
 source-git-commit: d53bfe103ff8e40c8221805a2d66faf3c5cd3823
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '419'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ AEM 使用者介面已針對筆記型電腦、桌上型電腦及平板電腦裝�
 | Mozilla Firefox (永久) | A：支援 | A：支援 | Z：不支援 |
 | Mozilla Firefox 最新 ESR [ 1] | A：支援 | A：支援 | Z：不支援 |
 | macOS 上的 Safari (永久) | A：支援 | A：支援 | Z：不支援 |
-| iPadOS上的Safari （常青） | Z：不支援 | A：支援 | Z：不支援 |
+| iPadOS 上的 Safari (永久) | Z：不支援 | A：支援 | Z：不支援 |
 
 1. Firefox 的擴充支援版本 ([請造訪 mozilla.org 以了解更多資訊](https://www.mozilla.org/en-US/firefox/enterprise/))
 
@@ -64,4 +64,4 @@ AEM 使用者介面已針對筆記型電腦、桌上型電腦及平板電腦裝�
 
 瀏覽器對於 AEM 轉譯的網站是否支援，取決於 AEM 頁面範本、區塊、設計及元件輸出的實作。因此，負責實作專案的開發人員最終可以控制您的網站相容性。
 
-AEM [專案範本、](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md#create-github-project) [核心元件、](/help/implementing/developing/components/overview.md#aem-core-components)及[WKND 範本網站](/help/implementing/developing/introduction/develop-wknd-tutorial.md)均與所有現代瀏覽器相容。
+AEM [專案範本、](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md#create-github-project)[核心元件、](/help/implementing/developing/components/overview.md#aem-core-components)及[WKND 範本網站](/help/implementing/developing/introduction/develop-wknd-tutorial.md)均與所有現代瀏覽器相容。
