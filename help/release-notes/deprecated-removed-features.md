@@ -5,9 +5,9 @@ exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
 source-git-commit: 569ab7cfab02cfc5d5ad1c8f402a51df34f4bac6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3039'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
@@ -18,23 +18,23 @@ ht-degree: 71%
 >title="AEM as a Cloud Service 中已棄用和已移除的功能"
 >abstract="AEM as a Cloud Service 具有雲端原生部署模型。此索引標籤會醒目提示已由其對應之雲生原生功能取代的特色與功能。"
 
-Adobe會定期審查功能（包括API和設定），以確保其符合AEM as a Cloud Service的效能、安全性和整體價值方面不斷變化的標準。 根據這些評估，某些功能可能會標籤為過時。 可行時，Adobe會提供合適的替代方案。
+Adobe 會定期檢閱包括 API 和設定在內的功能，確保其符合 AEM as a Cloud Service 在效能、安全性和整體價值方面不斷演進的標準。根據這些評估，某些功能可能會標記為棄用。在可行的情況下，Adobe 會提供合適的替代方案。
 
-當宣佈淘汰時，功能僅會在有限的時間內保持可用，客戶必須在任何指定的移除日期之前移除所有使用量。 Adobe將提供合理的通知和指引，以支援順利轉換。
+當宣布棄用時，該功能便僅能再使用一定的期間，客戶必須在任何指定的移除日期之前移除所有使用。Adobe 會提供合理的通知和指引，支援您平穩地進行轉變。
 
-在淘汰時間期間，Adobe會透過電子郵件通知、動作中心警示或Cloud Manager中的提醒，提醒客戶為從使用功能轉換到別處所需採取的動作。
+在棄用的時間範圍內，Adobe 會透過電子郵件通知、行動中心警示，或 Cloud Manager 中的提醒功能，提醒客戶轉變為停止使用某項功能時所需採取的動作。
 
 >[!WARNING]
 >
->在某些情況下，在部署新的Cloud Manager組建或升級至最新版本的AEM as a Cloud Service之前，可能需要移除功能。
+>在某些情況下，部署新的 Cloud Manager 版本或升級至最新版本的 AEM as a Cloud Service 之前，可能有必要移除某項功能。
 
-## 已棄用功能 {#deprecated-features}
+## 棄用的功能 {#deprecated-features}
 
-下表中的功能已宣佈淘汰，但尚未移除。  功能必須在目標移除日期之前停止使用，否則您就可能會面臨效能、可用性及安全性相關的問題。
+以下表格中的功能已宣佈為棄用，但尚未被移除。必須在目標移除日期之前停止使用這些功能，否則您會面臨與效能、可用性和安全性相關之問題的風險。
 
 | 功能 | 汰除功能 | 替代方案 |
 | ------------ | ------------------ | ----------- |
-| Sites | Assets HTTP API中的[內容片段支援](/help/assets/content-fragments/assets-api-content-fragments.md) | [OpenAPI的內容片段傳送](/help/headless/aem-content-fragment-delivery-with-openapi.md)<br>與<br> [內容片段和內容片段模型管理OpenAPI](/help/headless/content-fragment-openapis.md) |
+| Sites | [Assets HTTP API 中的內容片段支援](/help/assets/content-fragments/assets-api-content-fragments.md) | [透過 OpenAPI 傳遞 AEM 內容片段](/help/headless/aem-content-fragment-delivery-with-openapi.md)<br>以及<br> [內容片段與內容片段模型管理 OpenAPI](/help/headless/content-fragment-openapis.md) |
 | Sites | [PWA 功能](/help/sites-cloud/authoring/sites-console/enable-pwa.md) | 無 |
 | Sites | [SPA 編輯器](/help/implementing/developing/hybrid/introduction.md) | AEM 中用於管理 Headless 內容的首選編輯器為：<br>- [通用編輯器](/help/edge/wysiwyg-authoring/authoring.md)，用於視覺化編輯。<br>- [內容片段編輯器](/help/assets/content-fragments/content-fragments-managing.md)，用於表單型編輯。 |
 | [!DNL Sites] | [JavaScript Use API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [Java Use API](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-htl/content/java-use-api) |
@@ -49,11 +49,11 @@ Adobe會定期審查功能（包括API和設定），以確保其符合AEM as a 
 | [!DNL Foundation] | 複寫代理程式管理員畫面的「散發」標籤和複寫 API 無法用來複寫超過 10MB 的內容封裝。 | [管理發佈](/help/operations/replication.md#manage-publication)或[啟用樹狀工作流程步驟](/help/operations/replication.md#tree-activation) |
 | [!DNL Foundation] | 使用自 Adobe Developer Console 專案產生的憑證進行整合，已逐漸不再具備對服務帳戶 (JWT) 認證的支援。自 2024 年 5 月 1 日起，無法在 Adobe Developer Console 中建立新的服務帳戶 (JWT) 認證。現有的服務帳戶 (JWT) 認證在 2025 年 1 月 1 日之前仍可用於已設定的整合，之後將停止運作，且會要求客戶移轉至 OAuth 伺服器對伺服器認證。[了解更多](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console)。 | [移轉](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview)至 OAuth Server-to-Server 憑證。 |
 | [!DNL Foundation] | 用於複寫內容階層的發佈內容樹狀工作流程和相關的發佈內容樹狀工作流程步驟。 | 使用[啟用樹狀工作流程步驟](/help/operations/replication.md#tree-activation)，其效能更佳。 |
-| [!DNL Foundation] | 使用YUI壓縮/縮制JavaScript使用者端程式庫。 Adobe不打算進一步更新YUI資料庫。 | Adobe建議客戶切換至Google Closure Compiler (GCC)進行實作。 |
+| [!DNL Foundation] | 使用 YUI 壓縮/縮小 JavaScript 用戶端資料庫。Adobe 不打算進一步更新 YUI 資料庫。 | Adobe 建議客戶切換至 Google Closure Compiler (GCC) 來進行實施。 |
 
 ## 移除的功能 {#removed-features}
 
-本節列出已移除的功能。
+本區段列出已移除的功能。
 
 | 區域 | 功能 | 替代方案 | 目標移除日期 |
 | ------------ | ------------------ | ----------- | ------------------- |
@@ -67,11 +67,11 @@ Adobe會定期審查功能（包括API和設定），以確保其符合AEM as a 
 | [!DNL Foundation] | 支援 Apache Felix Http Whiteboard | OSGi Http Whiteboard | 2022 年 3 月 |
 | [!DNL Foundation] | 支援 com.adobe.granite.oauth.server | Adobe IMS 整合  | 2023 年 3 月 |
 | [!DNL Foundation] | 支援 org.apache.sling.serviceusermapping 功能以[取得服務使用者 ID](https://sling.apache.org/apidocs/sling12/org/apache/sling/serviceusermapping/ServiceUserMapper.html#getServiceUserID-org.osgi.framework.Bundle-java.lang.String-) | 不適用 | 2024 年 8 月 30 日 |
-| [!DNL Foundation] | Java 11執行階段已淘汰，並由Adobe和Java 21執行階段取代。 請注意，程式碼仍使用Java 11建置是可以接受的（Java 17和21是其他選項） | 已套用Java 21執行階段。 若要確保相容性，必須依照[執行階段需求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)所述更新程式庫版本 | 2025年3月5日/29 |
+| [!DNL Foundation] | Java 11 執行階段已棄用，且 Adobe 已將其替換為 Java 21 執行階段。請注意，仍然可以使用 Java 11 建置程式碼 (Java 17 和 21 是其他選項) | Java 21 執行階段已套用。為了確保相容性，請務必按照[執行階段需求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)中所述更新資料庫版本。 | 3 月 2025 年 5 月 29 日 |
 
-## 已過時 API {#aem-apis}
+## 棄用的 API {#aem-apis}
 
-下表中的API （按一下以展開檢視）已宣告棄用，但尚未移除。  您必須在目標移除日期前停止使用這些API，否則可能會面臨效能、可用性和安全性相關問題。 有些API參考以下的API移除指南一節。
+下方表格中的 API (按一下將其展開查看內容) 已宣佈為棄用，但尚未移除。必須在目標移除日期之前停止使用這些 API，否則您會面臨與效能、可用性和安全性相關之問題的風險。部分 API 參照下方的 API 移除指引區段。
 
 <details>
   <summary>展開以查看已過時的 API 清單。</summary>
@@ -126,19 +126,19 @@ Adobe會定期審查功能（包括API和設定），以確保其符合AEM as a 
   </tr>
   <tr>
     <td>ch.qos.logback.classic<br>ch.qos.logback.classic.boolex<br>ch.qos.logback.classic.db.names<br>ch.qos.logback.classic.db.script<br>ch.qos.logback.classic.encoder<br>ch.qos.logback.classic.filter<br>ch.qos.logback.classic.helpers<br>ch.qos.logback.classic.html<br>ch.qos.logback.classic.jmx<br>ch.qos.logback.classic.joran<br>ch.qos.logback.classic.joran.action<br>ch.qos.logback.classic.jul<br>ch.qos.logback.classic.layout<br>ch.qos.logback.classic.log4j<br>ch.qos.logback.classic.net<br>ch.qos.logback.classic.net.server<br>ch.qos.logback.classic.pattern<br>ch.qos.logback.classic.pattern.color<br>ch.qos.logback.classic.selector<br>ch.qos.logback.classic.selector.servlet<br>ch.qos.logback.classic.servlet<br>ch.qos.logback.classic.sift<br>ch.qos.logback.classic.spi<br>ch.qos.logback.classic.turbo<br>ch.qos.logback.classic.util<br>ch.qos.logback.core<br>ch.qos.logback.core.boolex<br>ch.qos.logback.core.encoder<br>ch.qos.logback.core.filter<br>ch.qos.logback.core.helpers<br>ch.qos.logback.core.hook<br>ch.qos.logback.core.html<br>ch.qos.logback.core.joran<br>ch.qos.logback.core.joran.action<br>ch.qos.logback.core.joran.conditional<br>ch.qos.logback.core.joran.event<br>ch.qos.logback.core.joran.event.stax<br>ch.qos.logback.core.joran.node<br>ch.qos.logback.core.joran.spi<br>ch.qos.logback.core.joran.util<br>ch.qos.logback.core.joran.util.beans<br>ch.qos.logback.core.layout<br>ch.qos.logback.core.net<br>ch.qos.logback.core.net.server<br>ch.qos.logback.core.net.ssl<br>ch.qos.logback.core.pattern<br>ch.qos.logback.core.pattern.color<br>ch.qos.logback.core.pattern.parser<br>ch.qos.logback.core.pattern.util<br>ch.qos.logback.core.property<br>ch.qos.logback.core.read<br>ch.qos.logback.core.recovery<br>ch.qos.logback.core.rolling<br>ch.qos.logback.core.rolling.helper<br>ch.qos.logback.core.sift<br>ch.qos.logback.core.spi<br>ch.qos.logback.core.status<br>ch.qos.logback.core.subst<br>ch.qos.logback.core.util</td>
-    <td>AEM as a Cloud Service不支援此內部回登API。 <a href="#ch.qos.logback">請參閱下面的移除說明。</a></td>
+    <td>AEM as a Cloud Service 不支援此內部 Logback API。<a href="#ch.qos.logback">請參閱下面的移除說明。</a></td>
     <td>2022/1/27</td>
     <td>2025/8/31</td>
   </tr>
   <tr>
     <td>org.slf4j.spi</td>
-    <td>AEM as a Cloud Service不支援此內部log4j API。 <a href="#org.slf4j">請參閱下面的移除說明。</a></td>
+    <td>AEM as a Cloud Service 不支援此內部 log4j API。<a href="#org.slf4j">請參閱下面的移除說明。</a></td>
     <td>2022/1/27</td>
     <td>2025/8/31</td>
   </tr>
   <tr>
     <td>org.apache.log4j<br>org.apache.log4j.helpers<br>org.apache.log4j.spi<br>org.apache.log4j.xml</td>
-    <td>Apache Log4j 1已於2015年結束生命週期，不再受支援。 <a href="#org.apache.log4j">請參閱下面的移除說明。</a></td>
+    <td>Apache Log4j 1 已於 2015 年結束其生命週期，不再支援。<a href="#org.apache.log4j">請參閱下面的移除說明。</a></td>
     <td>2022/1/27</td>
     <td>2025/8/31</td>
   </tr>
@@ -149,7 +149,7 @@ Adobe會定期審查功能（包括API和設定），以確保其符合AEM as a 
   </tr>
   <tr>
     <td>org.slf4j.event</td>
-    <td>AEM as a Cloud Service不支援此內部slf4j API。 <a href="#org.slf4j">請參閱下面的移除說明。</a></td>
+    <td>AEM as a Cloud Service 不支援此內部 slf4j API。<a href="#org.slf4j">請參閱下面的移除說明。</a></td>
     <td>2022/4/11</td>
     <td>2025/8/31</td>
   </tr> 
@@ -173,13 +173,13 @@ Adobe會定期審查功能（包括API和設定），以確保其符合AEM as a 
   </tr>
   <tr>
 <td>org.apache.felix.webconsole<br>org.apache.felix.webconsole.bundleinfo<br>org.apache.felix.webconsole.i18n<br>org.apache.felix.webconsole.spi</td>
-    <td>雲端環境不支援Felix Web主控台。 <a href="#org.apache.felix.webconsole">請參閱下面的移除說明。</a></td>
+    <td>雲端環境不支援 Felix 網頁控制台。<a href="#org.apache.felix.webconsole">請參閱下面的移除說明。</a></td>
     <td>2021/4/30</td>
     <td>2025/8/31</td>
   </tr>
 <td>org.bson<br/>org.bson.assertions<br/>org.bson.codecs<br/>org.bson.codecs.configuration<br/>org.bson.codecs.pojo<br/>org.bson.codecs.pojo.annotations<br/>org.bson.conversions<br/>org.bson.diagnostics<br/>org.bson.internal<br/>org.bson.io<br/>org.bson.json<br/>org.bson.types<br/>org.bson.util</td>
     <td>AEM as a Cloud Service 不支援使用此 API。</td>
-    <td>10/31/2022</td>
+    <td>2022/10/31</td>
     <td>2025/8/31</td>
   </tr>  
   <tr>
@@ -196,13 +196,13 @@ Adobe會定期審查功能（包括API和設定），以確保其符合AEM as a 
   </tr>
   <tr>
 <td>org.apache.commons.lang<br>org.apache.commons.lang.enums<br>org.apache.commons.lang.builder<br>org.apache.commons.lang.exception<br>org.apache.commons.lang.math<br>org.apache.commons.lang.mutable<br>org.apache.commons.lang.reflect<br>org.apache.commons.lang.text<br>org.apache.commons.lang.time</td>
-    <td>Commons Lang 2 處於維護模式。應該改用Commons Lang 3。 <a href="#apache.commons">請參閱下面的移除說明。</a></td>
+    <td>Commons Lang 2 處於維護模式。應該改用 Commons Lang 3。<a href="#apache.commons">請參閱下面的移除說明。</a></td>
     <td>2021/4/30</td>
     <td>待定</td>
   </tr>
   <tr>
     <td>org.apache.commons.collections<br>org.apache.commons.collections.bag<br>org.apache.commons.collections.bidimap<br>org.apache.commons.collections.buffer<br>org.apache.commons.collections.collection<br>org.apache.commons.collections.comparators<br>org.apache.commons.collections.functors<br>org.apache.commons.collections.iterators<br>org.apache.commons.collections.keyvalue<br>org.apache.commons.collections.list<br>org.apache.commons.collections.map<br>org.apache.commons.collections.set</td>
-    <td>Commons Collections 3 處於維護模式。應該改用Commons Collections 4。 <a href="#apache.commons">請參閱下面的移除說明。</a></td>
+    <td>Commons Collections 3 處於維護模式。應該改用 Collections 4。<a href="#apache.commons">請參閱下面的移除說明。</a></td>
     <td>2021/4/30</td>
     <td>待定</td>
   </tr>
@@ -214,7 +214,7 @@ Adobe會定期審查功能（包括API和設定），以確保其符合AEM as a 
   </tr>
   <tr><td>org.apache.sling.commons.json<br>org.apache.sling.commons.json.http<br>org.apache.sling.commons.json.io<br>org.apache.sling.commons.json.jcr<br>org.apache.sling.commons.json.sling<br>org.apache.sling.commons.json.util<br>org.apache.sling.commons.json.xml</td>
     <td>AEM as a Cloud Service 不支援此 API。</td>
-    <td>5/15/2023</td>
+    <td>2023/5/15</td>
     <td>待定</td>
   </tr>
   <tr>
@@ -233,9 +233,9 @@ Adobe會定期審查功能（包括API和設定），以確保其符合AEM as a 
 </table>
 </details>
 
-## 已移除的API {#removed-apis}
+## 移除的 API {#removed-apis}
 
-本節列出已過時和移除的API。 有些API參考以下的API移除指南一節。
+本區段列出已棄用及移除的 API。部分 API 參照下方的 API 移除指引區段。
 
 <details>
   <summary>展開以查看已移除的 API 清單。</summary>
@@ -316,9 +316,9 @@ Adobe會定期審查功能（包括API和設定），以確保其符合AEM as a 
 </table>
 </details>
 
-## API移除指引 {#api-removal-guidance}
+## API 移除指引 {#api-removal-guidance}
 
-本節反映上表中各種API的API移除指引。
+本區段反映上表中各種 API 的 API 移除指引。
 
 ### 移除 `org.apache.sling.commons.auth*` {#org.apache.sling.commons.auth}
 
@@ -326,16 +326,16 @@ Adobe會定期審查功能（包括API和設定），以確保其符合AEM as a 
 
 動作清單：
 
-* 將ACS AEM Commons更新至最新版本（至少6.11.0）
-* 從 `org.apache.sling.commons.auth` 和/或 `org.apache.sling.commons.auth.spi` 分別移轉至 `org.apache.sling.auth` `org.apache.sling.auth.spi`。
+* 將 ACS AEM Commons 更新至最新版本 (至少應為 6.11.0)
+* 從 `org.apache.sling.commons.auth` 和/或 `org.apache.sling.commons.auth.spi` 分別移轉至 `org.apache.sling.auth`、`org.apache.sling.auth.spi`。
 
 ### 移除 `org.apache.felix.webconsole*` {#org.apache.felix.webconsole}
 
-如果您使用`org.apache.felix.webconsole*`的套件，請從專案移除此程式碼。 在Cloud Service中無法存取Webconsole。
+若您使用來自 `org.apache.felix.webconsole*` 的封裝，請自專案中移除此程式碼。無法在 Cloud Service 中存取網頁控制台。
 
 動作清單：
 
-* 從`org.apache.felix.webconsole*`使用套件移除程式碼
+* 使用來自 `org.apache.felix.webconsole*` 的封裝移除程式碼
 
 ### 移除 `org.eclipse.jetty*` {#org.eclipse.jetty}
 
@@ -365,13 +365,13 @@ Adobe會定期審查功能（包括API和設定），以確保其符合AEM as a 
 
 ### 移除 `Apache Commons Lang 2 and Apache Commons Collections 3` {#apache.commons}
 
-移除未維護的Apache Commons程式庫的使用方式，並將其取代為支援版本的使用方式。 在大多數情況下，這只需要調整套件匯入，只有在某些情況下類別或方法已重新命名。 如果您使用的是舊版本的 [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)，請務必更新至最新版本。
+移除未維護的 Apache Commons 資料庫使用，並以支援版本取代。在大多數情況下，只需要調整封裝匯入，唯有在某些情況下類別或方法才需要重新命名。如果您使用的是舊版本的 [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)，請務必更新至最新版本。
 
 動作清單：
 
-* 將ACS AEM Commons更新至最新版本（至少6.11.0）
-* 以`org.apache.commons.lang3`取代`org.apache.commons.lang*`的匯入
-* 以`org.apache.commons.collecitons4`取代`org.apache.commons.collections*`的匯入
+* 將 ACS AEM Commons 更新至最新版本 (至少應為 6.11.0)
+* 以 `org.apache.commons.lang3` 取代匯入 `org.apache.commons.lang*`
+* 以 `org.apache.commons.collecitons4` 取代匯入 `org.apache.commons.collections*`
 
 ### 使用 `org.apache.abdera*` 和 `org.apache.sling.atom.taglib` {#org.apache.abdera_or_org.apache.sling.atom.taglib}
 
@@ -391,33 +391,33 @@ Adobe會定期審查功能（包括API和設定），以確保其符合AEM as a 
 
 ### 使用 `ch.qos.logback*` {#ch.qos.logback}
 
-Cloud Service不支援Logback，請移除其所有使用方式。 如果您使用的是舊版本的 [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)，請務必更新至最新版本。
+Cloud Service 不支援 Logback，請移除其所有使用。如果您使用的是舊版本的 [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)，請務必更新至最新版本。
 
 動作清單：
 
-* 將ACS AEM Commons更新至最新版本（至少6.11.0）
-* 從`ch.qos.logback`使用套件移除程式碼
+* 將 ACS AEM Commons 更新至最新版本 (至少應為 6.11.0)
+* 使用來自 `ch.qos.logback` 的封裝移除程式碼
 
 ### 使用 `org.slf4j.event and org.slf4j.spi` {#org.slf4j}
 
-如果您正在使用`org.slf4j.event`或`org.slf4j.spi`，請移除其所有使用方式。 如果您使用的是舊版本的 [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)，請務必更新至最新版本。
+若您正在使用 `org.slf4j.event` 或者 `org.slf4j.spi`，請移除其所有使用。如果您使用的是舊版本的 [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)，請務必更新至最新版本。
 
 動作清單：
 
-* 將ACS AEM Commons更新至最新版本（至少6.11.0）
-* 使用`org.slf4j.event`和`org.slf4j.spi`移除程式碼
+* 將 ACS AEM Commons 更新至最新版本 (至少應為 6.11.0)
+* 使用 `org.slf4j.event` 和 `org.slf4j.spi` 移除程式碼
 
 ### 使用 `org.apache.log4j` {#org.apache.log4j}
 
-如果您使用`org.apache.log4j`切換至SLF4J (`org.slf4j`)或Log4J 2.x (`org.apache.logging.log4j`)。
+若您正在使用 `org.apache.log4j` 切換至 SLF4J (`org.slf4j`) 或 Log4J 2.x (`org.apache.logging.log4j`)。
 
 動作清單：
 
-* 使用`org.slf4j` （建議）或`org.apache.logging.log4j`取代`org.apache.log4j`的使用方式
+* 使用 `org.slf4j` (建議) 或 `org.apache.logging.log4j` 取代 `org.apache.log4j` 的使用
 
 ## OSGI 設定 {#osgi-configuration}
 
-以下各節反映AEM as a Cloud Service OSGi設定表面，說明客戶可設定的專案。
+以下區段呈現 AEM as a Cloud Service OSGi 設定介面，說明客戶可以設定的內容。
 
 1. 客戶程式碼不得設定所列出的 OSGi 設定。
 1. 可以設定其屬性的 OSGi 設定清單，但必須遵守指定的驗證規則。這些規則包括是否需要聲明屬性、其類型以及在某些情況下允許的值範圍。
@@ -428,23 +428,23 @@ Cloud Service不支援Logback，請移除其所有使用方式。 如果您使�
 
 有關 OSGI 設定的其他資訊可以在[此位置](/help/implementing/deploying/configuring-osgi.md)找到。
 
-### 已棄用的OSGi屬性（即將無法修改） {#deprecated-unmodifiable-osgi-properties}
+### 棄用的 OSGi 屬性 (即將轉為不可修改) {#deprecated-unmodifiable-osgi-properties}
 
-下列OSGi元件PID的屬性已過時，應在強制實施日期前停止使用。
+以下 OSGi 元件 PID 的屬性已棄用，且應於執行日期前停止使用。
 
-| **OSGI元件識別碼** | **無法修改的屬性** | **棄用** | **強制** |
+| **OSGI 元件 ID** | **不可修改的屬性** | **棄用** | **執行** |
 |---|---|---|---|
-| **`org.apache.sling.commons.log.LogManager`** | 全部 | 4/24/25 | 2025年8月31日（設定在6月被忽略） |
-| **`org.apache.sling.commons.log.LogManager.factory.config`** | org.apache.sling.commons.log.file， org.apache.sling.commons.log.pattern | 4/24/25 | 2025年8月31日（設定在6月被忽略） |
-| **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`** | 全部 | 2024 | 8/31/25 |
-| **`com.adobe.granite.toggle.impl.dev.DynamicToggleProviderImpl`** | 全部 | 6/3/25 | 8/31/25 |
-| **`org.apache.http.proxyconfigurator`** | 全部 | 6/3/25 | 8/31/25 |
+| **`org.apache.sling.commons.log.LogManager`** | 全部 | 2025/4/24 | 2025/8/31 (於 6 月忽略設定) |
+| **`org.apache.sling.commons.log.LogManager.factory.config`** | org.apache.sling.commons.log.file、org.apache.sling.commons.log.pattern | 2025/4/24 | 2025/8/31 (於 6 月忽略設定) |
+| **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`** | 全部 | 2024 | 2025/8/31 |
+| **`com.adobe.granite.toggle.impl.dev.DynamicToggleProviderImpl`** | 全部 | 2025/6/3 | 2025/8/31 |
+| **`org.apache.http.proxyconfigurator`** | 全部 | 2025/6/3 | 2025/8/31 |
 
-### 無法修改的OSGi屬性 {#unmodifiable-osgi-properties}
+### 不可修改的 OSGi 屬性 {#unmodifiable-osgi-properties}
 
-無法修改下列OSGi元件PID的屬性，如下所述。
+如下所述，以下 OSGi 元件 PID 的屬性無法修改。
 
-| **OSGI元件識別碼** | **無法修改的屬性** |
+| **OSGI 元件 ID** | **不可修改的屬性** |
 |---|---|
 | **`com.day.cq.auth.impl.cug.CugSupportImpl`** |
 | **`com.day.cq.jcrclustersupport.ClusterStartLevelController`** | 全部 |
@@ -460,11 +460,11 @@ Cloud Service不支援Logback，請移除其所有使用方式。 如果您使�
 | **`com.adobe.granite.toggle.monitor.systemproperty`** | 全部 |
 
 
-### 未來強制的OSGi屬性限制 {#future-restrictions-osgi-properties}
+### 未來將強制執行的 OSGi 屬性限制 {#future-restrictions-osgi-properties}
 
-未來，Adobe將強制實施下列OSGi屬性限制，因此應停止使用。
+未來，Adobe 會強制執行以下 OSGi 屬性限制，因此應停止其使用。
 
-| OSGi元件PID |   | 必填 | 類型 | 限制（如果適用） |
+| OSGi 元件 PID |   | 必要 | 類型 | 限制 (如適用) |
 |---|---|---|---|---|
 | `com.day.cq.mailer.DefaultMailService` | `smtp.host` |   | 字串 |   |
 |   | `smtp.port` | 是 | 整數 | 「465」、「587」或「25」 |
@@ -476,7 +476,7 @@ Cloud Service不支援Logback，請移除其所有使用方式。 如果您使�
 |   | `smtp.requiretls` |   | 布林值 |   |
 |   | `debug.email` |   | 布林值 |   |
 |   | `oauth.flow` |   | 布林值 |   |
-| `org.apache.sling.commons.log.LogManager.factory.config` | `org.apache.sling.commons.log.level` | 是 | 字串 | &quot;INFO&quot;、&quot;DEBUG&quot;或&quot;TRACE&quot; |
+| `org.apache.sling.commons.log.LogManager.factory.config` | `org.apache.sling.commons.log.level` | 是 | 字串 | 「INFO」、「DEBUG」或「TRACE」 |
 |   | `org.apache.sling.commons.log.names` |   | 字串陣列 |   |
 |   | `org.apache.sling.commons.log.additiv` |   | 布林值 |   |
 | `com.day.cq.commons.impl.ExternalizerImpl` | `externalizer.domains` | 否 | 字串[] |   |
@@ -484,18 +484,18 @@ Cloud Service不支援Logback，請移除其所有使用方式。 如果您使�
 |   | `externalizer.host` | 否 | 字串 |   |
 |   | `externalizer.contextpath` | 否 | 字串 |   |
 
-### OSGi屬性限制 {#restrictions-osgi-properties}
+### OSGi 屬性限制 {#restrictions-osgi-properties}
 
-這些OSGi屬性的值僅限為底下所述的規則。
+這些 OSGi 屬性的值會受到下方所述之規則的限制。
 
-| OSGi元件PID |   | 必填 | 類型 | 限制（如果適用） |
+| OSGi 元件 PID |   | 必要 | 類型 | 限制 (如適用) |
 |---|---|---|---|---|
 | `org.apache.felix.eventadmin.impl.EventAdmin` | `org.apache.felix.eventadmin.ThreadPoolSize` | 是 | 整數 | 2-100 |
-|   | `org.apache.felix.eventadmin.AsyncToSyncThreadRatio` |   | 兩次 | — |
-|   | `org.apache.felix.eventadmin.AsyncToSyncThreadRatio` |   | 整數 | — |
-|   | `org.apache.felix.eventadmin.RequireTopic` |   | 布林值 | — |
-|   | `org.apache.felix.eventadmin.IgnoreTimeout` | 是 | 字串陣列 | 必須包含至少所有`org.apache.felix*`、`org.apache.sling*`、`come.day*`、`com.adobe*` |
-|   | `org.apache.felix.eventadmin.IgnoreTopic` |   | 字串陣列 | — |
+|   | `org.apache.felix.eventadmin.AsyncToSyncThreadRatio` |   | 雙精度浮點數 | -- |
+|   | `org.apache.felix.eventadmin.AsyncToSyncThreadRatio` |   | 整數 | -- |
+|   | `org.apache.felix.eventadmin.RequireTopic` |   | 布林值 | -- |
+|   | `org.apache.felix.eventadmin.IgnoreTimeout` | 是 | 字串陣列 | 必須至少包括全部 `org.apache.felix*`、`org.apache.sling*`、`come.day*`、`com.adobe*` |
+|   | `org.apache.felix.eventadmin.IgnoreTopic` |   | 字串陣列 | -- |
 | `org.apache.felix.http` | `org.apache.felix.http.timeout` |   | 整數 |   |
 |   | `org.apache.felix.http.session.timeout` |   | 整數 |   |
 |   | `org.apache.felix.http.jetty.threadpool.max` |   | 整數 |   |
@@ -545,5 +545,5 @@ Cloud Service不支援Logback，請移除其所有使用方式。 如果您使�
 
 ## Java Runtime 更新至 21 版 {#java-runtime-update-21}
 
-Adobe Experience Manager as a Cloud Service已轉換為Java 21執行階段。 為了確保相容性，一定要按照「[執行階段需求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)」中所述更新資料庫版本 。
+Adobe Experience Manager as a Cloud Service 已轉變為 Java 21 執行階段。為確保相容性，請務必按照[執行階段需求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)中所述更新資料庫版本。
 
