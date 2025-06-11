@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: be4c57c1703831b8c71fc722761515b32cfc0683
+source-git-commit: 0ce7d395c7c63f92e77769301c085fd917b869b4
 workflow-type: tm+mt
-source-wordcount: '6240'
+source-wordcount: '6242'
 ht-degree: 99%
 
 ---
@@ -261,7 +261,7 @@ ht-degree: 99%
    + [Sling Service 使用者對應和服務使用者定義的最佳做法](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
    + [Adobe as a Cloud Service 的客戶自控金鑰](/help/security/customer-managed-keys.md)
 + 上線 {#onboarding}
-   + [從這裡開始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=zh-Hant)
+   + [從這裡開始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
    + 上線歷程 {#journey}
       + [上線歷程概觀](/help/journey-onboarding/overview.md)
       + [上線準備](/help/journey-onboarding/preparation.md)
@@ -342,10 +342,10 @@ ht-degree: 99%
             + [使用使用者對應工具](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/using-user-mapping-tool-legacy.md)
    + 程式碼重構工具 {#refactoring-tools}
       + [重構工具快速入門](/help/journey-migration/refactoring-tools/getting-started-refactoring-tools.md)
-      + [重構工具概述](/help/journey-migration/refactoring-tools/overview-refactoring-tools.md)
+      + [重構工具概觀](/help/journey-migration/refactoring-tools/overview-refactoring-tools.md)
       + [Unified Experience](/help/journey-migration/unified-experience.md)
       + [存放庫現代化工具](/help/journey-migration/refactoring-tools/repo-modernizer.md)
-      + [Repository Modernizer (CAM)](/help/journey-migration/refactoring-tools/repo-modernizer-cam.md)
+      + [存放庫現代化工具 (CAM)](/help/journey-migration/refactoring-tools/repo-modernizer-cam.md)
       + [索引轉換器](/help/journey-migration/refactoring-tools/index-converter.md)
       + [資產工作流程移轉](/help/journey-migration/moving-to-aem-assets/asset-workflow-migration-tool.md)
       + [AEM Dispatcher 轉換工具](/help/journey-migration/refactoring-tools/dispatcher-transformation-utility-tools.md)
@@ -408,7 +408,7 @@ ht-degree: 99%
          + [管理專案](/help/sites-cloud/authoring/projects/managing.md)
          + [使用任務](/help/sites-cloud/authoring/projects/tasks.md)
          + [使用專案工作流程](/help/sites-cloud/authoring/projects/workflows.md)
-      + 啟動 {#launches}
+      + 頁面啟動次數 {#launches-for-pages}
          + [使用啟動](/help/sites-cloud/authoring/launches/overview.md)
          + [建立啟動 ](/help/sites-cloud/authoring/launches/creating.md)
          + [管理啟動中的頁面](/help/sites-cloud/authoring/launches/managing-pages.md)
@@ -539,7 +539,7 @@ ht-degree: 99%
       + [管理出版物](/help/assets/manage-publication.md)
       + [預覽 3D 資產](/help/assets/dynamic-media/previewing-3d-assets.md)
       + [影像的智慧型標記](/help/assets/smart-tags.md)
-      + [視訊的智慧標籤](/help/assets/smart-tags-for-videos.md)
+      + [影片的智慧標記](/help/assets/smart-tags-for-videos.md)
       + [如何組織資產](/help/assets/organize-assets.md)
       + [使用 [!DNL Adobe Stock] 資產](/help/assets/aem-assets-adobe-stock.md)
       + [管理收藏集](/help/assets/manage-collections.md)
@@ -1100,7 +1100,7 @@ ht-degree: 99%
 + Headless {#headless}
    + [什麼是 Headless CMS？](/help/headless/what-is-headless.md)
    + [AEM Headless 簡介](/help/headless/introduction.md)
-   + [開發人員入口網站 (其他資源)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hant)
+   + [開發人員入口網站 (其他資源)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
    + [最佳做法 - 設定和使用](/help/headless/best-practices-setup-use.md)
    + 設定 {#setup}
       + [簡介](/help/headless/setup/introduction.md)
@@ -1181,8 +1181,8 @@ ht-degree: 99%
    + [產生變化版本：與 AEM 編輯器整合](/help/generative-ai/generate-variations-integrated-editor.md)
    + [產生變化版本](/help/generative-ai/generate-variations.md)
    + [助理 (限量測試版)](/help/implementing/cloud-manager/aem-ai-assistant.md)
-   + [AEM Forms的AI助理(Forms Experience Builder) （早期採用者）](/help/edge/docs/forms/forms-ai-assistant.md)
-   + [AEM Forms AI助理 — 提示程式庫](/help/edge/docs/forms/ai-assistant-prompt-library.md)
+   + [AEM Forms 適用的 AI 助理 (表單體驗建立工具)(早期採用者) ](/help/edge/docs/forms/forms-ai-assistant.md)
+   + [AEM Forms AI 助理 - 提示程式庫](/help/edge/docs/forms/ai-assistant-prompt-library.md)
 + 實施 {#implementing}
    + [實施 AEM as a Cloud Service 應用程式](/help/implementing/home.md)
    + 使用 Cloud Manager {#using-cloud-manager}
