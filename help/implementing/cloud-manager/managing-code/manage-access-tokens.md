@@ -4,13 +4,13 @@ description: 瞭解如何在AEM Cloud Manager中檢視、編輯和刪除用於�
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="早期採用者" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#manage-access-tokens"
-source-git-commit: 9e2be3cabe0a93e6e357ceb5ecf4950c25d034d0
+exl-id: bc9f392c-61f5-4d39-972b-4c6c8f9bab4a
+source-git-commit: 9f9f931a233320014675c6aac86a2cc65f6909c6
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '420'
 ht-degree: 3%
 
 ---
-
 
 # 管理外部存放庫的存取權杖 {#manage-access-tokens}
 
@@ -43,9 +43,9 @@ Cloud Manager使用存取權杖來管理託管於外部Git平台上的存放庫�
 ## 編輯存取權杖 {#edit-access-tokens}
 
 1. 在&#x200B;**管理存取權杖**&#x200B;對話方塊中，在權杖名稱的右側，按一下![編輯圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg)。
-1. 在&#x200B;**編輯存取權杖**&#x200B;對話方塊的&#x200B;**權杖名稱**&#x200B;文字欄位中，更新權杖名稱。
+1. 在&#x200B;**編輯存取權杖**&#x200B;對話方塊中，更新&#x200B;**權杖名稱**&#x200B;或&#x200B;**存取權杖**&#x200B;值，或兩者皆更新。
 
-   無法編輯存取權杖密碼本身。
+   如果&#x200B;**存取Token**&#x200B;目前正在使用中，則會出現通知警告您，所有關聯的存放庫都會在更新後自動重新驗證。
 
    ![編輯存取權杖對話方塊](/help/implementing/cloud-manager/managing-code/assets/access-tokens-edit.png)
 
