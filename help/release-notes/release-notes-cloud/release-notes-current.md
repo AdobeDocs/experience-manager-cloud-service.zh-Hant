@@ -104,7 +104,7 @@ Content Hub現在也可讓您[將選取的資產及其轉譯下載為ZIP檔案](
 
 **Content Hub 中的 Dynamic Media 轉譯**
 
-直接從Content Hub使用者介面](/help/assets/download-assets-content-hub.md#download-asset-renditions)存取您所有的[Dynamic Media預設集轉譯和智慧型裁切以供下載。
+直接從Content Hub使用者介面[&#128279;](/help/assets/download-assets-content-hub.md#download-asset-renditions)存取您所有的Dynamic Media預設集轉譯和智慧型裁切以供下載。
 
 ![Dynamic Media 轉譯](/help/assets/assets/dm-renditions-content-hub.png)
 
