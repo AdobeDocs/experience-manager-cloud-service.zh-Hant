@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: d3cdc3d69c0002c5b124150050f905123457331c
 workflow-type: tm+mt
 source-wordcount: '380'
-ht-degree: 47%
+ht-degree: 48%
 
 ---
 
@@ -60,5 +60,5 @@ AEM as a Cloud Service 專門負責將您的平台的安全性與效能最佳化
 |---|---|---|
 | AEM Oak | 1.80.0 | [Oak API 1.80.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.80.0/index.html) |
 | AEM SLING API | 2.27.6 | [Apache Sling API 2.27.6 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
-| AEM HTL | 1.4.28 - 1.4.0 | [HTML 範本語言規格](https://github.com/adobe/htl-spec) |
+| AEM HTL | 1.4.28-1.4.0 | [HTML 範本語言規格](https://github.com/adobe/htl-spec) |
 | AEM 核心元件 | 2.29.0 | [AEM WCM 核心元件](https://github.com/adobe/aem-core-wcm-components) |
