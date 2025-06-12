@@ -41,7 +41,7 @@ ht-degree: 87%
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440931?quality=12&captions=chi_hant)
 
 -->
 
@@ -114,7 +114,7 @@ Content Hub現在也可讓您[將選取的資產及其轉譯下載為ZIP檔案](
 
 [原生整合Experience Manager (AEM) Dynamic Media與Journey Optimizer (AJO) B2C](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/content-management/combine/aem-dynamic)，讓行銷人員輕鬆將AEM Dynamic Media資產（轉譯和DM範本）內嵌至AJO內容，並跨管道提供即時更新和超個人化體驗。
 
->[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3463793/?learn=on&enablevpops=&autoplay=true&captions=chi_hant)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
