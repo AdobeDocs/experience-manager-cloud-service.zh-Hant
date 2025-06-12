@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 628d254ee130d436f0ac1728ab464d24db583b81
+source-git-commit: 5e90d3fb650106f31630c0297e55b4e9da201ba5
 workflow-type: tm+mt
-source-wordcount: '2074'
-ht-degree: 90%
+source-wordcount: '2082'
+ht-degree: 88%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 90%
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440931?quality=12&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -104,7 +104,7 @@ Content Hub現在也可讓您[將選取的資產及其轉譯下載為ZIP檔案](
 
 **Content Hub 中的 Dynamic Media 轉譯**
 
-直接從Content Hub使用者介面[&#128279;](/help/assets/download-assets-content-hub.md#download-asset-renditions)存取您所有的Dynamic Media預設集轉譯和智慧型裁切以供下載。
+直接從Content Hub使用者介面](/help/assets/download-assets-content-hub.md#download-asset-renditions)存取您所有的[Dynamic Media預設集轉譯和智慧型裁切以供下載。
 
 ![Dynamic Media 轉譯](/help/assets/assets/dm-renditions-content-hub.png)
 
@@ -112,9 +112,9 @@ Content Hub現在也可讓您[將選取的資產及其轉譯下載為ZIP檔案](
 
 **Dynamic Media 與 AJO B2C 的原生整合**
 
-[原生整合Experience Manager (AEM) Dynamic Media與Journey Optimizer (AJO) B2C](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/content-management/combine/aem-dynamic)，讓行銷人員輕鬆將AEM Dynamic Media資產（轉譯和DM範本）內嵌至AJO內容，並跨管道提供即時更新和超個人化體驗。
+[原生整合Experience Manager (AEM) Dynamic Media與Journey Optimizer (AJO) B2C](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/aem-dynamic)，讓行銷人員輕鬆將AEM Dynamic Media資產（轉譯和DM範本）內嵌至AJO內容，並跨管道提供即時更新和超個人化體驗。
 
->[!VIDEO](https://video.tv.adobe.com/v/3463793/?learn=on&enablevpops=&autoplay=true&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -216,7 +216,7 @@ OSGi 屬性：
    * 保留過去 7 年內的所有版本。
    * 此較高的預設臨界值能防止意外移除最近的資料。然而，若要讓存放庫效能最佳化，建議設定較低的值。
 
-* 您可以透過 OSGi 設定覆寫修改這些預設內容。
+* 您可以透過使用設定管道部署的YAML設定來修改這些預設值。
 
 #### 稽核記錄 {#mt-auditlogs}
 
@@ -229,7 +229,7 @@ OSGi 屬性：
    * 預設情況下會記錄所有事件。
    * 此較高的預設臨界值能防止意外移除最近的資料。然而，若要讓存放庫效能最佳化，建議設定較低的值。
 
-* 您可以透過 OSGi 設定覆寫修改這些預設內容。
+* 您可以透過使用設定管道部署的YAML設定來修改這些預設值。
 
 如需更多詳細資訊，請參閱[維護任務文章](/help/operations/maintenance.md#defaults)。
 
