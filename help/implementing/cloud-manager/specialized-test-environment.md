@@ -3,12 +3,12 @@ title: 新增專門的測試環境
 description: 瞭解Cloud Manager中的專業測試環境如何提供專屬空間，在接近生產的條件下驗證功能，適用於壓力測試和進階部署前檢查。
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-badge: label="早期採用者" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
+badge: label="私人測試版" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: 815fb5c3-a171-4531-8727-b79183d85f06
-source-git-commit: 58514d9f55eaaa35801380648831ad6d13cf1529
+source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
 workflow-type: tm+mt
 source-wordcount: '516'
-ht-degree: 8%
+ht-degree: 10%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->&#x200B;>本文所述功能僅可透過早期採用計畫使用。 若要註冊為早期採用者，請參閱[專業測試環境](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment)。
+>>本文所述的功能只能透過私人測試版計畫取得。 若要註冊私人測試版，請參閱[專業測試環境](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment)。
 
 Specialized Testing Environment (DevXL)是您可以建立的新型Cloud Manager環境。 其設計可支援進階使用案例，例如使用者驗收測試(UAT)和效能驗證。 與傳統開發、快速開發或預備環境不同，DevXL環境會在生產部署管道之外操作。 因此，它們可為您提供更大的彈性，同時維持嚴格的隔離以防止干擾生產工作流程。
 
@@ -69,7 +69,7 @@ DevXL的建置可反映一般中繼環境的大小、擴充性和組態。 此�
    * （選用）提供環境的&#x200B;**描述**。
    * 從下拉式清單中選取&#x200B;**主要區域**。 建立後，DevXL環境的主要區域(例如&#x200B;*美國（西部）*)就會鎖定，無法變更。
 
-   ![已選取「特殊化測試環境」選項按鈕的「新增環境」對話方塊](assets/specialized-test-environment.png)
+   ![Add environment dialog box with Specialized Testing Environment radio button selected](assets/specialized-test-environment.png)
 
 1. 按一下「**儲存**」。
 

@@ -4,7 +4,7 @@ description: 了解如何設定 Cloud Manager 與您自己的私人 GitHub 存�
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
+source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
 workflow-type: tm+mt
 source-wordcount: '968'
 ht-degree: 34%
@@ -23,7 +23,7 @@ ht-degree: 34%
 >* GitLab （GitLab的`gitlab.com`和自託管版本）存放庫
 >* Bitbucket (`bitbucket.org`和Bitbucket伺服器（BitBucket的自我主控版本）存放庫
 >
->請參閱[在Cloud Manager中新增外部存放庫 — 有限的Beta版](/help/implementing/cloud-manager/managing-code/external-repositories.md)。
+>請參閱[在Cloud Manager中新增外部存放庫 — 私人測試版](/help/implementing/cloud-manager/managing-code/external-repositories.md)。
 
 <!-- CONSIDER ADDING MORE DETAIL... THE WHY. Some key points about this capability include the following:
 
@@ -92,7 +92,7 @@ Cloud Manager 現在知道您的 GitHub 存放庫，但仍然需要存取它。�
 
    ![私人存放庫所有權驗證](/help/implementing/cloud-manager/assets/repos/private-repo-validate.png)
 
-   |  | 描述 |
+   |  | 說明 |
    | --- | --- |
    | **步驟1： GitHub應用程式** | Cloud Manager會使用GitHub應用程式，安全地與您的私人存放庫互動。<br>·您GitHub組織的所有者必須安裝位於`https://github.com/apps/cloud-manager-for-aem`的應用程式並授與存放庫的存取權。<br>·如需安裝和授與存取權完成的詳細資訊，請參閱GitHub的檔案。 |
    | **步驟2：機密檔案** | 若要增強安全性，您必須在存放庫的預設分支中建立機密檔案。<br>·按一下&#x200B;**產生**，然後按一下&#x200B;**確認**。 Cloud Manager會在&#x200B;**機密檔案內容**&#x200B;文字欄位中產生私人檔案的內容。<br>·按一下![復製圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)以複製該欄位中的內容。 密碼檔案的內容只會顯示一次。如果您在關閉此對話方塊之前未複製內容，請重新產生密碼。 |

@@ -3,9 +3,9 @@ title: 在Cloud Manager中管理外部存放庫的存取權杖
 description: 瞭解如何在AEM Cloud Manager中檢視、編輯和刪除用於自攜Git的存取權杖。
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-badge: label="早期採用者" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#manage-access-tokens"
+badge: label="私人測試版" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#manage-access-tokens"
 exl-id: bc9f392c-61f5-4d39-972b-4c6c8f9bab4a
-source-git-commit: 9f9f931a233320014675c6aac86a2cc65f6909c6
+source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 3%
@@ -22,7 +22,7 @@ Cloud Manager使用存取權杖來管理託管於外部Git平台上的存放庫�
 
 >[!NOTE]
 >
->本文所述功能僅可透過早期採用計畫使用。 如需詳細資訊，以及要註冊為早期採用者，請參閱[自備Git](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket)。
+>本文所述的功能只能透過私人測試版計畫取得。 如需詳細資訊以及註冊私人測試版，請參閱[自備Git](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket)。
 
 ## 檢視存取權杖 {#view-access-tokens}
 
