@@ -81,7 +81,7 @@ RDE可用於程式碼、內容以及Apache或Dispatcher設定。 不像一般的
 
 >[!IMPORTANT]
 >
->請確定您已為Adobe I/O (AIO) CLI和相關外掛程式安裝](https://nodejs.org/en/download/)的[節點和NPM版本20，以便正常運作。
+>請確定您已為Adobe I/O (AIO) CLI和相關外掛程式安裝[&#128279;](https://nodejs.org/en/download/)的節點和NPM版本20，以便正常運作。
 
 
 1. 依照此[程式](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/)安裝AIO CLI工具。
@@ -560,7 +560,7 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
    GitLab上的![程式碼品質驗證訊息](/help/implementing/developing/introduction/assets/rde-gitlab-code-quality-validation-message.png)
 
    在Bitbucket上的外觀：
-   位元貯體](/help/implementing/developing/introduction/assets/rde-bitbucket-code-quality-validation-message.png)上的![程式碼品質驗證訊息
+   位元貯體![&#128279;](/help/implementing/developing/introduction/assets/rde-bitbucket-code-quality-validation-message.png)上的程式碼品質驗證訊息
 
 1. **使用註解觸發部署。**
 

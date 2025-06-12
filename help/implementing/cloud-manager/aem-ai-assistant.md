@@ -49,7 +49,7 @@ AI Assistant目前的範圍著重於解決Adobe Experience Manager as a Cloud Se
 
 ## AEM Forms 適用的 AI 助理 (表單體驗建立工具) {#ai-forms-builder}
 
-除了用於產品知識的一般AI助理之外，AEM還為AEM Forms (Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant.md)**提供專門的**[ AI助理。 此增強型助理可以透過自然語言提示和回答表單特定問題，主動協助您建立及設定表單。
+除了用於產品知識的一般AI助理之外，AEM還為AEM Forms (Forms Experience Builder) [&#128279;](/help/edge/docs/forms/forms-ai-assistant.md)**提供專門的** AI助理。 此增強型助理可以透過自然語言提示和回答表單特定問題，主動協助您建立及設定表單。
 
 ### 主要功能
 
@@ -116,7 +116,7 @@ AEM Forms的AI助理提供：
 **若要啟動或重設交談：**
 
 1. 在AI助理上，按一下![更多圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
-1. 若要通知AI助理有關新主題或主題變更，請按一下[開始新交談] ****。
+1. 若要通知AI助理有關新主題或主題變更，請按一下[開始新交談] **&#x200B;**。
 
 ### 使用可發現性
 
