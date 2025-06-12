@@ -3,13 +3,13 @@ title: 使用 [!DNL Adobe Sensei] 智慧服務自動標籤資產
 description: 使用可套用關聯式和描述性商業標籤的人工智慧服務來標籤資產。
 feature: Smart Tags,Tagging
 role: Admin,User
-source-git-commit: 9af552b17421e320b6139d6bd6ecaa42428de397
+exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
+source-git-commit: e253445d04889390ea9bf34df4ab14a9583d78aa
 workflow-type: tm+mt
-source-wordcount: '2406'
+source-wordcount: '2457'
 ht-degree: 1%
 
 ---
-
 
 # AEM Assets的智慧標籤 {#using-smart-tags}
 
@@ -88,7 +88,7 @@ The applied smart tags are sorted in descending order of [confidence score](#con
 
 ## DAM中未標籤的Assets {#smart-tag-existing-assets}
 
-DAM中的現有或舊版資產不會自動加上智慧標籤。 您必須手動[重新處理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=zh-Hant#adjusting-load) Assets，才能為其產生智慧標籤。 程式完成後，請導覽至資料夾內任何資產的[!UICONTROL 屬性]頁面。 自動新增的標籤會顯示在[!UICONTROL 基本]索引標籤的[!UICONTROL 智慧標籤]區段中。 這些套用的智慧標籤會以[信賴分數](#confidence-score)的遞減順序排序。
+DAM中的現有或舊版資產不會自動加上智慧標籤。 您必須手動[重新處理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en#adjusting-load) Assets，才能為其產生智慧標籤。 程式完成後，請導覽至資料夾內任何資產的[!UICONTROL 屬性]頁面。 自動新增的標籤會顯示在[!UICONTROL 基本]索引標籤的[!UICONTROL 智慧標籤]區段中。 這些套用的智慧標籤會以[信賴分數](#confidence-score)的遞減順序排序。
 
 <!--
 To smart tag assets, or folders (including subfolders) of assets that exist in assets repository, follow these steps:
@@ -213,13 +213,25 @@ Following are the benefits of using Smart Tags in your AEM Assets:
 *  Helps your assets to become organized and categorized.
 -->
 
-## 使用AI產生的智慧標籤增強內容探索 {#ai-smart-tags}
+## 使用AI產生的中繼資料加強內容探索 {#ai-smart-tags}
 
 AI不會依賴手動輸入，而是自動將描述性標籤指派給數位資產。 這些AI產生的標籤可增強中繼資料品質，讓資產更容易搜尋、分類和推薦。 此方法不僅可避免手動標籤，進而提升效率，還可確保大量數位內容的一致性和擴充性。 例如，如果資產是影像，AI可以識別其中的物件、場景、情感，或甚至品牌標誌，並產生相關標籤，例如「日落」、「海灘」、「假期」或「微笑」。 AI產生的內容可運用語意和辭彙搜尋技術來增強資產搜尋。 檢視更多[搜尋Assets](search-assets.md)。<!--If the asset is a document, AI reads and interprets the text to assign meaningful keywords that summarize its content—such as "climate change," "policy," or "renewable energy.-->
 
 ![增強型智慧標籤](assets/enhanced-smart-tags1.png)
 
-### 使用AI產生的智慧標籤 {#using-ai-generated-smart-tags}
+### 如何啟用AI產生的中繼資料？ {#enable-ai-generated-metadata}
+
+若要啟用AI產生的中繼資料：
+
+* 最低必要的AEM發行版本為`20626`。
+
+* 您必須簽署GenAI Rider合約。 如需詳細資訊，請聯絡您的Adobe代表。
+
+  >[!IMPORTANT]
+  >
+  > 只有當您尚未定義資產標題時，AI產生的資產標題才會顯示在資產卡片中。 不會覆寫您指定的資產標題。
+
+### 使用AI產生的中繼資料 {#using-ai-generated-smart-tags}
 
 <!--[!NOTE]
 >
@@ -232,7 +244,7 @@ AI不會依賴手動輸入，而是自動將描述性標籤指派給數位資產
 
 1. 等候新上傳的資產處理完畢。 完成後，前往資產屬性。
 
-1. 移至&#x200B;**[!UICONTROL AI產生的]**&#x200B;標籤。 如果[!DNL Experience Manager]版本不相容或未更新，則不會顯示此索引標籤。 需要的最低AEM發行版本為`20626`。 有以下欄位：
+1. 移至&#x200B;**[!UICONTROL AI產生的]**&#x200B;標籤。 如果[!DNL Experience Manager]版本不相容或未更新，則不會顯示此索引標籤。 有以下欄位：
 
    * **[!UICONTROL 產生的標題]：**&#x200B;標題提供簡潔的標題，擷取上傳資產的核心概念，讓您一眼就能輕鬆理解。 新增資產時，如果您提供標題（在`dc:title`中），資產瀏覽檢視中會顯示該標題。 如果保留為空白，則會自動指派AI產生的標題。
    * **[!UICONTROL 已產生描述]：**&#x200B;描述提供資產相關資訊的簡短摘要，協助使用者和搜尋模組快速掌握其關聯性。

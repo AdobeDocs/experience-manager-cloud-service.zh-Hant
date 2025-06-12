@@ -5,10 +5,10 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 932f4b864e179760c9f4cbcf5ce1ea74764df5c4
+source-git-commit: 1b27ddd6e63c55442550145466ae21d1d03d6463
 workflow-type: tm+mt
-source-wordcount: '2448'
-ht-degree: 76%
+source-wordcount: '2499'
+ht-degree: 74%
 
 ---
 
@@ -69,7 +69,7 @@ ht-degree: 76%
 
 ![檢視資產的中繼資料](assets/metadata-view.png)
 
-*圖：若要檢視資產及其中繼資料，請從工具列按一下&#x200B;**[!UICONTROL 詳細資訊]**&#x200B;或按兩下資產。*
+*圖：若要檢視資產及其中繼資料，請從工具列按一下&#x200B;**[!UICONTROL 詳細資訊]**或按兩下資產。*
 
 標題、說明和上傳日期之類的基本中繼資料可在[!UICONTROL 基本]標籤中取得。[!UICONTROL 進階]標籤包含更進階的中繼資料，例如相機型號、鏡頭詳細資訊和地理標籤。[!UICONTROL 標記]標籤會根據影像內容包含自動套用的標記。
 
@@ -85,7 +85,7 @@ ht-degree: 76%
 
 ![檢視資產的智慧型標記](assets/metadata-view-tags.png)
 
-*圖：若要檢視智慧標記，請從工具列按一下&#x200B;**[!UICONTROL 詳細資訊]**&#x200B;或按兩下資產。*
+*圖：若要檢視智慧標記，請從工具列按一下&#x200B;**[!UICONTROL 詳細資訊]**或按兩下資產。*
 
 智慧型標記也包含信賴分數 (以百分比呈現)。這表示與套用標記相關的信賴度。您可以審核自動套用的智慧型標記。
 
@@ -250,13 +250,25 @@ See [Assign metadata form to folders](#assign-metadata-form-folder). Follow the 
 
 若要檢視已設定的根標記，請前往資產的詳細資料頁面，該頁面上會執行中繼資料表單和根標記之間的對應。
 
-## 使用AI產生的智慧標籤增強內容探索 {#ai-smart-tags}
+## 使用AI產生的中繼資料加強內容探索 {#ai-smart-tags}
 
 AI不會依賴手動輸入，而是自動將描述性標籤指派給數位資產。 這些AI產生的標籤可增強中繼資料品質，讓資產更容易搜尋、分類和推薦。 此方法不僅可避免手動標籤，進而提升效率，還可確保大量數位內容的一致性和擴充性。 例如，如果資產是影像，AI可以識別其中的物件、場景、情感，或甚至品牌標誌，並產生相關標籤，例如「日落」、「海灘」、「假期」或「微笑」。 AI產生的內容可運用語意和辭彙搜尋技術來增強資產搜尋。 檢視更多[搜尋Assets](search-assets-view.md)。<!--If the asset is a document, AI reads and interprets the text to assign meaningful keywords that summarize its content—such as "climate change," "policy," or "renewable energy.-->
 
-![增強型智慧標籤](assets/enhanced-smart-tags.png)
+![AI產生的中繼資料](/help/assets/assets/enhanced-smart-tags.png)
 
-### 使用AI產生的智慧標籤 {#using-ai-generated-smart-tags}
+### 如何啟用AI產生的中繼資料？ {#enable-ai-generated-metadata}
+
+若要啟用AI產生的中繼資料：
+
+* 最低必要的AEM發行版本為`20626`。
+
+* 您必須簽署GenAI Rider合約。 如需詳細資訊，請聯絡您的Adobe代表。
+
+  >[!IMPORTANT]
+  >
+  > 只有當您尚未定義資產標題時，AI產生的資產標題才會顯示在資產卡片中。 不會覆寫您指定的資產標題。
+
+### 使用AI產生的中繼資料 {#using-ai-generated-smart-tags}
 
 <!--[!NOTE]
 >
@@ -269,7 +281,7 @@ AI不會依賴手動輸入，而是自動將描述性標籤指派給數位資產
 
 1. 等候新上傳的資產處理完畢。 完成後，前往資產詳細資訊。
 
-1. 移至&#x200B;**[!UICONTROL AI產生的]**&#x200B;標籤。 如果[!DNL Experience Manager]版本不相容或未更新，則不會顯示此索引標籤。 需要的最低AEM發行版本為`20626`。 有以下欄位：
+1. 移至&#x200B;**[!UICONTROL AI產生的]**&#x200B;標籤。 如果[!DNL Experience Manager]版本不相容或未更新，則不會顯示此索引標籤。  有以下欄位：
 
    * **[!UICONTROL 產生的標題]：**&#x200B;標題提供簡潔的標題，擷取上傳資產的核心概念，讓您一眼就能輕鬆理解。 新增資產時，如果您提供標題（在`dc:title`中），資產瀏覽檢視中會顯示該標題。 如果保留為空白，則會自動指派AI產生的標題。
    * **[!UICONTROL 已產生描述]：**&#x200B;描述提供資產相關資訊的簡短摘要，協助使用者和搜尋模組快速掌握其關聯性。
@@ -279,13 +291,13 @@ AI不會依賴手動輸入，而是自動將描述性標籤指派給數位資產
 
 ## 後續步驟 {#next-steps}
 
-* [觀看在Assets檢視中管理中繼資料表單的相關影片](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html?lang=zh-Hant)
+* [觀看在Assets檢視中管理中繼資料表單的相關影片](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html)
 
 * 使用資產檢視使用者介面所提供的[!UICONTROL 意見回饋]選項提供產品意見回饋
 
 * 若要提供文件意見回饋，請使用右側邊欄提供的[!UICONTROL 編輯此頁面]![來編輯頁面](assets/do-not-localize/edit-page.png)或[!UICONTROL 記錄問題]![來建立 GitHub 問題](assets/do-not-localize/github-issue.png)
 
-* 聯絡[客戶服務](https://experienceleague.adobe.com/zh-hant?support-solution=General#support)
+* 聯絡[客戶服務](https://experienceleague.adobe.com/?support-solution=General#support)
 
 <!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
 To reuse an existing form to create a form, do one of these:
