@@ -1,21 +1,23 @@
 ---
 title: SPA 編輯器概觀
-description: 本文全面概述了 SPA 編輯器及其運作原理，包括 SPA 編輯器在 AEM 中互動的詳細工作流程。
+description: 本文全面概觀了 SPA 編輯器及其運作原理，包括 SPA 編輯器在 AEM 中互動的詳細工作流程。
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 99c7e60976da540958b46cb24b2a470bcfd9e635
+index: false
+source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
 workflow-type: tm+mt
 source-wordcount: '1633'
 ht-degree: 93%
 
 ---
 
+
 # SPA 編輯器概觀 {#spa-editor-overview}
 
 單頁應用程式 (SPA) 可為網站使用者提供引人入勝的體驗。開發人員希望能使用 SPA 框架建立網站，而作者則想在 AEM 中為使用這類框架建立網站，順暢地編輯內容。
 
-SPA 編輯器提供了一個全面的解決方案來支援在 AEM 中使用 SPA。此頁面概述了在 AEM 中 SPA 支援結構、SPA 編輯器的運作原理以及 SPA 框架和 AEM 如何保持同步。
+SPA 編輯器提供了一個全面的解決方案來支援在 AEM 中使用 SPA。此頁面概觀了在 AEM 中 SPA 支援結構、SPA 編輯器的運作原理以及 SPA 框架和 AEM 如何保持同步。
 
 {{ue-over-spa}}
 
@@ -35,7 +37,7 @@ AEM 中的 SPA 支援帶入一個薄 JS 層，在頁面編輯器中載入內容�
 
 ## 設計 {#design}
 
-SPA 的頁面元件不會透過 JSP 或 HTL 檔案提供其子元件的 HTML 元素。此操作委派給 SPA 框架。子元件或模型的表示是以 JSON 資料結構形式從 JCR 中提取。然後根據該結構將 SPA 元件新增到頁面。此行為將頁面元件的初始內文組合與非 SPA 對應部分區分開來。
+SPA 的頁面元件不會透過 JSP 或 HTL 檔案提供其子元件的 HTML 元素。此操作委派給 SPA 框架。子元件或模型的表示是以 JSON 資料結構形式從 JCR 中提取。然後根據該結構將 SPA 元件新增到頁面。此行為將頁面元件的初始內文構成與非 SPA 對應部分區分開來。
 
 ### 頁面模型管理 {#page-model-management}
 
@@ -97,7 +99,7 @@ SPA 的頁面元件不會透過 JSP 或 HTL 檔案提供其子元件的 HTML 元
 
 ### 用戶端-伺服器頁面編輯工作流程 {#client-server-page-editing-workflow}
 
-這是編輯 SPA 時用戶端-伺服器互動情況的更詳細概述。
+這是編輯 SPA 時用戶端-伺服器互動情況的更詳細概觀。
 
 ![用戶端-伺服器編輯工作流程](assets/client-server-editing.png)
 
@@ -131,7 +133,7 @@ SPA 的頁面元件不會透過 JSP 或 HTL 檔案提供其子元件的 HTML 元
 
 ### 編寫工作流程 {#authoring-workflow}
 
-這是重點放在編寫體驗的更詳細概述。
+這是重點放在編寫體驗的更詳細概觀。
 
 ![SPA 編寫工作流程](assets/authoring-workflow.png)
 

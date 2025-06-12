@@ -1,17 +1,18 @@
 ---
-title: SPA編輯器淘汰
+title: 停止支援 SPA 編輯器
 description: 雖然SPA Editor仍受Adobe支援，但瞭解其淘汰對您的專案有何影響，以及您對未來專案有哪些選項。
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7bff178eabdf7e0d89e7195be6ca109db19ee655
+exl-id: 58b1bb4a-33df-46df-8743-a56cefc5a60a
+source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
 workflow-type: tm+mt
 source-wordcount: '914'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# SPA編輯器淘汰 {#spa-editor-deprecation}
+# 停止支援 SPA 編輯器 {#spa-editor-deprecation}
 
 雖然SPA Editor仍受Adobe支援，但瞭解其淘汰對您的專案有何影響，以及您對未來專案有哪些選項。
 
@@ -32,7 +33,7 @@ Adobe已[發行2025.01版的AEM as a Cloud Service，](/help/release-notes/relea
 * [AEM SPA專案核心](https://github.com/adobe/aem-spa-project-core)
 * [AEM SPA頁面模型管理員](https://github.com/adobe/aem-spa-page-model-manager)
 * [AEM SPA元件對應](https://github.com/adobe/aem-spa-component-mapping)
-* [AEM SPA React Editable Components](https://github.com/adobe/aem-react-editable-components)
+* [AEM SPA React 可編輯的元件](https://github.com/adobe/aem-react-editable-components)
    * [AEM React核心元件](https://github.com/adobe/aem-react-core-wcm-components)
    * [AEM React核心元件庫](https://github.com/adobe/aem-react-core-wcm-components-base)
    * [AEM React Core Components SPA](https://github.com/adobe/aem-react-core-wcm-components-spa)

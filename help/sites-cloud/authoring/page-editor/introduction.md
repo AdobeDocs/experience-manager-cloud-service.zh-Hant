@@ -5,7 +5,7 @@ exl-id: da7d5933-f6c9-4937-a483-ec4352fba86b
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 9a700e9eb3116252f42bb08db9dadc0e8a6adbf7
 workflow-type: tm+mt
 source-wordcount: '1431'
 ht-degree: 3%
@@ -23,6 +23,8 @@ ht-degree: 3%
 >[!NOTE]
 >
 >您的帳戶需要適當的存取許可權才能編輯頁面。 如果您沒有許可權，請聯絡您的系統管理員。
+
+{{traditional-aem}}
 
 ## 方向 {#orientation}
 
@@ -136,7 +138,7 @@ AEM頁面編輯器主要由三個區段組成：
 
 如需詳細資訊，請參閱檔案[頁面編輯器側面板](/help/sites-cloud/authoring/page-editor/editor-side-panel.md)。
 
-### 編輯者 {#editor}
+### 編輯器 {#editor}
 
 在編輯器中，您可以直接變更頁面內容。 頁面會依您看到的方式呈現，您可以使用側面板中的資產或元件瀏覽器來拖放新內容，就地編輯內容。
 

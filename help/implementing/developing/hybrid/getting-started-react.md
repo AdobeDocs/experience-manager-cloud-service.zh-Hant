@@ -1,31 +1,33 @@
 ---
 title: 使用React在AEM中開始使用SPA
-description: 本文介紹了一個SPA應用計畫範例，說明它是如何組合在一起的，並可讓您使用React框架快速啟動並執行您自己的SPA。
+description: 本文介紹SPA應用程式範例，說明其如何組合，並可讓您使用React框架快速啟動並執行您自己的SPA。
 exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+index: false
+source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
 workflow-type: tm+mt
 source-wordcount: '1127'
 ht-degree: 5%
 
 ---
 
+
 # 使用React在AEM中開始使用SPA {#getting-started-with-spas-in-aem-using-react}
 
-單頁應用程式 (SPA) 可為網站使用者提供引人入勝的體驗。開發人員希望能使用SPA架構建立網站，而作者則想在AEM中順暢地編輯使用SPA架構建立之網站的內容。
+單頁應用程式 (SPA) 可為網站使用者提供引人入勝的體驗。開發人員希望能使用SPA架構建立網站，而作者則想在AEM中為使用SPA架構建立的網站順暢地編輯內容。
 
-SPA編寫功能提供全方位的解決方案，可支援AEM中的SPA。 本文介紹React架構上的簡化SPA應用程式，說明其如何組合，讓您快速啟動並執行自己的SPA。
+SPA製作功能提供全方位的解決方案，可支援AEM中的SPA。 本文介紹React架構上的簡化SPA應用程式，說明其如何組合，讓您快速啟動並執行自己的SPA。
 
 >[!NOTE]
 >
->本文章內容以React架構為基礎。 有關Angular架構的對應檔案，請參閱[AEM中的SPA快速入門 — Angular](getting-started-angular.md)。
+>本文章內容以React架構為基礎。 如需Angular架構的對應檔案，請參閱[AEM的SPA快速入門 — Angular](getting-started-angular.md)。
 
 {{ue-over-spa}}
 
 ## 簡介 {#introduction}
 
-本文概述簡單的SPA的基本功能，以及您需要瞭解的最少運作資訊。
+本文概述簡單SPA的基本功能，以及您需要瞭解的最少運作資訊。
 
 如需SPA在AEM中運作方式的詳細資訊，請參閱下列檔案：
 
@@ -37,17 +39,17 @@ SPA編寫功能提供全方位的解決方案，可支援AEM中的SPA。 本文�
 >
 >為了能夠在SPA內製作內容，內容必須儲存在AEM中，並由內容模型公開。
 >
->若在SPA外部開發的AEM不遵守內容模型合約，將無法編寫。
+>如果未遵守內容模型合約，則在AEM外部開發的SPA將無法編寫。
 
-本檔案將逐步解說使用React架構建立的簡化SPA結構，並說明其運作方式，以便您將此瞭解套用至您自己的SPA。
+本檔案將逐步解說使用React框架建立的簡化SPA結構，並說明其運作方式，以便您將此瞭解套用至您自己的SPA。
 
 ## 相依性、設定和建置 {#dependencies-configuration-and-building}
 
-除了預期的React相依性之外，範例SPA還可以使用其他程式庫，以更有效率地建立SPA。
+除了預期的React相依性之外，範例SPA還可以使用其他程式庫來更有效地建立SPA。
 
 ### 相依性 {#dependencies}
 
-`package.json`檔案定義整體SPA封裝的需求。 此處列出運作中AEM的最小SPA相依性。
+`package.json`檔案定義整體SPA套件的需求。 此處列出運作中SPA的最低AEM相依性。
 
 ```
   "dependencies": {
@@ -68,7 +70,7 @@ SPA編寫功能提供全方位的解決方案，可支援AEM中的SPA。 本文�
 
 `"aem-clientlib-generator": "^1.4.1",`
 
-如需詳細資訊，請參閱GitHub[&#128279;](https://github.com/wcm-io-frontend/aem-clientlib-generator)上的aem-clientlib-generator。
+如需詳細資訊，請參閱GitHub](https://github.com/wcm-io-frontend/aem-clientlib-generator)上的[aem-clientlib-generator。
 
 `aem-clientlib-generator`在`clientlib.config.js`檔案中的設定如下。
 
@@ -105,17 +107,17 @@ module.exports = {
 
 `"build": "webpack && clientlib --verbose"`
 
-建置後，封裝可以上傳到AEM執行個體。
+建置後，可將套件上傳至AEM執行個體。
 
 ### AEM 專案原型 {#aem-project-archetype}
 
-任何 AEM 專案都應使用 [AEM 專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)，它支援使用 React 或 Angular 的 SPA 專案並使用 SPA SDK。
+任何 AEM 專案都應使用 [AEM 專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)，它支援使用 React 或 Angular 的 SPA 專案並使用 SPA SDK。
 
 ## 應用程式結構 {#application-structure}
 
-如前所述，包含相依性並建置您的應用程式後，您將會擁有可上傳至SPA執行個體的有效AEM套件。
+如前所述，包含相依性並建置您的應用程式後，您將會擁有有效的SPA套件，可將其上傳至您的AEM執行個體。
 
-本檔案的下一節將帶您瞭解AEM中SPA的結構、驅動應用程式的重要檔案，以及它們如何協同運作。
+本檔案的下一節將帶您瞭解AEM中SPA的結構、驅動應用程式的重要檔案，以及它們如何共同運作。
 
 簡化的影像元件可作為範例，但應用程式的所有元件都根據相同的概念。
 
@@ -213,11 +215,11 @@ class Image extends Component {
 MapTo('my-react-app/components/content/image')(Image, ImageEditConfig);
 ```
 
-AEM中SPA的核心構想是將該SPA元件對應至AEM元件，並在修改內容時更新元件（反之亦然）。 如需此通訊模式的摘要，請參閱檔案[SPA編輯器概觀](editor-overview.md)。
+AEM中SPA的核心構想是將該SPA元件對應至AEM元件，並在修改內容時更新元件（反之亦然）。 如需此通訊模型的摘要，請參閱檔案[SPA Editor概觀](editor-overview.md)。
 
 `MapTo('my-react-app/components/content/image')(Image, ImageEditConfig);`
 
-`MapTo`方法將該SPA元件對應到該AEM元件。 它支援使用單一字串或字串陣列。
+`MapTo`方法將該SPA元件對應至AEM元件。 它支援使用單一字串或字串陣列。
 
 `ImageEditConfig`是組態物件，可透過為編輯器提供產生預留位置所需的中繼資料，來協助啟用元件的製作功能
 
@@ -266,8 +268,8 @@ export default MapTo('my-react-app/react/components/structure/page')(PageClass, 
 
 ## 後續步驟 {#next-steps}
 
-* [使用Angular在AEM中開始使用SPA](getting-started-angular.md)顯示如何使用Angular在AEM中建立基本SPA以與SPA編輯器搭配使用。
-* [SPA 編輯器概述](editor-overview.md)更深入地介紹 AEM 和 SPA 之間的通訊模型。
+* [使用Angular在AEM中開始使用SPA](getting-started-angular.md)顯示如何使用Angular在AEM中建立基本SPA以搭配SPA編輯器使用。
+* [SPA 編輯器概觀](editor-overview.md)更深入地介紹 AEM 和 SPA 之間的通訊模型。
 * [WKND SPA專案](wknd-tutorial.md)是在AEM中實作簡單SPA專案的逐步教學課程。
 * [SPA的動態模型到元件對應](model-to-component-mapping.md)說明動態模型到元件對應，以及它在AEM中SPA內的運作方式。
-* [SPA Blueprint](blueprint.md)讓您深入瞭解適用於AEM的SPA SDK如何運作，以防您想要在AEM中針對React或Angular以外的架構實作SPA，或只是想要更深入的瞭解。
+* [SPA Blueprint](blueprint.md)讓您深入瞭解適用於AEM的SPA SDK如何運作，以防您想要在AEM中為React或Angular以外的框架實作SPA，或只是想要更深入的瞭解。

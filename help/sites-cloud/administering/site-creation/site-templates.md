@@ -1,11 +1,11 @@
 ---
 title: 網站範本
-description: 瞭解如何使用AEM網站範本來預先定義網站結構和初始內容，以便您快速建立網站。
+description: 瞭解如何使用AEM網站範本來預先定義網站結構和初始內容，讓您快速建立網站。
 feature: Administering
 role: Admin
 exl-id: 42eec922-b02e-4f2c-8107-7336192919c7
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
 workflow-type: tm+mt
 source-wordcount: '556'
 ht-degree: 19%
@@ -14,25 +14,27 @@ ht-degree: 19%
 
 # 網站範本 {#site-templates}
 
-瞭解如何使用AEM網站範本來預先定義網站結構和初始內容，以便您快速建立網站。
+{{traditional-aem}}
+
+瞭解如何使用AEM網站範本來預先定義網站結構和初始內容，讓您快速建立網站。
 
 ## 概觀 {#overview}
 
 使用預先定義的結構很方便，可根據一組現有標準快速部署新網站。 網站範本是一種將基本網站內容結合成方便且可重複使用之封裝的方法。
 
-網站範本通常包含基本網站內容和結構以及網站樣式資訊，稱為[網站主題](site-themes.md)，以便快速啟動新網站。 管理員在網站建立程式[&#128279;](create-site.md)期間，選取網站所依據的網站範本。
+網站範本通常包含基本網站內容和結構以及網站樣式資訊，稱為[網站主題](site-themes.md)，以便快速啟動新網站。 管理員在網站建立程式](create-site.md)期間，選取網站[所依據的網站範本。
 
-範本可重複使用且可自訂，因此功能強大。 由於您可以在AEM安裝中使用多個範本，因此可以彈性地建立不同的網站以符合各種業務需求。
+範本可重複使用且可自訂，因此功能強大。 由於您可以在AEM安裝中使用多個範本，因此可彈性建立不同網站以符合各種業務需求。
 
 >[!NOTE]
 >
 >不應混淆AEM網站範本與[頁面範本](/help/sites-cloud/authoring/page-editor/templates.md)。 網站範本定義網站的整體結構。 頁面範本定義單一頁面的結構和初始內容。
 >
->AEM網站範本不應與[AEM網站主題](site-themes.md)混淆。 AEM網站主題僅包含AEM網站的樣式資訊。 AEM網站範本定義網站結構和初始內容，並包含AEM網站主題，以允許[快速建立網站](create-site.md)。
+>不應混淆AEM網站範本與[AEM網站主題](site-themes.md)。 AEM網站主題僅包含AEM網站的樣式資訊。 AEM網站範本定義網站結構和初始內容，並包含AEM網站主題，以允許[快速建立網站](create-site.md)。
 
 ## 新增網站範本至AEM {#adding}
 
-您可以將多個範本新增至AEM，然後將其用於[建立網站](create-site.md)。
+您可以將多個範本新增至AEM，再使用這些範本來[建立網站](create-site.md)。
 
 1. 登入您的 AEM 製作環境並導覽至 Sites 主控台
 
@@ -67,7 +69,7 @@ ht-degree: 19%
 
 ## 標準網站範本 {#standard-site-template}
 
-Adobe提供最佳實務參考範本，您可以依據此範本建立自己的範本。 [標準網站範本可在GitHub上取得](https://github.com/adobe/aem-site-template-standard)。
+Adobe提供最佳實務參考範本，您可以根據此範本建立自己的範本。 [標準網站範本可在GitHub上取得](https://github.com/adobe/aem-site-template-standard)。
 
 [可以下載最新版本的標準網站範本](https://github.com/adobe/aem-site-template-standard/releases)，並直接用於[建立新網站](create-site.md)。
 

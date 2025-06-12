@@ -5,7 +5,7 @@ feature: Administering
 role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 
 
 # 使用網站面板管理您的網站主題 {#site-panel}
+
+{{traditional-aem}}
 
 瞭解網站面板的強大功能，協助您輕鬆自訂和管理網站主題。
 

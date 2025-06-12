@@ -5,14 +5,16 @@ exl-id: b8218232-0298-4b16-9dab-fa59be592a24
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
+workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 100%
 
 ---
 
 # AEM 快速網站建立歷程  {#quick-site-creation-journey}
+
+{{traditional-aem}}
 
 從這裡開始，此歷程會逐步引導您了解簡單易用的 AEM 快速建立網站工具，以簡化 AEM 網站的前端開發，並在沒有 AEM 後端知識的情況下快速自訂您的網站。
 
@@ -76,5 +78,5 @@ AEM 快速建立網站工具讓非開發人員使用網站範本從頭開始快�
 
 查看這些其他資源，進一步了解 AEM 的強大功能如何共同運作。
 
-* [AEM as a Cloud Service 技術文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=zh-Hant) - 如果您已經對 AEM 有深入的了解，您可能想直接查閱深入的技術文件。
+* [AEM as a Cloud Service 技術文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) - 如果您已經對 AEM 有深入的了解，您可能想直接查閱深入的技術文件。
 * [網站管理文件](/help/sites-cloud/administering/site-creation/create-site.md) - 查看關於建立網站的技術文件，了解快速建立網站工具功能的更多詳細資訊。

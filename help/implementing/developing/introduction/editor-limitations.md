@@ -1,19 +1,20 @@
 ---
-title: 編輯器限制
-description: 觸控式UI中的編輯器會使用覆蓋來與受限於iframe中的內容互動。 這個互動會對編輯器的使用以及開發人員造成一些限制。
+title: 頁面編輯器限制
+description: 頁面編輯器會使用覆蓋來與限定在iframe中的內容互動。 這個互動會對編輯器的使用以及開發人員造成一些限制。
 exl-id: 6a4f0e43-1076-4da9-95dc-9c5bf83e30d0
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 8b38e26b16c1fb565f122777f0577d332f62c39c
 workflow-type: tm+mt
-source-wordcount: '315'
-ht-degree: 6%
+source-wordcount: '312'
+ht-degree: 4%
 
 ---
 
-# 編輯器限制 {#editor-limitations}
 
-觸控式UI中的編輯器會使用覆蓋來與受限於iframe中的內容互動。 此互動會對編輯器的使用以及開發人員造成一些限制。 本頁面會概述這些限制，並儘可能提供解決方案或因應措施。
+# 頁面編輯器限制 {#editor-limitations}
+
+[頁面編輯器](/help/sites-cloud/authoring/page-editor/introduction.md)會使用覆蓋來與受限於iframe中的內容互動。 此互動會對編輯器的使用以及開發人員造成一些限制。 本頁面會概述這些限制，並儘可能提供解決方案或因應措施。
 
 ## 功能限制 {#functional-limitations}
 
@@ -27,7 +28,7 @@ ht-degree: 6%
 
 ### 結構頁面 {#structure-pages}
 
-無法將Pagesis命名為`structure`。 名稱為`structure`的頁面在頁面編輯器中將不可編輯。
+頁面不能命名為`structure`。 名稱為`structure`的頁面在頁面編輯器中將不可編輯。
 
 ## CSS限制 {#css-limitations}
 

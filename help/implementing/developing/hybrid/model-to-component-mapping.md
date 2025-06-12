@@ -1,25 +1,27 @@
 ---
-title: SPA的動態模型至元件對應
-description: 本文說明適用於AEM的JavaScript SPA SDK中如何產生動態模型到元件的對應。
+title: SPA的元件對應動態模型
+description: 本文說明在AEM的JavaScript SPA SDK中，元件對映的動態模型如何發生。
 exl-id: 3a7b3f26-4a09-40c1-af03-bb8408a68e57
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
+index: false
+source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 0%
 
 ---
 
-# SPA的動態模型至元件對應 {#dynamic-model-to-component-mapping-for-spas}
 
-本檔案說明適用於AEM的JavaScript SPA SDK中元件對映的動態模型如何發生。
+# SPA的元件對應動態模型 {#dynamic-model-to-component-mapping-for-spas}
+
+本檔案說明適用於AEM的JavaScript SPA SDK中如何發生元件對應的動態模型。
 
 {{ue-over-spa}}
 
 ## 元件對應模組 {#componentmapping-module}
 
-`ComponentMapping`模組是以NPM封裝形式提供給前端專案。 它儲存前端元件，並提供單頁應用程式將前端元件對應到AEM資源型別的方法。 模組會在剖析應用程式的JSON模型時啟用元件的動態解析。
+`ComponentMapping`模組是以NPM封裝形式提供給前端專案。 它會儲存前端元件，並提供單頁應用程式將前端元件對應至AEM資源型別的方法。 模組會在剖析應用程式的JSON模型時啟用元件的動態解析。
 
 模型中每個專案都包含公開AEM資源型別的`:type`欄位。 掛載時，前端元件可使用從基礎程式庫收到的模型片段來轉譯自身。
 

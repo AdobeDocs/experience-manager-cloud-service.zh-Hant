@@ -4,10 +4,10 @@ description: 了解 Edge Delivery Services 提供的效能和完善 Lighthouse �
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 role: Admin, Architect, Developer
-source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
-workflow-type: ht
-source-wordcount: '1282'
-ht-degree: 100%
+source-git-commit: ad9592c705c7b26292a29b43997edadfa01ccb65
+workflow-type: tm+mt
+source-wordcount: '1321'
+ht-degree: 97%
 
 ---
 
@@ -21,6 +21,12 @@ ht-degree: 100%
 * 建立具有完善 Lighthouse 分數功能的快速網站，並透過操作遙測持續監控您的網站效能。
 * 透過分離內容來源來提高編寫工作效率。您可以使用通用編輯器進行 AEM 製作及文件型製作，兩者都是現成的功能。因此，您可以在同一網站上使用多個內容來源。
 * 使用內建的實驗框架，允許快速建立、執行測試而不影響效能，並快速發布測試獲勝者的生產。
+
+>[!TIP]
+>
+>**要立即動手操作嗎？**
+>
+>如果您想要立即動手，您可以[檢視aem.live上的教學課程，在30分鐘內透過AEM撰寫開始您自己的Edge Delivery Services專案。](https://www.aem.live/developer/ue-tutorial)
 
 ## 敏捷反應商務需求 {#agile-reaction}
 
@@ -54,6 +60,22 @@ Edge Delivery Services 是一組可組合的服務，可讓您以高度靈活的
 
 Edge Delivery Services 會使用 GitHub，可讓您直接從自己的 GitHub 存放庫管理和部署程式碼。新內容將立即加入，無需重建過程。
 
+### 使用通用編輯器進行 AEM 製作{#wysiwyg-authoring}
+
+通用編輯器是一種所見即所得 (WYSIWYG)、可自訂的一站式工具，讓您透過視覺化預覽即時編輯內容及維持內容正確脈絡。
+
+* 使用通用編輯器進行 AEM 製作，無論是 Headless 還是 Headful，皆可提高作者的效率。
+* 您可以利用 AEM 全面的內容管理功能，包括工作流程和治理。
+* 利用眾多擴充點來支援您自己的流程和整合。
+* 您可以使用 GitHub 中的 CSS 和 JavaScript 來開發網站的功能。
+
+![使用通用編輯器進行 AEM 製作](assets/wysiwyg-authoring.png)
+
+使用通用編輯器和 Edge Delivery Services 開始進行 AEM 製作：
+
+* 有關使用通用編輯器進行 AEM 製作的概觀，請參閱 aem.live 文件中[使用適用於 Edge Delivery Services 的 AEM 進行製作](https://www.aem.live/docs/aem-authoring)的文件。
+* 有關開發人員概觀，請參閱 aem.live 文件中[開始使用 - 通用編輯器開發人員教學課程](https://www.aem.live/developer/ue-tutorial)的文件。
+
 ### 以文件為主的製作 {#document-based}
 
 透過文件為主的製作，您可以直接使用 Microsoft Word 或 Google 文件的內容，使這些來源成為您網站上的頁面。標題、清單、影像、字體元素、都可以從初始來源傳輸到網站。
@@ -70,22 +92,6 @@ Edge Delivery Services 會使用 GitHub，可讓您直接從自己的 GitHub 存
 * 有關如何開始使用 Edge Delivery 的詳細資訊，請參閱 [aem.live 文件的「建置」區段。](https://www.aem.live/docs/#build)
 * 若要了解如何使用 Edge Delivery 製作和發佈內容，請參閱 [aem.live 文件的「發佈」區段](https://www.aem.live/docs/authoring)。
 * 若要了解如何正確啟動您的網站專案，請參閱 [aem.live 文件的「啟動」區段](https://www.aem.live/docs/#launch)
-
-### 使用通用編輯器進行 AEM 製作{#wysiwyg-authoring}
-
-通用編輯器是一種所見即所得 (WYSIWYG)、可自訂的一站式工具，讓您透過視覺化預覽即時編輯內容及維持內容正確脈絡。
-
-* 使用通用編輯器進行 AEM 製作，無論是 Headless 還是 Headful，皆可提高作者的效率。
-* 您可以利用 AEM 全面的內容管理功能，包括工作流程和治理。
-* 利用眾多擴充點來支援您自己的流程和整合。
-* 您可以使用 GitHub 中的 CSS 和 JavaScript 來開發網站的功能。
-
-![使用通用編輯器進行 AEM 製作](assets/wysiwyg-authoring.png)
-
-使用通用編輯器和 Edge Delivery Services 開始進行 AEM 製作：
-
-* 有關使用通用編輯器進行 AEM 製作的概觀，請參閱 aem.live 文件中[使用適用於 Edge Delivery Services 的 AEM 進行製作](https://www.aem.live/docs/aem-authoring)的文件。
-* 有關開發人員概觀，請參閱 aem.live 文件中[開始使用 - 通用編輯器開發人員教學課程](https://www.aem.live/developer/ue-tutorial)的文件。
 
 ### 決定您的製作方法 {#authoring-method}
 

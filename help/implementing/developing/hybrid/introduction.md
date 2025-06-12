@@ -4,12 +4,14 @@ description: 本文章介紹 SPA 的概念，並逐步解說如何使用基本 S
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
+index: false
+source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
 workflow-type: tm+mt
 source-wordcount: '2045'
 ht-degree: 93%
 
 ---
+
 
 # SPA 簡介和逐步解說 {#spa-introduction}
 
@@ -134,7 +136,7 @@ SPA 背後的主要概念是減少對伺服器呼叫和依賴，以儘量減少�
 
 ## SPA 應用程式和 AEM SPA 編輯器 {#spa-apps-and-the-aem-spa-editor}
 
-體驗SPA如何為使用者運作，然後檢查SPA頁面，有助於更清楚瞭解SAP應用程式如何在AEM中搭配SPA編輯器運作。
+體驗SPA如何為使用者運作，然後檢查SPA頁面，有助於更清楚瞭解SAP應用程式如何在AEM中搭配SPA Editor運作。
 
 ### 使用 SPA 應用程式 {#using-an-spa-application}
 
@@ -233,7 +235,7 @@ SPA 背後的主要概念是減少對伺服器呼叫和依賴，以儘量減少�
 
    此路徑允許擷取和關聯每個元件的編輯情境設定物件。
 
-   這是編輯器將其識別為 SPA 中的可編輯元件所需的唯一標記屬性。根據此屬性，SPA編輯器將決定與元件相關聯的可編輯組態，以便載入正確的框架、工具列等。
+   這是編輯器將其識別為 SPA 中的可編輯元件所需的唯一標記屬性。根據此屬性，SPA編輯器將決定與元件相關聯的可編輯設定，以便載入正確的框架、工具列等。
 
    也會新增一些特定類別名稱，用於標記預留位置和資產拖放功能。
 
@@ -245,7 +247,7 @@ SPA 背後的主要概念是減少對伺服器呼叫和依賴，以儘量減少�
 
 ## AEM Headful 和 Headless 技術 {#headful-headless}
 
-可以透過 AEM 內靈活的整合層級啟用 SPA，包括在 AEM 外部開發和維護的 SPA。此外，SPA也可以在AEM中使用，同時使用AEM來無頭傳送內容給其他端點。
+可以透過 AEM 內靈活的整合層級啟用 SPA，包括在 AEM 外部開發和維護的 SPA。此外，SPA可用於AEM，也可使用AEM將內容無頭傳送至其他端點。
 
 >[!TIP]
 >
@@ -257,5 +259,5 @@ SPA 背後的主要概念是減少對伺服器呼叫和依賴，以儘量減少�
 
 * [開始在 AEM 中使用 React 建立 SPA](getting-started-react.md)展示如何在 AEM 中使用 React 建立基本 SPA 以與 SPA 編輯器搭配運作
 * [開始在 AEM 中使用 Angular 建立 SPA](getting-started-angular.md)展示如何在 AEM 中使用 Angular 建立基本 SPA 以與 SPA 編輯器搭配運作
-* [SPA 編輯器概述](editor-overview.md)更深入地介紹 AEM 和 SPA 之間的通訊模型。
+* [SPA 編輯器概觀](editor-overview.md)更深入地介紹 AEM 和 SPA 之間的通訊模型。
 * [為 AEM 開發 SPA](developing.md) 介紹如何讓前端開發人員為 AEM 開發 SPA，以及 SPA 如何與 AEM 架構互動。

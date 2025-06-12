@@ -5,14 +5,16 @@ exl-id: 58e95c92-b859-4bb9-aa62-7766510486fd
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
+workflow-type: tm+mt
 source-wordcount: '776'
 ht-degree: 100%
 
 ---
 
 # 授予前端開發人員存取權 {#grant-fed-access}
+
+{{traditional-aem}}
 
 讓前端開發人員加入 Cloud Manager，以便能存取您的 AEM 網站 Git 存放庫和管道。
 
@@ -27,7 +29,7 @@ ht-degree: 100%
 
 ## 目標 {#objective}
 
-授予 Cloud Manager 存取權限並向使用者指派使用者角色的過程稱為上線。本文件將概述前端開發人員上線的最重要步驟，閱讀後您將了解：
+授予 Cloud Manager 存取權限並向使用者指派使用者角色的過程稱為上線。本文件將概觀前端開發人員上線的最重要步驟，閱讀後您將了解：
 
 * 如何將前端開發人員新增為使用者。
 * 如何向前端開發人員授予所需的角色。

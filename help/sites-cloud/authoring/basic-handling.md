@@ -1,14 +1,14 @@
 ---
 title: 基本處理
-description: 輕鬆瀏覽AEM及其基本用法
+description: 熟悉AEM及其基本使用方式
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 9a700e9eb3116252f42bb08db9dadc0e8a6adbf7
 workflow-type: tm+mt
 source-wordcount: '954'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -20,8 +20,6 @@ ht-degree: 2%
 >[!TIP]
 >
 >在整個AEM環境中都可以使用鍵盤快速鍵。 特別是當[使用網站主控台](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)和[頁面編輯器](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md)時。
-
-{{edge-delivery-authoring}}
 
 ## 觸控式UI {#a-touch-enabled-ui}
 
@@ -37,7 +35,7 @@ AEM的使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸�
 
 ## 產品導覽 {#product-navigation}
 
-每當使用者首次存取主控台時，就會啟動產品導覽教學課程。 請花上一分鐘時間選取，以取得AEM基本處理的良好概觀。
+每當使用者首次存取主控台時，就會啟動產品導覽教學課程。 請花上一分鐘時間選取，以取得AEM基本處理方式的良好概觀。
 
 ![導覽教學課程](assets/basic-handling-tutorial.png)
 
@@ -73,12 +71,12 @@ AEM的使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸�
 | 主控台 | 用途 |
 |---|---|
 | 專案 | 「專案」主控台可讓您直接存取專案。 [專案是虛擬儀表板](/help/sites-cloud/authoring/projects/overview.md)，可用來建立團隊。 然後，您可以授予該團隊存取資源、工作流程和任務的許可權，從而讓人們朝著共同目標努力。 |
-| Sites | [Sites主控台](/help/sites-cloud/authoring/sites-console/introduction.md)可讓您建立、檢視及管理AEM執行個體上執行的網站。 透過此主控台，您可以建立、編輯、複製、移動和刪除頁面、啟動工作流程以及發佈頁面。 |
+| Sites | [網站主控台](/help/sites-cloud/authoring/sites-console/introduction.md)可讓您建立、檢視及管理在您的AEM執行個體上執行的網站。 透過此主控台，您可以建立、編輯、複製、移動和刪除頁面、啟動工作流程以及發佈頁面。 |
 | 體驗片段 | [體驗片段](/help/sites-cloud/authoring/fragments/content-fragments.md)是獨立的體驗，可以跨管道重複使用，也可以有變數，省去重複複製和貼上體驗或體驗片段的麻煩。 |
 | Assets | Assets主控台可讓您匯入及管理[數位資產，例如影像、影片、檔案和音訊檔案](/help/assets/overview.md)。 這些資產隨後便可由同一AEM例項上執行的任何網站使用。 您也可以從Assets主控台建立和管理[內容片段](/help/assets/content-fragments/content-fragments.md)。 |
 | 個人化 | 此主控台提供[製作目標內容與呈現個人化體驗的工具架構](/help/sites-cloud/authoring/personalization/overview.md)。 |
 | 內容片段 | [內容片段](/help/sites-cloud/administering/content-fragments/overview.md)可讓您設計、建立、組織及發佈獨立於頁面的內容。 它們可讓您準備結構化內容，以準備用於多個位置/多個管道，並適用於頁面製作和headless傳送。 |
-| 產生變化版本 | [產生變化](/help/generative-ai/generate-variations.md)使用產生式人工智慧(AI)根據提示建立內容變化；這些提示是由Adobe提供，或由使用者建立和管理。 |
+| 產生變化版本 | [產生變數](/help/generative-ai/generate-variations.md)使用產生式人工智慧(AI)根據提示建立內容變數；這些提示是由Adobe提供，或由使用者建立和管理。 |
 
 ## 「工具」面板 {#tools-panel}
 
@@ -130,7 +128,7 @@ AEM的使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸�
 
   ![說明圖示](assets/basic-handling-help.png)
 
-* **主控台** — 第一次導覽系統時，[一連串投影片將介紹AEM導覽](#product-navigation)。
+* **主控台** — 第一次導覽系統時，[一連串的投影片會介紹AEM導覽](#product-navigation)。
 
   ![教學課程](assets/basic-handling-console-tutorial.png)
 
