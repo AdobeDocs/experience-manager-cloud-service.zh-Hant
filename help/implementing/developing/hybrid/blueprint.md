@@ -83,7 +83,7 @@ SPA元件必須和頁面模型同步，並相應地隨其內容的任何變更�
 * `:itemsOrder`：子項的已排序清單。 JSON對應物件無法保證其欄位的順序。 透過同時使用對應和目前的陣列，API的取用者便擁有兩種結構的優點
 * `:path`：專案的內容路徑（存在於代表頁面的專案上）
 
-另請參閱[AEM Content Services快速入門](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)。
+另請參閱[AEM Content Services快速入門](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=zh-Hant)。
 
 ### 框架特定模組 {#framework-specific-module}
 

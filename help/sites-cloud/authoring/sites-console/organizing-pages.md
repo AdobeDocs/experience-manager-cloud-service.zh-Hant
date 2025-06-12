@@ -28,7 +28,7 @@ ht-degree: 4%
 
 網站的結構可視為儲存內容頁面的樹狀結構。 這些內容頁面的名稱會用於組成URL，而標題則會在檢視頁面內容時顯示。
 
-以下顯示[WKND教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)網站的範例，其中有一篇關於滑冰場(`la-skateparks`)的文章被存取：
+以下顯示[WKND教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hant)網站的範例，其中有一篇關於滑冰場(`la-skateparks`)的文章被存取：
 
 `http://<host>:<port>/editor.html/content/wknd/en/sports/la-skateparks.html`
 

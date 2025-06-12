@@ -66,7 +66,7 @@ AEM中實際執行的只有最後三個步驟。 這表示所有必要的CSS和J
 
 ## 使用 {#use}
 
-為了示範此功能，我們將使用核心元件的[標題元件](https://www.adobe.com/go/aem_cmp_title_v2)的[WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)實作作為範例。
+為了示範此功能，我們將使用核心元件的[標題元件](https://www.adobe.com/go/aem_cmp_title_v2_tw)的[WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hant)實作作為範例。
 
 下列章節[As a Content Author](#as-a-content-author)及[As a Template Author](#as-a-template-author)說明如何使用WKND的樣式系統測試樣式系統的功能。
 

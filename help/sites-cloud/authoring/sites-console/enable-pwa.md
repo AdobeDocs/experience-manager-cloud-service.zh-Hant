@@ -60,7 +60,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe不建議在自訂元件或未從核心元件[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)延伸的元件上使用PWA功能。
+>Adobe不建議在自訂元件或未從核心元件[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=zh-Hant)延伸的元件上使用PWA功能。
 <!--
 Your components need to include the [manifest files](https://developer.mozilla.org/en-US/docs/Web/Manifest) and [service worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API), which supports the PWA features.
 
@@ -223,7 +223,7 @@ Adobe建議您限制要預先快取的頁數。
 
 AEM核心元件的影像元件會決定要擷取的前端最佳轉譯。 此機制也包含與該資源上次修改時間對應的時間戳記。 此機制會使PWA預先快取的設定複雜化。
 
-設定預先快取時，使用者必須列出所有可擷取的路徑變數。 這些變化是由品質和寬度等引數所組成。 建議您將這些變數的數量減少到最多三個：小、中、大。 您可以透過[影像元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html)的內容原則對話方塊來執行此操作。
+設定預先快取時，使用者必須列出所有可擷取的路徑變數。 這些變化是由品質和寬度等引數所組成。 建議您將這些變數的數量減少到最多三個：小、中、大。 您可以透過[影像元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=zh-Hant)的內容原則對話方塊來執行此操作。
 
 若未妥善設定，記憶體與網路耗用量可能會嚴重影響PWA的效能。 此外，如果您打算預先快取50個影像，且每個影像有三個寬度，則維護網站的使用者必須在頁面屬性的PWA預先快取區段中，維護最多150個專案的清單。
 

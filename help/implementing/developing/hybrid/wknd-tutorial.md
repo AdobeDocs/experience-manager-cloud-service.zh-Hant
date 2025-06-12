@@ -24,7 +24,7 @@ ht-degree: 0%
 
 與AEM WKND教學課程類似，這個以SPA為中心的對應課程提供端對端範例，說明如何建立您自己的單頁應用程式，該應用程式可透過AEM從專案設定開始進行編輯。
 
-* [在AEM中建立您的第一個Angular SPA](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html)
-* [在AEM中建立您的第一個React SPA](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html)
+* [在AEM中建立您的第一個Angular SPA](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html?lang=zh-Hant)
+* [在AEM中建立您的第一個React SPA](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=zh-Hant)
 
 不過，在您針對AEM開始自己的SPA專案之前，您可能也想要檢閱[針對AEM開發SPA](developing.md)檔案。
