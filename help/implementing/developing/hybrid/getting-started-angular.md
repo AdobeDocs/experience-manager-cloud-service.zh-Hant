@@ -63,7 +63,7 @@ SPA製作功能提供全方位的解決方案，可支援AEM中的SPA。 本文�
 
 `"aem-clientlib-generator": "^1.4.1",`
 
-如需詳細資訊，請參閱GitHub](https://github.com/wcm-io-frontend/aem-clientlib-generator)上的[aem-clientlib-generator。
+如需詳細資訊，請參閱GitHub[&#128279;](https://github.com/wcm-io-frontend/aem-clientlib-generator)上的aem-clientlib-generator。
 
 `aem-clientlib-generator`在`clientlib.config.js`檔案中的設定如下。
 

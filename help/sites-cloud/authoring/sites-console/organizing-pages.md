@@ -64,7 +64,7 @@ ht-degree: 4%
 
 ### 頁面名稱限制和最佳實務 {#page-name-restrictions-and-best-practices}
 
-頁面 **標題****和名稱可以單獨建立** ，但是是相關的：
+頁面 **標題**&#x200B;**和名稱可以單獨建立** ，但是是相關的：
 
 * 建立頁面時，只需要&#x200B;**標題**&#x200B;欄位。 如果建立頁面時未提供&#x200B;**Name**，AEM將會從標題的前64個字元產生名稱（遵循以下設定的驗證）。 僅前64個字元用於支援短頁面名稱的最佳做法。
 * 如果作者手動指定頁面名稱，64字元限制不適用，但頁面名稱長度的其他技術限制可能適用。
@@ -136,7 +136,7 @@ AEM隨附數種現成可用的範本。 可用的範本視個別網站而定。 
 * 傳送
 * 以及更多功能
 
-建立並開啟頁面後，您就可以使用[元件瀏覽器](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)提供的元件](/help/sites-cloud/authoring/page-editor/edit-content.md#inserting-a-component)來[新增內容。
+建立並開啟頁面後，您就可以使用[元件瀏覽器](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)提供的元件[&#128279;](/help/sites-cloud/authoring/page-editor/edit-content.md#inserting-a-component)來新增內容。
 
 >[!TIP]
 >

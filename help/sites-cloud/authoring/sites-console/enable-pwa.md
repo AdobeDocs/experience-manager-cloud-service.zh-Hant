@@ -60,7 +60,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe不建議在自訂元件或未從核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)延伸的[元件上使用PWA功能。
+>Adobe不建議在自訂元件或未從核心元件[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)延伸的元件上使用PWA功能。
 <!--
 Your components need to include the [manifest files](https://developer.mozilla.org/en-US/docs/Web/Manifest) and [service worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API), which supports the PWA features.
 
@@ -170,10 +170,10 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
    * **任何** — 應用程式會調整成使用者裝置的方向。 這是預設值。
    * **縱向** — 這會強制應用程式以縱向配置開啟，無論使用者裝置的方向為何。
    * **橫向** — 這會強制應用程式以橫向配置開啟，無論使用者裝置的方向為何。
-* **佈景主題色彩** — 這會定義應用程式](https://developer.mozilla.org/en-US/docs/Web/Manifest/theme_color)的[色彩，會影響本機使用者的作業系統顯示原生UI工具列和導覽控制項的方式。 視瀏覽器而定，它可能會影響其他應用程式簡報元素。
+* **佈景主題色彩** — 這會定義應用程式[&#128279;](https://developer.mozilla.org/en-US/docs/Web/Manifest/theme_color)的色彩，會影響本機使用者的作業系統顯示原生UI工具列和導覽控制項的方式。 視瀏覽器而定，它可能會影響其他應用程式簡報元素。
    * 使用色槽快顯視窗來選取顏色。
    * 顏色也可以由十六進位或RGB值定義。
-* **背景色彩** — 這會定義應用程式](https://developer.mozilla.org/en-US/docs/Web/Manifest/background_color)的[背景色彩，會在應用程式載入時顯示。
+* **背景色彩** — 這會定義應用程式[&#128279;](https://developer.mozilla.org/en-US/docs/Web/Manifest/background_color)的背景色彩，會在應用程式載入時顯示。
    * 使用色槽快顯視窗來選取顏色。
    * 顏色也可以由十六進位或RGB值定義。
    * 某些瀏覽器會自動從應用程式名稱、背景顏色和圖示[建立啟動畫面](https://developer.mozilla.org/en-US/docs/Web/Manifest#Splash_screens)。
