@@ -3,9 +3,10 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.3.0 版發行�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.3.0 版發行說明。'
 feature: Release Information
 role: Admin
-source-git-commit: b1a551aeebd0b3c5cf8111bf30341bd4ac41536f
+exl-id: b9353092-88a0-477c-85f4-f916a4b8ba8f
+source-git-commit: 420b02e8398a433d0ff93ed0f60e01560ae786b8
 workflow-type: tm+mt
-source-wordcount: '1099'
+source-wordcount: '1123'
 ht-degree: 100%
 
 ---
@@ -32,15 +33,11 @@ ht-degree: 100%
 
 您可以在[這裡](/help/release-notes/maintenance/latest.md)找到最新的維護版本發行說明。
 
-<!-- 
+## 發行影片 {#release-video}
 
-## Release Video {#release-video}
+請觀看 2025 年 3 月發行概觀影片，以了解 2025.3.0 版本新增功能摘要：
 
-Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
-
->[!VIDEO](https://video.tv.adobe.com/v/3440931?quality=12&captions=chi_hant)
-
--->
+>[!VIDEO](https://video.tv.adobe.com/v/3463860?quality=12)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -88,13 +85,13 @@ AEM Forms 搶先體驗計劃為您提供獨一無二的機會，獲得先進創�
 
 ### 支援 Java 21 {#java21}
 
-自 1 月份的版本開始，您可以使用 Java 21 和 Java 17 建置程式碼。您可以存取模式配對、密封類別和各種效能改善等新功能。若要了解設定步驟 (包括更新 Maven 專案和資料庫版本)，請參閱文章「[建置環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support)」。
+自 1 月份的版本開始，您可以使用 Java 21 和 Java 17 建置程式碼。您可以存取模式比對、密封類別和各種效能改善等新功能。若要了解設定步驟 (包括更新 Maven 專案和資料庫版本)，請參閱文章「[建置環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support)」。
 
 當偵測到 Java 17 或 21 版本時，會自動部署效能較佳的 Java 21 **執行階段**。但是，對於建置在 Java 11 上的環境，Adobe 也建議選擇使用 Java 21 執行階段，請寄送電子郵件至 [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com)。了解 [Java 21 執行階段要求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)。
 
 >[!IMPORTANT]
 >
-> Java 21 **執行階段**&#x200B;已於 2 月份部署到您的 dev/RDE 環境，並將於 **4 月 28 日和 29 日**&#x200B;套用至您的中繼/生產環境。請注意，使用 Java 21 (或 Java 17) **建置程式碼** 與 Java 21 執行階段無關 - 您必須明確地採取步驟，使用 Java 21 (或 Java 17) 來建置程式碼。
+> Java 21 **執行階段**&#x200B;已於 2 月份部署到您的 dev/RDE 環境，並將於 **4 月 28 日和 29 日**&#x200B;套用至您的中繼/生產環境。請注意，使用 Java 21 (或 Java 17) **建置程式碼** 與 Java 21 執行階段無關，您必須明確地採取步驟，使用 Java 21 (或 Java 17) 建置程式碼。
 
 ### AEM 記錄轉送至更多目標 - Beta 版方案 {#log-forwarding-earlyadopter}
 

@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 5e90d3fb650106f31630c0297e55b4e9da201ba5
+source-git-commit: 75816f35a8bca8356e17b13341c2ddbd850f8eff
 workflow-type: tm+mt
-source-wordcount: '2082'
-ht-degree: 88%
+source-wordcount: '2077'
+ht-degree: 87%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 88%
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440931?quality=12&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -104,7 +104,7 @@ Content Hub現在也可讓您[將選取的資產及其轉譯下載為ZIP檔案](
 
 **Content Hub 中的 Dynamic Media 轉譯**
 
-直接從Content Hub使用者介面[&#128279;](/help/assets/download-assets-content-hub.md#download-asset-renditions)存取您所有的Dynamic Media預設集轉譯和智慧型裁切以供下載。
+直接從Content Hub使用者介面](/help/assets/download-assets-content-hub.md#download-asset-renditions)存取您所有的[Dynamic Media預設集轉譯和智慧型裁切以供下載。
 
 ![Dynamic Media 轉譯](/help/assets/assets/dm-renditions-content-hub.png)
 
@@ -112,9 +112,9 @@ Content Hub現在也可讓您[將選取的資產及其轉譯下載為ZIP檔案](
 
 **Dynamic Media 與 AJO B2C 的原生整合**
 
-[原生整合Experience Manager (AEM) Dynamic Media與Journey Optimizer (AJO) B2C](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/content-management/combine/aem-dynamic)，讓行銷人員輕鬆將AEM Dynamic Media資產（轉譯和DM範本）內嵌至AJO內容，並跨管道提供即時更新和超個人化體驗。
+[原生整合Experience Manager (AEM) Dynamic Media與Journey Optimizer (AJO) B2C](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/aem-dynamic)，讓行銷人員輕鬆將AEM Dynamic Media資產（轉譯和DM範本）內嵌至AJO內容，並跨管道提供即時更新和超個人化體驗。
 
->[!VIDEO](https://video.tv.adobe.com/v/3463793/?learn=on&enablevpops=&autoplay=true&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -201,7 +201,7 @@ OSGi 屬性：
 
 ### 預設清除舊版本和稽核記錄 {#mt-defaults}
 
-目前，內容版本和稽核日誌皆將其相關的&#x200B;*清除維護任務*&#x200B;預設為停用，因此除非透過各自的 OSGi 屬性明確地進行設定，否則不會移除任何資料。
+目前，內容版本和稽核記錄檔的相關&#x200B;*清除維護工作*&#x200B;預設為停用，因此除非明確設定，否則不會移除任何資料。
 
 不過，為了讓存放庫的效能最佳化，自 **2025 年 6 月下旬**&#x200B;開始，會依循以下準則將清除預設為啟用：
 
