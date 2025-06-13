@@ -5,9 +5,9 @@ exl-id: 6e5c7f14-c980-48e3-8bdd-a7ec10a9e680
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: ae1dedc3d0533205decc08d396c5a844c4525ba2
 workflow-type: tm+mt
-source-wordcount: '609'
+source-wordcount: '635'
 ht-degree: 1%
 
 ---
@@ -60,7 +60,7 @@ ht-degree: 1%
 **HTML變更**
 
 * 深綠色 — 新增HTML
-* 紅色 — 已移除HTML
+* 紅色 — HTML已移除
 
 >[!NOTE]
 >
@@ -90,6 +90,7 @@ ht-degree: 1%
 
 在某些情況下，頁面差異可能不會如預期偵測到差異。
 
+* 建立與[Edge Delivery Services，](/help/edge/overview.md)搭配使用的不同頁面時，為了方便比較，這些頁面會並排顯示，但不會醒目顯示差異。
 * 不同版本和啟動時，差異不會考慮階層連結、功能表、產品清單或標誌（依賴網站結構呈現其內容的元件）等動態元件。
 * 對於版本，差異不會重新建立存取控制原則與即時副本關係。
 * 如果頁面已移動，您將無法再執行與移動前所做的任何版本之間的差異。
