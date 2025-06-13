@@ -16,7 +16,7 @@ ht-degree: 23%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adobe-sign-integration-adaptive-forms.html#adobe-acrobat-sign-for-government) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adobe-sign-integration-adaptive-forms.html?lang=zh-Hant#adobe-acrobat-sign-for-government) |
 | AEM as a Cloud Service  | 本文章 |
 
 [!DNL Adobe Acrobat Sign]可啟用最適化Forms和AEM工作流程的電子簽章工作流程。 電子簽名有助於改善處理法律、銷售、薪資、人力資源管理及許多領域文件的工作流程。
@@ -37,7 +37,7 @@ ht-degree: 23%
 1. 有效的[Adobe Acrobat Sign開發人員帳戶。](https://www.adobe.com/acrobat/business/developer-form.html)
 1. [Adobe Acrobat Sign API應用程式](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md)。
 1. [!DNL Adobe Acrobat Sign] API 應用程式的認證 (用戶端 ID 和用戶端密碼)。
-1. （僅適用於政府機關身分證件驗證） [為政府機關身分證件驗證啟用驗證方法](https://helpx.adobe.com/sign/using/adobesign-authentication-government-id.html#AuditReport)。
+1. （僅適用於政府機關身分證件驗證） [為政府機關身分證件驗證啟用驗證方法](https://helpx.adobe.com/tw/sign/using/adobesign-authentication-government-id.html#AuditReport)。
 
 ### 連結AEM Forms製作和發佈執行個體與Adobe Acrobat Sign {#configure-adobe-sign-with-aem-forms}
 
@@ -84,7 +84,7 @@ ht-degree: 23%
 
    其中：
 
-   **na1** 是指預設的資料庫分片。您可以修改資料庫分片的值。確保[!DNL &#x200B; Adobe Acrobat Sign] Cloud Configurations 指向[正確的分片](https://helpx.adobe.com/sign/using/identify-account-shard.html)。
+   **na1** 是指預設的資料庫分片。您可以修改資料庫分片的值。確保[!DNL &#x200B; Adobe Acrobat Sign] Cloud Configurations 指向[正確的分片](https://helpx.adobe.com/tw/sign/using/identify-account-shard.html)。
 
    >[!NOTE]
    >
@@ -225,7 +225,7 @@ AEM Forms as a Cloud Service提供開發、預備和生產環境。 您可以開
 
    其中：
 
-   **na1** 是指預設的資料庫分片。您可以修改資料庫分片的值。確保[!DNL &#x200B; Adobe Acrobat Sign] Cloud Configurations 指向[正確的分片](https://helpx.adobe.com/sign/using/identify-account-shard.html)。
+   **na1** 是指預設的資料庫分片。您可以修改資料庫分片的值。確保[!DNL &#x200B; Adobe Acrobat Sign] Cloud Configurations 指向[正確的分片](https://helpx.adobe.com/tw/sign/using/identify-account-shard.html)。
 
    >[!NOTE]
    >
@@ -268,7 +268,7 @@ AEM Forms as a Cloud Service提供排程器服務，可依定義的間隔檢查�
 }
 ```
 
-若要設定值，[請使用 AEM SDK 產生 OSGi Configurations](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart)，並將[設定部署至](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process)您的 Cloud Service 執行個體。
+若要設定值，[請使用 AEM SDK 產生 OSGi Configurations](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=zh-Hant#generating-osgi-configurations-using-the-aem-sdk-quickstart)，並將[設定部署至](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=zh-Hant#deployment-process)您的 Cloud Service 執行個體。
 
 ## 常見問題
 

@@ -49,7 +49,7 @@ PIM 資料透過 GraphQL 要求公開給 AEM 和用戶端。建議將 PIM 與商
 
 ## &#x200B;9. AEM Dispatcher 的快取失效如何與 AEM 和 Commerce 搭配使用？
 
-Adobe 建議為 Dispatcher 上快取的頁面設定 TTL 型快取失效。對於價格或庫存等動態訊息，Adobe 建議在用戶端呈現資料。如需TTL型快取失效的詳細資訊，請參閱[最佳化Dispatcher快取。](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html)
+Adobe 建議為 Dispatcher 上快取的頁面設定 TTL 型快取失效。對於價格或庫存等動態訊息，Adobe 建議在用戶端呈現資料。如需TTL型快取失效的詳細資訊，請參閱[最佳化Dispatcher快取。](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html?lang=zh-Hant)
 
 ## &#x200B;10. 對於使用 Commerce 跨 AEM 內容進行整合搜尋有什麼建議嗎？
 

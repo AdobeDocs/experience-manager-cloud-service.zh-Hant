@@ -23,7 +23,7 @@ ht-degree: 2%
 
 此外，AEM收件匣會整合來自各種AEM元件(包括Forms工作流程)的通知和工作。 當觸發包含「指派」任務步驟的Forms Workflow時，相關聯的應用程式會在受指派人的收件匣中列為任務。 如果受指派人是群組，則該任務會出現在所有群組成員的「收件匣」中，直到個別人員宣告或委派該任務為止。
 
-收件匣使用者介面提供清單和行事曆檢視以檢視工作。 您也可以配置檢視設定。 您可以根據各種引數篩選任務。 如需檢視和篩選的詳細資訊，請參閱[您的收件匣](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html#inbox-in-the-header)。
+收件匣使用者介面提供清單和行事曆檢視以檢視工作。 您也可以配置檢視設定。 您可以根據各種引數篩選任務。 如需檢視和篩選的詳細資訊，請參閱[您的收件匣](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html?lang=zh-Hant#inbox-in-the-header)。
 
 簡而言之，收件匣可讓您建立應用程式並管理指派的工作。
 
@@ -81,7 +81,7 @@ ht-degree: 2%
 
 #### 任務詳細資訊 {#task-details}
 
-「工作詳細資訊」段落顯示工作的相關資訊。 顯示的資訊取決於工作流程中[指派工作步驟](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem)的組態設定。 上述範例顯示用於工作的說明、狀態、開始日期和工作流程。 它還允許將檔案附加到任務。
+「工作詳細資訊」段落顯示工作的相關資訊。 顯示的資訊取決於工作流程中[指派工作步驟](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=zh-Hant#extending-aem)的組態設定。 上述範例顯示用於工作的說明、狀態、開始日期和工作流程。 它還允許將檔案附加到任務。
 
 #### 表單 {#form}
 
@@ -89,7 +89,7 @@ ht-degree: 2%
 
 #### 工作流程資訊 {#workflow-details}
 
-頂端的「工作流程詳細資訊」標籤會顯示工作流程中各個階段的任務進度。 它會顯示任務的已完成階段、目前階段及擱置階段。 工作流程的階段定義於相關工作流程的[指派工作步驟](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem)。
+頂端的「工作流程詳細資訊」標籤會顯示工作流程中各個階段的任務進度。 它會顯示任務的已完成階段、目前階段及擱置階段。 工作流程的階段定義於相關工作流程的[指派工作步驟](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=zh-Hant#extending-aem)。
 
 此外，索引標籤會顯示工作流程中每個已完成階段的任務歷史記錄。 您可以為已完成的階段選取&#x200B;**[!UICONTROL 檢視詳細資料]**，以瞭解有關該階段的詳細資料。 它會顯示有關任務的註解、表單及工作附件、狀態、開始與結束日期等。
 
@@ -97,7 +97,7 @@ ht-degree: 2%
 
 #### 動作工具列 {#actions-toolbar}
 
-「動作」工具列會顯示任務的所有可用選項。 雖然儲存、重設和委派是預設動作，但在[指派工作步驟](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem)中設定了其他可用動作。 在上述範例中，核准和拒絕是在工作流程中設定。
+「動作」工具列會顯示任務的所有可用選項。 雖然儲存、重設和委派是預設動作，但在[指派工作步驟](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=zh-Hant#extending-aem)中設定了其他可用動作。 在上述範例中，核准和拒絕是在工作流程中設定。
 
 當您執行任務時，它會在工作流程中繼續進行。
 
@@ -112,7 +112,7 @@ AEM收件匣只會顯示作用中的任務。 已完成的任務未出現在清�
 
 1. 選取以選取工作並按一下[開啟]。**&#x200B;**
 
-任務會開啟以顯示與任務相關聯的檔案或最適化表單。 針對最適化表單，任務會顯示唯讀的最適化表單或其PDF記錄檔案，如[指派任務工作流程步驟](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem)的表單/檔案索引標籤中所設定。
+任務會開啟以顯示與任務相關聯的檔案或最適化表單。 針對最適化表單，任務會顯示唯讀的最適化表單或其PDF記錄檔案，如[指派任務工作流程步驟](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=zh-Hant#extending-aem)的表單/檔案索引標籤中所設定。
 
 任務詳細資訊區段會顯示已執行動作、任務狀態、開始日期和結束日期等資訊。
 
@@ -151,6 +151,6 @@ AEM收件匣只會顯示作用中的任務。 已完成的任務未出現在清�
       .property("allowExplicitSharing", "allowExplicitSharing").type(TYPENAME_BOOLEAN).propertyIndex()
    ```
 
-1. [建立屬性索引並將其設定為true](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/queries-and-indexing.html?lang=en#the-property-index)。
+1. [建立屬性索引並將其設定為true](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/queries-and-indexing.html?lang=zh-Hant#the-property-index)。
 
 1. 在CRX DE中設定索引或透過套件部署後，請重新索引存放庫。

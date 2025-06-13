@@ -87,7 +87,7 @@ ht-degree: 6%
 
       * **[!UICONTROL 後續處理工作流程]：**&#x200B;如果必須使用處理設定檔才能完成額外的資產處理，請選擇此選項。 可以將其他後處理工作流程新增到設定。 後處理可讓您在使用資產微服務的可設定處理之上新增完全自訂處理。
 
-請參閱[使用資產微服務和處理設定檔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en)，以進一步瞭解處理設定檔和後續處理工作流程。
+請參閱[使用資產微服務和處理設定檔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=zh-Hant)，以進一步瞭解處理設定檔和後續處理工作流程。
 
 ![進階重新處理Assets選項2](assets/reprocessing-options-advanced-2.png)
 
@@ -103,21 +103,21 @@ ht-degree: 6%
 
 相較於自然語言辭彙，根據商業分類法標籤數位資產有助於讓其與公司的業務保持一致，並確保最相關的資產出現在搜尋中。
 
-深入瞭解[重新處理DAM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en#color-tags-existing-images)中現有影像的顏色標籤。
+深入瞭解[重新處理DAM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=zh-Hant#color-tags-existing-images)中現有影像的顏色標籤。
 
 ### 智慧型裁切 {#reprocessing-smart-crop}
 
-深入瞭解[Dynamic Media智慧型裁切](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=en)，可讓您套用特定的裁切（**[!UICONTROL 智慧型裁切]**&#x200B;和畫素裁切）和銳利化設定至上傳的資產。
+深入瞭解[Dynamic Media智慧型裁切](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=zh-Hant)，可讓您套用特定的裁切（**[!UICONTROL 智慧型裁切]**&#x200B;和畫素裁切）和銳利化設定至上傳的資產。
 
 ### 中繼資料 {#reprocessing-metadata}
 
 [!DNL Adobe Experience Manager Assets]保留每個資產的中繼資料。 它可讓您更輕鬆地分類及組織資產，並協助尋找特定資產的人。 有了從上傳至Experience Manager Assets的檔案擷取中繼資料的功能，中繼資料管理與創意工作流程整合。 有了使用資產保留和管理中繼資料的功能，您可以根據資產的中繼資料自動組織和處理資產。
 
-深入瞭解[重新處理中繼資料設定檔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-profiles.html?lang=en)。
+深入瞭解[重新處理中繼資料設定檔](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-profiles.html?lang=zh-Hant)。
 
 ### 重新處理資料夾中的Dynamic Media資產 {#reprocessing-dynamic-media}
 
-若資料夾中已有您後來變更過的Dynamic Media影像設定檔或Dynamic Media視訊設定檔，您可以重新處理該資料夾中的資產。 如需詳細資訊，請造訪[重新處理資料夾](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en)中的Dynamic Media資產。
+若資料夾中已有您後來變更過的Dynamic Media影像設定檔或Dynamic Media視訊設定檔，您可以重新處理該資料夾中的資產。 如需詳細資訊，請造訪[重新處理資料夾](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=zh-Hant)中的Dynamic Media資產。
 
 >[!NOTE]
 >
@@ -126,4 +126,4 @@ ht-degree: 6%
 
 ### 工作流程
 
-深入瞭解[處理設定檔與後續處理工作流程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en)。
+深入瞭解[處理設定檔與後續處理工作流程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=zh-Hant)。
