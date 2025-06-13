@@ -98,7 +98,7 @@ ht-degree: 0%
     
     -->
 
-   * **[!UICONTROL 要求屬性對應]**：使用要求屬性對應區段來定義要求屬性](work-with-form-data-model.md#bindargument)的[名稱和值。 根據請求中指定的屬性名稱和值從資料來源擷取詳細資料。 您可以使用常值或String資料型別的變數來定義請求屬性值。
+   * **[!UICONTROL 要求屬性對應]**：使用要求屬性對應區段來定義要求屬性[&#128279;](work-with-form-data-model.md#bindargument)的名稱和值。 根據請求中指定的屬性名稱和值從資料來源擷取詳細資料。 您可以使用常值或String資料型別的變數來定義請求屬性值。
 
   <!--  
      
@@ -368,7 +368,7 @@ PDF/A是一種用於長期儲存檔案內容的封存格式，其方式為嵌入
    * **[!UICONTROL 從輸入JSON對應輸入欄位]**：指定JSON檔案的路徑，以從JSON檔案取得某些服務引數的輸入值。 JSON檔案的路徑可以是相對於裝載、絕對路徑，也可以使用JSON或表單資料模型(FDM)型別的變數來選取輸入JSON檔案。
 
 * **[!UICONTROL 服務的輸入]** > **[!UICONTROL 使用變數或JSON檔案提供輸入資料]**：選取選項，以從儲存在絕對路徑、相對於承載的路徑或變數中的JSON檔案取得所有引數的值。
-* **[!UICONTROL 使用]**&#x200B;選取輸入JSON檔案：包含所有服務引數值的JSON檔案。 JSON檔案的路徑可以是相對於承載&#x200B;]**的**[!UICONTROL &#x200B;或&#x200B;**[!UICONTROL 絕對路徑]**。 您也可以使用JSON或表單資料模型(FDM)資料型別的變數來擷取輸入JSON檔案。
+* **[!UICONTROL 使用]**&#x200B;選取輸入JSON檔案：包含所有服務引數值的JSON檔案。 JSON檔案的路徑可以是相對於承載&#x200B;**的**&#x200B;或&#x200B;**[!UICONTROL 絕對路徑]**。 您也可以使用JSON或表單資料模型(FDM)資料型別的變數來擷取輸入JSON檔案。
 
 * **[!UICONTROL JSON Dot Notation]**：將欄位保留空白，以使用指定JSON檔案的所有物件作為服務引數的輸入。 若要從指定的JSON檔案讀取特定JSON物件作為服務引數的輸入，請為JSON物件指定點標籤法。例如，如果您有和區段開頭所列出的JSON類似的JSON，請指定insurance.customerDetails以提供客戶的所有詳細資料作為服務的輸入。
 * **[!UICONTROL 服務的輸出]** > **[!UICONTROL 對應輸出值並將輸出值寫入變數或中繼資料]**：選取選項，以將輸出值儲存為crx-repository中工作流程執行個體中繼資料節點的屬性。 指定中繼資料屬性的名稱，並選取對應的服務輸出屬性，以與中繼資料屬性對應，例如，將輸出服務傳回的phone_number與工作流程中繼資料的phone_number屬性對應。 同樣地，您可以將輸出儲存在Long資料型別的變數中。 當您選取&#x200B;**[!UICONTROL 要對映的服務輸出屬性]**&#x200B;選項的屬性時，**[!UICONTROL 將輸出儲存至]**&#x200B;選項只會填入能夠儲存所選屬性資料的變數。
@@ -570,7 +570,7 @@ Send a document directly to a printer. It supports the following printing access
 
 1. 拖曳Sidekick中「PDF」標籤下的「產生非互動式Forms Workflow輸出」工作流程。
 1. 連按兩下新增的工作流程步驟以編輯元件。
-1. 在[編輯元件]對話方塊中，設定輸入檔案、輸出檔案和其他引數，然後按一下[確定]。****
+1. 在[編輯元件]對話方塊中，設定輸入檔案、輸出檔案和其他引數，然後按一下[確定]。**&#x200B;**
 
 ### 輸入檔案 {#input-documents-3}
 

@@ -84,7 +84,7 @@ ht-degree: 6%
 
       * **[!UICONTROL 中繼資料]：**&#x200B;當您想要擷取所選資產的中繼資料資訊和智慧標籤時，請選擇此選項。
 
-      * **[!UICONTROL 處理設定檔]：**&#x200B;當您要重新處理選取的設定檔時，請選擇此選項。 您可以選擇&#x200B;**[!UICONTROL 完整處理序]**選項，以包含預設處理以及在資料夾層級指派的自訂設定檔。
+      * **[!UICONTROL 處理設定檔]：**&#x200B;當您要重新處理選取的設定檔時，請選擇此選項。 您可以選擇&#x200B;**[!UICONTROL 完整處理序]**&#x200B;選項，以包含預設處理以及在資料夾層級指派的自訂設定檔。
         <!--When assets are uploaded to a folder, [!DNL Experience Manager] checks the containing folder's properties for a processing profile. If none is applied, a parent folder in the hierarchy is checked for a processing profile to apply.-->
 
       * **[!UICONTROL 後續處理工作流程]：**&#x200B;如果必須使用處理設定檔才能完成額外的資產處理，請選擇此選項。 可以將其他後處理工作流程新增到設定。 後處理可讓您在使用資產微服務的可設定處理之上新增完全自訂處理。

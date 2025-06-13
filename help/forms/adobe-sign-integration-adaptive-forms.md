@@ -84,7 +84,7 @@ ht-degree: 23%
 
    其中：
 
-   **na1** 是指預設的資料庫分片。您可以修改資料庫分片的值。確保[!DNL  Adobe Acrobat Sign] Cloud Configurations 指向[正確的分片](https://helpx.adobe.com/sign/using/identify-account-shard.html)。
+   **na1** 是指預設的資料庫分片。您可以修改資料庫分片的值。確保[!DNL &#x200B; Adobe Acrobat Sign] Cloud Configurations 指向[正確的分片](https://helpx.adobe.com/sign/using/identify-account-shard.html)。
 
    >[!NOTE]
    >
@@ -112,7 +112,7 @@ ht-degree: 23%
 
    ![OAuth Config](/help/forms/assets/oauthconfig-new.png)
 
-1. 返回&#x200B;**[!UICONTROL 建立Adobe Acrobat Sign設定]**&#x200B;頁面。 在&#x200B;**[!UICONTROL 設定]**&#x200B;索引標籤中，指定[**[!UICONTROL 使用者端識別碼]** （也稱為應用程式識別碼）和&#x200B;**[!UICONTROL 使用者端密碼]**]。 使用您在上一步建立的Adobe Acrobat Sign應用程式](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html#get-the-app-id-and-secret)的[使用者端ID和使用者端密碼。
+1. 返回&#x200B;**[!UICONTROL 建立Adobe Acrobat Sign設定]**&#x200B;頁面。 在&#x200B;**[!UICONTROL 設定]**&#x200B;索引標籤中，指定[**[!UICONTROL 使用者端識別碼]** （也稱為應用程式識別碼）和&#x200B;**[!UICONTROL 使用者端密碼]**]。 使用您在上一步建立的Adobe Acrobat Sign應用程式[&#128279;](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html#get-the-app-id-and-secret)的使用者端ID和使用者端密碼。
 
 1. 在[!UICONTROL 授權範圍]區段中，您可以視需要將前置詞「self」或「account」新增至範圍，將範圍修改為「account」或「self」。
    ![授權範圍](/help/forms/assets/authorization-scope.png)
@@ -225,7 +225,7 @@ AEM Forms as a Cloud Service提供開發、預備和生產環境。 您可以開
 
    其中：
 
-   **na1** 是指預設的資料庫分片。您可以修改資料庫分片的值。確保[!DNL  Adobe Acrobat Sign] Cloud Configurations 指向[正確的分片](https://helpx.adobe.com/sign/using/identify-account-shard.html)。
+   **na1** 是指預設的資料庫分片。您可以修改資料庫分片的值。確保[!DNL &#x200B; Adobe Acrobat Sign] Cloud Configurations 指向[正確的分片](https://helpx.adobe.com/sign/using/identify-account-shard.html)。
 
    >[!NOTE]
    >
