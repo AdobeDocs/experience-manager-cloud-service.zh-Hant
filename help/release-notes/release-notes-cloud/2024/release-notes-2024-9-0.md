@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.9.0 版�
 feature: Release Information
 role: Admin
 exl-id: 75ecd154-112a-4468-9962-de50bb1f4cd0
-source-git-commit: 1481983bde41bda51e725930bae492aa599b6c93
+source-git-commit: 5db419e674ceb3c861f53a19e7b852c89ebd3702
 workflow-type: tm+mt
-source-wordcount: '1324'
-ht-degree: 91%
+source-wordcount: '1312'
+ht-degree: 90%
 
 ---
 
@@ -45,7 +45,7 @@ ht-degree: 91%
 
 #### 翻譯管理 {#translation-management}
 
-AEM 翻譯工作流程和 API 動作現在會觸發事件，並提供有關翻譯作業狀態變更的分析。使用者可以透過 Adobe Developer Console 訂閱這些事件。請參閱[此處](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/)，了解有關 AEM Translation Management API 的更多資訊。
+AEM 翻譯工作流程和 API 動作現在會觸發事件，並提供有關翻譯作業狀態變更的分析。使用者可透過Adobe Developer Console訂閱這些事件。
 
 ### 早期採用者計劃 {#sites-early-adopter}
 

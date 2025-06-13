@@ -4,7 +4,7 @@ description: 特定於  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: c7615247be1e237c72508ae4dfc3156fdcde9905
+source-git-commit: 1f6aabc76551340ed296571e14daf2a1ef557717
 workflow-type: tm+mt
 source-wordcount: '3181'
 ht-degree: 96%
@@ -47,7 +47,7 @@ Adobe 會定期檢閱包括 API 和設定在內的功能，確保其符合 AEM a
 | [!DNL Assets] | FFmpeg 影片轉碼。 | 若要產生 FFmpeg 縮圖，請使用[資產微服務](/help/assets/asset-microservices-overview.md)。若是 FFmpeg 轉碼，請使用 [Dynamic Media](/help/assets/manage-video-assets.md)。 |
 | [!DNL Foundation] | 複寫代理程式之「散發」索引標籤下的樹狀結構複寫使用者介面 (2021 年 9 月 30 日後移除) | [管理發佈](/help/operations/replication.md#manage-publication)或[啟用樹狀工作流程步驟](/help/operations/replication.md#tree-activation)方法。 |
 | [!DNL Foundation] | 複寫代理程式管理員畫面的「散發」標籤和複寫 API 無法用來複寫超過 10MB 的內容封裝。 | [管理發佈](/help/operations/replication.md#manage-publication)或[啟用樹狀工作流程步驟](/help/operations/replication.md#tree-activation) |
-| [!DNL Foundation] | 使用自 Adobe Developer Console 專案產生的憑證進行整合，已逐漸不再具備對服務帳戶 (JWT) 認證的支援。自 2024 年 5 月 1 日起，無法在 Adobe Developer Console 中建立新的服務帳戶 (JWT) 認證。現有的服務帳戶 (JWT) 認證在 2025 年 1 月 1 日之前仍可用於已設定的整合，之後將停止運作，且會要求客戶移轉至 OAuth 伺服器對伺服器認證。[了解更多](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console)。 | [移轉](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview)至 OAuth Server-to-Server 憑證。 |
+| [!DNL Foundation] | 使用自 Adobe Developer Console 專案產生的憑證進行整合，已逐漸不再具備對服務帳戶 (JWT) 認證的支援。自 2024 年 5 月 1 日起，無法在 Adobe Developer Console 中建立新的服務帳戶 (JWT) 認證。現有的服務帳戶 (JWT) 認證在 2025 年 1 月 1 日之前仍可用於已設定的整合，之後將停止運作，且會要求客戶移轉至 OAuth 伺服器對伺服器認證。[了解更多](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console)。 | [移轉](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration#migration-overview)至 OAuth Server-to-Server 憑證。 |
 | [!DNL Foundation] | 用於複寫內容階層的發佈內容樹狀工作流程和相關的發佈內容樹狀工作流程步驟。 | 使用[啟用樹狀工作流程步驟](/help/operations/replication.md#tree-activation)，其效能更佳。 |
 | [!DNL Foundation] | 使用 YUI 壓縮/縮小 JavaScript 用戶端資料庫。Adobe 不打算進一步更新 YUI 資料庫。 | Adobe 建議客戶切換至 Google Closure Compiler (GCC) 來進行實施。 |
 

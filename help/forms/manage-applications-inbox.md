@@ -1,6 +1,6 @@
 ---
 title: 如何管理AEM收件匣中的表單、應用程式和工作？
-description: AEM收件匣可讓您透過提交應用程式和管理工作來啟動以Forms為中心的工作流程。
+description: AEM收件匣可讓您透過提交應用程式和管理工作，啟動以Forms為中心的工作流程。
 uuid: c6c0d8ea-743f-4852-99d1-69fd50a0994e
 contentOwner: vishgupt
 topic-tags: document_services, publish
@@ -9,21 +9,21 @@ feature: Adaptive Forms
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+exl-id: 92130660-9942-426f-ae2f-4f3300f9735c
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '1083'
 ht-degree: 2%
 
 ---
 
+# 在 AEM 收件匣管理 Forms 應用程式和任務{#manage-forms-applications-and-tasks-in-aem-inbox}
 
-# 管理AEM收件匣中的Forms應用程式和工作{#manage-forms-applications-and-tasks-in-aem-inbox}
-
-啟動或觸發以Forms為中心的工作流程的多種方式之一，就是透過AEM收件匣中的應用程式。 您需要建立工作流程應用程式，才能使Forms Workflow在收件匣中成為應用程式。 如需工作流程應用程式和其他啟動Forms工作流程之方法的詳細資訊，請參閱[在OSGi上啟動Forms為中心的工作流程](aem-forms-workflow.md#launch)。
+要啟動或觸發以Forms為中心的工作流程，有許多方式之一，就是透過AEM收件匣中的應用程式來進行。 您需要建立工作流程應用程式，才能使Forms Workflow在收件匣中作為應用程式使用。 如需工作流程應用程式和其他啟動Forms工作流程之方法的詳細資訊，請參閱[在OSGi上啟動Forms為中心的工作流程](aem-forms-workflow.md#launch)。
 
 此外，AEM收件匣會整合來自各種AEM元件(包括Forms工作流程)的通知和工作。 當觸發包含「指派」任務步驟的Forms Workflow時，相關聯的應用程式會在受指派人的收件匣中列為任務。 如果受指派人是群組，則該任務會出現在所有群組成員的「收件匣」中，直到個別人員宣告或委派該任務為止。
 
-收件匣使用者介面提供清單和行事曆檢視以檢視工作。 您也可以配置檢視設定。 您可以根據各種引數篩選任務。 如需檢視和篩選的詳細資訊，請參閱[您的收件匣](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html?lang=zh-Hant#inbox-in-the-header)。
+收件匣使用者介面提供清單和行事曆檢視以檢視工作。 您也可以配置檢視設定。 您可以根據各種引數篩選任務。 如需檢視和篩選的詳細資訊，請參閱[您的收件匣](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html#inbox-in-the-header)。
 
 簡而言之，收件匣可讓您建立應用程式並管理指派的工作。
 
@@ -61,7 +61,7 @@ ht-degree: 2%
 
 ### 檢視詳細資料並對任務執行動作 {#view-details-and-perform-actions-on-tasks}
 
-當您開啟任務時，可以檢視任務詳細資訊並執行可用的動作。 任務可用的動作在相關Forms Workflow的「指派任務」步驟中定義。
+當您開啟任務時，可以檢視任務詳細資訊並執行可用的動作。 任務可用的動作會在相關Forms Workflow的指派任務步驟中定義。
 
 1. 選取以選取任務的縮圖。 頂端會顯示開啟或委派所選任務的選項。
 1. 選取&#x200B;**開啟**&#x200B;以檢視工作詳細資訊和可用的動作。 詳細任務檢視隨即開啟。 在此檢視中，您可以檢視任務詳細資訊並對任務執行動作。
@@ -81,7 +81,7 @@ ht-degree: 2%
 
 #### 任務詳細資訊 {#task-details}
 
-「工作詳細資訊」段落顯示工作的相關資訊。 顯示的資訊取決於工作流程中[指派工作步驟](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=zh-Hant#extending-aem)的組態設定。 上述範例顯示用於工作的說明、狀態、開始日期和工作流程。 它還允許將檔案附加到任務。
+「工作詳細資訊」段落顯示工作的相關資訊。 顯示的資訊取決於工作流程中[指派工作步驟](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem)的組態設定。 上述範例顯示用於工作的說明、狀態、開始日期和工作流程。 它還允許將檔案附加到任務。
 
 #### 表單 {#form}
 
@@ -89,7 +89,7 @@ ht-degree: 2%
 
 #### 工作流程資訊 {#workflow-details}
 
-頂端的「工作流程詳細資訊」標籤會顯示工作流程中各個階段的任務進度。 它會顯示任務的已完成階段、目前階段及擱置階段。 工作流程的階段定義於相關工作流程的[指派工作步驟](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=zh-Hant#extending-aem)。
+頂端的「工作流程詳細資訊」標籤會顯示工作流程中各個階段的任務進度。 它會顯示任務的已完成階段、目前階段及擱置階段。 工作流程的階段定義於相關工作流程的[指派工作步驟](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem)。
 
 此外，索引標籤會顯示工作流程中每個已完成階段的任務歷史記錄。 您可以為已完成的階段選取&#x200B;**[!UICONTROL 檢視詳細資料]**，以瞭解有關該階段的詳細資料。 它會顯示有關任務的註解、表單及工作附件、狀態、開始與結束日期等。
 
@@ -97,7 +97,7 @@ ht-degree: 2%
 
 #### 動作工具列 {#actions-toolbar}
 
-「動作」工具列會顯示任務的所有可用選項。 雖然儲存、重設和委派是預設動作，但在[指派工作步驟](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=zh-Hant#extending-aem)中設定了其他可用動作。 在上述範例中，核准和拒絕是在工作流程中設定。
+「動作」工具列會顯示任務的所有可用選項。 雖然儲存、重設和委派是預設動作，但在[指派工作步驟](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem)中設定了其他可用動作。 在上述範例中，核准和拒絕是在工作流程中設定。
 
 當您執行任務時，它會在工作流程中繼續進行。
 
@@ -105,14 +105,14 @@ ht-degree: 2%
 
 AEM收件匣只會顯示作用中的任務。 已完成的任務未出現在清單中。 不過，您可以使用收件匣篩選器根據數個引數來篩選任務，例如任務型別、狀態、開始和結束日期。 若要檢視已完成的工作，請執行下列動作：
 
-1. 在AEM收件匣中，選取![切換側面板1](assets/toggle-side-panel1.png)以開啟篩選選擇器。
+1. 在AEM收件匣中，選取![切換側面板1](assets/toggle-side-panel1.png)以開啟篩選器選擇器。
 1. 選取&#x200B;**[!UICONTROL 工作狀態]**&#x200B;摺疊式功能表，然後選取&#x200B;**[!UICONTROL 完成]**。 所有已完成的任務都會出現。
 
    ![篩選器](assets/filter.png)
 
-1. 選取以選取工作並按一下[開啟]。**&#x200B;**
+1. 選取以選取工作並按一下[開啟]。****
 
-任務會開啟以顯示與任務相關聯的檔案或最適化表單。 針對最適化表單，任務會顯示唯讀的最適化表單或其PDF記錄檔案，如[指派任務工作流程步驟](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=zh-Hant#extending-aem)的表單/檔案索引標籤中所設定。
+任務會開啟以顯示與任務相關聯的檔案或最適化表單。 針對最適化表單，任務會顯示唯讀的最適化表單或其PDF記錄檔案，如[指派任務工作流程步驟](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem)的表單/檔案索引標籤中所設定。
 
 任務詳細資訊區段會顯示已執行動作、任務狀態、開始日期和結束日期等資訊。
 
@@ -126,7 +126,7 @@ AEM收件匣只會顯示作用中的任務。 已完成的任務未出現在清�
 
 ### 無法在AEM收件匣中檢視與AEM工作流程相關的專案 {#unable-to-see-aem-worklow-items}
 
-工作流程模型所有者無法在AEM收件匣中檢視與AEM工作流程相關的專案。 若要解決此問題，請將下列索引新增至您的AEM存放庫並重新建立索引。
+工作流程模型擁有者無法在AEM收件匣中檢視與AEM工作流程相關的專案。 若要解決此問題，請將下列索引新增至您的AEM存放庫並重新建立索引。
 
 1. 使用下列其中一種方法來新增索引：
 
@@ -141,7 +141,7 @@ AEM收件匣只會顯示作用中的任務。 已完成的任務未出現在清�
      | allowExplicitSharing | allowExplicitSharing | 布林值 |
 
 
-   * 透過AEM套件部署索引。 您可以使用[AEM Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)專案來建立可部署的AEM封裝。 使用以下範常式式碼，將索引新增至AEM Archetype專案：
+   * 透過AEM套件部署索引。 您可以使用[AEM Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)專案來建立可部署的AEM套件。 使用以下範常式式碼，將索引新增至AEM Archetype專案：
 
    ```Java
       .property("sharedWith", "sharedWith").type(TYPENAME_STRING).propertyIndex()
@@ -151,7 +151,6 @@ AEM收件匣只會顯示作用中的任務。 已完成的任務未出現在清�
       .property("allowExplicitSharing", "allowExplicitSharing").type(TYPENAME_BOOLEAN).propertyIndex()
    ```
 
-1. [建立屬性索引並將其設定為true](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/queries-and-indexing.html?lang=zh-Hant#the-property-index)。
+1. [建立屬性索引並將其設定為true](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/queries-and-indexing.html?lang=en#the-property-index)。
 
-1. 在CRX DE中設定索引或透過封裝進行部署後，[重新索引存放庫](https://helpx.adobe.com/in/experience-manager/kb/HowToCheckLuceneIndex.html#Completelyrebuildtheindex)。
-
+1. 在CRX DE中設定索引或透過套件部署後，請重新索引存放庫。

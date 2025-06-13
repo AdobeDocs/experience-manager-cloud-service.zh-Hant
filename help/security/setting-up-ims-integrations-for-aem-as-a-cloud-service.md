@@ -4,10 +4,10 @@ description: 瞭解如何為 AEM as a Cloud Service 設定 IMS 整合
 exl-id: 72fb1ea1-355c-4faa-a733-77bc7de75ed5
 feature: Security
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 00a05b3bdc1a689947c1507847da99b54c94dcac
 workflow-type: tm+mt
 source-wordcount: '386'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -49,7 +49,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 可以與許多其他 Adobe �
 
 * 建立新的 OAuth 認證：
 
-   * [OAuth 伺服器對伺服器認證實作指南](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)
+   * [OAuth 伺服器對伺服器認證實作指南](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)
 
 * 將現有 JWT 認證移轉到 OAuth 認證：
 
@@ -67,7 +67,7 @@ Adobe Experience Manager (AEM) as a Cloud Service 可以與許多其他 Adobe �
 
 1. 選取「**建立**」。
 
-1. 根據 [Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/) 中的詳細資訊完成設定。例如：
+1. 根據 [Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation) 中的詳細資訊完成設定。例如：
 
    ![建立 OAuth 設定](assets/ims-create-oauth-configuration.png)
 

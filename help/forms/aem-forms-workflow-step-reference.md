@@ -1,37 +1,37 @@
 ---
-title: 在AEM FormsCloud Service上，哪些工作流程步驟可用來建立工作流程或用於業務流程自動化(BPM)？
-description: 以Forms為中心的工作流程可讓您快速建立最適化Forms型工作流程。 您可以使用Adobe Sign對檔案進行電子簽章、建立表單式業務流程、擷取資料並將其傳送到多個資料來源，以及傳送電子郵件通知
+title: 在AEM Forms Cloud Service上，哪些工作流程步驟可用來建立工作流程或用於業務流程自動化(BPM)？
+description: 以Forms為中心的工作流程可讓您快速建立最適化Forms型工作流程。 您可以使用Adobe Sign對檔案進行電子簽章、建立表單式業務流程、擷取資料並傳送至多個資料來源，以及傳送電子郵件通知
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-keywords: 使用AEM工作流程、使用指派工作步驟、轉換為PDF/A步驟、產生記錄步驟的檔案、使用工作流程、簽署檔案步驟、產生列印輸出步驟、產生非互動式PDF輸出
+keywords: 使用AEM工作流程、使用指派工作步驟、轉換至PDF/A步驟、產生記錄步驟的檔案、使用工作流程、簽署檔案步驟、產生列印輸出步驟、產生非互動式PDF輸出
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
 workflow-type: tm+mt
-source-wordcount: '7379'
+source-wordcount: '7370'
 ht-degree: 0%
 
 ---
 
 
-# 使用以Forms為中心的AEM Workflows — 步驟參考來自動化業務流程 {#forms-centric-workflow-on-osgi-step-reference}
+# 使用以Forms為中心的AEM工作流程 — 步驟參考來自動化業務流程 {#forms-centric-workflow-on-osgi-step-reference}
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html) |
 | AEM as a Cloud Service  | 本文章 |
 
-您使用工作流程模型。 模型可協助您定義並執行一系列步驟。 您也可以定義模型屬性，例如工作流程是暫時的或使用多個資源。 您可以[在模型中包含各種AEM Workflow步驟來達成商業邏輯](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=zh-Hant#extending-aem)。
+您使用工作流程模型。 模型可協助您定義並執行一系列步驟。 您也可以定義模型屬性，例如工作流程是暫時的或使用多個資源。 您可以[在模型中加入各種AEM工作流程步驟，以達成商業邏輯](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=zh-Hant#extending-aem)。
 
 ## 以Forms為中心的步驟 {#forms-workflow-steps}
 
-以Forms為中心的工作流程步驟會在AEM工作流程中執行AEM Forms特定的操作。 這些步驟可讓您在OSGi上快速建立最適化Forms型Forms工作流程。 這些工作流程可用於開發基本的稽核和核准工作流程、內部和跨防火牆業務流程。 您也可以使用Forms Workflow步驟來：
+以Forms為中心的工作流程步驟，會在AEM工作流程中執行AEM Forms特定的操作。 這些步驟可讓您在OSGi上快速建立最適化Forms型Forms工作流程。 這些工作流程可用於開發基本的稽核和核准工作流程、內部和跨防火牆業務流程。 您也可以使用Forms Workflow步驟來：
 
 * 建立業務流程、提交後工作流程以及後端工作流程，以管理註冊流程。
 
 * 建立並指派工作給使用者或群組。
 
-* 在AEM Workflow中使用[!DNL Adobe Sign]傳送檔案以供簽署。
+* 在AEM工作流程中使用[!DNL Adobe Sign]來傳送要簽署的檔案。
 
 * 隨選或提交表單時產生記錄檔案。
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 ## 指派任務步驟 {#assign-task-step}
 
-指派工作步驟會建立工作專案，並將其指派給使用者或群組。 在指派工作的同時，元件也會指定工作的調適型表單或非互動式PDF。 最適化表單必須接受使用者的輸入，且非互動式PDF，或唯讀最適化表單僅用於稽核工作流程。
+指派工作步驟會建立工作專案，並將其指派給使用者或群組。 在指派工作的同時，元件也會為此工作指定最適化表單或非互動式PDF 。 若要接受使用者的輸入，且非互動式PDF或唯讀的最適化表單必須使用於僅供檢閱的工作流程，最適化表單為必要項。
 
 您也可以使用元件來控制工作的行為。 例如，建立自動記錄檔案、將工作指派給特定使用者或群組、指定提交資料的路徑、指定要預先填入的資料路徑，以及指定預設動作。 「指派工作」步驟具有以下屬性：
 
@@ -53,7 +53,7 @@ ht-degree: 0%
 * **[!UICONTROL 描述]**：說明在工作中執行的作業。 當您在共用開發環境中工作時，此資訊對於其他流程開發人員很有用。
 
 * **[!UICONTROL 縮圖路徑]**：工作縮圖的路徑。 若未指定路徑，最適化表單會顯示預設縮圖，記錄檔案則會顯示預設圖示。
-* **[!UICONTROL 工作流程階段]**：工作流程可以有多個階段。 這些階段會顯示在「AEM收件匣」中。 您可以在模型的屬性(「Sidekick>頁面>頁面屬性>階段」)中定義這些階段。
+* **[!UICONTROL 工作流程階段]**：工作流程可以有多個階段。 這些階段會顯示在AEM收件匣中。 您可以在模型屬性(Sidekick >頁面>頁面屬性>階段)中定義這些階段。
 * **[!UICONTROL 優先順序]**：選取的優先順序會顯示在AEM收件匣中。 可用的選項為「高」、「Medium」和「低」。 預設值為Medium。
 * **[!UICONTROL 到期日]**：指定在多少天或多少小時之後，工作就會標示為逾期。 如果您選取&#x200B;**[!UICONTROL 關閉]**，則不會將工作標示為逾期。 您也可以指定逾時處理常式，以便在工作逾期後執行特定工作。
 
@@ -62,7 +62,7 @@ ht-degree: 0%
 * **[!UICONTROL 到期日之後逾時]**：選取此選項以啟用[逾時處理常式]選取欄位。
 * **[!UICONTROL 逾時處理常式]**：選取指派工作步驟超過到期日時要執行的指令碼。 放置在CRX儲存庫中[apps]/fd/dashboard/scripts/timeoutHandler的指令碼可供選取。 crx-repository中不存在指定的路徑。 管理員會在使用之前建立路徑。
 * **[!UICONTROL 在任務詳細資訊中反白上一個任務的動作和註解]**：選取此選項可顯示上一個在任務詳細資訊區段上採取的動作和收到的註解。
-* **[!UICONTROL 型別]**：選擇工作流程啟動時要填寫的檔案型別。 您可以選擇最適化表單、唯讀最適化表單和非互動式PDF檔案。
+* **[!UICONTROL 型別]**：選擇工作流程啟動時要填寫的檔案型別。 您可以選擇最適化表單、唯讀最適化表單、非互動式PDF檔案。
 
 <!-- , Interactive Communication Agent UI, or Interactive Communication Web Channel Document. -->
 
@@ -81,7 +81,7 @@ ht-degree: 0%
 -->
 
 * **[!UICONTROL 自適應表單路徑]**：指定自適應表單的路徑。 您可以使用提交給工作流程的最適化表單（可在絕對路徑取得），或從儲存在字串資料型別變數中的路徑擷取最適化表單。
-* **[!UICONTROL 使用]**&#x200B;選取輸入PDF：指定非互動式PDF檔案的路徑。 當您在「型別」欄位中選擇非互動式PDF檔案時，該欄位可供使用。 您可以使用相對於承載的路徑、以絕對路徑儲存的路徑，或使用Document資料型別的變數來選取輸入PDF。 例如，[Payload_Directory]/Workflow/PDF/credit-card.pdf。 crx-repository中不存在該路徑。 管理員會在使用之前建立路徑。 若要使用「PDF路徑」選項，您需要啟用記錄檔案選項或表單範本式的最適化Forms 。
+* **[!UICONTROL 使用]**&#x200B;選取輸入PDF：指定非互動式PDF檔案的路徑。 當您在「型別」欄位中選擇非互動式PDF檔案時，該欄位可供使用。 您可以使用相對於承載的路徑、以絕對路徑儲存的路徑，或使用Document資料型別的變數來選取輸入PDF。 例如，[Payload_Directory]/Workflow/PDF/credit-card.pdf。 crx-repository中不存在該路徑。 管理員會在使用之前建立路徑。 您需要啟用記錄檔案選項或表單範本式的最適化Forms ，才能使用PDF路徑選項。
 * **[!UICONTROL 針對已完成的工作，將調適型表單轉譯為]**：當工作標示為完成時，您可以將調適型表單轉譯為唯讀的調適型表單或PDF檔案。 您需要啟用記錄檔案選項或表單範本式的最適化Forms，才能將最適化表單呈現為記錄檔案。
 * **[!UICONTROL 已預先填入]**：下列欄位可作為工作的輸入專案：
 
@@ -98,7 +98,7 @@ ht-degree: 0%
     
     -->
 
-   * **[!UICONTROL 要求屬性對應]**：使用要求屬性對應區段來定義要求屬性[&#128279;](work-with-form-data-model.md#bindargument)的名稱和值。 根據請求中指定的屬性名稱和值從資料來源擷取詳細資料。 您可以使用常值或String資料型別的變數來定義請求屬性值。
+   * **[!UICONTROL 要求屬性對應]**：使用要求屬性對應區段來定義要求屬性](work-with-form-data-model.md#bindargument)的[名稱和值。 根據請求中指定的屬性名稱和值從資料來源擷取詳細資料。 您可以使用常值或String資料型別的變數來定義請求屬性值。
 
   <!--  
      
@@ -120,8 +120,8 @@ ht-degree: 0%
     
     -->
 
-* **[!UICONTROL 受指派人]** > **[!UICONTROL 指派選項]**：指定將工作指派給使用者的方法。 您可以使用「參與者選擇器」指令碼，以動態方式將工作指派給使用者或群組，或將工作指派給特定的AEM使用者或群組。
-* **[!UICONTROL 參與者選擇器]**：在[指派選項]欄位中選取&#x200B;**[!UICONTROL 動態至使用者或群組]**&#x200B;選項時，即可使用此選項。 您可以使用ECMAScript或服務來動態選取使用者或群組。 如需詳細資訊，請參閱[動態指派工作流程給使用者](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html)和[建立自訂Adobe Experience Manager動態參與者步驟](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hant&amp;CID=RedirectAEMCommunityKautuk)。
+* **[!UICONTROL 受指派人]** > **[!UICONTROL 指派選項]**：指定將工作指派給使用者的方法。 您可以使用「參與者選擇器」指令碼動態地將任務指派給使用者或群組，或將任務指派給特定的AEM使用者或群組。
+* **[!UICONTROL 參與者選擇器]**：在[指派選項]欄位中選取&#x200B;**[!UICONTROL 動態至使用者或群組]**&#x200B;選項時，即可使用此選項。 您可以使用ECMAScript或服務來動態選取使用者或群組。 如需詳細資訊，請參閱[建立自訂Adobe Experience Manager動態參與者步驟](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en&CID=RedirectAEMCommunityKautuk)。
 
 * **[!UICONTROL 參與者]**：在&#x200B;**[!UICONTROL 參與者選擇器]**&#x200B;欄位中選取&#x200B;**[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]**&#x200B;選項時，即可使用此欄位。 欄位可讓您為RandomParticipantChooser選項選取使用者或群組。
 
@@ -147,16 +147,16 @@ ht-degree: 0%
 
 * **[!UICONTROL 動作]** > **[!UICONTROL 預設動作]**：現成可用的送出、儲存和重設動作。 預設會啟用所有預設動作。
 * **[!UICONTROL 路由變數]**：路由變數的名稱。 路由變數會擷取使用者在AEM收件匣中選取的自訂動作。
-* **[!UICONTROL 路由]**：任務可以分支至不同的路由。 在AEM收件匣中選取時，路由會傳回值，且工作流程會根據選取的路由進行分支。 您可以將路由儲存在String資料型別陣列的變數中，或選取&#x200B;**[!UICONTROL 常值]**&#x200B;以手動新增路由。
+* **[!UICONTROL 路由]**：任務可以分支至不同的路由。 在AEM收件匣中選取時，路由會傳回值，而工作流程會根據選取的路由進行分支。 您可以將路由儲存在String資料型別陣列的變數中，或選取&#x200B;**[!UICONTROL 常值]**&#x200B;以手動新增路由。
 
 * **[!UICONTROL 路由標題]**：指定路由的標題。 它會顯示在AEM收件匣中。
-* **[!UICONTROL Coral圖示]**：指定Coral圖示的HTML屬性。 AdobeCorelUI資料庫提供了一組數量龐大的「觸控優先」圖示。 您可以選擇並使用路由的圖示。 它會與標題一起顯示在AEM收件匣中。 如果您將路由儲存在變數中，路由會使用預設的「標籤」珊瑚圖示。
-* **[!UICONTROL 允許受分派者新增註解]**：選取此選項可啟用工作的註解。 受指派人可以於任務提交時，從「AEM收件匣」新增註解。
+* **[!UICONTROL Coral圖示]**：指定Coral圖示的HTML屬性。 Adobe CorelUI資料庫提供了一組數量龐大的觸控優先圖示。 您可以選擇並使用路由的圖示。 它會與標題一起顯示在AEM收件匣中。 如果您將路由儲存在變數中，路由會使用預設的「標籤」珊瑚圖示。
+* **[!UICONTROL 允許受分派者新增註解]**：選取此選項可啟用工作的註解。 受指派人可以於任務提交時，從AEM收件匣新增註解。
 * **[!UICONTROL 將註解儲存在變數中]**：將註解儲存在字串資料型別的變數中。 只有在選取&#x200B;**[!UICONTROL 允許受分派者新增註解]**&#x200B;核取方塊時，才會顯示此選項。
 
-* **[!UICONTROL 允許受分派者將附件新增至工作]**：選取此選項以啟用工作的附件。 受指派人可以於任務提交時，從AEM收件匣新增附件。 您也可以限制附件的大小上限&#x200B;**[!UICONTROL （檔案大小上限）]**。 預設大小為2 MB。
+* **[!UICONTROL 允許受分派者將附件新增至工作]**：選取此選項以啟用工作的附件。 受指派人可以於提交任務時從AEM收件匣新增附件。 您也可以限制附件的大小上限&#x200B;**[!UICONTROL （檔案大小上限）]**。 預設大小為2 MB。
 
-* **[!UICONTROL 使用]**&#x200B;儲存輸出工作附件：指定附件資料夾的位置。 您可以使用相對於承載的路徑或在檔案資料型別陣列的變數中儲存輸出工作附件。 只有當您選取&#x200B;**[!UICONTROL 允許受分派者將附件新增至工作]**&#x200B;核取方塊，並從&#x200B;**[!UICONTROL 表單/檔案]**&#x200B;索引標籤中的&#x200B;**[!UICONTROL 型別]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL 最適化表單]**、**[!UICONTROL 唯讀最適化表單]**&#x200B;或&#x200B;**[!UICONTROL 非互動式PDF檔案]**&#x200B;時，才會顯示此選項。
+* **[!UICONTROL 使用]**&#x200B;儲存輸出工作附件：指定附件資料夾的位置。 您可以使用相對於承載的路徑或在檔案資料型別陣列的變數中儲存輸出工作附件。 只有當您選取&#x200B;**[!UICONTROL 允許受分派者將附件新增至工作]**&#x200B;核取方塊，並從&#x200B;**[!UICONTROL 表單/檔案]**&#x200B;索引標籤中的&#x200B;**[!UICONTROL 型別]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL 最適化表單]**、**[!UICONTROL 唯讀最適化表單]**&#x200B;或&#x200B;**[!UICONTROL 非互動式PDF檔案]**，才會顯示此選項。
 
 * **[!UICONTROL 使用自訂中繼資料]**：選取此選項可啟用自訂中繼資料欄位。 自訂中繼資料用於電子郵件範本。
 * **[!UICONTROL 自訂中繼資料]**：選取電子郵件範本的自訂中繼資料。 自訂中繼資料可在crx-repository的apps/fd/dashboard/scripts/metadataScripts取得。 crx-repository中不存在指定的路徑。 管理員會在使用之前建立路徑。 您也可以使用自訂中繼資料的服務。 您也可以擴充`WorkitemUserMetadataService`介面以提供自訂中繼資料。
@@ -166,20 +166,20 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->當您為外部資料儲存設定AEM工作流程模型時，會停用將「指派任務」步驟儲存為草稿以及擷取「指派任務」步驟記錄的選項。 此外，收件匣中的儲存選項已停用。
+>當您設定外部資料儲存的AEM工作流程模型時，將指派任務步驟儲存為草稿以及擷取指派任務步驟歷史記錄的選項會停用。 此外，收件匣中的儲存選項已停用。
 
 ## 轉換為PDF/A步驟 {#convert-pdfa}
 
-PDF/A是一種用於長期儲存檔案內容的封存格式，透過嵌入字型並解壓縮檔案。 因此，PDF/A 文件通常比標準 PDF 文件大。您可以使用AEM Workflow中的&#x200B;***轉換為PDF/A***&#x200B;步驟，將PDF檔案轉換為PDF/A格式。
+PDF/A是一種用於長期儲存檔案內容的封存格式，其方式為嵌入字型並解壓縮檔案。 因此，PDF/A 文件通常比標準 PDF 文件大。您可以在AEM工作流程中使用&#x200B;***轉換成PDF/A***&#x200B;步驟，將PDF檔案轉換成PDF/A格式。
 
-轉換成PDF/A步驟具有以下屬性：
+轉換至PDF/A步驟具有以下屬性：
 
 **[!UICONTROL 輸入檔案]**：輸入檔案可以相對於承載、具有絕對路徑、可以作為承載提供或儲存在Document資料型別的變數中。
 
-**[!UICONTROL 轉換選項]**：使用此屬性，指定將PDF檔案轉換為PDF/A檔案的設定。 此標籤下可用的各種選項包括：
-* **[!UICONTROL 符合性]**：指定輸出PDF/A檔案必須符合的標準。 它支援不同的PDF標準，例如PDF/A-1b、PDF/A-2b或PDF/A-3b。
+**[!UICONTROL 轉換選項]**：使用此屬性，可指定將PDF檔案轉換為PDF/A檔案的設定。 此標籤下可用的各種選項包括：
+* **[!UICONTROL 法規遵循]**：指定輸出PDF/A檔案必須符合的標準。 它支援不同的PDF標準，例如PDF/A-1b、PDF/A-2b或PDF/A-3b。
 * **[!UICONTROL 結果層級]**：將轉換輸出的結果層級指定為PassFail、Summary或Detailed。
-* RGB **[!UICONTROL 色域]**：將預先定義的色域指定為S_COATED、COATED_FOGRA27、JAPAN_COLOR_COATED或SWOP (可用於輸出PDF/A檔案)。
+* **[!UICONTROL 色域]**：將預先定義的色域指定為S_RGB、COATED_FOGRA27、JAPAN_COLOR_COATED或SWOP，可用於輸出PDF/A檔案。
 * **[!UICONTROL 選擇性內容]**：只有在符合指定的准則集時，才允許在輸出PDF/A檔案中顯示特定圖形物件和/或註解。
 
 **[!UICONTROL 輸出檔案]**：指定儲存輸出檔案的位置。 輸出檔案可儲存在相對於承載的位置、覆寫承載（如果承載是檔案或是Document資料型別的變數）。
@@ -189,7 +189,7 @@ PDF/A是一種用於長期儲存檔案內容的封存格式，透過嵌入字型
 
 使用電子郵件步驟來傳送電子郵件，例如，包含記錄檔案、最適化表單<!-- , link of an interactive communication-->連結或附加PDF檔案的電子郵件。 傳送電子郵件步驟支援[HTML電子郵件](https://en.wikipedia.org/wiki/HTML_email)。 HTML電子郵件會迅速回應，並因應收件者的電子郵件使用者端和熒幕大小。 您可以使用HTML電子郵件範本來定義電子郵件的外觀、色彩配置和行為。
 
-電子郵件步驟使用Day CQ Mail Service傳送電子郵件。 在使用電子郵件步驟之前，請確定已設定電子郵件服務。 預設僅支援HTTP和HTTP通訊協定。 [請連絡支援團隊](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=zh-Hant#sending-email)以啟用連線埠來傳送電子郵件，並為您的環境啟用SMTP通訊協定。 此限制有助於改善平台的安全性。
+電子郵件步驟使用Day CQ Mail Service傳送電子郵件。 在使用電子郵件步驟之前，請確定已設定電子郵件服務。 預設僅支援HTTP和HTTP通訊協定。 [請連絡支援團隊](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=en#sending-email)以啟用連線埠來傳送電子郵件，並為您的環境啟用SMTP通訊協定。 此限制有助於改善平台的安全性。
 
 電子郵件步驟有下列屬性：
 
@@ -250,7 +250,7 @@ PDF/A是一種用於長期儲存檔案內容的封存格式，透過嵌入字型
 
 ## 叫用DDX步驟 {#invokeddx}
 
-檔案描述XML (DDX)是一種宣告式標籤語言，其元素代表檔案的建置組塊。 這些建置區塊包括PDF和XDP檔案以及其他元素，例如註解、書籤和樣式化文字。 DDX定義了一組作業，可套用在一或多個輸入檔案上，以產生一或多個輸出檔案。 單一DDX可用於一系列來原始檔。 您可以在AEM Workflow中使用&#x200B;***叫用DDX步驟***&#x200B;來執行各種作業，例如組譯和解譯檔案、建立和修改Acrobat和XFA Forms，以及[DDX參考檔案](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf)中說明的其他作業。
+檔案描述XML (DDX)是一種宣告式標籤語言，其元素代表檔案的建置組塊。 這些建置區塊包括PDF和XDP檔案以及其他元素，例如註解、書籤和樣式化文字。 DDX定義了一組作業，可套用在一或多個輸入檔案上，以產生一或多個輸出檔案。 單一DDX可用於一系列來原始檔。 您可以在AEM工作流程中使用&#x200B;***叫用DDX步驟***&#x200B;來執行各種作業，例如組譯和解譯檔案、建立和修改Acrobat和XFA Forms，以及[DDX參考檔案](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf)中說明的其他作業。
 
 叫用DDX步驟具有以下特性：
 
@@ -368,7 +368,7 @@ PDF/A是一種用於長期儲存檔案內容的封存格式，透過嵌入字型
    * **[!UICONTROL 從輸入JSON對應輸入欄位]**：指定JSON檔案的路徑，以從JSON檔案取得某些服務引數的輸入值。 JSON檔案的路徑可以是相對於裝載、絕對路徑，也可以使用JSON或表單資料模型(FDM)型別的變數來選取輸入JSON檔案。
 
 * **[!UICONTROL 服務的輸入]** > **[!UICONTROL 使用變數或JSON檔案提供輸入資料]**：選取選項，以從儲存在絕對路徑、相對於承載的路徑或變數中的JSON檔案取得所有引數的值。
-* **[!UICONTROL 使用]**&#x200B;選取輸入JSON檔案：包含所有服務引數值的JSON檔案。 JSON檔案的路徑可以是相對於承載&#x200B;**的**&#x200B;或&#x200B;**[!UICONTROL 絕對路徑]**。 您也可以使用JSON或表單資料模型(FDM)資料型別的變數來擷取輸入JSON檔案。
+* **[!UICONTROL 使用]**&#x200B;選取輸入JSON檔案：包含所有服務引數值的JSON檔案。 JSON檔案的路徑可以是相對於承載&#x200B;]**的**[!UICONTROL &#x200B;或&#x200B;**[!UICONTROL 絕對路徑]**。 您也可以使用JSON或表單資料模型(FDM)資料型別的變數來擷取輸入JSON檔案。
 
 * **[!UICONTROL JSON Dot Notation]**：將欄位保留空白，以使用指定JSON檔案的所有物件作為服務引數的輸入。 若要從指定的JSON檔案讀取特定JSON物件作為服務引數的輸入，請為JSON物件指定點標籤法。例如，如果您有和區段開頭所列出的JSON類似的JSON，請指定insurance.customerDetails以提供客戶的所有詳細資料作為服務的輸入。
 * **[!UICONTROL 服務的輸出]** > **[!UICONTROL 對應輸出值並將輸出值寫入變數或中繼資料]**：選取選項，以將輸出值儲存為crx-repository中工作流程執行個體中繼資料節點的屬性。 指定中繼資料屬性的名稱，並選取對應的服務輸出屬性，以與中繼資料屬性對應，例如，將輸出服務傳回的phone_number與工作流程中繼資料的phone_number屬性對應。 同樣地，您可以將輸出儲存在Long資料型別的變數中。 當您選取&#x200B;**[!UICONTROL 要對映的服務輸出屬性]**&#x200B;選項的屬性時，**[!UICONTROL 將輸出儲存至]**&#x200B;選項只會填入能夠儲存所選屬性資料的變數。
@@ -390,14 +390,14 @@ PDF/A是一種用於長期儲存檔案內容的封存格式，透過嵌入字型
 
 * **[!UICONTROL 地區設定]**：指定電子郵件和驗證選項的語言。 您可以將地區設定儲存在String資料型別的變數中，或選取&#x200B;**[!UICONTROL 常值]**&#x200B;從可用選項清單中選擇地區設定。 將地區設定的值儲存在變數中時，您必須定義地區設定代碼。 例如，指定&#x200B;**[!UICONTROL en_US]**&#x200B;代表英文，指定&#x200B;**[!UICONTROL fr_FR]**&#x200B;代表法文。
 
-* **[!UICONTROL Adobe Sign雲端設定]**：選擇[!DNL Adobe Sign]雲端設定。 如果您尚未設定[!DNL AEM Forms]的[!DNL Adobe Sign]，請參閱[將Adobe Sign與 [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md)整合。
+* **[!UICONTROL Adobe Sign雲端設定]**：選擇[!DNL Adobe Sign]雲端設定。 如果您尚未為[!DNL AEM Forms]設定[!DNL Adobe Sign]，請參閱[將Adobe Sign與 [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md)整合。
 
 * **[!UICONTROL 使用]**&#x200B;選取要簽署的檔案：您可以從相對於承載的位置選擇檔案、使用承載作為檔案、指定檔案的絕對路徑，或擷取儲存在Document資料型別變數中的檔案。
 * **[!UICONTROL 截止日期前的天數]**：在&#x200B;**[!UICONTROL 截止日期前的天數]**&#x200B;欄位中指定的天數沒有作業之後，檔案會標示為到期（已超過截止日期）。 檔案指派給使用者簽署後，會計入的天數。
 * **[!UICONTROL 提醒電子郵件頻率]**：您可以每日或每週傳送提醒電子郵件。 一週是從檔案指派給使用者供簽署之日開始計算。
 * **[!UICONTROL 簽章程式]**：您可以選擇以循序或平行順序簽署檔案。 依序由一位簽署者一次收到檔案以供簽署。 第一個簽署者完成檔案的簽署後，檔案會傳送給第二個簽署者，依此類推。 多個簽署者可同時以平行順序簽署檔案。
 * **[!UICONTROL 重新導向URL]**：指定重新導向URL。 檔案簽署後，您可以將受指派人重新導向至URL。 此URL通常包含感謝訊息或進一步說明。
-* **[!UICONTROL 工作流程階段]**：工作流程可以有多個階段。 這些階段會顯示在「AEM收件匣」中。 您可以在模型的屬性中定義這些階段(**[!UICONTROL Sidekick]** > **[!UICONTROL 頁面]** > **[!UICONTROL 頁面屬性]** > **[!UICONTROL 階段]**)。
+* **[!UICONTROL 工作流程階段]**：工作流程可以有多個階段。 這些階段會顯示在AEM收件匣中。 您可以在模型的屬性中定義這些階段(**[!UICONTROL Sidekick]** > **[!UICONTROL 頁面]** > **[!UICONTROL 頁面屬性]** > **[!UICONTROL 階段]**)。
 * **[!UICONTROL 選取收件者]**：指定選擇檔案收件者的方法。 您可以動態地將工作流程指派給使用者或群組，或手動新增收件者的詳細資訊。 當您在下拉式清單中選取手動時，您會新增收件者詳細資訊，例如電子郵件、角色和驗證方法。
 
   >[!NOTE]
@@ -568,9 +568,9 @@ Send a document directly to a printer. It supports the following printing access
 
 ## 產生非互動式PDF輸出步驟   {#generatePDFdocuments}
 
-1. 將「產生非互動式PDF輸出」工作流程拖曳至「Sidekick」中「Forms Workflow」標籤下。
+1. 拖曳Sidekick中「PDF」標籤下的「產生非互動式Forms Workflow輸出」工作流程。
 1. 連按兩下新增的工作流程步驟以編輯元件。
-1. 在[編輯元件]對話方塊中，設定輸入檔案、輸出檔案和其他引數，然後按一下[確定]。**&#x200B;**
+1. 在[編輯元件]對話方塊中，設定輸入檔案、輸出檔案和其他引數，然後按一下[確定]。****
 
 ### 輸入檔案 {#input-documents-3}
 
@@ -586,9 +586,9 @@ Send a document directly to a printer. It supports the following printing access
 
 * **內容根**：指定儲存於輸入XDP範本中所用片段或影像之存放庫中的資料夾路徑。
 * **地區**：指定產生的PDF表單的預設地區。
-* **Acrobat版本**：為產生的PDF表單指定目標Acrobat版本。
+* **Acrobat版本**：指定所產生PDF表單的目標Acrobat版本。
 * **線性化PDF**：指定是否要最佳化產生的PDF以供網頁檢視。
-* **已標籤的PDF**：指定是否要讓產生的PDF可供存取。
+* **已標籤的PDF**：指定是否要存取產生的PDF。
 * **XCI檔案**：指定XCI檔案的路徑。
 
 ## 另請參閱 {#see-also}

@@ -4,7 +4,7 @@ description: 瞭解如何在最適化表單中建立一個或多個可重複的�
 role: Architect, Developer, Admin, User
 feature: Adaptive Forms, Core Components
 exl-id: 02521bf3-83c1-40a0-8fe6-23af240727e9
-source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
 workflow-type: tm+mt
 source-wordcount: '1258'
 ht-degree: 8%
@@ -16,7 +16,7 @@ ht-degree: 8%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-forms-repeatable-sections.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-forms-repeatable-sections.html?lang=en) |
 | AEM as a Cloud Service  | 本文章 |
 
 可重複區段是指可為相同資料的多個例項收集資訊而可重複或多次重複的表單部分。
@@ -31,10 +31,10 @@ ht-degree: 8%
 * 設定最適化表單元件的最小重複次數或最大重複次數
 * 使用規則編輯器為可重複區段設定新增或刪除動作
 
-您可以使用[面板](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)、[摺疊式功能表](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=zh-Hant)、[水準索引標籤](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=zh-Hant)、[垂直索引標籤](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)或[精靈](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=zh-Hant)元件，讓最適化表單的部分可重複。 您可以將子元件新增到這些元件中，以在表單中建立可重複的區段。
+您可以使用[面板](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)、[摺疊式功能表](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html)、[水準索引標籤](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html)、[垂直索引標籤](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)或[精靈](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html)元件，讓最適化表單的部分可重複。 您可以將子元件新增到這些元件中，以在表單中建立可重複的區段。
 
 
-本檔案中的範例是以[面板](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)元件為基礎。 您可以執行相同的步驟，讓[面板](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html)、[摺疊式功能表](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=zh-Hant)、[水準索引標籤](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=zh-Hant)、[垂直索引標籤](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)或[精靈](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=zh-Hant)元件可重複。
+本檔案中的範例是以[面板](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)元件為基礎。 您可以執行相同的步驟，讓[面板](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)、[摺疊式功能表](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html)、[水準索引標籤](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html)、[垂直索引標籤](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)或[精靈](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html)元件可重複。
 
 ## 新增或刪除表單中可重複的區段 {#add-or-delete-repeatable-section-in-panel-container}
 
@@ -65,7 +65,7 @@ ht-degree: 8%
 要重複的面板父項應包含新增按鈕以管理面板的重複例項。 執行以下步驟，將按鈕插入父項，並在按鈕上啟用指令碼：
 
 1. 將&#x200B;**按鈕元件**&#x200B;新增至面板的父系。 在下列範例影片中，使用了標簽名稱為&#x200B;**Add**&#x200B;且欄位名稱為&#x200B;**AddPanel**&#x200B;的按鈕元件。 選取元件並選取![edit-rules](/help/forms/assets/edit-rules.png)。 按鈕元件的規則會在規則編輯器中開啟。
-1. 在[規則編輯器]視窗中，按一下[建立]。**&#x200B;**。
+1. 在[規則編輯器]視窗中，按一下[建立]。****。
 
    選取[表單物件與函式]列中的&#x200B;**視覺化編輯器**。
 
@@ -86,7 +86,7 @@ ht-degree: 8%
 面板的父項應包含刪除按鈕，用於刪除可重複面板的例項。 執行以下步驟將按鈕插入父項，並在按鈕上啟用指令碼以刪除可重複的面板：
 
 1. 將&#x200B;**按鈕元件**&#x200B;新增至面板的父系。在下面的影片中，使用標簽名稱為&#x200B;**delete**&#x200B;且欄位名稱為&#x200B;**DeletePanel**&#x200B;的按鈕元件。 選取元件並選取![edit-rules](/help/forms/assets/edit-rules.png)。 按鈕元件的規則會在規則編輯器中開啟。
-1. 在[規則編輯器]視窗中，按一下[建立]。**&#x200B;**。
+1. 在[規則編輯器]視窗中，按一下[建立]。****。
 
    選取[表單物件與函式]列中的&#x200B;**視覺化編輯器**。
 
@@ -173,7 +173,7 @@ A panel has various layouts options. The Layout for accordian design option has 
 1. 若要指定子表單重複次數的最大值，請選取「最大值」，並在相關方塊中輸入數字。 如果您未在「最大值」方塊中指定值，則子表單重複次數將無限制。
 1. 若要指定一組子表單重複次數，而不考慮資料數量，請選取「初始計數」，並在相關方塊中輸入數字。 如果選取此選項，但無可用資料或資料專案少於指定的初始計數值，則表格上仍會放置子表格的空白執行個體。
 1. 在父子表單中新增兩個按鈕 — 一個用於新增例項，另一個用於刪除可重複子表單的例項。 如需詳細步驟，請參閱[建置動作](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c74572b5612a87ca2b56-8000.2.html#WS107c29ade9134a2c-1f74d86012a87d4fe55-8000.2)。
-1. 現在將表單範本連結至最適化表單。 如需詳細步驟，請參閱[根據範本建立最適化表單](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-adaptive-form.html?lang=zh-Hant#create-an-adaptive-form-based-on-an-xfa-form-template)。
+1. 現在將表單範本連結至最適化表單。 如需詳細步驟，請參閱[根據範本建立最適化表單](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-adaptive-form.html?lang=en#create-an-adaptive-form-based-on-an-xfa-form-template)。
 1. 使用在步驟9中建立的按鈕來新增和移除子表單。
 
 附加的.zip檔案包含一個範例可重複的子表單。
@@ -182,7 +182,7 @@ A panel has various layouts options. The Layout for accordian design option has 
 
 ## 使用XML結構描述(XSD)的重複設定 {#using-repeat-settings-of-an-xml-schema-xsd-br}
 
-您可以從XML結構描述以及任何複雜型別元素的minOccours &amp; maxOccurs屬性建立可重複的面板。 如需XML結構描述的詳細資訊，請參閱[使用XML結構描述作為表單模型建立最適化表單](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adaptive-form-xml-schema-form-model.html?lang=zh-Hant)。
+您可以從XML結構描述以及任何複雜型別元素的minOccours &amp; maxOccurs屬性建立可重複的面板。 如需XML結構描述的詳細資訊，請參閱[使用XML結構描述作為表單模型建立最適化表單](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adaptive-form-xml-schema-form-model.html)。
 
 在下列程式碼中，`SampleType`面板使用minOccours &amp; maxOccurs屬性。
 

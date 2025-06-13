@@ -4,7 +4,7 @@ description: 瞭解如何使用適用於Eclipse的AEM開發人員工具，這是
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
 workflow-type: tm+mt
 source-wordcount: '1138'
 ht-degree: 2%
@@ -13,18 +13,18 @@ ht-degree: 2%
 
 # Eclipse 適用的 AEM 開發人員工具{#aem-developer-tools-for-eclipse}
 
-![Eclipse標誌的Experience Manager開發人員工具](assets/eclipse-logo.png)
+![適用於Eclipse標誌的Experience Manager Developer Tools](assets/eclipse-logo.png)
 
 ## 概觀 {#overview}
 
-_適用於Eclipse的Experience Manager Developer Tools_&#x200B;是根據在Apache License 2底下發行的Apache Sling[&#128279;](https://sling.apache.org/documentation/development/ide-tooling.html)適用的Eclipse外掛程式，為Eclipse外掛程式。
+_適用於Eclipse的Experience Manager Developer Tools_&#x200B;是以Apache授權2所發行適用於Apache Sling](https://sling.apache.org/documentation/development/ide-tooling.html)的[Eclipse外掛程式為基礎的Eclipse外掛程式。
 
 它提供數項功能，讓AEM開發更容易：
 
 * 透過Eclipse伺服器聯結器與AEM執行個體緊密整合
 * 內容和OSGi套件組合的同步
 * 使用程式碼熱交換功能提供除錯支援
-* 透過特定專案建立精靈簡單BootstrapAEM專案
+* AEM專案的簡單Bootstrap，透過特定專案建立精靈
 * 輕鬆編輯JCR屬性
 
 ## 要求 {#requirements}
@@ -32,7 +32,7 @@ _適用於Eclipse的Experience Manager Developer Tools_&#x200B;是根據在Apach
 使用AEM開發人員工具之前，您需要：
 
 * 下載並安裝適用於Enterprise Java™開發人員的[Eclipse IDE](https://www.eclipse.org/downloads/packages/)。
-* 依照[Eclipse常見問答集](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse)所述，編輯您的`eclipse.ini`設定檔，設定Eclipse安裝，確保您至少有1 GB的棧積記憶體。
+* 依照[Eclipse常見問答集](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F)中的說明，編輯您的`eclipse.ini`設定檔，設定Eclipse安裝，確保您至少有1 GB的棧積記憶體。
 
 >[!NOTE]
 >
@@ -64,7 +64,7 @@ _適用於Eclipse的Experience Manager Developer Tools_&#x200B;是根據在Apach
 
 在Eclipse中，「透視」可決定視窗中可用的動作和檢視，並可與Eclipse中的資源進行以工作為導向的互動。 如需透視的詳細資訊，請參閱[Eclipse檔案](https://help.eclipse.org/latest/index.jsp)。
 
-_Eclipse的Experience Manager開發工具_&#x200B;提供AEM Perspective，讓您完全控制您的AEM專案和執行個體。 若要開啟「AEM透視」：
+_適用於Eclipse的Experience Manager開發工具_&#x200B;提供AEM觀點，讓您完全控制您的AEM專案和執行個體。 若要開啟AEM透視：
 
 1. 從Eclipse功能表列選取&#x200B;**視窗** > **透視** > **開啟透視** > **其他**。
 1. 在對話方塊中選取&#x200B;**AEM**，然後按一下&#x200B;**開啟**。
@@ -73,7 +73,7 @@ _Eclipse的Experience Manager開發工具_&#x200B;提供AEM Perspective，讓您
 
 ## 多模組專案範例 {#sample-multi-module-project}
 
-適用於Eclipse的&#x200B;_Experience Manager開發人員工具_&#x200B;隨附範例、多模組專案，可協助您快速上手Eclipse中的專案設定。 它也是幾項AEM功能的最佳實務指南。 [進一步瞭解專案原型](https://github.com/adobe/aem-project-archetype)。
+適用於Eclipse的&#x200B;_Experience Manager Developer Tools_&#x200B;隨附範例、多模組專案，可協助您快速上手Eclipse中的專案設定。 它也是幾項AEM功能的最佳實務指南。 [進一步瞭解專案原型](https://github.com/adobe/aem-project-archetype)。
 
 請依照下列步驟建立範例專案：
 
@@ -104,9 +104,9 @@ _Eclipse的Experience Manager開發工具_&#x200B;提供AEM Perspective，讓您
 
 1. 按一下「**下一步**」。
 
-1. 然後，您可以設定Eclipse連線的AEM伺服器。
+1. 接著，您可以設定Eclipse連線的AEM伺服器。
 
-   若要使用偵錯工具功能，您必須在偵錯模式下啟動AEM — 這可以透過將下列專案新增到命令列來實現：
+   若要使用偵錯工具功能，您必須以偵錯模式啟動AEM — 這可以透過將下列專案新增到命令列來實現：
 
    ```text
        -nofork -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=10123
@@ -192,7 +192,7 @@ _Eclipse的Experience Manager開發工具_&#x200B;提供AEM Perspective，讓您
 1. 請務必儲存所有變更。 您現在可以將新內容同步至您的AEM執行個體。
 
 1. 在「伺服器」面板中，確定您的連線已啟動，若未啟動，則確定已啟動連線。
-1. 按一下「**清理和Publish**」圖示。
+1. 按一下&#x200B;**清除並發佈**&#x200B;圖示。
 
 完成後，您應該在執行個體上執行套件，並在儲存時，任何變更都會自動同步到執行個體。
 

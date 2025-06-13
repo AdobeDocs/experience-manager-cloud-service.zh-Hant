@@ -7,7 +7,7 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
 role: User, Developer
-source-git-commit: 747203ccd3c7e428e2afe27c56e47c3ec18699f6
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
 workflow-type: tm+mt
 source-wordcount: '1286'
 ht-degree: 2%
@@ -15,11 +15,11 @@ ht-degree: 2%
 ---
 
 
-# 以核心元件為主之最適化表單的自訂函數簡介
+# 以核心元件為主之自適應表單的自訂函數簡介
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions-core-components) |
 | AEM as a Cloud Service  | 本文章 |
 
 AEM Forms支援自訂函式，可讓使用者定義JavaScript函式以實作複雜的商業規則。 這些自訂功能可協助您根據指定需求操控和處理輸入的資料，進而擴充表單的功能。 它們可根據預先定義的條件來啟用表單行為的動態變更。 自訂函式也可讓開發人員強制實施複雜的驗證邏輯、執行動態計算，以及根據使用者互動或預先定義的條件控制表單元素的顯示或行為。
@@ -168,7 +168,6 @@ JavaScript註解是用來提供JavaScript程式碼的中繼資料。 其中包�
             // code to be executed
         }
 ```
-
 如果使用者未將任何JavaScript註解新增至自訂函式，則會依函式名稱在規則編輯器中列出。 不過，建議您加入JavaScript註解，以提升自訂函式的可讀性。
 
 ### 箭頭功能與強制JavaScript註解或註解

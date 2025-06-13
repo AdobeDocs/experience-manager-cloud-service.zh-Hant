@@ -4,10 +4,10 @@ description: 了解 Adobe Developer Console 中已取代 JWT 認證對 AEM 的�
 exl-id: 7c811081-484c-41f7-a289-4e9a10a837b3
 feature: Security
 role: Admin
-source-git-commit: 957dedd81d14e921aa8a64de80ef21fd11f713ab
-workflow-type: ht
+source-git-commit: 5db419e674ceb3c861f53a19e7b852c89ebd3702
+workflow-type: tm+mt
 source-wordcount: '768'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -23,7 +23,7 @@ Adobe 客戶使用 [Adobe Developer Console](https://developer.adobe.com/console
 
 主要要點是，AEM 現在支援 AEM as a Cloud Service 全新的 OAuth 伺服器對伺服器認證。您可能已收到一封電子郵件，內含要求您移轉 JWT 認證的指示，而現在可以完成這項移轉作業。
 
-以下區段列出客戶必須 (或在某些情況下不得) 將其服務帳戶 (JWT) 認證取代為 OAuth 伺服器對伺服器認證的情境，目前 AEM 支援這些情境。[了解如何](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview)移轉認證。
+以下區段列出客戶必須 (或在某些情況下不得) 將其服務帳戶 (JWT) 認證取代為 OAuth 伺服器對伺服器認證的情境，目前 AEM 支援這些情境。[了解如何](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration#migration-overview)移轉認證。
 
 >[!NOTE]
 >

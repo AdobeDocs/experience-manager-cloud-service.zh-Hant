@@ -3,7 +3,7 @@ title: '為 [!DNL Edge Delivery Services]編寫內容時整合 [!DNL AEM Assets]
 description: 瞭解如何將 [!DNL AEM Assets] 與 [!DNL Edge Delivery Services]. This integration enables you to integrate [!DNL AEM Assets] 與 [!DNL Microsoft Word] 整合， [!DNL Google Docs], integrate [!DNL AEM Assets] 與 [!DNL Universal Editor], integrate [!DNL Dynamic Media] 與 [!DNL Edge Delivery Services], integrate [!DNL Dynamic Media with OpenAPI capabilities] 與 [!DNL Universal Editor] 整合，以及如何將 [!DNL Dynamic Media with OpenAPI capabilities] 與 [!DNL Microsoft Word] 與 [!DNL Google Docs]整合。
 tags: AEM Assets, Edge Delivery Services, Dynamic Media, Dynamic Media with OpenAPI capabilities, Universal Editor, Edge Delivery Services with Universal Editor
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: fecaefbb6a02e944be38c3dfaa3baea5691219cd
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
 workflow-type: tm+mt
 source-wordcount: '671'
 ht-degree: 6%
@@ -113,11 +113,11 @@ ht-degree: 6%
 
 ## 範例[!DNL Edge Delivery Services]網站{#dynamic-media-with-google-docs-and-ms-word}
 
-請參閱[WKND Travel](http://bit.ly/3DExLnf)，這是使用[!DNL Edge Delivery Services]的檔案式撰寫功能建置的網站。 網站內容是在[Google Docs](https://drive.google.com/drive/folders/1HCCHRWp4HJIXW_cUv5cRDQ5DzzqiZsXT)中撰寫，而使用[!DNL Dynamic Media with OpenAPI capabilities]傳遞內容中的資產。 完成製作後，內容會直接從檔案發佈。 探索此[Git存放庫](https://github.com/hlxsites/franklin-assets-selector/tree/aem-dynamicmedia-demo/blocks)，瞭解用來建立此[!DNL Edge Delivery Services (EDS)]網站檔案式撰寫設定的所有基本檔案、資料夾、設定、網站樣式和功能程式碼。
+請參閱[WKND Travel](https://aem-dynamicmedia-demo--dm--hlxsites.aem.live/travel-hospitality/wknd-trvl-home)，這是使用[!DNL Edge Delivery Services]的檔案式撰寫功能建置的網站。 網站內容是在[Google Docs](https://drive.google.com/drive/folders/1HCCHRWp4HJIXW_cUv5cRDQ5DzzqiZsXT)中撰寫，而使用[!DNL Dynamic Media with OpenAPI capabilities]傳遞內容中的資產。 完成製作後，內容會直接從檔案發佈。 探索此[Git存放庫](https://github.com/hlxsites/franklin-assets-selector/tree/aem-dynamicmedia-demo/blocks)，瞭解用來建立此[!DNL Edge Delivery Services (EDS)]網站檔案式撰寫設定的所有基本檔案、資料夾、設定、網站樣式和功能程式碼。
 
 ## 正在整合[!DNL AEM Assets]與[!DNL Edge Delivery Services]的[!DNL Universal Editor]式編寫流程 {#integrate-aem-assets-with-universal-editor-UE}
 
 設定[!DNL Universal Editor]以與[!DNL AEM Assets]整合。 此整合可讓您使用[!DNL Dynamic Media with OpenAPI capabilities]傳遞資產。
 
-* 檢視 [!DNL Edge Delivery] 網站[&#128279;](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#configuration-in-edge-delivery-site)中的設定，瞭解如何在[!DNL Universal Editor]中新增自訂資產選擇器函式。 自訂資產選擇器可讓您將資產直接插入到[!DNL Universal Editor]內容。
+* 檢視 [!DNL Edge Delivery] 網站](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#configuration-in-edge-delivery-site)中的[設定，瞭解如何在[!DNL Universal Editor]中新增自訂資產選擇器函式。 自訂資產選擇器可讓您將資產直接插入到[!DNL Universal Editor]內容。
 * 請參閱[擴充功能概觀](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview)以瞭解如何在[!DNL Universal Editor]中撰寫時存取[!DNL AEM Assets]和插入資產。

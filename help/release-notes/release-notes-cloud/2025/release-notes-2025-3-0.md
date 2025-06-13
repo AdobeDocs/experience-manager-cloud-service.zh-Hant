@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.3.0 版�
 feature: Release Information
 role: Admin
 exl-id: b9353092-88a0-477c-85f4-f916a4b8ba8f
-source-git-commit: 420b02e8398a433d0ff93ed0f60e01560ae786b8
+source-git-commit: 81e5cfd699fee811fc2b072e3b65e9d463a338b2
 workflow-type: tm+mt
-source-wordcount: '1123'
-ht-degree: 100%
+source-wordcount: '1122'
+ht-degree: 99%
 
 ---
 
@@ -126,7 +126,7 @@ AEM Forms 搶先體驗計劃為您提供獨一無二的機會，獲得先進創�
 
 * [Sites 內容片段 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
 * [Assets API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)
-* [Sites 和資產資料夾 API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/folders/)
+* Sites與Assets資料夾API
 * [Forms Communications API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
 
 ### 全新 AEM Developer Console (公共 Beta 版) {#aem-developer-console-beta}

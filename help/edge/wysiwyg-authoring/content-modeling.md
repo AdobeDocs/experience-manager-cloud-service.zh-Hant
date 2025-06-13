@@ -7,10 +7,10 @@ role: Admin, Architect, Developer
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: 17c14a78c2cfa262e25c6196fa73c6c4b17e200a
-workflow-type: ht
-source-wordcount: '2195'
-ht-degree: 100%
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -645,8 +645,3 @@ AEM 中提供的許多預設頁面屬性都會對應到文件中各別的頁面�
 請參閱文件：[建立經檢測適用通用編輯器的區塊](/help/edge/wysiwyg-authoring/create-block.md)，了解如何在使用 Edge Delivery Services 專案的所見即所得製作中建立經檢測適用通用編輯器的區塊。
 
 如果您已經熟悉如何建立區塊，請參閱文件：[使用 Edge Delivery Services 進行所見即所得製作的開發人員快速入門手冊](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)，協助您快速開始使用新的 Adobe Experience Manager 網站，使用 Edge Delivery Services 和通用編輯器進行內容製作。
-
->[!TIP]
->
->如需建立新的 Edge Delivery Services 專案的端對端操作示範，該專案支援使用 AEM as a Cloud Service 作為內容來源進行所見即所得製作，請觀看[此 AEM GEM 網路研討會](https://experienceleague.adobe.com/zh-hant/docs/events/experience-manager-gems-recordings/gems2024/wysiwyg-authoring-and-edge-delivery)。
-
