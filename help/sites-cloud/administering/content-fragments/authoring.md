@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
+source-git-commit: e9491b732556cc018f24ac7e7e2040c26b330dc0
 workflow-type: tm+mt
-source-wordcount: '2817'
+source-wordcount: '2824'
 ht-degree: 5%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 5%
 
 >[!WARNING]
 >
->本節中說明的編輯器&#x200B;*僅*&#x200B;可在&#x200B;*線上* Adobe Experience Manager (AEM) as a Cloud Service中使用。
+>本節中說明的編輯器&#x200B;*僅*&#x200B;可在[Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md)中使用；因此&#x200B;*線上* Adobe Experience Manager (AEM) as a Cloud Service，而不是本機執行個體。
 
 ## 內容片段編輯器 {#content-fragment-editor}
 
@@ -178,7 +178,7 @@ ht-degree: 5%
 
     >[！NOTE]
     >
-    >您無法刪除&#x200B;**Main**.
+    >您無法刪除**Main**.
 
 1. 選取變數。
 
@@ -267,7 +267,7 @@ ht-degree: 5%
 
   >[!CAUTION]
   >
-  >同步僅可用於將變更&#x200B;*從&#x200B;**Main**&#x200B;複製到變數*。
+  >同步僅可用於將變更&#x200B;*從&#x200B;**Main**複製到變數*。
   >
   >將變更&#x200B;*從變化傳輸至&#x200B;**主要***不提供選項。
 
@@ -493,7 +493,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->這些註解在原始編輯器[&#128279;](/help/assets/content-fragments/content-fragments-managing.md#annotating-a-content-fragment)中不會顯示為註解，在Assets主控台的[時間軸](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)中也不會顯示。
+>這些註解在原始編輯器](/help/assets/content-fragments/content-fragments-managing.md#annotating-a-content-fragment)中不會顯示為[註解，在Assets主控台的[時間軸](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)中也不會顯示。
 
 ## 預覽您的片段 {#preview-content-fragment}
 
@@ -502,7 +502,7 @@ ht-degree: 5%
 若要使用此功能，您首先需要：
 
 * 與您的IT團隊合作，設定外部前端應用程式，該應用程式會透過使用其JSON輸出來呈現內容片段。
-* 設定外部前端應用程式時，**預設預覽URL模式**&#x200B;必須定義為適當內容片段模式[&#128279;](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#model-properties)的屬性。
+* 設定外部前端應用程式時，**預設預覽URL模式**&#x200B;必須定義為適當內容片段模式](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#model-properties)的[屬性。
 
 定義URL後，**預覽**&#x200B;按鈕會啟用。 您可以選取此按鈕來啟動外部應用程式（在單獨的索引標籤中）以呈現內容片段。
 

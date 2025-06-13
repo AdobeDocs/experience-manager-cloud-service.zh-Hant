@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: 3950df27533bf545d33da39a9f5fe9819820134a
+source-git-commit: e9491b732556cc018f24ac7e7e2040c26b330dc0
 workflow-type: tm+mt
-source-wordcount: '1987'
+source-wordcount: '2014'
 ht-degree: 4%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 4%
 # 使用內容片段的概觀 {#overview-working-with-content-fragments}
 
 透過Adobe Experience Manager (AEM) as a Cloud Service，內容片段可讓您設計、建立、管理和發佈獨立於頁面的內容。 它們可讓您準備內容以用於多個位置及多個管道，非常適合[Headless傳遞](/help/headless/what-is-headless.md)及[頁面製作](/help/sites-cloud/authoring/fragments/content-fragments.md)。
+
+>[!IMPORTANT]
+>
+>本節中說明的許多功能&#x200B;*僅*&#x200B;可在[Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md)中使用；因此&#x200B;*線上* Adobe Experience Manager (AEM) as a Cloud Service，而不是本機執行個體。
 
 >[!IMPORTANT]
 >
@@ -53,7 +57,7 @@ ht-degree: 4%
 使用AEM核心元件的Sling模型(JSON)匯出功能，內容片段也可以以JSON格式傳送。 此傳遞形式：
 
 * 可讓您使用元件來管理要傳送片段的哪些元素
-* 允許大量傳送；方法是在用於API傳送的頁面上新增多個[內容片段核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=zh-Hant)
+* 允許大量傳送；方法是在用於API傳送的頁面上新增多個[內容片段核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)
 
 通訊管道的數量每年都在增加。 通常，管道是指傳遞機制，例如：
 
@@ -81,7 +85,7 @@ ht-degree: 4%
 >
 >體驗片段可以包含內容片段形式的內容，反之則不行。
 >
->如需進一步資訊，請參閱[瞭解AEM中的內容片段和體驗片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=zh-Hant#content-fragments)。
+>如需進一步資訊，請參閱[瞭解AEM中的內容片段和體驗片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments)。
 
 本頁和下列頁面涵蓋建立、設定、維護及使用內容片段的任務：
 
@@ -179,9 +183,9 @@ AEM內容片段可用於說明和管理結構化內容。 結構化內容在可�
 
 * 可使用[AEM GraphQL API](/help/headless/graphql-api/content-fragments.md)進行內容傳送。
 
-* 使用內容片段元件[&#128279;](/help/sites-cloud/authoring/fragments/content-fragments.md) （參考元件）可在頁面編輯器中取得：
+* 使用內容片段元件](/help/sites-cloud/authoring/fragments/content-fragments.md) （參考元件）可在[頁面編輯器中取得：
 
-   * [內容片段核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=zh-Hant)可供頁面作者使用。 它可讓他們以HTML或JSON格式參考及傳送所需的內容片段。
+   * [內容片段核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)可供頁面作者使用。 它可讓他們以HTML或JSON格式參考及傳送所需的內容片段。
 
 內容片段是內容結構，具備以下功能：
 
@@ -241,8 +245,8 @@ Assets可以透過數個方式與內容片段搭配使用；各有其優點：
 
 * **內容模型**
 
-   * 是否使用組態瀏覽器[&#128279;](/help/sites-cloud/administering/content-fragments/setup.md)啟用。
-   * 是使用內容片段主控台[&#128279;](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#creating-a-content-fragment-model)建立的。
+   * 是否使用組態瀏覽器](/help/sites-cloud/administering/content-fragments/setup.md)啟用[。
+   * 是使用內容片段主控台](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#creating-a-content-fragment-model)建立的[。
    * 需要[建立片段](/help/sites-cloud/administering/content-fragments/managing.md#creating-content-fragments)。
    * 定義片段的結構（標題、內容元素、標籤定義）。
    * 內容片段模型定義需要標題和一個資料元素，其他內容都是選用的。
@@ -268,7 +272,7 @@ Assets可以透過數個方式與內容片段搭配使用；各有其優點：
    * 負責片段的佈局和傳遞；例如管道。
    * 片段需要一或多個專用元件來定義版面並傳遞部分或全部元素/變數和關聯內容。
    * 在製作中將片段拖曳到頁面上會自動建立所需元件的關聯。
-   * 檢視[內容片段核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=zh-Hant)。
+   * 檢視[內容片段核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)。
 
 ## 內容片段主控台 {#content-fragments-console}
 
