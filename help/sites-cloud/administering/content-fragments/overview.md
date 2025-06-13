@@ -183,7 +183,7 @@ AEM內容片段可用於說明和管理結構化內容。 結構化內容在可�
 
 * 可使用[AEM GraphQL API](/help/headless/graphql-api/content-fragments.md)進行內容傳送。
 
-* 使用內容片段元件](/help/sites-cloud/authoring/fragments/content-fragments.md) （參考元件）可在[頁面編輯器中取得：
+* 使用內容片段元件[&#128279;](/help/sites-cloud/authoring/fragments/content-fragments.md) （參考元件）可在頁面編輯器中取得：
 
    * [內容片段核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)可供頁面作者使用。 它可讓他們以HTML或JSON格式參考及傳送所需的內容片段。
 
@@ -245,8 +245,8 @@ Assets可以透過數個方式與內容片段搭配使用；各有其優點：
 
 * **內容模型**
 
-   * 是否使用組態瀏覽器](/help/sites-cloud/administering/content-fragments/setup.md)啟用[。
-   * 是使用內容片段主控台](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#creating-a-content-fragment-model)建立的[。
+   * 是否使用組態瀏覽器[&#128279;](/help/sites-cloud/administering/content-fragments/setup.md)啟用。
+   * 是使用內容片段主控台[&#128279;](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#creating-a-content-fragment-model)建立的。
    * 需要[建立片段](/help/sites-cloud/administering/content-fragments/managing.md#creating-content-fragments)。
    * 定義片段的結構（標題、內容元素、標籤定義）。
    * 內容片段模型定義需要標題和一個資料元素，其他內容都是選用的。
