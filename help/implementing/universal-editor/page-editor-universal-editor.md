@@ -4,9 +4,9 @@ description: Adobe仍支援頁面編輯器，但通用編輯器為您的新專�
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
-source-git-commit: f21e21b0f7239ec9112d65b94b372344c4a07566
+source-git-commit: 9da4c90c56b7a82a41604173100ad6503a4a06d0
 workflow-type: tm+mt
-source-wordcount: '1065'
+source-wordcount: '1069'
 ht-degree: 3%
 
 ---
@@ -40,7 +40,7 @@ Adobe認可[頁面編輯器](/help/sites-cloud/authoring/page-editor/introductio
 
 |  | 頁面編輯器 | 備註 | 通用編輯器 | 備註 |
 |---|---|---|---|---|
-| [傳統AEM傳遞](/help/sites-cloud/authoring/author-publish.md) | [!BADGE 可用]{type=Positive} | 建議與核心元件搭配使用 | [!BADGE 無法使用]{type=Negative} | 傳統AEM頁面通常依賴幾個頁面編輯器特定功能，這些功能很難按照通用編輯器的方式進行複製。 |
+| [發佈傳遞](/help/sites-cloud/authoring/author-publish.md) | [!BADGE 可用]{type=Positive} | 建議與核心元件和傳統AEM專案搭配使用 | [!BADGE 無法使用]{type=Negative} | 傳統的AEM頁面通常依賴幾個頁面編輯器特定的功能，這些功能很難按照使用通用編輯器的方式複製。 |
 | [Edge Delivery](/help/edge/overview.md) | [!BADGE 無法使用]{type=Negative} |  | [!BADGE 可用]{type=Positive} |  |
 | [Headless傳遞](/help/headless/introduction.md) | [!BADGE 部分可用]{type=Caution} | 只有[SPA Editor，](/help/implementing/developing/hybrid/introduction.md)已[棄用](/help/implementing/developing/hybrid/spa-editor-deprecation.md)，而改用通用編輯器 | [!BADGE 可用]{type=Positive} | Universal Editor可讓開發人員自備Web應用程式，而不需要強制實施任何特定框架要求或實施限制。 |
 
@@ -67,7 +67,7 @@ Adobe認可[頁面編輯器](/help/sites-cloud/authoring/page-editor/introductio
 | 發佈（也用於預覽） | [!BADGE 可用]{type=Positive} |  | [!BADGE 可用]{type=Positive} |  |
 | [開始工作流程](/help/sites-cloud/authoring/workflows/overview.md) | [!BADGE 可用]{type=Positive} |  | [!BADGE 可用]{type=Positive} | 可作為擴充功能使用 |
 | 註解 | [!BADGE 可用]{type=Positive} | 使用[註解](/help/sites-cloud/authoring/page-editor/annotations.md) | [!BADGE 無法使用]{type=Negative} | 已計劃 |
-| Workfront整合 | [!BADGE 無法使用]{type=Negative} |  | [!BADGE 可用]{type=Positive} | 可作為擴充功能使用 |
+| Workfront 整合 | [!BADGE 無法使用]{type=Negative} |  | [!BADGE 可用]{type=Positive} | 可作為擴充功能使用 |
 | [MSM和啟動](/help/sites-cloud/administering/msm-and-translation.md) | [!BADGE 可用]{type=Positive} |  | [!BADGE 可用]{type=Positive} | 可作為擴充功能用於頁面 |
 | 實驗與個人化 | [!BADGE 可用]{type=Positive} | 使用[目標模式](/help/sites-cloud/authoring/personalization/targeted-content.md) | [!BADGE 可用]{type=Positive} | 可作為Edge Delivery Services的擴充功能使用 |
 | 內容樹 | [!BADGE 可用]{type=Positive} |  | [!BADGE 可用]{type=Positive} | 也允許在樹狀結構中重新排序 |
@@ -80,7 +80,7 @@ Adobe認可[頁面編輯器](/help/sites-cloud/authoring/page-editor/introductio
 | [TimeWarp](/help/sites-cloud/authoring/sites-console/page-versions.md#timewarp)和[差異檢視](/help/sites-cloud/authoring/sites-console/page-diff.md) | [!BADGE 可用]{type=Positive} |  | [!BADGE 無法使用]{type=Negative} | 已計劃 |
 | 在管理員中檢視 | [!BADGE 可用]{type=Positive} |  | [!BADGE 可用]{type=Positive} | 可作為頁面擴充功能使用 |
 | 檢視頁面狀態 | [!BADGE 可用]{type=Positive} |  | [!BADGE 無法使用]{type=Negative} | 可在Sites主控台中使用 |
-| 擴充性 | [!BADGE 可用]{type=Positive} | 作為AEM覆蓋圖 | [!BADGE 可用]{type=Positive} | 使用App Builder定義清晰的擴充功能點，且AEM的特定知識非常少 |
+| 擴展性 | [!BADGE 可用]{type=Positive} | 作為AEM覆蓋圖 | [!BADGE 可用]{type=Positive} | 使用App Builder定義清晰的擴充功能點，且AEM的特定知識非常少 |
 
 ## 採用通用編輯器 {#adopt-ue}
 
@@ -103,6 +103,6 @@ Universal Editor具備許多優點，是新專案的絕佳解決方案。
    * 這會影響對話方塊的許多區域，例如自訂Widget、欄位驗證、顯示/隱藏規則，以及範本型自訂。
       * 雖然仍可使用這些功能，但通用編輯器會透過設定解決它們，而不是透過對話方塊部署的自訂JavaScript。
 
-雖然通用編輯器在技術上可以啟用傳統AEM頁面的編輯（例如使用核心元件建置），但這些網站通常需依賴數個頁面編輯器特定功能，例如樣式系統、回應式格線、可編輯範本和對話方塊中的自訂Javascript。
+雖然通用編輯器在技術上可以為傳統的AEM專案啟用編輯頁面（例如使用核心元件建置），但這些網站通常需要依賴幾個頁面編輯器特定功能，例如樣式系統、回應式格線、可編輯範本和對話方塊中的自訂Javascript。
 
 由於Universal Editor採用更精簡的現代方法，不支援這些舊版功能，因此移轉這類網站將需要大量重構。 因此，只建議將專案轉換為Edge Delivery Services時，**將頁面編輯器網站移轉至Universal Editor。**
