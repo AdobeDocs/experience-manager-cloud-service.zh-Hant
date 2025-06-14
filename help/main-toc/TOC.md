@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: c31b7afe4e563bd0de7aa481f6a90cd8eada0f1e
+source-git-commit: db545a7bef1b23caf735445abb7efab42d307913
 workflow-type: tm+mt
-source-wordcount: '6239'
+source-wordcount: '6253'
 ht-degree: 99%
 
 ---
@@ -261,7 +261,7 @@ ht-degree: 99%
    + [Sling Service 使用者對應和服務使用者定義的最佳做法](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
    + [Adobe as a Cloud Service 的客戶自控金鑰](/help/security/customer-managed-keys.md)
 + 上線 {#onboarding}
-   + [從這裡開始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=zh-Hant)
+   + [從這裡開始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
    + 上線歷程 {#journey}
       + [上線歷程概觀](/help/journey-onboarding/overview.md)
       + [上線準備](/help/journey-onboarding/preparation.md)
@@ -408,7 +408,7 @@ ht-degree: 99%
          + [管理專案](/help/sites-cloud/authoring/projects/managing.md)
          + [使用任務](/help/sites-cloud/authoring/projects/tasks.md)
          + [使用專案工作流程](/help/sites-cloud/authoring/projects/workflows.md)
-      + 頁面啟動次數 {#launches-for-pages}
+      + 頁面啟動 {#launches-for-pages}
          + [使用啟動](/help/sites-cloud/authoring/launches/overview.md)
          + [建立啟動 ](/help/sites-cloud/authoring/launches/creating.md)
          + [管理啟動中的頁面](/help/sites-cloud/authoring/launches/managing-pages.md)
@@ -514,7 +514,6 @@ ht-degree: 99%
    + [啟用 Assets as a Cloud Service Ultimate](/help/assets/enable-assets-ultimate.md)
    + [Assets as a Cloud Service Prime](/help/assets/assets-prime.md)
    + [Assets 協作者使用者](/help/assets/assets-collaborator-users.md)
-   + [為 Edge Delivery Services 編寫內容時，將 AEM Assets 進行整合](/help/assets/integrate-aem-assets-edge-delivery-services.md)
    + 管理數位資產 {#manage}
       + 微前端資產選擇器 {#asset-selector}
          + [資產選擇器概觀](/help/assets/overview-asset-selector.md)
@@ -699,7 +698,7 @@ ht-degree: 99%
       + [核准 Content Hub 的資產](/help/assets/approve-assets-content-hub.md)
       + [在 Content Hub 中搜尋資產](/help/assets/search-assets-content-hub.md)
       + [資產屬性](/help/assets/asset-properties-content-hub.md)
-      + [以屬性為基礎的存取控制](/help/assets/attribute-based-access-control.md)
+      + [屬性型存取控制](/help/assets/attribute-based-access-control.md)
       + [在 Content Hub 中分享資產](/help/assets/share-assets-content-hub.md)
       + [使用 Content Hub 下載資產](/help/assets/download-assets-content-hub.md)
       + [管理 Content Hub 上的已授權資產](/help/assets/manage-licensed-assets-on-content-hub.md)
@@ -710,6 +709,9 @@ ht-degree: 99%
    + 最佳做法{#best-practices}
       + [搜尋最佳做法](/help/assets/search-best-practices.md)
       + [中繼資料管理和最佳做法](/help/assets/metadata-best-practices.md)
+
+   + 與Figma整合 {#integration-figma}
+      + [與Figma原生整合](/help/assets/Integrate-aem-assets-with-figma.md)
    + 與 Adobe Workfront 整合 {#integrations}
       + [與  [!DNL Adobe Workfront] 整合](/help/assets/workfront-integrations.md)
       + [設定資產中繼資料對應](/help/assets/configure-asset-metadata-mapping.md)
@@ -721,6 +723,8 @@ ht-degree: 99%
       + [與 Adobe Express 原生整合](/help/assets/native-integration-adobe-express.md)
    + 與 Creative Cloud 整合 {#integration-creative-cloud}
       + [將 AEM Assets 連結到 Creative Cloud](/help/assets/connect-assets-with-creative-cloud.md)
+   + 將AEM Assets與Edge Delivery Services整合 {#integrate-aem-assets-edge-delivery-services}
+      + 為AEM Assets編寫內容時[整合Edge Delivery Services](/help/assets/integrate-aem-assets-edge-delivery-services.md)
 + Forms {#forms}
    + 概觀 {#forms-overview}
       + [簡介](/help/forms/home.md)
@@ -996,14 +1000,14 @@ ht-degree: 99%
          + [快取選項](/help/commerce-cloud/configuring/caching.md)
          + [自訂 HTTP 標頭](/help/commerce-cloud/configuring/custom-http-headers.md)
          + [購物車和 Dispatcher 設定](/help/commerce-cloud/configuring/shopping-cart-dispatcher.md)
-         + [元件和GraphQL清除快取](/help/commerce-cloud/configuring/clear-cache.md)
+         + [元件和 GraphQL 清除快取](/help/commerce-cloud/configuring/clear-cache.md)
       + 開發 {#developing}
          + [利用 AEM Cloud Service SDK 進行開發 ](/help/commerce-cloud/develop.md)
          + [設定 CIF 元件樣式](/help/commerce-cloud/customizing/style-cif-component.md)
          + [自訂 CIF 元件](/help/commerce-cloud/customizing/customize-cif-components.md)
          + [使用 CIF 目錄選擇器](/help/commerce-cloud/customizing/use-cif-pickers.md)
          + [CIF 產品輪播的自訂屬性](/help/commerce-cloud/customizing/product-carousel.md)
-         + [JSON-LD中繼資料](/help/commerce-cloud/customizing/json-ld.md)
+         + [JSON-LD 中繼資料](/help/commerce-cloud/customizing/json-ld.md)
    + [Adobe Commerce PWA Studio](/help/commerce-cloud/pwa-studio/getting-started.md)
    + [移轉](/help/commerce-cloud/migration.md)
    + [常見問題集](/help/commerce-cloud/faq.md)
@@ -1100,7 +1104,7 @@ ht-degree: 99%
 + Headless {#headless}
    + [什麼是 Headless CMS？](/help/headless/what-is-headless.md)
    + [AEM Headless 簡介](/help/headless/introduction.md)
-   + [開發人員入口網站 (其他資源)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hant)
+   + [開發人員入口網站 (其他資源)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
    + [最佳做法 - 設定和使用](/help/headless/best-practices-setup-use.md)
    + 設定 {#setup}
       + [簡介](/help/headless/setup/introduction.md)
