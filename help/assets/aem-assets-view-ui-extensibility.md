@@ -4,9 +4,9 @@ description: 瞭解 [!DNL AEM Assets View]. [!DNL AEM Assets View] UI的UI擴充
 feature: App Builder
 role: User, Developer
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: 50477660e50db13cd279a56a1f1b3ddc118a0aad
+source-git-commit: a03e6cf842f95f8799f23ed5c7e3b563b092b4e5
 workflow-type: tm+mt
-source-wordcount: '633'
+source-wordcount: '641'
 ht-degree: 6%
 
 ---
@@ -63,7 +63,7 @@ ht-degree: 6%
 
 ## 在[!DNL Assets View]中檢視UI延伸模組 {#ui-extensibility-panel-assets-view}
 
-在[!DNL Assets View]內，導覽至資產、資料夾或集合的&#x200B;**[!UICONTROL 詳細資料]**&#x200B;頁面。 **[!UICONTROL 詳細資料]**&#x200B;頁面會在專用面板上顯示新增的UI擴充功能。
+在[!DNL Assets View]內，導覽至資產、資料夾或集合的&#x200B;**[!UICONTROL 詳細資料]**&#x200B;頁面。 **[!UICONTROL 詳細資料]**頁面會在專用面板上顯示新增的UI擴充功能。
 ![我的工作區](/help/assets/assets/my-workspace-assets-view3.png)
 
 ## 新增擴充性元件的先決條件{#assets-view-ui-extensibility}
@@ -73,7 +73,7 @@ ht-degree: 6%
 * [存取 [!DNL Assets View]](#1)。
 * 存取[[!DNL Adobe app builder]](https://developer.adobe.com/app-builder/docs/overview/)。
 * 組織內系統管理員角色的開發人員權益。 如需詳細資訊，請參閱[此檔案](https://developer.adobe.com/uix/docs/guides/get-access/)。
-* [!DNL Adobe IO command line tool (AIO CLI)]已安裝在您的本機電腦上。 此工具對於建立和部署擴充功能專案至關重要。 如需詳細資訊，請參閱[此檔案](https://developer.adobe.com/app-builder/docs/getting_started/#local-environment-set-up)。
+* [!DNL Adobe IO command line tool (AIO CLI)]已安裝在您的本機電腦上。 此工具對於建立和部署擴充功能專案至關重要。 如需詳細資訊，請參閱[建立您的第一個App Builder應用程式](https://developer.adobe.com/app-builder/docs/get_started/app_builder_get_started/first-app#local-environment-set-up) （存取需要驗證）。
 * 充分瞭解[!DNL JavaScript]、[!DNL Node.js]和[!DNL React]技術。
 
 ## 將UI擴充性元件新增至[!DNL Assets View] {#ui-extensibility-in-assets-view}
@@ -83,7 +83,7 @@ ht-degree: 6%
 1. 請參閱[建立擴充功能的常見概念](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/commons/)，瞭解為[!DNL AEM Assets View]開發UI擴充功能所需的基礎知識。
 1. 將自訂側面板新增至[!DNL Assets View]介面。 主機應用程式([!DNL Assets View])管理這些面板，以處理UI互動，例如切換和深層連結。 擴充功能使用`aem/assets/details/1`擴充功能點來整合指定屬性的自訂面板，例如面板ID、標題及內容URL。 開發人員使用`getPanels()`方法註冊自訂面板，並建立顯示自訂內容的路由。 如需詳細實作，包括API參考和程式碼範例，請參閱[詳細資料檢視](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/details-view/)。
 1. 設定您的本機環境並建立您的第一個UI擴充功能，以親身體驗在[!DNL Assets View]中開發UI擴充功能的程式。 如需詳細資訊，請參閱[逐步的AEM Assets檢視擴充功能開發](https://developer.adobe.com/uix/docs/services/aem-assets-view/extension-development/)。
-1. 使用AIO CLI設定您的應用程式，以產生基本擴充功能結構和必要的程式碼。 如需詳細資訊，請參閱 [!DNL AEM Assets View][&#128279;](https://developer.adobe.com/uix/docs/services/aem-assets-view/code-generation/)的程式碼產生。
+1. 使用AIO CLI設定您的應用程式，以產生基本擴充功能結構和必要的程式碼。 如需詳細資訊，請參閱 [!DNL AEM Assets View]](https://developer.adobe.com/uix/docs/services/aem-assets-view/code-generation/)的[程式碼產生。
 1. 在本機測試您的擴充功能，確保它們在部署前可如預期般運作。 在完全隔離的環境中執行您的擴充功能或執行部分隔離的擴充功能，並將您的擴充功能連線到生產[!DNL AEM Assets View]以進行測試。 如需詳細資訊，請參閱[疑難排解 —  [!DNL AEM Assets View] 擴充性](https://developer.adobe.com/uix/docs/services/aem-assets-view/debug/)。
 
 ## 在Assets檢視中自訂快速動作和動作列 {#customize-quick-actions-and-actions-bar}
