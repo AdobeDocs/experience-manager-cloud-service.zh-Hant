@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: db545a7bef1b23caf735445abb7efab42d307913
+source-git-commit: 3130a6fa8a8b244707f6578034ab274f6038ced6
 workflow-type: tm+mt
-source-wordcount: '6253'
+source-wordcount: '6263'
 ht-degree: 99%
 
 ---
@@ -261,7 +261,7 @@ ht-degree: 99%
    + [Sling Service 使用者對應和服務使用者定義的最佳做法](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
    + [Adobe as a Cloud Service 的客戶自控金鑰](/help/security/customer-managed-keys.md)
 + 上線 {#onboarding}
-   + [從這裡開始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=zh-Hant)
+   + [從這裡開始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
    + 上線歷程 {#journey}
       + [上線歷程概觀](/help/journey-onboarding/overview.md)
       + [上線準備](/help/journey-onboarding/preparation.md)
@@ -724,7 +724,7 @@ ht-degree: 99%
    + 與 Creative Cloud 整合 {#integration-creative-cloud}
       + [將 AEM Assets 連結到 Creative Cloud](/help/assets/connect-assets-with-creative-cloud.md)
    + 將AEM Assets與Edge Delivery Services整合 {#integrate-aem-assets-edge-delivery-services}
-      + [為AEM Assets編寫內容時整合Edge Delivery Services](/help/assets/integrate-aem-assets-edge-delivery-services.md)
+      + 為AEM Assets編寫內容時[整合Edge Delivery Services](/help/assets/integrate-aem-assets-edge-delivery-services.md)
 + Forms {#forms}
    + 概觀 {#forms-overview}
       + [簡介](/help/forms/home.md)
@@ -1073,7 +1073,8 @@ ht-degree: 99%
          + [如何發佈及部署表單：通用編輯器發佈指南](/help/edge/docs/forms/universal-editor/publish-forms.md)
          + [建置自訂表單元件：通用編輯器開發人員指南](/help/edge/docs/forms/universal-editor/create-custom-component.md)
          + [表單資料模型整合：整合表單與表單資料模型](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
-         + [可重複使用、模組化和獨立的片段：在表單中建立及使用表單片段](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)
+         + [可重複使用、模組化和獨立區段：在表單中建立和使用表單片段](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)
+         + [疑難排解Edge Delivery Services表單提交中的403禁止錯誤](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)
       + 文件型編寫 {#getting-started-edge-delivery-services-forms}
          + [建置第一份表單：使用 Google Sheets 和 Excel 的快速入門指南](/help/edge/docs/forms/tutorial.md)
          + [如何使用 Google Sheets 或 Excel 建立表單：逐步操作指南](/help/edge/docs/forms/create-forms.md)
@@ -1104,7 +1105,7 @@ ht-degree: 99%
 + Headless {#headless}
    + [什麼是 Headless CMS？](/help/headless/what-is-headless.md)
    + [AEM Headless 簡介](/help/headless/introduction.md)
-   + [開發人員入口網站 (其他資源)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hant)
+   + [開發人員入口網站 (其他資源)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
    + [最佳做法 - 設定和使用](/help/headless/best-practices-setup-use.md)
    + 設定 {#setup}
       + [簡介](/help/headless/setup/introduction.md)

@@ -1,9 +1,9 @@
 ---
 title: 疑難排解Edge Delivery Services表單提交中的403禁止錯誤
 description: 瞭解如何診斷並解決從Edge Delivery Services提交表單到AEM Publish時出現403禁止的錯誤。 本指南會說明常見原因，包括CORS、Dispatcher規則和反向連結篩選問題。
-feature: Edge Delivery Services, Forms
+feature: Edge Delivery Services
 role: Admin, Developer
-source-git-commit: d3ade6ee9216b44b55d6808d8acffe83f1e263c9
+source-git-commit: 3130a6fa8a8b244707f6578034ab274f6038ced6
 workflow-type: tm+mt
 source-wordcount: '1117'
 ht-degree: 3%
@@ -186,7 +186,7 @@ Dispatcher篩選器設定範例：
 3. 嘗試表單提交
 4. 尋找CORS相關的錯誤訊息
 
-**如果出現CORS錯誤：**&#x200B;請遵循上述CORS解決方案。
+**如果出現CORS錯誤：**請遵循上述CORS解決方案。
 **如果沒有CORS錯誤：**&#x200B;請繼續執行步驟2。
 
 ### 步驟2：檢查網路標籤
@@ -197,7 +197,7 @@ Dispatcher篩選器設定範例：
 4. 檢查失敗的請求詳細資料
 5. 檢視回應標題和狀態
 
-**如果要求無法連線到伺服器：**&#x200B;可能是Dispatcher問題。
+**如果要求無法連線到伺服器：**可能是Dispatcher問題。
 **如果要求到達伺服器但失敗：**&#x200B;可能是反向連結篩選問題。
 
 ### 步驟3：檢查AEM記錄
