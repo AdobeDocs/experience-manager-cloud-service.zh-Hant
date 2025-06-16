@@ -3,9 +3,9 @@ title: Content Hub 概觀
 description: 深入了解 Content Hub、其主要優勢、如何存取，以及如何針對 Content Hub 中的選項提供意見反應。
 exl-id: c5908058-f1ad-4aaa-9e8e-c0157e107ed1
 source-git-commit: 038c1765fc27f71ce0c3046db4a9942d0e255235
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '755'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -57,7 +57,7 @@ Content Hub 作為 Experience Manager Assets as a Cloud Service 的一部分提�
 
 >[!IMPORTANT]
 >
->[Assets Ultimate](/help/assets/assets-ultimate-overview.md)和Assets as a Cloud Service包含250名Content Hub Limited使用者。 [Assets Prime](/help/assets/assets-prime.md)包含50名Content Hub Limited使用者。
+>[Assets Ultimate](/help/assets/assets-ultimate-overview.md) 和 Assets as a Cloud Service 內含 250 位 Content Hub 受限制的使用者。[Assets Prime](/help/assets/assets-prime.md) 內含 50 位 Content Hub 受限制的使用者。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463712)
 

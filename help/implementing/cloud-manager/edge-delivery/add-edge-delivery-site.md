@@ -5,9 +5,9 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
 source-git-commit: e99bec4515c79e181ce38b94b1ea327fd99d2695
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '521'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 91%
 >[!IMPORTANT]
 >
 >了解為何必須在 Cloud Manager 加入 Edge Delivery Services 網站。
->&#x200B;>請參閱[Edge Delivery Services 使用 Adobe 建議路徑的優勢](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds)。
+>>請參閱[Edge Delivery Services 使用 Adobe 建議路徑的優勢](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds)。
 
 **若要在 Cloud Manager 新增 Edge Delivery Site：**
 
@@ -40,7 +40,7 @@ ht-degree: 91%
    | 文字欄位 | 說明 |
    | - | --- |
    | 網站名稱 | 輸入您要新增之 Edge Delivery 網站的名稱。<br>此名稱會作為該網站在 Cloud Manager 中的唯一識別碼。 |
-   | Edge Delivery 來源 | 此值會指定您在Edge Delivery Services中網站內容來源的URL路徑。 它也會將Cloud Manager連結至您的即時網站。<br>URL通常包含&#x200B;*分支*、*專案*&#x200B;和&#x200B;*租使用者*，如下列範例所示（僅供說明之用）：<br>`https://main--{site}--{org}.aem.live` |
+   | Edge Delivery 來源 | 在 Edge Delivery Services 中，此值指定了您的網站內容來源的 URL 路徑。此值也會將 Cloud Manager 連結到您的上線網站。<br>該 URL 通常包括&#x200B;*分支*、*專案*&#x200B;和&#x200B;*租用戶*，如下列範例所示 (僅供參考示意)：<br>`https://main--{site}--{org}.aem.live` |
    | 網站說明 (選用) | 輸入您要新增之 Edge Delivery 網站的簡短說明。<br>說明有助於辨別和區分網站，進而更輕鬆地管理和識別您新增的其他網站。 |
 
 1. 在對話框右下角，按一下「**新增**」。
