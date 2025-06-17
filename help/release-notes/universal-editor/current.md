@@ -7,14 +7,14 @@ exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 source-git-commit: 40f3f4652dbfce9bda65b8e69c349b9a8a563469
 workflow-type: tm+mt
 source-wordcount: '135'
-ht-degree: 34%
+ht-degree: 54%
 
 ---
 
 
 # 通用編輯器 2025.05.21 發行說明 {#release-notes}
 
-以下是2025年5月21日發行的Universal Editor的發行說明。
+此為通用編輯器 2025 年 5 月 21 日版本的發行說明。
 
 >[!TIP]
 >
@@ -22,7 +22,7 @@ ht-degree: 34%
 
 ## 新增功能 {#what-is-new}
 
-* **停用開啟頁面按鈕** — 現在可以停用開啟頁面按鈕[。](/help/implementing/universal-editor/customizing.md#open-page)
+* **停用開啟頁面按鈕** - [現在可以停用](/help/implementing/universal-editor/customizing.md#open-page)開啟頁面按鈕。
 * **從內容樹狀結構存取內容** - [當您按兩下內容樹狀結構中的專案時，](/help/sites-cloud/authoring/universal-editor/navigation.md)相關的內容會自動在側面板中開啟。
 
 ## 其他改良功能 {#other-improvements}
