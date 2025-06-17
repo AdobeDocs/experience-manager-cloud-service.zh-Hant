@@ -5,9 +5,9 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
 source-git-commit: d3cdc3d69c0002c5b124150050f905123457331c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '380'
-ht-degree: 48%
+ht-degree: 100%
 
 ---
 
@@ -18,28 +18,28 @@ ht-degree: 48%
 
 ## 21193 版 {#21193}
 
-以下摘要說明維護版本21193數的持續改善，該版本於2025年6月10日公開發佈。 前一個維護版本為 21005 版。
+以下摘要說明維護版本 21193 的持續改善內容，該版本於 2025 年 6 月 10 日公開發行。前一個維護版本為版本 21005。
 
 啟用 2025.6.0 功能將可使用此維護版本的完整功能集。如需詳細資訊，請參閱 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
 ### 增強功能 {#enhancements-21193}
 
-* Assets-51245：改善觸控式UI中大型資料夾清單的效能。
-* Assets-51686：改善大量作業工作，包括更輕鬆的作業取消、增強記錄、稽核下載以獲得大型結果。
-* CQ-4360131：改善OpenAPI端點的錯誤回應，允許API使用者端接收正確的結構化錯誤資訊。
+* ASSETS-51245：提升觸控式 UI 中大型資料夾清單的效能。
+* ASSETS-51686：批次作業工作的改良功能，包括簡化工作取消流程、增強記錄功能、以及針對下載大量結果的行為進行稽核。
+* CQ-4360131：改進 OpenAPI 端點的錯誤回應，允許 API 用戶端接收正確且結構化的錯誤資訊。
 
 ### 已修正的問題 {#fixed-issues-21193}
 
-* Assets-41007：已刪除的資產仍可在Content Hub中顯示。
-* Assets-50994： AemRequestEventFilter造成過多Jetty執行緒競爭。
-* Assets-50155：觸發重複的中繼資料變更事件。
-* Assets-50716：在Assets清單檢視中依標題排序的功能未如預期運作。
-* Assets-50820：確保正確拒絕對資產關係API的無效請求，並顯示400錯誤。
-* Assets-50562：資產上傳API應根據名稱衝突的預設行為來建立版本。
-* Assets-50992： Assets API initiateUpload.json端點應傳回「application/json」內容型別。
-* Assets-51322：自動移除並到期的非同步路障，這些路障在失敗工作後會無限期保留。
-* Assets-51809：由於瀏覽器快取，CSV編輯器未顯示最近儲存的變更。
-* SITES-31678：具有內容感知參考的體驗片段(XF)未解析XF Publishing API中的正確語言根。
+* ASSETS-41007：Content Hub 中可能仍然顯示已刪除的資產。
+* ASSETS-50994：AemRequestEventFilter 導致 Jetty 執行緒過度爭奪資源。
+* ASSETS-50155：觸發重複的中繼資料變更事件。
+* ASSETS-50716：「資產清單」視圖中的標題排序功能無法如預期運作。
+* ASSETS-50820：確保正確地顯示 400 錯誤，拒絕對資產關係 API 提出的無效請求。
+* ASSETS-50562：在發生名稱衝突時，資產上傳 API 的預設行為應是建立版本。
+* ASSETS-50992：資產 API initiateUpload.json 端點應傳回「application/json」的內容類型。
+* ASSETS-51322：自動移除在工作失敗後仍無限期保留的非同步路障並使其過期。
+* ASSETS-51809：由於瀏覽器快取，CSV 編輯器未顯示最近儲存的變更。
+* SITES-31678：具有內容感知參照的體驗片段 (XF) 並未正確地解析 XF Publishing API 中的語言根目錄。
 
 
 ### 已知問題 {#known-issues-21193}
