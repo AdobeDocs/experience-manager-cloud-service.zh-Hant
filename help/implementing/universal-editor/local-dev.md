@@ -4,7 +4,7 @@ description: 瞭解如何執行您自己的Universal Editor服務，以供本機
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 300dc71969e8e1da32d4f86f0a987b7e2777ccf5
+source-git-commit: 5435f776e38abf5245c58985e747ce05443f3c2a
 workflow-type: tm+mt
 source-wordcount: '950'
 ht-degree: 36%
@@ -45,7 +45,7 @@ Universal Editor 服務綁定 Universal Editor 和後端系統。若要能夠在
 
 為此，您需要將 AEM 設定為在 HTTPS 上執行。出於開發目的，您可以使用自我簽署憑證。
 
-[請參閱此檔案](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html?lang=zh-Hant)，瞭解如何設定在HTTPS上執行的AEM，包括您可使用的自我簽署憑證。
+[請參閱此檔案](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html)，瞭解如何設定在HTTPS上執行的AEM，包括您可使用的自我簽署憑證。
 
 ## 安裝 Universal Editor 服務 {#install-ue-service}
 
@@ -53,7 +53,7 @@ Universal Editor服務並非Universal Editor的完整復本，而是其功能的
 
 需要[NodeJS版本20](https://nodejs.org/en/download/releases)才能執行通用編輯器服務的本機復本。
 
-Universal Editor服務可透過Software Distribution取得。 如需如何存取軟體的詳細資訊，請參閱[軟體發佈檔案](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hant)。
+Universal Editor服務可透過Software Distribution取得。 如需如何存取軟體的詳細資訊，請參閱[軟體發佈檔案](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)。
 
 將`universal-editor-service.cjs`檔案從Software Distribution儲存至您的本機開發環境。
 
@@ -156,7 +156,7 @@ Universal Editor 會根據頁面的偵測方式，知道要使用哪個 Universa
 
 ## 使用本機 Universal Editor 服務編輯頁面 {#editing}
 
-透過[Universal Editor Service在本機執行](#running-ue)，且您的[內容頁面已設定為使用本機服務](#using-loca-ue)，您現在可以啟動編輯器。
+透過[Universal Editor Service在本機執行](#running-ue)，且您的[內容頁面已設定為使用本機服務](/help/implementing/universal-editor/getting-started.md)，您現在可以啟動編輯器。
 
 1. 開啟您的瀏覽器，前往 `https://localhost:8000/ping`。
 1. 指示瀏覽器接受[您的自我簽署憑證](#ue-https)。
