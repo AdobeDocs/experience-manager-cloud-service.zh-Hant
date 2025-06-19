@@ -4,9 +4,9 @@ description: 設定流量篩選規則，包括 Web 應用程式防火牆 (WAF) �
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 20d4ea369676baad28c43246fe399e2e2f4b1db7
-workflow-type: ht
-source-wordcount: '4278'
+source-git-commit: 70ba91e83ce2395e748ff8bdbecfc4d4fc04250b
+workflow-type: tm+mt
+source-wordcount: '4262'
 ht-degree: 100%
 
 ---
@@ -48,8 +48,6 @@ ht-degree: 100%
 * **儀表板工具：**&#x200B;分析您的 CDN 日誌以提出新的流量篩選規則。
 * **推薦的入門規則：**&#x200B;一組可以開始使用的入門規則。
 * **教學課程：**&#x200B;有關該功能的實用知識，包括如何使用儀表板工具宣告正確的規則。
-
-Adobe 邀請您透過傳送電子郵件至：**aemcs-waf-adopter@adobe.com**，以提供意見回饋或詢問有關流量篩選規則的問題。
 
 ## 流量保護概觀 {#traffic-protection-overview}
 
