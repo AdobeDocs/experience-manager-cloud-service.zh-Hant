@@ -1,17 +1,17 @@
 ---
-title: 元件和GraphQL清除快取
+title: 元件和 GraphQL 清除快取
 description: 瞭解如何在AEM CIF中啟用及驗證清除快取功能。
 feature: Commerce Integration Framework
 role: Admin
 exl-id: f89c07c7-631f-41a4-b5b9-0f629ffc36f0
-source-git-commit: 27d8b5f6f358176c828d01f2ff51886d0433017c
+source-git-commit: fb8b2645c0401d1358c7751db03a138dc2de2664
 workflow-type: tm+mt
-source-wordcount: '881'
-ht-degree: 2%
+source-wordcount: '883'
+ht-degree: 3%
 
 ---
 
-# 元件和GraphQL清除快取 {#clear-cache}
+# 元件和 GraphQL 清除快取 {#clear-cache}
 
 本檔案提供在AEM CIF中啟用及驗證清除快取功能的完整指南。
 
@@ -31,14 +31,13 @@ ht-degree: 2%
 * 啟用接聽程式，以在您的專案中新增`com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json`設定，以清除每個AEM執行個體（發佈與作者）的快取，如[這裡](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json)所示。
    * 作者和發佈執行個體皆應啟用設定。
    * 啟用Dispatcher快取（選用）：您可以透過在上述設定中將`enableDispatcherCacheInvalidation`屬性設定為true來啟用Dispatcher清除快取設定。 這提供了從Dispatcher清除快取的功能。
-
      >[!NOTE]
      >
      > 這僅適用於發佈執行個體。
 
    * 此外，請務必提供適合您的產品、類別和CMS頁面的對應模式，以便將其新增至上述設定檔案，從Dispatcher快取中移除。
 
-* 若要改善SQL查詢效能，以尋找與產品和類別相關的對應頁面，請在專案中新增對應的索引（建議）。 如需詳細資訊，請參閱[cifCacheInvalidationSupport/]&#x200B;(連結https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.apps/src/main/content/jcr_root/_oak_index/cifCacheInvalidationSupport/.content.xml)。
+* 若要改善SQL查詢效能，以尋找與產品和類別相關的對應頁面，請在專案中新增對應的索引（建議）。 如需詳細資訊，請參閱[cifCacheInvalidationSupport](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.apps/src/main/content/jcr_root/_oak_index/cifCacheInvalidationSupport/.content.xml)。
 
 ## 驗證清除快取功能 {#verify-clear-cache}
 
@@ -64,8 +63,7 @@ ht-degree: 2%
        "storePath": "/content/venia/us/en", // Mandatory : Needs to be given to know for which site we are removing the clear cache.
    }'
    ```
-
-如果一切順利，新變更會反映在每個執行個體中。 如果變更沒有反映在發佈執行個體中，請檢視私人視窗中的對應PLP和PDP頁面。
+如果一切順利，新變更會反映在每個執行個體中。 如果變更在發佈執行個體上不可見，請嘗試在私人/無痕瀏覽器視窗中存取相關的PLP和PDP頁面。
 
 >[!NOTE]
 >
@@ -81,8 +79,8 @@ ht-degree: 2%
 
 | 參數 | 值 | 必要/必要 | 評論 |
 |------------------------------|-------------------|---|---|
-| `Content-Type` | `application/json` | 必填 |  |
-| `Authorization` | 對應作者的使用者認證（驗證型別：基本驗證） | 必填 | 新增對應的使用者名稱和密碼。 |
+| `Content-Type` | `application/json` | 必要 |  |
+| `Authorization` | 對應作者的使用者認證（驗證型別：基本驗證） | 必要 | 新增對應的使用者名稱和密碼。 |
 
 
 ### 總額
