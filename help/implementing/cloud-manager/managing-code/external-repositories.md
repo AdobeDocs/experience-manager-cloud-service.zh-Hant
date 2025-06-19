@@ -5,9 +5,9 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="私人測試版" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 6ca65f5833dc26043a27945ae02aac6e29ad62d2
+source-git-commit: f51730be823782ba722a33be6da409fad14429eb
 workflow-type: tm+mt
-source-wordcount: '2292'
+source-wordcount: '2301'
 ht-degree: 28%
 
 ---
@@ -83,6 +83,9 @@ ht-degree: 28%
 
 >[!TAB GitHub Enterprise]
 
+<!-->
+https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github —>
+
 | 存取權杖選項 | 說明 |
 | --- | --- |
 | **使用現有的存取權杖** | 如果您已為組織提供存放庫存取權杖，且有權存取多個存放庫，您可以選取現有的權杖。使用&#x200B;**權杖名稱**&#x200B;下拉清單，選取想要套用至存放庫的權杖。否則，請新增新的存取權杖。 |
@@ -93,6 +96,8 @@ ht-degree: 28%
 另請參閱[管理存取權杖](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)。
 
 >[!TAB GitLab]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/gitlab -->
 
 | 存取權杖選項 | 說明 |
 | --- | --- |
@@ -105,6 +110,8 @@ ht-degree: 28%
 
 >[!TAB 位元貯體]
 
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/bitbucket -->
+
 | 存取權杖選項 | 說明 |
 | --- | --- |
 | **使用現有的存取權杖** | 如果您已為組織提供存放庫存取權杖，且有權存取多個存放庫，您可以選取現有的權杖。使用&#x200B;**權杖名稱**&#x200B;下拉清單，選取想要套用至存放庫的權杖。否則，請新增新的存取權杖。 |
@@ -115,6 +122,8 @@ ht-degree: 28%
 另請參閱[管理存取權杖](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)。
 
 >[!TAB Azure DevOps]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/azure_devops -->
 
 | 存取權杖選項 | 說明 |
 | --- | --- |
@@ -208,11 +217,16 @@ Cloud Manager可讓您為已新增的外部Git存放庫設定webhook。 請參�
 
 >[!TAB GitHub Enterprise]
 
+<!-->
+https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github —>
+
 | 必要的webhook事件 |
 | --- |
 | 這些事件可讓Cloud Manager回應GitHub活動，例如提取請求驗證、管道的推播型觸發器或Edge Delivery Services程式碼同步。<br>請確定webhook已設定為在下列必要webhook事件上觸發：<ul><li>提取請求<li>推送<li>問題註解</li></li></li></ul></ul></ul> |
 
 >[!TAB GitLab]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/gitlab -->
 
 | 必要的webhook事件 |
 | --- |
@@ -220,11 +234,15 @@ Cloud Manager可讓您為已新增的外部Git存放庫設定webhook。 請參�
 
 >[!TAB 位元貯體]
 
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/bitbucket -->
+
 | 必要的webhook事件 |
 | --- |
 | 這些事件確保Cloud Manager可以驗證提取請求、回應程式碼推送，以及與評論互動以協調管道。<br>請確定webhook已設定為在下列必要webhook事件上觸發<ul><li>提取請求：已建立<li>提取請求：已更新<li>提取請求：已合併<li>提取請求：註解<li>存放庫：推播</li></li></li></ul></ul></ul> |
 
 >[!TAB Azure DevOps]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/azure_devops -->
 
 | 必要的webhook事件 |
 | --- |
@@ -244,12 +262,17 @@ Cloud Manager可讓您為已新增的外部Git存放庫設定webhook。 請參�
 
 >[!TAB GitHub Enterprise]
 
+<!-->
+https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/github —>
+
 建立檢查時，其外觀類似下列熒幕擷圖。 與`GitHub.com`的主要差異在於`GitHub.com`使用檢查執行，而GitHub Enterprise （使用個人存取權杖）會產生認可狀態：
 
 ![認可狀態以指示GitHub Enterprise上的PR驗證程式](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-github-pr-validation.png)
 
 
 >[!TAB GitLab]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/gitlab -->
 
 GitLab互動僅依賴評論。 驗證開始時，會新增註解。 驗證完成後（無論成功還是失敗），初始註解都將被移除並替換為包含驗證結果或錯誤詳細資料的新註解。
 
@@ -271,6 +294,8 @@ GitLab互動僅依賴評論。 驗證開始時，會新增註解。 驗證完成
 
 
 >[!TAB 位元貯體]
+
+<!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/bitbucket -->
 
 程式碼品質驗證執行時：
 
