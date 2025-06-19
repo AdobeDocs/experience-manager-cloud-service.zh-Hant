@@ -6,7 +6,7 @@ solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
 source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '874'
 ht-degree: 100%
 
@@ -122,4 +122,4 @@ Cloud Manager 管理員將讓您上線成為 Cloud Manager 使用者。您應該
 
 雖然建議您檢閱文件「[自訂網站主題](customize-theme.md)」以繼續快速建立網站歷程的下一部分，但下列是一些其他選用資源，深入探究了本文件提到的一些概念，不過這些資源並非繼續該歷程的必要條件。
 
-* [Adobe Experience Manager Cloud Manager 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=zh-Hant) - 瀏覽 Cloud Manager 文件以了解其功能的完整詳細資訊。
+* [Adobe Experience Manager Cloud Manager 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) - 瀏覽 Cloud Manager 文件以了解其功能的完整詳細資訊。
