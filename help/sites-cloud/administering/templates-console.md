@@ -73,7 +73,7 @@ ht-degree: 2%
 
 ## 屬性 {#properties}
 
-您可以編輯範本](/help/sites-cloud/authoring/page-editor/templates.md)的[屬性，其方式與您[編輯頁面屬性的方式非常相同。](/help/sites-cloud/authoring/sites-console/edit-page-properties.md)範本屬性包括：
+您可以編輯範本[&#128279;](/help/sites-cloud/authoring/page-editor/templates.md)的屬性，其方式與您[編輯頁面屬性的方式非常相同。](/help/sites-cloud/authoring/sites-console/edit-page-properties.md)範本屬性包括：
 
 * 範本標題
 * 說明
@@ -95,8 +95,8 @@ ht-degree: 2%
 
 必須先啟用範本，內容作者才能使用範本建立頁面。 如果不再需要範本，則可停用該範本，使其不再顯示在頁面建立精靈中。
 
-* 選取範本，然後按一下[停用]以停用範本。****
-* 選取範本，然後按一下[啟用] ****&#x200B;以啟用範本。
+* 選取範本，然後按一下[停用]以停用範本。**&#x200B;**
+* 選取範本，然後按一下[啟用] **&#x200B;**&#x200B;以啟用範本。
 
 ## 發佈 {#publish}
 

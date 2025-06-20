@@ -59,4 +59,4 @@ ht-degree: 0%
 
 ## 從網站主控台發佈與取消發佈 {#publishing-sites-console}
 
-您也可以從Sites主控台](/help/sites-cloud/authoring/sites-console/publishing-pages.md)發佈[，當您想要發佈多個內容頁面，或排程發佈或取消發佈時，這會很有用。
+您也可以從Sites主控台[&#128279;](/help/sites-cloud/authoring/sites-console/publishing-pages.md)發佈，當您想要發佈多個內容頁面，或排程發佈或取消發佈時，這會很有用。

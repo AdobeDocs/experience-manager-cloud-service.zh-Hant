@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # 編輯頁面屬性 {#page-properties}
 
-瞭解如何編輯頁面](/help/sites-cloud/authoring/sites-console/page-properties.md)的[屬性並變更頁面的行為以及其管理方式。
+瞭解如何編輯頁面[&#128279;](/help/sites-cloud/authoring/sites-console/page-properties.md)的屬性並變更頁面的行為以及其管理方式。
 
 >[!TIP]
 >
