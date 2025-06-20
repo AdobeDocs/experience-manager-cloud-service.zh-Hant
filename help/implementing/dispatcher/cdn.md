@@ -4,10 +4,10 @@ description: 瞭解如何使用AEM管理的CDN，以及如何將您自己的CDN�
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
+source-git-commit: 62af306bbf645c4d70d0f07f95aa90e4d53e20f8
 workflow-type: tm+mt
-source-wordcount: '1729'
-ht-degree: 11%
+source-wordcount: '1744'
+ht-degree: 10%
 
 ---
 
@@ -78,10 +78,10 @@ AEM管理的CDN符合大部分客戶的效能與安全性需求。 對於發佈�
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"
->title="客戶 CDN 會指向 AEM 管理的 CDN"
+>title="客戶CDN （或Proxy）指向AEM Managed CDN"
 >abstract="AEM as Cloud Service 為客戶提供了使用其現有 CDN 的選項。對於發佈層級，客戶可以選擇從他們自己必須管理的 CDN 指向它。依不同個案可允許此情況，以滿足特定先決條件為基礎，包括但不限於客戶和他們的 CDN 供應商有一個難以放棄的舊版整合。"
 
-如果客戶必須使用其現有的CDN，則可以管理該CDN，並將其指向AEM管理的CDN，前提是符合以下條件：
+如果客戶必須使用其現有的CDN (或任何型別的反向Proxy，例如負載平衡器或WAF)，他們可以管理它並將其指向AEM管理的CDN，前提是滿足以下條件：
 
 * 客戶必須擁有現有的CDN，且必須重新安裝CDN，如此將十分麻煩。
 * 客戶必須管理它。
