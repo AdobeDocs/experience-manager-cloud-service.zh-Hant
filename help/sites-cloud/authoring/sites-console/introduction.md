@@ -5,7 +5,7 @@ exl-id: b666e62a-c3dc-4be3-8932-d5fe67b178d6
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
 workflow-type: tm+mt
 source-wordcount: '1625'
 ht-degree: 6%
@@ -185,7 +185,7 @@ AEM工具列最右邊的&#x200B;**檢視**&#x200B;圖示表示目前選取的檢
 
 ![快速動作](assets/sites-console-quick-actions.png)
 
-您可以點選/按一下卡片來向下瀏覽樹狀結構（注意避免點選快速動作），或使用標頭[&#128279;](#the-header)中的階層連結來再次向上瀏覽。
+您可以點選/按一下卡片來向下瀏覽樹狀結構（注意避免點選快速動作），或使用標頭](#the-header)中的[階層連結來再次向上瀏覽。
 
 ### 清單檢視 {#list-view}
 
@@ -193,8 +193,8 @@ AEM工具列最右邊的&#x200B;**檢視**&#x200B;圖示表示目前選取的檢
 
 ![清單檢視](assets/sites-console-list-view.png)
 
-* 您可以點選/按一下資源名稱，在樹狀結構中向下導覽，並使用標頭[&#128279;](#the-header)中的階層連結進行備份。
-* 若要輕鬆選取清單中的所有專案，請使用工具列[&#128279;](#select-all)中的&#x200B;**全選**&#x200B;核取方塊。
+* 您可以點選/按一下資源名稱，在樹狀結構中向下導覽，並使用標頭](#the-header)中的[階層連結進行備份。
+* 若要輕鬆選取清單中的所有專案，請使用工具列](#select-all)中的&#x200B;[**全選**&#x200B;核取方塊。
 
 * 使用位於[檢視]按鈕下方的&#x200B;**檢視設定**&#x200B;選項來選取要顯示的欄。 下列欄可供顯示：
 
@@ -236,13 +236,13 @@ AEM工具列最右邊的&#x200B;**檢視**&#x200B;圖示表示目前選取的檢
 
 * [**建立**](#create-action) — 建立新內容或內容相關動作
 * **編輯** — 視選取頁面的建立方式而定，**編輯**&#x200B;動作會開啟適當的編輯器。
-   * [頁面編輯器](/help/sites-cloud/authoring/page-editor/introduction.md) — 針對使用AEM頁面編輯器建立的頁面
+   * [頁面編輯器](/help/sites-cloud/authoring/page-editor/introduction.md) — 適用於使用AEM頁面編輯器建立的頁面
    * [通用編輯器](/help/sites-cloud/authoring/universal-editor/authoring.md) — 針對使用通用編輯器建立的頁面
-* [**屬性**](/help/sites-cloud/authoring/sites-console/page-properties.md) — 開啟頁面屬性視窗
+* [**屬性**](/help/sites-cloud/authoring/sites-console/edit-page-properties.md) — 開啟頁面屬性視窗
 * [**鎖定**](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page) — 鎖定頁面以防止其他人變更它
 * [**複製**](/help/sites-cloud/authoring/sites-console/managing-pages.md#copying-and-pasting-a-page) — 複製頁面
 * [**移動**](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page) — 移動或重新命名頁面
-* [**快速Publish**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#quick-publish) — 立即Publish一或多個頁面
+* [**快速發佈**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#quick-publish) — 立即發佈一或多個頁面
 * [**管理出版物**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication) — 排程要發佈的頁面
 * [**還原**](/help/sites-cloud/authoring/sites-console/page-versions.md#restore-version) — 還原頁面或頁面樹狀結構的版本
 * [**刪除**](/help/sites-cloud/authoring/sites-console/managing-pages.md#deleting-a-page) — 刪除一個或多個頁面
@@ -262,4 +262,4 @@ AEM工具列最右邊的&#x200B;**檢視**&#x200B;圖示表示目前選取的檢
 
 ## 範本
 
-在「欄檢視」或「清單檢視」中選取頁面時，您可輕鬆查看該頁 [**面所依據**](/help/sites-cloud/authoring/basic-handling.md#column-view) [**的範本**](/help/sites-cloud/authoring/basic-handling.md#list-view)。
+在「欄檢視」或「清單檢視」中選取頁面時，您可輕鬆查看該頁 [**面所依據**](/help/sites-cloud/authoring/basic-handling.md#column-view)[**的範本**](/help/sites-cloud/authoring/basic-handling.md#list-view)。

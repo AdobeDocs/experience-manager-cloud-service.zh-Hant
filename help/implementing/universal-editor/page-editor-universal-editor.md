@@ -4,7 +4,7 @@ description: Adobe仍支援頁面編輯器，但通用編輯器為您的新專�
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
-source-git-commit: 9da4c90c56b7a82a41604173100ad6503a4a06d0
+source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
 workflow-type: tm+mt
 source-wordcount: '1069'
 ht-degree: 3%
@@ -73,7 +73,7 @@ Adobe認可[頁面編輯器](/help/sites-cloud/authoring/page-editor/introductio
 | 內容樹 | [!BADGE 可用]{type=Positive} |  | [!BADGE 可用]{type=Positive} | 也允許在樹狀結構中重新排序 |
 | 裝置模擬 | [!BADGE 可用]{type=Positive} | [可模擬已設定的裝置，](/help/sites-cloud/administering/responsive-layout.md)，但使用者無法手動輸入任何要模擬的不同熒幕尺寸。 | [!BADGE 可用]{type=Positive} | [可以手動輸入任何要模擬的熒幕維度，](/help/sites-cloud/authoring/universal-editor/navigation.md#emulator)，但無法設定預設中斷點。 |
 | [頁面鎖定](/help/sites-cloud/authoring/sites-console/managing-pages.md) | [!BADGE 可用]{type=Positive} |  | [!BADGE 可用]{type=Positive} | 尊重在Sites Console中設定的鎖定狀態，其擴充功能可用於從編輯器鎖定/解鎖頁面 |
-| [頁面屬性](/help/sites-cloud/authoring/sites-console/page-properties.md) | [!BADGE 可用]{type=Positive} |  | [!BADGE 可用]{type=Positive} | 「網站管理員」可提供，擴充功能也可用來從編輯器存取頁面屬性 |
+| [頁面屬性](/help/sites-cloud/authoring/sites-console/edit-page-properties.md) | [!BADGE 可用]{type=Positive} |  | [!BADGE 可用]{type=Positive} | 「網站管理員」可提供，擴充功能也可用來從編輯器存取頁面屬性 |
 | 多欄位屬性 | [!BADGE 可用]{type=Positive} |  | [!BADGE 無法使用]{type=Negative} | 已計劃 |
 | [遠端DAM](/help/assets/dynamic-media-open-apis-overview.md) | [!BADGE 可用]{type=Positive} |  | [!BADGE 可用]{type=Positive} |  |
 | [頁面版本設定](/help/sites-cloud/authoring/sites-console/page-versions.md) | [!BADGE 可用]{type=Positive} |  | [!BADGE 可用]{type=Positive} |  |

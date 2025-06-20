@@ -5,7 +5,7 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
 workflow-type: tm+mt
 source-wordcount: '4270'
 ht-degree: 2%
@@ -46,7 +46,7 @@ Blueprint設定會識別您要當作一或多個即時副本頁面來源的現�
 
 Blueprint設定會視為不可變資料，因此在執行階段不可編輯。 因此，任何設定變更都必須使用CI/CD管道透過Git部署。
 
-如需詳細資訊，請參閱文章[Adobe Experience Manager (AEM)重大變更as a Cloud Service](/help/release-notes/aem-cloud-changes.md)。
+如需詳細資訊，請參閱文章[Adobe Experience Manager (AEM) as a Cloud Service重大變更](/help/release-notes/aem-cloud-changes.md)。
 
 下列步驟僅供管理員在本機開發執行個體上用於測試和開發目的。 這些選項在任何AEMaaCS雲端例項中均無法使用。
 
@@ -212,7 +212,7 @@ Blueprint設定會視為不可變資料，因此在執行階段不可編輯。 �
 
 ### 檢視Blueprint頁面的即時副本 {#seeing-the-live-copies-of-a-blueprint-page}
 
-Blueprint頁面（在Blueprint設定中參照）為您提供使用目前(Blueprint)頁面作為來源的即時副本頁面清單。 使用此清單來追蹤即時副本。 清單會顯示在[頁面屬性](/help/sites-cloud/authoring/sites-console/page-properties.md)的&#x200B;**Blueprint**&#x200B;標籤上。
+Blueprint頁面（在Blueprint設定中參照）為您提供使用目前(Blueprint)頁面作為來源的即時副本頁面清單。 使用此清單來追蹤即時副本。 清單會顯示在[頁面屬性的&#x200B;**Blueprint**&#x200B;標籤上。](/help/sites-cloud/authoring/sites-console/page-properties.md)
 
 ![頁面屬性的Blueprint索引標籤](../assets/live-copy-blueprint-tab.png)
 
@@ -228,7 +228,7 @@ Blueprint頁面（在Blueprint設定中參照）為您提供使用目前(Bluepri
 >
 >如果在Blueprint分支和相依即時副本分支中同時建立具有相同頁面名稱的新頁面，則可能會發生衝突。
 >
->轉出[&#128279;](rollout-conflicts.md)時需要處理和解決這類衝突。
+>轉出](rollout-conflicts.md)時需要處理和解決這類[衝突。
 
 #### 從頁面屬性轉出Blueprint {#rolling-out-a-blueprint-from-page-properties}
 
@@ -314,7 +314,7 @@ Blueprint頁面（在Blueprint設定中參照）為您提供使用目前(Bluepri
 
 #### 從即時副本概述同步即時副本 {#synchronize-a-live-copy-from-the-live-copy-overview}
 
-選取即時副本頁面時，也可從即時副本綜覽[&#128279;](live-copy-overview.md#using-the-live-copy-overview)使用同步動作。
+選取即時副本頁面時，也可從即時副本綜覽](live-copy-overview.md#using-the-live-copy-overview)使用[同步動作。
 
 1. 開啟[即時副本總覽](live-copy-overview.md#using-the-live-copy-overview)並選取即時副本頁面。
 1. 從工具列選取&#x200B;**同步處理**。
@@ -342,7 +342,7 @@ Blueprint頁面（在Blueprint設定中參照）為您提供使用目前(Bluepri
 >
 >如果在Blueprint分支和相依即時副本分支中同時建立具有相同頁面名稱的新頁面，則可能會發生衝突。
 >
->轉出[&#128279;](rollout-conflicts.md)時需要處理和解決這類衝突。
+>轉出](rollout-conflicts.md)時需要處理和解決這類[衝突。
 
 ### 將元件新增至即時副本頁面 {#adding-components-to-a-live-copy-page}
 
@@ -422,7 +422,7 @@ Blueprint頁面（在Blueprint設定中參照）為您提供使用目前(Bluepri
 
 #### 從即時副本概觀繼續即時副本頁面 {#resume-a-live-copy-page-from-the-live-copy-overview}
 
-選取即時副本頁面時，也可從即時副本綜覽[&#128279;](live-copy-overview.md#using-the-live-copy-overview)使用繼續動作。
+選取即時副本頁面時，也可從即時副本綜覽](live-copy-overview.md#using-the-live-copy-overview)使用[繼續動作。
 
 1. 開啟[即時副本總覽](live-copy-overview.md#using-the-live-copy-overview)，並選取暫停的即時副本頁面。 此頁面顯示為&#x200B;**繼承已取消**。
 1. 從工具列選取&#x200B;**繼續**。
@@ -607,7 +607,7 @@ Blueprint頁面（在Blueprint設定中參照）為您提供使用目前(Bluepri
 
 在樹狀結構中使用&#x200B;**Detach**&#x200B;的位置上會有影響：
 
-* 在即時副本的根頁面上中斷連結&#x200B;**&#x200B;**
+* 在即時副本的根頁面上中斷連結&#x200B;****
 
   在即時副本的根頁面上執行此操作時，它會移除Blueprint的所有頁面與其即時副本之間的即時關係。
 

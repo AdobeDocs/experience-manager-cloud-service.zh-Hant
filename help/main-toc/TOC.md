@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: 72f6a0597b59efd9bf17fba0ea286e14cfa5903d
+source-git-commit: ea0b204111a852a0243febbcf3f403987a6bfcc9
 workflow-type: tm+mt
-source-wordcount: '6267'
+source-wordcount: '6281'
 ht-degree: 99%
 
 ---
@@ -261,7 +261,7 @@ ht-degree: 99%
    + [Sling Service 使用者對應和服務使用者定義的最佳做法](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
    + [Adobe as a Cloud Service 的客戶自控金鑰](/help/security/customer-managed-keys.md)
 + 上線 {#onboarding}
-   + [從這裡開始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=zh-Hant)
+   + [從這裡開始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
    + 上線歷程 {#journey}
       + [上線歷程概觀](/help/journey-onboarding/overview.md)
       + [上線準備](/help/journey-onboarding/preparation.md)
@@ -372,6 +372,7 @@ ht-degree: 99%
          + [建立頁面](/help/sites-cloud/authoring/sites-console/creating-pages.md)
          + [管理頁面](/help/sites-cloud/authoring/sites-console/managing-pages.md)
          + [頁面屬性](/help/sites-cloud/authoring/sites-console/page-properties.md)
+         + [編輯頁面屬性](/help/sites-cloud/authoring/sites-console/edit-page-properties.md)
          + [預覽頁面](/help/sites-cloud/authoring/sites-console/previewing-content.md)
          + [發佈頁面](/help/sites-cloud/authoring/sites-console/publishing-pages.md)
          + [頁面版本](/help/sites-cloud/authoring/sites-console/page-versions.md)
@@ -384,6 +385,7 @@ ht-degree: 99%
          + [頁面編輯器](/help/sites-cloud/authoring/page-editor/introduction.md)
          + [編輯器側面板](/help/sites-cloud/authoring/page-editor/editor-side-panel.md)
          + [編輯頁面](/help/sites-cloud/authoring/page-editor/edit-content.md)
+         + [從頁面編輯器發佈頁面](/help/sites-cloud/authoring/page-editor/publishing.md)
          + [頁面範本](/help/sites-cloud/authoring/page-editor/templates.md)
          + [新增頁面註解](/help/sites-cloud/authoring/page-editor/annotations.md)
          + [RTF 編輯器](/help/sites-cloud/authoring/page-editor/rich-text-editor.md)
@@ -397,7 +399,7 @@ ht-degree: 99%
       + 通用編輯器 {#universal-editor}
          + [導覽](/help/sites-cloud/authoring/universal-editor/navigation.md)
          + [編寫](/help/sites-cloud/authoring/universal-editor/authoring.md)
-         + [發佈](/help/sites-cloud/authoring/universal-editor/publishing.md)
+         + [從通用編輯器發佈頁面](/help/sites-cloud/authoring/universal-editor/publishing.md)
          + [繼承](/help/sites-cloud/authoring/universal-editor/inheritance.md)
          + [頁面範本](/help/sites-cloud/authoring/universal-editor/templates.md)
       + 片段 {#fragments}
@@ -1106,7 +1108,7 @@ ht-degree: 99%
 + Headless {#headless}
    + [什麼是 Headless CMS？](/help/headless/what-is-headless.md)
    + [AEM Headless 簡介](/help/headless/introduction.md)
-   + [開發人員入口網站 (其他資源)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hant)
+   + [開發人員入口網站 (其他資源)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
    + [最佳做法 - 設定和使用](/help/headless/best-practices-setup-use.md)
    + 設定 {#setup}
       + [簡介](/help/headless/setup/introduction.md)

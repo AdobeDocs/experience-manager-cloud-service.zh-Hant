@@ -5,7 +5,7 @@ exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 2%
@@ -14,9 +14,9 @@ ht-degree: 2%
 
 # 元件 {#components}
 
-元件是Adobe Experience Manager (AEM)中內容頁面的基本製作建置區塊。 影像、文字、標題等元件可以輕鬆拖放以建置內容。
+元件是Adobe Experience Manager (AEM)中內容頁面的基本製作建置組塊。 影像、文字、標題等元件可以輕鬆拖放以建置內容。
 
-AEM隨附多種現成可用的元件，可為網站作者提供全方位功能。 在[編輯頁面](/help/sites-cloud/authoring/page-editor/edit-content.md)時，這些元件可供使用，而且會依主要功能區域（稱為元件群組）分組，以協助篩選。
+AEM隨附多種現成的元件，為網站作者提供全方位功能。 在[編輯頁面](/help/sites-cloud/authoring/page-editor/edit-content.md)時，這些元件可供使用，而且會依主要功能區域（稱為元件群組）分組，以協助篩選。
 
 >[!NOTE]
 >
@@ -30,7 +30,7 @@ AEM隨附多種現成可用的元件，可為網站作者提供全方位功能�
 
 您可以選取元件並將其拖曳至頁面上的所需位置。 您接著可以使用下列專案加以編輯：
 
-* [設定屬性](/help/sites-cloud/authoring/sites-console/page-properties.md)
+* [設定屬性](/help/sites-cloud/authoring/sites-console/edit-page-properties.md)
 * [編輯內容](/help/sites-cloud/authoring/page-editor/edit-content.md)
 * [編輯內容 — 全熒幕模式](/help/sites-cloud/authoring/page-editor/edit-content.md#edit-content-full-screen-mode)
 
@@ -42,11 +42,11 @@ AEM隨附多種現成可用的元件，可為網站作者提供全方位功能�
 
 ## 核心元件 {#core-components}
 
-[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-hant)提供彈性且功能豐富的製作功能，可提供建立頁面所需的基本內容型別。
+[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)提供彈性且功能豐富的製作功能，可提供建立頁面所需的基本內容型別。
 
 它們是使用AEM最佳實務建置的，也是AEM編寫體驗的基礎。 開發人員可輕鬆擴充核心元件，以符合特定專案需求。
 
-除了WCM核心元件之外，您也可以使用[最適化Forms核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant#features)。 這些核心元件提供標準且簡單的方法，可[建立表單或新增表單至AEM Sites頁面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。
+除了WCM核心元件之外，您也可以使用[最適化Forms核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features)。 這些核心元件提供標準且簡單的方法，可[建立表單或新增表單至AEM Sites頁面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。
 
 ### 設定範本 {#configuring-templates}
 

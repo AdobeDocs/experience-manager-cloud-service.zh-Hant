@@ -5,7 +5,7 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: f0d60086-e92e-4492-ad50-bef84fed2a82
-source-git-commit: bcf0940d3365ecde6788772d28d32f22f367816d
+source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
 workflow-type: tm+mt
 source-wordcount: '763'
 ht-degree: 26%
@@ -57,7 +57,7 @@ ht-degree: 26%
 
 1. 使用&#x200B;**Sites**&#x200B;主控台來[導覽至您想要用作範本的新頁面或現有頁面](/help/sites-cloud/authoring/sites-console/introduction.md#selecting-resources)，然後點選或按一下以選取它。
 
-1. 選取頁面後，點選或按一下工具列中的&#x200B;[**屬性**&#x200B;圖示](/help/sites-cloud/authoring/sites-console/page-properties.md)。
+1. 選取頁面後，點選或按一下工具列中的&#x200B;[**屬性**&#x200B;圖示](/help/sites-cloud/authoring/sites-console/edit-page-properties.md)。
 
 1. 在&#x200B;**範本設定**&#x200B;區段下內容對話方塊的&#x200B;**進階**&#x200B;標籤上，選取切換&#x200B;**將頁面用作範本**。
 
@@ -67,7 +67,7 @@ ht-degree: 26%
 
 ## 從範本建立頁面 {#creating-from-template}
 
-從範本建立可透過Universal Editor編輯的頁面，與建立任何其他頁面[&#128279;](/help/sites-cloud/authoring/sites-console/creating-pages.md)的工作流程相同。
+從範本建立可透過Universal Editor編輯的頁面，與建立任何其他頁面](/help/sites-cloud/authoring/sites-console/creating-pages.md)的工作流程相同。[
 
 1. 使用 **Sites** 主控台[導覽到您希望在其中建立新頁面的位置](/help/sites-cloud/authoring/sites-console/introduction.md#selecting-resources)。
 

@@ -5,7 +5,7 @@ solution: Experience Manager Sites
 feature: Administering
 role: User
 exl-id: d11d7176-dd35-4855-9dcd-dd40ff096510
-source-git-commit: 7201cc90c0f698454d8ccda0eb83e433a330c1eb
+source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
 workflow-type: tm+mt
 source-wordcount: '857'
 ht-degree: 2%
@@ -73,10 +73,10 @@ ht-degree: 2%
 
 ## 屬性 {#properties}
 
-您可以編輯範本[&#128279;](/help/sites-cloud/authoring/page-editor/templates.md)的屬性，其方式與您[編輯頁面屬性](/help/sites-cloud/authoring/sites-console/page-properties.md)的方式非常相同。範本屬性包括：
+您可以編輯範本](/help/sites-cloud/authoring/page-editor/templates.md)的[屬性，其方式與您[編輯頁面屬性的方式非常相同。](/help/sites-cloud/authoring/sites-console/edit-page-properties.md)範本屬性包括：
 
 * 範本標題
-* 描述
+* 說明
 * 影像
 
 >[!TIP]
@@ -95,8 +95,8 @@ ht-degree: 2%
 
 必須先啟用範本，內容作者才能使用範本建立頁面。 如果不再需要範本，則可停用該範本，使其不再顯示在頁面建立精靈中。
 
-* 選取範本，然後按一下[停用]以停用範本。**&#x200B;**
-* 選取範本，然後按一下[啟用] **&#x200B;**&#x200B;以啟用範本。
+* 選取範本，然後按一下[停用]以停用範本。****
+* 選取範本，然後按一下[啟用] ****&#x200B;以啟用範本。
 
 ## 發佈 {#publish}
 
