@@ -1,22 +1,30 @@
 ---
-title: 啟動
-description: 啟動可讓您有效率地開發未來版本的內容。可讓您完成變更以供未來發佈，同時維護目前的頁面
+title: 頁面啟動
+description: 瞭解如何在Adobe Experience Manager as a Cloud Service中使用頁面啟動項。 啟動可讓您有效率地開發未來版本的內容，同時維護您目前的頁面。
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: 9ddda040eda85b29c86a4940cb656f26073b0f12
+source-git-commit: 4c75904958f7faf91173cb8a37d5be5b3048cfae
 workflow-type: tm+mt
-source-wordcount: '957'
-ht-degree: 83%
+source-wordcount: '995'
+ht-degree: 75%
 
 ---
 
-# 啟動 {#launches}
+# 頁面啟動 {#launches-for-pages}
 
-啟動可讓您有效率地開發未來版本的內容。
+在Adobe Experience Manager (AEM) as a Cloud Service中，啟動可讓您有效率地開發未來版本的內容。
 
-建立&#x200B;*Launch*&#x200B;可讓您進行變更，以準備未來發佈，同時維護您目前的頁面。 這表示您同時有效編輯兩個版本：目前發佈的頁面，以及將來同時發佈的這些頁面版本。 到了那一天後，您就可以取代原始頁面並發佈新版本。
+*Launch*&#x200B;已建立，可讓您在維護目前內容的同時，進行變更以準備未來出版物。 針對AEM頁面，這表示您同時有效編輯兩個版本：目前發佈的頁面，以及未來將同時發佈的這些頁面版本。 到了那一天後，您就可以取代原始頁面並發佈新版本。
+
+<!--
+>[!NOTE]
+>
+>Launches are also available for Content Fragments. The basic concepts are the same, but there are differences in how to manage them in AEM. 
+>
+>For full details see [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md).
+-->
 
 您建立&#x200B;*Launch*，然後在編輯和更新您的&#x200B;*Launch*&#x200B;頁面後，將其&#x200B;*提升*&#x200B;回&#x200B;*Source*。 然後您可以啟用這些&#x200B;*Source*&#x200B;頁面（頂層）。 提升功能會將啟動內容複製回來源頁面，可以手動或自動完成 (視建立和編輯啟動時設定的欄位)。
 
@@ -28,7 +36,7 @@ ht-degree: 83%
 您也可以：
 
 * 導覽啟動分支中的內容，視需要新增或移除頁面。
-* 預覽發佈內容在未來特定日期/時間的外觀。
+* 預覽已發佈內容未來特定日期的外觀。
 
 下一季到來時，您提升啟動頁面，以便您可以發佈來源頁面 (包含更新的內容)。您可以提升所有頁面，也可僅提升您修改過的頁面。
 
@@ -106,6 +114,12 @@ ht-degree: 83%
    ![網站主控台中對啟動執行的動作](/help/sites-cloud/authoring/assets/launches-references-actions.png)
 
 ## 啟動主控台 {#the-launches-console}
+
+>[!NOTE]
+>
+>此主控台僅供頁面啟動使用。
+>
+>若要管理您的內容片段，請參閱內容片段的[啟動](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)。
 
 「啟動」主控台提供啟動的總覽，並可讓您對列出的啟動執行動作。
 
