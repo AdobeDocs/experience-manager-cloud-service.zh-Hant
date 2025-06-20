@@ -5,10 +5,10 @@ exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: 4c75904958f7faf91173cb8a37d5be5b3048cfae
+source-git-commit: 3859393b94680ac1c786bfe31950e6073650167f
 workflow-type: tm+mt
-source-wordcount: '995'
-ht-degree: 75%
+source-wordcount: '977'
+ht-degree: 76%
 
 ---
 
@@ -115,11 +115,13 @@ ht-degree: 75%
 
 ## 啟動主控台 {#the-launches-console}
 
+<!--
 >[!NOTE]
 >
->此主控台僅供頁面啟動使用。
+>This console is only for Launches for Pages. 
 >
->若要管理您的內容片段，請參閱內容片段的[啟動](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)。
+>To manage your Content Fragments see [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md).
+-->
 
 「啟動」主控台提供啟動的總覽，並可讓您對列出的啟動執行動作。
 
