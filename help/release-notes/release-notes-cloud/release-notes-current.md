@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 source-git-commit: 75816f35a8bca8356e17b13341c2ddbd850f8eff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2077'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 95%
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440931?quality=12&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -55,7 +55,7 @@ AEM Assets 現在使用 [AI 自動產生中繼資料，包括標題、說明和�
 
 **與 Figma 整合**
 
-AEM Assets 可以和 Figma 原生整合，讓設計者能自 Figma 使用者介面直接存取儲存於 AEM Assets 內的資產。您可以在Figma畫布中置入AEM Assets中管理的內容，然後將新內容或編輯過的內容儲存在AEM Assets存放庫中。 若要存取Figma社群頁面上可用的AEM Assets Connector，請按一下[這裡](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector)。
+AEM Assets 可以和 Figma 原生整合，讓設計者能自 Figma 使用者介面直接存取儲存於 AEM Assets 內的資產。您可以將 AEM Assets 內所管理的內容放置於 Figma 畫布中，然後將新的或編輯後的內容儲存在 AEM Assets 存放庫中。若要存取 Figma 社群頁面上提供的 AEM Assets 連接器，請按一下[此處](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463828)
 
@@ -114,7 +114,7 @@ Content Hub 現在支援[產生共用連結，允許外部使用者](/help/asset
 
 [Experience Manager (AEM) Dynamic Media 與 Journey Optimizer (AJO) B2C 的原生整合](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/content-management/combine/aem-dynamic)，讓行銷人員能夠輕鬆地將 AEM Dynamic Media 資產 (轉譯和 DM 範本) 嵌入至 AJO 內容中，並在多個通道之間提供即時更新和極度個人化的體驗。
 
->[!VIDEO](https://video.tv.adobe.com/v/3463793/?learn=on&enablevpops=&autoplay=true&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -201,7 +201,7 @@ OSGi 屬性：
 
 ### 預設清除舊版本和稽核記錄 {#mt-defaults}
 
-目前，內容版本和稽核記錄檔的相關&#x200B;*清除維護工作*&#x200B;預設為停用，因此除非明確設定，否則不會移除任何資料。
+目前，內容版本和稽核日誌皆將其相關的&#x200B;*清除維護任務*&#x200B;預設為停用，因此除非明確地進行設定，否則不會移除任何資料。
 
 不過，為了讓存放庫的效能最佳化，自 **2025 年 6 月下旬**&#x200B;開始，會依循以下準則將清除預設為啟用：
 
@@ -216,7 +216,7 @@ OSGi 屬性：
    * 保留過去 7 年內的所有版本。
    * 此較高的預設臨界值能防止意外移除最近的資料。然而，若要讓存放庫效能最佳化，建議設定較低的值。
 
-* 您可以透過使用設定管道部署的YAML設定來修改這些預設值。
+* 您可以透過 YAML 設定來修改這些預設值，並透過設定管道部署。
 
 #### 稽核記錄 {#mt-auditlogs}
 
@@ -229,7 +229,7 @@ OSGi 屬性：
    * 預設情況下會記錄所有事件。
    * 此較高的預設臨界值能防止意外移除最近的資料。然而，若要讓存放庫效能最佳化，建議設定較低的值。
 
-* 您可以透過使用設定管道部署的YAML設定來修改這些預設值。
+* 您可以透過 YAML 設定來修改這些預設值，並透過設定管道部署。
 
 如需更多詳細資訊，請參閱[維護任務文章](/help/operations/maintenance.md#defaults)。
 

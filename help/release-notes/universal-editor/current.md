@@ -5,9 +5,9 @@ feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 source-git-commit: 40f3f4652dbfce9bda65b8e69c349b9a8a563469
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '135'
-ht-degree: 54%
+ht-degree: 100%
 
 ---
 
@@ -23,10 +23,10 @@ ht-degree: 54%
 ## 新增功能 {#what-is-new}
 
 * **停用開啟頁面按鈕** - [現在可以停用](/help/implementing/universal-editor/customizing.md#open-page)開啟頁面按鈕。
-* **從內容樹狀結構存取內容** - [當您按兩下內容樹狀結構中的專案時，](/help/sites-cloud/authoring/universal-editor/navigation.md)相關的內容會自動在側面板中開啟。
+* **從內容樹存取屬性** - [按兩下內容樹中的項目時，](/help/sites-cloud/authoring/universal-editor/navigation.md)相關屬性將自動在側面板中開啟。
 
 ## 其他改良功能 {#other-improvements}
 
-* 已發佈的參考現在會在發佈對話方塊中預設取消選取，以防止重新發佈。
-* 擴充功能的載入已得到改善。
-* 擴充功能引發的例外狀況現在可妥善處理，以免影響編輯器。
+* 現在，發佈對話方塊中預設取消選取已發佈的參考資料，以防止重新發佈這些資料。
+* 擴充功能的載入已獲改善。
+* 擴充功能引發的例外狀況現已能更妥善處理，以避免影響編輯器。

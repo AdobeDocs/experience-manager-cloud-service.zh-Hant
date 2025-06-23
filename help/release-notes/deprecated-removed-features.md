@@ -5,9 +5,9 @@ exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
 source-git-commit: 1f6aabc76551340ed296571e14daf2a1ef557717
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3181'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -143,7 +143,7 @@ Adobe 會定期檢閱包括 API 和設定在內的功能，確保其符合 AEM a
     <td>2025/8/31</td>
   </tr>
   <tr>  <td>com.google.common.annotations<br>com.google.common.base<br>com.google.common.cache<br>com.google.common.collect<br>com.google.common.escape<br>com.google.common.eventbus<br>com.google.common.hash<br>com.google.common.html<br>com.google.common.io<br>com.google.common.math<br>com.google.common.net<br>com.google.common.primitives<br>com.google.common.reflect<br>com.google.common.util.concurrent<br>com.google.common.xml</td>
-    <td>Google Guava核心程式庫在Cloud Service中已過時。 <a href="#com.google.common">請參閱下面的移除說明。</a></td>
+    <td>Cloud Service 中的 Google Guava Core Libraries 已過時。<a href="#com.google.common">請參閱下面的移除說明。</a></td>
     <td>2023/5/15</td>
     <td>2025/8/31</td>
   </tr>
@@ -363,17 +363,17 @@ Adobe 會定期檢閱包括 API 和設定在內的功能，確保其符合 AEM a
 * 將此套件組合新增至您的專案
    * `org.mongodb:mongo-java-driver:3.12.7`
 
-您可能會想要根據自己的需求，挑選不同的版本。
+您可能會想根據您的需求選擇不同的版本。
 
 ### 移除 `com.google.common*` {#com.google.common}
 
-移除Google Guava Core Libraries的使用，或在您的專案中加入適當的版本。 在許多情況下，可以從JDK或Apache Commons Collections4的集合類別取代此程式庫的使用方式。 如果您找不到替代程式，請在專案中納入最新版的Google Guave核心程式庫。 如果您使用的是舊版本的 [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)，請務必更新至最新版本。
+刪除 Google Guava Core Libraries 使用或在您的專案中加入適當版本。在許多情況下，都可以使用 JDK 或 Apache Commons Collections4 中的集合類別，以取代此程式庫的使用。如果您沒有找到任何替代方案，請在您的專案中加入最新版本的 Google Guave Core Library。如果您使用的是舊版本的 [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)，請務必更新至最新版本。
 
 動作清單：
 
 * 將 ACS AEM Commons 更新至最新版本 (至少應為 6.11.0)
-* 將Google Guava Core Library取代為JDK集合或Apache Commons集合4
-* 如果仍然需要，請將此套件組合新增至您的專案（以最新可用版本取代）：
+* 使用 JDK 集合或 Apache Commons Collections4 取代 Google Guava Core Library 的使用
+* 如果仍然需要，請將此套件新增至您的專案 (以最新版本取代)：
    * `com.google.guava:guava:33.4.8-jre`
 
 ### 移除 `Apache Commons Lang 2 and Apache Commons Collections 3` {#apache.commons}

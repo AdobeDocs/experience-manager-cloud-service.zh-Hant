@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 role: Admin, Architect, Developer
 source-git-commit: ad9592c705c7b26292a29b43997edadfa01ccb65
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1321'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -24,11 +24,11 @@ ht-degree: 97%
 
 >[!TIP]
 >
->**要立即動手操作嗎？**
+>**想立即親手操作嗎？**
 >
->如果您想要立即動手，您可以[檢視aem.live上的教學課程，在30分鐘內透過AEM撰寫開始您自己的Edge Delivery Services專案。](https://www.aem.live/developer/ue-tutorial)
+>若想立即親手操作，只要[查看 aem.live 上的教學課程](https://www.aem.live/developer/ue-tutorial)，即可在不到 30 分鐘的時間內，使用 AEM 創作啟動您自己的 Edge Delivery Services 專案。
 
-## 敏捷反應商務需求 {#agile-reaction}
+## 對商務需求的敏捷反應 {#agile-reaction}
 
 作為長期公認的業界領導者，Adobe 知道為您的客戶快速建立和發佈有意義的新內容有多重要。市場已經明確了擴大內容創作規模的常見挑戰，包括：
 
