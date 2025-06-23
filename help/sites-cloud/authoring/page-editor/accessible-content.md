@@ -5,9 +5,9 @@ exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: da192447ddc6edbca339c9a985f95dc063183cd3
 workflow-type: tm+mt
-source-wordcount: '13685'
+source-wordcount: '13672'
 ht-degree: 2%
 
 ---
@@ -27,13 +27,13 @@ ht-degree: 2%
 此外，請參閱：
 
 * [WCAG 2.1快速指南](/help/compliance/accessibility/quick-guide-wcag.md)。
-* Adobe解決方案[&#128279;](https://www.adobe.com/accessibility/compliance.html)的協助工具符合性報告。
+* Adobe解決方案的[無障礙合規性報告](https://www.adobe.com/accessibility/compliance.html)。
 * [Assets中的協助工具](/help/assets/accessibility.md)
 * [設定RTF編輯器以產生無障礙內容](/help/implementing/developing/extending/rte-accessible-content.md)
 
 指引會根據三個一致性層級進行分級：A級（最低）、AA級和AAA級（最高）。 簡而言之，層級的定義如下：
 
-* **&#x200B;**&#x200B;A級：您的網站達到基本的最低協助功能等級。要達到此級別，將滿足所有A級成功標準。
+* **** A級：您的網站達到基本的最低協助功能等級。要達到此級別，將滿足所有A級成功標準。
 * **AA級：**&#x200B;這是您努力追求的最佳無障礙環境支援等級，其中您的網站可達到基本無障礙環境支援等級，因此大部分使用者都可使用大部分的技術。 要達到此級別，將滿足所有A級和A級成功標準。
 * **等級AAA：**&#x200B;您的網站達到高水準的協助工具。 要達到此級別，將滿足所有A級、AA級和AAA級成功標準。
 
@@ -45,8 +45,8 @@ ht-degree: 2%
 >
 >本檔案將使用下列專案：
 >
->* WCAG 2.1指引[&#128279;](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance)的簡短名稱。
->* WCAG 2.1指引[&#128279;](https://www.w3.org/TR/WCAG/#numbering-in-wcag-2-1)中使用的編號，可協助與WCAG網站交叉參照。
+>* WCAG 2.1指引](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance)的[簡短名稱。
+>* WCAG 2.1指引](https://www.w3.org/TR/WCAG/#numbering-in-wcag-2-1)中使用的[編號，可協助與WCAG網站交叉參照。
 
 ## 准則1：可感知 {#principle-perceivable}
 
@@ -70,15 +70,15 @@ ht-degree: 2%
 
 #### 如何達到標準 — 非文字內容(1.1.1) {#how-to-meet-non-text-content}
 
-對於靜態圖形，基本要求是為圖形提供對等文字替代文字。 可以在&#x200B;**替代文字**&#x200B;欄位中完成此方法。 例如，檢視核心元件&#x200B;**[影像](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=zh-Hant)**。
+對於靜態圖形，基本要求是為圖形提供對等文字替代文字。 可以在&#x200B;**替代文字**&#x200B;欄位中完成此方法。 例如，檢視核心元件&#x200B;**[影像](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html)**。
 
 >[!NOTE]
 >
->某些現成可用的核心元件（例如&#x200B;**[輪播](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html?lang=zh-Hant)**）不提供用於新增替代文字說明至個別影像的&#x200B;**替代文字**&#x200B;欄位，儘管整個元件有&#x200B;**標籤**&#x200B;欄位（**[協助工具](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html?lang=zh-Hant#accessibility-tab)**&#x200B;標籤）。
+>某些現成可用的核心元件（例如&#x200B;**[輪播](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html)**）不提供用於新增替代文字說明至個別影像的&#x200B;**替代文字**&#x200B;欄位，儘管整個元件有&#x200B;**標籤**&#x200B;欄位（**[協助工具](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html#accessibility-tab)**&#x200B;標籤）。
 >
->當針對您的AEM執行個體實作這些版本時，您的開發團隊必須設定這些元件以支援`alt`屬性。 如此可確保作者可將其新增至內容(請參閱[新增對其他HTML元素和屬性的支援](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes))。
+>當針對您的AEM執行個體實作這些版本時，您的開發團隊必須設定這些元件以支援`alt`屬性。 這麼做可確保作者可將其新增至內容(請參閱[新增對其他HTML元素和屬性的支援](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes))。
 
-AEM預設需要填入&#x200B;**替代文字**&#x200B;欄位。 如果影像是純粹的裝飾且不需要替代文字，則可以核取&#x200B;**影像為裝飾性**&#x200B;選項。
+依預設，AEM要求填入&#x200B;**替代文字**&#x200B;欄位。 如果影像是純粹的裝飾且不需要替代文字，則可以核取&#x200B;**影像為裝飾性**&#x200B;選項。
 
 #### 建立良好的替代文字 {#creating-good-text-alternatives}
 
@@ -109,7 +109,7 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
    * 使用聲音輸出而非影像
    * 限制使用帳戶和垃圾郵件篩選器。
 
-* 背景影像：這些是使用階層式樣式表(CSS)而不是HTML來達成。 這表示無法指定替代文字值。 因此，背景影像不應提供重要的文字資訊，即使提供，頁面文字中也必須提供此資訊。 不過，當影像無法顯示時，請務必顯示替代背景。
+* 背景影像：這些是使用階層式樣式表(CSS)來達成，而非在HTML中達成。 這表示無法指定替代文字值。 因此，背景影像不應提供重要的文字資訊，即使提供，頁面文字中也必須提供此資訊。 不過，當影像無法顯示時，請務必顯示替代背景。
 
 >[!NOTE]
 >
@@ -147,14 +147,14 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 * 有聽力障礙或耳聾且聽不到音軌的人；
 * 聽得見音軌但不瞭解說話內容的人（例如，因為這是他們不懂的語言）。
 
-使用不支援以特定媒體格式(例如AdobeFlash)播放內容之瀏覽器或裝置的使用者，也可能無法播放視訊或音訊。
+使用不支援以特定媒體格式(例如Adobe Flash)播放內容的瀏覽器或裝置，的人也可能無法播放視訊或音訊。
 
 以不同的格式提供這項資訊，例如文字（或沒有音訊的視訊），可以讓無法存取原始內容的人存取這些資訊。
 
 #### 如何達到標準 — 純音訊和純視訊（預先錄製）(1.2.1) {#how-to-meet-audio-only-and-video-only-prerecorded}
 
 * 如果內容是預先錄製不含視訊的音訊（例如播客）：
-   * 提供緊接在內容之前或之後的音訊內容文字記錄連結。 成績單應該是一個HTML頁面，其中包含所有口語和重要非口語內容的對等文字，以及說話者的指示、設定說明、聲音表情以及任何其他重要音訊的說明。
+   * 提供緊接在內容之前或之後的音訊內容文字記錄連結。 成績單應為HTML頁面，內含所有口語和重要非口語內容的同等文字，並標示講話者、設定說明、聲音表情及其他重要音訊的說明。
 * 如果內容是無音訊的動畫或預先錄製的視訊：
    * 提供緊接在內容之前或之後的連結，以提供視訊所提供的資訊對等文字說明
    * 或是常用的音訊格式（例如MP3）中的對等音訊描述。
@@ -165,7 +165,7 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 >
 >准則[瞭解WCAG 1.2.1](https://www.w3.org/WAI/WCAG21/Understanding/audio-only-and-video-only-prerecorded.html)提供進一步資訊。
 
-在AEM網頁中插入多媒體的方式與插入影像類似。 不過，由於多媒體內容遠不止是靜態影像，因此有各種不同的設定和選項來控制多媒體的播放方式。
+在AEM網頁中插入多媒體，與插入影像類似。 不過，由於多媒體內容遠不止是靜態影像，因此有各種不同的設定和選項來控制多媒體的播放方式。
 
 >[!NOTE]
 >
@@ -201,13 +201,13 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 
 #### 更多資訊 — 字幕（預先錄製）(1.2.2) {#more-information-captions-prerecorded}
 
-* [瞭解成功標準1.2.2](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html)。
-* [如何達到成功標準1.2.2](https://www.w3.org/WAI/WCAG21/quickref/#captions-prerecorded)。
+* [瞭解成功標準1.2.2](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html)
+* [如何達到成功標準1.2.2](https://www.w3.org/WAI/WCAG21/quickref/#captions-prerecorded)
 
-c
-* [W3C：同步的多媒體](https://www.w3.org/AudioVideo/)。
-* [字幕、文字記錄及音訊說明 — 依WebAIM](https://webaim.org/techniques/captions/)。
-—>
+<!--
+* [W3C: Synchronized Multimedia](https://www.w3.org/AudioVideo/).
+* [Captions, Transcripts, and Audio Descriptions - by WebAIM](https://webaim.org/techniques/captions/)
+-->
 
 ### 音訊描述或替代媒體（預先錄製） (1.2.3) {#audio-description-or-media-alternative-prerecorded}
 
@@ -304,7 +304,7 @@ c
 
 #### 用途 — 資訊和關係(1.3.1) {#purpose-info-and-relationships}
 
-殘障人士使用的許多輔助技術都仰賴結構資訊來有效顯示或&#x200B;*瞭解*&#x200B;內容。 此結構資訊可以採用頁面標題、表格列和欄標題以及清單型別的形式。 例如，熒幕助讀程式可讓使用者在頁面中從標題導覽至標題。 但是，當頁面內容似乎只有透過視覺樣式而非基礎HTML的結構時，則沒有可用於輔助技術的結構資訊，限制其支援更輕鬆瀏覽的能力。
+殘障人士使用的許多輔助技術都仰賴結構資訊來有效顯示或&#x200B;*瞭解*&#x200B;內容。 此結構資訊可以採用頁面標題、表格列和欄標題以及清單型別的形式。 例如，熒幕助讀程式可讓使用者在頁面中從標題導覽至標題。 不過，當頁面內容似乎只有透過視覺樣式而非基礎HTML的結構時，則沒有可用於輔助技術的結構資訊，限制其支援更輕鬆瀏覽的能力。
 
 此成功標準旨在確保透過HTML或其他編碼技術以程式設計方式提供此類結構資訊，以便瀏覽器和輔助技術可存取並利用這些資訊。
 
@@ -316,15 +316,15 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 
 * **標題：**&#x200B;只要您已啟用RTE的協助工具功能，AEM就會提供三層頁面標題。 您可以使用這些項目來識別內容的區段和子區段。標題1是標題的最高級別，標題3是最低級別。系統管理員可以配置系統以允許使用更多標題級別。
 
-* **清單**：您可以使用HTML指定三種不同型別的清單：
+* **清單**：您可以使用HTML來指定三種不同型別的清單：
    * 元素 `<ul>` 用於無序 *列*  (項目符號) 清單。使用`<li>`元素識別個別清單專案。 在RTE中，使用&#x200B;**專案符號清單**&#x200B;圖示。
    * `<ol>`專案用於&#x200B;*編號的*&#x200B;清單。 使用`<li>`元素識別個別清單專案。 在RTE中，使用編號清單&#x200B;**圖示。**
 
   如果要將現有內容變更為特定清單型別，請反白適當的文字並選取適當的清單型別。 如前一個顯示段落文字輸入方式的範例一樣，適當的清單元素會自動新增至您的HTML。
 
-  在全螢幕模式中，會顯示個別 **的「項目符號清單** 」和「 **&#x200B;**&#x200B;編號清單」圖示。當未處於全螢幕模式時，單一「清單」圖示後面會提供這兩個 **選項** 。
+  在全螢幕模式中，會顯示個別 **的「項目符號清單** 」和「 **** 編號清單」圖示。當未處於全螢幕模式時，單一「清單」圖示後面會提供這兩個 **選項** 。
 
-* **資料表**：必須使用HTML資料表元素識別資料表：
+* **資料表**：資料表必須使用HTML資料表元素識別：
    * 一個`<table>`元素
    * 資料表每一列的`<tr>`專案
    * 每個列和欄標題的`<th>`元素
@@ -343,7 +343,7 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
   若要開啟&#x200B;**表格**&#x200B;對話方塊，您可以在此選取&#x200B;**表格屬性**&#x200B;索引標籤：
 
    * 定義適當的&#x200B;**標題**。
-   * 理想情況下，請移除「寬 **度」、「邊框高度」、「邊框高度」、「邊框高度**」、「單元格間距」、「單元格間距 **」、「單元格**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;**&#x200B;間距」的預設值。因為這些屬性可以在全局樣式表中設定。
+   * 理想情況下，請移除「寬 **度」、「邊框高度」、「邊框高度」、「邊框高度**」、「單元格間距」、「單元格間距 **」、「單元格**************&#x200B;間距」的預設值。因為這些屬性可以在全局樣式表中設定。
 
   然後，您可以使用&#x200B;**儲存格屬性**&#x200B;來選擇儲存格是資料或標題儲存格：
 
@@ -364,7 +364,7 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 
   >[!NOTE]
   >
-  >ID屬性無法在現成安裝中使用。 可透過在RTE中設定HTML規則和序列化程式來啟用它。
+  >ID屬性無法在現成安裝中使用。 可透過設定HTML規則和RTE中的序列化程式來啟用。
 
   例如，在下表的標題和ID中，會對輔助技術使用者進行程式化關聯。
 
@@ -609,11 +609,11 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 
 #### 用途 — 文字影像(1.4.5) {#purpose-images-of-text}
 
-當偏好文字的特定樣式時，通常會使用文字的影像；例如，商標標誌或從其他來源產生的文字（例如，紙質檔案的掃描）。 然而，與使用CSS以HTML呈現和樣式化的文字相比，文字影像在變更大小或外觀方面缺乏靈活性，而這對於有視覺障礙或閱讀困難的人可能是必要的。
+當偏好文字的特定樣式時，通常會使用文字的影像；例如，商標標誌或從其他來源產生的文字（例如，紙質檔案的掃描）。 然而，相較於HTML中顯示的文字並使用CSS進行樣式設定，文字影像在變更大小或外觀方面缺乏靈活性，而這對於有視覺障礙或閱讀困難的人可能是必要的。
 
 #### 如何達到標準 — 文字影像(1.4.5) {#how-to-meet-images-of-text}
 
-如果必須使用文字的影像，請使用CSS將文字的影像取代為HTML的對等文字，以便可自訂文字使用。 如需如何達成此目標的範例，請參閱[C30：使用CSS以文字的影像取代文字，並提供使用者介面控制項以切換](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/C30)。
+如果必須使用文字的影像，請使用CSS將文字的影像取代為HTML中的對等文字，以便可自訂文字使用。 如需如何達成此目標的範例，請參閱[C30：使用CSS以文字的影像取代文字，並提供使用者介面控制項以切換](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/C30)。
 
 #### 更多資訊 — 文字影像(1.4.5) {#more-information-images-of-text}
 
@@ -733,28 +733,28 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 
 [指南2.3癲癇發作：請勿設計會導致癲癇發作或生理反應的內容](https://www.w3.org/TR/WCAG/#seizures-and-physical-reactions)。
 
-### 三個Flash或低於臨界值(2.3.1) {#three-flashes-or-below-threshold}
+### 閃光三次或低於臨界值(2.3.1) {#three-flashes-or-below-threshold}
 
 * 成功標準2.3.1
 * A級
-* 三次Flash或低於臨界值：網頁在任何一秒的期間內，都不包含閃光超過三次的任何專案，或是閃光低於一般閃光燈和紅色閃光燈臨界值。
+* 閃光三次或低於臨界值：網頁在任何一秒的期間內，都不包含閃光三次以上的任何專案，或是閃光低於一般閃光和紅色閃光臨界值。
 
 >[!NOTE]
 >
 >由於任何不符合此成功標準的內容都可能干擾使用者使用整個頁面的能力，因此網頁上的所有內容（無論是否用於符合其他成功標準）都必須符合此成功標準。 請參閱[符合需求5：不干擾](https://www.w3.org/TR/WCAG/#cc5)。
 
-#### 用途 — 三個Flash或低於臨界值(2.3.1) {#purpose-three-flashes-or-below-threshold}
+#### 用途 — 閃光三次或低於臨界值(2.3.1) {#purpose-three-flashes-or-below-threshold}
 
 在某些情況下，閃爍的內容會導致光敏性癲癇發作。 此成功標準可讓這類使用者存取及體驗所有內容，而不需擔心內容閃爍問題。
 
-#### 如何達到標準 — 三個Flash或低於臨界值(2.3.1) {#how-to-meet-three-flashes-or-below-threshold}
+#### 如何達到標準 — 閃光三次或低於臨界值(2.3.1) {#how-to-meet-three-flashes-or-below-threshold}
 
 採取步驟以確保套用下列技術：
 
 * 請確定在任何一秒的時間段內，元件的閃爍次數不會超過三次；
 * 如果無法滿足上述條件，則會在熒幕上顯示閃爍的內容於&#x200B;*小型安全區域*&#x200B;畫素內。 此區域的計算使用複雜的公式，涵蓋在[G176：讓閃爍區域保持足夠小](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/G176)，所以只有在需要閃爍內容時，才應該遵循此技巧。
 
-#### 更多資訊 — 三個Flash或低於臨界值(2.3.1) {#more-information-three-flashes-or-below-threshold}
+#### 更多資訊 — 閃光三次或低於臨界值(2.3.1) {#more-information-three-flashes-or-below-threshold}
 
 * [瞭解成功標準2.3.1](https://www.w3.org/WAI/WCAG21/Understanding/three-flashes-or-below-threshold.html)。
 * [如何達到成功標準2.3.1](https://www.w3.org/WAI/WCAG21/quickref/#three-flashes-or-below-threshold)。
@@ -796,9 +796,9 @@ AEM可讓您使用適當的HTML元素，輕鬆建構語義上有意義的網頁�
 
 #### 如何達到標準 — 頁面有標題(2.4.2) {#how-to-meet-page-titled}
 
-在AEM中建立新HTML頁面時，您可以指定頁面標題。 請確定標題足以描述頁面內容和用途，尤其是任何不重複方面，讓訪客可快速找出內容是否符合其需求。
+在AEM中建立新的HTML頁面時，您可以指定頁面標題。 請確定標題足以描述頁面內容和用途，尤其是任何不重複方面，讓訪客可快速找出內容是否符合其需求。
 
-編輯頁面時，您也可以編輯頁面標題，頁面資訊——屬 **性可**&#x200B;**存取。**
+編輯頁面時，您也可以編輯頁面標題，頁面資訊——屬 **性可****存取。**
 
 #### 更多資訊 — 頁面帶有標題(2.4.2) {#more-information-page-titled}
 
@@ -870,7 +870,7 @@ John Smith's publications
 >
 >上圖為上述程式碼片段，建議您使用&#x200B;**Image**&#x200B;元件。
 
-雖然建議您提供不需要額外內容即可識別連結目的的連結文字，但系統並不認為這始終可行。 上下文無關連結可用於下列情況，其HTML範例可在[如何達到成功標準2.4.4](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context)中找到。
+雖然建議您提供不需要額外內容即可識別連結目的的連結文字，但系統並不認為這始終可行。 上下文無關連結可用於下列情況，HTML範例可在[如何達到成功標準2.4.4](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context)中找到。
 
 * 當連結文字是緊密相關連結清單的一部分時，以及當連結周圍的清單專案可提供足夠的內容時。
 * 其中，連結的用途可從&#x200B;*之前* （非之後）的段落文字中清楚識別。
@@ -986,7 +986,7 @@ John Smith's publications
 
 >[!NOTE]
 >
->AEM針對根語言的變體提供進一步的微調，例如，美式英文 — en-us、英式英文 — en-gb和加拿大英文 — en-ca。 這種詳細程度對輔助型技術來說通常是多餘的，不過可用於頁面內容中的區域變化。
+>AEM針對根語言的變體提供進一步微調，例如美式英文 — en-us、英式英文 — en-gb和加拿大英文 — en-ca。 這種詳細程度對輔助型技術來說通常是多餘的，不過可用於頁面內容中的區域變化。
 
 #### 更多資訊 — 頁面語言(3.1.1) {#more-information-language-of-page}
 
@@ -1034,7 +1034,7 @@ John Smith's publications
 >
 >如果包含不同語言的人名或城市，或使用預設語言中常見的借用字詞或短語（例如英文中的&#x200B;*schadenfreude*），則不必遵循此成功標準。
 
-若要使用適當的語言新增span元素，您可以在RTE的來源編輯模式中手動編輯HTML標示，使其顯示如上。 或者，系統管理員可以將`lang`屬性包含在RTE中(請參閱[新增對其他HTML元素和屬性的支援](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes))。
+若要新增包含適當語言的span元素，您可以在RTE的來源編輯模式中手動編輯HTML標籤，使其顯示如上。 或者，系統管理員可以將`lang`屬性包含在RTE中(請參閱[新增對其他HTML元素和屬性的支援](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes))。
 
 #### 更多資訊 — 區域性語言(3.1.2) {#more-information-language-of-parts}
 
@@ -1196,9 +1196,9 @@ John Smith's publications
 
 ###### 表單欄位群組 {#groups-of-form-fields}
 
-在WKND專案中，如果有一組相關控制項，例如&#x200B;**無線電群組**，則可能需要群組的標題和個別控制項。 在AEM中新增一組選項按鈕時，「標題 **」欄位會提供此群組標題，而個別標題會指定為選項按鈕(** Items **&#x200B;**)。
+在WKND專案中，如果有一組相關控制項，例如&#x200B;**無線電群組**，則可能需要群組的標題和個別控制項。 在AEM中新增一組選項按鈕時，「標題 **」欄位會提供此群組標題，而個別標題會指定為選項按鈕(** Items ****)。
 
-不過，群組標題和選項按鈕本身之間沒有程式化關聯。範本編輯人員必須將標題包住必要 `fieldset` 和 `legend` 標籤，才能建立此關聯，而這只能透過編輯頁面原始碼來完成。或者，系統管理員可以新增對這些元素的支援，以便這些元素出現在&#x200B;**欄位屬性**&#x200B;對話方塊中(請參閱[新增對其他HTML元素和屬性的支援](/help/implementing/developing/extending/rte-accessible-content.md))。
+不過，群組標題和選項按鈕本身之間沒有程式化關聯。範本編輯人員必須將標題包住必要 `fieldset` 和 `legend` 標籤，才能建立此關聯，而這只能透過編輯頁面原始碼來完成。或者，系統管理員可以新增對這些元素的支援，以便這些元素顯示在&#x200B;**欄位屬性**&#x200B;對話方塊中(請參閱[新增對其他HTML元素和屬性的支援](/help/implementing/developing/extending/rte-accessible-content.md))。
 
 ###### Forms的其他注意事項 {#additional-considerations-for-forms}
 
