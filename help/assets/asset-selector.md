@@ -5,9 +5,9 @@ contentOwner: KK
 feature: Selectors
 role: Admin,User
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 47afd8f95eee2815f82c429e9800e1e533210a47
 workflow-type: tm+mt
-source-wordcount: '5385'
+source-wordcount: '5418'
 ht-degree: 39%
 
 ---
@@ -17,19 +17,19 @@ ht-degree: 39%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 與 Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets 與 Edge Delivery Services 整合</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>使用者介面可擴充性</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用 Dynamic Media Prime 與 Ultimate</b></a>
         </td>
     </tr>
     <tr>
@@ -204,7 +204,7 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
 +++**ImsAuthProps**
 `ImsAuthProps`屬性定義Asset Selector用來取得`imsToken`的驗證資訊和流程。 藉由設定這些屬性，您可以控制驗證流程應該如何行為並註冊各種驗證事件的接聽程式。
 
-| 屬性名稱 | 描述 |
+| 屬性名稱 | 說明 |
 |---|---|
 | `imsClientId` | 代表用於驗證目的之IMS使用者端ID的字串值。 此值由Adobe提供，且為您的Adobe AEM CS組織專用。 |
 | `imsScope` | 說明用於驗證的範圍。 範圍會決定應用程式對貴組織資源的存取層級。 多個範圍可以用逗號分隔。 |
@@ -220,7 +220,7 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
 +++**ImsAuthService**
 `ImsAuthService`類別會處理Asset Selector的驗證流程。 其負責從Adobe IMS驗證服務取得`imsToken`。 `imsToken`可用來驗證使用者，並授權以[!DNL Cloud Service] Assets存放庫身分存取[!DNL Adobe Experience Manager]。 ImsAuthService使用`ImsAuthProps`屬性來控制驗證流程並註冊各種驗證事件的接聽程式。 您可以使用方便的[`registerAssetsSelectorsAuthService`](#purejsselectorsregisterassetsselectorsauthservice)函式，以資產選擇器註冊&#x200B;_ImsAuthService_&#x200B;執行個體。 `ImsAuthService`類別上有以下可用函式。 不過，如果您使用&#x200B;_registerAssetsSelectorsAuthService_&#x200B;函式，則不需要直接呼叫這些函式。
 
-| 函式名稱 | 描述 |
+| 函式名稱 | 說明 |
 |---|---|
 | `isSignedInUser` | 判斷使用者目前是否已登入服務並據此傳回布林值。 |
 | `getImsToken` | 擷取目前登入使用者的驗證`imsToken`，此驗證可用於驗證其他服務的要求，例如產生資產_rendition。 |
@@ -484,25 +484,27 @@ aemTierType:[1: "delivery"]
 **核准的資產傳遞API規格**
 
 URL格式：
-`https://<delivery-api-host>/adobe/dynamicmedia/deliver/<asset-id>/<seo-name>.<format>?<image-modification-query-parameters>`
+`https://<delivery-api-host>/adobe/assets/<asset-id>/as/<seo-name>.<format>?<image-modification-query-parameters>`
 
 其中，
 
 * 主機為`https://delivery-pxxxxx-exxxxxx.adobe.com`
-* API根目錄為`"/adobe/dynamicmedia/deliver"`
+* API根目錄為`"/adobe/assets"`
 * `<asset-id>`為資產識別碼
+* `as`是open API規格的常數部分，指出要參照的資產名稱
 * `<seo-name>`為資產名稱
 * `<format>`為輸出格式
 * `<image modification query parameters>`為核准資產的傳遞API規格所支援
 
-**已核准的資產傳遞API**
+**已核准的資產原始轉譯傳遞API**
 
 動態傳送URL擁有下列語法：
-`https://<delivery-api-host>/adobe/assets/deliver/<asset-id>/<seo-name>`，其中，
+`https://<delivery-api-host>/adobe/assets/<asset-id>/original/as/<seo-name>`，其中，
 
 * 主機為`https://delivery-pxxxxx-exxxxxx.adobe.com`
-* 原始轉譯傳遞的API根為`"/adobe/assets/deliver"`
+* 原始轉譯傳遞的API根為`"/adobe/assets"`
 * `<asset-id>`為資產識別碼
+* `/original/as`是open API規格的常數部分，指出原始轉譯稱為
 * `<seo-name>`為具有或不具有副檔名的資產名稱
 
 +++
@@ -521,7 +523,7 @@ URL格式：
 
 ![動態傳遞URL](assets/dynamic-delivery-url.png)
 
-* **縮圖：**&#x200B;縮圖可為影像，資產為PDF、影片、影像等。 不過，您可以使用資產縮圖的高度和寬度屬性作為動態傳送轉譯。
+* **縮圖：**縮圖可為影像，資產為PDF、影片、影像等。 不過，您可以使用資產縮圖的高度和寬度屬性作為動態傳送轉譯。
 下列轉譯集可用於PDF型別資產：
 在sidekick中選取PDF後，選取內容會提供以下資訊。 以下為遍歷JSON物件的方式：
 
@@ -533,21 +535,21 @@ URL格式：
   { 
       "height": 319, 
       "width": 319, 
-      "href": "https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/as/algorithm design.jpg?accept-experimental=1&width=319&height=319&preferwebp=true", 
+      "href": "https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/as/algorithm design.jpg?width=319&height=319", 
       "type": "image/webp" 
   } 
   ```
 
-在上述熒幕擷圖中，如果需要PDF，而非其縮圖，則需要將PDF原始轉譯的傳送URL合併至目標體驗。 例如 `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf?accept-experimental=1`
+在上述熒幕擷圖中，如果需要PDF，而非其縮圖，則需要將PDF原始轉譯的傳送URL合併至目標體驗。 例如 `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf`
 
-* **影片：**&#x200B;您可以使用內嵌iFrame的影片型別資產，使用影片播放器URL。 您可以在目標體驗中使用下列陣列轉譯：
+* **影片：**您可以使用內嵌iFrame的影片型別資產，使用影片播放器URL。 您可以在目標體驗中使用下列陣列轉譯：
   <!--![Video dynamic delivery url](image.png)-->
 
   ```
   { 
       "height": 319, 
       "width": 319, 
-      "href": "https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/as/asDragDrop.2.jpg?accept-experimental=1&width=319&height=319&preferwebp=true", 
+      "href": "https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/as/asDragDrop.2.jpg?width=319&height=319", 
       "type": "image/webp" 
   } 
   ```
@@ -556,7 +558,7 @@ URL格式：
 
   上述熒幕擷取畫面中的程式碼片段為視訊資產的範例。 其中包含轉譯連結陣列。 摘錄中的`selection[5]`是影像縮圖的範例，可做為目標體驗中視訊縮圖的預留位置。 轉譯陣列中的`selection[5]`適用於視訊播放器。 此函式提供HTML，可設為iframe的`src`。 它支援自我調整位元速率串流，這是網頁最佳化的視訊傳送方式。
 
-  在上述範例中，視訊播放器URL為`https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/play?accept-experimental=1`
+  在上述範例中，視訊播放器URL為`https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/play`
 
 +++**具有OpenAPI功能的Dynamic Media資產選擇器使用者介面**
 
@@ -614,8 +616,8 @@ URL格式：
 | *onDrop* | 函數 | 否 | | 該屬性允許資產的放置功能。 |
 | *dropOptions* | `{allowList?: Object}` | 否 | | 使用 &#39;allowList&#39; 設定放置選項。 |
 | *colorScheme* | 字串 | 否 | | 為資產選擇器設定主題 (`light`或者`dark`)。 |
-| *handleSelection* | 函數 | 否 | | 在選取資產並按一下`Select`模組上的按鈕時，叫用資產項目陣列。此函數僅在模組視圖中叫用。對於邊欄視圖，請使用 `handleAssetSelection`或`onDrop` 函數。範例： <pre>handleSelection=(assets: Asset[])=> {...}</pre> 查看[選取的資產類型](#selected-asset-type)以了解詳細資訊。 |
-| *handleAssetSelection* | 函數 | 否 | | 在選擇或取消選擇資產時，以項目陣列叫用。當您想要在使用者選擇資產時進行監聽，這是十分實用的功能。範例： <pre>handleSelection=(assets: Asset[])=> {...}</pre> 查看[選取的資產類型](#selected-asset-type)以了解詳細資訊。 |
+| *handleSelection* | 函數 | 否 | | 在選取資產並按一下`Select`模組上的按鈕時，叫用資產項目陣列。此函數僅在模組視圖中叫用。對於邊欄視圖，請使用 `handleAssetSelection`或`onDrop` 函數。範例： <pre>handleSelection=（資產：資產[]）=> {...}</pre> 查看[選取的資產類型](#selected-asset-type)以了解詳細資訊。 |
+| *handleAssetSelection* | 函數 | 否 | | 在選擇或取消選擇資產時，以項目陣列叫用。當您想要在使用者選擇資產時進行監聽，這是十分實用的功能。範例： <pre>handleSelection=（資產：資產[]）=> {...}</pre> 查看[選取的資產類型](#selected-asset-type)以了解詳細資訊。 |
 | *onClose* | 函數 | 否 | | 在按下`Close`模組視圖中的按鈕時叫用。這只在`modal`視圖中呼叫，而在`rail`視圖中忽略。 |
 | *onFilterSubmit* | 函數 | 否 | | 當使用者變更不同的篩選條件時，以篩選項目叫用。 |
 | *selectionType* | 字串 | 否 | 單身 | 一次設定`single`或`multiple`資產選擇方式。 |
@@ -823,7 +825,7 @@ interface SelectedAsset {
 
 下表說明選取之資產物件的一些重要屬性。
 
-| 屬性 | 類型 | 描述 |
+| 屬性 | 類型 | 說明 |
 |---|---|---|
 | *repo:repositoryId* | 字串 | 儲存資產之存放庫的唯一識別碼。 |
 | *repo:id* | 字串 | 資產的唯一識別碼。 |
@@ -1055,7 +1057,7 @@ const filterSchema = useMemo ((); => {
 
 ### 存放庫切換器 {#repository-switcher}
 
-資產選擇器也可讓您切換存放庫進行資產選擇。您可以從左側面板中的下拉清單中選擇您要的存放庫。下拉清單中可用的存放庫選項是根據`repositoryId` `index.html`檔案中定義的屬性。它是以登入使用者所存取的選定 IMS org 環境為基礎。消費者可以傳遞一個偏好的`repositoryID`，而且在該情況下，資產選擇器將停止呈現 repo 切換器，並僅從指定的存放庫呈現資產。
+資產選擇器也可讓您切換存放庫進行資產選擇。您可以從左側面板中的下拉清單中選擇您要的存放庫。下拉清單中可用的存放庫選項是根據`repositoryId``index.html`檔案中定義的屬性。它是以登入使用者所存取的選定 IMS org 環境為基礎。消費者可以傳遞一個偏好的`repositoryID`，而且在該情況下，資產選擇器將停止呈現 repo 切換器，並僅從指定的存放庫呈現資產。
 
 ### 資產存放庫
 

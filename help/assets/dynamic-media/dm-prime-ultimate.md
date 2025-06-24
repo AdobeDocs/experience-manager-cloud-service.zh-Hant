@@ -3,9 +3,9 @@ title: Dynamic Media Prime 與 Ultimate
 description: 進一步瞭解Dynamic Media Prime和Ultimate、其優點以及兩者之間的差異。
 role: User
 exl-id: fd049d9c-7940-4638-a17a-21d1f85e9c52
-source-git-commit: 3d198ef51c399093da35a9d5821ee16e03fb0543
+source-git-commit: 47afd8f95eee2815f82c429e9800e1e533210a47
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '395'
 ht-degree: 12%
 
 ---
@@ -18,7 +18,7 @@ Adobe Experience Manager as a Cloud Service可讓您存取Dynamic Media Prime和
 
 ## Dynamic Media Prime {#dynamic-media-prime}
 
-Dynamic Media Prime是Experience Manager Assets的啟用服務，提供[具有OpenAPI基本功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md)，可讓組織將AEM Assets與Adobe或非Adobe應用程式整合。 它支援轉換（旋轉、裁切、翻轉、大小、偏好Web、高度、寬度、品質）和最佳化的傳送。
+Dynamic Media Prime是Experience Manager Assets的啟用服務，提供[具有OpenAPI基本功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md)，可讓組織將AEM Assets與Adobe或非Adobe應用程式整合。 它支援轉換（旋轉、裁切、翻轉、高度、寬度和品質）和最佳化的傳送。
 
 如果您需要Dynamic Media基本和進階功能，以及存取AEM as a Cloud Service中的Dynamic Media解決方案，請參閱[Dynamic Media Ultimate](#dynamic-media-ultimate)。
 
@@ -40,7 +40,7 @@ Dynamic Media Prime的其他主要優點包括：
 
 Dynamic Media Ultimate是Experience Manager Assets的啟用服務，包含[具有OpenAPI](/help/assets/dynamic-media-open-apis-overview.md)基本和進階功能的Dynamic Media，以及[AEM as a Cloud Service中的Dynamic Media解決方案](/help/assets/dynamic-media/dynamic-media.md)。 透過其全球性、可擴充、效能最佳化的網路，可讓組織即時產生並提供多種多樣的豐富內容。
 
-除了Dynamic Media Prime功能(例如AEM Assets與Adobe或非Adobe應用程式的整合)、轉換（旋轉、裁切、翻轉、大小、偏好網頁、高度、寬度、品質）和最佳化傳送，Dynamic Media Ultimate也提供：
+除了Dynamic Media Prime功能(例如AEM Assets與Adobe或非Adobe應用程式的整合)、轉換（旋轉、裁切、翻轉、高度、寬度、品質）和最佳化傳送，Dynamic Media Ultimate也提供：
 
 * [具有OpenAPI功能的Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md)進階功能，例如：
 
@@ -50,8 +50,8 @@ Dynamic Media Ultimate是Experience Manager Assets的啟用服務，包含[具�
 * [AEM as a Cloud Service中的Dynamic Media解決方案](/help/assets/dynamic-media/dynamic-media.md)，其中也包含下列主要功能：
 
    * [Dynamic Media 範本](/help/assets/dynamic-media/dynamic-media-templates.md)
-   * [基本範本](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics)
-   * [視覺設定](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-classic/using/master-files/vignette-window-covering-cabinet-files)
+   * [基本範本](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics)
+   * [視覺設定](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/master-files/vignette-window-covering-cabinet-files)
 
 ### 先決條件 {#pre-requisites-dm-ultimate}
 

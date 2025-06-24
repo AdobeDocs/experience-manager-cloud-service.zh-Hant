@@ -4,9 +4,9 @@ description: 了解如何將 Adobe Experience Manager (AEM) as a Cloud Service �
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 4f58a52c5ccc8178e768f9072e7b2047cbe3fb20
+source-git-commit: 47afd8f95eee2815f82c429e9800e1e533210a47
 workflow-type: tm+mt
-source-wordcount: '5993'
+source-wordcount: '5981'
 ht-degree: 92%
 
 ---
@@ -173,7 +173,7 @@ GraphQL 是強式類型 API，這表示資料必須結構明確並依類型編�
 
 GraphQL 規格提供了一系列指南，說明如何建立健全的 API 來查詢特定執行個體上的資料。為此，用戶端必須擷取[結構描述](#schema-generation)，其中包含查詢所需的所有類型。
 
-對於內容片段，GraphQL 結構描述 (結構和類型) 是以&#x200B;**啟用的**&#x200B;[內容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)及其資料類型為基礎。
+對於內容片段，GraphQL 結構描述 (結構和類型) 是以&#x200B;**啟用的**[內容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)及其資料類型為基礎。
 
 >[!CAUTION]
 >
@@ -375,7 +375,7 @@ GraphQL for AEM 支援類型清單。表示所有支援的內容片段模型資�
 >[!NOTE]
 >
 >**一般和陣列中繼資料的區別**
->請記住，`StringMetadata` 和 `StringArrayMetadata` 都是指儲存在存放庫的中繼資料，而不是擷取它們的方式。
+>>請記住，`StringMetadata` 和 `StringArrayMetadata` 都是指儲存在存放庫的中繼資料，而不是擷取它們的方式。
 >
 >例如，呼叫 `stringMetadata` 欄位，您將收到以 `String` 儲存在存放庫之所有中繼資料的陣列，如果呼叫 `stringArrayMetadata`，則會收到以 `String[]` 儲存在存放庫之所有中繼資料的陣列。
 
@@ -795,7 +795,6 @@ GraphQL 中的解決方案代表您可以：
 * `flip`：分項清單，包含 HORIZONTAL、VERTICAL、HORIZONTAL_AND_VERTICAL
 * `quality`：1–100 的整數，表示影像品質的百分比
 * `width`：整數，在定義輸出影像寬度，但會被影像產生器忽略
-* `preferWebp`：布林值，表示是否偏好 webp (預設值為 false)
 
 URL 轉換適用於所有查詢類型：按路徑、清單或分頁。
 
@@ -823,7 +822,6 @@ URL 轉換適用於所有查詢類型：按路徑、清單或分頁。
       flip:HORIZONTAL_AND_VERTICAL
       quality:55
       width:123
-      preferWebp:true
     }
   ) {
     items {
@@ -862,7 +860,6 @@ query ($seoName: String!) {
       flip:HORIZONTAL_AND_VERTICAL
       quality:55
       width:123
-      preferWebp:true
     }
   ) {
     items {
@@ -901,7 +898,6 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
       flip:HORIZONTAL_AND_VERTICAL
       quality:55
       width:123
-      preferWebp:true
     }
   ) {
     items {

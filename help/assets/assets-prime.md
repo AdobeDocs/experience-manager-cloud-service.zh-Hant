@@ -4,10 +4,10 @@ description: 進一步瞭解Assets Prime的主要方面，例如主要優點、�
 feature: Asset Management
 role: User, Admin
 exl-id: 012f94c5-b1c3-4799-8eaf-af68d06c036f
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 47afd8f95eee2815f82c429e9800e1e533210a47
 workflow-type: tm+mt
-source-wordcount: '1152'
-ht-degree: 16%
+source-wordcount: '1150'
+ht-degree: 18%
 
 ---
 
@@ -16,19 +16,19 @@ ht-degree: 16%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 與 Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets 與 Edge Delivery Services 整合</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>使用者介面可擴充性</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用 Dynamic Media Prime 與 Ultimate</b></a>
         </td>
     </tr>
     <tr>
@@ -72,7 +72,7 @@ Assets as a Cloud Service Prime包含輕量版DAM，可讓您執行各種關鍵�
 
   >[!NOTE]
   >
-  >Assets Prime也提供具有OpenAPI功能的Dynamic Media，可讓您存取旋轉、裁切（僅限手動 — 無智慧型裁切）、翻轉、大小、偏好webp、高度、寬度、品質、格式和自我調整視訊串流等基本影像修飾元。 請聯絡Adobe帳戶團隊以進一步瞭解。
+  >Assets Prime也提供具有OpenAPI功能的Dynamic Media，讓您存取旋轉、裁切（僅限手動 — 無智慧型裁切）、翻轉、高度、寬度、品質、格式和自我調整視訊串流等基本影像修飾元。 請聯絡Adobe帳戶團隊以進一步瞭解。
 
 1. [建立新程式](/help/journey-onboarding/create-program.md)。
 
@@ -162,7 +162,7 @@ AEM Assets Collaborator使用者可以透過貴組織在其他Assets產品和非
 1. 按一下AEM as a Cloud Service的生產製作例項：
    ![AEM as a Cloud Service的產品設定檔](assets/aem-cloud-service-instances.png)
 
-1. 按一下Collaborators使用者產品設定檔，然後按一下&#x200B;**[!UICONTROL 新增使用者]**&#x200B;以將使用者新增至產品設定檔。
+1. 按一下Collaborators使用者產品設定檔，然後按一下&#x200B;**[!UICONTROL 新增使用者]**以將使用者新增至產品設定檔。
    ![使用者產品設定檔](assets/aem-assets-collaborator-user-permissions.png)
 
 1. 按一下「**[!UICONTROL 儲存]**」以儲存變更。
@@ -184,7 +184,7 @@ AEM Assets進階使用者可存取所有AEM Assets功能，包括管理資產、
 1. 按一下AEM as a Cloud Service的生產製作例項：
    ![AEM as a Cloud Service的產品設定檔](assets/aem-cloud-service-instances.png)
 
-1. 按一下Power users產品設定檔，然後按一下&#x200B;**[!UICONTROL 新增使用者]**&#x200B;以將使用者新增至產品設定檔。
+1. 按一下Power users產品設定檔，然後按一下&#x200B;**[!UICONTROL 新增使用者]**以將使用者新增至產品設定檔。
    ![使用者產品設定檔](assets/aem-assets-power-user-permissions.png)
 
 1. 按一下「**[!UICONTROL 儲存]**」以儲存變更。

@@ -3,9 +3,9 @@ title: 整合Asset Selector與Dynamic Media Open API
 description: 整合資產選擇器與各種Adobe、非Adobe及協力廠商應用程式。
 role: Admin, User
 exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
-source-git-commit: 48a456039986abf07617d0828fbf95bf7661f6d6
+source-git-commit: 47afd8f95eee2815f82c429e9800e1e533210a47
 workflow-type: tm+mt
-source-wordcount: '949'
+source-wordcount: '967'
 ht-degree: 9%
 
 ---
@@ -105,25 +105,26 @@ aemTierType:[1: "delivery"]
 #### 核准的資產傳送API規格 {#approved-assets-delivery-api-specification}
 
 URL格式：
-`https://<delivery-api-host>/adobe/dynamicmedia/deliver/<asset-id>/<seo-name>.<format>?<image-modification-query-parameters>`
+`https://<delivery-api-host>/adobe/assets/<asset-id>/<seo-name>.<format>?<image-modification-query-parameters>`
 
 其中，
 
 * 主機為`https://delivery-pxxxxx-exxxxxx.adobe.com`
-* API根目錄為`"/adobe/dynamicmedia/deliver"`
+* API根目錄為`"/adobe/assets"`
 * `<asset-id>`為資產識別碼
 * `<seo-name>`為資產名稱
 * `<format>`為輸出格式
 * `<image modification query parameters>`為核准資產的傳遞API規格所支援
 
-#### 核准的資產傳送API {#approved-assets-delivery-api}
+#### 核准的資產原始轉譯傳送API {#approved-assets-delivery-api}
 
 動態傳送URL擁有下列語法：
-`https://<delivery-api-host>/adobe/assets/deliver/<asset-id>/<seo-name>`，其中，
+`https://<delivery-api-host>/adobe/assets/<asset-id>/original/as/<seo-name>`，其中，
 
 * 主機為`https://delivery-pxxxxx-exxxxxx.adobe.com`
-* 原始轉譯傳遞的API根為`"/adobe/assets/deliver"`
+* 原始轉譯傳遞的API根為`"/adobe/assets"`
 * `<asset-id>`為資產識別碼
+* `/original/as`是open API規格的常數部分，指出原始轉譯稱為
 * `<seo-name>`為具有或不具有副檔名的資產名稱
 
 ### 準備挑選動態傳遞URL {#ready-to-pick-dynamic-delivery-url}
@@ -133,7 +134,7 @@ URL格式：
 | 物件 | JSON |
 |---|---|
 | 主機 | `assetJsonObj["repo:repositoryId"]` |
-| API根目錄 | `/adobe/assets/deliver` |
+| API根目錄 | `/adobe/assets` |
 | asset-id | `assetJsonObj["repo:assetId"]` |
 | seo-name | `assetJsonObj["repo:name"]` |
 
@@ -141,7 +142,7 @@ URL格式：
 
 ![動態傳遞URL](assets/dynamic-delivery-url.png)
 
-* **縮圖：**&#x200B;縮圖可為影像，資產為PDF、影片、影像等。 不過，您可以使用資產縮圖的高度和寬度屬性作為動態傳送轉譯。
+* **縮圖：**縮圖可為影像，資產為PDF、影片、影像等。 不過，您可以使用資產縮圖的高度和寬度屬性作為動態傳送轉譯。
 下列轉譯集可用於PDF型別資產：
 在sidekick中選取PDF後，選取內容會提供以下資訊。 以下為遍歷JSON物件的方式：
 
@@ -153,21 +154,21 @@ URL格式：
   { 
       "height": 319, 
       "width": 319, 
-      "href": "https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/as/algorithm design.jpg?accept-experimental=1&width=319&height=319&preferwebp=true", 
+      "href": "https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/as/algorithm design.jpg?width=319&height=319", 
       "type": "image/webp" 
   } 
   ```
 
-在上述熒幕擷圖中，如果需要PDF，而非其縮圖，則需要將PDF原始轉譯的傳送URL合併至目標體驗。 例如 `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf?accept-experimental=1`
+在上述熒幕擷圖中，如果需要PDF，而非其縮圖，則需要將PDF原始轉譯的傳送URL合併至目標體驗。 例如 `https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf`
 
-* **影片：**&#x200B;您可以使用內嵌iFrame的影片型別資產，使用影片播放器URL。 您可以在目標體驗中使用下列陣列轉譯：
+* **影片：**您可以使用內嵌iFrame的影片型別資產，使用影片播放器URL。 您可以在目標體驗中使用下列陣列轉譯：
   <!--![Video dynamic delivery url](image.png)-->
 
   ```
   { 
       "height": 319, 
       "width": 319, 
-      "href": "https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/as/asDragDrop.2.jpg?accept-experimental=1&width=319&height=319&preferwebp=true", 
+      "href": "https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/as/asDragDrop.2.jpg?width=319&height=319", 
       "type": "image/webp" 
   } 
   ```
@@ -176,7 +177,7 @@ URL格式：
 
   上述熒幕擷取畫面中的程式碼片段為視訊資產的範例。 其中包含轉譯連結陣列。 摘錄中的`selection[5]`是影像縮圖的範例，可做為目標體驗中視訊縮圖的預留位置。 轉譯陣列中的`selection[5]`適用於視訊播放器。 此函式提供HTML，可設為iframe的`src`。 它支援自我調整位元速率串流，這是網頁最佳化的視訊傳送方式。
 
-  在上述範例中，視訊播放器URL為`https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/play?accept-experimental=1`
+  在上述範例中，視訊播放器URL為`https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/play`
 
 ### 設定自訂篩選器 {#configure-custom-filters-dynamic-media-open-api}
 
