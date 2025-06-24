@@ -5,9 +5,9 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="私人測試版" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#manage-access-tokens"
 exl-id: bc9f392c-61f5-4d39-972b-4c6c8f9bab4a
-source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
+source-git-commit: 52e05be90dc1a4997c6b65306bc646d03456c971
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '403'
 ht-degree: 3%
 
 ---
@@ -45,11 +45,9 @@ Cloud Manager使用存取權杖來管理託管於外部Git平台上的存放庫�
 1. 在&#x200B;**管理存取權杖**&#x200B;對話方塊中，在權杖名稱的右側，按一下![編輯圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg)。
 1. 在&#x200B;**編輯存取權杖**&#x200B;對話方塊中，更新&#x200B;**權杖名稱**&#x200B;或&#x200B;**存取權杖**&#x200B;值，或兩者皆更新。
 
-   如果&#x200B;**存取Token**&#x200B;目前正在使用中，則會出現通知警告您，所有關聯的存放庫都會在更新後自動重新驗證。
-
    ![編輯存取權杖對話方塊](/help/implementing/cloud-manager/managing-code/assets/access-tokens-edit.png)
 
-1. 如果Token正在使用中，通知會警告您所有關聯的存放庫都會自動重新驗證。
+1. 如果&#x200B;**存取Token**&#x200B;目前正在使用中，則會出現通知警告您，所有關聯的存放庫都會在更新後自動重新驗證。
 
 1. 按一下&#x200B;**更新**&#x200B;以儲存變更。
 
