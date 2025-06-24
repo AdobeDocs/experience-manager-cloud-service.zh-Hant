@@ -162,7 +162,7 @@ AEM Assets Collaborator使用者可以透過貴組織在其他Assets產品和非
 1. 按一下AEM as a Cloud Service的生產製作例項：
    ![AEM as a Cloud Service的產品設定檔](assets/aem-cloud-service-instances.png)
 
-1. 按一下Collaborators使用者產品設定檔，然後按一下&#x200B;**[!UICONTROL 新增使用者]**以將使用者新增至產品設定檔。
+1. 按一下Collaborators使用者產品設定檔，然後按一下&#x200B;**[!UICONTROL 新增使用者]**&#x200B;以將使用者新增至產品設定檔。
    ![使用者產品設定檔](assets/aem-assets-collaborator-user-permissions.png)
 
 1. 按一下「**[!UICONTROL 儲存]**」以儲存變更。
@@ -184,7 +184,7 @@ AEM Assets進階使用者可存取所有AEM Assets功能，包括管理資產、
 1. 按一下AEM as a Cloud Service的生產製作例項：
    ![AEM as a Cloud Service的產品設定檔](assets/aem-cloud-service-instances.png)
 
-1. 按一下Power users產品設定檔，然後按一下&#x200B;**[!UICONTROL 新增使用者]**以將使用者新增至產品設定檔。
+1. 按一下Power users產品設定檔，然後按一下&#x200B;**[!UICONTROL 新增使用者]**&#x200B;以將使用者新增至產品設定檔。
    ![使用者產品設定檔](assets/aem-assets-power-user-permissions.png)
 
 1. 按一下「**[!UICONTROL 儲存]**」以儲存變更。

@@ -173,7 +173,7 @@ GraphQL 是強式類型 API，這表示資料必須結構明確並依類型編�
 
 GraphQL 規格提供了一系列指南，說明如何建立健全的 API 來查詢特定執行個體上的資料。為此，用戶端必須擷取[結構描述](#schema-generation)，其中包含查詢所需的所有類型。
 
-對於內容片段，GraphQL 結構描述 (結構和類型) 是以&#x200B;**啟用的**[內容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)及其資料類型為基礎。
+對於內容片段，GraphQL 結構描述 (結構和類型) 是以&#x200B;**啟用的**&#x200B;[內容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)及其資料類型為基礎。
 
 >[!CAUTION]
 >
@@ -375,7 +375,7 @@ GraphQL for AEM 支援類型清單。表示所有支援的內容片段模型資�
 >[!NOTE]
 >
 >**一般和陣列中繼資料的區別**
->>請記住，`StringMetadata` 和 `StringArrayMetadata` 都是指儲存在存放庫的中繼資料，而不是擷取它們的方式。
+>&#x200B;>請記住，`StringMetadata` 和 `StringArrayMetadata` 都是指儲存在存放庫的中繼資料，而不是擷取它們的方式。
 >
 >例如，呼叫 `stringMetadata` 欄位，您將收到以 `String` 儲存在存放庫之所有中繼資料的陣列，如果呼叫 `stringArrayMetadata`，則會收到以 `String[]` 儲存在存放庫之所有中繼資料的陣列。
 
