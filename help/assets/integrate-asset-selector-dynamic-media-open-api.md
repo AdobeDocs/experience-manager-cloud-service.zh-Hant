@@ -3,10 +3,10 @@ title: 整合Asset Selector與Dynamic Media Open API
 description: 整合資產選擇器與各種Adobe、非Adobe及協力廠商應用程式。
 role: Admin, User
 exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
-source-git-commit: 47afd8f95eee2815f82c429e9800e1e533210a47
+source-git-commit: f171bbeaf01e2d9be3a8f3b5172919a5e8ca7d97
 workflow-type: tm+mt
-source-wordcount: '967'
-ht-degree: 9%
+source-wordcount: '982'
+ht-degree: 8%
 
 ---
 
@@ -97,7 +97,7 @@ aemTierType:[1: "delivery"]
 | 物件 | JSON |
 |---|---|
 | 主機 | `assetJsonObj["repo:repositoryId"]` |
-| API根目錄 | `/adobe/dynamicmedia/deliver` |
+| API根目錄 | `/adobe/assets` |
 | asset-id | `assetJsonObj["repo:assetId"]` |
 | seo-name | `assetJsonObj["repo:name"].split(".").slice(0,-1).join(".")` |
 | 格式 | `.jpg` |
@@ -105,16 +105,17 @@ aemTierType:[1: "delivery"]
 #### 核准的資產傳送API規格 {#approved-assets-delivery-api-specification}
 
 URL格式：
-`https://<delivery-api-host>/adobe/assets/<asset-id>/<seo-name>.<format>?<image-modification-query-parameters>`
+`https://<delivery-api-host>/adobe/assets/<asset-id>/as/<seo-name>.<format>?<image-modification-query-parameters>`
 
 其中，
 
 * 主機為`https://delivery-pxxxxx-exxxxxx.adobe.com`
 * API根目錄為`"/adobe/assets"`
 * `<asset-id>`為資產識別碼
+* `as`是open API規格的常數部分，指出要參照的資產名稱
 * `<seo-name>`為資產名稱
 * `<format>`為輸出格式
-* `<image modification query parameters>`為核准資產的傳遞API規格所支援
+* `<image modification query parameters>`為已核准資產的傳遞API規格所支援
 
 #### 核准的資產原始轉譯傳送API {#approved-assets-delivery-api}
 
@@ -142,7 +143,7 @@ URL格式：
 
 ![動態傳遞URL](assets/dynamic-delivery-url.png)
 
-* **縮圖：**&#x200B;縮圖可為影像，資產為PDF、影片、影像等。 不過，您可以使用資產縮圖的高度和寬度屬性作為動態傳送轉譯。
+* **縮圖：**縮圖可為影像，資產為PDF、影片、影像等。 不過，您可以使用資產縮圖的高度和寬度屬性作為動態傳送轉譯。
 下列轉譯集可用於PDF型別資產：
 在sidekick中選取PDF後，選取內容會提供以下資訊。 以下為遍歷JSON物件的方式：
 
@@ -161,14 +162,14 @@ URL格式：
 
 在上述熒幕擷圖中，如果需要PDF，而非其縮圖，則需要將PDF原始轉譯的傳送URL合併至目標體驗。 例如 `https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf`
 
-* **影片：**&#x200B;您可以使用內嵌iFrame的影片型別資產，使用影片播放器URL。 您可以在目標體驗中使用下列陣列轉譯：
+* **影片：**您可以使用內嵌iFrame的影片型別資產，使用影片播放器URL。 您可以在目標體驗中使用下列陣列轉譯：
   <!--![Video dynamic delivery url](image.png)-->
 
   ```
   { 
       "height": 319, 
       "width": 319, 
-      "href": "https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/as/asDragDrop.2.jpg?width=319&height=319", 
+      "href": "https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/as/DragDrop.2.jpg?width=319&height=319", 
       "type": "image/webp" 
   } 
   ```
@@ -199,12 +200,12 @@ URL格式：
 
 ![具有OpenAPI功能UI的Dynamic Media](assets/polaris-ui.png)
 
-* **A**：[隱藏/顯示面板](#hide-show-panel)
-* **B**： [Assets](#repository)
-* **C**： [排序](#sorting)
-* **D**：[篩選器](#filters)
-* **E**：[搜尋列](#search-bar)
-* **F**： [依遞增或遞減順序排序](#sorting)
+* **A**：隱藏/顯示面板
+* **B**： Assets
+* **C**：排序
+* **D**：篩選器
+* **E**：搜尋列
+* **F**：以遞增或遞減順序排序
 * **G**：取消選取
 * **H**：選取單一或多個資產
 
