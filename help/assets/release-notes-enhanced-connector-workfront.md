@@ -4,10 +4,10 @@ description: ' [!DNL Workfront for Experience Manager enhanced connector] 版發
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 feature: Release Information
 role: Admin
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: cb06380e4d3977f4f70a6444923cda2b0566d173
 workflow-type: tm+mt
-source-wordcount: '1724'
-ht-degree: 98%
+source-wordcount: '1761'
+ht-degree: 96%
 
 ---
 
@@ -16,19 +16,19 @@ ht-degree: 98%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 與 Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets 與 Edge Delivery Services 整合</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>使用者介面可擴充性</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用 Dynamic Media Prime 與 Ultimate</b></a>
         </td>
     </tr>
     <tr>
@@ -50,15 +50,19 @@ ht-degree: 98%
     </tr>
 </table>
 
-以下章節概述 [!DNL Workfront for Experience Manager enhanced connector] 版的一般發行說明。
+以下區段概述 [!DNL Workfront for Experience Manager enhanced connector] 的一般發行說明。
 
-[!DNL Workfront for Experience Manager enhanced connector] 最新版本 1.9.20 的發行日期是 2024 年 9 月 6 日。
+[!DNL Workfront for Experience Manager enhanced connector]的最新1.9.21版本的發行日期為2025年6月25日。
 
 ## 版本重點 {#release-highlights}
 
-[!DNL Workfront for Experience Manager enhanced connector] 的最新版本包括以下錯誤修復：
+[!DNL Workfront for Experience Manager enhanced connector]的最新版本包含下列增強功能和錯誤修正：
 
-* 上傳和建立現有資產的新版本時，遺失 MIME 類型。
+* 改善API要求記錄，避免驗證失敗的誤判記錄。
+
+* 修正Workfront API呼叫的連線洩漏問題。
+
+* 支援適用於Java 17和Java 21版本的Workfront增強型聯結器與6.5 LTS。
 
 >[!NOTE]
 >
@@ -75,6 +79,10 @@ ht-degree: 98%
 * 在使用傳統 Workfront 體驗時，「**[!UICONTROL 更多]**」下拉式清單中的「**[!UICONTROL 傳送至]**」選項不允許您在 Experience Manager 之內選取目標目的地。使用「**[!UICONTROL 文件動作]**」下拉式清單時，「**[!UICONTROL 傳送至]**」選項正常運作。在使用新的 Workfront 體驗時，「**[!UICONTROL 更多]**」下拉式清單和「**[!UICONTROL 文件動作]**」下拉式清單的「**[!UICONTROL 傳送至]**」選項正常運作。
 
 ## 舊版本 {#previous-releases}
+
+### 2024 年 9 月版 {#september-2024-release}
+
+* 上傳和建立現有資產的新版本時，遺失 MIME 類型。
 
 ### 2024 年 4 月版 {#april-2024-release}
 
@@ -94,9 +102,9 @@ ht-degree: 98%
 
 ### 2024 年 1 月版 {#january-2024-release}
 
-* [!DNL CRX DE] 中的 [!DNL Workfront] 設定目前不儲存 `project ID`，導致套用唯讀權限時發生錯誤。詳細了解如何[設定權限](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html?lang=zh-Hant#linked-folders)。
+* [!DNL CRX DE] 中的 [!DNL Workfront] 設定目前不儲存 `project ID`，導致套用唯讀權限時發生錯誤。詳細了解如何[設定權限](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#linked-folders)。
 
-* 沒有關於如何將自訂屬性新增至開箱即用索引定義的公開文件。深入瞭解[新增自訂屬性](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html?lang=zh-Hant#metadata-schema-mapping)。
+* 沒有關於如何將自訂屬性新增至開箱即用索引定義的公開文件。深入瞭解[新增自訂屬性](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#metadata-schema-mapping)。
 
 * 刪除增強型連接器上的連線設定會明顯影響事件訂閱和其他已儲存的設定，導致它們指向舊 URL。
 
