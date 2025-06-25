@@ -4,9 +4,9 @@ description: 瞭解如何在設定檔案中宣告規則，再使用Cloud Manager
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: ab855192e4b60b25284b19cc0e3a8e9da5a7409c
+source-git-commit: bfe0538660474d445a60fa1c8174d7a690b1dc4c
 workflow-type: tm+mt
-source-wordcount: '1712'
+source-wordcount: '1939'
 ht-degree: 3%
 
 ---
@@ -32,7 +32,7 @@ Adobe提供的CDN具有多項功能和服務，部分功能和服務會仰賴憑
 
 ## 客戶管理的CDN HTTP標頭值 {#CDN-HTTP-value}
 
-如AEM as a Cloud Service[&#128279;](/help/implementing/dispatcher/cdn.md#point-to-point-CDN)頁面中的CDN中所述，客戶可以選擇透過自己的CDN路由流量，這稱為「客戶CDN」（有時也稱為BYOCDN）。
+如AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md#point-to-point-CDN)頁面中的[CDN中所述，客戶可以選擇透過自己的CDN路由流量，這稱為「客戶CDN」（有時也稱為BYOCDN）。
 
 在設定過程中，Adobe CDN和客戶CDN必須同意`X-AEM-Edge-Key` HTTP標題的值。 此值在傳送至Adobe CDN之前，會先在客戶CDN的每個要求上設定，接著由CDN驗證值是否如預期般符合，因此可信任其他HTTP標頭，包括有助於將要求傳送至適當AEM來源的標頭。
 
@@ -65,7 +65,7 @@ data:
 
 請參閱[「使用設定管道」](/help/operations/config-pipeline.md#common-syntax)，取得 `data` 節點上方屬性的描述。`kind`屬性值應該是&#x200B;*CDN*，且`version`屬性應該設定為`1`。
 
-如需詳細資訊，請參閱[設定和部署HTTP標頭驗證CDN規則](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule)教學課程步驟。
+如需詳細資訊，請參閱[設定和部署HTTP標頭驗證CDN規則](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule)教學課程步驟。
 
 其他屬性包括：
 
@@ -119,6 +119,29 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H "X-Forwarded-H
 
 成功測試後，可移除其他條件並重新部署設定。
 
+### 移轉程式(如果Adobe支援先前產生`X-AEM-Edge-Key` HTTP標頭值) {#migrating-legacy}
+
+>[!NOTE]
+>在繼續移轉之前，請排程中繼環境上的測試移轉以驗證策略。
+
+>[!WARNING]
+> 在步驟4之前，請勿變更客戶管理的CDN中的金鑰。
+
+先前，與客戶管理的CDN整合的程式涉及客戶向Adobe支援請求X-AEM-Edge-Key HTTP標題值，而非自行定義值。 若要遷移到新的自助服務方法（您可定義自己的邊緣索引鍵值），請按照以下步驟以確保順利轉換且沒有停機時間：
+
+1. 使用指定為`edgeKey1`和`edgeKey2`的新（客戶產生）和舊(Adobe產生)密碼來設定CDN設定。 這是[旋轉秘密](/help/implementing/dispatcher/cdn-credentials-authentication.md#rotating-secrets)檔案的變數。
+
+2. 部署秘密和自助CDN設定。 在這個程式中的這個階段，舊的Adobe定義密碼仍應維持為客戶管理的CDN所傳遞的X-AEM-Edge-Key值。
+
+3. 請聯絡Adobe支援，要求Adobe切換使用自助設定，並指定您已部署該設定。
+
+4. 在Adobe確認已執行該動作後，請將您的客戶管理的CDN設定為`X-AEM-Edge-Key` HTTP標頭值使用新的客戶定義金鑰。
+
+5. 從CDN設定中移除舊金鑰，並再次部署設定管道。
+
+>[!WARNING]
+>如果您未將兩個金鑰同時設定為遞補，則可能會導致移轉期間發生停機。
+
 ## 清除API Token {#purge-API-token}
 
 客戶可以使用宣告的清除API權杖[清除CDN快取](/help/implementing/dispatcher/cdn-cache-purge.md)。 Token是在名為`cdn.yaml`或類似的檔案中宣告的，位於最上層`config`資料夾的某處。 閱讀[使用設定管道](/help/operations/config-pipeline.md#folder-structure)，以取得資料夾結構以及如何部署設定的詳細資訊。
@@ -164,7 +187,7 @@ data:
 >[!NOTE]
 >在部署參考清除金鑰的組態之前，必須將清除金鑰設定為[機密型別Cloud Manager環境變數](/help/operations/config-pipeline.md#secret-env-vars)。 建議使用至少32個位元組長度的唯一隨機金鑰；例如，Open SSL密碼編譯程式庫可以透過執行命令openssl rand -hex 32來產生隨機金鑰
 
-您可以參考以設定清除金鑰和執行CDN快取清除為重點的[教學課程](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache)。
+您可以參考以設定清除金鑰和執行CDN快取清除為重點的[教學課程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache)。
 
 ## 基本驗證 {#basic-auth}
 
@@ -235,7 +258,6 @@ data:
          type: edge
          edgeKey1: ${{CDN_EDGEKEY_052824}}
    ```
-
 1. 輪換金鑰時，請建立新的Cloud Manager密碼，例如`${{CDN_EDGEKEY_041425}}`。
 1. 在設定中，從`edgeKey2`參照並部署。
 
@@ -257,7 +279,6 @@ data:
          type: edge
          edgeKey2: ${{CDN_EDGEKEY_041425}}
    ```
-
 1. 從Cloud Manager刪除舊密碼參考(`${{CDN_EDGEKEY_052824}}`)並進行部署。
 
 1. 準備好進行下一次輪換時，請遵循相同的程式，不過這次您會新增`edgeKey1`至組態，並參考名為的新Cloud Manager環境密碼，例如`${{CDN_EDGEKEY_031426}}`。
