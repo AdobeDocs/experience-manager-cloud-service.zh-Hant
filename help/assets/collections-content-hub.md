@@ -3,9 +3,9 @@ title: 在Content Hub中管理集合
 description: 瞭解如何在Content Hub中管理集合
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: 6bc838ff76edda3e03cbde8da4a28f65cba3b36a
+source-git-commit: fd45c1aadbbab7475becb94f9df27bbd5a1c165b
 workflow-type: tm+mt
-source-wordcount: '1055'
+source-wordcount: '1106'
 ht-degree: 9%
 
 ---
@@ -13,40 +13,75 @@ ht-degree: 9%
 # 管理[!DNL Content Hub]中的集合 {#manage-collections}
 
 <table>
+
     <tr>
+
         <td>
+
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 與 Ultimate</b></a>
+
         </td>
+
         <td>
+
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+
         </td>
+
         <td>
+
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets 與 Edge Delivery Services 整合</b></a>
+
         </td>
+
         <td>
+
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>使用者介面可擴充性</b></a>
+
         </td>
+
           <td>
+
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用 Dynamic Media Prime 與 Ultimate</b></a>
+
         </td>
+
     </tr>
+
     <tr>
+
         <td>
+
             <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+
         </td>
+
         <td>
+
             <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+
         </td>
+
         <td>
+
             <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+
         </td>
+
         <td>
+
             <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+
         </td>
+
         <td>
+
             <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+
         </td>
+
     </tr>
+
 </table>
 
 <!-- ![Manage collections](assets/manage-collections.jpg) -->
@@ -93,17 +128,22 @@ ht-degree: 9%
 
    | 存取方法 | 存取類型 | 說明 |
    |---|---|---|
-   | **只有您和系統管理員可以存取** | 私人 | 只有建立者和管理員可以編輯和存取此集合。 |
-   | **任何人都可以存取** | 公用 | 所有人都可以存取此集合，但只有建立者和管理員可以編輯。 |
-   | **任何人都可以存取和編輯** | 公用 | 此集合對所有人開放，可授予完整存取及編輯許可權，不受限制。 |
+   | **只有您和系統管理員可以編輯** | 私人 | 只有建立者和管理員可以編輯和存取此集合。 |
+   | **任何人都可以檢視** | 公用 | 所有人都可以存取此集合，但只有建立者和管理員可以編輯。 |
+   | **任何人都可以檢視和編輯** | 公用 | 此集合對所有人開放，可授予完整存取及編輯許可權，不受限制。 |
+
+   >[!NOTE]
+   >
+   > [!DNL Content Hub]管理員可以檢視&#x200B;**[!UICONTROL 誰可以存取]**&#x200B;下拉式清單下所有可用的選項，而對於一般使用者，您需要[指定並設定](configure-content-hub-ui-options.md)他們可以存取的選項。
 
 1. 按一下「**[!UICONTROL 建立]**」。完成後，您可以[將資產新增至集合](#add-assets-to-existing-collection)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463336)
 
+<!--
 >[!NOTE]
 >
->集合治理是有限的可用性功能。 您可以透過建立支援票證來啟用它。 啟用後，您需要[在Content Hub](configure-content-hub-ui-options.md#configure-collections-content-hub)中設定集合。
+>Collections governance is a limited availability feature. You can get it enabled  by creating a support ticket. Once enabled, you need to [Configure Collections in Content Hub](configure-content-hub-ui-options.md#configure-collections-content-hub).-->
 
 <!--To create a new collection, navigate to the **[!UICONTROL Collections]** tab and click **[!UICONTROL Create new collection]**. Enter the **[!UICONTROL Title]** and provide an optional **[!UICONTROL Description]** for the assets. Click **[!UICONTROL Create]**.
 ![Create collection](assets/add-assets-collection.jpg)          
@@ -125,7 +165,7 @@ ht-degree: 9%
 
 ### 篩選集合檢視 {#filter-collections-view}
 
-Content Hub可讓您篩選集合檢視，根據您的偏好縮小選項，輕鬆找出您要尋找的確切內容。 確定Content Hub[&#128279;](configure-content-hub-ui-options.md#configure-collections-content-hub)中集合的設定。
+Content Hub可讓您篩選集合檢視，根據您的偏好縮小選項，輕鬆找出您要尋找的確切內容。 確定Content Hub](configure-content-hub-ui-options.md#configure-collections-content-hub)中集合的[設定。
 
 若要篩選集合檢視，請前往&#x200B;**[!DNL Collections]**&#x200B;索引標籤，並導覽至「集合」下拉式清單。 從下列選項中選擇：
 
@@ -174,17 +214,23 @@ Content Hub可讓您篩選集合檢視，根據您的偏好縮小選項，輕鬆
 
 您也可以共用收藏集中可用的資產。 請確定[在Content Hub](configure-content-hub-ui-options.md#enable-public-link-sharing)中啟用公用連結共用。 瀏覽至&#x200B;**[!UICONTROL 集合]**&#x200B;索引標籤。 選取集合卡上的![共用圖示](assets/share.svg)圖示。 會複製共用連結。 您可以與收件者共用複製的連結。 深入瞭解[在 [!DNL Content Hub]](share-assets-content-hub.md)中共用資產。
 
-在Content Hub中共用集合時，您可以定義存取範圍以及收件者可以對系統內的數位資源執行的動作。 Content Hub集合提供全方位的控管工具，包括可自訂的共用許可權和共同作業功能，以有效管理資產。 從唯讀存取到完整管理控制，這些設定支援對資產散佈進行精細治理。
+Content Hub集合提供全方位的控管工具，包括可自訂的共用許可權和共同作業功能，以有效管理資產。 從唯讀存取到完整管理控制，這些設定支援對資產散佈進行精細治理。 單獨或作為集合的一部分共用資產時，存取範圍由指派給使用者的集合當前存取層級決定。 或者，您無法共用私人集合。
 
 ## 編輯集合的詳細資料 {#edit-details-of-collection}
 
-若要編輯集合的&#x200B;**[!UICONTROL Title]**&#x200B;和&#x200B;**[!UICONTROL Description]**，請按一下集合名稱，然後按一下![資訊圖示](assets/info-icon.svg)圖示。 顯示[!UICONTROL 集合詳細資料]畫面，可讓您編輯集合的&#x200B;**[!UICONTROL 標題]**&#x200B;和&#x200B;**[!UICONTROL 描述]**。 按一下&#x200B;**[!UICONTROL 儲存變更]**&#x200B;以確認修改。
+若要編輯集合的&#x200B;**[!UICONTROL Title]**&#x200B;和&#x200B;**[!UICONTROL Description]**，請按一下集合名稱，然後按一下![資訊圖示](assets/info-icon.svg)圖示。 顯示[!UICONTROL 集合詳細資料]畫面，可讓您編輯集合的&#x200B;**[!UICONTROL 標題]**&#x200B;和&#x200B;**[!UICONTROL 描述]**。 按一下&#x200B;**[!UICONTROL 儲存變更]**&#x200B;以確認修改。 此外，您可以根據設定，透過「編輯系列」對話方塊更新系列存取權。
 
 ![集合詳細資料](assets/collection-details.png)
 
 ## 從集合移除資產{#remove-assets-from-a-collection}
 
-您可以從集合中移除單一或多個資產。 若要從集合中移除資產，請按一下需要移除資產的集合、選取資產，然後按一下[從集合中移除]。**&#x200B;**
+下列使用者可以從集合中移除單一或多個資產：
+
+* 管理員
+* 集合的擁有者
+* 具有編輯許可權的非管理員使用者
+
+若要從集合中移除資產，請按一下需要移除資產的集合、選取資產，然後按一下[從集合中移除]。****
 
 ![移除集合](assets/remove-collection-new.jpg)
 
@@ -193,7 +239,7 @@ Content Hub可讓您篩選集合檢視，根據您的偏好縮小選項，輕鬆
 
 ## 刪除集合{#delete-collection}
 
-若要刪除集合，請導覽至&#x200B;**[!UICONTROL 集合]**&#x200B;索引標籤，然後按一下您要刪除的集合。 按一下![移除圖示](assets/remove-icon.svg)圖示以刪除集合。
+只有管理員和建立者可以刪除集合。 若要刪除集合，請導覽至&#x200B;**[!UICONTROL 集合]**&#x200B;索引標籤，然後按一下您要刪除的集合。 按一下![刪除圖示](assets/delete-icon.svg)圖示以刪除集合。
 
 
 
