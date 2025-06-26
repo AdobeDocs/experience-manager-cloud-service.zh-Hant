@@ -3,9 +3,9 @@ title: 在Content Hub中管理集合
 description: 瞭解如何在Content Hub中管理集合
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: fd45c1aadbbab7475becb94f9df27bbd5a1c165b
+source-git-commit: c98d5ba776f13549c4b82bdbe8f9220663ccb50e
 workflow-type: tm+mt
-source-wordcount: '1106'
+source-wordcount: '1110'
 ht-degree: 9%
 
 ---
@@ -13,40 +13,75 @@ ht-degree: 9%
 # 管理[!DNL Content Hub]中的集合 {#manage-collections}
 
 <table>
+
     <tr>
+
         <td>
+
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 與 Ultimate</b></a>
+
         </td>
+
         <td>
+
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+
         </td>
+
         <td>
+
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets 與 Edge Delivery Services 整合</b></a>
+
         </td>
+
         <td>
+
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>使用者介面可擴充性</b></a>
+
         </td>
+
           <td>
+
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用 Dynamic Media Prime 與 Ultimate</b></a>
+
         </td>
+
     </tr>
+
     <tr>
+
         <td>
+
             <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
+
         </td>
+
         <td>
+
             <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
+
         </td>
+
         <td>
+
             <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+
         </td>
+
         <td>
+
             <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
+
         </td>
+
         <td>
+
             <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
+
         </td>
+
     </tr>
+
 </table>
 
 <!-- ![Manage collections](assets/manage-collections.jpg) -->
@@ -130,11 +165,11 @@ ht-degree: 9%
 
 ### 篩選集合檢視 {#filter-collections-view}
 
-Content Hub可讓您篩選集合檢視，根據您的偏好縮小選項，輕鬆找出您要尋找的確切內容。 確定Content Hub[&#128279;](configure-content-hub-ui-options.md#configure-collections-content-hub)中集合的設定。
+Content Hub可讓您篩選集合檢視，根據您的偏好縮小選項，輕鬆找出您要尋找的確切內容。 確定Content Hub](configure-content-hub-ui-options.md#configure-collections-content-hub)中集合的[設定。
 
 若要篩選集合檢視，請前往&#x200B;**[!DNL Collections]**&#x200B;索引標籤，並導覽至「集合」下拉式清單。 從下列選項中選擇：
 
-* **[!UICONTROL 所有集合]：**&#x200B;選取此選項可檢視與您共用的私人集合。
+* **[!UICONTROL 所有集合]：**&#x200B;選取此選項可檢視及編輯所有集合，包括私人或與您共用的集合。
 * **[!UICONTROL 只有我]：**&#x200B;選取此選項可檢視您有存取權的集合。
 * **[!UICONTROL 任何人都可以檢視]：**&#x200B;此選項可讓您篩選每個人都可存取但只有建立者可編輯的集合。
 * **[!UICONTROL 任何人都可以編輯]：**&#x200B;選取此選項以篩選每個人都可以存取及編輯的集合。
@@ -195,7 +230,7 @@ Content Hub集合提供全方位的控管工具，包括可自訂的共用許可
 * 集合的擁有者
 * 具有編輯許可權的非管理員使用者
 
-若要從集合中移除資產，請按一下需要移除資產的集合、選取資產，然後按一下[從集合中移除]。**&#x200B;**
+若要從集合中移除資產，請按一下需要移除資產的集合、選取資產，然後按一下[從集合中移除]。****
 
 ![移除集合](assets/remove-collection-new.jpg)
 
