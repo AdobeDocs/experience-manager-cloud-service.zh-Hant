@@ -17,7 +17,7 @@ ht-degree: 75%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=zh-Hant) |
 | AEM as a Cloud Service  | 本文章 |
 
 在AEM Forms as a Cloud Service上啟用最適化Forms核心元件，可讓您開始建立、發佈及交付核心元件式的最適化Forms和Headless Forms ，並使用AEM Forms Cloud Service例項至多個管道。 您需要啟用調適型表單核心元件的環境才能使用 Headless 調適型表單。
@@ -315,7 +315,7 @@ ht-degree: 75%
     git push origin
    ```
 
-1. 將檔案提交到 Git 存放庫後，[執行管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)。
+1. 將檔案提交到 Git 存放庫後，[執行管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=zh-Hant)。
 
    執行好管道後，為對應環境啟用調適型表單核心元件。 此外，調適型表單 (核心元件) 範本和 Canvas 3.0 主題新增至您的 Forms as a Cloud Service 環境中，為您提供自訂和建以核心元件為主調適型表單的選項。
 
@@ -324,7 +324,7 @@ ht-degree: 75%
 
 ### 核心元件有哪些？ {#core-components}
 
-[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 是一組適用於 AEM 的標準化網站內容管理 (WCM) 元件，可加快開發時間並降低網站的維護成本。
+[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant) 是一組適用於 AEM 的標準化網站內容管理 (WCM) 元件，可加快開發時間並降低網站的維護成本。
 
 ### 啟用核心元件時新增哪些功能？ {#core-components-capabilities}
 
@@ -333,7 +333,7 @@ ht-degree: 75%
 * [建立以核心元件為主的調適型表單](/help/forms/creating-adaptive-form-core-components.md)。
 * [建立以核心元件為主的調適型表單範本](/help/forms/template-editor.md)。
 * [為以核心元件為主的調適型表單範本建立自訂主題](/help/forms/using-themes-in-core-components.md)。
-* [將以核心元件為主的調適型表單的代表提供給一些管道，例如行動、網頁、本機應用程式和需要表單以 Headless 呈現的服務。](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html)。
+* [將以核心元件為主的調適型表單的代表提供給一些管道，例如行動、網頁、本機應用程式和需要表單以 Headless 呈現的服務。](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=zh-Hant)。
 
 ### 系統是否已為我的環境啟用調適型表單核心元件？ {#enable-components}
 
