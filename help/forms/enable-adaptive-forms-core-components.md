@@ -1,15 +1,15 @@
 ---
-title: 如何在AEM Formsas a Cloud Service和本機開發環境中啟用最適化Forms核心元件？
-description: 瞭解如何在AEM Formsas a Cloud Service上啟用最適化Forms核心元件。
+title: 如何在Forms as a Cloud Service和本機開發環境中啟用最適化AEM Forms核心元件？
+description: 瞭解如何在AEM Forms as a Cloud Service上啟用最適化Forms核心元件。
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin, Developer, User
 feature: Adaptive Forms, Core Components
 exl-id: 32a574e2-faa9-4724-a833-1e4c584582cf
-source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+source-git-commit: 0656e923c4b50d0554780ecf56dd08302a165fa9
 workflow-type: tm+mt
-source-wordcount: '985'
-ht-degree: 85%
+source-wordcount: '1113'
+ht-degree: 75%
 
 ---
 
@@ -17,10 +17,10 @@ ht-degree: 85%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html) |
 | AEM as a Cloud Service  | 本文章 |
 
-在AEM Formsas a Cloud Service上啟用最適化Forms核心元件，可讓您開始建立、發佈和提供核心元件式的最適化Forms和Headless Forms，並使用AEM FormsCloud Service例項來將您的傳送至多個管道。 您需要啟用調適型表單核心元件的環境才能使用 Headless 調適型表單。
+在AEM Forms as a Cloud Service上啟用最適化Forms核心元件，可讓您開始建立、發佈及交付核心元件式的最適化Forms和Headless Forms ，並使用AEM Forms Cloud Service例項至多個管道。 您需要啟用調適型表單核心元件的環境才能使用 Headless 調適型表單。
 
 ## 考量事項
 
@@ -28,8 +28,7 @@ ht-degree: 85%
 
 * 如果您有較舊版的 Forms as a Cloud Service 方案，且其中核心元件[未啟用](#enable-components)時，你可以[將調適型表單核心元件的相依性新增](#enable-headless-adaptive-forms-for-an-aem-forms-as-a-cloud-service-environment)至您的 AEM as a Cloud Service 存放庫，並將該存放庫部署到您的 Cloud Service 環境以啟用 Headless 調適型表單。
 
-* 如果您的現有Cloud Service環境提供[建立核心元件式最適化Forms](creating-adaptive-form-core-components.md)的選項，表示您的環境已啟用「最適化Forms核心元件」和Headless最適化Forms，而您可以將核心元件式最適化Forms當作Headless表單提供給需要最適化Forms的Headless呈現形式的行動裝置、網頁、原生應用程式和服務等管道。
-
+* 如果您的現有Cloud Service環境提供[建立核心元件式最適化Forms](creating-adaptive-form-core-components.md)的選項，表示您的環境已啟用Adaptive Forms核心元件和Headless最適化Forms，而您可以將核心元件式最適化Forms當作Headless表單提供給需要最適化Forms的Headless呈現的管道。
 
 ## 啟用調適型表單核心元件和 Headless 調適型表單 {#enable-headless-forms}
 
@@ -39,11 +38,11 @@ ht-degree: 85%
 ![啟用核心元件和Headless最適化表單](/help/forms/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service.png)
 
 
-## 1. 原地複製您的 AEM Forms as a Cloud Service Git 存放庫 {#clone-git-repository}
+## &#x200B;1. 原地複製您的 AEM Forms as a Cloud Service Git 存放庫 {#clone-git-repository}
 
 1. 登入 [Cloud Manager](https://my.cloudmanager.adobe.com/)，並選取您的組織和計劃。
 
-1. 從&#x200B;**計劃總覽**&#x200B;頁面瀏覽至&#x200B;**管道**&#x200B;卡，按一下「**存取存放庫資訊**」按鈕，以存取和管理您的 Git 存放庫。 此頁面包括以下資訊：
+1. 從&#x200B;**計劃概觀**&#x200B;頁面瀏覽至&#x200B;**管道**&#x200B;卡，按一下「**存取存放庫資訊**」按鈕，以存取和管理您的 Git 存放庫。 此頁面包括以下資訊：
 
    * Cloud Manager Git 存放庫的 URL。
    * Git 存儲庫認證 (使用者名稱和密碼) Git 使用者名稱。
@@ -59,7 +58,7 @@ ht-degree: 85%
    出現提示時，提供認證。 原地複製 存放庫至本機電腦。
 
 
-## 2. 將調適型核心元件的相依性新增至您的 Git 存放庫 {#add-adaptive-forms-core-components-dependencies}
+## &#x200B;2. 將調適型核心元件的相依性新增至您的 Git 存放庫 {#add-adaptive-forms-core-components-dependencies}
 
 1. 在純文字程式碼編輯器中開啟 Git 存放庫資料夾。 例如 VS Code。
 1. 閇啟 `[AEM Repository Folder]\pom.xml` 檔案進行編輯。
@@ -276,7 +275,7 @@ ht-degree: 85%
 
 1. 儲存並關閉檔案。
 
-## 3. 建立並部署更新的程式碼
+## &#x200B;3. 建立並部署更新的程式碼
 
 將更新後的程式碼部署到您的本機開發環境和 Cloud Service 環境，以在這兩個環境中啟用核心元件：
 
@@ -316,7 +315,7 @@ ht-degree: 85%
     git push origin
    ```
 
-1. 將檔案提交到 Git 存放庫後，[執行管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=zh-Hant)。
+1. 將檔案提交到 Git 存放庫後，[執行管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)。
 
    執行好管道後，為對應環境啟用調適型表單核心元件。 此外，調適型表單 (核心元件) 範本和 Canvas 3.0 主題新增至您的 Forms as a Cloud Service 環境中，為您提供自訂和建以核心元件為主調適型表單的選項。
 
@@ -325,7 +324,7 @@ ht-degree: 85%
 
 ### 核心元件有哪些？ {#core-components}
 
-[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant) 是一組適用於 AEM 的標準化網站內容管理 (WCM) 元件，可加快開發時間並降低網站的維護成本。
+[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 是一組適用於 AEM 的標準化網站內容管理 (WCM) 元件，可加快開發時間並降低網站的維護成本。
 
 ### 啟用核心元件時新增哪些功能？ {#core-components-capabilities}
 
@@ -334,7 +333,7 @@ ht-degree: 85%
 * [建立以核心元件為主的調適型表單](/help/forms/creating-adaptive-form-core-components.md)。
 * [建立以核心元件為主的調適型表單範本](/help/forms/template-editor.md)。
 * [為以核心元件為主的調適型表單範本建立自訂主題](/help/forms/using-themes-in-core-components.md)。
-* [將以核心元件為主的調適型表單的代表提供給一些管道，例如行動、網頁、本機應用程式和需要表單以 Headless 呈現的服務。](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=zh-Hant)。
+* [將以核心元件為主的調適型表單的代表提供給一些管道，例如行動、網頁、本機應用程式和需要表單以 Headless 呈現的服務。](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html)。
 
 ### 系統是否已為我的環境啟用調適型表單核心元件？ {#enable-components}
 
@@ -356,6 +355,13 @@ ht-degree: 85%
    ![尋找 core-forms-components-af-core artifact in all/pom.xml](/help/forms/assets/enable-headless-adaptive-forms-on-aem-forms-cloud-service-locate-core-af-artifact.png)
 
    若相依性存在，表示系統已為您的環境啟用調適型表單核心元件。
+
+### 核心元件型表單為何無法在專案中呈現？
+
+由於Forms核心元件套件和專案原型中包含的版本不符，核心元件型表單可能無法呈現。 此問題通常發生在專案原型中指定的版本等於或高於Forms核心元件套件隨附的版本時。 若要解決此問題，請執行下列任一項作業：
+
+* 在專案原型中使用較低版本的Forms核心元件套件。
+* 從專案原型中移除Forms核心元件相依性，因為AEM as a Cloud Service已包含所需版本。 Forms核心元件套件自發行說20133開始與AEM as a Cloud SDK搭配，例如`AEM SDK v2025.3.20133.20250325T063357Z-250300`。
 
 >[!MORELIKETHIS]
 >
