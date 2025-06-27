@@ -5,9 +5,9 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 23ee3857bb0440ba9f386002b859217d0b5f8f37
+source-git-commit: fddd57877f2e4e98f0b89b496eedc25ce741d8f1
 workflow-type: tm+mt
-source-wordcount: '1476'
+source-wordcount: '1574'
 ht-degree: 3%
 
 ---
@@ -74,7 +74,7 @@ AEM as a Cloud Service會套用伺服器端規則以計算內容請求。 這些
 >[!NOTE]
 >如果API要求傳回HTML回應，則可能會根據其使用內容分類為內容要求。 通常會排除傳回非UI資料的API請求。
 
-| 請求型別 | 內容要求 | 描述 |
+| 請求型別 | 內容要求 | 說明 |
 | --- | --- | --- |
 | HTTP代碼100-299 | 已包含 | 包括傳回完整或部分HTML或JSON內容的成功請求。<br>HTTP程式碼206：這些要求只會傳遞完整內容的一部分。 例如，視訊或大型影像。 部分內容請求會在其傳送轉譯頁面內容中所使用的HTML或JSON回應的一部分時納入。 |
 | 用於自動化的HTTP程式庫 | 已包含 | 擷取頁面內容的工具或程式庫提出的請求。 範例包含下列專案： <br>· Amazon CloudFront<br>· Apache Http Client<br>·非同步HTTP使用者端<br>· Axios<br>· Azureus<br>· Curl<br>· GitHub節點擷取<br>· Guzzle<br>· Go-http-client<br>· Headless Chrome<br>· Java™ Client<br>· Jersey<br>· Node Oembed<br>· Okhttp<br>· python請求<br>· Reactor Netty<br>· Wget<br>· WinHTTP<br>· Fast HTTP<br>· GitHub節點提取<br>· Reactor Netty |
@@ -86,7 +86,7 @@ AEM as a Cloud Service會套用伺服器端規則以計算內容請求。 這些
 
 ### 排除的內容請求型別 {#excluded-content-request}
 
-| 請求型別 | 內容要求 | 描述 |
+| 請求型別 | 內容要求 | 說明 |
 | --- | --- | --- |
 | HTTP代碼500+ | 已排除 | AEM as a Cloud Service或客戶自訂程式碼發生錯誤時，會傳回錯誤給訪客。 |
 | HTTP程式碼400-499 | 已排除 | 內容不存在(404)或存在其他內容或請求相關問題時傳回給訪客的錯誤。 |
@@ -101,3 +101,4 @@ AEM as a Cloud Service會套用伺服器端規則以計算內容請求。 這些
 | 排除Commerce integration framework呼叫 | 已排除 | 向AEM提出且轉送至Commerce integration framework的請求（URL開頭為`/api/graphql`）為避免重複計算，Cloud Service不為這些請求記帳。 |
 | 排除`manifest.json` | 已排除 | 資訊清單不是API呼叫。 此處提供如何在桌上型電腦或行動電話上安裝網站的資訊。 Adobe不應將JSON請求計算為`/etc.clientlibs/*/manifest.json` |
 | 排除`favicon.ico` | 已排除 | 雖然傳回的內容不應是HTML或JSON，但已觀察到某些情況（例如SAML驗證流程）會傳回favicon作為HTML。 因此，Favicon會明確從計數中排除。 |
+| 體驗片段(XF) — 相同網域重複使用 | 已排除 | 從託管於相同網域上的頁面向XF路徑（例如`/content/experience-fragments/...`）提出的請求（由符合請求主機的Referer標頭識別）。<br><br>範例： `aem.customer.com`的首頁從相同網域提取橫幅或卡片的XF。<br><br>· URL符合/content/experience-fragments/...<br>· Referer網域符合&#x200B;`request_x_forwarded_host`<br><br>**注意：**&#x200B;如果自訂體驗片段路徑（例如使用`/XFrags/...`或`/content/experience-fragments/`之外的任何路徑），則不會排除請求並可能計入請求中，即使請求是相同網域亦然。 建議您使用Adobe的標準XF路徑結構，以確保排除邏輯可正確套用。 |
