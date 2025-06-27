@@ -4,9 +4,9 @@ description: 透過範例瞭解通用編輯器可在屬性面板中編輯的欄�
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 9327bc51ba170971bde8ce8e338c9a42ac5cbe82
+source-git-commit: 584dba3fb28c54d19d8a4162a3879ff30f7fe352
 workflow-type: tm+mt
-source-wordcount: '1500'
+source-wordcount: '1542'
 ht-degree: 11%
 
 ---
@@ -88,10 +88,10 @@ ht-degree: 11%
 
 欄位物件具有下列型別定義。
 
-| 設定 | 數值類型 | 描述 | 必填 |
+| 設定 | 數值類型 | 說明 | 必要 |
 |---|---|---|---|
 | `component` | `ComponentType` | 元件的轉譯器 | 是 |
-| `name` | `string` | 應儲存資料的屬性 | 是 |
+| `name` | `string` | 應儲存資料的屬性[或路徑](#nesting) | 是 |
 | `label` | `FieldLabel` | 欄位標籤 | 是 |
 | `description` | `FieldDescription` | 欄位說明 | 否 |
 | `placeholder` | `string` | 欄位預留位置 | 否 |
@@ -105,11 +105,19 @@ ht-degree: 11%
 | `validation` | `ValidationType` | 欄位的驗證規則 | 否 |
 | `raw` | `unknown` | 元件可使用的原始資料 | 否 |
 
-### 元件型別 {#component-types}
+### 名稱欄位和巢狀 {#nesting}
+
+`name`欄位可以直接指向目前資源的屬性，或者，如果是`cq:Pages`中的元件，它也可以使用巢狀屬性的路徑。 例如：
+
+```json
+"name": "teaser/image/fileReference"
+```
+
+### 元件類型 {#component-types}
 
 以下是可用於呈現欄位的元件型別。
 
-| 描述 | 元件類型 |
+| 說明 | 元件類型 |
 |---|---|
 | [AEM標籤](#aem-tag) | `aem-tag` |
 | [AEM內容](#aem-content) | `aem-content` |
@@ -164,7 +172,7 @@ AEM標籤元件型別會啟用AEM標籤選取器，其可用來將標籤附加�
 
 AEM內容元件型別會啟用AEM內容選擇器，可用來選取任何AEM資源。 與只能選取資產的[參考元件](#reference)不同，AEM內容元件可參考任何AEM內容。 它提供額外的驗證型別。
 
-| 驗證類型 | 數值類型 | 描述 | 必填 |
+| 驗證類型 | 數值類型 | 說明 | 必要 |
 |---|---|---|---|
 | `rootPath` | `string` | 內容選擇器將開啟供使用者選取AEM內容的路徑，將選取範圍限制在該目錄和子目錄中 | 否 |
 
@@ -200,7 +208,7 @@ AEM內容元件型別會啟用AEM內容選擇器，可用來選取任何AEM資�
 
 布林值元件型別會儲存簡單的true/false值，呈現為切換按鈕。 它提供額外的驗證型別。
 
-| 驗證類型 | 數值類型 | 描述 | 必填 |
+| 驗證類型 | 數值類型 | 說明 | 必要 |
 |---|---|---|---|
 | `customErrorMsg` | `string` | 如果輸入的值不是布林值，則會顯示的訊息 | 否 |
 
@@ -281,9 +289,9 @@ AEM內容元件型別會啟用AEM內容選擇器，可用來選取任何AEM資�
 
 #### 容器 {#container}
 
-容器元件型別允許將元件分組。 它提供額外設定。
+容器元件型別可將包含多欄位支援的元件分組。 它提供額外設定。
 
-| 設定 | 數值類型 | 描述 | 必填 |
+| 設定 | 數值類型 | 說明 | 必要 |
 |---|---|---|---|
 | `collapsible` | `boolean` | 容器是否可摺疊 | 否 |
 
@@ -324,19 +332,48 @@ AEM內容元件型別會啟用AEM內容選擇器，可用來選取任何AEM資�
 
 ![容器元件型別](assets/component-types/container.png)的熒幕擷圖
 
+>[!TAB 多欄位支援]
+
+```json
+{
+  "component": "container",
+  "name": "test",
+  "label": "Multi Text",
+  "multi": true,
+  "fields": [
+    {
+      "component": "reference",
+      "name": "image",
+      "value": "",
+      "label": "Sample Image",
+      "valueType": "string"
+    },
+    {
+      "component": "text",
+      "name": "alt",
+      "value": "",
+      "label": "Alt Text",
+      "valueType": "string"
+    }
+  ]
+}
+```
+
 >[!ENDTABS]
+
+
 
 #### 內容片段 {#content-fragment}
 
 內容片段選擇器可用來選取[內容片段](/help/sites-cloud/authoring/fragments/content-fragments.md)及其變數（如果需要）。 它提供額外設定。
 
-| 設定 | 數值類型 | 描述 | 必填 |
+| 設定 | 數值類型 | 說明 | 必要 |
 |---|---|---|---|
 | `variationName` | `string` | 儲存所選變數的變數名稱。 如果未定義，則不會顯示變數選擇器 | 否 |
 
 此外，還提供其他驗證型別。
 
-| 驗證類型 | 數值類型 | 描述 | 必填 |
+| 驗證類型 | 數值類型 | 說明 | 必要 |
 |---|---|---|---|
 | `rootPath` | `string` | 內容選擇器將開啟供使用者選擇內容片段的路徑，將選擇限制在該目錄和子目錄中 | 否 |
 
@@ -380,14 +417,14 @@ AEM內容元件型別會啟用AEM內容選擇器，可用來選取任何AEM資�
 
 日期時間元件型別可指定日期、時間或其組合。 它提供其他設定。
 
-| 設定 | 數值類型 | 描述 | 必填 |
+| 設定 | 數值類型 | 說明 | 必要 |
 |---|---|---|---|
 | `displayFormat` | `string` | 日期字串顯示格式 | 是 |
 | `valueFormat` | `string` | 儲存日期字串的格式 | 是 |
 
 此外，還提供其他驗證型別。
 
-| 驗證類型 | 數值類型 | 描述 | 必填 |
+| 驗證類型 | 數值類型 | 說明 | 必要 |
 |---|---|---|---|
 | `customErrorMsg` | `string` | 未滿足`valueFormat`時將顯示的訊息 | 否 |
 
@@ -471,13 +508,13 @@ AEM內容元件型別會啟用AEM內容選擇器，可用來選取任何AEM資�
 
 體驗片段選擇器可用來選取[體驗片段](/help/sites-cloud/authoring/fragments/experience-fragments.md)及其變數（如果需要）。 它提供額外設定。
 
-| 設定 | 數值類型 | 描述 | 必填 |
+| 設定 | 數值類型 | 說明 | 必要 |
 |---|---|---|---|
 | `variationName` | `string` | 儲存所選變數的變數名稱。 如果未定義，則不會顯示變數選擇器 | 否 |
 
 此外，還提供其他驗證型別。
 
-| 驗證類型 | 數值類型 | 描述 | 必填 |
+| 驗證類型 | 數值類型 | 說明 | 必要 |
 |---|---|---|---|
 | `rootPath` | `string` | 內容選擇器將開啟供使用者選擇體驗片段的路徑，將選擇限制在該目錄和子目錄中 | 否 |
 
@@ -584,7 +621,7 @@ AEM內容元件型別會啟用AEM內容選擇器，可用來選取任何AEM資�
 
 數字元件型別允許輸入數字。 它提供額外的驗證型別。
 
-| 驗證類型 | 數值類型 | 描述 | 必填 |
+| 驗證類型 | 數值類型 | 說明 | 必要 |
 |---|---|---|---|
 | `numberMin` | `number` | 允許的最小數量 | 否 |
 | `numberMax` | `number` | 允許的最大數量 | 否 |
@@ -813,7 +850,7 @@ RTF允許多行RTF輸入。
 
 文字允許單行文字輸入。  它包含其他驗證型別。
 
-| 驗證類型 | 數值類型 | 描述 | 必填 |
+| 驗證類型 | 數值類型 | 說明 | 必要 |
 |---|---|---|---|
 | `minLength` | `number` | 允許的最小字元數 | 否 |
 | `maxLength` | `number` | 允許的最大字元數 | 否 |
