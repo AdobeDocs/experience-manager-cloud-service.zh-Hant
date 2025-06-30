@@ -4,51 +4,14 @@ description: 瞭解AEM Assets和Dynamic Media如何使用靜態和動態影像�
 exl-id: 006dc493-c400-4d0f-b314-c1978582b7fb
 feature: Renditions
 role: User
-source-git-commit: b6c753ec581a80991f0f79134bec019c3ad6d1d0
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '692'
-ht-degree: 7%
+source-wordcount: '646'
+ht-degree: 1%
 
 ---
 
 # 在Experience Manager Assets中檢視及管理轉譯{#renditions}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 與 Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets 與 Edge Delivery Services 整合</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>使用者介面可擴充性</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用 Dynamic Media Prime 與 Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
-        </td>
-    </tr>
-</table>
 
 Adobe Experience Manager (AEM)中的轉譯是數位資產（例如影像）的自訂版本，專為不同裝置和平台而設計，以確保最佳效能。 AEM可協助您輕鬆建立和管理這些轉譯，進而改善使用者體驗。 您可以建立縮圖、針對網頁或行動裝置最佳化影像、新增浮水印、檢視及下載動態轉譯或智慧型裁切轉譯，以及執行更多工作。
 
@@ -86,7 +49,7 @@ Dynamic Media影像預設集和智慧型裁切轉譯可促進符合品牌標準�
    * [影像預設集](/help/assets/dynamic-media/managing-image-presets.md)
 
   您可以[稍後切換檢視](/help/assets/assets-view-introduction.md#how-to-access-assets-view)以在Assets檢視中預覽動態轉譯。
-* 將資產發佈至Dynamic Media，以便在Assets檢視中使用Dynamic Media轉譯。 如需詳細資訊，請參閱[將Assets發佈到AEM和Dynamic Media](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm)。
+* 將資產發佈至Dynamic Media，以便在Assets檢視中使用Dynamic Media轉譯。 如需詳細資訊，請參閱[將Assets發佈到AEM和Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm)。
 
 
 ### 檢視和下載Dynamic Media轉譯 {#view-download-dm-renditions}
@@ -105,7 +68,7 @@ Dynamic Media影像預設集和智慧型裁切轉譯可促進符合品牌標準�
    <!-- ![dynamic renditions](assets/preset_smart_crop_view.png) -->
 
 1. 選取要預覽的轉譯，然後按一下&#x200B;**複製URL**&#x200B;以複製所選轉譯的URL。 按一下「**下載轉譯**」即可下載影像資產的轉譯。
-1. 選取要預覽的智慧型裁切轉譯，然後按一下「複製URL」**&#x200B;**&#x200B;以複製所選轉譯的URL。
+1. 選取要預覽的智慧型裁切轉譯，然後按一下「複製URL」****&#x200B;以複製所選轉譯的URL。
 1. 按一下![下載圖示](assets/do-not-localize/download-icon.png)，將所有可用的智慧型裁切轉譯下載為單一zip檔案。
    ![下載圖示](/help/assets/assets/smartcrop-rendition.png)
 

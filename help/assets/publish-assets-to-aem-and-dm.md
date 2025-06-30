@@ -4,51 +4,14 @@ description: 在 [!DNL Assets view] 中快速發佈可讓您將資產同時或�
 exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
 feature: Publishing, [!DNL Dynamic Media]
 role: User
-source-git-commit: 138f7ef2023399ce5da9fe80447ac45fd9542064
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '1099'
-ht-degree: 4%
+source-wordcount: '1053'
+ht-degree: 0%
 
 ---
 
 # 將Assets發佈至[!DNL AEM and Dynamic Media]{#Publish-Assets-to-AEM-and-Dynamic-Media}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 與 Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets 與 Edge Delivery Services 整合</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>使用者介面可擴充性</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用 Dynamic Media Prime 與 Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
-        </td>
-    </tr>
-</table>
 
 [!DNL Experience Manager Assets]可讓您使用[!DNL Assets view]快速將資產發佈到[!DNL Experience Manager]和[!DNL Dynamic Media]。 這可確保您管理資產，然後使用[[!DNL Assets view] 發佈資產，而不需切換至 [!DNL Admin view]](/help/assets/overview.md##persona-based-experiences)。
 
@@ -114,7 +77,7 @@ ht-degree: 4%
 若要使用資產瀏覽頁面發佈資產：
 
 1. 按一下左窗格中可用的&#x200B;**[!UICONTROL Assets管理]**&#x200B;區段中的&#x200B;**[!UICONTROL Assets]**。
-2. 選取一或多個您需要發佈的資產或資料夾，然後按一下[發佈]。**&#x200B;**
+2. 選取一或多個您需要發佈的資產或資料夾，然後按一下[發佈]。****
 3. 選取&#x200B;**[!UICONTROL AEM]**&#x200B;並按一下&#x200B;**[!UICONTROL 發佈]**&#x200B;以將資產發佈到[!DNL AEM and Dynamic Media]。
    ![資產瀏覽](/help/assets/assets/browse-uactivation-immediate.svg)
 您無法發佈[!DNL Dynamic Media]發佈模式設為&#x200B;**[!UICONTROL 選擇性發佈]**&#x200B;的資料夾。 所有其他選取的資料夾或資產在選取[!DNL AEM]後會發佈至[!DNL AEM and Dynamic Media]。

@@ -5,51 +5,14 @@ contentOwner: AG
 feature: Assets HTTP API
 role: Developer, Architect, Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '1984'
-ht-degree: 8%
+source-wordcount: '1870'
+ht-degree: 4%
 
 ---
 
 # [!DNL Adobe Experience Manager Assets]開發人員使用案例、API和參考資料 {#assets-cloud-service-apis}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
-        </td>
-    </tr>
-</table>
 
 文章包含[!DNL Assets]開發人員的建議、參考資料和資源，以[!DNL Cloud Service]形式提供。 其中包含新的資產上傳模組、API參考資料，以及有關後處理工作流程中所提供支援的資訊。
 
@@ -67,7 +30,7 @@ ht-degree: 8%
 | × | 不支援。 請勿使用。 |
 | - | 無法使用 |
 
-| 使用案例 | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager / Sling / JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) Java API | [資產計算服務](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=zh-Hant) | [[!DNL Assets] HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=zh-Hant#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) servlet | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=zh-Hant) |
+| 使用案例 | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager / Sling / JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) Java API | [資產計算服務](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) servlet | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) |
 | ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
 | **原始二進位檔** |  |  |  |  |  |  |
 | 建立原始檔案 | ✓ | × | - | × | × | - |
@@ -202,11 +165,11 @@ CDN邊緣節點有助於加速要求的二進位檔上傳。
 
 上傳二進位檔案的所有部分後，將HTTP POST要求提交至初始化資料提供的完整URI。 要求內文的內容型別應為`application/x-www-form-urlencoded`表單資料，包含下列欄位。
 
-| 欄位 | 類型 | 必要與否 | 描述 |
+| 欄位 | 類型 | 必要與否 | 說明 |
 |---|---|---|---|
-| `fileName` | 字串 | 必填 | 由初始資料提供的資產名稱。 |
-| `mimeType` | 字串 | 必填 | 由起始資料提供的二進位檔的HTTP內容型別。 |
-| `uploadToken` | 字串 | 必填 | 上傳二進位的Token，如初始化資料所提供。 |
+| `fileName` | 字串 | 必要 | 由初始資料提供的資產名稱。 |
+| `mimeType` | 字串 | 必要 | 由起始資料提供的二進位檔的HTTP內容型別。 |
+| `uploadToken` | 字串 | 必要 | 上傳二進位的Token，如初始化資料所提供。 |
 | `createVersion` | 布林值 | 選用 | 如果`True`和指定名稱的資產存在，則[!DNL Experience Manager]會建立該資產的新版本。 |
 | `versionLabel` | 字串 | 選用 | 如果建立新版本，則會提供與資產新版本相關聯的標籤。 |
 | `versionComment` | 字串 | 選用 | 如果建立了新版本，註釋會與該版本相關聯。 |

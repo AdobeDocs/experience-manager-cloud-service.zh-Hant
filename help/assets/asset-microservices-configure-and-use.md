@@ -5,51 +5,14 @@ contentOwner: AG
 feature: Asset Compute Microservices, Asset Processing, Asset Management
 role: Architect, Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
 workflow-type: tm+mt
-source-wordcount: '2937'
+source-wordcount: '2891'
 ht-degree: 2%
 
 ---
 
 # 使用資產微服務和處理設定檔 {#get-started-using-asset-microservices}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
-        </td>
-    </tr>
-</table>
 
 資產微服務可使用雲端原生應用程式（也稱為背景工作），提供可擴充及彈性的資產處理功能。 Adobe會管理服務，以最佳化方式處理不同的資產型別和處理選項。
 
@@ -72,11 +35,11 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 [!DNL Experience Manager]允許下列處理層級。
 
-| 選項 | 描述 | 涵蓋的使用案例 |
+| 選項 | 說明 | 涵蓋的使用案例 |
 |---|---|---|
 | [預設組態](#default-config) | 目前可用，且無法修改。 此設定提供基本轉譯產生功能。 | <ul> <li>[!DNL Assets]使用者介面（48、140和319畫素）使用的標準縮圖 </li> <li> 大型預覽（Web轉譯 — 1280畫素） </li><li> 中繼資料和文字擷取。</li></ul> |
 | [自訂組態](#standard-config) | 由管理員透過使用者介面進行設定。 透過擴充預設選項，為產生轉譯提供更多選項。 擴充現成可用的選項，以提供不同的格式和轉譯。 | <ul><li>FPO （僅供刊登）轉譯。 </li> <li>變更檔案格式和影像解析度</li> <li> 有條件地套用至已設定的檔案型別。 </li> </ul> |
-| [自訂設定檔](#custom-config) | 管理員透過使用者介面設定為透過自訂應用程式使用自訂程式碼來呼叫[Asset Compute服務](https://experienceleague.adobe.com/zh-hant/docs/asset-compute/using/introduction)。 以雲端原生且可擴充的方法支援更複雜的需求。 | 請參閱[允許的使用案例](#custom-config)。 |
+| [自訂設定檔](#custom-config) | 管理員透過使用者介面設定為透過自訂應用程式使用自訂程式碼來呼叫[Asset Compute服務](https://experienceleague.adobe.com/en/docs/asset-compute/using/introduction)。 以雲端原生且可擴充的方法支援更複雜的需求。 | 請參閱[允許的使用案例](#custom-config)。 |
 
 <!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
 -->
@@ -102,16 +65,16 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 * **MIME型別包含規則**：處理具有特定MIME型別的資產時，會先根據轉譯規格的排除MIME型別值檢查MIME型別。 如果符合該清單，則不會為資產（封鎖清單）產生此特定轉譯。 否則，會根據包含的MIME型別檢查MIME型別，如果它符合清單，則會產生轉譯（允許清單）。
 
-* **特殊FPO轉譯**：將來自[!DNL Experience Manager]的大型資產放入[!DNL Adobe InDesign]份檔案時，創意專業人士會在[放置資產](https://helpx.adobe.com/tw/indesign/using/placing-graphics.html)後等待相當長的時間。 同時，使用者被封鎖無法使用[!DNL InDesign]。 這會中斷創意流程，並對使用者體驗產生負面影響。 Adobe可暫時將小型轉譯放入[!DNL InDesign]份檔案，稍後可隨選以全解析度資產取代。 [!DNL Experience Manager]提供僅用於放置的轉譯。 這些FPO轉譯的檔案大小較小，但外觀比例相同。
+* **特殊FPO轉譯**：將來自[!DNL Experience Manager]的大型資產放入[!DNL Adobe InDesign]份檔案時，創意專業人士會在[放置資產](https://helpx.adobe.com/indesign/using/placing-graphics.html)後等待相當長的時間。 同時，使用者被封鎖無法使用[!DNL InDesign]。 這會中斷創意流程，並對使用者體驗產生負面影響。 Adobe可暫時將小型轉譯放入[!DNL InDesign]份檔案，稍後可隨選以全解析度資產取代。 [!DNL Experience Manager]提供僅用於放置的轉譯。 這些FPO轉譯的檔案大小較小，但外觀比例相同。
 
-處理設定檔可包含FPO （僅供刊登）轉譯。 請參閱[!DNL Adobe Asset Link] [檔案](https://helpx.adobe.com/tw/enterprise/using/manage-assets-using-adobe-asset-link.html)以瞭解是否需要為您的處理設定檔開啟它。 如需詳細資訊，請參閱[Adobe Asset Link完整檔案](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html)。
+處理設定檔可包含FPO （僅供刊登）轉譯。 請參閱[!DNL Adobe Asset Link] [檔案](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html)以瞭解是否需要為您的處理設定檔開啟它。 如需詳細資訊，請參閱[Adobe Asset Link完整檔案](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html)。
 
 ### 建立標準設定檔 {#create-standard-profile}
 
 1. 管理員存取&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 處理設定檔]**。 按一下「**[!UICONTROL 建立]**」。
 1. 提供可協助您在套用至資料夾時唯一識別設定檔的名稱。
 1. 若要產生FPO轉譯，請在&#x200B;**[!UICONTROL 影像]**&#x200B;索引標籤上啟用&#x200B;**[!UICONTROL 建立FPO轉譯]**。 輸入1-100的&#x200B;**[!UICONTROL 品質]**&#x200B;值。
-1. 若要產生其他轉譯，請按一下[新增] **&#x200B;**，並提供下列資訊：
+1. 若要產生其他轉譯，請按一下[新增] ****，並提供下列資訊：
 
    * 每個轉譯的檔案名稱。
    * 每個轉譯的檔案格式(PNG、JPEG、GIF或WebP)。
@@ -136,7 +99,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ## 自訂設定檔和使用案例 {#custom-config}
 
-[!DNL Asset Compute Service]支援多種使用案例，包括預設處理和處理Adobe專用格式，例如Photoshop檔案。 它也允許實作自訂或組織特定的處理。 過去所需的DAM更新資產工作流程自訂可自動處理，或透過處理設定檔設定方式處理。 如果這些處理選項不符合您的業務需求，Adobe建議開發並使用[!DNL Asset Compute Service]來擴充預設功能。 如需概觀，請參閱[瞭解擴充功能及使用時機](https://experienceleague.adobe.com/zh-hant/docs/asset-compute/using/extend/understand-extensibility)。
+[!DNL Asset Compute Service]支援多種使用案例，包括預設處理和處理Adobe專用格式，例如Photoshop檔案。 它也允許實作自訂或組織特定的處理。 過去所需的DAM更新資產工作流程自訂可自動處理，或透過處理設定檔設定方式處理。 如果這些處理選項不符合您的業務需求，Adobe建議開發並使用[!DNL Asset Compute Service]來擴充預設功能。 如需概觀，請參閱[瞭解擴充功能及使用時機](https://experienceleague.adobe.com/en/docs/asset-compute/using/extend/understand-extensibility)。
 
 >[!NOTE]
 >
@@ -144,7 +107,7 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 它可以將影像、視訊、檔案和其他檔案格式轉換為不同的轉譯，包括縮圖、擷取的文字和中繼資料以及封存。
 
-開發人員可針對支援的使用案例使用[!DNL Asset Compute Service]來[建立自訂應用程式](https://experienceleague.adobe.com/zh-hant/docs/asset-compute/using/extend/develop-custom-application)。 [!DNL Experience Manager]可以使用管理員設定的自訂設定檔，從使用者介面呼叫這些自訂應用程式。 [!DNL Asset Compute Service]支援以下叫用外部服務的使用案例：
+開發人員可針對支援的使用案例使用[!DNL Asset Compute Service]來[建立自訂應用程式](https://experienceleague.adobe.com/en/docs/asset-compute/using/extend/develop-custom-application)。 [!DNL Experience Manager]可以使用管理員設定的自訂設定檔，從使用者介面呼叫這些自訂應用程式。 [!DNL Asset Compute Service]支援以下叫用外部服務的使用案例：
 
 * 使用[!DNL Adobe Photoshop]的[ImageCutout API](https://developer.adobe.com/photoshop/photoshop-api-docs/)並將結果儲存為轉譯。
 * 呼叫協力廠商系統以進行變更，例如PIM系統。
@@ -162,8 +125,8 @@ The following video demonstrates the usefulness and usage of standard profile.
 1. 在「名稱」文字欄位中，輸入所需的轉譯檔案名稱，然後提供下列資訊。
 
    * 每個轉譯的檔案名稱和支援的副檔名。
-   * [App Builder自訂應用程式的端點URL](https://experienceleague.adobe.com/zh-hant/docs/asset-compute/using/extend/deploy-custom-application)。 應用程式必須來自與Experience Manager帳戶相同的組織。
-   * 新增服務引數至[傳遞額外的資訊或引數至自訂應用程式](https://experienceleague.adobe.com/zh-hant/docs/asset-compute/using/extend/develop-custom-application#extend)。
+   * [App Builder自訂應用程式的端點URL](https://experienceleague.adobe.com/en/docs/asset-compute/using/extend/deploy-custom-application)。 應用程式必須來自與Experience Manager帳戶相同的組織。
+   * 新增服務引數至[傳遞額外的資訊或引數至自訂應用程式](https://experienceleague.adobe.com/en/docs/asset-compute/using/extend/develop-custom-application#extend)。
    * 包含和排除MIME型別，以將處理限製為少數特定檔案格式。
 
 1. 在頁面的右上角附近，按一下「儲 **[!UICONTROL 存」]**。
@@ -193,7 +156,7 @@ Asset Compute服務整合可讓Experience Manager使用[!UICONTROL 服務引數]
 使用下列其中一種方法，將處理設定檔套用至資料夾：
 
 * 管理員可以在&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 處理設定檔]**&#x200B;中選取處理設定檔定義，並使用&#x200B;**[!UICONTROL 將設定檔套用至資料夾]**&#x200B;動作。 它會開啟內容瀏覽器，讓您導覽至特定資料夾並加以選取，然後確認設定檔的應用程式。
-* 使用者可以在Assets使用者介面中選取資料夾，並使用&#x200B;**[!UICONTROL 屬性]**&#x200B;動作開啟資料夾屬性畫面。 在&#x200B;**[!UICONTROL 資產處理]**&#x200B;索引標籤上，他們可以從[!UICONTROL 處理設定檔]清單中為該資料夾選取適當的處理設定檔。 若要儲存變更，請按一下[儲存並關閉]。**&#x200B;**
+* 使用者可以在Assets使用者介面中選取資料夾，並使用&#x200B;**[!UICONTROL 屬性]**&#x200B;動作開啟資料夾屬性畫面。 在&#x200B;**[!UICONTROL 資產處理]**&#x200B;索引標籤上，他們可以從[!UICONTROL 處理設定檔]清單中為該資料夾選取適當的處理設定檔。 若要儲存變更，請按一下[儲存並關閉]。****
   ![從[資產屬性]索引標籤](assets/folder-properties-processing-profile.png)將處理設定檔套用至資料夾
 
 * 使用者可以在Assets使用者介面中選取資料夾或特定資產，以套用處理設定檔，然後從上方的可用選項中選取![資產重新處理圖示](assets/do-not-localize/reprocess-assets-icon.png) **[!UICONTROL 重新處理Assets]**&#x200B;選項。
@@ -218,7 +181,7 @@ Asset Compute服務整合可讓Experience Manager使用[!UICONTROL 服務引數]
 
 若需要額外處理資產，而使用處理設定檔無法達成的情況，可以將其他後處理工作流程新增到設定中。 後處理可讓您在使用資產微服務的可設定處理之上新增完全自訂處理。
 
-微服務處理完成後，[!DNL Experience Manager]會自動執行後處理工作流程，或是[自動啟動工作流程](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/assets/configuring/auto-start-workflows) （如果已設定）。 不需要手動新增工作流程啟動器來觸發工作流程。 範例包括：
+微服務處理完成後，[!DNL Experience Manager]會自動執行後處理工作流程，或是[自動啟動工作流程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/configuring/auto-start-workflows) （如果已設定）。 不需要手動新增工作流程啟動器來觸發工作流程。 範例包括：
 
 * 處理資產的自訂工作流程步驟。
 * 整合以將中繼資料或屬性從外部系統新增至資產，例如產品或程式資訊。
@@ -231,7 +194,7 @@ Asset Compute服務整合可讓Experience Manager使用[!UICONTROL 服務引數]
 * 在結尾新增[!UICONTROL DAM更新資產工作流程已完成程式]步驟。 新增此步驟可確保Experience Manager知道處理何時結束，並且資產可標示為已處理，亦即&#x200B;*資產上會顯示新的*。
 * 建立「自訂工作流程執行器」服務的設定，可讓您透過路徑（資料夾位置）或規則運算式來設定後處理工作流程模型的執行。
 
-如需後期處理工作流程中可以使用哪些標準工作流程步驟的詳細資訊，請參閱開發人員參考中的後期處理工作流程[&#128279;](developer-reference-material-apis.md#post-processing-workflows-steps)中的工作流程步驟。
+如需後期處理工作流程中可以使用哪些標準工作流程步驟的詳細資訊，請參閱開發人員參考中的後期處理工作流程](developer-reference-material-apis.md#post-processing-workflows-steps)中的[工作流程步驟。
 
 ### 建立後處理工作流程模型 {#create-post-processing-workflow-models}
 
@@ -317,9 +280,9 @@ Asset Compute服務整合可讓Experience Manager使用[!UICONTROL 服務引數]
 
 >[!MORELIKETHIS]
 >
->* [Asset Compute服務簡介](https://experienceleague.adobe.com/zh-hant/docs/asset-compute/using/introduction)。
->* [瞭解擴充功能及使用時機](https://experienceleague.adobe.com/zh-hant/docs/asset-compute/using/extend/understand-extensibility)。
->* [如何建立自訂應用程式](https://experienceleague.adobe.com/zh-hant/docs/asset-compute/using/extend/develop-custom-application)。
+>* [Asset Compute服務簡介](https://experienceleague.adobe.com/en/docs/asset-compute/using/introduction)。
+>* [瞭解擴充功能及使用時機](https://experienceleague.adobe.com/en/docs/asset-compute/using/extend/understand-extensibility)。
+>* [如何建立自訂應用程式](https://experienceleague.adobe.com/en/docs/asset-compute/using/extend/develop-custom-application)。
 >* [各種使用案例支援的MIME型別](/help/assets/file-format-support.md)。
 
 <!-- TBD: 

@@ -4,51 +4,14 @@ description: 在Adobe Workfront和Experience Manager as a Cloud Service應用程
 exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
 feature: Metadata, Workfront Integrations and Apps
 role: User, Admin
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '1058'
-ht-degree: 6%
+source-wordcount: '1012'
+ht-degree: 4%
 
 ---
 
 # 設定Adobe Workfront和Experience Manager Assets之間的資產中繼資料對應 {#asset-metadata-mapping-workfront-aem-assets}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
-        </td>
-    </tr>
-</table>
 
 您可以在Adobe Workfront和Experience Manager as a Cloud Service應用程式之間對應資產中繼資料欄位。 對應中繼資料欄位後，當您從Workfront傳送資產至Experience Manager Assets時，可以在Experience Manager Assets中檢視對應的資產中繼資料。
 
@@ -68,7 +31,7 @@ ht-degree: 6%
 
 * Workfront和Experience Manager Assets as a Cloud Service應用程式的管理員存取權。
 
-* [Workfront與Experience Manager Assets as a Cloud Service應用程式](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&amp;topicId=Content%2FDocuments%2FAdobe_Workfront_for_Experience_Manager_Assets_Essentials%2Fsetup-asset-essentials.htm&amp;_LANG=enus)之間的整合。
+* [Workfront與Experience Manager Assets as a Cloud Service應用程式](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&topicId=Content%2FDocuments%2FAdobe_Workfront_for_Experience_Manager_Assets_Essentials%2Fsetup-asset-essentials.htm&_LANG=enus)之間的整合。
 
 ## 在Workfront中設定中繼資料對應 {#set-up-metadata-mapping}
 
@@ -128,7 +91,6 @@ ht-degree: 6%
    1. 在&#x200B;**[!UICONTROL 欄位標籤]**&#x200B;欄位中指定`Project Name`。
 
    1. 在&#x200B;**[!UICONTROL 對應至屬性]**&#x200B;欄位中指定`./jcr:content/metadata/wm:projectName`。 建議先使用以下範本，在Experience Manger Assets中定義欄位對應：
-
       `./jcr:content/metadata/<mapping defined for the field in workfront>`。
 
       在Workfront中設定對應時，您將`wm:projectName`個Experience Manager Assets欄位對應至專案>命名Workfront欄位。
@@ -157,7 +119,7 @@ ht-degree: 6%
 
 ## 套用中繼資料設定至影像資料夾 {#apply-metadata-settings-image-folder}
 
-在Experience Manager as a Cloud Service應用程式中設定中繼資料設定後，將這些設定套用至包含從Workfront應用程式[&#128279;](#send-image-workfront-assets)傳送之影像的資料夾。
+在Experience Manager as a Cloud Service應用程式中設定中繼資料設定後，將這些設定套用至包含從Workfront應用程式](#send-image-workfront-assets)傳送之影像的[資料夾。
 
 若要將中繼資料設定套用至影像資料夾：
 
@@ -165,7 +127,7 @@ ht-degree: 6%
 
 1. 從可用清單中選取中繼資料結構描述，然後按一下&#x200B;**[!UICONTROL 套用至資料夾]**。
 
-1. 選取從Adobe Workfront應用程式[&#128279;](#send-image-workfront-assets)傳送影像的目標資料夾，然後按一下&#x200B;**[!UICONTROL 套用]**。
+1. 選取從Adobe Workfront應用程式](#send-image-workfront-assets)傳送影像的目標資料夾[，然後按一下&#x200B;**[!UICONTROL 套用]**。
 
 您可以導覽至Experience Manager Assets中的影像，並檢視與影像相關聯的中繼資料。 選取影像並按一下&#x200B;**[!UICONTROL 屬性]**&#x200B;以檢視影像中繼資料。
 

@@ -3,66 +3,20 @@ title: 從Content Hub下載資產
 description: 瞭解如何從Content Hub入口網站下載單一或多個資產及其轉譯。
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 9636fbf2ca78f001e08ef281f3d7ea3bfc212387
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '888'
-ht-degree: 8%
+source-wordcount: '814'
+ht-degree: 1%
 
 ---
 
 # 從Content Hub下載資產 {#download-assets}
 
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 與 Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets 與 Edge Delivery Services 整合</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>使用者介面可擴充性</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用 Dynamic Media Prime 與 Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
-        </td>
-    </tr>
-</table>
-
-<!-- ![Download assets](assets/download-asset.jpg) -->
-![下載資產](assets/download-asset-genstudio.jpeg)
-
->[!AVAILABILITY]
->
-> [!DNL Content Hub]指南現在以PDF格式提供。 下載完整指南，並使用 Adobe Acrobat AI 助理來回答您的查詢問題。
->
->[!BADGE Content Hub 指南 PDF]{type=Informative url="https://helpx.adobe.com/tw/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
-
 [!DNL Content Hub]可讓您下載及共用您的資產。 [!DNL Content Hub]使用者介面只會顯示已核准的資產。 這些資產可能包括影像、影片或任何其他數位內容。 [!DNL Content Hub]增強了有效資產分配的協助工具與適應性。
 
 您可以使用[!DNL Content Hub]下載單一或多個資產及其可用的轉譯。
 
-檢視Content Hub[&#128279;](#types-of-renditions)中可用的轉譯型別。
+檢視Content Hub](#types-of-renditions)中可用的[轉譯型別。
 
 ## 下載一個或多個資產及其轉譯 {#download-asset-renditions}
 
@@ -73,11 +27,11 @@ ht-degree: 8%
 
    或者，按一下資產縮圖，然後選取![下載](/help/assets/assets/download-icon.svg)，在下載之前，先選取並檢視對話方塊上的可用轉譯。
 
-1. 若要下載多個資產，請選取資產，按一下![下載](/help/assets/assets/download-icon.svg) **[!UICONTROL 下載]**，並檢閱&#x200B;**[!UICONTROL 下載資產]**&#x200B;對話方塊中選取的資產清單。 按一下資產旁的![取消選取](/help/assets/assets/Close.svg)，從清單中取消選取該資產。 選取一或多個轉譯，然後按一下[下載] **&#x200B;**，將轉譯下載為單一ZIP檔。 選取&#x200B;**[!UICONTROL 智慧型裁切]**&#x200B;和&#x200B;**[!UICONTROL 靜態轉譯]**&#x200B;會下載每個選取資產的所有可用靜態和智慧型裁切轉譯。
+1. 若要下載多個資產，請選取資產，按一下![下載](/help/assets/assets/download-icon.svg) **[!UICONTROL 下載]**，並檢閱&#x200B;**[!UICONTROL 下載資產]**&#x200B;對話方塊中選取的資產清單。 按一下資產旁的![取消選取](/help/assets/assets/Close.svg)，從清單中取消選取該資產。 選取一或多個轉譯，然後按一下[下載] ****，將轉譯下載為單一ZIP檔。 選取&#x200B;**[!UICONTROL 智慧型裁切]**&#x200B;和&#x200B;**[!UICONTROL 靜態轉譯]**會下載每個選取資產的所有可用靜態和智慧型裁切轉譯。
    ![下載多個資產](/help/assets/assets/download-multiple-assets-CH.png)
 下載進行時，您可以繼續使用[!DNL Content Hub]。 Content Hub不會在下載過程中中斷您的工作流程。
    ![下載多個資產](/help/assets/assets/download-assets-notification-ch.png)
-如果&#x200B;**[!UICONTROL 下載資產]**&#x200B;對話方塊顯示資產授權，然後從左窗格（[!UICONTROL T&amp;C檔案]區段）選取每個授權，以預覽授權並在對話方塊的中間窗格中顯示與授權關聯的選取資產。 檢閱每個授權後，選取轉譯，按一下&#x200B;**[!UICONTROL 我已閱讀並接受上述條款與條件]**，並選取&#x200B;**[!UICONTROL 下載]**&#x200B;以下載它們。
+如果**[!UICONTROL 下載資產]**&#x200B;對話方塊顯示資產授權，然後從左窗格（[!UICONTROL T&amp;C檔案]區段）選取每個授權，以預覽授權並在對話方塊的中間窗格中顯示與授權關聯的選取資產。 檢閱每個授權後，選取轉譯，按一下&#x200B;**[!UICONTROL 我已閱讀並接受上述條款與條件]**，並選取&#x200B;**[!UICONTROL 下載]**以下載它們。
    ![下載多個資產](/help/assets/assets/download-multiple-licensed-assets-CH.png)
 
    >[!NOTE]
@@ -193,7 +147,7 @@ The dialog box that displays depends on whether the download list includes expir
 
    一旦您擁有使用OpenAPI功能的Dynamic Media存取權，所有標籤為`Approved`的資產都可使用Dynamic Media進行公開傳送。
 
-1. 將資產[&#128279;](/help/assets/approve-assets-content-hub.md#set-approval-target)的核准目標設定為Content Hub，僅核准Content Hub的資產。
+1. 將資產](/help/assets/approve-assets-content-hub.md#set-approval-target)的[核准目標設定為Content Hub，僅核准Content Hub的資產。
 
 1. 啟用[組態](/help/assets/configure-content-hub-ui-options.md#access-configuration-options-content-hub)使用者介面之&#x200B;**[!UICONTROL 轉譯]**&#x200B;索引標籤中可用的&#x200B;**[!UICONTROL 啟用轉譯可用性]**&#x200B;切換。
 

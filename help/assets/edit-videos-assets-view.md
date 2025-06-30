@@ -4,51 +4,14 @@ description: 使用 [!DNL Adobe Express] 支援的選項編輯視訊，並將更
 role: User
 exl-id: 42b25935-e2ff-444f-97c8-b4ed56f3ef9e
 feature: Best Practices, Video, Interactive Videos
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '825'
-ht-degree: 19%
+source-wordcount: '779'
+ht-degree: 17%
 
 ---
 
 # 在[!DNL Assets view]中編輯視訊 {#edit-videos}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
-        </td>
-    </tr>
-</table>
 
 使用內嵌的[!DNL Adobe Express]視訊快速動作，為Assets使用者輕鬆建立視訊內容的變體。 由[!DNL Adobe Express]提供支援的[!DNL Assets view]中的快速動作可提供方便使用的視訊編輯選項，包括裁切視訊、調整視訊大小、修剪視訊，以及將視訊轉換成GIF。
 
@@ -81,7 +44,7 @@ DAM中的最終視訊內容通常需要調整大小，才能發佈到特定管�
 
 1. 選取視訊並按一下&#x200B;**[!UICONTROL 編輯]**。
 2. 從左窗格中可用的快速動作，按一下&#x200B;**[!UICONTROL 調整視訊大小]**。
-3. 從&#x200B;**下拉式清單的**&#x200B;調整大小下方的社群媒體平台選取適當的維度。 或者，拖曳視訊邊角上的操作框來建立您想要的裁切。
+3. 從&#x200B;]**下拉式清單的**[!UICONTROL &#x200B;調整大小下方的社群媒體平台選取適當的維度。 或者，拖曳視訊邊角上的操作框來建立您想要的裁切。
 4. 視需要使用&#x200B;**[!UICONTROL 視訊比例]**&#x200B;欄位來縮放視訊。
 5. 您可以選擇將視訊設為靜音或取消靜音。
 6. 按一下「**[!UICONTROL 套用]**」以套用您的變更。
@@ -135,7 +98,7 @@ DAM中的最終視訊內容通常需要調整大小，才能發佈到特定管�
 
 * 若要提供文件意見回饋，請使用右側邊欄提供的[!UICONTROL 編輯此頁面]![來編輯頁面](assets/do-not-localize/edit-page.png)或[!UICONTROL 記錄問題]![來建立 GitHub 問題](assets/do-not-localize/github-issue.png)。
 
-* 請聯絡[客戶服務](https://experienceleague.adobe.com/zh-hant?support-solution=General#support)。
+* 請聯絡[客戶服務](https://experienceleague.adobe.com/?support-solution=General#support)。
 
 >[!MORELIKETHIS]
 >

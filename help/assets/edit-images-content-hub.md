@@ -2,59 +2,14 @@
 title: 使用Adobe Express在Content Hub中編輯影像
 description: 使用Adobe Express在Content Hub中編輯影像
 exl-id: c9777862-226c-4d39-87da-9c4a30437dc5
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '464'
-ht-degree: 18%
+source-wordcount: '382'
+ht-degree: 10%
 
 ---
 
 # 在Content Hub中編輯影像 {#edit-images-content-hub}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
-        </td>
-    </tr>
-</table>
-
-![使用Adobe Express在Content Hub中編輯影像](assets/edit-images-content-hub.png)
-
->[!AVAILABILITY]
->
->現已提供 PDF 格式的 Content Hub 指南。下載完整指南，並使用 Adobe Acrobat AI 助理來回答您的查詢問題。
->
->[!BADGE Content Hub 指南 PDF]{type=Informative url="https://helpx.adobe.com/tw/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 Content Hub可讓您使用Adobe Express建立新內容。 您可以使用易於使用的工具來編輯現有內容、使用範本和品牌元素製作品牌變化版本，並使用 Adobe Firefly 的最新 GenAI 功能來建立新內容。
 
@@ -72,7 +27,7 @@ Content Hub可讓您使用Adobe Express建立新內容。 您可以使用易於�
 
 1. 按一下您需要編輯之影像的資產卡上可用的&#x200B;**[!DNL Open in Adobe Express]**。 或者，按一下影像以開啟其詳細資料，然後按一下[!DNL Adobe Express]標誌。 接著會載入適用於Adobe Express的內嵌編輯器，而不會離開Content Hub。
 
-   您可以利用[!DNL Adobe Express]功能來執行所有與影像編輯相關的動作，例如[調整影像大小](https://helpx.adobe.com/tw/express/using/resize-image.html)、[移除或變更背景顏色](https://helpx.adobe.com/tw/express/using/remove-background.html)、[裁切影像](https://helpx.adobe.com/tw/express/using/crop-image.html)、將影像與AI產生的影像或文字結合，等等。
+   您可以利用[!DNL Adobe Express]功能來執行所有與影像編輯相關的動作，例如[調整影像大小](https://helpx.adobe.com/express/using/resize-image.html)、[移除或變更背景顏色](https://helpx.adobe.com/express/using/remove-background.html)、[裁切影像](https://helpx.adobe.com/express/using/crop-image.html)、將影像與AI產生的影像或文字結合，等等。
 
 1. 執行修改並按一下&#x200B;**[!UICONTROL 儲存]**，將編輯後的資產儲存為下列任一格式型別：
 

@@ -4,51 +4,14 @@ description: 瞭解如何將 [!DNL AEM Assets] 與 [!DNL Figma] 整合，以在�
 hide: false
 role: User
 exl-id: 530561ca-497b-4331-a014-72c561e1ca84
-source-git-commit: 2644c849df32af14c70e686a803b690996812046
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '496'
-ht-degree: 10%
+source-wordcount: '450'
+ht-degree: 0%
 
 ---
 
 # 將[!DNL AEM Assets]與[!DNL Figma]整合{#integrate-aem-assets-with-figma}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime 與 Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets 與 Edge Delivery Services 整合</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>使用者介面可擴充性</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>全新</i></sup><a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用 Dynamic Media Prime 與 Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
-        </td>
-    </tr>
-</table>
 
 [!DNL AEM Assets]與[!DNL Figma]原生整合，可讓設計人員從[!DNL Figma]使用者介面直接存取[!DNL AEM Assets]中儲存的資產。 您可以將受管理的內容放在[!DNL Figma]畫布的[!DNL AEM Assets]中，然後將新內容或已編輯的內容儲存在[!DNL AEM Assets]存放庫中。
 
@@ -70,13 +33,13 @@ ht-degree: 10%
 
 >[!NOTE]
 >
-> 如果您在登入您的[!DNL AEM]環境後看到&#x200B;**[!UICONTROL 網路錯誤]**&#x200B;訊息，請[聯絡Adobe支援](https://helpx.adobe.com/tw/contact.html)以取得協助。
+> 如果您在登入您的[!DNL AEM]環境後看到&#x200B;**[!UICONTROL 網路錯誤]**&#x200B;訊息，請[聯絡Adobe支援](https://helpx.adobe.com/contact.html)以取得協助。
 
 ## 將[!DNL AEM]資產匯入[!DNL Figma]畫布{#import-aem-assets-into-figma-workflow}
 
 在您的[!DNL Figma]設計介面中[存取[!UICONTROL Adobe Experience Manager (AEM) Assets Connector]面板](#access-aem-assets-connector)，並執行下列動作：
 
-1. 在[!UICONTROL Adobe Experience Manager (AEM) Assets Connector]面板中搜尋資產。 如需詳細資訊，請參閱[使用Asset Selector](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector#using-asset-selector)。
+1. 在[!UICONTROL Adobe Experience Manager (AEM) Assets Connector]面板中搜尋資產。 如需詳細資訊，請參閱[使用Asset Selector](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector#using-asset-selector)。
 
 1. 將資產拖放至畫布或選取資產，然後按一下「選取&#x200B;**[!UICONTROL 」]**&#x200B;將資產放到畫布上。
 

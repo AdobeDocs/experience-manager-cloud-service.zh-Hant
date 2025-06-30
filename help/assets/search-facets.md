@@ -4,55 +4,18 @@ description: 本文說明如何在Experience Manager中建立、修改和使用�
 feature: Metadata
 role: Admin, User
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '2551'
+source-wordcount: '2505'
 ht-degree: 19%
 
 ---
 
 # 搜尋 Facet {#search-facets}
 
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
-        </td>
-    </tr>
-</table>
-
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/search-facets.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/search-facets.html) |
 | AEM as a Cloud Service  | 本文章 |
 
 Adobe Experience Manager Assets的企業範圍部署可儲存許多資產。 有時候，如果您只使用Experience Manager的一般搜尋功能，尋找合適的資產可能會很困難且耗時。
@@ -114,11 +77,11 @@ Adobe Experience Manager Assets的企業範圍部署可儲存許多資產。 有
 
 當您選取選項時，會根據選項節點及其子節點（如果有的話）的`value`屬性來執行搜尋。 系統會周遊選項節點下的整個樹狀結構，並使用OR運算來結合每個子節點的`value`屬性，以形成搜尋查詢。
 
-例如，如果您為檔案類型選取「影像」，則會使用OR運算結合屬性來建立資 `value` 產的搜尋查詢。例如，通過組合影像/jpeg *、* image/gif *、* png影像、影像 */jpeg影像、以及使用OR操作對Tiff屬性進行搜索的Joff影像&#x200B;**&#x200B;***`jcr:content/metadata/dc:format` /Tiff影像的匹配結果來構建影像搜索查詢。
+例如，如果您為檔案類型選取「影像」，則會使用OR運算結合屬性來建立資 `value` 產的搜尋查詢。例如，通過組合影像/jpeg *、* image/gif *、* png影像、影像 */jpeg影像、以及使用OR操作對Tiff屬性進行搜索的Joff影像*****`jcr:content/metadata/dc:format` /Tiff影像的匹配結果來構建影像搜索查詢。
 
 檔案型別的Value屬性（如CRXDE中所見）可用來讓搜尋查詢運作
 
-您不必在CRX儲存庫中手動建立選項的節點結構，而是可以透過指定對應的索引鍵值配對，在JSON檔案中定義選項。在「屬性名稱」欄位中指定JSON檔 **[!UICONTROL 案的路徑]** 。例如，您可以定義鍵值配對、 `image/bmp`、 `image/gif` `image/jpeg`、和 `image/png` 並指定其值，如下列範例JSON檔案中所示。在「屬 **[!UICONTROL 性名稱]** 」欄位中，您可以指定此檔案的CRX路徑。
+您不必在CRX儲存庫中手動建立選項的節點結構，而是可以透過指定對應的索引鍵值配對，在JSON檔案中定義選項。在「屬性名稱」欄位中指定JSON檔 **[!UICONTROL 案的路徑]** 。例如，您可以定義鍵值配對、 `image/bmp`、 `image/gif``image/jpeg`、和 `image/png` 並指定其值，如下列範例JSON檔案中所示。在「屬 **[!UICONTROL 性名稱]** 」欄位中，您可以指定此檔案的CRX路徑。
 
 ```json
 {
@@ -140,7 +103,7 @@ Adobe Experience Manager Assets的企業範圍部署可儲存許多資產。 有
 
 1. 選取Experience Manager標誌，然後前往&#x200B;**[!UICONTROL 工具>一般>搜尋Forms]**。
 1. 從&#x200B;**[!UICONTROL 搜尋Forms]**&#x200B;頁面，選取&#x200B;**[!UICONTROL Assets管理搜尋邊欄]**，然後選取「編輯」圖示。
-1. 在「編 **[!UICONTROL 輯搜索表單]** 」頁中，將「選 **[!UICONTROL 項謂詞」從]** 「選擇謂詞 **&#x200B;**&#x200B;」頁籤拖到主窗格。
+1. 在「編 **[!UICONTROL 輯搜索表單]** 」頁中，將「選 **[!UICONTROL 項謂詞」從]** 「選擇謂詞 **** 」頁籤拖到主窗格。
 1. 在「設 **[!UICONTROL 定]** 」標籤中，輸入屬性的標籤和名稱。例如，若要根據資產的格式來搜尋資產，請為標籤指定好記的名稱，例如&#x200B;**[!UICONTROL 檔案型別]**。 指定在屬性欄位中執行搜尋時所依據的屬性，例如`jcr:content/metadata/dc:format.`
 1. 執行下列任一項作業：
 
@@ -200,7 +163,7 @@ Adobe Experience Manager Assets的企業範圍部署可儲存許多資產。 有
  <tbody>
   <tr>
    <td><p><strong>述詞名稱</strong></p> </td>
-   <td><p><strong>描述</strong></p> </td>
+   <td><p><strong>說明</strong></p> </td>
    <td><p><strong>屬性</strong></p> </td>
   </tr>
   <tr>
@@ -221,7 +184,7 @@ Adobe Experience Manager Assets的企業範圍部署可儲存許多資產。 有
     <ul>
      <li>預留位置</li>
      <li>根路徑</li>
-     <li>描述</li>
+     <li>說明</li>
     </ul> </td>
   </tr>
   <tr>
@@ -231,7 +194,7 @@ Adobe Experience Manager Assets的企業範圍部署可儲存許多資產。 有
     <ul>
      <li>標籤</li>
      <li>路徑</li>
-     <li>描述</li>
+     <li>說明</li>
     </ul> </td>
   </tr>
   <tr>
@@ -245,7 +208,7 @@ Adobe Experience Manager Assets的企業範圍部署可儲存許多資產。 有
     </ul> </td>
   </tr>
   <tr>
-   <td><p>相對日期</p> </td>
+   <td><p>相對時間</p> </td>
    <td><p>搜尋述詞，以根據資產的相對建立日期來搜尋資產。 例如，您可以設定2個月前、3週前等選項。 </p> </td>
    <td>
     <ul>
@@ -274,7 +237,7 @@ Adobe Experience Manager Assets的企業範圍部署可儲存許多資產。 有
      <li>屬性名稱</li>
      <li>範圍文字（從）</li>
      <li>範圍文字（至）</li>
-     <li>描述</li>
+     <li>說明</li>
     </ul> </td>
   </tr>
   <tr>
@@ -295,7 +258,7 @@ Adobe Experience Manager Assets的企業範圍部署可儲存許多資產。 有
      <li>標籤</li>
      <li>屬性名稱</li>
      <li>路徑</li>
-     <li>描述</li>
+     <li>說明</li>
     </ul> </td>
   </tr>
   <tr>
@@ -305,7 +268,7 @@ Adobe Experience Manager Assets的企業範圍部署可儲存許多資產。 有
     <ul>
      <li>屬性名稱</li>
      <li>屬性值</li>
-     <li>描述</li>
+     <li>說明</li>
     </ul> </td>
   </tr>
   <tr>
@@ -335,7 +298,7 @@ Adobe Experience Manager Assets的企業範圍部署可儲存許多資產。 有
     <ul>
      <li>屬性名稱</li>
      <li>屬性值</li>
-     <li>描述</li>
+     <li>說明</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -365,7 +328,7 @@ Adobe建議您在移除預設的搜尋Facet時務必小心，以免出現效能�
 1. 在工具列中選取&#x200B;**[!UICONTROL 刪除]** ![刪除圖示](assets/do-not-localize/deleteoutline.png)。
 1. 在確認對話方塊中，選取&#x200B;**[!UICONTROL 刪除]**&#x200B;以移除自訂變更。
 
-   刪除搜尋Facet的自訂變更後，在「搜尋表單」頁面的「資產管 **[!UICONTROL 理搜尋邊欄]** 」前會重 **&#x200B;**&#x200B;新顯示「鎖定」圖示。
+   刪除搜尋Facet的自訂變更後，在「搜尋表單」頁面的「資產管 **[!UICONTROL 理搜尋邊欄]** 」前會重 **** 新顯示「鎖定」圖示。
 
 ## 使用者權限 {#user-permissions}
 

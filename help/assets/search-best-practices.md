@@ -5,48 +5,14 @@ contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
 feature: Best Practices
 role: User
-source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '2570'
-ht-degree: 3%
+source-wordcount: '2527'
+ht-degree: 2%
 
 ---
 
 # AEM Assets搜尋最佳實務
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
-        </td>
-    </tr>
-</table>
 
 [!DNL Adobe Experience Manager Assets]提供強大的資產搜尋方法，協助您達到更高的內容速度。 有時候，尋找正確的資產可能會很困難且耗時。 因此，[!DNL Adobe Experience Manager Assets]中的搜尋資產功能是使用數位資產管理系統的核心，無論是供創意人員進一步使用、供業務使用者和行銷人員穩健管理資產，還是DAM管理員管理。
 
@@ -56,8 +22,8 @@ ht-degree: 3%
 
 以下是開始搜尋前需在Experience Manager中執行的基本步驟：
 
-* 在&#x200B;**管理員檢視**&#x200B;中，前往Experience Manager中的Assets >檔案，然後按一下頂端列中的搜尋圖示。 或者，使用正斜線(/)開啟「全搜尋」欄位。
-在&#x200B;**Assets檢視**&#x200B;中，搜尋列會顯示在頂端，可以直接存取。
+* 在&#x200B;**管理員檢視**中，前往Experience Manager中的Assets >檔案，然後按一下頂端列中的搜尋圖示。 或者，使用正斜線(/)開啟「全搜尋」欄位。
+在**Assets檢視**&#x200B;中，搜尋列會顯示在頂端，可以直接存取。
 * 已預先選取`Location:Assets`和`Path:/content/dam`，以將搜尋範圍限制在您的Experience Manager Assets存放庫。 如果您導覽至任何其他資料夾，`Path:/content/dam/<folder name>`會顯示在「全搜尋」欄位中，以將搜尋範圍限制在目前的資料夾。
 
 ## 基本搜尋 {#basic-search}
@@ -302,7 +268,7 @@ When you are unsure about the title or meta description of an asset, you can use
 
 ## 自訂搜尋多面向 {#custom-search-facets}
 
-Adobe Experience Manager中的搜尋Facet可讓您以多種方式搜尋資產，而非使用單一、預先決定或分類順序。 您可以自訂搜尋Facet並根據需求新增述詞。 如需新增自訂述詞的逐步指南，請參閱[搜尋Facet](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=zh-Hant#)。
+Adobe Experience Manager中的搜尋Facet可讓您以多種方式搜尋資產，而非使用單一、預先決定或分類順序。 您可以自訂搜尋Facet並根據需求新增述詞。 如需新增自訂述詞的逐步指南，請參閱[搜尋Facet](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en#)。
 
 <!--**Scenario 10: Search assets based on Sku ID**
 to be added later
@@ -345,12 +311,12 @@ The newly added assets are not indexed.
 <table>
     <tr>
         <th> 參數 </th>
-        <th> 管理員檢視 </th>
+        <th> 管理員視圖 </th>
         <th> 資產檢視 </th>
     </tr>
     <tr>
         <td> 自訂Facet </td>
-        <td> 您可以視需求新增<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=zh-Hant">個自訂搜尋Facet。</td>
+        <td> 您可以視需求新增<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en">個自訂搜尋Facet。</td>
         <td> Assets檢視部分支援自訂Facet。 支援的Facet包括：
             <ul>
             <li> 預測標籤
@@ -395,7 +361,7 @@ The newly added assets are not indexed.
             <li> 發佈日期
             <li> 上次發佈者
             <li> 核准 
-            <li> 結帳
+            <li> 簽出
             <li> 到期日
             <li> Dynamic Media
             </ul>
@@ -464,5 +430,5 @@ The newly added assets are not indexed.
 
 >[!MORELIKETHIS]
 >
->* [搜尋資產](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/search-assets.html?lang=zh-Hant)
->* [搜尋 Facet](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=zh-Hant)
+>* [搜尋資產](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/search-assets.html?lang=en)
+>* [搜尋 Facet](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en)

@@ -6,55 +6,18 @@ mini-toc-levels: 1
 feature: Collections, Asset Management
 role: User
 exl-id: b0798adc-56a4-4577-b4ee-8d1fca3bff09
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '2444'
+source-wordcount: '2398'
 ht-degree: 19%
 
 ---
 
 # 管理集合 {#manage-collections}
 
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
-        </td>
-    </tr>
-</table>
-
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-collections.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-collections.html?lang=en) |
 | AEM as a Cloud Service  | 本文章 |
 
 集合是Adobe Experience Manager Assets中的一組資產。 使用集合在使用者之間共用資產。集合可以是靜態集合或基於搜尋結果的動態集合。
@@ -106,7 +69,7 @@ ht-degree: 19%
 您可以從Assets UI將資產拖曳至收藏集。 您也可以建立收藏集的副本，並將資產拖曳至該處。
 
 1. 從Assets使用者介面，選取您要新增至集合的資產。
-1. 將資產拖曳至集合&#x200B;**區域中的**&#x200B;拖放位置。 或者，從工具列選取&#x200B;**[!UICONTROL 至集合]**&#x200B;圖示。
+1. 將資產拖曳至集合&#x200B;]**區域中的**[!UICONTROL &#x200B;拖放位置。 或者，從工具列選取&#x200B;**[!UICONTROL 至集合]**&#x200B;圖示。
 1. 在&#x200B;**[!UICONTROL 新增至集合]**&#x200B;頁面中，從工具列選取&#x200B;**[!UICONTROL 建立集合]**&#x200B;圖示。 如果您想要將資產新增至現有的集合，請從頁面中選取資產，然後選取「**[!UICONTROL 新增]**」。 依預設，會選取最近更新的系列。
 1. 在「建 **[!UICONTROL 立新系列]** 」對話方塊中，指定系列的名稱。如果您希望系列可供所有使用者存取，請選取「公用 **[!UICONTROL 系列」]**。
 1. 選取&#x200B;**[!UICONTROL 繼續]**&#x200B;以建立集合。
@@ -125,7 +88,7 @@ ht-degree: 19%
    >
    >如果您選取&#x200B;**[!UICONTROL 公用]**，在您建立智慧型集合後，所有具有「擁有者」角色的人都可以使用該集合。 如果您取消&#x200B;**[!UICONTROL 公用]**&#x200B;選項，DAM使用者群組將不再與智慧型集合相關聯。
 
-1. 選取&#x200B;**[!UICONTROL 儲存]**&#x200B;以建立智慧型集合，然後關閉訊息方塊以完成程式。 新的智慧型系列也會新增至&#x200B;**[!UICONTROL 已儲存的搜尋]**&#x200B;清單。
+1. 選取&#x200B;**[!UICONTROL 儲存]**&#x200B;以建立智慧型集合，然後關閉訊息方塊以完成程式。 新的智慧型系列也會新增至&#x200B;**[!UICONTROL 已儲存的搜尋]**清單。
 「建立智慧選 **[!UICONTROL 擇」按鈕的標籤將更改為]** 「編 **[!UICONTROL 輯智慧選擇」]**。要編輯智慧系列的設定，請從「檔案和文 **[!UICONTROL 件夾]** 」列 **[!UICONTROL 表中選擇「檔案]** 」。接著，選取&#x200B;**[!UICONTROL 編輯智慧選擇]**&#x200B;按鈕。
 
 ## 將資產新增至集合 {#add-assets-to-a-collection}
@@ -160,7 +123,7 @@ ht-degree: 19%
 收藏集中繼資料包含有關收藏集的資料，包括新增的任何標籤。
 
 1. 從「集合」控制檯選取集合，然後從工具列選取&#x200B;**[!UICONTROL 屬性]**&#x200B;圖示。
-1. 在「系列 **[!UICONTROL 中繼資料]** 」頁面中，從「基本」和「進階」標籤檢視系 **[!UICONTROL 列中繼資]** 料 **&#x200B;**&#x200B;。
+1. 在「系列 **[!UICONTROL 中繼資料]** 」頁面中，從「基本」和「進階」標籤檢視系 **[!UICONTROL 列中繼資]** 料 **** 。
 1. 視需要修改中繼資料，然後從工具列選取&#x200B;**[!UICONTROL 儲存並關閉]**&#x200B;以儲存變更。
 
 ### 大量編輯收藏集中繼資料 {#edit-collection-metadata-in-bulk}
@@ -169,7 +132,7 @@ ht-degree: 19%
 
 1. 在「收藏集」控制檯中，選取您要編輯中繼資料的兩個或多個收藏集。
 1. 從工具列中選取&#x200B;**[!UICONTROL 屬性]**&#x200B;圖示。
-1. 在「系 **[!UICONTROL 列中繼資料]** 」頁面中，視需要編輯「基本」和「進階」標籤下的中繼資料 **&#x200B;**&#x200B;**&#x200B;** 。
+1. 在「系 **[!UICONTROL 列中繼資料]** 」頁面中，視需要編輯「基本」和「進階」標籤下的中繼資料 ******** 。
 1. 從工具列選取&#x200B;**[!UICONTROL 儲存並關閉]**，然後關閉確認對話方塊以完成程式。
 1. 若要將新中繼資料附加至現有的中繼資料，請選取「 **[!UICONTROL Apend」模式]**。如果您未選取此選項，新的中繼資料會取代欄位中現有的中繼資料。選取&#x200B;**[!UICONTROL 提交]**。
 
@@ -228,7 +191,7 @@ Adobe Enterprise Manager Assets可讓您大量編輯許多集合的中繼資料�
 
 >[!NOTE]
 >
->大量編輯方法適用於集合中可用的資產。 對於跨資料夾可用的資產，或符合共同條件的資產，可在搜尋[&#128279;](/help/assets/search-assets.md#metadata-updates)後大量更新中繼資料。
+>大量編輯方法適用於集合中可用的資產。 對於跨資料夾可用的資產，或符合共同條件的資產，可在搜尋](/help/assets/search-assets.md#metadata-updates)後[大量更新中繼資料。
 
 1. 在集合控制檯中，選取您要編輯的集合。
 1. 從工具列中選取&#x200B;**[!UICONTROL 屬性]**&#x200B;以開啟所選集合的[!UICONTROL 屬性]頁面。
@@ -266,7 +229,7 @@ Adobe Enterprise Manager Assets可讓您大量編輯許多集合的中繼資料�
 
 ## 已儲存搜尋 {#saved-searches}
 
-在「資產」使用者介面中，您可以根據特定規則、搜尋准則或自訂搜尋刻面來搜尋或篩選資產。如果您將這些項目儲存為「 **[!UICONTROL 已儲存的搜尋]**」，您稍後可從「篩選」面板的「已儲存的搜尋 **&#x200B;**&#x200B;」清單中存取。建立儲存的搜尋也會建立智慧型系列。
+在「資產」使用者介面中，您可以根據特定規則、搜尋准則或自訂搜尋刻面來搜尋或篩選資產。如果您將這些項目儲存為「 **[!UICONTROL 已儲存的搜尋]**」，您稍後可從「篩選」面板的「已儲存的搜尋 **** 」清單中存取。建立儲存的搜尋也會建立智慧型系列。
 
 儲存的搜尋會在您建立智慧型系列時建立。智慧型系列會自動新增至「已儲 **[!UICONTROL 存的搜尋]** 」清單。集合的「已儲存的搜尋」查詢儲存在CRXDE中相對位置`/content/dam/collections/`的`dam:query`屬性中。 您可以儲存的搜尋以及清單中顯示的已儲存搜尋沒有限制。
 

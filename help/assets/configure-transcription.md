@@ -9,51 +9,14 @@ topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '1714'
-ht-degree: 3%
+source-wordcount: '1668'
+ht-degree: 2%
 
 ---
 
 # 在[!DNL Experience Manager Assets]中設定轉錄 {#configure-transcription-service}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
-        </td>
-    </tr>
-</table>
 
 轉錄是使用語音辨識技術，將音訊或視訊檔案中的音訊轉換為文字（語音轉換為文字）的過程。
 [!DNL Adobe Experience Manager Assets]已設定[!DNL Azure Media Services]，它會自動產生WebVTT (.vtt)格式之支援音訊或視訊檔案中的口語文字轉錄。 在[!DNL Experience Manager Assets]中處理音訊或視訊資產時，轉譯服務會自動產生音訊或視訊資產的文字轉譯，並將其儲存在原始資產所在的Assets存放庫中的相同位置。 [!DNL Experience Manager Assets]轉錄服務可讓行銷人員透過新增的文字內容可發現性來有效管理其音訊與視訊內容，並透過支援協助工具與本地化來提高這些資產的ROI。
@@ -72,7 +35,7 @@ ht-degree: 3%
    * 租使用者端點（網域）
    * 媒體帳戶
    * 資源群組
-   * 訂閱ID
+   * 訂閱 ID
 
    請參閱[Azure檔案](https://docs.microsoft.com/en-us/azure/media-services/latest/access-api-howto?tabs=portal)，以取得存取Azure Media Services API的認證。
 
@@ -121,7 +84,7 @@ ht-degree: 3%
 將處理設定檔設定為音訊和視訊檔案的轉譯後，您可以使用以下方法之一將此處理設定檔套用至資料夾：
 
 * 在&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 處理設定檔]**&#x200B;中選取處理設定檔定義，並使用&#x200B;**[!UICONTROL 將設定檔套用至資料夾]**&#x200B;動作。 內容瀏覽器可讓您導覽至特定資料夾、選取資料夾並確認設定檔的應用程式。
-* 在Assets使用者介面中選取資料夾，然後按一下&#x200B;**[!UICONTROL 屬性]**&#x200B;動作以開啟資料夾屬性。 按一下&#x200B;**[!UICONTROL 資產處理]**&#x200B;標籤，然後從&#x200B;**[!UICONTROL 處理設定檔]**&#x200B;清單中為資料夾選取適當的處理設定檔。 若要儲存變更，請按一下[儲存並關閉]。**&#x200B;**
+* 在Assets使用者介面中選取資料夾，然後按一下&#x200B;**[!UICONTROL 屬性]**&#x200B;動作以開啟資料夾屬性。 按一下&#x200B;**[!UICONTROL 資產處理]**&#x200B;標籤，然後從&#x200B;**[!UICONTROL 處理設定檔]**&#x200B;清單中為資料夾選取適當的處理設定檔。 若要儲存變更，請按一下[儲存並關閉]。****
 
   ![configure-transcription-service](assets/video-processing-profile3.png)
 
@@ -161,7 +124,7 @@ ht-degree: 3%
 
 另請參閱：
 
-* [有關如何將CC隱藏式字幕新增至Dynamic Media視訊的教學影片](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=zh-Hant#add-cc-closed-captioning-to-dynamic-media-video)
+* [有關如何將CC隱藏式字幕新增至Dynamic Media視訊的教學影片](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html#add-cc-closed-captioning-to-dynamic-media-video)
 * [將Dynamic Media影片發佈至YouTube](/help/assets/dynamic-media/video.md#publishing-videos-to-youtube)
 
 在下圖中，URL會反映參照文字稿（.vtt檔案）的註解部分。 視訊會在視訊中的指定時間戳記，將口語（轉錄文字）反映為&#x200B;**[!UICONTROL 隱藏式字幕]**。 使用者可以使用&#x200B;**[!UICONTROL CC]**&#x200B;按鈕來啟用或停用註解。

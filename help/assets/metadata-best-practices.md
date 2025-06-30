@@ -4,10 +4,10 @@ description: 瞭解中繼資料最佳實務，以有效管理您的數位資產�
 role: User, Admin
 exl-id: d90519df-55a6-4e23-81ad-ff2365d71c0d
 feature: Metadata, Best Practices
-source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '1427'
-ht-degree: 2%
+source-wordcount: '1384'
+ht-degree: 1%
 
 ---
 
@@ -17,40 +17,6 @@ aem metadata
 experience manager metadata-->
 
 # 中繼資料管理和最佳做法 {#metadata-best-practices}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
-        </td>
-    </tr>
-</table>
 
 若要讓您的企業脫穎而出，並吸引更多客戶，運用影像、視訊和其他數位資產等高品質視覺效果至關重要。 為此，您需要可讓您將中繼資料新增到所有數位資產的程式，以便輕鬆搜尋。 中繼資料是提供有關數位資產的重要詳細資訊，包括資產名稱、型別、存放庫內的位置、修改日期和關聯標籤。 中繼資料可簡化資產管理、改善搜尋能力和協助工具，並確保有效的版本控制。
 
@@ -131,7 +97,7 @@ experience manager metadata-->
 
 >[!NOTE]
 >
->瞭解如何[管理數位資產的中繼資料](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html?lang=zh-Hant)。
+>瞭解如何[管理數位資產的中繼資料](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html)。
 
 ### 與中繼資料策略一致
 
@@ -147,7 +113,7 @@ experience manager metadata-->
 * **有效使用控制辭彙：**&#x200B;使用標準化的標籤辭彙來實作控制辭彙。 瞭解如何有效實作[AEM Tagging Framework](/help/implementing/developing/introduction/tagging-framework.md)。  <br>
 例如，當使用主題標籤影像以維持系統順序時，請一致使用*product_launch*&#x200B;或&#x200B;*event_promotion*&#x200B;等辭彙。
 
-* **維持正確性和完整性：**&#x200B;若要保持中繼資料的一致性，正確性、完整性和各種來源之間的一致性至關重要。
+* **維持正確性和完整性：**若要保持中繼資料的一致性，正確性、完整性和各種來源之間的一致性至關重要。
 例如，將中繼資料新增至PDF檔案時，請確認作者名稱和關鍵字等詳細資料正確且完整。
 
 #### 影片：將大量中繼資料新增至資產
@@ -165,14 +131,14 @@ experience manager metadata-->
    1. 移至&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL 檔案]** > **[!UICONTROL [資產資料夾]]**。
    1. 選取您要更新中繼資料的資產，然後按一下&#x200B;**[!UICONTROL 屬性]**。
    1. 導覽至&#x200B;**[!UICONTROL 進階]**&#x200B;索引標籤，然後按一下&#x200B;**[!UICONTROL 提升搜尋關鍵字]**&#x200B;下的&#x200B;**[!UICONTROL 新增]**。 <br>您必須使用預設的中繼資料結構描述來提升搜尋關鍵字。
-   1. 輸入您要增加搜尋的關鍵字，然後按一下[新增]。**&#x200B;**<br>
+   1. 輸入您要增加搜尋的關鍵字，然後按一下[新增]。****<br>
 您可以新增多個關鍵字，並根據您的優先順序排列關鍵字。
    1. 按一下&#x200B;**[!UICONTROL 儲存並關閉]**。
 使用您新增的關鍵字搜尋資產。 資產會出現在最熱門的搜尋結果中。
 
-  瞭解如何[在Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=zh-Hant)中提升搜尋。
+  瞭解如何[在Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html)中提升搜尋。
 
-* **自訂中繼資料欄位：**&#x200B;自訂中繼資料欄位，以擷取有關資產的其他資訊。 例如，為專案詳細資訊、版權資訊或任何其他可增強搜尋功能的相關資料新增特定欄位。 瞭解如何在Experience Manager Assets中編輯或新增自訂中繼資料[&#128279;](meta-edit.md)。
+* **自訂中繼資料欄位：**&#x200B;自訂中繼資料欄位，以擷取有關資產的其他資訊。 例如，為專案詳細資訊、版權資訊或任何其他可增強搜尋功能的相關資料新增特定欄位。 瞭解如何在Experience Manager Assets中編輯或新增自訂中繼資料](meta-edit.md)。[
 
 
 * **中繼資料驗證：**&#x200B;實作中繼資料專案的驗證檢查，以確保一致性和準確性。 使用受控辭彙表可讓驗證程式更順暢，並減少輸入內容不清楚或不一致的機率。 這可能涉及為某些中繼資料屬性設定指導方針，以避免資訊模糊或不一致。
@@ -200,4 +166,4 @@ experience manager metadata-->
 
 及早溝通目標、進度、里程碑和挑戰，以接收所有利害關係人的意見與合作。 鼓勵整個組織的共同作業，建立有效率的流程和寶貴的中繼資料。
 
-深入瞭解[中繼資料及其相關概念](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-concepts.html?lang=zh-Hant)，以有效管理您的Experience Manager中繼資料。
+深入瞭解[中繼資料及其相關概念](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-concepts.html)，以有效管理您的Experience Manager中繼資料。

@@ -5,55 +5,18 @@ contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '1382'
-ht-degree: 5%
+source-wordcount: '1336'
+ht-degree: 4%
 
 ---
 
 # 從[!DNL Adobe Experience Manager]下載資產 {#download-assets-from-aem}
 
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
-        </td>
-    </tr>
-</table>
-
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/download-assets-from-aem.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/download-assets-from-aem.html?lang=en) |
 | AEM as a Cloud Service  | 本文章 |
 
 您可以下載資產，包括靜態和動態轉譯。 或者，您可以直接從[!DNL Adobe Experience Manager Assets]傳送包含資產連結的電子郵件。 下載的資產會整合在ZIP檔案中。<!-- The compressed ZIP file has a maximum file size of 1 GB for the export job. A maximum of 500 total assets per export job are allowed. -->
@@ -72,8 +35,8 @@ ht-degree: 5%
 
 * [Experience Manager使用者介面](#download-assets)
 * [資產共用公用](https://adobe-marketing-cloud.github.io/asset-share-commons/)
-* [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html?lang=zh-Hant)
-* [案頭應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=zh-Hant#download-assets)
+* [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
+* [案頭應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
 
 ## 使用[!DNL Experience Manager]介面下載資產 {#download-assets}
 
@@ -92,7 +55,7 @@ Experience Manager會根據資產數量和大小來最佳化下載體驗。 從�
 * 如果下載大小超過100 MB
 * 如果下載需要30秒以上的準備時間
 
-雖然非同步下載會在後端執行，但使用者可以繼續探索，並在Experience Manager中進一步工作。 除了Experience Manager收件匣通知之外，Experience Manager還可以傳送電子郵件以在下載程式完成時通知使用者。 若要啟用此功能，系統管理員可以透過[設定SMTP伺服器連線](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=zh-Hant#sending-email)來設定電子郵件服務。
+雖然非同步下載會在後端執行，但使用者可以繼續探索，並在Experience Manager中進一步工作。 除了Experience Manager收件匣通知之外，Experience Manager還可以傳送電子郵件以在下載程式完成時通知使用者。 若要啟用此功能，系統管理員可以透過[設定SMTP伺服器連線](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email)來設定電子郵件服務。
 
 設定電子郵件服務後，管理員和使用者可以從Experience Manager介面啟用電子郵件通知。
 
@@ -110,11 +73,11 @@ Experience Manager會根據資產數量和大小來最佳化下載體驗。 從�
 1. 在[!DNL Experience Manager]使用者介面中，按一下&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL 檔案]**。
 1. 導覽至您要下載的資產。 選取資料夾，或選取資料夾中一或多個資產。 在工具列上，按一下&#x200B;**[!UICONTROL 下載]**。
 
-   從[!DNL Experience Manager Assets]![&#128279;](/help/assets/assets/asset-download1.png)下載資產時有可用選項
+   從[!DNL Experience Manager Assets]](/help/assets/assets/asset-download1.png)下載資產時有![可用選項
 
 1. 在下載對話方塊中，選取您想要的下載選項。
 
-   | 下載選項 | 描述 |
+   | 下載選項 | 說明 |
    |---|---|
    | **[!UICONTROL 為每個資產建立個別的資料夾]** | 選取此選項，為每個資產建立一個資料夾，其中包含資產的所有已下載轉譯。 如果取消選取，則每個資產（以及如果選取要下載的其轉譯）都會包含在所產生封存檔的父資料夾中。 |
    | **[!UICONTROL 電子郵件]** | 選取此選項可將電子郵件通知（包含您下載的連結）傳送給其他使用者。 收件者使用者必須是`dam-users`群組的成員。 標準電子郵件範本可在下列位置取得：<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul> 您部署期間自訂的範本可在下列位置使用： <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul>您可以將租使用者特定的自訂範本儲存在下列位置：<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul> |
@@ -165,7 +128,7 @@ Experience Manager會根據資產數量和大小來最佳化下載體驗。 從�
 
 如果您不需要下載功能，請停用servlet以防止任何類似DoS的風險。 可透過更新Dispatcher設定以封鎖任何資產下載請求，在[!DNL Experience Manager]作者和發佈執行個體上停用`Asset Download Servlet`。 此servlet也可以直接透過OSGi主控台手動停用。
 
-1. 若要透過Dispatcher設定封鎖資產下載請求，請編輯`dispatcher.any`設定並新增規則到[篩選區段](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hant#configuring)。
+1. 若要透過Dispatcher設定封鎖資產下載請求，請編輯`dispatcher.any`設定並新增規則到[篩選區段](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring)。
 
    `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
 
@@ -176,7 +139,7 @@ Experience Manager會根據資產數量和大小來最佳化下載體驗。 從�
 1. 在Git中的專案程式碼中，於`/apps/system/config/com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter.cfg.json`建立設定檔。 檔案應包含`{}`作為其內容，表示對應OSGi元件的空OSGi設定。 此動作會啟用服務。
 1. 透過[!DNL Cloud Manager]部署您的程式碼，包括這個新的組態。
 1. 部署後，即可根據資產的開啟/關閉時間設定存取轉譯和中繼資料。 如果目前日期或時間落在開啟時間之前或關閉時間之後，則會顯示錯誤訊息。
-如需新增空白OSGi設定的詳細資訊，請參閱本[指南](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=zh-Hant)。
+如需新增空白OSGi設定的詳細資訊，請參閱本[指南](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=en)。
 
 ## 提示和限制 {#tips-limitations}
 
@@ -200,5 +163,5 @@ Experience Manager會根據資產數量和大小來最佳化下載體驗。 從�
 >[!MORELIKETHIS]
 >
 >* [下載DRM保護的資產](drm.md)
->* 在Win或Mac案頭上使用Experience Manager案頭應用程式[下載資產](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=zh-Hant)
->* [從支援的Adobe Assets應用程式中使用Adobe Creative Cloud Link下載資產](https://helpx.adobe.com/tw/enterprise/using/manage-assets-using-adobe-asset-link.html)
+>* 在Win或Mac案頭上使用Experience Manager案頭應用程式[下載資產](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
+>* [從支援的Adobe Assets應用程式中使用Adobe Creative Cloud Link下載資產](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html)

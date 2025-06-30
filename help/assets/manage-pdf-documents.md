@@ -4,51 +4,14 @@ description: 管理 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]中
 feature: Asset Management
 role: User, Admin
 exl-id: 29660869-6902-4093-845b-cd629be59d4d
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '881'
-ht-degree: 6%
+source-wordcount: '835'
+ht-degree: 4%
 
 ---
 
 # 在Experience Manager Assets as a Cloud Service中管理PDF檔案 {#add-assets-to-experience-manager}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
-        </td>
-    </tr>
-</table>
 
 Experience Manager Assets與Document Cloud PDF Viewer緊密整合，可讓您預覽PDF檔案的多個頁面。 此外，您也可以使用進階Document Cloud PDF檢視器功能，例如註解、搜尋文字、使用書籤和縮圖導覽PDF檔案，以及其他位於相同屋頂的功能。 Experience Manager Assets也可讓您上傳其他支援格式的檔案，以及以PDF格式預覽檔案。
 
@@ -84,7 +47,7 @@ Document Cloud PDF檢視器可透過下列方式為AEM Assets提供好處：
 
 Adobe Experience Manager Assets可讓您預覽包含數個頁面的PDF檔案。 若要預覽PDF檔案的多個頁面，請考量下列步驟：
 
-1. 請依照步驟[在AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=zh-Hant)中上傳資產。
+1. 請依照步驟[在AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=en)中上傳資產。
 1. 瀏覽您要上傳及預覽的PDF檔案。
 1. 開啟檔案。
 1. 依預設，PDF檔案檢視器會載入。 您也可以在「轉譯」面板下選取「PDF轉譯」 。
@@ -115,7 +78,7 @@ Experience Manager Assets可讓您將註解新增至PDF檔案。 PDF檔案可以
 <table>
         <tr>
              <th> 註解 </th>
-            <th> 描述 </th>
+            <th> 說明 </th>
         </tr>
         <tr>
            <td> <img src="/help/assets/assets/Comment.svg">個註解 </td>
@@ -163,7 +126,7 @@ Experience Manager Assets可讓您將註解新增至PDF檔案。 PDF檔案可以
 
 對於其他支援檔案格式的多頁預覽，請執行下列步驟：
 
-1. 請依照步驟[在AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=zh-Hant)中上傳資產。
+1. 請依照步驟[在AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=en)中上傳資產。
 1. 瀏覽您要上傳和預覽的檔案。
 1. 開啟檔案。
 1. 在左側面板的靜態區段下選取PDF 。 右側面板會顯示資產的多個頁面預覽。 從左側面板中選取縮圖，以選擇要預覽的頁面。

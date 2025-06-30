@@ -6,55 +6,18 @@ mini-toc-levels: 1
 role: User, Admin, Architect
 feature: Asset Management
 exl-id: a71aebdf-8e46-4c2d-8960-d188b14aaae9
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '3453'
+source-wordcount: '3407'
 ht-degree: 11%
 
 ---
 
 # 針對[!DNL Assets]使用MSM重複使用資產 {#reuse-assets-using-msm-for-assets}
 
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
-        </td>
-    </tr>
-</table>
-
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/reuse-assets-using-msm.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/reuse-assets-using-msm.html) |
 | AEM as a Cloud Service  | 本文章 |
 
 [!DNL Adobe Experience Manager]中的多網站管理員(MSM)功能可讓使用者重複使用編寫一次且可在多個網站位置重複使用的內容。 [!DNL Assets]可使用相同功能的MSM名稱數位資產。 使用[!DNL Assets]的MSM時，您可以：
@@ -177,7 +140,7 @@ MSM會維護來源資產與其即時副本之間的即時關係，以便：
 [!DNL Experience Manager]提供主控台以檢查來源資料夾的所有即時副本的狀態。 此主控台顯示所有子資產的狀態。
 
 1. 選取來源資料夾。 按一下工具列中的&#x200B;**[!UICONTROL 屬性]**。 或者，使用鍵盤快速鍵`p`。
-1. 按一下「 **[!UICONTROL 即時複製來源」]**。若要開啟主控台，請按一下「即 **[!UICONTROL 時複製概述」]**。此控制面板提供所有子資產的頂層狀態。
+1. 按一下「 **[!UICONTROL 即時複製來源」]**。若要開啟主控台，請按一下「即 **[!UICONTROL 時複製概觀」]**。此控制面板提供所有子資產的頂層狀態。
 
    ![在來源的即時副本主控台中檢視即時副本的狀態](assets/livecopy-statuses.png)
 
@@ -260,17 +223,17 @@ MSM會維護來源資產與其即時副本之間的即時關係，以便：
 
 同步動作僅將修改從來源提取到所選的即時副本。 同步動作會遵循並維持在取消繼承後完成的本機修改。 不會覆寫本機修改，也不會重新建立取消的繼承。 您可以透過三種方式啟動同步動作。
 
-| [!DNL Experience Manager]介面的位置 | 使用的時機與原因 | 使用方式 |
+| [!DNL Experience Manager]介面的位置 | 使用的時機與原因 | 使用方法 |
 |---|---|---|
-| [!UICONTROL 個參考]邊欄 | 當您已選取來源時，請快速同步處理。 | 檢視來源[&#128279;](#ref-rail-source)之參考邊欄中的快速動作 |
+| [!UICONTROL 個參考]邊欄 | 當您已選取來源時，請快速同步處理。 | 檢視來源](#ref-rail-source)之參考邊欄中的[快速動作 |
 | [!UICONTROL 屬性]頁面中的工具列 | 當您已經開啟即時副本屬性時，啟動同步。 | 請參閱[同步處理即時副本](#sync-lc) |
 | [!UICONTROL 即時副本總覽]主控台 | 選取來源資料夾或[!UICONTROL 即時副本總覽]主控台已開啟時，快速同步處理多個資產（不一定是全部）。 系統會一次起始一個資產的同步動作，但可一次同步多個資產的更快速方式。 | 檢視即時副本資料夾中許多資產的[動作](#bulk-actions) |
 
 ### 同步即時副本 {#sync-lc}
 
-若要啟動同步動作，請開啟即 **[!UICONTROL 時副本的「屬性]** 」頁面，按一下「即時 **&#x200B;**&#x200B;副本」，然後從工具列按一下所要的動作。
+若要啟動同步動作，請開啟即 **[!UICONTROL 時副本的「屬性]** 」頁面，按一下「即時 **** 副本」，然後從工具列按一下所要的動作。
 
-要查看與同步操作相關的狀態和資訊，請參 [閱即時副本的資訊和狀態](#status-lc-asset) [以及資料夾所有即時副本的狀態](#status-lc-folder)。
+要查看與同步操作相關的狀態和資訊，請參 [閱即時副本的資訊和狀態](#status-lc-asset)[以及資料夾所有即時副本的狀態](#status-lc-folder)。
 
 ![同步處理動作提取對來源](assets/livecopy_sync.png)所做的變更
 
@@ -316,9 +279,9 @@ MSM會維護來源資產與其即時副本之間的即時關係，以便：
 
 您可以暫時暫停關係，以防止即時副本接收對來源資產或資料夾所做的修改。 也可以恢復關係，讓即時副本開始從來源接收修改。
 
-若要暫停或繼續，請開啟即 **[!UICONTROL 時副本的「屬性]** 」頁面，按一下「即時副本 **&#x200B;**&#x200B;」，然後從工具列按一下所要的動作。
+若要暫停或繼續，請開啟即 **[!UICONTROL 時副本的「屬性]** 」頁面，按一下「即時副本 **** 」，然後從工具列按一下所要的動作。
 
-或者，您也可以從即時副本概述主控台，快速暫停或繼續即時副本資料夾中多 **[!UICONTROL 個資產的關係]** 。請參 [閱對即時副本資料夾中的許多資產採取動作](#bulk-actions)。
+或者，您也可以從即時副本概觀主控台，快速暫停或繼續即時副本資料夾中多 **[!UICONTROL 個資產的關係]** 。請參 [閱對即時副本資料夾中的許多資產採取動作](#bulk-actions)。
 
 ## 對即時副本進行本機修改 {#local-mods}
 
@@ -346,7 +309,7 @@ MSM會維護來源資產與其即時副本之間的即時關係，以便：
 
    >[!CAUTION]
    >
-   >當您按一下對話方塊中的&#x200B;**[!UICONTROL 分離]**&#x200B;時，關係會立即移除。 按一下[屬性]頁面上的[取消] **&#x200B;**&#x200B;無法復原它。
+   >當您按一下對話方塊中的&#x200B;**[!UICONTROL 分離]**&#x200B;時，關係會立即移除。 按一下[屬性]頁面上的[取消] ****&#x200B;無法復原它。
 
 或者，您也可以從&#x200B;**[!UICONTROL 即時副本概述]**&#x200B;主控台快速分離即時副本資料夾中的多個資產。 請參 [閱對即時副本資料夾中的許多資產採取動作](#bulk-actions)。
 
@@ -355,7 +318,7 @@ MSM會維護來源資產與其即時副本之間的即時關係，以便：
 如果您在即時副本資料夾中有多個資產，對每個資產起始動作可能會很繁瑣。 您可以從[!UICONTROL 即時副本主控台]快速啟動許多資產的基本動作。 上述方法可繼續用於個別資產。
 
 1. 選取來源資料夾。 按一下工具列中的&#x200B;**[!UICONTROL 屬性]**。 或者，使用鍵盤快速鍵`p`。
-1. 按一下「 **[!UICONTROL 即時複製來源」]**。若要開啟主控台，請按一下「即 **[!UICONTROL 時複製概述」]**。
+1. 按一下「 **[!UICONTROL 即時複製來源」]**。若要開啟主控台，請按一下「即 **[!UICONTROL 時複製概觀」]**。
 1. 在此控制面板中，從即時複製資料夾選取即時複製資產。從工具列按一下所需的動作。可用的動作有&#x200B;**[!UICONTROL 同步]**、**[!UICONTROL 重設]**、**[!UICONTROL 暫停]**&#x200B;和&#x200B;**[!UICONTROL 分離]**。 您可以在任何數量的即時副本資料夾中，對與所選來源資料夾處於即時關係的任何資產快速啟動這些動作。
 
    ![從即時副本概述主控台輕鬆更新即時副本資料夾中的許多資產](assets/livecopyconsole_update_many_assets.png)

@@ -6,51 +6,14 @@ mini-toc-levels: 1
 feature: Collaboration, Adobe Asset Link, Desktop App
 role: User, Architect, Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
 workflow-type: tm+mt
-source-wordcount: '3484'
+source-wordcount: '3438'
 ht-degree: 14%
 
 ---
 
 # Adobe Experience Manager與Creative Cloud整合最佳實務 {#aem-and-creative-cloud-integration-best-practices}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
-        </td>
-    </tr>
-</table>
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
@@ -72,7 +35,7 @@ Adobe Creative Cloud為創意團隊提供解決方案和服務的生態系統，
 | 要求 | 使用案例 | 相關曲面 |
 |---|---|---|
 | 簡化創意人員在桌上型電腦上的體驗 | 精簡從DAM ([!DNL Assets])存取資產的程式，方便創意專業人士或更廣義的使用者使用在原生資產建立應用程式中工作的案頭。 他們需要一種簡單明瞭的方式，以探索、使用（開啟）、編輯和儲存對Experience Manager的變更，以及上傳新檔案。 | Win或Mac案頭版；Creative Cloud應用程式 |
-| 從[!DNL Adobe Stock]提供高品質、現成可用的資產 | 行銷人員協助資產來源和探索，以加速內容建立流程。 創意專業人士會直接從自己的創意工具中使用核准的資產。 | [!DNL Assets]；[!DNL Adobe Stock]市集；中繼資料欄位 |
+| 從[!DNL Adobe Stock]提供高品質、現成可用的資產 | 行銷人員協助資產來源和探索，以加速內容建立流程。 Creative專業人員可直接在其創意工具中使用核准的資產。 | [!DNL Assets]；[!DNL Adobe Stock]市集；中繼資料欄位 |
 | 依組織分配與共用資產 | 內部部門/當地分支機構和外部合作夥伴、分銷商和代理商會使用上級組織共用的已核准資產。 企業想要安全且順暢地共用已建立的資產，以便更廣泛地重複使用。 | [!DNL Brand Portal]、[!DNL Asset Share Commons] |
 | 自動產生已上傳資產的預先定義變體 | 使用Adobe獨特的媒體處理和轉換技術，針對預先定義的動作自動處理資產。 建立自訂邏輯，以使用API和資產微服務定義您自己的動作。 | [!DNL Assets]使用者介面 |
 
@@ -81,12 +44,12 @@ Adobe Creative Cloud為創意團隊提供解決方案和服務的生態系統，
 | 相關角色的價值主張 | Adobe產品 | 相關曲面 |
 |---|---|---|
 | Creative使用者從[!DNL Experience Manager]探索資產、開啟並使用資產、編輯並上傳變更至[!DNL Experience Manager]，以及上傳新檔案至[!DNL Experience Manager]，無需離開其[!DNL Creative Cloud]應用程式。 | [Adobe Asset Link](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html) | Photoshop、Illustrator和InDesign。 |
-| 商務使用者可簡化開啟和使用資產、編輯和上傳[!DNL Experience Manager]的變更，以及從案頭環境上傳新檔案至[!DNL Experience Manager]的程式。 他們使用一般整合，在原生案頭應用程式中開啟任何資產型別，包括非Adobe資產型別。 | [[!DNL Experience Manager] 桌面應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=zh-Hant) | Win和Mac案頭上的Experience Manager案頭應用程式 |
+| 商務使用者可簡化開啟和使用資產、編輯和上傳[!DNL Experience Manager]的變更，以及從案頭環境上傳新檔案至[!DNL Experience Manager]的程式。 他們使用一般整合，在原生案頭應用程式中開啟任何資產型別，包括非Adobe資產型別。 | [[!DNL Experience Manager] 桌面應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | Win和Mac案頭上的Experience Manager案頭應用程式 |
 | 行銷人員和商務使用者可在Experience Manager中探索、預覽、授權並儲存及管理Adobe Stock資產。 授權和儲存的資產可提供精選的Adobe Stock中繼資料，以改善治理。 | [Experience Manager與Adobe Stock整合](aem-assets-adobe-stock.md) | [!DNL Experience Manager]網頁介面 |
-| 改善數位產品設計師和行銷人員之間的協同合作。 讓設計人員在Adobe XD畫布上的設計和線框模型中使用數位資產。 |  [!DNL Adobe XD][&#128279;](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link-for-xd.html)的[!DNL Adobe Asset Link]  | [!DNL Adobe XD] |
+| 改善數位產品設計師和行銷人員之間的協同合作。 讓設計人員在Adobe XD畫布上的設計和線框模型中使用數位資產。 |  [!DNL Adobe XD]](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link-for-xd.html)的[[!DNL Adobe Asset Link]  | [!DNL Adobe XD] |
 | 行銷人員可以根據上傳的資產和使用自訂建立的預先定義動作，自動建立變數和衍生產品。 使用此自動化功能來改善內容速度並減少手動操作。 | [內容自動化](/help/assets/cc-api-integration.md) | [!DNL Experience Manager Assets]網頁介面 |
 
-本文主要針對協作需求的前兩個方面。資產規模分配和採購作為一個使用案例被簡要提及。針對這些需求解決方案，請考慮Adobe品牌入口網站或資產共用公域。其他解決方案，例如[Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=zh-Hant)，可根據[Asset Share Commons](https://opensource.adobe.com/asset-share-commons/)元件，[Link Share](share-assets.md)，使用[Experience Manager Assets Web UI](/help/assets/manage-digital-assets.md)建置的解決方案，應根據特定需求檢閱。
+本文主要針對協作需求的前兩個方面。資產規模分配和採購作為一個使用案例被簡要提及。針對這些需求解決方案，請考慮Adobe品牌入口網站或資產共用公域。其他解決方案，例如[Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html)，可根據[Asset Share Commons](https://opensource.adobe.com/asset-share-commons/)元件，[Link Share](share-assets.md)，使用[Experience Manager Assets Web UI](/help/assets/manage-digital-assets.md)建置的解決方案，應根據特定需求檢閱。
 
 適用於Experience Manager的![Creative Cloud連線：決定要使用哪個功能](assets/creative-connections-aem.png)
 
@@ -94,16 +57,16 @@ Adobe Creative Cloud為創意團隊提供解決方案和服務的生態系統，
 
 ### 使用案例與Adobe解決方案的對應 {#mapping-of-use-cases-and-adobe-solutions}
 
-| 使用案例 | Adobe資產連結 | Experience Manager案頭應用程式 | 備註或替代方法 |
+| 使用案例 | Adobe Asset Link | Experience Manager案頭應用程式 | 備註或替代方法 |
 |----------------------------------------------------------|-----------------------------------------------------------------------------------|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
 | 探索 — 瀏覽資料夾 | 是 | Experience Manager Web UI +案頭動作 | 瀏覽網路共用時，請關閉縮圖以避免下載資產的二進位檔案。 |
 | 探索 — 存取集合 | 是 | Experience Manager Web UI +案頭動作 |  |
 | 探索 — 搜尋資產 | 是 | Experience Manager Web UI +案頭動作 |  |
 | 使用 — 開啟資產 | 是 | 是 — 適用於任何應用程式 | [從網頁介面](/help/assets/manage-digital-assets.md#previewing-assets)或從Finder開啟 |
 | 使用 — 將Experience Manager中的資產放入檔案中 | 是 — 內嵌 | 是 — 連結或內嵌 | Experience Manager案頭應用程式可讓您存取本機檔案系統上的資產。 原生應用程式中的這些連結會以本機路徑表示。 |
-| 編輯 — 開啟以進行編輯 | 是 — 結帳動作 | 是 — 開啟動作（在網路共用中） | 依預設，[在AAL中籤出](https://helpx.adobe.com/tw/enterprise/using/manage-assets-using-adobe-asset-link.html)會將資產儲存到使用者的Creative Cloud儲存空間帳戶(由Creative Cloud應用程式同步)。 |
+| 編輯 — 開啟以進行編輯 | 是 — 結帳動作 | 是 — 開啟動作（在網路共用中） | 依預設，[在AAL中籤出](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html)會將資產儲存到使用者的Creative Cloud儲存空間帳戶(由Creative Cloud應用程式同步)。 |
 | 編輯 — Experience Manager外部正在進行中的工作 | 是 — 資產可在同步至桌上型電腦的使用者Creative Cloud儲存帳戶中使用。 | 是 |  |
-| 編輯 — 上傳變更 | 是 — [簽入動作](https://helpx.adobe.com/tw/enterprise/using/manage-assets-using-adobe-asset-link.html)加上選擇性註解 | 是 |  |
+| 編輯 — 上傳變更 | 是 — [簽入動作](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html)加上選擇性註解 | 是 |  |
 | 上傳 — 單一檔案 | 是 — 上傳目前作用中的檔案 | 是 | [透過網頁介面上傳](/help/assets/manage-digital-assets.md#uploading-assets) |
 | 上傳 — 多個檔案/階層資料夾結構 | 否 | 是 | [透過網頁介面上傳](/help/assets/manage-digital-assets.md#uploading-assets)；自訂指令碼或工具 |
 | 其他 — 使用者和登入 | 登入Creative Cloud案頭應用程式的Creative Cloud使用者可辨識為(SSO) | Experience Manager使用者/登入 | 這兩個解決方案的使用者都會計入Experience Manager使用者配額。 |
@@ -116,7 +79,7 @@ Adobe Creative Cloud為創意團隊提供解決方案和服務的生態系統，
 
 若要支援資產散佈使用案例，請考慮下列選項：
 
-* [Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=zh-Hant)，作為Assets的可設定附加元件以發佈資產。
+* [Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html)，作為Assets的可設定附加元件以發佈資產。
 
 * 自訂解決方案是根據[Asset Share Commons](https://opensource.adobe.com/asset-share-commons/)程式碼基底建立的。
 * Experience Manager [連結共用](/help/assets/share-assets.md)以使用連結隨選共用資產。
@@ -153,10 +116,10 @@ Adobe Creative Cloud為創意團隊提供解決方案和服務的生態系統，
 
 * **對於在Photoshop、InDesign或Illustrator中工作的創意使用者：** Adobe Asset Link提供最佳的使用者體驗，包括對從Experience Manager結帳的資產進行中工作的簡潔處理
 * **為簡化從案頭存取任何一般檔案格式或應用程式的資產：**&#x200B;請使用Experience Manager案頭應用程式
-* **&#x200B;**&#x200B;瞭解在DAM中儲存資產的原因及時機：更新將提供給組織中更廣大的團隊
-* **&#x200B;**&#x200B;請留意共用資產的數量：如果您的使用案例是資產分發，則治理和安全性可能是最重要的方面。請考慮使用大型工具 (例如品牌入口網站) 進行此作業。
-* **&#x200B;**&#x200B;瞭解資產生命週期：瞭解不同團隊在組織中如何處理資產
-* **&#x200B;**&#x200B;謹慎處理資產的頻繁儲存：Adobe Asset Link會透過PS、AI、ID為您處理。對於其他應用程式，請勿在對映/共用資料夾中執行進行中的工作，除非您需要DAM中的所有變更
+* **** 瞭解在DAM中儲存資產的原因及時機：更新將提供給組織中更廣大的團隊
+* **** 請留意共用資產的數量：如果您的使用案例是資產分發，則治理和安全性可能是最重要的方面。請考慮使用大型工具 (例如品牌入口網站) 進行此作業。
+* **** 瞭解資產生命週期：瞭解不同團隊在組織中如何處理資產
+* **** 謹慎處理資產的頻繁儲存：Adobe Asset Link會透過PS、AI、ID為您處理。對於其他應用程式，請勿在對映/共用資料夾中執行進行中的工作，除非您需要DAM中的所有變更
 
 ### 從Experience Manager Assets存取Adobe Stock資產 {#access-to-adobe-stock-assets-from-aem-assets}
 
@@ -187,7 +150,7 @@ Adobe Creative Cloud為創意團隊提供解決方案和服務的生態系統，
 
 #### 當資產儲存在DAM時 {#when-assets-are-stored-in-dam}
 
-創意團隊（和組織）通常對儲存資產生命週期每個階段的資產不感興趣。 例如，他們會避免在下列情況下儲存資產：
+Creative團隊（和組織）通常對儲存資產生命週期每個階段的資產不感興趣。 例如，他們會避免在下列情況下儲存資產：
 
 * 尚未完成或有待實驗的Assets
 * 未通過創意/內部團隊稽核週期的Assets
@@ -216,20 +179,20 @@ Adobe Creative Cloud為創意團隊提供解決方案和服務的生態系統，
 
 根據使用者對Experience Manager Assets部署的存取權，Experience Manager Assets支援兩種使用者。 一般而言，企業網路（防火牆）內的使用者可直接存取DAM。 企業網路以外的其他使用者無法直接存取。 使用者型別會從技術的角度決定可使用哪些整合。
 
-#### 可直接存取DAM的創意使用者 {#creative-users-with-direct-access-to-dam}
+#### 可直接存取DAM的Creative使用者 {#creative-users-with-direct-access-to-dam}
 
 通常，內部創意團隊或加入內部網路的代理/創意專業人士有權存取DAM執行個體，包括Experience Manager登入。 Experience Manager和網路基礎架構可設定為允許直接存取外部合作對象（通常是受信任的組織，例如為客戶工作的機構），以透過網路（例如，透過VPN或IP允許清單）存取Experience Manager。
 
 在這種情況下，Adobe Asset Link或Experience Manager案頭應用程式可讓您輕鬆存取最終/核准的資產，並將創意就緒的資產儲存至DAM。
 
-#### 沒有DAM存取權的創意使用者 {#creative-users-without-access-to-dam}
+#### 沒有DAM存取權的Creative使用者 {#creative-users-without-access-to-dam}
 
 無法直接存取DAM例項的外部機構和自由職業者可能會要求存取已核准的資產，或想要將其新設計新增到DAM。
 
 使用下列策略提供最終/已核准資產的存取權：
 
 * 如果Asset Link無法運作，請使用案頭應用程式。
-* 使用[Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=zh-Hant)將資產安全地散發給外部合作夥伴
+* 使用[Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html)將資產安全地散發給外部合作夥伴
 * 使用以[Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)為基礎的自訂發佈和來源入口網站實作
 * 使用Experience Manager中設定的存取控制及必要的網路基礎結構（例如VPN和IP允許清單），讓外部各方能夠存取DAM中的專用內容區域。 他們可以利用Experience Manager Web UI取得資產，並將新內容上傳至您的DAM。
 
@@ -261,7 +224,7 @@ Experience Manager案頭應用程式為在原生應用程式中開啟的資產�
 
 您可以使用以下上傳功能：
 
-* 若要大量上傳大型/階層資料夾，請使用提供[資料夾上傳](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=zh-Hant#bulk-upload-assets)功能的Experience Manager案頭應用程式。 您也可以上傳階層資料夾結構。 Assets會在背景上傳，因此不會繫結至網頁瀏覽器工作階段
+* 若要大量上傳大型/階層資料夾，請使用提供[資料夾上傳](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#bulk-upload-assets)功能的Experience Manager案頭應用程式。 您也可以上傳階層資料夾結構。 Assets會在背景上傳，因此不會繫結至網頁瀏覽器工作階段
 * 若要從單一資料夾上傳一些檔案，請直接將檔案拖曳至網頁介面，或使用Experience Manager Assets網頁介面中的「建立」選項。
 * 您也可以根據您的業務需求使用自訂上傳程式。
 

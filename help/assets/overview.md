@@ -5,10 +5,10 @@ contentOwner: AK
 feature: Asset Management
 role: User, Leader, Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '973'
-ht-degree: 97%
+source-wordcount: '927'
+ht-degree: 100%
 
 ---
 
@@ -16,43 +16,6 @@ ht-degree: 97%
 # 在 AEM 中為數位資產管理引入 Assets as a [!DNL Cloud Service] {#assets-cloud-service-introduction}
 
 <!-- Need review information from gklebus -->
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime和Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>AEM Assets與Edge Delivery Services整合</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>UI擴充性</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>新</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>啟用Dynamic Media Prime和Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>搜尋最佳實務</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>中繼資料最佳實務</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>具有 OpenAPI 功能的 Dynamic Media</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>AEM Assets 開發人員文件</b></a>
-        </td>
-    </tr>
-</table>
 
 Adobe Experience Manager Assets as a [!DNL Cloud Service] 為企業提供一種雲端原生的 PaaS 解決方案，不僅可以快速有效地執行數位資產管理和動態媒體操作，而且還使用始終最新、可用且不斷學習之系統的下一代智慧功能 (例如 AI/ML)。
 
@@ -66,7 +29,7 @@ Adobe Experience Manager Assets as a [!DNL Cloud Service] 為企業提供一種�
 
 ## 解決方案優勢 {#solution-benefits}
 
-以下是對於數位資產管理而言，Assets as a [!DNL Cloud Service] 帶來的重要優勢。如需更多資訊，請參閱 [Experience Manager as a  [!DNL Cloud Service]](/help/overview/introduction.md) 概述。
+以下是對於數位資產管理而言，Assets as a [!DNL Cloud Service] 帶來的重要優勢。如需更多資訊，請參閱 [Experience Manager as a  [!DNL Cloud Service]](/help/overview/introduction.md) 概觀。
 
 * **用於資產處理的現代雲端服務**：新的資產微服務是一種雲端型、可擴展、可靠且簡單易用的資產處理服務。
 * **高度可擴展**：具擴展性、跨所有部署類型。隨時按需求提供實際上不限數量的資源。與傳統系統相比，節省了過度設計的成本。
@@ -99,7 +62,7 @@ Edge Delivery 讓您能夠建立快速、引人入勝的網站，作者可以在
 
 ## 與 Adobe Journey Optimizer 整合 {#integration-with-ajo}
 
-[Adobe Journey Optimizer](https://business.adobe.com/products/journey-optimizer/adobe-journey-optimizer.html)：可為客戶簡化歷程管理，以為全通道行銷活動提供智慧型決策和見解。使用 Journey Optimizer 設計訊息時，您可以直接從 Journey Optimizer 介面存取 Assets as a Cloud Service 存放庫。使用者使用 Experience Manager Assets 的內嵌使用者介面存取資產。有關詳細資訊，請參閱[使用 Experience Manager Assets 建立和管理資產](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/assets-images/assets.html?lang=zh-Hant)。
+[Adobe Journey Optimizer](https://business.adobe.com/products/journey-optimizer/adobe-journey-optimizer.html)：可為客戶簡化歷程管理，以為全通道行銷活動提供智慧型決策和見解。使用 Journey Optimizer 設計訊息時，您可以直接從 Journey Optimizer 介面存取 Assets as a Cloud Service 存放庫。使用者使用 Experience Manager Assets 的嵌入使用者介面存取資產。有關詳細資訊，請參閱[使用 Experience Manager Assets 建立和管理資產](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/assets-images/assets.html)。
 
 ## 新資產功能 {#whats-new-assets}
 
