@@ -42,7 +42,7 @@ API回應是部分MIME型別的JSON檔案，以及所有MIME型別的回應代�
 
 [內容片段](/help/assets/content-fragments/content-fragments.md)是儲存文字、數字和日期的結構化資產。 由於`standard`資產（例如影像或檔案）有幾項差異，因此處理內容片段會套用一些其他規則。
 
-如需詳細資訊，請參閱 [!DNL Experience Manager Assets] HTTP API](/help/assets/content-fragments/assets-api-content-fragments.md)中的[內容片段支援。
+如需詳細資訊，請參閱 [!DNL Experience Manager Assets] HTTP API[&#128279;](/help/assets/content-fragments/assets-api-content-fragments.md)中的內容片段支援。
 
 >[!NOTE]
 >
@@ -315,4 +315,4 @@ API回應是部分MIME型別的JSON檔案，以及所有MIME型別的回應代�
 
 >[!MORELIKETHIS]
 >
->*  [!DNL Assets]](/help/assets/developer-reference-material-apis.md)的[開發人員參考檔案
+>*  [!DNL Assets][&#128279;](/help/assets/developer-reference-material-apis.md)的開發人員參考檔案

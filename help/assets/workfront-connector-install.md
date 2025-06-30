@@ -18,7 +18,7 @@ ht-degree: 1%
 | AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-install.html) |
 | AEM as a Cloud Service  | 本文章 |
 
-在[!DNL Adobe Experience Manager]中具有[!DNL Cloud Service]系統管理員存取許可權的使用者會安裝增強型聯結器。 安裝之前，請先檢閱平台支援和聯結器](https://one.workfront.com/s/csh?context=2467&pubname=the-new-workfront-experience)的其他[必要條件。
+在[!DNL Adobe Experience Manager]中具有[!DNL Cloud Service]系統管理員存取許可權的使用者會安裝增強型聯結器。 安裝之前，請先檢閱平台支援和聯結器[&#128279;](https://one.workfront.com/s/csh?context=2467&pubname=the-new-workfront-experience)的其他必要條件。
 
 >[!IMPORTANT]
 >
@@ -52,7 +52,7 @@ ht-degree: 1%
    >
    >    ```
    >    dscacheutil -q host -a name p{PROGRAM_ID}.external.adobeaemcloud.com
-   >
+   >    
    >    ```
 
 1. 確定[!DNL Experience Manager]存放庫中不存在下列覆蓋圖。 如果您在這些路徑上預先存在覆蓋圖，則需要移除覆蓋圖，或合併兩者之間的變更差異：

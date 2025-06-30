@@ -73,7 +73,7 @@ ht-degree: 14%
 
 1. 按一下&#x200B;**[!UICONTROL OneDrive]**&#x200B;或&#x200B;**[!UICONTROL Dropbox]**&#x200B;以開始匯入程式。 Content Hub會提示您登入OneDrive或Dropbox帳戶，然後在左窗格中顯示您的OneDrive或Dropbox資料夾結構。
 
-1. 按一下檔案或資料夾名稱旁的+圖示，以檢視所選專案清單中的專案。 選取您需要新增至Content Hub入口網站的所有檔案後，從本機檔案系統](#add-assets-local-file-system)重複步驟3至6 ([將資產新增至Content Hub)以完成上傳程式。
+1. 按一下檔案或資料夾名稱旁的+圖示，以檢視所選專案清單中的專案。 選取您需要新增至Content Hub入口網站的所有檔案後，從本機檔案系統[&#128279;](#add-assets-local-file-system)重複步驟3至6 (將資產新增至Content Hub)以完成上傳程式。
 
    ![從OneDrive或Dropbox將資產上傳至Content Hub](assets/add-assets-onedrive-dropbox.png)
 

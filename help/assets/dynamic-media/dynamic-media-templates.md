@@ -44,7 +44,7 @@ ht-degree: 0%
 滿足下列要求以建立[!DNL Dynamic Media]範本並產生其傳遞URL：
 
 1. 存取[!DNL Dynamic Media]。
-1. 在[!DNL Assets View]首頁上，**[!UICONTROL Dynamic Media Assets]**&#x200B;中有資料夾可儲存您的範本。 [在![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**中建立資料夾](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view)，以在**[!UICONTROL  Dynamic Media Assets ]**中復寫該資料夾。
+1. 在[!DNL Assets View]首頁上，**[!UICONTROL Dynamic Media Assets]**&#x200B;中有資料夾可儲存您的範本。 [在![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets &#x200B;]**&#x200B;中建立資料夾](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view)，以在&#x200B;**[!UICONTROL &#x200B; Dynamic Media Assets &#x200B;]**&#x200B;中復寫該資料夾。
 1. [將您 [!DNL AEM Assets] 執行個體中可用的影像與 [!DNL Dynamic Media] 同步，以便使用這些影像來建立範本](/help/assets/dynamic-media/config-dm.md)。
 1. 發佈要在建立範本時使用的影像，以在建立範本後產生範本的傳遞URL。 傳遞URL可用於下游應用程式。
 1. 若要在範本的文字圖層中使用預設[!UICONTROL Adobe Sans F2]字型以外的字型，請[同時上傳字型檔案並發佈至AEM和Dynamic Media ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation)。 [支援的字型檔案格式為：AFM、OTF、PFB、PFM、PhotoFont、TTC、TTF](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats)。 此外，請確定[重新處理](/help/assets/reprocessing-assets-view.md)現有的字型以使用這些字型。 如需詳細資訊，請參閱[字型](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts)。<!--(On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**)-->
@@ -74,13 +74,13 @@ ht-degree: 0%
 
    ![Dynamic Media 範本](/help/assets/assets/DM-Assets1.png)
 
-1. 選取&#x200B;**[!UICONTROL 建立範本]**。 **[!UICONTROL 新範本]**對話方塊隨即顯示。
+1. 選取&#x200B;**[!UICONTROL 建立範本]**。 **[!UICONTROL 新範本]**&#x200B;對話方塊隨即顯示。
    ![如何建立可即時自訂的動態範本](/help/assets/assets/new-template.png)
    >[!NOTE]
    >
    >  範本會儲存在您建立它的位置。 在[!DNL Assets View]首頁上，選取&#x200B;**[!UICONTROL Dynamic Media Assets]**，然後按一下&#x200B;**[!UICONTROL 建立範本]**，將範本儲存在&#x200B;**[!UICONTROL Dynamic Media Assets]**&#x200B;根資料夾中。
 
-1. 指定範本名稱、定義畫布寬度和高度，然後按一下[建立]。**** 空白畫布顯示，兩側都有選單選項以用於建立範本。 將游標停留在選單選項上可檢視其工具提示。
+1. 指定範本名稱、定義畫布寬度和高度，然後按一下[建立]。**&#x200B;** 空白畫布顯示，兩側都有選單選項以用於建立範本。 將游標停留在選單選項上可檢視其工具提示。
    ![即時可自訂的範本](/help/assets/assets/blank-canvas-page.png)
 
    >[!NOTE]
@@ -96,8 +96,8 @@ ht-degree: 0%
 **左窗格上的功能表選項：**&#x200B;請將這些選項用於下列一般編輯器動作。
 
 * ![DM範本](/help/assets/assets/layer-selector.svg)：選取![DM範本](/help/assets/assets/layer-selector.svg)，然後按一下畫布上的圖層來加以選取。
-* ![支援自訂的範本](/help/assets/assets/bring-forward.svg)：按一下支援自訂的![範本](/help/assets/assets/bring-forward.svg)或使用鍵盤快速鍵、**Ctrl** + **]** (Windows)或&#x200B;**Cmd** + **]** (Mac)以轉存選取的圖層。
-* ![如何建立可輕鬆自訂的範本](/help/assets/assets/send-backward.svg)：按一下![如何建立可輕鬆自訂的範本](/help/assets/assets/send-backward.svg)或使用鍵盤快速鍵，**Ctrl** + **[** (Windows)或&#x200B;**Cmd** + **[** (Mac)以向後傳送選取的圖層。
+* ![支援自訂的範本](/help/assets/assets/bring-forward.svg)：按一下支援自訂的![範本](/help/assets/assets/bring-forward.svg)或使用鍵盤快速鍵、**Ctrl** + **&rbrack;** (Windows)或&#x200B;**Cmd** + **&rbrack;** (Mac)以轉存選取的圖層。
+* ![如何建立可輕鬆自訂的範本](/help/assets/assets/send-backward.svg)：按一下![如何建立可輕鬆自訂的範本](/help/assets/assets/send-backward.svg)或使用鍵盤快速鍵，**Ctrl** + **&lbrack;** (Windows)或&#x200B;**Cmd** + **&lbrack;** (Mac)以向後傳送選取的圖層。
 * ![建立可立即自訂的範本](/help/assets/assets/undo.svg)：按一下![建立可立即自訂的範本](/help/assets/assets/undo.svg)或使用鍵盤快速鍵、**Ctrl** + **Z** (Windows)或&#x200B;**Cmd** + **Z** (Mac)以復原上一個動作。
 * ![可快速建立橫幅的範本](/help/assets/assets/redo.svg)：按一下![範本可快速建立橫幅](/help/assets/assets/redo.svg)，或使用鍵盤快速鍵，**Ctrl** + **Y** (Windows)或&#x200B;**Cmd** + **Y** (Mac)可重做上一個動作。
 * ![快速建立傳單的範本](/help/assets/assets/zoom-in.svg)：按一下![範本快速建立傳單](/help/assets/assets/zoom-in.svg)，或使用鍵盤快速鍵，**Ctrl** + **+** (Windows)或&#x200B;**Cmd** + **+** (Mac)放大畫布。
@@ -166,8 +166,8 @@ ht-degree: 0%
 
 #### 文字格式選項{#text-formatting-options-on-properties-panel}
 
-將文字的格式設定為所需的字型、大小、顏色、樣式、對齊方式（在圖層內），方法是在面板的&#x200B;**[!UICONTROL 文字]**區段下的個別欄位中變更其值。
-確定包括**[!UICONTROL 智慧文字調整大小]**。 [!UICONTROL 智慧型文字調整大小]適用於[Copyfitting](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/r-copy-fitting)演演算法，可在文字區域中以最佳方式填入文字，防止文字溢位，並儘量減少文字底部的額外空間。
+將文字的格式設定為所需的字型、大小、顏色、樣式、對齊方式（在圖層內），方法是在面板的&#x200B;**[!UICONTROL 文字]**&#x200B;區段下的個別欄位中變更其值。
+確定包括&#x200B;**[!UICONTROL 智慧文字調整大小]**。 [!UICONTROL 智慧型文字調整大小]適用於[Copyfitting](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/r-copy-fitting)演演算法，可在文字區域中以最佳方式填入文字，防止文字溢位，並儘量減少文字底部的額外空間。
 
 ![立即建立內容](/help/assets/assets/smart-text-resize.png)
 
@@ -182,7 +182,7 @@ ht-degree: 0%
 1. **選擇性：**&#x200B;重新命名引數名稱。 引數名稱具有圖層名稱及尾碼。 對於選取的圖層，其所有引數化屬性會共用相同的圖層名稱，後面跟著不同的尾碼。 依照語意命名慣例重新命名圖層名稱，這樣當您在URL中包含引數時，引數名稱就會自行說明圖層的內容或其用途。
 1. 按一下「**[!UICONTROL 儲存]**」。
    ![即時內容建立](/help/assets/assets/parameterise-a-layer.png)
-若要在影像和文字圖層的「引數」面板之間切換，請選取畫布上的圖層，然後按一下**[!UICONTROL 引數]**。
+若要在影像和文字圖層的「引數」面板之間切換，請選取畫布上的圖層，然後按一下&#x200B;**[!UICONTROL 引數]**。
 
 #### 引數面板選項 {#parameterisation-options-or-allowed-parameters}
 
@@ -190,20 +190,20 @@ ht-degree: 0%
 
 **影像引數：**
 
-**[!UICONTROL X]：**包含以變更URL中的引數值，沿著圖層的中心線水準移動圖層，平行於範本平面的X軸。
-**[!UICONTROL Y]：**包含以變更URL中的引數值，沿著圖層的中心線垂直移動圖層，平行於範本平面的Y軸。
-**[!UICONTROL 寬度]：**包含以變更URL中的引數值來調整圖層的寬度。
-**[!UICONTROL 高度]：**包含以變更URL中的引數值來調整圖層高度。
-**[!UICONTROL 隱藏]：**包含以使用0 （顯示）和1 （隱藏）來隱藏或顯示範本中的圖層。
+**[!UICONTROL X]：**&#x200B;包含以變更URL中的引數值，沿著圖層的中心線水準移動圖層，平行於範本平面的X軸。
+**[!UICONTROL Y]：**&#x200B;包含以變更URL中的引數值，沿著圖層的中心線垂直移動圖層，平行於範本平面的Y軸。
+**[!UICONTROL 寬度]：**&#x200B;包含以變更URL中的引數值來調整圖層的寬度。
+**[!UICONTROL 高度]：**&#x200B;包含以變更URL中的引數值來調整圖層高度。
+**[!UICONTROL 隱藏]：**&#x200B;包含以使用0 （顯示）和1 （隱藏）來隱藏或顯示範本中的圖層。
 **[!UICONTROL Source]：**&#x200B;包含以變更URL中引數值的影像路徑，以新影像取代圖層的影像。
 
 **文字格式設定引數：**
 
 納入以下引數，藉由更新URL中的引數值，從URL編輯文字、其字型、顏色和大小。
 
-**[!UICONTROL 文字]：**包含以從URL更新文字。
-**[!UICONTROL 字型系列]：**包含以從URL更新文字的字型。
-**[!UICONTROL 字型大小]：**包含以從URL更新文字的字型大小。
+**[!UICONTROL 文字]：**&#x200B;包含以從URL更新文字。
+**[!UICONTROL 字型系列]：**&#x200B;包含以從URL更新文字的字型。
+**[!UICONTROL 字型大小]：**&#x200B;包含以從URL更新文字的字型大小。
 **[!UICONTROL 文字色彩]：**&#x200B;包含以從URL更新文字的字型色彩。
 
 ### 群組圖層以同時控制其可見性{#group-layers}
@@ -235,7 +235,7 @@ ht-degree: 0%
 1. **選擇性：**&#x200B;將&#x200B;**[!UICONTROL 隱藏]**&#x200B;引數值變更為0到1，然後按一下&#x200B;**[!UICONTROL 重新整理]**&#x200B;檢視變更。 具有相同&#x200B;**[!UICONTROL 隱藏]**&#x200B;引數的圖層會隱藏或同時顯示。 同樣地，您可以從URL控制圖層的可見度。
 
    ![即時建立內容](/help/assets/assets/dm-templates-publish-status.png)
-您也可以切換**[!UICONTROL 包含所有引數]**以編輯所有顯示的引數值，並在範本預覽中檢視更新。
+您也可以切換&#x200B;**[!UICONTROL 包含所有引數]**&#x200B;以編輯所有顯示的引數值，並在範本預覽中檢視更新。
    <br>
 1. 若要從預覽頁面發佈範本，請按一下&#x200B;**[!UICONTROL 發佈]**&#x200B;並確認發佈。 顯示&#x200B;**[!UICONTROL 發佈完成]**&#x200B;訊息，且發佈狀態更新為&#x200B;**[!UICONTROL 已發佈]**。
 
@@ -285,7 +285,7 @@ ht-degree: 0%
 
    ![新增CTA](/help/assets/assets/add-cta.png)
 
-1. 按一下[預覽]****&#x200B;並選取[發佈]****&#x200B;以發佈您的範本（若未更早發佈）。
+1. 按一下[預覽]&#x200B;**&#x200B;**&#x200B;並選取[發佈]&#x200B;**&#x200B;**&#x200B;以發佈您的範本（若未更早發佈）。
 1. 導覽至儲存此範本的資料夾，選取此範本並按一下![詳細資料頁面](/help/assets/assets/details-page-icon.svg) **[!UICONTROL 詳細資料]**。
 1. 按一下&#x200B;**[!UICONTROL 複製選項]**&#x200B;並選取&#x200B;**[!UICONTROL 複製內嵌程式碼]**。 請確定將範本影像發佈至[!DNL AEM and Dynamic Media]以複製內嵌程式碼。
 

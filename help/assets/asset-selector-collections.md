@@ -33,7 +33,7 @@ Additionally, you can [customize](/help/assets/asset-selector-customization.md) 
 
 ## 檢視集合 {#view-collections}
 
-資產選取器可讓您在![清單檢視](assets/do-not-localize/list-view.png)清單檢視或![格線檢視](assets/do-not-localize/grid-view.png)格線檢視中檢視集合。 檢視資產選擇器](overview-asset-selector.md#types-of-view)中的[檢視型別。
+資產選取器可讓您在![清單檢視](assets/do-not-localize/list-view.png)清單檢視或![格線檢視](assets/do-not-localize/grid-view.png)格線檢視中檢視集合。 檢視資產選擇器[&#128279;](overview-asset-selector.md#types-of-view)中的檢視型別。
 
 ## 將資產拖放至收藏集 {#collection-drag-and-drop}
 

@@ -113,7 +113,7 @@ experience manager metadata-->
 * **有效使用控制辭彙：**&#x200B;使用標準化的標籤辭彙來實作控制辭彙。 瞭解如何有效實作[AEM Tagging Framework](/help/implementing/developing/introduction/tagging-framework.md)。  <br>
 例如，當使用主題標籤影像以維持系統順序時，請一致使用*product_launch*&#x200B;或&#x200B;*event_promotion*&#x200B;等辭彙。
 
-* **維持正確性和完整性：**若要保持中繼資料的一致性，正確性、完整性和各種來源之間的一致性至關重要。
+* **維持正確性和完整性：**&#x200B;若要保持中繼資料的一致性，正確性、完整性和各種來源之間的一致性至關重要。
 例如，將中繼資料新增至PDF檔案時，請確認作者名稱和關鍵字等詳細資料正確且完整。
 
 #### 影片：將大量中繼資料新增至資產
@@ -131,14 +131,14 @@ experience manager metadata-->
    1. 移至&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL 檔案]** > **[!UICONTROL [資產資料夾]]**。
    1. 選取您要更新中繼資料的資產，然後按一下&#x200B;**[!UICONTROL 屬性]**。
    1. 導覽至&#x200B;**[!UICONTROL 進階]**&#x200B;索引標籤，然後按一下&#x200B;**[!UICONTROL 提升搜尋關鍵字]**&#x200B;下的&#x200B;**[!UICONTROL 新增]**。 <br>您必須使用預設的中繼資料結構描述來提升搜尋關鍵字。
-   1. 輸入您要增加搜尋的關鍵字，然後按一下[新增]。****<br>
+   1. 輸入您要增加搜尋的關鍵字，然後按一下[新增]。**&#x200B;**<br>
 您可以新增多個關鍵字，並根據您的優先順序排列關鍵字。
    1. 按一下&#x200B;**[!UICONTROL 儲存並關閉]**。
 使用您新增的關鍵字搜尋資產。 資產會出現在最熱門的搜尋結果中。
 
   瞭解如何[在Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html)中提升搜尋。
 
-* **自訂中繼資料欄位：**&#x200B;自訂中繼資料欄位，以擷取有關資產的其他資訊。 例如，為專案詳細資訊、版權資訊或任何其他可增強搜尋功能的相關資料新增特定欄位。 瞭解如何在Experience Manager Assets中編輯或新增自訂中繼資料](meta-edit.md)。[
+* **自訂中繼資料欄位：**&#x200B;自訂中繼資料欄位，以擷取有關資產的其他資訊。 例如，為專案詳細資訊、版權資訊或任何其他可增強搜尋功能的相關資料新增特定欄位。 瞭解如何在Experience Manager Assets中編輯或新增自訂中繼資料[&#128279;](meta-edit.md)。
 
 
 * **中繼資料驗證：**&#x200B;實作中繼資料專案的驗證檢查，以確保一致性和準確性。 使用受控辭彙表可讓驗證程式更順暢，並減少輸入內容不清楚或不一致的機率。 這可能涉及為某些中繼資料屬性設定指導方針，以避免資訊模糊或不一致。

@@ -268,10 +268,10 @@ interface SelectedDestination {
 
 目的地選擇器可讓您以四種不同的檢視檢視檢視資產：
 
-* ![清單檢視](assets/do-not-localize/list-view.png)[!UICONTROL **清單檢視**]：清單檢視在單一欄中顯示可捲動的檔案和資料夾。
-* ![格線檢視](assets/do-not-localize/grid-view.png)[!UICONTROL **格線檢視**]：格線檢視在列與欄的格線中顯示可捲動的檔案和資料夾。
-* ![圖庫檢視](assets/do-not-localize/gallery-view.png)[!UICONTROL **圖庫檢視**]：圖庫檢視在居中鎖定的水平清單中顯示檔案或資料夾。
-* ![瀑布檢視](assets/do-not-localize/waterfall-view.png)[!UICONTROL **瀑布檢視**]：瀑布檢視以 Bridge 的形式顯示檔案或資料夾。
+* ![清單檢視](assets/do-not-localize/list-view.png) [!UICONTROL **清單檢視**]：清單檢視在單一欄中顯示可捲動的檔案和資料夾。
+* ![格線檢視](assets/do-not-localize/grid-view.png) [!UICONTROL **格線檢視**]：格線檢視在列與欄的格線中顯示可捲動的檔案和資料夾。
+* ![圖庫檢視](assets/do-not-localize/gallery-view.png) [!UICONTROL **圖庫檢視**]：圖庫檢視在居中鎖定的水平清單中顯示檔案或資料夾。
+* ![瀑布檢視](assets/do-not-localize/waterfall-view.png) [!UICONTROL **瀑布檢視**]：瀑布檢視以 Bridge 的形式顯示檔案或資料夾。
 
 ### 資訊 {#info}
 

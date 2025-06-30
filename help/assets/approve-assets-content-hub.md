@@ -74,7 +74,7 @@ Assets檢視可讓您根據您在「資產詳細資料」頁面上的&#x200B;**�
 
 1. 如果您在步驟2中選取&#x200B;**已核准**，請選取核准目標。 可能的值包括「傳送」和「Content Hub」。
 
-   * **傳送**&#x200B;是下拉式功能表中選取的預設選項，而且會透過OpenAPI](/help/assets/dynamic-media-open-apis-overview.md)將資產發佈至[Dynamic Media與[Content Hub](/help/assets/product-overview.md) (如果兩者都針對Experience Manager Assets啟用)。
+   * **傳送**&#x200B;是下拉式功能表中選取的預設選項，而且會透過OpenAPI[&#128279;](/help/assets/dynamic-media-open-apis-overview.md)將資產發佈至Dynamic Media與[Content Hub](/help/assets/product-overview.md) (如果兩者都針對Experience Manager Assets啟用)。
 
    * 選取&#x200B;**Content Hub**&#x200B;會將資產發佈至Content Hub。 只有在為Experience Manager Assets啟用Content Hub時，它才會顯示為選項。
 
@@ -121,7 +121,7 @@ Assets檢視可讓您根據您在「資產詳細資料」頁面上的&#x200B;**�
 1. 導覽至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 中繼資料設定檔]**。
 1. 按一下頁面右上方的&#x200B;**[!UICONTROL 「建立]**」。
 1. 新增設定檔標題並按一下&#x200B;**[!UICONTROL 建立]**。 已成功建立中繼資料設定檔。
-1. 選取新建立的中繼資料設定檔，然後按一下&#x200B;**[!UICONTROL 編輯&#x200B;_(e)_]**。 <br>會開啟&#x200B;**[!UICONTROL 編輯中繼資料設定檔]**表單，並反白顯示&#x200B;**[!UICONTROL 基本]**索引標籤。
+1. 選取新建立的中繼資料設定檔，然後按一下&#x200B;**[!UICONTROL 編輯&#x200B;_(e)_]**。 <br>會開啟&#x200B;**[!UICONTROL 編輯中繼資料設定檔]**&#x200B;表單，並反白顯示&#x200B;**[!UICONTROL 基本]**&#x200B;索引標籤。
 1. 將&#x200B;**[!UICONTROL 單行文字欄位]**&#x200B;從右側的&#x200B;**[!UICONTROL 建置表單]**&#x200B;區段拖放到表單的中繼資料區段。
 1. 按一下新新增的欄位，然後在&#x200B;**[!UICONTROL 設定]**&#x200B;面板中執行下列更新：
    1. 將&#x200B;**[!UICONTROL 欄位標籤]**&#x200B;變更為&#x200B;_已核准的Assets_。
@@ -137,7 +137,7 @@ Assets檢視可讓您根據您在「資產詳細資料」頁面上的&#x200B;**�
 1. 按一下「**[!UICONTROL 儲存]**」。
 1. 在&#x200B;**[!UICONTROL 中繼資料設定檔]**&#x200B;頁面中，選取新建立的中繼資料設定檔。
 1. 按一下頂端動作列中的&#x200B;**[!UICONTROL 套用中繼資料設定檔至資料夾]**。
-1. 選取您需要核准的資料夾，然後按一下[套用]。****
+1. 選取您需要核准的資料夾，然後按一下[套用]。**&#x200B;**
    <br>整個資料夾的許可權已設定為待核准，且任何上傳至此資料夾的資產都會自動核准。
 
    >[!VIDEO](https://video.tv.adobe.com/v/3427431)

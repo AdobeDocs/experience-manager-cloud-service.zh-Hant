@@ -32,8 +32,8 @@ ht-degree: 85%
 >[!NOTE]
 >
 >Adobe 建議將發佈時間交錯開來，尤其建議選擇非尖峰時段，如此 AEM 作者才不會佔用過多資源。
->>Assets應批次發佈。 批次大小的建議為15K。
->> 將[!DNL Experience Manager Assets]當作[!DNL Cloud Service]，在實驗室條件下觀察到的傳輸速率為每小時1000個資產。 觀察到此速率，平均大小為10 MB資產。
+>&#x200B;>Assets應批次發佈。 批次大小的建議為15K。
+>&#x200B;> 將[!DNL Experience Manager Assets]當作[!DNL Cloud Service]，在實驗室條件下觀察到的傳輸速率為每小時1000個資產。 觀察到此速率，平均大小為10 MB資產。
 
 ## 將資產發佈至Brand Portal {#publish-assets-to-bp}
 
@@ -93,12 +93,12 @@ ht-degree: 85%
 >
 > * DAM-Users群組的現有使用者擁有路徑&quot;/conf/global/settings/cloudconfigs/mediaportal&quot;的讀取存取權
 > * 新使用者（或非管理員使用者）需要下列許可權，才能在Brand Portal上發佈。
->   > 路徑：
->   > `"/conf/global/settings/cloudconfigs/mediaportal" : jcr:read `
->   >`/libs : jcr:read`
->   >`/conf : jcr:read`
->   >`/content : jcr:read, crx:replicate`
->   >`/content/dam/ : jcr:read,modify, crx:replicate`
+>   &#x200B;> 路徑：
+>   &#x200B;> `"/conf/global/settings/cloudconfigs/mediaportal" : jcr:read `
+>   &#x200B;>`/libs : jcr:read`
+>   &#x200B;>`/conf : jcr:read`
+>   &#x200B;>`/content : jcr:read, crx:replicate`
+>   &#x200B;>`/content/dam/ : jcr:read,modify, crx:replicate`
 
 ## 將資料夾發佈至Brand Portal {#publish-folders-to-brand-portal}
 

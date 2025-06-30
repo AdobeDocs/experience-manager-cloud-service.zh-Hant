@@ -84,7 +84,7 @@ ht-degree: 5%
 
 1. 提供&#x200B;**[!UICONTROL 轉譯名稱]** （或輸出名稱）、**[!UICONTROL 副檔名]** （或檔案型別）、選取&#x200B;**[!UICONTROL 品質]** （或輸出引數）、選取&#x200B;**[!UICONTROL 包含]**&#x200B;和&#x200B;**[!UICONTROL 排除]** MIME型別清單（或輸入資產篩選），並選取必要的創意作業。
 
-   在[!UICONTROL 處理設定檔]](assets/creative-processing-profile.png)中的![[!UICONTROL Creative]索引標籤
+   在[!UICONTROL 處理設定檔]![&#128279;](assets/creative-processing-profile.png)中的[!UICONTROL Creative]索引標籤
 
 1. 某些作業需要額外的引數（資產）。 如有必要，請為這些額外的引數提供值。
 

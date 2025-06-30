@@ -46,7 +46,7 @@ Adobe Creative Cloud為創意團隊提供解決方案和服務的生態系統，
 | Creative使用者從[!DNL Experience Manager]探索資產、開啟並使用資產、編輯並上傳變更至[!DNL Experience Manager]，以及上傳新檔案至[!DNL Experience Manager]，無需離開其[!DNL Creative Cloud]應用程式。 | [Adobe Asset Link](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html) | Photoshop、Illustrator和InDesign。 |
 | 商務使用者可簡化開啟和使用資產、編輯和上傳[!DNL Experience Manager]的變更，以及從案頭環境上傳新檔案至[!DNL Experience Manager]的程式。 他們使用一般整合，在原生案頭應用程式中開啟任何資產型別，包括非Adobe資產型別。 | [[!DNL Experience Manager] 桌面應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | Win和Mac案頭上的Experience Manager案頭應用程式 |
 | 行銷人員和商務使用者可在Experience Manager中探索、預覽、授權並儲存及管理Adobe Stock資產。 授權和儲存的資產可提供精選的Adobe Stock中繼資料，以改善治理。 | [Experience Manager與Adobe Stock整合](aem-assets-adobe-stock.md) | [!DNL Experience Manager]網頁介面 |
-| 改善數位產品設計師和行銷人員之間的協同合作。 讓設計人員在Adobe XD畫布上的設計和線框模型中使用數位資產。 |  [!DNL Adobe XD]](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link-for-xd.html)的[[!DNL Adobe Asset Link]  | [!DNL Adobe XD] |
+| 改善數位產品設計師和行銷人員之間的協同合作。 讓設計人員在Adobe XD畫布上的設計和線框模型中使用數位資產。 |  [!DNL Adobe XD][&#128279;](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link-for-xd.html)的[!DNL Adobe Asset Link]  | [!DNL Adobe XD] |
 | 行銷人員可以根據上傳的資產和使用自訂建立的預先定義動作，自動建立變數和衍生產品。 使用此自動化功能來改善內容速度並減少手動操作。 | [內容自動化](/help/assets/cc-api-integration.md) | [!DNL Experience Manager Assets]網頁介面 |
 
 本文主要針對協作需求的前兩個方面。資產規模分配和採購作為一個使用案例被簡要提及。針對這些需求解決方案，請考慮Adobe品牌入口網站或資產共用公域。其他解決方案，例如[Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html)，可根據[Asset Share Commons](https://opensource.adobe.com/asset-share-commons/)元件，[Link Share](share-assets.md)，使用[Experience Manager Assets Web UI](/help/assets/manage-digital-assets.md)建置的解決方案，應根據特定需求檢閱。
@@ -116,10 +116,10 @@ Adobe Creative Cloud為創意團隊提供解決方案和服務的生態系統，
 
 * **對於在Photoshop、InDesign或Illustrator中工作的創意使用者：** Adobe Asset Link提供最佳的使用者體驗，包括對從Experience Manager結帳的資產進行中工作的簡潔處理
 * **為簡化從案頭存取任何一般檔案格式或應用程式的資產：**&#x200B;請使用Experience Manager案頭應用程式
-* **** 瞭解在DAM中儲存資產的原因及時機：更新將提供給組織中更廣大的團隊
-* **** 請留意共用資產的數量：如果您的使用案例是資產分發，則治理和安全性可能是最重要的方面。請考慮使用大型工具 (例如品牌入口網站) 進行此作業。
-* **** 瞭解資產生命週期：瞭解不同團隊在組織中如何處理資產
-* **** 謹慎處理資產的頻繁儲存：Adobe Asset Link會透過PS、AI、ID為您處理。對於其他應用程式，請勿在對映/共用資料夾中執行進行中的工作，除非您需要DAM中的所有變更
+* **&#x200B;**&#x200B;瞭解在DAM中儲存資產的原因及時機：更新將提供給組織中更廣大的團隊
+* **&#x200B;**&#x200B;請留意共用資產的數量：如果您的使用案例是資產分發，則治理和安全性可能是最重要的方面。請考慮使用大型工具 (例如品牌入口網站) 進行此作業。
+* **&#x200B;**&#x200B;瞭解資產生命週期：瞭解不同團隊在組織中如何處理資產
+* **&#x200B;**&#x200B;謹慎處理資產的頻繁儲存：Adobe Asset Link會透過PS、AI、ID為您處理。對於其他應用程式，請勿在對映/共用資料夾中執行進行中的工作，除非您需要DAM中的所有變更
 
 ### 從Experience Manager Assets存取Adobe Stock資產 {#access-to-adobe-stock-assets-from-aem-assets}
 

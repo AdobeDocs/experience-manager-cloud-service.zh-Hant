@@ -1,6 +1,6 @@
 ---
 title: 在 [!DNL Assets View]中大量中繼資料編輯
-description: 瞭解如何為[DNL！提供的多個資產更新預先定義的標準中繼資料欄位集 同時Assets檢視]。
+description: 瞭解如何為[!DNL ！提供的多個資產更新預先定義的標準中繼資料欄位集 同時Assets檢視]。
 exl-id: f5fee1b3-2855-4010-ae4a-216beb20920d
 source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
@@ -27,7 +27,8 @@ ht-degree: 0%
    * **[!UICONTROL 作者]：**&#x200B;請指定作者名稱。
    * **[!UICONTROL 關鍵字]：**&#x200B;新增提供資產相關高階資訊的特定辭彙或文字字串，以提升其發現能力。 新增關鍵字，然後按&#x200B;**Enter**&#x200B;或&#x200B;**return**&#x200B;將另一個關鍵字新增到清單中。
    * **[!UICONTROL 標籤]：**&#x200B;按一下![大量中繼資料編輯](/help/assets/assets/tags-icon.svg)，從可用選項中選取標籤。 標籤提供有關資產的更具體資訊，並增強其可發現性。 已套用至所選資產的標籤會顯示在&#x200B;**[!UICONTROL 屬性]**&#x200B;面板中。 如果您找不到相關標籤，請建立這些標籤，並將其指派給選取的資產。 如需建立標籤並將標籤指派給資產的詳細資訊，請參閱[管理 [!DNL Assets view]](/help/assets/tagging-management-assets-view.md)中的標籤。
-   * 按一下「儲存」****，將上述中繼資料更新套用至選取的資產。 儲存後，會附加&#x200B;**[!UICONTROL 關鍵字]**&#x200B;和&#x200B;**[!UICONTROL 標籤]**，而&#x200B;**[!UICONTROL 狀態]**、**[!UICONTROL 到期日]**&#x200B;和&#x200B;**[!UICONTROL 作者]**的更新詳細資料會覆寫其現有的詳細資料。
+   * 按一下「儲存」**&#x200B;**，將上述中繼資料更新套用至選取的資產。 儲存後，會附加&#x200B;**[!UICONTROL 關鍵字]**&#x200B;和&#x200B;**[!UICONTROL 標籤]**，而&#x200B;**[!UICONTROL 狀態]**、**[!UICONTROL 到期日]**&#x200B;和&#x200B;**[!UICONTROL 作者]**&#x200B;的更新詳細資料會覆寫其現有的詳細資料。
+
      ![save-bulk-metadata-edit-properties](/help/assets/assets/save-bulk-metadata-edit-properties2.png)
 
      >[!NOTE]
@@ -38,4 +39,4 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->**[!UICONTROL 狀態]**、**[!UICONTROL 到期日]**、**[!UICONTROL 作者]**、**[!UICONTROL 關鍵字]**&#x200B;和&#x200B;**[!UICONTROL 標籤]**&#x200B;是可用於大量中繼資料編輯的標準中繼資料屬性，無論資料夾特定的中繼資料為何。 只有當這些中繼資料屬性包含在套用至資產資料夾的中繼資料表單中時，它們才會顯示在[!UICONTROL 資產詳細資料頁面]上。 如果您在[!UICONTROL 資產詳細資料頁面]上找不到這些標準中繼資料屬性，請編輯資產資料夾的中繼資料表單以包含這些屬性。 請參閱 [!DNL Assets View]](/help/assets/metadata-assets-view.md)中的[中繼資料，瞭解如何建立或編輯中繼資料表單，並將其套用至資料夾。
+>**[!UICONTROL 狀態]**、**[!UICONTROL 到期日]**、**[!UICONTROL 作者]**、**[!UICONTROL 關鍵字]**&#x200B;和&#x200B;**[!UICONTROL 標籤]**&#x200B;是可用於大量中繼資料編輯的標準中繼資料屬性，無論資料夾特定的中繼資料為何。 只有當這些中繼資料屬性包含在套用至資產資料夾的中繼資料表單中時，它們才會顯示在[!UICONTROL 資產詳細資料頁面]上。 如果您在[!UICONTROL 資產詳細資料頁面]上找不到這些標準中繼資料屬性，請編輯資產資料夾的中繼資料表單以包含這些屬性。 請參閱 [!DNL Assets View][&#128279;](/help/assets/metadata-assets-view.md)中的中繼資料，瞭解如何建立或編輯中繼資料表單，並將其套用至資料夾。

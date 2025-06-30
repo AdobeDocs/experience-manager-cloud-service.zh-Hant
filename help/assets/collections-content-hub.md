@@ -87,7 +87,7 @@ ht-degree: 2%
 
 ### 篩選集合檢視 {#filter-collections-view}
 
-Content Hub可讓您篩選集合檢視，根據您的偏好縮小選項，輕鬆找出您要尋找的確切內容。 確定Content Hub](configure-content-hub-ui-options.md#configure-collections-content-hub)中集合的[設定。
+Content Hub可讓您篩選集合檢視，根據您的偏好縮小選項，輕鬆找出您要尋找的確切內容。 確定Content Hub[&#128279;](configure-content-hub-ui-options.md#configure-collections-content-hub)中集合的設定。
 
 若要篩選集合檢視，請前往&#x200B;**[!DNL Collections]**&#x200B;索引標籤，並導覽至「集合」下拉式清單。 從下列選項中選擇：
 
@@ -152,7 +152,7 @@ Content Hub集合提供全方位的控管工具，包括可自訂的共用許可
 * 集合的擁有者
 * 具有編輯許可權的非管理員使用者
 
-若要從集合中移除資產，請按一下需要移除資產的集合、選取資產，然後按一下[從集合中移除]。****
+若要從集合中移除資產，請按一下需要移除資產的集合、選取資產，然後按一下[從集合中移除]。**&#x200B;**
 
 ![移除集合](assets/remove-collection-new.jpg)
 

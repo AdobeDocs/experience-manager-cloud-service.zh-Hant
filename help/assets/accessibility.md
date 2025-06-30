@@ -80,7 +80,7 @@ To know how [!DNL Dynamic Media] is accessible, see [accessibility in [!DNL Dyna
 
 ### [!DNL Assets]中的鍵盤快速鍵 {#keyboard-shortcuts}
 
-[!DNL Assets]中的下列動作可搭配列出的鍵盤快速鍵使用。 大部分套用至[!DNL Experience Manager]主控台的鍵盤快速鍵也套用至[!DNL Assets]。 請參閱主控台](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)的[鍵盤快速鍵。 瞭解如何[啟用或停用鍵盤快速鍵](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)。
+[!DNL Assets]中的下列動作可搭配列出的鍵盤快速鍵使用。 大部分套用至[!DNL Experience Manager]主控台的鍵盤快速鍵也套用至[!DNL Assets]。 請參閱主控台[&#128279;](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)的鍵盤快速鍵。 瞭解如何[啟用或停用鍵盤快速鍵](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)。
 
 | 使用者介面或情境 | 鍵盤快速鍵 | 動作 |
 |---|---|---|

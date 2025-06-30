@@ -128,7 +128,7 @@ Assets Insights fetches usage data for assets from Adobe Analytics report suites
 
    ![chlimage_1-73](assets/chlimage_1-73.png)
 
-1. 在導覽頁 **[!UICONTROL 面中]** ，按一下 **** 前瞻分析頁面追蹤器卡片。
+1. 在導覽頁 **[!UICONTROL 面中]** ，按一下 **&#x200B;**&#x200B;前瞻分析頁面追蹤器卡片。
 1. 按一下&#x200B;**[!UICONTROL 下載]**&#x200B;以下載頁面追蹤程式碼。
 
 <!--

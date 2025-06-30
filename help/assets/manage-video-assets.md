@@ -33,7 +33,7 @@ ht-degree: 6%
 若要上傳視訊資產，請遵循下列步驟：
 
 1. 在數位資產資料夾或子資料夾中，導覽至您需要新增資產的位置。
-1. 按一下工具列中的[建立]，然後選擇[檔案]。****。 ****<br>或者，在使用者介面上拖曳檔案。
+1. 按一下工具列中的[建立]，然後選擇[檔案]。**&#x200B;**。 **&#x200B;**<br>或者，在使用者介面上拖曳檔案。
 深入瞭解[!DNL Experience Manager Assets]中的[上傳資產](manage-digital-assets.md#uploading-assets)。
 
 <!-- 1. To preview a video in the card view, click the **[!UICONTROL Play]** ![play option](assets/do-not-localize/play.png) option on the video asset. You can pause or play video in the card view only. The [!UICONTROL Play] and [!UICONTROL Pause] options are not available in the list view.
@@ -290,7 +290,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
    現在請在Experience Manager中設定YouTube管道。
 
 1. 在&#x200B;**[!UICONTROL 可用頻道]**&#x200B;的右側，選取&#x200B;**+** （加號圖示）。
-1. 在「YouTube頻道設定」對話方塊的「標題」欄位中，輸入您在「先前新增一或多個頻道至YouTube」工作中建立的頻道名稱 **** 。
+1. 在「YouTube頻道設定」對話方塊的「標題」欄位中，輸入您在「先前新增一或多個頻道至YouTube」工作中建立的頻道名稱 **&#x200B;**&#x200B;。
 
    如有需要，您可以選擇新增說明。
 
@@ -319,7 +319,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
 您可以選擇在上傳視訊時自動設定YouTube屬性。 在Experience Manager中建立中繼資料處理設定檔。
 
-若要建立中繼資料處理設定檔，您必須先從「欄位標籤 **[!UICONTROL 」、「對應至屬性]********** 」和「選擇」欄位複製值，這些全都可在視訊的中繼資料結構中找到。然後，您可以新增這些值，以建立您的YouTube視訊中繼資料處理設定檔。
+若要建立中繼資料處理設定檔，您必須先從「欄位標籤 **[!UICONTROL 」、「對應至屬性]**&#x200B;**&#x200B;**&#x200B;**&#x200B;** 」和「選擇」欄位複製值，這些全都可在視訊的中繼資料結構中找到。然後，您可以新增這些值，以建立您的YouTube視訊中繼資料處理設定檔。
 
 **若要針對您上傳的視訊自動設定預設YouTube屬性：**
 
@@ -330,19 +330,19 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 1. 在「YouTube發佈」標題下，選取&#x200B;**[!UICONTROL YouTube類別]**。
 1. 在頁面右側的&#x200B;**[!UICONTROL 設定]**&#x200B;標籤下方，執行下列動作：
 
-   * 在&#x200B;**[!UICONTROL 對應至屬性]**文字欄位中，選取並複製值。
+   * 在&#x200B;**[!UICONTROL 對應至屬性]**&#x200B;文字欄位中，選取並複製值。
 將複製的值貼到開啟的文字編輯器中。 當您稍後建立中繼資料處理設定檔時，會需要此值。 讓文字編輯器保持開啟狀態。
 
-   * 在&#x200B;**[!UICONTROL 選擇]**下，選取並複製您要使用的預設值（例如「人員與部落格」或「科學與技術」）。
+   * 在&#x200B;**[!UICONTROL 選擇]**&#x200B;下，選取並複製您要使用的預設值（例如「人員與部落格」或「科學與技術」）。
 將複製的值貼到開啟的文字編輯器中。 當您稍後建立中繼資料處理設定檔時，會需要此值。 讓文字編輯器保持開啟狀態。
 
 1. 在「YouTube發佈」標題下，選取&#x200B;**[!UICONTROL YouTube隱私權]**。
 1. 在頁面右側的&#x200B;**[!UICONTROL 設定]**&#x200B;標籤下方，執行下列動作：
 
-   * 在&#x200B;**[!UICONTROL 對應至屬性]**文字欄位中，選取並複製值。
+   * 在&#x200B;**[!UICONTROL 對應至屬性]**&#x200B;文字欄位中，選取並複製值。
 將複製的值貼到開啟的文字編輯器中。 當您稍後建立中繼資料處理設定檔時，會需要此值。 讓文字編輯器保持開啟狀態。
 
-   * 在&#x200B;**[!UICONTROL 選擇]**下，選取並複製您要使用的預設值。 請注意，「選擇」會組成兩個選項組。 配對中的底部欄位是您要複製的預設值，例如public、unlisted或private。
+   * 在&#x200B;**[!UICONTROL 選擇]**&#x200B;下，選取並複製您要使用的預設值。 請注意，「選擇」會組成兩個選項組。 配對中的底部欄位是您要複製的預設值，例如public、unlisted或private。
 將複製的值貼到開啟的文字編輯器中。 當您稍後建立中繼資料處理設定檔時，會需要此值。 讓文字編輯器保持開啟狀態。
 
 1. 在「中繼資料結構描述編輯器」頁面的右上角附近，選取&#x200B;**[!UICONTROL 取消]**。
@@ -384,7 +384,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
 >[!NOTE]
 >
->立即發佈不會自動發佈至YouTube。 設定動態媒體時，有兩個發佈選項可供選擇：立 **[!UICONTROL 即或]****[!UICONTROL 啟動後]**。
+>立即發佈不會自動發佈至YouTube。 設定動態媒體時，有兩個發佈選項可供選擇：立 **[!UICONTROL 即或]**&#x200B;**[!UICONTROL 啟動後]**。
 >
 >**[!UICONTROL 立即發佈]**&#x200B;表示上傳的資產（在與IPS同步之後）會自動發佈至傳遞系統。 雖然這對Dynamic Media是如此，對YouTube則否。 若要發佈至YouTube，您必須透過Experience Manager Author發佈。
 
@@ -503,7 +503,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
    >
    >您可以調整這些組態中的&#x200B;**[!UICONTROL 重試]**、**[!UICONTROL 重試延遲]**&#x200B;和&#x200B;**[!UICONTROL 逾時]**&#x200B;屬性。
 
-1. 如需進行中的工作流程，請參閱「工具 **[!UICONTROL >工作流程]** >例項」中的「工作流程例 **[!UICONTROL 項」]******。
+1. 如需進行中的工作流程，請參閱「工具 **[!UICONTROL >工作流程]** >例項」中的「工作流程例 **[!UICONTROL 項」]**&#x200B;**&#x200B;**。
 
    >[!NOTE]
    >
@@ -517,7 +517,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
    您也可以從「工作流程例證」區域暫停、終止或重新命名工作流程。 如需詳細資訊，請參閱[管理工作流程](/help/sites-cloud/authoring/workflows/overview.md)。
 
-1. 有關失敗的作業，請參閱「工具」>「工作流 **[!UICONTROL 程」]** > 「失敗 **[!UICONTROL 」中的「工]** 作流失敗 ****」。「工作 **[!UICONTROL 流失敗]** 」(Workflow Failure)列出所有失敗的工作流活動。
+1. 有關失敗的作業，請參閱「工具」>「工作流 **[!UICONTROL 程」]** > 「失敗 **[!UICONTROL 」中的「工]** 作流失敗 **&#x200B;**」。「工作 **[!UICONTROL 流失敗]** 」(Workflow Failure)列出所有失敗的工作流活動。
 
    >[!NOTE]
    >
@@ -535,7 +535,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
    >
    >您可以調整這些組態中的&#x200B;**[!UICONTROL 重試]**、**[!UICONTROL 重試延遲]**&#x200B;和&#x200B;**[!UICONTROL 逾時]**&#x200B;屬性。
 
-1. 如需完成的工作流程，請參閱「工具 **[!UICONTROL >工作流程]** >封存 **[!UICONTROL 」中的「工作流程封存]******」。「工作 **[!UICONTROL 流程存檔]** 」會列出所有已完成的工作流活動。
+1. 如需完成的工作流程，請參閱「工具 **[!UICONTROL >工作流程]** >封存 **[!UICONTROL 」中的「工作流程封存]**&#x200B;**&#x200B;**」。「工作 **[!UICONTROL 流程存檔]** 」會列出所有已完成的工作流活動。
 
    >[!NOTE]
    >
@@ -612,7 +612,7 @@ For YouTube publishing jobs, do the following:
 >視訊資產註解尚不支援MXF視訊格式。
 
 1. 從[!DNL Assets]主控台，選取資產卡上的&#x200B;**[!UICONTROL 編輯]**&#x200B;以顯示資產詳細資訊頁面。
-1. 若要播放視訊，請按一下[預覽]。****
+1. 若要播放視訊，請按一下[預覽]。**&#x200B;**
 1. 若要為視訊加上註解，請按一下&#x200B;**[!UICONTROL 加上註解]**。 註解會新增至視訊中的特定時間（影格）。 在註解時，您可以在畫布上繪圖，並在繪圖中包含註解。 註解會自動儲存。 若要結束註解精靈，請按一下&#x200B;**[!UICONTROL 關閉]**。
 1. 尋找視訊中的特定點，在&#x200B;**「文字」**&#x200B;欄位中指定時間 (以秒為單位)，然後按一下&#x200B;**「跳至」**。例如，若要略過前 20 秒的視訊，請在文字欄位中輸入 20。
 1. 若要在時間軸中檢視註釋，請按一下註釋。 若要從時間表刪除附註，請按一下&#x200B;**[!UICONTROL 刪除]**。

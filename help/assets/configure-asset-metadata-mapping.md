@@ -91,6 +91,7 @@ ht-degree: 4%
    1. 在&#x200B;**[!UICONTROL 欄位標籤]**&#x200B;欄位中指定`Project Name`。
 
    1. 在&#x200B;**[!UICONTROL 對應至屬性]**&#x200B;欄位中指定`./jcr:content/metadata/wm:projectName`。 建議先使用以下範本，在Experience Manger Assets中定義欄位對應：
+
       `./jcr:content/metadata/<mapping defined for the field in workfront>`。
 
       在Workfront中設定對應時，您將`wm:projectName`個Experience Manager Assets欄位對應至專案>命名Workfront欄位。
@@ -119,7 +120,7 @@ ht-degree: 4%
 
 ## 套用中繼資料設定至影像資料夾 {#apply-metadata-settings-image-folder}
 
-在Experience Manager as a Cloud Service應用程式中設定中繼資料設定後，將這些設定套用至包含從Workfront應用程式](#send-image-workfront-assets)傳送之影像的[資料夾。
+在Experience Manager as a Cloud Service應用程式中設定中繼資料設定後，將這些設定套用至包含從Workfront應用程式[&#128279;](#send-image-workfront-assets)傳送之影像的資料夾。
 
 若要將中繼資料設定套用至影像資料夾：
 
@@ -127,7 +128,7 @@ ht-degree: 4%
 
 1. 從可用清單中選取中繼資料結構描述，然後按一下&#x200B;**[!UICONTROL 套用至資料夾]**。
 
-1. 選取從Adobe Workfront應用程式](#send-image-workfront-assets)傳送影像的目標資料夾[，然後按一下&#x200B;**[!UICONTROL 套用]**。
+1. 選取從Adobe Workfront應用程式[&#128279;](#send-image-workfront-assets)傳送影像的目標資料夾，然後按一下&#x200B;**[!UICONTROL 套用]**。
 
 您可以導覽至Experience Manager Assets中的影像，並檢視與影像相關聯的中繼資料。 選取影像並按一下&#x200B;**[!UICONTROL 屬性]**&#x200B;以檢視影像中繼資料。
 

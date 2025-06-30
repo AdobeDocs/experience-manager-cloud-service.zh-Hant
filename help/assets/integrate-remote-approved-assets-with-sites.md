@@ -21,7 +21,7 @@ ht-degree: 2%
 
 初始設定後，使用者可以在AEM Sites執行個體上建立頁面，並視需要新增資產。 新增資產時，他們可以選取儲存在本機DAM中的資產，或瀏覽並使用遠端DAM中可用的資產。
 
-具備OpenAPI功能的Dynamic Media提供數種其他優點，例如存取和使用內容片段中的遠端資產、擷取遠端資產的中繼資料等等。 進一步瞭解Dynamic Media （具有OpenAPI功能）優於Connected Assets](/help/assets/dynamic-media-open-apis-faqs.md)的其他[優點。
+具備OpenAPI功能的Dynamic Media提供數種其他優點，例如存取和使用內容片段中的遠端資產、擷取遠端資產的中繼資料等等。 進一步瞭解Dynamic Media （具有OpenAPI功能）優於Connected Assets[&#128279;](/help/assets/dynamic-media-open-apis-faqs.md)的其他優點。
 
 ## 開始之前 {#pre-requisites-sites-integration}
 
@@ -34,6 +34,7 @@ ht-degree: 2%
 * 為AEM as a Cloud Service設定下列[環境變數](/help/implementing/cloud-manager/environment-variables.md#add-variables)：
 
    * ASSET_DELIVERY_REPOSITORY_ID= &quot;delivery-pxxxxx-eyyyyy.adobeaemcloud.com&quot; <br>
+
      `pXXXX`參考程式識別碼<br>
      `eYYYY`參考環境識別碼
 
@@ -43,7 +44,7 @@ ht-degree: 2%
 
      或在AEM Sites執行個體中為AEM 6.5設定[OSGi設定](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-osgi.html)，請遵循下列步驟：
 
-   1. 登入主控台並按一下&#x200B;**[!UICONTROL OSGi] >**或
+   1. 登入主控台並按一下&#x200B;**[!UICONTROL OSGi] >**&#x200B;或
 使用直接URL；例如： `https://localhost:4502/system/console/configMgr`
 
    1. 依照以下方式設定&#x200B;**新一代動態媒體設定** (`NextGenDynamicMediaConfigImpl`) OSGi設定，將值取代為您遠端資產環境的值。
@@ -122,7 +123,7 @@ ht-degree: 2%
 
 1. 按一下文字元件旁的![勾選圖示](/help/assets/assets/do-not-localize/checkmark-icon.svg)圖示。
 1. 選取&#x200B;**[!UICONTROL 遠端]**&#x200B;以從遠端DAM擷取資產。 <br>
-您可以視需要選擇**[!UICONTROL 本機]**&#x200B;或&#x200B;**[!UICONTROL 遠端]** DAM存放庫。
+您可以視需要選擇&#x200B;**[!UICONTROL 本機]**&#x200B;或&#x200B;**[!UICONTROL 遠端]** DAM存放庫。
 
    ![影像](/help/assets/assets/cf-pick.jpg)
 系統會提示您登入。

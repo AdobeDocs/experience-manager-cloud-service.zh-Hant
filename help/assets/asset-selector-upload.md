@@ -34,7 +34,7 @@ ht-degree: 2%
 
 您可以將中繼資料新增到資產，同時立即將資產上傳到您的應用程式。 中繼資料包含各種欄位，例如業務主旨列、產品詳細資訊、行銷活動等。 要執行此操作，請使用`metadataSchema`屬性。 移至[資產選擇器屬性](/help/assets/asset-selector-properties.md)以進一步瞭解`metadataSchema`屬性。
 
-請參閱使用中繼資料](/help/assets/asset-selector-customization.md#upload-with-metadata)上傳[以取得組態所需的程式碼片段。
+請參閱使用中繼資料[&#128279;](/help/assets/asset-selector-customization.md#upload-with-metadata)上傳以取得組態所需的程式碼片段。
 
 ![上傳包含中繼資料的資產](assets/upload-with-metadata.png)
 

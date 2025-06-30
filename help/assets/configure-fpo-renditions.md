@@ -36,13 +36,13 @@ Experience Manager as a Cloud Service提供雲端原生資產處理功能，可�
 
 若要產生FPO轉譯，請建立&#x200B;**[!UICONTROL 處理設定檔]**。 設定檔使用雲端原生資產微服務進行處理。 如需指示，請參閱[建立資產微服務的處理設定檔](asset-microservices-configure-and-use.md)。
 
-選取&#x200B;**[!UICONTROL 建立FPO轉譯]**&#x200B;以產生FPO轉譯。 或者，按一下[新增] ****&#x200B;將其他轉譯設定新增至相同的設定檔。
+選取&#x200B;**[!UICONTROL 建立FPO轉譯]**&#x200B;以產生FPO轉譯。 或者，按一下[新增] **&#x200B;**&#x200B;將其他轉譯設定新增至相同的設定檔。
 
 ![create-processing-profile-fpo-renditions](assets/create-processing-profile-fpo-renditions.png)
 
 ## 產生新資產的轉譯 {#generate-renditions-of-new-assets}
 
-若要產生新資產的FPO轉譯，請將&#x200B;**[!UICONTROL 處理設定檔]**&#x200B;套用至資料夾屬性中的資料夾。 在資料夾的[內容]頁面中，按一下[資產處理]索引標籤&#x200B;]**，選取**[!UICONTROL  FPO設定檔&#x200B;]**做為**[!UICONTROL &#x200B;處理設定檔&#x200B;]**，然後儲存變更。**[!UICONTROL &#x200B;所有上傳至資料夾的新資產都會使用此設定檔進行處理。
+若要產生新資產的FPO轉譯，請將&#x200B;**[!UICONTROL 處理設定檔]**&#x200B;套用至資料夾屬性中的資料夾。 在資料夾的[內容]頁面中，按一下[資產處理]索引標籤&#x200B;**，選取**&#x200B;[!UICONTROL &#x200B; FPO設定檔&#x200B;]&#x200B;**做為**&#x200B;[!UICONTROL &#x200B;處理設定檔&#x200B;]&#x200B;**，然後儲存變更。**&#x200B;所有上傳至資料夾的新資產都會使用此設定檔進行處理。
 
 ![add-fpo-rendition](assets/add-fpo-rendition.png)
 

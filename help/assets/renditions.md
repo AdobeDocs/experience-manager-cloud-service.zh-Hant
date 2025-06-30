@@ -68,7 +68,7 @@ Dynamic Media影像預設集和智慧型裁切轉譯可促進符合品牌標準�
    <!-- ![dynamic renditions](assets/preset_smart_crop_view.png) -->
 
 1. 選取要預覽的轉譯，然後按一下&#x200B;**複製URL**&#x200B;以複製所選轉譯的URL。 按一下「**下載轉譯**」即可下載影像資產的轉譯。
-1. 選取要預覽的智慧型裁切轉譯，然後按一下「複製URL」****&#x200B;以複製所選轉譯的URL。
+1. 選取要預覽的智慧型裁切轉譯，然後按一下「複製URL」**&#x200B;**&#x200B;以複製所選轉譯的URL。
 1. 按一下![下載圖示](assets/do-not-localize/download-icon.png)，將所有可用的智慧型裁切轉譯下載為單一zip檔案。
    ![下載圖示](/help/assets/assets/smartcrop-rendition.png)
 

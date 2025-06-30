@@ -33,7 +33,7 @@ ht-degree: 12%
 
 1. 按一下&#x200B;**[!UICONTROL 新增]**&#x200B;以定義允許的MIME型別。
 
-1. 在文字方塊中指定MIME型別。 您可以再按一下[新增&#x200B;****]來指定更多允許的MIME型別。 您也可以按一下![刪除圖示](assets/delete-icon.svg)，從清單中刪除任何MIME型別。
+1. 在文字方塊中指定MIME型別。 您可以再按一下[新增&#x200B;**&#x200B;**]來指定更多允許的MIME型別。 您也可以按一下![刪除圖示](assets/delete-icon.svg)，從清單中刪除任何MIME型別。
 
 1. 按一下「**[!UICONTROL 儲存]**」。
 

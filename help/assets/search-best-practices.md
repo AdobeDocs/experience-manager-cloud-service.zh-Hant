@@ -22,8 +22,8 @@ ht-degree: 2%
 
 以下是開始搜尋前需在Experience Manager中執行的基本步驟：
 
-* 在&#x200B;**管理員檢視**中，前往Experience Manager中的Assets >檔案，然後按一下頂端列中的搜尋圖示。 或者，使用正斜線(/)開啟「全搜尋」欄位。
-在**Assets檢視**&#x200B;中，搜尋列會顯示在頂端，可以直接存取。
+* 在&#x200B;**管理員檢視**&#x200B;中，前往Experience Manager中的Assets >檔案，然後按一下頂端列中的搜尋圖示。 或者，使用正斜線(/)開啟「全搜尋」欄位。
+在&#x200B;**Assets檢視**&#x200B;中，搜尋列會顯示在頂端，可以直接存取。
 * 已預先選取`Location:Assets`和`Path:/content/dam`，以將搜尋範圍限制在您的Experience Manager Assets存放庫。 如果您導覽至任何其他資料夾，`Path:/content/dam/<folder name>`會顯示在「全搜尋」欄位中，以將搜尋範圍限制在目前的資料夾。
 
 ## 基本搜尋 {#basic-search}

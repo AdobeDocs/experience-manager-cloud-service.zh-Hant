@@ -79,7 +79,7 @@ ht-degree: 8%
 
    ![select_dependentfield](assets/select_dependentfield.png)
 
-1. 在&#x200B;**[!UICONTROL 需求]**&#x200B;底下，根據新規則&#x200B;]**選項選擇**[!UICONTROL &#x200B;必要。
+1. 在&#x200B;**[!UICONTROL 需求]**&#x200B;底下，根據新規則&#x200B;**選項選擇**&#x200B;必要。
 1. 選取&#x200B;**[!UICONTROL 新增規則]**&#x200B;並選擇&#x200B;**[!UICONTROL 資產型別]**&#x200B;欄位以建立相依性。 也選擇要在其上建立相依性的欄位值。 在這種情況下，請選擇「 **[!UICONTROL 視訊」]**。選取&#x200B;**[!UICONTROL 完成]**&#x200B;以儲存變更。
 
    ![define_rule](assets/define_rule.png)

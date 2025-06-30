@@ -58,9 +58,9 @@ ht-degree: 0%
 
    ![使用OpenAPI功能啟用Dynamic Media](/help/assets/assets/activate-adv-capabiliites-of-dm-openAPI.png)
 
-1. 在確認對話方塊上按一下[啟動&#x200B;****]以開始[!DNL Dynamic Media with OpenAPI]啟動程式。 成功啟用後，Cloud Manager會顯示下列狀態更新：
+1. 在確認對話方塊上按一下[啟動&#x200B;**&#x200B;**]以開始[!DNL Dynamic Media with OpenAPI]啟動程式。 成功啟用後，Cloud Manager會顯示下列狀態更新：
    1. **[!UICONTROL 環境階段]**： **[!UICONTROL 執行中]**
-   1. ![DM已啟用](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media ]**：**[!UICONTROL  OpenAPI功能已啟用&#x200B;]**
+   1. ![DM已啟用](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media &#x200B;]**：**[!UICONTROL &#x200B; OpenAPI功能已啟用&#x200B;]**
 
       ![啟用成功](/help/assets/assets/activation-successful.png){width="700" align="left"}
 
@@ -69,7 +69,7 @@ ht-degree: 0%
 如果啟用失敗，Cloud Manager會顯示下列狀態更新：
 
 * **[!UICONTROL 環境階段]**： **[!UICONTROL DM with OpenAPI失敗]**
-* ![DM已啟用](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media ]**：**[!UICONTROL &#x200B;無法啟動OpenAPI功能&#x200B;]**
+* ![DM已啟用](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media &#x200B;]**：**[!UICONTROL &#x200B;無法啟動OpenAPI功能&#x200B;]**
 
   ![重試啟動](/help/assets/assets/retry-dm-openapi-failed-activation.png){width="700" align="left"}
 
@@ -134,7 +134,7 @@ ht-degree: 0%
 
    ![建立Dynamic Media公司](/help/assets/assets/create-dynamic-media-company.png){width="500" align="left"}
 
-1. 按一下[建立]****&#x200B;開始建立您的公司。 此動作將新資料列新增至&#x200B;**[!UICONTROL [!DNL Dynamic Media]公司]**&#x200B;區段，並顯示&#x200B;**[!UICONTROL 正在設定]**&#x200B;為公司的&#x200B;**[!UICONTROL 狀態]**。
+1. 按一下[建立]&#x200B;**&#x200B;**&#x200B;開始建立您的公司。 此動作將新資料列新增至&#x200B;**[!UICONTROL [!DNL Dynamic Media]公司]**&#x200B;區段，並顯示&#x200B;**[!UICONTROL 正在設定]**&#x200B;為公司的&#x200B;**[!UICONTROL 狀態]**。
 
    ![已起始Dynamic Media公司建立](/help/assets/assets/dm-company-creation-initiated.png)
 

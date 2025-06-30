@@ -166,7 +166,7 @@ Enterprise Manager Assets可讓您同時編輯多個資產的中繼資料，以�
 
 >[!NOTE]
 >
->大量編輯方法適用於資料夾或集合中可用的資產。 對於跨資料夾可用的資產，或符合共同條件的資產，可在搜尋](/help/assets/search-assets.md#metadata-updates)後[大量更新中繼資料。
+>大量編輯方法適用於資料夾或集合中可用的資產。 對於跨資料夾可用的資產，或符合共同條件的資產，可在搜尋[&#128279;](/help/assets/search-assets.md#metadata-updates)後大量更新中繼資料。
 
 1. 導覽至您要編輯的資產位置。
 1. 選取您要編輯其一般屬性的資產。

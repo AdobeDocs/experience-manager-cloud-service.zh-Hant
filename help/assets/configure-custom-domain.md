@@ -26,7 +26,7 @@ ht-degree: 6%
    ![影像](/help/assets/assets/ssl-certificate.png)
 瞭解如何在Adobe Cloud Manager中新增[SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)。
 
-1. 新增SSL憑證後，請新增自訂網域。 按一下&#x200B;**[!UICONTROL 網域設定]**，並針對&#x200B;**[!UICONTROL 發佈服務]**選項指定自訂網域。
+1. 新增SSL憑證後，請新增自訂網域。 按一下&#x200B;**[!UICONTROL 網域設定]**，並針對&#x200B;**[!UICONTROL 發佈服務]**&#x200B;選項指定自訂網域。
 深入瞭解[自訂網域](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。
 
 1. 在對應發佈網域的DNS記錄中新增兩個[CNAME記錄](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。

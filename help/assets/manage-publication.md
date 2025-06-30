@@ -55,7 +55,7 @@ ht-degree: 4%
    * `Now`：立即發佈資產
    * `Later`：根據`Activation`日期或時間發佈資產
 
-若要繼續，請按一下[下一步] ****。 根據選取專案，**[!UICONTROL 範圍]**&#x200B;索引標籤會反映不同的選項。 **[!UICONTROL 新增內容]**&#x200B;和&#x200B;**[!UICONTROL 包含資料夾設定]**&#x200B;的選項僅可用於將資產和資料夾發佈到[!DNL Experience Manager Assets] (`Destination: Publish`)。
+若要繼續，請按一下[下一步] **&#x200B;**。 根據選取專案，**[!UICONTROL 範圍]**&#x200B;索引標籤會反映不同的選項。 **[!UICONTROL 新增內容]**&#x200B;和&#x200B;**[!UICONTROL 包含資料夾設定]**&#x200B;的選項僅可用於將資產和資料夾發佈到[!DNL Experience Manager Assets] (`Destination: Publish`)。
 
 ![管理發布範圍](assets/manage-publication-aem-scope.png)
 
