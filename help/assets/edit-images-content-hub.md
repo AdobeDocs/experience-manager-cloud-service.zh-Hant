@@ -27,7 +27,7 @@ Content Hub可讓您使用Adobe Express建立新內容。 您可以使用易於�
 
 1. 按一下您需要編輯之影像的資產卡上可用的&#x200B;**[!DNL Open in Adobe Express]**。 或者，按一下影像以開啟其詳細資料，然後按一下[!DNL Adobe Express]標誌。 接著會載入適用於Adobe Express的內嵌編輯器，而不會離開Content Hub。
 
-   您可以利用[!DNL Adobe Express]功能來執行所有與影像編輯相關的動作，例如[調整影像大小](https://helpx.adobe.com/express/using/resize-image.html)、[移除或變更背景顏色](https://helpx.adobe.com/express/using/remove-background.html)、[裁切影像](https://helpx.adobe.com/express/using/crop-image.html)、將影像與AI產生的影像或文字結合，等等。
+   您可以利用[!DNL Adobe Express]功能來執行所有與影像編輯相關的動作，例如[調整影像大小](https://helpx.adobe.com/tw/express/using/resize-image.html)、[移除或變更背景顏色](https://helpx.adobe.com/tw/express/using/remove-background.html)、[裁切影像](https://helpx.adobe.com/tw/express/using/crop-image.html)、將影像與AI產生的影像或文字結合，等等。
 
 1. 執行修改並按一下&#x200B;**[!UICONTROL 儲存]**，將編輯後的資產儲存為下列任一格式型別：
 

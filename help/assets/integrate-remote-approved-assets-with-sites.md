@@ -13,7 +13,7 @@ ht-degree: 2%
 
 有效管理數位資產對於跨各種線上平台提供吸引人且一致的品牌體驗至關重要。 Dynamic Media具備OpenAPI功能，可啟用AEM Sites與AEM Assets as a Cloud Service之間的緊密整合，進而增強數位資產管理。 這項創新功能可讓您輕鬆在多個AEM環境中共用和管理不同型別的已核准數位資產，精簡網站作者和內容編輯的工作流程。
 
-具備OpenAPI功能的Dynamic Media可讓Sites作者直接在AEM頁面編輯器和[內容片段](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments.html)中使用遠端DAM的資產，進而簡化內容建立和管理程式。
+具備OpenAPI功能的Dynamic Media可讓Sites作者直接在AEM頁面編輯器和[內容片段](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments.html?lang=zh-Hant)中使用遠端DAM的資產，進而簡化內容建立和管理程式。
 
 使用者可以將多個AEM Sites執行個體（對最大數量沒有任何限制）連線到遠端DAM部署，這是優於[連線的Assets](use-assets-across-connected-assets-instances.md)功能的顯著優點。
 
@@ -42,7 +42,7 @@ ht-degree: 2%
 
    * ASSET_DELIVERY_IMS_CLIENT= [IMSClientId]：您必須提交Adobe支援票證才能取得IMS使用者端ID。
 
-     或在AEM Sites執行個體中為AEM 6.5設定[OSGi設定](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-osgi.html)，請遵循下列步驟：
+     或在AEM Sites執行個體中為AEM 6.5設定[OSGi設定](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-osgi.html?lang=zh-Hant)，請遵循下列步驟：
 
    1. 登入主控台並按一下&#x200B;**[!UICONTROL OSGi] >**&#x200B;或
 使用直接URL；例如： `https://localhost:4502/system/console/configMgr`
@@ -63,12 +63,12 @@ ht-degree: 2%
 
       ![新一代動態媒體設定OSGi設定視窗](/help/assets/assets/remote-assets-osgi.png)
 
-  深入瞭解[IMS驗證](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/ims-config-and-admin-console.html)。
+  深入瞭解[IMS驗證](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/ims-config-and-admin-console.html?lang=zh-Hant)。
 
   如需如何設定OSGi的詳細資訊，請參閱下列檔案：
 
-   * [為AEM as a Cloud Service設定Adobe Experience Manager as a Cloud Service的OSGi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html)
-   * [為AEM 6.5設定OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-osgi.html)
+   * [為AEM as a Cloud Service設定Adobe Experience Manager as a Cloud Service的OSGi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=zh-Hant)
+   * [為AEM 6.5設定OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-osgi.html?lang=zh-Hant)
 
 * 以IMS存取登入遠端DAM AEM as a Cloud Service例項。 這指對遠端DAM環境具有IMS存取許可權的Sites作者。
 
@@ -78,7 +78,7 @@ ht-degree: 2%
 
 通常建議使用HTTP來執行您的所有生產AEM執行個體。 不過，您的本機開發環境可能不會依此設定。 不過，使用Dynamic Media搭配OpenAPI的遠端資產需要HTTPS才能運作。
 
-[使用本指南](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html)設定HTTPS，無論您想使用遠端資產，包括開發環境。
+[使用本指南](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html?lang=zh-Hant)設定HTTPS，無論您想使用遠端資產，包括開發環境。
 
 ## 從遠端DAM存取資產 {#fetch-assets}
 
@@ -119,7 +119,7 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   >如果您沒有AEM內容片段模式，您可能需要[建立一個](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-models.html?lang=en)。
+   >如果您沒有AEM內容片段模式，您可能需要[建立一個](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-models.html?lang=zh-Hant)。
 
 1. 按一下文字元件旁的![勾選圖示](/help/assets/assets/do-not-localize/checkmark-icon.svg)圖示。
 1. 選取&#x200B;**[!UICONTROL 遠端]**&#x200B;以從遠端DAM擷取資產。 <br>

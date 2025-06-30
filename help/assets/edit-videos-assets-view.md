@@ -98,7 +98,7 @@ DAM中的最終視訊內容通常需要調整大小，才能發佈到特定管�
 
 * 若要提供文件意見回饋，請使用右側邊欄提供的[!UICONTROL 編輯此頁面]![來編輯頁面](assets/do-not-localize/edit-page.png)或[!UICONTROL 記錄問題]![來建立 GitHub 問題](assets/do-not-localize/github-issue.png)。
 
-* 請聯絡[客戶服務](https://experienceleague.adobe.com/?support-solution=General#support)。
+* 請聯絡[客戶服務](https://experienceleague.adobe.com/zh-hant?support-solution=General#support)。
 
 >[!MORELIKETHIS]
 >

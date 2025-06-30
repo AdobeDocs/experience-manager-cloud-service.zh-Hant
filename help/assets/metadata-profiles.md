@@ -16,7 +16,7 @@ ht-degree: 21%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-config.html?lang=en) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-config.html?lang=zh-Hant) |
 | AEM as a Cloud Service  | 本文章 |
 
 中繼資料設定檔可讓您將預設中繼資料套用至資料夾中的資產。 建立中繼資料設定檔，並將其套用至資料夾。 您之後上傳至資料夾的任何資產都會繼承您在中繼資料設定檔中設定的預設中繼資料。

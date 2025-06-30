@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # [!DNL Dynamic Media]個範本{#dynamic-media-templates}
 
-使用[!DNL Dynamic Media]範本(WYSIWYG範本編輯器)，為您的橫幅和傳單建立即時可自訂的範本。 發佈您的[!DNL Dynamic Media]範本並在下游應用程式中使用。 [!DNL Dynamic Media]範本包含影像和文字圖層。 新增引數至範本的影像和文字圖層，並使用[[!DNL Dynamic Media] URL](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media)來重新定位和調整圖層大小，並即時更新其內容。
+使用[!DNL Dynamic Media]範本(WYSIWYG範本編輯器)，為您的橫幅和傳單建立即時可自訂的範本。 發佈您的[!DNL Dynamic Media]範本並在下游應用程式中使用。 [!DNL Dynamic Media]範本包含影像和文字圖層。 新增引數至範本的影像和文字圖層，並使用[[!DNL Dynamic Media] URL](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media)來重新定位和調整圖層大小，並即時更新其內容。
 
 部分主要功能包括：
 
@@ -44,10 +44,10 @@ ht-degree: 0%
 滿足下列要求以建立[!DNL Dynamic Media]範本並產生其傳遞URL：
 
 1. 存取[!DNL Dynamic Media]。
-1. 在[!DNL Assets View]首頁上，**[!UICONTROL Dynamic Media Assets]**&#x200B;中有資料夾可儲存您的範本。 [在![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets &#x200B;]**&#x200B;中建立資料夾](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view)，以在&#x200B;**[!UICONTROL &#x200B; Dynamic Media Assets &#x200B;]**&#x200B;中復寫該資料夾。
+1. 在[!DNL Assets View]首頁上，**[!UICONTROL Dynamic Media Assets]**&#x200B;中有資料夾可儲存您的範本。 [在![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets &#x200B;]**&#x200B;中建立資料夾](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view)，以在&#x200B;**[!UICONTROL &#x200B; Dynamic Media Assets &#x200B;]**&#x200B;中復寫該資料夾。
 1. [將您 [!DNL AEM Assets] 執行個體中可用的影像與 [!DNL Dynamic Media] 同步，以便使用這些影像來建立範本](/help/assets/dynamic-media/config-dm.md)。
 1. 發佈要在建立範本時使用的影像，以在建立範本後產生範本的傳遞URL。 傳遞URL可用於下游應用程式。
-1. 若要在範本的文字圖層中使用預設[!UICONTROL Adobe Sans F2]字型以外的字型，請[同時上傳字型檔案並發佈至AEM和Dynamic Media ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation)。 [支援的字型檔案格式為：AFM、OTF、PFB、PFM、PhotoFont、TTC、TTF](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats)。 此外，請確定[重新處理](/help/assets/reprocessing-assets-view.md)現有的字型以使用這些字型。 如需詳細資訊，請參閱[字型](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts)。<!--(On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**)-->
+1. 若要在範本的文字圖層中使用預設[!UICONTROL Adobe Sans F2]字型以外的字型，請[同時上傳字型檔案並發佈至AEM和Dynamic Media ](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation)。 [支援的字型檔案格式為：AFM、OTF、PFB、PFM、PhotoFont、TTC、TTF](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats)。 此外，請確定[重新處理](/help/assets/reprocessing-assets-view.md)現有的字型以使用這些字型。 如需詳細資訊，請參閱[字型](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-classic/using/support-files/fonts)。<!--(On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**)-->
 1. 在觸控式UI中驗證下列專案：
    * 在&#x200B;**[!UICONTROL 編輯[!DNL Dynamic Media]設定頁面]**&#x200B;上，預設設定為&#x200B;**[!UICONTROL 已停用]**&#x200B;的&#x200B;**[!UICONTROL [!DNL Dynamic Media]同步處理模式]**&#x200B;未套用至所有AEM資料夾（**[!UICONTROL 同步處理所有內容]**&#x200B;已取消核取）。 如需詳細資訊，請參閱[設定Dynamic Media Cloud Service](/help/assets/dynamic-media/config-dm.md)。
    * 目的地資料夾或子資料夾的&#x200B;**[!UICONTROL [!DNL Dynamic Media]同步模式]**&#x200B;設定為&#x200B;**[!UICONTROL 啟用子資料夾]**，您會在建立後儲存範本。 如需詳細資訊，請參閱[設定 [!DNL Dynamic Media] Cloud Service](/help/assets/dynamic-media/config-dm.md)。
@@ -56,9 +56,9 @@ ht-degree: 0%
 
 執行以下步驟來建立[!DNL Dynamic Media]範本：
 <!--
-1. Navigate to your [!DNL Assets View] and [create a folder](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**. The folder tree in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** replicates in **[!UICONTROL Dynamic Media Assets]**. Save your [!DNL Dynamic Media] template in this [!UICONTROL Dynamic Media Assets] folder.
-1. Select ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** and [upload and publish your images to [!DNL AEM] and [!DNL Dynamic Media] simultaneously](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) to use them in creating the template. Publishing images is required to generate the template's delivery URL, after creating the template. The delivery URL can be used in downstream applications.
-1. [Execute these asset uploading and publishing steps](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation) to upload and publish a font file to AEM and Dynamic Media simultaneously to use it in creating the template. [!UICONTROL Adobe Sans F2] is the only default font available in the text layer. [The supported font file formats are, AFM, OTF, PFB, PFM, PhotoFont, TTC, TTF](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Ensure to [reprocess](/help/assets/reprocessing-assets-view.md) the existing fonts to use them in creating the template (On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**). See [Fonts](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts) to know more about fonts.
+1. Navigate to your [!DNL Assets View] and [create a folder](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**. The folder tree in ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** replicates in **[!UICONTROL Dynamic Media Assets]**. Save your [!DNL Dynamic Media] template in this [!UICONTROL Dynamic Media Assets] folder.
+1. Select ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** and [upload and publish your images to [!DNL AEM] and [!DNL Dynamic Media] simultaneously](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) to use them in creating the template. Publishing images is required to generate the template's delivery URL, after creating the template. The delivery URL can be used in downstream applications.
+1. [Execute these asset uploading and publishing steps](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation) to upload and publish a font file to AEM and Dynamic Media simultaneously to use it in creating the template. [!UICONTROL Adobe Sans F2] is the only default font available in the text layer. [The supported font file formats are, AFM, OTF, PFB, PFM, PhotoFont, TTC, TTF](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Ensure to [reprocess](/help/assets/reprocessing-assets-view.md) the existing fonts to use them in creating the template (On [!DNL Assets View] home page, click ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]**, navigate to the font file location, select the font file one at a time and click ![Reprocess](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocess]**). See [Fonts](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-classic/using/support-files/fonts) to know more about fonts.
 -->
 1. [建立空白畫布](#create-a-canvas)
 1. [將影像新增至畫布](#add-images-to-the-canvas)
@@ -115,7 +115,7 @@ ht-degree: 0%
 
 執行以下步驟，將影像新增至畫布：
 
-1. 按一下![立即建立橫幅](/help/assets/assets/add-image.svg)以開啟[資產選擇器](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector)面板。 面板會顯示您的AEM Assets執行個體中同步至[!DNL Dynamic Media]的影像。
+1. 按一下![立即建立橫幅](/help/assets/assets/add-image.svg)以開啟[資產選擇器](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector)面板。 面板會顯示您的AEM Assets執行個體中同步至[!DNL Dynamic Media]的影像。
 1. 瀏覽面板或使用搜尋列中的關鍵字來尋找特定影像。
 1. 將影像拖放到畫布上以使用。 請參閱[**[!UICONTROL 屬性面板]**](#reposition-resize-delete-a-layer)，以調整畫布上的圖層大小或重新定點陣圖層。
    ![在秒內建立橫幅](/help/assets/assets/add-image-to-canvas.png)
@@ -167,7 +167,7 @@ ht-degree: 0%
 #### 文字格式選項{#text-formatting-options-on-properties-panel}
 
 將文字的格式設定為所需的字型、大小、顏色、樣式、對齊方式（在圖層內），方法是在面板的&#x200B;**[!UICONTROL 文字]**&#x200B;區段下的個別欄位中變更其值。
-確定包括&#x200B;**[!UICONTROL 智慧文字調整大小]**。 [!UICONTROL 智慧型文字調整大小]適用於[Copyfitting](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/r-copy-fitting)演演算法，可在文字區域中以最佳方式填入文字，防止文字溢位，並儘量減少文字底部的額外空間。
+確定包括&#x200B;**[!UICONTROL 智慧文字調整大小]**。 [!UICONTROL 智慧型文字調整大小]適用於[Copyfitting](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/r-copy-fitting)演演算法，可在文字區域中以最佳方式填入文字，防止文字溢位，並儘量減少文字底部的額外空間。
 
 ![立即建立內容](/help/assets/assets/smart-text-resize.png)
 

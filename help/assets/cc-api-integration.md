@@ -60,7 +60,7 @@ ht-degree: 5%
 1. 按一下「**[!UICONTROL 繼續]**」。
 1. 展開&#x200B;**[!UICONTROL Assets]**&#x200B;並選取&#x200B;**[!UICONTROL Content Automation]**。
 1. 按一下「**[!UICONTROL 建立]**」。
-1. 執行管道以[將變更部署到Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html)。
+1. 執行管道以[將變更部署到Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=zh-Hant)。
 
 如果您需要將Content Automation附加元件新增至Cloud Manager中的現有AEM as a Cloud Service程式：
 
@@ -70,7 +70,7 @@ ht-degree: 5%
 
 1. 展開&#x200B;**[!UICONTROL Assets]**&#x200B;並選取&#x200B;**[!UICONTROL Content Automation]**。
 1. 按一下&#x200B;**[!UICONTROL 更新]**。
-1. 執行管道以[將變更部署到Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html)。
+1. 執行管道以[將變更部署到Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=zh-Hant)。
 
 ## 使用處理設定檔來大量編輯您的創意資產 {#process-assets}
 

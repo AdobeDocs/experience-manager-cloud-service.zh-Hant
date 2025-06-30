@@ -18,7 +18,7 @@ ht-degree: 9%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html?lang=en) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html?lang=zh-Hant) |
 | AEM as a Cloud Service  | 本文章 |
 
 如果DAM使用者上傳一個或多個已存在於存放庫中的資產，[!DNL Experience Manager]會偵測重複並通知使用者。 根據預設，重複資料偵測會停用，因為這會根據存放庫的大小和上傳的資產數量產生效能影響。

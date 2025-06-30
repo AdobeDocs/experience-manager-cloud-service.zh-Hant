@@ -97,7 +97,7 @@ experience manager metadata-->
 
 >[!NOTE]
 >
->瞭解如何[管理數位資產的中繼資料](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html)。
+>瞭解如何[管理數位資產的中繼資料](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html?lang=zh-Hant)。
 
 ### 與中繼資料策略一致
 
@@ -136,7 +136,7 @@ experience manager metadata-->
    1. 按一下&#x200B;**[!UICONTROL 儲存並關閉]**。
 使用您新增的關鍵字搜尋資產。 資產會出現在最熱門的搜尋結果中。
 
-  瞭解如何[在Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html)中提升搜尋。
+  瞭解如何[在Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=zh-Hant)中提升搜尋。
 
 * **自訂中繼資料欄位：**&#x200B;自訂中繼資料欄位，以擷取有關資產的其他資訊。 例如，為專案詳細資訊、版權資訊或任何其他可增強搜尋功能的相關資料新增特定欄位。 瞭解如何在Experience Manager Assets中編輯或新增自訂中繼資料[&#128279;](meta-edit.md)。
 
@@ -166,4 +166,4 @@ experience manager metadata-->
 
 及早溝通目標、進度、里程碑和挑戰，以接收所有利害關係人的意見與合作。 鼓勵整個組織的共同作業，建立有效率的流程和寶貴的中繼資料。
 
-深入瞭解[中繼資料及其相關概念](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-concepts.html)，以有效管理您的Experience Manager中繼資料。
+深入瞭解[中繼資料及其相關概念](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-concepts.html?lang=zh-Hant)，以有效管理您的Experience Manager中繼資料。

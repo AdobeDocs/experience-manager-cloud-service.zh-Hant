@@ -124,7 +124,7 @@ ht-degree: 2%
 
 另請參閱：
 
-* [有關如何將CC隱藏式字幕新增至Dynamic Media視訊的教學影片](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html#add-cc-closed-captioning-to-dynamic-media-video)
+* [有關如何將CC隱藏式字幕新增至Dynamic Media視訊的教學影片](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=zh-Hant#add-cc-closed-captioning-to-dynamic-media-video)
 * [將Dynamic Media影片發佈至YouTube](/help/assets/dynamic-media/video.md#publishing-videos-to-youtube)
 
 在下圖中，URL會反映參照文字稿（.vtt檔案）的註解部分。 視訊會在視訊中的指定時間戳記，將口語（轉錄文字）反映為&#x200B;**[!UICONTROL 隱藏式字幕]**。 使用者可以使用&#x200B;**[!UICONTROL CC]**&#x200B;按鈕來啟用或停用註解。

@@ -16,7 +16,7 @@ ht-degree: 6%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-video-assets.html?lang=en) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-video-assets.html?lang=zh-Hant) |
 | AEM as a Cloud Service  | 本文章 |
 
 視訊格式是組織數位資產的重要一環。 [!DNL Adobe Experience Manager]提供成熟的產品和功能，可在建立視訊資產後管理其整個生命週期。
@@ -410,7 +410,7 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 1. 在視訊的屬性頁面的右上角，選取&#x200B;**[!UICONTROL 儲存並關閉]**。
 1. 在工具列上，選取&#x200B;**[!UICONTROL 快速發佈]**。
 
-   另請參閱[搭配Experience Manager Sites使用出版物管理](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html#page-authoring)。
+   另請參閱[搭配Experience Manager Sites使用出版物管理](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html?lang=zh-Hant#page-authoring)。
 
    您可以選擇驗證在YouTube頻道上發佈的影片。
 

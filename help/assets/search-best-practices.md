@@ -268,7 +268,7 @@ When you are unsure about the title or meta description of an asset, you can use
 
 ## 自訂搜尋多面向 {#custom-search-facets}
 
-Adobe Experience Manager中的搜尋Facet可讓您以多種方式搜尋資產，而非使用單一、預先決定或分類順序。 您可以自訂搜尋Facet並根據需求新增述詞。 如需新增自訂述詞的逐步指南，請參閱[搜尋Facet](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en#)。
+Adobe Experience Manager中的搜尋Facet可讓您以多種方式搜尋資產，而非使用單一、預先決定或分類順序。 您可以自訂搜尋Facet並根據需求新增述詞。 如需新增自訂述詞的逐步指南，請參閱[搜尋Facet](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=zh-Hant#)。
 
 <!--**Scenario 10: Search assets based on Sku ID**
 to be added later
@@ -316,7 +316,7 @@ The newly added assets are not indexed.
     </tr>
     <tr>
         <td> 自訂Facet </td>
-        <td> 您可以視需求新增<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en">個自訂搜尋Facet。</td>
+        <td> 您可以視需求新增<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=zh-Hant">個自訂搜尋Facet。</td>
         <td> Assets檢視部分支援自訂Facet。 支援的Facet包括：
             <ul>
             <li> 預測標籤
@@ -430,5 +430,5 @@ The newly added assets are not indexed.
 
 >[!MORELIKETHIS]
 >
->* [搜尋資產](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/search-assets.html?lang=en)
->* [搜尋 Facet](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en)
+>* [搜尋資產](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/search-assets.html?lang=zh-Hant)
+>* [搜尋 Facet](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=zh-Hant)

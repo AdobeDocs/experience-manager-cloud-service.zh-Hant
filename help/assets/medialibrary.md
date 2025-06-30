@@ -117,4 +117,4 @@ As per PM, we must avoid stating such a list, as we do not have a list that make
 >[!MORELIKETHIS]
 >
 >* 在 [!DNL Experience Manager Assets][&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html?lang=zh-Hant)中的DAM功能
->* [[!DNL Experience Manager] 作為 [!DNL Cloud Service] 產品說明](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-cloud-service.html)
+>* [[!DNL Experience Manager] 作為 [!DNL Cloud Service] 產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-experience-manager-cloud-service.html)

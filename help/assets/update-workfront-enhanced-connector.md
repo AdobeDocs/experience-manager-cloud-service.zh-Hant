@@ -17,14 +17,14 @@ ht-degree: 0%
 
 >[!TIP]
 >
->您正在搜尋AEM 6.5的[!DNL Workfront for Experience Manager enhanced connector]更新檔案嗎？ 按一下[這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-install.html?lang=en##update-enhanced-connector-for-workfront)。
+>您正在搜尋AEM 6.5的[!DNL Workfront for Experience Manager enhanced connector]更新檔案嗎？ 按一下[這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-install.html?lang=zh-Hant##update-enhanced-connector-for-workfront)。
 
 
 若要將[!DNL Workfront for Experience Manager enhanced connector]更新至最新版本：
 
 1. 從[Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/workfront-tools.ui.apps.zip)下載最新版本的增強型聯結器。
 
-1. [存取](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/accessing-repos.html?lang=en)並從Cloud Manager複製您的AEM as a Cloud Service存放庫。
+1. [存取](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/accessing-repos.html?lang=zh-Hant)並從Cloud Manager複製您的AEM as a Cloud Service存放庫。
 
 1. 使用您選擇的IDE開啟複製的Experience Manager as a Cloud Service存放庫。
 
@@ -85,4 +85,4 @@ ht-degree: 0%
 
 1. 將變更推送至存放庫。
 
-1. 執行管道以[將變更部署到Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html)。
+1. 執行管道以[將變更部署到Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=zh-Hant)。

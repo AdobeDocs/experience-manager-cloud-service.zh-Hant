@@ -16,7 +16,7 @@ ht-degree: 6%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/drm.html?lang=en) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/drm.html?lang=zh-Hant) |
 | AEM as a Cloud Service  | 本文章 |
 
 數位資產通常與指定使用條款與時間的授權相關聯。 使用[!DNL Experience Manager]平台，您可以有效管理資產到期資訊和授權資訊。

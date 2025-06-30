@@ -16,7 +16,7 @@ ht-degree: 4%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/download-assets-from-aem.html?lang=en) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/download-assets-from-aem.html?lang=zh-Hant) |
 | AEM as a Cloud Service  | 本文章 |
 
 您可以下載資產，包括靜態和動態轉譯。 或者，您可以直接從[!DNL Adobe Experience Manager Assets]傳送包含資產連結的電子郵件。 下載的資產會整合在ZIP檔案中。<!-- The compressed ZIP file has a maximum file size of 1 GB for the export job. A maximum of 500 total assets per export job are allowed. -->
@@ -35,8 +35,8 @@ ht-degree: 4%
 
 * [Experience Manager使用者介面](#download-assets)
 * [資產共用公用](https://adobe-marketing-cloud.github.io/asset-share-commons/)
-* [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
-* [案頭應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
+* [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html?lang=zh-Hant)
+* [案頭應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=zh-Hant#download-assets)
 
 ## 使用[!DNL Experience Manager]介面下載資產 {#download-assets}
 
@@ -55,7 +55,7 @@ Experience Manager會根據資產數量和大小來最佳化下載體驗。 從�
 * 如果下載大小超過100 MB
 * 如果下載需要30秒以上的準備時間
 
-雖然非同步下載會在後端執行，但使用者可以繼續探索，並在Experience Manager中進一步工作。 除了Experience Manager收件匣通知之外，Experience Manager還可以傳送電子郵件以在下載程式完成時通知使用者。 若要啟用此功能，系統管理員可以透過[設定SMTP伺服器連線](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email)來設定電子郵件服務。
+雖然非同步下載會在後端執行，但使用者可以繼續探索，並在Experience Manager中進一步工作。 除了Experience Manager收件匣通知之外，Experience Manager還可以傳送電子郵件以在下載程式完成時通知使用者。 若要啟用此功能，系統管理員可以透過[設定SMTP伺服器連線](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=zh-Hant#sending-email)來設定電子郵件服務。
 
 設定電子郵件服務後，管理員和使用者可以從Experience Manager介面啟用電子郵件通知。
 
@@ -128,7 +128,7 @@ Experience Manager會根據資產數量和大小來最佳化下載體驗。 從�
 
 如果您不需要下載功能，請停用servlet以防止任何類似DoS的風險。 可透過更新Dispatcher設定以封鎖任何資產下載請求，在[!DNL Experience Manager]作者和發佈執行個體上停用`Asset Download Servlet`。 此servlet也可以直接透過OSGi主控台手動停用。
 
-1. 若要透過Dispatcher設定封鎖資產下載請求，請編輯`dispatcher.any`設定並新增規則到[篩選區段](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring)。
+1. 若要透過Dispatcher設定封鎖資產下載請求，請編輯`dispatcher.any`設定並新增規則到[篩選區段](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hant#configuring)。
 
    `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
 
@@ -139,7 +139,7 @@ Experience Manager會根據資產數量和大小來最佳化下載體驗。 從�
 1. 在Git中的專案程式碼中，於`/apps/system/config/com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter.cfg.json`建立設定檔。 檔案應包含`{}`作為其內容，表示對應OSGi元件的空OSGi設定。 此動作會啟用服務。
 1. 透過[!DNL Cloud Manager]部署您的程式碼，包括這個新的組態。
 1. 部署後，即可根據資產的開啟/關閉時間設定存取轉譯和中繼資料。 如果目前日期或時間落在開啟時間之前或關閉時間之後，則會顯示錯誤訊息。
-如需新增空白OSGi設定的詳細資訊，請參閱本[指南](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=en)。
+如需新增空白OSGi設定的詳細資訊，請參閱本[指南](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=zh-Hant)。
 
 ## 提示和限制 {#tips-limitations}
 
@@ -163,5 +163,5 @@ Experience Manager會根據資產數量和大小來最佳化下載體驗。 從�
 >[!MORELIKETHIS]
 >
 >* [下載DRM保護的資產](drm.md)
->* 在Win或Mac案頭上使用Experience Manager案頭應用程式[下載資產](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
->* [從支援的Adobe Assets應用程式中使用Adobe Creative Cloud Link下載資產](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html)
+>* 在Win或Mac案頭上使用Experience Manager案頭應用程式[下載資產](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=zh-Hant)
+>* [從支援的Adobe Assets應用程式中使用Adobe Creative Cloud Link下載資產](https://helpx.adobe.com/tw/enterprise/using/manage-assets-using-adobe-asset-link.html)

@@ -16,7 +16,7 @@ ht-degree: 16%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/watermarking.html) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/watermarking.html?lang=zh-Hant) |
 | AEM as a Cloud Service  | 本文章 |
 
 [!DNL Adobe Experience Manager Assets]可讓您新增數位浮水印至影像和視訊。 [!DNL Assets]支援將影像作為浮水印套用至其他影像檔案。 浮水印可協助使用者驗證資產的真實性和版權所有權。 此外，浮水印可用於表示檔案的狀態，如機密、草稿、有效性等。

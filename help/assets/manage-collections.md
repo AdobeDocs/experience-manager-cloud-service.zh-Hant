@@ -17,7 +17,7 @@ ht-degree: 19%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-collections.html?lang=en) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-collections.html?lang=zh-Hant) |
 | AEM as a Cloud Service  | 本文章 |
 
 集合是Adobe Experience Manager Assets中的一組資產。 使用集合在使用者之間共用資產。集合可以是靜態集合或基於搜尋結果的動態集合。

@@ -16,7 +16,7 @@ ht-degree: 9%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/bulk-approval.html?lang=en) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/bulk-approval.html?lang=zh-Hant) |
 | AEM as a Cloud Service  | 本文章 |
 
 使用Adobe Experience Manager Assets，您可以為資料夾或集合中的資產設定臨時稽核工作流程。 您可以與檢閱者或創意合作夥伴分享，以徵求他們的意見回饋。 您可以將稽核工作流程與專案建立關聯，或建立獨立的稽核任務。

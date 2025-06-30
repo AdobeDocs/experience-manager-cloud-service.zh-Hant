@@ -49,7 +49,7 @@ Dynamic Media影像預設集和智慧型裁切轉譯可促進符合品牌標準�
    * [影像預設集](/help/assets/dynamic-media/managing-image-presets.md)
 
   您可以[稍後切換檢視](/help/assets/assets-view-introduction.md#how-to-access-assets-view)以在Assets檢視中預覽動態轉譯。
-* 將資產發佈至Dynamic Media，以便在Assets檢視中使用Dynamic Media轉譯。 如需詳細資訊，請參閱[將Assets發佈到AEM和Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm)。
+* 將資產發佈至Dynamic Media，以便在Assets檢視中使用Dynamic Media轉譯。 如需詳細資訊，請參閱[將Assets發佈到AEM和Dynamic Media](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm)。
 
 
 ### 檢視和下載Dynamic Media轉譯 {#view-download-dm-renditions}

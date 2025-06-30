@@ -56,6 +56,6 @@ headers: {
     },
 ```
 
-若要叫用搜尋API，必須在`Authorization`詳細資料中定義IMS權杖。 IMS權杖是從技術帳戶中擷取。 請參閱[擷取AEM as a Cloud Service認證](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#fetch-the-aem-as-a-cloud-service-credentials)以建立新的技術帳戶。 請參閱[產生存取權杖](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#generating-the-access-token)以產生IMS權杖，並在搜尋資產API要求標頭中正確使用它。
+若要叫用搜尋API，必須在`Authorization`詳細資料中定義IMS權杖。 IMS權杖是從技術帳戶中擷取。 請參閱[擷取AEM as a Cloud Service認證](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=zh-Hant#fetch-the-aem-as-a-cloud-service-credentials)以建立新的技術帳戶。 請參閱[產生存取權杖](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=zh-Hant#generating-the-access-token)以產生IMS權杖，並在搜尋資產API要求標頭中正確使用它。
 
 若要檢視要求範例、回應範例和回應代碼，請參閱[搜尋Assets API](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search)。
