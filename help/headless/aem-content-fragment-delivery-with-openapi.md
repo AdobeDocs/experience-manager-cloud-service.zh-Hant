@@ -4,10 +4,10 @@ description: 瞭解如何使用OpenAPI進行tAEM內容片段傳送
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: b298db37-1033-4849-bc12-7db29fb77777
-source-git-commit: 1995c84bb669fd52ecd53c7e695acc518a5226e8
+source-git-commit: 28d0d6bdfd9e6f1c1483bed7c5e65df340e8b559
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 3%
+source-wordcount: '524'
+ht-degree: 2%
 
 ---
 
@@ -76,9 +76,11 @@ AEM與AEM CDN Fastly整合。 這表示會在Fastly層級快取發佈層級上�
 
 此API不會考慮在Dispatcher設定端定義(特別是為GraphQL定義)的CORS允許來源。
 
-<!-- 
-## API Rate Limits {#api-rate-limits}
--->
+## API速率限制 {#api-rate-limits}
+
+API允許新請求的速率每秒最多200個請求（每個環境）。
+
+一旦超過此限制，API就會開始傳送429錯誤。 這些錯誤必須由任何使用者端應用程式處理，且失敗的請求會在指數輪詢重試後重試。
 
 <!-- 
 ## Limitations {#limitations}
