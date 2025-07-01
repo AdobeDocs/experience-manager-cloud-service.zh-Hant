@@ -234,7 +234,7 @@ Content Hub預設不會顯示過期的資產。
 
 ### 轉譯 {#renditions-content-hub}
 
-轉譯是數位資產（例如影像、檔案等）的自訂版本，專為不同裝置和平台而設計，可確保最佳效能。 檢視更多有關Adobe Experience Manager Assets[&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions)中轉譯的資訊。
+轉譯是數位資產（例如影像、檔案等）的自訂版本，專為不同裝置和平台而設計，可確保最佳效能。 檢視更多有關Adobe Experience Manager Assets[&#128279;](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/assets-view/renditions)中轉譯的資訊。
 
 若要如此做，請執行以下步驟：
 
