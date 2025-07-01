@@ -18,7 +18,7 @@ ht-degree: 89%
 您可以使用以下方法上傳一個或更多資產，或包含資產的一個資料夾：
 
 * 在使用者介面上拖曳資產或資料夾，然後依照螢幕上的指示進行。
-* 按一下工具列中的「新增Assets ]**」選項，並將部分檔案新增至上傳對話方塊。**[!UICONTROL 
+* 按一下工具列中的「新增Assets **」選項，並將部分檔案新增至上傳對話方塊。**
 
 <!-- TBD: Update this GIF
 ![Asset and nested folder upload demo](assets/do-not-localize/upload-assets.gif) -->
