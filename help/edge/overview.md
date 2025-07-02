@@ -4,7 +4,7 @@ description: 了解 Edge Delivery Services 提供的效能和完善 Lighthouse �
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 role: Admin, Architect, Developer
-source-git-commit: 207926d68f42f5b398841b92c0a8c72a3f852292
+source-git-commit: 9829709a4558a2d0fd479c7c0fed979ee43937ea
 workflow-type: tm+mt
 source-wordcount: '963'
 ht-degree: 37%
@@ -53,7 +53,7 @@ Edge Delivery可讓每個開發人員取得100的Lighthouse分數。
 
 Edge Delivery Services 是一組可組合的服務，可讓您以高度靈活的方式在網站上製作內容。它以多雲端SaaS解決方案和純前端開發方法，取代AEM Publish/Dispatcher和使用AEM核心元件建立體驗的傳統方式。
 
-![Edge Delivery 架構](assets/AEM-with-EDS-architecture.png)
+![Edge Delivery 架構](assets/aem-with-eds-architecture.png)
 
 Edge Delivery Services 會使用 GitHub，可讓您直接從自己的 GitHub 存放庫管理和部署程式碼。新內容將立即加入，無需重建過程。
 
