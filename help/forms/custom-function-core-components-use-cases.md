@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: df92b91e-f3b0-4a08-bd40-e99edc9a50a5
-source-git-commit: 88b9686a1ceec6729d9657d4bb6f458d9c411065
+source-git-commit: 5b5b44f8dffc01a75eda464cd7759cf03028c2c6
 workflow-type: tm+mt
-source-wordcount: '2134'
+source-wordcount: '2184'
 ht-degree: 0%
 
 ---
@@ -259,7 +259,7 @@ ht-degree: 0%
 
 您也可以檢查主控台視窗，以檢視提交給伺服器的資料：
 
-在主控台視窗![Inspect資料](/help/forms/assets/custom-function-submit-data-console-data.png)
+![在主控台視窗檢查資料](/help/forms/assets/custom-function-submit-data-console-data.png)
 
 ## 覆寫表單提交成功和錯誤處理常式
 
@@ -513,10 +513,19 @@ function testRemoveInstance(globals)
 
 ![刪除面板](/help/forms/assets/custom-function-delete-panel.gif)
 
+## 已知問題
+
+* 自訂函式不支援JavaScript規則運算式常值。 在自訂函式中使用規則運算式常值會導致執行期間發生錯誤。 例如：
+  `const pattern = /^abc$/;`
+
+  若要確保相容性，請在自訂函式中使用RegExp建構函式。
+
+  `const pattern = new RegExp("^abc$");`
+重構規則運算式以使用RegExp建構函式，以確保一致且可靠的執行。
 
 ## 疑難排解
 
-* 如果自訂提交處理常式無法在現有AEM專案或表單中如預期般執行，請執行下列步驟：
+* 如果自訂提交處理常式無法在現有AEM專案或表單中按預期執行，請執行以下步驟：
    * 請確定[核心元件版本已更新至3.0.18和更新版本](https://github.com/adobe/aem-core-forms-components)。 不過，對於現有的AEM專案和表單，還有其他要遵循的步驟：
 
    * 對於AEM專案，使用者應使用`submitForm()`取代`submitForm('custom:submitSuccess', 'custom:submitError')`的所有執行個體，並透過Cloud Manager管道部署專案。
