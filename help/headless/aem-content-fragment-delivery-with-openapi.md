@@ -4,9 +4,9 @@ description: 瞭解如何使用OpenAPI進行tAEM內容片段傳送
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: b298db37-1033-4849-bc12-7db29fb77777
-source-git-commit: 28d0d6bdfd9e6f1c1483bed7c5e65df340e8b559
+source-git-commit: dd7d2b5553e4ecac7a9955e83da1cab077c74127
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '551'
 ht-degree: 2%
 
 ---
@@ -80,7 +80,7 @@ AEM與AEM CDN Fastly整合。 這表示會在Fastly層級快取發佈層級上�
 
 API允許新請求的速率每秒最多200個請求（每個環境）。
 
-一旦超過此限制，API就會開始傳送429錯誤。 這些錯誤必須由任何使用者端應用程式處理，且失敗的請求會在指數輪詢重試後重試。
+一旦超過此限制，API就會開始傳送[429錯誤](https://www.rfc-editor.org/rfc/rfc6585#section-4)回應。 這些錯誤必須由任何使用者端應用程式處理，且失敗的請求會在指數輪詢重試後重試。 HTTP回應附有特定標頭`Retry-After`，會向使用者端指出再次傳送要求之前需要等候多久。
 
 <!-- 
 ## Limitations {#limitations}
