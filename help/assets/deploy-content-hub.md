@@ -3,7 +3,7 @@ title: 部署 [!DNL Content Hub]
 description: 瞭解如何部署和啟用Content Hub，並為具有不同許可權型別的使用者(上傳資產、Adobe Express使用者)提供存取權，以及如何為使用者提供管理員許可權。
 role: Admin
 exl-id: 58194858-6e1c-460b-bab3-3496176b2851
-source-git-commit: 31c9e742d8bdf69c12788794670817864c9c027a
+source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
 workflow-type: tm+mt
 source-wordcount: '1572'
 ht-degree: 6%
@@ -85,11 +85,11 @@ Content Hub現已為Experience Manager Assets as a Cloud Service啟用。 在生
 >您最多可以與250名Content Hub使用者存取和使用Content Hub。 如果您有其他問題，請聯絡您的Adobe代表。
 
 
-若您為Experience Manager Assets的新手，請按一下[新增程式] **&#x200B;**，然後提供程式詳細資料（程式名稱，為生產設定），然後按一下[繼續] **&#x200B;**。 然後，您可以在&#x200B;**[!UICONTROL 解決方案和附加元件]**&#x200B;索引標籤中選取&#x200B;**[!UICONTROL Assets]**&#x200B;和&#x200B;**[!UICONTROL Content Hub]**。
+若您為Experience Manager Assets的新手，請按一下[新增程式] ****，然後提供程式詳細資料（程式名稱，為生產設定），然後按一下[繼續] ****。 然後，您可以在&#x200B;**[!UICONTROL 解決方案和附加元件]**&#x200B;索引標籤中選取&#x200B;**[!UICONTROL Assets]**&#x200B;和&#x200B;**[!UICONTROL Content Hub]**。
 
 ### Admin Console上的Content Hub執行個體和產品設定檔{#content-hub-instance-product-profile}
 
-使用Cloud Manager[&#128279;](#enable-content-hub)為Assets as a Cloud Service啟用Content Hub後，Admin Console上的AEM Assets as a Cloud Service內已建立新執行個體，尾碼為`delivery`：
+使用Cloud Manager](#enable-content-hub)為Assets as a Cloud Service啟用[Content Hub後，Admin Console上的AEM Assets as a Cloud Service內已建立新執行個體，尾碼為`delivery`：
 
 ![Content Hub的新執行個體](assets/new-instance-content-hub.png)
 
@@ -125,7 +125,7 @@ Content Hub現已為Experience Manager Assets as a Cloud Service啟用。 在生
    ![AEM as a Cloud Service的產品設定檔](assets/aem-cloud-service-instances.png)
 
    Admin Console會顯示AEM as a Cloud Service的兩個產品設定檔：管理員和使用者。
-1. 按一下管理員產品設定檔，然後按一下&#x200B;**[!UICONTROL 新增使用者]**&#x200B;以將使用者新增至產品設定檔。
+1. 按一下管理員產品設定檔，然後按一下&#x200B;**[!UICONTROL 新增使用者]**以將使用者新增至產品設定檔。
    ![管理員產品設定檔](assets/aem-cs-admin-product-profile.png)
 
 1. 按一下「**[!UICONTROL 儲存]**」以儲存變更。
@@ -183,7 +183,7 @@ Content Hub的存取方式如下：
    ![AEM as a Cloud Service的產品設定檔](assets/aem-cloud-service-instances.png)
 
    Admin Console會顯示AEM as a Cloud Service的兩個產品設定檔：管理員和使用者。
-1. 按一下[使用者]產品設定檔，然後按一下[新增使用者]&#x200B;**&#x200B;**，將使用者新增至產品設定檔。
+1. 按一下[使用者]產品設定檔，然後按一下[新增使用者]****，將使用者新增至產品設定檔。
    ![使用者產品設定檔](assets/aem-cs-user-product-profile.png)
 
 1. 按一下「**[!UICONTROL 儲存]**」以儲存變更。
@@ -200,7 +200,7 @@ Content Hub的存取方式如下：
    ![AEM as a Cloud Service的產品設定檔](assets/aem-cloud-service-instances.png)
 
    Admin Console會顯示AEM as a Cloud Service的兩個產品設定檔：管理員和使用者。
-1. 按一下[使用者]產品設定檔，然後按一下[新增使用者]&#x200B;**&#x200B;**，將使用者新增至產品設定檔。
+1. 按一下[使用者]產品設定檔，然後按一下[新增使用者]****，將使用者新增至產品設定檔。
    ![使用者產品設定檔](assets/aem-cs-user-product-profile.png)
 
 1. 按一下「**[!UICONTROL 儲存]**」以儲存變更。
@@ -217,7 +217,7 @@ Experience Manager Assets使用者可以在AEM as a Cloud Service上核准資產
    ![AEM as a Cloud Service的產品設定檔](assets/aem-cloud-service-instances.png)
 
    Admin Console會顯示AEM as a Cloud Service的兩個產品設定檔：管理員和使用者。
-1. 按一下[使用者]產品設定檔，然後按一下[新增使用者]&#x200B;**&#x200B;**，將使用者新增至產品設定檔。
+1. 按一下[使用者]產品設定檔，然後按一下[新增使用者]****，將使用者新增至產品設定檔。
    ![使用者產品設定檔](assets/aem-cs-user-product-profile.png)
 
 1. 按一下「**[!UICONTROL 儲存]**」以儲存變更。

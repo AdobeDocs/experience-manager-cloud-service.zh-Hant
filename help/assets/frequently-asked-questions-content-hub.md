@@ -2,10 +2,10 @@
 title: Content Hub 常見問題 (FAQ)
 description: 了解一些 Content Hub 最常見問題 (FAQ) 的答案。
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
-source-git-commit: 31c9e742d8bdf69c12788794670817864c9c027a
+source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
 workflow-type: tm+mt
 source-wordcount: '1293'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 98%
 
 ## 什麼是 Content Hub？ {#what-is-content-hub}
 
-Content Hub是Adobe Experience Manager Assets as a Cloud Service的一項功能。
+Content Hub 是 Adobe Experience Manager Assets as a Cloud Service 的一項功能。
 
 Content Hub 可讓更廣泛的團隊透過直覺的入口網站，輕鬆發現相關且經核准的資產，並快速根據需求加以調整。此外，Content Hub 提供了一種攝取機制，可讓使用者將資產上傳至 DAM 時，能夠輕鬆地自助進行。這直接滿足了組織對於加快內容建立速度的需求，同時保持品牌一致性，並遵守適當的保護措施。
 
@@ -84,7 +84,7 @@ Content Hub 目前尚不適用於非生產環境 (中繼和開發)。Assets Ulti
    >
    >在兩個 Admin Console 中都指派至 Express 和 Assets 產品設定檔的使用者必須具有相同的電子郵件地址，並使用&#x200B;**企業或學校**&#x200B;帳戶，而不是&#x200B;**個人**&#x200B;帳戶。理想的設定是將兩個 Admin Consoles 都設定為 **Federated ID**，並在它們之間建立信任關係，讓使用者擁有順暢的單一登入體驗。有些 Express 計劃 (例如 Express 團隊版) 不支援 Federated ID/單一登入。
 
-除了正確的產品權益外，Content Hub 中的 Adobe Express 整合還會要求被指派的使用者至少對支援 Content Hub 的 Assets 製作環境擁有「[!UICONTROL 可以編輯]」權限，並且至少在 **[!UICONTROL # /content/dam/hydrated-assets/]** 資料夾階層中擁有該權限，以便 Content Hub 使用者在其中儲存使用 Express 製作的內容。請參閱「管理員」檢視 (觸控式 UI) 中的[權限管理](/help/security/touch-ui-principal-view.md)或[「資產」檢視中簡化的權限管理](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions)。
+除了正確的產品權益外，Content Hub 中的 Adobe Express 整合還會要求被指派的使用者至少對支援 Content Hub 的 Assets 製作環境擁有「[!UICONTROL 可以編輯]」權限，並且至少在 **[#UICONTROL /content/dam/hydrated-assets/]** 資料夾階層中擁有該權限，以便 Content Hub 使用者在其中儲存使用 Express 製作的內容。請參閱「管理員」檢視 (觸控式 UI) 中的[權限管理](/help/security/touch-ui-principal-view.md)或[「資產」檢視中簡化的權限管理](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions)。
 
 ## 我可以設定 Content Hub，以便本組織的品牌指導方針在首頁上顯示為連結嗎？ {#content-hub-setup-brand-guidelines}
 
