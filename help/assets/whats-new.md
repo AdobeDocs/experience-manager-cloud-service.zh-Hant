@@ -3,10 +3,10 @@ title: Content Hub的新增功能
 description: 進一步瞭解最近推出的Content Hub功能
 role: User
 exl-id: 77a5c54c-bbc5-4dfb-9c3a-aa0620e836d0
-source-git-commit: a573f0deec4ca4e9502c2170b22b0dec68fc291e
+source-git-commit: 9d706fcaf0014ec5a719e52d37a563f222d760d0
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 73%
+source-wordcount: '459'
+ht-degree: 70%
 
 ---
 
@@ -50,7 +50,7 @@ Content Hub 作為 Experience Manager Assets as a Cloud Service 的一部分提�
 
 * 減少重複的數量，提高資產完整性。當相同的資產與不同的群組共用時，資料夾型權限需要進行重複。
 
-[!BADGE 進一步瞭解]{type=Informative url="https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/content-hub/attribute-based-access-control"}
+[!BADGE 深入瞭解此功能]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/attribute-based-access-control"}
 
 ## UI品牌 {#ui-branding}
 
@@ -58,7 +58,7 @@ Content Hub 作為 Experience Manager Assets as a Cloud Service 的一部分提�
 
 ![使用者介面品牌化](/help/assets/assets/content-hub-ui-branding.png)
 
-[!BADGE 進一步瞭解]{type=Informative url="https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/content-hub/configure-content-hub-ui-options#configure-branding-content-hub"}
+[!BADGE 深入瞭解此功能]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/configure-content-hub-ui-options#configure-branding-content-hub"}
 
 ## 公用連結共用 {#public-link-sharing}
 
@@ -66,7 +66,7 @@ Content Hub 現在支援產生可共用的連結，讓外部使用者無需應�
 
 ![使用者介面品牌化](/help/assets/assets/public-and-private-link.png)
 
-[!BADGE 進一步瞭解]{type=Informative url="https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/content-hub/share-assets-content-hub"}
+[!BADGE 深入瞭解此功能]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/share-assets-content-hub"}
 
 ## 集合治理 {#collections-governance}
 
@@ -74,7 +74,7 @@ Content Hub 現在支援產生可共用的連結，讓外部使用者無需應�
 
 >[!VIDEO](https://video.tv.adobe.com/v/3463336)
 
-[!BADGE 進一步瞭解]{type=Informative url="https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#create-collections"}
+[!BADGE 深入瞭解此功能]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#create-collections"}
 
 >[!NOTE]
 >
@@ -84,7 +84,7 @@ Content Hub 現在支援產生可共用的連結，讓外部使用者無需應�
 
 您現在還能透過 Content Hub，以 ZIP 檔案而非個別檔案的形式下載所選取之資產及其轉譯，簡化您檔案管理的過程。
 
-[!BADGE 進一步瞭解]{type=Informative url="https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}
+[!BADGE 深入瞭解此功能]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}
 
 ## Content Hub中的Dynamic Media轉譯 {#dynamic-media-renditions}
 
@@ -92,4 +92,4 @@ Content Hub 現在支援產生可共用的連結，讓外部使用者無需應�
 
 ![Dynamic Media 轉譯](/help/assets/assets/dm-renditions-content-hub.png)
 
-[!BADGE 進一步瞭解]{type=Informative url="https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}
+[!BADGE 深入瞭解此功能]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}
