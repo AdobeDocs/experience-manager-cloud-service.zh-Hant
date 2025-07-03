@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 source-git-commit: ad23b8328f155ac56b4163ce90f3f0818e7e76c9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1332'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 87%
 
 ## 發行日期 {#release-date}
 
-[!DNL Adobe Experience Manager]作為[!DNL Cloud Service]目前功能版本(2025.6.0)的發行日期是2025年6月26日。 下一個功能版本(2025.7.0)計畫於2025年7月31日發行。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 最新功能版本 (2025.6.0) 的發行日期為 2025 年 6 月 26 日。下一個功能版本 (2025.7.0) 預計於 2025 年 7 月 31 日發行。
 
 ## 維護版本發行說明 {#maintenance}
 
@@ -40,17 +40,17 @@ ht-degree: 87%
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440931?quality=12&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-在Assets檢視中&#x200B;**增強的中繼資料表單管理**
+**資產檢視中強化的後設資料表單管理**
 
-您現在可以從管理員檢視直接將中繼資料表單匯入Assets檢視。 在Assets檢視中對這些表單所做的任何更新都會自動反映在管理員檢視中，以確保兩個體驗的一致性。 此功能可支援無縫轉換至新的Assets檢視，同時保持與現有中繼資料設定的連續性。
+現在您可以將後設資料表單從管理檢視直接匯入資產檢視。在資產檢視中這些表單進行的任何更新皆會自動反映在管理檢視中，從而確保兩種體驗的一致性。此功能支援順暢轉換至新的資產檢視，同時保持與現有後設資料設定的連貫性。
 
-![AI 產生的中繼資料](/help/assets/assets/import-metadata-forms-page.png)
+![AI 產生的後設資料](/help/assets/assets/import-metadata-forms-page.png)
 
 ### 全新的 Content Hub 功能 {#new-features-content-hub}
 
@@ -104,7 +104,7 @@ OSGi 屬性：
 
 **Java 11 執行階段**&#x200B;現已棄用，且大多數環境已升級至效能更佳的 **Java 21 執行階段**。
 
-如果因為不受支援的相依性而無法升級您的環境（請參閱[Java 21執行階段需求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)），您應該已經收到來自Adobe的電子郵件，其中包含特定的後續步驟。 請確保在 **2025 年 8 月 28 日**&#x200B;前完成所有必要的更新，您的環境方能無中斷地進行升級。
+若您的環境因相依性不支援而無法升級 (請參閱 [Java 21 執行階段要求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements))，您應已收到一封 Adobe 傳送的電子郵件，其中包含具體的後續步驟。請確保在 **2025 年 8 月 28 日**&#x200B;前完成所有必要的更新，您的環境方能無中斷地進行升級。
 
 備註：執行階段版本與程式碼的建置版本兩者為各自獨立的。雖然我們建議使用 Java 21 進行建置，但目前仍然支援 Java 11 版本。未來會另行公告 Java 11 版本的棄用通知。
 
@@ -112,7 +112,7 @@ OSGi 屬性：
 
 如 4 月的發行說明中所述，AEM Java 記錄必須遵循標準格式，以確保在所有客戶環境中皆進行可靠的監視。不再支援自訂記錄設定 (例如變更記錄格式、輸出檔案或預設記錄等級)。記錄必須保持導向預設檔案，並且必須保留 AEM 產品程式碼的預設記錄等級。如需完整詳情，請參閱[記錄文章](/help/implementing/developing/introduction/logging.md#configuration-loggers)。
 
-自 **8 月下旬**&#x200B;開始，所有不支援的自訂記錄覆寫皆會被忽略。根據我們的分析，大部分客戶將不會受到影響，而Adobe已聯絡其目前設定可能受影響的客戶。
+自 **8 月下旬**&#x200B;開始，所有不支援的自訂記錄覆寫皆會被忽略。根據我們的分析，大多數客戶將不會受影響，而 Adobe 會直接聯絡其目前設定可能受影響的客戶。
 
 請審閱所有取決於自訂記錄行為的下游流程，並將其更新。例如：
 
@@ -123,7 +123,7 @@ OSGi 屬性：
 
 目前，內容版本和稽核日誌皆將其相關的&#x200B;*清除維護任務*&#x200B;預設為停用，因此除非明確地進行設定，否則不會移除任何資料。
 
-但是，為了最佳化存放庫效能，從&#x200B;**2025年7月初**&#x200B;開始，將依照以下准則預設啟用清除：
+不過，為了將存放庫的效能最佳化，自 **2025 年 7 月上旬**&#x200B;開始，會根據下列準則將清除預設為啟用：
 
 #### 內容版本 {#mt-content}
 
@@ -162,7 +162,7 @@ OSGi 屬性：
 * 授予內容存取權之前，透過身分識別提供者對使用者進行身分驗證
 * 根據地理位置、裝置類型或使用者屬性，將內容個人化
 * 做為 CDN 和您來源之間的中介軟體
-* 將來自協力廠商API的回應重新格式化（並可能彙總多個API回應），然後再傳送給瀏覽器
+* 將第三方 API 的回應傳送至瀏覽器之前，先對其進行重新格式化 (且可能彙總多個 API 的回應)
 * 使用從各個後端拼接的內容，在邊緣編寫並提供伺服器轉譯的 HTML
 
 我們針對正式生產網站提供數量有限的 AEM Publish Delivery 或 Edge Delivery Services 專案機會。若您有興趣參與，或想了解更多相關資訊，請傳送電子郵件至 [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com)，並簡要描述您的使用案例。

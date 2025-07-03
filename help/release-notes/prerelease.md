@@ -5,9 +5,9 @@ exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 feature: Release Information
 role: Admin
 source-git-commit: e6567c965a026967e7a5baa67050eb5615979531
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '893'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Adobe Experience Manager as a Cloud Service 定期提供新功能。特定功能
 
 通常會透過以下兩種方式之一發行即將推出的功能：
 
-* 做為Alpha、Beta或有限可用性計畫的一部分
+* 作為 Alpha、Beta 或限量開放計畫的一部分
 * 透過預發行通道使用
 
 本文件說明如何啟用預發行通道。使用者可以透過預發行通道存取早期功能，而這些功能將成為 AEM 未來的功能版本。您可以藉此驗證新功能，並在未來發行前做好採用該功能的規劃。請參閱文件 [Adobe Experience Manager (AEM) as a Cloud Service 發行說明](/help/release-notes/home.md)，了解 AEM 發行排程的詳細資訊。
@@ -152,7 +152,7 @@ Javadoc 會發佈到 Maven Central。
 > 
 > 部署到中繼或生產環境時，絕不能使用 `aem-prerelease-sdk-api` artifactId。透過生產管道部署時，請一律使用 `aem-sdk-api`。同樣地，參照發行前 API 的程式碼不應該透過生產管道進行部署。
 
-[AEM CS SDK Build Analyzer Maven 外掛程式 v1.0 及更高版本](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=zh-Hant#developing)將透過檢查相依性來偵測專案中是否使用了發行前 API。如果該分析器有找到，它將使用發行前 SDK API 來分析專案。
+[AEM CS SDK Build Analyzer Maven 外掛程式 v1.0 及更高版本](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html#developing)將透過檢查相依性來偵測專案中是否使用了發行前 API。如果該分析器有找到，它將使用發行前 SDK API 來分析專案。
 
 ## 考量事項 {#considerations}
 

@@ -5,9 +5,9 @@ exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 feature: Release Information
 role: Admin
 source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1715'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -15,17 +15,17 @@ ht-degree: 96%
 
 以下章節概述 [!DNL Workfront for Experience Manager enhanced connector] 版的一般發行說明。
 
-[!DNL Workfront for Experience Manager enhanced connector]的最新1.9.21版本的發行日期為2025年6月25日。
+[!DNL Workfront for Experience Manager enhanced connector] 的最新版本 1.9.21 發佈日期是 2025 年 6 月 25 日。
 
 ## 版本重點 {#release-highlights}
 
-[!DNL Workfront for Experience Manager enhanced connector]的最新版本包含下列增強功能和錯誤修正：
+[!DNL Workfront for Experience Manager enhanced connector] 的最新版本包括下列增強功能和錯誤修正：
 
-* 改善API要求記錄，避免驗證失敗的誤判記錄。
+* 已改善 API 請求記錄，以避免驗證失敗的誤報記錄。
 
-* 修正Workfront API呼叫的連線洩漏問題。
+* 已修正 Workfront API 呼叫的連線洩漏。
 
-* 支援適用於Java 17和Java 21版本的Workfront增強型聯結器與6.5 LTS。
+* 支援適用於 Java 17 和 Java 21 版本的 Workfront 增強型連接器 (隨附 6.5 LTS)。
 
 >[!NOTE]
 >
@@ -65,9 +65,9 @@ ht-degree: 96%
 
 ### 2024 年 1 月版 {#january-2024-release}
 
-* [!DNL CRX DE] 中的 [!DNL Workfront] 設定目前不儲存 `project ID`，導致套用唯讀權限時發生錯誤。詳細了解如何[設定權限](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html?lang=zh-Hant#linked-folders)。
+* [!DNL CRX DE] 中的 [!DNL Workfront] 設定目前不儲存 `project ID`，導致套用唯讀權限時發生錯誤。詳細了解如何[設定權限](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#linked-folders)。
 
-* 沒有關於如何將自訂屬性新增至開箱即用索引定義的公開文件。深入瞭解[新增自訂屬性](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html?lang=zh-Hant#metadata-schema-mapping)。
+* 沒有關於如何將自訂屬性新增至開箱即用索引定義的公開文件。深入瞭解[新增自訂屬性](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#metadata-schema-mapping)。
 
 * 刪除增強型連接器上的連線設定會明顯影響事件訂閱和其他已儲存的設定，導致它們指向舊 URL。
 
