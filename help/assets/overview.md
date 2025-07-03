@@ -6,7 +6,7 @@ feature: Asset Management
 role: User, Leader, Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
 source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '927'
 ht-degree: 100%
 
@@ -62,7 +62,7 @@ Edge Delivery 讓您能夠建立快速、引人入勝的網站，作者可以在
 
 ## 與 Adobe Journey Optimizer 整合 {#integration-with-ajo}
 
-[Adobe Journey Optimizer](https://business.adobe.com/products/journey-optimizer/adobe-journey-optimizer.html)：可為客戶簡化歷程管理，以為全通道行銷活動提供智慧型決策和見解。使用 Journey Optimizer 設計訊息時，您可以直接從 Journey Optimizer 介面存取 Assets as a Cloud Service 存放庫。使用者使用 Experience Manager Assets 的嵌入使用者介面存取資產。有關詳細資訊，請參閱[使用 Experience Manager Assets 建立和管理資產](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/assets-images/assets.html?lang=zh-Hant)。
+[Adobe Journey Optimizer](https://business.adobe.com/products/journey-optimizer/adobe-journey-optimizer.html)：可為客戶簡化歷程管理，以為全通道行銷活動提供智慧型決策和見解。使用 Journey Optimizer 設計訊息時，您可以直接從 Journey Optimizer 介面存取 Assets as a Cloud Service 存放庫。使用者使用 Experience Manager Assets 的嵌入使用者介面存取資產。有關詳細資訊，請參閱[使用 Experience Manager Assets 建立和管理資產](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/assets-images/assets.html)。
 
 ## 新資產功能 {#whats-new-assets}
 
