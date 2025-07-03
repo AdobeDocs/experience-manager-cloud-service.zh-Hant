@@ -2,7 +2,7 @@
 title: 設定 Content Hub 使用者介面
 description: 設定 Content Hub 使用者介面
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: a60b0e8ccba2680b0f053f3349adca21b65c3045
+source-git-commit: 4fb2ca8123dfd5a0d3244b9d5966cd8bb7eeaf09
 workflow-type: tm+mt
 source-wordcount: '2089'
 ht-degree: 9%
@@ -88,7 +88,7 @@ Experience Manager Assets 可讓管理員設定 Content Hub 使用者介面上�
 
 1. 按一下&#x200B;**[!UICONTROL 確認]**。 新的中繼資料會顯示在現有資產屬性清單中。
 
-1. 按一下[儲存]以套用變更。**&#x200B;**
+1. 按一下[儲存]以套用變更。****
 
 同樣地，您可以按一下每個可用屬性旁的![編輯圖示](assets/do-not-localize/edit_icon.svg)，以編輯標籤，在使用&#x200B;**[!UICONTROL 必要欄位]**&#x200B;切換上傳資產時，讓這些欄位成為使用者強制或非強制的欄位，或按一下「刪除」圖示以刪除任何中繼資料屬性。
 
@@ -96,10 +96,10 @@ Experience Manager Assets 可讓管理員設定 Content Hub 使用者介面上�
 
 完成所有修改以套用變更後，按一下&#x200B;**[!UICONTROL 儲存]**。
 
-在Content Hub上![設定UI上傳詳細資料](/help/assets/assets/import-content-hub.png)
+在Content Hub上![設定UI上傳詳細資料](/help/assets/assets/import-content-hub1.png)
 
 在設定使用者介面上啟用的中繼資料會顯示在資產上傳頁面上：
-在Content Hub上![上傳中繼資料](assets/add-assets-for-approval.png)
+在Content Hub上![上傳中繼資料](assets/add-assets-for-approval1.png)
 
 ### 篩選條件 {#configure-filters-content-hub}
 
@@ -119,11 +119,10 @@ Content Hub可讓管理員設定在搜尋資產時顯示的篩選器。 執行�
    >只有在存放庫中至少有一個資產符合篩選條件時，新篩選器才會顯示在「搜尋」頁面上。
 
 同樣地，您可以按一下每個可用篩選器旁的![編輯圖示](assets/do-not-localize/edit_icon.svg)來編輯標籤，或按一下刪除圖示來刪除任何現有的篩選器。 完成所有修改以套用變更後，按一下&#x200B;**[!UICONTROL 儲存]**。
-在Content Hub![&#128279;](assets/configuration-filter.png)上設定使用者介面篩選器
+在Content Hub![上設定](assets/configuration-filter1.png)使用者介面篩選器
 
 在「組態使用者介面」上啟用的篩選器會顯示在「搜尋」頁面上：
-在Content Hub上![搜尋](assets/content-hub-filters.png)
-
+在Content Hub上![搜尋](assets/content-hub-filters1.png)
 
 ### 資產詳細資料 {#configure-asset-details-content-hub}
 
@@ -136,7 +135,7 @@ Content Hub可讓管理員設定在搜尋資產時顯示的篩選器。 執行�
 1. 指定屬性的標籤，使用&#x200B;**[!UICONTROL 中繼資料]**&#x200B;欄位將其對應到屬性，然後選取新資產中繼資料的輸入型別。
 1. 按一下&#x200B;**[!UICONTROL 確認]**。 新的中繼資料會顯示在現有資產屬性清單中。
 
-1. 按一下[儲存]&#x200B;**[!UICONTROL 以套用變更，讓新屬性顯示在資產詳細資訊頁面上。]**
+1. 按一下[儲存]**[!UICONTROL 以套用變更，讓新屬性顯示在資產詳細資訊頁面上。]**
 
 同樣地，您可以按一下每個可用屬性旁的![編輯圖示](assets/do-not-localize/edit_icon.svg)來編輯標籤，或按一下刪除圖示來刪除任何現有的資產詳細資訊。 完成所有修改以套用變更後，按一下&#x200B;**[!UICONTROL 儲存]**。
 
@@ -144,19 +143,19 @@ Content Hub可讓管理員設定在搜尋資產時顯示的篩選器。 執行�
 
 「組態使用者介面」上啟用的特性會顯示在「資產詳細資訊」頁面上：
 
-在Content Hub上![資產屬性](assets/asset-details-page-content-hub.png)
+在Content Hub上![資產屬性](assets/asset-details-page-content-hub1.png)
 
 ### 資產卡 {#asset-card}
 
-您也可以設定需要顯示在&#x200B;**資產卡**&#x200B;上的金鑰中繼資料屬性，最多可顯示6個欄位。
+您也可以設定需要顯示在&#x200B;**資產卡**上的金鑰中繼資料屬性，最多可顯示6個欄位。
 資產卡上的![金鑰中繼資料](/help/assets/assets/asset-card-metadata.png)
-執行以下步驟來設定中繼資料屬性，以在&#x200B;**[!UICONTROL 資產卡]**&#x200B;上顯示：
+執行以下步驟來設定中繼資料屬性，以在**[!UICONTROL 資產卡]**&#x200B;上顯示：
 
 1. 在[組態](#access-configuration-options-content-hub)使用者介面上，按一下&#x200B;**資產卡**。
 2. 按一下&#x200B;**新增中繼資料**。 **新增資產卡中繼資料**&#x200B;對話方塊隨即顯示。
 3. 在&#x200B;**標籤**&#x200B;欄位中指定中繼資料名稱，並在&#x200B;**中繼資料**&#x200B;欄位中選取中繼資料屬性。
-4. 按一下&#x200B;**確認**，然後按一下&#x200B;**儲存**&#x200B;以套用變更，讓新屬性顯示在資產詳細資訊頁面上。
-   ![資產卡](/help/assets/assets/configuration-asset-card.png)
+4. 按一下&#x200B;**確認**，然後按一下&#x200B;**儲存**以套用變更，讓新屬性顯示在資產詳細資訊頁面上。
+   ![資產卡](/help/assets/assets/configuration-asset-card1.png)
 同樣地，按一下每個可用屬性旁邊可用的![編輯](/help/assets/assets/edit-content-hub.svg)，以進行任何必要的修改，或按一下![刪除](/help/assets/assets/delete-content-hub.svg)，刪除任何現有的中繼資料屬性。 完成所有修改以套用變更後，按一下&#x200B;**儲存**。
 
 ### 搜尋 {#configure-metadata-search-content-hub}
@@ -167,7 +166,7 @@ Content Hub可讓管理員設定在搜尋資產時顯示的篩選器。 執行�
 
 1. 指定中繼資料欄位並按一下&#x200B;**[!UICONTROL 確認]**。
 
-1. 按一下[儲存]&#x200B;**[!UICONTROL 以套用變更，讓新的中繼資料屬性顯示在中繼資料欄位清單中。]**
+1. 按一下[儲存]**[!UICONTROL 以套用變更，讓新的中繼資料屬性顯示在中繼資料欄位清單中。]**
 
 同樣地，您可以按一下每個可用中繼資料屬性旁的![編輯圖示](assets/do-not-localize/edit_icon.svg)來編輯屬性，或按一下刪除圖示來刪除任何現有的屬性。 完成所有修改以套用變更後，按一下&#x200B;**[!UICONTROL 儲存]**。
 在Content Hub上![設定UI搜尋](assets/configuration-search.png)
@@ -190,18 +189,18 @@ Content Hub可讓管理員設定在搜尋資產時顯示的篩選器。 執行�
 
 1. 按一下![選取影像](/help/assets/assets/Browse.svg) **[!UICONTROL 從相簿選取]**&#x200B;以使用資產選取器對話方塊選取橫幅影像。 資產選擇器只會顯示核准的影像。
 1. 選取影像，按一下&#x200B;**[!UICONTROL 選取]**，然後按一下&#x200B;**[!UICONTROL 儲存]**，將其顯示為[!DNL Content Hub]部署的橫幅影像。
-   ![橫幅影像](/help/assets/assets/banner-image-content-hub.png)
+   ![橫幅影像](/help/assets/assets/banner-image-content-hub1.png)
 
 #### 新增標題和內文至橫幅並變更文字顏色{#Add-title-and-body-text-to-your-banner-and-change-the-text-color}
 
-在![品牌](/help/assets/assets/ColorPalette.svg) **[!UICONTROL 品牌]**&#x200B;頁面上，使用&#x200B;**[!UICONTROL 橫幅]**&#x200B;區段中的個別欄位，將標題與內文新增至橫幅。
-按一下&#x200B;**[!UICONTROL 橫幅文字色彩]**&#x200B;旁的方塊，從檢色器選取橫幅文字的文字色彩，或在檢色器方塊旁的欄位中指定色彩的十六進位代碼。
+在![品牌](/help/assets/assets/ColorPalette.svg) **[!UICONTROL 品牌]**&#x200B;頁面上，使用&#x200B;**[!UICONTROL 橫幅]**區段中的個別欄位，將標題與內文新增至橫幅。
+按一下**[!UICONTROL 橫幅文字色彩]**旁的方塊，從檢色器選取橫幅文字的文字色彩，或在檢色器方塊旁的欄位中指定色彩的十六進位代碼。
 ![橫幅文字內容中心](/help/assets/assets/banner-text-content-hub.png)
 
 #### 變更主要和次要顏色{#Change-the-primary-and-secondary-color}
 
 在![品牌](/help/assets/assets/ColorPalette.svg) **[!UICONTROL 品牌]**&#x200B;頁面上，使用&#x200B;**[!UICONTROL 顏色]**&#x200B;區段來設定主要和次要顏色，方法為使用檢色器選取顏色，或定義顏色的十六進位代碼。 這些顏色會設定UI元素的背景、文字和圖示顏色，以使[!DNL Content Hub] UI與品牌主題一致。
-![主要和次要色彩](/help/assets/assets/primary-secondary-color-content-hub.png)
+![主要和次要色彩](/help/assets/assets/primary-secondary-color-content-hub1.png)
 **[!UICONTROL 主要色彩]：**&#x200B;主要色彩配置會套用至選取動作、互動式元素（例如核取方塊、搜尋列），以及跨[!DNL Content Hub]切換開關，包括[!DNL Content Hub]首頁和[!UICONTROL 組態]頁面。 它也適用於主要[!DNL Content Hub]介面上可用的動作選項，例如&#x200B;**[!UICONTROL 所有Assets]**&#x200B;和&#x200B;**[!UICONTROL 集合]**&#x200B;頁面上可用的選項。
 
 **[!UICONTROL 次要色彩]：**&#x200B;在[!DNL Content Hub]首頁上，次要色彩配置會套用至對話方塊中可用的UI選項和輸入欄位。 它適用於[!UICONTROL 組態]頁面上可用的所有組態功能表選項，但選取動作、核取方塊、搜尋列和切換開關除外。
@@ -220,9 +219,9 @@ Content Hub預設不會顯示過期的資產。
 
 1. 啟用資產可見性後，您可以使用&#x200B;**[!UICONTROL 允許使用者下載過期的資產]**&#x200B;切換來啟用或停用下載過期的資產的功能。
 1. 啟用&#x200B;**[!UICONTROL 允許使用者檢視核准傳送的資產]**&#x200B;切換功能，在Content Hub中顯示所有核准傳送的資產。
-1. 按一下[儲存]以套用變更。**&#x200B;**
+1. 按一下[儲存]以套用變更。****
 
-   ![Content Hub 上的過期資產](assets/asset-visibility-content-hub.png)
+   ![Content Hub 上的過期資產](assets/asset-visibility-content-hub1.png)
 
 啟用資產的可見度後，您可以在Content Hub上檢視過期的資產，如下圖所示：
 
@@ -234,7 +233,7 @@ Content Hub預設不會顯示過期的資產。
 
 ### 轉譯 {#renditions-content-hub}
 
-轉譯是數位資產（例如影像、檔案等）的自訂版本，專為不同裝置和平台而設計，可確保最佳效能。 檢視更多有關Adobe Experience Manager Assets[&#128279;](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/assets-view/renditions)中轉譯的資訊。
+轉譯是數位資產（例如影像、檔案等）的自訂版本，專為不同裝置和平台而設計，可確保最佳效能。 檢視更多有關Adobe Experience Manager Assets[中](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions)轉譯的資訊。
 
 若要如此做，請執行以下步驟：
 
@@ -244,7 +243,7 @@ Content Hub預設不會顯示過期的資產。
 
 * 啟用或停用&#x200B;**[!UICONTROL 允許使用者下載原始資產]**&#x200B;切換功能，以控制下載原始資產的可用性。
 
-  ![在Content Hub上設定轉譯](assets/configuration-renditions.png)
+  ![在Content Hub上設定轉譯](assets/configuration-renditions1.png)
 
 如需如何在Content Hub中檢視及下載轉譯的詳細資訊，請參閱[在Content Hub中下載資產](/help/assets/download-assets-content-hub.md)。
 
@@ -260,10 +259,10 @@ Content Hub預設不會顯示過期的資產。
 
 1. 按一下&#x200B;**[!UICONTROL 確認]**。
 
-1. 按一下[儲存]以套用變更。**&#x200B;**
+1. 按一下[儲存]以套用變更。****
 
 同樣地，您可以按一下每個URL旁邊的![編輯圖示](assets/do-not-localize/edit_icon.svg)來編輯連結，或按一下刪除圖示來刪除任何現有的URL。 完成所有修改以套用變更後，按一下&#x200B;**[!UICONTROL 儲存]**。
-在Content Hub上![設定UI自訂連結](assets/configuration-custom-links.png)
+在Content Hub上![設定UI自訂連結](assets/configuration-custom-links1.png)
 
 自訂連結在Content Hub首頁的「深入分析」標籤旁邊會顯示為新標籤。
 ![Content Hub上的設定UI自訂連結標籤](assets/configuration-ui-custom-link-tab.png)
@@ -280,9 +279,9 @@ Content Hub預設不會顯示過期的資產。
 
 1. 啟用&#x200B;**[!UICONTROL 公用集合]**&#x200B;切換以允許所有人存取及編輯集合。 如果&#x200B;**[!UICONTROL 僅檢視集合]**&#x200B;與&#x200B;**[!UICONTROL 公用集合]**&#x200B;切換已停用，則非管理員使用者預設只能建立私人集合。
 
-1. 按一下[儲存]以套用變更。**&#x200B;**
+1. 按一下[儲存]以套用變更。****
 
-   Content Hub上的![設定集合索引標籤](assets/collections-and-sharing.png)
+   Content Hub上的![設定集合索引標籤](assets/collections-and-sharing1.png)
 
 <!--
 ### Enable public link sharing {#enable-public-link-sharing}
