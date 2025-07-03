@@ -30,7 +30,7 @@ Classic CIF 及其相依性已不再可用。依賴此CIF版本（使用`com.ado
 
 ## 專案結構
 
-瞭解[AEM專案結構](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)和AEM as a Cloud Service的特性。 將您的專案設定調整為AEM as a Cloud Service版面。
+瞭解[AEM專案結構](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=zh-Hant)和AEM as a Cloud Service的特性。 將您的專案設定調整為AEM as a Cloud Service版面。
 與AEM 6.5部署相比，以下有兩個主要差異：
 
 * GraphQL使用者端OSGI套件&#x200B;**不得再包含在AEM專案中**，它是透過CIF附加元件部署的

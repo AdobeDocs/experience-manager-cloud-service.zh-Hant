@@ -26,9 +26,9 @@ ht-degree: 1%
 
 ## 設定 {#configuration}
 
-產品目錄必須在AEM中設定。 如需詳細資訊，請參閱[設定存放區和目錄](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html#catalog)。
+產品目錄必須在AEM中設定。 如需詳細資訊，請參閱[設定存放區和目錄](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html?lang=zh-Hant#catalog)。
 
-啟用分階段目錄功能需要驗證。 如需詳細資訊，請參閱[快速入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html)。
+啟用分階段目錄功能需要驗證。 如需詳細資訊，請參閱[快速入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html?lang=zh-Hant)。
 
 >[!NOTE]
 >

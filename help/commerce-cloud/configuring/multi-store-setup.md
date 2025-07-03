@@ -35,7 +35,7 @@ Adobe Experience Manager (AEM) CIF核心元件可用於多個AEM網站結構，�
 
 ## 設定 {#configuration}
 
-1. 根據[Adobe Commerce網站、商店和檢視](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)中所述的模式，設定多個商店和商店檢視
+1. 根據[Adobe Commerce網站、商店和檢視](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=zh-Hant)中所述的模式，設定多個商店和商店檢視
 
 2. 請確定AEM與Adobe Commerce之間的連線正常運作。
 
@@ -61,7 +61,7 @@ Adobe Experience Manager (AEM) CIF核心元件可用於多個AEM網站結構，�
 
 ## 其他資源
 
-* [Adobe Commerce網站、商店和檢視](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)
+* [Adobe Commerce網站、商店和檢視](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=zh-Hant)
 * [AEM CIF核心元件 — 多存放區/網站組態](https://github.com/adobe/aem-core-cif-components#multi-store--site-configuration)
-* [使用多網站管理員](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
+* [使用多網站管理員](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html?lang=zh-Hant)
 * [重複使用內容：多網站管理員和 Live Copy](/help/sites-cloud/administering/msm/overview.md)

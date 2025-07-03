@@ -28,7 +28,7 @@ ht-degree: 10%
 
 >[!NOTE]
 >
->此功能僅適用於Adobe Commerce或Cloud Edition，以及支援權杖式驗證的協力廠商聯結器。 如需詳細資訊，請參閱[快速入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html)。
+>此功能僅適用於Adobe Commerce或Cloud Edition，以及支援權杖式驗證的協力廠商聯結器。 如需詳細資訊，請參閱[快速入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html?lang=zh-Hant)。
 
 首先，讓我們瞭解作者如何使用CIF存取分階段產品資料。
 

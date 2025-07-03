@@ -21,9 +21,9 @@ ht-degree: 6%
 
 以AEM (CIF)為基礎，針對AEM as a Cloud Service開發Commerce integration framework Commerce專案，會遵循與AEM as a Cloud Service上其他AEM專案相同的規則和最佳作法。 請先檢閱下列內容：
 
-- [AEM 專案結構](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html)
-- [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html)
-- [AEM as a Cloud Service 開發方針](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html)
+- [AEM 專案結構](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html?lang=zh-Hant)
+- [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=zh-Hant)
+- [AEM as a Cloud Service 開發方針](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=zh-Hant)
 
 ## 使用AEM as a Cloud Service SDK進行本機開發 {#local}
 
@@ -33,13 +33,13 @@ ht-degree: 6%
 
 CIF附加元件以Sling功能封存的形式提供。 軟體發佈入口網站上的zip檔案包含兩個Sling功能封存檔案，一個用於AEM作者，另一個用於AEM發佈執行個體。
 
-**AEM as a Cloud Service 的新手嗎？**&#x200B;檢視[使用AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)設定本機開發環境的詳細指南。
+**AEM as a Cloud Service 的新手嗎？**&#x200B;檢視[使用AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=zh-Hant)設定本機開發環境的詳細指南。
 
 ### 必要的軟體
 
 下列專案應在本機安裝：
 
-- [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk)
+- [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=zh-Hant#download-the-aem-as-a-cloud-service-sdk)
 - [Java™ 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 - [Apache Maven](https://maven.apache.org/) (3.3.9 或更新版本)
 - [Node.js v10+](https://nodejs.org/en)
@@ -86,7 +86,7 @@ CIF附加元件以Sling功能封存的形式提供。 軟體發佈入口網站�
 
    AEM使用此變數來連線至您的商務系統。 此外，CIF附加元件包含本機反向Proxy，可讓Commerce GraphQL端點在本機可用。 此Proxy可供CIF編寫工具（產品主控台和選擇器）以及進行直接GraphQL呼叫的CIF使用者端元件使用。
 
-   此外，亦必須針對AEM as a Cloud Service環境設定此變數。 如需變數的詳細資訊，請參閱[為AEM as a Cloud Service設定OSGi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#local-development)。
+   此外，亦必須針對AEM as a Cloud Service環境設定此變數。 如需變數的詳細資訊，請參閱[為AEM as a Cloud Service設定OSGi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=zh-Hant#local-development)。
 
 1. （選用）若要啟用分階段目錄功能，您必須為Adobe Commerce執行個體建立整合權杖。 請依照[快速入門](./getting-started.md#staging)中的步驟來建立權杖。
 
@@ -96,7 +96,7 @@ CIF附加元件以Sling功能封存的形式提供。 軟體發佈入口網站�
    Authorization: Bearer <Access Token>
    ```
 
-   如需秘密的詳細資訊，請參閱[為AEM as a Cloud Service設定OSGi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#local-development)。
+   如需秘密的詳細資訊，請參閱[為AEM as a Cloud Service設定OSGi](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=zh-Hant#local-development)。
 
 1. 啟動AEM as a Cloud Service SDK
 

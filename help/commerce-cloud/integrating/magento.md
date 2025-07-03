@@ -55,5 +55,5 @@ CIF支援伺服器端和使用者端通訊模式。
 
 ## 搜尋 {#search}
 
-CIF提供現成可用的[搜尋核心元件](https://www.aemcomponents.dev/content/core-components-examples/library/commerce/search.html)，此元件是根據[Commerce GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/)在伺服器端轉譯的搜尋體驗。 Commerce客戶可以選擇改用[即時搜尋](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html?lang=en)。 請依照此[連結](/help/commerce-cloud/integrating/live-search-plp.md)瞭解更多有關CIF - Live Search整合的資訊。
+CIF提供現成可用的[搜尋核心元件](https://www.aemcomponents.dev/content/core-components-examples/library/commerce/search.html)，此元件是根據[Commerce GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/)在伺服器端轉譯的搜尋體驗。 Commerce客戶可以選擇改用[即時搜尋](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html?lang=zh-Hant)。 請依照此[連結](/help/commerce-cloud/integrating/live-search-plp.md)瞭解更多有關CIF - Live Search整合的資訊。
 
