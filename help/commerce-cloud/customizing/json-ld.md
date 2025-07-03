@@ -1,17 +1,18 @@
 ---
-title: JSON-LD中繼資料
+title: JSON-LD 中繼資料
 description: 瞭解如何在AEM CIF中啟用及驗證JSON+LD功能。
 feature: Commerce Integration Framework
 role: Admin, Developer
 exl-id: 547d3721-e094-4a42-8a7c-27e4ef97ea9c
-source-git-commit: 6ee09ab274e26f6972a81e662b78030a71b3fc9b
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '451'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
-# JSON-LD中繼資料 {#json-ld}
+# JSON-LD 中繼資料 {#json-ld}
 
 本指南說明如何在AEM CIF中啟用及驗證JSON+LD功能。
 
@@ -21,9 +22,9 @@ ht-degree: 2%
 
 ## 在CIF設定中啟用JSON+LD {#enabling}
 
-依預設，**啟用JSON+LD**&#x200B;核取方塊在CIF設定中不可見。 若要啟用此功能，專案必須包含必要的OSGi設定，以便顯示核取方塊。 此設定可讓使用者切換產品頁面上的JSON+LD指令碼支援。
-若要讓&#x200B;**啟用JSON+LD**&#x200B;核取方塊可在CIF設定中使用，請將下列OSGi設定新增至您的專案： &grave;
-com.adobe.cq.cif.components.models.JsonLdFeatureEnable&grave;。
+依預設，**啟用JSON+LD**核取方塊在CIF設定中不可見。 若要啟用此功能，專案必須包含必要的OSGi設定，以便顯示核取方塊。 此設定可讓使用者切換產品頁面上的JSON+LD指令碼支援。
+若要讓**啟用JSON+LD**&#x200B;核取方塊可在CIF設定中使用，請將下列OSGi設定新增至您的專案： `
+com.adobe.cq.cif.components.models.JsonLdFeatureEnable`。
 如需新增此設定的詳細資訊，請參閱公用aem-cif-guides-venia存放庫中的[新增Json-Ld](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.cif.components.models.JsonLdFeatureEnable.cfg.json)的設定。
 
 新增及部署此設定後，CIF設定中就會顯示核取方塊，以下是啟用&#x200B;**JSON+LD**&#x200B;的步驟：

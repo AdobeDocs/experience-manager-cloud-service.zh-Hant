@@ -4,7 +4,8 @@ description: 瞭解如何使用產品駕駛艙，提供連結產品目錄和相�
 exl-id: 6dbf039c-e040-48f1-88f3-ebbd70cdf94d
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 1%
@@ -25,9 +26,9 @@ ht-degree: 1%
 
 ## 設定 {#configuration}
 
-產品目錄必須在AEM中設定。 如需詳細資訊，請參閱[設定存放區和目錄](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html?lang=zh-Hant#catalog)。
+產品目錄必須在AEM中設定。 如需詳細資訊，請參閱[設定存放區和目錄](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html#catalog)。
 
-啟用分階段目錄功能需要驗證。 如需詳細資訊，請參閱[快速入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html?lang=zh-Hant)。
+啟用分階段目錄功能需要驗證。 如需詳細資訊，請參閱[快速入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html)。
 
 >[!NOTE]
 >
@@ -55,7 +56,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->AEM中的產品目錄資料是指透過設定的商務端點即時擷取的資料。 AEM中未儲存任何產品目錄資料。
+>AEM中的產品目錄資料是透過設定的商務端點即時擷取的資料。 AEM中未儲存任何產品目錄資料。
 
 ## 搜尋產品目錄 {#searching-product-catalog}
 
@@ -81,6 +82,6 @@ ht-degree: 1%
 
 ### AEM內容標籤 {#content-tabs}
 
-這些按AEM內容型別(體驗片段、內容片段、關聯的Assets)分組的標籤會顯示與商務物件關聯的AEM內容。 「檢視詳細資料」動作會開啟新的瀏覽器索引標籤，其中包含選取的內容。
+這些按AEM內容型別(體驗片段、內容片段、相關Assets)分組的標籤會顯示與商業物件相關的AEM內容。 「檢視詳細資料」動作會開啟新的瀏覽器索引標籤，其中包含選取的內容。
 
 ![內容屬性](../assets/content-properties.png)

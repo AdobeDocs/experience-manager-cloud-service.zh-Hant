@@ -1,10 +1,11 @@
 ---
-title: CIF 製作快速入門
+title: CIF 編寫快速入門
 description: CIF製作快速入門。
 exl-id: 0bef4d8c-0ad3-4ec8-ab08-8c83203b3b68
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '781'
 ht-degree: 2%
@@ -13,23 +14,23 @@ ht-degree: 2%
 
 # AEM CIF製作快速入門 {#getting-started}
 
-深入瞭解Adobe Experience Manager (AEM) CIF Authoring。
+進一步瞭解Adobe Experience Manager (AEM) CIF Authoring。
 
 ## 目前進度 {#story-so-far}
 
-在此AEM內容和Commerce歷程的上一個檔案[瞭解AEM內容和Commerce](/help/commerce-cloud/introduction.md)中，您已瞭解Headless CMS的基本理論和概念以及AEM內容和Commerce。
+在此AEM內容和Commerce歷程的上一個檔案[瞭解AEM內容和Commerce](/help/commerce-cloud/introduction.md)中，您已瞭解Headless CMS的基本理論和概念，以及AEM內容和Commerce。
 
 本文基於這些基礎之上。
 
 ## 目標 {#objective}
 
-本檔案可協助您瞭解如何使用CIF進行內容及Commerce特定撰寫。 閱讀文件後，您應該：
+本檔案可協助您瞭解如何使用CIF進行內容及Commerce特定撰寫。 閱讀文件後，您應該會：
 
-* 瞭解在AEM中使用頁面編輯器進行CIF編寫的概念
+* 瞭解使用AEM中的頁面編輯器進行CIF撰寫的概念
 * 如何使用產品和類別選擇器存取AEM中的產品目錄資料
 * 如何使用產品駕駛艙和AEM Omnisearch存取內容和商務資料
 
-## AEM頁面編輯器中的CIF編寫 {#cif-authoring}
+## 在AEM頁面編輯器中編寫CIF {#cif-authoring}
 
 CIF擴充AEM中的頁面編輯器，提供存取即時產品資料的功能，而不需離開內容：
 
@@ -81,19 +82,19 @@ CIF擴充AEM中的頁面編輯器，提供存取即時產品資料的功能，�
 您可以按一下屬性圖示來開啟產品屬性。 將滑鼠游標停留在產品圖磚上會顯示圖示。
 ![駕駛艙產品屬性](assets/cockpit-properties.png)
 
-所有產品屬性都是唯讀的，因為資料會從連線的後端即時載入。 變更產品屬性必須在後端系統（記錄系統）中完成。 標籤&#x200B;**Variants**&#x200B;只有在產品有變化時才出現。 按一下標籤會顯示所有變數及其屬性。
+所有產品屬性都是唯讀的，因為資料會從連線的後端即時載入。 變更產品屬性必須在後端系統（記錄系統）中完成。 標籤&#x200B;**Variants**只有在產品有變化時才出現。 按一下標籤會顯示所有變數及其屬性。
 ![駕駛艙產品變體](assets/cockpit-properties-variants.png)
 
 其餘索引標籤會顯示與產品相關聯的所有AEM內容。 這些標籤將在下一個模組中討論。
 
 ## AEM Omnisearch {#omnisearch}
 
-使用Omnisearch是一種透過全文檢索搜尋AEM內容的簡單方法。 CIF延伸了Omnisearch，以全文搜尋產品目錄及其相關聯的AEM內容。
+使用Omnisearch是一種透過全文檢索搜尋AEM內容的簡單方法。 CIF延伸了Omnisearch，全文搜尋產品目錄及其相關聯的AEM內容。
 ![商務功能表專案](assets/omnisearch.png)
 
 Omnisearch會在商務後端執行全文檢索搜尋，以尋找所有相關產品。 結果列在&#x200B;**檢視所有產品**&#x200B;下。 Omnisearch也會搜尋AEM中與搜尋到的產品相關聯的內容。 結果會列在個別AEM類別下。 在此範例中，一個內容片段與產品相關。
 
-## 下一步 {#what-is-next}
+## 後續步驟 {#what-is-next}
 
 現在您已完成歷程的這一部分，您應該：
 

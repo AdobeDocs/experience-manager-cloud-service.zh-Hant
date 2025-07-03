@@ -1,10 +1,11 @@
 ---
-title: 移轉至AEMCommerce integration framework(CIF)附加元件
-description: 如何從舊版移轉至AEMCommerce integration framework(CIF)附加元件
+title: 移轉至AEM Commerce integration framework (CIF)附加元件
+description: 如何從舊版移轉至AEM Commerce integration framework (CIF)附加元件
 exl-id: 0db03a05-f527-4853-b52f-f113bce929cf
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '470'
 ht-degree: 20%
@@ -17,9 +18,9 @@ ht-degree: 20%
 
 ## CIF附加元件
 
-在Experience Manageras a Cloud Service中，CIF附加元件是Adobe Commerce和協力廠商商務解決方案唯一支援的商務整合解決方案。 Experience Manager as a Cloud Service 上會自動部署 CIF 附加元件，客戶不需手動部署。請參閱 [AEM Commerce as a Cloud Service 快速入門](getting-started.md)。
+對於Experience Manager as a Cloud Service，CIF附加元件是Adobe Commerce和協力廠商商務解決方案唯一支援的商務整合解決方案。 Experience Manager as a Cloud Service 上會自動部署 CIF 附加元件，客戶不需手動部署。請參閱 [AEM Commerce as a Cloud Service 快速入門](getting-started.md)。
 
-若要支援部署CIFAdobe的專案，請提供[AEM CIF核心元件](https://github.com/adobe/aem-core-cif-components)。
+若要支援部署CIF Adobe的專案，請提供[AEM CIF核心元件](https://github.com/adobe/aem-core-cif-components)。
 
 [軟體發佈入口網站](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)也提供了適用於 AEM 6.5 的 CIF 附加元件。它是相容的，提供和適用於 Experience Manager as a Cloud Service 的 CIF 附加元件相同的功能，不需調整。
 
@@ -29,10 +30,10 @@ Classic CIF 及其相依性已不再可用。依賴此CIF版本（使用`com.ado
 
 ## 專案結構
 
-瞭解[AEM專案結構](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=zh-Hant)和AEM as a Cloud Service的特性。 將您的專案設定調整為AEM as a Cloud Service版面。
+瞭解[AEM專案結構](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)和AEM as a Cloud Service的特性。 將您的專案設定調整為AEM as a Cloud Service版面。
 與AEM 6.5部署相比，以下有兩個主要差異：
 
-* GraphQL使用者端OSGI套件&#x200B;**不得**&#x200B;再包含在AEM專案中，它是透過CIF附加元件部署的
+* GraphQL使用者端OSGI套件&#x200B;**不得再包含在AEM專案中**，它是透過CIF附加元件部署的
 * GraphQL使用者端和Graphql資料服務&#x200B;**的OSGI設定不得**&#x200B;再包含到AEM專案中
 
 >[!TIP]

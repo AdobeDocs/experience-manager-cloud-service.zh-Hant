@@ -1,18 +1,19 @@
 ---
-title: 使用Commerce integration framework整合AEM和第三方Commerce
-description: 企業可能需要額外的協力廠商商業解決方案來強化店面。 Commerce integration framework(CIF)可用於這類整合案例，以使用I/O Runtime將協力廠商商務解決方案連線至Adobe Experience Manager。
+title: AEM與使用Commerce integration framework的第三方Commerce整合
+description: 企業可能需要額外的協力廠商商業解決方案來強化店面。 Commerce integration framework (CIF)可用於這類整合案例，以使用I/O Runtime將協力廠商商務解決方案連線至Adobe Experience Manager。
 thumbnail: cif-third-party-architecture.jpg
 exl-id: 3ebdb8eb-65ba-46be-aca3-6c06c8d1600c
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '491'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
-# 使用Commerce integration framework整合AEM和第三方Commerce {#aem-third-party}
+# 使用 Commerce Integration Framework 的 AEM 和第三方商務整合 {#aem-third-party}
 
 CIF的常見案例是整合非Adobe Commerce解決方案。 具有不同API和結構描述的協力廠商解決方案可透過整合層進行連線。
 
@@ -22,11 +23,11 @@ CIF的常見案例是整合非Adobe Commerce解決方案。 具有不同API和�
 
 ![AEM非Magento/協力廠商架構概述](../assets//AEM_nonMagento_Architecture.png)
 
-此整合層的用途是將第三方API和結構描述對應至Experience Manager外部受支援的Adobe Commerce GraphQL API和結構描述。 有了此封裝，整合邏輯和系統可以更新，而不需要變更Experience Manager內的程式碼。
+此整合層的用途是將第三方API和結構描述對應至Experience Manager外部支援的Adobe Commerce GraphQL API和結構描述。 有了此封裝，整合邏輯和系統可以更新，而不需要變更Experience Manager中的程式碼。
 
 ## 整合的解決方案需求
 
-當Experience Manager隨選擷取資料時，需要產品目錄的即時API。
+Experience Manager會隨選擷取資料，因此需要產品目錄的即時API。
 
 >[!TIP]
 >
@@ -36,7 +37,7 @@ CIF的常見案例是整合非Adobe Commerce解決方案。 具有不同API和�
 
 ## 後端使用案例
 
-CIF透過即時產品目錄存取和產品體驗管理工具來擴充Experience Manager。 這項緊密整合可讓作者在需要時使用內嵌式UI存取商務資料，而不需離開內容內容。
+CIF利用即時產品目錄存取和產品體驗管理工具來擴充Experience Manager。 這項緊密整合可讓作者在需要時使用內嵌式UI存取商務資料，而不需離開內容內容。
 
 解鎖這些使用案例需要整合產品目錄API。
 

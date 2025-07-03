@@ -4,7 +4,8 @@ description: 瞭解如何管理產品目錄頁面和範本
 exl-id: 0d795d85-c865-40d5-941e-e02ee96fdd11
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 1%
@@ -17,7 +18,7 @@ ht-degree: 1%
 
 ## 目前進度 {#story-so-far}
 
-在AEM內容與Commerce編寫歷程的上一份檔案[AEM CIF編寫基本知識快速入門](getting-started.md)中，您已瞭解CIF編寫的基本知識。
+在AEM內容與Commerce製作歷程的上一份檔案[AEM CIF製作基本知識快速入門](getting-started.md)中，您已瞭解CIF製作的基本知識。
 
 本文基於這些基礎之上。
 
@@ -63,7 +64,7 @@ Venia storefront提供典型的產品目錄體驗，包括導覽、登陸、類�
 
 ### 類別或產品特定範本 {#specific}
 
-CIF只要按幾下即可支援多個範本。 若要建立其他範本，請從個別類別中選取一般範本，並使用&#x200B;**建立**&#x200B;動作建立頁面。
+只要按幾下，CIF即可支援多個範本。 若要建立其他範本，請從個別類別中選取一般範本，並使用&#x200B;**建立**&#x200B;動作建立頁面。
 
 ![建立範本頁面](assets/create-template-page.png)
 
@@ -101,7 +102,7 @@ CIF只要按幾下即可支援多個範本。 若要建立其他範本，請從�
 
 可套用相同的工作流程來建立個別產品範本。
 
-## 下一步 {#what-is-next}
+## 後續步驟 {#what-is-next}
 
 現在您已完成歷程的這一部分，您應該：
 
@@ -116,4 +117,4 @@ CIF只要按幾下即可支援多個範本。 若要建立其他範本，請從�
 我們建議您檢閱檔案[管理分階段產品目錄體驗](staged-catalog.md)來繼續此歷程的下一部分，以下是一些其他選擇性資源，這些資源會對此檔案中提到的一些概念進行更深入的探究，但並非繼續無頭歷程所必需的：
 
 * [建立多個類別和產品頁面](/help/commerce-cloud/authoring/multi-template-usage.md)
-* [Experience Manager Cloud Service的移轉指南](/help/commerce-cloud/migration.md) — 如何從舊版移轉至AEMCommerce integration framework(CIF)附加元件
+* [Experience Manager Cloud Service移轉指南](/help/commerce-cloud/migration.md) — 如何從舊版移轉至AEM Commerce integration framework (CIF)附加元件

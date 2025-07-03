@@ -1,9 +1,11 @@
 ---
 title: CIF 產品輪播的自訂屬性
-description: 瞭解如何透過更新Sling模型和自訂標籤來擴充AEM CIF產品輪播元件。
+description: 瞭解如何更新Sling模型並自訂標籤，以擴充AEM CIF產品輪播元件。
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 594f0e6ec88851c86134be8d5d7f1719f74ddf4f
+exl-id: 758e0e13-c4d8-4d32-bcc9-91a36b3ffa98
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '316'
 ht-degree: 4%
@@ -30,7 +32,7 @@ ht-degree: 4%
 
 您可以實作Sling模型來擴充產品輪播的業務邏輯：
 
-1. 在IDE中，瀏覽至核心模組下方的`core/src/main/java/com/venia/core/models/commerce`，並建立可擴充CIF ProductCarousel介面的CustomCarousel介面：
+1. 在您的IDE中，在核心模組下方導覽至`core/src/main/java/com/venia/core/models/commerce`，並建立可擴充CIF ProductCarousel介面的CustomCarousel介面：
 
    ```
    package com.venia.core.models.commerce;
@@ -38,9 +40,8 @@ ht-degree: 4%
    public interface CustomCarousel extends ProductCarousel {
    }
    ```
-
-1. 接下來，在`core/src/main/java/com/venia/core/models/commerce/CustomCarouselImpl.java`建立實作類別`CustomCarouselImpl.java`。
-Sling模型的委派模式允許`CustomCarouselImpl`透過`sling:resourceSuperType`屬性參考`ProductCarousel`模型：
+1. 接下來，在`CustomCarouselImpl.java`建立實作類別`core/src/main/java/com/venia/core/models/commerce/CustomCarouselImpl.java`。
+Sling模型的委派模式允許`CustomCarouselImpl`透過`ProductCarousel`屬性參考`sling:resourceSuperType`模型：
 
    ```
    @Self
@@ -69,7 +70,7 @@ Sling模型的委派模式允許`CustomCarouselImpl`透過`sling:resourceSuperTy
 
 若要進一步自訂標示：
 
-1. 從`/apps/core/cif/components/commerce/productcarousel/v1/productcarousel` （核心元件crxde路徑）建立`productcard.html`的復本至ui.apps模組`ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productcarousel/productcard.html`。
+1. 從`productcard.html` （核心元件crxde路徑）建立`/apps/core/cif/components/commerce/productcarousel/v1/productcarousel`的復本至ui.apps模組`ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productcarousel/productcard.html`。
 
 1. 編輯`productcard.html`以呼叫實作類別中提到的自訂屬性：
 

@@ -4,7 +4,8 @@ description: 使用CIF元件在AEM網站上啟用 [!DNL Live Search] 產品清�
 exl-id: 7f2d9a43-a7cb-4d9d-a108-b016cd1ff81e
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 0%
@@ -19,7 +20,7 @@ Adobe Commerce的Live Search提供快速、相關且直覺的搜尋體驗，不�
 
 ## 先決條件 {#prerequisites}
 
-本主題假設您已設定本機[AEM環境](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=zh-Hant)。
+本主題假設您已設定本機[AEM環境](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)。
 
 PLP元件需要安裝[[!DNL Live Search] Popover CIF元件](live-search-popover.md)。 PLP Widget需要由彈出視窗產生的瀏覽器工作階段變數。
 
@@ -335,7 +336,7 @@ PLP元件需要安裝[[!DNL Live Search] Popover CIF元件](live-search-popover.
 
 ## 非PLP頁面 {#non-plp-pages}
 
-可能需要預設類別或目錄頁面，而非使用PLP Widget的某些類別。 在AEM中，這些類別頁面必須手動設定。
+可能需要預設類別或目錄頁面，而非使用PLP Widget的某些類別。 在AEM中，必須手動設定這些類別頁面。
 
 1. 從作者頁面中，選取類別頁面範本。 _Venia商店 — 首頁_ > _目錄頁面_ > _Venia商店 — 類別頁面_，然後選取[購買外觀]或建立新的頁面範本。
 

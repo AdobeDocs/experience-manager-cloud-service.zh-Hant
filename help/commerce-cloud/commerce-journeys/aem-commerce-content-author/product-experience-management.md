@@ -4,7 +4,8 @@ description: 瞭解如何建立隨後可用於各種管道的產品內容，以�
 exl-id: 4ae70e40-fdf1-4a37-b4dd-0c4882d77908
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '1157'
 ht-degree: 2%
@@ -17,7 +18,7 @@ ht-degree: 2%
 
 ## 目前進度 {#story-so-far}
 
-在Adobe Experience Manager (AEM)內容與Commerce歷程的上一份檔案[管理分階段產品目錄體驗](staged-catalog.md)中，您已瞭解如何管理分階段產品目錄體驗。
+在Adobe Experience Manager (AEM)內容和Commerce歷程的上一份檔案[管理分階段產品目錄體驗](staged-catalog.md)中，您已瞭解如何管理分階段產品目錄體驗。
 
 ## 目標 {#objective}
 
@@ -25,7 +26,7 @@ ht-degree: 2%
 
 ## 產品體驗管理 {#management}
 
-產品體驗管理是一門學科，用於在AEM中將產品資料（由PIM或商業解決方案擁有）與行銷內容一起裝飾。 然後，這些包含內容的豐富產品資料可用於各種頻道，以建立沈浸式購物體驗。
+產品體驗管理是一門學科，用於在AEM中將產品資料（由PIM或商務解決方案擁有）與行銷內容一起裝飾。 然後，這些包含內容的豐富產品資料可用於各種頻道，以建立沈浸式購物體驗。
 
 在AEM中，您可以建立各種型別的內容，並將其連結至產品目錄。 可以輕鬆探索及使用相關內容，進而提高生產力。
 
@@ -83,9 +84,9 @@ ht-degree: 2%
 
 ![pem CF對話方塊](assets/pem-dialog-cf.png)
 
-此對話方塊會重複使用核心元件內容片段對話方塊。 如需詳細資訊，請參閱其他資源。 唯一的差異是&#x200B;**Link Element**&#x200B;屬性，它設定了內容片段模型中識別碼欄位（產品SKU或類別UID）。
+此對話方塊會重複使用核心元件內容片段對話方塊。 如需詳細資訊，請參閱其他資源。 唯一的差異是&#x200B;**Link Element**&#x200B;屬性，它設定了內容片段模型中識別碼欄位(產品SKU或類別UID)。
 
-現在預覽具有關聯內容片段和/或體驗片段的產品頁面。 AEM轉譯頁面時，會根據型別（內容或體驗片段）、識別碼和體驗片段的預留位置名稱來查詢每個預留位置。 AEM會使用URL解析器來取得識別碼（產品為SKU，類別為UID）。 如果傳回體驗或內容片段，則會呈現至預留位置位置，否則會忽略預留位置。
+現在預覽具有關聯內容片段和/或體驗片段的產品頁面。 AEM轉譯頁面時，會根據型別（內容或體驗片段）、識別碼和體驗片段的預留位置名稱來查詢每個預留位置。 AEM會使用URL解析器來取得識別碼(SKU適用於產品，UID適用於類別)。 如果傳回體驗或內容片段，則會呈現至預留位置位置，否則會忽略預留位置。
 
 ![pem結果](assets/pem-result.png)
 
@@ -111,10 +112,10 @@ ht-degree: 2%
 * 使用預留位置來個別豐富產品和類別頁面
 * 瞭解如何讓內容可供購買，並使用關聯內容標籤
 
-您現在已準備好使用AEM內容和Commerce來管理產品體驗。 不過，「AEM內容」和Commerce有許多其他可用選項。 檢視[其他資源區段](#additional-resources)中提供的其他資源，瞭解更多關於您在此歷程中看到的功能。
+您現在已準備好使用AEM內容和Commerce來管理產品體驗。 不過AEM內容和Commerce有許多其他可用選項。 檢視[其他資源區段](#additional-resources)中提供的其他資源，瞭解更多關於您在此歷程中看到的功能。
 
 ## 其他資源 {#additional-resources}
 
 * [編寫Commerce體驗](/help/commerce-cloud/authoring/authoring-commerce-experiences.md)
 * [產品駕駛艙](/help/commerce-cloud/authoring/product-cockpit.md)
-* [內容片段元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=zh-Hant)
+* [內容片段元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=en)

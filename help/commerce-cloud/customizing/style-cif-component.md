@@ -12,7 +12,8 @@ kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34
 role: Admin
-source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '2342'
 ht-degree: 0%
@@ -72,7 +73,7 @@ ht-degree: 0%
 
 您可以新增及覆寫這些使用者端程式庫管理的CSS，將品牌專屬樣式套用至AEM CIF核心元件。 瞭解使用者端程式庫如何建構並包含在頁面上至關重要。
 
-[ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=zh-Hant)是專用的[webpack](https://webpack.js.org/)專案，用於管理專案的所有前端資產。 此Webpack可讓前端開發人員使用任意數量的語言和技術，例如[TypeScript](https://www.typescriptlang.org/)、[Sass](https://sass-lang.com/)等等。
+[ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)是專用的[webpack](https://webpack.js.org/)專案，用於管理專案的所有前端資產。 此Webpack可讓前端開發人員使用任意數量的語言和技術，例如[TypeScript](https://www.typescriptlang.org/)、[Sass](https://sass-lang.com/)等等。
 
 `ui.frontend`模組也是Maven模組，並使用NPM模組[aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator)與較大的專案整合。 在建置期間，`aem-clientlib-generator`會將編譯的CSS和JavaScript檔案複製到`ui.apps`模組中的使用者端程式庫中。
 
@@ -82,7 +83,7 @@ ht-degree: 0%
 
 ## 更新Teaser樣式 {#ui-frontend-module}
 
-接下來，對Teaser樣式進行小幅變更，以瞭解`ui.frontend`模組和使用者端程式庫如何運作。 使用[您選擇的IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=zh-Hant#set-up-the-development-ide)匯入Venia專案。 使用的熒幕擷取畫面來自[Visual Studio Code IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=zh-Hant#microsoft-visual-studio-code)。
+接下來，對Teaser樣式進行小幅變更，以瞭解`ui.frontend`模組和使用者端程式庫如何運作。 使用[您選擇的IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide)匯入Venia專案。 使用的熒幕擷取畫面來自[Visual Studio Code IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code)。
 
 1. 瀏覽並展開&#x200B;**ui.frontend**&#x200B;模組，並將資料夾階層展開至： `ui.frontend/src/main/styles/commerce`：
 
@@ -179,13 +180,13 @@ ht-degree: 0%
 
    這些使用者端程式庫不是由`ui.frontend`模組管理。 這些使用者端資料庫會包含由Adobe提供的CSS和JavaScript相依性。 這些使用者端資料庫的定義位於每個資料夾下方的`.content.xml`檔案中。
 
-   **clientlib-base** — 空白的使用者端程式庫，僅嵌入[AEM核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-hant)的必要相依性。 類別是`venia.base`。
+   **clientlib-base** — 空白的使用者端程式庫，僅嵌入[AEM核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)的必要相依性。 類別是`venia.base`。
 
    **clientlib-cif** — 空白的使用者端程式庫，僅嵌入[AEM CIF核心元件](https://github.com/adobe/aem-core-cif-components)的必要相依性。 類別是`venia.cif`。
 
    **clientlib-grid** — 包含CSS以啟用AEM的回應式格線功能。 使用AEM格線會在AEM編輯器中啟用[佈局模式](/help/sites-cloud/authoring/page-editor/responsive-layout.md)，並讓內容作者能夠調整元件大小。 類別為`venia.grid`且內嵌於`venia.base`資料庫中。
 
-1. 檢查`ui.apps/src/main/content/jcr_root/apps/venia/components/page`底下的檔案`customheaderlibs.html`和`customfooterlibs.html`：
+1. 檢查`customheaderlibs.html`底下的檔案`customfooterlibs.html`和`ui.apps/src/main/content/jcr_root/apps/venia/components/page`：
 
    ![自訂頁首與頁尾指令碼](../assets/style-cif-component/custom-header-footer-script.png)
 
@@ -256,7 +257,7 @@ ht-degree: 0%
 
 ## 頁面範本包含使用者端資料庫 {#client-library-inclusion-pagetemplates}
 
-包含使用者端程式庫有數個選項。 接著檢查產生的專案如何透過[頁面範本](/help/implementing/developing/components/templates.md)包含`clientlib-site`資料庫。
+包含使用者端程式庫有數個選項。 接著檢查產生的專案如何透過`clientlib-site`頁面範本[包含](/help/implementing/developing/components/templates.md)資料庫。
 
 1. 在AEM編輯器中，導覽至網站的&#x200B;**首頁**： [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html)。
 
@@ -281,7 +282,7 @@ ht-degree: 0%
    在右側，您可以看到包含在使用此範本的所有頁面上的使用者端資料庫&#x200B;**類別**&#x200B;清單。
 
    * `venia.dependencies` — 提供`venia.site`所依賴的任何廠商程式庫。
-   * `venia.site` - `ui.frontend`模組產生的`clientlib-site`類別。
+   * `venia.site` - `clientlib-site`模組產生的`ui.frontend`類別。
 
    請注意，其他範本使用相同的原則、**內容頁面**、**登陸頁面**&#x200B;等。 透過重複使用相同原則，可確保在所有頁面上包含相同的使用者端程式庫。
 
@@ -345,7 +346,7 @@ webpack-dev-server會代理來自AEM本機執行個體的影像和部分CSS/Java
 
 返回IDE和生成的專案。
 
-1. 在&#x200B;**ui.frontend**&#x200B;模組中，於`ui.frontend/src/main/styles/commerce/_productteaser.scss`重新開啟檔案`_productteaser.scss`。
+1. 在&#x200B;**ui.frontend**&#x200B;模組中，於`_productteaser.scss`重新開啟檔案`ui.frontend/src/main/styles/commerce/_productteaser.scss`。
 
 1. 對產品Teaser邊框進行下列變更：
 
@@ -446,7 +447,7 @@ webpack-dev-server會代理來自AEM本機執行個體的影像和部分CSS/Java
    ```
 
    >[!NOTE]
-   >還有其他的[IDE設定和工具](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=zh-Hant#set-up-an-integrated-development-environment)可以直接將專案檔案同步到本機AEM執行個體，而不需要執行完整的Maven建置。
+   >還有其他的[IDE設定和工具](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html#set-up-an-integrated-development-environment)可以直接將專案檔案同步到本機AEM執行個體，而不需要執行完整的Maven建置。
 
 ## 檢視更新的產品Teaser {#view-updated-product-teaser}
 
@@ -474,7 +475,7 @@ AEM也會嘗試快取使用者端程式庫以提高效能。 在程式碼部署�
 
 ## 額外挑戰 {#bonus-challenge}
 
-使用[AEM樣式系統](/help/sites-cloud/authoring/page-editor/style-system.md)建立兩個可由內容作者切換的樣式。 [使用樣式系統進行開發](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/style-system.html?lang=zh-Hant)包含有關如何完成此工作的詳細步驟和資訊。
+使用[AEM樣式系統](/help/sites-cloud/authoring/page-editor/style-system.md)建立兩個可由內容作者切換的樣式。 [使用樣式系統進行開發](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/style-system.html)包含有關如何完成此工作的詳細步驟和資訊。
 
 ![額外挑戰 — 樣式系統](../assets/style-cif-component/bonus-challenge.png)
 
@@ -482,7 +483,7 @@ AEM也會嘗試快取使用者端程式庫以提高效能。 在程式碼部署�
 
 * [AEM專案原型](https://github.com/adobe/aem-project-archetype)
 * [AEM CIF核心元件](https://github.com/adobe/aem-core-cif-components)
-* [設定本機AEM開發環境](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=zh-Hant)
+* [設定本機AEM開發環境](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
 * [用戶端資源庫](/help/implementing/developing/introduction/clientlibs.md)
-* [開始使用AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hant)
-* [使用樣式系統進行開發](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/style-system.html?lang=zh-Hant)
+* [AEM Sites 快速入門](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+* [使用樣式系統進行開發](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/style-system.html)

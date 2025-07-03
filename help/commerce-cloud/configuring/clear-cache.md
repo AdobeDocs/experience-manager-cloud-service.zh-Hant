@@ -4,7 +4,8 @@ description: 瞭解如何在AEM CIF中啟用及驗證清除快取功能。
 feature: Commerce Integration Framework
 role: Admin
 exl-id: f89c07c7-631f-41a4-b5b9-0f629ffc36f0
-source-git-commit: fb8b2645c0401d1358c7751db03a138dc2de2664
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '883'
 ht-degree: 3%
@@ -31,7 +32,6 @@ ht-degree: 3%
 * 啟用接聽程式，以在您的專案中新增`com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json`設定，以清除每個AEM執行個體（發佈與作者）的快取，如[這裡](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json)所示。
    * 作者和發佈執行個體皆應啟用設定。
    * 啟用Dispatcher快取（選用）：您可以透過在上述設定中將`enableDispatcherCacheInvalidation`屬性設定為true來啟用Dispatcher清除快取設定。 這提供了從Dispatcher清除快取的功能。
-
      >[!NOTE]
      >
      > 這僅適用於發佈執行個體。
@@ -64,7 +64,6 @@ ht-degree: 3%
        "storePath": "/content/venia/us/en", // Mandatory : Needs to be given to know for which site we are removing the clear cache.
    }'
    ```
-
 如果一切順利，新變更會反映在每個執行個體中。 如果變更在發佈執行個體上不可見，請嘗試在私人/無痕瀏覽器視窗中存取相關的PLP和PDP頁面。
 
 >[!NOTE]
@@ -135,4 +134,4 @@ curl --location 'https://author-p10603-e145552-cmstg.adobeaemcloud.com/bin/cif/i
 * 如果您需要從內部記憶體和Dispatcher快取中清除快取，則必須遵循[此參考](https://github.com/adobe/aem-cif-guides-venia/blob/main/core/src/main/java/com/venia/core/models/commerce/services/cacheinvalidation/CustomDispatcherInvalidation.java)。
   >[!NOTE]
   >
-  > 您可以傳回`getPatterns()`方法的`null`，以忽略內部清除快取。
+  > 您可以傳回`null`方法的`getPatterns()`，以忽略內部清除快取。

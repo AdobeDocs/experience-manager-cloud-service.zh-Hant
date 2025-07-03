@@ -11,7 +11,8 @@ kt: 3046
 thumbnail: 28952.jpg
 exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94
 role: Admin
-source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 3%
@@ -34,13 +35,13 @@ Adobe Experience Manager (AEM) CIF核心元件可用於多個AEM網站結構，�
 
 ## 設定 {#configuration}
 
-1. 根據[Adobe Commerce網站、商店和檢視](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=zh-Hant)中所述的模式，設定多個商店和商店檢視
+1. 根據[Adobe Commerce網站、商店和檢視](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)中所述的模式，設定多個商店和商店檢視
 
 2. 請確定AEM與Adobe Commerce之間的連線正常運作。
 
 3. 依照下列步驟建立CIF Cloud Service設定的子設定：
 
-   * 在AEM中，移至[工具] > [一般] > [設定瀏覽器] [&#128279;](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
+   * 在AEM中，移至[工具] > [一般] > [設定瀏覽器] [](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
    * 選取您建立的基本組態
    * 使用上述第2點所述的步驟建立設定
 
@@ -60,7 +61,7 @@ Adobe Experience Manager (AEM) CIF核心元件可用於多個AEM網站結構，�
 
 ## 其他資源
 
-* [Adobe Commerce網站、商店和檢視](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=zh-Hant)
+* [Adobe Commerce網站、商店和檢視](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)
 * [AEM CIF核心元件 — 多存放區/網站組態](https://github.com/adobe/aem-core-cif-components#multi-store--site-configuration)
-* [使用多網站管理員](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html?lang=zh-Hant)
+* [使用多網站管理員](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
 * [重複使用內容：多網站管理員和 Live Copy](/help/sites-cloud/administering/msm/overview.md)

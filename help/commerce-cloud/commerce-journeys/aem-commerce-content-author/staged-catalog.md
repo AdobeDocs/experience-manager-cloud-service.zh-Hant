@@ -4,7 +4,8 @@ description: 瞭解如何管理分階段的產品目錄體驗。
 exl-id: 1db18818-b8e0-4127-8a65-dc3dea1f2927
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: f172f514eaa8f1337359f00fad964f5781fba769
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 10%
@@ -27,7 +28,7 @@ ht-degree: 10%
 
 >[!NOTE]
 >
->此功能僅適用於Adobe Commerce或Cloud Edition，以及支援權杖式驗證的協力廠商聯結器。 如需詳細資訊，請參閱[快速入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html?lang=zh-Hant)。
+>此功能僅適用於Adobe Commerce或Cloud Edition，以及支援權杖式驗證的協力廠商聯結器。 如需詳細資訊，請參閱[快速入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html)。
 
 首先，讓我們瞭解作者如何使用CIF存取分階段產品資料。
 
@@ -59,14 +60,14 @@ AEM啟動可讓您建立分階段產品資料的內容。 如果您不熟悉Laun
 
 ![階段選擇器](assets/staged-picker.png)
 
-## 下一步 {#what-is-next}
+## 後續步驟 {#what-is-next}
 
 現在您已完成歷程的這一部分，您應該：
 
 * 透過Launch瞭解分階段產品目錄和內容的概念
 * 能夠透過產品駕駛艙和編輯器存取分階段產品目錄資料
 
-您現在已準備好管理[產品體驗](product-experience-management.md)。 不過，AEM內容和Commerce有許多其他可用選項。 查看[其他資源章節](#additional-resources)提供的一些其他資源，以詳細了解您在此歷程中看到的功能。
+您現在已準備好管理[產品體驗](product-experience-management.md)。 不過，AEM內容和Commerce有許多其他可用選項。 查看[其他資源區段](#additional-resources)提供的一些其他資源，以詳細了解您在此歷程中看到的功能。
 
 ## 其他資源 {#additional-resources}
 

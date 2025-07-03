@@ -4,7 +4,8 @@ description: 從這裡開始，此歷程會逐步引導您了解 AEM Commerce �
 exl-id: 155a2534-746d-4237-b7e2-9212c36fac7f
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 95%
@@ -33,7 +34,7 @@ ht-degree: 95%
 
 如果您想了解 Adobe 建議如何使用 AEM 解決網站業務案例，AEM Sites 歷程是理想的出發點。
 
-## 對象 {#audience}
+## 客群 {#audience}
 
 此歷程專為 AEM Commerce 內容作者所設計。此歷程闡述開始使用及管理目錄頁面、範本和完全產品體驗的要求、步驟和方法。
 
@@ -43,9 +44,9 @@ ht-degree: 95%
 
 您將在此歷程中探索許多主題。以下文章為您提供基本知識和外部詳細技術文件的連結。
 
-儘管您可以直接進入歷程的特定部分，但許多概念都是以先前文章中的概念為基礎。因此，如果您是AEM內容和Commerce的新手，Adobe建議您從頭開始，然後循序漸進。
+儘管您可以直接進入歷程的特定部分，但許多概念都是以先前文章中的概念為基礎。因此，如果您不熟悉AEM內容和Commerce，Adobe建議您從頭開始，然後循序漸進。
 
-| # | 文章 | 說明 |
+| # | 文章 | 描述 |
 |---|---|---|
 | 0 | AEM Content and Commerce 開發人員歷程 | 本文件 |
 | 1 | [了解 AEM Content and Commerce](/help/commerce-cloud/introduction.md) | 了解 AEM Content and Commerce 的概念和基本知識。 |
