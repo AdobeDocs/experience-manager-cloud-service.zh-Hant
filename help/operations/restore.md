@@ -4,9 +4,9 @@ description: 瞭解如何使用 Cloud Manager 從備份中還原 AEM as a Cloud 
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
 feature: Operations
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: fee4921b7087fd64b2f65b086998aedde8aaafb0
 workflow-type: tm+mt
-source-wordcount: '1338'
+source-wordcount: '1339'
 ht-degree: 63%
 
 ---
@@ -31,7 +31,7 @@ Cloud Manager 提供兩種型別的備份，您可以從中還原內容。
 
 >[!TIP]
 >
->也可以使用公用API[&#128279;](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)還原備份。
+>也可以使用公用API[還原備份](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)。
 
 >[!WARNING]
 >
@@ -56,7 +56,7 @@ Cloud Manager 提供兩種型別的備份，您可以從中還原內容。
 
 1. 以表示式名稱建立產品描述檔，該名稱是指內容復原。
 1. 提供必要程式的&#x200B;**程式存取**&#x200B;許可權。
-1. 根據您的使用案例，提供程式所需環境或所有環境的&#x200B;**內容還原**&#x200B;許可權。
+1. 根據您的使用案例，提供程式所需環境或所有環境的&#x200B;**環境還原建立**&#x200B;許可權。
 1. 將使用者指派給該設定檔。
 
 如需管理許可權的詳細資訊，請參閱[自訂許可權](/help/implementing/cloud-manager/custom-permissions.md)檔案。
