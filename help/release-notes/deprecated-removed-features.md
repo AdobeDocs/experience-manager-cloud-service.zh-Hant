@@ -5,9 +5,9 @@ exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
 source-git-commit: 67a69970399298c3d35f1851111a0e586f32ab4b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3193'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -453,9 +453,9 @@ Cloud Service 不支援 Logback，請移除其所有使用。如果您使用的�
 | **`com.adobe.granite.toggle.impl.dev.DynamicToggleProviderImpl`** | 全部 | 2025/6/3 | 2025/8/31 |
 | **`org.apache.http.proxyconfigurator`** | 全部 | 2025/6/3 | 2025/8/31 |
 
-### 無法修改的OSGi設定 {#unmodifiable-osgi-properties}
+### 不可修改的 OSGi 設定 {#unmodifiable-osgi-properties}
 
-無法修改下列OSGi元件PID的屬性，因此無法設定這些PID。
+下列 OSGi 元件 PID 的屬性無法修改，因此無法設定。
 
 | **OSGI 元件 ID** | **不可修改的屬性** |
 |---|---|
@@ -475,7 +475,7 @@ Cloud Service 不支援 Logback，請移除其所有使用。如果您使用的�
 
 ### 未來將強制執行的 OSGi 屬性限制 {#future-restrictions-osgi-properties}
 
-未來，Adobe將強制實施下列OSGi屬性限制。 對於提及的PID，只允許設定列出的屬性。
+Adobe 未來將強制執行下列 OSGi 屬性限制。針對提及的 PID，僅允許設定已列出的屬性。
 
 | OSGi 元件 PID |   | 必要 | 類型 | 限制 (如適用) |
 |---|---|---|---|---|
