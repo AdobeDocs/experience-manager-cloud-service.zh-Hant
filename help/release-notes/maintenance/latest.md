@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 26c42152bdebc069dd60cc4f5f070276eb1a1f46
 workflow-type: tm+mt
 source-wordcount: '1780'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -146,7 +146,7 @@ ht-degree: 98%
 
 ### 已知問題 {#known-issues-21331}
 
-* SITES-33177：以逗號分隔的字串儲存的區段樣式已損壞。
+* SITES-33177：儲存為逗號分隔字串的區段樣式已損壞。
 * SITES-33262：沒有名稱的區塊會導致頁面轉譯和發佈失敗。
 
 ### 已過時的功能和 API {#deprecated-21331}
