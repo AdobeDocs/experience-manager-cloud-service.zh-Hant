@@ -215,7 +215,7 @@ AEM頁面編輯器除了可存取更進階的功能外，還提供直覺式UI來
 
 ## 編輯元件版面 {#editing-component-layout}
 
-您可以選取元件的 [Layout](/help/sites-cloud/authoring/page-editor/responsive-layout.md)****  (配置) 動作，以變更元件的配置，並節省時間，而不需離開編輯模式，而不需重複從編輯切換到配置模式來調整元件。
+您可以選取元件的 [Layout](/help/sites-cloud/authoring/page-editor/responsive-layout.md)**&#x200B;**  (配置) 動作，以變更元件的配置，並節省時間，而不需離開編輯模式，而不需重複從編輯切換到配置模式來調整元件。
 
 1. 當處於網站主控台的&#x200B;**編輯**&#x200B;模式時，請選取元件以顯示元件的工具列。
 
