@@ -5,9 +5,9 @@ exl-id: eacfda02-ff53-42ed-b5b2-88be3879a5e9
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 9a798be41cb3bcf08b6841d236379bf861ff5510
 workflow-type: tm+mt
-source-wordcount: '1612'
+source-wordcount: '1628'
 ht-degree: 2%
 
 ---
@@ -32,9 +32,13 @@ AEM頁面編輯器除了可存取更進階的功能外，還提供直覺式UI來
 * [編輯元件配置](#editing-component-layout)
 * [編輯元件繼承](#inherited-components)
 
+>[!NOTE]
+>
+>您的專案團隊可視需要自訂編輯器。 如需詳細資訊，請參閱[自訂頁面製作](/help/implementing/developing/extending/page-authoring.md)。
+
 ## 新增元件 {#adding-components}
 
-您可以從側面板[&#128279;](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)的元件瀏覽器中選取新元件，並將它們拖放到元件預留位置中，藉此將元件拖放到頁面上。
+您可以從側面板[的](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)元件瀏覽器中選取新元件，並將它們拖放到元件預留位置中，藉此將元件拖放到頁面上。
 
 ### 元件預留位置 {#component-placeholder}
 
@@ -46,7 +50,7 @@ AEM頁面編輯器除了可存取更進階的功能外，還提供直覺式UI來
 
 * 當[移動現有元件](#movging-components)時，它將顯示為藍色正方形。
 
-  在頁面![&#128279;](assets/edit-content-move-placeholder.png)上移動現有元件時的預留位置
+  在頁面![上移動現有元件時的](assets/edit-content-move-placeholder.png)預留位置
 
 在這兩種情況下，所選的目標都會以藍色外框顯示在您正在拖曳的元件下方。 釋放元件時元件將放置到的目標。
 
@@ -166,7 +170,7 @@ AEM頁面編輯器除了可存取更進階的功能外，還提供直覺式UI來
 
 ### 元件編輯對話方塊 {#component-edit-dialog}
 
-某些元件提供就地可用以外的其他編輯選項。 您可以開啟元件的編輯對話方塊，開啟元件工具列[&#128279;](#component-toolbar)的編輯（鉛筆）圖示以存取其他組態選項。
+某些元件提供就地可用以外的其他編輯選項。 您可以開啟元件的編輯對話方塊，開啟元件工具列[的](#component-toolbar)編輯（鉛筆）圖示以存取其他組態選項。
 
 確切的編輯選項取決於元件。 對於某些元件[某些動作將只能在全熒幕模式](#edit-content-full-screen-mode)下使用。 例如：
 
@@ -211,7 +215,7 @@ AEM頁面編輯器除了可存取更進階的功能外，還提供直覺式UI來
 
 ## 編輯元件版面 {#editing-component-layout}
 
-您可以選取元件的 [Layout](/help/sites-cloud/authoring/page-editor/responsive-layout.md)**&#x200B;**  (配置) 動作，以變更元件的配置，並節省時間，而不需離開編輯模式，而不需重複從編輯切換到配置模式來調整元件。
+您可以選取元件的 [Layout](/help/sites-cloud/authoring/page-editor/responsive-layout.md)****  (配置) 動作，以變更元件的配置，並節省時間，而不需離開編輯模式，而不需重複從編輯切換到配置模式來調整元件。
 
 1. 當處於網站主控台的&#x200B;**編輯**&#x200B;模式時，請選取元件以顯示元件的工具列。
 
