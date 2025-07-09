@@ -46,6 +46,7 @@ ht-degree: 0%
     style ExcelSheet fill:#90ee90,stroke:#333
     style Email fill:#add8e6,stroke:#333
 ```-->
+
 ![Forms提交](/help/forms/assets/eds-fss.png)
 
 此流程圖顯示Forms提交服務如何接受提交的資料，並將其傳送至已設定的試算表或電子郵件。
@@ -144,6 +145,7 @@ ht-degree: 0%
     style FetchForm fill:#fff2cc,stroke:#333
     style Submission fill:#f0fff0,stroke:#333
 ```-->
+
 ![內嵌式表單架構](/help/forms/assets/eds-embedded-form.png)
 此圖表顯示從表單Source擷取表單HTML並顯示該表單的「主機頁面」 。 提交使用原始表單已設定的端點。
 
