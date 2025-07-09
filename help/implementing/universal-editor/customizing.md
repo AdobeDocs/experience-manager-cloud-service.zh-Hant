@@ -4,10 +4,10 @@ description: 瞭解自訂Universal Editor的各種選項，以支援內容作者
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: c2f1660552d32f3dae9418e7dfc2d4f1ab8cc3c3
+source-git-commit: 32b3a125d6370dd591252fde342843d5f9e33cf1
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 6%
+source-wordcount: '409'
+ht-degree: 2%
 
 ---
 
@@ -66,7 +66,7 @@ ht-degree: 6%
 
 ## 有條件地顯示和隱藏屬性面板中的元件 {#conditionally-hide}
 
-雖然元件通常可供作者使用，但在某些情況下卻可能沒有意義。 在這種情況下，您可以將`condition`屬性新增至元件模型[&#128279;](/help/implementing/universal-editor/field-types.md#fields)的欄位，以隱藏屬性面板中的元件。
+雖然元件通常可供作者使用，但在某些情況下卻可能沒有意義。 在這種情況下，您可以將`condition`屬性新增至元件模型[的](/help/implementing/universal-editor/field-types.md#fields)欄位，以隱藏屬性面板中的元件。
 
 可以使用[JsonLogic結構描述](https://jsonlogic.com/)定義條件。 如果條件為true，則會顯示欄位。 如果條件為false，則會隱藏欄位。
 
@@ -107,9 +107,7 @@ ht-degree: 6%
 
 ## 自訂預覽URL {#custom-preview-urls}
 
-您可以透過`urn:adobe:aue:config:preview`中繼設定來指定自訂預覽URL，按一下[編輯器右上角工具列](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)中的&#x200B;**開啟頁面**&#x200B;按鈕時，將會開啟該設定。
-
-這對於具有特定預覽要求的應用程式來說尤其實用，例如那些[使用 Edge Delivery Services 進行所見即所得製作](/help/edge/wysiwyg-authoring/authoring.md)的應用程式。
+您可以透過`urn:adobe:aue:config:preview`中繼設定來指定自訂預覽URL，按一下&#x200B;**編輯器右上角工具列**&#x200B;中的[開啟頁面](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)按鈕時，將會開啟該設定。
 
 若要這麼做，只需將所需的預覽URL加入所檢測應用程式的中繼標籤中，例如下列範例。
 
