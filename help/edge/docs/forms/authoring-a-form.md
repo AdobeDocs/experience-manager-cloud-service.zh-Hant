@@ -4,10 +4,12 @@ description: 了解 Adobe Experience Manager (AEM) 中提供的各種表單編�
 feature: Edge Delivery Services, Adaptive Forms, Core Components
 role: User, Developer
 exl-id: bd9cb623-c272-4cdf-ad39-f97043f781a6
-source-git-commit: a2f85b844aaff1642340250c5d8a755c80b9373d
-workflow-type: ht
-source-wordcount: '1176'
-ht-degree: 100%
+hide: true
+hidefromToC: true
+source-git-commit: 1662d1c9458f05c2e511514ce8a04247da90eaf3
+workflow-type: tm+mt
+source-wordcount: '1075'
+ht-degree: 98%
 
 ---
 
@@ -19,7 +21,7 @@ Adobe Experience Manager (AEM) 提供一個彈性的平台，用於建立能夠�
 
 AEM 提供多種表單編寫選項，可用來建立具吸引力的互動式表單。在選取表單編寫環境時，請考慮以下因素：
 
-| ?? **考量事項** | ?? **要提出的問題** |
+| 📝 **考量** | 💡 **要問的問題** |
 |----------------------|--------------------|
 | **使用者專業知識** | 誰負責編寫表單，是開發人員、業務使用者或是內容作者？ |
 | **表單複雜性** | 表單是否需要進階規則、動態區段或整合？ |
@@ -81,25 +83,25 @@ AEM 支援多種編寫方法，分別適合不同的使用者需求、技術技�
 | **驗證碼支援** | reCAPTCHA v2/Enterprise、hCaptcha (EA)、Turnstile (EA) | reCAPTCHA v2/Enterprise、hCaptcha (EA) | reCAPTCHA Enterprise | reCAPTCHA Enterprise | 必須自訂整合 |
 | **提交功能** | REST 端點、電子郵件、表單資料模型 (FDM)、叫用 AEM 工作流程、SharePoint、OneDrive、Azure Blob 儲存體、Power Automate、Workfront Fusion (EA) | REST 端點、電子郵件、表單資料模型 (FDM)、叫用 AEM 工作流程、SharePoint、OneDrive、Azure Blob 儲存體、Power Automate、Workfront Fusion (EA) | REST 端點、電子郵件、表單資料模型 (FDM)、叫用 AEM 工作流程、SharePoint、OneDrive、Azure Blob 儲存體、Power Automate、Workfront Fusion (EA) | 僅限試算表 | 自訂 API 端點 |
 | **資料結構描述** | FDM、自訂 | FDM、自訂 | FDM、自訂 | 自訂 | 自訂 |
-| **預填** | ✅ | ✅ | ?? (透過精靈) | ✅ | 自訂實施 |
+| **預填** | ✅ | ✅ | 💡 （透過精靈） | ✅ | 自訂實施 |
 | **片段** | ✅ | ✅ | ✅ | ✅ | ❌ |
 | **視覺化規則編輯器** | ✅ | ✅ | ✅ | ❌ | ❌ |
-| **本地化** | ✅ | ✅ | ?? (透過 Sites) | ℹ️ (Excel - 手動、Google Sheet 函數) | 自訂實施 |
-| **資料結構描述 (資料樹)** | ✅ | ✅ | ?? (透過 UI 擴充功能) | ❌ | 自訂實施 |
+| **本地化** | ✅ | ✅ | 💡 （透過網站） | ℹ️ (Excel - 手動、Google Sheet 函數) | 自訂實施 |
+| **資料結構描述 (資料樹)** | ✅ | ✅ | 💡 （透過UI擴充功能） | ❌ | 自訂實施 |
 | **範本支援** | ✅ | ✅ | 僅限初始內容，無原則 | ❌ | 自訂實施 |
 | **入口網站** | ✅ | ✅ | ❌ | ❌ | ❌ |
-| **記錄文件編寫** | ✅ | ✅ | ?? (透過 Derlina) | ❌ | ❌ |
-| **記錄文件生成** | ✅ | ✅ | ?? (FORMS-2475 新增) | ❌ | ❌ |
+| **記錄文件編寫** | ✅ | ✅ | 💡 （透過Derlina） | ❌ | ❌ |
+| **記錄文件生成** | ✅ | ✅ | 💡 (FORMS-2475新增) | ❌ | ❌ |
 | **主題** | ✅ | ✅ | ℹ️ (在專案層級) | ℹ️ (在專案層級) | 自訂實施 |
 | **自訂元件** | ✅ | ✅ | ✅ | ✅ | ✅ |
 | **OOTB 與自訂函數** | ✅ | ✅ | ✅ | ✅ | ✅ |
 | **片段參考** | ✅ | ❌ | ❌ | ❌ | ❌ |
 | **簽署整合** | ✅ | ❌ | ❌ | ❌ | ❌ |
-| **RTL 支援** | ❌ | ✅ | ?? | ?? | 自訂實施 |
+| **RTL 支援** | ❌ | ✅ | 💡 | 💡 | 自訂實施 |
 | **實驗** | ❌ | ❌ | ✅ | ✅ | 自訂實施 |
 | **透過 Workfront 管理任務** | ❌ | ❌ | ✅ | ❌ | ❌ |
-| **個人化擴充功能** | ❌ | ❌ | ?? | ❌ | 自訂實施 |
-| **編輯器自訂** | ❌ | ❌ | ✅ (透過 UI 擴充功能) | ❌ | 自訂實施 |
+| **個人化擴充功能** | ❌ | ❌ | 💡 | ❌ | 自訂實施 |
+| **編輯器自訂** | ❌ | ❌ | ✅ （透過UI擴充功能） | ❌ | 自訂實施 |
 | **提交動作** | ✅ | ✅ | ✅ | 僅限試算表 | 自訂實施 |
 
 
