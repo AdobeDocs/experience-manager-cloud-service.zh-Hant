@@ -14,7 +14,7 @@ ht-degree: 7%
 
 # AEM Edge Delivery Services上的Forms快速入門
 
-<span class="preview">這是一項預先發佈功能，可透過我們的[預先發佈管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)存取。</span>
+<span class="preview">這是一項預先發佈功能，可透過我們的[預先發佈管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hant#new-features)存取。</span>
 
 本指南可協助您使用Adobe Experience Manager (AEM) Edge Delivery Services (EDS)來瞭解及實作表單。 無論您是要建立簡單的連絡人表單還是複雜的資料收集工具，本頁都會逐步說明您的選項。
 
