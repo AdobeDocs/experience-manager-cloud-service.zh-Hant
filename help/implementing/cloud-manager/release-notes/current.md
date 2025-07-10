@@ -49,11 +49,11 @@ AEM as a Cloud Service中的Cloud Manager 2025.7.0發行日期是2025年7月10�
 
 如果最新的客戶原始程式碼無法如預期運作，請快速回復到先前的部署，而不需要重新執行完整的管道或手動回覆認可。<!--https://jira.corp.adobe.com/browse/CMGR-69556 -->
 
-![從環境卡還原客戶原始碼](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *環境卡上方的顯示&#x200B;**還原**>**已針對所選環境部署先前代碼**選項的環境卡。*
+![從環境卡還原客戶原始碼](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed.png) *環境卡上方的顯示&#x200B;**還原**>**已針對所選環境部署先前代碼**&#x200B;選項的環境卡。*
 
 
 ![還原先前部署的程式碼對話方塊](/help/implementing/cloud-manager/release-notes/assets/restore-previous-code-deployed-dialogbox.png)
-*在&#x200B;**還原先前部署的程式碼**對話方塊中，檢閱目前部署的版本以及您要還原的版本，然後按一下&#x200B;**確認***。
+*在&#x200B;**還原先前部署的程式碼**&#x200B;對話方塊中，檢閱目前部署的版本以及您要還原的版本，然後按一下&#x200B;**確認***。
 
 
 ![正在還原啟用](/help/implementing/cloud-manager/release-notes/assets/restoring-previous-code-deployed-restoring.png)
@@ -121,7 +121,7 @@ Cloud Manager 現在支援新增名為&#x200B;**專用測試環境**&#x200B;的�
 
 現在，使用 Edge Delivery Services 建置的網站已支援設定管道，所以在 Cloud Service 環境以外也可以使用這項功能。您可以使用&#x200B;**設定管道**&#x200B;來管理設定，例如流量篩選規則和 Web 應用程式防火牆 (WAF) 設定等 (如適用)。請參閱[支援的設定](/help/operations/config-pipeline.md#configurations)。
 
-![Add Edge Delivery pipeline in Add Pipeline drop-down list](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *從&#x200B;**計劃概觀**頁面的&#x200B;**管道**卡片新增 Edge Delivery 管道。*
+![Add Edge Delivery pipeline in Add Pipeline drop-down list](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *從&#x200B;**計劃概觀**&#x200B;頁面的&#x200B;**管道**&#x200B;卡片新增 Edge Delivery 管道。*
 
 ![Add Edge Delivery pipeline dialog box](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *新增 Edge Delivery 管道對話框。*
 
