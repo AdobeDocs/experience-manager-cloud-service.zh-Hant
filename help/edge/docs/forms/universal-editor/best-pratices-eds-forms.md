@@ -3,7 +3,8 @@ title: 設計高效能Forms的最佳作法
 description: 瞭解使用AEM Forms建立方便使用、可存取且高效能表單的基本最佳實務。 改善資料品質、使用者體驗和提交成功率。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: bca160763fdd1e96f1350ac74eb76ff7c26ac00b
+exl-id: 67b6873b-bb93-4d38-963c-2ca65a1a644b
+source-git-commit: 75d8ea4f0913e690e3374d62c6e7dcc44ea74205
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 0%

@@ -3,13 +3,13 @@ title: 使用Edge Delivery Services設定AEM Forms的提交動作
 description: 瞭解如何使用Edge Delivery Services在AEM Forms中設定提交動作。 在Forms提交服務和AEM發佈提交動作之間選擇，以安全有效地處理表單資料。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: bca160763fdd1e96f1350ac74eb76ff7c26ac00b
+exl-id: 8f490054-f7b6-40e6-baa3-3de59d0ad290
+source-git-commit: 75d8ea4f0913e690e3374d62c6e7dcc44ea74205
 workflow-type: tm+mt
 source-wordcount: '2166'
 ht-degree: 0%
 
 ---
-
 
 # 設定表單提交：您的資料前往何處？
 
@@ -46,7 +46,6 @@ ht-degree: 0%
     style ExcelSheet fill:#90ee90,stroke:#333
     style Email fill:#add8e6,stroke:#333
 ```-->
-
 ![Forms提交](/help/forms/assets/eds-fss.png)
 
 此流程圖顯示Forms提交服務如何接受提交的資料，並將其傳送至已設定的試算表或電子郵件。
@@ -145,7 +144,6 @@ ht-degree: 0%
     style FetchForm fill:#fff2cc,stroke:#333
     style Submission fill:#f0fff0,stroke:#333
 ```-->
-
 ![內嵌式表單架構](/help/forms/assets/eds-embedded-form.png)
 此圖表顯示從表單Source擷取表單HTML並顯示該表單的「主機頁面」 。 提交使用原始表單已設定的端點。
 
