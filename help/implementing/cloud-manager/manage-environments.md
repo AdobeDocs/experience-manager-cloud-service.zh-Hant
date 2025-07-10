@@ -304,7 +304,7 @@ Cloud Manager 為每個 AEM as a Cloud Service 環境提供預覽服務 (作為�
 
 只有具有&#x200B;**開發人員**&#x200B;角色的使用者才能存取 **Developer Console**。但是，對於沙箱計畫，任何有權存取沙箱計畫的使用者都可以存取&#x200B;**Developer Console**。
 
-如需更多詳細資訊，請參閱[休眠和去休眠沙箱環境](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation)。
+如需更多詳細資訊，請參閱[休眠和去休眠沙箱環境](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation)。
 
 按一下個別環境的&#x200B;**更多圖示**&#x200B;時，此選項也可從&#x200B;**總覽**&#x200B;視窗的![環境](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)索引標籤中使用。
 
