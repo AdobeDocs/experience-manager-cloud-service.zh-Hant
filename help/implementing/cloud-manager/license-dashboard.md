@@ -5,10 +5,10 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 6c36e45dc5437f34b26732a34e9bda38deac56b1
+source-git-commit: b5987ce142a92fee8fff30fbe66d147cd68bdb21
 workflow-type: tm+mt
-source-wordcount: '909'
-ht-degree: 24%
+source-wordcount: '938'
+ht-degree: 23%
 
 ---
 
@@ -19,7 +19,7 @@ Cloud Manager提供了一個儀表板，用於輕鬆檢視您的組織或租使�
 
 >[!IMPORTANT]
 >
->授權儀表板僅適用於AEM as a Cloud Service計畫。 [AMS程式](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-manager/content/introduction)未包含在授權儀表板中。
+>授權儀表板僅適用於AEM as a Cloud Service計畫。 [AMS程式](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)未包含在授權儀表板中。
 >
 >若要判斷您的程式具有的服務型別（AMS或AEMaaCS），請參閱[瀏覽Cloud Manager UI](/help/implementing/cloud-manager/navigation.md#program-cards)。
 
@@ -34,7 +34,7 @@ Cloud Manager授權儀表板可讓您輕鬆存取所有計畫中可用的解決�
 >必須由具有&#x200B;**業主**&#x200B;角色的使用者登入才能檢視授權儀表板。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
-1. 在&#x200B;**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;主控台上，按一下[Cloud Manager標題](/help/implementing/cloud-manager/navigation.md#cloud-manager-header)上的![顯示功能表圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)。 此動作會顯示標籤。
+1. 在&#x200B;**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;主控台上，按一下![Cloud Manager標題](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)上的[顯示功能表圖示](/help/implementing/cloud-manager/navigation.md#cloud-manager-header)。 此動作會顯示標籤。
 1. 按一下索引標籤中的&#x200B;**授權**&#x200B;選項。
 
 ![授權儀表板](assets/license-dashboard.png)
@@ -77,6 +77,8 @@ Cloud Manager授權區域中的&#x200B;**檢視使用狀況詳細資料**&#x200B
 視窗左側會顯示圓形圖，顯示在&#x200B;**檢視合約年度**&#x200B;下拉式清單中所選合約年度的合約明細。
 
 視窗右側會顯示區域圖，其中顯示所選合約年度內一段時間內依方案劃分的使用量。 游標暫留會顯示快顯視窗，其中顯示所選時間點的每個方案的詳細資料。
+
+在儀表板頁面的右上角附近，您可以按一下&#x200B;**下載報表**，將其資料匯出為CSV檔案。 此下載檔案可簡化分析和共用使用趨勢的程式。
 
 <!-- REMOVED AS PER CQDOC-21983
 ### Assets usage details {#assets-usage-details}

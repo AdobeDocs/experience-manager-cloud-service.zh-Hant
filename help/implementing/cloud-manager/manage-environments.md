@@ -5,10 +5,10 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
+source-git-commit: f5dcf76b662e8bec9248ca11f133f9a82142d877
 workflow-type: tm+mt
-source-wordcount: '2430'
-ht-degree: 42%
+source-wordcount: '2474'
+ht-degree: 41%
 
 ---
 
@@ -130,26 +130,29 @@ ht-degree: 42%
 
 如果您想要針對計畫佈建[進階網路](/help/security/configuring-advanced-networking.md)，建議在將額外發佈區域新增至該環境之前完成佈建。否則，額外發佈區域的流量會通過主要區域的代理程式。
 
-## 存取環境詳細資訊 {#viewing-environment}
+## 檢視環境的詳細資訊 {#viewing-environment}
 
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
-1. 若要存取環境詳細資訊，請執行下列任一項作業：
+1. 在&#x200B;**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;主控台上，按一下您要檢視環境詳細資訊的程式。
 
-   * 從&#x200B;**總覽**&#x200B;頁面，在左側功能表中按一下![資料圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **環境**。
+1. 透過執行下列操作之一，列出該計畫的所有環境：
 
-   ![「環境」索引標籤](assets/environments-tab2.png)
+   * 從左側功能表的&#x200B;**服務**&#x200B;下方，按一下![資料圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **環境**。
 
-   * 從&#x200B;**環境**&#x200B;卡片，按一下![工作流程圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **全部顯示**。
+   ![「環境」索引標籤](assets/environments-1.png)
 
-     ![顯示全部選項](assets/environment-showall.png)
+   * 從左側功能表的&#x200B;**程式**&#x200B;下方，按一下&#x200B;**總覽**，然後從&#x200B;**環境**&#x200B;卡片，按一下![工作流程圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **全部顯示**。
 
-   **環境**&#x200B;頁面會開啟並列出該計畫的所有環境。
+     ![顯示全部選項](assets/environments-2.png)
 
-   ![環境索引標籤](assets/environments-tab2.png)
+   >[!NOTE]
+   >
+   >**環境**&#x200B;卡僅列出三個環境。 按一下卡片中的[顯示全部&#x200B;**]以檢視程式的**&#x200B;全部&#x200B;*環境。*
 
 1. 在環境頁面上，執行下列任一項作業：
 
-   * 按一下清單中的環境以顯示其詳細資訊。
+   * 按一下清單中的環境以檢視其詳細資訊。
 
    ![環境詳細資訊](assets/environ-preview1.png)
 
@@ -157,9 +160,11 @@ ht-degree: 42%
 
    ![檢視環境詳細資訊](assets/view-environment-details.png)
 
->[!NOTE]
->
->新環境列在&#x200B;**環境**&#x200B;卡只會列出三個環境。按一下卡片中的[顯示全部&#x200B;**]以檢視程式的所有環境。**
+
+## 還原環境的內容(Alpha) {#restore-environment}
+
+請參閱[在AEM as a Cloud Service中還原內容](/help/operations/restore.md)。
+
 
 ### 存取預覽服務 {#access-preview-service}
 
@@ -299,9 +304,9 @@ Cloud Manager 為每個 AEM as a Cloud Service 環境提供預覽服務 (作為�
 
 只有具有&#x200B;**開發人員**&#x200B;角色的使用者才能存取 **Developer Console**。但是，對於沙箱計畫，任何有權存取沙箱計畫的使用者都可以存取&#x200B;**Developer Console**。
 
-如需更多詳細資訊，請參閱[休眠和去休眠沙箱環境](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation)。
+如需更多詳細資訊，請參閱[休眠和去休眠沙箱環境](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation)。
 
-按一下個別環境的![更多圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)時，此選項也可從&#x200B;**總覽**&#x200B;視窗的&#x200B;**環境**&#x200B;索引標籤中使用。
+按一下個別環境的&#x200B;**更多圖示**&#x200B;時，此選項也可從&#x200B;**總覽**&#x200B;視窗的![環境](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)索引標籤中使用。
 
 ## 本機登入 {#login-locally}
 
@@ -327,7 +332,7 @@ Sites計畫的Cloud Manager支援發佈和預覽服務的自訂網域名稱。
 
 Cloud Manager支援IP允許清單，用於Sites計畫的作者、發佈和預覽服務。
 
-若要管理IP允許清單，請瀏覽至您程式的&#x200B;**總覽**&#x200B;頁面的![資料圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **環境**&#x200B;頁面。 按一下單個環境，以便您可以管理其詳細資訊。
+若要管理IP允許清單，請瀏覽至您程式的![總覽](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)頁面的&#x200B;**資料圖示** **環境**&#x200B;頁面。 按一下單個環境，以便您可以管理其詳細資訊。
 
 ### 套用IP允許清單 {#apply-ip-allow-list}
 
