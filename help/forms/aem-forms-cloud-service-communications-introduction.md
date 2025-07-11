@@ -17,7 +17,7 @@ ht-degree: 24%
 
 > **版本可用性**
 >
-> * **AEM 6.5**： [AEM檔案服務總覽](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html)
+> * **AEM 6.5**： [AEM檔案服務總覽](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html?lang=zh-Hant)
 > * **AEM as a Cloud Service**：此文章
 
 ## 簡介
