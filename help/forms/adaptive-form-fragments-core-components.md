@@ -6,10 +6,10 @@ keywords: 新增最適化表單片段、最適化表單片段、建立表單片�
 feature: Adaptive Forms, Core Components
 exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: a99bd181a079713571fd659ec2a04207c5eeee90
 workflow-type: tm+mt
-source-wordcount: '1355'
-ht-degree: 4%
+source-wordcount: '1479'
+ht-degree: 10%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 4%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service （核心元件） | 本文章 |
 | AEM as a Cloud Service （基礎元件） | [按一下這裡](/help/forms/adaptive-form-fragments.md) |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html) |
 
 雖然每個表單都是為特定目的而設計，但大多數表單中都有一些常見的區段，例如提供個人詳細資訊，例如姓名和地址、家庭詳細資訊、收入詳細資訊。 每次建立新表單時，表單開發人員都必須建立這些通用區段。
 
@@ -32,27 +32,27 @@ ht-degree: 4%
 
 >[!NOTE]
 >
-> 您可以使用[表單片段元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/adaptive-form-fragment)的「設定」對話方塊和「設計」對話方塊，輕鬆自訂使用者的片段體驗。
+> 您可以使用[表單片段元件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/adaptive-form-fragment)的「設定」對話方塊和「設計」對話方塊，輕鬆自訂使用者的片段體驗。
 
 ## 建立自適應表單片段 {#create-a-fragment}
 
 您可以從頭開始建立最適化表單片段，或將現有最適化表單中的面板儲存為片段。 若要建立表單片段：
 
 1. 在https://[*主機名稱*]：[*連線埠*]/aem/forms.html登入您的AEM Forms執行個體。
-1. 按一下&#x200B;**建立>最適化表單片段**。
+1. 按一下「**建立 > 自適應表單片段**」。
 
    ![建立最適化表單片段](/help/forms/assets/adaptive-form-fragment.png)
 
-1. 指定片段的標題、名稱、說明和標籤。 請確定您為片段指定唯一的名稱。 如果存在具有相同名稱的其他片段，則無法建立片段。
+1. 指定片段的標題、名稱、說明和標籤。 確保為片段指定唯一的名稱。如果已存在名稱相同的片段，將無法建立片段。
 1. 選取表單範本。 您可以為以核心元件為基礎的Adaptive Forms或基礎元件為基礎的Adaptive Forms建立表單片段。 若要建立核心元件型表單的表單片段，請選取核心元件型範本。
 
    當您建立核心元件型表單的表單片段時，請使用選取表單主題選項來選取核心元件型主題。
 
 1. 按一下以開啟&#x200B;**表單模型**&#x200B;標籤，然後從&#x200B;**選取自**&#x200B;下拉式功能表中，為片段選取下列其中一個模型：
 
-   ![在表單模型索引標籤中顯示模型型別](assets/create-af-1-1.png)
+   ![在「表單模型」標籤中顯示模型類型](assets/create-af-1-1.png)
 
-   * **無**：指定從頭開始建立片段，而不使用任何表單模型。
+   * **無模型**：指定此選項，即可不使用任何表單模型，從頭開始建立表單。
 
      >[!NOTE]
      >
@@ -63,7 +63,7 @@ ht-degree: 4%
 
    ![表單資料模型(FDM)](assets/create-af-3.png)
 
-1. 按一下[建立]&#x200B;**&#x200B;**，然後按一下[開啟]&#x200B;**&#x200B;**，以編輯模式開啟具有預設範本的片段。 在編輯模式中，您可以將任何最適化表單元件新增到片段。
+1. 按一下[建立]****，然後按一下[開啟]****，以編輯模式開啟具有預設範本的片段。 在編輯模式中，您可以將任何最適化表單元件新增到片段。
 
 <!-- For information about Adaptive Form components, see [Introduction to authoring Adaptive Forms](../../forms/using/introduction-forms-authoring.md). --> 此外，如果您選取XML結構描述作為片段的表單模型，則內容尋找器中會顯示一個顯示表單模型階層的新索引標籤。 它可讓您將表單模型元素拖放至片段上。<!--The added form-model elements get converted into form components while retaining the original properties from the associated XDP or XSD. -->
 
@@ -77,7 +77,7 @@ ht-degree: 4%
 1. 在編輯模式中開啟最適化表單。
 1. 將&#x200B;**最適化表單片段**&#x200B;元件新增至表單。
 1. 開啟&#x200B;**最適化表單片段**&#x200B;元件的[設定]對話方塊。
-1. 在&#x200B;**基本**&#x200B;索引標籤中選取&#x200B;**片段參考**。 您的表單可用的所有Adaptive Forms片段（視表單的模型而定）都會出現。
+1. 在「**基本**」標籤中，選取「**片段參考**」。您的表單可用的所有Adaptive Forms片段（視表單的模型而定）都會出現。
 
 1. 選擇一個Adaptive Form片段到您的Adaptive Form上的&#x200B;**Adaptive Form Fragment**&#x200B;元件上。
 
@@ -119,15 +119,14 @@ Perform the following steps to show complete fragments in forms:
 
 ![在最適化表單中使用多個片段](/help/forms/assets/using-multiple-fragment-af.gif)
 
-<!--
+## 對最適化表單中的片段提供自動對應支援
 
-## Auto mapping of fragments for data binding {#auto-mapping-of-fragments-for-data-binding}
+當您根據JSON結構描述定義建立最適化表單片段時，它可以在從相同結構描述建立的表單中自動重複使用。
+如果您拖放符合最適化表單片段JSON結構描述定義對應的結構描述物件或任何巢狀物件，物件會被相符的自適應表單片段取代。 此表單不會新增具有個別欄位的面板，而是插入對應的最適化表單片段。
 
-When you create an Adaptive Form fragment using an XFA form template or XSD complex type and drag-drop the fragment to an Adaptive Form, the XFA fragment or the XSD complex type is automatically replaced by the corresponding Adaptive Form fragment whose fragment model root is mapped to the XFA fragment or XSD complex Type.
+![拖放片段](/help/forms/assets/fragment.png)
 
-You can change the fragment asset and its bindings from the Edit component dialog.
-
-You can also drag-drop a bound Adaptive Form fragment from Adaptive Form Fragment library in AEM content finder and provide the correct bind reference from the Edit component dialog of the Adaptive Form fragment panel. -->
+您也可以從AEM內容尋找器中的最適化表單片段資料庫拖放已繫結的最適化表單片段，並從Adaptive Form片段面板的「編輯」元件對話方塊提供正確的繫結參考。
 
 ## 管理片段 {#manage-fragments}
 
@@ -141,7 +140,7 @@ You can also drag-drop a bound Adaptive Form fragment from Adaptive Form Fragmen
  <tbody>
   <tr>
    <td><p><strong>操作</strong></p> </td>
-   <td><p><strong>說明</strong></p> </td>
+   <td><p><strong>描述</strong></p> </td>
   </tr>
   <tr>
    <td><p>編輯</p> </td>
@@ -149,14 +148,14 @@ You can also drag-drop a bound Adaptive Form fragment from Adaptive Form Fragmen
   </tr>
    <tr>
    <td><p>預覽</p> </td>
-   <td><p>提供以HTML預覽片段的選項，或透過將XML檔案的資料與片段合併來預覽自訂預覽。 如需詳細資訊，請參閱<a>預覽表單</a>。<br /> <br /> </p> </td>
+   <td><p>提供以HTML預覽片段的選項，或透過合併XML檔案中的資料與片段來自訂預覽。 如需詳細資訊，請參閱<a>預覽表單</a>。<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>下載</p> </td>
-   <td><p>下載選取的片段。<br /> <br /> </p> </td>
+   <td><p>下載所選片段。<br /><br /> </p> </td>
   </tr>
   <tr>
-   <td><p>開始檢閱/管理檢閱</p> </td>
+   <td><p>開始評論/管理評論</p> </td>
    <td><p>允許啟動和管理所選片段的審查。 如需詳細資訊，請參閱<a>建立和管理評論</a>。<br /> <br /> </p> </td>
   </tr>
   <tr>
@@ -164,19 +163,19 @@ You can also drag-drop a bound Adaptive Form fragment from Adaptive Form Fragmen
    <td><p>產生字典以將選取的片段本地化。 如需詳細資訊，請參閱<a>本地化最適化Forms</a>。<br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td><p>Publish /取消發佈</p> </td>
-   <td><p>發佈/取消發佈選取的片段。<br /> <br /> </p> </td>
+   <td><p>發佈/取消發佈</p> </td>
+   <td><p>發佈/取消發佈所選片段。<br /><br /> </p> </td>
   </tr>
   <tr>
    <td><p>刪除</p> </td>
-   <td><p>刪除選取的片段。<br /> <br /> </p> </td>
+   <td><p>刪除所選片段。<br /><br /> </p> </td>
   </tr>
  </tbody>
 </table>
 
 ## 使用片段時要記住的關鍵點 {#key-points-to-remember-when-working-with-fragments}
 
-* 確保片段名稱是唯一的。 如果存在具有相同名稱的現有片段，則片段無法建立。
+* 確認片段使用唯一的名稱。如果現有片段擁有相同的名稱，則無法建立片段。
 * 透過參考插入或嵌入自適應表單時，獨立自適應表單片段中的任何運算式、指令碼或樣式都會保留。
 * 您無法從最適化表單中編輯透過參考插入的最適化表單片段。 若要編輯，請修改獨立的最適化表單片段。
 * 發佈最適化表單時，您需要發佈在最適化表單中透過參考插入的獨立最適化表單片段。

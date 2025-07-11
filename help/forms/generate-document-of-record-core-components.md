@@ -4,9 +4,9 @@ description: 瞭解如何為最適化Forms核心元件的記錄檔案(DoR)產生
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: 2637adfbac0e266abe5a023b9253e7e702884709
+source-git-commit: 2a780b6d1263fd70be6fc54fcc79282046f82fab
 workflow-type: tm+mt
-source-wordcount: '3152'
+source-wordcount: '3207'
 ht-degree: 1%
 
 ---
@@ -284,13 +284,13 @@ When you select a form model, configure Document of Record using options availab
 
 * 在基底範本中，將根子表單命名為`AF_METATEMPLATE`，將主版頁面命名為`AF_MASTERPAGE`。
 
-* 位於`AF_METATEMPLATE`根子表單下名稱為`AF_MASTERPAGE`的主版頁面較適合擷取頁首、頁尾和樣式資訊。
+* 位於`AF_MASTERPAGE`根子表單下名稱為`AF_METATEMPLATE`的主版頁面較適合擷取頁首、頁尾和樣式資訊。
 
 * 如果`AF_MASTERPAGE`不存在，則會使用基底範本中存在的第一個主版頁面。
 
 **欄位的樣式慣例**
 
-* 若要在記錄檔案中的欄位套用樣式，基底範本提供位於`AF_METATEMPLATE`根子表單下的`AF_FIELDSSUBFORM`子表單中的欄位。
+* 若要在記錄檔案中的欄位套用樣式，基底範本提供位於`AF_FIELDSSUBFORM`根子表單下的`AF_METATEMPLATE`子表單中的欄位。
 
 * 這些欄位的屬性會套用至記錄檔案中的欄位。 這些欄位應遵循`AF_<name of field in all caps>_XFO`命名慣例。 例如，核取方塊的欄位名稱應該是`AF_CHECKBOX_XFO`。
 
@@ -301,7 +301,7 @@ When you select a form model, configure Document of Record using options availab
 
 1. 選取&#x200B;**[!UICONTROL Forms — 記錄檔案]**&#x200B;類別。
 1. 選取&#x200B;**[!UICONTROL DoR基底範本]**。
-1. 按一下[下一步]&#x200B;**&#x200B;**&#x200B;並提供必要的資訊。
+1. 按一下[下一步]****&#x200B;並提供必要的資訊。
 
 1. （選擇性）修改您要在記錄檔案中欄位上套用的欄位樣式和外觀。
 1. 儲存表單。
@@ -380,7 +380,13 @@ When you select a form model, configure Document of Record using options availab
 
 1. 若要儲存品牌變更，請選取&#x200B;**[!UICONTROL 完成]**。
 
-
+>[!NOTE]
+> 
+> 若要在記錄檔案中顯示自訂表單標題，請編輯&#x200B;**記錄檔案屬性** > **主版頁面屬性**&#x200B;中的&#x200B;**自訂表單標題**。 此自訂標題：
+> 
+> * 出現在產生的PDF標題中
+> * 在PDF的檔案屬性中顯示為標題
+> * 在PDF開啟時顯示為初始檢視標題
 
 ## 記錄檔案中面板的表格和欄配置 {#table-and-column-layouts-for-panels-in-document-of-record}
 

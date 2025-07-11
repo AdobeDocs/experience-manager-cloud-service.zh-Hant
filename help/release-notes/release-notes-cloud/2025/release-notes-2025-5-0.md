@@ -3,10 +3,11 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.5.0 版發行�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.5.0 版發行說明。'
 feature: Release Information
 role: Admin
-source-git-commit: df16d5c7ee666f563cf4bbc861df4210318f7f36
+exl-id: b7a21533-9db1-4111-814c-cab917041be4
+source-git-commit: c8391e09b7e2888423187f48360423c52b18fe0a
 workflow-type: tm+mt
-source-wordcount: '2108'
-ht-degree: 98%
+source-wordcount: '2162'
+ht-degree: 93%
 
 ---
 
@@ -36,7 +37,7 @@ ht-degree: 98%
 
 請觀看 2025 年 5 月版本概觀影片，了解 2025.5.0 版本新增功能的摘要：
 
->[!VIDEO](https://video.tv.adobe.com/v/3464361?quality=12&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3464307?quality=12)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -107,13 +108,13 @@ Content Hub 現在支援[產生共用連結，允許外部使用者](/help/asset
 
 [Experience Manager (AEM) Dynamic Media 與 Journey Optimizer (AJO) B2C 的原生整合](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/content-management/combine/aem-dynamic)，讓行銷人員能夠輕鬆地將 AEM Dynamic Media 資產 (轉譯和 DM 範本) 嵌入至 AJO 內容中，並在多個通道之間提供即時更新和極度個人化的體驗。
 
->[!VIDEO](https://video.tv.adobe.com/v/3463793/?learn=on&enablevpops=&autoplay=true&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### 搶鮮版功能
 
-* [通用編輯器：表單片段](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)：您現在可以透過通用編輯器為自適應表單建立表單片段並重複使用。這些片段是可重複使用的表單區段 (例如，聯絡資訊、同意欄位)，僅需建置一次即可套用於多個表單。此功能可以簡化表單建立過程、確保一致性，並且提高製作效率。
+* [最適化Forms和表單片段的通用編輯器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)：該通用編輯器現在支援建立最適化Forms和可重複使用的表單片段。 作者能以視覺化方式建立表單、設定提交動作及新增reCAPTCHA驗證，這一切都可在簡化的WYSIWYG製作環境中完成。 此功能可加快表單建立、增強一致性，並改善防範垃圾郵件和自動濫用的防護功能。
 
 * [SharePoint 文件庫：以原始檔案名稱儲存附件](/help/forms/connect-forms-to-sharepoint-document-library.md#connect-an-adaptive-form-to-microsoft-sharepoint-document-library)：您現在將表單附件儲存於 SharePoint 文件庫中時，可以選擇使用其原始檔案名稱。此增強功能可以簡化上傳之檔案的識別和管理。
 
@@ -131,7 +132,7 @@ AEM Forms 搶先體驗計劃為您提供獨一無二的機會，獲得先進創�
 
 #### Adobe Experience Platform (AEP) 與 Forms 的整合
 
-早期採用者現在可以使用 Forms 和 AEP 之間的整合功能。
+* [整合AEM Forms與Adobe Experience Platform](/help/forms/aem-forms-aep-connector.md)： AEM Forms到Adobe Experience Platform聯結器可讓您順暢整合最適化Forms和Adobe Experience Platform。 此功能可將表單資料對應至XDM結構描述，並即時直接提交至AEP。 它可簡化跨Adobe Experience Cloud解決方案個人化和啟用使用案例的資料擷取。
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
@@ -235,7 +236,7 @@ OSGi 屬性：
 * 授予內容存取權之前，透過身分識別提供者對使用者進行身分驗證
 * 根據地理位置、裝置類型或使用者屬性，將內容個人化
 * 做為 CDN 和您來源之間的中介軟體
-* 將來自協力廠商API的回應重新格式化（並可能彙總多個API回應），然後再傳送給瀏覽器
+* 將第三方 API 的回應傳送至瀏覽器之前，先對其進行重新格式化 (且可能彙總多個 API 的回應)
 * 使用從各個後端拼接的內容，在邊緣編寫並提供伺服器轉譯的 HTML
 
 我們針對正式生產網站提供數量有限的 AEM Publish Delivery 或 Edge Delivery Services 專案機會。若您有興趣參與，或想了解更多相關資訊，請傳送電子郵件至 [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com)，並簡要描述您的使用案例。

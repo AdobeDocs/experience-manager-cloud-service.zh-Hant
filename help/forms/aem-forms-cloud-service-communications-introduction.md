@@ -5,10 +5,10 @@ Keywords: document generation, PDF manipulation, document security, batch proces
 feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, Developer, User
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: a5bbcd19b41b3aeff94f900da13e98de65651f8c
+source-git-commit: 8803896bf728524833a0dde004ddaa2e8b6bb103
 workflow-type: tm+mt
-source-wordcount: '2497'
-ht-degree: 30%
+source-wordcount: '2663'
+ht-degree: 24%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 30%
 
 > **版本可用性**
 >
-> * **AEM 6.5**： [AEM檔案服務總覽](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html?lang=zh-Hant)
+> * **AEM 6.5**： [AEM檔案服務總覽](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html)
 > * **AEM as a Cloud Service**：此文章
 
 ## 簡介
@@ -44,7 +44,7 @@ AEM Forms as a Cloud Service中的通訊API可幫助您根據業務需求建立�
 
 ## 檔案產生
 
-通訊文件產生 API 可協助將範本 (XFA 或 PDF) 與客戶資料 (XML) 相結合，以產生 PDF 和列印格式 (例如 PS、PCL、DPL、IPL 和 ZPL 格式) 的文件。這些 API 使用 PDF 和 XFA 範本搭配 [XML 資料](communications-known-issues-limitations.md#form-data)以產生單一隨需文件或使用批次作業產生多個文件。
+Communications document generation API可協助結合範本(XFA或PDF)與客戶資料(XML)，以產生PDF、AFP （進階功能簡報）和列印格式（如PS、PCL、DPL、IPL和ZPL格式）的檔案。 這些API使用包含[XML資料](communications-known-issues-limitations.md#form-data)的PDF和XFA範本，以隨選方式產生單一檔案，或使用批次工作產生多個檔案。
 
 通常，您使用 [Designer](use-forms-designer.md) 建立範本，並使用通訊 API 將資料與範本合併。您的應用程式可以將輸出文件傳送到網路印表機、本機印表機或儲存系統進行封存。典型的立即可用和自訂工作流程如下所示：
 
@@ -54,14 +54,28 @@ AEM Forms as a Cloud Service中的通訊API可幫助您根據業務需求建立�
 
 ### 重要檔案產生功能
 
-#### 建立 PDF 文件 {#create-pdf-documents}
+#### 以PDF/AFP電子格式建立檔案
 
-您可以使用文件產生 API 建立根據表單設計和 XML 表單資料的 PDF 文件。輸出是非互動式 PDF 文件。也就是說，使用者不能輸入或修改表單資料。基本的工作流程是將 XML 表單資料與表單設計合併以建立 PDF 文件。下圖顯示將表單設計與 XML 表單資料合併以產生 PDF 文件。
+您可以使用檔案產生API，根據表單設計和XML表單資料以PDF或AFP格式建立檔案。 輸出為非互動式檔案。 也就是說，使用者不能輸入或修改表單資料。基本的工作流程是將XML表單資料與表單設計合併，以建立檔案。 下圖顯示將表單設計與 XML 表單資料合併以產生 PDF 文件。
 
-![建立 PDF 文件](assets/outPutPDF_popup.png)
-圖：建立 PDF 文件的典型工作流程
+![建立PDF檔案](assets/outPutPDF_popup.png)
+圖：建立檔案的典型工作流程
 
-檔案產生API會傳回產生的PDF檔案。 您也可以選擇上傳產生的PDF至Azure Blob儲存體。
+下表顯示AFP和PDF格式之間的差異：
+
+| **功能** | **AFP （進階函式簡報）** | **PDF （可攜式檔案格式）** |
+|---------------------------|--------------------------------------------------------------------|-------------------------------------------------------------|
+| **用途** | 大量列印及製作異動檔案 | 一般用途檔案共用和檢視 |
+| **使用案例** | 銀行對帳單、帳單、商業發票、保險檔案 | 電子書、表格、報告、履歷、手冊 |
+| **平台來源** | 由IBM開發 | 由 Adobe 開發 |
+| **結構** | 具有結構化欄位和物件的頁面導向格式 | 頁面導向，但版面配置固定 |
+| **可編輯性** | 專為生產列印所設計，很少進行編輯 | 可使用各種工具(例如Adobe Acrobat)進行編輯 |
+| **檔案大小與效能** | 針對高速列印環境的效能而最佳化 | 對於大量輸出而言，可能會更大，但最佳化程度較低 |
+| **互動** | 最小至無；靜態頁面 | 支援互動式元素，例如表單、連結、JavaScript |
+| **輸出控制項** | 印表機版面配置的微細控制 | 針對熒幕與列印最佳化的視覺版面 |
+| **字型和圖形** | 使用字型和資源參考；需要轉譯器解譯 | 將字型和影像直接嵌入檔案中 |
+
+檔案產生API會傳回產生的PDF檔案或AFP檔案。 您也可以選擇上傳產生的PDF至Azure Blob儲存體。
 
 <span class="preview">使用Document Generation API將產生的PDF上傳到Azure Blob Storage功能在[早期採用者計畫](/help/forms/early-access-ea-features.md)之下。 您可以從您的官方電子郵件ID寫信到aem-forms-ea@adobe.com ，以加入率先採用者計畫並請求存取該功能。</span>
 
@@ -124,7 +138,7 @@ AEM Forms as a Cloud Service中的通訊API可幫助您根據業務需求建立�
 
 ### 轉換為 PDF/A 相容文件並進行驗證
 
-通訊檔案轉換API有助於將PDF檔案轉換為PDF/A。您可以使用這些API將PDF檔案轉換為符合PDF/A的檔案，也可以判斷PDF檔案是否符合PDF/A標準。 PDF/A是一種用於長期儲存檔案內容的封存格式。 字體內嵌在文件中，檔案未壓縮。因此，PDF/A 文件通常比標準 PDF 文件大。此外，PDF/A檔案不包含音訊和視訊內容。 支援的PDF/A合規性標準包括PDF/A-1a、1b、2a、2b、3a和3b。
+通訊檔案轉換API有助於將PDF檔案轉換為PDF/A。您可以使用這些API將PDF檔案轉換為符合PDF/A的檔案，也可以判斷PDF檔案是否符合PDF/A標準。 PDF/A是一種用於長期儲存檔案內容的封存格式。 字體嵌入在文件中，檔案未壓縮。因此，PDF/A 文件通常比標準 PDF 文件大。此外，PDF/A檔案不包含音訊和視訊內容。 支援的PDF/A合規性標準包括PDF/A-1a、1b、2a、2b、3a和3b。
 
 ### 將PDF轉換為XDP {#convert-pdf-to-xdp}
 

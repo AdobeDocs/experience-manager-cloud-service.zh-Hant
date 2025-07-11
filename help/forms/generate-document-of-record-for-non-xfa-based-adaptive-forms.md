@@ -4,9 +4,9 @@ description: 瞭解如何產生最適化Forms的記錄檔案(DoR)範本。
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 role: User, Developer
-source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
+source-git-commit: 2a780b6d1263fd70be6fc54fcc79282046f82fab
 workflow-type: tm+mt
-source-wordcount: '4170'
+source-wordcount: '4225'
 ht-degree: 3%
 
 ---
@@ -15,12 +15,12 @@ ht-degree: 3%
 
 >[!NOTE]
 >
-> Adobe建議針對[建立新的Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md)或[將Adaptive Forms新增至AEM Sites頁面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)，使用現代且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文說明使用基礎元件製作最適化Forms的舊方法。
+> Adobe建議針對[建立新的Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)或[將Adaptive Forms新增至AEM Sites頁面](/help/forms/creating-adaptive-form-core-components.md)，使用現代且可擴充的資料擷取[核心元件](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文說明使用基礎元件製作最適化Forms的舊方法。
 
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) |
 | AEM as a Cloud Service  | 本文章 |
 
 ## 概觀 {#overview}
@@ -303,13 +303,13 @@ When you select a form model, configure Document of Record using options availab
 
 * 在基底範本中，將根子表單命名為`AF_METATEMPLATE`，將主版頁面命名為`AF_MASTERPAGE`。
 
-* 位於`AF_METATEMPLATE`根子表單下名稱為`AF_MASTERPAGE`的主版頁面較適合擷取頁首、頁尾和樣式資訊。
+* 位於`AF_MASTERPAGE`根子表單下名稱為`AF_METATEMPLATE`的主版頁面較適合擷取頁首、頁尾和樣式資訊。
 
 * 如果`AF_MASTERPAGE`不存在，則會使用基底範本中存在的第一個主版頁面。
 
 **欄位的樣式慣例**
 
-* 若要在記錄檔案中的欄位套用樣式，基底範本提供位於`AF_METATEMPLATE`根子表單下的`AF_FIELDSSUBFORM`子表單中的欄位。
+* 若要在記錄檔案中的欄位套用樣式，基底範本提供位於`AF_FIELDSSUBFORM`根子表單下的`AF_METATEMPLATE`子表單中的欄位。
 
 * 這些欄位的屬性會套用至記錄檔案中的欄位。 這些欄位應遵循`AF_<name of field in all caps>_XFO`命名慣例。 例如，核取方塊的欄位名稱應該是`AF_CHECKBOX_XFO`。
 
@@ -320,7 +320,7 @@ When you select a form model, configure Document of Record using options availab
 
 1. 選取&#x200B;**[!UICONTROL Forms — 記錄檔案]**&#x200B;類別。
 1. 選取&#x200B;**[!UICONTROL DoR基底範本]**。
-1. 按一下[下一步]&#x200B;**&#x200B;**&#x200B;並提供必要的資訊。
+1. 按一下[下一步]****&#x200B;並提供必要的資訊。
 
 1. （選擇性）修改您要在記錄檔案中欄位上套用的欄位樣式和外觀。
 1. 儲存表單。
@@ -396,6 +396,14 @@ When you select a form model, configure Document of Record using options availab
 
 1. 若要儲存品牌變更，請選取&#x200B;**[!UICONTROL 完成]**。
 
+>[!NOTE]
+> 
+> 若要在記錄檔案中顯示自訂表單標題，請編輯&#x200B;**記錄檔案屬性** > **主版頁面屬性**&#x200B;中的&#x200B;**自訂表單標題**。 此自訂標題：
+> 
+> * 出現在產生的PDF標題中
+> * 在PDF的檔案屬性中顯示為標題
+> * 在PDF開啟時顯示為初始檢視標題
+
 ## 最適化表單編輯器中的記錄檔案支援 {#dor-support-in-adaptiveform}
 
 您可以直接從最適化表單編輯器或最適化表單範本編輯器設定[!UICONTROL 記錄檔案]範本。
@@ -450,13 +458,13 @@ When you select a form model, configure Document of Record using options availab
 **表單層級設定**
 
 * **包含未繫結欄位於DoR：**&#x200B;設定屬性包含記錄檔案中結構描述型最適化表單的未繫結欄位。 預設為true。
-* **若隱藏則從DoR排除欄位：**&#x200B;設定屬性以在提交表單時從記錄檔案中排除隱藏欄位。 當您在伺服器[&#128279;](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form)上啟用重新驗證時，伺服器會先重新計算隱藏的欄位，然後再將這些欄位從記錄檔案中排除。
+* **若隱藏則從DoR排除欄位：**&#x200B;設定屬性以在提交表單時從記錄檔案中排除隱藏欄位。 當您在伺服器[上啟用](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form)重新驗證時，伺服器會先重新計算隱藏的欄位，然後再將這些欄位從記錄檔案中排除。
 
 ## 使用自訂XCI檔案
 
 XCI檔案可協助您設定檔案的各種屬性。 Forms as a Cloud Service有主XCI檔案。 您可以使用自訂XCI檔案來覆寫主XCI檔案中指定的一個或多個預設屬性。 例如，您可以選擇將字型內嵌到檔案中，或是為所有檔案啟用標籤屬性。 下表指定XCI選項：
 
-| XCI選項 | 描述 |
+| XCI選項 | 說明 |
 |--- |--- |
 | config/present/pdf/creator | 使用檔案資訊字典中的建立者專案來識別檔案建立者。 如需此字典的相關資訊，請參閱[PDF參考指南](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/)。 |
 | config/present/pdf/producer | 使用檔案資訊字典中的製作者專案來識別檔案製作者。 如需此字典的相關資訊，請參閱[PDF參考指南](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/)。 |

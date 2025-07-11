@@ -1,8 +1,8 @@
 ---
-source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
-workflow-type: ht
-source-wordcount: '1556'
-ht-degree: 100%
+source-git-commit: 6af7e8caa7be93da60e660468dd7d4f02a7e2c47
+workflow-type: tm+mt
+source-wordcount: '1560'
+ht-degree: 97%
 
 ---
 # 程式碼片段 {#snippets}
@@ -111,9 +111,9 @@ ht-degree: 100%
    </td>
    </tr>
    <tr>
-    <td>ES10 支援 </td>
-    <td>尚不支援 ES10。僅支援 ES5 JavaScript 功能。 </td>
-    <td>支援現代 JavaScript 功能，例如自訂函數中的 let 和 arrow 函數 (ES10 支援)。 
+    <td>ES2022支援 </td>
+    <td>尚未支援ES2022；支援僅限於ES5 JavaScript功能。 </td>
+    <td>自訂函式中提供現代JavaScript功能（例如左鍵和箭頭函式）的支援，最高支援ES2022。 
    </td>
    </tr>
    </tr>
@@ -222,7 +222,7 @@ ht-degree: 100%
 
 **若要記錄支援服務單：**
 
-1. [遵循標準支援流程](https://experienceleague.adobe.com/zh-hant?support-tab=home#support)並建立服務單。
+1. [遵循標準支援流程](https://experienceleague.adobe.com/?support-tab=home#support)並建立服務單。
 1. 將 **Edge Delivery** 加入服務單標題中。
 1. 在描述中，除了問題描述之外，還提供以下詳細資訊：
 
