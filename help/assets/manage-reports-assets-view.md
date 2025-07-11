@@ -6,10 +6,10 @@ feature: Asset Insights, Asset Reports
 role: User, Admin, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 132f601e1bbeeea59dc6a14392a9f6c786b20682
+source-git-commit: 8aae8b2219e60f0a9220aa34b53bb3c8e19232c1
 workflow-type: tm+mt
-source-wordcount: '1522'
-ht-degree: 85%
+source-wordcount: '1504'
+ht-degree: 86%
 
 ---
 
@@ -52,7 +52,6 @@ AEM Assets檢視環境可透過報表控制面板提供全面的報告功能。 
    1. **說明：**&#x200B;為報告新增選擇性說明。
    1. **選取資料夾路徑：**&#x200B;選取資料夾路徑，以產生該特定資料夾中已上傳和下載資產的報告。例如，如果您需要上傳到某個資料夾的資產報告，請指定該資料夾的路徑。
    1. **選取日期間隔：**&#x200B;選取日期範圍，以檢視資料夾內的上傳或下載活動。
-
    <br>
 
    >[!NOTE]
@@ -143,7 +142,7 @@ AEM Assets檢視環境可透過報表控制面板提供全面的報告功能。 
 <!--
 >[!NOTE]
 > 
->To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html).
+>To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 -->
 
 ### 先決條件 {#prereqs-dynamic-media-delivery-reports}
@@ -205,7 +204,6 @@ AEM Assets檢視環境可透過報表控制面板提供全面的報告功能。 
    1. **說明：**&#x200B;為報告新增選擇性說明。
    1. **選取資料夾路徑：**&#x200B;選取資料夾路徑，為將來要上傳到該特定資料夾或從其中下載的資產產生報告。
    1. 切換「**安排報告**」開關：切換此開關以安排稍後或重複發生的報告。
-
       ![安排報告](/help/assets/assets/schedule-reports1.svg)
 
    1. **選擇頻率：**&#x200B;指定產生報告的時間間隔 (例如，每日、每週、每月、每年或一次)，並設定執行報告的日期和時間以及重複的結束日期。對於一次性報告，請選取 AEM 環境中選定活動類型的報告的日期範圍。例如，如果您需要特定月份的 10 至 29 日 (未來日期) 的已下載資產的報告，請在「**選取日期間隔**」欄位中選取這些日期。
@@ -249,11 +247,11 @@ AEM Assets檢視環境可透過報表控制面板提供全面的報告功能。 
 
 * **上傳**：使用折線圖表示過去30天或12個月內上傳至Assets檢視環境的資產數量。
   ![分析 — 上傳](/help/assets/assets/insights-uplods2.svg)
-  <!--* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.-->
+<!--* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.
 
-* **儲存空間使用量**：使用長條圖表示的Assets檢視環境儲存空間使用量（位元組）。
-  ![分析 — 上傳](/help/assets/assets/insights-storage-usage1.svg)
-  <!--* **Delivery**: The graph depicts the count of assets as the delivery dates.-->
+* **Storage usage**: The storage usage, in bytes, for the Assets view environment represented using a bar chart.
+![insights-uploads](/help/assets/assets/insights-storage-usage1.svg)
+<!--* **Delivery**: The graph depicts the count of assets as the delivery dates.-->
 
 <!--* **Asset Count by Asset Type**: Represents count of various MIME types of the available assets. For example, application/zip, image/png, video/mp4, application/postscripte.-->
 
@@ -263,7 +261,7 @@ AEM Assets檢視環境可透過報表控制面板提供全面的報告功能。 
    ![Insights](assets/insights1.png)
    ![Insights](assets/insights2.png)
    -->
-* **依大小劃分的資產計數：**&#x200B;將資產視圖環境中的總資產計數劃分為不同的大小範圍，突出顯示每個大小範圍內的資產數量和百分比，以圓環圖表示。
+* **依大小劃分的資產計數：**將資產視圖環境中的總資產計數劃分為不同的大小範圍，突出顯示每個大小範圍內的資產數量和百分比，以圓環圖表示。
   ![依大小劃分的資產計數深入解析](/help/assets/assets/insights-assets-count-by-size.svg)
-* **依資產型別區分的資產計數：**&#x200B;區段Assets檢視環境中的資產總計計數，根據資產的檔案型別反白顯示資產的計數和百分比，以環形圖表示。
+* **依資產型別區分的資產計數：**區段Assets檢視環境中的資產總計計數，根據資產的檔案型別反白顯示資產的計數和百分比，以環形圖表示。
   ![依大小劃分的資產計數深入分析](/help/assets/assets/insights-assest-count-by-asset-type1.svg)

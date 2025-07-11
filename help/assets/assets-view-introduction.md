@@ -5,9 +5,9 @@ mini-toc-levels: 3
 exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: 79213bcfe5c5ccf7c60a31e6cb757f60a0ba87a7
+source-git-commit: 8aae8b2219e60f0a9220aa34b53bb3c8e19232c1
 workflow-type: tm+mt
-source-wordcount: '893'
+source-wordcount: '966'
 ht-degree: 69%
 
 ---
@@ -67,17 +67,15 @@ Assets檢視提供下列「管理員」檢視中未提供的關鍵優點：
 
 [![請參閱指南](assets/see-the-guide-sm.png)](my-workspace-assets-view.md)
 
-<!--
 
-### Insights to take data-driven decisions {#insights-data}
+### 做出資訊導向決策的深入解析 {#insights-data}
 
-To keep pace with content velocity, actionable insights are essential. The Assets view offers advanced insights within the My Workspace, providing valuable data on asset performance, audience usage, and engagements. Marketers can make data-driven decisions, optimize content strategies, and refine their downstream delivery to achieve optimal results. With access to meaningful insights, businesses can stay ahead of the competition and drive exceptional outcomes.
+為了搭配內容更新速度，可操作分析實屬不可或缺。Assets檢視提供「我的Workspace」中的進階深入分析，提供資產效能、對象使用情況和參與度等寶貴資料。 行銷人員可以做出資料導向的決策、最佳化內容策略，以及調整下游傳遞以達到最佳的成果。企業若能存取有意義的深入解析，就可以在遙遙領先同業的競爭，並取得卓越的成果。
 
-![Insights overview](assets/insights-overview.gif)
+![深入解析概觀](assets/insights-overview.gif)
 
-[![See the Guide](assets/see-the-guide-sm.png)](manage-reports-assets-view.md#view-live-statistics)
+[![請參閱指南](assets/see-the-guide-sm.png)](manage-reports-assets-view.md#view-live-statistics)
 
--->
 
 ### Adobe Photoshop Express 整合可以加速共同作業 {#accelerate-collaboration}
 

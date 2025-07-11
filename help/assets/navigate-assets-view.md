@@ -4,10 +4,10 @@ description: 了解  [!DNL Assets view] 中的使用者介面和導覽
 role: User
 exl-id: 1e71ea7d-fee7-4ed0-bb80-d537b57fc823
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 79213bcfe5c5ccf7c60a31e6cb757f60a0ba87a7
+source-git-commit: 8aae8b2219e60f0a9220aa34b53bb3c8e19232c1
 workflow-type: tm+mt
-source-wordcount: '936'
-ht-degree: 72%
+source-wordcount: '980'
+ht-degree: 73%
 
 ---
 
@@ -40,11 +40,8 @@ ht-degree: 72%
 * **最近檢視的項目**：您最近預覽的資產清單。[!DNL Assets view] 只會顯示您預覽的資產。在瀏覽存放庫檔案或資料夾時，不會顯示捲動過去的資產。
 * [集合](/help/assets/manage-collections-assets-view.md)：集合是Adobe Experience Manager Assets檢視中的一組資產、資料夾或其他集合。 使用集合在使用者之間共用資產。和檔案夾不同，集合可包含來自不同位置的資產。您可以和使用者共用多個集合。每個集合都包含資產的參考資料。資產的參考完整性會跨越集合來維護。
 
-<!--
+* [Insights](/help/assets/manage-reports-assets-view.md#view-live-statistics)：在[!DNL Assets view]，您可以在儀表板上檢視即時深入分析。資產檢視使您能夠使用 Insights 儀表板查看資產檢視環境的即時資料。您可以查看過去 30 天或過去 12 個月的即時事件度量。
 
-* [Insights](/help/assets/manage-reports-assets-view.md#view-live-statistics): In [!DNL Assets view], you can view real-time insights on your dashboard. Assets view enables you to view real-time data for your Assets view environment with the Insights dashboard. You can view real-time event metrics during the last 30 days or for the last 12 months. 
-
--->
 * **垃圾桶**：列出從 **[!UICONTROL Assets]** 根資料夾刪除的資產。 您可以在「垃圾桶」資料夾中選取資產，將其還原到原來的位置或永久刪除。您可以指定關鍵字或套用篩選條件，例如資產狀態、檔案類型、MIME 類型、影像大小、資產建立、修改和過期日期，以及按目前使用者捨棄的資產進行篩選。您也可以套用自訂篩選條件，以搜尋「垃圾桶」資料夾中的適當資產。如需使用標準和自訂篩選器的詳細資訊，請參閱如何[在Assets檢視中搜尋資產](/help/assets/search-assets-view.md)。
 * **設定**：您可以使用&#x200B;**設定**&#x200B;來設定Assets檢視的各種選項，例如中繼資料表單、報表和分類管理。
 
@@ -100,7 +97,7 @@ Other use cases after previewing.
 
 * 若要提供文件意見回饋，請使用右側邊欄提供的[!UICONTROL 編輯此頁面]![來編輯頁面](assets/do-not-localize/edit-page.png)或[!UICONTROL 記錄問題]![來建立 GitHub 問題](assets/do-not-localize/github-issue.png)
 
-* 連絡[客戶服務](https://experienceleague.adobe.com/zh-hant?support-solution=General#support)
+* 連絡[客戶服務](https://experienceleague.adobe.com/?support-solution=General#support)
 
 >[!MORELIKETHIS]
 >
