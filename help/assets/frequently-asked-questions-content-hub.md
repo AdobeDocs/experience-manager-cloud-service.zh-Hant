@@ -2,10 +2,10 @@
 title: Content Hub 常見問題 (FAQ)
 description: 了解一些 Content Hub 最常見問題 (FAQ) 的答案。
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
-source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
-workflow-type: ht
-source-wordcount: '1293'
-ht-degree: 100%
+source-git-commit: 642440e1349eb94adb2f1875a0c5f36d0673d702
+workflow-type: tm+mt
+source-wordcount: '1496'
+ht-degree: 87%
 
 ---
 
@@ -44,7 +44,7 @@ Content Hub 是 Adobe 提供和維護的功能，沒有任何需要透過開發/
 
 在沙箱程式或其編寫生產環境中有一項 Content Hub 的搶先體驗方案。如需更多資訊，請參閱[沙箱程式簡介](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)。若要了解有關搶先體驗方案的詳細資訊，請聯絡您的 Adobe 客戶團隊。
 
-Content Hub 目前尚不適用於非生產環境 (中繼和開發)。Assets Ultimate 的中繼/開發環境預計將於 2025 年 3 月推出。
+Content Hub 目前尚不適用於非生產環境 (中繼和開發)。Assets Ultimate的階段/開發環境預計於2025年3月推出。
 
 ## 為什麼我登入 Content Hub 後看不到任何資產？ {#no-assets-in-content-hub}
 
@@ -97,3 +97,42 @@ Adobe 提供從 Brand Portal 到 Content Hub 的遷移支援，您可以透過�
 ## 為什麼我在 Content Hub 中看不到「產品設定/設定」選項？ {#ui-configuration-option-missing}
 
 若要存取[「設定」使用者介面](/help/assets/configure-content-hub-ui-options.md)，您必須是 [Content Hub 管理員](/help/assets/deploy-content-hub.md##onboard-content-hub-administrator)。如果您獲指派至 Adobe Admin Console 中生產作者執行個體上的 AEM 管理員產品設定檔，但仍看不到設定選項，請確定 AEM 管理員產品設定檔未被重新命名。如需更多詳細資訊，請參閱 [AEM as a Cloud Service 團隊和產品設定檔](/help/onboarding/aem-cs-team-product-profiles.md)。
+
+## Content Hub如何解決Brand Portal的限制？ {#content-hub-brand-portal-comparison}
+
+
+下列表格概述了兩種解決方案之間的主要區別：
+
+| 區域 | 功能 | Content Hub | Brand Portal |
+|---|---|----|----|
+| 設定發佈體驗 | 設定篩選器、資產詳細資料和新增資產頁面的中繼資料 | ✓ | − |
+|  | 從入口網站設定外部連結 | ✓ | − |
+|  | 設定橫幅訊息 | ✓ | ✓ |
+|  | 設定品牌推廣的橫幅影像 | ✓ | ✓ |
+|  | 根據品牌需求設定UI的主要和次要顏色 | ✓ | − |
+| 從DAM共用資產 | 從DAM共用原始核准的資產 | ✓ | ✓ |
+|  | 已核准的資產變更已自動同步 | ✓ | − |
+| 搜尋和篩選器 | 動態篩選器（選項會根據顯示的資產以動態方式顯示） | ✓ | − |
+|  | 搜尋歷史記錄 | ✓ | − |
+| 資產上傳 | 本機磁碟機 | ✓ | ✓ |
+|  | 上傳資產時新增可設定的中繼資料 | ✓ | − |
+| 下載和轉譯 | 下載原始資產 | ✓ | ✓ |
+|  | 從DAM共用和下載靜態轉譯 | ✓ | ✓ |
+|  | 下載動態轉譯（預設集和智慧型裁切） | ✓ | ✓ |
+|  | 可限制檢視和下載已過期的資產 | ✓ | − |
+| 連結共用和集合 | 已登入使用者的連結共用 | ✓ | ✓ |
+|  | 公開集合 | ✓ | ✓ |
+|  | 在集合中搜尋 | ✓ | − |
+|  | 匿名連結共用 | ✓ | ✓ |
+|  | 私人集合 | ✓ | ✓ |
+| 權限 | ACL型許可權 | − | ✓ |
+|  | 屬性型存取控制 | ✓ | − |
+| 快速整合 | 在Adobe Express中編輯Content Hub Assets並儲存至DAM | ✓ | − |
+| 控制面板和報表 | 見解儀表板 | ✓ | − |
+| 使用者介面擴展性 | 資產詳細資訊頁面上的自訂擴充功能點 | 可用性限制 | − |
+| 即將推出的創新功能 | 依使用者的最愛集合 | ✓ | − |
+|  | 管理員釘選的集合 | ✓ | − |
+|  | 語意搜尋 | ✓ | − |
+|  | 本地化的搜尋和中繼資料顯示 | ✓ | − |
+
+
