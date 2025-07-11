@@ -4,9 +4,9 @@ description: 瞭解Universal Editor所需的資料屬性和專案型別。
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 1a122fee45fadfb32239d9407aeac0a59b4b2470
+source-git-commit: 597315a7d569ebd62243322c543627b7a3535a6b
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '554'
 ht-degree: 45%
 
 ---
@@ -52,6 +52,6 @@ ht-degree: 45%
 * 不需要直接在設定`data-aue-type`的標籤上進行。
 * 如果未設定，則會使用最接近父項的`data-aue-resource`屬性。
 
-當您想要在中編輯時，`data-aue-prop`為必要專案，但容器為選用專案除外（若設定容器為內容片段且prop指向多重參考欄位）。
+當您想要在內容中進行編輯時需要`data-aue-prop`，但選用容器除外（如果設定容器為內容片段且prop指向多重參考欄位）。
 
 * `data-aue-prop`是`data-aue-resource`之主索引鍵要更新的屬性。

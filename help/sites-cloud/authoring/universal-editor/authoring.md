@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 9941c652a1509934662cdaae6d187d1a28a1cc31
+source-git-commit: 597315a7d569ebd62243322c543627b7a3535a6b
 workflow-type: tm+mt
-source-wordcount: '2222'
+source-wordcount: '2252'
 ht-degree: 19%
 
 ---
@@ -129,6 +129,8 @@ ht-degree: 19%
 1. 然後，在「屬性」面板中選取「新增」圖示。
 
    ![選取新增圖示](assets/add-icon.png)
+
+1. 如果容器允許多個元件，請從下拉式清單中選取您要插入的元件。 如果只允許一個元件，則會自動插入該元件。
 
 該元件會被插入到容器中並可在編輯器中對其進行編輯。
 

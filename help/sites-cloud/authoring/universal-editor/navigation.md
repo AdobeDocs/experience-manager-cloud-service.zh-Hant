@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 40f3f4652dbfce9bda65b8e69c349b9a8a563469
+source-git-commit: 597315a7d569ebd62243322c543627b7a3535a6b
 workflow-type: tm+mt
-source-wordcount: '1782'
+source-wordcount: '1820'
 ht-degree: 26%
 
 ---
@@ -79,7 +79,7 @@ Experience Cloud 標頭會始終顯示在畫面頂端。這是一個錨點，說
 
 #### Experience Manager {#experience-manager}
 
-選取標頭左側的Adobe Experience Cloud連結，即可導覽至Experience Manager解決方案的根目錄，以存取如[Cloud Manager](/help/onboarding/cloud-manager-introduction.md)、[Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)和[Software Distribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hant)之類的工具。
+選取標頭左側的Adobe Experience Cloud連結，即可導覽至Experience Manager解決方案的根目錄，以存取如[Cloud Manager](/help/onboarding/cloud-manager-introduction.md)、[Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)和[Software Distribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)之類的工具。
 
 ![全域導覽按鈕](assets/global-navigation.png)
 
@@ -154,6 +154,10 @@ Universal Editor工具列永遠出現在熒幕頂端[Experience Cloud標題](#ex
 如果您需要[設定本機開發目的的自訂驗證標頭](/help/implementing/universal-editor/developer-overview.md#auth-header)，請選取驗證標頭設定圖示。
 
 ![驗證標題設定按鈕](assets/authentication-header-settings.png)
+
+>[!NOTE]
+>
+>預設會隱藏此按鈕，因為大多數情況下它的值有限。 如有需要，請透過與您的Adobe相關聯的電子郵件地址，傳送電子郵件至您的Adobe ID客戶成功經理。
 
 #### 模擬器設定 {#emulator}
 
