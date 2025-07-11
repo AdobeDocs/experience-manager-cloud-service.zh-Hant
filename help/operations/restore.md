@@ -1,18 +1,18 @@
 ---
-title: AEM as a Cloud Service 中的內容還原
+title: 在AEM as a Cloud Service中還原內容
 description: 瞭解如何使用 Cloud Manager 從備份中還原 AEM as a Cloud Service 內容。
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
 feature: Operations
 role: Admin
-source-git-commit: f5dcf76b662e8bec9248ca11f133f9a82142d877
+source-git-commit: 3aff6beda8bcafc884c46ffdc55c530d581543e4
 workflow-type: tm+mt
-source-wordcount: '1323'
-ht-degree: 32%
+source-wordcount: '1359'
+ht-degree: 29%
 
 ---
 
 
-# AEM as a Cloud Service中的內容還原 {#content-restore}
+# 在AEM as a Cloud Service中還原內容 {#content-restore}
 
 您可以使用Cloud Manager從備份中還原AEM as a Cloud Service內容。
 
@@ -20,7 +20,7 @@ ht-degree: 32%
 
 Cloud Manager 的自助還原程式會從 Adobe 系統備份中複製資料，並將其還原到其原始環境。 執行還原以將已遺失、損壞或意外刪除的資料恢復至其原始狀態。
 
-還原程式只會影響內容，而不會變更您的程式碼和 AEM 版本。 您可以隨時啟動個別環境的還原操作。
+還原程式只會影響內容，而不會變更您的程式碼和 AEM 版本。 您可以隨時啟動個別環境的還原操作。 （如果您需要以簡單快速的方式還原先前部署的原始程式碼，而不需要啟動新的管道執行，則可以使用[還原先前部署的程式碼](/help/operations/restore-previous-code-deployed.md)）。
 
 Cloud Manager 提供兩種型別的備份，您可以從中還原內容。
 
@@ -87,7 +87,7 @@ Cloud Manager 提供兩種型別的備份，您可以從中還原內容。
      >
      >**環境**&#x200B;卡僅列出三個環境。 按一下卡片中的[顯示全部&#x200B;**]以檢視程式的**&#x200B;全部&#x200B;*環境。*
 
-1. 在「環境」表格中，在您要還原其內容的環境右側，按一下![更多圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，然後按一下&#x200B;**還原內容**。
+1. 在「環境」表格中，在您要還原其內容的環境右側，按一下![更多圖示或省略符號選單圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，然後按一下&#x200B;**還原內容**。
 
    ![從省略符號選單還原內容選項](/help/operations/assets/environments-ellipsis-menu.png)
 

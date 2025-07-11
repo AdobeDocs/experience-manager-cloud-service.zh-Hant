@@ -5,10 +5,10 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f5dcf76b662e8bec9248ca11f133f9a82142d877
+source-git-commit: 3e7ce0c7f330ba92b57e36ea8fe5bb17b5998cb1
 workflow-type: tm+mt
-source-wordcount: '2474'
-ht-degree: 41%
+source-wordcount: '2488'
+ht-degree: 40%
 
 ---
 
@@ -161,9 +161,13 @@ ht-degree: 41%
    ![檢視環境詳細資訊](assets/view-environment-details.png)
 
 
-## 還原環境的內容(Alpha) {#restore-environment}
+## 還原環境的內容 {#restore-environment}
 
 請參閱[在AEM as a Cloud Service中還原內容](/help/operations/restore.md)。
+
+## 還原先前部署的程式碼 {#restore-previous-code-deployed}
+
+請參閱[還原先前部署在AEM as a Cloud Service](/help/operations/restore-previous-code-deployed.md)中的程式碼。
 
 
 ### 存取預覽服務 {#access-preview-service}
@@ -304,7 +308,7 @@ Cloud Manager 為每個 AEM as a Cloud Service 環境提供預覽服務 (作為�
 
 只有具有&#x200B;**開發人員**&#x200B;角色的使用者才能存取 **Developer Console**。但是，對於沙箱計畫，任何有權存取沙箱計畫的使用者都可以存取&#x200B;**Developer Console**。
 
-如需更多詳細資訊，請參閱[休眠和去休眠沙箱環境](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation)。
+如需更多詳細資訊，請參閱[休眠和去休眠沙箱環境](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation)。
 
 按一下個別環境的&#x200B;**更多圖示**&#x200B;時，此選項也可從&#x200B;**總覽**&#x200B;視窗的![環境](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)索引標籤中使用。
 
