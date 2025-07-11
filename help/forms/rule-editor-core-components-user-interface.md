@@ -147,7 +147,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 1. 在Else陳述式中，從&#x200B;**[!UICONTROL 選取動作]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL 隱藏]**。
    ![when-else](assets/when-else-1.png)
 
-1. 從&#x200B;**[!UICONTROL 拖放物件上的[表單物件]索引標籤中拖放]**&#x200B;配偶薪資&#x200B;**[!UICONTROL 欄位，或選取這裡]**&#x200B;欄位。 或者，選取&#x200B;**[!UICONTROL 拖放物件或選取這裡]**&#x200B;欄位，然後從躍現式選單中選取&#x200B;**[!UICONTROL 配偶薪資]**欄位，這會列出表單中的所有表單物件。
+1. 從&#x200B;**[!UICONTROL 拖放物件上的[表單物件]索引標籤中拖放]**&#x200B;配偶薪資&#x200B;**[!UICONTROL 欄位，或選取這裡]**&#x200B;欄位。 或者，選取&#x200B;**[!UICONTROL 拖放物件或選取這裡]**&#x200B;欄位，然後從躍現式選單中選取&#x200B;**[!UICONTROL 配偶薪資]**&#x200B;欄位，這會列出表單中的所有表單物件。
    ![when-else](assets/when-else-2.png)
 
    規則在規則編輯器中會顯示如下。
