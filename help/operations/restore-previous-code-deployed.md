@@ -1,13 +1,13 @@
 ---
-title: 還原先前在AEM as a Cloud Service中部署的Source程式碼
+title: 還原先前部署的Source程式碼
 description: 瞭解如何將環境還原至其上次成功建置的&amp；ndash；不需要執行管道。
 feature: Operations
 role: Admin
 badge: label="英文字母" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
-source-git-commit: d5a740aa3133504f394933bc77a735f7d14230ba
+source-git-commit: ae90f527d398af40cf9e6963d2e27de3368f2e8f
 workflow-type: tm+mt
-source-wordcount: '529'
-ht-degree: 3%
+source-wordcount: '523'
+ht-degree: 4%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->&#x200B;>本文所述的功能只能透過早期採用者Alpha程式取得。 若要註冊Alpha，請參閱管道部署的[一鍵回覆](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback)。
+>>本文所述的功能只能透過早期採用者Alpha程式取得。 若要註冊Alpha，請參閱管道部署的[一鍵回覆](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback)。
 
 使用&#x200B;**還原先前部署的程式碼**，將環境立即復原到其上次成功的組建 — 不需要執行管道。
 
