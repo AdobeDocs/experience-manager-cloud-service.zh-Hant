@@ -4,9 +4,10 @@ description: 瞭解如何將環境還原至其上次成功建置的&amp；ndash�
 feature: Operations
 role: Admin
 badge: label="英文字母" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
-source-git-commit: ae90f527d398af40cf9e6963d2e27de3368f2e8f
+exl-id: 8f804f55-a66d-47ad-a48d-61b861cef4f7
+source-git-commit: 19e23785f2c4fbfa5a244864fe16500c1e7e128b
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '522'
 ht-degree: 4%
 
 ---
@@ -15,7 +16,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->&#x200B;>本文所述的功能只能透過早期採用者Alpha程式取得。 若要註冊Alpha，請參閱管道部署的[一鍵回覆](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback)。
+>本文所述的功能只能透過早期採用者Alpha程式取得。 若要註冊Alpha，請參閱管道部署的[一鍵回覆](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback)。
 
 使用&#x200B;**還原先前部署的程式碼**，將環境立即復原到其上次成功的組建 — 不需要執行管道。
 
@@ -31,10 +32,10 @@ ht-degree: 4%
 
 * 您擁有&#x200B;**環境還原建立**&#x200B;許可權。 如需管理許可權的詳細資訊，請參閱[自訂許可權](/help/implementing/cloud-manager/custom-permissions.md)。
 * 您的組織已註冊早期採用者計畫，且功能標幟已開啟。
-* 程式會在&#x200B;**AEM as a Cloud Service**&#x200B;上執行。
-* 選擇的環境是&#x200B;**開發**&#x200B;環境(暫時的Alpha限制)。
-* 該環境的最後一個管道已於&#x200B;**成功**&#x200B;完成，並在&#x200B;**少於10天**&#x200B;前執行。
-* 環境狀態為&#x200B;**正在執行**，而且沒有管道正在進行中。
+* 程式會在AEM as a Cloud Service上執行。
+* 選擇的環境是`Development`環境(暫時的Alpha限制)。
+* 該環境的最後一個管道已成功完成，並在&#x200B;**少於10天**&#x200B;前執行。
+* 環境狀態為&#x200B;*正在執行*，而且沒有管道正在進行中。
 * 您要還原的目標原始程式碼版本已在30天內&#x200B;**部署**。
 
 如果任何檢查失敗，Cloud Manager會開啟下列對話方塊，其中列出一或多個未滿足的條件，並停用&#x200B;**Confirm**，以防止還原。
