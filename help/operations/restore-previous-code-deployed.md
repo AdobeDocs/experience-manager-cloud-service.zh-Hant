@@ -5,9 +5,9 @@ feature: Operations
 role: Admin
 badge: label="英文字母" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: 8f804f55-a66d-47ad-a48d-61b861cef4f7
-source-git-commit: 19e23785f2c4fbfa5a244864fe16500c1e7e128b
+source-git-commit: 72b80f411ee39674530c1c41349329604e127e1e
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '507'
 ht-degree: 4%
 
 ---
@@ -34,9 +34,8 @@ ht-degree: 4%
 * 您的組織已註冊早期採用者計畫，且功能標幟已開啟。
 * 程式會在AEM as a Cloud Service上執行。
 * 選擇的環境是`Development`環境(暫時的Alpha限制)。
-* 該環境的最後一個管道已成功完成，並在&#x200B;**少於10天**&#x200B;前執行。
+* 該環境的最後一個管道已成功完成，並在&#x200B;**少於30天**&#x200B;前執行。
 * 環境狀態為&#x200B;*正在執行*，而且沒有管道正在進行中。
-* 您要還原的目標原始程式碼版本已在30天內&#x200B;**部署**。
 
 如果任何檢查失敗，Cloud Manager會開啟下列對話方塊，其中列出一或多個未滿足的條件，並停用&#x200B;**Confirm**，以防止還原。
 
