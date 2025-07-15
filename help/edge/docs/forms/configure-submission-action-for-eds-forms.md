@@ -1,37 +1,37 @@
 ---
-title: 使用Edge Delivery Services設定AEM Forms的提交動作
-description: 瞭解如何使用Edge Delivery Services在AEM Forms中設定提交動作。 在Forms提交服務和AEM發佈提交動作之間選擇，以安全有效地處理表單資料。
+title: 透過 Edge Delivery Services 設定 AEM Forms 的提交動作
+description: 了解如何使用 Edge Delivery Services 設定 AEM Forms 中的提交動作。選擇表單提交服務或 AEM Publish 提交動作，安全有效率地處理表單資料。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 8f490054-f7b6-40e6-baa3-3de59d0ad290
 source-git-commit: 75d8ea4f0913e690e3374d62c6e7dcc44ea74205
 workflow-type: tm+mt
 source-wordcount: '2166'
-ht-degree: 0%
+ht-degree: 99%
 
 ---
 
-# 設定表單提交：您的資料前往何處？
+# 設定表單提交：資料的去處為何？
 
-使用者按一下表單上的&#x200B;**提交**&#x200B;後，您需要告訴Edge Delivery Services如何處理該資料。 您有兩個主要選項：
+使用者按一下表單上的「**提交**」之後，您需要告訴 Edge Delivery Services 該如何處理這些資料。您有兩個主要選項︰
 
-## 方法1：使用AEM Forms提交服務（簡化）
+## 方法 1：使用 AEM Forms 提交服務 (簡易)
 
-此服務適用於常見且直接的動作，例如傳送資料至試算表或電子郵件。
+這項服務適合常見、簡單的動作，例如將資料傳送至試算表或電子郵件。
 
-**有什麼能協助您？**
+**這項服務的內容及所能提供的協助為何？**
 
-[Forms提交服務](/help/forms/forms-submission-service.md)是Adobe代管的端點。 當您的表單提交資料給它時，此服務會接管並執行預先設定的動作。 其設計易於設定。 您可以設定：提交至試算表或電子郵件：
+[表單提交服務](/help/forms/forms-submission-service.md)是 Adobe 託管的端點。當您的表單將資料提交至該服務後，其會接管並執行預先設定的動作。這項服務的設定方式相當容易。您可以設定：提交至試算表或電子郵件：
 
-* **提交至試算表：**&#x200B;自動將提交的表單資料新增為Google工作表或Microsoft Excel檔案(儲存在OneDrive或SharePoint上)中的新列。
-* **傳送電子郵件：**&#x200B;將包含表單資料的電子郵件傳送至您指定的一個或多個電子郵件地址。
+* **提交至試算表：**&#x200B;自動將所提交的表單資料新增為 Google Sheet 或 Microsoft Excel 檔案中新的一列 (儲存於 OneDrive 或 SharePoint 上)。
+* **傳送電子郵件：**&#x200B;將內含表單資料的電子郵件傳送至您指定的一個或多個電子郵件地址。
 
-#### 重要：設定需求
+#### 重要：進行設定所需的條件
 
-* **試算表存取：**&#x200B;若要將資料傳送至OneDrive/SharePoint上的Google工作表或Excel檔案，Adobe服務帳戶（通常為`forms@adobe.com`）通常需要該特定試算表的&#x200B;**編輯許可權**。
-* **搶先存取方案：**&#x200B;此服務的部分功能，尤其是試算表功能，可能屬於搶先存取方案的一部分。 您可能需要透過寄送電子郵件給`aem-forms-ea@adobe.com`或填寫包含您專案詳細資料的特定Adobe表單來請求存取權。 請務必檢視最新的Adobe檔案。
+* **試算表存取權：**&#x200B;若要將資料傳送至 OneDrive/SharePoint 上的 Google Sheet 或 Excel 檔案，Adobe 服務帳戶 (大多為 `forms@adobe.com`) 通常需要該特定試算表的&#x200B;**編輯權限**。
+* **搶先體驗計劃：**&#x200B;這項服務的某些功能 (尤其是試算表相關功能)，可能屬於搶先體驗計劃的一部分。您可能需要傳送電子郵件至 `aem-forms-ea@adobe.com`，或填寫含有專案詳細資料的特定 Adobe 表單來請求存取權。請務必查看最新的 Adobe 文件。
 
-**Forms提交服務流程圖**
+**表單提交服務流程圖**
 <!--
 ```mermaid
     graph TD
@@ -46,41 +46,40 @@ ht-degree: 0%
     style ExcelSheet fill:#90ee90,stroke:#333
     style Email fill:#add8e6,stroke:#333
 ```-->
+![表單提交](/help/forms/assets/eds-fss.png)
 
-![Forms提交](/help/forms/assets/eds-fss.png)
+此流程圖呈現出表單提交服務如何取得所提交的資料，以及將其傳送至已設定的試算表或電子郵件。
 
-此流程圖顯示Forms提交服務如何接受提交的資料，並將其傳送至已設定的試算表或電子郵件。
+## 方法 2：提交至您的 AEM Publish 執行個體 (進階)
 
-## 方法2：提交至您的AEM發佈執行個體（進階）
+對於較複雜的需求，[表單 (尤其是以通用編輯器所建立的表單) 可以將資料直接傳送至您的 AEM as a Cloud Service Publish 執行個體](/help/forms/configure-submit-actions-core-components.md)。這能發揮 AEM 的完整後端功能。
 
-針對更複雜的需求，[表單（尤其是使用通用編輯器建立的表單）可以直接將資料傳送至您的AEM as a Cloud Service發佈執行個體](/help/forms/configure-submit-actions-core-components.md)。 這可解鎖AEM的完整後端功能。
+**什麼情況下需要提交至 AEM Publish？**
 
-**您何時需要提交至AEM Publish？**
+* 若要於提交後觸發自訂的 AEM 工作流程。
+* 若要使用 AEM Form 資料模型 (FDM) 與資料庫或其他企業系統進行整合。
+* 若要連接第三方服務，像是 Marketo、Microsoft Power Automate 或 Adobe Workfront Fusion。
+* 若要將資料儲存在特定位置，例如 Azure Blob Storage 或 SharePoint 清單/文件資料庫 (而非僅是簡單的試算表)。
+* AEM 內具有複雜的伺服器端驗證或資料處理邏輯。
 
-* 在提交後觸發自訂AEM工作流程。
-* 使用AEM表單資料模型(FDM)來整合資料庫或其他企業系統。
-* 連線第三方服務，例如Marketo、Microsoft Power Automate或Adobe Workfront Fusion。
-* 將資料儲存在Azure Blob Storage或SharePoint清單/檔案庫等特定位置（不只是簡單的試算表）。
-* 當您在AEM中有複雜的伺服器端驗證或資料處理邏輯時。
+**可供使用的提交動作 (AEM Publish 提交)**
 
-**可用的提交動作(AEM發佈提交)**
-
-* [提交至REST端點](/help/forms/configure-submit-action-restpoint.md)
-* [傳送電子郵件(使用AEM的郵件服務)](/help/forms/configure-submit-action-send-email.md)
-* [使用表單資料模型(FDM)提交](/help/forms/configure-data-sources.md)
+* [提交至 REST 端點](/help/forms/configure-submit-action-restpoint.md)
+* [傳送電子郵件 (使用 AEM 的郵件服務)](/help/forms/configure-submit-action-send-email.md)
+* [使用表單資料模型 (FDM) 提交](/help/forms/configure-data-sources.md)
 * [叫用 AEM 工作流程](/help/forms/aem-forms-workflow-step-reference.md)
-* [提交至SharePoint （以清單專案或檔案的形式）](/help/forms/configure-submit-action-sharepoint.md)
-* [提交至OneDrive （作為檔案）](/help/forms/configure-submit-action-onedrive.md)
-* [提交到 Azure Blob 儲存體](/help/forms/configure-submit-action-azure-blob-storage.md)
-* [提交至Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
-* [提交至Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
+* [提交至 SharePoint (以清單項目或文件形式)](/help/forms/configure-submit-action-sharepoint.md)
+* [提交至 OneDrive (以文件形式)](/help/forms/configure-submit-action-onedrive.md)
+* [提交至 Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
+* [提交至 Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
+* [提交至 Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [提交至Adobe Marketo Engage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
 >[!NOTE]
 >
-> 即使從AEM Publish鎖定Google工作表/Excel，它涉及的設定步驟與直接的Forms提交服務不同。
+> 即使是從 AEM Publish 將目標選擇為 Google Sheet/Excel，其中也包含與直接的表單提交服務不同的設定步驟。
 
-**AEM發佈提交流程圖**
+**AEM Publish 提交流程圖**
 
 <!--```mermaid
     graph TD
@@ -97,35 +96,35 @@ ht-degree: 0%
     style Marketo fill:#add8e6,stroke:#333
 ```-->
 
-![AEM發佈提交流程圖](/help/forms/assets/eds-aem-publish.png)
-此流程圖顯示提交至AEM Publish的表單，該表單接著會處理複雜的後端工作。
+![AEM Publish 提交流程圖](/help/forms/assets/eds-aem-publish.png)
+此流程圖呈現出表單提交至 AEM Publish，以及該處接續處理的複雜後端任務。
 
-### Forms提交服務與AEM發佈提交之比較
+### 表單提交服務與 AEM Publish 提交的比較
 
-| 功能 | Forms提交服務 | AEM發佈提交內容 |
+| 功能 | 表單提交服務 | AEM Publish 提交 |
 | :- | :- | :-- |
-| **最適合** | 對試算表、電子郵件通知的簡單資料擷取 | 複雜的工作流程、企業整合、自訂邏輯 |
-| **表單製作** | 適用於檔案型表單；適用於簡單UE表單，則為確定 | Best for Universal Editor編寫的表單 |
-| **安裝工作量** | 低（通常為簡單的設定） | 更高(需要AEM Publish、Dispatcher、OSGi、CDN設定) |
-| **後端系統** | Adobe託管服務 | 您的AEM as a Cloud Service發佈執行個體 |
-| **彈性** | 僅限於工作表/電子郵件 | 彈性十足，提供各種AEM Forms動作 |
-| **範例** | 連絡表單資料至Google工作表 | 觸發AEM核准工作流程的貸款申請 |
+| **最適合** | 簡單地將資料擷取至試算表、電子郵件通知 | 複雜的工作流程、企業整合、自訂邏輯 |
+| **表單製作** | 最適合文件型內容；適合簡單的 UE 表單 | 最適合以通用編輯器所製作的表單 |
+| **設定工作量** | 低 (通常為簡單設定) | 較高 (需要 AEM Publish、Dispatcher、OSGi、CDN 設定) |
+| **後端系統** | Adobe 託管服務 | 您的 AEM as a Cloud Service Publish 執行個體 |
+| **靈活性** | 僅限於 Sheet/電子郵件 | 非常靈活，全方位的 AEM Forms 動作 |
+| **範例** | 將聯絡表單資料連結至 Google Sheet | 觸發 AEM 核准工作流程的貸款申請 |
 
-## 如何在不同的網站或頁面中內嵌Forms
+## 如何跨不同網站或頁面嵌入表單
 
-有時，您會想要顯示在不同網頁或網站上的單一位置（例如中央「表單網站」）建立及管理的表單。
+有時，您會希望在不同的網頁或網站上，顯示自同一個地方 (例如，中心「表單網站」) 所建立和管理的表單。
 
-### 為什麼要內嵌表單？
+### 嵌入表單的可能原因有哪些？
 
-* 您有一個使用通用編輯器建立的標準「聯絡我們」表單，該表單需要顯示在使用檔案式撰寫建立的多個登入頁面上。
-* 您的主要網站內容位於檔案製作(DA)中，且您需要包含特殊表單。
-* 您想要在多個不同的EDS專案中重複使用單一、維護良好的表單。
+* 您有一個以通用編輯器建立的標準「聯絡我們」表單，需要出現在透過文件型製作所建置的多個登陸頁面上。
+* 您網站的主要內容位於文件製作 (DA) 中，而您需要納入一個專門的表單。
+* 您希望在多個不同的 EDS 專案中重複使用維護良好的單一表單。
 
-### 表單內嵌在技術上如何運作
+### 表單嵌入作業的技術原理
 
-您要顯示表單的頁面（我們將其稱為「主機頁面」）將包含一些程式碼（通常是特殊區塊或指令碼）。 當使用者造訪主機頁面時，此程式碼會對託管實際表單的URL提出請求(將其稱為「表單Source」)。 表單Source接著會傳回其HTML，並由主機頁面進行插入和顯示。
+您希望表單出現的頁面 (接下來稱之為「主機頁面」) 會包含一些程式碼 (通常是特殊的區塊或指令碼)。使用者造訪主機頁面時，此程式碼會向託管實際表單的 URL (接下來稱之為「表單來源」) 發出請求。然後，表單來源會傳回其 HTML，由主機頁面將其注入並顯示出來。
 
-**內嵌式表單架構**
+**嵌入式表單架構**
 
 <!--```mermaid
    graph LR
@@ -145,26 +144,25 @@ ht-degree: 0%
     style FetchForm fill:#fff2cc,stroke:#333
     style Submission fill:#f0fff0,stroke:#333
 ```-->
+![嵌入式表單架構](/help/forms/assets/eds-embedded-form.png)
+此圖表呈現主機頁面自表單來源取得表單 HTML 並將其顯示的過程。提交會使用原始表單已設定的端點。
 
-![內嵌式表單架構](/help/forms/assets/eds-embedded-form.png)
-此圖表顯示從表單Source擷取表單HTML並顯示該表單的「主機頁面」 。 提交使用原始表單已設定的端點。
+## 設定嵌入式表單的 CORS
 
-## 為內嵌Forms設定CORS
+[CORS (跨來源資源共用)](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing) 是一種瀏覽器安全性功能。如果您的主機頁面 (例如，`site-a.com`) 嘗試從不同的網域取得表單 (例如，`forms-site-b.com`)，瀏覽器會將其封鎖，除非 `forms-site-b.com` 透過 CORS 標頭明確地允許它。
 
-[CORS （跨原始資源共用）](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing)是瀏覽器安全功能。 如果您的主機頁面（例如`site-a.com`）嘗試從不同的網域（例如`forms-site-b.com`）擷取表單，則瀏覽器會封鎖它，除非`forms-site-b.com`明確允許透過CORS標頭擷取表單。
+若&#x200B;**表單來源伺服器**&#x200B;未具備正確的 CORS 標頭，瀏覽器會阻止主機頁面載入表單，因此您所嵌入的表單將不會出現。
 
-**表單Source伺服器**&#x200B;上若沒有正確的CORS標頭，瀏覽器會導致Host Page無法載入表單，且您的內嵌表單不會顯示。
+### 如何在提供表單服務的網站上設定 CORS？
 
-### 如何在提供表單的網站上設定CORS？
+您需要設定託管&#x200B;**表單來源**&#x200B;的伺服器，藉以在其回應中傳送特定的 HTTP 標頭。具體方法取決於您的 EDS 設定 (例如，針對 Franklin 專案，通常會是於 GitHub 存放庫中控制 CDN 行為或 Edge 工作程式邏輯的 `helix-config.yaml` 或類似設定檔中完成)。
+用於新增至表單來源回應的主要標頭如下：
 
-您必須設定主控&#x200B;**表單Source**&#x200B;的伺服器，以在其回應中傳送特定的HTTP標頭。 確切的方法取決於您的EDS設定（例如，對於Franklin專案，這通常會在控制CDN行為或邊緣工作者邏輯的GitHub存放庫中的`helix-config.yaml`或類似的設定檔案中完成）。
-要新增至Source表單回應的關鍵標頭：
+* `Access-Control-Allow-Origin: <URL_of_Host_Page>` (例如，`https://your-site.com`)。若為測試目的，您可以使用 `*`，但若用於生產，請指定確切的網域。
+* `Access-Control-Allow-Methods: GET, OPTIONS` (若表單提交本身亦屬於跨來源形式，您可能會需要 `POST`，但提交基本上會是獨立且通常同來源或專門設定的端點)。
+* `Access-Control-Allow-Headers: Content-Type` (以及您表單取得過程中可能使用的任何其他自訂標頭)。
 
-* `Access-Control-Allow-Origin: <URL_of_Host_Page>` （例如`https://your-site.com`）。 若要進行測試，您可以使用`*`，但若要用於生產，請指定確切的網域。
-* `Access-Control-Allow-Methods: GET, OPTIONS` (如果表單提交本身也是跨來源的，您可能會需要`POST`，但通常提交會移至個別的（通常是相同來源或特別設定的）端點)。
-* `Access-Control-Allow-Headers: Content-Type` （以及您的表單擷取可能使用的任何其他自訂標頭）。
-
-**範例（設定檔的概念性）：**
+**範例 (設定檔案的概念)：**
 
 ```yaml
         # In the configuration for the site HOSTING THE FORM (Form Source)
@@ -176,25 +174,25 @@ ht-degree: 0%
               Access-Control-Allow-Methods: GET, OPTIONS
 ```
 
-## 其他考量事項： CDN和多個程式碼基底(Helix 4)
+## 其他考量：CDN 和多個程式碼庫 (Helix 4)
 
-* **CDN規則：**&#x200B;您的CDN可能會提供Proxy要求的方法。 例如，CDN可以在內部路由對`host-page.com/embedded-form`的請求，以從`form-source.com/actual-form`擷取內容，使其對瀏覽器而言似乎是相同來源。 設定可能會很複雜。
-* **多個程式碼基底(Helix 4)：**&#x200B;如果您的主機頁面和表單Source位於不同的GitHub存放庫（在Helix 4設定中很常見），請確定主機頁面的程式碼基底中可以使用轉譯或管理表單所需的任何JavaScript「表單區塊」，或者從Source表單擷取的表單HTML是獨立的，並包含其所有必要的JavaScript。 原始檔案提到，對於「helix4具有不同程式碼基底，則您需要在兩個程式碼基底上新增Form區塊」。
+* **CDN 規則：**&#x200B;您的 CDN 可能會提供代理請求的途徑。例如，向 `host-page.com/embedded-form` 的請求可以透過 CDN 內部路由取得內容 `form-source.com/actual-form`，使其在瀏覽器中看起來為相同來源。設定方式可能很複雜。
+* **多個程式碼庫 (Helix 4)：**&#x200B;若您的主機頁面和表單來源位於不同的 GitHub 存放庫 (這在 Helix 4 設定中很常見)，請確保轉譯或管理表單所需的任何 JavaScript「表單區塊」在主機頁面的程式碼庫中皆可供使用，或者自表單來源所取得的表單 HTML 皆包含其所有必要的 JavaScript。來源文件提到，對於「具有不同程式碼庫的 helix4，需要在兩個程式碼庫上都新增 Form 區塊」。
 
-### 一般架構設定與組態步驟
+### 常見的架構設定與設定步驟
 
-以下是您可以設定表單的一些常見方式，這些方式結合了撰寫方法與提交策略以及關鍵設定點。
+以下為設定表單的一些常用方法，並結合製作方法和提交策略，以及主要設定點。
 
-#### 以檔案為基礎的表單，具有試算表/電子郵件提交
+#### 搭配試算表/電子郵件提交功能的文件型表單
 
-這是最簡單的設定。 您在Word/Google Docs中建立表單，然後透過Forms提交服務將資料提交至試算表或電子郵件。
+此為最簡單的設定。您在 Word/Google Docs 中建立表單，其便會透過表單提交服務將資料提交至試算表或電子郵件。
 
-1. 在Word/Google Doc/Sheet中使用指定的表格結構或表單區塊來定義您的表單。
-1. 在檔案（或相關設定）中，指定Forms提交服務的目標試算表URL或電子郵件地址。
-1. 請確定`forms@adobe.com` （或相關的服務帳戶）具有目標試算表的編輯存取權。
-1. 將檔案發佈到您的Edge Delivery網站。
+1. 使用指定的表格結構或表單區塊在 Word/Google Doc/Sheet 中定義您的表單。
+1. 在文件 (或相關設定) 中，指定表單提交服務的目標試算表 URL 或電子郵件地址。
+1. 確保 `forms@adobe.com` (或相關的服務帳戶) 具有目標試算表的編輯存取權。
+1. 將文件發佈至您的 Edge Delivery 網站。
 
-**Doc型+ Forms提交服務架構**
+**文件型 + 表單提交服務架構**
 <!--
 ```mermaid
     graph TD
@@ -210,21 +208,21 @@ ht-degree: 0%
         style Authoring fill:#e6ffe6,stroke:#333
 ```-->
 
-![Doc型+ Forms提交服務架構](/help/forms/assets/eds-doc-fss.png)
+![文件型 + 表單提交服務架構](/help/forms/assets/eds-doc-fss.png)
 
-#### 具有試算表/電子郵件提交的通用編輯器表單
+#### 搭配試算表/電子郵件提交功能的通用編輯器表單
 
-您使用視覺化通用編輯器建置表單，但還是使用簡易的Forms提交服務來擷取資料。
+您會使用視覺化通用編輯器建置表單，但仍以簡單的表單提交服務擷取資料。
 
-1. 使用AEM中的通用編輯器建立您的表單。
-1. 在UE中設定表單的提交動作，以使用「提交至Forms提交服務」選項。
-1. 指定目標試算表URL或電子郵件地址。
-1. 如果使用試算表，請確定`forms@adobe.com`具有編輯存取權。
-1. 從AEM將包含表單的頁面發佈到Edge Delivery網站。
+1. 在 AEM 中使用通用編輯器建立表單。
+1. 在 UE 中設定表單的提交動作，使用「提交至表單提交服務」選項。
+1. 指定目標試算表 URL 或電子郵件地址。
+1. 若使用試算表，請確保 `forms@adobe.com` 具有編輯存取權。
+1. 將內含表單的頁面自 AEM 發佈到您的 Edge Delivery 網站。
 
-   **通用編輯器+ Forms提交服務架構**
+   **通用編輯器 + 表單提交服務架構**
 
-   ![通用編輯器+ Forms提交服務架構](/help/forms/assets/eds-ue-fss.png)
+   ![通用編輯器 + 表單提交服務架構](/help/forms/assets/eds-ue-fss.png)
 
    <!--```mermaid
     graph TD
@@ -239,23 +237,23 @@ ht-degree: 0%
     ```
     -->
 
-#### 具有AEM發佈提交的通用編輯器表單（進階）
+#### 搭配 AEM 發佈提交功能的通用編輯器表單 (進階)
 
-此設定使用通用編輯器建立表單，並使用AEM Publish執行個體進行強大的後端處理（工作流程、FDM等）。 這需要更多設定。
+此設定使用通用編輯器建立表單，並使用 AEM Publish 執行個體進行強大的後端處理 (工作流程、FDM 等)。需要更多的設定步驟。
 
-1. **在UE中建立表單：**&#x200B;在通用編輯器中建置您的表單。 設定其提交動作以指向AEM Forms動作(例如「叫用AEM工作流程」、「使用表單資料模型提交」)。
-1. **AEM Dispatcher設定(在您的AEM發佈層級)：**
-   * **沒有重新導向：**&#x200B;請確定您的Dispatcher規則&#x200B;*不會*&#x200B;對`/adobe/forms/af/submit/...`個路徑提出的重新導向要求。
-   * **允許提交：**&#x200B;修改您的Dispatcher篩選器（例如，在`filters.any`中），從您的Edge Delivery網站的網域或IP位址明確`allow`個POST要求給`/adobe/forms/af/submit/...`。
-1. AEM中的&#x200B;**OSGi反向連結篩選器(在您的AEM發佈層級)：**
-   * 在AEM OSGi主控台(`/system/console/configMgr`)中，尋找並設定「Apache Sling反向連結篩選器」。
-   * 將您的Edge Delivery網站網域（例如`https://your-eds-domain.hlx.page`、`https://your-custom-eds-domain.com`）新增至「允許主機」或「允許主機RegExp」清單。 這會告訴AEM接受源自您EDS網站的提交內容。
-1. **CDN重新導向規則(在您的Edge Delivery CDN上)：**
-   * 您的Edge Delivery網站（例如`your-eds-domain.hlx.page`）需要正確將提交請求路由傳送到您的AEM發佈執行個體。
-   * 當您EDS頁面上的表單提交時，它可能會定位相對路徑，例如`/adobe/forms/af/submit/...`。 您的Edge Delivery CDN （或Edge Worker）上需要一條規則，指出：「如果請求到`your-eds-domain.hlx.page/adobe/forms/af/submit/...`，請將其轉寄（Proxy或重新導向）至`your-aem-publish-instance.com/adobe/forms/af/submit/...`。」
-   * 確切的實作取決於您的CDN提供者（例如Fastly VCL、Akamai屬性管理員、Cloudflare Workers）。
-1. **（選用） `constants.js`用於開發（在您的EDS專案的程式碼基底中）：**
-   * 若是本機開發，或您的使用者端表單指令碼需要知道完整的AEM發佈URL，您可以在Edge Delivery專案的GitHub存放庫中的`constants.js`或類似的設定檔案中設定此URL。 範例：
+1. **在 UE 中建立表單：**&#x200B;於通用編輯器中建立表單。將其提交動作設定為指向 AEM Forms 動作 (例如，「叫用 AEM 工作流程」、「使用表單資料模型提交」)。
+1. **AEM Dispatcher 設定 (於 AEM Publish 層級上)：**
+   * **無重新導向：**&#x200B;確保您的 Dispatcher 規則&#x200B;*不會*&#x200B;將對 `/adobe/forms/af/submit/...` 路徑發出的請求重新導向。
+   * **允許提交：**&#x200B;修改您的 Dispatcher 篩選器 (例如，在 `filters.any` 中)，藉以明確定義從您的 Edge Delivery 網站網域或 IP 位址向 `/adobe/forms/af/submit/...` 發送的 `allow` POST 請求。
+1. **AEM 中的 OSGi 反向連結篩選器 (於 AEM Publish 層級上)：**
+   * 在 AEM OSGi 控制台 (`/system/console/configMgr`) 中，找到並設定「Apache Sling 反向連結篩選器」。
+   * 將您的 Edge Delivery 網站網域 (例如，`https://your-eds-domain.hlx.page`、`https://your-custom-eds-domain.com`) 新增至「允許主機」或「允許主機 RegExp」清單。此操作會告知 AEM 接受來自您 EDS 網站的提交。
+1. **CDN 重新導向規則 (於 Edge Delivery CDN 上)：**
+   * 您的 Edge Delivery 網站 (例如，`your-eds-domain.hlx.page`) 需要將提交請求正確地路由至您的 AEM Publish 執行個體。
+   * 當您 EDS 頁面上的表單提交後，其可能會以類似 `/adobe/forms/af/submit/...` 的相對路徑為目標。您需要在 Edge Delivery CDN (或 Edge 工作程式) 上訂立一條規則，規定：「如果請求到達 `your-eds-domain.hlx.page/adobe/forms/af/submit/...`，將其轉寄 (代理或重新導向) 至 `your-aem-publish-instance.com/adobe/forms/af/submit/...`」。
+   * 具體實施方式取決於您的 CDN 提供者 (例如，Fastly VCL、Akamai Property Manager、Cloudflare Workers)。
+1. **(選用) `constants.js` 用於開發 (於 EDS 專案程式碼庫中)：**
+   * 針對本機開發，或者如果您的用戶端表單指令碼需要得知完整的 AEM Publish URL，您可以在 Edge Delivery 專案 GitHub 存放庫中的 `constants.js` 或類似設定檔案中進行設定。範例：
 
    ```javascript
        // in your-eds-project/scripts/constants.js
@@ -264,60 +262,60 @@ ht-degree: 0%
            // const submitUrl = `${AEM_PUBLISH_URL}/adobe/forms/af/submit/...`;
    ```
 
-1. **發佈：**&#x200B;將您的表單頁面從AEM發佈至EDS，並確定所有AEM設定在您的AEM發佈執行個體上皆為作用中。
+1. **發佈：**&#x200B;將您的表單頁面從 AEM 發佈至 EDS，並確保所有 AEM 設定在您的 AEM Publish 執行個體上屬於使用中狀態。
 
-   **Universal Editor + AEM發佈架構**
+   **通用編輯器 + AEM Publish 架構**
 
-![Universal Editor + AEM發佈架構](/help/forms/assets/eds-aem-publish.png)
+![通用編輯器 + AEM Publish 架構](/help/forms/assets/eds-aem-publish.png)
 
-以下流程顯示：使用者在EDS網站上提交，經CDN路由傳送至AEM Dispatcher，然後AEM發佈加以處理。
+此架構圖呈現出以下流程：使用者在 EDS 網站上提交，CDN 路由至 AEM Dispatcher，然後 AEM Publish 進行處理。
 
-#### 將表單內嵌至檔案製作(DA)頁面
+#### 將表單嵌入文件製作 (DA) 頁面
 
-您的主要網站內容是在檔案製作(DA)中建立。 您可以分別使用檔案式製作或通用編輯器來建立表單，然後將其內嵌至DA頁面。
+您的主要網站內容會於文件製作 (DA) 中建立。您可以使用文件型製作或通用編輯器分別建立表單，然後將其嵌入至您的 DA 頁面中。
 
-1. **建立並發佈表單：**
-   * 使用檔案式製作或通用編輯器來建立您的表單。
-   * 根據設定1、2或3，設定其提交方法(向Forms提交服務或AEM Publish)。
-   * 發佈此表單，讓表單在其自己的Edge Delivery URL上線（例如`.../forms/my-special-form`）。
-1. **設定CORS：**&#x200B;在代管此獨立表單的Edge Delivery網站/專案上，請確定CORS標題已設定為允許檔案編寫網站的網域擷取它。
-1. **在DA中製作頁面：**&#x200B;在檔案製作中建立或編輯您的頁面。
-1. **內嵌表單區塊：**&#x200B;在DA中使用適當的區塊來內嵌外部URL。 將此區塊指向您獨立發佈表單的URL。
-1. **發佈DA頁面：**&#x200B;發佈您的DA頁面。 現在會擷取並顯示表單。
+1. **建立與發佈表單：**
+   * 使用文件型製作或通用編輯器建立表單。
+   * 設定其提交方法 (根據設定 1、2 或 3，設定為表單提交服務或 AEM Publish)。
+   * 發佈此表單，使其在自身的 Edge Delivery URL (例如，`.../forms/my-special-form`) 上生效。
+1. **設定 CORS：**&#x200B;在託管此獨立表單的 Edge Delivery 網站/專案上，確保設定好 CORS 標頭，讓您的文件製作網站網域能夠取得它。
+1. **DA 中的製作頁面：**&#x200B;在文件製作中建立或編輯您的頁面。
+1. **嵌入表單區塊：**&#x200B;使用 DA 中的相應區塊嵌入外部 URL。將此區塊指向獨立發佈之表單的 URL。
+1. **發佈 DA 頁面：**&#x200B;發佈您的 DA 頁面。現在其便能夠取得並顯示表單。
 
-   **內嵌於DA架構中的Forms**
+   **嵌入 DA 架構的表單**
 
-   ![內嵌於DA架構中的Forms](/help/forms/assets/eds-forms-embedd-da.png)
+   ![嵌入 DA 架構的表單](/help/forms/assets/eds-forms-embedd-da.png)
 
-   這會顯示從其他EDS位置提取表單的DA頁面。 內嵌表單會處理自己的提交。
+   此架構圖呈現出 DA 頁面從另一個 EDS 位置提取表單。已嵌入的表單會處理其自己的提交。
 
 ## 疑難排解
 
-* **我的表單提交無法運作。**
-   * **檢查主控台錯誤：**&#x200B;開啟瀏覽器的開發人員主控台（通常是F12），並在您提交時在[網路]索引標籤或[主控台]索引標籤上尋找錯誤。
-   * **驗證提交URL：**&#x200B;表單是否嘗試提交至正確的端點(Forms提交服務URL或您的AEM發佈路徑)？
-   * **Forms提交服務：**&#x200B;如果傳送至試算表，`forms@adobe.com`是否獲得編輯存取權？ 試算表URL正確嗎？
-   * **AEM發佈提交：**
-      * 您的Dispatcher是否允許`/adobe/forms/af/submit/...`張貼內容？
-      * AEM Publish上的Sling查閱者篩選器是否已設定為允許您的EDS網域？
-      * 您針對`/adobe/forms/af/submit/...`的CDN重新導向規則是否正常運作？
+* **我的表單提交未生效。**
+   * **查看控制台錯誤：**&#x200B;開啟瀏覽器的開發人員控制台 (通常為 F12)，並尋找「網路」索引標籤或「控制台」標籤上的提交相關錯誤。
+   * **驗證提交 URL：**&#x200B;表單是否嘗試提交至正確的端點 (表單提交服務 URL 或您的 AEM Publish 路徑)？
+   * **表單提交服務：**&#x200B;若為傳送至試算表，`forms@adobe.com` 是否已授予編輯存取權？試算表 URL 是否正確？
+   * **AEM Publish 提交：**
+      * 您的 Dispatcher 是否允許至 `/adobe/forms/af/submit/...` 的 POST？
+      * AEM Publish 上的 Sling 反向連結篩選器是否設定為允許您的 EDS 網域？
+      * 您的 CDN 重新導向規則 `/adobe/forms/af/submit/...` 是否正常運作？
 
-* **我的內嵌表單未出現。**
+* **嵌入的表單沒有出現。**
 
-   * **CORS！**&#x200B;這是最常見的原因。 檢查瀏覽器主控台是否有CORS錯誤。 確定主控網站&#x200B;*的*&#x200B;表單具有正確的`Access-Control-Allow-Origin`標頭。
-   * **表單URL是否正確？**&#x200B;主機頁面上的內嵌程式碼是否指向表單的正確即時URL？
-   * **JavaScript區塊：**&#x200B;如果表單仰賴特定的JavaScript「表單區塊」來轉譯，該區塊的程式碼是否可在主機頁面上使用？
+   * **CORS！**&#x200B;這是最常見的原因。確認瀏覽器控制台是否有 CORS 錯誤。確保&#x200B;*託管*&#x200B;表單的網站具有正確的 `Access-Control-Allow-Origin` 標頭。
+   * **表單 URL 是否正確？**&#x200B;主機頁面上的嵌入程式碼是否指向表單的正確即時 URL？
+   * **JavaScript 區塊：**&#x200B;若表單依賴特定的 JavaScript「表單區塊」進行轉譯，該區塊的程式碼是否可以在主機頁面上使用？
 
-* **提交至AEM Publish時，我收到「403禁止」或「401未獲授權」。**
+* **提交至 AEM Publish 時，出現「403 禁止」或「401 未授權」。**
 
-   * 這通常指向AEM Publish上的Sling反向連結篩選器，不允許來自EDS網域的請求。 仔細檢查其設定。
-   * 如果您的AEM提交端點要求的話（雖然標準表單提交通常是匿名的），這也可能是驗證/授權問題。
+   * 這通常表示 AEM Publish 上的 Sling 反向連結篩選器不允許來自您 EDS 網域的請求。再次檢查其設定。
+   * 若您的 AEM 提交端點有驗證/授權的需要，也可能是此類問題，雖然標準表單提交通常是匿名的。
 
 ## 後續步驟
 
-本指南提供搭配AEM Edge Delivery Services使用表單的概觀。 如需特定設定的詳細逐步指示，請參閱Adobe Experience Manager官方檔案：
+本指南的內容概述了如何搭配 AEM Edge Delivery Services 使用表單。有關具體設定的更詳細逐步說明，請參閱 Adobe Experience Manager 官方文件：
 
-* [使用Edge Delivery Services Forms進行檔案式製作](/help/edge/docs/forms/tutorial.md)
-* [具有Edge Delivery Services Forms的通用編輯器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-* [檔案製作(DA)與內嵌內容](https://www.aem.live/developer/da-tutorial)
-* [AEM Forms提交服務](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
+* [文件型製作與 Edge Delivery Services 表單](/help/edge/docs/forms/tutorial.md)
+* [通用編輯器與 Edge Delivery Services 表單](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+* [文件製作 (DA) 和嵌入內容](https://www.aem.live/developer/da-tutorial)
+* [AEM 表單提交服務](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
