@@ -277,6 +277,7 @@ ht-degree: 97%
    * 從「**[!UICONTROL 選取運算子]**」欄位選取「**[!UICONTROL 減]**」。
 
    * 從「表單物件」索引標籤選取或拖放「**[!UICONTROL 其他扣除額]**」欄位到另一個「**[!UICONTROL 放置物件或選取此處]**」欄位。
+
      ![規則編輯器範例 15](/help/edge/docs/forms/assets/rule-editor18.png)
 
 1. 選取「**[!UICONTROL 完成]**」以儲存此規則。
@@ -294,6 +295,7 @@ ht-degree: 97%
    * 從「**[!UICONTROL 選取運算子]**」欄位選取「**[!UICONTROL 乘以]**」。
 
    * 從「**[!UICONTROL 選取選項]**」欄位選取「**數字**」，並在「**[!UICONTROL 輸入數字]**」欄位中輸入值 `10`。
+
      ![規則編輯器範例 18](/help/edge/docs/forms/assets/rule-editor21.png)
 1. 接下來，選取運算式欄位周圍醒目標示的區域，並選取「**[!UICONTROL 擴充運算式]**」。
    ![規則編輯器範例 19](/help/edge/docs/forms/assets/rule-editor22.png)
@@ -359,6 +361,7 @@ function days(endDate, startDate) {
 // eslint-disable-next-line import/prefer-default-export
 export { getFullName, days };
 ```
+
 ![新增自訂函數](/help/edge/docs/forms/assets/create-custom-function.png)
 
 ### 在規則編輯器中使用自訂函數

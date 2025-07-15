@@ -57,6 +57,7 @@ ht-degree: 97%
 ```js
 export const submitBaseUrl = 'https://publish-p120-e12.adobeaemcloud.com';
 ```
+
 **對於本機開發：**
 
 ```js
@@ -79,6 +80,7 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 # Franklin Live
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.hlx\.live$)#" CORSTrusted=true
 ```
+
 對於本機開發，請參閱「[文件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter)」，以從&#x200B;**開發 UI 主機 URL** 啟用 CORS。
 
 ### 設定推薦者篩選器
