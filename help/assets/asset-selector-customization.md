@@ -3,9 +3,9 @@ title: 自訂資產選擇器應用程式
 description: 使用函式來自訂應用程式內的資產選擇器。
 role: Admin, User
 exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
+source-git-commit: c2ced432f3f0bd393bf5e8e7485c0e973c451b7a
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1261'
 ht-degree: 25%
 
 ---
@@ -408,9 +408,10 @@ const filterSchema = useMemo ((); => {
 
 ## 在資產選擇器中上傳 {#upload-in-asset-selector}
 
-您可以從您的本機檔案系統上傳檔案或資料夾至Asset Selector。 若要使用本機檔案系統上傳檔案，您通常需要使用Asset Selector微前端應用程式提供的上傳功能。 在資產選擇器中叫用上傳所需的各種程式碼片段包括：
+您可以從您的本機檔案系統上傳檔案或資料夾至Asset Selector。 若要使用本機檔案系統上傳檔案，您通常需要使用Asset Selector微前端應用程式提供的上傳功能。 在資產選擇器中叫用上傳所需的`upload`各種程式碼片段包括：
 
 * [基本上傳表單程式碼片段](#basic-upload)
+* [上傳設定](#upload-config)
 * [使用中繼資料上傳](#upload-with-metadata)
 * [自訂上傳](#customized-upload)
 * [使用第三方來源上傳](#upload-using-third-party-source)
@@ -449,6 +450,25 @@ export const UploadExample = () => {
     )
 }
 ```
+
+### 上傳設定 {#upload-config}
+
+```
+uploadConfig: {
+        onUploadStart: action('onUploadStart'),
+        onUploadComplete: action('onUploadComplete'),
+        metadataSchema: [
+            {
+                mapToProperty: 'dam:assetStatus',
+                value: 'approved',
+                element: 'hidden',
+            },
+        ],
+        ... more properties
+     }, 
+```
+
+*其他屬性包括`metadataSchema`、`onMetadataFormChange`、`targetUploadPath`、`hideUploadButton`、`onUploadStart`、`importSettings`、`onUploadComplete`、`onFilesChange`、`uploadingPlaceholder`*。 如需詳細資訊，請參閱[資產選擇器屬性](#asset-selector-properties.md)。
 
 ### 使用中繼資料上傳 {#upload-with-metadata}
 

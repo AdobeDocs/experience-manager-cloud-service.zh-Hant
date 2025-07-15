@@ -3,10 +3,10 @@ title: 用於自訂的資產選擇器屬性
 description: 在應用程式內使用資產選擇器搜尋、查找和檢索資產的中繼資料和轉譯。
 role: Admin, User
 exl-id: cd5ec1de-36b0-48a5-95c9-9bd22fac9719
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
+source-git-commit: c2ced432f3f0bd393bf5e8e7485c0e973c451b7a
 workflow-type: tm+mt
-source-wordcount: '1357'
-ht-degree: 39%
+source-wordcount: '1420'
+ht-degree: 37%
 
 ---
 
@@ -18,8 +18,8 @@ ht-degree: 39%
 |---|---|---|---|---|
 | *rail* | 布林值 | 否 | 假 | 如果標籤為`true`，資產選擇器將會在左側邊欄檢視中轉譯。 如果資產選擇器標示為`false`，則會以模組檢視呈現。 |
 | *imsOrg* | 字串 | 是 | | Adobe Identity Management System (IMS) ID 是在為您的組織佈建 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 時所指派的。`imsOrg`金鑰是驗證您所存取的組織是否位於Adobe IMS下的必要專案。 |
-| *imsToken* | 字串 | 否 | | 用於身份驗證的 IMS 持有人語彙基元。如果您使用[!DNL Adobe]應用程式進行整合，則需要`imsToken`。 |
-| *apiKey* | 字串 | 否 | | 用於存取 AEM Discovery 服務的 API 金鑰。如果您使用[!DNL Adobe]應用程式整合，則需要`apiKey`。 |
+| *imsToken* | 字串 | 否 | | 用於身份驗證的 IMS 持有人語彙基元。如果您使用`imsToken`應用程式進行整合，則需要[!DNL Adobe]。 |
+| *apiKey* | 字串 | 否 | | 用於存取 AEM Discovery 服務的 API 金鑰。如果您使用`apiKey`應用程式整合，則需要[!DNL Adobe]。 |
 | *filterSchema* | 陣列 | 否 | | 用於設定篩選器屬性的模式。這可用於想要限制資產選擇器中的特定篩選器選項時。 |
 | *filterForm Prop* | 物件 | 否 | | 指定用於調整搜尋所需的篩選器屬性。針對！ 例如，MIME型別JPG、PNG、GIF。 |
 | *selectedAssets* | 陣列 `<Object>` | 否 |                 | 呈現資產選擇器時指定選取的資產。需要包含資產的 id 屬性的物件陣列。例如，在目前的目錄中必須可以使用 `[{id: 'urn:234}, {id: 'urn:555'}]` 資產。如果您需要使用不同的目錄，請為該 `path` 屬性提供一個值。 |
@@ -47,16 +47,16 @@ ht-degree: 39%
 | *filterRepoList* | 函數 | 否 |  | 您可以使用`filterRepoList`回呼函式來呼叫Experience Manager存放庫並傳回已篩選的存放庫清單。 |
 | *expiryOptions* | 函數 | | | 您可以在下列兩個屬性之間使用： **getExpiryStatus**，它提供過期資產的狀態。 函式會根據您提供的資產到期日傳回`EXPIRED`、`EXPIRING_SOON`或`NOT_EXPIRED`。 請參閱[自訂過期的資產](/help/assets/asset-selector-customization.md#customize-expired-assets)。 此外，您可以使用&#x200B;**allowSelectionAndDrag**，函式值可以是`true`或`false`。 當值設定為`false`時，無法在畫布上選取或拖曳過期的資產。 |
 | *showToast* | | 否 | | 它可讓「資產選擇器」顯示已過期資產的自訂快顯通知訊息。 |
-| *metadataSchema* | 陣列 | 否 | | 新增您提供的欄位陣列，以從使用者收集中繼資料。 使用此屬性，您也可以使用自動指派給資產但使用者不可見的隱藏中繼資料。 |
-| *onMetadataFormChange* | 回呼函式 | 否 | | 它包含`property`和`value`。 `Property`等於從值正在更新的&#x200B;*metadataSchema*&#x200B;傳遞之欄位的&#x200B;*mapToProperty*。 而提供`value`等於新值作為輸入。 |
-| *targetUploadPath* | 字串 |  | `"/content/dam"` | 預設為資產存放庫根的檔案目標上傳路徑。 |
-| *hideUploadButton* | 布林值 | | 假 | 這可確保內部上傳按鈕是否隱藏。 |
-| *onUploadStart* | 函數 | 否 |  | 這是一個回呼函式，用來在Dropbox、OneDrive或本機之間傳遞上傳來源。 語法為`(uploadInfo: UploadInfo) => void` |
-| *importSettings* | 函數 | | | 如此可支援從第三方來源匯入資產。 `sourceTypes`使用您要啟用的匯入來源陣列。 支援的來源為Onedrive和Dropbox。 語法為`{ sourceTypes?: ImportSourceType[]; apiKey?: string; }` |
-| *onUploadComplete* | 函數 | 否 | | 這是一個回呼函式，用來傳遞成功、失敗或重複之間的檔案上傳狀態。 語法為`(uploadStats: UploadStats) => void` |
-| *onFilesChange* | 函數 | 否 | | 這是一個回呼函式，用來顯示檔案變更時上傳的行為。 它會傳遞擱置上傳的新檔案陣列以及上傳的來源型別。 如果發生錯誤，Source型別可以是null。 語法為`(newFiles: File[], uploadType: UploadType) => void` |
-| *uploadingPlaceholder* | 字串 | | | 這是預留位置影像，可在啟動資產上傳時取代中繼資料表單。 語法為`{ href: string; alt: string; } ` |
-| *uploadConfig* | 物件 | | | 此物件包含上傳的自訂設定。 |
+| *uploadConfig* | 物件 | | | 此物件包含上傳的自訂設定。 請參閱[上傳組態](#asset-selector-customization.md#upload-config)以瞭解可用性。 |
+| *metadataSchema* | 陣列 | 否 | | 此屬性巢狀於`uploadConfig`屬性之下。 新增您提供的欄位陣列，以從使用者收集中繼資料。 使用此屬性，您也可以使用自動指派給資產但使用者不可見的隱藏中繼資料。 |
+| *onMetadataFormChange* | 回呼函式 | 否 | | 此屬性巢狀於`uploadConfig`屬性之下。 它包含`property`和`value`。 `Property`等於從值正在更新的&#x200B;*metadataSchema*&#x200B;傳遞之欄位的&#x200B;*mapToProperty*。 而提供`value`等於新值作為輸入。 |
+| *targetUploadPath* | 字串 |  | `"/content/dam"` | 此屬性巢狀於`uploadConfig`屬性之下。 預設為資產存放庫根的檔案目標上傳路徑。 |
+| *hideUploadButton* | 布林值 | | 假 | 這可確保內部上傳按鈕是否隱藏。 此屬性巢狀於`uploadConfig`屬性之下。 |
+| *onUploadStart* | 函數 | 否 |  | 這是一個回呼函式，用來在Dropbox、OneDrive或本機之間傳遞上傳來源。 語法為`(uploadInfo: UploadInfo) => void`。 此屬性巢狀於`uploadConfig`屬性之下。 |
+| *importSettings* | 函數 | | | 如此可支援從第三方來源匯入資產。 `sourceTypes`使用您要啟用的匯入來源陣列。 支援的來源為Onedrive和Dropbox。 語法為`{ sourceTypes?: ImportSourceType[]; apiKey?: string; }`。 此外，此屬性是巢狀位於`uploadConfig`屬性下。 |
+| *onUploadComplete* | 函數 | 否 | | 這是一個回呼函式，用來傳遞成功、失敗或重複之間的檔案上傳狀態。 語法為`(uploadStats: UploadStats) => void`。 此外，此屬性是巢狀位於`uploadConfig`屬性下。 |
+| *onFilesChange* | 函數 | 否 | | 此屬性巢狀於`uploadConfig`屬性之下。 這是一個回呼函式，用來顯示檔案變更時上傳的行為。 它會傳遞擱置上傳的新檔案陣列以及上傳的來源型別。 如果發生錯誤，Source型別可以是null。 語法為`(newFiles: File[], uploadType: UploadType) => void` |
+| *uploadingPlaceholder* | 字串 | | | 這是預留位置影像，可在啟動資產上傳時取代中繼資料表單。 語法為`{ href: string; alt: string; }`，此外，此屬性是巢狀位於`uploadConfig`屬性下。 |
 | *功能集* | 陣列 | 字串 | | `featureSet:[ ]`屬性是用來啟用或停用Asset Selector應用程式中的特定功能。 若要啟用元件或功能，您可以在陣列中傳遞字串值，或將陣列保留空白以停用該元件。  例如，您想在「資產選擇器」中啟用上傳功能，請使用語法`featureSet:[0:"upload"]`。 同樣地，您可以使用`featureSet:[0:"collections"]`在Asset Selector中啟用集合。 此外，使用`featureSet:[0:"detail-panel"]`可啟用資產的[詳細資料面板](overview-asset-selector.md#asset-details-and-metadata)。 若要同時使用這些功能，語法為`featureSet:["upload", "collections", "detail-panel"]`。 |
 
 <!--
