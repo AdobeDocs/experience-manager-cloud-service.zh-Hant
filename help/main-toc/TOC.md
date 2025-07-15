@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
+source-git-commit: 37b20a97942f381b46ce36a6a3f72ac019bba5b7
 workflow-type: tm+mt
 source-wordcount: '6362'
 ht-degree: 99%
@@ -1075,7 +1075,6 @@ ht-degree: 99%
       + [概觀](/help/edge/docs/forms/overview.md)
       + [設定 Edge Delivery Services 表單提交](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
       + [常見問題](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
-      + [建立表單的最佳做法](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
       + WYSIWYG 編寫 {#universal-editor}
          + [Edge Delivery Services 的表單通用編輯器簡介：完整指南](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [如何使用通用編輯器開始編寫：逐步教學課程](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
@@ -1110,6 +1109,7 @@ ht-degree: 99%
          + [保護表單：新增 reCAPTCHA 安全性](/help/edge/docs/forms/recaptacha-forms.md)
          + [建置自訂表單元件：開發人員指南](/help/edge/docs/forms/custom-components-forms.md)
          + [監視表單效能：操作遙測指南](/help/edge/docs/forms/operational-telemetry-for-forms.md)
+   + [建立表單的最佳做法](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
    + Edge Delivery 資源 {#resources}
       + Sidekick {#sidekick}
          + [使用 Sidekick](/help/edge/docs/sidekick.md)

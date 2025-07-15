@@ -3,8 +3,10 @@ title: 設計高效能表單的最佳做法
 description: 了解使用 AEM Forms 建立使用者友善、可存取且高效能之表單的基本最佳做法。提高資料品質、使用者體驗和提交成功率。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
+hide: true
+hidefromtoc: true
 exl-id: 67b6873b-bb93-4d38-963c-2ca65a1a644b
-source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
+source-git-commit: 37b20a97942f381b46ce36a6a3f72ac019bba5b7
 workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 78%

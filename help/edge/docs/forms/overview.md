@@ -4,10 +4,10 @@ description: 在Adobe Experience Manager Edge Delivery Services上建立及提�
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
-source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
+source-git-commit: 37b20a97942f381b46ce36a6a3f72ac019bba5b7
 workflow-type: tm+mt
-source-wordcount: '919'
-ht-degree: 48%
+source-wordcount: '890'
+ht-degree: 50%
 
 ---
 
@@ -30,14 +30,11 @@ AEM Forms 適用的 Edge Delivery Services 是一套可組合的服務，提供�
 
 Adobe Experience Manager (AEM) Edge Delivery Services (EDS)可讓您從邊緣提供極快速、高度擴充的Web體驗。 本指南說明&#x200B;**如何建置和發佈這些體驗的表單** — 具有明確的建議階層：
 
-1. **Universal Editor (UE) — 大多數團隊的最佳選擇**
-2. **檔案式製作（檔案/工作表） — 適用於快速、簡單的表單**
-3. **Document Authoring (DA) — 使用將表單內嵌至DA編寫的頁面**
+* **Universal Editor (UE) — 大多數團隊的最佳選擇**
+* **檔案式製作（檔案/工作表） — 適用於快速、簡單的表單**
+* **Document Authoring (DA) — 使用將表單內嵌至DA編寫的頁面**
 
 到最後，您將能夠選擇正確的撰寫方法、瞭解提交選項，並遵循後續步驟以建立生產就緒的表單。
-
-
-
 
 
 | 團隊與需求 | 建議的方法 | 原因 |
@@ -53,7 +50,7 @@ Adobe Experience Manager (AEM) Edge Delivery Services (EDS)可讓您從邊緣提
 
 <span class="preview">這是透過我們的<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-hant#new-features">發行前通道</a>提供的發行前功能。</span>
 
-Universal Editor是行銷人員和設計人員適用的視覺化拖放式撰寫工具，結合速度與企業級效能：
+[Universal Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)是行銷人員和設計人員的視覺化拖放式撰寫工具，結合速度與企業級效能：
 
 * 即時WYSIWYG編輯和裝置預覽。
 * 與AEM資產、工作流程和表單資料模型(FDM)直接整合。
@@ -69,12 +66,12 @@ Universal Editor是行銷人員和設計人員適用的視覺化拖放式撰寫�
 * 具備能力從多個提交操作中選擇以處理表單提交，包括將資料提交到 Microsoft SharePoint、Microsoft OneDrive、Adobe Workfront Fusion、Salesforce、Microsoft Dynamics 以及更多資料來源。
 * 使用Forms提交服務(FSS)或AEM發佈提交動作提交
 
-> **建議**：除非您的團隊是100%以檔案為中心且表單非常基本，否則請使用通用編輯器開始每個新表單專案。
+**建議**：除非您的團隊是100%以檔案為中心且表單非常基本，否則請使用通用編輯器開始每個新表單專案。
 
 
 ### 檔案式撰寫(使用Microsoft檔案或Google工作表)
 
-檔案式製作最適合使用熟悉的工具(例如Microsoft Word、Google Docs或Google Sheets)來建立簡單、低複雜度的表單。 此方法適用於需要快速且簡單方式建立表單的內容團隊。
+[檔案式撰寫](/help/edge/docs/forms/tutorial.md)最適合使用熟悉的工具(例如Microsoft Word、Google Docs或Google Sheets)來建立簡單、低複雜度的表單。 此方法適用於需要快速且簡單方式建立表單的內容團隊。
 
 * 提供使用者易用體驗的可存取元件。
 * 標準化 HTML 結構以呈現一致性。
@@ -115,9 +112,11 @@ Universal Editor是行銷人員和設計人員適用的視覺化拖放式撰寫�
 
 ## 後續步驟
 
-1. **從通用編輯器開始：**&#x200B;請參閱[通用編輯器快速入門手冊](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)以開始編寫表單。
-1. **使用檔案式製作：**&#x200B;若要使用Microsoft Excel或Google工作表建立表單，請遵循[檔案式製作教學課程](/help/edge/docs/forms/tutorial.md)。
-1. **在檔案製作中內嵌Forms：**&#x200B;如果您在檔案製作中建置頁面，請使用&#x200B;**通用編輯器** （建議使用）或檔案式製作來建立表單，並將表單內嵌到[DA頁面](https://www.aem.live/developer/da-tutorial)。
+* [適用於Forms的Edge Delivery Services的Universal Editor的功能](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+* [使用通用編輯器建立您的第一個表單](/help/edge/docs/forms/universal-editor/create-forms.md)
+* [使用Google工作表或Microsoft Excel建立您的第一個表單](/help/edge/docs/forms/tutorial.md)。
+* [在檔案製作(DA)中內嵌Forms](https://www.aem.live/developer/da-tutorial)
+
 
 您現在已準備好使用AEM Edge Delivery Services建立您的第一個高效能表單。
 
