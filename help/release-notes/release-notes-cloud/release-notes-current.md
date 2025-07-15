@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 source-git-commit: c8391e09b7e2888423187f48360423c52b18fe0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1810'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 90%
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440931?quality=12&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -63,11 +63,11 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-* [最適化Forms和表單片段的通用編輯器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)：該通用編輯器現在支援建立最適化Forms和可重複使用的表單片段。 作者能以視覺化方式建立表單、設定提交動作及新增reCAPTCHA驗證，這一切都可在簡化的WYSIWYG製作環境中完成。 此功能可加快表單建立、增強一致性，並改善防範垃圾郵件和自動濫用的防護功能。
+* [自適應表單和表單片段的通用編輯器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)：通用編輯器現在支援建立自適應表單和可重複使用的表單片段。作者可以在簡化的所見即所得製作環境中視覺化地建置表單、設定提交動作，並新增 reCAPTCHA 驗證。此功能可加速表單建立、增強一致性，並改善對垃圾郵件和自動化濫用的防護。
 
 ### 搶鮮版功能
 
-* [從Adaptive Forms產生並同步AFP轉譯](/help/forms/document-generation-afp-api.md)： AFP Output Sync API可讓管理員和使用者從Adaptive Forms產生AFP （進階功能簡報）輸出，並將輸出與外部系統或儲存位置同步。 AFP是專為列印而最佳化的高效能檔案格式，通常用於大型企業環境。
+* [從自適應表單產生並同步 AFP 轉譯](/help/forms/document-generation-afp-api.md)：AFP 輸出同步 API 讓管理員和使用者能夠從自適應表單產生 AFP (進階功能展示) 輸出，並將此輸出與外部系統或儲存位置同步。AFP 是一種針對列印最佳化的高效能文件格式，常用於大型企業環境。
 
 * [SharePoint 文件庫：以原始檔案名稱儲存附件](/help/forms/connect-forms-to-sharepoint-document-library.md#connect-an-adaptive-form-to-microsoft-sharepoint-document-library)：您現在將表單附件儲存於 SharePoint 文件庫中時，可以選擇使用其原始檔案名稱。此增強功能可以簡化上傳之檔案的識別和管理。
 
@@ -85,7 +85,7 @@ AEM Forms 搶先體驗計劃為您提供獨一無二的機會，獲得先進創�
 
 #### Adobe Experience Platform (AEP) 與 Forms 的整合
 
-* [整合AEM Forms與Adobe Experience Platform](/help/forms/aem-forms-aep-connector.md)： AEM Forms到Adobe Experience Platform聯結器可讓您順暢整合最適化Forms和Adobe Experience Platform。 此功能可將表單資料對應至XDM結構描述，並即時直接提交至AEP。 它可簡化跨Adobe Experience Cloud解決方案個人化和啟用使用案例的資料擷取。
+* [AEM Forms 與 Adobe Experience Platform 的整合](/help/forms/aem-forms-aep-connector.md)：AEM Forms 至 Adobe Experience Platform 連接器可實現自適應表單和 Adobe Experience Platform 之間的緊密整合。此功能可讓表單資料對應至 XDM 結構描述，並即時直接提交至 AEP。它簡化了 Adobe Experience Cloud 解決方案中個人化和啟用使用案例的資料擷取。
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
