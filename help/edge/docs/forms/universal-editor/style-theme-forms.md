@@ -142,6 +142,7 @@ ht-degree: 95%
   }
   
 ```
+
 * `.{Type}-wrapper`：根據欄位類型以外部 `div` 元素為目標。例如，`.text-wrapper` 以所有文字欄位為目標。
 * `.field-{Name}`：根據特定欄位名稱進一步選取元素。例如，`.field-first-name` 以「名字」文字欄位為目標。雖然此選取器可用於定位欄位 — {Name}類別的元素，但請務必小心。 在這種特定情況下，這對於設定輸入欄位的樣式並不是很有用，因為其不僅以輸入本身為目標，而且還會以標籤和描述元素為目標。建議使用比較具體的選擇器，例如用於針對文字輸入欄位 (.text-wrapper input) 的選擇器。
 
@@ -219,6 +220,7 @@ main .form form .drop-down-wrapper .field-label {
   font-weight: bold;
 }
 ```
+
 * 以包裝函式為目標：第一個選取器 (`.drop-down-wrapper`) 以外部包裝函式元素為目標，確保樣式套用至整個下拉式選單元件。
 * Flexbox 版面：Flexbox 垂直排列標籤、下拉式選單和說明，以呈現簡潔的版面。
 * 標籤樣式設定：標籤以較粗字體和些微邊界呈現醒目效果。
@@ -228,7 +230,7 @@ main .form form .drop-down-wrapper .field-label {
 
 +++
 
----
+&#x200B;---
 
 ### 單選按鈕群組
 
@@ -282,6 +284,7 @@ main .form form .drop-down-wrapper .field-label {
     padding: 10px;
   }
 ```
+
 此選擇器針對具有 radio-group-wrapper 類別的任何欄位集。這對於將通用樣式應用於整個單選按鈕群組非常有用。
 
 * 為單選按鈕標籤進行目標定位
@@ -462,7 +465,7 @@ main .form form .checkbox-group-wrapper input[type="checkbox"]:checked + label::
 ```
 
 * Fieldset 元素可用作含有 panel-wrapper 類別和其他類別的面板容器，以便根據面板名稱 (field-login) 設定樣式。
-* 圖例元素 (<legend>) 可用作面板標題，其中包含文字「登入資訊」和 field-label 類別。data-visible=&quot;false&quot; 屬性可以與 JavaScript 一起用來控制標題的可見度。
+* 圖例元素 (&lt;legend>) 可用作面板標題，其中包含文字「登入資訊」和 field-label 類別。data-visible=&quot;false&quot; 屬性可以與 JavaScript 一起用來控制標題的可見度。
 * 在 fieldset 內部、多個。{Type}個包裝函式元素（在此案例中為.text-wrapper和.password-wrapper）代表面板中的個別表單欄位。
 * 每個包裝函式都包含一個標籤、輸入欄位和說明，與前面的範例類似。
 
@@ -623,6 +626,7 @@ main .form form .panel-wrapper[data-repeatable="true"] .{Type}-wrapper {
   margin-bottom: 10px;
 }
 ```
+
 此選擇器可為可重複面板中所有欄位包裝函式進行樣式設定，讓欄位之間的間距維持一致。
 
 * 為特定欄位 (在面板內) 進行目標定位：

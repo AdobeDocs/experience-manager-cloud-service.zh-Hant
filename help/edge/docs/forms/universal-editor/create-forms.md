@@ -79,6 +79,7 @@ ht-degree: 95%
 
    1. 設定「**名稱**」和「**標題**」。
    1. 指定 **GitHub URL**。例如，若您的 GitHub 存放庫名稱為 `edsforms`、位於帳戶 `wkndforms` 之下，則 URL 為：
+
       `https://github.com/wkndforms/edsforms`
 
    ![建立表單精靈](/help/edge/assets/create-form-wizard.png)
@@ -130,7 +131,7 @@ ht-degree: 95%
 
    ![內容樹](/help/edge/assets/content-tree.png)
 
-1. 按一下「**[!UICONTROL 新增]**」圖示，然後從&#x200B;**自適應表單元件**清單新增所需元件。
+1. 按一下「**[!UICONTROL 新增]**」圖示，然後從&#x200B;**自適應表單元件**&#x200B;清單新增所需元件。
    ![新增元件](/help/edge/assets/add-component.png)
 
    下方的螢幕擷圖顯示在通用編輯器中編寫的 `Registration Form`：
