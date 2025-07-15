@@ -75,7 +75,7 @@ Forms提交服務可讓您將表單提交的資料儲存在任何試算表中(�
 
 1. 在Excel或Google工作表中，按一下右上角的&#x200B;**共用**&#x200B;按鈕。
 1. 新增`forms@adobe.com`帳戶並
-按一下眼睛圖示，選取**編輯**&#x200B;存取權，然後按一下&#x200B;**傳送**。
+按一下眼睛圖示，選取&#x200B;**編輯**&#x200B;存取權，然後按一下&#x200B;**傳送**。
 
    ![共用傳入工作表](/help/forms/assets/form-submission-share-incoming.png)
 
@@ -152,18 +152,17 @@ Forms提交服務可讓您將表單提交的資料儲存在任何試算表中(�
 
 
 >[!BEGINTABS]
+>[!TAB 適用於macOS 的]
 
->適用於macOS[!TAB 的]
-
-    ``json
+    &grave;&grave;json
     curl -X POST &quot;https://forms.adobe.com/adobe/forms/af/submit/{id}&quot; \
-     — 標頭`Content-Type： application/json&quot; \
-     — 標頭`x-adobe-routing： tier=live，bucket=main—[site/repository]—[organization]&quot; \
-     — 資料`{
-    `data`： {
-    `startDate&quot;： &quot;2025-01-10&quot;，
-    `endDate&quot;： &quot;2025-01-25&quot;，
-    `destination&quot;澳洲」，
+     — 標頭&grave;Content-Type： application/json&quot; \
+     — 標頭&grave;x-adobe-routing： tier=live，bucket=main—[site/repository]—[organization]&quot; \
+     — 資料&grave;&lbrace;
+    `data`： &lbrace;
+    &grave;startDate&quot;： &quot;2025-01-10&quot;，
+    &grave;endDate&quot;： &quot;2025-01-25&quot;，
+    &grave;destination&quot;澳洲」，
     「class」：「First Class」，
     「budget」：「2000」，
     「amount」：「1000000」，
@@ -171,14 +170,14 @@ Forms提交服務可讓您將表單提交的資料儲存在任何試算表中(�
     「age」：「35」，
     「subscribe」： null，
     「email」：「mary@gmail.com」
-    }
-    }&#39;
+    &rbrace;
+    &rbrace;&#39;
     
     」&#39;
 
->適用於Windows作業系統的[!TAB ]
+>[!TAB 適用於Windows作業系統的] 
 
-    ``json
+    &grave;&grave;json
     
     curl -X POST &quot;https://forms.adobe.com/adobe/forms/af/submit/{id}&quot; ^
      — 標頭&quot;Content-Type： application/json&quot; ^
