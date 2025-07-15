@@ -5,36 +5,25 @@ feature: Administering
 role: Admin
 exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
 solution: Experience Manager Sites
-source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
+source-git-commit: 4d45e7ef626ad0b46f5323263cca791b14f9732f
 workflow-type: tm+mt
-source-wordcount: '755'
-ht-degree: 27%
+source-wordcount: '726'
+ht-degree: 15%
 
 ---
 
-# 建立網站 {#creating-site}
 
-{{traditional-aem}}
+# 建立網站 {#creating-site}
 
 瞭解如何使用AEM建立網站，並使用網站範本定義網站的樣式和結構。
 
 ## 概觀 {#overview}
 
-必須先建立網站，內容作者才能建立含有內容的頁面。 這通常會由定義網站初始結構的AEM管理員執行。 使用網站範本可讓您快速且靈活地建立網站。
-
-AEM快速網站建立工具可讓非開發人員使用網站範本，從頭開始快速建立網站。
-
-建立後，快速建立網站工具還可讓您快速為 AEM 網站自訂主題並建立風格 (JavaScript、CSS 和靜態資源)。這使得前端開發人員即使不懂 AEM 也能與內容建立者分開且並行工作。AEM 管理員只需下載網站主題並將其提供給前端開發人員，前端開發人員使用他們偏好的工具自訂主題，然後將變更提交到 AEM 程式碼存放庫，然後進行部署。
-
-本檔案著重於使用快速網站建立工具建立網站。 如果您想概略瞭解網站建立和自訂工作流程，請參閱[AEM快速網站建立歷程](/help/journey-sites/quick-site/overview.md)
+必須先建立網站，內容作者才能建立含有內容的頁面。 這通常會由定義網站初始結構的AEM管理員執行。 使用網站範本可讓非開發人員快速且靈活地建立網站。
 
 ## 規劃網站結構 {#structure}
 
-請花點時間提前考慮您網站的目的和規劃內容。 這將推動您設計網站結構的方式。 良好的網站結構可支援網站訪客的輕鬆導覽和內容探索，並支援各種AEM功能，例如[多網站管理和翻譯](/help/sites-cloud/administering/msm-and-translation.md)。
-
->[!TIP]
->
->[WKND參考網站](https://wknd.site)提供功能齊全的戶外體驗品牌網站的最佳實務實作。 探索該網站，瞭解建置良好的AEM網站是如何建構的。
+請花點時間提前考慮您網站的目的和規劃內容。 這將推動您設計網站結構的方式。 良好的網站結構可支援網站訪客的輕鬆導覽和內容探索，並支援各種AEM功能，例如[多網站管理和翻譯。](/help/sites-cloud/administering/msm-and-translation.md)
 
 ## 網站範本 {#site-templates}
 
@@ -44,11 +33,15 @@ AEM快速網站建立工具可讓非開發人員使用網站範本，從頭開�
 
 >[!TIP]
 >
->如需網站範本的詳細資訊，請參閱[網站範本](site-templates.md)。
+>如需網站範本的詳細資訊，請參閱檔案[網站範本。](site-templates.md)
 
 >[!NOTE]
 >
->網站範本與頁面範本不同，請勿混淆二者。網站範本定義網站的整體結構。 頁面範本定義單一頁面的結構和初始內容。
+>不要將網站範本與[頁面範本混淆。](/help/sites-cloud/authoring/page-editor/templates.md)網站範本定義網站的整體結構。 頁面範本定義單一頁面的結構和初始內容。
+
+### Adobe提供的網站範本 {#adobe-templates}
+
+{{adobe-templates}}
 
 ## 建立網站 {#create-site}
 
@@ -80,6 +73,11 @@ AEM快速網站建立工具可讓非開發人員使用網站範本，從頭開�
    * 網站名稱成為 URL 的一部分。
    * 網站名稱必須符合[AEM的頁面命名慣例](/help/sites-cloud/authoring/sites-console/organizing-pages.md#page-name-restrictions-and-best-practices)。
 
+1. 提供網站範本所需的其他網站詳細資訊。
+
+   * 不同的範本可能需要其他詳細資訊。
+   * 例如，[Edge Delivery Services專案](https://www.aem.live/developer/ue-tutorial)的範本需要您專案的GitHub存放庫。
+
 1. 選取&#x200B;**建立**，網站是從網站範本建立的。
 
    ![新網站的詳細資訊](../assets/create-site-details.png)
@@ -96,10 +94,10 @@ AEM快速網站建立工具可讓非開發人員使用網站範本，從頭開�
 
 ## 網站自訂 {#site-customization}
 
-如果您的網站需要在可用範本之外進行自訂，您有幾個選項。
+範本有助於快速設定網站的基本結構和樣式。 不過，大多數專案都需要額外的樣式和自訂。 網站範本有助於將網站樣式脫鉤，讓前端開發人員無需具備AEM的知識即可設定網站樣式，並可
+獨立於內容建立者工作並與之平行。 根據專案型別，這可以採用兩種形式。
 
-* 如果必須調整網站結構或初始內容，[可以自訂網站範本以符合您的需求](site-templates.md)。
-* 如果必須調整網站樣式，可以下載[網站主題並加以自訂](/help/journey-sites/quick-site/overview.md)。
-* 如果必須調整網站功能，[網站可完全自訂](/help/implementing/developing/introduction/develop-wknd-tutorial.md)。
-
-任何自訂作業都應在開發團隊的支援下進行。
+* 對於使用Universal Editor編寫AEM頁面並透過[Edge傳遞的專案，](/help/edge/overview.md)所有樣式都是在GitHub專案中完成。
+   * 如需詳細資訊，請參閱檔案[快速入門 — Universal Editor開發人員教學課程](https://www.aem.live/developer/ue-tutorial)。
+* 對於具有傳統AEM頁面製作和透過[發佈傳遞傳遞的專案，](/help/sites-cloud/authoring/author-publish.md)AEM管理員只會下載網站主題，並將其提供給前端開發人員，後者會使用他們最喜愛的工具來自訂該主題，然後將變更提交到AEM程式碼存放庫，然後再進行部署。
+   * 如需詳細資訊，請參閱檔案[AEM快速網站建立歷程](/help/journey-sites/quick-site/overview.md)。

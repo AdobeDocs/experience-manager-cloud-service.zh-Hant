@@ -1,13 +1,13 @@
 ---
 title: 使用網站面板管理您的網站主題
-description: 瞭解網站面板的強大功能，協助您輕鬆自訂和管理網站主題。
+description: 瞭解網站面板的強大功能，協助您透過發佈傳遞輕鬆自訂和管理傳統AEM製作專案的網站主題。
 feature: Administering
 role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
 solution: Experience Manager Sites
-source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
+source-git-commit: 076005e1ed1ca3303ed5843a3f27e0d707df5022
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '607'
 ht-degree: 1%
 
 ---
@@ -17,11 +17,11 @@ ht-degree: 1%
 
 {{traditional-aem}}
 
-瞭解網站面板的強大功能，協助您輕鬆自訂和管理網站主題。
+瞭解網站面板的強大功能，協助您透過發佈傳遞輕鬆自訂和管理傳統AEM製作專案的網站主題。
 
 ## 概觀 {#overview}
 
-「網站」面板可讓您管理網站的主題和範本資源。 [如同其他面板](/help/sites-cloud/authoring/sites-console/console-side-panel.md)，例如「內容樹狀目錄」、「參考」或「時間軸」面板，「網站」面板會以網站主控台最左側的面板顯示，並顯示所選專案的相關資訊。 與其他面板不同，「網站」面板僅適用於「網站」根。
+「網站」面板可讓您透過[發佈傳遞，管理傳統AEM製作專案的主題和範本資源。](/help/sites-cloud/authoring/author-publish.md) [如同其他面板](/help/sites-cloud/authoring/sites-console/console-side-panel.md) （例如「內容樹狀目錄」、「參考」或「時間軸」面板），「網站」面板會顯示為網站主控台中最左側的面板，顯示選取專案的相關資訊。 與其他面板不同，「網站」面板僅適用於「網站」根。
 
 「網站」面板可用來管理網站的主題和範本相關資訊，包括：
 
@@ -36,7 +36,7 @@ ht-degree: 1%
 
 ## 下載主題來源 {#downloading-theme-sources}
 
-當您根據[網站範本](site-templates.md)在AEM中建立網站時，可以使用網站面板下載[網站主題](site-themes.md)。
+當您根據[網站範本，](site-templates.md)在AEM中建立網站時，可以使用網站面板下載[網站主題](site-themes.md)。
 
 在網站主控台中顯示的「網站」面板中，選取網站的根以顯示有關網站的主題資訊。
 
@@ -46,7 +46,7 @@ ht-degree: 1%
 
 ## 正在下載範本資源 {#downloading-template-resources}
 
-[網站範本](site-templates.md)除了包含您的網站內容結構和[網站主題](site-themes.md)之外，還可以包含資訊。 例如，網站範本可包含線框設計或其他網站相關檔案。
+[網站範本](site-templates.md)可以包含您的網站內容結構和[網站主題的資訊。例如，](site-themes.md)網站範本可包含線框設計或其他網站相關檔案。
 
 如果您的網站是以網站範本為基礎，利用網站主控台中顯示的網站面板，選取網站的根以顯示有關網站的主題資訊，包括其他網站資源。
 
@@ -86,4 +86,4 @@ ht-degree: 1%
 
 ![正在啟用前端管道](/help/sites-cloud/administering/assets/enable-fep.png)
 
-如需詳細資訊，請參閱檔案[啟用前端管道](enable-front-end-pipeline.md)。
+如需詳細資訊，請參閱檔案[啟用前端管道。](enable-front-end-pipeline.md)
