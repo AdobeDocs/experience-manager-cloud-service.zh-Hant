@@ -39,7 +39,7 @@ Forms提交服務可讓您將表單提交的資料儲存在任何試算表中(�
 
 ## 設定Forms提交服務
 
-建立以最適化AEM區塊設定的新Forms專案。 請參閱[快速入門 — 開發人員教學課程](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial)文章，瞭解如何建立新的AEM專案。 更新專案中的`fstab.yaml`檔案。 將現有的參考取代為您與`forms@adobe.com`共用的資料夾路徑。
+建立以最適化AEM區塊設定的新Forms專案。 請參閱[快速入門 — 開發人員教學課程](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial)文章，瞭解如何建立新的AEM專案。 更新專案中的`fstab.yaml`檔案。 將現有的參考取代為您與`forms@adobe.com`共用的資料夾路徑。
 
 您可以[手動設定Forms提交服務](#configuring-the-forms-submission-service-manually)或[使用API設定Forms提交服務](#configuring-the-forms-submission-service-using-api)。
 
@@ -49,7 +49,7 @@ Forms提交服務可讓您將表單提交的資料儲存在任何試算表中(�
 
 #### 1.使用表單定義建立表單
 
-使用Google Sheets或Microsoft Excel製作表單。 若要瞭解如何使用Microsoft Excel或Google Sheets中的表單定義來建立表單，[請按一下這裡](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)。
+使用Google Sheets或Microsoft Excel製作表單。 若要瞭解如何使用Microsoft Excel或Google Sheets中的表單定義來建立表單，[請按一下這裡](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)。
 
 以下熒幕擷圖顯示用來建立表單的表單定義：
 
@@ -61,7 +61,7 @@ Forms提交服務可讓您將表單提交的資料儲存在任何試算表中(�
 
 #### 2.啟用試算表以接受資料。
 
-建立並預覽表單後，請啟用對應的試算表以開始接收資料。 新增工作表做為`incoming`。 您可以[手動啟用試算表以接受資料](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/submit-forms#manually-enable-the-spreadsheet-to-accept-data)。
+建立並預覽表單後，請啟用對應的試算表以開始接收資料。 新增工作表做為`incoming`。 您可以[手動啟用試算表以接受資料](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/submit-forms#manually-enable-the-spreadsheet-to-accept-data)。
 
 ![傳入工作表](/help/forms/assets/form-submission-incoming-sheet.png)
 
