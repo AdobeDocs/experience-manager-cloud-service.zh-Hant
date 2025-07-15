@@ -4,17 +4,17 @@ description: 透過通用編輯器的規則編輯器，您不需要編寫程式�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
+source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
 workflow-type: tm+mt
-source-wordcount: '2253'
-ht-degree: 98%
+source-wordcount: '2216'
+ht-degree: 97%
 
 ---
 
 
 # WYSIWYG 製作中的規則編輯器簡介
 
-<span class="preview">您可以透過搶先體驗方案使用這項功能。若要請求存取權，請使用您的官方地址發送電子郵件至 <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>，郵件內容須包含您的 GitHub 組織名稱和存放庫名稱。例如，若存放庫 URL 為 https://github.com/adobe/abc,，則組織名稱為 adobe，存放庫名稱為 abc。</span>
+<span class="preview">這是透過我們的<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-hant#new-features">發行前通道</a>提供的發行前功能。</span>
 
 
 您可以使用規則編輯器來建立規則，藉此新增動態表單行為。這些規則會顯示條件式欄位、根據使用者輸入自動進行計算，並改善整體使用者體驗。規則編輯器將表格填寫流程簡化，有助於確保準確性和效率。
@@ -277,7 +277,6 @@ ht-degree: 98%
    * 從「**[!UICONTROL 選取運算子]**」欄位選取「**[!UICONTROL 減]**」。
 
    * 從「表單物件」索引標籤選取或拖放「**[!UICONTROL 其他扣除額]**」欄位到另一個「**[!UICONTROL 放置物件或選取此處]**」欄位。
-
      ![規則編輯器範例 15](/help/edge/docs/forms/assets/rule-editor18.png)
 
 1. 選取「**[!UICONTROL 完成]**」以儲存此規則。
@@ -295,7 +294,6 @@ ht-degree: 98%
    * 從「**[!UICONTROL 選取運算子]**」欄位選取「**[!UICONTROL 乘以]**」。
 
    * 從「**[!UICONTROL 選取選項]**」欄位選取「**數字**」，並在「**[!UICONTROL 輸入數字]**」欄位中輸入值 `10`。
-
      ![規則編輯器範例 18](/help/edge/docs/forms/assets/rule-editor21.png)
 1. 接下來，選取運算式欄位周圍醒目標示的區域，並選取「**[!UICONTROL 擴充運算式]**」。
    ![規則編輯器範例 19](/help/edge/docs/forms/assets/rule-editor22.png)
@@ -361,7 +359,6 @@ function days(endDate, startDate) {
 // eslint-disable-next-line import/prefer-default-export
 export { getFullName, days };
 ```
-
 ![新增自訂函數](/help/edge/docs/forms/assets/create-custom-function.png)
 
 ### 在規則編輯器中使用自訂函數

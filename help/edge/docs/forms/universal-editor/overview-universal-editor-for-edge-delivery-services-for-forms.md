@@ -4,17 +4,17 @@ description: 使用 Edge Delivery Services for Forms 的通用編輯器建立自
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
+source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
 workflow-type: tm+mt
-source-wordcount: '1049'
-ht-degree: 99%
+source-wordcount: '1012'
+ht-degree: 98%
 
 ---
 
 
 # Edge Delivery Services for Forms 的通用編輯器
 
-<span class="preview">您可以透過搶先體驗方案使用這項功能。若要請求存取權，請使用您的官方地址發送電子郵件至 <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>，郵件內容須包含您的 GitHub 組織名稱和存放庫名稱。例如，若存放庫 URL 為 https://github.com/adobe/abc,，則組織名稱為 adobe，存放庫名稱為 abc。</span>
+<span class="preview">這是透過我們的<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-hant#new-features">發行前通道</a>提供的發行前功能。</span>
 
 通用編輯器提供簡單、視覺化且直覺易用的所見即所得 (WYSIWYG) 介面，徹底改變 Adobe Edge Delivery Services 建立表單的方式。這是專為內容創作者和表單製作者而設計，消除傳統表單建置流程的複雜性，讓非技術使用者也可以存取使用。
 

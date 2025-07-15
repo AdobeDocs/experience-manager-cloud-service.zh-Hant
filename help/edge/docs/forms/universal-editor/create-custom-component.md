@@ -4,16 +4,16 @@ description: 為 EDS Forms 建立自訂元件
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
+source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
 workflow-type: tm+mt
-source-wordcount: '1841'
+source-wordcount: '1804'
 ht-degree: 95%
 
 ---
 
 # 在 WYSIWYG 製作中建立自訂元件
 
-<span class="preview">您可以透過搶先體驗方案使用這項功能。若要請求存取權，請使用您的官方地址發送電子郵件至 <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>，郵件內容須包含您的 GitHub 組織名稱和存放庫名稱。例如，若存放庫 URL 為 https://github.com/adobe/abc,，則組織名稱為 adobe，存放庫名稱為 abc。</span>
+<span class="preview">這是透過我們的<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-hant#new-features">發行前通道</a>提供的發行前功能。</span>
 
 
 Edge Delivery Services 表單可提供自訂，讓前端開發人員可以建置量身打造的表單元件。這些自訂元件可無縫整合到 WYSIWYG 製作體驗中，使表單作者能夠在表單編輯器中輕鬆地進行新增、設定和管理。使用自訂元件，作者即可提升功能，同時可確保平順、直覺的製作流程。
@@ -392,7 +392,6 @@ const OOTBComponentDecorators = ['file-input',
    float: right;
    }
    ```
-
    程式碼可協助您定義自訂元件的樣式和視覺外觀。
 
 1. 若要新增功能，請瀏覽至 `/blocks/form/components/range/range.js` 檔案，並新增下列程式碼：

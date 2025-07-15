@@ -4,16 +4,16 @@ description: 快速且無縫地發佈您的 Edge Delivery Services 表單。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
-source-git-commit: e4a71d1a513bebed67b9571a483871dc16c36daa
+source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
 workflow-type: tm+mt
-source-wordcount: '514'
-ht-degree: 100%
+source-wordcount: '477'
+ht-degree: 97%
 
 ---
 
 # 將最適化表單發佈到 Edge Delivery Services
 
-<span class="preview">您可以透過搶先體驗方案使用這項功能。若要請求存取權，請使用您的官方地址發送電子郵件至 <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>，郵件內容須包含您的 GitHub 組織名稱和存放庫名稱。例如，若存放庫 URL 為 https://github.com/adobe/abc,，則組織名稱為 adobe，存放庫名稱為 abc。</span>
+<span class="preview">這是透過我們的<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-hant#new-features">發行前通道</a>提供的發行前功能。</span>
 
 
 當您的表單最終確定並可供使用時，您即可將其發佈，讓您的客戶可存取來進行資料的收集和提交。發佈可確保表單在 Edge Delivery 上可用，從而讓使用者能夠無縫地與其互動。此流程讓客戶可即時填寫並提交表單，確保高效的資料擷取並簡化處理流程。
