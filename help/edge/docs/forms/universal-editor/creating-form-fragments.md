@@ -4,10 +4,10 @@ description: 了解如何在通用編輯器中建立表單片段，並將其新�
 feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
-source-git-commit: 8dfcec0648f5b474113325b6cc6cffc754e21ec2
-workflow-type: ht
-source-wordcount: '1355'
-ht-degree: 100%
+source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
+workflow-type: tm+mt
+source-wordcount: '1401'
+ht-degree: 96%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 <span class="preview">您可以透過搶先體驗方案使用這項功能。若要請求存取權，請使用您的官方地址發送電子郵件至 <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>，郵件內容須包含您的 GitHub 組織名稱和存放庫名稱。例如，若存放庫 URL 為 https://github.com/adobe/abc,，則組織名稱為 adobe，存放庫名稱為 abc。</span>
 
-<span class="preview">這是一項預先發佈功能，可透過我們的[預先發佈管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hant#new-features)存取。</span>
+<span class="preview">這是一項預先發佈功能，可透過我們的[預先發佈管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)存取。</span>
 
 表單通常包括常見的區段，例如聯絡資訊、身分詳細資料或同意協議等。表單開發人員每次建置新表單時都要建立這些區段，這是不斷重複又耗時的過程。為了避免一再重複這些工作，通用編輯器會協助您建立可重複使用的表單部分 (如面板或欄位群組)，只需建立一次即可在各種表單中重複使用。這些可重複使用、模組化且獨立的區段即稱為表單片段。例如，您可以在表單的不同區段 (例如員工和主管的聯絡詳細資訊) 使用相同的緊急聯絡人片段。
 
@@ -107,7 +107,7 @@ ht-degree: 100%
 
    下方螢幕擷圖顯示在通用編輯器中建立的 `contact fragment`。
 
-   ![聯絡人資訊片段](/help/edge/docs/forms/universal-editor/assets/contact-fragment.png)
+   ![通用編輯器中已完成的連絡人詳細資料表片段的熒幕擷圖，顯示可跨多個表單重複使用的名稱、電話、電子郵件和位址列位](/help/edge/docs/forms/universal-editor/assets/contact-fragment.png)
 
    建立片段後，您可以[在 Edge Delivery Services 表單中新增所建立的片段](#adding-form-fragments-in-forms)。
 
@@ -139,7 +139,7 @@ ht-degree: 100%
 
    以參考方式將表單片段新增至表單，並與獨立的表單片段保持同步。
 
-   ![表單內的片段](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
+   ![熒幕擷圖顯示已成功整合至通用編輯器的員工表單中的聯絡詳細資料片段，展示片段在重複使用時如何維持其結構](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
 
    您可以透過&#x200B;**預覽**&#x200B;模式預覽表單的呈現效果。
 

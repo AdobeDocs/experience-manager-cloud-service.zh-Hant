@@ -1,22 +1,22 @@
 ---
-title: 適用於Forms的Edge Delivery Services的通用編輯器
-description: 使用Forms適用的Edge Delivery Services Universal Editor建立最適化Forms。
+title: Edge Delivery Services for Forms 的通用編輯器
+description: 使用 Edge Delivery Services for Forms 的通用編輯器建立自適應表單。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
+source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
 workflow-type: tm+mt
-source-wordcount: '1078'
-ht-degree: 70%
+source-wordcount: '1049'
+ht-degree: 99%
 
 ---
 
 
-# 適用於Forms的Edge Delivery Services的通用編輯器
+# Edge Delivery Services for Forms 的通用編輯器
 
-<span class="preview">此功能可透過搶先存取計畫使用。 若要要求存取權，請將您的GitHub組織名稱和存放庫名稱從您的官方地址傳送電子郵件至<a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> 。 例如，如果存放庫URL是https://github.com/adobe/abc，組織名稱是adobe，存放庫名稱是abc。</span>
+<span class="preview">您可以透過搶先體驗方案使用這項功能。若要請求存取權，請使用您的官方地址發送電子郵件至 <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>，郵件內容須包含您的 GitHub 組織名稱和存放庫名稱。例如，若存放庫 URL 為 https://github.com/adobe/abc,，則組織名稱為 adobe，存放庫名稱為 abc。</span>
 
-Universal Editor提供簡單、視覺化且直覺式的What You See Is What You Get (WYSIWYG)介面，徹底革新Adobe Edge Delivery Services的表單建立作業。 這是專為內容創作者和表單製作者而設計，消除傳統表單建置流程的複雜性，讓非技術使用者也可以存取使用。
+通用編輯器提供簡單、視覺化且直覺易用的所見即所得 (WYSIWYG) 介面，徹底改變 Adobe Edge Delivery Services 建立表單的方式。這是專為內容創作者和表單製作者而設計，消除傳統表單建置流程的複雜性，讓非技術使用者也可以存取使用。
 
 使用通用編輯器，您可以使用預先建立的元件 (如文字欄位、核取方塊和選項按鈕) 快速設計回應式、互動式表單。其強大的功能集支援動態規則、無縫資料整合和進階的個人化功能，確保每種表單都符合您的需求。
 
@@ -24,34 +24,34 @@ Universal Editor提供簡單、視覺化且直覺式的What You See Is What You 
 
 ![通用編輯器](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center}
 
-## 適用於Forms的Edge Delivery Services的Universal Editor的主要功能
+## Edge Delivery Services for Forms 通用編輯器的主要功能
 
 
 
-| ![WYSIWYG介面](/help/edge/docs/forms/universal-editor/assets/generate-forms.svg) | ![規則編輯器](/help/edge/docs/forms/universal-editor/assets/rule-editor.svg) | ![提交動作](/help/edge/docs/forms/universal-editor/assets/submit-actions.svg) |
+| ![WYSIWYG 介面](/help/edge/docs/forms/universal-editor/assets/generate-forms.svg) | ![規則編輯器](/help/edge/docs/forms/universal-editor/assets/rule-editor.svg) | ![提交動作](/help/edge/docs/forms/universal-editor/assets/submit-actions.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**WYSIWYG介面**](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md) | [**規則編輯器**](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md) | [**提交動作**](/help/edge/docs/forms/universal-editor/submit-action.md) |
-| 通用編輯器為表單設計提供 WYSIWYG 介面，具有預先建立的元件資料庫、回應式設計、範本式建立和即時欄位修改。 | 規則編輯器讓使用者能夠透過事件驅動的規則、即時驗證，以及藉由輕量級 JavaScript 和 JSON 進行錯誤處理，來建立動態表單互動。 | 提交動作功能支援後端整合、條件式提交邏輯、安全端點和預處理器，能簡化提交工作流程。 |
+| [**WYSIWYG 介面**](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md) | [**規則編輯器**](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md) | [**提交動作**](/help/edge/docs/forms/universal-editor/submit-action.md) |
+| 通用編輯器是提供表單設計功能的 WYSIWYG 介面，具有預先建立的元件資料庫、回應式設計、使用範本建立表單和即時欄位修改。 | 規則編輯器讓使用者能夠透過事件驅動的規則、即時驗證，以及利用輕量級 JavaScript 和 JSON 進行錯誤處理來建立動態表單互動。 | 提交動作支援後端整合、條件式提交邏輯、安全端點和預處理器，能簡化提交工作流程。 |
 
-| ![發佈/取消發佈](/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg) | ![回應模式](/help/edge/docs/forms/universal-editor/assets/responsive.svg) | ![自訂元件](/help/edge/docs/forms/universal-editor/assets/custom-components.svg) |
+| ![發佈/取消發佈](/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg) | ![回應式模式](/help/edge/docs/forms/universal-editor/assets/responsive.svg) | ![自訂元件](/help/edge/docs/forms/universal-editor/assets/custom-components.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**發佈/取消發佈**](/help/edge/docs/forms/universal-editor/publish-forms.md) | [**回應模式**](/help/edge/docs/forms/universal-editor/responsive-layout.md) | [**自訂元件**](/help/edge/docs/forms/universal-editor/create-custom-component.md) |
-| 輕鬆控制表單的可見度 — 只需按幾下滑鼠，即可直接從編輯器發佈或取消發佈表單。 | 設計可跨裝置 (桌上型電腦、平板電腦和行動裝置) 順暢適應的表單。使用回應式模式預覽和測試各種螢幕尺寸的表單。 | 自訂元件功能讓開發人員得以透過建立針對特定組織使用案例而自訂的不重複元素，擴展表單功能。 |
+| [**發佈/取消發佈**](/help/edge/docs/forms/universal-editor/publish-forms.md) | [**回應式模式**](/help/edge/docs/forms/universal-editor/responsive-layout.md) | [**自訂元件**](/help/edge/docs/forms/universal-editor/create-custom-component.md) |
+| 輕鬆掌控表單的可見度，只需點按幾下即可直接從編輯器發佈或取消發佈表單。 | 設計可跨裝置 (桌上型電腦、平板電腦和行動裝置) 順暢適應的表單。使用回應式模式預覽和測試各種螢幕尺寸的表單。 | 開發人員可以利用自訂元件為特定組織使用案例量身打造獨特的元素，藉此擴展表單功能。 |
 
-| ![樣式](/help/edge/docs/forms/universal-editor/assets/personalization.svg) | ![預填服務](/help/edge/docs/forms/universal-editor/assets/prefill-services.svg) | ![A/B測試](/help/edge/docs/forms/universal-editor/assets/experimentation-ab-testing.svg) |
+| ![樣式](/help/edge/docs/forms/universal-editor/assets/personalization.svg) | ![預填服務](/help/edge/docs/forms/universal-editor/assets/prefill-services.svg) | ![A/B 測試](/help/edge/docs/forms/universal-editor/assets/experimentation-ab-testing.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**樣式**](/help/edge/docs/forms/universal-editor/style-theme-forms.md) | **預填服務** （即將推出） | [**A/B測試**](https://github.com/adobe/aem-experimentation/blob/main/documentation/experiments.md) |
-| 使用CSS進行樣式設定可讓開發人員自訂表單元素的外觀，並建立與網站美學相一致的美觀設計。 | 預填服務會自動使用來自各來源的相關使用者資料填寫表單欄位，減少手動輸入過程並增強使用者體驗。 | A/B測試可讓組織實驗不同的表單設計、版面配置和功能，以識別表現最佳的變體。 |
+| [**樣式**](/help/edge/docs/forms/universal-editor/style-theme-forms.md) | **預填服務** (即將推出) | [**A/B 測試**](https://github.com/adobe/aem-experimentation/blob/main/documentation/experiments.md) |
+| 使用 CSS 設定樣式讓開發人員能夠自訂表單元素的外觀，並建立與網站美學相符且具視覺吸引力的設計。 | 預填服務會自動使用多個來源的相關使用者資料填寫表單欄位，減少手動輸入並增強使用者體驗。 | A/B 測試讓組織能夠針對不同的表單設計、版面和功能進行實驗，以便找到效能最好的變體。 |
 
-| ![分析和追蹤](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![表單片段](/help/edge/docs/forms/universal-editor/assets/form-fragments.svg) | ![資料繫結](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) |
+| ![分析與追蹤](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![表單片段](/help/edge/docs/forms/universal-editor/assets/form-fragments.svg) | ![資料繫結](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**分析和追蹤**](https://www.aem.live/developer/martech-integration) | **表單片段** （即將推出） | **資料繫結** （即將推出） |
-| 透過內建的分析與追蹤功能，深入了解使用者行為、表單互動和提交率，以達到資料驅動的表單最佳化。 | 表單片段可重複使用，允許常用區段建立一次，並跨多個表單重複使用，確保一致性並減少維護工作。 | 資料繫結可讓表單欄位和後端資料來源之間直接連線，支援即時更新和進階資料對應。 |
+| [**分析與追蹤**](https://www.aem.live/developer/martech-integration) | **表單片段** (即將推出) | [**資料繫結**](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md) |
+| 透過內建的分析與追蹤功能，深入了解使用者行為、表單互動和提交率，利用資料來達成表單最佳化。 | 表單片段可以實現重複使用，只要建立一個常用區段，便能在多個表單中重複使用，確保一致性並減少維護工作量。 | 利用資料繫結功能，可以將表單欄位與後端資料來源直接連線，支援即時更新和進階資料對應。 |
 
-| ![驗證碼](/help/edge/docs/forms/universal-editor/assets/captcha.svg) | ![內嵌Forms](/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg) | ![感謝您的設定](/help/edge/docs/forms/universal-editor/assets/thank-you.svg) |
+| ![驗證碼](/help/edge/docs/forms/universal-editor/assets/captcha.svg) | ![嵌入表單](/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg) | ![感謝設定](/help/edge/docs/forms/universal-editor/assets/thank-you.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**驗證碼**](/help/edge/docs/forms/universal-editor/recaptcha-forms.md) | **內嵌Forms** （即將推出） | [**感謝您的設定**](/help/edge/docs/forms/universal-editor/submit-action.md#show-a-custom-thank-you-message-on-adaptive-form-submission-submit-action-message-ue) |
-| 使用reCAPTCHA來保護表單不受自動機器人攻擊，確保安全可靠的資料收集。 | 使用通用編輯器的內建內嵌元件，直接將表單內嵌至Edge Delivery Services Sites頁面。 | 輕鬆自訂在成功提交表單後，欲呈現給使用者看的確認訊息或頁面。 |
+| [**驗證碼**](/help/edge/docs/forms/universal-editor/recaptcha-forms.md) | **嵌入表單** (即將推出) | [**感謝設定**](/help/edge/docs/forms/universal-editor/submit-action.md#show-a-custom-thank-you-message-on-adaptive-form-submission-submit-action-message-ue) |
+| 使用 reCAPTCHA 保護表單避免遭受自動機器人攻擊，確保資料彙集安全且可靠。 | 使用通用編輯器的內建嵌入元件，將表單直接嵌入至 Edge Delivery Services Sites 頁面中。 | 輕鬆自訂在成功提交表單後，欲呈現給使用者看的確認訊息或頁面。 |
 
 
 <!-- ![Universal Editor](/help/edge/docs/forms/universal-editor/assets/generate-forms.svg)  **WYSIWYG interface for Form creation**: Universal Editor provides a WYSIWYG interface for form design. It provides pre-built component library, responsive design support, and template-based form creation. You can instantly add or remove form fields and modify field properties (like label, data binding, validation). You can also plugin custom form components to Universal Editor.
@@ -217,7 +217,7 @@ In-addtion to pre-built form components, the Universal editor also provides supp
 
 ## 上線
 
-若要啟用通用編輯器及其進階功能 (如規則編輯器)，請使用您的官方電子郵件 ID 寫信至 aem-forms-ea@adobe.com。Adobe 團隊隨時可協助您轉換表單建置體驗。
+<span class="preview">這是透過我們的<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-hant#new-features">發行前通道</a>提供的發行前功能。</span>
 
 ## 常見問題集 (FAQ)
 

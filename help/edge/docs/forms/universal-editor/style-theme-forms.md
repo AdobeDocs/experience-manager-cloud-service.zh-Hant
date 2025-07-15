@@ -4,21 +4,21 @@ description: 有效地自訂透過 Edge Delivery Services 交付的 AEM Forms �
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
+source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
 workflow-type: tm+mt
-source-wordcount: '1876'
-ht-degree: 96%
+source-wordcount: '1870'
+ht-degree: 95%
 
 ---
 
 # 自訂表單的外觀
 
-<span class="preview">此功能可透過搶先存取計畫使用。 若要要求存取權，請將您的GitHub組織名稱和存放庫名稱從您的官方地址傳送電子郵件至<a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> 。 例如，如果存放庫URL是https://github.com/adobe/abc，組織名稱是adobe，存放庫名稱是abc。</span>
+<span class="preview">您可以透過搶先體驗方案使用這項功能。若要請求存取權，請使用您的官方地址發送電子郵件至 <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>，郵件內容須包含您的 GitHub 組織名稱和存放庫名稱。例如，若存放庫 URL 為 https://github.com/adobe/abc,，則組織名稱為 adobe，存放庫名稱為 abc。</span>
 
 
 表單對於網站上的使用者互動至關重要，可讓使用者輸入資料。您可以使用階層式樣式表 (CSS) 來設定表單欄位的樣式，增強表單的視覺呈現效果並提升使用者體驗。
 
-最適化 Forms 區塊為所有表單欄位產生一致的結構。一致的結構使得開發 CSS 選擇器更加容易，以根據欄位類型和欄位名稱來選取表單欄位並設定其樣式。
+自適應表單區塊會讓所有表單欄位產生一致的結構。一致的結構使得開發 CSS 選擇器更加容易，以根據欄位類型和欄位名稱來選取表單欄位並設定其樣式。
 
 本文件概述了各種表單元件的 HTML 結構，協助您了解如何為各種表單欄位建立 CSS 選擇器，以設定最適化表單區塊之表單欄位的樣式。
 
@@ -34,42 +34,44 @@ ht-degree: 96%
 
 * 輸入欄位：包括文字輸入、電子郵件輸入、密碼輸入等。
 * 核取方塊群組：用於選取多個選項。
-* 單選按鈕群組：用於只能在一組選項中進行單選。
+* 單選按鈕群組：用於從一組選項中選取一個選項。
 * 下拉式選單：也稱為選取方塊，用於從清單中選取一個選項。
-* 面板/容器：用於將相關的表單元素群組在一起。
+* 面板/容器：用於將相關的表單元素組成群組。
 
 ## 基本樣式設定原則
 
 在設定特定表單欄位的樣式之前，了解[基本的 CSS 概念](https://www.w3schools.com/css/css_intro.asp)至關重要：
 
-* [選取器](https://www.w3schools.com/css/css_selectors.asp)：CSS 選擇器可讓您針對特定的 HTML 元素進行樣式設定。您可以使用元素選取器、類別選取器或 ID 選取器。
+* [選取器](https://www.w3schools.com/css/css_selectors.asp)：CSS 選擇器可讓您針對特定的 HTML 元素進行樣式設定。您可以使用元素選擇器、類別選擇器或 ID 選擇器。
 * [屬性](https://www.w3schools.com/css/css_syntax.asp)：CSS 屬性定義元素的外觀。用於設定表單欄位樣式的常見屬性包括顏色、背景顏色、邊框、邊框間距、邊界等。
-* [方塊模型](https://www.w3schools.com/css/css_boxmodel.asp)：CSS 方塊模型描述 HTML 元素結構為由邊框間距、邊框和邊界包圍的內容區域。
-* Flexbox/Grid：CSS [Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) 和[ Grid 版面](https://www.w3schools.com/css/css_grid.asp)是建立回應式和靈活性設計的強大工具。
+* [方塊模型](https://www.w3schools.com/css/css_boxmodel.asp)：CSS 方塊模型會將 HTML 元素結構描述為由邊框間距、邊框和邊界包圍的內容區域
+* Flexbox/Grid：CSS [Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) 和[ Grid 版面](https://www.w3schools.com/css/css_grid.asp)是建立回應式和靈活設計的強大工具。
 
 
 ## 為最適化表單區塊設定表單樣式
 
 最適化區塊提供了標準化的 HTML 結構，簡化了選取表單元件和設定表單元件樣式的程序：
 
-* **更新預設樣式**：您可以透過編輯 `/blocks/form/form.css file` 來修改表單的預設樣式。此檔案提供了表單的全面樣式，支援多步驟精靈表單。它強調使用自訂CSS變數來輕鬆進行自訂、維護以及跨表單的統一樣式。
+* **更新預設樣式**：您可以透過編輯 `/blocks/form/form.css file` 來修改表單的預設樣式。此檔案提供了表單的全面樣式，支援多步驟精靈表單。其著重在使用自訂 CSS 變數，讓自訂、維護和統一表單樣式的工作變得簡單。
 
-* **表單的 CSS 樣式**：為了確保正確套用樣式，請將表單特定的 CSS 包覆在 `main .form form` 選取器中。這可確保您的樣式只會以主內容區域內的表單元素為目標，避免與網站的其他部分發生衝突。
-範例：
+* **表單的 CSS 樣式**：為了確保正確套用樣式，請將表單特定的 CSS 包覆在 `main .form form` 選取器中。這可確保您的樣式僅以主要內容區域中的表單元素為目標，以避免與網站的其他部分衝突。
+
+  範例：
 
   ```css
-    main .form form input {
-        /* Add styles specific to input fields inside the form */
-    }
+  main .form form .{Type}-wrapper input {
+      /* Add styles specific to input fields inside the form */
+  }
   
-    main .form form button {
-        /* Add styles specific to buttons inside the form */
-    }
+  main .form form .{Type}-wrapper button {
+      /* Add styles specific to buttons inside the form */
+  }
   
-    main .form form label {
-        /* Add styles specific to labels inside the form */
-    }
-  
+  main .form form .{Type}-wrapper label {
+      /* Add styles specific to labels inside the form */
+  }
+  ```
+
 ## 元件結構
 
 最適化表單區塊為各種表單元素提供一致的 HTML 結構，確保輕鬆進行樣式設定和管理。您可以使用 CSS 進行樣式設定，藉此操控元件。
@@ -81,38 +83,34 @@ ht-degree: 96%
 +++ 一般元件的 HTML 結構
 
 ```HTML
-
   <div class="{Type}-wrapper field-{Name}   field-wrapper" data-required={Required}>
-     &lt;label for="{FieldId}" class="field-label">First   Name&lt;/label>
-     &lt;input type="{Type}" placeholder="{Placeholder}"   maxlength="{Max}" id={FieldId}" name="{Name}"   aria-describedby="{FieldId}-description">
+     <label for="{FieldId}" class="field-label">First   Name</label>
+     <input type="{Type}" placeholder="{Placeholder}"   maxlength="{Max}" id={FieldId}" name="{Name}"   aria-describedby="{FieldId}-description">
      <div class="field-description" aria-live="polite"  id="{FieldId}-description">
       Hint - First name should be minimum 3 characters  and a maximum of 10 characters.
      </div>
   </div>
-
 ```
 
 * 類別：div 元素有幾個目標為特定元素和樣式的類別。您需要 `{Type}-wrapper` 或 `field-{Name}` 類別以開發 CSS 選取器來設定表單欄位樣式：
-* {Type}：根據欄位類型識別元件。例如，文字 (text-wrapper)、數字 (number-wrapper)、日期 (date-wrapper)。
-* {Name}：根據名稱識別元件。欄位名稱只能包含英數字元，名稱中的多個連續破折號將替換為單個破折號 `(-)`，並且欄位名稱中的開頭和結尾破折號將被刪除。例如，名字 (field-first-name field-wrapper)。
-* {FieldId}：該欄位的唯一識別碼，會自動產生。
-* {Required}：它是一個布林值，表示該欄位是否為必填欄位。
+* {Type}：依欄位型別識別元件。 例如，text (text-wrapper)、number (number-wrapper)、date (date-wrapper)。
+* {Name}：依名稱識別元件。 欄位名稱只能包含英數字元，名稱中的多個連續破折號將替換為單個破折號 `(-)`，並且欄位名稱中的開頭和結尾破折號將被刪除。例如，first-name (field-first-name field-wrapper)。
+* {FieldId}：這是欄位的唯一識別碼，會自動產生。
+* {Required}：表示欄位是否為必要欄位的布林值。
 * 標籤：的 `label` 元素提供欄位的描述性文字，並使用 `for` 屬性將其與輸入元素相關聯。
-* 輸入：`input` 元素定義要輸入的資料類型。例如，文字、數字、電子郵件。
-* 描述 (選擇性)：`div` 與類別 `field-description` 為使用者提供額外資訊或說明。
+* 輸入：`input` 元素定義要輸入的資料類型。例如，text、number、email。
+* 描述 (選用)：`div` 與類別 `field-description` 會為使用者提供其他資訊或指示。
 
 **HTML 結構範例**
 
 ```HTML
-
 <div class="text-wrapper field-first-name field-wrapper" data-required="true">
-  &lt;label for="firstName" class="field-label">First Name&lt;/label>
-  &lt;input type="text" placeholder="Enter your first name" maxlength="50" id="firstName" name="firstName" aria-describedby="firstName-description">
+  <label for="firstName" class="field-label">First Name</label>
+  <input type="text" placeholder="Enter your first name" maxlength="50" id="firstName" name="firstName" aria-describedby="firstName-description">
   <div class="field-description" aria-live="polite" id="firstName-description">
     Please enter your legal first name.
   </div>
 </div>
-
 ```
 
 +++
@@ -120,53 +118,50 @@ ht-degree: 96%
 +++ 一般元件的 CSS 選取器
 
 ```CSS
-
   
   /* Target all input fields within any .{Type}-wrapper  */
-  main .form form .{Type}-wrapper  &lbrace;
+  main .form form .{Type}-wrapper  {
     /* Add your styles here */
     border: 1px solid #ccc;
     padding: 8px;
     border-radius: 4px;
-  &rbrace;
+  }
   
   /* Target all input fields within any .{Type}-wrapper  */
-  main .form form .{Type}-wrapper input &lbrace;
+  main .form form .{Type}-wrapper input {
     /* Add your styles here */
     border: 1px solid #ccc;
     padding: 8px;
     border-radius: 4px;
-  &rbrace;
+  }
   
   /* Target any element with the class field-{Name}  */
-  main .form form .field-{Name} &lbrace;
+  main .form form .field-{Name} {
     /* Add your styles here */
     /* This could be used for styles specific to all elements with   field-{Name} class, not just inputs */
-  &rbrace;
+  }
   
 ```
 * `.{Type}-wrapper`：根據欄位類型以外部 `div` 元素為目標。例如，`.text-wrapper` 以所有文字欄位為目標。
-* `.field-{Name}`：根據特定欄位名稱進一步選取元素。例如，`.field-first-name` 以「名字」文字欄位為目標。雖然此選擇器可用來為含有 field-{Name} 類別的元素進行目標定位，但請務必謹慎。在這種特定情況下，這對於設定輸入欄位的樣式並不是很有用，因為其不僅以輸入本身為目標，而且還會以標籤和描述元素為目標。建議使用更特定的選取器，例如，用於為文字輸入欄位 (.text-wrapper 輸入) 的選取器進行目標定位。
+* `.field-{Name}`：根據特定欄位名稱進一步選取元素。例如，`.field-first-name` 以「名字」文字欄位為目標。雖然此選取器可用於定位欄位 — {Name}類別的元素，但請務必小心。 在這種特定情況下，這對於設定輸入欄位的樣式並不是很有用，因為其不僅以輸入本身為目標，而且還會以標籤和描述元素為目標。建議使用比較具體的選擇器，例如用於針對文字輸入欄位 (.text-wrapper input) 的選擇器。
 
 **一般元件的 CSS 選取器範例**
 
 ```CSS
-
 /*Target all text input fields */
-main .form form .text-wrapper input &lbrace;
+main .form form .text-wrapper input {
   border: 1px solid #ccc;
   padding: 8px;
   border-radius: 4px;
   color: red;
-&rbrace;
+}
 
 /*Target all fields with name first-name*/
-main .form form .field-first-name input &lbrace;
+main .form form .field-first-name input {
   border: 1px solid #ccc;
   padding: 8px;
   border-radius: 4px;
-&rbrace;
-
+}
 ```
 
 +++
@@ -178,57 +173,51 @@ main .form form .field-first-name input &lbrace;
 +++ 下拉式選單元件的 HTML 結構
 
 ```HTML
-
 <div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
-   &lt;label for="{FieldId}" class="field-label">First Name&lt;/label>
-   &lt;input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id={FieldId}" name="{Name}" aria-describedby="{FieldId}-description">
+   <label for="{FieldId}" class="field-label">First Name</label>
+   <input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id={FieldId}" name="{Name}" aria-describedby="{FieldId}-description">
    <div class="field-description" aria-live="polite" id="{FieldId}-description">
     Hint - First name should be minimum 3 characters and a maximum of 10 characters.
    </div>
 </div>
-
 ```
 
 **HTML 結構範例**
 
 ```HTML
-
 <div class="drop-down-wrapper field-country field-wrapper" data-required="true">
-  &lt;label for="country" class="field-label">Country&lt;/label>
-  &lt;select id="country" name="country">
-    &lt;option value="">Select Country&lt;/option>
-    &lt;option value="US">United States&lt;/option>
-    &lt;option value="CA">Canada&lt;/option>
-  &lt;/select>
+  <label for="country" class="field-label">Country</label>
+  <select id="country" name="country">
+    <option value="">Select Country</option>
+    <option value="US">United States</option>
+    <option value="CA">Canada</option>
+  </select>
   <div class="field-description" aria-live="polite" id="country-description">
     Please select your country of residence.
   </div>
 </div>
-
 ```
 
 +++
 
-+++ 下拉式選單的 CSS 選取器
++++ 下拉式選單元件的 CSS 選擇器
 
 以下 CSS 列出下拉式選單元件的一些範例 CSS 選擇器。
 
 ```CSS
-
 /* Target the outer wrapper */
-main .form form .drop-down-wrapper &lbrace;
+main .form form .drop-down-wrapper {
   /* Add your styles here */
   display: flex;
   flex-direction: column;
   margin-bottom: 15px;
-&rbrace;
+}
 
 /* Style the label */
-main .form form .drop-down-wrapper .field-label &lbrace;
+main .form form .drop-down-wrapper .field-label {
   margin-bottom: 5px;
   font-weight: bold;
-&rbrace;
-
+}
 ```
 * 以包裝函式為目標：第一個選取器 (`.drop-down-wrapper`) 以外部包裝函式元素為目標，確保樣式套用至整個下拉式選單元件。
 * Flexbox 版面：Flexbox 垂直排列標籤、下拉式選單和說明，以呈現簡潔的版面。
@@ -248,41 +237,37 @@ main .form form .drop-down-wrapper .field-label &lbrace;
 +++ 單選按鈕群組 HTML 結構
 
 ```HTML
-
-&lt;fieldset class="radio-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
-   &lt;legend for="{FieldId}" class="field-label">....&lt;/legend>
+<fieldset class="radio-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
+   <legend for="{FieldId}" class="field-label">....</legend>
    <% for each radio in Group %>
    <div class="radio-wrapper field-{Name}">
-      &lt;input type="radio" value="" id="{UniqueId}" data-field-type="radio-group" name="{FieldId}">
-      &lt;label for="{UniqueId}" class="field-label">...&lt;/label>
+      <input type="radio" value="" id="{UniqueId}" data-field-type="radio-group" name="{FieldId}">
+      <label for="{UniqueId}" class="field-label">...</label>
    </div>
    <% end for %>
-&lt;/fieldset>
-
+</fieldset>
 ```
 
 **HTML 結構範例**
 
 ```HTML
-
-&lt;fieldset class="radio-group-wrapper field-color field-wrapper" id="color_preference" name="color_preference" data-required="true">
-  &lt;legend for="color_preference" class="field-label">Favorite Color:&lt;/legend>
+<fieldset class="radio-group-wrapper field-color field-wrapper" id="color_preference" name="color_preference" data-required="true">
+  <legend for="color_preference" class="field-label">Favorite Color:</legend>
   <% for each radio in Group %>
     <div class="radio-wrapper field-color">
-      &lt;input type="radio" value="red" id="color_red" data-field-type="radio-group" name="color_preference">
-      &lt;label for="color_red" class="field-label">Red&lt;/label>
+      <input type="radio" value="red" id="color_red" data-field-type="radio-group" name="color_preference">
+      <label for="color_red" class="field-label">Red</label>
     </div>
     <div class="radio-wrapper field-color">
-      &lt;input type="radio" value="green" id="color_green" data-field-type="radio-group" name="color_preference">
-      &lt;label for="color_green" class="field-label">Green&lt;/label>
+      <input type="radio" value="green" id="color_green" data-field-type="radio-group" name="color_preference">
+      <label for="color_green" class="field-label">Green</label>
     </div>
     <div class="radio-wrapper field-color">
-      &lt;input type="radio" value="blue" id="color_blue" data-field-type="radio-group" name="color_preference">
-      &lt;label for="color_blue" class="field-label">Blue&lt;/label>
+      <input type="radio" value="blue" id="color_blue" data-field-type="radio-group" name="color_preference">
+      <label for="color_blue" class="field-label">Blue</label>
     </div>
   <% end for %>
-&lt;/fieldset>
-
+</fieldset>
 ```
 
 +++
@@ -292,34 +277,28 @@ main .form form .drop-down-wrapper .field-label &lbrace;
 * 為欄位集進行目標定位
 
 ```CSS
-
-  main .form form .radio-group-wrapper &lbrace;
+  main .form form .radio-group-wrapper {
     border: 1px solid #ccc;
     padding: 10px;
-  &rbrace;
-
+  }
 ```
 此選擇器針對具有 radio-group-wrapper 類別的任何欄位集。這對於將通用樣式應用於整個單選按鈕群組非常有用。
 
 * 為單選按鈕標籤進行目標定位
 
 ```CSS
-
-main .form form .radio-wrapper label &lbrace;
+main .form form .radio-wrapper label {
     font-weight: normal;
     margin-right: 10px;
-  &rbrace;
-
+  }
 ```
 
 * 根據名稱鎖定來針對欄位集中的所有單選按鈕標籤
 
 ```CSS
-
-main .form form .field-color .radio-wrapper label &lbrace;
+main .form form .field-color .radio-wrapper label {
   /* Your styles here */
-&rbrace;
-
+}
 ```
 
 +++
@@ -329,39 +308,35 @@ main .form form .field-color .radio-wrapper label &lbrace;
 +++ 核取方塊群組的 HTML 結構
 
 ```HTML
-
-&lt;fieldset class="checkbox-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
-   &lt;legend for="{FieldId}" class="field-label">....&lt;/legend>
+<fieldset class="checkbox-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
+   <legend for="{FieldId}" class="field-label">....</legend>
    <% for each radio in Group %>
    <div class="radio-wrapper field-{Name}">
-      &lt;input type="checkbox" value="" id="{UniqueId}" data-field-type="checkbox-group" name="{FieldId}">
-      &lt;label for="{UniqueId}" class="field-label">...&lt;/label>
+      <input type="checkbox" value="" id="{UniqueId}" data-field-type="checkbox-group" name="{FieldId}">
+      <label for="{UniqueId}" class="field-label">...</label>
    </div>
    <% end for %>
-&lt;/fieldset>
-
+</fieldset>
 ```
 
 **HTML 結構範例**
 
 ```HTML
-
-&lt;fieldset class="checkbox-group-wrapper field-topping field-wrapper" id="topping_preference" name="topping_preference" data-required="false">
-  &lt;legend for="topping_preference" class="field-label">Pizza Toppings:&lt;/legend>
+<fieldset class="checkbox-group-wrapper field-topping field-wrapper" id="topping_preference" name="topping_preference" data-required="false">
+  <legend for="topping_preference" class="field-label">Pizza Toppings:</legend>
   <div class="checkbox-wrapper field-topping">
-    &lt;input type="checkbox" value="pepperoni" id="topping_pepperoni" data-field-type="checkbox-group" name="topping_preference">
-    &lt;label for="topping_pepperoni" class="field-label">Pepperoni&lt;/label>
+    <input type="checkbox" value="pepperoni" id="topping_pepperoni" data-field-type="checkbox-group" name="topping_preference">
+    <label for="topping_pepperoni" class="field-label">Pepperoni</label>
   </div>
   <div class="checkbox-wrapper field-topping">
-    &lt;input type="checkbox" value="mushrooms" id="topping_mushrooms" data-field-type="checkbox-group" name="topping_preference">
-    &lt;label for="topping_mushrooms" class="field-label">Mushrooms&lt;/label>
+    <input type="checkbox" value="mushrooms" id="topping_mushrooms" data-field-type="checkbox-group" name="topping_preference">
+    <label for="topping_mushrooms" class="field-label">Mushrooms</label>
   </div>
   <div class="checkbox-wrapper field-topping">
-    &lt;input type="checkbox" value="onions" id="topping_onions" data-field-type="checkbox-group" name="topping_preference">
-    &lt;label for="topping_onions" class="field-label">Onions&lt;/label>
+    <input type="checkbox" value="onions" id="topping_onions" data-field-type="checkbox-group" name="topping_preference">
+    <label for="topping_onions" class="field-label">Onions</label>
   </div>
-&lt;/fieldset>
-
+</fieldset>
 ```
 
 +++
@@ -371,86 +346,78 @@ main .form form .field-color .radio-wrapper label &lbrace;
 * 以外部包裝函式為目標：這些選取器的目標為單選按鈕和核取方塊群組的最外層容器，讓您可將一般樣式套用至整個群組結構。這對於設定間距、對齊方式或其他版面相關的屬性非常有用。
 
 ```CSS
-
   
   /* Targets radio group wrappers */
-  main .form form .radio-group-wrapper &lbrace;
+  main .form form .radio-group-wrapper {
     margin-bottom: 20px; /* Adds space between radio groups */  
-  &rbrace;
+  }
 
   /* Targets checkbox group wrappers */
-  main .form form .checkbox-group-wrapper &lbrace;
+  main .form form .checkbox-group-wrapper {
     margin-bottom: 20px; /* Adds space between checkbox groups */
-  &rbrace;
-
+  }
 ```
 
 * 以群組標籤為目標：此選取器的目標為單選按鈕和核取方塊群組包裝函式內的 `.field-label` 元素。這使您可以專門為這些群組設定標籤樣式，從而可能使它們更加醒目。
 
 ```CSS
-
 main .form form .radio-group-wrapper legend,
-main .form form .checkbox-group-wrapper legend &lbrace;
+main .form form .checkbox-group-wrapper legend {
   font-weight: bold; /* Makes the group label bold */
-&rbrace;
-
+}
 ```
 
 * 以個別輸入和標籤為目標：這些選取器可以對個別單選按鈕、核取方塊及其關聯的標籤進行更精細的控制。您可以使用它們來調整大小、間距或套用更獨特的視覺樣式。
 
 ```CSS
-
 /* Styling radio buttons */
-main .form form .radio-group-wrapper input[type="radio"] &lbrace;
+main .form form .radio-group-wrapper input[type="radio"] {
   margin-right: 5px; /* Adds space between the input and its label */
-&rbrace;
+}
 
 /* Styling radio button labels */
-main .form form .radio-group-wrapper label &lbrace;
+main .form form .radio-group-wrapper label {
   font-size: 15px; /* Changes the label font size */
-&rbrace;
+}
 
 /* Styling checkboxes */
-main .form form .checkbox-group-wrapper input[type="checkbox"] &lbrace;
+main .form form .checkbox-group-wrapper input[type="checkbox"] {
   margin-right: 5px; /* Adds space between the input and its label */
-&rbrace;
+}
 
 /* Styling checkbox labels */
-main .form form .checkbox-group-wrapper label &lbrace;
+main .form form .checkbox-group-wrapper label {
   font-size: 15px; /* Changes the label font size */
-&rbrace;
-
+}
 ```
 
 * 自訂單選按鈕和核取方塊的外觀：此技術隱藏預設輸入並使用 `:before` 和 `:after` 偽元素來建立自訂視覺效果，其根據「已選取」狀態來變更外觀。
 
 ```CSS
-
 /* Hide the default radio button or checkbox */
 main .form form .radio-group-wrapper input[type="radio"],
-main .form form .checkbox-group-wrapper input[type="checkbox"] &lbrace;
+main .form form .checkbox-group-wrapper input[type="checkbox"] {
   opacity: 0;
   position: absolute;
-&rbrace;
+}
 
 /* Create a custom radio button */
-main .form form .radio-group-wrapper input[type="radio"] + label::before &lbrace;
+main .form form .radio-group-wrapper input[type="radio"] + label::before {
   /* ... styles for custom radio button ... */
-&rbrace;
+}
 
-main .form form .radio-group-wrapper input[type="radio"]:checked + label::before &lbrace;
+main .form form .radio-group-wrapper input[type="radio"]:checked + label::before {
   /* ... styles for checked radio button ... */
-&rbrace;
+}
 
 /* Create a custom checkbox */
-main .form form .checkbox-group-wrapper input[type="checkbox"] + label::before &lbrace;
+main .form form .checkbox-group-wrapper input[type="checkbox"] + label::before {
   /* ... styles for custom checkbox ... */
-&rbrace;
+}
 
-main .form form .checkbox-group-wrapper input[type="checkbox"]:checked + label::before &lbrace;
+main .form form .checkbox-group-wrapper input[type="checkbox"]:checked + label::before {
   /* ... styles for checked checkbox ... */
-&rbrace;
-
+}
 ```
 
 +++
@@ -460,47 +427,43 @@ main .form form .checkbox-group-wrapper input[type="checkbox"]:checked + label::
 +++ 面板/容器元件的 HTML 結構
 
 ```HTML
-
-&lt;fieldset class="panel-wrapper field-{PanelName} field-wrapper">
-  &lt;legend for="{id}" class="field-label" data-visible="false">bannerComponent&lt;/legend>
+<fieldset class="panel-wrapper field-{PanelName} field-wrapper">
+  <legend for="{id}" class="field-label" data-visible="false">bannerComponent</legend>
   <div class="{Type}-wrapper field-{Name} field-wrapper">
-    &lt;label for="{FieldId}" class="field-label">First Name&lt;/label>
-    &lt;input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id={FieldId}" name="{Name}">
+    <label for="{FieldId}" class="field-label">First Name</label>
+    <input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id={FieldId}" name="{Name}">
     <div class="field-description" aria-live="polite" id="{FieldId}-description">
       Hint - First name should be minimum 3 characters and a maximum of 10 characters.
     </div>
   </div>
-&lt;/fieldset>
-
+</fieldset>
 ```
 
 **HTML 結構範例**
 
 ```HTML
-
-&lt;fieldset class="panel-wrapper field-login field-wrapper">
-  &lt;legend for="login" class="field-label" data-visible="false">Login Information&lt;/legend>
+<fieldset class="panel-wrapper field-login field-wrapper">
+  <legend for="login" class="field-label" data-visible="false">Login Information</legend>
   <div class="text-wrapper field-username field-wrapper">
-    &lt;label for="username" class="field-label">Username&lt;/label>
-    &lt;input type="text" placeholder="Enter your username" maxlength="50" id="username" name="username">
+    <label for="username" class="field-label">Username</label>
+    <input type="text" placeholder="Enter your username" maxlength="50" id="username" name="username">
     <div class="field-description" aria-live="polite" id="username-description">
       Please enter your username or email address.
     </div>
   </div>
   <div class="password-wrapper field-password field-wrapper">
-    &lt;label for="password" class="field-label">Password&lt;/label>
-    &lt;input type="password" placeholder="Enter your password" maxlength="20" id="password" name="password">
+    <label for="password" class="field-label">Password</label>
+    <input type="password" placeholder="Enter your password" maxlength="20" id="password" name="password">
     <div class="field-description" aria-live="polite" id="password-description">
       Your password must be at least 8 characters long.
     </div>
   </div>
-&lt;/fieldset>
-
+</fieldset>
 ```
 
 * Fieldset 元素可用作含有 panel-wrapper 類別和其他類別的面板容器，以便根據面板名稱 (field-login) 設定樣式。
 * 圖例元素 (<legend>) 可用作面板標題，其中包含文字「登入資訊」和 field-label 類別。data-visible=&quot;false&quot; 屬性可以與 JavaScript 一起用來控制標題的可見度。
-* 在 fieldset 內部、多個。{Type}-wrapper 元素 (在本例中為 .text-wrapper 和 .password-wrapper) 代表面板中的個別表單欄位。
+* 在 fieldset 內部、多個。{Type}個包裝函式元素（在此案例中為.text-wrapper和.password-wrapper）代表面板中的個別表單欄位。
 * 每個包裝函式都包含一個標籤、輸入欄位和說明，與前面的範例類似。
 
 +++
@@ -510,16 +473,14 @@ main .form form .checkbox-group-wrapper input[type="checkbox"]:checked + label::
 1. 為面板進行目標定位：
 
 ```CSS
-
   /* Target the entire panel container */
-  main .form form .panel-wrapper &lbrace;
+  main .form form .panel-wrapper {
     /* Add your styles here (e.g., border, padding, background color) */
     border: 1px solid #ccc;
     padding: 15px;
     border-radius: 4px;
     margin-bottom: 20px;
- &rbrace;
-
+ }
 ```
 
 * `.panel-wrapper` 選擇器使用 panel-wrapper 類別來設定所有元素的樣式，為所有面板建立一致的外觀。
@@ -527,17 +488,15 @@ main .form form .checkbox-group-wrapper input[type="checkbox"]:checked + label::
 1. 為面板標題進行目標定位：
 
 ```CSS
-
   /* Target the legend element (panel title) */
-  .panel-wrapper legend &lbrace;
+  .panel-wrapper legend {
     /* Add your styles here (e.g., font-weight, font-size) */
     font-weight: bold;
     font-size: 16px;
     padding-bottom: 5px;
     margin-bottom: 10px;
     border-bottom: 1px solid #ddd; /* Optional: create a separation line */
-  &rbrace;
-
+  }
 ```
 
 * `.panel-wrapper legend` 選擇器設定面板內圖例元素的樣式，讓標題在視覺上脫穎而出。
@@ -546,13 +505,11 @@ main .form form .checkbox-group-wrapper input[type="checkbox"]:checked + label::
 1. 為面板中個別欄位進行目標定位：
 
 ```CSS
-
 /* Target all form field wrappers within a panel */
-main .form form .panel-wrapper .{Type}-wrapper &lbrace;
+main .form form .panel-wrapper .{Type}-wrapper {
   /* Add your styles here (e.g., margin) */
   margin-bottom: 10px;
-&rbrace;
-
+}
 ```
 
 * `.panel-wrapper .{Type}-wrapper` 選擇器為面板中含有 `.{Type}-wrapper` 類別的所有包裝函式進行目標定位，可讓您設定表單欄位之間的間距樣式。
@@ -560,17 +517,15 @@ main .form form .panel-wrapper .{Type}-wrapper &lbrace;
 1. 為特定欄位 (選項) 進行目標定位：
 
 ```CSS
-
   /* Target the username field wrapper */
-  main .form form .panel-wrapper .text-wrapper.field-username &lbrace;
+  main .form form .panel-wrapper .text-wrapper.field-username {
     /* Add your styles here (specific to username field) */
-  &rbrace;
+  }
 
   /* Target the password field wrapper */
-  main .form form .panel-wrapper .password-wrapper.field-password &lbrace;
+  main .form form .panel-wrapper .password-wrapper.field-password {
     /* Add your styles here (specific to password field) */
-  &rbrace;
-
+  }
 ```
 
 * 這些屬於選項的選擇器可讓您在面板中為特定欄位包裝函式進行獨特樣式的目標定位，例如醒目顯示使用者名稱欄位。
@@ -582,59 +537,55 @@ main .form form .panel-wrapper .{Type}-wrapper &lbrace;
 +++ 可重複面板的 HTML 結構
 
 ```HTML
-
-&lt;fieldset class="panel-wrapper field-{PanelName} field-wrapper">
-  &lt;legend for="{id}" class="field-label" data-visible="false">bannerComponent&lt;/legend>
+<fieldset class="panel-wrapper field-{PanelName} field-wrapper">
+  <legend for="{id}" class="field-label" data-visible="false">bannerComponent</legend>
   <div class="{Type}-wrapper field-{Name} field-wrapper">
-    &lt;label for="{FieldId}" class="field-label">First Name&lt;/label>
-    &lt;input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id={FieldId}" name="{Name}">
+    <label for="{FieldId}" class="field-label">First Name</label>
+    <input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id={FieldId}" name="{Name}">
     <div class="field-description" aria-live="polite" id="{FieldId}-description">
       Hint - First name should be minimum 3 characters and a maximum of 10 characters.
     </div>
-&lt;/fieldset>
-
+</fieldset>
 ```
 
 **HTML 結構範例**
 
 ```HTML
-
-&lt;fieldset class="panel-wrapper field-contact field-wrapper" data-repeatable="true">
-  &lt;legend for="contact-1" class="field-label" data-visible="false">Contact Information&lt;/legend>
+<fieldset class="panel-wrapper field-contact field-wrapper" data-repeatable="true">
+  <legend for="contact-1" class="field-label" data-visible="false">Contact Information</legend>
   <div class="text-wrapper field-name field-wrapper">
-    &lt;label for="name-1" class="field-label">Name&lt;/label>
-    &lt;input type="text" placeholder="Enter your name" maxlength="50" id="name-1" name="contacts[0].name">
+    <label for="name-1" class="field-label">Name</label>
+    <input type="text" placeholder="Enter your name" maxlength="50" id="name-1" name="contacts[0].name">
     <div class="field-description" aria-live="polite" id="name-1-description">
       Please enter your full name.
     </div>
   </div>
   <div class="email-wrapper field-email field-wrapper">
-    &lt;label for="email-1" class="field-label">Email&lt;/label>
-    &lt;input type="email" placeholder="Enter your email address" maxlength="100" id="email-1" name="contacts[0].email">
+    <label for="email-1" class="field-label">Email</label>
+    <input type="email" placeholder="Enter your email address" maxlength="100" id="email-1" name="contacts[0].email">
     <div class="field-description" aria-live="polite" id="email-1-description">
       Please enter a valid email address.
     </div>
   </div>
-&lt;/fieldset>
+</fieldset>
 
-&lt;fieldset class="panel-wrapper field-contact field-wrapper" data-repeatable="true">
-  &lt;legend for="contact-2" class="field-label" data-visible="false">Contact Information&lt;/legend>
+<fieldset class="panel-wrapper field-contact field-wrapper" data-repeatable="true">
+  <legend for="contact-2" class="field-label" data-visible="false">Contact Information</legend>
   <div class="text-wrapper field-name field-wrapper">
-    &lt;label for="name-2" class="field-label">Name&lt;/label>
-    &lt;input type="text" placeholder="Enter your name" maxlength="50" id="name-2" name="contacts[1].name">
+    <label for="name-2" class="field-label">Name</label>
+    <input type="text" placeholder="Enter your name" maxlength="50" id="name-2" name="contacts[1].name">
     <div class="field-description" aria-live="polite" id="name-2-description">
       Please enter your full name.
     </div>
   </div>
   <div class="email-wrapper field-email field-wrapper">
-    &lt;label for="email-2" class="field-label">Email&lt;/label>
-    &lt;input type="email" placeholder="Enter your email address" maxlength="100" id="email-2" name="contacts[1].email">
+    <label for="email-2" class="field-label">Email</label>
+    <input type="email" placeholder="Enter your email address" maxlength="100" id="email-2" name="contacts[1].email">
     <div class="field-description" aria-live="polite" id="email-2-description">
       Please enter a valid email address.
     </div>
   </div>
-&lt;/fieldset>
-
+</fieldset>
 ```
 
 每個面板都有與單一面板範例相同的結構，並含有附加屬性：
@@ -650,16 +601,14 @@ main .form form .panel-wrapper .{Type}-wrapper &lbrace;
 * 為所有可重複面板進行目標定位：
 
 ```CSS
-
   /* Target all panels with the repeatable attribute */
- main .form form .panel-wrapper[data-repeatable="true"] &lbrace;
+ main .form form .panel-wrapper[data-repeatable="true"] {
     /* Add your styles here (e.g., border, margin) */
     border: 1px solid #ccc;
     padding: 15px;
     border-radius: 4px;
     margin-bottom: 20px;
-  &rbrace;
-
+  }
 ```
 
 選擇器會為所有可重複的面板進行樣式設定，確保有一致的外觀和感覺。
@@ -668,27 +617,23 @@ main .form form .panel-wrapper .{Type}-wrapper &lbrace;
 * 為面板中個別欄位進行目標定位：
 
 ```CSS
-
 /* Target all form field wrappers within a repeatable panel */
-main .form form .panel-wrapper[data-repeatable="true"] .{Type}-wrapper &lbrace;
+main .form form .panel-wrapper[data-repeatable="true"] .{Type}-wrapper {
   /* Add your styles here (e.g., margin) */
   margin-bottom: 10px;
-&rbrace;
-
+}
 ```
 此選擇器可為可重複面板中所有欄位包裝函式進行樣式設定，讓欄位之間的間距維持一致。
 
 * 為特定欄位 (在面板內) 進行目標定位：
 
 ```CSS
-
 /* Target the name field wrapper within the first panel */
-main .form form .panel-wrapper[data-repeatable="true"][data-index="0"] .text-wrapper.field-name &lbrace;
+main .form form .panel-wrapper[data-repeatable="true"][data-index="0"] .text-wrapper.field-name {
   /* Add your styles here (specific to first name field) */
-&rbrace;
+}
 
 /* Target all
-
 ```
 
 +++
@@ -698,44 +643,40 @@ main .form form .panel-wrapper[data-repeatable="true"][data-index="0"] .text-wra
 +++ 檔案附件的 HTML 結構
 
 ```HTML
-
 <div class="file-wrapper field-{FileName} field-wrapper">
-  &lt;legend for="{id}" class="field-label" data-visible="false"> File Attachment &lt;/legend>
+  <legend for="{id}" class="field-label" data-visible="false"> File Attachment </legend>
   <div class="file-drag-area">
     <div class="file-dragIcon"></div>
     <div class="file-dragText">Drag and Drop To Upload</div>
-    &lt;button class="file-attachButton" type="button">Attach&lt;/button>
-    &lt;input type="file" accept="audio/*, video/*, image/*, text/*, application/pdf" id="{id}" name="{FileName}" autocomplete="off" multiple="" required="required">
+    <button class="file-attachButton" type="button">Attach</button>
+    <input type="file" accept="audio/*, video/*, image/*, text/*, application/pdf" id="{id}" name="{FileName}" autocomplete="off" multiple="" required="required">
   </div>
   <div class="files-list">
     <div data-index="0" class="file-description">
       <span class="file-description-name">ClaimForm.pdf</span>
       <span class="file-description-size">26 kb</span>
-      &lt;button class="file-description-remove" type="button">&lt;/button>
+      <button class="file-description-remove" type="button"></button>
     </div>
   </div>
 </div>
-
 ```
 
 **HTML 結構範例**
 
 
 ```HTML
-
 <div class="file-wrapper field-claim_form field-wrapper">
-  &lt;legend for="claim_form" class="field-label" data-visible="false">File Attachment&lt;/legend>
+  <legend for="claim_form" class="field-label" data-visible="false">File Attachment</legend>
   <div class="file-drag-area">
     <div class="file-dragIcon"></div>
     <div class="file-dragText">Drag and Drop To Upload</div>
-    &lt;button class="file-attachButton" type="button">Attach&lt;/button>
+    <button class="file-attachButton" type="button">Attach</button>
   </div>
   <input type="file" accept="audio/*, video/*, image/*, text/*, application/pdf" id="claim_form"
          name="claim_form" autocomplete="off" multiple="" required="required" data-max-file-size="2MB">
   <div class="files-list">
     </div>
 </div>
-
 ```
 
 * 類別屬性使用為檔案附件提供的名稱 (claim_form)。
@@ -749,16 +690,14 @@ main .form form .panel-wrapper[data-repeatable="true"][data-index="0"] .text-wra
 * 為全部檔案附件元件進行目標定位：
 
 ```CSS
-
 /* Target the entire file attachment component */
-main .form form .file-wrapper &lbrace;
+main .form form .file-wrapper {
   /* Add your styles here (e.g., border, padding) */
   border: 1px solid #ccc;
   padding: 15px;
   border-radius: 4px;
   margin-bottom: 20px;
-&rbrace;
-
+}
 ```
 
 此選擇器為全部檔案附件元件設定樣式，包括圖例、拖曳區域、輸入欄位和清單。
@@ -766,36 +705,34 @@ main .form form .file-wrapper &lbrace;
 * 為特定元素進行目標定位：
 
 ```CSS
-
 /* Target the drag and drop area */
-main .form form .file-wrapper .file-drag-area &lbrace;
+main .form form .file-wrapper .file-drag-area {
   /* Add your styles here (e.g., background color, border) */
   background-color: #f0f0f0;
   border: 1px dashed #ddd;
   padding: 10px;
   text-align: center;
-&rbrace;
+}
 
 /* Target the file input element */
-main .form form .file-wrapper input[type="file"] &lbrace;
+main .form form .file-wrapper input[type="file"] {
   /* Add your styles here (e.g., hide the default input) */
   display: none;
-&rbrace;
+}
 
 /* Target individual file descriptions within the list (populated dynamically) */
-main .form form .file-wrapper .files-list .file-description &lbrace;
+main .form form .file-wrapper .files-list .file-description {
   /* Add your styles here (e.g., margin, display) */
   display: flex;
   justify-content: space-between;
   margin-bottom: 5px;
-&rbrace;
+}
 
 /* Target the file name within the description */
-main .form form .file-wrapper .files-list .file-description .file-description-name &lbrace;
+main .form form .file-wrapper .files-list .file-description .file-description-name {
   /* Add your styles here (e.g., font-weight) */
   font-weight: bold;
-&rbrace;
-
+}
 ```
 
 這些選擇器可讓您為檔案附件元件的不同部分個別設定樣式。您可以調整樣式以符合您的設計偏好。
@@ -814,36 +751,32 @@ main .form form .file-wrapper .files-list .file-description .file-description-na
 +++ HTML 結構
 
 ```HTML
-
 <div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
-   &lt;label for="{FieldId}" class="field-label">First Name&lt;/label>
-   &lt;input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id={FieldId}" name="{Name}" aria-describedby="{FieldId}-description">
+   <label for="{FieldId}" class="field-label">First Name</label>
+   <input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id={FieldId}" name="{Name}" aria-describedby="{FieldId}-description">
    <div class="field-description" aria-live="polite" id="{FieldId}-description">
     Hint - First name should be minimum 3 characters and a maximum of 10 characters.
    </div>
 </div>
-
 ```
 
 **HTML 結構範例**
 
 ```HTML
-
 <div class="text-wrapper field-name field-wrapper" data-required="true">
-  &lt;label for="name" class="field-label">Name&lt;/label>
-  &lt;input type="text" placeholder="Enter your name" maxlength="50" id="name" name="name">
+  <label for="name" class="field-label">Name</label>
+  <input type="text" placeholder="Enter your name" maxlength="50" id="name" name="name">
 </div>
 
 <div class="number-wrapper field-age field-wrapper" data-required="true">
-  &lt;label for="age" class="field-label">Age&lt;/label>
-  &lt;input type="number" placeholder="Enter your age" id="age" name="age">
+  <label for="age" class="field-label">Age</label>
+  <input type="number" placeholder="Enter your age" id="age" name="age">
 </div>
 
 <div class="email-wrapper field-email field-wrapper" data-required="true">
-  &lt;label for="email" class="field-label">Email Address&lt;/label>
-  &lt;input type="email" placeholder="Enter your email" id="email" name="email">
+  <label for="email" class="field-label">Email Address</label>
+  <input type="email" placeholder="Enter your email" id="email" name="email">
 </div>
-
 ```
 
 * 每個欄位都包含在具有多個類別的 `div` 元素中：
@@ -860,18 +793,16 @@ main .form form .file-wrapper .files-list .file-description .file-description-na
 +++ CSS 選取器範例
 
 ```CSS
-
 /* Target all text input fields */
-main .form form .text-wrapper input &lbrace;
+main .form form .text-wrapper input {
   /* Add your styles here */
-&rbrace;
+}
 
 /* Target all number input fields */
-main .form form .number-wrapper input &lbrace;
+main .form form .number-wrapper input {
   /* Add your styles here */
   letter-spacing: 2px; /* Example for adding letter spacing to all number fields */
-&rbrace;
-
+}
 ```
 
 +++
@@ -883,29 +814,25 @@ main .form form .number-wrapper input &lbrace;
 +++ HTML 結構
 
 ```HTML
-
 <div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
-   &lt;label for="{FieldId}" class="field-label">First Name&lt;/label>
-   &lt;input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id="{FieldId}" name="{Name}" aria-describedby="{FieldId}-description">
+   <label for="{FieldId}" class="field-label">First Name</label>
+   <input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id="{FieldId}" name="{Name}" aria-describedby="{FieldId}-description">
    <div class="field-description" aria-live="polite" id="{FieldId}-description">
     Hint - Enter the 6 digit number sent to your mobile number.
    </div>
 </div>
-
 ```
 
 **HTML 結構範例**
 
 ```HTML
-
 <div class="number-wrapper field-otp field-wrapper" data-required="true">
-  &lt;label for="otp" class="field-label">OTP&lt;/label>
-  &lt;input type="number" placeholder="Enter your OTP" maxlength="6" id="otp" name="otp" aria-describedby="otp-description">
+  <label for="otp" class="field-label">OTP</label>
+  <input type="number" placeholder="Enter your OTP" maxlength="6" id="otp" name="otp" aria-describedby="otp-description">
   <div class="field-description" aria-live="polite" id="otp-description">
     Hint - Enter the 6 digit number sent to your mobile number.
    </div>
 </div>
-
 ```
 
 +++
@@ -913,11 +840,9 @@ main .form form .number-wrapper input &lbrace;
 +++ CSS 選取器範例
 
 ```CSS
-
-main .form form .field-otp input &lbrace;
+main .form form .field-otp input {
    letter-spacing: 2px
-&rbrace;
-
+}
 ```
 
 此 CSS 的目標是位於具有類別 `field-otp` 的元素內的所有輸入元素。您表單的 HTML 結構遵循最適化表單區塊的慣例，這表示有一個標有「field-otp」類別的容器包含名為「otp」的欄位。

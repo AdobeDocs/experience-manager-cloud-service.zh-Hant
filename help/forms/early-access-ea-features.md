@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 4144c726a6f8551df9497732c2ca95b8eec5c63a
+source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
 workflow-type: tm+mt
-source-wordcount: '2356'
-ht-degree: 26%
+source-wordcount: '2219'
+ht-degree: 25%
 
 ---
 
@@ -73,21 +73,6 @@ Forms帶來的更多對話功能如下：
 
 對話式Forms不僅是一種新外觀 — 它還能改變使用者體驗的遊戲規則。  提升參與度、減少表單放棄率，並讓每個人都能更愉快地與您的網站互動。
 
-
-### 適用於Edge Delivery Services的WYSIWYG製作
-
-WYSIWYG製作提供WYSIWYG介面(通用編輯器和調適型Forms編輯器)，用以建置調適型表單並發佈至Edge Delivery Services。 WYSIWYG Authoring提供[Document-based Authoring](/help/edge/docs/forms/overview.md#document-based-authoring-features)的所有功能，以及各種其他功能：
-
-* 用來建立複雜邏輯的進階規則編輯器。
-* 提供自訂功能的伺服器端可擴充性。
-* 可輕鬆建立表單和視覺效果的 WYSIWYG 編輯體驗。
-* 記錄文件功能可建立提交資料的防篡改檔案。
-* 與 Adob&#x200B;&#x200B;e Sign 整合以進行電子簽名。
-* 與各種資料來源整合，以預先填入表單和提交資料。
-* 用來定義資料結構並與各種資料來源互動的表單資料模型 (FDM)。
-* 能夠選擇多個提交動作以處理表單提交，包括提交資料至Microsoft SharePoint、Microsoft OneDrive、Adobe Workfront Fusion、Salesforce、Microsoft Dynamics和更多資料來源。
-
-
 ### AEM Forms至Marketo聯結器
 
 [AEM Forms至Marketo聯結器](/help/forms/integrate-form-to-marketo-engage.md)彌合了使用Adobe Experience Manager (AEM)建立的網路表單(最適化Forms)與行銷自動化平台Marketo之間的差距。
@@ -140,7 +125,7 @@ Cloud上的互動式通訊是建立、管理和提供資料導向互動式通訊
 
 準備好開始了嗎？ 互動式通訊編輯器可在Forms as a Cloud Service部署的搶先存取計畫下取得。 若要要求存取權，請從您的正式地址將您的組織ID和方案詳細資料以電子郵件傳送至[aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)。
 
-### AEM Forms與Adobe Experience Platform (AEP)整合
+### Adobe Experience Platform (AEP) 與 AEM Forms 的整合
 
 您可以連結AEM Forms與Adobe Experience Platform (AEP)，以運用客戶設定檔和資料提供個人化表單體驗，並根據表單提交觸發下游工作流程。 透過直接將表單資料傳送到AEP資料集，您可以豐富客戶設定檔，並深入瞭解使用者互動。
 

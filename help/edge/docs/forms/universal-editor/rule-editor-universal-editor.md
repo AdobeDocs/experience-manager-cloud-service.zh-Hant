@@ -4,17 +4,17 @@ description: 透過通用編輯器的規則編輯器，您不需要編寫程式�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
+source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
 workflow-type: tm+mt
-source-wordcount: '2214'
-ht-degree: 96%
+source-wordcount: '2253'
+ht-degree: 98%
 
 ---
 
 
 # WYSIWYG 製作中的規則編輯器簡介
 
-<span class="preview">此功能可透過搶先存取計畫使用。 若要要求存取權，請將您的GitHub組織名稱和存放庫名稱從您的官方地址傳送電子郵件至<a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> 。 例如，如果存放庫URL是https://github.com/adobe/abc，組織名稱是adobe，存放庫名稱是abc。</span>
+<span class="preview">您可以透過搶先體驗方案使用這項功能。若要請求存取權，請使用您的官方地址發送電子郵件至 <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>，郵件內容須包含您的 GitHub 組織名稱和存放庫名稱。例如，若存放庫 URL 為 https://github.com/adobe/abc,，則組織名稱為 adobe，存放庫名稱為 abc。</span>
 
 
 您可以使用規則編輯器來建立規則，藉此新增動態表單行為。這些規則會顯示條件式欄位、根據使用者輸入自動進行計算，並改善整體使用者體驗。規則編輯器將表格填寫流程簡化，有助於確保準確性和效率。
@@ -186,9 +186,9 @@ ht-degree: 96%
 
 ## 編寫規則
 
-若要瞭解如何在「視覺規則編輯器」中編寫規則，讓我們來看看稅捐計算表單的簡單範例：
+若要了解如何在視覺化規則編輯器中編寫規則，我們以簡單的稅額計算表單為例：
 
-![規則編輯器範例](/help/edge/docs/forms/assets/rule-editor-1.png)
+![規則編輯器介面的熒幕擷圖，顯示建立條件式規則，以及表單欄位可見性的When-Then邏輯](/help/edge/docs/forms/assets/rule-editor-1.png)
 
 在上述表單中，使用者輸入薪資總額。根據此輸入，顯示條件式欄位並計算應納稅額。
 
@@ -209,7 +209,7 @@ ht-degree: 96%
 
 若要編寫規則，請執行下列步驟：
 
-### 1. 製作表單
+### &#x200B;1. 製作表單
 
 若要在通用編輯器中製作表單：
 
@@ -223,9 +223,9 @@ ht-degree: 96%
    * 提交 (提交按鈕)
 1. 透過開啟其 `Properties`，隱藏 `Additional Deduction` 表單欄位。
 
-   ![規則編輯器範例](/help/edge/docs/forms/assets/rule-editor2.png)
+   ![稅捐計算表單的熒幕擷圖，其中包含總薪資、婚姻狀況和受撫養子女的輸入欄位，在套用規則之前先展示表單結構](/help/edge/docs/forms/assets/rule-editor2.png)
 
-### 2. 新增表單欄位的條件式規則
+### &#x200B;2. 新增表單欄位的條件式規則
 
 製作表單後，請編寫第一條規則，只有在薪資總額超過 $50,000 時才顯示 `Additional Deduction` 欄位。若要新增條件式規則：
 
@@ -260,7 +260,7 @@ ht-degree: 96%
 >
 > 或者，您可以在「其他扣除額」欄位編寫「Show」規則，而非在「薪資總額」欄位編寫「When」規則，以執行相同行為。
 
-### 3. 新增表單欄位的計算規則
+### &#x200B;3. 新增表單欄位的計算規則
 
 接下來，編寫規則來計算 `Taxable Income`，即 `Gross Salary` 和 `Additional Deduction` 之間的差額 (如適用)。若要在「**[!UICONTROL 應稅所得]**」欄位中新增計算規則，請執行下列步驟：
 
@@ -277,7 +277,6 @@ ht-degree: 96%
    * 從「**[!UICONTROL 選取運算子]**」欄位選取「**[!UICONTROL 減]**」。
 
    * 從「表單物件」索引標籤選取或拖放「**[!UICONTROL 其他扣除額]**」欄位到另一個「**[!UICONTROL 放置物件或選取此處]**」欄位。
-
      ![規則編輯器範例 15](/help/edge/docs/forms/assets/rule-editor18.png)
 
 1. 選取「**[!UICONTROL 完成]**」以儲存此規則。
@@ -295,7 +294,6 @@ ht-degree: 96%
    * 從「**[!UICONTROL 選取運算子]**」欄位選取「**[!UICONTROL 乘以]**」。
 
    * 從「**[!UICONTROL 選取選項]**」欄位選取「**數字**」，並在「**[!UICONTROL 輸入數字]**」欄位中輸入值 `10`。
-
      ![規則編輯器範例 18](/help/edge/docs/forms/assets/rule-editor21.png)
 1. 接下來，選取運算式欄位周圍醒目標示的區域，並選取「**[!UICONTROL 擴充運算式]**」。
    ![規則編輯器範例 19](/help/edge/docs/forms/assets/rule-editor22.png)
@@ -303,7 +301,7 @@ ht-degree: 96%
    ![規則編輯器範例 20](/help/edge/docs/forms/assets/rule-editor23.png)
 1. 選取「**[!UICONTROL 完成]**」以儲存此規則。
 
-### 4. 預覽表單
+### &#x200B;4. 預覽表單
 
 現在，當您預覽表單並輸入「**薪資總額**」為 `60,000` 時，會顯示「**其他扣除額**」欄位，並據此計算「**應稅所得**」和「**應納稅額**」。
 
@@ -361,7 +359,6 @@ function days(endDate, startDate) {
 // eslint-disable-next-line import/prefer-default-export
 export { getFullName, days };
 ```
-
 ![新增自訂函數](/help/edge/docs/forms/assets/create-custom-function.png)
 
 ### 在規則編輯器中使用自訂函數
