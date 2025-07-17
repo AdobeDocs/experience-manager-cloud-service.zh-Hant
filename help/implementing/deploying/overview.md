@@ -56,8 +56,8 @@ ht-degree: 93%
 
 ![image](https://git.corp.adobe.com/storage/user/9001/files/e91b880e-226c-4d5a-93e0-ae5c3d6685c8) -->
 
-客戶透過 Cloud Manager 將自訂程式碼部署到雲端環境。Cloud Manager 將本機組裝的內容套件轉換為符合 Sling Feature Model 的成品，這就是在雲端環境中執行時描述 AEM as a Cloud Service 上的應用程式的方式。因此，在雲端環境中查看 [封裝管理員](/help/implementing/developing/tools/package-manager.md) 中的套件時，名稱包含「cp2fm」，並且轉換後套件已刪除所有中繼資料。它們無法互動，這表示它們無法下載、複製或開啟。如需轉換器的詳細檔案，請參閱[
-GitHub](https://github.com/apache/sling-org-apache-sling-feature-cpconverter)上的sling-org-apache-sling-feature-cpconverter 。
+客戶透過 Cloud Manager 將自訂程式碼部署到雲端環境。Cloud Manager 將本機組裝的內容套件轉換為符合 Sling Feature Model 的成品，這就是在雲端環境中執行時描述 AEM as a Cloud Service 上的應用程式的方式。因此，在雲端環境中查看 [封裝管理員](/help/implementing/developing/tools/package-manager.md) 中的套件時，名稱包含「cp2fm」，並且轉換後套件已刪除所有中繼資料。它們無法互動，這表示它們無法下載、複製或開啟。如需轉換器的詳細檔案，請參閱[&#128279;](https://github.com/apache/sling-org-apache-sling-feature-cpconverter)
+GitHub上的sling-org-apache-sling-feature-cpconverter 。
 
 為 AEM as a Cloud Service 上的應用程式編寫的內容套件必須明確區分不可變內容和可變內容，Cloud Manager 僅安裝可變內容，同時輸出如下訊息：
 
