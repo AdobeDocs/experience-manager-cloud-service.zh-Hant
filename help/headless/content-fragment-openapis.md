@@ -4,10 +4,10 @@ description: 了解內容片段和內容片段模型的 OpenAPI。
 exl-id: 077eed73-a066-4273-b2f5-da4bf5cd900c
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: 1a55c35814d6651173f7bdeaa677a7dbdec13f73
+source-git-commit: d683051387af5c0de45917a50003c2194d887bc4
 workflow-type: tm+mt
-source-wordcount: '165'
-ht-degree: 55%
+source-wordcount: '190'
+ht-degree: 47%
 
 ---
 
@@ -22,6 +22,10 @@ ht-degree: 55%
 >若您未登入AEM，則需取得授權才能存取OpenAPI；例如，將OpenAPI用於其他產品作為整合的一部分時。
 >
 >如需授權您存取OpenAPI的詳細資訊，請參閱[OpenAPI型API](/help/implementing/developing/open-api-based-apis.md)。
+
+>[!CAUTION]
+>
+>依預設，發佈時會停用內容片段管理OpenAPI。 針對傳遞導向的使用案例，建議您使用[內容片段傳遞OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md)，不要採用此做法。
 
 >[!NOTE]
 >
