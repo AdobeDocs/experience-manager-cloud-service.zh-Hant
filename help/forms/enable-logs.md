@@ -172,9 +172,9 @@ ht-degree: 4%
 >[!NOTE]
 >
 >每個日誌類別a (xfa)、b (xfaView)和c (xfaPerf)的預設日誌層級為2 （錯誤）。 因此，對於記錄設定：2-b6，不同類別的記錄層級為：
->>a (xfa)：2 （預設層次錯誤）
->>b (xfaView)： 6 (使用者指定的TRACE)
->>a (xfaPerf)：2 （預設層級ERROR）
+>&#x200B;>a (xfa)：2 （預設層次錯誤）
+>&#x200B;>b (xfaView)： 6 (使用者指定的TRACE)
+>&#x200B;>a (xfaPerf)：2 （預設層級ERROR）
 
 ### 使用Configuration Manager啟用記錄 {#enabling-logging-using-configuration-manager}
 
