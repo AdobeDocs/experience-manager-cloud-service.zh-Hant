@@ -112,7 +112,7 @@ GitHub上的sling-org-apache-sling-feature-cpconverter 。
    * 內容感知設定 (`/conf` 下的任何內容) (新增、修改、移除)
    * 指令碼 (可以在套件安裝流程的各個階段觸發安裝 Hook。請參閱 [Jackrabbit Filevault 文件](https://jackrabbit.apache.org/filevault/installhooks.html)，瞭解如何安裝 Hook。AEM CS 目前使用 Filevault 版本 3.4.0，它將安裝 Hook 限制為管理員使用者、系統使用者和管理員群組的成員))。
 
-透過在 `/apps`下的 install.author 或 install.publish 資料夾中嵌入套件，可以將可變內容安裝限制在編寫或發佈。反映此分隔的重組已在AEM 6.5中完成，而有關建議的專案重組的詳細資訊可在[AEM 6.5檔案](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)中找到。
+透過在 `/apps`下的 install.author 或 install.publish 資料夾中嵌入套件，可以將可變內容安裝限制在編寫或發佈。反映此分隔的重組已在AEM 6.5中完成，而有關建議的專案重組的詳細資訊可在[AEM 6.5檔案](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=zh-Hant)中找到。
 
 >[!NOTE]
 >內容套件部署到所有環境類型 (開發、中繼、生產)。不可能將部署限制在特定環境中。此限制的目的是在確保可以選擇對自動執行進行測試執行。特定於環境的內容需要透過 [封裝管理員](/help/implementing/developing/tools/package-manager.md) 手動安裝
@@ -121,7 +121,7 @@ GitHub上的sling-org-apache-sling-feature-cpconverter 。
 
 任何包含的協力廠商套件都必須驗證為與 AEM as a Cloud Service 相容，否則包含該套件會導致部署失敗。
 
-如上所述，擁有現有程式碼庫的客戶應符合[AEM 6.5檔案](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html)中說明的6.5存放庫變更所需的存放庫重組作業。
+如上所述，擁有現有程式碼庫的客戶應符合[AEM 6.5檔案](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=zh-Hant)中說明的6.5存放庫變更所需的存放庫重組作業。
 
 ## repoinit {#repoinit}
 
@@ -177,7 +177,7 @@ above appears to be internal, to confirm with Brian -->
 >id="aemcloud_packagemanager"
 >title="封裝管理員 - 移轉可變內容套件"
 >abstract="探索封裝管理員在使用案例中的使用情況，在這些案例中，內容套件的安裝應為「一次性」。此安裝包括將特定內容從生產環境匯入至中繼環境以偵錯生產問題，將小型內容套件從內部部署環境轉移至 AEM 雲端環境等。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html" text="內容轉移工具"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=zh-Hant" text="內容轉移工具"
 
 在某些使用案例中，內容套件應做為「一次性」安裝。例如，將特定內容從生產環境匯入至中繼環境以偵錯生產問題。對於這些情況，[封裝管理員](/help/implementing/developing/tools/package-manager.md) 可以用在 AEM as a Cloud Service 中的環境。
 
@@ -263,7 +263,7 @@ above appears to be internal, to confirm with Brian -->
 
 ## 複製 {#replication}
 
-發佈機制可回溯相容於 [AEM Replication Java™ API](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html)。
+發佈機制可回溯相容於 [AEM Replication Java™ API](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hant)。
 
 為了使用 cloud ready AEM 快速入門來開發和測試複製，傳統複製功能必須與作者/發佈設定一起使用。如果 AEM Author 的使用者介面進入點已針對雲端刪除，使用者將移至 `http://localhost:4502/etc/replication` 進行設定。
 
