@@ -21,7 +21,7 @@ ht-degree: 0%
 <span class="preview"> HTML5 Forms功能屬於Early Access方案的一部分。 若要要求存取權，請將您的正式（工作）電子郵件ID傳送電子郵件至aem-forms-ea@adobe.com。
 </span>
 
-FormBridge是HTML5 Forms Bridge API，可讓您與表單互動。 如需FormBridge API參考資訊，請參閱[FormBridge API參考資訊](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/developer-reference/form-bridge-apis)。
+FormBridge是HTML5 Forms Bridge API，可讓您與表單互動。 如需FormBridge API參考資訊，請參閱[FormBridge API參考資訊](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/forms/developer-reference/form-bridge-apis)。
 
 您可以使用FormBridge API從HTML頁面取得或設定表單欄位的值，並提交表單。 例如，您可以使用API來建置精靈般的體驗。
 
