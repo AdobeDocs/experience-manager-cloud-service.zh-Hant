@@ -4,24 +4,24 @@ description: AEM隨附處理HTTP錯誤的標準錯誤處理常式，且可加以
 exl-id: b74c65d1-8ef5-4ad4-8255-8187f3b1d84c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: de50d20dd4c17204ded1ff216d12520d04eafd04
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '583'
 ht-degree: 0%
 
 ---
 
 # 自訂錯誤頁面 {#customizing-error-pages}
 
-AEM隨附處理HTTP錯誤的標準錯誤處理常式；例如，顯示：
+AEM隨附處理HTTP錯誤的標準錯誤處理常式，例如，顯示：
 
 ![標準錯誤訊息](assets/error-message-standard.png)
 
-為了回應錯誤，AEM在`/libs/sling/servlet/errorhandler`下提供`404.jsp`指令碼。
+為了回應錯誤，AEM在「`404.jsp`」下提供`/libs/sling/servlet/errorhandler`指令碼。
 
 >[!TIP]
 >
->由於AEM是以Apache Sling為基礎，在Apache錯誤處理檔案[&#128279;](https://sling.apache.org/documentation/the-sling-engine/errorhandling.html)中可取得進一步資訊。
+>由於AEM是以Apache Sling為基礎，在Apache錯誤處理檔案[中可取得進一步資訊](https://sling.apache.org/documentation/the-sling-engine/errorhandling.html)。
 
 >[!NOTE]
 >
@@ -29,9 +29,13 @@ AEM隨附處理HTTP錯誤的標準錯誤處理常式；例如，顯示：
 >
 >在發佈執行個體上，CQ WCM偵錯篩選器已&#x200B;**一律**&#x200B;停用（即使設定為已啟用）。
 
+>[!NOTE]
+>
+>如需有關使用Dispatcher處理錯誤的詳細資訊，請參閱[設定CDN錯誤頁面](/help/implementing/dispatcher/cdn-error-pages.md)。
+
 ## 如何自訂錯誤處理常式顯示的頁面 {#how-to-customize-pages-shown-by-the-error-handler}
 
-您可以開發自己的指令碼，以在發生錯誤時自訂錯誤處理常式顯示的頁面。 若要這麼做，請使用[AEM的標準覆蓋機制](/help/implementing/developing/introduction/overlays.md)，讓您的自訂頁面建立在`/apps`之下，並覆蓋`/libs`之下的預設頁面。
+您可以開發自己的指令碼，以在發生錯誤時自訂錯誤處理常式顯示的頁面。 若要這麼做，您需使用[AEM的標準覆蓋機制](/help/implementing/developing/introduction/overlays.md)，讓您的自訂頁面建立在`/apps`之下，並覆蓋`/libs`之下的預設頁面。
 
 1. 在存放庫中，複製預設指令碼：
 
@@ -49,7 +53,7 @@ AEM隨附處理HTTP錯誤的標準錯誤處理常式；例如，顯示：
 
 >[!CAUTION]
 >
->`404.jsp`指令碼是特別設計來配合AEM驗證，尤其是允許在這些錯誤的情況下進行系統登入。
+>`404.jsp`指令碼是特別設計來配合AEM驗證，特別是在發生這些錯誤時允許系統登入。
 >
 >因此，應謹慎替換此指令碼。
 
@@ -72,8 +76,8 @@ HTTP [500內部伺服器錯誤](https://www.w3.org/Protocols/rfc2616/rfc2616-sec
 
 >[!NOTE]
 >
->在AEM as a Cloud Service中，從後端收到5XX錯誤時，CDN會提供一般錯誤頁面。 若要允許後端的實際回應通過，您必須將下列標頭新增至回應： `x-aem-error-pass: true`。
->這僅適用於來自AEM或Apache/Dispatcher層的回應。 來自中繼基礎結構層的其他非預期錯誤仍會顯示一般錯誤頁面。
+>在AEM as Cloud Service中，從後端收到5XX錯誤時，CDN會提供一般錯誤頁面。 若要允許後端的實際回應通過，您必須將下列標頭新增至回應： `x-aem-error-pass: true`。
+>>這僅適用於來自AEM或Apache/Dispatcher層的回應。 來自中繼基礎結構層的其他非預期錯誤仍會顯示一般錯誤頁面。
 
 >[!CAUTION]
 >
