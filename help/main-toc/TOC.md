@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: 37b20a97942f381b46ce36a6a3f72ac019bba5b7
+source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
 workflow-type: tm+mt
-source-wordcount: '6362'
-ht-degree: 99%
+source-wordcount: '6521'
+ht-degree: 97%
 
 ---
 
@@ -908,6 +908,35 @@ ht-degree: 99%
          + [建立和管理最適化表單的評論](/help/forms/review-adaptiveforms-in-sites-page.md)
       + [最適化表單關鍵字](/help/forms/adaptive-forms-keywords.md)
       + [預覽表單](/help/forms/previewing-forms.md)
+   + HTML5 表單 {#html5-forms}
+      + [HTML5 forms簡介](/help/forms/introductionhtml5.md)
+      + [HTML5表單快速入門](/help/forms/get-started.md)
+      + [HTML5 Forms的架構](/help/forms/html5-forms-architecture.md)
+      + [HTML5 forms與PDF forms的功能差異](/help/forms/feature-differentiation-html5-forms-pdf-forms.md)
+      + [HTML5表單常見問題集(FAQ)](/help/forms/faqhtml5.md)
+      + [為HTML5表單設計表單範本](/help/forms/designing-form-template.md)
+      + [HTML5 Forms的最佳作法](/help/forms/best-practices-for-html5-forms.md)
+      + [設計無障礙的HTML5表單](/help/forms/design-accessible-html5-forms.md)
+      + [產生XDP表單的HTML5預覽](/help/forms/preview-xdp-forms-html.md)
+      + [HTML5表單的轉譯表單範本](/help/forms/rendering-form-template.md)
+      + [啟用HTML5表單的附件](/help/forms/enabling-attachments-html5-form.md)
+      + [HTML5 forms service proxy](/help/forms/service-proxy.md)
+      + [最佳化HTML5表單](/help/forms/optimize-html5-forms.md)
+      + [HTML5表單的熒幕助讀程式](/help/forms/screen-readers.md)
+      + [建立HTML5表單的自訂設定檔](/help/forms/custom-profile.md)
+      + [HTML5表單中的由右至左語言](/help/forms/right-left-languages.md)
+      + [針對HTML5表單整合Form Bridge與自訂入口網站](/help/forms/integrate-form-bridge-forms-portal.md)
+      + [在HTML5表單中建立自訂外觀](/help/forms/custom-widgets.md)
+      + [變更HTML5表單的預設樣式](/help/forms/changing-default-styles.md)
+      + [HTML5表單的Picture子句支援](/help/forms/picture-clause-support.md)
+      + [在HTML5表單中建立無障礙的複雜表格](/help/forms/accessible-tables.md)
+      + [建立HTML5表單的CSS樣式](/help/forms/css-styles.md)
+      + [為HTML5表單自訂錯誤訊息](/help/forms/customzing-errors-html5-forms.md)
+      + [將HTML5表單儲存為草稿](/help/forms/saving-html5-form-draft.md)
+      + [啟用HTML5表單的記錄](/help/forms/enable-logs.md)
+      + [偵錯HTML5 forms](/help/forms/debug.md)
+      + [HTML5表單的指令碼支援](/help/forms/scripting-support.md)
+      + [AEM Forms中的表單集](/help/forms/formset-in-aem-forms.md)
    + 互動式通訊 {#interactive-communocation}
       + [互動式通訊簡介](/help/forms/introduction-to-interactive-communication.md)
       + [建立您的第一個互動式通訊](/help/forms/create-your-first-communication.md)

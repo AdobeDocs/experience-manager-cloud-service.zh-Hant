@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
+source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
 workflow-type: tm+mt
-source-wordcount: '2219'
-ht-degree: 25%
+source-wordcount: '2467'
+ht-degree: 22%
 
 ---
 
@@ -130,6 +130,30 @@ Cloud上的互動式通訊是建立、管理和提供資料導向互動式通訊
 您可以連結AEM Forms與Adobe Experience Platform (AEP)，以運用客戶設定檔和資料提供個人化表單體驗，並根據表單提交觸發下游工作流程。 透過直接將表單資料傳送到AEP資料集，您可以豐富客戶設定檔，並深入瞭解使用者互動。
 
 準備好開始了嗎？ [進一步瞭解如何整合AEM Forms與Adobe Experience Platform (AEP)](/help/forms/aem-forms-aep-connector.md)。
+
+### AEM FORMS HTML5 FORMS
+
+AEM Forms HTML5 Forms可讓您以HTML5格式轉譯現有的XFA (XML Forms Architecture)表單範本，以便在不支援XFA型PDF的現代瀏覽器和行動裝置上存取。 此功能可縮短傳統PDF forms與現代Web體驗之間的差距。
+
+![HTML5 Forms預覽](/help/forms/assets/mobile_form_on_an_ipad_date_14.png)
+
+**主要功能：**
+
+* **以HTML5轉譯XFA表單範本**：以HTML5格式轉譯您現有的XFA表單，以將您的使用者端平台擴充至支援HTML5但不支援Adobe Reader搭配XFA Forms的行動裝置(Apple iPad、Android平板電腦、智慧型手機等)。
+
+* **適用於行動裝置的表單**： HTML5 Forms提供多種適用於行動裝置的功能，協助您利用HTML5瀏覽器將目前的解決方案和工作流程擴充至平板電腦或智慧型手機。
+
+* **協助工具支援**： HTML5 Forms使用ARIA HTML5協助工具標準並支援索引標籤導覽，使其與JAWS和VoiceOver等常見熒幕助讀程式相容。
+
+* **自訂功能**：您可以自訂現有Widget的外觀、建立您自己的自訂Widget，或使用CSS和JavaScript等標準Web技術在表單中使用自訂樣式。
+
+* **由右至左語言支援**： HTML5 Forms支援由右至左的語言，例如希伯來文，讓您能夠顯示和填寫RTL語言的表單。
+
+* **附件支援**：使用HTML5表單上傳、預覽及提交附件，以強化資料收集。
+
+* **草稿儲存**：將HTML5表單儲存為草稿，並在稍後階段繼續填寫表單。
+
+準備好開始了嗎？ [HTML5表單簡介](/help/forms/introductionhtml5.md)檔案提供這項創新的全面概覽和快速入門手冊。
 
 ## 其他早期存取創新
 
