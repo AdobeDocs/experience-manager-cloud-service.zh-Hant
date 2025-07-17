@@ -1,15 +1,16 @@
 ---
-title: 以屬性為基礎的存取控制
+title: 屬性型存取控制
 description: 瞭解如何啟用屬性型存取控制來定義中繼資料型規則，以定義Content Hub中可用資產的存取層級
 role: Admin
-source-git-commit: 49a70e1564a5b1de4ff16a40ccd8f06df53530e7
+exl-id: 05f54b05-40b8-4a6c-af8f-5c3f7a2089d4
+source-git-commit: ea1760a3076fa0e18dca38fe856ff0ef78b18f07
 workflow-type: tm+mt
-source-wordcount: '921'
-ht-degree: 0%
+source-wordcount: '976'
+ht-degree: 4%
 
 ---
 
-# 以屬性為基礎的存取控制 {#attribute-based-access-control}
+# 屬性型存取控制 {#attribute-based-access-control}
 
 屬性型存取控制(ABAC)可讓Content Hub管理員定義中繼資料型規則，以定義Content Hub中可用資產的存取層級。
 
@@ -21,15 +22,26 @@ ht-degree: 0%
 
 屬性式存取控制的一些主要優點包括：
 
-* 消除許可權對檔案夾結構的相依性
+* 除去對資料夾結構的權限相依性
 
-* 允許管理員上傳資產並回溯決定許可權結構
+* 讓管理員能夠上傳資產並回溯性判定權限結構
 
-* 減少重複專案數量 — 改善資產完整性。 當相同的資產與不同群組共用時，資料夾型許可權需要重複專案。
+* 減少重複的數量，提高資產完整性。當相同的資產與不同的群組共用時，資料夾型權限需要進行重複。
 
 ## 如何啟用以屬性為基礎的存取控制？ {#enable-attribute-based-access-control}
 
-截至目前，您無法使用Content Hub使用者介面自行建立屬性型存取控制規則。 建立Adobe支援票證，以使用本文定義的准則來定義試算表中的規則。
+截至目前，您無法使用Content Hub使用者介面自行建立屬性型存取控制規則。
+
+按一下&#x200B;**下載試算表**，即可下載試算表中規則並加以定義。 建立Adobe支援票證，並將試算表中定義的規則提供給Adobe。
+
+[!BADGE 下載試算表]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/ABAC_Get_Started_Template_Validator.xlsx"}
+
+
+使用本文定義的方針，在試算表中定義規則。
+
+>[!IMPORTANT]
+>
+> 定義規則後，導覽至試算表的&#x200B;**驗證錯誤**&#x200B;標籤，然後按一下&#x200B;**執行ABAC驗證**。 **已傳遞所有驗證**&#x200B;訊息，確認您可以向Adobe提供定義的規則。
 
 ## 以屬性為基礎的存取控制使用案例範例 {#example-metadata-based-rules}
 
@@ -84,13 +96,3 @@ ht-degree: 0%
 * 擷取評論中規則的商業目的，無論條件是否正確寫入，因為目的可協助我們驗證並修正邏輯（若有需要）。
 
 * 設定為DRM的授權PDF檔案必須對所有人可見，以便使用者在使用授權下載資產時能夠看到這些檔案。
-
-
-
-
-
-
-
-
-
-
