@@ -694,7 +694,7 @@ ht-degree: 97%
       + [共用資產](/help/assets/share-links-for-assets-view.md)
       + [管理收藏集](/help/assets/manage-collections-assets-view.md)
       + [資產關係](/help/assets/asset-relations-for-assets-view.md)
-      + [查看資產、資料夾和集合](/help/assets/manage-notifications-assets-view.md)
+      + [查看資產、資料夾以及集合](/help/assets/manage-notifications-assets-view.md)
       + [重新處理](/help/assets/reprocessing-assets-view.md)
       + [管理標記](/help/assets/tagging-management-assets-view.md)
       + [Content Credentials](/help/assets/content-credentials.md)
@@ -940,7 +940,7 @@ ht-degree: 97%
    + 互動式通訊 {#interactive-communocation}
       + [互動式通訊簡介](/help/forms/introduction-to-interactive-communication.md)
       + [建立您的第一個互動式通訊](/help/forms/create-your-first-communication.md)
-      + [使用AEM Forms API產生AFP輸出](/help/forms/document-generation-afp-api.md)
+      + [使用 AEM Forms API 產生 AFP 輸出](/help/forms/document-generation-afp-api.md)
       + [常見問題](/help/forms/interactive-communications-faq.md)
    + 以 Forms 為中心的工作流程 {#create-form-centric-workflows}
       + [以 Forms 為中心的工作流程簡介](/help/forms/aem-forms-workflow.md)
@@ -1501,8 +1501,8 @@ ht-degree: 97%
    + [額外發佈區域](/help/operations/additional-publish-regions.md)
    + [AEM as a Cloud Service 中的基礎結構和服務監視](/help/operations/monitoring.md)
    + [維護任務](/help/operations/maintenance.md)
-   + [復原內容](/help/operations/restore.md)
-   + [還原先前部署的程式碼(Alpha)](/help/operations/restore-previous-code-deployed.md)
+   + [還原內容](/help/operations/restore.md)
+   + [還原先前部署的程式碼 (Alpha 版)](/help/operations/restore-previous-code-deployed.md)
    + [非同步作業](/help/operations/asynchronous-jobs.md)
    + [使用設定管道](/help/operations/config-pipeline.md)
    + [移除一般 lucene 索引](/help/operations/removal-generic-lucene-index.md)
