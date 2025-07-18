@@ -5,7 +5,7 @@ exl-id: 7f2571d6-b847-4cce-8e94-94ba0d2e04a5
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 45805d4baa8b93df2225b44152fee1457b421150
 workflow-type: tm+mt
 source-wordcount: '827'
 ht-degree: 5%
@@ -25,9 +25,9 @@ ht-degree: 5%
 * [僅限內容](#content-only)
 * [內容樹狀結構](#content-tree)
 * [時間軸](#timeline)
-* [參考](#references)
+* [參照](#references)
 * [網站](#site)
-* [篩選條件](#filter)
+* [篩選](#filter)
 * [設定 Analytics](#setup-analytics)
 
 ![網站主控台的側面板檢視](assets/sites-console-side-panel-views.png)
@@ -91,7 +91,7 @@ ht-degree: 5%
 >* 使用`Alt+2`鍵盤快速鍵切換到側面板的時間表檢視。
 >* 如需詳細資訊，請參閱[鍵盤快速鍵](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)。
 
-## 參考 {#references}
+## 參照 {#references}
 
 **參考**&#x200B;檢視會顯示與主控台中選取的資源之間的參考型別清單。
 
@@ -99,8 +99,8 @@ ht-degree: 5%
 
 選取適當的參照型別以取得詳細資訊。 在某些情況下，當您選取特定參照時，可使用進一步的動作，包括：
 
-* **連入連結**，提供參照該頁面的頁面清單，以及當您選取特定連結時，直接存取這些頁面中的&#x200B;**編輯**。
-   * 這只能顯示靜態連結，而不能顯示動態產生的連結，例如來自清單元件的連結。
+* **連入連結**，提供直接參照選取頁面的頁面清單，以及當您選取特定連結時，直接存取&#x200B;**編輯**&#x200B;這些頁面之一。
+   * 這只會顯示靜態連結，不會顯示動態產生的連結，例如來自清單元件的連結。
 * [啟動](/help/sites-cloud/authoring/launches/overview.md)，提供相關啟動的存取權
 * [即時副本](/help/sites-cloud/administering/msm/overview.md)會顯示以選取的資源為基礎之所有即時副本的路徑。
 * [Blueprint](/help/sites-cloud/administering/msm/best-practices.md)，提供詳細資訊和各種動作
@@ -108,7 +108,7 @@ ht-degree: 5%
 
 ## 網站 {#site}
 
-側面板的&#x200B;**網站**&#x200B;檢視會顯示使用網站範本[&#128279;](/help/sites-cloud/administering/site-creation/create-site.md)建立的網站的詳細資料。
+側面板的&#x200B;**網站**&#x200B;檢視會顯示使用網站範本[建立的網站](/help/sites-cloud/administering/site-creation/create-site.md)的詳細資料。
 
 ![網站面板](assets/console-side-panel-site-paenl.png)
 
@@ -122,7 +122,7 @@ ht-degree: 5%
 >
 >您可以在[快速網站建立歷程](/help/journey-sites/quick-site/overview.md)中找到從範本建立網站並自訂其主題的程式的端對端說明。
 
-## 篩選條件 {#filter}
+## 篩選 {#filter}
 
 **篩選器**&#x200B;面板類似於[搜尋功能](/help/sites-cloud/authoring/search.md)，已設定適當的位置篩選器，可讓您進一步篩選您要檢視的內容。
 
