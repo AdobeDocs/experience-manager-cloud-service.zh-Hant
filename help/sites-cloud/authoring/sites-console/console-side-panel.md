@@ -5,9 +5,9 @@ exl-id: 7f2571d6-b847-4cce-8e94-94ba0d2e04a5
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 45805d4baa8b93df2225b44152fee1457b421150
+source-git-commit: 18cbf1c963fa4f12b69a08859a7ca855f0ac601b
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '828'
 ht-degree: 5%
 
 ---
@@ -99,7 +99,7 @@ ht-degree: 5%
 
 選取適當的參照型別以取得詳細資訊。 在某些情況下，當您選取特定參照時，可使用進一步的動作，包括：
 
-* **連入連結**，提供直接參照選取頁面的頁面清單，以及當您選取特定連結時，直接存取&#x200B;**編輯**&#x200B;這些頁面之一。
+* **傳入連結**，提供直接參照選取頁面的頁面清單，以及直接存取選取特定連結時其中一個頁面的&#x200B;**編輯**。
    * 這只會顯示靜態連結，不會顯示動態產生的連結，例如來自清單元件的連結。
 * [啟動](/help/sites-cloud/authoring/launches/overview.md)，提供相關啟動的存取權
 * [即時副本](/help/sites-cloud/administering/msm/overview.md)會顯示以選取的資源為基礎之所有即時副本的路徑。
