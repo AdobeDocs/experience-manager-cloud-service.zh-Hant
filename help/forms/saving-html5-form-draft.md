@@ -9,12 +9,15 @@ feature: HTML5 Forms,Mobile Forms
 exl-id: a9879445-d626-4279-8a95-a9009294b483
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+hide: true
+hidefromtoc: true
+source-git-commit: 81a6c2b942df0e72a0b7d359f29c615a44640396
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 4%
 
 ---
+
 
 # 將HTML5表單儲存為草稿 {#saving-an-html-form-as-a-draft}
 
@@ -75,4 +78,4 @@ AEM Forms可立即提供&#x200B;**另存為草稿**&#x200B;設定檔。 您可�
  </tbody>
 </table>
 
-依預設，AEM Forms會將與表單草稿和提交相關聯的使用者資料儲存在發佈執行個體上的/content/forms/fp節點中。 您可以新增自訂儲存提供者，如需詳細資訊，請參閱[草稿與提交元件的自訂儲存](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/forms/use-forms-portal/adding-custom-storage-provider-forms)。
+依預設，AEM Forms會將與表單草稿和提交相關聯的使用者資料儲存在發佈執行個體上的/content/forms/fp節點中。 您可以新增自訂儲存提供者，如需詳細資訊，請參閱[草稿與提交元件的自訂儲存](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/use-forms-portal/adding-custom-storage-provider-forms)。
