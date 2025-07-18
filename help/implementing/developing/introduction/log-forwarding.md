@@ -4,10 +4,10 @@ description: 瞭解如何在AEM as a Cloud Service中將記錄轉送給記錄廠
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: d25c4aa5801d1ef2b746fc207d9c64ddf381bb8e
+source-git-commit: 7094ac805e2b66813797fbbc7863870f18632cdc
 workflow-type: tm+mt
-source-wordcount: '2276'
-ht-degree: 1%
+source-wordcount: '2409'
+ht-degree: 3%
 
 ---
 
@@ -19,23 +19,107 @@ ht-degree: 1%
 
 擁有記錄廠商授權或託管記錄產品的客戶可以將AEM記錄(包括Apache/Dispatcher)和CDN記錄轉送至相關聯的記錄目的地。 AEM as a Cloud Service支援下列記錄目的地：
 
-* Amazon S3 （私人測試版，請參閱下方說明）
-* Azure Blob儲存體
-* Datadog
-* Elasticsearch或OpenSearch
-* HTTPS
-* Splunk
-* Sumo Logic （私人測試版，請參閱下方說明）
+<html>
+<style>
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  table-layout: fixed;
+}
+th, td {
+  width: 5%;
+  max-width: 100%;
+  border: 1px solid black;
+  padding: 8px;
+  word-wrap: break-word;
+}
+</style>
+<table>
+  <tbody>
+    <tr>
+      <th>記錄技術</th>
+      <th>Private Beta*</th>
+      <th>AEM</th>
+      <th>Dispatcher</th>
+      <th>CDN</th>
+    </tr>
+    <tr>
+      <td>Amazon S3</td>
+      <td style="background-color: #ffb3b3;">是</td>
+      <td>是</td>
+      <td>是</td>
+      <td style="background-color: #ffb3b3;">否</td>
+    </tr>
+    <tr>
+      <td>Azure Blob儲存體</td>
+      <td>否</td>
+      <td>是</td>
+      <td>是</td>
+      <td>是</td>
+    </tr>
+    <tr>
+      <td>DataDog</td>
+      <td>否</td>
+      <td>是</td>
+      <td>是</td>
+      <td>是</td>
+    </tr>
+    <tr>
+      <td>Dynatrace</td>
+      <td style="background-color: #ffb3b3;">是</td>
+      <td>是</td>
+      <td>是</td>
+      <td style="background-color: #ffb3b3;">否</td>
+    </tr>
+    <tr>
+      <td>Elasticsearch<br>OpenSearch</td>
+      <td>否</td>
+      <td>是</td>
+      <td>是</td>
+      <td>是</td>
+    </tr>
+    <tr>
+      <td>HTTPS</td>
+      <td>否</td>
+      <td>是</td>
+      <td>是</td>
+      <td>是</td>
+    </tr>
+    <tr>
+      <td>New Relic</td>
+      <td style="background-color: #ffb3b3;">是</td>
+      <td>是</td>
+      <td>是</td>
+      <td style="background-color: #ffb3b3;">否</td>
+    </tr>
+    <tr>
+      <td>Splunk</td>
+      <td>否</td>
+      <td>是</td>
+      <td>是</td>
+      <td>是</td>
+    </tr>
+    <tr>
+      <td>相撲邏輯</td>
+      <td style="background-color: #ffb3b3;">是</td>
+      <td>是</td>
+      <td>是</td>
+      <td style="background-color: #ffb3b3;">否</td>
+    </tr>
+  </tbody>
+</table>
+</html>
+
+>[!NOTE]
+>
+> 若為Private Beta中的技術，請傳送電子郵件至[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)以要求存取權。
 
 記錄轉送是透過在Git中宣告設定以自助方式設定，並可透過Cloud Manager設定管道部署至開發、中繼和生產環境型別。 可以使用命令列工具將設定檔案部署至快速開發環境 (RDE) 中。
 
 AEM和Apache/Dispatcher記錄檔可選擇透過AEM的進階網路基礎結構（例如專用輸出IP）進行路由。
 
 請注意，與傳送至記錄目的地的記錄檔相關聯的網路頻寬，會視為您組織網路I/O使用量的一部分。
-
->[!NOTE]
->
->Amazon S3和Sumo Logic位於Private Beta中，僅支援AEM記錄(包括Apache/Dispatcher)。  HTTPS上的New Relic也提供私人測試版。 電子郵件[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)以要求存取權。
 
 ## 本文的結構方式 {#how-organized}
 
@@ -49,7 +133,7 @@ AEM和Apache/Dispatcher記錄檔可選擇透過AEM的進階網路基礎結構（
 
 ## 設定 {#setup}
 
-1. 建立名為`logForwarding.yaml`的檔案。 它應該包含中繼資料，如[設定管道文章](/help/operations/config-pipeline.md#common-syntax)中所述（**kind**&#x200B;應該設定為`LogForwarding`且版本設定為&quot;1&quot;），其設定類似於以下內容（我們使用Splunk作為範例）。
+1. 建立名為`logForwarding.yaml`的檔案。 它應該包含中繼資料，如[設定管道](/help/operations/config-pipeline.md#common-syntax)文章中所述（**kind**&#x200B;應該設定為`LogForwarding`且版本設定為&quot;1&quot;），其設定類似於以下內容（我們使用Splunk作為範例）。
 
    ```yaml
    kind: "LogForwarding"
@@ -116,14 +200,14 @@ AEM和Apache/Dispatcher記錄檔可選擇透過AEM的進階網路基礎結構（
 有些組織會選擇限制記錄目的地可以接收哪些流量，有些組織則可能需要使用HTTPS (443)以外的連線埠。  如果是，則必須先設定[進階網路](/help/security/configuring-advanced-networking.md)，才能部署記錄轉送設定。
 
 根據您是否使用連線埠443，以及您是否需要在固定IP位址顯示日誌，使用下表檢視進階網路和記錄組態的需求。
-&lt;html>
-&lt;style>
-table, th, td &lbrace;
+<html>
+<style>
+table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
   text-align: center;
-&rbrace;
-&lt;/style>
+}
+</style>
 <table>
   <tbody>
     <tr>
@@ -133,7 +217,7 @@ table, th, td &lbrace;
       <th>需要LogForwarding.yaml連線埠定義</th>
     </tr>
     <tr>
-      <td rowspan="2">HTTPS (443)</td>
+      <td rowspan="2" ro>HTTPS (443)</td>
       <td>否</td>
       <td>否</td>
       <td>否</td>
@@ -155,7 +239,7 @@ table, th, td &lbrace;
       <td>是</td>
   </tbody>
 </table>
-&lt;/html>
+</html>
 
 >[!NOTE]
 >是否從單一IP位址顯示記錄取決於您選擇的進階網路設定。  必須使用專用輸出來處理這個問題。
@@ -194,13 +278,17 @@ data:
 
 ### Amazon S3 {#amazons3}
 
+記錄轉送至Amazon S3支援AEM和Dispatcher記錄，目前尚不支援CDN記錄。
+
 >[!NOTE]
 >
->記錄檔會定期寫入S3，每種記錄檔型別每10分鐘寫入一次。  此功能切換後，這可能會造成將記錄寫入S3的初始延遲。  在[此處](https://docs.fluentbit.io/manual/pipeline/outputs/s3#differences-between-s3-and-other-fluent-bit-outputs)可找到有關為什麼存在此行為的詳細資訊。
+>記錄檔會定期寫入S3，每種記錄檔型別每10分鐘寫入一次。  此功能切換後，這可能會造成將記錄寫入S3的初始延遲。  [此行為的進一步資訊](https://docs.fluentbit.io/manual/pipeline/outputs/s3#differences-between-s3-and-other-fluent-bit-outputs)。
 
 ```yaml
 kind: "LogForwarding"
 version: "1.0"
+metadata:
+  envTypes: ["dev"]
 data:
   awsS3:
     default:
@@ -211,7 +299,7 @@ data:
       secretAccessKey: "${{AWS_S3_SECRET_ACCESS_KEY}}"
 ```
 
-若要使用S3記錄轉寄站，您需要預先設定AWS IAM使用者，並為該使用者提供存取S3儲存貯體的適當原則。  請參閱[這裡](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html)，瞭解如何建立IAM使用者認證。
+若要使用S3記錄轉寄站，您需要預先設定AWS IAM使用者，並為該使用者提供存取S3儲存貯體的適當原則。  如需如何建立IAM使用者認證，請參閱[AWS IAM使用者檔案](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html)。
 
 IAM原則應該允許使用者使用`s3:putObject`。  例如：
 
@@ -228,7 +316,7 @@ IAM原則應該允許使用者使用`s3:putObject`。  例如：
 }
 ```
 
-請參閱[這裡](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html)，以取得有關AWS貯體原則實作的詳細資訊。
+如需如何實作的詳細資訊，請參閱[AWS貯體原則檔案](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html)。
 
 ### Azure Blob儲存體 {#azureblob}
 
@@ -319,7 +407,7 @@ data:
       
 ```
 
-考量事項：
+#### 考量事項
 
 * 建立API金鑰，而不與特定雲端提供者進行任何整合。
 * 標籤屬性是選用的
@@ -345,7 +433,7 @@ data:
       pipeline: "ingest pipeline name"
 ```
 
-考量事項：
+#### 考量事項
 
 * 依預設，連線埠為443。 您可以選擇使用名為`port`的屬性覆寫
 * 對於認證，請務必使用部署認證，而不是帳戶認證。 這些是在畫面中產生的認證，可能類似於此影像：
@@ -378,17 +466,10 @@ data:
       authHeaderValue: "${{HTTPS_LOG_FORWARDING_TOKEN}}"
 ```
 
-考量事項：
+#### 考量事項
 
 * URL字串必須包含&#x200B;**https://**，否則驗證將會失敗。
 * url可能包含連線埠。 例如 `https://example.com:8443/aem_logs/aem`。如果url字串中未包含任何連線埠，則會假設是連線埠443 （預設的HTTPS連線埠）。
-
-#### New Relic記錄API {#newrelic-https}
-
-電子郵件[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)以要求存取權。
-
->[!NOTE]
->New Relic會根據您的New Relic帳戶布建位置，提供區域特定的端點。  如需New Relic檔案，請參閱[這裡](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint)。
 
 #### HTTPS CDN記錄 {#https-cdn}
 
@@ -413,6 +494,52 @@ Web要求(POST)將持續傳送，其有json裝載（記錄專案陣列），其�
 * aemhttpdaccess
 * aemhttpderror
 
+### New Relic記錄API {#newrelic-https}
+
+記錄轉送至New Relic會利用New Relic HTTPS API來擷取。  目前僅支援AEM和Dispatcher的記錄檔，尚不支援CDN記錄檔。
+
+```yaml
+  kind: "LogForwarding"
+  version: "1"
+  metadata:
+    envTypes: ["dev"]
+  data:
+    newRelic:
+      default:
+        enabled: true
+        uri: "https://log-api.newrelic.com/log/v1"
+        apiKey: "${{NR_API_KEY}}"
+```
+
+>[!NOTE]
+>記錄轉送至New Relic僅適用於客戶擁有的New Relic帳戶。
+>
+>電子郵件[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)以要求存取權。
+>
+>New Relic會根據您的New Relic帳戶布建位置，提供區域特定的端點。  如需進一步資訊，請參閱[New Relic檔案](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint)。
+
+### Dynatrace記錄API {#dynatrace-https}
+
+記錄轉送至Dynatrace會利用Dynatrace HTTPS API來擷取。  目前僅支援AEM和Dispatcher的記錄檔，尚不支援CDN記錄檔。
+
+Token需要「擷取記錄檔」範圍屬性。
+
+```yaml
+  kind: "LogForwarding"
+  version: "1"
+  metadata:
+    envTypes: ["dev"]
+  data:
+    dynatrace:
+      default:
+        enabled: true
+        environmentId: "${{DYNATRACE_ENVID}}"
+        token: "${{DYNATRACE_TOKEN}}"  
+```
+
+>[!NOTE]
+> 電子郵件[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)以要求存取權。
+
 ### Splunk {#splunk}
 
 ```yaml
@@ -429,7 +556,7 @@ data:
       index: "aemaacs"
 ```
 
-考量事項：
+#### 考量事項
 
 * 依預設，連線埠為443。 您可以選擇使用名為`port`的屬性覆寫它。
 * 根據特定記錄，sourcetype欄位會有下列其中一個值： *aemaccess*，*aemerror*，
@@ -441,6 +568,8 @@ data:
 > [如果將](#legacy-migration)從舊版記錄轉送移轉到此自助模型，則傳送至您的Splunk索引的`sourcetype`欄位值可能已變更，因此請適當的調整。
 
 ### 相撲邏輯 {#sumologic}
+
+記錄檔轉送至Sumo Logic支援AEM和Dispatcher記錄檔；尚不支援CDN記錄檔。
 
 在設定Sumo Logic以進行資料擷取時，您將會看到「HTTP Source位址」，該位址會在單一字串中提供主機、接收者URI和私密金鑰。  例如：
 
