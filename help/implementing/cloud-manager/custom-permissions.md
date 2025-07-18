@@ -5,9 +5,9 @@ exl-id: 167da985-7f19-45b3-90a3-884817907da2
 solution: Experience Manager
 feature: Security, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
+source-git-commit: 0afd74120380c9ae3d02db9fb684189c2f19648f
 workflow-type: tm+mt
-source-wordcount: '1492'
+source-wordcount: '1490'
 ht-degree: 40%
 
 ---
@@ -48,7 +48,7 @@ Cloud Manager有一組預先定義的角色，可控管各種Cloud Manager功能
 
 ### 建立新的產品設定檔 {#create}
 
-請先建立可指派自訂許可權的產品設定檔。
+首先建立您可指派自訂許可權的產品設定檔。
 
 1. 在[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)登入Cloud Manager。
 
@@ -174,7 +174,7 @@ Cloud Manager有一組預先定義的角色，可控管各種Cloud Manager功能
 
 | 權限項目類型 | 範例 | 說明 |
 | --- | --- | --- |
-| 組織 | 組織：公司 A | 組織的所有適用資源。資源可以是方案、環境或管道。如果使用者在任何權限中新增一個組織，則該組織中所有新資源也具有該權限。 |
+| 組織 | 組織:companyA | 組織的所有適用資源。資源可以是方案、環境或管道。如果使用者在任何權限中新增一個組織，則該組織中所有新資源也具有該權限。 |
 | 方案 | 方案 A | 方案的所有適用資源。 |
 | 環境 | 方案 A：環境 | 適用於特定環境。 |
 | 管道 | 方案 A：管道 | 適用於特定管道。 |

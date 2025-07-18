@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: b61ffc522b6666a0f4b7fdb450d382b7231951cb
 workflow-type: tm+mt
-source-wordcount: '6521'
+source-wordcount: '6522'
 ht-degree: 97%
 
 ---
@@ -1230,8 +1230,8 @@ ht-degree: 97%
    + [AEM as a Cloud Service 中的生成式 AI](/help/generative-ai/generative-ai-in-aem.md)
    + [產生變化版本：與 AEM 編輯器整合](/help/generative-ai/generate-variations-integrated-editor.md)
    + [產生變化版本](/help/generative-ai/generate-variations.md)
-   + [助理 (限量測試版)](/help/implementing/cloud-manager/aem-ai-assistant.md)
-   + [AEM Forms 適用的 AI 助理 (表單體驗建立工具)(早期採用者) ](/help/edge/docs/forms/forms-ai-assistant.md)
+   + [AEM AI助理(Beta有限公司)](/help/implementing/cloud-manager/aem-ai-assistant.md)
+   + [AEM Forms AI助理(Forms Experience Builder) （率先採用）](/help/edge/docs/forms/forms-ai-assistant.md)
    + [AEM Forms AI 助理 - 提示程式庫](/help/edge/docs/forms/ai-assistant-prompt-library.md)
 + 實施 {#implementing}
    + [實施 AEM as a Cloud Service 應用程式](/help/implementing/home.md)
