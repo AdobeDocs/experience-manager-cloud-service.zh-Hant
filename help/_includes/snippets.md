@@ -1,8 +1,8 @@
 ---
 source-git-commit: 4d45e7ef626ad0b46f5323263cca791b14f9732f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1637'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 # 程式碼片段 {#snippets}
@@ -111,9 +111,9 @@ ht-degree: 93%
    </td>
    </tr>
    <tr>
-    <td>ES2022支援 </td>
-    <td>尚未支援ES2022；支援僅限於ES5 JavaScript功能。 </td>
-    <td>自訂函式中提供現代JavaScript功能（例如左鍵和箭頭函式）的支援，最高支援ES2022。 
+    <td>ES2022 支援 </td>
+    <td>尚不支援 ES2022；支援僅限於 ES5 JavaScript 功能。 </td>
+    <td>自訂函數中可支援現代 JavaScript 功能，例如 let 和 arrow 函數 (最高可支援 ES2022)。 
    </td>
    </tr>
    </tr>
@@ -169,11 +169,11 @@ ht-degree: 93%
 >[!IMPORTANT]
 >
 >前端管道要求將以下 IP 允許清單預先新增至 Cloud Manager。
->&#x200B;>如有需要，請複製以下位址區塊來[新增 IP 允許清單](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)。每個位址都以逗號區隔。將該區塊貼到「**IP 位址/CIDR**」的欄位 (在「**新增 IP 允許清單**」的對話框裡)。將游標放在位址清單中第一個逗號後面，然後按 **Enter** 鍵。儲存清單。
->&#x200B;>為了避免前端管道運作中斷，在啟用管道&#x200B;*之前*，務必先將此 IP 允許清單新增至 Cloud Manager。
+>>如有需要，請複製以下位址區塊來[新增 IP 允許清單](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)。每個位址都以逗號區隔。將該區塊貼到「**IP 位址/CIDR**」的欄位 (在「**新增 IP 允許清單**」的對話框裡)。將游標放在位址清單中第一個逗號後面，然後按 **Enter** 鍵。儲存清單。
+>>為了避免前端管道運作中斷，在啟用管道&#x200B;*之前*，務必先將此 IP 允許清單新增至 Cloud Manager。
 >
 >**Cloud Manager IP 允許清單**
->&#x200B;>52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
+>>52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
 >   
 
 ## 新增 Cloud Manager IP 允許清單和前端管道 {#add-cm-allowlist-frontend-pipeline}
@@ -181,7 +181,7 @@ ht-degree: 93%
 >[!IMPORTANT]
 >
 >如果您使用 (或打算使用) 前端管道來開發網站，必須先行新增 Cloud Manager IP 允許清單。
->&#x200B;>請參閱「[ Cloud Manager IP 允許清單與前端管道搭配使用](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline)」。
+>>請參閱「[ Cloud Manager IP 允許清單與前端管道搭配使用](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline)」。
 
 ## IP 允許清單和通用編輯器 {#ip-allow-lists-ue}
 
@@ -222,7 +222,7 @@ ht-degree: 93%
 
 **若要記錄支援服務單：**
 
-1. [遵循標準支援流程](https://experienceleague.adobe.com/zh-hant?support-tab=home#support)並建立服務單。
+1. [遵循標準支援流程](https://experienceleague.adobe.com/?support-tab=home#support)並建立服務單。
 1. 將 **Edge Delivery** 加入服務單標題中。
 1. 在描述中，除了問題描述之外，還提供以下詳細資訊：
 
@@ -282,10 +282,10 @@ ht-degree: 93%
 >
 >現有的專案可以繼續使用本文件中所述的方法。然而，針對新專案，Adobe 建議採用 [Edge Delivery Services。](/help/edge/overview.md)
 
-## Adobe提供的網站範本 {#adobe-templates}
+## Adobe 提供的網站範本 {#adobe-templates}
 
-為加速建立網站，Adobe提供許多適合不同用途的範本。
+為了加速網站建立，Adobe 提供許多適用於不同用途的範本。
 
-* 使用Edge Delivery Services的[AEM網站](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases) — 使用通用編輯器編寫AEM頁面，並透過[邊緣傳遞](/help/edge/overview.md)傳遞
-* [具有Commerce的AEM製作功能的Edge Delivery Services](https://github.com/adobe-rnd/aem-boilerplate-xcom/releases) — 用於使用Universal Editor製作AEM頁面，以利商業專案和透過[edge delivery](/help/edge/overview.md)傳遞
-* [標準AEM網站範本](https://github.com/adobe/aem-site-template-standard/releases) — 用於編寫傳統AEM頁面並透過[發佈傳遞](/help/sites-cloud/authoring/author-publish.md)
+* [具有 Edge Delivery Services 的 AEM Site](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases) 用於使用通用編輯器製作 AEM 頁面，並透過 [Edge Delivery](/help/edge/overview.md) 進行傳遞
+* [適用於 Commerce 的 Edge Delivery Services 搭配 AEM 製作](https://github.com/adobe-rnd/aem-boilerplate-xcom/releases)用於使用通用編輯器為商務專案製作 AEM 頁面，並透過 [Edge Delivery](/help/edge/overview.md) 進行傳遞
+* [標準 AEM 網站範本](https://github.com/adobe/aem-site-template-standard/releases)用於製作傳統 AEM 頁面，並透過 [Publish Delivery](/help/sites-cloud/authoring/author-publish.md) 進行傳遞

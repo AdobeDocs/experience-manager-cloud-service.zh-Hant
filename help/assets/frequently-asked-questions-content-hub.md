@@ -3,9 +3,9 @@ title: Content Hub 常見問題 (FAQ)
 description: 了解一些 Content Hub 最常見問題 (FAQ) 的答案。
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
 source-git-commit: 642440e1349eb94adb2f1875a0c5f36d0673d702
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1496'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Content Hub 是 Adobe 提供和維護的功能，沒有任何需要透過開發/
 
 在沙箱程式或其編寫生產環境中有一項 Content Hub 的搶先體驗方案。如需更多資訊，請參閱[沙箱程式簡介](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)。若要了解有關搶先體驗方案的詳細資訊，請聯絡您的 Adobe 客戶團隊。
 
-Content Hub 目前尚不適用於非生產環境 (中繼和開發)。Assets Ultimate的階段/開發環境預計於2025年3月推出。
+Content Hub 目前尚不適用於非生產環境 (中繼和開發)。Assets Ultimate 的中繼/開發環境預計將於 2025 年 3 月推出。
 
 ## 為什麼我登入 Content Hub 後看不到任何資產？ {#no-assets-in-content-hub}
 
@@ -84,7 +84,7 @@ Content Hub 目前尚不適用於非生產環境 (中繼和開發)。Assets Ulti
    >
    >在兩個 Admin Console 中都指派至 Express 和 Assets 產品設定檔的使用者必須具有相同的電子郵件地址，並使用&#x200B;**企業或學校**&#x200B;帳戶，而不是&#x200B;**個人**&#x200B;帳戶。理想的設定是將兩個 Admin Consoles 都設定為 **Federated ID**，並在它們之間建立信任關係，讓使用者擁有順暢的單一登入體驗。有些 Express 計劃 (例如 Express 團隊版) 不支援 Federated ID/單一登入。
 
-除了正確的產品權益外，Content Hub 中的 Adobe Express 整合還會要求被指派的使用者至少對支援 Content Hub 的 Assets 製作環境擁有「[!UICONTROL 可以編輯]」權限，並且至少在 **[!UICONTROL # /content/dam/hydrated-assets/]** 資料夾階層中擁有該權限，以便 Content Hub 使用者在其中儲存使用 Express 製作的內容。請參閱「管理員」檢視 (觸控式 UI) 中的[權限管理](/help/security/touch-ui-principal-view.md)或[「資產」檢視中簡化的權限管理](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions)。
+除了正確的產品權益外，Content Hub 中的 Adobe Express 整合還會要求被指派的使用者至少對支援 Content Hub 的 Assets 製作環境擁有「[!UICONTROL 可以編輯]」權限，並且至少在 **[#UICONTROL /content/dam/hydrated-assets/]** 資料夾階層中擁有該權限，以便 Content Hub 使用者在其中儲存使用 Express 製作的內容。請參閱「管理員」檢視 (觸控式 UI) 中的[權限管理](/help/security/touch-ui-principal-view.md)或[「資產」檢視中簡化的權限管理](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions)。
 
 ## 我可以設定 Content Hub，以便本組織的品牌指導方針在首頁上顯示為連結嗎？ {#content-hub-setup-brand-guidelines}
 
@@ -98,41 +98,41 @@ Adobe 提供從 Brand Portal 到 Content Hub 的遷移支援，您可以透過�
 
 若要存取[「設定」使用者介面](/help/assets/configure-content-hub-ui-options.md)，您必須是 [Content Hub 管理員](/help/assets/deploy-content-hub.md##onboard-content-hub-administrator)。如果您獲指派至 Adobe Admin Console 中生產作者執行個體上的 AEM 管理員產品設定檔，但仍看不到設定選項，請確定 AEM 管理員產品設定檔未被重新命名。如需更多詳細資訊，請參閱 [AEM as a Cloud Service 團隊和產品設定檔](/help/onboarding/aem-cs-team-product-profiles.md)。
 
-## Content Hub如何解決Brand Portal的限制？ {#content-hub-brand-portal-comparison}
+## Content Hub 如何解決 Brand Portal 的限制？ {#content-hub-brand-portal-comparison}
 
 
-下列表格概述了兩種解決方案之間的主要區別：
+下列表格概述兩種解決方案之間的主要差異：
 
 | 區域 | 功能 | Content Hub | Brand Portal |
 |---|---|----|----|
-| 設定發佈體驗 | 設定篩選器、資產詳細資料和新增資產頁面的中繼資料 | ✓ | − |
+| 設定發佈體驗 | 設定篩選器、資產詳細資訊憶及新增資產頁面的後設資料 | ✓ | − |
 |  | 從入口網站設定外部連結 | ✓ | − |
-|  | 設定橫幅訊息 | ✓ | ✓ |
-|  | 設定品牌推廣的橫幅影像 | ✓ | ✓ |
-|  | 根據品牌需求設定UI的主要和次要顏色 | ✓ | − |
-| 從DAM共用資產 | 從DAM共用原始核准的資產 | ✓ | ✓ |
-|  | 已核准的資產變更已自動同步 | ✓ | − |
-| 搜尋和篩選器 | 動態篩選器（選項會根據顯示的資產以動態方式顯示） | ✓ | − |
+|  | 設定橫幅傳送訊息 | ✓ | ✓ |
+|  | 設定品牌化的橫幅影像 | ✓ | ✓ |
+|  | 按品牌化要求設定使用者介面的主要和次要顏色 | ✓ | − |
+| 共用 DAM 中的資產 | 共用 DAM 原始核准的資產 | ✓ | ✓ |
+|  | 核准的資產變更會自動同步 | ✓ | − |
+| 搜尋和篩選 | 動態篩選器 (根據顯示的資產動態顯示選項) | ✓ | − |
 |  | 搜尋歷史記錄 | ✓ | − |
-| 資產上傳 | 本機磁碟機 | ✓ | ✓ |
-|  | 上傳資產時新增可設定的中繼資料 | ✓ | − |
+| 資產上傳 | 本機磁碟 | ✓ | ✓ |
+|  | 上傳資產時新增可設定的後設資料 | ✓ | − |
 | 下載和轉譯 | 下載原始資產 | ✓ | ✓ |
-|  | 從DAM共用和下載靜態轉譯 | ✓ | ✓ |
-|  | 下載動態轉譯（預設集和智慧型裁切） | ✓ | ✓ |
-|  | 可限制檢視和下載已過期的資產 | ✓ | − |
+|  | 從 DAM 共用和下載靜態轉譯 | ✓ | ✓ |
+|  | 下載動態轉譯 (預設和智慧裁切) | ✓ | ✓ |
+|  | 限制檢視和下載過期資產的功能 | ✓ | − |
 | 連結共用和集合 | 已登入使用者的連結共用 | ✓ | ✓ |
-|  | 公開集合 | ✓ | ✓ |
-|  | 在集合中搜尋 | ✓ | − |
+|  | 公用集合 | ✓ | ✓ |
+|  | 在集合內搜尋 | ✓ | − |
 |  | 匿名連結共用 | ✓ | ✓ |
-|  | 私人集合 | ✓ | ✓ |
-| 權限 | ACL型許可權 | − | ✓ |
+|  | 私有集合 | ✓ | ✓ |
+| 權限 | ACL 型權限 | − | ✓ |
 |  | 屬性型存取控制 | ✓ | − |
-| 快速整合 | 在Adobe Express中編輯Content Hub Assets並儲存至DAM | ✓ | − |
-| 控制面板和報表 | 見解儀表板 | ✓ | − |
-| 使用者介面擴展性 | 資產詳細資訊頁面上的自訂擴充功能點 | 可用性限制 | − |
-| 即將推出的創新功能 | 依使用者的最愛集合 | ✓ | − |
+| Express 整合 | 在 Adobe Express 中編輯 Content Hub Assets 並儲存至 DAM | ✓ | − |
+| 儀表板和報告 | 深入分析儀表板 | ✓ | − |
+| 使用者介面擴展性 | 在資產詳細資訊頁面自訂擴展點 | 限量開放使用 | − |
+| 即將推出的創新 | 使用者最愛的集合 | ✓ | − |
 |  | 管理員釘選的集合 | ✓ | − |
 |  | 語意搜尋 | ✓ | − |
-|  | 本地化的搜尋和中繼資料顯示 | ✓ | − |
+|  | 本地化搜尋和後設資料顯示 | ✓ | − |
 
 
