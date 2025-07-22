@@ -4,10 +4,10 @@ description: 了解 Adobe Experience Manager as a Cloud Service 中 Cloud Manage
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 3e7ce0c7f330ba92b57e36ea8fe5bb17b5998cb1
-workflow-type: ht
-source-wordcount: '1210'
-ht-degree: 100%
+source-git-commit: f3e31d1f17283086cd6fe9e73d67feac938d6567
+workflow-type: tm+mt
+source-wordcount: '1209'
+ht-degree: 98%
 
 ---
 
@@ -39,9 +39,9 @@ AEM as a Cloud Service 中 Cloud Manager 2025.7.0 的發行日期為 2025 年 7 
 
   請參閱[授權儀表板](/help/implementing/cloud-manager/license-dashboard.md)。
 
-## 早期採用者計劃 {#private-beta-program}
+## Alpha/Beta計畫 {#private-beta-program}
 
-參與 Cloud Manager 的 Alpha 和 Beta 計劃，在即將推出的功能正式發佈之前，獲得獨家搶先體驗存取權。
+參與Cloud Manager的Alpha版和Beta版計畫，在一般版本發行前取得即將推出的功能的獨家存取權。
 
 目前提供下列機會：
 
