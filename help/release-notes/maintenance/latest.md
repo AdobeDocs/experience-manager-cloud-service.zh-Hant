@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 13124956fcce105ad42767f67b700284c8250012
+source-git-commit: a4e023ca44c93124627912bae08dc3535d48400c
 workflow-type: tm+mt
-source-wordcount: '620'
+source-wordcount: '622'
 ht-degree: 31%
 
 ---
@@ -57,7 +57,7 @@ ht-degree: 31%
 * Assets-53446：由於NPE，YouTube驗證權杖重新整理間歇性失敗。
 * Assets-53827： ACL驗證封鎖儲存混合媒體集。
 * Assets-5403：用於發佈執行個體的Dynamicmedia clientlibs應該有`allowProxy=true`。
-* Assets-54261：中繼資料匯入會洩漏連線，並在檔案下載失敗時遭到封鎖。
+* Assets-54261：中繼資料匯入會洩漏連線，如果檔案無法下載，系統就會封鎖中繼資料。
 * CQ-4359863：內容片段編輯器/資產編輯器中關鍵字的標籤搜尋順序出錯。
 * CQ-4359958：讓openapi-support與AEM 6.5.22.0和更新版本相容。
 * CQ-4360256：在透過`/adobe` servlet內容處理的HTTP要求的要求路徑中包含servlet內容路徑。
@@ -81,7 +81,7 @@ AEM as a Cloud Service 專門負責將您的平台的安全性與效能最佳化
 
 | 技術 | 版本 | 連結 |
 |---|---|---|
-| AEM Oak | 1.80.0 | [Oak API 1.80.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.80.0/index.html) |
+| AEM Oak | 1.80.0 | [Oak API 1.80.0 API](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.80/index.html) |
 | AEM SLING API | 2.27.6 | [Apache Sling API 2.27.6 API](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | 1.4.28-1.4.0 | [HTML 範本語言規格](https://github.com/adobe/htl-spec) |
 | Apache HTTP Server | 2.4.63 | [Apache Httpd 2.4.63](https://github.com/apache/httpd/blob/2.4.63/CHANGES) |
