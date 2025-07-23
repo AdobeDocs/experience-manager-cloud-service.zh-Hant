@@ -5,9 +5,9 @@ exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
 source-git-commit: c54f77a7e0a034bab5eeddcfe231973575bf13f4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4582'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -20,9 +20,9 @@ ht-degree: 82%
 * 建立速率限制，以減少受到容量 DoS 攻擊的影響
 * 防止已知的惡意 IP 位址目標定位您的頁面
 
-這些流量篩選規則中有許多適用於所有AEM as a Cloud Service Sites和Forms客戶。 這些規則稱為&#x200B;*標準流量篩選規則*，主要在要求屬性和要求標題（包括IP、主機名稱、路徑和使用者代理程式）上運作。 標準流量篩選規則包含用來防止流量尖峰的速率限制規則。
+許多流量篩選規則可供所有 AEM as a Cloud Service Sites 和 Forms 客戶使用。可將其稱之為&#x200B;*標準流量篩選規則*，主要根據要求屬性和要求標頭進行運作，包括 IP、主機名稱、路徑以及使用者代理程式。標準流量篩選規則包括速率限制規則，以防止流量尖峰。
 
-流量篩選規則的子類別需要增強的安全性授權或 WAF-DDoS 保護授權。這些強大的規則稱為WAF （Web應用程式防火牆）流量篩選規則(或簡稱&#x200B;*WAF規則*)，可存取本文稍後所述的[WAF旗標](#waf-flags-list)。
+流量篩選規則的子類別需要增強的安全性授權或 WAF-DDoS 保護授權。這些強大的規則也稱為 WAF (網頁應用程式防火牆) 流量篩選規則 (或簡稱為 *WAF 規則*)，且可以存取本文稍後將進行說明的 [WAF 標幟](#waf-flags-list)。
 
 流量篩選器規則可以透過 Cloud Manager 設定管道，部署至開發、中繼和生產環境類型。可以使用命令列工具將設定檔案部署至快速開發環境 (RDE) 中。
 
@@ -61,23 +61,23 @@ ht-degree: 82%
 
 例如，在 Apache 層，客戶可以設定 [Dispatcher 模組](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter)或 [ModSecurity](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection) 以限制對特定內容的存取。
 
-如本文所述，使用 Cloud Manager 的[設定管道](/help/operations/config-pipeline.md)可以將流量篩選規則部署到 Adobe 管理的內容傳遞網路。除了&#x200B;*基於IP位址、路徑和標題等屬性的標準流量篩選規則*，或基於設定速率限制的規則之外，客戶還可以授權稱為&#x200B;*WAF規則*&#x200B;的強大流量篩選規則子類別。
+如本文所述，使用 Cloud Manager 的[設定管道](/help/operations/config-pipeline.md)可以將流量篩選規則部署到 Adobe 管理的內容傳遞網路。除了根據如 IP 位址、路徑及標頭等屬性的&#x200B;*標準流量篩選規則*，或根據設定速率限制的規則之外，客戶也可以授權稱為 *WAF 規則*&#x200B;的強大流量篩選規則子類別。
 
 ## 建議的流程 {#suggested-process}
 
 以下是制定正確流量篩選規則的高階建議端到端流程：
 
 1. 設定非生產和生產設定管道，如[設定](#setup)章節的敘述。
-1. 已授權&#x200B;*WAF流量篩選器規則*&#x200B;的客戶應在Cloud Manager中啟用這些規則。
+1. 已獲得 *WAF 流量篩選規則*&#x200B;的客戶應於 Cloud Manager 加以啟用。
 1. 閱讀並嘗試本教學課程，以具體了解如何使用流量篩選規則，包括 WAF 規則 (若已獲得授權)。本教學課程將引導您將規則部署到開發環境、模擬惡意流量、下載 [CDN 日誌](#cdn-logs)，以及在[儀表板工具](#dashboard-tooling)中進行分析。
-1. 將建議的入門規則複製到`cdn.yaml`，並將設定部署至生產環境，並將部分規則部署至記錄模式。
-1. 在收集一些流量之後，使用[儀表板工具](#dashboard-tooling)分析結果，以了解是否有任何符合的項目。找出誤判，並進行任何必要的調整，最終在區塊模式中啟用所有入門規則。
-1. 如有必要，請根據CDN記錄的分析，新增自訂規則，先在開發環境中使用模擬流量進行測試，然後以記錄模式部署到中繼和生產環境，然後是封鎖模式。
+1. 將建議的入門規則複製至 `cdn.yaml`，並在記錄模式中使用部分規則將設定部署至生產環境。
+1. 收集一些流量之後，使用[儀表板工具](#dashboard-tooling)分析結果，以了解是否有任何符合的項目。留意誤報並進行任何必要的調整，最終在區塊模式下啟用所有入門規則。
+1. 如有需要，請根據 CDN 記錄分析新增自訂規則，首先在開發環境中使用模擬流量進行測試，再以記錄模式部署至中繼和生產環境，然後在區塊模式進行部署。
 1. 持續監控流量，隨著威脅態勢的發展來變更規則。
 
 ## 設定 {#setup}
 
-1. 使用一組流量篩選規則(包括WAF規則)建立檔案`cdn.yaml`。 例如：
+1. 建立包含一組流量篩選規則 (包括 WAF 規則) 的 `cdn.yaml` 檔案。例如：
 
    ```
    kind: "CDN"
@@ -107,13 +107,13 @@ ht-degree: 82%
 
    1. 若要在現有方案上設定 WAF，[編輯您的方案](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)並在「**安全性**」標籤隨時取消勾選或勾選「**WAF-DDOS**」選項。
 
-1. 在Cloud Manager中建立設定管道，如[設定管道文章](/help/operations/config-pipeline.md#managing-in-cloud-manager)所述。 管道將參考頂層 `config` 資料夾，並將 `cdn.yaml` 檔案放在下方的某個位置，請參閱「[使用設定管道](/help/operations/config-pipeline.md#folder-structure)」。
+1. 依照[設定管道文章](/help/operations/config-pipeline.md#managing-in-cloud-manager)所述，在 Cloud Manager 中建立設定管道。管道將參考頂層 `config` 資料夾，並將 `cdn.yaml` 檔案放在下方的某個位置，請參閱「[使用設定管道](/help/operations/config-pipeline.md#folder-structure)」。
 
 ## 流量篩選規則語法 {#rules-syntax}
 
 您可以將&#x200B;*流量篩選規則*&#x200B;設定為符合 IPS、使用者代理、要求標頭、主機名稱、地理位置和 URL 等模式。
 
-授權增強式安全性或WAF-DDoS Protection Security產品的客戶，也可以設定一種特殊類別的流量篩選器規則，稱為&#x200B;*WAF流量篩選器規則* (或簡稱&#x200B;*WAF規則*)，其會參考一或多個[WAF旗標](#waf-flags-list)。
+授權強化的安全性或 WAF-DDoS 保護安全性產品的客戶，也可以設定特殊類別的流量篩選規則 *WAF 流量篩選規則* (或簡稱為 *WAF 規則*)，其參考一個或多個 [WAF 標幟](#waf-flags-list)。
 
 以下是一組流量篩選規則的範例，其中也包括 WAF 規則。
 
@@ -182,7 +182,7 @@ data:
 
 | **屬性** | **類型** | **說明** |
 |---|---|---|
-| reqProperty | `string` | 要求屬性。<br><br>之一：<br><ul><li>`path`：傳回不包含查詢參數的 URL 完整路徑。(使用未轉義變體的 `pathRaw`)</li><li>`url`：傳回含查詢參數的完整 URL。(使用未轉義變體的 `urlRaw`)</li><li>`queryString`：傳回 URL 的查詢部分</li><li>`method`：傳回要求中所使用的 HTTP 方法。</li><li>`tier`：傳回 `author`、`preview` 或 `publish` 其中之一。</li><li>`domain`：傳回小寫的網域屬性 (如 `Host` 標頭的定義)</li><li>`clientIp`：傳回用戶端 IP 位址。</li><li>`forwardedDomain`：傳回`X-Forwarded-Host` 標頭內定義的第一個小寫網域</li><li>`forwardedIp`：傳回 `X-Forwarded-For` 標頭中的第一個 IP 位址。</li><li>`clientRegion`：傳回國家/地區細分代碼，指出客戶所在的區域，如 [ISO 3166-2](https://en.wikipedia.org/wiki/ISO_3166-2) 所述。</li><li>`clientCountry`：傳回兩個字母的代碼 ([區域指示符](https://en.wikipedia.org/wiki/Regional_indicator_symbol))，可識別客戶位於哪個國家/地區。</li><li>`clientContinent`：傳回兩個字母的代碼 (AF、AN、AS、EU、NA、OC、SA)，可識別客戶位於哪個洲。</li><li>`clientAsNumber`：傳回與用戶端 IP 相關的[自治系統](https://en.wikipedia.org/wiki/Autonomous_system_(網際網路))編號。</li><li>`clientAsName`：傳回與自治系統編號相關的名稱。</li></ul> |
+| reqProperty | `string` | 要求屬性。<br><br>之一：<br><ul><li>`path`：傳回不包含查詢參數的 URL 完整路徑。(使用未轉義變體的 `pathRaw`)</li><li>`url`：傳回含查詢參數的完整 URL。(使用未轉義變體的 `urlRaw`)</li><li>`queryString`：傳回 URL 的查詢部分</li><li>`method`：傳回要求中所使用的 HTTP 方法。</li><li>`tier`：傳回 `author`、`preview` 或 `publish` 其中之一。</li><li>`domain`：傳回小寫的網域屬性 (如 `Host` 標頭的定義)</li><li>`clientIp`：傳回用戶端 IP 位址。</li><li>`forwardedDomain`：傳回`X-Forwarded-Host` 標頭內定義的第一個小寫網域</li><li>`forwardedIp`：傳回 `X-Forwarded-For` 標頭中的第一個 IP 位址。</li><li>`clientRegion`：傳回國家/地區細分代碼，指出客戶所在的區域，如 [ISO 3166-2](https://zh.wikipedia.org/wiki/tw/ISO_3166-2) 所述。</li><li>`clientCountry`：傳回兩個字母的代碼 ([區域指示符](https://zh.wikipedia.org/wiki/tw/Regional_indicator_symbol))，可識別客戶位於哪個國家/地區。</li><li>`clientContinent`：傳回兩個字母的代碼 (AF、AN、AS、EU、NA、OC、SA)，可識別客戶位於哪個洲。</li><li>`clientAsNumber`：傳回與用戶端 IP 相關的[自治系統](https://zh.wikipedia.org/wiki/tw/Autonomous_system_(網際網路))編號。</li><li>`clientAsName`：傳回與自治系統編號相關的名稱。</li></ul> |
 | reqHeader | `string` | 傳回具有指定名稱的要求標頭 |
 | queryParam | `string` | 傳回具有指定名稱的查詢參數 |
 | reqCookie | `string` | 傳回具有指定名稱的 Cookie |
@@ -237,8 +237,8 @@ when:
 
 | **標幟 ID** | **標幟名稱** | **說明** |
 |---|---|---|
-| 攻擊 | 攻擊 | 與惡意流量（SQLI、CMDEXE、XSS等）相關的標幟彙總。 請參閱[建議的WAF規則一節](#recommended-waf-starter-rules)，瞭解如何有效使用此標幟。 |
-| ATTACK-FROM-BAD-IP | 來自惡意 IP 的攻擊 | 類似於ATTACK旗標，但使用`BAD-IP`旗標進行「邏輯與」標示，因此如果要求符合ATTACK和BAD-IP，則會標示要求。 請參閱[建議的WAF規則一節](#recommended-waf-starter-rules)，瞭解如何有效使用此標幟。 |
+| 攻擊 | 攻擊 | 與惡意流量 (SQLI、CMDEXE、XSS 等) 相關的標幟彙總。請參閱[建議的 WAF 規則區段](#recommended-waf-starter-rules)，了解如何有效使用此標幟。 |
+| ATTACK-FROM-BAD-IP | 來自惡意 IP 的攻擊 | 與 ATTACK 標幟類似，但透過 `BAD-IP` 標幟進行「邏輯上的 AND 運算」，因此如果請求同時符合 ATTACK 和 BAD-IP，則會對其進行標記。請參閱[建議的 WAF 規則區段](#recommended-waf-starter-rules)，了解如何有效使用此標幟。 |
 | SQLI | SQL 注入 | SQL 注入指試圖透過執行任意資料庫查詢以取得對應用程式的存取權或獲取特權資訊。 |
 | BACKDOOR | 後門 | 後門訊號指試圖決定系統是否存在常見後門檔案的要求。 |
 | CMDEXE | 命令執行 | 命令執行指試圖透過由使用者輸入的任意系統命令獲取控制或毀損目標系統。 |
@@ -254,7 +254,7 @@ when:
 | **標幟 ID** | **標幟名稱** | **說明** |
 |---|---|---|
 | ABNORMALPATH | 異常路徑 | 異常路徑指原始路徑和標準化路徑不同 (例如：`/foo/./bar` 會標準化為 `/foo/bar`) |
-| 惡意-IP | 惡意 IP | 識別來自已知為惡意的IP位址的請求，因為包含在資料集（例如`SANS`和`TORNODE`）中，或根據WAF先前偵測到的惡意行為 |
+| 惡意-IP | 惡意 IP | 識別來自已知為惡意 IP 位址的請求，由於這些請求包含在如 `SANS` 和 `TORNODE` 等資料集，或根據 WAF 先前偵測到的惡意行為 |
 | BHH | 錯誤跳躍標頭 | 錯誤跳躍標頭指透過格式錯誤的傳輸編碼 (TE) 或內容長度 (CL) 標頭或格式正確的 TE 和 CL 標頭進行的 HTTP 走私嘗試 |
 | CODEINJECTION | 程式碼注入 | 程式碼注入是指試圖透過由使用者輸入的任意應用程式碼命令獲取控制或毀損目標系統。 |
 | 已壓縮 | 偵測到壓縮 | POST 要求內文被壓縮，並且無法檢查。例如，如果指定了 `Content-Encoding: gzip` 請求標頭，且 POST 內文並非純文字。 |
@@ -566,7 +566,7 @@ CDN 記錄可能會延遲最多五分鐘。
 這些規則的行為方式如下：
 
 * 任何符合規則的客戶宣告規則名稱會列於 `match` 屬性中。
-* `action` 屬性會確定規則是阻止、允許或記錄。
+*  `action` 屬性會確定規則是阻止、允許或記錄。
 * 如果 WAF 已取得授權並啟用， `waf` 屬性會列出所有偵測到的 WAF 標幟 (例如 SQLI)。無論 WAF 標幟是否列在任何規則中，都是如此。這是提供深入分析要宣告的潛在新規則。
 * 如果沒有客戶宣告的規則相符且沒有 WAF 規則相符，則 `rules` 屬性為空。
 
@@ -661,20 +661,20 @@ Adobe 提供了將儀表板工具下載到您電腦上的機制，以擷取透�
 
 儀表板工具可以直接從 [AEMCS-CDN-Log-Analysis-Tooling](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) GitHub 存放庫原地複製。
 
-[教學課程](#tutorial)可提供如何使用儀表板工具的具體說明。
+[教學課程](#tutorial)可供了解如何使用儀表板工具的具體說明。
 
-## 建議的入門者規則 {#recommended-starter-rules}
+## 建議的入門規則 {#recommended-starter-rules}
 
-Adobe建議從下方的流量篩選規則開始，然後隨著時間推移逐漸改良。 *標準規則*&#x200B;可與Sites或Forms授權搭配使用，而&#x200B;*WAF規則*&#x200B;需要增強式安全性或WAF-DDoS保護授權。
+Adobe 建議從以下的流量篩選規則開始，然後隨著時間的變化進行調整。*標準規則*&#x200B;可透過 Sites 或 Forms 授權提供，而 *WAF 規則*&#x200B;則需要增強安全性或 WAF-DDoS 保護授權。
 
-### 建議的標準規則 {#recommended-nonwaf-starter-rules}
+### 建議的入門規則 {#recommended-nonwaf-starter-rules}
 
-從下列規則開始：
+從以下規則開始：
 
-1. 速率限制（記錄模式）：
-   * 記錄來自指定IP的流量超過速率限制。 在驗證未收到任何警報後，將變更為封鎖模式；如果收到警報，則表示限制值太低。
-2. 特定國家/地區（區塊模式）：
-   * 封鎖來自特定國家/地區的流量（根據您的業務需求修改國家/地區代碼）
+1. 速率限制 (記錄模式)：
+   * 當來自特定 IP 的流量超過速率限制時進行記錄。驗證未收到警報後會變更為封鎖模式；如果收到警報，則表示限制值太低。
+2. 特定國家 (封鎖模式)：
+   * 封鎖來自特定國家的流量 (根據您的業務需求修改國家代碼)
 
 ```
 kind: "CDN"
@@ -733,19 +733,19 @@ data:
       action: block
 ```
 
-### 建議的WAF規則 {#recommended-waf-starter-rules}
+### 建議的 WAF 規則 {#recommended-waf-starter-rules}
 
-將下列規則新增至您現有的設定：
+將以下規則新增至您現有的設定中：
 
-1. ATTACK-FROM-BAD-IP旗標（封鎖模式）：
-   * 立即封鎖同時符合可疑模式(包括[WAF旗標清單](#waf-flags-list)中的數個)且源自已知為惡意的IP位址的流量。
-   * ATTACK-FROM-BAD-IP旗標本身就同時符合兩個條件（模式比對和已知的惡意IP），將誤判的風險降到最低。 因此，您可以安全地立即在封鎖模式中套用此規則。
-2. 攻擊旗標（記錄模式）：
-   * 一開始會記錄（而不是封鎖）符合可疑模式，但並非源自已知惡意IP位址的流量。 這種記錄而非封鎖的謹慎方法有助於避免無意中封鎖合法流量（誤報）。
-   * 部署此規則後，請仔細分析CDN記錄，確認未正確標幟合法請求。 一旦您確定沒有合法的流量受到影響，請切換到封鎖模式。
+1. ATTACK-FROM-BAD-IP 標幟 (封鎖模式)：
+   * 立即封鎖同時符合可疑模式 (包括 [WAF 標幟清單](#waf-flags-list)中的數種模式) 且來自已知為惡意 IP 位址的流量。
+   * ATTACK-FROM-BAD-IP 標幟本質上滿足兩種條件 (模式符合和已知惡意 IP)，將誤報的風險降至最低。因此，您可以立即以封鎖模式安全地套用此規則。
+2. ATTACK 標誌 (記錄模式)：
+   * 最初記錄 (而非封鎖) 符合可疑模式但並非來自已知惡意 IP 位址的流量。這種謹慎的記錄而非封鎖的方法有助於避免無意間封鎖合法流量 (誤報)。
+   * 部署此規則後，仔細分析 CDN 記錄以驗證並未錯誤標記合法請求。您確信合法流量未受影響後，請切換至封鎖模式。
 
 >[!NOTE]
-> 我們的經驗顯示，與ATTACK旗標相關的誤判並不多見。 因此，即使IP位址未知為惡意，立即封鎖所有可疑流量並隨後使用CDN記錄分析來識別和引入合法流量的允許規則可能是一種實用的策略。 每個組織都應評估自己的風險承受能力，權衡加強保護的好處，以及無意中封鎖合法請求的風險。
+> 我們的經驗指出：與 ATTACK 標幟相關的誤報相當罕見。因此，立即封鎖所有可疑流量 (即使此 IP 位址並非已知為惡意的)，並隨後使用 CDN 記錄分析來識別並引入合法流量的允許規則，這可能是實用的策略。每個組織皆應評估自身對於風險的容許度，權衡加強保護的保護與無意間封鎖合法請求的風險。
 >
 
 ```
@@ -769,12 +769,12 @@ data:
           - ATTACK
 ```
 
-### 舊版建議WAF規則 {#previous-waf-starter-rules}
+### 舊版建議的 WAF 規則 {#previous-waf-starter-rules}
 
-2025年7月之前，Adobe建議使用下列的WAF規則，這些規則在抵禦惡意流量方面仍然有效且有效。 請參閱教學課程，以瞭解移轉至新建議規則的相關考量事項。
+在 2025 年 7 月之前，Adobe 建議使用以下列出的 WAF 規則，這些規則在防禦惡意流量方面仍然有效。請參閱教學課程，了解有關移轉至新建議規則的考量。
 
 <details>
-  <summary>展開以檢視舊版建議的WAF規則。</summary>
+  <summary>展開以查看舊版建議的 WAF 規則。</summary>
 
 ```
     # Enable recommended WAF protections (only works if WAF is licensed enabled for your environment)
@@ -799,20 +799,19 @@ data:
           - PRIVATEFILE
           - NULLBYTE
 ```
-
 </details>
 
 ## 教學課程 {#tutorial}
 
-完成[一系列教學課程](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview)，以取得有關流量篩選器規則(包括WAF規則)的實用知識及經驗。
+完成[一系列教學課程](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview)，獲得有關流量篩選規則 (包括 WAF 規則) 的實用知識和經驗。
 
-教學課程包括：
+此教學課程包括：
 
-* 標準和WAF流量篩選規則概觀
-* 設定建議的標準和WAF流量篩選規則以封鎖攻擊，包括拒絕服務(DoS)和其他威脅
-* 使用Cloud Manager設定管道部署規則
-* 使用工具模擬惡意流量來測試規則
-* 使用記錄分析工具分析結果
+* 標準和 WAF 流量篩選規則的概觀
+* 設定建議的標準和 WAF 流量篩選規則，以封鎖包括阻斷服務 (DoS) 和其他威脅在內的攻擊
+* 使用 Cloud Manager 的設定管道部署規則。
+* 使用工具模擬惡意流量來測試您的規則
+* 使用記錄分析工具來分析結果
 * 最佳實務
 
 
