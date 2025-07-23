@@ -4,10 +4,10 @@ description: 瞭解如何在AEM Assets檢視中搜尋和探索資產。 強大�
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 8136083b9154704b93726ceefaed9f3a3340beef
 workflow-type: tm+mt
-source-wordcount: '2002'
-ht-degree: 94%
+source-wordcount: '2277'
+ht-degree: 82%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 94%
 
 [!DNL Assets view] 的預設功能即提供有效的搜尋。由於是全文檢索搜尋，因此十分全面。強大的搜尋功能可讓您快速探索合適的資產，協助您改善內容速度。[!DNL Assets view] 提供全文檢索搜尋，甚至還透過如智慧標記、標題、建立的日期和版本等中繼資料進行搜尋。
 
-若要搜尋資產，
+若要搜尋資產：
 
 * 按一下頁面頂部的搜尋方塊。預設為在您目前瀏覽的資料夾內進行搜尋。執行下列任一項作業：
 
@@ -120,6 +120,40 @@ Assets檢視提供下列自訂篩選器：
 1. 在&#x200B;**[!UICONTROL 自訂篩選器管理]**&#x200B;對話框中，將您需要從現有篩選器清單中移除的篩選器取消選取。
 
 1. 按一下&#x200B;**[!UICONTROL 確認]**，即可將篩選器從使用者介面移除。
+
+## 語意搜尋 {#semantic-search}
+
+語意搜尋是一種進階搜尋功能，可瞭解使用者查詢的涵義和意圖，而不是依賴精確的關鍵字比對。 它使用人工智慧(AI)、自然語言處理(NLP)和機器學習來提供更準確且內容感知的結果。
+
+傳統關鍵字式搜尋會尋找精確字詞，而語意搜尋則不同，它會解譯字詞、概念和使用者意圖之間的關係。 這可確保使用者找到他們要尋找的內容 — 即使他們的查詢用詞不同、包含拼寫錯誤或使用另一種語言。
+
+如果其主要優點包括：
+
+* **多語言支援**：搜尋多種語言，不需要精確翻譯。 使用者無論查詢語言為何，都能找到相關內容。
+
+* **處理錯誤拼字**：自動更正或解譯拼字錯誤和拼字錯誤，即使輸入不完美也能確保正確的結果。
+
+* **瞭解同義字**：提供相關辭彙和短語的結果，因此使用者不需要猜測正確的關鍵字。
+
+* **內容感知搜尋**：辨識查詢背後的目的，而不只是文字。
+
+* **根據文字提示搜尋**： Experience Manager Assets會套用篩選器至內容，並根據簡單的文字提示自動顯示適當的結果。
+
+>[!IMPORTANT]
+>
+> 指定三個或三個以上的字詞讓語意搜尋顯示適當的結果。
+
+### 語意搜尋的範例 {#examples-semantic-search}
+
+**範例提示**： *喝咖啡的女人*
+
+傳統關鍵字式搜尋會尋找完全相符的資產中繼資料，例如Woman、Coffee等，並傳回包含這些關鍵字的資產。
+
+不過，語意搜尋會尋找類似的字詞，例如`Girl`的`Lady`、`Woman`和咖啡選項，例如`Cappuccino`的`Latte`和`Coffee`。
+
+同樣地，您可以用西班牙文或拼錯拼字`Woman`來指定此提示為`Wman`，仍會得到相同的結果。
+
+在Assets檢視中![語意搜尋](assets/semantic-search.png)
 
 ## 使用 [!DNL Adobe Firefly] 搜尋資產 {#search-firefly}
 
@@ -343,6 +377,6 @@ Assets檢視可讓您為組織選取預設登陸頁面。 使用「搜尋優先�
 
 * 若要提供文件意見回饋，請使用右側邊欄提供的[!UICONTROL 編輯此頁面]![來編輯頁面](assets/do-not-localize/edit-page.png)或[!UICONTROL 記錄問題]![來建立 GitHub 問題](assets/do-not-localize/github-issue.png)。
 
-* 聯絡[客戶服務](https://experienceleague.adobe.com/zh-hant?support-solution=General#support)
+* 聯絡[客戶服務](https://experienceleague.adobe.com/?support-solution=General#support)
 
 
