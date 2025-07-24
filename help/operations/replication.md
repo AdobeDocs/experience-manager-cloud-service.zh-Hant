@@ -24,9 +24,9 @@ Adobe Experience Manager as a Cloud Service使用[Sling內容發佈](https://sli
 >[!NOTE]
 >
 >如果您有興趣大量發佈內容，請使用[樹狀啟動工作流程步驟](#tree-activation)建立工作流程，以有效處理大量負載。
->>不建議建置您自己的大量發佈自訂程式碼。
->>如果您因任何原因必須自訂，則可使用現有的工作流程API，透過此步驟觸發工作流程。
->>只發佈必須發佈的內容永遠是好的做法。 如果不需要的話，也不要嘗試發佈大量內容。 不過，您可以使用樹狀啟動工作流程步驟在工作流程中傳送的內容數量並無限制。
+>&#x200B;>不建議建置您自己的大量發佈自訂程式碼。
+>&#x200B;>如果您因任何原因必須自訂，則可使用現有的工作流程API，透過此步驟觸發工作流程。
+>&#x200B;>只發佈必須發佈的內容永遠是好的做法。 如果不需要的話，也不要嘗試發佈大量內容。 不過，您可以使用樹狀啟動工作流程步驟在工作流程中傳送的內容數量並無限制。
 
 ### 快速取消/發佈 — 計畫取消/發佈 {#publish-unpublish}
 
@@ -193,6 +193,7 @@ Adobe Experience Manager as a Cloud Service使用[Sling內容發佈](https://sli
 ```
 21.04.2021 19:14:58.541 [cm-p123-e456-aem-author-797aaaf-wkkqt] *INFO* [JobHandler: /var/workflow/instances/server60/2021-04-20/brian-tree-replication-test-2_1:/content/wknd/us/en/adventures] com.day.cq.wcm.workflow.process.impl.ChunkedReplicator closing chunkedReplication-VolatileWorkItem_node1_var_workflow_instances_server60_2021-04-20_brian-tree-replication-test-2_1, 17 paths replicated in 2971 ms
 ```
+
 </details>
 
 ### 復寫API {#replication-api}
