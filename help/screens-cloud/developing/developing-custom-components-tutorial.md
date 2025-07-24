@@ -30,12 +30,12 @@ ht-degree: 2%
 
 1. 本機開發環境
 
-教學課程步驟和熒幕擷取畫面使用&#x200B;**CRXDE Lite**&#x200B;執行。 您也可以使用IDE來完成本教學課程。 有關使用IDE來開發[與AEM的詳細資訊，請參閱此處](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html)。
+教學課程步驟和熒幕擷取畫面使用&#x200B;**CRXDE Lite**&#x200B;執行。 您也可以使用IDE來完成本教學課程。 有關使用IDE來開發[與AEM的詳細資訊，請參閱此處](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=zh-Hant)。
 
 
 ## 專案設定 {#project-setup}
 
-Screens專案的原始程式碼通常會作為多模組Maven專案來管理。 為了加快教學課程，已使用[AEM專案原型13](https://github.com/adobe/aem-project-archetype)預先產生專案。 如需使用Maven AEM專案原型建立專案的詳細資訊，請參閱[專案設定](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html)。
+Screens專案的原始程式碼通常會作為多模組Maven專案來管理。 為了加快教學課程，已使用[AEM專案原型13](https://github.com/adobe/aem-project-archetype)預先產生專案。 如需使用Maven AEM專案原型建立專案的詳細資訊，請參閱[專案設定](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=zh-Hant)。
 
 1. 使用[CRX Package Manager](http://localhost:4502/crx/packmgr/index.jsp)下載並安裝下列套件：
 
@@ -131,7 +131,7 @@ AEM Screens有一些有趣的限制，不適用於傳統WCM Sites元件。
    <sly data-sly-test="${!production}" data-sly-include="edit.html" />
    ```
 
-   根據目前使用的[編寫模式](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/authoring/author-environment-tools.html#page-modes)，Screens元件需要兩種不同的轉譯：
+   根據目前使用的[編寫模式](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/authoring/author-environment-tools.html?lang=zh-Hant#page-modes)，Screens元件需要兩種不同的轉譯：
 
    1. **生產**：預覽或發佈模式(wcmmode=disabled)
    1. **編輯**：用於所有其他編寫模式，也就是編輯、設計、支架、開發人員……
@@ -378,7 +378,7 @@ AEM Screens元件在編輯模式與預覽/生產模式中的轉譯方式不同�
 
 ## 建立設計頁面 {#design-page}
 
-AEM Screens使用[靜態頁面範本](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-static.html)和[設計設定](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/default-components-designmode.html)進行全域變更。 設計設定常用於設定通道上Parsys的允許元件。 最佳實務是以應用程式專屬的方式儲存這些設定。
+AEM Screens使用[靜態頁面範本](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-static.html?lang=zh-Hant)和[設計設定](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/default-components-designmode.html?lang=zh-Hant)進行全域變更。 設計設定常用於設定通道上Parsys的允許元件。 最佳實務是以應用程式專屬的方式儲存這些設定。
 
 We.Retail Run設計頁面會建立於下方，用於儲存We.Retail Run專案的所有特定設定。
 
