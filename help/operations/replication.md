@@ -4,7 +4,7 @@ description: 瞭解AEM as a Cloud Service中的散佈和疑難排解復寫問題
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
 feature: Operations
 role: Admin
-source-git-commit: 9dac0b63fec56bede7db9331d47ef479b29e67d0
+source-git-commit: 1179e45f6e75a8a4f5e5e76903243f64d9f406ae
 workflow-type: tm+mt
 source-wordcount: '1711'
 ht-degree: 1%
@@ -24,9 +24,9 @@ Adobe Experience Manager as a Cloud Service使用[Sling內容發佈](https://sli
 >[!NOTE]
 >
 >如果您有興趣大量發佈內容，請使用[樹狀啟動工作流程步驟](#tree-activation)建立工作流程，以有效處理大量負載。
->不建議建置您自己的大量發佈自訂程式碼。
->如果您因任何原因必須自訂，則可使用現有的工作流程API，透過此步驟觸發工作流程。
->只發佈必須發佈的內容永遠是好的做法。 如果不需要的話，也不要嘗試發佈大量內容。 不過，您可以使用樹狀啟動工作流程步驟在工作流程中傳送的內容數量並無限制。
+>>不建議建置您自己的大量發佈自訂程式碼。
+>>如果您因任何原因必須自訂，則可使用現有的工作流程API，透過此步驟觸發工作流程。
+>>只發佈必須發佈的內容永遠是好的做法。 如果不需要的話，也不要嘗試發佈大量內容。 不過，您可以使用樹狀啟動工作流程步驟在工作流程中傳送的內容數量並無限制。
 
 ### 快速取消/發佈 — 計畫取消/發佈 {#publish-unpublish}
 
@@ -36,9 +36,9 @@ Adobe Experience Manager as a Cloud Service使用[Sling內容發佈](https://sli
 
 ### 開啟和關閉時間 — 觸發器設定 {#on-and-off-times-trigger-configuration}
 
-**開啟時間**&#x200B;和&#x200B;**關閉時間**&#x200B;的其他可能性可從頁面屬性[&#128279;](/help/sites-cloud/authoring/sites-console/page-properties.md#basic)的基本索引標籤取得。
+**開啟時間**&#x200B;和&#x200B;**關閉時間**&#x200B;的其他可能性可從頁面屬性[的](/help/sites-cloud/authoring/sites-console/page-properties.md#basic)基本索引標籤取得。
 
-若要實現此功能的自動復寫，請在[OSGi設定](/help/implementing/deploying/configuring-osgi.md) **開啟關閉觸發程式設定**&#x200B;中啟用&#x200B;**自動復寫**：
+若要實現此功能的自動復寫，請在&#x200B;**OSGi設定** [開啟關閉觸發程式設定](/help/implementing/deploying/configuring-osgi.md)中啟用&#x200B;**自動復寫**：
 
 ![OSGi開啟關閉觸發器組態](/help/operations/assets/replication-on-off-trigger.png)
 
@@ -58,7 +58,7 @@ Adobe Experience Manager as a Cloud Service使用[Sling內容發佈](https://sli
 
 1. 從AEM as a Cloud Service首頁，移至&#x200B;**工具 — 工作流程 — 模型**。
 1. 在「工作流程模型」頁面中，按畫面右上角的&#x200B;**建立**。
-1. 新增標題和名稱至您的模型。 如需詳細資訊，請參閱[建立工作流程模型](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=zh-Hant)。
+1. 新增標題和名稱至您的模型。 如需詳細資訊，請參閱[建立工作流程模型](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html)。
 1. 從清單中選取建立的模型，然後按&#x200B;**編輯**
 1. 在下列視窗中，刪除預設顯示的「步驟」
 1. 將「處理步驟」拖放至目前的模型流程：
@@ -96,7 +96,7 @@ Adobe Experience Manager as a Cloud Service使用[Sling內容發佈](https://sli
 
 **支援篩選器**
 
-| 名稱 | 描述 |
+| 名稱 | 說明 |
 | ------------- | ------------------------------------------- |
 | onlyModified | 節點：自上次發佈後已修改的新節點和預先存在的節點 |
 | onlyActivated | 節點：上次發佈前已發佈的節點 |
@@ -135,13 +135,13 @@ Adobe Experience Manager as a Cloud Service使用[Sling內容發佈](https://sli
 
 請勿叫用原始模型。 相反，請務必先複製模型並叫用該副本。
 
-如同所有工作流程，您也可以透過API叫用。 如需詳細資訊，請參閱[以程式設計方式與工作流程互動](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html?lang=zh-Hant#extending-aem)。
+如同所有工作流程，您也可以透過API叫用。 如需詳細資訊，請參閱[以程式設計方式與工作流程互動](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html#extending-aem)。
 
 或者，您也可以建立使用`Publish Content Tree`處理步驟的工作流程模型。
 
 1. 從AEM as a Cloud Service首頁，移至&#x200B;**工具 — 工作流程 — 模型**。
 1. 在「工作流程模型」頁面中，按畫面右上角的&#x200B;**建立**。
-1. 新增標題和名稱至您的模型。 如需詳細資訊，請參閱[建立工作流程模型](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=zh-Hant)。
+1. 新增標題和名稱至您的模型。 如需詳細資訊，請參閱[建立工作流程模型](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html)。
 1. 從清單中選取建立的模型，然後按&#x200B;**編輯**
 1. 在下列視窗中，將「處理步驟」拖放至目前的模型流程：
 
@@ -193,7 +193,6 @@ Adobe Experience Manager as a Cloud Service使用[Sling內容發佈](https://sli
 ```
 21.04.2021 19:14:58.541 [cm-p123-e456-aem-author-797aaaf-wkkqt] *INFO* [JobHandler: /var/workflow/instances/server60/2021-04-20/brian-tree-replication-test-2_1:/content/wknd/us/en/adventures] com.day.cq.wcm.workflow.process.impl.ChunkedReplicator closing chunkedReplication-VolatileWorkItem_node1_var_workflow_instances_server60_2021-04-20_brian-tree-replication-test-2_1, 17 paths replicated in 2971 ms
 ```
-
 </details>
 
 ### 復寫API {#replication-api}
@@ -272,7 +271,7 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 
 若要進行復寫疑難排解，請導覽至AEM作者服務Web UI中的復寫佇列：
 
-1. 從AEM開始功能表，導覽至&#x200B;**工具** > **部署** > **發佈**
+1. 從AEM [全域導覽](/help/sites-cloud/authoring/basic-handling.md#global-navigation)，導覽至&#x200B;**工具** > **部署** > **發佈**
 1. 選取卡片&#x200B;**發佈**
 
    ![狀態](assets/publish-status.png "狀態")
