@@ -6,14 +6,14 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 100ddbf2-9c63-406f-a78d-22862501a085
-source-git-commit: eb38369ee918851a9f792af811bafff9b2e49a53
-workflow-type: ht
-source-wordcount: '1167'
-ht-degree: 100%
+source-git-commit: 06bd37146cafaadeb5c4bed3f07ff2a38c548000
+workflow-type: tm+mt
+source-wordcount: '1290'
+ht-degree: 69%
 
 ---
 
-# AEM as a Cloud Service 的客戶自控金鑰 {#cusomer-managed-keys-for-aem-as-a-cloud-service}
+# AEM as a Cloud Service 的客戶自控金鑰 {#customer-managed-keys-for-aem-as-a-cloud-service}
 
 AEM as a Cloud Service 目前將客戶資料儲存在 Azure Blob 儲存空間和 MongoDB 中，可依預設利用提供者管理的加密金鑰來保護資料。雖然此設定符合許多組織的安全性需求，但受監管產業中的企業或需要增強資料安全性的企業可能會設法更有效地控制其加密作業。對於優先考慮資料安全性、合規性和管理加密金鑰能力的組織來說，客戶自控金鑰 (CMK) 解決方案可提供重要的增強功能。
 
@@ -42,8 +42,8 @@ AEM as a Cloud Service 可讓您使用自己的加密金鑰來加密靜態資料
 1. 設定您的環境
 1. 向 Adob&#x200B;&#x200B;e 取得應用程式 ID
 1. 建立新資源群組
-1. 建立金鑰保存庫
-1. 授予 Adob&#x200B;&#x200B;e 對金鑰保存庫的存取權
+1. 建立金鑰儲存庫
+1. 授予Adobe對金鑰儲存庫的存取權
 1. 建立加密金鑰
 
 您需要向 Adob&#x200B;&#x200B;e 分享金鑰保存庫 URL、加密金鑰名稱以及有關金鑰保存庫的資訊。
@@ -52,15 +52,30 @@ AEM as a Cloud Service 可讓您使用自己的加密金鑰來加密靜態資料
 
 Azure 命令列介面 (CLI) 是使用本指南的唯一需求。如果您尚未安裝 Azure CLI，請依[此處](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli)的正式安裝說明來進行。
 
-在繼續本指南的其他部分之前，請使用 `az login` 登入您的 CLI。
+在繼續本指南的其餘部分之前，請使用`az login`登入您的CLI。
 
 >[!NOTE]
 >
 >雖然本指南使用 Azure CLI，但您可以透過 Azure 控制台執行相同的操作。如果您希望使用 Azure 控制台，請使用下列命令作為參考。
 
+
+## 開始AEM as a Cloud Service的CMK設定程式 {#request-cmk-for-aem-as-a-cloud-service}
+
+您需要透過UI為您的AEM as a Cloud Service環境請求客戶自控金鑰(CMK)設定。 若要這麼做，請導覽至&#x200B;**客戶自控金鑰**區段下的AEM首頁安全性UI。
+接著，您可以按一下**開始上線**&#x200B;按鈕，開始上線程式。
+
+![開始使用CMK UI上線網站](./assets/cmk/step1.png)
+
+
 ## 向 Adob&#x200B;&#x200B;e 取得應用程式 ID {#obtain-an-application-id-from-adobe}
 
-Adobe 將為您提供 Entra 應用程式 ID，進行本指南其他部分將需要使用該 ID。如果您還沒有應用程式 ID，可聯絡 Adob&#x200B;&#x200B;e 並取得。
+開始入門流程後，Adobe將會提供Entra應用程式ID。 此應用程式ID是指南其他部分所必需的，並將用於建立可讓Adobe存取您的金鑰儲存庫的服務主體。 如果您還沒有應用程式ID，則需要等到Adobe提供。
+
+![正在處理要求，請等候Adobe提供Entra應用程式ID](./assets/cmk/step2.png)
+
+請求完成後，您就能在CMK UI中看到應用程式ID。
+
+![Entra應用程式ID是由Adobe所提供](./assets/cmk/step3.png)
 
 ## 建立新資源群組 {#create-a-new-resource-group}
 
@@ -79,7 +94,7 @@ az group create --location $location --resource-group $resourceGroup
 
 ## 建立金鑰保存庫 {#create-a-key-vault}
 
-您將需要建立一個金鑰保存庫，用來加入您的加密金鑰。金鑰保存庫必須啟用虛刪除保護功能。對於要加密來自其他 Azure 服務的靜態資料一定要使用虛刪除保護。同時，還必須啟用公共網路存取權，以確保 Adob&#x200B;&#x200B;e 租用戶可以存取金鑰保存庫。
+您將需要建立一個金鑰保存庫，用來加入您的加密金鑰。金鑰保存庫必須啟用虛刪除保護功能。對於要加密來自其他 Azure 服務的靜態資料一定要使用虛刪除保護。必須啟用公用網路存取，以確保Adobe服務可以存取金鑰儲存庫。
 
 >[!IMPORTANT]
 >若是建立已停用公共網路存取的金鑰保存庫，此時，系統會強制要求所有與金鑰保存庫相關的操作 (例如金鑰建立或輪換) 都必須從擁有金鑰保存庫網路存取權的環境中執行 - 例如，可以存取金鑰保存庫的虛擬機裝置。
@@ -97,7 +112,7 @@ az keyvault create `
   --location $location `
   --resource-group $resourceGroup `
   --name $keyVaultName `
-  --default-action=Deny `
+  --default-action=Allow `
   --enable-purge-protection `
   --enable-rbac-authorization `
   --public-network-access Enabled
@@ -107,7 +122,7 @@ az keyvault create `
 
 在此步驟中，您將允許 Adob&#x200B;&#x200B;e 透過 Entra 應用程式存取您的金鑰保存庫。Adobe 應該已經提供 Entra 應用程式 ID。
 
-首先，您必須建立 Entra 應用程式附加的服務主體，並將其指派給&#x200B;**金鑰保存庫讀取者**&#x200B;和&#x200B;**金鑰保存庫密碼使用者**&#x200B;角色。這些角色僅限於本指南中建立的金鑰保存庫。
+首先，您必須建立附加至Entra應用程式的服務主體，並為其指派&#x200B;**金鑰儲存庫Reader**&#x200B;和&#x200B;**金鑰儲存庫加密使用者**&#x200B;角色。 這些角色僅限於本指南中建立的金鑰保存庫。
 
 ```powershell
 # Reuse this information from the previous steps.
@@ -128,7 +143,7 @@ az role assignment create --assignee $servicePrincipalId --role "Key Vault Reade
 az role assignment create --assignee $servicePrincipalId --role "Key Vault Crypto User" --scope $keyVaultId
 ```
 
-## 建立加密金鑰 {#create-an-ecryption-key}
+## 建立加密金鑰 {#create-an-encryption-key}
 
 最後，您可以在金鑰保存庫中建立加密金鑰。請注意，您將需要&#x200B;**金鑰保存庫密碼人員**&#x200B;角色來完成此步驟。如果登入的使用者沒有此角色，請聯絡您的系統管理員為您提供此角色，或要求已經擁有該角色的人員為您完成此步驟。
 
@@ -138,7 +153,7 @@ az role assignment create --assignee $servicePrincipalId --role "Key Vault Crypt
 # Reuse this information from the previous steps.
 $keyVaultName="<KEY VAULT NAME>"
 
-# Chose a name for your key.
+# Choose a name for your key.
 $keyName="<KEY NAME>"
 
 # Create the key.
@@ -147,7 +162,7 @@ az keyvault key create --vault-name $keyVaultName --name $keyName
 
 ## 共用金鑰保存庫資訊 {#share-the-key-vault-information}
 
-至此，一切準備就緒。您只需與 Adob&#x200B;&#x200B;e 分享一些必要資訊，Adobe 將負責為您設定您的環境。
+至此，一切準備就緒。您只需要透過CMK UI共用一些必要資訊，這會啟動環境設定程式。
 
 ```powershell
 # Reuse this information from the previous steps.
@@ -167,7 +182,8 @@ $tenantId=(az keyvault show --name $keyVaultName `
     --output tsv)
 $subscriptionId="<Subscription ID>"
 ```
-
+在CMK UI中提供以下資訊：
+![在UI中填入資訊](./assets/cmk/step3a.png)
 
 ## 撤銷金鑰存取權的影響 {#implications-of-revoking-key-access}
 
@@ -177,27 +193,16 @@ $subscriptionId="<Subscription ID>"
 
 ## 後續步驟 {#next-steps}
 
-聯絡 Adob&#x200B;&#x200B;e 並分享：
+您在CMK UI中提供所需資訊後，Adobe會針對您的AEM as a Cloud Service環境開始設定程式。 此程式可能需要一些時間，完成後您將會收到通知。
 
-* 您的金鑰保管庫 URL。您已在此步驟中擷取並將其保存在 `$keyVaultUri` 變數中。
-* 您的加密金鑰名稱。您已在上一步建立了金鑰，並將其保存在 `$keyName` 變數中。
-* `$resourceGroup`、`$subscriptionId` 和 `$tenantId`，這些是設定與金鑰保存庫連線的必要資料。
+![等候Adobe設定環境。](./assets/cmk/step4.png)
 
-<!-- Alexandru: hiding this for now
 
-### Private Link Approvals {#private-link-approvals}
+## 完成CMK設定 {#complete-the-cmk-setup}
 
->[!TIP]
->You can also consult the [Azure Documentation](https://learn.microsoft.com/en-us/azure/key-vault/general/private-link-service?tabs=portal#how-to-manage-a-private-endpoint-connection-to-key-vault-using-the-azure-portal) on how to approve a Private Endpoint Connection.
+完成設定程式後，您就能在UI中看到CMK設定的狀態。 您也可以看到金鑰儲存庫和加密金鑰。
+![處理序目前已完成](./assets/cmk/step5.png)
 
-Afterwards, an Adobe Engineer assigned to you will contact you to confirm the creation of the private endpoints, and will request you to approve a set of required Connection Requests. The requests can be approved either using the Azure Portal UI, where you can go to **KeyVault > Settings > Networking > Private Endpoint Connections** and approve the requests with names similar to these: 
+## 問題與支援 {#questions-and-support}
 
-`mongodb-atlas-<REGION>-<NUMBER>`, `storage-account-private-endpoint` and `backup-storage-account-private-endpoint`. 
-
-Notify the Adobe Engineer once this process is complete and the Private Endpoints show up as **Approved**. -->
-
-## Private Beta 版中的客戶自控金鑰 {#customer-managed-keys-in-private-beta}
-
-Adobe 工程團隊目前正研究利用 Azure Private Link 來增強 CMK 的實施程序。由於 Adob&#x200B;&#x200B;e 租用戶和您的金鑰保存庫之間有直接 Private Link，新的實施程序將允許透過 Azure 支柱網路分享您的金鑰。
-
-此增強的實施程序目前為 Private Beta 版，可供同意訂閱 Private Beta 版計劃並與 Adob&#x200B;&#x200B;e 工程團隊密切合作的特定客戶啟用。如果您有興趣使用 Private Link 的 CMK Private Beta 版，請聯絡 Adob&#x200B;&#x200B;e 並了解更多資訊。
+如果您有任何疑問、查詢或需要協助，請聯絡我們，瞭解適用於AEM as a Cloud Service的客戶自控金鑰設定。 Adobe支援可協助您解決任何可能的問題。
