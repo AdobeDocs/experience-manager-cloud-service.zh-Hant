@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # 將最適化表單發佈到 Edge Delivery Services
 
-<span class="preview">這是一項預先發佈功能，可透過我們的<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">預先發佈管道</a>取得。</span>
+<span class="preview">這是一項預先發佈功能，可透過我們的<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hant#new-features">預先發佈管道</a>取得。</span>
 
 
 當您的表單最終確定並可供使用時，您即可將其發佈，讓您的客戶可存取來進行資料的收集和提交。發佈可確保表單在 Edge Delivery 上可用，從而讓使用者能夠無縫地與其互動。此流程讓客戶可即時填寫並提交表單，確保高效的資料擷取並簡化處理流程。
