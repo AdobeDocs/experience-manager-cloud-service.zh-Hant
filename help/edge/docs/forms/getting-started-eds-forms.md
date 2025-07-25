@@ -1,72 +1,72 @@
 ---
 title: 開始使用 AEM Edge Delivery Services 上的 Forms
-description: 瞭解如何在Adobe Experience Manager Edge Delivery Services上建立和傳遞高績效表單，並強調Universal Editor編寫方法。
+description: 了解如何在 Adobe Experience Manager Edge Delivery Services 上建立和傳遞高效能表單，並強調通用編輯器的製作方法。
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
 source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '591'
-ht-degree: 5%
+ht-degree: 100%
 
 ---
 
 
 # 開始使用 AEM Edge Delivery Services 上的 Forms
 
-<span class="preview">這是透過我們的<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-hant#new-features">發行前通道</a>提供的發行前功能。</span>
+<span class="preview">這是一項預先發佈功能，可透過我們的<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">預先發佈管道</a>取得。</span>
 
-Adobe Experience Manager (AEM) Edge Delivery Services (EDS)可讓您從邊緣提供極快速、高度擴充的Web體驗。 本指南說明&#x200B;**如何建置和發佈這些體驗的表單** — 具有明確的建議階層：
+透過 Adobe Experience Manager (AEM) Edge Delivery Services (EDS)，您可以從邊緣提供極快速且高度可擴充的網頁體驗。本指南說明&#x200B;**如何建置和發佈符合這些體驗的表單**，並具備明確的建議階層：
 
-1. **Universal Editor (UE) — 大多數團隊的最佳選擇**
-2. **檔案式製作（檔案/工作表） — 適用於快速、簡單的表單**
-3. **Document Authoring (DA) — 使用將表單內嵌至DA編寫的頁面**
+1. **通用編輯器 (UE) – 大多數團隊的最佳選擇**
+2. **文件型製作 (文件/試算表) - 非常適合快速、簡單的表單**
+3. **文件製作 (DA) – 可以將表單嵌入至 DA 製作的頁面中**
 
-到最後，您將能夠選擇正確的撰寫方法、瞭解提交選項，並遵循後續步驟以建立生產就緒的表單。
+最後，您將能選擇正確的製作方法、了解提交選項，並按照後續步驟製作立即可用的表單。
 
 
 
-## 選擇編寫方法
+## 選擇製作方法
 
-| 團隊與需求 | 建議的方法 | 原因 |
+| 團隊和要求 | 建議方法 | 原因 |
 |--------------------|--------------------|-----|
-| 行銷人員/設計人員需要視覺控制、條件邏輯或AEM整合 | **通用編輯器** | 拖放、進階規則、提交至FSS或AEM Publish |
-| 內容作者已在Word/Google Docs/工作表中工作；將簡單資料擷取至試算表/電子郵件 | **檔案式製作** | 熟悉的工具，最快速的基本表單路徑 |
-| 內建於&#x200B;**檔案製作(DA)**&#x200B;中的網站頁面 | **將UE或檔案型表單內嵌**&#x200B;至DA頁面 | DA不會建置表單本身 |
+| 行銷人員/設計師需要視覺化控制、條件邏輯或 AEM 整合 | **通用編輯器** | 拖放功能、進階規則、提交至 FSS 或 AEM Publish |
+| 內容作者原本已在使用 Word/Google Docs/試算表；簡單地將資料擷取至試算表/電子郵件 | **文件型製作** | 熟悉的工具，製作基本表單的最快途徑 |
+| 以&#x200B;**文件製作 (DA)**&#x200B;建置的網站頁面 | 將 UE 或文件型表單&#x200B;**嵌入**&#x200B;至 DA 頁面 | DA 無法自行建置表單 |
 
 
-## 詳細編寫方法
+## 製作方法詳細資訊
 
 ### 通用編輯器
 
-Universal Editor是行銷人員和設計人員適用的視覺化拖放式撰寫工具，結合速度與企業級效能：
+通用編輯器是一款適用於行銷人員和設計師的視覺化拖放式製作工具，兼具速度與企業級效能：
 
-* 即時WYSIWYG編輯和裝置預覽。
-* 進階規則和驗證UI — 不需要程式碼。
-* 與AEM資產、工作流程和表單資料模型(FDM)直接整合。
-* 原始版JS/CSS中自訂元件的無縫交接給開發人員。
-* 彈性的提交目標：使用&#x200B;**Forms提交服務(FSS)**&#x200B;開始簡單作業，或隨著您的需求成長切換至&#x200B;**AEM發佈提交動作**。
+* 即時的所見即所得編輯和裝置預覽。
+* 進階規則和驗證 UI—無需程式碼。
+* 與 AEM 資產、工作流程及表單資料模型 (FDM) 直接整合。
+* 將普通 JS/CSS 中的自訂元件順利移交給開發人員。
+* 彈性提交目標：從簡單的 **表單提交服務 (FSS)** 開始，或隨著需求增加切換至 **AEM Publish 提交動作**。
 
-> **建議**：除非您的團隊是100%以檔案為中心且表單非常基本，否則請使用通用編輯器開始每個新表單專案。
-
-
-### 檔案式製作（檔案/工作表）
-
-檔案式製作最適合使用熟悉的工具(例如Microsoft Word、Google Docs或Google Sheets)來建立簡單、低複雜度的表單。 此方法適用於需要快速且簡單方式建立表單的內容團隊。
-
-* 定義表格（檔案）內的表單欄位或列數（頁面）。
-* 支援基本欄位驗證和Google reCAPTCHA的垃圾郵件保護。
-* 表單提交僅透過Forms提交服務處理。
-* 即時發佈 — 在來原始檔中所做的任何變更都會立即反映在網站上，而無需部署管道。
+> **建議**：使用通用編輯器開啟每個新表單專案，除非您的團隊完全以文件為中心且表單設計非常樸素。
 
 
-### 將Forms內嵌於檔案製作(DA)
+### 文件型製作 (文件/試算表)
 
-檔案製作(DA)是專為建立結構化頁面內容而設計，不支援原生表單建立。 若要將表單新增至DA編寫的頁面，請執行下列步驟：
+使用如 Microsoft Word、Google Docs 或 Google Sheets 等熟悉的工具來建立簡單、低複雜度的表單者，最適合使用文件型製作。此方法非常適合需要用快速、直接的方式建置表單的內容團隊。
 
-1. 使用&#x200B;**通用編輯器** （建議使用）或檔案式撰寫來建立表單。
-2. 發佈表單以產生唯一URL （例如，`/forms/contact-us`）。
-3. 在您的DA頁面中，插入&#x200B;**內嵌表單**&#x200B;區塊，並指定已發佈表單的URL。
+* 使用表格 (文件) 或列 (試算表) 來定義表單欄位。
+* 支援基本欄位驗證和 Google reCAPTCHA，以提供垃圾資訊防護。
+* 表單提交由表單提交服務專門處理。
+* 即時發佈—在來源文件中所做的任何變更，不需要部署管道即會立即反映在網站上。
+
+
+### 在文件製作 (DA) 中嵌入表單
+
+文件製作 (DA) 旨在建立結構化頁面內容，並不支援原生的表單建立功能。若要將表單新增至以 DA 製作的頁面，請依照下列步驟進行：
+
+1. 使用&#x200B;**通用編輯器** (建議) 或文件型製作建立表單。
+2. 發佈表單以產生唯一的 URL (例如 `/forms/contact-us`)。
+3. 在您的 DA 頁面中，插入&#x200B;**嵌入表單**&#x200B;區塊並指定已發佈表單的 URL。
 
 <!-- 
 ## Feature Comparison
@@ -86,10 +86,10 @@ Universal Editor是行銷人員和設計人員適用的視覺化拖放式撰寫�
 
 ## 後續步驟
 
-1. **從通用編輯器開始：**&#x200B;請參閱[通用編輯器快速入門手冊](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)以開始編寫表單。
-2. **設定表單提交：**&#x200B;選取並設定您偏好的提交方法。 如需設定指示，請參閱[Forms提交服務](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)或AEM發佈提交動作。
-3. **套用最佳實務：**&#x200B;檢閱[表單設計最佳實務](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)，以確保協助工具與效能。
-4. **使用檔案式製作：**&#x200B;若要使用Microsoft Excel或Google工作表建立表單，請遵循[檔案式製作教學課程](/help/edge/docs/forms/tutorial.md)。
-5. **在檔案製作中內嵌Forms：**&#x200B;如果您在檔案製作中建置頁面，請參閱[DA教學課程](https://www.aem.live/developer/da-tutorial)以取得內嵌已發佈表單的說明。
+1. **從通用編輯器開始使用：**&#x200B;請參閱[通用編輯器快速入門指南](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)來開始製作表單。
+2. **設定表單提交：**&#x200B;選取並設定您偏好的提交方法。請參閱[表單提交服務](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)或 AEM Publish 提交動作，以取得設定說明。
+3. **套用最佳做法：**&#x200B;審閱[表單設計最佳做法](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)，以確保無障礙功能和效能。
+4. **使用文件型製作：**&#x200B;若要使用 Microsoft Excel 或 Google Sheets 建立表單，請依照[文件型製作教學課程](/help/edge/docs/forms/tutorial.md)進行。
+5. **在文件製作中嵌入表單：** 如果您正在文件製作中建置頁面，請查閱 [DA 教學課程](https://www.aem.live/developer/da-tutorial)以了解有關嵌入已發佈表單的說明。
 
-> **您現在已準備好使用AEM Edge Delivery Services建立您的第一個高效能表單。**
+> **現在，您已準備好使用 AEM Edge Delivery Services 建立第一個高效能表單。**

@@ -5,16 +5,16 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
 source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
-workflow-type: tm+mt
-source-wordcount: '1248'
-ht-degree: 99%
+workflow-type: ht
+source-wordcount: '1247'
+ht-degree: 100%
 
 ---
 
 
 # WYSIWYG 製作的回應式模式
 
-<span class="preview">這是透過我們的<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-hant#new-features">發行前通道</a>提供的發行前功能。</span>
+<span class="preview">這是一項預先發佈功能，可透過我們的<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">預先發佈管道</a>取得。</span>
 
 ## 回應式表單簡介
 

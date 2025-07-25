@@ -5,16 +5,16 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
 source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2216'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
 # WYSIWYG 製作中的規則編輯器簡介
 
-<span class="preview">這是透過我們的<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-hant#new-features">發行前通道</a>提供的發行前功能。</span>
+<span class="preview">這是一項預先發佈功能，可透過我們的<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">預先發佈管道</a>取得。</span>
 
 
 您可以使用規則編輯器來建立規則，藉此新增動態表單行為。這些規則會顯示條件式欄位、根據使用者輸入自動進行計算，並改善整體使用者體驗。規則編輯器將表格填寫流程簡化，有助於確保準確性和效率。
@@ -188,7 +188,7 @@ ht-degree: 97%
 
 若要了解如何在視覺化規則編輯器中編寫規則，我們以簡單的稅額計算表單為例：
 
-![規則編輯器介面的熒幕擷圖，顯示建立條件式規則，以及表單欄位可見性的When-Then邏輯](/help/edge/docs/forms/assets/rule-editor-1.png)
+![規則編輯器介面的螢幕擷圖顯示使用 When-Then 邏輯建立條件式規則以實現表單欄位可見度](/help/edge/docs/forms/assets/rule-editor-1.png)
 
 在上述表單中，使用者輸入薪資總額。根據此輸入，顯示條件式欄位並計算應納稅額。
 
@@ -223,7 +223,7 @@ ht-degree: 97%
    * 提交 (提交按鈕)
 1. 透過開啟其 `Properties`，隱藏 `Additional Deduction` 表單欄位。
 
-   ![稅捐計算表單的熒幕擷圖，其中包含總薪資、婚姻狀況和受撫養子女的輸入欄位，在套用規則之前先展示表單結構](/help/edge/docs/forms/assets/rule-editor2.png)
+   ![稅額計算表單的螢幕擷圖顯示薪資總額、婚姻狀況及受扶養子女的輸入欄位，顯示套用規則前的表單結構](/help/edge/docs/forms/assets/rule-editor2.png)
 
 ### &#x200B;2. 新增表單欄位的條件式規則
 
@@ -277,7 +277,6 @@ ht-degree: 97%
    * 從「**[!UICONTROL 選取運算子]**」欄位選取「**[!UICONTROL 減]**」。
 
    * 從「表單物件」索引標籤選取或拖放「**[!UICONTROL 其他扣除額]**」欄位到另一個「**[!UICONTROL 放置物件或選取此處]**」欄位。
-
      ![規則編輯器範例 15](/help/edge/docs/forms/assets/rule-editor18.png)
 
 1. 選取「**[!UICONTROL 完成]**」以儲存此規則。
@@ -295,7 +294,6 @@ ht-degree: 97%
    * 從「**[!UICONTROL 選取運算子]**」欄位選取「**[!UICONTROL 乘以]**」。
 
    * 從「**[!UICONTROL 選取選項]**」欄位選取「**數字**」，並在「**[!UICONTROL 輸入數字]**」欄位中輸入值 `10`。
-
      ![規則編輯器範例 18](/help/edge/docs/forms/assets/rule-editor21.png)
 1. 接下來，選取運算式欄位周圍醒目標示的區域，並選取「**[!UICONTROL 擴充運算式]**」。
    ![規則編輯器範例 19](/help/edge/docs/forms/assets/rule-editor22.png)
@@ -361,7 +359,6 @@ function days(endDate, startDate) {
 // eslint-disable-next-line import/prefer-default-export
 export { getFullName, days };
 ```
-
 ![新增自訂函數](/help/edge/docs/forms/assets/create-custom-function.png)
 
 ### 在規則編輯器中使用自訂函數

@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: User
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
 source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1687'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -79,14 +79,13 @@ ht-degree: 95%
 
    1. 設定「**名稱**」和「**標題**」。
    1. 指定 **GitHub URL**。例如，若您的 GitHub 存放庫名稱為 `edsforms`、位於帳戶 `wkndforms` 之下，則 URL 為：
-
       `https://github.com/wkndforms/edsforms`
 
    ![建立表單精靈](/help/edge/assets/create-form-wizard.png)
 
    在按一下「**[!UICONTROL 建立]**」時，通用編輯器中便會開啟表單供您編寫。
 
-   ![Universal Editor的熒幕擷圖，顯示使用左側的元件浮動視窗、中央的表單畫布，以及右側的屬性面板所編寫的表單](/help/edge/assets/author-form.png)
+   ![通用編輯器的螢幕擷圖顯示正在製作表單，其中元件面板位在左側，表單版面居中，而屬性面板則在右側](/help/edge/assets/author-form.png)
 1. 按一下「**[!UICONTROL 建立]**」以建立表單。現在，您可以[使用通用編輯器編寫表單](#author-the-form)。
 
 >[!TAB 以核心元件為基礎的範本]
@@ -131,12 +130,12 @@ ht-degree: 95%
 
    ![內容樹](/help/edge/assets/content-tree.png)
 
-1. 按一下「**[!UICONTROL 新增]**」圖示，然後從&#x200B;**自適應表單元件**&#x200B;清單新增所需元件。
+1. 按一下「**[!UICONTROL 新增]**」圖示，然後從&#x200B;**自適應表單元件**清單新增所需元件。
    ![新增元件](/help/edge/assets/add-component.png)
 
    下方的螢幕擷圖顯示在通用編輯器中編寫的 `Registration Form`：
 
-   ![在通用編輯器中完成的連絡人表單熒幕擷圖，顯示名稱、電子郵件、電話和訊息的表單欄位，且樣式和版面配置正確](/help/edge/assets/contact-us.png)
+   ![通用編輯器中填寫完成的「聯絡我們」表單螢幕擷圖，顯示姓名、電子郵件、電話以及訊息的表單欄位，並具有適當的樣式和版面](/help/edge/assets/contact-us.png)
 
 >[!NOTE]
 >
@@ -220,11 +219,11 @@ ht-degree: 95%
 
 1. 按一下通用編輯器右上角的「**[!UICONTROL 發佈]**」按鈕來發佈表單。
 
-![通用編輯器的熒幕擷圖，顯示具有表單發佈選項和確認按鈕的發佈對話方塊](/help/edge/assets/publish-form.png)
+![通用編輯器的螢幕擷圖顯示發佈對話框，其中包含表單發佈選項和確認按鈕](/help/edge/assets/publish-form.png)
 
 >[!NOTE]
 >
-> 若要了解如何將表單發佈至 Edge Delivery Services，請參閱「[發佈及部署](/help/edge/docs/forms/universal-editor/publish-forms.md)」一文。
+> 請參閱「[發佈及部署](/help/edge/docs/forms/universal-editor/publish-forms.md)」一文，了解如何將表單發佈至 Edge Delivery Services。
 
 >[!TAB 使用自適應表單編輯器]
 

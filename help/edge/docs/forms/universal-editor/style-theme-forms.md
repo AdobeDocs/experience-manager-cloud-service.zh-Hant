@@ -5,15 +5,15 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
 source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1833'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 # 自訂表單的外觀
 
-<span class="preview">這是透過我們的<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-hant#new-features">發行前通道</a>提供的發行前功能。</span>
+<span class="preview">這是一項預先發佈功能，可透過我們的<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">預先發佈管道</a>取得。</span>
 
 
 表單對於網站上的使用者互動至關重要，可讓使用者輸入資料。您可以使用階層式樣式表 (CSS) 來設定表單欄位的樣式，增強表單的視覺呈現效果並提升使用者體驗。
@@ -54,7 +54,7 @@ ht-degree: 94%
 
 * **更新預設樣式**：您可以透過編輯 `/blocks/form/form.css file` 來修改表單的預設樣式。此檔案提供了表單的全面樣式，支援多步驟精靈表單。其著重在使用自訂 CSS 變數，讓自訂、維護和統一表單樣式的工作變得簡單。
 
-* **表單的 CSS 樣式**：為了確保正確套用樣式，請將表單特定的 CSS 包覆在 `main .form form` 選取器中。這可確保您的樣式僅以主要內容區域中的表單元素為目標，以避免與網站的其他部分衝突。
+* **表單的 CSS 樣式**：若要確保正確套用樣式，請將表單專屬的 CSS 包覆在 `main .form form` 選取器中。這樣可確保您的樣式只會以主內容區域內的表單元素為目標，避免與網站的其他部分發生衝突。
 
   範例：
 
@@ -93,10 +93,10 @@ ht-degree: 94%
 ```
 
 * 類別：div 元素有幾個目標為特定元素和樣式的類別。您需要 `{Type}-wrapper` 或 `field-{Name}` 類別以開發 CSS 選取器來設定表單欄位樣式：
-* {Type}：依欄位型別識別元件。 例如，text (text-wrapper)、number (number-wrapper)、date (date-wrapper)。
-* {Name}：依名稱識別元件。 欄位名稱只能包含英數字元，名稱中的多個連續破折號將替換為單個破折號 `(-)`，並且欄位名稱中的開頭和結尾破折號將被刪除。例如，first-name (field-first-name field-wrapper)。
-* {FieldId}：這是欄位的唯一識別碼，會自動產生。
-* {Required}：表示欄位是否為必要欄位的布林值。
+* {Type}：根據欄位類型識別元件。例如，text (text-wrapper)、number (number-wrapper)、date (date-wrapper)。
+* {Name}：根據名稱識別元件。欄位名稱只能包含英數字元，名稱中的多個連續破折號將替換為單個破折號 `(-)`，並且將移除欄位名稱中的開頭和結尾的破折號。例如，first-name (field-first-name field-wrapper)。
+* {FieldId}：自動產生的欄位唯一識別碼。
+* {Required}：一個布林值，用於表示此欄位是否為必要欄位。
 * 標籤：的 `label` 元素提供欄位的描述性文字，並使用 `for` 屬性將其與輸入元素相關聯。
 * 輸入：`input` 元素定義要輸入的資料類型。例如，text、number、email。
 * 描述 (選用)：`div` 與類別 `field-description` 會為使用者提供其他資訊或指示。
@@ -142,9 +142,8 @@ ht-degree: 94%
   }
   
 ```
-
 * `.{Type}-wrapper`：根據欄位類型以外部 `div` 元素為目標。例如，`.text-wrapper` 以所有文字欄位為目標。
-* `.field-{Name}`：根據特定欄位名稱進一步選取元素。例如，`.field-first-name` 以「名字」文字欄位為目標。雖然此選取器可用於定位欄位 — {Name}類別的元素，但請務必小心。 在這種特定情況下，這對於設定輸入欄位的樣式並不是很有用，因為其不僅以輸入本身為目標，而且還會以標籤和描述元素為目標。建議使用比較具體的選擇器，例如用於針對文字輸入欄位 (.text-wrapper input) 的選擇器。
+* `.field-{Name}`：根據特定欄位名稱進一步選取元素。例如，`.field-first-name` 以「名字」文字欄位為目標。雖然此選擇器可用來針對具有 field-{Name} 類別的元素，但請謹慎使用。在這種特定情況下，這對於設定輸入欄位的樣式並不是很有用，因為其不僅以輸入本身為目標，而且還會以標籤和描述元素為目標。建議使用比較具體的選擇器，例如用於針對文字輸入欄位 (.text-wrapper input) 的選擇器。
 
 **一般元件的 CSS 選取器範例**
 
@@ -220,7 +219,6 @@ main .form form .drop-down-wrapper .field-label {
   font-weight: bold;
 }
 ```
-
 * 以包裝函式為目標：第一個選取器 (`.drop-down-wrapper`) 以外部包裝函式元素為目標，確保樣式套用至整個下拉式選單元件。
 * Flexbox 版面：Flexbox 垂直排列標籤、下拉式選單和說明，以呈現簡潔的版面。
 * 標籤樣式設定：標籤以較粗字體和些微邊界呈現醒目效果。
@@ -230,7 +228,7 @@ main .form form .drop-down-wrapper .field-label {
 
 +++
 
-&#x200B;---
+---
 
 ### 單選按鈕群組
 
@@ -284,7 +282,6 @@ main .form form .drop-down-wrapper .field-label {
     padding: 10px;
   }
 ```
-
 此選擇器針對具有 radio-group-wrapper 類別的任何欄位集。這對於將通用樣式應用於整個單選按鈕群組非常有用。
 
 * 為單選按鈕標籤進行目標定位
@@ -465,9 +462,9 @@ main .form form .checkbox-group-wrapper input[type="checkbox"]:checked + label::
 ```
 
 * Fieldset 元素可用作含有 panel-wrapper 類別和其他類別的面板容器，以便根據面板名稱 (field-login) 設定樣式。
-* 圖例元素 (&lt;legend>) 可用作面板標題，其中包含文字「登入資訊」和 field-label 類別。data-visible=&quot;false&quot; 屬性可以與 JavaScript 一起用來控制標題的可見度。
-* 在 fieldset 內部、多個。{Type}個包裝函式元素（在此案例中為.text-wrapper和.password-wrapper）代表面板中的個別表單欄位。
-* 每個包裝函式都包含一個標籤、輸入欄位和說明，與前面的範例類似。
+* 圖例元素 (<legend>) 可用作面板標題，其中包含文字「登入資訊」和 field-label 類別。data-visible=&quot;false&quot; 屬性可以與 JavaScript 一起用來控制標題的可見度。
+* 在 fieldset 內部、多個。{Type}-wrapper 元素 (在本例中為 .text-wrapper 和 .password-wrapper) 代表面板中的個別表單欄位。
+* 每個包裝函式皆包含一個標籤、輸入欄位及說明，與先前的範例類似。
 
 +++
 
@@ -626,7 +623,6 @@ main .form form .panel-wrapper[data-repeatable="true"] .{Type}-wrapper {
   margin-bottom: 10px;
 }
 ```
-
 此選擇器可為可重複面板中所有欄位包裝函式進行樣式設定，讓欄位之間的間距維持一致。
 
 * 為特定欄位 (在面板內) 進行目標定位：

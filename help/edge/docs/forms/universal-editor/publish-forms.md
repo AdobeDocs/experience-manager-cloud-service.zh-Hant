@@ -5,15 +5,15 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
 source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '477'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # 將最適化表單發佈到 Edge Delivery Services
 
-<span class="preview">這是透過我們的<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-hant#new-features">發行前通道</a>提供的發行前功能。</span>
+<span class="preview">這是一項預先發佈功能，可透過我們的<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">預先發佈管道</a>取得。</span>
 
 
 當您的表單最終確定並可供使用時，您即可將其發佈，讓您的客戶可存取來進行資料的收集和提交。發佈可確保表單在 Edge Delivery 上可用，從而讓使用者能夠無縫地與其互動。此流程讓客戶可即時填寫並提交表單，確保高效的資料擷取並簡化處理流程。
@@ -57,7 +57,6 @@ ht-degree: 97%
 ```js
 export const submitBaseUrl = 'https://publish-p120-e12.adobeaemcloud.com';
 ```
-
 **對於本機開發：**
 
 ```js
@@ -80,7 +79,6 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 # Franklin Live
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.hlx\.live$)#" CORSTrusted=true
 ```
-
 對於本機開發，請參閱「[文件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter)」，以從&#x200B;**開發 UI 主機 URL** 啟用 CORS。
 
 ### 設定推薦者篩選器

@@ -5,9 +5,9 @@ feature: Edge Delivery Services, Form Data Model
 role: Admin, User
 exl-id: 9ce51223-57d0-47d8-8868-84b37d4e8e3e
 source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1271'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 94%
 
 * 如果您在通用編輯器介面中沒有看到「**資料來源**」圖示，或在右側屬性面板中沒有看到「**繫結參考**」屬性，請在 **Extension Manager** 中啟用&#x200B;**資料來源**&#x200B;擴充功能。
 
-  ![Universal Editor Extension Manager介面的熒幕擷圖顯示可用的擴充功能，包括可啟用表單整合的資料來源擴充功能](/help/edge/docs/forms/universal-editor/assets/extension-manager.png)
+  ![通用編輯器 Extension Manager 介面的螢幕擷圖顯示可用的擴充功能，包括為了表單整合而啟用的資料來源擴充功能](/help/edge/docs/forms/universal-editor/assets/extension-manager.png)
 
   請參閱[Extension Manager 功能重點介紹](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)文章，了解如何在通用編輯器中啟用和停用擴充功能。
 
@@ -77,9 +77,9 @@ ht-degree: 94%
 
    ![建立綱要型表單](/help/edge/docs/forms/universal-editor/assets/create-schema-based-form.png)
 
-   按一下「**[!UICONTROL 建立]**」，通用編輯器中便會開啟表單供您製作。
+   按一下「**[!UICONTROL 建立]**」後，便會在通用編輯器中開啟表單供您製作。
 
-   ![通用編輯器的熒幕擷圖顯示預先填入表單欄位之結構描述型表單，而內容瀏覽器顯示可用的資料來源元素](/help/edge/docs/forms/universal-editor/assets/schema-based-form-in-ue.png)
+   ![通用編輯器的螢幕擷圖顯示一份綱要型表單，內含預先填入的表單欄位，且內容瀏覽器顯示可用的資料來源元素](/help/edge/docs/forms/universal-editor/assets/schema-based-form-in-ue.png)
 
    使用取自相關聯資料來源的資料元素來建立此表單，且表單欄位已預先設定資料繫結。
 
@@ -131,7 +131,7 @@ ht-degree: 94%
 
    您也可以拖放這些元素以建置自己的最適化表單。按一下「**[!UICONTROL 新增]**」後，「**[!UICONTROL 資料來源]**」標籤中選取的元素將會新增至您的表單中，而且新增元素前面會顯示勾選符號。
 
-   ![熒幕擷圖顯示正在建置具有非結構描述表單的通用編輯器，方法是從Data Source索引標籤將資料元素拖放至表單結構中](/help/edge/docs/forms/universal-editor/assets/non-schema-form.png)
+   ![螢幕擷圖顯示通用編輯器正在將資料元素從「資料來源」索引標籤拖放到表單結構中，以建置非綱要型表單](/help/edge/docs/forms/universal-editor/assets/non-schema-form.png)
 
 您從「**繫結參考**」屬性中選取資料繫結，即可把資料繫結新增至表單欄位。例如，我們對表單中已存在的文字方塊「**ID**」新增資料繫結參考：
 若要從資料來源樹中選取表單欄位的資料繫結，請執行下列步驟：

@@ -7,9 +7,9 @@ user-guide-description: 了解 Experience Manager as a Cloud Service 的運作�
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
 source-git-commit: b61ffc522b6666a0f4b7fdb450d382b7231951cb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6522'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -909,34 +909,34 @@ ht-degree: 97%
       + [最適化表單關鍵字](/help/forms/adaptive-forms-keywords.md)
       + [預覽表單](/help/forms/previewing-forms.md)
    + HTML5 表單 {#html5-forms}
-      + [HTML5 forms簡介](/help/forms/introductionhtml5.md)
-      + [HTML5表單快速入門](/help/forms/get-started.md)
-      + [HTML5 Forms的架構](/help/forms/html5-forms-architecture.md)
-      + [HTML5 forms與PDF forms的功能差異](/help/forms/feature-differentiation-html5-forms-pdf-forms.md)
-      + [HTML5表單常見問題集(FAQ)](/help/forms/faqhtml5.md)
-      + [為HTML5表單設計表單範本](/help/forms/designing-form-template.md)
-      + [HTML5 Forms的最佳作法](/help/forms/best-practices-for-html5-forms.md)
-      + [設計無障礙的HTML5表單](/help/forms/design-accessible-html5-forms.md)
-      + [產生XDP表單的HTML5預覽](/help/forms/preview-xdp-forms-html.md)
-      + [HTML5表單的轉譯表單範本](/help/forms/rendering-form-template.md)
-      + [啟用HTML5表單的附件](/help/forms/enabling-attachments-html5-form.md)
-      + [HTML5 forms service proxy](/help/forms/service-proxy.md)
-      + [最佳化HTML5表單](/help/forms/optimize-html5-forms.md)
-      + [HTML5表單的熒幕助讀程式](/help/forms/screen-readers.md)
-      + [建立HTML5表單的自訂設定檔](/help/forms/custom-profile.md)
-      + [HTML5表單中的由右至左語言](/help/forms/right-left-languages.md)
-      + [針對HTML5表單整合Form Bridge與自訂入口網站](/help/forms/integrate-form-bridge-forms-portal.md)
-      + [在HTML5表單中建立自訂外觀](/help/forms/custom-widgets.md)
-      + [變更HTML5表單的預設樣式](/help/forms/changing-default-styles.md)
-      + [HTML5表單的Picture子句支援](/help/forms/picture-clause-support.md)
-      + [在HTML5表單中建立無障礙的複雜表格](/help/forms/accessible-tables.md)
-      + [建立HTML5表單的CSS樣式](/help/forms/css-styles.md)
-      + [為HTML5表單自訂錯誤訊息](/help/forms/customzing-errors-html5-forms.md)
-      + [將HTML5表單儲存為草稿](/help/forms/saving-html5-form-draft.md)
-      + [啟用HTML5表單的記錄](/help/forms/enable-logs.md)
-      + [偵錯HTML5 forms](/help/forms/debug.md)
-      + [HTML5表單的指令碼支援](/help/forms/scripting-support.md)
-      + [AEM Forms中的表單集](/help/forms/formset-in-aem-forms.md)
+      + [HTML5 表單簡介](/help/forms/introductionhtml5.md)
+      + [HTML5 表單快速入門](/help/forms/get-started.md)
+      + [HTML5 表單架構](/help/forms/html5-forms-architecture.md)
+      + [HTML5 表單和 PDF 表單之間的功能差異](/help/forms/feature-differentiation-html5-forms-pdf-forms.md)
+      + [HTML5 表單常見問題集 (FAQ)](/help/forms/faqhtml5.md)
+      + [設計 HTML5 表單的表單範本](/help/forms/designing-form-template.md)
+      + [HTML5 表單的最佳做法](/help/forms/best-practices-for-html5-forms.md)
+      + [設計無障礙的 HTML5 表單](/help/forms/design-accessible-html5-forms.md)
+      + [產生 XDP 表單的 HTML5 預覽](/help/forms/preview-xdp-forms-html.md)
+      + [轉譯 HTML5 表單的表單範本](/help/forms/rendering-form-template.md)
+      + [啟用 HTML5 表單附件](/help/forms/enabling-attachments-html5-form.md)
+      + [HTML5 表單服務代理](/help/forms/service-proxy.md)
+      + [最佳化 HTML5 表單](/help/forms/optimize-html5-forms.md)
+      + [HTML5 表單的螢幕閱讀器](/help/forms/screen-readers.md)
+      + [建立 HTML5 表單的自訂設定檔](/help/forms/custom-profile.md)
+      + [HTML5 表單從右至左的語言](/help/forms/right-left-languages.md)
+      + [將 Form Bridge 與自訂入口網站進行整合以供 HTML5 表單使用](/help/forms/integrate-form-bridge-forms-portal.md)
+      + [在 HTML5 表單中建立自訂外觀](/help/forms/custom-widgets.md)
+      + [變更 HTML5 表單的預設樣式](/help/forms/changing-default-styles.md)
+      + [HTML5 表單的圖片子句支援](/help/forms/picture-clause-support.md)
+      + [在 HTML5 表單中建立無障礙的複雜表單](/help/forms/accessible-tables.md)
+      + [建立 HTML5 表單的 CSS 樣式](/help/forms/css-styles.md)
+      + [自訂 HTML5 表單的錯誤訊息](/help/forms/customzing-errors-html5-forms.md)
+      + [將 HTML5 表單儲存為草稿](/help/forms/saving-html5-form-draft.md)
+      + [啟用 HTML5 表單的記錄](/help/forms/enable-logs.md)
+      + [HTML5 表單偵錯](/help/forms/debug.md)
+      + [HTML5 表單的指令碼支援](/help/forms/scripting-support.md)
+      + [AEM Forms 的表單集](/help/forms/formset-in-aem-forms.md)
    + 互動式通訊 {#interactive-communocation}
       + [互動式通訊簡介](/help/forms/introduction-to-interactive-communication.md)
       + [建立您的第一個互動式通訊](/help/forms/create-your-first-communication.md)
@@ -1230,8 +1230,8 @@ ht-degree: 97%
    + [AEM as a Cloud Service 中的生成式 AI](/help/generative-ai/generative-ai-in-aem.md)
    + [產生變化版本：與 AEM 編輯器整合](/help/generative-ai/generate-variations-integrated-editor.md)
    + [產生變化版本](/help/generative-ai/generate-variations.md)
-   + [AEM AI助理(Beta有限公司)](/help/implementing/cloud-manager/aem-ai-assistant.md)
-   + [AEM Forms AI助理(Forms Experience Builder) （率先採用）](/help/edge/docs/forms/forms-ai-assistant.md)
+   + [AEM AI 助理 (有限 Beta 版)](/help/implementing/cloud-manager/aem-ai-assistant.md)
+   + [AEM Forms AI 助理 (表單體驗建立工具) (早期採用者)](/help/edge/docs/forms/forms-ai-assistant.md)
    + [AEM Forms AI 助理 - 提示程式庫](/help/edge/docs/forms/ai-assistant-prompt-library.md)
 + 實施 {#implementing}
    + [實施 AEM as a Cloud Service 應用程式](/help/implementing/home.md)

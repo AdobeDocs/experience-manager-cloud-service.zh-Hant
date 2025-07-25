@@ -5,15 +5,15 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
 source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
-workflow-type: tm+mt
-source-wordcount: '1804'
-ht-degree: 95%
+workflow-type: ht
+source-wordcount: '1802'
+ht-degree: 100%
 
 ---
 
 # 在 WYSIWYG 製作中建立自訂元件
 
-<span class="preview">這是透過我們的<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-hant#new-features">發行前通道</a>提供的發行前功能。</span>
+<span class="preview">這是一項預先發佈功能，可透過我們的<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">預先發佈管道</a>取得。</span>
 
 
 Edge Delivery Services 表單可提供自訂，讓前端開發人員可以建置量身打造的表單元件。這些自訂元件可無縫整合到 WYSIWYG 製作體驗中，使表單作者能夠在表單編輯器中輕鬆地進行新增、設定和管理。使用自訂元件，作者即可提升功能，同時可確保平順、直覺的製作流程。
@@ -39,7 +39,7 @@ Edge Delivery Services 表單可提供自訂，讓前端開發人員可以建置
 
 讓我們以建立名為 **range** 的新自訂元件為例。該 range 元件會顯示為一條直線，並顯示最小值、最大值或選取值等值。
 
-![顯示具有最小值和最大值之滑桿以及選取值指示器的範圍元件視覺化表示法](/help/edge/docs/forms/universal-editor/assets/custom-component-range-style.png)
+![範圍元件的視覺化展現方式顯示具有最小值和最大值的滑桿，以及選定值指示器](/help/edge/docs/forms/universal-editor/assets/custom-component-range-style.png)
 
 在本文結束時，您會了解如何從頭開始建立自訂元件。
 
@@ -72,8 +72,8 @@ Edge Delivery Services 表單可提供自訂，讓前端開發人員可以建置
    * **id**：元件的唯一識別碼。
    * **fieldType**：表單可支援各種 **fieldType** 來擷取特定類型的使用者輸入。您可以找到[支援的 fieldType (在 Extra Byte 區段中)](#supported-fieldtypes)。
    * **resourceType**：每個自訂元件都有一個以其 fieldType 為基礎的相關聯資源類型。您可以找到[支援的 resourceType (在 Extra Byte 區段中)](#supported-resourcetype)。
-   * **jcr:title**：其與標題類似，但儲存在元件的結構內。
-   * **fd:viewType**：這表示自訂元件的名稱。這是元件的唯一識別碼。需要為元件建立自訂檢視。
+   * **jcr:title**：與標題類似，但儲存在元件的結構內。
+   * **fd:viewType**：表示自訂元件的名稱。這是元件的唯一識別碼。需要為元件建立自訂檢視。
 
 新增元件定義之後的 `_range.json` 檔案如下所示：
 
@@ -324,11 +324,11 @@ const OOTBComponentDecorators = ['file-input',
 
 完成上述步驟後，自訂元件隨即會出現在通用編輯器內的表單元件清單中。然後您即可將其拖曳到表單區段。
 
-![通用編輯器元件浮動視窗的熒幕擷圖，顯示可用來拖放至表單中的自訂範圍元件](/help/edge/docs/forms/universal-editor/assets/custom-component-range.png)
+![通用編輯器元件面板的螢幕擷圖顯示可拖放至表單中的自訂範圍元件](/help/edge/docs/forms/universal-editor/assets/custom-component-range.png)
 
 下方的螢幕擷圖顯示 `range` 元件的屬性已新增至元件模型中，並指定表單製作者可以設定的屬性：
 
-![通用編輯器屬性面板的熒幕擷圖顯示範圍元件的可設定設定，包括基本屬性、驗證規則和樣式選項](/help/edge/docs/forms/universal-editor/assets/range-properties.png)
+![通用編輯器屬性面板的螢幕擷圖顯示可設定的範圍元件設定，包括基本屬性、驗證規則及樣式選項](/help/edge/docs/forms/universal-editor/assets/range-properties.png)
 
 您現在可以透過新增樣式和功能來定義自訂元件的執行階段行為。
 
@@ -392,7 +392,6 @@ const OOTBComponentDecorators = ['file-input',
    float: right;
    }
    ```
-
    程式碼可協助您定義自訂元件的樣式和視覺外觀。
 
 1. 若要新增功能，請瀏覽至 `/blocks/form/components/range/range.js` 檔案，並新增下列程式碼：
@@ -457,7 +456,7 @@ const OOTBComponentDecorators = ['file-input',
    合併自訂樣式和功能後，range 元件的外觀和行為即會提升。更新後的設計會反映套用後的樣式，而新增的功能則可確保更動態和互動的使用者體驗。
 下列螢幕擷圖提供更新後 range 元件的圖解。
 
-![在通用編輯器中顯示具有值泡泡顯示和互動功能之樣式滑桿的最後一個作用中範圍元件](/help/edge/docs/forms/universal-editor/assets/custom-component-range-1.png)
+![最終實際應用的範圍元件，顯示在通用編輯器中具有數值氣泡圖形且有樣式設計的滑桿以及互動功能](/help/edge/docs/forms/universal-editor/assets/custom-component-range-1.png)
 
 ## 常見問題
 
