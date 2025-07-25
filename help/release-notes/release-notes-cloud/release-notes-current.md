@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 83aceb71ead66763b94ec523c9d9c76c4286c762
+source-git-commit: b4aec70b13575366c1d40ccf935481580a1fb6d8
 workflow-type: tm+mt
 source-wordcount: '1810'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 99%
 
 ## 發行日期 {#release-date}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 最新功能版本 (2025.6.0) 的發行日期為 2025 年 6 月 26 日。下一個功能版本(2025.7.0)計畫於2025年8月7日發行。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 最新功能版本 (2025.6.0) 的發行日期為 2025 年 6 月 26 日。下一個功能版本 (2025.7.0) 預計於 2025 年 8 月 7 日發行。
 
 ## 維護版本發行說明 {#maintenance}
 
@@ -40,7 +40,7 @@ ht-degree: 99%
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440931?quality=12&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -63,9 +63,11 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-* [自適應表單和表單片段的通用編輯器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)：通用編輯器現在支援建立自適應表單和可重複使用的表單片段。作者可以在簡化的所見即所得製作環境中視覺化地建置表單、設定提交動作，並新增 reCAPTCHA 驗證。此功能可加速表單建立、增強一致性，並改善對垃圾郵件和自動化濫用的防護。
+
 
 ### 搶鮮版功能
+
+* [自適應表單和表單片段的通用編輯器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)：通用編輯器現在支援建立自適應表單和可重複使用的表單片段。作者可以在簡化的所見即所得製作環境中視覺化地建置表單、設定提交動作，並新增 reCAPTCHA 驗證。此功能可加速表單建立、增強一致性，並改善對垃圾郵件和自動化濫用的防護。
 
 * [從自適應表單產生並同步 AFP 轉譯](/help/forms/document-generation-afp-api.md)：AFP 輸出同步 API 讓管理員和使用者能夠從自適應表單產生 AFP (進階功能展示) 輸出，並將此輸出與外部系統或儲存位置同步。AFP 是一種針對列印最佳化的高效能文件格式，常用於大型企業環境。
 
