@@ -5,9 +5,9 @@ feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: f3e31d1f17283086cd6fe9e73d67feac938d6567
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1209'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -39,9 +39,9 @@ AEM as a Cloud Service 中 Cloud Manager 2025.7.0 的發行日期為 2025 年 7 
 
   請參閱[授權儀表板](/help/implementing/cloud-manager/license-dashboard.md)。
 
-## Alpha/Beta計畫 {#private-beta-program}
+## Alpha/Beta 計劃 {#private-beta-program}
 
-參與Cloud Manager的Alpha版和Beta版計畫，在一般版本發行前取得即將推出的功能的獨家存取權。
+參與 Cloud Manager 的 Alpha 和 Beta 計劃，在即將推出的功能正式發佈之前，享有獨家搶先體驗的機會。
 
 目前提供下列機會：
 
@@ -123,7 +123,7 @@ Cloud Manager 現在支援新增名為&#x200B;**專用測試環境**&#x200B;的�
 
 現在，使用 Edge Delivery Services 建置的網站已支援設定管道，所以在 Cloud Service 環境以外也可以使用這項功能。您可以使用&#x200B;**設定管道**&#x200B;來管理設定，例如流量篩選規則和 Web 應用程式防火牆 (WAF) 設定等 (如適用)。請參閱[支援的設定](/help/operations/config-pipeline.md#configurations)。
 
-![Add Edge Delivery pipeline in Add Pipeline drop-down list](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *從&#x200B;**計劃概觀**&#x200B;頁面的&#x200B;**管道**&#x200B;卡片新增 Edge Delivery 管道。*
+![Add Edge Delivery pipeline in Add Pipeline drop-down list](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *從&#x200B;**計劃概觀**頁面的&#x200B;**管道**卡片新增 Edge Delivery 管道。*
 
 ![Add Edge Delivery pipeline dialog box](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *新增 Edge Delivery 管道對話框。*
 
