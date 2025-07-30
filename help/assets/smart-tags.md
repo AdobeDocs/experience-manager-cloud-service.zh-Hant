@@ -4,9 +4,9 @@ description: 使用可套用關聯式和描述性商業標籤的人工智慧服�
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: e253445d04889390ea9bf34df4ab14a9583d78aa
+source-git-commit: 460dd76a1d7d1d3f85a924a0aa88e8649ada32bc
 workflow-type: tm+mt
-source-wordcount: '2457'
+source-wordcount: '2696'
 ht-degree: 1%
 
 ---
@@ -88,7 +88,7 @@ The applied smart tags are sorted in descending order of [confidence score](#con
 
 ## DAM中未標籤的Assets {#smart-tag-existing-assets}
 
-DAM中的現有或舊版資產不會自動加上智慧標籤。 您必須手動[重新處理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=zh-Hant#adjusting-load) Assets，才能為其產生智慧標籤。 程式完成後，請導覽至資料夾內任何資產的[!UICONTROL 屬性]頁面。 自動新增的標籤會顯示在[!UICONTROL 基本]索引標籤的[!UICONTROL 智慧標籤]區段中。 這些套用的智慧標籤會以[信賴分數](#confidence-score)的遞減順序排序。
+DAM中的現有或舊版資產不會自動加上智慧標籤。 您必須手動[重新處理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en#adjusting-load) Assets，才能為其產生智慧標籤。 程式完成後，請導覽至資料夾內任何資產的[!UICONTROL 屬性]頁面。 自動新增的標籤會顯示在[!UICONTROL 基本]索引標籤的[!UICONTROL 智慧標籤]區段中。 這些套用的智慧標籤會以[信賴分數](#confidence-score)的遞減順序排序。
 
 <!--
 To smart tag assets, or folders (including subfolders) of assets that exist in assets repository, follow these steps:
@@ -200,7 +200,7 @@ In the [!DNL Adobe Experience Manager] project (`ui.config` since Archetype 24, 
 
 >[!IMPORTANT]
 >
->如果您在上傳時選擇不標籤資料夾，並想要在上傳後智慧標籤，請從資料夾[!UICONTROL 屬性]的[!UICONTROL 資產處理]索引標籤中&#x200B;**[!UICONTROL 啟用智慧標籤]**，並使用[[!UICONTROL 重新處理資產]選項](#smart-tag-existing-assets)將智慧標籤新增至資產。
+>如果您在上傳時選擇不標籤資料夾，並想要在上傳後智慧標籤，請從資料夾&#x200B;**[!UICONTROL 屬性]**&#x200B;的[!UICONTROL 資產處理]索引標籤中[!UICONTROL 啟用智慧標籤]，並使用[[!UICONTROL 重新處理資產]選項](#smart-tag-existing-assets)將智慧標籤新增至資產。
 
 <!--
 ## Benefits of Smart Tags to your assets {#benefits-of-smart-tags}
@@ -215,7 +215,7 @@ Following are the benefits of using Smart Tags in your AEM Assets:
 
 ## 使用AI產生的中繼資料加強內容探索 {#ai-smart-tags}
 
-AI不會依賴手動輸入，而是自動將描述性標籤指派給數位資產。 這些AI產生的標籤可增強中繼資料品質，讓資產更容易搜尋、分類和推薦。 此方法不僅可避免手動標籤，進而提升效率，還可確保大量數位內容的一致性和擴充性。 例如，如果資產是影像，AI可以識別其中的物件、場景、情感，或甚至品牌標誌，並產生相關標籤，例如「日落」、「海灘」、「假期」或「微笑」。 AI產生的內容可運用語意和辭彙搜尋技術來增強資產搜尋。 檢視更多[搜尋Assets](search-assets.md)。<!--If the asset is a document, AI reads and interprets the text to assign meaningful keywords that summarize its content—such as "climate change," "policy," or "renewable energy.-->
+AI不會依賴手動輸入，而是自動將描述性標籤指派給數位資產。 這些 AI 產生的標記可提升中繼資料的品質，讓資產搜尋、分類和推薦變得更簡單。此方法不僅可避免手動標籤，進而提升效率，還可確保大量數位內容的一致性和擴充性。 例如，如果資產是影像，AI可以識別其中的物件、場景、情感，或甚至品牌標誌，並產生相關標籤，例如「日落」、「海灘」、「假期」或「微笑」。 AI產生的內容可運用語意和辭彙搜尋技術來增強資產搜尋。 檢視更多[搜尋Assets](search-assets.md)。<!--If the asset is a document, AI reads and interprets the text to assign meaningful keywords that summarize its content—such as "climate change," "policy," or "renewable energy.-->
 
 ![增強型智慧標籤](assets/enhanced-smart-tags1.png)
 
@@ -227,9 +227,23 @@ AI不會依賴手動輸入，而是自動將描述性標籤指派給數位資產
 
 * 您必須簽署GenAI Rider合約。 如需詳細資訊，請聯絡您的Adobe代表。
 
-  >[!IMPORTANT]
-  >
-  > 只有當您尚未定義資產標題時，AI產生的資產標題才會顯示在資產卡片中。 不會覆寫您指定的資產標題。
+### 設定AI產生的標題 {#configure-ai-generated-titles}
+
+AEM可讓您在「資產瀏覽」頁面上的「卡片」檢視或「清單」檢視中，設定資產標題的顯示方式。 您可以選擇顯示您定義的資產標題、使用AI產生的標題，或僅在資產沒有現有標題時才使用AI產生的標題。
+
+若要設定AI產生的標題：
+
+1. 導覽至&#x200B;**[!UICONTROL 工具> Assets > Assets設定>智慧標籤增強設定]**。
+
+1. 選取下列其中一個選項：
+
+   * **顯示DC標題（預設）**：在資產屬性中可用的&#x200B;**[!UICONTROL 標題]**&#x200B;欄位中指定標題，以在卡片檢視或清單檢視中顯示。 如果未定義資產標題，AEM Assets會顯示檔案名稱。
+
+   * **顯示AI產生的標題**：顯示AI產生的標題，並忽略資產屬性中指定的標題。 如果AI產生的標題不適用於資產，AEM Assets會顯示其屬性中可用的預設資產標題。
+
+   * **只有在DC標題不存在時才顯示AI產生的標題**：只有在沒有為資產定義資產標題時，AEM Assets才會顯示AI產生的標題。
+
+     ![設定AI產生的標題](assets/configure-title-ai-generated.png)
 
 ### 使用AI產生的中繼資料 {#using-ai-generated-smart-tags}
 
@@ -251,6 +265,26 @@ AI不會依賴手動輸入，而是自動將描述性標籤指派給數位資產
    * **[!UICONTROL 產生的關鍵字]：**&#x200B;關鍵字是代表資產主要主題的目標辭彙，有助於標籤和內容篩選。
 
 1. [選擇性]如果您覺得遺漏任何相關標籤，可以新增其他標籤或建立自己的標籤。 若要這麼做，請在&#x200B;**[!UICONTROL 產生的關鍵字]**&#x200B;欄位中寫入您的標籤，然後按一下&#x200B;**[!UICONTROL 儲存]**。
+
+### 停用AI產生的中繼資料 {#disable-ai-generated-metadata}
+
+您可以在資料夾層級停用AI產生的中繼資料。 所有子資料夾都會繼承父資料夾的屬性。
+
+若要在資料夾層級停用AI產生的中繼資料：
+
+1. 導覽至&#x200B;**[!UICONTROL Adobe Experience Manager > Assets >檔案]**。
+
+1. 選取資料夾並按一下&#x200B;**[!UICONTROL 屬性]**。
+
+1. 在&#x200B;**[!UICONTROL 資產處理]**&#x200B;索引標籤中，導覽至&#x200B;**[!UICONTROL 影像的智慧標籤增強功能]**&#x200B;資料夾。 從下拉式清單中選取下列其中一個值：
+
+   * 繼承 — 資料夾繼承父資料夾的啟用或停用選項。
+
+   * 啟用 — 為選取的資料夾啟用AI產生的中繼資料。
+
+   * 停用 — 停用所選資料夾的AI產生中繼資料。
+
+     ![停用AI產生的中繼資料](assets/disable-ai-generated-metadata.png)
 
 ## 智慧標籤的相關限制和最佳實務 {#limitations-best-practices-smart-tags}
 

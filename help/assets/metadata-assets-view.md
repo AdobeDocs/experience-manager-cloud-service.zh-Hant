@@ -5,9 +5,9 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 460dd76a1d7d1d3f85a924a0aa88e8649ada32bc
 workflow-type: tm+mt
-source-wordcount: '2453'
+source-wordcount: '2430'
 ht-degree: 74%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 74%
 
 ![檢視資產的中繼資料](assets/metadata-view.png)
 
-*圖：若要檢視資產及其中繼資料，請從工具列按一下&#x200B;**[!UICONTROL 詳細資訊]**&#x200B;或按兩下資產。*
+*圖：若要檢視資產及其中繼資料，請從工具列按一下&#x200B;**[!UICONTROL 詳細資訊]**或按兩下資產。*
 
 標題、說明和上傳日期之類的基本中繼資料可在[!UICONTROL 基本]標籤中取得。[!UICONTROL 進階]標籤包含更進階的中繼資料，例如相機型號、鏡頭詳細資訊和地理標籤。[!UICONTROL 標記]標籤會根據影像內容包含自動套用的標記。
 
@@ -48,7 +48,7 @@ ht-degree: 74%
 
 ![檢視資產的智慧型標記](assets/metadata-view-tags.png)
 
-*圖：若要檢視智慧標記，請從工具列按一下&#x200B;**[!UICONTROL 詳細資訊]**&#x200B;或按兩下資產。*
+*圖：若要檢視智慧標記，請從工具列按一下&#x200B;**[!UICONTROL 詳細資訊]**或按兩下資產。*
 
 智慧型標記也包含信賴分數 (以百分比呈現)。這表示與套用標記相關的信賴度。您可以審核自動套用的智慧型標記。
 
@@ -129,10 +129,10 @@ MIME 子類型 > MIME 類型 > `default` 表單 > 現成可用的表單
 | 核取方塊 | 新增布林值。在儲存值後，將其儲存為 TRUE 或 FALSE。 |
 | 日期 | 新增日期元件。 |
 | 下拉式清單 | 新增下拉式清單。 |
-| 狀態 | 新增存放庫狀態屬性 (對應到 repo:state) |
-| 資產狀態 | 新增預設的資產狀態屬性 (對應到 dam:assetStatus) |
-| 標記 | 從分類法管理中儲存的值新增標記 (對應到 xcm:tags)。 |
-| 關鍵字 | 新增自由格式關鍵字 (對應到 dc:subject)。 |
+| 狀態 | 新增存放庫狀態屬性（對應至存放庫:state） |
+| 資產狀態 | 新增預設資產狀態屬性（對應至dam:assetStatus） |
+| 標記 | 從儲存在Taxonomy Management中的值（對應至xcm:tags）新增標籤。 |
+| 關鍵字 | 新增任意格式關鍵字（對應至dc:subject）。 |
 | 智慧標記 | 透過自動新增中繼資料標記增強搜尋功能。 |
 
 ### 將中繼資料表單指派至資料夾 {#assign-metadata-form-folder}
@@ -227,9 +227,6 @@ AI不會依賴手動輸入，而是自動將描述性標籤指派給數位資產
 
 * 您必須簽署GenAI Rider合約。 如需詳細資訊，請聯絡您的Adobe代表。
 
-  >[!IMPORTANT]
-  >
-  > 只有當您尚未定義資產標題時，AI產生的資產標題才會顯示在資產卡片中。 不會覆寫您指定的資產標題。
 
 ### 使用AI產生的中繼資料 {#using-ai-generated-smart-tags}
 
@@ -252,15 +249,17 @@ AI不會依賴手動輸入，而是自動將描述性標籤指派給數位資產
 
 1. [選擇性]如果您覺得遺漏任何相關標籤，可以新增其他標籤或建立自己的標籤。 若要這麼做，請在&#x200B;**[!UICONTROL 產生的關鍵字]**&#x200B;欄位中寫入您的標籤，然後按一下&#x200B;**[!UICONTROL 儲存]**。
 
+如需有關如何停用AI產生的中繼資料的資訊，請參閱[停用AI產生的中繼資料](/help/assets/smart-tags.md#disable-ai-generated-metadata)。
+
 ## 後續步驟 {#next-steps}
 
-* [觀看在Assets檢視中管理中繼資料表單的相關影片](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html?lang=zh-Hant)
+* [觀看在Assets檢視中管理中繼資料表單的相關影片](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html)
 
 * 使用資產檢視使用者介面所提供的[!UICONTROL 意見回饋]選項提供產品意見回饋
 
 * 若要提供文件意見回饋，請使用右側邊欄提供的[!UICONTROL 編輯此頁面]![來編輯頁面](assets/do-not-localize/edit-page.png)或[!UICONTROL 記錄問題]![來建立 GitHub 問題](assets/do-not-localize/github-issue.png)
 
-* 聯絡[客戶服務](https://experienceleague.adobe.com/zh-hant?support-solution=General#support)
+* 聯絡[客戶服務](https://experienceleague.adobe.com/?support-solution=General#support)
 
 <!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
 To reuse an existing form to create a form, do one of these:
