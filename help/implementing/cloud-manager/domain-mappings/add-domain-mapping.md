@@ -5,15 +5,15 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: bf519f03b9be56c46c1ca04420169eaf221478cc
+source-git-commit: 829881a91a6f1c9a020c04ec581ce010b07bae01
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '543'
 ht-degree: 8%
 
 ---
 
 
-# 新增網域對應 {#add-domain-mapping}
+# 關於新增網域對應 {#add-domain-mapping}
 
 若要將網域與計畫內Adobe管理的CDN上的SSL憑證連結，您必須新增CDN （內容傳遞網路）設定。
 

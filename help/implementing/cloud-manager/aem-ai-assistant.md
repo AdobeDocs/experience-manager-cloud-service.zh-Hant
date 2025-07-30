@@ -1,29 +1,48 @@
 ---
-title: Adobe Experience Manager中的AI助理（私人測試版）
-description: 使用Adobe Experience Manager中的AI助理協助您尋找答案、疑難排解並探索Sites、Assets、Dynamic Media、Cloud Manager和Forms。
+title: Adobe Experience Manager (Beta)中的AI助理
+description: 使用AI助理協助您針對Adobe Experience Manager中可用的解決方案尋找答案和進行疑難排解。
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 hide: false
 hidefromtoc: true
 exl-id: 6cdf7f65-7112-420a-90c1-564f0ef8ceaf
-source-git-commit: 0afd74120380c9ae3d02db9fb684189c2f19648f
+source-git-commit: 577e15165057fcf6537b4b0b738a1f45e5feb097
 workflow-type: tm+mt
-source-wordcount: '1394'
-ht-degree: 0%
+source-wordcount: '1308'
+ht-degree: 1%
 
 ---
 
-# 關於Adobe Experience Manager中的AEM AI Assistant {#aem-home}
+# Adobe Experience Manager中的AI助理 {#aem-home}
 
-AEM (Adobe Experience Manager)中的AI助理提供對話式介面，旨在簡化為Adobe Experience Manager相關查詢尋找答案的程式。 它可協助您存取產品知識、疑難排解問題，並探索Experience League中可用的資訊。 在私人測試版計畫期間，AEM AI Assistant可支援Adobe Experience Manager as a Cloud Service，包括Sites、Assets、Dynamic Media、Cloud Manager和Forms。
+AEM (Adobe Experience Manager) AI Assistant提供對話式介面，旨在簡化為Adobe Experience Manager相關查詢尋找答案的程式。 它可協助您即時取得與AEM產品相關問題的解答（*可供所有使用者使用*），並自動建立支援票證（*可供支援管理員使用*）。
+
+在私人測試版期間，AEM AI Assistant支援AEM as a Cloud Service，包括下列解決方案：
+
+* Sites
+* Assets
+* Dynamic Media
+* Edge Delivery Services
+* Cloud Manager
+* Forms
+
+此視覺效果直接內嵌於AEM中，並可從AEM Experience Hub、Cloud Manager及作者UI存取。
 
 >[!IMPORTANT]
 >請確定您已檢閱並提交使用者合約，因此Adobe可以啟用AI Assistant功能，供您測試並參與私人測試版計畫。
 >
 >如有任何問題，請透過與Adobe ID相關聯的電子郵件地址傳送電子郵件至[Grp-AEMAIASSISTANT@adobe.com](mailto:Grp-AEMAIASSISTANT@adobe.com)。
 
-## 隱私權、安全性和治理
+## 範圍 {#scope}
+
+AEM AI Assistant目前的範圍著重於解決Adobe Experience Manager as a Cloud Service的產品知識問題。 此範圍包含關鍵領域的完整支援，例如Sites、Assets、Forms、Edge Delivery Services和Cloud Manager。
+
+* **介面**：適用於AEM Experience Hub、作者UI、Cloud Manager。
+* **功能**：產品知識以及疑難排解和指引的第一站、自動建立支援票證和查詢。
+* **Value**：節省時間、加速學習及創造價值的時間、減少手動建立支援票證的需求，並提高建立支援票證的效率。
+
+## 隱私權、安全性和治理{#privacy-security-governance}
 
 AEM AI Assistant的設計強調隱私、安全性和治理。
 
@@ -37,17 +56,22 @@ AEM AI Assistant的設計強調隱私、安全性和治理。
 <!-- See also [Security at Adobe whitepaper](). NEED ACTIVE LINK FROM ADRIAN NICOLAE TANASE. CURRENTLY 404. -->
 
 
-## 瞭解產品知識的AEM AI Assistant {#ai-prod-insights}
+## 瞭解產品知識和自動支援票證建立的AEM AI Assistant {#ai-prod-insights}
 
 產品知識包含從Adobe Experience League檔案衍生的概念和主題。 這些問題可以歸類為以下子群組：
 
-| 產品知識 | 範例 |
-| --- | --- |
+
+| 產品知識 | 可供所有使用者使用<br>範例 |
+| :--- | :--- |
 | 點式學習 | <ul><li>什麼是通用編輯器？</li><li>如何在Cloud Manager中建立程式？</li></ul> |
 | 開啟探索 | <ul><li>如何使用通用編輯器？</li><li>是否有辦法將內容從一個環境複製到另一個環境？</li></ul> |
 | 疑難排解 | <ul><li>為何無法存取通用編輯器？</li><li>我的管道為什麼會失敗？</li></ul> |
+| **支援票證建立** | **僅支援管理員&#x200B;**<br>**範例** |
+| 自動建立支援票證，擷取AI助理聊天記錄與內容 | <ul><li>為我建立支援票證。</li></ul> |
+| 擷取支援票證的狀態 | <ul><li>顯示我已開啟的所有支援票證。</li><li>顯示票證「E-----------」的狀態</li></ul> |
 
-AEM AI Assistant目前的範圍著重於解決Adobe Experience Manager as a Cloud Service的產品知識問題。 此範圍包含關鍵領域的完整支援，例如Sites、Assets、Forms和Cloud Manager。
+{style="table-layout:auto"}
+
 
 ## 如何製作有效的問題 {#ai-craft-questions}
 
@@ -56,7 +80,7 @@ AEM AI Assistant目前的範圍著重於解決Adobe Experience Manager as a Clou
 * 以簡潔明瞭的方式清楚說明您的任務或問題。
 * 請避免含糊不清的措辭或過於複雜的語法，以增進瞭解。
 * 加入您任務或問題的相關內容，因為此方法有助於AEM AI助理提供更精確且相關的答案。
-例如，在您的提示中，為您目前使用的AEM解決方案命名(Sites、Assets、Dynamic Media、Cloud Manager和Forms)會有所幫助。
+例如，在您的提示中，為您目前使用的AEM解決方案命名(Sites、Assets、Dynamic Media、Edge Delivery Services、Cloud Manager或Forms)會有所幫助。
 
 ### 不支援的問題範例 {#ai-unsupported-questions}
 
@@ -69,21 +93,22 @@ AEM AI Assistant目前的範圍著重於解決Adobe Experience Manager as a Clou
 
 ## 使用AEM AI助理 {#ai-use}
 
-### 透過Admin Console啟用AEM AI助理存取權
+<!-- UNHIDE AFTER BETA or at GA
+### Enable AEM AI Assistant access through Admin Console 
 
-若要使用AEM AI助理，您的組織必須選擇Admin Console層級的加入。 產品管理員會建立（或選擇）使用者群組，並授予其新的「AI助理」許可權。 新增到該群組的任何人都能立即在整個AEM中取得該助理的存取權。 如果目標是讓整個公司都可使用，管理員只需將所有使用者指派給該群組即可。
+To use the AEM AI Assistant, your organization must opt in at the Admin Console level. A product administrator creates (or chooses) a user group and grants it the new "AI Assistant" permission. Anyone added to that group instantly gains access to the Assistant across AEM. If the goal is company-wide availability, the admin simply assigns all users to that group.
 
-Admin Console中的![AEM AI助理](/help/implementing/cloud-manager/assets/ai-assistant-admin-console.png)
+![AEM AI Assistant in the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console.png)
 
-從員工的角度來看，程式簡單明瞭：識別組織中Adobe Experience Manager的產品管理員，並請求將其新增至啟用AI的使用者群組。 一旦您出現在群組中，「助理員」圖示就會在您下次登入時自動顯示。
+From an employee's perspective, the process is straightforward: identify the product administrator for Adobe Experience Manager in your organization and request to be added to the AI-enabled user group. Once you appear in that group, the Assistant icon shows up automatically the next time you sign in.
 
-管理員應牢記正常的Cloud Manager控管。 您必須在Admin Console中擁有產品管理員許可權，才能建立設定檔、管理使用者群組或編輯許可權。 如果使用者還需要助理的內建&#x200B;**建立支援票證**&#x200B;功能，請將標準&#x200B;**支援管理員**&#x200B;角色(標準Admin Console角色)新增至相同的個人或群組。
+Administrators should keep normal Cloud Manager governance in mind. Hold product administrator rights in the Admin Console to create profiles, manage user groups, or edit permissions. If users also need the Assistant's built-in **Create Support Ticket** feature, add the standard **Support Admin** role (standard Admin Console role) to the same individuals or group.
 
-![在Admin Console的AEM AI Assistant中建立技術支援票證](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
+![Technical support ticket creation in the AEM AI Assistant of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
 
-如需在AEM as a Cloud Service中設定使用者和群組的引導式逐步解說，請參閱[設定AEM as a Cloud Service存取權](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/accessing/overview)。
+For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview). 
 
-另請參閱[自訂許可權](/help/implementing/cloud-manager/custom-permissions.md)。
+See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md). -->
 
 
 ### 開始或重設交談
@@ -95,7 +120,7 @@ Admin Console中的![AEM AI助理](/help/implementing/cloud-manager/assets/ai-as
 **若要啟動或重設交談：**
 
 1. 在AEM AI助理上，按一下![更多圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
-1. 若要通知AEM AI助理有關新主題或主題變更，請按一下[開始新交談] **&#x200B;**。
+1. 若要通知AEM AI助理有關新主題或主題變更，請按一下[開始新交談] ****。
 
 ### 使用可發現性
 
