@@ -5,10 +5,10 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: c2229d040c8df7c9089d141d57ca59ff2f4ce8a7
+source-git-commit: bf519f03b9be56c46c1ca04420169eaf221478cc
 workflow-type: tm+mt
-source-wordcount: '453'
-ht-degree: 9%
+source-wordcount: '542'
+ht-degree: 8%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 9%
 
    ![設定CDN對話方塊](/help/implementing/cloud-manager/assets/configure-cdn-dialog.png)
 
-   | 來源 | 描述 |
+   | 來源 | 說明 |
    | --- | --- |
    | Sites | 選取Edge Delivery網站。 |
    | 環境 | 選取您要在AEM設定中鎖定的特定Cloud Service環境。<br>在&#x200B;**層**&#x200B;下拉式清單中，選取下列其中一項：<br>·選取&#x200B;**發佈**，將內容傳送至使用者的即時生產環境作為目標。<br>·針對您要在變更上線前測試的測試或非生產環境，選取&#x200B;**預覽**。 |
@@ -53,3 +53,22 @@ ht-degree: 9%
    | 其他 CDN 提供者 | 如果您使用自己的CDN提供者，而不是您可用的Adobe管理的CDN，請選取此選項。<br>在&#x200B;**設定詳細資料**&#x200B;下，在&#x200B;**網域**&#x200B;下拉式清單中，選取您要使用的網域名稱。<br>下拉式清單中沒有已驗證的網域嗎？ 請參閱[新增自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。 |
 
 1. 按一下「**儲存**」。
+
+   Adobe建議您測試網域對應。
+
+## 測試網域對應 {#test-domain-mapping}
+
+您可以確認Adobe管理的CDN上有新的網域對應正在運作，而不需要等候公用DNS傳輸。
+
+執行覆寫DNS解析並直接指向CDN邊緣的&#x200B;**curl**&#x200B;命令：
+
+```bash
+curl -svo /dev/null https://www.example.com \
+--resolve www.example.com:443:151.101.3.10
+```
+
+* 將&#x200B;**`www.example.com`**&#x200B;取代為您的網域。
+* 以Cloud Manager中顯示的Edge IP位址取代&#x200B;**151.101.3.10**&#x200B;以取得此對應。
+
+`--resolve`旗標會強制要求傳送至指定的IP，而且只有在您網域的憑證和路由正確安裝之後，才會傳回成功。
+
