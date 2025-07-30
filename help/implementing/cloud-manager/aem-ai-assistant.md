@@ -120,7 +120,7 @@ See also [Custom Permissions](/help/implementing/cloud-manager/custom-permission
 **若要啟動或重設交談：**
 
 1. 在AEM AI助理上，按一下![更多圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
-1. 若要通知AEM AI助理有關新主題或主題變更，請按一下[開始新交談] ****。
+1. 若要通知AEM AI助理有關新主題或主題變更，請按一下[開始新交談] **&#x200B;**。
 
 ### 使用可發現性
 
