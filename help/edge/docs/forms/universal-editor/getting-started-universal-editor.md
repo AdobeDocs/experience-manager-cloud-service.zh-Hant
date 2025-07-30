@@ -69,7 +69,8 @@ AEM Forms 範本可協助您很快開始使用預先設定最適化表單區塊�
 
       ![開啟 fstab.yaml 檔案](/help/edge/docs/forms/assets/open-fstab.png)
 
-   1. 將專案的掛接點新增至&#x200B;**fstab.yaml**檔案。 新增AEM as a Cloud Service編寫執行個體的URL。
+   1. 將專案的掛接點新增至&#x200B;**fstab.yaml**&#x200B;檔案。 新增AEM as a Cloud Service編寫執行個體的URL。
+
       `https://<aem-author>/bin/franklin.delivery/<owner>/<repository>/main`
 
       ![編輯 fstab.yaml 檔案](/help/edge/docs/forms/assets/edit-fstab-file.png)
@@ -342,7 +343,7 @@ AEM Forms 範本可協助您很快開始使用預先設定最適化表單區塊�
        npm install -g @adobe/aem-cli
    ```
 
-1. **原地複製您的 GitHub 專案**：使用下列命令從 GitHub 原地複製您的 AEM 專案存放庫，取代為 <owner> 存放庫所有者和 <repo> 存放庫名稱：
+1. **原地複製您的 GitHub 專案**：使用下列命令從 GitHub 原地複製您的 AEM 專案存放庫，取代為 &lt;owner> 存放庫所有者和 &lt;repo> 存放庫名稱：
 
    ```
    git clone https://github.com/<owner>/<repo>
