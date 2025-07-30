@@ -4,10 +4,10 @@ description: 本教學課程可協助您啟動並執行新的 Adobe Experience M
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 95998daf04ae579ca11896953903852e6140c3a4
-workflow-type: ht
-source-wordcount: '1853'
-ht-degree: 100%
+source-git-commit: 0e7375adb146c370a189127838d736290d1860ad
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +29,6 @@ AEM Forms 會提供一個稱為「最適化表單區塊」的區塊，協助您�
 ![Github 存放庫工作流程](/help/edge/assets/repo-workflow.png){width=auto}
 
 此教學課程將指導您使用通用編輯器的所見即所得製作功能，在新的或現有的 Adobe Experience Manager Site 專案中，建立、預覽和發佈您自己的表單。
-
 
 ## 先決條件
 
@@ -66,16 +65,16 @@ AEM Forms 範本可協助您很快開始使用預先設定最適化表單區塊�
 1. 現在將您使用 AEM Forms 範本建立的 GitHub 存放庫連結至您的 AEM 專案製作環境。若要連接：
 
    1. 前往您先前使用 AEM Forms 範本建立的 GitHub 存放庫。
-   1. 開啟 **fstab.yaml** 檔案進行編輯。
+   1. 在根資料夾中新增&#x200B;**fstab.yaml**&#x200B;檔案。
 
       ![開啟 fstab.yaml 檔案](/help/edge/docs/forms/assets/open-fstab.png)
 
-   1. 編輯 **fstab.yaml** 檔案，以更新專案的掛載點。將此 URL 取代為 AEM as a Cloud Service 製作執行個體的 URL。
+   1. 將專案的掛接點新增至&#x200B;**fstab.yaml**檔案。 新增AEM as a Cloud Service編寫執行個體的URL。
       `https://<aem-author>/bin/franklin.delivery/<owner>/<repository>/main`
 
       ![編輯 fstab.yaml 檔案](/help/edge/docs/forms/assets/edit-fstab-file.png)
 
-   1. 您已更新參考資料且一切看起來沒問題，即可認可更新的 **fstab.yaml** 檔案。
+   1. 在新增參考且一切看起來正常之後，提交&#x200B;**fstab.yaml**&#x200B;檔案。
 
       ![認可變更](/help/edge/docs/forms/assets/commit-fstab-changes.png)
 

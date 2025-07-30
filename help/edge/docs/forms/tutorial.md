@@ -4,10 +4,10 @@ description: 本教學課程可協助您啟動並執行新的 Adobe Experience M
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 67416999d068af6350748d610e7c1c7b1d991bc4
-workflow-type: ht
-source-wordcount: '1922'
-ht-degree: 100%
+source-git-commit: b194a8fc4e7490cc322b0868a8348e80626df7eb
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -110,8 +110,8 @@ AEM Forms 範本可協助您很快開始使用預先設定最適化表單區塊�
 1. 現在您已經設定了內容資料夾，您應該可將資料夾連結到先前使用 AEM Forms 範本在 GitHub 建立的專案。 若要連接：
 
    1. 前往您先前使用 AEM Forms 範本建立的 GitHub 存放庫。
-   1. 開啟 `fstab.yaml` 進行編輯。
-   1. 將現有參照更換為您與 AEM 使用者共用的資料夾路徑 (forms@adobe.com)。
+   1. 在根資料夾中新增`fstab.yaml`檔案。
+   1. 將參照與路徑新增至您與AEM使用者共用的資料夾(forms@adobe.com)。
 
       ![Google Drive 上的範例內容](/help/edge/assets/replace-path-in-fstab-yaml-with-your-content-folder.png)
 
@@ -131,7 +131,7 @@ AEM Forms 範本可協助您很快開始使用預先設定最適化表單區塊�
       如需更多有關在 Microsoft SharePoint 中管理檔案的資訊，請參閱「[如何使用 Adobe SharePoint](https://www.aem.live/docs/setup-customer-sharepoint)」。
 
 
-   1. 您更新參照且一切看起來沒問題，就可提交更新的 `fsatb.yaml` 檔案。 如果您遇到任何建置問題，請參閱「[解決 GitHub 建置問題](#troubleshooting-github-build-issues)」。
+   1. 在新增參考且一切看起來良好後，提交`fsatb.yaml`檔案。 如果您遇到任何建置問題，請參閱「[解決 GitHub 建置問題](#troubleshooting-github-build-issues)」。
 
       ![提交更新的 fsatab.yaml 檔案](/help/edge/assets/commit-updated-fstab-yaml.png)
 
