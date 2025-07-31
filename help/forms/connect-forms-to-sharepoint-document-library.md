@@ -2,13 +2,13 @@
 Title: How to integrate Adaptive Form to a SharePoint Document Library?
 Description: This article explains how to send data from your Adaptive Form to a SharePoint  Document library when you submit the form.
 keywords: 如何連線SharePoint檔案庫取得最適化表單、提交至SharePoint、建立SharePoint檔案庫設定、在最適化表單中使用提交至SharePoint提交動作、AEM Forms資料模型SharePoint檔案庫、Forms資料模型SharePoint檔案庫、將Forms資料模型整合至SharePoint檔案庫
-feature: Adaptive Forms, Core Components
+feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 role: User, Developer
 exl-id: a00b4a93-2324-4c2a-824f-49146dc057b0
-source-git-commit: 1dddba99c5871d01bf51c335747363af1889738d
+source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
 workflow-type: tm+mt
-source-wordcount: '635'
-ht-degree: 33%
+source-wordcount: '964'
+ht-degree: 28%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 33%
 
      >[!NOTE]
      >
-     > 您也可以[在SharePoint的Graph API中使用`Sites.Selected`許可權範圍，以有限存取權](/help/forms/configure-sharepoint-site-limited-access.md)設定Microsoft網站。 `Sites.Selected`是Microsoft的Graph API中的許可權範圍，可讓您更精細且受限地存取SharePoint網站。
+     > 您也可以[在SharePoint的Graph API中使用](/help/forms/configure-sharepoint-site-limited-access.md)許可權範圍，以有限存取權`Sites.Selected`設定Microsoft網站。 `Sites.Selected`是Microsoft的Graph API中的許可權範圍，可讓您更精細且受限地存取SharePoint網站。
 
    * 使用 OAuth URL：`https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`。從 Microsoft® Azure 入口網站，以應用程式的 `tenant-id` 取代 `<tenant-id>`。
 
@@ -55,34 +55,77 @@ ht-degree: 33%
    >[!NOTE]
    >
    >* 依預設，`forms-ootb-storage-adaptive-forms-submission`存在於選取的SharePoint網站。
-   >* 按一下&#x200B;**建立資料夾**，將資料夾建立為`forms-ootb-storage-adaptive-forms-submission` (如果尚未存在於所選SharePoint網站的`Documents`資料庫中)。
+   >* 按一下`forms-ootb-storage-adaptive-forms-submission`建立資料夾`Documents`，將資料夾建立為&#x200B;**(如果尚未存在於所選SharePoint網站的**&#x200B;資料庫中)。
 
 現在，您可以使用此SharePoint Sites設定，在最適化表單中執行提交動作。
 
 ### 2.在最適化表單中使用SharePoint檔案庫設定
 
-您可以使用在最適化表單中建立的SharePoint檔案庫組態，將資料或產生的記錄檔案儲存在SharePoint資料夾中。 執行以下步驟，在最適化表單中使用SharePoint檔案庫儲存設定，如下所示：
+您可以使用在最適化表單中建立的SharePoint檔案庫組態，將資料或產生的記錄檔案儲存在SharePoint資料夾中。
 
-1. 建立[最適化表單](/help/forms/creating-adaptive-form-core-components.md)。
+>[!NOTE]
+>
+> * 為最適化表單選取相同的[!UICONTROL 設定容器]，您已在其中建立SharePoint檔案庫儲存空間。
+> * 如果沒有選取「[!UICONTROL 設定容器]」，「提交動作」屬性視窗中會顯示全域「[!UICONTROL 儲存空間設定]」資料夾。
 
-   >[!NOTE]
-   >
-   > * 為最適化表單選取相同的[!UICONTROL 設定容器]，您已在其中建立SharePoint檔案庫儲存空間。
-   > * 如果沒有選取「[!UICONTROL 設定容器]」，「提交動作」屬性視窗中會顯示全域「[!UICONTROL 儲存空間設定]」資料夾。
+>[!BEGINTABS]
 
-1. 選取「**提交動作**」做為「**[!UICONTROL 提交到 SharePoint]**」。
+>[!TAB 基礎元件]
+
+執行以下步驟，以根據基礎元件在最適化表單中使用SharePoint檔案庫儲存設定，如下所示：
+
+1. 開啟最適化表單以進行編輯，並導覽至最適化表單容器屬性的&#x200B;**[!UICONTROL 提交]**&#x200B;區段。
+1. 從&#x200B;**[!UICONTROL 提交動作]**&#x200B;下拉式清單中，選取&#x200B;**提交動作**&#x200B;作為&#x200B;**[!UICONTROL 提交至SharePoint]**。
+   ![Sharepoint GIF](/help/forms/assets/submit-to-sharepoint-fc.png){width=50%}
+1. 選取您要儲存資料的「**[!UICONTROL 儲存空間設定]**」。
+1. 按一下「**[!UICONTROL 儲存]**」以儲存「提交」設定。
+
+>[!NOTE]
+>
+> * 當您提交表單時，資料會儲存在指定的Microsoft® Sharepoint檔案庫儲存空間中。 儲存資料的資料夾結構是 `/folder_name/form_name/year/month/date/submission_id/data`。
+> * 附件也儲存在`/folder_name/form_name/year/month/date/submission_id/data`目錄中。 不過，如果您選取&#x200B;**以原始名稱儲存附件**，則附件會使用其原始檔案名稱儲存在資料夾中。
+
+>[!TAB 核心元件]
+
+執行以下步驟，根據核心元件在最適化表單中使用SharePoint檔案庫儲存設定，如下所示：
+
+1. 開啟內容瀏覽器，然後選取最適化表單的「**[!UICONTROL 指引容器]**」元件。
+1. 按一下「指引容器」屬性 ![指引屬性](/help/forms/assets/configure-icon.svg) 圖示。此時會開啟「最適化表單容器」對話框。
+1. 按一下「**[!UICONTROL 提交]**」標籤。
+1. 從&#x200B;**[!UICONTROL 提交動作]**&#x200B;下拉式清單中，選取&#x200B;**提交動作**&#x200B;作為&#x200B;**[!UICONTROL 提交至SharePoint]**。
    ![Sharepoint GIF](/help/forms/assets/sharedrive-video.gif)
 1. 選取您要儲存資料的「**[!UICONTROL 儲存空間設定]**」。
 1. 按一下「**[!UICONTROL 儲存]**」以儲存「提交」設定。
 
 >[!NOTE]
 >
-> 當您提交表單時，資料會儲存在指定的Microsoft® Sharepoint檔案庫儲存空間中。 儲存資料的資料夾結構是 `/folder_name/form_name/year/month/date/submission_id/data`。
+> * 當您提交表單時，資料會儲存在指定的Microsoft® Sharepoint檔案庫儲存空間中。 儲存資料的資料夾結構是 `/folder_name/form_name/year/month/date/submission_id/data`。
+> * 附件也儲存在`/folder_name/form_name/year/month/date/submission_id/data`目錄中。 不過，如果您選取&#x200B;**以原始名稱儲存附件**，則附件會使用其原始檔案名稱儲存在資料夾中。
+
+>[!TAB 通用編輯器]
+
+執行以下步驟，使用在Universal Editor中編寫的最適化表單中的SharePoint檔案庫儲存設定，如下所示：
+
+1. 開啟最適化表單進行編輯。
+1. 按一下編輯器上的&#x200B;**編輯表單屬性**擴充功能。
+**表單屬性**&#x200B;對話方塊就會顯示。
+
+   >[!NOTE]
+   >
+   > * 如果您在通用編輯器介面中看不到&#x200B;**編輯表單屬性**&#x200B;圖示，請在Extension Manager中啟用&#x200B;**編輯表單屬性**&#x200B;擴充功能。
+   > * 請參閱[Extension Manager功能焦點](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)文章，瞭解如何在通用編輯器中啟用或停用擴充功能。
+
+1. 按一下「**提交**」標籤，然後選取「**[!UICONTROL 提交至SharePoint]**」提交動作。
+   ![Sharepoint GIF](/help/forms/assets/submit-to-sharepoint-ue.png)
+1. 選取您要儲存資料的「**[!UICONTROL 儲存空間設定]**」。
+1. 按一下&#x200B;**[!UICONTROL 儲存並關閉]**&#x200B;以儲存送出設定。
 
 >[!NOTE]
 >
-> 附件也儲存在`/folder_name/form_name/year/month/date/submission_id/data`目錄中。 不過，如果您選取&#x200B;**以原始名稱儲存附件**，則附件會使用其原始檔案名稱儲存在資料夾中。
-> ![影像](/help/forms/assets/sp-doc-attachment-af2.png){height=50%，width=50%}
+> * 當您提交表單時，資料會儲存在指定的Microsoft® Sharepoint檔案庫儲存空間中。 儲存資料的資料夾結構是 `/folder_name/form_name/year/month/date/submission_id/data`。
+> * 附件也儲存在`/folder_name/form_name/year/month/date/submission_id/data`目錄中。 不過，如果您選取&#x200B;**以原始名稱儲存附件**，則附件會使用其原始檔案名稱儲存在資料夾中。
+
+>[!ENDTABS]
 
 ## 相關文章
 

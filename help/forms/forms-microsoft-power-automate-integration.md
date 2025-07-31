@@ -3,12 +3,12 @@ title: 如何將最適化表單與Microsoft&amp； reg； Power Automate整合�
 description: 整合最適化表單與Microsoft&amp； reg； Power Automate。
 exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
 keywords: 將AEM表單連線至power automate、Power automate automation AEM Forms、將power automate整合至Adaptive Forms、將資料從Adaptive Forms傳送至Power Automate
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components, Core Components, Edge Delivery Services
 role: Admin, User, Developer
-source-git-commit: 8d0814642fa0e5eb3f92a499202d0b79d90f91e3
+source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
 workflow-type: tm+mt
-source-wordcount: '1243'
-ht-degree: 10%
+source-wordcount: '1531'
+ht-degree: 11%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 10%
 
 最適化Forms編輯器提供&#x200B;**叫用Microsoft®Power Automate流程**&#x200B;提交動作，以將最適化表單資料、附件和記錄檔案傳送至Power Automate雲端流程。
 
-AEM as a Cloud Service提供多種立即可用的提交動作，用於處理表單提交。 您可以在[最適化表單提交動作](/help/forms/configure-submit-actions-core-components.md)文章中進一步瞭解這些選項。
+AEM as a Cloud Service提供多種立即可用的提交動作，用於處理表單提交。 您可以在[最適化表單提交動作](/help/forms/aem-forms-submit-action.md)文章中進一步瞭解這些選項。
 
 
 ## 優點
@@ -38,7 +38,7 @@ AEM as a Cloud Service提供多種立即可用的提交動作，用於處理表�
 以下為連線最適化表單與Microsoft® Power Automate的必要條件：
 
 * Microsoft® Power Automate Premium授權。
-* Microsoft® [具有`When an HTTP request is received`觸發程式的Power Automate流程](https://docs.microsoft.com/en-us/power-automate/create-flow-solution)以接受最適化表單提交資料。
+* Microsoft® [具有](https://docs.microsoft.com/en-us/power-automate/create-flow-solution)觸發程式的Power Automate流程`When an HTTP request is received`以接受最適化表單提交資料。
 * 具有[Forms作者](/help/forms/forms-groups-privileges-tasks.md)和[Forms管理員](/help/forms/forms-groups-privileges-tasks.md)許可權的Experience Manager使用者
 * 用來連線至Microsoft的帳戶®Power Automate是已設定為可從調適型表單接收資料的Power Automate流程的所有者
 
@@ -140,12 +140,17 @@ AEM as a Cloud Service提供多種立即可用的提交動作，用於處理表�
 
 在您[將您的Forms as a Cloud Service執行個體與Microsoft® Power Automate](#connect-forms-server-with-power-automate)連線後，執行以下動作來設定您的最適化表單，以在表單提交時將擷取的資料傳送到Microsoft®流程。
 
+>[!BEGINTABS]
+
+>[!TAB 基礎元件]
+
 1. 登入您的Author執行個體，選取您的Adaptive Form並按一下&#x200B;**[!UICONTROL 屬性]**。
 1. 在設定容器中，瀏覽並選取在[建立Microsoft® Power Automate Dataverse雲端設定](#microsoft-power-automate-dataverse-cloud-configuration)區段中建立的容器，並選取&#x200B;**[!UICONTROL 儲存並關閉]**。
 1. 開啟最適化表單以進行編輯，並導覽至最適化表單容器屬性的&#x200B;**[!UICONTROL 提交]**&#x200B;區段。
 1. 在屬性容器中，針對&#x200B;**[!UICONTROL 提交動作]**，選取&#x200B;**[!UICONTROL 叫用Power Automate流程]**&#x200B;選項，並選取&#x200B;**[!UICONTROL Power Automate流程]**。 選取所需的流程，並在提交時提交最適化Forms資料。
 
    ![設定提交動作](assets/submission.png)
+1. 按一下&#x200B;**[!UICONTROL 「完成」]**。
 
 >[!NOTE]
 >
@@ -210,6 +215,167 @@ AEM as a Cloud Service提供多種立即可用的提交動作，用於處理表�
             }
         }
 ```
+
+>[!TAB 核心元件]
+
+1. 登入您的Author執行個體，選取您的Adaptive Form並按一下&#x200B;**[!UICONTROL 屬性]**。
+1. 在設定容器中，瀏覽並選取在[建立Microsoft® Power Automate Dataverse雲端設定](#microsoft-power-automate-dataverse-cloud-configuration)區段中建立的容器，並選取&#x200B;**[!UICONTROL 儲存並關閉]**。
+1. 開啟內容瀏覽器，然後選取最適化表單的「**[!UICONTROL 指引容器]**」元件。
+1. 按一下「指引容器」屬性 ![指引屬性](/help/forms/assets/configure-icon.svg) 圖示。此時會開啟「最適化表單容器」對話框。
+1. 按一下「**[!UICONTROL 提交]**」標籤。
+1. 從[提交]動作下拉式清單中選取&#x200B;**[!UICONTROL 叫用Power Automate流程]**&#x200B;選項，然後選取&#x200B;**[!UICONTROL Power Automate流程]**。 選取所需的流程，並在提交時提交最適化Forms資料。
+
+   ![設定提交動作](/help/forms/assets/power-automate-cc.png)
+1. 按一下&#x200B;**[!UICONTROL 「完成」]**。
+
+>[!NOTE]
+>
+> 在提交最適化表單之前，請確定已將具有以下JSON結構描述的`When an HTTP Request is received`觸發器新增到您的Power Automate流程。
+
+```
+        {
+            "type": "object",
+            "properties": {
+                "attachments": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "filename": {
+                                "type": "string"
+                            },
+                            "data": {
+                                "type": "string"
+                            },
+                            "contentType": {
+                                "type": "string"
+                            },
+                            "size": {
+                                "type": "integer"
+                            }
+                        },
+                        "required": [
+                            "filename",
+                            "data",
+                            "contentType",
+                            "size"
+                        ]
+                    }
+                },
+                "templateId": {
+                    "type": "string"
+                },
+                "templateType": {
+                    "type": "string"
+                },
+                "data": {
+                    "type": "string"
+                },
+                "document": {
+                    "type": "object",
+                    "properties": {
+                        "filename": {
+                            "type": "string"
+                        },
+                        "data": {
+                            "type": "string"
+                        },
+                        "contentType": {
+                            "type": "string"
+                        },
+                        "size": {
+                            "type": "integer"
+                        }
+                    }
+                }
+            }
+        }
+```
+
+>[!TAB 通用編輯器]
+
+1. 登入您的Author例項，選取您的Adaptive Form。
+1. 在設定容器中，瀏覽並選取在[建立Microsoft® Power Automate Dataverse雲端設定](#microsoft-power-automate-dataverse-cloud-configuration)區段中建立的容器，並選取&#x200B;**[!UICONTROL 儲存並關閉]**。
+1. 開啟最適化表單進行編輯。
+1. 按一下編輯器上的&#x200B;**編輯表單屬性**擴充功能。
+**表單屬性**&#x200B;對話方塊就會顯示。
+
+   >[!NOTE]
+   >
+   > * 如果您在通用編輯器介面中看不到&#x200B;**編輯表單屬性**&#x200B;圖示，請在Extension Manager中啟用&#x200B;**編輯表單屬性**&#x200B;擴充功能。
+   > * 請參閱[Extension Manager功能焦點](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)文章，瞭解如何在通用編輯器中啟用或停用擴充功能。
+
+
+1. 按一下&#x200B;**提交**&#x200B;索引標籤，然後選取&#x200B;**[!UICONTROL 叫用Power Automate流程]**&#x200B;提交動作。 選取所需的流程，並在提交時提交最適化Forms資料。
+
+   ![設定提交動作](/help/forms/assets/power-automate-ue.png)
+1. 按一下&#x200B;**[!UICONTROL 儲存並關閉]**。
+
+>[!NOTE]
+>
+> 在提交最適化表單之前，請確定已將具有以下JSON結構描述的`When an HTTP Request is received`觸發器新增到您的Power Automate流程。
+
+```
+        {
+            "type": "object",
+            "properties": {
+                "attachments": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "filename": {
+                                "type": "string"
+                            },
+                            "data": {
+                                "type": "string"
+                            },
+                            "contentType": {
+                                "type": "string"
+                            },
+                            "size": {
+                                "type": "integer"
+                            }
+                        },
+                        "required": [
+                            "filename",
+                            "data",
+                            "contentType",
+                            "size"
+                        ]
+                    }
+                },
+                "templateId": {
+                    "type": "string"
+                },
+                "templateType": {
+                    "type": "string"
+                },
+                "data": {
+                    "type": "string"
+                },
+                "document": {
+                    "type": "object",
+                    "properties": {
+                        "filename": {
+                            "type": "string"
+                        },
+                        "data": {
+                            "type": "string"
+                        },
+                        "contentType": {
+                            "type": "string"
+                        },
+                        "size": {
+                            "type": "integer"
+                        }
+                    }
+                }
+            }
+        }
+```
+
+>[!ENDTABS]
 
 <!--
 ## See also

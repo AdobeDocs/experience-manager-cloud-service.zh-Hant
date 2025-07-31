@@ -2,16 +2,16 @@
 Title: How to send data to a SharePoint List storage on submission of an Adaptive Form?
 Description: Learn how to send data from your Adaptive Form to a SharePoint storage like a SharePoint list when you submit the form.
 keywords: 如何連線至最適化表單的SharePoint清單？、提交至SharePoint、建立SharePoint清單設定、在最適化表單中使用提交至SharePoint提交動作、將最適化表單連線至Microsoft&amp；reg；SharePoint清單。
-feature: Adaptive Forms, Core Components
+feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 title: 如何設定最適化表單的提交動作？
 role: User, Developer
-source-git-commit: 55e8f142e242f5f4010653a155a241ffcf801470
+exl-id: 9ac3e7be-c6fa-4dbc-9aba-b81741ba6c55
+source-git-commit: 64edcfe1bf94638ae5d9510a5a6ac660cf1bcd0a
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 32%
 
 ---
-
 
 # 將最適化表單連線至Microsoft® SharePoint清單 {#connect-af-sharepoint-list}
 
@@ -32,7 +32,7 @@ ht-degree: 32%
 1. 指定「**[!UICONTROL 標題]**」、「**[!UICONTROL 用戶端 ID]**」、「**[!UICONTROL 用戶端密碼]**」和「**[!UICONTROL OAuth URL]**」。如需有關如何擷取 OAuth URL 之用戶端 ID、用戶端密碼、租用戶 ID 的資訊，請參閱 [Microsoft® 文件](https://learn.microsoft.com/en-us/graph/auth-register-app-v2)。
    * 您可以從 Microsoft® Azure 入口網站擷取應用程式的 `Client ID` 和 `Client Secret`。
    * 在 Microsoft® Azure 入口網站中，將重新導向 URI 新增為 `https://[author-instance]/libs/cq/sharepointlist/content/configurations/wizard.html`。以作者執行個體的 URL 取代 `[author-instance]`。
-   * 在&#x200B;**Microsoft® Graph**&#x200B;索引標籤中新增API許可權`offline_access`和`Sites.Manage.All`以提供讀取/寫入許可權。 在&#x200B;**Sharepoint**&#x200B;索引標籤中新增`AllSites.Manage`許可權，以便從遠端與SharePoint資料互動。
+   * 在`offline_access`Microsoft® Graph`Sites.Manage.All`索引標籤中新增API許可權&#x200B;**和**&#x200B;以提供讀取/寫入許可權。 在`AllSites.Manage`Sharepoint **索引標籤中新增**&#x200B;許可權，以便從遠端與SharePoint資料互動。
    * 使用 OAuth URL：`https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`。從 Microsoft® Azure 入口網站，以應用程式的 `tenant-id` 取代 `<tenant-id>`。
 
      >[!NOTE]
@@ -50,7 +50,7 @@ ht-degree: 32%
 
 1. [使用Microsoft建立表單資料模型(FDM)](/help/forms/create-form-data-models.md)
 1. [設定表單資料模型(FDM)以擷取及傳送資料](/help/forms/work-with-form-data-model.md#configure-services)
-1. [建立最適化表單](/help/forms/creating-adaptive-form-core-components.md)
+1. [建立自適應表單](/help/forms/creating-adaptive-form-core-components.md)
 1. [使用表單資料模型(FDM)設定提交動作](/help/forms/using-form-data-model.md)
 
 提交表單時，資料會儲存在指定的Microsoft® Sharepoint清單儲存空間中。

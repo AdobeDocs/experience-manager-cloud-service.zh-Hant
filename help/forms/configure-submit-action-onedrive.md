@@ -1,15 +1,15 @@
 ---
-Title: How to submit data from an Adaptive Form to Microsoft® OneDrive?
-Description: Explore the streamlined process of connecting AEM Forms with Microsoft® OneDrive using the Submit to OneDrive Submit Action. Learn the step-by-step guide to configure OneDrive and set up submission actions for efficient data storage and retrieval
+Title: How to submit data from an Adaptive Form to Microsoft&reg; OneDrive?
+Description: Explore the streamlined process of connecting AEM Forms with Microsoft&reg; OneDrive using the Submit to OneDrive Submit Action. Learn the step-by-step guide to configure OneDrive and set up submission actions for efficient data storage and retrieval
 keywords: AEM Forms OneDrive整合，連線至Microsoft OneDrive，使用AEM Forms設定OneDrive設定
-feature: Adaptive Forms, Core Components
+feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 exl-id: dbfa4094-1b92-4a7c-a799-f66973d27054
-title: 「如何設定最適化表單的提交動作？」
+title: 如何設定最適化表單的提交動作？
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 67%
+source-wordcount: '865'
+ht-degree: 47%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 67%
 
 「**[!UICONTROL 提交到 OneDrive]**」提交動作會將最適化表單連結到 Microsoft® OneDrive。您可以將表單資料、檔案、附件或記錄檔案提交至已連線的Microsoft® OneDrive儲存體。
 
-AEM as a Cloud Service提供多種立即可用的提交動作，用於處理表單提交。 您可以在[最適化表單提交動作](/help/forms/configure-submit-actions-core-components.md)文章中進一步瞭解這些選項。
+AEM as a Cloud Service提供多種立即可用的提交動作，用於處理表單提交。 您可以在[最適化表單提交動作](/help/forms/aem-forms-submit-action.md)文章中進一步瞭解這些選項。
 
 ## 優點
 
@@ -69,21 +69,61 @@ AEM Forms與Microsoft® OneDrive無縫整合的一些優點包括：
 
 ### 在最適化表單中使用 OneDrive 設定 {#use-onedrive-configuartion-in-af}
 
-您可以在最適化表單中使用建立的 OneDrive 儲存空間設定，將資料或產生的記錄文件儲存在 OneDrive 資料夾中。執行以下步驟，即可在最適化表單中使用 OneDrive 儲存空間設定：
-1. 建立[最適化表單](/help/forms/creating-adaptive-form.md)。
+您可以使用在最適化表單中建立的OneDrive儲存體設定，將資料或產生的記錄檔案儲存到OneDrive資料夾中。
 
-   >[!NOTE]
-   >
-   > * 對於已在其中建立 OneDrive 儲存空間的最適化表單，請選取相同的「[!UICONTROL 設定容器]」。
-   > * 如果沒有選取「[!UICONTROL 設定容器]」，「提交動作」屬性視窗中會顯示全域「[!UICONTROL 儲存空間設定]」資料夾。
+>[!NOTE]
+>
+> * 對於已在其中建立 OneDrive 儲存空間的最適化表單，請選取相同的「[!UICONTROL 設定容器]」。
+> * 如果沒有選取「[!UICONTROL 設定容器]」，「提交動作」屬性視窗中會顯示全域「[!UICONTROL 儲存空間設定]」資料夾。
 
-1. 選取「**提交動作**」做為「**[!UICONTROL 提交到 OneDrive]**」。
-   ![OneDrive GIF](/help/forms/assets/onedrive-video.gif)
+>[!BEGINTABS]
+
+>[!TAB 基礎元件]
+
+執行以下步驟，在以Foundation元件為基礎的最適化表單中使用OneDrive儲存設定，如下所示：
+
+1. 開啟最適化表單以進行編輯，並導覽至最適化表單容器屬性的&#x200B;**[!UICONTROL 提交]**&#x200B;區段。
+1. 從&#x200B;**[!UICONTROL 提交動作]**&#x200B;下拉式清單中，選取&#x200B;**[!UICONTROL 提交至OneDrive]**。
+   ![OneDrive GIF](/help/forms/assets/wubmit-to-onedrive-fc.png){width=50%，height=50%}
+您也可以在OneDrive中儲存記錄檔案(DoR)。
 1. 選取您要儲存資料的「**[!UICONTROL 儲存空間設定]**」。
 1. 按一下「**[!UICONTROL 儲存]**」以儲存「提交」設定。
 
 您提交表單時，資料將儲存在指定的 Microsoft® OneDrive 儲存空間。
 儲存資料的資料夾結構是 `/folder_name/form_name/year/month/date/submission_id/data`。
+
+>[!TAB 核心元件]
+
+執行以下步驟，根據核心元件在最適化表單中使用OneDrive儲存設定，如下所示：
+
+1. 開啟內容瀏覽器，然後選取最適化表單的「**[!UICONTROL 指引容器]**」元件。
+1. 按一下「指引容器」屬性 ![指引屬性](/help/forms/assets/configure-icon.svg) 圖示。此時會開啟「最適化表單容器」對話框。
+1. 按一下「**[!UICONTROL 提交]**」標籤。
+1. 從&#x200B;**[!UICONTROL 提交動作]**&#x200B;下拉式清單中，選取&#x200B;**[!UICONTROL 提交至OneDrive]**。
+   ![OneDrive GIF](/help/forms/assets/onedrive-video.gif)
+您也可以在OneDrive中儲存記錄檔案(DoR)。
+1. 選取您要儲存資料的「**[!UICONTROL 儲存空間設定]**」。
+1. 按一下「**[!UICONTROL 儲存]**」以儲存「提交」設定。
+
+>[!TAB 通用編輯器]
+
+執行以下步驟，使用在Universal Editor中編寫的最適化表單中的OneDrive儲存體設定：
+
+1. 開啟最適化表單進行編輯。
+1. 按一下編輯器上的&#x200B;**編輯表單屬性**擴充功能。
+**表單屬性**&#x200B;對話方塊就會顯示。
+
+   >[!NOTE]
+   >
+   > * 如果您在通用編輯器介面中看不到&#x200B;**編輯表單屬性**&#x200B;圖示，請在Extension Manager中啟用&#x200B;**編輯表單屬性**&#x200B;擴充功能。
+   > * 請參閱[Extension Manager功能焦點](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)文章，瞭解如何在通用編輯器中啟用或停用擴充功能。
+1. 按一下&#x200B;**提交**&#x200B;索引標籤，然後選取&#x200B;**[!UICONTROL 提交至OneDrive]**。
+   ![OneDrive GIF](/help/forms/assets/submit-to-onedrive-ue.png)
+如果您選取**以原始名稱儲存附件**，則附件會使用其原始檔案名稱儲存在資料夾中。 您也可以將記錄檔案(DoR)儲存在Azure Blob儲存體中。
+1. 選取您要儲存資料的「**[!UICONTROL 儲存空間設定]**」。
+1. 按一下&#x200B;**[!UICONTROL 儲存並關閉]**
+
+>[!ENDTABS]
 
 ## 相關文章
 

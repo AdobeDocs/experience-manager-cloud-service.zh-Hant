@@ -5,10 +5,10 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
 workflow-type: tm+mt
-source-wordcount: '6492'
-ht-degree: 0%
+source-wordcount: '6727'
+ht-degree: 4%
 
 ---
 
@@ -16,25 +16,25 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> Adobe建議針對[建立新的Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md)或[將Adaptive Forms新增至AEM Sites頁面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)，使用現代且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文說明使用基礎元件製作最適化Forms的舊方法。
+> Adobe建議針對[建立新的Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)或[將Adaptive Forms新增至AEM Sites頁面](/help/forms/creating-adaptive-form-core-components.md)，使用現代且可擴充的資料擷取[核心元件](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文說明使用基礎元件製作最適化Forms的舊方法。
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service （基礎元件） | 本文章 |
 | AEM as a Cloud Service （核心元件） | [按一下這裡](/help/forms/rule-editor-core-components.md) |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html) |
 
 ## 概觀 {#overview}
 
 規則編輯器功能可讓表單業務使用者和開發人員在調適型表單物件上編寫規則。 這些規則會根據預設條件、使用者輸入及使用者對表單的動作，定義要在表單物件上觸發的動作。 它有助於進一步簡化表單填寫體驗，確保準確性和速度。
 
-規則編輯器提供直覺式且簡化的使用者介面來撰寫規則。 規則編輯器為所有使用者提供一個視覺化編輯器。<!-- In addition, only for forms power users, rule editor provides a code editor to write rules and scripts. --> 您可以使用規則對自適應表單物件執行的一些關鍵操作包括：
+規則編輯器提供直覺式且簡化的使用者介面來撰寫規則。 規則編輯器為所有使用者提供一個視覺化編輯器。<!-- In addition, only for forms power users, rule editor provides a code editor to write rules and scripts. -->您可以使用規則對最適化表單物件執行的部分關鍵動作如下：
 
 * 顯示或隱藏物件
-* 啟用或禁用物件
-* 設置物件的值
+* 啟用或停用物件
+* 設定物件的值
 * 驗證物件的值
-* 執行函數以計算物件的值
+* 執行函式以計算物件的值
 * 啟動表單資料模型服務並執行作業
 * 設定物件的屬性
 
@@ -52,11 +52,11 @@ ht-degree: 0%
 
 規則編輯器提供一組預先定義的規則型別（例如「何時」、「顯示」、「隱藏」、「啟用」、「停用」、「設定值」和「驗證」）來協助您編寫規則。 每種規則型別都可讓您定義規則中的條件和動作。 本檔案將詳細說明每種規則型別。
 
-規則通常會遵循下列其中一種建構：
+規則通常遵循下列其中一種結構：
 
-**條件-動作** 在此構造中，規則首先定義條件，後跟要觸發的操作。 該結構可與程式設計語言中的if-then語句相媲美。
+**Condition-Action**&#x200B;在此建構中，規則會先定義條件，然後定義要觸發的動作。 此建構與程式設計語言中的if-then陳述式類似。
 
-在規則編輯者中， **When** 規則 類型強制實施條件操作構造。
+在規則編輯器中，**When**&#x200B;規則型別會強制執行condition-action結構。
 
 **Action-Condition**&#x200B;在此建構中，規則會先定義要觸發的動作，接著定義評估條件。 此建構的另一個變數為action-condition-alternate action，這也會定義在條件傳回False時要觸發的替代動作。
 
@@ -109,13 +109,13 @@ ht-degree: 0%
 
 規則編輯器提供了一組預先定義的規則型別，您可以使用這些型別來撰寫規則。 讓我們來詳細瞭解一下每種規則型別。 如需有關在規則編輯器中寫入規則的詳細資訊，請參閱[寫入規則](rule-editor.md#p-write-rules-p)。
 
-### [!UICONTROL 什麼時候] {#whenruletype}
+### [!UICONTROL 時間] {#whenruletype}
 
-When **&#x200B;**&#x200B;規則 類型遵循條件-操作-交替操作&#x200B;**規則構造，或者有時僅**&#x200B;遵循&#x200B;**條件-操作**&#x200B;構造。在此規則類型中，首先指定評估條件，然後在滿足條件時觸發操作 （ `True`）。 使用 When 規則 類型時，可以使用多個 AND 和 OR 運算符來創建 [嵌套表達式](#nestedexpressions)。
+**[!UICONTROL When]**&#x200B;規則型別遵循&#x200B;**condition-action-alternate action**&#x200B;規則建構，有時只遵循&#x200B;**condition-action**&#x200B;建構。 在此規則型別中，您先指定評估條件，接著指定滿足條件時觸發的動作( `True`)。 使用When規則型別時，您可以使用多個AND和OR運運算元來建立[巢狀運算式](#nestedexpressions)。
 
-使用 When 規則 類型，您可以評估表單對象的條件並對一個或多個物件執行操作。
+使用When規則型別，您可以評估表單物件的條件，並對一或多個物件執行動作。
 
-簡而言之，典型的 When 規則 結構如下：
+簡單地說，典型的When規則結構如下：
 
 `When on Object A:`
 
@@ -123,9 +123,9 @@ When **&#x200B;**&#x200B;規則 類型遵循條件-操作-交替操作&#x200B;**
 
 `Then, do the following:`
 
-關於物件B的行動2;
+物件B上的動作2；
 和
-關於物件C的行動3;
+物件C上的動作3；
 
 _
 
@@ -133,7 +133,7 @@ _
 
 例如，清單有四個選項：紅色、藍色、綠色和黃色。 建立規則時，會自動擷取選項（選項按鈕），以供規則建立者使用，如下所示：
 
-![多值顯示選項](assets/multivaluefcdisplaysoptions1.png)
+![多重值顯示選項](assets/multivaluefcdisplaysoptions1.png)
 
 撰寫When規則時，您可以觸發「清除值」動作。 清除值動作會清除指定物件的值。 在When陳述式中將的清除值作為選項可讓您建立具有多個欄位的複雜條件。
 
@@ -145,7 +145,7 @@ _
 
 **[!UICONTROL 啟用]**&#x200B;啟用指定的物件。
 
-**[!UICONTROL 禁用]** 禁用指定的物件。
+**[!UICONTROL 停用]**&#x200B;停用指定的物件。
 
 **[!UICONTROL 啟動服務]**&#x200B;啟動表單資料模型(FDM)中設定的服務。 選擇「啟動服務」作業時，會出現一個欄位。 點選欄位時，它會顯示您[!DNL Experience Manager]執行個體上所有表單資料模型(FDM)中設定的所有服務。 選擇表單資料模型(FDM)服務時，會出現更多欄位，您可在其中對應具有指定服務的輸入和輸出引數的表單物件。 請參閱呼叫表單資料模型服務的規則範例。
 
@@ -205,23 +205,23 @@ _
 
 ### [!UICONTROL 設定值] {#set-value-of}
 
-**規則型別的**&#x200B;設定值可讓您依據指定的條件是否符合，來設定表單物件的值。 值可以設定為另一個物件的值、常值字串、衍生自數學運算式或函式的值、另一個物件的屬性值，或表單資料模型服務的輸出。 同樣地，您可以檢查元件、字串、屬性或衍生自函式或數學運算式的值的條件。
+**[!UICONTROL 規則型別的]**&#x200B;設定值可讓您依據指定的條件是否符合，來設定表單物件的值。 值可以設定為另一個物件的值、常值字串、衍生自數學運算式或函式的值、另一個物件的屬性值，或表單資料模型服務的輸出。 同樣地，您可以檢查元件、字串、屬性或衍生自函式或數學運算式的值的條件。
 
-“ **設置值** 規則類型”並非適用於所有表單物件，例如面板和工具列按鈕。 標準的「規則集值」具有下列結構：
+**Set Value Of**&#x200B;規則型別不適用於所有表單物件，例如面板和工具列按鈕。 標準的「設定值」規則具有以下結構：
 
-將物件 A 的值設定為：
+將物件A的值設為：
 
-（字串 ABC）或
-（物件 屬性 物件 C 的 X）或
-（來自函數的值）或
-（值來自數學運算式）或
-（數據模型服務或Web服務的輸出值）;
+（字串ABC）或
+（物件C的物件屬性X）或
+（函式中的值） OR
+（數學運算式的值） OR
+（資料模型服務或Web服務的輸出值）；
 
-時間（選擇）：
+當（選擇性）：
 
-（條件 1 和條件 2 和條件 3） 為 TRUE;
+（條件1和條件2和條件3）為TRUE；
 
-下列範例以`dependentid`欄位中的值作為輸入，並將`Relation`欄位的值設定為`getDependent`表單資料模型服務的`Relation`引數的輸出。
+下列範例以`dependentid`欄位中的值作為輸入，並將`Relation`欄位的值設定為`Relation`表單資料模型服務的`getDependent`引數的輸出。
 
 ![Set-value-web-service](assets/set-value-web-service1.png)
 
@@ -375,7 +375,7 @@ _
 
 ### C.表單物件與功能切換 {#c-form-objects-and-functions-toggle-br}
 
-點選切換按鈕時，會切換表單物件和函式窗格。
+點選「切換」按鈕時，會切換表單物件和函數窗格。
 
 ### D.視覺規則編輯器 {#visual-rule-editor}
 
@@ -398,7 +398,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 ### E.完成和取消按鈕 {#done-and-cancel-buttons}
 
-**[!UICONTROL Done]**&#x200B;按鈕是用來儲存規則。 您可以儲存不完整的規則。 但是，不完整內容無效，因此不會執行。 當您下次從相同表單物件啟動規則編輯器時，會列出表單物件上已儲存的規則。 您可以在該檢視中管理現有規則。 如需詳細資訊，請參閱[管理規則](rule-editor.md#p-manage-rules-p)。
+「**[!UICONTROL 完成]**」按鈕用於儲存規則。您可以儲存不完整的規則。 但是，不完整內容無效，因此不會執行。 當您下次從相同表單物件啟動規則編輯器時，會列出表單物件上已儲存的規則。 您可以在該檢視中管理現有規則。 如需詳細資訊，請參閱[管理規則](rule-editor.md#p-manage-rules-p)。
 
 「**[!UICONTROL 取消]**」按鈕會放棄您對規則所做的任何變更並關閉規則編輯器。
 
@@ -419,7 +419,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 * 配偶的「薪資」欄位僅在「婚姻狀況」為「已婚」時顯示。
 * 貸款資格金額為薪資總額的50%。
 
-若要撰寫規則，請執行下列步驟：
+若要編寫規則，請執行下列步驟：
 
 1. 首先，根據使用者為「婚姻狀況」選項按鈕選取的選項，撰寫規則以控制「配偶薪資」欄位的可見度。
 
@@ -449,7 +449,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
    ![write-rules-visual-editor-5](assets/write-rules-visual-editor-5.png)
 
-1. 從&#x200B;**[!UICONTROL 拖放物件上的[表單物件]索引標籤中拖放**&#x200B;[!UICONTROL &#x200B;配偶薪資&#x200B;]&#x200B;**欄位，或選取這裡]**&#x200B;欄位。 或者，選取&#x200B;**[!UICONTROL 拖放物件或選取這裡]**&#x200B;欄位，然後從躍現式選單中選取&#x200B;**[!UICONTROL 配偶薪資]**&#x200B;欄位，這會列出表單中的所有表單物件。
+1. 從&#x200B;**[!UICONTROL 拖放物件上的[表單物件]索引標籤中拖放]**&#x200B;配偶薪資&#x200B;**[!UICONTROL 欄位，或選取這裡]**&#x200B;欄位。 或者，選取&#x200B;**[!UICONTROL 拖放物件或選取這裡]**&#x200B;欄位，然後從躍現式選單中選取&#x200B;**[!UICONTROL 配偶薪資]**&#x200B;欄位，這會列出表單中的所有表單物件。
 
    ![write-rules-visual-editor-6](assets/write-rules-visual-editor-6.png)
 
@@ -457,7 +457,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
    ![write-rules-visual-editor-7](assets/write-rules-visual-editor-7.png)
 
-1. 選取&#x200B;**[!UICONTROL 完成]**&#x200B;以儲存規則。
+1. 選取「**[!UICONTROL 完成]**」以儲存此規則。
 
 1. 重複步驟1到5，定義另一個規則，以在「婚姻狀況」為「單身」時隱藏「配偶薪資」欄位。 規則在規則編輯器中會顯示如下。
 
@@ -477,25 +477,25 @@ Users in the forms-power-users group can access code editor. For other users, co
 
    ![write-rules-visual-editor-10](assets/write-rules-visual-editor-10.png)
 
-1. 選取&#x200B;**[!UICONTROL 選取選項]**&#x200B;並選取&#x200B;**[!UICONTROL 數學運算式]**。 用於寫入數學運算式的欄位隨即開啟。
+1. 選取「**[!UICONTROL 選取選項]**」，並選取「**[!UICONTROL 數學運算式]**」。開啟用於編寫數學運算式的欄位。
 
    ![write-rules-visual-editor-11](assets/write-rules-visual-editor-11.png)
 
 1. 在運算式欄位中：
 
-   * 從Forms物件標籤中選取或拖放第一個&#x200B;**[!UICONTROL 放置物件中的**&#x200B;[!UICONTROL &#x200B; Salary &#x200B;]&#x200B;**欄位，或選取這裡]**&#x200B;欄位。
+   * 從Forms物件標籤中選取或拖放第一個&#x200B;**[!UICONTROL 放置物件中的]** Salary **[!UICONTROL 欄位，或選取這裡]**&#x200B;欄位。
 
    * 從&#x200B;**[!UICONTROL 選取運運算元]**&#x200B;欄位中選取&#x200B;**[!UICONTROL 加號]**。
 
-   * 從「Forms物件」標籤中選取或拖放其他&#x200B;**[!UICONTROL 拖放物件的**&#x200B;[!UICONTROL &#x200B;配偶薪資&#x200B;]&#x200B;**欄位，或選取這裡]**&#x200B;欄位。
+   * 從「Forms物件」標籤中選取或拖放其他&#x200B;**[!UICONTROL 拖放物件的]**&#x200B;配偶薪資&#x200B;**[!UICONTROL 欄位，或選取這裡]**&#x200B;欄位。
 
    ![write-rules-visual-editor-12](assets/write-rules-visual-editor-12.png)
 
-1. 接著，在運算式欄位周圍反白的區域中選取，並選取&#x200B;**[!UICONTROL 延伸運算式]**。
+1. 接下來，選取運算式欄位周圍醒目標示的區域，並選取「**[!UICONTROL 擴充運算式]**」。
 
    ![write-rules-visual-editor-13](assets/write-rules-visual-editor-13.png)
 
-   在延伸運算式欄位中，從&#x200B;**[!UICONTROL 選取運運算元]**&#x200B;欄位中選取&#x200B;**[!UICONTROL 除以]**，並從&#x200B;**[!UICONTROL 選取選項]**&#x200B;欄位中選取&#x200B;**[!UICONTROL 數字]**。 然後在數字欄位中指定&#x200B;**[!UICONTROL 2]**。
+   在擴展運算式欄位中，從「**[!UICONTROL 選取運算子]**」欄位選取「**[!UICONTROL 除以]**」以及從「**[!UICONTROL 選取選項]**」欄位選取「**[!UICONTROL 數字]**」。然後在數字欄位中指定&#x200B;**[!UICONTROL 2]**。
 
    ![write-rules-visual-editor-14](assets/write-rules-visual-editor-14.png)
 
@@ -511,7 +511,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
    在When陳述式中：
 
-   * 從Forms物件索引標籤中選取或拖放第一個&#x200B;**[!UICONTROL 放置物件的**&#x200B;[!UICONTROL &#x200B;婚姻狀況&#x200B;]&#x200B;**欄位，或選取這裡]**&#x200B;欄位。
+   * 從Forms物件索引標籤中選取或拖放第一個&#x200B;**[!UICONTROL 放置物件的]**&#x200B;婚姻狀況&#x200B;**[!UICONTROL 欄位，或選取這裡]**&#x200B;欄位。
 
    * 從&#x200B;**[!UICONTROL 選取運運算元]**&#x200B;欄位中選取&#x200B;**[!UICONTROL 等於]**。
 
@@ -537,7 +537,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 Users added to the forms-power-users group can use code editor. The rule editor auto generates the JavaScript code for any rule you create using visual editor. You can switch from visual editor to the code editor to view the generated code. However, if you modify the rule code in the code editor, you cannot switch back to the visual editor. If you prefer writing rules in code editor rather than visual editor, you can write rules afresh in the code editor. The visual-code editors switcher helps you switch between the two modes.
 
-The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/tw/experience-manager/6-5/forms/javascript-api/index.html).
+The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
 For more information about guidelines to write rules in the code editor, see [Adaptive Form Expressions](adaptive-form-expressions.md).
 
@@ -601,7 +601,7 @@ While writing JavaScript code in the rule editor, the following visual cues help
 語法： `@return {type}`
 或者，您可以使用`@returns {type}`。
 新增函式的相關資訊，例如其目標。
-{type}代表函式的傳回型別。 允許的傳回型別為：
+  {type}代表函式的傳回型別。 允許的傳回型別為：
 
    1. 字串
    1. 數字
@@ -614,7 +614,7 @@ While writing JavaScript code in the rule editor, the following visual cues help
 
   使用@this可參照寫入規則的最適化表單元件。
 
-  以下範例是根據欄位值。 在以下範例中，規則會隱藏表單中的欄位。 `this.value`的`this`部分參考寫入規則的基礎調適型表單元件。
+  以下範例是根據欄位值。 在以下範例中，規則會隱藏表單中的欄位。 `this`的`this.value`部分參考寫入規則的基礎調適型表單元件。
 
   ```
      /**
@@ -641,8 +641,8 @@ While writing JavaScript code in the rule editor, the following visual cues help
 
 若要建立使用者端程式庫並將其新增至CRX存放庫，請執行以下步驟：
 
-1. 建立使用者端資源庫。 如需詳細資訊，請參閱[使用使用者端資料庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=zh-Hant#developing)。
-1. 在CRXDE中，將字串型別值為`customfunction`的屬性`categories`新增至`clientlib`資料夾。
+1. 建立使用者端資源庫。 如需詳細資訊，請參閱[使用使用者端資料庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing)。
+1. 在CRXDE中，將字串型別值為`categories`的屬性`customfunction`新增至`clientlib`資料夾。
 
    >[!NOTE]
    >
@@ -651,7 +651,7 @@ While writing JavaScript code in the rule editor, the following visual cues help
 在CRX存放庫中新增使用者端程式庫後，請於最適化表單中使用。 它可讓您使用自訂函式作為表單中的規則。 若要在最適化表單中新增使用者端程式庫，請執行下列步驟：
 
 1. 在編輯模式中開啟您的表單。
-若要以編輯模式開啟表單，請選取表單並選取&#x200B;**[!UICONTROL 開啟]**。
+若要以編輯模式開啟表單，請選取表單並選取**[!UICONTROL 開啟]**。
 1. 在編輯模式中，選取元件，然後選取![欄位層級](assets/select_parent_icon.svg) > **[!UICONTROL 最適化表單容器]**，然後選取![cmppr](assets/configure-icon.svg)。
 1. 在側邊欄中的「使用者端資料庫名稱」下方，新增您的使用者端資料庫。 （範例中為`customfunction`。）
 
@@ -731,6 +731,22 @@ var c = {
 >
 >請確定您對每個自訂函式都使用`jsdoc`。 雖然建議使用`jsdoc`個註解，但請加入空白的`jsdoc`註解，以將您的函式標示為自訂函式。 它會啟用自訂函式的預設處理。
 
+### 支援驗證運算式中的自訂函數 {#supporting-custom-functions-in-validation-expressions-br}
+
+有時候，如果有&#x200B;**複雜的驗證規則**，則確切的驗證指令碼會駐留在自訂函數中，且作者會從欄位驗證運算式中呼叫這些自訂函數。若要在執行伺服器端驗證時公開和提供此自訂函數程式庫，表單作者可以在「最適化表單容器」屬性的「**[!UICONTROL 基礎]**」標籤下方，設定 AEM 用戶端程式庫的名稱，如以下所示。
+
+![支援驗證運算式中的自訂函數](assets/clientlib-cat.png)
+
+支援驗證運算式中的自訂函數
+
+作者可以根據最適化表單來設定自訂 JavaScript 程式庫。程式庫中只會保留可重複使用的函數，這些函數與 jquery 和 underscore.js 第三方程式庫有相依性。
+
+## 提交動作的錯誤處理 {#error-handling-on-submit-action}
+
+為了 AEM 安全性和強化準則，請設定自訂錯誤頁面，例如 400.jsp、404.jsp 和 500.jsp。提交表單時，如果出現 400、404 或 500 錯誤，就會呼叫這些處理常式。在發佈節點上觸發這些錯誤代碼時，也會呼叫處理常式。您也可以為其他 HTTP 錯誤代碼建立 JSP 頁面。
+
+當您將包含XML或JSON資料投訴的表單資料模型(FDM)或結構描述型調適型表單預填至資料不包含`<afData>`、`<afBoundData>`和`</afUnboundData>`標籤的結構描述時，調適型表單未限制欄位的資料會遺失。 結構描述可以是XML結構描述、JSON結構描述或表單資料模型(FDM)。 未繫結欄位是最適化表單欄位，但沒有 `bindref` 屬性。
+
 ## 管理規則 {#manage-rules}
 
 當您選取物件並選取![edit-rules1](assets/edit-rules-icon.svg)時，表單物件上的任何現有規則都會列出。 您可以檢視標題並預覽規則摘要。 此外，UI可讓您展開並檢視完整的規則摘要、變更規則順序、編輯規則及刪除規則。
@@ -774,7 +790,7 @@ var c = {
    >
    >只有當表單物件支援所複製規則的事件，您才能將規則貼到另一個表單物件。 例如，按鈕支援點選事件。 您可以將具有點選事件的規則貼到按鈕上，但無法貼到核取方塊上。
 
-1. 選取&#x200B;**[!UICONTROL 完成]**&#x200B;以儲存規則。
+1. 選取「**[!UICONTROL 完成]**」以儲存此規則。
 
 ## 巢狀運算式 {#nestedexpressions}
 
@@ -838,9 +854,9 @@ Any scripts or expressions that you must have written in the Scripts tab are ava
 
 在貸款申請表單中，您想要擷取貸款申請人是否為現有客戶。 根據使用者提供的資訊，客戶ID欄位應顯示或隱藏。 此外，如果使用者是現有客戶，您想要將焦點設定在客戶ID欄位。 貸款申請表單包含下列元件：
 
-* 單選按鈕&#x200B;**[!UICONTROL 您是現有的Geometrixx客戶嗎？]**，提供[!UICONTROL 是]和[!UICONTROL 否]選項。 「是」的值為&#x200B;**0**，「否」的值為&#x200B;**1**。
+* 選項按鈕&#x200B;**[!UICONTROL 您是Geometrixx現有客戶嗎？]**，提供[!UICONTROL 是]和[!UICONTROL 否]選項。 「是」的值為&#x200B;**0**，「否」的值為&#x200B;**1**。
 
-* 文字欄位&#x200B;**[!UICONTROL 客戶ID]** Geometrixx，用以指定客戶ID。
+* 用於指定客戶ID的文字欄位&#x200B;**[!UICONTROL Geometrixx客戶ID]**。
 
 當您在選項按鈕上編寫實施此行為的When規則時，該規則在視覺規則編輯器中會顯示如下。
 
