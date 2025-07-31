@@ -113,7 +113,7 @@ Azure Blob儲存與AEM Forms整合的部分優點包括：
 執行以下步驟，以在通用編輯器中編寫的最適化表單中使用Azure儲存體容器設定：
 
 1. 開啟最適化表單進行編輯。
-1. 按一下編輯器上的&#x200B;**編輯表單屬性**擴充功能。
+1. 按一下編輯器上的&#x200B;**編輯表單屬性**&#x200B;擴充功能。
 **表單屬性**&#x200B;對話方塊就會顯示。
 
    >[!NOTE]
@@ -121,7 +121,7 @@ Azure Blob儲存與AEM Forms整合的部分優點包括：
    > * 如果您在通用編輯器介面中看不到&#x200B;**編輯表單屬性**&#x200B;圖示，請在Extension Manager中啟用&#x200B;**編輯表單屬性**&#x200B;擴充功能。
    > * 請參閱[Extension Manager功能焦點](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)文章，瞭解如何在通用編輯器中啟用或停用擴充功能。
 
-1. 按一下&#x200B;**提交**&#x200B;索引標籤，然後選取&#x200B;**[!UICONTROL 提交至Azure Blob儲存體]**提交動作。
+1. 按一下&#x200B;**提交**&#x200B;索引標籤，然後選取&#x200B;**[!UICONTROL 提交至Azure Blob儲存體]**&#x200B;提交動作。
    ![Azure Blob儲存體](/help/forms/assets/azure-blob-storage-ue.png)
 
    如果您選取&#x200B;**以原始名稱儲存附件**，則附件會使用其原始檔案名稱儲存在資料夾中。 您也可以將記錄檔案(DoR)儲存在Azure Blob儲存體中。
