@@ -7,9 +7,9 @@ hide: true
 hidefromtoc: true
 exl-id: 100ddbf2-9c63-406f-a78d-22862501a085
 source-git-commit: 06bd37146cafaadeb5c4bed3f07ff2a38c548000
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1290'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -42,8 +42,8 @@ AEM as a Cloud Service 可讓您使用自己的加密金鑰來加密靜態資料
 1. 設定您的環境
 1. 向 Adob&#x200B;&#x200B;e 取得應用程式 ID
 1. 建立新資源群組
-1. 建立金鑰儲存庫
-1. 授予Adobe對金鑰儲存庫的存取權
+1. 建立金鑰保存庫
+1. 授予 Adobe 存取金鑰保存庫的權限
 1. 建立加密金鑰
 
 您需要向 Adob&#x200B;&#x200B;e 分享金鑰保存庫 URL、加密金鑰名稱以及有關金鑰保存庫的資訊。
@@ -52,30 +52,30 @@ AEM as a Cloud Service 可讓您使用自己的加密金鑰來加密靜態資料
 
 Azure 命令列介面 (CLI) 是使用本指南的唯一需求。如果您尚未安裝 Azure CLI，請依[此處](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli)的正式安裝說明來進行。
 
-在繼續本指南的其餘部分之前，請使用`az login`登入您的CLI。
+在繼續本指南的其他部分之前，請使用 `az login` 登入至您的 CLI。
 
 >[!NOTE]
 >
 >雖然本指南使用 Azure CLI，但您可以透過 Azure 控制台執行相同的操作。如果您希望使用 Azure 控制台，請使用下列命令作為參考。
 
 
-## 開始AEM as a Cloud Service的CMK設定程式 {#request-cmk-for-aem-as-a-cloud-service}
+## 開始進行 AEM as a Cloud Service 的 CMK 設定流程 {#request-cmk-for-aem-as-a-cloud-service}
 
-您需要透過UI為您的AEM as a Cloud Service環境請求客戶自控金鑰(CMK)設定。 若要這麼做，請導覽至&#x200B;**客戶自控金鑰**&#x200B;區段下的AEM首頁安全性UI。
-接著，您可以按一下&#x200B;**開始上線**&#x200B;按鈕，開始上線程式。
+您需要透過使用者介面請求 AEM as a Cloud Service 環境的客戶自控金鑰 (CMK) 設定。若想完成上述操作，請前往&#x200B;**客戶自控金鑰**區段的 AEM 首頁安全性使用者介面。
+然後，按一下「**開始上線**」按鈕，即可開始上線流程。
 
-![開始使用CMK UI上線網站](./assets/cmk/step1.png)
+![透過 CMK 使用者介面開始將網站上線](./assets/cmk/step1.png)
 
 
-## 向 Adob&#x200B;&#x200B;e 取得應用程式 ID {#obtain-an-application-id-from-adobe}
+## 向 Adobe 取得應用程式 ID {#obtain-an-application-id-from-adobe}
 
-開始入門流程後，Adobe將會提供Entra應用程式ID。 此應用程式ID是指南其他部分所必需的，並將用於建立可讓Adobe存取您的金鑰儲存庫的服務主體。 如果您還沒有應用程式ID，則需要等到Adobe提供。
+開始上線流程之後，Adobe 會提供 Entra 應用程式 ID。此應用程式 ID 為本指南其餘部分所必需，並且會用於建立能讓 Adobe 存取您金鑰保存庫的服務主體。若您還沒有應用程式 ID，則需要等到 Adobe 提供。
 
-![正在處理要求，請等候Adobe提供Entra應用程式ID](./assets/cmk/step2.png)
+![請求正在處理中，請等待 Adobe 提供 Entra 應用程式 ID](./assets/cmk/step2.png)
 
-請求完成後，您就能在CMK UI中看到應用程式ID。
+請求處理完畢後，您便能夠在 CMK 使用者介面中看到應用程式 ID。
 
-![Entra應用程式ID是由Adobe所提供](./assets/cmk/step3.png)
+![由 Adobe 提供 Entra 應用程式 ID](./assets/cmk/step3.png)
 
 ## 建立新資源群組 {#create-a-new-resource-group}
 
@@ -94,7 +94,7 @@ az group create --location $location --resource-group $resourceGroup
 
 ## 建立金鑰保存庫 {#create-a-key-vault}
 
-您將需要建立一個金鑰保存庫，用來加入您的加密金鑰。金鑰保存庫必須啟用虛刪除保護功能。對於要加密來自其他 Azure 服務的靜態資料一定要使用虛刪除保護。必須啟用公用網路存取，以確保Adobe服務可以存取金鑰儲存庫。
+您將需要建立一個金鑰保存庫，用來加入您的加密金鑰。金鑰保存庫必須啟用虛刪除保護功能。對於要加密來自其他 Azure 服務的靜態資料一定要使用虛刪除保護。必須啟用公共網路存取權，藉以確保 Adobe 服務能夠存取金鑰保存庫。
 
 >[!IMPORTANT]
 >若是建立已停用公共網路存取的金鑰保存庫，此時，系統會強制要求所有與金鑰保存庫相關的操作 (例如金鑰建立或輪換) 都必須從擁有金鑰保存庫網路存取權的環境中執行 - 例如，可以存取金鑰保存庫的虛擬機裝置。
@@ -122,7 +122,7 @@ az keyvault create `
 
 在此步驟中，您將允許 Adob&#x200B;&#x200B;e 透過 Entra 應用程式存取您的金鑰保存庫。Adobe 應該已經提供 Entra 應用程式 ID。
 
-首先，您必須建立附加至Entra應用程式的服務主體，並為其指派&#x200B;**金鑰儲存庫Reader**&#x200B;和&#x200B;**金鑰儲存庫加密使用者**&#x200B;角色。 這些角色僅限於本指南中建立的金鑰保存庫。
+首先，您必須建立 Entra 應用程式隨附的服務主體，並指派其&#x200B;**金鑰保存庫讀取者**&#x200B;和&#x200B;**金鑰保存庫密碼使用者**&#x200B;角色。這些角色僅限於本指南中建立的金鑰保存庫。
 
 ```powershell
 # Reuse this information from the previous steps.
@@ -162,7 +162,7 @@ az keyvault key create --vault-name $keyVaultName --name $keyName
 
 ## 共用金鑰保存庫資訊 {#share-the-key-vault-information}
 
-至此，一切準備就緒。您只需要透過CMK UI共用一些必要資訊，這會啟動環境設定程式。
+至此，一切準備就緒。您只需透過 CMK 使用者介面共用一些必要資訊，便會開始進行環境設定流程。
 
 ```powershell
 # Reuse this information from the previous steps.
@@ -182,9 +182,8 @@ $tenantId=(az keyvault show --name $keyVaultName `
     --output tsv)
 $subscriptionId="<Subscription ID>"
 ```
-
-在CMK UI中提供以下資訊：
-![在UI中填入資訊](./assets/cmk/step3a.png)
+在 CMK 使用者介面中提供此資訊：
+![在使用者介面中填入資訊](./assets/cmk/step3a.png)
 
 ## 撤銷金鑰存取權的影響 {#implications-of-revoking-key-access}
 
@@ -194,16 +193,16 @@ $subscriptionId="<Subscription ID>"
 
 ## 後續步驟 {#next-steps}
 
-您在CMK UI中提供所需資訊後，Adobe會針對您的AEM as a Cloud Service環境開始設定程式。 此程式可能需要一些時間，完成後您將會收到通知。
+在 CMK 使用者介面中提供所需資訊後，Adobe 即會開始進行 AEM as a Cloud Service 環境的設定流程。此流程可能需要一些時間，完成後您會收到通知。
 
-![等候Adobe設定環境。](./assets/cmk/step4.png)
+![等待 Adobe 設定環境。](./assets/cmk/step4.png)
 
 
-## 完成CMK設定 {#complete-the-cmk-setup}
+## 完成 CMK 設定 {#complete-the-cmk-setup}
 
-完成設定程式後，您就能在UI中看到CMK設定的狀態。 您也可以看到金鑰儲存庫和加密金鑰。
-![處理序目前已完成](./assets/cmk/step5.png)
+設定流程完成後，您即可在使用者介面中看到 CMK 設定的狀態。您也可以看到金鑰保存庫和加密金鑰。
+![流程現已完成](./assets/cmk/step5.png)
 
 ## 問題與支援 {#questions-and-support}
 
-如果您有任何疑問、查詢或需要協助，請聯絡我們，瞭解適用於AEM as a Cloud Service的客戶自控金鑰設定。 Adobe支援可協助您解決任何可能的問題。
+如果您對於 AEM as a Cloud Service 的客戶自控金鑰設定有任何疑問、想查詢的事項，或需要協助之處，請與我們聯絡。Adobe 支援可以協助解決您所可能遇到的任何問題。
