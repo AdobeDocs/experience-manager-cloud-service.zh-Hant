@@ -7,9 +7,9 @@ role: Admin, Architect, Developer
 hide: false
 hidefromtoc: true
 exl-id: 6cdf7f65-7112-420a-90c1-564f0ef8ceaf
-source-git-commit: 577e15165057fcf6537b4b0b738a1f45e5feb097
+source-git-commit: 71041c9e4d4afe964f549f193daf8ec72bd97a41
 workflow-type: tm+mt
-source-wordcount: '1308'
+source-wordcount: '1322'
 ht-degree: 1%
 
 ---
@@ -28,6 +28,10 @@ AEM (Adobe Experience Manager) AI Assistant提供對話式介面，旨在簡化�
 * Forms
 
 此視覺效果直接內嵌於AEM中，並可從AEM Experience Hub、Cloud Manager及作者UI存取。
+
+以下3分鐘39秒的影片逐步解說AEM AI Assistant。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3470354?learn=on)
 
 >[!IMPORTANT]
 >請確定您已檢閱並提交使用者合約，因此Adobe可以啟用AI Assistant功能，供您測試並參與私人測試版計畫。
@@ -54,7 +58,6 @@ AEM AI Assistant的設計強調隱私、安全性和治理。
 * 使用者提供的提示（問題、查詢等）不會與其他客戶共用。
 
 <!-- See also [Security at Adobe whitepaper](). NEED ACTIVE LINK FROM ADRIAN NICOLAE TANASE. CURRENTLY 404. -->
-
 
 ## 瞭解產品知識和自動支援票證建立的AEM AI Assistant {#ai-prod-insights}
 
@@ -106,7 +109,7 @@ Administrators should keep normal Cloud Manager governance in mind. Hold product
 
 ![Technical support ticket creation in the AEM AI Assistant of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
 
-For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/accessing/overview). 
+For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview). 
 
 See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md). -->
 
@@ -120,7 +123,7 @@ See also [Custom Permissions](/help/implementing/cloud-manager/custom-permission
 **若要啟動或重設交談：**
 
 1. 在AEM AI助理上，按一下![更多圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
-1. 若要通知AEM AI助理有關新主題或主題變更，請按一下[開始新交談] **&#x200B;**。
+1. 若要通知AEM AI助理有關新主題或主題變更，請按一下[開始新交談] ****。
 
 ### 使用可發現性
 
