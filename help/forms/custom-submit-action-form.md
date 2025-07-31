@@ -16,8 +16,8 @@ ht-degree: 0%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/customize-aem-forms/custom-submit-action-form.html) |
-| AEM as a Cloud Service （核心元件） | [按一下這裡](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/custom-submit-action-for-adaptive-forms-based-on-core-components) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/customize-aem-forms/custom-submit-action-form.html?lang=zh-Hant) |
+| AEM as a Cloud Service （核心元件） | [按一下這裡](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/custom-submit-action-for-adaptive-forms-based-on-core-components) |
 | AEM as a Cloud Service （基礎元件） | 本文章 |
 
 最適化表單提供多個立即可用的提交動作(OOTB)。 提交動作可指定要透過最適化表單收集之資料上執行的動作細節。 例如，以電子郵件傳送資料。
@@ -111,7 +111,7 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 
 >[!NOTE]
 >
-> 若要瞭解如何建立核心元件的自訂提交動作，請參閱[為最適化Forms （核心元件）建立自訂提交動作](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/custom-submit-action-for-adaptive-forms-based-on-core-components)。
+> 若要瞭解如何建立核心元件的自訂提交動作，請參閱[為最適化Forms （核心元件）建立自訂提交動作](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/custom-submit-action-for-adaptive-forms-based-on-core-components)。
 
 執行以下步驟來建立自訂提交動作，將資料儲存至CRX存放庫，然後傳送電子郵件給您。 最適化表單包含OOTB提交動作存放區內容（已棄用），可將資料儲存至CRX存放庫。 此外，AEM還提供可用於傳送電子郵件的[郵件](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/day/cq/mailer/package-summary.html) API。 使用Mail API之前，請透過系統主控台設定Day CQ Mail服務。 您可以重複使用「儲存內容（已棄用）」動作，將資料儲存在存放庫中。 存放區內容（已棄用）動作可在CRX存放庫中的/libs/fd/af/components/guidessubmittype/store位置取得。
 
@@ -209,7 +209,7 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 
 ## 使用自訂提交動作的submitService屬性 {#submitservice-property}
 
-當您設定包含`submitService`屬性的自訂提交動作時，表單會在提交時觸發[FormSubmitActionService](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aemds/guide/service/FormSubmitActionService.html)。 `FormSubmitActionService`使用`getServiceName`方法來擷取`submitService`屬性的值。 服務會根據`submitService`屬性的值，叫用適當的送出方法。 將`FormSubmitActionService`加入您上傳至[!DNL AEM Forms]伺服器的自訂套件組合。
+當您設定包含`submitService`屬性的自訂提交動作時，表單會在提交時觸發[FormSubmitActionService](https://helpx.adobe.com/tw/experience-manager/6-5/forms/javadocs/com/adobe/aemds/guide/service/FormSubmitActionService.html)。 `FormSubmitActionService`使用`getServiceName`方法來擷取`submitService`屬性的值。 服務會根據`submitService`屬性的值，叫用適當的送出方法。 將`FormSubmitActionService`加入您上傳至[!DNL AEM Forms]伺服器的自訂套件組合。
 
 將字串型別的`submitService`屬性新增至自訂提交動作的`sling:Folder`，以啟用最適化表單的[!DNL Adobe Sign]。 您必須先設定自訂提交動作的&#x200B;**[!UICONTROL 屬性值，才能在Adaptive Form容器屬性的]**&#x200B;電子簽章&#x200B;**[!UICONTROL 區段中選取]**&#x200B;啟用Adobe簽署`submitService`選項。
 
