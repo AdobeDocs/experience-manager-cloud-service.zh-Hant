@@ -31,7 +31,7 @@ AEM (Adobe Experience Manager) AI Assistant提供對話式介面，旨在簡化�
 
 以下3分鐘39秒的影片逐步解說AEM AI Assistant。
 
->[!VIDEO](https://video.tv.adobe.com/v/3470354?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3470366?learn=on&captions=chi_hant)
 
 >[!IMPORTANT]
 >請確定您已檢閱並提交使用者合約，因此Adobe可以啟用AI Assistant功能，供您測試並參與私人測試版計畫。
