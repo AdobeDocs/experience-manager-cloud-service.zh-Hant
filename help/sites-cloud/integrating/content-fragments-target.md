@@ -210,7 +210,7 @@ ht-degree: 1%
 
 1. 在您的Target設定頁面上，按一下「可用設定」旁的&#x200B;**+** （加號）。
 
-1. 在[建立架構]對話方塊中，指定&#x200B;**標題**，選取&#x200B;**Adobe Target架構**，然後按一下[建立]****。
+1. 在[建立架構]對話方塊中，指定&#x200B;**標題**，選取&#x200B;**Adobe Target架構**，然後按一下[建立]&#x200B;**&#x200B;**。
 
    <!-- ![Configure Target Framework Dialog](assets/config-target-framework-dialog.png) -->
 
