@@ -27,11 +27,11 @@ ht-degree: 1%
 
    或者，按一下資產縮圖，然後選取![下載](/help/assets/assets/download-icon.svg)，在下載之前，先選取並檢視對話方塊上的可用轉譯。
 
-1. 若要下載多個資產，請選取資產，按一下![下載](/help/assets/assets/download-icon.svg) **[!UICONTROL 下載]**，並檢閱&#x200B;**[!UICONTROL 下載資產]**&#x200B;對話方塊中選取的資產清單。 按一下資產旁的![取消選取](/help/assets/assets/Close.svg)，從清單中取消選取該資產。 選取一或多個轉譯，然後按一下[下載] ****，將轉譯下載為單一ZIP檔。 選取&#x200B;**[!UICONTROL 智慧型裁切]**&#x200B;和&#x200B;**[!UICONTROL 靜態轉譯]**會下載每個選取資產的所有可用靜態和智慧型裁切轉譯。
+1. 若要下載多個資產，請選取資產，按一下![下載](/help/assets/assets/download-icon.svg) **[!UICONTROL 下載]**，並檢閱&#x200B;**[!UICONTROL 下載資產]**&#x200B;對話方塊中選取的資產清單。 按一下資產旁的![取消選取](/help/assets/assets/Close.svg)，從清單中取消選取該資產。 選取一或多個轉譯，然後按一下[下載] **&#x200B;**，將轉譯下載為單一ZIP檔。 選取&#x200B;**[!UICONTROL 智慧型裁切]**&#x200B;和&#x200B;**[!UICONTROL 靜態轉譯]**&#x200B;會下載每個選取資產的所有可用靜態和智慧型裁切轉譯。
    ![下載多個資產](/help/assets/assets/download-multiple-assets-CH.png)
 下載進行時，您可以繼續使用[!DNL Content Hub]。 Content Hub不會在下載過程中中斷您的工作流程。
    ![下載多個資產](/help/assets/assets/download-assets-notification-ch.png)
-如果**[!UICONTROL 下載資產]**&#x200B;對話方塊顯示資產授權，然後從左窗格（[!UICONTROL T&amp;C檔案]區段）選取每個授權，以預覽授權並在對話方塊的中間窗格中顯示與授權關聯的選取資產。 檢閱每個授權後，選取轉譯，按一下&#x200B;**[!UICONTROL 我已閱讀並接受上述條款與條件]**，並選取&#x200B;**[!UICONTROL 下載]**以下載它們。
+如果&#x200B;**[!UICONTROL 下載資產]**&#x200B;對話方塊顯示資產授權，然後從左窗格（[!UICONTROL T&amp;C檔案]區段）選取每個授權，以預覽授權並在對話方塊的中間窗格中顯示與授權關聯的選取資產。 檢閱每個授權後，選取轉譯，按一下&#x200B;**[!UICONTROL 我已閱讀並接受上述條款與條件]**，並選取&#x200B;**[!UICONTROL 下載]**&#x200B;以下載它們。
    ![下載多個資產](/help/assets/assets/download-multiple-licensed-assets-CH.png)
 
    >[!NOTE]
