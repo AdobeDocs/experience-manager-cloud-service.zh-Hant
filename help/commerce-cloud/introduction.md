@@ -1,87 +1,64 @@
 ---
 title: 簡介和概觀
-description: 了解如何使用及管理 Experience Manager Content and Commerce as a Cloud Service。
+description: 瞭解不同的店面選項
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 145cd4961bd9c0c7bb7e39a1d6dae67f240ecb4d
 workflow-type: tm+mt
-source-wordcount: '853'
-ht-degree: 98%
+source-wordcount: '635'
+ht-degree: 1%
 
 ---
 
 
 # Content and Commerce {#content-commerce}
 
-有了 Adobe Experience Manager Content and Commerce，品牌可以更快地擴展和創新，以提供差異化的商務體驗並抓住加速增長的線上支出。AEM Content and Commerce 將 Experience Manager 的沉浸式、全管道和個人化體驗與任意數量的商務解決方案相結合，為購物歷程的各個部分帶來差異化體驗，縮短實現價值的時間並推動更高的轉換率。
+隨著客戶對意圖型與高效能商務體驗的期望增加，品牌面臨著在不犧牲品質的情況下更快速地提供更多內容的壓力。 有了Adobe Experience Manager，品牌可以更快地進行擴展和創新，打造沈浸式商務體驗，並捕捉更多流量和不斷增長的線上支出。
 
-## Content and Commerce 如何幫助客戶獲致成功 {#successful}
+Adobe Experience Manager提供強大的工具，可建立和管理內容豐富、個人化的客戶體驗。 透過將AEM與商務解決方案(例如Adobe Commerce、Salesforce Commerce、SAP Commerce Cloud或任何其他解決方案)整合，品牌可整合內容與商務，以跨管道提供順暢的購物歷程。
 
-隨著客戶對在線商務體驗的期望不斷提高，品牌被迫更快地提供差異化體驗和更多內容。然而，實作內容管理平台通常需要大量時間和預算投資來開發基礎元素，例如自訂元件和編寫工具，並且會增加維護和更新成本。Experience Manager Sites 提供 Content and Commerce 作為 Experience Manager as a Cloud Service 的附加模組，提供立即可用的商務核心元件、編寫工具和參考店面，以加速上線，實現團隊間的無縫協作，並推動轉換率。
+## 店面方法概覽 {#overview}
 
-品牌可以將 Experience Manager 與 Adobe Commerce (Adobe Experience Cloud 的一部分) 以及任何所選的商務引擎相整合。有了 Experience Manager Content and Commerce，品牌可以：
+AEM可以根據您的情況和偏好設定為您提供支援。 請遵循下列指引，為您挑選正確的方法：
 
-* 更快地擴充和創新
-* 個人化體驗以推動轉換率
-* 建立一次，發佈到任何地方
-* 豐富和差異化客戶體驗
-* 使用商務資料存取簡化編寫
+* [使用Edge Delivery Services （建議）](#edge)
+* [使用您自己的店面(headless AEM整合)](#own-storefront)
+* [使用AEM CIF店面](#cif)
 
-## 引入 AEM 商務整合框架 (CIF) {#cif-intro}
+### 使用Edge Delivery Services （建議） {#edge}
 
-因為這些專案必須處理整合商務解決方案的複雜性。商務解決方案範圍廣泛，從 Adobe Commerce Cloud 等商務解決方案到一組自訂商務服務皆是。整合高度取決於使用案例和生態系統。它通常涉及各種不同地方並有許多不同型式：
+如果您的企業想要網路上速度最快且最適合AI的店面，而您的開發人員想要一流的開發人員體驗，請使用[Edge Delivery Services。](../edge/overview.md) Edge Delivery Services符合目前與未來的所有需求。 根據我們的後端和解決方案，您有不同的選項：
 
-* 整合複雜且動態的生態系統 (範例產品目錄)
-* 企業必須透過其自身的生命週期，以有效率且全通路的方式管理產品內容
-* 為各種不同的個人建立複雜和個人化的購物歷程
-* 能夠在後端和前端快速適應和創新
-* 執行可擴充和穩定的 E2E 基礎架構，該基礎架構旨在實現最佳效能 (限時特賣、黑色星期五 ...)這包括統一的搜尋和快取管理。
+#### 1.與Adobe Commerce as a Cloud Service整合 {#acaacs}
 
-這種複雜性可能為導致故障點出現、TCO 增加、延遲和價值實現降低。這些原因促使開發商務整合框架 (CIF)，它是 Experience Manager 的附加元件。CIF 擴充 Experience Manager 使其具有商務功能，並標準化與商務引擎的整合。其結果是一個面向未來、穩定和可擴展的解決方案，且 TCO 會降低。它提供靈活的工具和無縫整合的功能，開啟技術和商業創新，以建立極具吸引力的商務體驗。
+如果您使用Edge Delivery和[Adobe Commerce店面](https://experienceleague.adobe.com/developer/commerce/storefront/)作為起點，這是完美的解決方案。 店面附有預先與Adobe Commerce服務、API整合的展示板，並提供各種Commerce下拉式元件以快速建立店面。
 
-![CIF 元素](./assets/CIF/CIF_Overview.png)
+適用性極佳：Adobe Commerce as a Cloud Service的一般店面體驗
 
-## 自 2013 年以來 CIF 成功支援客戶 {#support}
+#### 2.與Adobe Commerce Optimizer整合（適用於任何第三方解決方案） {#aco}
 
-CIF 擁有 200 多家客戶，已成為成功內容和商務專案的成功要素。這為當今和未來的 IT 和商業提供了價值。最近的客戶專案將 CIF 描述為「創造極多價值的優異加速器和巨大省時器」。
+如果您想要整合現有的商務解決方案並提升目錄效能，Adobe的建議是使用[Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)作為現代化的整合層。 Commerce Optimizer透過用於目錄和商品銷售的高效能SaaS服務來增強您的商務解決方案。 和Adobe Commerce as a Cloud Service一樣，[Adobe Commerce店面](https://experienceleague.adobe.com/developer/commerce/storefront/)可立即與其搭配使用。
 
-## CIF 的優點 {#cif-benefits}
+可與商業商務解決方案(例如Salesforce Commerce)整合。 請洽詢您的Adobe代表。
 
-CIF 提供開箱即用的商務核心元件，可減少對自訂程式碼的需求，從而加快品牌的上市時間。所有核心元件都與 Adobe 的用戶端資料相整合且立即可用，以序列化客戶設定檔，例如統一的設定檔。此設定檔會詳細捕捉訪客行為，可用於即時預測和個人化客戶歷程。
+適用性極佳：使用現有商務解決方案提供典型的店面體驗
 
-CIF 附加元件將產品情境帶入 Experience Manager 並提供編寫工具 (例如產品主控台) 和產品/類別選擇器，使行銷人員不用依賴開發人員，即可在 Experience Manager 中建立和傳遞可購物的體驗。優點包括：
+#### 3.自訂整合 {#custom}
 
-### 體驗 {#experiences}
+如果您想要建立自訂整合，Adobe也建議使用Edge Delivery Services。 您可以從頭開始，或在Edge Delivery店面中重複使用現有JS-framework商務元件（例如交易零件）。 如此一來，您的客戶將獲得超快的購物體驗，並具備代理程式功能，同時您可以重複利用現有的投資來增加TTV。 您的起始點是預設的[Edge Delivery樣板](https://www.aem.live/developer/tutorial)。
 
-強大的 AEM CIF 工具可讓內容建立者以可擴展且與傳遞無關的方式，快速建立豐富及個人化的商務體驗，以利用商機。
+配合良好：Edge Deliery店面的低價值
 
-![CIF 元素](./assets/CIF/CIF_Product_Experience_Management.png)
+### 使用您自己的店面(Headless AEM整合) {#own-storefront}
 
-### 實現價值時間 (TTV) {#ttv}
+您已有現成的店面（例如使用React JS建置），且想要使用Adobe Experience Manager進行內容管理和傳送（內容片段）、資產，以及內容內編輯（通用編輯器）。 您整合的起點是[Adobe Experience Manager as a Headless CMS簡介](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/headless/introduction)和[CIF附加元件](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/authoring/enrich-product-associated-content)。 CIF附加元件可讓您將產品資料順暢整合至AEM (在AEM UI中搜尋、瀏覽和尋找產品)，以便用於建立商務專屬體驗。
 
-使用 [AEM 核心元件](https://www.aemcomponents.dev/)、[AEM Venia 參考店面](https://github.com/adobe/aem-cif-guides-venia)、[AEM 專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant) 以及適用 PWA 的整合模式 (Headless 內容和商務)，加速專案開發。
+### AEM CIF店面 {#cif}
 
-CIF 旨在透過始終保持最新的附加元件不斷創新，使客戶能夠存取新的和改進的功能。
+Adobe的建議與參考架構為使用Edge Delivery Services。 CIF店面及其AEM CIF核心元件現在處於維護模式，不應在新專案中使用。 如需參考，請參閱[CIF檔案。](/help/commerce-cloud/cif-introduction.md)
 
-### 整合 {#integrations}
-
-使用 [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html)、微服務式無伺服器的 PaaS 和 [CIF 的參考實作](https://github.com/adobe/commerce-cif-graphql-integration-reference)，將您的生態系統 (例如，商務解決方案) 與 Experience Cloud 相連接。
-
-## 經驗證的模式和最佳做法 {#proven}
-
-CIF 透過基於最佳做法的標準化整合模式支援客戶。這有助於客戶在今日獲致成功，也可靈活地與客戶一起成長並適應未來的需求：
-
-* 消除可能發生的產品目錄整合方面的典型挑戰。範例：
-   * 目錄量或複雜性變高的效能問題
-   * 無法存取中繼資料
-   * 需要即時產品資料和體驗
-* 數位化日益成熟導致對體驗管理的需求。CIF 提供產品體驗管理功能，無需額外的 IT 工作即可逐步整合。
-* 為全管道做好準備：CIF 支援各種具有模式、加速器和核心元件的接觸點技術 (伺服器端、混合、用戶端)。
-
-## 歷程 {#journey}
-
-如果您正在依循 Commerce 歷程，請移至下一步：
-
-* [AEM 內容作者歷程](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/getting-started.md)
+>[!NOTE]
+>
+>現有客戶若想使用新的AEM / Commerce功能，應將其網站移至Edge Delivery。 常見的模式是僅將一部分頁面移動到Edge Delivery，並以並排方式執行Edge Deliery和CIF頁面。 您也可以使用新的[AEM CIF增益集元件](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)來取代Commerce元件，以運用新的Commerce功能。

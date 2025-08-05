@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: 504c89b2906478980f3e004aa40f098ffdfc687b
-workflow-type: ht
-source-wordcount: '6551'
-ht-degree: 100%
+source-git-commit: 0e55162f7faf34f6bedf4e25dba9e1e91396fb8d
+workflow-type: tm+mt
+source-wordcount: '6553'
+ht-degree: 99%
 
 ---
 
@@ -1017,6 +1017,7 @@ ht-degree: 100%
    + [Screens as a Cloud Service 常見問題集](/help/screens-cloud/screens-cloud-faqs.md)
 + Content and Commerce {#content-and-commerce}
    + [簡介和概觀](/help/commerce-cloud/introduction.md)
+   + [CIF簡介](/help/commerce-cloud/cif-introduction.md)
    + [AEM Content and Commerce as a Cloud Service 的重大變更](/help/commerce-cloud/changes.md)
    + Commerce 歷程 {#journeys}
       + 內容作者歷程 {#author}
