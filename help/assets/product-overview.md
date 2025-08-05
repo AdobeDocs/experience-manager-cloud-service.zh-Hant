@@ -2,9 +2,9 @@
 title: Content Hub 概觀
 description: 深入了解 Content Hub、其主要優勢、如何存取，以及如何針對 Content Hub 中的選項提供意見反應。
 exl-id: c5908058-f1ad-4aaa-9e8e-c0157e107ed1
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 797d1e275bcb8e949171d322871b377582e72a71
 workflow-type: ht
-source-wordcount: '683'
+source-wordcount: '627'
 ht-degree: 100%
 
 ---
@@ -36,10 +36,6 @@ Content Hub 中最常見的屬性 (例如用於搜尋的篩選器、新增或匯
 **讓非創意人員能夠編輯和混編內容，同時保持品牌形象**
 
 Content Hub 可讓您使用 Adobe Express 來建立新內容 (如果您具有 Adobe Express 權益)。您可以使用易於使用的工具來編輯現有內容、使用範本和品牌元素製作品牌變化版本，並使用 Adobe Firefly 的最新 GenAI 功能來建立新內容。
-
-**取得如何跨團隊使用內容的分析**
-
-[!DNL Content Hub] 提供有關資產的珍貴分析、解決行銷利害關係人經常遇到的挑戰，也就是用於行銷活動、管道和不同區域中之資產的使用統計。透過清楚地了解資產的效能和受歡迎程度，可以提供對於增強使用者體驗來說相當重要的可操作分析。
 
 ## 先決條件 {#prerequisites-content-hub}
 
