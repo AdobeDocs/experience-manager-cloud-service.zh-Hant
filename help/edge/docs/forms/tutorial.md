@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
 source-git-commit: b194a8fc4e7490cc322b0868a8348e80626df7eb
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '1923'
+ht-degree: 100%
 
 ---
 
@@ -110,8 +110,8 @@ AEM Forms 範本可協助您很快開始使用預先設定最適化表單區塊�
 1. 現在您已經設定了內容資料夾，您應該可將資料夾連結到先前使用 AEM Forms 範本在 GitHub 建立的專案。 若要連接：
 
    1. 前往您先前使用 AEM Forms 範本建立的 GitHub 存放庫。
-   1. 在根資料夾中新增`fstab.yaml`檔案。
-   1. 將參照與路徑新增至您與AEM使用者共用的資料夾(forms@adobe.com)。
+   1. 在根資料夾中新增 `fstab.yaml` 檔案。
+   1. 將您與 AEM 使用者 (forms@adobe.com) 共用的資料夾路徑新增作為參考。
 
       ![Google Drive 上的範例內容](/help/edge/assets/replace-path-in-fstab-yaml-with-your-content-folder.png)
 
@@ -131,7 +131,7 @@ AEM Forms 範本可協助您很快開始使用預先設定最適化表單區塊�
       如需更多有關在 Microsoft SharePoint 中管理檔案的資訊，請參閱「[如何使用 Adobe SharePoint](https://www.aem.live/docs/setup-customer-sharepoint)」。
 
 
-   1. 在新增參考且一切看起來良好後，提交`fsatb.yaml`檔案。 如果您遇到任何建置問題，請參閱「[解決 GitHub 建置問題](#troubleshooting-github-build-issues)」。
+   1. 您新增參考且一切運作正常後，即可認可 `fsatb.yaml` 檔案。如果您遇到任何建置問題，請參閱「[解決 GitHub 建置問題](#troubleshooting-github-build-issues)」。
 
       ![提交更新的 fsatab.yaml 檔案](/help/edge/assets/commit-updated-fstab-yaml.png)
 
@@ -240,7 +240,7 @@ URL：`https://main--wefinance--wkndform.aem.live/enquiry`
        npm install -g @adobe/aem-cli
    ```
 
-1. 複製您的 GitHub 專案：使用以下命令從 GitHub 原地複製您的專案存放庫，更換為 &lt;owner> 存放庫所有者和 &lt;repo> 存放庫名稱：
+1. 複製您的 GitHub 專案：使用以下命令從 GitHub 原地複製您的專案存放庫，更換為 <owner> 存放庫所有者和 <repo> 存放庫名稱：
 
    ```
    git clone https://github.com/<owner>/<repo>

@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
 source-git-commit: 0e7375adb146c370a189127838d736290d1860ad
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '1849'
+ht-degree: 100%
 
 ---
 
@@ -65,17 +65,16 @@ AEM Forms 範本可協助您很快開始使用預先設定最適化表單區塊�
 1. 現在將您使用 AEM Forms 範本建立的 GitHub 存放庫連結至您的 AEM 專案製作環境。若要連接：
 
    1. 前往您先前使用 AEM Forms 範本建立的 GitHub 存放庫。
-   1. 在根資料夾中新增&#x200B;**fstab.yaml**&#x200B;檔案。
+   1. 在根資料夾中新增 **fstab.yaml** 檔案。
 
       ![開啟 fstab.yaml 檔案](/help/edge/docs/forms/assets/open-fstab.png)
 
-   1. 將專案的掛接點新增至&#x200B;**fstab.yaml**&#x200B;檔案。 新增AEM as a Cloud Service編寫執行個體的URL。
-
+   1. 新增專案的掛載點至 **fstab.yaml** 檔案。新增您的 AEM as a Cloud Service 製作實例的 URL。
       `https://<aem-author>/bin/franklin.delivery/<owner>/<repository>/main`
 
       ![編輯 fstab.yaml 檔案](/help/edge/docs/forms/assets/edit-fstab-file.png)
 
-   1. 在新增參考且一切看起來正常之後，提交&#x200B;**fstab.yaml**&#x200B;檔案。
+   1. 在您新增參考且一切運作正常後，即可認可 **fstab.yaml** 檔案。
 
       ![認可變更](/help/edge/docs/forms/assets/commit-fstab-changes.png)
 
@@ -343,7 +342,7 @@ AEM Forms 範本可協助您很快開始使用預先設定最適化表單區塊�
        npm install -g @adobe/aem-cli
    ```
 
-1. **原地複製您的 GitHub 專案**：使用下列命令從 GitHub 原地複製您的 AEM 專案存放庫，取代為 &lt;owner> 存放庫所有者和 &lt;repo> 存放庫名稱：
+1. **原地複製您的 GitHub 專案**：使用下列命令從 GitHub 原地複製您的 AEM 專案存放庫，取代為 <owner> 存放庫所有者和 <repo> 存放庫名稱：
 
    ```
    git clone https://github.com/<owner>/<repo>
