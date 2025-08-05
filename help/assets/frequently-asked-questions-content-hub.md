@@ -2,10 +2,10 @@
 title: Content Hub 常見問題 (FAQ)
 description: 了解一些 Content Hub 最常見問題 (FAQ) 的答案。
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
-source-git-commit: 642440e1349eb94adb2f1875a0c5f36d0673d702
-workflow-type: ht
-source-wordcount: '1496'
-ht-degree: 100%
+source-git-commit: 4125f6d99c1c1d63b9234d66dc552695bd30e7bc
+workflow-type: tm+mt
+source-wordcount: '1669'
+ht-degree: 89%
 
 ---
 
@@ -134,5 +134,29 @@ Adobe 提供從 Brand Portal 到 Content Hub 的遷移支援，您可以透過�
 |  | 管理員釘選的集合 | ✓ | − |
 |  | 語意搜尋 | ✓ | − |
 |  | 本地化搜尋和後設資料顯示 | ✓ | − |
+
+## 如何選取存放庫以僅檢視所選環境的資產？ {#select-repository-multiple-environments}
+
+當您針對相同計畫為生產和其他較低環境設定Content Hub時，您可以選取存放庫並顯示所選環境的資產。 執行以下步驟：
+
+1. 按一下右窗格中的使用者圖示。
+
+1. 在&#x200B;**[!UICONTROL 產品設定]**&#x200B;區段中，選取&#x200B;**[!UICONTROL 選取存放庫]**。
+
+1. 從&#x200B;**[!UICONTROL 存放庫]**&#x200B;下拉式功能表中選取存放庫，然後按一下&#x200B;**[!UICONTROL 確定]**&#x200B;確認。
+
+   Content Hub現在會顯示所選環境的資產。
+
+## Content Hub如何顯示.ZIP檔案型別的縮圖預覽？ {#thumbnail-preview-zip-file}
+
+若要在Content Hub中提供.ZIP等fie型別的縮圖預覽，您可以將名稱為`cq5dam.preview.jpg`或`cq5dam.preview.png`的轉譯新增至AEM as a Cloud Service製作環境中可用.ZIP的路徑根目錄。
+
+您新增為轉譯的影像：
+
+* 可以是JPG、JPEG或PNG格式。
+
+* 必須小於50MB
+
+可用時，Content Hub會將影像顯示為Content Hub上.ZIP檔案的預覽縮圖。
 
 
