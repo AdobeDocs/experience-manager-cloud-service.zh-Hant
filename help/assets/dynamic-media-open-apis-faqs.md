@@ -3,9 +3,9 @@ title: 具有 OpenAPI 功能的 Dynamic Media 常見問題
 description: 具有 OpenAPI 功能的 Dynamic Media 常見問題
 role: User
 exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
-source-git-commit: 4c346ea4bd3ddea7f5f9f14af56a0b3ec779f9f9
+source-git-commit: 57ffeca8fc6c1a9e0b04a40fe5ddd1bf0fff50d9
 workflow-type: tm+mt
-source-wordcount: '1572'
+source-wordcount: '1573'
 ht-degree: 87%
 
 ---
@@ -42,7 +42,7 @@ Experience Manager Assets 可使用資產卡片上提供的已核准圖示來辨
 
 設定用於大量核准的資料夾後，所有新增至該資料夾的新資產都會自動獲得核准。所有現有資產都會在重新處理資產後獲得核准。請參閱[重新處理數位資產](/help/assets/reprocessing.md)以了解有關如何重新處理資產的指示。如果您從任何其他資料夾複製或移動未經核准的資產，就需要[重新處理資產](/help/assets/reprocessing.md)。
 
-如果管理員指定 `Rejected` `Rejected` 或 `Changes requested` 值，該資產會標記為 。Experience Manager Assets 可透過管理視圖中資產卡片上提供的![拒絕資產](/help/assets/assets/do-not-localize/reject-assets.svg)來辨別已拒絕狀態。
+如果管理員指定 `Rejected``Rejected` 或 `Changes requested` 值，該資產會標記為 。Experience Manager Assets 可透過管理視圖中資產卡片上提供的![拒絕資產](/help/assets/assets/do-not-localize/reject-assets.svg)來辨別已拒絕狀態。
 
 同樣地，Experience Manager Assets 可使用資產卡片上的下列已拒絕狀態，來辨別資產視圖中的已拒絕狀態：
 
@@ -133,7 +133,7 @@ Adobe 的一般指引是將具有 OpenAPI 堆疊的 Dynamic Media 用於執行�
 
 ## 部分修飾元會標示為「有限可用性」。 我如何開始使用它們？ {#use-limited-availability-modifiers}
 
-若要在帳戶的「有限可用性」中啟用修飾詞的生產使用：
+若要在您的帳戶中啟用有限可用性[中](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/)修飾詞的生產使用：
 
 1. [使用Admin Console建立Adobe支援案例](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html)。
 
