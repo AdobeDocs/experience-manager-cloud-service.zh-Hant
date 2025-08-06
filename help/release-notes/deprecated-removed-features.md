@@ -1,12 +1,12 @@
 ---
 title: 過時和移除的功能
 description: 特定於  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 中已過時和已移除功能的版本注意事項。
-mini-toc-levels: 2
+mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 6c7d7823fbe8440d414461c61d37681c5f205418
-workflow-type: ht
+source-git-commit: fbe20eb0e57be3a6d02d163d92b13be060ac8ba6
+workflow-type: tm+mt
 source-wordcount: '3193'
 ht-degree: 100%
 
