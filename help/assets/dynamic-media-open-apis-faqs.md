@@ -42,7 +42,7 @@ Experience Manager Assets 可使用資產卡片上提供的已核准圖示來辨
 
 設定用於大量核准的資料夾後，所有新增至該資料夾的新資產都會自動獲得核准。所有現有資產都會在重新處理資產後獲得核准。請參閱[重新處理數位資產](/help/assets/reprocessing.md)以了解有關如何重新處理資產的指示。如果您從任何其他資料夾複製或移動未經核准的資產，就需要[重新處理資產](/help/assets/reprocessing.md)。
 
-如果管理員指定 `Rejected``Rejected` 或 `Changes requested` 值，該資產會標記為 。Experience Manager Assets 可透過管理視圖中資產卡片上提供的![拒絕資產](/help/assets/assets/do-not-localize/reject-assets.svg)來辨別已拒絕狀態。
+如果管理員指定 `Rejected` `Rejected` 或 `Changes requested` 值，該資產會標記為 。Experience Manager Assets 可透過管理視圖中資產卡片上提供的![拒絕資產](/help/assets/assets/do-not-localize/reject-assets.svg)來辨別已拒絕狀態。
 
 同樣地，Experience Manager Assets 可使用資產卡片上的下列已拒絕狀態，來辨別資產視圖中的已拒絕狀態：
 
