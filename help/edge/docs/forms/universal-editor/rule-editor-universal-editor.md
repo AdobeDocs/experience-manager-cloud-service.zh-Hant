@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: ccfb85da187e828b5f7e8b1a8bae3f483209368d
 workflow-type: tm+mt
 source-wordcount: '3597'
 ht-degree: 22%
@@ -16,6 +16,7 @@ ht-degree: 22%
 # 通用編輯器中動態Forms的規則編輯器
 
 Universal Editor中的規則編輯器可讓您建立智慧型動態表單，以即時回應使用者的輸入。 您可以將靜態表單轉換為具有條件欄位可見性、自動化計算和複雜商業邏輯的互動式體驗，而完全不需要撰寫程式碼。
+
 
 ## 學習內容
 

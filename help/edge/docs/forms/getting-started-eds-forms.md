@@ -4,9 +4,9 @@ description: 了解如何在 Adobe Experience Manager Edge Delivery Services 上
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: ccfb85da187e828b5f7e8b1a8bae3f483209368d
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '580'
 ht-degree: 100%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 # 開始使用 AEM Edge Delivery Services 上的 Forms
 
-<span class="preview">這是一項預先發佈功能，可透過我們的<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hant#new-features">預先發佈管道</a>取得。</span>
+<!--<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">pre-release channel</a>. </span>-->
 
 透過 Adobe Experience Manager (AEM) Edge Delivery Services (EDS)，您可以從邊緣提供極快速且高度可擴充的網頁體驗。本指南說明&#x200B;**如何建置和發佈符合這些體驗的表單**，並具備明確的建議階層：
 

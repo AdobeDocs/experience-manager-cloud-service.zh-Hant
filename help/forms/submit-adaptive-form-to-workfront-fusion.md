@@ -6,18 +6,18 @@ topic-tags: author, developer
 feature: Adaptive Forms, Foundation Components, Edge Delivery Services, Core Components
 role: Admin, User
 exl-id: d3efb450-a879-40ae-8958-0040f99bdafc
-source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
+source-git-commit: dabf8029577c5fb6bb5eebdbf10d77f3d4d95a5d
 workflow-type: tm+mt
-source-wordcount: '1287'
+source-wordcount: '1304'
 ht-degree: 4%
 
 ---
 
-# 向 Adobe Workfront Fusion 提交最適化表單
+# 將自適應表單提交至 Adobe Workfront Fusion
 
 <span class="preview">此功能可在早期採用者方案下使用。 您可以從您的官方電子郵件ID寫信到aem-forms-ea@adobe.com ，以加入率先採用者計畫並請求存取該功能。</span>
 
-[Adobe Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html?lang=zh-Hant)會自動執行重複相同工作的程式，例如檔案核准工作流程、電子郵件篩選和排序，讓您專注在新工作上，而非重複工作。 Adobe Workfront Fusion包含多個情境。 案例由一系列模組組成，這些模組會在應用程式和Web服務之間執行資料傳輸。 在案例中，您會新增各種步驟（模組）來自動化工作。
+[Adobe Workfront Fusion](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/workfront-fusion-overview.html)會自動執行重複相同工作的程式，例如檔案核准工作流程、電子郵件篩選和排序，讓您專注在新工作上，而非重複工作。 Adobe Workfront Fusion包含多個情境。 案例由一系列模組組成，這些模組會在應用程式和Web服務之間執行資料傳輸。 在案例中，您會新增各種步驟（模組）來自動化工作。
 
 例如，使用Workfront Fusion，您可以建立案例來透過Adaptive Form收集資料、處理資料，以及傳送資料至資料存放區進行封存。 一旦設定了案例，每當使用者填寫表單時，Workfront Fusion就會自動執行工作，順暢地更新資料存放區。
 
@@ -31,12 +31,14 @@ AEM Forms as a Cloud Service提供OOTB聯結器，可連線最適化表單並將
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427145/adaptive-forms-adobe-workfront-af-workfront-workfront-aem-forms/?quality=12&learn=on)
 
+<span>此影片僅適用於核心元件。 若為UE/Foundation元件，請參閱文章。</span>
+
 ## 整合AEM Forms與Adobe Workfront Fusion的必要條件 {#prerequisites}
 
 若要在Workfront Fusion和AEM Forms之間建立連線，需具備下列條件：
 
-* 有效的[Workfront和Workfront Fusion授權](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html?lang=zh-Hant)。
-* 有權存取[開發主控台](https://my.cloudmanager.adobe.com/)以[擷取服務認證](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=zh-Hant)的AEM使用者。
+* 有效的[Workfront和Workfront Fusion授權](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-fusion/get-started-with-workfront-fusion/license-automation-vs-integration.html)。
+* 有權存取[開發主控台](https://my.cloudmanager.adobe.com/)以[擷取服務認證](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html)的AEM使用者。
 
 ## 將AEM Forms與Adobe Workfront Fusion整合
 
@@ -103,7 +105,7 @@ AEM Forms as a Cloud Service提供OOTB聯結器，可連線最適化表單並將
    >
    > 執行個體URL是指向特定AEM Forms執行個體的唯一網址。
 
-   您可以從建立連線所需的開發人員主控台[擷取](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=zh-Hant)服務認證。
+   您可以從建立連線所需的開發人員主控台[擷取](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html)服務認證。
 
 1. 從開發人員主控台中的服務認證中，將`ims-na1.adobelogin.com`IMS端點&#x200B;**中的**&#x200B;取代為&#x200B;**imsEndpoint**&#x200B;的值。
 
@@ -178,7 +180,7 @@ AEM Forms as a Cloud Service提供OOTB聯結器，可連線最適化表單並將
 若要設定使用通用編輯器編寫的最適化表單的提交動作：
 
 1. 開啟最適化表單進行編輯。
-1. 按一下編輯器上的&#x200B;**編輯表單屬性**&#x200B;擴充功能。
+1. 按一下編輯器上的&#x200B;**編輯表單屬性**擴充功能。
 **表單屬性**&#x200B;對話方塊就會顯示。
 
    >[!NOTE]

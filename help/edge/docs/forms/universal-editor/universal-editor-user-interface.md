@@ -6,9 +6,9 @@ feature: Edge Delivery Services
 role: User, Developer, Admin
 level: Beginner
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: 53b1d38eb0e9e6cf18ca3ef7b1414bc231c82098
 workflow-type: tm+mt
-source-wordcount: '2209'
+source-wordcount: '2358'
 ht-degree: 4%
 
 ---
@@ -77,7 +77,7 @@ Universal Editor介面分為四個主要區域，每個區域都針對特定工�
 
 **主要動作：**
 
-- 按一下屬性面板中的&#x200B;**新增**&#x200B;按鈕，即可新增元件&#x200B;**&#x200B;**
+- 按一下屬性面板中的&#x200B;**新增**&#x200B;按鈕，即可新增元件&#x200B;****
 - **選取元素**，方法是直接在畫布中按一下這些元素
 - **在設定元件時檢視即時變更**
 - 在預覽模式下測試&#x200B;**互動**
@@ -180,14 +180,14 @@ Universal Editor介面分為四個主要區域，每個區域都針對特定工�
 **用途：**&#x200B;在沒有編輯器介面的新索引標籤中檢視您的表單\
 **何時使用：**&#x200B;若要進行全熒幕測試，請與利害關係人共用以進行檢閱
 
-    ！[開啟頁面](/help/edge/docs/forms/universal-editor/assets/ue-openpage.png)
+![開啟頁面](/help/edge/docs/forms/universal-editor/assets/ue-openpage.png)
 
 #### **發佈**
 
 **用途：**&#x200B;讓您的表單上線且可供使用者存取\
 **使用時機：**&#x200B;在預覽和回應模式中進行徹底測試之後
 
-    ！[發佈](/help/edge/docs/forms/universal-editor/assets/ue-publish.png)
+![發佈](/help/edge/docs/forms/universal-editor/assets/ue-publish.png)
 
 發佈前&#x200B;**驗證檢查清單：**
 
@@ -216,12 +216,22 @@ Universal Editor介面分為四個主要區域，每個區域都針對特定工�
 
 **這些工具用於特定案例或進階設定：**
 
-#### **編輯表單屬性**
+#### **AEM表單屬性**
 
 **用途：**&#x200B;設定表單層級設定，例如表單資料模型(FDM)和發佈日期\
 **使用時機：**&#x200B;設定資料整合，排程發佈
 
 ![表單屬性](/help/edge/docs/forms/universal-editor/assets/ue-formproperties.png)
+
+![表單屬性精靈](/help/edge/docs/forms/universal-editor/assets/form-properties-ue.png)
+
+「表單屬性」面板包含下列區段：
+
+- **提交**：定義使用者提交表單後會發生什麼事。 從多個提交動作中進行選擇，例如透過電子郵件傳送資料、提交至SharePoint、使用表單資料模型，或整合Adobe Experience Platform或Microsoft Power Automate等服務。 如需支援提交動作的完整清單，請參閱[提交動作](/help/edge/docs/forms/universal-editor/submit-action.md)文章。
+
+- **預填**：設定使用者與表單互動前，表單欄位自動填入的方式。 您可以連線至表單資料模型(FDM)等資料來源，或使用URL引數預先填入欄位，增強使用者體驗並減少手動輸入。 若要深入瞭解，請參閱[預填服務](/help/edge/docs/forms/universal-editor/prefill-form.md)文章。
+
+- **謝謝**：自訂使用者在提交表單後看到的內容。 您可以顯示確認訊息，或將訊息重新導向至其他網頁，確保順利且專業的完成體驗。 若要瞭解如何設定表單的感謝訊息，請參閱[設定感謝訊息](/help/edge/docs/forms/universal-editor/configure-thankyou-message.md)文章。
 
 #### **規則編輯器** （可提早存取）
 
@@ -521,4 +531,3 @@ Universal Editor介面分為四個主要區域，每個區域都針對特定工�
 4. **主規則編輯器** — 使用[規則編輯器指南](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)新增動態行為
 
 **請記住：**&#x200B;通用編輯器的設計是要讓表單建置變得直覺化。 從基本功能開始，隨著您的需求增長，逐步探索進階功能。
-

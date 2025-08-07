@@ -5,9 +5,9 @@ Keywords: How to connect a Marketo instance with form? , Connect a form to Marke
 Feature: Adaptive Forms, Form Data Model
 Role: User, Developer
 exl-id: 1fcba628-ffd8-416a-a8b5-76b35d4aabd4
-source-git-commit: ce4646d8db1870f8ec85faddeb4e0a6a04f4c46e
+source-git-commit: dabf8029577c5fb6bb5eebdbf10d77f3d4d95a5d
 workflow-type: tm+mt
-source-wordcount: '1012'
+source-wordcount: '1029'
 ht-degree: 5%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 5%
 
 ![工作流程](/help/forms/assets/workflow-marketo-4.png)
 
-建立雲端服務設定以將Marketo Engage與AEM Forms整合後，您可以設定最適化表單以與[Adobe Marketo Engage](https://experienceleague.adobe.com/zh-hant/docs/marketo/using/home)整合。
+建立雲端服務設定以將Marketo Engage與AEM Forms整合後，您可以設定最適化表單以與[Adobe Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home)整合。
 
 您可以使用表單精靈將Marketo Engage連線至調適型表單，透過引導您完成每個步驟來簡化設定程式。 其中包括選取範本、樣式和資料欄位，以及設定資料對應以確保您的表單在建立後可以與Marketo Engage通訊。 使用表單精靈，您也可以設定最適化表單，在提交時直接將資料提交至Adobe Marketo Engage。
 
@@ -37,6 +37,8 @@ ht-degree: 5%
 ## 如何設定新的最適化表單以與Marketo Engage整合？
 
 >[!VIDEO](https://video.tv.adobe.com/v/3442867/marketo-aem-marketo-engage-engage-aem-forms)
+
+<span>此影片僅適用於核心元件。 若為UE/Foundation元件，請參閱文章。</span>
 
 >[!BEGINTABS]
 
@@ -178,7 +180,7 @@ ht-degree: 5%
 
 ## 下一步
 
-您也可以將最適化表單與[Munchkin資料庫](https://experienceleague.adobe.com/zh-hant/docs/marketo/using/product-docs/administration/setup/munchkin)連線，以追蹤造訪次數、點按次數和表單提交次數。
+您也可以將最適化表單與[Munchkin資料庫](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/setup/munchkin)連線，以追蹤造訪次數、點按次數和表單提交次數。
 
 ## 相關的文章
 

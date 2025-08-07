@@ -5,9 +5,9 @@ Keywords: Submit data to Marketo engage, Configure submit action as Submit to Ma
 Feature: Adaptive Forms, Form Data Model
 Role: User, Developer
 exl-id: 0683564b-1ac4-42b4-bc08-101c4fdef286
-source-git-commit: ce4646d8db1870f8ec85faddeb4e0a6a04f4c46e
+source-git-commit: dabf8029577c5fb6bb5eebdbf10d77f3d4d95a5d
 workflow-type: tm+mt
-source-wordcount: '716'
+source-wordcount: '733'
 ht-degree: 4%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 4%
 
 ![工作流程](/help/forms/assets/workflow-marketo-3.png)
 
-最適化Forms編輯器提供&#x200B;**提交至Marketo Engage**&#x200B;提交動作，以將最適化Forms資料傳送至Adobe Marketo Engage進行處理。 您可以設定現有的最適化表單，在提交時提交資料至[Adobe Marketo Engage](https://experienceleague.adobe.com/zh-hant/docs/marketo/using/home)。
+最適化Forms編輯器提供&#x200B;**提交至Marketo Engage**&#x200B;提交動作，以將最適化Forms資料傳送至Adobe Marketo Engage進行處理。 您可以設定現有的最適化表單，在提交時提交資料至[Adobe Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home)。
 
 提供多種現成可用的提交動作，用於處理表單提交。 您可以在[最適化表單提交動作](/help/forms/configure-submit-actions-core-components.md)文章中進一步瞭解這些選項。
 
@@ -35,6 +35,9 @@ ht-degree: 4%
 ## 如何為現有表單設定提交動作至Marketo Engage？
 
 >[!VIDEO](https://video.tv.adobe.com/v/3442866/submit-action-marketo-engage-marketo-aem-aem-forms-engage)
+
+<span>此影片僅適用於核心元件。 若為UE/Foundation元件，請參閱文章。</span>
+
 
 >[!BEGINTABS]
 
@@ -69,7 +72,7 @@ ht-degree: 4%
 您可以設定在Universal Editor中編寫的最適化表單的提交動作，以將資料提交至Adobe Marketo Engage。 若要設定向Marketo Engage提交動作，請執行以下步驟：
 
 1. 開啟最適化表單進行編輯。
-1. 按一下編輯器上的&#x200B;**編輯表單屬性**&#x200B;擴充功能。
+1. 按一下編輯器上的&#x200B;**編輯表單屬性**擴充功能。
 **表單屬性**&#x200B;對話方塊就會顯示。
 
    >[!NOTE]
@@ -94,7 +97,7 @@ ht-degree: 4%
 
 ## 下一步
 
-您也可以將最適化表單與[Munchkin資料庫](https://experienceleague.adobe.com/zh-hant/docs/marketo/using/product-docs/administration/setup/munchkin)連線，以追蹤造訪次數、點按次數和表單提交次數。
+您也可以將最適化表單與[Munchkin資料庫](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/setup/munchkin)連線，以追蹤造訪次數、點按次數和表單提交次數。
 
 ## 相關的文章
 

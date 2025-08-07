@@ -5,9 +5,9 @@ keywords: 如何連線SharePoint檔案庫取得最適化表單、提交至ShareP
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 role: User, Developer
 exl-id: a00b4a93-2324-4c2a-824f-49146dc057b0
-source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
+source-git-commit: dabf8029577c5fb6bb5eebdbf10d77f3d4d95a5d
 workflow-type: tm+mt
-source-wordcount: '964'
+source-wordcount: '981'
 ht-degree: 28%
 
 ---
@@ -15,6 +15,9 @@ ht-degree: 28%
 # 將最適化表單連線至Microsoft® SharePoint檔案庫 {#connect-af-sharepoint-doc-library}
 
 >[!VIDEO](https://video.tv.adobe.com/v/3444368/formautomation-productivitytools-adaptiveforms--sharepointintegration-documentlibrary/?quality=12&learn=on)
+
+<span>此影片僅適用於核心元件。 若為UE/Foundation元件，請參閱文章。</span>
+
 
 若要以最適化表單使用&#x200B;**[!UICONTROL 提交至SharePoint檔案庫]**&#x200B;提交動作：
 
@@ -107,7 +110,7 @@ ht-degree: 28%
 執行以下步驟，使用在Universal Editor中編寫的最適化表單中的SharePoint檔案庫儲存設定，如下所示：
 
 1. 開啟最適化表單進行編輯。
-1. 按一下編輯器上的&#x200B;**編輯表單屬性**&#x200B;擴充功能。
+1. 按一下編輯器上的&#x200B;**編輯表單屬性**擴充功能。
 **表單屬性**&#x200B;對話方塊就會顯示。
 
    >[!NOTE]

@@ -6,7 +6,7 @@ feature: Edge Delivery Services
 role: User, Developer
 level: Beginner
 exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: ccfb85da187e828b5f7e8b1a8bae3f483209368d
 workflow-type: tm+mt
 source-wordcount: '1815'
 ht-degree: 1%
@@ -17,6 +17,7 @@ ht-degree: 1%
 # 使用通用編輯器建立回應式Forms
 
 使用者可在各式各樣的裝置上存取表單，包括桌上型電腦、平板電腦和智慧型手機。 設計回應式表單可確保為所有使用者提供最佳體驗，不受裝置影響。 本指南說明如何使用通用編輯器針對任何熒幕大小設計、測試和最佳化表單。
+
 
 回應式表單建立涉及兩個主要活動：
 

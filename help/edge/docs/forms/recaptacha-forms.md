@@ -4,17 +4,17 @@ description: 在 AEM Forms 適用的 Edge Delivery Services 表單中使用 Goog
 feature: Edge Delivery Services
 exl-id: ac104e23-f175-435f-8414-19847efa5825
 role: Admin, Architect, Developer
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: ccfb85da187e828b5f7e8b1a8bae3f483209368d
 workflow-type: tm+mt
-source-wordcount: '847'
-ht-degree: 97%
+source-wordcount: '815'
+ht-degree: 100%
 
 ---
 
 
 # reCAPTCHA 與 AEM Forms as a Cloud Service 適用的 Edge Delivery Services 搭配使用
 
-<span>**reCAPTCHA** 功能在預發行的程式中提供。若要要求存取適用於AEM Forms的Edge Delivery Services的&#x200B;**reCAPTCHA**&#x200B;功能，請從您的工作地址傳送電子郵件至mailto:aem-forms-ea@adobe.com。</span>
+<!--<span>The **reCAPTCHA** feature is under the pre-release program. To request access to the **reCAPTCHA** feature for Edge Delivery Services for AEM Forms, send an email from your work address to mailto:aem-forms-ea@adobe.com.</span>-->
 
 reCAPTCHA 是一種受歡迎的工具，用來保護網站免遭詐騙活動、垃圾郵件和濫用。在 Edge Delivery Services 中，最適化 Forms 區塊有新增 Google reCAPTCHA 的功能，可區分人類和機器人。此功能可讓使用者保護其網站免遭垃圾郵件和濫用。
 例如，考慮一個收集資料的查詢表單，例如開始和結束旅行日期、房間預算、預估旅行成本和旅行者資訊。在這種情況下，惡意使用者可能會利用該表單來發送網路釣魚電子郵件，或使用垃圾郵件機器人將不相關或有害內容填滿表單。整合 reCAPTCHA 可驗證提交內容是否來自真實使用者，以此提供更高的安全性並有效地減少垃圾郵件。

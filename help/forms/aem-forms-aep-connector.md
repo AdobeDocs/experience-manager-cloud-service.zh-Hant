@@ -6,14 +6,14 @@ docset: CloudService
 role: Admin, Developer, User
 feature: Adaptive Forms, Core Components
 exl-id: b0eb19d3-0297-4583-8471-edbb7257ded4
-source-git-commit: 628e60e43d0810ef9e871dd77ed1674d7646072b
+source-git-commit: dabf8029577c5fb6bb5eebdbf10d77f3d4d95a5d
 workflow-type: tm+mt
-source-wordcount: '1554'
-ht-degree: 1%
+source-wordcount: '2047'
+ht-degree: 2%
 
 ---
 
-# Adobe Experience Platform (AEP) 與 AEM Forms 的整合 {#aem-forms-aep-integration}
+# Adobe Experience Platform (AEP) 與 AEM Forms 整合 {#aem-forms-aep-integration}
 
 <span class="preview">連線Adaptive Forms (AEM Forms)與Adobe Experience Platform (AEP)的功能屬於搶先使用方案。 若要要求存取功能，只要從您的正式地址傳送電子郵件至[aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com?subject=Request%20for%20Early%20Access%20to%20AEP%20Connector%20\(AEM%20Forms%20Integration%20with%20Adobe%20Experience%20Platform\)&body=Dear%20AEM%20Forms%20Team%2C%0D%0A%0D%0AI%20hope%20this%20message%20finds%20you%20well.%0D%0A%0D%0AI%20am%20writing%20to%20request%20access%20to%20the%20Early%20Access%20Program%20for%20the%20AEP%20Connector%2C%20which%20enables%20integration%20between%20AEM%20Forms%20and%20Adobe%20Experience%20Platform.%0D%0A%0D%0AOrganization%20Name%3A%20%5BYour%20organization%20name%5D%0D%0AOrganization%20ID%3A%20%5BYour%20organization%20ID%2C%20if%20available%5D%0D%0AUse%20Case%3A%20%5BBriefly%20describe%20your%20intended%20use%20case%2C%20including%20goals%20or%20benefits%20you%20aim%20to%20achieve%20with%20the%20integration%5D%0D%0A%0D%0AThank%20you%20for%20your%20time%20and%20consideration.%0D%0A%0D%0ABest%20regards%2C%0D%0A%5BYour%20Full%20Name%5D%0D%0A%5BYour%20Job%20Title%2C%20if%20applicable%5D%0D%0A%5BYour%20Contact%20Information%2C%20if%20appropriate%5D)即可。 您也可以造訪<a href="/help/forms/early-access-ea-features.md">搶先使用方案</a>頁面，探索所有可用的創新與功能。. </span>
 
@@ -51,21 +51,23 @@ Adobe Experience Platform適用的AEM Forms Connector (AEP)是AEM Forms提供的
 
 >[!VIDEO](https://video.tv.adobe.com/v/3457850/)
 
+<span>此影片僅適用於核心元件。 若為UE/Foundation元件，請參閱文章。</span>
+
 ## 先決條件 {#prerequisites}
 
 在AEM Forms中設定AEP Connector之前，請確定您已在Adobe Experience Platform中完成下列操作：
 
 1. 結構描述設定
-   * [建立XDM結構描述](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/tutorials/create-schema-ui)
-   * [啟用結構描述以進行效能分析](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/tutorials/create-schema-ui#profile)
-   * [定義身分欄位](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/tutorials/create-schema-ui#profile)
+   * [建立XDM結構描述](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui)
+   * [啟用結構描述以進行效能分析](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui#profile)
+   * [定義身分欄位](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui#profile)
 
 2. 資料設定
-   * [建立資料集](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-datasets)
-   * [設定串流連線](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/ingestion/tutorials/create-streaming-connection) （您稍後需要串流端點URL，所以請記下它。）
+   * [建立資料集](https://experienceleague.adobe.com/en/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-datasets)
+   * [設定串流連線](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/tutorials/create-streaming-connection) （您稍後需要串流端點URL，所以請記下它。）
 
 3. 驗證
-   * 從Adobe Developer Console [產生API認證](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/landing/platform-apis/api-authentication#generate-credentials) （使用者端ID和使用者端密碼）
+   * 從Adobe Developer Console [產生API認證](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication#generate-credentials) （使用者端ID和使用者端密碼）
 
 
 ## 實作步驟
@@ -90,12 +92,17 @@ Adobe Experience Platform適用的AEM Forms Connector (AEP)是AEM Forms提供的
 
 ### 2.使用XDM結構描述整合建立表單 {#form-creation}
 
+>[!BEGINTABS]
+
+>[!TAB 基礎元件]
+
+執行以下步驟，透過結構描述整合根據基礎元件建立最適化表單：
+
 1. 存取表單建立精靈：
    * 導覽至您的&#x200B;**Adobe Experience Manager執行個體** > **Forms** > **Forms與檔案**。
    * 按一下&#x200B;**建立** > **最適化表單**。
-1. 在&#x200B;**來源**&#x200B;索引標籤中，選取範本
+1. 在&#x200B;**來源**&#x200B;索引標籤中，選取基礎範本。
 1. 在&#x200B;**資料**&#x200B;索引標籤中，選取&#x200B;**Adobe Experience Platform**&#x200B;選項。
-
 1. 在屬性窗格中，選取您的雲端設定。
 
    ![](/help/forms/assets/xdm-schema-integration.png)
@@ -121,6 +128,85 @@ Adobe Experience Platform適用的AEM Forms Connector (AEP)是AEM Forms提供的
    * 儲存路徑
 1. 將提交按鈕新增至表單。 您的表單已準備好將資料提交至AEP。
 
+>[!TAB 核心元件]
+
+執行以下步驟，透過結構描述整合根據核心元件建立最適化表單：
+
+1. 存取表單建立精靈：
+   * 導覽至您的&#x200B;**Adobe Experience Manager執行個體** > **Forms** > **Forms與檔案**。
+   * 按一下&#x200B;**建立** > **最適化表單**。
+1. 在&#x200B;**來源**&#x200B;索引標籤中，選取以核心元件為基礎的範本。
+1. 在&#x200B;**資料**&#x200B;索引標籤中，選取&#x200B;**Adobe Experience Platform**&#x200B;選項。
+1. 在屬性窗格中，選取您的雲端設定。
+
+   ![](/help/forms/assets/xdm-schema-integration.png)
+
+   系統會從Adobe Experience Platform載入所有可用的結構描述
+
+   >[!NOTE]
+   >
+   >
+   > * 只會擷取已啟用設定檔且非系統產生的結構描述。
+   > * 首次設定時，初始結構描述載入可能需要一些時間。
+
+1. 選取結構描述的適當/必要欄位。 （如需詳細步驟，請參閱影片）
+1. 在提交索引標籤中：
+   * 選取&#x200B;**提交至Adobe Experience Platform**&#x200B;提交動作
+   * 設定&#x200B;**AEM Forms資料提交至Experience Platform**&#x200B;的表單提交設定
+1. 在屬性窗格中：
+   * 新增串流URL (取自「AEP來源>串流連線」)
+   * 新增資料流程ID (可在AEP來源>流程> API使用資訊中找到)
+1. 按一下「**儲存**」。提供表單詳細資料：
+   * 標題
+   * 名稱
+   * 儲存路徑
+1. 將提交按鈕新增至表單。 您的表單已準備好將資料提交至AEP。
+
+>[!TAB 通用編輯器]
+
+執行以下步驟，透過結構描述整合來建立使用通用編輯器編寫的最適化表單：
+
+1. 存取表單建立精靈：
+   * 導覽至您的&#x200B;**Adobe Experience Manager執行個體** > **Forms** > **Forms與檔案**。
+   * 按一下&#x200B;**建立** > **最適化表單**。
+1. 在&#x200B;**來源**&#x200B;索引標籤中，選取Edge Delivery範本。
+1. 在&#x200B;**資料**&#x200B;索引標籤中，選取&#x200B;**Adobe Experience Platform**&#x200B;選項。
+1. 在屬性窗格中，選取您的雲端設定。
+
+   ![結構描述整合](/help/forms/assets/xdm-schema-integration.png)
+
+   系統會從Adobe Experience Platform載入所有可用的結構描述
+
+   >[!NOTE]
+   >
+   >
+   > * 只會擷取已啟用設定檔且非系統產生的結構描述。
+   > * 首次設定時，初始結構描述載入可能需要一些時間。
+
+1. 選取結構描述的適當/必要欄位。 （如需詳細步驟，請參閱影片）
+1. 在提交索引標籤中：
+   * 選取&#x200B;**提交至Adobe Experience Platform**&#x200B;提交動作
+   * 設定&#x200B;**AEM Forms資料提交至Experience Platform**&#x200B;的表單提交設定
+
+     >[!NOTE]
+     >
+     >* 如果您在Universal Editor介面中沒有看到「資料來源」圖示，或在右側屬性面板中沒有看到「繫結參考」屬性，請在Extension Manager中啟用&#x200B;**資料來源**&#x200B;擴充功能。
+     >* 如果您在通用編輯器介面中看不到&#x200B;**編輯表單屬性**&#x200B;圖示，請在Extension Manager中啟用&#x200B;**編輯表單屬性**&#x200B;擴充功能。
+     > 
+     > * 請參閱[Extension Manager功能焦點](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)文章，瞭解如何在通用編輯器中啟用或停用擴充功能。
+
+   通用編輯器目前不支援表單預填服務。
+
+1. 在屬性窗格中：
+   * 新增串流URL (取自「AEP來源>串流連線」)
+   * 新增資料流程ID (可在AEP來源>流程> API使用資訊中找到)
+1. 按一下「**儲存**」。提供表單詳細資料：
+   * 標題
+   * 名稱
+   * 儲存路徑
+1. 將提交按鈕新增至表單。 您的表單已準備好將資料提交至AEP。
+
+>[!ENDTABS]
 
 ## 重要附註 {#important-notes}
 
@@ -163,7 +249,7 @@ Adobe Experience Platform適用的AEM Forms Connector (AEP)是AEM Forms提供的
 答：目前每個表單只能提交至一個資料集。
 
 **問：可以處理多少表單提交是有限制的？**
-答：表單提交受限於您的AEP串流擷取[配額和速率限制](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-lifecycle/api/quota)。
+答：表單提交受限於您的AEP串流擷取[配額和速率限制](https://experienceleague.adobe.com/en/docs/experience-platform/data-lifecycle/api/quota)。
 
 <!-- >
 **Q: Can form attachments be sent to AEP?**
@@ -200,11 +286,11 @@ AEM Forms與Adobe Experience Platform的整合可讓組織在表單與更廣泛�
 
 ## 相關資源 {#related-resources}
 
-* [AEM Forms as a Cloud Service檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=zh-Hant)
-* [Adobe Experience Platform檔案](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=zh-Hant)
-* [XDM系統總覽](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=zh-Hant)
-* [在Adobe Experience Platform中串流擷取](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=zh-Hant)
-* [即時客戶個人檔案總覽](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=zh-Hant)
+* [AEM Forms as a Cloud Service檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html)
+* [Adobe Experience Platform檔案](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html)
+* [XDM系統總覽](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html)
+* [在Adobe Experience Platform中串流擷取](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html)
+* [即時客戶個人檔案總覽](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html)
 * [AEM Forms搶先存取功能](/help/forms/early-access-ea-features.md)
 * [使用核心元件建立最適化Forms](/help/forms/creating-adaptive-form-core-components.md)
 * [在AEM Forms中使用表單資料模型](/help/forms/using-form-data-model.md)

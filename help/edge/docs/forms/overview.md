@@ -4,9 +4,9 @@ description: 在 Adobe Experience Manager Edge Delivery Services 上建立和傳
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: ccfb85da187e828b5f7e8b1a8bae3f483209368d
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '879'
 ht-degree: 100%
 
 ---
@@ -48,7 +48,7 @@ AEM Forms 適用的 Edge Delivery Services 是一套可組合的服務，提供�
 
 ### 通用編輯器
 
-<span class="preview">這是一項預先發佈功能，可透過我們的<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hant#new-features">預先發佈管道</a>取得。</span>
+<!--<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">pre-release channel</a>. </span>-->
 
 [通用編輯器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)是一款適用於行銷人員和設計師的視覺化拖放式製作工具，兼具速度與企業級效能：
 

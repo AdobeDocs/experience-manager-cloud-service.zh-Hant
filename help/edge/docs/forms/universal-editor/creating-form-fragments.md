@@ -4,18 +4,18 @@ description: 了解如何在通用編輯器中建立表單片段，並將其新�
 feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: ccfb85da187e828b5f7e8b1a8bae3f483209368d
 workflow-type: tm+mt
-source-wordcount: '1407'
+source-wordcount: '1347'
 ht-degree: 97%
 
 ---
 
 # 在通用編輯器中建立表單片段
 
-<span class="preview">您可以透過搶先體驗方案使用這項功能。若要請求存取權，請使用您的官方地址發送電子郵件至 <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>，郵件內容須包含您的 GitHub 組織名稱和存放庫名稱。例如，若存放庫 URL 為 https://github.com/adobe/abc,，則組織名稱為 adobe，存放庫名稱為 abc。</span>
+<!--<span class="preview"> This feature is available through the early access program. To request access, send an email with your GitHub organization name and repository name from your official address to <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . For example, if the repository URL is https://github.com/adobe/abc, the organization name is adobe and the repository name is abc.</span> 
 
-<span class="preview">這是一項預先發佈功能，可透過我們的[預先發佈管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hant#new-features)存取。</span>
+<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>-->
 
 表單通常包括常見的區段，例如聯絡資訊、身分詳細資料或同意協議等。表單開發人員每次建置新表單時都要建立這些區段，這是不斷重複又耗時的過程。為了避免一再重複這些工作，通用編輯器會協助您建立可重複使用的表單部分 (如面板或欄位群組)，只需建立一次即可在各種表單中重複使用。這些可重複使用、模組化且獨立的區段即稱為表單片段。例如，您可以在表單的不同區段 (例如員工和主管的聯絡詳細資訊) 使用相同的緊急聯絡人片段。
 
@@ -122,7 +122,7 @@ ht-degree: 97%
 
    ![導覽至區段](/help/edge/docs/forms/universal-editor/assets/navigate-to-section.png)
 
-1. 按一下「**[!UICONTROL 新增]**」圖示，然後新增來自「**自適應表單元件**」清單的&#x200B;**[!UICONTROL 表單片段]**&#x200B;元件。
+1. 按一下「**[!UICONTROL 新增]**」圖示，然後新增來自「**自適應表單元件**」清單的&#x200B;**[!UICONTROL 表單片段]**元件。
    ![新增表單片段](/help/edge/docs/forms/universal-editor/assets/add-fragment.png)
 
    選取&#x200B;**[!UICONTROL 表單片段]**&#x200B;元件後，片段即會新增至您的表單中。您可以開啟片段的「**屬性**」來設定新增片段的屬性。例如，在「**屬性**」中隱藏片段的標題。

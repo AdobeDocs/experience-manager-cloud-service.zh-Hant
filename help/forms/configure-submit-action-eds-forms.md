@@ -4,19 +4,19 @@ description: 最適化表單提供多個提交動作。提交動作會定義提�
 keywords: 如何選取最適化表單的提交動作、將最適化表單連線至sharepoint清單、將最適化表單連線至sharepoint檔案庫、將最適化表單連線到表單資料模型(FDM)
 feature: Adaptive Forms, Edge Delivery Services
 role: User, Developer
-source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
+exl-id: 3f8950c3-9022-4e9f-b3ed-723245201e45
+source-git-commit: 2c3e8f6f8dab1004a6fbd9be8f5604b1570a1808
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 19%
 
 ---
 
-
 # 提交適用於Edge Delivery Services Forms的動作
 
 | 版本 | 文章連結 |
 |---------|-----------------------------|
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
 | AEM as a Cloud Service （基礎元件） | [按一下這裡](/help/forms/configuring-submit-actions.md) |
 | AEM as a Cloud Service （核心元件） | [按一下這裡](/help/forms/configure-submit-actions-core-components.md) |
 | AEM as a Cloud Service (Edge Delivery Services) | 本文章 |
@@ -33,7 +33,7 @@ ht-degree: 19%
 * [叫用Power Automate流程](/help/forms/forms-microsoft-power-automate-integration.md)
 * [提交到 SharePoint](/help/forms/configure-submit-action-sharepoint.md)
 * [叫用Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-* [使用表單資料模型 (FDM) 提交](/help/forms/using-form-data-model.md)
+* [使用表單資料模型 (FDM) 提交](/help/forms/integrate-adaptive-form-with-fdm.md)
 * [提交至 Azure Blob Storage](/help/forms/configure-submit-action-azure-blob-storage.md)
 * [提交至REST端點](/help/forms/configure-submit-action-restpoint.md)
 * [提交到 OneDrive](/help/forms/configure-submit-action-onedrive.md)
@@ -68,4 +68,3 @@ You can configure the submit action for forms created in the Universal Editor us
 ## 另請參閱 {#see-also}
 
 {{af-submit-action}}
-
