@@ -48,7 +48,7 @@ AEM Forms 適用的 Edge Delivery Services 是一套可組合的服務，提供�
 
 ### 通用編輯器
 
-<!--<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">pre-release channel</a>. </span>-->
+<!--<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hant#new-features">pre-release channel</a>. </span>-->
 
 [通用編輯器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)是一款適用於行銷人員和設計師的視覺化拖放式製作工具，兼具速度與企業級效能：
 
