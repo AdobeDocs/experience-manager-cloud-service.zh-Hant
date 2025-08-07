@@ -4,10 +4,10 @@ description: 了解如何使用 Edge Delivery Services 傳遞您的 Cloud Manage
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
-workflow-type: ht
-source-wordcount: '798'
-ht-degree: 100%
+source-git-commit: 040c8af18353cbcb9242570e6bb3bac73928e2fa
+workflow-type: tm+mt
+source-wordcount: '822'
+ht-degree: 97%
 
 ---
 
@@ -80,13 +80,14 @@ Cloud Manager 中的 **Edge Delivery 待辦事項清單**&#x200B;是上線任務
 | 1 | 加入生產共同作業管道 | 按一下「**立即提交請求**」，向 Adobe 提交為貴公司建立管道的請求。如果管道已存在，會將您轉至貴公司的管道。 |
 | 2 | 完成先決條件 | 請參閱「[檢視快速入門教學課程](https://www.aem.live/developer/tutorial)」。 |
 | 3 | 新增 Edge Delivery 網站或<br>立即建立網站 | 請參閱「[新增 Edge Delivery 網站](#eds-add-site)」。<br>請參閱「[在 Cloud Manager 中建立 Edge Delivery 網站](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)」。 |
-| 4 | 新增網域 | 請參閱[新增自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。 |
-| 5 | 新增 SSL 憑證 | 請參閱[新增 SSL 憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)。 |
-| 6 | 設定 Edge Delivery 網站的內容傳遞網路 | 請參閱[新增網域對應](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md)。 |
-| 7 | 設定推播驗證 | 請參閱「[為 Edge Delivery 網站設定推播驗證](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)」。 |
-| 8 | 上線 | 請參閱「[上線檢查清單](/help/edge/docs/go-live-checklist.md)」。 |
+| 4 | 設定Edge Delivery網站以使用外部Git存放庫 | 請參閱[設定Edge Delivery網站以使用外部Git存放庫](/help/implementing/cloud-manager/edge-delivery/config-edge-delivery-site-with-byog.md)。 |
+| 5 | 新增網域 | 請參閱[新增自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)。 |
+| 6 | 新增 SSL 憑證 | 請參閱[新增 SSL 憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)。 |
+| 7 | 設定 Edge Delivery 網站的內容傳遞網路 | 請參閱[新增網域對應](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md)。 |
+| 8 | 設定推播驗證 | 請參閱「[為 Edge Delivery 網站設定推播驗證](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)」。 |
+| 9 | 上線 | 請參閱「[上線檢查清單](/help/edge/docs/go-live-checklist.md)」。 |
 
->[!VIDEO](https://video.tv.adobe.com/v/3441574?learn=on&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## 記錄支援服務單 {#eds-support-ticket}
 

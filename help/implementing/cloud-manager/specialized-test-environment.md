@@ -5,9 +5,9 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="私人測試版" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: 815fb5c3-a171-4531-8727-b79183d85f06
-source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
+source-git-commit: 2d1b7385fec60a77f8c76f260fc87f9e5af428a3
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '519'
 ht-degree: 10%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 10%
 
 >[!NOTE]
 >
->&#x200B;>本文所述的功能只能透過私人測試版計畫取得。 若要註冊私人測試版，請參閱[專業測試環境](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment)。
+>>本文所述的功能只能透過私人測試版計畫取得。 若要註冊私人測試版，請參閱[專業測試環境](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment)。
 
 Specialized Testing Environment (DevXL)是您可以建立的新型Cloud Manager環境。 其設計可支援進階使用案例，例如使用者驗收測試(UAT)和效能驗證。 與傳統開發、快速開發或預備環境不同，DevXL環境會在生產部署管道之外操作。 因此，它們可為您提供更大的彈性，同時維持嚴格的隔離以防止干擾生產工作流程。
 
@@ -31,7 +31,7 @@ DevXL的建置可反映一般中繼環境的大小、擴充性和組態。 此�
 | 環境大小 | 符合中繼環境。 |
 | 隔離 | 與其他環境完全隔離。 |
 | 程式碼管道 | 與開發環境相同（驗證、建置、部署）。 |
-| 內容複製 | 允許來自生產或中繼環境。 |
+| 複製內容 | 允許來自生產、中繼或專業測試環境。 |
 | 內容還原 | 與開發環境相同。 |
 | 存取記錄檔 | 與開發環境相同。 |
 | Developer Console | 與開發環境相同。 |
@@ -52,9 +52,8 @@ DevXL的建置可反映一般中繼環境的大小、擴充性和組態。 此�
 
 1. 執行下列任一項作業：
 
-   如果&#x200B;**新增環境**&#x200B;選項變暗（已停用），可能是因為缺少許可權或依賴授權的資源。
-
    * 在&#x200B;**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;主控台的&#x200B;**環境**&#x200B;卡片上，按一下&#x200B;**新增環境**。
+如果**新增環境**&#x200B;選項變暗（已停用），可能是因為缺少許可權或依賴授權的資源。
 
    ![環境卡](assets/no-environments.png)
 

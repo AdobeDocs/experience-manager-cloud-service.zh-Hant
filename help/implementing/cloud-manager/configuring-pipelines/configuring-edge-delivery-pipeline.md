@@ -6,15 +6,14 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="私人測試版" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
-hide: true
-hidefromtoc: true
-source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
+hide: false
+hidefromtoc: false
+source-git-commit: 96a619c6ab8f71034914b72a57bdb1e7f363fbc6
 workflow-type: tm+mt
-source-wordcount: '529'
-ht-degree: 38%
+source-wordcount: '489'
+ht-degree: 4%
 
 ---
-
 
 
 # 新增Edge Delivery管道 {#configure-production-pipeline}
@@ -25,9 +24,9 @@ ht-degree: 38%
 
 >[!NOTE]
 >
->在發生以下情況之前，無法設定生產管道：
+>在下列情況發生之前，無法設定Edge Delivery管道：
 >
->* 程式隨即建立。
+>* 已建立包含一個Edge Delivery Services網站和一個對應網域的計畫。 否則，使用者介面中的&#x200B;**新增Edge Delivery管道**&#x200B;選項會顯示為停用，工具提示會說明缺少的需求。<!-- CMGR‑69680 -->
 >* Git存放庫至少有一個分支。
 >* 生產和中繼環境隨即建立。
 
@@ -35,47 +34,56 @@ ht-degree: 38%
 
 >[!NOTE]
 >
->你可以在初始設定後[編輯管道設定](managing-pipelines.md)。
+>您可在初始設定後[編輯管道設定](managing-pipelines.md)。
 
-## 新增Edge Delivery管道 {#adding-production-pipeline}
+**若要新增Edge Delivery管道：**
 
-設定好計畫並擁有至少一個使用 [!UICONTROL Cloud Manager] UI 的環境後，您就可以依照以下步驟著手新增非生產管道了。
+1. 在[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)登入Cloud Manager並選取您想要的組織。
 
->[!TIP]
->
->在設定前端管道之前，請參閱[AEM Quick Site建立歷程](/help/journey-sites/quick-site/overview.md)，以透過易於使用的AEM Quick Site建立工具取得端到端指南。 此歷程可幫助您簡化AEM網站的前端開發，讓您無需AEM後端知識即可快速自訂網站。
+1. 在&#x200B;**我的程式**&#x200B;頁面上，選取您想要的程式。
 
-**若要新增新的Edge Delivery管道：**
+   在Cloud Manager中![我的方案頁面](/help/implementing/cloud-manager/configuring-pipelines/assets/my-programs.png)
 
-1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager，並選取適當的組織。
+1. 執行下列任一項作業：
 
-1. 在「**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**」控制台中，選取程式。
+   * **從管道卡新增Edge Delivery管道**
 
-1. 從&#x200B;**方案總覽**&#x200B;頁面瀏覽至&#x200B;**管道**&#x200B;卡片，然後按一下&#x200B;**新增**&#x200B;以選取&#x200B;**新增生產管道**。
+      1. 在左側邊欄的&#x200B;**方案**&#x200B;下，按一下&#x200B;**![總覽圖示](/help/implementing/cloud-manager/configuring-pipelines/assets/overview.svg) [總覽](/help/implementing/cloud-manager/navigation.md#my-programs)**。
+      1. 在&#x200B;**方案總覽**&#x200B;頁面的&#x200B;**管道**&#x200B;卡片下，按一下&#x200B;**![加號](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg)新增**，然後選取&#x200B;**新增Edge Delivery管道**。
 
-   ![專案管理員概觀中的管道卡](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-1.png)
+         ![計畫總覽頁面上的管道卡](/help/implementing/cloud-manager/configuring-pipelines/assets/pipelinescard-add-ed-pipeline.png)
 
-1. **新增生產管道**&#x200B;對話框隨即顯示。提供&#x200B;**管道名稱**&#x200B;以識別您的管道以及以下選項。按一下&#x200B;**「繼續」**。
+   * **從管道頁面新增Edge Delivery管道**
 
-   **部署觸發計畫** - 在定義部署觸發計畫以啟動管道時，有以下選項。
+      1. 在左側邊欄中的&#x200B;**方案**&#x200B;下方，按一下&#x200B;**![工作流程圖示或管道圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg)管道**。
+      1. 在管道頁面右上角附近，按一下&#x200B;**新增管道** > **新增Edge Delivery管道**。
 
-   * **手動** — 手動啟動管道。
-   * **在Git變更上** — 只要將認可新增到已設定的Git分支，就會啟動CI/CD管道。 使用此選項，您仍然可以在需要時手動啟動管道。
+         ![具有新增管道按鈕的管道頁面](/help/implementing/cloud-manager/configuring-pipelines/assets/pipelinespage-add-ed-pipeline.png)
 
-   **重要量度失敗行為** - 在管道設定或編輯期間，**部署管理員**&#x200B;可選擇對任何品質閘道中遭遇重要失敗時的管道行為進行定義。可使用的選項包括：
+1. 在&#x200B;**新增Edge Delivery管道**&#x200B;對話方塊的&#x200B;**管道名稱**&#x200B;文字欄位中，輸入描述性管道標籤。
 
-   * **每次都詢問** — 預設設定。 任何重要失敗都需要手動介入。
-   * **立即失敗** - 如果選取，則每當重要失敗發生時，會取消管道。此程式基本上是模擬使用者手動拒絕每次失敗。
-   * **立即繼續** — 如果選取，則每當重要失敗發生時，管道會自動繼續。 此程式基本上是模擬使用者手動核准每次失敗。
+   ![新增Edge Delivery管道對話方塊](/help/implementing/cloud-manager/configuring-pipelines/assets/add-edge-delivery-pipeline-configuration.png)
 
-   ![生產管道設定](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-configuration.png)
+1. 選取您想要的管道&#x200B;**部署觸發程式**&#x200B;選項。
 
-1. 在&#x200B;**Source程式碼**&#x200B;索引標籤上，選取管道應處理的程式碼型別。
+   * **手動** — 您開始部署。
+   * **在Git變更上** - Git認可會自動啟動部署。 如有必要，使用此選項仍可手動啟動管道。
 
-   * **[設定完整棧疊計畫碼管道](#full-stack-code)**
-   * **[設定目標部署管道](#targeted-deployment)**
+1. 按一下「**繼續**」。
 
-如需有關管道型別的詳細資訊，請參閱[CI/CD管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)。
+1. 在&#x200B;**Source程式碼**&#x200B;底下，設定下列選項：
 
-完成建立生產流水線的步驟因所選原始計畫碼型別而異。 按照上面的連結跳到本文件的下一部分以便完成管道的設定。
+   * **部署環境** — 顯示目標環境欄位；保持唯讀。
 
+   * **存放庫** — 使用下拉式清單，將管道指向儲存Edge Delivery設定的確切Git存放庫。
+
+     另請參閱[新增和管理存放庫](/help/implementing/cloud-manager/managing-code/managing-repositories.md)，瞭解如何在Cloud Manager中新增和管理存放庫。
+
+   * **Git分支** — 使用下拉式清單選取所選存放庫中的特定分支。 如有必要，請按一下[回收]圖示或[重新整理]圖示![，在最近的推送之後重新載入Git分支下拉式清單](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg)
+   * **程式碼位置** — 定義存放庫中的資料夾路徑，管道就緒的程式碼會在此存放庫開始（ `/`等於存放庫根目錄）。
+
+   ![設定管道](/help/implementing/cloud-manager/configuring-pipelines/assets/add-edge-delivery-pipeline-sourcecode.png)
+
+1. 按一下「**儲存**」。
+
+您現在可以在[方案總覽](managing-pipelines.md)頁面上的&#x200B;**管道**&#x200B;卡或從&#x200B;**管道**&#x200B;頁面&#x200B;**管理您的管道**。
