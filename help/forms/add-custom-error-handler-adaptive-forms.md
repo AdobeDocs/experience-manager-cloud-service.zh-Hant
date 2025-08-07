@@ -7,10 +7,10 @@ content-type: reference
 feature: Adaptive Forms, Foundation Components
 exl-id: 198a26a9-d6bb-457d-aab8-0a5d15177c48
 role: User, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '2323'
-ht-degree: 85%
+source-wordcount: '2308'
+ht-degree: 83%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 85%
 
 >[!NOTE]
 >
-> Adobe建議針對[建立新的Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md)或[將Adaptive Forms新增至AEM Sites頁面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)，使用現代且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文說明使用基礎元件製作最適化Forms的舊方法。
+> Adobe建議針對[建立新的Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)或[將Adaptive Forms新增至AEM Sites頁面](/help/forms/creating-adaptive-form-core-components.md)，使用現代且可擴充的資料擷取[核心元件](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文說明使用基礎元件製作最適化Forms的舊方法。
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/standard-validation-error-messages-adaptive-forms.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/standard-validation-error-messages-adaptive-forms.html) |
 | AEM as a Cloud Service  | 本文章 |
 
 AEM Forms 為表單提交提供現成可用的成功和錯誤處理常式。這還可提供自訂錯誤處理常式函數的功能。例如，您可以針對特定錯誤程式碼在後端叫用自訂的工作流程，或通知客戶服務已關閉。處理常式是根據伺服器回應執行的用戶端函數。當使用 API 調用外部服務時，資料會傳輸至伺服器進行驗證，伺服器會向用戶端傳回回應，其中包含有關提交成功或錯誤事件的資訊。這項資訊可以參數傳遞至相關處理常式以執行該函數。錯誤處理常式有助於管理和顯示遇到的錯誤或驗證問題。
@@ -37,6 +37,7 @@ AEM Forms 為表單提交提供現成可用的成功和錯誤處理常式。這�
 ## 錯誤處理常式的用途 {#uses-of-error-handler}
 
 錯誤處理常式有多種用途。下面列出了錯誤處理常式函數的一些用途：
+
 * **執行驗證**：錯誤處理首先會根據預定義的規則或標準來驗證使用者的輸入值。當用戶填寫最適化表單時，錯誤處理常式會驗證輸入值，以確保符合規定的格式、長度或任何其他限制。
 
 * **提供即時意見回饋**：當檢測到任何錯誤時，錯誤處理常式會立即向使用者顯示意見回饋，例如對應表單欄位下方的內聯錯誤訊息。此意見回饋可幫助使用者識別並糾正錯誤，而無需提交表單並等待回應。
@@ -102,6 +103,7 @@ AEM Forms 為表單提交提供現成可用的成功和錯誤處理常式。這�
 > * 確保 **ContentType** 標頭是 **應用程式/問題+json**。
 
 其中：
+
 * `type (required)` 是指定失敗類型。這可以是以下其中一個值：
    * `SERVER_SIDE_VALIDATION` 是指由於伺服器端驗證的失敗。
    * `FORM_SUBMISSION` 是指表單提交期間的失敗
@@ -178,7 +180,7 @@ AEM Forms 為表單提交提供現成可用的成功和錯誤處理常式。這�
 
 ## 使用規則編輯器新增錯誤處理常式 {#add-error-handler-using-rule-editor}
 
-透過使用[規則編輯器調用服務](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=zh-Hant#invoke)的動作，您可以根據與最適化表單一起使用的資料來源來定義驗證標準。如果您以資料來源來使用 RESTful Web 服務，則可以在 Swagger 定義檔案中定義驗證標準。透過使用最適化表單中的錯誤處理常式函數和規則編輯器，您可以有效地管理和自訂錯誤處理。您可以使用規則編輯器來定義條件，並設定觸發規則時要執行的必要動作。調適型單會根據預設的驗證標準來驗證您在欄位中輸入的資料。如果輸入值不符合驗證標準，最適化表單的欄位層級會顯示錯誤訊息。
+透過使用[規則編輯器調用服務](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke)的動作，您可以根據與最適化表單一起使用的資料來源來定義驗證標準。如果您以資料來源來使用 RESTful Web 服務，則可以在 Swagger 定義檔案中定義驗證標準。透過使用最適化表單中的錯誤處理常式函數和規則編輯器，您可以有效地管理和自訂錯誤處理。您可以使用規則編輯器來定義條件，並設定觸發規則時要執行的必要動作。調適型單會根據預設的驗證標準來驗證您在欄位中輸入的資料。如果輸入值不符合驗證標準，最適化表單的欄位層級會顯示錯誤訊息。
 
 >[!NOTE]
 >
@@ -186,6 +188,7 @@ AEM Forms 為表單提交提供現成可用的成功和錯誤處理常式。這�
 > * 如果錯誤回應是在標準結構描述中，則系統會提供預設的錯誤處理常式以顯示欄位的錯誤訊息。您還可以從自訂錯誤處理常式函數來呼叫預設的錯誤處理常式。
 
 使用規則編輯器可以：
+
 * [新增預設錯誤處理常式函數](#add-default-errror-handler)
 * [新增自訂錯誤處理常式函數](#add-custom-error-handler-function)
 
@@ -193,13 +196,13 @@ AEM Forms 為表單提交提供現成可用的成功和錯誤處理常式。這�
 ### 新增預設錯誤處理常式函數 {#add-default-errror-handler}
 
 如果錯誤回應是在標準結構描述中或是伺服器端驗證失敗，則系統會支援預設錯誤處理常式以顯示欄位的錯誤訊息。
-若要了解如何使用採用[規則編輯器調用服務](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=zh-Hant#invoke)動作的預設錯誤處理常式，請以含有兩個欄位的簡單最適化表單為例 (**寵物 ID** 和&#x200B;**寵物名稱**)，並在「**寵物 ID**」欄位使用預設的錯誤處理常式，查看為調用外部服務所設定 REST 端點傳回的各種錯誤，例如 `200 - OK`、`404 - Not Found`、`400 - Bad Request`。要使用規則編輯器的調用服務操作添加默認錯誤處理程序，請執行以下步驟：
+若要了解如何使用採用[規則編輯器調用服務](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke)動作的預設錯誤處理常式，請以含有兩個欄位的簡單最適化表單為例 (**寵物 ID** 和&#x200B;**寵物名稱**)，並在「**寵物 ID**」欄位使用預設的錯誤處理常式，查看為調用外部服務所設定 REST 端點傳回的各種錯誤，例如 `200 - OK`、`404 - Not Found`、`400 - Bad Request`。要使用規則編輯器的調用服務操作添加默認錯誤處理程序，請執行以下步驟：
 
 1. 以編寫模式開啟最適化表單，選取表單元件，然後選取&#x200B;**[!UICONTROL 規則編輯器]**&#x200B;以開啟規則編輯器。
 1. 選取「**[!UICONTROL 建立]**」。
-1. 在「**何時**」規則部分中建立條件。例如，[寵物 ID 欄位名稱&#x200B;]&#x200B;**&#x200B;**&#x200B;何時變更。「選取」從「**選取狀態**」下拉式清單變更「選取」。
+1. 在「**何時**」規則部分中建立條件。例如，[寵物 ID 欄位名稱&#x200B;]****&#x200B;何時變更。「選取」從「**選取狀態**」下拉式清單變更「選取」。
 1. 在「**然後**」部分，從「**選取動作**」下拉式清單中選取「**[!UICONTROL 調用服務]**」。
-1. 選取「**郵遞服務**」，及其自「**輸入**」部分的對應資料綁定。例如，要驗證&#x200B;**寵物 ID**，選取「**郵遞服務**」作為&#x200B;**GET /pet/{petId}**，並選取「**寵物 ID**」(在「**輸入**」部分)。
+1. 選取「**郵遞服務**」，及其自「**輸入**」部分的對應資料綁定。例如，若要驗證&#x200B;**Pet ID**，請選取&#x200B;**貼文服務**&#x200B;作為&#x200B;**GET /pet/{petId}**，並在&#x200B;**輸入**&#x200B;區段中選取&#x200B;**Pet ID**。
 1. 從「**輸出**」部分，選取資料綁定。選取「**寵物名稱**」(在「**輸出**」部分)。
 1. 選取「**[!UICONTROL 預設錯誤處理常式]**」(來自「**錯誤處理常式**」部分)。
 1. 按一下&#x200B;**[!UICONTROL 「完成」]**。
@@ -221,9 +224,10 @@ AEM Forms 為表單提交提供現成可用的成功和錯誤處理常式。這�
 除了上述動作之外，自訂錯誤處理常式還可用於執行符合特定使用者要求的自訂函數。
 
 自訂錯誤處理常式是一個函數 (用戶端資料庫)，旨在回應外部服務傳回的錯誤並向一般使用者提供自訂回應。任何有附註 `@errorHandler` 的用戶端資料庫會被視為是自訂錯誤處理常式函數。該附註有助於識別 `.js` 檔案中指定的錯誤處理常式函數。
-若要了解如何建立和使用採用[規則編輯器調用服務](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=zh-Hant#invoke)動作的自訂錯誤處理常式，讓我們以含有兩個欄位的簡單最適化表單為例 (**寵物 ID** 和&#x200B;**寵物名稱**)，並在「**寵物 ID**」欄位使用自訂的錯誤處理程式，查看為調用外部服務所設定 REST 端點傳回的各種錯誤，例如 `200 - OK`、`404 - Not Found`、`400 - Bad Request`。
+若要了解如何建立和使用採用[規則編輯器調用服務](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke)動作的自訂錯誤處理常式，讓我們以含有兩個欄位的簡單最適化表單為例 (**寵物 ID** 和&#x200B;**寵物名稱**)，並在「**寵物 ID**」欄位使用自訂的錯誤處理程式，查看為調用外部服務所設定 REST 端點傳回的各種錯誤，例如 `200 - OK`、`404 - Not Found`、`400 - Bad Request`。
 
 若要在最適化表單中新增和使用自訂錯誤處理常式，請執行以下步驟：
+
 1. [新增錯誤處理常式的自訂函式](#1-add-the-custom-function-for-the-error-handler)
 2. [使用規則編輯器設定自訂錯誤處理常式](#use-custom-error-handler)
 
@@ -233,7 +237,7 @@ AEM Forms 為表單提交提供現成可用的成功和錯誤處理常式。這�
 
 <!-- To create a custom error function, perform the following steps:
 
-1. [Clone your AEM Forms as a Cloud Service Repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hant#accessing-git). 
+1. [Clone your AEM Forms as a Cloud Service Repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git). 
 2. Create a folder under the `[AEM Forms as a Cloud Service repository folder]/apps/` folder. For example, create a folder named as `experience-league`
 3. Navigate to `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` and create a `ClientLibraryFolder` as `clientlibs`.
 4. Create a folder named `js`.
@@ -296,17 +300,17 @@ The created folder structure looks like:
     ```
 -->
 
-1. [執行管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hant#setup-pipeline)。
+1. [執行管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline)。
 
 成功執行管道後，自訂錯誤處理常式將可在最適化表單規則編輯器中使用。現在，讓我們了解如何使用 AEM Forms 規則編輯器的調用服務來設定和使用自訂錯誤處理常式。
 
-#### 2. 使用規則編輯器設定自訂錯誤處理常式 {#use-custom-error-handler}
+#### &#x200B;2. 使用規則編輯器設定自訂錯誤處理常式 {#use-custom-error-handler}
 
 在最適化表單中實施自訂錯誤處理常式之前，請確保&#x200B;**[!UICONTROL 用戶端資料庫類別]**&#x200B;中的用戶端資料庫名稱符合 `.content.xml` 檔案類別選項所指定的名稱。
 
 ![在最適化表單容器設定中新增用戶端資料庫的名稱](/help/forms/assets/client-library-category-name.png)
 
-在此情況下，使用者端資料庫名稱會在`.content.xml`檔案中以`customfunctionsdemo`的形式提供。
+在此情況下，使用者端資料庫名稱會在`customfunctionsdemo`檔案中以`.content.xml`的形式提供。
 
 若要使用自訂錯誤處理常式，請使用&#x200B;**[!UICONTROL 規則編輯器調用服務]**&#x200B;行動：
 
@@ -314,7 +318,7 @@ The created folder structure looks like:
 1. 選取「**[!UICONTROL 建立]**」。
 1. 在「**何時**」規則部分中建立條件。例如，當&#x200B;**[寵物 ID 欄位名稱]**&#x200B;已變更，請從「**選擇狀態**」下拉式清單選取「**已變更**」。
 1. 在「**然後**」部分，從「**選取動作**」下拉式清單中選取「**[!UICONTROL 調用服務]**」。
-1. 選取「**郵遞服務**」，及其自「**輸入**」部分的對應資料綁定。例如，要驗證&#x200B;**寵物 ID**，選取「**郵遞服務**」作為&#x200B;**GET /pet/{petId}**，並選取「**寵物 ID**」(在「**輸入**」部分)。
+1. 選取「**郵遞服務**」，及其自「**輸入**」部分的對應資料綁定。例如，若要驗證&#x200B;**Pet ID**，請選取&#x200B;**貼文服務**&#x200B;作為&#x200B;**GET /pet/{petId}**，並在&#x200B;**輸入**&#x200B;區段中選取&#x200B;**Pet ID**。
 1. 從「**輸出**」部分，選取資料綁定。例如，選取「**寵物名稱**」(在「**輸出**」部分)。
 1. 選取「**[!UICONTROL 自訂錯誤處理程式]**」(來自「**[!UICONTROL 錯誤處理程式]**」部分)。
 1. 按一下&#x200B;**[!UICONTROL 「完成」]**。
@@ -330,96 +334,3 @@ The created folder structure looks like:
 
 自訂錯誤處理常式函數負責根據錯誤回應執行其他動作，例如顯示模式對話框或發送分析事件。自訂錯誤處理常式函數可提供靈活性，會根據特定使用者需求來訂制錯誤處理行動。
 
-<!-- 
-
-## Configure Adaptive Form submission to add custom handlers {#configure-adaptive-form-submission}
-
-If the server validation error message does not display in the standard format, you can enable asynchronous submission and add a custom error handler on Adaptive Form submission to convert the message into a standard format.
-
-### Configure asynchronous Adaptive Form submission {#configure-asynchronous-adaptive-form-submission}
-
-Before adding custom handler, you must configure the adaptive form for asynchronous submission. Execute the following steps:
-
-1. In adaptive form authoring mode, select the Form Container object and select ![adaptive form properties](assets/configure_icon.png) to open its properties.
-1. In the **[!UICONTROL Submission]** properties section, enable **[!UICONTROL Use asynchronous submission]**.
-1. Select **[!UICONTROL Revalidate on server]** to validate the input field values on server before submission.
-1. Select the Submit Action:
-
-    * Select **[!UICONTROL Submit using Form Data Model (FDM)]** and select the appropriate data model, if you are using RESTful web service based [form data model (FDM)](work-with-form-data-model.md) as the data source.
-    * Select **[!UICONTROL Submit to REST Service endpoint]** and specify the **[!UICONTROL Redirect URL/Path]**, if you are using RESTful web services as the data source.
-
-    ![adaptive form submission properties](assets/af_submission_properties.png)
-
-1. Select ![Save](assets/save_icon.png) to save the properties.
-
-### Add custom error handler on Adaptive Form submission {#add-custom-error-handler-af-submission}
-
-AEM Forms provides out-of-the-box success and error handlers for form submissions. Handlers are client-side functions that execute based on the server response. When an Adaptive Form is submitted, the data is transmitted to the server for validation, which returns a response to the client with information about the success or error event for the submission. The information is passed as parameters to the relevant handler to execute the function.
-
-Execute the following steps to add custom error handler on Adaptive Form submission:
-
-1. Open an Adaptive Form in authoring mode, select any form object, and select  to open the rule editor.
-1. Select **[!UICONTROL Form]** in the Form Objects tree and select **[!UICONTROL Create]**.
-1. Select **[!UICONTROL Error in Submission]** from the Event drop-down list.
-1. Write a rule to convert custom error structure to the standard error structure and select **[!UICONTROL Done]** to save the rule.
-
-The following is a sample code to convert a custom error structure to the standard error structure:
-
-```javascript
-var data = $event.data;
-var som_map = {
-    "id": "guide[0].guide1[0].guideRootPanel[0].Pet[0].id_1[0]",
-    "name": "guide[0].guide1[0].guideRootPanel[0].Pet[0].name_2[0]",
-    "status": "guide[0].guide1[0].guideRootPanel[0].Pet[0].status[0]"
-};
-
-var errorJson = {};
-errorJson.errors = [];
-
-if (data) {
-    if (data.originMessage) {
-        var errorData;
-        try {
-            errorData = JSON.parse(data.originMessage);
-        } catch (err) {
-            // not in json format
-        }
-
-        if (errorData) {
-            Object.keys (errorData).forEach(function(key) {
-                var som_key = som_map[key];
-                if (som_key) {
-                    var error = {};
-                    error.somExpression = som_key;
-                    error.errorMessage = errorData[key];
-                    errorJson.errors.push(error);
-                }
-            });
-        }
-        window.guideBridge.handleServerValidationError(errorJson);
-    } else {
-        window.guideBridge.handleServerValidationError(data);
-    }
-}
-```
-
-The `var som_map` lists the SOM expression of the Adaptive Form fields that you want to transform into the standard format. You can view the SOM expression of any field in an adaptive form by tapping the field and selecting **[!UICONTROL View SOM Expression]**.
-
-Using this custom error handler, the adaptive form converts the fields listed in `var som_map` to standard error message format. As a result, the validation error messages display at field-level in the adaptive form.
-
- -->
-
-
-## 另請參閱 {#see-also}
-
-{{see-also}}
-* [在最適化Forms （核心元件）中建立並使用自訂錯誤處理常式](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
-
-<!--
-
->[!MORELIKETHIS]
->
->* [Create style or themes for your forms](/help/forms/using-themes-in-core-components.md)
->* [Create or add an Adaptive Form to AEM Sites page](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
-
--->

@@ -6,8 +6,8 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: 67b6873b-bb93-4d38-963c-2ca65a1a644b
-source-git-commit: 37b20a97942f381b46ce36a6a3f72ac019bba5b7
-workflow-type: ht
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 100%
 
@@ -23,20 +23,20 @@ ht-degree: 100%
 
 本文件閱讀完畢後，您將了解如何進行以下事項：
 
-* 設計簡單易用且可以無障礙存取的表單，所有人皆使用
-* 將表單效能和載入時間最佳化
-* 負責任且透明地處理使用者資料
-* 實施適當的錯誤處理和驗證
-* 建立可達到高完成率的表單
+- 設計簡單易用且可以無障礙存取的表單，所有人皆使用
+- 將表單效能和載入時間最佳化
+- 負責任且透明地處理使用者資料
+- 實施適當的錯誤處理和驗證
+- 建立可達到高完成率的表單
 
 ### 目標讀者
 
 本指南適用於以下人員：
 
-* 想建立更好的使用者體驗的&#x200B;**表單設計人員**
-* 實作表單功能的&#x200B;**開發人員**
-* 將表單工作流程最佳化的 **UX 專業人員**
-* 致力於提高表單轉換率的&#x200B;**業務利害關係人**
+- 想建立更好的使用者體驗的&#x200B;**表單設計人員**
+- 實作表單功能的&#x200B;**開發人員**
+- 將表單工作流程最佳化的 **UX 專業人員**
+- 致力於提高表單轉換率的&#x200B;**業務利害關係人**
 
 ### 主要原則
 
@@ -52,32 +52,32 @@ ht-degree: 100%
 
 ## 設計使用者友善且易於存取的表單
 
-* **使用清晰可見的標籤：**&#x200B;每個表單欄位都需要 `<label>`。請勿僅依賴預留位置文字 (輸入欄位中會呈現的文字)，因為它會在使用者輸入時消失，不利於可存取性。
-   * *良好：*`<label for="email">Email Address:</label> <input type="email" id="email" placeholder="you@example.com">`
-   * *不佳：*`<input type="email" placeholder="Email Address">`
-* **保持簡單：**&#x200B;盡可能使用標準 HTML 輸入類型 (`<input type="date">`、`<input type="tel">`)。與複雜的自訂小工具相比，其通常具有較佳的行動支援和可存取性。
-* **有邏輯的順序和分組：**&#x200B;按照使用者能夠理解的方式排列欄位。使用 `<fieldset>` 和 `<legend>` 將相關欄位群組在一起。
-* **提供清晰的指示：**&#x200B;針對任何可能令人感到困惑的欄位，提供簡潔的說明文字或工具提示。
-* **鍵盤導覽：**&#x200B;確保使用者僅使用鍵盤 (Tab、Shift+Tab、Enter、空白鍵) 即可瀏覽整個表單。
-* **錯誤處理：**&#x200B;讓錯誤之處明顯且易於改正。在相應的欄位旁邊顯示錯誤訊息並解釋需要修正的內容。
+- **使用清晰可見的標籤：**&#x200B;每個表單欄位都需要 `<label>`。請勿僅依賴預留位置文字 (輸入欄位中會呈現的文字)，因為它會在使用者輸入時消失，不利於可存取性。
+   - *良好：*`<label for="email">Email Address:</label> <input type="email" id="email" placeholder="you@example.com">`
+   - *不佳：*`<input type="email" placeholder="Email Address">`
+- **保持簡單：**&#x200B;盡可能使用標準 HTML 輸入類型 (`<input type="date">`、`<input type="tel">`)。與複雜的自訂小工具相比，其通常具有較佳的行動支援和可存取性。
+- **有邏輯的順序和分組：**&#x200B;按照使用者能夠理解的方式排列欄位。使用 `<fieldset>` 和 `<legend>` 將相關欄位群組在一起。
+- **提供清晰的指示：**&#x200B;針對任何可能令人感到困惑的欄位，提供簡潔的說明文字或工具提示。
+- **鍵盤導覽：**&#x200B;確保使用者僅使用鍵盤 (Tab、Shift+Tab、Enter、空白鍵) 即可瀏覽整個表單。
+- **錯誤處理：**&#x200B;讓錯誤之處明顯且易於改正。在相應的欄位旁邊顯示錯誤訊息並解釋需要修正的內容。
 
-* **確保表單快速載入且可見**
+- **確保表單快速載入且可見**
 
-   * **將表單放在顯眼的位置：**&#x200B;如果表單很重要，請確保使用者可以輕鬆看到它，而無需太多捲動 (可能的情況下，請置於「摺頁上方」)。Adobe 的研究顯示，許多表單因隱藏而導致互動性較低。
-   * **資產最佳化：**&#x200B;讓表單的任何自訂 JavaScript 或 CSS 盡可能縮小規模，確保快速載入。Edge Delivery Services 有助於基礎頁面載入，但繁重的表單指令碼仍然會減慢速度。
+   - **將表單放在顯眼的位置：**&#x200B;如果表單很重要，請確保使用者可以輕鬆看到它，而無需太多捲動 (可能的情況下，請置於「摺頁上方」)。Adobe 的研究顯示，許多表單因隱藏而導致互動性較低。
+   - **資產最佳化：**&#x200B;讓表單的任何自訂 JavaScript 或 CSS 盡可能縮小規模，確保快速載入。Edge Delivery Services 有助於基礎頁面載入，但繁重的表單指令碼仍然會減慢速度。
 
-* **負責任地處理使用者資料**
-   * **僅取得需要的資訊：**&#x200B;您要求提供的個人可識別資訊 (PII) 越少越好。每個欄位都是使用者放棄表單的潛在原因。
-   * **保持透明：**&#x200B;清楚地解釋&#x200B;*為什麼*&#x200B;需要某些訊息，以及將&#x200B;*如何使用*。連結至您的隱私權政策。這樣能建立信任。
+- **負責任地處理使用者資料**
+   - **僅取得需要的資訊：**&#x200B;您要求提供的個人可識別資訊 (PII) 越少越好。每個欄位都是使用者放棄表單的潛在原因。
+   - **保持透明：**&#x200B;清楚地解釋&#x200B;*為什麼*&#x200B;需要某些訊息，以及將&#x200B;*如何使用*。連結至您的隱私權政策。這樣能建立信任。
 
-* **改善使用者體驗：驗證碼替代方案**
+- **改善使用者體驗：驗證碼替代方案**
 
-   * **重新思考可見的驗證碼：**&#x200B;那些「輸入波浪形文字」或「按一下所有交通號誌」的測試，可能會讓使用者非常沮喪，尤其是身心障礙使用者，且通常會導致很高的流失率。
+   - **重新思考可見的驗證碼：**&#x200B;那些「輸入波浪形文字」或「按一下所有交通號誌」的測試，可能會讓使用者非常沮喪，尤其是身心障礙使用者，且通常會導致很高的流失率。
 
-* **考量替代方案：**
-   * **蜜罐欄位：**&#x200B;新增只有機器人才能填寫的隱藏欄位。若其中存在資料，則提交的內容很可能是垃圾資訊。
-   * **時間型檢查：**&#x200B;測量表單提交的速度。速度太快的提交通常是機器人所為。
-   * **隱形 reCAPTCHA (v3)：**&#x200B;這項 Google 服務會在後台分析使用者行為，僅當使用者看起來可疑時才會提出挑戰。此方式通常會帶來更好的使用者體驗。
+- **考量替代方案：**
+   - **蜜罐欄位：**&#x200B;新增只有機器人才能填寫的隱藏欄位。若其中存在資料，則提交的內容很可能是垃圾資訊。
+   - **時間型檢查：**&#x200B;測量表單提交的速度。速度太快的提交通常是機器人所為。
+   - **隱形 reCAPTCHA (v3)：**&#x200B;這項 Google 服務會在後台分析使用者行為，僅當使用者看起來可疑時才會提出挑戰。此方式通常會帶來更好的使用者體驗。
 
 ## 表單設計的注意事項
 
@@ -97,7 +97,7 @@ ht-degree: 100%
 
 本指南的內容概述了如何搭配 AEM Edge Delivery Services 使用表單。有關具體設定的更詳細逐步說明，請參閱 Adobe Experience Manager 官方文件：
 
-* [文件型製作與 Edge Delivery Services 表單](/help/edge/docs/forms/tutorial.md)
-* [通用編輯器與 Edge Delivery Services 表單](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-* [文件製作 (DA) 和嵌入內容](https://www.aem.live/developer/da-tutorial)
-* [AEM 表單提交服務](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
+- [文件型製作與 Edge Delivery Services 表單](/help/edge/docs/forms/tutorial.md)
+- [通用編輯器與 Edge Delivery Services 表單](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+- [文件製作 (DA) 和嵌入內容](https://www.aem.live/developer/da-tutorial)
+- [AEM 表單提交服務](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)

@@ -4,17 +4,17 @@ description: 在 AEM Forms 適用的 Edge Delivery Services 表單中使用 Goog
 feature: Edge Delivery Services
 exl-id: ac104e23-f175-435f-8414-19847efa5825
 role: Admin, Architect, Developer
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: ht
-source-wordcount: '848'
-ht-degree: 100%
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
+source-wordcount: '847'
+ht-degree: 97%
 
 ---
 
 
 # reCAPTCHA 與 AEM Forms as a Cloud Service 適用的 Edge Delivery Services 搭配使用
 
-<span>**reCAPTCHA** 功能在預發行的程式中提供。若要求存取 AEM Forms 適用的 Edge Delivery Services **reCAPTCHA** 功能，請從您的工作地址發送電子郵件至 mailto:aem-forms-ea@adobe.com。</span>
+<span>**reCAPTCHA** 功能在預發行的程式中提供。若要要求存取適用於AEM Forms的Edge Delivery Services的&#x200B;**reCAPTCHA**&#x200B;功能，請從您的工作地址傳送電子郵件至mailto:aem-forms-ea@adobe.com。</span>
 
 reCAPTCHA 是一種受歡迎的工具，用來保護網站免遭詐騙活動、垃圾郵件和濫用。在 Edge Delivery Services 中，最適化 Forms 區塊有新增 Google reCAPTCHA 的功能，可區分人類和機器人。此功能可讓使用者保護其網站免遭垃圾郵件和濫用。
 例如，考慮一個收集資料的查詢表單，例如開始和結束旅行日期、房間預算、預估旅行成本和旅行者資訊。在這種情況下，惡意使用者可能會利用該表單來發送網路釣魚電子郵件，或使用垃圾郵件機器人將不相關或有害內容填滿表單。整合 reCAPTCHA 可驗證提交內容是否來自真實使用者，以此提供更高的安全性並有效地減少垃圾郵件。
@@ -27,19 +27,20 @@ Edge Delivery Services 僅支援最適化表單區塊的&#x200B;**分數型 (v3)
 
 
 閱讀完本文章後，您將學會：
-* [為單一表單啟用 Google reCAPTCHA](#enable-google-recaptchas-for-a-single-form)
-* [為網站上所有表單啟用 reCAPTCHA](#enable-recaptcha-for-all-the-forms)
+- [為單一表單啟用 Google reCAPTCHA](#enable-google-recaptchas-for-a-single-form)
+- [為網站上所有表單啟用 reCAPTCHA](#enable-recaptcha-for-all-the-forms)
 
 ## 必要條件
 
-* 依照[使用最適化表單區塊建立表單](/help/edge/docs/forms/create-forms.md)所述步驟，開始開發 Edge Delivery Services 表單。
-* 註冊您的網域請使用 [Google reCAPTCHA 並取得憑證](https://www.google.com/recaptcha/admin/create)。
+- 依照[使用最適化表單區塊建立表單](/help/edge/docs/forms/create-forms.md)所述步驟，開始開發 Edge Delivery Services 表單。
+- 註冊您的網域請使用 [Google reCAPTCHA 並取得憑證](https://www.google.com/recaptcha/admin/create)。
 
 ## 為單一表單啟用 Google reCAPTCHA {#enable-google-recaptchas-for-a-single-form}
 
 為單一表單啟用 Google reCAPTCHA 涉及將 Google 的 reCAPTCHA 服務整合到特定網頁表單中，以防止自動化濫用或寄送垃圾郵件。
 
 若要為單一表單啟用 Google reCAPTCHA：
+
 1. [在專案設定檔中設定 reCAPTCHA 祕密金鑰](#configure-secret-key)
 1. [將 reCAPTCHA 網站金鑰新增至您的表單中](#add-site-key)
 
@@ -58,13 +59,13 @@ Edge Delivery Services 僅支援最適化表單區塊的&#x200B;**分數型 (v3)
 
 1. 開啟 `config` 檔案，並新增以下鍵值對：
 
-   * **captcha.secret**：Google reCAPTCHA 密鑰值
-   * **captcha.type**：reCAPTCHA v2
+   - **captcha.secret**：Google reCAPTCHA 密鑰值
+   - **captcha.type**：reCAPTCHA v2
 
    >[!NOTE]
    >
-   >  * 您可以從 [Google reCAPTCHA Admin Console](https://www.google.com/recaptcha/admin) 擷取 reCAPTCHA 金鑰。
-   >  * 您必須將 `config` 檔案中 **captcha.type** 的值指定為 **reCAPTCHA v2**。
+   >  - 您可以從 [Google reCAPTCHA Admin Console](https://www.google.com/recaptcha/admin) 擷取 reCAPTCHA 金鑰。
+   >  - 您必須將 `config` 檔案中 **captcha.type** 的值指定為 **reCAPTCHA v2**。
 
    請參考下方專案設定檔螢幕擷圖：
 
@@ -80,8 +81,8 @@ Edge Delivery Services 僅支援最適化表單區塊的&#x200B;**分數型 (v3)
 
 1. 前往 Microsoft® SharePoint 或 Google Drive 的 AEM 專案資料夾，並開啟您的試算表。您也可以為表單建立新的試算表。
 1. 在試算表中插入一行以新增驗證碼的欄位，包括以下詳細資訊：
-   * **類型**：驗證碼
-   * **值**：Google reCAPTCHA 網站金鑰值
+   - **類型**：驗證碼
+   - **值**：Google reCAPTCHA 網站金鑰值
 
    請參閱下方螢幕擷圖，顯示新一列類型為驗證碼的試算表：
 
@@ -129,8 +130,4 @@ Edge Delivery Services 僅支援最適化表單區塊的&#x200B;**分數型 (v3)
 使用 [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) 來預覽和發佈網站。
 
 您網站上的所有表單開始出現 reCAPTCHA 徽章。
-
-## 另請參閱
-
-{{see-more-forms-eds}}
 

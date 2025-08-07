@@ -4,10 +4,10 @@ description: 使用試算表和最適化表單區塊欄位更快地製作強大�
 feature: Edge Delivery Services
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
 role: Admin, Architect, Developer
-source-git-commit: 552779d9d1cee2ae9f233cabc2405eb6416c41bc
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '873'
-ht-degree: 97%
+source-wordcount: '871'
+ht-degree: 100%
 
 ---
 
@@ -16,8 +16,8 @@ ht-degree: 97%
 
 [建立並預覽表單](/help/edge/docs/forms/create-forms.md)後，您即可啟用對應的試算表以開始接收資料。您可以
 
-* [手動啟用試算表以接受資料](#manually-enable-the-spreadsheet-to-accept-data)
-* [使用 Admin API 讓試算表接受資料](#use-admin-apis-to-enable-a-spreadsheet-to-accept-data)
+- [手動啟用試算表以接受資料](#manually-enable-the-spreadsheet-to-accept-data)
+- [使用 Admin API 讓試算表接受資料](#use-admin-apis-to-enable-a-spreadsheet-to-accept-data)
 
 ![文件型製作生態系統](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
@@ -68,7 +68,7 @@ ht-degree: 97%
 
 ## 使用 Admin API 讓試算表接受資料
 
-您也可以向表單傳送 POST 請求，使其能夠接受資料並設定 `incoming` 工作表的標題。收到 POST 請求後，服務會分析請求內文並自動產生資料擷取所需的基本標題和工作表。
+您也可以向表單傳送 POST 要求，使其能夠接受資料並設定 `incoming` 工作表的標題。收到 POST 要求後，服務會分析要求內文並自動產生資料擷取所需的基本標題和工作表。
 
 若要使用 Admin API 讓試算表接受資料：
 
@@ -85,11 +85,11 @@ ht-degree: 97%
    >
    >即使以前已預覽過該工作表，在第一次建立 `incoming` 工作表後也必須再次預覽。
 
-1. 傳送 POST 請求以在 `incoming` 工作表中產生適當的標題，並將 `shared-default` 工作表新增至試算表 (如果尚未存在)。
+1. 傳送 POST 要求以在 `incoming` 工作表中產生適當的標題，並將 `shared-default` 工作表新增至試算表 (如果尚未存在)。
 
-   若要了解如何制訂用來設定工作表的 POST 請求格式，請參閱「[Admin API 文件](https://www.aem.live/docs/admin.html#tag/authentication/operation/profile)」。您可以查看下方提供的範例：
+   若要了解如何制訂用來設定工作表的 POST 要求格式，請參閱「[Admin API 文件](https://www.aem.live/docs/admin.html#tag/authentication/operation/profile)」。您可以查看下方提供的範例：
 
-   **請求**
+   **要求**
 
    ```JSON
    POST 'https://admin.aem.page/form/{owner}/{repo}/{branch}/contact-us.json' \
@@ -130,7 +130,7 @@ ht-degree: 97%
    {"rowCount":2,"columns":["Email","Name","Subject","Message","Phone","Company","Country",      "PreferredContactMethod","SubscribeToNewsletter"]}%
    ```
 
-   您可以使用 curl 或 Postman 等工具來執行此 POST 請求，如下所示：
+   您可以使用 curl 或 Postman 等工具來執行此 POST 要求，如下所示：
 
    ```JSON
    curl -s -i -X POST 'https://admin.aem.page/form/wkndform/wefinance/main/contact-us.json' \
@@ -150,11 +150,11 @@ ht-degree: 97%
    }'
    ```
 
-   上面提及的 POST 請求提供了範例資料，包括表單欄位及其個別的範例值。Admin 服務會使用此資料來設定表單。
+   上面提及的 POST 要求提供了範例資料，包括表單欄位及其個別的範例值。Admin 服務會使用此資料來設定表單。
 
    您的表單現在可以接受資料了。您也可以觀察到試算表有以下變化：
 
-## 啟用工作表以接受資料後，自動變更工作表。
+## 一旦啟用接受資料，工作表就會自動變更。
 
 將工作表設定為接收資料後，您會在試算表中觀察到以下變更：
 
@@ -174,138 +174,5 @@ ht-degree: 97%
 
 
 
-<!--
-## Send data to your sheet {#send-data-to-your-sheet}
-
-After the sheet is set to receive data, you can [preview the form using Adaptive Forms Block](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) or [use Admin APIs](#use-admin-apis-to-send-data-to-your-sheet) to start sending data to the sheet.
-
-### Use Admin APIs to send data to your sheet
-
-You can send POST requests directly to your form using aem.page, aem.live, or your production domain, to send data. 
-
-
-```JSON
-
-POST https://branch–repo–owner.aem.(page|live)/email-form
-POST https://my-domain.com/email-form
-
-```
-
->[!NOTE] 
->
-> The URL should not have the .json extension. You must publish the sheet for POST operations to function on `.live` or on the production domain.
-
-#### Formatting the form data
-
-There are a few different ways that you can format the form data in the POST body. You can use: 
-
-* array of `name:value` pairs: 
-    
-    ```JSON
-    
-    {
-      "data": [
-        { "name": "name", "value": "Clark Kent" },
-        { "name": "email", "value": "superman@example.com" },
-        { "name": "subject", "value": "Regarding Product Inquiry" },
-        { "name": "message", "value": "I have some questions about your products." },
-        { "name": "phone", "value": "123-456-7890" },
-        { "name": "company", "value": "Example Inc." },
-        { "name": "country", "value": "United States" },
-        { "name": "preferred_contact_method", "value": "Email" },
-        { "name": "newsletter_subscribe", "value": true }
-      ]
-    }
-
-    ```
-
-    For example
-
-    ```JSON
-
-    curl -s -i -X POST 'https://main--wefinance--wkndform.aem.page/contact-us' \
-        --header 'Content-Type: application/json' \
-        --data '{
-        "data": [
-            { "name": "name", "value": "Clark Kent" },
-            { "name": "email", "value": "superman@example.com" },
-            { "name": "subject", "value": "Regarding Product Inquiry" },
-            { "name": "message", "value": "I have some questions about your        products." },
-            { "name": "phone", "value": "123-456-7890" },
-            { "name": "company", "value": "Example Inc." },
-            { "name": "country", "value": "United States" },
-            { "name": "preferred_contact_method", "value": "Email" },
-            { "name": "newsletter_subscribe", "value": true }
-        ]
-    }'
-
-    ```
-
-
-
-* an object with `key:value` pairs:
-
-    ```JSON
-
-        {
-          "data": {
-            "name": "Jessica Jones",
-            "email": "jj@example.com",
-            "subject": "Regarding Product Inquiry",
-            "message": "I have some questions about your products.",
-            "phone": "123-456-7890",
-            "company": "Example Inc.",
-            "country": "United States",
-            "preferred_contact_method": "Email",
-            "newsletter_subscribe": true
-          }
-        }
-
-    ```
-
-    For example,
-
-    ```JSON
-
-    curl -s -i -X POST 'https://admin.aem.page/form/wkndform/wefinance/main/contact-us.json' \
-    --header 'Content-Type: application/json' \
-    --data '{
-        "data": {
-            "Email": "khushwant@wknd.com",
-            "Name": "khushwant",
-            "Subject": "Regarding Product Inquiry",
-            "Message": "I have some questions about your products.",
-            "Phone": "123-456-7890",
-            "Company": "Adobe Inc.",
-            "Country": "United States",
-            "PreferredContactMethod": "Email",
-            "SubscribeToNewsletter": true
-        }
-    }'
-
-    ```
-
-* URL encoded (`x-www-form-urlencoded`) body (with `content-type` header set to `application/x-www-form-urlencoded`)
-
-    ```Shell
-
-    'Email=kent%40wknd.com&Name=clark&Subject=Regarding+Product+Inquiry&Message=I   +have+some+questions+about+your+products.&Phone=123-456-7890&Company=Adobe+Inc.&   Country=United+States&PreferredContactMethod=Email&SubscribeToNewsletter=true'
-
-    ```
-
-    For example, if your project's repository is named "wefinance", it's located under the account owner "wkndform", and you're using the "main" branch.,
-
-    ```Shell
-
-    curl -s -i -X POST \
-      -d 'Email=kent%40wknd.com&Name=clark&Subject=Regarding+Product+Inquiry&   Message=I+have+some+questions+about+your+products.&Phone=123-456-7890& Company=Adobe+Inc.&Country=United+States&PreferredContactMethod=Email&   SubscribeToNewsletter=true' \
-      https://main--wefinance--wkndform.aem.live/contact-us
-
-    ```
--->
-
 接下來，您可以[自訂感謝訊息](/help/edge/docs/forms/thank-you-page-form.md)。
 
-## 另請參閱
-
-{{see-more-forms-eds}}

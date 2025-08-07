@@ -4,7 +4,7 @@ description: 透過回應式設計，相同的體驗能夠有效地以多個方�
 exl-id: be645062-d6d6-45a2-97dc-d8aa235539b8
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 70a35cfeb163967b0f627d3ac6495f112d922974
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
 source-wordcount: '1165'
 ht-degree: 0%
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 ![回應式設計範例](assets/responsive-example.png)
 
-開發可產生HTML5的Adobe Experience Manager (AEM)應用程式，以調整多個視窗大小和方向。 例如，下列檢視區寬度範圍會與各種裝置型別和方向相對應
+開發可產生HTML5且能適應多種視窗大小和方向的Adobe Experience Manager (AEM)應用程式。 例如，下列檢視區寬度範圍會與各種裝置型別和方向相對應
 
 * 最大寬度480畫素（手機、直向）
 * 最大寬度767畫素（手機、橫向）
@@ -85,7 +85,7 @@ W3C群組提供說明此CSS3功能與語法的[媒體查詢](https://www.w3.org/
 
 ### 搭配AEM頁面使用媒體查詢 {#using-media-queries-with-aem-pages}
 
-[WKND範例專案](/help/implementing/developing/introduction/develop-wknd-tutorial.md)和[AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)使用[頁面核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html?lang=zh-Hant)，其中包含透過頁面原則的clientlibs。
+[WKND範例專案](/help/implementing/developing/introduction/develop-wknd-tutorial.md)和[AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)使用[頁面核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html)，其中包含透過頁面原則的clientlibs。
 
 如果您自己的頁面元件並非以頁面核心元件為基礎，您也可以將使用者端程式庫資料夾包含在其的HTL或JSP指令碼中。 這麼做將產生並參照CSS檔案，其中包含回應式格線運作所需的媒體查詢。
 
@@ -102,7 +102,7 @@ W3C群組提供說明此CSS3功能與語法的[媒體查詢](https://www.w3.org/
 <ui:includeClientLib categories="apps.weretail.all"/>
 ```
 
-JSP指令碼會產生下列參考樣式表的HTML代碼：
+JSP指令碼會產生下列HTML程式碼，這些程式碼會參考樣式表：
 
 ```xml
 <link rel="stylesheet" href="/etc/designs/weretail/clientlibs-all.css" type="text/css">
@@ -135,16 +135,16 @@ JSP指令碼會產生下列參考樣式表的HTML代碼：
 
 回應式頁面會動態調整以適合其轉譯的裝置，為使用者提供更好的體驗。 不過，將資產最佳化成中斷點和裝置以縮短頁面載入時間也是很重要的一點。
 
-[核心元件影像元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=zh-Hant)具備最適化影像選取範圍等功能。
+[核心元件影像元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html)具備最適化影像選取範圍等功能。
 
-* 依預設，影像元件會使用[最適化影像Servlet](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/adaptive-image-servlet.html?lang=zh-Hant)來提供適當的轉譯。
+* 依預設，影像元件會使用[最適化影像Servlet](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/adaptive-image-servlet.html)來提供適當的轉譯。
 * [網頁最佳化的影像傳送](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=zh-Hant)也可透過其原則中的簡單核取方塊取得，該核取方塊會以WebP格式從DAM傳送影像資產，平均可將影像的下載大小減少約25%。
 
 ## 配置容器 {#layout-container}
 
-AEM配置容器可讓您有效率且有效地實作回應式配置，以根據使用者端檢視區調整頁面尺寸。
+AEM的「版面容器」可讓您有效率且有效地實作回應式版面，以根據使用者端檢視區調整頁面尺寸。
 
->[回應式格線的GitHub檔案](https://adobe-marketing-cloud.github.io/aem-responsivegrid/)可供前端開發人員參考，讓他們能夠在AEM外部使用AEM格線，例如為未來的AEM網站建立靜態HTML模型時。
+>[回應式格線的GitHub檔案](https://adobe-marketing-cloud.github.io/aem-responsivegrid/)可供前端開發人員參考，讓他們能夠在AEM之外使用AEM格線，例如為未來的AEM網站建立靜態HTML模型時。
 
 >[!TIP]
 >
@@ -152,7 +152,7 @@ AEM配置容器可讓您有效率且有效地實作回應式配置，以根據�
 
 ## 巢狀回應式格點 {#nested-responsive-grids}
 
-在某些情況下，您可能會發現有必要巢狀內嵌回應式格線以支援專案的需求。 不過，請記住，Adobe建議的最佳實務是儘可能將結構保持平坦。
+在某些情況下，您可能會發現有必要巢狀內嵌回應式格線以支援專案的需求。 不過請記住，Adobe建議的最佳實務是儘可能保持平坦的結構。
 
 當您無法避免使用巢狀回應式格點時，請確定：
 

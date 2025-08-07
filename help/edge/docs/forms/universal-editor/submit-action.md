@@ -6,9 +6,9 @@ role: Admin, Architect, Developer
 exl-id: beee9be7-8215-496b-9fb9-61fba000a055
 hide: true
 hidefromToC: true
-source-git-commit: 565336d96a718a46f23d0acfa6155a6fd78ad87d
-workflow-type: ht
-source-wordcount: '930'
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
+source-wordcount: '928'
 ht-degree: 100%
 
 ---
@@ -23,20 +23,20 @@ ht-degree: 100%
 
 本文件閱讀完畢後，您將了解如何進行以下事項：
 
-* 為表單設定不同類型的提交動作
-* 設定 REST 端點提交以便與外部系統整合
-* 設定電子郵件提交以獲得表單回覆
-* 實施自訂提交動作以滿足特定業務需求
-* 處理提交期間的表單驗證和錯誤情況
+- 為表單設定不同類型的提交動作
+- 設定 REST 端點提交以便與外部系統整合
+- 設定電子郵件提交以獲得表單回覆
+- 實施自訂提交動作以滿足特定業務需求
+- 處理提交期間的表單驗證和錯誤情況
 
 ### 目標讀者
 
 本指南適用於以下人員：
 
-* 實施提交邏輯的&#x200B;**表單開發人員**
-* 將表單連接到後端系統的&#x200B;**系統整合商**
-* 定義表單工作流程的&#x200B;**業務分析人員**
-* 設計表單提交流程的&#x200B;**技術架構者**
+- 實施提交邏輯的&#x200B;**表單開發人員**
+- 將表單連接到後端系統的&#x200B;**系統整合商**
+- 定義表單工作流程的&#x200B;**業務分析人員**
+- 設計表單提交流程的&#x200B;**技術架構者**
 
 ### 可用的提交動作
 
@@ -49,16 +49,16 @@ ht-degree: 100%
 
 在設定提交動作前，請確保您符合以下條件：
 
-* 擁有通用編輯器的存取權
-* 擁有表單設定的適當權限
-* 了解目標提交端點或電子郵件設定
+- 擁有通用編輯器的存取權
+- 擁有表單設定的適當權限
+- 了解目標提交端點或電子郵件設定
 
 提交動作會指定透過最適化表單所收集的資料的目的地。使用者按一下表單上的「**[!UICONTROL 提交]**」按鈕時，提交流程隨即開始。AEM Forms 可提供以下所述的兩種提交動作類型，並讓您建立和使用自訂提交動作來滿足您的特定需求。現成可用的提交動作包括：
 
 <!--To define a Submit Action for an Adaptive Form, you use the Properties dialog of the **Adaptive Form block** in the **Editor**-->
 
-* [提交到 REST 端點](#rest-endpoint-submission-ue)
-* [寄送電子郵件](#email-submission-ue)
+- [提交到 REST 端點](#rest-endpoint-submission-ue)
+- [寄送電子郵件](#email-submission-ue)
 
 
 ### 提交到 REST 端點 {#rest-endpoint-submission-ue}
@@ -66,9 +66,9 @@ ht-degree: 100%
 提交到 REST 端點動作會用於將已提交的表單資料傳送到指定的 REST 端點。該端點可能屬於代管表單的內部伺服器，也可能透過使用相對路徑或絕對路徑屬於外部伺服器。若要將資料提交到託管表單的 AEM 伺服器，請使用對應至 AEM 伺服器根路徑的相對路徑。例如 `/content/forms/af/SampleForm.html`。若要將資料提交到任何其他伺服器，可使用絕對路徑。
 
 <!--Configuring the Submit Action to REST Endpoint for Adaptive Forms offers several benefits such as:  
-* It facilitates seamless integration of form data with external systems and services via RESTful APIs.  
-* Offers flexibility in managing data submissions from Adaptive Forms, accommodating dynamic and complex data structures.  
-* Allows dynamic mapping of form fields to parameters within the REST endpoint URL, enabling adaptable and customizable data submissions.
+- It facilitates seamless integration of form data with external systems and services via RESTful APIs.  
+- Offers flexibility in managing data submissions from Adaptive Forms, accommodating dynamic and complex data structures.  
+- Allows dynamic mapping of form fields to parameters within the REST endpoint URL, enabling adaptable and customizable data submissions.
 -->
 
 
@@ -86,8 +86,8 @@ ht-degree: 100%
 
 >[!NOTE]
 >
-> * 若要將資料發佈到內部伺服器，請提供資源的路徑。資料會張貼到資源的路徑。例如 `/content/restEndPoint`。對於此類發佈要求，會使用提交要求的驗證資訊。
-> * 若要將資料發佈到外部伺服器，請提供 URL。URL 的格式是：`https://host:port/path_to_rest_end_point`。請確保設定以匿名方式處理 POST 要求的路徑。
+> - 若要將資料發佈到內部伺服器，請提供資源的路徑。資料會張貼到資源的路徑。例如 `/content/restEndPoint`。對於此類發佈要求，會使用提交要求的驗證資訊。
+> - 若要將資料發佈到外部伺服器，請提供 URL。URL 的格式是：`https://host:port/path_to_rest_end_point`。請確保設定以匿名方式處理 POST 要求的路徑。
 
 ### 寄送電子郵件 {#email-submission-ue}
 
@@ -176,11 +176,8 @@ ht-degree: 100%
 1. 選取您的&#x200B;**[!UICONTROL 最適化表單區塊]**。
 1. 按一下屬性「![properties](/help/forms/assets/Smock_Properties_18_N.svg)」圖示。
 1. 點擊後，您即會看到下列選項：
-   * **[!UICONTROL 提交時]**：「提交時」可協助您自訂提交表單時顯示的訊息。預設情況下，成功提交表單時，會向使用者顯示自訂訊息「感謝您提交表單」。
+   - **[!UICONTROL 提交時]**：「提交時」可協助您自訂提交表單時顯示的訊息。預設情況下，成功提交表單時，會向使用者顯示自訂訊息「感謝您提交表單」。
 您也可以在提交表單時自訂感謝訊息，透過選取「**[!UICONTROL 顯示訊息]**」選項，然後以 RTF 文字&#x200B;**編輯器**&#x200B;新增/編輯您的訊息。
 
 
-## 另請參閱
-
-{{universal-editor-see-also}}
 

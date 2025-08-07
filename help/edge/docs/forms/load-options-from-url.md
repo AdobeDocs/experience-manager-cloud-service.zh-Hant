@@ -4,10 +4,10 @@ description: 下拉式清單選項包含在不同的試算表中，然後透過�
 feature: Edge Delivery Services
 exl-id: 5b0bc1b6-6e33-41f3-b7c1-4d997787b6cd
 role: Admin, Architect, Developer
-source-git-commit: cb914f76b0b785a89b20ef5eaacbc36e8217944b
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 87%
+source-wordcount: '504'
+ht-degree: 100%
 
 ---
 
@@ -19,16 +19,16 @@ ht-degree: 87%
 
 從單獨的試算表載入下拉式清單選項的好處是：
 
-* 簡化管理：在集中位置維護下拉式清單選項，可輕鬆更新和新增。
-* 提升效率：無需在表單定義中手動新增很長的選項清單。
+- 簡化管理：在集中位置維護下拉式清單選項，可輕鬆更新和新增。
+- 提升效率：無需在表單定義中手動新增很長的選項清單。
 
 ![下拉式清單選項](/help/forms/assets/drop-down-options.png)
 
 
 閱讀完本文章後，您將學會：
 
-* [在單獨的試算表中定義選項](#define-options)
-* [新增 URL 以載入下拉式清單選項](#add-url)
+- [在單獨的試算表中定義選項](#define-options)
+- [新增 URL 以載入下拉式清單選項](#add-url)
 
 ## 在單獨的工作表中定義選項 {#define-options}
 
@@ -39,8 +39,8 @@ ht-degree: 87%
    1. 新增試算表。例如，「共用的國家/地區」。
 1. 定義「選項」欄：
 新增兩個欄：「選項」和「值」。
-   * 「選項」是定義下拉式選單中顯示的文字。
-   * 「值」是定義使用者選取該選項時提交的值。
+   - 「選項」是定義下拉式選單中顯示的文字。
+   - 「值」是定義使用者選取該選項時提交的值。
 
    >[!NOTE]
    >
@@ -55,7 +55,7 @@ ht-degree: 87%
 
 1. 使用 [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) 來預覽和發佈`shared-country`工作表。
 
-   例如，如果專案的存放庫命名為「wefinance」，則位於帳戶擁有者「wkndform」下方，而您使用的是「主要」分支，即顯示`shared-country`工作表的URL：
+   例如，如果您的專案存放庫名為 “wefinance” (位於帳戶所有者 “wkndform” 下面)，並且您使用的是 &quot;main&quot; 分支，則該 URL 會展示 `shared-country` 工作表：
    `https://main--wefinance--wkndform.aem.live/enquiry.json?sheet=country`
    <!--(https://main--wefinance--wkndform.aem.live/enquiry.json?sheet=country)  -->
 
@@ -81,14 +81,9 @@ ht-degree: 87%
 
 將 URL 整合到表單定義並載入下拉式清單選項後，`Destination`下拉式清單的選項一開始會從 URL 顯示。
 
-例如，如果專案的存放庫命名為「wefinance」，它位於帳戶擁有者「wkndform」下方，而您使用的是「main」分支，以下URL會顯示`enquiry`表單，其中顯示儲存在個別工作表中的選項：
+例如，如果您的專案存放庫名為 “wefinance” (位於帳戶所有者 “wkndform” 下面)，並且您使用的是 “main” 分支，則下列 URL 會顯示 `enquiry` 表單，其中會顯示儲存在單獨工作表中的選項：
 
 `https://main--wefinance--wkndform.aem.live/enquiry-form`
-<!--(https://main--wefinance--wkndform.aem.live/enquiry-form) 
--->
 
-## 另請參閱
-
-{{see-more-forms-eds}}
 
 

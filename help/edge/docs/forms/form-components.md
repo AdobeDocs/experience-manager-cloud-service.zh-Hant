@@ -1,12 +1,12 @@
 ---
 title: 最適化表單區塊元件及其屬性
-description: 本文件概述 AEM Forms 適用的 Edge Delivery Services 所提供表單元件及其屬性。
+description: 本文件概觀 AEM Forms 適用的 Edge Delivery Services 所提供表單元件及其屬性。
 feature: Edge Delivery Services
 exl-id: 7d087d41-9313-482a-a905-8955b0999781
 role: Admin, Architect, Developer
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: ht
-source-wordcount: '1009'
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
+source-wordcount: '1007'
 ht-degree: 100%
 
 ---
@@ -26,17 +26,17 @@ AEM Forms 適用的 Edge Delivery Services 讓您可以使用各種元件建立�
 
 ### 輸入欄位
 
-* 所有有效的 HTML5 [輸入類型](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types)和 [textarea](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea)。例如，按鈕、勾選方塊、顏色、日期、本地日期時間、電子郵件、檔案、隱藏、影像、月份、數字、密碼、單選、範圍、重設、提交、電話、文字、時間、url 和星期。
+- 所有有效的 HTML5 [輸入類型](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types)和 [textarea](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea)。例如，按鈕、勾選方塊、顏色、日期、本地日期時間、電子郵件、檔案、隱藏、影像、月份、數字、密碼、單選、範圍、重設、提交、電話、文字、時間、url 和星期。
 
 ### 選取控制
 
-* [勾選方塊群組](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox)：選取多個選項。
-* [單選按鈕群組](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio)：在一組選項中進行一個單項選擇。
-* [下拉式選單](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select)：顯示選項選單。例如，下拉式方框。
+- [勾選方塊群組](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox)：選取多個選項。
+- [單選按鈕群組](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio)：在一組選項中進行一個單項選擇。
+- [下拉式選單](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select)：顯示選項選單。例如，下拉式方框。
 
 ### 容器
 
-* 面板/容器：將相關的表單元素分組歸類以利整理安排。這是[欄位集](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset)和[圖例](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend)的組合。
+- 面板/容器：將相關的表單元素分組歸類以利整理安排。這是[欄位集](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset)和[圖例](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend)的組合。
 
 
 ## 元件屬性
@@ -64,8 +64,3 @@ AEM Forms 適用的 Edge Delivery Services 讓您可以使用各種元件建立�
 | 可重複 | 全部 | `fieldset` 的布林值屬性，表示特定欄位集可以重複，次數下限為 `Min`，上限為 `Max`。 `Min` 屬性應設為 1 或更大，請勿將 `Min` 屬性設為 0。 |
 | 可見度運算式 | 全部 | 可見度運算式是指試算表公式，由 &#39;=&#39; 標記表示，用於控制欄位可見度。在此公式中，只能使用其他欄位的值屬性，以便可以直接管理系統內的欄位可見度。 |
 | 值運算式 | 全部 | 值運算式是指試算表公式，由 &#39;=&#39; 標記表示，用於控制欄位的值。在此公式中，只能使用其他欄位的值屬性，以便可以直接管理系統內欄位的值。 |
-
-
-## 另請參閱
-
-{{see-more-forms-eds}}

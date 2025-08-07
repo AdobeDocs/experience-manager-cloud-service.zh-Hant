@@ -4,17 +4,14 @@ description: 有效地自訂透過 Edge Delivery Services 交付的 AEM Forms �
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
-workflow-type: ht
-source-wordcount: '1833'
-ht-degree: 100%
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
+source-wordcount: '1916'
+ht-degree: 83%
 
 ---
 
 # 自訂表單的外觀
-
-<span class="preview">這是一項預先發佈功能，可透過我們的<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hant#new-features">預先發佈管道</a>取得。</span>
-
 
 表單對於網站上的使用者互動至關重要，可讓使用者輸入資料。您可以使用階層式樣式表 (CSS) 來設定表單欄位的樣式，增強表單的視覺呈現效果並提升使用者體驗。
 
@@ -24,51 +21,69 @@ ht-degree: 100%
 
 在文章的最後：
 
-* 您可以了解最適化表單區塊中包含的預設 CSS 檔案的結構。
-* 您可以了解最適化表單區塊所提供的表單元件的 HTML 結構，包括一般元件和特定元件，例如下拉式清單、單選按鈕群組和核取方塊群組。
-* 您將學習如何使用 CSS 選擇器根據欄位類型和欄位名稱設定表單欄位的樣式，從而根據需求實現一致或獨特的樣式。
+- 您可以了解最適化表單區塊中包含的預設 CSS 檔案的結構。
+- 您可以了解最適化表單區塊所提供的表單元件的 HTML 結構，包括一般元件和特定元件，例如下拉式清單、單選按鈕群組和核取方塊群組。
+- 您將學習如何使用 CSS 選擇器根據欄位類型和欄位名稱設定表單欄位的樣式，從而根據需求實現一致或獨特的樣式。
 
 ## 了解表單欄位類型
 
 在深入研究樣式之前，讓我們回顧一下最適化表單區塊支援的常見表單[欄位類型](/help/edge/docs/forms/universal-editor/create-custom-component.md#supported-fieldtypes)：
 
-* 輸入欄位：包括文字輸入、電子郵件輸入、密碼輸入等。
-* 核取方塊群組：用於選取多個選項。
-* 單選按鈕群組：用於從一組選項中選取一個選項。
-* 下拉式選單：也稱為選取方塊，用於從清單中選取一個選項。
-* 面板/容器：用於將相關的表單元素組成群組。
+- 輸入欄位：包括文字輸入、電子郵件輸入、密碼輸入等。
+- 核取方塊群組：用於選取多個選項。
+- 單選按鈕群組：用於從一組選項中選取一個選項。
+- 下拉式選單：也稱為選取方塊，用於從清單中選取一個選項。
+- 面板/容器：用於將相關的表單元素組成群組。
 
 ## 基本樣式設定原則
 
 在設定特定表單欄位的樣式之前，了解[基本的 CSS 概念](https://www.w3schools.com/css/css_intro.asp)至關重要：
 
-* [選取器](https://www.w3schools.com/css/css_selectors.asp)：CSS 選擇器可讓您針對特定的 HTML 元素進行樣式設定。您可以使用元素選擇器、類別選擇器或 ID 選擇器。
-* [屬性](https://www.w3schools.com/css/css_syntax.asp)：CSS 屬性定義元素的外觀。用於設定表單欄位樣式的常見屬性包括顏色、背景顏色、邊框、邊框間距、邊界等。
-* [方塊模型](https://www.w3schools.com/css/css_boxmodel.asp)：CSS 方塊模型會將 HTML 元素結構描述為由邊框間距、邊框和邊界包圍的內容區域
-* Flexbox/Grid：CSS [Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) 和[ Grid 版面](https://www.w3schools.com/css/css_grid.asp)是建立回應式和靈活設計的強大工具。
+- [選取器](https://www.w3schools.com/css/css_selectors.asp)：CSS 選擇器可讓您針對特定的 HTML 元素進行樣式設定。您可以使用元素選擇器、類別選擇器或 ID 選擇器。
+- [屬性](https://www.w3schools.com/css/css_syntax.asp)：CSS 屬性定義元素的外觀。用於設定表單欄位樣式的常見屬性包括顏色、背景顏色、邊框、邊框間距、邊界等。
+- [方塊模型](https://www.w3schools.com/css/css_boxmodel.asp)：CSS 方塊模型會將 HTML 元素結構描述為由邊框間距、邊框和邊界包圍的內容區域
+- Flexbox/Grid：CSS [Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) 和[ Grid 版面](https://www.w3schools.com/css/css_grid.asp)是建立回應式和靈活設計的強大工具。
 
 
 ## 為最適化表單區塊設定表單樣式
 
 最適化區塊提供了標準化的 HTML 結構，簡化了選取表單元件和設定表單元件樣式的程序：
 
-* **更新預設樣式**：您可以透過編輯 `/blocks/form/form.css file` 來修改表單的預設樣式。此檔案提供了表單的全面樣式，支援多步驟精靈表單。其著重在使用自訂 CSS 變數，讓自訂、維護和統一表單樣式的工作變得簡單。
+- **更新預設樣式**：您可以編輯表單CSS檔案來修改表單的預設樣式。 預設樣式可在您專案的GitHub存放庫中取得，通常位於： `https://github.com/<your-github-username>/<your-repository>/tree/main/blocks/form/form.css`。 此檔案提供完整的表單樣式，支援多步驟精靈表單，並強調使用CSS自訂屬性來輕鬆自訂。
 
-* **表單的 CSS 樣式**：若要確保正確套用樣式，請將表單專屬的 CSS 包覆在 `main .form form` 選取器中。這樣可確保您的樣式只會以主內容區域內的表單元素為目標，避免與網站的其他部分發生衝突。
+- **CSS樣式模式**： Edge Delivery Services使用區塊式CSS架構。 使用這些建議的選取器模式：
 
-  範例：
+  **主要模式（建議）：**
 
   ```css
-  main .form form .{Type}-wrapper input {
-      /* Add styles specific to input fields inside the form */
+  /- Block-level styling - Form container */
+  .form {
+      /- Styles for the entire form block */
+      max-width: 600px;
+      margin: 0 auto;
   }
   
-  main .form form .{Type}-wrapper button {
-      /* Add styles specific to buttons inside the form */
+  /- Form element styling */
+  .form form {
+      /- Styles for the actual <form> element */
+      padding: 2rem;
   }
   
-  main .form form .{Type}-wrapper label {
-      /* Add styles specific to labels inside the form */
+  /- Field wrapper styling by type */
+  .form .{Type}-wrapper input {
+      /- Styles for input fields */
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+  }
+  ```
+
+  **內容特定模式（當需要更高特殊性時）：**
+
+  ```css
+  /- When you need higher specificity for main content area */
+  main .form .{Type}-wrapper input {
+      /- More specific targeting */
+      border-color: #007cba;
   }
   ```
 
@@ -92,14 +107,14 @@ ht-degree: 100%
   </div>
 ```
 
-* 類別：div 元素有幾個目標為特定元素和樣式的類別。您需要 `{Type}-wrapper` 或 `field-{Name}` 類別以開發 CSS 選取器來設定表單欄位樣式：
-* {Type}：根據欄位類型識別元件。例如，text (text-wrapper)、number (number-wrapper)、date (date-wrapper)。
-* {Name}：根據名稱識別元件。欄位名稱只能包含英數字元，名稱中的多個連續破折號將替換為單個破折號 `(-)`，並且將移除欄位名稱中的開頭和結尾的破折號。例如，first-name (field-first-name field-wrapper)。
-* {FieldId}：自動產生的欄位唯一識別碼。
-* {Required}：一個布林值，用於表示此欄位是否為必要欄位。
-* 標籤：的 `label` 元素提供欄位的描述性文字，並使用 `for` 屬性將其與輸入元素相關聯。
-* 輸入：`input` 元素定義要輸入的資料類型。例如，text、number、email。
-* 描述 (選用)：`div` 與類別 `field-description` 會為使用者提供其他資訊或指示。
+- 類別：div 元素有幾個目標為特定元素和樣式的類別。您需要 `{Type}-wrapper` 或 `field-{Name}` 類別以開發 CSS 選取器來設定表單欄位樣式：
+- {Type}：根據欄位類型識別元件。例如，text (text-wrapper)、number (number-wrapper)、date (date-wrapper)。
+- {Name}：根據名稱識別元件。欄位名稱只能包含英數字元，名稱中的多個連續破折號將替換為單個破折號 `(-)`，並且將移除欄位名稱中的開頭和結尾的破折號。例如，first-name (field-first-name field-wrapper)。
+- {FieldId}：自動產生的欄位唯一識別碼。
+- {Required}：一個布林值，用於表示此欄位是否為必要欄位。
+- 標籤：的 `label` 元素提供欄位的描述性文字，並使用 `for` 屬性將其與輸入元素相關聯。
+- 輸入：`input` 元素定義要輸入的資料類型。例如，text、number、email。
+- 描述 (選用)：`div` 與類別 `field-description` 會為使用者提供其他資訊或指示。
 
 **HTML 結構範例**
 
@@ -118,49 +133,55 @@ ht-degree: 100%
 +++ 一般元件的 CSS 選取器
 
 ```CSS
-  
-  /* Target all input fields within any .{Type}-wrapper  */
-  main .form form .{Type}-wrapper  {
-    /* Add your styles here */
-    border: 1px solid #ccc;
-    padding: 8px;
-    border-radius: 4px;
-  }
-  
-  /* Target all input fields within any .{Type}-wrapper  */
-  main .form form .{Type}-wrapper input {
-    /* Add your styles here */
-    border: 1px solid #ccc;
-    padding: 8px;
-    border-radius: 4px;
-  }
-  
-  /* Target any element with the class field-{Name}  */
-  main .form form .field-{Name} {
-    /* Add your styles here */
-    /* This could be used for styles specific to all elements with   field-{Name} class, not just inputs */
-  }
-  
+/- Primary Pattern: Target field wrapper by type */
+.form .{Type}-wrapper {
+  /- Add your styles here */
+  margin-bottom: 1rem;
+  border-radius: 4px;
+}
+
+/- Primary Pattern: Target input fields within wrapper */
+.form .{Type}-wrapper input {
+  /- Add your styles here */
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 4px;
+  width: 100%;
+}
+
+/- Context-specific: Target element by field name when higher specificity needed */
+.form .field-{Name} input {
+  /- Add your styles here */
+  /- Use this pattern for specific field customization */
+}
 ```
-* `.{Type}-wrapper`：根據欄位類型以外部 `div` 元素為目標。例如，`.text-wrapper` 以所有文字欄位為目標。
-* `.field-{Name}`：根據特定欄位名稱進一步選取元素。例如，`.field-first-name` 以「名字」文字欄位為目標。雖然此選擇器可用來針對具有 field-{Name} 類別的元素，但請謹慎使用。在這種特定情況下，這對於設定輸入欄位的樣式並不是很有用，因為其不僅以輸入本身為目標，而且還會以標籤和描述元素為目標。建議使用比較具體的選擇器，例如用於針對文字輸入欄位 (.text-wrapper input) 的選擇器。
+
+- `.form .{Type}-wrapper`：根據欄位型別定位欄位包裝函式專案。 例如，`.form .text-wrapper`會鎖定所有文字欄位容器。
+- `.form .{Type}-wrapper input`：以包裝函式中的實際輸入元素為目標。 這是設定表單輸入樣式的建議模式。
+- `.form .field-{Name}`：根據特定欄位名稱的目標元素。 例如，`.form .field-first-name`會鎖定「名字」欄位容器。 使用`.form .field-{Name} input`以特定目標定位輸入專案。
+- **避免**： `main .form form .{Type}-wrapper` — 這會建立不必要的CSS特殊性，且較難維護。
 
 **一般元件的 CSS 選取器範例**
 
 ```CSS
-/*Target all text input fields */
-main .form form .text-wrapper input {
+/- Primary Pattern: Target all text input fields */
+.form .text-wrapper input {
   border: 1px solid #ccc;
   padding: 8px;
   border-radius: 4px;
-  color: red;
+  width: 100%;
 }
 
-/*Target all fields with name first-name*/
-main .form form .field-first-name input {
-  border: 1px solid #ccc;
-  padding: 8px;
-  border-radius: 4px;
+/- Context-specific: Target field by name when higher specificity needed */
+.form .field-first-name input {
+  text-transform: capitalize;
+  border-color: #007cba;
+}
+
+/- Alternative with main context if needed */
+main .form .text-wrapper input {
+  /- Use only when you need higher specificity */
+  color: #333;
 }
 ```
 
@@ -205,30 +226,37 @@ main .form form .field-first-name input {
 以下 CSS 列出下拉式選單元件的一些範例 CSS 選擇器。
 
 ```CSS
-/* Target the outer wrapper */
-main .form form .drop-down-wrapper {
-  /* Add your styles here */
+/- Primary Pattern: Target the dropdown wrapper */
+.form .drop-down-wrapper {
+  /- Add your styles here */
   display: flex;
   flex-direction: column;
   margin-bottom: 15px;
 }
 
-/* Style the label */
-main .form form .drop-down-wrapper .field-label {
+/- Target the select element */
+.form .drop-down-wrapper select {
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+/- Style the label */
+.form .drop-down-wrapper .field-label {
   margin-bottom: 5px;
   font-weight: bold;
 }
 ```
-* 以包裝函式為目標：第一個選取器 (`.drop-down-wrapper`) 以外部包裝函式元素為目標，確保樣式套用至整個下拉式選單元件。
-* Flexbox 版面：Flexbox 垂直排列標籤、下拉式選單和說明，以呈現簡潔的版面。
-* 標籤樣式設定：標籤以較粗字體和些微邊界呈現醒目效果。
-* 下拉式選單樣式設定：`select` 元素獲得邊框、邊框間距和圓角，具有精美的外觀。
-* 背景顏色：設定一致的背景顏色讓視覺更為和諧。
-* 箭頭自訂：選擇性樣式可隱藏預設下拉箭頭，並使用 Unicode 字元和定位建立自訂箭頭。
+
+- 以包裝函式為目標：第一個選取器 (`.drop-down-wrapper`) 以外部包裝函式元素為目標，確保樣式套用至整個下拉式選單元件。
+- Flexbox 版面：Flexbox 垂直排列標籤、下拉式選單和說明，以呈現簡潔的版面。
+- 標籤樣式設定：標籤以較粗字體和些微邊界呈現醒目效果。
+- 下拉式選單樣式設定：`select` 元素獲得邊框、邊框間距和圓角，具有精美的外觀。
+- 背景顏色：設定一致的背景顏色讓視覺更為和諧。
+- 箭頭自訂：選擇性樣式可隱藏預設下拉箭頭，並使用 Unicode 字元和定位建立自訂箭頭。
 
 +++
-
----
 
 ### 單選按鈕群組
 
@@ -274,7 +302,7 @@ main .form form .drop-down-wrapper .field-label {
 
 +++ 單選按鈕群組的 CSS 選擇器
 
-* 為欄位集進行目標定位
+- 為欄位集進行目標定位
 
 ```CSS
   main .form form .radio-group-wrapper {
@@ -282,9 +310,10 @@ main .form form .drop-down-wrapper .field-label {
     padding: 10px;
   }
 ```
+
 此選擇器針對具有 radio-group-wrapper 類別的任何欄位集。這對於將通用樣式應用於整個單選按鈕群組非常有用。
 
-* 為單選按鈕標籤進行目標定位
+- 為單選按鈕標籤進行目標定位
 
 ```CSS
 main .form form .radio-wrapper label {
@@ -293,11 +322,11 @@ main .form form .radio-wrapper label {
   }
 ```
 
-* 根據名稱鎖定來針對欄位集中的所有單選按鈕標籤
+- 根據名稱鎖定來針對欄位集中的所有單選按鈕標籤
 
 ```CSS
 main .form form .field-color .radio-wrapper label {
-  /* Your styles here */
+  /- Your styles here */
 }
 ```
 
@@ -311,7 +340,7 @@ main .form form .field-color .radio-wrapper label {
 <fieldset class="checkbox-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
    <legend for="{FieldId}" class="field-label">....</legend>
    <% for each radio in Group %>
-   <div class="radio-wrapper field-{Name}">
+   <div class="checkbox-wrapper field-{Name}">
       <input type="checkbox" value="" id="{UniqueId}" data-field-type="checkbox-group" name="{FieldId}">
       <label for="{UniqueId}" class="field-label">...</label>
    </div>
@@ -343,80 +372,93 @@ main .form form .field-color .radio-wrapper label {
 
 +++ 核取方塊群組的 CSS 選取器
 
-* 以外部包裝函式為目標：這些選取器的目標為單選按鈕和核取方塊群組的最外層容器，讓您可將一般樣式套用至整個群組結構。這對於設定間距、對齊方式或其他版面相關的屬性非常有用。
+- 以外部包裝函式為目標：這些選取器的目標為單選按鈕和核取方塊群組的最外層容器，讓您可將一般樣式套用至整個群組結構。這對於設定間距、對齊方式或其他版面相關的屬性非常有用。
 
 ```CSS
   
-  /* Targets radio group wrappers */
-  main .form form .radio-group-wrapper {
-    margin-bottom: 20px; /* Adds space between radio groups */  
+  /- Primary Pattern: Targets radio group wrappers */
+  .form .radio-group-wrapper {
+    margin-bottom: 20px; /- Adds space between radio groups */  
+    display: flex;
+    flex-direction: column;
   }
 
-  /* Targets checkbox group wrappers */
-  main .form form .checkbox-group-wrapper {
-    margin-bottom: 20px; /* Adds space between checkbox groups */
+  /- Primary Pattern: Targets checkbox group wrappers */
+  .form .checkbox-group-wrapper {
+    margin-bottom: 20px; /- Adds space between checkbox groups */
+    display: flex;
+    flex-direction: column;
   }
 ```
 
-* 以群組標籤為目標：此選取器的目標為單選按鈕和核取方塊群組包裝函式內的 `.field-label` 元素。這使您可以專門為這些群組設定標籤樣式，從而可能使它們更加醒目。
+- 以群組標籤為目標：此選取器的目標為單選按鈕和核取方塊群組包裝函式內的 `.field-label` 元素。這使您可以專門為這些群組設定標籤樣式，從而可能使它們更加醒目。
 
 ```CSS
-main .form form .radio-group-wrapper legend,
-main .form form .checkbox-group-wrapper legend {
-  font-weight: bold; /* Makes the group label bold */
+/- Primary Pattern: Target group labels */
+.form .radio-group-wrapper legend,
+.form .checkbox-group-wrapper legend {
+  font-weight: bold; /- Makes the group label bold */
+  margin-bottom: 0.5rem;
+  font-size: var(--form-font-size-base);
 }
 ```
 
-* 以個別輸入和標籤為目標：這些選取器可以對個別單選按鈕、核取方塊及其關聯的標籤進行更精細的控制。您可以使用它們來調整大小、間距或套用更獨特的視覺樣式。
+- 以個別輸入和標籤為目標：這些選取器可以對個別單選按鈕、核取方塊及其關聯的標籤進行更精細的控制。您可以使用它們來調整大小、間距或套用更獨特的視覺樣式。
 
 ```CSS
-/* Styling radio buttons */
-main .form form .radio-group-wrapper input[type="radio"] {
-  margin-right: 5px; /* Adds space between the input and its label */
+/- Primary Pattern: Styling radio buttons */
+.form .radio-group-wrapper input[type="radio"] {
+  margin-right: 8px; /- Adds space between the input and its label */
+  margin-bottom: 4px;
 }
 
-/* Styling radio button labels */
-main .form form .radio-group-wrapper label {
-  font-size: 15px; /* Changes the label font size */
+/- Primary Pattern: Styling radio button labels */
+.form .radio-group-wrapper label {
+  font-size: var(--form-font-size-base); /- Changes the label font size */
+  display: flex;
+  align-items: center;
 }
 
-/* Styling checkboxes */
-main .form form .checkbox-group-wrapper input[type="checkbox"] {
-  margin-right: 5px; /* Adds space between the input and its label */
+/- Primary Pattern: Styling checkboxes */
+.form .checkbox-group-wrapper input[type="checkbox"] {
+  margin-right: 8px; /- Adds space between the input and its label */
+  margin-bottom: 4px;
 }
 
-/* Styling checkbox labels */
-main .form form .checkbox-group-wrapper label {
-  font-size: 15px; /* Changes the label font size */
+/- Primary Pattern: Styling checkbox labels */
+.form .checkbox-group-wrapper label {
+  font-size: var(--form-font-size-base); /- Changes the label font size */
+  display: flex;
+  align-items: center;
 }
 ```
 
-* 自訂單選按鈕和核取方塊的外觀：此技術隱藏預設輸入並使用 `:before` 和 `:after` 偽元素來建立自訂視覺效果，其根據「已選取」狀態來變更外觀。
+- 自訂單選按鈕和核取方塊的外觀：此技術隱藏預設輸入並使用 `:before` 和 `:after` 偽元素來建立自訂視覺效果，其根據「已選取」狀態來變更外觀。
 
 ```CSS
-/* Hide the default radio button or checkbox */
+/- Hide the default radio button or checkbox */
 main .form form .radio-group-wrapper input[type="radio"],
 main .form form .checkbox-group-wrapper input[type="checkbox"] {
   opacity: 0;
   position: absolute;
 }
 
-/* Create a custom radio button */
+/- Create a custom radio button */
 main .form form .radio-group-wrapper input[type="radio"] + label::before {
-  /* ... styles for custom radio button ... */
+  /- ... styles for custom radio button ... */
 }
 
 main .form form .radio-group-wrapper input[type="radio"]:checked + label::before {
-  /* ... styles for checked radio button ... */
+  /- ... styles for checked radio button ... */
 }
 
-/* Create a custom checkbox */
+/- Create a custom checkbox */
 main .form form .checkbox-group-wrapper input[type="checkbox"] + label::before {
-  /* ... styles for custom checkbox ... */
+  /- ... styles for custom checkbox ... */
 }
 
 main .form form .checkbox-group-wrapper input[type="checkbox"]:checked + label::before {
-  /* ... styles for checked checkbox ... */
+  /- ... styles for checked checkbox ... */
 }
 ```
 
@@ -461,10 +503,10 @@ main .form form .checkbox-group-wrapper input[type="checkbox"]:checked + label::
 </fieldset>
 ```
 
-* Fieldset 元素可用作含有 panel-wrapper 類別和其他類別的面板容器，以便根據面板名稱 (field-login) 設定樣式。
-* 圖例元素 (<legend>) 可用作面板標題，其中包含文字「登入資訊」和 field-label 類別。data-visible=&quot;false&quot; 屬性可以與 JavaScript 一起用來控制標題的可見度。
-* 在 fieldset 內部、多個。{Type}-wrapper 元素 (在本例中為 .text-wrapper 和 .password-wrapper) 代表面板中的個別表單欄位。
-* 每個包裝函式皆包含一個標籤、輸入欄位及說明，與先前的範例類似。
+- Fieldset 元素可用作含有 panel-wrapper 類別和其他類別的面板容器，以便根據面板名稱 (field-login) 設定樣式。
+- 圖例元素(`<legend>`)做為面板標題，包含「登入資訊」文字和類別欄位標籤。 data-visible=&quot;false&quot; 屬性可以與 JavaScript 一起用來控制標題的可見度。
+- 在 fieldset 內部、多個。{Type}-wrapper 元素 (在本例中為 .text-wrapper 和 .password-wrapper) 代表面板中的個別表單欄位。
+- 每個包裝函式皆包含一個標籤、輸入欄位及說明，與先前的範例類似。
 
 +++
 
@@ -473,9 +515,9 @@ main .form form .checkbox-group-wrapper input[type="checkbox"]:checked + label::
 1. 為面板進行目標定位：
 
 ```CSS
-  /* Target the entire panel container */
+  /- Target the entire panel container */
   main .form form .panel-wrapper {
-    /* Add your styles here (e.g., border, padding, background color) */
+    /- Add your styles here (e.g., border, padding, background color) */
     border: 1px solid #ccc;
     padding: 15px;
     border-radius: 4px;
@@ -483,52 +525,52 @@ main .form form .checkbox-group-wrapper input[type="checkbox"]:checked + label::
  }
 ```
 
-* `.panel-wrapper` 選擇器使用 panel-wrapper 類別來設定所有元素的樣式，為所有面板建立一致的外觀。
+- `.panel-wrapper` 選擇器使用 panel-wrapper 類別來設定所有元素的樣式，為所有面板建立一致的外觀。
 
 1. 為面板標題進行目標定位：
 
 ```CSS
-  /* Target the legend element (panel title) */
+  /- Target the legend element (panel title) */
   .panel-wrapper legend {
-    /* Add your styles here (e.g., font-weight, font-size) */
+    /- Add your styles here (e.g., font-weight, font-size) */
     font-weight: bold;
     font-size: 16px;
     padding-bottom: 5px;
     margin-bottom: 10px;
-    border-bottom: 1px solid #ddd; /* Optional: create a separation line */
+    border-bottom: 1px solid #ddd; /- Optional: create a separation line */
   }
 ```
 
-* `.panel-wrapper legend` 選擇器設定面板內圖例元素的樣式，讓標題在視覺上脫穎而出。
+- `.panel-wrapper legend` 選擇器設定面板內圖例元素的樣式，讓標題在視覺上脫穎而出。
 
 
 1. 為面板中個別欄位進行目標定位：
 
 ```CSS
-/* Target all form field wrappers within a panel */
+/- Target all form field wrappers within a panel */
 main .form form .panel-wrapper .{Type}-wrapper {
-  /* Add your styles here (e.g., margin) */
+  /- Add your styles here (e.g., margin) */
   margin-bottom: 10px;
 }
 ```
 
-* `.panel-wrapper .{Type}-wrapper` 選擇器為面板中含有 `.{Type}-wrapper` 類別的所有包裝函式進行目標定位，可讓您設定表單欄位之間的間距樣式。
+- `.panel-wrapper .{Type}-wrapper` 選擇器為面板中含有 `.{Type}-wrapper` 類別的所有包裝函式進行目標定位，可讓您設定表單欄位之間的間距樣式。
 
 1. 為特定欄位 (選項) 進行目標定位：
 
 ```CSS
-  /* Target the username field wrapper */
+  /- Target the username field wrapper */
   main .form form .panel-wrapper .text-wrapper.field-username {
-    /* Add your styles here (specific to username field) */
+    /- Add your styles here (specific to username field) */
   }
 
-  /* Target the password field wrapper */
+  /- Target the password field wrapper */
   main .form form .panel-wrapper .password-wrapper.field-password {
-    /* Add your styles here (specific to password field) */
+    /- Add your styles here (specific to password field) */
   }
 ```
 
-* 這些屬於選項的選擇器可讓您在面板中為特定欄位包裝函式進行獨特樣式的目標定位，例如醒目顯示使用者名稱欄位。
+- 這些屬於選項的選擇器可讓您在面板中為特定欄位包裝函式進行獨特樣式的目標定位，例如醒目顯示使用者名稱欄位。
 
 +++
 
@@ -590,20 +632,20 @@ main .form form .panel-wrapper .{Type}-wrapper {
 
 每個面板都有與單一面板範例相同的結構，並含有附加屬性：
 
-* data-repeatable=&quot;true&quot;：此屬性表示可使用 JavaScript 或框架以機動方式重複面板。
+- data-repeatable=&quot;true&quot;：此屬性表示可使用 JavaScript 或框架以機動方式重複面板。
 
-* 唯一 ID 和名稱：面板中的每個元素都有一個唯一 ID (例如 name-1、email-1) 和以面板索引為主的名稱屬性 (例如 name=&quot;contacts[0 ].name”)。這樣可以在提交多個面板時進行正確的資料收集。
+- 唯一 ID 和名稱：面板中的每個元素都有一個唯一 ID (例如 name-1、email-1) 和以面板索引為主的名稱屬性 (例如 name=&quot;contacts[0 ].name”)。這樣可以在提交多個面板時進行正確的資料收集。
 
 +++
 
 +++ 可重複面板的 CSS 選擇器
 
-* 為所有可重複面板進行目標定位：
+- 為所有可重複面板進行目標定位：
 
 ```CSS
-  /* Target all panels with the repeatable attribute */
+  /- Target all panels with the repeatable attribute */
  main .form form .panel-wrapper[data-repeatable="true"] {
-    /* Add your styles here (e.g., border, margin) */
+    /- Add your styles here (e.g., border, margin) */
     border: 1px solid #ccc;
     padding: 15px;
     border-radius: 4px;
@@ -614,26 +656,27 @@ main .form form .panel-wrapper .{Type}-wrapper {
 選擇器會為所有可重複的面板進行樣式設定，確保有一致的外觀和感覺。
 
 
-* 為面板中個別欄位進行目標定位：
+- 為面板中個別欄位進行目標定位：
 
 ```CSS
-/* Target all form field wrappers within a repeatable panel */
+/- Target all form field wrappers within a repeatable panel */
 main .form form .panel-wrapper[data-repeatable="true"] .{Type}-wrapper {
-  /* Add your styles here (e.g., margin) */
+  /- Add your styles here (e.g., margin) */
   margin-bottom: 10px;
 }
 ```
+
 此選擇器可為可重複面板中所有欄位包裝函式進行樣式設定，讓欄位之間的間距維持一致。
 
-* 為特定欄位 (在面板內) 進行目標定位：
+- 為特定欄位 (在面板內) 進行目標定位：
 
 ```CSS
-/* Target the name field wrapper within the first panel */
+/- Target the name field wrapper within the first panel */
 main .form form .panel-wrapper[data-repeatable="true"][data-index="0"] .text-wrapper.field-name {
-  /* Add your styles here (specific to first name field) */
+  /- Add your styles here (specific to first name field) */
 }
 
-/* Target all
+/- Target all
 ```
 
 +++
@@ -679,20 +722,20 @@ main .form form .panel-wrapper[data-repeatable="true"][data-index="0"] .text-wra
 </div>
 ```
 
-* 類別屬性使用為檔案附件提供的名稱 (claim_form)。
-* 輸入元素的 id 和名稱屬性與檔案附件名稱 (claim_form) 相符。
-* 檔案清單區段一開始是空值。當檔案上傳時，此區段會以 JavaScript 機動式地填入。
+- 類別屬性使用為檔案附件提供的名稱 (claim_form)。
+- 輸入元素的 id 和名稱屬性與檔案附件名稱 (claim_form) 相符。
+- 檔案清單區段一開始是空值。當檔案上傳時，此區段會以 JavaScript 機動式地填入。
 
 +++
 
 +++ 檔案附件元件的 CSS 選擇器
 
-* 為全部檔案附件元件進行目標定位：
+- 為全部檔案附件元件進行目標定位：
 
 ```CSS
-/* Target the entire file attachment component */
+/- Target the entire file attachment component */
 main .form form .file-wrapper {
-  /* Add your styles here (e.g., border, padding) */
+  /- Add your styles here (e.g., border, padding) */
   border: 1px solid #ccc;
   padding: 15px;
   border-radius: 4px;
@@ -702,35 +745,35 @@ main .form form .file-wrapper {
 
 此選擇器為全部檔案附件元件設定樣式，包括圖例、拖曳區域、輸入欄位和清單。
 
-* 為特定元素進行目標定位：
+- 為特定元素進行目標定位：
 
 ```CSS
-/* Target the drag and drop area */
+/- Target the drag and drop area */
 main .form form .file-wrapper .file-drag-area {
-  /* Add your styles here (e.g., background color, border) */
+  /- Add your styles here (e.g., background color, border) */
   background-color: #f0f0f0;
   border: 1px dashed #ddd;
   padding: 10px;
   text-align: center;
 }
 
-/* Target the file input element */
+/- Target the file input element */
 main .form form .file-wrapper input[type="file"] {
-  /* Add your styles here (e.g., hide the default input) */
+  /- Add your styles here (e.g., hide the default input) */
   display: none;
 }
 
-/* Target individual file descriptions within the list (populated dynamically) */
+/- Target individual file descriptions within the list (populated dynamically) */
 main .form form .file-wrapper .files-list .file-description {
-  /* Add your styles here (e.g., margin, display) */
+  /- Add your styles here (e.g., margin, display) */
   display: flex;
   justify-content: space-between;
   margin-bottom: 5px;
 }
 
-/* Target the file name within the description */
+/- Target the file name within the description */
 main .form form .file-wrapper .files-list .file-description .file-description-name {
-  /* Add your styles here (e.g., font-weight) */
+  /- Add your styles here (e.g., font-weight) */
   font-weight: bold;
 }
 ```
@@ -779,12 +822,12 @@ main .form form .file-wrapper .files-list .file-description .file-description-na
 </div>
 ```
 
-* 每個欄位都包含在具有多個類別的 `div` 元素中：
-   * `{Type}-wrapper`：識別欄位的類型。例如：`form-text-wrapper`、`form-number-wrapper`、`form-email-wrapper`。
-   * `field-{Name}`：根據名稱識別欄位。例如：`form-name`、`form-age`、`form-email`。
-   * `field-wrapper`：所有欄位包裝函式的通用類別。
-* `data-required` 屬性表示該欄位是必填還是選擇性欄位。
-* 每個欄位都有對應的標籤、輸入元素和潛在的附加元素 (例如預留位置和描述)。
+- 每個欄位都包含在具有多個類別的 `div` 元素中：
+   - `{Type}-wrapper`：識別欄位的類型。例如：`form-text-wrapper`、`form-number-wrapper`、`form-email-wrapper`。
+   - `field-{Name}`：根據名稱識別欄位。例如：`form-name`、`form-age`、`form-email`。
+   - `field-wrapper`：所有欄位包裝函式的通用類別。
+- `data-required` 屬性表示該欄位是必填還是選擇性欄位。
+- 每個欄位都有對應的標籤、輸入元素和潛在的附加元素 (例如預留位置和描述)。
 
 
 +++
@@ -793,15 +836,18 @@ main .form form .file-wrapper .files-list .file-description .file-description-na
 +++ CSS 選取器範例
 
 ```CSS
-/* Target all text input fields */
-main .form form .text-wrapper input {
-  /* Add your styles here */
+/- Primary Pattern: Target all text input fields */
+.form .text-wrapper input {
+  /- Add your styles here */
+  width: 100%;
+  padding: var(--form-input-padding);
 }
 
-/* Target all number input fields */
-main .form form .number-wrapper input {
-  /* Add your styles here */
-  letter-spacing: 2px; /* Example for adding letter spacing to all number fields */
+/- Primary Pattern: Target all number input fields */
+.form .number-wrapper input {
+  /- Add your styles here */
+  letter-spacing: 2px; /- Example for adding letter spacing to all number fields */
+  text-align: center;
 }
 ```
 
@@ -840,18 +886,182 @@ main .form form .number-wrapper input {
 +++ CSS 選取器範例
 
 ```CSS
-main .form form .field-otp input {
-   letter-spacing: 2px
+/- Primary Pattern: Target specific field by name */
+.form .field-otp input {
+   letter-spacing: 2px;
+   text-align: center;
+   font-family: monospace;
+}
+
+/- Context-specific: Use higher specificity when needed */
+main .form .field-otp input {
+   /- Use only when you need to override other styles */
+   font-weight: bold;
 }
 ```
 
-此 CSS 的目標是位於具有類別 `field-otp` 的元素內的所有輸入元素。您表單的 HTML 結構遵循最適化表單區塊的慣例，這表示有一個標有「field-otp」類別的容器包含名為「otp」的欄位。
+此 CSS 的目標是位於具有類別 `field-otp` 的元素內的所有輸入元素。Edge Delivery Services表單結構遵循最適化Forms區塊慣例，其中容器標示為欄位特定類別，例如「field-otp」（針對名稱為「otp」的欄位）。
 
 +++
 
+## CSS檔案結構和參考
+
+### **預設樣式位置**
+
+預設表單樣式位於：
+
+```
+https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/blocks/form/form.css
+```
+
+### **本機專案結構**
+
+在您的Edge Delivery Services專案：
+
+```
+/blocks/form/form.css          // Main form block styles
+/styles/styles.css             // Global site styles
+/styles/lazy-styles.css        // Additional component styles
+```
+
+### **自訂CSS整合**
+
+1. **專案層級自訂**：新增樣式至`/styles/styles.css`
+2. **表單特定自訂**：修改`/blocks/form/form.css`
+3. **元件覆寫**：在自訂CSS中使用適當的特定性選取器
+
+## 疑難排解CSS問題
+
+### **CSS特殊性問題**
+
+```css
+/- ❌ Problem: Styles not applying */
+.text-wrapper input {
+  color: red;
+}
+
+/- ✅ Solution: Match or exceed existing specificity */
+.form .text-wrapper input {
+  color: red;
+}
+
+/- ✅ Alternative: Use higher specificity when needed */
+main .form .text-wrapper input {
+  color: red;
+}
+```
+
+### **CSS變數覆寫問題**
+
+```css
+/- ❌ Problem: Variables not working */
+.form {
+  --form-border-color: blue; /- Local scope only */
+}
+
+/- ✅ Solution: Define in root scope */
+:root {
+  --form-border-color: blue; /- Global scope */
+}
+```
+
+### **常見選擇器錯誤**
+
+```css
+/- ❌ Incorrect: Assumes direct nesting */
+.form form input {
+  /- This might miss inputs in wrappers */
+}
+
+/- ✅ Correct: Target actual structure */
+.form .text-wrapper input {
+  /- Targets actual HTML structure */
+}
+
+/- ❌ Avoid: Unnecessary specificity */
+main .form form .text-wrapper input {
+  /- Too specific, harder to override */
+}
+
+/- ✅ Preferred: Balanced specificity */
+.form .text-wrapper input {
+  /- Easier to maintain and override */
+}
+```
+
+### **表單狀態樣式**
+
+```css
+/- Validation states */
+.form .field-wrapper.error input {
+  border-color: var(--form-error-color);
+}
+
+.form .field-wrapper.success input {
+  border-color: var(--form-success-color);
+}
+
+/- Loading state */
+.form[data-submitting="true"] {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+/- Disabled state */
+.form input:disabled {
+  background-color: var(--form-input-disabled-background);
+  cursor: not-allowed;
+}
+```
+
+### **元件特定最佳實務**
+
+#### **按鈕樣式**
+
+```css
+/- Primary buttons */
+.form .button-wrapper button[type="submit"] {
+  background-color: var(--form-focus-color);
+  color: white;
+  border: none;
+  padding: var(--form-input-padding);
+  border-radius: var(--form-border-radius);
+}
+
+/- Secondary buttons */
+.form .button-wrapper button[type="reset"] {
+  background-color: transparent;
+  color: var(--form-text-color);
+  border: 1px solid var(--form-border-color);
+}
+```
+
+#### **回應式表單設計**
+
+```css
+/- Mobile-first approach */
+.form {
+  width: 100%;
+  padding: 1rem;
+}
+
+/- Tablet and up */
+@media (min-width: 768px) {
+  .form {
+    max-width: var(--form-max-width);
+    padding: var(--form-padding);
+  }
+}
+```
+
+## 最佳實務摘要
+
+1. **使用CSS自訂屬性**：利用變數來設定一致的主題
+2. **遵循區塊式架構**：使用`.form`作為主要區塊選擇器
+3. **避免過度特殊性**：除非必要，否則請勿使用`main .form form`
+4. **目標包裝函式**：使用`.{Type}-wrapper`模式進行元件目標定位
+5. **維持一致性**：在整個專案中使用相同的選取器模式
+6. **跨裝置測試**：確保表單在行動裝置、平板電腦和桌上型電腦上運作正常
+7. **驗證協助工具**：確保樣式不會干擾熒幕閱讀程式或鍵盤導覽
 
 
-
-## 另請參閱
-
-{{universal-editor-see-also}}

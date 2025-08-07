@@ -4,8 +4,8 @@ description: 了解如何在 Adobe Experience Manager Edge Delivery Services 上
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
-source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
-workflow-type: ht
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
 source-wordcount: '591'
 ht-degree: 100%
 
@@ -14,12 +14,12 @@ ht-degree: 100%
 
 # 開始使用 AEM Edge Delivery Services 上的 Forms
 
-<span class="preview">這是一項預先發佈功能，可透過我們的<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hant#new-features">預先發佈管道</a>取得。</span>
+<span class="preview">這是一項預先發佈功能，可透過我們的<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">預先發佈管道</a>取得。</span>
 
 透過 Adobe Experience Manager (AEM) Edge Delivery Services (EDS)，您可以從邊緣提供極快速且高度可擴充的網頁體驗。本指南說明&#x200B;**如何建置和發佈符合這些體驗的表單**，並具備明確的建議階層：
 
 1. **通用編輯器 (UE) – 大多數團隊的最佳選擇**
-2. **文件型製作 (文件/試算表) - 非常適合快速、簡單的表單**
+2. **文件型製作 (文件/試算表)－非常適合快速、簡單的表單**
 3. **文件製作 (DA) – 可以將表單嵌入至 DA 製作的頁面中**
 
 最後，您將能選擇正確的製作方法、了解提交選項，並按照後續步驟製作立即可用的表單。
@@ -41,11 +41,11 @@ ht-degree: 100%
 
 通用編輯器是一款適用於行銷人員和設計師的視覺化拖放式製作工具，兼具速度與企業級效能：
 
-* 即時的所見即所得編輯和裝置預覽。
-* 進階規則和驗證 UI—無需程式碼。
-* 與 AEM 資產、工作流程及表單資料模型 (FDM) 直接整合。
-* 將普通 JS/CSS 中的自訂元件順利移交給開發人員。
-* 彈性提交目標：從簡單的 **表單提交服務 (FSS)** 開始，或隨著需求增加切換至 **AEM Publish 提交動作**。
+- 即時的所見即所得編輯和裝置預覽。
+- 進階規則和驗證 UI—無需程式碼。
+- 與 AEM 資產、工作流程及表單資料模型 (FDM) 直接整合。
+- 將普通 JS/CSS 中的自訂元件順利移交給開發人員。
+- 彈性提交目標：從簡單的 **表單提交服務 (FSS)** 開始，或隨著需求增加切換至 **AEM Publish 提交動作**。
 
 > **建議**：使用通用編輯器開啟每個新表單專案，除非您的團隊完全以文件為中心且表單設計非常樸素。
 
@@ -54,10 +54,10 @@ ht-degree: 100%
 
 使用如 Microsoft Word、Google Docs 或 Google Sheets 等熟悉的工具來建立簡單、低複雜度的表單者，最適合使用文件型製作。此方法非常適合需要用快速、直接的方式建置表單的內容團隊。
 
-* 使用表格 (文件) 或列 (試算表) 來定義表單欄位。
-* 支援基本欄位驗證和 Google reCAPTCHA，以提供垃圾資訊防護。
-* 表單提交由表單提交服務專門處理。
-* 即時發佈—在來源文件中所做的任何變更，不需要部署管道即會立即反映在網站上。
+- 使用表格 (文件) 或列 (試算表) 來定義表單欄位。
+- 支援基本欄位驗證和 Google reCAPTCHA，以提供垃圾資訊防護。
+- 表單提交由表單提交服務專門處理。
+- 即時發佈—在來源文件中所做的任何變更，不需要部署管道即會立即反映在網站上。
 
 
 ### 在文件製作 (DA) 中嵌入表單

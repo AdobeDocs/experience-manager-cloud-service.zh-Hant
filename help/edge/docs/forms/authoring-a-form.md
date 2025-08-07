@@ -6,8 +6,8 @@ role: User, Developer
 exl-id: bd9cb623-c272-4cdf-ad39-f97043f781a6
 hide: true
 hidefromToC: true
-source-git-commit: 1662d1c9458f05c2e511514ce8a04247da90eaf3
-workflow-type: ht
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
 source-wordcount: '1075'
 ht-degree: 100%
 
@@ -37,14 +37,14 @@ AEM 提供多種表單編寫選項，可用來建立具吸引力的互動式表�
 
 AEM 支援多種編寫方法，分別適合不同的使用者需求、技術技能程度和發佈目的地。
 
-* [Foundation 元件](/help/forms/create-adaptive-form-tutorial.md)：使用 Foundation 元件建置傳統的互動式表單。最適合整合舊版系統或依賴沿用已久之工作流程的表單。使用 Foundation 元件編寫的表單只能在 AEM 上發佈，且與 Edge Delivery Services 不相容。
+- [Foundation 元件](/help/forms/create-adaptive-form-tutorial.md)：使用 Foundation 元件建置傳統的互動式表單。最適合整合舊版系統或依賴沿用已久之工作流程的表單。使用 Foundation 元件編寫的表單只能在 AEM 上發佈，且與 Edge Delivery Services 不相容。
 
-* [核心元件](/help/forms/creating-adaptive-form-core-components.md)：使用核心元件建立現代化的可擴充回應式表單。這些元件可以重覆使用、方便存取而且效能更好。使用核心元件編寫的表單可以在 AEM 和 Edge Delivery Services 上發佈，可以橫跨不同平台靈活使用。
+- [核心元件](/help/forms/creating-adaptive-form-core-components.md)：使用核心元件建立現代化的可擴充回應式表單。這些元件可以重覆使用、方便存取而且效能更好。使用核心元件編寫的表單可以在 AEM 和 Edge Delivery Services 上發佈，可以橫跨不同平台靈活使用。
 
-* [Edge Delivery Services 表單](/help/edge/docs/forms/overview.md)：Edge Delivery Services 表單改變編寫、執行和處理表單的方式。各組織可以利用 Edge Delivery Services 來建立快速、安全且高度可用的數位表單，並透過快速開發環境增強使用者體驗和操作效率。您可以使用兩種方式編寫 Edge Delivery Services 表單：
-   * [WYSIWYG 編寫](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)：使用通用編輯器透過視覺化的拖放方式建立表單，非常適合技術知識有限的內容作者。使用通用編輯器編寫的表單透過 Edge Delivery Services 傳遞，可在快速且耗費少量資源的情況下轉譯。
-   * [文件型編寫](/help/edge/docs/forms/tutorial.md)：使用 Microsoft Excel 或 Google Sheets 等工具定義表單結構和內容。此方法對於偏好使用試算表控制輸入的商業使用者而言很實用。這些表單通常透過 Edge Delivery Services 發佈，適用於消耗少量資源但數量龐大的使用案例。
-* [Headless 編寫](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-headless-adaptive-forms/using/tutorial/build-engaging-forms-using-core-components-and-headless-adaptive-forms-aem-forms-cloud-service)：使用 API 將表單轉譯為適用於任何前端 (例如 React、Angular、行動應用程式或資訊站) 的 JSON，而無需依賴 AEM。目前，只有核心元件支援 Headless 傳遞。Headless 表單非常適合全管道使用案例，且其使用不受 AEM 頁面轉譯之影響，可供自訂前端部署靈活使用。
+- [Edge Delivery Services 表單](/help/edge/docs/forms/overview.md)：Edge Delivery Services 表單改變編寫、執行和處理表單的方式。各組織可以利用 Edge Delivery Services 來建立快速、安全且高度可用的數位表單，並透過快速開發環境增強使用者體驗和操作效率。您可以使用兩種方式編寫 Edge Delivery Services 表單：
+   - [WYSIWYG 編寫](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)：使用通用編輯器透過視覺化的拖放方式建立表單，非常適合技術知識有限的內容作者。使用通用編輯器編寫的表單透過 Edge Delivery Services 傳遞，可在快速且耗費少量資源的情況下轉譯。
+   - [文件型編寫](/help/edge/docs/forms/tutorial.md)：使用 Microsoft Excel 或 Google Sheets 等工具定義表單結構和內容。此方法對於偏好使用試算表控制輸入的商業使用者而言很實用。這些表單通常透過 Edge Delivery Services 發佈，適用於消耗少量資源但數量龐大的使用案例。
+- [Headless 編寫](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-headless-adaptive-forms/using/tutorial/build-engaging-forms-using-core-components-and-headless-adaptive-forms-aem-forms-cloud-service)：使用 API 將表單轉譯為適用於任何前端 (例如 React、Angular、行動應用程式或資訊站) 的 JSON，而無需依賴 AEM。目前，只有核心元件支援 Headless 傳遞。Headless 表單非常適合全管道使用案例，且其使用不受 AEM 頁面轉譯之影響，可供自訂前端部署靈活使用。
 
 ### AEM 表單編寫方法的比較分析
 
@@ -107,7 +107,7 @@ AEM 支援多種編寫方法，分別適合不同的使用者需求、技術技�
 
 ## 相關文章
 
-* [使用 Microsoft Excel 或 Google Sheets 的文件型編寫](/help/edge/docs/forms/create-forms.md)
-* [通用編輯器或 WYSIWYG 編寫](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring)
-* [建立最適化表單 (基礎元件)](/help/forms/creating-adaptive-form.md)
-* [建立自適應表單 (核心元件)](/help/forms/create-an-adaptive-form.md)
+- [使用 Microsoft Excel 或 Google Sheets 的文件型編寫](/help/edge/docs/forms/create-forms.md)
+- [通用編輯器或 WYSIWYG 編寫](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring)
+- [建立最適化表單 (基礎元件)](/help/forms/creating-adaptive-form.md)
+- [建立自適應表單 (核心元件)](/help/forms/create-an-adaptive-form.md)

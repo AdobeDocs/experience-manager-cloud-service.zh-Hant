@@ -4,15 +4,15 @@ description: 瞭解如何使用 [!DNL Experience Manager Forms] 使用XFA表單�
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
-source-git-commit: 681c194f997ab66f93beedad4eea273614e6797d
+exl-id: f3c9b798-8b20-4674-9b96-a3a0b143d947
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '722'
-ht-degree: 9%
+source-wordcount: '711'
+ht-degree: 13%
 
 ---
 
-
-# 根據XFA表單範本建立最適化表單（核心元件）
+# 以 XFA Form 範本為基礎建立最適化表單 (核心元件)
 
 <span class="preview">此功能可在早期採用者方案下使用。 您可以從您的官方電子郵件ID寫信到aem-forms-ea@adobe.com ，以加入率先採用者計畫並請求存取該功能。</span>
 
@@ -43,7 +43,7 @@ AEM as a Cloud Service讓使用者可選擇使用XFA (XML Forms Architecture)表
 執行以下步驟，使用XFA或XDP表單範本建立最適化表單：
 
 1. 登入您的[!DNL Experience Manager Forms]作者執行個體。
-1. 在 Experience Manager 登入頁面上輸入您的認證。登入後，在左上角選取&#x200B;**[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms和檔案]**。
+1. 在 Experience Manager 登入頁面上輸入您的認證。登入後，在左上角選取「**[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 表單]** > **[!UICONTROL 表單與文件]**」。
 
    ![Forms和檔案](/help/forms/assets/create-fdm.png)
 
@@ -76,7 +76,7 @@ AEM as a Cloud Service讓使用者可選擇使用XFA (XML Forms Architecture)表
 
    ![選取XDP檔案](/help/forms/assets/select-xdp-file.png)
 
-   熒幕上會顯示警告對話方塊。 按一下[確定]&#x200B;**&#x200B;**&#x200B;以繼續進行。
+   熒幕上會顯示警告對話方塊。 按一下[確定]****&#x200B;以繼續進行。
 
    ![警告對話方塊](/help/forms/assets/fdm-warning.png)
 
@@ -93,7 +93,3 @@ AEM as a Cloud Service讓使用者可選擇使用XFA (XML Forms Architecture)表
 >
 > 您可以使用新增欄位的面板工具列，停用XDP表單欄位的指令碼。 使用[視覺規則編輯器](/help/forms/rule-editor-core-components.md)為新增的欄位建立邏輯。
 
-## 另請參閱
-
-{{see-also}}
-* [使用規則編輯器將動態行為新增至表單](/help/forms/rule-editor-core-components.md)

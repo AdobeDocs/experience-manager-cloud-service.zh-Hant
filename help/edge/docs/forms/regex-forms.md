@@ -6,10 +6,10 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 5cfe23bb-155f-4639-b7b7-5edc172ba92a
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: ht
-source-wordcount: '195'
-ht-degree: 100%
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
+source-wordcount: '193'
+ht-degree: 94%
 
 ---
 
@@ -25,10 +25,10 @@ ht-degree: 100%
 
 確保至少 8 個字元，並包含以下字元：
 
-* 小寫字母 (a-z)
-* 大寫字母 (A-Z)
-* 數字 (0-9)
-* 特殊字元 (@$! %*?&amp;)
+- 小寫字母 (a-z)
+- 大寫字母 (A-Z)
+- 數字 (0-9)
+- 特殊字元 (@$! %*?&amp;)
 
 
 ## 電子郵件地址
@@ -70,13 +70,13 @@ ht-degree: 100%
 驗證格式為 YYYY-MM-DD 的日期。
 
 
-## 時間 (HH:MM)
+## 時間(HH:MM)
 
 ```regex
 ^([01][0-9]|2[0-3]):[0-5][0-9]$
 ```
 
-驗證格式為 HH:MM (24 小時格式) 的時間。
+以HH:MM格式（24小時格式）驗證時間。
 
 
 ## 郵遞區號 (美國格式)

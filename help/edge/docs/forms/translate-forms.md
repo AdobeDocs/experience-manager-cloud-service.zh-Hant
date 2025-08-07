@@ -6,9 +6,9 @@ hide: true
 hidefromtoc: true
 exl-id: 8a0c826f-8acc-4a00-bd84-7b0df9a82457
 role: Admin, Architect, Developer
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: ht
-source-wordcount: '546'
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
+source-wordcount: '544'
 ht-degree: 100%
 
 ---
@@ -21,8 +21,8 @@ ht-degree: 100%
 
 閱讀完本文章後，您將學會：
 
-* [翻譯 Google Drive 內的表單](#translate-form-google-drive)
-* [翻譯 SharePoint 網站內的表單](#translate-form-sharepoint)
+- [翻譯 Google Drive 內的表單](#translate-form-google-drive)
+- [翻譯 SharePoint 網站內的表單](#translate-form-sharepoint)
 
 ## 翻譯 Google Drive 內的表單 {#translate-form-google-drive}
 
@@ -68,11 +68,11 @@ https://main--wefinance--wkndforms.hlx.live/enquirytranslate
 
 ## 已知問題 {#known-issues}
 
-* 表單標籤會翻譯為 `shared-default` 工作表中指定的本地化語言，但錯誤訊息會以瀏覽器的預設語言顯示。
+- 表單標籤會翻譯為 `shared-default` 工作表中指定的本地化語言，但錯誤訊息會以瀏覽器的預設語言顯示。
 
   ![錯誤訊息](/help/forms/assets/translate-error-message.png)
 
-* 當您開啟行事曆時，行事曆下拉式選單將以瀏覽器的預設語言顯示。
+- 當您開啟行事曆時，行事曆下拉式選單將以瀏覽器的預設語言顯示。
 
   ![錯誤訊息](/help/forms/assets/translate-calender-display.png)
 
@@ -83,16 +83,13 @@ https://main--wefinance--wkndforms.hlx.live/enquirytranslate
 
 **答**：若要以特定本地化語言輸入文字，請調整裝置上的鍵盤設定。有關如何操作的說明，請參閱以下連結：
 
-* [設定 Mac 以接受另一種語言的輸入](https://support.apple.com/en-in/guide/mac-help/mchlp1406/mac)
-* [設定 Windows 以接受另一種語言的輸入](https://support.microsoft.com/zh-hant/windows/manage-the-input-and-display-language-settings-in-windows-12a10cb4-8626-9b77-0ccb-5013e0c7c7a2#:~:文字=選取%20%20開始%20%3E%20設定%20%3E%20時間，然後%20您%2C%20要%20選取%20選項)
-* [設定您的 Android 或 iPhone/iPad 以接受其他語言的輸入](https://support.google.com/gboard/answer/7068494?hl=en&amp;co=GENIE.Platform%3DAndroid)
+- [設定 Mac 以接受另一種語言的輸入](https://support.apple.com/en-in/guide/mac-help/mchlp1406/mac)
+- [設定 Windows 以接受另一種語言的輸入](https://support.microsoft.com/zh-hant/windows/manage-the-input-and-display-language-settings-in-windows-12a10cb4-8626-9b77-0ccb-5013e0c7c7a2#:~:文字=選取%20%20開始%20%3E%20設定%20%3E%20時間，然後%20您%2C%20要%20選取%20選項)
+- [設定您的 Android 或 iPhone/iPad 以接受其他語言的輸入](https://support.google.com/gboard/answer/7068494?hl=en&co=GENIE.Platform%3DAndroid)
 
 
 **問**：如何擷取 `GOOGLETRANSLATE` 功能中使用的地區設定清單？
 
 **答**：您可以參考 [Google 正式文件](https://cloud.google.com/translate/docs/languages)，取得 GOOGLETRANSLATE 所用地區設定的完整清單。
 
-## 另請參閱
-
-{{see-more-forms-eds}}
 

@@ -4,9 +4,9 @@ description: 本教學課程可協助您啟動並執行新的 Adobe Experience M
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: b194a8fc4e7490cc322b0868a8348e80626df7eb
-workflow-type: ht
-source-wordcount: '1923'
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
+source-wordcount: '1921'
 ht-degree: 100%
 
 ---
@@ -23,10 +23,10 @@ AEM Forms 會提供一個區塊 (名為最適化表單區塊)，協助您輕鬆�
 
 ## 先決條件
 
-* 您擁有 GitHub 帳戶，並且了解 Git 基本知識。
-* 您擁有 Google 或 Microsoft SharePoint 帳戶。
-* 您了解 HTML、CSS 和 JavaScript 的基本知識。
-* 您已安裝 Node/npm 可進行本機開發。
+- 您擁有 GitHub 帳戶，並且了解 Git 基本知識。
+- 您擁有 Google 或 Microsoft SharePoint 帳戶。
+- 您了解 HTML、CSS 和 JavaScript 的基本知識。
+- 您已安裝 Node/npm 可進行本機開發。
 
 **請注意！** 本教學課程使用 macOS、Chrome 和 Visual Studio Code。雖然這些步驟可調整以適用於其他設定，但螢幕擷圖和特定 UI 元素可能會根據您選擇的作業系統、瀏覽器和程式碼編輯器而有所不同。
 
@@ -63,9 +63,9 @@ AEM Forms 範本可協助您很快開始使用預先設定最適化表單區塊�
 
    恭喜！您有一個在  `https://<branch>--<repo>--<owner>.aem.page/` 上執行的新網站。
 
-   * `<branch>`是指 GitHub 存放庫的分支。
-   * `<repository>`表示您的 GitHub 存放庫。
-   * `<owner>`是指託管 GitHub 存放庫的 GitHub 帳戶使用者名稱。
+   - `<branch>`是指 GitHub 存放庫的分支。
+   - `<repository>`表示您的 GitHub 存放庫。
+   - `<owner>`是指託管 GitHub 存放庫的 GitHub 帳戶使用者名稱。
 
    例如，如果分支名稱為 `main`，存放庫為 `wefinance`，而所有者為 `wkndforms`，則網站會在 `https://main--wefinance--wkndforms.aem.page` &lt;! 啟動並運作。--(https://main--wefinance--wkndform.aem.page)-->
 
@@ -172,9 +172,9 @@ AEM Forms 範本可協助您很快開始使用預先設定最適化表單區塊�
    https://<branch>--<repository>--<owner>.aem.live
    ```
 
-   * `<branch>`是指 GitHub 存放庫的分支。
-   * `<repository>`表示您的 GitHub 存放庫。
-   * `<owner>`是指託管 GitHub 存放庫的 GitHub 帳戶使用者名稱。
+   - `<branch>`是指 GitHub 存放庫的分支。
+   - `<repository>`表示您的 GitHub 存放庫。
+   - `<owner>`是指託管 GitHub 存放庫的 GitHub 帳戶使用者名稱。
 
 
    `https://<branch>--<repo>--<owner>.aem.page/enquiry` URL.
@@ -280,9 +280,9 @@ URL：`https://main--wefinance--wkndform.aem.live/enquiry`
 
 1. 從 [AEM Forms 範本](https://github.com/adobe-rnd/aem-boilerplate-forms)複製下列資料夾和檔案，並貼到您的 AEM 專案中：
 
-   * [表單區塊](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form)資料夾
-   * [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) 檔案
-   * [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css) 檔案
+   - [表單區塊](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form)資料夾
+   - [form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) 檔案
+   - [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css) 檔案
 1. 導覽至 AEM 專案中的 `/scripts/editor-support.js` 檔案，並使用 [AEM Forms 範本中 editor-support.js 檔案](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js)來更新檔案
 1. 導覽至 AEM 專案中的 `/models/_section.json`，並將「form」和「embed-adaptive-form」附加至 `filters` 物件的元件陣列：
 
@@ -362,12 +362,8 @@ URL：`https://main--wefinance--wkndform.aem.live/enquiry`
 
 解決潛在問題以確保 GitHub 建置流程順利進行：
 
-* **解析模組路徑錯誤：**
+- **解析模組路徑錯誤：**
 如果遇到錯誤「無法解析模組路徑 &#39;/scripts/lib-franklin.js&#39;」，請導覽至 [EDS Project]/blocks/forms/form.js 檔案。將 lib-franklin.js 檔案更換為 aem.js 檔案來更新匯入語句。
 
-* **處理 Linting 錯誤：**&#x200B;如果您遇到任何 linting 錯誤，您可以略過不予處理。開啟 [EDS Project]/package.json 檔案並將 &quot;lint&quot; 指令碼從 `"lint": "npm run lint:js && npm run lint:css"` 修改為 `"lint": "echo 'skipping linting for now'"`。儲存檔案並將變更提交至您的 GitHub 專案。
+- **處理 Linting 錯誤：**&#x200B;如果您遇到任何 linting 錯誤，您可以略過不予處理。開啟 [EDS Project]/package.json 檔案並將 &quot;lint&quot; 指令碼從 `"lint": "npm run lint:js && npm run lint:css"` 修改為 `"lint": "echo 'skipping linting for now'"`。儲存檔案並將變更提交至您的 GitHub 專案。
 
-
-## 另請參閱
-
-{{see-more-forms-eds}}

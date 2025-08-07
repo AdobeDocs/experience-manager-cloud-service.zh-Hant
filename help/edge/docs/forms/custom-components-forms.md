@@ -6,9 +6,9 @@ hide: true
 hidefromtoc: true
 role: Admin, Architect, Developer
 exl-id: 77e90657-38db-4a49-9aac-3f3774b62624
-source-git-commit: 62dfa8ad73bf6684bd93f6a26b98b1c193770214
-workflow-type: ht
-source-wordcount: '625'
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
+source-wordcount: '623'
 ht-degree: 100%
 
 ---
@@ -35,8 +35,8 @@ AEM Forms 適用的 Edge Delivery Services 讓您可以自訂[原生 HTML 表單
 
 在開始建立自訂元件之前，您應該：
 
-* 對於[原生 HTML 元件](/help/edge/docs/forms/form-components.md)有基本的認識。
-* 瞭解如何[使用 CSS 選擇器根據欄位類型設定表單欄位的樣式](/help/edge/docs/forms/style-theme-forms.md)
+- 對於[原生 HTML 元件](/help/edge/docs/forms/form-components.md)有基本的認識。
+- 瞭解如何[使用 CSS 選擇器根據欄位類型設定表單欄位的樣式](/help/edge/docs/forms/style-theme-forms.md)
 
 
 ## 建立自訂元件
@@ -52,9 +52,9 @@ AEM Forms 適用的 Edge Delivery Services 讓您可以自訂[原生 HTML 表單
 
 `[../Form Block/components]` 中新增的自訂函數包括：
 
-* **函數宣告**：定義函數名稱及其參數。
-* **邏輯實作**：寫入邏輯，新增元件的自訂行為。
-* **函數匯出**：讓函數在 `[Form Block]` 中可供存取。
+- **函數宣告**：定義函數名稱及其參數。
+- **邏輯實作**：寫入邏輯，新增元件的自訂行為。
+- **函數匯出**：讓函數在 `[Form Block]` 中可供存取。
 
 若要新增自訂函數：
 
@@ -151,6 +151,7 @@ AEM Forms 適用的 Edge Delivery Services 讓您可以自訂[原生 HTML 表單
 若要自訂 `range` 元件的樣式，請加入一個 CSS 程式碼片段，用於設定表單中 `range` 輸入元素及其關聯元件的樣式。這裡假設一個結構化的 HTML 版面配置，其中包含  `.form`  和  `.range-wrapper` 等類別。
 
 若要在 CSS 檔案中加入元件的樣式：
+
 1. 前往 `[../Form Block/]` 並開啟 `form.css`。
 1. 新增以下程式碼行：
 
@@ -207,6 +208,7 @@ AEM Forms 適用的 Edge Delivery Services 讓您可以自訂[原生 HTML 表單
    float: right;
    }
    ```
+
 1. 儲存變更。
 
 ### 部署檔案並建置專案
@@ -220,145 +222,5 @@ AEM Forms 適用的 Edge Delivery Services 讓您可以自訂[原生 HTML 表單
 ![自訂元件樣式](/help/edge/assets/custom-componet-form.png)
 
 `range` 元件的新樣式透過使用 CSS 新增樣式和包含元件裝飾器的自訂函數，顯示行上的最小值、最大值和選取值。
-<!--
-Now, you can extend the created custom component for WYSIWYG based authoring.
-
-## Enable Component for WYSIWYG authoring
-
-To enable component for WYSIWYG authoring:
-
-1. Navigate to  `[../Form Block/components]`.
-2. Locate a file named `_range.json`. if not present, create it.
-3. Add the following code in the  `_range.json` file:
-
-    ```javascript
-    {
-    "definitions": [
-        {
-         "title": "Range",
-         "id": "range",
-        "plugins": {
-          "xwalk": {
-           "page": {
-               "resourceType": "core/fd/components/form/numberinput/v1/numberinput",
-              "template": {
-              "jcr:title": "Range",
-              "fieldType": "number-input",
-              "fd:viewType": "range",
-              "enabled": true,
-              "visible": true
-             }
-            }
-            }
-        }
-        }
-    ],
-    "models": [
-     {
-          "id": "range",
-        "fields": [
-          {
-              "component": "container",
-             "name": "basic",
-             "label": "Basic",
-             "collapsible": false,
-             "...": "../../../../models/form-common/_basic-input-fields.json"
-             {
-             "component": "number",
-             "name": "stepValue",
-             "label": "Step Value",
-              "valueType": "number"
-        }
-         },
-         {
-              "...": "../../../../models/form-common/_help-container.json"
-            },
-            {
-          "component": "container",
-          "name": "validation",
-          "label": "Validation",
-          "collapsible": true,
-          "...": "../../../../models/form-common/_number-validation-fields.json"
-            }
-        ]
-        }
-    ]
-    }
-    ```
-
-    The above code snippet in the `_range.json` file includes the component definition, component model and custom properties for your custom component.
 
 
-    ![component definition and model](/help/edge/docs/forms/universal-editor/assets/custom-component-json-file.png)
-
-4. Navigate to the `/blocks/form/_form.json` file and add the `fd:viewType` value from the `definitions[]` to the components array of the object with `id="form"`.
-
-    ```javascript
-
-        "filters": [
-        {
-         "id": "form",
-        "components": [
-        "captcha",
-        "checkbox",
-        "checkbox-group",
-        "date-input",
-        "drop-down",
-        "email",
-        "file-input",
-        "form-accordion",
-        "form-button",
-        "form-fragment",
-        "form-image",
-        "form-modal",
-        "form-reset-button",
-        "form-submit-button",
-        "number-input",
-        "panel",
-        "plain-text",
-        "radio-group",
-        "rating",
-        "telephone-input",
-        "text-input",
-        "tnc",
-        "wizard",
-        "range"
-      ]
-        }
-    ]
-      ```
-
-    The above code snippet defines the section in which the custom component can be used in Universal Editor.
-    
-    ![component filter](/help/edge/docs/forms/universal-editor/assets/custom-component-form-file.png)
-
-5. Navigate to the `/blocks/form/mappings.js` file and add the `fd:viewType` value from the `definitions[]` array to the `customComponents[]` array.
-
-    ```javascript
-    let customComponents = ["range"];
-    const OOTBComponentDecorators = ['file-input',
-                                 'wizard', 
-                                 'modal', 'tnc',
-                                'toggleable-link',
-                                'rating',
-                                'datetime',
-                                'list',
-                                'location',
-                                'accordion'];
-    ```
-
-The above code snippet enables the form block to recognize the custom component and load its properties defined in the component model during form authoring in Universal Editor.
-
-![component mapping](/help/edge/docs/forms/universal-editor/assets/custom-component-mapping-file.png)
-
-Now, you can see your custom component in the WYSIWYG based authoring:
-
-![Range component](/help/edge/docs/forms/universal-editor/assets/custom-component-range-doc-based.png)
-
->[!NOTE]
->
-> For detailed steps on creating a custom component for the Universal Editor, refer to the [Create Custom Component in WYSIWYG based authoring](/help/edge/docs/forms/universal-editor/create-custom-component) article. -->
-
-## 另請參閱
-
-{{see-more-forms-eds}}

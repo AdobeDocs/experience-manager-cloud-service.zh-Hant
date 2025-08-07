@@ -4,8 +4,8 @@ description: AEM Forms 適用的 Edge Delivery Services 專為實現尖峰效能
 feature: Edge Delivery Services
 exl-id: 58042016-e655-446f-a2bf-83f1811525e3
 role: Admin, Architect, Developer
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
-workflow-type: ht
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+workflow-type: tm+mt
 source-wordcount: '2218'
 ht-degree: 100%
 
@@ -21,16 +21,16 @@ ht-degree: 100%
 
 規則就像指令，告訴我們在不同情況下該怎麼做。規則通常具備以下結構：
 
-* 條件：這些會指定規則適用的情況。可以將這些視為需要回答 (是或否) 的問題。
+- 條件：這些會指定規則適用的情況。可以將這些視為需要回答 (是或否) 的問題。
 
-* 操作：這些是定義當符合 (true) 或不符合 (false) 條件時會發生什麼情況。
+- 操作：這些是定義當符合 (true) 或不符合 (false) 條件時會發生什麼情況。
 
 
 例如，當選取核取方塊時，要顯示電子郵件信箱：
 
-* 條件：「您想要訂閱雜誌和活動資訊嗎？」選取核取方塊。(是或否？)。此條件設定在表單的`Visible`屬性中。
-* 操作 (true)：顯示電子郵件信箱。(選取「是」發生的情況)。 `Visibility Expression`使用為`visible`屬性定義的條件來動態性地顯示欄位。
-* 操作 (false)：隱藏電子郵件信箱被。(選取「否」時發生的情況)。 `Visibility Expression` 使用為`Value`定義的條件來動態性地隱藏欄位。
+- 條件：「您想要訂閱雜誌和活動資訊嗎？」選取核取方塊。(是或否？)。此條件設定在表單的`Visible`屬性中。
+- 操作 (true)：顯示電子郵件信箱。(選取「是」發生的情況)。 `Visibility Expression`使用為`visible`屬性定義的條件來動態性地顯示欄位。
+- 操作 (false)：隱藏電子郵件信箱被。(選取「否」時發生的情況)。 `Visibility Expression` 使用為`Value`定義的條件來動態性地隱藏欄位。
 
 有關詳細的逐步說明，請參閱[根據條件顯示/隱藏電子郵件欄位](#example-1-conditional-email-field)
 
@@ -41,8 +41,8 @@ ht-degree: 100%
 
 想像一下您的表單欄位有一個電燈開關。`Visible`屬性就像那個開關，可以控制欄位在首次載入時是否在表單上可見到。
 
-* true (冋同電燈開關呈「開啟」狀態 )：表單上會顯示此欄位。
-* false (如同電燈開關呈「關閉」狀態)：表單上會隱藏此欄位。
+- true (冋同電燈開關呈「開啟」狀態 )：表單上會顯示此欄位。
+- false (如同電燈開關呈「關閉」狀態)：表單上會隱藏此欄位。
 
 您可以使用試算表公式 (包括 = 標記) 來使用類似試算表的邏輯編寫公式，以此決定欄位的可見度。您可以在此公式中使用表單其他欄位的值。例如，如果使用者在註冊類型欄位中選取「個人」，您可以使用檢查該值的公式隱藏電子郵件欄位。
 
@@ -73,10 +73,10 @@ ht-degree: 100%
 
 為了使這些概念具體化，我們來看看以下類比：
 
-* 可見度：想像表單是一間房子。「可見度」屬性就像每個房間 (欄位) 的電燈開關。您可以決定當有人進入房子 (開啟表單) 時，房間一開始是亮的 (可見) 還是暗的 (隱藏)。
-* 可見度運算式：這就像一個動作感應電燈開關。房間 (欄位) 一開始可能是暗的 (隱藏)，但如果有人走過 (變更另一個欄位中的值)，公式 (動作感應器) 可以將其開啟 (顯示欄位)。
-* 值：這就像電燈的預設調光開關 (欄位的初始資料)。使用者接著可以調整亮度 (修改值)。
-* 值運算式：這就像是房子 (表單) 中產品價格標籤內建的精美計算器。價格標籤 (欄位) 會根據公式顯示最終價格 (例如，在基本價格加上稅金)，該公式會使用如基本價格的其他資訊 (來自另一個欄位的值)。
+- 可見度：想像表單是一間房子。「可見度」屬性就像每個房間 (欄位) 的電燈開關。您可以決定當有人進入房子 (開啟表單) 時，房間一開始是亮的 (可見) 還是暗的 (隱藏)。
+- 可見度運算式：這就像一個動作感應電燈開關。房間 (欄位) 一開始可能是暗的 (隱藏)，但如果有人走過 (變更另一個欄位中的值)，公式 (動作感應器) 可以將其開啟 (顯示欄位)。
+- 值：這就像電燈的預設調光開關 (欄位的初始資料)。使用者接著可以調整亮度 (修改值)。
+- 值運算式：這就像是房子 (表單) 中產品價格標籤內建的精美計算器。價格標籤 (欄位) 會根據公式顯示最終價格 (例如，在基本價格加上稅金)，該公式會使用如基本價格的其他資訊 (來自另一個欄位的值)。
 
 透過將這些屬性與[試算表函數](#spreadsheet-functions-for-rules)結合，您可以在表單中實現各種動態行為。
 
@@ -86,19 +86,19 @@ ht-degree: 100%
 
 ### 邏輯函數
 
-* [NOT()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#__RefHeading__1018452_715980110)：反轉邏輯狀態 (TRUE 變成 FALSE，反之亦然)。
-* [AND()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#AND)：僅當所有指定的條件都為 TRUE 時才傳回 TRUE。
-* [OR()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#OR)：當至少其中一個指定的條件為 TRUE，會傳回 TRUE。
+- [NOT()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#__RefHeading__1018452_715980110)：反轉邏輯狀態 (TRUE 變成 FALSE，反之亦然)。
+- [AND()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#AND)：僅當所有指定的條件都為 TRUE 時才傳回 TRUE。
+- [OR()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#OR)：當至少其中一個指定的條件為 TRUE，會傳回 TRUE。
 
 ### 條件函數
 
-* [IF()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#__RefHeading__1018446_715980110)：運算一個條件，如果為 TRUE，則傳回一個特定值；如果為 FALSE，則傳回另一個值。
+- [IF()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#__RefHeading__1018446_715980110)：運算一個條件，如果為 TRUE，則傳回一個特定值；如果為 FALSE，則傳回另一個值。
 
 ### 數學函數
 
-* [SUM()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#SUM)：從指定儲存格範圍內新增值。
-* [ROUND()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#ROUND)：將數字四捨五入到指定的小數位數。
-* [MIN()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#MIN)：傳回指定儲存格範圍內的最小值。
+- [SUM()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#SUM)：從指定儲存格範圍內新增值。
+- [ROUND()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#ROUND)：將數字四捨五入到指定的小數位數。
+- [MIN()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#MIN)：傳回指定儲存格範圍內的最小值。
 
 ## 建立規則
 
@@ -156,7 +156,7 @@ ht-degree: 100%
 
 **邏輯函數：**
 
-* **NOT()：**&#x200B;反轉邏輯狀態 (TRUE 變成 FALSE，反之亦然)。
+- **NOT()：**&#x200B;反轉邏輯狀態 (TRUE 變成 FALSE，反之亦然)。
 
   範例：如果電子郵件欄位留空，則隱藏「確認電子郵件」欄位。
 
@@ -170,9 +170,9 @@ ht-degree: 100%
       ![AEM Forms 可見度運算式公式](/help/edge/assets/aem-forms-visible-expression-formula-text.png)
 
 
-* AND()：僅當所有指定的條件都為 TRUE 時才傳回 TRUE。
+- AND()：僅當所有指定的條件都為 TRUE 時才傳回 TRUE。
 
-   * 範例：僅當所有必填欄位均已填寫時才啟用「提交」按鈕。
+   - 範例：僅當所有必填欄位均已填寫時才啟用「提交」按鈕。
 
    1. 將「提交」按鈕的`Visible`屬性設定為：
 
@@ -202,9 +202,9 @@ ht-degree: 100%
 
       只有當所有欄位 (姓名、電子郵件、電話) 均已填寫 (NOT(()) 對每個欄位傳回 TRUE) 時，此公式才會顯示「提交」按鈕 (TRUE)，否則會隱藏該按鈕 (AND(multiple FALSES) = FALSE)。
 
-* OR()：當至少其中一個指定的條件為 TRUE，就會傳回 TRUE。
+- OR()：當至少其中一個指定的條件為 TRUE，就會傳回 TRUE。
 
-   * 例如：如果使用者輸入任何適用的折扣優惠券代碼，則套用折扣。
+   - 例如：如果使用者輸入任何適用的折扣優惠券代碼，則套用折扣。
 
    1. 將「最終金額」欄位的`Visible`屬性設定為：
 
@@ -229,9 +229,9 @@ ht-degree: 100%
 
 **文字函數：**
 
-* IF()：運算一個條件，如果為 TRUE，則傳回一個特定值；如果為 FALSE，則傳回另一個值。
+- IF()：運算一個條件，如果為 TRUE，則傳回一個特定值；如果為 FALSE，則傳回另一個值。
 
-   * 範例：根據所選產品類別顯示自訂訊息。
+   - 範例：根據所選產品類別顯示自訂訊息。
 
    1. 將`message`欄位的`Value`屬性設定為 `Only upto 7 kg check-in lagguage is allowed!`：
 
@@ -264,7 +264,7 @@ ht-degree: 100%
 
 **數學函數：**
 
-* SUM()：新增指定儲存格範圍內的值。
+- SUM()：新增指定儲存格範圍內的值。
 
   範例：計算購物車中商品的總金額。
 
@@ -273,7 +273,7 @@ SUM(price * quantity)
 
   此公式假設每件商品有單獨的「價格」和「數量」欄位。將其相乘並使用 SUM() 將購物車中所有商品的總金額相加。
 
-* ROUND()：將數字四捨五入到指定的小數位數。
+- ROUND()：將數字四捨五入到指定的小數位數。
 
   範例：將計算出的折扣金額四捨五入到小數點後兩位。
 
@@ -282,7 +282,7 @@ ROUND(discount, 2)
 
   此公式將折扣值四捨五入至小數點後兩位。
 
-* MIN()：傳回指定儲存格範圍內的最小值。
+- MIN()：傳回指定儲存格範圍內的最小值。
 
   範例：根據所選國家/地區尋找註冊表單所要求的最低年齡。
 
@@ -304,9 +304,9 @@ MIN(ageLimits[&quot;US&quot;],ageLimits[&quot;UK&quot;],ageLimits[&quot;France&q
 
 自訂函數位於 `[Adaptive form block]/functions.js` 檔案中。建立程序一般包括以下步驟：
 
-* 函數宣告：定義函數名稱及其參數 (其接受的輸入)。
-* 邏輯實施：編寫程式碼，概述函數執行的特定計算或操控。
-* 函數匯出：從相關檔案匯出函數，使函數在您的規則中可供存取。
+- 函數宣告：定義函數名稱及其參數 (其接受的輸入)。
+- 邏輯實施：編寫程式碼，概述函數執行的特定計算或操控。
+- 函數匯出：從相關檔案匯出函數，使函數在您的規則中可供存取。
 
 ### 範例：年份函數
 
@@ -315,9 +315,9 @@ MIN(ageLimits[&quot;US&quot;],ageLimits[&quot;UK&quot;],ageLimits[&quot;France&q
 
 ```JavaScript
 /**
- * Get the current date and time
- * @name now
- * @returns {Date} The current date and time as a Date object
+ - Get the current date and time
+ - @name now
+ - @returns {Date} The current date and time as a Date object
  */
 function now() {
   const today = new Date();
@@ -325,11 +325,11 @@ function now() {
 }
 
 /**
- * Get the year from a Date object
- * @name year
- * @param {Date} date The date object
- * @throws {TypeError} If the input is not a Date object
- * @returns {number} The year as a number
+ - Get the year from a Date object
+ - @name year
+ - @param {Date} date The date object
+ - @throws {TypeError} If the input is not a Date object
+ - @returns {number} The year as a number
  */
 function year(date) {
   let inputDate = new Date(date)
