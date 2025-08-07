@@ -87,7 +87,7 @@ Cloud Manager 中的 **Edge Delivery 待辦事項清單**&#x200B;是上線任務
 | 8 | 設定推播驗證 | 請參閱「[為 Edge Delivery 網站設定推播驗證](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)」。 |
 | 9 | 上線 | 請參閱「[上線檢查清單](/help/edge/docs/go-live-checklist.md)」。 |
 
->[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3441574?learn=on&captions=chi_hant)
 
 ## 記錄支援服務單 {#eds-support-ticket}
 
