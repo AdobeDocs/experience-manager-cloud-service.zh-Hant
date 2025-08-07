@@ -505,7 +505,7 @@ Edge Delivery Services範本的&#x200B;**&#x200B;**
 如果問題仍然存在：
 
 1. 檢查Adobe Experience Cloud服務狀態。
-2. 檢閱[Edge Delivery Services檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html)。
+2. 檢閱[Edge Delivery Services檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=zh-Hant)。
 3. 造訪[Adobe Experience League社群](https://experienceleaguecommunities.adobe.com/)。
 4. 聯絡Adobe客戶服務。
 
@@ -528,6 +528,6 @@ Edge Delivery Services範本的&#x200B;**&#x200B;**
 
 ### 效能最佳化
 
-- [Edge Delivery Services最佳實務](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html)：發揮最大效能。
+- [Edge Delivery Services最佳實務](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=zh-Hant)：發揮最大效能。
 - [表單分析](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/analytics.html)：追蹤表單效能和使用者行為。
 

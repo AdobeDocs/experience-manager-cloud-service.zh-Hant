@@ -70,7 +70,7 @@ ht-degree: 1%
 
 >[!TIP]
 >
-> 不熟悉AEM？ 從[AEM Sites快速入門手冊](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)開始。
+> 不熟悉AEM？ 從[AEM Sites快速入門手冊](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=zh-Hant)開始。
 
 ## 路徑A：使用Forms建立新專案
 
