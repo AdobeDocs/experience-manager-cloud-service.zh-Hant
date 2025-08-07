@@ -4,7 +4,9 @@ description: 本文探索基於核心元件之調適型表單中規則編輯器�
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-source-git-commit: 4ff533de73fcb91fb2b68cfdb3fd2602645ff7aa
+hide: true
+hidefromtoc: true
+source-git-commit: 848a06abf2012d9afd0b9493d21fbcee815f5f97
 workflow-type: tm+mt
 source-wordcount: '1863'
 ht-degree: 0%
@@ -13,7 +15,7 @@ ht-degree: 0%
 
 # 規則編輯器增強功能和使用案例
 
-<span class="preview">這些是透過我們的<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hant#new-features">發行前通道</a>提供的發行前功能。
+<span class="preview">這些是透過我們的<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">發行前通道</a>提供的發行前功能。
 
 本文介紹Adaptive Forms中規則編輯器的最新增強功能。 這些更新可協助您更輕鬆地定義表單行為，而不需撰寫自訂程式碼，並建立更動態、回應速度更快、更個人化的表單體驗。
 
@@ -87,7 +89,7 @@ ht-degree: 0%
 
 ## 支援規則中的動態變數
 
-增強型規則編輯器現在支援建立和使用動態（暫時）變數。 您可以使用內建的&#x200B;**設定變數值**&#x200B;和&#x200B;**取得變數值**&#x200B;函式，在表單的整個生命週期中設定及擷取這些變數。
+增強型規則編輯器現在支援建立和使用動態（暫時）變數。 您可以使用內建的&#x200B;**設定變數值**&#x200B;和&#x200B;**取得變數值**函式，在表單的整個生命週期中設定及擷取這些變數。
 這些變數：
 
 * 未隨表單資料一起提交。
