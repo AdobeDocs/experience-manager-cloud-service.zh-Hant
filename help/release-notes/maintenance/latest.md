@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 0f16c31a5fea1fc538fbeabe6db182ad3a30560d
+source-git-commit: 280e02ba0ace1fe123fd5112a982c6434fd4d499
 workflow-type: tm+mt
 source-wordcount: '1619'
 ht-degree: 12%
@@ -131,7 +131,7 @@ ht-degree: 12%
 
 ### 已知問題 {#known-issues-21772}
 
-* SITES-31791：內容片段GraphQL — 查詢失敗，顯示「超出最大欄位計數」。 請參閱[知識庫文章](https://experienceleague.adobe.com/zh-hant/docs/experience-cloud-kcs/kbarticles/ka-27231)。
+* SITES-31791：內容片段GraphQL — 查詢失敗，顯示「超出最大欄位計數」。 請參閱[知識庫文章](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27231)。
 
 ### 已過時的功能和 API {#deprecated-21772}
 
@@ -140,7 +140,6 @@ ht-degree: 12%
 ### 安全性修正 {#security-21772}
 
 AEM as a Cloud Service 專門負責將您的平台的安全性與效能最佳化。此維護版本解決 35 個已確認的漏洞，強化我們提供健全系統保護的承諾。
-
 
 ### 嵌入技術 {#embedded-tech-21772}
 
@@ -151,5 +150,4 @@ AEM as a Cloud Service 專門負責將您的平台的安全性與效能最佳化
 | AEM HTL | 1.4.28-1.4.0 | [HTML 範本語言規格](https://github.com/adobe/htl-spec) |
 | Apache HTTP 伺服器 | 2.4.63 | [Apache Httpd 2.4.63](https://github.com/apache/httpd/blob/2.4.63/CHANGES) |
 | AEM 核心元件 | 2.29.0 | [AEM WCM 核心元件](https://github.com/adobe/aem-core-wcm-components) |
-| Node.js | 14 （預設） | [支援的Node.js版本](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
-
+| Node.js | 14 （預設） | [支援的Node.js版本](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
