@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: 0a0a50a13122b328782e5395b759121acc76cfb6
+source-git-commit: 51993fe0eabb1e96931e6d64757e165b1b0d0ea9
 workflow-type: tm+mt
-source-wordcount: '6566'
+source-wordcount: '6591'
 ht-degree: 99%
 
 ---
@@ -33,6 +33,7 @@ ht-degree: 99%
    + AEMaaCS 功能發行說明 {#release-notes}
       + [最新發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2025 {#2025}
+         + [2025.6.0 版發行說明](/help/release-notes/release-notes-cloud/2025/release-notes-2025-6-0.md)
          + [2025.5.0 版發行說明](/help/release-notes/release-notes-cloud/2025/release-notes-2025-5-0.md)
          + [2025.4.0 版發行說明](/help/release-notes/release-notes-cloud/2025/release-notes-2025-4-0.md)
          + [2025.3.0 版發行說明](/help/release-notes/release-notes-cloud/2025/release-notes-2025-3-0.md)
@@ -787,6 +788,7 @@ ht-degree: 99%
          + [依據核心元件設定自適應表單的提交動作](/help/forms/configure-submit-actions-core-components.md)
          + [設定 Edge Delivery Services 表單的提交動作](/help/forms/configure-submit-action-eds-forms.md)
          + [設定自適應表單的傳送電子郵件提交動作](/help/forms/configure-submit-action-send-email.md)
+         + [整合最適化表單與表單資料模型](/help/forms/integrate-adaptive-form-with-fdm.md)
          + [將自適應表單與 Microsoft Power Automate 整合](/help/forms/forms-microsoft-power-automate-integration.md)
          + 將自適應表單連結到 Microsoft® SharePoint{#connect-to-sharepoint}
             + [將最適化表單連結到 Microsoft](/help/forms/configure-submit-action-sharepoint.md)
@@ -1111,6 +1113,7 @@ ht-degree: 99%
          + [Edge Delivery Services 的表單通用編輯器簡介：完整指南](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [如何使用通用編輯器開始編寫：逐步教學課程](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
          + [如何使用通用編輯器建立您的第一個表單 - 逐步操作教學課程](/help/edge/docs/forms/universal-editor/create-forms.md)
+         + [提交後引導使用者：在通用編輯器中設定重新導向並感謝您的訊息](/help/edge/docs/forms/universal-editor/configure-thankyou-message.md)
          + [通用編輯器介面指南：工具、功能和導覽說明](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
          + [編寫行動裝置適用的表單：通用編輯器中的回應式設計](/help/edge/docs/forms/universal-editor/responsive-layout.md)
          + [設計精美表單：通用編輯器的樣式和主題指南](/help/edge/docs/forms/universal-editor/style-theme-forms.md)

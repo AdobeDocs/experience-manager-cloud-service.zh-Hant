@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: 6400662cb1c7a504f69db7091091452e99dd6ce9
 workflow-type: tm+mt
-source-wordcount: '2116'
+source-wordcount: '2117'
 ht-degree: 1%
 
 ---
@@ -70,7 +70,7 @@ ht-degree: 1%
 
 >[!TIP]
 >
-> 不熟悉AEM？ 從[AEM Sites快速入門手冊](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=zh-Hant)開始。
+> 不熟悉AEM？ 從[AEM Sites快速入門手冊](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)開始。
 
 ## 路徑A：使用Forms建立新專案
 
@@ -182,8 +182,8 @@ AEM程式碼同步會自動同步AEM製作環境與GitHub存放庫之間的內�
 
 **驗證：**&#x200B;確認您的GitHub存放庫連線至AEM。
 
->[!NOTE]
->
+    >[！NOTE]
+    >
 >發生建置問題？ 請參閱[疑難排解GitHub組建問題](#troubleshooting-github-build-issues)。
 
 +++
@@ -399,11 +399,11 @@ AEM程式碼同步會自動同步AEM製作環境與GitHub存放庫之間的內�
 
    ```bash
    # Form block rule engine files
-    blocks/form/rules/formula/*
-    blocks/form/rules/model/*
-    blocks/form/rules/functions.js
-    scripts/editor-support.js
-    scripts/editor-support-rte.js
+   blocks/form/rules/formula/*
+   blocks/form/rules/model/*
+   blocks/form/rules/functions.js
+   scripts/editor-support.js
+   scripts/editor-support-rte.js
    ```
 
 2. **更新.eslintrc.js**
@@ -648,7 +648,7 @@ AEM程式碼同步會自動同步AEM製作環境與GitHub存放庫之間的內�
    AEM CLI可簡化本機開發工作：
 
    ```bash
-   npm install -g @adobe/aem-cli
+       npm install -g @adobe/aem-cli
    ```
 
 2. **複製您的存放庫**

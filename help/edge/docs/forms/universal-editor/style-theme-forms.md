@@ -4,7 +4,7 @@ description: 有效地自訂透過 Edge Delivery Services 交付的 AEM Forms �
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: 3b6d75b13730e920a10bc623947bc8b2d46dc5a9
 workflow-type: tm+mt
 source-wordcount: '1916'
 ht-degree: 83%
@@ -133,27 +133,29 @@ ht-degree: 83%
 +++ 一般元件的 CSS 選取器
 
 ```CSS
-/- Primary Pattern: Target field wrapper by type */
-.form .{Type}-wrapper {
-  /- Add your styles here */
-  margin-bottom: 1rem;
-  border-radius: 4px;
-}
-
-/- Primary Pattern: Target input fields within wrapper */
-.form .{Type}-wrapper input {
-  /- Add your styles here */
-  border: 1px solid #ccc;
-  padding: 8px;
-  border-radius: 4px;
-  width: 100%;
-}
-
-/- Context-specific: Target element by field name when higher specificity needed */
-.form .field-{Name} input {
-  /- Add your styles here */
-  /- Use this pattern for specific field customization */
-}
+  
+  /- Primary Pattern: Target field wrapper by type */
+  .form .{Type}-wrapper {
+    /- Add your styles here */
+    margin-bottom: 1rem;
+    border-radius: 4px;
+  }
+  
+  /- Primary Pattern: Target input fields within wrapper */
+  .form .{Type}-wrapper input {
+    /- Add your styles here */
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 4px;
+    width: 100%;
+  }
+  
+  /- Context-specific: Target element by field name when higher specificity needed */
+  .form .field-{Name} input {
+    /- Add your styles here */
+    /- Use this pattern for specific field customization */
+  }
+  
 ```
 
 - `.form .{Type}-wrapper`：根據欄位型別定位欄位包裝函式專案。 例如，`.form .text-wrapper`會鎖定所有文字欄位容器。

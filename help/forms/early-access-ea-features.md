@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 3b6d75b13730e920a10bc623947bc8b2d46dc5a9
 workflow-type: tm+mt
-source-wordcount: '2467'
-ht-degree: 22%
+source-wordcount: '2837'
+ht-degree: 19%
 
 ---
 
@@ -116,6 +116,8 @@ Cloud上的互動式通訊是建立、管理和提供資料導向互動式通訊
 
 * **格式彈性**：輸出為PDF、HTML、PCL、PostScript®和ZPL格式。
 
+* **規則編輯器**：使用直覺式的點選式介面，直接在您的檔案中建立動態的資料導向動作。 輕鬆定義條件式邏輯、自動化工作流程，以及個人化內容，無需撰寫程式碼。
+
 #### 使用案例：
 
 * 產生帳戶對帳單的金融機構
@@ -125,7 +127,7 @@ Cloud上的互動式通訊是建立、管理和提供資料導向互動式通訊
 
 準備好開始了嗎？ 互動式通訊編輯器可在Forms as a Cloud Service部署的搶先存取計畫下取得。 若要要求存取權，請從您的正式地址將您的組織ID和方案詳細資料以電子郵件傳送至[aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)。
 
-### Adobe Experience Platform (AEP) 與 AEM Forms 的整合
+### Adobe Experience Platform (AEP) 與 AEM Forms 整合
 
 您可以連結AEM Forms與Adobe Experience Platform (AEP)，以運用客戶設定檔和資料提供個人化表單體驗，並根據表單提交觸發下游工作流程。 透過直接將表單資料傳送到AEP資料集，您可以豐富客戶設定檔，並深入瞭解使用者互動。
 
@@ -154,6 +156,38 @@ AEM Forms HTML5 Forms可讓您以HTML5格式轉譯現有的XFA (XML Forms Archit
 * **草稿儲存**：將HTML5表單儲存為草稿，並在稍後階段繼續填寫表單。
 
 準備好開始了嗎？ [HTML5表單簡介](/help/forms/introductionhtml5.md)檔案提供這項創新的全面概覽和快速入門手冊。
+
+### 適用於自訂元件的AEM Forms Scaffolder CLI
+
+使用AEM Forms CLI工具加速AEM Forms Edge Delivery Services開發。 這個命令列介面可讓您立即產生啟動自訂元件開發所需的程式碼和接線 — 沒有樣板，也不麻煩。
+
+>[!VIDEO]&#x200B;(https://video.tv.adobe.com/v/3470514/aem-forms scaffolding-aem-custom component generator-aem-forms cli-aem-forms custom component-aem-forms開發工具)
+
+**主要功能：**
+
+* **快速支架**：立即產生新自訂元件的結構和程式碼，減少手動設定時間。
+* **內建最佳實務**：此工具遵循AEM Forms Edge Delivery Services的建議模式，以確保一致性和可維護性。
+* **開發人員生產力**：專注於建置商業邏輯和UI，而CLI則處理重複的設定工作。
+* **緊密整合**：產生的元件已準備就緒，可使用並與您現有的AEM Forms專案整合。
+
+準備好開始了嗎？ 適用於AEM Forms as a Cloud Service部署的Forms搶先存取計畫下提供CLI工具。 若要要求存取權，請從您的正式地址將您的組織ID和方案詳細資料以電子郵件傳送至[aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)。
+
+### 動態表單資料的API整合工具
+
+API整合工具可讓表單作者建立動態、智慧型的表單，這些表單會根據使用者互動，自動從外部REST API擷取及填入資料。 此無程式碼整合功能可將靜態表單轉換為回應式資料收集介面。
+
+主要功能包括：
+
+* **視覺設定介面**：透過直覺式的點選式介面建立API整合，而不需要自訂編碼
+* **即時資料填入**：根據使用者輸入自動填入表單欄位（例如，使用者輸入郵遞區號時自動填寫城市和州）
+* **彈性API支援**：連線至任何公開存取的REST API，並支援GET/POST方法、驗證和JSON/XML回應
+* **規則型觸發器**：定義使用內建規則引擎觸發API呼叫的時間（例如，欄位變更、表單事件）
+* **智慧資料對應**：使用Adobe的JSON剖析功能，設定API回應資料對應到特定表單欄位的方式
+* **增強的使用者體驗**：減少手動資料輸入、改善資料準確性，並建立更吸引人的表單互動
+
+此工具對於地址自動完成、動態下拉式母體、針對外部資料庫的即時驗證以及建立根據使用者輸入進行調整的內容感知表單體驗等案例特別有用。
+
+
 
 ## 其他早期存取創新
 
