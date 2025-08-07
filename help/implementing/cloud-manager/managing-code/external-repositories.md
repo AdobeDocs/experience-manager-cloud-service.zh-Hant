@@ -4,7 +4,7 @@ description: 了解如何將外部存放庫新增至 Cloud Manager。Cloud Manag
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 19fd6713e083826bd9aa621d86805bcd55a6743a
+source-git-commit: 0243251148af4f188785b1ef0e5ee8eeffe6e0bd
 workflow-type: tm+mt
 source-wordcount: '2321'
 ht-degree: 27%
@@ -68,7 +68,7 @@ ht-degree: 27%
    | --- | --- |
    | **存放庫名稱** | 必要。您的新存放庫的生動名稱。 |
    | **存放庫 URL** | 必要。存放庫的 URL。<br><br>如果您使用GitHub託管的存放庫，路徑必須在`.git`結尾。<br>例如，*`https://github.com/org-name/repo-name.git`*(URL 路徑僅用於插圖目的)。<br><br>如果您正在使用外部存放庫，則必須遵循下列 URL 路徑格式：<br>`https://git-vendor-name.com/org-name/repo-name.git`<br> 或<br>`https://self-hosted-domain/org-name/repo-name.git`<br>，與您的 Git 廠商相符。 |
-   | **選取存放庫類型** | 必要。選取您正在使用的存放庫型別。 如果存放庫URL路徑包含Git供應商名稱（例如GitLab或Bitbucket），系統已為您預先選取存放庫型別。：<ul><li>**GitHub** （GitHub Enterprise和自控版GitHub）</li><li>**GitLab** （包括`gitlab.com`和自控的GitLab版本） </li><li>**Bitbucket** （只有`bitbucket.org` — 雲端版本）受到支援。 自2024年2月15日起，已棄用自行託管的Bitbucket版本。)</li><li>**Azure DevOps** (`dev.azure.com`) </ul> |
+   | **選取存放庫類型** | 必要。選取您正在使用的存放庫型別。 如果存放庫URL路徑包含Git供應商名稱（例如GitLab或Bitbucket），系統已為您預先選取存放庫型別。：<ul><li>**GitHub** （GitHub Enterprise和自控版GitHub）</li><li>**GitLab** （包括`gitlab.com`和自控的GitLab版本） </li><li>**Bitbucket** （只有`bitbucket.org` — 雲端版本）受到支援。 自2024年2月15日起，已棄用自行託管的Bitbucket版本。</li><li>**Azure DevOps** (`dev.azure.com`) </ul> |
    | **說明** | 選擇性。存放庫的詳細描述。 |
 
 1. 選取&#x200B;**儲存**&#x200B;以新增存放庫。
