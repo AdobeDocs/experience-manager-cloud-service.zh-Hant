@@ -105,7 +105,7 @@ Before using the **[!UICONTROL Invoke an AEM Workflow]** Submit Action configure
 若要針對在Universal Editor中編寫的最適化表單設定具有[AEM工作流程](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=zh-Hant#extending-aem)的自動化程式，請執行下列步驟：
 
 1. 開啟最適化表單進行編輯。
-1. 按一下編輯器上的&#x200B;**編輯表單屬性**擴充功能。
+1. 按一下編輯器上的&#x200B;**編輯表單屬性**&#x200B;擴充功能。
 **表單屬性**&#x200B;對話方塊就會顯示。
 
    >[!NOTE]

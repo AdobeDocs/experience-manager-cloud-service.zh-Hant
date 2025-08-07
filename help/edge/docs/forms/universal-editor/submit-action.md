@@ -68,7 +68,7 @@ ht-degree: 47%
 您可以使用&#x200B;**編輯表單屬性**&#x200B;擴充功能的&#x200B;**提交**&#x200B;索引標籤，為在Universal Editor中建立的表單設定提交動作。
 
 **如何設定在Universal Editor中編寫之Forms的提交動作？**
-您可以使用**編輯表單屬性**&#x200B;擴充功能的&#x200B;**提交**&#x200B;索引標籤，為在Universal Editor中建立的表單設定提交動作。
+您可以使用&#x200B;**編輯表單屬性**&#x200B;擴充功能的&#x200B;**提交**&#x200B;索引標籤，為在Universal Editor中建立的表單設定提交動作。
 
 ![表單屬性圖示](/help/forms/assets/ue-form-properties-icon.png)
 
