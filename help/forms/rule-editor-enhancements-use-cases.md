@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 規則編輯器增強功能和使用案例
 
-<span class="preview">這些是透過我們的<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">發行前通道</a>提供的發行前功能。
+<span class="preview">這些是透過我們的<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hant#new-features">發行前通道</a>提供的發行前功能。
 
 本文介紹Adaptive Forms中規則編輯器的最新增強功能。 這些更新可協助您更輕鬆地定義表單行為，而不需撰寫自訂程式碼，並建立更動態、回應速度更快、更個人化的表單體驗。
 
