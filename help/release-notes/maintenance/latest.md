@@ -131,7 +131,7 @@ ht-degree: 12%
 
 ### 已知問題 {#known-issues-21772}
 
-* SITES-31791：內容片段GraphQL — 查詢失敗，顯示「超出最大欄位計數」。 請參閱[知識庫文章](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27231)。
+* SITES-31791：內容片段GraphQL — 查詢失敗，顯示「超出最大欄位計數」。 請參閱[知識庫文章](https://experienceleague.adobe.com/zh-hant/docs/experience-cloud-kcs/kbarticles/ka-27231)。
 
 ### 已過時的功能和 API {#deprecated-21772}
 
@@ -150,4 +150,4 @@ AEM as a Cloud Service 專門負責將您的平台的安全性與效能最佳化
 | AEM HTL | 1.4.28-1.4.0 | [HTML 範本語言規格](https://github.com/adobe/htl-spec) |
 | Apache HTTP 伺服器 | 2.4.63 | [Apache Httpd 2.4.63](https://github.com/apache/httpd/blob/2.4.63/CHANGES) |
 | AEM 核心元件 | 2.29.0 | [AEM WCM 核心元件](https://github.com/adobe/aem-core-wcm-components) |
-| Node.js | 14 （預設） | [支援的Node.js版本](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
+| Node.js | 14 （預設） | [支援的Node.js版本](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
