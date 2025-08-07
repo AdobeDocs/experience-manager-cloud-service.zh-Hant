@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: 0e55162f7faf34f6bedf4e25dba9e1e91396fb8d
+source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
 workflow-type: tm+mt
-source-wordcount: '6553'
+source-wordcount: '6563'
 ht-degree: 99%
 
 ---
@@ -1017,7 +1017,7 @@ ht-degree: 99%
    + [Screens as a Cloud Service 常見問題集](/help/screens-cloud/screens-cloud-faqs.md)
 + Content and Commerce {#content-and-commerce}
    + [簡介和概觀](/help/commerce-cloud/introduction.md)
-   + [CIF簡介](/help/commerce-cloud/cif-introduction.md)
+   + [CIF 簡介](/help/commerce-cloud/cif-introduction.md)
    + [AEM Content and Commerce as a Cloud Service 的重大變更](/help/commerce-cloud/changes.md)
    + Commerce 歷程 {#journeys}
       + 內容作者歷程 {#author}
@@ -1106,8 +1106,6 @@ ht-degree: 99%
       + [重新導向](/help/edge/docs/redirects.md)
    + 建置表單 {#build-forms}
       + [概觀](/help/edge/docs/forms/overview.md)
-      + [設定 Edge Delivery Services 表單提交](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
-      + [常見問題](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
       + WYSIWYG 編寫 {#universal-editor}
          + [Edge Delivery Services 的表單通用編輯器簡介：完整指南](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [如何使用通用編輯器開始編寫：逐步教學課程](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
@@ -1121,6 +1119,7 @@ ht-degree: 99%
          + [如何發佈及部署表單：通用編輯器發佈指南](/help/edge/docs/forms/universal-editor/publish-forms.md)
          + [建置自訂表單元件：通用編輯器開發人員指南](/help/edge/docs/forms/universal-editor/create-custom-component.md)
          + [表單資料模型整合：整合表單與表單資料模型](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
+         + [設定預填服務：完成設定預填服務的逐步指南](/help/edge/docs/forms/universal-editor/prefill-form.md)
          + [可重複使用、模組化和獨立的片段：在表單中建立及使用表單片段](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)
          + [針對 Edge Delivery Services 表單提交時出現的 403 禁止錯誤進行疑難排解](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)
       + 文件型編寫 {#getting-started-edge-delivery-services-forms}
@@ -1142,6 +1141,8 @@ ht-degree: 99%
          + [保護表單：新增 reCAPTCHA 安全性](/help/edge/docs/forms/recaptacha-forms.md)
          + [建置自訂表單元件：開發人員指南](/help/edge/docs/forms/custom-components-forms.md)
          + [監視表單效能：操作遙測指南](/help/edge/docs/forms/operational-telemetry-for-forms.md)
+      + [設定 Edge Delivery Services 表單提交](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
+      + [常見問題集](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
    + [建立表單的最佳做法](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
    + Edge Delivery 資源 {#resources}
       + Sidekick {#sidekick}
