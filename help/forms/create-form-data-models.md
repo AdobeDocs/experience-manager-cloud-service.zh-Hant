@@ -121,7 +121,7 @@ ht-degree: 1%
       1. 提供說明。
       1. 選取&#x200B;**[!UICONTROL 已啟用]**。
       1. 在覆寫下，根據sling覆寫語法中的環境，提供需要變更的欄位。 如需詳細資訊，請參閱[Apache Sling內容感知設定 — 覆寫](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-override.html#override-syntax)。 例如，`cloudconfigs/fdm/{configName}/url="newURL"`。
-選取**[!UICONTROL +]**&#x200B;可新增多個覆寫。
+選取&#x200B;**[!UICONTROL +]**&#x200B;可新增多個覆寫。
       1. 選取「**[!UICONTROL 儲存]**」。
       1. 若要取得OSGi設定JSON，請依照[使用AEM SDK快速入門產生OSGi設定](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart)中的步驟操作。
       1. 將JSON放在上一步建立的OSGi Factory設定檔案中。
