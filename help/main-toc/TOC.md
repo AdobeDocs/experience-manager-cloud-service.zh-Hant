@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: 0a0a50a13122b328782e5395b759121acc76cfb6
 workflow-type: tm+mt
-source-wordcount: '6563'
+source-wordcount: '6566'
 ht-degree: 99%
 
 ---
@@ -841,6 +841,7 @@ ht-degree: 99%
                + [以核心元件為主之最適化表單的規則編輯器範例](/help/forms/rule-editor-core-components-usecases.md)
                + [在最適化表單中使用非同步函數](/help/forms/using-async-funct-in-rule-editor.md)
                + [對於基於核心元件的表單，在視覺規則編輯器中調用服務增強功能](/help/forms/invoke-service-enhancements-rule-editor.md)
+               + [規則編輯器增強功能](/help/forms/rule-editor-enhancements-use-cases.md)
             + 以核心元件為主之自適應表單的自訂函數簡介{#create-and-use-custom-function-core-component}
                + [以核心元件為主之最適化表單的自訂函數簡介](/help/forms/create-and-use-custom-functions.md)
                + [建立和使用以核心元件為主之最適化表單的自訂函數](/help/forms/custom-function-core-component-create-function.md)
