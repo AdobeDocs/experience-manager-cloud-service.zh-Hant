@@ -3,9 +3,9 @@ title: 在 Content Hub 中搜尋資產
 description: 瞭解如何搜尋 [!DNL Content Hub]中的資產
 role: User
 exl-id: 8578d7d0-32b9-4e5c-80ef-3827e358ac6c
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a0ca51bdf2cd4ece11e05243713a616e9fcb5850
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '642'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 0%
 
 若要在[!DNL the Content Hub]上執行基本搜尋，請瀏覽至搜尋列，並指定您需要搜尋的關鍵字。 導覽至左側窗格中可用的篩選器，並套用這些篩選器以縮小搜尋結果的範圍。
 
-例如，搜尋關鍵字為`architect`且去年修改過的所有&#x200B;**[!UICONTROL JPEG]**&#x200B;影像。 若要執行此案例，請執行下列步驟：
+例如，搜尋關鍵字為&#x200B;**[!UICONTROL 且去年修改過的所有]** JPEG`architect`影像。 若要執行此案例，請執行下列步驟：
 
 1. 指定`architect`作為搜尋關鍵字。
 
@@ -52,7 +52,7 @@ ht-degree: 0%
 
 ## 使用篩選器縮小搜尋結果 {#narrow-down-search-results}
 
-使用「篩選器」面板，根據中繼資料搜尋資產。 您可以根據各種搜尋述詞來篩選搜尋結果。 您可以選取所有適當的述詞，以最小化或縮小搜尋結果。 當您在篩選器中選取多個選項時，Content Hub會顯示符合在篩選器中選取之任何選項的資產。 不過，當您跨篩選器選取多個選項時，Content Hub只會顯示符合跨篩選器選取之所有選項的資產，以縮小搜尋結果的範圍。
+使用「篩選器」面板，根據中繼資料搜尋資產。 您可以根據各種搜尋述詞來篩選搜尋結果。 您可以選取所有適當的述詞，以最小化或縮小搜尋結果。 篩選搜尋結果時，您可以選擇10個以上的述詞。 當您在篩選器中選取多個選項時，Content Hub會顯示符合在篩選器中選取之任何選項的資產。 不過，當您跨篩選器選取多個選項時，Content Hub只會顯示符合跨篩選器選取之所有選項的資產，以縮小搜尋結果的範圍。
 
 預設篩選條件包括檔案格式、核准者、核准日期、過期和未過期的資產，以及過期日期。 管理員也可以設定篩選器清單中顯示的篩選器。 如需詳細資訊，請參閱[設定Content Hub使用者介面](configure-content-hub-ui-options.md#configure-filters-content-hub)。
 
