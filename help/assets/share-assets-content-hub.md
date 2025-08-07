@@ -49,7 +49,7 @@ ht-degree: 2%
 執行以下步驟，在預覽資產時共用資產：
 
 1. 導覽至[!DNL Content Hub]首頁，然後按一下資產縮圖以預覽資產，並在對話方塊的右側窗格中顯示功能表選項。
-1. 選取![共用](/help/assets/assets/share.svg)以顯示&#x200B;**[!UICONTROL 共用]**面板。
+1. 選取![共用](/help/assets/assets/share.svg)以顯示&#x200B;**[!UICONTROL 共用]**&#x200B;面板。
    預覽資產時![共用資產](/help/assets/assets/share-link-asset-preview.png)
 1. 請依照[共用資產](#share-assets)區段中的步驟3到5，從此&#x200B;**[!UICONTROL 共用]**&#x200B;面板產生並共用資產連結（私人或公開）。
 
@@ -57,10 +57,10 @@ ht-degree: 2%
 
 透過連結存取共用資產頁面，並執行下列動作：
 
-* 選取一或多個資產，然後按一下[下載] ![](/help/assets/assets/download-icon.svg) **[!UICONTROL {下載]]**，從可用的下載選項中選取[原始] **[!UICONTROL 、[靜態]]** **[!UICONTROL 或兩個轉譯。]**
+* 選取一或多個資產，然後按一下[下載] ![](/help/assets/assets/download-icon.svg) **[!UICONTROL &lbrace;下載]&rbrack;**，從可用的下載選項中選取[原始] **[!UICONTROL 、[靜態]]** **[!UICONTROL 或兩個轉譯。]**
   ![](/help/assets/assets/download-shared-assets.png)
 * 按一下資產縮圖以檢視資產的中繼資料。
-* 在共用資產頁面（[透過私人連結存取](#share-assets)）上，按一下資產縮圖，然後選取![下載](/help/assets/assets/download-icon.svg)，在選取和下載之前，先在&#x200B;**[!UICONTROL 下載]**面板上選取並檢視可用的資產動態轉譯。
+* 在共用資產頁面（[透過私人連結存取](#share-assets)）上，按一下資產縮圖，然後選取![下載](/help/assets/assets/download-icon.svg)，在選取和下載之前，先在&#x200B;**[!UICONTROL 下載]**&#x200B;面板上選取並檢視可用的資產動態轉譯。
   ![](/help/assets/assets/download-renditions-shared-assets-page.png)
 
 
