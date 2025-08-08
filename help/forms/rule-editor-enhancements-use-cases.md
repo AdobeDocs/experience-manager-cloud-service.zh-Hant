@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: 848a06abf2012d9afd0b9493d21fbcee815f5f97
+source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
 workflow-type: tm+mt
 source-wordcount: '1863'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # 規則編輯器增強功能和使用案例
 
-<span class="preview">這些是透過我們的<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hant#new-features">發行前通道</a>提供的發行前功能。
+<span class="preview">這些是透過我們的<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">發行前通道</a>提供的發行前功能。
 
 本文介紹Adaptive Forms中規則編輯器的最新增強功能。 這些更新可協助您更輕鬆地定義表單行為，而不需撰寫自訂程式碼，並建立更動態、回應速度更快、更個人化的表單體驗。
 
@@ -59,7 +59,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> 您可以在表單、片段或個別欄位上使用&#x200B;**validate()**&#x200B;方法。 當片段包含在表單中時，表單和片段都會顯示為驗證內容中的選項。 在這種情況下，片段會參考其中的欄位，而表單會參考其中嵌入片段的父表單。
+>您可以在表單、片段或個別欄位上使用&#x200B;**validate()**&#x200B;方法。 當片段包含在表單中時，表單和片段都會顯示為驗證內容中的選項。 在這種情況下，片段會參考其中的欄位，而表單會參考其中嵌入片段的父表單。
 
 ## 在規則編輯器中將DownloadDor下載為OOTB函式
 
@@ -67,7 +67,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> 如果表單未針對記錄檔案設定，則使用&#x200B;**downloadDoR()**&#x200B;函式的規則套用至按鈕時，會顯示錯誤訊息。
+>如果表單未針對記錄檔案設定，則使用&#x200B;**downloadDoR()**&#x200B;函式的規則套用至按鈕時，會顯示錯誤訊息。
 
 **案例**：政府機構提供發行憑證的數位申請表。 提交表單後，申請人通常需要填寫好的表單復本以作記錄，或與其他部門共用。 為了改善使用者體驗，機構希望讓申請人選擇在提交後立即下載記錄檔案(DoR)，或在最終提交前的任何階段下載。
 
@@ -89,7 +89,7 @@ ht-degree: 0%
 
 ## 支援規則中的動態變數
 
-增強型規則編輯器現在支援建立和使用動態（暫時）變數。 您可以使用內建的&#x200B;**設定變數值**&#x200B;和&#x200B;**取得變數值**&#x200B;函式，在表單的整個生命週期中設定及擷取這些變數。
+增強型規則編輯器現在支援建立和使用動態（暫時）變數。 您可以使用內建的&#x200B;**設定變數值**&#x200B;和&#x200B;**取得變數值**函式，在表單的整個生命週期中設定及擷取這些變數。
 這些變數：
 
 * 未隨表單資料一起提交。

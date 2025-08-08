@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.6.0 版發行�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.6.0 版發行說明。'
 feature: Release Information
 role: Admin
-source-git-commit: 2679466939e1c2e25e426c62f0fd6bde1bf90b93
+source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
 workflow-type: tm+mt
 source-wordcount: '1339'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 100%
 
 Have a look at the June 2025 Release Overview video for a summary of the features added in the 2025.6.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440931?quality=12&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -70,10 +70,10 @@ Adobe 會定期審查功能、資料庫、API 和設定，確保其符合效能�
 
 展開下方清單，檢視不應再使用的棄用 API 和 OSGi 設定。如需完整詳情 (包括移除的時間表)，請參閱棄用文章。
 
-<details>
-  <summary>展開以查看棄用內容</summary>
++++展開以檢視棄用的專案
 
 Java API：
+
 * `org.apache.sling.commons.auth`
 * `org.apache.felix.webconsole`
 * `org.eclipse.jetty`
@@ -96,7 +96,7 @@ OSGi 屬性：
 * `org.apache.sling.commons.log.LogManager` (所有屬性)
 * `org.apache.sling.commons.log.LogManager.factory.config` (`org.apache.sling.commons.log.file`、`org.apache.sling.commons.log.pattern`)
 
-</details>
++++
 
 ### Java 11 執行階段棄用 {#java11-runtime-deprecation}
 
@@ -125,7 +125,7 @@ OSGi 屬性：
 
 #### 內容版本 {#mt-content}
 
-* **新的環境** (建立於即將到來的日期 (稍後通知) 之後)
+* **新環境** （建立於即將來臨的日期之後，以便稍後通知）
    * 已存在超過 **30 天**&#x200B;的版本會定期被刪除。
    * 保留過去 30 天內的五個最新版本，以及最新版本和目前版本，無論其已存在多久。
 

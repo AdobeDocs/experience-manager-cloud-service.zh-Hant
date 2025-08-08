@@ -3,7 +3,7 @@ title: 設定Edge Delivery網站以使用外部Git存放庫
 description: 瞭解如何將Edge Delivery網站連結至私人或企業Git存放庫。
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 239ee3021057dd108d18ab2d7729680692223403
+source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
 workflow-type: tm+mt
 source-wordcount: '325'
 ht-degree: 7%

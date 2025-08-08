@@ -4,7 +4,7 @@ description: 瞭解使用者如何顯示感謝訊息或重新導向至表單作�
 feature: Adaptive Forms, Edge Delivery Services
 role: User
 level: Intermediate
-source-git-commit: 958891216e117acc03c50446ae92f85108d275a7
+source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 0%
@@ -56,5 +56,3 @@ ht-degree: 0%
 ![感謝您](/help/edge/docs/forms/universal-editor/assets/thankyou-ue.png)
 
 表單作者可為每個表單設定頁面，表單使用者在提交表單後會重新導向至該頁面。
-
-

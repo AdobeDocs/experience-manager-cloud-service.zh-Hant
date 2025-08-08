@@ -1,14 +1,14 @@
 ---
 title: 新增Edge Delivery管道
 description: 瞭解如何新增Edge Delivery管道以建置計畫碼並將其部署到生產環境。
-index: false
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="私人測試版" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 hide: false
+index: false
 hidefromtoc: false
-source-git-commit: 96a619c6ab8f71034914b72a57bdb1e7f363fbc6
+source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 4%
