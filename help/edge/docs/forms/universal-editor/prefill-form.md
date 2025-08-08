@@ -142,7 +142,7 @@ Universal Editor提供兩種預填服務選項：
 
        >[！NOTE]
        >
-   > 深入瞭解如何在[使用表單資料模型(FDM)](/help/forms/work-with-form-data-model.md)中設定FDM服務。
+       > 深入瞭解如何在[使用表單資料模型(FDM)](/help/forms/work-with-form-data-model.md)中設定FDM服務。
 
 +++
 
@@ -265,21 +265,21 @@ FDM中的表單元素會顯示在&#x200B;**內容瀏覽器**&#x200B;的&#x200B;*
 
 **FDM型表單的JSON範例：**
 
-    `&#39;
+    &grave;&#39;
     
-    {
-    &quot;afBoundData&quot;： {
-    &quot;user&quot;： {
+    &lbrace;
+    &quot;afBoundData&quot;： &lbrace;
+    &quot;user&quot;： &lbrace;
     &quot;firstName&quot;： &quot;John&quot;，
     &quot;lastName&quot;： &quot;Doe&quot;，
     &quot;email&quot;： &quot;john.doe@example.com&quot;，
     &quot;phone&quot;： &quot;+1-555-0123&quot;
-    }
-    }，
-    &quot;afUnBoundData&quot;： {
+    &rbrace;
+    &rbrace;，
+    &quot;afUnBoundData&quot;： &lbrace;
     &quot;additionalInfo&quot;： &quot;使用者偏好設定已載入「
-    }
-    }
+    &rbrace;
+    &rbrace;
     
     」「
 」
@@ -433,6 +433,7 @@ XFA型表單的&#x200B;**XML範例：**
 +++
 
 =
+
 ## 相關主題
 
 - [在通用編輯器中整合表單與表單資料模型](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
