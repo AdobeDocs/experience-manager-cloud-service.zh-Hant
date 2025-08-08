@@ -4,10 +4,10 @@ description: 了解 Adobe Experience Manager as a Cloud Service 中 Cloud Manage
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 3111e74e844fb37afa0c7d218c37014d32ad0a64
+source-git-commit: c465542d5e89dbae0eb1c380ca1e7756d0beb2b6
 workflow-type: tm+mt
-source-wordcount: '1337'
-ht-degree: 59%
+source-wordcount: '1308'
+ht-degree: 58%
 
 ---
 
@@ -25,11 +25,6 @@ AEM as a Cloud Service中的Cloud Manager 2025.8.0發行日期是2025年8月7日
 
 下一個預計發行日期為2025年9月4日星期四。
 
-
-
-
-
-
 ## 新增功能 {#what-is-new}
 
 * **Edge Delivery Services授權可以自助方式包含在HIPAA程式中**
@@ -42,7 +37,7 @@ AEM as a Cloud Service中的Cloud Manager 2025.8.0發行日期是2025年8月7日
 
 * **自動布建新的Forms附加元件**
 
-  僅限網站的客戶通常需要以輕量且低成本的方式建立行銷表格。 新的AEM Forms Sites附加元件將有限的Forms功能新增到Sites程式，以符合需求。 如有需要，也可建立完整AEM Forms產品的明確升級路徑。<!-- (CMGR-64301) --> <!-- KT: CMGR Provisioning Support for AEM Forms Sites Add-On SKU https://wiki.corp.adobe.com/pages/viewpage.action?pageId=3578379797 -->
+  僅限網站的客戶通常需要以輕量且低成本的方式建立行銷表格。 新的AEM Forms Sites附加元件將有限的Forms功能新增到Sites程式，以符合需求。 它也會建立完整AEM Forms產品的明確升級路徑。<!-- (CMGR-64301) --> <!-- KT: CMGR Provisioning Support for AEM Forms Sites Add-On SKU https://wiki.corp.adobe.com/pages/viewpage.action?pageId=3578379797 -->
 
   附加元件：
    * 附加到Sites計畫並與其一起部署 — 沒有單獨的Forms計畫或權益。
@@ -53,7 +48,7 @@ AEM as a Cloud Service中的Cloud Manager 2025.8.0發行日期是2025年8月7日
 
      ![建立生產計畫時，在Solutions &amp; Add-Ons中選取Forms附加元件](/help/implementing/cloud-manager/release-notes/assets/forms-add-on-creating-production-program.png) *在計畫建立期間，您可以在Sites解決方案中選取Forms附加元件。*
 
-     ![編輯生產程式時的Forms附加元件](/help/implementing/cloud-manager/release-notes/assets/forms-add-on-editing-production-program.png) *在&#x200B;**編輯程式**&#x200B;中，選取Sites程式的Forms附加元件，然後執行管道以在環境中啟動它。*
+     ![編輯生產程式時的Forms附加元件](/help/implementing/cloud-manager/release-notes/assets/forms-add-on-editing-production-program.png) *在&#x200B;**編輯程式**中，選取Sites程式的Forms附加元件，然後執行管道以在環境中啟動它。*
 
      如需詳細資訊，請參閱[建立生產計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)。
 
@@ -82,7 +77,6 @@ AEM as a Cloud Service中的Cloud Manager 2025.8.0發行日期是2025年8月7日
 請參閱[還原 AEM as a Cloud Service 中先前部署的程式碼](/help/operations/restore-previous-code-deployed.md)。
 
 另請參閱 [AEM as a Cloud Service 中的內容還原](/help/operations/restore.md)。
-
 
 ### 專用測試環境 {#specialized-test-environment}
 
@@ -152,13 +146,13 @@ Cloud Manager 現在支援新增名為&#x200B;**專用測試環境**&#x200B;的�
 
   ![篩選器面板，顯示Edge傳遞和發佈傳遞的新傳遞型別](/help/implementing/cloud-manager/release-notes/assets/filter-delivery-type.png)
 
-![Add Edge Delivery pipeline in Add Pipeline drop-down list](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *從&#x200B;**計劃概觀**&#x200B;頁面的&#x200B;**管道**&#x200B;卡片新增 Edge Delivery 管道。*
+![Add Edge Delivery pipeline in Add Pipeline drop-down list](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *從&#x200B;**計劃概觀**頁面的&#x200B;**管道**卡片新增 Edge Delivery 管道。*
 
 ![Add Edge Delivery pipeline dialog box](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *新增 Edge Delivery 管道對話框。*
 
 請參閱[新增Edge Delivery管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)
 
-若您有興趣測試這個新功能並分享意見回饋，請使用與您的 Adobe ID 關聯的電子郵件傳送電子郵件至 [grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com)。
+<!-- If you are interested in testing this new feature and sharing your feedback, send an email to [grp-aemeds-config-pipeline-adopter@adobe.com](mailto:grp-aemeds-config-pipeline-adopter@adobe.com) from your email address associated with your Adobe ID. -->
 
 
 ## 錯誤修正
