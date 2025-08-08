@@ -4,10 +4,10 @@ description: 了解 Adobe Experience Manager as a Cloud Service 中 Cloud Manage
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: cb841b9614ccf5c6bcfeef7524fd6306b3b1ac35
+source-git-commit: 3111e74e844fb37afa0c7d218c37014d32ad0a64
 workflow-type: tm+mt
-source-wordcount: '1414'
-ht-degree: 61%
+source-wordcount: '1337'
+ht-degree: 59%
 
 ---
 
@@ -53,7 +53,7 @@ AEM as a Cloud Service中的Cloud Manager 2025.8.0發行日期是2025年8月7日
 
      ![建立生產計畫時，在Solutions &amp; Add-Ons中選取Forms附加元件](/help/implementing/cloud-manager/release-notes/assets/forms-add-on-creating-production-program.png) *在計畫建立期間，您可以在Sites解決方案中選取Forms附加元件。*
 
-     ![編輯生產程式時的Forms附加元件](/help/implementing/cloud-manager/release-notes/assets/forms-add-on-editing-production-program.png) *在&#x200B;**編輯程式**&#x200B;中，選取Sites程式的Forms附加元件，然後執行管道以在環境中啟動它。*
+     ![編輯生產程式時的Forms附加元件](/help/implementing/cloud-manager/release-notes/assets/forms-add-on-editing-production-program.png) *在&#x200B;**編輯程式**中，選取Sites程式的Forms附加元件，然後執行管道以在環境中啟動它。*
 
      如需詳細資訊，請參閱[建立生產計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)。
 
@@ -115,8 +115,7 @@ Cloud Manager 現在支援新增名為&#x200B;**專用測試環境**&#x200B;的�
 
 ![Add Repository dialog box](/help/implementing/cloud-manager/release-notes/assets/azure-repo.png)
 
-如果您有興趣測試此新功能並分享您的意見回饋，請使用與您的 Adobe ID 關聯的電子郵件地址向 [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) 傳送電子郵件。請務必包含您要使用的 Git 平台以及您是否使用私人/公開或企業存放庫結構。
-
+<!-- If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) from your email address associated with your Adobe ID. Be sure to include which Git platform you want to use and whether you are on a private/public or enterprise repository structure. -->
 
 **關於 BYOG 的常見問題集**
 
@@ -134,7 +133,7 @@ Cloud Manager 現在支援新增名為&#x200B;**專用測試環境**&#x200B;的�
 
 請參閱[管理存取權杖](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)。
 
-如果您有興趣測試此新功能並分享意見回饋，請使用與您的 Adobe ID 相關聯的電子郵件寄送電子郵件至 [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com)。
+<!-- If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) from your email address associated with your Adobe ID. -->
 
 
 ### 新增 Edge Delivery 設定管道 {#add-eds-pipeline}
@@ -153,7 +152,7 @@ Cloud Manager 現在支援新增名為&#x200B;**專用測試環境**&#x200B;的�
 
   ![篩選器面板，顯示Edge傳遞和發佈傳遞的新傳遞型別](/help/implementing/cloud-manager/release-notes/assets/filter-delivery-type.png)
 
-![Add Edge Delivery pipeline in Add Pipeline drop-down list](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *從&#x200B;**計劃概觀**&#x200B;頁面的&#x200B;**管道**&#x200B;卡片新增 Edge Delivery 管道。*
+![Add Edge Delivery pipeline in Add Pipeline drop-down list](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *從&#x200B;**計劃概觀**頁面的&#x200B;**管道**卡片新增 Edge Delivery 管道。*
 
 ![Add Edge Delivery pipeline dialog box](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *新增 Edge Delivery 管道對話框。*
 
