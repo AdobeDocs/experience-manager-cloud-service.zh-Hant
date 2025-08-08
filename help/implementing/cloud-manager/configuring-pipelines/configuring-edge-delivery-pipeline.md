@@ -8,7 +8,7 @@ badge: label="私人測試版" type="Positive" url="/help/implementing/cloud-man
 hide: false
 index: false
 hidefromtoc: false
-source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
+source-git-commit: 62134c5b67d610f801c407e696e761ed05e02c87
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 4%
@@ -26,9 +26,12 @@ ht-degree: 4%
 >
 >在下列情況發生之前，無法設定Edge Delivery管道：
 >
->* 已建立包含一個Edge Delivery Services網站和一個對應網域的計畫。 否則，使用者介面中的&#x200B;**新增Edge Delivery管道**&#x200B;選項會顯示為停用，工具提示會說明缺少的需求。<!-- CMGR‑69680 -->
+>* 已建立包含一個Edge Delivery Services網站和一個對應網域的計畫。 否則，使用者介面中的&#x200B;**新增Edge Delivery管道**&#x200B;選項會顯示為停用，工具提示會說明缺少的需求。
 >* Git存放庫至少有一個分支。
 >* 生產和中繼環境隨即建立。
+
+<!-- CMGR‑69680 -->
+
 
 開始部署程式碼之前，請從[!UICONTROL Cloud Manager]設定您的管道設定。
 

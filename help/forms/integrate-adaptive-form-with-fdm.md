@@ -3,7 +3,7 @@ title: 如何將表單的表單資料模型(FDM)與最適化表單整合？
 description: 了解如何根據表單資料模型 (FDM) 建立表單。產生並編輯 FDM 中資料模型物件的樣本資料。
 feature: Edge Delivery Services, Adaptive Forms, Form Data Model
 role: Admin, User
-source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
+source-git-commit: 62134c5b67d610f801c407e696e761ed05e02c87
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 27%
@@ -42,8 +42,8 @@ ht-degree: 27%
 
    ![使用表單資料模型提交](/help/forms/assets/submit-uisng-fdm-fc.png)
 
-1. 選取建立的&#x200B;**[!UICONTROL 資料模型以提交]**&#x200B;組態。
-若要將附件提交至資料庫，請選取&#x200B;**提交表單附件**。 選取&#x200B;**提交記錄檔案**，記錄檔案(DoR)會儲存在資料庫中。
+1. 選取建立的&#x200B;**[!UICONTROL 資料模型以提交]**組態。
+若要將附件提交至資料庫，請選取**提交表單附件**。 選取&#x200B;**提交記錄檔案**，記錄檔案(DoR)會儲存在資料庫中。
 1. 按一下「**[!UICONTROL 儲存]**」以儲存「提交」設定。
 
 >[!TAB 核心元件]
@@ -54,10 +54,11 @@ ht-degree: 27%
 1. 按一下「指引容器」屬性 ![指引屬性](/help/forms/assets/configure-icon.svg) 圖示。此時會開啟「最適化表單容器」對話框。
 1. 按一下「**[!UICONTROL 提交]**」標籤。
 1. 從&#x200B;**[!UICONTROL 提交動作]**&#x200B;下拉式清單中，選取&#x200B;**[使用表單資料模型提交]**。
+
    ![使用表單資料模型提交](/help/forms/assets/submit-uisng-fdm-cc.png)
 
-1. 選取建立的&#x200B;**[!UICONTROL 資料模型以提交]**&#x200B;組態。
-若要將附件提交至資料庫，請選取&#x200B;**提交表單附件**。 選取&#x200B;**提交記錄檔案**，記錄檔案(DoR)會儲存在資料庫中。
+1. 選取建立的&#x200B;**[!UICONTROL 資料模型以提交]**組態。
+若要將附件提交至資料庫，請選取**提交表單附件**。 選取&#x200B;**提交記錄檔案**，記錄檔案(DoR)會儲存在資料庫中。
 1. 按一下「**[!UICONTROL 儲存]**」以儲存「提交」設定。
 
 >[!TAB 通用編輯器]
@@ -77,7 +78,7 @@ ht-degree: 27%
 1. 按一下&#x200B;**提交**&#x200B;索引標籤，然後選取&#x200B;**[!UICONTROL 使用表單資料模型提交]**。
 
    ![OneDrive GIF](/help/forms/assets/submit-uisng-fdm-ue.png)
-如果您選取&#x200B;**以原始名稱儲存附件**，則附件會使用其原始檔案名稱儲存在資料夾中。 您也可以將記錄檔案(DoR)儲存在Azure Blob儲存體中。
+如果您選取**以原始名稱儲存附件**，則附件會使用其原始檔案名稱儲存在資料夾中。 您也可以將記錄檔案(DoR)儲存在Azure Blob儲存體中。
 
 1. 選取您要儲存資料的「**[!UICONTROL 儲存空間設定]**」。
 1. 按一下&#x200B;**[!UICONTROL 儲存並關閉]**

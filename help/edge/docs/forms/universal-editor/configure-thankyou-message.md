@@ -4,7 +4,7 @@ description: 瞭解使用者如何顯示感謝訊息或重新導向至表單作�
 feature: Adaptive Forms, Edge Delivery Services
 role: User
 level: Intermediate
-source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
+source-git-commit: 62134c5b67d610f801c407e696e761ed05e02c87
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 0%
@@ -27,8 +27,8 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> * 如果您在通用編輯器介面中看不到&#x200B;**表單屬性**&#x200B;圖示，請在Extension Manager中啟用&#x200B;**編輯表單屬性**&#x200B;擴充功能。
-> * 請參閱[Extension Manager功能焦點](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)文章，瞭解如何在通用編輯器中啟用或停用擴充功能。
+>* 如果您在通用編輯器介面中看不到&#x200B;**表單屬性**&#x200B;圖示，請在Extension Manager中啟用&#x200B;**編輯表單屬性**&#x200B;擴充功能。
+>* 請參閱[Extension Manager功能焦點](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)文章，瞭解如何在通用編輯器中啟用或停用擴充功能。
 
 ## 如何設定重新導向或感謝訊息？
 
@@ -37,9 +37,9 @@ ht-degree: 0%
 若要設定重新導向頁面或感謝訊息：
 
 1. 開啟最適化表單進行編輯。
-2. 開啟內容樹狀結構並選取&#x200B;**[!UICONTROL 參考線容器]**。
-3. 按一下最適化表單容器屬性![最適化表單容器屬性](/help/forms/assets/configure-icon.svg)圖示。 用來設定資料模型的最適化表單容器對話方塊隨即開啟。
-4. 開啟&#x200B;**[!UICONTROL 提交]**&#x200B;標籤。 會顯示設定重新導向頁面或訊息的選項：
+1. 開啟內容樹狀結構並選取&#x200B;**[!UICONTROL 參考線容器]**。
+1. 按一下最適化表單容器屬性![最適化表單容器屬性](/help/forms/assets/configure-icon.svg)圖示。 用來設定資料模型的最適化表單容器對話方塊隨即開啟。
+1. 開啟&#x200B;**[!UICONTROL 提交]**&#x200B;標籤。 會顯示設定重新導向頁面或訊息的選項：
 
    ![指南容器的[提交]對話方塊以設定重新導向頁面或訊息](/help/forms/assets/adaptive-forms-core-components-redirect-page-or-thank-you-message.png)
 
