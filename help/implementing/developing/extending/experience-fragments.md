@@ -4,7 +4,7 @@ description: 擴充Adobe Experience Manager as a Cloud Service的體驗片段
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
 feature: Developing, Experience Fragments
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
 workflow-type: tm+mt
 source-wordcount: '1657'
 ht-degree: 0%
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 瀏覽器提供此轉譯。 不過，其主要用途是允許其他應用程式（例如協力廠商網頁應用程式、自訂行動實施）僅使用URL直接存取體驗片段的內容。
 
-純HTML轉譯會將通訊協定、主機和內容路徑新增至以下路徑：
+純HTML轉譯會將通訊協定、主機和內容路徑新增至路徑：
 
 * 型別： `src`、`href`或`action`
 
@@ -64,7 +64,7 @@ HTML轉譯是使用Sling重寫程式管道產生的。 管道定義於`/libs/exp
    * 最終轉譯中允許的HTML標籤清單。
    * 預設允許下列標籤（不需要設定）： html、head、title、body、img、p、span、ul、li、a、b、i、em、strong、h1、h2、h3、h4、h5、h6、br、noscript、div、link和script
 
-Adobe建議使用覆蓋來設定重寫程式。 檢視AEM as a Cloud Service[&#128279;](/help/implementing/developing/introduction/overlays.md)中的覆蓋。
+Adobe建議使用覆蓋來設定重寫程式。 檢視AEM as a Cloud Service[中的](/help/implementing/developing/introduction/overlays.md)覆蓋。
 
 ## 體驗片段的範本 {#templates-for-experience-fragments}
 
@@ -74,12 +74,14 @@ Adobe建議使用覆蓋來設定重寫程式。 檢視AEM as a Cloud Service[&#1
 >
 >體驗片段只能用於以可編輯範本為基礎的頁面。
 
-<!-- >***Only*** [editable templates](/help/sites-developing/page-templates-editable.md) are supported for Experience Fragments.
+<!-- 
+***Only*** [editable templates](/help/sites-developing/page-templates-editable.md) are supported for Experience Fragments.
 -->
 
 為體驗片段開發新範本時，您可以遵循可編輯範本的標準做法。
 
-<!-- When developing a new template for Experience Fragments you can follow the standard practices for an [editable template](/help/sites-developing/page-templates-editable.md).
+<!-- 
+When developing a new template for Experience Fragments you can follow the standard practices for an [editable template](/help/sites-developing/page-templates-editable.md).
 -->
 
 若要建立&#x200B;**建立體驗片段**&#x200B;精靈偵測到的體驗片段範本，您必須遵循下列其中一個規則集：
@@ -87,11 +89,9 @@ Adobe建議使用覆蓋來設定重寫程式。 檢視AEM as a Cloud Service[&#1
 1. 兩者：
 
    1. 範本的資源型別（初始節點）必須繼承自：
-
       `cq/experience-fragments/components/xfpage`
 
    1. 範本的名稱必須以下列專案開頭：
-
       `experience-fragments`
 此模式可讓使用者在/content/experience-fragments中建立體驗片段，因為此資料夾的`cq:allowedTemplates`屬性包含名稱以`experience-fragment`開頭的所有範本。 客戶可以更新此屬性以包含他們自己的命名配置或範本位置。
 
@@ -101,7 +101,8 @@ Adobe建議使用覆蓋來設定重寫程式。 檢視AEM as a Cloud Service[&#1
 1. Add the template details manually in `cq:allowedTemplates` on the `/content/experience-fragment` node.
 -->
 
-<!-- >[!NOTE]
+<!-- 
+>[!NOTE]
 >
 >[Allowed templates](/help/sites-authoring/experience-fragments.md#configuring-allowed-templates) can be configured in the Experience Fragments console.
 -->
@@ -138,25 +139,25 @@ The only additional configuration is to ensure that the components are [allowed 
 * 新增元件，
 * 然後以HTML格式或JSON格式將其匯出為Adobe Target選件。
 
-此功能可在AEM的作者執行個體上啟用。 它需要有效的Adobe Target設定，以及Link Externalizer設定。
+此功能可在AEM的作者例項上啟用。 它需要有效的Adobe Target設定，以及Link Externalizer設定。
 
 <!--
 This feature can be [enabled on an author instance of AEM](/help/sites-administering/experience-fragments-target.md#Prerequisites). It requires a valid Adobe Target Configuration, and configurations for the Link Externalizer.
 -->
 
-Link Externalizer可用來判斷建立Target選件的HTML版本時需要正確的URL，然後傳送至Adobe Target。 此程式是必要的，因為Adobe Target要求可以公開存取TargetHTML選件內的所有連結。 這表示連結參考的任何資源以及體驗片段本身都必須先發佈，才能使用。
+Link Externalizer是用來判斷建立Target選件的HTML版本時所需的URL，然後傳送至Adobe Target。 此程式為必要項，因為Adobe Target要求Target HTML選件內的所有連結皆可公開存取。 這表示連結參考的任何資源以及體驗片段本身都必須先發佈，才能使用。
 
-根據預設，當您建構TargetHTML選件時，會傳送要求給AEM中的自訂Sling選取器。 此選取器稱為`.nocloudconfigs.html`。 顧名思義，這會建立體驗片段的純HTML轉譯，但不包含雲端設定（這會是多餘的資訊）。
+根據預設，當您建構Target HTML選件時，會傳送要求給AEM中的自訂Sling選取器。 此選取器稱為`.nocloudconfigs.html`。 顧名思義，它會建立簡單的HTML體驗片段轉譯，但不包含雲端設定（這會是多餘資訊）。
 
 產生HTML頁面後，Sling重寫程式管道會修改為輸出：
 
 1. `html`、`head`和`body`元素已取代為`div`元素。 已移除`meta`、`noscript`和`title`元素（它們是原始`head`元素的子元素，在被`div`元素取代時不會考慮）。
 
-   完成此程式是為了確保Target活動中可包含HTMLTarget選件。
+   此程式旨在確保HTML Target選件可包含在Target活動中。
 
-2. AEM會修改HTML中出現的任何內部連結，使其指向已發佈的資源。
+2. AEM會修改HTML中的任何內部連結，使其指向已發佈的資源。
 
-   若要決定要修改的連結，AEM會對HTML元素的屬性遵循此模式：
+   若要判斷要修改的連結，AEM會遵循HTML元素屬性的此模式：
 
    1. `src`屬性
    2. `href`屬性
@@ -165,7 +166,7 @@ Link Externalizer可用來判斷建立Target選件的HTML版本時需要正確�
 
    >[!NOTE]
    >
-   >HTML中的內部連結為相對連結，但自訂元件在HTML中提供完整URL時可能會發生這種情況。 依預設，AEM會忽略這些完整的URL且不會進行任何修改。
+   >HTML中的內部連結為相對連結，但在某些情況下，自訂元件可能會在HTML中提供完整的URL。 依預設，AEM會忽略這些完整的URL且不會進行任何修改。
 
    這些屬性中的連結會透過AEM Link Externalizer `publishLink()`執行，以重新建立URL，就像是在已發佈的執行個體上一樣，因此是公開可用的。
 
@@ -174,11 +175,11 @@ Link Externalizer可用來判斷建立Target選件的HTML版本時需要正確�
 * Sling對應僅在發佈執行個體上可用
 * Dispatcher重新導向
 
-對於這些使用案例，AEM會提供連結重寫器提供者介面。
+對於這些使用案例，AEM提供連結重寫器提供者介面。
 
 ### 連結重寫程式提供者介面 {#link-rewriter-provider-interface}
 
-對於較複雜的情況，[預設](#default-link-rewriting)未涵蓋，AEM會提供連結重寫程式提供者介面。 此介面是您可在套件組合中實作的`ConsumerType`介面，可作為服務使用。 它會繞過AEM對HTML選件的內部連結執行的修改，如從體驗片段轉譯。 此介面可讓您自訂重寫內部HTML連結的程式，以符合您的業務需求。
+對於較複雜的情況，[預設](#default-link-rewriting)未涵蓋，AEM會提供連結重寫程式提供者介面。 此介面是您可在套件組合中實作的`ConsumerType`介面，可作為服務使用。 它會繞過AEM對HTML選件的內部連結（從體驗片段轉譯）執行的修改。 此介面可讓您自訂重寫內部HTML連結的程式，以符合您的業務需求。
 
 實作此介面作為服務的使用案例範例包括：
 
@@ -188,7 +189,7 @@ Link Externalizer可用來判斷建立Target選件的HTML版本時需要正確�
 
 >[!NOTE]
 >
->此介面只會處理來自已產生Target選件的內部HTML連結。
+>此介面只會處理來自已產生HTML選件的內部Target連結。
 
 連結重寫程式提供者介面( `ExperienceFragmentLinkRewriterProvider`)如下：
 
@@ -279,7 +280,7 @@ public boolean shouldRewrite(ExperienceFragmentVariation experienceFragment) {
 
 #### rewriteLink {#rewritelink}
 
-針對受重寫程式影響的體驗片段變數，它會繼續讓服務處理連結重寫。 每當內部HTML中出現連結時，就會叫用下列方法：
+針對受重寫程式影響的體驗片段變數，它會繼續讓服務處理連結重寫。 每當在內部HTML中遇到連結時，就會叫用下列方法：
 
 `rewriteLink(String link, String tag, String attribute)`
 
