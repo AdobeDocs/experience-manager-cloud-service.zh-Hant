@@ -5,16 +5,16 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: c6ba1c2bcf7db8c406350c81c51639dc5bc8843f
+source-git-commit: bda1ef43d452222036e9df20b6f3acee7bec8855
 workflow-type: tm+mt
-source-wordcount: '2567'
+source-wordcount: '2724'
 ht-degree: 2%
 
 ---
 
 # 管理內容片段 {#managing-content-fragments}
 
-瞭解如何從專用的[內容片段主控台](#content-fragments-console)和[內容片段編輯器](/help/sites-cloud/administering/content-fragments/authoring.md#content-fragment-editor)，在Adobe Experience Manager (AEM) as a Cloud Service中管理您的&#x200B;**內容片段**。 這些內容片段可用作Headless內容的基礎，或用於編寫頁面。
+瞭解如何從專用的&#x200B;**內容片段主控台**&#x200B;和[內容片段編輯器](#content-fragments-console)，在Adobe Experience Manager (AEM) as a Cloud Service中管理您的[內容片段](/help/sites-cloud/administering/content-fragments/authoring.md#content-fragment-editor)。 這些內容片段可用作Headless內容的基礎，或用於編寫頁面。
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ ht-degree: 2%
 >
 >可以使用內容片段：
 >
->* 使用內容片段搭配GraphQL[&#128279;](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)的Headless內容傳遞，
+>* 使用內容片段搭配GraphQL[的](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)Headless內容傳遞，
 >* 編寫頁面時；請參閱[使用內容片段編寫頁面](/help/sites-cloud/authoring/fragments/content-fragments.md)。
 
 >[!NOTE]
@@ -139,7 +139,7 @@ ht-degree: 2%
 
 在主控台中，您可以直接或在選取特定片段後使用一系列動作：
 
-* 可以從主控台[&#128279;](#actions-unselected)直接使用各種動作
+* 可以從主控台[直接使用各種動作](#actions-unselected)
 * 您可以[選取一或多個內容片段以顯示適當的動作](#actions-selected-content-fragment)
 
 ### 動作（未選取） {#actions-unselected}
@@ -168,7 +168,7 @@ ht-degree: 2%
 * **[在新編輯器中開啟](#editing-the-content-of-your-fragment)**
 * **[發佈](#publishing-and-previewing-a-fragment)** (和&#x200B;**[取消發佈](#unpublishing-a-fragment)**)
 * **[管理標籤](#manage-tags)**
-* **複製**
+* **[複製](#copy-a-content-fragment)**
 * **[取代](#find-and-replace)**
 * **移動**
 * **重新命名**
@@ -243,6 +243,152 @@ ht-degree: 2%
 1. 片段編輯器隨即開啟。 選取您所需的&#x200B;**變數**，並視需要進行變更（會自動儲存）：
 
    ![片段編輯器](assets/cf-managing-editor.png)
+
+## 複製內容片段 {#copy-a-content-fragment}
+
+**副本**&#x200B;會在其位置建立所選片段的副本。
+
+* 在&#x200B;**複製**&#x200B;動作中，您可以選取是否&#x200B;**複製具有子系** （參考的片段）。 這可讓您複製所選的內容片段和所有參考的片段。 AEM：
+
+   * 在其位置建立所選內容片段的副本。
+   * 建立所選片段參考的所有片段復本；這些片段會複製到與原始參考片段相同的位置。
+
+* 所選片段的副本將引用所引用片段的副本。
+
+* 會製作深層副本；因此，如果參考的內容片段也參考片段，也會復製片段。
+
+* **複製**&#x200B;動作不會影響其他參照的內容，例如資產或影像。 參考（內容參考）會作為新片段的一部分複製，而不是資產/影像內容本身。
+
+因此，如果我們從開始：
+
+```xml
+FolderA 
+    FragmentA (inside FolderA)
+    | 
+    |___FolderB/FragmentB (referenced by FragmentA)
+
+FolderB
+   FragmentB
+```
+
+將FragmentA複製到FolderC會導致：
+
+```xml
+FolderA 
+    FragmentA (inside FolderA)
+    | 
+    |___FolderB/FragmentB (referenced by FragmentA)
+
+FolderB
+    FragmentB
+    Copy_of_FragmentB
+
+FolderC
+    Copy_of_FragmentA
+    | 
+    |___FolderB/Copy_of_FragmentB (referenced by Copy_of_FragmentA)
+```
+
+<!-- CQDOC-22785 - will replace above text -->
+
+<!--
+**Copy** creates a copy of the selected fragment at its location.
+
+* In the **Copy** action you can select whether to **Copy also referenced content fragments**. This allows you to copy both the selected Content Fragment and all referenced fragments. AEM:
+
+  * Creates a copy of the selected Content Fragment at its location.
+  * Creates copies of all fragments that are referenced by the selected fragment.
+
+    The [locations that the referenced fragments are copied to](#locations-that-the-referenced-fragments-are-copied-to) depends on the option you select:
+
+    * **Copy to the selected folder**
+      When selected, the referenced fragments are copied to the same location as the original selected fragment. 
+
+    * **Copy to their original locations**
+      The referenced fragments are copied to the same location as the original referenced fragment. This is the default, and will be used when no option is selected.
+
+* The copy of the selected fragment will reference the copies of the referenced fragments.
+
+* A deep copy is made; so if a referenced Content Fragment also references fragments, these are copied as well.
+
+* The **Copy** action does not affect other referenced content, such as assets or images. The reference (Content Reference) is copied as part of the new fragment, but not the asset/image content itself.
+
+### Locations that the referenced fragments are copied to {#locations-that-the-referenced-fragments-are-copied-to}
+
+When copying Content Fragments you can specify where referenced fragments should be copied to with **Copy also referenced content fragments** and the related options:
+
+![Copy fragments](/help/sites-cloud/administering/content-fragments/assets/cf-managing-copy.png)
+
+#### Copy to their original locations {#copy-to-their-original-locations}
+
+When you select **Copy to their original locations**, the referenced fragments are copied to the same location as the original referenced fragment. This is also the default action when no selection is made.
+
+So, if we start with:
+
+```xml
+FolderA 
+    FragmentA (inside FolderA)
+    | 
+    |___FolderB/FragmentB (referenced by FragmentA)
+
+FolderB
+   FragmentB
+```
+
+Copying FragmentA to FolderC, would result in:
+
+```xml
+FolderA 
+    FragmentA (inside FolderA)
+    | 
+    |___FolderB/FragmentB (referenced by FragmentA)
+
+FolderB
+    FragmentB
+    Copy_of_FragmentB
+
+FolderC
+    Copy_of_FragmentA
+    | 
+    |___FolderB/Copy_of_FragmentB (referenced by Copy_of_FragmentA)
+```
+
+#### Copy to the selected folder {#copy-to-the-selected-folder}
+
+When selected, the referenced fragments are copied to the same location as the original selected fragment.
+
+So, if we start with:
+
+```xml
+FolderA 
+    FragmentA (inside FolderA)
+    | 
+    |___FolderB/FragmentB (referenced by FragmentA)
+
+
+FolderB
+   FragmentB
+```
+
+Copying FragmentA to FolderC, would result in:
+
+```xml
+FolderA 
+    FragmentA (inside FolderA) 
+    | 
+    |___FolderB/FragmentB (referenced by FragmentA) 
+
+FolderB 
+    FragmentB
+
+
+FolderC
+   Copy_of_FragmentA
+   | 
+   |___./Copy_of_FragmentB (referenced by FragmentA)
+   Copy_of_FragmentB
+```
+-->
 
 ## 檢視和管理標籤 {#manage-tags}
 
@@ -394,8 +540,8 @@ ht-degree: 2%
 
 可以從以下位置存取語言副本的詳細資料：
 
-* [內容片段主控台](#information-content-fragments)的&#x200B;**語言**&#x200B;資料行
-* 內容片段編輯器[&#128279;](/help/sites-cloud/administering/content-fragments/authoring.md#view-language-copies)的語言副本索引標籤
+* **內容片段主控台**&#x200B;的[語言](#information-content-fragments)資料行
+* 內容片段編輯器[的](/help/sites-cloud/administering/content-fragments/authoring.md#view-language-copies)語言副本索引標籤
 
 圖示會指出內容片段的地區設定，以及與內容片段相關的地區設定/語言副本總數。 例如，從主控台：
 
