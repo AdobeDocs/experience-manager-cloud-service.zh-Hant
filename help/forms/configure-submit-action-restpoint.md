@@ -115,13 +115,13 @@ AEM as a Cloud Service提供多種立即可用的提交動作，用於處理表�
 
    您也可以「**[!UICONTROL 啟用 POST 要求]**」並提供用於發佈要求的 URL。若要將資料提交到託管表單的 AEM 伺服器，請使用對應至 AEM 伺服器根路徑的相對路徑。例如 `/content/forms/af/SampleForm.html`。若要將資料提交到任何其他伺服器，請使用絕對路徑。
 
-+++
+   +++
 
    +++設定
 
    此選項可讓您新增透過AEM的設定瀏覽器管理的預先定義HTTP設定。 您可以選取為服務Rest端點驗證型別和內容型別建立的組態。 若要進一步瞭解驗證型別和內容型別，請造訪[設定資料來源](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint)
 
-+++
+   +++
 
 1. 按一下&#x200B;**[!UICONTROL 「完成」]**。
 
@@ -130,7 +130,7 @@ AEM as a Cloud Service提供多種立即可用的提交動作，用於處理表�
 若要根據在Universal Editor中編寫的最適化表單的Swagger Open API規格設定提交動作，請執行下列動作：
 
 1. 開啟最適化表單進行編輯。
-1. 按一下編輯器上的&#x200B;**編輯表單屬性**擴充功能。
+1. 按一下編輯器上的&#x200B;**編輯表單屬性**&#x200B;擴充功能。
 **表單屬性**&#x200B;對話方塊就會顯示。
    >[!NOTE]
    >
@@ -172,13 +172,13 @@ AEM as a Cloud Service提供多種立即可用的提交動作，用於處理表�
 
    您也可以「**[!UICONTROL 啟用 POST 要求]**」並提供用於發佈要求的 URL。若要將資料提交到託管表單的 AEM 伺服器，請使用對應至 AEM 伺服器根路徑的相對路徑。例如 `/content/forms/af/SampleForm.html`。若要將資料提交到任何其他伺服器，請使用絕對路徑。
 
-+++
+   +++
 
    +++設定
 
    此選項可讓您新增透過AEM的設定瀏覽器管理的預先定義HTTP設定。 您可以選取為服務Rest端點驗證型別和內容型別建立的組態。 若要進一步瞭解驗證型別和內容型別，請造訪[設定資料來源](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint)
 
-+++
+   +++
 
 1. 按一下&#x200B;**[!UICONTROL 儲存並關閉]**。
 
