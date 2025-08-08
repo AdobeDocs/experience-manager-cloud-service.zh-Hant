@@ -24,7 +24,7 @@ hidefromtoc: yes
 <!-- 
 >[!NOTE]
 >
->This feature to create a Dynamic Media company alias account is in the Prerelease Channel for January 2022. See [Prerelease Channel documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) for information on how to enable the feature for your environment. The feature is generally available in the February 2022 release. 
+>This feature to create a Dynamic Media company alias account is in the Prerelease Channel for January 2022. See [Prerelease Channel documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hant#enable-prerelease) for information on how to enable the feature for your environment. The feature is generally available in the February 2022 release. 
 -->
 
 Dynamic Media URL和檢視器內嵌程式碼包含您的公司帳戶名稱。 此帳戶名稱是在布建Dynamic Media時建立的。 在某些情況下，您的企業可能會經歷收購或重新品牌化，或者您只想使用更令人難忘的名稱。 在這種情況下，在開箱即用的所有URL和檢視器內嵌程式碼中，手動更新您的公司帳戶名稱並不容易。 此外，您也可能會影響現有的Dynamic Media存放庫或即時內容。 若要解決此問題，您可以設定Dynamic Media公司別名帳戶。
