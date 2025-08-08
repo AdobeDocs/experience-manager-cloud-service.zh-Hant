@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: e9aef80c162d681894cff53f65bd9f0bc7afd948
+source-git-commit: 1cb24ca4aabf3ccd12c514cc9d74ad0c1cc8e2fb
 workflow-type: tm+mt
-source-wordcount: '2235'
+source-wordcount: '2271'
 ht-degree: 49%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 49%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440931?quality=12&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -68,7 +68,6 @@ AEM Assets現在可讓您[設定在「資產瀏覽」頁面的「卡片檢視」
 
 您現在也可以選擇在資料夾層級停用AI產生的中繼資料。
 
-
 ### 全新的 Content Hub 功能 {#new-features-content-hub}
 
 **在Content Hub中增強品牌彈性**
@@ -89,7 +88,7 @@ Content Hub現在於篩選器內包含&#x200B;**全部顯示**&#x200B;選項，�
 
 享受自動上傳新檔案和資料夾、增強的檔案作業、更聰明的資產探索，以及與AEM無縫整合，讓內容管理更快速、更清晰、更直覺。
 
-如需完整的功能清單，請參閱[案頭應用程式發行說明](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-desktop-app/using/release-notes)。
+如需完整的功能清單，請參閱[案頭應用程式發行說明](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/release-notes)。
 
 ### Dynamic Media中的新功能搭配OpenAPI功能 {#new-features-dynamic-media-with-openapi}
 
@@ -181,6 +180,10 @@ API整合工具可讓表單作者建立動態、智慧型的表單，這些表�
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
+### 權限管理的主體視圖 {#principal-view}
+
+AEM 推出使用者和群組的權限管理。主要功能與傳統UI相同，但更加方便使用者且更有效率。 如需進一步資訊，請參閱[專屬文章](/help/security/touch-ui-principal-view.md)。
+
 ### 更新的棄用流程 {#updated-deprecation-process}
 
 Adobe 會定期審查功能、資料庫、API 和設定，確保其符合效能、安全性和價值標準。當功能不再符合這些標準時，會標記為棄用，並且必須在指定的移除日期之前停止使用。於此日期之前，Adobe 會透過電子郵件通知提醒客戶，並告知繼續或部署新版本之前需要在 Cloud Manager 中採取的動作。若未採取必要的動作，可能會導致無法升級至 AEM 的新版本，進而對安全性、效能、可靠性和可用性產生潛在影響。
@@ -222,7 +225,7 @@ OSGi 屬性：
 
 ### Java 11 執行階段棄用 {#java11-runtime-deprecation}
 
-**Java 11執行階段* — 現已棄用，且大部分環境已升級至效能更高的&#x200B;**&#x200B;Java 21執行階段**。
+**Java 11執行階段* — 現已棄用，且大部分環境已升級至效能更高的&#x200B;**Java 21執行階段**。
 
 若您的環境因相依性不支援而無法升級 (請參閱 [Java 21 執行階段要求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements))，您應已收到一封 Adobe 傳送的電子郵件，其中包含具體的後續步驟。請確保在 **2025 年 8 月 28 日**&#x200B;前完成所有必要的更新，您的環境方能無中斷地進行升級。
 
