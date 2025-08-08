@@ -1,13 +1,13 @@
 ---
-Title: How to integrate Adaptive Form to a SharePoint Document Library?
+title: 如何將最適化表單整合至SharePoint檔案庫？
 Description: This article explains how to send data from your Adaptive Form to a SharePoint  Document library when you submit the form.
 keywords: 如何連線SharePoint檔案庫取得最適化表單、提交至SharePoint、建立SharePoint檔案庫設定、在最適化表單中使用提交至SharePoint提交動作、AEM Forms資料模型SharePoint檔案庫、Forms資料模型SharePoint檔案庫、將Forms資料模型整合至SharePoint檔案庫
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 role: User, Developer
 exl-id: a00b4a93-2324-4c2a-824f-49146dc057b0
-source-git-commit: dabf8029577c5fb6bb5eebdbf10d77f3d4d95a5d
+source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
 workflow-type: tm+mt
-source-wordcount: '981'
+source-wordcount: '991'
 ht-degree: 28%
 
 ---
@@ -110,7 +110,7 @@ ht-degree: 28%
 執行以下步驟，使用在Universal Editor中編寫的最適化表單中的SharePoint檔案庫儲存設定，如下所示：
 
 1. 開啟最適化表單進行編輯。
-1. 按一下編輯器上的&#x200B;**編輯表單屬性**&#x200B;擴充功能。
+1. 按一下編輯器上的&#x200B;**編輯表單屬性**擴充功能。
 **表單屬性**&#x200B;對話方塊就會顯示。
 
    >[!NOTE]

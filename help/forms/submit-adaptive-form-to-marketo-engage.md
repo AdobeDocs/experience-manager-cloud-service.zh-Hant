@@ -1,13 +1,13 @@
 ---
-Title: How to configure submit action to Marketo Engage for forms?
-Description: Learn how to configure the submit action of Adaptive Form to send data to Marketo Engage.
-Keywords: Submit data to Marketo engage, Configure submit action as Submit to Marketo Engage
-Feature: Adaptive Forms, Form Data Model
-Role: User, Developer
+title: 如何設定提交動作以提交至Marketo Engage的表單？
+description: 瞭解如何設定最適化表單的提交動作，以將資料傳送至Marketo Engage。
+keywords: 提交資料至Marketo engage，將提交動作設定為提交至Marketo Engage
+feature: Adaptive Forms, Form Data Model
+role: User, Developer
 exl-id: 0683564b-1ac4-42b4-bc08-101c4fdef286
-source-git-commit: dabf8029577c5fb6bb5eebdbf10d77f3d4d95a5d
+source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '772'
 ht-degree: 4%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 4%
 
 ![工作流程](/help/forms/assets/workflow-marketo-3.png)
 
-最適化Forms編輯器提供&#x200B;**提交至Marketo Engage**&#x200B;提交動作，以將最適化Forms資料傳送至Adobe Marketo Engage進行處理。 您可以設定現有的最適化表單，在提交時提交資料至[Adobe Marketo Engage](https://experienceleague.adobe.com/zh-hant/docs/marketo/using/home)。
+最適化Forms編輯器提供&#x200B;**提交至Marketo Engage**&#x200B;提交動作，以將最適化Forms資料傳送至Adobe Marketo Engage進行處理。 您可以設定現有的最適化表單，在提交時提交資料至[Adobe Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home)。
 
 提供多種現成可用的提交動作，用於處理表單提交。 您可以在[最適化表單提交動作](/help/forms/configure-submit-actions-core-components.md)文章中進一步瞭解這些選項。
 
@@ -72,7 +72,7 @@ ht-degree: 4%
 您可以設定在Universal Editor中編寫的最適化表單的提交動作，以將資料提交至Adobe Marketo Engage。 若要設定向Marketo Engage提交動作，請執行以下步驟：
 
 1. 開啟最適化表單進行編輯。
-1. 按一下編輯器上的&#x200B;**編輯表單屬性**&#x200B;擴充功能。
+1. 按一下編輯器上的&#x200B;**編輯表單屬性**擴充功能。
 **表單屬性**&#x200B;對話方塊就會顯示。
 
    >[!NOTE]
@@ -97,7 +97,7 @@ ht-degree: 4%
 
 ## 下一步
 
-您也可以將最適化表單與[Munchkin資料庫](https://experienceleague.adobe.com/zh-hant/docs/marketo/using/product-docs/administration/setup/munchkin)連線，以追蹤造訪次數、點按次數和表單提交次數。
+您也可以將最適化表單與[Munchkin資料庫](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/setup/munchkin)連線，以追蹤造訪次數、點按次數和表單提交次數。
 
 ## 相關的文章
 

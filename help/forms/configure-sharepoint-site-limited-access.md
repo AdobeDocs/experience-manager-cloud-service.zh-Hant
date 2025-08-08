@@ -1,20 +1,20 @@
 ---
-Title: How to configure a SharePoint Site with limited access using authorization scope?
-Description: Learn how to configure SharePoint Site with limited access using the authorization scope.
+title: 如何使用授權範圍設定具有有限存取權的SharePoint網站？
+description: 瞭解如何使用授權範圍以有限存取權設定SharePoint網站。
 keywords: 如何設定具有有限存取權的SharePoint網站？、設定具有有限存取權的SharePoint、使用授權範圍來限制SharePoint網站的存取權。
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+exl-id: 3230bab2-c1aa-409d-9f01-c42cf88b1135
+source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
 workflow-type: tm+mt
-source-wordcount: '817'
+source-wordcount: '842'
 ht-degree: 13%
 
 ---
 
-
 <span class="preview">此功能可在早期採用者方案下使用。 您可以從您的官方電子郵件ID寫信到aem-forms-ea@adobe.com ，以加入率先採用者計畫並請求存取該功能。</span>
 
-# 使用授權範圍設定具有有限存取權限的 SharePoint 網站
+# 使用授權範圍設定 SharePoint 網站，使其擁有有限的存取權
 
 有限或受限存取的目的是透過允許管理員控制使用者對特定SharePoint網站或一組SharePoint網站的存取來增強安全管理。 當您需要授予使用者或群組存取特定網站的許可權，而不允許他們檢視任何其他不允許的SharePoint網站時，許可權層級就十分實用。
 
@@ -41,11 +41,11 @@ ht-degree: 13%
 
 ### 在Azure入口網站中建立具有有限許可權的應用程式
 
-在Microsoft的Graph API中，以`Sites.Selected`許可權範圍在[Microsoft Azure入口網站](https://portal.azure.com/#home)中建立應用程式。
+在Microsoft的Graph API中，以[許可權範圍在](https://portal.azure.com/#home)Microsoft Azure入口網站`Sites.Selected`中建立應用程式。
 
 ![SharePoint選取的網站](/help/forms/assets/sharepoint-selected-site.png)
 
-如需如何擷取`OAuth URL`之`Client ID`、`Client Secret`和`Tenant ID`的相關資訊，請參閱[Microsoft®檔案](https://learn.microsoft.com/en-us/graph/auth-register-app-v2)。
+如需如何擷取`Client ID`之`Client Secret`、`Tenant ID`和`OAuth URL`的相關資訊，請參閱[Microsoft®檔案](https://learn.microsoft.com/en-us/graph/auth-register-app-v2)。
 * 在 Microsoft® Azure 入口網站中，將重新導向 URI 新增為 `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`。以作者執行個體的 URL 取代 `[author-instance]`。
 * 在Microsoft的Graph API中新增`offline_access`和`Sites.Selected`許可權範圍，以提供受限制的網站存取權。
 * 針對OAuth URL： `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`。 從 Microsoft® Azure 入口網站，以應用程式的 `tenant-id` 取代 `<tenant-id>`。
@@ -58,7 +58,7 @@ ht-degree: 13%
 
 若要提供對Microsoft SharePoint網站的有限存取，必須正確設定授權範圍。 若要設定授權範圍並將AEM Forms連線至您的Microsoft® SharePoint儲存空間：
 
-1. 前往您的&#x200B;**AEM Forms Author**&#x200B;執行個體> **[!UICONTROL 工具]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Microsoft® SharePoint]**。
+1. 前往您的&#x200B;**AEM Forms作者**&#x200B;執行個體> **[!UICONTROL 工具]** > **[!UICONTROL 雲端服務]** > **[!UICONTROL Microsoft® SharePoint]**。
 1. 選取&#x200B;**[!UICONTROL Microsoft® SharePoint]**&#x200B;後，系統會將您重新導向至&#x200B;**[!UICONTROL SharePoint瀏覽器]**。
 1. 選取一個&#x200B;**設定容器**。設定會儲存在選取的設定容器中。
 1. 從下拉式清單中按一下&#x200B;**[!UICONTROL 建立]** > **[!UICONTROL SharePoint檔案庫]**。 此時會顯示 SharePoint 設定精靈。
@@ -73,7 +73,7 @@ ht-degree: 13%
    >
    > **用戶端密碼**&#x200B;欄位為必填或選用，取決於您的 Azure Active Directory 應用程式設定。如果您的應用程式設定為使用用戶端密碼，就必須提供用戶端密碼。
 
-1. 在`Authorization Scope`欄位中新增`offline_access Sites.Selected`。 當您在`Authorization Scope`文字方塊欄位中新增`offline_access Sites.Selected`範圍時，`SharePoint Site ID`文字方塊會顯示在畫面上。
+1. 在`offline_access Sites.Selected`欄位中新增`Authorization Scope`。 當您在`offline_access Sites.Selected`文字方塊欄位中新增`Authorization Scope`範圍時，`SharePoint Site ID`文字方塊會顯示在畫面上。
 
 1. 指定SharePoint網站ID。 若要瞭解如何擷取SharePoint網站ID，請參閱[額外位元組](#extra-bytes)區段。
 
@@ -84,9 +84,9 @@ ht-degree: 13%
    >[!NOTE]
    >
    >* 依預設，`forms-ootb-storage-adaptive-forms-submission`存在於選取的SharePoint網站。
-   >* 按一下&#x200B;**建立資料夾**，將資料夾建立為`forms-ootb-storage-adaptive-forms-submission` (如果尚未存在於所選SharePoint網站的`Documents`資料庫中)。
+   >* 按一下`forms-ootb-storage-adaptive-forms-submission`建立資料夾`Documents`，將資料夾建立為&#x200B;**(如果尚未存在於所選SharePoint網站的**&#x200B;資料庫中)。
 
-現在，您可以在最適化表單[&#128279;](/help/forms/configure-submit-action-sharepoint.md#use-sharepoint-document-library-configuration-in-an-adaptive-form-use-sharepoint-configuartion-in-af)中針對提交動作使用此SharePoint Sites設定。
+現在，您可以在最適化表單[中針對提交動作使用此](/help/forms/configure-submit-action-sharepoint.md#use-sharepoint-document-library-configuration-in-an-adaptive-form-use-sharepoint-configuartion-in-af)SharePoint Sites設定。
 
 ## 額外的位元組
 

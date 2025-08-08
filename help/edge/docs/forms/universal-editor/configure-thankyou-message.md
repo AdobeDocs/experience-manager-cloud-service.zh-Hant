@@ -1,10 +1,10 @@
 ---
-title: 如何設定重新導向頁面或感謝訊息？
+title: 如何設定重新導向頁面或感謝訊息
 description: 瞭解使用者如何顯示感謝訊息或重新導向至表單作者在建立表單時可設定的網頁。
 feature: Adaptive Forms, Edge Delivery Services
 role: User
 level: Intermediate
-source-git-commit: 62134c5b67d610f801c407e696e761ed05e02c87
+source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 0%

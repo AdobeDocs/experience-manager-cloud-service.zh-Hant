@@ -1,14 +1,14 @@
 ---
-Title: How to integrate AEM workflow with an Adaptive Form?
-Description: Explore the process of automated workflow initiation with AEM Forms Submit Action.
+title: 如何將AEM工作流程與最適化表單整合？
+description: 探索使用AEM Forms提交動作自動化工作流程初始化的程式。
 keywords: AEM工作流程，整合最適化表單與AEM工作流程，叫用AEM工作流程提交動作
 feature: Adaptive Forms, Core Components
 exl-id: b7788e3d-acd8-4867-b232-f9767cf6b2f5
 role: User, Developer
-source-git-commit: dc9fc0c7d886d976f9b0b9daa955f98402341527
+source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
 workflow-type: tm+mt
-source-wordcount: '1413'
-ht-degree: 61%
+source-wordcount: '1434'
+ht-degree: 60%
 
 ---
 
@@ -105,7 +105,7 @@ Before using the **[!UICONTROL Invoke an AEM Workflow]** Submit Action configure
 若要針對在Universal Editor中編寫的最適化表單設定具有[AEM工作流程](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=zh-Hant#extending-aem)的自動化程式，請執行下列步驟：
 
 1. 開啟最適化表單進行編輯。
-1. 按一下編輯器上的&#x200B;**編輯表單屬性**&#x200B;擴充功能。
+1. 按一下編輯器上的&#x200B;**編輯表單屬性**擴充功能。
 **表單屬性**&#x200B;對話方塊就會顯示。
 
    >[!NOTE]

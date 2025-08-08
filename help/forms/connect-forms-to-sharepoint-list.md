@@ -1,14 +1,13 @@
 ---
-Title: How to send data to a SharePoint List storage on submission of an Adaptive Form?
 Description: Learn how to send data from your Adaptive Form to a SharePoint storage like a SharePoint list when you submit the form.
 keywords: 如何連線至最適化表單的SharePoint清單？、提交至SharePoint、建立SharePoint清單設定、在最適化表單中使用提交至SharePoint提交動作、將最適化表單連線至Microsoft&amp；reg；SharePoint清單。
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 title: 如何設定最適化表單的提交動作？
 role: User, Developer
 exl-id: 9ac3e7be-c6fa-4dbc-9aba-b81741ba6c55
-source-git-commit: dabf8029577c5fb6bb5eebdbf10d77f3d4d95a5d
+source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '470'
 ht-degree: 30%
 
 ---

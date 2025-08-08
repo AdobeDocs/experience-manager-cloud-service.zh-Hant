@@ -1,15 +1,14 @@
 ---
-Title: How to submit data from an Adaptive Form to Microsoft&reg; OneDrive?
-Description: Explore the streamlined process of connecting AEM Forms with Microsoft&reg; OneDrive using the Submit to OneDrive Submit Action. Learn the step-by-step guide to configure OneDrive and set up submission actions for efficient data storage and retrieval
+description: 探索使用提交至OneDrive提交動作將AEM Forms與Microsoft&amp；reg； OneDrive連線的簡化流程。 瞭解設定OneDrive和設定提交動作以有效儲存及擷取資料的逐步指南
 keywords: AEM Forms OneDrive整合，連線至Microsoft OneDrive，使用AEM Forms設定OneDrive設定
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 exl-id: dbfa4094-1b92-4a7c-a799-f66973d27054
 title: 如何設定最適化表單的提交動作？
 role: User, Developer
-source-git-commit: dabf8029577c5fb6bb5eebdbf10d77f3d4d95a5d
+source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
 workflow-type: tm+mt
-source-wordcount: '882'
-ht-degree: 46%
+source-wordcount: '931'
+ht-degree: 44%
 
 ---
 
@@ -112,7 +111,7 @@ AEM Forms與Microsoft® OneDrive無縫整合的一些優點包括：
 執行以下步驟，使用在Universal Editor中編寫的最適化表單中的OneDrive儲存體設定：
 
 1. 開啟最適化表單進行編輯。
-1. 按一下編輯器上的&#x200B;**編輯表單屬性**&#x200B;擴充功能。
+1. 按一下編輯器上的&#x200B;**編輯表單屬性**擴充功能。
 **表單屬性**&#x200B;對話方塊就會顯示。
 
    >[!NOTE]
@@ -121,7 +120,7 @@ AEM Forms與Microsoft® OneDrive無縫整合的一些優點包括：
    > * 請參閱[Extension Manager功能焦點](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)文章，瞭解如何在通用編輯器中啟用或停用擴充功能。
 1. 按一下&#x200B;**提交**&#x200B;索引標籤，然後選取&#x200B;**[!UICONTROL 提交至OneDrive]**。
    ![OneDrive GIF](/help/forms/assets/submit-to-onedrive-ue.png)
-如果您選取&#x200B;**以原始名稱儲存附件**，則附件會使用其原始檔案名稱儲存在資料夾中。 您也可以將記錄檔案(DoR)儲存在Azure Blob儲存體中。
+如果您選取**以原始名稱儲存附件**，則附件會使用其原始檔案名稱儲存在資料夾中。 您也可以將記錄檔案(DoR)儲存在Azure Blob儲存體中。
 1. 選取您要儲存資料的「**[!UICONTROL 儲存空間設定]**」。
 1. 按一下&#x200B;**[!UICONTROL 儲存並關閉]**
 

@@ -1,19 +1,18 @@
 ---
-Title: How to send an email on submission of an Adaptive Form?
-Description: Explore the process to set up email notifications when submitting an Adaptive Form.
+description: 探索在提交最適化表單時設定電子郵件通知的程式。
 keywords: 如何傳送最適化表單的電子郵件、電子郵件提交動作、最適化表單電子郵件、表單提交電子郵件、傳送電子郵件指南
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 exl-id: 70386e57-345b-4edb-97f1-3fd52ea9ff4f
 title: 如何設定最適化表單的提交動作？
 role: User, Developer
-source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
+source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '851'
 ht-degree: 19%
 
 ---
 
-# 設定最適化表單的傳送電子郵件提交動作
+# 設定自適應表單的傳送電子郵件提交動作
 
 **[!UICONTROL 傳送電子郵件]**&#x200B;提交動作可讓您在成功提交表單時，傳送電子郵件給一或多個收件者。 此提交動作可讓您建立包含預先定義格式之表單資料的電子郵件。 例如，考慮以下範本，其中從已提交的表單資料中擷取客戶名稱、送貨地址、州名稱和郵遞區號：
 
@@ -85,7 +84,7 @@ ht-degree: 19%
 若要在Universal Editor中設定傳送電子郵件提交動作：
 
 1. 開啟最適化表單進行編輯。
-1. 按一下編輯器上的&#x200B;**編輯表單屬性**&#x200B;擴充功能。
+1. 按一下編輯器上的&#x200B;**編輯表單屬性**擴充功能。
 **表單屬性**&#x200B;對話方塊就會顯示。
 
    >[!NOTE]
