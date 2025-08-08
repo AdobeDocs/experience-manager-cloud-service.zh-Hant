@@ -251,7 +251,7 @@ FDM中的表單元素會顯示在&#x200B;**內容瀏覽器**&#x200B;的&#x200B;*
 3. 選擇&#x200B;**預覽為HTML**
 4. 將引數附加至URL以測試預先填入：
 
-   https://your-preview-url.com?<bindreferencefield>=<value>
+   https://your-preview-url.com?&lt;bindreferencefield>=&lt;value>
 
    **範例：**
 
@@ -269,21 +269,21 @@ FDM中的表單元素會顯示在&#x200B;**內容瀏覽器**&#x200B;的&#x200B;*
 
 **FDM型表單的JSON範例：**
 
-    `&#39;
+    &grave;&#39;
     
-    {
-    &quot;afBoundData&quot;： {
-    &quot;user&quot;： {
+    &lbrace;
+    &quot;afBoundData&quot;： &lbrace;
+    &quot;user&quot;： &lbrace;
     &quot;firstName&quot;： &quot;John&quot;，
     &quot;lastName&quot;： &quot;Doe&quot;，
     &quot;email&quot;： &quot;john.doe@example.com&quot;，
     &quot;phone&quot;： &quot;+1-555-0123&quot;
-    }
-    }，
-    &quot;afUnBoundData&quot;： {
+    &rbrace;
+    &rbrace;，
+    &quot;afUnBoundData&quot;： &lbrace;
     &quot;additionalInfo&quot;： &quot;使用者偏好設定已載入「
-    }
-    }
+    &rbrace;
+    &rbrace;
     
     」「
 」
