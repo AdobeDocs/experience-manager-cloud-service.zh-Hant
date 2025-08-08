@@ -1,13 +1,13 @@
 ---
 title: 在 AEM 中引進 Assets as a Cloud Service 進行數位資產管理
 description: 在 AEM 中引進 Assets as a Cloud Service 進行數位資產管理
-source-git-commit: 707c2125b3a5401cd5b0ebe19f3bc9c46302b697
-workflow-type: ht
+exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
+source-git-commit: c3a528d7e903b43f6b9a18b2426a04638b086d38
+workflow-type: tm+mt
 source-wordcount: '5032'
 ht-degree: 100%
 
 ---
-
 
 # 在 AEM 中引進 Assets as a Cloud Service 進行數位資產管理 {#assets-as-cloud-service-digital-asset-management-aem}
 
@@ -517,7 +517,7 @@ AEM Assets 能夠與各種 Adobe 及非 Adobe 應用程式緊密整合。以下�
 
 * **與 Adobe Workfront 整合**：[!DNL Adobe Workfront] 是一項工作管理應用程式，能協助您在同一個地方管理整個工作生命週期。[!DNL Workfront] 與 [!DNL Adobe Experience Manager Assets] 整合之後，組織便可以透過工作和數位資產管理的內在連結，改善內容速度與上市時間。就在 Workfront 中管理其工作而言，使用者可以存取必要的文件和影像。
 
-  Adobe 提供 [ [!DNL Workfront]  和  [!DNL Adobe Experience Manager Assets]  的原生整合](https://experienceleague.adobe.com/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations.html?lang=zh-Hant)。
+  Adobe 提供 [ [!DNL Workfront]  和  [!DNL Adobe Experience Manager Assets]  的原生整合](https://experienceleague.adobe.com/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations.html)。
 
 * **與 Figma 整合**：AEM Assets 可以用原生方式與 Figma 整合，讓設計者能夠從 Figma 使用者介面直接存取儲存在 AEM Assets 中的資產。您可以將 AEM Assets 內所管理的內容放置於 Figma 畫布中，然後將新的或編輯後的內容儲存在 AEM Assets 存放庫中。若要存取 Figma 社群頁面上提供的 AEM Assets 連接器，請按一下[此處](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector)。
 
@@ -906,5 +906,3 @@ Adobe 為您提供健全的數位資產管理 (DAM) 解決方案，可供您善�
 DAM 圖書管理員、開發人員和超級使用者可以繼續使用管理員檢視或視需要切換使用者介面。您可以選擇最適合您角色的體驗。
 
 如需了解如何存取資產視圖及其相較於管理員視圖所提供的一些簡化功能，請參閱[資產視圖簡介](/help/assets/assets-view-introduction.md)。
-
-
