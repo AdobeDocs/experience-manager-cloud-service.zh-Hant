@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: 預填最適化表單、最適化表單邊緣交付服務、最適化表單自動填入
-source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
+source-git-commit: d91b019ed98dc4e4ceff0ec964cad491fe9d4292
 workflow-type: tm+mt
 source-wordcount: '1874'
 ht-degree: 2%
@@ -142,7 +142,7 @@ Universal Editor提供兩種預填服務選項：
 
        >[！NOTE]
        >
-       > 深入瞭解如何在[使用表單資料模型(FDM)](/help/forms/work-with-form-data-model.md)中設定FDM服務。
+   > 深入瞭解如何在[使用表單資料模型(FDM)](/help/forms/work-with-form-data-model.md)中設定FDM服務。
 
 +++
 
@@ -265,21 +265,21 @@ FDM中的表單元素會顯示在&#x200B;**內容瀏覽器**&#x200B;的&#x200B;*
 
 **FDM型表單的JSON範例：**
 
-    &grave;&#39;
+    `&#39;
     
-    &lbrace;
-    &quot;afBoundData&quot;： &lbrace;
-    &quot;user&quot;： &lbrace;
+    {
+    &quot;afBoundData&quot;： {
+    &quot;user&quot;： {
     &quot;firstName&quot;： &quot;John&quot;，
     &quot;lastName&quot;： &quot;Doe&quot;，
     &quot;email&quot;： &quot;john.doe@example.com&quot;，
     &quot;phone&quot;： &quot;+1-555-0123&quot;
-    &rbrace;
-    &rbrace;，
-    &quot;afUnBoundData&quot;： &lbrace;
+    }
+    }，
+    &quot;afUnBoundData&quot;： {
     &quot;additionalInfo&quot;： &quot;使用者偏好設定已載入「
-    &rbrace;
-    &rbrace;
+    }
+    }
     
     」「
 」
@@ -431,8 +431,6 @@ XFA型表單的&#x200B;**XML範例：**
 您可以為每個表單設定一個主要預填服務。 不過，您可以在單一表單資料模型中結合不同的資料來源，以實現類似的功能。
 
 +++
-
-=
 
 ## 相關主題
 
