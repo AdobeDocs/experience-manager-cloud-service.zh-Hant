@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 3b6d75b13730e920a10bc623947bc8b2d46dc5a9
+source-git-commit: e9aef80c162d681894cff53f65bd9f0bc7afd948
 workflow-type: tm+mt
-source-wordcount: '2197'
-ht-degree: 50%
+source-wordcount: '2235'
+ht-degree: 49%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 50%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440931?quality=12&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -48,10 +48,9 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 ### Experience Manager Sites 的新功能 {#enhancements-sites}
 
-**內容片段增強功能**
-
-* 您現在可以複製具有子系的內容片段。
-* 您現在可以在資料夾設定中設定自訂工作區，以將內容片段匯出至Adobe Target中已設定的工作區。
+* 您現在可以在一次操作中複製具有引用片段（子項）的內容片段。 這允許重複使用現有的內容片段結構來建立新內容。
+* 在內容片段管理UI中，您現在可以檢視內容片段的工作流程狀態，包含所選片段過去和目前執行中的工作流程的詳細資訊。
+* 重新命名或移動即時副本來源頁面現在會觸發重新發佈相應地重新命名或移動的即時副本頁面。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -90,7 +89,7 @@ Content Hub現在於篩選器內包含&#x200B;**全部顯示**&#x200B;選項，�
 
 享受自動上傳新檔案和資料夾、增強的檔案作業、更聰明的資產探索，以及與AEM無縫整合，讓內容管理更快速、更清晰、更直覺。
 
-如需完整的功能清單，請參閱[案頭應用程式發行說明](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-desktop-app/using/release-notes)。
+如需完整的功能清單，請參閱[案頭應用程式發行說明](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/release-notes)。
 
 ### Dynamic Media中的新功能搭配OpenAPI功能 {#new-features-dynamic-media-with-openapi}
 
@@ -223,7 +222,7 @@ OSGi 屬性：
 
 ### Java 11 執行階段棄用 {#java11-runtime-deprecation}
 
-**Java 11執行階段* — 現已棄用，且大部分環境已升級至效能更高的&#x200B;**&#x200B;Java 21執行階段**。
+**Java 11執行階段* — 現已棄用，且大部分環境已升級至效能更高的&#x200B;**Java 21執行階段**。
 
 若您的環境因相依性不支援而無法升級 (請參閱 [Java 21 執行階段要求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements))，您應已收到一封 Adobe 傳送的電子郵件，其中包含具體的後續步驟。請確保在 **2025 年 8 月 28 日**&#x200B;前完成所有必要的更新，您的環境方能無中斷地進行升級。
 
