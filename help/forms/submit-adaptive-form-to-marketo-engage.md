@@ -18,7 +18,7 @@ ht-degree: 4%
 
 ![工作流程](/help/forms/assets/workflow-marketo-3.png)
 
-最適化Forms編輯器提供&#x200B;**提交至Marketo Engage**&#x200B;提交動作，以將最適化Forms資料傳送至Adobe Marketo Engage進行處理。 您可以設定現有的最適化表單，在提交時提交資料至[Adobe Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home)。
+最適化Forms編輯器提供&#x200B;**提交至Marketo Engage**&#x200B;提交動作，以將最適化Forms資料傳送至Adobe Marketo Engage進行處理。 您可以設定現有的最適化表單，在提交時提交資料至[Adobe Marketo Engage](https://experienceleague.adobe.com/zh-hant/docs/marketo/using/home)。
 
 提供多種現成可用的提交動作，用於處理表單提交。 您可以在[最適化表單提交動作](/help/forms/configure-submit-actions-core-components.md)文章中進一步瞭解這些選項。
 
@@ -97,7 +97,7 @@ ht-degree: 4%
 
 ## 下一步
 
-您也可以將最適化表單與[Munchkin資料庫](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/setup/munchkin)連線，以追蹤造訪次數、點按次數和表單提交次數。
+您也可以將最適化表單與[Munchkin資料庫](https://experienceleague.adobe.com/zh-hant/docs/marketo/using/product-docs/administration/setup/munchkin)連線，以追蹤造訪次數、點按次數和表單提交次數。
 
 ## 相關的文章
 
