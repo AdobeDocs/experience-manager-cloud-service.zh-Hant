@@ -4,10 +4,10 @@ description: 了解如何存取 Cloud Manager，以便您可以設定專案資�
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
 feature: Onboarding
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '1040'
-ht-degree: 100%
+source-git-commit: 4cad0ea1be4cba1c7f1af55cc760fb65fdc3cc4a
+workflow-type: tm+mt
+source-wordcount: '1033'
+ht-degree: 75%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 100%
 
 ## 目標 {#objective}
 
-在此上線歷程的上一篇文章中，[將團隊成員指派給 Cloud Manager 產品設定檔](assign-profiles-cloud-manager.md)，您授予您的 AEMaaCS 團隊適當的角色。現在了解如何存取 Cloud Manager，以便您設定團隊將使用的專案資源。
+在此上線歷程的上一篇文章中，[將團隊成員指派給 Cloud Manager 產品設定檔](assign-profiles-cloud-manager.md)，您授予您的 AEMaaCS 團隊適當的角色。現在，瞭解如何存取Cloud Manager，以便您可以設定您的團隊打算使用的專案資源。
 
-由於您完成了此歷程的上一步，您的團隊可以存取 Cloud Manager。Cloud Manager 用於建立和管理您的專案資源，例如程序和環境。
+由於您完成了此歷程的上一步，您的團隊可以存取 Cloud Manager。Cloud Manager用於建立和管理您的專案資源，例如程式和環境。
 
 閱讀本文件後，您應會了解：
 
@@ -28,25 +28,25 @@ ht-degree: 100%
 
 ## Cloud Manager {#cloud-manager}
 
-Cloud Manager 是 AEM as a Cloud Service 的重要元件，可作為您團隊的單一入口點。透過其專門建構的 CI/CD 管道支援具有企業開發設定的客戶，這些管道可確保進行徹底的測試和最高的程式碼品質，以提供卓越的體驗。Cloud Manager 提供以自助方式開始所需的一切，包括建立雲端資源和環境的能力。
+Cloud Manager 是 AEM as a Cloud Service 的重要元件，可作為您團隊的單一入口點。透過其專門建構的 CI/CD 管道支援具有企業開發設定的客戶，這些管道可確保進行徹底的測試和最高的程式碼品質，以提供卓越的體驗。Cloud Manager提供以自助方式開始所需的一切，包括建立雲端資源和環境的能力。
 
-通常是指派給&#x200B;**業務所有者**&#x200B;產品設定檔負責新增您的雲端資源，例如程序和環境。此人了解業務需求以及完成初始 Cloud Manager 設定的人員。
+通常是指派給&#x200B;**業務負責人**&#x200B;產品設定檔負責新增您的雲端資源，例如程式和環境。 此人了解業務需求以及完成初始 Cloud Manager 設定的人員。
 
 出於此上線歷程的目的，您作為系統管理員已經將自己指派到&#x200B;**業務所有者**&#x200B;產品設定檔，可以設定雲端資源。根據實際專案需求，業務所有者可能與系統管理員相同，也可能不同。
 
 ## 以系統管理員和業務所有者的身分存取 Cloud Manager {#access-sysadmin-bo}
 
-在您指派給&#x200B;**業務所有者**&#x200B;角色的團隊成員可以存取 Cloud Manager 並開始建立雲端資源之前，系統管理員必須獲指派&#x200B;**業務所有者**&#x200B;角色。他們也必須像您在此上線歷程的前一步驟那樣登入 Cloud Manager。
+在您指派給&#x200B;**業務負責人**&#x200B;角色的團隊成員可以存取Cloud Manager並開始建立雲端資源之前，必須為系統管理員指派&#x200B;**業務負責人**&#x200B;角色。 他們也必須像您在此上線歷程的前一步驟那樣登入 Cloud Manager。
 
 1. 確保您以系統管理員身分獲指派&#x200B;**業務所有者**&#x200B;角色。
 
-   * 返回此歷程的前一個步驟，[將團隊成員指派給 Cloud Manager 產品設定檔](assign-profiles-cloud-manager.md)，以深入了解如何將&#x200B;**業務所有者**&#x200B;角色指派給系統管理員。
+   回到上一步[將團隊成員指派給Cloud Manager產品設定檔](assign-profiles-cloud-manager.md)，以取得關於將&#x200B;**業務負責人**&#x200B;角色指派給系統管理員的詳細資訊。
 
-1. 登入 Cloud Manager [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)並顯示正常的登陸頁面。
+1. 在[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)登入Cloud Manager。
 
-透過以系統管理員身份成功登入&#x200B;**業務所有者**&#x200B;角色，您初始化 Cloud Manager 以供其他使用者使用&#x200B;**業務所有者**&#x200B;角色。您不會收到確認或任何訊息。只需登入就可以。
+您以&#x200B;**業務負責人**&#x200B;角色以系統管理員身分成功登入，就能以&#x200B;**業務負責人**&#x200B;角色初始化Cloud Manager，以供其他使用者使用。 您不會收到確認或任何訊息。只需登入就可以。
 
-除非您使用具有&#x200B;**業務所有者**&#x200B;角色的系統管理員身份登入 Cloud Manager，其他具有&#x200B;**業務所有者**&#x200B;角色的使用者無法在 Cloud Manager 中建立程序。即使他們獲指派正確的角色，此規則也為真。
+在您以&#x200B;**業務負責人**&#x200B;角色的系統管理員身分登入Cloud Manager之前，具有&#x200B;**業務負責人**&#x200B;角色的其他使用者無法在Cloud Manager中建立程式。 即使他們獲指派正確的角色，此規則也為真。
 
 ## 瀏覽至 Cloud Manager {#navigate-cloud-manager}
 
@@ -63,7 +63,7 @@ Cloud Manager 是 AEM as a Cloud Service 的重要元件，可作為您團隊的
 
 1. 您會被導向到 Cloud Manager 登陸頁面。
 
-您還可以按照以下步驟從 Adobe Experience Cloud 主頁瀏覽到 Cloud Manager 的&#x200B;**程序和產品**&#x200B;頁面。
+或者，您可以使用這些步驟從Cloud Manager首頁瀏覽到Adobe Experience Cloud的&#x200B;**程式和產品**&#x200B;頁面。
 
 1. 直接瀏覽至的 [Adobe Experience Cloud](https://experience.adobe.com) 並使用您的 Adobe ID 憑證登入。
 
@@ -101,7 +101,7 @@ Cloud Manager 是 AEM as a Cloud Service 的重要元件，可作為您團隊的
 
 ### 當程序存在並且您是系統管理員時 {#programs-exist-sysadmin}
 
-如果您的組織中已經存在程序並且您是系統管理員，那麼您的登陸頁面將顯示&#x200B;**管理存取權**&#x200B;按鈕連同&#x200B;**新增程序**&#x200B;選項。
+如果您的組織中存在程式，並且您是系統管理員，那麼您的登入頁面將顯示&#x200B;**管理存取權**&#x200B;按鈕以及&#x200B;**新增程式**&#x200B;選項。
 
 ![系統管理員檢視](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
 
