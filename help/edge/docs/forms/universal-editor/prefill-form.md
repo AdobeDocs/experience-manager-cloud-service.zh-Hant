@@ -6,10 +6,10 @@ role: User, Developer
 level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: 預填最適化表單、最適化表單邊緣交付服務、最適化表單自動填入
-source-git-commit: d91b019ed98dc4e4ceff0ec964cad491fe9d4292
+source-git-commit: 6c93af923e600dbb20add6c5f1053c832d5a5ca0
 workflow-type: tm+mt
-source-wordcount: '1874'
-ht-degree: 2%
+source-wordcount: '1829'
+ht-degree: 3%
 
 ---
 
@@ -140,9 +140,9 @@ Universal Editor提供兩種預填服務選項：
 
 6. 按一下&#x200B;**完成**&#x200B;以儲存引數，並按一下&#x200B;**儲存**&#x200B;以儲存FDM
 
-       >[！NOTE]
-       >
-       > 深入瞭解如何在[使用表單資料模型(FDM)](/help/forms/work-with-form-data-model.md)中設定FDM服務。
+   >[!NOTE]
+   >
+   > 深入瞭解如何在[使用表單資料模型(FDM)](/help/forms/work-with-form-data-model.md)中設定FDM服務。
 
 +++
 
@@ -151,35 +151,36 @@ Universal Editor提供兩種預填服務選項：
 ### 步驟3：建立最適化表單
 
 1. 導覽至&#x200B;**Adobe Experience Manager** > **Forms** > **Forms與檔案**
-2. 選取&#x200B;**建立** > **最適化Forms**
-3. 在&#x200B;**Source**&#x200B;索引標籤中，選取Edge Delivery Services範本：
+1. 選取&#x200B;**建立** > **最適化Forms**
+1. 在&#x200B;**Source**&#x200B;索引標籤中，選取Edge Delivery Services範本：
 
-       ！[Edge Delivery Services範本](/help/edge/assets/create-eds-forms.png)
-   
-4. 按一下&#x200B;**建立**&#x200B;以開啟&#x200B;**建立表單**&#x200B;精靈
-5. 指定表單詳細資料：
+   ![Edge Delivery Services 範本](/help/edge/assets/create-eds-forms.png)
+
+1. 按一下&#x200B;**建立**&#x200B;以開啟&#x200B;**建立表單**&#x200B;精靈
+1. 指定表單詳細資料：
+
    - **名稱**：為您的表單輸入描述性名稱
    - **標題**：提供使用者易記的標題
    - **GitHub URL**：輸入您的存放庫URL （例如，`https://github.com/wkndforms/edsforms`）
 
-6. 按一下「**建立**」。
+1. 按一下「**建立**」。
 
-       ！[建立結構描述型表單](/help/edge/docs/forms/universal-editor/assets/create-schema-based-form1.png)
-   
+   ![建立綱要型表單](/help/edge/docs/forms/universal-editor/assets/create-schema-based-form1.png)
+
 表單會在通用編輯器中開啟以供製作。
 
 ### 步驟4：設定表單資料Source
 
 1. 選取您的表單並按一下&#x200B;**屬性**
 
-       ！[選取表單屬性](/help/edge/docs/forms/universal-editor/assets/select-form-properties1.png)
-   
+   ![選取表單屬性](/help/edge/docs/forms/universal-editor/assets/select-form-properties1.png)
+
 2. 開啟&#x200B;**表單模型**&#x200B;標籤
 3. 從&#x200B;**從**&#x200B;選取下拉式清單中選擇&#x200B;**表單資料模型(FDM)**
 4. 從下拉式清單中選取您建立的表單資料模型（例如PetFDM）
 
-       ！[選取表單模型索引標籤](/help/edge/docs/forms/universal-editor/assets/select-form-model1.png)
-   
+   ![選取表單模型標籤](/help/edge/docs/forms/universal-editor/assets/select-form-model1.png)
+
 5. 按一下&#x200B;**儲存並關閉**
 6. 開啟表單以在通用編輯器中編輯
 
@@ -193,6 +194,7 @@ FDM中的表單元素會顯示在&#x200B;**內容瀏覽器**&#x200B;的&#x200B;*
    ![通用編輯器的熒幕擷圖顯示結構描述型表單](/help/edge/docs/forms/universal-editor/assets/ue-form.png)
 
 3. 新增資料繫結至表單欄位：
+
    - 選取表單欄位
    - 在&#x200B;**屬性**&#x200B;面板中，尋找&#x200B;**繫結參考**&#x200B;屬性
    - 選取適當的資料繫結參考
@@ -208,12 +210,14 @@ FDM中的表單元素會顯示在&#x200B;**內容瀏覽器**&#x200B;的&#x200B;*
 請確定已在通用編輯器中啟用這些擴充功能：
 
 1. **AEM表單屬性延伸**
+
    - 在通用編輯器中開啟&#x200B;**Extension Manager**
    - 啟用&#x200B;**AEM表單屬性**&#x200B;擴充功能
 
    ![表單屬性圖示](/help/edge/docs/forms/universal-editor/assets/form-edit-properties.png)
 
-2. **資料Source擴充功能**
+1. **資料Source擴充功能**
+
    - 如果您沒有看到&#x200B;**資料來源**&#x200B;圖示，請啟用&#x200B;**資料來源**&#x200B;延伸模組
 
    ![通用編輯器Extension Manager的熒幕擷圖](/help/edge/docs/forms/universal-editor/assets/extension-manager.png)
@@ -232,8 +236,8 @@ FDM中的表單元素會顯示在&#x200B;**內容瀏覽器**&#x200B;的&#x200B;*
 3. 按一下「**預填**」標籤
 4. 選取&#x200B;**表單資料模型預填服務**
 
-       ！[選取預填服務](/help/edge/docs/forms/universal-editor/assets/select-fdm-prefill.png)
-   
+   ![選取預填服務](/help/edge/docs/forms/universal-editor/assets/select-fdm-prefill.png)
+
 5. 按一下&#x200B;**儲存並關閉**
 
 +++
@@ -247,14 +251,14 @@ FDM中的表單元素會顯示在&#x200B;**內容瀏覽器**&#x200B;的&#x200B;*
 3. 選擇&#x200B;**預覽為HTML**
 4. 將引數附加至URL以測試預先填入：
 
-       https://your-preview-url.com？&lt;bindreferencefield>=&lt;value>
-   
+   https://your-preview-url.com?<bindreferencefield>=<value>
+
    **範例：**
 
-       https://your-preview-url.com?petid=12345
-       
-       ！[預填表單](/help/edge/docs/forms/universal-editor/assets/prefill-form.png)
-   
+   https://your-preview-url.com?petid=12345
+
+   ![預填表單](/help/edge/docs/forms/universal-editor/assets/prefill-form.png)
+
 表單應會根據提供的引數自動填入資料。
 
 +++
@@ -265,21 +269,21 @@ FDM中的表單元素會顯示在&#x200B;**內容瀏覽器**&#x200B;的&#x200B;*
 
 **FDM型表單的JSON範例：**
 
-    &grave;&#39;
+    `&#39;
     
-    &lbrace;
-    &quot;afBoundData&quot;： &lbrace;
-    &quot;user&quot;： &lbrace;
+    {
+    &quot;afBoundData&quot;： {
+    &quot;user&quot;： {
     &quot;firstName&quot;： &quot;John&quot;，
     &quot;lastName&quot;： &quot;Doe&quot;，
     &quot;email&quot;： &quot;john.doe@example.com&quot;，
     &quot;phone&quot;： &quot;+1-555-0123&quot;
-    &rbrace;
-    &rbrace;，
-    &quot;afUnBoundData&quot;： &lbrace;
+    }
+    }，
+    &quot;afUnBoundData&quot;： {
     &quot;additionalInfo&quot;： &quot;使用者偏好設定已載入「
-    &rbrace;
-    &rbrace;
+    }
+    }
     
     」「
 」
@@ -306,11 +310,11 @@ XFA型表單的&#x200B;**XML範例：**
 
 **基本預填測試：**
 
-    https://preview.example.com/form.html?userId=12345
+`https://preview.example.com/form.html?userId=12345`
 
 **多重引數測試：**
 
-    https://preview.example.com/form.html?userId=12345&amp;category=premium
+`https://preview.example.com/form.html?userId=12345&category=premium`
 
 
 ## 疑難排解
@@ -330,21 +334,25 @@ XFA型表單的&#x200B;**XML範例：**
 +++偵錯步驟
 
 1. **驗證FDM組態：**
+
    - 檢查服務是否已正確設定
    - 獨立測試FDM服務
    - 驗證資料來源連線能力
 
 2. **檢查表單設定：**
+
    - 確認表單與正確的FDM相關聯
    - 驗證欄位`bindRef`值
    - 先測試不含預填的表單
 
 3. **測試資料流程：**
+
    - 使用瀏覽器開發人員工具來檢查網路要求
    - 檢查JavaScript錯誤的控制檯
    - 驗證回應資料格式
 
 4. **常見錯誤訊息：**
+
    - 「找不到預填服務」：檢查服務設定
    - 「資料繫結失敗」：驗證`bindRef`準確性
    - 「無效的資料格式」：確保資料符合結構描述
