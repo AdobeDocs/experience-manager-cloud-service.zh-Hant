@@ -4,10 +4,10 @@ description: 為 EDS Forms 建立自訂元件
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: f843a7c91c3d47610580a3787a96e7e3bd49ba09
 workflow-type: tm+mt
 source-wordcount: '1789'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -45,10 +45,13 @@ Edge Delivery Services 表單可提供自訂，讓前端開發人員可以建置
 在使用自訂元件之前，必須先進行註冊，以便通用編輯器將其識別為可用選項。這會透過元件定義實現，元件定義包括唯一識別碼、預設屬性和元件的結構。執行下列步驟以使自訂元件可用於表單製作：
 
 1. **新增資料夾和檔案**
-在 AEM 專案中為新的自訂元件新增資料夾和檔案。
+
+   在AEM專案中為新的自訂元件新增資料夾和檔案。
+
    1. 開啟您的 AEM 專案並瀏覽至 `../blocks/form/components/`。
    1. 在 `../blocks/form/components/<component_name>` 為您的自訂元件新增資料夾。在此範例中，我們會建立名為 `range` 的資料夾。
    1. 瀏覽到在 `../blocks/form/components/<component_name>` 新建立的資料夾。例如，瀏覽至 `../blocks/form/components/range`，並新增下列檔案：
+
       - `/blocks/form/components/range/_range.json`：包含自訂元件的定義。
       - `../blocks/form/components/range/range.css`：定義自訂元件的樣式。
       - `../blocks/form/components/range/range.js`：在執行階段自訂自訂元件。
@@ -358,18 +361,18 @@ const OOTBComponentDecorators = ['file-input',
    width: 25px;
    height: 25px;
    border-radius: 50%;
-   background: #00008B; /- Dark Blue */
-   border: 3px solid #00008B; /- Dark Blue */
+   background: #00008B; /* Dark Blue */
+   border: 3px solid #00008B; /* Dark Blue */
    cursor: pointer;
    outline: 3px solid #fff;
    }
    
    .range-widget-wrapper.decorated input[type="range"]:focus::-webkit-slider-thumb {
-   border-color: #00008B; /- Dark Blue */
+   border-color: #00008B; /* Dark Blue */
    }
    
    .range-widget-wrapper.decorated .range-bubble {
-   color: #00008B; /- Dark Blue */
+   color: #00008B; /* Dark Blue */
    font-size: 20px;
    line-height: 28px;
    position: relative;
@@ -407,7 +410,7 @@ const OOTBComponentDecorators = ['file-input',
    const bubble = element.querySelector('.range-bubble');
    // during initial render the width is 0. Hence using a default here.
    const bubbleWidth = bubble.getBoundingClientRect().width || 31;
-   const left = `${(current / total) - 100}% - ${(current / total) - bubbleWidth}px`;
+   const left = `${(current / total) * 100}% - ${(current / total) * bubbleWidth}px`;
    bubble.innerText = `${value}`;
    const steps = {
        '--total-steps': Math.ceil((max - min) / step),

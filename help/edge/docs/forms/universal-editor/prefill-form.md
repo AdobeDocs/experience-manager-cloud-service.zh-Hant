@@ -1,18 +1,17 @@
 ---
-title: 如何預先填寫最適化表單欄位？
+title: 如何預先填寫最適化表單欄位
 description: 使用現有資料預先填寫最適化表單的欄位。 使用者可以使用其社交設定檔登入，以在表單中預先填入基本資訊。
 feature: Adaptive Forms, Edge Delivery Services
 role: User, Developer
 level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: 預填最適化表單、最適化表單邊緣交付服務、最適化表單自動填入
-source-git-commit: 6c93af923e600dbb20add6c5f1053c832d5a5ca0
+source-git-commit: f843a7c91c3d47610580a3787a96e7e3bd49ba09
 workflow-type: tm+mt
 source-wordcount: '1829'
 ht-degree: 3%
 
 ---
-
 
 # 使用Edge Delivery Services在最適化Forms中設定預填服務
 
@@ -37,9 +36,9 @@ ht-degree: 3%
 預填程式包含四個關鍵步驟：
 
 1. **使用者開啟表單**：使用者透過URL或導覽存取最適化表單
-2. **識別資料Source**：預填服務決定已設定的資料來源（表單資料模型或草稿服務）
-3. **擷取資料**：系統根據內容、引數或使用者識別擷取相關的使用者資料
-4. **對應並顯示**：資料已使用`bindRef`屬性對應至表單欄位，且已填入的表單已顯示給使用者
+1. **識別資料Source**：預填服務決定已設定的資料來源（表單資料模型或草稿服務）
+1. **擷取資料**：系統根據內容、引數或使用者識別擷取相關的使用者資料
+1. **對應並顯示**：資料已使用`bindRef`屬性對應至表單欄位，且已填入的表單已顯示給使用者
 
 此自動化程式可確保使用者看到已預先填入其相關資訊的表單，大幅改善使用者體驗和表單完成率。
 
@@ -62,7 +61,6 @@ ht-degree: 3%
 - **JSON結構描述表單**： JSON符合結構描述
 - **表單資料模型(FDM)表單**： JSON符合FDM結構
 - **無結構描述表單**：所有欄位都已解除繫結，並使用未繫結的XML
-
 
 ## 先決條件
 
@@ -106,39 +104,39 @@ Universal Editor提供兩種預填服務選項：
 
 ## 設定表單的預填服務
 
-
 +++第1階段：設定表單資料模型
 
 ### 步驟1：建立表單資料模型
 
 1. 登入您的AEM Forms as a Cloud Service執行個體
-2. 導覽至&#x200B;**Adobe Experience Manager** > **Forms** > **資料整合**
-3. 選取&#x200B;**建立** > **表單資料模型**
-4. 選擇您的&#x200B;**資料Source設定**，然後選取已設定的&#x200B;**資料Source**
+1. 導覽至&#x200B;**Adobe Experience Manager** > **Forms** > **資料整合**
+1. 選取&#x200B;**建立** > **表單資料模型**
+1. 選擇您的&#x200B;**資料Source設定**，然後選取已設定的&#x200B;**資料Source**
 
    ![已建立的表單資料模型](/help/edge/docs/forms/universal-editor/assets/create-fdm.png)
 
    >[!TIP]
    >
-   > 如需建立表單資料模型的詳細指示，請參閱[建立表單資料模型](/help/forms/create-form-data-models.md)。
+   >如需建立表單資料模型的詳細指示，請參閱[建立表單資料模型](/help/forms/create-form-data-models.md)。
 
 ### 步驟2：設定FDM服務
 
 1. 移至&#x200B;**Adobe Experience Manager** > **Forms** > **資料整合**
-2. 在編輯模式中開啟您的表單資料模型
-3. 選取資料模型物件並按一下&#x200B;**編輯屬性**
-4. 為選取的資料模型物件設定&#x200B;**讀取**&#x200B;和&#x200B;**寫入**&#x200B;服務
+1. 在編輯模式中開啟您的表單資料模型
+1. 選取資料模型物件並按一下&#x200B;**編輯屬性**
+1. 為選取的資料模型物件設定&#x200B;**讀取**&#x200B;和&#x200B;**寫入**&#x200B;服務
 
    ![設定讀寫服務](/help/edge/docs/forms/universal-editor/assets/configure-reda-write-service.png)
 
-5. 設定服務引數：
+1. 設定服務引數：
+
    - 按一下讀取服務引數的編輯圖示
    - 將引數繫結至&#x200B;**使用者設定檔屬性**、**要求屬性**&#x200B;或&#x200B;**常值值**
    - 指定繫結值（例如pet登錄檔單的`petid`）
 
    ![設定pet id引數](/help/edge/docs/forms/universal-editor/assets/pet-id-arguments.png)
 
-6. 按一下&#x200B;**完成**&#x200B;以儲存引數，並按一下&#x200B;**儲存**&#x200B;以儲存FDM
+1. 按一下&#x200B;**完成**&#x200B;以儲存引數，並按一下&#x200B;**儲存**&#x200B;以儲存FDM
 
    >[!NOTE]
    >
@@ -251,7 +249,7 @@ FDM中的表單元素會顯示在&#x200B;**內容瀏覽器**&#x200B;的&#x200B;*
 3. 選擇&#x200B;**預覽為HTML**
 4. 將引數附加至URL以測試預先填入：
 
-   https://your-preview-url.com?&lt;bindreferencefield>=&lt;value>
+   https://your-preview-url.com?<bindreferencefield>=<value>
 
    **範例：**
 
@@ -269,21 +267,21 @@ FDM中的表單元素會顯示在&#x200B;**內容瀏覽器**&#x200B;的&#x200B;*
 
 **FDM型表單的JSON範例：**
 
-    &grave;&#39;
+    `&#39;
     
-    &lbrace;
-    &quot;afBoundData&quot;： &lbrace;
-    &quot;user&quot;： &lbrace;
+    {
+    &quot;afBoundData&quot;： {
+    &quot;user&quot;： {
     &quot;firstName&quot;： &quot;John&quot;，
     &quot;lastName&quot;： &quot;Doe&quot;，
     &quot;email&quot;： &quot;john.doe@example.com&quot;，
     &quot;phone&quot;： &quot;+1-555-0123&quot;
-    &rbrace;
-    &rbrace;，
-    &quot;afUnBoundData&quot;： &lbrace;
+    }
+    }，
+    &quot;afUnBoundData&quot;： {
     &quot;additionalInfo&quot;： &quot;使用者偏好設定已載入「
-    &rbrace;
-    &rbrace;
+    }
+    }
     
     」「
 」

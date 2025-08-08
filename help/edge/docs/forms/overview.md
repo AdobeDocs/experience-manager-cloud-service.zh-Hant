@@ -4,7 +4,7 @@ description: 在 Adobe Experience Manager Edge Delivery Services 上建立和傳
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
-source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
+source-git-commit: f843a7c91c3d47610580a3787a96e7e3bd49ba09
 workflow-type: tm+mt
 source-wordcount: '879'
 ht-degree: 100%
@@ -49,7 +49,7 @@ AEM Forms 適用的 Edge Delivery Services 是一套可組合的服務，提供�
 ### 通用編輯器
 
 <!--
-<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hant#new-features">pre-release channel</a>. </span>
+<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">pre-release channel</a>. </span>
 -->
 
 [通用編輯器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)是一款適用於行銷人員和設計師的視覺化拖放式製作工具，兼具速度與企業級效能：
@@ -151,10 +151,10 @@ AEM Forms 適用的 Edge Delivery Services 是一套可組合的服務，提供�
         border-radius: 5px;
         padding: 5px;
         box-sizing: border-box;
-        transition: background-color 0.3s ease; /- Adding transition effect */
+        transition: background-color 0.3s ease; /* Adding transition effect */
     }
     .card-container:hover {
-        background-color: #f0f0f0; /- Changing background color on hover */
+        background-color: #f0f0f0; /* Changing background color on hover */
     }
 </style>
 
