@@ -16,7 +16,7 @@ ht-degree: 40%
 <!--
 <span class="preview"> This feature is available through the early access program. To request access, send an email with your GitHub organization name and repository name from your official address to <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . For example, if the repository URL is https://github.com/adobe/abc, the organization name is adobe and the repository name is abc.</span> 
 
-<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hant#new-features). </span>
 -->
 
 表單片段是可重複使用的元件，可消除重複開發工作並確保組織表單間的一致性。 您可以將這些元素建置為片段，並在多個表單中重複使用，而不是為每個表單重新建立常見區段，例如聯絡資訊、地址詳細資訊或同意協定。
