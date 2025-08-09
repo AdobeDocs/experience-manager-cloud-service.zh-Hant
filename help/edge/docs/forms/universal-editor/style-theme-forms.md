@@ -147,6 +147,7 @@ ht-degree: 55%
     --form-input-padding: 0.5rem 0.4rem;
 }
 ```
+
 +++
 
 +++ 版面配置與結構變數
@@ -1108,6 +1109,7 @@ main .form form .file-wrapper .files-list .file-description .file-description-na
   text-align: center;
 }
 ```
+
 +++
 
 +++ 根據欄位名稱設定樣式
@@ -1495,6 +1497,7 @@ main .form form .text-wrapper input {
   cursor: not-allowed;
 }
 ```
+
 +++
 
 ### **元件特定最佳實務**
