@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 6400662cb1c7a504f69db7091091452e99dd6ce9
+source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
 workflow-type: tm+mt
-source-wordcount: '2117'
+source-wordcount: '2609'
 ht-degree: 1%
 
 ---
@@ -48,45 +48,47 @@ ht-degree: 1%
 
 ## 先決條件
 
-開始之前，請確定您具備下列條件：
+為確保使用通用編輯器在AEM Forms中能順暢而成功地使用Edge Delivery Services，在繼續之前，請檢閱並確認下列必要條件：
 
-### 必要的存取權
+### 存取需求
 
-- **GitHub帳戶**&#x200B;具有建立存放庫的許可權
-- **AEM as a Cloud Service**&#x200B;編寫存取權
+- **GitHub帳戶**：您必須擁有有權建立新存放庫的GitHub帳戶。 這對於管理您的專案原始程式碼以及與團隊合作至關重要。
+- **AEM as a Cloud Service編寫存取權**：請確定您擁有AEM as a Cloud Service環境的作者層級存取權。 建立、編輯和發佈表單需要此存取權。
 
 ### 技術需求
 
-- **Git基本介紹**：複製、認可、推播作業
-- **網頁技術**：HTML、CSS、JavaScript基礎
-- **Node.js** （建議使用版本16+）進行本機開發
-- **npm**&#x200B;或&#x200B;**yarn**&#x200B;封裝管理員
+- **熟悉Git**：您應該已熟悉如何執行基本的Git作業，例如複製存放庫、提交變更和推送更新。 這些技能是原始檔控制和專案共同作業的基礎。
+- **瞭解Web技術**：建議您先瞭解HTML、CSS和JavaScript等實用知識。 這些技術構成了表單自訂和疑難排解的基礎。
+- **Node.js （版本16或更新版本）**：本機開發和執行組建工具需要Node.js。 確定您的系統上已安裝版本16或更新版本。
+- **封裝管理員（npm或yarn）**：您需要npm （Node封裝管理員）或yarn來管理專案相依性和指令碼。
 
-### 建議的知識
+### 建議的背景
 
-- 對AEM Sites概念的基本瞭解
-- 熟悉外型設計原則
-- WYSIWYG編輯器的使用體驗
+- **AEM Sites概念**：對AEM Sites的基本瞭解（包括網站結構和內容製作）可協助您有效導覽和整合表單。
+- **表單設計原則**：熟悉表單設計的最佳實務（例如可用性、協助工具及資料驗證）可讓您建立有效且方便使用的表單。
+- **使用WYSIWYG編輯器的體驗**：先前使用What You See Is What You Get (WYSIWYG)編輯器的體驗，可協助您更有效率地運用通用編輯器的視覺化撰寫功能。
 
 >[!TIP]
 >
-> 不熟悉AEM？ 從[AEM Sites快速入門手冊](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=zh-Hant)開始。
+> 不熟悉AEM？ 從[AEM Sites快速入門手冊](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)開始。
 
 ## 路徑A：使用Forms建立新專案
 
-**最適合：**&#x200B;新的實作或概念證明
+**建議用於：**&#x200B;新專案、試行方案或概念證明方案
 
-AEM Forms樣板提供預先設定的範本與整合的最適化Forms區塊。
+運用AEM Forms範本加速您的專案設定。 此範本提供立即可用的範本，可順暢地整合最適化Forms區塊，讓您在AEM網站中快速建立及部署表單。
 
-### 步驟概述
+### 概觀
 
-1. 從範本設定GitHub存放庫
-2. 安裝AEM程式碼同步
-3. 設定AEM專案連線
-4. 建立及發佈AEM網站
-5. 使用通用編輯器新增表單
+若要成功啟動具有整合式表單的新專案，您將：
 
-以下逐一說明每個步驟：
+1. 使用AEM Forms範本建立GitHub存放庫。
+2. 設定AEM程式碼同步，以自動化AEM與存放庫之間的內容同步。
+3. 設定GitHub專案與AEM環境之間的連線。
+4. 建立並發佈新的AEM網站。
+5. 使用通用編輯器新增及管理表單。
+
+以下各節將詳細引導您完成每個步驟，以確保流暢而有效的專案設定體驗。
 
 +++步驟1：從範本建立GitHub存放庫
 
@@ -184,7 +186,7 @@ AEM程式碼同步會自動同步AEM製作環境與GitHub存放庫之間的內�
 
     >[！NOTE]
     >
-    >發生建置問題？ 請參閱[疑難排解GitHub組建問題](#troubleshooting-github-build-issues)。
+>發生建置問題？ 請參閱[疑難排解GitHub組建問題](#troubleshooting-github-build-issues)。
 
 +++
 
@@ -320,20 +322,26 @@ AEM程式碼同步會自動同步AEM製作環境與GitHub存放庫之間的內�
 
 ### 路徑B的必要條件
 
-- 使用[AEM樣板XWalk](https://github.com/adobe-rnd/aem-boilerplate-xwalk)建置的現有AEM專案
-- 本機開發環境設定
-- Git存取您的專案存放庫
+若要繼續將表單整合至您現有的AEM專案，請確定符合下列必要條件：
 
-**使用AEM Forms樣板？**&#x200B;如果您的專案是使用[AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms)建立的，則表單已整合。 跳到[建立您的第一個表單](#create-your-first-form)。
+- 您有使用[AEM指令碼XWalk](https://github.com/adobe-rnd/aem-boilerplate-xwalk)建立的現有AEM專案。
+- 您已設定[本機開發環境](#set-up-local-development-environment)
+- 您擁有專案存放庫的Git存取權，可讓您視需要複製、修改和推送變更。
 
-以下逐一說明每個步驟：
+>[!NOTE]
+>
+> 如果您的專案最初是使用[AEM Forms樣板](https://github.com/adobe-rnd/aem-boilerplate-forms)設定的，則已包含表單功能。 在此情況下，您可以繼續前往[建立您的第一個表單](#create-your-first-form)區段。
 
-### 步驟概述
+下列指南提供將表單功能新增至現有專案的結構化方法。 每個步驟都旨在確保在Universal Editor環境中緊密整合和最佳功能。
 
-1. 複製最適化Forms區塊檔案
-2. 更新專案設定
-3. 設定ESLint規則
-4. 建置和認可變更
+### 概觀
+
+您將完成下列高階步驟：
+
+1. 將最適化Forms區塊檔案複製到專案中。
+2. 更新專案的設定，以辨識及支援表單元件。
+3. 調整ESLint規則以容納新的檔案和編碼模式。
+4. 建置專案並將變更提交至您的存放庫。
 
 +++步驟1：複製Forms區塊檔案
 
@@ -494,19 +502,31 @@ AEM程式碼同步會自動同步AEM製作環境與GitHub存放庫之間的內�
 
 ## 建立您的第一個表單
 
-**套用至：**&#x200B;路徑A和路徑B使用者
+**應該關注此節的人：**\
+本節與路徑A （新專案）或路徑B （現有專案）之後的使用者相關。
 
-您的專案已設定表單功能，接下來讓我們使用通用編輯器的WYSIWYG介面建立您的第一個表單。
+現在您的專案已準備好建立表單，您可以使用通用編輯器的直覺式WYSIWYG製作環境來建置您的第一個表單。 下列步驟提供在AEM網站中設計、設定和發佈表單的結構化方法。
 
-### 表單建立程式概述
+### 概觀
 
-1. **新增最適化表單區塊**&#x200B;至您的頁面
-2. **新增表單元件** （文字輸入、按鈕等）
-3. **設定元件屬性**
-4. **預覽和測試**&#x200B;您的表單
-5. **發佈**&#x200B;更新的頁面
+在「通用編輯器」中建立表單的過程包含幾個關鍵階段：
 
-以下逐一說明每個步驟：
+1. **插入最適化表單區塊**\
+   首先，將最適化表單區塊新增至您選擇的頁面。
+
+2. **新增表單元件**\
+   插入文字欄位、按鈕和其他輸入元素等元件，填入您的表單。
+
+3. **設定元件屬性**\
+   調整每個元件的設定和屬性，以符合表單的需求。
+
+4. **預覽和測試您的表單**\
+   使用預覽功能在發佈之前驗證表單的外觀和行為。
+
+5. **發佈更新的頁面**\
+   在您滿意後，請發佈您的頁面，讓一般使用者也能使用表單。
+
+以下幾節將詳細引導您完成這些步驟，以確保流暢而有效的表單建立體驗。
 
 +++步驟1：新增最適化表單區塊
 

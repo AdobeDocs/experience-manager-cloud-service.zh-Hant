@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: 33b562182ea6fca22796ec7b73c8f036e021f64d
+source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
 workflow-type: tm+mt
-source-wordcount: '6613'
-ht-degree: 99%
+source-wordcount: '6590'
+ht-degree: 98%
 
 ---
 
@@ -1112,21 +1112,21 @@ ht-degree: 99%
    + 建置表單 {#build-forms}
       + [概觀](/help/edge/docs/forms/overview.md)
       + WYSIWYG 編寫 {#universal-editor}
-         + [Edge Delivery Services 的表單通用編輯器簡介：完整指南](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-         + [如何使用通用編輯器開始編寫：逐步教學課程](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-         + [如何使用通用編輯器建立您的第一個表單 - 逐步操作教學課程](/help/edge/docs/forms/universal-editor/create-forms.md)
-         + [提交後引導使用者：在通用編輯器中設定重新導向並感謝您的訊息](/help/edge/docs/forms/universal-editor/configure-thankyou-message.md)
-         + [通用編輯器介面指南：工具、功能和導覽說明](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
-         + [編寫行動裝置適用的表單：通用編輯器中的回應式設計](/help/edge/docs/forms/universal-editor/responsive-layout.md)
-         + [設計精美表單：通用編輯器的樣式和主題指南](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
-         + [在表單中新增動態行為：規則編輯器完整指南](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
-         + [表單提交指南：設定與自訂表單提交動作](/help/edge/docs/forms/universal-editor/submit-action.md)
-         + [保護表單免受垃圾郵件騷擾：新增 reCAPTCHA 安全性](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
-         + [如何發佈及部署表單：通用編輯器發佈指南](/help/edge/docs/forms/universal-editor/publish-forms.md)
-         + [建置自訂表單元件：通用編輯器開發人員指南](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-         + [表單資料模型整合：整合表單與表單資料模型](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
-         + [設定預填服務：完成設定預填服務的逐步指南](/help/edge/docs/forms/universal-editor/prefill-form.md)
-         + [可重複使用、模組化和獨立的片段：在表單中建立及使用表單片段](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)
+         + [Edge Delivery Services for Forms 的通用編輯器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+         + [導覽至AEM Forms的通用編輯器介面](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
+         + [使用通用編輯器的AEM Forms適用的Edge Delivery Services快速入門](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+         + [使用Edge Delivery Services建立及發佈最適化Forms](/help/edge/docs/forms/universal-editor/create-forms.md)
+         + [使用通用編輯器建立回應式Forms](/help/edge/docs/forms/universal-editor/responsive-layout.md)
+         + [自訂 AEM Forms 適用的 Edge Delivery Services 主題和樣式](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+         + [通用編輯器中動態Forms的規則編輯器](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+         + [如何建立 WYSIWYG 型編寫適用的表單片段](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)
+         + [如何設定最適化表單的提交動作？](/help/edge/docs/forms/universal-editor/submit-action.md)
+         + [如何設定重新導向頁面或感謝訊息](/help/edge/docs/forms/universal-editor/configure-thankyou-message.md)
+         + [在通用編輯器中將Google reCAPTCHA新增至Forms](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+         + [在通用編輯器中如何整合表單的表單資料模型 (FDM)？](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
+         + [如何預先填寫最適化表單欄位](/help/edge/docs/forms/universal-editor/prefill-form.md)
+         + [使用Edge Delivery Services發佈最適化Forms](/help/edge/docs/forms/universal-editor/publish-forms.md)
+         + [為 EDS Forms 建立自訂元件](/help/edge/docs/forms/universal-editor/create-custom-component.md)
          + [針對 Edge Delivery Services 表單提交時出現的 403 禁止錯誤進行疑難排解](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)
       + 文件型編寫 {#getting-started-edge-delivery-services-forms}
          + [建置第一份表單：使用 Google Sheets 和 Excel 的快速入門指南](/help/edge/docs/forms/tutorial.md)

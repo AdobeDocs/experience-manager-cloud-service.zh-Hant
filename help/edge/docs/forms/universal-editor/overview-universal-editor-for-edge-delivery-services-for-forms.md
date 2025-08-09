@@ -4,10 +4,10 @@ description: 使用 Edge Delivery Services for Forms 的通用編輯器建立自
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: ccfb85da187e828b5f7e8b1a8bae3f483209368d
+source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 100%
+source-wordcount: '984'
+ht-degree: 99%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 100%
 
 | ![樣式](/help/edge/docs/forms/universal-editor/assets/personalization.svg) | ![預填服務](/help/edge/docs/forms/universal-editor/assets/prefill-services.svg) | ![A/B 測試](/help/edge/docs/forms/universal-editor/assets/experimentation-ab-testing.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**樣式**](/help/edge/docs/forms/universal-editor/style-theme-forms.md) | **預填服務** (即將推出) | [**A/B 測試**](https://github.com/adobe/aem-experimentation/blob/main/documentation/experiments.md) |
+| [**樣式**](/help/edge/docs/forms/universal-editor/style-theme-forms.md) | **[預填表單](/help/edge/docs/forms/universal-editor/prefill-form.md)** | [**A/B 測試**](https://github.com/adobe/aem-experimentation/blob/main/documentation/experiments.md) |
 | 使用 CSS 設定樣式讓開發人員能夠自訂表單元素的外觀，並建立與網站美學相符且具視覺吸引力的設計。 | 預填服務會自動使用多個來源的相關使用者資料填寫表單欄位，減少手動輸入並增強使用者體驗。 | A/B 測試讓組織能夠針對不同的表單設計、版面和功能進行實驗，以便找到效能最好的變體。 |
 
 | ![分析與追蹤](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![表單片段](/help/edge/docs/forms/universal-editor/assets/form-fragments.svg) | ![資料繫結](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) |

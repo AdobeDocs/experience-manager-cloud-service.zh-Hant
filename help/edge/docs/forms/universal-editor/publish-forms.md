@@ -6,16 +6,14 @@ role: Admin, Architect, Developer
 level: Intermediate
 keywords: [發佈表單、Edge Delivery Services、表單設定、CORS、反向連結篩選器]
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
 workflow-type: tm+mt
-source-wordcount: 756
+source-wordcount: 746
 ht-degree: 2%
 
 ---
 
 # 使用Edge Delivery Services發佈最適化Forms
-
-## 概觀
 
 發佈最適化表單後，使用者可在Edge Delivery Services上存取及提交。 此程式包含三個主要階段：發佈表單、設定安全性設定及存取即時表單。
 
@@ -28,29 +26,35 @@ ht-degree: 2%
 
 ## 先決條件
 
-- **表單需求：**
-   - 使用Edge Delivery Services範本建立的最適化表單
-   - 表單已測試並準備好用於生產
+- 使用Edge Delivery Services範本建立的最適化表單
+- 表單已測試並準備好用於生產
+- AEM Forms作者許可權
+- Cloud Manager存取（用於生產設定）
+- 開發人員對表單區塊代碼的存取權（用於提交設定）
 
-- **存取需求：**
-   - AEM Forms作者許可權
-   - Cloud Manager存取（用於生產設定）
-   - 開發人員對表單區塊代碼的存取權（用於提交設定）
+## 發佈程式概觀
 
-- **相關檔案：**
-   - [使用Edge Delivery Services建立表單](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-   - [設定提交動作](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
+將表單發佈至Edge Delivery Services會遵循三個階段的方法：
 
-## 階段1：發佈表單
+- **階段1：表單發佈** — 將表單發佈至CDN並驗證發佈狀態
+- **階段2：安全性設定** — 設定CORS原則與反向連結篩選器，以安全提交內容
+- **階段3：存取和驗證** — 測試表單功能並驗證完整的工作流程
 
-### 步驟1：啟動發佈
+每個階段都建立在上一個階段之上，以確保安全且功能性的部署。
+
+### 階段1：發佈表單
+
++++ 步驟1：啟動發佈
 
 1. **存取您的表單**：在通用編輯器中開啟您的最適化表單
 2. **開始發佈**：按一下工具列中的&#x200B;**發佈**&#x200B;圖示
 
    ![按一下「發佈」](/help/forms/assets/publish-icon-eds-form.png)。
 
-### 步驟2：檢閱並確認
++++
+
+
++++ 步驟2：檢閱並確認
 
 1. **檢閱發佈資產**：系統會顯示所有正在發佈的資產，包括您的表單
 
@@ -61,7 +65,10 @@ ht-degree: 2%
 
    ![發佈成功](/help/forms/assets/publish-success.png)
 
-### 步驟3：驗證發佈狀態
++++
+
+
++++ 步驟3：驗證發佈狀態
 
 **檢查狀態**：再次按一下&#x200B;**發佈**&#x200B;圖示以檢視目前狀態
 
@@ -73,7 +80,10 @@ ht-degree: 2%
 - 發佈程式期間沒有錯誤訊息
 - 表單會顯示在已發佈的資產清單中
 
-### 管理已發佈的Forms
++++
+
+
++++ 管理已發佈的Forms
 
 **若要取消發佈表單：**
 
@@ -83,9 +93,12 @@ ht-degree: 2%
 
 ![取消發佈表單](/help/forms/assets/unpublish--form.png)
 
-## 階段2：設定安全性設定
++++
 
-### 為什麼需要安全性設定
+
+### 階段2：設定安全性設定
+
++++ 為什麼需要安全性設定
 
 若要啟用安全表單提交，您必須設定符合以下條件的安全設定：
 
@@ -98,7 +111,11 @@ ht-degree: 2%
 >
 >**生產環境所需**：這些設定對於表單提交在生產環境中運作是必要的。
 
-### 步驟1：設定表單提交URL
++++
+
+
+
++++ 步驟1：設定表單提交URL
 
 **用途**：直接將表單提交至您的AEM執行個體
 
@@ -123,7 +140,11 @@ export const submitBaseUrl = 'https://publish-staging-p120-e12.adobeaemcloud.com
 - URL符合您的環境（生產、測試或本機）
 - URL中沒有結尾斜線
 
-### 步驟2：設定CORS設定
++++
+
+
+
++++ 步驟2：設定CORS設定
 
 **用途**：允許來自Edge Delivery Services網域的表單提交請求
 
@@ -151,7 +172,11 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 - [CORS設定指南](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)
 - [反向連結篩選檔案](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter)
 
-### 步驟3：設定反向連結篩選器
++++
+
+
+
++++ 步驟3：設定反向連結篩選器
 
 **用途**：將寫入作業限制在授權的Edge Delivery Services網域
 
@@ -198,9 +223,14 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 
 - [透過Cloud Manager設定反向連結篩選器](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing)
 
-## 階段3：存取您發佈的表單
++++
 
-### Edge Delivery Services的URL結構
+
+### 階段3：存取您發佈的表單
+
+
+
++++ Edge Delivery Services的URL結構
 
 **標準URL格式：**
 
@@ -225,7 +255,11 @@ https://main--universaleditor--wkndforms.aem.live/content/forms/af/wknd-form
 https://main--universaleditor--wkndforms.aem.page/content/forms/af/wknd-form
 ```
 
-### 最終驗證步驟
++++
+
+
+
++++ 最終驗證步驟
 
 **驗證表單協助工具：**
 
@@ -242,29 +276,15 @@ https://main--universaleditor--wkndforms.aem.page/content/forms/af/wknd-form
 - 資料會顯示在已設定的目的地（試算表、電子郵件等）
 - 沒有與CORS或安全性原則相關的主控台錯誤
 
++++
+
 
 ## 後續步驟
 
-**立即動作：**
-
-- 徹底測試您發佈的表單
-- 監視表單提交資料
-- 視需要設定分析追蹤
-
-**進階主題：**
 
 - [設定表單提交動作](/help/edge/docs/forms/universal-editor/submit-action.md)
 - [表單的樣式和佈景主題](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
 - [新增reCAPTCHA保護](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
 - [建立回應式表單版面配置](/help/edge/docs/forms/universal-editor/responsive-layout.md)
 
-## 摘要
 
-您已成功：
-
-- 已將您的最適化表單發佈到Edge Delivery Services
-- 已設定表單提交的安全性設定
-- 為一般使用者設定適當的URL存取權
-- 已驗證表單功能與協助工具
-
-您的表單現在已上線並準備好用於生產。
