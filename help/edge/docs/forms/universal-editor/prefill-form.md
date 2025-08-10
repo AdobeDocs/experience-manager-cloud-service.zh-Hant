@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: 預填最適化表單、最適化表單邊緣交付服務、最適化表單自動填入
-source-git-commit: f843a7c91c3d47610580a3787a96e7e3bd49ba09
+source-git-commit: 074b81f9cb1050eac5175bdc46796f9371f3a35b
 workflow-type: tm+mt
-source-wordcount: '1829'
+source-wordcount: '1787'
 ht-degree: 3%
 
 ---
@@ -249,7 +249,7 @@ FDM中的表單元素會顯示在&#x200B;**內容瀏覽器**&#x200B;的&#x200B;*
 3. 選擇&#x200B;**預覽為HTML**
 4. 將引數附加至URL以測試預先填入：
 
-   https://your-preview-url.com?&lt;bindreferencefield>=&lt;value>
+   https://your-preview-url.com?<bindreferencefield>=<value>
 
    **範例：**
 
@@ -267,40 +267,36 @@ FDM中的表單元素會顯示在&#x200B;**內容瀏覽器**&#x200B;的&#x200B;*
 
 **FDM型表單的JSON範例：**
 
-    &grave;&#39;
-    
-    &lbrace;
-    &quot;afBoundData&quot;： &lbrace;
-    &quot;user&quot;： &lbrace;
-    &quot;firstName&quot;： &quot;John&quot;，
-    &quot;lastName&quot;： &quot;Doe&quot;，
-    &quot;email&quot;： &quot;john.doe@example.com&quot;，
-    &quot;phone&quot;： &quot;+1-555-0123&quot;
-    &rbrace;
-    &rbrace;，
-    &quot;afUnBoundData&quot;： &lbrace;
-    &quot;additionalInfo&quot;： &quot;使用者偏好設定已載入「
-    &rbrace;
-    &rbrace;
-    
-    」「
-」
+```
+  {
+    "afBoundData": {
+      "user": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "email": "john.doe@example.com",
+        "phone": "+1-555-0123"
+      }
+    },
+    "afUnBoundData": {
+      "additionalInfo": "User preferences loaded"
+    }
+  }
+```
+
 XFA型表單的&#x200B;**XML範例：**
 
-    &quot;
-    
-    &lt;？xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;？>
-    &lt;afData>
-    &lt;afBoundData>
-    &lt;user>
-    &lt;firstName>John&lt;/firstName>
-    &lt;lastName>Doe&lt;/lastName>
-    &lt;email>john.doe@example.com&lt;/email>
-    &lt;/user>
-    &lt;/afBoundData>
-    &quot;&#39;
-    
-    
+```
+  <?xml version="1.0" encoding="UTF-8"?>
+  <afData>
+    <afBoundData>
+      <user>
+        <firstName>John</firstName>
+        <lastName>Doe</lastName>
+        <email>john.doe@example.com</email>
+      </user>
+    </afBoundData>
+  </afData>
+```
 
 ### 預填URL範例
 
