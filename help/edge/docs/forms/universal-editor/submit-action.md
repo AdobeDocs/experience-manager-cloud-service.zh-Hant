@@ -4,9 +4,9 @@ description: 最適化表單提供多個提交動作。提交動作會定義提�
 keywords: 如何選取最適化表單的提交動作、將最適化表單連線至sharepoint清單、將最適化表單連線至sharepoint檔案庫、將最適化表單連線到表單資料模型(FDM)
 feature: Adaptive Forms, Edge Delivery Services
 role: User, Developer
-source-git-commit: d221959bbf19a874ec65eb414c4c49811df291ca
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '414'
 ht-degree: 47%
 
 ---
@@ -15,12 +15,11 @@ ht-degree: 47%
 
 | 版本 | 文章連結 |
 |---------|-----------------------------|
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
 | AEM as a Cloud Service （基礎元件） | [按一下這裡](/help/forms/configuring-submit-actions.md) |
 | AEM as a Cloud Service （核心元件） | [按一下這裡](/help/forms/configure-submit-actions-core-components.md) |
 | AEM as a Cloud Service (Edge Delivery Services) | 本文章 |
 
-## 概觀
 
 表單提交是使用者歷程中關鍵的最後步驟，就是在這時候處理所收集的資料並採取行動。此文件提供在通用編輯器中設定和管理自適應表單提交動作的綜合指南。
 
@@ -68,7 +67,7 @@ ht-degree: 47%
 您可以使用&#x200B;**編輯表單屬性**&#x200B;擴充功能的&#x200B;**提交**&#x200B;索引標籤，為在Universal Editor中建立的表單設定提交動作。
 
 **如何設定在Universal Editor中編寫之Forms的提交動作？**
-您可以使用&#x200B;**編輯表單屬性**&#x200B;擴充功能的&#x200B;**提交**&#x200B;索引標籤，為在Universal Editor中建立的表單設定提交動作。
+您可以使用**編輯表單屬性**&#x200B;擴充功能的&#x200B;**提交**&#x200B;索引標籤，為在Universal Editor中建立的表單設定提交動作。
 
 ![表單屬性圖示](/help/forms/assets/ue-form-properties-icon.png)
 

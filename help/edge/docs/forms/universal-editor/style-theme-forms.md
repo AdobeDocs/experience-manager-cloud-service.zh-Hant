@@ -4,7 +4,7 @@ description: 有效地自訂透過 Edge Delivery Services 交付的 AEM Forms �
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '2493'
 ht-degree: 55%
@@ -147,7 +147,6 @@ ht-degree: 55%
     --form-input-padding: 0.5rem 0.4rem;
 }
 ```
-
 +++
 
 +++ 版面配置與結構變數
@@ -1109,7 +1108,6 @@ main .form form .file-wrapper .files-list .file-description .file-description-na
   text-align: center;
 }
 ```
-
 +++
 
 +++ 根據欄位名稱設定樣式
@@ -1447,32 +1445,6 @@ main .form .text-wrapper input {
 
 +++
 
-+++ 常見選擇器錯誤
-
-```css
-/- ❌ Incorrect: Assumes direct nesting */
-.form form input {
-  /- This might miss inputs in wrappers */
-}
-
-/- ✅ Correct: Target actual structure */
-.form .text-wrapper input {
-  /- Targets actual HTML structure */
-}
-
-/- ❌ Avoid: Unnecessary specificity */
-main .form form .text-wrapper input {
-  /- Too specific, harder to override */
-}
-
-/- ✅ Preferred: Balanced specificity */
-.form .text-wrapper input {
-  /- Easier to maintain and override */
-}
-```
-
-+++
-
 +++ 表單狀態樣式
 
 ```css
@@ -1499,6 +1471,34 @@ main .form form .text-wrapper input {
 ```
 
 +++
+
++++ 常見選擇器錯誤
+
+```css
+/- ❌ Incorrect: Assumes direct nesting */
+.form form input {
+  /- This might miss inputs in wrappers */
+}
+
+/- ✅ Correct: Target actual structure */
+.form .text-wrapper input {
+  /- Targets actual HTML structure */
+}
+
+/- ❌ Avoid: Unnecessary specificity */
+main .form form .text-wrapper input {
+  /- Too specific, harder to override */
+}
+
+/- ✅ Preferred: Balanced specificity */
+.form .text-wrapper input {
+  /- Easier to maintain and override */
+}
+```
+
++++
+
+
 
 ### **元件特定最佳實務**
 

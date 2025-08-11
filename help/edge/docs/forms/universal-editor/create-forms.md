@@ -6,7 +6,7 @@ feature: Edge Delivery Services
 role: User, Developer
 level: Beginner
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '1774'
 ht-degree: 3%
@@ -41,10 +41,12 @@ ht-degree: 3%
 
 **決定指引：**
 
+![範本選擇決定](/help/edge/docs/forms/universal-editor/assets/template-selection-decision.svg)
+
 - 將&#x200B;**核心元件**&#x200B;用於複雜的工作流程、深入的AEM整合，或利用現有的AEM資產。
 - 使用&#x200B;**Edge Delivery Services**&#x200B;以提升效能、簡化功能和最新的開發實務。
 
-![範本選擇決定](/help/edge/docs/forms/universal-editor/assets/template-selection-decision.svg)
+
 *選擇適當範本型別的決定流程圖*
 
 ## 先決條件
@@ -343,7 +345,7 @@ ht-degree: 3%
 >[!BEGINTABS]
 >[!TAB 通用編輯器發佈]
 
-Edge Delivery Services範本的&#x200B;**&#x200B;**
+Edge Delivery Services範本的&#x200B;****
 
 1. 在Universal Editor中，按一下&#x200B;**發佈**&#x200B;按鈕（右上角）。
 2. 在對話方塊中確認發佈成功。
@@ -505,7 +507,7 @@ Edge Delivery Services範本的&#x200B;**&#x200B;**
 如果問題仍然存在：
 
 1. 檢查Adobe Experience Cloud服務狀態。
-2. 檢閱[Edge Delivery Services檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=zh-Hant)。
+2. 檢閱[Edge Delivery Services檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html)。
 3. 造訪[Adobe Experience League社群](https://experienceleaguecommunities.adobe.com/)。
 4. 聯絡Adobe客戶服務。
 
@@ -528,6 +530,6 @@ Edge Delivery Services範本的&#x200B;**&#x200B;**
 
 ### 效能最佳化
 
-- [Edge Delivery Services最佳實務](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=zh-Hant)：發揮最大效能。
+- [Edge Delivery Services最佳實務](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html)：發揮最大效能。
 - [表單分析](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/analytics.html)：追蹤表單效能和使用者行為。
 

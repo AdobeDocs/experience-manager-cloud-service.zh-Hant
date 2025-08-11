@@ -6,7 +6,7 @@ role: Admin, Architect, Developer
 level: Intermediate
 keywords: [發佈表單、Edge Delivery Services、表單設定、CORS、反向連結篩選器]
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: 746
 ht-degree: 2%
@@ -284,7 +284,8 @@ https://main--universaleditor--wkndforms.aem.page/content/forms/af/wknd-form
 
 - [設定表單提交動作](/help/edge/docs/forms/universal-editor/submit-action.md)
 - [表單的樣式和佈景主題](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
-- [新增reCAPTCHA保護](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
 - [建立回應式表單版面配置](/help/edge/docs/forms/universal-editor/responsive-layout.md)
+- [新增reCAPTCHA保護](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+
 
 

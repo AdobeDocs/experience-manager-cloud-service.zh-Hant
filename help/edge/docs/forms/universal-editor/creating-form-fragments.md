@@ -4,7 +4,7 @@ description: 了解如何在通用編輯器中建立表單片段，並將其新�
 feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '1670'
 ht-degree: 40%
@@ -12,12 +12,6 @@ ht-degree: 40%
 ---
 
 # 在通用編輯器中建立表單片段
-
-<!--
-<span class="preview"> This feature is available through the early access program. To request access, send an email with your GitHub organization name and repository name from your official address to <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> . For example, if the repository URL is https://github.com/adobe/abc, the organization name is adobe and the repository name is abc.</span> 
-
-<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hant#new-features). </span>
--->
 
 表單片段是可重複使用的元件，可消除重複開發工作並確保組織表單間的一致性。 您可以將這些元素建置為片段，並在多個表單中重複使用，而不是為每個表單重新建立常見區段，例如聯絡資訊、地址詳細資訊或同意協定。
 
@@ -162,7 +156,7 @@ Edge Delivery Services中的表單片段提供模組化表單開發的強大功�
 
    ![導覽至區段](/help/edge/docs/forms/universal-editor/assets/navigate-to-section.png)
 
-1. 按一下「**[!UICONTROL 新增]**」圖示，然後新增來自「**自適應表單元件**」清單的&#x200B;**[!UICONTROL 表單片段]**&#x200B;元件。
+1. 按一下「**[!UICONTROL 新增]**」圖示，然後新增來自「**自適應表單元件**」清單的&#x200B;**[!UICONTROL 表單片段]**元件。
    ![新增表單片段](/help/edge/docs/forms/universal-editor/assets/add-fragment.png)
 
    選取&#x200B;**[!UICONTROL 表單片段]**&#x200B;元件後，片段即會新增至您的表單中。您可以開啟片段的「**屬性**」來設定新增片段的屬性。例如，在「**屬性**」中隱藏片段的標題。

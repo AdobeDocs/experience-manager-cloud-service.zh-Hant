@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '2598'
 ht-degree: 0%
@@ -308,7 +308,7 @@ ht-degree: 0%
 
 1. **開啟通用編輯器**：
    - 導覽至AEM Sites主控台，選取您的頁面，按一下&#x200B;**編輯**
-   - 確定您已正確設定[通用編輯器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=zh-Hant)
+   - 確定您已正確設定[通用編輯器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html)
 
 2. **依此順序新增表單元件**：
    - 標題(H2)：「稅捐計算表單」
@@ -664,7 +664,7 @@ Forms成為資料收集、潛在客戶資格和使用者參與的強大工具。
 
 +++
 
-+++ 後續步驟
+## 後續步驟
 
 **建議的學習路徑**：
 
@@ -676,8 +676,7 @@ Forms成為資料收集、潛在客戶資格和使用者參與的強大工具。
 
 **其他資源**：
 
-- [通用編輯器檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=zh-Hant)，用於更廣泛的內容
+- [通用編輯器檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html)，用於更廣泛的內容
 - [Extension Manager指南](/help/implementing/developing/extending/extension-manager.md)啟用其他功能
 - [Edge Delivery Services表單](/help/edge/docs/forms/overview.md)，以取得完整的表單開發指引
 
-+++

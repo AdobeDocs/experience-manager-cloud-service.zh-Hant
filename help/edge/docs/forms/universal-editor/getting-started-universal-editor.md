@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '2609'
 ht-degree: 1%
@@ -70,7 +70,7 @@ ht-degree: 1%
 
 >[!TIP]
 >
-> 不熟悉AEM？ 從[AEM Sites快速入門手冊](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=zh-Hant)開始。
+> 不熟悉AEM？ 從[AEM Sites快速入門手冊](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html)開始。
 
 ## 路徑A：使用Forms建立新專案
 
@@ -186,7 +186,7 @@ AEM程式碼同步會自動同步AEM製作環境與GitHub存放庫之間的內�
 
     >[！NOTE]
     >
-    >發生建置問題？ 請參閱[疑難排解GitHub組建問題](#troubleshooting-github-build-issues)。
+>發生建置問題？ 請參閱[疑難排解GitHub組建問題](#troubleshooting-github-build-issues)。
 
 +++
 
@@ -759,27 +759,6 @@ AEM程式碼同步會自動同步AEM製作環境與GitHub存放庫之間的內�
 
 +++
 
-+++通用編輯器問題
-
-**問題：**&#x200B;表單元件未出現在通用編輯器中
-
-**解決方案：**
-
-- 確認已安裝並執行AEM程式碼同步
-- 檢查`fstab.yaml`是否有正確的AEM作者URL
-- 確保您的AEM執行個體已啟用搶先存取
-- 確認`component-definition.json`包含表單元件
-
-**問題：**&#x200B;發佈後未顯示變更
-
-**解決方案：**
-
-- 等待CDN快取重新整理
-- 檢查瀏覽器快取（嘗試無痕模式/私密模式）
-- 確認使用正確的URL格式
-
-+++
-
 +++表單功能問題
 
 **問題：**&#x200B;表單提交無法運作
@@ -801,4 +780,27 @@ AEM程式碼同步會自動同步AEM製作環境與GitHub存放庫之間的內�
 - 在本機開發環境中測試
 
 +++
+
++++通用編輯器問題
+
+**問題：**&#x200B;表單元件未出現在通用編輯器中
+
+**解決方案：**
+
+- 確認已安裝並執行AEM程式碼同步
+- 檢查`fstab.yaml`是否有正確的AEM作者URL
+- 確保您的AEM執行個體已啟用搶先存取
+- 確認`component-definition.json`包含表單元件
+
+**問題：**&#x200B;發佈後未顯示變更
+
+**解決方案：**
+
+- 等待CDN快取重新整理
+- 檢查瀏覽器快取（嘗試無痕模式/私密模式）
+- 確認使用正確的URL格式
+
++++
+
+
 

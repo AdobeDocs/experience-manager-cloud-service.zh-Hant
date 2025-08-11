@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: 預填最適化表單、最適化表單邊緣交付服務、最適化表單自動填入
-source-git-commit: 074b81f9cb1050eac5175bdc46796f9371f3a35b
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '1787'
 ht-degree: 3%
@@ -249,7 +249,7 @@ FDM中的表單元素會顯示在&#x200B;**內容瀏覽器**&#x200B;的&#x200B;*
 3. 選擇&#x200B;**預覽為HTML**
 4. 將引數附加至URL以測試預先填入：
 
-   https://your-preview-url.com?&lt;bindreferencefield>=&lt;value>
+   https://your-preview-url.com?<bindreferencefield>=<value>
 
    **範例：**
 
@@ -422,17 +422,19 @@ XFA型表單的&#x200B;**XML範例：**
 
 +++
 
++++我可以在一個表單中使用多個預填服務嗎？
+
+您可以為每個表單設定一個主要預填服務。 不過，您可以在單一表單資料模型中結合不同的資料來源，以實現類似的功能。
+
++++
+
 +++如何處理預填服務的驗證？
 
 驗證取決於您的資料來源設定。 對於以FDM為基礎的預先填入，請在資料來源設定中設定驗證。 對於草稿預填，使用者通常需要登入才能存取其儲存的草稿。
 
 +++
 
-+++我可以在一個表單中使用多個預填服務嗎？
 
-您可以為每個表單設定一個主要預填服務。 不過，您可以在單一表單資料模型中結合不同的資料來源，以實現類似的功能。
-
-+++
 
 ## 相關主題
 

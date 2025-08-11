@@ -4,7 +4,7 @@ description: 為 EDS Forms 建立自訂元件
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: f843a7c91c3d47610580a3787a96e7e3bd49ba09
+source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '1789'
 ht-degree: 97%
@@ -504,12 +504,12 @@ const OOTBComponentDecorators = ['file-input',
 - 數字輸入
 - 日期輸入
 - 面板
-- 核取方塊
-- 下拉式清單
-- 單選按鈕群組
 - 純文字
 - 檔案輸入
 - 電子郵件
 - 影像
 - 按鈕
+- 核取方塊
+- 下拉式清單
+- 單選按鈕群組
 
