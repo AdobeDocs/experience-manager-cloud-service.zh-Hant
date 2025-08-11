@@ -345,7 +345,7 @@ ht-degree: 3%
 >[!BEGINTABS]
 >[!TAB 通用編輯器發佈]
 
-Edge Delivery Services範本的&#x200B;****
+Edge Delivery Services範本的&#x200B;**&#x200B;**
 
 1. 在Universal Editor中，按一下&#x200B;**發佈**&#x200B;按鈕（右上角）。
 2. 在對話方塊中確認發佈成功。

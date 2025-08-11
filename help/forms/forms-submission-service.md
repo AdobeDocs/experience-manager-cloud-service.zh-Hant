@@ -375,7 +375,7 @@ Postman提供方便使用者的介面，用於測試API提交。
 
 **要求設定：**
 
-    ``json
+    &grave;&grave;json
 
 發佈https://forms.adobe.com/adobe/forms/af/submit/your-form-id
 
@@ -384,8 +384,8 @@ Content-Type： application/json
 x-adobe-routing： tier=live，bucket=main—your-repo—your-org
 
 內文(JSON)：
-{
-&quot;data&quot;： {
+&lbrace;
+&quot;data&quot;： &lbrace;
 &quot;startDate&quot;： &quot;2025-01-10&quot;，
 &quot;endDate&quot;： &quot;2025-01-25&quot;，
 &quot;destination&quot;： &quot;Australia&quot;，
@@ -396,8 +396,9 @@ x-adobe-routing： tier=live，bucket=main—your-repo—your-org
 &quot;age&quot;： &quot;35&quot;，
 &quot;subscribe&quot;：空值，
 &quot;email&quot;： &quot;mary@gmail.com&quot;
-}
-}
+&rbrace;
+&rbrace;
+
 ```
 
 **預期的回應：**
@@ -427,11 +428,12 @@ x-adobe-routing： tier=live，bucket=main—your-repo—your-org
 >[!TAB macOS/Linux]
 
 ```bash
+
 curl -X POST "https://forms.adobe.com/adobe/forms/af/submit/your-form-id" \
     --header "Content-Type: application/json" \
   --header "x-adobe-routing: tier=live,bucket=main--your-repo--your-org" \
-    --data '{
-        "data": {
+    --data '&lbrace;
+        "data": &lbrace;
             "startDate": "2025-01-10",
             "endDate": "2025-01-25",
             "destination": "Australia",
@@ -442,24 +444,28 @@ curl -X POST "https://forms.adobe.com/adobe/forms/af/submit/your-form-id" \
             "age": "35",
             "subscribe": null,
       "email": "joe@example.com"
-                }
-            }'
+                &rbrace;
+            &rbrace;'
+
         ```
 
 >[!TAB Windows Command Prompt]
 
 ```cmd
+
 curl -X POST "https://forms.adobe.com/adobe/forms/af/submit/your-form-id" ^
     --header "Content-Type: application/json" ^
   --header "x-adobe-routing: tier=live,bucket=main--your-repo--your-org" ^
   --data "{\"data\": {\"startDate\": \"2025-01-10\", \"endDate\": \"2025-01-25\", \"destination\": \"Australia\", \"class\": \"First Class\", \"budget\": \"2000\", \"amount\": \"1000000\", \"name\": \"Joe\", \"age\": \"35\", \"subscribe\": null, \"email\": \"joe@example.com\"}}"
+
 ```
 
 >[!TAB Windows PowerShell]
 
 ```powershell
-$body = @{
-  data = @{
+
+$body = @&lbrace;
+  data = @&lbrace;
     startDate = "2025-01-10"
     endDate = "2025-01-25"
     destination = "Australia"
@@ -470,13 +476,14 @@ $body = @{
     age = "35"
     subscribe = $null
     email = "joe@example.com"
-  }
-} | ConvertTo-Json -Depth 3
+  &rbrace;
+&rbrace; | ConvertTo-Json -Depth 3
 
-Invoke-RestMethod -Uri "https://forms.adobe.com/adobe/forms/af/submit/your-form-id" `
-  -Method POST `
-  -Headers @{"Content-Type"="application/json"; "x-adobe-routing"="tier=live,bucket=main--your-repo--your-org"} `
+Invoke-RestMethod -Uri "https://forms.adobe.com/adobe/forms/af/submit/your-form-id" &grave;
+  -Method POST &grave;
+  -Headers @{"Content-Type"="application/json"; "x-adobe-routing"="tier=live,bucket=main--your-repo--your-org"} &grave;
   -Body $body
+
     ```
 
 >[!ENDTABS]
@@ -488,6 +495,7 @@ Invoke-RestMethod -Uri "https://forms.adobe.com/adobe/forms/af/submit/your-form-
 **Successful Response:**
 
 ```http
+
 HTTP/1.1 201 Created
 Connection: keep-alive
 Content-Length: 0
@@ -495,6 +503,7 @@ X-Request-Id: 02a53839-2340-56a5-b238-67c23ec28f9f
 X-Message-Id: 42ecb4dd-b63a-4674-8f1a-05a4a5b0372c
 Date: Fri, 10 Jan 2025 13:06:10 GMT
 Access-Control-Allow-Origin: *
+
 ```
 
 **資料驗證：**
@@ -522,44 +531,52 @@ Access-Control-Allow-Origin: *
 **問題： 403禁止錯誤**
 
 ```
+
 Causes: Missing or incorrect access permissions
 Solutions:
 - Verify forms@adobe.com has Editor access to your spreadsheet
 - Check that your repository is added to the allowlist
 - Confirm the x-adobe-routing header format
+
 ```
 
 **問題： 404 Not Found錯誤**
 
 ```
+
 Causes: Incorrect Form ID or endpoint URL
 Solutions:  
 - Verify your Form ID is correct
 - Check the API endpoint URL format
 - Ensure your form is published and live
+
 ```
 
 
 **問題：資料未出現在試算表中**
 
 ```
+
 Causes: Missing 'incoming' sheet or permission issues
 Solutions:
 - Confirm 'incoming' sheet exists (case-sensitive)
 - Verify column headers match form field names exactly
 - Check forms@adobe.com has edit permissions
 - Ensure spreadsheet is shared properly
+
 ```
 
 
 **問題：無效的JSON格式錯誤**
 
 ```
+
 Causes: Malformed request body
 Solutions:
 - Validate JSON syntax using online JSON validators
 - Ensure proper escaping of special characters
 - Check quote marks and brackets are balanced
+
 ```
 
 
