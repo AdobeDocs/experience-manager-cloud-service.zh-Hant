@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: 829881a91a6f1c9a020c04ec581ce010b07bae01
+source-git-commit: 840db9fff35af0da212fa03e2d9255cca9524ae6
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '551'
 ht-degree: 8%
 
 ---
@@ -68,7 +68,7 @@ curl -svo /dev/null https://www.example.com \
 ```
 
 * 將&#x200B;**`www.example.com`**&#x200B;取代為您的網域。
-* 以Cloud Manager中顯示的Edge IP位址取代&#x200B;**151.101.3.10**&#x200B;以取得此對應。
+* IP位址``151.101.3.10``是可用來存取AEM Cloud Service的IP之一。 另請參閱[APEX記錄](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md#adobe-managed-cert-apex-record)。
 
 `--resolve`旗標會強制要求傳送至指定的IP，而且只有在您網域的憑證和路由正確安裝之後，才會傳回成功。
 
