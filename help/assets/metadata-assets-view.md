@@ -5,12 +5,13 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 460dd76a1d7d1d3f85a924a0aa88e8649ada32bc
+source-git-commit: fecc13161b2502aab086e4c1c89d650d003cec06
 workflow-type: tm+mt
-source-wordcount: '2430'
-ht-degree: 74%
+source-wordcount: '2557'
+ht-degree: 70%
 
 ---
+
 
 # 資產檢視的中繼資料 {#metadata}
 
@@ -32,7 +33,7 @@ ht-degree: 74%
 
 ![檢視資產的中繼資料](assets/metadata-view.png)
 
-*圖：若要檢視資產及其中繼資料，請從工具列按一下&#x200B;**[!UICONTROL 詳細資訊]**&#x200B;或按兩下資產。*
+*圖：若要檢視資產及其中繼資料，請從工具列按一下&#x200B;**[!UICONTROL 詳細資訊]**或按兩下資產。*
 
 標題、說明和上傳日期之類的基本中繼資料可在[!UICONTROL 基本]標籤中取得。[!UICONTROL 進階]標籤包含更進階的中繼資料，例如相機型號、鏡頭詳細資訊和地理標籤。[!UICONTROL 標記]標籤會根據影像內容包含自動套用的標記。
 
@@ -48,7 +49,7 @@ ht-degree: 74%
 
 ![檢視資產的智慧型標記](assets/metadata-view-tags.png)
 
-*圖：若要檢視智慧標記，請從工具列按一下&#x200B;**[!UICONTROL 詳細資訊]**&#x200B;或按兩下資產。*
+*圖：若要檢視智慧標記，請從工具列按一下&#x200B;**[!UICONTROL 詳細資訊]**或按兩下資產。*
 
 智慧型標記也包含信賴分數 (以百分比呈現)。這表示與套用標記相關的信賴度。您可以審核自動套用的智慧型標記。
 
@@ -69,7 +70,7 @@ ht-degree: 74%
 >title="中繼資料表單"
 >abstract="[!DNL Experience Manager Assets] 預設會提供許多標準中繼資料欄位。組織擁有其他中繼資料需求，並需要更多中繼資料欄位以新增特定企業中繼資料。 中繼資料表單可讓企業將自訂中繼資料欄位新增到資產的詳細資訊頁面。特定企業中繼資料能夠改善其資產的控管和探索。"
 
-Assets檢視預設會提供許多標準中繼資料欄位。 組織擁有其他中繼資料需求，並需要更多中繼資料欄位以新增特定企業中繼資料。中繼資料表單可讓企業將自訂中繼資料欄位新增到資產的[!UICONTROL 詳細資訊]頁面。特定企業中繼資料能夠改善其資產的控管和探索。您可以從零開始建立表單，或改變現有表單的用途。
+Assets檢視預設會提供許多標準中繼資料欄位。 組織擁有其他中繼資料需求，並需要更多中繼資料欄位以新增特定企業中繼資料。中繼資料表單可讓企業將自訂中繼資料欄位新增到資產的[!UICONTROL 詳細資訊]頁面。企業特定的後設資料能夠改善其資產的治理和探索。您可以從零開始建立表單，或改變現有表單的用途。
 
 您可以為不同的資產類型 (不同的 MIME 類型) 設定中繼資料表單。使用與檔案的 MIME 類型相同的表單名稱。Assets檢視會自動比對上傳的資產MIME型別與表單的名稱，並根據表單欄位更新上傳資產的中繼資料。
 <!--
@@ -180,7 +181,6 @@ MIME 子類型 > MIME 類型 > `default` 表單 > 現成可用的表單
    * 按一下 ![編輯圖示](assets/do-not-localize/edit.svg) 以編輯 URL。
 1. 按一下「**[!UICONTROL 儲存]**」以儲存變更。
 
-
 ### 使用中繼資料表單中的標記元件 {#tag-component-metadata-form}
 
 根元素代表可與資產建立關聯之標記的樹狀結構，有助於根據指派給資產的標記來識別該資產。此外，當在中繼資料編輯器中設定中繼資料表單時，您還可以限制特定分類法的存取。
@@ -212,6 +212,17 @@ See [Assign metadata form to folders](#assign-metadata-form-folder). Follow the 
 -->
 
 若要檢視已設定的根標記，請前往資產的詳細資料頁面，該頁面上會執行中繼資料表單和根標記之間的對應。
+
+## 編輯中繼資料Forms {#edit-metadata-forms}
+
+執行以下步驟來編輯中繼資料表單：
+
+1. 導覽至[!DNL Assets View]首頁並選取&#x200B;**[!DNL Metadata Forms]**&#x200B;以檢視中繼資料表單的清單。
+1. 選取表單並按一下&#x200B;**[!UICONTROL 編輯]**&#x200B;以開啟[!DNL Metadata Form Editor]頁面。 此頁面在左窗格中顯示中繼資料表單的元件，在中間窗格中顯示如「基本」、「進階」、「標籤」等標籤，在右窗格中顯示用於編輯中繼資料屬性的「設定」面板。
+1. 開啟索引標籤（**[!DNL Basic]**、**[!DNL Advanced]**&#x200B;或&#x200B;**[!DNL Tags]**）。
+1. 選取中繼資料屬性，以在&#x200B;**[!UICONTROL 設定]**&#x200B;面板中編輯其設定。 您可以在&#x200B;**[!UICONTROL 設定]**&#x200B;面板中更新屬性對應、重新命名標籤、修改或新增屬性值，以及執行更多此類編輯。
+1. 按一下&#x200B;**[!UICONTROL 預覽]**&#x200B;以檢閱表單變更，然後再儲存這些變更。
+1. 按一下[儲存]以套用變更。****
 
 ## 使用AI產生的中繼資料加強內容探索 {#ai-smart-tags}
 
@@ -253,13 +264,13 @@ AI不會依賴手動輸入，而是自動將描述性標籤指派給數位資產
 
 ## 後續步驟 {#next-steps}
 
-* [觀看在Assets檢視中管理中繼資料表單的相關影片](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html?lang=zh-Hant)
+* [觀看在Assets檢視中管理中繼資料表單的相關影片](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html)
 
 * 使用資產檢視使用者介面所提供的[!UICONTROL 意見回饋]選項提供產品意見回饋
 
 * 若要提供文件意見回饋，請使用右側邊欄提供的[!UICONTROL 編輯此頁面]![來編輯頁面](assets/do-not-localize/edit-page.png)或[!UICONTROL 記錄問題]![來建立 GitHub 問題](assets/do-not-localize/github-issue.png)
 
-* 聯絡[客戶服務](https://experienceleague.adobe.com/zh-hant?support-solution=General#support)
+* 聯絡[客戶服務](https://experienceleague.adobe.com/?support-solution=General#support)
 
 <!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
 To reuse an existing form to create a form, do one of these:
@@ -290,4 +301,3 @@ How can one search based strictly on the metadata. Similar to AEM Assets GQL que
 >
 >* [Search assets](search.md).
 -->
-
