@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 280e02ba0ace1fe123fd5112a982c6434fd4d499
 workflow-type: tm+mt
 source-wordcount: '1619'
-ht-degree: 12%
+ht-degree: 99%
 
 ---
 
@@ -18,120 +18,120 @@ ht-degree: 12%
 
 ## 版本 21772 {#21772}
 
-以下摘要說明維護版本21772的持續改善，該版本於2025年8月6日公開發佈。 前一個維護版本為版本 21706。
+以下是維護版本 21772 的持續改善內容，該版本於 2025 年 8 月 6 日公開發行。前一個維護版本是版本 21706。
 
-啟用 2025.8.0 功能即可使用此維護版本的完整功能集。如需詳細資訊，請參閱 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
+啟用 2025.8.0 功能即可使用此維護版本的完整功能集。如需詳細資訊，請參閱 [Experience Manager 發行路徑圖](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
 ### 新功能  {#new-features-21772}
 
-* SITES-30049：新增端點，以依據其UUID擷取內容片段的語言副本。
+* SITES-30049：加入新端點，以便使用其 UUID 來擷取內容片段的語言副本。
 
 ### 增強功能 {#enhancements-21772}
 
-* CQ-4358722 ：解決Java 11和Java 17之間地區設定代碼不同所導致的本地化問題。
-* Forms-19624：啟用互動式通訊(IC)。 它可讓組織結合結構化範本與動態資料，以提供個人化的隨選通訊，例如報表、發票和信件。 IC具備網路型範本設計、可重複使用的內容片段、規則驅動的變化以及順暢的資料整合等功能，可跨管道實現一致且可擴充的客戶通訊。
-* Forms-19587、FORMS-17107、FORMS-19591、FORMS-19582、FORMS-20129、FORMS-20002、FORMS-19593、FORMS-20655、FORMS-19583、FORMS-18024、FORMS-19581：已對最適化Forms規則編輯器進行下列增強功能：
-   * 函式清單中的`validate`方法現在可以驗證面板、欄位和表單。
-   * 改善使用者端自訂函式剖析，以支援ES10+功能和靜態匯入。
-   * 在規則編輯器中新增現成可用的(OOTB) 「下載記錄檔案(DoR)」按鈕。
-   * 新增對規則中動態變數的支援。
-   * 啟用根據自訂事件建立規則的功能。
-   * 可重複面板的規則現在會在正確上下文中執行，而非僅在最後一個面板例項上執行。
-   * 現在可以根據查詢引數、UTM引數和瀏覽器引數觸發規則。
-   * 新增對EDS (Experience Data Store)中表單特定自訂函式指令碼的支援。
-   * 新增在規則編輯器的成功處理常式中，在「瀏覽至」動作中使用`EVENT_PAYLOAD`的支援。
-   * 在規則編輯器的輸入引數中支援的函式呼叫，而且如果函式呼叫中遺漏任何必要的引數，確保不會儲存規則。
-   * 在規則編輯器UI中醒目提示失效的規則。
-* Forms-18450： reCAPTCHA V2 （包括隱藏的reCAPTCHA）現在更容易在調適型Forms中設定和使用。 設定現在可在單一位置管理，讓您更輕鬆地在表單中啟用垃圾郵件保護。
-* Forms-18385：新增支援透過Output服務從XDP產生AFP，以及在AEM Forms中產生資料。
-* Forms-17789：在規則編輯器中新增立即可用按鈕以下載記錄檔案(DoR)。
-* Forms-20313、FORMS-2896：新增對`dorExclude`屬性的支援，以停用核心元件型表單中的特定功能。
-* Forms-20262：在使用者端處理無效的檔案附件（0位元組）。
-* Forms-18347：改善遺失表單容器Proxy元件的最適化Forms編輯器記錄。
-* Forms-16205：從核心元件型表單的記錄檔案(DoR)中排除停用的元件。
-* Forms-10836：將記錄檔案(DoR)中主版頁面屬性的方向從右至左語言變更。
-* SITES-33025：透過ID而非路徑開啟新的CF編輯器。
-* SITES-32741：非同步觸發內容片段頁面參考的更新。
-* SITES-32087： GraphQL：在StringArray上新增對`_ignoreCase`的支援。
-* SITES-12211：改善範本編輯器中的效能
-* SITES-32861：透過區塊處理來改善即時副本建立的效能。
-* SITES-21383：內容片段啟動刪除操作的效能最佳化。
-* SITES-31165：將轉出作業分割為易於管理的區塊，以提升效能。
-* SITES-21353：使用資料庫索引改善內容片段啟動項的查詢效能。
-* SITES-30495：增強功能支援內容片段啟動中以UUID為基礎的片段參考。
-* SITES-32151： API增強功能公開容器屬性功能。
-* SITES-26849：移動或刪除內容片段變數時調整反向參照。
-* SITES-31846：新增選項，以便在相同的資料夾中複製/貼上根片段和參照，以進行複製樹狀結構操作。
-* SITES-30241：移動、重新命名或刪除片段時，調整位於長文字欄位中的參照。
-* SITES-32684：增強同步UI結構描述中索引標籤變更的機制。
-* SITES-33308：新增在編輯模型時重試機制，以將變更同步到UI結構描述。
-* SITES-32247：「文字和Personalization」元件中缺少對話方塊Personalization和UI不對齊。
-* SITES-32261：體驗片段i18n未套用至欄位。
-* SITES-32666：範本述詞包含`\n`而導致HTML查詢失敗。
-* SITES-32674：精選影像欄位影像選擇器不適用於「頁面建立精靈」，儘管`cq:showOnCreate`。
-* SITES-32014：使用通用編輯器的Edge Delivery：為localhost、aem.page和aem.live新增自動設定CORS原則
-* SITES-26532：使用通用編輯器的Edge Delivery：新增對本地化URL的支援（搶先存取）。
-* SITES-30887：新增儲存在工作流程中繼資料中的內容片段uuid。
+* CQ-4358722：已解決因為 Java 11 和 Java 17 之間地區設定代碼不同而造成的本地化問題。
+* FORMS-19624：已啟用互動式通訊 (IC)。組織可以透過這項功能，將結構化範本與動態資料結合，並傳送個人化的隨選通訊 (例如報表明細、發票和來往信函)。IC 具有網頁型範本設計、可重複使用的內容片段、規則驅動的變化版本和資料無縫整合等功能，可實現跨頻道的一致且可擴充的客戶通訊內容。
+* FORMS-19587、FORMS-17107、FORMS-19591、FORMS-19582、FORMS-20129、FORMS-20002、FORMS-19593、FORMS-20655、FORMS-19583、FORMS-18024、FORMS-19581：自適應表單規則編輯器增強以下功能：
+   * 函數清單中的 `validate` 方法現在可以驗證面板、欄位和表單。
+   * 改善用戶端自訂函數剖析功能，以支援 ES10+ 功能和靜態匯入。
+   * 在規則編輯器中新增一個立即可用的 (OOTB)「下載記錄文件 (DoR)」按鈕。
+   * 在規則中新增對動態變數的支援。
+   * 啟用基於自訂事件建立規則的功能。
+   * 現在可重複面板的規則可在正確的環境中執行，而不是僅在最後一個面板實例上執行。
+   * 現在可以根據查詢參數、UTM 參數和瀏覽器參數觸發各個規則。
+   * 在 EDS (體驗資料儲存區) 中新增對表單專用的自訂函數指令碼的支援。
+   * 在規則編輯器的成功處理常式中，新增在「導航到」動作中使用 `EVENT_PAYLOAD` 的支援。
+   * 在規則編輯器中支援在輸入參數中使用函數呼叫，並確保如果函數呼叫缺少任何必要的參數，便不會儲存規則。
+   * 在規則編輯器 UI 中標示出有問題的規則。
+* FORMS-18450：簡化在自適應表單中設定和使用 reCAPTCHA V2 (包括隱形 reCAPTCHA) 的流程。現在集中於一個地方管理設定，您可以更輕鬆地在表單中啟用垃圾郵件保護。
+* FORMS-18385：新增在 AEM Forms 中透過 Output 服務使用 XDP 和資料來產生 AFP 的支援。
+* FORMS-17789：在規則編輯器中新增一個立即可用的按鈕，可供下載記錄文件 (DoR)。
+* FORMS-20313、FORMS-2896：新增對 `dorExclude` 屬性的支援，可以在核心元件型表單中停用特定功能。
+* FORMS-20262：處理在用戶端的無效檔案附件 (0 位元組)。
+* FORMS-18347：改善自適應表單編輯器記錄功能缺少表單容器代理元件的問題。
+* FORMS-16205：在核心元件型表單中排除記錄文件 (DoR) 的停用元件。
+* FORMS-10836：針對從右到左書寫的語言，變更記錄文件 (DoR) 主頁屬性的顯示方向。
+* SITES-33025：透過 ID 而不是路徑開啟新的 CF 編輯器。
+* SITES-32741：以非同步方式觸發內容片段頁面參考的更新。
+* SITES-32087：GraphQL：在 StringArray 上新增對 `_ignoreCase` 的支援。
+* SITES-12211：改善範本編輯器的效能
+* SITES-32861：提高透過分塊處理建立 Live Copy 的效能。
+* SITES-21383：刪除內容片段 Launch 的操作效能最佳化。
+* SITES-31165：將轉出操作拆分為可管理的區塊來增強效能。
+* SITES-21353：使用資料庫索引來改善內容片段 Launch 的查詢效能。
+* SITES-30495：透過增強功能，支援在內容片段 Launch 中使用基於 UUID 的片段參考。
+* SITES-32151：API 增強功能開放使用容器屬性功能。
+* SITES-26849：在內容片段變化版本被移動或刪除時調整反向參考。
+* SITES-31846：新增複製樹狀結構操作的選項，可將根片段和參考複製/貼上到同一個資料夾。
+* SITES-30241：在移動、重新命名或刪除片段時，調整位於長文字欄位內的參考。
+* SITES-32684：增強在 UI 結構描述中同步處理標籤變更的機制。
+* SITES-33308：新增重試機制，以便在編輯模型時同步處理 UI 結構描述的變更。
+* SITES-32247：「文字和個人化」元件中缺少對話框個人化設定以及 UI 無法正確對齊。
+* SITES-32261：體驗片段國際化功能未套用至欄位。
+* SITES-32666：範本述詞包含 `\n` 導致 HTML 查找失敗。
+* SITES-32674：頁面建立精靈雖然已設定 `cq:showOnCreate`，但是特色影像欄位的影像選擇器無法正常運作。
+* SITES-32014：搭配通用編輯器使用 Edge Delivery：針對 localhost、aem.page 和 aem.live 新增 CORS 原則自動設定
+* SITES-26532：搭配通用編輯器使用 Edge Delivery：新增對本地化 URL 的支援 (搶先體驗)。
+* SITES-30887：新增儲存在工作流程後設資料中的內容片段 UUID。
 
 ### 已修正的問題 {#fixed-issues-21772}
 
-* CQ-4360190：修正嘗試在不支援作業的keySet上使用add時發生的`UnsupportedOperationException`。
-* CQ-4360421：解決Microsoft Translator訂閱金鑰加密的問題，以改善安全性和相容性。
-* Forms-20980：修正最適化Forms中自訂顯示格式之日期選擇器的鍵盤協助工具問題。
-* Forms-20498：在OdataResponse中新增檢查Null指標例外狀況，以防止執行階段錯誤。
-* Forms-20947：解決多項協助工具問題，包括熒幕助讀程式違規和文字截斷/重疊問題。
-* Forms-21030、FORMS-20630：解決在調適型表單中，針對多個選取專案設定的下拉式欄位問題。 產生的PDF現在正確包含所有選取的值。
-* Forms-19579：修正重新儲存時「叫用」服務規則無法自動修正的問題。
-* Forms-20734：修正輸出服務針對XFAF型輸入PDF範本所產生PDF檔案中的簽名欄位重複。
-* Forms-20934：修正AEM Forms編寫UI中的「自動填寫屬性」下拉式清單，移除重複專案並納入所有標準HTML自動完成Token。
-* Forms-20700：解決AEM Forms中初次載入時，下拉式說明文字忽隱忽現的問題。
-* Forms-20307：修正內嵌在網站頁面上的表單未透過4字元地區設定翻譯的問題。
-* Forms-20493：解決擷取資料時自動重新整理表單，造成使用者不便的問題。
-* Forms-18455：增強核心元件的最適化Forms編輯器，以顯示資料來源樹狀結構中已使用資料物件的點。
-* Forms-19373：防止未設定任何復寫代理的發佈環境發生復寫錯誤。
-* Forms-20042：修正啟用HTML設定的Apache Sling GET Servlet設定所導致的屬性檢視中斷。
-* Forms-20036、FORMS-19978：解決PDF/A-1b的法規遵循和驗證問題。
-* Forms-19166：將pagedatasource.jsp移動到servlet以提高錯誤棧疊追蹤的清晰度，並新增更多護欄和記錄。
-* Forms-16466：修正AEM Forms中無法正確填入可重複面板的問題。
-* Forms-19629：解決客戶JSON結構描述剖析的問題，提供無效結果。
-* LC-3923083：解決XDP範本中邊界專案的「路徑物件未標籤」錯誤。
-* SITES-33177：使用通用編輯器的Edge Delivery：當儲存為逗號分隔字串時，請修正損壞的區段樣式。
-* SITES-33262：使用通用編輯器的Edge Delivery：修正沒有名稱的區塊屬性會中斷頁面的轉譯和發佈。
-* SITES-33309：使用通用編輯器的Edge Delivery：在寫入試算表時修正`IllegalArgumentException`。
-* SITES-33408：使用通用編輯器的Edge Delivery：修正試算表在變更後未顯示為已修改。
-* SITES-31992： GraphQL：修正套件組合啟動期間模型掃描偶爾發生的錯誤。
-* SITES-29967： GraphiQL：長查詢名稱被切斷。
-* SITES-26266：不以`/`開頭的內容參考不會從BE回應(Java API)傳回。
-* SITES-17874： GraphQL持續查詢：修正內容型別應用程式/graphql-response+json的編碼。
-* SITES-24506：通知搜尋結果的熒幕閱讀器。
-* SITES-25268：改善註解的熒幕助讀程式。
-* SITES-32366：隱藏在RTE對話方塊後的拼字檢查結果。
-* SITES-32829：改進MediaQuery模擬器以剖析媒體查詢層級3和層級4。
-* SITES-32278：已修正標籤欄位，以正確使用欄位標籤。
-* SITES-25244：水準列不再出現在影像強制回應視窗中。
-* SITES-33395：修正內容片段Live Copy同步化的轉出按鈕功能。
+* CQ-4360190：已修正在嘗試對不支援該操作的 keySet 使用 add 時發生 `UnsupportedOperationException` 的問題。
+* CQ-4360421：解決 Microsoft Translator 訂閱金鑰加密的問題，以提高安全性和相容性。
+* FORMS-20980：修正自適應表單中具有自訂顯示格式的日期選擇器的鍵盤協助工具問題。
+* FORMS-20498：在 OdataResponse 中新增對 Null 指標異常狀況的檢查，以防止執行階段錯誤。
+* FORMS-20947：解決多個無障礙相關問題，包括螢幕閱讀器違規和文字截斷/重疊問題。
+* FORMS-21030、FORMS-20630：解決自適應表單中下拉式欄位設定為多重選項的問題。所產生的 PDF 現在正確地包含所有選取的值。
+* FORMS-19579：修正叫用服務規則在重新儲存時未自動修正的問題。
+* FORMS-20734：已修正由 Output 服務為 XFAF 型輸入 PDF 範本所產生的 PDF 文件中，簽名欄位重複的問題。
+* FORMS-20934：修正 AEM Forms 製作 UI 中自動填入屬性的下拉式選單，以移除重複的項目並包含所有標準 HTML 自動完成權杖。
+* FORMS-20700：解決 AEM Forms 中初次載入時下拉式說明文字閃爍跳動的問題。
+* FORMS-20307：修正網站頁面上嵌入的表單對於 4 個字元的地區設定均未進行翻譯的問題。
+* FORMS-20493：解決提取資料時表單自動重新整理而造成使用者不便的問題。
+* FORMS-18455：增強核心元件的自適應表單編輯器功能，針對資料來源樹中使用的資料物件顯示圓點。
+* FORMS-19373：防止未設定任何複寫代理程式的發佈環境發生複寫錯誤。
+* FORMS-20042：修正啟用 HTML 設定的 Apache Sling GET Servlet 設定導致屬性視圖無法顯示的問題。
+* FORMS-20036、FORMS-19978：解決 PDF/A-1b 的合規性和驗證問題。
+* FORMS-19166：將 pagedatasource.jsp 移至 servlet 以提高錯誤堆疊追蹤的清晰度，並新增更多護欄和記錄。
+* FORMS-16466：修正 AEM Forms 中可重複面板並未正確填入的問題。
+* FORMS-19629：解決客戶 JSON 結構描述剖析提供無效結果的問題。
+* LC-3923083：解決 XDP 範本中有邊框項目的「路徑物件未標記」錯誤。
+* SITES-33177：搭配通用編輯器使用 Edge Delivery：修正儲存為逗號分隔字串時區段樣式錯誤的問題。
+* SITES-33262：搭配通用編輯器使用 Edge Delivery：修正未設定名稱屬性的區塊會中斷頁面轉譯與發佈的問題。
+* SITES-33309：搭配通用編輯器使用 Edge Delivery：修正寫入到試算表時在欄中加入斜線而造成的 `IllegalArgumentException` 問題
+* SITES-33408：搭配通用編輯器使用 Edge Delivery：修正試算表在進行變更後並未顯示為已修改的問題。
+* SITES-31992：GraphQL：修正套件啟動期間模型掃描中偶爾出現的錯誤。
+* SITES-29967：GraphiQL：長查詢名稱被截斷。
+* SITES-26266：不是以 `/` 開頭的內容參考，後端回應便不會回傳 (Java API)。
+* SITES-17874：GraphQL 持續性查詢：修正內容類型 application/graphql-response+json 的編碼。
+* SITES-24506：螢幕閱讀器告知搜尋結果。
+* SITES-25268：改善螢幕閱讀器的註解功能。
+* SITES-32366：拼字檢查結果隱藏在 RTE 對話框後面。
+* SITES-32829：改進 MediaQuery 模擬器功能，可以剖析 Media Query Level 3 和 4。
+* SITES-32278：已修正標記欄位，可以正確使用欄位標籤。
+* SITES-25244：影像的模態視窗中不再出現水平橫列。
+* SITES-33395：修正內容片段 Live Copy 同步的轉出按鈕功能。
 * SITES-33147：修正影響即時關係功能的服務繫結問題。
-* SITES-33528：修正啟動促銷活動期間的時間戳記保留問題。
-* SITES-33014：修正從LaunchesAdapterFactory產生過多警告記錄的問題。
-* SITES-32305：修正版面變更後的即時副本繼承中斷功能。
-* SITES-32268：停用內容片段搜尋的URL編碼。
-* SITES-32772：啟用SITES-31455的增強功能時，變數欄位中鎖定的屬性一律為false — 這和統一etag值有關。
-* SITES-32696：修正具有中斷繼承的內容片段即時副本欄位無法再編輯的問題。
-* SITES-31712：來自Prod Author上的Omni-search的緩慢查詢。
-* SITES-33039：頁面事件未正確觸發。
+* SITES-33528：修正啟動促銷期間保存時間戳記的問題。
+* SITES-33014：修正 LaunchesAdapterFactory 產生過多警告記錄的問題。
+* SITES-32305：在版本變更後修正 Live Copy 的繼承中斷功能。
+* SITES-32268：停用內容片段搜尋的 URL 編碼。
+* SITES-32772：啟用 SITES-31455 的增強功能時，變化版本欄位中鎖定的屬性始終為 false - 與統一 etag 值有關。
+* SITES-32696：修正繼承中斷的內容片段 Live Copy 欄位無法再進行編輯的問題。
+* SITES-31712：針對生產環境作者進行全方位搜尋的查詢速度緩慢。
+* SITES-33039：未正確觸發頁面事件。
 * SITES-31192：體驗片段在移動後遺失版本歷史記錄。
-* SITES-33529：將ACS行銷活動範本與AEM頁面連結時發生錯誤。
-* SITES-33678：為SITES-33529新增切換按鈕。
-* SITES-33468： AEMaaCS無法連線到ACS。
+* SITES-33529：將 ACS 行銷活動範本與 AEM 頁面連結時發生錯誤。
+* SITES-33678：為 SITES-33529 新增切換功能。
+* SITES-33468：AEMaaCS 無法連接到 ACS。
 
 ### 功能變更 {#altered-functionality-21772}
 
-* SITES-26344：在端點之間統一驗證`fragmentId`/`modelId` — 這些ID現在已驗證，若無效，將傳回400狀態代碼。
-* SITES-29598：更新內容片段模型時，驗證新增到片段參考欄位中的內容片段參考。
+* SITES-26344：統一端點之間 `fragmentId`/`modelId` 的驗證 - 這些 ID 現在已完成驗證，若是無效則傳回 400 狀態代碼。
+* SITES-29598：更新內容片段模型時，片段參考欄位中新增驗證內容片段的參考。
 
 ### 已知問題 {#known-issues-21772}
 
-* SITES-31791：內容片段GraphQL — 查詢失敗，顯示「超出最大欄位計數」。 請參閱[知識庫文章](https://experienceleague.adobe.com/zh-hant/docs/experience-cloud-kcs/kbarticles/ka-27231)。
+* SITES-31791：內容片段 GraphQL - 查詢失敗並顯示「超過最大欄位計數」。請參閱[知識庫文章](https://experienceleague.adobe.com/zh-hant/docs/experience-cloud-kcs/kbarticles/ka-27231)。
 
 ### 已過時的功能和 API {#deprecated-21772}
 
@@ -150,4 +150,4 @@ AEM as a Cloud Service 專門負責將您的平台的安全性與效能最佳化
 | AEM HTL | 1.4.28-1.4.0 | [HTML 範本語言規格](https://github.com/adobe/htl-spec) |
 | Apache HTTP 伺服器 | 2.4.63 | [Apache Httpd 2.4.63](https://github.com/apache/httpd/blob/2.4.63/CHANGES) |
 | AEM 核心元件 | 2.29.0 | [AEM WCM 核心元件](https://github.com/adobe/aem-core-wcm-components) |
-| Node.js | 14 （預設） | [支援的Node.js版本](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
+| Node.js | 14 (預設) | [支援的 Node.js 版本](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/developing/developing-with-front-end-pipelines#node-versions) |
