@@ -2,7 +2,7 @@
 title: 使用CTT後將主體大量上傳到IMS
 description: 群組和使用者的大量上傳檔案概觀，以及如何在 Admin Console 使用以建立群組和 IMS 使用者。
 exl-id: 43ebd6f1-1492-461a-8d9b-2b55dcde9052
-source-git-commit: b9c739a03b358de7c011e50ddbdd609c90f86b6f
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '2384'
 ht-degree: 3%
@@ -37,9 +37,10 @@ ht-degree: 3%
 
 ## 大量群組上傳 {#group-upload}
 
-#### 使用案例：群組已移轉至AEM as a Cloud Service，但這些群組不存在於IMS/Admin Console中，因此需要透過Admin Console將其上傳至IMS。
+### 使用案例：群組已移轉至AEM as a Cloud Service，但這些群組不存在於IMS/Admin Console中，因此需要透過Admin Console將其上傳至IMS。
 
 若要在執行CTT/CAM移轉之後使用Admin Console的大量群組上傳功能，請遵循下列步驟：
+
 1. 從CAM下載主體群組檔案
 
    1. 在CAM中，移至&#x200B;**內容轉移**&#x200B;並選取&#x200B;**擷取工作**。
@@ -54,7 +55,6 @@ ht-degree: 3%
       * _使用者群組名稱_ — 需要群組名稱，最多可包含255個字元。  IMS和AEM中的此群組名稱必須相同
       * _描述_ — 此欄位是選擇性的，最多可包含255個字元
       * _使用者群組管理員_ — 此欄位中必須至少包含一個群組管理員。 以逗號分隔每個管理員，並將清單放在引號中，可指派多個管理員。 每個管理員的專案必須包含使用者的身分型別，後面跟一個連字型大小，然後是電子郵件地址。  例如
-
         `"Adobe ID-myAdmin@example.com,Adobe ID-myOtherAdmin@example.com"`。請勿在管理員間的逗號後面加上空格。 您無法將目前不屬於組織的使用者（管理員）納入Admin Console
       * _已指派的產品設定檔_ — 此欄位是選擇性的。 您可以指派多個產品設定檔，方法是以逗號分隔每個設定檔，並將清單以引號括住。 不過，您必須已經為組織設定您所包含的產品設定檔。 請確定您指定產品設定檔名稱，而非產品名稱。  指派給群組的產品設定檔成員資格將由該群組中的所有使用者繼承。  若要尋找產品設定檔：
 
@@ -97,7 +97,7 @@ Admin Console包含上傳和編輯使用者詳細資訊的兩個個別動作。 
    1. 在出現的對話方塊上，從&#x200B;**下載檔案……**&#x200B;下的下拉式清單中選取&#x200B;**大量使用者檔案**，然後按一下&#x200B;**下載**&#x200B;按鈕。
    1. 儲存產生的CSV檔案
 1. 編輯大量使用者檔案
-   * 每一行代表要上傳的使用者，共有十五個欄位（欄位的名稱構成檔案的第一行）。 有些欄位是選用欄位，此處不說明。 請參閱[大量使用者CSV格式](https://helpx.adobe.com/tw/enterprise/using/bulk-upload-users.html#csv-format)。  欄位包括：
+   * 每一行代表要上傳的使用者，共有十五個欄位（欄位的名稱構成檔案的第一行）。 有些欄位是選用欄位，此處不說明。 請參閱[大量使用者CSV格式](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format)。  欄位包括：
 
       * _身分型別_ — 選擇性。  若未指定，則會建立為Adobe ID
       * _使用者名稱_ — 選擇性，不用於Adobe ID上傳
@@ -108,14 +108,14 @@ Admin Console包含上傳和編輯使用者詳細資訊的兩個個別動作。 
       * _國家/地區代碼_ — 選擇性，不用於Adobe ID上傳
       * _ID_ — 選用，不用於Adobe ID上傳
       * _產品組態_ — 選擇性。 此欄位也將繼承自使用者所屬的任何群組
-      * _管理員角色_ — 選擇性。 如果使用者是管理員，請使用此欄位。 如需詳細資訊，請參閱[大量使用者CSV格式](https://helpx.adobe.com/tw/enterprise/using/bulk-upload-users.html#csv-format)
-      * _已管理的產品組態_ — 選擇性。  如需詳細資訊，請參閱[大量使用者CSV格式](https://helpx.adobe.com/tw/enterprise/using/bulk-upload-users.html#csv-format)。 此欄位也將繼承自使用者所屬的任何群組
+      * _管理員角色_ — 選擇性。 如果使用者是管理員，請使用此欄位。 如需詳細資訊，請參閱[大量使用者CSV格式](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format)
+      * _已管理的產品組態_ — 選擇性。  如需詳細資訊，請參閱[大量使用者CSV格式](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format)。 此欄位也將繼承自使用者所屬的任何群組
       * _使用者群組_ — 選擇性。 應指派使用者作為成員的群組清單。 每個群組都必須是現有的IMS群組。 從CAM下載大量使用者檔案時，此欄位會預先填入使用者在移轉前（直接或間接）身為其IMS啟用群組成員的名稱
-      * _已管理的使用者群組_ — 選擇性。  如需詳細資訊，請參閱[大量使用者CSV格式](https://helpx.adobe.com/tw/enterprise/using/bulk-upload-users.html#csv-format)。 此欄位也將繼承自使用者所屬的任何群組
-      * _管理的產品_ — 選擇性。  如需詳細資訊，請參閱[大量使用者CSV格式](https://helpx.adobe.com/tw/enterprise/using/bulk-upload-users.html#csv-format)。 此欄位也將繼承自使用者所屬的任何群組
-      * _管理的合約_ — 選擇性。  如需詳細資訊，請參閱[大量使用者CSV格式](https://helpx.adobe.com/tw/enterprise/using/bulk-upload-users.html#csv-format)
-      * _開發人員存取權_ — 選擇性。  如需詳細資訊，請參閱[大量使用者CSV格式](https://helpx.adobe.com/tw/enterprise/using/bulk-upload-users.html#csv-format)
-      * _自動指派的產品_ — 選擇性。  如需詳細資訊，請參閱[大量使用者CSV格式](https://helpx.adobe.com/tw/enterprise/using/bulk-upload-users.html#csv-format)
+      * _已管理的使用者群組_ — 選擇性。  如需詳細資訊，請參閱[大量使用者CSV格式](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format)。 此欄位也將繼承自使用者所屬的任何群組
+      * _管理的產品_ — 選擇性。  如需詳細資訊，請參閱[大量使用者CSV格式](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format)。 此欄位也將繼承自使用者所屬的任何群組
+      * _管理的合約_ — 選擇性。  如需詳細資訊，請參閱[大量使用者CSV格式](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format)
+      * _開發人員存取權_ — 選擇性。  如需詳細資訊，請參閱[大量使用者CSV格式](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format)
+      * _自動指派的產品_ — 選擇性。  如需詳細資訊，請參閱[大量使用者CSV格式](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format)
 
    * 編輯CSV時，某些應用程式可能會在儲存時新增其他引號，導致處理失敗。 在簡單的文字編輯器中檢查原始CSV是建議的做法，以確保每個欄位都只有一個開頭和結尾引號（而且不應「是智慧型引號」）
 

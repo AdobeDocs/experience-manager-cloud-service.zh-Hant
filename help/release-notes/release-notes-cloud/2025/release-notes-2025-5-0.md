@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.5.0 版�
 feature: Release Information
 role: Admin
 exl-id: b7a21533-9db1-4111-814c-cab917041be4
-source-git-commit: c8391e09b7e2888423187f48360423c52b18fe0a
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '2162'
-ht-degree: 93%
+ht-degree: 99%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 93%
 
 請觀看 2025 年 5 月版本概觀影片，了解 2025.5.0 版本新增功能的摘要：
 
->[!VIDEO](https://video.tv.adobe.com/v/3464361?quality=12&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3464307?quality=12)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -108,13 +108,13 @@ Content Hub 現在支援[產生共用連結，允許外部使用者](/help/asset
 
 [Experience Manager (AEM) Dynamic Media 與 Journey Optimizer (AJO) B2C 的原生整合](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/content-management/combine/aem-dynamic)，讓行銷人員能夠輕鬆地將 AEM Dynamic Media 資產 (轉譯和 DM 範本) 嵌入至 AJO 內容中，並在多個通道之間提供即時更新和極度個人化的體驗。
 
->[!VIDEO](https://video.tv.adobe.com/v/3463793/?learn=on&enablevpops=&autoplay=true&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### 搶鮮版功能
 
-* [最適化Forms和表單片段的通用編輯器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)：該通用編輯器現在支援建立最適化Forms和可重複使用的表單片段。 作者能以視覺化方式建立表單、設定提交動作及新增reCAPTCHA驗證，這一切都可在簡化的WYSIWYG製作環境中完成。 此功能可加快表單建立、增強一致性，並改善防範垃圾郵件和自動濫用的防護功能。
+* [自適應表單和表單片段的通用編輯器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)：通用編輯器現在支援建立自適應表單和可重複使用的表單片段。作者可以在簡化的所見即所得製作環境中視覺化地建置表單、設定提交動作，並新增 reCAPTCHA 驗證。此功能可加速表單建立、增強一致性，並改善對垃圾郵件和自動化濫用的防護。
 
 * [SharePoint 文件庫：以原始檔案名稱儲存附件](/help/forms/connect-forms-to-sharepoint-document-library.md#connect-an-adaptive-form-to-microsoft-sharepoint-document-library)：您現在將表單附件儲存於 SharePoint 文件庫中時，可以選擇使用其原始檔案名稱。此增強功能可以簡化上傳之檔案的識別和管理。
 
@@ -132,7 +132,7 @@ AEM Forms 搶先體驗計劃為您提供獨一無二的機會，獲得先進創�
 
 #### Adobe Experience Platform (AEP) 與 Forms 的整合
 
-* [整合AEM Forms與Adobe Experience Platform](/help/forms/aem-forms-aep-connector.md)： AEM Forms到Adobe Experience Platform聯結器可讓您順暢整合最適化Forms和Adobe Experience Platform。 此功能可將表單資料對應至XDM結構描述，並即時直接提交至AEP。 它可簡化跨Adobe Experience Cloud解決方案個人化和啟用使用案例的資料擷取。
+* [AEM Forms 與 Adobe Experience Platform 的整合](/help/forms/aem-forms-aep-connector.md)：AEM Forms 至 Adobe Experience Platform 連接器可實現自適應表單和 Adobe Experience Platform 之間的緊密整合。此功能可讓表單資料對應至 XDM 結構描述，並即時直接提交至 AEP。它簡化了 Adobe Experience Cloud 解決方案中個人化和啟用使用案例的資料擷取。
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 

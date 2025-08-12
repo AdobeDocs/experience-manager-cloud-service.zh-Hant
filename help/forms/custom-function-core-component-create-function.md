@@ -5,7 +5,7 @@ keywords: 新增自訂函式、使用自訂函式、建立自訂函式，以及�
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: e7ab4233-2e91-45c6-9377-0c9204d03ee9
-source-git-commit: 249c60c6b4a888b8d32bbb6bebf159c972f82f94
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1340'
 ht-degree: 5%
@@ -42,9 +42,10 @@ ht-degree: 5%
 
 ## 建立自訂函數
 
-建立使用者端程式庫以呼叫規則編輯器中的自訂函式。 如需詳細資訊，請參閱[使用使用者端資料庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=zh-Hant#developing)。
+建立使用者端程式庫以呼叫規則編輯器中的自訂函式。 如需詳細資訊，請參閱[使用使用者端資料庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing)。
 
 建立自訂函式的步驟如下：
+
 1. [建立使用者端資源庫](#create-client-library)
 1. [將使用者端程式庫新增至最適化表單](#use-custom-function)
 
@@ -54,7 +55,7 @@ ht-degree: 5%
 
 **複製存放庫**
 
-複製您的[AEM Formsas a Cloud Service存放庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hant#accessing-git)：
+複製您的[AEM Forms as a Cloud Service存放庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hant#accessing-git)：
 
 1. 開啟命令列或終端機視窗。
 
@@ -141,7 +142,7 @@ ht-degree: 5%
 
 **在filter.xml中包含新資料夾**：
 
-1. 導覽至[AEMaaCS專案目錄]中的`/ui.apps/src/main/content/META-INF/vault/filter.xml`檔案。
+1. 導覽至`/ui.apps/src/main/content/META-INF/vault/filter.xml`AEMaaCS專案目錄[中的]檔案。
 
 1. 開啟檔案，並在結尾新增下列行：
 
@@ -168,7 +169,7 @@ ht-degree: 5%
 
    1. 透過現有的完整棧疊管道觸發計畫碼部署。 這會自動建置及部署更新的程式碼。
 
-如果您尚未設定管道，請參閱[上的指南如何設定AEM Formsas a Cloud Service的管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hant#setup-pipeline)。
+如果您尚未設定管道，請參閱[上的指南以瞭解如何設定AEM Forms as a Cloud Service的管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hant#setup-pipeline)。
 
 管道執行成功後，新增到使用者端資料庫中的自訂函式便可在[最適化表單規則編輯器](/help/forms/rule-editor-core-components.md)中使用。
 
@@ -189,11 +190,11 @@ ht-degree: 5%
 
 1. 按一下&#x200B;**[!UICONTROL 「完成」]**。
 
-您可以使用[JavaScript註解](##js-annotations)，在最適化表單[&#128279;](/help/forms/rule-editor-core-components.md)的規則編輯器中使用自訂函式。
+您可以使用[JavaScript註解](/help/forms/rule-editor-core-components.md)，在最適化表單[的](##js-annotations)規則編輯器中使用自訂函式。
 
 ## 在最適化表單中使用自訂函式
 
-在最適化表單中，您可以在規則編輯器[&#128279;](/help/forms/rule-editor-core-components.md)中使用自訂函式。 讓我們將下列程式碼新增至JavaScript檔案（`Function.js`檔案），以根據出生日期計算年齡(YYYY-MM-DD)。 建立自訂函式為`calculateAge()`，它以出生日期作為輸入並傳回年齡：
+在最適化表單中，您可以在規則編輯器[中使用](/help/forms/rule-editor-core-components.md)自訂函式。 讓我們將下列程式碼新增至JavaScript檔案（`Function.js`檔案），以根據出生日期計算年齡(YYYY-MM-DD)。 建立自訂函式為`calculateAge()`，它以出生日期作為輸入並傳回年齡：
 
 ```javascript
     /**
@@ -232,7 +233,7 @@ ht-degree: 5%
 
 ## 自訂函式的功能
 
-AEM表單中的自訂函式提供強大的解決方案，可擴充及個人化表單的功能。 您可以使用自訂函式來符合您組織的特定需求。
+AEM表單中的自訂函式為擴充及個人化表單功能提供強大的解決方案。 您可以使用自訂函式來符合您組織的特定需求。
 
 這些函式支援各種功能，包括使用特定欄位、使用全域欄位和非同步操作，以及合併快取機制。 這種靈活性可確保表單能夠適應複雜的需求，並提供有效率、量身打造的使用者體驗。 運用這些進階功能，您可以增強表單互動並最佳化效能，讓您的AEM表單功能更強大，回應速度也更快。
 
@@ -254,7 +255,7 @@ AEM表單中的自訂函式提供強大的解決方案，可擴充及個人化�
 
 ### 自訂函式中的快取支援
 
-Adaptive Forms會在規則編輯器中擷取自訂函式清單時，實作自訂函式的快取，以增強回應時間。 在`error.log`檔案中會顯示訊息為`Fetched following custom functions list from cache`。
+Adaptive Forms會在規則編輯器中擷取自訂函式清單時，實作自訂函式的快取，以增強回應時間。 在`Fetched following custom functions list from cache`檔案中會顯示訊息為`error.log`。
 
 具有快取支援的![自訂函式](/help/forms/assets/custom-function-cache-error.png)
 
@@ -266,7 +267,7 @@ Adaptive Forms會在規則編輯器中擷取自訂函式清單時，實作自訂
 
   ![錯誤記錄檔](/help/forms/assets/custom-function-list-error-file.png)
 
-  如果沒有錯誤，則會擷取自訂函式並出現在`error.log`檔案中。 在`error.log`檔案中顯示為`Fetched following custom functions list`的訊息：
+  如果沒有錯誤，則會擷取自訂函式並出現在`error.log`檔案中。 在`Fetched following custom functions list`檔案中顯示為`error.log`的訊息：
 
   使用適當的自訂函式![錯誤記錄檔](/help/forms/assets/custom-function-list-fetched-in-error.png)
 

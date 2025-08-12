@@ -2,8 +2,8 @@
 title: 管理主體
 description: 使用 Admin Console 管理主體以進行遷移
 exl-id: a75598d0-8f59-466b-984e-dfe527388c2a
-source-git-commit: a5bec2c05b46f8db55762b7ee1f346f3bb099d24
-workflow-type: ht
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+workflow-type: tm+mt
 source-wordcount: '311'
 ht-degree: 100%
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 將內容傳輸至 AEM as a Cloud Service 雲端環境之前，有一些任務可以在 Admin Console 上執行。這些任務是：建立使用者、建立群組，以及將使用者指派至群組；這些使用者和群組將存在於 Adobe 的 Identity Management 服務中，而該服務會用於管理所有 Adobe 雲端型服務的使用者和群組。
 
-### 在 Admin Console 中建立群組及其使用者
+## 在 Admin Console 中建立群組及其使用者
 
 [使用 Admin Console 管理 AEM 主體](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/security/ims-support#how-to-set-up)提供詳細指示，說明如何在 IMS 中建立使用者和群組，以及如何同時或稍後將使用者新增至群組。該文件包括三個建立選項：透過 Admin Console 手動建立、透過 Admin Console 上傳 CSV，以及透過使用者同步工具。
 

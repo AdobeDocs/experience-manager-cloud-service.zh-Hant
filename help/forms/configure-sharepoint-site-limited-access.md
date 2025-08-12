@@ -5,16 +5,16 @@ keywords: 如何設定具有有限存取權的SharePoint網站？、設定具有
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: 3230bab2-c1aa-409d-9f01-c42cf88b1135
-source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '842'
 ht-degree: 13%
 
 ---
 
-<span class="preview">此功能可在早期採用者方案下使用。 您可以從您的官方電子郵件ID寫信到aem-forms-ea@adobe.com ，以加入率先採用者計畫並請求存取該功能。</span>
-
 # 使用授權範圍設定 SharePoint 網站，使其擁有有限的存取權
+
+<span class="preview">此功能可在早期採用者方案下使用。 您可以從您的官方電子郵件ID寫信到aem-forms-ea@adobe.com ，以加入率先採用者計畫並請求存取該功能。</span>
 
 有限或受限存取的目的是透過允許管理員控制使用者對特定SharePoint網站或一組SharePoint網站的存取來增強安全管理。 當您需要授予使用者或群組存取特定網站的許可權，而不允許他們檢視任何其他不允許的SharePoint網站時，許可權層級就十分實用。
 

@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: 在VRE中叫用服務增強功能，使用叫用服務填入下拉式選項，使用叫用服務的輸出設定可重複面板，使用叫用服務的輸出設定面板，使用叫用服務的輸出引數驗證其他欄位。
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: 2cae8bb1050bc4538f4645d9f064b227fb947d75
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1566'
 ht-degree: 1%
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 最適化表單中的視覺化規則編輯器支援&#x200B;**叫用服務**&#x200B;功能，可讓您從針對執行個體設定的表單資料模型(FDM)清單中選取服務。 您可以將表單欄位直接對應到服務的輸入引數。 若要將表單欄位對應到輸出引數，請使用指定表單資料模型服務的事件裝載選項。 此外，視覺化規則編輯器可讓您根據輸出回應，為&#x200B;**Invoke Service**&#x200B;作業建立成功和失敗處理常式的規則。 成功處理常式管理&#x200B;**啟動服務**&#x200B;作業的成功執行，而失敗處理常式處理所有發生的錯誤。
 
-### 在表單的規則編輯器中使用「叫用服務」的優勢
+## 在表單的規則編輯器中使用「叫用服務」的優勢
 
 在自適應表單的規則編輯器中使用「叫用服務」作業的優點如下：
 
@@ -76,7 +76,7 @@ ht-degree: 1%
 | **使用Invoke Service的輸出設定面板** | 使用叫用服務輸出中的特定值來設定面板的內容或可見度。 [按一下這裡](#use-case-3-set-panel-using-output-of-invoke-service)，檢視實作。 |
 | **使用叫用服務的輸出引數來驗證其他欄位** | 使用來自叫用服務的特定輸出引數來驗證表單欄位。 [按一下這裡](#use-case-4-use-output-parameter-of-invoke-service-to-validate-other-fields)，檢視實作。 |
 
-建立根據`Pet ID`文字方塊中輸入之輸入擷取值的`Get Information`表單。 底下熒幕擷圖顯示以下使用案例中所使用的表單：
+建立根據`Get Information`文字方塊中輸入之輸入擷取值的`Pet ID`表單。 底下熒幕擷圖顯示以下使用案例中所使用的表單：
 
 ![取得資訊表單](/help/forms/assets/get-information-form.png)
 
@@ -106,9 +106,9 @@ ht-degree: 1%
 
 **資料來源**
 
-在此範例中，[Swagger Petstore](https://petstore.swagger.io/) API是用來設定資料來源。 已針對[getPetById](https://petstore.swagger.io/#/pet/getPetById)服務設定[表單資料模型](/help/forms/create-form-data-models.md)，該服務會根據輸入的ID擷取pet詳細資料。
+在此範例中，[Swagger Petstore](https://petstore.swagger.io/) API是用來設定資料來源。 已針對[getPetById](/help/forms/create-form-data-models.md)服務設定[表單資料模型](https://petstore.swagger.io/#/pet/getPetById)，該服務會根據輸入的ID擷取pet詳細資料。
 
-讓我們使用[Swagger Petstore](https://petstore.swagger.io/) API中的[addPet](https://petstore.swagger.io/#/pet/addPet)服務發佈下列JSON：
+讓我們使用[Swagger Petstore](https://petstore.swagger.io/#/pet/addPet) API中的[addPet](https://petstore.swagger.io/)服務發佈下列JSON：
 
 ```
 {
@@ -141,7 +141,7 @@ ht-degree: 1%
 ```
 
 
-規則和邏輯是使用`Pet ID`文字方塊上的規則編輯器中的&#x200B;**叫用服務**&#x200B;動作實作，以示範提及的使用案例。
+規則和邏輯是使用&#x200B;**文字方塊上的規則編輯器中的**&#x200B;叫用服務`Pet ID`動作實作，以示範提及的使用案例。
 
 現在，讓我們詳細探討每個使用案例的實作。
 
@@ -149,15 +149,15 @@ ht-degree: 1%
 
 此使用案例示範如何根據`Invoke Service`的輸出動態填入下拉式選項。
 
-#### 實作
+#### 實施
 
-若要達成此目的，請在`Pet ID`文字方塊上建立規則以叫用`getPetById`服務。 在規則中，將&#x200B;**[!UICONTROL 新增成功處理常式]**&#x200B;中`photo-url`下拉式清單的`enum`屬性設定為`photoUrls`。
+若要達成此目的，請在`Pet ID`文字方塊上建立規則以叫用`getPetById`服務。 在規則中，將`enum`新增成功處理常式`photo-url`中`photoUrls`下拉式清單的&#x200B;**[!UICONTROL 屬性設定為]**。
 
 ![設定下拉式清單值](/help/forms/assets/set-dropdownoption.png)
 
 #### 輸出
 
-在`Pet ID`文字方塊中輸入`101`，以根據輸入的值動態填入下拉式清單選項。
+在`101`文字方塊中輸入`Pet ID`，以根據輸入的值動態填入下拉式清單選項。
 
 ![結果](/help/forms/assets/output1.png)
 
@@ -170,7 +170,7 @@ ht-degree: 1%
 * 確定可重複面板的名稱符合您要為其設定面板的&#x200B;**Invoke Service**&#x200B;的引數。
 * 面板會針對對應的&#x200B;**Invoke Service**&#x200B;欄位傳回的值數重複執行。
 
-#### 實作
+#### 實施
 
 在`Pet ID`文字方塊上建立規則以叫用`getPetById`服務。 在&#x200B;**[!UICONTROL 新增成功處理常式]**&#x200B;中，新增另一個成功處理常式回應。 在規則中將`tags`面板的值設定為`tags`。
 
@@ -178,7 +178,7 @@ ht-degree: 1%
 
 #### 輸出
 
-在`Pet ID`文字方塊中輸入`101`，以根據輸入值動態填入可重複面板。
+在`101`文字方塊中輸入`Pet ID`，以根據輸入值動態填入可重複面板。
 
 ![輸出](/help/forms/assets/output2.png)
 
@@ -191,7 +191,7 @@ ht-degree: 1%
 * 確定面板的名稱符合您要設定面板的&#x200B;**啟動服務**&#x200B;的引數。
 * 面板會針對對應的「啟動服務」欄位傳回的值數重複執行。
 
-#### 實作
+#### 實施
 
 在`Pet ID`文字方塊上建立規則以叫用`getPetById`服務。 在&#x200B;**[!UICONTROL 新增成功處理常式]**&#x200B;中，新增另一個成功處理常式回應。 在規則中將`categoryname`文字方塊的值設定為`category.name`。
 
@@ -199,7 +199,7 @@ ht-degree: 1%
 
 #### 輸出
 
-在`Pet ID`文字方塊中輸入`101`，以根據輸入值動態填入面板。
+在`101`文字方塊中輸入`Pet ID`，以根據輸入值動態填入面板。
 
 ![輸出](/help/forms/assets/output3.png)
 
@@ -207,15 +207,15 @@ ht-degree: 1%
 
 此使用案例示範如何使用&#x200B;**叫用服務**&#x200B;的輸出來動態驗證其他表單欄位。
 
-#### 實作
+#### 實施
 
-在`Pet ID`文字方塊上建立規則以叫用`getPetById`服務。 在&#x200B;**[!UICONTROL 新增失敗處理常式]**&#x200B;中，新增失敗處理常式回應。 如果輸入的`Pet ID`不正確，請隱藏&#x200B;**提交**&#x200B;按鈕。
+在`Pet ID`文字方塊上建立規則以叫用`getPetById`服務。 在&#x200B;**[!UICONTROL 新增失敗處理常式]**&#x200B;中，新增失敗處理常式回應。 如果輸入的&#x200B;**不正確，請隱藏**&#x200B;提交`Pet ID`按鈕。
 
 ![失敗處理常式](/help/forms/assets/create-rule-failure-handler.png)
 
 #### 輸出
 
-在`Pet ID`文字方塊中輸入`102`，並隱藏&#x200B;**提交**&#x200B;按鈕。
+在`102`文字方塊中輸入`Pet ID`，並隱藏&#x200B;**提交**&#x200B;按鈕。
 
 ![輸出](/help/forms/assets/output4.png)
 

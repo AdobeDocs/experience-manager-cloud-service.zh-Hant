@@ -4,9 +4,9 @@ description: 瞭解通用編輯器傳送的不同事件，您可用這些事件�
 exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: fefbb01c786cc00a31602c4646ca8b015e16ed98
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '510'
 ht-degree: 2%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 ## 簡介 {#introduction}
 
-應用程式對頁面或元件更新可能有不同的需求。 因此，Universal Editor會將定義的事件傳送給遠端應用程式。 如果遠端應用程式沒有已傳送事件的自訂事件接聽程式，則會執行`universal-editor-cors`封裝所提供的[遞補事件接聽程式](#fallback-listeners)。
+應用程式對頁面或元件更新可能有不同的需求。 因此，Universal Editor會將定義的事件傳送給遠端應用程式。 如果遠端應用程式沒有已傳送事件的自訂事件接聽程式，則會執行[封裝所提供的](#fallback-listeners)遞補事件接聽程式`universal-editor-cors`。
 
 所有事件都會在遠端頁面中受影響的DOM元素上叫用。 事件泡泡至`BODY`元素，其中已註冊`universal-editor-cors`封裝提供的預設事件接聽程式。 UI有內容和事件專用的事件。
 
@@ -31,7 +31,7 @@ ht-degree: 2%
 
 ## 內容更新事件 {#content-events}
 
-### aue：content-add {#content-add}
+### aue:content-add {#content-add}
 
 將新元件新增至容器時會觸發`aue:content-add`事件。
 
@@ -53,7 +53,7 @@ ht-degree: 2%
 }
 ```
 
-### aue：content-details {#content-details}
+### aue:content-details {#content-details}
 
 將元件載入屬性面板時，就會觸發`aue:content-details`事件。
 
@@ -70,7 +70,7 @@ ht-degree: 2%
 }
 ```
 
-### aue：content-move {#content-move}
+### aue:content-move {#content-move}
 
 移動元件時會觸發`aue:content-move`事件。
 
@@ -89,7 +89,7 @@ ht-degree: 2%
 }
 ```
 
-### aue：content-patch {#content-patch}
+### aue:content-patch {#content-patch}
 
 當在屬性面板中更新元件的資料時，就會觸發`aue:content-patch`事件。
 
@@ -108,7 +108,7 @@ ht-degree: 2%
 }
 ```
 
-### aue：content-remove {#content-remove}
+### aue:content-remove {#content-remove}
 
 從容器移除元件時會觸發`aue:content-remove`事件。
 
@@ -124,7 +124,7 @@ ht-degree: 2%
 }
 ```
 
-### aue：content-update {#content-update}
+### aue:content-update {#content-update}
 
 當在內容中更新元件的屬性時，就會觸發`aue:content-update`事件。
 
@@ -180,21 +180,9 @@ ht-degree: 2%
 
 ## UI事件 {#ui-events}
 
-### aue：ui-preview {#ui-preview}
+### aue:ui-preview {#ui-preview}
 
-當頁面的編輯模式變更為&#x200B;**預覽**&#x200B;時，就會觸發`aue:ui-preview`事件。
-
-此事件的裝載是空的。
-
-```json
-{
-    details: {}
-}
-```
-
-### aue：ui-edit {#ui-edit}
-
-當頁面的編輯模式變更為&#x200B;**編輯**&#x200B;時，就會觸發`aue:ui-edit`事件。
+當頁面的編輯模式變更為`aue:ui-preview`預覽&#x200B;**時，就會觸發**&#x200B;事件。
 
 此事件的裝載是空的。
 
@@ -204,7 +192,19 @@ ht-degree: 2%
 }
 ```
 
-### aue：ui-viewport-change {#ui-viewport-change}
+### aue:ui-edit {#ui-edit}
+
+當頁面的編輯模式變更為`aue:ui-edit`編輯&#x200B;**時，就會觸發**&#x200B;事件。
+
+此事件的裝載是空的。
+
+```json
+{
+    details: {}
+}
+```
+
+### aue:ui-viewport-change {#ui-viewport-change}
 
 檢視區大小變更時會觸發`aue:ui-viewport-change`事件。
 
@@ -219,7 +219,7 @@ ht-degree: 2%
 }
 ```
 
-### aue：initialized {#initialized}
+### aue:initialized {#initialized}
 
 會觸發`aue:initialized`事件，讓遠端頁面知道它已成功載入通用編輯器中。
 

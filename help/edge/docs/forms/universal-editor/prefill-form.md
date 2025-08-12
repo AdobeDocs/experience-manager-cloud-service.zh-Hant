@@ -6,7 +6,8 @@ role: User, Developer
 level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: 預填最適化表單、最適化表單邊緣交付服務、最適化表單自動填入
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
+exl-id: 7b6224e2-a19c-4146-8545-0ce9d1da9b29
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1787'
 ht-degree: 3%
@@ -249,7 +250,7 @@ FDM中的表單元素會顯示在&#x200B;**內容瀏覽器**&#x200B;的&#x200B;*
 3. 選擇&#x200B;**預覽為HTML**
 4. 將引數附加至URL以測試預先填入：
 
-   https://your-preview-url.com?&lt;bindreferencefield>=&lt;value>
+   https://your-preview-url.com?`<bindreferencefield>`=`<value>`
 
    **範例：**
 

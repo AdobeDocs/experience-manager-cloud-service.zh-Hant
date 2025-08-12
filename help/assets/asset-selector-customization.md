@@ -3,10 +3,10 @@ title: 自訂資產選擇器應用程式
 description: 使用函式來自訂應用程式內的資產選擇器。
 role: Admin, User
 exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
-source-git-commit: c2ced432f3f0bd393bf5e8e7485c0e973c451b7a
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '1261'
-ht-degree: 25%
+source-wordcount: '1246'
+ht-degree: 23%
 
 ---
 
@@ -170,18 +170,18 @@ interface SelectedAsset {
 
 | 屬性 | 類型 | 說明 |
 |---|---|---|
-| *repo:repositoryId* | 字串 | 儲存資產之存放庫的唯一識別碼。 |
-| *repo:id* | 字串 | 資產的唯一識別碼。 |
-| *repo:assetClass* | 字串 | 資產的分類 (例如影像或影片、文件)。 |
-| *repo:name* | 字串 | 資產的名稱，包括檔案副檔名。 |
-| *repo:size* | 數字 | 資產的大小，以位元組計。 |
-| *repo:path* | 字串 | 資產在存放庫中的位置。 |
-| *repo:ancestors* | `Array<string>` | 存放庫中資產的上階項目陣列。 |
-| *repo:state* | 字串 | 存放庫中資產的目前狀態（例如，作用中、已刪除等）。 |
-| *repo:createdBy* | 字串 | 建立資產的使用者或系統。 |
-| *repo:createDate* | 字串 | 建立資產的日期與時間。 |
-| *repo:modifiedBy* | 字串 | 上次修改資產的使用者或系統。 |
-| *repo:modifyDate* | 字串 | 上次修改資產的日期和時間。 |
+| *存放庫:repositoryId* | 字串 | 儲存資產之存放庫的唯一識別碼。 |
+| *存放庫:id* | 字串 | 資產的唯一識別碼。 |
+| *存放庫:assetClass* | 字串 | 資產的分類 (例如影像或影片、文件)。 |
+| *存放庫:name* | 字串 | 資產的名稱，包括檔案副檔名。 |
+| *存放庫:size* | 數字 | 資產的大小，以位元組計。 |
+| *存放庫:path* | 字串 | 資產在存放庫中的位置。 |
+| *存放庫:ancestors* | `Array<string>` | 存放庫中資產的上階項目陣列。 |
+| *存放庫:state* | 字串 | 存放庫中資產的目前狀態（例如，作用中、已刪除等）。 |
+| *存放庫:createdBy* | 字串 | 建立資產的使用者或系統。 |
+| *存放庫:createDate* | 字串 | 建立資產的日期與時間。 |
+| *存放庫:modifiedBy* | 字串 | 上次修改資產的使用者或系統。 |
+| *存放庫:modifyDate* | 字串 | 上次修改資產的日期和時間。 |
 | *dc:format* | 字串 | 資產的格式，例如檔案型別(例如JPEG、PNG等)。 |
 | *tiff:imageWidth* | 數字 | 資產的寬度。 |
 | *tiff:imageLength* | 數字 | 資產的高度。 |
@@ -255,6 +255,7 @@ expiryOptions:{
     allowSelectionAndDrop: false;
 }
 ```
+
 <!--
 Additionally, To do this, navigate to **[!UICONTROL Disable default expiry behavior]** under the [!UICONTROL Controls] tab and set the boolean value to `true` or `false` as per the requirement. If `true` is selected, you can see the select box over the expired asset, otherwise it remains unselected. You can hover to the info icon of an asset to know the details of an expired asset. 
 

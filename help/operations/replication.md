@@ -4,7 +4,7 @@ description: 瞭解AEM as a Cloud Service中的散佈和疑難排解復寫問題
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
 feature: Operations
 role: Admin
-source-git-commit: 1179e45f6e75a8a4f5e5e76903243f64d9f406ae
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1711'
 ht-degree: 1%
@@ -24,9 +24,9 @@ Adobe Experience Manager as a Cloud Service使用[Sling內容發佈](https://sli
 >[!NOTE]
 >
 >如果您有興趣大量發佈內容，請使用[樹狀啟動工作流程步驟](#tree-activation)建立工作流程，以有效處理大量負載。
->&#x200B;>不建議建置您自己的大量發佈自訂程式碼。
->&#x200B;>如果您因任何原因必須自訂，則可使用現有的工作流程API，透過此步驟觸發工作流程。
->&#x200B;>只發佈必須發佈的內容永遠是好的做法。 如果不需要的話，也不要嘗試發佈大量內容。 不過，您可以使用樹狀啟動工作流程步驟在工作流程中傳送的內容數量並無限制。
+>>不建議建置您自己的大量發佈自訂程式碼。
+>>如果您因任何原因必須自訂，則可使用現有的工作流程API，透過此步驟觸發工作流程。
+>>只發佈必須發佈的內容永遠是好的做法。 如果不需要的話，也不要嘗試發佈大量內容。 不過，您可以使用樹狀啟動工作流程步驟在工作流程中傳送的內容數量並無限制。
 
 ### 快速取消/發佈 — 計畫取消/發佈 {#publish-unpublish}
 
@@ -58,7 +58,7 @@ Adobe Experience Manager as a Cloud Service使用[Sling內容發佈](https://sli
 
 1. 從AEM as a Cloud Service首頁，移至&#x200B;**工具 — 工作流程 — 模型**。
 1. 在「工作流程模型」頁面中，按畫面右上角的&#x200B;**建立**。
-1. 新增標題和名稱至您的模型。 如需詳細資訊，請參閱[建立工作流程模型](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=zh-Hant)。
+1. 新增標題和名稱至您的模型。 如需詳細資訊，請參閱[建立工作流程模型](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html)。
 1. 從清單中選取建立的模型，然後按&#x200B;**編輯**
 1. 在下列視窗中，刪除預設顯示的「步驟」
 1. 將「處理步驟」拖放至目前的模型流程：
@@ -126,8 +126,7 @@ Adobe Experience Manager as a Cloud Service使用[Sling內容發佈](https://sli
 >
 >此功能已淘汰，以支援更高效能的樹狀結構啟動步驟（可包含在自訂工作流程中）。
 
-<details>
-<summary>按一下這裡以深入瞭解這項已棄用的功能。</summary>
++++ 按一下這裡以深入瞭解這項已棄用的功能。
 
 您可以選擇&#x200B;**工具 — 工作流程 — 模型**&#x200B;並複製&#x200B;**發佈內容樹狀結構**&#x200B;現成的工作流程模型，以觸發樹狀結構復寫，如下所示：
 
@@ -135,13 +134,13 @@ Adobe Experience Manager as a Cloud Service使用[Sling內容發佈](https://sli
 
 請勿叫用原始模型。 相反，請務必先複製模型並叫用該副本。
 
-如同所有工作流程，您也可以透過API叫用。 如需詳細資訊，請參閱[以程式設計方式與工作流程互動](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html?lang=zh-Hant#extending-aem)。
+如同所有工作流程，您也可以透過API叫用。 如需詳細資訊，請參閱[以程式設計方式與工作流程互動](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html#extending-aem)。
 
 或者，您也可以建立使用`Publish Content Tree`處理步驟的工作流程模型。
 
 1. 從AEM as a Cloud Service首頁，移至&#x200B;**工具 — 工作流程 — 模型**。
 1. 在「工作流程模型」頁面中，按畫面右上角的&#x200B;**建立**。
-1. 新增標題和名稱至您的模型。 如需詳細資訊，請參閱[建立工作流程模型](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=zh-Hant)。
+1. 新增標題和名稱至您的模型。 如需詳細資訊，請參閱[建立工作流程模型](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html)。
 1. 從清單中選取建立的模型，然後按&#x200B;**編輯**
 1. 在下列視窗中，將「處理步驟」拖放至目前的模型流程：
 
@@ -194,7 +193,7 @@ Adobe Experience Manager as a Cloud Service使用[Sling內容發佈](https://sli
 21.04.2021 19:14:58.541 [cm-p123-e456-aem-author-797aaaf-wkkqt] *INFO* [JobHandler: /var/workflow/instances/server60/2021-04-20/brian-tree-replication-test-2_1:/content/wknd/us/en/adventures] com.day.cq.wcm.workflow.process.impl.ChunkedReplicator closing chunkedReplication-VolatileWorkItem_node1_var_workflow_instances_server60_2021-04-20_brian-tree-replication-test-2_1, 17 paths replicated in 2971 ms
 ```
 
-</details>
++++
 
 ### 復寫API {#replication-api}
 

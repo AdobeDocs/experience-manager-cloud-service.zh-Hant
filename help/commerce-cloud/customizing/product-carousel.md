@@ -5,9 +5,9 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 exl-id: 758e0e13-c4d8-4d32-bcc9-91a36b3ffa98
 index: false
-source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '321'
 ht-degree: 4%
 
 ---
@@ -22,10 +22,15 @@ ht-degree: 4%
 1. 將新的產品輪播元件插入頁面上的主要版面容器中。
    ![產品輪播元件](/help/commerce-cloud/assets/product-carousel-component.png)
 1. 展開「側面板」（如果尚未切換），並將資產尋找器下拉式清單切換為&#x200B;**產品**。
-     ![輪播產品](/help/commerce-cloud/assets/carousel-products.png)    
+
+   ![輪播產品](/help/commerce-cloud/assets/carousel-products.png)
+
 1. 這應該會顯示已連線之Adobe Commerce執行個體的可用產品清單。
+
    ![連線的執行個體](/help/commerce-cloud/assets/connected-instance.png)
+
 1. 產品將會顯示如下，並包含預設屬性：
+
    ![顯示具有屬性的產品](/help/commerce-cloud/assets/discount.png)
 
 ## 更新Sling模型 {#update-sling-model}
@@ -50,7 +55,7 @@ Sling模型的委派模式允許`CustomCarouselImpl`透過`ProductCarousel`屬�
    private ProductCarousel productCarousel;
    ```
 
-1. @PostConstruct註解可確保在Sling模型初始化時呼叫此方法。 產品GraphQL查詢已使用extendProductQueryWith方法擴充以擷取屬性。 更新GraphQL查詢以包含  部分查詢中的屬性：
+1. @PostConstruct註解可確保在Sling模型初始化時呼叫此方法。 產品GraphQL查詢已使用extendProductQueryWith方法擴充以擷取屬性。 更新GraphQL查詢以在部分查詢中包含屬性：
 
    ```
    @PostConstruct

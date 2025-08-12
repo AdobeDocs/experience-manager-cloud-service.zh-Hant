@@ -5,9 +5,9 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 exl-id: 547d3721-e094-4a42-8a7c-27e4ef97ea9c
 index: false
-source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '458'
 ht-degree: 3%
 
 ---
@@ -23,8 +23,11 @@ ht-degree: 3%
 ## 在CIF設定中啟用JSON+LD {#enabling}
 
 依預設，**啟用JSON+LD**&#x200B;核取方塊在CIF設定中不可見。 若要啟用此功能，專案必須包含必要的OSGi設定，以便顯示核取方塊。 此設定可讓使用者切換產品頁面上的JSON+LD指令碼支援。
-若要讓&#x200B;**啟用JSON+LD**&#x200B;核取方塊可在CIF設定中使用，請將下列OSGi設定新增至您的專案： &grave;
-com.adobe.cq.cif.components.models.JsonLdFeatureEnable&grave;。
+
+若要讓&#x200B;**啟用JSON+LD**&#x200B;核取方塊可在CIF設定中使用，請新增下列OSGi設定至您的專案：
+
+`com.adobe.cq.cif.components.models.JsonLdFeatureEnable`。
+
 如需新增此設定的詳細資訊，請參閱公用aem-cif-guides-venia存放庫中的[新增Json-Ld](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.cif.components.models.JsonLdFeatureEnable.cfg.json)的設定。
 
 新增及部署此設定後，CIF設定中就會顯示核取方塊，以下是啟用&#x200B;**JSON+LD**&#x200B;的步驟：
@@ -38,7 +41,7 @@ com.adobe.cq.cif.components.models.JsonLdFeatureEnable&grave;。
 
 為了說明驗證JSON+LD的步驟，以Venia專案為例，其中已新增必要的JSON+LD設定來啟用該功能。 以下是需遵循的步驟：
 
-1. 導覽至您的本機AEM執行個體，然後開啟產品詳細資料頁面(PDP)： http://localhost:4502/editor.html/content/venia/us/en/products/product-page.html
+1. 導覽至您的本機AEM執行個體，並開啟產品詳細資料頁面(PDP)： http://localhost:4502/editor.html/content/venia/us/en/products/product-page.html
 1. 在產品詳細資料頁面(PDP)上製作產品。
 1. 切換至&#x200B;**以發佈**&#x200B;模式檢視。
 1. 在瀏覽器中開啟&#x200B;**檢視頁面Source**。

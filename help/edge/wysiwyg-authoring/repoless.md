@@ -7,8 +7,8 @@ exl-id: a6bc0f35-9e76-4b5a-8747-b64e144c08c4
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: 17c14a78c2cfa262e25c6196fa73c6c4b17e200a
-workflow-type: ht
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+workflow-type: tm+mt
 source-wordcount: '1039'
 ht-degree: 100%
 
@@ -94,6 +94,7 @@ AEM 支援使用相同的程式碼基底執行多個網站，而非建立多個 
        }
    }'
    ```
+
 1. 使用類似下列內容的 cURL 命令，驗證公開設定是否已完成設定並可用。
 
    ```text

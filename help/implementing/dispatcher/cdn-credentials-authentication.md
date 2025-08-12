@@ -4,7 +4,7 @@ description: 瞭解如何在設定檔案中宣告規則，再使用Cloud Manager
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: bfe0538660474d445a60fa1c8174d7a690b1dc4c
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1939'
 ht-degree: 3%
@@ -32,11 +32,11 @@ Adobe提供的CDN具有多項功能和服務，部分功能和服務會仰賴憑
 
 ## 客戶管理的CDN HTTP標頭值 {#CDN-HTTP-value}
 
-如AEM as a Cloud Service[&#128279;](/help/implementing/dispatcher/cdn.md#point-to-point-CDN)頁面中的CDN中所述，客戶可以選擇透過自己的CDN路由流量，這稱為「客戶CDN」（有時也稱為BYOCDN）。
+如AEM as a Cloud Service[頁面中的](/help/implementing/dispatcher/cdn.md#point-to-point-CDN)CDN中所述，客戶可以選擇透過自己的CDN路由流量，這稱為「客戶CDN」（有時也稱為BYOCDN）。
 
 在設定過程中，Adobe CDN和客戶CDN必須同意`X-AEM-Edge-Key` HTTP標題的值。 此值在傳送至Adobe CDN之前，會先在客戶CDN的每個要求上設定，接著由CDN驗證值是否如預期般符合，因此可信任其他HTTP標頭，包括有助於將要求傳送至適當AEM來源的標頭。
 
-*X-AEM-Edge-Key*&#x200B;值由名為`cdn.yaml`或類似檔案中的`edgeKey1`和`edgeKey2`屬性參考，位於最上層`config`資料夾的某個位置。 閱讀[使用設定管道](/help/operations/config-pipeline.md#folder-structure)，以取得資料夾結構以及如何部署設定的詳細資訊。  以下範例說明語法。
+*X-AEM-Edge-Key*&#x200B;值由名為`edgeKey1`或類似檔案中的`edgeKey2`和`cdn.yaml`屬性參考，位於最上層`config`資料夾的某個位置。 閱讀[使用設定管道](/help/operations/config-pipeline.md#folder-structure)，以取得資料夾結構以及如何部署設定的詳細資訊。  以下範例說明語法。
 
 如需進一步偵錯資訊和常見錯誤，請檢查[常見錯誤](/help/implementing/dispatcher/cdn.md#common-errors)。
 
@@ -65,11 +65,11 @@ data:
 
 請參閱[「使用設定管道」](/help/operations/config-pipeline.md#common-syntax)，取得 `data` 節點上方屬性的描述。`kind`屬性值應該是&#x200B;*CDN*，且`version`屬性應該設定為`1`。
 
-如需詳細資訊，請參閱[設定和部署HTTP標頭驗證CDN規則](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule)教學課程步驟。
+如需詳細資訊，請參閱[設定和部署HTTP標頭驗證CDN規則](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule)教學課程步驟。
 
 其他屬性包括：
 
-* 包含子`authentication`節點的`Data`節點。
+* 包含子`Data`節點的`authentication`節點。
 * 在`authentication`底下，有一個`authenticators`節點和一個`rules`節點，兩者都是陣列。
 * 驗證者：可讓您宣告權杖或認證的型別，在此例中是邊緣金鑰。 其內容包含下列屬性：
    * name — 描述性字串。
@@ -172,7 +172,7 @@ data:
 
 其他屬性包括：
 
-* 包含子`authentication`節點的`data`節點。
+* 包含子`data`節點的`authentication`節點。
 * 在`authentication`底下，有一個`authenticators`節點和一個`rules`節點，兩者都是陣列。
 * 驗證者：可讓您宣告權杖或認證的型別，在此例中為清除金鑰。 其內容包含下列屬性：
    * name — 描述性字串。
@@ -187,7 +187,7 @@ data:
 >[!NOTE]
 >在部署參考清除金鑰的組態之前，必須將清除金鑰設定為[機密型別Cloud Manager環境變數](/help/operations/config-pipeline.md#secret-env-vars)。 建議使用至少32個位元組長度的唯一隨機金鑰；例如，Open SSL密碼編譯程式庫可以透過執行命令openssl rand -hex 32來產生隨機金鑰
 
-您可以參考以設定清除金鑰和執行CDN快取清除為重點的[教學課程](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache)。
+您可以參考以設定清除金鑰和執行CDN快取清除為重點的[教學課程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache)。
 
 ## 基本驗證 {#basic-auth}
 
@@ -227,7 +227,7 @@ data:
 
 此外，語法包括：
 
-* 包含`authentication`節點的`data`節點。
+* 包含`data`節點的`authentication`節點。
 * 在`authentication`底下，有一個`authenticators`節點和一個`rules`節點，兩者都是陣列。
 * 驗證者：在此案例中，會宣告基本驗證者，其結構如下：
    * 名稱 — 描述性字串
@@ -241,6 +241,7 @@ data:
    * 動作 — 必須指定「authenticate」，並參考所要的驗證者，這是此情境的基本驗證
 
 >[!NOTE]
+>
 >在部署參考密碼的組態之前，必須將密碼設定為[機密型別Cloud Manager環境變數](/help/operations/config-pipeline.md#secret-env-vars)。
 
 ## 旋轉密碼 {#rotating-secrets}

@@ -4,8 +4,8 @@ description: 設定流量篩選規則，包括 Web 應用程式防火牆 (WAF) �
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: c54f77a7e0a034bab5eeddcfe231973575bf13f4
-workflow-type: ht
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+workflow-type: tm+mt
 source-wordcount: '4582'
 ht-degree: 100%
 
@@ -745,8 +745,8 @@ data:
    * 部署此規則後，仔細分析 CDN 記錄以驗證並未錯誤標記合法請求。您確信合法流量未受影響後，請切換至封鎖模式。
 
 >[!NOTE]
-> 我們的經驗指出：與 ATTACK 標幟相關的誤報相當罕見。因此，立即封鎖所有可疑流量 (即使此 IP 位址並非已知為惡意的)，並隨後使用 CDN 記錄分析來識別並引入合法流量的允許規則，這可能是實用的策略。每個組織皆應評估自身對於風險的容許度，權衡加強保護的保護與無意間封鎖合法請求的風險。
 >
+> 我們的經驗指出：與 ATTACK 標幟相關的誤報相當罕見。因此，立即封鎖所有可疑流量 (即使此 IP 位址並非已知為惡意的)，並隨後使用 CDN 記錄分析來識別並引入合法流量的允許規則，這可能是實用的策略。每個組織皆應評估自身對於風險的容許度，權衡加強保護的保護與無意間封鎖合法請求的風險。
 
 ```
     # blocks likely attack traffic, which also comes from suspected IPs
@@ -773,8 +773,7 @@ data:
 
 在 2025 年 7 月之前，Adobe 建議使用以下列出的 WAF 規則，這些規則在防禦惡意流量方面仍然有效。請參閱教學課程，了解有關移轉至新建議規則的考量。
 
-<details>
-  <summary>展開以查看舊版建議的 WAF 規則。</summary>
++++ 展開以查看舊版建議的 WAF 規則。
 
 ```
     # Enable recommended WAF protections (only works if WAF is licensed enabled for your environment)
@@ -799,7 +798,8 @@ data:
           - PRIVATEFILE
           - NULLBYTE
 ```
-</details>
+
++++
 
 ## 教學課程 {#tutorial}
 
@@ -813,7 +813,3 @@ data:
 * 使用工具模擬惡意流量來測試您的規則
 * 使用記錄分析工具來分析結果
 * 最佳實務
-
-
-
-

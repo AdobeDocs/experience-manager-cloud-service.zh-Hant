@@ -4,7 +4,7 @@ description: 瞭解如何在自行託管的儲存體(例如Amazon S3或Azure Blo
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 1%
@@ -30,7 +30,7 @@ ht-degree: 1%
 
 ### 語法 {#syntax}
 
-錯誤頁面會實作為單頁應用程式(SPA)，並參考一些屬性，如以下範例所示。  URL參考的靜態檔案應由您透過網際網路可存取的服務(例如Amazon S3或Azure Blob Storage)來託管。
+錯誤頁面會實作為單頁應用程式(SPA)，並參考一些屬性，如下列範例所示。  URL參考的靜態檔案應由您透過網際網路可存取的服務(例如Amazon S3或Azure Blob Storage)來託管。
 
 設定範例：
 
@@ -58,7 +58,7 @@ data:
 |     | cssUrl | CSS檔案的URL。 |
 |     | jsUrl | JavaScript檔案的URL。 |
 
-### 範例產生的HTML {#sample-generated-html}
+### 產生的範例HTML {#sample-generated-html}
 
 CDN產生並提供給使用者端（例如瀏覽器）的HTML程式碼會類似（但不完全相同）下列程式碼片段：
 
@@ -93,6 +93,6 @@ curl "https://publish-pXXXXX-eXXXXXX.adobeaemcloud.com/cdnstatus?code=403"
 
 ### 教學課程
 
-請參閱[CDN錯誤頁面](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages)教學課程，以取得如何建立、部署和測試CDN提供的錯誤頁面的逐步指示。
+請參閱[CDN錯誤頁面](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages)教學課程，以取得如何建立、部署和測試CDN提供的錯誤頁面的逐步指示。
 
 

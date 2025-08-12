@@ -4,10 +4,10 @@ description: 本教學課程可協助您啟動並執行新的 Adobe Experience M
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1921'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -240,7 +240,7 @@ URL：`https://main--wefinance--wkndform.aem.live/enquiry`
        npm install -g @adobe/aem-cli
    ```
 
-1. 複製您的 GitHub 專案：使用以下命令從 GitHub 原地複製您的專案存放庫，更換為 <owner> 存放庫所有者和 <repo> 存放庫名稱：
+1. 複製GitHub專案：使用下列命令從GitHub複製專案存放庫，將`<owner>`取代為存放庫擁有者，並將`<repo>`取代為存放庫名稱：
 
    ```
    git clone https://github.com/<owner>/<repo>

@@ -1,25 +1,23 @@
 ---
 title: 如何在AEM Forms執行個體上匯入、匯出及組織最適化Forms或PDF forms？
-description: 瞭解如何從AEM執行個體移轉最適化Forms、PDF forms、主題和其他支援資產。
+description: 瞭解如何移轉最適化Forms、PDF forms、主題和其他支援資產到AEM執行個體，以及從中移轉這些資產。
 topic-tags: forms-manager
 role: Admin, User
 feature: Adaptive Forms
 exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
-source-git-commit: 6f547bd743932d45e45e0a3c47ff5eb2129cb664
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1073'
 ht-degree: 3%
 
 ---
 
-
+# 匯入或匯出最適化Forms和AEM Forms資產 {#importing-and-exporting-assets-to-aem-forms}
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/forms/manage-administer-aem-forms/import-export-forms-templates) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/manage-administer-aem-forms/import-export-forms-templates) |
 | AEM as a Cloud Service  | 本文章 |
-
-# 匯入或匯出最適化Forms和AEM Forms資產 {#importing-and-exporting-assets-to-aem-forms}
 
 您可以在[!DNL AEM Forms]個執行個體之間移動最適化Forms和相關資產，例如最適化表單主題、表單資料模型(FDM)、最適化表單範本、片段和PDF forms。
 
@@ -73,7 +71,7 @@ ht-degree: 3%
 您可以匯出[!DNL AEM Forms]中可用於其他專案或執行個體的主題。 AEM可讓您將主題下載為zip檔案，以便在執行個體上傳。
 若要下載佈景主題：
 
-1. 登入您的[!DNL Experience Manager Forms]作者執行個體。
+1. 登入您的 [!DNL Experience Manager Forms] 作者實例。
 1. 選取&#x200B;**[!UICONTROL Forms]** > **[!UICONTROL 主題]**。
 
    ![選取主題](/help/forms/assets/select-theme.png)
@@ -100,7 +98,7 @@ ht-degree: 3%
 
    ![選取主題](/help/forms/assets/select-theme.png)
 
-1. 在[佈景主題]頁面上，按一下[建立&#x200B;] **&#x200B; > [檔案上傳]**。**&#x200B;**
+1. 在[佈景主題]頁面上，按一下[建立&#x200B;** > [檔案上傳]**]。****
 
    ![上傳佈景主題](/help/forms/assets/theme-upload.png)
 
@@ -128,7 +126,7 @@ ht-degree: 3%
 
    ![新增資料夾](/help/forms/assets/add-folder.png)
 
-1. 按一下&#x200B;**[!UICONTROL 建立]**。
+1. 按一下「**[!UICONTROL 建立]**」。
 
    >[!NOTE]
    >
@@ -183,7 +181,7 @@ ht-degree: 3%
 
    ![搜尋資產](/help/forms/assets/search-bar.png)
 
-如需有關使用搜尋的詳細資訊與指示，請參閱[搜尋](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=zh-Hant)。
+如需有關使用搜尋的詳細資訊與指示，請參閱[搜尋](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html)。
 
 <!--
 ## Export or create a package {#export-a-workflow-application}

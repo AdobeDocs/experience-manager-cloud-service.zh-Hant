@@ -4,7 +4,7 @@ description: 瞭解如何在AEM as a Cloud Service中將記錄轉送給記錄廠
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7094ac805e2b66813797fbbc7863870f18632cdc
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '2409'
 ht-degree: 3%
@@ -19,22 +19,6 @@ ht-degree: 3%
 
 擁有記錄廠商授權或託管記錄產品的客戶可以將AEM記錄(包括Apache/Dispatcher)和CDN記錄轉送至相關聯的記錄目的地。 AEM as a Cloud Service支援下列記錄目的地：
 
-&lt;html>
-&lt;style>
-table &lbrace;
-  border: 1px solid black;
-  border-collapse: collapse;
-  text-align: center;
-  table-layout: fixed;
-&rbrace;
-th, td &lbrace;
-  width: 5%;
-  max-width: 100%;
-  border: 1px solid black;
-  padding: 8px;
-  word-wrap: break-word;
-&rbrace;
-&lt;/style>
 <table>
   <tbody>
     <tr>
@@ -109,7 +93,7 @@ th, td &lbrace;
     </tr>
   </tbody>
 </table>
-&lt;/html>
+</html>
 
 >[!NOTE]
 >
@@ -200,14 +184,7 @@ AEM和Apache/Dispatcher記錄檔可選擇透過AEM的進階網路基礎結構（
 有些組織會選擇限制記錄目的地可以接收哪些流量，有些組織則可能需要使用HTTPS (443)以外的連線埠。  如果是，則必須先設定[進階網路](/help/security/configuring-advanced-networking.md)，才能部署記錄轉送設定。
 
 根據您是否使用連線埠443，以及您是否需要在固定IP位址顯示日誌，使用下表檢視進階網路和記錄組態的需求。
-&lt;html>
-&lt;style>
-table, th, td &lbrace;
-  border: 1px solid black;
-  border-collapse: collapse;
-  text-align: center;
-&rbrace;
-&lt;/style>
+
 <table>
   <tbody>
     <tr>
@@ -239,7 +216,7 @@ table, th, td &lbrace;
       <td>是</td>
   </tbody>
 </table>
-&lt;/html>
+</html>
 
 >[!NOTE]
 >是否從單一IP位址顯示記錄取決於您選擇的進階網路設定。  必須使用專用輸出來處理這個問題。
@@ -270,6 +247,7 @@ data:
 針對CDN記錄，您可以將IP位址加入允許清單，如[Fastly檔案 — 公用IP清單](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/)中所述。 如果共用IP位址清單太大，請考慮傳送流量至https伺服器或(非Adobe) Azure Blob存放區，其中可寫入邏輯，以將已知IP的記錄傳送至其最終目的地。
 
 >[!NOTE]
+>
 >CDN記錄無法顯示來自與您的AEM記錄顯示來源相同的IP位址，因為記錄會直接從Fastly傳送，而不是AEM Cloud Service。
 
 ## 記錄目的地組態 {#logging-destinations}
@@ -304,15 +282,15 @@ data:
 IAM原則應該允許使用者使用`s3:putObject`。  例如：
 
 ```json
-{
-   "Version": "2012-10-17",
-   "Statement": [{
-       "Effect": "Allow",
-       "Action": [
-           "s3:PutObject"
-       ],
-       "Resource": "arn:aws:s3:::your_bucket_name/*"
-   }]
+ {
+    "Version": "2012-10-17",
+    "Statement": [{
+        "Effect": "Allow",
+        "Action": [
+            "s3:PutObject"
+        ],
+        "Resource": "arn:aws:s3:::your_bucket_name/*"
+    }]
 }
 ```
 
@@ -512,6 +490,7 @@ Web要求(POST)將持續傳送，其有json裝載（記錄專案陣列），其�
 ```
 
 >[!NOTE]
+>
 >記錄轉送至New Relic僅適用於客戶擁有的New Relic帳戶。
 >
 >電子郵件[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)以要求存取權。
@@ -538,6 +517,7 @@ Token需要「擷取記錄檔」範圍屬性。
 ```
 
 >[!NOTE]
+>
 > 電子郵件[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)以要求存取權。
 
 ### Splunk {#splunk}
@@ -630,6 +610,7 @@ aem_tier: author
 我們建議（但非必要）將設定部署到所有環境，以便它們都處於自助控制之下。 如果沒有，您可能會忘記哪些環境已由Adobe設定，哪些是以自助方式設定。
 
 >[!NOTE]
+>
 >傳送至您Splunk索引的`sourcetype`欄位值可能已變更，因此請適當的調整。
 >
 >當記錄轉送部署至先前由Adobe支援設定的環境時，您可能會收到長達數小時的重複記錄。 這最終會自動解決。

@@ -4,7 +4,7 @@ description: 自訂 AEM Forms 適用的 Edge Delivery Services 主題與樣式
 feature: Edge Delivery Services
 exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
 role: Admin, Architect, Developer
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1901'
 ht-degree: 98%
@@ -476,7 +476,7 @@ ht-degree: 98%
 ```
 
 - Fieldset 元素可用作含有 panel-wrapper 類別和其他類別的面板容器，以便根據面板名稱 (field-login) 設定樣式。
-- 圖例元素 (&lt;legend>) 可用作面板標題，其中包含文字「登入資訊」和 field-label 類別。data-visible=&quot;false&quot; 屬性可以與 JavaScript 一起用來控制標題的可見度。
+- 圖例元素(`<legend>`)做為面板標題，包含「登入資訊」文字和類別欄位標籤。 data-visible=&quot;false&quot; 屬性可以與 JavaScript 一起用來控制標題的可見度。
 - 在欄位集中，多個。{Type}-wrapper 元素 (在本例中為 .text-wrapper 和 .password-wrapper) 代表面板中的個別表單欄位。
 - 每個包裝函式皆包含一個標籤、輸入欄位及說明，與先前的範例類似。
 
@@ -637,7 +637,6 @@ ht-degree: 98%
   margin-bottom: 10px;
 }
 ```
-
 此選擇器可為可重複面板中所有欄位包裝函式進行樣式設定，讓欄位之間的間距維持一致。
 
 - 為特定欄位 (在面板內) 進行目標定位：

@@ -4,13 +4,13 @@ description: 瞭解如何為最適化Forms建立自訂提交動作，以便在�
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Intermediate
-source-git-commit: b703d4c0b0bb25ecc57e5335b672069f7ad2199d
+exl-id: a369b585-d148-4b5a-8afe-d5673ea865d0
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1083'
 ht-degree: 4%
 
 ---
-
 
 # 建立最適化Forms （核心元件）的自訂提交動作
 
@@ -47,11 +47,11 @@ ht-degree: 4%
 
    **在哪裡可以找到此資訊？**
 
-   如需尋找這些詳細資訊的逐步指示，請參閱Adobe Experience League文章&quot;[存取Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hant#accessing-git)&quot;。
+   如需尋找這些詳細資訊的逐步指示，請參閱Adobe Experience League文章&quot;[存取Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)&quot;。
 
    **您的專案已就緒！**
 
-   當命令成功完成時，您會看到在本機目錄中建立的新資料夾。 此資料夾是以您的應用程式（例如app-id）命名。 此資料夾包含從AEM as a Cloud Service Git存放庫下載的所有檔案和程式碼。 您可以在`archetype.properties`檔案中找到您AEM專案的`<appid>`。
+   當命令成功完成時，您會看到在本機目錄中建立的新資料夾。 此資料夾是以您的應用程式（例如app-id）命名。 此資料夾包含從AEM as a Cloud Service Git存放庫下載的所有檔案和程式碼。 您可以在`<appid>`檔案中找到您AEM專案的`archetype.properties`。
 
    ![Archetype屬性](/help/forms/assets/custom-submit-action-archetype-app-id.png)
 
@@ -81,7 +81,7 @@ ht-degree: 4%
 
    `/ui.apps/src/main/content/jcr_root/apps/<app-id>/customsubmitaction/`
 
-   `Important`：取代 &lt;app-id> 以及您的實際應用程式ID。
+   `Important`：將`<app-id>`取代為您的實際應用程式ID。
 
 1. 建立新的組態檔。
 在`customsubmitaction`資料夾中，建立名為`.content.xml`的新檔案。
@@ -112,7 +112,7 @@ ht-degree: 4%
 
 **在`filter.xml`**&#x200B;中包含新資料夾
 
-1. 導覽至[AEMaaCS專案目錄]中的`/ui.apps/src/main/content/META-INF/vault/filter.xml`檔案。
+1. 導覽至`/ui.apps/src/main/content/META-INF/vault/filter.xml`AEMaaCS專案目錄[中的]檔案。
 
 1. 開啟檔案，並在結尾新增下列行：
 
@@ -120,7 +120,7 @@ ht-degree: 4%
    <filter root="/apps/<app-id>/[customsubmitaction-folder]"/>
    ```
 
-   例如，新增下列程式碼行以在`filter.xml`檔案中新增`customsubmitaction`資料夾：
+   例如，新增下列程式碼行以在`customsubmitaction`檔案中新增`filter.xml`資料夾：
 
    ```
    <filter root="/apps/wknd/customsubmitaction"/>
@@ -134,7 +134,7 @@ ht-degree: 4%
 
 1. 導覽至`[AEMaaCS project directory]`中的下列目錄：
    `/core/src/main/java/com/<app-id>/core/service/`
-   `Important`：取代 &lt;app-id> 以及您的實際應用程式ID。
+   `Important`：將`<app-id>`取代為您的實際應用程式ID。
 1. 建立新的Java檔案來實作新增提交動作的服務。 例如，將新的Java檔案新增為`CustomSubmitService.java`。
 
    ![自訂提交動作資料夾](/help/forms/assets/custom-submit-action-custom-submit-folder.png)
@@ -216,7 +216,7 @@ ht-degree: 4%
 
       透過[現有的完整棧疊管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hant#setup-pipeline)觸發程式碼的部署。 它會透過新的自訂提交動作支援，自動建置及部署更新的程式碼。
 
-      如果您尚未設定管道，請參閱[上的指南如何設定AEM Formsas a Cloud Service的管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hant#setup-pipeline)。
+      如果您尚未設定管道，請參閱[上的指南以瞭解如何設定AEM Forms as a Cloud Service的管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hant#setup-pipeline)。
 
       ![雲端部署](/help/forms/assets/custom-submit-action-cloud-deployment.png)
 
@@ -230,7 +230,7 @@ ht-degree: 4%
 
 ### 使用新增的提交動作預覽最適化表單
 
-1. 登入您的AEM Formsas a Cloud Service執行個體。
+1. 登入您的AEM Forms as a Cloud Service執行個體。
 1. 移至&#x200B;**Forms** > **Forms和檔案**。
 
    ![Forms和檔案](/help/forms/assets/custom-submit-action-fnd.png)
@@ -255,7 +255,7 @@ ht-degree: 4%
    成功提交表單後，您可以檢查&#x200B;**Adobe Experience Manager Web主控台組態**，以驗證本機開發環境中自訂提交動作的動作。
 1. 前往 `http://<host>:<port>/system/console/configMgr`。
 
-1. 瀏覽至`http://<host>:<port>/system/console/slinglog`的&#x200B;**Adobe Experience Manager Web Console記錄檔支援**。
+1. 瀏覽至&#x200B;**的** Adobe Experience Manager Web Console記錄檔支援`http://<host>:<port>/system/console/slinglog`。
 
    ![ConfigMgr](/help/forms/assets/custom-submit-action-sling-log.png)
 

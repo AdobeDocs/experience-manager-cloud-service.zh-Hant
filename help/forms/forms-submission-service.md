@@ -8,7 +8,7 @@ level: Beginner, Intermediate
 hide: true
 hidefromtoc: true
 exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
-source-git-commit: 05c0d8fd16cc8bd805a0e8644d3145685fe6fa12
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1545'
 ht-degree: 1%
@@ -115,7 +115,7 @@ Forms提交服務提供幾個簡化資料收集的優點：
 
 >[!TIP]
 >
->**不熟悉Edge Delivery Services？**&#x200B;從[快速入門教學課程](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial)開始，以設定您的專案基礎。
+>**不熟悉Edge Delivery Services？**&#x200B;從[快速入門教學課程](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial)開始，以設定您的專案基礎。
 
 ## 設定方法
 
@@ -135,7 +135,7 @@ Forms提交服務提供兩種設定方法。 選擇最適合您工作流程的�
 
 在設定任一方法之前，請確定您的AEM專案基礎已準備就緒：
 
-1. **使用最新的Adaptive Forms區塊（**&#x200B;快速入門教學課程[）建立或更新您的AEM專案](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial)
+1. **使用最新的Adaptive Forms區塊（**&#x200B;快速入門教學課程[）建立或更新您的AEM專案](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial)
 
 2. **更新專案根目錄中的`fstab.yaml`**：
 
@@ -147,8 +147,6 @@ Forms提交服務提供兩種設定方法。 選擇最適合您工作流程的�
 
 
 3. **與**&#x200B;共用您的專案資料夾`forms@adobe.com` （需要編輯許可權）
-
-+++
 
 +++
 
@@ -170,7 +168,7 @@ Forms提交服務提供兩種設定方法。 選擇最適合您工作流程的�
 1. **開啟您的試算表平台** (Google工作表或Microsoft Excel)
 2. **為您的表單專案建立新的試算表**
 3. **為您的工作表命名** （必須是`helix-default`或`shared-aem`）
-4. **使用**&#x200B;表單建立指南[定義您的表單結構](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)
+4. **使用**&#x200B;表單建立指南[定義您的表單結構](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)
 
 ![表單定義](/help/forms/assets/form-submission-definition.png)
 *範例：具有欄位型別、標籤和驗證規則的表單定義*
@@ -369,6 +367,7 @@ Postman提供方便使用者的介面，用於測試API提交。
 1. **在Postman中建立新的POST要求**
 2. **設定端點：** `https://forms.adobe.com/adobe/forms/af/submit/{id}`
 3. **取代預留位置：**
+
    - `{id}`→您的實際表單識別碼
    - `[repository]`→您的GitHub存放庫名稱
    - `[organization]`→您的GitHub組織/使用者名稱
@@ -581,7 +580,7 @@ Solutions:
 
 +++ 增強您的Forms
 
-- **[建立進階Forms](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)** — 新增驗證、條件式邏輯和自訂樣式
+- **[建立進階Forms](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)** — 新增驗證、條件式邏輯和自訂樣式
 - **[表單元件指南](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/forms-components)** — 探索可用的表單欄位型別
 
 +++

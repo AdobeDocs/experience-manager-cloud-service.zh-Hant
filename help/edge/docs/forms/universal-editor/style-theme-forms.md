@@ -4,7 +4,7 @@ description: 有效地自訂透過 Edge Delivery Services 交付的 AEM Forms �
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '2493'
 ht-degree: 55%
@@ -1109,7 +1109,6 @@ main .form form .file-wrapper .files-list .file-description .file-description-na
   text-align: center;
 }
 ```
-
 +++
 
 +++ 根據欄位名稱設定樣式

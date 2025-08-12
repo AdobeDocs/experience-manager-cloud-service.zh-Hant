@@ -4,9 +4,9 @@ description: 瞭解如何在設定檔案中宣告規則和篩選器，並使用C
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: ab855192e4b60b25284b19cc0e3a8e9da5a7409c
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '1508'
+source-wordcount: '1506'
 ht-degree: 1%
 
 ---
@@ -172,8 +172,8 @@ data:
 |     | 變數 | 移除指定的變數。 |
 |     | queryParamMatch | 移除符合指定規則運算式的所有查詢引數。 |
 |     | queryParamDoesNotMatch | 移除不符合指定規則運算式的所有查詢引數。 |
-| **轉換** | op：replace， （reqProperty或reqHeader、queryParam或reqCookie或var），match，replacement | 以新值取代部分請求引數（僅支援「path」屬性）、請求標頭、查詢引數、Cookie或變數。 |
-|              | op：tolower， （reqProperty或reqHeader、queryParam或reqCookie或var） | 將請求引數（僅支援「path」屬性）、請求標頭、查詢引數、Cookie或變數設定為小寫值。 |
+| **轉換** | op:replace， （reqProperty或reqHeader、queryParam或reqCookie或var），符合，取代 | 以新值取代部分請求引數（僅支援「path」屬性）、請求標頭、查詢引數、Cookie或變數。 |
+|              | op:tolower， （reqProperty或reqHeader、queryParam或reqCookie或var） | 將請求引數（僅支援「path」屬性）、請求標頭、查詢引數、Cookie或變數設定為小寫值。 |
 
 取代動作支援擷取群組，如下所示：
 
@@ -474,7 +474,7 @@ data:
 ```
 
 >[!NOTE]
-> 由於已使用Adobe Managed CDN，請依照Edge Delivery Services [安裝程式推送失效檔案](https://www.aem.live/docs/byo-dns#setup-push-invalidation)，確定在&#x200B;**Managed**&#x200B;模式中設定推送失效。
+> 由於已使用Adobe Managed CDN，請依照Edge Delivery Services **安裝程式推送失效檔案**，確定在[Managed](https://www.aem.live/docs/byo-dns#setup-push-invalidation)模式中設定推送失效。
 
 
 ## 伺服器端重新導向 {#server-side-redirectors}

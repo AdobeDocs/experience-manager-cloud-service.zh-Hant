@@ -4,7 +4,7 @@ description: 瞭解如何使用設定管道在AEM as a Cloud Service中部署不
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 4c166193ec464bb66fe00ff648c2c449ab5b3eab
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
 source-wordcount: '1024'
 ht-degree: 1%
@@ -33,7 +33,7 @@ Cloud Manager設定管道將設定檔案（以YAML格式建立）部署到目標
 
 下表提供這類設定的完整清單，以及描述其不同設定語法和其他資訊的專用檔案的連結。
 
-| 類型 | YAML `kind`值 | 描述 |
+| 類型 | YAML `kind`值 | 說明 |
 |---|---|---|
 | [流量篩選器規則，包括WAF](/help/security/traffic-filter-rules-including-waf.md) | `CDN` | 宣告規則以封鎖惡意流量 |
 | [要求轉換](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations) | `CDN` | 宣告規則以轉換流量請求的形狀 |
@@ -63,10 +63,10 @@ Cloud Manager設定管道將設定檔案（以YAML格式建立）部署到目標
 每個設定檔案都會以類似下列範常式式碼片段的屬性開頭：
 
 ```yaml
-  kind: "LogForwarding"
-  version: "1"
-  metadata:
-    envTypes: ["dev"]
+   kind: "LogForwarding"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
 ```
 
 | 屬性 | 說明 | 預設 |
@@ -152,7 +152,7 @@ data:
 ```
 
 屬性值可能有差異時，請使用此結構。 在檔案中，可以預期`envTypes`陣列值與尾碼相對應，例如
-值為`["dev"]`的`cdn-dev.yaml`和`logForwarding-dev.yaml`、`cdn-stage.yaml`以及值為`["stage"]`的`logForwarding-stage.yaml`等。
+值為`cdn-dev.yaml`的`logForwarding-dev.yaml`和`["dev"]`、`cdn-stage.yaml`以及值為`logForwarding-stage.yaml`的`["stage"]`等。
 
 ### 每個環境的資料夾 {#folder-per-env}
 

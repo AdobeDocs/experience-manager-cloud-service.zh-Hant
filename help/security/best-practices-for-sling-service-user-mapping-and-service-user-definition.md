@@ -4,10 +4,10 @@ description: 了解 Sling Service 使用者對應和服務使用者定義的最�
 exl-id: 72f0dcbf-b4e6-4a73-8232-3574a212ac19
 feature: Security
 role: Admin
-source-git-commit: f28f212574dda0ece2cedb56a714d381e5bd7d3c
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '1884'
-ht-degree: 100%
+source-wordcount: '1883'
+ht-degree: 99%
 
 ---
 
@@ -56,7 +56,7 @@ bundleId [:subserviceName] = userName | [principalNames]
 * 避免重複設定權限
 * 更了解給定服務實際執行的有效權限 (和任務)
 * 不需要服務使用者的明確群組會籍。當群組權限變更時，這可能會產生麻煩的副作用
-* 性能改進和擴充性
+* 效能改進和擴充性
 
 ## 對應解析和服務登入 {#mapping-resolution-and-service-login}
 
@@ -77,7 +77,7 @@ bundleId [:subserviceName] = userName | [principalNames]
 
 1. 從 `ServiceUserMapper` 取得主體名稱 => 預先驗證存放庫登入，如下所述
 1. 從 `ServiceUserMapper` 擷取使用者 ID
-1. 檢查目前使用者 ID 是否已棄用 1ServiceUserConfiguration`
+1. 檢查目前使用者ID是否已被取代`1ServiceUserConfiguration`
 1. 透過使用者 ID 的預設 Sling Service 登入 (例如 `createAdministrativeSession` 順序並模擬服務使用者 ID)
 
 與主體名稱的新對應產生以下簡化的存放庫登入：

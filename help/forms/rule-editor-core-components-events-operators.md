@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: ac85ff04-25dc-4566-a986-90ae374bf383
-source-git-commit: 321116ce8d6da53c431f68f437cbf7c0050a47e8
+source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
 workflow-type: tm+mt
-source-wordcount: '2333'
+source-wordcount: '2327'
 ht-degree: 2%
 
 ---
@@ -28,12 +28,12 @@ ht-degree: 2%
 
 * **等於** — 檢查表單物件是否符合指定的值。
 * **不等於** — 檢查表單物件是否不符合指定的值。
-* **開始於** – 檢查表單物件是否以指定的字串開頭。
-* **終止於** – 檢查表單物件是否以指定的字串結尾。
-* **包含** – 檢查表單物件是否包含指定的子字串。
-* **不包含** – 檢查表單物件是否不包含指定的子字串。
-* **為空** – 檢查表單物件是否為空或未提供。
-* **非空** – 檢查表單物件是否存在且不為空。
+* **開頭為** — 檢查表單物件是否以指定的字串開頭。
+* **結尾為** — 檢查表單物件是否以指定的字串結尾。
+* **包含** — 檢查表單物件是否包含指定的子字串。
+* **不包含** — 檢查表單物件是否不包含指定的子字串。
+* **Is Empty** — 檢查表單物件是否為空白或未提供。
+* **不是空的** — 檢查表單物件是否存在且不是空的。
 * **已選取** — 當使用者選取特定的核取方塊、下拉式清單或選項按鈕選項時，傳回True。
 * **已初始化（事件）** — 在瀏覽器中轉譯表單物件時傳回true。
 * **已變更（事件）** — 當使用者修改表單物件的值或選取範圍時，傳回true。
@@ -68,12 +68,11 @@ ht-degree: 2%
 
 `Action 2 on Object B;`
 `AND`
-&#39;物件C上的動作3；
+`Action 3 on Object C;`
 
 `Else, do the following:`
 
 `Action 2 on Object C;`
-_
 
 當您有多值元件（如單選按鈕或清單）時，為該元件建立規則時，會自動擷取選項，並讓規則建立者可以使用這些選項。 您不需要再次輸入選項值。
 
@@ -89,9 +88,9 @@ _
 >
 > 當規則型別僅支援單一層級then-else陳述式時。
 
-##### 允許的多個字段 [!UICONTROL 時間] {#allowed-multiple-fields}
+##### [!UICONTROL When]中允許多個欄位 {#allowed-multiple-fields}
 
-在 When **&#x200B;**&#x200B;条件中，您可以選擇添加除應用規則的欄位之外的其他字段。
+在&#x200B;**When**&#x200B;條件中，您可以選擇新增套用規則的欄位以外的其他欄位。
 
 例如，使用When規則型別，您可以評估不同表單物件的條件並執行動作：
 
@@ -157,15 +156,15 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 >[!NOTE]
 >
-> 要瞭解有關調用服務的更多資訊， [請按兩下此處](/help/forms/invoke-service-enhancements-rule-editor.md)。
+> 若要進一步瞭解Invoke服務，[請按一下這裡](/help/forms/invoke-service-enhancements-rule-editor.md)。
 
-請參閱有關叫用窗體數據模型 （FDM） 服務的範例規則。
+請參閱叫用表單資料模型(FDM)服務的規則範例。
 
-除了表單資料模型服務之外，您還可指定直接 WSDL URL來叫用網站服務。 然而，表單數據模型服務有許多優點，而且是叫用服務的建議方法。
+除了「表單資料模型」服務之外，您還可以指定直接的WSDL URL來叫用Web服務。 不過，表單資料模型服務有許多優點，且建議叫用服務的方法。
 
-有關在表單數據模型 （FDM） 中配置服務的更多資訊，請參閱 [[!DNL Experience Manager Forms] 數據集成](data-integration.md)。
+如需有關在表單資料模型(FDM)中設定服務的詳細資訊，請參閱[[!DNL Experience Manager Forms] 資料整合](data-integration.md)。
 
-**[!UICONTROL 設置計算的值]** 並設置指定物件的值。 您可以將物件值設為字串、其他物件的值、使用數學運算式或函式的計算值、物件屬性的值，或來自已設定表單資料模型服務的輸出值。 當您選擇Web服務選項時，它會顯示您[!DNL Experience Manager]執行個體上所有表單資料模型(FDM)中設定的所有服務。 選擇表單資料模型服務時，會出現更多欄位，您可在其中對應具有指定服務的輸入和輸出引數的表單物件。
+**[!UICONTROL 設定值]**&#x200B;計算並設定指定物件的值。 您可以將物件值設為字串、其他物件的值、使用數學運算式或函式的計算值、物件屬性的值，或來自已設定表單資料模型服務的輸出值。 當您選擇Web服務選項時，它會顯示您[!DNL Experience Manager]執行個體上所有表單資料模型(FDM)中設定的所有服務。 選擇表單資料模型服務時，會出現更多欄位，您可在其中對應具有指定服務的輸入和輸出引數的表單物件。
 
 如需有關在表單資料模型(FDM)中設定服務的詳細資訊，請參閱[[!DNL Experience Manager Forms] 資料整合](data-integration.md)。
 
@@ -220,7 +219,7 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 #### [!UICONTROL 設定值] {#set-value-of}
 
-**規則型別的**&#x200B;設定值可讓您依據指定的條件是否符合，來設定表單物件的值。 值可以設定為另一個物件的值、常值字串、衍生自數學運算式或函式的值、另一個物件的屬性值，或表單資料模型服務的輸出。 同樣地，您可以檢查元件、字串、屬性或衍生自函式或數學運算式的值的條件。
+**[!UICONTROL 規則型別的]**&#x200B;設定值可讓您依據指定的條件是否符合，來設定表單物件的值。 值可以設定為另一個物件的值、常值字串、衍生自數學運算式或函式的值、另一個物件的屬性值，或表單資料模型服務的輸出。 同樣地，您可以檢查元件、字串、屬性或衍生自函式或數學運算式的值的條件。
 
 **Set Value Of**&#x200B;規則型別不適用於所有表單物件，例如面板和工具列按鈕。 標準的「設定值」規則具有以下結構：
 
@@ -234,7 +233,7 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 當（選擇性）：
 
-（條件 1 和條件 2 和條件 3） 為 TRUE;
+（條件1和條件2和條件3）為TRUE；
 
 下列範例選取`Question2`的值做為`True`，並將`Result`的值設定為`correct`。
 
@@ -276,9 +275,9 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 #### [!UICONTROL 啟用] {#enable}
 
-**啟用**&#x200B;規則“類型允許您根據是否滿足條件來啟用或禁用表單物件。啟用規則類型還會在條件不滿足或返回 `False`時觸發禁用作。
+**[!UICONTROL 啟用]**&#x200B;規則型別可讓您根據條件是否滿足來啟用或停用表單物件。 Enable規則型別也會觸發Disable動作，以防條件不滿足或傳回`False`。
 
-典型的啟用規則結構如下：
+典型的Enable規則結構如下：
 
 `Enable Object A;`
 
@@ -290,9 +289,9 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 `Disable Object A;`
 
-#### [!UICONTROL 禁用] {#disable}
+#### [!UICONTROL 停用] {#disable}
 
-與“啟用規則”類型類似， **[!UICONTROL “禁用]** ”規則類型允許您根據是否滿足條件來啟用或禁用表單物件。 禁用規則類型還會在條件不滿足或返回 `False`時觸發啟用作。
+與「啟用」規則型別類似，**[!UICONTROL 停用]**&#x200B;規則型別可讓您根據條件是否滿足來啟用或停用表單物件。 Disable規則型別也會觸發Enable動作，以防條件不滿足或傳回`False`。
 
 典型的「停用」規則結構如下：
 
@@ -350,13 +349,13 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 如需有關如何建立規則以在面板中導覽的詳細資訊，[請按一下這裡](/help/forms/rule-editor-core-components-usecases.md#navigating-between-panels-using-buttons)。
 
-#### [!UICONTROL 異步函數呼叫]
+#### [!UICONTROL 非同步函式呼叫]
 
-<span class="preview">這是一項預先發佈功能，可透過我們的[預先發佈管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hant#new-features)存取。</span>
+<span class="preview">這是一項預先發佈功能，可透過我們的[預先發佈管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)存取。</span>
 
-**[!UICONTROL 異步函數調用]**&#x200B;規則類型允許您執行異步函數。它使您能夠啟動獨立於主執行線程運行的函數調用，從而允許其他進程繼續運行，而無需等待異步函數完成。
+**[!UICONTROL 非同步函式呼叫]**&#x200B;規則型別可讓您執行非同步函式。 它可讓您啟動獨立於主要執行緒運作的函式呼叫，讓其他處理程式繼續執行，而不需要等候非同步函式完成。
 
-用於執行異步函數的典型異步函數調用規則的結構如下：
+用來執行非同步函式的典型Async函式呼叫規則的結構如下：
 
 `When:`
 
@@ -366,7 +365,7 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 `[Callback Function];`
 
-如需如何在視覺規則編輯器中使用非同步函式呼叫的詳細資訊，請參閱規則編輯器[&#128279;](/help/forms/using-async-funct-in-rule-editor.md)中的使用非同步函式呼叫一文。
+如需如何在視覺規則編輯器中使用非同步函式呼叫的詳細資訊，請參閱規則編輯器[中的](/help/forms/using-async-funct-in-rule-editor.md)使用非同步函式呼叫一文。
 
 <!--
 ### [!UICONTROL Set Options Of] {#setoptionsof}
@@ -390,7 +389,7 @@ To define a rule based on a form data model:
 
 ## 下一步
 
-讓我們現在瞭解根據核心元件[&#128279;](/help/forms/rule-editor-core-components-usecases.md)的最適化表單的規則編輯器的各種範例。
+讓我們現在瞭解根據核心元件[的最適化表單的規則編輯器的各種](/help/forms/rule-editor-core-components-usecases.md)範例。
 
 ## 另請參閱
 
