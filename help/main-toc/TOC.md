@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: 3004d7fe69a0666d5747967519ea08e35ca020a4
+source-git-commit: 2038e0884718a2c0cd0b661ebe0426540a32e35a
 workflow-type: tm+mt
-source-wordcount: '6592'
+source-wordcount: '6605'
 ht-degree: 98%
 
 ---
@@ -266,6 +266,7 @@ ht-degree: 98%
    + [流量篩選規則包括 WAF 規則](/help/security/traffic-filter-rules-including-waf.md)
    + [AEM as a Cloud Service 安全性注意事項](/help/security/security-considerations.md)
    + [Adobe Developer Console 中的 JWT 憑證已被取代](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
+   + [在發佈層級上支援AEM as a Cloud Service的開放ID連線](/help/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier.md)
    + [為 AEM as a Cloud Service 設定 IMS 整合](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)
    + [權限管理的主體視圖](/help/security/touch-ui-principal-view.md)
    + [Sling Service 使用者對應和服務使用者定義的最佳做法](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
