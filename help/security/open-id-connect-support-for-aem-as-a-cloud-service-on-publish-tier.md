@@ -115,6 +115,7 @@ IdP設定的資訊：
       "storeRefreshToken": false
    }
    ```
+
 1. 接著，依照下列方式設定其屬性：
    * `groupsInIdToken`：如果群組是以ID權杖傳送，則設為true。 如果值為false或未指定，則會從UserInfo端點讀取群組。
    * `groupsClaimName`：宣告的名稱包含要在AEM中同步的群組。
