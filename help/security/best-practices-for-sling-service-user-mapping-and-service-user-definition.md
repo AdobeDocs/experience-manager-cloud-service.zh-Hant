@@ -48,7 +48,7 @@ bundleId [:subserviceName] = userName | [principalNames]
 * 不同任務的子服務名稱 - 如果您的搭售方案的服務執行不同的任務，建議識別 `subserviceNames` 以按任務加以群組
 * 如果給定服務執行不同作業 (例如，讀取資產內容和更新 `/var` 子樹狀結構下的資訊)，則建議透過彙總反映個別作業的不同服務主體來反映這一點，例如將一般 `dam-reader-service` 與功能特定 `assetreport-writer-service` 彙總。
 * 理想情況下，每個服務都與一組非常特定且有限的作業綁定
-*  `[one,or,multiple,principalNames]` 的新格式是自 AEM 6.4 起定義服務使用者對應的建議方法。
+* `[one,or,multiple,principalNames]` 的新格式是自 AEM 6.4 起定義服務使用者對應的建議方法。
 
 以下列出變更格式的原因，以及為什麼 Adobe 建議您使用它，而不是使用僅針對單一使用者 ID 的版本對應：
 

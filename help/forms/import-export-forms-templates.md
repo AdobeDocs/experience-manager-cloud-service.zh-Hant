@@ -98,7 +98,7 @@ ht-degree: 3%
 
    ![選取主題](/help/forms/assets/select-theme.png)
 
-1. 在[佈景主題]頁面上，按一下[建立&#x200B;** > [檔案上傳]**]。****
+1. 在[佈景主題]頁面上，按一下[建立&#x200B;**&#x200B; > [檔案上傳]**]。**&#x200B;**
 
    ![上傳佈景主題](/help/forms/assets/theme-upload.png)
 

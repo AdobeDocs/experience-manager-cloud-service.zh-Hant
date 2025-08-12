@@ -93,7 +93,7 @@ ht-degree: 3%
     </tr>
   </tbody>
 </table>
-</html>
+&lt;/html>
 
 >[!NOTE]
 >
@@ -216,7 +216,7 @@ AEM和Apache/Dispatcher記錄檔可選擇透過AEM的進階網路基礎結構（
       <td>是</td>
   </tbody>
 </table>
-</html>
+&lt;/html>
 
 >[!NOTE]
 >是否從單一IP位址顯示記錄取決於您選擇的進階網路設定。  必須使用專用輸出來處理這個問題。
