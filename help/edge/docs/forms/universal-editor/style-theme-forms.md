@@ -4,7 +4,7 @@ description: 有效地自訂透過 Edge Delivery Services 交付的 AEM Forms �
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
 workflow-type: tm+mt
 source-wordcount: '2493'
 ht-degree: 55%
@@ -308,7 +308,7 @@ ht-degree: 55%
 
 所有表單欄位 (不包含下拉式選單、單選按鈕群組和核取方塊群組) 都具有以下 HTML 結構：
 
-#### 一般元件的 HTML 結構
+### 一般元件的 HTML 結構
 
 ```HTML
   <div class="{Type}-wrapper field-{Name}   field-wrapper" data-required={Required}>
@@ -1051,7 +1051,7 @@ main .form form .file-wrapper .files-list .file-description .file-description-na
 
 您可以使用 CSS 選取器來以特定欄位類型為目標並一致地套用樣式。
 
-#### HTML 結構
+### HTML 結構
 
 ```HTML
 <div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
@@ -1092,7 +1092,7 @@ main .form form .file-wrapper .files-list .file-description .file-description-na
 
 
 
-#### CSS 選取器範例
+### CSS 選取器範例
 
 ```CSS
 /- Primary Pattern: Target all text input fields */
