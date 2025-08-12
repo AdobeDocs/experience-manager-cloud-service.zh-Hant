@@ -97,7 +97,7 @@ Admin Console包含上傳和編輯使用者詳細資訊的兩個個別動作。 
    1. 在出現的對話方塊上，從&#x200B;**下載檔案……**&#x200B;下的下拉式清單中選取&#x200B;**大量使用者檔案**，然後按一下&#x200B;**下載**&#x200B;按鈕。
    1. 儲存產生的CSV檔案
 1. 編輯大量使用者檔案
-   * 每一行代表要上傳的使用者，共有十五個欄位（欄位的名稱構成檔案的第一行）。 有些欄位是選用欄位，此處不說明。 請參閱[大量使用者CSV格式](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format)。  欄位包括：
+   * 每一行代表要上傳的使用者，共有十五個欄位（欄位的名稱構成檔案的第一行）。 有些欄位是選用欄位，此處不說明。 請參閱[大量使用者CSV格式](https://helpx.adobe.com/tw/enterprise/using/bulk-upload-users.html#csv-format)。  欄位包括：
 
       * _身分型別_ — 選擇性。  若未指定，則會建立為Adobe ID
       * _使用者名稱_ — 選擇性，不用於Adobe ID上傳
@@ -108,14 +108,14 @@ Admin Console包含上傳和編輯使用者詳細資訊的兩個個別動作。 
       * _國家/地區代碼_ — 選擇性，不用於Adobe ID上傳
       * _ID_ — 選用，不用於Adobe ID上傳
       * _產品組態_ — 選擇性。 此欄位也將繼承自使用者所屬的任何群組
-      * _管理員角色_ — 選擇性。 如果使用者是管理員，請使用此欄位。 如需詳細資訊，請參閱[大量使用者CSV格式](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format)
-      * _已管理的產品組態_ — 選擇性。  如需詳細資訊，請參閱[大量使用者CSV格式](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format)。 此欄位也將繼承自使用者所屬的任何群組
+      * _管理員角色_ — 選擇性。 如果使用者是管理員，請使用此欄位。 如需詳細資訊，請參閱[大量使用者CSV格式](https://helpx.adobe.com/tw/enterprise/using/bulk-upload-users.html#csv-format)
+      * _已管理的產品組態_ — 選擇性。  如需詳細資訊，請參閱[大量使用者CSV格式](https://helpx.adobe.com/tw/enterprise/using/bulk-upload-users.html#csv-format)。 此欄位也將繼承自使用者所屬的任何群組
       * _使用者群組_ — 選擇性。 應指派使用者作為成員的群組清單。 每個群組都必須是現有的IMS群組。 從CAM下載大量使用者檔案時，此欄位會預先填入使用者在移轉前（直接或間接）身為其IMS啟用群組成員的名稱
-      * _已管理的使用者群組_ — 選擇性。  如需詳細資訊，請參閱[大量使用者CSV格式](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format)。 此欄位也將繼承自使用者所屬的任何群組
-      * _管理的產品_ — 選擇性。  如需詳細資訊，請參閱[大量使用者CSV格式](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format)。 此欄位也將繼承自使用者所屬的任何群組
-      * _管理的合約_ — 選擇性。  如需詳細資訊，請參閱[大量使用者CSV格式](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format)
-      * _開發人員存取權_ — 選擇性。  如需詳細資訊，請參閱[大量使用者CSV格式](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format)
-      * _自動指派的產品_ — 選擇性。  如需詳細資訊，請參閱[大量使用者CSV格式](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html#csv-format)
+      * _已管理的使用者群組_ — 選擇性。  如需詳細資訊，請參閱[大量使用者CSV格式](https://helpx.adobe.com/tw/enterprise/using/bulk-upload-users.html#csv-format)。 此欄位也將繼承自使用者所屬的任何群組
+      * _管理的產品_ — 選擇性。  如需詳細資訊，請參閱[大量使用者CSV格式](https://helpx.adobe.com/tw/enterprise/using/bulk-upload-users.html#csv-format)。 此欄位也將繼承自使用者所屬的任何群組
+      * _管理的合約_ — 選擇性。  如需詳細資訊，請參閱[大量使用者CSV格式](https://helpx.adobe.com/tw/enterprise/using/bulk-upload-users.html#csv-format)
+      * _開發人員存取權_ — 選擇性。  如需詳細資訊，請參閱[大量使用者CSV格式](https://helpx.adobe.com/tw/enterprise/using/bulk-upload-users.html#csv-format)
+      * _自動指派的產品_ — 選擇性。  如需詳細資訊，請參閱[大量使用者CSV格式](https://helpx.adobe.com/tw/enterprise/using/bulk-upload-users.html#csv-format)
 
    * 編輯CSV時，某些應用程式可能會在儲存時新增其他引號，導致處理失敗。 在簡單的文字編輯器中檢查原始CSV是建議的做法，以確保每個欄位都只有一個開頭和結尾引號（而且不應「是智慧型引號」）
 

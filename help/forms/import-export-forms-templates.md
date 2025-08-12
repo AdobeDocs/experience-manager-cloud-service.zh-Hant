@@ -16,7 +16,7 @@ ht-degree: 3%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/manage-administer-aem-forms/import-export-forms-templates) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/forms/manage-administer-aem-forms/import-export-forms-templates) |
 | AEM as a Cloud Service  | 本文章 |
 
 您可以在[!DNL AEM Forms]個執行個體之間移動最適化Forms和相關資產，例如最適化表單主題、表單資料模型(FDM)、最適化表單範本、片段和PDF forms。
@@ -181,7 +181,7 @@ ht-degree: 3%
 
    ![搜尋資產](/help/forms/assets/search-bar.png)
 
-如需有關使用搜尋的詳細資訊與指示，請參閱[搜尋](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html)。
+如需有關使用搜尋的詳細資訊與指示，請參閱[搜尋](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=zh-Hant)。
 
 <!--
 ## Export or create a package {#export-a-workflow-application}
