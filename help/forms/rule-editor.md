@@ -5,9 +5,9 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
+source-git-commit: 2830f06817b65a2ae059c1381a9d5588b661d74e
 workflow-type: tm+mt
-source-wordcount: '6727'
+source-wordcount: '6649'
 ht-degree: 4%
 
 ---
@@ -16,13 +16,13 @@ ht-degree: 4%
 
 >[!NOTE]
 >
-> Adobe建議針對[建立新的Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant)或[將Adaptive Forms新增至AEM Sites頁面](/help/forms/creating-adaptive-form-core-components.md)，使用現代且可擴充的資料擷取[核心元件](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文說明使用基礎元件製作最適化Forms的舊方法。
+> Adobe建議針對[建立新的Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)或[將Adaptive Forms新增至AEM Sites頁面](/help/forms/creating-adaptive-form-core-components.md)，使用現代且可擴充的資料擷取[核心元件](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文說明使用基礎元件製作最適化Forms的舊方法。
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service （基礎元件） | 本文章 |
 | AEM as a Cloud Service （核心元件） | [按一下這裡](/help/forms/rule-editor-core-components.md) |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html) |
 
 ## 概觀 {#overview}
 
@@ -404,7 +404,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 ## 寫入規則 {#write-rules}
 
-您可以使用視覺化規則編輯器來撰寫規則&lt;！ — 或程式碼編輯器>。 當您第一次啟動規則編輯器時，它會在視覺化編輯器模式下開啟。 您可以切換到程式碼編輯器模式並編寫規則。 不過，如果您在程式碼編輯器中撰寫或修改規則，則必須清除程式碼編輯器，才能切換至該規則的視覺化編輯器。 當您下次啟動規則編輯器時，編輯器會以您上次使用來建立規則的模式開啟。
+您可以使用視覺化規則編輯器來撰寫規則。
 
 讓我們先來看看如何使用視覺化編輯器來撰寫規則。
 
@@ -537,7 +537,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 Users added to the forms-power-users group can use code editor. The rule editor auto generates the JavaScript code for any rule you create using visual editor. You can switch from visual editor to the code editor to view the generated code. However, if you modify the rule code in the code editor, you cannot switch back to the visual editor. If you prefer writing rules in code editor rather than visual editor, you can write rules afresh in the code editor. The visual-code editors switcher helps you switch between the two modes.
 
-The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/tw/experience-manager/6-5/forms/javascript-api/index.html).
+The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
 For more information about guidelines to write rules in the code editor, see [Adaptive Form Expressions](adaptive-form-expressions.md).
 
@@ -641,7 +641,7 @@ While writing JavaScript code in the rule editor, the following visual cues help
 
 若要建立使用者端程式庫並將其新增至CRX存放庫，請執行以下步驟：
 
-1. 建立使用者端資源庫。 如需詳細資訊，請參閱[使用使用者端資料庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=zh-Hant#developing)。
+1. 建立使用者端資源庫。 如需詳細資訊，請參閱[使用使用者端資料庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing)。
 1. 在CRXDE中，將字串型別值為`categories`的屬性`customfunction`新增至`clientlib`資料夾。
 
    >[!NOTE]
@@ -651,7 +651,7 @@ While writing JavaScript code in the rule editor, the following visual cues help
 在CRX存放庫中新增使用者端程式庫後，請於最適化表單中使用。 它可讓您使用自訂函式作為表單中的規則。 若要在最適化表單中新增使用者端程式庫，請執行下列步驟：
 
 1. 在編輯模式中開啟您的表單。
-若要以編輯模式開啟表單，請選取表單並選取&#x200B;**[!UICONTROL 開啟]**。
+若要以編輯模式開啟表單，請選取表單並選取**[!UICONTROL 開啟]**。
 1. 在編輯模式中，選取元件，然後選取![欄位層級](assets/select_parent_icon.svg) > **[!UICONTROL 最適化表單容器]**，然後選取![cmppr](assets/configure-icon.svg)。
 1. 在側邊欄中的「使用者端資料庫名稱」下方，新增您的使用者端資料庫。 （範例中為`customfunction`。）
 

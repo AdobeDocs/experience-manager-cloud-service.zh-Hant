@@ -4,10 +4,10 @@ description: 了解 Adobe Experience Manager as a Cloud Service 中 Cloud Manage
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: c465542d5e89dbae0eb1c380ca1e7756d0beb2b6
+source-git-commit: c93716b1a2453c26169020b32e66eb4207f13002
 workflow-type: tm+mt
-source-wordcount: '1308'
-ht-degree: 58%
+source-wordcount: '1377'
+ht-degree: 55%
 
 ---
 
@@ -26,6 +26,12 @@ AEM as a Cloud Service中的Cloud Manager 2025.8.0發行日期是2025年8月7日
 下一個預計發行日期為2025年9月4日星期四。
 
 ## 新增功能 {#what-is-new}
+
+* **Adobe Experience Hub即將推出**
+
+  從2025年8月19日開始，Adobe會分階段向所有Adobe Experience Manager使用者推出新的Experience Hub。
+
+  Experience Hub是一個統一的起點，可提供個人化的情境式體驗，以幫助使用者更快地實現目標。 轉出將於2025年8月26日結束，可供所有使用者使用。 可直接在[experience.adobe.com](https://experience.adobe.com/)存取新的Experience Hub。 若要進一步瞭解，請參閱[Adobe Experience Hub](/help/implementing/cloud-manager/aem-home.md)。
 
 * **Edge Delivery Services授權可以自助方式包含在HIPAA程式中**
 
@@ -48,7 +54,7 @@ AEM as a Cloud Service中的Cloud Manager 2025.8.0發行日期是2025年8月7日
 
      ![建立生產計畫時，在Solutions &amp; Add-Ons中選取Forms附加元件](/help/implementing/cloud-manager/release-notes/assets/forms-add-on-creating-production-program.png) *在計畫建立期間，您可以在Sites解決方案中選取Forms附加元件。*
 
-     ![編輯生產程式時的Forms附加元件](/help/implementing/cloud-manager/release-notes/assets/forms-add-on-editing-production-program.png) *在&#x200B;**編輯程式**&#x200B;中，選取Sites程式的Forms附加元件，然後執行管道以在環境中啟動它。*
+     ![編輯生產程式時的Forms附加元件](/help/implementing/cloud-manager/release-notes/assets/forms-add-on-editing-production-program.png) *在&#x200B;**編輯程式**中，選取Sites程式的Forms附加元件，然後執行管道以在環境中啟動它。*
 
      如需詳細資訊，請參閱[建立生產計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)。
 
@@ -146,7 +152,7 @@ Cloud Manager 現在支援新增名為&#x200B;**專用測試環境**&#x200B;的�
 
   ![篩選器面板，顯示Edge傳遞和發佈傳遞的新傳遞型別](/help/implementing/cloud-manager/release-notes/assets/filter-delivery-type.png)
 
-![Add Edge Delivery pipeline in Add Pipeline drop-down list](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *從&#x200B;**計劃概觀**&#x200B;頁面的&#x200B;**管道**&#x200B;卡片新增 Edge Delivery 管道。*
+![Add Edge Delivery pipeline in Add Pipeline drop-down list](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *從&#x200B;**計劃概觀**頁面的&#x200B;**管道**卡片新增 Edge Delivery 管道。*
 
 ![Add Edge Delivery pipeline dialog box](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *新增 Edge Delivery 管道對話框。*
 

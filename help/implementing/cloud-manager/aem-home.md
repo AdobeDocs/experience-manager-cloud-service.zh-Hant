@@ -1,13 +1,13 @@
 ---
 title: 關於Experience Hub
-description: 瞭解AEM Experience Hub頁面。
+description: 瞭解Adobe Experience Hub頁面。
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: 1bfa47e1-fb2f-4b68-ac69-4618a9e4a5f4
-source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
+source-git-commit: f02457a115d00262b61f09769b9ac0e210942059
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 7%
@@ -20,7 +20,7 @@ Experience Hub推出管理Adobe Experience Manager內容、資產和網站的集
 
 觀看重新構想的AEM Experience Hub工作區快速導覽（1分鐘27秒）。
 
->[!VIDEO](https://video.tv.adobe.com/v/3463278?quality=12&learn=on&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3463267?quality=12&learn=on)
 
 <!--
 Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
@@ -49,15 +49,15 @@ Adobe Experience Manager頁面已更新為增強型導覽和互動式Widget。 �
 
 這些解決方案現在移至&#x200B;**工具**&#x200B;下的主要導覽。 此外，**Sites**&#x200B;和&#x200B;**Assets**&#x200B;的新導覽元素可讓您快速存取重要的Adobe Experience Manager功能，例如Assets、集合、Sites和內容片段。 這些功能適用於您有存取權的主要生產環境。
 
-![體驗中心環境](/help/implementing/cloud-manager/assets/experience-hub-author-environments.png)
+![Experience Hub環境](/help/implementing/cloud-manager/assets/experience-hub-author-environments.png)
 
 作為Adobe Experience Manager的中央樞紐，Experience Hub頁面會展開並包含為每個使用者角色量身打造的其他介面工具和動作。 可完全自訂的頁面，可讓您選擇熒幕的最佳版面配置。 Widget可經過篩選，因此只有選取的元件會顯示在首頁面上，確保提供個人化體驗。
 
-![自訂體驗中心](/help/implementing/cloud-manager/assets/experience-hub-custom.png)
+![Experience Hub自訂](/help/implementing/cloud-manager/assets/experience-hub-custom.png)
 
 Widget也可以在頁面上調整大小和重新定位，以更符合您的需求和偏好設定。
 
-![體驗中心Widget](/help/implementing/cloud-manager/assets/experience-hub-widgets.png)
+![Experience Hub Widget](/help/implementing/cloud-manager/assets/experience-hub-widgets.png)
 
 「**製作環境**」區段會顯示您可存取的所有AEM環境，而「**最近**」區段則提供AEM系統內追蹤的最近造訪頁面清單。
 
