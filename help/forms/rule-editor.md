@@ -651,7 +651,7 @@ While writing JavaScript code in the rule editor, the following visual cues help
 在CRX存放庫中新增使用者端程式庫後，請於最適化表單中使用。 它可讓您使用自訂函式作為表單中的規則。 若要在最適化表單中新增使用者端程式庫，請執行下列步驟：
 
 1. 在編輯模式中開啟您的表單。
-若要以編輯模式開啟表單，請選取表單並選取**[!UICONTROL 開啟]**。
+若要以編輯模式開啟表單，請選取表單並選取&#x200B;**[!UICONTROL 開啟]**。
 1. 在編輯模式中，選取元件，然後選取![欄位層級](assets/select_parent_icon.svg) > **[!UICONTROL 最適化表單容器]**，然後選取![cmppr](assets/configure-icon.svg)。
 1. 在側邊欄中的「使用者端資料庫名稱」下方，新增您的使用者端資料庫。 （範例中為`customfunction`。）
 
