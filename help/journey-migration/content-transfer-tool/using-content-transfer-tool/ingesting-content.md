@@ -4,10 +4,10 @@ description: 瞭解如何使用Cloud Acceleration Manager將移轉集中的內�
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 30386a3117f241d81eed5e55f6c6e97bbe4084f8
+source-git-commit: c81e870667d284626a0092775fdd3bab37b99c58
 workflow-type: tm+mt
-source-wordcount: '3467'
-ht-degree: 12%
+source-wordcount: '3577'
+ht-degree: 11%
 
 ---
 
@@ -151,13 +151,13 @@ ht-degree: 12%
 > 顯示「移轉權杖」欄位，因為在少數情況下，實際上不允許擷取該權杖。 透過允許手動提供，這可讓使用者無需任何其他協助即可快速開始內嵌。 如果提供Token，但訊息仍顯示，則擷取Token並非問題。
 
 * AEM as a Cloud Service會維護環境狀態，而且偶爾會因為各種正常原因而重新啟動移轉服務。 如果服務正在重新啟動，則無法連線到該服務，但最終會提供該服務。
-* 執行個體上可能正在執行另一個處理序。 例如，如果[AEM版本更新](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates)正在套用更新，則系統可能忙碌中，且移轉服務定期無法使用。 完成該程式後，可以再次嘗試開始內嵌。
+* 執行個體上可能正在執行另一個處理序。 例如，如果[AEM版本更新](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates)正在套用更新，則系統可能忙碌中，且移轉服務定期無法使用。 完成該程式後，可以再次嘗試開始內嵌。
 * 如果已透過Cloud Manager套用[IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)，它會封鎖Cloud Acceleration Manager以停止連線至移轉服務。 無法新增用於內嵌的IP位址，因為其位址是動態的。 目前，唯一的解決方案是在擷取和索引過程中停用IP允許清單。
 * 可能有其他原因需要調查。 如果內嵌或索引繼續失敗，請聯絡Adobe客戶服務。
 
 ### AEM版本更新與擷取 {#aem-version-updates-and-ingestions}
 
-[AEM版本更新](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates)會自動套用至環境，以使其與最新的AEM as a Cloud Service版本保持一致。 如果在執行內嵌時觸發更新，可能會導致無法預測的結果，包括環境損毀。
+[AEM版本更新](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates)會自動套用至環境，以使其與最新的AEM as a Cloud Service版本保持一致。 如果在執行內嵌時觸發更新，可能會導致無法預測的結果，包括環境損毀。
 
 如果「AEM版本更新」已上線到目的地程式，則擷取程式會嘗試在開始前停用其佇列。 擷取完成時，版本更新程式狀態會傳回至擷取開始前的狀態。
 
@@ -194,7 +194,7 @@ ht-degree: 12%
 
 [追加擷取](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process)失敗的常見原因是節點ID發生衝突。 若要識別此錯誤，請使用Cloud Acceleration Manager UI下載擷取記錄，並尋找類似以下的專案：
 
->java.lang.RuntimeException： org.apache.jackrabbit.oak.api.CommitFailedException： OakConstraint0030：唯一性條件約束違反了屬性[jcr：uuid]，其值為a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5： /some/path/jcr：content， /some/other/path/jcr：content
+>java.lang.RuntimeException： org.apache.jackrabbit.oak.api.CommitFailedException： OakConstraint0030：唯一性條件約束違反了屬性[jcr:uuid]，其值為a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5： /some/path/jcr:content、 /some/other/path/jcr:content
 
 AEM中的每個節點都必須有一個唯一的uuid。 此錯誤指出正在擷取的節點與目的地執行個體上不同路徑中存在的節點具有相同的uuid。 發生此狀況有兩個原因：
 
@@ -237,9 +237,9 @@ AEM中的每個節點都必須有一個唯一的uuid。 此錯誤指出正在擷
 
 這是MongoDB限制。
 
-請參閱[內容轉移工具必備條件](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)中的`Node property value in MongoDB`附註，以取得詳細資訊以及可協助尋找所有大型節點的Oak工具連結。 修正所有大型節點後，請再次執行擷取和擷取。
+請參閱`Node property value in MongoDB`內容轉移工具必備條件[中的](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)附註，以取得詳細資訊以及可協助尋找所有大型節點的Oak工具連結。 修正所有大型節點後，請再次執行擷取和擷取。
 
-若要避免此限制，請在來源AEM執行個體上執行[Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md)，並檢閱它提供的發現，特別是[「不支援的存放庫結構」(URS)](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-pattern-detection/table-of-contents/urs)模式。
+若要避免此限制，請在來源AEM執行個體上執行[Best Practices Analyzer](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md)，並檢閱它提供的發現，特別是[「不支援的存放庫結構」(URS)](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/urs)模式。
 
 >[!NOTE]
 >
@@ -269,6 +269,15 @@ AEM中的每個節點都必須有一個唯一的uuid。 此錯誤指出正在擷
 >abstract="擷取等待的摘取未成功完成。由於無法執行，擷取已被撤銷。"
 
 使用執行中的擷取作為來源移轉集而建立的擷取會耐心等待，直到擷取成功，而且在那一刻會正常開始。 如果擷取失敗或停止，則擷取及其索引工作將不會開始，但會取消。 在這種情況下，請檢查擷取以確定失敗的原因，修正問題並重新開始擷取。 執行固定擷取後，即可排程新的內嵌。
+
+### 等待內嵌無法啟動 {#waiting-ingestion-not-started}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_waiting_ingestion_not_started"
+>title="等待內嵌未開始"
+>abstract="等候擷取完成後無法開始內嵌。"
+
+使用執行中的擷取作為來源移轉集而建立的內嵌會等到擷取成功為止，而此時擷取會嘗試正常開始。 如果內嵌無法啟動，則會標示為失敗。 不啟動的可能原因包括：在目標製作環境中設定了IP允許清單；由於其他原因，目標環境無法使用。  在此情況下，請檢查擷取無法開始的原因、修正問題，然後再次開始擷取（不需要重新執行擷取）。
 
 ### 重新執行內嵌後已刪除的資產不存在
 
