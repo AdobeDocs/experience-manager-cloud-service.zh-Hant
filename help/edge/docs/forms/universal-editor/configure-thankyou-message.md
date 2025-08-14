@@ -4,7 +4,7 @@ description: 瞭解使用者如何顯示感謝訊息或重新導向至表單作�
 feature: Adaptive Forms, Edge Delivery Services
 role: User
 level: Intermediate
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
+source-git-commit: 07160248d5b5817d155a118475878ce04a687a32
 workflow-type: tm+mt
 source-wordcount: '1133'
 ht-degree: 0%
@@ -96,7 +96,7 @@ ht-degree: 0%
      — 我們的團隊會在2個工作天內檢閱您的提交內容
      — 如需其他資訊，我們會直接聯絡您
     
-    **需要協助?**&#x200B;請透過support@example.com聯絡我們的支援團隊
+    **需要協助?**請透過support@example.com聯絡我們的支援團隊
 
 ## 設定重新導向URL
 

@@ -6,9 +6,9 @@ feature: Edge Delivery Services
 role: User, Developer, Admin
 level: Beginner
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
+source-git-commit: 07160248d5b5817d155a118475878ce04a687a32
 workflow-type: tm+mt
-source-wordcount: '2358'
+source-wordcount: '2355'
 ht-degree: 4%
 
 ---
@@ -16,13 +16,11 @@ ht-degree: 4%
 
 # 導覽至AEM Forms的通用編輯器介面
 
-[通用編輯器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)提供使用Edge Delivery Services建立AEM Forms的視覺介面。 本指南可協助您瞭解介面，以有效建置表單。
+[通用編輯器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)提供使用Edge Delivery Services建立AEM Forms的視覺介面。 它提供&#x200B;**What You See Is What You Get (WYSIWYG)**&#x200B;體驗，可精確顯示您的表單對使用者的顯示方式。
 
 ![通用編輯器介面概觀](/help/edge/docs/forms/universal-editor/assets/universal-editor-interface.png)
 
-## 概觀
-
-Universal Editor提供&#x200B;**What You See Is What You Get (WYSIWYG)**&#x200B;體驗，可以向使用者顯示您表單的確切外觀。 無論您是剛開始建立表單，還是經驗豐富的開發人員，本指南都將協助您：
+本指南可協助您瞭解介面，以有效建置表單。 無論您是剛開始建立表單，還是經驗豐富的開發人員，本指南都將協助您：
 
 **學習基本技能：**
 
@@ -37,6 +35,8 @@ Universal Editor提供&#x200B;**What You See Is What You Get (WYSIWYG)**&#x200B;
 - 建立從概念到發佈的表單
 - 跨裝置測試和預覽表單
 - 與團隊成員在表單專案上共同作業
+
+
 
 ## 快速入門
 
@@ -77,7 +77,7 @@ Universal Editor介面分為四個主要區域，每個區域都針對特定工�
 
 **主要動作：**
 
-- 按一下屬性面板中的&#x200B;**新增**&#x200B;按鈕，即可新增元件&#x200B;**&#x200B;**
+- 按一下屬性面板中的&#x200B;**新增**&#x200B;按鈕，即可新增元件&#x200B;****
 - **選取元素**，方法是直接在畫布中按一下這些元素
 - **在設定元件時檢視即時變更**
 - 在預覽模式下測試&#x200B;**互動**
