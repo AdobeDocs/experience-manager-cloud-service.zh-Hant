@@ -5,7 +5,7 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: bf519f03b9be56c46c1ca04420169eaf221478cc
+source-git-commit: d6d34c2818ecb07c9d610844f6b868fe6a5918c6
 workflow-type: tm+mt
 source-wordcount: '698'
 ht-degree: 41%
@@ -60,7 +60,7 @@ AEM as a Cloud Service提供內建的CDN （內容傳遞網路）服務，也可
 | 1 | [新增SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
 | 2 | [新增自訂網域](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
 | 3 | [新增網域對應](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
-| 4 | [設定DNS](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
+| 4 | [設定DNS](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md#config-dns) |
 | 5 | [檢查DNS狀態](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
 
 >[!TIP]
