@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: fbe20eb0e57be3a6d02d163d92b13be060ac8ba6
-workflow-type: ht
-source-wordcount: '3193'
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
+workflow-type: tm+mt
+source-wordcount: '3194'
 ht-degree: 100%
 
 ---
@@ -37,7 +37,7 @@ Adobe 會定期檢閱包括 API 和設定在內的功能，確保其符合 AEM a
 | ------------ | ------------------ | ----------- |
 | Sites | [Assets HTTP API 中的內容片段支援](/help/assets/content-fragments/assets-api-content-fragments.md) | [透過 OpenAPI 傳遞 AEM 內容片段](/help/headless/aem-content-fragment-delivery-with-openapi.md)<br>以及<br> [內容片段與內容片段模型管理 OpenAPI](/help/headless/content-fragment-openapis.md) |
 | Sites | [PWA 功能](/help/sites-cloud/authoring/sites-console/enable-pwa.md) | 無 |
-| Sites | [SPA 編輯器](/help/implementing/developing/hybrid/introduction.md) | AEM 中用於管理 Headless 內容的首選編輯器為：<br>- [通用編輯器](/help/edge/wysiwyg-authoring/authoring.md)，用於視覺化編輯。<br>- [內容片段編輯器](/help/assets/content-fragments/content-fragments-managing.md)，用於表單型編輯。 |
+| Sites | [SPA 編輯器](/help/implementing/developing/hybrid/introduction.md) | AEM 中用於管理 Headless 內容的首選編輯器為：<br>- [通用編輯器](https://www.aem.live/docs/aem-authoring)，用於視覺化編輯。<br>- [內容片段編輯器](/help/assets/content-fragments/content-fragments-managing.md)，用於表單型編輯。 |
 | [!DNL Sites] | [JavaScript Use API](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [Java Use API](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-htl/content/java-use-api) |
 | [!DNL Sites] | **社交媒體狀態**&#x200B;的體驗片段屬性。 | 此功能規劃於近日移除。 |
 | Sites | [Experience Cloud 設定自動化](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md) | 無 |

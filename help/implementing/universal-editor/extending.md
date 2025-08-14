@@ -4,9 +4,9 @@ description: 瞭解擴充Universal Editor功能的不同選項，以支援內容
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
-source-git-commit: 9941c652a1509934662cdaae6d187d1a28a1cc31
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '581'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Universal Editor的UI擴充功能是使用Adobe App Builder建置的JavaScript�
 
 >[!TIP]
 >
->如果您偏好以範例學習，請參閱[AEM UI擴充功能教學課程](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview)。 雖然重點在於擴充內容片段主控台，但在通用編輯器中實作UI擴充功能的概念是相同的。
+>如果您偏好以範例學習，請參閱[AEM UI擴充功能教學課程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview)。 雖然重點在於擴充內容片段主控台，但在通用編輯器中實作UI擴充功能的概念是相同的。
 
 [在AEM Sites中使用Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/)，您可以為每個執行個體啟用或停用擴充功能、存取Adobe的第一方擴充功能（包括Universal Editor的擴充功能）等等。
 
@@ -59,6 +59,6 @@ Universal Editor的UI擴充功能是使用Adobe App Builder建置的JavaScript�
 
 除了UI擴充功能外，通用編輯器還提供許多其他彈性的擴充點，以實現自訂業務需求的順暢整合。
 
-* **[區塊](/help/edge/developer/block-collection.md)**：在簡單的JSON格式中，專案可以調整可用於內容建立的區塊和UE功能。
+* **[區塊](https://www.aem.live/developer/block-collection)**：在簡單的JSON格式中，專案可以調整可用於內容建立的區塊和UE功能。
 * **[自訂使用者介面](#extending-ui)**：擴充功能可以在側面板或模型對話方塊中顯示必要的UI。
 * **[事件](/help/implementing/universal-editor/events.md)**：擴充功能會收到有關作者在頁面上的動作和選取專案的事件，以適當地回應。

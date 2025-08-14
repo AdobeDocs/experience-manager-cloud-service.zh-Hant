@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: 8689041bffbdd6edb048a1ba50f0ebd82ad740e7
+source-git-commit: a36829e621e97de6ca7548ad07bd1b6343dd9af6
 workflow-type: tm+mt
-source-wordcount: '6604'
-ht-degree: 98%
+source-wordcount: '6470'
+ht-degree: 97%
 
 ---
 
@@ -837,7 +837,7 @@ ht-degree: 98%
             + [建立自訂提交動作](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
             + [使用遷移公用程式工具將基礎元件型最適化表單轉換為核心元件型表單](/help/forms/migration-utility-tool-for-af-core-components.md)
             + [最適化表單中的電子郵件範本](/help/forms/html-email-templates-in-adaptive-forms.md)
-            + [於 Experience Manager Forms 中管理發佈](/help/forms/manage-publication.md)
+            + [在Experience Manager Forms中管理發布](/help/forms/manage-publication.md)
             + 以核心元件為主之自適應表單的規則編輯器簡介{#rule-editor-core-components}
                + [以核心元件為主之最適化表單的規則編輯器簡介](/help/forms/rule-editor-core-components.md)
                + [以核心元件為主之最適化表單的規則編輯器使用者介面](/help/forms/rule-editor-core-components-user-interface.md)
@@ -1065,51 +1065,8 @@ ht-degree: 98%
    + [移轉](/help/commerce-cloud/migration.md)
    + [常見問題集](/help/commerce-cloud/faq.md)
 + Edge Delivery Services {#edge-delivery}
-   + [Edge Delivery Services 概觀](/help/edge/overview.md)
-   + [透過 AEM 使用 Edge Delivery Services](/help/edge/using.md)
-   + [選擇編寫方法](/help/edge/authoring-methods.md)
-   + WYSIWYG 編寫 {#wysiwyg-authoring}
-      + [為 Edge Delivery 編寫 WYSIWYG 內容](/help/edge/wysiwyg-authoring/authoring.md)
-      + [為 Edge Delivery 發佈內容](/help/edge/wysiwyg-authoring/publishing.md)
-      + [開發人員快速入門指南](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
-      + [建立區塊](/help/edge/wysiwyg-authoring/create-block.md)
-      + [建立內容模式](/help/edge/wysiwyg-authoring/content-modeling.md)
-      + [路徑對應](/help/edge/wysiwyg-authoring/path-mapping.md)
-      + [表格資料和試算表](/help/edge/wysiwyg-authoring/tabular-data.md)
-      + [管理分類資料](/help/edge/wysiwyg-authoring/taxonomy.md)
-      + [WYSIWYG 和文件式區塊](/help/edge/wysiwyg-authoring/wysiwyg-doc-blocks.md)
-      + [含有 DAM 資產的頁面](/help/edge/wysiwyg-authoring/dam-assets.md)
-      + [跨網站重複使用程式碼](/help/edge/wysiwyg-authoring/repoless.md)
-      + [無存放庫多網站管理](/help/edge/wysiwyg-authoring/repoless-msm.md)
-      + [無存放庫階段及生產環境](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
-      + [設定網站驗證](/help/edge/wysiwyg-authoring/site-authentication.md)
-      + [WIP Sites 功能](/help/edge/wysiwyg-authoring/wip-features.md)
-   + 文件型編寫 {#document-authoring}
-      + [編寫](/help/edge/docs/authoring.md)
-      + [大量中繼資料](/help/edge/docs/bulk-metadata.md)
-      + [預留位置](/help/edge/docs/placeholders.md)
-      + [Sitemap](/help/edge/developer/sitemap.md)
-      + [SharePoint 設定](/help/edge/docs/setup-customer-sharepoint.md)
-      + [Slack 機器人](/help/edge/docs/slack.md)
-   + 建立應用程式 {#build}
-      + [快速入門 - 開發人員教學課程](/help/edge/developer/tutorial.md)
-      + [專案剖析](/help/edge/developer/anatomy-of-a-franklin-project.md)
-      + [區塊集合](/help/edge/developer/block-collection.md)
-      + [試算表](/help/edge/developer/spreadsheets.md)
-      + [Forms](/help/edge/developer/forms.md)
-      + [建立索引](/help/edge/developer/indexing.md)
-      + [保持 100](/help/edge/developer/keeping-it-100.md)
-      + [標記 - 區段](/help/edge/developer/markup-sections-blocks.md)
-      + [Favicon](/help/edge/developer/favicon.md)
-      + [自訂標頭](/help/edge/docs/custom-headers.md)
-      + [開發人員最佳做法](/help/edge/docs/dev-collab-and-good-practices.md)
-   + 啟動應用程式 {#launch}
-      + [上線檢查清單](/help/edge/docs/go-live-checklist.md)
-      + [推送失效](/help/edge/docs/setup-byo-cdn-push-invalidation.md)
-      + [Cloudflare Worker 設定](/help/edge/docs/byo-cdn-cloudflare-worker-setup.md)
-      + [Akamai 設定](/help/edge/docs/byo-cdn-akamai-setup.md)
-      + [快速設定](/help/edge/docs/byo-cdn-fastly-setup.md)
-      + [重新導向](/help/edge/docs/redirects.md)
+   + [Edge Delivery Services概觀](/help/edge/overview.md)
+{#wysiwyg-authoring}
    + 建置表單 {#build-forms}
       + [概觀](/help/edge/docs/forms/overview.md)
       + WYSIWYG 編寫 {#universal-editor}
@@ -1150,15 +1107,7 @@ ht-degree: 98%
          + [監視表單效能：操作遙測指南](/help/edge/docs/forms/operational-telemetry-for-forms.md)
       + [設定 Edge Delivery Services 表單提交](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
       + [常見問題集](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
-   + [建立表單的最佳做法](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
-   + Edge Delivery 資源 {#resources}
-      + Sidekick {#sidekick}
-         + [使用 Sidekick](/help/edge/docs/sidekick.md)
-         + [安裝延伸模組](/help/edge/docs/sidekick-extension.md)
-         + [Sidekick 庫](/help/edge/docs/sidekick-library.md)
-      + [常見問題集](/help/edge/docs/faq.md)
-      + 工具 {#tools}
-         + [稽核記錄](/help/edge/docs/auditlog.md)
+   + [建立表單的最佳作法](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
 + Headless {#headless}
    + [什麼是 Headless CMS？](/help/headless/what-is-headless.md)
    + [AEM Headless 簡介](/help/headless/introduction.md)

@@ -5,10 +5,10 @@ feature: Authoring
 exl-id: ef482843-451b-474e-a8d0-d0bfcc17221b
 solution: Experience Manager Sites
 role: User
-source-git-commit: 9a700e9eb3116252f42bb08db9dadc0e8a6adbf7
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '569'
-ht-degree: 0%
+source-wordcount: '570'
+ht-degree: 1%
 
 ---
 
@@ -49,7 +49,7 @@ AEM頁面編輯器提供整合式環境，讓您可使用「所見即所得」(W
 
 若要深入瞭解AEM頁面編輯器，請參閱檔案[AEM頁面編輯器](/help/sites-cloud/authoring/page-editor/introduction.md)。
 
-## 文件型編寫  {#document-based}
+## 文件型製作  {#document-based}
 
 如果您使用Edge Delivery服務，您可以選擇在[AEM **Sites**&#x200B;主控台](/help/sites-cloud/authoring/sites-console/introduction.md)之外撰寫內容，作為傳統檔案，例如Microsoft Word或Google Docs。
 
@@ -57,7 +57,7 @@ AEM頁面編輯器提供整合式環境，讓您可使用「所見即所得」(W
 
 有了檔案式撰寫功能，作者可使用既有工具，也能從AEM Edge Delivery Services的速度和效能中受益，輕鬆發佈內容。 檔案式撰寫不需要使用AEM主控台。
 
-若要深入瞭解檔案式撰寫，請參閱[撰寫與發佈內容](/help/edge/docs/authoring.md)。
+若要深入瞭解檔案式撰寫，請參閱[撰寫與發佈內容](https://www.aem.live/docs/aem-authoring)。
 
 ## AEM內容片段編輯器 {#cf-editor}
 

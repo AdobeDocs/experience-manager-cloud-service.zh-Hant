@@ -4,10 +4,10 @@ description: 詳細瞭解元件定義與通用編輯器之間的JSON合約。
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
-source-git-commit: afb59345b48b39376b62a13cce8910bc9bc42c38
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '600'
-ht-degree: 1%
+source-wordcount: '602'
+ht-degree: 2%
 
 ---
 
@@ -21,11 +21,11 @@ ht-degree: 1%
 
 >[!TIP]
 >
->如需內容模型程式的概述，請參閱檔案[使用Edge Delivery Services專案進行WYSIWYG編寫的內容模型](/help/edge/wysiwyg-authoring/content-modeling.md)。
+>如需內容模型程式的概述，請參閱檔案[使用Edge Delivery Services專案進行WYSIWYG編寫的內容模型。](https://www.aem.live/developer/component-model-definitions)
 
 >[!TIP]
 >
->您不需要從頭開始建立自己的`component-definition.json`檔案。 您用來[啟動您的專案](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)的專案樣版包含[完整運作的`component-definition.json`檔案](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-definition.json)，您可以根據自己的需求加以調整。
+>您不需要從頭開始建立自己的`component-definition.json`檔案。 您用來[啟動您的專案](https://www.aem.live/developer/ue-tutorial)的專案樣版包含[完整運作的`component-definition.json`檔案](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-definition.json)，您可以根據自己的需求加以調整。
 
 ## 元件定義範例 {#example}
 
@@ -83,11 +83,11 @@ ht-degree: 1%
 
 * `title`會定義UI中所顯示元件的文字說明。
 * `id`可唯一識別元件。
-   * 相同`id`的[元件模型](/help/implementing/universal-editor/field-types.md#model-structure)定義了元件的欄位。
+   * 相同[的](/help/implementing/universal-editor/field-types.md#model-structure)元件模型`id`定義了元件的欄位。
    * 因為它是唯一的，所以例如可以在[篩選定義](/help/implementing/universal-editor/filtering.md)中使用它來決定哪些元件可以新增到容器中。
 * `model`定義元件使用哪個[模型](/help/implementing/universal-editor/field-types.md#model-structure)。
    * 因此，模型會集中維護在元件定義中，而不需要[指定檢測。](/help/implementing/universal-editor/field-types.md#instrumentation)
-   * 這可讓您跨容器移動元件。
+   * 這樣一來，您就可以在容器間移動元件。
 * `filter`定義元件應使用哪個[篩選器](/help/implementing/universal-editor/filtering.md)。
 
 ## `plugins` {#plugins}

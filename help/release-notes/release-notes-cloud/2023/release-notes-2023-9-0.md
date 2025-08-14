@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2023.9.0 版�
 exl-id: d747f58b-8d6c-418d-9d2b-ec3ae4b6dc03
 feature: Release Information
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
 source-wordcount: '1440'
 ht-degree: 95%
@@ -20,11 +20,11 @@ ht-degree: 95%
 >
 >從這裡，您可以導覽至先前版本的發行說明，例如 2021 或 2022。
 >
->查看 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=zh-Hant)，了解關於 [!DNL Experience Manager] as a Cloud Service 未來功能的啟用。
+>查看 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)，了解關於 [!DNL Experience Manager] as a Cloud Service 未來功能的啟用。
 
 >[!NOTE]
 >
->請參閱[近期文件更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=zh-Hant)瞭解與版本不直接相關的文件更新的詳細資料。
+>請參閱[近期文件更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)瞭解與版本不直接相關的文件更新的詳細資料。
 
 ## 發行日期 {#release-date}
 
@@ -40,7 +40,7 @@ ht-degree: 95%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424826/?quality=12)
 
-## AEMEdge Delivery Services {#edge-delivery}
+## AEM Edge Delivery Services {#edge-delivery}
 
 Edge Delivery 是一組可組合的新服務，著重在最大限度地發揮內容的影響，以便與客戶互動時能推動可衡量的業務成果。
 
@@ -58,7 +58,7 @@ Edge Delivery 是一組可組合的新服務，著重在最大限度地發揮內
 
 ### 管理員檢視中的新功能 {#admin-view-features}
 
-* **將AEM Assetsas a Cloud Service與Edge Delivery Services的檔案式製作整合**：將AEM Assets與檔案式製作整合以供Edge Delivery Services使用，讓網站作者在Microsoft Word或Google Docs中製作檔案時，可以[使用AEM Assets存放庫中可用的影像](/help/edge/using.md#integrate-assets-edge)。
+* **將AEM Assets as a Cloud Service與Edge Delivery Services的檔案式製作整合**：將AEM Assets與Edge Delivery Services的檔案式製作整合，讓網站作者在Microsoft Word或Google Docs中製作檔案時，可以[使用AEM Assets存放庫中可用的影像](/help/edge/overview.md)。
 
 * **擷取 ZIP 封存**：能夠選取在 Experience Manager 中管理的 ZIP 存檔，並可[將檔案直接擷取至 Experience Manager 中的檔案](/help/assets/manage-digital-assets.md#extract-zip-archives)無需下載。
 
@@ -66,7 +66,7 @@ Edge Delivery 是一組可組合的新服務，著重在最大限度地發揮內
 
 ### [!DNL Experience Manager Assets] 中可用的搶鮮版功能 {#prerelease-features-assets}
 
-* **Dynamic Media**：[Dynamic Media 中的影片現有多語言字幕和多語言音訊支援](/help/assets/dynamic-media/video.md#about-msma) - 您現在可以輕鬆地將多語字幕和多語言音訊新增至主要影片中。此功能表示全球觀眾都可以存取您的影片。您可以以多種語言向全球客群自訂單一已發佈的主要影片，並遵守不同地理區域的輔助功能指南。此外，作者還可以在使用者介面的單一標籤管理字幕和音軌。
+* **Dynamic Media**：[Dynamic Media 中的影片現有多語言字幕和多語言音訊支援](/help/assets/dynamic-media/video.md#about-msma) - 您現在可以輕鬆地將多語字幕和多語言音訊新增至主要影片中。此功能表示全球觀眾都可以存取您的影片。您可以著手自訂一部已發佈的主要影片，以多種語言提供給全球觀眾，並遵守不同地理區域的無障礙指南。此外，作者還可以在使用者介面的單一標籤管理字幕和音軌。
 
   ![所選影片資產「屬性」頁面上的「字幕和音訊」標籤。](/help/release-notes/assets/msma-aem-cs.png)*所選影片資產「屬性」頁面上的「字幕和音訊」標籤。*
 
@@ -105,7 +105,7 @@ Edge Delivery 是一組可組合的新服務，著重在最大限度地發揮內
 
   您可以透過您的官方電子郵件 ID 寫信給 `aem-forms-ea@adobe.com`，加入早期採用者計畫並要求存取該功能。
 
-* **[Headless 最適化表單](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=zh-Hant)**：使用 Headless 最適化表單讓您的開發人員能夠建立、發佈和管理可透過 API 存取和互動的互動式表單，而不是透過傳統的圖形使用者介面。Headless 最適化表單可協助您：
+* **[Headless 最適化表單](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html)**：使用 Headless 最適化表單讓您的開發人員能夠建立、發佈和管理可透過 API 存取和互動的互動式表單，而不是透過傳統的圖形使用者介面。Headless 最適化表單可協助您：
 
    * 使用您選擇的程式語言建置高品質的多管道表單
    * 以原生方式將表單整合到您的桌面和行動應用程式、網站和聊天應用程式

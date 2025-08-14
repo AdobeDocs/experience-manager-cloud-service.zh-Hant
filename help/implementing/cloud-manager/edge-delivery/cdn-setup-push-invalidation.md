@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 7cded93c-325c-4a4b-8644-e6a2379d5179
-source-git-commit: 1a391837ded0af0c5bb436c34a5818f418436308
-workflow-type: ht
-source-wordcount: '172'
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
+workflow-type: tm+mt
+source-wordcount: '173'
 ht-degree: 100%
 
 ---
@@ -27,6 +27,6 @@ ht-degree: 100%
 | `cdn.prod.host` | `<Production Host>` | 生產網站的主機名稱。例如，`www.example.com`。 |
 | `cdn.prod.type` | 受管理 |   |
 
-對設定表單進行變更後，使用者必須使用 [Sidekick 工具](/help/edge/docs/sidekick.md)進行預覽並將其啟動，方能套用更新的內容。
+對設定表單進行變更後，使用者必須使用 [Sidekick 工具](https://www.aem.live/docs/sidekick)進行預覽並將其啟動，方能套用更新的內容。
 
 另請參閱「[關於 Cloud Manager 中的 Edge Delivery 待辦事項清單](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#ed-todo-list)」。

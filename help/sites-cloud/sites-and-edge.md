@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 7747d6f7-18e4-4713-baea-bcfa94f54934
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
-source-wordcount: '618'
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
+workflow-type: tm+mt
+source-wordcount: '619'
 ht-degree: 100%
 
 ---
@@ -53,7 +53,7 @@ Edge Delivery Services 還能透過提供新的製作選項來提升您的內容
 
 通用編輯器提供順暢、所見即所得 (WYSIWYG) 的製作體驗，可用來製作任何內容。
 
-如需了解更多有關使用通用編輯器進行內容製作的資訊，請參閱文件：[用於 Edge Delivery Services 的所見即所得內容製作](/help/edge/wysiwyg-authoring/authoring.md)。
+如需了解更多有關使用通用編輯器進行內容製作的資訊，請參閱文件：[用於 Edge Delivery Services 的所見即所得內容製作](https://www.aem.live/docs/aem-authoring)。
 
 ### 文件型製作 {#document-authoring}
 

@@ -4,9 +4,9 @@ description: 透過範例瞭解通用編輯器可在屬性面板中編輯的欄�
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 199ee7e11f6706773bd426c3d27236d6ea791a6c
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '1568'
+source-wordcount: '1569'
 ht-degree: 10%
 
 ---
@@ -166,7 +166,7 @@ AEM標籤元件型別會啟用AEM標籤選取器，其可用來將標籤附加�
 
 >[!TIP]
 >
->請參閱檔案[管理分類資料](/help/edge/wysiwyg-authoring/taxonomy.md)，瞭解如何使用試算表來管理Edge Delivery Services專案的分類資料的詳細資訊。
+>請參閱檔案[管理分類資料](https://www.aem.live/docs/authoring-taxonomy)，瞭解如何使用試算表來管理Edge Delivery Services專案的分類資料的詳細資訊。
 
 #### AEM內容 {#aem-content}
 

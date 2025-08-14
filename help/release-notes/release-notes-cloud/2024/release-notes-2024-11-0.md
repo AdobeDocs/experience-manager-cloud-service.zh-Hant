@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.11.0 版
 feature: Release Information
 role: Admin
 exl-id: 3fd6482e-66f0-48ee-983c-4cb6b7742dcd
-source-git-commit: 5db419e674ceb3c861f53a19e7b852c89ebd3702
+source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
 workflow-type: tm+mt
-source-wordcount: '1808'
-ht-degree: 99%
+source-wordcount: '1810'
+ht-degree: 97%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 99%
 
 請觀看 2024 年 11 月發行概觀影片，了解 2024.11.0 版本的新增功能摘要：
 
->[!VIDEO](https://video.tv.adobe.com/v/3440931?quality=12&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -47,11 +47,11 @@ ht-degree: 99%
 
 **[!DNL Edge Delivery Services]CSV 匯入器透過 AEM 執行個體進行發佈**
 
-在您喜愛的試算表工具中有效管理您的 Edge Delivery 試算表資料 (例如重新導向)，並透過新的 CSV 匯入器將其上傳至 AEM。[閱讀更多](/help/edge/wysiwyg-authoring/tabular-data.md#importing)。
+在您喜愛的試算表工具中有效管理您的 Edge Delivery 試算表資料 (例如重新導向)，並透過新的 CSV 匯入器將其上傳至 AEM。[閱讀更多](https://www.aem.live/docs/authoring-tabular-data)。
 
 ### AEM Sites 中的預發行功能
 
-增強的[內容片段參考，以唯一 ID 型參照為來源](/help/headless/graphql-api/uuid-reference-upgrade.md)，確保即使在資產或片段移動時維持有效的穩定連結，而無需更新或重新發佈。目前限制：唯一 ID 尚未支援頁面參考。如果內容片段中已參考頁面，則不應使用此功能。
+使用不重複ID型參考資料增強[內容片段參考](/help/headless/graphql-api/uuid-reference-upgrade.md)，確保即使移動資產或片段，也能保持有效的穩定連結，不需要更新或重新發佈。 目前限制：唯一 ID 尚未支援頁面參考。如果內容片段中已參考頁面，則不應使用此功能。
 
 ### 早期採用者方案 {#sites-early-adopter}
 
