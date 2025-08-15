@@ -5,7 +5,7 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d6d34c2818ecb07c9d610844f6b868fe6a5918c6
+source-git-commit: 215f4630acb3eca4be501c7c5f5de7c60b550bf8
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 15%
@@ -49,7 +49,7 @@ ht-degree: 15%
 
 1. 在&#x200B;**網域設定**&#x200B;頁面的右上角附近，按一下&#x200B;**新增網域**。
 
-1. 在&#x200B;**新增網域**&#x200B;對話方塊的&#x200B;**網域名稱**&#x200B;欄位中，輸入您正在使用的自訂網域名稱。
+1. 在&#x200B;**新增網域**&#x200B;對話方塊的&#x200B;**網域名稱**欄位中，輸入您正在使用的自訂網域名稱。
 輸入網域名稱時，請勿包含`http://`、`https://`或空格。
 
    >[!NOTE]
@@ -95,7 +95,7 @@ ht-degree: 15%
 >若是Adobe管理的CDN，使用DV （網域驗證）憑證時，只允許使用ACME驗證的網站。
 
 
-### 設定DNS{#config-dns}
+## 設定DNS{#config-dns}
 
 >[!WARNING]
 >
@@ -107,7 +107,7 @@ ht-degree: 15%
 * 能夠編輯組織網域的DNS記錄，或聯絡可以編輯的適當人員。
 * 您已經驗證您設定的自訂網域名稱，如檔案[檢查網域名稱狀態](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)中所述。
 
-#### CNAME記錄 {#adobe-managed-cert-cname-record}
+### CNAME記錄 {#adobe-managed-cert-cname-record}
 
 正式名稱或 CNAME 記錄是一種將別名對應到真實或正式網域名稱的 DNS 記錄。CNAME 記錄通常用於將子網域 (例如 `www.example.com`) 對應到託管該子網域內容的網域。
 
@@ -117,7 +117,7 @@ ht-degree: 15%
 | --- | --- |
 | `www.customdomain.com` | `cdn.adobeaemcloud.com` |
 
-#### APEX記錄 {#adobe-managed-cert-apex-record}
+### APEX記錄 {#adobe-managed-cert-apex-record}
 
 Apex 網域是不包含子網域的自訂網域，例如`example.com`。Apex網域已透過您的DNS提供者設定`A`、`ALIAS`或`ANAME`記錄。 Apex 網域必須指向特定的 IP 位址。
 
