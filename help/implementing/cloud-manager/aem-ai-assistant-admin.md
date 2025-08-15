@@ -72,7 +72,7 @@ ht-degree: 3%
 
    ![ AI助理產品知識切換選項的編輯許可權頁面](/help/implementing/cloud-manager/assets/ai-assistant-prod-knowledge.png)
 
-1. 在頁面的右下角，按一下[儲存]。****
+1. 在頁面的右下角，按一下[儲存]。**&#x200B;**
 
    您的產品設定檔現在已啟用AI助理產品知識許可權。
 
@@ -102,7 +102,7 @@ ht-degree: 3%
 
    ![建立新的使用者群組頁面](/help/implementing/cloud-manager/assets/ai-assistant-create-new-user-group.png)
 
-1. 在頁面的右下角，按一下[儲存]。****
+1. 在頁面的右下角，按一下[儲存]。**&#x200B;**
 
 >[!TAB 使用現有的使用者群組]
 
@@ -130,7 +130,7 @@ ht-degree: 3%
 
    ![新增使用者至此使用者群組頁面](/help/implementing/cloud-manager/assets/ai-assistant-add-users-to-this-group.png)
 
-1. 在頁面的右下角，按一下[儲存]。****
+1. 在頁面的右下角，按一下[儲存]。**&#x200B;**
 
 >[!TAB 大量新增使用者]
 
