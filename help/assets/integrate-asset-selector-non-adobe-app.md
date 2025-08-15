@@ -3,7 +3,7 @@ title: 整合資產選擇器與非Adobe或第三方應用程式
 description: 整合資產選擇器與各種Adobe、非Adobe及協力廠商應用程式。
 role: Admin, User
 exl-id: 55848de0-aff2-42a0-b959-c771235d9425
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 39b6bbc10507f0391583d9cdc054a1611b64326a
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 9%
@@ -25,7 +25,7 @@ Asset Selector可讓您使用各種非Adobe或協力廠商應用程式進行整�
 * imsOrg
 * apikey
 
-Asset Selector支援使用Identity Management System (IMS)屬性（例如`imsScope`或`imsClientID`）驗證[!DNL Experience Manager Assets]存放庫(當您將其與非Adobe應用程式整合時)。
+Asset Selector支援使用Identity Management System (IMS)屬性（例如[!DNL Experience Manager Assets]或`imsScope`）驗證`imsClientID`存放庫(當您將其與非Adobe應用程式整合時)。
 
 ## 設定非Adobe應用程式的資產選擇器 {#configure-non-adobe-app}
 
@@ -46,15 +46,15 @@ Asset Selector支援使用Identity Management System (IMS)屬性（例如`imsSco
 
 將Asset Selector與非Adobe應用程式整合時，請使用這個範例`index.html`檔案進行驗證。
 
-使用`Script`標籤存取Asset Selector套件，如範例`index.html`檔案的&#x200B;*第9*&#x200B;行到&#x200B;*第11*&#x200B;行所示。
+使用`Script`標籤存取Asset Selector套件，如範例&#x200B;*檔案的*&#x200B;第9 *行到*&#x200B;第11`index.html`行所示。
 
 範例的&#x200B;*第14*&#x200B;行到&#x200B;*第38*&#x200B;行說明IMS流程屬性，例如`imsClientId`、`imsScope`和`redirectURL`。 函式要求您至少定義`imsClientId`和`imsScope`屬性之一。 如果您未定義`redirectURL`的值，則會使用使用者端ID的註冊重新導向URL。
 
-由於您尚未產生`imsToken`，請使用`registerAssetsSelectorsAuthService`和`renderAssetSelectorWithAuthFlow`函式，如範例`index.html`檔案的第40行至第50行所示。 使用`renderAssetSelectorWithAuthFlow`之前的`registerAssetsSelectorsAuthService`函式，以透過資產選擇器註冊`imsToken`。 [!DNL Adobe]建議您在具現化元件時呼叫`registerAssetsSelectorsAuthService`。
+由於您尚未產生`imsToken`，請使用`registerAssetsSelectorsAuthService`和`renderAssetSelectorWithAuthFlow`函式，如範例`index.html`檔案的第40行至第50行所示。 使用`registerAssetsSelectorsAuthService`之前的`renderAssetSelectorWithAuthFlow`函式，以透過資產選擇器註冊`imsToken`。 [!DNL Adobe]建議您在具現化元件時呼叫`registerAssetsSelectorsAuthService`。
 
-在`const props`區段中定義驗證和其他Assets as a Cloud Service存取相關屬性，如範例`index.html`檔案的&#x200B;*行54*&#x200B;到&#x200B;*行60*&#x200B;所示。
+在`const props`區段中定義驗證和其他Assets as a Cloud Service存取相關屬性，如範例&#x200B;*檔案的*&#x200B;行54 *到*&#x200B;行60`index.html`所示。
 
-在&#x200B;*第65*&#x200B;行中提到的`PureJSSelectors`全域變數是用來在網頁瀏覽器中轉譯Asset Selector。
+在`PureJSSelectors`第65 *行中提到的*&#x200B;全域變數是用來在網頁瀏覽器中轉譯Asset Selector。
 
 資產選擇器已在`<div>`容器元素上呈現，如&#x200B;*第74*&#x200B;行到&#x200B;*第81*&#x200B;行中所述。 此範例使用對話方塊來顯示「資產選取器」。
 
@@ -102,6 +102,7 @@ Asset Selector支援使用Identity Management System (IMS)屬性（例如`imsSco
         
 
         //function that will render the asset selector
+        function renderAssetSelectorWithAuthFlowFlow() {
             const otherProps = {
             // any other props supported by asset selector
             }
@@ -113,7 +114,7 @@ Asset Selector支援使用Identity Management System (IMS)屬性（例如`imsSco
             const container = document.getElementById('asset-selector');
 
             /// Use the PureJSSelectors in globals to render the AssetSelector/DestinationSelector component
-            PureJSSelectors.renderAssetSelectorWithAuthFlow(container, assetSelectorProps, () =>
+            PureJSSelectors.renderAssetSelectorWithAuthFlow(container, assetSelectorProps, () => {
                 const assetSelectorDialog = document.getElementById('asset-selector-dialog');
                 assetSelectorDialog.showModal();
             });
