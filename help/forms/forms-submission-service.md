@@ -6,9 +6,9 @@ feature: Edge Delivery Services
 role: User, Developer, Admin
 level: Beginner, Intermediate
 exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
-source-git-commit: 81de486a2b9f1db0d8fe588e883d929fd2f7b7f1
+source-git-commit: fb33696ae7987081c7ee4cd35a233f54aaaa4c65
 workflow-type: tm+mt
-source-wordcount: '1573'
+source-wordcount: '1545'
 ht-degree: 1%
 
 ---
@@ -113,7 +113,7 @@ Forms提交服務提供幾個簡化資料收集的優點：
 
 >[!TIP]
 >
->**不熟悉Edge Delivery Services？**&#x200B;從[快速入門教學課程](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial)開始，以設定您的專案基礎。
+>**不熟悉Edge Delivery Services？**&#x200B;從[快速入門教學課程](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial)開始，以設定您的專案基礎。
 
 ## 設定方法
 
@@ -133,7 +133,7 @@ Forms提交服務提供兩種設定方法。 選擇最適合您工作流程的�
 
 在設定任一方法之前，請確定您的AEM專案基礎已準備就緒：
 
-1. **使用最新的Adaptive Forms區塊（**&#x200B;快速入門教學課程[）建立或更新您的AEM專案](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial)
+1. **使用最新的Adaptive Forms區塊（**&#x200B;快速入門教學課程[）建立或更新您的AEM專案](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial)
 
 2. **更新專案根目錄中的`fstab.yaml`**：
 
@@ -166,7 +166,7 @@ Forms提交服務提供兩種設定方法。 選擇最適合您工作流程的�
 1. **開啟您的試算表平台** (Google工作表或Microsoft Excel)
 2. **為您的表單專案建立新的試算表**
 3. **為您的工作表命名** （必須是`helix-default`或`shared-aem`）
-4. **使用**&#x200B;表單建立指南[定義您的表單結構](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)
+4. **使用**&#x200B;表單建立指南[定義您的表單結構](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)
 
 ![表單定義](/help/forms/assets/form-submission-definition.png)
 *範例：具有欄位型別、標籤和驗證規則的表單定義*
@@ -373,30 +373,28 @@ Postman提供方便使用者的介面，用於測試API提交。
 
 **要求設定：**
 
-    &grave;&grave;json
+```json
+POST https://forms.adobe.com/adobe/forms/af/submit/your-form-id
 
-發佈https://forms.adobe.com/adobe/forms/af/submit/your-form-id
+Headers:
+Content-Type: application/json
+x-adobe-routing: tier=live,bucket=main--your-repo--your-org
 
-標頭：
-Content-Type： application/json
-x-adobe-routing： tier=live，bucket=main—your-repo—your-org
-
-內文(JSON)：
-&lbrace;
-&quot;data&quot;： &lbrace;
-&quot;startDate&quot;： &quot;2025-01-10&quot;，
-&quot;endDate&quot;： &quot;2025-01-25&quot;，
-&quot;destination&quot;： &quot;Australia&quot;，
-「類別」：「第一類」，
-&quot;budget&quot;： &quot;2000&quot;，
-&quot;amount&quot;： &quot;1000000&quot;，
-&quot;name&quot;： &quot;Mary&quot;，
-&quot;age&quot;： &quot;35&quot;，
-&quot;subscribe&quot;：空值，
-&quot;email&quot;： &quot;mary@gmail.com&quot;
-&rbrace;
-&rbrace;
-
+Body (JSON):
+{
+        "data": {
+            "startDate": "2025-01-10",
+            "endDate": "2025-01-25",
+            "destination": "Australia",
+            "class": "First Class",
+            "budget": "2000",
+            "amount": "1000000",
+            "name": "Mary",
+            "age": "35",
+            "subscribe": null,
+            "email": "mary@gmail.com"
+                }
+}
 ```
 
 **預期的回應：**
@@ -426,12 +424,11 @@ x-adobe-routing： tier=live，bucket=main—your-repo—your-org
 >[!TAB macOS/Linux]
 
 ```bash
-
 curl -X POST "https://forms.adobe.com/adobe/forms/af/submit/your-form-id" \
     --header "Content-Type: application/json" \
   --header "x-adobe-routing: tier=live,bucket=main--your-repo--your-org" \
-    --data '&lbrace;
-        "data": &lbrace;
+    --data '{
+        "data": {
             "startDate": "2025-01-10",
             "endDate": "2025-01-25",
             "destination": "Australia",
@@ -442,28 +439,24 @@ curl -X POST "https://forms.adobe.com/adobe/forms/af/submit/your-form-id" \
             "age": "35",
             "subscribe": null,
       "email": "joe@example.com"
-                &rbrace;
-            &rbrace;'
+                }
+            }'
+```
 
-        ```
-
->[!TAB Windows Command Prompt]
+>[!TAB Windows命令提示字元]
 
 ```cmd
-
 curl -X POST "https://forms.adobe.com/adobe/forms/af/submit/your-form-id" ^
     --header "Content-Type: application/json" ^
   --header "x-adobe-routing: tier=live,bucket=main--your-repo--your-org" ^
   --data "{\"data\": {\"startDate\": \"2025-01-10\", \"endDate\": \"2025-01-25\", \"destination\": \"Australia\", \"class\": \"First Class\", \"budget\": \"2000\", \"amount\": \"1000000\", \"name\": \"Joe\", \"age\": \"35\", \"subscribe\": null, \"email\": \"joe@example.com\"}}"
-
 ```
 
 >[!TAB Windows PowerShell]
 
 ```powershell
-
-$body = @&lbrace;
-  data = @&lbrace;
+$body = @{
+  data = @{
     startDate = "2025-01-10"
     endDate = "2025-01-25"
     destination = "Australia"
@@ -474,26 +467,24 @@ $body = @&lbrace;
     age = "35"
     subscribe = $null
     email = "joe@example.com"
-  &rbrace;
-&rbrace; | ConvertTo-Json -Depth 3
+  }
+} | ConvertTo-Json -Depth 3
 
-Invoke-RestMethod -Uri "https://forms.adobe.com/adobe/forms/af/submit/your-form-id" &grave;
-  -Method POST &grave;
-  -Headers @{"Content-Type"="application/json"; "x-adobe-routing"="tier=live,bucket=main--your-repo--your-org"} &grave;
+Invoke-RestMethod -Uri "https://forms.adobe.com/adobe/forms/af/submit/your-form-id" `
+  -Method POST `
+  -Headers @{"Content-Type"="application/json"; "x-adobe-routing"="tier=live,bucket=main--your-repo--your-org"} `
   -Body $body
-
-    ```
+```
 
 >[!ENDTABS]
 
 +++
 
-+++ API Response & Verification
++++ API回應與驗證
 
-**Successful Response:**
+**成功的回應：**
 
 ```http
-
 HTTP/1.1 201 Created
 Connection: keep-alive
 Content-Length: 0
@@ -501,7 +492,6 @@ X-Request-Id: 02a53839-2340-56a5-b238-67c23ec28f9f
 X-Message-Id: 42ecb4dd-b63a-4674-8f1a-05a4a5b0372c
 Date: Fri, 10 Jan 2025 13:06:10 GMT
 Access-Control-Allow-Origin: *
-
 ```
 
 **資料驗證：**
@@ -529,52 +519,44 @@ Access-Control-Allow-Origin: *
 **問題： 403禁止錯誤**
 
 ```
-
 Causes: Missing or incorrect access permissions
 Solutions:
 - Verify forms@adobe.com has Editor access to your spreadsheet
 - Check that your repository is added to the allowlist
 - Confirm the x-adobe-routing header format
-
 ```
 
 **問題： 404 Not Found錯誤**
 
 ```
-
 Causes: Incorrect Form ID or endpoint URL
 Solutions:  
 - Verify your Form ID is correct
 - Check the API endpoint URL format
 - Ensure your form is published and live
-
 ```
 
 
 **問題：資料未出現在試算表中**
 
 ```
-
 Causes: Missing 'incoming' sheet or permission issues
 Solutions:
 - Confirm 'incoming' sheet exists (case-sensitive)
 - Verify column headers match form field names exactly
 - Check forms@adobe.com has edit permissions
 - Ensure spreadsheet is shared properly
-
 ```
 
 
 **問題：無效的JSON格式錯誤**
 
 ```
-
 Causes: Malformed request body
 Solutions:
 - Validate JSON syntax using online JSON validators
 - Ensure proper escaping of special characters
 - Check quote marks and brackets are balanced
-
 ```
 
 
@@ -597,7 +579,7 @@ Solutions:
 
 +++ 增強您的Forms
 
-- **[建立進階Forms](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)** — 新增驗證、條件式邏輯和自訂樣式
+- **[建立進階Forms](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms)** — 新增驗證、條件式邏輯和自訂樣式
 - **[表單元件指南](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/forms-components)** — 探索可用的表單欄位型別
 
 +++
