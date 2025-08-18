@@ -3,7 +3,7 @@ title: 搜尋Assets API
 description: 瞭解如何使用Search Assets API。
 role: User
 exl-id: 0c52e793-4c33-4230-b4f2-27296dd9e4b3
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 8b596c6e82d9beaeb922cc6635717f151bb390e7
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 0%
@@ -33,7 +33,7 @@ ht-degree: 0%
 搜尋資產API請求中的端點必須採用以下格式：
 `https://delivery-pXXXX-eYYYY.adobeaemcloud.com/adobe/assets/search`
 
-傳遞網域的結構類似於Experience Manager作者環境的網域。 唯一的差異是以`delivery`取代字詞`author`。
+傳遞網域的結構類似於Experience Manager作者環境的網域。 唯一的差異是以`author`取代字詞`delivery`。
 
 `pXXXX`參考方案識別碼
 
@@ -56,6 +56,6 @@ headers: {
     },
 ```
 
-若要叫用搜尋API，必須在`Authorization`詳細資料中定義IMS權杖。 IMS權杖是從技術帳戶中擷取。 請參閱[擷取AEM as a Cloud Service認證](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=zh-Hant#fetch-the-aem-as-a-cloud-service-credentials)以建立新的技術帳戶。 請參閱[產生存取權杖](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=zh-Hant#generating-the-access-token)以產生IMS權杖，並在搜尋資產API要求標頭中正確使用它。
+若要叫用搜尋API，必須在`Authorization`詳細資料中定義IMS權杖。 IMS權杖是從技術帳戶中擷取。 請參閱[擷取AEM as a Cloud Service認證](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#fetch-the-aem-as-a-cloud-service-credentials)以建立新的技術帳戶。 請參閱[產生存取權杖](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#generating-the-access-token)以產生IMS權杖，並在搜尋資產API要求標頭中正確使用它。
 
-若要檢視要求範例、回應範例和回應代碼，請參閱[搜尋Assets API](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search)。
+若要檢視要求範例、回應範例和回應代碼，請參閱[搜尋Assets API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/search)。

@@ -5,7 +5,7 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: e9491b732556cc018f24ac7e7e2040c26b330dc0
+source-git-commit: 8b596c6e82d9beaeb922cc6635717f151bb390e7
 workflow-type: tm+mt
 source-wordcount: '2824'
 ht-degree: 5%
@@ -124,7 +124,7 @@ ht-degree: 5%
 
 從編輯器中，您可以：
 
-* 建立&#x200B;**主要**&#x200B;內容的[變數](#create-variation)
+* 建立[主要](#create-variation)內容的&#x200B;**變數**
 
 * [使用「產生變數AI」](#generate-variations-ai)來使用Generative AI，以使用Adobe針對特定使用案例建立的提示型範本。
 
@@ -178,7 +178,7 @@ ht-degree: 5%
 
     >[！NOTE]
     >
-    >您無法刪除&#x200B;**Main**.
+    >您無法刪除**Main**.
 
 1. 選取變數。
 
@@ -202,10 +202,10 @@ ht-degree: 5%
 
 ## 編輯多行文字欄位 — Rtf {#edit-multi-line-text-fields-rich-text}
 
-定義為&#x200B;**RTF**&#x200B;的&#x200B;**[多行文字](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)**&#x200B;欄位可使用各種功能：
+定義為&#x200B;**[RTF](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)**&#x200B;的&#x200B;**多行文字**&#x200B;欄位可使用各種功能：
 
 * 編輯內容：
-   * 還原/重做
+   * 還原/取消復原
    * 貼上/貼上成文字
    * 複製
    * 選取段落格式
@@ -228,7 +228,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->在&#x200B;**欄位**&#x200B;面板中，多行文字欄位也由適當的[圖示](#fields-datatypes-icons)表示。
+>在[欄位](#fields-datatypes-icons)面板中，多行文字欄位也由適當的&#x200B;**圖示**&#x200B;表示。
 
 ### 全熒幕編輯器 — RTF {#full-screen-editor-rich-text}
 
@@ -267,7 +267,7 @@ ht-degree: 5%
 
   >[!CAUTION]
   >
-  >同步僅可用於將變更&#x200B;*從&#x200B;**Main**&#x200B;複製到變數*。
+  >同步僅可用於將變更&#x200B;*從&#x200B;**Main**複製到變數*。
   >
   >將變更&#x200B;*從變化傳輸至&#x200B;**主要***不提供選項。
 
@@ -354,9 +354,9 @@ ht-degree: 5%
 
 * 不會透過管理API或傳送API公開任何資產中繼資料。 您必須使用資產中繼資料API來擷取資產中繼資料詳細資訊：
 
-   * 個別資產中繼資料： [https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata)
+   * 個別資產中繼資料： [https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetMetadata](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetMetadata)
 
-   * 使用搜尋API （實驗性）取得大量中繼資料資訊： [https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search)
+   * 使用搜尋API （實驗性）取得大量中繼資料資訊： [https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/search](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/search)
 
 >[!NOTE]
 >
@@ -493,7 +493,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->這些註解在原始編輯器[&#128279;](/help/assets/content-fragments/content-fragments-managing.md#annotating-a-content-fragment)中不會顯示為註解，在Assets主控台的[時間軸](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)中也不會顯示。
+>這些註解在原始編輯器[中不會顯示為](/help/assets/content-fragments/content-fragments-managing.md#annotating-a-content-fragment)註解，在Assets主控台的[時間軸](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)中也不會顯示。
 
 ## 預覽您的片段 {#preview-content-fragment}
 
@@ -502,7 +502,7 @@ ht-degree: 5%
 若要使用此功能，您首先需要：
 
 * 與您的IT團隊合作，設定外部前端應用程式，該應用程式會透過使用其JSON輸出來呈現內容片段。
-* 設定外部前端應用程式時，**預設預覽URL模式**&#x200B;必須定義為適當內容片段模式[&#128279;](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#model-properties)的屬性。
+* 設定外部前端應用程式時，**預設預覽URL模式**&#x200B;必須定義為適當內容片段模式[的](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#model-properties)屬性。
 
 定義URL後，**預覽**&#x200B;按鈕會啟用。 您可以選取此按鈕來啟動外部應用程式（在單獨的索引標籤中）以呈現內容片段。
 

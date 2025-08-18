@@ -4,10 +4,10 @@ description: 了解如何將 Adobe Experience Manager (AEM) as a Cloud Service �
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 47afd8f95eee2815f82c429e9800e1e533210a47
+source-git-commit: 32344eb9668aefd5efe44a073bc4c66c2496f003
 workflow-type: tm+mt
-source-wordcount: '5981'
-ht-degree: 92%
+source-wordcount: '5984'
+ht-degree: 91%
 
 ---
 
@@ -51,7 +51,7 @@ GraphQL 是：
 
   請參閱[探索 GraphQL](https://www.graphql.com)。
 
-* *「...一種資料查詢語言和規格，由 Facebook 於 2012 年在內部開發，然後於 2015 年公開原始碼。它提供了 REST 式架構的替代方案，目的是提高開發人員的生產力並盡量減少傳輸的資料量。GraphQL 用於生產環境，數百個各種規模的組織都在使用...」*
+* *「...一種資料查詢語言和規格，由 Facebook 於 2012 年在內部開發，然後於 2015 年公開原始碼。它是REST架構的替代方案，目的是提高開發人員生產力並儘量減少傳輸資料量。 GraphQL 用於生產環境，數百個各種規模的組織都在使用...」*
 
   請參閱 [GraphQL 基礎](https://foundation.graphql.org/)。
 
@@ -109,7 +109,7 @@ GraphQL 使用以下項目：
 
 * **[項目清單](https://graphql.org/learn/schema/#lists-and-non-null)**
 
-AEM 提供將查詢 (兩種類型) 轉換為[持續性查詢的功能，可由 Dispatcher 和 CDN 快取](/help/headless/graphql-api/persisted-queries.md)。
+AEM提供將查詢（兩種型別）轉換為[持續查詢的功能，可由Dispatcher和CDN快取](/help/headless/graphql-api/persisted-queries.md)。
 
 ### GraphQL 查詢最佳做法 (Dispatcher 和 CDN) {#graphql-query-best-practices}
 
@@ -169,11 +169,11 @@ GraphQL 查詢是在基礎要求之 AEM 使用者的許可下執行的。如果�
 
 ## 結構描述產生 {#schema-generation}
 
-GraphQL 是強式類型 API，這表示資料必須結構明確並依類型編排。
+GraphQL 是強式類型 API，這表示資料必須結構明確並按類型組織。
 
 GraphQL 規格提供了一系列指南，說明如何建立健全的 API 來查詢特定執行個體上的資料。為此，用戶端必須擷取[結構描述](#schema-generation)，其中包含查詢所需的所有類型。
 
-對於內容片段，GraphQL 結構描述 (結構和類型) 是以&#x200B;**啟用的**&#x200B;[內容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)及其資料類型為基礎。
+對於內容片段，GraphQL 結構描述 (結構和類型) 是以&#x200B;**啟用的**[內容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)及其資料類型為基礎。
 
 >[!CAUTION]
 >
@@ -375,7 +375,7 @@ GraphQL for AEM 支援類型清單。表示所有支援的內容片段模型資�
 >[!NOTE]
 >
 >**一般和陣列中繼資料的區別**
->&#x200B;>請記住，`StringMetadata` 和 `StringArrayMetadata` 都是指儲存在存放庫的中繼資料，而不是擷取它們的方式。
+>>請記住，`StringMetadata` 和 `StringArrayMetadata` 都是指儲存在存放庫的中繼資料，而不是擷取它們的方式。
 >
 >例如，呼叫 `stringMetadata` 欄位，您將收到以 `String` 儲存在存放庫之所有中繼資料的陣列，如果呼叫 `stringArrayMetadata`，則會收到以 `String[]` 儲存在存放庫之所有中繼資料的陣列。
 
@@ -1171,7 +1171,7 @@ query allTeams {
 
   >[!NOTE]
   >
-  >接著需要在使用者端根據[資產傳送API](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat)建構完整的URL。
+  >接著需要在使用者端根據[資產傳送API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat)建構完整的URL。
 
 * 只有&#x200B;*個已核准的*&#x200B;個資產可供遠端存放庫參考
 * 如果從遠端存放庫移除所參考的資產，這將導致內容片段資產參考損毀。
