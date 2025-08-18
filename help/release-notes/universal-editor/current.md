@@ -5,9 +5,9 @@ feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 source-git-commit: 91799e32f363aca268a89a7eebcb5001c5295cc5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '287'
-ht-degree: 61%
+ht-degree: 100%
 
 ---
 
@@ -22,15 +22,15 @@ ht-degree: 61%
 
 ## 新增功能 {#what-is-new}
 
-* [如](/help/sites-cloud/authoring/universal-editor/navigation.md#autentication-settings)2025.07.09.[版所介紹，驗證標題工具列選項](/help/release-notes/universal-editor/2025/2025-07-09.md)仍會保留在功能切換之後
-   * 不過現在預設為啟用。
-* [RTE早期採用者的新功能](#new-rte)
+* [驗證標頭工具列選項](/help/sites-cloud/authoring/universal-editor/navigation.md#autentication-settings)，如同在[版本 2025.07.09 ](/help/release-notes/universal-editor/2025/2025-07-09.md) 中所介紹的，仍然要透過某個功能切換才能啟用。
+   * 但其現在已預設啟用。
+* 針對 [RTE 早期採用者的新功能](#new-rte)
    * 已新增深色模式支援。
    * 已新增文字對齊方式支援。
-      * 預設為停用，僅適用於Headless專案
-   * 新增縮排支援。
-      * 預設為停用，僅適用於Headless專案
-   * 現在會在shift+enter鍵上插入分隔符號(`<br>`)。
+      * 預設為停用，僅適用於無周邊專案
+   * 已新增縮排支援。
+      * 預設為停用，僅適用於無周邊專案
+   * 現在按下 Shift+Enter 鍵可插入換行符號 (`<br>`)。
 
 ## 早期採用功能 {#early-adopter}
 
@@ -49,12 +49,12 @@ ht-degree: 61%
 
 ## 其他改良功能 {#other-improvements}
 
-* 早期採用者RTE的修正
-   * 按下Enter鍵現在會在清單中建立新的清單專案(`<li>`)。
-* 使用遠端DAM時，視訊現在會正確更新。
-* 為6.5 LTS新增服務支援。
+* 針對早期採用者 RTE 的修正
+   * 現在，在清單內按下 Enter 鍵會建立一個新的清單項目 (`<li>`)。
+* 現在，使用遠端 DAM 時影片可以正確地更新。
+* 已新增對 6.5 LTS 的服務支援。
 
 ## 棄用 {#deprecations}
 
-* `text-input`和`text-area`元件已正式棄用[版本2025.07.09。](/help/release-notes/universal-editor/2025/2025-07-09.md)
-   * 在 `model-definition.json` 中，使用文字元件可建立「屬性」面板的文字輸入。
+* [版本 2025.07.09](/help/release-notes/universal-editor/2025/2025-07-09.md) 正式棄用 `text-input` 和 `text-area` 元件。
+   * 在 `model-definition.json` 中，使用文字元件來建立「屬性」面板的文字輸入。
