@@ -6,20 +6,19 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: a216777f6d5bb3dd1afe5d7cdb88ec41435c0500
+exl-id: a7f3dc14-29f7-473a-9870-d52393e6fa6e
+source-git-commit: e853e7b46c762ab724d5eecb344897a83e4fb724
 workflow-type: tm+mt
-source-wordcount: '657'
-ht-degree: 3%
+source-wordcount: '950'
+ht-degree: 2%
 
 ---
 
 # 在Adobe Experience Manager中設定AI助理 {#aem-ai-asst-admin-setup}
 
-管理員必須先設定存取權、許可權和設定，組織內的使用者才能使用AEM (Adobe Experience Manager) AI助理中的功能。 本文說明如何為貴組織啟用AI助理員、設定必要的認證及儲存組態變更。
+管理員必須先設定存取權、許可權和設定，組織內的使用者才能使用AEM (Adobe Experience Manager) AI助理中的功能。
 
-**AEM AI Assistant組態程式概觀**
-
-組態程式包含下列步驟：
+AEM AI Assistant的設定程式包含下列步驟：
 
 1. [在Adobe Admin Console中建立新的產品設定檔](#create-profile)。
 1. [啟用AI助理產品知識許可權](#enable-permission)。
@@ -34,9 +33,17 @@ ht-degree: 3%
 * 您在Adobe Admin Console中必須至少具有產品管理員許可權。
 * 您瞭解組織的使用者管理結構。
 
+**組態考量**
+
+* 處理時間：在Cloud Manager中建立的資源可能需要最多2分鐘的時間才能在Admin Console中顯示許可權設定。
+* 多個設定檔：使用者可以成為多個設定檔的一部分，並且所有指派的設定檔中的許可權會合併。
+* 組織範圍：某些許可權可能適用於所有計畫的組織層級。
+* 預先定義的設定檔：請勿從Admin Console刪除預先定義的許可權設定檔。
+
+
 ## 1 — 在Adobe Admin Console中建立新的產品設定檔{#create-profile}
 
-1. 依照[在Experience Platform檔案中找到的Adobe Admin Console](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/access-control/ui/create-profile)中建立新產品設定檔中的詳細指示操作。
+1. 依照[在Experience Platform檔案中找到的Adobe Admin Console](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/create-profile)中建立新產品設定檔中的詳細指示操作。
 
 1. 建立新產品設定檔時，您可以對AI助理使用下列建議值。
 
@@ -48,13 +55,11 @@ ht-degree: 3%
    | 通知 | 根據您組織的偏好設定進行設定 |
 
 
-
-
 ## 2 — 啟用AI助理產品知識許可權{#enable-permission}
 
 指派自訂許可權給產品設定檔的程式遵循標準Adobe Cloud Manager自訂許可權工作流程。
 
-參考文章： [將自訂許可權指派給新的產品設定檔](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-manager/content/requirements/custom-permissions#assign-permissions)
+參考文章： [將自訂許可權指派給新的產品設定檔](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/custom-permissions#assign-permissions)
 
 1. 在Admin Console中，按一下您新建立的產品設定檔名稱(`AEM AI Assistant`)
 
@@ -72,7 +77,7 @@ ht-degree: 3%
 
    ![ AI助理產品知識切換選項的編輯許可權頁面](/help/implementing/cloud-manager/assets/ai-assistant-prod-knowledge.png)
 
-1. 在頁面的右下角，按一下[儲存]。**&#x200B;**
+1. 在頁面的右下角，按一下[儲存]。****
 
    您的產品設定檔現在已啟用AI助理產品知識許可權。
 
@@ -102,7 +107,7 @@ ht-degree: 3%
 
    ![建立新的使用者群組頁面](/help/implementing/cloud-manager/assets/ai-assistant-create-new-user-group.png)
 
-1. 在頁面的右下角，按一下[儲存]。**&#x200B;**
+1. 在頁面的右下角，按一下[儲存]。****
 
 >[!TAB 使用現有的使用者群組]
 
@@ -130,23 +135,59 @@ ht-degree: 3%
 
    ![新增使用者至此使用者群組頁面](/help/implementing/cloud-manager/assets/ai-assistant-add-users-to-this-group.png)
 
-1. 在頁面的右下角，按一下[儲存]。**&#x200B;**
+1. 在頁面的右下角，按一下[儲存]。****
+1. 現在，將產品設定檔指派給使用者群組](#assign-product-profile)。
 
 >[!TAB 大量新增使用者]
 
 您可以在Admin Console中使用大量上傳功能。
 
 1. 準備包含使用者資訊的CSV檔案。
-
 1. 使用&#x200B;**`Add users by CSV`**&#x200B;選項進行有效的大量新增。
+1. 現在，將產品設定檔指派給使用者群組](#assign-product-profile)。
 
 >[!ENDTABS]
 
 
-
-
 ## 5 — 將產品設定檔指派給使用者群組{#assign-product-profile}
 
+此步驟遵循將產品設定檔指派給使用者群組的標準Adobe Admin Console工作流程。
 
+參考文章： [管理企業使用者的產品設定檔](https://helpx.adobe.com/tw/enterprise/using/manage-product-profiles.html)
+
+1. 當您仍在AEM AI助理使用者群組中，來自[4 — 新增使用者至使用者群組](#add-users)時，請按一下&#x200B;**已指派的產品設定檔**&#x200B;索引標籤。
+1. 按一下&#x200B;**指派設定檔**。
+
+   ![已選取指派產品設定檔索引標籤的AEM AI助理使用者群組頁面](/help/implementing/cloud-manager/assets/ai-assistant-assign-profile.png)
+
+1. 在&#x200B;**指派產品和設定檔**&#x200B;頁面的&#x200B;**選取產品設定檔**&#x200B;對話方塊中，搜尋並選取您的&#x200B;**AI助理**&#x200B;產品設定檔。
+
+   ![「指派產品和設定檔」頁面，顯示「選取產品設定檔」對話方塊和選取的「AI助理」產品設定檔](/help/implementing/cloud-manager/assets/ai-assistant-select-product-profile.png)
+
+1. 在對話方塊的右下角附近，按一下&#x200B;**套用**。
+1. 在&#x200B;**指派產品和設定檔**&#x200B;頁面的右下角附近，按一下&#x200B;**儲存**。
+
+   ![顯示的AI助理產品設定檔已指派給AEM AI助理使用者群組](/help/implementing/cloud-manager/assets/ai-assistant-profile-assigned-to-user-group.png)
+
+
+## 驗證設定
+
+* 檢查您的產品設定檔顯示指派的使用者群組數量是否正確。
+* 驗證使用者群組是否顯示正確數量的使用者。
+* 確認已啟用並正確設定AI助理產品知識許可權。
+
+
+## 測試設定
+
+讓指派群組中的使用者執行下列動作：
+
+1. 登入AEM。
+2. 確認AI助理功能可供存取。
+3. 測試AI Assistant的功能以確保正確啟用。
+
+## 另請參閱
+
+* [Adobe Experience Platform存取控制](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/overview)
+* [Cloud Manager自訂許可權](/help/implementing/cloud-manager/custom-permissions.md)
 
 
