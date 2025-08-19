@@ -3,10 +3,11 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.6.0 版發行�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.6.0 版發行說明。'
 feature: Release Information
 role: Admin
-source-git-commit: 87650caea6eb907093f0f327f1dbc19641098e4a
+exl-id: 6bd35c41-4caf-481c-8cf5-b739307e70da
+source-git-commit: 92077a34aa02daf177ca760dafca1a6190a8acb8
 workflow-type: tm+mt
-source-wordcount: '1339'
-ht-degree: 98%
+source-wordcount: '1363'
+ht-degree: 99%
 
 ---
 
@@ -32,15 +33,11 @@ ht-degree: 98%
 
 您可以在[這裡](/help/release-notes/maintenance/latest.md)找到最新的維護版本發行說明。
 
-<!-- 
+## 發行影片 {#release-video}
 
-## Release Video {#release-video}
+請觀看 2025 年 6 月發行概觀影片，了解 2025.6.0 版本新增功能摘要：
 
-Have a look at the June 2025 Release Overview video for a summary of the features added in the 2025.6.0 release:
-
->[!VIDEO](https://video.tv.adobe.com/v/3440931?quality=12&captions=chi_hant)
-
--->
+>[!VIDEO](https://video.tv.adobe.com/v/3470878?quality=12)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -70,7 +67,7 @@ Adobe 會定期審查功能、資料庫、API 和設定，確保其符合效能�
 
 展開下方清單，檢視不應再使用的棄用 API 和 OSGi 設定。如需完整詳情 (包括移除的時間表)，請參閱棄用文章。
 
-+++展開以檢視棄用的專案
++++展開以查看棄用內容
 
 Java API：
 
@@ -161,7 +158,7 @@ OSGi 屬性：
 * 根據地理位置、裝置類型或使用者屬性，將內容個人化
 * 做為 CDN 和您來源之間的中介軟體
 * 將第三方 API 的回應傳送至瀏覽器之前，先對其進行重新格式化 (且可能彙總多個 API 的回應)
-* 使用從各個後端拼接的內容，在邊緣編寫並提供伺服器轉譯的 HTML
+* 使用從各個後端拼接而成的內容，在邊緣編寫及提供伺服器轉譯的 HTML
 
 我們針對正式生產網站提供數量有限的 AEM Publish Delivery 或 Edge Delivery Services 專案機會。若您有興趣參與，或想了解更多相關資訊，請傳送電子郵件至 [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com)，並簡要描述您的使用案例。
 
