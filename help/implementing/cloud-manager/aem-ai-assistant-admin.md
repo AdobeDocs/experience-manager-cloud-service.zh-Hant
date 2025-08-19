@@ -1,24 +1,32 @@
 ---
-title: 在Adobe Experience Manager中設定AI助理
+title: 在AEM中設定AI助理
 description: 瞭解如何使用Adobe Experience Manager中的Admin Console來設定人工智慧助理。
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
+badge: label="Beta" type="Positive"
 hide: true
+index: false
 hidefromtoc: true
 exl-id: a7f3dc14-29f7-473a-9870-d52393e6fa6e
-source-git-commit: e853e7b46c762ab724d5eecb344897a83e4fb724
+source-git-commit: 7779f24244cce198e1c6a9b243a616c96f05ac8d
 workflow-type: tm+mt
-source-wordcount: '950'
+source-wordcount: '1099'
 ht-degree: 2%
 
 ---
 
-# 在Adobe Experience Manager中設定AI助理 {#aem-ai-asst-admin-setup}
+# 在AEM中設定AI助理 {#aem-ai-asst-admin-setup}
 
-管理員必須先設定存取權、許可權和設定，組織內的使用者才能使用AEM (Adobe Experience Manager) AI助理中的功能。
+<!-- An Administrator must configure access, permissions, and settings before users in their organization can use the features in AI Assistant in AEM. -->
 
-AEM AI Assistant的設定程式包含下列步驟：
+若要在AEM (Adobe Experience Manager)中使用AI助理，您的組織必須選擇Admin Console層級的加入。 產品管理員會建立（或選擇）使用者群組，並授予其新的「AI助理」許可權。 新增到該群組的所有人都能立即在整個AEM中存取AI助理。 如果目標是讓整個公司都可使用，管理員只需將所有使用者指派給該群組即可。
+
+從員工的角度來看，程式簡單明瞭：識別組織中Adobe Experience Manager的產品管理員，並請求將其新增至啟用AI的使用者群組。 一旦您出現在群組中，「助理員」圖示就會在您下次登入時自動顯示。
+
+管理員應牢記正常的Cloud Manager控管。 在Admin Console中保留產品管理員許可權，以建立設定檔、管理使用者群組或編輯許可權。 如果使用者還需要助理的內建&#x200B;**建立支援票證**&#x200B;功能，請將標準&#x200B;**支援管理員**&#x200B;角色(標準Admin Console角色)新增至相同的個人或群組。
+
+AEM中AI助理的設定程式包含下列步驟：
 
 1. [在Adobe Admin Console中建立新的產品設定檔](#create-profile)。
 1. [啟用AI助理產品知識許可權](#enable-permission)。
@@ -43,15 +51,15 @@ AEM AI Assistant的設定程式包含下列步驟：
 
 ## 1 — 在Adobe Admin Console中建立新的產品設定檔{#create-profile}
 
-1. 依照[在Experience Platform檔案中找到的Adobe Admin Console](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/access-control/ui/create-profile)中建立新產品設定檔中的詳細指示操作。
+1. 依照[在Experience Platform檔案中找到的Adobe Admin Console](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/create-profile)中建立新產品設定檔中的詳細指示操作。
 
 1. 建立新產品設定檔時，您可以對AI助理使用下列建議值。
 
    | 文字欄位 | 建議值 |
    | --- | --- |
-   | 產品設定檔名稱 | `AEM AI Assistant` （或您偏好的描述性名稱） |
+   | 產品設定檔名稱 | `AI Assistant in AEM` （或您偏好的描述性名稱） |
    | 顯示名稱（選擇性） | `AI Assistant` |
-   | 說明 (選填) | `Product profile for managing AEM AI Assistant access` |
+   | 說明 (選填) | `Product profile for managing AI Assistant in AEM access` |
    | 通知 | 根據您組織的偏好設定進行設定 |
 
 
@@ -59,9 +67,9 @@ AEM AI Assistant的設定程式包含下列步驟：
 
 指派自訂許可權給產品設定檔的程式遵循標準Adobe Cloud Manager自訂許可權工作流程。
 
-參考文章： [將自訂許可權指派給新的產品設定檔](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-manager/content/requirements/custom-permissions#assign-permissions)
+參考文章： [將自訂許可權指派給新的產品設定檔](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/custom-permissions#assign-permissions)
 
-1. 在Admin Console中，按一下您新建立的產品設定檔名稱(`AEM AI Assistant`)
+1. 在Admin Console中，按一下您新建立的產品設定檔名稱(`AI Assistant in AEM`)
 
    ![螢幕擷圖](/help/implementing/cloud-manager/assets/ai-assistant-console.png)
 
@@ -77,7 +85,7 @@ AEM AI Assistant的設定程式包含下列步驟：
 
    ![ AI助理產品知識切換選項的編輯許可權頁面](/help/implementing/cloud-manager/assets/ai-assistant-prod-knowledge.png)
 
-1. 在頁面的右下角，按一下[儲存]。**&#x200B;**
+1. 在頁面的右下角，按一下[儲存]。****
 
    您的產品設定檔現在已啟用AI助理產品知識許可權。
 
@@ -102,12 +110,12 @@ AEM AI Assistant的設定程式包含下列步驟：
 
    | 選項 | 建議值 |
    | --- | --- |
-   | 使用者群組名稱 | `AEM AI Assistant` （或您偏好的名稱） |
-   | 說明 (選填) | `User group for managing AEM AI Assistant access` |
+   | 使用者群組名稱 | `AI Assistant in AEM` （或您偏好的名稱） |
+   | 說明 (選填) | `User group for managing AI Assistant in AEM access` |
 
    ![建立新的使用者群組頁面](/help/implementing/cloud-manager/assets/ai-assistant-create-new-user-group.png)
 
-1. 在頁面的右下角，按一下[儲存]。**&#x200B;**
+1. 在頁面的右下角，按一下[儲存]。****
 
 >[!TAB 使用現有的使用者群組]
 
@@ -125,18 +133,18 @@ AEM AI Assistant的設定程式包含下列步驟：
 
 1. 在&#x200B;**使用者群組**&#x200B;頁面的&#x200B;**群組名稱**&#x200B;表格中，按一下您新建立的使用者群組名稱或現有的使用者群組名稱。
 
-   ![使用者群組頁面在表格中顯示AEM AI助理使用者群組名稱](/help/implementing/cloud-manager/assets/ai-assistant-user-group-name-in-table.png)
+   ![使用者群組頁面，在資料表](/help/implementing/cloud-manager/assets/ai-assistant-user-group-name-in-table.png)中顯示AEM使用者群組名稱中的AI助理
 
-1. 在&#x200B;**AEM AI小幫手**&#x200B;的&#x200B;**使用者群組**&#x200B;頁面中，按一下&#x200B;**使用者**&#x200B;索引標籤，然後按一下&#x200B;**新增使用者**。
+1. 在AEM **中** AI助理的&#x200B;**使用者群組**&#x200B;頁面中，按一下&#x200B;**使用者**&#x200B;索引標籤，然後按一下&#x200B;**新增使用者**。
 
-   ![AEM AI助理使用者群組頁面，顯示[使用者]索引標籤和[新增使用者]按鈕](/help/implementing/cloud-manager/assets/ai-assistant-add-users.png)
+   ![ AEM使用者群組頁面中的AI助理顯示[使用者]索引標籤和[新增使用者]按鈕](/help/implementing/cloud-manager/assets/ai-assistant-add-users.png)
 
-1. 在&#x200B;**`Add users to this user group`**&#x200B;頁面上，搜尋並選取需要存取AEM AI助理的使用者。
+1. 在&#x200B;**`Add users to this user group`**&#x200B;頁面上，搜尋並選取需要存取AEM中AI助理的使用者。
 
    ![新增使用者至此使用者群組頁面](/help/implementing/cloud-manager/assets/ai-assistant-add-users-to-this-group.png)
 
-1. 在頁面的右下角，按一下[儲存]。**&#x200B;**
-1. 現在，將產品設定檔指派給使用者群組&rbrack;(#assign-product-profile)。
+1. 在頁面的右下角，按一下[儲存]。****
+1. 現在，[將產品設定檔指派給使用者群組](#assign-product-profile)。
 
 >[!TAB 大量新增使用者]
 
@@ -144,7 +152,7 @@ AEM AI Assistant的設定程式包含下列步驟：
 
 1. 準備包含使用者資訊的CSV檔案。
 1. 使用&#x200B;**`Add users by CSV`**&#x200B;選項進行有效的大量新增。
-1. 現在，將產品設定檔指派給使用者群組&rbrack;(#assign-product-profile)。
+1. 現在，[將產品設定檔指派給使用者群組](#assign-product-profile)。
 
 >[!ENDTABS]
 
@@ -155,10 +163,10 @@ AEM AI Assistant的設定程式包含下列步驟：
 
 參考文章： [管理企業使用者的產品設定檔](https://helpx.adobe.com/tw/enterprise/using/manage-product-profiles.html)
 
-1. 當您仍在AEM AI助理使用者群組中，來自[4 — 新增使用者至使用者群組](#add-users)時，請按一下&#x200B;**已指派的產品設定檔**&#x200B;索引標籤。
+1. 當您仍在AEM使用者群組的AI助理中時，從[4 — 將使用者新增到使用者群組](#add-users)，按一下&#x200B;**已指派的產品設定檔**&#x200B;索引標籤。
 1. 按一下&#x200B;**指派設定檔**。
 
-   ![已選取指派產品設定檔索引標籤的AEM AI助理使用者群組頁面](/help/implementing/cloud-manager/assets/ai-assistant-assign-profile.png)
+   ![AEM使用者群組頁面中的AI助理已選取指派的產品設定檔索引標籤](/help/implementing/cloud-manager/assets/ai-assistant-assign-profile.png)
 
 1. 在&#x200B;**指派產品和設定檔**&#x200B;頁面的&#x200B;**選取產品設定檔**&#x200B;對話方塊中，搜尋並選取您的&#x200B;**AI助理**&#x200B;產品設定檔。
 
@@ -167,7 +175,7 @@ AEM AI Assistant的設定程式包含下列步驟：
 1. 在對話方塊的右下角附近，按一下&#x200B;**套用**。
 1. 在&#x200B;**指派產品和設定檔**&#x200B;頁面的右下角附近，按一下&#x200B;**儲存**。
 
-   ![顯示的AI助理產品設定檔已指派給AEM AI助理使用者群組](/help/implementing/cloud-manager/assets/ai-assistant-profile-assigned-to-user-group.png)
+   ![顯示的AI助理產品設定檔已指派給AEM使用者群組中的AI助理](/help/implementing/cloud-manager/assets/ai-assistant-profile-assigned-to-user-group.png)
 
 
 ## 驗證設定
@@ -187,7 +195,8 @@ AEM AI Assistant的設定程式包含下列步驟：
 
 ## 另請參閱
 
-* [Adobe Experience Platform存取控制](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/access-control/ui/overview)
+* [AEM中的AI助理](/help/implementing/cloud-manager/aem-ai-assistant.md)
+* [Adobe Experience Platform存取控制](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/overview)
 * [Cloud Manager自訂許可權](/help/implementing/cloud-manager/custom-permissions.md)
 
 

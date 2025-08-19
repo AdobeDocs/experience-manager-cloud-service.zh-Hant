@@ -1,46 +1,58 @@
 ---
-title: Adobe Experience Manager (Beta)中的AI助理
+title: AEM中的AI助理
 description: 使用AI助理協助您針對Adobe Experience Manager中可用的解決方案尋找答案和進行疑難排解。
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
+badge: label="Beta" type="Positive"
 hide: false
 hidefromtoc: true
 exl-id: 6cdf7f65-7112-420a-90c1-564f0ef8ceaf
-source-git-commit: 71041c9e4d4afe964f549f193daf8ec72bd97a41
+source-git-commit: 86281f539656ccdcb267a2de3aa0d40c0c8e637d
 workflow-type: tm+mt
-source-wordcount: '1322'
+source-wordcount: '1063'
 ht-degree: 1%
 
 ---
 
-# Adobe Experience Manager中的AI助理 {#aem-home}
+# AEM中的AI助理 {#aem-home}
 
 AEM (Adobe Experience Manager) AI Assistant提供對話式介面，旨在簡化為Adobe Experience Manager相關查詢尋找答案的程式。 它可協助您即時取得與AEM產品相關問題的解答（*可供所有使用者使用*），並自動建立支援票證（*可供支援管理員使用*）。
 
-在私人測試版期間，AEM AI Assistant支援AEM as a Cloud Service，包括下列解決方案：
+AI助理支援AEM as a Cloud Service，包括下列解決方案：
 
+* Experience Hub概觀頁面
+* Edge Delivery Services
 * Sites
 * Assets
-* Dynamic Media
-* Edge Delivery Services
-* Cloud Manager
 * Forms
+* Dynamic Media
+* Cloud Manager
+
 
 此視覺效果直接內嵌於AEM中，並可從AEM Experience Hub、Cloud Manager及作者UI存取。
 
-以下3分鐘39秒的影片逐步解說AEM AI Assistant。
+以下3分鐘39秒的影片逐步解說AEM中的AI Assistant。
 
->[!VIDEO](https://video.tv.adobe.com/v/3470366?learn=on&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3470354?learn=on)
 
+## 如何在AEM中存取AI Assistant{#get-access}
+
+1. [客戶必須使用Adobe簽署Gen AI附加程式](https://fieldreadiness-adobe.highspot.com/items/665f831c9f831b011aeda057#1)。
+
+   GenAI Rider是客戶與Adobe之間的法律協定，需使用大部分的AI和代理程式功能。 請聯絡Adobe客戶服務以進一步瞭解。
+
+1. AEM管理員會設定AI助理以供組織使用。 請參閱[在AEM中設定AI小幫手](/help/implementing/cloud-manager/aem-ai-assistant-admin.md)。
+
+<!--
 >[!IMPORTANT]
->請確定您已檢閱並提交使用者合約，因此Adobe可以啟用AI Assistant功能，供您測試並參與私人測試版計畫。
+>Be sure you have reviewed and submitted the user agreement so Adobe can enable the AI Assistant feature for you to test out and participate in the private beta program.
 >
->如有任何問題，請透過與Adobe ID相關聯的電子郵件地址傳送電子郵件至[Grp-AEMAIASSISTANT@adobe.com](mailto:Grp-AEMAIASSISTANT@adobe.com)。
+>For any questions, send an email to [Grp-AEMAIASSISTANT@adobe.com](mailto:Grp-AEMAIASSISTANT@adobe.com) from your email address associated with your Adobe ID. -->
 
 ## 範圍 {#scope}
 
-AEM AI Assistant目前的範圍著重於解決Adobe Experience Manager as a Cloud Service的產品知識問題。 此範圍包含關鍵領域的完整支援，例如Sites、Assets、Forms、Edge Delivery Services和Cloud Manager。
+AEM中AI助理目前的範圍著重於解決AEMr as a Cloud Service的產品知識問題。 此範圍包含主要領域的完整支援。<!--, such as Sites, Assets, Forms, Edge Delivery Services, Dynamic Media, and Cloud Manager. -->
 
 * **介面**：適用於AEM Experience Hub、作者UI、Cloud Manager。
 * **功能**：產品知識以及疑難排解和指引的第一站、自動建立支援票證和查詢。
@@ -48,18 +60,18 @@ AEM AI Assistant目前的範圍著重於解決Adobe Experience Manager as a Clou
 
 ## 隱私權、安全性和治理{#privacy-security-governance}
 
-AEM AI Assistant的設計強調隱私、安全性和治理。
+AEM中的AI助理在設計上特別強調隱私權、安全性和治理。
 
-本文概述您可以從AEM AI Assistant期待的以信任為中心的功能：
+本文概述您可以從AEM的AI助理身上期待的以信任為中心的功能：
 
-* AEM AI Assistant不使用任何個人資料，包括訓練用資料。
-* AEM AI助理無法存取消費者資料。
-* 需要明確許可權才能與AEM AI助理互動。
+* AEM中的AI助理不會使用任何個人資料，包括訓練用資料。
+* AEM中的AI助理無法存取消費者資料。
+* 需要明確許可權，才能與AEM中的AI助理互動。
 * 使用者提供的提示（問題、查詢等）不會與其他客戶共用。
 
 <!-- See also [Security at Adobe whitepaper](). NEED ACTIVE LINK FROM ADRIAN NICOLAE TANASE. CURRENTLY 404. -->
 
-## 瞭解產品知識和自動支援票證建立的AEM AI Assistant {#ai-prod-insights}
+## 瞭解AEM中的AI助理，以取得產品知識和自動化支援票證建立 {#ai-prod-insights}
 
 產品知識包含從Adobe Experience League檔案衍生的概念和主題。 這些問題可以歸類為以下子群組：
 
@@ -78,11 +90,11 @@ AEM AI Assistant的設計強調隱私、安全性和治理。
 
 ## 如何製作有效的問題 {#ai-craft-questions}
 
-若要從AEM AI Assistant收到最準確的回應，請務必以清楚明瞭的內容表述您的問題。 使用下列提示來確保您的查詢清晰且結構良好：
+為了從AEM中的AI助理獲得最準確的回應，請務必以清楚和具體的語境表述您的問題。 使用下列提示來確保您的查詢清晰且結構良好：
 
 * 以簡潔明瞭的方式清楚說明您的任務或問題。
 * 請避免含糊不清的措辭或過於複雜的語法，以增進瞭解。
-* 加入您任務或問題的相關內容，因為此方法有助於AEM AI助理提供更精確且相關的答案。
+* 加入您任務或問題的相關內容，因為此方法有助於AEM中的AI助理提供更精確且相關的答案。
 例如，在您的提示中，為您目前使用的AEM解決方案命名(Sites、Assets、Dynamic Media、Edge Delivery Services、Cloud Manager或Forms)會有所幫助。
 
 ### 不支援的問題範例 {#ai-unsupported-questions}
@@ -94,54 +106,54 @@ AEM AI Assistant的設計強調隱私、安全性和治理。
 | 工作與自動化 | <ul><li>為我從開發分支設定程式碼品質管道。</li></ul> |
 
 
-## 使用AEM AI助理 {#ai-use}
+## 在AEM中使用AI助理 {#ai-use}
 
 <!-- UNHIDE AFTER BETA or at GA
-### Enable AEM AI Assistant access through Admin Console 
+### Enable AI Assistant in AEM access through Admin Console 
 
-To use the AEM AI Assistant, your organization must opt in at the Admin Console level. A product administrator creates (or chooses) a user group and grants it the new "AI Assistant" permission. Anyone added to that group instantly gains access to the Assistant across AEM. If the goal is company-wide availability, the admin simply assigns all users to that group.
+To use the AI Assistant in AEM, your organization must opt in at the Admin Console level. A product administrator creates (or chooses) a user group and grants it the new "AI Assistant" permission. Anyone added to that group instantly gains access to the Assistant across AEM. If the goal is company-wide availability, the admin simply assigns all users to that group.
 
-![AEM AI Assistant in the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console.png)
+![AI Assistant in AEM in the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console.png)
 
 From an employee's perspective, the process is straightforward: identify the product administrator for Adobe Experience Manager in your organization and request to be added to the AI-enabled user group. Once you appear in that group, the Assistant icon shows up automatically the next time you sign in.
 
 Administrators should keep normal Cloud Manager governance in mind. Hold product administrator rights in the Admin Console to create profiles, manage user groups, or edit permissions. If users also need the Assistant's built-in **Create Support Ticket** feature, add the standard **Support Admin** role (standard Admin Console role) to the same individuals or group.
 
-![Technical support ticket creation in the AEM AI Assistant of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
+![Technical support ticket creation in the AI Assistant in AEM of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
 
-For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/accessing/overview). 
+For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview). 
 
 See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md). -->
 
 
-### 開始或重設交談
+### 在AEM交談中啟動或重設AI助理
 
-您可以重設AEM AI助理，並在想要變更主題時開始新的對話。 在疑難排解失敗的查詢或提供不正確的資訊時，此功能特別實用。
+您可以在AEM中重設AI助理，並在想要變更主題時開始新對話。 在疑難排解失敗的查詢或提供不正確的資訊時，此功能特別實用。
 
 ![開始交談按鈕](/help/implementing/cloud-manager/assets/ai-assistant-start-conversation.png)
 
 **若要啟動或重設交談：**
 
-1. 在AEM AI助理上，按一下![更多圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
-1. 若要通知AEM AI助理有關新主題或主題變更，請按一下[開始新交談] **&#x200B;**。
+1. 在AEM的AI助理上，按一下![更多圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
+1. 若要通知AI助理有關新主題或主題變更，請按一下&#x200B;**開始新交談**。
 
 ### 使用可發現性
 
-AEM AI Assistant包含可發現性功能，可協助您探索支援的主題和類別。
+AEM中的AI助理包含可發現性功能，可協助您探索支援的主題和類別。
 
 ![創意燈泡圖示](/help/implementing/cloud-manager/assets/ai-assistant-idea.png)
 
 **使用可發現性：**
 
-1. 在AEM AI Assistant的右上角附近，按一下![學習圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Learn_18_N.svg)。
+1. 在AI助理的右上角附近，按一下![學習圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Learn_18_N.svg)。
 1. 選取類別以檢視相關提示清單。
-1. 選擇提示以更瞭解AEM AI Assistant可回答的問題型別。
+1. 選擇提示以更瞭解AEM中的AI助理可以回答的問題型別。
 
-### 提供AEM AI助理的意見回饋
+### 提供AEM中AI助理的反饋
 
-您的輸入有助於改善AEM AI Assistant，以獲得更出色的效能和準確性。
+您的輸入有助於改進AEM中的AI助理，以獲得更好的效能和準確性。
 
-透過下列選項，分享您對AEM AI Assistant體驗的意見反應：
+透過下列選項，分享您對AEM中AI助理體驗的意見反應：
 
 ![豎起大拇指、豎下大拇指和旗標圖示](/help/implementing/cloud-manager/assets/ai-assistant-feedback.png)
 
@@ -149,58 +161,59 @@ AEM AI Assistant包含可發現性功能，可協助您探索支援的主題和�
 | --- | --- |
 | ![向上縮圖圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ThumbUpOutline_18_N.svg) | 按一下以指出哪些專案進展順利，並分享正面回饋。 |
 | ![向下縮圖圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ThumbDownOutline_18_N.svg) | 按一下以提供改善建議。 新增有關您體驗的特定註解，這些註解每天都會稽核。 |
-| ![標幟圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Flag_18_N.svg) | 按一下「 」即可回報疑慮，或針對您與AEM AI助理的互動提供詳細的意見回饋。 |
+| ![標幟圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Flag_18_N.svg) | 按一下「 」即可回報疑慮，或針對您與AEM中的AI助理的互動提供詳細的意見回饋。 |
 
-## 關於AEM AI Assistant的常見問題 {#ai-faq}
+## 關於AEM中AI助理的常見問題 {#ai-faq}
 
 以下是AI助理部分常見問題的解答：
 
-* **AEM AI Assistant即時提供的資訊嗎？**\
+* **AEM中的AI助理是否即時提供資訊？**\
   不行。AI助理從Adobe Experience League檔案取得其內容。 內容的更新可能需要一些時間才能反映在回應中。
-* **AEM AI Assistant支援哪些Adobe應用程式？**\
+* **AEM中的AI助理支援哪些Adobe應用程式？**\
   目前，AI Assistant支援AEM as a Cloud Service中的產品知識查詢，包括Sites、Assets、Dynamic Media、Cloud Manager和Forms。
-* **AEM AI Assistant有哪些功能？**\
-  AEM AI Assistant可回答與Adobe產品知識相關的查詢。
-* **AEM AI助理是否使用個人資訊來訓練資料？**\
-  不行。AEM AI助理不會將個人資訊用於訓練目的。 避免與AEM AI助理分享您或其他人的個人資訊，包括姓名或聯絡詳細資訊。
+* **AEM中的AI助理有哪些功能？**\
+  AEM中的AI Assistant可回答與Adobe產品知識相關的查詢。
+* **AEM中的AI助理是否將個人資訊用於訓練資料？**\
+  不行。AEM中的AI助理不會將個人資訊用於訓練目的。 避免與AEM中的AI助理分享您或其他人的個人資訊，包括姓名或聯絡詳細資訊。
 
+<!-- IS THE DOCUMENTATION BELOW STILL NEEDED? IF SO, GO AHEAD AND DELETE THE COMMENT TAGS!!
 
-## AEM Forms AI助理(Forms Experience Builder) {#ai-forms-builder}
+## AEM Forms AI Assistant (Forms Experience Builder) {#ai-forms-builder}
 
-除了用於產品知識的一般AEM AI助理之外，AEM還提供專門的&#x200B;**[AEM Forms AI助理(Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant.md)**。 此增強型助理可以透過自然語言提示和回答表單特定問題，主動協助您建立及設定表單。
+In addition to the general AI Assistant in AEM for product knowledge, AEM offers a specialized **[AEM Forms AI Assistant (Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant.md)**. This enhanced assistant can actively help you create and configure forms through natural language prompts and answer questions specific to forms.
 
-### 主要功能
+### Key capabilities
 
-AEM Forms AI Assistant提供：
+The AEM Forms AI Assistant provides:
 
-* **表單建立**：使用自然語言說明從頭開始建立新表單。
-* **設計匯入**：將現有的設計(PDF、Figma、影像)轉換為功能性AEM Forms。
-* **表單設定**：新增欄位、面板、驗證規則和條件式邏輯。
-* **配置管理**：組織表單結構並最佳化不同的裝置。
-* **整合設定**：設定表單提交與資料處理。
-* **產品知識**：回答有關AEM Forms功能和最佳實務的問題。
+* **Form Creation**: Create new forms from scratch using natural language descriptions.
+* **Design Import**: Convert existing designs (PDF, Figma, images) into functional AEM Forms. 
+* **Form Configuration**: Add fields, panels, validation rules, and conditional logic.
+* **Layout Management**: Organize form structure and optimize for different devices.
+* **Integration Setup**: Configure form submissions and data handling.
+* **Product Knowledge**: Answer questions about AEM Forms features and best practices.
 
-### 存取位置
+### Where to access
 
-AEM Forms AI Assistant的可用功能如下：
+The AEM Forms AI Assistant is available in the following:
 
-* **通用編輯器**：適用於具有視覺化編輯功能的Edge Delivery Services表單。
-* **最適化Forms編輯器**：有關詳細的表單設定和進階功能。
-* **Forms管理UI**：用於高階表單建立和管理工作。
+* **Universal Editor**: For Edge Delivery Services forms with visual editing capabilities.
+* **Adaptive Forms Editor**: For detailed form configuration and advanced features.
+* **Forms Management UI**: For high-level form creation and management tasks.
 
-### 快速入門
+### Getting started
 
 >[!NOTE]
 >
-> AEM Forms AI助理(Forms Experience Builder)可在私人測試版計畫下使用。 從您的工作地址傳送電子郵件至[aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)以要求存取權。
+> The AEM Forms AI Assistant (Forms Experience Builder) is available under the private beta program. Send an email from your work address to [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) to request access.
 
-若要進一步瞭解如何使用AEM Forms AI小幫手，請參閱[AEM Forms AI小幫手](/help/edge/docs/forms/forms-ai-assistant.md)檔案。
+To learn more about using the AEM Forms AI Assistant , see the [AEM Forms AI Assistant](/help/edge/docs/forms/forms-ai-assistant.md) documentation.
 
-### 範例使用案例
+### Example Use Cases
 
-* **「建立包含名稱、電子郵件、評分和評論欄位的客戶意見回饋表單」**
-* **&quot;將此上傳的PDF應用程式表單轉換為數位最適化表單&quot;**
-* **「新增條件式邏輯，僅在婚姻狀態為「已婚」時顯示配偶資訊」**
-* **&quot;設定此表單以提交資料至客戶關係管理系統&quot;**
+* **"Create a customer feedback form with name, email, rating, and comments fields"**
+* **"Convert this uploaded PDF application form into a digital adaptive form"**  
+* **"Add conditional logic to show spouse information only when marital status is 'Married'"**
+* **"Configure this form to submit data to the Customer Relationship Management system"**
 
-這個專門的AEM Forms AI Assistant代表表單建立的下一個演化，結合AI的強大功能與AEM的強大表單功能，精簡您的表單建立工作流程。
+This specialized AEM Forms AI Assistant represents the next evolution in form building, combining the power of AI with AEM's robust forms capabilities to streamline your form creation workflow.
