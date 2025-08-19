@@ -33,7 +33,7 @@ AEM as a Cloud Service 中 Cloud Manager 2025.8.0 版的發行日期是 2025 年
 
   Experience Hub是一個統一的起點，可提供個人化的情境式體驗，以幫助使用者更快地實現目標。 轉出將於2025年8月26日結束，可供所有使用者使用。 可直接在[experience.adobe.com](https://experience.adobe.com/)存取新的Experience Hub。 若要進一步瞭解，請參閱[Adobe Experience Hub](/help/implementing/cloud-manager/aem-home.md)。
 
-* **Edge Delivery Services 授權可以透過自助服務方式納入 HIPAA 方案**
+* **Edge Delivery Services 授權可以透過自助服務方式包含在 HIPAA 方案中**
 
   具有醫療保健或敏感資料需求的組織，現在可以透過自助服務的方式使用 Edge Delivery Services，讓 HIPAA 合規性能夠符合嚴格的監管標準。<!-- CMGR-70016 -->
 
@@ -156,7 +156,7 @@ If you are interested in testing this new feature and sharing your feedback, sen
 
   ![篩選器面板顯示新的傳遞類型包括邊緣傳遞與發佈傳遞](/help/implementing/cloud-manager/release-notes/assets/filter-delivery-type.png)
 
-![Add Edge Delivery pipeline in Add Pipeline drop-down list](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *從&#x200B;**計劃概觀**&#x200B;頁面的&#x200B;**管道**&#x200B;卡片新增 Edge Delivery 管道。*
+![Add Edge Delivery pipeline in Add Pipeline drop-down list](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *從&#x200B;**計劃概觀**頁面的&#x200B;**管道**卡片新增 Edge Delivery 管道。*
 
 ![Add Edge Delivery pipeline dialog box](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *新增 Edge Delivery 管道對話框。*
 
@@ -169,7 +169,7 @@ If you are interested in testing this new feature and sharing your feedback, sen
 
 * 管道現在僅會將變數傳遞至使用中的 Edge Delivery Services 網域設定，而跳過管道重新建立期間所移除的任何設定。<!-- (CMGR‑70039) -->
 * 管道執行現在能穩定地啟動；已修正由於內部資源處理錯誤而導致某些管道無法啟動的問題。<!-- (CMGR‑58167) -->
-* 內容複製功能會驗證 Cloud Manager 權限並阻止缺乏部署管理員或管理員權限的使用者進行啟動。<!-- (CMGR‑62097) -->
+* 內容複製功能會驗證 Cloud Manager 權限，並封鎖缺乏部署管理員或管理員權限的使用者所進行的啟動。<!-- (CMGR‑62097) -->
 
 
 <!-- ## Known issues {#known-issues} -->

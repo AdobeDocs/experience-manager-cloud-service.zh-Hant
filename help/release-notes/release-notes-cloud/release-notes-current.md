@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 401eaaaa0bb8dad054c7105533cbd4486964c484
 workflow-type: tm+mt
 source-wordcount: '2269'
-ht-degree: 48%
+ht-degree: 99%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 48%
 
 ## 發行日期 {#release-date}
 
-[!DNL Adobe Experience Manager]作為[!DNL Cloud Service]目前功能版本(2025.7.0)的發行日期是2025年8月7日。 下一個功能版本(2025.8.0)計畫於2025年8月28日發行。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 最新功能版本 (2025.7.0 版) 的發行日期為 2025 年 8 月 7 日。下一個功能版本 (2025.8.0) 規劃於 2025 年 8 月 28 日發行。
 
 ## 維護版本發行說明 {#maintenance}
 
@@ -40,7 +40,7 @@ ht-degree: 48%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440931?quality=12&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -48,83 +48,83 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 ### Experience Manager Sites 的新功能 {#enhancements-sites}
 
-* 您現在可以在一次操作中複製具有引用片段（子項）的內容片段。 這允許重複使用現有的內容片段結構來建立新內容。
-* 在內容片段管理UI中，您現在可以檢視內容片段的工作流程狀態，包含所選片段過去和目前執行中的工作流程的詳細資訊。
-* 重新命名或移動即時副本來源頁面現在會觸發重新發佈相應地重新命名或移動的即時副本頁面。
+* 您現在只需一次操作，即可複製內容片段及其參考片段 (子系)。這樣可以重新使用現有的內容片段結構來建立新內容。
+* 現在，在內容片段管理員 UI 中，您可以檢視內容片段的工作流程狀態，其中包含所選取片段過去和目前正在執行之工作流程的詳細資訊。
+* 現在，重新命名或移動 Live Copy 來源頁面會觸發重新發佈相應地重新命名或移動的 Live Copy 頁面。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-**將圖案新增至Dynamic Media範本**
+**將形狀新增至 Dynamic Media 範本**
 
-您現在可以在Experience Manager Assets中[將圖案圖層](/help/assets/dynamic-media/dynamic-media-templates.md#add-shapes-to-the-canvas)新增至Dynamic Media範本。 形狀圖層與影像和文字圖層類似，透過範本URL支援即時更新的引數。 您也可以在範本中加入圖案的call-to-action (CTA)連結。
+現在，您可以在 Experience Manager Assets 中[將形狀圖層新增至 Dynamic Media 範本](/help/assets/dynamic-media/dynamic-media-templates.md#add-shapes-to-the-canvas)。與影像和文字圖層類似，形狀圖層支援透過範本 URL 使用參數進行即時更新。您也可以在範本中把行動號召 (CTA) 連結加入各個形狀中。
 
-![新增配色至Dynamic Media範本](/help/assets/assets/enable-uniform-radius-shape.png)
+![將形狀新增至 Dynamic Media 範本](/help/assets/assets/enable-uniform-radius-shape.png)
 
-**AI產生的中繼資料增強功能**
+**增強 AI 產生的後設資料**
 
-AEM Assets現在可讓您[設定在「資產瀏覽」頁面的「卡片檢視」或「清單檢視」中顯示資產標題](/help/assets/smart-tags.md#configure-ai-generated-titles)。 您可以選擇顯示您定義的資產標題、使用AI產生的標題，或僅在資產沒有現有標題時才使用AI產生的標題。
+AEM Assets 現在可讓您在[資產瀏覽頁面上設定用卡片視圖或清單視圖顯示資產標題](/help/assets/smart-tags.md#configure-ai-generated-titles)。您可以選擇顯示您定義的資產標題、使用 AI 產生的標題，或僅於資產沒有現有標題時使用 AI 產生的標題。
 
-![設定AI產生的標題](/help/assets/assets/configure-title-ai-generated.png)
+![設定 AI 產生的標題](/help/assets/assets/configure-title-ai-generated.png)
 
-您現在也可以選擇在資料夾層級停用AI產生的中繼資料。
+您現在也可以選擇在資料夾層級停用 AI 產生的後設資料。
 
 ### 全新的 Content Hub 功能 {#new-features-content-hub}
 
-**在Content Hub中增強品牌彈性**
+**增強 Content Hub 內的品牌化彈性**
 
-Content Hub以現有的個人化功能為基礎，現在可讓管理員透過新增自訂標誌影像來進一步調整部署。 此外，也新增了橫幅與標誌影像的TIFF檔案格式支援，提供更優異的設計彈性。
+在現有個人化功能的基礎上，Content Hub 現在讓管理員可藉由新增自訂標誌影像來進一步自訂其部署。橫幅和標誌影像也新增支援 TIFF 檔案格式，提供更高的設計彈性。
 
-**更聰明地共用標題連結**
+**使用有標題的連結，共用更有智慧**
 
-您現在可以在產生共用連結時新增標題 — 不論是從資產詳細資料檢視中或選取一或多個資產後。 這可協助收件者輕鬆識別每個連結的用途，尤其是在接收多個共用資產時。
+現在，您在產生共用連結時可以新增標題，無論是從資產詳細資料視圖，或是在選取一項或多項資產之後。這樣做可以協助收件者輕鬆識別每個連結的用途，尤其是在接收到多項共用資產時。
 
 ![私人與公開連結](/help/assets/assets/shared-link-for-assets.png)
 
-**已改善篩選器導覽**
+**改善篩選器導覽**
 
-Content Hub現在於篩選器內包含&#x200B;**全部顯示**&#x200B;選項，可讓使用者檢視所有可用多面向以及資產計數（從目前僅檢視最多10個多面向的限制）。 每個篩選器中的增強搜尋和排序功能可讓您更輕鬆地更高效地發現和管理資產。
+現在，Content Hub 的篩選器也包含「**顯示全部**」選項，讓使用者可以檢視所有可用面向以及資產計數，而不必受限於目前只能檢視最多十個面向的限制。增強各個篩選器的搜尋和排序功能，可以更輕鬆、更有效地探索及管理資產。
 
-### AEM案頭應用程式3.0.0版 {#desktop-app-release-3.0.0}
+### AEM 桌面應用程式版本 3.0.0 {#desktop-app-release-3.0.0}
 
-享受自動上傳新檔案和資料夾、增強的檔案作業、更聰明的資產探索，以及與AEM無縫整合，讓內容管理更快速、更清晰、更直覺。
+享受新檔案和資料夾自動上傳的功能、增強的檔案操作、更智慧的資產探索，以及與 AEM 的緊密整合，讓內容管理更快速、更清楚，且更加直覺易用。
 
-如需完整的功能清單，請參閱[案頭應用程式發行說明](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-desktop-app/using/release-notes)。
+如需完整的功能清單，請參閱[桌面應用程式發行說明](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-desktop-app/using/release-notes)。
 
-### Dynamic Media中的新功能搭配OpenAPI功能 {#new-features-dynamic-media-with-openapi}
+### 具有 OpenAPI 功能的 Dynamic Media 之新功能 {#new-features-dynamic-media-with-openapi}
 
 **發佈前預覽資產**
 
-[!DNL Dynamic Media with OpenAPI capabilities]現在允許直接在[!DNL AEM Sites]作者頁面中預覽資產，然後再公開使用。 與利害關係人共用預覽頁面，以收集關於視覺品質和情境適應的意見回饋。 在稽核週期中，您可以在最終確定多個資產版本以供發佈之前，建立和管理這些版本。
+現在，[!DNL Dynamic Media with OpenAPI capabilities] 允許在資產開放使用之前，直接在 [!DNL AEM Sites] 製作頁面預覽資產。與利害關係人分享預覽頁面，收集關於視覺品質及內容契合度的意見。於審閱週期內，在最終確認發佈內容之前，您可以建立與管理多個資產版本。
 
-**OpenAPI影像要求的增強智慧型影像處理**
+**增強智慧型影像處理，用於 OpenAPI 影像要求**
 
-所有OpenAPI影像要求現在都會善用智慧影像與自動促銷和遞補邏輯。 此增強功能會根據裝置和網路狀況最佳化影像，提供更快的頁面載入速度並降低頻寬使用量，同時維持視覺品質。
+現在，所有 OpenAPI 影像要求都能充分善用具有自動升級功能和備用邏輯的智慧型影像處理。此增強功能可以根據裝置和網路條件將影像最佳化，加快頁面載入速度並減少頻寬使用量，同時保持視覺品質。
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### AEM Forms 的新功能 {#forms-new-features}
 
-最適化Forms和表單片段的&#x200B;**通用編輯器**
+**適用於自適應表單和表單片段的通用編輯器**
 
-[通用編輯器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)現在支援建立最適化Forms和可重複使用的表單片段。 作者可以在簡化的所見即所得製作環境中視覺化地建置表單、設定提交動作，並新增 reCAPTCHA 驗證。此功能可加速表單建立、增強一致性，並改善對垃圾郵件和自動化濫用的防護。
+[通用編輯器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)現在支援建立自適應表單和可重複使用的表單片段。作者可以在簡化的所見即所得製作環境中視覺化地建置表單、設定提交動作，並新增 reCAPTCHA 驗證。此功能可加速表單建立、增強一致性，並改善對垃圾郵件和自動化濫用的防護。
 
 ![通用編輯器](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center}
 
 
-適用於Edge Delivery Services Forms的&#x200B;**Forms提交服務**
+**適用於 Edge Delivery Services 表單的表單提交服務**
 
-請參閱[Forms提交服務](/help/forms/forms-submission-service.md)。 可讓您順暢地將最適化表單提交中的資料直接儲存至熱門的試算表平台，例如Google Sheets、Microsoft OneDrive或SharePoint。 此整合可讓您直接將表單資料提交至您選擇的試算表，消除手動資料傳輸並減少錯誤，進而簡化資料管理。
+[表單提交服務](/help/forms/forms-submission-service.md)讓您將自適應表單所提交的資料順暢地直接儲存至常用的試算表平台中，例如 Google Sheets、Microsoft OneDrive 或 SharePoint。這樣的整合可以將表單資料直接提交至您選擇的試算表，免除手動轉移資料的作業並減少錯誤，進而簡化資料管理。
 
-主要優點包括：
+主要優勢包括：
 
 * **直接整合：**&#x200B;設定您的表單，將資料直接提交至指定的試算表。
-* **自訂資料對應：**&#x200B;將表單欄位對應到有組織的儲存空間中的對應試算表欄。
-* **存取控制：**&#x200B;利用現有的試算表許可權來管理誰可以存取或修改提交的資料。
+* **自訂資料對應：**&#x200B;將表單欄位對應至相應的試算表欄中，維持資料儲存的條理。
+* **存取控制：**&#x200B;善用現有的試算表權限，管理哪些人可以存取或修改已提交的資料。
 
-**從最適化Forms產生並同步AFP轉譯**
+**從自適應表單產生並同步 AFP 轉譯**
 
-[AFP Output Sync API](/help/forms/document-generation-afp-api.md)可讓系統管理員和使用者從Adaptive Forms產生AFP （進階函式簡報）輸出，並將輸出與外部系統或儲存位置同步。 AFP 是一種針對列印最佳化的高效能文件格式，常用於大型企業環境。
+[AFP 輸出同步 API](/help/forms/document-generation-afp-api.md) 讓管理員和使用者能夠從自適應表單產生 AFP (進階功能呈現) 輸出，並將此輸出與外部系統或儲存位置同步。AFP 是一種針對列印最佳化的高效能文件格式，常用於大型企業環境。
 
 <!-- ### New pre-release features in AEM Forms {#forms-new-pre-release-features}
 
@@ -141,11 +141,11 @@ Content Hub現在於篩選器內包含&#x200B;**全部顯示**&#x200B;選項，�
 
  -->
 
-### AEM Forms中的全新搶先存取功能 {#forms-new-early-access-features}
+### 全新 AEM Forms 搶先體驗功能 {#forms-new-early-access-features}
 
-AEM Forms搶先體驗計畫為您提供獨一無二的機會，讓您以獨家方式存取尖端創新技術，並幫助打造其開發藍圖。
+AEM Forms 搶先體驗方案為您提供獨一無二的機會，享有尖端創新功能的獨家存取權，並協助引導這些功能的發展。
 
-以下版本說明列出目前版本中提供的創新內容。 如需搶先體驗計劃提供之創新的完整清單，請參閱 [AEM Forms 搶先體驗計劃文件](/help/forms/early-access-ea-features.md)。
+這些發行說明列出的是目前版本提供的創新功能。如需搶先體驗方案提供的創新功能之完整清單，請參閱 [AEM Forms 搶先體驗方案文件](/help/forms/early-access-ea-features.md)。
 
 
 <!-- **Forms Optimization opportunities**
@@ -163,25 +163,25 @@ Key optimization opportunities include:
 
 With Forms Optimization, you get automated, data-driven recommendations and variations, making it easier to boost engagement and ensure your forms are effective and inclusive. -->
 
-互動式通訊編輯器的&#x200B;**規則編輯器**
+**適用於互動式通訊編輯器的規則編輯器**
 
-使用直覺式的點選介面，直接在檔案中建立動態的資料驅動動作。 輕鬆定義條件式邏輯、自動化工作流程，以及個人化內容，無需撰寫程式碼。
+透過直覺易用的指向與點按介面，直接在文件中建置動態、資料驅動的動作。輕鬆定義條件式邏輯、自動化工作流程，以及將內容個人化，不需要編寫程式碼。
 
-自訂元件的&#x200B;**AEM Forms Scaffolder CLI**
+**適用於自訂元件的 AEM Forms 支架 CLI**
 
->[!VIDEO]&#x200B;(https://video.tv.adobe.com/v/3470514/aem-forms scaffolding-aem-custom component generator-aem-forms cli-aem-forms custom component-aem-forms開發工具)
+>[!VIDEO](https://video.tv.adobe.com/v/3470514/aem-forms scaffolding-aem-custom component generator-aem-forms cli-aem-forms custom component-aem-forms development tool)
 
-使用此CLI工具加速AEM Forms Edge Delivery Services開發。 立即產生啟動自訂元件開發所需的程式碼和接線 — 無樣板，輕鬆無礙。
+使用此 CLI 工具加速開發 AEM Forms Edge Delivery Services。立即產生啟動自訂元件開發所需的程式碼和線路，不需要範本，也沒有麻煩手續。
 
-動態表單資料的&#x200B;**API整合工具**
+**動態表單資料 API 整合工具**
 
-API整合工具可讓表單作者建立動態、智慧型的表單，這些表單會根據使用者互動，自動從外部REST API擷取及填入資料。 此無程式碼整合功能可將靜態表單轉換為回應式資料收集介面。
+表單作者可以利用 API 整合工具來建立動態、智慧的表單，而此表單會根據使用者互動情形，自動從外部 REST API 擷取及填入資料。這項無程式碼整合功能將靜態表單轉換為回應式資料彙集介面。
 
-## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
+## [!DNL Experience Manager] as a [!DNL Cloud Service] 基礎 {#foundation}
 
 ### 許可權管理的節點檢視 {#node-view}
 
-AEM推出節點檢視許可權管理。 主要功能與傳統UI相同，但更加方便使用者且更有效率。 如需進一步資訊，請參閱[專屬文章](/help/security/touch-ui-principal-view.md)。
+AEM推出節點檢視許可權管理。 其主要功能與傳統使用者介面相同，但更加簡單易用而且有效率。若要了解更多詳細資訊，請參閱[專門文章](/help/security/touch-ui-principal-view.md)。
 
 ### 更新的棄用流程 {#updated-deprecation-process}
 
@@ -224,7 +224,7 @@ OSGi 屬性：
 
 ### Java 11 執行階段棄用 {#java11-runtime-deprecation}
 
-**Java 11執行階段* — 現已棄用，且大部分環境已升級至效能更高的&#x200B;**&#x200B;Java 21執行階段**。
+現已棄用 **Java 11 執行階段*，且大多數環境已升級至效能更好的 **Java 21 執行階段**。
 
 若您的環境因相依性不支援而無法升級 (請參閱 [Java 21 執行階段要求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements))，您應已收到一封 Adobe 傳送的電子郵件，其中包含具體的後續步驟。請確保在 **2025 年 8 月 28 日**&#x200B;前完成所有必要的更新，您的環境方能無中斷地進行升級。
 
@@ -243,18 +243,18 @@ OSGi 屬性：
 
 ### 預設清除舊版本和稽核記錄 {#mt-defaults}
 
-目前，內容版本和稽核記錄有它們相關聯的*清除維護任務 — 預設為停用，因此除非明確設定，否則不會移除任何資料。
+目前，內容版本和稽核記錄皆將其相關的*清除維護任務預設為停用，因此，除非經過明確設定，否則不會移除任何資料。
 
-不過，為了最佳化存放庫效能，依照下列准則，系統將在未來公佈的日期預設啟用清除：
+不過，為了讓存放庫發揮最佳效能，將依之後公告的日期預設啟用清除功能，並遵循以下準則：
 
 #### 內容版本 {#mt-content}
 
-* **新環境*- (建立於即將來臨的日期之後（稍後通知）
-   * 將定期刪除早於**30天* — 的版本。
-   * 保留過去 30 天內的五個最新版本，以及最新版本和目前版本，無論其已存在多久。
+* **新的環境* (建立於即將到來的日期 (稍後通知) 之後)
+   * 已存在超過 **30 天*&#x200B;的版本會定期被刪除。
+   * 保留過去 30 天內五個最新版本，加上最新版本和目前版本，無論其已存在多久。
 
-* **現有環境*- （在此即將到來的日期之前建立）：
-   * 將定期刪除早於**7年* — 的版本。
+* **現有環境* (建立於此即將到來的日期之前)：
+   * 已存在超過 **7 年*&#x200B;的版本會定期被刪除。
    * 保留過去 7 年內的所有版本。
    * 此較高的預設臨界值能防止意外移除最近的資料。然而，若要讓存放庫效能最佳化，建議設定較低的值。
 
@@ -262,12 +262,12 @@ OSGi 屬性：
 
 #### 稽核記錄 {#mt-auditlogs}
 
-* **新環境*- （建立於即將來臨的日期之後，將另行通訊）：
-   * 將定期刪除早於**7天* — 的復寫、DAM和頁面稽核記錄。
+* **新的環境* (建立於即將到來的日期之後，該日期將另行通知)：
+   * 已存在超過 **7 天*&#x200B;的複寫、DAM 和頁面稽核記錄會定期被刪除。
    * 預設情況下會記錄所有事件。
 
-* **現有環境*- （在此即將到來的日期之前建立）：
-   * 將定期刪除超過**7年* — 的復寫、DAM和頁面稽核記錄。
+* **現有環境* (建立於此即將到來的日期之前)：
+   * 已存在超過 **7 年*&#x200B;的複寫、DAM 和頁面稽核記錄會定期被刪除。
    * 預設情況下會記錄所有事件。
    * 此較高的預設臨界值能防止意外移除最近的資料。然而，若要讓存放庫效能最佳化，建議設定較低的值。
 
@@ -285,8 +285,8 @@ OSGi 屬性：
 * 根據地理位置、裝置類型或使用者屬性，將內容個人化
 * 做為 CDN 和您來源之間的中介軟體
 * 將第三方 API 的回應傳送至瀏覽器之前，先對其進行重新格式化 (且可能彙總多個 API 的回應)
-* 使用從各個後端拼接的內容，在邊緣編寫並提供伺服器轉譯的 HTML
-* 公開ChatGPT和Claude等LLM的MCP伺服器，以存取自訂工具
+* 使用從各個後端拼接而成的內容，在邊緣編寫及提供伺服器轉譯的 HTML
+* 開放 MCP 伺服器供 ChatGPT 和 Claude 等 LLM 存取自訂工具
 
 我們針對正式生產網站提供數量有限的 AEM Publish Delivery 或 Edge Delivery Services 專案機會。若您有興趣參與，或想了解更多相關資訊，請傳送電子郵件至 [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com)，並簡要描述您的使用案例。
 
@@ -294,19 +294,19 @@ OSGi 屬性：
 
 Adobe 管理之 CDN 提供靈活的設定選項，如[設定管道文章](/help/operations/config-pipeline.md#configurations)中所述。
 
-現在在Beta版中，為功能部署設定管道，包括CDN來源選擇器、回應和請求轉換、CDN記錄轉送等。 請聯絡 [aemcs-cdn-config-adopter@adobe.com](mailto:aemcs-cdn-config-adopter@adobe.com) 並提供您使用案例的詳細資訊。
+這是現在處於測試階段的功能，可針對內容傳遞網路來源選擇器、回應和請求轉換、內容傳遞網路記錄轉寄等功能部署設定管道。請聯絡 [aemcs-cdn-config-adopter@adobe.com](mailto:aemcs-cdn-config-adopter@adobe.com) 並提供您使用案例的詳細資訊。
 
-### RDE快照(Alpha計畫) {#rde-snapshot-beta}
+### RDE 快照 (Alpha 方案) {#rde-snapshot-beta}
 
-在Alpha中，快速開發環境(RDE)現在支援一項功能，可拍攝程式碼和內容的目前狀態快照，以便稍後復原。 同步可能需要還原的程式碼時，或在開發不同功能之間切換時，這可能很有用。 也可以只將可變內容還原為已知的測試起點。
+在 Alpha 版本中，快速開發環境 (RDE) 現在支援對程式碼和內容的目前狀態進行快照的功能，這些快照可以在之後還原。在同步可能需要復原的程式碼，或在不同功能的開發之間切換時，此功能很實用。您也可以僅還原可變內容做為測試的已知起點。
 
-如果您有興趣提供此功能的意見回饋，請傳送電子郵件給[aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com)。
+如果您有興趣對此功能提供意見，請寄送電子郵件至 [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com)。
 
 ### AEM 記錄轉送至更多目標 (Beta 版計劃) {#log-forwarding-beta}
 
 雖然可以從 Cloud Manager 下載記錄，但許多組織發現將這些記錄串流至偏好的記錄目標是很有幫助的。AEM 已支援將 AEM 和 CDN 記錄轉送至 Azure Blob 儲存體、Datadog、HTTPS、Elasticsearch (和 OpenSearch) 以及 Splunk。此功能是以自助方式設定，並透過設定管道進行部署。
 
-現在處於Beta版，您可以將AEM記錄轉送至Amazon S3、Sumo Logic、Dynatrace和您自己的New Relic帳戶(非Adobe提供的帳戶)。 請注意，這些記錄目標支援 AEM 記錄 (包括 Apache/Dispatcher)，但不支援 CDN 記錄。傳送電子郵件至 [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)，獲得存取權。
+此功能現在處於測試階段，您可以將 AEM 記錄轉寄至 Amazon S3、Sumo Logic、Dynatrace 和您自己的 New Relic 帳戶 (非 Adobe 提供的帳戶)。請注意，這些記錄目標支援 AEM 記錄 (包括 Apache/Dispatcher)，但不支援 CDN 記錄。傳送電子郵件至 [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)，獲得存取權。
 
 如欲了解更多相關資訊，請參閱[記錄轉送文件](/help/implementing/developing/introduction/log-forwarding.md)。
 
