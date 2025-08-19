@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.4.0 版�
 feature: Release Information
 role: Admin
 exl-id: 48e09824-5c67-49d8-8896-358d679649fc
-source-git-commit: c8391e09b7e2888423187f48360423c52b18fe0a
+source-git-commit: 0664e5dc4a7619a52cd28c171a44ba02c592ea3d
 workflow-type: tm+mt
 source-wordcount: '1828'
-ht-degree: 91%
+ht-degree: 97%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 91%
 
 請觀看 2025 年 4 月發行概觀影片，以了解 2025.4.0 版本新增功能摘要：
 
->[!VIDEO](https://video.tv.adobe.com/v/3464013?quality=12&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3463991?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -86,7 +86,7 @@ AEM as a Cloud Service 上的 Dynamic Media (Scene7) 不符合 HIPAA 標準，�
 
 ### 搶鮮版功能
 
-* [最適化Forms和表單片段的通用編輯器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)：該通用編輯器現在支援建立最適化Forms和可重複使用的表單片段。 作者能以視覺化方式建立表單、設定提交動作及新增reCAPTCHA驗證，這一切都可在簡化的WYSIWYG製作環境中完成。 此功能可加快表單建立、增強一致性，並改善防範垃圾郵件和自動濫用的防護功能。
+* [自適應表單和表單片段的通用編輯器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)：通用編輯器現在支援建立自適應表單和可重複使用的表單片段。作者可以在簡化的所見即所得製作環境中視覺化地建置表單、設定提交動作，並新增 reCAPTCHA 驗證。此功能可加速表單建立、增強一致性，並改善對垃圾郵件和自動化濫用的防護。
 
 * [SharePoint 文件庫：以原始檔案名稱儲存附件](/help/forms/connect-forms-to-sharepoint-document-library.md#connect-an-adaptive-form-to-microsoft-sharepoint-document-library)：您現在將表單附件儲存於 SharePoint 文件庫中時，可以選擇使用其原始檔案名稱。此增強功能可以簡化上傳之檔案的識別和管理。
 
@@ -105,15 +105,15 @@ AEM Forms 搶先體驗計劃為您提供獨一無二的機會，獲得先進創�
 
 #### Adobe Experience Platform (AEP) 與 Forms 的整合
 
-* [整合AEM Forms與Adobe Experience Platform](/help/forms/aem-forms-aep-connector.md)： AEM Forms到Adobe Experience Platform聯結器可讓您順暢整合最適化Forms和Adobe Experience Platform。 此功能可將表單資料對應至XDM結構描述，並即時直接提交至AEP。 它可簡化跨Adobe Experience Cloud解決方案個人化和啟用使用案例的資料擷取。
+* [AEM Forms 與 Adobe Experience Platform 的整合](/help/forms/aem-forms-aep-connector.md)：AEM Forms 至 Adobe Experience Platform 連接器可實現自適應表單和 Adobe Experience Platform 之間的緊密整合。此功能可讓表單資料對應至 XDM 結構描述，並即時直接提交至 AEP。它簡化了 Adobe Experience Cloud 解決方案中個人化和啟用使用案例的資料擷取。
 
 ## CIF 附加元件 {#cloud-services-cif}
 
 ### 增強功能 {#enhancements-cif}
 
 * 新增 CIF 產品參考資料類型的產品變體選擇
-* **實驗性**： PDP中CIF核心元件的[JSON+LD](/help/commerce-cloud/customizing/json-ld.md)
-* **實驗性**： [CIF清除快取的能力](/help/commerce-cloud/configuring/clear-cache.md)
+* **實驗性**： PDP中CIF核心元件的[JSON+LD](/help/commerce-cloud/cif-storefront/customizing/json-ld.md)
+* **實驗性**： [CIF清除快取的能力](/help/commerce-cloud/cif-storefront/configuring/clear-cache.md)
 
 ### 錯誤修正 {#bug-fixes-cif}
 
