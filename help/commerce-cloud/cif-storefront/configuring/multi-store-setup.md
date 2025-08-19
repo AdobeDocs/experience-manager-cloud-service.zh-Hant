@@ -42,7 +42,7 @@ Adobe Experience Manager (AEM) CIF核心元件可用於多個AEM網站結構，�
 
 1. 依照下列步驟建立CIF Cloud Service設定的子設定：
 
-   * 在AEM中，移至[工具] > [一般] > [設定瀏覽器]。[](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
+   * 在AEM中，移至[工具] > [一般] > [設定瀏覽器]。[&#128279;](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
    * 選取您建立的基礎組態。
    * 使用上述第2點所述的步驟建立設定。
 

@@ -37,7 +37,7 @@ CIF附加元件以Sling功能封存的形式提供。 軟體發佈入口網站�
 >[!TIP]
 >
 >**剛開始使用AEM as a Cloud Service？**
->>檢視[使用AEM as a Cloud Service SDK設定本機開發環境的詳細指南。](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
+>&#x200B;>檢視[使用AEM as a Cloud Service SDK設定本機開發環境的詳細指南。](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
 
 ### 必要的軟體 {#required-software}
 
