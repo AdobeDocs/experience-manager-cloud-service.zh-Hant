@@ -21,7 +21,7 @@ Adobe Commerce的Live Search提供快速、相關且直覺的搜尋體驗，不�
 
 ## 先決條件 {#prerequisites}
 
-本主題假設您已設定本機[AEM環境](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)。
+本主題假設您已設定本機[AEM環境](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=zh-Hant)。
 
 PLP元件需要安裝[[!DNL Live Search] Popover CIF元件](/help/commerce-cloud/cif-storefront/integrating/live-search-popover.md)。 PLP Widget需要由彈出視窗產生的瀏覽器工作階段變數。
 

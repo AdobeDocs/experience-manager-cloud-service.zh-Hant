@@ -258,5 +258,5 @@ CIF URL Provider的某些功能只有在使用產品URL格式時才能使用，�
 ## 其他資源 {#additional}
 
 * [Venia參考存放區](https://github.com/adobe/aem-cif-guides-venia)
-* [AEM資源對應](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/configuring/resource-mapping)
+* [AEM資源對應](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/implementing/deploying/configuring/resource-mapping)
 * [Sling對應](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)

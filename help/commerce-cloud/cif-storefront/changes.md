@@ -46,7 +46,7 @@ AEM CIF附加元件是透過Cloud Manager安裝。 安裝需要CIF點數，但�
 ### 舊版CIF {#previous-versions-venia}
 
 * CIF Classic：透過AEM套件安裝
-* CIF開放原始碼：透過[Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)
+* CIF開放原始碼：透過[Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=zh-Hant)
 
 ## 產品目錄資料 {#product-catalog-data}
 

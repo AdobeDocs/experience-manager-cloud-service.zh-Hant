@@ -60,7 +60,7 @@ venia/components/structure/navigation:true:10:600
 
 除了純AEM管理的內容CIF之外，頁面通常也可以顯示透過GraphQL從Adobe Commerce動態擷取的商務資料。 雖然頁面結構本身可能不會變更，但商務內容可能會變更。 例如，如果產品資料（例如名稱和價格）在Adobe Commerce中變更。
 
-為了確保在CIF Dispatcher中快取AEM頁面的時間有限，Adobe建議在AEM Dispatcher中快取CIF頁面時使用[時間型快取失效](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-time-based-cache-invalidation-enablettl) （稱為TTL型快取）。 可在AEM中使用額外的[ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)套件設定此功能。
+為了確保在CIF Dispatcher中快取AEM頁面的時間有限，Adobe建議在AEM Dispatcher中快取CIF頁面時使用[時間型快取失效](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-time-based-cache-invalidation-enablettl) （稱為TTL型快取）。 可在AEM中使用額外的[ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)套件設定此功能。
 
 透過TTL型快取，開發人員通常會為選取的AEM頁面定義一或多個快取持續時間。 此持續時間可確保在AEM Dispatcher中僅快取CIF頁面，直到設定的持續時間為止，並且經常更新內容。
 
