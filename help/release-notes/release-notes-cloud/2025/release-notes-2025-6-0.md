@@ -37,7 +37,7 @@ ht-degree: 99%
 
 請觀看 2025 年 6 月發行概觀影片，了解 2025.6.0 版本新增功能摘要：
 
->[!VIDEO](https://video.tv.adobe.com/v/3470878?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3470889?quality=12&captions=chi_hant)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
