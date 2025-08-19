@@ -37,7 +37,7 @@ ht-degree: 97%
 
 請觀看 2025 年 4 月發行概觀影片，以了解 2025.4.0 版本新增功能摘要：
 
->[!VIDEO](https://video.tv.adobe.com/v/3463991?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3464013?quality=12&captions=chi_hant)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
