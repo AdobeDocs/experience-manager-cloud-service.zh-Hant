@@ -134,7 +134,7 @@ AEM Assets 現在可讓您在[資產瀏覽頁面上設定用卡片視圖或清�
 
 * **受限制檔案型別的增強錯誤處理**
 
-  [現在支援受限制的檔案型別](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#validation-tab)的錯誤處理，這會封鎖不支援的檔案上傳。 當使用者嘗試透過將檔案型別變更為不支援的格式來提交檔案時，表單在提交期間會擲回錯誤。
+  [現在支援受限制的檔案型別](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#validation-tab)的錯誤處理，這會封鎖不支援的檔案上傳。 當使用者嘗試透過將檔案型別變更為不支援的格式來提交檔案時，表單在提交期間會擲回錯誤。
 
 
 <!--
