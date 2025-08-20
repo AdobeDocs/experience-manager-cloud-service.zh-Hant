@@ -308,7 +308,7 @@ ht-degree: 4%
 
 1. **開啟通用編輯器**：
    - 導覽至AEM Sites主控台，選取您的頁面，按一下&#x200B;**編輯**
-   - 確定您已正確設定[通用編輯器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html)
+   - 確定您已正確設定[通用編輯器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=zh-Hant)
 
 2. **依此順序新增表單元件**：
    - 標題(H2)：「稅捐計算表單」
@@ -676,7 +676,7 @@ Forms成為資料收集、潛在客戶資格和使用者參與的強大工具。
 
 **其他資源**：
 
-- [通用編輯器檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html)，用於更廣泛的內容
+- [通用編輯器檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=zh-Hant)，用於更廣泛的內容
 - [Extension Manager指南](/help/implementing/developing/extending/extension-manager.md)啟用其他功能
 - [Edge Delivery Services表單](/help/edge/docs/forms/overview.md)，以取得完整的表單開發指引
 
