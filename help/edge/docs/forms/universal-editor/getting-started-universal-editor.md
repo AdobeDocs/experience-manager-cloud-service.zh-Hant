@@ -186,7 +186,7 @@ AEM Code Sync 會自動同步您的 AEM 製作環境和 GitHub 存放庫之間�
 
     >[！NOTE]
     >
->有建置問題嗎？請參閱[疑難排解 GitHub 建置問題](#troubleshooting-github-build-issues)
+    >有建置問題嗎？請參閱[疑難排解 GitHub 建置問題](#troubleshooting-github-build-issues)
 
 +++
 
@@ -310,7 +310,7 @@ AEM Code Sync 會自動同步您的 AEM 製作環境和 GitHub 存放庫之間�
 > - **首頁：**`https://<branch>--<repo>--<owner>.aem.page/content/<site-name>/`
 > - **其他頁面：**`https://<branch>--<repo>--<owner>.aem.page/content/<site-name>/<page-name>`
 
-**下一步：**[建立第一份表單](#create-your-first-form)
+**下一步：**&#x200B;[建立第一份表單](#create-your-first-form)
 
 +++
 
@@ -498,7 +498,7 @@ AEM Code Sync 會自動同步您的 AEM 製作環境和 GitHub 存放庫之間�
 
 +++
 
-**下一步：**[建立第一份表單](#create-your-first-form)
+**下一步：**&#x200B;[建立第一份表單](#create-your-first-form)
 
 ## 建立第一份表單
 
@@ -653,7 +653,7 @@ AEM Code Sync 會自動同步您的 AEM 製作環境和 GitHub 存放庫之間�
 
 >[!TIP]
 >
-> **了解更多：**[在通用編輯器中建立獨立表單](/help/edge/docs/forms/universal-editor/create-forms.md)
+> **了解更多：**&#x200B;[在通用編輯器中建立獨立表單](/help/edge/docs/forms/universal-editor/create-forms.md)
 
 ## 設定本機開發環境
 

@@ -51,8 +51,8 @@ ht-degree: 87%
 此流程包括三個主要階段：
 
 - **階段1：** [表單建立](#step-1-form-creation)
-- **第二階段：**[表單製作與設計](#step-2-form-authoring-and-design)
-- **第三階段：**[設定與發佈](#step-3-configuration-and-publishing)
+- **第二階段：**&#x200B;[表單製作與設計](#step-2-form-authoring-and-design)
+- **第三階段：**&#x200B;[設定與發佈](#step-3-configuration-and-publishing)
 
 每個階段都包括確認設定是否正確的驗證步驟。
 
