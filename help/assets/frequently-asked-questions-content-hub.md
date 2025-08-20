@@ -3,9 +3,9 @@ title: Content Hub 常見問題 (FAQ)
 description: 了解一些 Content Hub 最常見問題 (FAQ) 的答案。
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
 source-git-commit: 4125f6d99c1c1d63b9234d66dc552695bd30e7bc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1669'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -84,7 +84,7 @@ Content Hub 目前尚不適用於非生產環境 (中繼和開發)。Assets Ulti
    >
    >在兩個 Admin Console 中都指派至 Express 和 Assets 產品設定檔的使用者必須具有相同的電子郵件地址，並使用&#x200B;**企業或學校**&#x200B;帳戶，而不是&#x200B;**個人**&#x200B;帳戶。理想的設定是將兩個 Admin Consoles 都設定為 **Federated ID**，並在它們之間建立信任關係，讓使用者擁有順暢的單一登入體驗。有些 Express 計劃 (例如 Express 團隊版) 不支援 Federated ID/單一登入。
 
-除了正確的產品權益外，Content Hub 中的 Adobe Express 整合還會要求被指派的使用者至少對支援 Content Hub 的 Assets 製作環境擁有「[!UICONTROL 可以編輯]」權限，並且至少在 **[!UICONTROL # /content/dam/hydrated-assets/]** 資料夾階層中擁有該權限，以便 Content Hub 使用者在其中儲存使用 Express 製作的內容。請參閱「管理員」檢視 (觸控式 UI) 中的[權限管理](/help/security/touch-ui-principal-view.md)或[「資產」檢視中簡化的權限管理](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions)。
+除了正確的產品權益外，Content Hub 中的 Adobe Express 整合還會要求被指派的使用者至少對支援 Content Hub 的 Assets 製作環境擁有「[!UICONTROL 可以編輯]」權限，並且至少在 **[#UICONTROL /content/dam/hydrated-assets/]** 資料夾階層中擁有該權限，以便 Content Hub 使用者在其中儲存使用 Express 製作的內容。請參閱「管理員」檢視 (觸控式 UI) 中的[權限管理](/help/security/touch-ui-principal-view.md)或[「資產」檢視中簡化的權限管理](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions)。
 
 ## 我可以設定 Content Hub，以便本組織的品牌指導方針在首頁上顯示為連結嗎？ {#content-hub-setup-brand-guidelines}
 
@@ -135,28 +135,28 @@ Adobe 提供從 Brand Portal 到 Content Hub 的遷移支援，您可以透過�
 |  | 語意搜尋 | ✓ | − |
 |  | 本地化搜尋和後設資料顯示 | ✓ | − |
 
-## 如何選取存放庫以僅檢視所選環境的資產？ {#select-repository-multiple-environments}
+## 如何選取一個存放庫來檢視僅限所選取環境的資產？ {#select-repository-multiple-environments}
 
-當您針對相同計畫為生產和其他較低環境設定Content Hub時，您可以選取存放庫並顯示所選環境的資產。 執行以下步驟：
+當您設定 Content Hub 供生產環境使用及設定其他較低階環境供相同方案使用時，可以選取存放庫並顯示所選取環境的資產。執行以下步驟：
 
-1. 按一下右窗格中的使用者圖示。
+1. 按一下右側窗格中的使用者圖示。
 
-1. 在&#x200B;**[!UICONTROL 產品設定]**&#x200B;區段中，選取&#x200B;**[!UICONTROL 選取存放庫]**。
+1. 在「**[!UICONTROL 產品設定]**」區段，選取「**[!UICONTROL 選取存放庫]**」。
 
-1. 從&#x200B;**[!UICONTROL 存放庫]**&#x200B;下拉式功能表中選取存放庫，然後按一下&#x200B;**[!UICONTROL 確定]**&#x200B;確認。
+1. 從「**[!UICONTROL 存放庫]**」下拉式選單中選取存放庫並按一下「**[!UICONTROL 確定]**」確認。
 
-   Content Hub現在會顯示所選環境的資產。
+   Content Hub 現在顯示所選取環境的資產。
 
-## Content Hub如何顯示.ZIP檔案型別的縮圖預覽？ {#thumbnail-preview-zip-file}
+## Content Hub 如何顯示 .ZIP 檔案類型的縮圖預覽？ {#thumbnail-preview-zip-file}
 
-若要在Content Hub中提供.ZIP等fie型別的縮圖預覽，您可以將名稱為`cq5dam.preview.jpg`或`cq5dam.preview.png`的轉譯新增至AEM as a Cloud Service製作環境中可用.ZIP的路徑根目錄。
+若要在 Content Hub 中為 .ZIP 等檔案類型提供縮圖預覽，您可以新增名為 `cq5dam.preview.jpg` 或者 `cq5dam.preview.png` 的轉譯到路徑的根目錄，在那裡的 AEM as a Cloud Service 製作環境中可用 .ZIP。
 
-您新增為轉譯的影像：
+您新增的作為轉譯的影像：
 
-* 可以是JPG、JPEG或PNG格式。
+* 可以是 JPG、JPEG 或 PNG 格式。
 
-* 必須小於50MB
+* 必須小於 50MB
 
-可用時，Content Hub會將影像顯示為Content Hub上.ZIP檔案的預覽縮圖。
+可用時，Content Hub 上 .ZIP 檔案的預覽縮圖便會顯示該影像。
 
 

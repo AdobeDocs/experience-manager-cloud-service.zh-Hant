@@ -7,9 +7,9 @@ hide: true
 hidefromtoc: true
 exl-id: 5cfe23bb-155f-4639-b7b7-5edc172ba92a
 source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '193'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -70,13 +70,13 @@ ht-degree: 94%
 驗證格式為 YYYY-MM-DD 的日期。
 
 
-## 時間(HH:MM)
+## 時間 (HH:MM)
 
 ```regex
 ^([01][0-9]|2[0-3]):[0-5][0-9]$
 ```
 
-以HH:MM格式（24小時格式）驗證時間。
+驗證時間格式為 HH:MM (24 小時格式)。
 
 
 ## 郵遞區號 (美國格式)
