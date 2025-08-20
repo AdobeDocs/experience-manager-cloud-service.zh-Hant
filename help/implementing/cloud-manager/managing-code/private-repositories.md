@@ -4,10 +4,10 @@ description: 了解如何設定 Cloud Manager 與您自己的私人 GitHub 存�
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
+source-git-commit: 45645a963c42f1335ff2019ffe2aa516ee084a9f
 workflow-type: tm+mt
-source-wordcount: '968'
-ht-degree: 34%
+source-wordcount: '989'
+ht-degree: 33%
 
 ---
 
@@ -162,3 +162,4 @@ Cloud Manager 現在知道您的 GitHub 存放庫，但仍然需要存取它。�
 * [成品重複使用功能](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse)不適用於私人存放庫。
 * 您無法使用Cloud Manager的GitHub檢查來暫停提取請求驗證。
 如果已在Cloud Manager中驗證GitHub存放庫，Cloud Manager會一律嘗試驗證為該存放庫建立的提取請求。
+* 如果GitHub組織有IP限制，請建立支援案例以接收允許的IP位址清單。
