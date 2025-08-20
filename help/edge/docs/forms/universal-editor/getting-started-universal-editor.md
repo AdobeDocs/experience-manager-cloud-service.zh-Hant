@@ -1,6 +1,6 @@
 ---
-title: 使用通用編輯器的AEM Forms適用的Edge Delivery Services快速入門
-description: 瞭解如何使用Edge Delivery Services搭配Universal Editor的WYSIWYG撰寫功能來建立和發佈高效能表單。
+title: 使用通用編輯器開始使用 AEM Forms 適用的 Edge Delivery Services
+description: 了解如何使用通用編輯器的 WYSIWYG 製作功能來建立和發佈使用 Edge Delivery Services 的高效能表單。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
@@ -8,54 +8,54 @@ exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
 source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '2609'
-ht-degree: 1%
+ht-degree: 68%
 
 ---
 
 
-# 使用通用編輯器的AEM Forms適用的Edge Delivery Services快速入門
+# 使用通用編輯器開始使用 AEM Forms 適用的 Edge Delivery Services
 
 | 製作方法 | 指南 |
 |---------------------------------|-----------------------------------------------------------------------|
 | **通用編輯器 (WYSIWYG)** | 本文章 |
-| **文件型編寫** | [以檔案為基礎的教學課程](/help/edge/docs/forms/tutorial.md) |
+| **文件型製作** | [文件型教學課程](/help/edge/docs/forms/tutorial.md) |
 
-適用於AEM Forms的Edge Delivery Services結合高效能Web傳遞與Universal Editor中的WYSIWYG製作。 本指南涵蓋建立、自訂和發佈快速載入的表單。
+AEM Forms 適用的 Edge Delivery Services 將高效能網頁傳遞與通用編輯器中的 WYSIWYG 製作功能結合。本指南說明建立、自訂和發佈快速載入表單。
 
-## 您將會達成的目標
+## 您會學到什麼
 
-在本教學課程結束時，您將：
+完成本教學課程後，您將能夠：
 
-- 使用最適化Forms區塊設定GitHub存放庫
-- 建立與Edge Delivery Services整合的AEM網站
+- 使用自適應表單區塊設定 GitHub 存放庫
+- 建立與 Edge Delivery Services 整合的 AEM 網站
 - 使用通用編輯器建置和發佈表單
 - 設定本機開發環境
 
 ## 選擇您的路徑
 
-選取符合您情境的方法：
+根據您的情境選取方法：
 
-![選擇您的路徑決定指南](/help/edge/docs/forms/universal-editor/assets/choose-your-path.svg)
-*圖：協助您選擇正確實作路徑的視覺化指南*
+![選擇您的路徑決策指南](/help/edge/docs/forms/universal-editor/assets/choose-your-path.svg)
+*圖：幫助您選擇正確實施路徑的視覺化指南*
 
-| **路徑A：新專案** | **路徑B：現有的專案** |
+| **路徑 A：新專案** | **路徑 B：現有專案** |
 |----------------------------------------|-------------------------------------------|
-| 從預先設定的範本開始 | 新增表單至您目前的AEM專案 |
-| **最適合：**&#x200B;個新實作 | **最適合：**&#x200B;現有AEM Sites |
-| **您的收藏：**&#x200B;預先設定的Forms區塊 | **您獲得的：** Forms已新增至現有網站 |
-| **步驟：**&#x200B;設定Forms→範本→ | **步驟：**&#x200B;整合→設定→Forms |
-| [以路徑A](#path-a-create-new-project-with-forms)開始 | [以路徑B](#path-b-add-forms-to-existing-project)開始 |
+| 從預先設定的範本開始 | 將表單新增至目前的 AEM 專案 |
+| **最適合：**&#x200B;新實施 | **最適合：**&#x200B;現有 AEM Sites |
+| **您會得到：**&#x200B;預先設定的表單區塊 | **您會得到：**&#x200B;表單已新增至現有網站 |
+| **步驟：**&#x200B;範本 → 設定 → 表單 | **步驟：**&#x200B;整合 → 設定 → 表單 |
+| [從路徑 A 開始](#path-a-create-new-project-with-forms) | [從路徑 B 開始](#path-b-add-forms-to-existing-project) |
 
 ## 先決條件
 
 為確保使用通用編輯器在AEM Forms中能順暢而成功地使用Edge Delivery Services，在繼續之前，請檢閱並確認下列必要條件：
 
-### 存取需求
+### 存取要求
 
 - **GitHub帳戶**：您必須擁有有權建立新存放庫的GitHub帳戶。 這對於管理您的專案原始程式碼以及與團隊合作至關重要。
 - **AEM as a Cloud Service編寫存取權**：請確定您擁有AEM as a Cloud Service環境的作者層級存取權。 建立、編輯和發佈表單需要此存取權。
 
-### 技術需求
+### 技術要求
 
 - **熟悉Git**：您應該已熟悉如何執行基本的Git作業，例如複製存放庫、提交變更和推送更新。 這些技能是原始檔控制和專案共同作業的基礎。
 - **瞭解Web技術**：建議您先瞭解HTML、CSS和JavaScript等實用知識。 這些技術構成了表單自訂和疑難排解的基礎。
@@ -70,7 +70,7 @@ ht-degree: 1%
 
 >[!TIP]
 >
-> 不熟悉AEM？ 從[AEM Sites快速入門手冊](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/quick-start.html?lang=zh-Hant)開始。
+> 初次使用 AEM？從 [AEM Sites 快速入門手冊](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/sites/authoring/quick-start)開始。
 
 ## 路徑A：使用Forms建立新專案
 
@@ -92,68 +92,68 @@ ht-degree: 1%
 
 +++步驟1：從範本建立GitHub存放庫
 
-1. **存取AEM Forms範本**
-   - 移至[https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms)
+1. **存取 AEM Forms 樣板專案範本**
+   - 前往 [https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms)
 
-   ![AEM Forms樣板範本](/help/edge/docs/forms/assets/eds-form-boilerplate.png)
-   *圖：具有預先設定的最適化Forms區塊的AEM Forms樣板存放庫*
+   ![AEM Forms 樣板專案範本](/help/edge/docs/forms/assets/eds-form-boilerplate.png)
+   *圖：含有預先設定的自適應表單區塊的 AEM Forms 樣板專案存放庫*
 
 2. **建立您的存放庫**
-   - 按一下&#x200B;**使用此範本** > **建立新的存放庫**
+   - 按一下「**使用此範本**」>「**建立新存放庫**」。
 
-   ![從範本建立存放庫](/help/edge/docs/forms/assets/use-eds-form-template.png)
+   ![使用範本建立存放庫](/help/edge/docs/forms/assets/use-eds-form-template.png)
    *圖：使用範本建立新的存放庫*
 
-3. **設定存放庫設定**
-   - **所有者**：選取您的GitHub帳戶或組織
-   - **存放庫名稱**：選擇描述性名稱（例如，`my-forms-project`）
-   - **可見度**：選取&#x200B;**公用** (建議用於Edge Delivery Services)
-   - 按一下&#x200B;**建立存放庫**
+3. **設定存放庫**
+   - **所有者**：選取您的 GitHub 帳戶或組織
+   - **存放庫名稱**：選擇一個說明性名稱 (例如 `my-forms-project`)
+   - **可見度**：選取「**公開**」(Edge Delivery Services 建議使用)
+   - 按一下「**建立存放庫**」
 
-   ![存放庫組態](/help/edge/docs/forms/assets/name-eds-repo.png)
-   *圖：正在設定您的新存放庫公開可見度*
+   ![存放庫設定](/help/edge/docs/forms/assets/name-eds-repo.png)
+   *圖：將新存放庫的可見度設為公開*
 
-**驗證：**&#x200B;確認您擁有以AEM Forms Boilerplate範本為基礎的新GitHub存放庫。
+**驗證：**&#x200B;確認您擁有以 AEM Forms 樣板專案範本為基礎的新 GitHub 存放庫。
 
 +++
 
 +++步驟2：安裝AEM程式碼同步
 
-AEM程式碼同步會自動同步AEM製作環境與GitHub存放庫之間的內容變更。
+AEM Code Sync 會自動同步您的 AEM 製作環境和 GitHub 存放庫之間的內容變更。
 
-1. **安裝GitHub應用程式**
-   - 移至[https://github.com/apps/aem-code-sync/installations/new](https://github.com/apps/aem-code-sync/installations/new)
+1. **安裝 GitHub 應用程式**
+   - 前往 [https://github.com/apps/aem-code-sync/installations/new](https://github.com/apps/aem-code-sync/installations/new)
 
-2. **設定存取許可權**
-   - 選取&#x200B;**僅選取存放庫**
+2. **設定存取權限**
+   - 選取「**僅選取存放庫**」
    - 選擇您新建立的存放庫
-   - 按一下&#x200B;**儲存**
+   - 按一下「**儲存**」
 
-   ![AEM程式碼同步安裝](/help/edge/docs/forms/assets/aem-code-sync-up.png)
-   *圖：正在安裝AEM程式碼同步，並具有存放庫特定的許可權*
+   ![安裝 AEM Code Sync](/help/edge/docs/forms/assets/aem-code-sync-up.png)
+   *圖：安裝 AEM Code Sync 並有特定存放庫的權限*
 
-**檢查點：** AEM程式碼同步現已安裝，而且可以存取您的存放庫。
+**查核點：** AEM Code Sync 現已安裝並可存取您的存放庫。
 
 +++
 
 +++步驟3：設定AEM整合
 
-`fstab.yaml`檔案會將您的GitHub存放庫連線至AEM製作環境，以進行內容同步。
+`fstab.yaml`檔案將您的 GitHub 存放庫連接到 AEM 製作環境以進行內容同步。
 
-1. **瀏覽至您的存放庫**
-   - 前往您新建立的GitHub存放庫
-   - 您應該會看到AEM Forms樣板檔案
+1. **導覽到您的存放庫**
+   - 前往新建立的 GitHub 存放庫
+   - 您應該會看到 AEM Forms 樣板專案檔案
 
-2. **建立fstab.yaml檔案**
-   - 按一下根目錄中的&#x200B;**新增檔案** > **建立新檔案**
-   - 為檔案命名`fstab.yaml`
+2. **建立 fstab.yaml 檔案**
+   - 在根目錄中按一下「**新增檔案**」>「**建立新檔案**」
+   - 將檔案命名為 `fstab.yaml`
 
-   ![正在建立fstab.yaml檔案](/help/edge/docs/forms/assets/open-fstab.png)
-   *圖：正在建立fstab.yaml組態檔*
+   ![建立 fstab.yaml 檔案](/help/edge/docs/forms/assets/open-fstab.png)
+   *圖：建立 fstab.yaml 設定檔案*
 
-3. **新增您的AEM連線詳細資料**
+3. **新增您的 AEM 連線詳細資訊**
 
-   複製並貼上下列設定，取代預留位置：
+   複製貼上以下設定，取代預留位置：
 
    ```yaml
    mountpoints:
@@ -161,8 +161,8 @@ AEM程式碼同步會自動同步AEM製作環境與GitHub存放庫之間的內�
    ```
 
    **取代：**
-   - `<aem-author>`：您的AEM as a Cloud Service作者URL （例如，`author-p12345-e67890.adobeaemcloud.com`）
-   - `<owner>`：您的GitHub使用者名稱或組織
+   - `<aem-author>`：您的 AEM as a Cloud Service 作者 URL (例如 `author-p12345-e67890.adobeaemcloud.com`)
+   - `<owner>`：您的 GitHub 使用者名稱或組織
    - `<repository>`：您的存放庫名稱
 
    **範例：**
@@ -172,52 +172,52 @@ AEM程式碼同步會自動同步AEM製作環境與GitHub存放庫之間的內�
      /: https://author-p12345-e67890.adobeaemcloud.com/bin/franklin.delivery/mycompany/my-forms-project/main
    ```
 
-   ![正在編輯fstab.yaml檔案](/help/edge/docs/forms/assets/edit-fstab-file.png)
-   *圖：設定AEM整合的掛接點*
+   ![編輯 fstab.yaml 檔案](/help/edge/docs/forms/assets/edit-fstab-file.png)
+   *圖：設定 AEM 整合的掛載點*
 
-4. **認可組態**
-   - 新增認可訊息：「新增AEM整合設定」
-   - 按一下&#x200B;**認可新檔案**
+4. **認可設定**
+   - 新增認可訊息：「新增 AEM 整合設定」
+   - 按一下「**認可新檔案**」。
 
-   ![認可fstab變更](/help/edge/docs/forms/assets/commit-fstab-changes.png)
-   *圖：認可fstab.yaml設定*
+   ![認可 fstab 變更](/help/edge/docs/forms/assets/commit-fstab-changes.png)
+   *圖：認可 fstab.yaml 設定*
 
-**驗證：**&#x200B;確認您的GitHub存放庫連線至AEM。
+**驗證：**&#x200B;確認您的 GitHub 存放庫與 AEM 的連線。
 
     >[！NOTE]
     >
-    >發生建置問題？ 請參閱[疑難排解GitHub組建問題](#troubleshooting-github-build-issues)。
+>有建置問題嗎？請參閱[疑難排解 GitHub 建置問題](#troubleshooting-github-build-issues)
 
 +++
 
 +++步驟4：建立連線至您GitHub存放庫的AEM網站。
 
-1. **存取AEM Sites主控台**
-   - 登入您的AEM as a Cloud Service編寫執行個體
-   - 瀏覽至&#x200B;**網站**
+1. **存取 AEM Sites 控制台**
+   - 登入您的 AEM as a Cloud Service 製作實例。
+   - 導覽至「**Sites**」
 
-   ![AEM Sites主控台](/help/edge/assets/select-sites.png)
-   *圖：存取AEM Sites主控台*
+   ![AEM Sites 控制台](/help/edge/assets/select-sites.png)
+   *圖：存取 AEM Sites 控制台*
 
 2. **開始建立網站**
-   - 按一下&#x200B;**建立** > **從範本建立網站**
+   - 按一下「**建立**」>「**使用範本建立網站**」。
 
    ![建立網站選項](/help/edge/docs/forms/assets/create-sites.png)
-   *圖：從範本*&#x200B;建立新網站
+   *圖：使用範本建立新網站*
 
-3. **選取Edge Delivery Services範本**
-   - 選擇&#x200B;**Edge Delivery Services網站**&#x200B;範本
-   - 按一下&#x200B;**下一步**
+3. **選取 Edge Delivery Services 範本**
+   - 選擇 **Edge Delivery Services 網站**&#x200B;範本
+   - 按一下「**下一步**」。
 
-   ![網站範本選取專案](/help/edge/docs/forms/assets/select-site-template.png)
-   *圖：選取Edge Delivery Services網站範本*
+   ![網站範本選取](/help/edge/docs/forms/assets/select-site-template.png)
+   *圖：選取 Edge Delivery Services 網站範本*
 
    >[!NOTE]
    >
-   >**範本無法使用？**&#x200B;如果您沒有看到Edge Delivery Services範本：
+   >**範本無法使用？** 如果您沒有看到 Edge Delivery Services 範本：
    >
-   >1. 按一下&#x200B;**匯入**&#x200B;以上傳範本
-   >2. 從[GitHub版本](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases)下載範本
+   >1. 請按一下「**匯入**」來上傳範本
+   >2. 從 [GitHub 發行版本](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases)下載範本
 
 4. **設定您的網站**
 
@@ -225,75 +225,75 @@ AEM程式碼同步會自動同步AEM製作環境與GitHub存放庫之間的內�
 
    | 欄位 | 值 | 範例 |
    |-----------------|-----------------------------|-----------------------------------------|
-   | **網站標題** | 網站的描述性名稱 | 「我的Forms專案」 |
-   | **網站名稱** | URL易記名稱 | &quot;my-forms-project&quot; |
-   | **GitHub URL** | 您的存放庫URL | `https://github.com/mycompany/my-forms-project` |
+   | **網站標題** | 網站的說明性名稱 | 「我的表單專案」 |
+   | **網站名稱** | URL 易記名稱 | 「my-forms-project」 |
+   | **GitHub URL** | 您的存放庫 URL | `https://github.com/mycompany/my-forms-project` |
 
-   ![站台組態](/help/edge/docs/forms/assets/create-aem-site.png)
-   *圖：使用GitHub整合設定您的新AEM網站*
+   ![網站設定](/help/edge/docs/forms/assets/create-aem-site.png)
+   *圖：設定新的 AEM 網站並整合 GitHub*
 
 5. **完成網站建立**
-   - 檢閱您的設定
+   - 審閱您的設定
    - 按一下「**建立**」。
 
-   ![確認網站建立](/help/edge/docs/forms/assets/click-ok-aem-site.png)
-   *圖：確認網站建立*
+   ![確認建立網站](/help/edge/docs/forms/assets/click-ok-aem-site.png)
+   *圖：確認建立網站*
 
-   **成功！**&#x200B;您的AEM網站現已建立並連線至GitHub。
+   **成功！**&#x200B;您的 AEM 網站現已建立並連線至 GitHub。
 
 6. **在通用編輯器中開啟**
-   - 在Sites主控台中，找出新網站
-   - 選取`index`頁面
-   - 按一下&#x200B;**編輯**
+   - 在 Sites 控制台中，找到您的新網站
+   - 選取 `index` 頁面
+   - 按一下「**編輯**」
 
    ![在通用編輯器中編輯網站](/help/edge/docs/forms/assets/edit-site.png)
-   *圖：正在開啟您的網站以進行編輯*
+   *圖：開啟您的網站進行編輯*
 
-   Universal Editor會在新標籤中開啟，提供WYSIWYG編寫功能。
+   通用編輯器在新標籤中開啟，提供 WYSIWYG 製作功能。
 
    ![通用編輯器介面](/help/edge/docs/forms/assets/site-in-universal-editor.png)
-   *圖：您的網站已在Universal Editor中開啟，以供WYSIWYG編輯*
+   *圖：您的網站已在通用編輯器中開啟，以進行 WYSIWYG 編輯*
 
-**驗證：**&#x200B;確認您的AEM網站已準備好進行表單編寫。
+**驗證：**&#x200B;確認您的 AEM 網站已準備好進行表單製作。
 
 +++
 
 +++步驟5：發佈您的網站
 
-發佈功能可讓您在Edge Delivery Services上取得全域存取權。
+發佈後，您的網站可以在 Edge Delivery Services 上供全球存取。
 
-1. **從網站主控台快速發佈**
-   - 返回AEM Sites主控台
-   - 選取您的網頁（或使用Ctrl+A選取全部）
-   - 按一下&#x200B;**快速發佈**
+1. **從 Sites 控制台快速發佈**
+   - 返回 AEM Sites 控制台
+   - 選取您的網站頁面 (或使用 Ctrl+A 選擇全部)
+   - 按一下「**快速發佈**」
 
-   ![發佈AEM網站](/help/edge/docs/forms/assets/publish-sites.png)
-   *圖：選取頁面以進行快速發佈*
+   ![發佈 AEM 網站](/help/edge/docs/forms/assets/publish-sites.png)
+   *圖：選取要快速發佈的頁面*
 
 2. **確認發佈**
-   - 在確認對話方塊中，按一下&#x200B;**發佈**
+   - 在確認對話框中，按一下「**發佈**」
 
-   ![快速發佈對話方塊](/help/edge/docs/forms/assets/quick-publish.png)
+   ![快速發佈對話框](/help/edge/docs/forms/assets/quick-publish.png)
    *圖：確認發佈動作*
 
-   **替代方案：**&#x200B;您也可以使用發佈按鈕直接從Universal Editor發佈。
+   **替代方案：**&#x200B;您也可以使用發佈按鈕直接從通用編輯器發佈。
 
    ![從通用編輯器發佈](/help/edge/docs/forms/assets/qui.png)
-   *圖：直接從通用編輯器發佈*
+   *圖：從通用編輯器直接發佈*
 
-3. **存取您的即時網站**
+3. **存取您的上線網站**
 
-   您的網站現在已上線：
+   您的網站現已上線：
 
    ```
    https://<branch>--<repo>--<owner>.aem.page/content/<site-name>/
    ```
 
-   **URL結構說明：**
-   - `<branch>`： GitHub分支（通常為`main`）
+   **URL 結構說明：**
+   - `<branch>`：GitHub 分支 (通常為 `main`)
    - `<repo>`：您的存放庫名稱
-   - `<owner>`：您的GitHub使用者名稱或組織
-   - `<site-name>`：您的AEM網站名稱
+   - `<owner>`：您的 GitHub 使用者名稱或組織
+   - `<site-name>`：您的 AEM 網站名稱
 
    **範例：**
 
@@ -301,26 +301,26 @@ AEM程式碼同步會自動同步AEM製作環境與GitHub存放庫之間的內�
    https://main--my-forms-project--mycompany.aem.page/content/my-forms-project/
    ```
 
-**驗證：**&#x200B;確認您的網站已在Edge Delivery Services上線。
+**驗證：** 確認您的網站已在 Edge Delivery Services 上線。
 
 >[!TIP]
 >
-> **URL模式：**
+> **URL 模式：**
 >
-> - **首頁：** `https://<branch>--<repo>--<owner>.aem.page/content/<site-name>/`
-> - **其他頁面：** `https://<branch>--<repo>--<owner>.aem.page/content/<site-name>/<page-name>`
+> - **首頁：**`https://<branch>--<repo>--<owner>.aem.page/content/<site-name>/`
+> - **其他頁面：**`https://<branch>--<repo>--<owner>.aem.page/content/<site-name>/<page-name>`
 
-**下一步：** [建立您的第一個表單](#create-your-first-form)
+**下一步：**[建立第一份表單](#create-your-first-form)
 
 +++
 
-## 路徑B：將Forms新增至現有專案
+## 路徑 B：將表單新增至現有專案
 
-**最適合：**&#x200B;具有Edge Delivery Services的現有AEM Sites
+**最適合：**&#x200B;使用 Edge Delivery Services 的現有 AEM Sites
 
-如果您已有使用Edge Delivery Services的AEM專案，您可以整合最適化Forms區塊以新增表單功能。
+如果您已經有使用 Edge Delivery Services 的 AEM 專案，則可以透過整合自適應表單區塊來新增表單功能。
 
-### 路徑B的必要條件
+### 路徑 B 的先決條件
 
 若要繼續將表單整合至您現有的AEM專案，請確定符合下列必要條件：
 
@@ -345,26 +345,26 @@ AEM程式碼同步會自動同步AEM製作環境與GitHub存放庫之間的內�
 
 +++步驟1：複製Forms區塊檔案
 
-1. **瀏覽至您的本機專案**
+1. **導覽到您的本機專案**
 
    ```bash
    cd /path/to/your/aem-project
    ```
 
-2. **從AEM Forms範本下載必要的檔案**
+2. **從 AEM Forms 樣板專案下載必要檔案**
 
-   從[AEM Forms樣板存放庫](https://github.com/adobe-rnd/aem-boilerplate-forms)複製這些檔案：
+   從 [AEM Forms 樣板專案存放庫](https://github.com/adobe-rnd/aem-boilerplate-forms)複製以下檔案：
 
    | 來源 | 目的地 | 用途 |
    |------------------------------------------------------------------------|----------------------------|----------------------------|
-   | [`blocks/form/`](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form) | `blocks/form/` | 核心表單功能 |
+   | [`blocks/form/`](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form) | `blocks/form/` | 核心表單功能  |
    | [`scripts/form-editor-support.js`](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js) | `scripts/form-editor-support.js` | 通用編輯器整合 |
    | [`scripts/form-editor-support.css`](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css) | `scripts/form-editor-support.css` | 編輯器樣式 |
 
 3. **更新編輯器支援**
-   - 將您的`/scripts/editor-support.js`檔案取代為AEM Forms樣板[中的](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js)editor-support.js
+   - 用 [AEM Forms 樣板專案中的 editor-support.js ](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js)取代 `/scripts/editor-support.js` 檔案
 
-**驗證：**&#x200B;確認表單區塊檔案位於您的專案中。
+**驗證：**&#x200B;確認表單區塊檔案在您的專案中。
 
 +++
 
@@ -372,7 +372,7 @@ AEM程式碼同步會自動同步AEM製作環境與GitHub存放庫之間的內�
 
 1. **更新區段模型**
 
-   開啟`/models/_section.json`並將表單元件新增至篩選器：
+   開啟 `/models/_section.json` 並將表單元件新增至篩選器：
 
    ```json
    {
@@ -391,7 +391,7 @@ AEM程式碼同步會自動同步AEM製作環境與GitHub存放庫之間的內�
    }
    ```
 
-   **這會做什麼：**&#x200B;啟用通用編輯器元件選擇器中的表單元件。
+   **其作用：**&#x200B;在通用編輯器元件選擇器中啟用表單元件。
 
 **驗證：**&#x200B;確認表單元件出現在通用編輯器中。
 
@@ -399,11 +399,11 @@ AEM程式碼同步會自動同步AEM製作環境與GitHub存放庫之間的內�
 
 +++步驟3：設定ESLint （選用）
 
-**為什麼這個步驟：**&#x200B;避免表單特定檔案的Linting錯誤，並設定正確的驗證規則。
+**為什麼執行此步驟：**&#x200B;防止來自表單特定檔案的 linting 錯誤並設定適當的驗證規則。
 
-1. **更新.eslingnore**
+1. **更新 .eslintignore**
 
-   將這些行新增至`/.eslintignore`：
+   將這幾行加入 `/.eslintignore`：
 
    ```bash
    # Form block rule engine files
@@ -414,9 +414,9 @@ AEM程式碼同步會自動同步AEM製作環境與GitHub存放庫之間的內�
    scripts/editor-support-rte.js
    ```
 
-2. **更新.eslintrc.js**
+2. **更新 .eslintrc.js**
 
-   將這些規則新增至`rules`中的`/.eslintrc.js`物件：
+   將這些規則加入 `/.eslintrc.js` 中的 `rules` 物件：
 
    ```javascript
    {
@@ -458,13 +458,13 @@ AEM程式碼同步會自動同步AEM製作環境與GitHub存放庫之間的內�
    }
    ```
 
-**驗證：**&#x200B;確認ESLint可搭配表單元件使用。
+**驗證：**&#x200B;確認 ESLint 可與表單元件搭配使用。
 
 +++
 
 +++步驟4：建置和部署
 
-1. **安裝相依性和組建**
+1. **安裝相依性並建置**
 
    ```bash
    # Install any new dependencies
@@ -474,19 +474,19 @@ AEM程式碼同步會自動同步AEM製作環境與GitHub存放庫之間的內�
    npm run build:json
    ```
 
-   **此功能的功能：**
-   - 使用表單元件更新`component-definition.json`
-   - 使用表單模型產生`component-models.json`
-   - 使用篩選規則建立`component-filters.json`
+   **其作用：**
+   - 使用表單元件更新 `component-definition.json`
+   - 使用表單模型產生 `component-models.json`
+   - 使用篩選規則建立 `component-filters.json`
 
-2. **驗證產生的檔案**
+2. **驗證所產生的檔案**
 
-   檢查專案根目錄中的這些檔案是否包含表單相關物件：
+   檢查專案根目錄中的這些檔案是否包含與表單相關的物件：
    - `component-definition.json`
    - `component-models.json`
    - `component-filters.json`
 
-3. **認可及推播變更**
+3. **認可並推送變更**
 
    ```bash
    git add .
@@ -498,9 +498,9 @@ AEM程式碼同步會自動同步AEM製作環境與GitHub存放庫之間的內�
 
 +++
 
-**下一步：** [建立您的第一個表單](#create-your-first-form)
+**下一步：**[建立第一份表單](#create-your-first-form)
 
-## 建立您的第一個表單
+## 建立第一份表單
 
 **應該關注此節的人：**\
 本節與路徑A （新專案）或路徑B （現有專案）之後的使用者相關。
@@ -530,155 +530,155 @@ AEM程式碼同步會自動同步AEM製作環境與GitHub存放庫之間的內�
 
 +++步驟1：新增最適化表單區塊
 
-1. **在通用編輯器中開啟您的頁面**
-   - 導覽至AEM中的&#x200B;**網站**&#x200B;主控台
-   - 選取您要新增表單的頁面（例如，`index`）
-   - 按一下&#x200B;**編輯**
+1. **在通用編輯器中開啟頁面**
+   - 導覽至 AEM 中的 **Sites** 控制台
+   - 選取要新增表單的頁面 (例如 `index`)
+   - 按一下「**編輯**」
 
-   您的頁面會在Universal Editor中開啟，以便進行WYSIWYG編輯。
+   您的頁面在通用編輯器中開啟，以進行 WYSIWYG 編輯。
 
-2. **新增最適化表單元件**
-   - 開啟&#x200B;**內容樹狀結構**&#x200B;面板（左側邊欄）
-   - 導覽至您要新增表單的區段
-   - 按一下&#x200B;**新增** (+)圖示
-   - 從元件清單中選取&#x200B;**最適化表單**
+2. **新增自適應表單元件**
+   - 開啟&#x200B;**內容樹**&#x200B;面板 (左側邊欄)
+   - 導覽到您想要新增表單的區段
+   - 按一下「**新增**」(+) 圖示
+   - 從元件清單中選取&#x200B;**自適應表單**
 
-   ![正在新增最適化表單區塊](/help/edge/docs/forms/assets/add-adaptive-form-block.png)
-   *圖：新增最適化表單區塊至您的頁面*
+   ![新增自適應表單區塊](/help/edge/docs/forms/assets/add-adaptive-form-block.png)
+   *圖：將自適應表單區塊新增至頁面*
 
-**驗證：**&#x200B;確認您有空白的表單容器。
+**驗證：**&#x200B;確認您有一個空的表單容器。
 
 +++
 
 +++步驟2：新增表單元件
 
-1. **瀏覽至您的表單區塊**
-   - 在內容樹狀結構中，找出您新增的最適化表單區段
+1. **導覽到您的表單區塊**
+   - 在內容樹中尋找您最近新增的自適應表單區段
 
-   ![已新增最適化表單區塊](/help/edge/docs/forms/assets/adative-form-block.png)
-   *圖：內容樹狀結構中的最適化表單區塊*
+   ![已新增自適應表單區塊](/help/edge/docs/forms/assets/adative-form-block.png)
+   *圖：內容樹中的自適應表單區塊*
 
 2. **新增表單元件**
 
-   新增元件有兩種方式：
+   您可以用兩種方式新增元件：
 
-   **方法A：按一下以新增**
-   - 按一下表單區段中的&#x200B;**新增** (+)圖示
-   - 從&#x200B;**最適化表單元件**&#x200B;清單中選取元件
+   **方法 A：按一下來新增**
+   - 按一下表單區段中的「**新增**」(+) 圖示
+   - 在&#x200B;**自適應表單元件**&#x200B;清單中選取元件
 
-   **方法B：拖放**
-   - 將元件直接從元件面板拖曳至您的表單
+   **方法 B：拖放**
+   - 將元件直接從元件面板拖曳到表單中
 
-   ![正在新增表單元件](/help/edge/docs/forms/assets/add-component.png)
-   *圖：正在新增元件至您的表單*
+   ![新增表單元件](/help/edge/docs/forms/assets/add-component.png)
+   *圖：新增元件至表單中*
 
-   **建議的起始元件：**
-   - 文字輸入（針對名稱、電子郵件）
-   - 文字區域（適用於訊息）
+   **建議的啟動元件：**
+   - 文字輸入 (姓名、電子郵件)
+   - 文字區域 (用於訊息)
    - 提交按鈕
 
 3. **設定元件屬性**
    - 選取任何表單元件
-   - 使用&#x200B;**屬性**&#x200B;面板（右側邊欄）來設定：
+   - 使用&#x200B;**屬性** 面板 (右側邊欄) 進行設定：
       - 標籤和預留位置
       - 驗證規則
       - 必填欄位設定
 
    ![元件屬性面板](/help/edge/docs/forms/assets/component-properties.png)
-   *圖：正在設定元件屬性*
+   *圖：設定元件屬性*
 
 4. **預覽您的表單**
 
-   您的表單看起來會像這樣：
+   您的表單大概是下面這個樣子：
 
-   ![完成的表單預覽](/help/edge/docs/forms/assets/added-form-aem-sites.png)
+   ![已完成的表單預覽](/help/edge/docs/forms/assets/added-form-aem-sites.png)
    *圖：使用通用編輯器建立的範例表單*
 
 **驗證：**&#x200B;確認您的表單已準備好發佈。
 
 >[!IMPORTANT]
 >
-> 進行變更後，請記得發佈您的頁面，以在瀏覽器中檢視更新。
+> 請記住在進行變更後發佈您的頁面，才能在瀏覽器中看見更新。
 
 +++
 
 +++步驟3：發佈表單
 
 1. **從通用編輯器發佈**
-   - 按一下通用編輯器中的&#x200B;**發佈**&#x200B;按鈕
+   - 在通用編輯器中按一下「**發佈**」按鈕
 
-   ![正在發佈表單](/help/edge/docs/forms/assets/publish-form.png)
-   *圖：從通用編輯器發佈您的表單*
+   ![發佈表單](/help/edge/docs/forms/assets/publish-form.png)
+   *圖：從通用編輯器發佈表單*
 
 2. **確認發佈**
-   - 在確認對話方塊中，按一下&#x200B;**發佈**
+   - 在確認對話框中，按一下「**發佈**」
 
    ![發佈確認](/help/edge/docs/forms/assets/publish-form1.png)
    *圖：確認發佈動作*
 
-   您將看到確認發佈的成功訊息。
+   您將看到確認出版的成功訊息。
 
    ![發佈成功](/help/edge/docs/forms/assets/publish-form2.png)
-   *圖：成功發行確認*
+   *圖：出版成功確認*
 
-3. **檢視您的即時表單**
+3. **檢視您的上線表單**
 
-   您的表單現在已上線：
+   您的表單現已上線，網址：
 
    ```
    https://<branch>--<repo>--<owner>.aem.page/content/<site-name>/
    ```
 
-   **範例URL：**
+   **範例 URL：**
 
    ```
    https://main--my-forms-project--mycompany.aem.page/content/my-forms-project/
    ```
 
-   ![即時表單頁面](/help/edge/docs/forms/assets/publish-index-page.png)
-   *圖：您在Edge Delivery Services上發佈的表單頁面*
+   ![上線表單頁面](/help/edge/docs/forms/assets/publish-index-page.png)
+   *圖：您在 Edge Delivery Services 上發佈的表單頁面*
 
-**恭喜！**&#x200B;您的表單現在已上線並準備好收集提交內容。
+**恭喜！**&#x200B;您的表單現已上線並準備收集提交內容。
 
 +++
 
 ### 後續步驟
 
-現在您有了工作表單，您可以：
+現在您已經有可使用的表單，您可以：
 
-- **編輯CSS和JavaScript檔案以自訂樣式**
+- 透過編輯 CSS 和 JavaScript 檔案&#x200B;**自訂樣式**
 - **新增進階表單功能**，例如驗證規則和條件式邏輯
-- **設定本機開發**&#x200B;以加快反複專案
-- **針對特定使用案例建立獨立表格**
+- **設定本機開發**&#x200B;以便加速疊代
+- 針對特定使用案例&#x200B;**建立獨立表單**
 
 >[!TIP]
 >
-> **深入瞭解：** [在通用編輯器中建立獨立表單](/help/edge/docs/forms/universal-editor/create-forms.md)
+> **了解更多：**[在通用編輯器中建立獨立表單](/help/edge/docs/forms/universal-editor/create-forms.md)
 
 ## 設定本機開發環境
 
 **最適合：**&#x200B;想要自訂表單樣式和行為的開發人員
 
-本機開發環境可讓您進行變更並立即檢視，而不需經過發佈週期。
+在本機開發環境中，您可以進行變更並立即查看，無需經過發佈週期。
 
 +++設定AEM CLI和本機開發
 
-1. **安裝AEM CLI**
+1. **安裝 AEM CLI**
 
-   AEM CLI可簡化本機開發工作：
+   AEM CLI 簡化本機開發任務：
 
    ```bash
        npm install -g @adobe/aem-cli
    ```
 
-2. **複製您的存放庫**
+2. **原地複製您的存放庫**
 
    ```bash
    git clone https://github.com/<owner>/<repo>
    cd <repo>
    ```
 
-   將`<owner>`和`<repo>`取代為您實際的GitHub詳細資料。
+   使用您實際的 GitHub 詳細資訊取代 `<owner>` 和 `<repo>`。
 
 3. **啟動本機開發伺服器**
 
@@ -686,15 +686,15 @@ AEM程式碼同步會自動同步AEM製作環境與GitHub存放庫之間的內�
    aem up
    ```
 
-   這會啟動具有熱過載功能的本機伺服器。
+   這樣會啟動具有熱重新載入功能的本機伺服器。
 
 4. **進行自訂**
 
-   - 編輯`blocks/form/`目錄中的檔案以取得表單樣式和行為
-   - 修改樣式的`form.css`
-   - 更新`form.js`的行為
+   - 編輯 `blocks/form/` 目錄裡的檔案以修改表單樣式和行為
+   - 修改 `form.css` 以自訂樣式
+   - 更新 `form.js` 來自訂行為
 
-   **立即在瀏覽器中檢視變更** `http://localhost:3000`
+   在您的瀏覽器中&#x200B;**立即查看變更**，網址：`http://localhost:3000`
 
 5. **部署您的變更**
 
@@ -704,9 +704,9 @@ AEM程式碼同步會自動同步AEM製作環境與GitHub存放庫之間的內�
    git push origin main
    ```
 
-   您的變更將可在以下網址取得：
-   - **預覽：** `https://<branch>--<repo>--<owner>.aem.page/content/<site-name>`
-   - **生產：** `https://<branch>--<repo>--<owner>.aem.live/content/<site-name>`
+   您可以透過以下位置檢視變更：
+   - **預覽：**`https://<branch>--<repo>--<owner>.aem.page/content/<site-name>`
+   - **生產：**`https://<branch>--<repo>--<owner>.aem.live/content/<site-name>`
 
 +++
 
@@ -717,14 +717,14 @@ AEM程式碼同步會自動同步AEM製作環境與GitHub存放庫之間的內�
 
 +++GitHub建置問題
 
-**問題：**&#x200B;組建失敗或Linting錯誤
+**問題：**&#x200B;建置失敗或 linting 錯誤
 
-**解決方案1：處理Linting錯誤**
+**解決方案 1：處理 Linting 錯誤**
 
-如果您遇到線性錯誤：
+如果遇到 linting 錯誤：
 
-1. 在您的專案根目錄中開啟`package.json`
-2. 尋找`lint`指令碼：
+1. 在專案根目錄中開啟 `package.json`
+2. 找到 `lint` 指令碼：
 
    ```json
    "scripts": {
@@ -732,7 +732,7 @@ AEM程式碼同步會自動同步AEM製作環境與GitHub存放庫之間的內�
    }
    ```
 
-3. 暫時停用Linting：
+3. 暫時停用 linting：
 
    ```json
    "scripts": {
@@ -742,12 +742,12 @@ AEM程式碼同步會自動同步AEM製作環境與GitHub存放庫之間的內�
 
 4. 認可並推送變更
 
-**解決方案2：模組路徑錯誤**
+**解決方案 2：模組路徑錯誤**
 
-如果您看到「無法解析模組&#39;/scripts/lib-franklin.js&#39;的路徑」：
+如果您看到「無法解析模組『/scripts/lib-franklin.js』的路徑」：
 
-1. 瀏覽至`blocks/form/form.js`
-2. 更新匯入陳述式：
+1. 導覽至 `blocks/form/form.js`
+2. 更新匯入語句：
 
    ```javascript
    // Change this:
@@ -765,18 +765,18 @@ AEM程式碼同步會自動同步AEM製作環境與GitHub存放庫之間的內�
 
 **解決方案：**
 
-- 確定您有提交按鈕元件
-- 檢查表單動作URL設定
-- 驗證表單驗證規則
+- 確認您有一個提交按鈕元件
+- 檢查表單動作 URL 設定
+- 確認表單驗證規則
 - 先在預覽模式下測試
 
 **問題：**&#x200B;樣式問題
 
 **解決方案：**
 
-- 檢查`blocks/form/`中的CSS檔案路徑
+- 檢查 `blocks/form/` 中的 CSS 檔案路徑
 - 清除瀏覽器快取
-- 驗證CSS語法
+- 驗證 CSS 語法
 - 在本機開發環境中測試
 
 +++
@@ -787,18 +787,18 @@ AEM程式碼同步會自動同步AEM製作環境與GitHub存放庫之間的內�
 
 **解決方案：**
 
-- 確認已安裝並執行AEM程式碼同步
-- 檢查`fstab.yaml`是否有正確的AEM作者URL
-- 確保您的AEM執行個體已啟用搶先存取
-- 確認`component-definition.json`包含表單元件
+- 確認 AEM Code Sync 是否已安裝並正在執行
+- 檢查 `fstab.yaml` 具有正確的 AEM 作者 URL
+- 確保您的 AEM 實例已啟用搶先體驗功能
+- 確認 `component-definition.json` 包括表單元件
 
-**問題：**&#x200B;發佈後未顯示變更
+**問題：**&#x200B;發佈後看不見變更
 
 **解決方案：**
 
-- 等待CDN快取重新整理
-- 檢查瀏覽器快取（嘗試無痕模式/私密模式）
-- 確認使用正確的URL格式
+- 等待內容傳遞網路快取重新整理
+- 檢查瀏覽器快取 (嘗試無痕視窗/私人模式)
+- 確認是否使用正確的 URL 格式
 
 +++
 

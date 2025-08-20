@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
 workflow-type: tm+mt
 source-wordcount: '1901'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -92,8 +92,8 @@ ht-degree: 98%
 - 類別：div 元素有幾個目標為特定元素和樣式的類別。您需要 `{Type}-wrapper` 或 `field-{Name}` 類別以開發 CSS 選取器來設定表單欄位樣式：
    - {Type}：根據欄位類型識別元件。例如，text (text-wrapper)、number (number-wrapper)、date (date-wrapper)
    - {Name}：根據名稱識別元件。欄位名稱只能包含英數字元；名稱中的多個連續破折號會更換為單個破折號 `(-)`，而且欄位名稱中開頭和結尾的破折號會被移除。例如，first-name (field-first-name field-wrapper)
-   - {FieldId}：這是欄位的唯一識別碼，會自動產生
-   - {Required}：表示欄位是否為必要欄位的布林值
+   - {FieldId}：自動產生的欄位唯一識別碼。
+   - {Required}：一個布林值，指出此欄位是否為必填
 - 標籤：`label` 元素會提供描述欄位的文字，並使用 `for` 屬性將其與輸入元素相關聯
 - 輸入：`input` 元素定義要輸入的資料類型。例如，text、number、email
 - 描述 (選用)：`div` 與類別 `field-description` 會為使用者提供其他資訊或指示
@@ -139,7 +139,7 @@ ht-degree: 98%
 ```
 
 - `.{Type}-wrapper`：根據欄位類型以外部 `div` 元素為目標。例如，`.text-wrapper` 以所有文字欄位為目標
-- `.field-{Name}`：根據特定欄位名稱進一步選取元素。例如，`.field-first-name` 以「名字」文字欄位為目標。雖然此選擇器可用來針對具有 field-{Name} 類別的元素，但請謹慎使用。在這種特定情況下，這對於設定輸入欄位的樣式並不是很有用，因為其不僅以輸入本身為目標，而且還會以標籤和描述元素為目標。建議使用比較具體的選擇器，例如用於針對文字輸入欄位 (.text-wrapper input) 的選擇器
+- `.field-{Name}`：根據特定欄位名稱進一步選取元素。例如，`.field-first-name` 以「名字」文字欄位為目標。雖然此選擇器可用來針對具有 field-{Name} 類別的元素，但請謹慎使用。在這種特定情況下，無法協助設定輸入欄位的樣式，因為其目標並只是輸入本身，而且還包括標籤和描述元素。建議使用比較具體的選擇器，例如用於針對文字輸入欄位 (.text-wrapper input) 的選擇器
 
 **一般元件的 CSS 選取器範例**
 
@@ -240,7 +240,7 @@ ht-degree: 98%
 
 與下拉元件類似，單選按鈕群組也有自己的 HTML 結構和 CSS 結構：
 
-+++ 單選按鈕群組 HTML 結構
++++ 單選按鈕群組 HTML 結構 
 
 ```HTML
 <fieldset class="radio-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
@@ -308,11 +308,11 @@ ht-degree: 98%
 }
 ```
 
-+++
++++ 
 
 ### 核取方塊群組
 
-+++ 核取方塊群組的 HTML 結構
++++ 核取方塊群組的 HTML 結構 
 
 ```HTML
 <fieldset class="checkbox-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
@@ -434,7 +434,7 @@ ht-degree: 98%
      }
   ```
 
-+++
++++ 
 
 ### 面板/容器元件
 
@@ -476,11 +476,11 @@ ht-degree: 98%
 ```
 
 - Fieldset 元素可用作含有 panel-wrapper 類別和其他類別的面板容器，以便根據面板名稱 (field-login) 設定樣式。
-- 圖例元素(`<legend>`)做為面板標題，包含「登入資訊」文字和類別欄位標籤。 data-visible=&quot;false&quot; 屬性可以與 JavaScript 一起用來控制標題的可見度。
+- 圖例元素 (`<legend>`) 可用作面板標題，其中包含文字「登入資訊」和 field-label 類別。data-visible=&quot;false&quot; 屬性與 JavaScript 搭配使用，可以控制標題的可見度。
 - 在欄位集中，多個。{Type}-wrapper 元素 (在本例中為 .text-wrapper 和 .password-wrapper) 代表面板中的個別表單欄位。
 - 每個包裝函式皆包含一個標籤、輸入欄位及說明，與先前的範例類似。
 
-+++
++++ 
 
 +++ 面板/容器元件的 CSS 選擇器範例
 
@@ -608,7 +608,7 @@ ht-degree: 98%
 
 - 唯一 ID 和名稱：面板中的每個元素都有一個唯一 ID (例如 name-1、email-1) 和以面板索引為主的名稱屬性 (例如 name=&quot;contacts[0 ].name”)。這樣可以在提交多個面板時進行正確的資料收集。
 
-+++
++++ 
 
 +++ 可重複面板的 CSS 選擇器
 
@@ -698,7 +698,7 @@ ht-degree: 98%
 - 輸入元素的 id 和名稱屬性與檔案附件名稱 (claim_form) 相符。
 - 檔案清單區段一開始是空值。當檔案上傳時，此區段會以 JavaScript 機動式地填入。
 
-+++
++++ 
 
 +++ 檔案附件元件的 CSS 選擇器
 
@@ -816,7 +816,7 @@ ht-degree: 98%
 - 每個欄位都有對應的標籤、輸入元素和潛在的附加元素 (例如預留位置和描述)。
 
 
-+++
++++ 
 
 
 +++ CSS 選取器範例
@@ -864,7 +864,7 @@ ht-degree: 98%
 </div>
 ```
 
-+++
++++ 
 
 +++ CSS 選取器範例
 
@@ -878,5 +878,5 @@ ht-degree: 98%
 
 此 CSS 的目標是位於具有類別 `field-otp` 的元素內的所有輸入元素。您表單的 HTML 結構遵循最適化表單區塊的慣例，這表示有一個標有「field-otp」類別的容器包含名為「otp」的欄位。
 
-+++
++++ 
 

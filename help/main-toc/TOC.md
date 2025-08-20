@@ -9,7 +9,7 @@ user-guide-title: 'AEM as a Cloud Service '
 source-git-commit: 95ef5d2257c6f074ddd1a6a01ec09ab708e88af0
 workflow-type: tm+mt
 source-wordcount: '6498'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -1078,19 +1078,19 @@ ht-degree: 97%
       + [概觀](/help/edge/docs/forms/overview.md)
       + WYSIWYG 編寫 {#universal-editor}
          + [Edge Delivery Services for Forms 的通用編輯器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-         + [導覽至AEM Forms的通用編輯器介面](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
-         + [使用通用編輯器的AEM Forms適用的Edge Delivery Services快速入門](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-         + [使用Edge Delivery Services建立及發佈最適化Forms](/help/edge/docs/forms/universal-editor/create-forms.md)
-         + [使用通用編輯器建立回應式Forms](/help/edge/docs/forms/universal-editor/responsive-layout.md)
+         + [導覽 AEM Forms 的通用編輯器介面](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
+         + [使用通用編輯器開始使用 AEM Forms 適用的 Edge Delivery Services](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+         + [使用 Edge Delivery Services 建立和發佈自適應表單](/help/edge/docs/forms/universal-editor/create-forms.md)
+         + [使用通用編輯器建立回應式表單](/help/edge/docs/forms/universal-editor/responsive-layout.md)
          + [自訂 AEM Forms 適用的 Edge Delivery Services 主題和樣式](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
-         + [通用編輯器中動態Forms的規則編輯器](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+         + [通用編輯器中的動態表單規則編輯器](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
          + [如何建立 WYSIWYG 型編寫適用的表單片段](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)
          + [如何設定最適化表單的提交動作？](/help/edge/docs/forms/universal-editor/submit-action.md)
          + [如何設定重新導向頁面或感謝訊息](/help/edge/docs/forms/universal-editor/configure-thankyou-message.md)
-         + [在通用編輯器中將Google reCAPTCHA新增至Forms](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+         + [在通用編輯器中將 Google reCAPTCHA 新增到表單](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
          + [在通用編輯器中如何整合表單的表單資料模型 (FDM)？](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
          + [如何預先填寫最適化表單欄位](/help/edge/docs/forms/universal-editor/prefill-form.md)
-         + [使用Edge Delivery Services發佈最適化Forms](/help/edge/docs/forms/universal-editor/publish-forms.md)
+         + [使用 Edge Delivery Services 發佈自適應表單](/help/edge/docs/forms/universal-editor/publish-forms.md)
          + [為 EDS Forms 建立自訂元件](/help/edge/docs/forms/universal-editor/create-custom-component.md)
          + [針對 Edge Delivery Services 表單提交時出現的 403 禁止錯誤進行疑難排解](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)
       + 文件型編寫 {#getting-started-edge-delivery-services-forms}

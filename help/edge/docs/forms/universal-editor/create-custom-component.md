@@ -7,7 +7,7 @@ exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
 source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '1789'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -301,7 +301,7 @@ JSON 片段為 **Range** 元件定義一個名為 **Step Value** 的自訂屬性
 
 ### &#x200B;4. 註冊您的自訂元件
 
-若要讓表單區塊識別自訂元件，並在表單編寫期間載入元件模型中定義的屬性，請從元件定義新增`fd:viewType`值至`mappings.js`檔案。
+為了讓表單區塊能夠識別自訂元件並載入表單製作期間在元件模型中定義的屬性，請將元件定義中的 `fd:viewType` 值新增到 `mappings.js` 檔案。
 
 若要註冊元件：
 

@@ -1,6 +1,6 @@
 ---
-title: 通用編輯器中動態Forms的規則編輯器
-description: 使用通用編輯器中的規則編輯器建立動態的智慧型表單。 新增條件式邏輯、計算及互動行為，無需編碼。
+title: 通用編輯器中的動態表單規則編輯器
+description: 在通用編輯器中使用規則編輯器建立動態的智慧型表單。無需編寫程式碼即可新增條件式邏輯、計算和互動式行為。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
@@ -8,12 +8,12 @@ exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
 source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '2598'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
 
-# 通用編輯器中動態Forms的規則編輯器
+# 通用編輯器中的動態表單規則編輯器
 
 規則編輯器可讓作者將靜態表單轉換為回應式智慧型體驗，而不需撰寫程式碼。 您可以有條件地顯示欄位、執行計算、驗證資料、引導使用者完成流程，以及整合隨人員型別而適應的商業邏輯。
 
@@ -21,11 +21,11 @@ ht-degree: 0%
 
 在本指南結束時，您將能夠：
 
-- 瞭解規則如何運作以及何時使用不同的規則型別
-- 在通用編輯器中啟用並存取規則編輯器
+- 了解規則如何運作以及何時使用不同類型的規則
+- 在通用編輯器中啟用及存取規則編輯器
 - 建立條件式邏輯以動態顯示或隱藏欄位
-- 實作自動化計算和資料驗證
-- 為複雜的商業規則建立自訂函式
+- 實施自動計算和資料驗證
+- 為複雜的業務規則建置自訂函數
 - 將最佳實務應用於效能、可維護性和UX
 
 ## 為何使用規則編輯器？
@@ -81,7 +81,7 @@ ht-degree: 0%
 
 +++ 真實世界的範例
 
-- **條件**：「薪資總額超過$50,000美元」
+- **條件**：「總薪資超過 50,000 美元」
 - **主要動作**：顯示「額外扣除」
 - **替代動作**：隱藏[額外扣除]
 - **結果**：使用者只會看到套用至他們的欄位
@@ -308,7 +308,7 @@ ht-degree: 0%
 
 1. **開啟通用編輯器**：
    - 導覽至AEM Sites主控台，選取您的頁面，按一下&#x200B;**編輯**
-   - 確定您已正確設定[通用編輯器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=zh-Hant)
+   - 確定您已正確設定[通用編輯器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html)
 
 2. **依此順序新增表單元件**：
    - 標題(H2)：「稅捐計算表單」
@@ -335,7 +335,7 @@ ht-degree: 0%
 
 1. **選取[薪資總額]欄位**&#x200B;並按一下[規則編輯器]圖示![edit-rules](/help/forms/assets/edit-rules-icon.svg)
 2. **建立新規則**：
-   - 按一下「**建立**」。
+   - 按一下「**建立**」
    - 將規則型別從&quot;Set Value Of&quot;變更為&#x200B;**&quot;When&quot;**
 3. **設定條件**：
    - 從下拉式清單中選取&#x200B;**&quot;大於&quot;**
@@ -676,7 +676,7 @@ Forms成為資料收集、潛在客戶資格和使用者參與的強大工具。
 
 **其他資源**：
 
-- [通用編輯器檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=zh-Hant)，用於更廣泛的內容
+- [通用編輯器檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html)，用於更廣泛的內容
 - [Extension Manager指南](/help/implementing/developing/extending/extension-manager.md)啟用其他功能
 - [Edge Delivery Services表單](/help/edge/docs/forms/overview.md)，以取得完整的表單開發指引
 

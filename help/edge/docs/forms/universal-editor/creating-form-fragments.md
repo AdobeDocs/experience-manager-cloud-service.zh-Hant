@@ -7,7 +7,7 @@ exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
 source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
 workflow-type: tm+mt
 source-wordcount: '1670'
-ht-degree: 40%
+ht-degree: 44%
 
 ---
 
@@ -84,7 +84,7 @@ Edge Delivery Services中的表單片段提供模組化表單開發的強大功�
 
 若要在通用編輯器中建立表單片段，請執行下列步驟：
 
-1. 登入您的AEM Forms as a Cloud Service作者例項。
+1. 登入您的 AEM Forms as a Cloud Service 作者實例。
 1. 選取「**[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 表單]** > **[!UICONTROL 表單與文件]**」。
 1. 按一下「**建立 > 自適應表單片段**」。
 
@@ -110,7 +110,7 @@ Edge Delivery Services中的表單片段提供模組化表單開發的強大功�
 
    >[!NOTE]
    >
-   > 若要瞭解如何將表單或片段與Universal Editor中的表單資料模型(FDM)整合，以使用不同的後端資料來源，請參閱[將表單與Universal Editor中的表單資料模型整合](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)。
+   > 若要了解如何在通用編輯器中將表單或片段與表單資料模型 (FDM) 整合以使用不同的後端資料來源，請參閱[在通用編輯器中將表單與表單資料模型整合](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)。
 
 1. (選擇性) 在「**進階**」標籤中指定片段的「**發佈日期**」或「**取消發佈日期**」。
 
@@ -156,7 +156,7 @@ Edge Delivery Services中的表單片段提供模組化表單開發的強大功�
 
    ![導覽至區段](/help/edge/docs/forms/universal-editor/assets/navigate-to-section.png)
 
-1. 按一下「**[!UICONTROL 新增]**」圖示，然後新增來自「**自適應表單元件**」清單的&#x200B;**[!UICONTROL 表單片段]**&#x200B;元件。
+1. 按一下「**[!UICONTROL 新增]**」圖示，然後新增來自「**自適應表單元件**」清單的&#x200B;**[!UICONTROL 表單片段]**元件。
    ![新增表單片段](/help/edge/docs/forms/universal-editor/assets/add-fragment.png)
 
    選取&#x200B;**[!UICONTROL 表單片段]**&#x200B;元件後，片段即會新增至您的表單中。您可以開啟片段的「**屬性**」來設定新增片段的屬性。例如，在「**屬性**」中隱藏片段的標題。
@@ -191,7 +191,7 @@ Edge Delivery Services中的表單片段提供模組化表單開發的強大功�
 
 您可以透過 AEM Forms 的使用者介面執行多項表單片段操作。
 
-1. 登入您的AEM Forms as a Cloud Service作者例項。
+1. 登入您的 AEM Forms as a Cloud Service 作者實例。
 1. 選取「**[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 表單]** > **[!UICONTROL 表單與文件]**」。
 
 1. 選取表單片段，然後工具列便會顯示您可以對所選片段執行的操作。
@@ -246,7 +246,7 @@ Edge Delivery Services中的表單片段提供模組化表單開發的強大功�
     </tbody>
     </table>
 
-+++
++++ 
 
 ## 最佳做法
 

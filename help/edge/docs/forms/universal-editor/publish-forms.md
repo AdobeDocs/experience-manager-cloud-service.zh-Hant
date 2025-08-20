@@ -1,6 +1,6 @@
 ---
-title: 使用Edge Delivery Services發佈最適化Forms
-description: 瞭解如何使用Edge Delivery Services發佈、設定和存取最適化Forms以供生產使用。
+title: 使用 Edge Delivery Services 發佈自適應表單
+description: 了解如何使用 Edge Delivery Services 發佈、設定和存取自適應表單以供生產使用。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
@@ -9,28 +9,28 @@ exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
 source-git-commit: 05c0d8fd16cc8bd805a0e8644d3145685fe6fa12
 workflow-type: tm+mt
 source-wordcount: '746'
-ht-degree: 2%
+ht-degree: 89%
 
 ---
 
-# 使用Edge Delivery Services發佈最適化Forms
+# 使用 Edge Delivery Services 發佈自適應表單
 
-發佈最適化表單後，使用者可在Edge Delivery Services上存取及提交。 此程式包含三個主要階段：發佈表單、設定安全性設定及存取即時表單。
+發佈自適應表單，讓最終使用者可以在 Edge Delivery Services 上存取和提交。此過程涉及三個主要階段：發佈表單、進行安全性設定和存取上線表單。
 
-**您將會完成的內容：**
+**您會學到什麼：**
 
-- 將表單發佈至Edge Delivery Services
+- 將表單發佈到 Edge Delivery Services
 - 設定表單提交的安全性設定
-- 存取及驗證您發佈的表單
-- 設定正確的URL路由和CORS原則
+- 存取並確認您發佈的表單
+- 設定適當的 URL 路由和 CORS 策略
 
 ## 先決條件
 
-- 使用Edge Delivery Services範本建立的最適化表單
-- 表單已測試並準備好用於生產
-- AEM Forms作者許可權
-- Cloud Manager存取（用於生產設定）
-- 開發人員對表單區塊代碼的存取權（用於提交設定）
+- 使用 Edge Delivery Services 範本建立的自適應表單
+- 表單已經過測試並準備好投入生產使用
+- AEM Forms 作者權限
+- Cloud Manager 存取權 (用於生產設定)
+- 開發人員存取表單區塊程式碼 (用於提交設定)
 
 ## 發佈程式概觀
 
@@ -42,84 +42,84 @@ ht-degree: 2%
 
 每個階段都建立在上一個階段之上，以確保安全且功能性的部署。
 
-### 階段1：發佈表單
+### 第一階段：發佈表單
 
-+++ 步驟1：啟動發佈
++++ 步驟 1：開始發佈
 
-1. **存取您的表單**：在通用編輯器中開啟您的最適化表單
-2. **開始發佈**：按一下工具列中的&#x200B;**發佈**&#x200B;圖示
+1. **存取您的表單**：在通用編輯器中開啟您的自適應表單
+2. **開始發佈**：按一下工具列中的「**發佈**」圖示
 
-   ![按一下「發佈」](/help/forms/assets/publish-icon-eds-form.png)。
+   ![按一下「發佈」](/help/forms/assets/publish-icon-eds-form.png)
 
 +++
 
 
-+++ 步驟2：檢閱並確認
++++ 步驟 2：審閱並確認
 
-1. **檢閱發佈資產**：系統會顯示所有正在發佈的資產，包括您的表單
+1. **審閱發佈資產**：系統顯示所有正要發佈的資產，包括您的表單
 
    ![一鍵式發佈](/help/forms/assets/on-click-publish.png)
 
-2. **確認發佈**：按一下&#x200B;**發佈**&#x200B;以繼續
-3. **驗證成功**：尋找確認訊息
+2. **確認發佈**：按一下「**發佈**」以繼續
+3. **確認成功**：尋找確認訊息
 
    ![發佈成功](/help/forms/assets/publish-success.png)
 
 +++
 
 
-+++ 步驟3：驗證發佈狀態
++++ 步驟 3：檢查出版狀態
 
-**檢查狀態**：再次按一下&#x200B;**發佈**&#x200B;圖示以檢視目前狀態
+**檢查狀態**：再次按一下「**發佈**」圖示即可檢視目前狀態
 
 ![發佈狀態](/help/forms/assets/publish-status.png)
 
-**驗證檢查點：**
+**驗證查核點：**
 
 - 表單在編輯器中顯示「已發佈」狀態
-- 發佈程式期間沒有錯誤訊息
-- 表單會顯示在已發佈的資產清單中
+- 發佈過程中沒有錯誤訊息
+- 表單出現在已發佈資產清單中
 
 +++
 
 
-+++ 管理已發佈的Forms
++++ 管理已發佈的表單
 
 **若要取消發佈表單：**
 
 1. 在編輯器中開啟您的表單
-2. 按一下右上角的三個點選單(⋯)
-3. 選取&#x200B;**取消發佈**
+2. 按一下右上角的三點選單 (…)
+3. 選取「**取消發佈**」。
 
 ![取消發佈表單](/help/forms/assets/unpublish--form.png)
 
 +++
 
 
-### 階段2：設定安全性設定
+### 第二階段：進行安全性設定
 
 +++ 為什麼需要安全性設定
 
-若要啟用安全表單提交，您必須設定符合以下條件的安全設定：
+若要安全地提交表單，您必須設定以下安全性設定：
 
-- 允許Edge Delivery Services將資料提交至AEM
-- 防止未經授權存取您的AEM執行個體
-- 為表單提交啟用CORS （跨原始資源共用）
-- 篩選要求以僅允許合法的Edge Delivery網域
+- 允許 Edge Delivery Services 向 AEM 提交資料
+- 防止未經授權存取您的 AEM 實例
+- 啟用 CORS (跨來源資源共用) 以利提交表單
+- 篩選請求至僅允許合法的 Edge Delivery 網域
 
 >[!IMPORTANT]
 >
->**生產環境所需**：這些設定對於表單提交在生產環境中運作是必要的。
+>**生產環境所需**：要在生產環境中提交表單，這些是必要設定。
 
 +++
 
 
 
-+++ 步驟1：設定表單提交URL
++++ 步驟 1：設定表單提交 URL
 
-**用途**：直接將表單提交至您的AEM執行個體
+**用途**：將表單提交直接傳送到您的 AEM 實例
 
-**檔案位置**： Edge Delivery Services專案中的`blocks/form/constant.js`
+**檔案位置**：`blocks/form/constant.js` 在您的 Edge Delivery Services 專案中
 
 **設定範例：**
 
@@ -134,21 +134,21 @@ export const submitBaseUrl = 'http://localhost:4503';
 export const submitBaseUrl = 'https://publish-staging-p120-e12.adobeaemcloud.com';
 ```
 
-**驗證檢查點：**
+**驗證查核點：**
 
-- 已使用正確的AEM發佈URL更新`constant.js`檔案
-- URL符合您的環境（生產、測試或本機）
-- URL中沒有結尾斜線
+- 使用正確的 AEM Publish URL 更新 `constant.js` 檔案
+- URL 符合您的環境 (生產、中繼或本機)
+- URL 中沒有結尾斜線
 
 +++
 
 
 
-+++ 步驟2：設定CORS設定
++++ 步驟 2：進行 CORS 設定
 
-**用途**：允許來自Edge Delivery Services網域的表單提交請求
+**用途**：允許來自 Edge Delivery Services 網域的表單提交請求
 
-**實作**：將CORS設定新增至您的AEM Dispatcher或Apache設定
+**實施**：將 CORS 設定新增至您的 AEM dispatcher 或 Apache 設定
 
 ```apache
 # Local Development Environment
@@ -161,28 +161,28 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.hlx\.live$)#" CORSTrusted=true
 ```
 
-**驗證檢查點：**
+**驗證查核點：**
 
-- 套用至Dispatcher設定的CORS規則
-- 包括所有必要的網域(localhost、hlx.page、hlx.live)
-- 配置已部署到目標環境
+- CORS 規則已套用至 dispatcher 設定
+- 包含所有必要的網域 (localhost、hlx.page、hlx.live)
+- 設定部署到目標環境
 
-**參考檔案：**
+**參考文件：**
 
-- [CORS設定指南](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)
-- [反向連結篩選檔案](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter)
+- [CORS 設定指南](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)
+- [反向連結篩選器文件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter)
 
 +++
 
 
 
-+++ 步驟3：設定反向連結篩選器
++++ 步驟 3：設定反向連結篩選器
 
-**用途**：將寫入作業限制在授權的Edge Delivery Services網域
+**用途**：限制對授權的 Edge Delivery Services 網域進行寫入操作
 
-**實作方法**：透過AEM as a Cloud Service中的Cloud Manager進行設定
+**實施方法**：透過 AEM as a Cloud Service 中的 Cloud Manager 進行設定
 
-**設定檔**：新增至您專案的OSGi設定
+**設定檔案**：新增至專案的 OSGi 設定
 
 ```json
 {
@@ -205,47 +205,47 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 }
 ```
 
-**組態劃分：**
+**設定劃分：**
 
-- **`allow.empty`**：拒絕沒有反向連結標題的請求
-- **`allow.hosts.regexp`**：允許來自Edge Delivery Services網域的請求
-- **`filter.methods`**：將篩選套用到這些HTTP方法
-- **`exclude.agents.regexp`**：從篩選中排除的使用者代理
+- **`allow.empty`**：拒絕沒有反向連結標頭的請求
+- **`allow.hosts.regexp`**：允許來自 Edge Delivery Services 網域的請求
+- **`filter.methods`**：對這些 HTTP 方法套用篩選
+- **`exclude.agents.regexp`**：篩選範圍不包括使用者代理人
 
-**驗證檢查點：**
+**驗證查核點：**
 
-- 透過Cloud Manager部署的反向連結篩選設定
-- 在AEM發佈執行個體上作用中的設定
-- 從Edge Delivery Services網域提交測試表單
-- 已封鎖未獲授權的網域，使其無法提交表單
+- 透過 Cloud Manager 部署反向連結篩選器設定
+- AEM 發布實例上的設定為使用中狀態
+- 從 Edge Delivery Services 網域測試表單提交工作
+- 未經授權的網域被禁止提交表單
 
-**參考檔案：**
+**參考文件：**
 
-- [透過Cloud Manager設定反向連結篩選器](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing)
+- [透過 Cloud Manager 設定反向連結篩選器](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing)
 
 +++
 
 
-### 階段3：存取您發佈的表單
+### 第三階段：存取您發佈的表單
 
 
 
-+++ Edge Delivery Services的URL結構
++++ Edge Delivery Services 的 URL 結構
 
-**標準URL格式：**
+**標準 URL 格式：**
 
 ```
 https://<branch>--<repo>--<owner>.aem.live/content/forms/af/<form_name>
 ```
 
-**URL元件：**
+**URL 元件：**
 
-- **`<branch>`**： Git分支名稱（通常為`main`）
+- **`<branch>`**：Git 分支名稱 (通常為 `main`)
 - **`<repo>`**：存放庫名稱
-- **`<owner>`**： GitHub組織或使用者名稱
-- **`<form_name>`**：您的表單名稱（小寫，連字）
+- **`<owner>`**：GitHub 組織或使用者名稱
+- **`<form_name>`**：您的表單名稱 (小寫，帶連字號)
 
-**環境特定URL：**
+**特定環境的 URL：**
 
 ```
 # Production Environment (.aem.live)
@@ -261,20 +261,20 @@ https://main--universaleditor--wkndforms.aem.page/content/forms/af/wknd-form
 
 +++ 最終驗證步驟
 
-**驗證表單協助工具：**
+**確認表單無障礙：**
 
-1. **正在載入測試表單**：請造訪您的表單URL，並確認其已正確載入
-2. **測試表單提交**：填寫並提交表單以驗證資料處理
-3. **檢查回應式設計**：測試不同裝置和熒幕大小上的表單
-4. **驗證安全性**：確定CORS和反向連結篩選器正常運作
+1. **測試表單載入**：造訪您的表單 URL 並確認其正確載入
+2. **測試表單提交**：填寫並提交表單以確認資料處理
+3. **檢查回應式設計**：使用不同的裝置和螢幕尺寸測試表單
+4. **驗證安全性**：確保 CORS 和反向連結篩選器正常運作
 
 **預期結果：**
 
-- 表單載入且無錯誤
-- 所有表單欄位皆正確呈現
-- 表單提交程式成功
-- 資料會顯示在已設定的目的地（試算表、電子郵件等）
-- 沒有與CORS或安全性原則相關的主控台錯誤
+- 表單載入無錯誤
+- 所有表單欄位均正確呈現
+- 成功處理表單提交
+- 資料出現在所設定的目標 (試算表、電子郵件等)
+- 沒有與 CORS 或安全性原則相關的控制台錯誤
 
 +++
 
@@ -283,9 +283,9 @@ https://main--universaleditor--wkndforms.aem.page/content/forms/af/wknd-form
 
 
 - [設定表單提交動作](/help/edge/docs/forms/universal-editor/submit-action.md)
-- [表單的樣式和佈景主題](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
-- [建立回應式表單版面配置](/help/edge/docs/forms/universal-editor/responsive-layout.md)
-- [新增reCAPTCHA保護](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+- [設定表單的樣式和主題](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+- [建立回應式表單版面](/help/edge/docs/forms/universal-editor/responsive-layout.md)
+- [新增 reCAPTCHA 保護](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
 
 
 

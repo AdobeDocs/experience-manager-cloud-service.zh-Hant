@@ -7,7 +7,7 @@ exl-id: ac780399-34fe-457d-aaf4-b675656c024d
 source-git-commit: bf35f847f6f00d21915dfedb10cf38ea74344988
 workflow-type: tm+mt
 source-wordcount: '2493'
-ht-degree: 55%
+ht-degree: 62%
 
 ---
 
@@ -252,7 +252,7 @@ ht-degree: 55%
 }
 ```
 
-+++
++++ 
 
 +++ 進階自訂模式
 
@@ -368,10 +368,10 @@ ht-degree: 55%
 }
 ```
 
-- `.form .{Type}-wrapper`：根據欄位型別定位欄位包裝函式專案。 例如，`.form .text-wrapper`會鎖定所有文字欄位容器。
-- `.form .{Type}-wrapper input`：以包裝函式中的實際輸入元素為目標。 這是設定表單輸入樣式的建議模式。
-- `.form .field-{Name}`：根據特定欄位名稱的目標元素。 例如，`.form .field-first-name`會鎖定「名字」欄位容器。 使用`.form .field-{Name} input`以特定目標定位輸入專案。
-- **避免**： `main .form form .{Type}-wrapper` — 這會建立不必要的CSS特殊性，且較難維護。
+- `.form .{Type}-wrapper`：根據欄位類型設定欄位包裹器元素的樣式。例如，`.form .text-wrapper` 設定所有文字欄位容器的樣式。
+- `.form .{Type}-wrapper input`：設定包裹器內實際輸入元素的樣式。這是設定表單輸入樣式的建議模式。
+- `.form .field-{Name}`：根據特定欄位名稱設定元素的樣式。例如，`.form .field-first-name` 設定「名字」欄位容器的樣式。使用 `.form .field-{Name} input` 來專門設定輸入元素的樣式。
+- **避免使用**：`main .form form .{Type}-wrapper`，這會產生不必要的 CSS 權重，且更不容易維護。
 
 **一般元件的 CSS 選取器範例**
 
@@ -763,7 +763,7 @@ main .form .text-wrapper input {
 ```
 
 - Fieldset 元素可用作含有 panel-wrapper 類別和其他類別的面板容器，以便根據面板名稱 (field-login) 設定樣式。
-- 圖例元素(`<legend>`)做為面板標題，包含「登入資訊」文字和類別欄位標籤。 data-visible=&quot;false&quot; 屬性可以與 JavaScript 一起用來控制標題的可見度。
+- 圖例元素 (`<legend>`) 可用作面板標題，其中包含文字「登入資訊」和 field-label 類別。data-visible=&quot;false&quot; 屬性與 JavaScript 搭配使用，可以控制標題的可見度。
 - 在 fieldset 內部、多個。{Type}-wrapper 元素 (在本例中為 .text-wrapper 和 .password-wrapper) 代表面板中的個別表單欄位。
 - 每個包裝函式皆包含一個標籤、輸入欄位及說明，與先前的範例類似。
 
@@ -1158,7 +1158,7 @@ main .form .field-otp input {
 }
 ```
 
-此 CSS 的目標是位於具有類別 `field-otp` 的元素內的所有輸入元素。Edge Delivery Services表單結構遵循最適化Forms區塊慣例，其中容器標示為欄位特定類別，例如「field-otp」（針對名稱為「otp」的欄位）。
+此 CSS 的目標是位於具有類別 `field-otp` 的元素內的所有輸入元素。Edge Delivery Services 表單結構遵循自適應表單區塊慣例，其中使用欄位專屬類別來標記容器，例如名為「otp」的欄位以「field-otp」標記。
 
 
 ## CSS檔案結構與實作
@@ -1408,7 +1408,7 @@ https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/blocks/form/form.cs
 
 +++
 
-## 疑難排解CSS問題
+## CSS 問題疑難排解
 
 +++ CSS特殊性問題
 
@@ -1502,7 +1502,7 @@ main .form form .text-wrapper input {
 
 
 
-### **元件特定最佳實務**
+### **元件特定的最佳做法**
 
 
 +++ 按鈕樣式
@@ -1547,14 +1547,14 @@ main .form form .text-wrapper input {
 
 +++
 
-## 最佳實務摘要
+## 最佳做法摘要
 
-1. **使用CSS自訂屬性**：利用變數來設定一致的主題
-2. **遵循區塊式架構**：使用`.form`作為主要區塊選擇器
-3. **避免過度特殊性**：除非必要，否則請勿使用`main .form form`
-4. **目標包裝函式**：使用`.{Type}-wrapper`模式進行元件目標定位
-5. **維持一致性**：在整個專案中使用相同的選取器模式
-6. **跨裝置測試**：確保表單在行動裝置、平板電腦和桌上型電腦上運作正常
-7. **驗證協助工具**：確保樣式不會干擾熒幕閱讀程式或鍵盤導覽
+1. **使用 CSS 自訂屬性**：利用變數維持主題一致性
+2. **遵循區塊化架構**：使用 `.form` 作為主要區塊選擇器
+3. **避免權重過高**：除非有必要，請勿使用 `main .form form`
+4. **目標包裹器**：使用 `.{Type}-wrapper` 模式來針對元件設定樣式
+5. **維持一致性**：在整個專案中使用相同的選擇器模式
+6. **跨裝置測試**：確保表單在行動裝置、平板電腦和桌上型電腦上皆可正常運作
+7. **驗證無障礙設計**：確保樣式不會干擾螢幕閱讀器或鍵盤導覽功能
 
 
