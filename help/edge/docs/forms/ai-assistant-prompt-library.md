@@ -1059,4 +1059,4 @@ Set up **security monitoring** to detect and prevent unauthorized access to form
 
 如需完整的最佳實務和驗證准則，請參閱[Forms Experience Builder快速入門手冊](forms-ai-assistant-getting-started.md#best-practices)。
 
-*此提示程式庫會根據使用者意見與新的Forms Experience Builder功能持續更新。 如需了解最新功能和範例，請查看 [AEM Forms 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html)。*
+*此提示程式庫會根據使用者意見與新的Forms Experience Builder功能持續更新。 如需了解最新功能和範例，請查看 [AEM Forms 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=zh-Hant)。*
