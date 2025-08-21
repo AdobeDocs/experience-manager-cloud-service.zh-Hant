@@ -4,10 +4,10 @@ description: 內容複製工具可讓使用者根據需求，從AEM as a Cloud S
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: cf2f64dec2ff39ea237dd092b3049bf9b8cd40e7
+source-git-commit: 295b4be073376332f08a85d4e6e0e46cdb6482ea
 workflow-type: tm+mt
-source-wordcount: '1321'
-ht-degree: 35%
+source-wordcount: '1340'
+ht-degree: 34%
 
 ---
 
@@ -40,8 +40,8 @@ ht-degree: 35%
 
 | 內容副本功能 | AEM管理員群組 | 部署管理員角色 |
 |---|---|---|
-| 建立和修改[內容集](#create-content-set) | 不需要 | 必填 |
-| 開始獲取消[內容副本程序](#copy-content) | 必填 | 必填 |
+| 建立和修改[內容集](#create-content-set) | 不需要 | 必要 |
+| 開始獲取消[內容副本程序](#copy-content) | 必要 | 必要 |
 
 如需許可權及其設定方式的詳細資訊，請參閱[AEM as a Cloud Service團隊和產品設定檔](/help/onboarding/aem-cs-team-product-profiles.md)。
 
@@ -133,6 +133,7 @@ ht-degree: 35%
       * 生產
       * 中繼
       * 開發/RDE
+   * 依預設，會停用跨程式內容複製。 不過，根據客戶要求，可以啟用它，這將使額外的&#x200B;**目的地方案**&#x200B;輸入欄位可供使用。
 
 1. 如有必要，您也可以選擇在復製程式中&#x200B;**包含存取控制清單**。
 
@@ -193,7 +194,6 @@ ht-degree: 35%
 
 * 內容無法從較低層級的環境複製到較高層級的環境。
 * 內容只能從製作服務複製到製作服務。
-* 跨程序內容複製是不可能的。
 * 在同一環境中運行並發內容複製作業是不可能的。
 * 每個內容集最多可以指定50個路徑。 排除的路徑沒有數量限制。
 * 請勿使用內容複製工具作為複製或映象工具，因為它無法追蹤來源上已移動或刪除的內容。
