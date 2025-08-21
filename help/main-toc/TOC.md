@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: 750674bbd29ec1b29388579d77c7c15bd89335ab
+source-git-commit: 174e7a7591714e60b508a2d29ffdd4ccddf528db
 workflow-type: tm+mt
-source-wordcount: '6515'
+source-wordcount: '6520'
 ht-degree: 98%
 
 ---
@@ -1194,16 +1194,18 @@ ht-degree: 98%
          + [用 AEM 進行 Headless 編寫的基礎知識](/help/journey-headless/author/basics.md)
          + [了解如何在內容片段中使用參照](/help/journey-headless/author/references.md)
          + [了解如何為內容片段定義中繼資料和標記](/help/journey-headless/author/metadata-tagging.md)
++ AI 助理 {#ai-assistant-in-aem}
+   + [在AEM中設定AI助理](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md)
+   + [關於AEM中的AI助理](/help/implementing/cloud-manager/ai-assistant-in-aem.md)
 + 生成式 AI {#generative-ai}
    + [AEM as a Cloud Service 中的生成式 AI](/help/generative-ai/generative-ai-in-aem.md)
    + [產生變化版本：與 AEM 編輯器整合](/help/generative-ai/generate-variations-integrated-editor.md)
    + [產生變化版本](/help/generative-ai/generate-variations.md)
-   + [助理 (限量測試版)](/help/implementing/cloud-manager/aem-ai-assistant.md)
-   + [在AEM中設定AI助理](/help/implementing/cloud-manager/aem-ai-assistant-admin.md)
-   + [AEM Forms 適用的 AI 助理 (表單體驗建立工具)](/help/edge/docs/forms/forms-ai-assistant-overview.md)
-   + [AEM Forms的AI助理快速入門](/help/edge/docs/forms/forms-ai-assistant.md)
-   + [開始使用AEM Forms的AI Assistant (Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)
-   + [AEM Forms AI 助理 - 提示程式庫](/help/edge/docs/forms/ai-assistant-prompt-library.md)
+   + [AEM中的AI助理 — 設定](/help/implementing/cloud-manager/aem-ai-assistant-admin.md)
+   + [AEM (Beta)中的AI助理](/help/implementing/cloud-manager/aem-ai-assistant.md)
+   + [AEM Forms中的AI助理(Forms Experience Builder) （早期採用者）](/help/edge/docs/forms/forms-ai-assistant.md)
+   + [AEM Forms中的AI助理 — 提示程式庫](/help/edge/docs/forms/ai-assistant-prompt-library.md)
+   + [AEM Forms中的AI助理 — 快速入門](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)
 + 實施 {#implementing}
    + [實施 AEM as a Cloud Service 應用程式](/help/implementing/home.md)
    + 使用 Cloud Manager {#using-cloud-manager}

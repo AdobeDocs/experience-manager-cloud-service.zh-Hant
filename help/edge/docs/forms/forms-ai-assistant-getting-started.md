@@ -6,14 +6,13 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-exl-id: b8f64082-a23f-4919-ad66-042faad77d30
-source-git-commit: 750674bbd29ec1b29388579d77c7c15bd89335ab
+exl-id: da429952-ccc0-4579-a243-8bddeb73a0fb
+source-git-commit: 8be2b09200af58c701721b3e8537ea5e6cc3e4a2
 workflow-type: tm+mt
 source-wordcount: '1720'
 ht-degree: 15%
 
 ---
-
 
 # Forms Experience Builder快速入門
 
@@ -483,4 +482,4 @@ Forms Experience Builder也可以教導您AEM Forms功能：
 
 **仍需要協助嗎？**&#x200B;型別`/help`後接您的特定問題，或連絡您的系統管理員。
 
-如需其他支援，請參閱主要的[Forms Experience Builder提示程式庫](ai-assistant-prompt-library.md)，或連絡您的系統管理員以取得技術協助。
+如需其他支援，請參閱主要的[Forms Experience Builder提示程式庫](/help/edge/docs/forms/ai-assistant-prompt-library.md)，或連絡您的系統管理員以取得技術協助。

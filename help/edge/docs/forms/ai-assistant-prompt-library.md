@@ -6,14 +6,13 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-exl-id: c8f64082-a23f-4919-ad66-042faad77d31
-source-git-commit: 750674bbd29ec1b29388579d77c7c15bd89335ab
+exl-id: 333d42e0-625f-432e-a61b-5d49bf08765a
+source-git-commit: 8be2b09200af58c701721b3e8537ea5e6cc3e4a2
 workflow-type: tm+mt
 source-wordcount: '1338'
 ht-degree: 28%
 
 ---
-
 
 # Forms Experience Builder — 提示資料庫
 
@@ -141,7 +140,7 @@ Include a file upload field for @profilePicture with size limit of 5MB
 
 **使用時機：**&#x200B;需要建立新表單或修改現有表單時。
 
-**使用方式：**&#x200B;從頭開始建立或匯入並轉換（請參閱[快速入門手冊](forms-ai-assistant-getting-started.md#two-ways-to-create-forms)），選擇下列兩種方式之一：
+**使用方式：**&#x200B;從頭開始建立或匯入並轉換（請參閱[快速入門手冊](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)），選擇下列兩種方式之一：
 
 **範例提示 — 建立簡易表單：**
 
@@ -518,7 +517,7 @@ Configure **database integration** to save form submissions as records. Create n
 
 **何時使用：**&#x200B;當您有現有的表單、檔案或設計要轉換成現代AEM表單時。
 
-**如何使用：**&#x200B;上傳您的來源檔案並描述轉換需求（請參閱[匯入指南](forms-ai-assistant-getting-started.md#2-import-and-convert)）。
+**如何使用：**&#x200B;上傳您的來源檔案並描述轉換需求（請參閱[匯入指南](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)）。
 
 **提示範例 - PDF 表單轉換：**
 
@@ -1059,4 +1058,4 @@ Set up **security monitoring** to detect and prevent unauthorized access to form
 
 如需完整的最佳實務和驗證准則，請參閱[Forms Experience Builder快速入門手冊](forms-ai-assistant-getting-started.md#best-practices)。
 
-*此提示程式庫會根據使用者意見與新的Forms Experience Builder功能持續更新。 如需了解最新功能和範例，請查看 [AEM Forms 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=zh-Hant)。*
+*此提示程式庫會根據使用者意見與新的Forms Experience Builder功能持續更新。 如需了解最新功能和範例，請查看 [AEM Forms 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html)。*
