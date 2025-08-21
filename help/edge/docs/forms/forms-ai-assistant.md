@@ -3,22 +3,23 @@ title: AEM Forms 適用的 AI 助理 (表單體驗建立工具)
 description: 使用表單片段更快地製作強大的表單
 feature: Edge Delivery Services
 hide: true
+index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-exl-id: a8d64082-a23f-4919-ad66-042faad77d29
-source-git-commit: ab071b9159f3d4db275313080d7c14a46096c4de
-workflow-type: ht
-source-wordcount: '1141'
-ht-degree: 100%
+source-git-commit: 750674bbd29ec1b29388579d77c7c15bd89335ab
+workflow-type: tm+mt
+source-wordcount: '1145'
+ht-degree: 97%
 
 ---
 
-# AEM Forms 適用的 AI 助理 (表單體驗建立工具)
+
+# 開始使用AEM Forms的AI Assistant (Forms Experience Builder)
 
 >[!NOTE]
 >
 >
-> **早期採用者計劃**&#x200B;提供 AEM Forms 適用的 AI Assistant (Forms Experience Builder) 功能。如果您有興趣，請使用工作郵件地址向 mailto:aem-forms-ea@adobe.com 發送簡短電子郵件，要求該功能的存取權。
+> **早期採用者計劃**&#x200B;提供 AEM Forms 適用的 AI Assistant (Forms Experience Builder) 功能。如果您有興趣，請從您的工作地址快速傳送電子郵件至mailto:aem-forms-ea@adobe.com，以要求存取此功能。
 
 >[!IMPORTANT]
 >
