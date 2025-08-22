@@ -8,9 +8,9 @@ hide: true
 hidefromtoc: true
 exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
 feature: Adaptive Forms, Core Components
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1068'
 ht-degree: 4%
 
 ---
@@ -23,15 +23,15 @@ Forms轉換公用程式是[AEM現代化工具](https://opensource.adobe.com/aem-
 
 ## 什麼是AEM現代化工具？
 
-[AEM Modernize Tools](https://opensource.adobe.com/aem-modernize-tools/)是指一組公用程式或軟體應用程式，這些應用程式是專為協助現代化或更新Adobe Experience Manager (AEM)專案而設計。 這些工具通常有助於將AEM中的舊元件或功能轉換為更新、更有效率且受支援的替代方案。 「Forms轉換公用程式」安裝在「AEM現代化工具」下，以將以基礎元件為基礎的調適型Forms轉換為以核心元件為基礎的表單。
+[AEM Modernize Tools](https://opensource.adobe.com/aem-modernize-tools/)是指一組公用程式或軟體應用程式，這些應用程式旨在促進Adobe Experience Manager (AEM)專案的現代化或更新程式。 這些工具通常會協助將AEM中的舊元件或功能轉換為更新、更有效率且受支援的替代方案。 Forms轉換公用程式安裝在「AEM現代化工具」下，以將基於基礎元件的最適化Forms轉換為基於核心元件的表單。
 
-Forms轉換公用程式會將以舊版基礎元件為基礎的最適化Forms轉換為以新版核心元件為基礎的表單。 此轉換流程可確保表單符合現代標準和功能，潛在地改善效能、相容性，以及AEM環境內的維護便利性。
+Forms轉換公用程式會將以舊版基礎元件為基礎的最適化Forms轉換為以新版核心元件為基礎的表單。 此轉換流程可確保表單符合現代標準和功能，潛在地改善效能、相容性，以及AEM環境中的易維護性。
 
 ![AEM現代化工具](/help/forms/assets/aem-modernize-tools.png)
 
 >[!NOTE]
 > 
->建議在本機AEM設定上安裝AEM現代化工具。 將以基礎元件為基礎的最適化Forms移轉至以核心元件為基礎的表單。 下載表單及其資產。 然後，將表單及其資產上傳到所需的環境。
+>建議您在本機AEM設定上安裝AEM現代化工具。 將以基礎元件為基礎的最適化Forms移轉至以核心元件為基礎的表單。 下載表單及其資產。 然後，將表單及其資產上傳到所需的環境。
 
 ## 使用AEM現代化工具時的注意事項 {#considerations}
 
@@ -54,7 +54,7 @@ Forms轉換公用程式會將以舊版基礎元件為基礎的最適化Forms轉�
 ## 使用AEM現代化工具的先決條件
 
 * [設定AEM Forms的本機開發環境](/help/forms/setup-local-development-environment.md)。
-* [為您的環境啟用最適化Forms核心元件](/help/forms/enable-adaptive-forms-core-components.md)。
+* 安裝最新的Far，為AEM Cloud Service環境啟用最適化Forms核心元件。
 * 將您的使用者新增至[!DNL forms-users]群組。 [!DNL forms-users]群組的成員具有建立最適化表單的許可權。
 * 具有下列角色的使用者有權在AEM環境中安裝AEM現代化工具：
 
@@ -68,7 +68,7 @@ Forms轉換公用程式會將以舊版基礎元件為基礎的最適化Forms轉�
 若要安裝和設定AEM現代化工具：
 
 1. [安裝AEM現代化工具至您的本機AEM Forms環境](#install-aem-modernize-Tools)
-1. [為您的本機AEM Forms環境啟用AEM現代化工具](#enable-aem-modernize-Tools)
+1. [為您本機AEM Forms環境啟用AEM現代化工具](#enable-aem-modernize-Tools)
 
 ### 安裝AEM現代化工具至您的本機AEM Forms環境 {#install-aem-modernize-Tools}
 
@@ -79,13 +79,13 @@ Forms轉換公用程式會將以舊版基礎元件為基礎的最適化Forms轉�
 
    `java -jar aem-author-p4502.jar`
 
-1. 在本機系統中複製[AEM Modernize Tool](https://github.com/adobe/forms-modernizer)存放庫。
+1. 在本機系統中複製[AEM現代化工具](https://github.com/adobe/forms-modernizer)存放庫。
 
    ```Shell
    git clone [Path of Git repository of AEM Modernize Tool]
    ```
 
-   成功執行命令後，您的電腦上便有AEM Modernize Tool存放庫的本機復本。
+   成功執行命令後，您的電腦上會有AEM Modernize Tool存放庫的本機副本。
 
 1. 導覽至本機系統中的`[AEM Modernize Tool Repository]`。
 1. 執行以下命令：
@@ -101,12 +101,12 @@ Forms轉換公用程式會將以舊版基礎元件為基礎的最適化Forms轉�
 ![啟用AEM移轉公用程式工具](/help/forms/assets/enable-aem-modernizer-tools.png)
 
 
-### 為您的本機AEM Forms環境啟用AEM現代化工具{#enable-aem-modernize-Tools}
+### 為您本機AEM Forms環境啟用AEM現代化工具{#enable-aem-modernize-Tools}
 
 若要為您的AEM環境啟用並使用AEM現代化工具，請務必對應將基礎元件移轉至核心元件的規則：
 
 1. 登入您的作者執行個體。
-1. 瀏覽至`http://[host]:[port]/system/console/configMgr`
+1. 導覽至 `http://[host]:[port]/system/console/configMgr`
 1. 尋找並編輯`AEM Modernize Tools - Component Rewrite Rule Service`。
 1. 將`Component Rule Paths`新增為`/apps/forms-modernizer/rules`。
 1. 按一下「**儲存**」以儲存變更。
@@ -115,7 +115,7 @@ Forms轉換公用程式會將以舊版基礎元件為基礎的最適化Forms轉�
 
 ## 執行表單轉換公用程式，將基礎元件式表單轉換為核心元件式表單
 
-1. 移至&#x200B;**[!UICONTROL 工具> AEM現代化工具> Forms轉換]**。
+1. 前往&#x200B;**[!UICONTROL 工具> AEM現代化工具> Forms轉換]**。
 
    ![選取AEM現代化工具](/help/forms/assets/aem-modernize-tools-select-form.png)
 
@@ -136,15 +136,15 @@ Forms轉換公用程式會將以舊版基礎元件為基礎的最適化Forms轉�
 
    在本例中，已選取&#x200B;**複製到目標**&#x200B;選項。 如果選取&#x200B;**複製到目標**&#x200B;選項，**[!UICONTROL Source路徑]**&#x200B;和&#x200B;**[!UICONTROL 目標路徑]**&#x200B;選項就會變成可見。
 
-1. 在&#x200B;**[!UICONTROL Source路徑]**&#x200B;中指定`source folder`名稱。
-1. 在&#x200B;**[!UICONTROL 目標路徑]**&#x200B;中指定`target folder`名稱。
+1. 在`source folder`Source路徑&#x200B;**[!UICONTROL 中指定]**&#x200B;名稱。
+1. 在`target folder`目標路徑&#x200B;**[!UICONTROL 中指定]**&#x200B;名稱。
 1. 選取&#x200B;**[!UICONTROL 「下一步」]**。
 1. 按一下&#x200B;**[!UICONTROL 新增Forms]**。 `source folder`中的所有表單都會出現在畫面上。
 1. 選取以基礎元件為基礎的最適化Forms ，以將它轉換為以核心元件為基礎的表單。 您也可以選取多個表單。
 
    ![AEM現代化工具選取表單](/help/forms/assets/aem-modernize-tools-select-form.png)
 
-1. 按一下&#x200B;**[!UICONTROL 選取]**。
+1. 按一下「**[!UICONTROL 選取]**」。
 1. 按一下&#x200B;**[!UICONTROL 排程工作]**&#x200B;以開始轉換程式。
 1. 從&#x200B;**[!UICONTROL 轉換頁面]**&#x200B;對話方塊按一下&#x200B;**[!UICONTROL 轉換]**。
 
@@ -158,12 +158,12 @@ Forms轉換公用程式會將以舊版基礎元件為基礎的最適化Forms轉�
 
    ![AEM現代化工具目的地資料夾](/help/forms/assets/aem-modernize-tools-destination-folder.png)
 
-1. 選取&#x200B;**[!UICONTROL 儲存並關閉]**&#x200B;以再次儲存轉換表單的內容。
+1. 選取&#x200B;**[!UICONTROL 儲存並關閉]**以再次儲存轉換表單的內容。
    ![AEM現代化工具最適化表單屬性](/help/forms/assets/aem-modernize-tools-af-properties.png)
 
 您現在可以看到，以Foundation Components為基礎的最適化表單已轉換為以核心元件為基礎的最適化表單。
 
 ## 最佳做法 {#best-practices}
 
-* 確定您的Foundation元件式表單，僅使用具有同等可用[核心元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type)的元件。 若您使用沒有對等核心元件的基礎元件，則不會轉換基礎元件。 因此，它在編寫表單時無法正常運作
+* 確定您的Foundation元件式表單，僅使用具有同等可用[核心元件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type)的元件。 若您使用沒有對等核心元件的基礎元件，則不會轉換基礎元件。 因此，它在編寫表單時無法正常運作
 * 請確定將基礎元件轉換為核心元件的規則已格式化為XML。

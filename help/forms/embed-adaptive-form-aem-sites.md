@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: 64a8b363cff079aa0a6f56effd77830ac797deca
+source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
 workflow-type: tm+mt
-source-wordcount: '3145'
+source-wordcount: '3143'
 ht-degree: 5%
 
 ---
@@ -16,15 +16,15 @@ ht-degree: 5%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-aem-sites.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-aem-sites.html) |
 | AEM as a Cloud Service  | 本文章 |
 
 
 ## 概觀 {#overview}
 
-AEM Forms可讓表單開發人員順暢地將Adaptive Forms內嵌在AEM Sites頁面或AEM外部託管的網頁中。 內嵌的最適化表單功能齊全，使用者無須離開頁面即可填寫並提交表單。 它有助於使用者停留在網頁上其他元素的內容中，同時與表單互動。 這可讓您的使用者方便地填寫和提交表單，永遠不需要離開他們所在的頁面。 此整合提供一種便利的方法，可重複使用他們已建立的最適化Forms。
+AEM Forms可讓表單開發人員順暢地將最適化Forms內嵌在AEM Sites頁面或AEM外部託管的網頁中。 內嵌的最適化表單功能齊全，使用者無須離開頁面即可填寫並提交表單。 它有助於使用者停留在網頁上其他元素的內容中，同時與表單互動。 這可讓您的使用者方便地填寫和提交表單，永遠不需要離開他們所在的頁面。 此整合提供一種便利的方法，可重複使用他們已建立的最適化Forms。
 
-您可以使用AEM頁面編輯器快速將多個表單內嵌到您的AEM Sites頁面。 使用AEM頁面編輯器，內容作者就能運用Adaptive Forms元件的強大功能（包括動態行為、驗證、資料整合、產生記錄檔案和業務流程自動化），在Sites頁面中建立順暢的資料擷取體驗。 它也可讓您使用AEM Sites頁面的各種功能，例如，版本設定、目標定位、翻譯和多網站管理員。
+您可以使用AEM頁面編輯器快速將多個表單內嵌到您的AEM Sites頁面。 使用AEM頁面編輯器，內容作者就能利用最適化Forms元件的功能（包括動態行為、驗證、資料整合、產生記錄檔案和業務流程自動化），在Sites頁面內建立順暢的資料擷取體驗。 它也可讓您使用AEM Sites頁面的各種功能，例如，版本設定、目標定位、翻譯和多網站管理員。
 
 AEM Forms提供&#x200B;**[!UICONTROL 最適化表單容器]**&#x200B;和&#x200B;**[!UICONTROL 最適化Forms — 內嵌(v2)]**&#x200B;元件。 您可以使用&#x200B;**[!UICONTROL Adaptive Forms - Embed(v2)]**&#x200B;元件新增現有的Adaptive Form或使用Adaptive Forms編輯器建立表單，同時使用&#x200B;**[!UICONTROL Adaptive Form容器]**&#x200B;在Experience Fragment或AEM Sites頁面中建立新表單。
 
@@ -44,7 +44,7 @@ Using **[!UICONTROL Adaptive Forms – Embed(v2)]** in AEM Page Editor lets you 
 * **Tagging:** AEM Sites pages allow you to [assign tags or labels to a page, an asset, or other content](/help/implementing/developing/introduction/tagging-framework.md). Tags are keywords or metadata labels that provide a way to categorize and organize content based on specific criteria. You can assign one or more tags to pages, assets, or any other content items within AEM to improve search and categorize the assets. 
 * **Locking and Unlocking content:** AEM Sites allow users to [control access and modifications to pages](/help/sites-cloud/authoring/page-editor/edit-content.md) within the AEM Sites environment. When a page is locked, it means that it is protected from unauthorized changes or edits by other users. Only the user who has locked the content or a designated administrator can unlock it to allow modifications. 
 
-In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant#features). These Core Components provide a standard and easier methods to style and customize the components, identical to [AEM Sites WCM Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant).
+In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#features). These Core Components provide a standard and easier methods to style and customize the components, identical to [AEM Sites WCM Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=en).
 
 -->
 
@@ -60,7 +60,7 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 
 * **[建立自訂最適化表單並新增至AEM Sites頁面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md#create-an-adaptive-form-in-sites-editor-or-experience-fragment)：**&#x200B;您可以使用&#x200B;**[!UICONTROL 最適化表單容器]**&#x200B;元件，從頭開始建立全新的表單，根據您的需求和設計偏好設定量身打造。
 
-* **[建立自訂最適化表單並新增至體驗片段](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md#create-an-adaptive-form-in-sites-editor)：**&#x200B;您可以透過將表單新增至AEM體驗片段來擴大表單的覆蓋範圍，以便在多個頁面或網站之間無縫重複使用。
+* **[建立自訂最適化表單並新增至體驗片段](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md#create-an-adaptive-form-in-sites-editor)：**&#x200B;您可以透過將表單新增至AEM體驗片段來延伸表單的觸及，以便在多個頁面或網站之間無縫重複使用。
 
 * **將多個表單新增至AEM Sites頁面或體驗片段：**&#x200B;您可以建立多個最適化Forms或將多個最適化表單新增至AEM Sites頁面，以根據使用者的偏好和需求為其提供多個選擇。 您可以使用AEM頁面編輯器快速將多個表單內嵌到您的AEM Sites頁面。 您可以多次使用&#x200B;**[!UICONTROL 最適化表單容器]**&#x200B;元件，以在AEM Sites頁面中新增最適化Forms。 您必須選取&#x200B;**[!UICONTROL Form涵蓋影格的整個寬度]**&#x200B;選項，才能在AEM Sites頁面中多次使用&#x200B;**[!UICONTROL Adaptive Forms - Embed]**&#x200B;元件。 如果未核取&#x200B;**[!UICONTROL 表單涵蓋影格]**&#x200B;的整個寬度，AEM Sites頁面僅支援一個不含iframe的最適化表單存在。 若要使用&#x200B;**[!UICONTROL 最適化Forms — 內嵌]**&#x200B;元件新增更多最適化Forms，請選取&#x200B;**[!UICONTROL 表單涵蓋影格整個寬度]**&#x200B;選項。
 
@@ -77,7 +77,7 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 
 ### 為您的AEM Cloud Service環境啟用最適化Forms核心元件
 
-確保[已為您的 AEM Forms as a Cloud Service environment 環境啟用調適型表單核心元件](enable-adaptive-forms-core-components.md)。
+安裝最新的Far，為AEM Cloud Service環境啟用最適化Forms核心元件。
 
 ### 新增Adaptive Forms使用者端資料庫至您的AEM Sites頁面或體驗片段
 
@@ -88,7 +88,7 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 
 使用部署管道將&#x200B;**Customheaderlibs**&#x200B;和&#x200B;**Customfooterlibs**&#x200B;使用者端資料庫新增到您的AEM Sites頁面。 若要新增使用者端程式庫：
 
-1. 存取並原地複製您的 [AEM Cloud Service Git 存放庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/repositories.html?lang=zh-Hant)。
+1. 存取並原地複製您的 [AEM Cloud Service Git 存放庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/repositories.html)。
 1. 在純文字編輯器中開啟 AEM Cloud Service Git 存放庫資料夾。 例如，Microsoft® Visual Code。
 1. 開啟`ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customheaderlibs.html`檔案，並將下列程式碼新增至檔案：
 
@@ -126,15 +126,15 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
        </sly> 
    ```
 
-1. [執行部署管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html?lang=zh-Hant)，將客戶端資料庫部署到您的 AEM as a Cloud Service 環境。
+1. [執行部署管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html)，將客戶端資料庫部署到您的 AEM as a Cloud Service 環境。
 
 ### 啟用最適化Forms — 為您的AEM Sites頁面或體驗片段內嵌(v2)
 
 若要在範本的原則中啟用&#x200B;**[!UICONTROL Adaptive Forms - Embed(v2)]**&#x200B;元件，請執行下列步驟：
 
-1. 開啟AEM Sites頁面或體驗片段進行編輯。 若要開啟頁面進行編輯，請選取頁面，然後按一下[編輯]。**&#x200B;**
+1. 開啟AEM Sites頁面或體驗片段進行編輯。 若要開啟頁面進行編輯，請選取頁面，然後按一下[編輯]。****
 1. 開啟網站或體驗片段頁面的範本。 若要開啟範本，前往&#x200B;**[!UICONTROL 頁面資訊]** ![頁面資訊](/help/forms/assets/Smock_Properties_18_N.svg)>**[!UICONTROL 編輯範本]**。 它會在範本編輯器中開啟對應的範本。
-1. 在「結構」視圖中，在選單列中按一下&#x200B;**[!UICONTROL 「原則」]**![「原則」](/help/forms/assets/Smock_FeedManagement_18_N.svg)圖示。 在&#x200B;**[!UICONTROL 允許的元件]**&#x200B;清單中，選取&#x200B;**[AEM Archetype專案名稱] — 最適化表單**&#x200B;下的&#x200B;**[!UICONTROL 最適化Forms — 內嵌(v2)]**&#x200B;核取方塊。
+1. 在「結構」視圖中，在選單列中按一下&#x200B;**[!UICONTROL 「原則」]**![「原則」](/help/forms/assets/Smock_FeedManagement_18_N.svg)圖示。 在&#x200B;**[!UICONTROL 允許的元件]**&#x200B;清單中，選取&#x200B;**[!UICONTROL AEM原型專案名稱]** — 最適化表單&#x200B;**[下的]最適化Forms — 內嵌(v2)**&#x200B;核取方塊。
 1. 按一下&#x200B;**[!UICONTROL 「完成」]**。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419369?quality=12&learn=on)
@@ -163,7 +163,7 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 
    ![最適化Forms — 內嵌元件](/help/forms/assets/aemformcontainer.png)
 
-1. 從&#x200B;**[!UICONTROL 表單建立]**&#x200B;精靈建立新的最適化表單。
+1. 從&#x200B;**[!UICONTROL 表單建立]**精靈建立新的最適化表單。
 **[!UICONTROL 資產路徑]**&#x200B;已包含已建立的最適化表單的路徑
 1. 儲存設定。 最適化表單現在內嵌在頁面中。
 
@@ -182,7 +182,7 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 
    ![最適化Forms — 內嵌元件](/help/forms/assets/aemformcontainer.png)
 
-1. 從&#x200B;**[!UICONTROL 表單建立]**&#x200B;精靈建立新的最適化表單。
+1. 從&#x200B;**[!UICONTROL 表單建立]**精靈建立新的最適化表單。
 **[!UICONTROL 資產路徑]**&#x200B;已包含已建立的最適化表單的路徑
 1. 儲存設定。 最適化表單現在內嵌在體驗片段中。
 
@@ -339,9 +339,9 @@ AEM site also lets you create an Adaptive Form on the fly using the Adaptive For
 1. You can now embed an Adaptive Form on AEM site pages using the [!UICONTROL AEM Forms Container Component].
 -->
 
-## Publish內嵌式最適化表單 {#publishing-embedded-adaptive-form}
+## 發佈內嵌式最適化表單 {#publishing-embedded-adaptive-form}
 
-讓我們考慮下列在AEM Sites頁面中發佈內嵌式最適化表單的情況：
+讓我們考慮下列在AEM網站頁面中發佈內嵌式最適化表單的情況：
 
 * 如果您是第一次發佈AEM網站頁面，且其中包含內嵌的最適化表單，請發佈網站頁面和內嵌資產。
 * 如果您只修改已發佈網站頁面中內嵌的最適化表單，請發佈原始資產，而變更會反映在已發佈的網站頁面中。 已發佈的網站頁面包含對資產的引用，不需要重新發佈頁面。
@@ -360,7 +360,7 @@ AEM site also lets you create an Adaptive Form on the fly using the Adaptive For
 
 ## 最佳做法 {#best-practices}
 
-在AEM Sites頁面中內嵌最適化Forms時，請記住下列幾點：
+在AEM網站頁面中內嵌最適化Forms時，請記住下列幾點：
 
 * 內嵌表單中不包含原始表單的頁首和頁尾。
 * 使用者草稿和提交內嵌表單受到支援，並可在Forms Portal的草稿和已提交的Forms標籤中看到。

@@ -2,13 +2,13 @@
 title: 最適化Forms根據核心元件的版面配置功能為何？
 description: Adaptive Forms在各種裝置上的版面配置與外觀是由版面配置設定所控制。 瞭解各種版面以及如何套用它們。
 feature: Adaptive Forms, Core Components
-keywords: 根據核心元件的調適型表單佈局、表單的不同佈局、動態表單佈局AEM、AEM Cloud Service表單佈局、AEM核心元件中的表單佈局型別、調適型表單佈局
+keywords: 根據核心元件的調適型表單版面配置、表單的不同版面配置、動態表單版面配置AEM、AEM Cloud Service表單版面配置、AEM核心元件中的表單版面配置型別、調適型表單版面配置
 role: User, Developer, Admin
 exl-id: dcc01d84-0d39-4fa8-ac47-71a9aba91b1e
-source-git-commit: 7cb963794ca0d7a12d8007564c9fd6e49b53d5c4
+source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
 workflow-type: tm+mt
-source-wordcount: '2104'
-ht-degree: 1%
+source-wordcount: '2106'
+ht-degree: 15%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html) |
 | AEM as a Cloud Service （基礎元件） | [按一下這裡](/help/forms/layout-capabilities-adaptive-forms.md) |
 | AEM as a Cloud Service （核心元件） | 本文章 |
 
@@ -27,7 +27,7 @@ ht-degree: 1%
 
 ## 先決條件
 
-在探索版面的各種功能之前，請確定您的環境已啟用核心元件。 如需有關如何為您的環境啟用核心元件的詳細指示，[請按一下這裡](/help/forms/enable-adaptive-forms-core-components.md)。
+在探索版面的各種功能之前，請確定您的環境已啟用核心元件。 安裝最新的Far，為AEM Cloud Service環境啟用最適化Forms核心元件。
 
 ## 最適化Forms版面配置型別
 
@@ -40,25 +40,25 @@ ht-degree: 1%
 
 >[!BEGINTABS]
 
->[!TAB 面板配置]
+>[!TAB 面板版面]
 
-面板版面配置很適合用來組織相關欄位，讓您更輕鬆地導覽及尋找對應內容。 面板版面配置會將表單元件排列在最適化表單的不同區段或面板中。
+面板版面對於組織相關欄位而言非常實用，可以更輕鬆地導覽和尋找相應內容。面板版面配置會將表單元件排列在最適化表單的不同區段或面板中。
 
-![面板配置](/help/forms/assets/panel-layout.png)
+![面板版面](/help/forms/assets/panel-layout.png)
 
-面板布局
+面板版面
 
-您可以使用[面板元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)，在表單中新增面板配置。 如需如何設定面板元件各種屬性的詳細指示，請參閱[面板元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)文章。
+您可以使用[面板元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)在表單中新增面板版面。如需有關如何設定面板元件各種屬性的詳細說明，請參閱「[面板元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)」一文。
 
->[!TAB 精靈配置]
+>[!TAB 精靈版面]
 
-精靈配置將複雜表單分成不同的步驟，有助於簡化表單。 每個步驟代表流程的不同部分，使用者會依序瀏覽各個步驟，通常使用&#x200B;**下一個**&#x200B;和&#x200B;**上一個**&#x200B;按鈕。 您可以使用精靈版面配置來建立包含多個區段或步驟的表單。
+精靈配置將複雜表單分成不同的步驟，有助於簡化表單。 每個步驟代表流程的不同部分，使用者會依序瀏覽各個步驟，通常使用&#x200B;**下一個**&#x200B;和&#x200B;**上一個**&#x200B;按鈕。 您可以使用精靈版面來建立包含多個區段或步驟的表單。
 
-![精靈配置](/help/forms/assets/wizard-layout-compare.gif)
+![精靈版面](/help/forms/assets/wizard-layout-compare.gif)
 
-精靈配置
+精靈版面
 
-您可以使用[精靈元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard)在表單中新增精靈配置。 如需有關如何設定精靈元件各種屬性的詳細指示，請參閱[精靈元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard)文章。
+您可以使用[精靈元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard)在表單中新增精靈版面。如需有關如何設定精靈元件各種屬性的詳細說明，請參閱「[精靈元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard)」一文。
 
 >[!TAB 垂直索引標籤配置]
 
@@ -68,7 +68,7 @@ ht-degree: 1%
 
 垂直索引標籤配置
 
-您可以使用[垂直分頁元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)，在表單中新增垂直分頁配置。 如需有關如何設定垂直標籤元件各種屬性的詳細指示，請參閱[垂直標籤元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)文章。
+您可以使用[垂直分頁元件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)，在表單中新增垂直分頁配置。 如需有關如何設定垂直標籤元件各種屬性的詳細指示，請參閱[垂直標籤元件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)文章。
 
 
 >[!TAB 水準標籤配置]
@@ -80,18 +80,18 @@ ht-degree: 1%
 
 水準索引標籤配置
 
-您可以使用[水準標籤元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs)，在表單中新增水準標籤配置。 如需如何設定水準標籤元件各種屬性的詳細指示，請參閱[水準標籤元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs)文章。
+您可以使用[水準標籤元件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs)，在表單中新增水準標籤配置。 如需如何設定水準標籤元件各種屬性的詳細指示，請參閱[水準標籤元件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs)文章。
 
 
->[!TAB 收合式選單配置]
+>[!TAB 摺疊式版面]
 
-摺疊式功能表佈局會以最適化表單的可摺疊區段或面板顯示內容。 展開區段時，會在其中顯示內容，而其他區段仍會保持收合狀態。 此版面適合以精簡格式顯示大量資訊。
+摺疊式版面以自適應表單中的可摺疊區段或面板來顯示內容。當某個區段展開時，會顯示其中的內容，而其他區段則保持摺疊狀態。這種版面非常適合以精簡的表單顯示大量資訊。
 
-![收合式選單配置](/help/forms/assets/accordion-layout-compare.gif)
+![摺疊式版面](/help/forms/assets/accordion-layout-compare.gif)
 
-收合式選單版面配置
+摺疊式版面
 
-您可以使用[摺疊式功能表元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion)，在表單中新增摺疊式功能表配置。 如需如何設定摺疊式功能表元件的各種屬性的詳細指示，請參閱[摺疊式功能表元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion)文章。
+您可以使用[摺疊式元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion)在表單中新增摺疊式版面。如需有關如何設定摺疊式元件各種屬性的詳細說明，請參閱「[摺疊式元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion)」一文。
 
 >[!ENDTABS]
 
@@ -101,13 +101,13 @@ ht-degree: 1%
 
 請務必選擇正確的最適化表單版面配置，以最佳化使用者體驗和表單功能。 此表格可協助您瞭解可用的不同版面配置選項，並引導您根據特定需求和使用案例選取最適合的版面：
 
-| 功能 | 面板布局 | 精靈配置 | 索引標籤在頂端/垂直索引標籤版面配置中 | 索引標籤在左側/水準索引標籤配置 | 收合式選單版面配置 |
+| 功能 | 面板版面 | 精靈版面 | 索引標籤在頂端/垂直索引標籤版面配置中 | 索引標籤在左側/水準索引標籤配置 | 摺疊式版面 |
 |--------------------------|-----------------------------------------------------|----------------------------------------------------|-----------------------------------------------------|--------------------------------------------------------|--------|
-| **用途** | 將相關內容分組為不同的區段 | 引導使用者完成多步驟流程或表單 | 允許在同一頁面的區段/檢視之間切換 | 類似於頂端標籤，但垂直排列在左側 | 將內容組織成可摺疊的區段 |
-| **結構** | 不同的區段 | 循序步驟/頁面 | 頂端的水準索引標籤 | 左側垂直索引標籤 | 可摺疊面板/區段 |
-| **導覽** | 按一下面板標題以進行導覽 |  — 前進：「下一步」按鈕<br> — 後退：「後退」按鈕<br> — 選擇性略過步驟 | 按一下標籤以切換區段 | 按一下標籤以切換區段 | 按一下標題可展開/收合區段 |
-| **使用者體驗** | 以可管理的方式組織大量內容 | 逐步指導，減少負擔 | 清晰、可存取的檢視間切換 | 有效率地使用垂直空間，永遠顯示標籤 | 具有展開/收合區段的精簡檢視 |
-| **使用案例** | 具有已分類區段的複雜表單 | 設定程式、複雜表單 | 組織設定或內容類別 | 儀表板、複雜的資料檢視 | 常見問題集、設定功能表、詳細內容區段 |
+| **用途** | 將相關的內容分組到不同的區段 | 引導使用者完成多步驟流程或表單 | 允許在同一頁面的區段/檢視之間切換 | 類似於頂端標籤，但垂直排列在左側 | 將內容組織為可摺疊的區段 |
+| **結構** | 不同的區段 | 連續的步驟/頁面 | 頂端的水準索引標籤 | 左側垂直索引標籤 | 可摺疊的面板/區段 |
+| **導覽** | 按一下面板標頭進行導覽 | - 往前：「下一步」按鈕<br>- 往回：「返回」按鈕<br>- 選擇性跳過步驟 | 按一下標籤以切換區段 | 按一下標籤以切換區段 | 按一下標頭可展開/摺疊區段 |
+| **使用者體驗** | 以可管理的方式組織大量內容 | 逐步引導，減輕負荷 | 清晰、可存取的檢視間切換 | 有效率地使用垂直空間，永遠顯示標籤 | 使用展開/摺疊區段呈現精簡視圖 |
+| **使用案例** | 具有分類區段的複雜表單 | 設定流程、複雜的表單 | 組織設定或內容類別 | 儀表板、複雜的資料檢視 | 常見問題集、設定選單、詳細的內容區段 |
 
 
 ## 如何插入版面並在其中新增表單元件？
@@ -116,7 +116,7 @@ ht-degree: 1%
 
 ![新增版面配置與表單元件的工作流程](/help/forms/assets/workflow-to-add-component-to-a-layout.png)
 
-請考慮[最適化Forms配置型別](#adaptive-forms-layout-types)區段中顯示的&#x200B;**IT要求表單**。 此表單會收集員工因網路或筆記型電腦相關技術問題而得到的資訊。 它包含三個面板：
+請考慮&#x200B;**最適化Forms配置型別**&#x200B;區段中顯示的[IT要求表單](#adaptive-forms-layout-types)。 此表單會收集員工因網路或筆記型電腦相關技術問題而得到的資訊。 它包含三個面板：
 
 * **員工詳細資料**：面板會收集員工的相關資訊，並包含三個標示為「名稱」、「電子郵件ID」和「部門」的文字方塊。
 
@@ -223,7 +223,7 @@ ht-degree: 1%
 * [Drag and drop components into a layout's panel](#drag-and-drop-components-into-a-layouts-panel) -->
 
 1. 在面板中找出可新增元件的區段。
-1. 按一下&#x200B;**新增**&#x200B;圖示。 圖示是加號(+)，表示可新增元件的選項。
+1. 按一下&#x200B;**新增**圖示。 圖示是加號(+)，表示可新增元件的選項。
    ![插入版面配置](/help/forms/assets/tabs-on-top-add-component.png)
 
    按一下&#x200B;**新增**&#x200B;圖示會顯示&#x200B;**插入新元件**&#x200B;對話方塊，其中顯示要插入的各種元件。

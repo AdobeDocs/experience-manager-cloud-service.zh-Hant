@@ -3,13 +3,13 @@ title: 如何使用連結Forms Portal元件在AEM Sites頁面上新增表單連�
 description: 瞭解如何將表單連結新增至AEM Sites頁面。
 feature: Adaptive Forms, Core Components
 role: User, Developer, Admin
-source-git-commit: 31f18027d856cbd161457c4a01d6c7c17d1c2b89
+exl-id: a55d0776-8827-46cc-9625-5d6f5f6bda3b
+source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '536'
 ht-degree: 1%
 
 ---
-
 
 # 將表單連結新增至網站頁面
 
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ## 先決條件
 
-探索Forms Portal元件的各種功能之前，請確定您的環境已啟用核心元件。 如需有關如何為您的環境啟用核心元件的詳細指示，[請按一下這裡](/help/forms/enable-adaptive-forms-core-components.md)。
+探索Forms Portal元件的各種功能之前，請確定您的環境已啟用核心元件。 安裝最新的Far，為AEM Cloud Service環境啟用最適化Forms核心元件。
 
 將最新核心元件部署至您的環境後，您便可在編寫環境中存取Forms Portal元件。
 
@@ -31,7 +31,7 @@ ht-degree: 1%
 1. 移至&#x200B;**[!UICONTROL 頁面資訊]** > **[!UICONTROL 編輯範本]**
    ![編輯範本原則](/help/forms/assets/save-form-as-draft-edit-template.png)
 
-1. 按一下&#x200B;**[!UICONTROL 原則]**&#x200B;並選取&#x200B;**[AEM Archetype專案名稱] - Forms和通訊入口網站**&#x200B;下的&#x200B;**[!UICONTROL 連結]**&#x200B;核取方塊。
+1. 按一下&#x200B;**[!UICONTROL 原則]**，然後選取&#x200B;**[!UICONTROL AEM Archetype專案名稱]** - Forms和通訊入口網站&#x200B;**[下的]連結**&#x200B;核取方塊。
 
    ![原則選擇](/help/forms/assets/add-link.png)
 

@@ -4,9 +4,9 @@ description: 瞭解如何將基於核心元件的最適化表單另存為草稿�
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer
-source-git-commit: b0c2523a6ca8b097cb7cc101b71162c06e424e52
+source-git-commit: 0845447c1c4f47b77debd179f24eac95a0d2c2db
 workflow-type: tm+mt
-source-wordcount: '1365'
+source-wordcount: '1373'
 ht-degree: 3%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 3%
 
 # 將表單另存為草稿並列在網站頁面上
 
-<!--This article provides information about the Auto-save feature, which is currently available as a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).-->
+<!--This article provides information about the Auto-save feature, which is currently available as a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).-->
 
 假設使用者開始填寫表單，但需要暫停並在稍後返回。 AEM提供`save-as-draft`選項，讓使用者可將表單儲存為草稿以供日後完成。 為方便起見，AEM提供現成的&#x200B;**草稿與提交** Forms Portal元件，可在AEM Sites頁面上顯示草稿與提交。 元件會列出已儲存為草稿以供稍後完成的表單，以及已提交的表單。 只有登入的使用者可以編輯其草稿或檢視其提交的表單。 但是，如果匿名使用者使用&#x200B;**搜尋與清單製作者**&#x200B;元件瀏覽表單清單，並將表單儲存為草稿，則&#x200B;**草稿與提交**&#x200B;元件不會列出該草稿。 若要檢視草稿和提交，使用者必須在提交表單時登入。
 
@@ -22,7 +22,7 @@ ht-degree: 3%
 
 ## 必要條件
 
-* [為您的環境啟用最適化Forms核心元件](/help/forms/enable-adaptive-forms-core-components.md)。
+* 安裝最新的Far，為AEM Cloud Service環境啟用最適化Forms核心元件。
 
   將最新核心元件部署至您的環境後，您便可在編寫環境中存取Forms Portal元件。
 
@@ -41,17 +41,17 @@ ht-degree: 3%
    ![選取Azure儲存設定資料夾](/help/forms/assets/save-form-as-draft-select-config-folder.png)
 
 1. 在&#x200B;**[!UICONTROL 標題]**&#x200B;欄位中指定組態的標題。
-1. 在&#x200B;**[!UICONTROL Azure儲存體帳戶]**&#x200B;和&#x200B;**[!UICONTROL Azure存取金鑰]**&#x200B;欄位中指定[!DNL Azure]儲存體帳戶的名稱。
+1. 在[!DNL Azure]Azure儲存體帳戶&#x200B;**[!UICONTROL 和]** Azure存取金鑰&#x200B;**[!UICONTROL 欄位中指定]**&#x200B;儲存體帳戶的名稱。
 
    ![Azure 儲存體設定](/help/forms/assets/save-form-as-draft-azure-storage.png)
 
-   在`Azure Storage Account`文字方塊中輸入`Connection String`，在`Azure Access key`文字方塊中輸入`Azure Key`。
+   在`Connection String`文字方塊中輸入`Azure Storage Account`，在`Azure Key`文字方塊中輸入`Azure Access key`。
 
 1. 按一下「**儲存**」。
 
    >[!NOTE]
    >
-   > 您可以從[Microsoft Azure入口網站](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal)擷取&#x200B;**[!UICONTROL Azure儲存體帳戶]**&#x200B;和&#x200B;**[!UICONTROL Azure存取金鑰]**。
+   > 您可以從&#x200B;**[!UICONTROL Microsoft Azure入口網站]**&#x200B;擷取&#x200B;**[!UICONTROL Azure儲存體帳戶]**&#x200B;和[Azure存取金鑰](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal)。
 
    成功建立Azure儲存體設定後，請使用下列步驟設定Forms Portal的統一儲存體聯結器：
 
@@ -80,7 +80,7 @@ ht-degree: 3%
 1. 移至&#x200B;**[!UICONTROL 頁面資訊]** > **[!UICONTROL 編輯範本]**
    ![編輯範本原則](/help/forms/assets/save-form-as-draft-edit-template.png)
 
-1. 按一下&#x200B;**[!UICONTROL 原則]**，然後選取&#x200B;**[AEM原型專案名稱] - Forms和通訊入口網站**&#x200B;下的&#x200B;**[!UICONTROL 草稿與提交]**&#x200B;核取方塊。
+1. 按一下&#x200B;**[!UICONTROL 原則]**，然後選取&#x200B;**[!UICONTROL AEM原型專案名稱]** - Forms和通訊入口網站&#x200B;**[下的]草稿與提交**&#x200B;核取方塊。
 
    ![原則選擇](/help/forms/assets/save-form-as-draft-enable-policy.png)
 
@@ -159,11 +159,11 @@ ht-degree: 3%
 ## 使用草稿和提交元件在「網站」頁面上檢視草稿/提交的表單
 
 若要檢視已儲存的草稿或已提交的表單，請使用&#x200B;**草稿與提交** Forms入口網站元件。
-在「草稿與提交」元件[&#128279;](#configure-properties-of-the-drafts--submissions-component)的設定對話方塊中，選取&#x200B;**[!UICONTROL 選取型別]**&#x200B;作為&#x200B;**草稿Forms**&#x200B;時，儲存為草稿的表單會顯示在「網站」頁面上。 您可以按一下省略符號(...)來開啟草稿以完成表單。
+在「草稿與提交」元件**[!UICONTROL 的]**&#x200B;設定對話方塊中，選取&#x200B;**選取型別**&#x200B;作為[草稿Forms](#configure-properties-of-the-drafts--submissions-component)時，儲存為草稿的表單會顯示在「網站」頁面上。 您可以按一下省略符號(...)來開啟草稿以完成表單。
 
 ![草稿圖示](assets/drafts-component.png)
 
-在「草稿與提交」元件[&#128279;](#configure-properties-of-the-drafts--submissions-component)的設定對話方塊中，當&#x200B;**[!UICONTROL 選取型別]**&#x200B;選取為&#x200B;**已提交的Forms**&#x200B;時，已提交的表單就會出現。 您可以檢視已提交的表單，但無法編輯它們。
+在「草稿與提交」元件&#x200B;**[!UICONTROL 的]**&#x200B;設定對話方塊中，當&#x200B;**選取型別**&#x200B;選取為[已提交的Forms](#configure-properties-of-the-drafts--submissions-component)時，已提交的表單就會出現。 您可以檢視已提交的表單，但無法編輯它們。
 
 ![提交圖示](assets/submission-listing.png)
 

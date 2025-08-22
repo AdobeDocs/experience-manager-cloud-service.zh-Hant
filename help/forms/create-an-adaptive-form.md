@@ -8,10 +8,10 @@ level: Beginner
 hide: true
 hidefromtoc: true
 exl-id: 6f1c3fe7-b61e-47ce-b565-15b4904db092
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: e9c595d0afae5c29adf2842bfb2ee28a046b804c
 workflow-type: tm+mt
-source-wordcount: '2687'
-ht-degree: 77%
+source-wordcount: '2679'
+ht-degree: 78%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 77%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-adaptive-form.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/creating-adaptive-form.html) |
 | AEM as a Cloud Service  | 本文章 |
 
 最適化表單可讓您建立吸引人、回應式、動態且最適化的表單。AEM Forms 提供方便商業使用者使用的精靈，以便快速建立最適化表單。此精靈具有快速的標籤導覽，可輕鬆選取預先設定的範本、樣式、欄位和提交選項，以建立最適化表單。
@@ -38,7 +38,7 @@ ht-degree: 77%
 
 您必須符合以下條件才能建立最適化表單：
 
-* **為您的環境啟用最適化Forms核心元件**：當您建立方案時，最適化Forms核心元件已為您的環境啟用。 如果您有以 Archetype 39 或更早版本為基礎的 Forms as a Cloud Service 環境，請[為您的環境啟用最適化表單核心元件](enable-adaptive-forms-core-components.md)。為您的環境啟用核心元件後，**最適化表單 (核心元件)** 範本和畫布主題就會新增到您的環境中。如果您的 AEM SDK 版本比 2023.02.0 更舊，[請確定已`prerelease`在您的環境中啟用標幟](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hant#new-features)，因為最適化表單核心元件是 2023.02.0 版本之前搶鮮版的一部分。
+* **為您的環境啟用最適化Forms核心元件**：當您建立方案時，最適化Forms核心元件已為您的環境啟用。 安裝最新的Far，為AEM Cloud Service環境啟用最適化Forms核心元件。 為您的環境啟用核心元件後，**最適化表單 (核心元件)** 範本和畫布主題就會新增到您的環境中。如果您的 AEM SDK 版本比 2023.02.0 更舊，[請確定已`prerelease`在您的環境中啟用標幟](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hant#new-features)，因為最適化表單核心元件是 2023.02.0 版本之前搶鮮版的一部分。
 
 * **最適化表單範本**：此範本會提供基本結構並定義最適化表單的外觀 (版面和樣式)。其中具有包含特定屬性和內容結構的預先格式化元件。它也會提供定義主題和提交動作的選項。主題會定義外觀，而提交動作會定義提交最適化表單時要採取的動作。例如，將所收集的資料傳送到資料來源。雲端服務會提供一個名為 blank 的 OOTB 範本：
 
@@ -57,9 +57,9 @@ ht-degree: 77%
 
 1. 登入您的 [!DNL Experience Manager Forms] 作者執行個體；可以是 Cloud 執行個體或本機開發執行個體。
 
-1. 在 Experience Manager 登入頁面上輸入您的認證。登入後，在左上角選取&#x200B;**[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms和檔案]**。
+1. 在 Experience Manager 登入頁面上輸入您的認證。登入後，在左上角選取「**[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 表單]** > **[!UICONTROL 表單與文件]**」。
 
-1. 選取&#x200B;**[!UICONTROL 建立]** > **[!UICONTROL 最適化Forms]**。 此時會開啟精靈。在「來源」標籤中，選取一個範本：
+1. 選取「**[!UICONTROL 建立]**  > **[!UICONTROL 最適化表單]**」。此時會開啟精靈。在「來源」標籤中，選取一個範本：
 
    ![核心元件範本](/help/forms/assets/core-components-template.png){width="100%" align="center"}
 
@@ -117,7 +117,7 @@ ht-degree: 77%
 
 * **權限**：將您的使用者新增到 [!DNL forms-users]，以便為他們提供建立最適化表單的權限。如需表單特定之使用者群組的詳細清單，請參閱[群組和權限](forms-groups-privileges-tasks.md)。
 
-* **最適化表單主題**：主題包含元件和面板的樣式詳細資料。樣式包括背景顏色、狀態顏色、透明度、對齊方式和大小等屬性。套用主題時，指定的樣式會反映在對應的元件上。您可以[建立主題](themes.md)或[匯入現有主題](import-export-forms-templates.md#uploading-a-theme)。 您也可以針對一些範例主題部署[最新的原型版本](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=zh-Hant#create-project)。
+* **最適化表單主題**：主題包含元件和面板的樣式詳細資料。樣式包括背景顏色、狀態顏色、透明度、對齊方式和大小等屬性。套用主題時，指定的樣式會反映在對應的元件上。您可以[建立主題](themes.md)或[匯入現有主題](import-export-forms-templates.md#uploading-a-theme)。 您也可以針對一些範例主題部署[最新的原型版本](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html#create-project)。
 
 * **最適化表單範本**：此範本會提供基本結構並定義最適化表單的外觀 (版面和樣式)。其中具有包含特定屬性和內容結構的預先格式化元件。它也會提供定義主題和提交動作的選項。主題會定義外觀，而提交動作會定義提交最適化表單時要採取的動作。例如，將所收集的資料傳送到資料來源。雲端服務支援兩種類型的範本：
 
@@ -132,9 +132,9 @@ ht-degree: 77%
 
 1. 在 Experience Manager 登入頁面上輸入您的認證。
 
-   登入後，在左上角選取&#x200B;**[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms和檔案]**。
+   登入後，在左上角選取「**[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 表單]** > **[!UICONTROL 表單與文件]**」。
 
-1. 選取&#x200B;**[!UICONTROL 建立]** > **[!UICONTROL 最適化Forms]**。 此時會開啟精靈。
+1. 選取「**[!UICONTROL 建立]**  > **[!UICONTROL 自適應表單]**」。此時會開啟精靈。
 1. 在「來源」標籤中，選取一個範本：
 
    * 選取可編輯範本時，系統會自動選取範本中指定的主題和提交動作，且「**[!UICONTROL 建立]**」按鈕已啟用。您可以前往「**[!UICONTROL 樣式]**」或「**[!UICONTROL 提交]**」標籤，選取不同的主題或提交動作。如果選取的可編輯範本並未指定主題，則「建立」按鈕將維持停用狀態。您可以前往「**[!UICONTROL 樣式]**」標籤以手動選取主題。

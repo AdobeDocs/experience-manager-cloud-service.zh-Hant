@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: f3c9b798-8b20-4674-9b96-a3a0b143d947
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: 8d43f28e62a865b6b990678544e0d9589f17722a
 workflow-type: tm+mt
-source-wordcount: '711'
+source-wordcount: '719'
 ht-degree: 13%
 
 ---
@@ -33,7 +33,7 @@ AEM as a Cloud Service讓使用者可選擇使用XFA (XML Forms Architecture)表
 
 您需要下列專案，才能使用XFA表單範本或XDP檔案，根據核心元件建立最適化表單：
 
-* [為您的環境啟用最適化Forms核心元件](enable-adaptive-forms-core-components.md)。
+* 安裝最新的Far，為AEM Cloud Service環境啟用最適化Forms核心元件。
 * 建議熟悉下列領域：
    * 建立最適化表單
    * XFA (XML Forms架構)
@@ -76,7 +76,7 @@ AEM as a Cloud Service讓使用者可選擇使用XFA (XML Forms Architecture)表
 
    ![選取XDP檔案](/help/forms/assets/select-xdp-file.png)
 
-   熒幕上會顯示警告對話方塊。 按一下[確定]&#x200B;**&#x200B;**&#x200B;以繼續進行。
+   熒幕上會顯示警告對話方塊。 按一下[確定]****&#x200B;以繼續進行。
 
    ![警告對話方塊](/help/forms/assets/fdm-warning.png)
 
