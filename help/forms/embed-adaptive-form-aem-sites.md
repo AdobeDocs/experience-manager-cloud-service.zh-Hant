@@ -132,7 +132,7 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 
 若要在範本的原則中啟用&#x200B;**[!UICONTROL Adaptive Forms - Embed(v2)]**&#x200B;元件，請執行下列步驟：
 
-1. 開啟AEM Sites頁面或體驗片段進行編輯。 若要開啟頁面進行編輯，請選取頁面，然後按一下[編輯]。****
+1. 開啟AEM Sites頁面或體驗片段進行編輯。 若要開啟頁面進行編輯，請選取頁面，然後按一下[編輯]。**&#x200B;**
 1. 開啟網站或體驗片段頁面的範本。 若要開啟範本，前往&#x200B;**[!UICONTROL 頁面資訊]** ![頁面資訊](/help/forms/assets/Smock_Properties_18_N.svg)>**[!UICONTROL 編輯範本]**。 它會在範本編輯器中開啟對應的範本。
 1. 在「結構」視圖中，在選單列中按一下&#x200B;**[!UICONTROL 「原則」]**![「原則」](/help/forms/assets/Smock_FeedManagement_18_N.svg)圖示。 在&#x200B;**[!UICONTROL 允許的元件]**&#x200B;清單中，選取&#x200B;**[!UICONTROL AEM原型專案名稱]** — 最適化表單&#x200B;**[下的]最適化Forms — 內嵌(v2)**&#x200B;核取方塊。
 1. 按一下&#x200B;**[!UICONTROL 「完成」]**。
@@ -163,7 +163,7 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 
    ![最適化Forms — 內嵌元件](/help/forms/assets/aemformcontainer.png)
 
-1. 從&#x200B;**[!UICONTROL 表單建立]**精靈建立新的最適化表單。
+1. 從&#x200B;**[!UICONTROL 表單建立]**&#x200B;精靈建立新的最適化表單。
 **[!UICONTROL 資產路徑]**&#x200B;已包含已建立的最適化表單的路徑
 1. 儲存設定。 最適化表單現在內嵌在頁面中。
 
@@ -182,7 +182,7 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 
    ![最適化Forms — 內嵌元件](/help/forms/assets/aemformcontainer.png)
 
-1. 從&#x200B;**[!UICONTROL 表單建立]**精靈建立新的最適化表單。
+1. 從&#x200B;**[!UICONTROL 表單建立]**&#x200B;精靈建立新的最適化表單。
 **[!UICONTROL 資產路徑]**&#x200B;已包含已建立的最適化表單的路徑
 1. 儲存設定。 最適化表單現在內嵌在體驗片段中。
 

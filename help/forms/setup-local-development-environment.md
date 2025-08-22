@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # 設定AEM Forms的本機開發環境 {#overview}
 
-當您將[!DNL  Adobe Experience Manager Forms]設定為[!DNL  Cloud Service]環境時，您會在雲端上設定開發、測試和生產環境。 此外，您也可以設定本機開發環境。
+當您將[!DNL &#x200B; Adobe Experience Manager Forms]設定為[!DNL &#x200B; Cloud Service]環境時，您會在雲端上設定開發、測試和生產環境。 此外，您也可以設定本機開發環境。
 
 您可以使用本機開發環境執行以下動作，而無需登入雲端開發環境：
 
@@ -272,7 +272,7 @@ AEM Forms as a Cloud Services提供基於Docker的SDK環境，可更輕鬆地開
 >[!NOTE]
 >
 > 設定AEM Archetype 30或更新版本專案，以取得並使用Microsoft®Dynamics 365和Salesforce表單資料模型(FDM)與AEM Forms as a Cloud Service。
-> > 設定AEM Archetype 32版或更新版本的專案，以透過AEM Forms as a Cloud Service取得和使用Tranquil、Urbane和Ultraminary主題。
+> &#x200B;> 設定AEM Archetype 32版或更新版本的專案，以透過AEM Forms as a Cloud Service取得和使用Tranquil、Urbane和Ultraminary主題。
 
 若要設定專案：
 
