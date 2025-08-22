@@ -6,13 +6,13 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-exl-id: da429952-ccc0-4579-a243-8bddeb73a0fb
-source-git-commit: 8be2b09200af58c701721b3e8537ea5e6cc3e4a2
+source-git-commit: 9996bc602ae6169dd1aade622d5dbc5b1addeb54
 workflow-type: tm+mt
-source-wordcount: '1720'
+source-wordcount: '1737'
 ht-degree: 15%
 
 ---
+
 
 # Forms Experience Builder快速入門
 
@@ -97,11 +97,10 @@ ht-degree: 15%
 * **要求協助**：型別`/help`後面接著您的問題
 * **重複**：一次變更一次，以獲得最佳結果
 
-## 核心功能
 
-### 建立Forms的兩種方式
+## 開始建立表單的方法
 
-#### 1.從頭開始建立
+### 1.從自然語言提示開始
 
 以自然語言說明您的表單需求，Forms Experience Builder就會產生完整的表單結構：
 
@@ -111,17 +110,17 @@ ht-degree: 15%
 * 「建立包含評等、評論和產品類別的客戶意見回饋表單」
 * 「我需要多步驟登錄檔，才能參加具有付款處理功能的會議」
 
-#### 2.匯入及轉換
+### 2.匯入及轉換
 
 將現有的表單與檔案轉換為現代的互動式體驗：
 
 **支援的來源：**
 
-* **PDF forms**：上傳靜態PDF→具有驗證的互動式數位表單
-* **熒幕擷圖/影像**：紙張表單像片→功能數位版本
-* **HTML Forms**：基本網路表單→具有進階功能的增強型AEM Forms
-* **XFA Forms**：舊版Adobe表單→現代回應式表單
-* **URL**：具有改良UX→原生AEM Forms的現有網路表單
+* **PDF forms**：上傳靜態PDF以將其轉換為具有驗證的互動式數位表單。
+* **熒幕擷取畫面或影像**：上傳紙本表單的像片，以產生功能性的數位版本
+* **HTML Forms**：匯入基本網路表單並將其轉換為具有進階功能的增強型AEM Forms
+* **XFA Forms**：將舊版XFA型表單轉換為現代回應式表單
+* **URL**：將現有的網路表單轉換為具有改良UX的原生AEM Forms
 
 **如何匯入：**
 
@@ -482,4 +481,4 @@ Forms Experience Builder也可以教導您AEM Forms功能：
 
 **仍需要協助嗎？**&#x200B;型別`/help`後接您的特定問題，或連絡您的系統管理員。
 
-如需其他支援，請參閱主要的[Forms Experience Builder提示程式庫](/help/edge/docs/forms/ai-assistant-prompt-library.md)，或連絡您的系統管理員以取得技術協助。
+如需其他支援，請參閱主要的[Forms Experience Builder提示程式庫](ai-assistant-prompt-library.md)，或連絡您的系統管理員以取得技術協助。

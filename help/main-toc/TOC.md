@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: eaa3e3cccdffd7d3837fbe611b8b8a7e99f7d075
+source-git-commit: 9996bc602ae6169dd1aade622d5dbc5b1addeb54
 workflow-type: tm+mt
-source-wordcount: '6520'
+source-wordcount: '6537'
 ht-degree: 98%
 
 ---
@@ -1201,11 +1201,14 @@ ht-degree: 98%
    + [AEM as a Cloud Service 中的生成式 AI](/help/generative-ai/generative-ai-in-aem.md)
    + [產生變化版本：與 AEM 編輯器整合](/help/generative-ai/generate-variations-integrated-editor.md)
    + [產生變化版本](/help/generative-ai/generate-variations.md)
-   + [AEM中的AI助理 — 設定](/help/implementing/cloud-manager/aem-ai-assistant-admin.md)
-   + [AEM (Beta)中的AI助理](/help/implementing/cloud-manager/aem-ai-assistant.md)
-   + [AEM Forms中的AI助理(Forms Experience Builder) （早期採用者）](/help/edge/docs/forms/forms-ai-assistant.md)
-   + [AEM Forms中的AI助理 — 提示程式庫](/help/edge/docs/forms/ai-assistant-prompt-library.md)
-   + [AEM Forms中的AI助理 — 快速入門](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)
+   + [助理 (限量測試版)](/help/implementing/cloud-manager/aem-ai-assistant.md)
+   + [在AEM中設定AI助理](/help/implementing/cloud-manager/aem-ai-assistant-admin.md)
+   + [AEM Forms 適用的 AI 助理 (表單體驗建立工具)](/help/edge/docs/forms/forms-ai-assistant-overview.md)
+   + [AEM Forms的AI助理快速入門](/help/edge/docs/forms/forms-ai-assistant.md)
+   + [開始使用AEM Forms的AI Assistant (Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)
+   + [AEM Forms AI 助理 - 提示程式庫](/help/edge/docs/forms/ai-assistant-prompt-library.md)
+   + [Forms Experience Builder — 最佳做法](/help/edge/docs/forms/aem-forms-ai-assistant-best-practices.md)
+   + [Forms Experience Builder — 疑難排解指南](/help/edge/docs/forms/aem-forms-ai-assistant-troubleshooting.md)
 + 實施 {#implementing}
    + [實施 AEM as a Cloud Service 應用程式](/help/implementing/home.md)
    + 使用 Cloud Manager {#using-cloud-manager}
