@@ -53,7 +53,7 @@ Adobe建議使用Edge Delivery和[Adobe Commerce店面](https://experienceleague
 
 ### 使用您自己的店面(Headless AEM整合) {#own-storefront}
 
-您已有現成的店面（例如使用React JS建置），且想要使用Adobe Experience Manager進行內容管理和傳送（內容片段）、資產，以及內容內編輯（通用編輯器）。 您整合的起點是[Adobe Experience Manager as a Headless CMS簡介](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/headless/introduction)和[CIF附加元件](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/authoring/enrich-product-associated-content)。 CIF附加元件可讓您將產品資料順暢整合至AEM (在AEM UI中搜尋、瀏覽和尋找產品)，以便用於建立商務專屬體驗。
+您已有現成的店面（例如使用React JS建置），且想要使用Adobe Experience Manager進行內容管理和傳送（內容片段）、資產，以及內容內編輯（通用編輯器）。 您整合的起點是[Adobe Experience Manager as a Headless CMS簡介](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/headless/introduction)和[CIF附加元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/authoring/enrich-product-associated-content)。 CIF附加元件可讓您將產品資料順暢整合至AEM (在AEM UI中搜尋、瀏覽和尋找產品)，以便用於建立商務專屬體驗。
 
 ### AEM CIF店面 {#cif}
 
