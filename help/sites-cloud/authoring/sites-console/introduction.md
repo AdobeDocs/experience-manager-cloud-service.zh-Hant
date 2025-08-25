@@ -262,7 +262,7 @@ AEM工具列最右邊的&#x200B;**檢視**&#x200B;圖示表示目前選取的檢
 
 ## 範本
 
-在「欄檢視」或「清單檢視」中選取頁面時，您可輕鬆查看該頁 [**面所依據**](/help/sites-cloud/authoring/basic-handling.md#column-view)[**的範本**](/help/sites-cloud/authoring/basic-handling.md#list-view)。
+在「欄檢視」或「清單檢視」中選取頁面時，您可輕鬆查看該頁 [**面所依據**](/help/sites-cloud/authoring/basic-handling.md#column-view) [**的範本**](/help/sites-cloud/authoring/basic-handling.md#list-view)。
 
 ## AEM中的AI助理
 
