@@ -8,9 +8,9 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: a1b0eed7-b74c-4e72-8399-c473bbda9245
-source-git-commit: 7835fba8383893a961226a8cc77cc9c38d4f2959
+source-git-commit: 4c42888af1e846c011242af2c328e553bb811cfd
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '590'
 ht-degree: 5%
 
 ---
@@ -84,4 +84,4 @@ Widget也可以在頁面上調整大小和重新定位，以更符合您的需�
 
 ## AEM中的AI助理
 
-對於具有[已完成必要條件](/help/implementing/cloud-manager/aem-ai-assistant.md#get-access)的客戶，其組織的使用者可以使用AEM中的AEM AI Assistant 。 檢視AEM[中的](/help/implementing/cloud-manager/aem-ai-assistant.md)AI小幫手。
+對於具有[已完成必要條件](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access)的客戶，其組織的使用者可以使用AEM中的AI助理。 檢視AEM[中的](/help/implementing/cloud-manager/ai-assistant-in-aem.md)AI小幫手。

@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Adaptive Forms, Foundation Components
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
 role: User, Developer
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 4c42888af1e846c011242af2c328e553bb811cfd
 workflow-type: tm+mt
-source-wordcount: '2468'
-ht-degree: 94%
+source-wordcount: '2496'
+ht-degree: 93%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 94%
 
 >[!NOTE]
 >
-> Adobe建議針對[建立新的Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md)或[將Adaptive Forms新增至AEM Sites頁面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)，使用現代且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文說明使用基礎元件製作最適化Forms的舊方法。
+> Adobe建議針對[建立新的Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)或[將Adaptive Forms新增至AEM Sites頁面](/help/forms/creating-adaptive-form-core-components.md)，使用現代且可擴充的資料擷取[核心元件](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文說明使用基礎元件製作最適化Forms的舊方法。
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-forms-authoring.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-forms-authoring.html) |
 | AEM as a Cloud Service  | 本文章 |
 
 ## 概觀 {#overview}
@@ -157,7 +157,7 @@ XML 和 JSON 結構描述表示組織的後端系統產生或使用資料的結�
   </tr>
   <tr>
    <td>電子郵件</td>
-   <td><p>新增欄位以擷取電子郵件地址。電子郵件元件預設會使用以下規則運算式驗證電子郵件地址。</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_&grave;{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
+   <td><p>新增欄位以擷取電子郵件地址。電子郵件元件預設會使用以下規則運算式驗證電子郵件地址。</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
   </tr>
   <tr>
    <td>檔案附件</td>
@@ -363,6 +363,10 @@ J. **其他**：提供更多選項搭配所選元件使用。
 * **工具列：**&#x200B;最適化表單容器具有關聯的全域工具列，該工具列對於表單來說是全域的。可以使用編輯列中的&#x200B;**[!UICONTROL 新增工具列]**&#x200B;動作來新增此工具列，如此作者可新增動作，例如提交、儲存、重設等。
 
 * **資產：**&#x200B;此節點包含其他資訊用於編寫表單。例如，表單模型詳細資料、本地化詳細資料等。
+
+## AEM中的AI助理
+
+對於具有[已完成必要條件](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access)的客戶，其組織的使用者可以使用AEM中的AI助理。 檢視AEM[中的](/help/implementing/cloud-manager/ai-assistant-in-aem.md)AI小幫手。
 
 ## 另請參閱 {#see-also}
 
