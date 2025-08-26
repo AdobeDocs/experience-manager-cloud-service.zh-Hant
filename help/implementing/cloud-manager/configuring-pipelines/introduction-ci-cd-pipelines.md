@@ -6,10 +6,10 @@ exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 7a370ee0ab77046d128ae260af2575d50e655254
+source-git-commit: d065397b874cc24fb7af53e1258520f3e8270c55
 workflow-type: tm+mt
-source-wordcount: '1488'
-ht-degree: 35%
+source-wordcount: '1489'
+ht-degree: 33%
 
 ---
 
@@ -71,7 +71,7 @@ Cloud Manager 提供兩種類型的管道：
 | 生產或非生產 | 部署 | 完整堆疊 | 同時部署後端和前端程式碼構建以及 HTTPD/Dispatcher 配置 | 當前端計畫碼必須與AEM伺服器計畫碼同時部署時使用。 在尚未採用前端管道或Web層配置管道時使用。 |
 | 生產或非生產 | 部署 | 前端 | 部署包含一個或多個客戶端 UI 應用程序的前端程式碼建構。 | 支援多個併發的前端管道<br>比完整棧疊部署快得多。 |
 | 生產或非生產 | 部署 | Web層設定 | 部署 HTTPD/Dispatcher 配置 | 幾分鐘內部署 |
-| 生產或非生產 | 部署 | 設定 | 為與CDN、記錄檔轉送和清除維護工作相關的許多功能[&#128279;](/help/operations/config-pipeline.md)部署設定 | 幾分鐘內部署 |
+| 生產或非生產 | 部署 | 設定 | 為與CDN、記錄檔轉送和清除維護工作相關的許多功能[部署](/help/operations/config-pipeline.md)設定 | 幾分鐘內部署 |
 | 非生產 | 程式碼品質 | 完整棧疊 | 無需部署即可對完整堆疊程式碼執行程式碼品質掃描 | 支援多管道 |
 | 非生產 | 程式碼品質 | 前端 | 無需部署即可對前端程式碼執行程式碼品質掃描 | 支援多管道 |
 | 非生產 | 程式碼品質 | Web層設定 | 無需部署即可對Dispatcher設定執行程式碼品質掃描 | 支援多管道 |
@@ -102,7 +102,7 @@ Cloud Manager 提供兩種類型的管道：
 此外，如果您選擇引入[Web層配置管道](#web-tier-config-pipelines)，請注意完整棧疊管道的行為。
 
 * 如果存在對應的Web層配置管道，則環境的完整棧疊管道會忽略Dispatcher配置。
-* 如果環境對應的 Web 層配置管道不存在，使用者可以配置完整堆疊管道包括或忽略 Dispatcher 配置。
+* 如果環境對應的Web層配置管道不存在，使用者可以將完整棧疊管道配置為包含或忽略Dispatcher配置。
 
 完整堆疊管道可以是程式碼品質管道或部署。
 
