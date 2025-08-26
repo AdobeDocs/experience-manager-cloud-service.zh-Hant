@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 90e92cfb15a6dfe5a8a474996f52c8a0c689f5e6
+source-git-commit: 3067e88f8adea50f6b6b05e0466974bc57bc4a4e
 workflow-type: tm+mt
 source-wordcount: '607'
 ht-degree: 36%
@@ -33,7 +33,7 @@ ht-degree: 36%
 * GRANITE-60183： Apache Commons-fileupload 1.6.0。
 * GRANITE-60306：Apache Commons-lang至3.18.0。
 * GRANITE-60637：Apache Commons-codec至1.19.0。
-* GRANITE-60645： Apache Commons-ui 2.20.0。
+* GRANITE-60645： Apache commons-io 2.20.0。
 * GRANITE-60663： Apache Commons-text 1.14.0。
 * GRANITE-60714：Mongo Java驅動程式5.2。
 * GRANITE-60778： Filevault 4.0.0。
