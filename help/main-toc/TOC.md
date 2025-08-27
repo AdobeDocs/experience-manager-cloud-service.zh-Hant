@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: 37c1d1bda4543d0182952dc5ee84f8ff6dd6630f
+source-git-commit: 139c3d2f071a18336a5196bed0e33874b6eb5ce6
 workflow-type: tm+mt
 source-wordcount: '6549'
 ht-degree: 97%
@@ -1225,34 +1225,34 @@ ht-degree: 97%
       + [建立沙箱計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
       + [編輯計畫](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
       + [休眠環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
-      + 建立 AEM 應用程式專案 {#create-application-project}
-         + [專案建立精靈](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
-         + [專案設定](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
-         + [組建環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
-      + [管理環境](/help/implementing/cloud-manager/manage-environments.md)
-      + [專用測試環境 (Beta)](/help/implementing/cloud-manager/specialized-test-environment.md)
-      + 管理您的程式碼 {#managing-code}
-         + [Maven 專案版本處理](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
-         + [管理 Cloud Manager 中的存放庫](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
-         + [新增 Adobe 存放庫](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
-         + [新增私人存放庫](/help/implementing/cloud-manager/managing-code/private-repositories.md)
-         + [新增外部存放庫 (Beta)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
-         + [管理外部存放庫的存取權杖 (Beta)](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)
-         + [存取存放庫](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
-         + [Git 子模組支援](/help/implementing/cloud-manager/managing-code/git-submodules.md)
-         + [將 Git 與 Cloud Manager 一起使用](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
-         + [使用多個存放庫](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
-         + [企業開發團隊設定](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
-         + [GitHub 檢查設定](/help/implementing/cloud-manager/managing-code/github-check-config.md)
-         + [GitHub 檢查附註](/help/implementing/cloud-manager/managing-code/github-annotations.md)
-      + [環境變數](/help/implementing/cloud-manager/environment-variables.md)
-      + Cloud Manager CI-CD 管道 {#cicd-pipelines}
-         + [CI-CD 管道簡介](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
-         + [設定生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
-         + [設定非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
-         + [設定Edge Delivery Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)
-         + [管理管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
-         + [管道變數](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)
+   + 建立 AEM 應用程式專案 {#create-application-project}
+      + [專案建立精靈](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
+      + [專案設定](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
+      + [組建環境](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
+   + [管理環境](/help/implementing/cloud-manager/manage-environments.md)
+   + [專用測試環境 (Beta)](/help/implementing/cloud-manager/specialized-test-environment.md)
+   + 管理您的程式碼 {#managing-code}
+      + [Maven 專案版本處理](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
+      + [管理 Cloud Manager 中的存放庫](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
+      + [新增 Adobe 存放庫](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
+      + [新增私人存放庫](/help/implementing/cloud-manager/managing-code/private-repositories.md)
+      + [新增外部存放庫 (Beta)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
+      + [管理外部存放庫的存取權杖 (Beta)](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)
+      + [存取存放庫](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
+      + [Git 子模組支援](/help/implementing/cloud-manager/managing-code/git-submodules.md)
+      + [將 Git 與 Cloud Manager 一起使用](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
+      + [使用多個存放庫](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
+      + [企業開發團隊設定](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
+      + [GitHub 檢查設定](/help/implementing/cloud-manager/managing-code/github-check-config.md)
+      + [GitHub 檢查附註](/help/implementing/cloud-manager/managing-code/github-annotations.md)
+   + [環境變數](/help/implementing/cloud-manager/environment-variables.md)
+   + Cloud Manager CI-CD 管道 {#cicd-pipelines}
+      + [CI-CD 管道簡介](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
+      + [設定生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
+      + [設定非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
+      + [設定Edge Delivery Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)
+      + [管理管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
+      + [管道變數](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)
       + [部署您的程式碼](/help/implementing/cloud-manager/deploy-code.md)
       + 了解測試結果 {#test-results}
          + [概觀](/help/implementing/cloud-manager/overview-test-results.md)

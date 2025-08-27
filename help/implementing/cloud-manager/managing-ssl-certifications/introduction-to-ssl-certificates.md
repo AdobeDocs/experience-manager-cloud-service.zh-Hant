@@ -5,10 +5,10 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b0c8769b5941ed772a91cf189e8c7355d1db766b
+source-git-commit: f3cd1bc761c513ebb85351185e7aa0b6f6eb6f33
 workflow-type: tm+mt
-source-wordcount: '1160'
-ht-degree: 17%
+source-wordcount: '1100'
+ht-degree: 12%
 
 ---
 
@@ -17,12 +17,16 @@ ht-degree: 17%
 
 瞭解Cloud Manager提供的自助服務工具，用於安裝和管理SSL （安全通訊端層）憑證。
 
+<!-- Alexandru: contextual help links are broken, temporarily comminting this out until they,re fixed.
+
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_sslcert"
->title="管理 SSL 憑證"
->abstract="了解 Cloud Manager 如何利用自助服務工具來安裝和管理 SSL 憑證，協助您的使用者保護您的網站。Cloud Manager 使用平台 TLS 服務來管理客戶擁有並從第三方憑證授權單位獲得的 SSL 憑證和私密金鑰。"
->additional-url="https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="檢視、更新和取代 SSL 憑證"
->additional-url="https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="檢查 SSL 憑證狀態"
+>title="Manage SSL certificates"
+>abstract="Learn how Cloud Manager has self-service tools to install and manage SSL certificates to secure your site for your users. Cloud Manager uses a platform TLS service to manage SSL certificates and private keys owned by customers and obtained from third-party certification authorities."
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="View, Updating & Replace an SSL Certificate"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="Check Status of an SSL Certificate"
+
+-->
 
 ## 什麼是SSL憑證？ {#overview}
 
@@ -38,7 +42,7 @@ ht-degree: 17%
 
 Cloud Manager提供自助服務工具來安裝和管理SSL憑證，確保使用者的網站安全性。 Cloud Manager支援兩種管理憑證的模式。
 
-| | 模型 | 描述 |
+| | 模型 | 說明 |
 | --- | --- | --- |
 | A | **[Adobe管理的SSL憑證(DV)](#adobe-managed)** | Cloud Manager可讓使用者設定Adobe所提供的DV （網域驗證）憑證，以進行快速網域設定。 |
 | B | **[客戶管理的SSL憑證(OV/EV)](#customer-managed)** | Cloud Manager提供平台TLS （傳輸層安全性）服務，可讓您管理您所擁有的OV和EV SSL憑證，以及來自協力廠商憑證授權單位的私密金鑰，例如&#x200B;*Let&#39;s Encrypt*。 |
