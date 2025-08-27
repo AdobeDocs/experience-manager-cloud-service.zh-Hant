@@ -4,10 +4,10 @@ description: 了解 Adobe Experience Manager as a Cloud Service 中 Cloud Manage
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 8bd6fd4a7abcfbf37ba8aa458a9d2a035cca050e
+source-git-commit: 94a20e8e95edf603227bfadd07e4b4c62e6421e6
 workflow-type: tm+mt
-source-wordcount: '1403'
-ht-degree: 100%
+source-wordcount: '1402'
+ht-degree: 99%
 
 ---
 
@@ -31,7 +31,7 @@ AEM as a Cloud Service 中 Cloud Manager 2025.8.0 版的發行日期是 2025 年
 
   從 2025 年 8 月 19 日起，Adobe 將分階段向所有 Adobe Experience Manager 使用者推出新的 Experience Hub。
 
-  Experience Hub 是統一的起點，提供符合內容情境的個人化體驗，幫助使用者更快實現目標。該推出計畫於 2025 年 8 月 26 日結束，屆時所有使用者皆可使用。新的 Experience Hub 可直接透過 [experience.adobe.com](https://experience.adobe.com/) 存取。若想了解更多資訊，請參閱 [Adobe Experience Hub](/help/experience-hub.md)。
+  Experience Hub 是統一的起點，提供符合內容情境的個人化體驗，幫助使用者更快實現目標。該推出計畫於 2025 年 8 月 26 日結束，屆時所有使用者皆可使用。新的 Experience Hub 可直接透過 [experience.adobe.com](https://experience.adobe.com/) 存取。若要進一步瞭解，請參閱[Experience Hub](/help/experience-hub.md)。
 
 * **Edge Delivery Services 授權可以透過自助服務方式包含在 HIPAA 方案中**
 

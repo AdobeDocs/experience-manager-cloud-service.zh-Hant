@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: bf7f0a838d7826aacf27520ae09057c1214f8d73
+source-git-commit: 94a20e8e95edf603227bfadd07e4b4c62e6421e6
 workflow-type: tm+mt
-source-wordcount: '6549'
+source-wordcount: '6552'
 ht-degree: 97%
 
 ---
@@ -274,6 +274,8 @@ ht-degree: 97%
    + [權限管理的主體視圖](/help/security/touch-ui-principal-view.md)
    + [Sling Service 使用者對應和服務使用者定義的最佳做法](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
    + [Adobe as a Cloud Service 的客戶自控金鑰](/help/security/customer-managed-keys.md)
++ Experience Hub {#experience-hub}
+   + [關於Experience Hub](/help/experience-hub.md)
 + 上線 {#onboarding}
    + [從這裡開始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=zh-hant)
    + 上線歷程 {#journey}
@@ -1216,7 +1218,6 @@ ht-degree: 97%
    + [實施 AEM as a Cloud Service 應用程式](/help/implementing/home.md)
    + 使用 Cloud Manager {#using-cloud-manager}
       + [導覽](/help/implementing/cloud-manager/navigation.md)
-      + [Experience Hub](/help/experience-hub.md)
    + 方案 {#programs}
       + [方案和方案類型](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
       + [生產方案](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
