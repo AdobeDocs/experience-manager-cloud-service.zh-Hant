@@ -5,10 +5,10 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f3cd1bc761c513ebb85351185e7aa0b6f6eb6f33
+source-git-commit: f1e9b76742c8d97f44ff974fb8686fdcb3d804e6
 workflow-type: tm+mt
-source-wordcount: '1100'
-ht-degree: 12%
+source-wordcount: '1160'
+ht-degree: 17%
 
 ---
 
@@ -17,16 +17,12 @@ ht-degree: 12%
 
 瞭解Cloud Manager提供的自助服務工具，用於安裝和管理SSL （安全通訊端層）憑證。
 
-<!-- Alexandru: contextual help links are broken, temporarily comminting this out until they,re fixed.
-
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_sslcert"
->title="Manage SSL certificates"
->abstract="Learn how Cloud Manager has self-service tools to install and manage SSL certificates to secure your site for your users. Cloud Manager uses a platform TLS service to manage SSL certificates and private keys owned by customers and obtained from third-party certification authorities."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="View, Updating & Replace an SSL Certificate"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="Check Status of an SSL Certificate"
-
--->
+>title="管理 SSL 憑證"
+>abstract="了解 Cloud Manager 如何利用自助服務工具來安裝和管理 SSL 憑證，協助您的使用者保護您的網站。Cloud Manager 使用平台 TLS 服務來管理客戶擁有並從第三方憑證授權單位獲得的 SSL 憑證和私密金鑰。"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/cicd-pipelines/manage-ssl-certificates/managing-certificates" text="檢視、更新和取代 SSL 憑證"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/cicd-pipelines/manage-ssl-certificates/managing-certificates" text="檢查 SSL 憑證狀態"
 
 ## 什麼是SSL憑證？ {#overview}
 

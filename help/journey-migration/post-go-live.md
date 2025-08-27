@@ -4,25 +4,21 @@ description: 瞭解如何監控問題並改善效能。
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
 feature: Migration
 role: Admin
-source-git-commit: f3cd1bc761c513ebb85351185e7aa0b6f6eb6f33
+source-git-commit: f1e9b76742c8d97f44ff974fb8686fdcb3d804e6
 workflow-type: tm+mt
-source-wordcount: '417'
-ht-degree: 14%
+source-wordcount: '458'
+ht-degree: 22%
 
 ---
 
 # 上線後 {#post-go-live}
 
-<!-- Alexandru: contextual help links are broken, temporarily comminting this out until they,re fixed.
-
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_troubleshooting"
->title="Troubleshooting AEM"
->abstract="Review best practices for continuous development and management of logs. Learn about tools like Developer Console and CRXDE Lite to help with troubleshooting issues with AEM."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs" text="Accessing and Managing Logs"
->additional-url="https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service Development tools"
-
--->
+>title="AEM 的移難排解"
+>abstract="查看記錄持續開發和管理的最佳實務。了解 Developer Console 和 CRXDE Lite 等工具，以協助解決 AEM 的相關問題。"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/cicd-pipelines/manage-logs" text="存取和管理記錄檔"
+>additional-url="https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#aem-as-a-cloud-service-development-tools" text="AEM as a Cloud Service 開發工具"
 
 此歷程是最後一部分，協助您瞭解如何監視問題，並在移轉完成後改善效能。 確保清理暫存檔，檢閱持續開發的最佳實務，以及管理記錄。
 
