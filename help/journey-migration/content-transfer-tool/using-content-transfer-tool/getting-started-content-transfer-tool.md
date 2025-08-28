@@ -65,7 +65,7 @@ ht-degree: 14%
 >id="aemcloud_ctt_demo"
 >title="執行內容轉移工具"
 >abstract="了解如何使用內容轉移工具將內容移轉到 AEM as a Cloud Service (製作/發佈)。"
->additional-url="https://video.tv.adobe.com/v/35460/?quality=12&amp;learn=on" text=" 觀看示範"
+>additional-url="https://video.tv.adobe.com/v/35460/?quality=12&learn=on" text=" 觀看示範"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html#migration" text="教學課程 - 使用內容轉移工具"
 
 下一節適用於新版的「內容轉移工具」。 請詳閱本節，瞭解如何使用「內容轉移工具」將內容移轉至AEM as a Cloud Service：
