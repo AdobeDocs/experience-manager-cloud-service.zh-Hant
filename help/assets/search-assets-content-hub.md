@@ -3,16 +3,16 @@ title: 在 Content Hub 中搜尋資產
 description: 瞭解如何搜尋 [!DNL Content Hub]中的資產
 role: User
 exl-id: 8578d7d0-32b9-4e5c-80ef-3827e358ac6c
-source-git-commit: a0ca51bdf2cd4ece11e05243713a616e9fcb5850
+source-git-commit: 46c127fd56949281da7211225d25a40c6a867bbb
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '825'
 ht-degree: 0%
 
 ---
 
 # 在[!DNL Content Hub]中搜尋Assets {#search-assets}
 
-當存放庫中有大量資產時，搜尋合適的資產相當耗時。 [!DNL The Content Hub]搜尋可讓您尋找已核准的資產，這樣您就可以對資產執行其他動作，例如下載、共用或建立集合。 您可以利用各種功能來縮小搜尋結果的範圍，例如，執行文字式搜尋、使用篩選條件、執行標籤或智慧標籤特定搜尋、搜尋特定檔案格式等。
+當存放庫中有大量資產時，搜尋合適的資產相當耗時。 [!DNL The Content Hub]搜尋可讓您尋找已核准的資產，這樣您就可以對資產執行其他動作，例如下載、共用或建立集合。 您可以利用各種功能來縮小搜尋結果的範圍，例如執行文字式搜尋、使用篩選條件、執行標籤或智慧標籤特定搜尋、搜尋特定檔案格式等。
 
 ## 先決條件 {#prerequisites}
 
@@ -148,6 +148,24 @@ ht-degree: 0%
 
 -->
 
+## 大量搜尋 {#bulk-search}
+
+大量搜尋資產可讓您透過輸入識別碼清單（例如名稱、檔案格式、顏色、標籤等）同時查詢多個資產。 [!DNL Content Hub]大量搜尋可讓您更快找到您需要的資產，而不是一個一個地搜尋資產。 透過此功能，您可以為任何篩選器屬性輸入多個值(以分隔字元（例如，多個SKU ID）分隔)，並透過單一搜尋立即擷取所有相符的資產。
+
+若要一次搜尋多個資產，請透過分隔符號` [ , | \t | \r | \n | \r\n ]`分隔多個值，在單一查詢中輸入多個值。 您也可以根據使用案例新增更多分隔字元。 請參閱[設定大量搜尋](configure-content-hub-ui-options.md#bulk-search-configuration)。
+
+若要在[!DNL Content Hub]中執行大量搜尋，請執行下列步驟：
+
+1. 在[設定大量搜尋](configure-content-hub-ui-options.md#bulk-search-configuration)後，您可以在您設定的[!DNL Content Hub]篩選屬性上看到大量搜尋切換。 您可以視需要啟用或停用它。
+
+1. 新增搜尋查詢，該查詢包含設定中指定的分隔符號。 搜尋查詢應包含字串，且搭配多個逗號分隔值。
+
+![大量搜尋UI](assets/bulk-search-ui.png)
+
 ## 透過搜尋完成更多工作 {#do-more-with-search}
 
 [!DNL The Content Hub]不限於搜尋，而是可讓您直接從搜尋或預覽介面執行其他動作，例如[下載](download-assets-content-hub.md)、[共用](share-assets-content-hub.md)以及[新增資產至集合](collections-content-hub.md)。 在搜尋結果頁面上選取資產以檢視這些選項。
+
+深入瞭解[在 [!DNL Content Hub]](configure-content-hub-ui-options.md)中設定資產。
+
+
