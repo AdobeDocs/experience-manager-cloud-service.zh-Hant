@@ -21,8 +21,8 @@ ht-degree: 17%
 >id="aemcloud_golive_sslcert"
 >title="管理 SSL 憑證"
 >abstract="了解 Cloud Manager 如何利用自助服務工具來安裝和管理 SSL 憑證，協助您的使用者保護您的網站。Cloud Manager 使用平台 TLS 服務來管理客戶擁有並從第三方憑證授權單位獲得的 SSL 憑證和私密金鑰。"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/cicd-pipelines/manage-ssl-certificates/managing-certificates" text="檢視、更新和取代 SSL 憑證"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/cicd-pipelines/manage-ssl-certificates/managing-certificates" text="檢查 SSL 憑證狀態"
+>additional-url="https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/cicd-pipelines/manage-ssl-certificates/managing-certificates" text="檢視、更新和取代 SSL 憑證"
+>additional-url="https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/cicd-pipelines/manage-ssl-certificates/managing-certificates" text="檢查 SSL 憑證狀態"
 
 ## 什麼是SSL憑證？ {#overview}
 
