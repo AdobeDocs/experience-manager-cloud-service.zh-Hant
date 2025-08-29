@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 96022123209fff18548b77a4cbd63ccec697119b
+source-git-commit: 69147d156a6a3d441aca3cb9da089a3768dc593c
 workflow-type: tm+mt
-source-wordcount: '1902'
+source-wordcount: '1903'
 ht-degree: 46%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 46%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440931?quality=12&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -81,30 +81,30 @@ Content Hub現在讓您更快找到所需的資產。 使用新的大量搜尋�
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-* **日期與時間輸入元件**：現已提供日期與時間元件，可讓使用者使用行事曆和時鐘介面或透過以支援的格式手動輸入值，來選取日期與時間。
+* [日期與時間輸入元件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component)：現已提供日期與時間元件，可讓使用者使用行事曆和時鐘介面或透過以支援的格式手動輸入值，來選取日期與時間。
 * [加強檔案上傳的錯誤處理](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab)：檔案附件元件現在會根據允許清單自動驗證上傳的檔案型別。 如果使用者以不支援的格式上傳檔案，表單會在提交期間顯示錯誤。 元件也會檢查檔案內容以驗證其型別，增強表單的整體安全性。
-* **自訂提交動作的指定錯誤回應**：當自訂提交動作遇到未處理的錯誤時，會傳回錯誤代碼502。 這有助於識別問題與自訂提交動作相關，讓您更輕鬆進行偵錯。
+* [自訂提交動作的指定錯誤回應](/help/forms/custom-submit-action-troubleshooting.md)：當自訂提交動作遇到未處理的錯誤時，會傳回錯誤代碼502。 這有助於識別問題與自訂提交動作相關，讓您更輕鬆進行偵錯。
 * [從記錄檔案排除隱藏欄位](/help/forms/generate-document-of-record-core-components.md#document-of-record-settings)：已新增屬性，以允許從記錄檔案排除隱藏欄位。 依預設，此選項未選取且適用於所有表單欄位。
 
 ### AEM Forms中的搶鮮版功能
 
 * [產生並同步AFP轉譯](/help/forms/document-generation-afp-api.md)：您現在可以使用AEM Forms Communication API將XDP檔案轉換為AFP格式。 AFP是一種高效能格式，廣泛應用於大型企業印刷。
 * 規則編輯器中的&#x200B;**增強功能**
-   * **驗證和重設功能增強功能**：驗證和重設方法現在支援在面板、欄位和表單層級執行。 之前，系統僅支援表單層級。
-   * **現代JavaScript支援**：已新增自訂函式的ECMAScript 2019及更新版本功能支援，讓您撰寫更有效率、模組化且可重複使用的程式碼
-   * **規則編輯器中的下載DoR選項**：下載記錄檔案(DoR)的函式已在規則編輯器中新增為現成可用的(OOTB)選項。
+   * [函式清單中的驗證方法](/help/forms/rule-editor-enhancements-use-cases.md#validate-method-in-function-list)：驗證和重設方法現在支援在面板、欄位和表單層級執行。 之前，系統僅支援表單層級。
+   * [現代JavaScript支援](/help/forms/rule-editor-core-components-difference-tables.md)：已新增自訂函式的ECMAScript 2019及更新版本功能支援，讓您撰寫更有效率、模組化且可重複使用的程式碼
+   * [規則編輯器中的下載DoR選項](/help/forms/rule-editor-enhancements-use-cases.md#downloaddor-as-ootb-fuction-in-rule-editor)：下載記錄檔案(DoR)的函式已在規則編輯器中新增為現成可用的(OOTB)選項。
      ![記錄檔案](/help/forms/assets/document-of-record-rn.gif)
-   * **規則編輯器中的動態變數**：您現在可以在規則編輯器中使用動態（暫時）變數，以更靈活地定義條件和動作。 儲存暫時值不再需要隱藏欄位。
-   * **規則編輯器中的自訂事件型規則**：您現在可以定義自訂事件，並根據這些事件觸發規則。
-   * **內容感知可重複面板規則**：在可重複面板中，規則現在會根據內容執行，而非僅套用至最後一個面板執行個體。
-   * **由引數觸發的規則**：規則編輯器現在支援根據查詢引數、UTM引數或瀏覽器引數執行規則。
-   * **表單特定自訂函式**： Edge Delivery Services Forms現在支援表單特定自訂函式指令碼，在管理可重複使用的邏輯方面提供更大的彈性。
-   * **自訂函式的靜態匯入**： Universal Editor中的規則編輯器現在支援靜態匯入，可讓開發人員組織、共用及重複使用多個表單中的函式。
+   * [規則編輯器中的動態變數](/help/forms/rule-editor-enhancements-use-cases.md#support-for-dynamic-variables-in-rules)：您現在可以在規則編輯器中使用動態（暫時）變數，以更靈活地定義條件和動作。 儲存暫時值不再需要隱藏欄位。
+   * [自訂事件型規則支援](/help/forms/rule-editor-enhancements-use-cases.md#custom-event-based-rules-support)：您現在可以定義自訂事件，並根據這些事件觸發規則。
+   * [內容感知可重複面板規則](/help/forms/rule-editor-enhancements-use-cases.md#context-based-rule-execution-for-repeatable-panels)：在可重複面板中，規則現在會根據內容執行，而非僅套用至最後一個面板執行個體。
+   * [由引數觸發的規則](/help/forms/rule-editor-enhancements-use-cases.md#url-and-browser-parameter-based-rules-in-adaptive-forms)：規則編輯器現在支援根據查詢引數、UTM引數或瀏覽器引數執行規則。
+   * [表單特定自訂函式](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md#organizing-custom-functions-across-different-forms)： Edge Delivery Services Forms現在支援表單特定自訂函式指令碼，在管理可重複使用的邏輯方面提供更大的彈性。
+   * [自訂函式的靜態匯入](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md#static-imports-for-custom-functions)： Universal Editor中的規則編輯器現在支援靜態匯入，可讓開發人員組織、共用及重複使用多個表單中的函式。
 
 ### AEM Forms 的早期採用者功能
 
-* **手寫簽名元件**：您現在可以使用手寫簽名元件，協助使用者將他們的簽名新增至表單，例如合約表單。 元件可讓使用者使用滑鼠、手寫筆或觸控熒幕，直接在表單中繪製簽名。
-* **規則編輯器中的直接API整合**：最適化Forms現在支援視覺規則編輯器中的直接API整合，而不需要表單資料模型。 作者可使用URL或cURL匯入來設定API、對應輸入/輸出引數，以及使用驗證的安全呼叫。
+* [手寫簽名元件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature)：您現在可以使用手寫簽名元件，協助使用者將他們的簽名新增至表單，例如合約表單。 元件可讓使用者使用滑鼠、手寫筆或觸控熒幕，直接在表單中繪製簽名。
+* [規則編輯器中的直接API整合](/help/forms/api-integration-in-rule-editor.md)：最適化Forms現在支援視覺規則編輯器中的直接API整合，而不需要表單資料模型。 作者可使用URL或cURL匯入來設定API、對應輸入/輸出引數，以及使用驗證的安全呼叫。
 
 <!--
 **Forms Optimization opportunities**

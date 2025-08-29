@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: 在VRE中叫用服務增強功能，使用叫用服務填入下拉式選項，使用叫用服務的輸出設定可重複面板，使用叫用服務的輸出設定面板，使用叫用服務的輸出引數驗證其他欄位。
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: 8d43f28e62a865b6b990678544e0d9589f17722a
+source-git-commit: 4aecf84672ea60ad9688a974330a62be0a5fde86
 workflow-type: tm+mt
-source-wordcount: '1568'
+source-wordcount: '1586'
 ht-degree: 1%
 
 ---
@@ -218,6 +218,10 @@ ht-degree: 1%
 在`102`文字方塊中輸入`Pet ID`，並隱藏&#x200B;**提交**&#x200B;按鈕。
 
 ![輸出](/help/forms/assets/output4.png)
+
+>[!NOTE]
+>
+> 您也可以[直接在規則編輯器介面中整合API](/help/forms/api-integration-in-rule-editor.md)，而不使用預先定義的表單資料模型。
 
 ## 常見問題
 

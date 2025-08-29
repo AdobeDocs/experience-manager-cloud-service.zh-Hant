@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Intermediate
 exl-id: a369b585-d148-4b5a-8afe-d5673ea865d0
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: 03e46bb43e684a6b7057045cf298f40f9f1fe622
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1137'
 ht-degree: 4%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 4%
 
    **在哪裡可以找到此資訊？**
 
-   如需尋找這些詳細資訊的逐步指示，請參閱Adobe Experience League文章&quot;[存取Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hant#accessing-git)&quot;。
+   如需尋找這些詳細資訊的逐步指示，請參閱Adobe Experience League文章&quot;[存取Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)&quot;。
 
    **您的專案已就緒！**
 
@@ -268,7 +268,14 @@ ht-degree: 4%
 
    >[!NOTE]
    >
-   > 若要在AEM as a Cloud Service環境中檢視錯誤記錄檔，您可以使用Splunk。
+   > * 若要在AEM as a Cloud Service環境中檢視錯誤記錄檔，您可以使用Splunk。
+   > * 如果自訂提交動作服務遇到未處理的錯誤，AEM as a Cloud Service會傳回502錯誤頁面HTML。
+
+
+## 常見問題
+
+**問：為什麼我的最適化表單在提交後會顯示5.x.x錯誤頁面？**
+自訂提交動作服務因未處理的錯誤而失敗。 接著AEM Cloud Service會傳回其預設錯誤頁面。
 
 <!--
 ## Best practices

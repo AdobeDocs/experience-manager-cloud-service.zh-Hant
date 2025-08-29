@@ -4,9 +4,9 @@ description: 瞭解如何為最適化Forms核心元件的記錄檔案(DoR)產生
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: 2a780b6d1263fd70be6fc54fcc79282046f82fab
+source-git-commit: 03e46bb43e684a6b7057045cf298f40f9f1fe622
 workflow-type: tm+mt
-source-wordcount: '3207'
+source-wordcount: '3244'
 ht-degree: 1%
 
 ---
@@ -301,7 +301,7 @@ When you select a form model, configure Document of Record using options availab
 
 1. 選取&#x200B;**[!UICONTROL Forms — 記錄檔案]**&#x200B;類別。
 1. 選取&#x200B;**[!UICONTROL DoR基底範本]**。
-1. 按一下[下一步]&#x200B;**&#x200B;**&#x200B;並提供必要的資訊。
+1. 按一下[下一步]****&#x200B;並提供必要的資訊。
 
 1. （選擇性）修改您要在記錄檔案中欄位上套用的欄位樣式和外觀。
 1. 儲存表單。
@@ -348,7 +348,7 @@ When you select a form model, configure Document of Record using options availab
       * **對於核取方塊與選項按鈕元件，僅顯示選取的值**：設定屬性只會顯示[!UICONTROL 記錄檔案]中核取方塊與選項按鈕的選取值。
       * **多個值的分隔符號**：您可以選擇任何分隔符號，例如逗號或分行符號，以顯示多個值。
       * **選項對齊方式**：您可以選取想要的對齊方式（水準、垂直、與調適型表單相同），以設定在[!UICONTROL 記錄檔案]上顯示的核取方塊或選項按鈕等欄位對齊方式。 根據預設，[!UICONTROL 記錄檔案]中的欄位會設定垂直對齊方式。 從DoR的[!UICONTROL 表單欄位屬性]設定屬性，會覆寫最適化表單上欄位在[!UICONTROL 專案對齊方式]中設定的屬性。 如果您選取[!UICONTROL 與適用性表單相同]選項，適用性表單作者執行個體中設定的對齊方式會用於[!UICONTROL 記錄檔案]欄位。
-      * **水準對齊方式的選項數目**：您可以設定要在水準對齊方式的記錄檔案上顯示的選項數目。
+      * **水準對齊方式的選項數目**:You&#x200B;可以設定要在記錄檔案上顯示的水準對齊方式的選項數目。
 
 
 
@@ -415,6 +415,7 @@ When you select a form model, configure Document of Record using options availab
 * **將面板顯示為表格：**&#x200B;如果面板中有少於6個欄位，則設定屬性將面板顯示為記錄檔案中的表格。 僅適用於面板。
 * **從記錄檔案排除標題：**&#x200B;設定屬性會從記錄檔案排除面板/表格的標題。 僅適用於面板和表格。
 * **從記錄檔案排除描述：**&#x200B;設定屬性會從記錄檔案排除面板/表格的描述。 僅適用於面板和表格。
+* **從記錄檔案排除隱藏欄位**：選取此屬性會從記錄檔案排除隱藏欄位。 它適用於所有表單欄位。 依預設，未選取&#x200B;**從記錄檔案排除隱藏欄位**&#x200B;選項。
 
 **表單層級設定**
 

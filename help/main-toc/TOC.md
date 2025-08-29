@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: 95ec735cc1f95a23f0fea14aef2fc4011058d317
+source-git-commit: 4b41412a2c71d3e43ce5d6387ffb6d40fac2b18f
 workflow-type: tm+mt
-source-wordcount: '6557'
+source-wordcount: '6569'
 ht-degree: 97%
 
 ---
@@ -853,6 +853,7 @@ ht-degree: 97%
                + [在最適化表單中使用非同步函數](/help/forms/using-async-funct-in-rule-editor.md)
                + [對於基於核心元件的表單，在視覺規則編輯器中調用服務增強功能](/help/forms/invoke-service-enhancements-rule-editor.md)
                + [規則編輯器增強功能](/help/forms/rule-editor-enhancements-use-cases.md)
+               + [規則編輯器中的API整合](/help/forms/api-integration-in-rule-editor.md)
             + 以核心元件為主之自適應表單的自訂函數簡介{#create-and-use-custom-function-core-component}
                + [以核心元件為主之最適化表單的自訂函數簡介](/help/forms/create-and-use-custom-functions.md)
                + [建立和使用以核心元件為主之最適化表單的自訂函數](/help/forms/custom-function-core-component-create-function.md)
@@ -959,7 +960,6 @@ ht-degree: 97%
       + [建立互動式通訊片段](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
       + [互動式通訊簡介](/help/forms/introduction-to-interactive-communication.md)
       + [建立您的第一個互動式通訊](/help/forms/create-your-first-communication.md)
-      + [使用 AEM Forms API 產生 AFP 輸出](/help/forms/document-generation-afp-api.md)
       + [常見問題](/help/forms/interactive-communications-faq.md)
    + 以 Forms 為中心的工作流程 {#create-form-centric-workflows}
       + [以 Forms 為中心的工作流程簡介](/help/forms/aem-forms-workflow.md)
@@ -972,6 +972,7 @@ ht-degree: 97%
       + [通訊 API 簡介](/help/forms/aem-forms-cloud-service-communications-introduction.md)
       + [通訊 API - 同步處理](/help/forms/aem-forms-cloud-service-communications.md)
       + [通訊 API - 大量處理](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+      + [使用 AEM Forms API 產生 AFP 輸出](/help/forms/document-generation-afp-api.md)
       + [安裝及設定 Forms Designer](/help/forms/installing-configuring-designer.md)
       + [使用 Forms Designer 建立範本](/help/forms/use-forms-designer.md)
       + [在 Designer 中變更頁面零內容](/help/forms/changing-page-zero-content-designer.md)
@@ -994,6 +995,7 @@ ht-degree: 97%
       + [Dispatcher 和 CDN 快取](/help/forms/troubleshooting-caching-performance.md)
       + [重新啟動 AEM SDK](/help/forms/restart-aem-sdk.md)
       + [解決表單建立失敗的問題](/help/forms/form-creation-failing.md)
+      + [自訂提交動作中的502錯誤頁面](/help/forms/custom-submit-action-troubleshooting.md)
 + Screens {#screens-as-cloud-service}
    + Screens as a Cloud Service 概觀 {#overview}
       + [簡介](/help/screens-cloud/introduction/introduction.md)
