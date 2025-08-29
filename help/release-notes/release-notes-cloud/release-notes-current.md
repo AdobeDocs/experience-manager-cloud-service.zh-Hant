@@ -81,7 +81,7 @@ Content Hub現在讓您更快找到所需的資產。 使用新的大量搜尋�
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-* [日期與時間輸入元件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component)：現已提供日期與時間元件，可讓使用者使用行事曆和時鐘介面或透過以支援的格式手動輸入值，來選取日期與時間。
+* [日期與時間輸入元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component)：現已提供日期與時間元件，可讓使用者使用行事曆和時鐘介面或透過以支援的格式手動輸入值，來選取日期與時間。
 * [加強檔案上傳的錯誤處理](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab)：檔案附件元件現在會根據允許清單自動驗證上傳的檔案型別。 如果使用者以不支援的格式上傳檔案，表單會在提交期間顯示錯誤。 元件也會檢查檔案內容以驗證其型別，增強表單的整體安全性。
 * [自訂提交動作的指定錯誤回應](/help/forms/custom-submit-action-troubleshooting.md)：當自訂提交動作遇到未處理的錯誤時，會傳回錯誤代碼502。 這有助於識別問題與自訂提交動作相關，讓您更輕鬆進行偵錯。
 * [從記錄檔案排除隱藏欄位](/help/forms/generate-document-of-record-core-components.md#document-of-record-settings)：已新增屬性，以允許從記錄檔案排除隱藏欄位。 依預設，此選項未選取且適用於所有表單欄位。
@@ -103,7 +103,7 @@ Content Hub現在讓您更快找到所需的資產。 使用新的大量搜尋�
 
 ### AEM Forms 的早期採用者功能
 
-* [手寫簽名元件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature)：您現在可以使用手寫簽名元件，協助使用者將他們的簽名新增至表單，例如合約表單。 元件可讓使用者使用滑鼠、手寫筆或觸控熒幕，直接在表單中繪製簽名。
+* [手寫簽名元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature)：您現在可以使用手寫簽名元件，協助使用者將他們的簽名新增至表單，例如合約表單。 元件可讓使用者使用滑鼠、手寫筆或觸控熒幕，直接在表單中繪製簽名。
 * [規則編輯器中的直接API整合](/help/forms/api-integration-in-rule-editor.md)：最適化Forms現在支援視覺規則編輯器中的直接API整合，而不需要表單資料模型。 作者可使用URL或cURL匯入來設定API、對應輸入/輸出引數，以及使用驗證的安全呼叫。
 
 <!--
