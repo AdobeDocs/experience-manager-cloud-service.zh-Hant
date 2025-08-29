@@ -5,13 +5,13 @@ feature: Adaptive Forms, Core Components, Edge Delivery Services
 role: User, Developer
 level: Beginner, Intermediate
 keywords: 在規則編輯器中整合API，叫用服務增強功能
-source-git-commit: 5d25204516cb46334c4d594c16852b033f3e6c90
+exl-id: fc51f86d-e672-4513-b473-6700757a0c3d
+source-git-commit: 80dde7ddaa08d752391b4004d7c93e5baac9716e
 workflow-type: tm+mt
-source-wordcount: '1017'
+source-wordcount: '1021'
 ht-degree: 0%
 
 ---
-
 
 # 在規則編輯器中整合API
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> 規則編輯器中的API整合也適用於Edge Delivery Services Forms。
+> 規則編輯器中的API整合也適用於在Universal Editor[中編寫的](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)Edge Delivery Services Forms。
 
 ## 比較： API整合方法
 
@@ -76,6 +76,8 @@ ht-degree: 0%
    * **新增/刪除**：新增對應或移除現有對應。
 
 ## 使用案例：在簽證申請表單中填入國家/地區欄位
+
+>[!VIDEO](https://video.tv.adobe.com/v/3471606/rule-editor-api-integration/?quality=12&learn=on)
 
 **案例**：政府機構提供包含下列欄位的線上簽證申請表：
 

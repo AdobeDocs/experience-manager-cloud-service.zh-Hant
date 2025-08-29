@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 062ed441-6e1f-4279-9542-7c0fedc9b200
-source-git-commit: 85555ebe4bfa41bf01d7c5610fa5760551830b5c
+source-git-commit: 80dde7ddaa08d752391b4004d7c93e5baac9716e
 workflow-type: tm+mt
 source-wordcount: '1975'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # 規則編輯器增強功能和使用案例
 
-<span class="preview">這些是透過我們的<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hant#new-features">發行前通道</a>提供的發行前功能。 這些增強功能也適用於Edge Delivery Services Forms。
+<span class="preview">這些是透過我們的<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">發行前通道</a>提供的發行前功能。 這些增強功能也適用於Edge Delivery Services Forms。
 
 本文介紹Adaptive Forms中規則編輯器的最新增強功能。 這些更新可協助您更輕鬆地定義表單行為，而不需撰寫自訂程式碼，並建立更動態、回應速度更快、更個人化的表單體驗。
 
@@ -92,7 +92,7 @@ ht-degree: 0%
 
 ## 支援規則中的動態變數
 
-增強型規則編輯器支援建立和使用動態（暫時）變數。 您可以使用內建的&#x200B;**設定變數值**&#x200B;和&#x200B;**取得變數值**&#x200B;函式，在表單的整個生命週期中設定及擷取這些變數。
+增強型規則編輯器支援建立和使用動態（暫時）變數。 您可以使用內建的&#x200B;**設定變數值**&#x200B;和&#x200B;**取得變數值**函式，在表單的整個生命週期中設定及擷取這些變數。
 這些變數：
 
 * 未隨表單資料一起提交。
@@ -105,6 +105,8 @@ ht-degree: 0%
 
 在規則編輯器中使用設定變數值和取得變數值函式的&#x200B;**實作**
 
+>[!VIDEO](https://video.tv.adobe.com/v/3471607/get-set-variable-final-video/?quality=12&learn=on)
+
 已在&#x200B;**位址**&#x200B;片段上使用&#x200B;**設定變數值**&#x200B;函式設定規則，以指派名為&#x200B;**extracharge**&#x200B;的暫存變數。 此變數的值會根據選取的國家/地區動態變更。 例如：
 
 * 如果使用者選取「美國」，則&#x200B;**Extracharge**&#x200B;設定為500。
@@ -116,13 +118,13 @@ ht-degree: 0%
 
 ![取得變數值](/help/forms/assets/getvalue.png)
 
-**總出貨成本**&#x200B;欄位會隨著使用者變更國家或數量而動態更新，以反映產品成本和出貨費用。
+**總出貨成本**欄位會隨著使用者變更國家或數量而動態更新，以反映產品成本和出貨費用。
 ![輸出](/help/forms/assets/getsetvalue-output.png)
 
 >[!NOTE]
 >
-> 您也可以在When條件中新增&#x200B;**Get Variable value**&#x200B;函式。
-> &#x200B;> ![條件](/help/forms/assets/when-get-variable.png){width=50%，height=50%，align=center}中的取得變數值函式
+> 您也可以在When條件中新增&#x200B;**Get Variable value**函式。
+> > ![條件](/help/forms/assets/when-get-variable.png){width=50%，height=50%，align=center}中的取得變數值函式
 
 此方法可啟用動態即時計算，而不會在表單中新增額外欄位，保持結構簡潔且方便使用。
 
@@ -135,6 +137,9 @@ ht-degree: 0%
 此表單不是直接將邏輯繫結至欄位，而是使用包含&#x200B;**分派事件**&#x200B;和&#x200B;**觸發事件**&#x200B;的事件型方法，以改善模組化及可維護性。
 
 **使用分派事件和觸發事件時的實作**
+
+
+>[!VIDEO](https://video.tv.adobe.com/v/3471610/dispatch-trigger-final/?quality=12&learn=on)
 
 登入片段會新增至表單，包含預先定義的使用者名稱和密碼欄位。 在&#x200B;**取得OTP**&#x200B;按鈕上設定規則以顯示&#x200B;**驗證面板**，其中包含輸入及驗證OTP的輸入欄位。
 
