@@ -92,7 +92,7 @@ ht-degree: 0%
 
 ## 支援規則中的動態變數
 
-增強型規則編輯器支援建立和使用動態（暫時）變數。 您可以使用內建的&#x200B;**設定變數值**&#x200B;和&#x200B;**取得變數值**函式，在表單的整個生命週期中設定及擷取這些變數。
+增強型規則編輯器支援建立和使用動態（暫時）變數。 您可以使用內建的&#x200B;**設定變數值**&#x200B;和&#x200B;**取得變數值**&#x200B;函式，在表單的整個生命週期中設定及擷取這些變數。
 這些變數：
 
 * 未隨表單資料一起提交。
@@ -116,13 +116,13 @@ ht-degree: 0%
 
 ![取得變數值](/help/forms/assets/getvalue.png)
 
-**總出貨成本**欄位會隨著使用者變更國家或數量而動態更新，以反映產品成本和出貨費用。
+**總出貨成本**&#x200B;欄位會隨著使用者變更國家或數量而動態更新，以反映產品成本和出貨費用。
 ![輸出](/help/forms/assets/getsetvalue-output.png)
 
 >[!NOTE]
 >
-> 您也可以在When條件中新增&#x200B;**Get Variable value**函式。
-> > ![條件](/help/forms/assets/when-get-variable.png){width=50%，height=50%，align=center}中的取得變數值函式
+> 您也可以在When條件中新增&#x200B;**Get Variable value**&#x200B;函式。
+> &#x200B;> ![條件](/help/forms/assets/when-get-variable.png){width=50%，height=50%，align=center}中的取得變數值函式
 
 此方法可啟用動態即時計算，而不會在表單中新增額外欄位，保持結構簡潔且方便使用。
 
