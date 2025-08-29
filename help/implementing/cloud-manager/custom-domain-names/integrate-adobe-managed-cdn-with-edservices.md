@@ -6,10 +6,10 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 2d2a206fea14d7e786a98e848bc2f2592ac65429
+source-git-commit: 71ea3b810d4145d5581c29e26db9bc157c425a15
 workflow-type: tm+mt
 source-wordcount: '477'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -70,13 +70,10 @@ Edge Delivery Services可使用下列兩個選項之一進行設定。 各有不
 
 ## 先決條件 {#prerequisites}
 
-1. 在Cloud Manager中建立您的網站
- — 兩種部署模式都需要使用。 關注登入AEM網站。
+1. 在Cloud Manager中布建您的網站 — 兩種部署模式都需要。 關注登入AEM網站。
 
-2. 自備Git (BYOG) （選購）
- — 如果您將網站程式碼儲存在Adobe Git之外，請完成BYOG上線。
+2. 自備Git (BYOG) （選用） — 如果您將網站程式碼儲存在Adobe Git之外，請完成BYOG上線。
 
-3. Edge Delivery授權
- — 確認您的程式已獲得Edge Delivery Services授權。
+3. Edge Delivery授權 — 確保您的程式已獲得Edge Delivery Services的授權。
 
 
