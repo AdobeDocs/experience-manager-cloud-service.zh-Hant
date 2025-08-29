@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: b09452637fd86af8fc71101f98e05597a8fe630e
+source-git-commit: 39cfcc26181ca651dda8d6f492c588397a865ea4
 workflow-type: tm+mt
-source-wordcount: '2885'
+source-wordcount: '2920'
 ht-degree: 2%
 
 ---
@@ -134,6 +134,18 @@ ht-degree: 2%
    * 選取計數以開啟顯示所有語言副本的對話方塊。 若要開啟特定語言副本，請按一下對話方塊中的&#x200B;**標題**。
 
      ![內容片段主控台 — 語言對話方塊](assets/cf-managing-console-languages-dialog.png)
+
+* **工作流程**
+
+   * 僅資訊
+
+   * 選取特定片段的圖示：
+
+     ![內容片段主控台 — 工作流程圖示](assets/cf-managing-console-workflows-icon.png)
+
+     開啟對話方塊，其中包含片段工作流程（過去和目前）的詳細資訊。：
+
+     ![內容片段主控台 — 工作流程對話方塊](assets/cf-managing-console-workflows-dialog.png)
 
 ## 動作 {#actions}
 
