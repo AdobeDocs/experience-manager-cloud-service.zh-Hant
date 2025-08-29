@@ -4,7 +4,7 @@ description: 了解如何存取 Cloud Manager，以便您可以設定專案資�
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
 feature: Onboarding
-source-git-commit: 841e30bc279a3859ce9a302b18ddf566d8163100
+source-git-commit: 0db48ef4c15b6ca530b2626f7078c7172c872fff
 workflow-type: tm+mt
 source-wordcount: '909'
 ht-degree: 63%
@@ -42,7 +42,7 @@ Cloud Manager 是 AEM as a Cloud Service 的重要元件，可作為您團隊的
 
    回到上一步[將團隊成員指派給Cloud Manager產品設定檔](assign-profiles-cloud-manager.md)，以取得關於將&#x200B;**業務負責人**&#x200B;角色指派給系統管理員的詳細資訊。
 
-1. 在[experience.adobe.com](https://experience.adobe.com/)登入Cloud Manager。
+1. 在[experience.adobe.com](https://experience.adobe.com)登入Cloud Manager。
 1. 在快速存取群組中，按一下&#x200B;**Experience Manager**。
 1. 在左側面板中，按一下&#x200B;**Cloud Manager**。
 
