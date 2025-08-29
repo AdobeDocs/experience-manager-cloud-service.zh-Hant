@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: bda1ef43d452222036e9df20b6f3acee7bec8855
+source-git-commit: b09452637fd86af8fc71101f98e05597a8fe630e
 workflow-type: tm+mt
-source-wordcount: '2724'
+source-wordcount: '2885'
 ht-degree: 2%
 
 ---
@@ -246,18 +246,83 @@ ht-degree: 2%
 
 ## 複製內容片段 {#copy-a-content-fragment}
 
+<!--
+**Copy** creates a copy of the selected fragment at its location.
+
+* In the **Copy** action you can select whether to **Copy with children** (referenced fragments). This allows you to copy both the selected Content Fragment and all referenced fragments. AEM:
+
+  * Creates a copy of the selected Content Fragment at its location.
+  * Creates copies of all fragments that are referenced by the selected fragment; these are copied to the same location as the original referenced fragment.
+
+* The copy of the selected fragment will reference the copies of the referenced fragments.
+
+* A deep copy is made; so if a referenced Content Fragment also references fragments, these are copied as well.
+
+* The **Copy** action does not affect other referenced content, such as assets or images. The reference (Content Reference) is copied as part of the new fragment, but not the asset/image content itself.
+
+So, if we start with:
+
+```xml
+FolderA 
+    FragmentA (inside FolderA)
+    | 
+    |___FolderB/FragmentB (referenced by FragmentA)
+
+FolderB
+   FragmentB
+```
+
+Copying FragmentA to FolderC, would result in:
+
+```xml
+FolderA 
+    FragmentA (inside FolderA)
+    | 
+    |___FolderB/FragmentB (referenced by FragmentA)
+
+FolderB
+    FragmentB
+    Copy_of_FragmentB
+
+FolderC
+    Copy_of_FragmentA
+    | 
+    |___FolderB/Copy_of_FragmentB (referenced by Copy_of_FragmentA)
+```
+-->
+
+<!-- CQDOC-22785 - will replace above text -->
+
 **副本**&#x200B;會在其位置建立所選片段的副本。
 
-* 在&#x200B;**複製**&#x200B;動作中，您可以選取是否&#x200B;**複製具有子系** （參考的片段）。 這可讓您複製所選的內容片段和所有參考的片段。 AEM：
+* 在&#x200B;**複製**&#x200B;動作中，您可以選取是否&#x200B;**複製也參考的內容片段**。 這可讓您複製所選的內容片段和所有參考的片段。 AEM：
 
    * 在其位置建立所選內容片段的副本。
-   * 建立所選片段參考的所有片段復本；這些片段會複製到與原始參考片段相同的位置。
+   * 建立所選片段參考的所有片段復本。
+
+     參考片段複製到[的](#locations-that-the-referenced-fragments-are-copied-to)位置取決於您選取的選項：
+
+      * **複製到選取的資料夾**
+選取後，參照的片段會複製到與原始選取片段相同的位置。
+
+      * **複製到其原始位置**
+參考的片段會複製到與原始參考片段相同的位置。 這是預設值，未選取任何選項時將使用。
 
 * 所選片段的副本將引用所引用片段的副本。
 
 * 會製作深層副本；因此，如果參考的內容片段也參考片段，也會復製片段。
 
 * **複製**&#x200B;動作不會影響其他參照的內容，例如資產或影像。 參考（內容參考）會作為新片段的一部分複製，而不是資產/影像內容本身。
+
+### 參考片段複製到的位置 {#locations-that-the-referenced-fragments-are-copied-to}
+
+複製內容片段時，您可以使用&#x200B;**複製參考的內容片段**&#x200B;以及相關的選項來指定應該將參考的片段複製到何處：
+
+![復製片段](/help/sites-cloud/administering/content-fragments/assets/cf-managing-copy.png)
+
+#### 複製到其原始位置 {#copy-to-their-original-locations}
+
+當您選取「**複製到其原始位置**」時，參考的片段會複製到與原始參考片段相同的位置。 如果未選取任何專案，此為預設動作。
 
 因此，如果我們從開始：
 
@@ -289,75 +354,11 @@ FolderC
     |___FolderB/Copy_of_FragmentB (referenced by Copy_of_FragmentA)
 ```
 
-<!-- CQDOC-22785 - will replace above text -->
+#### 複製到選定資料夾 {#copy-to-the-selected-folder}
 
-<!--
-**Copy** creates a copy of the selected fragment at its location.
+選取後，參照的片段會複製到與原始選取片段相同的位置。
 
-* In the **Copy** action you can select whether to **Copy also referenced content fragments**. This allows you to copy both the selected Content Fragment and all referenced fragments. AEM:
-
-  * Creates a copy of the selected Content Fragment at its location.
-  * Creates copies of all fragments that are referenced by the selected fragment.
-
-    The [locations that the referenced fragments are copied to](#locations-that-the-referenced-fragments-are-copied-to) depends on the option you select:
-
-    * **Copy to the selected folder**
-      When selected, the referenced fragments are copied to the same location as the original selected fragment. 
-
-    * **Copy to their original locations**
-      The referenced fragments are copied to the same location as the original referenced fragment. This is the default, and will be used when no option is selected.
-
-* The copy of the selected fragment will reference the copies of the referenced fragments.
-
-* A deep copy is made; so if a referenced Content Fragment also references fragments, these are copied as well.
-
-* The **Copy** action does not affect other referenced content, such as assets or images. The reference (Content Reference) is copied as part of the new fragment, but not the asset/image content itself.
-
-### Locations that the referenced fragments are copied to {#locations-that-the-referenced-fragments-are-copied-to}
-
-When copying Content Fragments you can specify where referenced fragments should be copied to with **Copy also referenced content fragments** and the related options:
-
-![Copy fragments](/help/sites-cloud/administering/content-fragments/assets/cf-managing-copy.png)
-
-#### Copy to their original locations {#copy-to-their-original-locations}
-
-When you select **Copy to their original locations**, the referenced fragments are copied to the same location as the original referenced fragment. This is also the default action when no selection is made.
-
-So, if we start with:
-
-```xml
-FolderA 
-    FragmentA (inside FolderA)
-    | 
-    |___FolderB/FragmentB (referenced by FragmentA)
-
-FolderB
-   FragmentB
-```
-
-Copying FragmentA to FolderC, would result in:
-
-```xml
-FolderA 
-    FragmentA (inside FolderA)
-    | 
-    |___FolderB/FragmentB (referenced by FragmentA)
-
-FolderB
-    FragmentB
-    Copy_of_FragmentB
-
-FolderC
-    Copy_of_FragmentA
-    | 
-    |___FolderB/Copy_of_FragmentB (referenced by Copy_of_FragmentA)
-```
-
-#### Copy to the selected folder {#copy-to-the-selected-folder}
-
-When selected, the referenced fragments are copied to the same location as the original selected fragment.
-
-So, if we start with:
+因此，如果我們從開始：
 
 ```xml
 FolderA 
@@ -370,7 +371,7 @@ FolderB
    FragmentB
 ```
 
-Copying FragmentA to FolderC, would result in:
+將FragmentA複製到FolderC會導致：
 
 ```xml
 FolderA 
@@ -388,7 +389,6 @@ FolderC
    |___./Copy_of_FragmentB (referenced by FragmentA)
    Copy_of_FragmentB
 ```
--->
 
 ## 檢視和管理標籤 {#manage-tags}
 
