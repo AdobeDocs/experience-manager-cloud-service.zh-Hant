@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 69147d156a6a3d441aca3cb9da089a3768dc593c
+source-git-commit: 4a1dcc9f069bdf8f5cf8abaa3f784f5ebd4922cc
 workflow-type: tm+mt
 source-wordcount: '1903'
 ht-degree: 46%
@@ -130,7 +130,7 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 
 ### 即將棄用Java API {#java-api-deprecation}
 
-數個已棄用的API將於8月31日目標移除，因此將不再參考。 在9月初，如果偵測到API使用量，將會傳送Action Center通知，9月25日後，在Cloud Manager建置期間將會顯示通知，以強調移除使用量的重要性。 如需完整詳細資訊，請參閱[淘汰文章](/help/release-notes/deprecated-removed-features.md#aem-apis)，但為了方便起見，下列API如下：
+數個已棄用的API將於8月31日目標移除，因此將不再參考。 在9月初，如果偵測到API使用情形，系統會傳送Actions Center通知，9月25日後，在Cloud Manager建置期間會顯示通知，強調移除使用情形的重要性。 如需完整詳細資訊，請參閱[淘汰文章](/help/release-notes/deprecated-removed-features.md#aem-apis)，但為了方便起見，下列API如下：
 
 <details>
   <summary>展開以檢視Java API淘汰</summary>
