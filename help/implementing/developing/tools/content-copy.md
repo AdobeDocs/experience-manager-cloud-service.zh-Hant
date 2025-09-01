@@ -4,16 +4,19 @@ description: 內容複製工具可讓使用者根據需求，從AEM as a Cloud S
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 295b4be073376332f08a85d4e6e0e46cdb6482ea
+source-git-commit: 28a9e32395b73edff46cabba1dcc6c4134594fc6
 workflow-type: tm+mt
-source-wordcount: '1340'
-ht-degree: 34%
+source-wordcount: '1450'
+ht-degree: 31%
 
 ---
 
 # 內容複製工具 {#content-copy}
 
 內容複製工具可讓使用者根據需求，從AEM as a Cloud Service上的生產環境複製可變內容，以便用於測試目的的較低環境。
+
+>[!NOTE]
+>雖然主要內容複製流程是從較高的環境複製到較低的環境，但附加功能&#x200B;**正向流程**&#x200B;允許從較低的非生產環境複製到較高的非生產環境(例如Dev → Stage、RDE → Stage)。 請參閱[限制](#limitations)以取得詳細資料，包括可用性需求。
 
 ## 簡介 {#introduction}
 
@@ -105,7 +108,7 @@ ht-degree: 34%
 建立內容集後，您就可以用它來複製內容。 請依照下列步驟操作，以便複製內容。
 
 >[!NOTE]
-> 當[內容轉移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)作業正在環境中執行時，請勿在該環境中使用內容複製。
+> 當[內容轉移](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)作業正在環境中執行時，請勿在該環境中使用內容復本。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織和計畫。
 
@@ -132,7 +135,7 @@ ht-degree: 34%
    * 內容只能從較高的環境複製到較低的環境，或在開發/RDE環境之間複製，其中環境的階層如下所示（從最高到最低）：
       * 生產
       * 中繼
-      * 開發/RDE
+      * Development/RDE
    * 依預設，會停用跨程式內容複製。 不過，根據客戶要求，可以啟用它，這將使額外的&#x200B;**目的地方案**&#x200B;輸入欄位可供使用。
 
 1. 如有必要，您也可以選擇在復製程式中&#x200B;**包含存取控制清單**。
@@ -192,9 +195,11 @@ ht-degree: 34%
 
 內容複製工具具有以下限制。
 
-* 內容無法從較低層級的環境複製到較高層級的環境。
+* 內容複製工具支援兩種流量模式：
+   1. 由上而下流程 — 內容可以從較高的環境複製到較低的環境(例如Production → Stage、Stage → Development/RDE)。
+   2. 正向流量（新功能） — 內容也可以從較低的非生產環境複製到較高的非生產環境(例如Development → Stage、RDE → Stage)。 此功能僅在明確要求時才能使用，而且會保持啟用狀態，直到明確要求停用為止。 生產環境絕不是正向流量的有效目的地。
 * 內容只能從製作服務複製到製作服務。
-* 在同一環境中運行並發內容複製作業是不可能的。
+* 無法於同一環境中執行並行的內容複製作業。
 * 每個內容集最多可以指定50個路徑。 排除的路徑沒有數量限制。
 * 請勿使用內容複製工具作為複製或映象工具，因為它無法追蹤來源上已移動或刪除的內容。
 * 內容複製工具沒有版本設定功能，且自上次內容復製作業以來，無法自動在內容集中的來源環境中偵測修改的內容或建立的內容。
