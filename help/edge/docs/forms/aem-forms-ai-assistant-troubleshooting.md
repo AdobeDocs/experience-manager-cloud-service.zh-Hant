@@ -533,7 +533,7 @@ ht-degree: 1%
 
 - [Forms Experience Builder提示資料庫](ai-assistant-prompt-library.md)
 - [Forms Experience Builder最佳作法](aem-forms-ai-assistant-best-practices.md)
-- [AEM Forms檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html)
+- [AEM Forms檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=zh-Hant)
 
 ### 問題上報與支援
 
@@ -574,4 +574,4 @@ ht-degree: 1%
 - 訓練與知識分享課程
 - 產品團隊的功能改進意見回饋
 
-本疑難排解指南會根據使用者意見與新的Forms Experience Builder功能持續更新。 如需最新資訊和其他資源，請檢視[AEM Forms檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html)。
+本疑難排解指南會根據使用者意見與新的Forms Experience Builder功能持續更新。 如需最新資訊和其他資源，請檢視[AEM Forms檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=zh-Hant)。
