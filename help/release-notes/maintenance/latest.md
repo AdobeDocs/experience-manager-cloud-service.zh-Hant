@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 3884f53d56a8fc5bb71b736dd0b1368906c05623
+source-git-commit: 33468de99a3e77539f4bdc9435324c9f52a45d9f
 workflow-type: tm+mt
-source-wordcount: '632'
-ht-degree: 35%
+source-wordcount: '350'
+ht-degree: 65%
 
 ---
 
@@ -16,67 +16,47 @@ ht-degree: 35%
 
 下節是 Experience Manager as a Cloud Service 目前維護版本的技術版本發行說明。
 
-## 版本 21994 {#21994}
+## 版本 22171 {#22171}
 
-以下摘要說明維護版本21994數的持續改善，該版本於2025年8月19日公開發佈。 前一個維護版本是版本 21772。
+以下摘要說明維護版本22171數的持續改善，該版本於2025年9月2日公開發佈。 前一個維護版本是版本 21994。
 
-啟用 2025.8.0 功能即可使用此維護版本的完整功能集。如需詳細資訊，請參閱 [Experience Manager 發行路徑圖](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
+啟用 2025.9.0 功能即可使用此維護版本的完整功能集。如需詳細資訊，請參閱 [Experience Manager 發行路徑圖](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
-### 新功能  {#new-features-21994}
+### 新功能  {#new-features-22171}
+
+* Assets-53136：Dynamic Media搭配OpenAPI支援虛名ID。
+
+### 增強功能 {#enhancements-22171}
 
 無。
 
-### 增強功能 {#enhancements-21994}
+### 已修正的問題 {#fixed-issues-22171}
 
-* GRANITE-53488：改善deleteconf.json端點錯誤處理。
-* GRANITE-59968：允許設定REPLICATION_FORCE_READY_MILLIES。
-* GRANITE-60183： Apache Commons-fileupload 1.6.0。
-* GRANITE-60306：Apache Commons-lang至3.18.0。
-* GRANITE-60637：Apache Commons-codec至1.19.0。
-* GRANITE-60645： Apache commons-io 2.20.0。
-* GRANITE-60663： Apache Commons-text 1.14.0。
-* GRANITE-60714：Mongo Java驅動程式5.2。
-* GRANITE-60778： Filevault 4.0.0。
-* GRANITE-60823： Jackrabbit 2.22.2。
-* GRANITE-60967：建立用於追蹤clientlib編譯時間的量度。
-* SKYOPS-105469：在autofix api中新增對acsredirectMgr的支援。
-* SKYOPS-113929：新增復寫就緒檢查的量度。
-* SKYOPS-84821：Sling引擎2.16.6。
-* SKYOPS-114322：將層級的關閉編譯器語言提升至`ECMASCRIPT_2018`。
-
-### 已修正的問題 {#fixed-issues-21994}
-
-* GRANITE-60167： Skyline中的非同步索引更新不支援CSV資料。
-* GRANITE-60532：不選取值切換的修改。
-* SITES-34277：修正頁面翻譯工作流程中的封鎖錯誤。
-* SKYOPS-105471：支援aso autofix的dambaseredirect修正。
-* SKYOPS-109532：新增功能已移除的連結作為切換後的註解。
-
-#### AEM Guides {#guides-21994}
-
-* GUIDES-26688：原生PDF範本中的CSS和頁面配置檔案表現出不一致的檔案鎖定行為，即使檔案被鎖定仍允許編輯。
-* GUIDES-30900：從Assets UI複製具有大量資產的資料夾會導致API逾時。 操作會在後端繼續執行，並在一段時間後完成，但UI中未顯示成功或失敗訊息，或通知。
-* GUIDES-29090：在原生PDF輸出中，索引清單(LOI)會以非字母順序顯示，且巢狀索引詞未正確分組，導致索引難以導覽。
-* GUIDES-11227：從Assets UI複製DITA map時，也會將其附加的基線複製到新對應。
-* GUIDES-31506：當「最近使用的檔案」小工具中列出的其中一個檔案是根據其來源範本不包含縮圖的範本時，首頁會變成空白。
+* Assets-52510：對包含Unicode `U+202F`的檔案名稱偵測重複檔案名稱失敗。
+* Assets-53489：從Assets檢視UI刪除資料夾不會取消核准所有包含的資產。
+* Assets-54821：Asset Link中出現間歇性「伺服器錯誤」。
+* Assets-55024： AEM Assets「透過電子郵件下載」範本中的影像損毀。
+* Assets-55325：資產重新命名後，Dynamic Media靜態URL會忽略副檔名。
+* Assets-55334：「連結共用」對話方塊會短暫閃爍並消失，或永不顯示。
+* Assets-55382：已重新啟動非同步資產作業，並會建立重複的目標資料夾。
+* Assets-55472：忽略管理發布選項「僅包含已發佈的頁面」。
+* SITES-31600： Contexthub js錯誤中斷個人化。
 
 如需更多有關該版本中新增功能和增強功能以及已修復問題的資訊，請查看 [Experience Manager Guides 發行藍圖](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)。
 
-### 已知問題 {#known-issues-21994}
+### 已知問題 {#known-issues-22171}
 
-* Apache HTTPD版本2.4.65引入的變更可能會影響某些設定，因為作為安全性修正的一部分實作的新限制。 這些修正解決漏洞的方法是確保用於修改Content-Type標頭的`RequestHeader set`、`edit`和`edit_r`等指令現在正確限製為請求標頭。 此變更可防止回應標頭發生意外修改，尤其是靜態內容。
-* Apache HTTPD版本2.4.65在使用ProxyRemote連線時引入了mod_proxy中的變更。 如果您遇到問題，請將disablereuse標幟設定為On。
-  ```ProxyPass "/example" "http://backend.example.com" disablereuse=on```
+無。
 
-### 已過時的功能和 API {#deprecated-21994}
+### 已過時的功能和 API {#deprecated-22171}
 
 [「已過時和已移除的功能及 API」](/help/release-notes/deprecated-removed-features.md)文件中詳細介紹 AEM as a Cloud Service 中已過時和已移除的功能及 API。
 
-### 安全性修正 {#security-21994}
+### 安全性修正 {#security-22171}
 
-AEM as a Cloud Service 專門負責將您的平台的安全性與效能最佳化。此維護版本解決了 2 個已確認的漏洞，強化我們提供健全系統保護的承諾。
+AEM as a Cloud Service 專門負責將您的平台的安全性與效能最佳化。此維護版本解決了 7 個已確認的漏洞，強化我們提供健全系統保護的承諾。
 
-### 嵌入技術 {#embedded-tech-21994}
+### 嵌入技術 {#embedded-tech-22171}
 
 | 技術 | 版本 | 連結 |
 |---|---|---|
