@@ -19,7 +19,7 @@ ht-degree: 0%
 
 [智慧型裁切](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=smartcrop&t=request)是[!DNL Dynamic Media with OpenAPI capabilities]的動態大小調整功能。 [!DNL Smart Crop]是進階的影像處理技術，它使用AI支援的內容感知裁切功能，以智慧方式裁切各種熒幕大小的影像，同時保留裁切版本中的視覺內容。 AI會分析影像以識別焦點或預期興趣點，然後自動裁切影像以保留所有裁切版本中的焦點。 [!DNL Smart Crop]是回應式設計的關鍵元素，提供符合成本效益且符合時間效率的方式裁切影像。
 
-請參閱[Dynamic Media影像設定檔](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles)文章以瞭解如何在[中](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles#creating-image-profiles)建立智慧型裁切轉譯[!DNL Admin View]、[將其套用至資料夾](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles#applying-an-image-profile-to-folders)或[編輯轉譯](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles#editing-the-smart-crop-or-smart-swatch-of-a-single-image)已套用至影像或資料夾。 瞭解如何在此[!DNL Smart Crop]影片[中逐步建立](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use)。
+請參閱[Dynamic Media影像設定檔](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles)文章以瞭解如何在[中](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles#creating-image-profiles)建立智慧型裁切轉譯[!DNL Admin View]、[將其套用至資料夾](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles#applying-an-image-profile-to-folders)或[編輯轉譯](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles#editing-the-smart-crop-or-smart-swatch-of-a-single-image)已套用至影像或資料夾。 瞭解如何在此[!DNL Smart Crop]影片[中逐步建立](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use)。
 
 [!DNL Smart Crop]引數預期named-smartcrop-profiles存在且已套用至資產。 請參閱[智慧型裁切設定檔](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat!in=query&path=smartcrop&t=request)以進一步瞭解[!DNL Smart Crop]引數以及名稱[!DNL Smart Crop]設定檔的套用方式。
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 您可以透過影像的[!DNL Dynamic Media with OpenAPI]傳遞URL，將單一預設集套用至多個影像。 這可確保跨資產的一致格式，無需手動編輯每個資產。
 
-請參閱[管理影像預設集](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/managing-image-presets)文章以瞭解[如何在管理員檢視中建立影像預設集](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/managing-image-presets#creating-image-presets)，以及[如何建立可自動調整資產以符合不同熒幕大小的回應式影像預設集](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/managing-image-presets#creating-a-responsive-image-preset)。
+請參閱[管理影像預設集](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/dynamicmedia/managing-image-presets)文章以瞭解[如何在管理員檢視中建立影像預設集](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/dynamicmedia/managing-image-presets#creating-image-presets)，以及[如何建立可自動調整資產以符合不同熒幕大小的回應式影像預設集](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/dynamicmedia/managing-image-presets#creating-a-responsive-image-preset)。
 
 ### 使用影像預設集的好處{#benefits-of-image-presets}
 
@@ -55,7 +55,7 @@ ht-degree: 0%
 
 #### 在影像傳送URL中使用預設集{#use-presets-in-delivery-urls}
 
-預設集可讓您的傳送URL變得更短且易於使用。  每個預設集名稱都會當作傳遞URL中的唯一識別碼。 請參考預設集名稱，立即產生其轉譯，而不是將多個修飾元新增到資產的傳送URL。 [瞭解如何將Dynamic Media影像預設集套用至您的影像](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-presets)。
+預設集可讓您的傳送URL變得更短且易於使用。  每個預設集名稱都會當作傳遞URL中的唯一識別碼。 請參考預設集名稱，立即產生其轉譯，而不是將多個修飾元新增到資產的傳送URL。 [瞭解如何將Dynamic Media影像預設集套用至您的影像](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-presets)。
 以下範例將具有預設集的URL與沒有預設集的URL進行比較。
 
 **沒有預設集的URL （長URL）**：
