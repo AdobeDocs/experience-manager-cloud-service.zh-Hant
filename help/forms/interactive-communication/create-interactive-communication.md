@@ -7,7 +7,7 @@ role: User, Developer, Admin
 hide: true
 index: false
 hidefromtoc: true
-source-git-commit: 17a75e271377d9c7bfdac28c9f3d9d8178b565fd
+source-git-commit: 764cfbbcb8efd407cff85bfc24928aa3f8e5e956
 workflow-type: tm+mt
 source-wordcount: '585'
 ht-degree: 4%
@@ -28,7 +28,7 @@ ht-degree: 4%
 
 假設您需要將銀行對帳單、保單或公用程式帳單傳送給數千名客戶。 每一個都具有相同的配置，但個人化資料。 互動式通訊(IC)讓這成為可能。
 
-![尋找IC檔案](/help/forms/interactive-communication/assets/Picture1.png)
+![尋找IC檔案](/help/forms/interactive-communication/assets/introimg.png)
 
 手動製作這些檔案可能很耗時，而且經常會導致不一致，尤其是在需要個人化和資料整合時。 使用互動式通訊編輯器，使用者可以簡化建立互動式通訊的程式。
 
@@ -69,7 +69,7 @@ ht-degree: 4%
 1. 移至&#x200B;**Forms > Forms &amp; Documents**，按一下&#x200B;**建立>互動式通訊**。
 1. 在建立表單中，從下拉式清單中&#x200B;**選取**&#x200B;已啟用的範本。
 1. 填寫其他詳細資訊，如標題、名稱、作者等。
-1. 按一下[建立]&#x200B;**來設計您與所選範本結構的通訊。**
+1. 按一下[建立]**來設計您與所選範本結構的通訊。**
 1. 它會開啟IC編輯器，您可以在其中開始設計通訊。
 +++
 
