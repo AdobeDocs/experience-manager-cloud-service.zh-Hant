@@ -35,7 +35,7 @@ Adobe企業產品說明檔案提供不只是一系列的使用手冊。 探索�
 ### Content and Commerce
 
 + [[!DNL Experience Manager as a Cloud Service]](experience-manager-cloud-service.md)
-+ [Experience Manager Sites Optimizer](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/home)
++ [Experience Manager Sites Optimizer](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-sites-optimizer/content/home)
 + [Experience Manager 6.5 LTS](experience-manager-65-lts.md)
 + [Experience Manager 6.5](experience-manager-65.md)
 + [Experience Manager ](experience-manager-release-information#/help/using/aem-previous-versions.md)
@@ -87,8 +87,8 @@ Adobe企業產品說明檔案提供不只是一系列的使用手冊。 探索�
 
 ### 文件
 
-+ [Acrobat學習與支援](https://helpx.adobe.com/support/acrobat.html)
-+ [Acrobat Sign學習與支援](https://helpx.adobe.com/support/sign.html)
++ [Acrobat學習與支援](https://helpx.adobe.com/tw/support/acrobat.html)
++ [Acrobat Sign學習與支援](https://helpx.adobe.com/tw/support/sign.html)
 
 ### 開發人員
 
@@ -97,8 +97,8 @@ Adobe企業產品說明檔案提供不只是一系列的使用手冊。 探索�
 
 ### Document Cloud的實用資源
 
-+ [Document Cloud學習與支援](https://helpx.adobe.com/support/document-cloud.html)
-+ [Document Cloud企業教學課程](https://experienceleague.adobe.com/docs/home-tutorials.html#document-cloud-tutorials)
++ [Document Cloud學習與支援](https://helpx.adobe.com/tw/support/document-cloud.html)
++ [Document Cloud企業教學課程](https://experienceleague.adobe.com/docs/home-tutorials.html?lang=zh-Hant#document-cloud-tutorials)
 + [Adobe狀態](https://status.adobe.com/)
 + [管理指南](https://helpx.adobe.com/tw/enterprise/admin-guide.html)
 
@@ -106,7 +106,7 @@ Adobe企業產品說明檔案提供不只是一系列的使用手冊。 探索�
 
 ### 文件
 
-+ [Creative Cloud學習與支援](https://helpx.adobe.com/support/creative-cloud.html)
++ [Creative Cloud學習與支援](https://helpx.adobe.com/tw/support/creative-cloud.html)
 
 ### 適用於企業的Creative Cloud的實用資源
 
@@ -119,7 +119,7 @@ Adobe企業產品說明檔案提供不只是一系列的使用手冊。 探索�
 
 ### 跨雲端資源
 
-+ [Experience League活動](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html#events)
++ [Experience League活動](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=zh-Hant#events)
 + [Adobe狀態](https://status.adobe.com/)
 + [Adobe Developer](https://developer.adobe.com/)
 + [管理指南](https://helpx.adobe.com/tw/enterprise/admin-guide.html)
@@ -135,10 +135,10 @@ Adobe企業產品說明檔案提供不只是一系列的使用手冊。 探索�
 
 + [Experience Cloud 發行說明](release-notes#experience-cloud)
 + [教學課程](home-tutorials.md)
-+ [播放清單](https://experienceleague.adobe.com/en/playlists)
++ [播放清單](https://experienceleague.adobe.com/zh-hant/playlists)
 + [認證](certification#program)
 + [社群論壇](https://experienceleaguecommunities.adobe.com)
-+ [支援](https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support)
++ [支援](https://experienceleague.adobe.com/zh-hant?support-solution=General&support-tab=home#support)
 
 <!--
 + [Events](events.md)
