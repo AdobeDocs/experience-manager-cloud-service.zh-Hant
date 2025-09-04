@@ -46,7 +46,7 @@ AEM Assets 可與 Adobe Express 自然整合，讓您從 Adobe Express 使用者
 
 在Express畫布中加入適當的修改後，您可以將其儲存至AEM Assets存放庫。
 
-1. 按一下[共用]****&#x200B;開啟[共用]****&#x200B;對話方塊。
+1. 按一下[共用]&#x200B;**&#x200B;**&#x200B;開啟[共用]&#x200B;**&#x200B;**&#x200B;對話方塊。
 
    ![將資產儲存在 AEM 中](assets/adobe-express-share.png)
 
@@ -55,13 +55,13 @@ AEM Assets 可與 Adobe Express 自然整合，讓您從 Adobe Express 使用者
    ![將資產儲存在 AEM 中](assets/adobe-express-aem.png)
 
 3. 選取&#x200B;**目前頁面**&#x200B;或&#x200B;**所有頁面**。 指定要匯出的資產的名稱和格式。 您可以匯出PNG、JPEG、PDF、MP4、MP4+PNG或MP4+JPEG格式的畫布內容。 格式會根據畫布頁面上的資產自動調整。
-選取**目前頁面**&#x200B;會將目前頁面上的資產儲存到您的目的地資料夾。 如果您選取「**所有頁面**」，且匯出格式不是PDF，則所有畫布頁面都會以個別檔案的形式儲存在目的地資料夾的新資料夾中。 如果匯出格式為PDF，則所有畫布頁面都會儲存為目的地資料夾中的單一PDF檔案。
+選取&#x200B;**目前頁面**&#x200B;會將目前頁面上的資產儲存到您的目的地資料夾。 如果您選取「**所有頁面**」，且匯出格式不是PDF，則所有畫布頁面都會以個別檔案的形式儲存在目的地資料夾的新資料夾中。 如果匯出格式為PDF，則所有畫布頁面都會儲存為目的地資料夾中的單一PDF檔案。
 
 4. 按一下&#x200B;**目的地資料夾**&#x200B;下的資料夾圖示，以選取位置並儲存資產。
 
    ![將資產儲存在 AEM 中](/help/assets/assets/page-selection-and-destination-folder.svg)
 
-5. 可選：您可以使用&#x200B;**專案或行銷活動名稱**欄位，新增您上傳的行銷活動中繼資料。 您可以使用現有的名稱或建立新名稱。 您可以為上傳定義多個專案或行銷活動名稱。 若要註冊名稱，只需輸入名稱並按Enter即可。
+5. 可選：您可以使用&#x200B;**專案或行銷活動名稱**&#x200B;欄位，新增您上傳的行銷活動中繼資料。 您可以使用現有的名稱或建立新名稱。 您可以為上傳定義多個專案或行銷活動名稱。 若要註冊名稱，只需輸入名稱並按Enter即可。
 作為最佳作法，Adobe建議在其餘欄位中指定值，並為您上傳的資產建立增強的搜尋體驗。
 
 6. 同樣地，定義&#x200B;**[!UICONTROL 關鍵字]**&#x200B;和&#x200B;**[!UICONTROL 管道]**&#x200B;欄位的值。
@@ -76,22 +76,22 @@ AEM Assets 可與 Adobe Express 自然整合，讓您從 Adobe Express 使用者
      </tr>
     </tr>
     <tr>
-        <td>[！UICONTROL JPEG]</td>
+        <td>[!UICONTROL JPEG]</td>
         <td> 8000 X 8000畫素，最大40MB</td>
     </tr>
     <tr>
-        <td>[！UICONTROL PNG]</td>
+        <td>[!UICONTROL PNG]</td>
         <td> 8000 X 8000畫素，最大40MB</td>
     </tr>
     <tr>
-        <td>[！UICONTROL SVG]</td>
+        <td>[!UICONTROL SVG]</td>
         <td> 最大250 KB</td>
     </tr>
     <tr>
     </tr>
     </tr>
     <tr>
-        <td>[！UICONTROL MP4]</td>
+        <td>[!UICONTROL MP4]</td>
         <td> 3840 X 3840畫素，最大200 MB</td>
     </tr>
     </tbody>
