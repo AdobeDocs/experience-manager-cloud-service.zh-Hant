@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: 99e17dbc675a6dd86afddcc44e0fd9e1d84b3858
+source-git-commit: 8d1010eccc1f3bc7579aa0042cb7c3b5acb7ef27
 workflow-type: tm+mt
-source-wordcount: '6575'
+source-wordcount: '6579'
 ht-degree: 98%
 
 ---
@@ -534,6 +534,7 @@ ht-degree: 98%
    + [Assets as a Cloud Service Ultimate](/help/assets/assets-ultimate-overview.md)
    + [啟用 Assets as a Cloud Service Ultimate](/help/assets/enable-assets-ultimate.md)
    + [Assets as a Cloud Service Prime](/help/assets/assets-prime.md)
+   + [疑難排解AEM Assets問題](/help/assets/troubleshoot-aem-assets.md)
    + [Assets 協作者使用者](/help/assets/assets-collaborator-users.md)
    + 管理數位資產 {#manage}
       + 微前端資產選擇器 {#asset-selector}
