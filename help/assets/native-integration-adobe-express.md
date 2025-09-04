@@ -4,9 +4,9 @@ description: AEM Assets與Adobe Express的原生整合可讓您從Adobe Express�
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
 feature: Collaboration
 role: User
-source-git-commit: d68ed456b3fe838e71465461f8ab4c7508c7668c
+source-git-commit: 4fcb17f6fd6db9d33d08574420633b06f18bd9b2
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '704'
 ht-degree: 16%
 
 ---
@@ -46,26 +46,26 @@ AEM Assets 可與 Adobe Express 自然整合，讓您從 Adobe Express 使用者
 
 在Express畫布中加入適當的修改後，您可以將其儲存至AEM Assets存放庫。
 
-1. 按一下[共用]&#x200B;**&#x200B;**&#x200B;開啟[共用]&#x200B;**&#x200B;**&#x200B;對話方塊。
+1. 按一下[共用]****&#x200B;開啟[共用]****&#x200B;對話方塊。
 
    ![將資產儲存在 AEM 中](assets/adobe-express-share.png)
 
 2. 從右窗格的[儲存]區段中，選取&#x200B;**AEM Assets**。 Adobe Express會顯示上傳對話方塊。
 3. 選取&#x200B;**目前頁面**&#x200B;或&#x200B;**所有頁面**。 指定要匯出的資產的名稱和格式。 您可以匯出PNG、JPEG、PDF、MP4、MP4+PNG或MP4+JPEG格式的畫布內容。 格式會根據畫布頁面上的資產自動調整。
-選取&#x200B;**目前頁面**&#x200B;會將目前頁面上的資產儲存到您的目的地資料夾。 如果您選取「**所有頁面**」，且匯出格式不是PDF，則所有畫布頁面都會以個別檔案的形式儲存在目的地資料夾的新資料夾中。 如果匯出格式為PDF，則所有畫布頁面都會儲存為目的地資料夾中的單一PDF檔案。
+選取**目前頁面**&#x200B;會將目前頁面上的資產儲存到您的目的地資料夾。 如果您選取「**所有頁面**」，且匯出格式不是PDF，則所有畫布頁面都會以個別檔案的形式儲存在目的地資料夾的新資料夾中。 如果匯出格式為PDF，則所有畫布頁面都會儲存為目的地資料夾中的單一PDF檔案。
 
 4. 按一下&#x200B;**目的地資料夾**&#x200B;下的資料夾圖示，以選取位置並儲存資產。
 
    ![將資產儲存在 AEM 中](/help/assets/assets/page-selection-and-destination-folder.svg)
 
-5. 可選：您可以使用&#x200B;**專案或行銷活動名稱**&#x200B;欄位，新增您上傳的行銷活動中繼資料。 您可以使用現有的名稱或建立新名稱。 您可以為上傳定義多個專案或行銷活動名稱。 若要註冊名稱，只需輸入名稱並按Enter即可。
+5. 可選：您可以使用&#x200B;**專案或行銷活動名稱**欄位，新增您上傳的行銷活動中繼資料。 您可以使用現有的名稱或建立新名稱。 您可以為上傳定義多個專案或行銷活動名稱。 若要註冊名稱，只需輸入名稱並按Enter即可。
 作為最佳作法，Adobe建議在其餘欄位中指定值，並為您上傳的資產建立增強的搜尋體驗。
 
 6. 同樣地，定義&#x200B;**[!UICONTROL 關鍵字]**&#x200B;和&#x200B;**[!UICONTROL 管道]**&#x200B;欄位的值。
 
 7. 按一下&#x200B;**[!UICONTROL 上傳]**&#x200B;以將資產上傳至AEM Assets。
 
-## 支援的檔案格式 {#supported-formats}
+請參考[支援的檔案格式](asset-properties-content-hub.md#supported-formats)。
 
 [!DNL Content Hub]支援基礎[!DNL Assets]存放庫支援的所有資產型別和格式。 下表列出[!DNL the Content Hub]中的主要檔案格式，為以視覺效果預覽資產提供額外支援：
 
@@ -81,15 +81,15 @@ AEM Assets 可與 Adobe Express 自然整合，讓您從 Adobe Express 使用者
     </tr>
     </tr>
     <tr>
-        <td>[!UICONTROL JPEG]</td>
+        <td>[！UICONTROL JPEG]</td>
         <td> 8000 X 8000畫素，最大40MB</td>
     </tr>
     <tr>
-        <td>[!UICONTROL PNG]</td>
+        <td>[！UICONTROL PNG]</td>
         <td> 8000 X 8000畫素，最大40MB</td>
     </tr>
     <tr>
-        <td>[!UICONTROL SVG]</td>
+        <td>[！UICONTROL SVG]</td>
         <td> 最大250 KB</td>
     </tr>
     <tr>
@@ -97,15 +97,15 @@ AEM Assets 可與 Adobe Express 自然整合，讓您從 Adobe Express 使用者
     </tr>
     </tr>
     <tr>
-        <td>[!UICONTROL Quicktime]</td>
+        <td>[！UICONTROL Quicktime]</td>
         <td> - </td>
     </tr>
     <tr>
-        <td>[!UICONTROL MP4]</td>
+        <td>[！UICONTROL MP4]</td>
         <td> 3840 X 3840畫素，最大200 MB</td>
     </tr>
     <tr>
-        <td>[!UICONTROL MPEG]</td>
+        <td>[！UICONTROL MPEG]</td>
         <td> 最大200 MB </td>
     </tr>
     <tr>
@@ -113,15 +113,15 @@ AEM Assets 可與 Adobe Express 自然整合，讓您從 Adobe Express 使用者
     </tr>
     </tr>
     <tr>
-        <td>[!UICONTROL txt] （純文字）</td>
+        <td>[！UICONTROL txt] （純文字）</td>
         <td> - </td>
     </tr>
     <tr>
-        <td>[!UICONTROL Doc/Docx]</td>
+        <td>[！UICONTROL Doc/Docx]</td>
         <td> - </td>
     </tr>
     <tr>
-        <td>[!UICONTROL XML]</td>
+        <td>[！UICONTROL XML]</td>
         <td> - </td>
     </tr>
     <tr>
@@ -129,17 +129,17 @@ AEM Assets 可與 Adobe Express 自然整合，讓您從 Adobe Express 使用者
     </tr>
     </tr>
     <tr>
-        <td>[!UICONTROL PDF]</td>
+        <td>[！UICONTROL PDF]</td>
         <td> - </td>
     </tr>
     </tbody>
-   </table>
+</table>
 
 ## 限制 {#limitations}
 
 1. 對於匯入和匯出，支援的視訊檔案型別為MP4。
 
-2. 如需&#x200B;**MP4視訊匯入**，請參閱[支援的檔案格式](#supported-formats)。 此外，不支援具有透明背景（Alpha色版）的視訊。
+2. 如需&#x200B;**MP4視訊匯入**，請參閱[支援的檔案格式](asset-properties-content-hub.md#supported-formats)。 此外，不支援具有透明背景（Alpha色版）的視訊。
    <!--
    1. The maximum file size supported is 200 MB. If this limit exceeds, an alert message displays.
    2. The maximum supported resolution is 3840 X 3840 pixels.

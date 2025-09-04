@@ -3,10 +3,10 @@ title: 在 [!DNL the Content Hub]中預覽資產及其屬性
 description: 瞭解如何預覽 [!DNL Content Hub]中的資產和屬性
 role: User
 exl-id: a85af980-4c51-4d30-9fad-afd16370e9db
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
+source-git-commit: 4fcb17f6fd6db9d33d08574420633b06f18bd9b2
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 8%
+source-wordcount: '661'
+ht-degree: 11%
 
 ---
 
@@ -45,7 +45,7 @@ ht-degree: 8%
 * **K：**&#x200B;關閉預覽畫面
 * **L：**&#x200B;資產的資訊，包括標題、格式、大小、解析度、標籤、顏色標籤和智慧標籤。
 
-## 支援的資產格式 {#supported-formats}
+## 支援的檔案格式 {#supported-formats}
 
 [!DNL Content Hub]支援基礎[!DNL Assets]存放庫支援的所有資產型別和格式。 下表列出[!DNL the Content Hub]中的主要檔案格式，為以視覺效果預覽資產提供額外支援：
 
@@ -54,58 +54,78 @@ ht-degree: 8%
      <tr>
       <th><strong>檔案類型</strong></th>
       <th><strong>支援的格式</strong></th>
+      <th><strong>大小</strong></th>
      </tr>
      <tr>
-      <td>影像</td>
-      <td>
-        <ul>
-            <li>[!UICONTROL JPEG]</li> 
-            <li>[!UICONTROL PNG]</li> 
-            <li>[!UICONTROL SVG]</li>
-        </ul>
-      </td>
-     </tr>
-     <tr>
-      <td>影片</td>
-      <td>
-        <ul>
-            <li>[!UICONTROL Quicktime]</li>  
-            <li>[!UICONTROL MP4]</li> 
-        </ul>
-      </td>
-     </tr>
-      <tr>
-      <td>文件</td>
-      <td>
-        <ul>
-            <li>[!UICONTROL txt] （純文字）</li>  
-            <li>[!UICONTROL Doc/Docx]</li> 
-            <li>[!UICONTROL XML]</li>
-        </ul>
-      </td>
-     </tr>
-     <tr>
-      <td>列印媒體</td>
-      <td>
-        <ul>
-            <li>[!UICONTROL PDF]</li>  
-        </ul>
-      </td>
-     </tr>  
+        <td rowspan="4"> 影像 </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>[！UICONTROL JPEG]</td>
+        <td> 8000 X 8000畫素，最大40MB</td>
+    </tr>
+    <tr>
+        <td>[！UICONTROL PNG]</td>
+        <td> 8000 X 8000畫素，最大40MB</td>
+    </tr>
+    <tr>
+        <td>[！UICONTROL SVG]</td>
+        <td> 最大250 KB</td>
+    </tr>
+    <tr>
+        <td rowspan="4"> 影片 </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>[！UICONTROL Quicktime]</td>
+        <td> - </td>
+    </tr>
+    <tr>
+        <td>[！UICONTROL MP4]</td>
+        <td> 3840 X 3840畫素，最大200 MB</td>
+    </tr>
+    <tr>
+        <td>[！UICONTROL MPEG]</td>
+        <td> 最大200 MB </td>
+    </tr>
+    <tr>
+        <td rowspan="4"> 文件 </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>[！UICONTROL txt] （純文字）</td>
+        <td> - </td>
+    </tr>
+    <tr>
+        <td>[！UICONTROL Doc/Docx]</td>
+        <td> - </td>
+    </tr>
+    <tr>
+        <td>[！UICONTROL XML]</td>
+        <td> - </td>
+    </tr>
+    <tr>
+        <td rowspan="2"> 列印媒體 </td>
+    </tr>
+    </tr>
+    <tr>
+        <td>[！UICONTROL PDF]</td>
+        <td> - </td>
+    </tr>
     </tbody>
-   </table>
+</table>
 
 ### 衍生屬性 {#derived-properties}
 
-資產上傳至[!DNL Assets]後，在[!DNL Content Hub]核准可用性時，[!DNL Content Hub]中顯示之資產的某些屬性會衍生或自動產生。 以下是其中一些的清單：
+資產上傳至[!DNL Content Hub]後，在[!DNL Assets]核准可用性時，[!DNL Content Hub]中顯示之資產的某些屬性會衍生或自動產生。 以下是其中一些的清單：
 
 * **大小：**&#x200B;大小代表儲存在基礎存放庫中的資產二進位檔大小。
 
 <!--* **Tags:** Tags help you categorize assets that can be browsed and searched more efficiently. Tagging helps in propagating the appropriate taxonomy to other users and workflows. -->
 
-* **智慧標籤：** [!DNL The Content Hub]使用Adobe Sensei的智慧內容服務，在標籤架構上使用辨識演演算法來訓練資產。 然後，此內容智慧可用來將相關標籤套用至不同的資產集。 智慧標籤可協助您快速找到相關資產，提升專案的內容速度。 智慧型標籤即是不含在影像中的資產資訊範例。 [!DNL Experience Manager Assets]預設會自動將智慧標籤套用至資產。
+* **智慧標籤：** [!DNL The Content Hub]使用Adobe Sensei的智慧內容服務，在標籤架構上使用辨識演演算法來訓練資產。 然後，再利用這些內容智慧對不同的資產集套用相關標記。智慧標籤可協助您快速找到相關資產，提升專案的內容速度。 智慧型標籤即是不含在影像中的資產資訊範例。 [!DNL Experience Manager Assets]預設會自動將智慧標籤套用至資產。
 
-* **色彩標籤：** [色彩標籤](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=zh-Hant)可協助您使用Adobe的Sensei AI功能，在資產中自動識別的顏色，識別資產。
+* **色彩標籤：** [色彩標籤](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en)可協助您使用Adobe的Sensei AI功能，在資產中自動識別的顏色，識別資產。
 
 * 上傳日期
 
