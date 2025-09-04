@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: 29b1f3f24a92d45c4be7429fe3401147eb4c782a
+source-git-commit: 99e17dbc675a6dd86afddcc44e0fd9e1d84b3858
 workflow-type: tm+mt
-source-wordcount: '6571'
-ht-degree: 97%
+source-wordcount: '6575'
+ht-degree: 98%
 
 ---
 
@@ -234,6 +234,7 @@ ht-degree: 97%
    + 通用編輯器發行說明 {#univeral-editor}
       + [通用編輯器最新發行說明](/help/release-notes/universal-editor/current.md)
       + 2025 {#2025}
+         + [2025.08.22 發行說明](/help/release-notes/universal-editor/2025/2025-08-22.md)
          + [2025.08.14 發行說明](/help/release-notes/universal-editor/2025/2025-08-14.md)
          + [2025.07.31 發行說明](/help/release-notes/universal-editor/2025/2025-07-31.md)
          + [2025.07.09 發行說明](/help/release-notes/universal-editor/2025/2025-07-09.md)
@@ -270,8 +271,8 @@ ht-degree: 97%
    + [流量篩選規則包括 WAF 規則](/help/security/traffic-filter-rules-including-waf.md)
    + [AEM as a Cloud Service 安全性注意事項](/help/security/security-considerations.md)
    + [Adobe Developer Console 中的 JWT 憑證已被取代](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
-   + [發佈階層上適用於 AEM as a Cloud Service 的 Open ID Connect 支援](/help/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier.md)
-   + [為 AEM as a Cloud Service 設定 IMS 整合](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)
+   + [在發佈階層上適用於 AEM as a Cloud Service 的 Open ID Connect 支援](/help/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier.md)
+   + [設定適用於 AEM as a Cloud Service 的 IMS 整合](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)
    + [權限管理的主體視圖](/help/security/touch-ui-principal-view.md)
    + [Sling Service 使用者對應和服務使用者定義的最佳做法](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
    + [Adobe as a Cloud Service 的客戶自控金鑰](/help/security/customer-managed-keys.md)
@@ -798,7 +799,7 @@ ht-degree: 97%
          + [依據核心元件設定自適應表單的提交動作](/help/forms/configure-submit-actions-core-components.md)
          + [設定 Edge Delivery Services 表單的提交動作](/help/forms/configure-submit-action-eds-forms.md)
          + [設定自適應表單的傳送電子郵件提交動作](/help/forms/configure-submit-action-send-email.md)
-         + [整合最適化表單與表單資料模型](/help/forms/integrate-adaptive-form-with-fdm.md)
+         + [將自適應表單與表單資料模型整合](/help/forms/integrate-adaptive-form-with-fdm.md)
          + [將自適應表單與 Microsoft Power Automate 整合](/help/forms/forms-microsoft-power-automate-integration.md)
          + 將自適應表單連結到 Microsoft® SharePoint{#connect-to-sharepoint}
             + [將最適化表單連結到 Microsoft](/help/forms/configure-submit-action-sharepoint.md)
@@ -844,7 +845,7 @@ ht-degree: 97%
             + [建立自訂提交動作](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
             + [使用遷移公用程式工具將基礎元件型最適化表單轉換為核心元件型表單](/help/forms/migration-utility-tool-for-af-core-components.md)
             + [最適化表單中的電子郵件範本](/help/forms/html-email-templates-in-adaptive-forms.md)
-            + [在Experience Manager Forms中管理發布](/help/forms/manage-publication.md)
+            + [於 Experience Manager Forms 中管理發佈](/help/forms/manage-publication.md)
             + 以核心元件為主之自適應表單的規則編輯器簡介{#rule-editor-core-components}
                + [以核心元件為主之最適化表單的規則編輯器簡介](/help/forms/rule-editor-core-components.md)
                + [以核心元件為主之最適化表單的規則編輯器使用者介面](/help/forms/rule-editor-core-components-user-interface.md)
@@ -1036,11 +1037,11 @@ ht-degree: 97%
    + [Screens as a Cloud Service 常見問題集](/help/screens-cloud/screens-cloud-faqs.md)
 + Content and Commerce {#content-and-commerce}
    + [簡介和概觀](/help/commerce-cloud/introduction.md)
-   + Edge Delivery Services店面 {#edge-storefront}
+   + Edge Delivery Services 店面 {#edge-storefront}
       + [簡介](/help/commerce-cloud/edge-storefront/introduction.md)
-   + 協力廠商店面 {#thrid-party-storefront}
+   + 第三方店面 {#thrid-party-storefront}
       + [簡介](/help/commerce-cloud/third-party-storefront/introduction.md)
-   + CIF店面 {#cif-storefront}
+   + CIF 店面 {#cif-storefront}
       + [CIF 簡介](/help/commerce-cloud/cif-storefront/introduction.md)
       + [AEM Content and Commerce as a Cloud Service 的重大變更](/help/commerce-cloud/cif-storefront/changes.md)
       + Commerce 歷程 {#journeys}
@@ -1083,26 +1084,26 @@ ht-degree: 97%
       + [移轉](/help/commerce-cloud/cif-storefront/migration.md)
       + [常見問題集](/help/commerce-cloud/cif-storefront/faq.md)
 + Edge Delivery Services {#edge-delivery}
-   + [Edge Delivery Services概觀](/help/edge/overview.md)
+   + [Edge Delivery Services 概觀](/help/edge/overview.md)
 {#wysiwyg-authoring}
    + 建置表單 {#build-forms}
       + [概觀](/help/edge/docs/forms/overview.md)
-      + WYSIWYG 編寫 {#universal-editor}
-         + [Edge Delivery Services for Forms 的通用編輯器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
-         + [導覽 AEM Forms 的通用編輯器介面](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
+      + WYSIWYG 製作 {#universal-editor}
+         + [Forms 適用的 Edge Delivery Services 的通用編輯器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+         + [導覽 AEM Forms 適用的通用編輯器介面](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
          + [使用通用編輯器開始使用 AEM Forms 適用的 Edge Delivery Services](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
          + [使用 Edge Delivery Services 建立和發佈自適應表單](/help/edge/docs/forms/universal-editor/create-forms.md)
          + [使用通用編輯器建立回應式表單](/help/edge/docs/forms/universal-editor/responsive-layout.md)
-         + [自訂 AEM Forms 適用的 Edge Delivery Services 主題和樣式](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+         + [為 AEM Forms 適用的 Edge Delivery Services 自訂主題和樣式](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
          + [通用編輯器中的動態表單規則編輯器](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
-         + [如何建立 WYSIWYG 型編寫適用的表單片段](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)
-         + [如何設定最適化表單的提交動作？](/help/edge/docs/forms/universal-editor/submit-action.md)
+         + [如何建立 WYSIWYG 型製作適用的表單片段](/help/edge/docs/forms/universal-editor/creating-form-fragments.md)
+         + [如何設定自適應表單的提交動作？](/help/edge/docs/forms/universal-editor/submit-action.md)
          + [如何設定重新導向頁面或感謝訊息](/help/edge/docs/forms/universal-editor/configure-thankyou-message.md)
          + [在通用編輯器中將 Google reCAPTCHA 新增到表單](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
-         + [在通用編輯器中如何整合表單的表單資料模型 (FDM)？](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
-         + [如何預先填寫最適化表單欄位](/help/edge/docs/forms/universal-editor/prefill-form.md)
+         + [如何在通用編輯器中整合表單的表單資料模型 (FDM)？](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)
+         + [如何預填自適應表單欄位](/help/edge/docs/forms/universal-editor/prefill-form.md)
          + [使用 Edge Delivery Services 發佈自適應表單](/help/edge/docs/forms/universal-editor/publish-forms.md)
-         + [為 EDS Forms 建立自訂元件](/help/edge/docs/forms/universal-editor/create-custom-component.md)
+         + [建立 EDS Form 的自訂元件](/help/edge/docs/forms/universal-editor/create-custom-component.md)
          + [針對 Edge Delivery Services 表單提交時出現的 403 禁止錯誤進行疑難排解](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)
       + 文件型編寫 {#getting-started-edge-delivery-services-forms}
          + [建置第一份表單：使用 Google Sheets 和 Excel 的快速入門指南](/help/edge/docs/forms/tutorial.md)
@@ -1125,7 +1126,7 @@ ht-degree: 97%
       + [表單提交指南：使用表單提交服務](/help/forms/forms-submission-service.md)
       + [設定 Edge Delivery Services 表單提交](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
       + [常見問題集](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
-   + [建立表單的最佳作法](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
+   + [建立表單的最佳做法](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
 + Headless {#headless}
    + [什麼是 Headless CMS？](/help/headless/what-is-headless.md)
    + [AEM Headless 簡介](/help/headless/introduction.md)
@@ -1255,7 +1256,7 @@ ht-degree: 97%
          + [CI-CD 管道簡介](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
          + [設定生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
          + [設定非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
-         + [設定Edge Delivery Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)
+         + [設定 Edge Delivery 管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)
          + [管理管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
          + [管道變數](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)
       + [部署您的程式碼](/help/implementing/cloud-manager/deploy-code.md)
@@ -1279,7 +1280,7 @@ ht-degree: 97%
          + [Cloud Manager 的 Edge Delivery Services 簡介](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
          + [新增 Edge Delivery 網站至 Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
          + [一鍵式建立您的第一個 Edge Delivery Site](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
-         + [設定Edge Delivery網站以使用外部Git存放庫](/help/implementing/cloud-manager/edge-delivery/config-edge-delivery-site-with-byog.md)
+         + [設定 Edge Delivery 網站以使用外部 Git 存放庫](/help/implementing/cloud-manager/edge-delivery/config-edge-delivery-site-with-byog.md)
          + [設定 Edge Delivery Site 的推播驗證](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)
          + [設定您的內容來源](/help/implementing/cloud-manager/edge-delivery/configure-content-source.md)
          + [在 Cloud Manager 中管理 Edge Delivery Sites](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
