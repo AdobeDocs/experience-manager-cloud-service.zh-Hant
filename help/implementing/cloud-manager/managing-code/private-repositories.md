@@ -4,10 +4,10 @@ description: 了解如何設定 Cloud Manager 與您自己的私人 GitHub 存�
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 45645a963c42f1335ff2019ffe2aa516ee084a9f
+source-git-commit: 0ec47218d598aad6b225a9d5d8faeab20e606716
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 33%
+source-wordcount: '1000'
+ht-degree: 34%
 
 ---
 
@@ -19,9 +19,10 @@ ht-degree: 33%
 >
 >您還可以新增以下具有Webhook的存放庫型別：
 >
->* GitHub Enterprise Server （自行託管的GitHub版本）存放庫
->* GitLab （GitLab的`gitlab.com`和自託管版本）存放庫
->* Bitbucket (`bitbucket.org`和Bitbucket伺服器（BitBucket的自我主控版本）存放庫
+>* GitHub Enterprise Server （自行託管的GitHub版本）存放庫。
+>* GitLab （包括`gitlab.com`和自託管版本的GitLab）存放庫。
+>* Bitbucket (`bitbucket.org`和Bitbucket伺服器（BitBucket的自我主控版本）存放庫。
+>* Azure DevOps （包括[dev.azure.com](http://dev.azure.com)和自託管版本的Azure DevOps）存放庫。
 >
 >請參閱[在Cloud Manager中新增外部存放庫 — 私人測試版](/help/implementing/cloud-manager/managing-code/external-repositories.md)。
 
@@ -153,13 +154,13 @@ Cloud Manager 現在知道您的 GitHub 存放庫，但仍然需要存取它。�
 
 
 
-## 使用說明 {#usage-notes}
+## 限制 {#limitations}
 
-* 私人存放庫不支援 Web 層和設定管道。
+將私人存放庫與 Cloud Manager 搭配使用時會有某些限制。
+
 * 在生產全端管道上使用私人存放庫時，不會建立和推送 Git 標記。
 * 如果從您的GitHub組織移除Adobe GitHub應用程式，它將會移除所有存放庫的提取請求驗證功能。
 * 當新的認可推送至選取的分支時，使用私人GitHub雲端存放庫和「在認可」組建觸發器的管道不會自動啟動。
 * [成品重複使用功能](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse)不適用於私人存放庫。
-* 您無法使用Cloud Manager的GitHub檢查來暫停提取請求驗證。
-如果已在Cloud Manager中驗證GitHub存放庫，Cloud Manager會一律嘗試驗證為該存放庫建立的提取請求。
-* 如果GitHub組織有IP限制，請建立支援案例以接收允許的IP位址清單。
+* 您無法使用 Cloud Manager 的 GitHub 檢查來暫停提取請求驗證。如果已在Cloud Manager中驗證GitHub存放庫，Cloud Manager會一律嘗試驗證為該存放庫建立的提取請求。
+* 如果您的GitHub組織強制執行IP限制，請開啟支援案例以取得必須允許的IP位址清單。

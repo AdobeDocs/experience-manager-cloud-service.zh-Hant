@@ -4,10 +4,10 @@ description: 了解如何將外部存放庫新增至 Cloud Manager。Cloud Manag
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 0243251148af4f188785b1ef0e5ee8eeffe6e0bd
+source-git-commit: 7a4fbb5bb217a43a223be01e142458ba9a962cc9
 workflow-type: tm+mt
-source-wordcount: '2321'
-ht-degree: 27%
+source-wordcount: '2452'
+ht-degree: 26%
 
 ---
 
@@ -17,14 +17,15 @@ ht-degree: 27%
 
 了解如何將外部存放庫新增至 Cloud Manager。Cloud Manager支援與GitHub Enterprise、GitLab和Bitbucket存放庫整合。
 
-客戶現在也可以將其Azure DevOps (Beta) Git存放庫加入Cloud Manager，並支援現代Azure DevOps和舊版VSTS (Visual Studio Team Services)存放庫。
+客戶現在也可以將其Azure DevOps Git存放庫加入Cloud Manager，並支援現代Azure DevOps和舊版VSTS (Visual Studio Team Services)存放庫。
 
 * Edge Delivery Services 使用者可以使用所加入的存放庫來同步處理及部署網站程式碼。
 * AEM as a Cloud Service 和 Adobe Managed Services (AMS) 使用者可以將此存放庫連結至全堆疊以及前端管道。
 
+<!--
 >[!NOTE]
 >
->本文所述針對Azure DevOps新增的支援僅透過私人測試版計畫提供。 如需詳細資訊以及註冊Beta版，請參閱[自備Git](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket-azure-vsts)。
+>The support added for Azure DevOps described in this article is available only through the private beta program. For more details and to sign up for the beta, see [Bring Your Own Git](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket-azure-vsts). -->
 
 
 ## 設定外部存放庫
@@ -121,14 +122,14 @@ ht-degree: 27%
 
 另請參閱[管理存取權杖](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)。
 
->[!TAB Azure DevOps (Beta)]
+>[!TAB Azure DevOps]
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/azure_devops -->
 
 | 存取權杖選項 | 說明 |
 | --- | --- |
 | **使用現有的存取權杖** | 如果您已為組織提供存放庫存取權杖，且有權存取多個存放庫，您可以選取現有的權杖。使用&#x200B;**權杖名稱**&#x200B;下拉清單，選取想要套用至存放庫的權杖。否則，請新增新的存取權杖。 |
-| **新增新的存取權杖** | <ul><li>在&#x200B;**Token名稱**&#x200B;文字欄位中，輸入您要建立之存取權杖的名稱。<li>使用[Azure DevOps檔案](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows)建立存放庫存取權杖。<li>Azure DevOps個人存取權杖(PAT)的必要許可權。<br>這些許可權可讓Cloud Manager存取存放庫內容、管理提取請求，以及設定或回應webhook事件。<br>當您在Azure DevOps中建立應用程式密碼時，請確定它包含下列必要的應用程式密碼許可權：<ul><li>存放庫（唯讀）</li></ul></li></li></ul></ul></ul><ul><li>在&#x200B;**存取Token**&#x200B;欄位中，貼上您剛建立的權杖。 |
+| **新增新的存取權杖** | <ul><li>在&#x200B;**Token名稱**&#x200B;文字欄位中，輸入您要建立之存取權杖的名稱。<li>使用[Azure DevOps檔案](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows)建立存放庫存取權杖。<li>Azure DevOps個人存取權杖(PAT)的必要許可權。<br>這些許可權可讓Cloud Manager存取存放庫內容、管理提取請求，以及設定或回應webhook事件。<br>當您在Azure DevOps中建立應用程式密碼時，請確定它包含下列必要的應用程式密碼許可權：<ul><li>程式碼（讀取）</li><li>代碼（狀態）</li><li>提取請求Threads （讀取和寫入）</li></ul></li></li></ul></ul></ul><ul><li>在&#x200B;**存取Token**&#x200B;欄位中，貼上您剛建立的權杖。 |
 
 驗證之後，外部存放庫即可使用並連結至管道。
 
@@ -239,13 +240,13 @@ Cloud Manager可讓您為已新增的外部Git存放庫設定webhook。 請參�
 | --- |
 | 這些事件確保Cloud Manager可以驗證提取請求、回應程式碼推送，以及與評論互動以協調管道。<br>請確定webhook已設定為在下列必要webhook事件上觸發<ul><li>提取請求：已建立<li>提取請求：已更新<li>提取請求：已合併<li>提取請求：註解<li>存放庫：推播</li></li></li></ul></ul></ul> |
 
->[!TAB Azure DevOps (Beta)]
+>[!TAB Azure DevOps]
 
 <!-- https://git.corp.adobe.com/pages/experience-platform/cloud-manager-repository-service/#/./git-vendors/azure_devops -->
 
 | 必要的webhook事件和驗證 |
 | --- |
-| 這些事件確保Cloud Manager可以驗證提取請求、回應程式碼推送，以及與評論互動以協調管道。<br>請確定webhook已設定為在下列必要webhook事件上觸發<ul><li>存放庫：推播</li></ul>設定驗證： <br>1。 在&#x200B;**基本驗證使用者名稱**&#x200B;欄位中，輸入`cloudmanager`。<br>2. 在&#x200B;**基本驗證密碼**&#x200B;欄位中，輸入從Cloud Manager使用者介面產生的Webhook密碼。 |
+| 這些事件確保Cloud Manager可以驗證提取請求、回應程式碼推送，以及與評論互動以協調管道。<br>請確定webhook已設定為在下列必要webhook事件上觸發<ul><li>已推送的程式碼</li><li>提取請求已註解</li><li>已建立提取請求</li><li>提取請求已更新</li></ul>設定驗證： <br>1。 在&#x200B;**基本驗證使用者名稱**&#x200B;欄位中，輸入`cloudmanager`。<br>2. 在&#x200B;**基本驗證密碼**&#x200B;欄位中，輸入從Cloud Manager使用者介面產生的Webhook密碼。 |
 
 >[!ENDTABS]
 
@@ -303,6 +304,25 @@ GitLab互動僅依賴評論。 驗證開始時，會新增註解。 驗證完成
 
 位元貯體的![提取要求驗證狀態](/help/implementing/cloud-manager/managing-code/assets/repository-webhook-bitbucket2.png)
 
+>[!TAB Azure DevOps]
+
+Azure DevOps會透過狀態檢查來追蹤提取請求驗證。 Cloud Manager執行提取請求驗證時，會新增顯示在Azure DevOps提取請求介面中的狀態檢查。
+
+在程式碼品質驗證期間，狀態檢查會顯示處理進行中：
+
+使用webhooks-1![提取請求的](/help/implementing/cloud-manager/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-1.png)Azure DevOps驗證
+
+程式碼品質驗證完成後，狀態檢查會更新以反映結果：
+
+使用webhooks-2![提取請求的](/help/implementing/cloud-manager/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-2.png)Azure DevOps驗證
+
+如果驗證失敗，詳細錯誤資訊會顯示在狀態檢查詳細資訊中。 您可以按一下狀態檢查，以在Cloud Manager中檢視完整驗證結果。
+
+使用webhooks-3![對提取請求進行](/help/implementing/cloud-manager/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-3.png)Azure DevOps驗證
+
+如需提取請求評論和回饋，Cloud Manager會將評論直接新增至Azure DevOps中的提取請求，並包含驗證詳細資料和任何必要的動作。
+
+使用webhooks-4![的提取要求](/help/implementing/cloud-manager/managing-code/assets/azure-devops-validation-of-pull-requests-with-webhooks-4.png)Azure DevOps驗證
 
 
 >[!ENDTABS]
