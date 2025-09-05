@@ -85,7 +85,7 @@ Content Hub 現在可以更快速地發現您所需的資產。使用新的批�
 
 **日期與時間輸入元件**
 
-[日期與時間元件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component)現已可用，可讓使用者使用行事曆和時鐘介面，或是以支援的格式手動輸入值，來選取日期與時間。
+[日期與時間元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component)現已可用，可讓使用者使用行事曆和時鐘介面，或是以支援的格式手動輸入值，來選取日期與時間。
 
 **加強檔案上傳的錯誤處理**
 
@@ -129,7 +129,7 @@ AEM Forms 搶先體驗方案為您提供獨一無二的機會，享有尖端創�
 
 **手寫簽名元件**
 
-您現在可以使用[手寫簽名元件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature)來協助使用者將他們的簽名新增至表單，例如在合約表單中。 該元件讓使用者使用滑鼠、手寫筆或觸控螢幕，直接在表單中書寫其簽名。
+您現在可以使用[手寫簽名元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature)來協助使用者將他們的簽名新增至表單，例如在合約表單中。 該元件讓使用者使用滑鼠、手寫筆或觸控螢幕，直接在表單中書寫其簽名。
 
 在規則編輯器中&#x200B;**直接API整合**
 
