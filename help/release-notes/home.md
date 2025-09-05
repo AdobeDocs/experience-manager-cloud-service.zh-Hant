@@ -5,9 +5,9 @@ exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 feature: Release Information
 role: Admin
 source-git-commit: 4e9d4231860689efd56ab1a1282f4fc0e7ecc3d8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '630'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 99%
 
 此發行頻率是一個不斷更新的時間區段，此間您可以評估任何即將推出的功能對您的專案和自訂內容的影響，並計劃這類功能之推出、測試和使用者培訓。
 
-請查看 [Experience Manager 發行路徑圖](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=zh-Hant#aem-as-cloud-service)，了解即將推出的版本之詳細資訊。
+請查看 [Experience Manager 發行路徑圖](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)，了解即將推出的版本之詳細資訊。
 
 ## 如何針對發行版本做好準備 {#how-to-prepare}
 
@@ -51,7 +51,7 @@ ht-degree: 99%
 
 ## 標示您的行事曆 {#mark-calendars}
 
-功能發行都會事先安排好，並於 [Adobe Experience League](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=zh-Hant#aem-as-cloud-service) 上發佈功能發行啟用日期。
+功能發行都會事先安排好，並於 [Adobe Experience League](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service) 上發佈功能發行啟用日期。
 
 記下發行日期，以便規劃時間來檢視和測試即將推出的功能。
 
@@ -81,8 +81,8 @@ ht-degree: 99%
 
 Adobe Experience League 提供了用來學習 AEMaaCS 的大量資源。
 
-* [AEMaaCS 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=zh-Hant)
-* [教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-tutorials/overview.html?lang=zh-Hant)
+* [AEMaaCS 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)
+* [教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-tutorials/overview.html)
 * 發行說明中的[每月發行概觀影片](/help/release-notes/release-notes-cloud/release-notes-current.md#release-video)
 
 ## 重要版本資訊 {#key-articles}
