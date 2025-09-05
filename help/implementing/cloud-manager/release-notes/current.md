@@ -4,10 +4,10 @@ description: 了解 Adobe Experience Manager as a Cloud Service 中 Cloud Manage
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 98182e835e10b0b29aa2ae21c2a02562ca64111a
+source-git-commit: 2b82e3b848be828fbf8c316244031a0e06f512ca
 workflow-type: tm+mt
-source-wordcount: '1214'
-ht-degree: 88%
+source-wordcount: '1125'
+ht-degree: 87%
 
 ---
 
@@ -41,15 +41,12 @@ AEM as a Cloud Service中的Cloud Manager 2025.9.0發行日期是2025年9月4日
 
   Cloud Manager現在支援在GitHub、Bitbucket、Azure DevOps和GitLab中使用私人存放庫來設定管道。 檢視私人存放庫的[提取要求檢查](/help/implementing/cloud-manager/managing-code/github-check-config.md)。
 
-* **Cloud Manager 新增 ECDSA (橢圓曲線數位簽名演算法) SSL 憑證支援**
+<!--
+### Staging-Only and Production-Only Pipelines {#staging-production-only-pipelines}
 
-  Cloud Manager 現在支援 ECDSA 憑證。此功能透過較小的金鑰提供強大的安全性，讓客戶能夠在其 CDN 設定中套用輕量版的現代加密功能。<!-- https://jira.corp.adobe.com/browse/CMGR-62399 -->
+Support for [staging-only and production-only pipelines](/help/implementing/cloud-manager/configuring-pipelines/stage-prod-only.md) has been introduced, enabling you to split full-stack production deployment pipelines into smaller, specialized deployments.
 
-### 僅限中繼和僅限生產管道 {#staging-production-only-pipelines}
-
-已引進[僅限中繼和僅限生產管道](/help/implementing/cloud-manager/configuring-pipelines/stage-prod-only.md)的支援，讓您將全端生產部署管道分割為更小的專門部署。
-
-如果您有興趣測試此新功能並分享您的意見反應，可使用和您 Adobe ID 相關聯的電子郵件地址傳送電子郵件至 `Grp-cloudmanager_splitpipelines@adobe.com`。
+If you are interested in testing this new feature and sharing your feedback, send an email to  `Grp-cloudmanager_splitpipelines@adobe.com` from your email address associated with your Adobe ID. -->
 
 
 ## Beta 版方案 {#private-beta-program}
@@ -155,7 +152,7 @@ If you are interested in testing this new feature and sharing your feedback, sen
 
   ![篩選器面板顯示新的傳遞類型包括邊緣傳遞與發佈傳遞](/help/implementing/cloud-manager/release-notes/assets/filter-delivery-type.png)
 
-![Add Edge Delivery pipeline in Add Pipeline drop-down list](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *從&#x200B;**計劃概觀**&#x200B;頁面的&#x200B;**管道**&#x200B;卡片新增 Edge Delivery 管道。*
+![Add Edge Delivery pipeline in Add Pipeline drop-down list](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *從&#x200B;**計劃概觀**頁面的&#x200B;**管道**卡片新增 Edge Delivery 管道。*
 
 ![Add Edge Delivery pipeline dialog box](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *新增 Edge Delivery 管道對話框。*
 
