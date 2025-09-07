@@ -5,9 +5,9 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 4c42888af1e846c011242af2c328e553bb811cfd
+source-git-commit: 71311bfffefec8d2c2f71b0c69e6fec4ce3f299b
 workflow-type: tm+mt
-source-wordcount: '1693'
+source-wordcount: '1692'
 ht-degree: 38%
 
 ---
@@ -28,7 +28,7 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 >另請檢視[上線檔案歷程](/help/journey-onboarding/overview.md)，以全面瞭解如何使用Cloud Manager快速上手AEM as a Cloud Service。
 
 
-## AEM中的AI助理
+## AEM 中的 AI 助理
 
 對於具有[已完成必要條件](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access)的客戶，其組織的使用者可以使用AEM中的AI助理。 檢視AEM[中的](/help/implementing/cloud-manager/ai-assistant-in-aem.md)AI小幫手。
 
@@ -126,7 +126,7 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 * 指派給計畫的名稱。 上圖顯示「SecurBank Sample」為程式名稱。
 * 服務類型：
    * **Experience Manager Cloud** — 適用於AEM as a Cloud Service計畫
-   * **Experience Manager** — 適用於[AMS (Adobe Managed Services)方案](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-manager/content/introduction)
+   * **Experience Manager** — 適用於[AMS (Adobe Managed Services)方案](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
 * [程式型別](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)：
    * 沙箱
    * 生產
@@ -153,7 +153,7 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 * 瀏覽至程式的特定![資料圖示](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Data_22_N.svg) [環境](/help/implementing/cloud-manager/manage-environments.md)
 * 開啟![計畫總覽圖示](/help/implementing/cloud-manager/assets/program-overview.svg) [計畫總覽](#program-overview)
 * ![編輯圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) [編輯程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)
-* ![刪除圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) [刪除沙箱程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
+* ![刪除圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)[刪除沙箱程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
 
 >[!TIP]
 >

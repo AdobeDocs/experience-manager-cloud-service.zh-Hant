@@ -5,16 +5,16 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 81e7b1ac-50d0-4547-8622-bf145ebc3dc0
-source-git-commit: 0db48ef4c15b6ca530b2626f7078c7172c872fff
+source-git-commit: e10b760bccc7d544dbf3fe7055a038ff9ad92a81
 workflow-type: tm+mt
-source-wordcount: '1262'
+source-wordcount: '1245'
 ht-degree: 5%
 
 ---
 
 # AEM 中的 AI 助理 {#about-ai-assistant-in-aem}
 
-Adobe Experience Manager (AEM)中的AI助理提供對話式介面，旨在簡化為AEM相關查詢尋找答案的程式。 它可協助您即時取得與AEM產品相關問題的解答（*可供所有使用者使用*），並自動建立支援票證（*可供支援管理員使用*）。
+Adobe Experience Manager (AEM)中的AI Assistant提供對話式介面，旨在簡化為AEM相關查詢尋找答案的程式。 它可協助您即時取得與AEM產品相關問題的解答（*可供所有使用者使用*），並自動建立支援票證（*可供支援管理員使用*）。
 
 AI助理支援AEM as a Cloud Service，包括下列解決方案：
 
@@ -31,7 +31,7 @@ AI 助理會直接嵌入 AEM，並且可透過 AEM Experience Hub、Cloud Manage
 
 以下3分鐘39秒的影片逐步解說AEM中的AI Assistant。
 
->[!VIDEO](https://video.tv.adobe.com/v/3470366?learn=on&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3470354?learn=on)
 
 ## 在AEM中存取AI助理{#get-access}
 
@@ -54,7 +54,7 @@ AEM中的AI助理要求會透過Adobe Identity Management Services (IMS)驗證�
 
 <!--
 >[!IMPORTANT]
->Be sure you have reviewed and submitted the user agreement so Adobe can enable the AI Assistant feature for you to test out and participate in the private beta program.
+>Be sure you have reviewed and submitted the user agreement so Adobe can enable AI Assistant feature for you to test out and participate in the private beta program.
 >
 >For any questions, send an email to [Grp-AEMAIASSISTANT@adobe.com](mailto:Grp-AEMAIASSISTANT@adobe.com) from your email address associated with your Adobe ID. -->
 
@@ -70,7 +70,7 @@ AEM中AI助理目前的範圍著重於解決AEMr as a Cloud Service的產品知�
 
 AEM中的AI助理在設計上特別強調隱私權、安全性和治理。
 
-本文概述您可以從AEM的AI助理身上期待的以信任為中心的功能：
+本文概述AEM AI Assistant中可提供的以信任為中心的功能：
 
 * AEM中的AI助理不會使用任何個人資料，包括訓練用資料。
 * AEM中的AI助理無法存取消費者資料。
@@ -98,7 +98,7 @@ AEM中的AI助理在設計上特別強調隱私權、安全性和治理。
 
 ## 如何製作有效的問題 {#ai-craft-questions}
 
-為了從AEM中的AI助理獲得最準確的回應，請務必以清楚和具體的語境表述您的問題。 使用下列提示來確保您的查詢清晰且結構良好：
+若要從AEM中的AI Assistant收到最準確的回應，請務必以清楚明瞭的內容表述您的問題。 使用下列提示來確保您的查詢清晰且結構良好：
 
 * 以簡潔明瞭的方式清楚說明您的任務或問題。
 * 請避免含糊不清的措辭或過於複雜的語法，以增進瞭解。
@@ -119,7 +119,7 @@ AEM中的AI助理在設計上特別強調隱私權、安全性和治理。
 <!-- UNHIDE AFTER BETA or at GA
 ### Enable AI Assistant in AEM access through Admin Console 
 
-To use the AI Assistant in AEM, your organization must opt in at the Admin Console level. A product administrator creates (or chooses) a user group and grants it the new "AI Assistant" permission. Anyone added to that group instantly gains access to the Assistant across AEM. If the goal is company-wide availability, the admin simply assigns all users to that group.
+To use AI Assistant in AEM, your organization must opt in at the Admin Console level. A product administrator creates (or chooses) a user group and grants it the new "AI Assistant" permission. Anyone added to that group instantly gains access to the Assistant across AEM. If the goal is company-wide availability, the admin simply assigns all users to that group.
 
 ![AI Assistant in AEM in the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console.png)
 
@@ -127,9 +127,9 @@ From an employee's perspective, the process is straightforward: identify the pro
 
 Administrators should keep normal Cloud Manager governance in mind. Hold product administrator rights in the Admin Console to create profiles, manage user groups, or edit permissions. If users also need the Assistant's built-in **Create Support Ticket** feature, add the standard **Support Admin** role (standard Admin Console role) to the same individuals or group.
 
-![Technical support ticket creation in the AI Assistant in AEM of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
+![Technical support ticket creation in AI Assistant in AEM of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
 
-For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/accessing/overview). 
+For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview). 
 
 See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md). -->
 
@@ -172,7 +172,7 @@ AEM中的AI助理包含可發現性功能，可協助您探索支援的主題和
 
 1. 若要隱藏提示探索面板，請再按一下![學習圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Learn_18_N.svg)。
 
-### 在AEM中的AI助理上分享您的意見回饋
+### 在AEM中分享AI助理的意見回饋
 
 您的輸入可協助Adobe改善AI Assistant，以獲得更出色的效能和準確性。
 
@@ -188,7 +188,7 @@ AEM中的AI助理包含可發現性功能，可協助您探索支援的主題和
 
 ## 關於AEM中AI助理的常見問題 {#ai-faq}
 
-以下是AI助理部分常見問題的解答：
+以下是有關AI Assistant部分常見問題的回答：
 
 * **AEM中的AI助理是否即時提供資訊？**\
   不行。AI助理從Adobe Experience League檔案取得其內容。 內容的更新可能需要一些時間才能反映在回應中。
