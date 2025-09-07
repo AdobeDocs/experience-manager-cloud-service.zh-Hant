@@ -126,7 +126,7 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 * 指派給計畫的名稱。 上圖顯示「SecurBank Sample」為程式名稱。
 * 服務類型：
    * **Experience Manager Cloud** — 適用於AEM as a Cloud Service計畫
-   * **Experience Manager** — 適用於[AMS (Adobe Managed Services)方案](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
+   * **Experience Manager** — 適用於[AMS (Adobe Managed Services)方案](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-manager/content/introduction)
 * [程式型別](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)：
    * 沙箱
    * 生產
