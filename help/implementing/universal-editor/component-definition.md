@@ -95,7 +95,7 @@ ht-degree: 96%
 `plugins` 定義哪個外掛程式負責保留元件。常見的外掛程式包括：
 
 * `aem`AEM as a Cloud Service的[。](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service)
-* `aem65`AEM 6.5的[。](https://experienceleague.adobe.com/en/docs/experience-manager-65)
+* `aem65`AEM 6.5的[。](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65)
 * 使用AEM Sites為Edge Delivery Services編寫`xwalk`的[。](https://www.aem.live/developer/ue-tutorial)
 
 ## `page` 或 `cf` {#page-cf}
