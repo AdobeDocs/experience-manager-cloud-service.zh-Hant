@@ -5,9 +5,9 @@ exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 feature: Release Information
 role: Admin
 source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2711'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -53,7 +53,7 @@ AEM as a Cloud Service 提供四種類型的[環境](/help/implementing/cloud-ma
 
 * 中繼環境：
 
-   * 中繼環境通常以1:1關係與生產環境耦合。
+   * 中繼環境通常與生產環境維持 1:1 的關係。
    * 中繼環境的主要設計，是在將應用程式的變更推送至生產環境之前進行自動化測試。
       * 這與 Adobe 作為維護更新的一部分或透過您的程式碼部署發起的變更無關。
       * 您也可以在程式碼部署時進行手動測試。
@@ -239,4 +239,4 @@ Cloud Manager 會透過滾動式更新模式來更新所有服務節點，藉此
 * Edge Delivery Services：
    * [AEM as a Cloud Service 概觀 - 含 Edge Delivery Services](/help/edge/overview.md)
    * [使用 Edge Delivery Services](/help/edge/overview.md)
-   * [探索 AEM as a Cloud Service 含 Edge Delivery Services 的基本架構和重要元件。](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html?lang=zh-Hant)
+   * [探索 AEM as a Cloud Service 含 Edge Delivery Services 的基本架構和重要元件。](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html)

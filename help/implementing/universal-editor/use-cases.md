@@ -1,87 +1,87 @@
 ---
 title: 通用編輯器使用案例和學習路徑
-description: 瞭解Universal Editor的主要使用案例，以及如何最好地瞭解其使用方式，以及如何在您自己的專案中實作。
+description: 了解通用編輯器的主要使用案例，以及如何充分了解其用途，還有如何在自己的專案中實施。
 exl-id: 398ad0e2-c299-4c49-9784-05c84c67bec2
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '882'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 # 通用編輯器使用案例和學習路徑 {#use-cases-learning-paths}
 
-瞭解通用編輯器的主要使用案例，以及如何充分瞭解其使用方式，以及如何在您自己的專案中實作。
+了解通用編輯器的主要使用案例，以及如何更加了解其用途，還有如何在自己的專案中實施。
 
 ## 概觀 {#overview}
 
-通用編輯器是多功能的視覺化編輯器，屬於Adobe Experience Manager Sites的一部分。 它可讓作者對任何Headless或Headful體驗執行「所見即所得」(WYSIWYG)編輯。
+通用編輯器是一個多功能視覺化編輯器，是 Adobe Experience Manager Sites 的一部分。作者可以使用此編輯器透過所見即所得 (WYSIWYG) 的方式編輯任何無周邊或有周邊體驗。
 
-本檔案將詳細說明這兩個使用案例，並說明如何深入瞭解這些案例，以便在您自己的專案中實作通用編輯器。
+本文件將詳細解釋這兩個使用案例，並告訴您要如何更加了解其相關資訊，讓您可以在自己的專案中實施通用編輯器。
 
 >[!TIP]
 >
->若尚未提供，請檢閱檔案[通用編輯器簡介](/help/implementing/universal-editor/introduction.md)，以取得通用編輯器的完整概觀和值。
+>若您還沒有閱讀，請檢閱[通用編輯器簡介](/help/implementing/universal-editor/introduction.md)文件，了解通用編輯器的完整概觀和價值。
 
 ## 使用案例 {#use-cases}
 
-Universal Editor為您的內容作者提供方便、直觀的視覺編輯器，無論他們建立什麼型別的內容。 兩個主要使用案例為：
+無論內容作者正在建立什麼類型的內容，通用編輯器都是方便又簡單易用的視覺化編輯器。兩個主要的使用案例如下：
 
-* [WYSIWYG製作](#wysiwyg-authoring) — 使用AEM Sites主控台，使用通用編輯器在AEM中管理您的內容和製作頁面
-* [Headless製作](#headless-authoring) — 使用通用編輯器在您自己的自訂Headless應用程式中製作內容。
+* [WYSIWYG 製作](#wysiwyg-authoring) - 使用 AEM Sites 控制台來管理您的內容，以及在 AEM 中使用通用編輯器來製作頁面
+* [無周邊製作](#headless-authoring) - 使用通用編輯器在自訂的無周邊應用程式中製作內容。
 
-### WYSIWYG 編寫 {#wysiwyg-authoring}
+### WYSIWYG 製作 {#wysiwyg-authoring}
 
-如果您已熟悉AEM，您可以使用Sites主控台建立和管理您的頁面，然後使用通用編輯器進行編輯。
+若您已經熟悉 AEM，可以使用 Sites 控制台建立和管理您的頁面，然後使用通用編輯器對其進行編輯。
 
-透過這種方式，您可以從Sites Console中提供的工具(例如頁面管理（複製、貼上、移動）和工作流程)中受益，也可以從現代的通用編輯器中受益。
+透過這種方式，您不但能夠運用 Sites 控制台中提供的工具，例如頁面管理 (複製、貼上、移動) 和工作流程，還能夠使用現代的通用編輯器。
 
-如果您的使用案例是這樣的，作為緊接著的下一步，請參閱以下檔案以取得有關如何在AEM中啟動並執行通用編輯器的完整概觀。
+如果這是您的使用案例，緊接著下一步，請參閱以下文件，了解如何在 AEM 中設定和執行通用編輯器的完整概觀。
 
-1. [使用Edge Delivery Services編寫WYSIWYG的開發人員快速入門手冊](https://www.aem.live/developer/ue-tutorial) — 開始使用AEM中的第一個Universal Editor專案
-1. [建立已檢測成可與通用編輯器搭配使用的區塊](https://www.aem.live/developer/universal-editor-blocks) — 瞭解如何檢測區塊，使您的內容可在通用編輯器中編輯
-1. [使用Edge Delivery Services專案進行WYSIWYG製作的內容模型化](https://www.aem.live/developer/component-model-definitions) — 瞭解區塊結構的詳細資訊，以有效地模型化您的內容以供搭配通用編輯器使用。
+1. [使用 Edge Delivery Services 進行 WYSIWYG 製作的開發人員快速入門手冊](https://www.aem.live/developer/ue-tutorial) - 開始使用 AEM 中第一個通用編輯器專案
+1. [建立已經過檢測以和通用編輯器一起使用的區塊](https://www.aem.live/developer/universal-editor-blocks) - 了解如何檢測區塊，讓您可以在通用編輯器中編輯內容
+1. [Edge Delivery Services 專案進行 WYSIWYG 製作的內容建模](https://www.aem.live/developer/component-model-definitions) - 詳細了解區塊的結構，以便有效地為內容建模並供通用編輯器使用。
 
-閱讀這些檔案後，您可以返回本頁，瞭解Headless編寫使用案例以及Universal Editor的一般運作方式。
+閱讀這些文件後，您可以返回此頁面，了解無周邊製作使用案例，以及通用編輯器的一般運作原理。
 
-### Headless製作 {#headless-authoring}
+### 無周邊製作 {#headless-authoring}
 
-如果您已有Headless應用程式，可以使用Universal Editor來編寫應用程式的內容，並將其內容以AEM內容片段的形式持續存在。 唯一的要求是應用程式必須檢測為允許使用通用編輯器。
+若您已經擁有無周邊應用程式，可以使用通用編輯器製作應用程式的內容，並將其內容作為內容片段保留在 AEM 中。唯一需求是必須檢測應用程式，以便允許使用通用編輯器。
 
-如果您的使用案例是這樣的，作為緊接著的下一步，請參閱以下檔案以瞭解使用通用編輯器的Headless應用程式範例。
+如果這是您的使用案例，緊接著下一步，請參閱以下文件，了解無周邊應用程式經過檢測而能使用通用編輯器的範例。
 
-* [通用編輯器的SecurBank範例應用程式](/help/implementing/universal-editor/securbank.md)
+* [通用編輯器的 SecurBank 範例應用程式](/help/implementing/universal-editor/securbank.md)
 
-閱讀該檔案後，您可以返回本頁瞭解WYSIWYG編寫使用案例以及Universal Editor的一般運作方式。
+閱讀該文件後，您可以返回此頁面，了解 WYSIWYG 製作使用案例，以及通用編輯器的一般運作原理。
 
 {{ue-headless-auth}}
 
-## 通用編輯器的運作方式 {#how-ue-works}
+## 通用編輯器的運作原理 {#how-ue-works}
 
-Universal Editor的強大功能是能夠就地撰寫任何內容，因此無論內容為何，都可為內容作者提供完全直覺式且統一的UI。
+通用編輯器的強大功能在於能夠在原位置製作任何內容，無論內容是什麼，都能為內容作者提供簡單易用且統一的使用者介面。
 
-Universal Editor的運作方式如下。
+通用編輯器的運作方式如下。
 
-1. 開發人員會測試應用程式或頁面，以使用通用編輯器。 此檢測會告知編輯器哪些內容可編輯以及如何將其保留。
-   * 如果您使用Edge Delivery Services[檔案遵循WYSIWYG製作的](https://www.aem.live/developer/ue-tutorial)開發人員快速入門手冊，您的頁面會自動進行檢測。
-   * 針對Headless編寫，可輕鬆檢測您的應用程式。
-1. 內容作者會載入通用編輯器，接著再載入您的頁面進行編輯。 由於是儀器式的，因此它知道哪些內容可以編輯，以及如何表示和持續儲存內容。
-1. 內容作者可在直覺式的WYSIWYG介面中編輯頁面內容，就地編輯。
-1. Universal Editor會自動將變更儲存回資料來源。
+1. 開發人員檢測應用程式或頁面，以便能夠使用通用編輯器。此檢測可告知編輯器，哪些內容為可編輯以及如何保留。
+   * 若您依循[使用 Edge Delivery Services 進行 WYSIWYG 製作的開發人員快速入門手冊](https://www.aem.live/developer/ue-tutorial)文件，您的頁面會自動經過檢測。
+   * 如果是無周邊製作，您可以輕鬆地檢測應用程式。
+1. 內容作者載入通用編輯器，然後通用編輯器會載入您的頁面進行編輯。由於經過檢測，所以編輯器知道哪些內容為可編輯，以及如何呈現和保留這些內容。
+1. 內容作者在直覺式的 WYSIWYG 介面中編輯頁面內容，在原位置編輯。
+1. 通用編輯器會自動將變更儲存回資料來源並保留。
 
-如果您想深入瞭解通用編輯器的架構，請參閱檔案[通用編輯器架構](/help/implementing/universal-editor/architecture.md)。
+若想了解更多關於通用編輯器架構的詳細資訊，請參閱[通用編輯器架構](/help/implementing/universal-editor/architecture.md)文件。
 
-## Universal Editor概念 {#concepts}
+## 通用編輯器概念 {#concepts}
 
-若要讓通用編輯器可編輯頁面或應用程式，必須正確檢測該頁面或應用程式。
+若要讓頁面或應用程式可以透過通用編輯器進行編輯，必須進行適當的檢測。
 
-* [屬性和型別](/help/implementing/universal-editor/attributes-types.md) — 若要讓通用編輯器可編輯應用程式或頁面，必須正確檢測它。 這包括包含適當的中繼資料，以便編輯器可以編輯應用程式的內容。
-* [模型定義、欄位和元件型別](/help/implementing/universal-editor/field-types.md) — 當中繼資料顯示以啟用元件編輯功能後，您即可在編輯器的屬性面板中定義它們可以操作的欄位和元件型別。
-* [通用編輯器事件](/help/implementing/universal-editor/events.md) — 您可以透過使用通用編輯器在內容或UI互動上發出的事件，來增強應用程式中的編輯體驗，進而自訂您的應用程式。
+* [屬性與類型](/help/implementing/universal-editor/attributes-types.md) - 為了讓應用程式或頁面可由通用編輯器進行編輯，必須進行適當的檢測。這包括要加入適當的後設資料，讓編輯器可以編輯應用程式的內容。
+* [模型定義、欄位與元件類型](/help/implementing/universal-editor/field-types.md) - 具備後設資料並能夠編輯元件後，您即可在編輯器的屬性面板中定義可以操作哪些欄位和元件類型。
+* [通用編輯器事件](/help/implementing/universal-editor/events.md) - 您可以使用通用編輯器在內容或使用者介面互動時所發出的事件，增強應用程式中的編輯體驗，進一步自訂您的應用程式。
 
-通用編輯器也可以根據您的專案需求進行調整。
+您也可以根據專案需求改造通用編輯器。
 
-* [自訂Universal Editor](/help/implementing/universal-editor/customizing.md) - Universal Editor體驗可以透過篩選編輯器的不同方面或擴充編輯器的功能來調整。
-* [擴充通用編輯器](/help/implementing/universal-editor/extending.md) — 可擴充通用編輯器的UI，以擴充其功能來滿足您的專案需求。
+* [自訂通用編輯器](/help/implementing/universal-editor/customizing.md) - 您可以篩選編輯器的不同層面或擴充編輯器的功能，來改造通用編輯器體驗。
+* [擴充通用編輯器](/help/implementing/universal-editor/extending.md) - 您可以擴充通用編輯器的使用者介面，藉此擴展其功能以滿足專案需求。

@@ -5,72 +5,72 @@ feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
 source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1670'
-ht-degree: 44%
+ht-degree: 100%
 
 ---
 
 # 在通用編輯器中建立表單片段
 
-表單片段是可重複使用的元件，可消除重複開發工作並確保組織表單間的一致性。 您可以將這些元素建置為片段，並在多個表單中重複使用，而不是為每個表單重新建立常見區段，例如聯絡資訊、地址詳細資訊或同意協定。
+表單片段是可重複使用的元件，能免除重複性開發工作並確保組織內的表單維持一致性。與其針對每個表單重新建立如聯絡資訊、地址詳細資訊或同意協議之類的通用區段，您可以將這些元素建置為片段一次，然後在多個表單中重複使用。
 
-**您將在本文中完成的內容：**
+**您在本文中會實現的目標：**
 
-- 瞭解表單片段的商業價值和技術功能
+- 了解表單片段的商業價值與技術能力
 - 使用通用編輯器建立可重複使用的表單片段
-- 使用適當的設定將片段整合到現有表單中
-- 管理片段生命週期並維護各表單的一致性
+- 透過正確的設定將片段與現有表單整合
+- 管理片段生命週期及維持表單間的一致性
 
-**企業福利：**
+**商業利益：**
 
-- **縮短開發時間**：一次建置通用表單區段，隨處重複使用
-- **已改善一致性**：所有表單的標準化版面配置和內容
-- **簡化維護作業**：更新片段一次，以反映使用片段的所有表單的變更
-- **增強法規遵循性**：確保法規區段保持一致且為最新狀態
+- **縮短開發時間**：只要建置一次通用的表單區段，即可在任何地方重複使用
+- **提升一致性**：將所有表單的版面和內容標準化
+- **簡化維護過程**：只要更新片段一次，即可在使用該片段的所有表單反映變更
+- **增強合規性**：確保監管區段保持一致且為最新版本
 
-Edge Delivery Services中的表單片段支援進階功能，包括巢狀片段、單一表單內的多個執行個體以及與資料來源無縫整合。
+Edge Delivery Services 中的表單片段支援多項進階功能，包括巢狀片段、單一表單中有多個實例，以及與資料來源的緊密整合。
 
-## 瞭解表單片段
+## 了解表單片段
 
-Edge Delivery Services中的表單片段提供模組化表單開發的強大功能：
+Edge Delivery Services 中的表單片段為模組化表單開發提供強大的功能：
 
 **核心功能：**
 
-- **一致性管理**：片段在多個表單中維持相同的版面和內容。 透過「變更一次，隨處反映」方法，片段的更新會自動套用至預覽模式中的所有表單。
-- **多種用法**：在單一表單中多次新增相同的片段，每個片段都有到不同資料來源或結構描述元素的獨立資料繫結。
-- **巢狀結構**：將片段內嵌於複雜表單架構的其他片段中，以建立複雜的階層。
+- **一致性管理**：片段可讓多個表單維持相同的版面和內容。透過「一次變更，全面反映」的方法，在預覽模式中，對片段進行更新會自動套用至所有表單。
+- **多種用途**：在單一表單中多次新增相同的片段，每個片段都會建立獨立的資料繫結，連結到不同的資料來源或結構描述元素。
+- **巢狀結構**：將片段嵌入其他片段中，建立複雜的階層，形成複雜的表單架構。
 
 **技術需求：**
 
-- **GitHub URL一致性**：片段與任何使用它的表單都必須指定相同的GitHub存放庫URL
-- **獨立編輯**：片段只能以獨立形式修改；無法在主機表單中進行變更
+- **GitHub URL 一致性**：片段及使用片表的任何表單都必須指定相同的 GitHub 存放庫 URL
+- **獨立編輯**：片段只能單獨修改；無法在主版表單中進行變更
 
 **發佈行為：**
 
 >[!IMPORTANT]
 >
->在預覽模式中，片段變更會立即反映在所有表單中。 在發佈模式中，您必須重新發佈片段及任何使用它來檢視更新的表單。
+>在預覽模式下，片段變更會立即反映在所有表單上。在發佈模式下，您必須重新發佈片段及使用該片段的任何表單才能看到更新。
 
 >[!CAUTION]
 >
->避免遞回片段參考（在其內部巢狀內嵌片段），因為這會造成轉譯錯誤和意外行為。
+>避免遞迴式的片段參照 (將片段巢狀嵌入自身之中)，因為這會導致轉譯錯誤和非預期行為。
 
 ## 先決條件
 
 **技術設定需求：**
 
-- [已設定GitHub存放庫](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template)，且您的AEM環境與GitHub存放庫之間已建立連線
-- [最新最適化Forms區塊](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project)已新增到您的GitHub存放庫(適用於現有Edge Delivery Services專案)
-- 提供具有Edge Delivery Services範本的AEM Forms作者例項
-- 存取您的AEM Forms as a Cloud Service作者執行個體URL和GitHub存放庫URL
+- [GitHub 存放庫已設定](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#get-started-with-the-aem-forms-boilerplate-repository-template)，而且在您的 AEM 環境與 GitHub 存放庫之間建立連線
+- 將[最新的自適應表單區塊](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project)新增至您的 GitHub 存放庫 (適用於現有的 Edge Delivery Services 專案)
+- AEM Forms 作者實例，且有可用的 Edge Delivery Services 範本
+- 您的 AEM Forms as a Cloud Service 作者實例 URL 和 GitHub 存放庫 URL 的存取權
 
-**必要的知識與許可權：**
+**必要的知識與權限：**
 
-- 基本瞭解表單設計概念和元件階層
+- 對於表單設計概念和元件階層有基本認識
 - 熟悉通用編輯器介面和表單建立工作流程
-- 在AEM Forms中建立和管理表單資產的作者層級許可權
-- 瞭解貴組織的表單標準及可重複使用的元件需求
+- 擁有 AEM Forms 的作者層級權限，以便建立和管理表單資產
+- 對於您組織的表單標準和可重複使用元件的需求有所了解
 
 ## 使用 Edge Delivery Services 表單片段
 
@@ -95,7 +95,7 @@ Edge Delivery Services中的表單片段提供模組化表單開發的強大功�
    ![選取 Edge Delivery Services 範本](/help/edge/docs/forms/universal-editor/assets/create-form-fragment.png)
 
 1. 指定片段的標題、名稱、描述和標記。確保為片段指定唯一的名稱。如果已存在名稱相同的片段，將無法建立片段。
-1. 指定 **GitHub URL**。例如，如果您的GitHub存放庫名為`edsforms`，則位於帳戶`wkndforms`下，URL為`https://github.com/wkndforms/edsforms`。
+1. 指定 **GitHub URL**。例如，若您的 GitHub 存放庫名稱為 `edsforms`，便是位在帳戶 `wkndforms` 之下，則 URL 為：`https://github.com/wkndforms/edsforms`。
 
    ![基本屬性](/help/edge/docs/forms/universal-editor/assets/fragment-basic-properties.png)
 
@@ -112,40 +112,40 @@ Edge Delivery Services中的表單片段提供模組化表單開發的強大功�
    >
    > 若要了解如何在通用編輯器中將表單或片段與表單資料模型 (FDM) 整合以使用不同的後端資料來源，請參閱[在通用編輯器中將表單與表單資料模型整合](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)。
 
-1. (選擇性) 在「**進階**」標籤中指定片段的「**發佈日期**」或「**取消發佈日期**」。
+1. (選用) 在「**進階**」標籤中，指定片段的「**發佈日期**」或「**取消發佈日期**」。
 
-   ![進階索引標籤](/help/edge/docs/forms/universal-editor/assets/advanced-properties-fragment.png)
-1. 按一下&#x200B;**建立**&#x200B;以產生片段。 成功對話方塊隨即出現，其中包含編輯選項。
+   ![「進階」標籤](/help/edge/docs/forms/universal-editor/assets/advanced-properties-fragment.png)
+1. 按一下「**建立**」來產生片段。接著出現具有編輯選項的成功對話框。
 
    ![編輯片段](/help/edge/docs/forms/universal-editor/assets/edit-fragment.png)
 
-1. 按一下「**編輯**」以在「通用編輯器」中開啟已套用預設範本的片段。
+1. 按一下「**編輯**」，在通用編輯器中開啟片段並套用預設範本。
 
-   通用編輯器中的![片段以供編寫](/help/edge/docs/forms/universal-editor/assets/fragment-in-ue.png)
+   ![通用編輯器中要進行製作的片段](/help/edge/docs/forms/universal-editor/assets/fragment-in-ue.png)
 
-1. **設計您的片段內容**：新增表單元件（文字欄位、下拉清單、核取方塊）以建立可重複使用的區段。 如需詳細的元件指引，請參閱[使用通用編輯器的AEM FormsEdge Delivery Services快速入門](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#author-forms-using-wysiwyg)。
+1. **設計片段內容**：新增表單元件 (文字欄位、下拉式選單、核取方塊)，建置可重複使用的區段。如需詳細的元件指引，請參閱[使用通用編輯器開始使用 AEM Forms 適用的 Edge Delivery Services](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#author-forms-using-wysiwyg)。
 
-1. **設定元件屬性**：視使用案例需要設定欄位名稱、驗證規則和預設值。
+1. **設定元件屬性**：根據您的使用案例之需求，設定欄位名稱、驗證規則和預設值。
 
-1. **儲存並預覽**：儲存您的片段，並使用預覽模式來驗證版面配置和功能。
+1. **儲存及預覽**：儲存您的片段並使用預覽模式驗證版面和功能。
 
-   ![通用編輯器中已完成的聯絡人詳細資訊表單片段之螢幕擷圖，顯示可在多個表單中重複使用的姓名、電話、電子郵件及地址](/help/edge/docs/forms/universal-editor/assets/contact-fragment.png)
+   ![通用編輯器中已完成之聯絡人詳細資料表單片段的螢幕擷圖，顯示可在多個表單中重複使用的姓名、電話、電子郵件及地址欄位](/help/edge/docs/forms/universal-editor/assets/contact-fragment.png)
 
-**驗證檢查點：**
+**驗證查核點：**
 
-- 片段在通用編輯器中載入且未發生錯誤
-- 所有表單元件皆可正確轉譯
-- 欄位屬性和驗證規則如預期般運作
-- 片段已儲存並可在Forms和檔案控制檯中使用
+- 通用編輯器中片段載入無錯誤
+- 所有表單元件均正確轉譯
+- 欄位屬性和驗證規則如預期運作
+- 片段已儲存並且可在「表單與文件」控制台中使用
 
-片段完成後，您可以[將其整合到任何Edge Delivery Services表單](#adding-form-fragments-to-a-form)。
+片段完成後，您可以[將其整合至任何 Edge Delivery Services 表單中](#adding-form-fragments-to-a-form)。
 
 +++
 
 
 +++ 在表單中新增表單片段
 
-此範例示範如何建立員工和主管資訊區段均使用`Employee Details`片段的`Contact Details`表單。 此方法可確保資料收集的一致性，同時降低開發工作量。
+此範例示範建立 `Employee Details` 表單並使用 `Contact Details` 片段作為員工和主管資訊區段。此方法可以確保資料彙集的一致性，同時減少開發工作量。
 
 若要將表單片段整合至您的表單中：
 
@@ -156,7 +156,7 @@ Edge Delivery Services中的表單片段提供模組化表單開發的強大功�
 
    ![導覽至區段](/help/edge/docs/forms/universal-editor/assets/navigate-to-section.png)
 
-1. 按一下「**[!UICONTROL 新增]**」圖示，然後新增來自「**自適應表單元件**」清單的&#x200B;**[!UICONTROL 表單片段]**&#x200B;元件。
+1. 按一下「**[!UICONTROL 新增]**」圖示，然後新增來自「**自適應表單元件**」清單的&#x200B;**[!UICONTROL 表單片段]**元件。
    ![新增表單片段](/help/edge/docs/forms/universal-editor/assets/add-fragment.png)
 
    選取&#x200B;**[!UICONTROL 表單片段]**&#x200B;元件後，片段即會新增至您的表單中。您可以開啟片段的「**屬性**」來設定新增片段的屬性。例如，在「**屬性**」中隱藏片段的標題。
@@ -171,7 +171,7 @@ Edge Delivery Services中的表單片段提供模組化表單開發的強大功�
 
 1. 按一下「**[!UICONTROL 選取]**」。
 
-   表單片段會參照表單新增，並與獨立表單片段保持同步。
+   以參照方式將表單片段新增至表單，並與獨立的表單片段保持同步。
 
    ![螢幕擷圖顯示聯絡人詳細資訊片段已成功整合至通用編輯器的員工表單中，並展示片段在重複使用時如何保持其結構](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
 
@@ -250,46 +250,46 @@ Edge Delivery Services中的表單片段提供模組化表單開發的強大功�
 
 ## 最佳做法
 
-**片段設計和命名：**
+**片段設計與命名：**
 
-- **使用描述性、唯一的名稱**：選擇可清楚表示片段用途的名稱（例如「contact-details-with-validation」而非「fragment1」）
-- **規劃可重複使用**：設計片段與內容無關，因此可跨不同的表單型別運作
-- **讓片段保持焦點**：建立單一用途的片段，而非複雜的多功能元件
+- **使用描述性的唯一名稱**：選擇能夠清楚表明片段用途的名稱 (例如，「contact-details-with-validation」而非「fragment1」)
+- **規劃重複使用性**：將片段設計為與內容無關，使其能夠適用於不同類型的表單
+- **保持片段專一性**：建立單一用途的片段，而非複雜的多功能元件
 
 **開發工作流程：**
 
-- **獨立測試片段**：在整合至表單之前驗證片段功能
-- **維持一致的GitHub URL**：確保在所有相關片段和表單中使用相同的存放庫URL
-- **檔案片段用途**：包含清晰的說明和標籤，以協助團隊成員瞭解何時要使用每個片段
+- **片段獨立測試**：在片段與表單整合之前驗證其功能
+- **維持一致的 GitHub URL**：確保所有相關片段和表單皆使用相同的存放庫 URL
+- **文件片段用途**：包含清晰的說明和標記，協助團隊成員了解各片段應於何時使用
 
 **發佈與維護：**
 
-- **協調發佈**：更新片段時，計畫同時重新發佈所有相依表單
-- **版本控制**：更新片段時請使用有意義的認可訊息來追蹤一段時間的變更
-- **監視相依性**：追蹤使用每個片段來評估更新影響的表單
+- **協調發佈**：更新片段時，規劃同時重新發佈所有相依的表單
+- **版本控制**：更新片段時使用有意義的提交訊息，藉以追蹤一段時間內的變更
+- **監視相依性**：追蹤哪些表單使用各個片段，以便評估更新的影響
 
 >[!TIP]
 >
->片段樣式、指令碼和運算式在內嵌時會保留，因此在設計時會考慮這種繼承。
+>嵌入時，片段樣式、指令碼和運算式均會保留，因此設計時請留意這樣的繼承關係。
 
 ## 摘要
 
-您已成功瞭解如何在Edge Delivery Services中運用表單片段來改善開發效率並維持組織表單的一致性。
+您已成功了解如何善用 Edge Delivery Services 中的表單片段來提升開發效率，並維持組織中各種表單的一致性。
 
-**主要成績：**
+**主要成就：**
 
-- **瞭解**：掌握表單片段的商業價值和技術功能
-- **建立**：使用具有適當組態的通用編輯器建置可重複使用的表單片段
-- **整合**：新增片段至具有正確參考設定和屬性設定的表單
-- **管理**：探索片段生命週期作業和維護工作流程
+- **了解**：掌握表單片段的商業價值與技術能力
+- **建立**：使用通用編輯器搭配正確的設定，建置可重複使用的表單片段
+- **整合**：利用正確的參照設定和屬性設定，在表單中新增片段
+- **管理**：探索片段生命週期操作與維護工作流程
 
 **後續步驟：**
 
 - 為您的組織建立常用片段資料庫
-- 為片段使用建立命名慣例和治理原則
-- 探索與動態資料驅動片段的[表單資料模型](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)的進階整合
-- 實作片段式表單範本，以維持一致的使用者體驗
+- 建立使用片段所需的命名慣例與治理原則
+- 探索與[表單資料模型](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)的進階整合，以利使用資料驅動的動態片段
+- 實施片段型表單範本以實現一致的使用者體驗
 
-您的表單現在受益於模組化、可維護的架構，該架構可在各個專案中有效擴展，同時確保一致的使用者體驗。
+您的表單現在因為使用模組化且可維護的架構，能夠在多個專案之間有效地擴展，同時確保一致的使用者體驗。
 
 

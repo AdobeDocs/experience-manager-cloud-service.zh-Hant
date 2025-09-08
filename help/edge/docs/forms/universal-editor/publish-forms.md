@@ -4,12 +4,12 @@ description: 了解如何使用 Edge Delivery Services 發佈、設定和存取�
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
-keywords: 發佈表單，Edge Delivery Services，表單設定，CORS，反向連結篩選器
+keywords: 發佈表單, Edge Delivery Services, 表單設定, CORS, 反向連結篩選器
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
 source-git-commit: 05c0d8fd16cc8bd805a0e8644d3145685fe6fa12
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '746'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -32,15 +32,15 @@ ht-degree: 89%
 - Cloud Manager 存取權 (用於生產設定)
 - 開發人員存取表單區塊程式碼 (用於提交設定)
 
-## 發佈程式概觀
+## 發佈程序概觀
 
-將表單發佈至Edge Delivery Services會遵循三個階段的方法：
+將表單發佈至 Edge Delivery Services 的方法分成三階段：
 
-- **階段1：表單發佈** — 將表單發佈至CDN並驗證發佈狀態
-- **階段2：安全性設定** — 設定CORS原則與反向連結篩選器，以安全提交內容
-- **階段3：存取和驗證** — 測試表單功能並驗證完整的工作流程
+- **第 1 階段：表單發佈** - 將您的表單發佈至內容傳遞網路並驗證發佈狀態
+- **第 2 階段：安全性設定** - 設定 CORS 原則和反向連結篩選器以確保安全提交
+- **第 3 階段：存取及驗證** - 測試表單功能並驗證完整的工作流程
 
-每個階段都建立在上一個階段之上，以確保安全且功能性的部署。
+每個階段均以上一個階段為基礎，確保部署安全且可以正常運作。
 
 ### 第一階段：發佈表單
 

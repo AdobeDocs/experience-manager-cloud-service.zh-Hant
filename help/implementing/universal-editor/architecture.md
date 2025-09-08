@@ -5,9 +5,9 @@ exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '508'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -35,8 +35,8 @@ Universal Editor 由四個基本建置區塊組成，這些建置區塊可進行
 
 ### 編輯 {#editors}
 
-* **Universal Editor** - Universal Editor 使用經過檢測的 DOM 來就地編輯內容。如需必要中繼資料的詳細資訊，請參閱[屬性和類型](attributes-types.md)。請參閱文件[AEM 中 Universal Editor 快速入門](getting-started.md)，了解 AEM 中的檢測範例。
-* **屬性面板** — 內容無法編輯元件的某些屬性，例如輪播的輪播時間或應一律開啟或關閉摺疊式功能表索引標籤。 為了允許編輯此類元件資訊，編輯器的側面板中會提供表單式編輯器。
+* **Universal Editor** - Universal Editor 使用經過檢測的 DOM 來就地編輯內容。如需必要中繼資料的詳細資訊，請參閱[屬性和類型](attributes-types.md)。請參閱 [AEM 中通用編輯器快速入門](getting-started.md)文件，了解 AEM 中的檢測範例。
+* **屬性面板** - 元件的某些屬性無法在內容中進行編輯，例如輪播的切換時間，或哪個摺疊式標籤應該一直開啟或關閉。為了能夠編輯這類元件資訊，編輯器的側面板提供表單型編輯器。
 
 ### 遠端應用程式 {#remote-app}
 
@@ -51,8 +51,8 @@ Universal Editor 致力於最小化 SDK，因此檢測是遠端應用程式實�
 
 ### 持續性層 {#persistence-layer}
 
-* **內容片段模式** — 若要支援面板以編輯內容片段屬性、內容片段編輯器和表單式編輯器，需要每個元件和內容片段的模式。
-* **內容** — 內容可以儲存在任何位置，例如AEM、Magento等。
+* **內容片段模型** - 若要支援編輯內容片段屬性的面板、內容片段編輯器和表單型編輯器，需要每個元件和內容片段的模型。
+* **內容** - 內容可以儲存在任何地方，例如 AEM、Magento 等等。
 
 ![持續性層](assets/persistence-layer.png)
 

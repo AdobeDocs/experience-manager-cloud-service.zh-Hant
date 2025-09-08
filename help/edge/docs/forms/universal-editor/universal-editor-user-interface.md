@@ -7,20 +7,20 @@ role: User, Developer, Admin
 level: Beginner
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
 source-git-commit: 07160248d5b5817d155a118475878ce04a687a32
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2355'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 
 # 導覽 AEM Forms 的通用編輯器介面
 
-[通用編輯器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)提供視覺化介面，協助建立搭配 Edge Delivery Services 的 AEM Forms。它提供&#x200B;**What You See Is What You Get (WYSIWYG)**&#x200B;體驗，可精確顯示您的表單對使用者的顯示方式。
+[通用編輯器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)提供視覺化介面，協助建立搭配 Edge Delivery Services 的 AEM Forms。其提供&#x200B;**所見即所得 (WYSIWYG)** 體驗，能夠顯示您的表單向使用者呈現時的實際樣貌。
 
 ![通用編輯器介面概觀](/help/edge/docs/forms/universal-editor/assets/universal-editor-interface.png)
 
-本指南可協助您瞭解介面，以有效建置表單。 無論您初次建置表單或是經驗豐富的開發人員，本指南都將幫助您：
+本指南能協助您了解介面，以便提高建置表單的效率。無論您初次建置表單或是經驗豐富的開發人員，本指南都將幫助您：
 
 **學習基本技能：**
 
@@ -216,7 +216,7 @@ ht-degree: 90%
 
 **以下工具適合針對特定情境或進階設定使用：**
 
-#### **AEM表單屬性**
+#### **AEM 表單屬性**
 
 **用途：**&#x200B;進行表單層級設定，例如表單資料模型 (FDM) 和出版日期\
 **何時使用：**&#x200B;設定資料整合、安排出版時程
@@ -225,13 +225,13 @@ ht-degree: 90%
 
 ![表單屬性精靈](/help/edge/docs/forms/universal-editor/assets/form-properties-ue.png)
 
-「表單屬性」面板包含下列區段：
+表單屬性面板包括以下區段：
 
-- **提交**：定義使用者提交表單後會發生什麼事。 從多個提交動作中進行選擇，例如透過電子郵件傳送資料、提交至SharePoint、使用表單資料模型，或整合Adobe Experience Platform或Microsoft Power Automate等服務。 如需支援提交動作的完整清單，請參閱[提交動作](/help/edge/docs/forms/universal-editor/submit-action.md)文章。
+- **提交**：定義使用者提交表單後會發生什麼事。從多種提交動作中進行選擇，例如透過電子郵件傳送資料、提交至 SharePoint、使用表單資料模型，或與 Adobe Experience Platform 或 Microsoft Power Automate 等服務整合。系統支援之提交動作的完整清單，請參閱[提交動作](/help/edge/docs/forms/universal-editor/submit-action.md)文章。
 
-- **預填**：設定使用者與表單互動前，表單欄位自動填入的方式。 您可以連線至表單資料模型(FDM)等資料來源，或使用URL引數預先填入欄位，增強使用者體驗並減少手動輸入。 若要深入瞭解，請參閱[預填服務](/help/edge/docs/forms/universal-editor/prefill-form.md)文章。
+- **預填**：設定在使用者與表單進行互動之前，如何自動填寫表單欄位內容。您可以連結至表單資料模型 (FDM) 等資料來源，或使用 URL 參數預填欄位，藉此增強使用者體驗並減少手動輸入。若要了解更多相關資訊，請參閱[預填服務](/help/edge/docs/forms/universal-editor/prefill-form.md)文章。
 
-- **謝謝**：自訂使用者在提交表單後看到的內容。 您可以顯示確認訊息，或將訊息重新導向至其他網頁，確保順利且專業的完成體驗。 若要瞭解如何設定表單的感謝訊息，請參閱[設定感謝訊息](/help/edge/docs/forms/universal-editor/configure-thankyou-message.md)文章。
+- **感謝**：自訂使用者提交表單後會看到的內容。您可以顯示確認訊息或將使用者重新導向到另一個網頁，確保提供順暢又專業的完成體驗。若要了解如何設定表單的感謝訊息，請參閱[設定感謝訊息](/help/edge/docs/forms/universal-editor/configure-thankyou-message.md)文章。
 
 #### **規則編輯器** (搶先體驗)
 
@@ -340,7 +340,7 @@ ht-degree: 90%
 
 +++
 
-+++AI支援工具
++++AI 驅動的工具
 
 #### **產生變化版本**
 
@@ -349,7 +349,7 @@ ht-degree: 90%
 
     ![Generate Variations](/help/edge/docs/forms/universal-editor/assets/ue-variations.png)
 
-**了解更多：**&#x200B;[產生變化版本指南](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
+**了解更多：**[產生變化版本指南](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
 
 #### **內容草稿**
 
@@ -360,7 +360,7 @@ ht-degree: 90%
 
 +++
 
-+++測試和最佳化
++++測試與最佳化
 
 #### **A/B 測試**
 
@@ -378,7 +378,7 @@ ht-degree: 90%
 
 +++
 
-+++Collaboration工具
++++協作工具
 
 #### **任務管理**
 
@@ -472,7 +472,7 @@ ht-degree: 90%
 
 +++
 
-+++元件沒有回應
++++元件無回應
 
 **問題：**&#x200B;無法選取元件或屬性面板未更新
 

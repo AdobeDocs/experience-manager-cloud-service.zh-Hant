@@ -7,9 +7,9 @@ feature: Deploying
 role: Admin
 exl-id: 7ddd0a75-621a-4499-91d1-7b3408a68269
 source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '422'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -64,4 +64,4 @@ AEM 使用者介面已針對筆記型電腦、桌上型電腦及平板電腦裝�
 
 瀏覽器對於 AEM 轉譯的網站是否支援，取決於 AEM 頁面範本、區塊、設計及元件輸出的實作。因此，負責實作專案的開發人員最終可以控制您的網站相容性。
 
-AEM [專案範本、](https://www.aem.live/developer/ue-tutorial#create-github-project) [核心元件、](/help/implementing/developing/components/overview.md#aem-core-components)及[WKND 範本網站](/help/implementing/developing/introduction/develop-wknd-tutorial.md)均與所有現代瀏覽器相容。
+AEM [專案範本、](https://www.aem.live/developer/ue-tutorial#create-github-project)[核心元件、](/help/implementing/developing/components/overview.md#aem-core-components)及[WKND 範本網站](/help/implementing/developing/introduction/develop-wknd-tutorial.md)均與所有現代瀏覽器相容。

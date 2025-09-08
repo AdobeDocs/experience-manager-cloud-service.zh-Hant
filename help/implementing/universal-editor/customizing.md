@@ -1,40 +1,40 @@
 ---
-title: 自訂 Universal Editor
-description: 瞭解自訂Universal Editor的各種選項，以支援內容作者的需求。
+title: 自訂通用編輯器
+description: 了解自訂通用編輯器的不同選項以支援內容作者的需求。
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 32b3a125d6370dd591252fde342843d5f9e33cf1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '409'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
 
-# 自訂 Universal Editor {#customizing}
+# 自訂通用編輯器 {#customizing}
 
-瞭解自訂Universal Editor的各種選項，以支援內容作者的需求。
+了解自訂通用編輯器的不同選項以支援內容作者的需求。
 
 >[!TIP]
 >
->Universal Editor也提供許多[擴充點，](/help/implementing/universal-editor/extending.md)可讓您擴充其功能以滿足您的專案需求。
+>通用編輯器亦提供許多[擴充點，](/help/implementing/universal-editor/extending.md)讓您擴充其功能以滿足專案需求。
 
 ## 停用發佈 {#disable-publish}
 
-某些編寫工作流程在發佈內容之前必須先進行稽核。 在這種情況下，任何作者都不能使用發佈選項。
+某些製作工作流程會要求在發佈內容之前先進行審閱。於此情況下，任何作者應該無法使用發佈的選項。
 
-因此，可以新增下列中繼資料，在應用程式中完全隱藏&#x200B;**發佈**&#x200B;按鈕。
+因此，您可以新增以下後設資料，在應用程式內完全隱藏「**發佈**」按鈕。
 
 ```html
 <meta name="urn:adobe:aue:config:disable" content="publish"/>
 ```
 
-## 停用發佈以預覽 {#publish-preview}
+## 停用發佈至預覽的功能 {#publish-preview}
 
-某些編寫工作流程可能會排除發行至[預覽服務](/help/sites-cloud/authoring/sites-console/previewing-content.md) （如果有的話）。
+某些製作工作流程可能會防止發佈至[預覽服務](/help/sites-cloud/authoring/sites-console/previewing-content.md) (若適用)。
 
-因此，可以新增下列中繼資料，在應用程式中完全隱藏發佈視窗中的&#x200B;**預覽**&#x200B;選項。
+因此，您可以新增以下後設資料，在應用程式內完全隱藏發佈視窗中的「**預覽**」選項。
 
 ```html
 <meta name="urn:adobe:aue:config:disable" content="publish-preview"/>
@@ -42,15 +42,15 @@ ht-degree: 2%
 
 ## 停用開啟頁面 {#open-page}
 
-新增下列中繼資料，可完全在應用程式中隱藏&#x200B;**開啟頁面**&#x200B;按鈕。
+您可以新增以下後設資料，在應用程式內完全隱藏「**開啟頁面**」按鈕。
 
 ```html
 <meta name="urn:adobe:aue:config:disable" content="header-open-page" />
 ```
 
-## 停用複製按鈕 {#duplicate-button}
+## 停用重複按鈕 {#duplicate-button}
 
-某些編寫工作流程可能需要限制內容作者複製元件的能力。 您可以新增下列中繼資料，以停用[重複圖示](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate)。
+某些製作工作流程可能需要限制內容作者複製元件的能力。您可以新增以下後設資料來停用「[重複圖示](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate)」。
 
 ```html
 <meta name="urn:adobe:aue:config:disable" content="duplicate"/>
@@ -58,17 +58,17 @@ ht-degree: 2%
 
 ## 變更您的端點 {#custom-endpoint}
 
-如果您不想使用由Adobe託管但您自己託管版本的通用編輯器服務，可以在中繼標籤中設定此專案。 如需詳細資訊，請參閱檔案[AEM中的通用編輯器快速入門](/help/implementing/universal-editor/getting-started.md##configuration-settings)。
+如果您不想使用由 Adobe 託管的通用編輯器服務，而是使用您自己的託管版本，可以在後設標記中進行設定。如需詳細資訊，請參閱 [AEM 中通用編輯器快速入門](/help/implementing/universal-editor/getting-started.md##configuration-settings)文件。
 
 ## 篩選元件 {#filtering-components}
 
-您可以使用元件篩選器，在通用編輯器中限制每個容器允許的元件。 如需詳細資訊，請參閱檔案[篩選元件](/help/implementing/universal-editor/filtering.md)。
+您可以使用元件篩選器限制通用編輯器中每個容器所允許的元件。如需詳細資訊，請參閱[篩選元件](/help/implementing/universal-editor/filtering.md)文件。
 
-## 有條件地顯示和隱藏屬性面板中的元件 {#conditionally-hide}
+## 在屬性面板中依條件顯示和隱藏元件 {#conditionally-hide}
 
-雖然元件通常可供作者使用，但在某些情況下卻可能沒有意義。 在這種情況下，您可以將`condition`屬性新增至元件模型[的](/help/implementing/universal-editor/field-types.md#fields)欄位，以隱藏屬性面板中的元件。
+儘管元件通常可供作者使用，但在某些情況下這樣做可能並不合理。於此情況下，您可以在[元件模型欄位](/help/implementing/universal-editor/field-types.md#fields)中新增 `condition` 屬性，隱藏屬性面板中的元件。
 
-可以使用[JsonLogic結構描述](https://jsonlogic.com/)定義條件。 如果條件為true，則會顯示欄位。 如果條件為false，則會隱藏欄位。
+可以使用 [JsonLogic 結構描述](https://jsonlogic.com/)定義條件。若條件為真，則顯示該欄位。若條件為假，則該欄位會隱藏。
 
 >[!BEGINTABS]
 
@@ -95,21 +95,21 @@ ht-degree: 2%
  }
 ```
 
->[!TAB 條件False]
+>[!TAB 條件為假]
 
-![隱藏的文字欄位](assets/hidden.png)
+![隱藏文字欄位](assets/hidden.png)
 
->[!TAB 條件True]
+>[!TAB 條件為真]
 
-![顯示的文字欄位](assets/shown.png)
+![顯示文字欄位](assets/shown.png)
 
 >[!ENDTABS]
 
-## 自訂預覽URL {#custom-preview-urls}
+## 自訂預覽 URL {#custom-preview-urls}
 
-您可以透過`urn:adobe:aue:config:preview`中繼設定來指定自訂預覽URL，按一下&#x200B;**編輯器右上角工具列**&#x200B;中的[開啟頁面](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)按鈕時，將會開啟該設定。
+您可以透過 `urn:adobe:aue:config:preview` 後設設定指定自訂預覽 URL，當您按一下[編輯器右上角工具列](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)中的「**開啟頁面**」按鈕即會開啟此 URL。
 
-若要這麼做，只需將所需的預覽URL加入所檢測應用程式的中繼標籤中，例如下列範例。
+只要將所需的預覽 URL 加入已檢測的應用程式之後設標記內，即可做到，如下列範例所示。
 
 ```html
 <meta name="urn:adobe:aue:config:preview" content="https://wknd.site"/>

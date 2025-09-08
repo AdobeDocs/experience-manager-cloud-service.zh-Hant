@@ -1,61 +1,61 @@
 ---
-title: 執行您自己的Universal Editor服務
-description: 瞭解如何執行您自己的Universal Editor服務，以供本機開發或作為您自己基礎結構的一部分。
+title: 執行您自己的通用編輯器服務
+description: 了解如何執行您自己的通用編輯器服務，無論是為了本機開發或做為基礎結構的一部分。
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 5435f776e38abf5245c58985e747ce05443f3c2a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '950'
-ht-degree: 36%
+ht-degree: 100%
 
 ---
 
 
-# 執行您自己的Universal Editor服務 {#local-ue-service}
+# 執行您自己的通用編輯器服務 {#local-ue-service}
 
-瞭解如何執行您自己的Universal Editor服務，以供本機開發或作為您自己基礎結構的一部分。
+了解如何執行您自己的通用編輯器服務，無論是為了本機開發或做為基礎結構的一部分。
 
 >[!NOTE]
 >
->使用AEM製作與Edge Delivery Services的專案不需要或支援本機通用編輯器服務。
+>搭配 Edge Delivery Services 使用 AEM 製作的專案，不需要也不支援本機通用編輯器服務。
 
 ## 概觀 {#overview}
 
-Universal Editor 服務綁定 Universal Editor 和後端系統。若要能夠在本機開發Universal Editor，您必須執行Universal Editor服務的本機復本。 原因如下：
+通用編輯器服務將通用編輯器和後端系統進行繫結。為讓通用編輯器能夠進行本機開發，您必須執行通用編輯器服務的本機副本。這是因為：
 
-* Adobe的官方Universal Editor服務於全球各地託管，而您的本機AEM執行個體必須公開至網際網路。
-* 使用本機AEM SDK進行開發時，無法從網際網路存取Adobe的Universal Editor Service 。
-* 如果您的AEM執行個體有IP限制，而Adobe的Universal Editor服務不在定義的IP範圍內，您可以自行託管。
+* Adobe 的官方通用編輯器服務為全球託管，而您的本機 AEM 實例將必須在網際網路中公開。
+* 使用本機 AEM SDK 進行開發時，無法從網際網路存取 Adobe 的通用編輯器服務。
+* 若您的 AEM 實例具有 IP 限制，且 Adobe 的通用編輯器服務不在所定義的 IP 範圍內，則您可以自行託管此實例。
 
 ## 使用案例 {#use-cases}
 
-如果您想要：
+若您希望執行以下操作，則您自己的通用編輯器服務副本有很大的用處：
 
-* 在AEM上本機開發，以便與通用編輯器搭配使用。
-* 將您自己的Universal Editor服務當成您自己的基礎結構的一部分來執行，獨立於Adobe的Universal Editor服務。
+* 在 AEM 上進行本機開發，以便能與通用編輯器搭配使用。
+* 將您自己的通用編輯器服務納入基礎結構當中執行，獨立於 Adobe 的通用編輯器服務之外。
 
-支援這兩個使用案例。 本檔案說明如何在HTTPS中執行AEM以及通用編輯器服務的本機復本。
+兩種使用案例皆支援。本文件將說明如何使用 HTTPS 搭配通用編輯器服務的本機副本執行 AEM。
 
-如果您想要將自己的通用編輯器服務當做自己基礎結構的一部分來執行，您將遵循與本機開發範例相同的步驟。
+若您希望將自己的通用編輯器服務納入基礎結構當中執行，您可以按照與本機開發範例相同的步驟進行操作。
 
 ## 將 AEM 設定為在 HTTPS 上執行 {#aem-https}
 
-在使用HTTPS固定的外部框架中，無法載入不安全的HTTP框架。 Universal Editor 服務會在 HTTPS 上執行，因此 AEM 或任何其他遠端頁面也必須在 HTTPS 上執行。
+處於由 HTTPS 保護的外部框架內，無法載入不安全的 HTTP 框架。Universal Editor 服務會在 HTTPS 上執行，因此 AEM 或任何其他遠端頁面也必須在 HTTPS 上執行。
 
 為此，您需要將 AEM 設定為在 HTTPS 上執行。出於開發目的，您可以使用自我簽署憑證。
 
-[請參閱此檔案](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html?lang=zh-Hant)，瞭解如何設定在HTTPS上執行的AEM，包括您可使用的自我簽署憑證。
+[參閱此文件](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html)了解如何設定 AEM 在 HTTPS 上執行，包括您可以使用的自我簽署憑證。
 
-## 安裝 Universal Editor 服務 {#install-ue-service}
+## 安裝通用編輯器服務 {#install-ue-service}
 
-Universal Editor服務並非Universal Editor的完整復本，而是其功能的子集，可確保不會透過網際網路路由來自本機AEM環境的呼叫，而會從您控制的已定義端點路由呼叫。
+通用編輯器服務不是通用編輯器的完整副本，只包含其部分功能，以確保來自本機 AEM 環境的呼叫不會在網際網路進行路由，而是由您控制的已定義端點進行路由。
 
-需要[NodeJS版本20](https://nodejs.org/en/download/releases)才能執行通用編輯器服務的本機復本。
+執行通用編輯器服務的本機副本需要 [NodeJS 版本 20](https://nodejs.org/en/download/releases)。
 
-Universal Editor服務可透過Software Distribution取得。 如需如何存取軟體的詳細資訊，請參閱[軟體發佈檔案](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hant)。
+通用編輯器服務可透過 Software Distribution 取得。關於如何存取通用編輯器的詳細資訊，請參閱 [Software Distribution 文件](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)。
 
-將`universal-editor-service.cjs`檔案從Software Distribution儲存至您的本機開發環境。
+將來自 Software Distribution 的檔案 `universal-editor-service.cjs` 儲存到您的本機開發環境。
 
 ## 建立憑證以透過 HTTPS 執行 Universal Editor 服務 {#ue-https}
 
@@ -69,7 +69,7 @@ $ openssl req -newkey rsa:2048 -nodes -keyout key.pem -x509 -days 365 -out certi
 
 該命令會產生一個 `key.pem` 和一個 `certificate.pem` 檔案。將這些檔案儲存至與您 `universal-editor-service.cjs` 檔案相同的路徑。
 
-## 設定Universal Editor服務設定 {#setting-up-service}
+## 進行通用編輯器服務設定 {#setting-up-service}
 
 必須在 NodeJS 中設定許多環境變數，才能在本機上執行 Universal Editor 服務。
 
@@ -83,33 +83,33 @@ UES_TLS_REJECT_UNAUTHORIZED=false
 UES_CORS_PRIVATE_NETWORK=true
 ```
 
-這些是範例中本機開發所需的最小值。
+這些是我們範例中本機開發所需的最低值。
 
 >[!NOTE]
 >
->如果您執行Chrome 130+版，您必須使用`UES_CORS_PRIVATE_NETWORK`選項為[私人網路存取](https://wicg.github.io/private-network-access/#private-network-request)啟用傳送CORS標頭。
+>如果您執行的是 Chrome 130 以上版本，則必須使用 `UES_CORS_PRIVATE_NETWORK` 選項來啟用 CORS 標頭傳送功能，才能存取[私人網路](https://wicg.github.io/private-network-access/#private-network-request)。
 
 
-下表詳細說明這些值和可用的其他值。
+下列表格詳細列出這些值以及其他可用值。
 
 | 值 | 選用 | 預設 | 說明 |
 |---|---|---|---|
-| `UES_PORT` | 是 | `8080` | 伺服器執行所在的連線埠 |
-| `UES_PRIVATE_KEY` | 是 | 無 | https伺服器私密金鑰的路徑 |
-| `UES_CERT` | 是 | 無 | HTTPS伺服器憑證檔案的路徑 |
-| `UES_TLS_REJECT_UNAUTHORIZED` | 是 | `true` | 拒絕未授權的TLS連線 |
-| `UES_DISABLE_IMS_VALIDATION` | 是 | `false` | 停用IMS驗證 |
-| `UES_ENDPOINT_MAPPING` | 是 | 空白 | 內部重寫的端點對應<br>範例： `UES_ENDPOINT_MAPPING='[{"https://your-public-facing-author-domain.net": "http://10.0.0.1:4502"}]'`<br>結果：通用編輯器服務將連線到`http://10.0.0.1:4502`，而不是提供的連線`https://your-public-facing-author-domain.net` |
-| `UES_LOG_LEVEL` | 是 | `info` | 伺服器的記錄層級，可能的值為`silly`、`trace`、`debug`、`verbose`、`info`、`log`、`warn`、`error`和`fatal` |
-| `UES_SPLUNK_HEC_URL` | 是 | 無 | 指向Splunk端點的HEC URL |
-| `UES_SPLUNK_TOKEN` | 是 | 無 | Splunk權杖 |
-| `UES_SPLUNK_INDEX` | 是 | 無 | 要寫入記錄的索引 |
-| `UES_SPLUNK_SOURCE` | 是 | `universal-editor-service` | splunk記錄檔中的來源名稱 |
-| `UES_CORS_PRIVATE_NETWORK` | 是 | `false` | 啟用傳送CORS標頭以允許[私人網路](https://wicg.github.io/private-network-access/#private-network-request)。 Chrome 130+版使用者的必要專案 |
+| `UES_PORT` | 是 | `8080` | 伺服器執行的連接埠 |
+| `UES_PRIVATE_KEY` | 是 | 無 | HTTPS 伺服器私密金鑰的路徑 |
+| `UES_CERT` | 是 | 無 | HTTPS 伺服器憑證檔案路徑 |
+| `UES_TLS_REJECT_UNAUTHORIZED` | 是 | `true` | 拒絕未經授權的 TLS 連線 |
+| `UES_DISABLE_IMS_VALIDATION` | 是 | `false` | 停用 IMS 驗證 |
+| `UES_ENDPOINT_MAPPING` | 是 | 空 | 對應端點以便進行內部重寫<br>範例：`UES_ENDPOINT_MAPPING='[{"https://your-public-facing-author-domain.net": "http://10.0.0.1:4502"}]'`<br>結果：通用編輯器服務會連結至 `http://10.0.0.1:4502` 而非所提供的連線 `https://your-public-facing-author-domain.net` |
+| `UES_LOG_LEVEL` | 是 | `info` | 伺服器的記錄等級，可能的值包括 `silly`、`trace`、`debug`、`verbose`、`info`、`log`、`warn`、`error` 以及 `fatal` |
+| `UES_SPLUNK_HEC_URL` | 是 | 無 | HEC URL 至 Splunk 端點 |
+| `UES_SPLUNK_TOKEN` | 是 | 無 | Splunk 權杖 |
+| `UES_SPLUNK_INDEX` | 是 | 無 | 寫入記錄的索引 |
+| `UES_SPLUNK_SOURCE` | 是 | `universal-editor-service` | Splunk 記錄中的來源名稱 |
+| `UES_CORS_PRIVATE_NETWORK` | 是 | `false` | 啟用傳送 CORS 標頭以便允許存取[私人網路](https://wicg.github.io/private-network-access/#private-network-request)。 Chrome 版本 130 以上使用者的必要設定 |
 
 >[!NOTE]
 >
->在Universal Editor的[2024.08.13版本](/help/release-notes/universal-editor/current.md)之前，`.env`檔案中需要下列變數。 為了回溯相容性，這些值將支援直到2024年10月1日。
+>通用編輯器 [2024.08.13 版本](/help/release-notes/universal-editor/current.md)之前，`.env` 檔案中必須擁有以下變數。為達到向後相容性，這些值在 2024 年 10 月 1 日之前皆受到支援。
 >
 >`EXPRESS_PORT=8000`
 >`EXPRESS_PRIVATE_KEY=./key.pem`
@@ -146,9 +146,9 @@ Universal Editor 會根據頁面的偵測方式，知道要使用哪個 Universa
 
 >[!NOTE]
 >
->嘗試直接存取`https://localhost:8000`導致`404`錯誤。 這是預期行為。
+>嘗試直接存取 `https://localhost:8000` 而導致 `404` 錯誤。這是預期的行為。
 >
->若要測試存取您本機的Universal Editor服務，請使用`https://localhost:8000/corslib/LATEST`。 如需詳細資訊，請參閱[下一節](#editing)。
+>若要測試存取您的本機通用編輯器服務，請使用 `https://localhost:8000/corslib/LATEST`。如需詳細資訊，請參閱[下一區段](#editing)。
 
 >[!TIP]
 >
@@ -156,9 +156,9 @@ Universal Editor 會根據頁面的偵測方式，知道要使用哪個 Universa
 
 ## 使用本機 Universal Editor 服務編輯頁面 {#editing}
 
-透過[Universal Editor Service在本機執行](#running-ue)，且您的[內容頁面已設定為使用本機服務](/help/implementing/universal-editor/getting-started.md)，您現在可以啟動編輯器。
+有了[在本機執行的通用編輯器服務](#running-ue)以及[經檢測為使用本機服務的內容頁面](/help/implementing/universal-editor/getting-started.md)，您現在即可啟動編輯器。
 
 1. 開啟您的瀏覽器，前往 `https://localhost:8000/ping`。
-1. 指示瀏覽器接受[您的自我簽署憑證](#ue-https)。
-1. 一旦自我簽署憑證受到信任，您就可以使用本機 Universal Editor 服務編輯頁面。
+1. 指示您的瀏覽器接受[您的自我簽署憑證](#ue-https)。
+1. 一旦自我簽署憑證受到信任，您就可以使用本機通用編輯器服務編輯頁面。
 

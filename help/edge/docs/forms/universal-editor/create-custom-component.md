@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
 source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1789'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ Edge Delivery Services 表單可提供自訂，讓前端開發人員可以建置
 
 1. **新增資料夾和檔案**
 
-   在AEM專案中為新的自訂元件新增資料夾和檔案。
+   在 AEM 專案中為新的自訂元件新增資料夾和檔案。
 
    1. 開啟您的 AEM 專案並瀏覽至 `../blocks/form/components/`。
    1. 在 `../blocks/form/components/<component_name>` 為您的自訂元件新增資料夾。在此範例中，我們會建立名為 `range` 的資料夾。

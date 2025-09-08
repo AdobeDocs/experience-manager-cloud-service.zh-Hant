@@ -1,8 +1,8 @@
 ---
 source-git-commit: a90a561146901171d7e3eefecc5a98c73aa79f14
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1623'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 # 程式碼片段 {#snippets}
@@ -111,9 +111,9 @@ ht-degree: 98%
    </td>
    </tr>
    <tr>
-    <td>ECMAScript版本支援</td>
-    <td>僅支援ES5 JavaScript功能。</td>
-    <td>支援自訂函式中的現代JavaScript功能（例如<code>let</code>、箭頭函式）。</td>
+    <td>ECMAScript 版本支援</td>
+    <td>僅支援 ES5 JavaScript 功能。</td>
+    <td>支援自訂函數內的現代 JavaScript 功能 (例如 <code>let</code>，箭頭函數)。</td>
    </tr>
    </tr>
    <tr>
@@ -167,11 +167,11 @@ ht-degree: 98%
 >[!IMPORTANT]
 >
 >前端管道要求將以下 IP 允許清單預先新增至 Cloud Manager。
->&#x200B;>如有需要，請複製以下位址區塊來[新增 IP 允許清單](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)。每個位址都以逗號區隔。將該區塊貼到「**IP 位址/CIDR**」的欄位 (在「**新增 IP 允許清單**」的對話框裡)。將游標放在位址清單中第一個逗號後面，然後按 **Enter** 鍵。儲存清單。
->&#x200B;>為了避免前端管道運作中斷，在啟用管道&#x200B;*之前*，務必先將此 IP 允許清單新增至 Cloud Manager。
+>>如有需要，請複製以下位址區塊來[新增 IP 允許清單](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)。每個位址都以逗號區隔。將該區塊貼到「**IP 位址/CIDR**」的欄位 (在「**新增 IP 允許清單**」的對話框裡)。將游標放在位址清單中第一個逗號後面，然後按 **Enter** 鍵。儲存清單。
+>>為了避免前端管道運作中斷，在啟用管道&#x200B;*之前*，務必先將此 IP 允許清單新增至 Cloud Manager。
 >
 >**Cloud Manager IP 允許清單**
->&#x200B;>52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
+>>52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
 >   
 
 ## 新增 Cloud Manager IP 允許清單和前端管道 {#add-cm-allowlist-frontend-pipeline}
@@ -179,7 +179,7 @@ ht-degree: 98%
 >[!IMPORTANT]
 >
 >如果您使用 (或打算使用) 前端管道來開發網站，必須先行新增 Cloud Manager IP 允許清單。
->&#x200B;>請參閱「[ Cloud Manager IP 允許清單與前端管道搭配使用](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline)」。
+>>請參閱「[ Cloud Manager IP 允許清單與前端管道搭配使用](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline)」。
 
 ## IP 允許清單和通用編輯器 {#ip-allow-lists-ue}
 
@@ -220,7 +220,7 @@ ht-degree: 98%
 
 **若要記錄支援服務單：**
 
-1. [遵循標準支援流程](https://experienceleague.adobe.com/zh-hant?support-tab=home#support)並建立服務單。
+1. [遵循標準支援流程](https://experienceleague.adobe.com/?support-tab=home#support)並建立服務單。
 1. 將 **Edge Delivery** 加入服務單標題中。
 1. 在描述中，除了問題描述之外，還提供以下詳細資訊：
 

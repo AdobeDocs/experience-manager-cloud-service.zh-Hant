@@ -1,26 +1,26 @@
 ---
 title: 使用 Edge Delivery Services 建立和發佈自適應表單
-description: 在AEM中使用Edge Delivery Services範本建立、編寫和發佈最適化Forms的逐步指示，著重於技術精確度和清晰度。
-keywords: 調適型表單， edge delivery services，通用編輯器，表單建立， AEM forms，表單發佈
+description: 使用 AEM 中的 Edge Delivery Services 範本建立、製作和發佈自適應表單的逐步說明，並著重技術的準確性和清晰度。
+keywords: 自適應表單, edge delivery services, 通用編輯器, 表單建立, AEM Forms, 表單發佈
 feature: Edge Delivery Services
 role: User, Developer
 level: Beginner
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
 source-git-commit: 07160248d5b5817d155a118475878ce04a687a32
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1005'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 
 # 使用 Edge Delivery Services 建立和發佈自適應表單
 
-本檔案逐步說明如何使用AEM中的Edge Delivery Services範本建立、設定和發佈調適型Forms。 內容涵蓋從表單建立到生產部署的完整工作流程。
+本文件提供使用 AEM 中的 Edge Delivery Services 範本來建立、設定和發佈自適應表單的逐步說明。涵蓋從表單建立到生產部署的完整工作流程。
 
-閱讀完本指南後，您將學會如何：
+閱讀完本指南後，您將了解如何：
 
-- 使用Edge Delivery Services範本建立表單
+- 使用 Edge Delivery Services 範本建立表單
 - 使用通用編輯器製作表單
 - 設定表單並將表單發佈到 Edge Delivery Services
 - 存取已發佈的表單及驗證部署
@@ -50,14 +50,14 @@ ht-degree: 87%
 
 此流程包括三個主要階段：
 
-- **階段1：** [表單建立](#step-1-form-creation)
-- **第二階段：**&#x200B;[表單製作與設計](#step-2-form-authoring-and-design)
-- **第三階段：**&#x200B;[設定與發佈](#step-3-configuration-and-publishing)
+- **階段 1：**[表單建立](#step-1-form-creation)
+- **第二階段：**[表單製作與設計](#step-2-form-authoring-and-design)
+- **第三階段：**[設定與發佈](#step-3-configuration-and-publishing)
 
 每個階段都包括確認設定是否正確的驗證步驟。
 
 
-### 步驟1：建立表單
+### 步驟 1：表單建立
 
 1. **存取表單建立功能**
    - 登入您的 AEM Forms as a Cloud Service 作者實例。
@@ -114,7 +114,7 @@ ht-degree: 87%
 1. **設計表單**
    - 在屬性面板中設定欄位屬性。
    - 設定驗證規則和行為。
-   - 視需要調整樣式和版面。
+   - 根據需求調整樣式和版面。
 
    ![已填寫的註冊表單](/help/edge/assets/contact-us.png)
 
@@ -132,7 +132,7 @@ ht-degree: 87%
 
 ### 步驟 3：設定與發佈
 
-設定Edge Delivery Services並發佈您的表單。
+設定 Edge Delivery Services 並發佈表單。
 
 **設定：**&#x200B;自動 (無需手動設定)。
 
@@ -290,7 +290,7 @@ ht-degree: 87%
 如果問題仍然存在：
 
 1. 檢查 Adobe Experience Cloud 服務狀態。
-2. 審閱 [Edge Delivery Services 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html?lang=zh-Hant)。
+2. 審閱 [Edge Delivery Services 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html)。
 3. 造訪 [Adobe Experience League 社群](https://experienceleaguecommunities.adobe.com/?lang=zh-Hant)。
 4. 聯絡 Adobe 客戶服務。
 

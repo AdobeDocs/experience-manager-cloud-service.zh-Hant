@@ -5,9 +5,9 @@ exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
-workflow-type: tm+mt
-source-wordcount: '981'
-ht-degree: 37%
+workflow-type: ht
+source-wordcount: '979'
+ht-degree: 100%
 
 ---
 
@@ -18,19 +18,19 @@ ht-degree: 37%
 
 >[!TIP]
 >
->如果您想直接深入瞭解範例，可以在GitHub[&#128279;](https://github.com/adobe/universal-editor-sample-editable-app)上檢閱通用編輯器範例應用程式。
+>若您比較喜歡直接從範例著手，可以檢閱 [GitHub 上的通用編輯器範例應用程式](https://github.com/adobe/universal-editor-sample-editable-app)。
 
-雖然通用編輯器可以編輯任何來源的內容，但本檔案將以AEM應用程式為例。 本文件將引導您完成這些步驟。
+雖然通用編輯器可以編輯來自任何來源的內容，但本文件會以 AEM 應用程式為例。本文件將引導您完成這些步驟。
 
 ## 檢測頁面 {#instrument-page}
 
-Universal Editor需要JavaScript程式庫，才能在編輯器中轉譯和編輯頁面。
+通用編輯器需要一個 JavaScript 程式庫，才能在編輯器中轉譯和編輯頁面。
 
-此外，Universal Editor服務需要[統一資源名稱(URN)](https://en.wikipedia.org/wiki/Uniform_Resource_Name)，才能識別及使用所編輯應用程式內容的正確後端系統。 因此，需要 URN 結構描述將內容對應回內容資源。
+此外，通用編輯器服務需要[統一資源名稱 (URN)](https://en.wikipedia.org/wiki/Uniform_Resource_Name)，才能針對正在編輯的應用程式之內容，找出並使用正確的後端系統。因此，必須使用 URN 結構描述，才能將內容對應回內容資源。
 
-### 包含通用編輯器CORS資料庫 {#cors-library}
+### 包括通用編輯器 CORS 程式庫 {#cors-library}
 
-為了讓Universal Editor連線至您的應用程式，您的應用程式必須包含Universal Editor CORS資料庫。 將下列指令碼新增至您的應用程式。
+為了讓通用編輯器連結至您的應用程式，您的應用程式必須包含通用編輯器 CORS 程式庫。將以下指令碼新增至您的應用程式。
 
 ```html
  <script src="https://universal-editor-service.adobe.io/cors.js" async></script>
@@ -44,9 +44,9 @@ Universal Editor需要JavaScript程式庫，才能在編輯器中轉譯和編輯
 <meta name="urn:adobe:aue:<category>:<referenceName>" content="<protocol>:<url>">
 ```
 
-* `<category>` — 這是具有兩個選項的連線分類。
-   * `system` — 用於連線端點
-   * `config` — 針對[定義選擇性組態設定](#configuration-settings)
+* `<category>` - 這是連線的分類，並有兩個選項。
+   * `system` - 用於連線端點
+   * `config` - 用於[定義選用設定](#configuration-settings)
 * `<referenceName>` - 這是簡短名稱，可在文件中重複使用以標識連線。例如 `aemconnection`
 * `<protocol>` - 這代表要使用 Universal Editor 持續性服務的哪個持續性外掛程式。例如 `aem`
 * `<url>` - 這是儲存變更之系統的 URL。例如 `http://localhost:4502`
@@ -98,46 +98,46 @@ data-aue-resource="urn:<referenceName>:<resource>"
 </html>
 ```
 
-### 組態設定 {#configuration-settings}
+### 設定 {#configuration-settings}
 
-您可以視需要使用連線URN中的`config`首碼來設定服務和擴充端點。
+如需要，您可以使用連線 URN 中的 `config` 前置詞設定服務和擴充端點。
 
-如果您不想使用由Adobe託管但您自己託管版本的通用編輯器服務，可以在中繼標籤中設定此專案。 若要覆寫Universal Editor提供的預設服務端點，請設定您自己的服務端點：
+如果您不想使用由 Adobe 託管的通用編輯器服務，而是使用您自己的託管版本，可以在後設標記中進行設定。若要覆寫通用編輯器所提供的預設服務端點，請設定您自己的服務端點：
 
-* 中繼名稱 — `urn:adobe:aue:config:service`
-* 中繼內容 — `content="https://adobe.com"` （範例）
+* 後設名稱 - `urn:adobe:aue:config:service`
+* 後設內容 - `content="https://adobe.com"` (範例)
 
 ```html
 <meta name="urn:adobe:aue:config:service" content="<url>">
 ```
 
-如果您只想為頁面啟用特定擴充功能，可以在meta標籤中加以設定。 若要擷取擴充功能，請設定擴充功能端點：
+如果您只想啟用特定的頁面擴充功能，可以在後設標記中進行設定。若要取得擴充功能，請設定擴充端點：
 
-* 中繼名稱： `urn:adobe:aue:config:extensions`
-* 中繼內容： `content="https://adobe.com,https://anotherone.com,https://onemore.com"` （範例）
+* 後設名稱：`urn:adobe:aue:config:extensions`
+* 後設內容：`content="https://adobe.com,https://anotherone.com,https://onemore.com"` (範例)
 
 ```html
 <meta name="urn:adobe:aue:config:extensions" content="<url>,<url>,<url>">
 ```
 
-## 定義應開啟通用編輯器的內容路徑或`sling:resourceType`。 (可選) {#content-paths}
+## 定義通用編輯器應針對哪些內容路徑或 `sling:resourceType` 而開啟。(選用) {#content-paths}
 
-如果您有使用[頁面編輯器](/help/sites-cloud/authoring/page-editor/introduction.md)的現有AEM專案，內容作者編輯頁面時，頁面會自動使用頁面編輯器開啟。 您可以根據內容路徑或`sling:resourceType`定義應開啟AEM的編輯器，讓您的作者獲得流暢的體驗，無論所選內容需要哪個編輯器。
+若您有現有的 AEM 專案使用[頁面編輯器](/help/sites-cloud/authoring/page-editor/introduction.md)，則當內容作者編輯頁面時，頁面會自動使用頁面編輯器開啟。無論所選內容需要使用哪個編輯器，您都可以根據內容路徑或 `sling:resourceType` 來定義 AEM 應開啟哪個編輯器，為您的作者提供順暢體驗。
 
-1. 開啟Configuration Manager。
+1. 開啟 Configuration Manager。
 
    `http://<host>:<port>/system/console/configMgr`
 
-1. 在清單中找到&#x200B;**通用編輯器URL服務**，然後按一下&#x200B;**編輯設定值**。
+1. 在清單中找到「**通用編輯器 URL 服務**」，然後按一下「**編輯設定值**」。
 
-1. 定義應開啟通用編輯器的內容路徑或`sling:resourceType`。
+1. 定義通用編輯器應針對哪些內容路徑或 `sling:resourceType` 而開啟。
 
-   * 在&#x200B;**Universal Editor Opening Mapping**&#x200B;欄位中，提供開啟Universal Editor的路徑。
-   * 在應由通用編輯器開啟的&#x200B;**Sling：resourceTypes**&#x200B;欄位中，提供由通用編輯器直接開啟的資源清單。
+   * 在「**通用編輯器開啟對應**」欄位中，提供通用編輯器的開啟路徑。
+   * 在「**應由通用編輯器開啟之 Sling:resourceTypes**」欄位中，列出由通用編輯器直接開啟的資源。
 
 1. 按一下「**儲存**」。
 
-1. 檢查您的[外部化程式組態](/help/implementing/developing/tools/externalizer.md)，並確定您至少有本機、作者和發佈環境設定，如下列範例所示。
+1. 查看您的 [Externalizer 設定](/help/implementing/developing/tools/externalizer.md)，並確保至少已設定本機、作者和發佈環境，如下列範例所示。
 
    ```text
    "local $[env:AEM_EXTERNALIZER_LOCAL;default=http://localhost:4502]",
@@ -145,33 +145,33 @@ data-aue-resource="urn:<referenceName>:<resource>"
    "publish $[env:AEM_EXTERNALIZER_PUBLISH;default=http://localhost:4503]"
    ```
 
-完成這些設定步驟後，AEM將依下列順序開啟頁面的通用編輯器。
+完成這些設定步驟後，AEM 會依照以下順序開啟頁面的通用編輯器。
 
-1. AEM將檢查`Universal Editor Opening Mapping`底下的對應，如果內容位於該處定義的任何路徑下，則會為其開啟通用編輯器。
-1. 對於不在`Universal Editor Opening Mapping`中定義的路徑下的內容，AEM會檢查內容的`resourceType`是否與&#x200B;**Sling：resourceTypes （應由通用編輯器**&#x200B;開啟）中定義的內容相符，如果內容符合其中一個型別，則在`${author}${path}.html`為其開啟通用編輯器。
-1. 否則，AEM會開啟頁面編輯器。
+1. AEM 會檢查 `Universal Editor Opening Mapping` 之下的對應，若內容位於該處所定義的任何路徑之下，便會針對該內容開啟通用編輯器。
+1. 對於不在 `Universal Editor Opening Mapping` 中所定義路徑之下的內容，AEM 會檢查內容的 `resourceType` 是否與「**應由通用編輯器開啟之 Sling:resourceTypes**」中定義者相符，若內容符合其中一種類型，便會針對該內容在 `${author}${path}.html` 開啟通用編輯器。
+1. 否則，AEM 會開啟頁面編輯器。
 
-下列變數可用於在&#x200B;**Universal Editor Opening Mapping**&#x200B;欄位中定義您的對應。
+在「**通用編輯器開啟對應**」欄位中可以使用以下變數來定義您的對應。
 
-* `path`：要開啟之資源的內容路徑
-* `localhost`： `localhost`的Externalizer專案沒有結構描述，例如`localhost:4502`
-* `author`：沒有結構描述的作者的Externalizer專案，例如`localhost:4502`
-* `publish`：用於沒有結構描述的發行的Externalizer專案，例如`localhost:4503`
-* `preview`：預覽的外部化程式專案，不含結構描述，例如`localhost:4504`
-* `env`： `prod`、`stage`、`dev`根據定義的Sling執行模式
-* `token`： `QueryTokenAuthenticationHandler`所需的查詢權杖
+* `path`：要開啟的資源內容路徑
+* `localhost`：`localhost` 的 Externalizer 項目，無結構描述，例如 `localhost:4502`
+* `author`：作者的 Externalizer 項目，無結構描述，例如 `localhost:4502`
+* `publish`：發佈的 Externalizer 項目，無結構描述，例如 `localhost:4503`
+* `preview`：預覽的 Externalizer 項目，無結構描述，例如 `localhost:4504`
+* `env`：`prod`、`stage`、`dev`，根據所定義的 Sling 執行模式
+* `token`：`QueryTokenAuthenticationHandler` 所需的查詢權杖
 
-### 範例對應 {#example-mappings}
+### 對應範例 {#example-mappings}
 
-* 在AEM作者上開啟`/content/foo`下的所有頁面：
+* 在 AEM Author 上開啟 `/content/foo` 之下的所有頁面：
 
    * `/content/foo:${author}${path}.html?login-token=${token}`
-   * 這會導致開啟`https://localhost:4502/content/foo/x.html?login-token=<token>`
+   * 這樣會開啟 `https://localhost:4502/content/foo/x.html?login-token=<token>`
 
-* 在遠端NextJS伺服器上開啟`/content/bar`下的所有頁面，提供所有變數作為資訊：
+* 在遠端 NextJS 伺服器上開啟 `/content/bar` 之下的所有頁面，並提供所有變數做為資訊：
 
    * `/content/bar:nextjs.server${path}?env=${env}&author=https://${author}&publish=https://${publish}&login-token=${token}`
-   * 這會導致開啟`https://nextjs.server/content/bar/x?env=prod&author=https://localhost:4502&publish=https://localhost:4503&login-token=<token>`
+   * 這樣會開啟 `https://nextjs.server/content/bar/x?env=prod&author=https://localhost:4502&publish=https://localhost:4503&login-token=<token>`
 
 ## 您已準備好使用 Universal Editor {#youre-ready}
 
@@ -187,7 +187,7 @@ data-aue-resource="urn:<referenceName>:<resource>"
 
 * [Universal Editor 簡介](introduction.md) - 了解 Universal Editor 如何在任意實作中編輯任何方面的內容，以便提供卓越的體驗、提高內容速度並提供最先進的開發人員體驗。
 * [使用 Universal Editor 編寫內容](/help/sites-cloud/authoring/universal-editor/authoring.md) - 了解內容作者使用 Universal Editor 建立內容有多簡單和直覺。
-* [使用通用編輯器發佈內容](/help/implementing/universal-editor/publishing.md) — 瞭解通用編輯器如何發佈內容，以及您的應用程式如何處理已發佈的內容。
+* [使用通用編輯器發佈內容](/help/implementing/universal-editor/publishing.md) - 了解通用編輯器如何發佈內容，以及您的應用程式如何處理已發佈的內容。
 * [Universal Editor 架構](architecture.md) - 了解 Universal Editor 的架構，以及資料如何在其服務和階層之間流動。
 * [屬性和類型](attributes-types.md) - 了解 Universal Editor 需要的資料屬性和類型。
 * [Universal Editor 驗證](authentication.md) - 了解 Universal Editor 如何進行驗證。

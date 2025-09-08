@@ -5,9 +5,9 @@ exl-id: fb86c510-3c41-4511-81b7-1bdf2f5e7dd3
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '191'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -32,6 +32,6 @@ Universal Editor 使用 Adobe 的 Identity Management System (IMS) 驗證，這�
 
 ![標準驗證流程](assets/standard-flow.png)
 
-此圖表和文章說明Universal Editor本身的內部驗證。
+此圖表和文章的內容說明通用編輯器本身的內部驗證。
 
 {{ue-headless-auth}}

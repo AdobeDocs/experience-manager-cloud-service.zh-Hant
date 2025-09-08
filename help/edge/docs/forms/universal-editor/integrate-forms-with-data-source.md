@@ -1,13 +1,13 @@
 ---
-title: 在通用編輯器中如何整合表單的表單資料模型 (FDM)？
-description: 瞭解如何根據表單資料模型(FDM)建立邊緣傳遞服務的表單。 產生並編輯 FDM 中資料模型物件的樣本資料。
+title: 如何在通用編輯器中整合表單的表單資料模型 (FDM)？
+description: 了解如何根據表單資料模型 (FDM) 建立 Edge Delivery Services 的表單。產生及編輯 FDM 中資料模型物件的樣本資料。
 feature: Edge Delivery Services, Form Data Model
 role: Admin, User
 exl-id: 9ce51223-57d0-47d8-8868-84b37d4e8e3e
 source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '716'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
