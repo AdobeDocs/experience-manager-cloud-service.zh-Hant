@@ -19,7 +19,7 @@ ht-degree: 7%
 >id="aemcloud_ctt_precopy"
 >title="處理大型內容存放庫"
 >abstract="為了大幅加快內容轉移活動的解壓縮和擷取階段，以將內容移至 AEM as a Cloud Service，內容轉移工具 (CTT) 可以使用 AzCopy 作為預複製步驟 (選用)。設定此預先步驟後，在提取階段，AzCopy 會從 Amazon S3 或 Azure Blob 儲存空間將 blob 複製到移轉集 blob 存放區。在攝入階段，AzCopy 將 blob 會從移轉集 blob 存放區將 blob 複製到目的地 AEM as a Cloud Service blob 存放區。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html#setting-up-pre-copy-step" text="開始使用 AzCopy 作為預複製步驟"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=zh-Hant#setting-up-pre-copy-step" text="開始使用 AzCopy 作為預複製步驟"
 
 使用內容轉移工具(CTT)複製許多Blob可能需要數天的時間。
 為了加快內容轉移活動的擷取和內嵌階段，以將內容移動到AEM as a Cloud Service，CTT可以使用[AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10)作為選用的預先複製步驟。 當來源AEM執行個體設定為使用Amazon S3、Azure Blob儲存體資料存放區或檔案資料存放區時，可使用此預先複製步驟。 預先複製步驟在第一次完整擷取和擷取時最有效。 不過，不建議對後續追加使用預先複製（如果追加大小小於200 GB），因為這樣可能會增加整個程式的時間。 設定此預先步驟後，在擷取階段中，AzCopy會將blob從Amazon S3、Azure Blob儲存體或檔案資料存放區複製至移轉集blob存放區。 在攝入階段，AzCopy 將 blob 會從移轉集 blob 存放區將 blob 複製到目的地 AEM as a Cloud Service blob 存放區。
@@ -32,13 +32,13 @@ ht-degree: 7%
 
 * Source AEM版本必須為6.3 - 6.5。
 
-* Source AEM的資料存放區已設定為使用Amazon S3或Azure Blob Storage。 如需詳細資訊，請參閱[在AEM 6](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html)中設定節點存放區和資料存放區。
+* Source AEM的資料存放區已設定為使用Amazon S3或Azure Blob Storage。 如需詳細資訊，請參閱[在AEM 6](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=zh-Hant)中設定節點存放區和資料存放區。
 
 * 每個移轉集都會複製整個資料存放區，因此只應使用單一移轉集。
 
 * 您需要存取權才能在執行來源AEM執行個體的執行個體（或VM）上安裝[AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10)。
 
-* 已在來源上的前七天內執行資料存放區記憶體回收。 如需詳細資訊，請參閱[資料存放區記憶體回收](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#data-store-garbage-collection)。
+* 已在來源上的前七天內執行資料存放區記憶體回收。 如需詳細資訊，請參閱[資料存放區記憶體回收](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=zh-Hant#data-store-garbage-collection)。
 
 ### 如果來源AEM執行個體設定為使用Amazon S3或Azure Blob儲存資料存放區，則需考慮其他事項 {#additional-considerations-amazons3-azure}
 
