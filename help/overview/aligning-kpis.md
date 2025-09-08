@@ -4,9 +4,9 @@ description: 了解如何為您的 AEM 實施選擇正確的 KPI
 exl-id: d338a7bd-adfe-486a-badf-348acd6018d0
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 9960de2a1f5d36ebbaf95b2c3a3670a955a7d4b0
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '476'
 ht-degree: 100%
 
 ---
@@ -17,14 +17,12 @@ ht-degree: 100%
 >id="aemcloud_alignkpis"
 >title="調整 KPI"
 >abstract="在數位世界中，幾乎一切都可以測量。為您的 Adobe Experience Manager 實作選擇正確的 KPI 將有助於您的團隊專注於最重要的事情。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/assessing-kpis.html?lang=zh-Hant" text="評估 KPI"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/choose-right-team.html?lang=zh-Hant" text="選擇合適的團隊"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/assessing-kpis.html" text="評估 KPI"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/choose-right-team.html" text="選擇合適的團隊"
 
 在數位世界中，幾乎一切都可以測量。為您的 Adobe Experience Manager 實作選擇三個 KPI 可幫助您的團隊專注於最重要的事情。
 
-
 ## **按照這 6 個步驟就能決定測量什麼以及如何測量**
-
 
 1. **從您的業務目標開始。**&#x200B;例如，您的業務目標可能是增加線上營收、降低營運費用或減少與違反 Digital Rights Management (DRM) 相關的法律費用。
 
@@ -40,6 +38,8 @@ ht-degree: 100%
 
 1. **為每個 KPI 定義客群。**&#x200B;本週的最後一步是確定最在乎每個 KPI 的利益相關者群組。下週，您會與每個群組一起確認 KPI，改進方法，並就報告的格式和時間安排取得一致意見。
 
+<!--
 >[!TIP]
 >
->[**下載 KPI 方法範本**](https://experienceleague.adobe.com/welcome/aem/assets/img/KPI_Methodology_Template.png?lang=zh-Hant)
+>[**Download the KPI Methodology template**](https://experienceleague.adobe.com/welcome/aem/assets/img/KPI_Methodology_Template.png)
+-->
