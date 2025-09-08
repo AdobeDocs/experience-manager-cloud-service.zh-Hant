@@ -5,9 +5,9 @@ exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 solution: Experience Manager Sites
 feature: Authoring, Experience Fragments
 role: User
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 5578cfd1bbe91d904d3f36b67acf610f9196cb7d
 workflow-type: tm+mt
-source-wordcount: '2099'
+source-wordcount: '2142'
 ht-degree: 3%
 
 ---
@@ -51,7 +51,7 @@ ht-degree: 3%
 >
 >體驗片段可以包含內容片段形式的內容，反之則不行。
 >
->如需詳細資訊，請參閱[瞭解AEM中的內容片段和體驗片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=zh-Hant#content-fragments)。
+>如需詳細資訊，請參閱[瞭解AEM中的內容片段和體驗片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments)。
 
 >[!NOTE]
 >
@@ -115,7 +115,7 @@ WKND專案會根據`Contributors`建構一些體驗片段。 使用的結構也�
 
 >[!NOTE]
 >
->也可以為您的執行個體[&#128279;](#configure-allowed-templates-instance)設定允許的範本，但此方法&#x200B;**不**&#x200B;建議使用，因為升級時會覆寫這些值。
+>也可以為您的執行個體[設定](#configure-allowed-templates-instance)允許的範本，但此方法&#x200B;**不**&#x200B;建議使用，因為升級時會覆寫這些值。
 
 ### 設定資料夾的允許範本 {#configure-allowed-templates-folder}
 
@@ -186,7 +186,7 @@ WKND專案會根據`Contributors`建構一些體驗片段。 使用的結構也�
    ![選取體驗片段範本](/help/sites-cloud/authoring/assets/xf-03.png)
 
 
-1. 輸入 **體驗**&#x200B;**片段的屬性**。
+1. 輸入 **體驗****片段的屬性**。
 
    **標題**&#x200B;為必填。 如果&#x200B;**Name**&#x200B;保留為空白，則它是從&#x200B;**Title**&#x200B;衍生的。
 
@@ -198,7 +198,7 @@ WKND專案會根據`Contributors`建構一些體驗片段。 使用的結構也�
    >
    >它們是完全獨立的。
 
-1. 按一下&#x200B;**建立**。
+1. 按一下「**建立**」。
 
    此時會顯示訊息。 選取：
 
@@ -394,7 +394,7 @@ Personalization是透過在體驗片段或變數或包含片段的資料夾上�
 您可以檢視片段的詳細資訊：
 
 1. 導覽至體驗片段的位置（請勿進一步導覽至片段內的變數）。
-詳細資訊會顯示在&#x200B;**體驗片段**&#x200B;主控台的所有檢視中，其中&#x200B;**清單檢視**&#x200B;包含[匯出至Target](/help/sites-cloud/integrating/integrating-adobe-target.md)的詳細資訊：
+詳細資訊會顯示在**體驗片段**&#x200B;主控台的所有檢視中，其中&#x200B;**清單檢視**&#x200B;包含[匯出至Target](/help/sites-cloud/integrating/integrating-adobe-target.md)的詳細資訊：
 
    ![體驗片段詳細資料](/help/sites-cloud/authoring/assets/xf-15.png)
 
@@ -420,14 +420,14 @@ Personalization是透過在體驗片段或變數或包含片段的資料夾上�
       * **網路變體的數目** — 僅供參考
       * **非網路變體的數目** — 僅供參考
       * **使用此片段的頁數** — 僅供參考
-   * **Cloud Service**
+   * **雲端服務**
       * **雲端設定**
       * **Cloud Service設定**
-      * **Facebook頁面ID**
+      * **Facebook頁面識別碼**
       * **Pinterest展示板**
-   * **個參考**
+   * **參照**
       * 引用清單
-   * **Personalization**
+   * **個人化**
       * **ContextHub路徑**
       * **區段路徑**
       * **品牌**
@@ -446,9 +446,19 @@ Personalization是透過在體驗片段或變數或包含片段的資料夾上�
 
 或者，您也可以[發佈到預覽](/help/sites-cloud/authoring/sites-console/previewing-content.md) （再次從體驗片段控制檯或編輯器中發佈）。
 
+>[!CAUTION]
+>
+>依預設，發佈體驗片段的根資料夾（直接位於`/content/experience-fragments`下方）：
+>
+>* 僅發佈容器資料夾本身
+>* 不發佈任何子項
+>* 取消發佈任何已發佈的子項
+>
+>為了發佈資料夾中的所有體驗片段，每個片段必須個別發佈。
+
 ## 匯出體驗片段 {#exporting-experience-fragments}
 
-依預設，體驗片段會以HTML格式傳送。 AEM和協力廠商管道均可使用此函式。
+依預設，體驗片段會以HTML格式傳送。 AEM和協力廠商管道都可使用此功能。
 
 若要匯出至Adobe Target，也可以使用JSON。 請參閱：
 
