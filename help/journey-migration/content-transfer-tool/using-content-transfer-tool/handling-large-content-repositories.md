@@ -4,10 +4,10 @@ description: 本節說明如何處理大型內容存放庫
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: b729c07c78519cd9b6536a0dd142aa8ed01d2a22
 workflow-type: tm+mt
-source-wordcount: '1800'
-ht-degree: 8%
+source-wordcount: '1842'
+ht-degree: 7%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 8%
 >id="aemcloud_ctt_precopy"
 >title="處理大型內容存放庫"
 >abstract="為了大幅加快內容轉移活動的解壓縮和擷取階段，以將內容移至 AEM as a Cloud Service，內容轉移工具 (CTT) 可以使用 AzCopy 作為預複製步驟 (選用)。設定此預先步驟後，在提取階段，AzCopy 會從 Amazon S3 或 Azure Blob 儲存空間將 blob 複製到移轉集 blob 存放區。在攝入階段，AzCopy 將 blob 會從移轉集 blob 存放區將 blob 複製到目的地 AEM as a Cloud Service blob 存放區。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=zh-Hant#setting-up-pre-copy-step" text="開始使用 AzCopy 作為預複製步驟"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html#setting-up-pre-copy-step" text="開始使用 AzCopy 作為預複製步驟"
 
 使用內容轉移工具(CTT)複製許多Blob可能需要數天的時間。
 為了加快內容轉移活動的擷取和內嵌階段，以將內容移動到AEM as a Cloud Service，CTT可以使用[AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10)作為選用的預先複製步驟。 當來源AEM執行個體設定為使用Amazon S3、Azure Blob儲存體資料存放區或檔案資料存放區時，可使用此預先複製步驟。 預先複製步驟在第一次完整擷取和擷取時最有效。 不過，不建議對後續追加使用預先複製（如果追加大小小於200 GB），因為這樣可能會增加整個程式的時間。 設定此預先步驟後，在擷取階段中，AzCopy會將blob從Amazon S3、Azure Blob儲存體或檔案資料存放區複製至移轉集blob存放區。 在攝入階段，AzCopy 將 blob 會從移轉集 blob 存放區將 blob 複製到目的地 AEM as a Cloud Service blob 存放區。
@@ -32,13 +32,13 @@ ht-degree: 8%
 
 * Source AEM版本必須為6.3 - 6.5。
 
-* Source AEM的資料存放區已設定為使用Amazon S3或Azure Blob Storage。 如需詳細資訊，請參閱[在AEM 6](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=zh-Hant)中設定節點存放區和資料存放區。
+* Source AEM的資料存放區已設定為使用Amazon S3或Azure Blob Storage。 如需詳細資訊，請參閱[在AEM 6](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html)中設定節點存放區和資料存放區。
 
 * 每個移轉集都會複製整個資料存放區，因此只應使用單一移轉集。
 
 * 您需要存取權才能在執行來源AEM執行個體的執行個體（或VM）上安裝[AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10)。
 
-* 已在來源上的前七天內執行資料存放區記憶體回收。 如需詳細資訊，請參閱[資料存放區記憶體回收](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=zh-Hant#data-store-garbage-collection)。
+* 已在來源上的前七天內執行資料存放區記憶體回收。 如需詳細資訊，請參閱[資料存放區記憶體回收](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#data-store-garbage-collection)。
 
 ### 如果來源AEM執行個體設定為使用Amazon S3或Azure Blob儲存資料存放區，則需考慮其他事項 {#additional-considerations-amazons3-azure}
 
@@ -132,7 +132,7 @@ azureSas=https://example-resource.blob.core.windows.net/example-container?sig=--
 
 >[!NOTE]
 >
-> 如果您的執行個體使用IAM角色來啟用AEM存取S3，則必須建立原則和使用者，且為S3儲存貯體啟用ListBucket和GetObject動作。 設定之後，請使用此使用者的存取金鑰和秘密金鑰。
+> 如果您的執行個體使用IAM角色來讓AEM能夠存取S3，則必須建立原則和使用者，並為該S3儲存貯體啟用ListBucket和GetObject動作。 設定之後，請使用此使用者的存取金鑰和秘密金鑰。
 
 ```
 azCopyPath=/usr/bin/azcopy
@@ -162,7 +162,7 @@ azCopyPath屬性必須包含來源AEM例項上安裝azCopy命令列工具所在�
 
 >[!NOTE]
 >如果AzCopy未正確設定，您會在記錄中看到下列訊息：
->`INFO c.a.g.s.m.c.a.AzCopyCloudBlobPreCopy - Blob pre-copy is not supported`.
+>>`INFO c.a.g.s.m.c.a.AzCopyCloudBlobPreCopy - Blob pre-copy is not supported`.
 
 1. 開始從CTT UI擷取。 如需詳細資訊，請參閱[內容轉移工具快速入門](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)和[擷取程式](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)。
 
@@ -196,6 +196,9 @@ c.a.g.s.m.commons.ContentExtractor - *************** Beginning AzCopy Pre-Copy p
 >[!TIP]
 >現在，內嵌可排程在擷取成功後立即自動開始。 如需詳細資訊，請參閱[將內容擷取至Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)。
 
+>[!TIP]
+>如果使用AzCopy的Blob轉移進行一段時間，但接著只有部分Blob失敗，請取消勾選「預先複製」和「覆寫暫存容器」選項，以重新執行擷取。 這只會移轉先前未移轉的剩餘blob。
+
 #### 針對檔案資料存放區 {#file-data-store-extract}
 
 當針對來源檔案dataStore執行AzCopy時，您應該會在記錄中看到類似這些的訊息，指出正在處理資料夾：
@@ -205,7 +208,7 @@ c.a.g.s.m.commons.ContentExtractor - *************** Beginning AzCopy Pre-Copy p
 
 請參閱[將內容擷取至目標](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)，以取得有關從Cloud Acceleration Manager (CAM)將內容擷取至目標的一般資訊，包括在「新擷取」對話方塊中是否使用AzCopy （預先複製）的指示。
 
-若要在內嵌期間使用AzCopy，Adobe需要您使用至少為2021.6.5561版本的AEM as a Cloud Service。
+若要在內嵌期間使用AzCopy，Adobe要求您使用至少為2021.6.5561版本的AEM as a Cloud Service。
 
 請檢視Cloud Acceleration Manager中的「內嵌工作」清單和內嵌記錄，以便您檢視進度。 與相關的記錄專案
 成功的AzCopy任務如下所示（允許一些差異）。 偶爾檢查記錄可能會提醒您發生問題
@@ -237,6 +240,6 @@ Final Job Status: CompletedWithSkipped
 *************** Completed AzCopy pre-copy phase ***************
 ```
 
-## 下一步 {#whats-next}
+## 後續步驟 {#whats-next}
 
 您現在已瞭解如何處理大型內容存放庫，以加快內容轉移活動的擷取和擷取階段，將內容移動到AEM as a Cloud Service。 您現在已準備好學習使用內容轉移工具的擷取程式。 請參閱[在內容轉移工具中從Source擷取內容](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)，以瞭解如何從內容轉移工具擷取您的移轉集。
