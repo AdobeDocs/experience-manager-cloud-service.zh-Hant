@@ -4,16 +4,16 @@ description: 瞭解如何使用AFP Output Sync API來擷取及同步輸出轉譯
 feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, User
 exl-id: 5602fc63-ef74-44eb-b3be-61b8f8a2795a
-source-git-commit: 03e46bb43e684a6b7057045cf298f40f9f1fe622
+source-git-commit: 33dcc771c8c2deb2e5fcb582de001ce5cfaa9ce4
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '238'
 ht-degree: 14%
 
 ---
 
 # 使用 AEM Forms API 產生 AFP 輸出
 
-<span class="preview">這是一項預先發佈功能，可透過我們的[預先發佈管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hant#new-features)存取。</span>
+<span class="preview">這是一項預先發佈功能，可透過我們的[預先發佈管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)存取。</span>
 
 進階功能簡報(AFP)是專為列印目的而設計的高效能檔案格式。\
 本指南概述使用AEM Forms產生AFP輸出所需的所有必要步驟和設定。
@@ -101,4 +101,4 @@ curl --location 'http://<server>:<port>/adobe/forms/document/generate/afp' \
 
 您可以儲存回應，並在AFP讀取器中開啟儲存的檔案進行檢視。
 
-![PDF讀取器](/help/forms/assets/afp-pdf.png)
+![尋找IC檔案](/help/forms/interactive-communication/assets/introimg.png)
