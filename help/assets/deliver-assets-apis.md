@@ -35,7 +35,7 @@ Experience Manager資產存放庫中所有可用的[已核准資產](approve-ass
 >[!IMPORTANT]
 >
 >您可以測試任何修飾元，但這通常無法透過實驗API取得。 例如 `</adobe/experimental/advancemodifiers-expires-YYYYMMDD/assets>`
->>按一下這裡以進一步瞭解如何使用[實驗API](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/#experimental-apis)和[修飾元完整清單](https://developer.adobe.com/experience-cloud/experience-manager-apis/)。
+>&#x200B;>按一下這裡以進一步瞭解如何使用[實驗API](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/#experimental-apis)和[修飾元完整清單](https://developer.adobe.com/experience-cloud/experience-manager-apis/)。
 
 具備OpenAPI功能的Dynamic Media也支援長格式視訊。 影片可支援高達 50 GB 和 2 小時。
 
