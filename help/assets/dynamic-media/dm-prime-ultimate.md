@@ -3,9 +3,9 @@ title: Dynamic Media Prime 與 Ultimate
 description: 進一步瞭解Dynamic Media Prime和Ultimate、其優點以及兩者之間的差異。
 role: User
 exl-id: fd049d9c-7940-4638-a17a-21d1f85e9c52
-source-git-commit: 8b596c6e82d9beaeb922cc6635717f151bb390e7
+source-git-commit: 73b1b7f2133a751ea2494d66960a7d225798d1dd
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '421'
 ht-degree: 12%
 
 ---
@@ -30,6 +30,10 @@ Dynamic Media Prime的其他主要優點包括：
 * 網頁最佳化的影像交付
 * 自我調整視訊串流
 
+>[!NOTE]
+>
+>DM Prime客戶可以使用基本影像修飾元，包括旋轉、裁切、翻轉、高度、寬度和品質。 智慧型影像不支援DM Prime客戶的AVIF。
+
 ### 先決條件 {#pre-requisites-dm-prime}
 
 * [AEM Sites as a Cloud Service ](/help/sites-cloud/authoring/quick-start.md)
@@ -50,8 +54,8 @@ Dynamic Media Ultimate是Experience Manager Assets的啟用服務，包含[具�
 * [AEM as a Cloud Service中的Dynamic Media解決方案](/help/assets/dynamic-media/dynamic-media.md)，其中也包含下列主要功能：
 
    * [Dynamic Media 範本](/help/assets/dynamic-media/dynamic-media-templates.md)
-   * [基本範本](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics)
-   * [視覺設定](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-classic/using/master-files/vignette-window-covering-cabinet-files)
+   * [基本範本](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics)
+   * [視覺設定](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/master-files/vignette-window-covering-cabinet-files)
 
 ### 先決條件 {#pre-requisites-dm-ultimate}
 

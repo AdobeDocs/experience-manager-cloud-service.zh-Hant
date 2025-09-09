@@ -3,10 +3,10 @@ title: 具有 OpenAPI 功能的 Dynamic Media
 description: 了解重要概念，例如為什麼要使用具有 OpenAPI 功能的 Dynamic Media，以及如何啟用它。
 role: User
 exl-id: 658b6eff-9f5a-4166-9ff6-5dc8eb92ada3
-source-git-commit: 2b7dc8e25c28c7e537bf19b9ed0518c9adfe7a74
+source-git-commit: 73b1b7f2133a751ea2494d66960a7d225798d1dd
 workflow-type: tm+mt
-source-wordcount: '1063'
-ht-degree: 98%
+source-wordcount: '1106'
+ht-degree: 94%
 
 ---
 
@@ -37,6 +37,13 @@ ht-degree: 98%
 * **用於做出明智決策的資料分析 (即將推出)**：除了資產管理和傳遞之外，它還能在內容傳遞網路上將傳遞資料深入解析擷取至資產傳遞中，使品牌經理能夠追蹤跨管道的傳遞量度。這樣可讓他們做出資料導向的決策，持續將資產控管和傳遞策略最佳化。
 
 ![Dynamic Media Open API 資料流程圖](assets/dm-openapi-dfd.png)
+
+如需有關可用的Dynamic Media產品專案及其功能的資訊，請參閱[Dynamic Media Prime和Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md)。
+
+>[!NOTE]
+>
+>DM Prime客戶可以使用基本影像修飾元，包括旋轉、裁切、翻轉、高度、寬度和品質。 智慧型影像不支援DM Prime客戶的AVIF。
+
 
 ## 存取具備 OpenAPI 功能之 Dynamic Media 的先決條件 {#prerequisites-dynaminc-media-open-apis}
 
