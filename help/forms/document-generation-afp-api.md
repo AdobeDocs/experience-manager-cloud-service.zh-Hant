@@ -13,7 +13,7 @@ ht-degree: 14%
 
 # 使用 AEM Forms API 產生 AFP 輸出
 
-<span class="preview">這是一項預先發佈功能，可透過我們的[預先發佈管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)存取。</span>
+<span class="preview">這是一項預先發佈功能，可透過我們的[預先發佈管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hant#new-features)存取。</span>
 
 進階功能簡報(AFP)是專為列印目的而設計的高效能檔案格式。\
 本指南概述使用AEM Forms產生AFP輸出所需的所有必要步驟和設定。
