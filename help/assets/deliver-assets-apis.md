@@ -73,7 +73,7 @@ headers: {
     }
 ```
 
-若要叫用傳遞API，`Authorization`詳細資料中需要IMS權杖才能傳遞受限制的資產。 IMS權杖是從技術帳戶中擷取。 請參閱[擷取AEM as a Cloud Service認證](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis)以建立新的技術帳戶。 請參閱[產生存取權杖](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis)以產生IMS權杖，並在傳遞API要求標頭中正確使用它。
+若要叫用傳遞API，`Authorization`詳細資料中需要IMS權杖才能傳遞受限制的資產。 IMS權杖是從技術帳戶中擷取。 請參閱[擷取AEM as a Cloud Service認證](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis)以建立新的技術帳戶。 請參閱[產生存取權杖](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis)以產生IMS權杖，並在傳遞API要求標頭中正確使用它。
 
 
 若要檢視要求範例、回應範例和回應代碼，請參閱[傳送API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat)。
