@@ -354,7 +354,7 @@ ht-degree: 98%
 
     ![Generate Variations](/help/edge/docs/forms/universal-editor/assets/ue-variations.png)
 
-**了解更多：**[產生變化版本指南](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
+**了解更多：**&#x200B;[產生變化版本指南](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
 
 #### **內容草稿**
 
