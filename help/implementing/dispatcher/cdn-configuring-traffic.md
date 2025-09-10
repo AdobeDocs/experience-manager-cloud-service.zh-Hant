@@ -4,9 +4,9 @@ description: 瞭解如何在設定檔案中宣告規則和篩選器，並使用C
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: b367e7d62596c33a4ba399008e856a97d12fb45b
 workflow-type: tm+mt
-source-wordcount: '1506'
+source-wordcount: '1523'
 ht-degree: 1%
 
 ---
@@ -445,8 +445,9 @@ data:
 
 在某些情況下，來源選擇器應該用於透過AEM Publish將流量路由到AEM Edge Delivery Services：
 
-* 部分內容是由AEM Publish管理的網域所傳送，而其他來自相同網域的內容是由Edge Delivery Services所傳送
-* Edge Delivery Services提供的內容將受益於透過設定管道部署的規則，包括流量篩選器規則或請求/回應轉換
+* 部分內容是由AEM Publish管理的網域所傳送，而其他來自相同網域的內容是由Edge Delivery Services所傳送。
+* Edge Delivery Services傳送的內容可受益於透過設定管道部署的規則，包括流量篩選器規則或請求/回應轉換。
+* Edge Delivery設定管道可讓您定義如`trafficFilters`、`originSelectors`和`redirects`等規則，以設定Adobe管理的CDN設定。<!-- https://wiki.corp.adobe.com/pages/editpage.action?pageId=3610084282 -->
 
 以下是可實現此目標的原點選取器規則的範例：
 
@@ -474,7 +475,8 @@ data:
 ```
 
 >[!NOTE]
-> 由於已使用Adobe Managed CDN，請依照Edge Delivery Services **安裝程式推送失效檔案**，確定在[Managed](https://www.aem.live/docs/byo-dns#setup-push-invalidation)模式中設定推送失效。
+>
+>因為已使用Adobe Managed CDN，請依照Edge Delivery Services **安裝程式推送失效檔案**，確定在[Managed](https://www.aem.live/docs/byo-dns#setup-push-invalidation)模式中設定推送失效。
 
 
 ## 伺服器端重新導向 {#server-side-redirectors}

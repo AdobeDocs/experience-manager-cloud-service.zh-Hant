@@ -5,10 +5,10 @@ feature: Operations
 role: Admin
 badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: 8f804f55-a66d-47ad-a48d-61b861cef4f7
-source-git-commit: fcc066945d1e44072c4718dd9c1d887dd97be0b6
+source-git-commit: 650ef846b469337c96e728277af02ca890e85117
 workflow-type: tm+mt
-source-wordcount: '504'
-ht-degree: 4%
+source-wordcount: '536'
+ht-degree: 3%
 
 ---
 
@@ -30,14 +30,16 @@ ht-degree: 4%
 
 **還原先前部署的程式碼**&#x200B;功能只有在以下&#x200B;**every**&#x200B;條件為true時才可供使用：
 
+* 每個成功的管道執行僅允許一個還原；若要再次還原，請完成另一個成功的管道執行。
 * 您擁有&#x200B;**環境還原建立**&#x200B;許可權。 如需管理許可權的詳細資訊，請參閱[自訂許可權](/help/implementing/cloud-manager/custom-permissions.md)。
 * 您的組織已註冊Beta版計畫，且功能標幟已啟用。
 * 程式會在AEM as a Cloud Service上執行。
-* 選擇的環境是`Development`環境(暫時的Beta限制)。
+* 可以在`Development`環境、`Stage`環境或`Specialized Testng Environment`上還原先前的原始程式碼。
 * 該環境的最後一個管道已成功完成，並在&#x200B;**少於30天**&#x200B;前執行。
 * 環境狀態為&#x200B;*正在執行*，而且沒有管道正在進行中。
 
-如果任何檢查失敗，Cloud Manager會開啟下列對話方塊，其中列出一或多個未滿足的條件，並停用&#x200B;**Confirm**，以防止還原。
+還原選擇的環境是`Development`、中繼或專門測試環境。
+如果任何檢查失敗，Cloud Manager會開啟下列對話方塊，其中列出一或多個未滿足的條件，並停用**Confirm**，以防止還原。
 
 ![還原先前程式碼部署失敗對話方塊](/help/operations/assets/restore-previous-code-deployment-not-allowed.png)。
 

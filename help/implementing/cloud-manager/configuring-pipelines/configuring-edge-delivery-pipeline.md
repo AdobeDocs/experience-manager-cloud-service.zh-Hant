@@ -9,10 +9,10 @@ hide: false
 index: false
 hidefromtoc: false
 exl-id: 5ad342fa-dd71-4105-a9cb-2d999d402780
-source-git-commit: dbd4ef8d782c9d05e50cab7479adbbc16d6a247d
+source-git-commit: b367e7d62596c33a4ba399008e856a97d12fb45b
 workflow-type: tm+mt
-source-wordcount: '488'
-ht-degree: 5%
+source-wordcount: '518'
+ht-degree: 4%
 
 ---
 
@@ -22,13 +22,13 @@ ht-degree: 5%
 
 使用者必須擁有&#x200B;**[部署管理員](/help/onboarding/cloud-manager-introduction.md#role-based-permissions)**&#x200B;角色才能設定生產管道。
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >在下列情況發生之前，無法設定Edge Delivery管道：
 >
->* 已建立包含一個Edge Delivery Services網站和一個對應網域的計畫。 否則，使用者介面中的&#x200B;**新增Edge Delivery管道**&#x200B;選項會顯示為停用，工具提示會說明缺少的需求。
->* Git存放庫至少有一個分支。
->* 生產和中繼環境隨即建立。
+>* 已建立包含一個Edge Delivery Services網站和一個對應網域的計畫。 否則，使用者介面中的&#x200B;**新增Edge Delivery管道**&#x200B;選項會顯示為停用，工具提示會說明缺少的需求。 請參閱[在Cloud Manager中建立Edge Delivery網站](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
+>* Git存放庫至少有一個分支。 請參閱[在Cloud Manager中管理存放庫](/help/implementing/cloud-manager/managing-code/managing-repositories.md)。
+>* 生產和中繼環境隨即建立。 請參閱[ CI/CD管道簡介](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)。
 
 <!-- CMGR‑69680 -->
 
@@ -41,7 +41,9 @@ ht-degree: 5%
 
 **若要新增Edge Delivery管道：**
 
-1. 在[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/)登入Cloud Manager並選取您想要的組織。
+1. 在[experience.adobe.com/experiencemanager](https://my.cloudmanager.adobe.com/)登入Cloud Manager，然後在左側面板中按一下&#x200B;**Cloud Manager**。
+
+1. 選取您想要的組織。
 
 1. 在&#x200B;**我的程式**&#x200B;頁面上，選取您想要的程式。
 
