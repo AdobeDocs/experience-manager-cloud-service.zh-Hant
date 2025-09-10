@@ -39,7 +39,7 @@ ht-degree: 3%
 * 環境狀態為&#x200B;*正在執行*，而且沒有管道正在進行中。
 
 還原選擇的環境是`Development`、中繼或專門測試環境。
-如果任何檢查失敗，Cloud Manager會開啟下列對話方塊，其中列出一或多個未滿足的條件，並停用**Confirm**，以防止還原。
+如果任何檢查失敗，Cloud Manager會開啟下列對話方塊，其中列出一或多個未滿足的條件，並停用&#x200B;**Confirm**，以防止還原。
 
 ![還原先前程式碼部署失敗對話方塊](/help/operations/assets/restore-previous-code-deployment-not-allowed.png)。
 
