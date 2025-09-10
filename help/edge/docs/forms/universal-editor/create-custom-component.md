@@ -4,512 +4,641 @@ description: 為 EDS Forms 建立自訂元件
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
-workflow-type: ht
-source-wordcount: '1789'
-ht-degree: 100%
+source-git-commit: 1d59791561fc6148778adccab902c8e727adc641
+workflow-type: tm+mt
+source-wordcount: '2120'
+ht-degree: 4%
 
 ---
 
-# 在 WYSIWYG 製作中建立自訂元件
+
+# 在調適型表單區塊中建立自訂表單元件
 
 Edge Delivery Services 表單可提供自訂，讓前端開發人員可以建置量身打造的表單元件。這些自訂元件可無縫整合到 WYSIWYG 製作體驗中，使表單作者能夠在表單編輯器中輕鬆地進行新增、設定和管理。使用自訂元件，作者即可提升功能，同時可確保平順、直覺的製作流程。
 
 本文件概述透過設定原生 HTML 表單元件的樣式來建立自訂元件的步驟，以改善使用者體驗並增加表單的視覺吸引力。
 
-## 必要條件
+## 架構概觀
 
-在開始建立自訂元件之前，您應該：
+Forms區塊的自訂元件遵循&#x200B;**MVC （模型 — 檢視 — 控制器）**&#x200B;架構模式：
 
-- 對於[原生 HTML 元件](/help/edge/docs/forms/form-components.md)有基本的認識。
-- 瞭解如何[使用 CSS 選擇器根據欄位類型設定表單欄位的樣式](/help/edge/docs/forms/style-theme-forms.md)
+### 模型
 
-## 建立自訂元件
+- 由每個`field/component`的JSON結構描述定義。
 
-在通用編輯器中新增自訂元件指在設計表單時為表單作者提供新元件。這包含註冊元件、定義其屬性以及設定其使用位置。建立自訂元件的步驟包括：
+- 可編寫的屬性會在對應的JSON檔案中指定（請參閱區塊/表單/模型/表單元件）。
 
-[1. 為新的自訂元件新增結構](#1-adding-structure-for-new-custom-component)
-[2.定義自訂元件的屬性以供製作](#2-defining-the-properties-of-your-custom-component-for-authoring)
-[3.使您的自訂元件在 WYSIWYG 元件清單中可見](#3-making-your-custom-component-visible-in-the-wysiwyg-component-list)
-[4.註冊您的自訂元件](#4-registering-your-custom-component)
-[5.為自訂元件新增執行階段行為](#5-adding-the-runtime-behaviour-for-your-custom-component)
+- 這些屬性可供表單產生器中的作者使用，並作為欄位定義(fd)的一部分傳遞至元件。
 
-讓我們以建立名為 **range** 的新自訂元件為例。該 range 元件會顯示為一條直線，並顯示最小值、最大值或選取值等值。
+### 檢視
 
-![範圍元件的視覺化展現方式顯示具有最小值和最大值的滑桿，以及選定值指示器](/help/edge/docs/forms/universal-editor/assets/custom-component-range-style.png)
+- 各欄位型別的HTML結構在form-field-types中有說明。
 
-在本文結束時，您會了解如何從頭開始建立自訂元件。
+- 這是可延伸或修改之元件的基礎結構。
 
-### &#x200B;1. 為新的自訂元件新增結構
+- 各個OOTB元件的基本HTML結構會以表單欄位型別記錄。
 
-在使用自訂元件之前，必須先進行註冊，以便通用編輯器將其識別為可用選項。這會透過元件定義實現，元件定義包括唯一識別碼、預設屬性和元件的結構。執行下列步驟以使自訂元件可用於表單製作：
+### 控制器/元件邏輯
 
-1. **新增資料夾和檔案**
+- 以OOTB （現成可用）或自訂元件的形式在JavaScript中實作。   — 位於自訂元件的`blocks/form/components`。
 
-   在 AEM 專案中為新的自訂元件新增資料夾和檔案。
+## OOTB元件
 
-   1. 開啟您的 AEM 專案並瀏覽至 `../blocks/form/components/`。
-   1. 在 `../blocks/form/components/<component_name>` 為您的自訂元件新增資料夾。在此範例中，我們會建立名為 `range` 的資料夾。
-   1. 瀏覽到在 `../blocks/form/components/<component_name>` 新建立的資料夾。例如，瀏覽至 `../blocks/form/components/range`，並新增下列檔案：
+**OOTB （現成可用）**&#x200B;元件為自訂開發提供基礎：
 
-      - `/blocks/form/components/range/_range.json`：包含自訂元件的定義。
-      - `../blocks/form/components/range/range.css`：定義自訂元件的樣式。
-      - `../blocks/form/components/range/range.js`：在執行階段自訂自訂元件。
+- OOTB元件位於`blocks/form/models/form-components`。
 
-        ![新增自訂元件以供製作](/help/edge/docs/forms/universal-editor/assets/adding-custom-component.png)
+- 每個OOTB元件都有定義其可編寫屬性（例如，` _text-input.json`，`_drop-down.json`）的JSON檔案。
 
-        >[!NOTE]
-        >
-        > 確保 json 檔案的檔案名稱包括底線 (_) 作為前置詞。
+- 這些屬性可供表單產生器中的作者使用，並作為欄位定義(fd)的一部分傳遞至元件。
 
-1. 瀏覽至 `/blocks/form/components/range/_range.json` 檔案並新增自訂元件的元件定義。
+- 各個OOTB元件的基本HTML結構會以表單欄位型別記錄。
 
-1. **新增元件定義**
+擴充現有的OOTB元件可讓您重複使用其基本結構、行為和屬性，同時自訂它以符合您的需求。
 
-   若要新增定義，需要在 `_range.json` 檔案中新增下列欄位：
+- 自訂元件必須從預先定義的OOTB元件集延伸。
 
-   - **title**：在通用編輯器中顯示的元件的標題。
-   - **id**：元件的唯一識別碼。
-   - **fieldType**：表單可支援各種 **fieldType** 來擷取特定類型的使用者輸入。您可以找到[支援的 fieldType (在 Extra Byte 區段中)](#supported-fieldtypes)。
-   - **resourceType**：每個自訂元件都有一個以其 fieldType 為基礎的相關聯資源類型。您可以找到[支援的 resourceType (在 Extra Byte 區段中)](#supported-resourcetype)。
-   - **jcr:title**：與標題類似，但儲存在元件的結構內。
-   - **fd:viewType**：表示自訂元件的名稱。這是元件的唯一識別碼。需要為元件建立自訂檢視。
+- 系統會根據欄位JSON中的`viewType`屬性識別要擴充的OOTB元件。
 
-新增元件定義之後的 `_range.json` 檔案如下所示：
+- 系統會維護允許的自訂元件變體的登入。 只能使用此登入中列出的變體，例如`customComponents[]`中的`mappings.js`。
 
-```javascript
-{
-  "definitions": [
-    {
-      "title": "Range",
-      "id": "range",
-      "plugins": {
-        "xwalk": {
-          "page": {
-            "resourceType": "core/fd/components/form/numberinput/v1/numberinput",
-            "template": {
-              "jcr:title": "Range",
-              "fieldType": "number-input",
-              "fd:viewType": "range",
-              "enabled": true,
-              "visible": true
-            }
-          }
-        }
-      }
-    }
-  ]
-}
-```
+- 轉譯表單時，系統會檢查變體屬性或`:type/fd:viewType`，如果它符合已註冊的自訂元件，則會從`blocks/form/components`資料夾載入對應的JS和CSS檔案。
+
+- 自訂元件隨後會套用至OOTB元件的基本HTML結構，好讓您增強或覆寫其行為和外觀。
+
+## 自訂元件的結構
+
+若要建立自訂元件，您可以使用&#x200B;**Scaffolder CLI**&#x200B;來設定元件所需的檔案和資料夾，然後新增自訂元件的程式碼。
+
+- 自訂元件位於`blocks/form/components`資料夾中。
+
+- 每個自訂元件都必須放在自己的資料夾中，以元件命名，例如卡片。 在資料夾中，下列檔案應該是：
+
+   - **_cards.json** — 延伸OOTB元件定義的JSON檔案，定義其可編寫的屬性（模型[]）和載入時的內容結構（定義[]）。
+   - **cards.js** — 包含主要邏輯的JavaScript檔案。
+   - **卡片.css** — 樣式為選用。
+
+- 資料夾名稱與JS/CSS檔案必須相符。
+
+### 重複使用和擴充自訂元件中的欄位
+
+在自訂元件的JSON中定義欄位時（適用於任何欄位群組、基本、驗證、說明等），請遵循下列可維護性和一致性的最佳實務：
+
+- 參考現有的共用容器或欄位定義（例如，`../form-common/_basic-input-placeholder-fields.json#/fields`、`../form-common/_basic- validation-fields.json#/fields`），以重複使用標準/共用欄位。 這可確保您繼承所有標準選項，而不需複製它們。
+
+- 在容器中明確新增欄位或自訂欄位。 這讓您的方案保持枯燥和專注。
+
+- 移除或避免重複透過參考包含的欄位。 僅定義元件邏輯特有的欄位。
+
+- 視需要參考說明容器和其他共用內容（例如`../form-common/_help-container.json`），以維持一致性和可維護性。
+
+>[!TIP]
+>
+> - 此模式可讓您日後輕鬆更新或擴充邏輯，並確保自訂元件與表單系統其他部分保持一致。
+> - 在新增共用容器或欄位定義之前，請務必檢查現有共用容器或欄位定義。
+
+### 定義自訂元件的新屬性
+
+- 如果您需要從作者擷取自訂元件的新屬性，可透過在元件的JSON中的元件的`fields[]`陣列中定義欄位來完成。
+
+- 自訂元件使用:type屬性識別，可在JSON檔案中將其設為`fd:viewType` （例如`fd:viewType: cards`）。 這可讓系統識別並載入正確的自訂元件，因此對自訂元件而言是必要的
+
+- 在JSON定義中新增的任何新屬性可在欄位定義中作為屬性使用。 元件JS邏輯中的`<propertyName>`
+
+## 自訂元件JavaScript API
+
+自訂元件JavaScript API定義如何控制自訂表單元件的行為、外觀和反應性。
+
+### 裝飾函式
+
+**裝飾**&#x200B;函式是自訂元件的進入點。 它會初始化元件、將元件連結至其JSON定義，並允許您操控其HTML結構和行為。
 
 >[!NOTE]
 >
-> 為通用編輯器新增區塊時，所有與表單相關的元件都會遵循與 Sites 相同的方法。如需更多資訊，您可參閱「[建立經檢測適用通用編輯器的區塊](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block)」一文。
+> 自訂元件的JavaScript檔案必須將預設函式匯出為裝飾：
 
-### &#x200B;2. 定義自訂元件的屬性以供製作
+#### 函式簽章：
 
-自訂元件包括元件模型，該模型會指定表單作者可以設定哪些屬性。這些屬性隨即會出現在通用編輯器的「**屬性**」對話框中，讓作者可以調整標籤、驗證規則、樣式和其他屬性等設定。若要定義屬性：
+```javascript
+export default function decorate(element, fieldJson, container, formId) {
+// element: The HTML structure of the OOTB component you are extending
+// fieldJson: The JSON field definition (all authorable properties)
+// container: The parent element (fieldset or form)
+// formId: The id of the form
+// ... your logic here ...
+}
+```
 
-1. 瀏覽至 `/blocks/form/components/range/_range.json` 檔案並新增自訂元件的元件模型。
+它可以：
 
-1. **新增元件模型**
+- **修改元素**：新增事件接聽程式、更新屬性或插入其他標籤。
 
-   若要定義自訂元件的元件模型，您需要將相關欄位新增至 `_range.json` 檔案。
+- **存取JSON屬性**：使用`fd.properties.<propertyName>`讀取JSON結構描述中定義的值，並在元件邏輯中套用這些值。
 
-   1. **建立新模型**
+## 訂閱函式
 
-      - 在模型陣列中，新增物件並設定元件模型的 `id`，以和元件定義中之前所設定的 `fd:viewType` 屬性相符。
-      - 在此物件內包括欄位陣列。
+**subscribe**&#x200B;函式可讓您的元件對欄位值或自訂事件的變更做出反應。 這可確保元件與表單的資料模型保持同步，並可動態更新其UI。
 
-   2. **定義「屬性」對話框的欄位**
+### 函式簽章：
 
-      - 欄位陣列中的每個物件都應該是 container-type 元件，使其可在「**屬性**」對話框中顯示為索引標籤。
-      - 部分欄位可以參照 `models/form-common` 中可用的可重複使用屬性。
+```JavaScript
+import { subscribe } from '../../rules/index.js';
 
-   3. **使用現有元件模型作為參考**
+export default function decorate(fieldDiv, fieldJson, container, formId) {
+// Access custom properties defined in the JSON
+const { initialText, finalText, time } = fieldJson?.properties;
+// ... setup logic ...
+subscribe(fieldDiv, formId, (_fieldDiv, fieldModel) => { fieldModel.subscribe(() => {
+// React to custom event (e.g., resetCardOption)
+// ... logic ...
+}, 'resetCardOption');
+});
+}
+```
 
-      - 您可以複製與您選擇的 `fieldType` 對應的現有元件模型，並根據需要進行修改。例如，`number-input` 元件會經過擴展以建立 **range** 元件，以便我們可以使用來自 `models/form-components/_number-input.json` 的模型陣列作為參考。
+它可以：
 
-   新增元件模型之後的 `_range.json` 檔案如下所示：
+- **登入回呼**：呼叫&#x200B;**subscribe(element， formId， callback)**&#x200B;會在欄位資料變更時，將您的回呼登入為執行。請使用兩個回呼引數：
+   - **element**：代表欄位的HTML元素。
+   - **fieldModel**：代表欄位狀態和事件API的物件。
+
+- **接聽變更或事件**：每當值變更或觸發自訂事件時，請使用`fieldModel.subscribe((event) => { ... }, 'eventName')`執行邏輯。 事件物件包含有關變更內容的詳細資訊。
+
+## 建立自訂元件
+
+在本節中，您將瞭解透過擴充OOTB選項按鈕元件來建立&#x200B;**卡片自訂元件**&#x200B;的程式。
+
+![卡片自訂元件](/help/edge/docs/forms/universal-editor/assets/cc-ue-card-component.png)
+
+### 1.程式碼設定
+
+#### 1.1檔案和資料夾
+
+第一步是設定自訂元件的必要檔案，並將其連線到存放庫中的程式碼。 此程式由&#x200B;**AEM Forms Scaffolder CLI**&#x200B;自動完成，因此可以更快速地架設及連線必要的檔案。
+
+1. 開啟終端機，並導覽至表單專案的根目錄。
+2. 執行以下命令：
+
+```bash
+npm install
+npm run create:custom-component
+```
+
+![支架CLI](/help/edge/docs/forms/universal-editor/assets/scaffolder-cli.png)
+
+它會：
+
+- **提示您為新元件命名**。 例如，在此案例中，使用卡片。
+- **要求您選擇**&#x200B;基本元件（選取選項群組）
+
+這會建立所有必要的資料夾和檔案，包括：
+
+```
+blocks/form/
+└── components/
+  └── cards/
+    ├── cards.js
+    └── cards.css
+    └── _cards.json
+```
+
+並與CLI輸出中所示的存放庫中的其餘程式碼連線。
+它會自動執行下列功能：
+
+- 將卡片新增至篩選器，以便在最適化表單區塊中新增。
+- 更新`mappings.js`的允許清單以包含新卡片元件。
+- 在通用編輯器的&#x200B;**自訂元件**&#x200B;清單下註冊卡片元件的定義。
+
+>[!NOTE]
+>
+> 您也可以使用手動（舊版）方法建立自訂元件。 如需詳細資訊，請參閱[手動或舊版方法](#manual-or-legacy-method-to-create-custom-component)以建立自訂元件區段。
+
+#### 1.2在通用編輯器中使用元件
+
+1. **重新整理通用編輯器**：在通用編輯器中開啟您的表單並重新整理頁面，以確保它從存放庫載入最新的程式碼。
+
+2. **新增自訂元件**
+
+   1. 按一下表單畫布上的&#x200B;**新增(+)**&#x200B;按鈕。
+   2. 捲動至自訂元件區段。
+   3. 選取新建立的&#x200B;**卡片元件**&#x200B;以將其插入您的表單中。
+
+      ![選取自訂元件](/help/edge/docs/forms/universal-editor/assets/select-custom-component.png)
+
+由於`cards.js`內沒有程式碼，因此自訂元件會呈現為選項群組。
+
+#### 1.3本機預覽和測試
+
+現在表單包含自訂元件，您可以代理表單並在本機進行變更，然後檢視變更：
+
+1. 前往您的終端機並執行`aem up`。
+
+2. 開啟在`http://localhost:3000/{path-to-your-form}`啟動的Proxy伺服器（路徑範例： `/content/forms/af/custom-component-form`）
+
+
+### 2.對自訂元件實作自訂行為
+
+#### 2.1設定自訂元件的樣式
+
+讓我們將類別&#x200B;**卡片**&#x200B;新增至元件，以設定樣式，並為每個無線電新增影像，針對此使用下列程式碼。
+
+**在cards.js中使用裝飾函式來設定自訂元件的樣式**
+
+```javascript
+import { createOptimizedPicture } from '../../../../scripts/aem.js';
+
+export default function decorate(element, fieldJson, container, formId) { element.classList.add('card');
+element.querySelectorAll('.radio-wrapper').forEach((radioWrapper) => { const image = createOptimizedPicture('https://main--afb--
+jalagari.hlx.live/lab/images/card.png', 'card-image'); radioWrapper.appendChild(image);
+});
+return element;
+}
+```
+
+**在cards.css中為自訂元件新增執行階段行為**
+
+```javascript
+.card .radio-wrapper { min-width: 320px;
+/* or whatever width fits your design */ max-width: 340px;
+background: #fff;
+border-radius: 16px;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+flex: 0 0 auto;
+scroll-snap-align: start; padding: 24px 16px;
+margin-bottom: 0;
+position: relative;
+transition: box-shadow 0.2s; display: flex;
+align-items: flex-start; gap: 12px;
+}
+```
+
+現在，卡片元件顯示如下：
+
+![新增卡片css和js](/help/edge/docs/forms/universal-editor/assets/add-card-css.png)
+
+#### 2.2使用訂閱函式新增動態行為
+
+變更下拉式清單時，卡片會被擷取，並設定在選項群組的列舉中。 但目前的檢視無法處理此問題。 因此會呈現如下：
+
+![訂閱函式](/help/edge/docs/forms/universal-editor/assets/card-subscribe.png)
+
+呼叫API時，它會設定欄位模型，而且必須監聽變更並據此呈現檢視。 這是使用&#x200B;**訂閱函式**&#x200B;達成的。
+
+讓我們將先前步驟中的檢視程式碼轉換為函式，並在`cards.js`中的訂閱函式中呼叫此函式，如下所示：
+
+```javascript
+import { createOptimizedPicture } from '../../../../scripts/aem.js';  
+
+import { subscribe } from '../../rules/index.js';  
+function createCard(element, enums) {  
+
+  element.querySelectorAll('.radio-wrapper').forEach((radioWrapper, index) => {  
+
+    if (enums[index]?.name) {  
+
+      let label = radioWrapper.querySelector('label');  
+
+      if (!label) {  
+
+        label = document.createElement('label');  
+
+        radioWrapper.appendChild(label);  
+
+      }  
+
+      label.textContent = enums[index]?.name;  
+
+    }  
+
+    const image = createOptimizedPicture(enums[index].image || 'https://main--afb--jalagari.hlx.page/lab/images/card.png', 'card-image');  
+
+   radioWrapper.appendChild(image);  
+
+  });  
+
+}  
+export default function decorate(element, fieldJson, container, formId) {  
+
+    element.classList.add('card');  
+
+    createCard(element, fieldJson.enum);  
+
+    subscribe(element, formId, (fieldDiv, fieldModel) => {  
+
+        fieldModel.subscribe((e) => {  
+
+            const { payload } = e;  
+
+            payload?.changes?.forEach((change) => {  
+
+                if (change?.propertyName === 'enum') {  
+
+                    createCard(element, change.currentValue);  
+
+                }  
+
+            });  
+
+        });  
+
+    });  
+    return element;  
+
+} 
+```
+
+**使用Subscribe函式接聽卡片中的事件變更.js**
+
+現在，當您變更下拉式清單時，卡片會填入，如下所示：
+
+![訂閱函式](/help/edge/docs/forms/universal-editor/assets/card-subscribe-final.png)
+
+#### 2.3將檢視更新與欄位模型同步
+
+若要將檢視變更同步到[模型]欄位，您必須設定所選卡片的值。 因此，請在cards.js中新增下列變更事件接聽程式，如下所示：
+
+**在cards.js中使用欄位模型API**
+
+```javascript
+ 
+
+import { createOptimizedPicture } from '../../../../scripts/aem.js';  
+
+import { subscribe } from '../../rules/index.js';  
+
+  
+
+  
+
+function createCard(element, enums) {  
+
+  element.querySelectorAll('.radio-wrapper').forEach((radioWrapper, index) => {  
+
+    if (enums[index]?.name) {  
+
+      let label = radioWrapper.querySelector('label');  
+
+      if (!label) {  
+
+        label = document.createElement('label');  
+
+        radioWrapper.appendChild(label);  
+
+      }  
+
+      label.textContent = enums[index]?.name;  
+
+    }  
+
+    radioWrapper.querySelector('input').dataset.index = index;  
+
+    const image = createOptimizedPicture(enums[index].image || 'https://main--afb--jalagari.hlx.page/lab/images/card.png', 'card-image');  
+
+   radioWrapper.appendChild(image);  
+
+  });  
+
+}  
+export default function decorate(element, fieldJson, container, formId) {  
+
+    element.classList.add('card');  
+    createCard(element, fieldJson.enum);  
+
+    subscribe(element, formId, (fieldDiv, fieldModel) => {  
+
+        fieldModel.subscribe((e) => {  
+
+            const { payload } = e;  
+
+            payload?.changes?.forEach((change) => {  
+
+                if (change?.propertyName === 'enum') {  
+
+                    createCard(element, change.currentValue);  
+
+                }  
+
+            });  
+
+        });  
+        element.addEventListener('change', (e) => {  
+
+            e.stopPropagation();  
+
+            const value = fieldModel.enum?.[parseInt(e.target.dataset.index, 10)];  
+
+            fieldModel.value = value.name;  
+
+        });  
+
+    });  
+
+    return element;  
+} 
+```
+
+現在自訂卡片元件會出現，如下所示：
+
+![卡片自訂元件](/help/edge/docs/forms/universal-editor/assets/cc-ue-card-component.png)
+
+## 提交和推送變更
+
+在您針對自訂元件實作JavaScript和CSS並在本機驗證後，請認可變更並將其推送至您的Git存放庫。
+
+```bash
+git add . && git commit -m "Add card custom component" && git push
+```
+
+您僅需幾個簡單步驟，即可成功建立複雜的自訂卡片選取元件。
+
+## 建立自訂元件的手動或舊式方法
+
+舊版的方法是手動遵循以下所述的步驟：
+
+1. **選擇要擴充的OOTB元件** （例如，按鈕、下拉式清單、文字輸入等）。 在此情況下，請延伸選項元件。
+
+2. **在**&#x200B;中建立資料夾`blocks/form/components`，並搭配您元件的名稱（在此案例中為卡片）。
+
+3. **新增相同名稱的JS檔案**：
+   - `blocks/form/components/cards/cards.js`。
+
+4. （選擇性） **為自訂樣式新增CSS檔案**：
+   - `blocks/form/components/cards/cards.css.`
+
+5. **在與**&#x200B;元件JS檔案` _cards.json` (**)相同的資料夾中定義新的JSON檔案** （例如`blocks/form/components/cards/_cards.json`）。 此JSON應該擴充現有元件，並在其定義中，將`fd:viewType`設定為您的元件名稱（在此例中為卡片）：
+
+   - 對於所有欄位群組（基本、驗證、說明等），請明確新增您的自訂欄位。
+
+6. **實作JS和CSS邏輯：**
+   - 匯出預設函式，如上所述。
+   - 使用&#x200B;**element**&#x200B;引數修改基礎HTML結構。
+   - 如果需要，請使用標準欄位資料的&#x200B;**fieldJson**&#x200B;引數。
+   - 視需要使用&#x200B;**subscribe**&#x200B;函式接聽欄位變更或自訂事件。
+
+     >[!NOTE]
+     >
+     >如上所述，實作自訂元件的JS和CSS邏輯。
+
+7. 在表單產生器中將您的元件註冊為變體並設定變體屬性或
+   將JSON中的`fd:viewType/:type`加到您的元件名稱，例如，從`fd:viewType`將`definitions[]`值新增為卡片到具有`id="form`之物件的元件陣列。
 
    ```javascript
-   "models": [
    {
-     "id": "range",
-     "fields": [
-       {
-         "component": "container",
-         "name": "basic",
-         "label": "Basic",
-         "collapsible": false,
-         "...": "../../../../models/form-common/_basic-input-fields.json"
-       },
-       {
-         "...": "../../../../models/form-common/_help-container.json"
-       },
-       {
-         "component": "container",
-         "name": "validation",
-         "label": "Validation",
-         "collapsible": true,
-         "...": "../../../../models/form-common/_number-validation-fields.json"
-       }
-     ]
+   "definitions": [
+   {
+   "title": "Cards",
+   "id": "cards", "plugins": {
+   "xwalk": {
+   "page": {
+   "resourceType":
+   "core/fd/components/form/radiobutton/v1/radiobutton", "template": {
+   "jcr:title": "Cards",
+   "fieldType": "radio-button", "fd:viewType": "cards",
+   "enabled": true, "visible": true}
    }
-   ]
+   } }
+   }
+   ]}
    ```
 
-   >[!NOTE]
-   >
-   > 若要將新欄位新增至自訂元件的「**屬性**」對話框，需遵守[已定義的結構描述](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/field-types#loading-model)。
+8. **更新mappings.js**：將元件名稱新增至&#x200B;**OOTBComponentDecorators** （針對OOTB樣式的元件）或&#x200B;**customComponents**&#x200B;清單，讓系統可識別並載入它。
 
-   您還可以[新增自訂屬性](#adding-custom-properties-for-your-custom-component)到自訂元件來擴展其功能。
+   ```javascript
+   let customComponents = ["cards"];
+   const OOTBComponentDecorators = [];
+   ```
 
-#### 為自訂元件新增自訂屬性
-
-自訂屬性可讓您根據元件的屬性對話框中設定的值定義特定行為。這有助於擴展元件的功能和自訂選項。
-
-在此範例中，我們將 Step Value 作為自訂屬性新增到 Range 元件。
-
-![Step Value 自訂屬性](/help/edge/docs/forms/universal-editor/assets/customcomponent-stepvalue.png)
-
-若要新增 Step Value 自訂屬性，請在 ` _<component>.json` 檔案中使用下列程式碼附加元件模型：
-
-```javascript
-      {
-      "component": "number",
-      "name": "stepValue",
-      "label": "Step Value",
-      "valueType": "number"
-      }
-```
-
-JSON 片段為 **Range** 元件定義一個名為 **Step Value** 的自訂屬性。以下是各個欄位的分項說明：
-
-- **component**：指定「屬性」對話框中使用的輸入欄位類型。於此範例中，「`number`」表示該欄位接受數值。
-- **name**：屬性的識別碼，可在元件的邏輯中用來參照屬性。此處的「`stepValue`」代表 Range 的 Step Value 設定。
-- **label**：「屬性」對話框中所見到的屬性顯示名稱。
-- **valueType**：定義屬性預期的資料類型。「`number`」確保僅可以輸入數值。
-
-您現在可以將 `stepValue` 用作 JSON 屬性 `range.js` 的自訂屬性，並根據其在執行階段的數值來執行動態行為。
-
-因此，在新增元件定義、元件模型和自訂屬性後，最終的 `_range.json` 檔案如下所示：
-
-```javascript
- {
-  "definitions": [
-    {
-      "title": "Range",
-      "id": "range",
-      "plugins": {
-        "xwalk": {
-          "page": {
-            "resourceType": "core/fd/components/form/numberinput/v1/numberinput",
-            "template": {
-              "jcr:title": "Range",
-              "fieldType": "number-input",
-              "fd:viewType": "range",
-              "enabled": true,
-              "visible": true
-            }
-          }
-        }
-      }
-    }
-  ],
-  "models": [
-    {
-      "id": "range",
-      "fields": [
-        {
-          "component": "container",
-          "name": "basic",
-          "label": "Basic",
-          "collapsible": false,
-          "...": "../../../../models/form-common/_basic-input-fields.json"
-         {
-           "component": "number",
-           "name": "stepValue",
-            "label": "Step Value",
-             "valueType": "number"
-}
-        },
-        {
-          "...": "../../../../models/form-common/_help-container.json"
-        },
-        {
-          "component": "container",
-          "name": "validation",
-          "label": "Validation",
-          "collapsible": true,
-          "...": "../../../../models/form-common/_number-validation-fields.json"
-        }
-      ]
-    }
-  ]
-}
-```
-
-![元件定義和模型](/help/edge/docs/forms/universal-editor/assets/custom-component-json-file.png)
-
-
-### &#x200B;3. 使您的自訂元件在 WYSIWYG 元件清單中可見
-
-篩選器會定義自訂元件可以用於通用編輯器中的哪個區段。這確保了元件僅能用於適當區段，同時保持結構和可用性。
-
-為了確保自訂元件在 WYSIWYG 表單製作過程中出現在可用元件清單中：
-
-1. 瀏覽至 `/blocks/form/_form.json` 檔案。
-1. 在具有 `id="form"` 的物件中找到元件陣列。
-1. 將 `definitions[]` 中的 `fd:viewType` 值新增到 `id="form"` 物件的元件陣列。
+9. **更新_form.json**：將元件的名稱新增至`filters.components`陣列，以便將其放置在編寫UI中。
 
    ```javascript
    "filters": [
-     {
-       "id": "form", 
-       "components": [
-         "captcha",
-         "checkbox",
-         "checkbox-group",
-         "date-input",
-         "drop-down",
-         "email",
-         "file-input",
-         "form-accordion",
-         "form-button",
-         "form-fragment",
-         "form-image",
-         "form-modal",
-         "form-reset-button",
-         "form-submit-button",
-         "number-input",
-         "panel",
-         "plain-text",
-         "radio-group",
-         "rating",
-         "telephone-input",
-         "text-input",
-         "tnc",
-         "wizard",
-         "range"
+   {
+       "id": "form",
+       "components": [ "cards"]}
        ]
-     }
-   ]
    ```
 
-![元件篩選器](/help/edge/docs/forms/universal-editor/assets/custom-component-form-file.png)
+10. **更新_component-definition.json**：在`models/_component-definition.json`中，以下列方式使用物件更新群組中具有`id custom-components`的陣列：
 
-### &#x200B;4. 註冊您的自訂元件
+   ```javascript
+   {
+   "...":"../blocks/form/components/cards/_cards.json#/definitions"
+   }
+   ```
 
-為了讓表單區塊能夠識別自訂元件並載入表單製作期間在元件模型中定義的屬性，請將元件定義中的 `fd:viewType` 值新增到 `mappings.js` 檔案。
+   這是為了提供將與其他元件一起建置的新卡片元件的參考
 
-若要註冊元件：
+11. **執行組建:json指令碼**：執行`npm run build:json`，將所有元件JSON定義編譯並合併成單一檔案，由伺服器提供服務。 這可確保您的新元件的結構描述包含在合併的輸出中。
 
-1. 瀏覽至 `/blocks/form/mappings.js` 檔案。
-1. 找到 `customComponents[]` 陣列。
-1. 將 `definitions[]` 陣列中的 `fd:viewType` 值新增到 `customComponents[]` 陣列。
+12. 提交變更並將其推播到您的Git存放庫。
+
+現在，您可以將自訂元件新增至表單。
+
+## 建立複合元件
+
+複合元件是藉由結合多個元件而建立的。
+例如，「條款與條件」複合元件由父項面板組成，其中包含：
+
+- 用於顯示字詞的純文字欄位
+
+- 擷取使用者合約的核取方塊
+
+此組合結構在個別元件的JSON檔案中定義為範本。 下列範例說明如何定義條款與條件元件的範本：
 
 ```javascript
-let customComponents = ["range"];
-const OOTBComponentDecorators = ['file-input',
-                                 'wizard', 
-                                 'modal', 'tnc',
-                                'toggleable-link',
-                                'rating',
-                                'datetime',
-                                'list',
-                                'location',
-                                'accordion'];
+{ 
+
+  "definitions": [ 
+
+    { 
+
+      "title": "Terms and conditions", 
+
+      "id": "tnc", 
+
+      "plugins": { 
+
+        "xwalk": { 
+
+          "page": { 
+
+            "resourceType": "core/fd/components/form/termsandconditions/v1/termsandconditions", 
+
+            "template": { 
+
+              "jcr:title": "Terms and conditions", 
+
+              "fieldType": "panel", 
+
+              "fd:viewType": "tnc", 
+
+              "text": { 
+
+                "value": "Text related to the terms and conditions come here.", 
+
+                "sling:resourceType": "core/fd/components/form/text/v1/text", 
+
+                "fieldType": "plain-text", 
+
+                "textIsRich": true 
+
+              }, 
+
+              "approvalcheckbox": { 
+
+                "name": "approvalcheckbox", 
+
+                "jcr:title": "I agree to the terms & conditions.", 
+
+                "sling:resourceType": "core/fd/components/form/checkbox/v1/checkbox", 
+
+                "fieldType": "checkbox", 
+
+                "required": true, 
+
+                "type": "string", 
+
+                "enum": [ 
+
+                  "true" 
+
+                ] 
+
+              } 
+
+            } 
+
+          } 
+
+        } 
+
+      } 
+
+    } 
+
+  ], 
+
+  ... 
+
+} 
 ```
 
-![元件對應](/help/edge/docs/forms/universal-editor/assets/custom-component-mapping-file.png)
+## 最佳實務
 
-完成上述步驟後，自訂元件隨即會出現在通用編輯器內的表單元件清單中。然後您即可將其拖曳到表單區段。
+建立您自己的自訂元件前，請記住以下重點：
 
-![通用編輯器元件面板的螢幕擷圖顯示可拖放至表單中的自訂範圍元件](/help/edge/docs/forms/universal-editor/assets/custom-component-range.png)
+- **讓元件邏輯保持焦點**：僅新增/覆寫自訂行為所需的專案
 
-下方的螢幕擷圖顯示 `range` 元件的屬性已新增至元件模型中，並指定表單製作者可以設定的屬性：
+- **善用基底結構**：使用OOTB HTML作為起點
 
-![通用編輯器屬性面板的螢幕擷圖顯示可設定的範圍元件設定，包括基本屬性、驗證規則及樣式選項](/help/edge/docs/forms/universal-editor/assets/range-properties.png)
+- **使用可編寫的屬性：**&#x200B;透過JSON結構描述公開可設定的選項
 
-您現在可以透過新增樣式和功能來定義自訂元件的執行階段行為。
+- **名稱空間您的CSS**：使用唯一的類別名稱來避免樣式衝突
 
-### &#x200B;5. 為自訂元件新增執行階段行為
+## 參照
 
-您可以使用預先定義標記來修改自訂元件，如「[表單欄位的樣式](/help/edge/docs/forms/style-theme-forms.md)」中的說明。這可以透過自訂 CSS (階層式樣式表) 和自訂程式碼來實現，以美化元件的外觀。若要為元件新增執行階段行為：
+- form-field-types：所有欄位型別的基本HTML結構和屬性。 [按一下這裡](/help/edge/docs/forms/eds-form-field-properties)以檢視詳細的表單欄位結構和屬性。
 
-1. 若要新增樣式，請瀏覽至 `/blocks/form/components/range/range.css` 檔案，並新增下列程式碼：
+- **區塊/表單/模型/表單元件**： OOTB和自訂元件屬性定義。
 
-   ```javascript
-   /** Styling for range */
-   main .form .range-widget-wrapper.decorated input[type="range"] {
-   margin: unset;
-   padding: unset;
-   appearance: none;
-   height: 5px;
-   border-radius: 5px;
-   border: none;
-   background-image: linear-gradient(to right, #ADD8E6 calc(100% - var(--current-steps)/var(--total-steps)), #C5C5C5 calc(100% - var(--current-steps)/var(--total-steps)));
-   }
-   
-   main .form .range-widget-wrapper.decorated input[type="range"]:focus {
-   outline: none;
-   }
-   
-   .range-widget-wrapper.decorated input[type="range"]::-webkit-slider-thumb {
-   appearance: none;
-   width: 25px;
-   height: 25px;
-   border-radius: 50%;
-   background: #00008B; /* Dark Blue */
-   border: 3px solid #00008B; /* Dark Blue */
-   cursor: pointer;
-   outline: 3px solid #fff;
-   }
-   
-   .range-widget-wrapper.decorated input[type="range"]:focus::-webkit-slider-thumb {
-   border-color: #00008B; /* Dark Blue */
-   }
-   
-   .range-widget-wrapper.decorated .range-bubble {
-   color: #00008B; /* Dark Blue */
-   font-size: 20px;
-   line-height: 28px;
-   position: relative;
-   display: inline-block;
-   padding-bottom: 12px;
-   font-weight: bold;
-   }
-   
-   .range-widget-wrapper.decorated .range-min,
-   .range-widget-wrapper.decorated .range-max {
-   font-size: 14px;
-   line-height: 22px;
-   color: #494f50;
-   margin-top: 16px;
-   display: inline-block;
-   }
-   
-   .range-widget-wrapper.decorated .range-max {
-   float: right;
-   }
-   ```
-
-   程式碼可協助您定義自訂元件的樣式和視覺外觀。
-
-1. 若要新增功能，請瀏覽至 `/blocks/form/components/range/range.js` 檔案，並新增下列程式碼：
-
-   ```javascript
-   function updateBubble(input, element) {
-   const step = input.step || 1;
-   const max = input.max || 0;
-   const min = input.min || 1;
-   const value = input.value || 1;
-   const current = Math.ceil((value - min) / step);
-   const total = Math.ceil((max - min) / step);
-   const bubble = element.querySelector('.range-bubble');
-   // during initial render the width is 0. Hence using a default here.
-   const bubbleWidth = bubble.getBoundingClientRect().width || 31;
-   const left = `${(current / total) * 100}% - ${(current / total) * bubbleWidth}px`;
-   bubble.innerText = `${value}`;
-   const steps = {
-       '--total-steps': Math.ceil((max - min) / step),
-       '--current-steps': Math.ceil((value - min) / step),
-   };
-   const style = Object.entries(steps).map(([varName, varValue]) => `${varName}:${varValue}`).join(';');
-   bubble.style.left = `calc(${left})`;
-   element.setAttribute('style', style);
-   }
-   
-   export default async function decorate(fieldDiv, fieldJson) {
-   console.log('RANGE DIV: ', fieldDiv);
-   console.log('RANGE JSON: fieldJson', fieldJson);
-    const input = fieldDiv.querySelector('input');
-   // modify the type in case it is not range.
-   input.type = 'range';
-   input.min = input.min || 10;
-   input.max = input.max || 1000;
-   // create a wrapper div to provide the min/max and current value
-   const div = document.createElement('div');
-   div.className = 'range-widget-wrapper decorated';
-   input.after(div);
-   const hover = document.createElement('span');
-   hover.className = 'range-bubble';
-   const rangeMinEl = document.createElement('span');
-   rangeMinEl.className = 'range-min';
-   const rangeMaxEl = document.createElement('span');
-   rangeMaxEl.className = 'range-max';
-   rangeMinEl.innerText = `${input.min || 1}`;
-   rangeMaxEl.innerText = `${input.max}`;
-   div.appendChild(hover);
-   // move the input element within the wrapper div
-   div.appendChild(input);
-   div.appendChild(rangeMinEl);
-   div.appendChild(rangeMaxEl);
-   input.addEventListener('input', (e) => {
-   updateBubble(e.target, div);
-   });
-   updateBubble(input, div);
-   return fieldDiv;
-   }
-   ```
-
-   這會控制自訂元件如何與使用者輸入互動、處理資料以及和通用編輯器中的表單區塊整合。
-
-   合併自訂樣式和功能後，range 元件的外觀和行為即會提升。更新後的設計會反映套用後的樣式，而新增的功能則可確保更動態和互動的使用者體驗。
-下列螢幕擷圖提供更新後 range 元件的圖解。
-
-![最終實際應用的範圍元件，顯示在通用編輯器中具有數值氣泡圖形且有樣式設計的滑桿以及互動功能](/help/edge/docs/forms/universal-editor/assets/custom-component-range-1.png)
-
-## 常見問題
-
-- **如果我要在 component.css 和 forms.css 中新增樣式，優先考慮哪一個？**
-在 `component.css` 和 **forms.css** 中都有定義樣式時，優先考慮 `component.css`。這是因為元件層級樣式更為具體，並會覆寫 `forms.css` 的全域樣式。
-
-- **我的自訂元件在通用編輯器中的可用元件清單中不可見。我要如何修正這個問題？**
-如果您的自訂元件未出現，請檢查下列檔案，以確保元件已正確註冊：
-   - **component-definition.json**：確認元件已正確定義。
-   - **component-filters.json**：確保在適當區段中可允許該元件。
-   - **component-models.json**：確認元件模型已正確設定。
-
-## 最佳做法
-
-- 建議您[設定本機 AEM 開發環境](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#set-up-local-aem-development-environment)，以在本機開發自訂樣式和元件。
-
-
-## Extra Byte
-
-### 支援的 resourceType
-
-| 欄位類型 | 資源類型 |
-|--------------|------------------------------------------------------------------|
-| 文字輸入 | core/fd/components/form/textinput/v1/textinput |
-| 數字輸入 | core/fd/components/form/numberinput/v1/numberinput |
-| 日期輸入 | core/fd/components/form/datepicker/v1/datepicker |
-| 面板 | core/fd/components/form/panelcontainer/v1/panelcontainer |
-| 核取方塊 | core/fd/components/form/checkbox/v1/checkbox |
-| 下拉式清單 | core/fd/components/form/dropdown/v1/dropdown |
-| 單選按鈕群組 | core/fd/components/form/radiobutton/v1/radiobutton |
-| 純文字 | core/fd/components/form/text/v1/text |
-| 檔案輸入 | core/fd/components/form/fileinput/v2/fileinput |
-| 電子郵件 | core/fd/components/form/emailinput/v1/emailinput |
-| 影像 | core/fd/components/form/image/v1/image |
-| 按鈕 | core/fd/components/form/button/v1/button |
-
-### 支援的 fieldTypes
-
-表單支援的 fieldTypes 包括：
-
-- 文字輸入
-- 數字輸入
-- 日期輸入
-- 面板
-- 純文字
-- 檔案輸入
-- 電子郵件
-- 影像
-- 按鈕
-- 核取方塊
-- 下拉式清單
-- 單選按鈕群組
-
+- **區塊/表單/元件**：放置您的自訂元件。 例如： `blocks/form/components/countdown-timer/_countdown-timer.json`顯示如何擴充基礎元件及新增屬性。

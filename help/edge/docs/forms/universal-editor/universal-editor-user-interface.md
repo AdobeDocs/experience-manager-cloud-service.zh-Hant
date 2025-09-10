@@ -6,10 +6,10 @@ feature: Edge Delivery Services
 role: User, Developer, Admin
 level: Beginner
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
-source-git-commit: 07160248d5b5817d155a118475878ce04a687a32
-workflow-type: ht
-source-wordcount: '2355'
-ht-degree: 100%
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
+workflow-type: tm+mt
+source-wordcount: '2390'
+ht-degree: 98%
 
 ---
 
@@ -112,11 +112,16 @@ ht-degree: 100%
 
 **您的第一份表單：**
 
-1. **開始建置**：使用「**新增**」按鈕 (`a`) 新增元件
-2. **設定欄位**：選取元件並使用&#x200B;**屬性模式** (`d`)
-3. **測試表單**：使用&#x200B;**預覽模式** (`p`) 與表單進行互動
-4. **檢查行動裝置視圖**：切換到&#x200B;**回應式模式**&#x200B;進行行動裝置測試
-5. **上線**：準備好即可按一下「**發佈**」
+1. **新增最適化表單元件** — 將`Adaptive Form`元件插入區段中。
+2. **開始建置**：使用「**新增**」按鈕 (`a`) 新增元件
+3. **設定欄位**：選取元件並使用&#x200B;**屬性模式** (`d`)
+4. **測試表單**：使用&#x200B;**預覽模式** (`p`) 與表單進行互動
+5. **檢查行動裝置視圖**：切換到&#x200B;**回應式模式**&#x200B;進行行動裝置測試
+6. **上線**：準備好即可按一下「**發佈**」
+
+>[!NOTE]
+>
+> 若要瞭解在Universal Editor中建立表單的詳細步驟，請參閱[使用Edge Delivery Services建立和發佈最適化Forms](/help/edge/docs/forms/universal-editor/create-forms.md)。
 
 **驗證查核點：**
 
@@ -218,7 +223,7 @@ ht-degree: 100%
 
 #### **AEM 表單屬性**
 
-**用途：**&#x200B;進行表單層級設定，例如表單資料模型 (FDM) 和出版日期\
+**用途：**&#x200B;設定表單層級設定，例如表單資料模型(FDM)、設定提交動作和發佈日期\
 **何時使用：**&#x200B;設定資料整合、安排出版時程
 
 ![表單屬性](/help/edge/docs/forms/universal-editor/assets/ue-formproperties.png)
@@ -264,7 +269,7 @@ ht-degree: 100%
 
 **屬性面板** (右) 是建置和設定表單的控制中心。此面板會根據您選取的內容而變更，並為不同任務提供不同工具。
 
-![屬性面板](/help/edge/docs/forms/universal-editor/assets/ue-properties-panel.png)
+![屬性面板](/help/edge/docs/forms/universal-editor/assets/text-properties-ue.png)
 
 ### **核心表單建立工具**
 

@@ -7,10 +7,10 @@ level: Beginner, Intermediate
 time: 45-60 minutes
 keywords: 預填自適應表單, 自適應表單 edge delivery services, 自適應表單自動填入
 exl-id: 7b6224e2-a19c-4146-8545-0ce9d1da9b29
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: ht
-source-wordcount: '1787'
-ht-degree: 100%
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
+workflow-type: tm+mt
+source-wordcount: '1803'
+ht-degree: 99%
 
 ---
 
@@ -156,6 +156,11 @@ ht-degree: 100%
    ![Edge Delivery Services 範本](/help/edge/assets/create-eds-forms.png)
 
 1. 按一下「**建立**」來開啟&#x200B;**建立表單**&#x200B;精靈
+
+   >
+   >
+   > 您可以編輯表單屬性，從&#x200B;**資料**&#x200B;標籤或更新版本設定資料來源。
+
 1. 指定表單詳細資料：
 
    - **名稱**：輸入表單的說明性名稱
@@ -250,7 +255,7 @@ FDM 中的表單元素出現在&#x200B;**內容瀏覽器**&#x200B;的「**資料
 3. 選擇「**以 HTML 格式預覽**」
 4. 將參數附加到 URL 來測試預填：
 
-   https://your-preview-url.com?`<bindreferencefield>`=`<value>`
+   `https://your-preview-url.com?<bindreferencefield>=<value>`
 
    **範例：**
 

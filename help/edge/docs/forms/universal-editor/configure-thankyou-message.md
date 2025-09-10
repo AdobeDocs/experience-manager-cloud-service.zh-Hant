@@ -5,10 +5,10 @@ feature: Adaptive Forms, Edge Delivery Services
 role: User
 level: Intermediate
 exl-id: cacd7b0a-aad0-4b5d-a6a0-e4bac4cb196d
-source-git-commit: ede73b19e4b50770f14ed52067c5fa04323b2ba4
-workflow-type: ht
-source-wordcount: '1133'
-ht-degree: 100%
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
+workflow-type: tm+mt
+source-wordcount: '1139'
+ht-degree: 99%
 
 ---
 
@@ -53,13 +53,19 @@ ht-degree: 100%
 
 在通用編輯器中開啟自適應表單，然後在工具列中按一下「**編輯表單屬性**」圖示。接著會開啟全方位表單屬性對話框。
 
+![表單屬性圖示](/help/forms/assets/ue-form-properties-icon.png)
+
 **2. 導覽至感謝設定**
 
 在「表單屬性」對話框中，選取「**感謝**」標籤來存取提交後設定選項。
 
+![通用編輯器表單屬性](/help/forms/assets/ue-form-properties.png)
+
 **3. 設定訊息顯示**
 
-從可用選項中選取「**顯示訊息**」。這樣會啟動具有 RTF 文字功能的訊息內容編輯器。
+從可用選項中選取&#x200B;**顯示訊息**。
+
+![感謝您](/help/edge/docs/forms/universal-editor/assets/thankyou-ue.png)
 
 **4. 建立您的訊息內容**
 
@@ -117,13 +123,19 @@ ht-degree: 100%
 
 在通用編輯器中開啟自適應表單，然後按一下「**編輯表單屬性**」圖示，開啟表單設定對話框。
 
+![表單屬性圖示](/help/forms/assets/ue-form-properties-icon.png)
+
 **2. 導覽至感謝設定**
 
 選取「表單屬性」對話框中的「**感謝**」標籤，存取重新導向設定選項。
 
+![通用編輯器表單屬性](/help/forms/assets/ue-form-properties.png)
+
 **3. 啟用重新導向功能**
 
 從可用的提交後選項中選擇「**重新導向至 URL**」。
+
+![重新導向](/help/edge/docs/forms/universal-editor/assets/redirect-ue.png)
 
 **4. 設定目標 URL**
 

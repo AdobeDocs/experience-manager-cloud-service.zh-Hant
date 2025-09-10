@@ -6,8 +6,8 @@ role: Admin, Architect, Developer
 level: Intermediate
 keywords: 發佈表單, Edge Delivery Services, 表單設定, CORS, 反向連結篩選器
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
-source-git-commit: 05c0d8fd16cc8bd805a0e8644d3145685fe6fa12
-workflow-type: ht
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
+workflow-type: tm+mt
 source-wordcount: '746'
 ht-degree: 100%
 
@@ -49,7 +49,7 @@ ht-degree: 100%
 1. **存取您的表單**：在通用編輯器中開啟您的自適應表單
 2. **開始發佈**：按一下工具列中的「**發佈**」圖示
 
-   ![按一下「發佈」](/help/forms/assets/publish-icon-eds-form.png)
+   ![按一下「發佈」](/help/edge/docs/forms/universal-editor/assets/publish-form-ue.png)
 
 +++
 
@@ -58,12 +58,12 @@ ht-degree: 100%
 
 1. **審閱發佈資產**：系統顯示所有正要發佈的資產，包括您的表單
 
-   ![一鍵式發佈](/help/forms/assets/on-click-publish.png)
+   ![一鍵式發佈](/help/edge/docs/forms/universal-editor/assets/publish-form-ue-review.png)
 
 2. **確認發佈**：按一下「**發佈**」以繼續
 3. **確認成功**：尋找確認訊息
 
-   ![發佈成功](/help/forms/assets/publish-success.png)
+   ![發佈成功](/help/edge/docs/forms/universal-editor/assets/publish-form-ue-success.png)
 
 +++
 
@@ -72,7 +72,7 @@ ht-degree: 100%
 
 **檢查狀態**：再次按一下「**發佈**」圖示即可檢視目前狀態
 
-![發佈狀態](/help/forms/assets/publish-status.png)
+![發佈狀態](/help/edge/docs/forms/universal-editor/assets/publish-form-ue-validate.png)
 
 **驗證查核點：**
 
@@ -91,7 +91,7 @@ ht-degree: 100%
 2. 按一下右上角的三點選單 (…)
 3. 選取「**取消發佈**」。
 
-![取消發佈表單](/help/forms/assets/unpublish--form.png)
+![取消發佈表單](/help/edge/docs/forms/universal-editor/assets/unpublish-ue.png)
 
 +++
 

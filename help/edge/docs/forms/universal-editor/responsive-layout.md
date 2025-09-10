@@ -6,15 +6,15 @@ feature: Edge Delivery Services
 role: User, Developer
 level: Beginner
 exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
-workflow-type: ht
-source-wordcount: '2382'
-ht-degree: 100%
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
+workflow-type: tm+mt
+source-wordcount: '2443'
+ht-degree: 94%
 
 ---
 
 
-# 使用通用編輯器建立回應式表單
+# 使用通用編輯器建立回應式Forms — 完整指南
 
 現代的網頁環境要求表單能夠在裝置規格和螢幕尺寸不斷擴大的環境中維持順暢運作。從大型的桌面顯示器，到小巧的智慧型手機螢幕，無論使用者選擇何種裝置，都希望獲得一致且直覺易用的體驗。建立回應式表單不再是選項，而是提供專業、可存取並達成最佳轉換成效之數位體驗的基本需求。
 
@@ -33,20 +33,21 @@ ht-degree: 100%
 - 回應式表單常見問題疑難排解
 - 最佳化表單以提高在行動裝置上的效能
 
-## 為什麼回應式表單如此重要
+<!--
+## Why Responsive Forms Are Important
 
-**使用者體驗影響：**
+**User Experience Impact:**
 
-- 超過 60% 的使用者使用行動裝置存取表單
-- 糟糕的行動體驗導致放棄填寫率增高 67%
-- 回應式表單可讓完成率提升最多 25%
+- Over 60% of users access forms on mobile devices
+- Poor mobile experiences result in a 67% higher abandonment rate
+- Responsive forms can increase completion rates by up to 25%
 
-**商業利益：**
+**Business Benefits:**
 
-- 表單完成率更高
-- 提升使用者滿意度
-- 加強無障礙合規性
-- 降低開發和維護成本
+- Higher form completion rates
+- Improved user satisfaction
+- Enhanced accessibility compliance
+- Lower development and maintenance costs-->
 
 >[!TIP]
 >
@@ -299,7 +300,7 @@ ht-degree: 100%
 
 **版面與可用性：**
 
-- 使用雙欄版面呈現相關欄位，充分運用加大的螢幕空間。
+- 對相關欄位使用兩欄式佈局以充分利用增加的熒幕空間。
 - 測試縱向與橫式檢視時的表單外觀和可用性。
 - 設計兼顧觸控和滑鼠輸入兩種方式，確保可以輕鬆存取所有控制功能。
 - 擴大內容區域的範圍，同時保持清晰的視覺層次與可讀性。
@@ -316,6 +317,40 @@ ht-degree: 100%
 - 為複雜表單提供進階驗證功能，並顯示清楚、詳細的錯誤訊息。
 
 +++
+
+## 使用媒體查詢中斷點設定自訂版面
+
+在使用&#x200B;**通用編輯器**&#x200B;為最適化Forms中的元件建立自訂配置時，您必須使用&#x200B;**CSS媒體查詢中斷點**&#x200B;來定義回應式行為。 這可確保表單可正確呈現不同的裝置和熒幕大小。
+
+**建議的中斷點(根據AEM核心元件)**
+
+| **裝置類型** | **建議的中斷點** |
+|-----------------|---------------------------|
+| **桌上型電腦** | `min-width: 1200px` |
+| **平板電腦** | `min-width: 768px and max-width: 1199px` |
+| **行動裝置** | `max-width: 767px` |
+
+**關鍵點**
+
+- 使用這些中斷點來控制元件在不同裝置上調整大小、棧疊或隱藏的方式。
+- 遵循您組織的回應式設計准則，以維持一致的UX。
+- 在多個裝置和方向上測試版面配置，以確保可用性和可存取性。
+
+```css
+/* Example: Stack form fields on smaller screens */
+@media (max-width: 767px) {
+  .custom-form-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+```
+
+>[!NOTE]
+>
+> 通用編輯器不提供用於定義回應式行為的UI。 所有版面配置自訂都必須透過CSS處理。
+
+
 
 ## 疑難排解
 

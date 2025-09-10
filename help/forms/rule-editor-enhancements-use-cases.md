@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 062ed441-6e1f-4279-9542-7c0fedc9b200
-source-git-commit: 80dde7ddaa08d752391b4004d7c93e5baac9716e
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
 workflow-type: tm+mt
 source-wordcount: '1975'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # 規則編輯器增強功能和使用案例
 
-<span class="preview">這些是透過我們的<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hant#new-features">發行前通道</a>提供的發行前功能。 這些增強功能也適用於Edge Delivery Services Forms。
+<span class="preview">這些是透過我們的<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">發行前通道</a>提供的發行前功能。 這些增強功能也適用於Edge Delivery Services Forms。
 
 本文介紹Adaptive Forms中規則編輯器的最新增強功能。 這些更新可協助您更輕鬆地定義表單行為，而不需撰寫自訂程式碼，並建立更動態、回應速度更快、更個人化的表單體驗。
 
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> 規則編輯器的增強功能也適用於Edge Delivery Services Forms 。
+> 增強功能也適用於Edge Delivery Services Forms[的](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)規則編輯器。
 
 現在，讓我們透過特定使用案例來詳細探索每個方法，以幫助您瞭解如何使用這些功能為使用者提供個人化體驗
 
@@ -92,7 +92,7 @@ ht-degree: 0%
 
 ## 支援規則中的動態變數
 
-增強型規則編輯器支援建立和使用動態（暫時）變數。 您可以使用內建的&#x200B;**設定變數值**&#x200B;和&#x200B;**取得變數值**&#x200B;函式，在表單的整個生命週期中設定及擷取這些變數。
+增強型規則編輯器支援建立和使用動態（暫時）變數。 您可以使用內建的&#x200B;**設定變數值**&#x200B;和&#x200B;**取得變數值**函式，在表單的整個生命週期中設定及擷取這些變數。
 這些變數：
 
 * 未隨表單資料一起提交。
@@ -118,13 +118,13 @@ ht-degree: 0%
 
 ![取得變數值](/help/forms/assets/getvalue.png)
 
-**總出貨成本**&#x200B;欄位會隨著使用者變更國家或數量而動態更新，以反映產品成本和出貨費用。
+**總出貨成本**欄位會隨著使用者變更國家或數量而動態更新，以反映產品成本和出貨費用。
 ![輸出](/help/forms/assets/getsetvalue-output.png)
 
 >[!NOTE]
 >
-> 您也可以在When條件中新增&#x200B;**Get Variable value**&#x200B;函式。
-> &#x200B;> ![條件](/help/forms/assets/when-get-variable.png){width=50%，height=50%，align=center}中的取得變數值函式
+> 您也可以在When條件中新增&#x200B;**Get Variable value**函式。
+> > ![條件](/help/forms/assets/when-get-variable.png){width=50%，height=50%，align=center}中的取得變數值函式
 
 此方法可啟用動態即時計算，而不會在表單中新增額外欄位，保持結構簡潔且方便使用。
 

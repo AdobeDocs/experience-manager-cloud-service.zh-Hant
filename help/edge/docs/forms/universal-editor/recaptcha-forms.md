@@ -6,9 +6,9 @@ keywords: 表單中的 reCAPTCHA, 在通用編輯器中使用 reCAPTCHA, 在表�
 role: Developer, Admin
 level: Intermediate
 exl-id: 1f28bd13-133f-487e-8b01-334be7c08a3f
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
-workflow-type: ht
-source-wordcount: '1290'
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
+workflow-type: tm+mt
+source-wordcount: '1281'
 ht-degree: 100%
 
 ---
@@ -34,7 +34,6 @@ Google reCAPTCHA 會區分人類使用者和自動機器人，能夠協助保護
 
 - AEM as a Cloud Service 製作存取權
 - 具有表單編輯權限的通用編輯器存取權
-- 註冊搶先體驗方案以取得 reCAPTCHA 功能
 
 ### 技術要求
 

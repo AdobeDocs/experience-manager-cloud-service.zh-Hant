@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: cfff846e594b39aa38ffbd3ef80cce1a72749245
-workflow-type: ht
-source-wordcount: '2609'
+source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
+workflow-type: tm+mt
+source-wordcount: '2608'
 ht-degree: 100%
 
 ---
@@ -157,7 +157,10 @@ AEM Code Sync 會自動同步您的 AEM 製作環境和 GitHub 存放庫之間�
 
    ```yaml
    mountpoints:
-     /: https://<aem-author>/bin/franklin.delivery/<owner>/<repository>/main
+     /: 
+     url: https://<aem-author>/bin/franklin.delivery/<owner>/<repository>/main
+     type: "markup" 
+     suffix: ".html" 
    ```
 
    **取代：**
@@ -184,9 +187,9 @@ AEM Code Sync 會自動同步您的 AEM 製作環境和 GitHub 存放庫之間�
 
 **驗證：**&#x200B;確認您的 GitHub 存放庫與 AEM 的連線。
 
-    >[!NOTE]
-    >
->有建置問題嗎？請參閱[疑難排解 GitHub 建置問題](#troubleshooting-github-build-issues)
+>[!NOTE]
+>
+> 有建置問題嗎？請參閱[疑難排解 GitHub 建置問題](#troubleshooting-github-build-issues)
 
 +++
 
@@ -626,13 +629,13 @@ AEM Code Sync 會自動同步您的 AEM 製作環境和 GitHub 存放庫之間�
    您的表單現已上線，網址：
 
    ```
-   https://<branch>--<repo>--<owner>.aem.page/content/<site-name>/
+   https://<branch>--<repo>--<owner>.aem.live/content/<site-name>/
    ```
 
    **範例 URL：**
 
    ```
-   https://main--my-forms-project--mycompany.aem.page/content/my-forms-project/
+   https://main--my-forms-project--mycompany.aem.live/content/my-forms-project/
    ```
 
    ![上線表單頁面](/help/edge/docs/forms/assets/publish-index-page.png)

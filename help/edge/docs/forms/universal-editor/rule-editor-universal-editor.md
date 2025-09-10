@@ -5,10 +5,10 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: e2bc958104bd9b75845ad2c213eec18d2560a3a4
+source-git-commit: 0d088d4e3b4e27fac0a05ff93a7fd01535bba6af
 workflow-type: tm+mt
-source-wordcount: '2780'
-ht-degree: 92%
+source-wordcount: '2824'
+ht-degree: 90%
 
 ---
 
@@ -165,13 +165,15 @@ ht-degree: 92%
 ![規則編輯器使用者介面](/help/edge/docs/forms/assets/rule-editor-interface.png)
 圖：完整的規則編輯器介面，並以數字標註各個元件
 
-- **元件標題和規則類型**：確認所選元件和使用中的規則類型。
-- **表單物件和函數面板**：
+1. **元件標題和規則類型**：確認所選元件和使用中的規則類型。
+2. **表單物件和函數面板**：
+
    - 表單物件：欄位和容器的階層視圖，以便在規則中進行參照
    - 函數：內建的數學、字串、日期和驗證輔助函數
-- **面板切換**：顯示/隱藏物件和函數面板，以便增加工作區範圍
-- **視覺化規則產生器**：拖放式、下拉式選單驅動的規則編寫器
-- **控制項**：「完成」(儲存)、「取消」(放棄)。儲存之前務必測試規則。
+
+3. **面板切換**：顯示/隱藏物件和函數面板，以便增加工作區範圍
+4. **視覺化規則產生器**：拖放式、下拉式選單驅動的規則編寫器
+5. **控制項**：「完成」(儲存)、「取消」(放棄)。儲存之前務必測試規則。
 
 +++
 
@@ -302,13 +304,13 @@ ht-degree: 92%
 
 +++
 
-+++ 步驟 1：建立基礎表單
++++ 步驟1：建立表單
 
 **目標**：建置包含所有欄位和初始設定的基礎表單。
 
 1. **開啟通用編輯器**：
    - 導覽至 AEM Sites 控制台，選取您的頁面，然後按一下「**編輯**」
-   - 確保您已正確設定[通用編輯器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=zh-Hant)
+   - 確保您已正確設定[通用編輯器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html)
 
 2. **依下列順序新增表單元件**：
    - 標題 (H2)：「稅額計算表」
@@ -533,6 +535,9 @@ export { getFullName, days };
 ![規則編輯器中的自訂函數](/help/edge/docs/forms/assets/custom-function-rule-editor.png)
 圖：在規則編輯器介面中選取及設定自訂函數
 
+>
+>
+> Edge Delivery Services Forms也提供規則編輯器的增強功能，包括自訂事件型規則、動態變數支援，以及API整合。 若要進一步瞭解這些增強功能及使用方法，請參閱[規則編輯器增強功能和使用案例](/help/forms/rule-editor-enhancements-use-cases.md)文章。
 
 **函數使用的最佳做法**：
 
@@ -727,7 +732,7 @@ UE![中的](/help/forms/assets/custom-function-in-ue.png){width=50%}自訂函式
 
 **其他資源**：
 
-- [通用編輯器文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=zh-Hant)提供更多相關內容
+- [通用編輯器文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html)提供更多相關內容
 - [Extension Manager 指南](/help/implementing/developing/extending/extension-manager.md)，協助啟用更多功能
 - [Edge Delivery Services 表單](/help/edge/docs/forms/overview.md)，提供全方位的表單製作指引
 
