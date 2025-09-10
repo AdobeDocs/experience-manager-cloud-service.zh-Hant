@@ -310,7 +310,7 @@ ht-degree: 90%
 
 1. **開啟通用編輯器**：
    - 導覽至 AEM Sites 控制台，選取您的頁面，然後按一下「**編輯**」
-   - 確保您已正確設定[通用編輯器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html)
+   - 確保您已正確設定[通用編輯器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=zh-Hant)
 
 2. **依下列順序新增表單元件**：
    - 標題 (H2)：「稅額計算表」
@@ -732,7 +732,7 @@ UE![中的](/help/forms/assets/custom-function-in-ue.png){width=50%}自訂函式
 
 **其他資源**：
 
-- [通用編輯器文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html)提供更多相關內容
+- [通用編輯器文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=zh-Hant)提供更多相關內容
 - [Extension Manager 指南](/help/implementing/developing/extending/extension-manager.md)，協助啟用更多功能
 - [Edge Delivery Services 表單](/help/edge/docs/forms/overview.md)，提供全方位的表單製作指引
 
