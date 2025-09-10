@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 597315a7d569ebd62243322c543627b7a3535a6b
+source-git-commit: c5a21f14bc3b09200f5513b1e1221c9dabb061af
 workflow-type: tm+mt
-source-wordcount: '2252'
-ht-degree: 19%
+source-wordcount: '2319'
+ht-degree: 21%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 19%
 
 薄的藍色輪廓會變成粗的藍色輪廓來指示選取，並且會出現游標。 進行變更，然後按下Enter/Return或在文字方塊外選取，以儲存變更。
 
-當您選取選取文字元件時，其詳細資料會顯示在[屬性面板](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)中。 您也可以在面板中編輯文字。
+當您選取文字元件時，其詳細資料會顯示在[屬性面板](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)中。 您也可以在面板中編輯文字。
 
 ![正在編輯屬性面板中的文字](assets/ue-editing-text-component-rail.png)
 
@@ -116,9 +116,9 @@ ht-degree: 19%
 
 >[!NOTE]
 >
->通用編輯器[根據其模型](/help/assets/content-fragments/content-fragments-models.md#validation)驗證內容片段欄位，可讓您強制執行資料完整性規則，例如規則運算式模式和唯一性限制。
+>通用編輯器[根據其模型驗證內容片段欄位](/help/assets/content-fragments/content-fragments-models.md#validation)，讓您能夠強制執行資料完整性規則，例如規則運算式模式和唯一條件限制。
 >
->這可在發佈之前確保您的內容符合特定業務要求。
+>這可在發佈之前確保您的內容符合特定業務需求。
 
 ### 新增元件到容器中 {#adding-components}
 
@@ -172,13 +172,27 @@ ht-degree: 19%
 
    ![重新排序元件](assets/ue-reordering-components.png)
 
-1. 拖曳的元件在內容樹狀結構中會變成灰色，而您的插入點會以藍線表示。 將元件鬆開並放在新位置中。
+1. 拖曳的元件在內容樹狀結構中會呈現灰色，而您的插入點會以藍線表示。 將元件鬆開並放在新位置中。
 
 元件會在內容樹和編輯器中重新排序。
 
 >[!NOTE]
 >
 >如果目標容器[元件篩選器](/help/implementing/universal-editor/filtering.md)允許選取的元件，則元件只能在容器之間移動。
+
+### 還原與重做 {#undo-redo}
+
+選取「復原」或「重做」按鈕，以復原或重做編輯器中上次的編輯。
+
+![復原圖示](assets/undo.png)
+![重做圖示](assets/redo.png)
+
+* 您可以執行復原和重做，以在內容中完成編輯、透過「屬性」面板完成編輯，以及新增、複製、移動和刪除區塊。
+* 還原和取消復原僅限於目前瀏覽器工作階段。
+
+>[!TIP]
+>
+>分別使用快速鍵`Command-Z`或`Shift-Command-Z`來復原或重做。
 
 ## 預覽內容 {#previewing-content}
 
@@ -319,9 +333,9 @@ ht-degree: 19%
 
 若要瞭解如何使用通用編輯器發佈內容，請參閱本檔案。
 
-* [使用通用編輯器發佈內容](publishing.md) — 瞭解通用編輯器如何發佈內容，以及您的應用程式如何處理已發佈的內容。
+* [使用通用編輯器發佈內容](publishing.md) - 了解通用編輯器如何發佈內容，以及您的應用程式如何處理已發佈的內容。
 
-若要深入瞭解通用編輯器的技術細節，請參閱這些開發人員檔案。
+若要了解更多關於通用編輯器的技術細節，請參閱這些開發人員文件。
 
 * [通用編輯器簡介](/help/implementing/universal-editor/introduction.md) — 瞭解通用編輯器如何在任何實作中啟用編輯任何內容的任何方面，以便您提供卓越的體驗並提高內容速度。
 * [AEM 中 Universal Editor 快速入門](/help/implementing/universal-editor/getting-started.md) - 了解如何存取 Universal Editor，以及如何開始檢測您的第一個 AEM 應用程式以使用它。

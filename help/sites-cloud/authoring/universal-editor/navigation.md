@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 91799e32f363aca268a89a7eebcb5001c5295cc5
+source-git-commit: c5a21f14bc3b09200f5513b1e1221c9dabb061af
 workflow-type: tm+mt
-source-wordcount: '1782'
-ht-degree: 26%
+source-wordcount: '1854'
+ht-degree: 22%
 
 ---
 
@@ -79,7 +79,7 @@ Experience Cloud 標頭會始終顯示在畫面頂端。這是一個錨點，說
 
 #### Experience Manager {#experience-manager}
 
-選取標頭左側的Adobe Experience Cloud連結，即可導覽至Experience Manager解決方案的根目錄，以存取如[Cloud Manager](/help/onboarding/cloud-manager-introduction.md)、[Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)和[Software Distribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hant)之類的工具。
+選取標頭左側的Adobe Experience Cloud連結，即可導覽至Experience Manager解決方案的根目錄，以存取如[Cloud Manager](/help/onboarding/cloud-manager-introduction.md)、[Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)和[Software Distribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)之類的工具。
 
 ![全域導覽按鈕](assets/global-navigation.png)
 
@@ -89,15 +89,9 @@ Experience Cloud 標頭會始終顯示在畫面頂端。這是一個錨點，說
 
 ![組織指示器](assets/organization.png)
 
-#### 解決方案 {#solutions}
+#### 支援中心 {#help}
 
-點選或按一下解決方案切換器可讓您快速跳轉到其他 Experience Cloud 解決方案。
-
-![解決方案切換器](assets/solutions.png)
-
-#### 說明 {#help}
-
-說明圖示可快速存取學習和支援資源。
+說明中心圖示可讓您快速存取學習與支援資源。
 
 ![說明](assets/help.png)
 
@@ -107,9 +101,15 @@ Experience Cloud 標頭會始終顯示在畫面頂端。這是一個錨點，說
 
 ![通知](assets/notifications.png)
 
-#### 使用者屬性 {#user-properties}
+#### 應用程式 {#solutions}
 
-選取代表您使用者的圖示以存取您的使用者設定。如果您沒有設定使用者圖片，則會隨機分配圖示。
+點選或按一下應用程式切換器，可讓您快速跳至其他Experience Cloud解決方案。
+
+![應用程式切換器](assets/solutions.png)
+
+#### 帳戶 {#user-properties}
+
+選取代表您的使用者的圖示，以存取您的帳戶設定。 如果您沒有設定使用者圖片，則會隨機分配圖示。
 
 ![使用者屬性](assets/user-properties.png)
 
@@ -135,6 +135,8 @@ Universal Editor工具列永遠出現在熒幕頂端[Experience Cloud標題](#ex
 >
 >您要使用通用編輯器編輯的任何頁面都必須進行[檢測以支援通用編輯器](/help/implementing/universal-editor/getting-started.md)。
 
+「**快速連結**」區段提供您說明資源，「**最近**」區段提供您最近使用Universal Editor開啟之頁面的連結。
+
 #### 位置列 {#location-bar}
 
 位置列會顯示您正在編輯頁面的網址。選取「 」即可輸入其他頁面要編輯的位址。
@@ -149,21 +151,32 @@ Universal Editor工具列永遠出現在熒幕頂端[Experience Cloud標題](#ex
 >
 >您要使用通用編輯器編輯的任何頁面都必須進行[檢測以支援通用編輯器](/help/implementing/universal-editor/getting-started.md)。
 
-#### 驗證標題設定 {#authentication-settings}
+#### 還原與重做 {#undo-redo}
 
-如果您需要[設定本機開發目的的自訂驗證標頭](/help/implementing/universal-editor/developer-overview.md#auth-header)，請選取驗證標頭設定圖示。
+選取「復原」或「重做」按鈕，以復原或重做編輯器中上次的編輯。 如需詳細資訊，請參閱檔案[使用通用編輯器編寫內容](/help/sites-cloud/authoring/universal-editor/authoring.md#undo-redo)。
+
+![復原圖示](assets/undo.png)
+![重做圖示](assets/redo.png)
+
+>[!TIP]
+>
+>分別使用快速鍵`Command-Z`或`Shift-Command-Z`來復原或重做。
+
+#### 驗證標頭 {#authentication-settings}
+
+如果您需要[設定本機開發目的的自訂驗證標頭](/help/implementing/universal-editor/developer-overview.md#auth-header)，請選取驗證標頭圖示。
 
 ![驗證標頭設定按鈕](assets/authentication-header-settings.png)
 
-#### 模擬器設定 {#emulator}
+#### 回應式模式 {#emulator}
 
-選取模擬圖示以定義Universal Editor呈現頁面的方式。
+選取回應式模式圖示以定義通用編輯器轉譯頁面的方式。
 
-![模擬器圖示](assets/emulator.png)
+![回應模式圖示](assets/emulator.png)
 
-點選或按一下模擬圖示即可顯示選項。
+點選或按一下回應式模式圖示會顯示選項。
 
-![模擬選項](assets/emulation-options.png)
+![回應式模式選項](assets/emulation-options.png)
 
 依預設，編輯器會在案頭版面配置中開啟，其中高度和寬度會由瀏覽器自動定義。
 
@@ -173,7 +186,7 @@ Universal Editor工具列永遠出現在熒幕頂端[Experience Cloud標題](#ex
 * 定義寬度和高度
 * 變更方向
 
-#### 預覽模式 {#preview-mode}
+#### 預覽 {#preview-mode}
 
 在預覽模式下，在編輯器中呈現的頁面就是發佈服務所顯示的樣子。這可讓內容作者按一下連結等方式來導覽內容。
 

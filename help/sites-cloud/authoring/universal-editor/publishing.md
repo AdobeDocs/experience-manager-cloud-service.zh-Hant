@@ -5,10 +5,10 @@ exl-id: aee34469-37c2-4571-806b-06c439a7524a
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 3288edacba909335f8109eee7e1e793abe5a8343
+source-git-commit: fd52e51c336e65ae698c5102cbe00b90e7038b5e
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 31%
+source-wordcount: '563'
+ht-degree: 33%
 
 ---
 
@@ -31,12 +31,12 @@ ht-degree: 31%
 
 1. 在Universal Editor中，點選或按一下Universal Editor工具列中的[ **Publish**&#x200B;圖示。](/help/sites-cloud/authoring/universal-editor/navigation.md#publish)
 1. 如果您有可用的[預覽服務](/help/sites-cloud/authoring/sites-console/previewing-content.md)，您可以選擇將內容發佈到的位置： **[預覽](/help/sites-cloud/authoring/sites-console/previewing-content.md)** （如果有的話）或&#x200B;**發佈**。
-1. **專案**&#x200B;區段列出包含在出版物中的內容，包括：
+1. **專案**&#x200B;區段會列出出版物中包含的內容。 點選或按一下「**檢視**」以顯示詳細資料，包括：
    * **新的**&#x200B;專案尚未發佈。
    * 已發佈&#x200B;**已修改的**&#x200B;內容，但自上次發佈後已修改。
    * **已發佈**&#x200B;自該發佈以來未曾修改的內容。
 
-   視需要點選或按一下這些專案旁的核取方塊，以包含/排除它們。 點選或按一下「延伸&#x200B;**&#x200B;**」，檢視三個類別總計中包含的個別專案，以及能夠個別加入/排除它們。
+   視需要點選或按一下這些專案旁的核取方塊，以包含/排除它們。 點選或按一下「延伸&#x200B;****」，檢視三個類別總計中包含的個別專案，以及能夠個別加入/排除它們。
 
    ![發佈專案](assets/publish-items.png)
 
@@ -56,7 +56,7 @@ ht-degree: 31%
 
 ## 從網站主控台發佈與取消發佈 {#publishing-sites-console}
 
-您也可以從Sites主控台[&#128279;](/help/sites-cloud/authoring/sites-console/publishing-pages.md)發佈，當您想要發佈多個內容頁面，或排程發佈或取消發佈時，這會很有用。
+您也可以從Sites主控台[發佈](/help/sites-cloud/authoring/sites-console/publishing-pages.md)，當您想要發佈多個內容頁面，或排程發佈或取消發佈時，這會很有用。
 
 ## 其他資源 {#additional-resources}
 
@@ -64,9 +64,9 @@ ht-degree: 31%
 
 * [使用 Universal Editor 編寫內容](authoring.md) - 了解內容作者使用 Universal Editor 建立內容有多簡單和直覺。
 
-若要深入瞭解通用編輯器的技術細節，請參閱這些開發人員檔案。
+若要了解更多關於通用編輯器的技術細節，請參閱這些開發人員文件。
 
-* [Universal Editor 簡介](/help/implementing/universal-editor/introduction.md) - 了解 Universal Editor 如何在任意實作中編輯任何方面的內容，以便提供卓越的體驗、提高內容速度並提供最先進的開發人員體驗。
+* [通用編輯器簡介](/help/implementing/universal-editor/introduction.md) - 了解通用編輯器如何能在任何實施中編輯任何內容的任何層面，讓您可以提供卓越的體驗、提升內容速度，並提供最尖端的開發人員體驗。
 * [AEM 中 Universal Editor 快速入門](/help/implementing/universal-editor/getting-started.md) - 了解如何存取 Universal Editor，以及如何開始檢測您的第一個 AEM 應用程式以使用它。
 * [Universal Editor 架構](/help/implementing/universal-editor/architecture.md) - 了解 Universal Editor 的架構，以及資料如何在其服務和階層之間流動。
 * [屬性和類型](/help/implementing/universal-editor/attributes-types.md) - 了解 Universal Editor 需要的資料屬性和類型。

@@ -4,10 +4,10 @@ description: Adobe 仍然支援頁面編輯器，但通用編輯器為您的新�
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
-source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
-workflow-type: ht
-source-wordcount: '1069'
-ht-degree: 100%
+source-git-commit: fd52e51c336e65ae698c5102cbe00b90e7038b5e
+workflow-type: tm+mt
+source-wordcount: '1068'
+ht-degree: 99%
 
 ---
 
@@ -63,7 +63,7 @@ Adobe 深知[頁面編輯器](/help/sites-cloud/authoring/page-editor/introducti
 | 剪下/複製貼上區塊 | [!BADGE 可用]{type=Positive} |  | [!BADGE 無法使用]{type=Negative} | 已規劃 |
 | 套用樣式 | [!BADGE 可用]{type=Positive} | 可以使用[樣式系統](/help/sites-cloud/authoring/page-editor/style-system.md)將樣式套用至元件上。 | [!BADGE 可用]{type=Positive} | 可以使用常規元件 (或內容片段) 屬性套用樣式。通用編輯器中無法使用相同的樣式選取器，但透過多重選取小工具可以達到非常相似的使用者體驗。 |
 | 套用版面 | [!BADGE 可用]{type=Positive} | 網站必須實施 [AEM 回應式網格](/help/implementing/developing/introduction/responsive-design.md)，讓作者能夠跨三個預先定義的中斷點調整元件大小。 | [!BADGE 可用]{type=Positive} | 可以使用常規元件 (或內容片段) 屬性套用版面，但不支援回應式網格。 |
-| 還原及取消復原 | [!BADGE 可用]{type=Positive} |  | [!BADGE 無法使用]{type=Negative} | 已規劃 |
+| 還原及取消復原 | [!BADGE 可用]{type=Positive} |  | [!BADGE 可用]{type=Positive} |  |
 | 發佈 (以及預覽) | [!BADGE 可用]{type=Positive} |  | [!BADGE 可用]{type=Positive} |  |
 | [啟動工作流程](/help/sites-cloud/authoring/workflows/overview.md) | [!BADGE 可用]{type=Positive} |  | [!BADGE 可用]{type=Positive} | 可以用作擴充功能 |
 | 評論 | [!BADGE 可用]{type=Positive} | 使用[註解](/help/sites-cloud/authoring/page-editor/annotations.md) | [!BADGE 無法使用]{type=Negative} | 已規劃 |
@@ -87,7 +87,7 @@ Adobe 深知[頁面編輯器](/help/sites-cloud/authoring/page-editor/introducti
 通用編輯器具有許多優勢，是適合新專案的絕佳解決方案。
 
 * **視覺化編輯：**&#x200B;與頁面編輯器一樣，作者可以直接在預覽中編輯內容，並立即看到其變更如何影響訪客體驗。
-* **符合未來需求：** AEM 的路徑圖優先發展作為視覺化編輯器的通用編輯器。採用通用編輯器可以確保獲得最新的創新和增強功能。
+* **未來考量：** AEM的藍圖會優先將通用編輯器設為視覺化編輯器。 採用通用編輯器可以確保獲得最新的創新和增強功能。
 * **更簡單的整合：**&#x200B;使用通用編輯器不需要 AEM 特定的 SDK，減少過度依賴技術堆疊的情形。
 * **自備應用程式：**&#x200B;通用編輯器支援任何網頁框架或架構，不需要複雜的重構過程即可採用。
 * **可擴充性：**&#x200B;因為擁有強大的[擴充框架，](/help/implementing/universal-editor/extending.md)包括與生成式 AI、Workfront 等的整合，使通用編輯器更具優勢。
