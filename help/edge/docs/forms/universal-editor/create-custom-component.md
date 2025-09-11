@@ -4,7 +4,7 @@ description: 為 EDS Forms 建立自訂元件
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: 1d59791561fc6148778adccab902c8e727adc641
+source-git-commit: 6a63b4f839516a2ebc1eec641eb36315efca6dd5
 workflow-type: tm+mt
 source-wordcount: '2120'
 ht-degree: 4%
@@ -175,6 +175,8 @@ subscribe(fieldDiv, formId, (_fieldDiv, fieldModel) => { fieldModel.subscribe(()
 #### 1.1檔案和資料夾
 
 第一步是設定自訂元件的必要檔案，並將其連線到存放庫中的程式碼。 此程式由&#x200B;**AEM Forms Scaffolder CLI**&#x200B;自動完成，因此可以更快速地架設及連線必要的檔案。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3474752)
 
 1. 開啟終端機，並導覽至表單專案的根目錄。
 2. 執行以下命令：
@@ -520,13 +522,13 @@ git add . && git commit -m "Add card custom component" && git push
 
 10. **更新_component-definition.json**：在`models/_component-definition.json`中，以下列方式使用物件更新群組中具有`id custom-components`的陣列：
 
-    ```javascript
-    {
-    "...":"../blocks/form/components/cards/_cards.json#/definitions"
-    }
-    ```
+   ```javascript
+   {
+   "...":"../blocks/form/components/cards/_cards.json#/definitions"
+   }
+   ```
 
-    這是為了提供將與其他元件一起建置的新卡片元件的參考
+   這是為了提供將與其他元件一起建置的新卡片元件的參考
 
 11. **執行組建:json指令碼**：執行`npm run build:json`，將所有元件JSON定義編譯並合併成單一檔案，由伺服器提供服務。 這可確保您的新元件的結構描述包含在合併的輸出中。
 
