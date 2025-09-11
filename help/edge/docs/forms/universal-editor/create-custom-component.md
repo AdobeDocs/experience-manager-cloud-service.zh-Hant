@@ -4,9 +4,9 @@ description: 為 EDS Forms 建立自訂元件
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: 6a63b4f839516a2ebc1eec641eb36315efca6dd5
+source-git-commit: 476841e4e7d00679bd6fc75bc1dc346f9e01fdd6
 workflow-type: tm+mt
-source-wordcount: '2120'
+source-wordcount: '2121'
 ht-degree: 4%
 
 ---
@@ -443,7 +443,7 @@ export default function decorate(element, fieldJson, container, formId) {
 
 ![卡片自訂元件](/help/edge/docs/forms/universal-editor/assets/cc-ue-card-component.png)
 
-## 提交和推送變更
+### 3.提交和推送變更
 
 在您針對自訂元件實作JavaScript和CSS並在本機驗證後，請認可變更並將其推送至您的Git存放庫。
 
@@ -453,7 +453,7 @@ git add . && git commit -m "Add card custom component" && git push
 
 您僅需幾個簡單步驟，即可成功建立複雜的自訂卡片選取元件。
 
-## 建立自訂元件的手動或舊式方法
++++ ##建立自訂元件的手動或舊式方法
 
 舊版的方法是手動遵循以下所述的步驟：
 
@@ -522,13 +522,13 @@ git add . && git commit -m "Add card custom component" && git push
 
 10. **更新_component-definition.json**：在`models/_component-definition.json`中，以下列方式使用物件更新群組中具有`id custom-components`的陣列：
 
-    ```javascript
-    {
-    "...":"../blocks/form/components/cards/_cards.json#/definitions"
-    }
-    ```
+   ```javascript
+   {
+   "...":"../blocks/form/components/cards/_cards.json#/definitions"
+   }
+   ```
 
-    這是為了提供將與其他元件一起建置的新卡片元件的參考
+   這是為了提供將與其他元件一起建置的新卡片元件的參考
 
 11. **執行組建:json指令碼**：執行`npm run build:json`，將所有元件JSON定義編譯並合併成單一檔案，由伺服器提供服務。 這可確保您的新元件的結構描述包含在合併的輸出中。
 
