@@ -4,10 +4,10 @@ description: 了解 Adobe Experience Manager as a Cloud Service 中 Cloud Manage
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 8092f18ec350a68bc192a11afbd0ca440f72e282
+source-git-commit: 67fbd48d8cf4ac58d3bcff1eb314045b4ebd24b3
 workflow-type: tm+mt
-source-wordcount: '1137'
-ht-degree: 86%
+source-wordcount: '1138'
+ht-degree: 95%
 
 ---
 
@@ -21,25 +21,25 @@ ht-degree: 86%
 
 ## 發行日期 {#release-date}
 
-AEM as a Cloud Service中的Cloud Manager 2025.9.0發行日期是2025年9月4日星期四。
+AEM as a Cloud Service 中 Cloud Manager 2025.9.0 的發行日期是 2025 年 9 月 4 日星期四。
 
-下一個預計發行日期為2025年10月2日星期四。
+下一個版本預計於 2025 年 10 月 2 日 (星期四) 發行。
 
 ## 新增功能 {#what-is-new}
 
-* **手動續約Adobe管理的網域驗證憑證**
+* **Adobe 管理的網域驗證憑證手動續約**
 
-  您現在可以從Cloud Manager或公用API手動續約Adobe管理的網域驗證(DV)憑證，以主動重新整理憑證。<!-- CMGR-68738 -->
+  您現在可以從Cloud Manager或公用API手動更新失敗的Adobe管理網域驗證(DV)憑證，以主動重新整理憑證。<!-- CMGR-68738 -->
 
-  ![SSL憑證續約](/help/implementing/cloud-manager/release-notes/assets/ssl-certificate-adobedv-renew.png)
+  ![SSL 憑證續約](/help/implementing/cloud-manager/release-notes/assets/ssl-certificate-adobedv-renew.png)
 
 * **現在已新增Azure DevOps （私人存放庫）的支援**
 
-  檔案更新包含使用Azure DevOps自攜Git和提取請求驗證的設定步驟。 請參閱[在Cloud Manager中新增外部存放庫](/help/implementing/cloud-manager/managing-code/external-repositories.md)。
+  文件更新內容包括 Azure DevOps 搭配自備 Git 的設定步驟和提取請求驗證。請參閱[在 Cloud Manager 中新增外部存放庫](/help/implementing/cloud-manager/managing-code/external-repositories.md)。
 
 * **將您自己的Git (BYOG)支援延伸至設定管道（私人存放庫）**
 
-  Cloud Manager現在支援在GitHub、Bitbucket、Azure DevOps和GitLab中使用私人存放庫來設定管道。 此支援可進一步加快開發週期。 檢視私人存放庫的[提取要求檢查](/help/implementing/cloud-manager/managing-code/github-check-config.md)。
+  Cloud Manager 現在支援 GitHub、Bitbucket、Azure DevOps 及 GitLab 的私人存放庫設定管道。此支援可進一步加快開發週期。 請參閱[私人存放庫的提取請求檢查](/help/implementing/cloud-manager/managing-code/github-check-config.md)
 
 <!--
 ### Staging-Only and Production-Only Pipelines {#staging-production-only-pipelines}
@@ -135,13 +135,13 @@ If you are interested in testing this new feature and sharing your feedback, sen
 
 <!-- If you are interested in testing this new feature and sharing your feedback, send an email to [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) from your email address associated with your Adobe ID. -->
 
-### 新增Edge Delivery設定管道 {#add-eds-pipeline}
+### 新增 Edge Delivery 設定管道 {#add-eds-pipeline}
 
 現在，使用 Edge Delivery Services 建置的網站已支援設定管道，所以在 Cloud Service 環境以外也可以使用這項功能。您可以使用&#x200B;**設定管道**&#x200B;來管理設定，例如流量篩選規則和 Web 應用程式防火牆 (WAF) 設定等 (如適用)。請參閱[支援的設定](/help/operations/config-pipeline.md#configurations)。
 
 **最近的增強功能**
 
-* Edge Delivery設定管道現在透過Cloud Manager管道變數支援秘密。
+* Edge Delivery 設定管道現在透過 Cloud Manager 管道變數來支援機密。
 * 現在，Edge Delivery Services 管道會在「**已部署程式碼**」欄中顯示「**設定**」，方便您立即識別僅限設定的部署。<!-- CMGR‑69681 -->
 * 若方案包含至少一個 Edge Delivery Services 網站和一個對應的網域，Cloud Manager 便會顯示「**新增 Edge Delivery 管道**」。否則，該選項會顯示為停用，並透過工具提示說明未達到哪些要求。<!-- CMGR‑69680 -->
 * 「**Edge Delivery**」索引標籤顯示一個新的 **Edge Delivery 管道**&#x200B;小工具，其中列出每個管道的名稱、狀態、存放庫和分支。<!-- (CMGR-69052) -->
@@ -152,7 +152,7 @@ If you are interested in testing this new feature and sharing your feedback, sen
 
   ![篩選器面板顯示新的傳遞類型包括邊緣傳遞與發佈傳遞](/help/implementing/cloud-manager/release-notes/assets/filter-delivery-type.png)
 
-![Add Edge Delivery pipeline in Add Pipeline drop-down list](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *從&#x200B;**計劃概觀**&#x200B;頁面的&#x200B;**管道**&#x200B;卡片新增 Edge Delivery 管道。*
+![Add Edge Delivery pipeline in Add Pipeline drop-down list](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *從&#x200B;**計劃概觀**頁面的&#x200B;**管道**卡片新增 Edge Delivery 管道。*
 
 ![Add Edge Delivery pipeline dialog box](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *新增 Edge Delivery 管道對話框。*
 
@@ -162,7 +162,7 @@ If you are interested in testing this new feature and sharing your feedback, sen
 
 ## 錯誤修正 {#bug-fixes}
 
-9月的Cloud Manager版本沒有重大錯誤修正。
+9 月的 Cloud Manager 版本沒有重大錯誤修正。
 
 
 <!-- ## Known issues {#known-issues} -->
