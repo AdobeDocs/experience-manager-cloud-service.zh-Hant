@@ -4,9 +4,9 @@ description: 了解如何使用 Git 子模組在建置期間將橫跨多個不�
 exl-id: fa5b0f49-4b87-4f39-ad50-7e62094d85f4
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
+source-git-commit: 8a53bef8bdf592869c895cbaca1e79034e52f856
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '394'
 ht-degree: 24%
 
 ---
@@ -68,7 +68,7 @@ $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/proje
 
 另請參閱[Git參考手冊](https://git-scm.com/book/en/v2/Git-Tools-Submodules)，瞭解有關Git子模組的詳細資訊。
 
-## 使用說明 {#usage-notes}
+## Adobe存放庫的使用說明 {#usage-notes-recommendations-adobe-repos}
 
 * Git URL必須完全符合上節所述語法。
 * 僅支援分支根部的子模組。
@@ -94,4 +94,4 @@ $ git submodule add -b main https://git.cloudmanager.adobe.com/ProgramName/proje
 
 * 子模組Git URL可以是HTTPS或SSH格式，但必須指向GitHub.com存放庫。 不支援將Adobe存放庫子模組新增至GitHub彙總存放庫或反向。
 * GitHub子模組必須可由Adobe GitHub應用程式存取。
-* [透過 Adobe 託管的存放庫使用 Git 子模組的限制](#limitations-recommendations)也適用。
+* [透過 Adobe 託管的存放庫使用 Git 子模組的限制](#usage-notes-recommendations-adobe-repos)也適用。
