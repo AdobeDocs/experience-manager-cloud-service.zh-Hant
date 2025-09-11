@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: c5a21f14bc3b09200f5513b1e1221c9dabb061af
+source-git-commit: d8a57131492a7e0d23b3ad803ea773f3ad7501cb
 workflow-type: tm+mt
-source-wordcount: '2319'
+source-wordcount: '2422'
 ht-degree: 21%
 
 ---
@@ -193,6 +193,24 @@ ht-degree: 21%
 >[!TIP]
 >
 >分別使用快速鍵`Command-Z`或`Shift-Command-Z`來復原或重做。
+
+### 複製並貼上 {#copy-paste}
+
+您可以複製並貼上[容器內的元件。](/help/implementing/universal-editor/field-types.md#container)只有在相同頁面中且[目標容器允許貼上元件時，才能進行此作業。](/help/implementing/universal-editor/filtering.md)
+
+![復製圖示](assets/copy.png)
+![貼上圖示](assets/paste.png)
+
+1. 在編輯器或內容樹中選取元件。
+1. **複製**&#x200B;圖示會出現在[屬性面板中。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel)點選或按一下它。
+1. 屬性面板中會顯示&#x200B;**貼上**&#x200B;圖示。
+1. 選取您要貼上複製元件的元件&#x200B;_after_。
+1. 點選或按一下「貼上」。
+1. 複製的元件會在&#x200B;_之後貼上_&#x200B;選取的元件。
+
+>[!TIP]
+>
+>分別使用快速鍵`Command-C`或`Command-V`來複製或貼上。
 
 ## 預覽內容 {#previewing-content}
 

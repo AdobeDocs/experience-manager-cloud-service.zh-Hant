@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: c5a21f14bc3b09200f5513b1e1221c9dabb061af
+source-git-commit: 8205014a07b3683d6dd55f1632f5ac06a62e2337
 workflow-type: tm+mt
-source-wordcount: '1854'
+source-wordcount: '1894'
 ht-degree: 22%
 
 ---
@@ -79,7 +79,7 @@ Experience Cloud 標頭會始終顯示在畫面頂端。這是一個錨點，說
 
 #### Experience Manager {#experience-manager}
 
-選取標頭左側的Adobe Experience Cloud連結，即可導覽至Experience Manager解決方案的根目錄，以存取如[Cloud Manager](/help/onboarding/cloud-manager-introduction.md)、[Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)和[Software Distribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hant)之類的工具。
+選取標頭左側的Adobe Experience Cloud連結，即可導覽至Experience Manager解決方案的根目錄，以存取如[Cloud Manager](/help/onboarding/cloud-manager-introduction.md)、[Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)和[Software Distribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)之類的工具。
 
 ![全域導覽按鈕](assets/global-navigation.png)
 
@@ -338,6 +338,19 @@ Universal Editor提供可自訂且可擴充的撰寫體驗。 如果您在工具
 >[!TIP]
 >
 >使用快速鍵`Shift+Backspace`從容器中刪除選取的元件。
+
+##### 複製並貼上 {#copy-paste}
+
+您可以複製並貼上[容器內的元件。](/help/implementing/universal-editor/field-types.md#container)
+
+![復製圖示](assets/copy.png)
+![貼上圖示](assets/paste.png)
+
+>[!TIP]
+>
+>分別使用快速鍵`Command-C`或`Command-V`來複製或貼上。
+
+如需詳細資訊，請參閱檔案[使用通用編輯器編寫內容](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste)。
 
 #### 其他按鈕 {#additional-properties-panel-buttons}
 

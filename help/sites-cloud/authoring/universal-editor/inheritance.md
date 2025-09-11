@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 2a1b87c2-29b9-4689-9a15-e17942439160
-source-git-commit: 9941c652a1509934662cdaae6d187d1a28a1cc31
+source-git-commit: 2099a1aecd30eaa2ca3ca33a13729817a30b6c3f
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '524'
 ht-degree: 3%
 
 ---
@@ -48,7 +48,7 @@ MSM和Launches是功能強大的工具，可協助您使用繼承來重複使用
 
 * [即時副本總覽主控台](/help/sites-cloud/administering/msm/live-copy-overview.md)
 * [啟動主控台](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
-* 使用[頁面屬性視窗](/help/sites-cloud/authoring/sites-console/page-properties.md)的&#x200B;**即時副本**&#x200B;索引標籤上的&#x200B;**重設**&#x200B;按鈕。
+* 使用&#x200B;**頁面屬性視窗**&#x200B;的&#x200B;**即時副本**&#x200B;索引標籤上的[重設](/help/sites-cloud/authoring/sites-console/page-properties.md)按鈕。
 
 Universal Editor不會影響繼承的基礎機制。 如需繼承如何運作的詳細資訊，請參閱下列檔案。
 
@@ -67,4 +67,3 @@ Universal Editor不會影響繼承的基礎機制。 如需繼承如何運作的
 
 * 若要還原單一元件的繼承，必須啟用&#x200B;**AEM Multi-Site-Management (MSM) Extension**。
 * 若要取得視覺化意見回饋，以檢視哪些元件的繼承已停用，以及哪些元件仍保留繼承，則必須啟用&#x200B;**AEM多網站管理(MSM)擴充功能**。
-* 這些功能目前僅限於頁面中的元件，尚未套用至[內容片段](/help/sites-cloud/administering/content-fragments/overview.md)，儘管這些片段也具有MSM和Launch功能。
