@@ -141,7 +141,7 @@ If you are interested in testing this new feature and sharing your feedback, sen
 
 **最近的增強功能**
 
-* Edge Delivery 設定管道現在透過 Cloud Manager 管道變數來支援機密。
+* Edge Delivery 設定管道現在透過 Cloud Manager 管道變數來支援密碼。
 * 現在，Edge Delivery Services 管道會在「**已部署程式碼**」欄中顯示「**設定**」，方便您立即識別僅限設定的部署。<!-- CMGR‑69681 -->
 * 若方案包含至少一個 Edge Delivery Services 網站和一個對應的網域，Cloud Manager 便會顯示「**新增 Edge Delivery 管道**」。否則，該選項會顯示為停用，並透過工具提示說明未達到哪些要求。<!-- CMGR‑69680 -->
 * 「**Edge Delivery**」索引標籤顯示一個新的 **Edge Delivery 管道**&#x200B;小工具，其中列出每個管道的名稱、狀態、存放庫和分支。<!-- (CMGR-69052) -->
@@ -152,7 +152,7 @@ If you are interested in testing this new feature and sharing your feedback, sen
 
   ![篩選器面板顯示新的傳遞類型包括邊緣傳遞與發佈傳遞](/help/implementing/cloud-manager/release-notes/assets/filter-delivery-type.png)
 
-![Add Edge Delivery pipeline in Add Pipeline drop-down list](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *從&#x200B;**計劃概觀**&#x200B;頁面的&#x200B;**管道**&#x200B;卡片新增 Edge Delivery 管道。*
+![Add Edge Delivery pipeline in Add Pipeline drop-down list](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *從&#x200B;**計劃概觀**頁面的&#x200B;**管道**卡片新增 Edge Delivery 管道。*
 
 ![Add Edge Delivery pipeline dialog box](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *新增 Edge Delivery 管道對話框。*
 
