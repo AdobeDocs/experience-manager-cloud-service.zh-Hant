@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 source-git-commit: 0d2164920ca44ee6c872fdfe2090760a1506215d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1961'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 86%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440931?quality=12&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -81,41 +81,41 @@ Content Hub 現在可以更快速地發現您所需的資產。使用新的批�
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### Experience Manager Forms中的新功能 {#new-features-forms}
+### Experience Manager Forms 的新功能 {#new-features-forms}
 
-**日期與時間輸入元件**
+**日期和時間輸入元件**
 
-[日期與時間元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component)現已可用，可讓使用者使用行事曆和時鐘介面，或是以支援的格式手動輸入值，來選取日期與時間。
+現在提供[日期和時間元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component)，讓使用者可以使用行事曆和時鐘介面選取日期和時間，或使用受支援的格式手動輸入數值。
 
-**加強檔案上傳的錯誤處理**
+**增強檔案上傳的錯誤處理功能**
 
-[檔案附件元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab)現在會根據允許清單自動驗證上傳的檔案型別。 如果使用者以不支援的格式上傳檔案，該表單將在提交過程中顯示錯誤。此元件也檢查檔案內容以驗證其類型，增強表單的整體安全性。
+[檔案附件元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab)現在會自動根據允許清單來驗證上傳的檔案類型。如果使用者以不支援的格式上傳檔案，該表單將在提交過程中顯示錯誤。此元件也檢查檔案內容以驗證其類型，增強表單的整體安全性。
 
-自訂提交動作的&#x200B;**指定錯誤回應**
+**自訂提交動作的指定錯誤回應**
 
-當[自訂提交動作](/help/forms/custom-submit-action-troubleshooting.md)發生未處理的錯誤時，系統傳回錯誤代碼502。 這有助於識別問題是關於自訂提交動作，因此讓除錯更為容易。
+當[自訂提交動作](/help/forms/custom-submit-action-troubleshooting.md)遭遇未處理的錯誤時，系統會傳回錯誤代碼 502。此代碼能幫助我們確認問題與自訂提交動作有關，讓除錯更為容易。
 
-**從記錄檔案排除隱藏欄位**
+**在記錄文件中排除隱藏欄位**
 
-新屬性允許從[記錄檔案](/help/forms/generate-document-of-record-core-components.md#document-of-record-settings)中排除隱藏欄位。 預設情況下，並未選取此選項且適用於所有表單欄位。
+利用新屬性可在[記錄文件](/help/forms/generate-document-of-record-core-components.md#document-of-record-settings)中排除隱藏欄位。預設情況下，並未選取此選項且適用於所有表單欄位。
 
 
 ### AEM Forms 的預發行功能
 
-**產生並同步AFP轉譯**
+**產生並同步 AFP 轉譯**
 
-您現在可以使用[AEM Forms Communication API](/help/forms/document-generation-afp-api.md)將XDP檔案轉換為AFP格式。 AFP 是一種廣泛應用於大型企業列印的高效能格式。
+您現在可以使用 [AEM Forms Communication API](/help/forms/document-generation-afp-api.md) 將 XDP 檔案轉換成 AFP 格式。AFP 是一種廣泛應用於大型企業列印的高效能格式。
 
 **規則編輯器的增強功能**
 
-* [函式清單中的驗證方法](/help/forms/rule-editor-enhancements-use-cases.md#validate-method-in-function-list)：驗證和重設方法現在支援在面板、欄位和表單層級執行。 之前僅在表單層級受支援。
-* [現代JavaScript支援](/help/forms/rule-editor-core-components-difference-tables.md)：已新增自訂函式的ECMAScript 2019及更新版本功能支援，讓您撰寫更有效率、模組化且可重複使用的程式碼。
+* [函數清單中的驗證方法](/help/forms/rule-editor-enhancements-use-cases.md#validate-method-in-function-list)：現在支援在面板、欄位及表單層級執行驗證和重設方法。之前僅支援在表單層級執行。
+* [現代 JavaScript 支援](/help/forms/rule-editor-core-components-difference-tables.md)：自訂函數現已支援 ECMAScript 2019 及後續版本新增的功能，讓您可以撰寫更有效率且可重複使用的模組化程式碼。
 * [在規則編輯器中下載 DoR 選項](/help/forms/rule-editor-enhancements-use-cases.md#downloaddor-as-ootb-fuction-in-rule-editor)：在規則編輯器中新增了一項現成可用 (OOTB) 的功能，可用於下載記錄文件 (DoR)。
 
   ![記錄文件](/help/forms/assets/document-of-record-rn.gif)
 
 * [規則編輯器中的動態變數](/help/forms/rule-editor-enhancements-use-cases.md#support-for-dynamic-variables-in-rules)：您現在可以在規則編輯器中使用動態 (臨時) 變數，以更靈活地定義條件和動作。儲存臨時值不再需要隱藏欄位。
-* [自訂事件型規則支援](/help/forms/rule-editor-enhancements-use-cases.md#custom-event-based-rules-support)：您現在可以定義自訂事件，並根據這些事件觸發規則。
+* [自訂事件型規則支援](/help/forms/rule-editor-enhancements-use-cases.md#custom-event-based-rules-support)：您現在可以定義自訂事件並根據那些事件觸發規則。
 * [上下文感知可重複面板規則](/help/forms/rule-editor-enhancements-use-cases.md#context-based-rule-execution-for-repeatable-panels)：在可重複面板中，現在規則是根據上下文執行，而不是僅套用於最後一個面板實例。
 * [參數觸發的規則](/help/forms/rule-editor-enhancements-use-cases.md#url-and-browser-parameter-based-rules-in-adaptive-forms)：規則編輯器現在支援根據查詢參數、UTM 參數或瀏覽器參數的規則執行。
 * [表單專用自訂函數](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md#organizing-custom-functions-across-different-forms)：Edge Delivery Services Forms 現在支援表單專用的自訂函數指令碼，為管理可重複使用的邏輯提供更大的靈活性。
@@ -129,11 +129,11 @@ AEM Forms 搶先體驗方案為您提供獨一無二的機會，享有尖端創�
 
 **手寫簽名元件**
 
-您現在可以使用[手寫簽名元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature)來協助使用者將他們的簽名新增至表單，例如在合約表單中。 該元件讓使用者使用滑鼠、手寫筆或觸控螢幕，直接在表單中書寫其簽名。
+您現在可以使用[手寫簽名元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature)，協助使用者將其簽名新增至表單中，例如合約表單。透過此元件，使用者可以使用滑鼠、手寫筆或觸控螢幕直接在表單中書寫其簽名。
 
-在規則編輯器中&#x200B;**直接API整合**
+**規則編輯器直接整合 API**
 
-最適化Forms現在支援在視覺規則編輯器中[直接API整合](/help/forms/api-integration-in-rule-editor.md)，不需要表單資料模型。 作者可以透過 URL 或 cURL 匯入來設定 API、對應輸入/輸出參數，同時透過驗證保護呼叫的安全。
+自適應表單現在支援在視覺化規則編輯器中[直接整合 API](/help/forms/api-integration-in-rule-editor.md)，而無需使用表單資料模型。作者可以透過 URL 或 cURL 匯入來設定 API、對應輸入/輸出參數，同時透過驗證保護呼叫的安全。
 
 <!--
 **Forms Optimization opportunities**
@@ -159,7 +159,7 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 
 ### Java API 即將淘汰 {#java-api-deprecation}
 
-許多已淘汰的 API 將於 8 月 31 日移除，因此不應再引用。在9月初，如果偵測到API使用情形，系統會傳送Actions Center通知，9月25日後，在Cloud Manager建置期間會顯示通知，強調移除使用情形的重要性。 請參閱[棄用文章](/help/release-notes/deprecated-removed-features.md#aem-apis)，了解完整的詳細資訊，但為了方便起見，這些 API 條列如下：
+許多已淘汰的 API 將於 8 月 31 日移除，因此不應再引用。在 9 月初，若偵測到使用 API 的情形，系統將透過動作中心傳送通知；而 9 月 25 日之後，在 Cloud Manager 建置時也會顯示通知，以強調移除使用的重要性。請參閱[棄用文章](/help/release-notes/deprecated-removed-features.md#aem-apis)，了解完整的詳細資訊，但為了方便起見，這些 API 條列如下：
 
 <details>
   <summary>展開以查看 Java API 淘汰內容</summary>

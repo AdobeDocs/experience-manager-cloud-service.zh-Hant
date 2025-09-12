@@ -5,9 +5,9 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
 source-git-commit: 33468de99a3e77539f4bdc9435324c9f52a45d9f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '350'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
@@ -18,13 +18,13 @@ ht-degree: 65%
 
 ## 版本 22171 {#22171}
 
-以下摘要說明維護版本22171數的持續改善，該版本於2025年9月2日公開發佈。 前一個維護版本是版本 21994。
+以下摘要說明維護版本 22171 的持續改善內容，此版本已於 2025 年 9 月 2 日公開發佈。前一個維護版本是版本 21994。
 
 啟用 2025.9.0 功能即可使用此維護版本的完整功能集。如需詳細資訊，請參閱 [Experience Manager 發行路徑圖](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
 ### 新功能  {#new-features-22171}
 
-* Assets-53136：Dynamic Media搭配OpenAPI支援虛名ID。
+* ASSETS-53136：使用 OpenAPI 在 Dynamic Media 中支援虛名 ID。
 
 ### 增強功能 {#enhancements-22171}
 
@@ -32,15 +32,15 @@ ht-degree: 65%
 
 ### 已修正的問題 {#fixed-issues-22171}
 
-* Assets-52510：對包含Unicode `U+202F`的檔案名稱偵測重複檔案名稱失敗。
-* Assets-53489：從Assets檢視UI刪除資料夾不會取消核准所有包含的資產。
-* Assets-54821：Asset Link中出現間歇性「伺服器錯誤」。
-* Assets-55024： AEM Assets「透過電子郵件下載」範本中的影像損毀。
-* Assets-55325：資產重新命名後，Dynamic Media靜態URL會忽略副檔名。
-* Assets-55334：「連結共用」對話方塊會短暫閃爍並消失，或永不顯示。
-* Assets-55382：已重新啟動非同步資產作業，並會建立重複的目標資料夾。
-* Assets-55472：忽略管理發布選項「僅包含已發佈的頁面」。
-* SITES-31600： Contexthub js錯誤中斷個人化。
+* ASSETS-52510：包含 Unicode `U+202F` 的檔案名稱無法執行重複檔案名稱偵測。
+* ASSETS-53489：在資產視圖 UI 中刪除資料夾，不會取消核准所有包含的資產。
+* ASSETS-54821：Asset Link 中出現間歇性「伺服器錯誤」。
+* ASSETS-55024：AEM Assets「透過電子郵件下載」範本中有損壞的影像。
+* ASSETS-55325：資產重新命名後，Dynamic Media 靜態 URL 省略檔案副檔名。
+* ASSETS-55334：此「連結共用」對話框短暫閃爍後消失或是從未顯示。
+* ASSETS-55382：重新啟動的非同步資產工作會建立重複的目標資料夾。
+* ASSETS-55472：管理發佈選項「僅包含已發佈的頁面」被忽略。
+* SITES-31600：Contexthub js 錯誤中斷個人化。
 
 如需更多有關該版本中新增功能和增強功能以及已修復問題的資訊，請查看 [Experience Manager Guides 發行藍圖](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)。
 
