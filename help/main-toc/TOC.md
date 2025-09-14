@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: 8205014a07b3683d6dd55f1632f5ac06a62e2337
+source-git-commit: 53e476981874597bfb7f9293e67b2d135c72b318
 workflow-type: tm+mt
-source-wordcount: '6603'
+source-wordcount: '6619'
 ht-degree: 98%
 
 ---
@@ -525,7 +525,7 @@ ht-degree: 98%
       + [將內容片段匯出到 Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [將體驗片段匯出到 Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [與 Adobe Campaign 整合](/help/sites-cloud/integrating/campaign.md)
-      + [在Adobe Journey Optimizer中使用內容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=zh-Hant)
+      + [在Adobe Journey Optimizer中使用內容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [AEM as a Cloud Service 的操作遙測](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Assets {#assets}
    + [概觀與新增功能](/help/assets/overview.md)
@@ -1092,8 +1092,13 @@ ht-degree: 98%
 {#wysiwyg-authoring}
    + 建置表單 {#build-forms}
       + [概觀](/help/edge/docs/forms/overview.md)
+
       + WYSIWYG 製作 {#universal-editor}
-         + [Forms 適用的 Edge Delivery Services 的通用編輯器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+         + 階層式下拉式清單 {#cascading-drop-down-list}
+            + [簡介](/help/edge/docs/forms/cascading-drop-down-list/introduction.md)
+            + [建立 API 整合](/help/edge/docs/forms/cascading-drop-down-list/create-api-integration.md)
+            + [建立表單](/help/edge/docs/forms/cascading-drop-down-list/create-form.md)
+            + [Forms 適用的 Edge Delivery Services 的通用編輯器](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [導覽 AEM Forms 適用的通用編輯器介面](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md)
          + [使用通用編輯器開始使用 AEM Forms 適用的 Edge Delivery Services](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
          + [使用 Edge Delivery Services 建立和發佈自適應表單](/help/edge/docs/forms/universal-editor/create-forms.md)
@@ -1108,7 +1113,8 @@ ht-degree: 98%
          + [如何預填自適應表單欄位](/help/edge/docs/forms/universal-editor/prefill-form.md)
          + [使用 Edge Delivery Services 發佈自適應表單](/help/edge/docs/forms/universal-editor/publish-forms.md)
          + [建立 EDS Form 的自訂元件](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-         + [針對 Edge Delivery Services 表單提交時出現的 403 禁止錯誤進行疑難排解](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)
+         + [疑難排解Edge Delivery Services表單提交中的403禁止錯誤](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)
+         + [使用API整合建立Salesforce Lead物件](/help/edge/docs/forms/universal-editor/create-lead-object-using-api-integration.md)
       + 文件型編寫 {#getting-started-edge-delivery-services-forms}
          + [建置第一份表單：使用 Google Sheets 和 Excel 的快速入門指南](/help/edge/docs/forms/tutorial.md)
          + [如何使用 Google Sheets 或 Excel 建立表單：逐步操作指南](/help/edge/docs/forms/create-forms.md)
