@@ -1,19 +1,19 @@
 ---
-title: 關於Experience Hub
+title: 關於 Experience Hub
 description: 了解關於 Adobe Experience Hub 頁面的資訊。
 landing-page-description: 了解關於 Experience Hub 的資訊，這是用於集中存取所有 AEM 功能的起點。
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Architect, Developer, User
 exl-id: a1b0eed7-b74c-4e72-8399-c473bbda9245
-source-git-commit: 88d7394756c8a9231a51350d592ed478fa51a45e
+source-git-commit: e92a25a532cc39557842178165c963c6f1fdb681
 workflow-type: tm+mt
 source-wordcount: '588'
-ht-degree: 9%
+ht-degree: 14%
 
 ---
 
-# 關於Experience Hub {#aem-experience-hub}
+# 關於 Experience Hub {#aem-experience-hub}
 
 Experience Hub推出管理Adobe Experience Manager內容、資產和網站的集中式起點。 Experience Hub的設計目的是提供個人化體驗，可讓您根據自己的角色和目標，順暢地在AEM生態系統中導覽。 它以指南的方式提供關鍵的深入解析和建議的動作，協助您有效率地達成目標。Experience Hub擁有清晰、以人物為導向的版面配置，可確保快速存取基本工具，並支援所有AEM功能中精簡而有效的體驗。
 
@@ -82,4 +82,4 @@ Widget也可以在頁面上調整大小和重新定位，以更符合您的需�
 
 ## AEM 中的 AI 助理
 
-對於具有[已完成必要條件](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access)的客戶，其組織的使用者可以使用AEM中的AI助理。 檢視AEM[中的](/help/implementing/cloud-manager/ai-assistant-in-aem.md)AI小幫手。
+對於已[滿足先決條件](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access)的客戶，AEM 中的 AI 助理可供其組織的使用者使用。請參閱 [AEM 中的 AI 助理](/help/implementing/cloud-manager/ai-assistant-in-aem.md)。
