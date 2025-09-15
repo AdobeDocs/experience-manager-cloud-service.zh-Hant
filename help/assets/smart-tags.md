@@ -7,7 +7,7 @@ exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
 source-git-commit: 460dd76a1d7d1d3f85a924a0aa88e8649ada32bc
 workflow-type: tm+mt
 source-wordcount: '2696'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -88,7 +88,7 @@ The applied smart tags are sorted in descending order of [confidence score](#con
 
 ## DAM中未標籤的Assets {#smart-tag-existing-assets}
 
-DAM中的現有或舊版資產不會自動加上智慧標籤。 您必須手動[重新處理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=zh-Hant#adjusting-load) Assets，才能為其產生智慧標籤。 程式完成後，請導覽至資料夾內任何資產的[!UICONTROL 屬性]頁面。 自動新增的標籤會顯示在[!UICONTROL 基本]索引標籤的[!UICONTROL 智慧標籤]區段中。 這些套用的智慧標籤會以[信賴分數](#confidence-score)的遞減順序排序。
+DAM中的現有或舊版資產不會自動加上智慧標籤。 您必須手動[重新處理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en#adjusting-load) Assets，才能為其產生智慧標籤。 程式完成後，請導覽至資料夾內任何資產的[!UICONTROL 屬性]頁面。 自動新增的標籤會顯示在[!UICONTROL 基本]索引標籤的[!UICONTROL 智慧標籤]區段中。 這些套用的智慧標籤會以[信賴分數](#confidence-score)的遞減順序排序。
 
 <!--
 To smart tag assets, or folders (including subfolders) of assets that exist in assets repository, follow these steps:
@@ -229,7 +229,7 @@ AI不會依賴手動輸入，而是自動將描述性標籤指派給數位資產
 
 ### 設定AI產生的標題 {#configure-ai-generated-titles}
 
-AEM可讓您在「資產瀏覽」頁面上的「卡片」檢視或「清單」檢視中，設定資產標題的顯示方式。 您可以選擇顯示您定義的資產標題、使用AI產生的標題，或僅在資產沒有現有標題時才使用AI產生的標題。
+AEM可讓您在「資產瀏覽」頁面上的「卡片」檢視或「清單」檢視中，設定資產標題的顯示方式。 您可以選擇顯示您定義的資產標題、使用 AI 產生的標題，或僅於資產沒有現有標題時使用 AI 產生的標題。
 
 若要設定AI產生的標題：
 
@@ -243,7 +243,7 @@ AEM可讓您在「資產瀏覽」頁面上的「卡片」檢視或「清單」�
 
    * **只有在DC標題不存在時才顯示AI產生的標題**：只有在沒有為資產定義資產標題時，AEM Assets才會顯示AI產生的標題。
 
-     ![設定AI產生的標題](assets/configure-title-ai-generated.png)
+     ![設定 AI 產生的標題](assets/configure-title-ai-generated.png)
 
 ### 使用AI產生的中繼資料 {#using-ai-generated-smart-tags}
 
