@@ -199,6 +199,6 @@ Universal Editor為Edge Delivery Services提供兩種強大的撰寫方法： WY
 ## 相關的文章
 
 - [詳細的表單製作比較](/help/edge/docs/forms/authoring-a-form.md)
-- [AEM Forms核心元件概觀](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)
+- [AEM Forms核心元件概觀](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant)
 - [適用於Forms的Edge Delivery Services概觀](/help/edge/docs/forms/overview.md)
 - [具有核心元件的Headless最適化Forms](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-headless-adaptive-forms/using/tutorial/build-engaging-forms-using-core-components-and-headless-adaptive-forms-aem-forms-cloud-service)

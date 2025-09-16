@@ -120,7 +120,7 @@ AEM Forms as a Cloud Service提供DocuSign的自訂提交動作。 提交動作�
 
    執行這些步驟後，您可以檢視新的自訂提交動作[使用DocuSign電子簽章提交](#enabledocusign)，可在您本機開發環境中的最適化表單和[DocuSign雲端服務組態](#configure-docusign-with-aem-forms)的提交選項清單中取得。
 
-1. 編譯程式碼並[將程式碼部署到您的 [!DNL AEM Forms] as a Cloud Service環境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#customer-releases)。
+1. 編譯程式碼並[將程式碼部署到您的 [!DNL AEM Forms] as a Cloud Service環境](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=zh-Hant#customer-releases)。
 
 ## 將[!DNL DocuSign]與[!DNL AEM Forms]整合 {#configure-docusign-with-aem-forms}
 

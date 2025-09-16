@@ -34,7 +34,7 @@ ht-degree: 2%
 * 條款與條件
 * 條款與條件含草稿
 
-安裝套件時，會在Forms和檔案下方建立包含參考片段的參考片段資料夾。 若要安裝封裝，請參閱[透過Cloud Manager和封裝管理員部署內容封裝](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#deploying-content-packages-via-cloud-manager-and-package-manager)以及[如何使用封裝](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)。
+安裝套件時，會在Forms和檔案下方建立包含參考片段的參考片段資料夾。 若要安裝封裝，請參閱[透過Cloud Manager和封裝管理員部署內容封裝](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=zh-Hant#deploying-content-packages-via-cloud-manager-and-package-manager)以及[如何使用封裝](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=zh-Hant)。
 
 ![列出所有片段](assets/ootb-frags.png)
 
