@@ -1,26 +1,27 @@
 ---
-title: 如何根據核心元件建立最適化表單？
-description: 瞭解如何使用 [!DNL Experience Manager Forms]建立最適化表單。 最適化Forms是回應式HTML5表單，可簡化資訊收集和處理。 深入瞭解如何根據表單資料模型(FDM)和XML或JSON結構描述建立調適型表單。
+title: 表單產生器：使用核心元件建立表單
+description: 瞭解如何使用AEM Forms的表單產生器，以使用核心元件建立最適化表單。 適合需要回應式HTML5表單的表單建立者，這些表單可簡化資訊收集和處理。
+keywords: 表單產生器，核心元件，建立表單，表單建立器，調適型表單，建立表單， AEM forms，回應式表單
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: 8d43f28e62a865b6b990678544e0d9589f17722a
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
-source-wordcount: '2340'
-ht-degree: 51%
+source-wordcount: '2348'
+ht-degree: 49%
 
 ---
 
-# 建立自適應表單 (核心元件) {#creating-an-adaptive-form-core-components}
+# 表單產生器：使用核心元件建立表單 {#creating-an-adaptive-form-core-components}
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-an-adaptive-form-core-components.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-an-adaptive-form-core-components.html) |
 | AEM as a Cloud Service  | 本文章 |
 
 
-最適化表單可讓您建立吸引人、回應式、動態且最適化的表單。AEM Forms 提供方便商業使用者使用的精靈，以便快速建立最適化表單。此精靈具有快速的標籤導覽，可輕鬆選取預先設定的範本、樣式、欄位和提交選項，以建立最適化表單。
+AEM Forms的表單產生器可讓您建立吸引人、回應式、動態且最適化的表單。 無論您是建立專業表單的表單建立者，還是需要快速建立回應式表單，AEM Forms都能提供使用者易用的精靈。 精靈具有快速索引標籤導覽，可輕鬆選取預先設定的範本、樣式、欄位和提交選項。
 
 開始之前，請先了解您可以使用的表單元件類型：
 
@@ -36,16 +37,16 @@ ht-degree: 51%
 您必須符合以下條件才能建立最適化表單：
 
 
-* **為您的環境啟用最適化Forms核心元件**：當您建立方案時，最適化Forms核心元件已為您的環境啟用。  安裝最新的Far，為AEM Cloud Service環境啟用最適化Forms核心元件。 為您的環境啟用核心元件時，**最適化Forms （核心元件）**&#x200B;範本和主題會新增到您的環境中。 如果您的 AEM SDK 版本比 2023.02.0 更舊，[請確定已`prerelease`在您的環境中啟用標幟](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hant#new-features)，因為最適化表單核心元件是 2023.02.0 版本之前搶鮮版的一部分。
+* **為您的環境啟用最適化Forms核心元件**：當您建立方案時，最適化Forms核心元件已為您的環境啟用。  安裝最新的Far，為AEM Cloud Service環境啟用最適化Forms核心元件。 為您的環境啟用核心元件時，**最適化Forms （核心元件）**&#x200B;範本和主題會新增到您的環境中。 如果您的 AEM SDK 版本比 2023.02.0 更舊，[請確定已`prerelease`在您的環境中啟用標幟](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#new-features)，因為最適化表單核心元件是 2023.02.0 版本之前搶鮮版的一部分。
 
 * **最適化表單範本**：此範本會提供基本結構並定義最適化表單的外觀 (版面和樣式)。其中具有包含特定屬性和內容結構的預先格式化元件。它也會提供定義主題和提交動作的選項。主題會定義外觀，而提交動作會定義提交最適化表單時要採取的動作。例如，將所收集的資料傳送到資料來源。雲端服務會提供一個名為 blank 的 OOTB 範本：
 
    * 該 `blank` 範本會包含在每個新的 AEM Forms as a Cloud Service 程式中。
    * 您可以透過套件管理員安裝參考套件，將該 `blank` 範本新增到您的 AEM Forms as a Cloud Service 程式。
    * 您也可以從頭開始[建立最適化Forms範本（核心元件）](/help/forms/template-editor-core-components.md)。
-   * 您也可以將[範例範本](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=zh-Hant)部署至您的環境。 這些功能可協助您快速建立表格。
+   * 您也可以將[範例範本](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)部署至您的環境。 這些功能可協助您快速建立表格。
 
-* **最適化表單主題**：主題包含元件和面板的樣式詳細資料。樣式包括背景顏色、狀態顏色、透明度、對齊方式和大小等屬性。套用主題時，指定的樣式會反映在對應的元件上。每個新的AEM Forms as a Cloud Service程式都會包含`Canvas`範本。 您也可以將[範例主題](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=zh-Hant)部署至您的環境。 這些可幫助您開始設計表單的樣式，並提供基礎結構，以根據您的業務需求建立或自訂主題。
+* **最適化表單主題**：主題包含元件和面板的樣式詳細資料。樣式包括背景顏色、狀態顏色、透明度、對齊方式和大小等屬性。套用主題時，指定的樣式會反映在對應的元件上。每個新的AEM Forms as a Cloud Service程式都會包含`Canvas`範本。 您也可以將[範例主題](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)部署至您的環境。 這些可幫助您開始設計表單的樣式，並提供基礎結構，以根據您的業務需求建立或自訂主題。
 
   <!-- * You can install the reference package, via package manager, to add the `Canvas` template to your AEM Forms as a Cloud Service program.
     * You can also [create an Adaptive Forms theme (Core Components)](template-editor.md) and deploy it to your AEM Forms as a Cloud Service program. -->
@@ -56,7 +57,7 @@ ht-degree: 51%
 >[!NOTE]
 >
 >
-> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=zh-Hant) to your AEM environment for use in Core Components based Adaptive Forms.
+> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) to your AEM environment for use in Core Components based Adaptive Forms.
 -->
 
 ## 建立最適化表單  {#create-an-adaptive-form-core-components}
@@ -106,13 +107,13 @@ ht-degree: 51%
 
 1. 選擇 **[!UICONTROL 建立]**。此時已建立最適化表單，並在最適化表單編輯器中開啟。編輯器會顯示範本中可用的內容。根據最適化表單的型別，相關<!--XFA form template, XML schema or --> JSON結構描述或表單資料模型(FDM)中存在的表單元素會顯示在側邊欄中&#x200B;**[!UICONTROL 內容瀏覽器]**&#x200B;的&#x200B;**[!UICONTROL 資料模型物件]**&#x200B;索引標籤中。 您也可以拖放這些元素以建置自己的最適化表單。
 
-現在，您可以將[最適化Forms核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant)拖放至最適化Forms容器來設計和建立表單。 您也可以造訪[https://aemcomponents.dev/](https://aemcomponents.dev/)，檢視作用中的可用核心元件。
+現在，您可以將[最適化Forms核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)拖放至最適化Forms容器來設計和建立表單。 您也可以造訪[https://aemcomponents.dev/](https://aemcomponents.dev/)，檢視作用中的可用核心元件。
 
 >[!NOTE]
 >
 > 您也可以[使用XFA表單範本（*.XDP檔案）建立最適化Forms](/help/forms/create-adaptive-form-using-xfa-templates.md)。 它讓您透過直接在調適型Forms中重複使用XDP檔案的欄位來節省時間。
 
-## 為最適化表單設定提交動作 {#configure-submit-action-for-form}
+## 設定最適化表單的提交動作 {#configure-submit-action-for-form}
 
 提交動作讓您可選擇透過最適化表單擷取的資料目標。當使用者按一下最適化表單上的提交按鈕時會觸發。 調適型表單包含一些立即可用的提交動作。 您也可以擴充預設提交動作，以建立自己的自訂提交動作。 若要設定表單的提交動作：
 
@@ -147,7 +148,7 @@ ht-degree: 51%
 
 ## 為最適化表單設定結構描述或表單資料模型(FDM){#configure-schema-or-data-model-for-form}
 
-您可以使用表單資料模型(FDM)將表單連線至資料Source，以根據使用者動作傳送及接收資料。 您也可以將表單連線至JSON結構描述，以預先定義的格式接收提交的資料。 根據需求，將表單連線到JSON結構描述或表單資料模型(FDM)：
+您可以使用表單資料模型(FDM)將表單連線至資料Source，以根據使用者動作傳送及接收資料。 您也可以將表單連線至 JSON 結構描述，以預先定義的格式接收提交的資料。根據需求，將表單連線到JSON結構描述或表單資料模型(FDM)：
 
 * [建立JSON結構描述並上傳至您的環境](/help/forms/adaptive-form-json-schema-form-model.md)
 * [建立表單資料模型(FDM)](/help/forms/create-form-data-models.md)
@@ -167,7 +168,7 @@ ht-degree: 51%
    * 當您選取&#x200B;**[!UICONTROL 表單模型]**&#x200B;選項時，請使用&#x200B;**[!UICONTROL 選取表單資料模型]**&#x200B;選項來選取預先設定的表單資料模型(FDM)。
    * 當您選取&#x200B;**[!UICONTROL 結構描述]**&#x200B;選項時，請使用&#x200B;**[!UICONTROL 結構描述]**&#x200B;選項為您的表單選取JSON結構描述。
 
-1. 按一下&#x200B;**[!UICONTROL 「完成」]**。
+1. 按一下&#x200B;**[!UICONTROL 完成]**。
 
 ## 設定預填服務  {#configure-prefill-service-for-form}
 

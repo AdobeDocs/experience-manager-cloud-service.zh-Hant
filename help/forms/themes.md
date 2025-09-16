@@ -4,7 +4,7 @@ description: 使用最適化表單主題來設定樣式並為最適化表單提�
 feature: Adaptive Forms, Foundation Components
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
 role: User, Developer, Admin
-source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
 source-wordcount: '5558'
 ht-degree: 1%
@@ -15,11 +15,11 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-> Adobe建議針對[建立新的Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant)或[將Adaptive Forms新增至AEM Sites頁面](/help/forms/creating-adaptive-form-core-components.md)，使用現代且可擴充的資料擷取[核心元件](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文說明使用基礎元件製作最適化Forms的舊方法。
+> Adobe建議針對[建立新的Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)或[將Adaptive Forms新增至AEM Sites頁面](/help/forms/creating-adaptive-form-core-components.md)，使用現代且可擴充的資料擷取[核心元件](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文說明使用基礎元件製作最適化Forms的舊方法。
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html) |
 | AEM as a Cloud Service  | 本文章 |
 
 您可以建立並套用主題，使最適化表單<!-- or an interactive communication-->風格化。 主題包含元件和面板的樣式詳細資訊。 樣式包括背景顏色、狀態顏色、透明度、對齊方式和大小等屬性。套用主題時，指定的樣式會反映在對應的元件上。在不參考最適化表單<!-- or interactive communication -->的情況下獨立管理主題。
@@ -85,8 +85,8 @@ ht-degree: 1%
 
 1. 按一下&#x200B;**[!UICONTROL Adobe Experience Manager]**，按一下&#x200B;**[!UICONTROL Forms]**，然後按一下&#x200B;**[!UICONTROL 主題]**。
 
-1. 在[佈景主題]頁面中，按一下[建立&#x200B;**&#x200B; > [檔案上傳]**]。**&#x200B;**
-1. 在[檔案上傳]提示中，瀏覽並選取您電腦上的主題封裝，然後按一下[上傳]。**&#x200B;**
+1. 在[佈景主題]頁面中，按一下[建立&#x200B;** > [檔案上傳]**]。****
+1. 在[檔案上傳]提示中，瀏覽並選取您電腦上的主題封裝，然後按一下[上傳]。****
 上傳的主題可在主題頁面中使用。
 
 ## 主題的中繼資料 {#metadata-of-a-theme}
@@ -210,7 +210,7 @@ ht-degree: 1%
 
 主題編輯器分為兩個面板：
 
-* **畫布** — 顯示在右側。 它會顯示一個最適化表單<!--  or interactive communication -->的範例，其中所有樣式變更都會立即反映。 您也可以直接從畫布中選取物件，以查詢與物件相關聯的樣式，並編輯這些樣式。 上方的裝置解析度尺標可控制畫布。 從尺標選取解析度中斷點，會顯示個別解析度的範例表單<!--  or interactive communication -->預覽。 畫布的詳細討論如下[&#128279;](themes.md#using-canvas)。
+* **畫布** — 顯示在右側。 它會顯示一個最適化表單<!--  or interactive communication -->的範例，其中所有樣式變更都會立即反映。 您也可以直接從畫布中選取物件，以查詢與物件相關聯的樣式，並編輯這些樣式。 上方的裝置解析度尺標可控制畫布。 從尺標選取解析度中斷點，會顯示個別解析度的範例表單<!--  or interactive communication -->預覽。 畫布的詳細討論如下[](themes.md#using-canvas)。
 
 * **側欄***出現在左側。 它有下列專案：
 
@@ -258,7 +258,7 @@ ht-degree: 1%
 
 * 左側的索引標籤
 * 頂端標籤
-* 折疊面板
+* 摺疊面板
 * 反應
 * 精靈
 * 行動佈局
@@ -299,7 +299,7 @@ ht-degree: 1%
 
 在此範例中，欄位標籤的樣式已變更，而且當為樣式選取回應式面板說明時，清單專案會新增到資產庫中。 資產庫中的專案可用來變更回應式面板說明的樣式。
 
-將樣式新增至資產庫時，該樣式便可用於其他主題及表單編輯器UI的[樣式模式](inline-style-adaptive-forms.md)。 同樣地，當您使用表單編輯器<!-- or interactive communication editor --> UI的樣式模式來設定元件的樣式時，該樣式會快取，並可在主題中使用。
+將樣式新增至資產庫時，該樣式便可用於其他主題及表單產生器UI的[樣式模式](inline-style-adaptive-forms.md)。 同樣地，當您使用表單產生器<!-- or interactive communication editor --> UI的樣式模式來設定元件的樣式時，該樣式會快取，並可在主題中使用。
 
 資產庫的加號按鈕可讓您以提供的名稱永久儲存樣式。 即使您未按一下側邊欄中的「儲存」按鈕來將樣式套用至元件，加號按鈕也會儲存樣式。 樣式模式中無法使用加號按鈕來儲存樣式以供稍後使用。
 
@@ -308,7 +308,7 @@ ht-degree: 1%
 當您提供樣式的自訂名稱時，該樣式會繫結至主題，且無法再用於其他主題。 若要刪除已儲存的樣式：
 
 1. 在「畫布」工具列上，按一下&#x200B;**[!UICONTROL 主題選項]** ![主題選項](assets/theme-options.png) > **[!UICONTROL 管理樣式]**。
-1. 在[管理樣式]對話方塊中，選取已儲存的樣式，按一下[刪除]。**&#x200B;**
+1. 在[管理樣式]對話方塊中，選取已儲存的樣式，按一下[刪除]。****
 
    ![刪除儲存的樣式](assets/manage-styles.png)
 
@@ -456,7 +456,7 @@ ht-degree: 1%
 
 1. 選取&#x200B;**[!UICONTROL 數值方塊Widget]**。
 1. 側欄標題會變更為數值方塊Widget，並顯示自訂其外觀的選項。
-在側邊欄中使用&#x200B;**[!UICONTROL Dimension和位置]**&#x200B;選項來自訂元件的大小。 確定狀態為&#x200B;**[!UICONTROL 預設]**。
+在側邊欄中使用**[!UICONTROL Dimension和位置]**&#x200B;選項來自訂元件的大小。 確定狀態為&#x200B;**[!UICONTROL 預設]**。
 
 不要選取&#x200B;**[!UICONTROL 數值方塊Widget]**，請在元件工具列中選取&#x200B;**[!UICONTROL 欄位Widget]**，然後執行上述步驟。 當您選取&#x200B;**[!UICONTROL 欄位Widget]**&#x200B;選項的維度時，除了數值方塊之外，其他所有文字方塊的大小都相同。
 
@@ -496,7 +496,7 @@ ht-degree: 1%
 若要在Experience Manager中設定Adobe Fonts，請執行以下步驟：
 
 1. 在作者執行個體中，按一下![Adobe Experience Manager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 工具]** ![槌子](assets/hammer.png) > **[!UICONTROL 部署]** > **[!UICONTROL 雲端服務]**。
-1. 在&#x200B;**[!UICONTROL 雲端服務]**&#x200B;頁面上，瀏覽並開啟&#x200B;**[!UICONTROL Adobe Fonts]**&#x200B;選項。 開啟設定資料夾，然後按一下[建立]。**&#x200B;**
+1. 在&#x200B;**[!UICONTROL 雲端服務]**&#x200B;頁面上，瀏覽並開啟&#x200B;**[!UICONTROL Adobe Fonts]**&#x200B;選項。 開啟設定資料夾，然後按一下[建立]。****
 1. 在&#x200B;**[!UICONTROL 建立組態]**&#x200B;對話方塊中，指定組態的標題，然後按一下&#x200B;**[!UICONTROL 建立]**。
 
    系統會將您重新導向至設定頁面。
@@ -673,10 +673,10 @@ You can use the theme configuration service to add more fonts to the theme edito
 
   不建議變更容器面板配置寬度。 當您指定容器面板的寬度時，其會變成靜態，且無法適應不同的顯示。
 
-* **何時使用表單編輯器或主題編輯器來處理頁首和頁尾**
+* **何時使用表單產生器或主題編輯器來處理頁首和頁尾**
 
   如果要使用字型樣式、背景和透明度等樣式選項來設定頁首和頁尾的樣式，請使用主題編輯器。
-如果您想在頁尾中提供標誌影像、公司名稱和版權資訊等資訊，請使用表單編輯器選項。
+如果您想在頁尾中提供標誌影像、公司名稱和版權資訊等資訊，請使用表單產生器選項。
 
 
 ## 另請參閱 {#see-also}

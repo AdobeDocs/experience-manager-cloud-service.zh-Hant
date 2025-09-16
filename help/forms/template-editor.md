@@ -4,7 +4,7 @@ description: 使用範本編輯器建立最適化表單範本，以定義基本�
 feature: Adaptive Forms, Foundation Components
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
 role: User, Developer, Admin
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
 source-wordcount: '2059'
 ht-degree: 2%
@@ -15,11 +15,11 @@ ht-degree: 2%
 
 >[!NOTE]
 >
-> Adobe建議針對[建立新的Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md)或[將Adaptive Forms新增至AEM Sites頁面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)，使用現代且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文說明使用基礎元件製作最適化Forms的舊方法。
+> Adobe建議針對[建立新的Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)或[將Adaptive Forms新增至AEM Sites頁面](/help/forms/creating-adaptive-form-core-components.md)，使用現代且可擴充的資料擷取[核心元件](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文說明使用基礎元件製作最適化Forms的舊方法。
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html) |
 | AEM as a Cloud Service  | 本文章 |
 
 當您編寫表單時，可在編輯器中新增欄位和元件以定義表單結構、內容和動作。 您在表單容器的`guideRootPanel`中新增欄位和元件。 使用範本編輯器，您可以建立包含基本結構和初始內容的範本，以供作者建立表單。
@@ -30,13 +30,13 @@ ht-degree: 2%
 * 提供表單的初始內容。
 * 指定主題，提交動作。
 
-您可以從[軟體發佈](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)入口網站下載並安裝[!DNL AEM Forms]參考內容封裝，以將參考主題和範本匯入您的環境。
+您可以從[!DNL AEM Forms]軟體發佈[入口網站下載並安裝](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)參考內容封裝，以將參考主題和範本匯入您的環境。
 
 ## 使用範本 {#working-with-templates}
 
 您可以導覽至&#x200B;**[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 工具]** > **[!UICONTROL 一般]** > **[!UICONTROL 範本]**，從「工具」功能表存取範本編輯器。 範本會整理在啟用可編輯範本的資料夾中。
 
-Experience Manager提供可組織範本的全域資料夾。 但預設不會啟用。 您可以要求管理員啟用全域資料夾或建立範本資料夾。 如需有關如何建立資料夾的詳細資訊，請參閱[範本資料夾](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=zh-Hant#editing-templates-template-authors)。
+Experience Manager提供可組織範本的全域資料夾。 但預設不會啟用。 您可以要求管理員啟用全域資料夾或建立範本資料夾。 如需有關如何建立資料夾的詳細資訊，請參閱[範本資料夾](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html#editing-templates-template-authors)。
 
 ### 建立範本 {#create-template}
 
@@ -45,7 +45,7 @@ Experience Manager提供可組織範本的全域資料夾。 但預設不會啟�
 1. 在您建立的資料夾中選取&#x200B;**[!UICONTROL 建立]**。
 1. 在「挑選範本型別」區段中，選取&#x200B;**[!UICONTROL 最適化表單範本]**，然後選取&#x200B;**[!UICONTROL 下一步]**。
 
-1. 在[範本詳細資料]區段中，提供範本標題並選取[建立]。**&#x200B;**
+1. 在[範本詳細資料]區段中，提供範本標題並選取[建立]。****
 您也可以提供說明。
 
 1. 選取&#x200B;**[!UICONTROL 完成]**&#x200B;以返回主控台，或選取&#x200B;**[!UICONTROL 開啟]**&#x200B;以在編輯器中開啟範本。
@@ -160,11 +160,11 @@ Experience Manager提供可組織範本的全域資料夾。 但預設不會啟�
 
 ## 匯入或匯出範本 {#importing-or-exporting-a-template}
 
-表單可與其範本搭配使用。 下載使用自訂範本建立的最適化表單時，未下載範本。 當您在不同的[!DNL AEM Forms]執行個體上匯入表單時，會匯入表單而不包含其範本。 如果表單已匯入，但其範本無法使用，則不會轉譯表單。 您可以封裝來自`https://<server>:<port>/crx/packmgr`中`/conf`節點的自訂範本，並將其連線您要上傳表單的[!DNL AEM Forms]執行個體。 您也可以[使用AEM Archype建立範本，並將其部署至您的Cloud Service執行個體](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html?lang=zh-Hant#prerequisites)。
+表單可與其範本搭配使用。 下載使用自訂範本建立的最適化表單時，未下載範本。 當您在不同的[!DNL AEM Forms]執行個體上匯入表單時，會匯入表單而不包含其範本。 如果表單已匯入，但其範本無法使用，則不會轉譯表單。 您可以封裝來自`/conf`中`https://<server>:<port>/crx/packmgr`節點的自訂範本，並將其連線您要上傳表單的[!DNL AEM Forms]執行個體。 您也可以[使用AEM Archype建立範本，並將其部署至您的雲端服務執行個體](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html#prerequisites)。
 
 >[!NOTE]
 >
-> * 您也可以直接從最適化表單編輯器或最適化表單範本編輯器設定[!UICONTROL 記錄檔案]範本。 如需詳細資訊，請參閱[產生最適化Forms的記錄檔案](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)。
+> * 您也可以直接從最適化表單產生器或最適化表單範本產生器設定[!UICONTROL 記錄檔案]範本。 如需詳細資訊，請參閱[產生最適化Forms的記錄檔案](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)。
 
 
 ## 將表單資料模型結構描述關聯至範本 {#associating-form-data-model-schema-in-template}
@@ -212,7 +212,7 @@ Perform the following steps to show and hide templates:
 1. 選取最適化表單以儲存為範本。
 1. 按一下&#x200B;**[!UICONTROL 另存為範本]**。 對話方塊隨即顯示。
 1. 指定範本的&#x200B;**[!UICONTROL Title]** （必要欄位）、**[!UICONTROL Location]** （必要欄位）和&#x200B;**[!UICONTROL Description]** （選擇性欄位）。
-1. 按一下&#x200B;**[!UICONTROL 建立]**。
+1. 按一下「**[!UICONTROL 建立]**」。
 
    ![另存為表單範本](/help/forms/assets/saveformastemplate.png)
 
@@ -226,7 +226,7 @@ Perform the following steps to show and hide templates:
 
 * 在範本編輯器中修改表單的屬性時，請勿使用BindReference屬性。
 * 如果您想要新增中斷點，請在編寫最適化表單範本時建立中斷點。
-如需中斷點的詳細資訊，請參閱[回應式配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/responsive-layout.html?lang=zh-Hant#authoring)。
+如需中斷點的詳細資訊，請參閱[回應式配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/responsive-layout.html#authoring)。
 
 
 ## 另請參閱 {#see-also}

@@ -10,7 +10,7 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: b01ca24b-aa39-4b30-9d55-224b103a1e83
-source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
 source-wordcount: '395'
 ht-degree: 2%
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 # 參照最適化表單片段 {#reference-adaptive-form-fragments}
 
-最適化表單片段是一組欄位，或包含一組欄位的面板，您可以在建立表單時使用這些欄位。 它可讓您輕鬆快速地建立表單。 您可以使用側邊欄中的資產瀏覽器，將最適化表單片段拖放至表單中，並在表單編輯器中加以編輯。
+最適化表單片段是一組欄位，或包含一組欄位的面板，您可以在建立表單時使用這些欄位。 它可讓您輕鬆快速地建立表單。 您可以使用側邊欄中的資產瀏覽器，將最適化表單片段拖放至表單中，並在表單產生器中加以編輯。
 
 對於最適化Forms作者，[!DNL AEM Forms]套件[!DNL AEM FORMS]參考片段中提供參考片段。 其包含下列片段：
 
@@ -34,7 +34,7 @@ ht-degree: 2%
 * 條款與條件
 * 條款與條件含草稿
 
-安裝套件時，會在Forms和檔案下方建立包含參考片段的參考片段資料夾。 若要安裝封裝，請參閱[透過Cloud Manager和封裝管理員部署內容封裝](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=zh-Hant#deploying-content-packages-via-cloud-manager-and-package-manager)以及[如何使用封裝](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=zh-Hant)。
+安裝套件時，會在Forms和檔案下方建立包含參考片段的參考片段資料夾。 若要安裝封裝，請參閱[透過Cloud Manager和封裝管理員部署內容封裝](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#deploying-content-packages-via-cloud-manager-and-package-manager)以及[如何使用封裝](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)。
 
 ![列出所有片段](assets/ootb-frags.png)
 

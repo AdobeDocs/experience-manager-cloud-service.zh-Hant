@@ -4,7 +4,7 @@ description: 瞭解如何產生最適化Forms的記錄檔案(DoR)範本。
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 role: User, Developer
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
 source-wordcount: '4221'
 ht-degree: 2%
@@ -15,12 +15,12 @@ ht-degree: 2%
 
 >[!NOTE]
 >
-> Adobe建議針對[建立新的Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant)或[將Adaptive Forms新增至AEM Sites頁面](/help/forms/creating-adaptive-form-core-components.md)，使用現代且可擴充的資料擷取[核心元件](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文說明使用基礎元件製作最適化Forms的舊方法。
+> Adobe建議針對[建立新的Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)或[將Adaptive Forms新增至AEM Sites頁面](/help/forms/creating-adaptive-form-core-components.md)，使用現代且可擴充的資料擷取[核心元件](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文說明使用基礎元件製作最適化Forms的舊方法。
 
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) |
 | AEM as a Cloud Service  | 本文章 |
 
 ## 概觀 {#overview}
@@ -104,7 +104,7 @@ ht-degree: 2%
    * （針對AcroForm範本） **[!UICONTROL 記錄檔案繫結參考欄位]**&#x200B;屬性。
    * （適用於XFA範本） **[!UICONTROL 資料模型繫結參考]**&#x200B;屬性。
 
-1. 按一下「**[!UICONTROL 儲存]**」。
+1. 按一下&#x200B;**[!UICONTROL 儲存]**。
 
 <!-- 
 In the following video, Adaptive Form components are bound with corresponding Acroform template fields and the Document of Record is sent as an email attachment.
@@ -319,7 +319,7 @@ When you select a form model, configure Document of Record using options availab
 
 1. 選取&#x200B;**[!UICONTROL Forms — 記錄檔案]**&#x200B;類別。
 1. 選取&#x200B;**[!UICONTROL DoR基底範本]**。
-1. 按一下[下一步]&#x200B;**&#x200B;**&#x200B;並提供必要的資訊。
+1. 按一下[下一步]****&#x200B;並提供必要的資訊。
 
 1. （選擇性）修改您要在記錄檔案中欄位上套用的欄位樣式和外觀。
 1. 儲存表單。
@@ -405,9 +405,9 @@ When you select a form model, configure Document of Record using options availab
 
 ## 最適化表單編輯器中的記錄檔案支援 {#dor-support-in-adaptiveform}
 
-您可以直接從最適化表單編輯器或最適化表單範本編輯器設定[!UICONTROL 記錄檔案]範本。
+您可以直接從最適化表單產生器或最適化表單範本產生器設定[!UICONTROL 記錄檔案]範本。
 
-從最適化表單編輯器的製作例項執行以下步驟：
+從最適化表單產生器的製作例項執行以下步驟：
 
 1. 選取「**[!UICONTROL 最適化表單容器 (根)]**」元件。
 1. 按一下 ![設定圖示](/help/forms/assets/configure-icon.svg) 圖示以開啟最適化表單容器的「**[!UICONTROL 屬性]**」。

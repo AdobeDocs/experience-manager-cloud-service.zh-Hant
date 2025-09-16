@@ -1,18 +1,18 @@
 ---
-title: 如何根據核心元件建立最適化表單範本？
-description: 根據核心元件建立最適化表單範本，以使用範本編輯器定義基本結構和初始內容。
+title: 如何使用核心元件建立最適化表單範本？
+description: 使用範本編輯器根據核心元件建立最適化表單範本，以定義基本結構和初始內容。
 feature: Adaptive Forms, Core Components
-Keywords: create adaptive form template, create adaptive form template based on core components, Use template to create adpative form.
+Keywords: form builder, build adaptive form template, adaptive form template core components, form template builder, build form template.
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
 role: User, Developer
-source-git-commit: e9c595d0afae5c29adf2842bfb2ee28a046b804c
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
-source-wordcount: '1951'
-ht-degree: 1%
+source-wordcount: '1949'
+ht-degree: 4%
 
 ---
 
-# 建立以核心元件為基礎的最適化表單範本 {#adaptive-form-templates}
+# 使用核心元件建立最適化表單範本 {#adaptive-form-templates}
 
 當您編寫表單時，可在編輯器中新增欄位和元件以定義表單結構、內容和動作。 您在表單容器的`guideRootPanel`中新增欄位和元件。 使用範本編輯器，您可以建立包含基本結構和初始內容的範本，以供作者建立表單。
 
@@ -26,7 +26,7 @@ ht-degree: 1%
 You can download and install [!DNL AEM Forms] reference content package from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) portal to import reference themes and templates to your environment.
 -->
 
-## 先決條件
+## 必要條件
 
 **為您的環境啟用最適化Forms核心元件**：當您建立程式時，最適化Forms核心元件已為您的環境啟用。請安裝最新版本以為您的AEM Cloud Service環境啟用最適化Forms核心元件。
 
@@ -42,7 +42,7 @@ You can download and install [!DNL AEM Forms] reference content package from [So
 >
 > 您可以在核心元件特定的資料夾中找到核心元件型的可編輯範本。
 
-Experience Manager提供可組織範本的全域資料夾。 但預設不會啟用。 您可以要求管理員啟用全域資料夾或建立範本資料夾。 如需有關如何建立資料夾的詳細資訊，請參閱[範本資料夾](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=zh-Hant#editing-templates-template-authors)。
+Experience Manager提供可組織範本的全域資料夾。 但預設不會啟用。 您可以要求管理員啟用全域資料夾或建立範本資料夾。 如需有關如何建立資料夾的詳細資訊，請參閱[範本資料夾](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html#editing-templates-template-authors)。
 
 ## 建立範本 {#create-template}
 
@@ -139,7 +139,7 @@ Header and footer are added in the Initial Content layer.
 
 結構圖層中的![配置容器](/help/forms/assets/layout-template-core-component.png)
 
-如需詳細資訊，請參閱文章[瞭解回應式配置](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/responsive-layout-feature-video-understand.html?lang=zh-Hant)。
+如需詳細資訊，請參閱文章[瞭解回應式配置](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/responsive-layout-feature-video-understand.html?lang=en)。
 
 ## 啟用範本 {#enabling-the-template}
 
@@ -152,11 +152,11 @@ Header and footer are added in the Initial Content layer.
 
 ## 匯入或匯出範本 {#importing-or-exporting-a-template}
 
-表單可與其範本搭配使用。 下載使用自訂範本建立的最適化表單時，未下載範本。 當您在不同的[!DNL AEM Forms]執行個體上匯入表單時，會匯入表單而不包含其範本。 如果表單已匯入，但其範本無法使用，則不會轉譯表單。 您可以封裝來自`/conf`中`https://<server>:<port>/crx/packmgr`節點的自訂範本，並將其連線您要上傳表單的[!DNL AEM Forms]執行個體。 您也可以[使用AEM Archetype建立範本，並將其部署至您的雲端服務執行個體](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html?lang=zh-Hant#prerequisites)。
+表單可與其範本搭配使用。 下載使用自訂範本建立的最適化表單時，未下載範本。 當您在不同的[!DNL AEM Forms]執行個體上匯入表單時，會匯入表單而不包含其範本。 如果表單已匯入，但其範本無法使用，則不會轉譯表單。 您可以封裝來自`/conf`中`https://<server>:<port>/crx/packmgr`節點的自訂範本，並將其連線您要上傳表單的[!DNL AEM Forms]執行個體。 您也可以[使用AEM Archetype建立範本，並將其部署至您的雲端服務執行個體](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html#prerequisites)。
 
 >[!NOTE]
 >
-> * 您也可以直接從最適化表單編輯器或最適化表單範本編輯器設定[!UICONTROL 記錄檔案]範本。 如需詳細資訊，請參閱[產生最適化Forms的記錄檔案](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)。
+> * 您也可以直接從最適化表單產生器或最適化表單範本產生器設定[!UICONTROL 記錄檔案]範本。 如需詳細資訊，請參閱[產生最適化Forms的記錄檔案](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform)。
 
 ## 將表單資料模型結構描述關聯至範本 {#associating-form-data-model-schema-in-template}
 
@@ -202,7 +202,7 @@ After you have added fields, you can add buttons such as Submit and Reset.
 
 ### 使用範本原則新增自訂屬性至最適化表單元件
 
-自訂屬性可讓您使用表單範本，將自訂屬性（索引鍵/值組）與最適化表單核心元件建立關聯。 自訂屬性會反映在元件Headless轉譯的&#x200B;**[!UICONTROL 屬性]**&#x200B;區段中。 它可讓您建立根據自訂屬性值調整的動態表單行為。 例如，開發人員可以為行動、桌上型電腦或Web平台設計各種無頭Forms元件的轉譯，大幅提升各種裝置的使用者體驗。
+自訂屬性可讓您使用表單範本，將自訂屬性 (索引鍵/值組) 與自適應表單核心元件建立關聯。自訂屬性會反映在元件Headless轉譯的&#x200B;**[!UICONTROL 屬性]**&#x200B;區段中。 可讓您建立根據自訂屬性值調整的動態表單行為。例如，開發人員可以為行動裝置、桌上型電腦或網頁平台設計各種無周邊表單元件的轉譯，大幅提升各種裝置的使用者體驗。
 
 將自訂屬性新增至最適化表單核心元件欄位的步驟如下：
 
@@ -217,7 +217,7 @@ After you have added fields, you can add buttons such as Submit and Reset.
 1. 選取&#x200B;**[!UICONTROL 自訂屬性]**&#x200B;標籤。
 1. 在&#x200B;**[!UICONTROL 原則]**&#x200B;區段下指定&#x200B;**[!UICONTROL 原則標題]**。
 1. 指定&#x200B;**[!UICONTROL 群組名稱]**，並新增與特定群組相關聯的機碼值組。 表單作者可在元件的「編輯」對話方塊中看到群組名稱。 如果您選取群組名稱，則每個關聯的索引鍵/值配對都適用於元件。
-1. 按一下&#x200B;**[「完成」]**。
+1. 按一下&#x200B;**[完成]**。
 
 ![正在範本編輯器中新增自訂屬性群組名稱](/help/forms/assets/custom-properties-core-component.png)
 
@@ -280,7 +280,7 @@ You can also save an Adaptive Form as a template for future use. To save a Adapt
 
 ## 最佳做法 {#best-practices}
 
-* 使用根據核心元件的元件建立範本，例如最適化表單文字、最適化表單容器等。 若要取得最適化Forms核心元件的資訊，[請按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant)。
+* 使用根據核心元件的元件建立範本，例如最適化表單文字、最適化表單容器等。 若要取得最適化Forms核心元件的資訊，[請按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)。
 * 限制範本的數量，以符合網站上提供的根本不同的表單型別
 * 為範本中使用的自訂元件提供必要的彈性和設定功能。
 
@@ -295,6 +295,7 @@ You can also save an Adaptive Form as a template for future use. To save a Adapt
 ## 另請參閱 {#see-also}
 
 {{see-also}}
+
 * [為您的表單建立樣式或主題](using-themes-in-core-components.md)
 * [建立最適化表單（核心元件）](/help/forms/creating-adaptive-form-core-components.md)
 

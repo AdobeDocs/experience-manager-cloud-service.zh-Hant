@@ -1,14 +1,14 @@
 ---
 title: 如何為最適化表單建立表單資料模型(FDM)？
-description: 瞭解如何根據表單資料模型(FDM)建立最適化Forms和片段。 產生並編輯FDM中資料模型物件的範例資料。
+description: 瞭解如何根據表單資料模型(FDM)建立最適化Forms和片段。 產生及編輯 FDM 中資料模型物件的樣本資料。
 feature: Adaptive Forms, Form Data Model
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: 7c30c56ca7a4d8dbdadb2e54a1b7320477556fa5
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
 source-wordcount: '1321'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 4%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/using-form-data-model.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/using-form-data-model.html) |
 | AEM as a Cloud Service  | 本文章 |
 
 
@@ -56,7 +56,7 @@ ht-degree: 4%
 
    ![create-af-3](assets/create-af-3.png)
 
-   根據表單資料模型(FDM)建立最適化表單或最適化表單片段後，表單資料模型物件會出現在最適化表單編輯器中，內容瀏覽器的&#x200B;**[!UICONTROL 資料來源]**&#x200B;索引標籤中。
+   根據表單資料模型(FDM)建立最適化表單或最適化表單片段後，表單資料模型物件會出現在最適化表單產生器中內容瀏覽器的&#x200B;**[!UICONTROL 資料來源]**&#x200B;標籤中。
 
    >[!NOTE]
    >
@@ -163,7 +163,7 @@ Edit Properties dialog for an interactive communication-->
 
 ### 使用自訂函式叫用表單資料模型(FDM) {#invoke-form-data-model-using-custom-functions}
 
-您可以使用自訂函式[&#128279;](/help/forms/rule-editor.md#custom-functions-in-rule-editor-custom-functions)，從規則編輯器叫用表單資料模型。 若要叫用表單資料模型(FDM)，請將表單資料模型新增至允許清單。 若要將表單資料模型新增至允許清單：
+您可以使用自訂函式[，從規則編輯器](/help/forms/rule-editor.md#custom-functions-in-rule-editor-custom-functions)叫用表單資料模型。 若要叫用表單資料模型(FDM)，請將表單資料模型新增至允許清單。 若要將表單資料模型新增至允許清單：
 
 1. 前往`https://server:host/system/console/configMgr`的Experience Manager Web主控台。
 1. 尋找&#x200B;**[!UICONTROL 用於服務引動的最適化表單層級白名單 — 組態處理站]**。

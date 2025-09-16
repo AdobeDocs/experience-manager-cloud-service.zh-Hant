@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 keywords: 根據核心元件的調適型表單版面配置、表單的不同版面配置、動態表單版面配置AEM、AEM Cloud Service表單版面配置、AEM核心元件中的表單版面配置型別、調適型表單版面配置
 role: User, Developer, Admin
 exl-id: dcc01d84-0d39-4fa8-ac47-71a9aba91b1e
-source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
 source-wordcount: '2106'
-ht-degree: 15%
+ht-degree: 16%
 
 ---
 
@@ -17,21 +17,22 @@ ht-degree: 15%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html?lang=zh-Hant) |
-| AEM as a Cloud Service （基礎元件） | [按一下這裡](/help/forms/layout-capabilities-adaptive-forms.md) |
-| AEM as a Cloud Service （核心元件） | 本文章 |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html) |
+| AEM as a Cloud Service (基礎元件) | [按一下這裡](/help/forms/layout-capabilities-adaptive-forms.md) |
+| AEM as a Cloud Service (核心元件) | 本文章 |
 
 最適化Forms提供第一流的元件，讓您有效率地佈局和設計表單。 版面配置可控制元件在表單中的顯示方式。 最適化Forms支援各種版面：面板、精靈、摺疊式功能表、上/水準索引標籤上的索引標籤，以及左/垂直索引標籤上的索引標籤。
 
 <!-- ![Types of Layout](/help/forms/assets/generic-layout-hero-image.png){align="center"}-->
 
-## 先決條件
+## 必要條件
 
 在探索版面的各種功能之前，請確定您的環境已啟用核心元件。 安裝最新的Far，為AEM Cloud Service環境啟用最適化Forms核心元件。
 
 ## 最適化Forms版面配置型別
 
 根據核心元件的調適型表單支援下列版面型別：
+
 * **面板配置**
 * **精靈配置**
 * **垂直配置**
@@ -68,7 +69,7 @@ ht-degree: 15%
 
 垂直索引標籤配置
 
-您可以使用[垂直分頁元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)，在表單中新增垂直分頁配置。 如需有關如何設定垂直標籤元件各種屬性的詳細指示，請參閱[垂直標籤元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)文章。
+您可以使用[垂直分頁元件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)，在表單中新增垂直分頁配置。 如需有關如何設定垂直標籤元件各種屬性的詳細指示，請參閱[垂直標籤元件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)文章。
 
 
 >[!TAB 水準標籤配置]
@@ -80,7 +81,7 @@ ht-degree: 15%
 
 水準索引標籤配置
 
-您可以使用[水準標籤元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs)，在表單中新增水準標籤配置。 如需如何設定水準標籤元件各種屬性的詳細指示，請參閱[水準標籤元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs)文章。
+您可以使用[水準標籤元件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs)，在表單中新增水準標籤配置。 如需如何設定水準標籤元件各種屬性的詳細指示，請參閱[水準標籤元件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs)文章。
 
 
 >[!TAB 摺疊式版面]
@@ -136,9 +137,9 @@ ht-degree: 15%
 
    或者，您也可以[建立新的最適化表單](/help/forms/creating-adaptive-form-core-components.md)。
 
-1. 在表單編輯器中找出可讓您新增配置的區段。
+1. 在表單產生器中找出可讓您新增版面的區段。
 
-   ![表單編輯器](/help/forms/assets/form-editor.png)
+   ![表單產生器](/help/forms/assets/form-editor.png)
 1. 按一下&#x200B;**新增**&#x200B;圖示。 圖示是加號(+)，表示可新增元件的選項。
 
    ![插入版面配置](/help/forms/assets/insert-layout-add-icon.png)
@@ -162,7 +163,7 @@ ht-degree: 15%
 
    ![新增水準索引標籤的名稱](/help/forms/assets/change-name-of-horizontal-tabs.png)
 
-1. 按一下&#x200B;**「完成」**。
+1. 按一下&#x200B;**完成**。
 
    ![水準索引標籤](/help/forms/assets/tabs-on-top-rename-component.png)
 
@@ -196,7 +197,7 @@ ht-degree: 15%
 
    ![面板名稱](/help/forms/assets/tabs-on-tops-panel-name.png)
 
-1. 按一下&#x200B;**「完成」**。
+1. 按一下&#x200B;**完成**。
 
    按一下&#x200B;**完成**&#x200B;後，這三個面板會並排顯示。 面板名稱會顯示為每個面板的標題，而您可以將表單元件新增至每個面板。
 
@@ -212,7 +213,7 @@ ht-degree: 15%
 
    ![隱藏標題](/help/forms/assets/tabs-on-top-hide-panel.png)
 
-1. 按一下&#x200B;**「完成」**。
+1. 按一下&#x200B;**完成**。
 
 同樣地，您也可以隱藏其他兩個面板的標題。 完成後，您可以繼續將表單元件新增至每個面板。
 
@@ -223,7 +224,7 @@ ht-degree: 15%
 * [Drag and drop components into a layout's panel](#drag-and-drop-components-into-a-layouts-panel) -->
 
 1. 在面板中找出可新增元件的區段。
-1. 按一下&#x200B;**新增**&#x200B;圖示。 圖示是加號(+)，表示可新增元件的選項。
+1. 按一下&#x200B;**新增**圖示。 圖示是加號(+)，表示可新增元件的選項。
    ![插入版面配置](/help/forms/assets/tabs-on-top-add-component.png)
 
    按一下&#x200B;**新增**&#x200B;圖示會顯示&#x200B;**插入新元件**&#x200B;對話方塊，其中顯示要插入的各種元件。
@@ -342,7 +343,7 @@ ht-degree: 15%
 
 ## 額外的位元組
 
-若要將元件拖放至表單編輯器中，請執行下列步驟：
+若要將元件拖放至表單產生器，請執行下列步驟：
 
 1. 找出可新增元件的區段。
 1. 導覽至您編寫環境中的左側面板，然後按一下&#x200B;**元件**。

@@ -5,7 +5,7 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Intermediate
 exl-id: 25adabfb-ff19-4cb2-aef5-0a8086d2e552
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
 workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 5%
@@ -16,11 +16,11 @@ ht-degree: 5%
 
 >[!NOTE]
 >
-> Adobe建議針對[建立新的Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md)或[將Adaptive Forms新增至AEM Sites頁面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)，使用現代且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文說明使用基礎元件製作最適化Forms的舊方法。
+> Adobe建議針對[建立新的Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)或[將Adaptive Forms新增至AEM Sites頁面](/help/forms/creating-adaptive-form-core-components.md)，使用現代且可擴充的資料擷取[核心元件](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文說明使用基礎元件製作最適化Forms的舊方法。
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/inline-style-adaptive-forms.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/inline-style-adaptive-forms.html) |
 | AEM as a Cloud Service  | 本文章 |
 
 您可以使用[主題編輯器](themes.md)來指定樣式，以定義最適化表單的整體外觀和樣式。 此外，您也可以將CSS內嵌樣式套用至個別的最適化表單元件，並即時預覽變更。 內嵌樣式會覆寫主題中提供的樣式。
@@ -29,7 +29,7 @@ ht-degree: 5%
 
 若要將內嵌樣式新增至元件：
 
-1. 在表單編輯器中開啟您的表單，並將模式變更為樣式模式。 若要將模式變更為樣式模式，請在頁面工具列中選取![畫佈下拉式清單](assets/Smock_ChevronDown.svg) > **[!UICONTROL 樣式]**。
+1. 在表單產生器中開啟表單，並將模式變更為樣式模式。 若要將模式變更為樣式模式，請在頁面工具列中選取![畫佈下拉式清單](assets/Smock_ChevronDown.svg) > **[!UICONTROL 樣式]**。
 1. 在頁面中選取元件，然後選取編輯按鈕![edit-button](assets/edit.svg)。 在側邊欄中開啟樣式屬性。
 
    您也可以從側欄中的表單階層樹狀結構中選取元件。 表單階層樹狀結構可在側邊欄中做為表單物件使用。
@@ -40,7 +40,7 @@ ht-degree: 5%
 
 1. 按一下側邊欄中的索引標籤以指定CSS屬性。 您可以指定屬性，例如：
 
-   * [!UICONTROL Dimension和位置] （顯示設定、邊框間距、高度、寬度、邊界、位置、z索引、浮動、清除、溢位）
+   * [!UICONTROL 尺寸與位置] （顯示設定、邊框間距、高度、寬度、邊界、位置、z索引、浮點數、清除、溢位）
    * [!UICONTROL 文字] （字型系列、粗細、顏色、大小、行高和對齊）
    * [!UICONTROL 背景] （影像和漸層，背景顏色）
    * [!UICONTROL 框線] （寬度、樣式、顏色、半徑）
@@ -82,7 +82,7 @@ ht-degree: 5%
   </tr>
   <tr>
    <td><p>標籤</p> </td>
-   <td><p>Dimension與位置&gt;寬度</p> </td>
+   <td><p>尺寸與位置&gt;寬度</p> </td>
    <td><p>100畫素</p> </td>
    <td><p>修正標籤的寬度為100px</p> </td>
   </tr>
