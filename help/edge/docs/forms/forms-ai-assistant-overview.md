@@ -1,100 +1,97 @@
 ---
-title: Forms Experience Builder
+title: 表單體驗建立工具
 description: 使用表單片段更快地製作強大的表單
 feature: Edge Delivery Services
 hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: 6134772ea9916fc17fb7fc8a30e18799a81d4994
+source-git-commit: 6bbec984e1e22764c762d95ff52ae1f474c6b413
 workflow-type: tm+mt
 source-wordcount: '939'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
 
-# Forms Experience Builder簡介
+# 表單體驗建立工具簡介
 
 >[!IMPORTANT]
 >
-> **文件內容可能隨時變更**：此文件目前正在針對產品進行測試，可能會進行更新和修訂。隨著Forms Experience Builder在早期採用者計畫中不斷演化，功能、命令和範例可能會有所變更。
+> **文件內容可能隨時變更**：此文件目前正在針對產品進行測試，可能會進行更新和修訂。隨著表單體驗建立工具在早期採用者方案期間持續發展，相關的功能、指令和範例可能會有所變更。
 
-AEM Forms Experience Builder利用Generative AI的強大功能，將數位表單體驗的建立和更新大眾化並加速。 藉由啟用透過自然語言互動驅動的意圖工作流程，讓使用者能夠快速輕鬆地順暢地設計、修改和最佳化表單。
+AEM Forms 體驗建立工具善用生成式 AI 的強大功能，讓數位表單體驗的建立及更新大眾化並加速。藉由自然語言互動驅動的意圖型工作流程，讓使用者能夠快速、簡單地順暢設計、修改和最佳化表單。
 
-Forms Experience Builder以現代網路技術為基礎，並以進階AI服務為後盾，可讓技術和非技術使用者透過對話式介面建立精細的專業級表單。 這種革命性的方法可將實現價值的時間從數天縮短至數小時，透過介面的簡化消除技術障礙，並可在整個形態的生態系統中調整現代化工作。
-
-
+表單體驗建立工具建置於現代網頁技術之上，並由先進的 AI 服務提供支援，讓技術使用者和非技術使用者都能透過對話式介面建立複雜的專業級表單。這種革命性的方法，將價值實現所需的時間從幾天縮短到幾小時，透過介面簡化而消除技術障礙，並在整個表單生態系統中擴展現代化努力。
 
 ## 核心功能
 
-Forms Experience Builder提供建立強大數位表單的兩個主要工作流程：
+表單體驗建立工具提供兩種用於建立強大數位表單的主要工作流程：
 
-### &#x200B;1. AI支援表單建立
+### &#x200B;1. AI 驅動的表單建立
 
-**自然語言表單產生**
+**以自然語言產生表單**
 
-使用簡單的英文說明，從頭開始建立完整的表單。 只需說明您的需求，例如「使用評等刻度和評論欄位建立客戶意見表單」，Forms Experience Builder就會產生適當的表單結構。 您可以使用視覺化編輯器的體驗產生器，新增更多欄位、驗證規則和提交邏輯。
+使用簡單的英語描述，從頭開始建立完整的表單。只需描述您的要求，例如「建立包含評分量表和評論欄位的客戶回饋表單」，表單體驗建立工具就會產生適當的表單結構。您可以使用視覺編輯器的體驗建立工具新增更多欄位、驗證規則和提交邏輯。
 
 **動態欄位管理**
 
-透過對話式命令新增、修改或移除表單欄位。 AI可瞭解內容，並可根據您的需求聰明地建議欄位型別、驗證規則和使用者介面改進。
+透過對話式指令新增、修改或移除表單欄位。AI 會理解內容，並且可以根據您的要求智慧地建議欄位類型、驗證規則和使用者介面改善。
 
-**配置最佳化**
+**版面最佳化**
 
-透過自然語言更新表單版面配置和設定。 請求變更，例如「將表單版面變更為精靈版面配置」，以及Forms Experience Builder套用適當的樣式和版面配置。
+透過自然語言更新表單版面和設定。請求變更，例如「將表單版面變更為精靈版面」，表單體驗建立工具便會套用適當的樣式和版面調整。
 
-**完整的提交動作組態**
+**全面的提交動作設定**
 
-設定表單提交以與您現有的業務系統整合：
+設定表單提交，與您現有的業務系統整合：
 
 - **電子郵件整合**：設定自動化電子郵件通知和確認
-- **REST API端點**：連線到自訂應用程式和服務
-- **雲端儲存空間**：與Azure Blob儲存空間、SharePoint和OneDrive整合
-- **工作流程自動化**：連線至Power Automate和Workfront Fusion
-- **行銷平台**：與Marketo直接整合，用於銷售機會管理
-- **AEM工作流程**：善用現有的AEM工作流程功能
+- **REST API 端點**：連接至自訂應用程式和服務
+- **雲端儲存空間**：與 Azure Blob Storage、SharePoint 及 OneDrive 整合
+- **工作流程自動化**：連接至 Power Automate 和 Workfront Fusion
+- **行銷平台**：與 Marketo 直接整合，用於商機管理
+- **AEM 工作流程**：善用現有的 AEM 工作流程功能
 
-
-### 2.智慧型匯入和轉換
+### &#x200B;2. 智慧匯入和轉換
 
 **支援的匯入格式**
 
-將現有的表單和檔案轉換為互動式數位體驗。 Forms Experience Builder支援：
+將現有的表單和文件轉變為互動式數位體驗。表單體驗建立工具支援：
 
-- **Acroforms**：具有現有欄位結構的互動式PDF forms
-- **XFA PDF**：複雜的XML型表單架構
-- **平面PDF**：轉換為互動式表單的靜態檔案
-- **影像和熒幕擷取畫面**： JPG、PNG格式（請洽詢團隊以取得大小限制）
-- **手繪的Forms**：草圖和紙張形式的像片
+- **Acroforms**：能具備現有欄位結構的互動式 PDF 表單
+- **XFA PDF**：XML 型的複雜表單架構
+- **平面 PDF**：靜態文件轉換為互動式表單
+- **影像與螢幕擷圖**：JPG、PNG 格式 (請與團隊確認尺寸限制)
+- **手繪表單**：草圖與紙本表單照片
 
 
-**智慧型轉換程式**
+**智慧轉換過程**
 
-上傳的內容會分析至：
+將上傳的內容進行分析，用於：
 
-- 偵測欄位型別和關係
-- 儘可能保留版面
-- 透過現代回應式設計增強
+- 偵測欄位類型和關係
+- 盡可能保留版面
+- 透過現代回應式設計進行增強
 - 新增進階驗證和條件式邏輯
-- 針對協助工具與行動體驗最佳化
+- 針對可存取性和行動體驗進行最佳化
 
 ## 運作方式
 
-Forms Experience Builder會遵循簡易的對話式方法：
+表單體驗建立工具會遵循簡單的對話方式：
 
     ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-    │ 1. 說明    │───▶│ 2. AI建立│───▶│ 3。 精簡和    │
-    │您的表單      │    │初始表單   │    │設定      │
-    │需求   │    │                 │    │                 │
+    │  1. 描述    │───▶│  2. AI 建立  │───▶│  3. 調整與    │
+    │  您的表單      │    │  初始表單   │    │  設定      │
+    │  要求   │    │                 │    │                 │
     └─────────────────┘    └─────────────────┘    └─────────────────┘
     │                       │                       │
     │                       │                       │
     ▼                       ▼                       ▼
     ┌───────────────────────────────────────────────────────────────────────────┐
-    │ 「建立貸款申請表單」→含相關資訊的表單                  │
-    │ 「新增電子郵件欄位」           →欄位和基本                          │
-    │ 「將歸檔的電子郵件值設定為@firstname@gmail.com」→驗證規則   │
+    │  「建立貸款申請表單」  →  表單相關                  │
+    │  「新增電子郵件欄位」           →  欄位與基本                          │
+    │  「設定將電子郵件值傳送至 @firstname@gmail.com」 →  驗證規則   │
     └───────────────────────────────────────────────────────────────────────────┘
 
 ## 範例情境
@@ -104,8 +101,8 @@ Forms Experience Builder會遵循簡易的對話式方法：
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">將PDF forms轉換為數位Forms</p>
-                    <p class="is-size-6">將Acroform、XFA PDF或平面PDF檔案轉換為具增強功能的回應式互動式數位表單。</p>
+                    <p class="headline is-size-6 has-text-weight-bold">將 PDF 表單轉換為數位表單</p>
+                    <p class="is-size-6">將 Acroforms、XFA PDF 或平面 PDF 文件轉換為具有增強功能的回應式互動式數位表單。</p>
                 </div>
             </div>
         </div>
@@ -114,8 +111,8 @@ Forms Experience Builder會遵循簡易的對話式方法：
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">更新舊版XFA Forms</p>
-                    <p class="is-size-6">透過改善的使用者工作流程，將複雜的XFA應用程式轉換為現代、可存取的數位體驗。</p>
+                    <p class="headline is-size-6 has-text-weight-bold">將舊版 XFA 表單現代化</p>
+                    <p class="is-size-6">藉由改善的使用者工作流程，將複雜的 XFA 應用程式轉變為現代、可存取的數位體驗。</p>
                 </div>
             </div>
         </div>
@@ -124,8 +121,8 @@ Forms Experience Builder會遵循簡易的對話式方法：
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">將熒幕擷取畫面轉換為數位Forms</p>
-                    <p class="is-size-6">將影像、熒幕擷取畫面或手繪表單轉換為功能齊全的數位體驗。</p>
+                    <p class="headline is-size-6 has-text-weight-bold">將螢幕擷圖轉換為數位表單</p>
+                    <p class="is-size-6">將影像、螢幕擷圖或手繪表單轉變為功能齊全的數位體驗。</p>
                 </div>
             </div>
         </div>
@@ -143,25 +140,25 @@ Import existing HTML forms and enhance them with advanced features while preserv
 - Multi-channel submission options
 - Enhanced user experience design -->
 
-## Forms Experience Builder與傳統開發
+## 表單體驗建立工具與傳統開發的比較
 
-| 層面 | 傳統表單建立 | Forms Experience Builder |
+| 層面 | 傳統表單建立 | 表單體驗建立工具 |
 |--------|---------------------------|----------------------|
-| **建立時間** | 2-3天 | 2-3小時 |
+| **建立所需時間** | 2 至 3 天 | 2 至 3 小時 |
 | **技術知識** | 必要 | 非必要 |
 | **驗證規則** | 手動編碼 | 自然語言 |
-| **協助工具** | 手動實施 | 內建法規遵循 |
+| **無障礙功能** | 手動實施 | 內建合規性 |
 
 
-## 組織的好處
+## 組織益處
 
 <div class="columns">
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Democratized Form Creation">
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">普及化表單建立</p>
-                    <p class="is-size-6">透過自然語言交談，讓非技術使用者無需程式設計知識即可建立複雜表單。</p>
+                    <p class="headline is-size-6 has-text-weight-bold">大眾化的表單建立</p>
+                    <p class="is-size-6">透過自然語言對話，讓非技術使用者不需要具備程式設計知識即可建立複雜的表單。</p>
                 </div>
             </div>
         </div>
@@ -170,8 +167,8 @@ Import existing HTML forms and enhance them with advanced features while preserv
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">縮短實現價值的時間(TTV)</p>
-                    <p class="is-size-6">大幅加快表單開發，從數天縮短至數小時，讓數位計畫更快上市。</p>
+                    <p class="headline is-size-6 has-text-weight-bold">縮短實現價值時間 (TTV)</p>
+                    <p class="is-size-6">將表單開發時間從數日大幅縮短至數小時，加快數位計劃的上市速度。</p>
                 </div>
             </div>
         </div>
@@ -180,8 +177,8 @@ Import existing HTML forms and enhance them with advanced features while preserv
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">介面簡單化</p>
-                    <p class="is-size-6">使用直覺式對話介面消除學習曲線，減少培訓時間並增加採用率。</p>
+                    <p class="headline is-size-6 has-text-weight-bold">介面簡潔</p>
+                    <p class="is-size-6">透過直覺的對話式介面消除學習曲線，減少培訓時間並提高採用率。</p>
                 </div>
             </div>
         </div>
@@ -190,8 +187,8 @@ Import existing HTML forms and enhance them with advanced features while preserv
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">縮放現代化工作</p>
-                    <p class="is-size-6">有效率地匯入舊版表單產品組合、保留商業邏輯，並提升整個表單生態系統的使用者體驗。</p>
+                    <p class="headline is-size-6 has-text-weight-bold">擴大現代化努力</p>
+                    <p class="is-size-6">有效地將舊版表單組合進行現代化改造，保留商業邏輯並增強整個表單生態系統的使用者體驗。</p>
                 </div>
             </div>
         </div>
@@ -200,42 +197,42 @@ Import existing HTML forms and enhance them with advanced features while preserv
 
 ## 上線
 
-Forms Experience Builder目前屬於Early Access (EA)計畫的一部分。 若要參與及取得存取權，您需要下列資訊：
+表單體驗建立工具目前是以搶先體驗 (EA) 方案一部分的方式提供。若要參與並取得存取權限，您需要以下資訊：
 
 ### 必要資訊
 
-- **IMS組織ID**：您的Adobe組織識別碼
-- **方案ID**：您在Adobe Experience Cloud中的特定方案識別碼
-- **專案詳細資料**：時間表、範圍和預期使用案例
-- **正式工作電子郵件**：與您組織的Adobe帳戶相關聯
+- **IMS 組織 ID**：您的 Adobe 組織識別碼
+- **方案 ID**：您在 Adobe Experience Cloud 內的特定方案識別碼
+- **專案詳細資料**：時間軸、範圍和預期使用案例
+- **官方工作電子郵件**：與您組織的 Adobe 帳戶關聯
 
 
-### 如何取得IMS組織ID和方案ID
+### 如何取得 IMS 組織 ID 和方案 ID
 
-如需尋找IMS組織ID和計畫ID的詳細步驟，請參閱：
+關於尋找 IMS 組織 ID 和方案 ID 的詳細步驟，請參閱：
 
-- [Adobe Experience Cloud組織設定指南](/help/onboarding/cloud-manager-introduction.md)
-- [程式和環境管理](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
+- [Adobe Experience Cloud 組織設定指南](/help/onboarding/cloud-manager-introduction.md)
+- [方案和環境管理](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
 
 ### 要求存取權
 
-1. 使用上述指南收集您的IMS組織ID和計畫ID
-2. 傳送電子郵件至[aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)要求存取權
-3. 在您的請求中加入：
-   - 組織名稱和IMS組織ID
-   - 方案ID
-   - 專案時間表和範圍
+1. 使用上述指南收集您的 IMS 組織 ID 和方案 ID
+2. 寄送電子郵件至 [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) 請求存取權限
+3. 請求中需包含以下資訊：
+   - 組織名稱和 IMS 組織 ID
+   - 方案 ID
+   - 專案時間軸和範圍
    - 預期使用案例和業務目標
 
 >[!IMPORTANT]
 >
-> **有限可用性方案**：存取Forms Experience Builder須待內部利害關係人的核准後，才能進行。 Adobe將根據方案容量以及與搶先存取條件的一致性，審查您的請求。 核准並不保證且取決於目前方案的可用性。
+> **限量開放方案**：表單體驗建立工具的存取權限需經內部利害關係人核准。Adobe 將根據方案產能以及與搶先體驗條件的相符程度審閱您的請求。不保證一定能獲得核准，且會取決於目前方案的可用性。
 
-如需搶先存取程式及其功能的詳細資訊，請參閱[AEM Forms搶先存取檔案](/help/forms/early-access-ea-features.md)。
+關於搶先體驗方案及其功能的進一步資訊，請參閱 [AEM Forms 搶先體驗文件](/help/forms/early-access-ea-features.md)。
 
 
 ## 快速入門
 
-若要開始使用Forms Experience Builder，請瀏覽[Forms Experience Builder檔案](forms-ai-assistant-getting-started.md)。 您可以透過Forms編輯器或通用編輯器存取AEM Forms Experience Builder，具體取決於您偏好的工作流程。
+若要開始使用表單體驗建立工具，請造訪[表單體驗建立工具文件](forms-ai-assistant-getting-started.md)。您可以透過 AEM Forms 編輯器或通用編輯器存取表單體驗建立工具，取決於您偏好何種工作流程。
 
-對於希望轉換表單建立流程的組織，Forms Experience Builder提供強大、直覺式的解決方案，結合對話式AI的彈性與企業級表單管理的健全性。
+對於希望轉變其表單建立流程的組織，表單體驗建立工具能提供強大、直覺的解決方案，將對話式 AI 的靈活性與企業級表單管理的穩健性相結合。
