@@ -224,7 +224,7 @@ ht-degree: 16%
 * [Drag and drop components into a layout's panel](#drag-and-drop-components-into-a-layouts-panel) -->
 
 1. 在面板中找出可新增元件的區段。
-1. 按一下&#x200B;**新增**圖示。 圖示是加號(+)，表示可新增元件的選項。
+1. 按一下&#x200B;**新增**&#x200B;圖示。 圖示是加號(+)，表示可新增元件的選項。
    ![插入版面配置](/help/forms/assets/tabs-on-top-add-component.png)
 
    按一下&#x200B;**新增**&#x200B;圖示會顯示&#x200B;**插入新元件**&#x200B;對話方塊，其中顯示要插入的各種元件。

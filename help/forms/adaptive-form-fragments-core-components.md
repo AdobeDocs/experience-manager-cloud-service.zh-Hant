@@ -63,7 +63,7 @@ ht-degree: 13%
 
    ![表單資料模型(FDM)](assets/create-af-3.png)
 
-1. 按一下[建立]****，然後按一下[開啟]****，以編輯模式開啟具有預設範本的片段。 在編輯模式中，您可以將任何最適化表單元件新增到片段。
+1. 按一下[建立]&#x200B;**&#x200B;**，然後按一下[開啟]&#x200B;**&#x200B;**，以編輯模式開啟具有預設範本的片段。 在編輯模式中，您可以將任何最適化表單元件新增到片段。
 
 <!-- For information about Adaptive Form components, see [Introduction to authoring Adaptive Forms](../../forms/using/introduction-forms-authoring.md). --> 此外，如果您選取XML結構描述作為片段的表單模型，則內容尋找器中會顯示一個顯示表單模型階層的新索引標籤。 它可讓您將表單模型元素拖放至片段上。<!--The added form-model elements get converted into form components while retaining the original properties from the associated XDP or XSD. -->
 

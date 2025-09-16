@@ -176,7 +176,7 @@ ht-degree: 1%
    * **送出表單（並傳送合約以供簽署）**：此選項會立即送出表單，然後傳送表單以供簽署給收件者。
    * **提交表單（在每個收件者完成簽署儀式後）**：此選項只會在所有簽署者完成簽署程式後提交最適化Forms。 您可以設定間隔來檢查所有簽署者的簽署狀態。 如需詳細資訊，請參閱[設定 [!DNL Adobe Acrobat Sign] 排程器](/help/forms/adobe-sign-integration-adaptive-forms.md#configure-dnl-adobe-acrobat-sign-scheduler-to-sync-the-signing-status)。
 
-1. 從&#x200B;**[!UICONTROL 收件者可以完成]**&#x200B;對話方塊中選取簽署順序。 收件者可以依序簽署最適化表單&#x200B;**** — 一個接一個的收件者，或&#x200B;**[!UICONTROL 同時]** — 任何順序。
+1. 從&#x200B;**[!UICONTROL 收件者可以完成]**&#x200B;對話方塊中選取簽署順序。 收件者可以依序簽署最適化表單&#x200B;**&#x200B;** — 一個接一個的收件者，或&#x200B;**[!UICONTROL 同時]** — 任何順序。
 
    一位收件者會依序每次收到Adobe Sign合約。 收件者完成指派的動作後，協定會傳送給下一個收件者，依此類推。
 
@@ -350,8 +350,8 @@ Adobe Sign合約ID (agreementId)包含在最適化表單的提交資料中。 �
 **問：**&#x200B;您可以將最適化表單內嵌在其他最適化表單中。 內嵌的最適化表單是否可啟用[!DNL Adobe Sign]？
 **Ans：**&#x200B;否，Experience Manager Forms不支援使用內嵌[!DNL Adobe Sign]已啟用的最適化表單以供簽署的最適化表單
 
-**問：**當我使用進階範本建立最適化表單並開啟以進行編輯時，出現錯誤訊息「電子簽章或收件者設定不正確」。 隨即顯示。 如何解決錯誤訊息？
-使用進階範本建立的**Ans：**&#x200B;最適化表單已設定為使用[!DNL Adobe Sign]。 若要解決錯誤，請建立並選取[!DNL Adobe Sign]雲端設定，然後為最適化表單設定[!DNL Adobe Sign]收件者。
+**問：**&#x200B;當我使用進階範本建立最適化表單並開啟以進行編輯時，出現錯誤訊息「電子簽章或收件者設定不正確」。 隨即顯示。 如何解決錯誤訊息？
+使用進階範本建立的&#x200B;**Ans：**&#x200B;最適化表單已設定為使用[!DNL Adobe Sign]。 若要解決錯誤，請建立並選取[!DNL Adobe Sign]雲端設定，然後為最適化表單設定[!DNL Adobe Sign]收件者。
 
 **問：**&#x200B;我可以在最適化表單的靜態文字元件中使用[!DNL Adobe Sign]文字標籤嗎？
 **ANS：**&#x200B;是，您可以在文字元件中使用文字標籤，將[!DNL Adobe Sign]欄位新增至啟用最適化表單的記錄檔案（僅限自動產生記錄檔案選項）。 若要瞭解建立文字標籤的程式和規則，請參閱[Adobe Sign檔案](https://helpx.adobe.com/sign/using/text-tag.html)。 另請注意，最適化Forms對文字標籤的支援有限。 您只能使用文字標籤來建立[Adobe Sign Block](working-with-adobe-sign.md#configure-cloud-signatures-for-an-adaptive-form)支援的欄位。
