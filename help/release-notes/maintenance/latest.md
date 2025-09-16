@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 33468de99a3e77539f4bdc9435324c9f52a45d9f
-workflow-type: ht
-source-wordcount: '350'
-ht-degree: 100%
+source-git-commit: d73ccc454c89c7e06752de694af97ac26694be17
+workflow-type: tm+mt
+source-wordcount: '902'
+ht-degree: 23%
 
 ---
 
@@ -16,47 +16,83 @@ ht-degree: 100%
 
 下節是 Experience Manager as a Cloud Service 目前維護版本的技術版本發行說明。
 
-## 版本 22171 {#22171}
+## 發行說22450 {#22450}
 
-以下摘要說明維護版本 22171 的持續改善內容，此版本已於 2025 年 9 月 2 日公開發佈。前一個維護版本是版本 21994。
+以下摘要說明維護版本22450數的持續改善，該版本於2025年9月16日公開發佈。 前一個維護版本是版本 22171。
 
 啟用 2025.9.0 功能即可使用此維護版本的完整功能集。如需詳細資訊，請參閱 [Experience Manager 發行路徑圖](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
-### 新功能  {#new-features-22171}
+### 新功能 {#new-features-22450}
 
-* ASSETS-53136：使用 OpenAPI 在 Dynamic Media 中支援虛名 ID。
+* SITES-32595：現在可以識別已完成且已略過或拒絕片段的工作流程。 工作流程API回應中提供新屬性，列出因無效或參考無效而被排除的片段。
+* SITES-33642：現在會產生新的API事件，並用於修改的內容片段。
+* SITES-33320：現在可以透過搜尋API使用其`technicalName`來搜尋內容片段模型。
 
-### 增強功能 {#enhancements-22171}
+### 增強功能 {#enhancements-22450}
+
+* SITES-34023：已將`technicalName`欄位新增至內容片段模型端點的回應，以便更好地識別。
+* SITES-32766：內容片段模型中的內容資產參考現在支援較廣泛的二進位檔案型別。
+* SITES-33974：改進OpenAPI說明檔案，使其更精確且更方便使用。
+* SITES-9173：快取`ContentPolicyStatus`。
+* SITES-9290：改善`TouchEditContext`的快取。
+* SITES-33355：在工作流程主控台的「檢視裝載」上開啟新的CF編輯器。
+* SITES-33356：在建立CF上開啟新的CF編輯器→在觸控式UI管理UI中開啟。
+* SITES-32952：使用傳送API時，CFM欄位的預設值處理不一致。
+* SITES-31539：使用通用編輯器的Edge Delivery：在`head.html`中新增對通用編輯器設定中繼標籤的支援。
+* SITES-20672：使用通用編輯器的Edge Delivery：新增對製作中其他大量中繼資料試算表的支援。
+* SITES-32963：使用Universal Editor的Edge Delivery：為最佳化目標、自動分配和自我學習新增實驗中繼資料。
+* SITES-30847：核心元件 2.30.0 版。
+* SITES-29617： referencedBy端點已更新為使用ReferenceSearch類別，改善其效能和可靠性。
+* SITES-19308：透過最佳化參考驗證步驟來增強頁面刪除流程的效能。
+* SITES-34293：對樣板化資源實作延遲載入，以改善效能。
+* SITES-33892：新增功能切換，以略過偽頁面的參照檢查，藉此改善效能。
+
+### 已修正的問題 {#fixed-issues-22450}
+
+* CQ-4360550：修正AEM雲端服務中回覆頁面移動後語言副本意外消失的問題。
+* SITES-25232：設定日期和退出時間扭曲連結沒有可見的焦點指標。
+* SITES-25258：焦點不是透過刪除註解模型對話方塊來管理。
+* SITES-25305：「人口統計」工具列不會以邏輯順序接收焦點。
+* SITES-25366：熒幕助讀程式不會宣佈Teaser強制回應視窗的載入狀態。
+* SITES-34276：使用通用編輯器的Edge Delivery：修正未套用至發佈層的自動建立CORS原則。
+* SITES-34811：使用通用編輯器的Edge Delivery：修正hlx選擇器未新增到製作時試算表連結的問題。
+* SITES-31669：工具>網站>啟動中的未當地語系化字串「此頁面重新導向至」。
+* SITES-30879： 「網站>頁面編輯器>搜尋元件」中的未當地語系化字串。
+* SITES-30959：頁面編輯器>影像元件中未本地化的字串。
+* SITES-21743：未當地語系化「請選取要顯示的檔案」。 「頁面編輯器> PDF檢視器」中的字串
+* SITES-19785：字串在核心元件網站>索引標籤中未本地化。
+* SITES-22059：核心元件網站> PDF檢視器中的未當地語系化「檔案預覽無法使用」字串。
+* SITES-33360：作業期間發生未當地語系化的「錯誤」。 提供的路徑不是「啟動>編輯」中的「啟動」字串。
+* SITES-32975： 「Headless UI >啟動>比較啟動與Source」中的未本地化日期格式。
+* SITES-32973：Headless UI > Launches > Rebase中的硬式編碼字串。
+* SITES-13540：「啟動>促銷活動」中未本地化的字串。
+* SITES-13085： 「網站>啟動項建立頁面」中的未當地語系化錯誤字串。
+* SITES-21499：未本地化的字串是「網站>啟動>編輯」。
+* SITES-14961：在「網站>屬性> Blueprint >轉出」對話方塊中截斷日期欄位。
+* SITES-33764：啟動篩選器(Source路徑/工作流程建立的啟動)無法運作。
+* SITES-33884：「提升目前頁面和子頁面」會無意中提升超出範圍的頁面。
+* SITES-33611：即時副本概覽不適用於高流量市場。
+* SITES-34331：載入非管理員使用者的轉出覆蓋時逾時503。
+* SITES-34403：關機期間`NullPointerException`中的`GraphqlClientImpl deactivate()`。
+* SITES-33817：解決UI結構描述和JCR模型之間的同步問題以確保一致性。
+* SITES-31141：路徑未代表的內容參考現在會在API回應中正確傳回。
+* SITES-34080：內容片段建立程式現在更健全，如果沒有欄位提供給請求，也不會失敗。
+* SITES-30773：使用「尋找和取代」尋找字詞的規則運算式已改善，以正確比對UTF-8字元。
+* SITES-33742：解決使用工作流程API時無法成功移動內容片段的錯誤。
+
+### 已知問題 {#known-issues-22450}
 
 無。
 
-### 已修正的問題 {#fixed-issues-22171}
-
-* ASSETS-52510：包含 Unicode `U+202F` 的檔案名稱無法執行重複檔案名稱偵測。
-* ASSETS-53489：在資產視圖 UI 中刪除資料夾，不會取消核准所有包含的資產。
-* ASSETS-54821：Asset Link 中出現間歇性「伺服器錯誤」。
-* ASSETS-55024：AEM Assets「透過電子郵件下載」範本中有損壞的影像。
-* ASSETS-55325：資產重新命名後，Dynamic Media 靜態 URL 省略檔案副檔名。
-* ASSETS-55334：此「連結共用」對話框短暫閃爍後消失或是從未顯示。
-* ASSETS-55382：重新啟動的非同步資產工作會建立重複的目標資料夾。
-* ASSETS-55472：管理發佈選項「僅包含已發佈的頁面」被忽略。
-* SITES-31600：Contexthub js 錯誤中斷個人化。
-
-如需更多有關該版本中新增功能和增強功能以及已修復問題的資訊，請查看 [Experience Manager Guides 發行藍圖](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)。
-
-### 已知問題 {#known-issues-22171}
-
-無。
-
-### 已過時的功能和 API {#deprecated-22171}
+### 已過時的功能和 API {#deprecated-22450}
 
 [「已過時和已移除的功能及 API」](/help/release-notes/deprecated-removed-features.md)文件中詳細介紹 AEM as a Cloud Service 中已過時和已移除的功能及 API。
 
-### 安全性修正 {#security-22171}
+### 安全性修正 {#security-22450}
 
-AEM as a Cloud Service 專門負責將您的平台的安全性與效能最佳化。此維護版本解決了 7 個已確認的漏洞，強化我們提供健全系統保護的承諾。
+AEM as a Cloud Service 專門負責將您的平台的安全性與效能最佳化。此維護版本解決 18 個已確認的漏洞，強化我們提供健全系統保護的承諾。
 
-### 嵌入技術 {#embedded-tech-22171}
+### 嵌入技術 {#embedded-tech-22450}
 
 | 技術 | 版本 | 連結 |
 |---|---|---|
