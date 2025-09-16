@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: 53e476981874597bfb7f9293e67b2d135c72b318
+source-git-commit: 3a8670061ce0e45f9ae70ab8d8f5df0604ed503a
 workflow-type: tm+mt
-source-wordcount: '6619'
-ht-degree: 98%
+source-wordcount: '6618'
+ht-degree: 99%
 
 ---
 
@@ -279,7 +279,7 @@ ht-degree: 98%
    + [Sling Service 使用者對應和服務使用者定義的最佳做法](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
    + [Adobe as a Cloud Service 的客戶自控金鑰](/help/security/customer-managed-keys.md)
 + Experience Hub {#experience-hub}
-   + [關於Experience Hub](/help/experience-hub.md)
+   + [關於 Experience Hub](/help/experience-hub.md)
 + 上線 {#onboarding}
    + [從這裡開始](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=zh-hant)
    + 上線歷程 {#journey}
@@ -525,7 +525,7 @@ ht-degree: 98%
       + [將內容片段匯出到 Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [將體驗片段匯出到 Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [與 Adobe Campaign 整合](/help/sites-cloud/integrating/campaign.md)
-      + [在Adobe Journey Optimizer中使用內容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=zh-Hant)
+      + [在Adobe Journey Optimizer中使用內容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [AEM as a Cloud Service 的操作遙測](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Assets {#assets}
    + [概觀與新增功能](/help/assets/overview.md)
@@ -537,8 +537,8 @@ ht-degree: 98%
    + [Assets as a Cloud Service Ultimate](/help/assets/assets-ultimate-overview.md)
    + [啟用 Assets as a Cloud Service Ultimate](/help/assets/enable-assets-ultimate.md)
    + [Assets as a Cloud Service Prime](/help/assets/assets-prime.md)
-   + [疑難排解AEM Assets問題](/help/assets/troubleshoot-aem-assets.md)
-   + [Assets 協作者使用者](/help/assets/assets-collaborator-users.md)
+   + [針對 AEM Assets 問題進行疑難排解](/help/assets/troubleshoot-aem-assets.md)
+   + [Assets 協作者](/help/assets/assets-collaborator-users.md)
    + 管理數位資產 {#manage}
       + 微前端資產選擇器 {#asset-selector}
          + [資產選擇器概觀](/help/assets/overview-asset-selector.md)
@@ -689,7 +689,7 @@ ht-degree: 98%
          + [預覽資產](/help/assets/preview-assets.md)
          + [常見問題](/help/assets/dynamic-media-open-apis-faqs.md)
          + [設定自訂網域](/help/assets/configure-custom-domain.md)
-         + [最佳化影像](/help/assets/optimize-images-using-dynamic-media-with-openapi-capabilities.md)
+         + [將影像最佳化](/help/assets/optimize-images-using-dynamic-media-with-openapi-capabilities.md)
    + 使用資產視圖 {#assets-view}
       + [簡介](/help/assets/assets-view-introduction.md)
       + [快速入門](/help/assets/get-started-assets-view.md)
@@ -859,7 +859,7 @@ ht-degree: 98%
                + [在最適化表單中使用非同步函數](/help/forms/using-async-funct-in-rule-editor.md)
                + [對於基於核心元件的表單，在視覺規則編輯器中調用服務增強功能](/help/forms/invoke-service-enhancements-rule-editor.md)
                + [規則編輯器增強功能](/help/forms/rule-editor-enhancements-use-cases.md)
-               + [規則編輯器中的API整合](/help/forms/api-integration-in-rule-editor.md)
+               + [規則編輯器中的 API 整合](/help/forms/api-integration-in-rule-editor.md)
             + 以核心元件為主之自適應表單的自訂函數簡介{#create-and-use-custom-function-core-component}
                + [以核心元件為主之最適化表單的自訂函數簡介](/help/forms/create-and-use-custom-functions.md)
                + [建立和使用以核心元件為主之最適化表單的自訂函數](/help/forms/custom-function-core-component-create-function.md)
@@ -1001,7 +1001,22 @@ ht-degree: 98%
       + [Dispatcher 和 CDN 快取](/help/forms/troubleshooting-caching-performance.md)
       + [重新啟動 AEM SDK](/help/forms/restart-aem-sdk.md)
       + [解決表單建立失敗的問題](/help/forms/form-creation-failing.md)
-      + [自訂提交動作中的502錯誤頁面](/help/forms/custom-submit-action-troubleshooting.md)
+      + [自訂提交動作中的 502 錯誤頁面](/help/forms/custom-submit-action-troubleshooting.md)
++ AEM中的AI {#ai-in-aem}
+   + [概觀](/help/ai-in-aem/overview.md)
+   + AI 助理 {#ai-assistant}
+      + [設定 AEM 中的 AI 助理](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md)
+      + [關於 AEM 中的 AI 助理](/help/implementing/cloud-manager/ai-assistant-in-aem.md)
+   + 生成式 AI {#generative-ai}
+      + [產生變化版本：與 AEM 編輯器整合](/help/generative-ai/generate-variations-integrated-editor.md)
+      + [產生變化版本](/help/generative-ai/generate-variations.md)
+   + 表單體驗建立工具 {#forms-experience-builder}
+      + [AEM Forms 適用的 AI 助理 (表單體驗建立工具)](/help/edge/docs/forms/forms-ai-assistant-overview.md)
+      + [AEM Forms 適用的 AI 助理快速入門](/help/edge/docs/forms/forms-ai-assistant.md)
+      + [AEM Forms 適用的 AI 助理 (表單體驗建立工具) 快速入門](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)
+      + [AEM Forms AI 助理 - 提示資料庫](/help/edge/docs/forms/ai-assistant-prompt-library.md)
+      + [表單體驗建立工具 - 最佳做法](/help/edge/docs/forms/aem-forms-ai-assistant-best-practices.md)
+      + [表單體驗建立工具 - 疑難排解指南](/help/edge/docs/forms/aem-forms-ai-assistant-troubleshooting.md)
 + Screens {#screens-as-cloud-service}
    + Screens as a Cloud Service 概觀 {#overview}
       + [簡介](/help/screens-cloud/introduction/introduction.md)
@@ -1216,19 +1231,6 @@ ht-degree: 98%
          + [用 AEM 進行 Headless 編寫的基礎知識](/help/journey-headless/author/basics.md)
          + [了解如何在內容片段中使用參照](/help/journey-headless/author/references.md)
          + [了解如何為內容片段定義中繼資料和標記](/help/journey-headless/author/metadata-tagging.md)
-+ AI 助理 {#ai-assistant}
-   + [在AEM中設定AI助理](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md)
-   + [關於AEM中的AI助理](/help/implementing/cloud-manager/ai-assistant-in-aem.md)
-+ 生成式 AI {#generative-ai}
-   + [AEM as a Cloud Service 中的生成式 AI](/help/generative-ai/generative-ai-in-aem.md)
-   + [產生變化版本：與 AEM 編輯器整合](/help/generative-ai/generate-variations-integrated-editor.md)
-   + [產生變化版本](/help/generative-ai/generate-variations.md)
-   + [AEM Forms 適用的 AI 助理 (表單體驗建立工具)](/help/edge/docs/forms/forms-ai-assistant-overview.md)
-   + [AEM Forms的AI助理快速入門](/help/edge/docs/forms/forms-ai-assistant.md)
-   + [開始使用AEM Forms的AI Assistant (Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant-getting-started.md)
-   + [AEM Forms AI 助理 - 提示程式庫](/help/edge/docs/forms/ai-assistant-prompt-library.md)
-   + [Forms Experience Builder — 最佳做法](/help/edge/docs/forms/aem-forms-ai-assistant-best-practices.md)
-   + [Forms Experience Builder — 疑難排解指南](/help/edge/docs/forms/aem-forms-ai-assistant-troubleshooting.md)
 + 實施 {#implementing}
    + [實施 AEM as a Cloud Service 應用程式](/help/implementing/home.md)
    + 使用 Cloud Manager {#using-cloud-manager}
@@ -1266,7 +1268,7 @@ ht-degree: 98%
          + [CI-CD 管道簡介](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
          + [設定生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
          + [設定非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
-         + [分割階段和僅限生產的管道(Beta)](/help/implementing/cloud-manager/configuring-pipelines/stage-prod-only.md)
+         + [分割階段和僅限生產管道 (Beta)](/help/implementing/cloud-manager/configuring-pipelines/stage-prod-only.md)
          + [設定 Edge Delivery 管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)
          + [管理管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
          + [管道變數](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)

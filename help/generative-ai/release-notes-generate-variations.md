@@ -2,10 +2,10 @@
 title: 產生變化版本的發行說明
 description: 「產生變化版本」的發行說明可從 AEM as a Cloud Service 和 Edge Delivery Services 的 Sidekick 存取
 exl-id: caf85bae-3cce-4083-ab6e-e2637ff5afce
-feature: Release Information
+feature: Release Information, AI Tools
 role: Admin
-source-git-commit: 85489b9d2c774af2f82efe4cde406d6d33057d4e
-workflow-type: ht
+source-git-commit: 33eab4e431284f3bb772f9e70a1fdb9e56c4c4aa
+workflow-type: tm+mt
 source-wordcount: '284'
 ht-degree: 100%
 
@@ -27,7 +27,7 @@ ht-degree: 100%
 
 您可以利用下列編輯器[存取「產生變化版本」](/help/generative-ai/generate-variations-integrated-editor.md#access-generate-variations)([當編輯器設定完成後](#access-generate-variations))：
 
-* [在 AEM Edge Delivery Services 的 Sidekick 中；用於文件型製作](/help/generative-ai/generate-variations-integrated-editor.md#access-aem-sidekick)
+* [在 AEM Edge Delivery Services 的 Sidekick 中；用於文件型編寫](/help/generative-ai/generate-variations-integrated-editor.md#access-aem-sidekick)
 * [在通用編輯器中](/help/generative-ai/generate-variations-integrated-editor.md#access-aem-universal-editor)
 * [在內容片段編輯器中](/help/generative-ai/generate-variations-integrated-editor.md#access-aem-content-fragment-editor)
 
