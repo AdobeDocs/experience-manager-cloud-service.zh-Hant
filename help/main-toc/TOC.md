@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: 875d87dff738b479aa915ca619510c0bfadd95e5
+source-git-commit: 5074e777c68c51955b9ad8f055e04067163b9596
 workflow-type: tm+mt
-source-wordcount: '6624'
+source-wordcount: '6631'
 ht-degree: 99%
 
 ---
@@ -526,7 +526,7 @@ ht-degree: 99%
       + [將內容片段匯出到 Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [將體驗片段匯出到 Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [與 Adobe Campaign 整合](/help/sites-cloud/integrating/campaign.md)
-      + [在Adobe Journey Optimizer中使用內容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=zh-Hant)
+      + [在Adobe Journey Optimizer中使用內容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [AEM as a Cloud Service 的操作遙測](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Assets {#assets}
    + [概觀與新增功能](/help/assets/overview.md)
@@ -1518,3 +1518,5 @@ ht-degree: 99%
    + 協助工具 {#accessibility}
       + [AEM as a Cloud Service 與網頁協助工具準則](/help/compliance/accessibility/web-accessibility.md)
       + [WCAG 2.1 快速指南](/help/compliance/accessibility/quick-guide-wcag.md)
++ 疑難排解 {#troubleshooting}
+   + [疑難排解AEM Assets和Forms問題](/help/troubleshooting/home.md)
