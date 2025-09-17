@@ -4,9 +4,9 @@ description: 瞭解如何在設定檔案中宣告規則和篩選器，並使用C
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: b367e7d62596c33a4ba399008e856a97d12fb45b
+source-git-commit: 992f9377133dd7ca3bd7b169c0a29e76baadde7e
 workflow-type: tm+mt
-source-wordcount: '1523'
+source-wordcount: '1630'
 ht-degree: 1%
 
 ---
@@ -426,6 +426,8 @@ data:
 |-----------|--------------------------|-------------|
 | **selectOrigin** | 來源名稱 | 其中一個已定義來源的名稱。 |
 |     | skipCache （選用，預設為false） | 標示是否將快取用於符合此規則的請求。 預設會根據回應快取標題（例如Cache-Control或Expires）快取回應 |
+| **selectAemOrigin** | 來源名稱 | 其中一個預先定義AEM來源的名稱（支援的值： `static`）。 |
+|     | skipCache （選用，預設為false） | 標示是否將快取用於符合此規則的請求。 預設會根據回應快取標題（例如Cache-Control或Expires）快取回應 |
 
 **來源**
 
@@ -441,6 +443,29 @@ data:
 | **forwardAuthorization** （選擇性，預設為false） | 如果設為true ，則會將使用者端請求中的&quot;Authorization&quot;標頭傳遞至後端，否則會移除Authorization標頭。 |
 | **逾時** （選擇性，以秒為單位，預設為60） | CDN應等待後端伺服器傳遞HTTP回應本文第一個位元組的秒數。 此值也會用作後端伺服器的位元組逾時之間的值。 |
 
+### 將自訂網域代理至AEM靜態層 {#proxy-custom-domain-static}
+
+來源選取器可用來將AEM發佈流量路由到使用[前端管道](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)部署的AEM靜態內容。 使用案例包括在與頁面相同的網域(例如example.com/static)上或在明確不同的網域(例如static.example.com)上提供靜態資源。
+
+以下是可實現此目標的原點選取器規則的範例：
+
+```
+kind: CDN
+version: '1'
+metadata:
+  envTypes: ["dev"]
+data:
+  originSelectors:
+    rules:
+      - name: select-aem-static-origin
+        when:
+          reqProperty: domain
+          equals: static.example.com
+        action:
+          type: selectAemOrigin
+          originName: static
+```
+
 ### 代理至Edge Delivery Services {#proxying-to-edge-delivery}
 
 在某些情況下，來源選擇器應該用於透過AEM Publish將流量路由到AEM Edge Delivery Services：
@@ -454,6 +479,8 @@ data:
 ```
 kind: CDN
 version: '1'
+metadata:
+  envTypes: ["dev"]
 data:
   originSelectors:
     rules:
