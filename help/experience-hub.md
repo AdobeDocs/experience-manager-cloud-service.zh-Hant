@@ -3,10 +3,11 @@ title: 關於 Experience Hub
 description: 了解關於 Adobe Experience Hub 頁面的資訊。
 landing-page-description: 了解關於 Experience Hub 的資訊，這是用於集中存取所有 AEM 功能的起點。
 solution: Experience Manager
-feature: Cloud Manager, Developing
+feature: Authoring, Getting Started, Onboarding, AI Assistant, Workflows, Programs
+feature-set: Experience Cloud,Experience Manager Sites
 role: Admin, Architect, Developer, User
 exl-id: a1b0eed7-b74c-4e72-8399-c473bbda9245
-source-git-commit: e92a25a532cc39557842178165c963c6f1fdb681
+source-git-commit: fc3b3399560019df0475c9d3ad71e5ef6056f2ae
 workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 14%
