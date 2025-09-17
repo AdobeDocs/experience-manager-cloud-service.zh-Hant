@@ -532,7 +532,7 @@ ht-degree: 100%
 
 - [表單體驗建立工具提示資料庫](ai-assistant-prompt-library.md)
 - [表單體驗建立工具最佳做法](aem-forms-ai-assistant-best-practices.md)
-- [AEM Forms 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html)
+- [AEM Forms 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=zh-Hant)
 
 ### 向上呈報和支援
 
@@ -573,4 +573,4 @@ ht-degree: 100%
 - 培訓和知識共享會議
 - 提供產品團隊回饋意見，用於進行功能改善
 
-這份疑難排解指南會根據使用者回饋和新的表單體驗建立工具功能持續進行更新。如欲了解最新資訊和其他資源，請參閱 [AEM Forms 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html)。
+這份疑難排解指南會根據使用者回饋和新的表單體驗建立工具功能持續進行更新。如欲了解最新資訊和其他資源，請參閱 [AEM Forms 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=zh-Hant)。
