@@ -4,7 +4,7 @@ description: 瞭解操作遙測，這是一項允許監控使用者端資料收�
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: d02569f5fcca0e53c8f258be8a193663364ac31f
+source-git-commit: 100a8cd1a27cd8f0677ed001def0b1e0e7b20ed3
 workflow-type: tm+mt
 source-wordcount: '1134'
 ht-degree: 1%
@@ -42,7 +42,7 @@ ht-degree: 1%
 * 正在造訪的網站的主機名稱，例如： `experienceleague.adobe.com`
 * 用來顯示頁面的廣泛使用者代理程式型別和作業系統，例如： `desktop:windows`或`mobile:ios`
 * 資料收集的時間，例如： `2021-06-26 06:00:02.596000 UTC (in order to preserve privacy, we round all minutes to the previous hour, so that only seconds and milliseconds are tracked)`
-* 正在瀏覽的頁面URL，例如： `https://experienceleague.adobe.com/docs?lang=zh-Hant`
+* 正在瀏覽的頁面URL，例如： `https://experienceleague.adobe.com/docs`
 * 反向連結URL （連結至目前頁面的頁面URL，如果使用者依循連結）
 * 隨機產生的頁面檢視識別碼，格式類似於： `2Ac6`
 * 取樣速率的加權或反向，例如： `100`。 這表示只記錄一百分之一的頁面檢視
@@ -105,7 +105,7 @@ Here are key considerations for customers to keep in mind when interpreting thei
 
    選擇退出可能代表您錯失了改善網站流量參與度的機會。 不過，如果您遇到任何問題，可以透過[將Cloud Manager](/help/implementing/cloud-manager/environment-variables.md#add-variables)中名為`AEM_OPTEL_DISABLED`的環境變數設定為值`true`來停用作業遙測。 如果您想在稍後再次啟用作業遙測，只需再次移除該環境變數即可。
 
-1. **我可以對Nonce使用內容安全性原則嗎？
+1. **我可以對Nonce使用內容安全性原則嗎？**
 
    支援作業遙測包含實驗功能，可支援Nonce的內容安全性原則。 此功能可透過[將Cloud Manager](/help/implementing/cloud-manager/environment-variables.md#add-variables)中名為`AEM_OPTEL_NONCE`的環境變數設定為值`true`來啟用。 如果您想在稍後再次停用此功能，只需再次移除該環境變數即可。
 

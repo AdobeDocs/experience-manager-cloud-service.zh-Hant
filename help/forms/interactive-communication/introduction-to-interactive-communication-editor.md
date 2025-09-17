@@ -4,14 +4,11 @@ description: 探索AEM Forms中的互動式通訊編輯器。 瞭解主要功能
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: true
-index: false
-hidefromtoc: true
 exl-id: 50709c68-8666-47da-8788-fad793d870e6
-source-git-commit: 3bab153b3dbace4c0d31670f954b9e952a5ecd43
+source-git-commit: 479f65872f5cffce5ba29d1208c96de4df3c4ef3
 workflow-type: tm+mt
 source-wordcount: '453'
-ht-degree: 6%
+ht-degree: 13%
 
 ---
 
@@ -19,11 +16,11 @@ ht-degree: 6%
 
 >[!NOTE]
 >
-> 互動式通訊功能在早期採用者程式中提供。 從您的工作地址傳送電子郵件給`aem-forms-ea@adobe.com`以要求存取權。
+> 互動式通訊功能在早期採用者程式中提供。 使用您的工作郵件地址寄送電子郵件至 `aem-forms-ea@adobe.com` 請求存取權限。
 
 >[!IMPORTANT]
 >
-> **文件內容可能隨時變更**：此提示庫目前正在針對產品進行測試，可能會進行更新和修訂。提示、範例和最佳實務可能會隨著Forms Experience Builder在早期採用者計畫中的持續進化而改變。
+> **文件內容可能隨時變更**：此提示庫目前正在針對產品進行測試，可能會進行更新和修訂。隨著表單體驗建立工具在早期採用者方案期間持續發展，相關的提示、範例和最佳做法可能會有所變更。
 
 ## 什麼是互動式通訊編輯器？
 
