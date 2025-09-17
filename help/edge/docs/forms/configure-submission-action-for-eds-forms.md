@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 8f490054-f7b6-40e6-baa3-3de59d0ad290
 source-git-commit: 2d16a9bd1f498dd0f824e867fd3b5676fb311bb3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '810'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 79%
 
 在設定提交動作前，請確保您符合以下條件：
 
-- AEM Forms as a Cloud Service 實例
+- AEM Forms as a Cloud Service 執行個體
 - Edge Delivery Services 專案已設定完成
 - 使用文件製作或通用編輯器建立的表單
 - 存取目標位置 (試算表、電子郵件系統或 AEM) 的必要權限
@@ -71,7 +71,7 @@ ht-degree: 79%
 
 +++ 方法 2：AEM Publish 提交功能
 
-將表單資料直接提交到您的 AEM as a Cloud Service 發布實例進行複雜的處理。
+將表單資料直接提交到您的 AEM as a Cloud Service 發佈執行個體進行複雜的處理。
 
 ### 何時使用 AEM Publish
 
@@ -98,17 +98,17 @@ ht-degree: 79%
 
 ### 設定要求
 
-#### 1.更新Edge Delivery中的AEM執行個體URL
+#### &#x200B;1. 在 Edge Delivery 中更新 AEM 執行個體 URL
 
-更新`constant.js`下`form`區塊中`submitBaseUrl`檔案中的AEM Cloud Service執行個體URL。 您可以根據環境設定URL：
+在 `form` 區塊 `constant.js` 檔案中的 `submitBaseUrl` 下方更新 AEM Cloud Service 執行個體 URL。您可以根據您的環境設定 URL：
 
-**適用於Cloud Service執行個體**
+**若為 Cloud Service 執行個體**
 
 ```js
 export const submitBaseUrl = '<aem-publish-instance-URL>';
 ```
 
-**用於本機開發**
+**若為本機開發**
 
 ```js
 export const submitBaseUrl = 'http://localhost:<port-number>';
@@ -116,11 +116,11 @@ export const submitBaseUrl = 'http://localhost:<port-number>';
 
 #### &#x200B;2. OSGi 反向連結篩選器
 
-設定反向連結篩選條件，以允許您的特定Edge Delivery網站網域：
+設定反向連結篩選器，允許您的特定 Edge Delivery 網站網域：
 
-1. 建立或更新OSGi設定檔： `org.apache.sling.security.impl.ReferrerFilter.cfg.json`
+1. 建立或更新 OSGi 設定檔案：`org.apache.sling.security.impl.ReferrerFilter.cfg.json`
 
-2. 針對您的特定網站網域新增下列設定：
+2. 以您的特定網站網域新增下列設定：
 
    ```json
    {
@@ -148,28 +148,28 @@ export const submitBaseUrl = 'http://localhost:<port-number>';
    }
    ```
 
-3. 透過Cloud Manager部署設定
+3. 透過 Cloud Manager 部署設定
 
-如需詳細的OSGi反向連結篩選設定，請參閱[反向連結篩選](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter)指南。
+如需詳細的 OSGi 反向連結篩選器設定相關資訊，請參閱[反向連結篩選器](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter)指南。
 
-#### &#x200B;3. CORS （跨原始資源共用）問題
+#### &#x200B;3. CORS (跨來源資源共用) 問題
 
-在AEM中設定CORS設定，以允許來自您特定Edge Delivery網站網域的請求：
+在 AEM 中設定 CORS 設定，允許來自您特定 Edge Delivery 網站網域的請求：
 
-**開發人員Localhost**
+**開發人員 Localhost**
 
 ```apache
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http://localhost(:\d+)?$)#" CORSTrusted=true
 ```
 
-**Edge Delivery網站 — 個別新增每個網站網域**
+**Edge Delivery Sites - 個別新增各網站網域**
 
 ```apache
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://main--abc--adobe\.aem\.live$)#" CORSTrusted=true
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://main--abc1--adobe\.aem\.live$)#" CORSTrusted=true
 ```
 
-**舊版Franklin網域（如果仍在使用中）**
+**舊版 Franklin 網域 (若仍在使用)**
 
 ```apache
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.hlx\.page$)#" CORSTrusted=true  
@@ -178,12 +178,12 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 
 >[!NOTE]
 >
->將`main--abc--adobe.aem.live`和`main--abc1--adobe.aem.live`取代為您實際的網站網域。 從相同存放庫託管的每個網站都需要個別的CORS設定專案。
+>將 `main--abc--adobe.aem.live` 和 `main--abc1--adobe.aem.live` 替換為您的實際網站網域。於同一存放庫託管的每個網站皆需要單獨的 CORS 設定項目。
 
-如需詳細的CORS組態，請參閱[CORS組態指南](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)。
+如需詳細的 CORS 設定相關資訊，請參閱 [CORS 設定指南](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)。
 
 
-若要為您的本機開發環境啟用CORS，請參閱[瞭解跨原始資源共用(CORS)](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing)文章。
+若要為您的本機開發環境啟用 CORS，請參閱[了解跨來源資源共用 (CORS)](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing) 文章。
 
 <!--
 #### 4. CDN Redirect Rules

@@ -5,9 +5,9 @@ role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
 feature: Onboarding
 source-git-commit: 0db48ef4c15b6ca530b2626f7078c7172c872fff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '909'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -42,13 +42,13 @@ Cloud Manager 是 AEM as a Cloud Service 的重要元件，可作為您團隊的
 
    返回前一個步驟[對團隊成員指派 Cloud Manager 產品設定檔](assign-profiles-cloud-manager.md)，了解將&#x200B;**業務所有者**&#x200B;角色指派給系統管理員的詳細資訊。
 
-1. 在[experience.adobe.com](https://experience.adobe.com)登入Cloud Manager。
-1. 在快速存取群組中，按一下&#x200B;**Experience Manager**。
-1. 在左側面板中，按一下&#x200B;**Cloud Manager**。
+1. 在 [experiece.adobe.com](https://experience.adobe.com) 登入 Cloud Manager。
+1. 在快速存取分組中，按一下「**Experience Manager**」。
+1. 在左側面板中，按一下「**Cloud Manager**」。
 
-   主控台上的![Cloud Manager](/help/journey-onboarding/assets/consol-cloud-manager.png)
+   ![主控台上的 Cloud Manager](/help/journey-onboarding/assets/consol-cloud-manager.png)
 
-您以&#x200B;**業務負責人**&#x200B;角色的系統管理員身分成功登入，便可使用Cloud Manager供其他具有&#x200B;**業務負責人**&#x200B;角色的使用者使用。 您不會收到確認或任何訊息。只需登入就可以。
+以具有&#x200B;**企業所有者**&#x200B;角色的系統管理員身分成功登入後，您即可使用供其他具有&#x200B;**企業所有者**&#x200B;角色的使用者使用的 Cloud Manager。您不會收到確認或任何訊息。只需登入就可以。
 
 在您以具有&#x200B;**業務所有者**&#x200B;角色的系統管理員身分登入 Cloud Manager 之前，其他具有&#x200B;**業務所有者**&#x200B;角色的使用者無法在 Cloud Manager 中建立方案。即使他們獲指派正確的角色，此規則也為真。
 
@@ -88,43 +88,43 @@ How you access your programs and products via Cloud Manager is up to you and has
 >
 >Depending on the roles assigned in Cloud Manager and the state of the application, you see different screens while using the Cloud Manager user interface. -->
 
-## 檢視計畫 {#viewing-programs}
+## 檢視方案 {#viewing-programs}
 
-成功存取 Cloud Manager 後，您所看到的畫面將取決於程序的狀態，如以下部分所述。
+成功存取 Cloud Manager 後，您所會看到的畫面將取決於方案的狀態，詳情如以下區段所述。
 
-### 不存在計畫時 {#no-programs}
+### 不存在任何方案時 {#no-programs}
 
 如果您的組織中不存在任何程序，那麼您的登陸頁面會指導您建立您的第一個程序。
 
 ![無程序](/help/journey-onboarding/assets/cloud-manager-programs-do-not-exist.png)
 
-### 當計畫已存在時 {#programs-exist}
+### 已存在方案時 {#programs-exist}
 
 如果您的組織中已經存在程序，那麼您的登陸頁面會顯示您現有的程序，並提供一個按鈕來新增其他程序。
 
-![存在程序](/help/journey-onboarding/assets/cloud-manager-programs-exist.png)
+![已存在方案](/help/journey-onboarding/assets/cloud-manager-programs-exist.png)
 
-### 當程式存在並且您是系統管理員時 {#programs-exist-sysadmin}
+### 已存在方案且您是系統管理員時 {#programs-exist-sysadmin}
 
 若您的組織中擁有方案且您是系統管理員，那麼您的登陸頁面會顯示「**管理存取權**」按鈕，以及「**新增方案**」選項。
 
-![系統管理員檢視](/help/journey-onboarding/assets/cloud-manager-programs-as-sysadmin.png)
+![系統管理員視圖](/help/journey-onboarding/assets/cloud-manager-programs-as-sysadmin.png)
 
 ## 驗證您的使用者角色 {#verify-user-roles}
 
-成功登入Cloud Manager後，您可以驗證您是否已被指派&#x200B;**業務負責人**&#x200B;產品設定檔。
+成功登入 Cloud Manager 後，您即可驗證自己是否獲指派&#x200B;**企業所有者**&#x200B;產品設定檔。
 
-1. 在頁面的右上角附近，按一下&#x200B;**帳戶**&#x200B;圖示。
+1. 在頁面右上角一帶，按一下「**帳戶**」圖示。
 
-1. 按一下&#x200B;**使用者角色**。
+1. 按一下「**使用者角色**」。
 
    ![使用者角色](/help/journey-onboarding/assets/cloud-manager-user-roles.png)
 
-1. 在&#x200B;**使用者角色**&#x200B;對話方塊中，確認您的使用者具有&#x200B;**業務負責人**&#x200B;角色。
+1. 在「**使用者角色**」對話框中，確認您的使用者具有&#x200B;**企業所有者**&#x200B;角色。
 
    ![使用者角色清單](/help/journey-onboarding/assets/cloud-manager-user-roles-business-owner.png)
 
-您已成功以業主身份登入Cloud Manager。 如果您未指派&#x200B;**業務所有者**&#x200B;角色，請聯絡您的系統管理員。
+您已成功以企業所有者身分登入 Cloud Manager。若未獲指派&#x200B;**企業所有者**&#x200B;角色，請聯絡您的系統管理員。
 
 ## 後續步驟 {#whats-next}
 

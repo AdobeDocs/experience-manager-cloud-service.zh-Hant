@@ -4,9 +4,9 @@ description: 了解更多關於最近推出的 Content Hub 功能的資訊
 role: User
 exl-id: 77a5c54c-bbc5-4dfb-9c3a-aa0620e836d0
 source-git-commit: 62ac097fca0142265f2e1ef28117619d59045e6c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '699'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -24,13 +24,13 @@ Content Hub 作為 Experience Manager Assets as a Cloud Service 的一部分提�
 
 ## 發行日期 {#release-date}
 
-Content Hub功能版本(2025.8.0)的發行日期為2025年8月28日(與AEM as a Cloud Service版本相同)。 下一個功能版本 (2025.9.0 版) 預計於 2025 年 9 月 25 日發行。
+Content Hub 功能版本 (2025.8.0) 的發行日期為 2025 年 8 月 28 日 (與 AEM as a Cloud Service 的發行日期相同)。下一個功能版本 (2025.9.0) 規劃於 2025 年 9 月 25 日發行。
 
-## 8月發行功能 {#august-release-features}
+## 8 月版本主要功能 {#august-release-features}
 
 **透過篩選器屬性進行大量搜尋**
 
-Content Hub 現在可以更快速地發現您所需的資產。使用新的批次搜尋功能，您可以透過分隔符號隔開，為任何篩選器屬性輸入多個值 (例如，多個 SKU ID)，並使用單一搜尋立即檢索所有相符的資產。
+Content Hub 現在可以更快速地發現您所需的資產。使用新的大量搜尋功能，您可以透過分隔符號隔開，為任何篩選器屬性輸入多個值 (例如，多個 SKU ID)，並使用單一搜尋立即檢索所有相符的資產。
 
 [!BADGE 深入了解此功能]{type=Informative url="https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/content-hub/search-assets-content-hub#bulk-search"}
 

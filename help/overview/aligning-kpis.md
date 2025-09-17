@@ -5,7 +5,7 @@ exl-id: d338a7bd-adfe-486a-badf-348acd6018d0
 feature: Release Information
 role: Admin
 source-git-commit: 9960de2a1f5d36ebbaf95b2c3a3670a955a7d4b0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '476'
 ht-degree: 100%
 
@@ -17,8 +17,8 @@ ht-degree: 100%
 >id="aemcloud_alignkpis"
 >title="調整 KPI"
 >abstract="在數位世界中，幾乎一切都可以測量。為您的 Adobe Experience Manager 實作選擇正確的 KPI 將有助於您的團隊專注於最重要的事情。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/assessing-kpis.html?lang=zh-Hant" text="評估 KPI"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/choose-right-team.html?lang=zh-Hant" text="選擇合適的團隊"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/assessing-kpis.html" text="評估 KPI"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/choose-right-team.html" text="選擇合適的團隊"
 
 在數位世界中，幾乎一切都可以測量。為您的 Adobe Experience Manager 實作選擇三個 KPI 可幫助您的團隊專注於最重要的事情。
 

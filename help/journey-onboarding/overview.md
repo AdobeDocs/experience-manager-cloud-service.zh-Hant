@@ -6,9 +6,9 @@ recommendations: noDisplay
 feature: Onboarding
 role: Admin, User, Developer
 source-git-commit: 841e30bc279a3859ce9a302b18ddf566d8163100
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1348'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -40,15 +40,15 @@ Adobe Experience Manager 是一套功能強大的可組合內容服務，可在�
 
 <!-- Although there may appear to be a lot to learn when getting started with AEM as a Cloud Service, conceptually there are only a few, logical pieces.-->
 
-AEM as a Cloud Service的入門歷程聚焦於下列核心元素：
+AEM as a Cloud Service 的上線歷程圍繞以下核心要素：
 
-* **合約** — 檢閱您的Adobe合約，以瞭解入門流程的關鍵細節。
-* **Experience Hub** — 使用[experience.adobe.com](https://experience.adobe.com/)做為AEM功能的中心進入點。 Experience Hub會因應您的角色和權益，讓您有效率地工作。 從這裡，瀏覽到：
-   * **Admin Console** — 管理使用者並指派角色。
-   * **Cloud Manager** — 設定程式和環境、存取Git，並建立管道以管理和部署自訂程式碼。
-   * **網站** — 建立、管理和提供數位體驗。 （授權型權益）
-   * **Assets** — 組織、儲存和散發您的數位資產。 （授權型權益）
-   * **Forms** — 建立和管理最適化和回應式表單。 （授權型權益）
+* **合約** - 審閱您的 Adobe 合約，了解上線流程的關鍵細節。
+* **Experience Hub** - 使用 [experience.adobe.com](https://experience.adobe.com/) 作為 AEM 功能的集中式進入點。Experience Hub 能適應您的人物誌和權利，讓您有效率地工作。可以從這裡導覽至：
+   * **Admin Console** - 管理使用者及指派角色。
+   * **Cloud Manager** - 設定方案和環境、存取 Git，以及建立管道用於管理和部署自訂程式碼。
+   * **Sites** - 建立、管理和提供數位體驗。(授權式權利)
+   * **Assets** - 組織、儲存和分發您的數位資產。(授權式權利)
+   * **Forms** - 建立和管理自適應及回應式表單。(授權式權利)
 
 此上線歷程中會詳細敘述這些概念。目標是在此歷程結束時，您可以執行以下操作：
 
@@ -66,10 +66,10 @@ AEM as a Cloud Service的入門歷程聚焦於下列核心元素：
 
 | 角色 | 描述 | 歷程中的角色 |
 | --- | --- | --- |
-| 系統管理員 | 此歷程的目標是提供雲端資源的初始設定，以及根據使用者的工作職責為其指派適當角色。 | 角色可協助您管理使用者從存取權到許可權的所有層面。 |
-| 內容作者 | 在AEM中建立和檢閱內容。 | 系統管理員授與許可權後，作者就可以開始自己的內容建立歷程。 |
-| 開發人員 | 開發使用不同來源內容的AEM應用程式。 | 系統管理員授與許可權後，開發人員可以開始自己的解決方案開發歷程。 |
-| 部署管理員 | 新增或更新環境、執行管道並將程式碼部署到 AEM 環境或程式碼品質。 | 系統管理員授與許可權後，部署管理員可以開始自己的管理部署的歷程。 |
+| 系統管理員 | 此歷程的目標是進行雲端資源的初始佈建，以及根據使用者的工作職責為其指派適當角色。 | 角色能協助您管理使用者從存取到權限的各個層面。 |
+| 內容作者 | 在 AEM 中建立和審閱內容。 | 獲得系統管理員授予權限後，作者即可開始其建立內容的歷程。 |
+| 開發人員 | 開發使用不同來源內容的 AEM 應用程式。 | 獲得系統管理員授予權限後，開發人員即可開始其開發解決方案的歷程。 |
+| 部署管理員 | 新增或更新環境、執行管道並將程式碼部署到 AEM 環境或程式碼品質。 | 獲得系統管理員授予權限後，部署管理員即可開始其管理解決方案的歷程。 |
 
 本上線指南說明了作為系統管理員完整上線過程。將 AEM 使用者、開發人員和部署管理員的角色作為歷程的額外選擇性部分進行簡要探討。
 
@@ -87,13 +87,13 @@ AEM as a Cloud Service的入門歷程聚焦於下列核心元素：
 | 1 | [上線準備](preparation.md) | 在啟動過程開始之前，系統管理員在登入系統之前必須了解一些準備步驟。 | 系統管理員 |
 | 2 | [AEM as a Cloud Service 技術](terminology.md) | 在您第一次登入 AEMaaCS 之前，了解系統的一些術語及其基本結構會很有幫助。 | 系統管理員 |
 | 3 | [Admin Console](admin-console.md) | 了解 Admin Console 是什麼、如何登入以及如何以系統管理員身分驗證您的設定檔。 | 系統管理員 |
-| 4 | [指派 Cloud Manager 產品設定檔](assign-profiles-cloud-manager.md) | 檢閱Cloud Manager產品設定檔，並瞭解如何將團隊成員指派給Cloud Manager產品設定檔。 | 系統管理員 |
-| 5 | [存取Experience Hub](/help/experience-hub.md) | 使用Experience Hub，其可作為AEM生態系統的統一個人化入口點。 | AEM 使用者 |
-| 6 | [存取 Cloud Manager](cloud-manager.md) | 了解如何存取 Cloud Manager，以便您可以設定專案資源。 | 系統管理員 |
+| 4 | [指派 Cloud Manager 產品設定檔](assign-profiles-cloud-manager.md) | 審閱 Cloud Manager 產品設定檔，了解如何將團隊成員指派給 Cloud Manager 產品設定檔。 | 系統管理員 |
+| 5 | [存取 Experience Hub](/help/experience-hub.md) | 將 Experience Hub 作為 AEM 生態系統的統一、個人化進入點。 | AEM 使用者 |
+| 6 | [存取 Cloud Manager](cloud-manager.md) | 了解如何存取 Cloud Manager，讓您可以設定專案資源。 | 系統管理員 |
 | 7 | [建立計畫](create-program.md) | 了解如何使用 Cloud Manager 建立計畫。 | 系統管理員 |
 | 8 | [建立環境](create-environments.md) | 了解如何使用 Cloud Manager 建立環境。 | 系統管理員 |
-| 9 | [指派 AEM 產品設定檔](assign-profiles-aem.md) | 瞭解系統管理員如何將您的團隊成員指派給AEM as a Cloud Service中的產品設定檔。 | 系統管理員 |
-| 10 | [開發人員和部署管理員工作](developers.md) | 選用 — 身為開發人員，瞭解如何存取和管理Cloud Manager Git。 作為部署管理員，瞭解如何在Cloud Manager中設定管道和部署計畫碼。 | 開發人員和部署管理員 |
+| 9 | [指派 AEM 產品設定檔](assign-profiles-aem.md) | 了解系統管理員如何將您的團隊成員指派至 AEM as a Cloud Service 產品設定檔。 | 系統管理員 |
+| 10 | [開發人員和部署管理員工作](developers.md) | 選用 - 以開發人員身分，了解如何存取和管理 Cloud Manager Git。作為部署管理員，了解如何在 Cloud Manager 中設定管道並部署程式碼。 | 開發人員和部署管理員 |
 | 11 | [AEM 使用者工作](aem-users.md) | 選擇性 - 了解作為 AEM 作者如何存取 AEM as a Cloud Service 執行個體，並熟悉為 AEM as a Cloud Service 製作內容。 | AEM 使用者 |
 
 ## 後續步驟 {#what-is-next}

@@ -1,5 +1,5 @@
 ---
-title: AEM Forms 適用的 AI 助理 (表單體驗建立工具)
+title: 適用於 AEM Forms 的 AI 助理 (表單體驗建立工具)
 description: 使用表單片段更快地製作強大的表單
 feature: Edge Delivery Services
 hide: true
@@ -7,25 +7,25 @@ index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
 source-git-commit: fe34b44d02c308e7d18a08dd05f21abc67bd0cb2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1145'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
-# 開始使用AEM Forms的AI Assistant (Forms Experience Builder)
+# 適用於 AEM Forms 的 AI 助理 (表單體驗建立工具) 快速入門
 
 >[!NOTE]
 >
 >
-> **早期採用者計劃**&#x200B;提供 AEM Forms 適用的 AI Assistant (Forms Experience Builder) 功能。如果您有興趣，請從您的工作地址快速傳送電子郵件至mailto:aem-forms-ea@adobe.com，以要求存取此功能。
+> **早期採用者計劃**&#x200B;提供適用於 AEM Forms 的 AI 助理 (Forms Experience Builder) 功能。如果您有興趣，請使用工作郵件地址向 mailto:aem-forms-ea@adobe.com 寄送簡短電子郵件，要求該功能的存取權。
 
 >[!IMPORTANT]
 >
-> **文件內容可能隨時變更**：此文件目前正在針對產品進行測試，可能會進行更新和修訂。隨著 AEM Forms 適用的 AI 助理在早期採用者計劃期間不斷發展，相關的功能、命令和範例可能有所變更。
+> **文件內容可能隨時變更**：此文件目前正在針對產品進行測試，可能會進行更新和修訂。隨著適用於 AEM Forms 的 AI 助理在早期採用者計劃期間不斷發展，相關的功能、命令和範例可能有所變更。
 
-AEM Forms 適用的 AI 助理改變建立表單的方式；只需用自然語言描述您需要的內容，然後觀看表單從無到有。在表單管理 UI、自適應表單編輯器和通用編輯器中皆可使用，此功能了解您的意圖並建立您想要的表單內容。
+適用於 AEM Forms 的 AI 助理改變建立表單的方式；只需用自然語言描述您需要的內容，然後觀看表單從無到有。在表單管理 UI、自適應表單編輯器和通用編輯器中皆可使用，此功能了解您的意圖並建立您想要的表單內容。
 
 ## 快速入門：直接說出來
 
