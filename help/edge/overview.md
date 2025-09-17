@@ -4,28 +4,29 @@ description: 了解 Edge Delivery Services 提供的效能和完善 Lighthouse �
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 role: Admin, Architect, Developer
-source-git-commit: 9829709a4558a2d0fd479c7c0fed979ee43937ea
-workflow-type: ht
-source-wordcount: '963'
-ht-degree: 100%
+source-git-commit: 8cbcfbc074c69396980ba930339563d5437d5f17
+workflow-type: tm+mt
+source-wordcount: '988'
+ht-degree: 94%
 
 ---
 
 
 # Edge Delivery Services 概觀 {#edge-delivery-services}
 
+>[!TIP]
+>
+>**想立即親手操作嗎？**
+>
+>如果您想要立即動手使用Edge Delivery Services，有兩個選項。
+>* [使用預先建立的教學課程環境立即開始撰寫 — 已完整設定且準備就緒。](https://www.aem.live/developer/ue-trial)
+>* 透過[檢視aem.live上的教學課程，深入瞭解詳細資訊，並在30分鐘內設定您自己的環境。](https://www.aem.live/developer/ue-tutorial)
+
 ## 什麼是 Edge Delivery Services？ {#what-is-edge}
 
 Edge Delivery Services 為現代內容傳遞框架，重新構想網站的建置和傳遞方式，並針對速度、簡易性及擴充性進行最佳化。這是 Adobe Experience Manager 的核心部分，透過將轉譯和傳遞推送至更靠近使用者的位置，即網路邊緣，提供速度更快的數位體驗。
 
 雖不能取代內容傳遞網路 (CDN)，但可以與您自己的 CDN 或隨附的 [Adobe 託管的 CDN](/help/implementing/dispatcher/cdn.md) 緊密整合。
-
->[!TIP]
->
->**想立即親手操作嗎？**
->
->若想立即親手操作，只要[查看 aem.live 上的教學課程](https://www.aem.live/developer/ue-tutorial)，即可在不到 30 分鐘的時間內，使用 AEM 創作啟動您自己的 Edge Delivery Services 專案。
-
 
 ## 為何要使用 Edge Delivery Services？ {#why-edge}
 
