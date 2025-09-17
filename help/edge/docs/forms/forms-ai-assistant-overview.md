@@ -1,14 +1,14 @@
 ---
 title: 表單體驗建立工具
-description: 使用表單片段更快地製作強大的表單
+description: 表單體驗建立工具簡介
 feature: Edge Delivery Services
 hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: 6bbec984e1e22764c762d95ff52ae1f474c6b413
+source-git-commit: ce61bc434614e5d7b92de3f1290e7e15325d27b7
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '937'
 ht-degree: 100%
 
 ---
@@ -64,7 +64,6 @@ AEM Forms 體驗建立工具善用生成式 AI 的強大功能，讓數位表單
 - **平面 PDF**：靜態文件轉換為互動式表單
 - **影像與螢幕擷圖**：JPG、PNG 格式 (請與團隊確認尺寸限制)
 - **手繪表單**：草圖與紙本表單照片
-
 
 **智慧轉換過程**
 
@@ -206,7 +205,6 @@ Import existing HTML forms and enhance them with advanced features while preserv
 - **專案詳細資料**：時間軸、範圍和預期使用案例
 - **官方工作電子郵件**：與您組織的 Adobe 帳戶關聯
 
-
 ### 如何取得 IMS 組織 ID 和方案 ID
 
 關於尋找 IMS 組織 ID 和方案 ID 的詳細步驟，請參閱：
@@ -229,7 +227,6 @@ Import existing HTML forms and enhance them with advanced features while preserv
 > **限量開放方案**：表單體驗建立工具的存取權限需經內部利害關係人核准。Adobe 將根據方案產能以及與搶先體驗條件的相符程度審閱您的請求。不保證一定能獲得核准，且會取決於目前方案的可用性。
 
 關於搶先體驗方案及其功能的進一步資訊，請參閱 [AEM Forms 搶先體驗文件](/help/forms/early-access-ea-features.md)。
-
 
 ## 快速入門
 
