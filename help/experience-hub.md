@@ -3,14 +3,14 @@ title: 關於 Experience Hub
 description: 了解關於 Adobe Experience Hub 頁面的資訊。
 landing-page-description: 了解關於 Experience Hub 的資訊，這是用於集中存取所有 AEM 功能的起點。
 solution: Experience Manager
-feature: Authoring, Getting Started, Onboarding, AI Assistant, Workflows, Programs
-feature-set: Experience Cloud,Experience Manager Sites
+feature: Authoring, AI Assistant, Central Interface Components, Getting Started, Onboarding, Programs, Workflows
+feature-set: Experience Cloud,Experience Manager Sites,Experience Cloud Services
 role: Admin, Architect, Developer, User
 exl-id: a1b0eed7-b74c-4e72-8399-c473bbda9245
-source-git-commit: fc3b3399560019df0475c9d3ad71e5ef6056f2ae
+source-git-commit: 82fce826ad6e5736740e39347b32b70d0b9f0176
 workflow-type: tm+mt
-source-wordcount: '588'
-ht-degree: 14%
+source-wordcount: '568'
+ht-degree: 15%
 
 ---
 
@@ -51,11 +51,11 @@ Adobe Experience Manager頁面已更新為增強型導覽和互動式Widget。 �
 >
 >顯示的Widget、工具和成品取決於使用者角色、權益和AEM部署型別(AEM as a Cloud Service或Managed Services 6.5/6.5 LTS)。
 
-這些解決方案現在移至&#x200B;**工具**&#x200B;或&#x200B;**服務**&#x200B;下的主要導覽。 此外，新的導覽元素可讓您快速存取主要Adobe Experience Manager功能，這些功能是已啟用解決方案專用的，例如Assets、Sites、Forms、內容片段、啟動等等。
+這些解決方案現在移至&#x200B;**工具**&#x200B;或&#x200B;**服務**&#x200B;下的主要導覽。 新的導覽元素可讓您快速存取與已啟用解決方案相連結的AEM功能。 跳至Assets、網站、Forms、內容片段、啟動等。
 
 ![Experience Hub環境](/help/implementing/cloud-manager/assets/experience-hub-author-environments.png)
 
-這些功能適用於您有權存取的主要生產環境，或者您可以選取特定環境作為目標，以備您存取多個AEM執行個體時使用。
+請在您的主要生產環境中使用這些功能。 如果您擁有多個AEM例項的存取權，請選取您要鎖定的環境。
 
 ![生產和中繼環境](/help/implementing/cloud-manager/assets/experience-hub-prod-stage.png)
 
@@ -67,7 +67,7 @@ Widget也可以在頁面上調整大小和重新定位，以更符合您的需�
 
 ![Experience Hub Widget](/help/implementing/cloud-manager/assets/experience-hub-widgets.png)
 
-**製作環境**&#x200B;區段會顯示您可存取的所有AEM環境，其中包含解決方案和頁面可用的特定捷徑，也可讓您在清單頂端釘選您要顯示的特定環境。
+**製作環境**&#x200B;區段列出您可以存取的所有AEM環境，並包含其解決方案和頁面的捷徑。 您可以釘選特定環境，讓環境保持在清單頂端。
 
 下圖中的&#x200B;**最近**&#x200B;區段列出您最近在AEM中造訪的頁面。 根據您的租使用者授權，Widget可能包含「方案」、「管道執行」、「Assets」、「頁面編輯器」和「表單編輯器」等專案。
 
