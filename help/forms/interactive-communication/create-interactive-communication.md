@@ -4,13 +4,10 @@ description: 建立個人化、資料導向的通訊。 透過指南和教學課
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: true
-index: false
-hidefromtoc: true
-source-git-commit: 764cfbbcb8efd407cff85bfc24928aa3f8e5e956
+source-git-commit: 479f65872f5cffce5ba29d1208c96de4df3c4ef3
 workflow-type: tm+mt
 source-wordcount: '585'
-ht-degree: 4%
+ht-degree: 9%
 
 ---
 
@@ -18,11 +15,11 @@ ht-degree: 4%
 
 >[!NOTE]
 >
-> 互動式通訊功能在早期採用者程式中提供。 從您的工作地址傳送電子郵件給`aem-forms-ea@adobe.com`以要求存取權。
+> 互動式通訊功能在早期採用者程式中提供。 使用您的工作郵件地址寄送電子郵件至 `aem-forms-ea@adobe.com` 請求存取權限。
 
 >[!IMPORTANT]
 >
-> **文件內容可能隨時變更**：此提示庫目前正在針對產品進行測試，可能會進行更新和修訂。提示、範例和最佳實務可能會隨著Forms Experience Builder在早期採用者計畫中的持續進化而改變。
+> **文件內容可能隨時變更**：此提示庫目前正在針對產品進行測試，可能會進行更新和修訂。隨著表單體驗建立工具在早期採用者方案期間持續發展，相關的提示、範例和最佳做法可能會有所變更。
 
 互動式通訊可讓您建立、管理和提供個人化和互動式通訊，包括客戶服務、帳單、入門檔案、優惠信函、帳戶更新等。 其設計可支援動態、使用者特定內容可提升各產業通訊體驗的任何案例。
 
@@ -69,7 +66,7 @@ ht-degree: 4%
 1. 移至&#x200B;**Forms > Forms &amp; Documents**，按一下&#x200B;**建立>互動式通訊**。
 1. 在建立表單中，從下拉式清單中&#x200B;**選取**&#x200B;已啟用的範本。
 1. 填寫其他詳細資訊，如標題、名稱、作者等。
-1. 按一下[建立]&#x200B;**來設計您與所選範本結構的通訊。**
+1. 按一下[建立]**來設計您與所選範本結構的通訊。**
 1. 它會開啟IC編輯器，您可以在其中開始設計通訊。
 +++
 

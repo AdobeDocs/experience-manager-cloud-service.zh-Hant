@@ -4,13 +4,10 @@ description: 在AEM Forms中建立互動式通訊範本，以定義可重複使�
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: true
-index: false
-hidefromtoc: true
-source-git-commit: 17a75e271377d9c7bfdac28c9f3d9d8178b565fd
+source-git-commit: 479f65872f5cffce5ba29d1208c96de4df3c4ef3
 workflow-type: tm+mt
 source-wordcount: '317'
-ht-degree: 9%
+ht-degree: 18%
 
 ---
 
@@ -18,11 +15,11 @@ ht-degree: 9%
 
 >[!NOTE]
 >
-> 互動式通訊功能在早期採用者程式中提供。 從您的工作地址傳送電子郵件給`aem-forms-ea@adobe.com`以要求存取權。
+> 互動式通訊功能在早期採用者程式中提供。 使用您的工作郵件地址寄送電子郵件至 `aem-forms-ea@adobe.com` 請求存取權限。
 
 >[!IMPORTANT]
 >
-> **文件內容可能隨時變更**：此提示庫目前正在針對產品進行測試，可能會進行更新和修訂。提示、範例和最佳實務可能會隨著Forms Experience Builder在早期採用者計畫中的持續進化而改變。
+> **文件內容可能隨時變更**：此提示庫目前正在針對產品進行測試，可能會進行更新和修訂。隨著表單體驗建立工具在早期採用者方案期間持續發展，相關的提示、範例和最佳做法可能會有所變更。
 
 AEM中的互動式通訊範本可讓使用者定義可重複使用的版面配置結構，例如頁首、頁尾、標誌和預設樣式。 這些範本可作為建立一致、品牌化且有效率的通訊的基礎。
 
@@ -52,7 +49,7 @@ AEM中的互動式通訊範本可讓使用者定義可重複使用的版面配�
 
    ![尋找IC檔案](/help/forms/interactive-communication/assets/choosefolder.png)
 
-1. 建立新範本，按一下[建立]，然後選取[互動式通訊一般範本]。**&#x200B;**
+1. 建立新範本，按一下[建立]，然後選取[互動式通訊一般範本]。****
 
    ![尋找IC檔案](/help/forms/interactive-communication/assets/create1.png)
 
