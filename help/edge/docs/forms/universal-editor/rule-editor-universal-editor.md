@@ -8,7 +8,7 @@ exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
 source-git-commit: 0d088d4e3b4e27fac0a05ff93a7fd01535bba6af
 workflow-type: tm+mt
 source-wordcount: '2824'
-ht-degree: 90%
+ht-degree: 97%
 
 ---
 
@@ -243,7 +243,7 @@ ht-degree: 90%
 +++ 進階
 
 - **叫用服務**：呼叫外部 API/服務 (處理載入和錯誤)
-- **新增/移除實例**：管理可重複的區段 (例如受扶養人、地址)
+- **新增/移除執行個體**：管理可重複的區段 (例如受扶養人、地址)
 - **導覽至**：路由至其他表單/頁面 (導覽前請保存資料)
 - **在面板間導覽**：控制精靈步驟導覽及跳過
 - **分派事件**：觸發整合或分析的自訂事件
@@ -310,7 +310,7 @@ ht-degree: 90%
 
 1. **開啟通用編輯器**：
    - 導覽至 AEM Sites 控制台，選取您的頁面，然後按一下「**編輯**」
-   - 確保您已正確設定[通用編輯器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=zh-Hant)
+   - 確保您已正確設定[通用編輯器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html)
 
 2. **依下列順序新增表單元件**：
    - 標題 (H2)：「稅額計算表」
@@ -549,11 +549,11 @@ export { getFullName, days };
 +++
 
 
-### 自訂函式的靜態匯入
+### 自訂函數的靜態匯入
 
-Universal Editor的規則編輯器支援靜態匯入，可讓您在多個檔案和表單中組織可重複使用的邏輯。 您可以匯入其他模組的函式，而不必將所有自訂函式放在單一檔案(/blocks/form/functions.js)中。
-例如：從外部檔案匯入函式
-考量下列檔案夾結構：
+通用編輯器的規則編輯器支援靜態匯入，讓您能夠跨多個檔案及表單，組織可重複使用的邏輯。您可以自其他模組匯入函數，而不必將所有自訂函數都保存在單一檔案 (/blocks/form/functions.js) 中。
+例如：從外部檔案匯入函數
+考慮以下資料夾結構：
 
 ```
       form
@@ -565,7 +565,7 @@ Universal Editor的規則編輯器支援靜態匯入，可讓您在多個檔案�
       ┗ functions.js
 ```
 
-您可以從`commonLib/functions.js`將函式匯入您的主要`functions.js`檔案，如下所示：
+您可以將函數從 `commonLib/functions.js` 匯入主要的 `functions.js` 檔案中，如下所示：
 
 ```
 `import {days} from './commonLib/functions';
@@ -584,19 +584,19 @@ function getFullName(firstname, lastname) {
 export { getFullName, days};
 ```
 
-### 組織不同Forms的自訂函式
+### 跨不同表單組織自訂函數
 
-您可以在不同的檔案或資料夾中建立不同的功能集，並視需要匯出：
+您可以在個別的檔案或資料夾中建立不同的函數集，並根據需要將其匯出：
 
-- 如果您希望特定函式僅能用於特定表單，則可以在表單設定中提供函式檔案的路徑。
+- 如果您希望某些函數僅能在特定的表單中使用，可於表單設定中提供函數檔案的路徑。
 
-- 如果路徑的文字方塊留空，則規則編輯器預設為從`/blocks/form/functions.js`載入函式
+- 若路徑的文字方塊留空，規則編輯器預設會從 `/blocks/form/functions.js` 匯入函數
 
-UE![中的](/help/forms/assets/custom-function-in-ue.png){width=50%}自訂函式
+![UE 中的自訂函數](/help/forms/assets/custom-function-in-ue.png){width=50%}
 
-在上面的熒幕擷圖中，自訂函式的路徑已新增到自訂函式路徑文字方塊中。 此表單的自訂函式是從指定的檔案(`cc_function.js`)載入。
+於上方的螢幕擷圖中，自訂函數路徑文字方塊內有加入自訂函數的路徑。該表單的自訂函數會從指定檔案 (`cc_function.js`) 載入。
 
-這可讓多個表單中共用功能或每個表單都保持隔離狀態，進而提供彈性。
+此功能可以在多個表單間共用函數，或於各表單間保持函數隔離，因而帶來靈活性。
 
 ## 制訂規則的最佳做法
 
@@ -732,7 +732,7 @@ UE![中的](/help/forms/assets/custom-function-in-ue.png){width=50%}自訂函式
 
 **其他資源**：
 
-- [通用編輯器文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=zh-Hant)提供更多相關內容
+- [通用編輯器文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html)提供更多相關內容
 - [Extension Manager 指南](/help/implementing/developing/extending/extension-manager.md)，協助啟用更多功能
 - [Edge Delivery Services 表單](/help/edge/docs/forms/overview.md)，提供全方位的表單製作指引
 
