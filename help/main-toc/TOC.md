@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: c0eca900b5bb7c54135e763713821f2f62a2d898
+source-git-commit: 8a0d4b6d3228306d28c047ec947c5ce017bda77f
 workflow-type: tm+mt
-source-wordcount: '6642'
+source-wordcount: '6648'
 ht-degree: 99%
 
 ---
@@ -526,7 +526,7 @@ ht-degree: 99%
       + [將內容片段匯出到 Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [將體驗片段匯出到 Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [與 Adobe Campaign 整合](/help/sites-cloud/integrating/campaign.md)
-      + [在Adobe Journey Optimizer中使用內容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=zh-Hant)
+      + [在Adobe Journey Optimizer中使用內容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [AEM as a Cloud Service 的操作遙測](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Assets {#assets}
    + [概觀與新增功能](/help/assets/overview.md)
@@ -1474,6 +1474,7 @@ ht-degree: 99%
    + 部署至 AEM as a Cloud Service  {#deploying}
       + [部署至 AEM as a Cloud Service ](/help/implementing/deploying/overview.md)
       + [AEM 版本更新](/help/implementing/deploying/aem-version-updates.md)
+      + [無訊息時數與更新可用期間](/help/implementing/deploying/quiet-hours-update-free-periods.md)
       + [為 AEM as a Cloud Service 設定 OSGi](/help/implementing/deploying/configuring-osgi.md)
       + [資源對應](/help/implementing/deploying/resource-mapping.md)
    + 作者階層 {#author-tier}
