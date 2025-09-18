@@ -6,9 +6,9 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: ce61bc434614e5d7b92de3f1290e7e15325d27b7
+source-git-commit: 69f17a4abddf025207448caed11f138c275e7b33
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '809'
 ht-degree: 100%
 
 ---
@@ -95,13 +95,14 @@ AEM Forms 體驗建立工具善用生成式 AI 的強大功能，讓數位表單
 
 ## 範例情境
 
+<!--
 <div class="columns">
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Transform PDF Forms to Digital Forms">
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">將 PDF 表單轉換為數位表單</p>
-                    <p class="is-size-6">將 Acroforms、XFA PDF 或平面 PDF 文件轉換為具有增強功能的回應式互動式數位表單。</p>
+                    <p class="headline is-size-6 has-text-weight-bold">Transform PDF Forms to Digital Forms</p>
+                    <p class="is-size-6">Convert Acroforms, XFA PDFs, or flat PDF documents into responsive, interactive digital forms with enhanced functionality.</p>
                 </div>
             </div>
         </div>
@@ -110,8 +111,8 @@ AEM Forms 體驗建立工具善用生成式 AI 的強大功能，讓數位表單
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">將舊版 XFA 表單現代化</p>
-                    <p class="is-size-6">藉由改善的使用者工作流程，將複雜的 XFA 應用程式轉變為現代、可存取的數位體驗。</p>
+                    <p class="headline is-size-6 has-text-weight-bold">Modernize Legacy XFA Forms</p>
+                    <p class="is-size-6">Transform complex XFA applications into modern, accessible digital experiences with improved user workflows.</p>
                 </div>
             </div>
         </div>
@@ -120,13 +121,14 @@ AEM Forms 體驗建立工具善用生成式 AI 的強大功能，讓數位表單
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">將螢幕擷圖轉換為數位表單</p>
-                    <p class="is-size-6">將影像、螢幕擷圖或手繪表單轉變為功能齊全的數位體驗。</p>
+                    <p class="headline is-size-6 has-text-weight-bold">Convert Screenshots to Digital Forms</p>
+                    <p class="is-size-6">Turn images, screenshots, or hand-drawn forms into fully functional digital experiences.</p>
                 </div>
             </div>
         </div>
     </div>
 </div>
+-->
 
 <!-- #### Import and Enhance Web Forms
 
@@ -151,13 +153,14 @@ Import existing HTML forms and enhance them with advanced features while preserv
 
 ## 組織益處
 
+<!--
 <div class="columns">
     <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Democratized Form Creation">
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">大眾化的表單建立</p>
-                    <p class="is-size-6">透過自然語言對話，讓非技術使用者不需要具備程式設計知識即可建立複雜的表單。</p>
+                    <p class="headline is-size-6 has-text-weight-bold">Democratized Form Creation</p>
+                    <p class="is-size-6">Empower non-technical users to create sophisticated forms without programming knowledge through natural language conversations.</p>
                 </div>
             </div>
         </div>
@@ -166,8 +169,8 @@ Import existing HTML forms and enhance them with advanced features while preserv
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">縮短實現價值時間 (TTV)</p>
-                    <p class="is-size-6">將表單開發時間從數日大幅縮短至數小時，加快數位計劃的上市速度。</p>
+                    <p class="headline is-size-6 has-text-weight-bold">Reduced Time to Value (TTV)</p>
+                    <p class="is-size-6">Dramatically accelerate form development from days to hours, enabling faster go-to-market for digital initiatives.</p>
                 </div>
             </div>
         </div>
@@ -176,8 +179,8 @@ Import existing HTML forms and enhance them with advanced features while preserv
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">介面簡潔</p>
-                    <p class="is-size-6">透過直覺的對話式介面消除學習曲線，減少培訓時間並提高採用率。</p>
+                    <p class="headline is-size-6 has-text-weight-bold">Interface Simplicity</p>
+                    <p class="is-size-6">Eliminate the learning curve with an intuitive conversational interface, reducing training time and increasing adoption.</p>
                 </div>
             </div>
         </div>
@@ -186,13 +189,14 @@ Import existing HTML forms and enhance them with advanced features while preserv
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">擴大現代化努力</p>
-                    <p class="is-size-6">有效地將舊版表單組合進行現代化改造，保留商業邏輯並增強整個表單生態系統的使用者體驗。</p>
+                    <p class="headline is-size-6 has-text-weight-bold">Scaling Modernization Efforts</p>
+                    <p class="is-size-6">Modernize legacy form portfolios efficiently, preserving business logic and enhancing user experience across your entire form ecosystem.</p>
                 </div>
             </div>
         </div>
     </div>
 </div>
+-->
 
 ## 上線
 
