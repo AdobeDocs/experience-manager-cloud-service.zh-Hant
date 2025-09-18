@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: cd3a2735487b5b7383b24ab56a98d18e4584b4b4
+source-git-commit: c0eca900b5bb7c54135e763713821f2f62a2d898
 workflow-type: tm+mt
-source-wordcount: '6639'
+source-wordcount: '6642'
 ht-degree: 99%
 
 ---
@@ -526,7 +526,7 @@ ht-degree: 99%
       + [將內容片段匯出到 Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [將體驗片段匯出到 Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [與 Adobe Campaign 整合](/help/sites-cloud/integrating/campaign.md)
-      + [在Adobe Journey Optimizer中使用內容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=zh-Hant)
+      + [在Adobe Journey Optimizer中使用內容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [AEM as a Cloud Service 的操作遙測](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Assets {#assets}
    + [概觀與新增功能](/help/assets/overview.md)
@@ -1382,17 +1382,18 @@ ht-degree: 99%
          + [元件定義](/help/implementing/universal-editor/component-definition.md)
          + [模型定義、欄位和元件類型](/help/implementing/universal-editor/field-types.md)
          + [發佈](/help/implementing/universal-editor/publishing.md)
-         + [SecurBank 範例應用程式](/help/implementing/universal-editor/securbank.md)
          + [事件](/help/implementing/universal-editor/events.md)
          + [篩選元件](/help/implementing/universal-editor/filtering.md)
+         + [設定RTE](/help/implementing/universal-editor/configure-rte.md)
          + [自訂](/help/implementing/universal-editor/customizing.md)
          + [延伸](/help/implementing/universal-editor/extending.md)
          + [架構](/help/implementing/universal-editor/architecture.md)
          + [驗證](/help/implementing/universal-editor/authentication.md)
+         + [呼叫](/help/implementing/universal-editor/calls.md)
          + [快速入門](/help/implementing/universal-editor/getting-started.md)
          + [開發者概觀](/help/implementing/universal-editor/developer-overview.md)
          + [本機 AEM 開發](/help/implementing/universal-editor/local-dev.md)
-         + [呼叫](/help/implementing/universal-editor/calls.md)
+         + [SecurBank範例應用程式](/help/implementing/universal-editor/securbank.md)
       + [Headless 體驗管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=zh-hant)
       + 混合式與 SPA 開發 {#hybrid}
          + [使用 AEM 的混合式和 SPA](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)

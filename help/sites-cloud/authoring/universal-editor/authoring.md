@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: d8a57131492a7e0d23b3ad803ea773f3ad7501cb
+source-git-commit: 16c97e13ba96df743afd6da0ad9416dfa0c825f7
 workflow-type: tm+mt
-source-wordcount: '2422'
-ht-degree: 21%
+source-wordcount: '2495'
+ht-degree: 20%
 
 ---
 
@@ -80,6 +80,22 @@ ht-degree: 21%
 ![RTF編輯對話方塊](assets/rich-text-canvas.png)
 
 點選或按一下「**取消**」或「**完成**」，分別捨棄或儲存變更。
+
+#### RTF格式選項 {#formatting-options}
+
+通用編輯器的RTF編輯器(RTE)可讓作者套用標準文字格式。 依預設，可使用下列選項。
+
+* 段落（h1、h2、h3等）
+* 粗體
+* 斜體
+* 底線
+* 上標
+* 下標
+* 專案符號清單
+* 編號清單
+* 連結
+
+RTE可設定為根據作者需求隱藏選項或顯示其他選項。 如需詳細資訊，請參閱檔案[為通用編輯器設定RTE](/help/implementing/universal-editor/configure-rte.md)。
 
 ### 編輯媒體 {#edit-media}
 
