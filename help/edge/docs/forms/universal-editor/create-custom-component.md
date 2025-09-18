@@ -4,9 +4,9 @@ description: 為 EDS Forms 建立自訂元件
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: 23534e7bbff8d663fc3b888baa90f5d84e64d310
+source-git-commit: 9664495d17ad8a8101c886408bee1584b3d48f1e
 workflow-type: tm+mt
-source-wordcount: '2121'
+source-wordcount: '2103'
 ht-degree: 4%
 
 ---
@@ -248,7 +248,7 @@ blocks/form/
 
 讓我們將類別&#x200B;**卡片**&#x200B;新增至元件，以設定樣式，並為每個無線電新增影像，針對此使用下列程式碼。
 
-**在cards.js中使用裝飾函式來設定自訂元件的樣式**
+**使用card.js設定元件樣式**
 
 ```javascript
 import { createOptimizedPicture } from '../../../../scripts/aem.js';
@@ -268,7 +268,7 @@ export default function decorate(element, fieldJson, container, formId) {
 }
 ```
 
-**在cards.css中為自訂元件新增執行階段行為**
+**使用cards.css新增執行階段行為**
 
 ```javascript
 .card .radio-wrapper {
@@ -505,13 +505,13 @@ git add . && git commit -m "Add card custom component" && git push
 
 10. **更新_component-definition.json**：在`models/_component-definition.json`中，以下列方式使用物件更新群組中具有`id custom-components`的陣列：
 
-    ```javascript
-    {
-    "...":"../blocks/form/components/cards/_cards.json#/definitions"
-    }
-    ```
+   ```javascript
+   {
+   "...":"../blocks/form/components/cards/_cards.json#/definitions"
+   }
+   ```
 
-    這是為了提供將與其他元件一起建置的新卡片元件的參考
+   這是為了提供將與其他元件一起建置的新卡片元件的參考
 
 11. **執行組建:json指令碼**：執行`npm run build:json`，將所有元件JSON定義編譯並合併成單一檔案，由伺服器提供服務。 這可確保您的新元件的結構描述包含在合併的輸出中。
 
@@ -573,7 +573,7 @@ git add . && git commit -m "Add card custom component" && git push
 }
 ```
 
-## 最佳實務
+## 最佳做法
 
 建立您自己的自訂元件前，請記住以下重點：
 
@@ -587,7 +587,7 @@ git add . && git commit -m "Add card custom component" && git push
 
 ## 參照
 
-- form-field-types：所有欄位型別的基本HTML結構和屬性。 [按一下這裡](/help/edge/docs/forms/eds-form-field-properties)以檢視詳細的表單欄位結構和屬性。
+- [form-field-types](/help/edge/docs/forms/eds-form-field-properties.md)：所有欄位型別的基礎HTML結構和屬性。
 
 - **區塊/表單/模型/表單元件**： OOTB和自訂元件屬性定義。
 
