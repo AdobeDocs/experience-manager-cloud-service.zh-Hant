@@ -3,9 +3,9 @@ title: 使用具OpenAPI功能的Dynamic Media建立虛名URL
 description: 使用Dynamic Media OpenAPI功能，將您長時間的資產傳送URL轉換為簡短且具品牌的虛名URL。 虛名URL是您複雜傳送URL的簡短、乾淨、容易記住及可讀版本。 您可以在虛名URL中納入您的品牌名稱、產品名稱和相關關鍵字，以提高您的品牌曝光度和使用者參與度
 role: Admin
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 54c592e4db4cbaa884e298cc5e81115cd5573b28
+source-git-commit: e4ee2e3f251f585a3e057c04d62039a0c2e8bef1
 workflow-type: tm+mt
-source-wordcount: '1377'
+source-wordcount: '1379'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ ht-degree: 0%
 
 * **SEO最佳化：**&#x200B;包含相關關鍵字的URL可改善搜尋引擎排名和可發現性。
 
-* **增強的品牌可見度：**&#x200B;品牌專屬URL可加強所有行銷管道（包括電子郵件、社群媒體和廣告行銷活動）中的品牌存在。
+* **增強的品牌可見度：**品牌專屬URL可加強所有行銷管道（包括電子郵件、社群媒體和廣告行銷活動）中的品牌存在。
 此外，在所有通訊中持續使用品牌URL可強化品牌識別與認可。
 
 * **行銷活動追蹤和分析：**&#x200B;針對不同的行銷活動和管道使用唯一的虛名URL，以取得流量來源和轉換績效的詳細深入分析。
@@ -110,7 +110,7 @@ ht-degree: 0%
 
 1. [瀏覽至Cloud Manager環境的設定頁面](/help/implementing/cloud-manager/environment-variables.md)，並執行下列動作：
    1. 新增`ASSET_DELIVERY_VANITY_ID`變數。 這是索引鍵。
-   1. 使用值欄位來對應到儲存虛名ID的中繼資料屬性。 對應遵循`dc:<your-metadata-property>`格式，其中中繼資料對應首碼（例如dc：）會根據您的中繼資料組態屬性而有所不同。
+   1. 使用值欄位來對應到儲存虛名ID的資產中繼資料屬性。 對應遵循`dc:<your-metadata-property>`格式，其中中繼資料對應首碼（例如dc：）會根據您的資產中繼資料組態屬性而有所不同。
       ![ASSET_DELIVERY_VANITY_ID變數](/help/assets/assets/environment-config.png)
 1. 儲存變更以重新啟動環境中的Pod。
 
@@ -134,7 +134,7 @@ ht-degree: 0%
 
 ## 使用虛名URL擴展{#scale-using-vanity-url}
 
-AEM as a Cloud Service可讓您[自訂您網址內的DNS和CDN名稱](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction)。 使用這些AEMCS功能搭配您的虛名URL，將其轉換為簡潔的、描述性的、品牌化的、直覺式的唯一網址，並提供上述[優點](#key-benefits)。
+AEM as a Cloud Service可讓您[自訂您網址內的DNS和CDN名稱](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction)。 使用這些AEMCS功能搭配您的虛名URL，將其轉換為簡潔的、描述性的、品牌化的、直覺式的唯一網址，並提供上述[優點](#key-benefits)。
 
 請參閱下列虛名URL及其可自訂的元件：
 
@@ -184,7 +184,7 @@ AEM as a Cloud Service可讓您[自訂您網址內的DNS和CDN名稱](https://ex
 執行以下步驟來重寫要傳送的CDN規則：
 
 1. 導覽至您的AEM存放庫以建立YAML設定檔。
-2. 執行[設定](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup)區段中的步驟以設定CDN規則，並透過Cloud Manager設定管道部署設定。
+2. 執行[設定](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup)區段中的步驟以設定CDN規則，並透過Cloud Manager設定管道部署設定。
 按照這些[最佳實務](#best-practices)建立您的網域路徑。
    [進一步瞭解CDN重寫規則](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations)。
 
