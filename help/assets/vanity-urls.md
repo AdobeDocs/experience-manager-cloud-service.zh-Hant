@@ -3,15 +3,15 @@ title: 使用具OpenAPI功能的Dynamic Media建立虛名URL
 description: 使用Dynamic Media OpenAPI功能，將您長時間的資產傳送URL轉換為簡短且具品牌的虛名URL。 虛名URL是您複雜傳送URL的簡短、乾淨、容易記住及可讀版本。 您可以在虛名URL中納入您的品牌名稱、產品名稱和相關關鍵字，以提高您的品牌曝光度和使用者參與度
 role: Admin
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 6c730591374b8ee4373a1a584f54386118e518da
+source-git-commit: c72966bff9220b681f8c1e4c534f19cb4b950700
 workflow-type: tm+mt
-source-wordcount: '1317'
+source-wordcount: '1319'
 ht-degree: 0%
 
 ---
 
 
-# 什麼是虛名URL？{#vanity-urls}
+# 使用虛名URL？{#vanity-urls}
 
 使用[!DNL Dynamic Media OpenAPI capabilities]將您長長的資產傳遞URL轉換成短的、品牌化的虛名URL。 標準資產傳送URL包含系統產生的資產UUID，使傳送URL複雜、難以記憶和共用。 以簡單識別碼（虛名ID）取代這些資產UUID，以產生虛名URL。 虛名URL是複雜傳送URL的簡短、乾淨和可讀版本。
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 標準傳遞URL包含`aaid`之後的&#x200B;*（*&#x200B;實際資產識別碼`urn:`）以及介於`urn:aaid:aem:`和`/as/<seoname>.<format>`之間的UUID。
 
-***範例：*** `https://delivery-p30902-e145436-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:43341ab1-4086-44d2-b7ce-ee546c35613b/as/check.jpeg`
+***範例：*** `https://delivery-p30902-e145436.adobeaemcloud.com/adobe/assets/urn:aaid:aem:43341ab1-4086-44d2-b7ce-ee546c35613b/as/check.jpeg`
 
 在上述範例中，`43341ab1-4086-44d2-b7ce-ee546c35613b`是UUID。
 
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 虛名URL包含`avid`之後的&#x200B;*（*&#x200B;實際的虛名識別碼`urn:`）以及介於`urn:avid:aem:`到`/<seoname>.<format>`之間的虛名ID。
 
-***範例：*** `https://delivery-p30902-e145436-cmstg.adobeaemcloud.com/adobe/assets/urn:avid:aem:VanityCheck/as/check.jpeg`
+***範例：*** `https://delivery-p30902-e145436.adobeaemcloud.com/adobe/assets/urn:avid:aem:VanityCheck/as/check.jpeg`
 
 在上述範例中，`VanityCheck`是取代UUID的虛名ID。
 
@@ -69,7 +69,7 @@ ht-degree: 0%
 
 * **SEO最佳化：**&#x200B;包含相關關鍵字的URL可改善搜尋引擎排名和可發現性。
 
-* **增強的品牌可見度：**&#x200B;品牌專屬URL可加強所有行銷管道（包括電子郵件、社群媒體和廣告行銷活動）中的品牌存在。
+* **增強的品牌可見度：**品牌專屬URL可加強所有行銷管道（包括電子郵件、社群媒體和廣告行銷活動）中的品牌存在。
 此外，在所有通訊中持續使用品牌URL可強化品牌識別與認可。
 
 * **行銷活動追蹤和分析：**&#x200B;針對不同的行銷活動和管道使用唯一的虛名URL，以取得流量來源和轉換績效的詳細深入分析。
@@ -108,7 +108,7 @@ ht-degree: 0%
 
 1. [瀏覽至Cloud Manager環境的設定頁面](/help/implementing/cloud-manager/environment-variables.md)，並執行下列動作：
    1. 新增`ASSET_DELIVERY_VANITY_ID`變數。 這是索引鍵。
-   1. 在值欄位中，對應至儲存虛名ID的中繼資料屬性。 對應遵循`dc:<your-metadata-property>`格式，其中中繼資料對應首碼（例如&#x200B;*dc：*）會依中繼資料組態屬性而有所不同。
+   1. 使用值欄位來對應到儲存虛名ID的中繼資料屬性。 對應遵循`dc:<your-metadata-property>`格式，其中中繼資料對應首碼（例如dc：）會根據您的中繼資料組態屬性而有所不同。
       ![ASSET_DELIVERY_VANITY_ID變數](/help/assets/assets/environment-config.png)
 1. 儲存變更以重新啟動環境中的Pod。
 
@@ -132,7 +132,7 @@ ht-degree: 0%
 
 ## 使用虛名URL擴展{#scale-using-vanity-url}
 
-AEM as a Cloud Service可讓您[自訂您網址內的DNS和CDN名稱](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction)。 使用這些AEMCS功能搭配您的虛名URL，將其轉換為簡潔的、描述性的、品牌化的、直覺式的唯一網址，並提供上述[優點](#key-benefits)。
+AEM as a Cloud Service可讓您[自訂您網址內的DNS和CDN名稱](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction)。 使用這些AEMCS功能搭配您的虛名URL，將其轉換為簡潔的、描述性的、品牌化的、直覺式的唯一網址，並提供上述[優點](#key-benefits)。
 
 請參閱下列虛名URL及其可自訂的元件：
 
@@ -141,27 +141,27 @@ AEM as a Cloud Service可讓您[自訂您網址內的DNS和CDN名稱](https://ex
 `https://delivery-<tenant>.adobeaemcloud.com/adobe/assets/urn:avid:aem:<vanity-id>/<seoname>.<format>`
 
 <table style="border-collapse:collapse; table-layout:auto; width:auto;">
-  <tr valign="top">
-    <td style="padding:0 4px; white-space:nowrap;">
-      <div align="left"><code>https://delivery&#8209;&lt;tenant&gt;.adobeaemcloud.com</code></div>
-      <div align="center">↓</div>
-      <div align="center"><a href="#customize-dns">自訂此DNS</a></div>
-    </td>
-    <td style="padding:0 6px; white-space:nowrap;">/</td>
-    <td style="padding:0 4px; white-space:nowrap;">
-      <div align="left"><code>adobe/assets/urn:avid:aem:</code></div>
-      <div align="center">↓</div>
-      <div align="center"><a href="#rewrite-cdn-rules">使用重寫規則自訂URL</a></div>
-    </td>
-    <td style="padding:0 4px; white-space:nowrap;">
-      <div align="left"><code>&lt;vanity-id&gt;</code></div>
-      <div align="center">↓</div>
-      <div align="center"><a href="#create-vanity-urls">建立虛名ID</a></div>
-    </td>
-    <td style="padding:0 4px; white-space:nowrap; width:1%;">
-      <div align="left"><code>/&lt;seoname&gt;.&lt;format&gt;</code></div>
-    </td>
-  </tr>
+<tr valign="top">
+<td style="padding:0 4px; white-space:nowrap; text-align:center;">
+<div style="text-align:left;"><code>https://delivery&#8209;&lt;tenant&gt;.adobeaemcloud.com</code></div>
+<div style="text-align:center;">↓</div>
+<div style="text-align:center;"><a href="#customize-dns">自訂此DNS</a></div>
+</td>
+<td style="padding:0 6px; white-space:nowrap; text-align:center;">/</td>
+<td style="padding:0 4px; white-space:nowrap; text-align:center;">
+<div style="text-align:left;"><code>adobe/assets/urn:avid:aem:</code></div>
+<div style="text-align:center;">↓</div>
+<div style="text-align:center;"><a href="#rewrite-cdn-rules">使用重寫規則自訂URL</a></div>
+</td>
+<td style="padding:0 4px; white-space:nowrap; text-align:center;">
+<div style="text-align:left;"><code>&lt;vanity-id&gt;</code></div>
+<div style="text-align:center;">↓</div>
+<div style="text-align:center;"><a href="#create-vanity-urls">建立虛名ID</a></div>
+</td>
+<td style="padding:0 4px; white-space:nowrap; text-align:left; width:1%;">
+<code>/&lt;seoname&gt;.&lt;format&gt;</code>
+</td>
+</tr>
 </table>
 
 **具有自訂DNS和CDN名稱的虛名URL格式：**
@@ -182,7 +182,7 @@ AEM as a Cloud Service可讓您[自訂您網址內的DNS和CDN名稱](https://ex
 執行以下步驟來重寫要傳送的CDN規則：
 
 1. 導覽至您的AEM存放庫以建立YAML設定檔。
-2. 執行[設定](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup)區段中的步驟以設定CDN規則，並透過Cloud Manager設定管道部署設定。
+2. 執行[設定](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup)區段中的步驟以設定CDN規則，並透過Cloud Manager設定管道部署設定。
 按照這些[最佳實務](#best-practices)建立您的網域路徑。
    [進一步瞭解CDN重寫規則](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations)。
 
