@@ -5,9 +5,9 @@ feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
 source-git-commit: 67fbd48d8cf4ac58d3bcff1eb314045b4ebd24b3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1138'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -29,17 +29,17 @@ AEM as a Cloud Service 中 Cloud Manager 2025.9.0 的發行日期是 2025 年 9 
 
 * **Adobe 管理的網域驗證憑證手動續約**
 
-  您現在可以從Cloud Manager或公用API手動更新失敗的Adobe管理網域驗證(DV)憑證，以主動重新整理憑證。<!-- CMGR-68738 -->
+  您現在可以從 Cloud Manager 或公用 API 手動續約失敗且由 Adobe 託管的網域驗證 (DV) 憑證，以主動重新整理憑證。<!-- CMGR-68738 -->
 
   ![SSL 憑證續約](/help/implementing/cloud-manager/release-notes/assets/ssl-certificate-adobedv-renew.png)
 
-* **現在已新增Azure DevOps （私人存放庫）的支援**
+* **現已新增對 Azure DevOps (私人存放庫) 的支援**
 
   文件更新內容包括 Azure DevOps 搭配自備 Git 的設定步驟和提取請求驗證。請參閱[在 Cloud Manager 中新增外部存放庫](/help/implementing/cloud-manager/managing-code/external-repositories.md)。
 
-* **將您自己的Git (BYOG)支援延伸至設定管道（私人存放庫）**
+* **自備 Git (BYOG) 支援已擴展至設定管道 (私人存放庫)**
 
-  Cloud Manager 現在支援 GitHub、Bitbucket、Azure DevOps 及 GitLab 的私人存放庫設定管道。此支援可進一步加快開發週期。 請參閱[私人存放庫的提取請求檢查](/help/implementing/cloud-manager/managing-code/github-check-config.md)
+  Cloud Manager 現在可在 GitHub、Bitbucket、Azure DevOps 及 GitLab 間支援具備私人存放庫的設定管道。此支援進一步加快了開發週期。請參閱[私人存放庫的提取請求檢查](/help/implementing/cloud-manager/managing-code/github-check-config.md)。
 
 <!--
 ### Staging-Only and Production-Only Pipelines {#staging-production-only-pipelines}
@@ -152,7 +152,7 @@ If you are interested in testing this new feature and sharing your feedback, sen
 
   ![篩選器面板顯示新的傳遞類型包括邊緣傳遞與發佈傳遞](/help/implementing/cloud-manager/release-notes/assets/filter-delivery-type.png)
 
-![Add Edge Delivery pipeline in Add Pipeline drop-down list](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *從&#x200B;**計劃概觀**&#x200B;頁面的&#x200B;**管道**&#x200B;卡片新增 Edge Delivery 管道。*
+![Add Edge Delivery pipeline in Add Pipeline drop-down list](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *從&#x200B;**計劃概觀**頁面的&#x200B;**管道**卡片新增 Edge Delivery 管道。*
 
 ![Add Edge Delivery pipeline dialog box](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *新增 Edge Delivery 管道對話框。*
 

@@ -5,16 +5,16 @@ feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 source-git-commit: 8205014a07b3683d6dd55f1632f5ac06a62e2337
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '220'
-ht-degree: 53%
+ht-degree: 100%
 
 ---
 
 
 # 通用編輯器 2025.09.11 版發行說明 {#release-notes}
 
-此為通用編輯器 2025 年 9 月 11 日版本的發行說明。
+以下是通用編輯器 2025 年 9 月 11 日版的發行說明。
 
 >[!TIP]
 >
@@ -22,9 +22,9 @@ ht-degree: 53%
 
 ## 新增功能 {#what-is-new}
 
-* [相同頁面上的容器內的元件現在可以使用](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste)複製並貼上。
-* 現已支援6.5 LTS SP1。
-* 通用編輯器現在支援內容片段的[多網站管理繼承](/help/sites-cloud/authoring/universal-editor/inheritance.md)，包括在編輯即時副本內容片段時自動中斷繼承。
+* [複製並貼上](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste)現在在同一頁面中可用於容器內的元件。
+* 現在支援 6.5 LTS SP1。
+* 通用編輯器現在支援內容片段的[多站管理繼承](/help/sites-cloud/authoring/universal-editor/inheritance.md)，包括在編輯即時副本內容片段時自動中斷繼承。
 
 ## 早期採用功能 {#early-adopter}
 
@@ -36,9 +36,9 @@ ht-degree: 53%
 
 ### 跨頁面複製並貼上 {#copy-paste}
 
-除了在相同頁面內之外，現在還可以跨頁面複製和貼上。
+現在，除了在同一頁面內複製並貼上外，還可以跨頁面複製並貼上。
 
 ## 其他改善功能 {#other-improvements}
 
-* Universal Editor已針對作為後端系統的AEM實施幾項小型效能改善。
-* 內容片段現已使用開放API發佈，帶來效能改善，並與內容片段編輯器和主控台發佈方式一致。
+* 在通用編輯器與 AEM 作為後端系統搭配運作的過程中，實施了數項小幅效能改進。
+* 內容片段現在會透過 Open API 發佈，可帶來效能改進且讓內容片段編輯器和主控台的發佈方式保持一致。
