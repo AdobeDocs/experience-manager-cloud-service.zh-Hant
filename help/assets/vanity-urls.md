@@ -3,9 +3,9 @@ title: 使用具OpenAPI功能的Dynamic Media建立虛名URL
 description: 使用Dynamic Media OpenAPI功能，將您長時間的資產傳送URL轉換為簡短且具品牌的虛名URL。 虛名URL是您複雜傳送URL的簡短、乾淨、容易記住及可讀版本。 您可以在虛名URL中納入您的品牌名稱、產品名稱和相關關鍵字，以提高您的品牌曝光度和使用者參與度
 role: Admin
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: e4ee2e3f251f585a3e057c04d62039a0c2e8bef1
+source-git-commit: d9223a8af5d531e66a91e9054201de765be50961
 workflow-type: tm+mt
-source-wordcount: '1379'
+source-wordcount: '1380'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 使用虛名URL{#vanity-urls}
 
-使用[!DNL Dynamic Media OpenAPI capabilities]將您長長的資產傳遞URL轉換成短的、品牌化的虛名URL。 標準資產傳送URL包含系統產生的資產UUID，使傳送URL複雜、難以記憶和共用。 以簡單識別碼（虛名ID）取代這些資產UUID，以產生虛名URL。 虛名URL是複雜傳送URL的簡短、乾淨和可讀版本。
+使用[!DNL Dynamic Media with OpenAPI capabilities]將您長長的資產傳遞URL轉換成短的、品牌化的虛名URL。 標準資產傳送URL包含系統產生的資產UUID，使傳送URL複雜、難以記憶和共用。 以簡單識別碼（虛名ID）取代這些資產UUID，以產生虛名URL。 虛名URL是複雜傳送URL的簡短、乾淨和可讀版本。
 
 請參閱下列URL格式以瞭解其差異：
 * [標準傳遞URL](#standard-urls)
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 標準傳遞URL使用`aaid`，後接UUID，而虛名URL使用`avid`，後接自訂識別碼（虛名識別碼）。
 
-使用簡短且簡單的虛名識別碼，讓您的傳送URL簡短易懂，容易記憶和分享。 使用您的品牌名稱、產品名稱和相關關鍵字作為虛名ID，以提高您的品牌曝光度和使用者參與度。
+使用簡短且簡單的虛名識別碼，讓您的虛名URL短暫、乾淨、易讀、容易記憶和共用。 使用您的品牌名稱、產品名稱和相關關鍵字作為虛名ID，以提高您的品牌曝光度和使用者參與度。
 
 當您的使用者按一下您的虛名URL時，[!DNL Dynamic Media with OpenAPI]會在擷取時自動對應到原始資產位置，並在傳送時正確解析這些位置，以將資產伺服給使用者。
 
@@ -69,7 +69,7 @@ ht-degree: 0%
 
 * **SEO最佳化：**&#x200B;包含相關關鍵字的URL可改善搜尋引擎排名和可發現性。
 
-* **增強的品牌可見度：**&#x200B;品牌專屬URL可加強所有行銷管道（包括電子郵件、社群媒體和廣告行銷活動）中的品牌存在。
+* **增強的品牌可見度：**品牌專屬URL可加強所有行銷管道（包括電子郵件、社群媒體和廣告行銷活動）中的品牌存在。
 此外，在所有通訊中持續使用品牌URL可強化品牌識別與認可。
 
 * **行銷活動追蹤和分析：**&#x200B;針對不同的行銷活動和管道使用唯一的虛名URL，以取得流量來源和轉換績效的詳細深入分析。
@@ -130,11 +130,11 @@ ht-degree: 0%
 
 當您的使用者按一下虛名URL時，[!DNL Dynamic Media with OpenAPI]會在擷取時將虛名ID自動對應到原始資產UUID，並在傳送時正確解析它們，以便毫不延遲地向使用者提供資產。 您可以即時自訂虛名URL，而不會影響資產傳送效能。
 
-[使用AEM雲端服務的進階自訂功能，增強虛名URL的影響。](#scale-using-vanity-url)
+[搭配您的虛名URL使用AEM雲端服務的進階自訂功能來增強其影響](#scale-using-vanity-url)。
 
 ## 使用虛名URL擴展{#scale-using-vanity-url}
 
-AEM as a Cloud Service可讓您[自訂您網址內的DNS和CDN名稱](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction)。 使用這些AEMCS功能搭配您的虛名URL，將其轉換為簡潔的、描述性的、品牌化的、直覺式的唯一網址，並提供上述[優點](#key-benefits)。
+AEM as a Cloud Service可讓您[自訂您網址內的DNS和CDN名稱](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/introduction)。 使用這些AEMCS功能搭配您的虛名URL，將其轉換為簡潔的、描述性的、品牌化的、直覺式的唯一網址，並提供上述[優點](#key-benefits)。
 
 請參閱下列虛名URL及其可自訂的元件：
 
@@ -184,7 +184,7 @@ AEM as a Cloud Service可讓您[自訂您網址內的DNS和CDN名稱](https://ex
 執行以下步驟來重寫要傳送的CDN規則：
 
 1. 導覽至您的AEM存放庫以建立YAML設定檔。
-2. 執行[設定](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup)區段中的步驟以設定CDN規則，並透過Cloud Manager設定管道部署設定。
+2. 執行[設定](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-error-pages#setup)區段中的步驟以設定CDN規則，並透過Cloud Manager設定管道部署設定。
 按照這些[最佳實務](#best-practices)建立您的網域路徑。
    [進一步瞭解CDN重寫規則](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#request-transformations)。
 
@@ -233,9 +233,9 @@ type: transform
 
 ## 遵循建立乾淨虛名URL的最佳實務{#best-practices}
 
-請遵循以下最佳實務來建立虛名ID、自訂DNS和網域名稱：
+遵循下列最佳實務來建立[虛名ID](#create-vanity-urls)、[自訂DNS](#customize-dns)和[CDN名稱](#rewrite-cdn-rules)：
 
 1. 請勿在虛名ID中使用特殊字元，例如空格、斜線、連字型大小等。 系統會使用預先定義的對應來取代虛名ID中的特殊字元。
-1. 在虛名ID、自訂DNS和網域名稱中使用您的品牌名稱、產品名稱和相關關鍵字，以提高您的品牌曝光度和使用者參與度。
+1. 在您的[虛名ID](#create-vanity-urls)、[自訂DNS](#customize-dns)和[CDN名稱](#rewrite-cdn-rules)中使用您的品牌名稱、產品名稱和相關關鍵字，以提升您的品牌知名度和使用者參與度。
 1. 使用簡短的描述性字詞或字串來傳達意義。
 1. 使用邀請使用者點按的文字。
