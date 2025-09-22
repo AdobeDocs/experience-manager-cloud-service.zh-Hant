@@ -3,7 +3,7 @@ title: 屬性型存取控制
 description: 瞭解如何啟用屬性型存取控制來定義中繼資料型規則，以定義Content Hub中可用資產的存取層級
 role: Admin
 exl-id: 05f54b05-40b8-4a6c-af8f-5c3f7a2089d4
-source-git-commit: ea1760a3076fa0e18dca38fe856ff0ef78b18f07
+source-git-commit: 0833e31d37c473d37e16ee037823e61611622322
 workflow-type: tm+mt
 source-wordcount: '976'
 ht-degree: 4%
@@ -34,7 +34,7 @@ ht-degree: 4%
 
 按一下&#x200B;**下載試算表**，即可下載試算表中規則並加以定義。 建立Adobe支援票證，並將試算表中定義的規則提供給Adobe。
 
-[!BADGE 下載試算表]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/ABAC_Get_Started_Template_Validator.xlsx"}
+[!BADGE 下載試算表]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/ABAC_Get_Started_Template.xlsx"}
 
 
 使用本文定義的方針，在試算表中定義規則。
