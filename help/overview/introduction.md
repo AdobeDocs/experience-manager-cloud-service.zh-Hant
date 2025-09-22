@@ -4,7 +4,7 @@ description: 了解 Experience Manager as a Cloud Service 的運作方式以及�
 exl-id: d81b85bb-a69d-49a4-9e75-76f1c6bbcd67
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: f4c89fc715b686aaabd0766a2e24219ab6811b0b
 workflow-type: tm+mt
 source-wordcount: '631'
 ht-degree: 100%
@@ -46,6 +46,7 @@ AEM as a Cloud Service 讓您能夠以雲端原生方式利用 AEM 應用程式�
 * 行銷專業人員可以更快地實現價值。
 
 >[!NOTE]
+>
 >若要了解 AEM as a Cloud Service 的新術語，請參閱[術語](terminology.md)。
 
 ## 以雲端服務的形式創造附加價值 {#value-added-as-a-cloud-service}
@@ -76,7 +77,7 @@ AEM 採用現代化雲端服務的主要特色來達成下列目標：
 * [AEM Sites as a Cloud Service 重大變更](/help/sites-cloud/sites-cloud-changes.md)
 * [AEM Assets as a Cloud Service 重大變更](/help/assets/assets-cloud-changes.md)
 * [Assets as a Cloud Service 簡介](/help/assets/overview.md)
-* [Adobe Experience Manager as a Cloud Service 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=zh-Hant)
+* [Adobe Experience Manager as a Cloud Service 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 
 >[!TIP]
 >
