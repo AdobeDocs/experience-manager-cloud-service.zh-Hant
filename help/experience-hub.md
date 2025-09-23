@@ -7,9 +7,9 @@ feature: Authoring, AI Assistant, Central Interface Components, Getting Started,
 feature-set: Experience Cloud,Experience Manager Sites,Experience Cloud Services
 role: Admin, Architect, Developer, User
 exl-id: a1b0eed7-b74c-4e72-8399-c473bbda9245
-source-git-commit: 82fce826ad6e5736740e39347b32b70d0b9f0176
+source-git-commit: 940a80382cd58a7b119a20b4af534ca1bf38447d
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '572'
 ht-degree: 15%
 
 ---
@@ -32,11 +32,11 @@ Available as a private beta, Experience Hub offers an optimized experience focus
    ![Adobe Experience Cloud首頁](/help/implementing/cloud-manager/assets/experience-cloud-experiencemanager.png)
 
 1. 在&#x200B;**快速存取**&#x200B;群組中，按一下&#x200B;[**Experience Manager**](https://experience.adobe.com)。
-1. 第一次存取時，請在&#x200B;**告訴我們您要做什麼**&#x200B;頁面上按一下您想要的選項，讓Adobe可以量身打造您的體驗。
+1. 第一次存取時，系統會指派&#x200B;**內容作者**&#x200B;預設集（在頁面右上角附近顯示）。 它可控制您所看到的Widget、導覽專案及內容。
 
-   您可以隨時變更此喜好設定。
+   您可以隨時變更此預設集。
 
-   ![告訴我們您想要做什麼](/help/implementing/cloud-manager/assets/experience-cloud-tellus.png)
+   ![已選取顯示內容作者預設集的下拉式清單](/help/implementing/cloud-manager/assets/experience-hub-role-selection.png)
 
 Adobe Experience Manager頁面已更新為增強型導覽和互動式Widget。 之前收集的解決方案卡片提供了對類似以下工具的存取：
 
