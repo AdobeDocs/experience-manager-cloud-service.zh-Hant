@@ -147,7 +147,7 @@ Forms會自動適應不同的熒幕大小和輸入方法。 觸控最佳化的�
 透過伺服器端驗證和自動化處理規則，確保資料完整性。 為使用者產生回條、確認或後續追蹤資料時，轉換、驗證及遞送提交的資料。
 
 **通訊API**
-透過[RESTful API](/help/forms/aem-forms-cloud-service-communications-introduction.md)以程式設計方式產生、操控及保護檔案。 建立PDF、可供列印的格式、組合檔案、套用數位簽章，以及處理企業規模檔案工作流程的大量批次作業[](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)。
+透過[RESTful API](/help/forms/aem-forms-cloud-service-communications-introduction.md)以程式設計方式產生、操控及保護檔案。 建立PDF、可供列印的格式、組合檔案、套用數位簽章，以及處理企業規模檔案工作流程的大量批次作業[&#128279;](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)。
 
 **記錄檔案**
 自動產生表單提交的PDF記錄，以供遵循和使用者確認。 [記錄檔案](/help/forms/generate-document-of-record-core-components.md)會建立已完成表單的格式化、可列印版本，其中包含提交的資料，提供交易和法規要求的正式檔案。
