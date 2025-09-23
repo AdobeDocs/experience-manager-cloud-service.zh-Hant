@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: 4f7bca2c4ed4e2d3e02760bc862db0a183a115a4
+source-git-commit: 51d9fed937ea5f12544ed476974d2812843fb457
 workflow-type: tm+mt
-source-wordcount: '6665'
+source-wordcount: '6667'
 ht-degree: 98%
 
 ---
@@ -526,7 +526,7 @@ ht-degree: 98%
       + [將內容片段匯出到 Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [將體驗片段匯出到 Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [與 Adobe Campaign 整合](/help/sites-cloud/integrating/campaign.md)
-      + [在Adobe Journey Optimizer中使用內容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=zh-Hant)
+      + [在Adobe Journey Optimizer中使用內容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [AEM as a Cloud Service 的操作遙測](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Assets {#assets}
    + [概觀與新增功能](/help/assets/overview.md)
@@ -759,6 +759,8 @@ ht-degree: 98%
 + Forms {#forms}
    + 概觀 {#forms-overview}
       + [簡介](/help/forms/home.md)
+      + [簡介2](/help/forms/home2.md)
+      + [簡介3](/help/forms/home3.md)
       + [重要 Adobe Experience Manager Forms 創新](/help/forms/latest-innovations.md)
       + [搶先體驗 (EA) 功能](/help/forms/early-access-ea-features.md)
       + [重大變更](/help/forms/notable-changes.md)
