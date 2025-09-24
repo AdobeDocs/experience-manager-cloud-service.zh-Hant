@@ -4,9 +4,9 @@ description: 瞭解如何將基於核心元件的最適化表單另存為草稿�
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer
-source-git-commit: 0845447c1c4f47b77debd179f24eac95a0d2c2db
+source-git-commit: 8f1fa3a95f232f34ad6ae89c391e9e2272a2c072
 workflow-type: tm+mt
-source-wordcount: '1373'
+source-wordcount: '1385'
 ht-degree: 3%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 3%
 
 # 將表單另存為草稿並列在網站頁面上
 
-<!--This article provides information about the Auto-save feature, which is currently available as a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).-->
+<!--This article provides information about the Auto-save feature, which is currently available as a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).-->
 
 假設使用者開始填寫表單，但需要暫停並在稍後返回。 AEM提供`save-as-draft`選項，讓使用者可將表單儲存為草稿以供日後完成。 為方便起見，AEM提供現成的&#x200B;**草稿與提交** Forms Portal元件，可在AEM Sites頁面上顯示草稿與提交。 元件會列出已儲存為草稿以供稍後完成的表單，以及已提交的表單。 只有登入的使用者可以編輯其草稿或檢視其提交的表單。 但是，如果匿名使用者使用&#x200B;**搜尋與清單製作者**&#x200B;元件瀏覽表單清單，並將表單儲存為草稿，則&#x200B;**草稿與提交**&#x200B;元件不會列出該草稿。 若要檢視草稿和提交，使用者必須在提交表單時登入。
 
@@ -47,7 +47,7 @@ ht-degree: 3%
 
    在`Connection String`文字方塊中輸入`Azure Storage Account`，在`Azure Key`文字方塊中輸入`Azure Access key`。
 
-1. 按一下「**儲存**」。
+1. 按一下&#x200B;**儲存**。
 
    >[!NOTE]
    >
@@ -84,7 +84,7 @@ ht-degree: 3%
 
    ![原則選擇](/help/forms/assets/save-form-as-draft-enable-policy.png)
 
-1. 按一下&#x200B;**[!UICONTROL 「完成」]**。
+1. 按一下&#x200B;**[!UICONTROL 完成]**。
 1. 現在，請在撰寫模式中重新開啟AEM Sites頁面。
 1. 在頁面編輯器中找出區段，讓您新增Forms Portal元件。
 1. 按一下&#x200B;**新增**&#x200B;圖示。 圖示是加號(+)，表示可新增元件的選項。
@@ -154,12 +154,12 @@ ht-degree: 3%
 1. 選取&#x200B;**[!UICONTROL 自動儲存草稿]**&#x200B;核取方塊，以啟用將表單自動儲存為草稿。
 1. 將&#x200B;**[!UICONTROL 儲存喜好設定]**&#x200B;設定為&#x200B;**定期儲存草稿**，以在特定時間間隔後自動儲存表單<!--based on the occurrence of an event or-->。
 1. 以&#x200B;**[!UICONTROL 儲存間隔頻率（秒）]**&#x200B;指定時間間隔，以設定在定義的間隔觸發自動儲存表單的持續時間。
-1. 按一下&#x200B;**[!UICONTROL 「完成」]**。
+1. 按一下&#x200B;**[!UICONTROL 完成]**。
 
 ## 使用草稿和提交元件在「網站」頁面上檢視草稿/提交的表單
 
 若要檢視已儲存的草稿或已提交的表單，請使用&#x200B;**草稿與提交** Forms入口網站元件。
-在「草稿與提交」元件&#x200B;**[!UICONTROL 的]**&#x200B;設定對話方塊中，選取&#x200B;**選取型別**&#x200B;作為[草稿Forms](#configure-properties-of-the-drafts--submissions-component)時，儲存為草稿的表單會顯示在「網站」頁面上。 您可以按一下省略符號(...)來開啟草稿以完成表單。
+在「草稿與提交」元件**[!UICONTROL 的]**&#x200B;設定對話方塊中，選取&#x200B;**選取型別**&#x200B;作為[草稿Forms](#configure-properties-of-the-drafts--submissions-component)時，儲存為草稿的表單會顯示在「網站」頁面上。 您可以按一下省略符號(...)來開啟草稿以完成表單。
 
 ![草稿圖示](assets/drafts-component.png)
 
@@ -168,6 +168,10 @@ ht-degree: 3%
 ![提交圖示](assets/submission-listing.png)
 
 您也可以按一下表單右下角出現的省略符號(...)來捨棄表單。
+
+>[!NOTE]
+>
+> Forms入口網站中的提交專案清單只會顯示Foundation表單提交專案。
 
 ## 後續步驟
 
