@@ -5,9 +5,9 @@ exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
 source-git-commit: d73ccc454c89c7e06752de694af97ac26694be17
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '902'
-ht-degree: 23%
+ht-degree: 100%
 
 ---
 
@@ -16,69 +16,69 @@ ht-degree: 23%
 
 下節是 Experience Manager as a Cloud Service 目前維護版本的技術版本發行說明。
 
-## 發行說22450 {#22450}
+## 22450 版 {#22450}
 
-以下摘要說明維護版本22450數的持續改善，該版本於2025年9月16日公開發佈。 前一個維護版本是版本 22171。
+以下摘要說明 22450 維護版本的持續改善內容，該版本於 2025 年 9 月 16 日公開發佈。前一個維護版本是 22171 版。
 
 啟用 2025.9.0 功能即可使用此維護版本的完整功能集。如需詳細資訊，請參閱 [Experience Manager 發行路徑圖](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
 ### 新功能 {#new-features-22450}
 
-* SITES-32595：現在可以識別已完成且已略過或拒絕片段的工作流程。 工作流程API回應中提供新屬性，列出因無效或參考無效而被排除的片段。
-* SITES-33642：現在會產生新的API事件，並用於修改的內容片段。
-* SITES-33320：現在可以透過搜尋API使用其`technicalName`來搜尋內容片段模型。
+* SITES-32595：現在可以識別工作流程完成時曾略過或拒絕的片段。工作流程 API 回應中提供新屬性，列出因無效或具有無效參照而被排除的片段。
+* SITES-33642：現在會產生新的 API 事件，並用於修改的內容片段。
+* SITES-33320：現在可透過搜尋 API，使用 `technicalName` 來搜尋內容片段模型。
 
 ### 增強功能 {#enhancements-22450}
 
-* SITES-34023：已將`technicalName`欄位新增至內容片段模型端點的回應，以便更好地識別。
-* SITES-32766：內容片段模型中的內容資產參考現在支援較廣泛的二進位檔案型別。
-* SITES-33974：改進OpenAPI說明檔案，使其更精確且更方便使用。
-* SITES-9173：快取`ContentPolicyStatus`。
-* SITES-9290：改善`TouchEditContext`的快取。
-* SITES-33355：在工作流程主控台的「檢視裝載」上開啟新的CF編輯器。
-* SITES-33356：在建立CF上開啟新的CF編輯器→在觸控式UI管理UI中開啟。
-* SITES-32952：使用傳送API時，CFM欄位的預設值處理不一致。
-* SITES-31539：使用通用編輯器的Edge Delivery：在`head.html`中新增對通用編輯器設定中繼標籤的支援。
-* SITES-20672：使用通用編輯器的Edge Delivery：新增對製作中其他大量中繼資料試算表的支援。
-* SITES-32963：使用Universal Editor的Edge Delivery：為最佳化目標、自動分配和自我學習新增實驗中繼資料。
+* SITES-34023：已將 `technicalName` 欄位新增至內容片段模型端點的回應，以便更有效識別。
+* SITES-32766：內容片段模型中的內容資產參照現已支援較廣泛的二進位檔案類型。
+* SITES-33974：改進 OpenAPI 檔案，使其更精確且更方便使用。
+* SITES-9173：快取 `ContentPolicyStatus`。
+* SITES-9290：改善 `TouchEditContext` 的快取。
+* SITES-33355：在工作流程主控台的「檢視承載」上開啟新的 CF 編輯器。
+* SITES-33356：在建立 CF 上開啟新的 CF 編輯器 → 在觸控式 UI 管理員 UI 中開啟。
+* SITES-32952：使用傳送 API 時，CFM 欄位的預設值處理不一致。
+* SITES-31539：使用通用編輯器的 Edge Delivery：在 `head.html` 新增對通用編輯器設定中繼標記的支援。
+* SITES-20672：使用通用編輯器的 Edge Delivery：新增對製作中其他大量後設資料試算表的支援。
+* SITES-32963：使用通用編輯器的 Edge Delivery：為最佳化目標、自動分配和自我學習，新增實驗用後設資料。
 * SITES-30847：核心元件 2.30.0 版。
-* SITES-29617： referencedBy端點已更新為使用ReferenceSearch類別，改善其效能和可靠性。
-* SITES-19308：透過最佳化參考驗證步驟來增強頁面刪除流程的效能。
-* SITES-34293：對樣板化資源實作延遲載入，以改善效能。
+* SITES-29617：referencedBy 端點已更新為使用 ReferenceSearch 類別，改善其效能和可靠性。
+* SITES-19308：透過最佳化參照驗證步驟來增強頁面刪除流程的效能。
+* SITES-34293：對範本化資源實施延遲載入以改善效能。
 * SITES-33892：新增功能切換，以略過偽頁面的參照檢查，藉此改善效能。
 
 ### 已修正的問題 {#fixed-issues-22450}
 
-* CQ-4360550：修正AEM雲端服務中回覆頁面移動後語言副本意外消失的問題。
+* CQ-4360550：修正 AEM Cloud Service 中恢復頁面移動後語言副本意外消失的問題。
 * SITES-25232：設定日期和退出時間扭曲連結沒有可見的焦點指標。
-* SITES-25258：焦點不是透過刪除註解模型對話方塊來管理。
-* SITES-25305：「人口統計」工具列不會以邏輯順序接收焦點。
-* SITES-25366：熒幕助讀程式不會宣佈Teaser強制回應視窗的載入狀態。
-* SITES-34276：使用通用編輯器的Edge Delivery：修正未套用至發佈層的自動建立CORS原則。
-* SITES-34811：使用通用編輯器的Edge Delivery：修正hlx選擇器未新增到製作時試算表連結的問題。
-* SITES-31669：工具>網站>啟動中的未當地語系化字串「此頁面重新導向至」。
-* SITES-30879： 「網站>頁面編輯器>搜尋元件」中的未當地語系化字串。
-* SITES-30959：頁面編輯器>影像元件中未本地化的字串。
-* SITES-21743：未當地語系化「請選取要顯示的檔案」。 「頁面編輯器> PDF檢視器」中的字串
-* SITES-19785：字串在核心元件網站>索引標籤中未本地化。
-* SITES-22059：核心元件網站> PDF檢視器中的未當地語系化「檔案預覽無法使用」字串。
-* SITES-33360：作業期間發生未當地語系化的「錯誤」。 提供的路徑不是「啟動>編輯」中的「啟動」字串。
-* SITES-32975： 「Headless UI >啟動>比較啟動與Source」中的未本地化日期格式。
-* SITES-32973：Headless UI > Launches > Rebase中的硬式編碼字串。
-* SITES-13540：「啟動>促銷活動」中未本地化的字串。
-* SITES-13085： 「網站>啟動項建立頁面」中的未當地語系化錯誤字串。
-* SITES-21499：未本地化的字串是「網站>啟動>編輯」。
-* SITES-14961：在「網站>屬性> Blueprint >轉出」對話方塊中截斷日期欄位。
-* SITES-33764：啟動篩選器(Source路徑/工作流程建立的啟動)無法運作。
-* SITES-33884：「提升目前頁面和子頁面」會無意中提升超出範圍的頁面。
-* SITES-33611：即時副本概覽不適用於高流量市場。
-* SITES-34331：載入非管理員使用者的轉出覆蓋時逾時503。
-* SITES-34403：關機期間`NullPointerException`中的`GraphqlClientImpl deactivate()`。
-* SITES-33817：解決UI結構描述和JCR模型之間的同步問題以確保一致性。
-* SITES-31141：路徑未代表的內容參考現在會在API回應中正確傳回。
-* SITES-34080：內容片段建立程式現在更健全，如果沒有欄位提供給請求，也不會失敗。
-* SITES-30773：使用「尋找和取代」尋找字詞的規則運算式已改善，以正確比對UTF-8字元。
-* SITES-33742：解決使用工作流程API時無法成功移動內容片段的錯誤。
+* SITES-25258：焦點不是透過刪除註解模態對話框來管理。
+* SITES-25305：人口統計工具列不會以邏輯順序接收焦點。
+* SITES-25366：螢幕閱讀器未宣佈 Teaser 模態的載入狀態。
+* SITES-34276：使用通用編輯器的 Edge Delivery：修正未套用至發佈階層的自動建立 CORS 原則。
+* SITES-34811：使用通用編輯器的 Edge Delivery：修正製作時 hlx 選擇器未新增到試算表連結的問題。
+* SITES-31669：工具 > Sites > 啟動中的字串「此頁面重新導向至」未本地化。
+* SITES-30879：Sites > 頁面編輯器 > 搜尋元件中的字串未本地化。
+* SITES-30959：頁面編輯器 > 影像元件中的字串未本地化。
+* SITES-21743：頁面編輯器 > PDF 檢視器中的「請選取要顯示的文件。」字串未本地化
+* SITES-19785：核心元件網站 > 索引標籤中的字串未本地化。
+* SITES-22059：核心元件網站 > PDF 檢視器中的「檔案預覽無法使用」字串未本地化。
+* SITES-33360：啟動 > 編輯中「作業期間發生錯誤。提供的路徑不是啟動。」字串未本地化。
+* SITES-32975：Headless UI > 啟動 > 比較啟動與來源中的日期格式未本地化。
+* SITES-32973：Headless UI > 啟動 > 重定基底中的字串使用硬式編碼。
+* SITES-13540：啟動 > 促銷活動中的字串未本地化。
+* SITES-13085：Sites > 啟動建立頁面中的錯誤字串未本地化。
+* SITES-21499：Sites > 啟動 > 編輯中的字串未本地化。
+* SITES-14961：Sites > 屬性 > Blueprint > 轉出對話框中的日期欄位截斷。
+* SITES-33764：啟動篩選器 (來源路徑/工作流程建立的啟動) 無法運作。
+* SITES-33884：「行銷目前頁面和子頁面」會無意中行銷超出範圍的頁面。
+* SITES-33611：Live Copy 概觀不適用於高流量市場。
+* SITES-34331：載入非管理員使用者的轉出覆蓋時出現 503 逾時。
+* SITES-34403：關機期間 `GraphqlClientImpl deactivate()` 中的 `NullPointerException`。
+* SITES-33817：解決 UI 結構描述和 JCR 模型之間的同步問題以確保一致性。
+* SITES-31141：路徑未代表的內容參照現在會在 API 回應中正確傳回。
+* SITES-34080：內容片段建立流程現在更健全，且如果沒有欄位提供給請求，也不會失敗。
+* SITES-30773：使用「尋找和取代」尋找字詞的規則運算式已改善，以正確符合 UTF-8 字元。
+* SITES-33742：解決使用工作流程 API 時無法成功移動內容片段的錯誤。
 
 ### 已知問題 {#known-issues-22450}
 
