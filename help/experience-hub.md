@@ -7,9 +7,9 @@ feature: Authoring, AI Assistant, Central Interface Components, Getting Started,
 feature-set: Experience Cloud,Experience Manager Sites,Experience Cloud Services
 role: Admin, Architect, Developer, User
 exl-id: a1b0eed7-b74c-4e72-8399-c473bbda9245
-source-git-commit: 940a80382cd58a7b119a20b4af534ca1bf38447d
+source-git-commit: f5f80ffb8524351fa4cdda039671df339fa0742d
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: '573'
 ht-degree: 15%
 
 ---
@@ -59,7 +59,7 @@ Adobe Experience Manager頁面已更新為增強型導覽和互動式Widget。 �
 
 ![生產和中繼環境](/help/implementing/cloud-manager/assets/experience-hub-prod-stage.png)
 
-作為Adobe Experience Manager的中央樞紐，Experience Hub頁面會展開並包含為每個使用者角色量身打造的其他介面工具和動作。 可完全自訂的頁面，可讓您選擇熒幕的最佳版面配置。 Widget可經過篩選，因此只有選取的元件會顯示在首頁面上，確保提供個人化體驗。
+作為Adobe Experience Manager的中央樞紐，Experience Hub頁面會展開並包含為每個使用者角色（預設集）量身打造的其他小工具和動作。 可完全自訂的頁面，可讓您選擇熒幕的最佳版面配置。 Widget可經過篩選，因此只有選取的元件會顯示在首頁面上，確保提供個人化體驗。
 
 ![Experience Hub自訂](/help/implementing/cloud-manager/assets/experience-hub-custom.png)
 
