@@ -4,9 +4,9 @@ description: 瞭解如何產生最適化Forms的記錄檔案(DoR)範本。
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 role: User, Developer
-source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+source-git-commit: 739b2b396bf0c9042d6287bfba2e8e8792cabf70
 workflow-type: tm+mt
-source-wordcount: '4221'
+source-wordcount: '4217'
 ht-degree: 2%
 
 ---
@@ -15,12 +15,12 @@ ht-degree: 2%
 
 >[!NOTE]
 >
-> Adobe建議針對[建立新的Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant)或[將Adaptive Forms新增至AEM Sites頁面](/help/forms/creating-adaptive-form-core-components.md)，使用現代且可擴充的資料擷取[核心元件](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文說明使用基礎元件製作最適化Forms的舊方法。
+> Adobe建議針對[建立新的Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)或[將Adaptive Forms新增至AEM Sites頁面](/help/forms/creating-adaptive-form-core-components.md)，使用現代且可擴充的資料擷取[核心元件](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文說明使用基礎元件製作最適化Forms的舊方法。
 
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) |
 | AEM as a Cloud Service  | 本文章 |
 
 ## 概觀 {#overview}
@@ -142,7 +142,7 @@ In the following video, Adaptive Form components are bound with corresponding Ac
 
 處理最適化Forms的記錄檔案時，請牢記以下考量事項和限制。
 
-* 記錄檔案範本不支援RTF文字。 因此，靜態最適化表單中或使用者填入的資訊中的任何RTF文字都會在記錄檔案中顯示為純文字。
+* **RTF支援**：記錄檔案支援RTF欄位中的HTML標籤標籤。 如需支援的標籤與協助工具考量事項的完整詳細資料，請參閱記錄檔案[中的](html-markup-tags-support-in-document-of-record.md)支援的HTML標籤標籤。
 * 最適化表單中的檔案片段未出現在記錄檔案中。 不過，支援最適化表單片段。
 * 不支援為以XML結構描述為基礎的最適化表單產生的記錄檔案中的內容繫結。
 * 當使用者請求轉譯記錄檔案時，記錄檔案的當地語系化版本是應地區設定的要求建立的。 記錄檔案本地化與最適化表單本地化同時發生。<!-- For more information on localization of Document of Record and Adaptive Forms see Using AEM translation workflow to localize Adaptive Forms and Document of Record.-->
@@ -319,7 +319,7 @@ When you select a form model, configure Document of Record using options availab
 
 1. 選取&#x200B;**[!UICONTROL Forms — 記錄檔案]**&#x200B;類別。
 1. 選取&#x200B;**[!UICONTROL DoR基底範本]**。
-1. 按一下[下一步]&#x200B;**&#x200B;**&#x200B;並提供必要的資訊。
+1. 按一下[下一步]****&#x200B;並提供必要的資訊。
 
 1. （選擇性）修改您要在記錄檔案中欄位上套用的欄位樣式和外觀。
 1. 儲存表單。
@@ -405,9 +405,9 @@ When you select a form model, configure Document of Record using options availab
 
 ## 最適化表單編輯器中的記錄檔案支援 {#dor-support-in-adaptiveform}
 
-您可以直接從最適化表單產生器或最適化表單範本產生器設定[!UICONTROL 記錄檔案]範本。
+您可以直接從最適化表單編輯器或最適化表單範本編輯器設定[!UICONTROL 記錄檔案]範本。
 
-從最適化表單產生器的製作例項執行以下步驟：
+從最適化表單編輯器的製作例項執行以下步驟：
 
 1. 選取「**[!UICONTROL 最適化表單容器 (根)]**」元件。
 1. 按一下 ![設定圖示](/help/forms/assets/configure-icon.svg) 圖示以開啟最適化表單容器的「**[!UICONTROL 屬性]**」。
