@@ -505,13 +505,13 @@ git add . && git commit -m "Add card custom component" && git push
 
 10. **Update _component-definition.json**：在 `models/_component-definition.json` 中，以下列方式使用物件，將具有 `id custom-components` 群組內的陣列進行更新：
 
-   ```javascript
-   {
-   "...":"../blocks/form/components/cards/_cards.json#/definitions"
-   }
-   ```
+    ```javascript
+    {
+    "...":"../blocks/form/components/cards/_cards.json#/definitions"
+    }
+    ```
 
-   其目的在於為將與其他元件一起建置的新卡片元件提供參考
+    其目的在於為將與其他元件一起建置的新卡片元件提供參考
 
 11. **執行建置 :json 指令碼**：執行 `npm run build:json`，將所有元件 JSON 定義進行編譯並合併為單一檔案，再由伺服器提供服務。這可確保您新元件結構描述包含在已合併的輸出中。
 
