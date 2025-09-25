@@ -4,10 +4,10 @@ description: 了解自訂通用編輯器的不同選項以支援內容作者的�
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 32b3a125d6370dd591252fde342843d5f9e33cf1
-workflow-type: ht
-source-wordcount: '409'
-ht-degree: 100%
+source-git-commit: 217288737cd199701b34b1d12fa755abcc09830a
+workflow-type: tm+mt
+source-wordcount: '444'
+ht-degree: 92%
 
 ---
 
@@ -54,6 +54,14 @@ ht-degree: 100%
 
 ```html
 <meta name="urn:adobe:aue:config:disable" content="duplicate"/>
+```
+
+## 停用複製和貼上 {#copy-paste}
+
+某些編寫工作流程可能需要限制內容作者複製和貼上元件的能力。 您可以新增下列中繼資料，以停用[複製和貼上圖示](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste)。
+
+```html
+<meta name="urn:adobe:aue:config:disable" content="copy"/>
 ```
 
 ## 變更您的端點 {#custom-endpoint}
