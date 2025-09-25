@@ -4,7 +4,8 @@ description: 瞭解如何使用安靜時間和無更新期間，將AEM as a Clou
 feature: Deploying
 role: Admin
 badge: label="可用性限制" type="Positive"
-source-git-commit: 44696aef63b7a9882b001a33ea24a815183996a8
+exl-id: 54f86a58-eb56-43e6-ab51-7af7466a2d40
+source-git-commit: 350b288d30b3fb8d9d308dbd279f579cec0b292c
 workflow-type: tm+mt
 source-wordcount: '610'
 ht-degree: 0%
@@ -14,7 +15,7 @@ ht-degree: 0%
 # 無訊息時數與更新可用期間 {#quiet-hours-update-free-periods}
 
 >[!NOTE]
->此功能將從9月29日起以&#x200B;**有限可用性**&#x200B;功能提供。 請傳送電子郵件給[aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com)，讓功能在您的程式中啟動。
+>此功能將從9月25日起以&#x200B;**有限可用性**&#x200B;功能提供。 請傳送電子郵件給[aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com)，讓功能在您的程式中啟動。
 
 AEM as a Cloud Service [自動維護更新](/help/implementing/deploying/aem-version-updates.md)可確保您的執行個體安全無虞，並隨時更新最新維護版本。 也就是說，在某些情況下（例如上線活動），您可能需要「保護」這些關鍵的工作時間免受任何潛在干擾。 因此，AEM as a Cloud Service提供設定時間範圍的選項，讓您的進行中計畫不會發生自動更新。
 

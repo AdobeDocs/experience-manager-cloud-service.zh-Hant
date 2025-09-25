@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: 739b2b396bf0c9042d6287bfba2e8e8792cabf70
+source-git-commit: 94533c74b8254c1a16671ca28ccc021cbdfa903f
 workflow-type: tm+mt
-source-wordcount: '6675'
+source-wordcount: '6680'
 ht-degree: 98%
 
 ---
@@ -33,6 +33,7 @@ ht-degree: 98%
    + AEMaaCS 功能發行說明 {#release-notes}
       + [最新發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2025 {#2025}
+         + [2025.8.0 版發行說明](/help/release-notes/release-notes-cloud/2025/release-notes-2025-8-0.md)
          + [2025.7.0 版發行說明](/help/release-notes/release-notes-cloud/2025/release-notes-2025-7-0.md)
          + [2025.6.0 版發行說明](/help/release-notes/release-notes-cloud/2025/release-notes-2025-6-0.md)
          + [2025.5.0 版發行說明](/help/release-notes/release-notes-cloud/2025/release-notes-2025-5-0.md)
@@ -506,7 +507,7 @@ ht-degree: 98%
                + [設定翻譯規則](/help/journey-sites/translation/translation-rules.md)
                + [翻譯內容](/help/journey-sites/translation/translate-content.md)
                + [發佈翻譯內容](/help/journey-sites/translation/publish-content.md)
-            + [Headless 翻譯歷程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html?lang=zh-hant)
+            + [Headless 翻譯歷程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html)
             + [翻譯多語言網站的內容](/help/sites-cloud/administering/translation/overview.md)
             + [準備翻譯內容](/help/sites-cloud/administering/translation/preparation.md)
             + [管理翻譯專案](/help/sites-cloud/administering/translation/managing-projects.md)
@@ -526,7 +527,7 @@ ht-degree: 98%
       + [將內容片段匯出到 Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [將體驗片段匯出到 Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [與 Adobe Campaign 整合](/help/sites-cloud/integrating/campaign.md)
-      + [在Adobe Journey Optimizer中使用內容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=zh-Hant)
+      + [使用 Adobe Journey Optimizer 的內容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [AEM as a Cloud Service 的操作遙測](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Assets {#assets}
    + [概觀與新增功能](/help/assets/overview.md)
@@ -691,7 +692,7 @@ ht-degree: 98%
          + [常見問題](/help/assets/dynamic-media-open-apis-faqs.md)
          + [設定自訂網域](/help/assets/configure-custom-domain.md)
          + [將影像最佳化](/help/assets/optimize-images-using-dynamic-media-with-openapi-capabilities.md)
-         + [建立虛名URL](/help/assets/vanity-urls.md)
+         + [建立虛名 URL](/help/assets/vanity-urls.md)
    + 使用資產視圖 {#assets-view}
       + [簡介](/help/assets/assets-view-introduction.md)
       + [快速入門](/help/assets/get-started-assets-view.md)
@@ -1007,7 +1008,7 @@ ht-degree: 98%
       + [重新啟動 AEM SDK](/help/forms/restart-aem-sdk.md)
       + [解決表單建立失敗的問題](/help/forms/form-creation-failing.md)
       + [自訂提交動作中的 502 錯誤頁面](/help/forms/custom-submit-action-troubleshooting.md)
-+ AEM中的AI {#ai-in-aem}
++ AEM 中的 AI {#ai-in-aem}
    + [概觀](/help/ai-in-aem/overview.md)
    + AI 助理 {#ai-assistant}
       + [設定 AEM 中的 AI 助理](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md)
@@ -1133,8 +1134,8 @@ ht-degree: 98%
          + [如何預填自適應表單欄位](/help/edge/docs/forms/universal-editor/prefill-form.md)
          + [使用 Edge Delivery Services 發佈自適應表單](/help/edge/docs/forms/universal-editor/publish-forms.md)
          + [建立 EDS Form 的自訂元件](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-         + [疑難排解Edge Delivery Services表單提交中的403禁止錯誤](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)
-         + [使用API整合建立Salesforce Lead物件](/help/edge/docs/forms/universal-editor/create-lead-object-using-api-integration.md)
+         + [針對 Edge Delivery Services 表單提交時出現的 403 禁止錯誤進行疑難排解](/help/forms/troubleshooting-403-forbidden-edge-delivery-form-submission.md)
+         + [使用 API 整合建立 Salesforce Lead 物件](/help/edge/docs/forms/universal-editor/create-lead-object-using-api-integration.md)
          + 階層式下拉式清單 {#cascading-drop-down-list}
             + [簡介](/help/edge/docs/forms/cascading-drop-down-list/introduction.md)
             + [建立 API 整合](/help/edge/docs/forms/cascading-drop-down-list/create-api-integration.md)
@@ -1514,7 +1515,7 @@ ht-degree: 98%
    + [AEM as a Cloud Service 中的基礎結構和服務監視](/help/operations/monitoring.md)
    + [維護任務](/help/operations/maintenance.md)
    + [還原內容](/help/operations/restore.md)
-   + [還原先前部署的程式碼(Beta)](/help/operations/restore-previous-code-deployed.md)
+   + [還原先前部署的程式碼 (Beta)](/help/operations/restore-previous-code-deployed.md)
    + [非同步作業](/help/operations/asynchronous-jobs.md)
    + [使用設定管道](/help/operations/config-pipeline.md)
    + [移除一般 lucene 索引](/help/operations/removal-generic-lucene-index.md)
@@ -1530,4 +1531,4 @@ ht-degree: 98%
       + [AEM as a Cloud Service 與網頁協助工具準則](/help/compliance/accessibility/web-accessibility.md)
       + [WCAG 2.1 快速指南](/help/compliance/accessibility/quick-guide-wcag.md)
 + 疑難排解 {#troubleshooting}
-   + [疑難排解AEM Assets和Forms問題](/help/troubleshooting/home.md)
+   + [疑難排解 AEM Assets 和 Forms 的問題](/help/troubleshooting/home.md)
