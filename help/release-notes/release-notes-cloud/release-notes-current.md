@@ -173,7 +173,7 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 >[!NOTE]
 >
 >9月25日以有限可用性功能提供。
->>請傳送電子郵件給[aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com)，讓它在您的程式中啟動。
+>&#x200B;>請傳送電子郵件給[aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com)，讓它在您的程式中啟動。
 
 ### 適用於Eclipse的AEM開發人員工具新版本 {#aem-develeper-tools-for-eclipse}
 
