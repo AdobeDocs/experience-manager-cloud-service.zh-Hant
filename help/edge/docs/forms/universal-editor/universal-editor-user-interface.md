@@ -7,9 +7,9 @@ role: User, Developer, Admin
 level: Beginner
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
 source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2390'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -112,7 +112,7 @@ ht-degree: 98%
 
 **您的第一份表單：**
 
-1. **新增最適化表單元件** — 將`Adaptive Form`元件插入區段中。
+1. **新增自適應表單元件**：將 `Adaptive Form` 元件插入區段中。
 2. **開始建置**：使用「**新增**」按鈕 (`a`) 新增元件
 3. **設定欄位**：選取元件並使用&#x200B;**屬性模式** (`d`)
 4. **測試表單**：使用&#x200B;**預覽模式** (`p`) 與表單進行互動
@@ -121,7 +121,7 @@ ht-degree: 98%
 
 >[!NOTE]
 >
-> 若要瞭解在Universal Editor中建立表單的詳細步驟，請參閱[使用Edge Delivery Services建立和發佈最適化Forms](/help/edge/docs/forms/universal-editor/create-forms.md)。
+> 若要了解在通用編輯器中建立表單的詳細步驟，請參閱[使用 Edge Delivery Services 建立和發佈自適應表單](/help/edge/docs/forms/universal-editor/create-forms.md)。
 
 **驗證查核點：**
 
@@ -223,7 +223,7 @@ ht-degree: 98%
 
 #### **AEM 表單屬性**
 
-**用途：**&#x200B;設定表單層級設定，例如表單資料模型(FDM)、設定提交動作和發佈日期\
+**用途：**&#x200B;進行表單層級設定，例如表單資料模型 (FDM)、設定提交動作及發佈日期\
 **何時使用：**&#x200B;設定資料整合、安排出版時程
 
 ![表單屬性](/help/edge/docs/forms/universal-editor/assets/ue-formproperties.png)
@@ -354,7 +354,7 @@ ht-degree: 98%
 
     ![Generate Variations](/help/edge/docs/forms/universal-editor/assets/ue-variations.png)
 
-**了解更多：**&#x200B;[產生變化版本指南](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
+**了解更多：**[產生變化版本指南](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
 
 #### **內容草稿**
 

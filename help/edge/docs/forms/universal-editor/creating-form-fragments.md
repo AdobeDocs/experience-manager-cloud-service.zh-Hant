@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
 source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1693'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -80,7 +80,7 @@ Edge Delivery Services 中的表單片段為模組化表單開發提供強大的
    - [了解表單片段](#understanding-form-fragments)
    - [先決條件](#prerequisites)
    - [使用 Edge Delivery Services 表單片段](#working-with-edge-delivery-services-form-fragments)
-   - [最佳實務](#best-practices)
+   - [最佳做法](#best-practices)
    - [摘要](#summary)
 
 +++ 建立表單片段
@@ -159,7 +159,7 @@ Edge Delivery Services 中的表單片段為模組化表單開發提供強大的
 
    ![導覽至區段](/help/edge/docs/forms/universal-editor/assets/navigate-to-section.png)
 
-1. 按一下「**[!UICONTROL 新增]**」圖示，然後新增來自「**自適應表單元件**」清單的&#x200B;**[!UICONTROL 表單片段]**&#x200B;元件。
+1. 按一下「**[!UICONTROL 新增]**」圖示，然後新增來自「**自適應表單元件**」清單的&#x200B;**[!UICONTROL 表單片段]**元件。
    ![新增表單片段](/help/edge/docs/forms/universal-editor/assets/add-fragment.png)
 
    選取&#x200B;**[!UICONTROL 表單片段]**&#x200B;元件後，片段即會新增至您的表單中。您可以開啟片段的「**屬性**」來設定新增片段的屬性。例如，在「**屬性**」中隱藏片段的標題。
@@ -176,11 +176,11 @@ Edge Delivery Services 中的表單片段為模組化表單開發提供強大的
 
    以參照方式將表單片段新增至表單，並與獨立的表單片段保持同步。
 
-   ![螢幕擷圖顯示聯絡人詳細資訊片段已成功整合至通用編輯器的員工表單中，並展示片段在重複使用時如何保持其結構](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
+   ![螢幕擷圖顯示聯絡人詳細資訊片段已成功整合至通用編輯器的員工表單中，並顯示片段在重複使用時如何保持其結構](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
 
    >[!NOTE]
    >
-   > **編輯片段**&#x200B;按鈕可讓使用者直接導覽至表格片段進行編輯。
+   > 「**編輯片段**」按鈕可讓使用者直接導覽至表格片段以進行編輯。
 
    您可以透過&#x200B;**預覽**&#x200B;模式預覽表單的呈現效果。
 
@@ -292,11 +292,11 @@ Edge Delivery Services 中的表單片段為模組化表單開發提供強大的
 
 **後續步驟：**
 
-- 為您的組織建立常用片段資料庫。
-- 為片段使用建立命名慣例和治理原則。
+- 建立您組織的常用片段資料庫。
+- 建立使用片段所需的命名慣例與治理原則。
 - 探索與[表單資料模型](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md)的進階整合，以利使用資料驅動的動態片段
-- 實作片段式表單範本，以維持一致的使用者體驗。
+- 實作片段型表單範本，以實現一致的使用者體驗。
 
-您的表單現在因為使用模組化且可維護的架構，能夠在多個專案之間有效地擴展，同時確保一致的使用者體驗。
+您的表單現在因為使用模組化且可維護的架構，能夠在多個專案之間有效擴展，同時確保一致的使用者體驗。
 
 

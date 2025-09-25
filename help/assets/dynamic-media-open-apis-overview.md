@@ -4,9 +4,9 @@ description: 了解重要概念，例如為什麼要使用具有 OpenAPI 功能�
 role: User
 exl-id: 658b6eff-9f5a-4166-9ff6-5dc8eb92ada3
 source-git-commit: 73b1b7f2133a751ea2494d66960a7d225798d1dd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1106'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -38,11 +38,11 @@ ht-degree: 96%
 
 ![Dynamic Media Open API 資料流程圖](assets/dm-openapi-dfd.png)
 
-如需有關可用的Dynamic Media產品專案及其功能的資訊，請參閱[Dynamic Media Prime和Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md)。
+若要了解有關可用的 Dynamic Media 產品資訊及其功能，請參閱 [Dynamic Media Prime 與 Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md)。
 
 >[!NOTE]
 >
->DM Prime客戶可以使用基本影像修飾元，包括旋轉、裁切、翻轉、高度、寬度和品質。 智慧型影像不支援DM Prime客戶的AVIF。
+>DM Prime 客戶可以使用基本影像修飾工具，包括旋轉、裁切、翻轉、高度、寬度及品質。DM Prime 客戶的智慧型影像不支援 AVIF。
 
 
 ## 存取具備 OpenAPI 功能之 Dynamic Media 的先決條件 {#prerequisites-dynaminc-media-open-apis}

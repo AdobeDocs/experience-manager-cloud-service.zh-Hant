@@ -8,9 +8,9 @@ time: 45-60 minutes
 keywords: 預填自適應表單, 自適應表單 edge delivery services, 自適應表單自動填入
 exl-id: 7b6224e2-a19c-4146-8545-0ce9d1da9b29
 source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1803'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -159,7 +159,7 @@ ht-degree: 99%
 
    >
    >
-   > 您可以編輯表單屬性，從&#x200B;**資料**&#x200B;標籤或更新版本設定資料來源。
+   > 您可以從「**資料**」索引標籤或稍後透過編輯表單屬性來設定資料來源。
 
 1. 指定表單詳細資料：
 

@@ -5,9 +5,9 @@ feature: Developing
 role: Admin, Architect, Developer
 exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
 source-git-commit: b4e61ec6abcaf73119f8963d72317759b2bd7c76
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '611'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -94,9 +94,9 @@ ht-degree: 96%
 
 `plugins` 定義哪個外掛程式負責保留元件。常見的外掛程式包括：
 
-* `aem`AEM as a Cloud Service的[。](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service)
-* `aem65`AEM 6.5.[和](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65)AEM 6.5 LTS[的](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65-lts)
-* 使用AEM Sites為Edge Delivery Services編寫`xwalk`的[。](https://www.aem.live/developer/ue-tutorial)
+* [AEM as a Cloud Service](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service) 的 `aem`。
+* [AEM 6.5.](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65) 和 [AEM 6.5 LTS](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65-lts) 的 `aem65`
+* [使用 AEM Sites 進行 Edge Delivery Services 編寫](https://www.aem.live/developer/ue-tutorial) 的 `xwalk`。
 
 ## `page` 或 `cf` {#page-cf}
 

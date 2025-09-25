@@ -6,9 +6,9 @@ role: User
 level: Intermediate
 exl-id: cacd7b0a-aad0-4b5d-a6a0-e4bac4cb196d
 source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1139'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -63,9 +63,9 @@ ht-degree: 99%
 
 **3. 設定訊息顯示**
 
-從可用選項中選取&#x200B;**顯示訊息**。
+從可用選項中選取「**顯示訊息**」。
 
-![感謝您](/help/edge/docs/forms/universal-editor/assets/thankyou-ue.png)
+![感謝](/help/edge/docs/forms/universal-editor/assets/thankyou-ue.png)
 
 **4. 建立您的訊息內容**
 
@@ -102,7 +102,7 @@ ht-degree: 99%
     - 我們的團隊將在 2 個工作天內審閱您提交的內容
     - 如果我們需要更多資訊，將直接聯繫您
     
-    **需要幫助？**&#x200B;請聯絡我們的支援團隊：support@example.com
+    **需要幫助？**請聯絡我們的支援團隊：support@example.com
 
 ## 設定重新導向 URL
 

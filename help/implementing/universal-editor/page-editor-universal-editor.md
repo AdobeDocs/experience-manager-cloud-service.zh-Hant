@@ -5,9 +5,9 @@ feature: Developing
 role: Admin, Architect, Developer
 exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
 source-git-commit: fd52e51c336e65ae698c5102cbe00b90e7038b5e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1068'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -87,7 +87,7 @@ Adobe 深知[頁面編輯器](/help/sites-cloud/authoring/page-editor/introducti
 通用編輯器具有許多優勢，是適合新專案的絕佳解決方案。
 
 * **視覺化編輯：**&#x200B;與頁面編輯器一樣，作者可以直接在預覽中編輯內容，並立即看到其變更如何影響訪客體驗。
-* **未來考量：** AEM的藍圖會優先將通用編輯器設為視覺化編輯器。 採用通用編輯器可以確保獲得最新的創新和增強功能。
+* **符合未來需求：** AEM 的路徑圖將通用編輯器作為視覺化編輯器優先考量。採用通用編輯器可以確保獲得最新的創新和增強功能。
 * **更簡單的整合：**&#x200B;使用通用編輯器不需要 AEM 特定的 SDK，減少過度依賴技術堆疊的情形。
 * **自備應用程式：**&#x200B;通用編輯器支援任何網頁框架或架構，不需要複雜的重構過程即可採用。
 * **可擴充性：**&#x200B;因為擁有強大的[擴充框架，](/help/implementing/universal-editor/extending.md)包括與生成式 AI、Workfront 等的整合，使通用編輯器更具優勢。

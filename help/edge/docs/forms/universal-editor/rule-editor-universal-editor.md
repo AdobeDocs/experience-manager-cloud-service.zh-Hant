@@ -1,21 +1,21 @@
 ---
-title: Edge Delivery Services Forms的規則編輯器
+title: 適用於 Edge Delivery Services Forms 的規則編輯器
 description: 在通用編輯器中使用規則編輯器建立動態的智慧型表單。無需編寫程式碼即可新增條件式邏輯、計算和互動式行為。
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
 source-git-commit: 0d088d4e3b4e27fac0a05ff93a7fd01535bba6af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2824'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
-# Edge Delivery Services Forms的規則編輯器
+# 適用於 Edge Delivery Services Forms 的規則編輯器
 
-規則編輯器可讓作者將靜態表單轉換為回應式智慧型體驗，而不需撰寫程式碼。 您可以依據各種條件來顯示欄位、執行計算、驗證資料、引導使用者完成流程，以及整合會根據人們輸入之內容而調整的商業邏輯。
+藉由規則編輯器，作者無須編寫程式碼，即可將靜態表單轉換成回應式、智慧型體驗。您可以依據各種條件來顯示欄位、執行計算、驗證資料、引導使用者完成流程，以及整合會根據人們輸入之內容而調整的商業邏輯。
 
 ## 將了解的內容
 
@@ -304,13 +304,13 @@ ht-degree: 97%
 
 +++
 
-+++ 步驟1：建立表單
++++ 步驟 1：建立表單
 
 **目標**：建置包含所有欄位和初始設定的基礎表單。
 
 1. **開啟通用編輯器**：
    - 導覽至 AEM Sites 控制台，選取您的頁面，然後按一下「**編輯**」
-   - 確保您已正確設定[通用編輯器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=zh-Hant)
+   - 確保您已正確設定[通用編輯器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html)
 
 2. **依下列順序新增表單元件**：
    - 標題 (H2)：「稅額計算表」
@@ -537,7 +537,7 @@ export { getFullName, days };
 
 >
 >
-> Edge Delivery Services Forms也提供規則編輯器的增強功能，包括自訂事件型規則、動態變數支援，以及API整合。 若要進一步瞭解這些增強功能及使用方法，請參閱[規則編輯器增強功能和使用案例](/help/forms/rule-editor-enhancements-use-cases.md)文章。
+> 規則編輯器的增強功能包括自訂事件型規則、動態變數支援及 API 整合，亦可用於 Edge Delivery Services Forms。若要了解更多有關這些增強功能和使用方法，請參閱[規則編輯器增強功能和使用案例](/help/forms/rule-editor-enhancements-use-cases.md)文章。
 
 **函數使用的最佳做法**：
 
@@ -732,7 +732,7 @@ export { getFullName, days};
 
 **其他資源**：
 
-- [通用編輯器文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=zh-Hant)提供更多相關內容
+- [通用編輯器文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html)提供更多相關內容
 - [Extension Manager 指南](/help/implementing/developing/extending/extension-manager.md)，協助啟用更多功能
 - [Edge Delivery Services 表單](/help/edge/docs/forms/overview.md)，提供全方位的表單製作指引
 
