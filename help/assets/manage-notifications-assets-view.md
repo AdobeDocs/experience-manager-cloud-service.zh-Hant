@@ -4,10 +4,10 @@ description: 使用Assets檢視通知，監視對存放庫中可用的資產或�
 exl-id: 1fe6a845-37d5-43c2-bb96-c5b149c238ab
 feature: Assets Essentials
 role: User, Leader
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 4d31745d4ada9e68ffefbba3dc91995037f205b9
 workflow-type: tm+mt
-source-wordcount: '617'
-ht-degree: 70%
+source-wordcount: '774'
+ht-degree: 46%
 
 ---
 
@@ -79,6 +79,8 @@ Assets檢視通知可讓您監視對存放庫中可用的資產、資料夾或�
 
 ## 監視和取消監視資料夾、資產或集合 {#watch-unwatch-assets}
 
+您可以監視和取消監視資料夾、資產或收藏集，以隨時掌握資訊，從而就您正在監視的資產實現更好的共同作業。
+
 [訂閱通知類別](#subscribe-to-notification-categories)之後，您必須訂閱內容才能開始接收通知。
 
 >[!NOTE]
@@ -86,15 +88,49 @@ Assets檢視通知可讓您監視對存放庫中可用的資產、資料夾或�
 >* 對於 **[!UICONTROL 請求]** 和 **[!UICONTROL 分配給我]** 通知類別，您在訂閱通知類別後不需要訂閱內容。 系統會在您建立的請求以及將任務分配給您時，自動將通知發送給您。
 >* Assets檢視只會在其他使用者對訂閱內容執行動作時傳送通知。 對於您對訂閱內容執行的操作，您不會收到通知。
 
-要訂閱內容，請選擇需要訂閱的資料夾、資產或集合，然後按一下 **[!UICONTROL 監視]**。
+### 訂閱內容 {#subscribe-to-content}
 
-Assets檢視會顯示成功訊息。 您可以按一下 **[!UICONTROL 轉到通知首選項]** 在成功消息上可用以編輯[通知類別訂閱](#subscribe-to-notification-categories)。
+請依照下列步驟訂閱資料夾、資產或集合：
 
-Assets檢視中的![通知](assets/watch-assets.png)
+1. 瀏覽您要訂閱的資料夾、資產或集合，然後按一下&#x200B;**[!UICONTROL 監視]**。
 
-Assets檢視現在會傳送訂閱類別的通知。 您還可以選擇多個資產、資料夾或集合，然後按一下 **[!UICONTROL 監視]** 來節省時間。 但是，如果您選擇了多個實體，其中某些實體已訂閱，則 **[!UICONTROL 監視]** 選項。
+1. Assets檢視會顯示成功訊息。 您可以在成功訊息中按一下&#x200B;**[!UICONTROL 前往通知偏好設定]**，以編輯通知類別的[訂閱](#subscribe-to-notification-categories)。
 
-同樣，要取消訂閱，請選擇您已訂閱的資產、資料夾或集合，然後按一下 **[!UICONTROL 取消監視]**。
+   Assets檢視中的![通知](assets/watch-assets.png)
+
+Assets檢視現在會傳送訂閱類別的通知。 您還可以選擇多個資產、資料夾或集合，然後按一下 **[!UICONTROL 監視]** 來節省時間。 但是，如果您選取多個專案且有部分專案已訂閱，將不會顯示&#x200B;**[!UICONTROL 監視]**&#x200B;選項。
+
+### 檢視訂閱內容 {#view-subscribed-content}
+
+若要檢視您的訂閱內容，請依照下列步驟進行：
+
+1. 導覽至&#x200B;**[!UICONTROL 資產管理]**&#x200B;下的[!UICONTROL Watched Assets]。
+
+1. Assets檢視會顯示訂閱資產的清單，包括其名稱、型別和路徑。 從清單中選取資產、資料夾或集合，以檢視其詳細資訊、位置或[取消訂閱](#unsubscribe-to-content)。
+
+   ![檢視訂閱的內容](assets/view-watched-assets.png)
+
+### 檢視內容訂閱者 {#view-content-subscribers}
+
+若要檢視您的內容訂閱者，請依照下列步驟進行：
+
+1. 瀏覽資料夾、資產或集合，然後選取&#x200B;**[!UICONTROL 詳細資料]**。
+
+1. 從右窗格按一下![眼睛圖示](assets/do-not-localize/eye-icon.png)以檢視內容觀察者清單。
+
+   或者，按一下右窗格上的![註解圖示](assets/do-not-localize/comment-icon.svg)以檢視內容觀看者。
+
+### 取消訂閱內容 {#unsubscribe-to-content}
+
+若要取消訂閱：
+
+1. 移至&#x200B;**[!UICONTROL 資產管理]**&#x200B;下的[!UICONTROL Watched Assets]。
+
+1. 選取您要取消訂閱的資產、資料夾或集合，然後按一下&#x200B;**[!UICONTROL 取消監視]**。
+
+   ![取消訂閱內容](assets/unsubscribe-assets.png)
+
+或者，在[!UICONTROL 資產管理]下瀏覽資料夾、資產或集合。 選取[訂閱的資產](#subscribe-to-content)並按一下&#x200B;**[!UICONTROL 取消觀看]**。
 
 ## 查看通知 {#view-notifications}
 
