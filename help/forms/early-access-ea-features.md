@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 3b6d75b13730e920a10bc623947bc8b2d46dc5a9
+source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
 workflow-type: tm+mt
-source-wordcount: '2837'
-ht-degree: 19%
+source-wordcount: '2940'
+ht-degree: 20%
 
 ---
 
@@ -83,7 +83,7 @@ Forms帶來的更多對話功能如下：
 
 聯結器可簡化資料傳輸程式，協助您改善網站的轉換率。 透過自動傳送潛在客戶資料至Marketo，您可以確保合格的潛在客戶可快速進入您的培育計畫。
 
-本質上，AEM Forms至Marketo Connector可協助您運用兩個平台的優勢，建立更有效率的行銷漏斗。
+本質上，AEM Forms至Marketo Connector可協助您運用兩個平台的優勢，建立更有效率的行銷funnel。
 
 準備好開始了嗎？ 以下文章提供使用創新的詳細指示。
 
@@ -116,7 +116,12 @@ Cloud上的互動式通訊是建立、管理和提供資料導向互動式通訊
 
 * **格式彈性**：輸出為PDF、HTML、PCL、PostScript®和ZPL格式。
 
-* **規則編輯器**：使用直覺式的點選式介面，直接在您的檔案中建立動態的資料導向動作。 輕鬆定義條件式邏輯、自動化工作流程，以及個人化內容，無需撰寫程式碼。
+* **規則編輯器**：使用直覺式的點選式介面，直接在您的檔案中建立動態的資料導向動作。 輕鬆定義條件式邏輯、自動化工作流程，以及將內容個人化，不需要編寫程式碼。
+
+* **PDF預覽：**&#x200B;預覽沒有資料、本機JSON檔案或資料模型的互動式通訊，以進行彈性的資料導向測試。
+* **自訂字型：**&#x200B;內嵌自訂或組織核准的字型，以確保跨裝置一致、品牌化的PDF轉譯。
+* **匯入和匯出：**&#x200B;在不同環境中順暢地移轉及重複使用互動式通訊，以及它們的片段和資料模型。
+
 
 #### 使用案例：
 
@@ -161,7 +166,7 @@ AEM Forms HTML5 Forms可讓您以HTML5格式轉譯現有的XFA (XML Forms Archit
 
 使用AEM Forms CLI工具加速AEM Forms Edge Delivery Services開發。 這個命令列介面可讓您立即產生啟動自訂元件開發所需的程式碼和接線 — 沒有樣板，也不麻煩。
 
->[!VIDEO]&#x200B;(https://video.tv.adobe.com/v/3470514/aem-forms scaffolding-aem-custom component generator-aem-forms cli-aem-forms custom component-aem-forms開發工具)
+>[!VIDEO]（<https://video.tv.adobe.com/v/3470514/aem-forms>支架 — aem-custom component generator-aem-forms cli-aem-forms custom component-aem-forms開發工具）
 
 **主要功能：**
 
@@ -174,7 +179,7 @@ AEM Forms HTML5 Forms可讓您以HTML5格式轉譯現有的XFA (XML Forms Archit
 
 ### 動態表單資料的API整合工具
 
-API整合工具可讓表單作者建立動態、智慧型的表單，這些表單會根據使用者互動，自動從外部REST API擷取及填入資料。 此無程式碼整合功能可將靜態表單轉換為回應式資料收集介面。
+表單作者可以利用 API 整合工具來建立動態、智慧的表單，而此表單會根據使用者互動情形，自動從外部 REST API 擷取及填入資料。這項無程式碼整合功能將靜態表單轉換為回應式資料彙集介面。
 
 主要功能包括：
 
@@ -283,6 +288,10 @@ Forms 服務會產生用於資料擷取的互動式 PDF forms。它也可以用�
 * **改善安全性**：藉由運用Azure的內建安全性功能，例如靜態加密和角色型存取控制(RBAC)，在儲存期間仍可保護機密檔案。
 
 * **可自訂的儲存路徑**：定義自訂目錄路徑的功能可確保產生的PDF儲存在有條理且特定於應用程式的位置，進而改善檔案管理。
+
+### 視覺化規則編輯器中的增強功能
+
+* 最適化Forms中的視覺化規則編輯器現在支援[直接API整合，不需要表單資料模型](/help/forms/api-integration-in-rule-editor.md)。 您可以透過輸入其JSON URL或使用cURL命令匯入設定來連線到API端點。 整合之後，可以使用`Invoke Service`動作叫用API。
 
 ## 另請參閱
 

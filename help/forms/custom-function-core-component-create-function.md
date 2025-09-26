@@ -5,9 +5,9 @@ keywords: 新增自訂函式、使用自訂函式、建立自訂函式，以及�
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: e7ab4233-2e91-45c6-9377-0c9204d03ee9
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
 workflow-type: tm+mt
-source-wordcount: '1340'
+source-wordcount: '1360'
 ht-degree: 5%
 
 ---
@@ -29,6 +29,8 @@ ht-degree: 5%
    * 預設引數
    * Rest引數
 
+* 最新ECMAScript功能提供搶先使用(EA)功能，一般情況下最高支援ECMAScript 2019。
+
 ## 建立自訂函式的先決條件
 
 開始將自訂函式新增至最適化Forms之前，請確定您具備下列條件：
@@ -42,7 +44,7 @@ ht-degree: 5%
 
 ## 建立自訂函數
 
-建立使用者端程式庫以呼叫規則編輯器中的自訂函式。 如需詳細資訊，請參閱[使用使用者端資料庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=zh-Hant#developing)。
+建立使用者端程式庫以呼叫規則編輯器中的自訂函式。 如需詳細資訊，請參閱[使用使用者端資料庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing)。
 
 建立自訂函式的步驟如下：
 
@@ -144,10 +146,10 @@ ht-degree: 5%
 
 1. 導覽至`/ui.apps/src/main/content/META-INF/vault/filter.xml`AEMaaCS專案目錄[中的]檔案。
 
-1. 開啟檔案，並在結尾新增下列行：
+2. 開啟檔案，並在結尾新增下列行：
 
    `<filter root="/apps/experience-league" />`
-1. 儲存檔案。
+3. 儲存檔案。
 
 ![自訂函式篩選器xml](/help/forms/assets/custom-function-filterxml.png)
 
@@ -188,7 +190,7 @@ ht-degree: 5%
    >
    > 在&#x200B;**[!UICONTROL 使用者端資料庫類別]**&#x200B;欄位中指定逗號分隔的清單，可新增多個類別。
 
-1. 按一下&#x200B;**[!UICONTROL 「完成」]**。
+1. 按一下&#x200B;**[!UICONTROL 完成]**。
 
 您可以使用[JavaScript註解](/help/forms/rule-editor-core-components.md)，在最適化表單[的](##js-annotations)規則編輯器中使用自訂函式。
 

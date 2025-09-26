@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 062ed441-6e1f-4279-9542-7c0fedc9b200
-source-git-commit: fd3c53cf5a6d1c097a5ea114a831ff626ae7ad7e
+source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
 workflow-type: tm+mt
 source-wordcount: '1975'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # 規則編輯器增強功能和使用案例
 
-<span class="preview">這些是透過我們的<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hant#new-features">發行前通道</a>提供的發行前功能。 這些增強功能也適用於Edge Delivery Services Forms。
+<span class="preview">這些是透過我們的<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">發行前通道</a>提供的發行前功能。 這些增強功能也適用於Edge Delivery Services Forms。
 
 本文介紹Adaptive Forms中規則編輯器的最新增強功能。 這些更新可協助您更輕鬆地定義表單行為，而不需撰寫自訂程式碼，並建立更動態、回應速度更快、更個人化的表單體驗。
 
@@ -22,12 +22,12 @@ ht-degree: 0%
 
 | 增強功能 | 說明 | 優點 |
 |---|----|---|
-| **使用`validate()`方法進行驗證** | 可在函式清單中取得，以驗證個別欄位、面板或整個表單。 |  — 面板、欄位或表單層級<br>的精細驗證 — 目標錯誤訊息<br>提供更佳的使用者體驗 — 防止資料不完整的進度<br> — 減少表單提交錯誤 |
-| **下載DOR** | 在規則編輯器中提供的現成可用函式可下載記錄檔案(DoR)。 |  — 下載DoR <br>不需要任何自訂開發 — 各表單間有一致的下載體驗 |
-| **動態變數** | 使用根據使用者輸入或其他條件而變更的變數來建立規則。 |  — 啟用彈性的規則條件<br> — 減少重複邏輯<br>的需求 — 消除建立隱藏欄位的要求 |
-| **自訂事件型規則** | 定義可回應標準觸發程式以外自訂事件的規則。 |  — 支援進階使用案例<br> — 更深入控制執行規則的時間和方式<br> — 增強互動性 |
-| **內容感知可重複面板執行** | 規則現在會在每個重複面板的正確內容中執行，而非僅在最後一個例項中執行。 |  — 每個重複執行個體<br>的精確規則應用程式 — 減少動態區段<br>中的錯誤 — 改善使用者對重複內容的體驗 |
-| **支援查詢字串、UTM和瀏覽器引數** | 建立可根據URL引數或瀏覽器特定值來調整表單行為的規則。 |  — 根據來源或環境<br>啟用個人化 — 對行銷或追蹤特定流程<br>很有用 — 不需要額外的指令碼或自訂 |
+| [使用validate()方法進行驗證](#validate-method-in-function-list) | 可在函式清單中取得，以驗證個別欄位、面板或整個表單。 |  — 面板、欄位或表單層級<br>的精細驗證 — 目標錯誤訊息<br>提供更佳的使用者體驗 — 防止資料不完整的進度<br> — 減少表單提交錯誤 |
+| [下載記錄檔案](#download-document-of-record) | 在規則編輯器中提供的現成可用函式可下載記錄檔案(DoR)。 |  — 下載DoR <br>不需要任何自訂開發 — 各表單間有一致的下載體驗 |
+| [動態變數](#support-for-dynamic-variables-in-rules) | 使用根據使用者輸入或其他條件而變更的變數來建立規則。 |  — 啟用彈性的規則條件<br> — 減少重複邏輯<br>的需求 — 消除建立隱藏欄位的要求 |
+| [自訂事件型規則](#custom-event-based-rules-support) | 定義可回應標準觸發程式以外自訂事件的規則。 |  — 支援進階使用案例<br> — 更深入控制執行規則的時間和方式<br> — 增強互動性 |
+| [內容感知可重複面板執行](#context-based-rule-execution-for-repeatable-panels) | 規則現在會在每個重複面板的正確內容中執行，而非僅在最後一個例項中執行。 |  — 每個重複執行個體<br>的精確規則應用程式 — 減少動態區段<br>中的錯誤 — 改善使用者對重複內容的體驗 |
+| [支援查詢字串、UTM和瀏覽器引數](#url-and-browser-parameter-based-rules-in-adaptive-forms) | 建立可根據URL引數或瀏覽器特定值來調整表單行為的規則。 |  — 根據來源或環境<br>啟用個人化 — 對行銷或追蹤特定流程<br>很有用 — 不需要額外的指令碼或自訂 |
 
 >[!NOTE]
 >
@@ -64,7 +64,7 @@ ht-degree: 0%
 >
 >您可以在表單、片段或個別欄位上使用&#x200B;**validate()**&#x200B;方法。 當片段包含在表單中時，表單和片段都會顯示為驗證內容中的選項。 在這種情況下，片段會參考其中的欄位，而表單會參考其中嵌入片段的父表單。
 
-## 在規則編輯器中將DownloadDor下載為OOTB函式
+## 下載記錄文件
 
 使用規則編輯器中的&#x200B;**DownloadDor()**&#x200B;現成可用(OOTB)函式，可讓使用者下載記錄檔案（如果表單已設定為產生記錄檔案）。
 
@@ -92,7 +92,7 @@ ht-degree: 0%
 
 ## 支援規則中的動態變數
 
-增強型規則編輯器支援建立和使用動態（暫時）變數。 您可以使用內建的&#x200B;**設定變數值**&#x200B;和&#x200B;**取得變數值**&#x200B;函式，在表單的整個生命週期中設定及擷取這些變數。
+增強型規則編輯器支援建立和使用動態（暫時）變數。 您可以使用內建的&#x200B;**設定變數值**&#x200B;和&#x200B;**取得變數值**函式，在表單的整個生命週期中設定及擷取這些變數。
 這些變數：
 
 * 未隨表單資料一起提交。
@@ -118,13 +118,13 @@ ht-degree: 0%
 
 ![取得變數值](/help/forms/assets/getvalue.png)
 
-**總出貨成本**&#x200B;欄位會隨著使用者變更國家或數量而動態更新，以反映產品成本和出貨費用。
+**總出貨成本**欄位會隨著使用者變更國家或數量而動態更新，以反映產品成本和出貨費用。
 ![輸出](/help/forms/assets/getsetvalue-output.png)
 
 >[!NOTE]
 >
-> 您也可以在When條件中新增&#x200B;**Get Variable value**&#x200B;函式。
-> &#x200B;> ![條件](/help/forms/assets/when-get-variable.png){width=50%，height=50%，align=center}中的取得變數值函式
+> 您也可以在When條件中新增&#x200B;**Get Variable value**函式。
+> > ![條件](/help/forms/assets/when-get-variable.png){width=50%，height=50%，align=center}中的取得變數值函式
 
 此方法可啟用動態即時計算，而不會在表單中新增額外欄位，保持結構簡潔且方便使用。
 

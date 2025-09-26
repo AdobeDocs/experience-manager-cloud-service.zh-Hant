@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: 在VRE中叫用服務增強功能，使用叫用服務填入下拉式選項，使用叫用服務的輸出設定可重複面板，使用叫用服務的輸出設定面板，使用叫用服務的輸出引數驗證其他欄位。
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: 33dcc771c8c2deb2e5fcb582de001ce5cfaa9ce4
+source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
 workflow-type: tm+mt
-source-wordcount: '1598'
+source-wordcount: '1800'
 ht-degree: 1%
 
 ---
@@ -78,6 +78,7 @@ ht-degree: 1%
 | **使用Invoke Service的輸出設定可重複的面板** | 使用叫用服務輸出的資料來設定可重複的面板，允許動態面板。 [按一下這裡](#use-case-2-set-repeatable-panel-using-output-of-invoke-service)，檢視實作。 |
 | **使用Invoke Service的輸出設定面板** | 使用叫用服務輸出中的特定值來設定面板的內容或可見度。 [按一下這裡](#use-case-3-set-panel-using-output-of-invoke-service)，檢視實作。 |
 | **使用叫用服務的輸出引數來驗證其他欄位** | 使用來自叫用服務的特定輸出引數來驗證表單欄位。 [按一下這裡](#use-case-4-use-output-parameter-of-invoke-service-to-validate-other-fields)，檢視實作。 |
+| **使用事件裝載導覽至叫用服務中的動作** | 使用事件裝載來處理成功和失敗回應，並在導覽期間將資料傳遞至「導覽至」動作。 [按一下這裡](#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service)檢視實作。 |
 
 建立根據`Get Information`文字方塊中輸入之輸入擷取值的`Pet ID`表單。 底下熒幕擷圖顯示以下使用案例中所使用的表單：
 
@@ -142,7 +143,6 @@ ht-degree: 1%
         "status": "available"
     }
 ```
-
 
 規則和邏輯是使用&#x200B;**文字方塊上的規則編輯器中的**&#x200B;叫用服務`Pet ID`動作實作，以示範提及的使用案例。
 
@@ -222,9 +222,38 @@ ht-degree: 1%
 
 ![輸出](/help/forms/assets/output4.png)
 
+### 使用案例5：在導覽至叫用服務動作中使用事件裝載
+
+此使用案例示範如何在&#x200B;**提交**&#x200B;按鈕上設定規則，該按鈕會呼叫&#x200B;**叫用服務**，然後使用&#x200B;**瀏覽至**&#x200B;動作將使用者重新導向至其他頁面。
+
+#### 實施
+
+在&#x200B;**提交**&#x200B;按鈕上建立規則以叫用`redirect-api` API服務。 此服務負責將使用者重新導向至&#x200B;**聯絡我們**&#x200B;表單。
+
+您可以使用下列提供的JSON資料，將API當作`redirect-api` API服務直接整合到規則編輯器中：
+
+```json
+{
+  "id": "1",
+  "path": "/content/dam/formsanddocuments/contact-detail/jcr:content?wcmmode=disabled"
+}
+```
+
 >[!NOTE]
 >
-> 您也可以[直接在規則編輯器介面中整合API](/help/forms/api-integration-in-rule-editor.md)，而不使用預先定義的表單資料模型。
+> 若要瞭解如何直接在規則編輯器介面中整合API，[按一下這裡](/help/forms/api-integration-in-rule-editor.md)，而不使用預先定義的表單資料模型。
+
+在&#x200B;**[!UICONTROL 新增成功處理常式]**&#x200B;中，設定&#x200B;**瀏覽至**&#x200B;動作，以使用&#x200B;**引數將使用者重新導向至**&#x200B;聯絡我們`Event Payload`頁面。 在這裡，使用者可以提交他們的聯絡詳細資訊。
+
+![事件承載](/help/edge/docs/forms/assets/navigate-to-eventpayload.png)
+
+或者，設定失敗處理常式，在服務呼叫失敗時顯示錯誤訊息。
+
+#### 輸出
+
+按一下&#x200B;**Submit**&#x200B;按鈕時，就會叫用`redirect-api` API服務。 成功後，會將使用者重新導向至&#x200B;**聯絡我們**&#x200B;頁面。
+
+![事件裝載輸出](/help/forms/assets/output5.gif)
 
 ## 常見問題
 
