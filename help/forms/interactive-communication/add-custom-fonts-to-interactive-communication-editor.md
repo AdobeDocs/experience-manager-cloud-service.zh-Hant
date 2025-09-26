@@ -40,4 +40,4 @@ ht-degree: 24%
 >[!NOTE]
 >
 > 如需詳細的設定步驟，使用者可以遵循指南[使用自訂字型](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/use-custom-fonts)
-> >完成步驟並執行管道後，自訂字型可直接在互動式通訊編輯器中使用。
+> &#x200B;>完成步驟並執行管道後，自訂字型可直接在互動式通訊編輯器中使用。
