@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: bdc0e7623592efed5270a3cb8322ef22e50cbad9
+source-git-commit: 3eda41b89847e1011d818922826b745b880e4977
 workflow-type: tm+mt
-source-wordcount: '2066'
-ht-degree: 68%
+source-wordcount: '1905'
+ht-degree: 47%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 68%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440931?quality=12&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -82,7 +82,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -90,43 +90,23 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 ### Experience Manager Forms 的新功能 {#new-features-forms}
 
-**日期和時間輸入元件**
+**呼叫SharePoint清單附件的表單資料模型工作流程步驟**
 
-現在提供[日期和時間元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-time-component)，讓使用者可以使用行事曆和時鐘介面選取日期和時間，或使用受支援的格式手動輸入數值。
-
-**增強檔案上傳的錯誤處理功能**
-
-[檔案附件元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab)現在會自動根據允許清單來驗證上傳的檔案類型。如果使用者以不支援的格式上傳檔案，該表單將在提交過程中顯示錯誤。此元件也檢查檔案內容以驗證其類型，增強表單的整體安全性。
-
-**自訂提交動作的指定錯誤回應**
-
-當[自訂提交動作](/help/forms/custom-submit-action-troubleshooting.md)遭遇未處理的錯誤時，系統會傳回錯誤代碼 502。此代碼能幫助我們確認問題與自訂提交動作有關，讓除錯更為容易。
-
-**在記錄文件中排除隱藏欄位**
-
-利用新屬性可在[記錄文件](/help/forms/generate-document-of-record-core-components.md#document-of-record-settings)中排除隱藏欄位。預設情況下，並未選取此選項且適用於所有表單欄位。
-
+「叫用表單資料模型」工作流程步驟現在支援在SharePoint清單型表單資料模型中處理Base64編碼附件陣列的工作流程端中繼資料。 透過此增強功能，工作流程步驟可以傳遞、儲存及擷取每個附件的中繼資料，例如檔案名稱、MIME型別和自訂屬性。 此功能可讓您進行更全面的資料管理，並有助於順暢的下游整合。 如需詳細資訊，請參閱SharePoint清單附件的叫用表單資料模型工作流程步驟中的[增強支援](/help/forms/aem-forms-workflow-step-reference.md#invoke-form-data-model-fdm-service-step)。
 
 ### AEM Forms 的預發行功能
 
-**產生並同步 AFP 轉譯**
+**規則編輯器增強功能**
 
-您現在可以使用 [AEM Forms Communication API](/help/forms/document-generation-afp-api.md) 將 XDP 檔案轉換成 AFP 格式。AFP 是一種廣泛應用於大型企業列印的高效能格式。
+規則編輯器現在支援增強型導覽，並允許在輸入引數中使用函式和數學運算式。
 
-**規則編輯器的增強功能**
+**事件承載支援的增強型導覽**
 
-* [函數清單中的驗證方法](/help/forms/rule-editor-enhancements-use-cases.md#validate-method-in-function-list)：現在支援在面板、欄位及表單層級執行驗證和重設方法。之前僅支援在表單層級執行。
-* [現代 JavaScript 支援](/help/forms/rule-editor-core-components-difference-tables.md)：自訂函數現已支援 ECMAScript 2019 及後續版本新增的功能，讓您可以撰寫更有效率且可重複使用的模組化程式碼。
-* [在規則編輯器中下載 DoR 選項](/help/forms/rule-editor-enhancements-use-cases.md#downloaddor-as-ootb-fuction-in-rule-editor)：在規則編輯器中新增了一項現成可用 (OOTB) 的功能，可用於下載記錄文件 (DoR)。
+Invoke Service處理常式中的`Navigate To`動作現在支援`EVENT_PAYLOAD`，可讓表單作者根據事件回應設定後續動作。 此增強功能提供在設計提交後工作流程時更大的彈性，確保更順暢的轉換和更個人化的使用者體驗。 如需詳細資訊，請參閱[支援事件承載的增強型導覽](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service)。
 
-  ![記錄文件](/help/forms/assets/document-of-record-rn.gif)
+輸入引數中的&#x200B;**函式和數學運算式支援**
 
-* [規則編輯器中的動態變數](/help/forms/rule-editor-enhancements-use-cases.md#support-for-dynamic-variables-in-rules)：您現在可以在規則編輯器中使用動態 (臨時) 變數，以更靈活地定義條件和動作。儲存臨時值不再需要隱藏欄位。
-* [自訂事件型規則支援](/help/forms/rule-editor-enhancements-use-cases.md#custom-event-based-rules-support)：您現在可以定義自訂事件並根據那些事件觸發規則。
-* [上下文感知可重複面板規則](/help/forms/rule-editor-enhancements-use-cases.md#context-based-rule-execution-for-repeatable-panels)：在可重複面板中，現在規則是根據上下文執行，而不是僅套用於最後一個面板實例。
-* [參數觸發的規則](/help/forms/rule-editor-enhancements-use-cases.md#url-and-browser-parameter-based-rules-in-adaptive-forms)：規則編輯器現在支援根據查詢參數、UTM 參數或瀏覽器參數的規則執行。
-* [表單專用自訂函數](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md#organizing-custom-functions-across-different-forms)：Edge Delivery Services Forms 現在支援表單專用的自訂函數指令碼，為管理可重複使用的邏輯提供更大的靈活性。
-* [自訂函數的靜態匯入](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md#static-imports-for-custom-functions)：通用編輯器中的規則編輯器現在支援靜態匯入，讓開發人員可以跨多個表單整理、共用和重複使用函數。
+輸入引數現在支援函式呼叫和數學運算式，讓表單作者可直接傳遞動態計算的值。 此增強功能可簡化規則設定、免除額外欄位的需求，並讓表單更能適應複雜的邏輯和計算驅動案例。 如需詳細資訊，請參閱輸入引數[中的](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters)函式與數學運算式支援。
 
 ### 全新 AEM Forms 搶先體驗功能 {#forms-new-early-access-features}
 
@@ -134,13 +114,17 @@ AEM Forms 搶先體驗方案為您提供獨一無二的機會，享有尖端創�
 
 這些發行說明列出的是目前版本提供的創新功能。如需搶先體驗方案提供的創新功能之完整清單，請參閱 [AEM Forms 搶先體驗方案文件](/help/forms/early-access-ea-features.md)。
 
-**手寫簽名元件**
+**互動式通訊編輯器中的PDF預覽**
 
-您現在可以使用[手寫簽名元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/scribble-signature)，協助使用者將其簽名新增至表單中，例如合約表單。透過此元件，使用者可以使用滑鼠、手寫筆或觸控螢幕直接在表單中書寫其簽名。
+使用者可以預覽沒有資料的Interactive Communications PDF、本機JSON資料檔案或資料模型中的資料，啟用彈性的資料導向測試。 如需詳細資訊，請參閱[互動式通訊編輯器中的PDF預覽](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md)。
 
-**規則編輯器直接整合 API**
+**互動式通訊支援自訂字型**
 
-自適應表單現在支援在視覺化規則編輯器中[直接整合 API](/help/forms/api-integration-in-rule-editor.md)，而無需使用表單資料模型。作者可以透過 URL 或 cURL 匯入來設定 API、對應輸入/輸出參數，同時透過驗證保護呼叫的安全。
+「自訂字型」功能可讓使用者在互動式通訊中嵌入自訂或組織核准的字型，以確保跨裝置和平台呈現一致且品牌化的PDF。 如需詳細資訊，請參閱[互動式通訊支援自訂字型](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md)。
+
+**匯入和匯出互動式通訊**
+
+此功能可讓您在不同環境中移轉及重複使用互動式通訊。 您現在可以從一個環境匯出互動式通訊及其相關片段和資料模型，並將其匯入另一個環境。 如需詳細資訊，請參閱[匯入和匯出互動式通訊](/help/forms/interactive-communication/import-and-export-interactive-communications.md)。
 
 <!--
 **Forms Optimization opportunities**
@@ -173,7 +157,7 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 >[!NOTE]
 >
 >9月25日以有限可用性功能提供。
->&#x200B;>請傳送電子郵件給[aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com)，讓它在您的程式中啟動。
+>>請傳送電子郵件給[aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com)，讓它在您的程式中啟動。
 
 ### 適用於Eclipse的AEM開發人員工具新版本 {#aem-develeper-tools-for-eclipse}
 
@@ -283,7 +267,7 @@ Now in beta, youcan deploy a config pipeline for features including CDN origin s
 
 ### 擴充應用程式效能監控(APM) (Alpha程式) {#apm-alpha}
 
-為方便觀察，AEM Cloud Service目前支援Adobe提供的[New Relic One](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic)和客戶管理的[Dynatrace](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace)。 在我們探索其他APM選項的支援時，請透過電子郵件寄給我們：[aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com)，請連絡您偏好的廠商或技術，並提供使用案例。
+為方便觀察，AEM Cloud Service目前支援Adobe提供的[New Relic One](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic)和客戶管理的[Dynatrace](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace)。 在我們探索其他APM選項的支援時，請透過電子郵件寄給我們：[aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com)，請連絡您偏好的廠商或技術，並提供使用案例。
 
 
 ## [!DNL Experience Manager] Guides {#guides}
