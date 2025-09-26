@@ -39,7 +39,7 @@ ht-degree: 14%
 
 +++1.如何匯出互動式通訊
 
-1.1.選取[建立的互動式通訊](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/interactive-communication/create-interactive-communication) (IC)。
+1.1.選取[建立的互動式通訊](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/forms/interactive-communication/create-interactive-communication) (IC)。
 1.2.按一下&#x200B;**下載**&#x200B;選項，將其匯出為ZIP檔。
 1.3.下載的ZIP檔案包含IC及其選取的&#x200B;**範本**、**片段**&#x200B;和&#x200B;**資料模型**。
 
