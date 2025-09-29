@@ -74,7 +74,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 1. 管理員存取&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 處理設定檔]**。 按一下「**[!UICONTROL 建立]**」。
 1. 提供可協助您在套用至資料夾時唯一識別設定檔的名稱。
 1. 若要產生FPO轉譯，請在&#x200B;**[!UICONTROL 影像]**&#x200B;索引標籤上啟用&#x200B;**[!UICONTROL 建立FPO轉譯]**。 輸入1-100的&#x200B;**[!UICONTROL 品質]**&#x200B;值。
-1. 若要產生其他轉譯，請按一下[新增] ****，並提供下列資訊：
+1. 若要產生其他轉譯，請按一下[新增] **&#x200B;**，並提供下列資訊：
 
    * 每個轉譯的檔案名稱。
    * 每個轉譯的檔案格式(PNG、JPEG、GIF或WebP)。
@@ -156,7 +156,7 @@ Asset Compute服務整合可讓Experience Manager使用[!UICONTROL 服務引數]
 使用下列其中一種方法，將處理設定檔套用至資料夾：
 
 * 管理員可以在&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 處理設定檔]**&#x200B;中選取處理設定檔定義，並使用&#x200B;**[!UICONTROL 將設定檔套用至資料夾]**&#x200B;動作。 它會開啟內容瀏覽器，讓您導覽至特定資料夾並加以選取，然後確認設定檔的應用程式。
-* 使用者可以在Assets使用者介面中選取資料夾，並使用&#x200B;**[!UICONTROL 屬性]**&#x200B;動作開啟資料夾屬性畫面。 在&#x200B;**[!UICONTROL 資產處理]**&#x200B;索引標籤上，他們可以從[!UICONTROL 處理設定檔]清單中為該資料夾選取適當的處理設定檔。 若要儲存變更，請按一下[儲存並關閉]。****
+* 使用者可以在Assets使用者介面中選取資料夾，並使用&#x200B;**[!UICONTROL 屬性]**&#x200B;動作開啟資料夾屬性畫面。 在&#x200B;**[!UICONTROL 資產處理]**&#x200B;索引標籤上，他們可以從[!UICONTROL 處理設定檔]清單中為該資料夾選取適當的處理設定檔。 若要儲存變更，請按一下[儲存並關閉]。**&#x200B;**
   ![從[資產屬性]索引標籤](assets/folder-properties-processing-profile.png)將處理設定檔套用至資料夾
 
 * 使用者可以在Assets使用者介面中選取資料夾或特定資產，以套用處理設定檔，然後從上方的可用選項中選取![資產重新處理圖示](assets/do-not-localize/reprocess-assets-icon.png) **[!UICONTROL 重新處理Assets]**&#x200B;選項。
