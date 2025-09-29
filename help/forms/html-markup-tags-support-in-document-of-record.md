@@ -3,13 +3,13 @@ title: 記錄檔案中支援的HTML標籤標籤
 description: 產生記錄檔案現在支援HTML標籤標籤的參考指南，包括演算行為和協助工具考量事項
 feature: Adaptive Forms
 role: Developer, User
-source-git-commit: 739b2b396bf0c9042d6287bfba2e8e8792cabf70
+exl-id: 8481b0dc-aae7-4bd2-acfe-1f1b6d747683
+source-git-commit: 1794ed6cac612ee4600c2f8e1ced18c6130b64a2
 workflow-type: tm+mt
-source-wordcount: '478'
-ht-degree: 7%
+source-wordcount: '438'
+ht-degree: 8%
 
 ---
-
 
 
 # 記錄檔案中支援的HTML標籤標籤
@@ -132,23 +132,10 @@ Expected:     <LBody>First item
 <p>Einstein's equation: E=mc<sup>2</sup></p>
 ```
 
-## 相關資訊
+## 相關內容
 
-### AEM Forms檔案
 
 - [為最適化表單產生記錄文件](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 - [產生核心元件的記錄檔案](/help/forms/generate-document-of-record-core-components.md)
 - [記錄檔案範本自訂](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record)
-
-### 技術參考資料
-
-- [XFA規格 — XHTML和CSS屬性](https://www.adobe.com/devnet/acrobat/pdfs/XFA-3_3.pdf) （第1187頁）
-- [PDF協助工具標準](https://www.w3.org/TR/WCAG21/)
-- [核心協助工具API對應](https://www.w3.org/TR/core-aam-1.2/#role-map-superscript)
-
-### 最佳作法指南
-
-- [建立可存取的PDF](https://www.adobe.com/accessibility/pdf.html)
-- [表單中RTF文字的最佳作法](/help/forms/creating-accessible-adaptive-forms.md)
-- [協助工具的檔案結構](/help/forms/creating-accessible-adaptive-forms.md)
 
