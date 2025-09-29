@@ -4,9 +4,9 @@ description: 瞭解如何將基於核心元件的最適化表單另存為草稿�
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer
-source-git-commit: 8f1fa3a95f232f34ad6ae89c391e9e2272a2c072
+source-git-commit: bf0a42e1376e4743fe8ce0650e1f807dfba2d050
 workflow-type: tm+mt
-source-wordcount: '1385'
+source-wordcount: '1387'
 ht-degree: 3%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 3%
 
 # 將表單另存為草稿並列在網站頁面上
 
-<!--This article provides information about the Auto-save feature, which is currently available as a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).-->
+<!--This article provides information about the Auto-save feature, which is currently available as a pre-release feature. The pre-release feature is accessible only through our [pre-release channel](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).-->
 
 假設使用者開始填寫表單，但需要暫停並在稍後返回。 AEM提供`save-as-draft`選項，讓使用者可將表單儲存為草稿以供日後完成。 為方便起見，AEM提供現成的&#x200B;**草稿與提交** Forms Portal元件，可在AEM Sites頁面上顯示草稿與提交。 元件會列出已儲存為草稿以供稍後完成的表單，以及已提交的表單。 只有登入的使用者可以編輯其草稿或檢視其提交的表單。 但是，如果匿名使用者使用&#x200B;**搜尋與清單製作者**&#x200B;元件瀏覽表單清單，並將表單儲存為草稿，則&#x200B;**草稿與提交**&#x200B;元件不會列出該草稿。 若要檢視草稿和提交，使用者必須在提交表單時登入。
 
@@ -159,7 +159,7 @@ ht-degree: 3%
 ## 使用草稿和提交元件在「網站」頁面上檢視草稿/提交的表單
 
 若要檢視已儲存的草稿或已提交的表單，請使用&#x200B;**草稿與提交** Forms入口網站元件。
-在「草稿與提交」元件&#x200B;**[!UICONTROL 的]**&#x200B;設定對話方塊中，選取&#x200B;**選取型別**&#x200B;作為[草稿Forms](#configure-properties-of-the-drafts--submissions-component)時，儲存為草稿的表單會顯示在「網站」頁面上。 您可以按一下省略符號(...)來開啟草稿以完成表單。
+在「草稿與提交」元件**[!UICONTROL 的]**&#x200B;設定對話方塊中，選取&#x200B;**選取型別**&#x200B;作為[草稿Forms](#configure-properties-of-the-drafts--submissions-component)時，儲存為草稿的表單會顯示在「網站」頁面上。 您可以按一下省略符號(...)來開啟草稿以完成表單。
 
 ![草稿圖示](assets/drafts-component.png)
 
@@ -171,7 +171,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
-> Forms入口網站中的提交專案清單只會顯示Foundation表單提交專案。
+> 在Forms入口網站中，草稿和提交元件僅支援從基礎表單提交。
 
 ## 後續步驟
 
