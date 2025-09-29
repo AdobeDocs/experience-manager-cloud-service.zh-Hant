@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 3eda41b89847e1011d818922826b745b880e4977
+source-git-commit: 3f50bf40c55a8f61a9e20c83aa52c94c6d4afe53
 workflow-type: tm+mt
-source-wordcount: '1905'
-ht-degree: 47%
+source-wordcount: '1875'
+ht-degree: 48%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 47%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440931?quality=12&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -82,7 +82,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -157,7 +157,7 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 >[!NOTE]
 >
 >9月25日以有限可用性功能提供。
->&#x200B;>請傳送電子郵件給[aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com)，讓它在您的程式中啟動。
+>>請傳送電子郵件給[aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com)，讓它在您的程式中啟動。
 
 ### 適用於Eclipse的AEM開發人員工具新版本 {#aem-develeper-tools-for-eclipse}
 
@@ -240,8 +240,6 @@ Edge驗證可讓您將存取Edge Delivery Services頁面的許可權限製為僅
 
 如有需要，請傳送電子郵件給[aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com)，提供使用案例的簡短說明，以及您可能會有的任何問題。
 
-請注意，我們今年早些時候發行了一項功能，可為AEM Cloud Service發佈層專案[設定Open ID Connect ](/help/security/open-id-connect-support-for-aem-as-a-cloud-service-on-publish-tier.md)以保護AEM頁面(與Edge Delivery Services不同)。
-
 <!--
 ### CDN Configuration for Edge Delivery Services (Beta Program) {#cdn-eds-beta}
 
@@ -267,7 +265,7 @@ Now in beta, youcan deploy a config pipeline for features including CDN origin s
 
 ### 擴充應用程式效能監控(APM) (Alpha程式) {#apm-alpha}
 
-為方便觀察，AEM Cloud Service目前支援Adobe提供的[New Relic One](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic)和客戶管理的[Dynatrace](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace)。 在我們探索其他APM選項的支援時，請透過電子郵件寄給我們：[aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com)，請連絡您偏好的廠商或技術，並提供使用案例。
+為方便觀察，AEM Cloud Service目前支援Adobe提供的[New Relic One](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic)和客戶管理的[Dynatrace](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace)。 在我們探索其他APM選項的支援時，請透過電子郵件寄給我們：[aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com)，請連絡您偏好的廠商或技術，並提供使用案例。
 
 
 ## [!DNL Experience Manager] Guides {#guides}
