@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: eca09e1bf2ba4466f54e915e01218cc89cf5b116
+source-git-commit: 1d96401a5200dbffb49315af8745c22171f4ecc3
 workflow-type: tm+mt
-source-wordcount: '6799'
-ht-degree: 96%
+source-wordcount: '6807'
+ht-degree: 97%
 
 ---
 
@@ -237,6 +237,8 @@ ht-degree: 96%
    + 通用編輯器發行說明 {#universal-editor}
       + [通用編輯器最新發行說明](/help/release-notes/universal-editor/current.md)
       + 2025 {#2025}
+         + [2025.09.18 發行說明](/help/release-notes/universal-editor/2025/2025-09-18.md)
+         + [2025.09.11 發行說明](/help/release-notes/universal-editor/2025/2025-09-11.md)
          + [2025.09.04 發行說明](/help/release-notes/universal-editor/2025/2025-09-04.md)
          + [2025.08.22 發行說明](/help/release-notes/universal-editor/2025/2025-08-22.md)
          + [2025.08.14 發行說明](/help/release-notes/universal-editor/2025/2025-08-14.md)
@@ -507,7 +509,7 @@ ht-degree: 96%
                + [設定翻譯規則](/help/journey-sites/translation/translation-rules.md)
                + [翻譯內容](/help/journey-sites/translation/translate-content.md)
                + [發佈翻譯內容](/help/journey-sites/translation/publish-content.md)
-            + [Headless 翻譯歷程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html?lang=zh-Hant)
+            + [Headless 翻譯歷程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html)
             + [翻譯多語言網站的內容](/help/sites-cloud/administering/translation/overview.md)
             + [準備翻譯內容](/help/sites-cloud/administering/translation/preparation.md)
             + [管理翻譯專案](/help/sites-cloud/administering/translation/managing-projects.md)
@@ -527,7 +529,7 @@ ht-degree: 96%
       + [將內容片段匯出到 Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [將體驗片段匯出到 Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [與 Adobe Campaign 整合](/help/sites-cloud/integrating/campaign.md)
-      + [使用 Adobe Journey Optimizer 的內容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=zh-Hant)
+      + [使用 Adobe Journey Optimizer 的內容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [AEM as a Cloud Service 的操作遙測](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Assets {#assets}
    + [概觀與新增功能](/help/assets/overview.md)
@@ -760,8 +762,8 @@ ht-degree: 96%
 + Forms {#forms}
    + 概觀 {#forms-overview}
       + [簡介](/help/forms/home.md)
-      + [簡介2](/help/forms/home2.md)
-      + [簡介3](/help/forms/home3.md)
+      + [簡介 2](/help/forms/home2.md)
+      + [簡介 3](/help/forms/home3.md)
       + [重要 Adobe Experience Manager Forms 創新](/help/forms/latest-innovations.md)
       + [搶先體驗 (EA) 功能](/help/forms/early-access-ea-features.md)
       + [重大變更](/help/forms/notable-changes.md)
@@ -840,7 +842,7 @@ ht-degree: 96%
             + [建立以核心元件為基礎的最適化表單範本](/help/forms/template-editor-core-components.md)
             + [以 XFA Form 範本為基礎建立最適化表單 (核心元件)](/help/forms/create-adaptive-form-using-xfa-templates.md)
             + [為最適化表單產生記錄文件](/help/forms/generate-document-of-record-core-components.md)
-            + [記錄檔案中支援的HTML標籤標籤](/help/forms/html-markup-tags-support-in-document-of-record.md)
+            + [記錄文件中支援的 HTML 標記標籤](/help/forms/html-markup-tags-support-in-document-of-record.md)
             + [使用機器翻譯或人工翻譯來翻譯最適化表單](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [設定重新導向頁面或感謝訊息](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [建立具有可重複區段的表單](/help/forms/create-forms-repeatable-sections.md)
@@ -1035,16 +1037,16 @@ ht-degree: 96%
       + [產生變化版本：與 AEM 編輯器整合](/help/generative-ai/generate-variations-integrated-editor.md)
       + [產生變化版本](/help/generative-ai/generate-variations.md)
    + 表單體驗建立工具 {#forms-experience-builder}
-      + [Forms Experience Builder — 概觀](/help/forms/experience-builder/product-overview.md)
-      + [Forms Experience Builder快速入門](/help/forms/experience-builder/forms-experience-builder-getting-started.md)
-      + [部署和設定Forms Experience Builder](/help/forms/experience-builder/deploy-forms-experience-builder.md)
+      + [表單體驗建立工具 - 概觀](/help/forms/experience-builder/product-overview.md)
+      + [表單體驗建立工具快速入門](/help/forms/experience-builder/forms-experience-builder-getting-started.md)
+      + [部署和設定表單體驗建立工具](/help/forms/experience-builder/deploy-forms-experience-builder.md)
       + 操作說明 {#forms-experience-builder-how-to}
          + [如何將影像轉換為表單？](/help/forms/experience-builder/intelligent-import-conversion.md)
-         + [如何設定表單提交和整合？](/help/forms/experience-builder/form-submission-integration.md)
-         + [如何在Forms Experience Builder中建立LLM增強型智慧型欄位？](/help/forms/experience-builder/forms-experience-builder-llm-smart-fields.md)
-         + [如何在Forms Experience Builder中開始新的對話串？](/help/forms/experience-builder/configure-forms-experience-builder-ui-options.md)
-      + [提示程式庫](/help/forms/experience-builder/forms-experience-builder-prompt-examples-library.md)
-      + [常見問題集 (FAQ)](/help/forms/experience-builder/forms-experience-builder-frequently-asked-questions.md)
+         + [如何設定表單提交與整合？](/help/forms/experience-builder/form-submission-integration.md)
+         + [如何在表單體驗建立工具中建立 LLM 增強型智慧欄位？](/help/forms/experience-builder/forms-experience-builder-llm-smart-fields.md)
+         + [如何在表單體驗建立工具中開始新的對話串？](/help/forms/experience-builder/configure-forms-experience-builder-ui-options.md)
+      + [提示資料庫](/help/forms/experience-builder/forms-experience-builder-prompt-examples-library.md)
+      + [常見問題 (FAQ)](/help/forms/experience-builder/forms-experience-builder-frequently-asked-questions.md)
 + Screens {#screens-as-cloud-service}
    + Screens as a Cloud Service 概觀 {#overview}
       + [簡介](/help/screens-cloud/introduction/introduction.md)
@@ -1177,9 +1179,9 @@ ht-degree: 96%
          + [建置自訂表單元件：開發人員指南](/help/edge/docs/forms/custom-components-forms.md)
          + [監視表單效能：操作遙測指南](/help/edge/docs/forms/operational-telemetry-for-forms.md)
       + [表單提交指南：使用表單提交服務](/help/forms/forms-submission-service.md)
-      + [設定 Edge Delivery Services 表單提交](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
-      + [最適化Forms區塊欄位屬性](/help/edge/docs/forms/eds-form-field-properties.md)
-      + [常見問題集](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
+      + [設定 Edge Delivery Services 表單的提交](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
+      + [自適應表單區塊欄位屬性](/help/edge/docs/forms/eds-form-field-properties.md)
+      + [常見問題](/help/edge/docs/forms/adapttive-forms-for-edge-delivery-services-faq.md)
    + [建立表單的最佳做法](/help/edge/docs/forms/universal-editor/best-practices-eds-forms.md)
 + Headless {#headless}
    + [什麼是 Headless CMS？](/help/headless/what-is-headless.md)
@@ -1410,7 +1412,7 @@ ht-degree: 96%
          + [發佈](/help/implementing/universal-editor/publishing.md)
          + [事件](/help/implementing/universal-editor/events.md)
          + [篩選元件](/help/implementing/universal-editor/filtering.md)
-         + [設定RTE](/help/implementing/universal-editor/configure-rte.md)
+         + [設定 RTE](/help/implementing/universal-editor/configure-rte.md)
          + [自訂](/help/implementing/universal-editor/customizing.md)
          + [延伸](/help/implementing/universal-editor/extending.md)
          + [架構](/help/implementing/universal-editor/architecture.md)
@@ -1419,7 +1421,7 @@ ht-degree: 96%
          + [快速入門](/help/implementing/universal-editor/getting-started.md)
          + [開發者概觀](/help/implementing/universal-editor/developer-overview.md)
          + [本機 AEM 開發](/help/implementing/universal-editor/local-dev.md)
-         + [SecurBank範例應用程式](/help/implementing/universal-editor/securbank.md)
+         + [SecurBank 範例應用程式](/help/implementing/universal-editor/securbank.md)
       + [Headless 體驗管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=zh-hant)
       + 混合式與 SPA 開發 {#hybrid}
          + [使用 AEM 的混合式和 SPA](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
@@ -1500,7 +1502,7 @@ ht-degree: 96%
    + 部署至 AEM as a Cloud Service  {#deploying}
       + [部署至 AEM as a Cloud Service ](/help/implementing/deploying/overview.md)
       + [AEM 版本更新](/help/implementing/deploying/aem-version-updates.md)
-      + [無訊息時數與更新可用期間](/help/implementing/deploying/quiet-hours-update-free-periods.md)
+      + [暫停更新時段與暫停更新期間](/help/implementing/deploying/quiet-hours-update-free-periods.md)
       + [為 AEM as a Cloud Service 設定 OSGi](/help/implementing/deploying/configuring-osgi.md)
       + [資源對應](/help/implementing/deploying/resource-mapping.md)
    + 作者階層 {#author-tier}
