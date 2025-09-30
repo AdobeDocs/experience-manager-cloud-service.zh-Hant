@@ -8,13 +8,13 @@ feature: Adaptive Forms, Release Information
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 51d9fed937ea5f12544ed476974d2812843fb457
+exl-id: e8c37209-4d8e-4eaf-9e29-ffe32b841eb1
+source-git-commit: eca09e1bf2ba4466f54e915e01218cc89cf5b116
 workflow-type: tm+mt
 source-wordcount: '1932'
 ht-degree: 1%
 
 ---
-
 
 # AEM Forms as a Cloud Service {#aem-forms-platform}
 
@@ -102,7 +102,7 @@ ht-degree: 1%
 | **功能：**&#x200B;設計個人化通訊，將靜態內容與動態資料結合，以供列印與數位頻道使用。 |
 | **何時使用：**&#x200B;客戶對帳單、發票、通知、個人化通訊、檔案繁重的工作流程。 |
 | 📄視覺檔案設計📄動態資料整合📄多管道輸出📄 Personalization |
-| [開始使用互動式通訊→](/help/forms/introduction-to-interactive-communication.md) |
+| [開始使用互動式通訊→](/help/forms/interactive-communication/create-interactive-communication.md) |
 
 ## 🔗資料與整合 {#data-integration}
 
@@ -304,7 +304,7 @@ ht-degree: 1%
 
 針對XFA現代化：**從** HTML5 Forms[開始](/help/forms/introductionhtml5.md)
 
-**檔案通訊：**&#x200B;以[互動式通訊](/help/forms/introduction-to-interactive-communication.md)開始
+**檔案通訊：**&#x200B;以[互動式通訊](/help/forms/interactive-communication/create-interactive-communication.md)開始
 
 ### 資料整合快速入門 {#integration-start}
 

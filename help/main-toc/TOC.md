@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
+source-git-commit: eca09e1bf2ba4466f54e915e01218cc89cf5b116
 workflow-type: tm+mt
-source-wordcount: '6698'
-ht-degree: 98%
+source-wordcount: '6799'
+ht-degree: 96%
 
 ---
 
@@ -507,7 +507,7 @@ ht-degree: 98%
                + [設定翻譯規則](/help/journey-sites/translation/translation-rules.md)
                + [翻譯內容](/help/journey-sites/translation/translate-content.md)
                + [發佈翻譯內容](/help/journey-sites/translation/publish-content.md)
-            + [Headless 翻譯歷程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html?lang=zh-Hant)
+            + [Headless 翻譯歷程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html)
             + [翻譯多語言網站的內容](/help/sites-cloud/administering/translation/overview.md)
             + [準備翻譯內容](/help/sites-cloud/administering/translation/preparation.md)
             + [管理翻譯專案](/help/sites-cloud/administering/translation/managing-projects.md)
@@ -527,7 +527,7 @@ ht-degree: 98%
       + [將內容片段匯出到 Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [將體驗片段匯出到 Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [與 Adobe Campaign 整合](/help/sites-cloud/integrating/campaign.md)
-      + [使用 Adobe Journey Optimizer 的內容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=zh-Hant)
+      + [使用 Adobe Journey Optimizer 的內容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [AEM as a Cloud Service 的操作遙測](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
 + Assets {#assets}
    + [概觀與新增功能](/help/assets/overview.md)
@@ -970,8 +970,23 @@ ht-degree: 98%
       + [建立互動式通訊](/help/forms/interactive-communication/create-interactive-communication.md)
       + [建立互動式通訊範本](/help/forms/interactive-communication/create-interactive-communication-template.md)
       + [建立互動式通訊片段](/help/forms/interactive-communication/create-interactive-communication-fragment.md)
-      + [互動式通訊簡介](/help/forms/introduction-to-interactive-communication.md)
       + [建立您的第一個互動式通訊](/help/forms/create-your-first-communication.md)
+      + [互動式通訊編輯器中的文字方塊物件](/help/forms/interactive-communication/text-box-object-in-interactive-communication-editor.md)
+      + [互動式通訊編輯器中的影像物件](/help/forms/interactive-communication/image-object-in-interactive-communication-editor.md)
+      + [互動式通訊編輯器中的影像欄位物件](/help/forms/interactive-communication/image-field-object-in-interactive-communication-editor.md)
+      + [互動式通訊編輯器中的文字欄位物件](/help/forms/interactive-communication/text-field-in-interactive-communication-editor.md)
+      + [互動式通訊編輯器中的數值欄位物件](/help/forms/interactive-communication/numeric-field-object-in-interactive-communication-editor.md)
+      + [互動式通訊編輯器中的日期/時間欄位物件](/help/forms/interactive-communication/date-time-field-object-in-interactive-communication-editor.md)
+      + [互動式通訊編輯器中的日期欄位物件](/help/forms/interactive-communication/date-field-object-in-interactive-communication-editor.md)
+      + [互動式通訊編輯器中的核取方塊物件](/help/forms/interactive-communication/check-box-object-in-interactive-communication-editor.md)
+      + [互動式通訊編輯器中的選項按鈕物件](/help/forms/interactive-communication/radio-button-object-in-interactive-communication-editor.md)
+      + [互動式通訊編輯器中的子表單物件](/help/forms/interactive-communication/subform-object-in-interactive-communication-editor.md)
+      + [互動式通訊編輯器中的Rectangle物件](/help/forms/interactive-communication/rectangle-object-in-interactive-communication-editor.md)
+      + [互動式通訊編輯器中的表格物件](/help/forms/interactive-communication/table-object-in-interactive-communication-editor.md)
+      + [互動式通訊編輯器中的線條物件](/help/forms/interactive-communication/line-object-in-interactive-communication-editor.md)
+      + [互動式通訊編輯器中的條碼物件](/help/forms/interactive-communication/barcode-object-in-interactive-communication-editor.md)
+      + [互動式通訊編輯器中的資料繫結](/help/forms/interactive-communication/data-binding-in-interactive-communication-editor.md)
+      + [在互動式通訊編輯器中建立規則](/help/forms/interactive-communication/rule-creation-in-interactive-communication-editor.md)
       + [匯入和匯出互動式通訊](/help/forms/interactive-communication/import-and-export-interactive-communications.md)
       + [新增自訂字型至互動式通訊編輯器](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md)
       + [互動式通訊編輯器中的PDF預覽](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md)

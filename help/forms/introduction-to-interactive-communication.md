@@ -4,14 +4,15 @@ description: 透過AEM Forms互動式通訊，輕鬆設計動態的資料導向�
 feature: Release Information
 role: Admin
 hide: true
+index: false
 hidefromtoc: true
-source-git-commit: 664aa2091a3853fdcea792ba5015d685c9285764
+exl-id: 4f28c260-9842-467e-8abb-bcca224280b8
+source-git-commit: aa8f6e129febaf246b70da43dd1d34b6caaf066d
 workflow-type: tm+mt
-source-wordcount: '440'
-ht-degree: 2%
+source-wordcount: '427'
+ht-degree: 3%
 
 ---
-
 
 # 互動式通訊
 
@@ -30,7 +31,7 @@ ht-degree: 2%
 
 互動式通訊編輯器的核心功能包括：
 
-| 功能 | 描述 | 可用性 |
+| 功能 | 說明 | 可用性 |
 |------------|-------------|--------------|
 | 好記的設計 | 直覺式的點按式介面，需要最少的技術知識 | ✅可用 |
 | 資料整合 | 連線至結構描述、資料庫和Web服務以產生動態內容 | ✅可用 |
@@ -41,9 +42,9 @@ ht-degree: 2%
 | 文件片段 | 在多個檔案中重複使用模組化內容區塊，以維持一致性及效率 | ✅可用 |
 | 內嵌資料繫結 | 直接在內容中繫結資料以進行即時個人化，無需外部設定 | ✅可用 |
 | 多個元件 | 利用多樣化的元件，建立複雜且吸引人的檔案 | ✅可用 |
-| 多頻道設計 | 遵循法規，跨列印與數位格式建立統一的體驗 | ??部分可用 |
-| 動態內容 | 使用商業邏輯和資料繫結產生個人化內容 | ??部分可用 |
-| 格式彈性 | 輸出為PDF、HTML、PCL、PostScript®️和ZPL格式 | ??部分可用 |
+| 多頻道設計 | 遵循法規，跨列印與數位格式建立統一的體驗 | 🌓部分可用 |
+| 動態內容 | 使用商業邏輯和資料繫結產生個人化內容 | 🌓部分可用 |
+| 格式彈性 | 輸出為PDF、HTML、PCL、PostScript®️和ZPL格式 | 🌓部分可用 |
 | 語言支援 | 支援自訂字型，以多種語言建立通訊 | ⏳即將推出 |
 
 ## 上線

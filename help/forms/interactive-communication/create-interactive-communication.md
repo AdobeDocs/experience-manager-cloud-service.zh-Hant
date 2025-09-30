@@ -4,12 +4,14 @@ description: 建立個人化、資料導向的通訊。 透過指南和教學課
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 479f65872f5cffce5ba29d1208c96de4df3c4ef3
+exl-id: c23145c9-078d-4b03-a8f4-2d835cdd1592
+source-git-commit: 8f25010ed57bd76acac7c56533ba8e37913511b7
 workflow-type: tm+mt
 source-wordcount: '585'
 ht-degree: 9%
 
 ---
+
 
 # 建立互動式通訊
 
@@ -66,7 +68,7 @@ ht-degree: 9%
 1. 移至&#x200B;**Forms > Forms &amp; Documents**，按一下&#x200B;**建立>互動式通訊**。
 1. 在建立表單中，從下拉式清單中&#x200B;**選取**&#x200B;已啟用的範本。
 1. 填寫其他詳細資訊，如標題、名稱、作者等。
-1. 按一下[建立]&#x200B;**來設計您與所選範本結構的通訊。**
+1. 按一下[建立]**來設計您與所選範本結構的通訊。**
 1. 它會開啟IC編輯器，您可以在其中開始設計通訊。
 +++
 

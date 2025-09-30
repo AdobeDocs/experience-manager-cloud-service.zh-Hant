@@ -4,12 +4,14 @@ description: 在AEM Forms中建立互動式通訊範本，以定義可重複使�
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 479f65872f5cffce5ba29d1208c96de4df3c4ef3
+exl-id: 926fd6af-aea1-40be-9d38-8f1ea0900132
+source-git-commit: 8f25010ed57bd76acac7c56533ba8e37913511b7
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 18%
 
 ---
+
 
 # 建立互動式通訊範本
 
@@ -49,7 +51,7 @@ AEM中的互動式通訊範本可讓使用者定義可重複使用的版面配�
 
    ![尋找IC檔案](/help/forms/interactive-communication/assets/choosefolder.png)
 
-1. 建立新範本，按一下[建立]，然後選取[互動式通訊一般範本]。**&#x200B;**
+1. 建立新範本，按一下[建立]，然後選取[互動式通訊一般範本]。****
 
    ![尋找IC檔案](/help/forms/interactive-communication/assets/create1.png)
 

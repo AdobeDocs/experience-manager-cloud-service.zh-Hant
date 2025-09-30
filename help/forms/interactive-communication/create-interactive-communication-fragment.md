@@ -4,12 +4,14 @@ description: 在AEM Forms中建立互動式通訊片段，以建立模組化、�
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 479f65872f5cffce5ba29d1208c96de4df3c4ef3
+exl-id: d1c62f32-372b-475a-9258-67c2276e79f3
+source-git-commit: 8f25010ed57bd76acac7c56533ba8e37913511b7
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 18%
 
 ---
+
 
 # 建立互動式通訊片段
 
@@ -39,7 +41,7 @@ ht-degree: 18%
 
 1. 選取互動式通訊片段後，畫面隨即顯示，您可在其中定義關鍵片段詳細資訊，例如標題、名稱、說明、資料模型（後端資料的結構化表示）和標籤。
 
-   若要瞭解更多資訊，請參閱[資料模型設定指南](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models)。
+   若要瞭解更多資訊，請參閱[資料模型設定指南](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models)。
 
    ![尋找IC檔案](/help/forms/interactive-communication/assets/createfrgmnt.png)
 

@@ -8,13 +8,13 @@ feature: Adaptive Forms, Release Information
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 51d9fed937ea5f12544ed476974d2812843fb457
+exl-id: 50d7ce19-7d76-4ea1-a54c-8ca0e5379982
+source-git-commit: eca09e1bf2ba4466f54e915e01218cc89cf5b116
 workflow-type: tm+mt
 source-wordcount: '2323'
 ht-degree: 0%
 
 ---
-
 
 # AEM Forms as a Cloud Service 簡介 {#introduction}
 
@@ -95,7 +95,7 @@ AEM Forms支援從初始建立到持續最佳化的完整數位表單歷程。 �
 針對行動裝置和舊版瀏覽器，將XFA型表單轉譯為[HTML5表單](/help/forms/introductionhtml5.md)。 HTML5 Forms提供原生行動體驗，不含外掛程式，同時維護表單邏輯和原始XDP範本的驗證。
 
 **互動式通訊**
-使用視覺化編輯器建立以檔案為中心的通訊，例如宣告、發票和通知。 [互動式通訊](/help/forms/introduction-to-interactive-communication.md)結合靜態內容與動態資料，以產生跨列印與數位通道的個人化通訊。
+使用視覺化編輯器建立以檔案為中心的通訊，例如宣告、發票和通知。 [互動式通訊](/help/forms/interactive-communication/create-interactive-communication.md)結合靜態內容與動態資料，以產生跨列印與數位通道的個人化通訊。
 
 ### 控管：檢閱與法規遵循 {#govern}
 
@@ -147,7 +147,7 @@ Forms會自動適應不同的熒幕大小和輸入方法。 觸控最佳化的�
 透過伺服器端驗證和自動化處理規則，確保資料完整性。 為使用者產生回條、確認或後續追蹤資料時，轉換、驗證及遞送提交的資料。
 
 **通訊API**
-透過[RESTful API](/help/forms/aem-forms-cloud-service-communications-introduction.md)以程式設計方式產生、操控及保護檔案。 建立PDF、可供列印的格式、組合檔案、套用數位簽章，以及處理企業規模檔案工作流程的大量批次作業[&#128279;](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)。
+透過[RESTful API](/help/forms/aem-forms-cloud-service-communications-introduction.md)以程式設計方式產生、操控及保護檔案。 建立PDF、可供列印的格式、組合檔案、套用數位簽章，以及處理企業規模檔案工作流程的大量批次作業[](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)。
 
 **記錄檔案**
 自動產生表單提交的PDF記錄，以供遵循和使用者確認。 [記錄檔案](/help/forms/generate-document-of-record-core-components.md)會建立已完成表單的格式化、可列印版本，其中包含提交的資料，提供交易和法規要求的正式檔案。
@@ -249,7 +249,7 @@ Forms會自動適應不同的熒幕大小和輸入方法。 觸控最佳化的�
 **檔案服務與通訊：**
 
 1. **[實作通訊API](/help/forms/aem-forms-cloud-service-communications-introduction.md)**&#x200B;以自動產生檔案
-2. **[建立互動式通訊](/help/forms/introduction-to-interactive-communication.md)**&#x200B;以取得個人化的宣告和通知
+2. **[建立互動式通訊](/help/forms/interactive-communication/create-interactive-communication.md)**&#x200B;以取得個人化的宣告和通知
 3. **[設定Forms入口網站](/help/forms/configure-forms-portal.md)**&#x200B;以集中管理表單
 
 ### 企業部署：規模與控管 {#enterprise-deployment}
