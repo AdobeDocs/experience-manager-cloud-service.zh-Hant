@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 3f50bf40c55a8f61a9e20c83aa52c94c6d4afe53
+source-git-commit: f5510d83ed2ff52496fd7e83ba29010684731938
 workflow-type: tm+mt
-source-wordcount: '1875'
-ht-degree: 48%
+source-wordcount: '1957'
+ht-degree: 46%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 48%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440931?quality=12&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -82,7 +82,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -157,7 +157,7 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 >[!NOTE]
 >
 >9月25日以有限可用性功能提供。
->&#x200B;>請傳送電子郵件給[aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com)，讓它在您的程式中啟動。
+>>請傳送電子郵件給[aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com)，讓它在您的程式中啟動。
 
 ### 適用於Eclipse的AEM開發人員工具新版本 {#aem-develeper-tools-for-eclipse}
 
@@ -249,6 +249,14 @@ Now in beta, youcan deploy a config pipeline for features including CDN origin s
 
 -->
 
+### Canary生產部署，以便在接受即時流量之前測試程式碼(Beta計畫) {#canary-beta}
+
+在將生產組建公開給使用者之前，先使用僅限內部的測試流量來驗證它。 送貨至生產環境、僅路由Canary流量（使用特殊標題）、監控行為，然後升級至即時流量或回覆，而不會影響客戶。
+
+將您的程式碼發行部署到生產環境，但在決定是否接受即時流量和復原之前，請將其限製為僅內部測試流量。
+
+電子郵件[aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canary-deployments-beta@adobe.com)以要求存取權並分享意見。
+
 ### RDE 快照 (Alpha 方案) {#rde-snapshot-program}
 
 在 Alpha 版本中，快速開發環境 (RDE) 現在支援對程式碼和內容的目前狀態進行快照的功能，這些快照可以在之後還原。在同步可能需要復原的程式碼，或在不同功能的開發之間切換時，此功能很實用。您也可以僅還原可變內容做為測試的已知起點。
@@ -265,7 +273,7 @@ Now in beta, youcan deploy a config pipeline for features including CDN origin s
 
 ### 擴充應用程式效能監控(APM) (Alpha程式) {#apm-alpha}
 
-為方便觀察，AEM Cloud Service目前支援Adobe提供的[New Relic One](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic)和客戶管理的[Dynatrace](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace)。 在我們探索其他APM選項的支援時，請透過電子郵件寄給我們：[aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com)，請連絡您偏好的廠商或技術，並提供使用案例。
+為方便觀察，AEM Cloud Service目前支援Adobe提供的[New Relic One](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic)和客戶管理的[Dynatrace](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace)。 在我們探索其他APM選項的支援時，請透過電子郵件寄給我們：[aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com)，請連絡您偏好的廠商或技術，並提供使用案例。
 
 
 ## [!DNL Experience Manager] Guides {#guides}
