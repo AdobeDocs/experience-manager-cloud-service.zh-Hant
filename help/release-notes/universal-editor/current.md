@@ -7,7 +7,7 @@ exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
 source-git-commit: 217288737cd199701b34b1d12fa755abcc09830a
 workflow-type: tm+mt
 source-wordcount: '224'
-ht-degree: 53%
+ht-degree: 64%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 53%
 
 ### 新 RTE {#new-rte}
 
-新的ProseMirror RTE在連結對話方塊中具有頁面選擇器，現在可在右側面板中使用。 [此RTE具有彈性的組態選項。](/help/implementing/universal-editor/configure-rte.md)
+新的 ProseMirror RTE 在連結對話框中具備頁面選擇器，現在可以在右側面板中使用。[此 RTE 具有靈活的設定選項。](/help/implementing/universal-editor/configure-rte.md)
 
 ### 跨頁面複製並貼上 {#copy-paste}
 
