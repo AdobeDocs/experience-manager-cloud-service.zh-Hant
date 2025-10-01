@@ -4,16 +4,16 @@ description: 瞭解如何產生安全JWT權杖，以促進第三方伺服器與A
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: 22216d2c045b79b7da13f09ecbe1d56a91f604df
 workflow-type: tm+mt
-source-wordcount: '2089'
+source-wordcount: '2112'
 ht-degree: 0%
 
 ---
 
 # 為伺服器端API產生存取權杖 {#generating-access-tokens-for-server-side-apis}
 
-有些架構需仰賴從託管於AEM基礎架構以外之伺服器上的應用程式呼叫AEM as a Cloud Service。 例如，行動應用程式，它會呼叫伺服器，然後向AEM as a Cloud Service發出API請求。
+有些架構需仰賴從託管於AEM as a Cloud Service基礎架構以外之伺服器上的應用程式呼叫AEM。 例如，行動應用程式，它會呼叫伺服器，然後向AEM as a Cloud Service發出API請求。
 
 伺服器對伺服器的流程如下所述，以及簡化的開發流程。 AEM as a Cloud Service [Developer Console](development-guidelines.md#crxde-lite-and-developer-console)是用來產生驗證程式所需的權杖。
 
@@ -21,16 +21,16 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=zh-Hant#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
+>In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
 
 ## 伺服器對伺服器流量 {#the-server-to-server-flow}
 
-具有IMS組織管理員角色以及AEM Author上的AEM使用者或AEM管理員產品設定檔成員的使用者，可以從AEM as a Cloud Service產生一組認證。 每個認證都是JSON裝載，其中包含憑證（公開金鑰）、私密金鑰以及包含`clientId`和`clientSecret`的技術帳戶。 這些認證稍後可由具有AEM as a Cloud Service環境管理員角色的使用者擷取，並應安裝在非AEM伺服器上，且仔細視為機密金鑰。 此JSON格式檔案包含與AEM as a Cloud Service API整合所需的所有資料。 資料可用來建立已簽署的JWT權杖，該權杖會與AdobeIdentity Management服務(IMS)交換以取得IMS存取權杖。 然後，可將此存取權杖用作持有者驗證權杖，以向AEM as a Cloud Service提出請求。 認證中的憑證預設在一年後到期，但可在需要時重新整理，請參閱[重新整理認證](#refresh-credentials)。
+具有IMS組織管理員角色以及AEM Author上AEM使用者或AEM管理員產品設定檔成員的使用者，可以從AEM as a Cloud Service產生一組認證。 每個認證都是JSON裝載，其中包含憑證（公開金鑰）、私密金鑰以及包含`clientId`和`clientSecret`的技術帳戶。 這些認證稍後可由具有AEM as a Cloud Service環境管理員角色的使用者擷取，並應安裝在非AEM伺服器上，且仔細視為機密金鑰。 此JSON格式檔案包含與AEM as a Cloud Service API整合所需的所有資料。 資料可用來建立已簽署的JWT權杖，該權杖會與Adobe Identity Management Services (IMS)交換，以取得IMS存取權杖。 然後，可將此存取權杖用作持有者驗證權杖，以向AEM as a Cloud Service提出請求。 認證中的憑證預設在一年後到期，但可在需要時重新整理，請參閱[重新整理認證](#refresh-credentials)。
 
 伺服器對伺服器流程涉及以下步驟：
 
 * 從Developer Console在AEM as a Cloud Service上擷取認證
-* 在呼叫AEM的非AEM伺服器上安裝AEM as a Cloud Service的認證
+* 在呼叫AEM as a Cloud Service的非AEM伺服器上安裝AEM的認證
 * 產生JWT權杖並使用Adobe的IMS API將該權杖交換為存取權杖
 * 使用存取權杖作為持有者驗證權杖呼叫AEM API
 * 在AEM環境中為技術帳戶使用者設定適當的許可權
@@ -69,16 +69,17 @@ ht-degree: 0%
 
 ### 產生JWT權杖並將其交換為存取權杖 {#generate-a-jwt-token-and-exchange-it-for-an-access-token}
 
-使用認證在呼叫Adobe的IMS服務中建立JWT權杖以擷取存取權杖，該權杖的有效期限為24小時。
+使用認證在呼叫Adobe的IMS服務中建立JWT權杖以擷取存取權杖，該權杖的有效期間為24小時。
 
-可以使用為此目的而設計的使用者端程式庫來交換AEM CS服務認證以取得存取權杖。 可從[Adobe的公用GitHub存放庫](https://github.com/adobe/aemcs-api-client-lib)取得使用者端資料庫，其中包含更詳細的指引和最新資訊。
+可使用為此目的而設計的程式碼範例來交換AEM CS服務認證以換取存取權杖。 範常式式碼可從[Adobe的公用GitHub存放庫](https://github.com/adobe/aemcs-api-client-lib)取得，其中包含您可複製並調整自己專案的程式碼範例。 請注意，此存放庫包含參考的範常式式碼，不會維護為生產就緒的程式庫相依性。
 
 ```
 /*jshint node:true */
 "use strict";
 
 const fs = require('fs');
-const exchange = require("@adobe/aemcs-api-client-lib");
+// Sample code adapted from Adobe's GitHub repository
+const exchange = require("./your-local-aemcs-client"); // Copy and adapt the code from the GitHub repository
 
 const jsonfile = "aemcs-service-credentials.json";
 
@@ -126,7 +127,7 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
    ![新增使用者](/help/implementing/developing/introduction/assets/s2s-addusers.png)
 
-1. 新增您建立的技術帳戶（在此案例中為`84b2c3a2-d60a-40dc-84cb-e16b786c1673@techacct.adobe.com`），然後按一下[儲存]。**&#x200B;**
+1. 新增您建立的技術帳戶（在此案例中為`84b2c3a2-d60a-40dc-84cb-e16b786c1673@techacct.adobe.com`），然後按一下[儲存]。****
 
    ![新增技術帳戶](/help/implementing/developing/introduction/assets/s2s-addtechaccount.png)
 
@@ -181,11 +182,11 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
 >[!INFO]
 >
->進一步瞭解AdobeIdentity Management System (IMS)和AEM使用者和群組。 請參閱[檔案](/help/security/ims-support.md)。
+>進一步瞭解Adobe Identity Management System (IMS)和AEM使用者和群組。 請參閱[檔案](/help/security/ims-support.md)。
 
 ## 開發人員流程 {#developer-flow}
 
-開發人員可能想要使用非AEM應用程式的開發執行個體進行測試（在他們的筆記型電腦上執行或託管），該應用程式會向開發AEM as a Cloud Service開發環境發出請求。 不過，由於開發人員不一定具備IMS管理員角色許可權，因此Adobe不能假設他們可以產生一般伺服器對伺服器流程中說明的JWT持有者。 因此，Adobe為開發人員提供了一種直接產生存取權杖的機制，可用於對AEM as a Cloud Service上他們有權存取的環境的請求。
+開發人員可能想要使用非AEM應用程式的開發執行個體進行測試（在他們的筆記型電腦上執行或託管），該應用程式會向開發AEM as a Cloud Service開發環境發出請求。 不過，由於開發人員不一定具備IMS管理員角色許可權，Adobe無法假設他們可以產生一般伺服器對伺服器流程中說明的JWT持有者。 因此，Adobe為開發人員提供了一種直接產生存取權杖的機制，可用於對AEM as a Cloud Service上他們有權存取的環境的請求。
 
 如需使用AEM as a Cloud Service開發人員主控台所需許可權的資訊，請參閱[開發人員指引檔案](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console)。
 
@@ -193,14 +194,14 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 >
 >本機開發存取權杖的有效期最長為24小時，之後必須使用相同方法重新產生。
 
-開發人員可使用此代號，從非AEM測試應用程式呼叫AEM as a Cloud Service環境。 開發人員通常會在自己的筆記型電腦上，將此Token與非AEM應用程式搭配使用。 此外，AEM as a Cloud通常是非生產環境。
+開發人員可使用此代號，從非AEM測試應用程式呼叫AEM as a Cloud Service環境。 開發人員通常會在自己的筆記型電腦上，將此代號與非AEM應用程式搭配使用。 此外，AEM as a Cloud通常是非生產環境。
 
 開發人員流程涉及以下步驟：
 
 * 從Developer Console產生存取權杖
 * 使用存取權杖呼叫AEM應用程式。
 
-開發人員也可以對其本機電腦上執行的AEM專案進行API呼叫，這種情況下不需要存取權杖。
+開發人員也可以對其本機電腦上執行的AEM專案進行API呼叫，如此便不需要存取權杖。
 
 ### 產生存取權杖 {#generating-the-access-token}
 
@@ -221,7 +222,7 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
   ![認證重新整理](/help/implementing/developing/introduction/assets/s2s-credentialrefresh.png)
 
-* 按下按鈕後，會產生一組包含新憑證的認證。 在off-AEM伺服器上安裝新憑證，並確保如預期般連線，而不移除舊憑證。
+* 按下按鈕後，會產生一組包含新憑證的認證。 在AEM以外的伺服器上安裝新憑證，並確保如預期般連線，不會移除舊憑證。
 * 產生存取權杖時，請務必使用新憑證，而非舊憑證。
 * 選擇性地撤銷（然後刪除）先前的憑證，使其無法再用來向AEM as a Cloud Service進行驗證。
 
@@ -241,7 +242,7 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
    UI中的![私密金鑰](/help/implementing/developing/introduction/assets/s2s-twokeys.png)
 
-1. 在非AEM伺服器上安裝新認證，並確保連線正常運作。 如需詳細資訊，請參閱[伺服器對伺服器流量區段](#the-server-to-server-flow)。
+1. 在非AEM伺服器上安裝新憑證，並確保連線能力如預期般運作。 如需詳細資訊，請參閱[伺服器對伺服器流量區段](#the-server-to-server-flow)。
 1. 選取憑證右側的三個點(**...**)，並選取&#x200B;**撤銷**，以撤銷舊憑證：
 
    ![撤銷憑證](/help/implementing/developing/introduction/assets/s2s-revokecert.png)
