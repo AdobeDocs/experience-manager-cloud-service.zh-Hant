@@ -5,9 +5,9 @@ exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 217288737cd199701b34b1d12fa755abcc09830a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '444'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -56,9 +56,9 @@ ht-degree: 92%
 <meta name="urn:adobe:aue:config:disable" content="duplicate"/>
 ```
 
-## 停用複製和貼上 {#copy-paste}
+## 停用複製與貼上功能 {#copy-paste}
 
-某些編寫工作流程可能需要限制內容作者複製和貼上元件的能力。 您可以新增下列中繼資料，以停用[複製和貼上圖示](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste)。
+特定製作工作流程可能需要限制內容作者複製與貼上元件的功能。您可以透過新增以下中繼資料來停用[複製與貼上圖示](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste)。
 
 ```html
 <meta name="urn:adobe:aue:config:disable" content="copy"/>

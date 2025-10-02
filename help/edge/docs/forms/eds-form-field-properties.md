@@ -1,51 +1,51 @@
 ---
-title: 掌握最適化Forms區塊欄位屬性
-description: 使用試算表及最適化Forms區塊欄位屬性，更快製作強大的表單！ 本指南列出EDS Forms Block支援的所有屬性。
+title: 掌握自適應表單區塊欄位屬性
+description: 使用試算表和自適應表單區塊欄位屬性，更快速地製作功能強大的表單！本指南列出 EDS 表單區塊支援的所有屬性。
 feature: Edge Delivery Services
-source-git-commit: ccc6439f68d8199154d4cd664b9cdb6428460a64
-workflow-type: tm+mt
+exl-id: e86ccc36-bda0-4e9d-8d65-ae7cb3fa79b7
+source-git-commit: 41dd61425ce3b7536ee805580f3841e32e40ee99
+workflow-type: ht
 source-wordcount: '930'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
+# 自適應表單區塊欄位屬性
 
-# 最適化Forms區塊欄位屬性
+本文件概述 JSON 結構描述如何對應至 `blocks/form/form.js` 中轉譯的 HTML，重點介紹如何識別和轉譯欄位、常見模式，以及欄位特定的差異。
 
-本檔案概述JSON結構描述如何對應至`blocks/form/form.js`中轉譯的HTML，著重於如何識別和轉譯欄位、常見模式以及欄位特有的差異。
+## 如何識別欄位 (`fieldType`)？
 
-## 如何識別欄位(`fieldType`)？
+JSON 結構描述中的每個欄位都具備 `fieldType` 屬性，用於決定其轉譯方式。`fieldType` 可能是：
 
-JSON結構描述中的每個欄位都有`fieldType`屬性可決定其呈現方式。 `fieldType`可以是：
+- **特殊類型**\
+  範例：`drop-down`、`radio-group`、`checkbox-group`、`panel`、`plain-text`、`image`、`heading` 等。
+- **有效的 HTML 輸入類型**\
+  範例：`text`、`number`、`email`、`date`、`password`、`tel`、`range`、`file` 等。
+- **具有 `-input` 尾碼的類型**\
+  範例：`text-input`、`number-input` 等。(已標準化為 `text`、`number` 等基底類型)。
 
-- **特殊型別**\
-  範例： `drop-down`、`radio-group`、`checkbox-group`、`panel`、`plain-text`、`image`、`heading`等。
-- **有效的HTML輸入型別**\
-  範例： `text`、`number`、`email`、`date`、`password`、`tel`、`range`、`file`等。
-- **具有`-input`尾碼的型別**\
-  範例： `text-input`、`number-input`等。 （已標準化為基底型別，例如`text`、`number`）。
+如果 `fieldType` 符合特殊類型，就會使用&#x200B;**自訂轉譯器**。否則，會將其視為&#x200B;**預設輸入類型**。
 
-如果`fieldType`符合特殊型別，則會使用&#x200B;**自訂轉譯器**。 否則，會將其視為&#x200B;**預設輸入型別**。
+請參閱以下各區段，了解各個欄位類型的[完整 HTML 結構和屬性](#common-html-structure)。
 
-請參閱下列各節，瞭解每種欄位型別的[完整HTML結構和屬性](#common-html-structure)。
+## 欄位常用的屬性
 
-## 欄位使用的通用屬性
+以下為大部分欄位使用的屬性：
 
-以下是大部分欄位使用的屬性：
-
-- `id`：指定專案ID並支援協助工具。
-- `name`：定義輸入、選取或fieldset專案的`name`屬性。
-- `label.value`、`label.richText`、`label.visible`：指定標籤/圖例文字、HTML內容和可見度。
+- `id`：指定元素 ID 並支援無障礙功能。
+- `name`：定義輸入、選取或欄位集元素的 `name` 屬性。
+- `label.value`、`label.richText`、`label.visible`：指定標籤/圖例文字、HTML 內容和可見度。
 - `value`：代表欄位目前的值。
-- `required`：新增`required`屬性或驗證資料。
-- `readOnly`， `enabled`：控制欄位是否可編輯或停用。
+- `required`：新增 `required` 屬性或驗證資料。
+- `readOnly`、`enabled`：控制欄位為可編輯或停用。
 - `description`：在欄位下方顯示說明文字。
-- `tooltip`：設定輸入的`title`屬性。
+- `tooltip`：設定輸入的 `title` 屬性。
 - `constraintMessages`：提供自訂錯誤訊息作為資料屬性。
 
-## 通用HTML結構
+## 常見的 HTML 結構
 
-大部分欄位都會在包含標籤和選用說明文字的包裝函式中轉譯。 下列程式碼片段會示範結構：
+大部分欄位是在包含標籤和選用說明文字的包裝函式內進行轉譯。下列片段展現出其結構：
 
 ```html
 <div class="<fieldType>-wrapper field-wrapper field-<name>" data-id="<id>">
@@ -56,59 +56,59 @@ message</div>
 </div>
 ```
 
-對於群組（無線電/核取方塊）和面板，會使用具有`<fieldset>`的`<legend>`，而非`<div>/<label>`。 說明文字 <div> 只有在已設定說明時才會出現。
+對於群組 (單選按鈕/核取方塊) 和面板，會使用搭配 `<legend>` 的 `<fieldset>`，而非 `<div>/<label>`。說明文字 <div> 只有在已設定說明時才會出現。
 
 ## 錯誤訊息顯示
 
-錯誤訊息會顯示在用於說明文字（動態更新）的相同`.field-description`元素中。
+錯誤訊息會顯示在與說明文字所用的相同 `.field-description` 元素中 (該元素會動態更新)。
 
-**當欄位無效時**：
+**欄位無效時**：
 
-- 包裝函式（例如，`.field-wrapper`）被指派為`.field-invalid`類別。
-- `.field-description`內容已取代為對應的錯誤訊息。
+- 包裝函式 (例如 `.field-wrapper`) 會獲指派 `.field-invalid` 類別。
+- `.field-description` 內容會替換為相應的錯誤訊息。
 
-**欄位生效時**：
+**欄位變為有效時**：
 
-- 已移除`.field-invalid`類別。
-- `.field-description`已還原為原始說明文字（如果有的話），如果沒有的話，則會移除。
+- `.field-invalid` 類別會移除。
+- `.field-description` 會回復為原始說明文字 (如適用)；若無任何原始說明文字，則會將其移除。
 
-可使用JSON中的`constraintMessages`屬性來定義自訂錯誤訊息。\
-這些在包裝函式上新增為`data-<constraint>ErrorMessage`屬性（例如，`data-requiredErrorMessage`）。
+可於 JSON 中使用 `constraintMessages` 屬性定義自訂錯誤訊息。\
+這些訊息會在包裝函式上新增為 `data-<constraint>ErrorMessage` 屬性 (例如 `data-requiredErrorMessage`)。
 
-## 預設輸入型別(HTML輸入或`*-input`)
+## 預設輸入類型 (HTML 輸入或 `*-input`)
 
-如果`fieldType`不是特殊型別，則會將其視為標準HTML輸入型別或視為`<type>-input`，例如`text`、`number`、`email`、`date`、`text-input`、`number-input`。
+如果 `fieldType` 不是特殊類型，就會將其視為標準 HTML 輸入類型，或視為 `<type>-input`，例如 `text`、`number`、`email`、`date`、`text-input`、`number-input`。
 
-- 尾碼`-input`已移除，基底型別會做為輸入的`type`屬性。
-- 這些型別預設在`renderField()`中處理。
-常見的預設輸入型別為`text`、`number`、`email`、`date`、`password`、`tel`、`range`、`file`等。  它們也接受`text-input`、`number-input`等，這些已標準化為基底型別。
+- 尾碼 `-input` 會刪除，且基底類型會作為輸入的 `type` 屬性。
+- 這些類型預設是在 `renderField()` 中進行處理。
+常見的預設輸入類型為 `text`、`number`、`email`、`date`、`password`、`tel`、`range`、`file` 等。這些類型也接受 `text-input`、`number-input` 等已標準化為基底類型的內容。
 
-## 預設輸入型別的限制
+## 預設輸入類型的限制式
 
-會根據JSON屬性，將限制新增為輸入元素上的屬性。
+限制式會根據 JSON 屬性，在輸入元素上新增為屬性。
 
-| JSON屬性 | HTML屬性 | 套用至 |
+| JSON 屬性 | HTML 屬性 | 適用於 |
 |--------------|---------------|------------|
-| maxLength | maxlength | 文字，電子郵件，密碼，電話 |
-| minlength | minlength | 文字，電子郵件，密碼，電話 |
-| 圖樣 | 圖樣 | 文字，電子郵件，密碼，電話 |
-| 最大 | 最大值 | 數字、範圍、日期 |
-| 最小值 | 分鐘 | 數字、範圍、日期 |
-| 步驟 | 步驟 | 數字、範圍、日期 |
-| 接受 | 接受 | 檔案 |
-| 多個 | 多個 | 檔案 |
-| maxOccure | data-max | 面板 |
-| minOccure | data-min | 面板 |
+| maxLength | maxlength | text、email、password、tel |
+| minLength | minlength | text、email、password、tel |
+| pattern | pattern | text、email、password、tel |
+| maximum | max | number、range、date |
+| minimum | min | number、range、date |
+| step | step | number、range、date |
+| accept | accept | file |
+| multiple | multiple | file |
+| maxOccur | data-max | panel |
+| minOccur | data-min | panel |
 
 >[!NOTE]
 >
-> `multiple`是布林值屬性。 如果為true，則會新增`multiple`屬性。
+> `multiple` 為布林值屬性。若為真，就會新增 `multiple` 屬性。
 
-這些屬性會由表單轉譯器根據欄位的JSON定義自動設定。
+這些屬性會根據欄位的 JSON 定義，由表單轉譯器自動設定。
 
-## 範例：含有限制的HTML結構
+## 範例：含有限制式的 HTML 結構
 
-下列範例示範如何使用驗證限制和錯誤處理屬性來呈現數字欄位。
+下列範例示範如何使用驗證限制式和錯誤處理屬性來轉譯數字欄位。
 
 ```html
 <div class="number-wrapper field-wrapper field-age" data-id="age"
@@ -125,17 +125,17 @@ placeholder="Enter your age" />
 </div>
 ```
 
-HTML結構的每個部分在資料繫結、驗證和顯示說明或錯誤訊息方面都扮演一個角色。
+HTML 結構的每個部分都在資料繫結、驗證及顯示說明或錯誤訊息方面扮演著其角色。
 
-## 欄位特定屬性及其HTML結構
+## 欄位特定屬性及其 HTML 結構
 
 ### 下拉式清單
 
 **額外屬性：**
 
-- `enum` / `enumNames`：定義下拉式清單的選項值及其顯示標籤。
-- `type`：若設為`array`，則啟用多重選取範圍。
-- `placeholder`：新增停用的預留位置選項，以在選取之前引導使用者。
+- `enum`/`enumNames`：定義下拉式清單的選項值及其顯示標籤。
+- `type`：若設定為 `array`，就會啟用多重選取。
+- `placeholder`：新增停用的預留位置選項，在使用者選取之前給予指引。
 
 範例：
 
@@ -158,7 +158,7 @@ data-requiredErrorMessage="This field is required">
 
 **額外屬性**：
 
-- `richText`：如果為true，會在段落中轉譯HTML。
+- `richText`：若為真，就會在段落中轉譯 HTML。
 
 範例：
 
@@ -173,7 +173,7 @@ data-requiredErrorMessage="This field is required">
 
 **額外屬性**：
 
-- `enum`：定義核取方塊的已核取與未核取狀態的值。
+- `enum`：定義核取方塊之已核取和未核取狀態的值。
 - `properties.variant / properties.alignment`：指定切換樣式核取方塊的視覺樣式和對齊方式。
 
 範例：
@@ -197,7 +197,7 @@ data-unchecked-value="off" />
 
 **額外屬性**：
 
-- `buttonType`：透過設定按鈕的型別（按鈕、提交或重設）來指定按鈕的行為。
+- `buttonType`：設定按鈕的類型 (按鈕、提交或重設)，藉此指定按鈕的行為。
 
 範例：
 
@@ -213,9 +213,9 @@ data-unchecked-value="off" />
 **額外屬性**：
 
 - `minLength`：指定在文字或文字區域輸入中允許的最小字元數。
-- `maxLength`：指定文字或文字區域輸入中允許的字元數目上限。
-- `pattern`：定義輸入值必須符合才能視為有效的規則運算式。
-- `placeholder`：在輸入值之前，在輸入或文字區域中顯示預留位置文字。
+- `maxLength`：指定在文字或文字區域輸入中允許的最大字元數。
+- `pattern`：定義規則運算式；輸入值必須與其相符才能視為有效。
+- `placeholder`：在輸入或文字區域中顯示預留位置文字，直到輸入值為止。
 
 範例：
 
@@ -239,11 +239,11 @@ placeholder="Type here..."></textarea>
 **額外屬性**：
 
 - `repeatable`：指定面板是否可以動態重複。
-- `minOccur`：設定所需的面板執行個體數目下限。   maxOccur：設定允許的面板例項數目上限。
+- `minOccur`：設定必要之面板執行個體的最小數量。maxOccur：設定允許之面板執行個體的最大數量。
 - `properties.variant`：定義面板的視覺樣式或變體。
-- `properties.colspan`：指定面板在格線版面配置中跨越的欄數。
-- `index`：表示面板在其上層容器中的位置。
-- `fieldset`：以圖例或標籤將`<fieldset>`元素下的相關欄位分組。
+- `properties.colspan`：指定面板在網格版面中涵蓋的欄數。
+- `index`：指出面板在其上層容器中的位置。
+- `fieldset`：以圖例或標籤將 `<fieldset>` 元素之下的相關欄位分組。
 
 範例：
 
@@ -260,11 +260,11 @@ data-repeatable="true" data-index="0">
 </fieldset>
 ```
 
-### 選項
+### 單選按鈕
 
 **額外屬性**：
 
-- `enum`：定義選項欄位的允許值集，做為每個選項按鈕選項的值屬性。
+- `enum`：定義單選按鈕欄位的允許值集合，作為每個選項按鈕選項的值屬性。
 
 範例：
 
@@ -282,8 +282,8 @@ data-required="true">
 
 **額外屬性**：
 
-- `enum`：定義選項群組的選項值清單，做為每個選項按鈕的值。
-- `enumNames`：提供符合列舉順序之選項按鈕的顯示標籤。
+- `enum`：定義單選按鈕群組的選項值清單，作為每個選項按鈕的值。
+- `enumNames`：提供選項按鈕的顯示標籤，且對應列舉順序。
 
 範例：
 
@@ -308,10 +308,10 @@ data-required="true">
 
 **額外屬性**：
 
-- `enum`：定義核取方塊群組的選項值清單，做為每個核取方塊的值。
-- `enumNames`：提供符合列舉順序的核取方塊顯示標籤。
-- `minItems`：設定必須為有效性選取的核取方塊數目下限。
-- `maxItems`：設定觸發錯誤前可選取的核取方塊數目上限。
+- `enum`：定義核取方塊群組的選項值清單，作為每個核取方塊的值。
+- `enumNames`：提供核取方塊的顯示標籤，且對應列舉順序。
+- `minItems`：設定必須選取的核取方塊最小數量；選取此數量才能視為有效。
+- `maxItems`：設定可選取的核取方塊最大數量；超過此數量便會觸發錯誤。
 
 範例：
 
@@ -337,8 +337,8 @@ data-maxItems="3">
 
 **額外屬性**：
 
-- `value / properties['fd:repoPath']`：定義影像來源路徑或呈現影像的存放庫路徑。
-- `altText`：提供影像的替代文字（替代屬性）以改善協助工具。
+- `value / properties['fd:repoPath']`：定義用於轉譯影像的影像來源路徑或存放庫路徑。
+- `altText`：提供影像的替代文字 (替代屬性)，藉此改善無障礙功能。
 
 範例：
 
@@ -355,7 +355,7 @@ data-maxItems="3">
 
 **額外屬性**：
 
-- `value`：指定要顯示在標題元素內的文字內容（例如，`<h2>`）。
+- `value`：指定要顯示於標題元素中的文字內容 (例如 `<h2>`)。
 
 範例：
 
@@ -365,7 +365,7 @@ data-maxItems="3">
 </div>
 ```
 
-如需詳細資訊，請參閱`blocks/form/form.js`和`blocks/form/util.js`中的實作。
+如需更多詳細資訊，請參閱 `blocks/form/form.js` 和 `blocks/form/util.js` 中的實作。
 
 
 <!--Each form field is represented as a dedicated row in the spreadsheet, analogous to fields in a database table. The column headers act as labels for the various properties supported by the form field block.
@@ -394,4 +394,3 @@ This table details all the properties you can use to customize your Adaptive For
 | **Options** | Comma-separated list for dropdown menus | `"Option 1, Option 2, Option 3"` |
 | **Checked** | Default-selected radio button/checkbox | `true`, `false` |
 | **Fieldset** | Group fields together | Fieldset name (e.g., `"Personal Information"`) |-->
-
