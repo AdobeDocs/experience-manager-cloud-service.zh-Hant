@@ -4,10 +4,10 @@ description: 了解 Adobe Experience Manager as a Cloud Service 中 Cloud Manage
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 4acedba631b3732b989794c648079356f9b79fdd
+source-git-commit: f0b28245213d77c23259fb753376a6670b408e5e
 workflow-type: tm+mt
-source-wordcount: '1286'
-ht-degree: 62%
+source-wordcount: '1284'
+ht-degree: 61%
 
 ---
 
@@ -46,7 +46,7 @@ AEM as a Cloud Service中的Cloud Manager 2025.10.0發行日期是2025年10月2�
 
 * **設定管道支援**
 
-  現在，使用 Edge Delivery Services 建置的網站已支援設定管道，所以在 Cloud Service 環境以外也可以使用這項功能。您可以使用&#x200B;**設定管道**&#x200B;來管理設定，例如流量篩選規則和 Web 應用程式防火牆 (WAF) 設定等 (如適用)。請參閱[支援的設定](/help/operations/config-pipeline.md#configurations)。
+  現在，使用 Edge Delivery Services 建置的網站已支援設定管道，所以在 Cloud Service 環境以外也可以使用這項功能。您可以使用&#x200B;**設定管道**&#x200B;來管理設定，例如CDN設定，包括流量篩選規則和來源選取器。 請參閱[支援的設定](/help/operations/config-pipeline.md#configurations)。
 
   Edge Delivery設定管道也透過Cloud Manager管道變數支援秘密。
 
