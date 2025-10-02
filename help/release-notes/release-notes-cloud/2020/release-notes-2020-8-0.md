@@ -42,9 +42,9 @@ ht-degree: 35%
 
 * 使用處理設定檔，以使用計算服務產生自訂中繼資料。 檢視使用處理設定檔[的](/help/assets/manage-metadata.md#metadata-compute-service)自訂中繼資料。
 
-* 給Brand Portal使用者更簡單的下載體驗，管理員可加以設定。 請參閱[下載體驗總覽](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html#download-configurations)。
+* 給Brand Portal使用者更簡單的下載體驗，管理員可加以設定。 請參閱[下載體驗總覽](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=zh-Hant#download-configurations)。
 
-* Brand Portal現在提供原生和高解析度PDF檔案預覽。 請參閱[檔案檢視器概觀](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer)。
+* Brand Portal現在提供原生和高解析度PDF檔案預覽。 請參閱[檔案檢視器概觀](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=zh-Hant#doc-viewer)。
 
 * 您現在可以直接從AEM as a Cloud Service中的[!DNL Dynamic Media]使CDN （內容傳遞網路）快取失效（不必使用[!DNL Dynamic Media Classic]）。 這可確保在幾分鐘內提供最新資產，而非幾小時。 請參閱[透過Dynamic Media使CDN快取失效](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)。
 
