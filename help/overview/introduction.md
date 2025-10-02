@@ -77,7 +77,7 @@ AEM 採用現代化雲端服務的主要特色來達成下列目標：
 * [AEM Sites as a Cloud Service 重大變更](/help/sites-cloud/sites-cloud-changes.md)
 * [AEM Assets as a Cloud Service 重大變更](/help/assets/assets-cloud-changes.md)
 * [Assets as a Cloud Service 簡介](/help/assets/overview.md)
-* [Adobe Experience Manager as a Cloud Service 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
+* [Adobe Experience Manager as a Cloud Service 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=zh-Hant)
 
 >[!TIP]
 >
