@@ -1,14 +1,14 @@
 ---
 title: Cloud Manager 測試概觀
-description: 大致了解 Cloud Manager 自動執行的三種類型的測試，以確保您的自訂程式碼的品質。
+description: 大致瞭解Cloud Manager自動執行的三種型別的測試，以確保自訂程式碼的品質。
 exl-id: 5f5c97b1-4180-4f49-af8b-257d4744766e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: cfaa3be31195929b80310610120a779a20537c61
+source-git-commit: ac918008c3f99d74e01be59c9841083abf3604aa
 workflow-type: tm+mt
-source-wordcount: '162'
-ht-degree: 100%
+source-wordcount: '165'
+ht-degree: 62%
 
 ---
 
@@ -25,11 +25,11 @@ Cloud Manager for Cloud Services 管道支援三類測試。
 
 1. [功能測試](/help/implementing/cloud-manager/functional-testing.md)
 
-   * 功能測試是[生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)階段測試階段的一部分，也是[非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)測試階段的選擇性部分。
+   * 功能測試會在[生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)的階段測試階段中執行。 它也可以選擇性地在[非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)的測試階段執行。
 
-1. [體驗稽核測試](/help/implementing/cloud-manager/experience-audit-dashboard.md)
+1. [體驗稽核測試](/help/implementing/cloud-manager/reports/report-experience-audit.md)
 
-   * 體驗稽核測試在所有 Cloud Manager 生產管道中都是啟用的，並且不能略過。
+   * 體驗稽核測試已在所有Cloud Manager生產管道中啟用，且不能跳過。
 
 這些測試可以是：
 

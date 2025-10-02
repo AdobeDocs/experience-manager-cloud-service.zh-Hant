@@ -6,10 +6,10 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
+source-git-commit: ac918008c3f99d74e01be59c9841083abf3604aa
 workflow-type: tm+mt
-source-wordcount: '1314'
-ht-degree: 39%
+source-wordcount: '1402'
+ht-degree: 35%
 
 ---
 
@@ -36,19 +36,23 @@ ht-degree: 39%
 
 ## 新增生產管道 {#adding-production-pipeline}
 
-設定好計畫並擁有至少一個使用 [!UICONTROL Cloud Manager] UI 的環境後，您就可以依照以下步驟著手新增非生產管道了。
+設定好方案並擁有至少一個使用[!UICONTROL Cloud Manager] UI的環境後，您就可以依照以下步驟著手新增生產管道了。
 
 >[!TIP]
 >
->在設定前端管道之前，請參閱[AEM Quick Site建立歷程](/help/journey-sites/quick-site/overview.md)，以透過易於使用的AEM Quick Site建立工具取得端對端指南。 此歷程可幫助您簡化AEM網站的前端開發，讓您無需AEM後端知識即可快速自訂網站。
+>在設定前端管道之前，請參閱[AEM Quick Site建立歷程](/help/journey-sites/quick-site/overview.md)，以透過易於使用的AEM Quick Site建立工具取得端到端指南。 此歷程可幫助您簡化AEM網站的前端開發，讓您無需AEM後端知識即可快速自訂網站。
 
-1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager，並選取適當的組織。
+1. 在 [experiece.adobe.com](https://experience.adobe.com) 登入 Cloud Manager。
+1. 在&#x200B;**快速存取**&#x200B;區段中，按一下&#x200B;**Experience Manager**。
+1. 在左側面板中，按一下「**Cloud Manager**」。
+1. 選取您想要的組織。
+1. 在&#x200B;**我的程式**&#x200B;主控台上，按一下程式。
 
 1. 在「**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**」控制台中，選取程式。
 
 1. 從&#x200B;**方案總覽**&#x200B;頁面瀏覽至&#x200B;**管道**&#x200B;卡片，然後按一下&#x200B;**新增**&#x200B;以選取&#x200B;**新增生產管道**。
 
-   ![計畫管理員概觀中的管道卡](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-1.png)
+   ![專案管理員概觀中的管道卡](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-1.png)
 
 1. **新增生產管道**&#x200B;對話框隨即顯示。提供&#x200B;**管道名稱**&#x200B;以識別您的管道以及以下選項。按一下&#x200B;**「繼續」**。
 
@@ -106,23 +110,24 @@ ht-degree: 39%
 
 1. 提供要包含在體驗稽核中的路徑。
 
-   * 如需詳細資訊，請參閱[體驗稽核測試](/help/implementing/cloud-manager/experience-audit-dashboard.md#configuration)。
+   * 如需詳細資訊，請參閱[體驗稽核測試](/help/implementing/cloud-manager/reports/report-experience-audit.md#configuration)。
 
 1. 按一下&#x200B;**儲存**，即可儲存您的管道。
 
-當管道執行時，會根據效能、協助工具、SEO、最佳實務和PWA測試，提交和評估為體驗稽核設定的路徑。 如需更多詳細資料，請參閱[瞭解體驗稽核結果](/help/implementing/cloud-manager/experience-audit-dashboard.md)。
+當管道執行時，會根據效能、協助工具、SEO、最佳實務和PWA測試，提交和評估為體驗稽核設定的路徑。 如需更多詳細資料，請參閱[瞭解體驗稽核結果](/help/implementing/cloud-manager/reports/report-experience-audit.md)。
 
-管道已儲存，您現在可以在&#x200B;**計畫概觀**&#x200B;頁面的&#x200B;**管道**&#x200B;卡上[管理您的管道](managing-pipelines.md)。
+管道已儲存，您現在可以在&#x200B;**計劃概觀**&#x200B;頁面的&#x200B;**管道**&#x200B;卡上[管理您的管道](managing-pipelines.md)。
 
 ### 設定目標部署管道 {#targeted-deployment}
 
 目標部署只會為AEM應用程式的選定部分部署程式碼。 在這種部署中，您可以選擇&#x200B;**包含**&#x200B;下列其中一個型別的程式碼：
 
 * **設定** — 設定AEM環境中各種功能的設定。
-   * 請參閱[使用設定管道](/help/operations/config-pipeline.md)以取得支援的設定清單，其中包括記錄轉送、清除相關的維護工作以及各種CDN設定，並在您的存放庫中管理這些設定，以便正確部署它們。
-   * 執行目標部署管道時，會部署設定，前提是這些設定已儲存至管道中定義的環境、存放庫和分支。
+   * 如需支援的設定清單，請參閱[使用設定管道](/help/operations/config-pipeline.md)，其中包含記錄檔轉送、清除相關的維護工作以及各種CDN設定，並在您的存放庫中管理這些設定，以便正確部署它們。
+   * 執行目標部署管道時，會部署設定，前提是這些設定會儲存至管道中定義的環境、存放庫和分支。
    * 在任何時候，每個環境只能有一個設定管道。
-* **前端程式碼** — 設定AEM應用程式前端的JavaScript和CSS。
+* **設定Edge Delivery Services設定管道** - Edge Delivery設定管道沒有獨立的開發、測試和生產環境。 在AEM as a Cloud Service中，變更會經過開發、階段和生產等層級。 相反地，Edge Delivery設定管道會直接將其設定套用至在Cloud Manager中註冊的所有Edge Delivery Sites網域。 若要深入瞭解，請參閱[新增Edge Delivery管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)。
+* **前端計畫碼** — 為AEM應用計畫的前端設定JavaScript和CSS。
    * 有了前端流水線，給前端開發者更多的獨立性，可以加快開發進程。
    * 請參閱文件[使用前端管道開發網站](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) 了解此程序的工作原理以及需要注意的一些注意事項，以充分發揮此程序的潛力。
 * **網頁層設定** — 設定Dispatcher屬性，以儲存、處理及傳送網頁給使用者端。
@@ -162,7 +167,7 @@ ht-degree: 39%
 
 1. 按一下「**儲存**」。
 
-管道已儲存，您現在可以在&#x200B;**計畫概觀**&#x200B;頁面的&#x200B;**管道**&#x200B;卡上[管理您的管道](managing-pipelines.md)。
+管道已儲存，您現在可以在&#x200B;**計劃概觀**&#x200B;頁面的&#x200B;**管道**&#x200B;卡上[管理您的管道](managing-pipelines.md)。
 
 ## 跳過Dispatcher套件 {#skip-dispatcher-packages}
 

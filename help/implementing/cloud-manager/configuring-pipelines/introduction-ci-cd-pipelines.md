@@ -6,10 +6,10 @@ exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d065397b874cc24fb7af53e1258520f3e8270c55
+source-git-commit: ac918008c3f99d74e01be59c9841083abf3604aa
 workflow-type: tm+mt
-source-wordcount: '1489'
-ht-degree: 33%
+source-wordcount: '1546'
+ht-degree: 32%
 
 ---
 
@@ -116,6 +116,11 @@ Cloud Manager 提供兩種類型的管道：
 使用設定管道，您可以快速部署記錄轉送、清除相關維護任務和各種CDN設定的設定，包括流量篩選規則(例如WAF （Web應用程式防火牆）規則)。 此外，您可以管理請求和回應轉換、來源選擇器、使用者端重新導向、錯誤頁面、客戶管理的CDN金鑰、清除API金鑰以及基本驗證。
 
 請參閱[使用設定管道](/help/operations/config-pipeline.md)以取得支援功能的完整清單，並瞭解如何管理存放庫中的設定，以便正確部署它們。
+
+>[!NOTE]
+>
+>Edge Delivery設定管道沒有單獨的開發、測試和生產環境。 在AEM as a Cloud Service中，變更會經過開發、階段和生產等層級。 相反地，Edge Delivery設定管道會直接將其設定套用至在Cloud Manager中註冊的所有Edge Delivery Sites網域。 若要深入瞭解，請參閱[新增Edge Delivery管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)。
+
 
 ### 設定設定管道 {#configure-config-deployment}
 

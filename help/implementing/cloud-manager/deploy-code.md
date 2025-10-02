@@ -5,7 +5,7 @@ exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
+source-git-commit: 2aea79d42ef9627a8fc758077a7ee012592888d7
 workflow-type: tm+mt
 source-wordcount: '1185'
 ht-degree: 41%
@@ -64,9 +64,9 @@ _只有 Full Stack Code 流水線類型支援程式碼掃描、功能測試、UI
 
 **階段部署**&#x200B;階段涉及下列步驟：
 
-| 中繼部署步驟 | 描述 |
+| 中繼部署步驟 | 說明 |
 | --- | --- |
-| 驗證  | 確保管道設定為使用目前可用的資源。 例如，測試設定的分支是否存在並且環境是否可用。 |
+| 驗證 | 確保管道設定為使用目前可用的資源。 例如，測試設定的分支是否存在並且環境是否可用。 |
 | 建置和單元測試 | 執行容器化的建置流程。<br>如需組建環境的詳細資訊，請參閱[組建環境詳細資料](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)。 |
 | 程式碼掃描 | 評估應用程式程式碼的品質。<br>如需有關測試流程的詳細資訊，請參閱[程式碼品質測試](/help/implementing/cloud-manager/code-quality-testing.md)。 |
 | 建置影像 | 此過程會將內容和Dispatcher包從構建步驟轉換為Docker影象。 它也會根據這些套件產生Kubernetes設定。 |
@@ -78,12 +78,12 @@ _只有 Full Stack Code 流水線類型支援程式碼掃描、功能測試、UI
 
 **中繼測試**&#x200B;階段涉及下列步驟：
 
-| 中繼測試步驟 | 描述 |
+| 中繼測試步驟 | 說明 |
 | --- | --- |
 | 產品功能測試 | Cloud Manager管道會執行針對預備環境執行的測試。<br>另請參閱[產品功能測試](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing)。 |
 | 自訂功能測試 | 步驟一律存在且不能跳過。 如果建置未產生測試JAR，則測試會自動通過。<br>另請參閱[自訂功能測試](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)。 |
 | 自訂 UI 測試 | 此選用功能可自動執行為自訂應用程式建立的UI測試。<br>UI測試以Selenium為基礎，並封裝在Docker影像中，以在語言和架構中提供靈活性。 此方法可讓您使用Java和Maven、Node和WebDriver.io，或任何以Selenium為基礎的架構或技術。<br>另請參閱[自訂使用者介面測試](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing)。 |
-| 體驗稽核 | 步驟一律存在且不能跳過。 在執行生產管道時，在執行檢查的自訂功能測試之後會包含體驗稽核步驟。<ul><li>配置的頁面將提交給服務並進行評估。</li><li>結果是資訊性的，並顯示分數以及當前和以前分數之間的變化。</li><li>此深入分析對於判斷是否有會於目前部署引入的迴歸十分有用。</li></ul>請參閱[瞭解體驗稽核結果](/help/implementing/cloud-manager/experience-audit-dashboard.md)。</li></ul> |
+| 體驗稽核 | 步驟一律存在且不能跳過。 在執行生產管道時，在執行檢查的自訂功能測試之後會包含體驗稽核步驟。<ul><li>配置的頁面將提交給服務並進行評估。</li><li>結果是資訊性的，並顯示分數以及當前和以前分數之間的變化。</li><li>此深入分析對於判斷是否有會於目前部署引入的迴歸十分有用。</li></ul>請參閱[瞭解體驗稽核結果](/help/implementing/cloud-manager/reports/report-experience-audit.md)。</li></ul> |
 
 ![階段測試](assets/stage-testing.png)
 

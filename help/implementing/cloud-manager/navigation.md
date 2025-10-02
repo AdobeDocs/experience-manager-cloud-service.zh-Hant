@@ -5,10 +5,10 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 71311bfffefec8d2c2f71b0c69e6fec4ce3f299b
+source-git-commit: 5f9d53958076b77cd333a042003c83853594db87
 workflow-type: tm+mt
-source-wordcount: '1692'
-ht-degree: 38%
+source-wordcount: '1689'
+ht-degree: 39%
 
 ---
 
@@ -30,7 +30,7 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 
 ## AEM 中的 AI 助理
 
-對於具有[已完成必要條件](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access)的客戶，其組織的使用者可以使用AEM中的AI助理。 檢視AEM[中的](/help/implementing/cloud-manager/ai-assistant-in-aem.md)AI小幫手。
+對於具有[已完成必要條件](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access)的客戶，其組織的使用者可以使用AEM中的AI助理。 請參閱 [AEM 中的 AI 助理](/help/implementing/cloud-manager/ai-assistant-in-aem.md)。
 
 
 ## 我的程式控制台 {#my-programs-console}
@@ -126,7 +126,7 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 * 指派給計畫的名稱。 上圖顯示「SecurBank Sample」為程式名稱。
 * 服務類型：
    * **Experience Manager Cloud** — 適用於AEM as a Cloud Service計畫
-   * **Experience Manager** — 適用於[AMS (Adobe Managed Services)方案](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-manager/content/introduction)
+   * **Experience Manager** — 適用於[AMS (Adobe Managed Services)方案](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
 * [程式型別](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)：
    * 沙箱
    * 生產
@@ -153,7 +153,7 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 * 瀏覽至程式的特定![資料圖示](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Data_22_N.svg) [環境](/help/implementing/cloud-manager/manage-environments.md)
 * 開啟![計畫總覽圖示](/help/implementing/cloud-manager/assets/program-overview.svg) [計畫總覽](#program-overview)
 * ![編輯圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) [編輯程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)
-* ![刪除圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) [刪除沙箱程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
+* ![刪除圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)[刪除沙箱程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
 
 >[!TIP]
 >
@@ -214,7 +214,7 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 * ![鈴鐺圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) [活動](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#activity) — 計畫的管道執行歷程記錄
 * ![工作流程圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) [管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipelines) — 為方案設定的所有管道
 * ![資料夾圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) [存放庫](/help/implementing/cloud-manager/managing-code/managing-repositories.md) — 為方案設定的所有存放庫
-* ![圖形圓形圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_GraphPie_18_N.svg) [報表](/help/implementing/cloud-manager/sla-reporting.md) - SLA資料之類的量度
+* ![圖形圓形圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_GraphPie_18_N.svg) [報表](/help/implementing/cloud-manager/reports/report-sla.md) - SLA資料之類的量度
 
 **服務**
 
@@ -223,7 +223,7 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 * ![設定圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) [網域設定](/help/implementing/cloud-manager/custom-domain-names/introduction.md) — 管理程式的自訂網域名稱
 * ![鎖定已關閉圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) [SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md) — 管理程式的SSL憑證
 * ![社交網路圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) [網域對應](/help/implementing/cloud-manager/custom-domain-names/introduction.md) — 管理網域對應
-* ![工作清單圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) [IP允許清單](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) — 為特定IP位址定義允許清單
+* ![工作清單圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) [`IP Allow Lists`](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) — 為特定IP位址定義允許清單
 * ![方塊圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) [內容集](/help/implementing/developing/tools/content-copy.md) — 為複製目的建立的內容集
 * ![歷程圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_History_18_N.svg) [複製內容活動](/help/implementing/developing/tools/content-copy.md) — 內容複製活動
 * ![頻道圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Channel_18_N.svg) [網路基礎結構](/help/security/configuring-advanced-networking.md) — 管理程式的進階網路選項

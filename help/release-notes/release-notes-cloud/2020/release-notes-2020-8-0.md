@@ -1,31 +1,31 @@
 ---
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.8.0 版發行說明。'
-description: "[!DNL Adobe Experience Manager]個2020.8.0as a Cloud Service發行說明。"
+description: '[!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0版發行說明。'
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
 feature: Release Information
 role: Admin
-source-git-commit: cfaa3be31195929b80310610120a779a20537c61
+source-git-commit: 2aea79d42ef9627a8fc758077a7ee012592888d7
 workflow-type: tm+mt
 source-wordcount: '1031'
 ht-degree: 35%
 
 ---
 
-# [!DNL Adobe Experience Manager]as a Cloud Service2020.8.0版發行說明 {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0版發行說明 {#release-notes}
 
 以下章節概述 Experience Manager as a Cloud Service 2020.8.0 版的一般發行說明。
 
 
-## [!DNL Adobe Experience Manager Sites]個as a Cloud Service {#sites}
+## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
 ### [!DNL Sites] 的新增功能 {#what-is-new-sites}
 
 * 能夠[將頁面和子頁面（頁面樹狀結構）還原為舊版](/help/sites-cloud/authoring/sites-console/page-versions.md#reinstating-versions)。
 
-* 能夠在AEM [SPA編輯器](/help/implementing/developing/hybrid/introduction.md)中[建立啟動](/help/sites-cloud/authoring/launches/overview.md)。
+* 能夠在AEM [SPA編輯器](/help/sites-cloud/authoring/launches/overview.md)中[建立啟動](/help/implementing/developing/hybrid/introduction.md)。
 
 
-## [!DNL Adobe Experience Manager Assets]個as a Cloud Service {#assets}
+## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
 ### [!DNL Assets] 的新增功能 {#what-is-new-assets}
 
@@ -40,13 +40,13 @@ ht-degree: 35%
 
 * 資產微服務的中繼資料擷取已改善效能。 這可增加整體資產擷取輸送量。
 
-* 使用處理設定檔，以使用計算服務產生自訂中繼資料。 檢視使用處理設定檔[&#128279;](/help/assets/manage-metadata.md#metadata-compute-service)的自訂中繼資料。
+* 使用處理設定檔，以使用計算服務產生自訂中繼資料。 檢視使用處理設定檔[的](/help/assets/manage-metadata.md#metadata-compute-service)自訂中繼資料。
 
-* 給Brand Portal使用者更簡單的下載體驗，管理員可加以設定。 請參閱[下載體驗總覽](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=zh-Hant#download-configurations)。
+* 給Brand Portal使用者更簡單的下載體驗，管理員可加以設定。 請參閱[下載體驗總覽](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html#download-configurations)。
 
-* Brand Portal現在提供原生和高解析度PDF檔案預覽。 請參閱[檔案檢視器概觀](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=zh-Hant#doc-viewer)。
+* Brand Portal現在提供原生和高解析度PDF檔案預覽。 請參閱[檔案檢視器概觀](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer)。
 
-* 您現在可以直接從AEM as a Cloud Service中的[!DNL Dynamic Media]使CDN （內容傳遞網路）快取失效（不必使用[!DNL Dynamic Media Classic]）。 這可確保在幾分鐘內提供最新資產，而非幾小時。 請參閱[透過Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)使CDN快取失效。
+* 您現在可以直接從AEM as a Cloud Service中的[!DNL Dynamic Media]使CDN （內容傳遞網路）快取失效（不必使用[!DNL Dynamic Media Classic]）。 這可確保在幾分鐘內提供最新資產，而非幾小時。 請參閱[透過Dynamic Media使CDN快取失效](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)。
 
 * 已在[!DNL Assets]中為使用者介面控制項、導覽、瀏覽及搜尋體驗新增增強的協助工具支援。
 
@@ -62,7 +62,7 @@ ht-degree: 35%
 * 第一次按一下「建立關聯及取消關聯」選項時，該選項沒有回應。 (CQ-4299022)
 * 下載資產時，如果您選取透過電子郵件接收資產的選項，則不會傳送電子郵件。 (CQ-4299146)
 
-## Adobe Experience Manager Commerceas a Cloud Service {#cloud-services-commerce}
+## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
 ### 新增功能 {#what-is-new-commerce}
 
@@ -78,13 +78,13 @@ ht-degree: 35%
 
 ### 新增功能 {#what-is-new-cloud-manager}
 
-* 內容稽核是 Cloud Manager Sites Production Pipelines 上啟用的一項功能。具有 Sites 的計畫的生產管道配置現在包括名為的第三個索引標籤&#x200B;**內容稽核**。生產管道執行期間，只要自訂功能完成測試，管道中就會增加新的內容稽核步驟，以根據多項維度評估網站，包括效能、SEO （搜尋引擎最佳化）、協助工具、最佳作法和PWA（漸進式網頁應用程式）。
+* 內容稽核是 Cloud Manager Sites Production Pipelines 上啟用的一項功能。具有 Sites 的計畫的生產管道配置現在包括名為的第三個索引標籤&#x200B;**內容稽核**。生產管道執行期間，只要自訂功能完成測試，管道中就會增加新的內容稽核步驟，以根據多項維度評估網站，包括效能、SEO （搜尋引擎最佳化）、協助工具、最佳作法和PWA （漸進式網頁應用程式）。
 
 
   >[!NOTE]
   >此後，內容稽核已重命名為體驗稽核。
 
-  如需更多詳細資訊，請參閱[體驗稽核測試](/help/implementing/cloud-manager/experience-audit-dashboard.md)。
+  如需更多詳細資訊，請參閱[體驗稽核測試](/help/implementing/cloud-manager/reports/report-experience-audit.md)。
 
 * Assets 計畫中新建立的環境現在將自動設定智慧內容服務。
 
@@ -142,6 +142,6 @@ ht-degree: 35%
 
 * 推出AIO-CLI增效模組，整合了程式碼重構工具，讓開發人員得以從單一位置叫用及執行程式碼重構工具。 如需詳細資訊，請參閱[Git資源： aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration)。
 
-* AEM Dispatcher Converter擴充後，可支援將內部部署和AdobeManaged Services Dispatcher設定轉換為與AEM as a Cloud Service相容的Dispatcher設定。 如需詳細資訊，請參閱[Git資源： AEM Cloud Service Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)。
+* AEM Dispatcher Converter擴充後，可支援將內部部署和Adobe Managed Services Dispatcher設定轉換為與AEM as a Cloud Service相容的Dispatcher設定。 如需詳細資訊，請參閱[Git資源：AEM雲端服務Dispatcher轉換工具](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)。
 
 * AEM Dispatcher Converter重新寫入` node.js `，並與AIO-CLI外掛程式整合。

@@ -5,9 +5,9 @@ exl-id: cfcef2e2-0590-457d-a0f9-6092a6d9e0e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
+source-git-commit: ea85deb74f759f8e74d314df0ba081ea23cb5aab
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '638'
 ht-degree: 14%
 
 ---
@@ -48,7 +48,7 @@ ht-degree: 14%
    | --- | --- |
    | 名稱 | 設定變數的唯一名稱。 它可識別管道中使用的特定變數。 它必須遵循以下命名慣例：<ul><li>變數只能包含英數字元和底線(`_`)。</li><li>按照慣例，上述名稱應全部大寫。</li><li>每個管道限制為 200 個變數。</li><li>每個名稱不得超過100個字元。</li><li>每個`string`變數值都必須少於 2048 個字元。</li><li>每個`secretString`型別變數值都必須少於或等於500個字元。</li></ul> |
    | 值 | 變數儲存的值。 |
-   | 套用的步驟 | 必要。要套用變數的管道中的步驟：<ul><li>**建置** — 在建置程式期間套用變數。</li><li>**功能測試** — 變數用於功能測試步驟。</li><li>**UI測試** — 變數用於UI測試階段。</li></ul> |
+   | 套用的步驟 | 必要。要套用變數的管道中的步驟：<ul><li>**建置** — 在建置程式期間套用變數。</li><li>**功能測試** — 變數用於功能測試步驟。</li><li>**UI測試** — 變數用於UI測試階段。</li>&lt;li&lt;**部署** — 此變數會在部署步驟中使用。 例如，將此變數用於Edge Delivery Services管道。</li></ul> |
    | 類型 | 如果變數是純文字或加密為秘密，請選取。 |
 
    ![新增變數](/help/implementing/cloud-manager/assets/pipeline-variables-add-variable.png)
@@ -57,7 +57,7 @@ ht-degree: 14%
 
    視需要新增其他變數。
 
-1. 按一下「**儲存**」。
+1. 按一下&#x200B;**儲存**。
 
 ## 編輯管道變數 {#edit-ui}
 
@@ -82,7 +82,7 @@ ht-degree: 14%
    * 按一下![套用 — 勾選圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Checkmark_18_N.svg)以套用變更。
    * 按一下![復原圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Undo_18_N.svg)以還原變更。
 
-1. 按一下「**儲存**」。
+1. 按一下&#x200B;**儲存**。
 
 
 ## 刪除管道變數 {#delete-ui}
