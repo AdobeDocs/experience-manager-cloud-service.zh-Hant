@@ -5,10 +5,10 @@ exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 feature: Content Fragments, GraphQL API
 role: User, Admin, Architect
 solution: Experience Manager Sites
-source-git-commit: 00b4fa64a2f5d7ddf7ea7af7350374a1f1bcb768
+source-git-commit: 8c9c51c349317250ddf7ef07e1b545860fd18351
 workflow-type: tm+mt
-source-wordcount: '3175'
-ht-degree: 5%
+source-wordcount: '3588'
+ht-degree: 7%
 
 ---
 
@@ -21,13 +21,21 @@ AEM中的內容片段模型定義您[內容片段](/help/assets/content-fragment
 1. [為您的執行個體啟用內容片段模型功能](/help/assets/content-fragments/content-fragments-configuration-browser.md)
 1. [建立](#creating-a-content-fragment-model)，並[設定您的內容片段模型](#defining-your-content-fragment-model)
 1. [啟用您的內容片段模型](#enabling-disabling-a-content-fragment-model)，以便在建立內容片段時使用
-1. [藉由設定&#x200B;**原則**，在必要的Assets資料夾](#allowing-content-fragment-models-assets-folder)上允許您的內容片段模型。
+1. [藉由設定](#allowing-content-fragment-models-assets-folder)原則&#x200B;**，在必要的Assets資料夾**&#x200B;上允許您的內容片段模型。
 
 >[!NOTE]
 >
 >內容片段是 Sites 的一項功能，但儲存為&#x200B;**資產**。
 >
 >內容片段和內容片段模型現在主要透過&#x200B;**[內容片段](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)**&#x200B;主控台進行管理，不過內容片段仍可從&#x200B;**Assets**&#x200B;主控台進行管理，而內容片段模型可從&#x200B;**工具**&#x200B;主控台進行管理。 本節涵蓋&#x200B;**Assets**&#x200B;和&#x200B;**Tools**&#x200B;主控台中的管理。
+
+>[!NOTE]
+>
+>如果模型是使用[新模型編輯器](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)建立的，您應該永遠使用該編輯器來建立模型。
+>
+>如果您隨後使用此（原始）模型編輯器開啟模型，您會看到以下訊息：
+>
+>* 「此模型已設定自訂UI結構描述。 此UI中顯示的欄位順序可能與UI結構描述不相符。 若要檢視與UI結構描述對齊的欄位，您必須切換到新的內容片段編輯器。」
 
 ## 建立內容片段模型 {#creating-a-content-fragment-model}
 
@@ -40,7 +48,7 @@ AEM中的內容片段模型定義您[內容片段](/help/assets/content-fragment
    >如果[尚未啟用使用內容片段模型](/help/assets/content-fragments/content-fragments-configuration-browser.md)，則&#x200B;**建立**&#x200B;選項將無法使用。
 
 1. 指定&#x200B;**模型標題**。
-您也可以定義各種屬性；例如，新增&#x200B;**標籤**、**描述**，並選取&#x200B;**啟用模型**&#x200B;以[啟用模型](#enabling-disabling-a-content-fragment-model) （如有必要）。
+您也可以定義各種屬性；例如，新增**標籤**、**描述**，並選取&#x200B;**啟用模型**&#x200B;以[啟用模型](#enabling-disabling-a-content-fragment-model) （如有必要）。
 
    >[!NOTE]
    >
@@ -67,6 +75,7 @@ AEM中的內容片段模型定義您[內容片段](/help/assets/content-fragment
 
    * 左：欄位已定義
    * 右：資 **料類型** ，可用於建立欄位( **和屬性** ，以供建立欄位後使用)
+   * top：嘗試[新編輯器](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)的選項
 
    >[!NOTE]
    >
@@ -142,17 +151,43 @@ AEM中的內容片段模型定義您[內容片段](/help/assets/content-fragment
 * **標籤**
    * 允許片段作者存取及選取標籤區域
 
+* **片段參考**
+   * 參考其他內容片段；可用於[建立巢狀內容](#using-references-to-form-nested-content)
+   * 可以設定此資料類型以允許片段作者：
+      * 直接編輯參考的片段。
+      * 根據適當的模式建立新的內容片段
+      * 建立欄位的新執行個體
+   * 參考指定參考資源的路徑；例如`/content/dam/path/to/resource`
+
+* **片段參考 (UUID)**
+   * 參考其他內容片段；可用於[建立巢狀內容](#using-references-to-form-nested-content)
+   * 可以設定此資料類型以允許片段作者：
+      * 直接編輯參考的片段。
+      * 根據適當的模式建立新的內容片段
+      * 建立欄位的新執行個體
+   * 在編輯器中，參考會指定所參考資源的路徑；在內部，參考被視為參考資源的通用唯識別碼 (UUID)。
+      * 您不需要知道UUID；在片段編輯器中，您可以瀏覽到所需的片段
+
+  >[!NOTE]
+  >
+  >UUID是存放庫專屬的。 如果您使用[內容複製工具](/help/implementing/developing/tools/content-copy.md)來複製內容片段，將會在目標環境中重新計算UUID。
+
 * **內容參考**
    * 參考任何型別的其他內容；可用於[建立巢狀內容](#using-references-to-form-nested-content)
    * 如果參照了影像，您可以選擇顯示縮圖
    * 欄位可設定為允許片段作者建立欄位的新執行個體
+   * 參考指定參考資源的路徑；例如`/content/dam/path/to/resource`
 
-* **片段參考**
-   * 參考其他內容片段；可用於[建立巢狀內容](#using-references-to-form-nested-content)
-   * 欄位可設定為允許片段作者：
-      * 直接編輯參照的片段
-      * 根據適當的模式建立新的內容片段
-      * 建立欄位的新執行個體
+* **內容參考 (UUID)**
+   * 參考任何型別的其他內容；可用於[建立巢狀內容](#using-references-to-form-nested-content)
+   * 如果參照了影像，您可以選擇顯示縮圖
+   * 欄位可設定為允許片段作者建立欄位的新執行個體
+   * 在編輯器中，參考會指定所參考資源的路徑；在內部，參考被視為參考資源的通用唯識別碼 (UUID)。
+      * 您不需要知道UUID；在片段編輯器中，您可以瀏覽到所需的資產資源
+
+  >[!NOTE]
+  >
+  >UUID是存放庫專屬的。 如果您使用[內容複製工具](/help/implementing/developing/tools/content-copy.md)來複製內容片段，將會在目標環境中重新計算UUID。
 
 * **JSON物件**
    * 允許內容片段作者在片段的對應元素中輸入JSON語法。
@@ -182,17 +217,17 @@ AEM中的內容片段模型定義您[內容片段](/help/assets/content-fragment
   >如果在舊版AEM中建立的模型包含非法字元，請移除或更新這些字元。
 
 * **呈現為**
-在片段中實現/轉譯欄位的各種選項。 通常，此屬性可讓您定義作者是否看到欄位的單一例項，或允許建立多個例項。 使用&#x200B;**多個欄位**&#x200B;時，您可以定義專案的最小和最大數量 — 如需詳細資訊，請參閱[驗證](#validation)。
+在片段中實現/轉譯欄位的各種選項。 通常，此屬性可讓您定義作者是否看到欄位的單一例項，或允許建立多個例項。 使用**多個欄位**&#x200B;時，您可以定義專案的最小和最大數量 — 如需詳細資訊，請參閱[驗證](#validation)。
 
 * **欄位標籤**
-輸入&#x200B;**欄位標籤**&#x200B;將會自動產生&#x200B;**屬性名稱**，然後可視需要手動更新。
+輸入**欄位標籤**&#x200B;將會自動產生&#x200B;**屬性名稱**，然後可視需要手動更新。
 
 * **驗證**
-基本驗證可由機制使用，例如&#x200B;**Required**&#x200B;屬性。 有些資料型別有額外的驗證欄位。 如需詳細資訊，請參閱[驗證](#validation)。
+基本驗證可由機制使用，例如**Required**&#x200B;屬性。 有些資料型別有額外的驗證欄位。 如需詳細資訊，請參閱[驗證](#validation)。
 
-* 對於「多行」 **資料類型** ，可將「預設類型 **&#x200B;**&#x200B;」定義為：
+* 對於「多行」 **資料類型** ，可將「預設類型 **** 」定義為：
 
-   * **RTF格式**
+   * **RTF 文字**
    * **Markdown**
    * **純文字**
 
@@ -205,7 +240,7 @@ AEM中的內容片段模型定義您[內容片段](/help/assets/content-fragment
 
   這是為了確保內容作者無法重複已新增至相同模型其他片段中的內容。
 
-  例如，內容片段模型中名為`Country`的&#x200B;**單行文字**&#x200B;欄位在兩個相依的內容片段中不能有值`Japan`。 嘗試第二個執行個體時會發出警告。
+  例如，內容片段模型中名為&#x200B;**的**&#x200B;單行文字`Country`欄位在兩個相依的內容片段中不能有值`Japan`。 嘗試第二個執行個體時會發出警告。
 
   >[!NOTE]
   >
@@ -230,7 +265,7 @@ AEM中的內容片段模型定義您[內容片段](/help/assets/content-fragment
    * 確認欄位的屬性名稱已新增至翻譯組態，內容`/content/dam/<sites-configuration>` （如果尚未存在）。
    * 對於GraphQL：將內容片段欄位上的`<translatable>`屬性設定為`yes`，以允許GraphQL查詢篩選僅包含可翻譯內容的JSON輸出。
 
-## 驗證  {#validation}
+## 驗證 {#validation}
 
 各種資料型別現在包含定義在結果片段中輸入內容時適用的驗證需求的可能性：
 
@@ -260,32 +295,43 @@ AEM中的內容片段模型定義您[內容片段](/help/assets/content-fragment
 
 內容片段可使用下列任一種資料型別來形成巢狀內容：
 
-* **[內容參考](#content-reference)**
+* [內容參考](#content-reference)
    * 提供其他內容的簡單參照；任何型別。
+   * 由資料型別提供：
+      * **內容參考** — 以路徑為基礎
+      * **內容參考(UUID)** — 以UUID為基礎
    * 可以為一個或多個參考（在產生的片段中）設定。
 
-* **[片段參考](#fragment-reference-nested-fragments)** （巢狀片段）
+* [片段參考](#fragment-reference-nested-fragments) （巢狀片段）
    * 根據指定的特定模型，參考其他片段。
+   * 由資料型別提供：
+      * **片段參考** — 以路徑為基礎
+      * **片段參考(UUID)** — 以UUID為基礎
    * 可讓您包含/擷取結構化資料。
 
      >[!NOTE]
      >
-     >此方法與搭配GraphQL[&#128279;](/help/assets/content-fragments/content-fragments-graphql.md)使用內容片段的Headless內容傳遞特別相關。
+     >當您透過GraphQL[使用內容片段的](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)Headless內容傳遞時，此方法特別令人感興趣。
+
    * 可以為一個或多個參考（在產生的片段中）設定。
+
+>[!NOTE]
+>
+>請參閱[升級您的UUID參考內容片段](/help/headless/graphql-api/uuid-reference-upgrade.md)，以取得有關內容/片段參考和內容/片段參考(UUID)以及升級為UUID型資料型別的進一步資訊。
 
 >[!NOTE]
 >
 >AEM對下列專案提供週期性保護：
 >
->* 內容參照
->這可防止使用者新增對目前片段的引用。 這可能會導致空的片段參考選擇器對話方塊。
+>* 內容參考
+>  >  這可防止使用者新增對目前片段的引用。 這可能會導致空的片段參考選擇器對話方塊。
 >
 >* GraphQL中的片段參考
->如果您建立深層查詢，且該查詢傳回多個互相參照的內容片段，則該查詢在第一次出現時會傳回null。
+>  >  如果您建立深層查詢，且該查詢傳回多個互相參照的內容片段，則該查詢在第一次出現時會傳回null。
 
 ### 內容參考 {#content-reference}
 
-內容參考可讓您轉譯來自其他來源的內容；例如，影像或內容片段。
+**內容參考**&#x200B;和&#x200B;**內容參考(UUID)**&#x200B;資料型別可讓您轉譯來自其他來源的內容；例如，影像、頁面或體驗片段。
 
 除了標準屬性之外，您還可以指定：
 
@@ -300,7 +346,7 @@ AEM中的內容片段模型定義您[內容片段](/help/assets/content-fragment
 
 ### 片段參考（巢狀片段） {#fragment-reference-nested-fragments}
 
-「片段參考」會參考一或多個內容片段。 此功能在擷取應用程式中使用的內容時特別有意義，因為它可讓您擷取具有多個圖層的結構化資料。
+**片段參考**&#x200B;和&#x200B;**片段參考(UUID)**&#x200B;資料型別可以參考一或多個內容片段。 此功能可讓您擷取多個圖層的結構化資料，在擷取應用程式中使用的內容時特別感興趣。
 
 例如：
 
@@ -528,7 +574,7 @@ type CompanyModel {
 
 為了解決這些問題，內容片段模型在發佈後立即在作者上&#x200B;*鎖定*&#x200B;為唯讀模式。 這表示為&#x200B;**已鎖定**：
 
-鎖定內容片段模型![&#128279;](assets/cfm-model-locked.png)的卡片
+鎖定內容片段模型![的](assets/cfm-model-locked.png)卡片
 
 當模型為&#x200B;**鎖定** （在「唯讀」模式中）時，您可以檢視模型的內容和結構，但無法進行編輯。
 
@@ -542,8 +588,8 @@ type CompanyModel {
 
    * 您可以&#x200B;**解鎖**&#x200B;模型以啟用編輯。
 
-     如果您選取&#x200B;**解除鎖定**，會顯示警告，而且您必須確認&#x200B;**解除鎖定**&#x200B;動作：
-     解鎖內容片段模型![&#128279;](assets/cfm-model-unlock-message.png)時出現訊息
+     如果您選取&#x200B;**解除鎖定**，會顯示警告，而且您必須確認&#x200B;**解除鎖定**動作：
+     解鎖內容片段模型![時出現](assets/cfm-model-unlock-message.png)訊息
 
      然後您可以開啟模型以進行編輯。
 

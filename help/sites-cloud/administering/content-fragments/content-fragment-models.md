@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 solution: Experience Manager Sites
-source-git-commit: cf2f64dec2ff39ea237dd092b3049bf9b8cd40e7
+source-git-commit: 416cb98fbf48885688ee70d63e606e3f7c90f9f8
 workflow-type: tm+mt
-source-wordcount: '2280'
-ht-degree: 7%
+source-wordcount: '2201'
+ht-degree: 3%
 
 ---
 
@@ -24,6 +24,14 @@ Adobe Experience Manager (AEM) as a Cloud Service中的內容片段模型定義[
 >
 >如需詳細資訊，請參閱搭配內容片段使用的[AEM GraphQL API — 限制](/help/headless/graphql-api/content-fragments.md#limitations)
 
+>[!NOTE]
+>
+>如果您使用此新編輯器建立模型，您應該一律將此編輯器用於該模型。
+>
+>如果您接著使用[原始模型編輯器](/help/assets/content-fragments/content-fragments-models.md)開啟模型，您會看到訊息：
+>
+>* 「此模型已設定自訂UI結構描述。 此UI中顯示的欄位順序可能與UI結構描述不相符。 若要檢視與UI結構描述對齊的欄位，您必須切換到新的內容片段編輯器。」
+
 ## 定義內容片段模型 {#defining-your-content-fragment-model}
 
 內容片段模式透過選擇&#x200B;**[資料型別](#data-types)**，有效地定義了結果內容片段的結構。 使用模型編輯器，您可以新增資料型別的例項，然後將其設定以建立必填欄位：
@@ -38,26 +46,46 @@ Adobe Experience Manager (AEM) as a Cloud Service中的內容片段模型定義[
    >
    >您也可以在[建立模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#creating-a-content-fragment-model)後直接開啟模型。
 
-1. 開啟&#x200B;**編輯**&#x200B;所需的模型；使用快速動作，或選取模型，然後從工具列選取動作。
+1. 開啟&#x200B;**編輯**&#x200B;所需的模型；使用其中一個快速動作連結，或選取模型，然後從工具列選取動作。
 
-   開啟模型編輯器後，會顯示：
-
-   * 左：欄位已定義
-   * 右：資 **料類型** ，可用於建立欄位( **和屬性** ，以供建立欄位後使用)
-
-   >[!NOTE]
-   >
-   >當欄位定義為&#x200B;**必要**&#x200B;時，左窗格中指示的&#x200B;**標籤**&#x200B;會標示為字元(**&#42;**)。
 
    ![屬性](assets/cf-cfmodels-empty-model.png)
 
+   開啟模型編輯器後，會顯示：
+
+   * 上：
+      * **首頁**&#x200B;圖示
+      * 在[原始](/help/assets/content-fragments/content-fragments-models.md)與新編輯器之間切換的選項
+      * **取消**
+      * **儲存**
+
+   * 左： **資料型別**&#x200B;可用於建立欄位
+
+   * 中間：欄位已與&#x200B;**新增**&#x200B;選項一起定義
+
+   * 右：使用最右側的圖示，您可在以下兩者之間選取：
+
+      * **屬性**：定義並檢視所選欄位的屬性
+      * **模型詳細資料**：顯示&#x200B;**已啟用**&#x200B;狀態、**模型標題**、**標籤**、**描述**&#x200B;和&#x200B;**預覽URL**
+
 1. **新增欄位**
 
-   * 將欄位所需的資料型別拖曳到所需位置：
+   * 可以：
 
-     ![拖曳資料型別以建立欄位](assets/cf-cfmodels-create-field.png)
+      * 將資料型別從左側面板拖曳至中間面板中欄位的必要位置。
+      * 依資料型別選取&#x200B;**+**&#x200B;圖示以將其新增至欄位清單底部。
+      * 在中間面板中選取「**新增**」，然後從產生的下拉式清單中選取所需的資料型別，以在清單底部新增欄位。
 
-   * 將欄位新增至模型後，右側面板會顯示可針對該特定資料型別定義的&#x200B;**屬性**。 您可以在此處定義該欄位的必要條件。
+     >[!NOTE]
+     >
+     >**索引標籤預留位置**&#x200B;欄位必須一律顯示在現有欄位上方。
+
+   * 您可以使用欄位方塊左側的點狀結構來重新定位欄位：
+
+     ![移動欄位](assets/cf-cfmodels-move-field-icon.png)
+
+   * 將欄位新增至模型（且已選取）後，右側面板會顯示可針對該特定資料型別定義的&#x200B;**屬性**。 您可以在此處定義特定的
+欄位。
 
       * 許多屬性不言自明，如需詳細資訊，請參閱[屬性（資料型別）](#properties)。
       * 輸入&#x200B;**欄位標籤**&#x200B;會自動完成&#x200B;**屬性名稱** （如果空白），之後可以手動更新。
@@ -72,15 +100,17 @@ Adobe Experience Manager (AEM) as a Cloud Service中的內容片段模型定義[
 
      ![欄位屬性](assets/cf-cfmodels-field-properties.png)
 
+     >[!NOTE]
+     >
+     >當欄位定義為&#x200B;**必要**&#x200B;時，中間窗格中標示的&#x200B;**標籤**&#x200B;會標示為字元(**&#42;**)。
+
 1. **移除欄位**
 
-   選取必填欄位，然後選取垃圾桶圖示。 系統會要求您確認動作。
+   選取中間面板中適當欄位的垃圾桶圖示。
 
    ![移除](assets/cf-cfmodels-remove-icon.png)
 
-1. 新增所有必要欄位，並視需要定義相關屬性。 例如：
-
-   ![儲存](assets/cf-cfmodels-save.png)
+1. 新增所有必要欄位，並視需要定義相關屬性。
 
 1. 選取&#x200B;**儲存**&#x200B;以保留定義。
 
@@ -118,6 +148,7 @@ Adobe Experience Manager (AEM) as a Cloud Service中的內容片段模型定義[
 
 * **標籤**
    * 允許片段作者存取及選取標籤區域
+
 * **片段參考**
    * 參考其他內容片段；可用於[建立巢狀內容](#using-references-to-form-nested-content)
    * 可以設定此資料類型以允許片段作者：
@@ -126,18 +157,16 @@ Adobe Experience Manager (AEM) as a Cloud Service中的內容片段模型定義[
       * 建立欄位的新執行個體
    * 參考指定參考資源的路徑；例如`/content/dam/path/to/resource`
 
-* **片段參考 (UUID)**
-   * 參考其他內容片段；可用於[建立巢狀內容](#using-references-to-form-nested-content)
-   * 可以設定此資料類型以允許片段作者：
-      * 直接編輯參考的片段。
-      * 根據適當的模式建立新的內容片段
-      * 建立欄位的新執行個體
-   * 在編輯器中，參考會指定所參考資源的路徑；在內部，參考被視為參考資源的通用唯識別碼 (UUID)。
-      * 您不需要知道UUID；在片段編輯器中，您可以瀏覽到所需的片段
+     <!--
+    * Internally the reference is held as a universally unique ID (UUID) that references the resource
+    * You do not need to know the UUID; in the fragment editor you can browse to the required fragment.
+    -->
 
+  <!--
   >[!NOTE]
   >
-  >UUID是存放庫專屬的。 如果您使用[內容複製工具](/help/implementing/developing/tools/content-copy.md)來複製內容片段，將會在目標環境中重新計算UUID。
+  >The UUIDs are repository specific. If you use the [Content Copy Tool](/help/implementing/developing/tools/content-copy.md) to copy Content Fragments, the UUIDs will be recalculated in the target environment.
+  -->
 
 * **內容參考**
    * 參考任何型別的其他內容；可用於[建立巢狀內容](#using-references-to-form-nested-content)
@@ -145,16 +174,16 @@ Adobe Experience Manager (AEM) as a Cloud Service中的內容片段模型定義[
    * 欄位可設定為允許片段作者建立欄位的新執行個體
    * 參考指定參考資源的路徑；例如`/content/dam/path/to/resource`
 
-* **內容參考 (UUID)**
-   * 參考任何型別的其他內容；可用於[建立巢狀內容](#using-references-to-form-nested-content)
-   * 如果參照了影像，您可以選擇顯示縮圖
-   * 欄位可設定為允許片段作者建立欄位的新執行個體
-   * 在編輯器中，參考會指定所參考資源的路徑；在內部，參考被視為參考資源的通用唯識別碼 (UUID)。
-      * 您不需要知道UUID；在片段編輯器中，您可以瀏覽到所需的資產資源
+     <!--
+    * Internally the reference is held as a universally unique ID (UUID) that references the resource
+    * You do not need to know the UUID; in the fragment editor you can browse to the required asset resource
+    -->
 
+  <!--
   >[!NOTE]
   >
-  >UUID是存放庫專屬的。 如果您使用[內容複製工具](/help/implementing/developing/tools/content-copy.md)來複製內容片段，將會在目標環境中重新計算UUID。
+  >The UUIDs are repository specific. If you use the [Content Copy Tool](/help/implementing/developing/tools/content-copy.md) to copy Content Fragments, the UUIDs will be recalculated in the target environment.
+  -->
 
 * **JSON物件**
    * 允許內容片段作者在片段的對應元素中輸入JSON語法。
@@ -170,6 +199,8 @@ Adobe Experience Manager (AEM) as a Cloud Service中的內容片段模型定義[
      >[!NOTE]
      >
      >此資料型別僅用於格式設定，AEM GraphQL結構描述會忽略此資料型別。
+     >
+     >**索引標籤預留位置**&#x200B;欄位必須一律顯示在現有欄位上方。
 
 ## 屬性（資料型別） {#properties}
 
@@ -188,14 +219,14 @@ Adobe Experience Manager (AEM) as a Cloud Service中的內容片段模型定義[
   在片段中實現/轉譯欄位的各種選項。 這通常可讓您定義作者將看到欄位的單一例項，還是允許建立多個例項。 使用&#x200B;**多個欄位**&#x200B;時，您可以定義專案的最小和最大數量 — 如需詳細資訊，請參閱[驗證](#validation)。
 
 * **欄位標籤**
-輸入&#x200B;**欄位標籤**&#x200B;會自動產生&#x200B;**屬性名稱**，然後可視需要手動更新。
+輸入**欄位標籤**&#x200B;會自動產生&#x200B;**屬性名稱**，然後可視需要手動更新。
 
 * **驗證**
-基本驗證可由機制使用，例如&#x200B;**Required**&#x200B;屬性。 有些資料型別有額外的驗證欄位。 如需詳細資訊，請參閱[驗證](#validation)。
+基本驗證可由機制使用，例如**Required**&#x200B;屬性。 有些資料型別有額外的驗證欄位。 如需詳細資訊，請參閱[驗證](#validation)。
 
-* 對於「多行」 **資料類型** ，可將「預設類型 **&#x200B;**&#x200B;」定義為：
+* 對於「多行」 **資料類型** ，可將「預設類型 **** 」定義為：
 
-   * **RTF格式**
+   * **RTF 文字**
    * **Markdown**
    * **純文字**
 
@@ -208,7 +239,7 @@ Adobe Experience Manager (AEM) as a Cloud Service中的內容片段模型定義[
 
   這是為了確保內容作者無法重複已新增至相同模型其他片段中的內容。
 
-  例如，內容片段模型中名為`Country`的&#x200B;**單行文字**&#x200B;欄位在兩個相依的內容片段中不能有值`Japan`。 嘗試第二個執行個體時會發出警告。
+  例如，內容片段模型中名為&#x200B;**的**&#x200B;單行文字`Country`欄位在兩個相依的內容片段中不能有值`Japan`。 嘗試第二個執行個體時會發出警告。
 
   >[!NOTE]
   >
@@ -258,36 +289,34 @@ Adobe Experience Manager (AEM) as a Cloud Service中的內容片段模型定義[
 
 * [內容參考](#content-reference)
    * 提供其他內容的簡單參照；任何型別。
-   * 由資料型別提供：
-      * **內容參考** — 以路徑為基礎
-      * **內容參考(UUID)** — 以UUID為基礎
+   * 由&#x200B;**內容參考**&#x200B;資料型別提供
    * 可以為一個或多個參考（在產生的片段中）設定。
 
 * [片段參考](#fragment-reference-nested-fragments) （巢狀片段）
    * 根據指定的特定模型，參考其他片段。
-   * 由資料型別提供：
-      * **片段參考** — 以路徑為基礎
-      * **片段參考(UUID)** — 以UUID為基礎
+   * 由&#x200B;**片段參考**&#x200B;資料型別提供
    * 可讓您包含/擷取結構化資料。
 
      >[!NOTE]
      >
-     >當您透過GraphQL[&#128279;](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)使用內容片段的Headless內容傳遞時，此方法特別令人感興趣。
+     >當您透過GraphQL[使用內容片段的](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)Headless內容傳遞時，此方法特別令人感興趣。
    * 可以為一個或多個參考（在產生的片段中）設定。
 
+<!--
 >[!NOTE]
 >
->請參閱[升級您的UUID參考內容片段](/help/headless/graphql-api/uuid-reference-upgrade.md)，以取得有關內容/片段參考和內容/片段參考(UUID)以及升級為UUID型資料型別的進一步資訊。
+>See [Upgrade your Content Fragments for UUID References](/help/headless/graphql-api/uuid-reference-upgrade.md) for further information about Content/Fragment Reference and Content/Fragment Reference (UUID), and upgrading to the UUID-based data types.
+-->
 
 >[!NOTE]
 >
 >AEM針對下列專案提供週期性保護：
 >
->* 內容參照
->這可防止使用者新增對目前片段的引用，並可能導致空白的片段引用選取器對話方塊。
+>* 內容參考
+>  >  這可防止使用者新增對目前片段的引用，並可能導致空白的片段引用選取器對話方塊。
 >
 >* GraphQL中的片段參考
->如果您建立深層查詢，且該查詢傳回多個互相參照的內容片段，則它會在第一次出現時傳回null。
+>  >  如果您建立深層查詢，且該查詢傳回多個互相參照的內容片段，則它會在第一次出現時傳回null。
 
 >[!CAUTION]
 >
@@ -297,7 +326,7 @@ Adobe Experience Manager (AEM) as a Cloud Service中的內容片段模型定義[
 
 ### 內容參考 {#content-reference}
 
-**內容參考**&#x200B;和&#x200B;**內容參考(UUID)**&#x200B;資料型別可讓您轉譯來自其他來源的內容；例如，影像、頁面或體驗片段。
+**內容參考**&#x200B;資料型別可讓您轉譯來自其他來源的內容；例如，影像、頁面或體驗片段。
 
 除了標準屬性之外，您還可以指定：
 
@@ -324,7 +353,7 @@ Adobe Experience Manager (AEM) as a Cloud Service中的內容片段模型定義[
 
 ### 片段參考（巢狀片段） {#fragment-reference-nested-fragments}
 
-**片段參考**&#x200B;和&#x200B;**片段參考(UUID)**&#x200B;資料型別可以參考一或多個內容片段。 此功能可讓您擷取多個圖層的結構化資料，在擷取應用程式中使用的內容時特別感興趣。
+**片段參考**&#x200B;資料型別可以參考一或多個內容片段。 此功能可讓您擷取多個圖層的結構化資料，在擷取應用程式中使用的內容時特別感興趣。
 
 例如：
 
@@ -347,7 +376,7 @@ type CompanyModel {
 
 >[!NOTE]
 >
->片段參考對搭配GraphQL[&#128279;](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)使用內容片段的Headless內容傳遞特別感興趣。
+>片段參考對搭配GraphQL[使用內容片段的](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md)Headless內容傳遞特別感興趣。
 
 除了標準屬性之外，您還可以定義：
 
