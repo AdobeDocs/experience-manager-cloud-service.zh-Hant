@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 8205014a07b3683d6dd55f1632f5ac06a62e2337
+source-git-commit: f1030bf293ee78380bca7bd5d4266f9767677ad7
 workflow-type: tm+mt
-source-wordcount: '1894'
-ht-degree: 22%
+source-wordcount: '1953'
+ht-degree: 21%
 
 ---
 
@@ -79,7 +79,7 @@ Experience Cloud 標頭會始終顯示在畫面頂端。這是一個錨點，說
 
 #### Experience Manager {#experience-manager}
 
-選取標頭左側的Adobe Experience Cloud連結，即可導覽至Experience Manager解決方案的根目錄，以存取如[Cloud Manager](/help/onboarding/cloud-manager-introduction.md)、[Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)和[Software Distribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hant)之類的工具。
+選取標頭左側的Adobe Experience Cloud連結，即可導覽至Experience Manager解決方案的根目錄，以存取如[Cloud Manager](/help/onboarding/cloud-manager-introduction.md)、[Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)和[Software Distribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)之類的工具。
 
 ![全域導覽按鈕](assets/global-navigation.png)
 
@@ -112,6 +112,12 @@ Experience Cloud 標頭會始終顯示在畫面頂端。這是一個錨點，說
 選取代表您的使用者的圖示，以存取您的帳戶設定。 如果您沒有設定使用者圖片，則會隨機分配圖示。
 
 ![使用者屬性](assets/user-properties.png)
+
+點選或按一下帳戶圖示會開啟包含您使用者設定的功能表。 這些設定一般適用於Cloud Manager，其功能在該檔案中詳細說明[。](/help/implementing/cloud-manager/navigation.md)
+
+![環境切換器](assets/environment-switcher.png)
+
+對於Universal Editor，[如果您有可用的預覽服務，](/help/sites-cloud/authoring/sites-console/previewing-content.md)您也可以在標題&#x200B;**產品設定**&#x200B;下的生產與預覽環境之間切換。
 
 ### 通用編輯器工具列 {#universal-editor-toolbar}
 
