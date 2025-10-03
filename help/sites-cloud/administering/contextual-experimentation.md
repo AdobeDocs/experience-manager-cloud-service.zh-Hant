@@ -1,15 +1,14 @@
 ---
 title: AEM as a Cloud Service中的內容實驗
-description: 瞭解如何使用實驗外掛程式，為您的網站新增實驗功能。
+description: 瞭解如何使用實驗外掛程式，將實驗功能新增至您的網站。
 feature: Administering
 role: Admin
-source-git-commit: 1bb86516328d1405c1761f3c8b0494cc9cb64553
+source-git-commit: 598f05f6cb31395844b1a89cf6c0e34d5627352c
 workflow-type: tm+mt
-source-wordcount: '1797'
+source-wordcount: '1796'
 ht-degree: 0%
 
 ---
-
 
 # 概觀 {#overview}
 
