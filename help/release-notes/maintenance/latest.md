@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 8ee3da55024c0f5246f6c194bc07172b4b71823a
+source-git-commit: 6cf380fd972888fa21f682b0e799cf5ab594e829
 workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 49%
+source-wordcount: '433'
+ht-degree: 48%
 
 ---
 
@@ -31,9 +31,9 @@ ht-degree: 49%
 * GRANITE-56026：改善許可權API狀態程式碼回應。
 * GRANITE-61015：已新增`org.apache.commons.io.channels`封裝至公開匯出的清單。
 * GRANITE-61167： Felix記錄檔已更新至最新的OSGI規格。
-* GRANITE-61167：更新Felix相依性。
+* GRANITE-61167：更新許多Apache Felix相依性。
 * GRANITE-61169：改善受保護字串的檢查。
-* GRANITE-61622：更新Sling相依性。
+* GRANITE-61622：更新許多Apache Sling相依性。
 * GRANITE-61663：將`com.adobe.granite.repository.indexdefs-1.0.2`新增到quickstart。
 * GRANITE-61811：將`com.adobe.granite.repository-2.0.0`新增到quickstart。
 * SITES-32014：接聽外部事件以更新服務註冊。
