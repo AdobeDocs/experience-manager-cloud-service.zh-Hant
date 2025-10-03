@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: ea18cacd3a1058f5b9c8e2e81e5e7c36aa1964b4
+source-git-commit: 1fade922ac38340aaaee71794f96db738d492ed6
 workflow-type: tm+mt
-source-wordcount: '2823'
+source-wordcount: '2778'
 ht-degree: 5%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 5%
 * 頂端工具列：用於關鍵資訊和動作
    * 內容片段主控台的連結 (首頁圖示)
    * 有關模型和檔案夾的資訊
-   * [預覽的連結（如果為模型設定了預設預覽URL模式）](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#model-properties)
+   * [預覽](#preview-content-fragment)的連結；如果為模型設定了預設預覽URL模式
    * [發佈](#publish-content-fragment)和[取消發佈](#unpublish-content-fragment)動作
    * 顯示全部&#x200B;**父參考內容**&#x200B;的選項 (連結圖示)
    * **[狀態](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)**&#x200B;片段，以及最後儲存的資訊
@@ -267,7 +267,7 @@ ht-degree: 5%
 
   >[!CAUTION]
   >
-  >同步僅可用於將變更&#x200B;*從&#x200B;**Main**&#x200B;複製到變數*。
+  >同步僅可用於將變更&#x200B;*從&#x200B;**Main**複製到變數*。
   >
   >將變更&#x200B;*從變化傳輸至&#x200B;**主要***不提供選項。
 
@@ -497,14 +497,7 @@ ht-degree: 5%
 
 ## 預覽您的片段 {#preview-content-fragment}
 
-內容片段編輯器為作者提供在外部前端應用程式中預覽其編輯的選項。
-
-若要使用此功能，您首先需要：
-
-* 與您的IT團隊合作，設定外部前端應用程式，該應用程式會透過使用其JSON輸出來呈現內容片段。
-* 設定外部前端應用程式時，**預設預覽URL模式**&#x200B;必須定義為適當內容片段模式[的](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#model-properties)屬性。
-
-定義URL後，**預覽**&#x200B;按鈕會啟用。 您可以選取此按鈕來啟動外部應用程式（在單獨的索引標籤中）以呈現內容片段。
+內容片段編輯器為作者提供在外部前端應用程式中預覽其編輯的選項。 這要求已定義&#x200B;**[預設預覽URL模式](/help/sites-cloud/administering/content-fragments/preview.md#preview-url-pattern)**，以啟動編輯器頂端工具列中的&#x200B;**預覽**&#x200B;按鈕。 您可以選取此按鈕來啟動外部應用程式（在單獨的索引標籤中）以呈現內容片段。
 
 ## 發佈您的片段 {#publish-content-fragment}
 

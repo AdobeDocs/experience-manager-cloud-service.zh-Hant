@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 solution: Experience Manager Sites
 exl-id: f94f75c2-12fa-47c0-a71b-327f4210077d
-source-git-commit: baf9e56e65bc537e136310814f269a3a20a80dd3
+source-git-commit: a64e0ff18c1508a50400f1423543b3c907552d6a
 workflow-type: tm+mt
-source-wordcount: '2496'
+source-wordcount: '2459'
 ht-degree: 3%
 
 ---
@@ -132,20 +132,7 @@ Adobe Experience Manager (AEM) as a Cloud Service中的內容片段模型定義[
 * **標題**
 * **標籤**
 * **說明**
-* **預覽URL模式**
-
-  內容片段模型可讓作者在外部前端應用程式中&#x200B;**預覽**&#x200B;其內容。 設定&#x200B;**預覽服務**&#x200B;後，請新增前端應用程式的URL。
-
-  預覽URL應遵循此模式：
-    `https://<preview_url>?param=${expression}`
-
-  可用的運算式包括：
-
-   * `${contentFragment.path}`
-   * `${contentFragment.model.path}`
-   * `${contentFragment.model.name}`
-   * `${contentFragment.variation}`
-   * `${contentFragment.id}`
+* **[預覽URL模式](/help/sites-cloud/administering/content-fragments/preview.md#preview-url-pattern)**
 
 <!-- CHECK: currently under FT -->
 <!--
@@ -249,7 +236,7 @@ Adobe Experience Manager (AEM) as a Cloud Service中的內容片段模型定義[
    您也可以定義各種屬性：
 
    * **標題**
-如果您先輸入&#x200B;**Title**，則會從該標題產生&#x200B;**Name**。
+如果您先輸入**Title**，則會從該標題產生&#x200B;**Name**。
    * **描述**
    * **啟用模型**&#x200B;以[啟用模型](#enabling-disabling-a-content-fragment-model)
 
