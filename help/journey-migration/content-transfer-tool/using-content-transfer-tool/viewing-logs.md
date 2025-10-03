@@ -4,7 +4,7 @@ description: 在內容轉移工具中檢視移轉集記錄
 exl-id: aed1ac83-a2fb-425e-aca4-39cd0bb42fd3
 feature: Migration
 role: Admin
-source-git-commit: e1089810b3bf3db0cc440bb397e5549ade6eac37
+source-git-commit: 91f9bcafc087b6f9329d7a47509cc659714705ff
 workflow-type: tm+mt
 source-wordcount: '231'
 ht-degree: 36%
@@ -18,7 +18,7 @@ ht-degree: 36%
 >id="aemcloud_ctt_logs"
 >title="檢視記錄檔"
 >abstract="提取和攝入完成後，檢查記錄檔中是否有任何錯誤/警告。如有任何錯誤應立即處理，方法是處理回報的問題或聯絡 Adobe 支援人員。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=zh-Hant#troubleshooting" text="疑難排解"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html#troubleshooting" text="疑難排解"
 >additional-url="https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html" text="連絡 Adobe 支援人員"
 
 完成每個步驟（擷取和擷取）後，請檢查記錄檔並尋找錯誤。  如有任何錯誤應立即處理，方法是處理回報的問題或聯絡 Adobe 支援人員。

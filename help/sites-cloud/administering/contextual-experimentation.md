@@ -3,14 +3,14 @@ title: AEM as a Cloud Service中的內容實驗
 description: 瞭解如何使用實驗外掛程式，將實驗功能新增至您的網站。
 feature: Administering
 role: Admin
-source-git-commit: 598f05f6cb31395844b1a89cf6c0e34d5627352c
+source-git-commit: 66ee08babae1f6640158260af051f8ad5f9bde85
 workflow-type: tm+mt
-source-wordcount: '1796'
+source-wordcount: '1799'
 ht-degree: 0%
 
 ---
 
-# 概觀 {#overview}
+# AEM as a Cloud Service中的內容實驗 {#contextual-experimentation}
 
 >[!NOTE]
 >目前，內容實驗功能僅可透過Beta版計畫使用。 請聯絡Adobe支援或您的帳戶管理員以取得此測試版計畫的存取權。
@@ -55,7 +55,7 @@ ht-degree: 0%
 
 ### 實驗識別碼 {#experiment-identifier}
 
-開始之前，每個實驗都應該有自己的識別碼來追蹤和分析目的。 一個好的起點是為您的實驗想出一個好的唯一識別碼，將是「Experiment ID」。 實驗通常是線性編號，或相關至問題追蹤器或管理系統中的問題ID。 實驗ID通常使用專案的前置詞，例如：OPT-0134、EXP0004或CCX0076。
+開始之前，每個實驗都應該有自己的識別碼來追蹤和分析目的。 一個好的起點是為您的實驗想出一個好的唯一識別碼，將是「Experiment ID」。 實驗通常是線性編號，或相關至問題追蹤器或管理系統中的問題ID。 實驗ID通常使用專案的前置詞，例如： `OPT-0134`、`EXP0004`或`CCX0076`。
 
 ### 建立您的挑戰者頁面 {#create-challenger-page}
 
@@ -91,7 +91,7 @@ ht-degree: 0%
 
 對於每個實驗，流量會在所有變體（控制項和挑戰者）之間分割，並自動設定為偶數分佈。 因此，如果您有一個挑戰者，控制項和挑戰者之間會自動有平均50/50的分割。 如果您有兩個挑戰者，您將會自動看到三分之一流量分配給控制，以及每個挑戰者等等。
 
-您可以透過設定中繼資料來覆寫流量分割。 如需有關如何自訂實驗中使用的中繼資料的詳細資訊，請參閱下列[頁](https://github.com/adobe/aem-experience-decisioning/wiki/Experiments#authoring)
+您可以透過設定中繼資料來覆寫流量分割。 如需有關如何自訂實驗中使用的中繼資料的詳細資訊，請參閱下列[頁面](https://github.com/adobe/aem-experience-decisioning/wiki/Experiments#authoring)。
 
 ### 預覽和預備您的實驗變體 {#preview-stage-experiment}
 
