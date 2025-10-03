@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: f1030bf293ee78380bca7bd5d4266f9767677ad7
+source-git-commit: c0714a7b74cd223ad4a405934c89a3146fb8b5c4
 workflow-type: tm+mt
-source-wordcount: '1953'
+source-wordcount: '1954'
 ht-degree: 21%
 
 ---
@@ -79,7 +79,7 @@ Experience Cloud 標頭會始終顯示在畫面頂端。這是一個錨點，說
 
 #### Experience Manager {#experience-manager}
 
-選取標頭左側的Adobe Experience Cloud連結，即可導覽至Experience Manager解決方案的根目錄，以存取如[Cloud Manager](/help/onboarding/cloud-manager-introduction.md)、[Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)和[Software Distribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hant)之類的工具。
+選取標頭左側的Adobe Experience Cloud連結，即可導覽至Experience Manager解決方案的根目錄，以存取如[Cloud Manager](/help/onboarding/cloud-manager-introduction.md)、[Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)和[Software Distribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)之類的工具。
 
 ![全域導覽按鈕](assets/global-navigation.png)
 
@@ -117,7 +117,7 @@ Experience Cloud 標頭會始終顯示在畫面頂端。這是一個錨點，說
 
 ![環境切換器](assets/environment-switcher.png)
 
-對於Universal Editor，[如果您有可用的預覽服務，](/help/sites-cloud/authoring/sites-console/previewing-content.md)您也可以在標題&#x200B;**產品設定**&#x200B;下的生產與預覽環境之間切換。
+對於Universal Editor，在&#x200B;**Product Settings**&#x200B;標題下，有一個選項可在目前的Universal Editor生產版本和即將推出的預覽版本之間切換。
 
 ### 通用編輯器工具列 {#universal-editor-toolbar}
 

@@ -4,10 +4,10 @@ description: 以下是通用編輯器 2025.10.02 版的發行說明。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: f1030bf293ee78380bca7bd5d4266f9767677ad7
+source-git-commit: c0714a7b74cd223ad4a405934c89a3146fb8b5c4
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 80%
+source-wordcount: '188'
+ht-degree: 76%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 80%
 
 ## 新增功能 {#what-is-new}
 
-* [已在Experience Manager標頭工具列的](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)帳戶&#x200B;**功能表中新增**&#x200B;選項，以便在預覽和生產環境之間切換。
+* [已在Experience Manager標頭工具列的](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)帳戶&#x200B;**功能表中新增**&#x200B;選項，以便在目前的Universal Editor生產版本和即將推出的預覽版本之間切換。
 
 ## 早期採用功能 {#early-adopter}
 
