@@ -29,14 +29,14 @@ ht-degree: 32%
 
 ![正在發佈頁面](assets/publish-menu.png)
 
-1. 在Universal Editor中，點選或按一下Universal Editor工具列中的[ **Publish**&#x200B;圖示。](/help/sites-cloud/authoring/universal-editor/navigation.md#publish)
+1. 在Universal Editor中，點選或按一下Universal Editor工具列中的[&#x200B; **Publish**&#x200B;圖示。](/help/sites-cloud/authoring/universal-editor/navigation.md#publish)
 1. 如果您有可用的[預覽服務](/help/sites-cloud/authoring/sites-console/previewing-content.md)，您可以選擇將內容發佈到的位置： **[預覽](/help/sites-cloud/authoring/sites-console/previewing-content.md)** （如果有的話）或&#x200B;**發佈**。
 1. **專案**&#x200B;區段會列出出版物中包含的內容。 點選或按一下「**檢視**」以顯示詳細資料，包括：
    * **新的**&#x200B;專案尚未發佈。
    * 已發佈&#x200B;**已修改的**&#x200B;內容，但自上次發佈後已修改。
    * **已發佈**&#x200B;自該發佈以來未曾修改的內容。
 
-   視需要點選或按一下這些專案旁的核取方塊，以包含/排除它們。 點選或按一下「延伸&#x200B;****」，檢視三個類別總計中包含的個別專案，以及能夠個別加入/排除它們。
+   視需要點選或按一下這些專案旁的核取方塊，以包含/排除它們。 點選或按一下「延伸&#x200B;**&#x200B;**」，檢視三個類別總計中包含的個別專案，以及能夠個別加入/排除它們。
 
    ![發佈專案](assets/publish-items.png)
 
