@@ -54,7 +54,7 @@ The initiator of such actions can check their status in a new UI at `/mnt/overla
 
 [WKND](https://wknd.site/) (新的 AEM 參考網站) 已更新並發布，以反映使用 AEM 以及 AEM 所提供全套功能、組件和部署模型來建立網站的最佳實務。新參考網站及[隨附的教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hant)涵蓋基礎的主題，例如專案設定、核心元件、可編輯的範本、用戶資料庫以及使用 Adobe Experience Manager Sites 的元件開發。
 
-先前，We.Retail 預設會隨 AEM 一起安裝 (在生產模式下啟動時除外)。在 AEM as a Cloud Service 中，依預設不會安裝參考網站。相反地，[ git repo](https://github.com/adobe/aem-guides-wknd/) 和[隨附的教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hant)提供了更新的 WKND 參考網站代碼。
+先前，We.Retail 預設會隨 AEM 一起安裝 (在生產模式下啟動時除外)。在 AEM as a Cloud Service 中，依預設不會安裝參考網站。相反地，[&#x200B; git repo](https://github.com/adobe/aem-guides-wknd/) 和[隨附的教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hant)提供了更新的 WKND 參考網站代碼。
 
 ## 執行階段時不適用的功能 {#capabilities-not-available-at-runtime}
 
