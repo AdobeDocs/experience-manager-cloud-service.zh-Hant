@@ -6,9 +6,9 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
 source-git-commit: f5510d83ed2ff52496fd7e83ba29010684731938
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1957'
-ht-degree: 46%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 46%
 
 ## 發行日期 {#release-date}
 
-[!DNL Adobe Experience Manager]作為[!DNL Cloud Service]目前功能版本(2025.9.0)的發行日期是2025年9月25日。 下一個功能版本(2025.10.0)計畫於2025年10月30日發行。
+[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 最新功能版本 (2025.9.0) 的發行日期為 2025 年 9 月 25 日。下一個功能版本 (2025.10.0) 規劃於 2025 年 10 月 30 日發行。
 
 ## 維護版本發行說明 {#maintenance}
 
@@ -40,23 +40,23 @@ ht-degree: 46%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440931?quality=12&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### Experience Manager Sites發行前版本的新功能 {#prerelease-sites}
+### Experience Manager Sites 預發行的新功能 {#prerelease-sites}
 
-AEM內容片段的內容模型編輯器已經過現代化，以與AEM中的其他React頻譜型介面保持一致。 其使用者介面實作和擴充性模型現在與內容片段編輯器和通用編輯器一致。 現在，從新的內容模型管理員UI開啟新模型編輯器時，預設會使用它。 在觸控式UI中開啟內容模型會開啟觸控式UI編輯器，並提供選項供您試用新編輯器。
+AEM 內容片段的內容模型編輯器經過現代化，與 AEM 中其他 React Spectrum 型介面保持一致。其使用者介面實施方式和擴充性模型，現在與內容片段編輯器及通用編輯器一致。現在，從新的內容模型管理員使用者介面開啟時，預設會使用新的模型編輯器。在觸控式使用者介面中開啟內容模型，會開啟觸控式使用者介面編輯器，並建議您試用新的編輯器。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Assets檢視中的新功能 {#new-features-assets-view}
+### 資產視圖的新功能 {#new-features-assets-view}
 
-**Dynamic Media範本中含子字串的增強文字格式**
+**增強 Dynamic Media 範本中子字串的文字格式**
 
-您現在可以套用格式至Dynamic Media範本文字圖層中的子字串。 選取的文字或片語會被視為單獨的圖層，讓您可調整其字型、字型大小、顏色等。 子字串層已引數化，因此您可以使用範本的傳遞URL即時更新
+您現在可以將格式套用至 Dynamic Media 範本文字圖層中的子字串。所選取的單字或片語會視為獨立的圖層，您可以調整其字型、字體大小、顏色等。子字串圖層已參數化，因此您可以使用範本的傳遞 URL 進行即時更新
 
 ### 具有 OpenAPI 功能的 Dynamic Media 新功能 {#new-features-dynamic-media-with-openapi}
 
@@ -66,7 +66,7 @@ AEM內容片段的內容模型編輯器已經過現代化，以與AEM中的其�
 
 >[!NOTE]
 >
->此功能是以「有限可用性」功能提供。 您可以[建立並提交 Adobe 客戶支援案例](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html)，以針對您的部署將其啟用。
+>此功能目前以「有限開放」的形式提供。您可以[建立並提交 Adobe 客戶支援案例](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html)，以針對您的部署將其啟用。
 
 <!--
 
@@ -82,7 +82,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -90,23 +90,23 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 ### Experience Manager Forms 的新功能 {#new-features-forms}
 
-**呼叫SharePoint清單附件的表單資料模型工作流程步驟**
+**SharePoint 清單附件的叫用表單資料模型工作流程步驟**
 
-「叫用表單資料模型」工作流程步驟現在支援在SharePoint清單型表單資料模型中處理Base64編碼附件陣列的工作流程端中繼資料。 透過此增強功能，工作流程步驟可以傳遞、儲存及擷取每個附件的中繼資料，例如檔案名稱、MIME型別和自訂屬性。 此功能可讓您進行更全面的資料管理，並有助於順暢的下游整合。 如需詳細資訊，請參閱SharePoint清單附件的叫用表單資料模型工作流程步驟中的[增強支援](/help/forms/aem-forms-workflow-step-reference.md#invoke-form-data-model-fdm-service-step)。
+現在，「叫用表單資料模型」工作流程步驟支援處理 SharePoint 清單型表單資料模型中 Base64 編碼附件陣列的工作流程端後設資料。透過此增強功能，工作流程步驟可以傳遞、儲存及檢索每個附件的後設資料，例如檔案名稱、MIME 類型和自訂屬性。此功能讓您能夠進行更全面的資料管理，並有助於順暢的下游整合。如需詳細資訊，請參閱[增強支援 SharePoint 清單附件的叫用表單資料模型工作流程步驟](/help/forms/aem-forms-workflow-step-reference.md#invoke-form-data-model-fdm-service-step)。
 
 ### AEM Forms 的預發行功能
 
 **規則編輯器增強功能**
 
-規則編輯器現在支援增強型導覽，並允許在輸入引數中使用函式和數學運算式。
+規則編輯器現在支援增強型導覽，並允許在輸入參數中使用函數和數學運算式。
 
-**事件承載支援的增強型導覽**
+**支援事件承載的增強型導覽**
 
-Invoke Service處理常式中的`Navigate To`動作現在支援`EVENT_PAYLOAD`，可讓表單作者根據事件回應設定後續動作。 此增強功能提供在設計提交後工作流程時更大的彈性，確保更順暢的轉換和更個人化的使用者體驗。 如需詳細資訊，請參閱[支援事件承載的增強型導覽](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service)。
+叫用服務處理常式中的 `Navigate To` 動作現在支援 `EVENT_PAYLOAD`，讓表單作者能夠根據事件回應設定後續動作。此增強功能讓提交後工作流程之設計擁有更大的彈性，確保轉變過程更加順暢，並提供更加個人化的使用者體驗。如需詳細資訊，請參閱[支援事件承載的增強型導覽](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service)。
 
-輸入引數中的&#x200B;**函式和數學運算式支援**
+**支援在輸入參數中使用函數和數學運算式**
 
-輸入引數現在支援函式呼叫和數學運算式，讓表單作者可直接傳遞動態計算的值。 此增強功能可簡化規則設定、免除額外欄位的需求，並讓表單更能適應複雜的邏輯和計算驅動案例。 如需詳細資訊，請參閱輸入引數[中的](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters)函式與數學運算式支援。
+輸入參數現在支援函數呼叫和數學運算式，讓表單作者能夠直接傳遞動態運算所得出的值。此增強功能可以簡化規則設定，不需要增加額外的欄位，並讓表單更能適應需要複雜邏輯判斷以及由複雜計算驅動的情境。如需詳細資訊，請參閱[支援在輸入參數中使用函數和數學運算式](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters)。
 
 ### 全新 AEM Forms 搶先體驗功能 {#forms-new-early-access-features}
 
@@ -114,17 +114,17 @@ AEM Forms 搶先體驗方案為您提供獨一無二的機會，享有尖端創�
 
 這些發行說明列出的是目前版本提供的創新功能。如需搶先體驗方案提供的創新功能之完整清單，請參閱 [AEM Forms 搶先體驗方案文件](/help/forms/early-access-ea-features.md)。
 
-**互動式通訊編輯器中的PDF預覽**
+**互動式通訊編輯器中的 PDF 預覽**
 
-使用者可以預覽沒有資料的Interactive Communications PDF、本機JSON資料檔案或資料模型中的資料，啟用彈性的資料導向測試。 如需詳細資訊，請參閱[互動式通訊編輯器中的PDF預覽](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md)。
+使用者可以預覽不包含資料、包含本機 JSON 資料檔案，或包含來自資料模型之資料的互動式通訊 PDF，藉此彈性地進行資料驅動測試。如需詳細資訊，請參閱[互動式通訊編輯器中的 PDF 預覽](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md)。
 
 **互動式通訊支援自訂字型**
 
-「自訂字型」功能可讓使用者在互動式通訊中嵌入自訂或組織核准的字型，以確保跨裝置和平台呈現一致且品牌化的PDF。 如需詳細資訊，請參閱[互動式通訊支援自訂字型](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md)。
+透過自訂字型功能，使用者能夠在互動式通訊中嵌入自訂或組織核准的字型，確保在各種裝置和平台上呈現一致的品牌化 PDF 渲染。如需詳細資訊，請參閱[互動式通訊支援自訂字型](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md)。
 
-**匯入和匯出互動式通訊**
+**匯入與匯出互動式通訊**
 
-此功能可讓您在不同環境中移轉及重複使用互動式通訊。 您現在可以從一個環境匯出互動式通訊及其相關片段和資料模型，並將其匯入另一個環境。 如需詳細資訊，請參閱[匯入和匯出互動式通訊](/help/forms/interactive-communication/import-and-export-interactive-communications.md)。
+透過這項功能，可以在不同的環境之間移轉及重複使用互動式通訊。您現在可以從一個環境中匯出互動式通訊及其相關片段和資料模型，然後將這些匯入另一個環境中。如需詳細資訊，請參閱[匯入與匯出互動式通訊](/help/forms/interactive-communication/import-and-export-interactive-communications.md)。
 
 <!--
 **Forms Optimization opportunities**
@@ -149,25 +149,25 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 
 **暫停自動維護更新**
 
-上線日、直播活動、銷售高峰 — 這些時刻無法中斷。 [我們新的自助服務功能](/help/implementing/deploying/quiet-hours-update-free-periods.md)會在重要時停止自動維護更新，讓您的團隊保持專注。
+上線日、現場活動、銷售高峰，這些時刻無法中斷。[我們新的自助服務功能](/help/implementing/deploying/quiet-hours-update-free-periods.md)會在重要時刻停止自動維護更新，讓您的團隊保持專注。
 
-* 安靜時間：封鎖每天在設定時間進行的自動維護。 適合工作時間、夜間跑步或早上切換。
-* 免更新期間：封鎖整週的自動維護。 將其用於啟動、促銷活動或每年凍結。
+* 暫停更新時段：在每天固定的時段內停止自動維護。適合在工作時間、夜間執行或早晨切換時使用。
+* 暫停更新期間：一整週皆停止自動維護。在發佈期間、促銷活動或年度凍結時使用。
 
 >[!NOTE]
 >
->9月25日以有限可用性功能提供。
->&#x200B;>請傳送電子郵件給[aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com)，讓它在您的程式中啟動。
+>於 9 月 25 日以「有限開放」功能的形式提供。
+>>寄送電子郵件至 [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com)，以便在您的方案中啟動此功能。
 
-### 適用於Eclipse的AEM開發人員工具新版本 {#aem-develeper-tools-for-eclipse}
+### Eclipse 適用的 AEM 開發人員工具新版本 {#aem-develeper-tools-for-eclipse}
 
-適用於Eclipse的AEM開發人員工具1.4.0版已發行。 此版本新增對Eclipse IDE 2022-12或更新版本的支援，且已透過目前版本(2025-09)驗證。 此工具現在可搭配新版AEM Project Archetype使用，並整合了Sling IDE Tooling 1.3.0的改良功能。
+Eclipse 適用的 AEM 開發人員工具 1.4.0 版已發行。此版本新增對 Eclipse IDE 2022-12 或以上版本的支援，且已通過最新版本 (2025-09) 的驗證。此工具現在可以搭配新版 AEM 專案原型使用，並整合 Sling IDE Tooling 1.3.0 的改良功能。
 
-從[Eclipse Marketplace](https://marketplace.eclipse.org/content/aem-developer-tools-eclipse)安裝，並參閱[AEM開發人員工具頁面](https://eclipse.adobe.com)以取得詳細資訊。
+從 [Eclipse Marketplace](https://marketplace.eclipse.org/content/aem-developer-tools-eclipse) 進行安裝，並參閱 [AEM 開發人員工具頁面](https://eclipse.adobe.com)了解詳細資訊。
 
-### Java API 即將淘汰 {#java-api-deprecation}
+### Java API 即將棄用 {#java-api-deprecation}
 
-8月31日，有數個過時的API標示為要移除，因此不應再加以參照。 如果在程式碼中偵測到已棄用的API使用方式，您將會收到動作中心通知，11月13日後，Cloud Manager建置期間將會出現通知，強調移除使用方式的重要性。 請參閱[棄用文章](/help/release-notes/deprecated-removed-features.md#aem-apis)，了解完整的詳細資訊，但為了方便起見，這些 API 條列如下：
+數個已棄用的 API 已標記要於 8 月 31 日移除，因此不應再參照。若在您的程式碼中偵測到使用已棄用 API 的情形，您會收到行動中心通知，而在 11 月 13 日之後，Cloud Manager 建置期間會顯示相關通知，強調不再使用此類 API 的重要性。請參閱[棄用文章](/help/release-notes/deprecated-removed-features.md#aem-apis)，了解完整的詳細資訊，但為了方便起見，這些 API 條列如下：
 
 +++ 展開以查看 Java API 淘汰內容
 
@@ -199,21 +199,21 @@ OSGi properties:
 
 -->
 
-### Java 11 執行階段棄用 {#java11-runtime-deprecation}
+### 棄用 Java 11 執行階段 {#java11-runtime-deprecation}
 
-已棄用&#x200B;*Java 11執行階段*，且大部分環境已升級至效能較高的&#x200B;**Java 21執行階段**。
+*Java 11 執行階段*&#x200B;已棄用，且大多數環境已升級至效能更佳的 **Java 21 執行階段**。
 
-如果因為不受支援的相依性而無法升級您的環境（請參閱[Java 21執行階段需求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)），您應該已經收到來自Adobe的電子郵件，其中包含後續步驟。 如該處所述，Adobe已於2025年9月18日&#x200B;**升級**&#x200B;開發&#x200B;**和** RDE **環境**，以便您驗證網站和程式並解決任何問題。 **階段**&#x200B;和&#x200B;**生產**&#x200B;的升級將於&#x200B;**2025年10月14日**&#x200B;進行。
+若您的環境因不支援相依性而無法升級 (請參閱 [Java 21 執行階段要求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements))，您應該已收到 Adobe 寄送的電子郵件，向您說明後續步驟。如該內容所述，Adobe 已於 **2025 年 9 月 18 日**&#x200B;升級 **Dev** 和 **RDE** 環境，因此您可以驗證您的網站和程序，並解決任何遇到的問題。**中繼**&#x200B;和&#x200B;**生產**&#x200B;將於 **2025 年 10 月 14 日**&#x200B;進行升級。
 
 >[!NOTE]
 >
->執行階段版本與您的程式碼組建版本不同。 雖然我們建議您使用Java 21建置，但目前仍接受Java 11建置。 未來會另行公告 Java 11 版本的棄用通知。
+>執行階段版本與您的程式碼建置版本是各自獨立的。雖然我們建議使用 Java 21 進行建置，但目前仍然接受 Java 11 的建置版本。未來會另行公告 Java 11 版本的棄用通知。
 
 ### 執行 AEM Java 記錄設定原則 {#logconfig-policy}
 
 如 4 月的發行說明中所述，AEM Java 記錄必須遵循標準格式，以確保在所有客戶環境中皆進行可靠的監視。不再支援自訂記錄設定 (例如變更記錄格式、輸出檔案或預設記錄等級)。記錄必須保持導向預設檔案，並且必須保留 AEM 產品程式碼的預設記錄等級。如需完整詳情，請參閱[記錄文章](/help/implementing/developing/introduction/logging.md#configuration-loggers)。
 
-從&#x200B;**10月30日**&#x200B;開始，將忽略任何不支援的自訂記錄覆寫。 根據我們的分析，大多數客戶將不會受影響，而 Adobe 會直接聯絡其目前設定可能受影響的客戶。
+從 **10 月 30 日**&#x200B;開始，將忽略所有不受支援的自訂記錄覆寫。根據我們的分析，大多數客戶將不會受影響，而 Adobe 會直接聯絡其目前設定可能受影響的客戶。
 
 請審閱所有取決於自訂記錄行為的下游流程，並將其更新。例如：
 
@@ -234,11 +234,11 @@ OSGi properties:
 
 我們針對正式生產網站提供數量有限的 AEM Publish Delivery 或 Edge Delivery Services 專案機會。若您有興趣參與，或想了解更多相關資訊，請傳送電子郵件至 [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com)，並簡要描述您的使用案例。
 
-### 適用於Edge Delivery Services的Edge驗證(Beta計畫) {#edge-authentication}
+### Edge Delivery Services 的 Edge 驗證 (Beta 版方案) {#edge-authentication}
 
-Edge驗證可讓您將存取Edge Delivery Services頁面的許可權限製為僅供已透過您的身分提供者(IdP)驗證的使用者存取。 這是透過部署OpenID Connect (OIDC)組態YAML檔案來達成。
+透過 Edge 驗證，您可以限制 Edge Delivery Services 頁面的存取權，僅允許通過您的身分提供者 (IdP) 驗證的使用者存取。部署 OpenID Connect (OIDC) 設定 YAML 檔案即可做到上述動作。
 
-如有需要，請傳送電子郵件給[aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com)，提供使用案例的簡短說明，以及您可能會有的任何問題。
+若有興趣，請寄送電子郵件至 [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com)，簡短說明您的使用案例以及任何問題。
 
 <!--
 ### CDN Configuration for Edge Delivery Services (Beta Program) {#cdn-eds-beta}
@@ -249,13 +249,13 @@ Now in beta, youcan deploy a config pipeline for features including CDN origin s
 
 -->
 
-### Canary生產部署，以便在接受即時流量之前測試程式碼(Beta計畫) {#canary-beta}
+### Canary 生產部署，以便在接受即時流量之前測試程式碼 (Beta 版方案) {#canary-beta}
 
-在將生產組建公開給使用者之前，先使用僅限內部的測試流量來驗證它。 送貨至生產環境、僅路由Canary流量（使用特殊標題）、監控行為，然後升級至即時流量或回覆，而不會影響客戶。
+向一般使用者公開之前，先使用僅限內部的測試流量驗證生產建置版本。運送至生產環境、僅路由 Canary 流量 (使用特殊標頭)、監視行為，然後升級至即時流量或復原，而不會影響客戶。
 
-將您的程式碼發行部署到生產環境，但在決定是否接受即時流量和復原之前，請將其限製為僅內部測試流量。
+將您的程式碼版本部署至生產環境，但在決定要接受即時流量或復原之前，將其限制為僅限內部測試流量。
 
-電子郵件[aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canary-deployments-beta@adobe.com)以要求存取權並分享意見。
+寄送電子郵件至 [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canary-deployments-beta@adobe.com) 來請求存取權及提供意見回饋。
 
 ### RDE 快照 (Alpha 方案) {#rde-snapshot-program}
 
@@ -271,9 +271,9 @@ Now in beta, youcan deploy a config pipeline for features including CDN origin s
 
 如欲了解更多相關資訊，請參閱[記錄轉送文件](/help/implementing/developing/introduction/log-forwarding.md)。
 
-### 擴充應用程式效能監控(APM) (Alpha程式) {#apm-alpha}
+### 擴充應用程式效能監視 (APM) (Alpha 版方案) {#apm-alpha}
 
-為方便觀察，AEM Cloud Service目前支援Adobe提供的[New Relic One](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic)和客戶管理的[Dynatrace](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace)。 在我們探索其他APM選項的支援時，請透過電子郵件寄給我們：[aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com)，請連絡您偏好的廠商或技術，並提供使用案例。
+為便於觀察，AEM Cloud Service 目前支援 Adobe 提供的 [New Relic One](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) 和客戶管理的 [Dynatrace](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace)。由於我們仍在探索其他 APM 選項支援，請寄送電子郵件至 [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) 與我們聯絡，告知您偏好的供應商或技術，並提供使用案例。
 
 
 ## [!DNL Experience Manager] Guides {#guides}
