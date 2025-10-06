@@ -5,10 +5,10 @@ exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 3761019b42ddc4b3a6cc904afe91b47eb3d99ac6
 workflow-type: tm+mt
-source-wordcount: '527'
-ht-degree: 100%
+source-wordcount: '526'
+ht-degree: 97%
 
 ---
 
@@ -21,12 +21,12 @@ AEM Sites as a Cloud Service 提供體驗管理功能，作為雲端原生 AEM a
 >本文件著重說明 AEM Sites 的顯著變更。有關 AEM as a Cloud Service 和其他模組的大致變更，請參閱：
 >
 >* [Adobe Experience Manager as a Cloud Service 簡介](/help/overview/introduction.md)
->* [AEM as a Cloud Service 概覽 - 新增功能與不同之處](/help/overview/what-is-new-and-different.md)
+>* [AEM as a Cloud Service 概觀 - 新增功能與不同之處](/help/overview/what-is-new-and-different.md)
 >* Adobe Experience Manager as a Cloud Service [架構](/help/overview/architecture.md)
 >* [AEM as a Cloud Service 重大變更 (發行說明)](/help/release-notes/aem-cloud-changes.md)
 >* [AEM Assets as a Cloud Service 重大變更](/help/assets/assets-cloud-changes.md)
 >* [AEM Assets as a Cloud Service 簡介](/help/assets/overview.md)
->* [Adobe Experience Manager as a Cloud Service 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=zh-Hant)
+>* [Adobe Experience Manager as a Cloud Service 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 
 AEM Sites as a Cloud Service 中的變更與新增內容如下：
 
@@ -40,7 +40,11 @@ AEM Sites as a Cloud Service 中的變更與新增內容如下：
 * 行動頁面
 * 推出頁面
 
-此類操作的發起者可以在新 UI 中檢查其狀態：`/mnt/overlay/dam/gui/content/asyncjobs.html`。
+<!--
+The initiator of such actions can check their status in a new UI at `/mnt/overlay/dam/gui/content/asyncjobs.html`.
+-->
+
+您可以從[背景操作儀表板](/help/operations/asynchronous-jobs.md)檢視非同步作業的狀態。
 
 >[!NOTE]
 >
