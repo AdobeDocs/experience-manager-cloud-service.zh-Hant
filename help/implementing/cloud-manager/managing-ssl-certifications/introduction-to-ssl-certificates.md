@@ -5,7 +5,7 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: fdd86b966f0480c00b7cd975d63a48b82fb1d027
+source-git-commit: 90527b1a160e6bde35562d58407a9056ae1f0a3a
 workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 17%
@@ -156,7 +156,7 @@ SSL 憑證文件必須是 PEM 格式才能與 Cloud Manager 一起安裝。PEM�
 
 ## 已安裝SSL憑證數量的限制 {#limitations}
 
-在任何指定時間，Cloud Manager最多可支援50個已安裝的憑證。 這些憑證可以與您的計畫中的一個或多個環境相關聯，並且還包括任何過期的憑證。
+在任何指定時間，Cloud Manager最多可支援70個已安裝的憑證。 這些憑證可以與您的計畫中的一個或多個環境相關聯，並且還包括任何過期的憑證。
 
 如果您已達到限制，請檢視您的憑證並考慮刪除任何過期的憑證。 或者，將多個網域群組在同一個憑證中，因為一個憑證可以涵蓋多個網域（最多100個SAN）。
 
