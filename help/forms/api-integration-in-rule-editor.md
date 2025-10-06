@@ -4,18 +4,22 @@ description: 瞭解規則編輯器中Invoke Service的最新增強功能，包�
 feature: Adaptive Forms, Core Components, Edge Delivery Services
 role: User, Developer
 level: Beginner, Intermediate
-keywords: 在規則編輯器中整合API，叫用服務增強功能
+keywords: 在規則編輯器中整合 API、叫用服務增強功能
 exl-id: fc51f86d-e672-4513-b473-6700757a0c3d
-source-git-commit: 80dde7ddaa08d752391b4004d7c93e5baac9716e
+source-git-commit: 962e31769c013c87bd3089b20601c258fec22baa
 workflow-type: tm+mt
-source-wordcount: '1021'
-ht-degree: 0%
+source-wordcount: '1040'
+ht-degree: 1%
 
 ---
 
 # 在規則編輯器中整合API
 
 <span>規則編輯器中的Integrating API在早期採用者程式之下。 您可以從您的正式電子郵件ID寫信到`aem-forms-ea@adobe.com`，以加入早期採用者程式並請求存取權能。</span>
+
+>[!NOTE]
+>
+> 視覺化規則編輯器支援根據核心元件和Edge Delivery Services Forms在最適化Forms中整合API。
 
 最適化Forms中的視覺化規則編輯器支援直接API整合，而不需要建立表單資料模型。 您可以輸入API URL （JSON格式）或透過cURL命令匯入設定，以連線至API端點。 整合後，**Invoke Service**&#x200B;動作可用於呼叫API。
 
@@ -36,7 +40,7 @@ ht-degree: 0%
 | **複雜度** | 更高的設定工作量（需要對應和設定） | 簡單輕量 |
 | **最適合** | 具有多種表單的企業或大型使用案例 | 小型表單、原型或一次性API呼叫 |
 
-## API整合設定
+## API 整合設定
 
 底下熒幕擷圖顯示API整合設定視窗：
 
