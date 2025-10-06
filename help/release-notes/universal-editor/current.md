@@ -4,10 +4,10 @@ description: 以下是通用編輯器 2025.10.02 版的發行說明。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: c0714a7b74cd223ad4a405934c89a3146fb8b5c4
+source-git-commit: 997eb9bbc3810af8dde14a77002ac0370c92af99
 workflow-type: tm+mt
-source-wordcount: '188'
-ht-degree: 76%
+source-wordcount: '209'
+ht-degree: 68%
 
 ---
 
@@ -15,6 +15,10 @@ ht-degree: 76%
 # 通用編輯器 2025.10.02 版發行說明 {#release-notes}
 
 此為通用編輯器 2025 年 10 月 2 日版本的發行說明。
+
+>[!TIP]
+>
+>如果您想在發行之前測試&#x200B;**即將推出的**&#x200B;通用編輯器功能，請參閱[通用編輯器預覽發行說明。](/help/release-notes/universal-editor/preview.md)
 
 >[!TIP]
 >
