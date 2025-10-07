@@ -4,7 +4,7 @@ description: 瞭解如何使用適用於Eclipse的AEM開發人員工具，這是
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
+source-git-commit: ba42d58a4e55efdada35cc7706d736a7314ba743
 workflow-type: tm+mt
 source-wordcount: '1138'
 ht-degree: 2%
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 ## 概觀 {#overview}
 
-_適用於Eclipse的Experience Manager Developer Tools_&#x200B;是以Apache授權2所發行適用於Apache Sling[&#128279;](https://sling.apache.org/documentation/development/ide-tooling.html)的Eclipse外掛程式為基礎的Eclipse外掛程式。
+_適用於Eclipse的Experience Manager Developer Tools_&#x200B;是以Apache授權2所發行適用於Apache Sling[的](https://sling.apache.org/documentation/development/ide-tooling.html)Eclipse外掛程式為基礎的Eclipse外掛程式。
 
 它提供數項功能，讓AEM開發更容易：
 
@@ -32,7 +32,7 @@ _適用於Eclipse的Experience Manager Developer Tools_&#x200B;是以Apache授�
 使用AEM開發人員工具之前，您需要：
 
 * 下載並安裝適用於Enterprise Java™開發人員的[Eclipse IDE](https://www.eclipse.org/downloads/packages/)。
-* 依照[Eclipse常見問答集](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F)中的說明，編輯您的`eclipse.ini`設定檔，設定Eclipse安裝，確保您至少有1 GB的棧積記憶體。
+* 依照`eclipse.ini`Eclipse常見問答集[中的說明，編輯您的](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F)設定檔，設定Eclipse安裝，確保您至少有1 GB的棧積記憶體。
 
 >[!NOTE]
 >
@@ -42,7 +42,10 @@ _適用於Eclipse的Experience Manager Developer Tools_&#x200B;是以Apache授�
 
 當您符合上述[需求](#requirements)時，您可以依照下列方式安裝外掛程式：
 
-1. 開啟[AEM Developer Tools網站](https://eclipse.adobe.com/com.adobe.granite.ide.p2update-1.3.0.zip)。<!-- RB: OLD URL was (https://eclipse.adobe.com/aem/dev-tools/) This URL is generating a 404 error in the experience-manager-cloud-service.en LinkCheckExl report . The website appears to be dead; no redirects at all. Clicking "Installation Link" does not do anything. Only the link "Download archive" works. The "Online Documentation" link just takes you to the AEM Docs home page. Not sure if this topic is still needed?? -->
+1. 開啟[AEM開發人員工具網站](https://eclipse.adobe.com/)。
+
+<!-- had to update the link again - was https://eclipse.adobe.com/com.adobe.granite.ide.p2update-1.3.0.zip -->
+<!-- RB: OLD URL was (https://eclipse.adobe.com/aem/dev-tools/) This URL is generating a 404 error in the experience-manager-cloud-service.en LinkCheckExl report . The website appears to be dead; no redirects at all. Clicking "Installation Link" does not do anything. Only the link "Download archive" works. The "Online Documentation" link just takes you to the AEM Docs home page. Not sure if this topic is still needed?? -->
 
 1. 複製&#x200B;**安裝連結**。
 
@@ -126,8 +129,8 @@ _適用於Eclipse的Experience Manager開發工具_&#x200B;提供AEM觀點，讓
 
 1. 請依照指示建立[範例多模組專案](#sample-multi-module-project)，您已為您建立下列專案，這些專案允許健康地分離問題：
 
-   * `/apps`和`/etc`內容的`PROJECT.ui.apps`
-   * 已編寫之`/content`的`PROJECT.ui.content`
+   * `PROJECT.ui.apps`和`/apps`內容的`/etc`
+   * 已編寫之`PROJECT.ui.content`的`/content`
    * 適用於Java™套件組合的`PROJECT.core` (當您想要新增Java™程式碼時，這些套件組合會變得有趣起來)
    * 整合測試的`PROJECT.it.launcher`和`PROJECT.it.tests`
 
@@ -218,7 +221,7 @@ Eclipse會下載必要的相依性。 這可能需要一段時間。
 
 Eclipse網站的官方Apache Sling IDE工具提供您實用資訊：
 
-* 適用於Eclipse **的[** Apache Sling IDE工具使用手冊](https://sling.apache.org/documentation/development/ide-tooling.html)，此檔案會引導您瞭解AEM開發工具支援的整體概念、伺服器整合和部署功能。
+* 適用於Eclipse [**的** Apache Sling IDE工具使用手冊](https://sling.apache.org/documentation/development/ide-tooling.html)，此檔案會引導您瞭解AEM開發工具支援的整體概念、伺服器整合和部署功能。
 * [疑難排解區段](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting)。
 * [已知問題清單](https://sling.apache.org/documentation/development/ide-tooling.html#known-issues)。
 
