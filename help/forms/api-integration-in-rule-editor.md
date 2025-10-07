@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: 在規則編輯器中整合 API、叫用服務增強功能
 exl-id: fc51f86d-e672-4513-b473-6700757a0c3d
-source-git-commit: 962e31769c013c87bd3089b20601c258fec22baa
+source-git-commit: 0dba0003d8b13631e91147fa08c3b986c11b61d3
 workflow-type: tm+mt
-source-wordcount: '1040'
+source-wordcount: '1027'
 ht-degree: 1%
 
 ---
@@ -19,17 +19,13 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-> 視覺化規則編輯器支援根據核心元件和Edge Delivery Services Forms在最適化Forms中整合API。
+> 視覺化規則編輯器支援Adaptive Forms中的API整合(根據核心元件和在Universal Editor[中編寫的](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)Edge Delivery Services Forms)。
 
 最適化Forms中的視覺化規則編輯器支援直接API整合，而不需要建立表單資料模型。 您可以輸入API URL （JSON格式）或透過cURL命令匯入設定，以連線至API端點。 整合後，**Invoke Service**&#x200B;動作可用於呼叫API。
 
 表單欄位可以直接對應到API設定中定義的輸入引數。 同樣地，對於對應的API回應，可以使用&#x200B;**事件裝載**&#x200B;選項將輸出引數對應至表單欄位。
 
 此外，視覺規則編輯器可讓您在叫用服務時定義&#x200B;**success**&#x200B;和&#x200B;**failure處理常式**。 成功處理常式會指定要在成功的API呼叫後執行的動作，而失敗處理常式會定義發生錯誤時表單的回應方式。
-
->[!NOTE]
->
-> 規則編輯器中的API整合也適用於在Universal Editor[中編寫的](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)Edge Delivery Services Forms。
 
 ## 比較： API整合方法
 
