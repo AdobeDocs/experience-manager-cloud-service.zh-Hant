@@ -4,12 +4,13 @@ description: 瞭解如何使用適用於Eclipse的AEM開發人員工具，這是
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: ba42d58a4e55efdada35cc7706d736a7314ba743
+source-git-commit: 676a10a98f850dbc803b2c7b367a61fce51089f4
 workflow-type: tm+mt
-source-wordcount: '1138'
+source-wordcount: '1228'
 ht-degree: 2%
 
 ---
+
 
 # Eclipse 適用的 AEM 開發人員工具{#aem-developer-tools-for-eclipse}
 
@@ -31,25 +32,24 @@ _適用於Eclipse的Experience Manager Developer Tools_&#x200B;是以Apache授�
 
 使用AEM開發人員工具之前，您需要：
 
-* 下載並安裝適用於Enterprise Java™開發人員的[Eclipse IDE](https://www.eclipse.org/downloads/packages/)。
-* 依照`eclipse.ini`Eclipse常見問答集[中的說明，編輯您的](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F)設定檔，設定Eclipse安裝，確保您至少有1 GB的棧積記憶體。
+* 下載並安裝適用於Enterprise Java和Web開發人員的[Eclipse IDE。](https://www.eclipse.org/downloads/packages/)
+   * 適用於Eclipse的AEM Developer Tools 1.4.0版相容於Eclipse 2022-12 (4.26)或更新版本，且需要Java 17或更新版本才能執行。
+* 依照`eclipse.ini`Eclipse常見問答集[的說明，編輯您的](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F)設定檔，設定Eclipse安裝以確保您至少有1 GB的棧積記憶體。
 
 >[!NOTE]
 >
->在macOS上，您必須用滑鼠右鍵按一下&#x200B;**Eclipse.app**，然後選取&#x200B;**顯示封裝內容**&#x200B;以尋找您的&#x200B;`eclipse.ini`**。**
+>在macOS上，您必須用滑鼠右鍵按一下&#x200B;**Eclipse.app**，然後選取&#x200B;**顯示封裝內容**&#x200B;以尋找您的`eclipse.ini`。
 
 ## 如何安裝適用於Eclipse的AEM開發人員工具 {#how-to-install-the-aem-developer-tools-for-eclipse}
 
-當您符合上述[需求](#requirements)時，您可以依照下列方式安裝外掛程式：
+當您符合上述[需求](#requirements)時，您可以依照下列方式安裝開發人員工具外掛程式：
 
-1. 開啟[AEM開發人員工具網站](https://eclipse.adobe.com/)。
-
-<!-- had to update the link again - was https://eclipse.adobe.com/com.adobe.granite.ide.p2update-1.3.0.zip -->
-<!-- RB: OLD URL was (https://eclipse.adobe.com/aem/dev-tools/) This URL is generating a 404 error in the experience-manager-cloud-service.en LinkCheckExl report . The website appears to be dead; no redirects at all. Clicking "Installation Link" does not do anything. Only the link "Download archive" works. The "Online Documentation" link just takes you to the AEM Docs home page. Not sure if this topic is still needed?? -->
+1. 開啟[AEM Developer Tools網站。](https://eclipse.adobe.com/)
 
 1. 複製&#x200B;**安裝連結**。
 
-   您也可以下載封存，而不使用安裝連結。 此方法允許離線安裝，但您不會以這種方式收到遺漏自動更新通知。
+   * 您也可以下載封存，而不使用安裝連結。
+   * 此方法允許離線安裝，但您不會收到自動更新通知。
 
 1. 在Eclipse中，開啟&#x200B;**說明**&#x200B;功能表。
 1. 按一下&#x200B;**安裝新軟體**。
@@ -59,15 +59,17 @@ _適用於Eclipse的Experience Manager Developer Tools_&#x200B;是以Apache授�
 1. 按一下&#x200B;**新增**。
 1. 檢查&#x200B;**AEM**&#x200B;和&#x200B;**Sling**&#x200B;外掛程式。
 1. 按一下「**下一步**」。
-1. 在&#x200B;**安裝詳細資料**&#x200B;視窗中，再按一下&#x200B;**下一步**。
+1. 在&#x200B;**安裝詳細資料**&#x200B;視窗中，檢閱要安裝的專案，然後再次按一下&#x200B;**下一步**。
 1. 接受授權合約，然後按一下&#x200B;**完成**。
+1. 在出現的&#x200B;**信任授權單位**&#x200B;對話方塊中，選取授權單位/網站`https://eclipse.adobe.com`並按一下&#x200B;**信任選取的專案**。
+1. 在出現的&#x200B;**信任成品**&#x200B;對話方塊中，選取程式碼簽署者，然後按一下&#x200B;**信任選取的專案**。
 1. 按一下&#x200B;**立即重新啟動**&#x200B;以重新啟動Eclipse。
 
 ## AEM觀點 {#the-aem-perspective}
 
-在Eclipse中，「透視」可決定視窗中可用的動作和檢視，並可與Eclipse中的資源進行以工作為導向的互動。 如需透視的詳細資訊，請參閱[Eclipse檔案](https://help.eclipse.org/latest/index.jsp)。
+在Eclipse中，**透視**&#x200B;會決定視窗中可用的動作和檢視，並可與Eclipse中的資源進行以工作為導向的互動。 如需有關檢視方式的詳細資訊，請參閱[Eclipse檔案。](https://help.eclipse.org/latest/index.jsp)。
 
-_適用於Eclipse的Experience Manager開發工具_&#x200B;提供AEM觀點，讓您完全控制您的AEM專案和執行個體。 若要開啟AEM透視：
+適用於Eclipse的&#x200B;_Experience Manager開發工具_&#x200B;提供AEM觀點，讓您完全控制您的AEM專案和執行個體。 若要開啟AEM觀點：
 
 1. 從Eclipse功能表列選取&#x200B;**視窗** > **透視** > **開啟透視** > **其他**。
 1. 在對話方塊中選取&#x200B;**AEM**，然後按一下&#x200B;**開啟**。
@@ -76,7 +78,7 @@ _適用於Eclipse的Experience Manager開發工具_&#x200B;提供AEM觀點，讓
 
 ## 多模組專案範例 {#sample-multi-module-project}
 
-適用於Eclipse的&#x200B;_Experience Manager Developer Tools_&#x200B;隨附範例、多模組專案，可協助您快速上手Eclipse中的專案設定。 它也是幾項AEM功能的最佳實務指南。 [進一步瞭解專案原型](https://github.com/adobe/aem-project-archetype)。
+適用於Eclipse的&#x200B;_Experience Manager開發人員工具_&#x200B;隨附範例多模組專案，可協助您快速上手Eclipse中的專案設定。 它也可當作數個AEM功能的最佳實務指南，運用[AEM專案原型。](https://github.com/adobe/aem-project-archetype)
 
 請依照下列步驟建立範例專案：
 
@@ -88,9 +90,9 @@ _適用於Eclipse的Experience Manager開發工具_&#x200B;提供AEM觀點，讓
 
    >[!NOTE]
    >
-   >此步驟可能需要一些時間，因為m2eclipse必須掃描原型目錄。
+   >此步驟可能需要一些時間，因為[m2eclipse](https://eclipse.dev/m2e/)必須掃描原型目錄。
 
-1. 從功能表選擇`com.adobe.granite.archetypes : sample-project-archetype : <highest-number>`，然後按一下&#x200B;**下一步**。
+1. `com.adobe.aem : aem-project-archetype : <highest-number>`應在&#x200B;**Archetype**&#x200B;下拉式清單中自動選取。 視需要選取先前版本。 按一下「**下一步**」。
 
    ![選取原型版本](assets/select-archetype.png)
 
@@ -107,48 +109,56 @@ _適用於Eclipse的Experience Manager開發工具_&#x200B;提供AEM觀點，讓
 
 1. 按一下「**下一步**」。
 
-1. 接著，您可以設定Eclipse連線的AEM伺服器。
-
-   若要使用偵錯工具功能，您必須以偵錯模式啟動AEM — 這可以透過將下列專案新增到命令列來實現：
-
-   ```text
-       -nofork -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=10123
-   ```
+1. 選取&#x200B;**設定新伺服器**，並提供伺服器名稱和必要的連線詳細資料，以設定Eclipse連線的AEM伺服器。
 
    ![連線到AEM伺服器](assets/connect-server.png)
 
-1. 按一下&#x200B;**完成**。 專案結構隨即建立。
+   * 若要使用偵錯工具功能，您必須藉由提供`-agentlib`引數在偵錯模式下啟動AEM，例如：
 
-   >[!NOTE]
+   ```text
+   $ java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005 -jar aem-author-p4502.jar
+   ```
+
+   >[!TIP]
    >
-   >在全新安裝中（更具體地說，當從未下載maven相依性時），您可能會收到建立專案時出現的錯誤。 在此情況下，請依照[解決無效的專案定義](#resolving-invalid-project-definition)中說明的程式進行。
+   >如需有關在本機AEM SDK上執行專案的偵錯的詳細資訊，請參閱檔案[遠端偵錯AEM SDK。](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-sdk/remote-debugging)
+
+1. 按一下&#x200B;**完成**。
+
+專案結構隨即建立。 下載必要的成品至專案可能需要一些時間。
+
+>[!NOTE]
+>
+>全新安裝時或先前未下載Maven相依性時，Eclipse可能會報告專案建立時發生錯誤。 在此情況下，請依照[解決無效的專案定義一節中所述的程式進行。](#resolving-invalid-project-definition)
 
 ## 如何匯入現有的專案 {#how-to-import-existing-projects}
 
-您可以使用&#x200B;**新專案**&#x200B;功能來建立正確的結構：
+使用&#x200B;**新專案**&#x200B;功能建立基本專案結構。
 
-1. 請依照指示建立[範例多模組專案](#sample-multi-module-project)，您已為您建立下列專案，這些專案允許健康地分離問題：
+1. 請依照指示建立[範例多模組專案，](#sample-multi-module-project)，這會建立基本專案結構，並包含健全的關注點分離：
 
    * `PROJECT.ui.apps`和`/apps`內容的`/etc`
    * 已編寫之`PROJECT.ui.content`的`/content`
-   * 適用於Java™套件組合的`PROJECT.core` (當您想要新增Java™程式碼時，這些套件組合會變得有趣起來)
+   * Java套件組合的`PROJECT.core`
    * 整合測試的`PROJECT.it.launcher`和`PROJECT.it.tests`
 
 1. 將`PROJECT.ui.apps`專案的內容取代為您的封裝的`apps`和`etc`資料夾：
 
-   1. 在「專案總管」面板中，展開`PROJECT.ui.apps` > `src` > `main` > `content` > `jcr_root` > `apps`。
+   1. 在&#x200B;**專案總管**&#x200B;面板中，展開`PROJECT.ui.apps` > `src` > `main` > `content` > `jcr_root` > `apps`。
    1. 在`apps`資料夾上按一下滑鼠右鍵，然後選擇&#x200B;**顯示於** > **系統總管**。
-   1. 刪除您現在應該看到的`apps`和`etc`資料夾，並將內容封裝的`apps`和`etc`資料夾放置在這裡。
+   1. 刪除那裡的`apps`和`etc`資料夾。
+   1. 將內容封裝的`apps`和`etc`資料夾放置到相同位置。
    1. 在Eclipse中，以滑鼠右鍵按一下`PROJECT.ui.apps`專案，然後選擇&#x200B;**重新整理**。
 
 1. 然後對`PROJECT.ui.content`執行相同操作，並將其內容資料夾取代為您其中一個封裝：
 
-   1. 在「專案總管」面板中，展開`PROJECT.ui.content` > `src` > `main` > `content` > `jcr_root` > `content`。
+   1. 在&#x200B;**專案總管**&#x200B;面板中，展開`PROJECT.ui.content` > `src` > `main` > `content` > `jcr_root` > `content`。
    1. 用滑鼠右鍵按一下較深的內容資料夾，然後選擇&#x200B;**顯示於** > **系統總管**。
-   1. 刪除您現在應該看到的內容資料夾，並在此處放置內容封裝的內容資料夾。
+   1. 在該處刪除內容資料夾。
+   1. 將內容封裝的內容資料夾放在相同位置。
    1. 在Eclipse中，以滑鼠右鍵按一下`PROJECT.ui.content`專案，然後選擇&#x200B;**重新整理**。
 
-1. 現在您必須更新這兩個專案的`filter.xml`個檔案，以對應至您內容封裝的內容。 為此，請在個別的文字/程式碼編輯器中開啟內容封裝的`META-INF/vault/filter.xml`檔案。
+1. 透過在單獨的文字/程式碼編輯器中開啟內容套件的`filter.xml`檔案，更新這兩個專案的`META-INF/vault/filter.xml`檔案，以對應至您的內容套件內容。
 
    * 以下範例說明您的`filter.xml`檔案外觀：
 
@@ -164,7 +174,7 @@ _適用於Eclipse的Experience Manager開發工具_&#x200B;提供AEM觀點，讓
    </workspaceFilter>
    ```
 
-1. 至於您分割為兩個專案的套件內容，您也必須將這些篩選規則分割為兩個並相應地更新兩個專案的`filter.xml`檔案。
+1. 至於您分割為兩個專案的套件內容，您也必須將這些篩選規則分割為兩個，並相應地更新兩個專案的`filter.xml`檔案。
 
    1. 在Eclipse中，開啟`PROJECT.ui.apps/src/main/content/META-INF/filter.xml`。
    1. 將`<workspaceFilter>`元素的內容取代為您以`/apps`和`/etc`開頭的封裝規則
@@ -194,10 +204,11 @@ _適用於Eclipse的Experience Manager開發工具_&#x200B;提供AEM觀點，讓
 
 1. 請務必儲存所有變更。 您現在可以將新內容同步至您的AEM執行個體。
 
-1. 在「伺服器」面板中，確定您的連線已啟動，若未啟動，則確定已啟動連線。
+1. 在&#x200B;**伺服器**&#x200B;面板中，確定您的連線已啟動，若未啟動，則確定已啟動。
+
 1. 按一下&#x200B;**清除並發佈**&#x200B;圖示。
 
-完成後，您應該在執行個體上執行套件，並在儲存時，任何變更都會自動同步到執行個體。
+完成後，您的套件應該會在執行個體上執行。 儲存時，所有變更都會自動同步至執行個體。
 
 如果您想要從專案重新建置套件，請在`PROJECT.ui.apps`或`PROJECT.ui.content`上按一下滑鼠右鍵，然後選擇&#x200B;**執行身分** > **Maven安裝**。
 
@@ -219,11 +230,11 @@ Eclipse會下載必要的相依性。 這可能需要一段時間。
 
 ## 詳細資訊 {#more-information}
 
-Eclipse網站的官方Apache Sling IDE工具提供您實用資訊：
+Eclipse網站的官方Apache Sling IDE工具提供有用的其他資訊：
 
-* 適用於Eclipse [**的** Apache Sling IDE工具使用手冊](https://sling.apache.org/documentation/development/ide-tooling.html)，此檔案會引導您瞭解AEM開發工具支援的整體概念、伺服器整合和部署功能。
-* [疑難排解區段](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting)。
-* [已知問題清單](https://sling.apache.org/documentation/development/ide-tooling.html#known-issues)。
+* 適用於Eclipse [**的** Apache Sling IDE工具使用手冊](https://sling.apache.org/documentation/development/ide-tooling.html)會引導您瞭解AEM開發工具支援的整體概念、伺服器整合和部署功能。
+* [疑難排解Apache Sling IDE工具](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting)
+* [已知問題清單](https://sling.apache.org/documentation/development/ide-tooling.html#known-issues)
 
 下列正式[Eclipse](https://www.eclipse.org/)檔案可協助您設定環境：
 
