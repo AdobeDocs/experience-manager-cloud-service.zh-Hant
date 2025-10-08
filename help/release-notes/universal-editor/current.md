@@ -4,10 +4,10 @@ description: 以下是通用編輯器 2025.10.02 版的發行說明。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 997eb9bbc3810af8dde14a77002ac0370c92af99
+source-git-commit: 90c542bfc6ba6bcab34b640e3539971b8b89034c
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 68%
+source-wordcount: '189'
+ht-degree: 65%
 
 ---
 
@@ -35,10 +35,6 @@ ht-degree: 68%
 ### 新 RTE {#new-rte}
 
 新的 ProseMirror RTE 在連結對話框中具備頁面選擇器，現在可以在右側面板中使用。[此 RTE 具有靈活的設定選項。](/help/implementing/universal-editor/configure-rte.md)
-
-### 跨頁面複製並貼上 {#copy-paste}
-
-現在，除了在同一頁面內複製並貼上外，還可以跨頁面複製並貼上。
 
 ## 其他改善功能 {#other-improvements}
 

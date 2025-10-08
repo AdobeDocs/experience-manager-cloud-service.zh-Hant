@@ -4,9 +4,9 @@ description: Adobe 仍然支援頁面編輯器，但通用編輯器為您的新�
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
-source-git-commit: fd52e51c336e65ae698c5102cbe00b90e7038b5e
-workflow-type: ht
-source-wordcount: '1068'
+source-git-commit: 90c542bfc6ba6bcab34b640e3539971b8b89034c
+workflow-type: tm+mt
+source-wordcount: '1067'
 ht-degree: 100%
 
 ---
@@ -60,7 +60,7 @@ Adobe 深知[頁面編輯器](/help/sites-cloud/authoring/page-editor/introducti
 | [產生變化版本](/help/generative-ai/generate-variations.md) | [!BADGE 無法使用]{type=Negative} |  | [!BADGE 可用]{type=Positive} | [可以用作擴充功能](/help/implementing/universal-editor/extending.md) |
 | 插入新區塊 | [!BADGE 可用]{type=Positive} |  | [!BADGE 可用]{type=Positive} |  |
 | 重新排列區塊 | [!BADGE 可用]{type=Positive} | 可以在內容中使用拖放功能，但不能在「樹狀視圖」側面板中進行 | [!BADGE 可用]{type=Positive} | 可以在「樹狀視圖」側面板透過拖放功能來達成，但目前尚未在內容中進行 (已規劃) |
-| 剪下/複製貼上區塊 | [!BADGE 可用]{type=Positive} |  | [!BADGE 無法使用]{type=Negative} | 已規劃 |
+| 剪下/複製貼上區塊 | [!BADGE 可用]{type=Positive} |  | [!BADGE 可用]{type=Positive} |  |
 | 套用樣式 | [!BADGE 可用]{type=Positive} | 可以使用[樣式系統](/help/sites-cloud/authoring/page-editor/style-system.md)將樣式套用至元件上。 | [!BADGE 可用]{type=Positive} | 可以使用常規元件 (或內容片段) 屬性套用樣式。通用編輯器中無法使用相同的樣式選取器，但透過多重選取小工具可以達到非常相似的使用者體驗。 |
 | 套用版面 | [!BADGE 可用]{type=Positive} | 網站必須實施 [AEM 回應式網格](/help/implementing/developing/introduction/responsive-design.md)，讓作者能夠跨三個預先定義的中斷點調整元件大小。 | [!BADGE 可用]{type=Positive} | 可以使用常規元件 (或內容片段) 屬性套用版面，但不支援回應式網格。 |
 | 還原及取消復原 | [!BADGE 可用]{type=Positive} |  | [!BADGE 可用]{type=Positive} |  |
