@@ -97,7 +97,7 @@ Externalizer服務可讓您集中定義網域，以程式設計方式為資源�
    >
    >自訂組態可讓您新增類別，例如`production`、`staging`，甚至外部非AEM系統，例如`my-internal-webservice`。 避免在專案的程式碼基底中跨不同位置對這類URL進行硬式編碼很有用。
 
-1. 按一下[儲存]儲存變更。****
+1. 按一下[儲存]儲存變更。**&#x200B;**
 
 ### 使用Externalizer服務 {#using-the-externalizer-service}
 
