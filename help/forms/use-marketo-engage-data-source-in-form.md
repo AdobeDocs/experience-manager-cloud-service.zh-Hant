@@ -5,28 +5,22 @@ keywords: 在最適化Forms中使用Marketo Engage資料來源。如何連結Mar
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 4656ec65-f1ad-4e97-8d93-25933cdc7f7b
-source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
+source-git-commit: 4bb63932a658cf01cc493b9e5e68b96984cce49c
 workflow-type: tm+mt
-source-wordcount: '797'
-ht-degree: 4%
+source-wordcount: '764'
+ht-degree: 8%
 
 ---
 
 # 針對現有的最適化表單設定 Marketo Engage 資料來源
 
-<span class="preview">此功能可在早期採用者方案下使用。 您可以從您的官方電子郵件ID寫信到aem-forms-ea@adobe.com ，以加入率先採用者計畫並請求存取該功能。</span>
+<span class="preview">此功能可在早期採用者方案下使用。 您可以使用官方電子郵件 ID 寫信至 aem-forms-ea@adobe.com，以加入早期採用者計劃並要求存取該功能。</span>
 
 ![工作流程](/help/forms/assets/workflow-marketo-2.png)
 
 建立雲端服務設定以整合Marketo Engage與現有AEM Forms後，您可以設定表單的資料來源。
 
 設定資料整合可讓使用者連線至各種資料來源或結構描述。 與Marketo Engage資料來源整合，並跨不同表單使用，可簡化對該資料的操作。 若要探索最適化表單支援的現成可用資料來源，請參閱[設定資料來源](/help/forms/configure-data-sources.md)文章。
-
-## 設定表單之Marketo Engage資料來源的考量
-
-設定表單的Marketo Engage資料來源時，請考量下列事項：
-
-* 無法將Edge Delivery Services Forms與Marketo Engage連線。
 
 ## 使用Marketo Engage表單資料來源的先決條件
 
@@ -57,7 +51,7 @@ ht-degree: 4%
 
    ![Marketo Data Source](/help/forms/assets/marketo-engage-data-source-af1.png){width=50%, height=50%}
 
-1. 按一下&#x200B;**[!UICONTROL 「完成」]**。
+1. 按一下&#x200B;**[!UICONTROL 完成]**。
 
 或者，您也可以編輯最適化表單屬性，以變更其相關聯的設定。
 
@@ -83,7 +77,7 @@ ht-degree: 4%
 
    ![Marketo Data Source](/help/forms/assets/marketo-engage-data-source.png){width=50%, height=50%}
 
-1. 按一下&#x200B;**[!UICONTROL 「完成」]**。
+1. 按一下&#x200B;**[!UICONTROL 完成]**。
 
 或者，您也可以編輯最適化表單屬性，以變更其相關聯的設定。
 
