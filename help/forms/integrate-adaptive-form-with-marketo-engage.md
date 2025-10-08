@@ -18,7 +18,7 @@ ht-degree: 8%
 
 ![工作流程](/help/forms/assets/workflow-marketo-4.png)
 
-建立雲端服務設定以將Marketo Engage與AEM Forms整合後，您可以設定最適化表單以與[Adobe Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home)整合。
+建立雲端服務設定以將Marketo Engage與AEM Forms整合後，您可以設定最適化表單以與[Adobe Marketo Engage](https://experienceleague.adobe.com/zh-hant/docs/marketo/using/home)整合。
 
 您可以使用表單精靈將Marketo Engage連線至調適型表單，透過引導您完成每個步驟來簡化設定程式。 其中包括選取範本、樣式和資料欄位，以及設定資料對應以確保您的表單在建立後可以與Marketo Engage通訊。 使用表單精靈，您也可以設定最適化表單，在提交時直接將資料提交至Adobe Marketo Engage。
 
@@ -174,7 +174,7 @@ ht-degree: 8%
 
 ## 下一步
 
-您也可以將最適化表單與[Munchkin資料庫](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/setup/munchkin)連線，以追蹤造訪次數、點按次數和表單提交次數。
+您也可以將最適化表單與[Munchkin資料庫](https://experienceleague.adobe.com/zh-hant/docs/marketo/using/product-docs/administration/setup/munchkin)連線，以追蹤造訪次數、點按次數和表單提交次數。
 
 ## 相關的文章
 
