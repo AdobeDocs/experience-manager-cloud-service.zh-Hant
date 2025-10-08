@@ -4,9 +4,9 @@ description: Externalizer是一項OSGi服務，可讓您以程式設計方式將
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 3f3df8866e9c9555e0c7d2d8ff2637b212dea0b9
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '647'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,11 @@ Externalizer服務可立即將數個網域識別碼對應至絕對URL首碼，�
 >
 >將自訂`com.day.cq.commons.impl.ExternalizerImpl.cfg.json`檔案部署到AEM as a Cloud Service時，若省略這些現成可用的網域對應，可能會導致無法預測的應用程式行為。
 
-若要覆寫`preview`和`publish`值，請使用Cloud Manager環境變數，如文章[為AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties)設定OSGi並設定預先定義的`AEM_CDN_DOMAIN_PUBLISH`和`AEM_CDN_DOMAIN_PREVIEW`變數中所述。
+請勿在Cloud Manager中定義或覆寫`EXTERNALIZER`個環境變數（例如`AEM_EXTERNALIZER_AUTHOR`）。 如果您需要覆寫`publish`或`preview`網域值，請定義並使用`AEM_CDN_DOMAIN_PUBLISH`和`AEM_CDN_DOMAIN_PREVIEW`環境變數。 啟動期間，這些變數會自動指派給外部器設定中的對應欄位。
+
+<!-- Alexandru: hiding this. See CQDOC-23014 for more details
+
+To override the `preview` and `publish` values, use Cloud Manager environment variables as described in the article [Configuring OSGi for AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) and setting the predefined `AEM_CDN_DOMAIN_PUBLISH` and `AEM_CDN_DOMAIN_PREVIEW` variables. -->
 
 ## 設定Externalizer服務 {#configuring-the-externalizer-service}
 
@@ -50,7 +54,7 @@ Externalizer服務可讓您集中定義網域，以程式設計方式為資源�
 
 >[!NOTE]
 >
->如同為AEM as a Cloud Service[&#128279;](/help/implementing/deploying/overview.md#osgi-configuration)套用任何OSGi設定一樣，下列步驟應該在本機開發人員執行個體上執行，然後提交至您的專案程式碼以進行部署。
+>如同為AEM as a Cloud Service[套用任何](/help/implementing/deploying/overview.md#osgi-configuration)OSGi設定一樣，下列步驟應該在本機開發人員執行個體上執行，然後提交至您的專案程式碼以進行部署。
 
 若要定義Externalizer服務的網域對應：
 
@@ -79,7 +83,7 @@ Externalizer服務可讓您集中定義網域，以程式設計方式為資源�
 
    * **`server`**&#x200B;是主機名稱（網域名稱或ip位址）。
    * **`port`** （選擇性）是連線埠號碼。
-   * 只有在將AEM安裝為Webapp時，才會設定&#x200B;**`contextpath`** （選擇性），而且是在不同的內容路徑下。
+   * **`contextpath`** （選擇性）只有在將AEM安裝為Webapp時才會設定。
 
    例如：`production https://my.production.instance`
 
@@ -93,7 +97,7 @@ Externalizer服務可讓您集中定義網域，以程式設計方式為資源�
    >
    >自訂組態可讓您新增類別，例如`production`、`staging`，甚至外部非AEM系統，例如`my-internal-webservice`。 避免在專案的程式碼基底中跨不同位置對這類URL進行硬式編碼很有用。
 
-1. 按一下[儲存]儲存變更。**&#x200B;**
+1. 按一下[儲存]儲存變更。****
 
 ### 使用Externalizer服務 {#using-the-externalizer-service}
 
