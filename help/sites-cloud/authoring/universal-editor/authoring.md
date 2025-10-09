@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: b30367d3892fb58d42533864ba9c354e355c7d7a
+source-git-commit: e07509ca667b674fb56880a9f3d37976de029782
 workflow-type: tm+mt
-source-wordcount: '2495'
+source-wordcount: '2503'
 ht-degree: 21%
 
 ---
@@ -69,7 +69,7 @@ ht-degree: 21%
 
 快顯選單會在RTF區塊上方開啟，並在快顯選單中提供基本的格式選項。 由於空間限制，某些選項可能會隱藏在省略符號按鈕後面。
 
-![&#x200B; RTF內容功能表](assets/rich-text-context-menu.png)
+![ RTF內容功能表](assets/rich-text-context-menu.png)
 
 一旦焦點離開已編輯的欄位，變更會自動儲存。
 
@@ -212,7 +212,7 @@ RTE可設定為根據作者需求隱藏選項或顯示其他選項。 如需詳�
 
 ### 複製並貼上 {#copy-paste}
 
-您可以在相同的瀏覽器標籤上複製並貼上[容器](/help/implementing/universal-editor/field-types.md#container)中的元件。 只有在[目標容器未設定任何篩選器時，才可以執行此動作。](/help/implementing/universal-editor/filtering.md)
+您可以在相同的瀏覽器標籤上複製並貼上[容器](/help/implementing/universal-editor/field-types.md#container)中的元件。 只有在目標容器未設定[篩選器](/help/implementing/universal-editor/filtering.md)或具有允許貼上元件的篩選器時，才可以執行此操作。
 
 ![復製圖示](assets/copy.png)
 ![貼上圖示](assets/paste.png)
