@@ -3,9 +3,9 @@ title: 在Content Hub中管理集合
 description: 瞭解如何在Content Hub中管理集合
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 4021e8318d8bb2704f44a280f728f06aa6b7d9fa
 workflow-type: tm+mt
-source-wordcount: '1036'
+source-wordcount: '1327'
 ht-degree: 2%
 
 ---
@@ -25,6 +25,8 @@ ht-degree: 2%
 * **下載**：下載資產。
 * **移除**：從集合中移除特定資產。
 * **刪除**：刪除整個集合。
+* **釘選/取消釘選**：釘選或取消釘選集合。
+* **我的最愛**：將集合標示為我的最愛。
 
 它可協助使用者輕鬆存取和管理[!DNL Content Hub]中可用的各種資產。
 
@@ -40,7 +42,7 @@ ht-degree: 2%
 
 執行以下步驟，在建立集合時控制存取：
 
-1. 移至&#x200B;**[!DNL Collections]**&#x200B;標籤，然後按一下&#x200B;**[!UICONTROL 建立集合]**。 「新建集合」視窗會出現。
+1. 移至&#x200B;**[!DNL Collections]**&#x200B;標籤，然後按一下&#x200B;**[!UICONTROL 建立集合]**。 新的「集合」視窗即會出現。
 
 1. 新增集合的&#x200B;**[!UICONTROL 標題]**&#x200B;和&#x200B;**[!UICONTROL 描述]**。
 
@@ -87,7 +89,7 @@ ht-degree: 2%
 
 ### 篩選集合檢視 {#filter-collections-view}
 
-Content Hub可讓您篩選集合檢視，根據您的偏好縮小選項，輕鬆找出您要尋找的確切內容。 確定Content Hub[&#128279;](configure-content-hub-ui-options.md#configure-collections-content-hub)中集合的設定。
+Content Hub可讓您篩選集合檢視，根據您的偏好縮小選項，輕鬆找出您要尋找的確切內容。 確定Content Hub[中集合的](configure-content-hub-ui-options.md#configure-collections-content-hub)設定。
 
 若要篩選集合檢視，請前往&#x200B;**[!DNL Collections]**&#x200B;索引標籤，並導覽至「集合」下拉式清單。 從下列選項中選擇：
 
@@ -152,7 +154,7 @@ Content Hub集合提供全方位的控管工具，包括可自訂的共用許可
 * 集合的擁有者
 * 具有編輯許可權的非管理員使用者
 
-若要從集合中移除資產，請按一下需要移除資產的集合、選取資產，然後按一下[從集合中移除]。**&#x200B;**
+若要從集合中移除資產，請按一下需要移除資產的集合、選取資產，然後按一下[從集合中移除]。****
 
 ![移除集合](assets/remove-collection-new.jpg)
 
@@ -163,5 +165,39 @@ Content Hub集合提供全方位的控管工具，包括可自訂的共用許可
 
 只有管理員和建立者可以刪除集合。 若要刪除集合，請導覽至&#x200B;**[!UICONTROL 集合]**&#x200B;索引標籤，然後按一下您要刪除的集合。 按一下![刪除圖示](assets/delete-icon.svg)圖示以刪除集合。
 
+## 釘選或取消釘選集合 {#pin-unpin-collection}
 
+Content Hub管理員可以在Content Hub中釘選集合以快速存取。 釘選的系列會顯示在「系列」首頁上的專屬釘選區段中，以便更輕鬆地將重要系列保持在可觸及的範圍之內。 若要快速存取，您可以透過執行以下步驟來釘選或取消釘選集合：
+
+1. 瀏覽您要釘選或取消釘選的集合。
+
+1. 按一下&#x200B;**[!UICONTROL 其他動作]** ![其他動作圖示](assets/do-not-localize/more-actions.png)，然後選取&#x200B;**[!UICONTROL 釘選以快速存取]**。 確認方塊隨即顯示。
+
+   ![釘選集合](assets/pin-collection.png)
+
+1. 按一下&#x200B;**[!UICONTROL 釘選]**&#x200B;以確認。 當您釘選私人集合時，警告訊息便會出現。
+
+   ![確認PIN集合](assets/confirm-pin-collection.png)
+
+   釘選的集合會顯示在頂端以快速存取。 或者，若要取消釘選集合，請按一下&#x200B;**[!UICONTROL 其他動作]** ![其他動作圖示](assets/do-not-localize/more-actions.png)並選取&#x200B;**[!UICONTROL 取消釘選]**。
+
+   ![檢視釘選的集合](assets/pinned-collections.png)
+
+## 將集合標示為我的最愛 {#favorite-collection}
+
+您可以在Content Hub中將集合標示為我的最愛，以便更輕鬆地組織和擷取它們。 新增收藏後，您可在Content Hub首頁的「我的最愛」標籤中方便地找到您最愛的收藏集。 此外，您也可以在「最愛收藏集」中搜尋資產。 若要將集合標示為我的最愛，請遵循下列步驟：
+
+1. 瀏覽您要釘選或取消釘選的集合。
+
+1. 按一下&#x200B;**[!UICONTROL 更多動作]** ![更多動作圖示](assets/do-not-localize/more-actions.png)，然後選取&#x200B;**[!UICONTROL 新增至我的最愛]**，將集合標示為我的最愛。
+
+   ![將集合標示為我的最愛](assets/mark-favorite-collection.png)
+
+   標示為我的最愛的集合現在會顯示在&#x200B;**[!UICONTROL 我的我的最愛]**&#x200B;標籤下。 或者，您也可以從&#x200B;**[!UICONTROL 我的我的最愛]**&#x200B;移除集合。 若要這麼做，請按一下&#x200B;**[!UICONTROL 更多動作]** ![更多動作圖示](assets/do-not-localize/more-actions.png)，然後選取&#x200B;**[!UICONTROL 從我的最愛移除]**。
+
+   ![移除收藏集作為我的最愛](assets/remove-favorite-collection.png)
+
+>[!NOTE]
+>
+>[釘選或取消釘選集合](#pin-unpin-collection)和[將集合標示為我的最愛](#favorite-collection)是有限可用性功能。 您可以建立並提交Adobe客戶支援案例，以便為您的部署啟用這些案例。
 
