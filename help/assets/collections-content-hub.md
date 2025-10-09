@@ -3,7 +3,7 @@ title: 在Content Hub中管理集合
 description: 瞭解如何在Content Hub中管理集合
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: 4021e8318d8bb2704f44a280f728f06aa6b7d9fa
+source-git-commit: 5c275b305dc128f158dfdac035595e4bb77960a9
 workflow-type: tm+mt
 source-wordcount: '1327'
 ht-degree: 2%
@@ -154,7 +154,7 @@ Content Hub集合提供全方位的控管工具，包括可自訂的共用許可
 * 集合的擁有者
 * 具有編輯許可權的非管理員使用者
 
-若要從集合中移除資產，請按一下需要移除資產的集合、選取資產，然後按一下[從集合中移除]。**&#x200B;**
+若要從集合中移除資產，請按一下需要移除資產的集合、選取資產，然後按一下[從集合中移除]。****
 
 ![移除集合](assets/remove-collection-new.jpg)
 
@@ -193,11 +193,11 @@ Content Hub管理員可以在Content Hub中釘選集合以快速存取。 釘選
 
    ![將集合標示為我的最愛](assets/mark-favorite-collection.png)
 
-   標示為我的最愛的集合現在會顯示在&#x200B;**[!UICONTROL 我的我的最愛]**&#x200B;標籤下。 或者，您也可以從&#x200B;**[!UICONTROL 我的我的最愛]**&#x200B;移除集合。 若要這麼做，請按一下&#x200B;**[!UICONTROL 更多動作]** ![更多動作圖示](assets/do-not-localize/more-actions.png)，然後選取&#x200B;**[!UICONTROL 從我的最愛移除]**。
+   標示為「我的最愛」的集合現在會顯示在&#x200B;**[!UICONTROL 我的我的最愛]**&#x200B;標籤下。 或者，您也可以從&#x200B;**[!UICONTROL 我的我的最愛]**&#x200B;移除集合。 若要這麼做，請按一下&#x200B;**[!UICONTROL 更多動作]** ![更多動作圖示](assets/do-not-localize/more-actions.png)，然後選取&#x200B;**[!UICONTROL 從我的最愛移除]**。
 
    ![移除收藏集作為我的最愛](assets/remove-favorite-collection.png)
 
 >[!NOTE]
 >
->[釘選或取消釘選集合](#pin-unpin-collection)和[將集合標示為我的最愛](#favorite-collection)是有限可用性功能。 您可以建立並提交Adobe客戶支援案例，以便為您的部署啟用這些案例。
+>[釘選或取消釘選集合](#pin-unpin-collection)和[將集合標示為我的最愛](#favorite-collection)是有限的可用性功能。 您可以[建立並提交](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html) Adobe客戶支援案例，以便為您的部署啟用這些案例。
 
