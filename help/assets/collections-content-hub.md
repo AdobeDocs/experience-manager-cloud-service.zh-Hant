@@ -3,9 +3,9 @@ title: 在Content Hub中管理集合
 description: 瞭解如何在Content Hub中管理集合
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: 5c275b305dc128f158dfdac035595e4bb77960a9
+source-git-commit: 676edf3638ebf660aeb8204dc527d9066d2a731e
 workflow-type: tm+mt
-source-wordcount: '1327'
+source-wordcount: '1325'
 ht-degree: 2%
 
 ---
@@ -154,7 +154,7 @@ Content Hub集合提供全方位的控管工具，包括可自訂的共用許可
 * 集合的擁有者
 * 具有編輯許可權的非管理員使用者
 
-若要從集合中移除資產，請按一下需要移除資產的集合、選取資產，然後按一下[從集合中移除]。**&#x200B;**
+若要從集合中移除資產，請按一下需要移除資產的集合、選取資產，然後按一下[從集合中移除]。****
 
 ![移除集合](assets/remove-collection-new.jpg)
 
@@ -187,7 +187,7 @@ Content Hub管理員可以在Content Hub中釘選集合以快速存取。 釘選
 
 您可以在Content Hub中將集合標示為我的最愛，以便更輕鬆地組織和擷取它們。 新增收藏後，您可在Content Hub首頁的「我的最愛」標籤中方便地找到您最愛的收藏集。 此外，您也可以在「最愛收藏集」中搜尋資產。 若要將集合標示為我的最愛，請遵循下列步驟：
 
-1. 瀏覽您要釘選或取消釘選的集合。
+1. 瀏覽您要標示為我的最愛的集合。
 
 1. 按一下&#x200B;**[!UICONTROL 更多動作]** ![更多動作圖示](assets/do-not-localize/more-actions.png)，然後選取&#x200B;**[!UICONTROL 新增至我的最愛]**，將集合標示為我的最愛。
 
