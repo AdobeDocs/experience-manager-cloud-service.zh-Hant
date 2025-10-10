@@ -6,9 +6,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: 3761019b42ddc4b3a6cc904afe91b47eb3d99ac6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '526'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ AEM Sites as a Cloud Service 提供體驗管理功能，作為雲端原生 AEM a
 >* [AEM as a Cloud Service 重大變更 (發行說明)](/help/release-notes/aem-cloud-changes.md)
 >* [AEM Assets as a Cloud Service 重大變更](/help/assets/assets-cloud-changes.md)
 >* [AEM Assets as a Cloud Service 簡介](/help/assets/overview.md)
->* [Adobe Experience Manager as a Cloud Service 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=zh-Hant)
+>* [Adobe Experience Manager as a Cloud Service 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 
 AEM Sites as a Cloud Service 中的變更與新增內容如下：
 
@@ -44,7 +44,7 @@ AEM Sites as a Cloud Service 中的變更與新增內容如下：
 The initiator of such actions can check their status in a new UI at `/mnt/overlay/dam/gui/content/asyncjobs.html`.
 -->
 
-您可以從[背景操作儀表板](/help/operations/asynchronous-jobs.md)檢視非同步作業的狀態。
+您可以從[背景作業儀表板](/help/operations/asynchronous-jobs.md)檢視非同步工作的狀態。
 
 >[!NOTE]
 >
@@ -54,7 +54,7 @@ The initiator of such actions can check their status in a new UI at `/mnt/overla
 
 [WKND](https://wknd.site/) (新的 AEM 參考網站) 已更新並發布，以反映使用 AEM 以及 AEM 所提供全套功能、組件和部署模型來建立網站的最佳實務。新參考網站及[隨附的教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hant)涵蓋基礎的主題，例如專案設定、核心元件、可編輯的範本、用戶資料庫以及使用 Adobe Experience Manager Sites 的元件開發。
 
-先前，We.Retail 預設會隨 AEM 一起安裝 (在生產模式下啟動時除外)。在 AEM as a Cloud Service 中，依預設不會安裝參考網站。相反地，[&#x200B; git repo](https://github.com/adobe/aem-guides-wknd/) 和[隨附的教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hant)提供了更新的 WKND 參考網站代碼。
+先前，We.Retail 預設會隨 AEM 一起安裝 (在生產模式下啟動時除外)。在 AEM as a Cloud Service 中，依預設不會安裝參考網站。相反地，[ git repo](https://github.com/adobe/aem-guides-wknd/) 和[隨附的教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hant)提供了更新的 WKND 參考網站代碼。
 
 ## 執行階段時不適用的功能 {#capabilities-not-available-at-runtime}
 
