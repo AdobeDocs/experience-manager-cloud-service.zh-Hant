@@ -4,10 +4,10 @@ description: 了解 Adobe Experience Manager as a Cloud Service 中 Cloud Manage
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: f0b28245213d77c23259fb753376a6670b408e5e
+source-git-commit: 673e6a2403026e33c3bbd225b7296a1fb8877404
 workflow-type: tm+mt
-source-wordcount: '1284'
-ht-degree: 61%
+source-wordcount: '1318'
+ht-degree: 97%
 
 ---
 
@@ -21,58 +21,62 @@ ht-degree: 61%
 
 ## 發行日期 {#release-date}
 
-AEM as a Cloud Service中的Cloud Manager 2025.10.0發行日期是2025年10月2日星期四。
+AEM as a Cloud Service 中 Cloud Manager 2025.10.0 版的發行日期是 2025 年 10 月 2 日 (星期四)。
 
-下一個預計發行日期為2025年11月6日星期四。
+下一個版本計劃於 2025 年 11 月 6 日 (星期四) 發行。
 
 ## 新增功能 {#what-is-new}
 
-* **AEM雲端健康情況評估服務**
+* **專用的僅限中繼和僅限生產的部署管道**
 
-  Adobe推出AEM雲端健康評估服務，這是一個自動化、非侵入性的檢查工具，可讓您的AEM as a Cloud Service環境保持最佳化、安全並符合最佳實務。
+  Cloud Manager現在提供專用的僅限中繼和生產環境部署管道，提供更強大的彈性，可獨立管理至中繼和生產環境的部署。 請參閱[分割僅限階段和僅限生產的管道](/help/implementing/cloud-manager/configuring-pipelines/stage-prod-only.md)。
+
+* **AEM 雲端健康狀態評估服務**
+
+  Adobe 推出 AEM 雲端健康狀態評估服務，這是一項自動化、非侵入性的檢查工具，能讓您的 AEM as a Cloud Service 環境保持最佳化、安全並符合最佳做法的狀態。
 
   此服務會執行下列動作：
 
-   * 掃描環境，找出效能瓶頸、低效和潛在風險。
-   * 分析內容結構（藍圖、即時副本）和自訂設定。
-   * 識別過時的相依性(AEM SDK、協力廠商程式庫)。
-   * 標示程式碼品質問題（註解錯誤、模式效率低下）。
-   * 透過儀表板（例如&#x200B;**動作中心**）提供可操作的指引。
-   * 透過早期問題偵測和補救，支援主動最佳化。
+   * 掃描各個環境，找出效能瓶頸、效率不彰之處和潛在風險。
+   * 分析內容結構 (Blueprint、Live Copy) 和自訂設定。
+   * 找出過時的相依性 (AEM SDK、第三方程式庫)。
+   * 標示程式碼品質問題 (註解錯誤、模式效率不彰)。
+   * 透過儀表板 (例如&#x200B;**動作中心**) 提供可操作的指引。
+   * 透過及早發現問題並進行修復，支援主動式最佳化。
 
-  團隊可以持續監控和改善其AEM環境，以實現更順暢的效能、更強大的安全性和長期可維護性。
+  團隊可以持續監視和改善其 AEM 環境，以達到更順暢的效能、更強大的安全性和長期可維護性。
 
   請參閱[生產和中繼環境的健康狀態評估](/help/implementing/cloud-manager/reports/report-health-assessment.md)。
 
 * **設定管道支援**
 
-  現在，使用 Edge Delivery Services 建置的網站已支援設定管道，所以在 Cloud Service 環境以外也可以使用這項功能。您可以使用&#x200B;**設定管道**&#x200B;來管理設定，例如CDN設定，包括流量篩選規則和來源選取器。 請參閱[支援的設定](/help/operations/config-pipeline.md#configurations)。
+  現在，使用 Edge Delivery Services 建置的網站支援設定管道，因此在 Cloud Service 環境以外也能使用這項功能。您可以使用&#x200B;**設定管道**&#x200B;管理設定，例如內容傳遞網路設定，包括流量篩選器規則和來源選擇器。請參閱[支援的設定](/help/operations/config-pipeline.md#configurations)。
 
-  Edge Delivery設定管道也透過Cloud Manager管道變數支援秘密。
+  Edge Delivery 設定管道也能透過 Cloud Manager 管道變數支援密碼。
 
-  請參閱[新增Edge Delivery管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)。
+  請參閱[新增 Edge Delivery 管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)。
 
-* **網域對應 — CDN設定對話方塊已簡化**
+* **網域對應內容傳遞網路的設定對話框已簡化**
 
-  Cloud Manager已簡化&#x200B;**將網域對應至CDN**&#x200B;流程，以減少混淆並加快設定。 此對話方塊現在強調&#x200B;**Adobe Managed CDN** （具有「建議」徽章）。
+  Cloud Manager 已簡化&#x200B;**將網域對應至內容傳遞網路**&#x200B;的流程，以減少混淆情形並加快設定速度。對話框現在特別凸顯「**Adobe 管理的內容傳遞網路**」(帶有「建議」標籤)。
 
-  ![選取Adobe管理的CDN選項按鈕時，將[網域對應至CDN]對話方塊](/help/implementing/cloud-manager/assets/cdn/map-domain-to-cdn-dialog-box-adobe-managed-cdn.png)。
+  ![「將網域對應至內容傳遞網路」對話框，其中已選取「Adobe 管理的內容傳遞網路」選項按鈕](/help/implementing/cloud-manager/assets/cdn/map-domain-to-cdn-dialog-box-adobe-managed-cdn.png)。
 
   請參閱[新增網域對應](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md)。
 
-  此對話方塊也會針對&#x200B;**其他CDN提供者**&#x200B;卡片提供單一、簡明的檢查清單，其重點為具有下列內容的教學內容：
+  對話框也會針對&#x200B;**其他內容傳遞網路提供者**&#x200B;卡片顯示一份簡潔的檢查清單，並著重下列內容的操作說明：
 
-   * 將您的CDN來源指向`publish-p<PROGRAM_ID>-e<ENV_ID>.adobeaemcloud.com`。
-   * 設定&#x200B;**主機/SNI**&#x200B;以轉送原始主機。
-   * 新增`X-AEM-Edge-Key` (在Cloud Manager中部署金鑰後)。
-   * 將`X-Forwarded-Host`設為您的客戶導向網域。
-   * 在到達AEM之前清除其他`X-Forwarded-*`標頭。
+   * 將您的內容傳遞網路來源指向 `publish-p<PROGRAM_ID>-e<ENV_ID>.adobeaemcloud.com`。
+   * 設定&#x200B;**主機/SNI** 以便轉寄原始主機。
+   * 新增 `X-AEM-Edge-Key` (在 Cloud Manager 中部署金鑰之後)。
+   * 將 `X-Forwarded-Host` 設定為面向客戶的網域。
+   * 在到達 AEM 前，清除其他 `X-Forwarded-*` 標頭。
 
-  ![選取其他CDN提供者選項按鈕時，將網域對應到CDN對話方塊](/help/implementing/cloud-manager/assets/cdn/map-domain-to-cdn-dialog-box-other-cdn-provider.png)
+  ![「將網域對應至內容傳遞網路」對話框，其中已選取「其他內容傳遞網路提供者」選項按鈕](/help/implementing/cloud-manager/assets/cdn/map-domain-to-cdn-dialog-box-other-cdn-provider.png)
 
-  <!-- (no redundant `Origin` field or "Learn more" clutter) -->隨附的頁尾提供兩個實用的連結：主要CDN的設定範例和完整檔案的連結。 單一確認按鈕 — 我已設定我的CDN — 完成流程。
+  <!-- (no redundant `Origin` field or "Learn more" clutter) -->隨附的頁尾提供兩個實用連結：主要內容傳遞網路的設定範例以及完整文件的連結。透過一個確認按鈕「我已設定我的內容傳遞網路」完成整個流程。
 
-  檢視AEM as a Cloud Service[中的](/help/implementing/dispatcher/cdn.md#point-to-point-CDN)CDN。
+  請參閱 [AEM as a Cloud Service 中的內容傳遞網路](/help/implementing/dispatcher/cdn.md#point-to-point-CDN)。
 
 <!--
 ### Staging-Only and Production-Only Pipelines {#staging-production-only-pipelines}
@@ -92,21 +96,21 @@ If you are interested in testing this new feature and sharing your feedback, sen
 
 AEM Cloud Service is going to soon support one custom domain per Author environment.-->
 
-### Experience Hub的可擴充性和自訂 {#exp-hub-extensibility}
+### Experience Hub 的擴展性和自訂 {#exp-hub-extensibility}
 
-[Experience Hub](/help/experience-hub.md)是您進入AEM的入口點，並根據您組織的需求進行自訂。 告訴Adobe您現有的AEM UI擴充功能，協助您只需最省力就能在Experience Hub中啟用它們。
+[Experience Hub](/help/experience-hub.md) 是您存取 AEM 的入口點，並可根據組織需求進行自訂。告知 Adobe 您現有的 AEM 使用者介面擴充功能，以便協助您花最少的力氣便能在 Experience Hub 中啟用這些功能。
 
-![Experience Hub擴充性與自訂工作流程圖表](/help/implementing/cloud-manager/release-notes/assets/experience-hub-extensibility-customization.png)
+![Experience Hub 擴展性與自訂工作流程的圖表](/help/implementing/cloud-manager/release-notes/assets/experience-hub-extensibility-customization.png)
 
-在Experience Hub中內嵌自訂體驗，以擴充及個人化您的組織控制面板。 除了Adobe的內建Widget，請使用[UI擴充性](https://developer.adobe.com/uix/docs/)架構新增您自己的。 建置以JavaScript為基礎的UI應用程式，並將其呈現給您的使用者，以符合特定業務的需求和工作流程。
+在 Experience Hub 中嵌入自訂體驗，以擴充組織儀表板的功能以及進行個人化設定。除了 Adobe 的內建小工具之外，您可以使用[使用者介面擴展性](https://developer.adobe.com/uix/docs/)框架自行新增小工具。建置以 JavaScript 為基礎的使用者介面應用程式，並將其呈現給您的使用者，以滿足特定業務需求和工作流程。
 
-對Beta版感興趣嗎？ 請傳送電子郵件給[beta_exphubextensibility@adobe.com](mailto:beta_exphubextensibility@adobe.com)，其中包含您的Adobe OrgID以及您打算建立的自訂專案的簡短說明。
+有興趣使用 Beta 版嗎？請寄送電子郵件至 [beta_exphubextensibility@adobe.com](mailto:beta_exphubextensibility@adobe.com)，附上您的 Adobe OrgID 並簡短說明您想要算建立的自訂內容。
 
-### 模組快取可加快組建速度 {#quick-build-cm-pipelines}
+### 模組快取能加快建置速度 {#quick-build-cm-pipelines}
 
-新的建置模型會使用模組層級快取來編譯已變更的模組（而非整個存放庫），以縮短建置時間。 它適用於計畫碼品質、完整棧疊和僅限階段的管道。
+新的建置模型會使用模組層級快取來編譯已變更的模組 (而非整個存放庫)，藉此縮短建置時間。此建置模型適用於程式碼品質、完整堆疊和僅限中繼管道。
 
-有興趣嗎？ 使用您的Adobe OrgID和方案ID以電子郵件傳送[beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com)。
+感興趣嗎？請寄送電子郵件至 [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com)，並附上您的 Adobe OrgID 和方案 ID。
 
 <!-- You can deactivate incremental builds at the pipeline level by setting the property `CM_BUILD_DISABLE_MODULE_CACHING` to `true` (effective during the `BUILD` step). For how to add pipeline variables, see [Pipeline Variables in Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md).-->
 
@@ -191,7 +195,7 @@ If you are interested in testing this new feature and sharing your feedback, sen
 
 ## 錯誤修正 {#bug-fixes}
 
-10月發行的Cloud Manager沒有重大錯誤修正。
+10 月的 Cloud Manager 版本沒有重大錯誤修正。
 
 
 <!-- ## Known issues {#known-issues} -->
