@@ -3,7 +3,7 @@ title: Content Hub 常見問題 (FAQ)
 description: 了解一些 Content Hub 最常見問題 (FAQ) 的答案。
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
 source-git-commit: bd8992792afddb2243736578acd24bc47efad842
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1669'
 ht-degree: 100%
 
