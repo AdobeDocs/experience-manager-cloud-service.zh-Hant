@@ -4,8 +4,8 @@ description: 了解如何在發佈階層為 AEM as a Cloud Service 設定 Open I
 feature: Security
 role: Admin
 exl-id: d2f30406-546c-4a2f-ba88-8046dee3e09b
-source-git-commit: f3cd1bc761c513ebb85351185e7aa0b6f6eb6f33
-workflow-type: ht
+source-git-commit: eb03c8941f848ff10c38a4880c8fe85387cc441f
+workflow-type: tm+mt
 source-wordcount: '1469'
 ht-degree: 100%
 
@@ -83,7 +83,7 @@ IdP 設定的資訊：
 
 現在，設定 OIDC 驗證處理常式可設定多個 OIDC 連線。每個都必須有不同的名稱。如果這些連線共用相同的 [OAK 外部身分提供者](https://jackrabbit.apache.org/oak/docs/security/authentication/identitymanagement.html?lang=zh-Hant)，就可以共用使用者。
 
-1. 建立設定檔。對於此範例，我們將使用 `org.apache.sling.auth.oauth_client.impl.OidcConnectionImpl~azure.cfg.json`。`azure` 字尾必須是唯一識別碼。請參閱以下的設定檔範例：
+1. 建立設定檔。對於此範例，我們將使用 `org.apache.sling.auth.oauth_client.impl.OidcAuthenticationHandler~azure.cfg.json`。`azure` 字尾必須是唯一識別碼。請參閱以下的設定檔範例：
 
    ```
    {
