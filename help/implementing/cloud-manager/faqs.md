@@ -5,10 +5,10 @@ exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: ht
-source-wordcount: '974'
-ht-degree: 100%
+source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
+workflow-type: tm+mt
+source-wordcount: '976'
+ht-degree: 81%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 此程序已記錄 - 請參閱[專案建立精靈](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started)。
 
-如需範例，請參閱 [wknd 專案範例專案程式碼](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75)。
+例如，請參閱[lWKND專案範例專案程式碼](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75)。
 
 ## 從 Java™ 8 切換到 Java™ 11 後，我的組建失敗並出現有關 maven-scr-plugin 的錯誤。該怎麼辦？ {#build-fails-maven-scr-plugin}
 
@@ -43,13 +43,13 @@ ht-degree: 100%
 "[main] [WARNING] Rule 1: org.apache.maven.plugins.enforcer.RequireJavaVersion".
 ```
 
-此錯誤是一個已知問題，原因在於 Cloud Manager 使用不同版本的 Java™ 來執行 maven 命令而不是編譯程式碼。只需忽略您的 `maven-enforcer-plugin` 設定中的 `requireJavaVersion`。
+這是一個已知問題，原因在於Cloud Manager使用其他版本的Java™來執行Maven命令而不是編譯程式碼。 只需忽略您的 `maven-enforcer-plugin` 設定中的 `requireJavaVersion`。
 
 ## 程式碼品質檢查已失敗，部署無法進行。是否有辦法略過這項檢查？ {#deployment-stuck}
 
-可以。除了安全評等之外，所有程式碼品質檢查失敗都是非關鍵性量度，因此可透過擴展結果 UI 中的專案將其視為部署管道的一部分而略過。
+可以。除了安全性評等之外，所有程式碼品質檢查失敗都是非關鍵量度。 因此，可以在部署管道中，透過展開結果UI中的專案來略過這些專案。
 
-具有[部署管理員、專案管理員或業務負責人](/help/onboarding/aem-cs-team-product-profiles.md#cloud-manager-product-profiles)角色的使用者可覆寫此問題，這種情況下，管道會繼續進行，或者他們可接受此問題，這種情況下，管道會因失敗而停止。
+具有[部署管理員、專案管理員或企業所有者](/help/onboarding/aem-cs-team-product-profiles.md#cloud-manager-product-profiles)角色的使用者可以覆寫問題。 在這種情況下，配管會進行或接受問題，在這種情況下，配管會因失敗而停止。
 
 如需詳細資訊，請參閱文件：[程式碼品質測試](/help/implementing/cloud-manager/code-quality-testing.md#three-tiered-gate)和[設定非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#non-production-pipelines)。
 
@@ -57,11 +57,11 @@ ht-degree: 100%
 
 可以。對於開發人員部署，Git 分支 `pom.xml` 檔案在 `<version>` 值的末尾必須包含 `-SNAPSHOT`。
 
-此值允許在版本未變更時仍可安裝後續部署。在開發人員部署中，不會為 Maven 組建新增或產生自動版本。
+此值允許在版本未變更時仍安裝後續部署。 在開發人員部署中，不會為 Maven 組建新增或產生自動版本。
 
 您還可以將版本設定為 `-SNAPSHOT`，以用於測試和生產組建或部署。Cloud Manager 會自動設定適當的版本編號並在 Git 中為您建立標記。如有需要，可在稍後參照此標記。
 
-有關版本處理的更多詳細資訊，請參閱 [Maven 專案版本處理](/help/implementing/cloud-manager/managing-code/project-version-handling.md)。
+如需版本處理的詳細資訊，請參閱[Maven專案版本處理](/help/implementing/cloud-manager/managing-code/project-version-handling.md)。
 
 ## 套件和套裝的版本設定如何用於測試和生產部署？ {#snapshot-version}
 
@@ -94,13 +94,13 @@ Caused by: javax.jcr.AccessDeniedException: OakAccess0000: Access denied [EventA
 
 在先前的錯誤範例中，`myapp-base.ui.content-*.zip`套件包括 `/conf` 和 `/var/workflow` 底下的內容。為了部署成功，需要這些路徑底下的 `sling-distribution-importer` 權限。
 
-以下是為 `sling-distribution-importer` 使用者新增額外權限的 [`org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config`](https://github.com/cqsupport/cloud-manager/blob/main/org.apache.sling.jcr.repoinit.RepositoryInitializer-distribution.config) OSGi 設定範例。設定在 `/var` 底下新增權限。這類設定必須新增到 `/apps/myapp/config` 底下的應用程式套件中 (其中 myapp 是儲存應用程式程式碼的資料夾)。
+以下是為 `sling-distribution-importer` 使用者新增額外權限的 [`org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config`](https://github.com/cqsupport/cloud-manager/blob/main/org.apache.sling.jcr.repoinit.RepositoryInitializer-distribution.config) OSGi 設定範例。設定在 `/var` 底下新增權限。這類設定必須新增到`/apps/myapp/config`下的應用程式封裝（其中`myapp`是儲存應用程式程式碼的資料夾）。
 
 ## 我的 Cloud Manager 部署在 AEM as a Cloud Service 中的部署步驟失敗，並且我已經新增了 RepositoryInitializer OSGi 設定。我還能怎麼做？ {#build-failures}
 
 如果[新增 RepositoryInitializer OSGi 設定](#cloud-manager-deployment-cloud-service)沒有解決錯誤，可能是由於以下其他問題造成的。
 
-* 由於錯誤的 OSGi 設定破壞了現成的服務，部署可能會失敗。
+* 由於OSGi設定錯誤導致現成可用的服務中斷，部署可能會失敗。
    * 在部署期間檢查記錄，以便查看是否有任何明顯的錯誤。
 
 * 由於 Dispatcher 或 Apache 設定錯誤，部署可能會失敗。
@@ -109,7 +109,7 @@ Caused by: javax.jcr.AccessDeniedException: OakAccess0000: Access denied [EventA
 
 * 在將內容套件 (Sling 指派) 從作者複製到發佈執行個體期間，部署可能會因某些其他錯誤而失敗。
    * 按照以下步驟在本機設定上模擬問題。
-      1. 使用最新的 AEM SDK jar 在本機安裝製作和發佈執行個體。
+      1. 使用最新的AEM SDK jar在本機安裝作者和發佈執行個體。
       1. 登入製作執行個體。
       1. 前往「**工具**」>「**部署**」>「**發佈**」。
       1. 指派作為程式碼庫 一部分的內容套件，並查看佇列是否因錯誤而阻塞。

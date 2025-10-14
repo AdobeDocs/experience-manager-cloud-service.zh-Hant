@@ -5,9 +5,9 @@ exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
 solution: Experience Manager
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: bc92ed7acefbbd906b0986ea0b6b96fa6d8422de
+source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '349'
 ht-degree: 69%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 69%
 
    ![下載記錄檔對話框](assets/download-preview.png)
 
-   如果您的環境已啟用[其他Publish地區](/help/operations/additional-publish-regions.md)，您將能夠選取每個地區並個別下載其記錄檔，如下所示：
+   如果您的環境已啟用[其他發佈區域](/help/operations/additional-publish-regions.md)，您可以選取每個區域並個別下載其記錄檔，如下所示：
 
    ![下載其他發佈區域的記錄檔](assets/download-publish-region-logs.png)
 
@@ -101,5 +101,5 @@ Environment Id Service    Name
 
 請參閱下列其他資源，以進一步瞭解AEM as a Cloud Service中的記錄檔：
 
-* [Cloud 5 AEM記錄檔](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files.html?lang=zh-Hant)
-* [使用記錄檔偵錯AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html?lang=zh-Hant)
+* [Cloud 5 AEM記錄檔](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files#)
+* [使用記錄檔偵錯AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#)

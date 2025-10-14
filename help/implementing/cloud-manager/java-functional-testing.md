@@ -5,9 +5,9 @@ exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f60dc00fc031fa7ef73a18daec9c6c0e5570b018
+source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '855'
 ht-degree: 78%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 78%
 
 Adobe 用於編寫產品功能測試的工具也可用於編寫您的自訂功能測試。使用 GitHub 中的[產品功能測試](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke)作為寫入測試的範例。
 
-自訂功能測試的程式碼是位於專案 `it.tests` 資料夾中的 Java™ 程式碼。它應該產生一個包含所有功能測試的 JAR。如果建置產生多個測試 JAR，則無法確定要選擇哪個 JAR。如果產生零個測試 JAR，則測試步驟預設透過。如需範例測試，請參閱[AEM專案原型](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests)。
+自訂功能測試的程式碼是位於專案 `it.tests` 資料夾中的 Java™ 程式碼。它應該產生一個包含所有功能測試的 JAR。如果建置產生多個測試 JAR，則無法確定要選擇哪個 JAR。如果產生零個測試 JAR，則測試步驟預設透過。如需測試範例，請參閱[AEM專案原型](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests)。
 
 這些測試會在 Adobe 維護的測試基礎結構上執行，包括至少兩個編寫執行個體、兩個發佈執行個體和一個 Dispatcher 設定。此設定代表您的自訂功能測試針對整個 AEM 堆疊執行。
 
@@ -107,7 +107,7 @@ Adobe 用於編寫產品功能測試的工具也可用於編寫您的自訂功�
 |----------------------|-------|--------------------------------------------------------------------|
 | CPU | 0.5 | 每次測試執行保留的 CPU 時間量 |
 | 記憶體 | 0.5Gi | 分配給測試的記憶體數量，其值以 gibibyte 為單位 |
-| 逾時 | 30m | 停止測試的時間限制。 |
+| 逾時 | 30m | 測試停止的時間限制。 |
 | 建議的持續時間 | 15m | Adobe建議撰寫測試時，不要超過這個時間。 |
 
 >[!NOTE]
@@ -131,7 +131,7 @@ Adobe 用於編寫產品功能測試的工具也可用於編寫您的自訂功�
 >[!NOTE]
 >
 >此變更需要在 2024 年 4 月 6 日之前執行。
->如果未更新相依性程式庫，可能會在「自訂功能測試」步驟導致管道失敗。
+>>如果未更新相依性程式庫，可能會在「自訂功能測試」步驟導致管道失敗。
 
 ### 本機測試執行 {#local-test-execution}
 

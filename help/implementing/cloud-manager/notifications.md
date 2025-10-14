@@ -5,10 +5,10 @@ exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
 workflow-type: tm+mt
-source-wordcount: '584'
-ht-degree: 85%
+source-wordcount: '585'
+ht-degree: 76%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 85%
 
 ![通知側邊欄](assets/notificaitons-announcements.png)
 
-按一下通知或宣告以檢視其詳細資料。 連結至管道部署等活動的通知將帶您了解該活動的詳細資訊，例如管道執行視窗。
+按一下通知或公告，即可檢視其詳細內容。連結至管道部署等活動的通知將帶您了解該活動的詳細資訊，例如管道執行視窗。
 
 按一下面板底部的&#x200B;**檢視全部**&#x200B;選項，即可檢視收件匣中的所有宣告。
 
@@ -45,11 +45,9 @@ ht-degree: 85%
 
 您可以自訂接收通知的方式以及接收哪些通知。
 
-按一下通知側邊欄頂端的齒輪圖示。
+按一下通知側邊欄頂端的齒輪圖示，開啟&#x200B;**Experience Cloud偏好設定**&#x200B;視窗。 從這裡，您可以定義通知訂閱以及接收通知的方式。
 
 ![通知設定圖示](assets/notifications-configuration.png)
-
-這將開啟 **Experience Cloud 偏好設定**&#x200B;視窗，您可以在此定義通知訂閱內容以及接收通知的方式。
 
 ### 訂閱 {#subscriptions}
 
@@ -57,13 +55,13 @@ ht-degree: 85%
 
 ![通知訂閱](assets/notifications-subscriptions.png)
 
-根據預設，您會透過應用程式和電子郵件收到所有產品的所有通知。按一下產品名稱旁的>形箭號，就會顯示詳細的選項，並定義您會收到的該產品通知型別。 或者勾選或取消勾選產品級別的選項，即可選取/取消選取擇該產品的所有選項。
+依預設，您會透過應用程式和電子郵件收到所有產品的所有通知。 按一下產品名稱旁的>形箭號，即可顯示詳細的選項，並定義您會收到的該產品通知型別。 或者勾選或取消勾選產品級別的選項，即可選取/取消選取擇該產品的所有選項。
 
 ![通知訂閱自訂](assets/notifications-subscriptions-customize.png)
 
 ### 優先順序 {#priority}
 
-優先警示會以&#x200B;**高**&#x200B;標記標註，並可設定為僅接收警示。在&#x200B;**優先順序**&#x200B;區段中，您可以定義哪些類別符合優先通知的條件。
+優先警報會標示「**HIGH**」標記。您可以將警報設定為僅接收警報。 在&#x200B;**優先順序**&#x200B;部份中，您可以定義哪些類別符合優先通知的條件。
 
 ![通知優先順序](assets/notifications-priority.png)
 
@@ -71,7 +69,7 @@ ht-degree: 85%
 
 ### 警示 {#alerts}
 
-警示會出現在視窗右上角幾秒鐘。使用&#x200B;**警示**&#x200B;區段來定義您接收警示的通知。
+警示會出現在視窗右上角幾秒鐘。使用&#x200B;**警示**&#x200B;部份來定義您接收警示的通知。
 
 ![通知警示](assets/notifications-alerts.png)
 
@@ -83,7 +81,7 @@ ht-degree: 85%
 
 ### 電子郵件 {#emails}
 
-在所有 Adobe [!UICONTROL Experience Cloud] 解決方案的 Web 使用者介面中都可看到通知。您還能選擇透過&#x200B;**電子郵件**&#x200B;區段中的電子郵件傳送這些通知。
+在所有 Adobe [!UICONTROL Experience Cloud] 解決方案的 Web 使用者介面中都可看到通知。您還能選擇透過&#x200B;**電子郵件**&#x200B;部份中的電子郵件傳送這些通知。
 
 ![通知電子郵件](assets/notifications-emails.png)
 
@@ -93,4 +91,4 @@ ht-degree: 85%
 * 每日
 * 每週
 
-若選擇&#x200B;**即時通知**，則對於每個通知都會即刻傳送電子郵件。對於&#x200B;**每日摘要**&#x200B;和&#x200B;**每週摘要**，您可以選擇傳送每日摘要的時間以及在星期幾與何時傳送每週摘要。
+當您選擇&#x200B;**即時通知**&#x200B;時，每個通知都會立即傳送電子郵件。 對於「**每日摘要**」和「**每週摘要**」，您可以選擇在什麼時間接收每日摘要，以及在星期幾和什麼時間接收每週摘要。

@@ -5,10 +5,10 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="私人測試版" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: 815fb5c3-a171-4531-8727-b79183d85f06
-source-git-commit: 2d1b7385fec60a77f8c76f260fc87f9e5af428a3
+source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 10%
+source-wordcount: '516'
+ht-degree: 11%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 10%
 
 >[!NOTE]
 >
->&#x200B;>本文所述的功能只能透過私人測試版計畫取得。 若要註冊私人測試版，請參閱[專業測試環境](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment)。
+>>本文所述的功能只能透過私人測試版計畫取得。 若要註冊私人測試版，請參閱[專業測試環境](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment)。
 
 Specialized Testing Environment (DevXL)是您可以建立的新型Cloud Manager環境。 其設計可支援進階使用案例，例如使用者驗收測試(UAT)和效能驗證。 與傳統開發、快速開發或預備環境不同，DevXL環境會在生產部署管道之外操作。 因此，它們可為您提供更大的彈性，同時維持嚴格的隔離以防止干擾生產工作流程。
 
@@ -35,7 +35,7 @@ DevXL的建置可反映一般中繼環境的大小、擴充性和組態。 此�
 | 內容還原 | 與開發環境相同。 |
 | 存取記錄檔 | 與開發環境相同。 |
 | Developer Console | 與開發環境相同。 |
-| IP 允許清單 | 與開發環境相同。 |
+| `IP Allow List` | 與開發環境相同。 |
 | 網路 | 與開發環境相同（服務、網域名稱、SSL憑證、進階網路）。 |
 
 另請參閱[管理環境](/help/implementing/cloud-manager/manage-environments.md)
@@ -53,7 +53,7 @@ DevXL的建置可反映一般中繼環境的大小、擴充性和組態。 此�
 1. 執行下列任一項作業：
 
    * 在&#x200B;**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;主控台的&#x200B;**環境**&#x200B;卡片上，按一下&#x200B;**新增環境**。
-如果&#x200B;**新增環境**&#x200B;選項變暗（已停用），可能是因為缺少許可權或依賴授權的資源。
+如果**新增環境**&#x200B;選項變暗（已停用），可能是因為缺少許可權或依賴授權的資源。
 
    ![環境卡](assets/no-environments.png)
 
@@ -61,15 +61,15 @@ DevXL的建置可反映一般中繼環境的大小、擴充性和組態。 此�
 
      ![「環境」索引標籤](assets/environments-tab.png)
 
-1. 在&#x200B;**新增環境**&#x200B;對話方塊中，執行下列動作：
+1. 在「**新增環境**」對話框中，執行下列操作：
 
    * 按一下&#x200B;**專業測試環境**。
    * 提供環境&#x200B;**名稱**。 建立環境後，便無法變更環境名稱。
    * （選用）提供環境的&#x200B;**描述**。
    * 從下拉式清單中選取&#x200B;**主要區域**。 建立後，DevXL環境的主要區域(例如&#x200B;*美國（西部）*)就會鎖定，無法變更。
 
-   ![Add environment dialog box with Specialized Testing Environment radio button selected](assets/specialized-test-environment.png)
+   ![以選取的專用測試環境選項按鈕新增環境對話框：](assets/specialized-test-environment.png)
 
-1. 按一下「**儲存**」。
+1. 按一下&#x200B;**儲存**。
 
    **總覽**&#x200B;頁面現在會在&#x200B;**環境**&#x200B;卡中顯示您的新環境。 現在您可以設定新環境的管道。

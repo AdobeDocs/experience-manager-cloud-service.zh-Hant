@@ -5,10 +5,10 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3e7ce0c7f330ba92b57e36ea8fe5bb17b5998cb1
+source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
 workflow-type: tm+mt
-source-wordcount: '2488'
-ht-degree: 40%
+source-wordcount: '2489'
+ht-degree: 41%
 
 ---
 
@@ -65,7 +65,7 @@ ht-degree: 40%
 
      ![「環境」索引標籤](assets/environments-tab.png)
 
-1. 在&#x200B;**新增環境**&#x200B;對話方塊中，執行下列動作：
+1. 在「**新增環境**」對話框中，執行下列操作：
 
    * 選取&#x200B;[**環境型別**](#environment-types)。 可用/已使用環境的數量會顯示在環境類型名稱後面的括號中。
    * 提供環境&#x200B;**名稱**。 建立環境後，便無法變更環境名稱。
@@ -75,7 +75,7 @@ ht-degree: 40%
 
    ![新增環境對話框](assets/add-environment2.png)
 
-1. 按一下「**儲存**」。
+1. 按一下&#x200B;**儲存**。
 
 **總覽**&#x200B;頁面現在會在&#x200B;**環境**&#x200B;卡中顯示您的新環境。 現在您可以設定新環境的管道。
 
@@ -152,7 +152,7 @@ ht-degree: 40%
 
 1. 在環境頁面上，執行下列任一項作業：
 
-   * 按一下清單中的環境以檢視其詳細資訊。
+   * 按一下清單中的環境可檢視其詳細資訊。
 
    ![環境詳細資訊](assets/environ-preview1.png)
 
@@ -308,7 +308,7 @@ Cloud Manager 為每個 AEM as a Cloud Service 環境提供預覽服務 (作為�
 
 只有具有&#x200B;**開發人員**&#x200B;角色的使用者才能存取 **Developer Console**。但是，對於沙箱計畫，任何有權存取沙箱計畫的使用者都可以存取&#x200B;**Developer Console**。
 
-如需更多詳細資訊，請參閱[休眠和去休眠沙箱環境](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation)。
+如需更多詳細資訊，請參閱[休眠和去休眠沙箱環境](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation)。
 
 按一下個別環境的&#x200B;**更多圖示**&#x200B;時，此選項也可從&#x200B;**總覽**&#x200B;視窗的![環境](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)索引標籤中使用。
 
