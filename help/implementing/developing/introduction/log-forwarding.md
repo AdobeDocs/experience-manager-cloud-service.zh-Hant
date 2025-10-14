@@ -4,9 +4,9 @@ description: 瞭解如何在AEM as a Cloud Service中將記錄轉送給記錄廠
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 2e136117508d7bd17993bf0e64b41aa860d71ab1
+source-git-commit: afa88d89b24ac425ba1b69ee9062e589d49ebee9
 workflow-type: tm+mt
-source-wordcount: '2409'
+source-wordcount: '2478'
 ht-degree: 3%
 
 ---
@@ -23,80 +23,70 @@ ht-degree: 3%
   <tbody>
     <tr>
       <th>記錄技術</th>
-      <th>Private Beta*</th>
       <th>AEM</th>
       <th>Dispatcher</th>
       <th>CDN</th>
     </tr>
     <tr>
       <td>Amazon S3</td>
-      <td style="background-color: #ffb3b3;">是</td>
       <td>是</td>
       <td>是</td>
-      <td style="background-color: #ffb3b3;">否</td>
+      <td style="background-color: #ffb3b3;">未來</td>
     </tr>
     <tr>
       <td>Azure Blob儲存體</td>
-      <td>否</td>
       <td>是</td>
       <td>是</td>
       <td>是</td>
     </tr>
     <tr>
       <td>DataDog</td>
-      <td>否</td>
       <td>是</td>
       <td>是</td>
       <td>是</td>
     </tr>
     <tr>
       <td>Dynatrace</td>
-      <td style="background-color: #ffb3b3;">是</td>
       <td>是</td>
       <td>是</td>
-      <td style="background-color: #ffb3b3;">否</td>
+      <td style="background-color: #ffb3b3;">未來</td>
     </tr>
     <tr>
       <td>Elasticsearch<br>OpenSearch</td>
-      <td>否</td>
       <td>是</td>
       <td>是</td>
       <td>是</td>
     </tr>
     <tr>
       <td>HTTPS</td>
-      <td>否</td>
       <td>是</td>
       <td>是</td>
       <td>是</td>
     </tr>
     <tr>
       <td>New Relic</td>
-      <td style="background-color: #ffb3b3;">是</td>
       <td>是</td>
       <td>是</td>
-      <td style="background-color: #ffb3b3;">否</td>
+      <td style="background-color: #ffb3b3;">未來</td>
     </tr>
     <tr>
       <td>Splunk</td>
-      <td>否</td>
       <td>是</td>
       <td>是</td>
       <td>是</td>
     </tr>
     <tr>
       <td>相撲邏輯</td>
-      <td style="background-color: #ffb3b3;">是</td>
       <td>是</td>
       <td>是</td>
-      <td style="background-color: #ffb3b3;">否</td>
+      <td style="background-color: #ffb3b3;">未來</td>
     </tr>
   </tbody>
 </table>
 
 >[!NOTE]
 >
-> 若為Private Beta中的技術，請傳送電子郵件至[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)以要求存取權。
+> 對於未來計畫推出的CDN記錄技術，請傳送電子郵件至[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)以報名關注。
 
 記錄轉送是透過在Git中宣告設定以自助方式設定，並可透過Cloud Manager設定管道部署至開發、中繼和生產環境型別。 可以使用命令列工具將設定檔案部署至快速開發環境 (RDE) 中。
 
@@ -116,7 +106,7 @@ AEM和Apache/Dispatcher記錄檔可選擇透過AEM的進階網路基礎結構（
 
 ## 設定 {#setup}
 
-1. 建立名為`logForwarding.yaml`的檔案。 它應該包含中繼資料，如[設定管道](/help/operations/config-pipeline.md#common-syntax)文章中所述（**kind**&#x200B;應該設定為`LogForwarding`且版本設定為&quot;1&quot;），其設定類似於以下內容（我們使用Splunk作為範例）。
+1. 建立一個名為 `logForwarding.yaml` 的檔案。它應該包含中繼資料，如[設定管道](/help/operations/config-pipeline.md#common-syntax)文章中所述（**kind**&#x200B;應該設定為`LogForwarding`且版本設定為&quot;1&quot;），其設定類似於以下內容（我們使用Splunk作為範例）。
 
    ```yaml
    kind: "LogForwarding"
@@ -247,6 +237,8 @@ data:
 >[!NOTE]
 >
 >CDN記錄無法顯示來自與您的AEM記錄顯示來源相同的IP位址，因為記錄會直接從Fastly傳送，而不是AEM Cloud Service。
+>
+>因此，無法將記錄轉送與進階網路VPN設定搭配使用。
 
 ## 記錄目的地組態 {#logging-destinations}
 
@@ -293,6 +285,9 @@ IAM原則應該允許使用者使用`s3:putObject`。  例如：
 ```
 
 如需如何實作的詳細資訊，請參閱[AWS貯體原則檔案](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html)。
+
+>[!NOTE]
+>已規劃在未來提供AWS S3的CDN記錄支援。 請傳送電子郵件給[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)以註冊感興趣的內容。
 
 ### Azure Blob儲存體 {#azureblob}
 
@@ -491,7 +486,7 @@ Web要求(POST)將持續傳送，其有json裝載（記錄專案陣列），其�
 >
 >記錄轉送至New Relic僅適用於客戶擁有的New Relic帳戶。
 >
->電子郵件[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)以要求存取權。
+>已規劃在未來提供New Relic記錄API的CDN記錄支援。 請傳送電子郵件給[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)以註冊感興趣的內容。
 >
 >New Relic會根據您的New Relic帳戶布建位置，提供區域特定的端點。  如需進一步資訊，請參閱[New Relic檔案](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint)。
 
@@ -515,8 +510,7 @@ Token需要「擷取記錄檔」範圍屬性。
 ```
 
 >[!NOTE]
->
-> 電子郵件[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)以要求存取權。
+>已規劃在未來提供Dynatrace記錄API的CDN記錄支援。 請傳送電子郵件給[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)以註冊感興趣的內容。
 
 ### Splunk {#splunk}
 
@@ -570,6 +564,8 @@ data:
 ```
 
 >[!NOTE]
+>已規劃在未來提供SumoLogic的CDN記錄支援。 請傳送電子郵件給[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)以註冊感興趣的內容。
+>
 > 您需要Sumo Logic Enterprise訂閱才能使用「索引」欄位功能。  非企業訂閱的記錄檔會以標準形式路由至`sumologic_default`資料分割。  如需詳細資訊，請參閱[Sumo邏輯分割檔案](https://help.sumologic.com/docs/search/optimize-search-partitions/)。
 
 ## 記錄專案格式 {#log-formats}
