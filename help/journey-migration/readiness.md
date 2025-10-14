@@ -219,7 +219,7 @@ Best Practices Analyzer報表完成之後，請與相關團隊共用，以便您
 ## 其他資源 {#additional-resources}
 
 * [Cloud Acceleration Manager快速入門](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md) — 有關如何使用Cloud Acceleration Manager以加速您移至雲端的完整指南。
-* [AEM as a Cloud Service：簡介、架構和思考方式不同](https://experienceleague.adobe.com/zh-hant?launch=ExperienceManager-D-1-2021.1.migration&amp;recommended=ExperienceManager-D-1-2021.1.migration&amp;lang=en#dashboard/learning)
+* [AEM as a Cloud Service：簡介、架構和思考方式不同](https://experienceleague.adobe.com/zh-hant?launch=ExperienceManager-D-1-2021.1.migration&recommended=ExperienceManager-D-1-2021.1.migration&lang=en#dashboard/learning)
 * [AEMCloud Service首頁](/help/overview/introduction.md) — 如需Experience Manageras a Cloud Service檔案的概覽，請由此開始。
 * [AEM as a Cloud Service概觀](/help/overview/introduction.md) — 本指南提供Experience Manageras a Cloud Service概觀，包括簡介、術語和架構。
 * [入門歷程](/help/journey-onboarding/overview.md) — 本指南提供如何開始使用Experience Manageras a Cloud Service的摘要，包括如何存取和設定您的團隊。

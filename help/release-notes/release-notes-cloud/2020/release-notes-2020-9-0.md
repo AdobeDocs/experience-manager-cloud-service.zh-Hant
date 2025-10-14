@@ -36,7 +36,7 @@ ht-degree: 14%
    * 選擇性Publish — 現在，行銷團隊可以存取同步到[!DNL Dynamic Media]的[!DNL Dynamic Media]智慧型裁切影像和動態轉譯，以便建立促銷文宣，而完全無須將這些資產發佈至[!DNL Dynamic Media]以進行全域傳送。 [!DNL Experience Manager]和[!DNL Dynamic Media]發佈是分離的，可個別執行以達成此目的。 請參閱[選擇性發佈](/help/assets/dynamic-media/selective-publishing.md)。
    * 管理員現在可以重設布建時收到的[!DNL Dynamic Media]Cloud Service密碼。 重設可在[!DNL Experience Manager]使用者介面中完成，而不需要使用[!DNL Dynamic Media Classic]案頭應用程式。
 
-* 若要瞭解下列增強功能，請參閱[ Brand Portal的新功能](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=zh-Hant)。
+* 若要瞭解下列增強功能，請參閱[&#x200B; Brand Portal的新功能](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=zh-Hant)。
 
    * 透過Adobe Document Cloud檢視SDK整合強化PDF預覽。
    * 按一下即可下載的功能。

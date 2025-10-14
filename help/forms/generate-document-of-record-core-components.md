@@ -135,7 +135,7 @@ The form developer binds Adaptive Forms fields with corresponding Document of Re
 
 現在，當提交最適化表單時，會產生更新的記錄檔案。
 
-![已更新 — ](assets/we-retail-new-invoice-sent-to-customer.png)
+![已更新 — &#x200B;](assets/we-retail-new-invoice-sent-to-customer.png)
 
 ## 使用記錄檔案時的主要考量事項 {#key-considerations-when-working-with-document-of-record}
 

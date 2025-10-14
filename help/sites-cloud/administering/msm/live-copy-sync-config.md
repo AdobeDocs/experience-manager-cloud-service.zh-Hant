@@ -87,7 +87,7 @@ Adobe Experience Manager提供數種立即可用的同步設定。 在使用即�
 
 當安裝的轉出設定不符合您的應用程式需求時，您可以[建立轉出設定](/help/implementing/developing/extending/msm.md#creating-a-new-rollout-configuration)，方法是執行下列步驟。
 
-1. [建立轉出設定 — ](/help/implementing/developing/extending/msm.md#create-the-rollout-configuration)
+1. [建立轉出設定 — &#x200B;](/help/implementing/developing/extending/msm.md#create-the-rollout-configuration)
 1. [將同步處理動作新增至轉出設定](/help/implementing/developing/extending/msm.md#add-synchronization-actions-to-the-rollout-configuration)。
 
 然後，當您在Blueprint或即時副本頁面上設定轉出設定時，便可使用新的轉出設定。

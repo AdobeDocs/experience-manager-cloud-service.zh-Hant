@@ -49,7 +49,7 @@ URL紅色的第一部分是參照伺服器網域本身。 在此案例中，Dyna
 
 最後，還有些影像處理引數`?wid=1000&fmt=jpeg&qlt=85`，在結尾以黃色顯示。
 
-整個URL路徑都是即時的。 [試用](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?wid=1000&amp;fmt=jpeg&amp;qlt=85){target="_blank"}。
+整個URL路徑都是即時的。 [試用](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?wid=1000&fmt=jpeg&qlt=85){target="_blank"}。
 
 在瀏覽器視窗仍開啟至Dynamic Media URL和觀看影像時，讓我們進一步瞭解您如何僅透過變更URL來建立影像的轉譯。
 
@@ -66,9 +66,9 @@ URL紅色的第一部分是參照伺服器網域本身。 在此案例中，Dyna
 
 Dynamic Media有許多影像處理引數，可用來微調網頁上的影像資產。 您可以[在這裡](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=zh-Hant)檢視他們的清單。
 
-現在嘗試將旋轉引數新增到觀看影像。 URL路徑的結尾，緊接在`wid=1000`之後，輸入`&rotate=90`，然後按&#x200B;**[!UICONTROL Enter]**。 [試用](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=90){target="_blank"}。
+現在嘗試將旋轉引數新增到觀看影像。 URL路徑的結尾，緊接在`wid=1000`之後，輸入`&rotate=90`，然後按&#x200B;**[!UICONTROL Enter]**。 [試用](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&rotate=90){target="_blank"}。
 
-手錶還是稍微向左偏斜。 將`90`的旋轉值變更為`92`，然後按&#x200B;**[!UICONTROL Enter]**。 [試用](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=9){target="_blank"}。
+手錶還是稍微向左偏斜。 將`90`的旋轉值變更為`92`，然後按&#x200B;**[!UICONTROL Enter]**。 [試用](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&rotate=9){target="_blank"}。
 
 同樣地，當您按下&#x200B;**[!UICONTROL Enter]**&#x200B;時，就會立即產生新的手錶轉譯。 您可以看到您獲得的效能，這解釋了為什麼在繁忙的週末或重大假日，Dynamic Media每秒可以傳送超過800,000個影像要求&#x200B;__。
 
@@ -163,7 +163,7 @@ _開始建立影像集。_
 
 若要建立影像集，請從&#x200B;**[!UICONTROL 建立]**&#x200B;下拉式功能表選擇&#x200B;**[!UICONTROL 影像集]**。 請注意，功能表上也有建立&#x200B;**[!UICONTROL 混合媒體集]**、**[!UICONTROL 迴轉集]**&#x200B;和&#x200B;**[!UICONTROL 轉盤集]**&#x200B;的選項。 您建立這些集合的方式與影像集大致相同。
 
-混合媒體集可包含影像、色票集、迴轉集、視訊和自我調整視訊集。 [試用](https://s7d9.scene7.com/s7viewers/html5/MixedMediaViewer.html?asset=Scene7SharedAssets/Mixed_Media_Set_Sample)。 「迴轉集」會模擬實際動作，即轉動物件來檢查它。 迴轉集可讓您從任何角度檢視重要的視覺細節。 [試用](https://s7d9.scene7.com/s7viewers/html5/SpinViewer.html?asset=Scene7SharedAssets/SpinSet_Sample&amp;stagesize=500,400){target="_blank"}。
+混合媒體集可包含影像、色票集、迴轉集、視訊和自我調整視訊集。 [試用](https://s7d9.scene7.com/s7viewers/html5/MixedMediaViewer.html?asset=Scene7SharedAssets/Mixed_Media_Set_Sample)。 「迴轉集」會模擬實際動作，即轉動物件來檢查它。 迴轉集可讓您從任何角度檢視重要的視覺細節。 [試用](https://s7d9.scene7.com/s7viewers/html5/SpinViewer.html?asset=Scene7SharedAssets/SpinSet_Sample&stagesize=500,400){target="_blank"}。
 
 直接建立影像集。 您只需新增要納入集合的影像資產即可。
 
@@ -189,13 +189,13 @@ _已選取檢視器選項，預覽中設定的`Running`影像。_
 ![套用飛出檢視器的執行中影像集](/help/assets/dynamic-media/assets/dm-image-set-flyout-viewer.png)
 _套用了彈出式檢視器的`Running`影像集。_
 
-在此案例中，已選取`Flyout`檢視器。 此時，您可以預覽檢視器中設定的影像。 不過，最好還是透過瀏覽器檢視，也就是客戶如何檢視。 您選取左下方的&#x200B;**[!UICONTROL URL]**，然後複製URL並貼至瀏覽器。 [試用](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&amp;config=jpearldemo/Flyout){target="_blank"}。
+在此案例中，已選取`Flyout`檢視器。 此時，您可以預覽檢視器中設定的影像。 不過，最好還是透過瀏覽器檢視，也就是客戶如何檢視。 您選取左下方的&#x200B;**[!UICONTROL URL]**，然後複製URL並貼至瀏覽器。 [試用](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&config=jpearldemo/Flyout){target="_blank"}。
 
 單一URL可讓您在網站上所需的位置使用影像集和檢視器。 您在前一個範例中可能已注意到&#x200B;**[!UICONTROL Embed]**&#x200B;位於URL按鈕的右側。 選取&#x200B;**[!UICONTROL 內嵌]**，即可複製此影像集/檢視器的程式碼，並將其新增至網頁或Experience Manager Sites元件。
 
 彈出式檢視器是預設的現成檢視器，您可以編輯其屬性。 或者，就像建立影像預設集一樣，您可以建立自己的自訂檢視器。
 
-現在，假設您的銷售和行銷團隊不喜歡彈出式檢視器。 他們喜歡縮放功能，但他們希望客戶能在鞋子上直接看到縮放效果。 在這種情況下，您只需將InlineZoom檢視器套用至影像集，並在瀏覽器中複製並貼上其URL以檢視其行為。 [試用](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&amp;config=jpearldemo/InlineZoom){target="_blank"}。
+現在，假設您的銷售和行銷團隊不喜歡彈出式檢視器。 他們喜歡縮放功能，但他們希望客戶能在鞋子上直接看到縮放效果。 在這種情況下，您只需將InlineZoom檢視器套用至影像集，並在瀏覽器中複製並貼上其URL以檢視其行為。 [試用](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&config=jpearldemo/InlineZoom){target="_blank"}。
 
 當您將滑鼠指標移到鞋上時，您會放大該影像，而且當您移動指標時，可以看到更多細節。 原因很簡單，就是最初上傳至Dynamic Media的影像大小。
 
@@ -205,8 +205,8 @@ _套用了彈出式檢視器的`Running`影像集。_
 
 <!-- LEAVE THIS HIDDEN PATH IN THE DOCUMENTATION FOR DEMO PURPOSES [Flyout viewer with image set](http://www.partycity.com/girls-little-old-lady-costume-P750948.html) -->
 
-* `ZoomVertical_dark`檢視器已套用至影像資產。 [試用](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_96311480&amp;config=jpearldemo/ZoomVertical_dark){target="_blank"}。
-* `Zoom_light`檢視器已套用至影像。 [試用](https://s7d1.scene7.com/s7viewers/html5/BasicZoomViewer.html?asset=jpearldemo/AdobeStock_38827423&amp;config=jpearldemo/Zoom_light){target="_blank"}。
+* `ZoomVertical_dark`檢視器已套用至影像資產。 [試用](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_96311480&config=jpearldemo/ZoomVertical_dark){target="_blank"}。
+* `Zoom_light`檢視器已套用至影像。 [試用](https://s7d1.scene7.com/s7viewers/html5/BasicZoomViewer.html?asset=jpearldemo/AdobeStock_38827423&config=jpearldemo/Zoom_light){target="_blank"}。
 
 ## 選擇性 — 瞭解更多
 

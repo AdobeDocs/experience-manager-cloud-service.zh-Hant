@@ -103,7 +103,7 @@ ht-degree: 7%
 
 1. 在右側面板「[!UICONTROL 屬性]」區段內提供的「**[!UICONTROL 狀態]**」欄位中，選取「**[!UICONTROL 已核准]**」。
 
-   如果您將狀態選取為`Approved`，並且已為您的Experience Manager Assets啟用[具有OpenAPI功能的Dynamic Media ](/help/assets/dynamic-media-open-apis-overview.md)或[Content Hub](/help/assets/product-overview.md)，或兩者皆已啟用，則您可以在&#x200B;**[!UICONTROL 核准目標]**&#x200B;欄位中檢視`Delivery`和`Content Hub`可用選項。
+   如果您將狀態選取為`Approved`，並且已為您的Experience Manager Assets啟用[具有OpenAPI功能的Dynamic Media &#x200B;](/help/assets/dynamic-media-open-apis-overview.md)或[Content Hub](/help/assets/product-overview.md)，或兩者皆已啟用，則您可以在&#x200B;**[!UICONTROL 核准目標]**&#x200B;欄位中檢視`Delivery`和`Content Hub`可用選項。
 
    * 選取&#x200B;**[!UICONTROL 傳送]**，讓具備OpenAPI功能的Dynamic Media與Content Hub都能使用資產。 如果您未啟用Content Hub，選取此選項會讓資產僅供具有OpenAPI功能的Dynamic Media使用。
    * 選取&#x200B;**[!UICONTROL Content Hub]**，讓資產可供Content Hub使用。

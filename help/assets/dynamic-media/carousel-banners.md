@@ -34,7 +34,7 @@ ht-degree: 1%
 
 ## 觀看輪播橫幅的建立方式 {#watch-how-carousel-banners-are-created}
 
-觀看如何建立[輪播橫幅的逐步解說](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner) （持續時間： 10分33秒）。 您也會瞭解如何預覽、編輯及傳遞輪播橫幅。
+觀看如何建立[輪播橫幅的逐步解說](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&emailurl=https://s7d5.scene7.com/s7/emailFriend&serverUrl=https://s7d5.scene7.com/is/image/&config=Scene7SharedAssets/Universal_HTML5_Video_social&contenturl=https://s7d5.scene7.com/skins/&asset=S7tutorials/InteractiveCarouselBanner) （持續時間： 10分33秒）。 您也會瞭解如何預覽、編輯及傳遞輪播橫幅。
 
 >[!NOTE]
 >
@@ -77,7 +77,7 @@ ht-degree: 1%
 
    新增一或多個熱點或影像地圖至影像橫幅。 然後，將每個專案與連結、快速檢視或體驗片段等動作建立關聯。 新增熱點或影像地圖後，您可以發佈轉盤集來完成此工作。 發佈作業會建立內嵌程式碼，您可將其用於複製並套用至網站登陸頁面。
 
-   請參閱[ （選擇性）預覽轉盤橫幅](#optional-previewing-carousel-banners) — 選擇性。 如有需要，您可以檢視轉盤集的表示方式，並測試其互動性。
+   請參閱[&#x200B; （選擇性）預覽轉盤橫幅](#optional-previewing-carousel-banners) — 選擇性。 如有需要，您可以檢視轉盤集的表示方式，並測試其互動性。
 
 1. [發佈轉盤橫幅](#publishing-carousel-banners)。
 
@@ -147,10 +147,10 @@ ht-degree: 1%
    <td>在查詢字串中找到單一SKU。</td>
    <td><p>錄製的快速檢視URL包含以下專案：</p>
     <ul>
-     <li><p><code>https://server/json?productId=866558&amp;source=100</code></p> </li>
-     <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li>
-     <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li>
-     <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=866558&source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=1196184&source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=1081492&source=100</code></p> </li>
+     <li><p><code>https://server/json?productId=1898294&source=100</code></p> </li>
     </ul> <p>URL中唯一的變數部分是<code>productId=</code>查詢字串引數的值，而且它顯然是SKU值。 因此，熱點或影像地圖只需要填入如下值的SKU欄位 <code>866558,</code> <code>1196184,</code> <code>1081492,</code> <code>1898294.</code></p> </td>
   </tr>
   <tr>
@@ -166,9 +166,9 @@ ht-degree: 1%
    <td>查詢字串中的SKU和類別ID。</td>
    <td><p>錄製的快速檢視URL包含以下專案：</p>
     <ul>
-     <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li>
-     <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li>
-     <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li>
+     <li><p><code>https://server/quickView/product/?category=1100004&prodId=305466</code></p> </li>
+     <li><p><code>https://server/quickView/product/?category=1100004&prodId=310181</code></p> </li>
+     <li><p><code>https://server/quickView/product/?category=1740148&prodId=308706</code></p> </li>
     </ul> <p>在這種情況下，URL中有兩個不同的部分。 SKU儲存在<code>prodId</code>引數中，而類別識別碼儲存在<code>category=</code>引數中。</p> <p>因此，熱點/影像地圖定義是配對。 即SKU值和稱為<code>categoryId</code>的額外變數。 產生的配對如下：</p>
     <ul>
      <li><p>SKU是<strong><code>305466</code></strong>，<code>categoryId</code>是<code>1100004</code>。</p> </li>
@@ -231,7 +231,7 @@ ht-degree: 1%
    >* 變更影像地圖的醒目提示樣式或用於連結區的圖示。
    >* 編輯檢視器預設集之前，請先選擇要作為預設集基礎的樣式。 如果您未選擇樣式，當您開始編輯檢視器預設集時，如果您變更為其他預設集，則會遺失所有變更。
 
-   您也可以預覽轉盤橫幅的外觀。 請參閱[ （選擇性）預覽轉盤橫幅](#optional-previewing-carousel-banners)。
+   您也可以預覽轉盤橫幅的外觀。 請參閱[&#x200B; （選擇性）預覽轉盤橫幅](#optional-previewing-carousel-banners)。
 
 1. 完成時選取&#x200B;**[!UICONTROL 儲存]**。
 
@@ -253,7 +253,7 @@ ht-degree: 1%
 
 當您完成建立轉盤橫幅時，可以選擇性使用預覽，檢視轉盤橫幅向客戶呈現的呈現方式。
 
-請參閱[ （選擇性）預覽轉盤橫幅](#optional-previewing-carousel-banners)。
+請參閱[&#x200B; （選擇性）預覽轉盤橫幅](#optional-previewing-carousel-banners)。
 
 >[!NOTE]
 >
@@ -325,7 +325,7 @@ ht-degree: 1%
 
    ![experience_fragment-carouselbanner](assets/experience_fragment-carouselbanner.png)
 
-   您也可以預覽轉盤橫幅的外觀。 請參閱[ （選擇性）預覽轉盤橫幅](#optional-previewing-carousel-banners)。
+   您也可以預覽轉盤橫幅的外觀。 請參閱[&#x200B; （選擇性）預覽轉盤橫幅](#optional-previewing-carousel-banners)。
 
 1. 選取「**[!UICONTROL 儲存]**」。
 1. 發佈轉盤集。 發佈作業會建立可在網站頁面上使用的內嵌程式碼或URL。 如果您是Experience Manager Sites客戶，請直接將輪播集新增至您的網頁。

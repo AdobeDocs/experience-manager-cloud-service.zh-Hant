@@ -18,7 +18,7 @@ ht-degree: 2%
 | AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/aem-forms-architecture-deployment.html?lang=zh-Hant) |
 | AEM as a Cloud Service  | 本文章 |
 
-[!DNL Adobe Experience Manager Forms] as a Cloud Service是雲端原生解決方案，企業可建立、管理、發佈和更新複雜的數位表格和通訊，同時將提交的資料與後端程式、商業規則整合，並將資料儲存在外部資料存放區。 它延伸[!DNL Adobe Experience Manager as a Cloud Service]。 若要進一步瞭解擴充、部署、環境和其他基礎結構，請參閱[ [!DNL Adobe Experience Manager as a Cloud Service]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/core-concepts/architecture.html?lang=zh-Hant)的架構簡介。
+[!DNL Adobe Experience Manager Forms] as a Cloud Service是雲端原生解決方案，企業可建立、管理、發佈和更新複雜的數位表格和通訊，同時將提交的資料與後端程式、商業規則整合，並將資料儲存在外部資料存放區。 它延伸[!DNL Adobe Experience Manager as a Cloud Service]。 若要進一步瞭解擴充、部署、環境和其他基礎結構，請參閱[&#x200B; [!DNL Adobe Experience Manager as a Cloud Service]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/core-concepts/architecture.html?lang=zh-Hant)的架構簡介。
 
 AEM Formsas a Cloud Service支援兩個主要使用案例：數位註冊與客戶通訊。 下圖說明這兩個使用案例的架構。
 

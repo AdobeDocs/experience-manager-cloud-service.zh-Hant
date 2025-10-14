@@ -38,9 +38,9 @@ ht-degree: 42%
 
 1. 在&#x200B;**環境**&#x200B;卡片上，按一下![更多圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，然後按一下&#x200B;**Developer Console**。
 
-   * 如需 Developer Console 的更多詳細資訊，請參閱[存取 Developer Console ](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console)。
+   * 如需 Developer Console 的更多詳細資訊，請參閱[存取 Developer Console &#x200B;](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console)。
 
-   ![ Developer Console 選單選項](/help/implementing/cloud-manager/assets/developer-console-menu-option.png)
+   ![&#x200B; Developer Console 選單選項](/help/implementing/cloud-manager/assets/developer-console-menu-option.png)
 
 1. 在&#x200B;**Developer Console**&#x200B;頁面上按一下&#x200B;**休眠**。
 
@@ -76,7 +76,7 @@ ht-degree: 42%
 
 1. 在&#x200B;**環境**&#x200B;卡片上，按一下![更多圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，然後按一下&#x200B;**Developer Console**。
 
-   * 如需 Developer Console 的更多詳細資訊，請參閱[存取 Developer Console ](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console)。
+   * 如需 Developer Console 的更多詳細資訊，請參閱[存取 Developer Console &#x200B;](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console)。
 
 1. 按一下&#x200B;**解除休眠**。
 

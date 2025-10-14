@@ -136,7 +136,7 @@ In the following video, Adaptive Form components are bound with corresponding Ac
 
 現在，當最適化表單被提交時，會建立一個更新的記錄檔案。
 
-![已更新 — ](assets/we-retail-new-invoice-sent-to-customer.png)
+![已更新 — &#x200B;](assets/we-retail-new-invoice-sent-to-customer.png)
 
 ## 使用記錄檔案時的主要考量事項 {#key-considerations-when-working-with-document-of-record}
 

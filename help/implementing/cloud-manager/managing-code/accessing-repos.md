@@ -66,4 +66,4 @@ Cloud Manager 不會提供[私人存放庫](private-repositories.md) 的存取�
 
 您可以隨時撤銷存取密碼。
 
-若要這麼做，[為此要求](https://experienceleague.adobe.com/zh-hant?support-solution=Experience+Manager&amp;support-tab=home#support)建立支援票證。 票證會被視為高優先順序，通常在一天內被撤銷。
+若要這麼做，[為此要求](https://experienceleague.adobe.com/zh-hant?support-solution=Experience+Manager&support-tab=home#support)建立支援票證。 票證會被視為高優先順序，通常在一天內被撤銷。

@@ -36,7 +36,7 @@ ht-degree: 97%
       * 如有需要，可加以調整。
 
    ![建立資料夾](../assets/assets-folder-create.png)
-1. 透過將游標停留並點選核取記號來選取剛建立的資料夾。然後從工具列中選取「**屬性**」(或使用 `p`[ 鍵盤快速鍵](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md))。
+1. 透過將游標停留並點選核取記號來選取剛建立的資料夾。然後從工具列中選取「**屬性**」(或使用 `p`[&#x200B; 鍵盤快速鍵](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md))。
 1. 在&#x200B;**屬性**&#x200B;視窗中，選擇&#x200B;**雲端服務**&#x200B;索引標籤。
 1. 針對&#x200B;**雲端設定**，選取您先前建立的[設定](create-configuration.md)。
    ![設定資產資料夾](../assets/assets-folder-configure.png)

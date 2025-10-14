@@ -135,7 +135,7 @@ The dialog box that displays depends on whether the download list includes expir
 
 * [智慧型裁切](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles)：智慧型裁切在裁切程式進行期間，只著重於資產的重要部分。 Dynamic Media智慧型裁切運用由Adobe Sensei提供支援的人工智慧來追蹤地標，確保我們的資產在所有熒幕大小上都能呈現最佳效果。 [!DNL Adobe Experience Manager]智慧型裁切會顯示資產轉譯的寬度和高度以及標題。 如需詳細資訊，請參閱[搭配AEM Assets Dynamic Media使用智慧型裁切](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use)。
 
-  智慧型裁切轉譯會顯示，而且只有在您能存取具有OpenAPI功能的[Dynamic Media ](/help/assets/dynamic-media-open-apis-overview.md)時，才能下載。 智慧型裁切轉譯僅適用於影像資產。
+  智慧型裁切轉譯會顯示，而且只有在您能存取具有OpenAPI功能的[Dynamic Media &#x200B;](/help/assets/dynamic-media-open-apis-overview.md)時，才能下載。 智慧型裁切轉譯僅適用於影像資產。
 
   ![轉譯型別](/help/assets/assets/renditions-types.png)
 

@@ -182,7 +182,7 @@ interface SelectedDestination {
 </html>
 ```
 
-如需詳細的範例，請造訪[目標選擇器代碼範例 ](https://github.com/adobe/aem-assets-selectors-mfe-examples)。
+如需詳細的範例，請造訪[目標選擇器代碼範例 &#x200B;](https://github.com/adobe/aem-assets-selectors-mfe-examples)。
 
 ## 使用目標選擇器屬性 {#destination-selector-properties}
 

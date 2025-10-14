@@ -36,7 +36,7 @@ Dynamic Media Prime的其他主要優點包括：
 
 ### 先決條件 {#pre-requisites-dm-prime}
 
-* [AEM Sites as a Cloud Service ](/help/sites-cloud/authoring/quick-start.md)
+* [AEM Sites as a Cloud Service &#x200B;](/help/sites-cloud/authoring/quick-start.md)
 * [AEM Assets as a Cloud Service](/help/assets/overview.md)
 * [Assets as a Cloud Service Prime](/help/assets/assets-prime.md)
 
@@ -59,7 +59,7 @@ Dynamic Media Ultimate是Experience Manager Assets的啟用服務，包含[具�
 
 ### 先決條件 {#pre-requisites-dm-ultimate}
 
-* [AEM Sites as a Cloud Service ](/help/sites-cloud/authoring/quick-start.md)
+* [AEM Sites as a Cloud Service &#x200B;](/help/sites-cloud/authoring/quick-start.md)
 * [AEM Assets as a Cloud Service](/help/assets/overview.md)
 * [Assets as a Cloud Service Ultimate](/help/assets/assets-ultimate-overview.md)
 

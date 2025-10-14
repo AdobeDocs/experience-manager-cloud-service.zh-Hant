@@ -339,7 +339,7 @@ AEM Screens元件在編輯模式與預覽/生產模式中的轉譯方式不同�
 
    這麼做可確保只在「預覽/生產」模式中載入樣式。
 
-   ![ /apps/weretail-run/components/content/helloworld/clientlibs/production的屬性](/help/screens-cloud/developing/assets/2018-04-30_at_5_04pm.png)
+   ![&#x200B; /apps/weretail-run/components/content/helloworld/clientlibs/production的屬性](/help/screens-cloud/developing/assets/2018-04-30_at_5_04pm.png)
 
    /apps/weretail-run/components/content/helloworld/clientlibs/production的屬性
 

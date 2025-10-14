@@ -163,7 +163,7 @@ AEM Forms as a Cloud Service提供DocuSign的自訂提交動作。 提交動作�
 您可以為現有的調適型表單啟用[!DNL DocuSign]，或建立啟用[!DNL DocuSign]的調適型表單。 選擇下列其中一項：
 
 - [建立啟用 [!DNL DocuSign] 的最適化表單](#create-an-adaptive-form-for-docusign)
-- 針對現有的最適化表單[啟用 [!DNL DocuSign] ](#editafsign)。
+- 針對現有的最適化表單[啟用 [!DNL DocuSign] &#x200B;](#editafsign)。
 
 #### 為DocuSign建立最適化表單 {#create-an-adaptive-form-for-docusign}
 

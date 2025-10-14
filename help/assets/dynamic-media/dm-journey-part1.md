@@ -262,7 +262,7 @@ _根據選取的「大」影像預設集預覽資產的轉譯。 已按一下URL
 ![根據Zoom Vertical Light檢視器預設集預覽資產](/help/assets/dynamic-media/assets/dm-viewer-preset.png)
 _根據選取的「ZoomVertical_light」檢視器預設集預覽資產。 滑鼠指標(`+`)移到手錶上以放大。 請注意URL和內嵌按鈕。_
 
-以上轉譯為即時轉譯！ [試用](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&amp;config=jpearldemo/ZoomVertical_light){target="_blank"}。
+以上轉譯為即時轉譯！ [試用](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&config=jpearldemo/ZoomVertical_light){target="_blank"}。
 
 ## 選擇性 — 瞭解更多
 

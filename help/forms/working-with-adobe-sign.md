@@ -57,7 +57,7 @@ ht-degree: 1%
 
 若要為最適化表單設定[!DNL Adobe Sign]：
 
-1. [為最適化表單啟用 [!DNL Adobe Sign] ](#enableadobsignforanadaptiveform)
+1. [為最適化表單啟用 [!DNL Adobe Sign] &#x200B;](#enableadobsignforanadaptiveform)
 1. [將 [!DNL Adobe Sign] 欄位新增至最適化表單](#addadobesignfieldstoanadaptiveform)
 1. [為最適化表單選取 [!DNL Adobe Sign] Cloud Service](#select-adobe-sign-cloud-service-and-signing-order)
 
@@ -71,7 +71,7 @@ ht-degree: 1%
 您可以為現有的調適型表單啟用[!DNL Adobe Sign]，或建立啟用[!DNL Adobe Sign]的調適型表單。 選擇下列其中一項：
 
 * [建立啟用 [!DNL Adobe Sign] 的最適化表單](#create-an-adaptive-form-for-adobe-sign)
-* 針對現有的最適化表單[啟用 [!DNL Adobe Sign] ](#editafsign)。
+* 針對現有的最適化表單[啟用 [!DNL Adobe Sign] &#x200B;](#editafsign)。
 
 #### 建立Adobe Sign適用性表單 {#create-an-adaptive-form-for-adobe-sign}
 

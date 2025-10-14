@@ -71,4 +71,4 @@ ht-degree: 2%
 
 ## 下一步 {#whats-next}
 
-現在您已指派頻道給顯示區，接下來應該檢閱檔案[安裝和設定AEM as a Cloud Service的Screens Player ](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md)，以繼續您的Screensas a Cloud Service歷程。
+現在您已指派頻道給顯示區，接下來應該檢閱檔案[安裝和設定AEM as a Cloud Service的Screens Player &#x200B;](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md)，以繼續您的Screensas a Cloud Service歷程。

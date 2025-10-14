@@ -31,7 +31,7 @@ ht-degree: 2%
 
 除非所有頁面都已預先為您建立，否則您必須先建立頁面，然後才能開始建立內容：
 
-1. 開啟[ **網站**&#x200B;主控台](/help/sites-cloud/authoring/sites-console/introduction.md)。
+1. 開啟[&#x200B; **網站**&#x200B;主控台](/help/sites-cloud/authoring/sites-console/introduction.md)。
 1. 導覽至您要建立新頁面的位置。
 1. 使用工具列中的&#x200B;**Create**&#x200B;開啟下拉式選取器，然後從清單中選取&#x200B;**Page**：
 

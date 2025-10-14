@@ -38,7 +38,7 @@ Adobe企業產品說明檔案提供不只是一系列的使用手冊。 探索�
 + [Experience Manager Sites Optimizer](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-sites-optimizer/content/home)
 + [Experience Manager 6.5 LTS](experience-manager-65-lts.md)
 + [Experience Manager 6.5](experience-manager-65.md)
-+ [Experience Manager ](experience-manager-release-information#/help/using/aem-previous-versions.md)
++ [Experience Manager &#x200B;](experience-manager-release-information#/help/using/aem-previous-versions.md)
 + [Experience Manager Assets Essentials](experience-manager-assets-essentials#help)
 + [Commerce (包括Magento Open Source)](commerce.md)
 

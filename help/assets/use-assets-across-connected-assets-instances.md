@@ -244,7 +244,7 @@ Experience Manager可讓您將遠端DAM部署作為來源連線至多個Experien
 
 ### 管理遠端DAM中資產的更新 {#handling-updates-to-remote-assets}
 
-在設定遠端DAM與Sites部署之間的連線[之後，遠端DAM上的資產便可在Sites部署中使用。 ](#configure-a-connection-between-sites-and-assets-deployments)然後，您可以在遠端DAM資產或資料夾上執行更新、刪除、重新命名和移動操作。 這些更新會在Sites部署中自動提供，但會有一些延遲。 此外，如果本機Experience Manager Sites頁面上使用了遠端DAM上的資產，則Sites頁面上會顯示遠端DAM上資產的更新。
+在設定遠端DAM與Sites部署之間的連線[之後，遠端DAM上的資產便可在Sites部署中使用。 &#x200B;](#configure-a-connection-between-sites-and-assets-deployments)然後，您可以在遠端DAM資產或資料夾上執行更新、刪除、重新命名和移動操作。 這些更新會在Sites部署中自動提供，但會有一些延遲。 此外，如果本機Experience Manager Sites頁面上使用了遠端DAM上的資產，則Sites頁面上會顯示遠端DAM上資產的更新。
 
 將資產從一個位置移動至另一個位置時，請確定您[調整引用](manage-digital-assets.md)，讓資產顯示在Sites頁面上。 如果您將資產移至無法從本機Sites部署存取的位置，資產就無法顯示在Sites部署上。
 

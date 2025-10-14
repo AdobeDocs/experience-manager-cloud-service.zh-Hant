@@ -181,7 +181,7 @@ AEM Forms as a Cloud Service提供開發、預備和生產環境。 您可以開
 
 適用於政府的Adobe Acrobat Sign解決方案團隊需要為您的Adobe Acrobat Sign應用程式（如下所列）啟用`re-direct URL`和某些範圍，才能產生認證（使用者端ID和使用者端密碼），讓您將AEM Forms與適用於政府的Adobe Acrobat Sign Solutions連線。
 
-與您的Adobe Acrobat Sign政府解決方案代表(`scopes`Adobe Professional Services團隊成員`re-direct URL`)共用[ （如下所列），以及建立並記下上一節的最後一步的](https://opensource.adobe.com/acrobat-sign/signgov/gstarted.html#password)。
+與您的Adobe Acrobat Sign政府解決方案代表(`scopes`Adobe Professional Services團隊成員`re-direct URL`)共用[&#x200B; （如下所列），以及建立並記下上一節的最後一步的](https://opensource.adobe.com/acrobat-sign/signgov/gstarted.html#password)。
 
 **_領域_**
 

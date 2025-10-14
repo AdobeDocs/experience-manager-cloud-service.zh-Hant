@@ -102,7 +102,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 1. 在「動態媒體重新處理工作流程」頁面的右上角附近，選取「**[!UICONTROL 編輯]**」以「解除鎖定」工作流程。
 1. 在工作流程中，選取Scene7批次上傳元件以開啟工具列，然後在工具列中選取&#x200B;**[!UICONTROL 設定]**。
 
-   ![ 「Dynamic Media重新處理」頁面上的「Scene7批次上傳」元件熒幕擷圖，滑鼠指標停留在「設定」圖示上](/help/assets/dynamic-media/assets/reprocess-assets8.png)。
+   ![&#x200B; 「Dynamic Media重新處理」頁面上的「Scene7批次上傳」元件熒幕擷圖，滑鼠指標停留在「設定」圖示上](/help/assets/dynamic-media/assets/reprocess-assets8.png)。
 
 1. 在&#x200B;**[!UICONTROL 批次上傳至Scene7 — 步驟屬性]**&#x200B;對話方塊上，設定下列專案：
    * 在&#x200B;**[!UICONTROL 標題]**&#x200B;和&#x200B;**[!UICONTROL 描述]**&#x200B;文字欄位中，視需要輸入新的標題和描述。

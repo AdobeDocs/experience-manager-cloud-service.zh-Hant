@@ -43,7 +43,7 @@ ht-degree: 90%
 
 ### AEM Sites 的 Extension Manager {#sites-extension-manager}
 
-**探索 [ AEM Sites 的全新 Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/)** ，透過設定 UI 擴充功能為您的 AEM 設定進行個人化。
+**探索 [&#x200B; AEM Sites 的全新 Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/)** ，透過設定 UI 擴充功能為您的 AEM 設定進行個人化。
 
 ![AEM Sites 的 Extension Manager](/help/assets/sites/extension-manager/homepage.png)
 

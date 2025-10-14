@@ -170,9 +170,9 @@ ht-degree: 0%
 在啟動設定程式之前，請確定您符合下列需求：
 
 1. [存取Cloud Manager](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager)。
-1. [已在您的環境中啟動 [!DNL Dynamic Media with OpenAPI] ](#activate-dynamic-media-with-openapi)。
+1. [已在您的環境中啟動 [!DNL Dynamic Media with OpenAPI] &#x200B;](#activate-dynamic-media-with-openapi)。
 1. 已啟用[!DNL Dynamic Media with OpenAPI]處於就緒狀態。
-1. 用於傳遞層級的網域的EV或OV型別憑證。 如需詳細資訊，請參閱[ SSL憑證簡介](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/introduction-to-ssl-certificates)。
+1. 用於傳遞層級的網域的EV或OV型別憑證。 如需詳細資訊，請參閱[&#x200B; SSL憑證簡介](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/introduction-to-ssl-certificates)。
 
 #### 使用Cloud Manager在傳遞層級中設定自訂網域 {#configure-custom-domain-in-delivery-tier-using-cloud-manager}
 
