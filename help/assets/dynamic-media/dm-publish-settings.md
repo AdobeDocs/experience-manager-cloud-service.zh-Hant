@@ -58,7 +58,7 @@ hidefromtoc: yes -->
    * [色彩管理屬性](#color-management-attributes-tab)標籤
 
    ![Dynamic Media發佈設定頁面](/help/assets/assets-dm/dm-publish-setup.png)
-   *Dynamic Media發佈設定頁面，已選取&#x200B;**[!UICONTROL 要求屬性]**索引標籤。*<br><br>
+   *Dynamic Media發佈設定頁面，已選取&#x200B;**[!UICONTROL 要求屬性]**&#x200B;索引標籤。*<br><br>
 
 1. 完成後，在頁面的右上角附近，選取&#x200B;**[!UICONTROL 儲存]**。
 
