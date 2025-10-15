@@ -33,7 +33,7 @@ ht-degree: 0%
 
 實驗外掛程式用於[Edge Delivery Services](/help/edge/overview.md)的內容中，因此您需要Github帳戶、SharePoint或Google Drive之類的內容存放庫，此外也需要[AEM Sidekick](https://www.aem.live/docs/sidekick)。 另請參閱[快速入門 — Universal Editor開發人員教學課程頁面](https://www.aem.live/developer/tutorial)和[快速入門 — 開發人員教學課程](https://www.aem.live/developer/tutorial)。
 
-完成所有設定後，**請觀看此影片** （標題為[立即實驗](https://business.adobe.com/products/experience-manager/sites/testing-optimization.html)），以簡短示範實驗外掛程式的運作方式。
+完成所有設定後，**請觀看此影片** （標題為[立即實驗](https://business.adobe.com/tw/products/experience-manager/sites/testing-optimization.html)），以簡短示範實驗外掛程式的運作方式。
 
 ## 常用詞語 {#frequently-used-terms}
 

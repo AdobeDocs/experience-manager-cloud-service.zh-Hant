@@ -13,7 +13,7 @@ ht-degree: 5%
 
 # 智慧標記培訓
 
-智慧標籤培訓可讓您培訓標籤，這樣就能在相關標籤不存在時指定細節。 它使用[Adobe Sensei](https://business.adobe.com/why-adobe/experience-cloud-artificial-intelligence.html)的人工智慧型架構，根據您的標籤結構和商業分類訓練其影像辨識演演算法。 然後，此內容智慧可用來將相關標籤套用至不同的資產集。 [!DNL Experience Manager Assets]預設會自動將智慧標籤套用至已上傳的資產。
+智慧標籤培訓可讓您培訓標籤，這樣就能在相關標籤不存在時指定細節。 它使用[Adobe Sensei](https://business.adobe.com/tw/why-adobe/experience-cloud-artificial-intelligence.html)的人工智慧型架構，根據您的標籤結構和商業分類訓練其影像辨識演演算法。 然後，此內容智慧可用來將相關標籤套用至不同的資產集。 [!DNL Experience Manager Assets]預設會自動將智慧標籤套用至已上傳的資產。
 
 ## 決定智慧標籤培訓的需求 {#smart-tag-training-requirement}
 

@@ -48,7 +48,7 @@ Classic CIF 及其相依性已不再可用。依賴此CIF版本（使用`com.ado
 
 >[!TIP]
 >
->如果沒有可用的即時API，則應使用具有API的外部產品快取進行整合。 範例[Magento開放原始碼。](https://business.adobe.com/products/magento/open-source.html)
+>如果沒有可用的即時API，則應使用具有API的外部產品快取進行整合。 範例[Magento開放原始碼。](https://business.adobe.com/tw/products/magento/open-source.html)
 
 ## 具有AEM轉譯的產品目錄體驗 {#aem-rendering}
 

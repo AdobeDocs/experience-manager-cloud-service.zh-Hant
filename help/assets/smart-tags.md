@@ -19,7 +19,7 @@ ht-degree: 3%
 
 例如，在字典中依字母順序排列的單字比隨機散佈的單字更容易找到。 標籤有類似的用途。 它會根據商業分類法組織資產，確保最相關的資產會出現在搜尋結果中。 例如，汽車製造商可以使用模型名稱來標籤汽車影像，以便在設計促銷活動時只顯示相關影像。 無論是「跑鞋」或「跑鞋」標籤的使用者無需擔心拼字、拼字變化或替代搜尋詞 — 智慧標籤可識別所有搜尋詞。
 
-在背景中，此功能使用[Adobe Sensei](https://business.adobe.com/products/sensei/adobe-sensei.html)的人工智慧型架構，依預設會自動將智慧標籤套用至已上傳的資產，連同對齊商業分類的文字。
+在背景中，此功能使用[Adobe Sensei](https://business.adobe.com/tw/products/sensei/adobe-sensei.html)的人工智慧型架構，依預設會自動將智慧標籤套用至已上傳的資產，連同對齊商業分類的文字。
 
 ## 必要條件和設定 {#smart-tags-prereqs-config}
 
