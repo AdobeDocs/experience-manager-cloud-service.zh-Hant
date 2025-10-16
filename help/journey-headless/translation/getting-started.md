@@ -84,7 +84,7 @@ AEM 的內容，無論是 Headless 網頁還是傳統網頁，都是由其結構
 1. 導覽至內容片段主控台，並選取內容片段模式的「 」標籤。
 1. 內容片段模型通常儲存在資料夾結構中。選取您的專案資料夾。
 1. 接著列出模型。選取模型並開啟編輯器。
-1. **內容片段模型編輯器**開啟。
+1. **內容片段模型編輯器**&#x200B;開啟。
    ![內容片段模型編輯器](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-field-properties.png)
 
    * 左側面板會列出可能的資料型別。
