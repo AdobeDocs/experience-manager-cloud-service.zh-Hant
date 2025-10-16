@@ -5,8 +5,8 @@ exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 2c74a3a42dd21e2eaf71c1922931d5fa5149f7c5
-workflow-type: ht
+source-git-commit: 18c997a5644288e870c109a8d745b196349b923d
+workflow-type: tm+mt
 source-wordcount: '791'
 ht-degree: 100%
 
@@ -89,10 +89,6 @@ ht-degree: 100%
    * 指定所參考資源的路徑
 * **片段參考 (UUID)**
    * 在編輯器中，參考會指定所參考資源的路徑；在內部，參考被視為參考資源的通用唯識別碼 (UUID)。
-
-<!--
-![Content Modeling with Content Fragments](/help/journey-headless/developer/assets/headless-modeling-01.png "Content Modeling with Content Fragments")
--->
 
 ### 如何製作巢狀片段 {#author-nested-fragment}
 

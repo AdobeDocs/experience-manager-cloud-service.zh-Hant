@@ -5,10 +5,10 @@ exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: d05c510f9845c006dfb1c4d58438c9632c1325d8
 workflow-type: tm+mt
 source-wordcount: '1409'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -81,16 +81,15 @@ AEM 的內容，無論是 Headless 網頁還是傳統網頁，都是由其結構
 
 因為內容模型定義了內容結構，所以您需要知道模型的哪些欄位必須翻譯。通常，您與內容架構師一起定義它。若要瀏覽內容模型的欄位，請按照以下步驟操作。
 
-1. 導覽至「**工具**」>「**一般**」>「**內容片段模型**」。
+1. 導覽至內容片段主控台，並選取內容片段模式的「 」標籤。
 1. 內容片段模型通常儲存在資料夾結構中。選取您的專案資料夾。
-1. 接著列出模型。選取模型來查看詳細資訊。
-   ![內容片段模型](assets/content-fragment-models.png)
-1. **內容片段模型編輯器**&#x200B;開啟。
-   1. 左欄包含模型的欄位。我們對此欄感興趣。
-   1. 左欄包含可新增至模型的欄位。此欄我們可以忽略。
-      ![內容片段模型編輯器](assets/content-fragment-model-editor.png)
-1. 選取模型的其中一個欄位。AEM 會標記該欄位，該欄位的詳細資料會顯示在右欄中。
-   ![內容片段模型編輯器詳細資料](assets/content-fragment-model-editor-detail.png)
+1. 接著列出模型。選取模型並開啟編輯器。
+1. **內容片段模型編輯器**開啟。
+   ![內容片段模型編輯器](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-field-properties.png)
+   1. 左側面板會列出可能的資料型別。
+   1. 右側面板會顯示適用於所選欄位的屬性。
+   * 中間的面板會保留您已建立及定義的欄位 — 或將會保留。
+1. 選取模型的其中一個欄位。AEM會加以標籤，而欄位的詳細資訊會顯示於右側面板。
 1. 內容架構者會在每一個需要翻譯的內容模型欄位上啟用「**可翻譯**」欄位。
 
 >[!TIP]
@@ -192,4 +191,4 @@ AEM 的內容，無論是 Headless 網頁還是傳統網頁，都是由其結構
 * [設定翻譯整合框架](/help/sites-cloud/administering/translation/integration-framework.md) - 了解如何設定翻譯整合框架以與協力廠商翻譯服務整合。
 * [管理翻譯專案](/help/sites-cloud/administering/translation/managing-projects.md) - 了解如何在 AEM 中建立和管理機器和人工翻譯專案。
 * [AEM as a Headless CMS 簡介](/help/headless/introduction.md)
-* [AEM 中的 Headless 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=zh-Hant)
+* [AEM 中的 Headless 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)

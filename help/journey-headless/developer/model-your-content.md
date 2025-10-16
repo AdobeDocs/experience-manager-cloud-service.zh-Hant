@@ -5,8 +5,8 @@ exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 22876fb2c74c705c3a03e81f7f87a5c2392d8ff4
-workflow-type: ht
+source-git-commit: 2ccca86a0e611b93c273e37abb6e0fd7870421d4
+workflow-type: tm+mt
 source-wordcount: '1830'
 ht-degree: 100%
 
@@ -218,7 +218,7 @@ AEM 提供以下資料類型用於建立內容模型：
 
 建立完成後，您便可以編輯您的模型。例如：
 
-![內容片段模型](assets/cfm-model.png)
+![內容片段模型](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-field-properties.png)
 
 >[!NOTE]
 >
@@ -256,12 +256,6 @@ AEM 提供以下資料類型用於建立內容模型：
 
 ## 從一些範例開始 {#getting-started-examples}
 
-<!--
-tbc...
-...and/or see the structures covered for the GraphQL samples...
-...will those (ever) be delivered as an official sample package?
--->
-
 如需基本結構範例，請參閱範例內容片段結構。
 
 ## 下一步 {#whats-next}
@@ -276,5 +270,5 @@ tbc...
    * [管理內容片段](/help/sites-cloud/administering/content-fragments/managing.md) - 建立和編寫內容片段，此頁面會引領您到其他詳細章節
 * [AEM GraphQL 結構描述](access-your-content.md) - GraphQL 如何實現模型
 * [範例內容片段結構](/help/headless/graphql-api/sample-queries.md#content-fragment-structure-graphql)
-* [AEM Headless 快速入門](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=zh-Hant) - 此為簡短的教學影片系列，概述如何使用 AEM 的 Headless 功能，包括內容模型和 GraphQL
-   * [GraphQL 模型基本概念](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/video-series/modeling-basics.html?lang=zh-Hant) - 了解如何在 Adobe Experience Manager (AEM) 中定義及使用內容片段以搭配 GraphQL 使用。
+* [AEM Headless 快速入門](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) - 此為簡短的教學影片系列，概觀如何使用 AEM 的 Headless 功能，包括內容模型和 GraphQL
+   * [GraphQL 模型基本概念](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/video-series/modeling-basics.html) - 了解如何在 Adobe Experience Manager (AEM) 中定義及使用內容片段以搭配 GraphQL 使用。

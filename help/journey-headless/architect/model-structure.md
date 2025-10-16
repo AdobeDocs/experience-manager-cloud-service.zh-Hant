@@ -5,10 +5,10 @@ exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 6306ad88b889197aff377dc0a72ea232cd76ff9c
+source-git-commit: 29c9b47fe10fd4109190ec91990e8ba7a0359f72
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 76%
+source-wordcount: '691'
+ht-degree: 83%
 
 ---
 
@@ -18,77 +18,48 @@ ht-degree: 76%
 
 在[AEM Headless 內容作者歷程](overview.md)的一開始，[AEM Headless 內容模型基本知識](basics.md)介紹了和 Headless 內容製作相關的基本概念和術語。
 
-本文基於這些原則，好讓您瞭解如何為您的AEM Headless專案建立自己的內容片段模型。
+此文章以這些原則為基礎，讓您了解如何為 AEM Headless 專案建立自己的內容片段模型。
 
 ## 目標 {#objective}
 
 * **客群**：初學者
 * **目標**：使用內容片段模型為您的 Headless CMS 建立內容模型的概念和機制。
 
-<!-- which persona does this? -->
-<!-- and who allows the configuration on the folders? -->
-
-<!--
-## Enabling Content Fragment Models {#enabling-content-fragment-models}
-
-At the very start you need to enable Content Fragment Models for your site, this is done in the Configuration Browser; under Tools > General > Configuration Browser. You can either select to configure the global entry, or create a configuration. For example:
-
-![Define configuration](/help/sites-cloud/administering/content-fragments/assets/cfm-conf-01.png)
-
->[!NOTE]
->
->See Additional Resources - Content Fragments in the Configuration Browser
--->
-
 ## 建立內容片段模型 {#creating-content-fragment-models}
 
-接著，即可建立內容片段模型並定義結構。
+然後可以建立內容片段模型並定義其結構。
 
-1. 在內容片段主控台中，選取內容片段模式的面板。
+1. 在內容片段主控台中，選擇內容片段模型面板。
 
-1. 導覽至適合您組態或子組態的資料夾。
+1. 根據您的設定或子設定導覽至適合的資料夾。
 
-1. 使用&#x200B;**建立**&#x200B;開啟&#x200B;**新內容片段模式**&#x200B;對話方塊。
+1. 使用「**建立**」開啟「**新內容片段模型**」對話框。
 
    ![標題和說明](/help/sites-cloud/administering/content-fragments/assets/cf-managing-content-fragment-models-create.png)
 
-1. 完成詳細資料
+1. 填寫詳細資訊
 
-1. 使用&#x200B;**建立**&#x200B;儲存空的模型，或使用&#x200B;**建立並開啟**。
-
-<!--
-Then the Content Fragments Models can be created and the structure defined. This can be done under **Tools** > **General** > **Content Fragment Models**. 
-
-![Content Fragment Models in Tools](assets/cfm-tools.png)
-
-After selecting this you navigate to the location for your model and select **Create**. Here you can enter various key details.
-
-The option **Enable model** is activated by default. This means that your model is available for use (in creating Content Fragments) as soon as you have saved it. You can deactivate this if you want - there are opportunities later to enable (or disable) an existing model.
-
-![Create Content Fragment Model](/help/sites-cloud/administering/content-fragments/assets/cfm-models-02.png)
-
-Confirm with **Create** and you can then **Open** your model to start defining the structure.
--->
+1. 使用「**建立**」來儲存空模型，或選擇「**建立並開啟**」。
 
 ## 定義內容片段模型 {#defining-content-fragment-models}
 
-當您首次開啟新模型時，您會看到左側有一大片空白，右側有一長串「**資料類型**」：
+第一次開啟新模型時，您會看到 — 中間有一個大的（相當大的）空白區域，左側有&#x200B;**個資料型別**&#x200B;的長清單，右側有&#x200B;**個屬性** （一開始是空的，就像所選欄位一樣）：
 
-![空白模型](/help/sites-cloud/administering/content-fragments/assets/cfm-models-03.png)
+![空白模型](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-empty-model.png)
 
 那麼 -該怎麼做？
 
-您可以將&#x200B;**資料類型**&#x200B;的執行個體拖曳到左側空間 - 您已經定義了模型！
+下列兩個動作您可以擇一執行：
 
-![定義欄位](/help/sites-cloud/administering/content-fragments/assets/cfm-models-04.png)
+* 將資料型別從左側面板拖曳至中間面板中欄位的必要位置。
+* 依資料型別選取+圖示以將其新增至欄位清單底部。
+* 選取中間面板中的「新增」 ，然後從產生的下拉式清單中選取所需的資料型別，以在清單底部新增欄位。
 
-新增資料類型後，您需要為該欄位定義&#x200B;**屬性**。這些屬性取決於所使用的型別。 例如：
+您已在定義模型！
 
-![資料屬性](/help/sites-cloud/administering/content-fragments/assets/cfm-models-05.png)
+新增資料類型後，您需要為該欄位定義&#x200B;**屬性**。所使用的類型會決定這些屬性。例如：
 
-您可以隨您所需新增多個欄位。例如：
-
-![內容片段模型](/help/sites-cloud/administering/content-fragments/assets/cfm-models-07.png)
+![資料屬性](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-field-properties.png)
 
 ### 您的內容作者 {#your-content-authors}
 
@@ -105,7 +76,7 @@ Confirm with **Create** and you can then **Open** your model to start defining t
 管理您的內容片段模型涉及：
 
 * 啟用 (或停用) 它們 - 這使作者在建立內容片段時可以使用。
-* 刪除 — 一律需要刪除，但您需要注意刪除已用於內容片段的模型；尤其是已發佈的片段。
+* 刪除 - 總是需要刪除功能，但您必須注意不要刪除已經有內容片段在使用的模型，特別是已發佈的片段。
 
 ## 發佈 {#publishing}
 
@@ -115,7 +86,7 @@ Confirm with **Create** and you can then **Open** your model to start defining t
 
 >[!NOTE]
 >
->如果作者嘗試發佈尚未發佈模型的內容片段，選擇清單會指出這一點，並且模型會與片段一起發佈。
+>如果作者想要發佈的內容片段尚未發佈其模型，在這個情況下會出現選取清單，而模型會與片段一起發佈。
 
 一旦模型發佈，就會被&#x200B;*鎖定*&#x200B;成作者的唯讀模式。這旨在防止可能導致現有 GraphQL 結構和查詢錯誤的變更，尤其是在發佈環境。它在主控台中顯示為&#x200B;**鎖定**。
 

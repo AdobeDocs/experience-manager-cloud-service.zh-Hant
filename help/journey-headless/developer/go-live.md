@@ -5,8 +5,8 @@ exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 2ccca86a0e611b93c273e37abb6e0fd7870421d4
+workflow-type: tm+mt
 source-wordcount: '1071'
 ht-degree: 100%
 
@@ -29,11 +29,6 @@ ht-degree: 100%
 * 在應用程式推出前加以保護和擴展
 * 監控效能和偵錯問題
 
-<!-- Alexandru: this is a bit redundant, to review again later
-
-## Prepare your AEM Headless Application for Go-Live {#prepare-your-aem-headless-application-for-golive}
-
--->
 若要讓 AEM Headless 應用程式準備好推出，請遵循下面概述的最佳做法。
 
 ## 在 Headless 應用程式推出前加以保護和擴展 {#secure-and-scale-before-launch}
@@ -66,9 +61,9 @@ ht-degree: 100%
 
 ## 部署至生產環境 {#deploy-to-production}
 
-確保一切都經過測試且運作正常後，您就可以將程式碼更新推送至 [Cloud Manager 中的集中式 Git 存放庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html?lang=zh-Hant)。
+確保一切都經過測試且運作正常後，您就可以將程式碼更新推送至 [Cloud Manager 中的集中式 Git 存放庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html)。
 
-將更新上傳到 Cloud Manager 後，可以使用 [Cloud Manager 的 CI/CD 管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=zh-Hant)部署到 AEM as a Cloud Service。
+將更新上傳到 Cloud Manager 後，可以使用 [Cloud Manager 的 CI/CD 管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)部署到 AEM as a Cloud Service。
 
 您可以使用 Cloud Manager CI/CD 管道開始部署程式碼，「[透過 Cloud Manager 和封裝管理員部署內容套件](/help/implementing/deploying/overview.md)」對此進行了詳細介紹。
 
@@ -134,8 +129,8 @@ ht-degree: 100%
 ## 其他資源 {#additional-resources}
 
 * [AEM as a Headless CMS 簡介](/help/headless/introduction.md)
-* [AEM 開發人員入口網站](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hant)
-* [AEM 中的 Headless 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=zh-Hant)
+* [AEM 開發人員入口網站](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* [AEM 中的 Headless 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
 * [部署至 AEM as a Cloud Service 概觀](/help/implementing/deploying/overview.md)
-* [使用 Cloud Manager 部署您的程式碼](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=zh-Hant)
-* [將 Cloud Manager Git 存放庫與外部 Git 存放庫整合，並將專案部署到 AEM as a Cloud Service。](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html?lang=zh-Hant)
+* [使用 Cloud Manager 部署您的程式碼](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)
+* [將 Cloud Manager Git 存放庫與外部 Git 存放庫整合，並將專案部署到 AEM as a Cloud Service。](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html)
