@@ -4,8 +4,8 @@ description: 了解有關設定和使用 AEM GraphQL 與內容片段的建議最
 exl-id: 4d6a5aaa-c8be-4858-ad07-085dc4fb77e7
 feature: Headless
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
-workflow-type: ht
+source-git-commit: 38a4bf89e099432163163e90e08aa0f47407724f
+workflow-type: tm+mt
 source-wordcount: '702'
 ht-degree: 100%
 
