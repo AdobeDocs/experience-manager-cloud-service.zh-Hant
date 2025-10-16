@@ -3,17 +3,17 @@ title: 通用編輯器預覽發行說明
 description: 這是通用編輯器預覽版本的發行說明。
 feature: Release Information
 role: Admin
-source-git-commit: fcccac27d9648cf8bc313583e4d8acc2ed6b1879
+source-git-commit: 7d30aa28b2409cdcb70c5491ee2d2d381d090dad
 workflow-type: tm+mt
-source-wordcount: '151'
-ht-degree: 84%
+source-wordcount: '168'
+ht-degree: 75%
 
 ---
 
 
 # 通用編輯器預覽發行說明 {#preview}
 
-這是通用編輯器&#x200B;**預覽版本**&#x200B;的發行說明。您目前可以在通用編輯器&#x200B;**預覽環境**&#x200B;中使用這些功能。這些功能預計於 2025 年 10 月 16 日正式推出。
+這是通用編輯器&#x200B;**預覽版本**&#x200B;的發行說明。您目前可以在通用編輯器&#x200B;**預覽環境**&#x200B;中使用這些功能。這些功能預計於 2025 年 10 月 23 日正式推出。
 
 提供這些&#x200B;**預覽**&#x200B;發行說明是為了方便您了解通用編輯器將有哪些變更，而您可以[切換至預覽環境](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)來測試這些變更。
 
@@ -27,9 +27,12 @@ ht-degree: 84%
 
 ## 即將推出的新功能 {#what-is-new}
 
-* 已引進更新的多欄位支援。
+* 現在支援在瀏覽器標籤之間複製和貼上。
+* 您現在可以使用meta標籤停用取消發佈按鈕。
 
 ## 即將推出的改善功能 {#other-improvements}
 
-* `AemContentFragmentReference`中的主機現已清除。
-* 已為SSL與無SSL Dispatcher設定新增邏輯。
+* 已改善結構樹。
+* 現在支援連結的影像。
+* 已改善復原/重做操作。
+
