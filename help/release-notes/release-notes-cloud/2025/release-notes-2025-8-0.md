@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.8.0 版發行�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.8.0 版發行說明。'
 feature: Release Information
 role: Admin
-source-git-commit: 4187f9bb08d8af214054b937a5426e95c1de748d
+source-git-commit: 245ad07ba6abbf18e2011cb71a15948c9b92f80f
 workflow-type: tm+mt
-source-wordcount: '1910'
-ht-degree: 100%
+source-wordcount: '1934'
+ht-degree: 96%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 100%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440931?quality=12&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -69,9 +69,9 @@ Content Hub 現在可以更快速地發現您所需的資產。使用新的批�
 
 ### 具有 OpenAPI 功能的 Dynamic Media 新功能 {#new-features-dynamic-media-with-openapi}
 
-**帶有 OpenAPI URL 的 SEO 友善 DM**
+**品牌和可讀取的資產傳遞URL**
 
-在 DM 中使用 OpenAPI 為資產傳遞建立自訂虛名 URL，以簡短易讀的識別碼取代系統產生的冗長 UUID。這讓連結更為 SEO 友善，而且更符合您的品牌或活動。虛名 URL 會在執行階段自動解析為原始資產 UUID，而不會中斷原有的工作流程。
+運用Dynamic Media中具有OpenAPI的虛名URL，讓具有OpenAPI的Dynamic Media更人性化。 虛名URL允許用簡短的、品牌控制的識別碼取代資產傳送URL中長、系統產生、難以記憶的UUID。 這可讓「虛名」URL變得更短、更易於閱讀和分享，且更能與您的品牌或行銷活動保持一致。 虛名 URL 會在執行階段自動解析為原始資產 UUID，而不會中斷原有的工作流程。
 
 >[!NOTE]
 >
@@ -160,7 +160,7 @@ OSGi properties:
 
 -->
 
-### Java 11 執行階段棄用 {#java11-runtime-deprecation}
+### 棄用 Java 11 執行階段 {#java11-runtime-deprecation}
 
 *Java 11 執行階段*&#x200B;現已棄用，且大多數環境已升級至效能更佳的 **Java 21 執行階段**。
 

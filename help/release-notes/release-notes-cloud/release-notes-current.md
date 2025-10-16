@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: f5510d83ed2ff52496fd7e83ba29010684731938
-workflow-type: ht
-source-wordcount: '1957'
-ht-degree: 100%
+source-git-commit: 245ad07ba6abbf18e2011cb71a15948c9b92f80f
+workflow-type: tm+mt
+source-wordcount: '1981'
+ht-degree: 96%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 100%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440931?quality=12&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -60,9 +60,9 @@ AEM 內容片段的內容模型編輯器經過現代化，與 AEM 中其他 Reac
 
 ### 具有 OpenAPI 功能的 Dynamic Media 新功能 {#new-features-dynamic-media-with-openapi}
 
-**帶有 OpenAPI URL 的 SEO 友善 DM**
+**品牌和可讀取的資產傳遞URL**
 
-在 DM 中使用 OpenAPI 為資產傳遞建立自訂虛名 URL，以簡短易讀的識別碼取代系統產生的冗長 UUID。這讓連結更為 SEO 友善，而且更符合您的品牌或活動。虛名 URL 會在執行階段自動解析為原始資產 UUID，而不會中斷原有的工作流程。
+運用Dynamic Media中具有OpenAPI的虛名URL，讓具有OpenAPI的Dynamic Media更人性化。 虛名URL允許用簡短的、品牌控制的識別碼取代資產傳送URL中長、系統產生、難以記憶的UUID。 這可讓「虛名」URL變得更短、更易於閱讀和分享，且更能與您的品牌或行銷活動保持一致。 虛名 URL 會在執行階段自動解析為原始資產 UUID，而不會中斷原有的工作流程。
 
 >[!NOTE]
 >
@@ -82,7 +82,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
