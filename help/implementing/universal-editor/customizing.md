@@ -4,10 +4,10 @@ description: 了解自訂通用編輯器的不同選項以支援內容作者的�
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 217288737cd199701b34b1d12fa755abcc09830a
-workflow-type: ht
-source-wordcount: '444'
-ht-degree: 100%
+source-git-commit: a72b4b7921a1a379bcd089682c02b0519fe3af8a
+workflow-type: tm+mt
+source-wordcount: '522'
+ht-degree: 85%
 
 ---
 
@@ -38,6 +38,26 @@ ht-degree: 100%
 
 ```html
 <meta name="urn:adobe:aue:config:disable" content="publish-preview"/>
+```
+
+## 停用發佈以上線 {#publish-live}
+
+某些編寫工作流程可能會排除將內容發佈到即時服務。
+
+因此，可以新增下列中繼資料，在應用程式中完全隱藏發佈視窗中的&#x200B;**Live**&#x200B;選項。
+
+```html
+<meta name="urn:adobe:aue:config:disable" content="publish-live"/>
+```
+
+## 停用取消發佈 {#unpublish}
+
+某些編寫工作流程需要在內容取消發佈前進行核准程式。 在這種情況下，任何作者都不應使用取消發佈選項。
+
+因此，可以新增下列中繼資料，在應用程式中完全隱藏&#x200B;**取消發佈**&#x200B;按鈕。
+
+```html
+<meta name="urn:adobe:aue:config:disable" content="unpublish"/>
 ```
 
 ## 停用開啟頁面 {#open-page}
