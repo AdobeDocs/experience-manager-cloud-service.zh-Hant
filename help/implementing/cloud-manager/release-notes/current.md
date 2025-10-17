@@ -4,7 +4,7 @@ description: 了解 Adobe Experience Manager as a Cloud Service 中 Cloud Manage
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 302248ade67683712bf1895fd8dfdd8853aae1ac
+source-git-commit: 85784a9611bc6f83a1d70b66ff7087117aa7ec0b
 workflow-type: tm+mt
 source-wordcount: '1428'
 ht-degree: 89%
@@ -110,7 +110,8 @@ AEM Cloud Service is going to soon support one custom domain per Author environm
 
 新的建置模型會使用模組層級快取來編譯已變更的模組 (而非整個存放庫)，藉此縮短建置時間。此建置模型適用於程式碼品質、完整堆疊和僅限中繼管道。
 
-![編輯非生產管道對話方塊，其中顯示兩個建置策略選項，即Full Build和Smart Build](/help/implementing/cloud-manager/release-notes/assets/non-production-pipeline-edit.png) *編輯非生產管道對話方塊，其中顯示兩個建置策略選項，即Full Build和Smart Build。*
+![編輯非生產管道對話方塊，其中顯示兩個建置策略選項，即Full Build和Smart Build](/help/implementing/cloud-manager/release-notes/assets/non-production-pipeline-edit.png)
+*編輯非生產管道對話方塊，其中顯示兩個建置策略選項：完整建置和智慧型建置。*
 
 在&#x200B;**新增/編輯管道**&#x200B;對話方塊的&#x200B;**Source程式碼**&#x200B;索引標籤下方，新的&#x200B;**建置策略**&#x200B;區段可讓您選擇下列其中一個建置選項：
 
