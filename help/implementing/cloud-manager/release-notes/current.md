@@ -4,7 +4,7 @@ description: 了解 Adobe Experience Manager as a Cloud Service 中 Cloud Manage
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 85784a9611bc6f83a1d70b66ff7087117aa7ec0b
+source-git-commit: 8dfe5316db99860ee8fbf5d0be2fa70412e7cce3
 workflow-type: tm+mt
 source-wordcount: '1428'
 ht-degree: 89%
