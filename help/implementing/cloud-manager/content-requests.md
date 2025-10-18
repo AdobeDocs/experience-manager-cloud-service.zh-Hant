@@ -5,9 +5,9 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: fddd57877f2e4e98f0b89b496eedc25ce741d8f1
+source-git-commit: 62e4b038c3fbae0ca5b6bb08c1d9d245842aeab2
 workflow-type: tm+mt
-source-wordcount: '1574'
+source-wordcount: '1580'
 ht-degree: 3%
 
 ---
@@ -101,4 +101,4 @@ AEM as a Cloud Service會套用伺服器端規則以計算內容請求。 這些
 | 排除Commerce integration framework呼叫 | 已排除 | 向AEM提出且轉送至Commerce integration framework的請求（URL開頭為`/api/graphql`）為避免重複計算，Cloud Service不為這些請求記帳。 |
 | 排除`manifest.json` | 已排除 | 資訊清單不是API呼叫。 此處提供如何在桌上型電腦或行動電話上安裝網站的資訊。 Adobe不應將JSON請求計算為`/etc.clientlibs/*/manifest.json` |
 | 排除`favicon.ico` | 已排除 | 雖然傳回的內容不應是HTML或JSON，但已觀察到某些情況（例如SAML驗證流程）會傳回favicon作為HTML。 因此，Favicon會明確從計數中排除。 |
-| 體驗片段(XF) — 相同網域重複使用 | 已排除 | 從託管於相同網域上的頁面向XF路徑（例如`/content/experience-fragments/...`）提出的請求（由符合請求主機的Referer標頭識別）。<br><br>範例： `aem.customer.com`的首頁從相同網域提取橫幅或卡片的XF。<br><br>· URL符合/content/experience-fragments/...<br>· Referer網域符合&#x200B;`request_x_forwarded_host`<br><br>**注意：**&#x200B;如果自訂體驗片段路徑（例如使用`/XFrags/...`或`/content/experience-fragments/`之外的任何路徑），則不會排除請求並可能計入請求中，即使請求是相同網域亦然。 建議您使用Adobe的標準XF路徑結構，以確保排除邏輯可正確套用。 |
+| 體驗片段(XF) — 相同網域重複使用 | 已排除 | 從託管於相同網域上的頁面向XF路徑（例如`/content/experience-fragments/...`）提出的請求（由符合請求主機的反向連結標頭識別）。<br><br>範例： `aem.customer.com`的首頁從相同網域提取橫幅或卡片的XF。<br><br>· URL符合/content/experience-fragments/...<br>·反向連結網域符合&#x200B;`request_x_forwarded_host`<br><br>**注意：**&#x200B;如果已自訂體驗片段路徑（例如使用`/XFrags/...`或`/content/experience-fragments/`之外的任何路徑），則不會排除請求且可能會計入請求中。 即使它是相同網域，這個結果也是真的。 Adobe建議使用Adobe的標準XF路徑結構，以確保排除邏輯可正確套用。 |
