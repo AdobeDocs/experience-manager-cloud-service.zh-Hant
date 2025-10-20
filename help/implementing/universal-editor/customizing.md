@@ -4,10 +4,10 @@ description: 了解自訂通用編輯器的不同選項以支援內容作者的�
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a72b4b7921a1a379bcd089682c02b0519fe3af8a
+source-git-commit: b32e9b83a761e4f178cddb82b83b31a95a8978f6
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 85%
+source-wordcount: '403'
+ht-degree: 69%
 
 ---
 
@@ -20,69 +20,29 @@ ht-degree: 85%
 >
 >通用編輯器亦提供許多[擴充點，](/help/implementing/universal-editor/extending.md)讓您擴充其功能以滿足專案需求。
 
-## 停用發佈 {#disable-publish}
+## 使用Meta設定標籤 {#meta-tags}
 
-某些製作工作流程會要求在發佈內容之前先進行審閱。於此情況下，任何作者應該無法使用發佈的選項。
+某些編寫工作流程可能需要使用通用編輯器的部分功能，而非其他功能。 為了支援這些多樣化的情況，中繼標籤可用於設定或停用編輯器的特定功能或按鈕。
 
-因此，您可以新增以下後設資料，在應用程式內完全隱藏「**發佈**」按鈕。
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="publish"/>
-```
-
-## 停用發佈至預覽的功能 {#publish-preview}
-
-某些製作工作流程可能會防止發佈至[預覽服務](/help/sites-cloud/authoring/sites-console/previewing-content.md) (若適用)。
-
-因此，您可以新增以下後設資料，在應用程式內完全隱藏發佈視窗中的「**預覽**」選項。
+在頁面的`<head>`區段中使用此標籤以停用一或多個功能：
 
 ```html
-<meta name="urn:adobe:aue:config:disable" content="publish-preview"/>
+<meta name="urn:adobe:aue:config:disable" content="..." />
 ```
 
-## 停用發佈以上線 {#publish-live}
+如果您想要停用多項功能，請提供以逗號分隔的值清單。
 
-某些編寫工作流程可能會排除將內容發佈到即時服務。
+以下是`content`支援的值，也就是可以使用meta標籤停用的功能。
 
-因此，可以新增下列中繼資料，在應用程式中完全隱藏發佈視窗中的&#x200B;**Live**&#x200B;選項。
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="publish-live"/>
-```
-
-## 停用取消發佈 {#unpublish}
-
-某些編寫工作流程需要在內容取消發佈前進行核准程式。 在這種情況下，任何作者都不應使用取消發佈選項。
-
-因此，可以新增下列中繼資料，在應用程式中完全隱藏&#x200B;**取消發佈**&#x200B;按鈕。
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="unpublish"/>
-```
-
-## 停用開啟頁面 {#open-page}
-
-您可以新增以下後設資料，在應用程式內完全隱藏「**開啟頁面**」按鈕。
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="header-open-page" />
-```
-
-## 停用重複按鈕 {#duplicate-button}
-
-某些製作工作流程可能需要限制內容作者複製元件的能力。您可以新增以下後設資料來停用「[重複圖示](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate)」。
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="duplicate"/>
-```
-
-## 停用複製與貼上功能 {#copy-paste}
-
-特定製作工作流程可能需要限制內容作者複製與貼上元件的功能。您可以透過新增以下中繼資料來停用[複製與貼上圖示](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste)。
-
-```html
-<meta name="urn:adobe:aue:config:disable" content="copy"/>
-```
+| 內容值 | 說明 |
+|---|---|
+| `publish` | 停用[發佈按鈕](/help/sites-cloud/authoring/universal-editor/navigation.md#publish) |
+| `publish-live` | 停用即時[發佈](/help/sites-cloud/authoring/universal-editor/publishing.md) |
+| `publish-preview` | 停用預覽發佈（如果[預覽服務](/help/sites-cloud/authoring/sites-console/previewing-content.md)可用） |
+| `unpublish` | 停用[取消發佈按鈕](/help/sites-cloud/authoring/universal-editor/publishing.md#unpublishing-content) |
+| `copy` | 停用[複製和貼上按鈕](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) |
+| `duplicate` | 停用[重複按鈕](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate) |
+| `header-open-page` | 停用[開啟頁面按鈕](/help/sites-cloud/authoring/universal-editor/navigation.md#open-page) |
 
 ## 變更您的端點 {#custom-endpoint}
 
