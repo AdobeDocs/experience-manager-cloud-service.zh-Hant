@@ -4,9 +4,9 @@ description: 透過範例了解通用編輯器可以在屬性面板中編輯的�
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: efd96f179482dfe1f00bdce35e2824ac5cdf9813
+source-git-commit: 90763049036dbdadaaed93acb088877294f2d750
 workflow-type: tm+mt
-source-wordcount: '1592'
+source-wordcount: '1588'
 ht-degree: 98%
 
 ---
@@ -94,7 +94,6 @@ ht-degree: 98%
 | `name` | `string` | 應保留資料的屬性[或路徑](#nesting) | 是 |
 | `label` | `FieldLabel` | 欄位的標籤 | 是 |
 | `description` | `FieldDescription` | 欄位的說明 | 否 |
-| `placeholder` | `string` | 欄位的預留位置 | 否 |
 | `value` | `FieldValue` | 這是預設值，可作為預留位置。 此值不會驅動任何內容更新。 它只是UI中的一種表示法。 | 否 |
 | `valueType` | `ValueType` | 標準驗證，可以是 `string`、`string[]`、`number`、`date`、`boolean` | 否 |
 | `required` | `boolean` | 欄位是否為必填 | 否 |
