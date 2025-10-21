@@ -4,10 +4,10 @@ description: 了解在 AEM as a Cloud Service 上進行開發的準則，以及�
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: a352261034188cc66a0bc7f2472ef8340c778c13
 workflow-type: tm+mt
-source-wordcount: '2770'
-ht-degree: 3%
+source-wordcount: '2768'
+ht-degree: 4%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 3%
 
 請勿在AEM as a Cloud Service中使用執行個體的檔案系統。 磁碟是暫時性的，當執行個體回收時就會加以處置。 在處理單一請求時，可以限制使用檔案系統作為暫時性儲存空間，但不應將其濫用於大型檔案。 這是因為這可能會對資源使用配額產生負面影響，並遇到磁碟限制。
 
-舉例來說，若不支援使用檔案系統，Publish層級應確保任何必須儲存的資料都會運送至外部服務，以供長期儲存之用。
+舉例來說，若不支援使用檔案系統，發佈層級應確保任何必須儲存的資料都會運送至外部服務，以供長期儲存之用。
 
 ## 觀察 {#observation}
 
@@ -51,7 +51,7 @@ ht-degree: 3%
 
 請勿使用Sling Commons Scheduler進行排程，因為無法保證執行。 只是更有可能已排程。
 
-同樣地，由於所有非同步發生的事（例如對觀察事件執行動作，包括JCR事件或Sling資源事件），無法保證執行，因此必須謹慎使用。 目前的AEM部署就是如此。
+同樣地，由於所有非同步發生的事（例如對觀察事件執行動作，包括JCR事件或Sling資源事件），無法保證執行，因此必須謹慎使用。 目前的AEM部署便是如此。
 
 ## 傳出HTTP連線 {#outgoing-http-connections}
 
@@ -63,7 +63,7 @@ Adobe建議使用提供的[Apache HttpComponents Client 4.x程式庫](https://hc
 
 已知可以運作，但可能需要自行提供相依性的替代方法是：
 
-* [java.net.URL](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html)和/或[java.net.URLConnection](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html) (由AEM提供)
+* [java.net.URL](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html)及/或[java.net.URLConnection](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html) (由AEM提供)
 * [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/) （不建議使用，因為它已過時且已由4.x版取代）
 * [確定Http](https://square.github.io/okhttp/) (AEM未提供)
 
@@ -71,7 +71,7 @@ Adobe建議使用提供的[Apache HttpComponents Client 4.x程式庫](https://hc
 
 ## 處理要求速率限制 {#rate-limit-handling}
 
-當AEM的傳入要求速率超過正常程度時，AEM會以HTTP錯誤碼429回應新要求。 對AEM進行程式化呼叫的應用程式可以考慮防禦式編碼，在幾秒鐘後使用指數回退策略重試。 在2023年8月中旬之前，AEM以HTTP錯誤代碼503回應相同的條件。
+當AEM的傳入請求率超過正常水準時，AEM會以HTTP錯誤碼429回應新請求。 對AEM進行程式化呼叫的應用程式可考慮防禦式編碼，使用指數輪迴策略在幾秒鐘後重試。 2023年8月中旬之前，AEM以HTTP錯誤代碼503回應了相同的條件。
 
 ## 無傳統UI自訂 {#no-classic-ui-customizations}
 
@@ -91,11 +91,11 @@ AEM as a Cloud Service僅支援第三方客戶程式碼的Touch UI。 傳統UI�
 
 ## 沒有反向復寫代理 {#no-reverse-replication-agents}
 
-AEM as a Cloud Service不支援從Publish反向復寫至作者。 如果需要這類策略，您可以使用在Publish執行個體的伺服器陣列之間共用的外部持續性存放區，潛在地還有作者叢集。
+AEM as a Cloud Service不支援從發佈到作者的反向復寫。 如果需要這類策略，您可以使用在發佈執行個體的陣列之間共用的外部持續性存放區，並有可能使用作者叢集。
 
 ## 可能需要移轉轉轉復寫代理 {#forward-replication-agents}
 
-透過發佈訂閱機制，將內容從Author復寫至Publish。 不支援自訂復寫代理。
+透過pub-sub機制，將內容從Author復寫到Publish。 不支援自訂復寫代理。
 
 ## 沒有多載開發環境 {#overloading-dev-envs}
 
@@ -111,7 +111,7 @@ AEM as a Cloud Service不支援從Publish反向復寫至作者。 如果需要�
 
 對於本機開發，記錄專案會寫入`/crx-quickstart/logs`資料夾中的本機檔案。
 
-在雲端環境中，開發人員可以透過Cloud Manager下載記錄，或使用命令列工具追蹤記錄。<!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=zh-Hant) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
+在雲端環境中，開發人員可以透過Cloud Manager下載記錄，或使用命令列工具追蹤記錄。<!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
 
 **正在設定記錄層級**
 
@@ -172,7 +172,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 ### 本機開發 {#local-development}
 
-對於本機開發，開發人員擁有CRXDE Lite(`/crx/de`)和AEM Web主控台(`/system/console`)的完整存取權。
+對於本機開發，開發人員擁有CRXDE Lite (`/crx/de`)和AEM Web Console (`/system/console`)的完整存取權。
 
 在本機開發(使用SDK)中，`/apps`和`/libs`可以直接寫入到，這與那些頂層資料夾不可變的雲端環境不同。
 
@@ -189,7 +189,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 您可以從AEM as a Cloud Service Developer Console啟動存放庫瀏覽器，為作者、發佈和預覽層級的所有環境提供存放庫的唯讀檢視。 如需詳細資訊，請參閱[存放庫瀏覽器](/help/implementing/developing/tools/repository-browser.md)。
 
-AEM as a Cloud Service Developer Console中針對RDE、開發、測試和生產環境提供了一組用於偵錯AEM as a Cloud Service開發人員環境的工具。 可藉由調整作者或Publish服務URL來決定URL，如下所示：
+AEM as a Cloud Service Developer Console中針對RDE、開發、測試和生產環境提供了一組用於偵錯AEM as a Cloud Service開發人員環境的工具。 可藉由調整作者或發佈服務URL來決定URL，如下所示：
 
 `https://dev-console-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
@@ -215,13 +215,13 @@ AEM as a Cloud Service Developer Console中針對RDE、開發、測試和生產�
 
 ![開發主控台4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-對於生產計畫，AEM as a Cloud Service Developer Console的存取權由Adobe Admin Console中的「Cloud Manager — 開發人員角色」定義，而對於沙箱計畫，AEM as a Cloud Service Developer Console則可供任何擁有產品設定檔並授與對AEM as a Cloud Service存取權的使用者使用。 對於所有程式，狀態傾印需要「Cloud Manager — 開發人員角色」，存放庫瀏覽器和使用者也必須在AEM使用者或AEM管理員產品設定檔中，針對作者和發佈服務進行定義，以便從這兩項服務檢視資料。 如需設定使用者許可權的詳細資訊，請參閱[Cloud Manager檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=zh-Hant)。
+對於生產計畫，AEM as a Cloud Service Developer Console的存取權由Adobe Admin Console中的「Cloud Manager — 開發人員角色」定義，而對於沙箱計畫，AEM as a Cloud Service Developer Console則可供任何擁有產品設定檔並授與對AEM as a Cloud Service存取權的使用者使用。 對於所有程式，狀態傾印需要「Cloud Manager — 開發人員角色」，存放庫瀏覽器和使用者也必須在AEM使用者或AEM管理員產品設定檔中，針對作者和發佈服務進行定義，以便檢視來自這兩個服務的資料。 如需設定使用者許可權的詳細資訊，請參閱[Cloud Manager檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)。
 
 ### 效能監控 {#performance-monitoring}
 
-Adobe會監控應用程式效能，並在發現效能惡化時採取措施解決。 目前無法觀察應用程式量度。
+Adobe會監控應用程式效能，並在發現問題時採取措施加以解決。 目前無法觀察應用程式量度。
 
-## 傳送電子郵件 {#sending-email}
+## 寄送電子郵件 {#sending-email}
 
 以下各節說明如何請求、設定和傳送電子郵件。
 
@@ -233,21 +233,21 @@ Adobe會監控應用程式效能，並在發現效能惡化時採取措施解決
 
 預設會停用用來傳送電子郵件的連線埠。 若要啟用連線埠，請設定[進階網路](/help/security/configuring-advanced-networking.md)，並確定為每個必要的環境設定`PUT /program/<program_id>/environment/<environment_id>/advancedNetworking`端點的連線埠轉送規則，將預期的連線埠（例如465或587）對應到Proxy連線埠。
 
-建議使用`kind`引數設定為`flexiblePortEgress`來設定進階網路，因為Adobe可以最佳化彈性連線埠輸出流量的效能。 如果需要唯一輸出IP位址，請選擇`dedicatedEgressIp`的`kind`引數。 如果您因其他原因已設定VPN，您也可以使用該進階網路變數所提供的唯一IP位址。
+建議使用`kind`引數設為`flexiblePortEgress`來設定進階網路，因為Adobe可以最佳化彈性連線埠輸出流量的效能。 如果需要唯一輸出IP位址，請選擇`kind`的`dedicatedEgressIp`引數。 如果您因其他原因已設定VPN，您也可以使用該進階網路變數所提供的唯一IP位址。
 
 您必須透過郵件伺服器傳送電子郵件，而非直接傳送給電子郵件使用者端。 否則，可能會封鎖電子郵件。
 
 ### 傳送電子郵件 {#sending-emails}
 
-應使用[Day CQ Mail Service OSGI服務](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=zh-Hant#configuring-the-mail-service)，且必須將電子郵件傳送至支援要求中指出的郵件伺服器，而非直接傳送給收件者。
+應使用[Day CQ Mail Service OSGI服務](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)，且必須將電子郵件傳送至支援要求中指出的郵件伺服器，而非直接傳送給收件者。
 
 ### 設定 {#email-configuration}
 
-AEM中的電子郵件應使用[Day CQ Mail Service OSGi服務](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=zh-Hant#configuring-the-mail-service)傳送。
+AEM中的電子郵件應使用[Day CQ Mail Service OSGi服務](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)傳送。
 
-如需設定電子郵件設定的詳細資訊，請參閱[AEM 6.5檔案](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=zh-Hant)。 若為AEM as a Cloud Service，請注意下列對`com.day.cq.mailer.DefaultMailService OSGI`服務的必要調整：
+如需設定電子郵件設定的詳細資訊，請參閱[AEM 6.5檔案](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html)。 若為AEM as a Cloud Service，請注意下列對`com.day.cq.mailer.DefaultMailService OSGI`服務的必要調整：
 
-* SMTP伺服器主機名稱應該設定為$[env：AEM_PROXY_HOST；default=proxy.tunnel]
+* SMTP伺服器主機名稱應該設定為$[env:AEM_PROXY_HOST；default=proxy.tunnel]
 * SMTP伺服器連線埠應該設定為設定進階網路時，在API呼叫中使用的portForwards引數中設定的原始Proxy連線埠值。 例如，30465 （而非465）
 
 SMTP伺服器連線埠應該設定為在設定進階網路時，在API呼叫中使用的portForwards引數中設定的`portDest`值，而且`portOrig`值應該是有意義的值，且在30000 - 30999的所需範圍內。 例如，如果SMTP伺服器連線埠是465，則連線埠30465應該用作`portOrig`值。
@@ -307,4 +307,4 @@ Caused by: com.mongodb.MongoWriteException: Resulting document after update is l
 
 ## [!DNL Assets]開發指導方針與使用案例 {#use-cases-assets}
 
-若要瞭解Assetsas a Cloud Service的開發使用案例、建議和參考資料，請參閱[Assets開發人員參考資料](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis)。
+若要瞭解Assets as a Cloud Service的開發使用案例、建議和參考資料，請參閱[Assets開發人員參考資料](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis)。
