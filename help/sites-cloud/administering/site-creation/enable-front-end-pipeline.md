@@ -5,10 +5,11 @@ feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
 solution: Experience Manager Sites
-source-git-commit: 6ee55bed8ca09470291e0488321732beed7bab42
+recommendations: display, noCatalog
+source-git-commit: 0a458616afad836efae27e67dbe145fc44bee968
 workflow-type: tm+mt
 source-wordcount: '930'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -33,7 +34,7 @@ ht-degree: 0%
 
 AEM可將您的網站設定為載入使用前端管道部署的主題，即使您的網站不是使用網站範本和主題建立的，方法是將其分層到現有使用者端資料庫上。
 
-## 技術細節 {#technical-details}
+## 技術詳細資訊 {#technical-details}
 
 當您啟動網站的前端管道時，AEM會對您的網站結構做出以下變更。
 
@@ -47,7 +48,7 @@ AEM可將您的網站設定為載入使用前端管道部署的主題，即使�
 
 ## 要求 {#requirements}
 
-AEM可以自動調整您的現有網站以使用前端管道。 若要執行此工作流程，您的網站必須使用[v2或更新版本的核心元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/wcm-components/page)的頁面元件。
+AEM可以自動調整您的現有網站以使用前端管道。 若要執行此工作流程，您的網站必須使用[v2或更新版本的核心元件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/page)的頁面元件。
 
 ## 啟用前端管道 {#enabling}
 

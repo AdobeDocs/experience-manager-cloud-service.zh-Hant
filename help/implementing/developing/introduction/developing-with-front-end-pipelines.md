@@ -4,7 +4,8 @@ description: 前端管道增強了開發人員的獨立性，並加快了開發�
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
+recommendations: display, noCatalog
+source-git-commit: 0a458616afad836efae27e67dbe145fc44bee968
 workflow-type: tm+mt
 source-wordcount: '1126'
 ht-degree: 0%
@@ -39,7 +40,7 @@ ht-degree: 0%
 * 20
 * 18
 * 16
-* 14 （預設）
+* 14 (預設)
 * 12
 
 您可以使用`NODE_VERSION` [環境變數](/help/implementing/cloud-manager/environment-variables.md)來設定所要的版本。
@@ -50,7 +51,7 @@ AEM部署的最佳實務是維護單一、明確的信任來源。 Cloud Manager
 
 因此，尤其是當建立了多個前端管道時，Adobe建議您保持系統的命名慣例。 您可以使用以下建議：
 
-* 前端模組的名稱（由`package.json`檔案的`name`屬性定義）應包含其套用的網站名稱。 例如，對於位於`/content/wknd`的網站，前端模組的名稱會類似`wknd-theme`。
+* 前端模組的名稱（由`name`檔案的`package.json`屬性定義）應包含其套用的網站名稱。 例如，對於位於`/content/wknd`的網站，前端模組的名稱會類似`wknd-theme`。
 * 當前端模組與其他模組共用相同的Git存放庫時，其資料夾名稱應等於或包含前端模組的相同名稱。 例如，如果前端模組名為`wknd-theme`，則封入資料夾名稱會類似`wknd-theme-sources`。
 * Cloud Manager前端管道的名稱也應包含前端模組的名稱，也應新增其部署的環境（生產或開發）。 例如，對於名為`wknd-theme`的前端模組，管道的名稱可能類似於`wknd-theme-prod`。
 
@@ -81,7 +82,7 @@ AEM部署的最佳實務是維護單一、明確的信任來源。 Cloud Manager
 1. 前端團隊接著會讓CSS和JS程式碼與舊輸出和新輸出搭配使用。
    1. 如往常一樣，若要在本機開發，請執行下列動作：
       1. `npx aem-site-theme-builder proxy`命令會啟動從AEM環境擷取內容的Proxy伺服器。 它以本機`dist`資料夾中的那些檔案取代前端模組的CSS和JS檔案。
-      1. 在隱藏的`.env`檔案中設定`AEM_URL`變數，可讓您控制本機Proxy伺服器使用內容的AEM環境。
+      1. 在隱藏的`AEM_URL`檔案中設定`.env`變數，可讓您控制本機Proxy伺服器使用內容的AEM環境。
       1. 因此，變更`AEM_URL`的值可讓您在生產與開發環境之間切換，以調整CSS和JS，使其同時適用於兩個環境。
       1. 它必須與呈現新輸出的開發環境以及呈現舊輸出的生產環境搭配使用。
    1. 前端工作是在更新的前端模組適用於兩個環境時完成，並部署至兩個環境。
