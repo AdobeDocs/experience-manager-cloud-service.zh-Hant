@@ -4,9 +4,9 @@ description: 瞭解如何在設定檔案中宣告規則和篩選器，並使用C
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 992f9377133dd7ca3bd7b169c0a29e76baadde7e
+source-git-commit: a8c313c3b1324e4195c2aeb70a5a56e4ef66fcf3
 workflow-type: tm+mt
-source-wordcount: '1630'
+source-wordcount: '1698'
 ht-degree: 1%
 
 ---
@@ -408,6 +408,8 @@ data:
           type: selectOrigin
           originName: example-com
           # skipCache: true
+          # headers:
+          #   Authorization: ${{AUTH_TOKEN}}
     origins:
       - name: example-com
         domain: www.example.com
@@ -423,11 +425,13 @@ data:
 可用動作如下表所述。
 
 | 名稱 | 屬性 | 含義 |
-|-----------|--------------------------|-------------|
+|---------------------|--------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **selectOrigin** | 來源名稱 | 其中一個已定義來源的名稱。 |
-|     | skipCache （選用，預設為false） | 標示是否將快取用於符合此規則的請求。 預設會根據回應快取標題（例如Cache-Control或Expires）快取回應 |
+|                     | skipCache （選用，預設為false） | 標示是否將快取用於符合此規則的請求。 預設會根據回應快取標題（例如Cache-Control或Expires）快取回應 |
+|                     | 標頭（選擇性，預設為`{}`） | 包含其他HTTP標題的機碼值組，將於規則觸發時傳送至選取的後端。 鍵值與標頭名稱相對應，而值則與標頭值相對應 |
 | **selectAemOrigin** | 來源名稱 | 其中一個預先定義AEM來源的名稱（支援的值： `static`）。 |
-|     | skipCache （選用，預設為false） | 標示是否將快取用於符合此規則的請求。 預設會根據回應快取標題（例如Cache-Control或Expires）快取回應 |
+|                     | skipCache （選用，預設為false） | 標示是否將快取用於符合此規則的請求。 預設會根據回應快取標題（例如Cache-Control或Expires）快取回應 |
+|                     | 標頭（選擇性，預設為`{}`） | 包含其他HTTP標題的機碼值組，將於規則觸發時傳送至選取的後端。 鍵值與標頭名稱相對應，而值則與標頭值相對應 |
 
 **來源**
 
