@@ -5,7 +5,7 @@ exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 feature: Content Fragments
 role: User, Admin
 solution: Experience Manager Sites
-source-git-commit: 74e2f015d6bcb36505c2dc6471bb68d69d98db99
+source-git-commit: 8a3ee333a0bd5904c43c424967a7b9c752fd38c2
 workflow-type: tm+mt
 source-wordcount: '1925'
 ht-degree: 6%
@@ -33,7 +33,7 @@ ht-degree: 6%
 >可以使用內容片段：
 >
 >* 編寫頁面時；請參閱[使用內容片段編寫頁面](/help/sites-cloud/authoring/fragments/content-fragments.md)。
->* 使用內容片段搭配GraphQL[&#128279;](/help/assets/content-fragments/content-fragments-graphql.md)的Headless內容傳遞。
+>* 使用內容片段搭配GraphQL[的](/help/assets/content-fragments/content-fragments-graphql.md)Headless內容傳遞。
 
 >[!NOTE]
 >
@@ -136,7 +136,7 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->其中許多是Assets[&#128279;](/help/assets/manage-digital-assets.md)和/或[AEM案頭應用程式](https://helpx.adobe.com/tw/experience-manager/desktop-app/aem-desktop-app.html)的標準動作。
+>其中許多是Assets[和/或](/help/assets/manage-digital-assets.md)AEM案頭應用程式[的](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/get-started.html)標準動作。
 
 ## 開啟片段編輯器 {#opening-the-fragment-editor}
 
@@ -178,7 +178,7 @@ ht-degree: 6%
 
 * [註解](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
 * [相關聯的內容](#associating-content-with-your-fragment)
-* [中繼資料](#viewing-and-editing-the-metadata-properties-of-your-fragment)
+* [後設資料](#viewing-and-editing-the-metadata-properties-of-your-fragment)
 * [樹狀結構](/help/assets/content-fragments/content-fragments-structure-tree.md)
 * [預覽](/help/assets/content-fragments/content-fragments-json-preview.md)
 
@@ -329,7 +329,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 ## 比較片段版本 {#comparing-fragment-versions}
 
-在您選取特定版本後，即可從[時間表](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)取得&#x200B;**與目前比較**&#x200B;動作。
+在您選取特定版本後，即可從&#x200B;**時間表**&#x200B;取得[與目前比較](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)動作。
 
 這將會開啟：
 
@@ -380,7 +380,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 此檔案可存取：
 
-* 建立之後；使用Assets主控台[&#128279;](#actions-for-a-content-fragment-assets-console)中可用的動作。
+* 建立之後；使用Assets主控台[中可用的](#actions-for-a-content-fragment-assets-console)動作。
 * 從[內容片段編輯器](#toolbar-actions-in-the-content-fragment-editor)。
 
 此外，當您[發佈使用片段](/help/sites-cloud/authoring/fragments/content-fragments.md#publishing)的頁面時；片段會列在頁面參考中。

@@ -4,7 +4,7 @@ description: 瞭解如何設定Context Hub，此架構用於儲存、操控和�
 exl-id: 1fd7d41e-31ad-4838-8749-a5791edcfd63
 feature: Developing, Personalization
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 79480fc14163b144c76ea33d38cda7c6b84f826b
 workflow-type: tm+mt
 source-wordcount: '1609'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ContextHub是一種用於儲存、操控和呈現內容資料的架構。 如需
 
 ## 顯示和隱藏ContextHub UI {#showing-and-hiding-the-contexthub-ui}
 
-設定AdobeGranite ContextHub OSGi服務，以在您的頁面上顯示或隱藏[ContextHub UI](/help/sites-cloud/authoring/personalization/targeted-content.md)。 此服務的PID為`com.adobe.granite.contexthub.impl.ContextHubImpl.`
+設定Adobe Granite ContextHub OSGi服務以顯示或隱藏頁面上的[ContextHub UI](/help/sites-cloud/authoring/personalization/targeted-content.md)。 此服務的PID為`com.adobe.granite.contexthub.impl.ContextHubImpl.`
 
 若要設定服務，您可以使用[網頁主控台](/help/implementing/deploying/configuring-osgi.md)或使用存放庫中的JCR節點：
 
@@ -39,13 +39,13 @@ UI模式會在工具列左側顯示為一系列圖示。 選取後，UI模式的
 
 ![ContextHub工具列](assets/contexthub-toolbar.png)
 
-圖示是來自[Coral UI圖示庫](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons)的參考。
+圖示是來自[Coral UI圖示庫](https://opensource.adobe.com/coral-spectrum/examples/#icon)的參考。
 
 ### 新增UI模式 {#adding-a-ui-mode}
 
 新增UI模式至群組相關的ContextHub模組。 建立UI模式時，您會提供顯示在ContextHub工具列中的標題和圖示。
 
-1. 在Experience Manager邊欄中，選取「工具>網站>內容中心」。
+1. 在Experience Manager邊欄中，選取「工具>網站>內容中心」 。
 1. 選取預設的「組態容器」。
 1. 選取Context Hub組態。
 1. 選取「建立」按鈕，然後選取「Context Hub UI模式」。
@@ -55,7 +55,7 @@ UI模式會在工具列左側顯示為一系列圖示。 選取後，UI模式的
 1. 提供下列屬性的值：
 
    * UI模式標題：識別UI模式的標題
-   * 模式圖示：要使用的[Coral UI圖示](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons)的選擇器，例如`coral-Icon--user`
+   * 模式圖示：要使用的[Coral UI圖示](https://opensource.adobe.com/coral-spectrum/examples/#icon)的選擇器，例如`coral-Icon--user`
    * 啟用：選取此選項可在ContextHub工具列中顯示UI模式
 
 1. 選取「儲存」。
@@ -64,7 +64,7 @@ UI模式會在工具列左側顯示為一系列圖示。 選取後，UI模式的
 
 將ContextHub UI模組新增至UI模式，使其顯示在ContextHub工具列中以預覽頁面內容。 新增UI模組時，您會建立已向ContextHub註冊的模組型別例項。 若要新增UI模組，您必須知道關聯模組型別的名稱。
 
-AEM提供基礎UI模組型別以及數個範例UI模組型別，您可以依據這些型別建立UI模組。 下表提供每個專案的簡短說明。 如需有關開發自訂UI模組的資訊，請參閱[建立ContextHub UI模組](extending-contexthub.md#creating-contexthub-ui-module-types)。
+AEM提供基礎UI模組型別以及數個範例UI模組型別，您可作為這些UI模組的基礎。 下表提供每個專案的簡短說明。 如需有關開發自訂UI模組的資訊，請參閱[建立ContextHub UI模組](extending-contexthub.md#creating-contexthub-ui-module-types)。
 
 UI模組屬性包含詳細設定，您可以在其中提供模組特定屬性的值。 您可以提供JSON格式的詳細資料設定。 表格中的模組型別欄提供每個UI模組型別所需JSON程式碼相關資訊的連結。
 
@@ -78,7 +78,7 @@ UI模組屬性包含詳細設定，您可以在其中提供模組特定屬性的
 | [contexthub.tagcloud](sample-modules.md#contexthub-tagcloud-ui-module-type) | 顯示頁面標籤的相關統計資料 | `tagcloud` |
 | [granite.profile](sample-modules.md#granite-profile-ui-module-type) | 顯示目前使用者的設定檔資訊，包括`authorizableID`、`displayName`和`familyName`。 您可以變更`displayName`和`familyName`的值。 | `profile` |
 
-1. 在Experience Manager邊欄中，選取「工具>網站> ContextHub」。
+1. 在Experience Manager邊欄中，選取「工具>網站> ContextHub」 。
 1. 選取要新增UI模組的設定容器。
 1. 選取或輸入您要新增UI模組的ContextHub組態。
 1. 選取要新增UI模組的UI模式。
@@ -101,13 +101,13 @@ UI模組屬性包含詳細設定，您可以在其中提供模組特定屬性的
 
 ### 詳細存放區設定 {#detailed-store-configuration}
 
-當您設定存放區時，Detail Configuration屬性可讓您提供存放區特定屬性的值。 此值是以存放區`init`函式的`config`引數為基礎。 因此，您是否需提供此值，以及值的格式取決於存放區。
+當您設定存放區時，Detail Configuration屬性可讓您提供存放區特定屬性的值。 此值是以存放區`config`函式的`init`引數為基礎。 因此，您是否需提供此值，以及值的格式取決於存放區。
 
 Detail Configuration屬性的值是JSON格式的`config`物件。
 
 ### 範例商店候選者 {#sample-store-candidates}
 
-AEM提供下列範例商店候選者，您可以據以建立商店。
+AEM提供下列範例商店候選者，您可作為商店的基礎。
 
 | 存放區型別 | 說明 |
 |---|---|
@@ -117,7 +117,7 @@ AEM提供下列範例商店候選者，您可以據以建立商店。
 | [granite.profile](sample-stores.md#granite-profile-sample-store-candidate) | 儲存目前使用者的設定檔資料 |
 | [contexthub.surferinfo](sample-stores.md#contexthub-surferinfo-sample-store-candidate) | 儲存使用者端的相關資訊，例如裝置資訊、瀏覽器型別和視窗方向 |
 
-1. 在Experience Manager邊欄中，選取「工具>網站> ContextHub」。
+1. 在Experience Manager邊欄中，選取「工具>網站> ContextHub」 。
 1. 選取預設設定容器。
 1. 選取Contexthub設定
 1. 若要新增存放區，請選取「建立」圖示，然後選取「ContextHub存放區設定」。
@@ -151,7 +151,7 @@ contexthub.generic-jsonp存放區已設定為儲存服務呼叫`https://md5.json
 
 contexthub.generic-jsonp範例存放區候選專案可讓您從JSONP服務或傳回JSON資料的Web服務擷取資料。 對於此存放區候選專案，請使用存放區設定來提供有關要使用的JSONP服務的詳細資訊。
 
-`ContextHub.Store.JSONPStore` JavaScript類別的[init](contexthub-api.md#init-name-config)函式定義初始化此存放區候選專案的`config`物件。 `config`物件包含`service`物件，其中包含有關JSONP服務的詳細資料。 若要設定存放區，請以JSON格式提供`service`物件，作為Detail Configuration屬性的值。
+[ JavaScript類別的](contexthub-api.md#init-name-config)init`ContextHub.Store.JSONPStore`函式定義初始化此存放區候選專案的`config`物件。 `config`物件包含`service`物件，其中包含有關JSONP服務的詳細資料。 若要設定存放區，請以JSON格式提供`service`物件，作為Detail Configuration屬性的值。
 
 若要從jsontest.com網站的MD5服務儲存資料，請使用[使用下列屬性建立ContextHub存放區](#creating-a-contexthub-store)中的程式：
 
@@ -221,7 +221,7 @@ contexthub.generic-jsonp範例存放區候選專案可讓您從JSONP服務或傳
 
 ### 記錄ContextHub的偵錯訊息 {#logging-debug-messages-for-contexthub}
 
-設定AdobeGranite ContextHub OSGi服務(PID = `com.adobe.granite.contexthub.impl.ContextHubImpl`)以記錄開發時有用的詳細偵錯訊息。
+設定Adobe Granite ContextHub OSGi服務(PID = `com.adobe.granite.contexthub.impl.ContextHubImpl`)以記錄開發時有用的詳細偵錯訊息。
 
 若要設定服務，您可以使用[網頁主控台](/help/implementing/deploying/configuring-osgi.md)或使用存放庫中的JCR節點：
 
@@ -234,9 +234,9 @@ contexthub.generic-jsonp範例存放區候選專案可讓您從JSONP服務或傳
 
 這對於您根本不想要任何偵錯資訊的發佈執行個體非常有用。 由於這是全域設定，因此會透過OSGi啟用。
 
-1. 在`http://<host>:<port>/system/console/configMgr`開啟&#x200B;**Adobe Experience Manager Web主控台組態**
-1. 搜尋&#x200B;**AdobeGranite ContextHub**
-1. 按一下組態&#x200B;**AdobeGranite ContextHub**&#x200B;以編輯其屬性
+1. 在&#x200B;**開啟** Adobe Experience Manager Web主控台組態`http://<host>:<port>/system/console/configMgr`
+1. 搜尋&#x200B;**Adobe Granite ContextHub**
+1. 按一下設定&#x200B;**Adobe Granite ContextHub**&#x200B;以編輯其屬性
 1. 核取選項&#x200B;**無訊息模式**&#x200B;並按一下&#x200B;**儲存**
 
 ## 正在停用ContextHub {#disabling-contexthub}
@@ -252,4 +252,4 @@ contexthub.generic-jsonp範例存放區候選專案可讓您從JSONP服務或傳
 
 或
 
-* 使用CRXDE Lite將屬性`disabled`設定為`/conf/global/settings/cloudsettings/<configName>/contexthub`下的&#x200B;**true**
+* 使用CRXDE Lite在`disabled`下將屬性&#x200B;**設定為** true`/conf/global/settings/cloudsettings/<configName>/contexthub`

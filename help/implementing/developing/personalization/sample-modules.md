@@ -4,7 +4,7 @@ description: ContextHub提供數個範例UI模組，供您在解決方案中使�
 exl-id: 31ff4444-8d96-4817-9676-ea5ad36dcda5
 feature: Developing, Personalization
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 79480fc14163b144c76ea33d38cda7c6b84f826b
 workflow-type: tm+mt
 source-wordcount: '1114'
 ht-degree: 0%
@@ -40,7 +40,7 @@ contexthub.base UI模組型別是其他所有UI模組型別的基底型別。 �
 使用JSON格式的JavaScript物件來設定contexthub.base UI模組。 納入以下任何屬性以設定UI模組功能：
 
 * **影像：**&#x200B;要顯示為圖示的影像URL。
-* **圖示：** [Coral UI圖示](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html)類別的名稱。 如果您同時指定圖示和影像屬性的值，則會使用影像。
+* **圖示：** [Coral UI圖示](https://opensource.adobe.com/coral-spectrum/examples/#icon)類別的名稱。 如果您同時指定圖示和影像屬性的值，則會使用影像。
 * **標題：** UI模組的標題。 當指標暫停在UI模組圖示上方時，標題就會顯示。
 * **全熒幕：**&#x200B;表示使用者介面模組是否支援全熒幕模式的布林值。 使用`true`支援全熒幕，使用`false`防止全熒幕模式。
 * **範本：**&#x200B;指定要在ContextHub工具列中呈現內容的[Handlebars](https://handlebarsjs.com/)範本。 最多使用兩個`<p>`標籤。
