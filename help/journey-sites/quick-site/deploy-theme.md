@@ -5,8 +5,8 @@ exl-id: fe065972-39db-4074-a802-85895c701efd
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-recommendations: display, noCatalog
-source-git-commit: 0a458616afad836efae27e67dbe145fc44bee968
+recommendations: noDisplay, noCatalog
+source-git-commit: 8c4b34a77ef85869048fae254728c58cf0d99b66
 workflow-type: tm+mt
 source-wordcount: '1002'
 ht-degree: 100%
@@ -110,9 +110,9 @@ AEM 是一個強大的工具並有許多其他選項可用。查看[其他資源
 以下是一些其他資源，它們對本文件提到的一些概念有更深入的探討。
 
 * [使用網站邊欄管理您的網站主題](/help/sites-cloud/administering/site-creation/site-rail.md) - 了解網站邊欄的強大功能，幫助您輕鬆自訂和管理網站主題，包括下載主題來源和管理主題版本。
-* [AEM as a Cloud Service 技術文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=zh-Hant) - 如果您已經對 AEM 有深入的了解，您可能想直接查閱深入的技術文件。
-* [Cloud Manager 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=zh-Hant) - 如果您想要 Cloud Manager 功能的更多詳細資訊，您可能想直接查閱深入的技術文件。
-* [角色型權限](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html?lang=zh-Hant) - Cloud Manager 已預先設定角色並授予適當權限。有關這些角色以及如何管理它們的詳細資訊，請參閱本文件。
+* [AEM as a Cloud Service 技術文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) - 如果您已經對 AEM 有深入的了解，您可能想直接查閱深入的技術文件。
+* [Cloud Manager 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - 如果您想要 Cloud Manager 功能的更多詳細資訊，您可能想直接查閱深入的技術文件。
+* [角色型權限](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html) - Cloud Manager 已預先設定角色並授予適當權限。有關這些角色以及如何管理它們的詳細資訊，請參閱本文件。
 * [Cloud Manager 存放庫](/help/implementing/cloud-manager/managing-code/managing-repositories.md) - 如果您需要有關如何為 AEMaaCS 專案設定和管理 Git 存放庫的更多資訊，請參閱此文件。
 * [設定 CI/CD 管道 - 雲端服務](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) - 在本文件中了解更多關於設定全堆疊管道與前端管道的詳細資訊。
 * [AEM 標準網站範本](https://github.com/adobe/aem-site-template-standard) - 這是 AEM 標準網站範本的 GitHub 存放庫。
@@ -124,6 +124,6 @@ AEM 是一個強大的工具並有許多其他選項可用。查看[其他資源
 * [管理頁面](/help/sites-cloud/authoring/sites-console/managing-pages.md) - 本指南詳細介紹如何管理網站頁面，包括移動、複製和刪除。
 * [如何使用套件](/help/implementing/developing/tools/package-manager.md) - 套件允許匯入和匯出存放庫內容。本文件說明如何使用 AEM 6.5 的套件，同樣適用於 AEMaaCS。
 * [上線歷程](/help/journey-onboarding/overview.md) - 本指南可作為您的起點，確保您的團隊已設定完成並可存取 AEM as a Cloud Service。
-* [Adobe Experience Manager Cloud Manager 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=zh-Hant) - 瀏覽 Cloud Manager 文件以了解其功能的完整詳細資訊。
+* [Adobe Experience Manager Cloud Manager 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) - 瀏覽 Cloud Manager 文件以了解其功能的完整詳細資訊。
 * [網站管理文件](/help/sites-cloud/administering/site-creation/create-site.md) - 查看關於建立網站的技術文件，了解快速建立網站工具功能的更多詳細資訊。
 * [使用前端管道開發網站](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) - 本文件說明一些需留意的考量事項，以便您可以使用前端管道充分發揮前端開發流程的潛力。
