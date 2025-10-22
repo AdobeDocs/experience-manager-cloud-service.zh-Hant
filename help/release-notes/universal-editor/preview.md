@@ -3,10 +3,10 @@ title: 通用編輯器預覽發行說明
 description: 這是通用編輯器預覽版本的發行說明。
 feature: Release Information
 role: Admin
-source-git-commit: 7d30aa28b2409cdcb70c5491ee2d2d381d090dad
+source-git-commit: cb3cf5ee6bb17c33c118c6463272922e0e212c1a
 workflow-type: tm+mt
-source-wordcount: '168'
-ht-degree: 75%
+source-wordcount: '190'
+ht-degree: 66%
 
 ---
 
@@ -28,6 +28,8 @@ ht-degree: 75%
 ## 即將推出的新功能 {#what-is-new}
 
 * 現在支援在瀏覽器標籤之間複製和貼上。
+   * 僅限於同時開啟的標籤之間。
+   * 不支援複製內容然後開啟新索引標籤。
 * 您現在可以使用meta標籤停用取消發佈按鈕。
 
 ## 即將推出的改善功能 {#other-improvements}
