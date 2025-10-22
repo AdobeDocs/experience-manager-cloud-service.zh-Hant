@@ -4,10 +4,10 @@ description: 瞭解如何在AEM Assets檢視中搜尋和探索資產。 強大�
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 8136083b9154704b93726ceefaed9f3a3340beef
+source-git-commit: 339528082561c432b7b98290d09e904ee058186f
 workflow-type: tm+mt
-source-wordcount: '2277'
-ht-degree: 82%
+source-wordcount: '2255'
+ht-degree: 83%
 
 ---
 
@@ -136,8 +136,6 @@ Assets檢視提供下列自訂篩選器：
 * **瞭解同義字**：提供相關辭彙和短語的結果，因此使用者不需要猜測正確的關鍵字。
 
 * **內容感知搜尋**：辨識查詢背後的目的，而不只是文字。
-
-* **根據文字提示搜尋**： Experience Manager Assets會套用篩選器至內容，並根據簡單的文字提示自動顯示適當的結果。
 
 >[!IMPORTANT]
 >
@@ -377,6 +375,6 @@ Assets檢視可讓您為組織選取預設登陸頁面。 使用「搜尋優先�
 
 * 若要提供文件意見回饋，請使用右側邊欄提供的[!UICONTROL 編輯此頁面]![來編輯頁面](assets/do-not-localize/edit-page.png)或[!UICONTROL 記錄問題]![來建立 GitHub 問題](assets/do-not-localize/github-issue.png)。
 
-* 聯絡[客戶服務](https://experienceleague.adobe.com/zh-hant?support-solution=General#support)
+* 聯絡[客戶服務](https://experienceleague.adobe.com/?support-solution=General#support)
 
 
