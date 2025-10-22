@@ -5,7 +5,7 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8ca3546725f2a95d233497a899afe3b4f6036775
+source-git-commit: f99a0bfee76c7efd6f3e441db67d30f8a52707e5
 workflow-type: tm+mt
 source-wordcount: '1079'
 ht-degree: 11%
@@ -64,7 +64,7 @@ ht-degree: 11%
 
    ![選取附加元件](assets/setup-prod-commerce.png)
 
-1. 選取完解決方案和附加元件後，請按一下[繼續]。**&#x200B;**
+1. 選取完解決方案和附加元件後，請按一下[繼續]。****
 
 1. 在&#x200B;**上線日期**&#x200B;索引標籤上，輸入您計畫讓生產計畫上線的日期。
 
@@ -91,7 +91,7 @@ ht-degree: 11%
 
 Adobe HIPAA相容和WAF-DDOS （Web應用程式防火牆 — 分散式拒絕服務）有助於雲端式安全性，是防範漏洞的多層方法的一部分。
 
-* **HIPAA** — 此選項可啟用Adobe的HIPPA就緒解決方案實作。
+* **HIPAA** — 此選項可啟用Adobe的HIPAA就緒解決方案實作。
    * [深入了解](https://www.adobe.com/trust/compliance/hipaa-ready.html) Adobe 的 HIPAA 就緒解決方案實作方式。
    * HIPAA無法在方案建立後啟用或停用。
 * **WAF-DDOS保護** — 此選項會透過規則啟用Web應用程式防火牆，以保護您的應用程式。
