@@ -16,7 +16,7 @@ ht-degree: 5%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-aem-sites.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-aem-sites.html) |
 | AEM as a Cloud Service  | 本文章 |
 
 
@@ -44,7 +44,7 @@ Using **[!UICONTROL Adaptive Forms – Embed(v2)]** in AEM Page Editor lets you 
 * **Tagging:** AEM Sites pages allow you to [assign tags or labels to a page, an asset, or other content](/help/implementing/developing/introduction/tagging-framework.md). Tags are keywords or metadata labels that provide a way to categorize and organize content based on specific criteria. You can assign one or more tags to pages, assets, or any other content items within AEM to improve search and categorize the assets. 
 * **Locking and Unlocking content:** AEM Sites allow users to [control access and modifications to pages](/help/sites-cloud/authoring/page-editor/edit-content.md) within the AEM Sites environment. When a page is locked, it means that it is protected from unauthorized changes or edits by other users. Only the user who has locked the content or a designated administrator can unlock it to allow modifications. 
 
-In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant#features). These Core Components provide a standard and easier methods to style and customize the components, identical to [AEM Sites WCM Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant).
+In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#features). These Core Components provide a standard and easier methods to style and customize the components, identical to [AEM Sites WCM Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=en).
 
 -->
 
@@ -89,7 +89,7 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 
 使用部署管道將&#x200B;**Customheaderlibs**&#x200B;和&#x200B;**Customfooterlibs**&#x200B;使用者端資料庫新增到您的AEM Sites頁面。 若要新增使用者端程式庫：
 
-1. 存取並原地複製您的 [AEM Cloud Service Git 存放庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/repositories.html?lang=zh-Hant)。
+1. 存取並原地複製您的 [AEM Cloud Service Git 存放庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/repositories.html)。
 2. 在純文字編輯器中開啟 AEM Cloud Service Git 存放庫資料夾。 例如，Microsoft® Visual Code。
 3. 開啟`ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customheaderlibs.html`檔案，並將下列程式碼新增至檔案：
 
@@ -127,7 +127,7 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
        </sly> 
    ```
 
-7. [執行部署管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html?lang=zh-Hant)，將客戶端資料庫部署到您的 AEM as a Cloud Service 環境。
+7. [執行部署管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html)，將客戶端資料庫部署到您的 AEM as a Cloud Service 環境。
 
 >[!NOTE]
 >
@@ -137,7 +137,7 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 
 在用來建立含有表單之頁面的範本的頁面原則中，包含執行階段使用者端程式庫或自訂函式程式庫。
 
-1. 開啟AEM Sites頁面或體驗片段進行編輯。 若要開啟頁面進行編輯，請選取頁面，然後按一下[編輯]。**&#x200B;**
+1. 開啟AEM Sites頁面或體驗片段進行編輯。 若要開啟頁面進行編輯，請選取頁面，然後按一下[編輯]。****
 2. 開啟網站或體驗片段頁面的範本。 若要開啟範本，前往&#x200B;**[!UICONTROL 頁面資訊]** ![頁面資訊](/help/forms/assets/Smock_Properties_18_N.svg)>**[!UICONTROL 編輯範本]**。 它會在範本編輯器中開啟對應的範本。
 3. 移至範本的&#x200B;**[!UICONTROL 頁面資訊]** ![頁面資訊](/help/forms/assets/Smock_Properties_18_N.svg)區段，並選取&#x200B;**[!UICONTROL 頁面原則]**&#x200B;選項。 這會開啟AEM Sites範本的屬性，您可在此定義自訂函式或執行階段使用者端程式庫。
 4. 按一下&#x200B;**[!UICONTROL 屬性]**&#x200B;索引標籤中的&#x200B;**[!UICONTROL 新增]**&#x200B;按鈕，以新增自訂函式庫或執行階段程式庫。
@@ -149,7 +149,7 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 
 若要在範本的原則中啟用&#x200B;**[!UICONTROL Adaptive Forms - Embed(v2)]**&#x200B;元件，請執行下列步驟：
 
-1. 開啟AEM Sites頁面或體驗片段進行編輯。 若要開啟頁面進行編輯，請選取頁面，然後按一下[編輯]。**&#x200B;**
+1. 開啟AEM Sites頁面或體驗片段進行編輯。 若要開啟頁面進行編輯，請選取頁面，然後按一下[編輯]。****
 1. 開啟網站或體驗片段頁面的範本。 若要開啟範本，前往&#x200B;**[!UICONTROL 頁面資訊]** ![頁面資訊](/help/forms/assets/Smock_Properties_18_N.svg)>**[!UICONTROL 編輯範本]**。 它會在範本編輯器中開啟對應的範本。
 1. 在「結構」視圖中，在選單列中按一下&#x200B;**[!UICONTROL 「原則」]**![「原則」](/help/forms/assets/Smock_FeedManagement_18_N.svg)圖示。 在&#x200B;**[!UICONTROL 允許的元件]**&#x200B;清單中，選取&#x200B;**[!UICONTROL AEM原型專案名稱]** — 最適化表單&#x200B;**[下的]最適化Forms — 內嵌(v2)**&#x200B;核取方塊。
 1. 按一下&#x200B;**[!UICONTROL 完成]**。
@@ -180,7 +180,7 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 
    ![最適化Forms — 內嵌元件](/help/forms/assets/aemformcontainer.png)
 
-1. 從&#x200B;**[!UICONTROL 表單建立]**&#x200B;精靈建立新的最適化表單。
+1. 從&#x200B;**[!UICONTROL 表單建立]**精靈建立新的最適化表單。
 **[!UICONTROL 資產路徑]**&#x200B;已包含已建立的最適化表單的路徑
 1. 儲存設定。 最適化表單現在內嵌在頁面中。
 
@@ -199,7 +199,7 @@ In addition, Adaptive Forms in AEM Page Editor use [Adaptive Forms Core Componen
 
    ![最適化Forms — 內嵌元件](/help/forms/assets/aemformcontainer.png)
 
-1. 從&#x200B;**[!UICONTROL 表單建立]**&#x200B;精靈建立新的最適化表單。
+1. 從&#x200B;**[!UICONTROL 表單建立]**精靈建立新的最適化表單。
 **[!UICONTROL 資產路徑]**&#x200B;已包含已建立的最適化表單的路徑
 1. 儲存設定。 最適化表單現在內嵌在體驗片段中。
 
