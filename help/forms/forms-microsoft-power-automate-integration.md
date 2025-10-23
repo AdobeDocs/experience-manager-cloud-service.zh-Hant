@@ -5,15 +5,20 @@ exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
 keywords: 將AEM表單連線至power automate、Power automate automation AEM Forms、將power automate整合至Adaptive Forms、將資料從Adaptive Forms傳送至Power Automate
 feature: Adaptive Forms, Foundation Components, Core Components, Edge Delivery Services
 role: Admin, User, Developer
-source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
+source-git-commit: 03f92d950744e653e4ef509bac3c3b4709477e41
 workflow-type: tm+mt
-source-wordcount: '1531'
-ht-degree: 11%
+source-wordcount: '1546'
+ht-degree: 15%
 
 ---
 
 
 # 連線最適化表單與Microsoft® Power Automate {#connect-adaptive-form-with-power-automate}
+
+| 版本 | 文章連結 |
+| -------- | ---------------------------- |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/forms-microsoft-power-automate-integration) |
+| AEM as a Cloud Service  | 本文章 |
 
 <span class="preview">如果您使用GovCloud且需要連線至GCC （政府雲端運算）租使用者，請從您的官方地址傳送電子郵件至aem-forms-ea@adobe.com，以透過早期採用者計畫請求存取權。</span>
 
@@ -150,7 +155,7 @@ AEM as a Cloud Service提供多種立即可用的提交動作，用於處理表�
 1. 在屬性容器中，針對&#x200B;**[!UICONTROL 提交動作]**，選取&#x200B;**[!UICONTROL 叫用Power Automate流程]**&#x200B;選項，並選取&#x200B;**[!UICONTROL Power Automate流程]**。 選取所需的流程，並在提交時提交最適化Forms資料。
 
    ![設定提交動作](assets/submission.png)
-1. 按一下&#x200B;**[!UICONTROL 「完成」]**。
+1. 按一下&#x200B;**[!UICONTROL 完成]**。
 
 >[!NOTE]
 >
@@ -226,7 +231,7 @@ AEM as a Cloud Service提供多種立即可用的提交動作，用於處理表�
 1. 從[提交]動作下拉式清單中選取&#x200B;**[!UICONTROL 叫用Power Automate流程]**&#x200B;選項，然後選取&#x200B;**[!UICONTROL Power Automate流程]**。 選取所需的流程，並在提交時提交最適化Forms資料。
 
    ![設定提交動作](/help/forms/assets/power-automate-cc.png)
-1. 按一下&#x200B;**[!UICONTROL 「完成」]**。
+1. 按一下&#x200B;**[!UICONTROL 完成]**。
 
 >[!NOTE]
 >
@@ -297,13 +302,13 @@ AEM as a Cloud Service提供多種立即可用的提交動作，用於處理表�
 1. 登入您的Author例項，選取您的Adaptive Form。
 1. 在設定容器中，瀏覽並選取在[建立Microsoft® Power Automate Dataverse雲端設定](#microsoft-power-automate-dataverse-cloud-configuration)區段中建立的容器，並選取&#x200B;**[!UICONTROL 儲存並關閉]**。
 1. 開啟最適化表單進行編輯。
-1. 按一下編輯器上的&#x200B;**編輯表單屬性**&#x200B;擴充功能。
+1. 按一下編輯器上的&#x200B;**編輯表單屬性**擴充功能。
 **表單屬性**&#x200B;對話方塊就會顯示。
 
    >[!NOTE]
    >
-   > * 如果您在通用編輯器介面中看不到&#x200B;**編輯表單屬性**&#x200B;圖示，請在Extension Manager中啟用&#x200B;**編輯表單屬性**&#x200B;擴充功能。
-   > * 請參閱[Extension Manager功能焦點](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)文章，瞭解如何在通用編輯器中啟用或停用擴充功能。
+   > * 若您在通用編輯器介面中沒有看到「**編輯表單屬性**」圖示，請在 Extension Manager 中啟用&#x200B;**編輯表單屬性**&#x200B;擴充功能。
+   > * 請參閱 [Extension Manager 功能重點介紹](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)文章，了解如何在通用編輯器中啟用或停用擴充功能。
 
 
 1. 按一下&#x200B;**提交**&#x200B;索引標籤，然後選取&#x200B;**[!UICONTROL 叫用Power Automate流程]**&#x200B;提交動作。 選取所需的流程，並在提交時提交最適化Forms資料。

@@ -4,10 +4,10 @@ description: 了解自訂通用編輯器的不同選項以支援內容作者的�
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: cb3cf5ee6bb17c33c118c6463272922e0e212c1a
+source-git-commit: 5be00b5f0ae606a583a07126892bf51af3048a71
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 67%
+source-wordcount: '410'
+ht-degree: 68%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 67%
 | `publish` | 停用所有[發佈](/help/sites-cloud/authoring/universal-editor/publishing.md)功能，即[發佈按鈕](/help/sites-cloud/authoring/universal-editor/navigation.md#publish)和[取消發佈按鈕](/help/sites-cloud/authoring/universal-editor/navigation.md#ellipsis) |
 | `publish-live` | 停用即時[發佈](/help/sites-cloud/authoring/universal-editor/publishing.md) |
 | `publish-preview` | 停用預覽發佈（如果[預覽服務](/help/sites-cloud/authoring/sites-console/previewing-content.md)可用） |
-| `unpublish` | 停用[取消發佈按鈕](/help/sites-cloud/authoring/universal-editor/publishing.md#unpublishing-content) （[預覽功能](/help/release-notes/universal-editor/preview.md)） |
+| `unpublish` | 停用[取消發佈按鈕](/help/sites-cloud/authoring/universal-editor/publishing.md#unpublishing-content) |
 | `copy` | 停用[複製和貼上按鈕](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) |
 | `duplicate` | 停用[重複按鈕](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate) |
 | `header-open-page` | 停用[開啟頁面按鈕](/help/sites-cloud/authoring/universal-editor/navigation.md#open-page) |
