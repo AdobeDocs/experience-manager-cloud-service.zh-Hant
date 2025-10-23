@@ -17,7 +17,7 @@ ht-degree: 15%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/forms-microsoft-power-automate-integration) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/forms-microsoft-power-automate-integration) |
 | AEM as a Cloud Service  | 本文章 |
 
 <span class="preview">如果您使用GovCloud且需要連線至GCC （政府雲端運算）租使用者，請從您的官方地址傳送電子郵件至aem-forms-ea@adobe.com，以透過早期採用者計畫請求存取權。</span>
