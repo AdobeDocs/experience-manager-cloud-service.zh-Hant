@@ -5,10 +5,10 @@ exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
 recommendations: noDisplay
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 841e30bc279a3859ce9a302b18ddf566d8163100
-workflow-type: ht
-source-wordcount: '1348'
-ht-degree: 100%
+source-git-commit: 858a9c4b61fd3a80a257313e48816b067ca77175
+workflow-type: tm+mt
+source-wordcount: '1362'
+ht-degree: 93%
 
 ---
 
@@ -19,7 +19,9 @@ ht-degree: 100%
 
 ## 簡介 {#introduction}
 
-Adobe Experience Manager 是一套功能強大的可組合內容服務，可在任何頻道中快速提供極具影響力的個人化體驗，為所有人解鎖所有內容。**Edge Delivery Services** 是 Adobe Experience Manager 的最創新服務，可使內容速度達到極限並提供卓越的體驗。參閱 [Edge Delivery Services 概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/edge-delivery/overview)，了解如何開始使用 Edge Delivery Services。若要了解如何使用 Edge Delivery Services，請參閱[開發人員教學課程](https://www.aem.live/developer/tutorial)頁面。
+Adobe Experience Manager (AEM)在內容傳遞和編寫方法上提供靈活性，使團隊能夠根據其需求選擇最佳模型。
+
+使用[Edge Delivery Services](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/edge-delivery/overview)進行快速、反複的撰寫及高速的內容速度，或使用傳統的Publish傳遞服務建立強大的企業發佈模型。 無論是哪種方法，都可讓組織以最適合的方式提供卓越的數位體驗。 若要開始使用Edge Delivery Services，請探索[Edge Delivery Services概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/edge-delivery/overview)，並深入瞭解現代撰寫選項，請參閱[撰寫指南](https://www.aem.live/docs/authoring-guide)。
 
 上線是指定的系統管理員為您的組織設定 AEM as a Cloud Service 的過程。此程序包括雲端資源的初始設定，以及根據使用者的工作職責為其指派角色。因此，每個成員都能夠登入並存取他們的 AEM as a Cloud Service 資源。
 
@@ -62,9 +64,9 @@ AEM as a Cloud Service 的上線歷程圍繞以下核心要素：
 
 上線歷程是專為初次接觸 AEM as a Cloud Service 和 AEM 一般客戶的&#x200B;**系統管理員**&#x200B;而製作。系統管理員是在您簽署 AEM as a Cloud Service 合約後，Adobe 首先聯絡的人。他們通常是第一個在 AEM as a Cloud Service 存取和設定資源的人。如果您正在閱讀本主題，您很可能是系統管理員。
 
-系統管理員負責管理其組織 AEMaaCS 使用者的所有方面事宜，涵蓋存取服務至權限。但是，系統管理員在此過程中必須與其他職務角色進行互動。
+系統管理員負責管理其組織 AEMaaCS 使用者的所有方面事宜，涵蓋存取服務至權限。但是，系統管理員在此過程中必須與其他職務人物誌進行互動。
 
-| 角色 | 描述 | 歷程中的角色 |
+| 人物誌 | 描述 | 歷程中的角色 |
 | --- | --- | --- |
 | 系統管理員 | 此歷程的目標是進行雲端資源的初始佈建，以及根據使用者的工作職責為其指派適當角色。 | 角色能協助您管理使用者從存取到權限的各個層面。 |
 | 內容作者 | 在 AEM 中建立和審閱內容。 | 獲得系統管理員授予權限後，作者即可開始其建立內容的歷程。 |
