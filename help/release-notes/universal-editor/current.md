@@ -1,10 +1,10 @@
 ---
-title: 通用編輯器 2025.10.23 版發行說明
-description: 以下是通用編輯器 2025.10.23 版的發行說明。
+title: 通用編輯器 2025.10.24 版發行說明
+description: 以下是通用編輯器 2025.10.24 版的發行說明。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: fd80b6b0a3c6d06f8dddaa8387dbae6c33f96038
+source-git-commit: 8c7976d68413bc378800d83d373cc876a1a36f25
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 70%
@@ -12,9 +12,9 @@ ht-degree: 70%
 ---
 
 
-# 通用編輯器 2025.10.23 版發行說明 {#release-notes}
+# 通用編輯器 2025.10.24 版發行說明 {#release-notes}
 
-此為通用編輯器 2025 年 10 月 23 日版本的發行說明。
+此為通用編輯器 2025 年 10 月 24 日版本的發行說明。
 
 >[!TIP]
 >
@@ -26,7 +26,7 @@ ht-degree: 70%
 
 ## 新增功能 {#what-is-new}
 
-* 現在支援在瀏覽器分頁之間複製和貼上[&#128279;](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste)。
+* 現在支援在瀏覽器分頁之間複製和貼上[](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste)。
    * 僅限於同時開啟的標籤之間。
    * 不支援複製內容然後開啟新索引標籤。
 * 您現在可以停用含有[中繼標籤的取消發佈按鈕。](/help/implementing/universal-editor/customizing.md#meta-tags)
