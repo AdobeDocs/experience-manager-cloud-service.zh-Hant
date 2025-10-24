@@ -123,6 +123,6 @@ AEM as a Cloud Service預配置了 Adobe Identity Management 系統 (也稱為 I
 
 * [Admin Console 概觀](https://helpx.adobe.com/tw/enterprise/using/admin-console.html)- Admin Console 的全面概觀
 * [建立或更新您的 Adobe ID](https://helpx.adobe.com/tw/manage-account/using/create-update-adobe-id.html#HowtocreateorupdateyourAdobeID) - 了解如何建立、更改和管理多個 Adobe ID。
-* [SAML 2.0 身份驗證處理程序](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/saml-2-0-authenticationhandler#)- AEM 附帶 SAML 身份驗證處理程序。此處理程序使用 HTTP POST 綁定提供對 SAML 2.0 身份驗證請求協議（Web-SSO 設定檔）的支援。
+* [SAML 2.0 身份驗證處理程序](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/security/saml-2-0-authenticationhandler#)- AEM 附帶 SAML 身份驗證處理程序。此處理程序使用 HTTP POST 綁定提供對 SAML 2.0 身份驗證請求協議（Web-SSO 設定檔）的支援。
 * [管理職務](https://helpx.adobe.com/tw/enterprise/using/admin-roles.html) - 使用 Adobe Admin Console，組織可以定義靈活的管理層次結構，以實現對 Adobe 產品存取和使用的精細管理。
-* [支援和專家工作階段](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.html) — 瞭解如何存取Admin Console上的支援選項、管理您的支援案例、安排專家會議等。
+* [支援和專家工作階段](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.html) — 瞭解如何存取Admin Console上的支援選項、管理您的支援案例、安排專家會議等。
