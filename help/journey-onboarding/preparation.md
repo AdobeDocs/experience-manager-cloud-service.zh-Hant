@@ -93,4 +93,4 @@ Adobe提供：
 * 該合約如何影響入門流程。
 * 如何準備您的入門諮詢電話服務。
 
-現在您已經熟悉了這些準備步驟，可以準備登入系統了。從系統管理員的角度開始簡要瀏覽AEM as a Cloud Service。 接下來，學習基本術語。 請繼續下一段歷程「[ AEM as a Cloud Service 術語](terminology.md)」。
+現在您已經熟悉了這些準備步驟，可以準備登入系統了。從系統管理員的角度開始簡要瀏覽AEM as a Cloud Service。 接下來，學習基本術語。 請繼續下一段歷程「[&#x200B; AEM as a Cloud Service 術語](terminology.md)」。
