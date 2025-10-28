@@ -4,7 +4,7 @@ description: 了解在 AEM as a Cloud Service 上進行開發的準則，以及�
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a352261034188cc66a0bc7f2472ef8340c778c13
+source-git-commit: c7ba218faac76c9f43d8adaf5b854676001344cd
 workflow-type: tm+mt
 source-wordcount: '2768'
 ht-degree: 4%
@@ -23,9 +23,9 @@ ht-degree: 4%
 
 ## 程式碼必須可感知叢集 {#cluster-aware}
 
-在AEM as a Cloud Service中執行的程式碼必須瞭解，它一律在叢集中執行。 這表示執行中的例項永遠多於一個。 程式碼必須具復原性，尤其是因為例項可能隨時停止。
+在AEM as a Cloud Service中執行的程式碼必須瞭解，它一律在叢集中執行。 這表示執行中的例項永遠多於一個。 程式碼必須具復原性，特別是因為例項可能隨時停止。
 
-在AEM as a Cloud Service更新期間，有些執行個體同時執行舊程式碼和新程式碼。 因此，舊程式碼不得中斷新程式碼建立的內容，且新程式碼必須能夠處理舊內容。
+在AEM as a Cloud Service更新期間，有些執行個體同時執行舊程式碼和新程式碼。 因此，舊程式碼不得中斷新程式碼建立的內容，而新程式碼必須能夠處理舊內容。
 
 如果需要識別叢集中的主要節點，可以使用Apache Sling Discovery API來偵測它。
 
@@ -35,23 +35,23 @@ ht-degree: 4%
 
 ## 檔案系統上的狀態 {#state-on-the-filesystem}
 
-請勿在AEM as a Cloud Service中使用執行個體的檔案系統。 磁碟是暫時性的，當執行個體回收時就會加以處置。 在處理單一請求時，可以限制使用檔案系統作為暫時性儲存空間，但不應將其濫用於大型檔案。 這是因為這可能會對資源使用配額產生負面影響，並遇到磁碟限制。
+請勿在AEM as a Cloud Service中使用執行個體的檔案系統。 磁碟是暫時性的，當執行個體回收時會加以處置。 在處理單一請求時，可以限制使用檔案系統作為暫時性儲存空間，但不應將其濫用於大型檔案。 這是因為這可能會對資源使用配額產生負面影響，並遇到磁碟限制。
 
 舉例來說，若不支援使用檔案系統，發佈層級應確保任何必須儲存的資料都會運送至外部服務，以供長期儲存之用。
 
 ## 觀察 {#observation}
 
-同樣地，由於所有非同步發生的事（例如在觀察事件上動作），無法保證會在本機執行，因此必須謹慎使用。 JCR事件和Sling資源事件都是如此。 發生變更時，可能會移除執行個體，並由其他執行個體取代。 拓撲中當時處於作用中的其他執行個體能夠對該事件做出反應。 但在此情況下，這不會是本機事件，在發佈事件時進行中的領導人選舉的情況下，甚至可能沒有活動的領導人。
+同樣地，由於一切非同步發生（例如對觀察事件採取行動），無法保證會在本機執行，因此使用時必須小心。 JCR事件和Sling資源事件都是如此。 發生變更時，可能會移除執行個體，並由其他執行個體取代。 拓撲中當時處於作用中的其他執行個體能夠對該事件做出反應。 但是，在這種情況下，這不會是本機事件，在發佈事件時甚至可能沒有活動的領導者，因為正在進行領導人選舉。
 
 ## 背景工作與長時間執行的工作 {#background-tasks-and-long-running-jobs}
 
-作為背景工作執行的程式碼必須假設執行所在的例項隨時都會停機。 因此，程式碼必須有韌性，而且最重要的是可恢復。 這表示如果程式碼重新執行，就不應從頭開始，而應從原本的地方開始。 雖然這並非此類程式碼的新需求，但在AEM as a Cloud Service中，執行個體很有可能停止運作。
+作為背景工作執行的程式碼必須假設執行所在的例項隨時都會停機。 因此，程式碼必須有彈性，而且最重要的是可恢復。 這表示如果程式碼重新執行，就不應從頭開始，而應從結尾開始。 雖然這並非此類程式碼的新需求，但在AEM as a Cloud Service中，執行個體遭刪除的機率較高。
 
-為了將問題降至最低，應儘可能避免長時間執行工作，而且這些工作應至少可以恢復。 若要執行這類作業，請使用Sling作業，此作業有至少執行一次的保證，因此如果中斷，將會儘快重新執行。 但是他們或許不應該從頭開始。 若要排程這類工作，最好使用[Sling工作](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing)排程器，因為這會再次確保至少執行一次。
+為了將問題降至最低，應儘可能避免長時間執行的工作，並且這些工作應至少可以恢復。 若要執行這類作業，請使用Sling作業，此作業有至少執行一次的保證，因此如果中斷，將會儘快重新執行。 但是他們或許不應該從頭開始。 若要排程這類工作，最好使用[Sling工作](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing)排程器，因為這會再次確保至少執行一次。
 
 請勿使用Sling Commons Scheduler進行排程，因為無法保證執行。 只是更有可能已排程。
 
-同樣地，由於所有非同步發生的事（例如對觀察事件執行動作，包括JCR事件或Sling資源事件），無法保證執行，因此必須謹慎使用。 目前的AEM部署便是如此。
+同樣地，由於所有非同步發生的事(例如對觀察事件採取行動（包括JCR事件或Sling資源事件），無法保證執行，因此必須謹慎使用。 目前的AEM部署便是如此。
 
 ## 傳出HTTP連線 {#outgoing-http-connections}
 
@@ -103,7 +103,7 @@ AEM as a Cloud Service不支援從發佈到作者的反向復寫。 如果需要
 
 開發環境和快速開發環境應僅限於開發、錯誤分析和功能測試，且不應設計為處理高工作負載或大量內容。
 
-例如，在開發環境中變更大型內容存放庫上的索引定義可能會導致重新索引導致太多處理。 需要大量內容的測試應在中繼環境中執行。
+例如，在開發環境中變更大型內容存放庫上的索引定義可能會導致重新索引，從而產生過多的處理。 需要大量內容的測試應在中繼環境中執行。
 
 ## 監視和偵錯 {#monitoring-and-debugging}
 
@@ -111,11 +111,11 @@ AEM as a Cloud Service不支援從發佈到作者的反向復寫。 如果需要
 
 對於本機開發，記錄專案會寫入`/crx-quickstart/logs`資料夾中的本機檔案。
 
-在雲端環境中，開發人員可以透過Cloud Manager下載記錄，或使用命令列工具追蹤記錄。<!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=zh-Hant) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
+在雲端環境中，開發人員可以透過Cloud Manager下載記錄，或使用命令列工具追蹤記錄。<!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
 
 **正在設定記錄層級**
 
-若要變更雲端環境的記錄層級，應修改Sling記錄OSGI設定，然後進行完整重新部署。 由於這並非立即發生，因此在接收大量流量的生產環境中，請謹慎啟用詳細記錄檔。 未來可能會有更快速變更紀錄層級的機制。
+若要變更雲端環境的記錄層級，應修改Sling記錄OSGI設定，然後進行完整重新部署。 由於這並非立即發生，因此在接收大量流量的生產環境中，在啟用詳細記錄時請務必謹慎。 未來可能會有更快速變更紀錄層級的機制。
 
 >[!NOTE]
 >
@@ -174,7 +174,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 對於本機開發，開發人員擁有CRXDE Lite (`/crx/de`)和AEM Web Console (`/system/console`)的完整存取權。
 
-在本機開發(使用SDK)中，`/apps`和`/libs`可以直接寫入到，這與那些頂層資料夾不可變的雲端環境不同。
+在本機開發(使用SDK)中，`/apps`和`/libs`可以直接寫入到，這與雲端環境不同，因為雲端環境中的這些頂層資料夾是不可變的。
 
 ### AEM as a Cloud Service 開發工具 {#aem-as-a-cloud-service-development-tools}
 
@@ -185,11 +185,11 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 >[!NOTE]
 >部分客戶可選擇試用改版的AEM Cloud Service Developer Console體驗。 如需詳細資訊，請參閱[本文章](/help/implementing/developing/introduction/aem-developer-console.md)。
 
-客戶可以在作者階層的開發環境中存取CRXDE Lite，但不能在預備或生產環境中存取。 無法在執行階段寫入不可變的存放庫(`/libs`， `/apps`)，因此嘗試這樣做將會導致錯誤。
+客戶可以在作者層的開發環境中存取CRXDE Lite，但不能在預備或生產環境中存取。 無法在執行階段寫入不可變的存放庫(`/libs`， `/apps`)，因此嘗試這樣做將會導致錯誤。
 
 您可以從AEM as a Cloud Service Developer Console啟動存放庫瀏覽器，為作者、發佈和預覽層級的所有環境提供存放庫的唯讀檢視。 如需詳細資訊，請參閱[存放庫瀏覽器](/help/implementing/developing/tools/repository-browser.md)。
 
-AEM as a Cloud Service Developer Console中針對RDE、開發、測試和生產環境提供了一組用於偵錯AEM as a Cloud Service開發人員環境的工具。 可藉由調整作者或發佈服務URL來決定URL，如下所示：
+AEM as a Cloud Service Developer Console中針對RDE、開發、測試和生產環境提供了一組用於偵錯AEM as a Cloud Service開發人員環境的工具。 此URL可透過調整作者或發佈服務URL來確定，如下所示：
 
 `https://dev-console-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
@@ -199,9 +199,9 @@ AEM as a Cloud Service Developer Console中針對RDE、開發、測試和生產�
 
 如需詳細資訊，請參閱[發行資訊](/help/release-notes/home.md)。
 
-開發人員可以產生狀態資訊，並解析各種資源。
+開發人員可以產生狀態資訊並解析各種資源。
 
-如下圖所示，可用的狀態資訊包括套件組合、元件、OSGI設定、Oak索引、OSGI服務和Sling工作的狀態。
+如下圖所示，可用狀態資訊包括套件組合、元件、OSGI設定、Oak索引、OSGI服務和Sling工作的狀態。
 
 ![開發主控台1](/help/implementing/developing/introduction/assets/devconsole1.png)
 
@@ -215,11 +215,11 @@ AEM as a Cloud Service Developer Console中針對RDE、開發、測試和生產�
 
 ![開發主控台4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-對於生產計畫，AEM as a Cloud Service Developer Console的存取權由Adobe Admin Console中的「Cloud Manager — 開發人員角色」定義，而對於沙箱計畫，AEM as a Cloud Service Developer Console則可供任何擁有產品設定檔並授與對AEM as a Cloud Service存取權的使用者使用。 對於所有程式，狀態傾印需要「Cloud Manager — 開發人員角色」，存放庫瀏覽器和使用者也必須在AEM使用者或AEM管理員產品設定檔中，針對作者和發佈服務進行定義，以便檢視來自這兩個服務的資料。 如需設定使用者許可權的詳細資訊，請參閱[Cloud Manager檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=zh-Hant)。
+對於生產計畫，AEM as a Cloud Service Developer Console的存取權由Adobe Admin Console中的「Cloud Manager — 開發人員角色」定義，而對於沙箱計畫，AEM as a Cloud Service Developer Console則可供任何擁有產品設定檔並授與對AEM as a Cloud Service存取權的使用者使用。 對於所有程式，狀態傾印需要「Cloud Manager — 開發人員角色」，存放庫瀏覽器和使用者也必須在AEM使用者或AEM管理員產品設定檔中，針對作者和發佈服務進行定義，以便檢視來自這兩個服務的資料。 如需設定使用者許可權的詳細資訊，請參閱[Cloud Manager檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)。
 
 ### 效能監控 {#performance-monitoring}
 
-Adobe會監控應用程式效能，並在發現問題時採取措施加以解決。 目前無法觀察應用程式量度。
+Adobe會監控應用程式效能，並在發現問題時採取措施解決效能降低的問題。 目前無法觀察應用程式量度。
 
 ## 寄送電子郵件 {#sending-email}
 
@@ -239,18 +239,18 @@ Adobe會監控應用程式效能，並在發現問題時採取措施加以解決
 
 ### 傳送電子郵件 {#sending-emails}
 
-應使用[Day CQ Mail Service OSGI服務](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=zh-Hant#configuring-the-mail-service)，且必須將電子郵件傳送至支援要求中指出的郵件伺服器，而非直接傳送給收件者。
+應使用[Day CQ Mail Service OSGI服務](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)，且必須將電子郵件傳送至支援要求中指出的郵件伺服器，而非直接傳送給收件者。
 
 ### 設定 {#email-configuration}
 
-AEM中的電子郵件應使用[Day CQ Mail Service OSGi服務](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=zh-Hant#configuring-the-mail-service)傳送。
+AEM中的電子郵件應使用[Day CQ Mail Service OSGi服務](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)傳送。
 
-如需設定電子郵件設定的詳細資訊，請參閱[AEM 6.5檔案](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=zh-Hant)。 若為AEM as a Cloud Service，請注意下列對`com.day.cq.mailer.DefaultMailService OSGI`服務的必要調整：
+如需設定電子郵件設定的詳細資訊，請參閱[AEM 6.5檔案](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html)。 若為AEM as a Cloud Service，請注意下列對`com.day.cq.mailer.DefaultMailService OSGI`服務的必要調整：
 
 * SMTP伺服器主機名稱應該設定為$[env:AEM_PROXY_HOST；default=proxy.tunnel]
 * SMTP伺服器連線埠應該設定為設定進階網路時，在API呼叫中使用的portForwards引數中設定的原始Proxy連線埠值。 例如，30465 （而非465）
 
-SMTP伺服器連線埠應該設定為在設定進階網路時，在API呼叫中使用的portForwards引數中設定的`portDest`值，而且`portOrig`值應該是有意義的值，且在30000 - 30999的所需範圍內。 例如，如果SMTP伺服器連線埠是465，則連線埠30465應該用作`portOrig`值。
+設定進階網路時，SMTP伺服器連線埠應該設定為API呼叫中使用的portForwards引數中所設定的`portDest`值，`portOrig`值應該是有意義的值，且在30000 - 30999的所需範圍內。 例如，如果SMTP伺服器連線埠是465，則連線埠30465應該用作`portOrig`值。
 
 在此情況下，假設需要啟用SSL，請在&#x200B;**Day CQ Mail Service OSGI**&#x200B;服務的設定中：
 
@@ -289,7 +289,7 @@ SMTP伺服器主機應該設定為郵件伺服器的主機。
 
 ## 避免大型多值屬性 {#avoid-large-mvps}
 
-AEM as a Cloud Service底下的Oak內容存放庫不會用於過多的多值屬性(MVP)。 經驗法則是將MVP維持在1000以下。 然而，實際的效能取決於許多因素。
+AEM as a Cloud Service底下的Oak內容存放庫不會用於過多的多值屬性(MVP)。 經驗法則是將MVP維持在1000以下。 不過，實際的效能取決於許多因素。
 
 超過1000個之後，預設會記錄警告。 它們與以下內容類似。
 
