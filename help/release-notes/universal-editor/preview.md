@@ -3,10 +3,10 @@ title: 通用編輯器預覽發行說明
 description: 這是通用編輯器預覽版本的發行說明。
 feature: Release Information
 role: Admin
-source-git-commit: 8c7976d68413bc378800d83d373cc876a1a36f25
+source-git-commit: d02c1a460a1d5ddd2d021b6677ebb5aa489e706f
 workflow-type: tm+mt
-source-wordcount: '194'
-ht-degree: 65%
+source-wordcount: '132'
+ht-degree: 97%
 
 ---
 
@@ -27,15 +27,8 @@ ht-degree: 65%
 
 ## 即將推出的新功能 {#what-is-new}
 
-* 插入新RTE的影像
-* 新`/configuration`端點
+* 待定
 
 ## 即將推出的改善功能 {#other-improvements}
 
-* 如果動作為還原，現在會通知更新事件。
-* `No results`字串現在取決於通用編輯器標籤中的瀏覽器地區設定。
-* 修正通用編輯器發佈按鈕中的額外分行符號。
-* 已進行清理以修補API。
-* 選取內容按鈕現在會顯示在Safari中。
-* RPM組建已修正。
-* CORS會更新，以避免在儲存後再次更新文字編輯的文字。
+* 待定

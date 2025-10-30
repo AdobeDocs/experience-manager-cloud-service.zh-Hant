@@ -3,13 +3,13 @@ title: 為通用編輯器設定RTE
 description: 瞭解如何在通用編輯器中設定RTF編輯器(RTE)。
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 60699db418e5f02b8bdb0471eb2996c9caf5694b
+exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
+source-git-commit: d02c1a460a1d5ddd2d021b6677ebb5aa489e706f
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '497'
 ht-degree: 1%
 
 ---
-
 
 # 為通用編輯器設定RTE {#configure-rte}
 
@@ -73,7 +73,7 @@ RTE組態包含兩個部分：
     // List options
     "list": ["bullet_list", "ordered_list"],
     // Content insertion
-    "insert": ["link", "unlink"],
+    "insert": ["link", "unlink", "image"],
     // Superscript/subscript
     "sr_script": ["superscript", "subscript"],
     // Editor utilities
@@ -158,6 +158,27 @@ RTE組態包含兩個部分：
 * `hideTarget`： `true` — 從連結中完全排除目標屬性
 
 只有當游標位於現有連結中時，`unlink`動作才會出現。 它會移除連結格式，同時保留文字內容。
+
+### 影像動作 {#image}
+
+影像動作支援將圖片元素換行，以產生回應式影像標籤。 可使用下列章節。
+
+```json
+{
+  "actions": {
+    "image": {
+      "wrapInPicture": false,     // Use <img> tag (default)
+      "shortcut": "Mod-Shift-I",  // Custom keyboard shortcut
+      "label": "Insert Image"     // Custom button label
+    }
+  }
+}
+```
+
+#### 影像組態選項 {#image-options}
+
+* `wrapInPicture`： `false` （預設） — 產生簡單`<img>`元素
+* `wrapInPicture`： `true` — 將影像包裝在`<picture>`個元素中以用於回應式設計
 
 ### 其他動作 {#other}
 
