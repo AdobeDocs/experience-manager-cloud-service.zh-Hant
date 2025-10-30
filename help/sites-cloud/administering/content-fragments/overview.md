@@ -57,7 +57,7 @@ ht-degree: 4%
 使用AEM核心元件的Sling模型(JSON)匯出功能，內容片段也可以以JSON格式傳送。 此傳遞形式：
 
 * 可讓您使用元件來管理要傳送片段的哪些元素
-* 允許大量傳送；方法是在用於API傳送的頁面上新增多個[內容片段核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)
+* 允許大量傳送；方法是在用於API傳送的頁面上新增多個[內容片段核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=zh-Hant)
 
 通訊管道的數量每年都在增加。 通常，管道是指傳遞機制，例如：
 
@@ -85,7 +85,7 @@ ht-degree: 4%
 >
 >體驗片段可以包含內容片段形式的內容，反之則不行。
 >
->如需進一步資訊，請參閱[瞭解AEM中的內容片段和體驗片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments)。
+>如需進一步資訊，請參閱[瞭解AEM中的內容片段和體驗片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=zh-Hant#content-fragments)。
 
 本頁和下列頁面涵蓋建立、設定、維護及使用內容片段的任務：
 
@@ -186,7 +186,7 @@ AEM內容片段可用於說明和管理結構化內容。 結構化內容在可�
 
 * 使用內容片段元件[&#x200B; （參考元件）可在](/help/sites-cloud/authoring/fragments/content-fragments.md)頁面編輯器中取得：
 
-   * [內容片段核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)可供頁面作者使用。 它可讓他們以HTML或JSON格式參考及傳送所需的內容片段。
+   * [內容片段核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=zh-Hant)可供頁面作者使用。 它可讓他們以HTML或JSON格式參考及傳送所需的內容片段。
 
 內容片段是內容結構，具備以下功能：
 
@@ -273,7 +273,7 @@ Assets可以透過數個方式與內容片段搭配使用；各有其優點：
    * 負責片段的佈局和傳遞；例如管道。
    * 片段需要一或多個專用元件來定義版面並傳遞部分或全部元素/變數和關聯內容。
    * 在製作中將片段拖曳到頁面上會自動建立所需元件的關聯。
-   * 檢視[內容片段核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)。
+   * 檢視[內容片段核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=zh-Hant)。
 
 ## 內容片段主控台 {#content-fragments-console}
 
