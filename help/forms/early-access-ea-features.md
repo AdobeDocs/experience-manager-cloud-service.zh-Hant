@@ -6,9 +6,9 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
+source-git-commit: a974859746ca20f1979b773668a66be0197f623d
 workflow-type: tm+mt
-source-wordcount: '2940'
+source-wordcount: '3019'
 ht-degree: 20%
 
 ---
@@ -121,6 +121,17 @@ Cloud上的互動式通訊是建立、管理和提供資料導向互動式通訊
 * **PDF預覽：**&#x200B;預覽沒有資料、本機JSON檔案或資料模型的互動式通訊，以進行彈性的資料導向測試。
 * **自訂字型：**&#x200B;內嵌自訂或組織核准的字型，以確保跨裝置一致、品牌化的PDF轉譯。
 * **匯入和匯出：**&#x200B;在不同環境中順暢地移轉及重複使用互動式通訊，以及它們的片段和資料模型。
+
+* **範本鎖定**：鎖定範本中的內容與版面配置元素，以維持品牌完整性並防止未經授權的修改。
+
+* **內容溢位**：「允許在內容內分頁」選項適用於流程版面配置，以順利編輯多頁並改善複雜檔案的文字管理。
+
+* **XDP檔案編輯**：您現在可以在瀏覽器中編輯XDP檔案，而不是只在Forms Windows案頭上執行的Microsoft Designer。
+
+##### 動態頁面編號
+
+在主版頁面上自動顯示「第#頁，共#頁」，以在多頁檔案中進行清晰、一致的分頁。
+
 
 
 #### 使用案例：

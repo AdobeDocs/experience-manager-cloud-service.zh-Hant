@@ -5,10 +5,10 @@ exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: 3859393b94680ac1c786bfe31950e6073650167f
+source-git-commit: 20ad1d468ac0d8ec3933477f954120debe4e9240
 workflow-type: tm+mt
-source-wordcount: '977'
-ht-degree: 76%
+source-wordcount: '1027'
+ht-degree: 72%
 
 ---
 
@@ -18,13 +18,11 @@ ht-degree: 76%
 
 *Launch*&#x200B;已建立，可讓您在維護目前內容的同時，進行變更以準備未來出版物。 針對AEM頁面，這表示您同時有效編輯兩個版本：目前發佈的頁面，以及未來將同時發佈的這些頁面版本。 到了那一天後，您就可以取代原始頁面並發佈新版本。
 
-<!--
 >[!NOTE]
 >
->Launches are also available for Content Fragments. The basic concepts are the same, but there are differences in how to manage them in AEM. 
+>內容片段也提供啟動項。 基本概念相同，但在AEM中管理概念的方式上有所差異。
 >
->For full details see [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md).
--->
+>如需完整詳細資訊，請參閱[內容片段啟動](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)。
 
 您建立&#x200B;*Launch*，然後在編輯和更新您的&#x200B;*Launch*&#x200B;頁面後，將其&#x200B;*提升*&#x200B;回&#x200B;*Source*。 然後您可以啟用這些&#x200B;*Source*&#x200B;頁面（頂層）。 提升功能會將啟動內容複製回來源頁面，可以手動或自動完成 (視建立和編輯啟動時設定的欄位)。
 
@@ -115,13 +113,11 @@ ht-degree: 76%
 
 ## 啟動主控台 {#the-launches-console}
 
-<!--
 >[!NOTE]
 >
->This console is only for Launches for Pages. 
+>此主控台僅供頁面啟動使用。
 >
->To manage your Content Fragments see [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md).
--->
+>若要管理您的內容片段，請參閱內容片段的[啟動](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)。
 
 「啟動」主控台提供啟動的總覽，並可讓您對列出的啟動執行動作。
 

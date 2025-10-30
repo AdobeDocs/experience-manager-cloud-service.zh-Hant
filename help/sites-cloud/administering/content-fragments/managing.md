@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: 6df762075346971aa10536c1f6c09fcd4272a19a
+source-git-commit: d97082c733b9bcae762f4ffbff012cfdbbada3bd
 workflow-type: tm+mt
-source-wordcount: '2920'
+source-wordcount: '2927'
 ht-degree: 2%
 
 ---
@@ -63,7 +63,9 @@ ht-degree: 2%
    * 您可以在此隱藏或顯示資料夾樹狀結構
    * 您可以選取樹的特定分支
    * 這可以調整大小以顯示巢狀資料夾
-   * 除了內容片段之外，您也可以檢視[內容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)或[Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)；您也可以壓縮或展開面板的連結
+   * 除了內容片段以外，您還可以：
+      * 檢視[內容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)或[Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)；您也可以壓縮或展開面板的連結
+      * 建立及管理內容片段的[啟動](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)
 * 主要/右側面板 — 從這裡，您可以：
    * 檢視樹狀結構所選分支中的所有內容片段清單：
       * 所選資料夾的內容片段，以及所有子資料夾都會顯示：

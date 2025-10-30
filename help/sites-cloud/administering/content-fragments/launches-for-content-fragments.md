@@ -1,21 +1,18 @@
 ---
-title: 內容片段啟動
+title: 內容片段的啟動
 description: 瞭解如何針對Adobe Experience Manager as a Cloud Service中的內容片段使用啟動。 啟動可讓您有效率地開發未來版本的內容，同時維護您目前的內容片段。
 feature: Content Fragments
 role: User, Developer, Architect
-hide: true
-hidefromtoc: true
-index: false
 solution: Experience Manager Sites
 exl-id: c0b9e571-3be5-42ab-8d56-d93e8ef4c2f7
-source-git-commit: 231ce792429347882c93804d370e7a99111ec916
+source-git-commit: 39ff527f0082a18f0853964172eabf438caa1098
 workflow-type: tm+mt
 source-wordcount: '1582'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# 內容片段啟動 {#launches-for-content-fragments}
+# 內容片段的啟動 {#launches-for-content-fragments}
 
 在Adobe Experience Manager (AEM) as a Cloud Service中，啟動可讓您有效率地開發未來版本的內容。
 
@@ -235,7 +232,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->您也可以從&#x200B;**[比較啟動項與Source](#compare-launch-to-source)**&#x200B;來&#x200B;**重新布建**&#x200B;啟動項。
+>您也可以從&#x200B;**比較啟動項與Source**&#x200B;來&#x200B;**[重新布建](#compare-launch-to-source)**&#x200B;啟動項。
 
 ## 提升啟動(至Source) {#promote-a-launch-to-source}
 
@@ -261,9 +258,9 @@ ht-degree: 1%
 
 若要在指定的日期和時間自動提升啟動，您需要：
 
-1. 定義[啟動標籤](#launches-in-the-content-fragment-console)右側面板的&#x200B;**提升日期**&#x200B;和時間。
+1. 定義&#x200B;**啟動標籤**&#x200B;右側面板的[提升日期](#launches-in-the-content-fragment-console)和時間。
 
-1. 如果內容可以在提升時發佈，請在[建立啟動項](#create-a-launch)時設定&#x200B;**發佈就緒**，或從[啟動項索引標籤](#launches-in-the-content-fragment-console)的右側面板設定。
+1. 如果內容可以在提升時發佈，請在&#x200B;**建立啟動項**&#x200B;時設定[發佈就緒](#create-a-launch)，或從[啟動項索引標籤](#launches-in-the-content-fragment-console)的右側面板設定。
 
 ## 刪除啟動項 {#delete-a-launch}
 
