@@ -147,7 +147,7 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 >[!NOTE]
 >
 >於 9 月 25 日以「有限開放」功能的形式提供。
->>寄送電子郵件至 [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com)，以便在您的方案中啟動此功能。
+>&#x200B;>寄送電子郵件至 [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com)，以便在您的方案中啟動此功能。
 
 ### AEM記錄轉送至更多目的地 {#log-forwarding}
 
