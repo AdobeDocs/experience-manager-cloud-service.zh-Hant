@@ -4,18 +4,15 @@ description: 使用不同資料選項在互動式通訊編輯器中預覽PDF，�
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: true
-index: false
-hidefromtoc: true
-source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
+source-git-commit: 371838c77beafa8c67259a865b25325632bea0b0
 workflow-type: tm+mt
 source-wordcount: '367'
-ht-degree: 13%
+ht-degree: 15%
 
 ---
 
 
-# 互動式通訊編輯器中的PDF預覽
+# 互動式通訊編輯器中的 PDF 預覽
 
 >[!NOTE]
 >
@@ -53,7 +50,7 @@ PDF預覽功能可讓使用者以三種不同的方式預覽互動式通訊：�
 
 +++2.使用本機JSON資料預覽
 
-2.1.準備結構化JSON檔案。 如需參考，您可以從用於通訊的JSON結構描述[(FDM)](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model)複製範例資料。
+2.1.準備結構化JSON檔案。 如需參考，您可以從用於通訊的JSON結構描述[(FDM)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model)複製範例資料。
 
 2.2.在IC編輯器中，移至&#x200B;**PDF預覽** >使用本機資料。
 

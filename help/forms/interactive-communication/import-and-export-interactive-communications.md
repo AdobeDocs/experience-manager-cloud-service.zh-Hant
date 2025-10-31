@@ -1,21 +1,18 @@
 ---
-title: 匯入和匯出互動式通訊
+title: 匯入與匯出互動式通訊
 description: 匯入和匯出互動式通訊可讓使用者順暢地遷移、重複使用和管理跨環境的通訊。
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: true
-index: false
-hidefromtoc: true
-source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
+source-git-commit: 371838c77beafa8c67259a865b25325632bea0b0
 workflow-type: tm+mt
 source-wordcount: '352'
-ht-degree: 14%
+ht-degree: 18%
 
 ---
 
 
-# 匯入和匯出互動式通訊
+# 匯入與匯出互動式通訊
 
 >[!NOTE]
 >
@@ -33,15 +30,15 @@ ht-degree: 14%
 - 保留片段、資料模型和相依性。
 - 減少跨專案重新建立IC的工作量。
 
-## 匯入和匯出互動式通訊
+## 匯入與匯出互動式通訊
 
 在一個環境中建立互動式通訊(IC)，並透過以下步驟匯出和匯入在另一個環境中重複使用它：
 
 +++1.如何匯出互動式通訊
 
-1.1.選取[建立的互動式通訊](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/forms/interactive-communication/create-interactive-communication) (IC)。
-1.2.按一下&#x200B;**下載**&#x200B;選項，將其匯出為ZIP檔。
-1.3.下載的ZIP檔案包含IC及其選取的&#x200B;**範本**、**片段**&#x200B;和&#x200B;**資料模型**。
+1.1.選取[建立的互動式通訊](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/interactive-communication/create-interactive-communication) (IC)。
+1.2.按一下**下載**選項，將其匯出為ZIP檔。
+1.3.下載的ZIP檔案包含IC及其選取的**範本**、**片段**&#x200B;和&#x200B;**資料模型**。
 
 ![尋找IC檔案](/help/forms/interactive-communication/assets/downloadic.png)
 +++
@@ -49,8 +46,8 @@ ht-degree: 14%
 +++2.如何匯入互動式通訊
 
 2.1.前往目標環境。
-2.2.瀏覽至&#x200B;**Forms > Forms和檔案>建立>檔案上傳**。
-2.3.上傳ZIP檔案至&#x200B;**匯入** IC。
+2.2.瀏覽至**Forms > Forms和檔案>建立>檔案上傳**。
+2.3.上傳ZIP檔案至**匯入** IC。
 
 ![尋找IC檔案](/help/forms/interactive-communication/assets/uploadfile.png)
 

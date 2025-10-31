@@ -4,10 +4,7 @@ description: 「互動式通訊編輯器」中的「內容溢位處理」可強�
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: true
-index: false
-hidefromtoc: true
-source-git-commit: 0cfbf6d61bc2d557b0a096db5b3cb26ae4570748
+source-git-commit: 371838c77beafa8c67259a865b25325632bea0b0
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 16%
@@ -27,15 +24,14 @@ ht-degree: 16%
 
 ## 簡介
 
-「互動式通訊編輯器」中的「內容溢位處理」功能可增強文字在「已流動」和「已定位」版面中的行為方式。
-它可確保流程版面配置順暢的內容連續性，並針對定位版面提供視覺化警示，讓作者在設計通訊時擁有更優異的控制權和彈性。
+「互動式通訊編輯器」中的「內容溢位處理」功能可增強文字在「已流動」和「已定位」版面中的行為方式。 它可確保流程版面配置順暢的內容連續性，並針對定位版面提供視覺化警示，讓作者在設計通訊時擁有更優異的控制權和彈性。
 
 ## 主要功能
 
 ### 流程式版面
 
 - **新選項：**
-在內容中新增屬性&#x200B;**允許分頁符號**，以控制溢位行為。 只有當父子表單設定為Flowed且其&#x200B;**允許分頁**&#x200B;屬性已啟用時，才能看到此選項。
+在內容中新增屬性**允許分頁符號**，以控制溢位行為。 只有當父子表單設定為Flowed且其&#x200B;**允許分頁**&#x200B;屬性已啟用時，才能看到此選項。
 
 - **自動頁面繼續：**
 當內容超過可用空間時，會自動建立新頁面，並順暢地繼續編輯。

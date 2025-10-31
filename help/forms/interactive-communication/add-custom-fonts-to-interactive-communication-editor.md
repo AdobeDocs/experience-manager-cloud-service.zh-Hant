@@ -4,13 +4,10 @@ description: 在互動式通訊編輯器中新增自訂字型，以便使用自�
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-hide: true
-index: false
-hidefromtoc: true
-source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
+source-git-commit: 371838c77beafa8c67259a865b25325632bea0b0
 workflow-type: tm+mt
 source-wordcount: '208'
-ht-degree: 24%
+ht-degree: 31%
 
 ---
 
@@ -39,5 +36,5 @@ ht-degree: 24%
 
 >[!NOTE]
 >
-> 如需詳細的設定步驟，使用者可以遵循指南[使用自訂字型](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/forms/using-communications/use-custom-fonts)
-> &#x200B;>完成步驟並執行管道後，自訂字型可直接在互動式通訊編輯器中使用。
+> 如需詳細的設定步驟，使用者可以遵循指南[使用自訂字型](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/use-custom-fonts)
+> >完成步驟並執行管道後，自訂字型可直接在互動式通訊編輯器中使用。
