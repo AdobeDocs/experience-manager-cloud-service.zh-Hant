@@ -3,10 +3,10 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.9.0 版發行�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.9.0 版發行說明。'
 feature: Release Information
 role: Admin
-source-git-commit: e41828b04a33cc36ee2fc8a4704d9c3cf352830b
+source-git-commit: ed51ff8df6d1e387960e8580c6dfb543a09ef8fa
 workflow-type: tm+mt
-source-wordcount: '2088'
-ht-degree: 92%
+source-wordcount: '2083'
+ht-degree: 89%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 92%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440931?captions=chi_hant&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -95,7 +95,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -107,19 +107,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 現在，「叫用表單資料模型」工作流程步驟支援處理 SharePoint 清單型表單資料模型中 Base64 編碼附件陣列的工作流程端後設資料。透過此增強功能，工作流程步驟可以傳遞、儲存及檢索每個附件的後設資料，例如檔案名稱、MIME 類型和自訂屬性。此功能讓您能夠進行更全面的資料管理，並有助於順暢的下游整合。如需詳細資訊，請參閱[增強支援 SharePoint 清單附件的叫用表單資料模型工作流程步驟](/help/forms/aem-forms-workflow-step-reference.md#invoke-form-data-model-fdm-service-step)。
 
-### AEM Forms 的預發行功能
-
-**規則編輯器增強功能**
-
-規則編輯器現在支援增強型導覽，並允許在輸入參數中使用函數和數學運算式。
-
-**支援事件承載的增強型導覽**
-
-叫用服務處理常式中的 `Navigate To` 動作現在支援 `EVENT_PAYLOAD`，讓表單作者能夠根據事件回應設定後續動作。此增強功能讓提交後工作流程之設計擁有更大的彈性，確保轉變過程更加順暢，並提供更加個人化的使用者體驗。如需詳細資訊，請參閱[支援事件承載的增強型導覽](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service)。
-
-**支援在輸入參數中使用函數和數學運算式**
-
-輸入參數現在支援函數呼叫和數學運算式，讓表單作者能夠直接傳遞動態運算所得出的值。此增強功能可以簡化規則設定，不需要增加額外的欄位，並讓表單更能適應需要複雜邏輯判斷以及由複雜計算驅動的情境。如需詳細資訊，請參閱[支援在輸入參數中使用函數和數學運算式](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters)。
+<!-- ### Pre-Release features in AEM Forms -->
 
 ### 全新 AEM Forms 搶先體驗功能 {#forms-new-early-access-features}
 
@@ -127,17 +115,25 @@ AEM Forms 搶先體驗方案為您提供獨一無二的機會，享有尖端創�
 
 這些發行說明列出的是目前版本提供的創新功能。如需搶先體驗方案提供的創新功能之完整清單，請參閱 [AEM Forms 搶先體驗方案文件](/help/forms/early-access-ea-features.md)。
 
-**互動式通訊編輯器中的 PDF 預覽**
+* **互動式通訊編輯器中的 PDF 預覽**
 
-使用者可以預覽不包含資料、包含本機 JSON 資料檔案，或包含來自資料模型之資料的互動式通訊 PDF，藉此彈性地進行資料驅動測試。如需詳細資訊，請參閱[互動式通訊編輯器中的 PDF 預覽](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md)。
+  使用者可以預覽不包含資料、包含本機 JSON 資料檔案，或包含來自資料模型之資料的互動式通訊 PDF，藉此彈性地進行資料驅動測試。如需詳細資訊，請參閱[互動式通訊編輯器中的 PDF 預覽](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md)。
 
-**互動式通訊支援自訂字型**
+* **互動式通訊支援自訂字型**
 
-透過自訂字型功能，使用者能夠在互動式通訊中嵌入自訂或組織核准的字型，確保在各種裝置和平台上呈現一致的品牌化 PDF 渲染。如需詳細資訊，請參閱[互動式通訊支援自訂字型](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md)。
+  透過自訂字型功能，使用者能夠在互動式通訊中嵌入自訂或組織核准的字型，確保在各種裝置和平台上呈現一致的品牌化 PDF 渲染。如需詳細資訊，請參閱[互動式通訊支援自訂字型](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md)。
 
-**匯入與匯出互動式通訊**
+* **匯入與匯出互動式通訊**
 
-透過這項功能，可以在不同的環境之間移轉及重複使用互動式通訊。您現在可以從一個環境中匯出互動式通訊及其相關片段和資料模型，然後將這些匯入另一個環境中。如需詳細資訊，請參閱[匯入與匯出互動式通訊](/help/forms/interactive-communication/import-and-export-interactive-communications.md)。
+  透過這項功能，可以在不同的環境之間移轉及重複使用互動式通訊。您現在可以從一個環境中匯出互動式通訊及其相關片段和資料模型，然後將這些匯入另一個環境中。如需詳細資訊，請參閱[匯入與匯出互動式通訊](/help/forms/interactive-communication/import-and-export-interactive-communications.md)。
+
+* **規則編輯器增強功能**
+
+  規則編輯器現在支援增強型導覽，並允許在輸入參數中使用函數和數學運算式。
+
+   * **支援事件裝載的增強型導覽**： Invoke Service處理常式中的`Navigate To`動作現在支援`EVENT_PAYLOAD`，可讓表單作者根據事件回應設定後續動作。 此增強功能讓提交後工作流程之設計擁有更大的彈性，確保轉變過程更加順暢，並提供更加個人化的使用者體驗。如需詳細資訊，請參閱[支援事件承載的增強型導覽](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service)。
+
+   * **輸入引數支援函式和數學運算式**：輸入引數現在支援函式呼叫和數學運算式，讓表單作者可以直接傳遞動態計算的值。 此增強功能可以簡化規則設定，不需要增加額外的欄位，並讓表單更能適應需要複雜邏輯判斷以及由複雜計算驅動的情境。如需詳細資訊，請參閱[支援在輸入參數中使用函數和數學運算式](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters)。
 
 <!--
 **Forms Optimization opportunities**
@@ -170,7 +166,7 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 >[!NOTE]
 >
 >於 9 月 25 日以「有限開放」功能的形式提供。
->&#x200B;>寄送電子郵件至 [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com)，以便在您的方案中啟動此功能。
+>>寄送電子郵件至 [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com)，以便在您的方案中啟動此功能。
 
 ### Eclipse 適用的 AEM 開發人員工具新版本 {#aem-develeper-tools-for-eclipse}
 

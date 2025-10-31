@@ -6,10 +6,10 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: a974859746ca20f1979b773668a66be0197f623d
+source-git-commit: ed51ff8df6d1e387960e8580c6dfb543a09ef8fa
 workflow-type: tm+mt
-source-wordcount: '3019'
-ht-degree: 20%
+source-wordcount: '3076'
+ht-degree: 19%
 
 ---
 
@@ -302,7 +302,11 @@ Forms 服務會產生用於資料擷取的互動式 PDF forms。它也可以用�
 
 ### 視覺化規則編輯器中的增強功能
 
-* 最適化Forms中的視覺化規則編輯器現在支援[直接API整合，不需要表單資料模型](/help/forms/api-integration-in-rule-editor.md)。 您可以透過輸入其JSON URL或使用cURL命令匯入設定來連線到API端點。 整合之後，可以使用`Invoke Service`動作叫用API。
+* [直接API整合](/help/forms/api-integration-in-rule-editor.md)：最適化Forms中的視覺化規則編輯器現在支援直接API整合，而不需要表單資料模型。 您可以透過輸入其JSON URL或使用cURL命令匯入設定來連線到API端點。 整合之後，可以使用`Invoke Service`動作叫用API。
+
+* [事件裝載支援的增強導覽](/help/forms/invoke-service-enhancements-rule-editor.md#use-case-5-use-event-payload-in-navigate-to-action-in-invoke-service)： Invoke Service處理常式中的&#x200B;**導覽至**&#x200B;動作支援`EVENT_PAYLOAD`，可讓表單作者根據事件回應設定後續動作。
+
+* [輸入引數支援函式和數學運算式](/help/forms/rule-editor-core-components-user-interface.md#function-and-mathematical-expression-support-in-input-parameters)：輸入引數現在支援函式呼叫和數學運算式，讓表單作者可以直接傳遞動態計算的值。
 
 ## 另請參閱
 
