@@ -5,10 +5,10 @@ exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
+source-git-commit: 4a860c104a5b6cd6e4306b9b713018317b54e365
 workflow-type: tm+mt
-source-wordcount: '855'
-ht-degree: 78%
+source-wordcount: '832'
+ht-degree: 77%
 
 ---
 
@@ -110,10 +110,6 @@ Adobe 用於編寫產品功能測試的工具也可用於編寫您的自訂功�
 | 逾時 | 30m | 測試停止的時間限制。 |
 | 建議的持續時間 | 15m | Adobe建議撰寫測試時，不要超過這個時間。 |
 
->[!NOTE]
->
-> 如果您需要更多資源，請建立客戶服務案例並描述您的使用案例。Adobe 團隊會檢閱您的要求並提供適當的幫助。
-
 #### 相依性
 
 * aem-cloud-testing-clients：
@@ -131,7 +127,7 @@ Adobe 用於編寫產品功能測試的工具也可用於編寫您的自訂功�
 >[!NOTE]
 >
 >此變更需要在 2024 年 4 月 6 日之前執行。
->&#x200B;>如果未更新相依性程式庫，可能會在「自訂功能測試」步驟導致管道失敗。
+>如果未更新相依性程式庫，可能會在「自訂功能測試」步驟導致管道失敗。
 
 ### 本機測試執行 {#local-test-execution}
 
