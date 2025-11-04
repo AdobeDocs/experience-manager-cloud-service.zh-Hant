@@ -5,12 +5,13 @@ exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 4a860c104a5b6cd6e4306b9b713018317b54e365
+source-git-commit: 369e49e5a047bcfb41712aeb952a30ca90f7802f
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 77%
 
 ---
+
 
 # Java™ 功能測試
 
@@ -102,7 +103,6 @@ Adobe 用於編寫產品功能測試的工具也可用於編寫您的自訂功�
 
 1. 用於功能測試的容器化基礎架構受以下界限限制：
 
-
 | 類型 | 值 | 說明 |
 |----------------------|-------|--------------------------------------------------------------------|
 | CPU | 0.5 | 每次測試執行保留的 CPU 時間量 |
@@ -153,8 +153,6 @@ Adobe 用於編寫產品功能測試的工具也可用於編寫您的自訂功�
 | `sling.it.instance.adminUser.2` | 設定為發佈管理員使用者。 | `admin` |
 | `sling.it.instance.adminPassword.2` | 設定為發佈管理員密碼。 |                         |
 
-
-
 #### 使用 Maven 執行所有測試 {#using-maven}
 
 1. 打開 shell 並瀏覽至存放庫中的 `it.tests` 資料夾。
@@ -170,4 +168,3 @@ mvn verify -Plocal \
     -Dit.publish.user=<user> \
     -Dit.publish.password=<password>
 ```
-
