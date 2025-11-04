@@ -1,11 +1,11 @@
 ---
 title: 從Content Hub下載資產
-description: 瞭解如何從Content Hub入口網站下載單一或多個資產及其轉譯。
+description: 瞭解如何從Content Hub入口網站下載一或多個資產及其轉譯。
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 37b5404f0814abb3605a26e7933cc3a01ebcf96e
+source-git-commit: f1d036b2e114730c4cce8df8848359e854943153
 workflow-type: tm+mt
-source-wordcount: '831'
+source-wordcount: '941'
 ht-degree: 1%
 
 ---
@@ -22,23 +22,35 @@ ht-degree: 1%
 
 若要下載一個或多個資產及其轉譯，請執行以下步驟：
 
-1. 若要下載資產，請選取資產卡上可用的![下載](/help/assets/assets/download-icon.svg)以預覽資產，選取可用的轉譯並按一下對話方塊中的&#x200B;**[!UICONTROL 下載]**&#x200B;選項，將選取的轉譯下載為ZIP檔。 如果對話方塊顯示資產授權（針對授權資產），請接受授權條款與條件，然後按一下&#x200B;**[!UICONTROL 下載]**。
-   ![](/help/assets/assets/download-an-asset-CH-from-asset-card.png)
+* 若要下載單一資產及其轉譯：
+   1. 選取資產卡上可用的![下載](/help/assets/assets/download-icon.svg)，以預覽資產及其可用的轉譯。
+   1. 選取可用的轉譯，然後按一下對話方塊中的&#x200B;**[!UICONTROL 下載]**&#x200B;選項，將選取的轉譯下載為ZIP檔。 如果對話方塊顯示資產授權（針對授權資產），請接受授權條款與條件，然後按一下&#x200B;**[!UICONTROL 下載]**。
+      ![下載資產](/help/assets/assets/download-an-asset-CH-from-asset-card.png)
+或者，按一下資產縮圖，然後按一下![下載](/help/assets/assets/download-icon.svg)，在下載之前先選取並檢視對話方塊上的可用轉譯。
 
-   或者，按一下資產縮圖，然後選取![下載](/help/assets/assets/download-icon.svg)，在下載之前，先選取並檢視對話方塊上的可用轉譯。
+* 若要下載多個資產及其轉譯：
+   1. 選取資產，按一下![下載](/help/assets/assets/download-icon.svg) **[!UICONTROL 下載]**，並在&#x200B;**[!UICONTROL 下載資產]**&#x200B;對話方塊中檢閱選取的資產清單。 按一下資產旁的![取消選取](/help/assets/assets/Close.svg)，從清單中取消選取該資產。
+   1. 選取一或多個轉譯，以將它們下載為ZIP檔。 選取&#x200B;**[!UICONTROL 智慧型裁切]**&#x200B;和&#x200B;**[!UICONTROL 靜態轉譯]**&#x200B;會下載每個選取資產的所有可用靜態和智慧型裁切轉譯。
+   1. 可選：取消選取&#x200B;**[!UICONTROL 為每個資產建立個別的資料夾]**，以將選取的資產及其轉譯下載為zip檔案資料夾中的平面階層。 依預設，[!DNL Content Hub]會將選取的資產及其轉譯下載到zip檔案內的個別資料夾中。
 
-1. 若要下載多個資產，請選取資產，按一下![下載](/help/assets/assets/download-icon.svg) **[!UICONTROL 下載]**，並檢閱&#x200B;**[!UICONTROL 下載資產]**&#x200B;對話方塊中選取的資產清單。 按一下資產旁的![取消選取](/help/assets/assets/Close.svg)，從清單中取消選取該資產。 選取一或多個轉譯，然後按一下[下載] **&#x200B;**，將轉譯下載為單一ZIP檔。 選取&#x200B;**[!UICONTROL 智慧型裁切]**&#x200B;和&#x200B;**[!UICONTROL 靜態轉譯]**&#x200B;會下載每個選取資產的所有可用靜態和智慧型裁切轉譯。
-   ![下載多個資產](/help/assets/assets/download-multiple-assets-CH.png)
+      >[!NOTE]
+      >
+      > * Content Hub會將您的選取專案儲存為偏好設定（**[!UICONTROL 為每個資產建立個別的資料夾]**），並保留它以供日後下載。
+      > * **[!UICONTROL 為每個資產建立個別資料夾]**&#x200B;選項僅適用於已驗證的[!DNL Content Hub]使用者。 [!DNL Content Hub]可讓公用使用者將資產下載為個別資產。
+
+   1. 按一下&#x200B;**[!UICONTROL 下載]**以下載您選取的資產及其轉譯。
+      ![下載多個資產](/help/assets/assets/bulk-asset-download-content-hub.png)
+
 下載進行時，您可以繼續使用[!DNL Content Hub]。 Content Hub不會在下載過程中中斷您的工作流程。
-   ![下載多個資產](/help/assets/assets/download-assets-notification-ch.png)
-如果&#x200B;**[!UICONTROL 下載資產]**&#x200B;對話方塊顯示資產授權，然後從左窗格（[!UICONTROL T&amp;C檔案]區段）選取每個授權，以預覽授權並在對話方塊的中間窗格中顯示與授權關聯的選取資產。 檢閱每個授權後，選取轉譯，按一下&#x200B;**[!UICONTROL 我已閱讀並接受上述條款與條件]**，並選取&#x200B;**[!UICONTROL 下載]**&#x200B;以下載它們。
-   ![下載多個資產](/help/assets/assets/download-multiple-licensed-assets-CH.png)
+![下載多個資產](/help/assets/assets/download-assets-notification-ch.png)
+如果**[!UICONTROL 下載資產]**&#x200B;對話方塊顯示資產授權，然後從左窗格（[!UICONTROL T&amp;C檔案]區段）選取每個授權，以預覽授權並在對話方塊的中間窗格中顯示與授權關聯的選取資產。 檢閱每個授權後，選取轉譯，按一下&#x200B;**[!UICONTROL 我已閱讀並接受上述條款與條件]**，並選取&#x200B;**[!UICONTROL 下載]**以下載它們。
+![下載多個資產](/help/assets/assets/download-multiple-licensed-assets-CH.png)
 
-   >[!NOTE]
-   >
-   >* 只有在使用[[!UICONTROL 組態]](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub)使用者介面啟用轉譯的可見度時，才會顯示轉譯。
-   >* 有權存取[[!DNL Dynamic Media with Open API capabilities]](/help/assets/dynamic-media-open-apis-overview.md)的使用者可以檢視及下載動態和智慧型裁切轉譯。
-   >* 只有當資產已使用[!DNL Assets as a Cloud Service]編寫環境核準時，才會顯示授權預覽。 如需詳細資訊，請參閱[管理 Content Hub 上的授權資產](/help/assets/manage-licensed-assets-on-content-hub.md)。
+>[!NOTE]
+>
+>* 只有在使用[[!UICONTROL 組態]](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub)使用者介面啟用轉譯的可見度時，才會顯示轉譯。
+>* 有權存取[[!DNL Dynamic Media with Open API capabilities]](/help/assets/dynamic-media-open-apis-overview.md)的使用者可以檢視及下載動態和智慧型裁切轉譯。
+>* 只有當資產已使用[!DNL Assets as a Cloud Service]編寫環境核準時，才會顯示授權預覽。 如需詳細資訊，請參閱[管理 Content Hub 上的授權資產](/help/assets/manage-licensed-assets-on-content-hub.md)。
 
 <!--
 
@@ -123,7 +135,7 @@ The dialog box that displays depends on whether the download list includes expir
 
 ## 轉譯型別 {#types-of-renditions}
 
-資產轉譯是資產原始檔案的不同表示方式。 這些可能包括縮圖、網頁或行動裝置的最佳化版本、加注水標或受DRM保護的檔案，甚至包括動態元素，例如智慧型裁切。 它們不需要符合原始檔案型別，而是在各種使用案例中用於代表資產。
+資產轉譯是資產原始檔案的不同表示方式。 這些轉譯專案可包括縮圖、網頁或行動裝置的最佳化版本、加注水標或受DRM保護的檔案，甚至包括動態元素，例如智慧型裁切。 它們不需要符合原始檔案型別，而是在各種使用案例中用於代表資產。
 
 深入瞭解[在 [!DNL Experience Manager Assets]](/help/assets/renditions.md)中檢視及管理轉譯。
 
@@ -135,7 +147,7 @@ The dialog box that displays depends on whether the download list includes expir
 
 * [智慧型裁切](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles)：智慧型裁切在裁切程式進行期間，只著重於資產的重要部分。 Dynamic Media智慧型裁切運用由Adobe Sensei提供支援的人工智慧來追蹤地標，確保我們的資產在所有熒幕大小上都能呈現最佳效果。 [!DNL Adobe Experience Manager]智慧型裁切會顯示資產轉譯的寬度和高度以及標題。 如需詳細資訊，請參閱[搭配AEM Assets Dynamic Media使用智慧型裁切](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use)。
 
-  智慧型裁切轉譯會顯示，而且只有在您能存取具有OpenAPI功能的[Dynamic Media &#x200B;](/help/assets/dynamic-media-open-apis-overview.md)時，才能下載。 智慧型裁切轉譯僅適用於影像資產。
+  智慧型裁切轉譯會顯示，而且只有在您能存取具有OpenAPI功能的[Dynamic Media ](/help/assets/dynamic-media-open-apis-overview.md)時，才能下載。 智慧型裁切轉譯僅適用於影像資產。
 
   ![轉譯型別](/help/assets/assets/renditions-types.png)
 

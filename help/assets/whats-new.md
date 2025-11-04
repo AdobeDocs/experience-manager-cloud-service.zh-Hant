@@ -3,10 +3,10 @@ title: Content Hub 最新資訊
 description: 了解更多關於最近推出的 Content Hub 功能的資訊
 role: User
 exl-id: 77a5c54c-bbc5-4dfb-9c3a-aa0620e836d0
-source-git-commit: 339528082561c432b7b98290d09e904ee058186f
+source-git-commit: 8e1beb80802076f7d7b9a043b85daa2e44aaaead
 workflow-type: tm+mt
-source-wordcount: '808'
-ht-degree: 85%
+source-wordcount: '883'
+ht-degree: 78%
 
 ---
 
@@ -24,7 +24,15 @@ Content Hub 作為 Experience Manager Assets as a Cloud Service 的一部分提�
 
 ## 發行日期 {#release-date}
 
-Content Hub功能版本(2025.9.0)的發行日期為2025年9月25日(與AEM as a Cloud Service版本相同)。 下一個功能版本 (2025.10.0) 規劃於 2025 年 10 月 30 日發行。
+Content Hub功能版本(2025.10.0)的發行日期為2025年10月30日(與AEM as a Cloud Service版本相同)。 下一個功能版本(2025.11.0)計畫於2025年11月20日發行。
+
+## 10月發行功能 {#october-release-features}
+
+Content Hub中的&#x200B;**增強功能下載體驗**
+
+Content Hub現在支援以平面階層下載多個資產轉譯，而不需導覽多個資料夾。 系統會保留下載行為的使用者偏好設定，以維持各工作階段之間的一致體驗。 新的資產下載體驗可簡化資產管理，並透過讓下載的檔案更易於找到和組織而提高效率。
+
+[!BADGE 深入了解此功能]{type=Informative url="https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/content-hub/download-assets-content-hub#download-asset-renditions"}
 
 ## 9月發行功能 {#september-release-features}
 
@@ -35,6 +43,8 @@ Content Hub功能版本(2025.9.0)的發行日期為2025年9月25日(與AEM as a 
 **釘選集合以供快速存取**
 
 Content Hub管理員現在可以在Content Hub中釘選集合以快速存取。 釘選的集合會顯示在「集合」首頁上的專用&#x200B;**[!UICONTROL Pined]**&#x200B;區段中，以便更輕鬆地將重要集合保持在可觸及的範圍之內。
+
+[!BADGE 深入了解此功能]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#pin-unpin-collection"}
 
 >[!IMPORTANT]
 >
