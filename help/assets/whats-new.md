@@ -44,7 +44,7 @@ Content Hub現在支援以平面階層下載多個資產轉譯，而不需導覽
 
 Content Hub管理員現在可以在Content Hub中釘選集合以快速存取。 釘選的集合會顯示在「集合」首頁上的專用&#x200B;**[!UICONTROL Pined]**&#x200B;區段中，以便更輕鬆地將重要集合保持在可觸及的範圍之內。
 
-[!BADGE 深入了解此功能]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#pin-unpin-collection"}
+[!BADGE 深入了解此功能]{type=Informative url="https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#pin-unpin-collection"}
 
 >[!IMPORTANT]
 >
