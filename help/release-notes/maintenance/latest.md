@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 9d081b468e42306c56238bee6117d92c6afd48d4
+source-git-commit: 89597ae0c54b1b2f42f597f556276700545ecd26
 workflow-type: tm+mt
-source-wordcount: '863'
-ht-degree: 23%
+source-wordcount: '554'
+ht-degree: 42%
 
 ---
 
@@ -16,77 +16,62 @@ ht-degree: 23%
 
 下節是 Experience Manager as a Cloud Service 目前維護版本的技術版本發行說明。
 
-## 23122 版 {#23122}
+>[!NOTE]
+>
+>發行說23122已於11月3日設為私人。
 
-以下摘要說明維護版本23122數的持續改善，該版本於2025年10月29日公開發佈。 前一個維護版本是 22943 版。
+## 22943 版 {#22943}
 
-啟用 2025.11.0 功能即可使用此維護版本的完整功能集。如需詳細資訊，請參閱 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
+以下摘要說明維護版本22943數的持續改善，該版本於2025年10月14日公開發佈。 前一個維護版本是 22758 版。
 
-### 增強功能 {#enhancements-23122}
+2025.10.0 功能啟用會提供此維護版本的完整功能集。如需詳細資訊，請參閱 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
-* Forms-21594：為內容作者啟用互動式通訊範本內容與版面配置鎖定功能。
-* Forms-20385：支援在互動式通訊編輯器中進行XDP編輯。
-* Forms-10883：支援JSON搭配DoR產生中的XHTML名稱空間標籤，以確保準確轉譯透過API提交的RTF資料。
-* Forms-21751：畫布功能 — 文字溢位，分頁的UI。
-* Forms-22049：互動式通訊編輯器 — 移轉至Spectrum 2。
-* Forms-22050：支援互動式通訊編輯器中的動態頁面編號。
-* Forms-21606：互動式通訊的公用OSGi轉譯SPI。
-* Forms-21613：轉譯器互動式通訊SPI的交易報表和效能記錄。
-* SITES-35092：內容片段 — 語意搜尋的新mixin和升級程式。
-* SITES-32319：傳送OpenAPI — 支援頁面參考。
-* SITES-20123： GraphQL：支援JSON回應中的上標元素。
-* SITES-34744：內容片段回應中新的「卡片」屬性，包含可用於呈現縮圖的資料。
-* SITES-34571：允許列舉欄位為空。
-* SITES-34812：新增使用值為「none」的「references」引數，擷取不含參考的內容片段的功能。
-* SITES-35176：透過Touch UI簽出內容片段現在會防止其他使用者在新編輯器中編輯內容片段。
-* SITES-30371：新增對uuid型參考欄位的支援。
-* SITES-19309：開啟移動頁面精靈時，最多可擷取150個參考。
-* SITES-32515：使用通用編輯器的Edge Delivery — 新增對多欄位和複合多欄位的支援（搶先存取）。
-* SITES-33784：使用通用編輯器的Edge Delivery — 在頁面中繼資料中新增ld-json支援。
-* SITES-34832：使用通用編輯器的Edge Delivery — 將頁面的公開路徑新增至頁面資訊servlet回應。
-* SITES-25893：使用通用編輯器的Edge Delivery — 新增對強式字型的支援，並強調以區塊呈現文字。
-* SITES-26158：使用通用編輯器的Edge Delivery — 新增對區塊和欄中表格標籤的支援（搶先存取）。
-* SITES-27949：使用通用編輯器的Edge Delivery — 將路徑對應設為選用。
+### 增強功能 {#enhancements-22943}
 
-### 已修正的問題 {#fixed-issues-23122}
+* Assets-57809： damAssetLucene-13的索引定義更新。
+* Assets-36521：改善DM重新上傳工作流程，確保後續處理的一致性。
+* Assets-56400：為具透明度的資產新增新的OOTB縮放PNG轉譯。
+* Assets-55326：透過HTTP事件啟用AI中繼資料資料夾設定檢視。
+* Assets-56905：支援透過Proxy連線至Indesign。
+* Assets-48286：將CAI屬性新增至GenStudio的Algoria。
+* Assets-48653：在預先處理階段套用隱藏的浮水印。
+* Assets-55874：將影像預設集從scene7移轉至DMWithOpenapi。
+* SITES-30452： /content/definition端點上ASO的內容API改善。
 
-* CQ-4361144：修正翻譯工作中略過內容片段的問題。
-* CQ-4355446：修正取消翻譯工作對話方塊中翻譯專案未本地化的字串。
-* SITES-34555： GraphQL — 部署後出現QueryValidationError。
-* SITES-35077：內容片段 — 由於錯誤的URL編碼，對帶有括弧的片段取消發佈失敗。
-* SITES-35374：內容片段 — 已編輯的內容片段在導覽回到後面後會消失。
-* SITES-36130： `EditorRestrictionsStatusImpl`中的NPE。
-* SITES-35810： Launches中的NullPointerException區塊publishEdgeDeliverySubscriber佇列。
-* SITES-34368： AEM CIF產生12個GraphQL別名，超過Magento 2.4.6-P12的10個限制。
-* SITES-36193：CCS聯結器修正。
-* SITES-35169：已解決當搜尋傳回無效的片段資源時，會導致錯誤分頁的問題。
-* SITES-34574：修正內容片段搜尋API在某些情況下不會傳迴游標的問題。
-* SITES-35520：修正嘗試發佈內容時，造成ClassCastException或逾時的問題。
-* SITES-35210：修正嘗試使用空白參考篩選條件發佈中斷片段時會發生的NullPointerException。
-* SITES-35933：修正會在內容片段發佈後觸發空白「啟用請求」工作流程的錯誤。
-* SITES-35925：修正與修補內容片段模型相關的錯誤，這將從模型刪除「translatable」和「showThumbnail」屬性。
-* SITES-35409：修正移動頁面時無法重新發佈已調整片段的錯誤。
-* SITES-15757：修正無法在移動頁面時重新發佈已調整頁面的錯誤。
-* SITES-34638：修正建立新版本時，不會納入祖父頁面屬性的錯誤。
-* SITES-35071：當Omnisearch使用引號中的短語時，CSV匯出會傳回未篩選的結果。
-* SITES-32182：使用通用編輯器的Edge Delivery — 修正包含已編碼請求引數的URL的編碼問題。
-* SITES-34324：使用通用編輯器的Edge Delivery — 修正使用tel：通訊協定轉譯連結的問題。
-* SITES-35333：使用通用編輯器的Edge Delivery — 修正頁面中繼資料中影像的資產轉譯選擇。
-* SITES-35549：使用通用編輯器的Edge Delivery — 修正頁面中繼資料中的雙重編碼html實體。
+### 已修正的問題 {#fixed-issues-22943}
 
-### 已知問題 {#known-issues-23122}
+* Assets-56301：修正選擇性中繼資料匯出以包含CSV中的PredictedTags。
+* Assets-55543：將非同步處理邏輯重構為可重複使用的套件組合。
+* Assets-54789：啟用DM ACL時，修正ACLPermissionsValidator中的NPE。
+* Assets-55888：修正UI轉譯面板中顯示的惡意程式碼轉譯。
+* GRANITE-62236：修正智慧型集合的已儲存搜尋中的關鍵字本地化問題。
+* GRANITE-61875：修正無法儲存內容片段和資產下載的「運算式評估無效」Hotfix問題。
+* SITES-24074：修正在鍵盤標籤導覽期間接收焦點的隱藏行動導覽。
+* SITES-33611：修正大量市場的即時副本概觀問題。
 
-無。
+#### AEM Guides {#guides-22943}
 
-### 已過時的功能和 API {#deprecated-23122}
+* GUIDES-31421：開啟多個DITA map或主題，且其中一個主題關閉時，顯示所有開啟索引標籤的&#x200B;**>>**&#x200B;按鈕與索引標籤列上的其餘開啟索引標籤重疊。
+* GUIDES-33229：產生PDF時，如果任何屬性名稱包含句點，則會忽略DITAVAL檔案中的篩選規則。
+* GUIDES-33720：縮放翻譯UI畫面時，傳送以供翻譯按鈕會移至省略符號下方，即使未選取任何資產也會啟用。
+* GUIDES-33590：當稽核者完成稽核任務或發起者更新稽核任務而未輸入註解時，傳送的通知電子郵件會顯示最近的前一個註解。
+
+如需更多有關該版本中新增功能和增強功能以及已修復問題的資訊，請查看 [Experience Manager Guides 發行藍圖](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)。
+
+### 已過時的功能和 API {#deprecated-22943}
 
 [「已過時和已移除的功能及 API」](/help/release-notes/deprecated-removed-features.md)文件中詳細介紹 AEM as a Cloud Service 中已過時和已移除的功能及 API。
 
-### 安全性修正 {#security-23122}
+### 安全性修正 {#security-22943}
 
-AEM as a Cloud Service 專門負責將您的平台的安全性與效能最佳化。此維護版本解決 18 個已確認的漏洞，強化我們提供健全系統保護的承諾。
+AEM as a Cloud Service 專門負責將您的平台的安全性與效能最佳化。此維護版本解決 14 個已確認的漏洞，強化我們提供健全系統保護的承諾。
 
-### 嵌入技術 {#embedded-tech-23122}
+### 變更通知
+
+* 此版本包含以下新產品索引版本：
+* **damAssetLucene-13**
+
+### 嵌入技術 {#embedded-tech-22943}
 
 | 技術 | 版本 | 連結 |
 |---|---|---|
