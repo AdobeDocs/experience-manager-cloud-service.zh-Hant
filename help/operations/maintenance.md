@@ -4,9 +4,9 @@ description: 瞭解AEM as a Cloud Service中的維護任務以及如何進行設
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: f6e8066ecdfdbd0c7e79c2557dc19eec81657047
 workflow-type: tm+mt
-source-wordcount: '2043'
+source-wordcount: '2042'
 ht-degree: 8%
 
 ---
@@ -41,20 +41,20 @@ ht-degree: 8%
   <tr>
     <td>資料存放區記憶體回收</td>
     <td>Adobe</td>
-    <td>不適用 — 完全Adobe擁有</td>
+    <td>不適用 — 完全由Adobe擁有</td>
   </td> 
   </tr>
   <tr>
     <td>版本清除</td>
     <td>客戶</td>
-    <td>目前預設會停用版本清除，但可以設定原則，如<a href="https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">版本清除和稽核記錄清除維護工作</a>區段中所述。<br/><br/>預設即將啟用清除，這些值可覆寫。<br>
+    <td>目前預設會停用版本清除，但可以設定原則，如<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">版本清除和稽核記錄清除維護工作</a>區段中所述。<br/><br/>預設即將啟用清除，這些值可覆寫。<br>
    </td>
   </td>
   </tr>
   <tr>
     <td>稽核記錄清除</td>
     <td>客戶</td>
-    <td>稽核記錄清除目前預設為停用，但可以設定原則，如<a href="https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">版本清除和稽核記錄清除維護任務</a>一節中所述。<br/><br/>預設即將啟用清除，這些值可覆寫。<br>
+    <td>稽核記錄清除目前預設為停用，但可以設定原則，如<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">版本清除和稽核記錄清除維護任務</a>一節中所述。<br/><br/>預設即將啟用清除，這些值可覆寫。<br>
    </td>
    </td>
   </tr>
@@ -77,7 +77,7 @@ ht-degree: 8%
     <td>客戶</td>
     <td>
     <p>必須在Git中完成。 覆寫<code>/libs</code>下的現成維護視窗設定節點，方法是在資料夾<code>/apps/settings/granite/operations/maintenance/granite_weekly</code>、<code>granite_daily</code>或<code>granite_monthly</code>下建立屬性。 如需其他組態詳細資訊，請參閱下方的維護期間表格。</p>
-    <p>透過在上面的節點底下新增另一個具有適當屬性的節點（將其命名為<code>granite_WorkflowPurgeTask</code>）來啟用維護任務。 設定OSGI屬性，請參閱<a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html?lang=zh-Hant#regular-purging-of-workflow-instances">AEM 6.5維護工作檔案</a>。</p>
+    <p>透過在上面的節點底下新增另一個具有適當屬性的節點（將其命名為<code>granite_WorkflowPurgeTask</code>）來啟用維護任務。 設定OSGI屬性，請參閱<a href="/help/sites-cloud/administering/workflows-administering.md#regular-purging-of-workflow-instances">定期清除工作流程執行個體</a>。</p>
   </td>
   </tr>
   <tr>
@@ -85,7 +85,7 @@ ht-degree: 8%
     <td>客戶</td>
     <td>
     <p>必須在Git中完成。 覆寫<code>/libs</code>下的現成維護視窗設定節點，方法是在資料夾<code>/apps/settings/granite/operations/maintenance/granite_weekly</code>、<code>granite_daily</code>或<code>granite_monthly</code>下建立屬性。 如需其他組態詳細資訊，請參閱下方的維護期間表格。</p>
-    <p>透過在上面的節點底下新增另一個具有適當屬性的節點（將其命名為<code>granite_ProjectPurgeTask</code>）來啟用維護任務。 檢視<b>Adobe專案清除組態</b>的<a href="https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi">OSGi屬性</a>清單。</p>
+    <p>透過在上面的節點底下新增另一個具有適當屬性的節點（將其命名為<code>granite_ProjectPurgeTask</code>）來啟用維護任務。 檢視<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi">Adobe專案清除設定</a>的<b>OSGi屬性</b>清單。</p>
   </td>
   </tr>
   </tbody>

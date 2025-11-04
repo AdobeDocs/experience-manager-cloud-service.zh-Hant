@@ -4,7 +4,7 @@ description: 透過會套用內容關聯式和描述性業務標記的人工智�
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 5dbad509f5a5a9addfe6b52c3c3dd7ce5fa3229d
+source-git-commit: 03cbcf098e0640705aa2a69a8fa605ab1e8cbb06
 workflow-type: tm+mt
 source-wordcount: '2082'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 例如，在字典中依字母順序排列的單字比隨機散佈的單字更容易找到。 標籤有類似的用途。 它會根據商業分類法組織資產，確保最相關的資產會出現在搜尋結果中。 例如，汽車製造商可以使用模型名稱來標籤汽車影像，以便在設計促銷活動時只顯示相關影像。 無論是「跑鞋」或「跑鞋」標籤的使用者無需擔心拼字、拼字變化或替代搜尋詞 — 智慧標籤可識別所有搜尋詞。
 
-在背景中，此功能使用[Adobe Sensei](https://business.adobe.com/tw/products/sensei/adobe-sensei.html)的人工智慧型架構，依預設會自動將智慧標籤套用至已上傳的資產，連同對齊商業分類的文字。
+在背景中，此功能使用[Adobe Sensei](https://business.adobe.com/products/sensei/adobe-sensei.html)的人工智慧型架構，依預設會自動將智慧標籤套用至已上傳的資產，連同對齊商業分類的文字。
 
 ## 必要條件和設定 {#smart-tags-prereqs-config}
 
@@ -47,7 +47,7 @@ ht-degree: 1%
 
 1. 在AEM中建立或上傳資產。 系統會為影像、視訊和文字型Assets產生立即可用的標籤。
 
-1. 如果您發現未產生特定標籤，則可據此訓練影像型別標籤。 請參閱[智慧標籤培訓](#smart-tags-training.md)。
+1. 如果您發現未產生特定標籤，則可據此訓練影像型別標籤。 請參閱[智慧標籤培訓](/help/assets/smart-tags-training.md)。
 
 ## 支援的智慧標籤檔案格式 {#supported-file-formats}
 
@@ -88,7 +88,7 @@ The applied smart tags are sorted in descending order of [confidence score](#con
 
 ## DAM中未標籤的Assets {#smart-tag-existing-assets}
 
-DAM中的現有或舊版資產不會自動加上智慧標籤。 您必須手動[重新處理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=zh-Hant#adjusting-load) Assets，才能為其產生智慧標籤。 程式完成後，請導覽至資料夾內任何資產的[!UICONTROL 屬性]頁面。 自動新增的標籤會顯示在[!UICONTROL 基本]索引標籤的[!UICONTROL 智慧標籤]區段中。 這些套用的智慧標籤會以[信賴分數](#confidence-score)的遞減順序排序。
+DAM中的現有或舊版資產不會自動加上智慧標籤。 您必須手動[重新處理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en#adjusting-load) Assets，才能為其產生智慧標籤。 程式完成後，請導覽至資料夾內任何資產的[!UICONTROL 屬性]頁面。 自動新增的標籤會顯示在[!UICONTROL 基本]索引標籤的[!UICONTROL 智慧標籤]區段中。 這些套用的智慧標籤會以[信賴分數](#confidence-score)的遞減順序排序。
 
 <!--
 To smart tag assets, or folders (including subfolders) of assets that exist in assets repository, follow these steps:
@@ -256,7 +256,7 @@ Following are the benefits of using Smart Tags in your AEM Assets:
 
 +++**我如何知道標籤需要訓練？**
 
-請參閱[決定智慧標籤培訓的需求](#smart-tags-training.md#smart-tag-training-requirement)。
+請參閱[決定智慧標籤培訓的需求](/help/assets/smart-tags-training.md#smart-tag-training-requirement)。
 
 +++
 
