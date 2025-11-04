@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 67a15a502dad883d5a370fedb16a5faca64ecf06
+source-git-commit: 247a501660475d2f3ae9cff735a1845094d02c82
 workflow-type: tm+mt
 source-wordcount: '1628'
 ht-degree: 67%
@@ -28,7 +28,7 @@ ht-degree: 67%
 
 ## 發行日期 {#release-date}
 
-[!DNL Adobe Experience Manager]作為[!DNL Cloud Service]目前功能版本(2025.10.0)的發行日期是2025年10月30日。 下一個功能版本(2025.10.0)計畫於2025年11月20日發行。
+[!DNL Adobe Experience Manager]作為[!DNL Cloud Service]目前功能版本(2025.10.0)的發行日期是2025年10月30日。 下一個功能版本(2025.11.0)計畫於2025年11月20日發行。
 
 ## 維護版本發行說明 {#maintenance}
 
@@ -40,7 +40,7 @@ ht-degree: 67%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440931?captions=chi_hant&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -66,7 +66,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -147,7 +147,7 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 >[!NOTE]
 >
 >於 9 月 25 日以「有限開放」功能的形式提供。
->&#x200B;>寄送電子郵件至 [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com)，以便在您的方案中啟動此功能。
+>寄送電子郵件至 [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com)，以便在您的方案中啟動此功能。
 
 ### AEM記錄轉送至更多目的地 {#log-forwarding}
 
