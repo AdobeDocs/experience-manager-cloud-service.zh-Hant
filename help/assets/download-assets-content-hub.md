@@ -38,12 +38,12 @@ ht-degree: 1%
       > * Content Hub會將您的選取專案儲存為偏好設定（**[!UICONTROL 為每個資產建立個別的資料夾]**），並保留它以供日後下載。
       > * **[!UICONTROL 為每個資產建立個別資料夾]**&#x200B;選項僅適用於已驗證的[!DNL Content Hub]使用者。 [!DNL Content Hub]可讓公用使用者將資產下載為個別資產。
 
-   1. 按一下&#x200B;**[!UICONTROL 下載]**以下載您選取的資產及其轉譯。
+   1. 按一下&#x200B;**[!UICONTROL 下載]**&#x200B;以下載您選取的資產及其轉譯。
       ![下載多個資產](/help/assets/assets/bulk-asset-download-content-hub.png)
 
 下載進行時，您可以繼續使用[!DNL Content Hub]。 Content Hub不會在下載過程中中斷您的工作流程。
 ![下載多個資產](/help/assets/assets/download-assets-notification-ch.png)
-如果**[!UICONTROL 下載資產]**&#x200B;對話方塊顯示資產授權，然後從左窗格（[!UICONTROL T&amp;C檔案]區段）選取每個授權，以預覽授權並在對話方塊的中間窗格中顯示與授權關聯的選取資產。 檢閱每個授權後，選取轉譯，按一下&#x200B;**[!UICONTROL 我已閱讀並接受上述條款與條件]**，並選取&#x200B;**[!UICONTROL 下載]**以下載它們。
+如果&#x200B;**[!UICONTROL 下載資產]**&#x200B;對話方塊顯示資產授權，然後從左窗格（[!UICONTROL T&amp;C檔案]區段）選取每個授權，以預覽授權並在對話方塊的中間窗格中顯示與授權關聯的選取資產。 檢閱每個授權後，選取轉譯，按一下&#x200B;**[!UICONTROL 我已閱讀並接受上述條款與條件]**，並選取&#x200B;**[!UICONTROL 下載]**&#x200B;以下載它們。
 ![下載多個資產](/help/assets/assets/download-multiple-licensed-assets-CH.png)
 
 >[!NOTE]
@@ -147,7 +147,7 @@ The dialog box that displays depends on whether the download list includes expir
 
 * [智慧型裁切](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles)：智慧型裁切在裁切程式進行期間，只著重於資產的重要部分。 Dynamic Media智慧型裁切運用由Adobe Sensei提供支援的人工智慧來追蹤地標，確保我們的資產在所有熒幕大小上都能呈現最佳效果。 [!DNL Adobe Experience Manager]智慧型裁切會顯示資產轉譯的寬度和高度以及標題。 如需詳細資訊，請參閱[搭配AEM Assets Dynamic Media使用智慧型裁切](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use)。
 
-  智慧型裁切轉譯會顯示，而且只有在您能存取具有OpenAPI功能的[Dynamic Media ](/help/assets/dynamic-media-open-apis-overview.md)時，才能下載。 智慧型裁切轉譯僅適用於影像資產。
+  智慧型裁切轉譯會顯示，而且只有在您能存取具有OpenAPI功能的[Dynamic Media &#x200B;](/help/assets/dynamic-media-open-apis-overview.md)時，才能下載。 智慧型裁切轉譯僅適用於影像資產。
 
   ![轉譯型別](/help/assets/assets/renditions-types.png)
 
