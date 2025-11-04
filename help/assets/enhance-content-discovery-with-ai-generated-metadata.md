@@ -3,15 +3,20 @@ title: 在管理員檢視中使用AI產生的中繼資料增強內容探索
 description: 瞭解如何在「管理檢視」中使用AI產生的中繼資料來增強內容探索
 feature: Smart Tags,Tagging
 role: Admin,User
-source-git-commit: d73ca2317d594b0d98bb9765796870cc28aa1158
+source-git-commit: 5dbad509f5a5a9addfe6b52c3c3dd7ce5fa3229d
 workflow-type: tm+mt
-source-wordcount: '635'
-ht-degree: 7%
+source-wordcount: '646'
+ht-degree: 8%
 
 ---
 
 
 # 使用AI產生的中繼資料加強內容探索 {#ai-smart-tags}
+
+| UI | 文章連結 |
+| -------- | ---------------------------- |
+| 資產檢視 | [按一下這裡](/help/assets/ai-generated-metadata-assets-view.md) |
+| 管理員檢視 | 本文章 |
 
 AI不會依賴手動輸入，而是自動將描述性標籤指派給數位資產。 這些 AI 產生的標記可提升中繼資料的品質，讓資產搜尋、分類和推薦變得更簡單。此方法不僅可避免手動標籤，進而提升效率，還可確保大量數位內容的一致性和擴充性。 例如，如果資產是影像，AI可以識別其中的物件、場景、情感，或甚至品牌標誌，並產生相關標籤，例如「日落」、「海灘」、「假期」或「微笑」。 AI產生的內容可運用語意和辭彙搜尋技術來增強資產搜尋。 檢視更多[搜尋Assets](search-assets.md)。<!--If the asset is a document, AI reads and interprets the text to assign meaningful keywords that summarize its content—such as "climate change," "policy," or "renewable energy.-->
 
