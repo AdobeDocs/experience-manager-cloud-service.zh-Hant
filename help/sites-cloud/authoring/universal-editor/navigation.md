@@ -5,12 +5,13 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: c0714a7b74cd223ad4a405934c89a3146fb8b5c4
+source-git-commit: 41ab36b7227269d63ff49e1af1eab502939dddb8
 workflow-type: tm+mt
-source-wordcount: '1954'
-ht-degree: 21%
+source-wordcount: '1818'
+ht-degree: 19%
 
 ---
+
 
 # 存取及導覽通用編輯器 {#navigating}
 
@@ -71,49 +72,17 @@ UI分為以下幾個主要區域。
 >
 >通用編輯器提供許多[自訂選項](/help/implementing/universal-editor/customizing.md)和[擴充點](/help/implementing/universal-editor/extending.md)，可修改並新增至編輯器的功能。 因此，您可能會看到不同於此處記錄的標準選項。
 
-### Experience Cloud 標頭 {#experience-cloud-header}
+### Experience Platform頂端導覽列 {#experience-cloud-header}
 
-Experience Cloud 標頭會始終顯示在畫面頂端。這是一個錨點，說明您在 Experience Cloud 中的位置，並幫助您導覽到其他 Experience Cloud 應用程式。
+Experience Platform頂端導覽列一律會顯示在畫面頂端。 這是一個錨點，說明您在 Experience Cloud 中的位置，並幫助您導覽到其他 Experience Cloud 應用程式。
 
 ![Experience Cloud 標頭](assets/experience-cloud-header.png)
 
-#### Experience Manager {#experience-manager}
-
-選取標頭左側的Adobe Experience Cloud連結，即可導覽至Experience Manager解決方案的根目錄，以存取如[Cloud Manager](/help/onboarding/cloud-manager-introduction.md)、[Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)和[Software Distribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hant)之類的工具。
-
-![全域導覽按鈕](assets/global-navigation.png)
-
-#### 組織 {#organization}
-
-這將顯示您目前登入的組織。如果您的Adobe ID與多個組織相關聯，請選取以切換至其他組織。
-
-![組織指示器](assets/organization.png)
-
-#### 支援中心 {#help}
-
-說明中心圖示可讓您快速存取學習與支援資源。
-
-![說明](assets/help.png)
-
-#### 通知 {#notifications}
-
-此圖示標有目前已分配的未完成[通知](/help/implementing/cloud-manager/notifications.md)的數目。
-
-![通知](assets/notifications.png)
-
-#### 應用程式 {#solutions}
-
-點選或按一下應用程式切換器，可讓您快速跳至其他Experience Cloud解決方案。
-
-![應用程式切換器](assets/solutions.png)
+如需Experience Platform頂端導覽列的詳細資訊，請參閱[Adobe Experience Platform UI指南](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
 
 #### 帳戶 {#user-properties}
 
-選取代表您的使用者的圖示，以存取您的帳戶設定。 如果您沒有設定使用者圖片，則會隨機分配圖示。
-
-![使用者屬性](assets/user-properties.png)
-
-點選或按一下帳戶圖示會開啟包含您使用者設定的功能表。 這些設定一般適用於Cloud Manager，其功能在該檔案中詳細說明[。](/help/implementing/cloud-manager/navigation.md)
+點選或按一下帳戶圖示會開啟包含您使用者設定的功能表。
 
 ![環境切換器](assets/environment-switcher.png)
 

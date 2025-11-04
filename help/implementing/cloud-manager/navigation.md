@@ -5,10 +5,10 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5f9d53958076b77cd333a042003c83853594db87
+source-git-commit: 4b09357276be8b57c72f830a39d98ab0a593efb1
 workflow-type: tm+mt
-source-wordcount: '1689'
-ht-degree: 39%
+source-wordcount: '1595'
+ht-degree: 37%
 
 ---
 
@@ -58,20 +58,16 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 
 有兩個相互重疊的工具列。
 
-#### Cloud Manager 標頭 {#cloud-manager-header}
+#### Experience Platform頂端導覽列 {#cloud-manager-header}
 
-第一個是 Cloud Manager 標頭，當您瀏覽 Cloud Manager 時會持續出現。它是一個錨點，可讓您存取適用於 Cloud Manager 程式的設定和資訊。
+第一個是Experience Platform頂端導覽列，當您導覽Cloud Manager時，此導覽列會持續存在。 它是一個錨點，可讓您存取適用於 Cloud Manager 方案的設定和資訊。
 
-![Experience Cloud 標頭](assets/experience-cloud-header.png)
+![Experience Platform頂端導覽列](assets/experience-cloud-header.png)
 
-1. 按一下「![顯示功能表圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)」（顯示或隱藏側邊功能表）可讓您存取各種標籤，這些標籤可帶您進入個別程式的特定部分。 或者，您可以根據內容在[授權儀表板](/help/implementing/cloud-manager/license-dashboard.md)和&#x200B;**[我的程式](#my-programs-console)**&#x200B;主控台之間切換。
-1. 按一下Adobe Cloud Manager按鈕，無論您身在Cloud Manager何處，都會帶您返回Cloud Manager的「我的程式」主控台。
-1. 按一下「**意見回饋**」，即可向 Adobe 提供有關 Cloud Manager 的意見回饋。
-1. 按一下組織選擇器，會顯示您目前登入的組織（在此範例中為Foundation Internal）。 如果您的 Adobe ID 與多個組織關聯，可按一下以切換到另一個組織。
-1. 按一下![應用程式圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) （解決方案切換器）以快速跳至其他Experience Cloud解決方案。
-1. 按一下![說明圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Help_18_N.svg)，讓您快速存取學習與支援資源。
-1. 按一下![鈴鐺圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) （[通知](/help/implementing/cloud-manager/notifications.md)）檢視通知和公告等。
-1. 按一下代表使用者對您的使用者設定之存取權的圖示。 如果您沒有設定使用者圖片，則會隨機分配圖示。
+* ![顯示功能表圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) （顯示或隱藏側邊功能表）可讓您存取各種標籤，這些標籤可帶您前往個別程式的特定部分。 或者，您可以根據內容在[授權儀表板](/help/implementing/cloud-manager/license-dashboard.md)和&#x200B;**[我的程式](#my-programs-console)**&#x200B;主控台之間切換。
+* ![鈴鐺圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) （[通知](/help/implementing/cloud-manager/notifications.md)）可讓您存取通知和公告等。
+
+如需Experience Platform頂端導覽列的詳細資訊，請參閱[Adobe Experience Platform UI指南。](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
 
 #### 方案工具列 {#program-toolbar}
 
@@ -126,7 +122,7 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 * 指派給計畫的名稱。 上圖顯示「SecurBank Sample」為程式名稱。
 * 服務類型：
    * **Experience Manager Cloud** — 適用於AEM as a Cloud Service計畫
-   * **Experience Manager** — 適用於[AMS (Adobe Managed Services)方案](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-manager/content/introduction)
+   * **Experience Manager** — 適用於[AMS (Adobe Managed Services)方案](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
 * [程式型別](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)：
    * 沙箱
    * 生產
@@ -153,7 +149,7 @@ Cloud Manager UI 主要由兩個圖形介面組成：
 * 瀏覽至程式的特定![資料圖示](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Data_22_N.svg) [環境](/help/implementing/cloud-manager/manage-environments.md)
 * 開啟![計畫總覽圖示](/help/implementing/cloud-manager/assets/program-overview.svg) [計畫總覽](#program-overview)
 * ![編輯圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) [編輯程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#editing)
-* ![刪除圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) [刪除沙箱程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
+* ![刪除圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg)[刪除沙箱程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#delete-sandbox-program)
 
 >[!TIP]
 >
