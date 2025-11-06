@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 41ab36b7227269d63ff49e1af1eab502939dddb8
+source-git-commit: 437b9bdf48fc8235ef90cac4a38c2a0b41f89a8f
 workflow-type: tm+mt
-source-wordcount: '1818'
+source-wordcount: '1820'
 ht-degree: 19%
 
 ---
@@ -61,7 +61,7 @@ Universal Editor 支援在任意實作中編輯任何方面的內容，以便提
 
 UI分為以下幾個主要區域。
 
-* [Experience Cloud 標頭](#experience-cloud-header)
+* [Experience Platform頂端導覽列](#experience-cloud-header)
 * [通用編輯器工具列](#universal-editor-toolbar)
 * [編輯器](#editor)
 * [屬性面板](#properties-rail)
@@ -78,7 +78,7 @@ Experience Platform頂端導覽列一律會顯示在畫面頂端。 這是一個
 
 ![Experience Cloud 標頭](assets/experience-cloud-header.png)
 
-如需Experience Platform頂端導覽列的詳細資訊，請參閱[Adobe Experience Platform UI指南](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
+如需Experience Platform頂端導覽列的詳細資訊，請參閱[Adobe Experience Platform UI指南](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
 
 #### 帳戶 {#user-properties}
 

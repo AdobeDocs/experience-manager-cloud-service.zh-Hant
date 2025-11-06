@@ -1,20 +1,20 @@
 ---
-title: 通用編輯器 2025.10.30 版發行說明
-description: 以下是通用編輯器 2025.10.30 版的發行說明。
+title: 通用編輯器 2025.11.06 版發行說明
+description: 以下是通用編輯器 2025.11.06 版的發行說明。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: e3e571bef450ddc09eb30ab7d73b144ea521a87b
+source-git-commit: 5c762da645ee26164d39af3936fc6b3fcbd43f0b
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 64%
+source-wordcount: '256'
+ht-degree: 55%
 
 ---
 
 
-# 通用編輯器 2025.10.30 版發行說明 {#release-notes}
+# 通用編輯器 2025.11.06 版發行說明 {#release-notes}
 
-此為通用編輯器 2025 年 10 月 30 日版本的發行說明。
+這是通用編輯器 2025 年 11 月 6 日版本的發行說明。
 
 >[!TIP]
 >
@@ -23,11 +23,6 @@ ht-degree: 64%
 >[!TIP]
 >
 >如需 Adobe Experience Manager as a Cloud Service 的最新發行說明，請參閱[此頁面](/help/release-notes/release-notes-cloud/release-notes-current.md)。
-
-## 新增功能 {#what-is-new}
-
-* [新的RTE](#new-rte)現在可以插入影像。
-   * 此功能已停用OOtB，必須透過[篩選器定義明確啟用。](/help/implementing/universal-editor/configure-rte.md#toolbar)
 
 ## 早期採用功能 {#early-adopter}
 
@@ -39,10 +34,12 @@ ht-degree: 64%
 
 ## 其他改善功能 {#other-improvements}
 
-* 如果動作為還原，現在會通知更新事件。
-* `No results`字串現在取決於通用編輯器標籤中的瀏覽器地區設定。
-* 修正通用編輯器發佈按鈕中的額外分行符號。
-* 已進行清理以修補API。
-* 選取內容按鈕現在會顯示在Safari中。
-* RPM組建已修正。
-* CORS會更新，以避免在儲存後再次更新文字編輯的文字。
+* 現在可以正確刪除`og:title`個中繼資料欄位。
+* 已修正導覽問題，當使用者在瀏覽器中編輯位置列，以便正確反映這些變更，並且編輯器和/或應用程式現在導覽到請求的URL時。
+* 已更正欄位模型解析度，且編輯器會使用來自元件的模型（如果存在）。
+* componentId現在包含在/add動作中。
+* 已修正刪除部分中繼資料屬性（先前無法移除）的功能。
+* 如果AEM外掛程式未設定，原始擷取現在會有條件地針對xwalk完成。
+* 已修正使用RTE處理內容片段MSM。
+* 現在支援圖片中的影像反白顯示。
+
