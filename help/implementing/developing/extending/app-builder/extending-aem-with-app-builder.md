@@ -27,7 +27,7 @@ App Builder為客戶提供了一種方法，可輕鬆地在各種使用案例中
 
 >[!NOTE]
 >
-> 若是想要使用App Builder的AEM 6.5客戶，請參閱[使用Adobe Developer App Builder延伸Adobe Experience Manager 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html)。
+> 若是想要使用App Builder的AEM 6.5客戶，請參閱[使用Adobe Developer App Builder延伸Adobe Experience Manager 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html?lang=zh-Hant)。
 
 ## 架構 {#architecture}
 

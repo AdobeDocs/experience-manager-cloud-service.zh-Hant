@@ -45,7 +45,7 @@ ht-degree: 100%
 
 為此，您需要將 AEM 設定為在 HTTPS 上執行。出於開發目的，您可以使用自我簽署憑證。
 
-[參閱此文件](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html)了解如何設定 AEM 在 HTTPS 上執行，包括您可以使用的自我簽署憑證。
+[參閱此文件](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html?lang=zh-Hant)了解如何設定 AEM 在 HTTPS 上執行，包括您可以使用的自我簽署憑證。
 
 ## 安裝通用編輯器服務 {#install-ue-service}
 
@@ -53,7 +53,7 @@ ht-degree: 100%
 
 執行通用編輯器服務的本機副本需要 [NodeJS 版本 20](https://nodejs.org/en/download/releases)。
 
-通用編輯器服務可透過 Software Distribution 取得。關於如何存取通用編輯器的詳細資訊，請參閱 [Software Distribution 文件](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)。
+通用編輯器服務可透過 Software Distribution 取得。關於如何存取通用編輯器的詳細資訊，請參閱 [Software Distribution 文件](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hant)。
 
 將來自 Software Distribution 的檔案 `universal-editor-service.cjs` 儲存到您的本機開發環境。
 

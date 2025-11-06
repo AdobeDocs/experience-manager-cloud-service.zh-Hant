@@ -13,11 +13,11 @@ ht-degree: 1%
 
 # 元件參考指南 {#components-reference-guide}
 
-元件是在AEM中建立體驗的核心。 [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)和[AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)可讓您輕鬆開始使用一組現成且強大的元件。 [WKND教學課程](/help/implementing/developing/introduction/develop-wknd-tutorial.md)會帶領開發人員瞭解如何使用這些工具，以及如何建置自訂元件以建立AEM網站。
+元件是在AEM中建立體驗的核心。 [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)和[AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)可讓您輕鬆開始使用一組現成且強大的元件。 [WKND教學課程](/help/implementing/developing/introduction/develop-wknd-tutorial.md)會帶領開發人員瞭解如何使用這些工具，以及如何建置自訂元件以建立AEM網站。
 
 >[!TIP]
 >
->在參考此檔案之前，請確定您已完成[WKND教學課程](/help/implementing/developing/introduction/develop-wknd-tutorial.md)，因此熟悉[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)和[AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)。
+>在參考此檔案之前，請確定您已完成[WKND教學課程](/help/implementing/developing/introduction/develop-wknd-tutorial.md)，因此熟悉[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)和[AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)。
 
 由於WKND教學課程涵蓋大部分的使用案例，本檔案旨在補充這些資源。 它提供了有關如何在AEM中建構和設定元件的深入技術細節，並非旨在作為快速入門手冊。
 
@@ -39,11 +39,11 @@ ht-degree: 1%
 
 ### 重複使用現有元件 {#reusing-components}
 
-在您花時間建立全新元件之前，請考慮自訂或擴充現有元件。 [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)提供一套彈性、強大且經過充分測試的生產就緒元件。
+在您花時間建立全新元件之前，請考慮自訂或擴充現有元件。 [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)提供一套彈性、強大且經過充分測試的生產就緒元件。
 
 #### 擴充核心元件 {#extending-core-components}
 
-核心元件也提供[清晰的自訂模式](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)，您可將其調整為您自己的專案需求。
+核心元件也提供[清晰的自訂模式](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=zh-Hant)，您可將其調整為您自己的專案需求。
 
 #### 覆蓋元件 {#overlying-components}
 
@@ -61,12 +61,12 @@ ht-degree: 1%
 
 建議將負責標示和轉譯的程式碼，與控制用來選取元件內容的邏輯的程式碼分開。
 
-[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)支援此理念，這是一種範本化語言，刻意加以限制，以確保使用真正的程式語言來定義基礎商業邏輯。 此機制會醒目顯示呼叫特定檢視的程式碼，並在必要時允許同一元件的不同檢視使用特定邏輯。
+[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=zh-Hant)支援此理念，這是一種範本化語言，刻意加以限制，以確保使用真正的程式語言來定義基礎商業邏輯。 此機制會醒目顯示呼叫特定檢視的程式碼，並在必要時允許同一元件的不同檢視使用特定邏輯。
 
 此（選用）邏輯可透過不同方式實作，並使用特定命令從HTL叫用：
 
-* 使用Java - [&#x200B; HTL Java Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html)可讓HTL檔案存取自訂Java類別中的Helper方法。 這可讓您使用Java程式碼來實作選取和設定元件內容的邏輯。
-* 使用JavaScript - [HTL JavaScript Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html)可讓HTL檔案存取以JavaScript撰寫的Helper程式碼。 這可讓您使用JavaScript程式碼來實作選取和設定元件內容的邏輯。
+* 使用Java - [&#x200B; HTL Java Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=zh-Hant)可讓HTL檔案存取自訂Java類別中的Helper方法。 這可讓您使用Java程式碼來實作選取和設定元件內容的邏輯。
+* 使用JavaScript - [HTL JavaScript Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html?lang=zh-Hant)可讓HTL檔案存取以JavaScript撰寫的Helper程式碼。 這可讓您使用JavaScript程式碼來實作選取和設定元件內容的邏輯。
 * 使用使用者端資料庫 — 現代網站非常依賴由複雜的JavaScript和CSS程式碼驅動的使用者端處理。 如需詳細資訊，請參閱檔案[在AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md)上使用使用者端資料庫。
 
 ## 元件結構 {#structure}

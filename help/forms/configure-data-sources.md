@@ -17,7 +17,7 @@ ht-degree: 4%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/configure-data-sources.html) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/configure-data-sources.html?lang=zh-Hant) |
 | AEM as a Cloud Service  | 本文章 |
 
 ![資料整合](do-not-localize/data-integeration.png)
@@ -40,8 +40,8 @@ ht-degree: 4%
 
 在使用[!DNL Experience Manager] Web主控台組態設定關聯式資料庫之前，必須：
 
-* [透過Cloud Manager API啟用進階網路](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)，因為連線埠預設為停用。
-* [在Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=en#mysql-driver-dependencies)中新增JDBC驅動程式相依性。
+* [透過Cloud Manager API啟用進階網路](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=zh-Hant)，因為連線埠預設為停用。
+* [在Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=zh-Hant#mysql-driver-dependencies)中新增JDBC驅動程式相依性。
 
 
 ### 設定關聯式資料庫的步驟
@@ -73,7 +73,7 @@ ht-degree: 4%
 
    >[!NOTE]
    >
-   > 如需詳細資訊，請參閱使用JDBC DataSourcePool[的](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html)SQL連線。
+   > 如需詳細資訊，請參閱使用JDBC DataSourcePool[的](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=zh-Hant)SQL連線。
 
 1. 選取&#x200B;**[!UICONTROL 儲存]**&#x200B;以儲存組態。
 
@@ -109,7 +109,7 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
 若要設定雲端服務設定的資料夾：
 
 1. 前往&#x200B;**[!UICONTROL 工具 > 一般 > 設定瀏覽器]**。
-   * 如需詳細資訊，請參閱[設定瀏覽器](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/configurations.html)檔案。
+   * 如需詳細資訊，請參閱[設定瀏覽器](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/configurations.html?lang=zh-Hant)檔案。
 1. 請執行以下操作來啟用雲端設定的全域資料夾，或跳過此步驟來建立和設定雲端服務設定的另一個資料夾。
 
    1. 在&#x200B;**[!UICONTROL 設定瀏覽器]**&#x200B;中，選取`global`資料夾並選取&#x200B;**[!UICONTROL 屬性]**。
@@ -320,7 +320,7 @@ OData服務由其服務根URL識別。 若要在[!DNL Experience Manager] as a C
 <!--
 ## Configure Microsoft&reg; SharePoint List {#config-sharepoint-list}
 
-<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+<span class="preview"> This is a pre-release feature and accessible through our [pre-release channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hant#new-features). </span>
 
 To save data in a tabular form use, Microsoft&reg; SharePoint List. To configure a Microsoft SharePoint List in [!DNL Experience Manager] as a Cloud Service, do the following:
 

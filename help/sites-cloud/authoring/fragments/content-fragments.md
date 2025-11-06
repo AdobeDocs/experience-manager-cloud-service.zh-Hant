@@ -39,7 +39,7 @@ Adobe Experience Manager (AEM) as a Cloud Service中的內容片段是[建立並
 >
 >體驗片段可以包含內容片段形式的內容，反之則不行。
 >
->如需詳細資訊，請參閱[瞭解AEM中的內容片段和體驗片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments)。
+>如需詳細資訊，請參閱[瞭解AEM中的內容片段和體驗片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=zh-Hant#content-fragments)。
 
 內容片段會啟用：
 
@@ -89,7 +89,7 @@ Adobe Experience Manager (AEM) as a Cloud Service中的內容片段是[建立並
 
 >[!NOTE]
 >
->另請參閱[核心元件、內容片段元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
+>另請參閱[核心元件、內容片段元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=zh-Hant)
 
 在適當的組態對話方塊中，您可以選取可用的引數，包括：
 

@@ -41,7 +41,7 @@ AEM as a Cloud Service遵循由最新AEM專案原型實作的套件管理和專�
 
 >[!TIP]
 >
->請參閱AEM檔案中的[AEM as a Cloud Service專案結構](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)文章和[AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)檔案。 AEM 6.5完全支援這兩項功能。
+>請參閱AEM檔案中的[AEM as a Cloud Service專案結構](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=zh-Hant)文章和[AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)檔案。 AEM 6.5完全支援這兩項功能。
 
 ## 取得內容套件Maven外掛程式 {#obtaining-the-content-package-maven-plugin}
 
@@ -215,4 +215,4 @@ mvn content-package:install -Dvault.targetURL="https://192.168.1.100:4502/crx/pa
 
 >[!TIP]
 >
->請參閱AEM檔案中的[AEM as a Cloud Service專案結構](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)文章和[AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)檔案。 AEM 6.5完全支援這兩項功能。
+>請參閱AEM檔案中的[AEM as a Cloud Service專案結構](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=zh-Hant)文章和[AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)檔案。 AEM 6.5完全支援這兩項功能。

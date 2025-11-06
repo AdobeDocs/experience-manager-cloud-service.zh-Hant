@@ -352,7 +352,7 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 #### [!UICONTROL 非同步函式呼叫]
 
-<span class="preview">這是一項預先發佈功能，可透過我們的[預先發佈管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)存取。</span>
+<span class="preview">這是一項預先發佈功能，可透過我們的[預先發佈管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hant#new-features)存取。</span>
 
 **[!UICONTROL 非同步函式呼叫]**&#x200B;規則型別可讓您執行非同步函式。 它可讓您啟動獨立於主要執行緒運作的函式呼叫，讓其他處理程式繼續執行，而不需要等候非同步函式完成。
 

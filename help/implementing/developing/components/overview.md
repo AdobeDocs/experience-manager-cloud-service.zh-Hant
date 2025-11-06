@@ -26,7 +26,7 @@ ht-degree: 100%
 * 具有標準化的使用者介面。
 * 具有可以設定的編輯行為。
 * 使用以子元素根據 Granite UI 元件建置的對話框。
-* 這些單位是使用 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) 來開發。
+* 這些單位是使用 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=zh-Hant) 來開發。
 * 這單位可以開發並建立擴充預設功能的自訂元件。
 
 因為元件是模組化的，所以您可以：
@@ -44,7 +44,7 @@ ht-degree: 100%
 
 ## AEM 核心元件 {#aem-core-components}
 
-[AEM 核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 是一組適用於 AEM 的標準化網站內容管理 (WCM) 元件，可加快開發時間並降低網站的維護成本。
+[AEM 核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant) 是一組適用於 AEM 的標準化網站內容管理 (WCM) 元件，可加快開發時間並降低網站的維護成本。
 
 核心元件隨 AEM as a Cloud Service 一起提供，[WKND 教學課程](/help/implementing/developing/introduction/develop-wknd-tutorial.md)說明如何實作和使用元件。這些元件隨附所有原始程式碼，可以按原狀使用，也可以做為修改或擴充元件的起點。
 

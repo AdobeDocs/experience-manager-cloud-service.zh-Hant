@@ -15,7 +15,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
-> Adobe建議針對[建立新的Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)或[將Adaptive Forms新增至AEM Sites頁面](/help/forms/creating-adaptive-form-core-components.md)，使用現代且可擴充的資料擷取[核心元件](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文說明使用基礎元件製作最適化Forms的舊方法。
+> Adobe建議針對[建立新的Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant)或[將Adaptive Forms新增至AEM Sites頁面](/help/forms/creating-adaptive-form-core-components.md)，使用現代且可擴充的資料擷取[核心元件](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文說明使用基礎元件製作最適化Forms的舊方法。
 
 **[!UICONTROL 註腳]**&#x200B;是出現在頁面結尾的額外資訊位元或備註。 [!UICONTROL 註腳]包含以數字作為上標的文字所表示的註記。
 
@@ -30,7 +30,7 @@ ht-degree: 3%
 * 提供可以中斷主要資訊正常流程的額外資訊。
 * 提供括弧資訊或版權許可權。
 
-在最適化Forms中，[!UICONTROL 註腳]用於顯示如何完成或使用表單的相關資訊。 如需如何建立最適化Forms的詳細資訊，請參閱[建立最適化表單](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html)。
+在最適化Forms中，[!UICONTROL 註腳]用於顯示如何完成或使用表單的相關資訊。 如需如何建立最適化Forms的詳細資訊，請參閱[建立最適化表單](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html?lang=zh-Hant)。
 
 ## 最適化Forms中的註腳 {#using-footnote-adaptiveforms}
 

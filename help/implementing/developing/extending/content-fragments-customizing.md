@@ -98,9 +98,9 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->[內容片段元件是核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)的一部分。 如需詳細資訊，請參閱[開發核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html)。
+>[內容片段元件是核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=zh-Hant)的一部分。 如需詳細資訊，請參閱[開發核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=zh-Hant)。
 
-內容片段可以從AEM頁面引用，就像任何其他資產型別一樣。 AEM提供&#x200B;**[內容片段核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)** - [元件，可讓您在頁面上包含內容片段](/help/sites-cloud/authoring/fragments/content-fragments.md#adding-a-content-fragment-to-your-page)。 您也可以擴充此&#x200B;**[內容片段](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html)**&#x200B;核心元件。
+內容片段可以從AEM頁面引用，就像任何其他資產型別一樣。 AEM提供&#x200B;**[內容片段核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=zh-Hant)** - [元件，可讓您在頁面上包含內容片段](/help/sites-cloud/authoring/fragments/content-fragments.md#adding-a-content-fragment-to-your-page)。 您也可以擴充此&#x200B;**[內容片段](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=zh-Hant)**&#x200B;核心元件。
 
 * 元件使用`fragmentPath`屬性來參考實際內容片段。 `fragmentPath`屬性的處理方式與其他資產型別的類似屬性相同；例如，當內容片段移至其他位置時。
 
@@ -350,4 +350,4 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 
 如需詳細資訊，請參閱
 
-* [核心元件 — 內容片段元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html) （建議）
+* [核心元件 — 內容片段元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=zh-Hant) （建議）

@@ -29,7 +29,7 @@ ht-degree: 100%
 
 ### [!DNL Experience Manager Sites] 中的新功能 {#sites-features}
 
-* [內容片段主控台](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html)現在可讓使用者檢視標記，並依據作為中繼資料套用於內容片段的標記進行搜尋。使用者即不必再為了此功能而切換到資產 UI，減少了內容切換並提高了效率。
+* [內容片段主控台](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=zh-Hant)現在可讓使用者檢視標記，並依據作為中繼資料套用於內容片段的標記進行搜尋。使用者即不必再為了此功能而切換到資產 UI，減少了內容切換並提高了效率。
 
   ![在內容片段主控台中進行標記](/help/assets/content-fragments-console-tags.png)
 * 新的內容片段編輯器現已在 AEM as a Cloud Service 上提供。此編輯器可簡化內容作者的製作工作，並減少他們編輯內容時在不同應用程式之間切換的需要，進而讓內容作者能夠提高工作效率。
@@ -135,7 +135,7 @@ You can now assign metadata form to a specific folder within your Assets Essenti
 
 ### Headless 最適化表單早期採用者方案 {#forms-early-adopter}
 
-使用 [Headless 最適化表單](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html)讓您的開發人員能夠建立、發佈和管理可透過 API 存取和互動的互動式表單，而不是透過傳統的圖形使用者介面。Headless 最適化表單可協助您：
+使用 [Headless 最適化表單](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=zh-Hant)讓您的開發人員能夠建立、發佈和管理可透過 API 存取和互動的互動式表單，而不是透過傳統的圖形使用者介面。Headless 最適化表單可協助您：
 
 * 使用您選擇的程式語言建置高品質的多管道表單
 * 以原生方式將表單整合到您的桌面和行動應用程式、網站和聊天應用程式

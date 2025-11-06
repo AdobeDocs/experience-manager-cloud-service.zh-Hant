@@ -99,6 +99,6 @@ Adobe 正提供各項程序，用於處理與存取、刪除和選擇退出 Adob
 Adobe Experience Manager as a Cloud Service 與 Adobe Target 和 Adobe Analytics 的整合是透過資料保護和隱私權 (例如 GDPR) 整備服務實作。來自 Adobe Target 或 Adobe Analytics 與整合相關的個人資料不會儲存在 AEM 中。
 如需詳細資訊，請參閱：
 
-* [Adobe Target - 隱私權概觀](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html)
+* [Adobe Target - 隱私權概觀](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html?lang=zh-Hant)
 
-* [Adobe Analytics 資料隱私權工作流程](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html)
+* [Adobe Analytics 資料隱私權工作流程](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html?lang=zh-Hant)

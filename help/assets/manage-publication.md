@@ -14,7 +14,7 @@ ht-degree: 4%
 
 # 在Experience Manager Assets中管理發布 {#manage-publication-in-aem}
 
-作為[!DNL Adobe Experience Manager Assets]管理員，您可以從您的作者執行個體將包含資產的資產和資料夾發佈到[!DNL Experience Manager Assets]、[!DNL Dynamic Media]和[!DNL Brand Portal]。 此外，您也可以排程在稍後的日期或時間發佈資產或資料夾。 發佈後，使用者可以存取資產，並進一步將資產發佈給其他使用者。 依預設，您可以將資產和資料夾發佈到[!DNL Experience Manager Assets]。 不過，您可以設定[!DNL Experience Manager Assets]以啟用發佈至[[!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html)和[[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html)。
+作為[!DNL Adobe Experience Manager Assets]管理員，您可以從您的作者執行個體將包含資產的資產和資料夾發佈到[!DNL Experience Manager Assets]、[!DNL Dynamic Media]和[!DNL Brand Portal]。 此外，您也可以排程在稍後的日期或時間發佈資產或資料夾。 發佈後，使用者可以存取資產，並進一步將資產發佈給其他使用者。 依預設，您可以將資產和資料夾發佈到[!DNL Experience Manager Assets]。 不過，您可以設定[!DNL Experience Manager Assets]以啟用發佈至[[!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html?lang=zh-Hant)和[[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=zh-Hant)。
 
 您可以使用&#x200B;**[!UICONTROL 介面中的]**&#x200B;快速發佈&#x200B;**[!UICONTROL 或]**&#x200B;管理出版物[!DNL Experience Manager Assets]選項，在資產或資料夾層級發佈或取消發佈資產。 如果您在[!DNL Experience Manager Assets]中對原始資產或資料夾進行後續修改，則在您從[!DNL Experience Manager Assets]重新發佈之前，這些變更不會反映在發佈執行個體中。 它可確保發佈執行個體中不會出現進行中變更。 發佈執行個體中只能使用管理員發佈的已核准變更。
 
@@ -161,20 +161,20 @@ Only the selected folder content and references are published.
 * `Immediate`
 * `Upon Activation`
 
-**[!UICONTROL Immediate]**&#x200B;與&#x200B;**[!UICONTROL On Activation]**&#x200B;模式的發佈程式一致，但&#x200B;**[!UICONTROL 選擇性發佈]**&#x200B;則不同。 請參閱[在Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html)的資料夾層級設定選擇性發佈。 在資料夾中設定選擇性發佈後，您可以執行下列任一項作業：
+**[!UICONTROL Immediate]**&#x200B;與&#x200B;**[!UICONTROL On Activation]**&#x200B;模式的發佈程式一致，但&#x200B;**[!UICONTROL 選擇性發佈]**&#x200B;則不同。 請參閱[在Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=zh-Hant)的資料夾層級設定選擇性發佈。 在資料夾中設定選擇性發佈後，您可以執行下列任一項作業：
 
-* [使用「管理出版物」選擇性地將資產發佈到Dynamic Media或Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=en#selective-publish-manage-publication)
-* [使用「管理出版物」選擇性地從Dynamic Media或Experience Manager取消發佈資產](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=en#selective-unpublish-manage-publication)
-* [使用快速發佈將資產發佈到Dynamic Media或Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=en#quick-publish-aem-dm)
-* [透過搜尋結果選擇性地發佈或取消發佈資產](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=en#selective-publish-unpublish-search-results)
+* [使用「管理出版物」選擇性地將資產發佈到Dynamic Media或Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=zh-Hant#selective-publish-manage-publication)
+* [使用「管理出版物」選擇性地從Dynamic Media或Experience Manager取消發佈資產](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=zh-Hant#selective-unpublish-manage-publication)
+* [使用快速發佈將資產發佈到Dynamic Media或Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=zh-Hant#quick-publish-aem-dm)
+* [透過搜尋結果選擇性地發佈或取消發佈資產](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=zh-Hant#selective-publish-unpublish-search-results)
 
 ## 將資產發佈至Brand Portal {#publish-assets-to-brand-portal}
 
 您可以將資產、資料夾和集合發佈至[!DNL Experience Manager Assets Brand Portal]執行個體。
 
-* [將資產發佈至 Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=en#publish-assets-to-bp)
-* [將資料夾發佈至 Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=en#publish-folders-to-brand-portal)
-* [將集合發佈至 Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=en#publish-collections-to-brand-portal)
+* [將資產發佈至 Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=zh-Hant#publish-assets-to-bp)
+* [將資料夾發佈至 Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=zh-Hant#publish-folders-to-brand-portal)
+* [將集合發佈至 Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=zh-Hant#publish-collections-to-brand-portal)
 
 ## 要求發佈 {#request-publication}
 

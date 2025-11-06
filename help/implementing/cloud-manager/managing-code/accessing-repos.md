@@ -66,4 +66,4 @@ Cloud Manager 不會提供[私人存放庫](private-repositories.md)的存取資
 
 您可以隨時撤銷存取密碼。
 
-若要如此做，請[為此請求建立支援服務單](https://experienceleague.adobe.com/?support-solution=Experience+Manager&support-tab=home#support)。此服務單會以高優先性處理，且通常會在一天內撤銷。
+若要如此做，請[為此請求建立支援服務單](https://experienceleague.adobe.com/zh-hant?support-solution=Experience+Manager&support-tab=home#support)。此服務單會以高優先性處理，且通常會在一天內撤銷。

@@ -68,7 +68,7 @@ AEM Forms as a Cloud Service支援Adaptive Forms核心元件中的hCaptcha®。 
    >[!NOTE]
    > 使用者不需要修改[使用者端JavaScript驗證URL](https://docs.hcaptcha.com/#add-the-hcaptcha-widget-to-your-webpage)和[伺服器端驗證URL](https://docs.hcaptcha.com/#verify-the-user-response-server-side)，因為它們已預先填入hCaptcha®驗證。
 
-   設定hCAPTCHA服務後，即可用於根據核心元件的[最適化表單](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction)。
+   設定hCAPTCHA服務後，即可用於根據核心元件的[最適化表單](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/introduction)。
 
 ## 在最適化Forms核心元件中使用hCaptcha® {#using-hCaptcha&reg;-core-components}
 

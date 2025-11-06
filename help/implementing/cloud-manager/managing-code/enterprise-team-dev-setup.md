@@ -93,7 +93,7 @@ Cloud Manager的Git存放庫中的設定有兩個分支。
 
 >[!TIP]
 >
->請參閱[使用多個Source Git存放庫](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/managing-code/multiple-git-repos#managing-code)以深入瞭解此設定。
+>請參閱[使用多個Source Git存放庫](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-manager/content/managing-code/multiple-git-repos#managing-code)以深入瞭解此設定。
 
 ### 多團隊設定的考量事項 {#considerations}
 

@@ -128,7 +128,7 @@ ht-degree: 1%
 
 >[!TIP]
 >
->切勿在範本中輸入任何必須國際化的資訊。 基於內部化的目的，建議使用核心元件[的](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)本地化功能。
+>切勿在範本中輸入任何必須國際化的資訊。 基於內部化的目的，建議使用核心元件[的](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=zh-Hant)本地化功能。
 
 >[!NOTE]
 >

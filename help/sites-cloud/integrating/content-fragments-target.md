@@ -169,7 +169,7 @@ If you do not see your cloud configuration, see note in [Configuring A4T Analyti
 
   >[!NOTE]
   >
-  >Target程式庫檔案[AT.JS](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html)是新的Adobe Target實作程式庫，專為典型Web實作和單頁應用程式而設計。
+  >Target程式庫檔案[AT.JS](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html?lang=zh-Hant)是新的Adobe Target實作程式庫，專為典型Web實作和單頁應用程式而設計。
   >
   >mbox.js已過時，並將在稍後階段移除。
   >
@@ -241,7 +241,7 @@ If you do not see your cloud configuration, see note in [Configuring A4T Analyti
 <!--
 ### Associating Activities With the Target Cloud Configuration  {#associating-activities-with-the-target-cloud-configuration}
 
-Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html).
+Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html?lang=zh-Hant).
 
 >[!NOTE]
 >
@@ -340,7 +340,7 @@ When you associate a page with the framework, the child pages inherit the associ
 
 ## 在Adobe Target中使用內容片段 {#using-your-content-fragments-in-adobe-target}
 
-執行先前的工作後，內容片段會顯示在Target的「選件」頁面中。 請參閱[特定的Target檔案](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html)，瞭解您可以達到的目標。
+執行先前的工作後，內容片段會顯示在Target的「選件」頁面中。 請參閱[特定的Target檔案](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html?lang=zh-Hant)，瞭解您可以達到的目標。
 
 >[!NOTE]
 >
@@ -378,10 +378,10 @@ When you associate a page with the framework, the child pages inherit the associ
 * [Creating a Target Cloud Configuration](/help/sites-cloud/integrating/integrating-adobe-target.md#create-configuration)
 -->
 
-* [核心元件 — 內容片段](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)
+* [核心元件 — 內容片段](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=zh-Hant)
 
 * [Adobe Target開發](https://developers.adobetarget.com/)
 
-* [Adobe Target — 在Target活動中使用AEM內容片段，以輔助最佳化或個人化](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html)
+* [Adobe Target — 在Target活動中使用AEM內容片段，以輔助最佳化或個人化](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html?lang=zh-Hant)
 
-* [Adobe Target - AEM體驗片段和內容片段概觀](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/aem-experience-and-content-fragments.html)
+* [Adobe Target - AEM體驗片段和內容片段概觀](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/aem-experience-and-content-fragments.html?lang=zh-Hant)

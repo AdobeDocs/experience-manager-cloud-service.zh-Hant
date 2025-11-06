@@ -46,7 +46,7 @@ Dynamic Media的部分重要原則包括：
 * **體驗檢視器程式庫：**&#x200B;自訂影像和視訊的體驗檢視器和品牌化。 這些檢視器可順暢地整合至您的數位體驗。
 * **新興格式支援：** Dynamic Media可提供3D與全景體驗。
 
-探索[Dynamic Media歷程](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-journey/dm-journey-part1)時，檢閱下列最佳實務的彙總清單可協助您充分運用其功能。 調整這些Dynamic Media最佳實務，以符合您的特定內容和專案需求，這樣您就可以跨管道和裝置最佳化您的體驗。
+探索[Dynamic Media歷程](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-journey/dm-journey-part1)時，檢閱下列最佳實務的彙總清單可協助您充分運用其功能。 調整這些Dynamic Media最佳實務，以符合您的特定內容和專案需求，這樣您就可以跨管道和裝置最佳化您的體驗。
 
 <!-- In Dynamic Media on AEM, there are sets of methods, techniques, and guidelines that can help you maximize the potential of your rich media content. These best practices can lead to optimal results and increase efficiency in your use of Dynamic Media. They represent the most efficient and effective courses of action in a particular situation. They also unlock high value for your audience and deliver high-quality, engaging content. -->
 
@@ -94,9 +94,9 @@ Dynamic Media Viewer最佳實務是基本准則，旨在最佳化AEM上Dynamic M
 在您的頁面上僅包含主要檢視器JavaScript檔案。 避免參照檢視器的執行階段邏輯可能下載的其他JavaScript檔案。 具體而言，請勿從`Utils.js`內容路徑(稱為整合的HTML包含)直接連結至SDK5 SDK `/s7viewers`資料庫。 檢視器的邏輯會管理`Utils.js`或類似的執行階段檢視器程式庫的位置，這些程式庫可能會在發行版本之間變更。 Adobe不會保留伺服器上較舊的次要檢視器版本，因此直接參照這些版本可能會在日後的更新中破壞檢視器功能。
 * **內嵌准則：**
 使用本檔案內嵌每個檢視器特有的准則。
-想要進一步瞭解嗎？ 移至AEM Assets [的](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers)檢視器。
+想要進一步瞭解嗎？ 移至AEM Assets [的](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers)檢視器。
 * **SDK教學課程與範例：**
-檢閱[檢視器SDK教學課程](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-tutorial)和[HTML5 SDK應用程式範例](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html)，以深入瞭解SDK元件API。
+檢閱[檢視器SDK教學課程](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources/library/c-tutorial)和[HTML5 SDK應用程式範例](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html)，以深入瞭解SDK元件API。
 
 
 ## 準備資產以進行傳送
@@ -224,7 +224,7 @@ Dynamic Media可讓您直接透過URL操作影像，使其成為建立動態數�
 | **上傳並發佈標誌或圖示影像** | 接著，上傳並發佈您要重疊在基本影像上的影像。 此影像應是透明的PNG，並應包含您要覆蓋的標誌或圖示。<br>這是即將重疊的具有透明效果的star物件的透明PNG影像：<br>[https://s7g2.scene7.com/is/image/genaibeta/decorate-star](https://s7g2.scene7.com/is/image/genaibeta/decorate-star) |
 | **套用Dynamic Media URL** | 現在，請建立結合基本影像與標誌或圖示影像的Dynamic Media URL。 您可以使用URL命令來達到此效果。<br>URL結構看起來像這樣：<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&src=decorate-star&scale=1.25&posN=0.33,-.25&fmt=png](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&src=decorate-star&scale=1.25&posN=0.33,-.25&fmt=png)<br>資產所在的位置<ul><li> `hotspotRetailBaseImage`是基本影像。</li><li> `starxp`是標誌/圖示影像。</li><li> `layer=1`指定標誌或圖示應重疊在基本影像上。</li><li> `scale=1.25`會調整標誌/圖示的大小。</li><li> `posN=0.33,-.25`決定相對於基本影像的標誌/圖示位置。</li><li> `fmt=png`確保輸出為PNG格式。</li></ul> |
 
-要進一步瞭解什麼？ 移至[src](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src)，以取得有關`src`命令和其他Dynamic Media URL命令的詳細資料。
+要進一步瞭解什麼？ 移至[src](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src)，以取得有關`src`命令和其他Dynamic Media URL命令的詳細資料。
 
 
 #### 重疊促銷文字
@@ -276,7 +276,7 @@ Dynamic Media可讓您直接透過URL操作影像，使其成為建立動態數�
   [https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=1720&hei=820&cropN=0,.1,1,1&fit=crop](https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=1720&hei=820&cropN=0,.1,1,1&fit=crop)
 
 您可以根據特定需求，隨時探索這些變數。
-想要進一步瞭解URL中可用的命令？ 移至[命令參考](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference)。
+想要進一步瞭解URL中可用的命令？ 移至[命令參考](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference)。
 
 ### 傳遞GIF影像
 
@@ -320,7 +320,7 @@ Dynamic Media可讓您直接透過URL操作影像，使其成為建立動態數�
    * **內嵌視訊：**
 複製提供的內嵌程式碼，並將其貼到您要顯示視訊的網頁的HTML中。 如此一來，影片就能直接在您的網站上播放。
 
-想要進一步瞭解嗎？ 移至[影片](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/video)。
+想要進一步瞭解嗎？ 移至[影片](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/dynamicmedia/video)。
 
 ### 設定影片以獲得最佳品質和參與
 

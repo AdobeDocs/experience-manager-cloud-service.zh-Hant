@@ -30,7 +30,7 @@ AJO外部參考擴充功能的運作方式是，從與預先定義標籤相關�
 
 >[!NOTE]
 >
->另請參閱[AJO整合](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/integrations/aem-fragments)。
+>另請參閱[AJO整合](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/integrations/aem-fragments)。
 
 1. 開啟[內容片段主控台](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)。
 

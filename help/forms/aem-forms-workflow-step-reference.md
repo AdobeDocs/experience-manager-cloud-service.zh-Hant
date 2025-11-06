@@ -18,7 +18,7 @@ ht-degree: 0%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html?lang=zh-Hant) |
 | AEM as a Cloud Service  | 本文章 |
 
 您使用工作流程模型。 模型可協助您定義並執行一系列步驟。 您也可以定義模型屬性，例如工作流程是暫時的或使用多個資源。 您可以[在模型中加入各種AEM工作流程步驟，以達成商業邏輯](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=zh-Hant#extending-aem)。
@@ -121,7 +121,7 @@ ht-degree: 0%
     -->
 
 * **[!UICONTROL 受指派人]** > **[!UICONTROL 指派選項]**：指定將工作指派給使用者的方法。 您可以使用「參與者選擇器」指令碼動態地將任務指派給使用者或群組，或將任務指派給特定的AEM使用者或群組。
-* **[!UICONTROL 參與者選擇器]**：在[指派選項]欄位中選取&#x200B;**[!UICONTROL 動態至使用者或群組]**&#x200B;選項時，即可使用此選項。 您可以使用ECMAScript或服務來動態選取使用者或群組。 如需詳細資訊，請參閱[建立自訂Adobe Experience Manager動態參與者步驟](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en&CID=RedirectAEMCommunityKautuk)。
+* **[!UICONTROL 參與者選擇器]**：在[指派選項]欄位中選取&#x200B;**[!UICONTROL 動態至使用者或群組]**&#x200B;選項時，即可使用此選項。 您可以使用ECMAScript或服務來動態選取使用者或群組。 如需詳細資訊，請參閱[建立自訂Adobe Experience Manager動態參與者步驟](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hant&CID=RedirectAEMCommunityKautuk)。
 
 * **[!UICONTROL 參與者]**：在&#x200B;**[!UICONTROL 參與者選擇器]**&#x200B;欄位中選取&#x200B;**[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]**&#x200B;選項時，即可使用此欄位。 欄位可讓您為RandomParticipantChooser選項選取使用者或群組。
 
@@ -190,7 +190,7 @@ PDF/A是一種用於長期儲存檔案內容的封存格式，其方式為嵌入
 
 使用電子郵件步驟來傳送電子郵件，例如，包含記錄檔案、最適化表單<!-- , link of an interactive communication-->連結或附加PDF檔案的電子郵件。 傳送電子郵件步驟支援[HTML電子郵件](https://en.wikipedia.org/wiki/HTML_email)。 HTML電子郵件會迅速回應，並因應收件者的電子郵件使用者端和熒幕大小。 您可以使用HTML電子郵件範本來定義電子郵件的外觀、色彩配置和行為。
 
-電子郵件步驟使用Day CQ Mail Service傳送電子郵件。 在使用電子郵件步驟之前，請確定已設定電子郵件服務。 預設僅支援HTTP和HTTP通訊協定。 [請連絡支援團隊](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=en#sending-email)以啟用連線埠來傳送電子郵件，並為您的環境啟用SMTP通訊協定。 此限制有助於改善平台的安全性。
+電子郵件步驟使用Day CQ Mail Service傳送電子郵件。 在使用電子郵件步驟之前，請確定已設定電子郵件服務。 預設僅支援HTTP和HTTP通訊協定。 [請連絡支援團隊](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=zh-Hant#sending-email)以啟用連線埠來傳送電子郵件，並為您的環境啟用SMTP通訊協定。 此限制有助於改善平台的安全性。
 
 電子郵件步驟有下列屬性：
 

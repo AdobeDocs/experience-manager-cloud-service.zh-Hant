@@ -31,7 +31,7 @@ ht-degree: 3%
 
 在轉換至Adobe Experience Manager (AEM) as a Cloud Service的過程中，群組必須從現有的AEM系統移轉至AEM as a Cloud Service。 此工作由「內容轉移工具」完成。
 
-AEM as a Cloud Service的一項重大變更是完全整合使用Adobe ID來存取作者階層。 此程式需要使用[Adobe Admin Console](https://helpx.adobe.com/tw/enterprise/using/admin-console.html)來管理使用者和使用者群組。 使用者設定檔資訊會集中在Adobe Identity Management系統(IMS)中，可提供所有Adobe雲端應用程式的單一登入。 如需詳細資訊，請參閱[Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html#identity-management)。 由於此變更，使用者首次透過IMS登入時，系統會自動在AEM上建立。  因此，CTT不會將使用者移轉至雲端系統。  IMS使用者必須放置在IMS群組中，這些群組可以是移轉的群組，或放置在AEM群組(這些群組已獲得存取要移轉的AEM內容的許可權)中的新群組。  如此一來，雲端系統上的使用者就能在來源AEM系統上擁有相同的存取權。
+AEM as a Cloud Service的一項重大變更是完全整合使用Adobe ID來存取作者階層。 此程式需要使用[Adobe Admin Console](https://helpx.adobe.com/tw/enterprise/using/admin-console.html)來管理使用者和使用者群組。 使用者設定檔資訊會集中在Adobe Identity Management系統(IMS)中，可提供所有Adobe雲端應用程式的單一登入。 如需詳細資訊，請參閱[Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html?lang=zh-Hant#identity-management)。 由於此變更，使用者首次透過IMS登入時，系統會自動在AEM上建立。  因此，CTT不會將使用者移轉至雲端系統。  IMS使用者必須放置在IMS群組中，這些群組可以是移轉的群組，或放置在AEM群組(這些群組已獲得存取要移轉的AEM內容的許可權)中的新群組。  如此一來，雲端系統上的使用者就能在來源AEM系統上擁有相同的存取權。
 
 ## 群組移轉詳細資料 {#group-migration-detail}
 

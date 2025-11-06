@@ -97,5 +97,5 @@ Adobe Experience Manager 可以設定成在資產處理完成後自動觸發後�
 >* [開始使用資產微服務](asset-microservices-configure-and-use.md)
 >* [支援的檔案格式](file-format-support.md)
 >* [Adobe Asset Link](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html)
->* [[!DNL Experience Manager] 桌面應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
+>* [[!DNL Experience Manager] 桌面應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=zh-Hant)
 >* [關於直接二進位檔存取的 Apache Oak 文件](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html)

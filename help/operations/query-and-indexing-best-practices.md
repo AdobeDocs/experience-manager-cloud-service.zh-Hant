@@ -69,7 +69,7 @@ AEM as a Cloud Service提供[查詢效能工具](#query-performance-tool)，其�
 * 它會顯示已執行的查詢及其相關效能特性及查詢計畫。
 * 它允許在不同層級執行特定查詢，從僅顯示查詢計畫到執行完整查詢。
 
-查詢效能工具可透過Cloud Manager[中的](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries)Developer Console存取。 與AEM 6.x版相比，AEM as a Cloud Service的查詢效能工具可提供更多有關查詢執行細節的資訊。
+查詢效能工具可透過Cloud Manager[中的](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=zh-Hant#queries)Developer Console存取。 與AEM 6.x版相比，AEM as a Cloud Service的查詢效能工具可提供更多有關查詢執行細節的資訊。
 
 此圖表說明使用查詢效能工具最佳化查詢的一般流程。
 
@@ -111,7 +111,7 @@ AEM as a Cloud Service提供[查詢效能工具](#query-performance-tool)，其�
 
 ## 查詢效能工具 {#query-performance-tool}
 
-查詢效能工具(位於`/libs/granite/operations/content/diagnosistools/queryPerformance.html`，可透過Cloud Manager[中的](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries)Developer Console取得)提供 — 
+查詢效能工具(位於`/libs/granite/operations/content/diagnosistools/queryPerformance.html`，可透過Cloud Manager[中的](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=zh-Hant#queries)Developer Console取得)提供 — 
 
 * 任何「緩慢查詢」的清單；目前定義為讀取/掃描超過5000列的查詢。
 * 「常見查詢」清單
@@ -262,7 +262,7 @@ lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) :ancestors:/content/dam ord
 
 ## JCR查詢速查表 {#jcr-query-cheatsheet}
 
-為了支援建立有效的JCR查詢和索引定義，[JCR查詢速查表](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html#jcrquerycheatsheet)可供下載，並可在開發期間作為參考使用。
+為了支援建立有效的JCR查詢和索引定義，[JCR查詢速查表](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=zh-Hant#jcrquerycheatsheet)可供下載，並可在開發期間作為參考使用。
 
 它包含QueryBuilder、XPath和SQL-2的範例查詢，涵蓋了在查詢效能方面行為不同的多個案例。 此外，也提供如何建立或自訂Oak索引的建議。 本速查表內容適用於AEM as a Cloud Service和AEM 6.5。
 

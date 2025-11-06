@@ -491,4 +491,4 @@ ht-degree: 99%
 
 如需了解完整的最佳做法和驗證指引，請參閱[表單體驗建立工具快速入門指南](/help/forms/experience-builder/forms-experience-builder-getting-started.md)。
 
-*此提示程式庫會根據使用者意見回饋和新的表單體驗建立工具功能持續更新。如需了解最新功能和範例，請查看 [AEM Forms 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html)。*
+*此提示程式庫會根據使用者意見回饋和新的表單體驗建立工具功能持續更新。如需了解最新功能和範例，請查看 [AEM Forms 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=zh-Hant)。*
