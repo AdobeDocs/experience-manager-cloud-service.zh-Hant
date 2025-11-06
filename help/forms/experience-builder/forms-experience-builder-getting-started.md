@@ -74,7 +74,7 @@ Forms Experience Builder是AI支援的表單建立工具，可讓您使用對話
 
 將現有檔案轉換為互動式數位表格。
 
-使用此選項之前，請先上傳您的PDF檔案或表單影像。 PDF可以是AcroForm或XFA型PDF表單。 對於[其他型別的PDF forms](https://experienceleague.adobe.com/en/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents)，請使用Adobe Acrobat中的[準備表單](https://helpx.adobe.com/in/acrobat/using/creating-distributing-pdf-forms.html)選項，將它們轉換為AcroForm
+使用此選項之前，請先上傳您的PDF檔案或表單影像。 PDF可以是AcroForm或XFA型PDF表單。 對於[其他型別的PDF forms](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents)，請使用Adobe Acrobat中的[準備表單](https://helpx.adobe.com/in/acrobat/using/creating-distributing-pdf-forms.html)選項，將它們轉換為AcroForm
 
 **使用時機：**
 
