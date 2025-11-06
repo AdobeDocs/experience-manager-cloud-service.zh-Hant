@@ -16,7 +16,7 @@ ht-degree: 11%
 
 >[!NOTE]
 >
->>本文所述的功能只能透過私人測試版計畫取得。 若要註冊私人測試版，請參閱[專業測試環境](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment)。
+>&#x200B;>本文所述的功能只能透過私人測試版計畫取得。 若要註冊私人測試版，請參閱[專業測試環境](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment)。
 
 Specialized Testing Environment (DevXL)是您可以建立的新型Cloud Manager環境。 其設計可支援進階使用案例，例如使用者驗收測試(UAT)和效能驗證。 與傳統開發、快速開發或預備環境不同，DevXL環境會在生產部署管道之外操作。 因此，它們可為您提供更大的彈性，同時維持嚴格的隔離以防止干擾生產工作流程。
 
@@ -53,7 +53,7 @@ DevXL的建置可反映一般中繼環境的大小、擴充性和組態。 此�
 1. 執行下列任一項作業：
 
    * 在&#x200B;**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;主控台的&#x200B;**環境**&#x200B;卡片上，按一下&#x200B;**新增環境**。
-如果**新增環境**&#x200B;選項變暗（已停用），可能是因為缺少許可權或依賴授權的資源。
+如果&#x200B;**新增環境**&#x200B;選項變暗（已停用），可能是因為缺少許可權或依賴授權的資源。
 
    ![環境卡](assets/no-environments.png)
 

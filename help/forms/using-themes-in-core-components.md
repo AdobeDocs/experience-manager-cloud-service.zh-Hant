@@ -380,7 +380,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 1. 根據Cloud Service環境選取&#x200B;**[!UICONTROL 新增非生產管道]**&#x200B;或&#x200B;**[!UICONTROL 新增生產管道]**。 例如，此處已選取&#x200B;**[!UICONTROL 新增生產管道]**&#x200B;選項。
 1. 在&#x200B;**[!UICONTROL 新增生產管道]**&#x200B;對話方塊中，作為&#x200B;**[!UICONTROL 設定]**&#x200B;步驟的一部分，請指定管道的名稱。 例如，管道的名稱為`customcanvastheme`。
 1. 按一下「**[!UICONTROL 繼續]**」。
-1. 選取&#x200B;**[!UICONTROL 目標部署]** > **[!UICONTROL 前端計畫碼]**選項，在
+1. 選取&#x200B;**[!UICONTROL 目標部署]** > **[!UICONTROL 前端計畫碼]**&#x200B;選項，在
 **[!UICONTROL Source程式碼]**&#x200B;步驟。
 1. 選取包含您最新變更的&#x200B;**[!UICONTROL 存放庫]**&#x200B;和&#x200B;**[!UICONTROL Git分支]**&#x200B;值。 例如，此處選取的存放庫名稱為`custom-canvas-theme-repo`，而Git分支為`main`。
 1. 如果您的變更出現在根資料夾中，請選取&#x200B;**[!UICONTROL 程式碼位置]**&#x200B;作為`/`。

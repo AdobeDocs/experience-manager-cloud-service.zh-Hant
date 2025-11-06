@@ -78,7 +78,7 @@ ht-degree: 1%
    ![edit-channel2](/help/screens-cloud/assets/create-content/edit-channel2.png)
 
    >[!NOTE]
-   >按一下&#x200B;**預覽**以預覽您的頻道內容。
+   >按一下&#x200B;**預覽**&#x200B;以預覽您的頻道內容。
    >![edit-channelpreview](/help/screens-cloud/assets/create-content/edit-channelpreview.png)
 
 ## 建立精靈中的可用範本 {#available-templates}
@@ -175,7 +175,7 @@ ht-degree: 1%
 
 1. 按一下&#x200B;*移除*&#x200B;以驗證變更。
 
-**注意：**從頻道移除預設指派詳細資料，將會移除所有使用它的顯示器上的相符指派。
+**注意：**&#x200B;從頻道移除預設指派詳細資料，將會移除所有使用它的顯示器上的相符指派。
 因此，如果沒有其他內容可播放，這可能會導致空白熒幕。
 
 ## 後續步驟 {#whats-next}

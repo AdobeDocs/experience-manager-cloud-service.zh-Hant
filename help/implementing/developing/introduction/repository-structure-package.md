@@ -15,7 +15,7 @@ ht-degree: 2%
 
 Adobe Experience Manager as a Cloud Service的Maven專案需要存放庫結構子套件定義，其唯一用途是定義專案的程式碼子套件部署到的JCR存放庫根。 此方法可確保Experience Manager as a Cloud Service中套件的安裝會依JCR資源相依性自動排序。 缺少相依性可能會導致子結構安裝在其父結構之前，因此意外地被移除，中斷部署的情況。
 
-如果您的程式碼套件部署到程式碼套件未涵蓋的位置&#x200B;****，則必須在存放庫結構套件中列舉任何上階資源（靠近JCR根的JCR資源）。 建立這些相依性需要此程式。
+如果您的程式碼套件部署到程式碼套件未涵蓋的位置&#x200B;**&#x200B;**，則必須在存放庫結構套件中列舉任何上階資源（靠近JCR根的JCR資源）。 建立這些相依性需要此程式。
 
 ![存放庫結構封裝](./assets/repository-structure-packages.png)
 

@@ -26,7 +26,7 @@ ht-degree: 9%
 資產上傳透過實現更好的內嵌縮放、更快的上傳、使用微服務的更快處理和大量內嵌，以最佳化效率。 產品功能（網頁使用者介面、案頭使用者端）已更新。 此外，這些專案可能會影響部分現有的自訂。
 
 * [!DNL Experience Manager]使用直接二進位存取原則來上傳和下載資產，並使用資產微服務來處理資產。 檢視微服務[的](/help/assets/asset-microservices-overview.md)概觀。
-   * 透過直接二進位存取資產上傳[](/help/assets/asset-microservices-overview.md#asset-upload-with-direct-binary-access)。
+   * 透過直接二進位存取資產上傳[&#128279;](/help/assets/asset-microservices-overview.md#asset-upload-with-direct-binary-access)。
    * 如需技術詳細資訊，請參閱[直接二進位上傳通訊協定與API](/help/assets/developer-reference-material-apis.md#upload-binary)。
    * 若要比較基本CRUD作業的可用API方法，請參閱[API和資產作業](/help/assets/developer-reference-material-apis.md#use-cases-and-apis)。
 * 舊版&#x200B;**[!UICONTROL 中的預設工作流程]** DAM Asset Update[!DNL Experience Manager]已無法使用。 相反，資產微服務提供可擴充、隨時可用的服務，涵蓋大部分的預設資產處理（轉譯、中繼資料擷取和索引文字擷取）。

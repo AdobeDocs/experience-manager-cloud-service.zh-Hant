@@ -579,7 +579,7 @@ Send a document directly to a printer. It supports the following printing access
 
 1. 拖曳Sidekick中「PDF」標籤下的「產生非互動式Forms Workflow輸出」工作流程。
 1. 連按兩下新增的工作流程步驟以編輯元件。
-1. 在[編輯元件]對話方塊中，設定輸入檔案、輸出檔案和其他引數，然後按一下[確定]。****
+1. 在[編輯元件]對話方塊中，設定輸入檔案、輸出檔案和其他引數，然後按一下[確定]。**&#x200B;**
 
 ### 輸入檔案 {#input-documents-3}
 

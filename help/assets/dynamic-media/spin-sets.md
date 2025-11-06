@@ -110,7 +110,7 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->您也可以透過批次集預設集自動 [建立回轉集](/help/assets/dynamic-media/config-dm.md)。**** 重要：批次集由IPS(Image Production System)建立，作為資產提取的一部分。
+>您也可以透過批次集預設集自動 [建立回轉集](/help/assets/dynamic-media/config-dm.md)。**&#x200B;** 重要：批次集由IPS(Image Production System)建立，作為資產提取的一部分。
 >
 >請參閱[設定Dynamic Media](/help/assets/dynamic-media/config-dm.md)中的「建立批次集預設集以自動生成影像集和迴轉集」。
 
@@ -148,7 +148,7 @@ ht-degree: 9%
 
    選取您要納入迴轉集的資產。 選取的資產上面有核取標籤圖示。完成後，在頁面的右上角附近，選取&#x200B;**[!UICONTROL 選取]**。
 
-   使用「資產選擇器」，您可以輸入關鍵字並點選「回報」來搜尋 **[!UICONTROL 資產]**。您也可以套用篩選條件來調整搜尋結果。您可以依路徑、系列、檔案類型和標籤來篩選。選取篩選，然後在工具列上選取&#x200B;**[!UICONTROL 篩選]**&#x200B;圖示。 點選「檢視」圖示並選取「欄檢視」、「卡片檢視」或「清 **[!UICONTROL 單檢視」]**, **[!UICONTROL 以變更]**&#x200B;檢視 ****。
+   使用「資產選擇器」，您可以輸入關鍵字並點選「回報」來搜尋 **[!UICONTROL 資產]**。您也可以套用篩選條件來調整搜尋結果。您可以依路徑、系列、檔案類型和標籤來篩選。選取篩選，然後在工具列上選取&#x200B;**[!UICONTROL 篩選]**&#x200B;圖示。 點選「檢視」圖示並選取「欄檢視」、「卡片檢視」或「清 **[!UICONTROL 單檢視」]**, **[!UICONTROL 以變更]**&#x200B;檢視 **&#x200B;**。
 
    請參閱[使用選取器](/help/assets/dynamic-media/working-with-selectors.md)。
 

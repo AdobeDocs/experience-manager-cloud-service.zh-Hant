@@ -36,7 +36,7 @@ ht-degree: 15%
 
 請依照下列步驟，使用授權範圍將SharePoint Sites設定為具有有限存取權：
 
-1. [建立應用程式，使用 ](#create-an-application-with-the-limited-permission-in-the-azure-portal)
+1. [建立應用程式，使用 &#x200B;](#create-an-application-with-the-limited-permission-in-the-azure-portal)
 1. [在AEM執行個體設定授權範圍](#set-the-authorization-scope-at-aem-instance)
 
 ### 在Azure入口網站中建立具有有限許可權的應用程式

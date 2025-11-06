@@ -536,7 +536,7 @@ Adobe Experience Manager as a Cloud Service提供強大的[搜尋](/help/sites-c
   `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
 
 * **選項節點路徑**
-實際上與**選項路徑**&#x200B;相同，只有這個在通用述詞欄位中，其他則專用於資產。
+實際上與&#x200B;**選項路徑**&#x200B;相同，只有這個在通用述詞欄位中，其他則專用於資產。
 
 * **單選**
 如果勾選，選項會呈現為僅允許單一選取的核取方塊。 如果錯誤地選取了，則可取消選取核取方塊。

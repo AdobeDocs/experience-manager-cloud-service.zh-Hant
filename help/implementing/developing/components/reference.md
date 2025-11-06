@@ -65,7 +65,7 @@ ht-degree: 1%
 
 此（選用）邏輯可透過不同方式實作，並使用特定命令從HTL叫用：
 
-* 使用Java - [ HTL Java Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html)可讓HTL檔案存取自訂Java類別中的Helper方法。 這可讓您使用Java程式碼來實作選取和設定元件內容的邏輯。
+* 使用Java - [&#x200B; HTL Java Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html)可讓HTL檔案存取自訂Java類別中的Helper方法。 這可讓您使用Java程式碼來實作選取和設定元件內容的邏輯。
 * 使用JavaScript - [HTL JavaScript Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html)可讓HTL檔案存取以JavaScript撰寫的Helper程式碼。 這可讓您使用JavaScript程式碼來實作選取和設定元件內容的邏輯。
 * 使用使用者端資料庫 — 現代網站非常依賴由複雜的JavaScript和CSS程式碼驅動的使用者端處理。 如需詳細資訊，請參閱檔案[在AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md)上使用使用者端資料庫。
 

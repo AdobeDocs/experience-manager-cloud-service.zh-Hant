@@ -47,7 +47,7 @@ ht-degree: 75%
 
 如果您使用Edge Delivery Services Forms，且主要使用通用編輯器。 [為Edge Delivery Services Forms準備專案](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)。 此為一次性設定，可啟用Forms Experience Builder。
 
-針對核心元件型表單&#x200B;****
+針對核心元件型表單&#x200B;**&#x200B;**
 
 如果您在AEM製作環境中使用以Forms核心元件為基礎的調適型，請確定已針對您的環境啟用[調適型Forms核心元件](/help/forms/enable-adaptive-forms-core-components.md)。
 

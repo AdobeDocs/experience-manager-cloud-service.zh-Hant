@@ -31,7 +31,7 @@ ht-degree: 14%
 >
 >* 已建立包含一個Edge Delivery Services網站和一個對應網域的計畫。 否則，稱為「**新增Edge Delivery管道**」的選項在使用者介面中會顯示為停用，工具提示會說明缺少的需求。 請參閱[在Cloud Manager中建立Edge Delivery網站](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
 >* Git存放庫至少有一個分支。 請參閱[在Cloud Manager中管理存放庫](/help/implementing/cloud-manager/managing-code/managing-repositories.md)。
->* 生產和中繼環境隨即建立。 請參閱[ CI/CD管道簡介](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)。
+>* 生產和中繼環境隨即建立。 請參閱[&#x200B; CI/CD管道簡介](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)。
 
 <!-- CMGR‑69680 -->
 

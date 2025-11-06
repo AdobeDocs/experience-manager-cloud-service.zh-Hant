@@ -54,7 +54,7 @@ Clientlibs區段會列出ContextHub已載入的所有t[使用者端資料庫資�
 URL區段包含ContextHub功能的連結：
 
 * **組態編輯器：**&#x200B;開啟[ContextHub組態頁面](configuring-contexthub.md)，您可以在其中設定存放區、UI模式和UI模組。
-* ContextHub模組的組態： ****&#x200B;開啟`/etc/cloudsettings/default/contexthub.config.kernel.js`檔案，其中包含ContextHub存放區組態的JavaScript物件表示。
+* ContextHub模組的組態： **&#x200B;**&#x200B;開啟`/etc/cloudsettings/default/contexthub.config.kernel.js`檔案，其中包含ContextHub存放區組態的JavaScript物件表示。
 * **ContextHub UI的設定：**&#x200B;開啟`/etc/cloudsettings/default/contexthub.config.ui.js`檔案，其中包含ContextHub UI模式設定的JavaScript物件表示。
 * **kernel.js：**&#x200B;開啟`/etc/cloudsettings/default/contexthub.kernel.js`檔案，其中包含實作ContextHub架構、區段引擎和存放區型別的使用者端程式庫原始碼。
 * **ui.js：**&#x200B;開啟`/etc/cloudsettings/default/contexthub.ui.js`檔案，其中包含實作ContextHub UI和UI模組型別的使用者端程式庫原始碼。

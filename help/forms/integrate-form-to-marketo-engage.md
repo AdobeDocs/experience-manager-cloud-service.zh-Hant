@@ -76,7 +76,7 @@ ht-degree: 5%
 
    ![Marketo Engage](/help/forms/assets/marketo-engage.png)
 
-1. 開啟資料夾以裝載組態，然後按一下[建立]。**** **建立Marketo Engage組態**&#x200B;視窗會出現。
+1. 開啟資料夾以裝載組態，然後按一下[建立]。**&#x200B;** **建立Marketo Engage組態**&#x200B;視窗會出現。
 
    >[!NOTE]
    >

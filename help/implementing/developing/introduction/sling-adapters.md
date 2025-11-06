@@ -359,4 +359,4 @@ null傳回有多種原因，包括：
 
 #### 其他 {#other}
 
-此外，Sling / JCR / OCM也為自訂OCM （[`AdapterFactory`物件內容對應](https://sling.apache.org/documentation/the-sling-engine/adapters.html)）物件提供[](https://jackrabbit.apache.org/jcr/object-content-mapping.html)。
+此外，Sling / JCR / OCM也為自訂OCM （[`AdapterFactory`物件內容對應](https://sling.apache.org/documentation/the-sling-engine/adapters.html)）物件提供[&#128279;](https://jackrabbit.apache.org/jcr/object-content-mapping.html)。

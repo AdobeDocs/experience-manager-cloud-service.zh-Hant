@@ -304,7 +304,7 @@ Cloud Manager 為每個 AEM as a Cloud Service 環境提供預覽服務 (作為�
 
 已在您的瀏覽器中開啟新索引標籤，其登入頁面為&#x200B;**Developer Console**。
 
-![登入 Developer Console ](assets/environ-devconsole.png)
+![登入 Developer Console &#x200B;](assets/environ-devconsole.png)
 
 只有具有&#x200B;**開發人員**&#x200B;角色的使用者才能存取 **Developer Console**。但是，對於沙箱計畫，任何有權存取沙箱計畫的使用者都可以存取&#x200B;**Developer Console**。
 
@@ -344,4 +344,4 @@ Cloud Manager支援IP允許清單，用於Sites計畫的作者、發佈和預覽
 
 >[!TIP]
 >
->如需詳細資訊，請參閱[ IP允許清單簡介](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)。
+>如需詳細資訊，請參閱[&#x200B; IP允許清單簡介](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)。

@@ -189,7 +189,7 @@ Experience Manager可讓您將遠端DAM部署作為來源連線至多個Experien
 
 1. 從[!DNL Assets]工作區存取&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL 檔案]**，導覽至遠端部署上的[!DNL Experience Manager]介面。 或者，您也可以在瀏覽器中存取 `https://[assets_servername_ams]:[port]/assets.html/content/dam`。上傳您選擇的資產。
 
-1. 在[!DNL Sites]部署上，按一下右上角的設定檔啟動器，然後按一下&#x200B;**[!UICONTROL 模擬為]**。 指定使用者名稱，選取提供的選項，然後按一下[確定]。****
+1. 在[!DNL Sites]部署上，按一下右上角的設定檔啟動器，然後按一下&#x200B;**[!UICONTROL 模擬為]**。 指定使用者名稱，選取提供的選項，然後按一下[確定]。**&#x200B;**
 
 1. 開啟[!DNL Sites]頁面並編輯頁面。
 
@@ -244,7 +244,7 @@ Experience Manager可讓您將遠端DAM部署作為來源連線至多個Experien
 
 ### 管理遠端DAM中資產的更新 {#handling-updates-to-remote-assets}
 
-在設定遠端DAM與Sites部署之間的連線[之後，遠端DAM上的資產便可在Sites部署中使用。 ](#configure-a-connection-between-sites-and-assets-deployments)然後，您可以在遠端DAM資產或資料夾上執行更新、刪除、重新命名和移動操作。 這些更新會在Sites部署中自動提供，但會有一些延遲。 此外，如果本機Experience Manager Sites頁面上使用了遠端DAM上的資產，則Sites頁面上會顯示遠端DAM上資產的更新。
+在設定遠端DAM與Sites部署之間的連線[之後，遠端DAM上的資產便可在Sites部署中使用。 &#x200B;](#configure-a-connection-between-sites-and-assets-deployments)然後，您可以在遠端DAM資產或資料夾上執行更新、刪除、重新命名和移動操作。 這些更新會在Sites部署中自動提供，但會有一些延遲。 此外，如果本機Experience Manager Sites頁面上使用了遠端DAM上的資產，則Sites頁面上會顯示遠端DAM上資產的更新。
 
 將資產從一個位置移動至另一個位置時，請確定您[調整引用](manage-digital-assets.md)，讓資產顯示在Sites頁面上。 如果您將資產移至無法從本機Sites部署存取的位置，資產就無法顯示在Sites部署上。
 

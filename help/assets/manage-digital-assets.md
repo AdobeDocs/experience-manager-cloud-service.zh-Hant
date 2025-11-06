@@ -164,7 +164,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
 1. 在「移動Assets」精靈中，執行下列任一項作業：
 
-   * 指定資產移動後的名稱。 然後選取「下一步」****&#x200B;以繼續。
+   * 指定資產移動後的名稱。 然後選取「下一步」**&#x200B;**&#x200B;以繼續。
 
    * 選取&#x200B;**[!UICONTROL 取消]**&#x200B;以停止處理程式。
 
@@ -183,7 +183,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
    在&#x200B;**[!UICONTROL 調整參考]**&#x200B;畫面中執行下列任一項作業：
 
-   * 根據新的詳細資料指定要調整的參考，然後選取[移動]**[!UICONTROL 以繼續。]**
+   * 根據新的詳細資料指定要調整的參考，然後選取[移動]&#x200B;**[!UICONTROL 以繼續。]**
 
    * 從&#x200B;**[!UICONTROL 調整]**&#x200B;欄，選取/取消選取資產的參考。
    * 選取&#x200B;**[!UICONTROL 上一步]**&#x200B;以返回&#x200B;**[!UICONTROL 選取目的地]**&#x200B;畫面。
@@ -228,7 +228,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
    >[!NOTE]
    >
-   >如果您從「轉譯」面板選取轉譯 **** ，工具列會變更上下文，並僅顯示與轉譯相關的動作。不會顯示「上傳轉譯」圖示等選項。若要在工具列中檢視這些選項，請導覽至資產的詳細資訊頁面。
+   >如果您從「轉譯」面板選取轉譯 **&#x200B;**&#x200B;，工具列會變更上下文，並僅顯示與轉譯相關的動作。不會顯示「上傳轉譯」圖示等選項。若要在工具列中檢視這些選項，請導覽至資產的詳細資訊頁面。
 
    您可以設定要在影像或視訊資產的詳細資訊頁面中顯示的轉譯尺寸。 Assets會根據您指定的維度顯示具有精確或最接近維度的轉譯。
 
@@ -533,7 +533,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
    您可以根據要在打印的PDF中顯示注釋/狀態的位置選擇其他設定。如果您希望註解/狀態顯示在與印刷資產不同的頁面中，請選擇「下 **[!UICONTROL 一頁」]**。
 
-1. 按一下&#x200B;**[!UICONTROL 列印]**。 根據您在步驟2中選擇的選項，產生的PDF會在指定位置顯示註解/狀態。例如，如果您選擇使用左上角設定打印注釋和審閱狀態 **** ，則生成的輸出類似於此處所示的PDF檔案。
+1. 按一下&#x200B;**[!UICONTROL 列印]**。 根據您在步驟2中選擇的選項，產生的PDF會在指定位置顯示註解/狀態。例如，如果您選擇使用左上角設定打印注釋和審閱狀態 **&#x200B;**&#x200B;，則生成的輸出類似於此處所示的PDF檔案。
 
    <!--![chlimage_1-246](assets/chlimage_1-246.png)-->
 

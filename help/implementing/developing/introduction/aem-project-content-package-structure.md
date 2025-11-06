@@ -245,9 +245,9 @@ Repo Init OSGi設定最好以[`.config` OSGi設定格式](https://sling.apache.o
 此資料夾名稱對應到它包含的[封裝型別](#package-types)。
 + 第4層資料夾包含子封裝，且必須是下列其中一項：
    + `install`以便安裝在&#x200B;**both** AEM作者和AEM發佈上
-   + `install.author`，因此您只在AEM作者上安裝&#x200B;**2}**
-   + `install.publish`，因此您只在AEM發佈上安裝&#x200B;**2}
-只有**&#x200B;和`install.author`支援的目標。 `install.publish`不支援其 **他執行模** 式。
+   + `install.author`，因此您只在AEM作者上安裝&#x200B;**2&rbrace;**
+   + `install.publish`，因此您只在AEM發佈上安裝&#x200B;**2&rbrace;
+只有&#x200B;**&#x200B;和`install.author`支援的目標。 `install.publish`不支援其 &#x200B;** 他執行模** 式。
 
 例如，包含AEM作者和發佈特定套件的部署看起來可能像這樣：
 
@@ -392,7 +392,7 @@ Repo Init OSGi設定最好以[`.config` OSGi設定格式](https://sling.apache.o
 
 ### 將套件標籤為Adobe Cloud Manager部署 {#cloud-manager-target}
 
-在每個產生套件的專 **案中** ，除容器(`all`)專案外，將外掛程式聲明的 `<cloudManagerTarget>none</cloudManagerTarget>` 組態新增至外掛程式宣告的組態，以確 `<properties>``filevault-package-maven-plugin`**** 保Adobe Cloud Manager不會部署它們。容器(`all`)封裝應該是透過Cloud Manager部署的單一封裝，而這會嵌入所有必要的程式碼和內容封裝。
+在每個產生套件的專 **案中** ，除容器(`all`)專案外，將外掛程式聲明的 `<cloudManagerTarget>none</cloudManagerTarget>` 組態新增至外掛程式宣告的組態，以確 `<properties>` `filevault-package-maven-plugin`**&#x200B;** 保Adobe Cloud Manager不會部署它們。容器(`all`)封裝應該是透過Cloud Manager部署的單一封裝，而這會嵌入所有必要的程式碼和內容封裝。
 
 ```xml
 ...

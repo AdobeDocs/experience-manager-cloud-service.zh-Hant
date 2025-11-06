@@ -111,7 +111,7 @@ Also see, [Creating translation projects for content fragments](creating-transla
 1. 從&#x200B;**[!UICONTROL 專案]**&#x200B;清單中，選取&#x200B;**[!UICONTROL 建立新的翻譯專案]**。
 1. 在「專 **[!UICONTROL 案標題]** 」欄位中，輸入專案標題。
 1. 在&#x200B;**[!UICONTROL 建立]**&#x200B;上選取。 來源資料夾中的Assets會複製到您在步驟4中所選地區設定的目標資料夾。
-1. 若要導覽至資料夾，請選取語言副本，然後按一下[在Assets中顯示] ****。
+1. 若要導覽至資料夾，請選取語言副本，然後按一下[在Assets中顯示] **&#x200B;**。
 1. 導覽至「專案」主控台。 翻譯資料夾會複製到專案主控台。
 1. 開啟資料夾以檢視翻譯專案。
 1. 選取專案以開啟詳細資訊頁面。

@@ -67,7 +67,7 @@ ht-degree: 6%
 
    ![正在新增SSL憑證](/help/implementing/cloud-manager/assets/ssl/ssl-cert-add.png)
 
-1. 在[SSL憑證]頁面的右上角附近，按一下[新增SSL憑證]。****
+1. 在[SSL憑證]頁面的右上角附近，按一下[新增SSL憑證]。**&#x200B;**
 
 1. 在&#x200B;**新增SSL憑證**&#x200B;對話方塊中，根據[您的特定使用案例](#which-ssl-to-add)，選取&#x200B;**Adobe Managed (DV)**。
 
@@ -109,11 +109,11 @@ ht-degree: 6%
 
    ![正在新增SSL憑證](/help/implementing/cloud-manager/assets/ssl/ssl-cert-add.png)
 
-1. 在[SSL憑證]頁面的右上角附近，按一下[新增SSL憑證]。****
+1. 在[SSL憑證]頁面的右上角附近，按一下[新增SSL憑證]。**&#x200B;**
 
 1. 在&#x200B;**新增SSL憑證**&#x200B;對話方塊中，根據[您的特定使用案例](#which-ssl-to-add)，選取&#x200B;**客戶管理(OV/EV)**。
 
-1. 在&#x200B;**憑證名稱**欄位中，輸入憑證的名稱。
+1. 在&#x200B;**憑證名稱**&#x200B;欄位中，輸入憑證的名稱。
 此欄位僅供參考，可以是任何有助於您輕鬆參考SSL憑證的名稱。
 
 1. 在&#x200B;**憑證**、**私密金鑰**&#x200B;和&#x200B;**憑證鏈**&#x200B;欄位中，複製OV或EV SSL憑證的必要值，並將其貼到對話方塊中各自的欄位中。

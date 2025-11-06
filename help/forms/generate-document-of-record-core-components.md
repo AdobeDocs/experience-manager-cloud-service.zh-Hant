@@ -135,7 +135,7 @@ The form developer binds Adaptive Forms fields with corresponding Document of Re
 
 現在，當提交最適化表單時，會產生更新的記錄檔案。
 
-![已更新 — ](assets/we-retail-new-invoice-sent-to-customer.png)
+![已更新 — &#x200B;](assets/we-retail-new-invoice-sent-to-customer.png)
 
 ## 使用記錄檔案時的主要考量事項 {#key-considerations-when-working-with-document-of-record}
 
@@ -301,7 +301,7 @@ When you select a form model, configure Document of Record using options availab
 
 1. 選取&#x200B;**[!UICONTROL Forms — 記錄檔案]**&#x200B;類別。
 1. 選取&#x200B;**[!UICONTROL DoR基底範本]**。
-1. 按一下[下一步]****&#x200B;並提供必要的資訊。
+1. 按一下[下一步]&#x200B;**&#x200B;**&#x200B;並提供必要的資訊。
 
 1. （選擇性）修改您要在記錄檔案中欄位上套用的欄位樣式和外觀。
 1. 儲存表單。

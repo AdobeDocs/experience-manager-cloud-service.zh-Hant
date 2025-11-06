@@ -162,7 +162,7 @@ ht-degree: 3%
 ## 使用草稿和提交元件在「網站」頁面上檢視草稿/提交的表單
 
 若要檢視已儲存的草稿或已提交的表單，請使用&#x200B;**草稿與提交** Forms入口網站元件。
-在「草稿與提交」元件**[!UICONTROL 的]**&#x200B;設定對話方塊中，選取&#x200B;**選取型別**&#x200B;作為[草稿Forms](#configure-properties-of-the-drafts--submissions-component)時，儲存為草稿的表單會顯示在「網站」頁面上。 您可以按一下省略符號(...)來開啟草稿以完成表單。
+在「草稿與提交」元件&#x200B;**[!UICONTROL 的]**&#x200B;設定對話方塊中，選取&#x200B;**選取型別**&#x200B;作為[草稿Forms](#configure-properties-of-the-drafts--submissions-component)時，儲存為草稿的表單會顯示在「網站」頁面上。 您可以按一下省略符號(...)來開啟草稿以完成表單。
 
 ![草稿圖示](assets/drafts-component.png)
 
