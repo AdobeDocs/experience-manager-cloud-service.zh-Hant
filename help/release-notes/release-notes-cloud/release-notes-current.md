@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 247a501660475d2f3ae9cff735a1845094d02c82
+source-git-commit: cb4764709a86ae2acb33a10dc9a53126804ee7ec
 workflow-type: tm+mt
-source-wordcount: '1628'
-ht-degree: 67%
+source-wordcount: '1666'
+ht-degree: 66%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 67%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440931?captions=chi_hant&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -48,9 +48,9 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 ### Experience Manager Sites 的新功能 {#new-sites}
 
-* AEM內容片段[的](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)內容模型編輯器已更新，以與AEM中的其他React光譜型介面一致。 其使用者介面實施方式和擴充性模型，現在與內容片段編輯器及通用編輯器一致。現在，從新的內容模型管理員使用者介面開啟時，預設會使用新的模型編輯器。在觸控式使用者介面中開啟內容模型，會開啟觸控式使用者介面編輯器，並建議您試用新的編輯器。
+* [啟動內容片段](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)：內容作者現在可以使用啟動內容片段來建立和排程未來結構化內容的變數。 新的內容片段主控台允許建立、編輯、管理和排程內容片段啟動，作為可與來源分支同步的未來內容的分支。 新的「差異檢視」會在認可Launch以供未來發佈之前，提供所有內容變更的清晰概觀。
 
-* [內容片段啟動項](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)：內容片段主控台的「啟動項」標籤可讓您建立啟動項、列出所有現有啟動項、檢視關鍵屬性，以及對其採取動作。
+* AEM內容片段[的](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)內容模型編輯器已更新，以與AEM中的其他React光譜型介面一致。 其使用者介面實施方式和擴充性模型，現在與內容片段編輯器及通用編輯器一致。現在，從新的內容模型管理員使用者介面開啟時，預設會使用新的模型編輯器。在觸控式使用者介面中開啟內容模型，會開啟觸控式使用者介面編輯器，並建議您試用新的編輯器。
 
 <!--
 
@@ -66,7 +66,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
