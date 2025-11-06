@@ -6,9 +6,9 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 1d378e6c8ac714779e77314d3457a14d40cd222f
 workflow-type: tm+mt
-source-wordcount: '1145'
+source-wordcount: '1134'
 ht-degree: 100%
 
 ---
@@ -170,9 +170,11 @@ AI 助理的運作方式就像與一位知識淵博的同事進行對話。您�
 "Update the layout to match the attached wireframe"
 ```
 
-### 提交和整合
+<!-- 
 
-**基本提交：**
+### Submission and Integration
+
+**Basic submission:**
 
 ```
 "Send form data to our email"
@@ -180,13 +182,15 @@ AI 助理的運作方式就像與一位知識淵博的同事進行對話。您�
 "Redirect to a thank you page"
 ```
 
-**進階整合：**
+**Advanced integration:**
 
 ```
 "Send form submissions to hr@company.com and create a case in our CRM system"
 "Submit data to our REST API endpoint and trigger the new customer workflow"
 "Email responses to the sales team and add the lead to our marketing automation platform"
 ```
+
+-->
 
 ## 使用附件
 
@@ -281,8 +285,11 @@ AI 助理還可以為您解說 AEM Forms 的功能：
 | `/update-field` | 修改欄位屬性 | `/update-field @email to be required` |
 | `/create-rule` | 新增動態行為 | `/create-rule show @spouse if married` |
 | `/create-panel` | 新增欄位容器 | `/create-panel Personal Information` |
-| `/configure-submit` | 設定表單提交 | `/configure-submit to email support` |
 | `/help` | 取得協助 | `/help multi-step forms` |
+
+<!-- 
+| `/configure-submit` | Set up form submission | `/configure-submit to email support` |
+-->
 
 ### 欄位參考語法
 
