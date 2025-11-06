@@ -3,7 +3,7 @@ title: 屬性型存取控制
 description: 瞭解如何啟用屬性型存取控制來定義中繼資料型規則，以定義Content Hub中可用資產的存取層級
 role: Admin
 exl-id: 05f54b05-40b8-4a6c-af8f-5c3f7a2089d4
-source-git-commit: 82630f69399c077dc5c8ca40e7552cd479ea5bc5
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '944'
 ht-degree: 5%
@@ -51,7 +51,7 @@ ht-degree: 5%
 
 為了支援大規模行銷推出，地區和品牌的不同團隊成員需要存取數位資產。 每個角色都有根據地區和品牌的特定範圍。 ABAC會透過資產中繼資料自動強制執行這些規則。 下表說明此使用案例的不同角色型別以及套用的規則：
 
-| 角色 | 角色 | 角色說明 | 群組識別碼 | ABAC規則 |
+| 人物誌 | 角色 | 角色說明 | 群組識別碼 | ABAC規則 |
 |---------------------|----------------|-----------------|------------|------------|
 | John | EMEA行銷負責人 | 監督EMEA地區所有品牌的行銷執行。 需要存取所有針對EMEA市場之品牌的已核准資產。 | 群組 — 歐洲、中東及非洲地區 — 行銷 | 地區= &quot;EMEA&quot; |
 | Mike | APAC行銷負責人 | 監督APAC中所有品牌的行銷執行。 需要存取專為APAC市場設計的所有品牌的已核准資產。 | group-apac-marketing | 地區= &quot;APAC&quot; |

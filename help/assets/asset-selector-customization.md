@@ -3,7 +3,7 @@ title: 自訂資產選擇器應用程式
 description: 使用函式來自訂應用程式內的資產選擇器。
 role: Admin, User
 exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1246'
 ht-degree: 23%
@@ -357,7 +357,7 @@ const showToast = {
 
 資產選擇器可讓您新增標籤選取器篩選器。 它支援標籤群組，此群組會將所有相關標籤結合至特定標籤群組。 此外，它可讓您選取與您正在尋找的資產對應的其他標籤。 此外，您也可以在大部分由您使用的內容叫用篩選下設定預設標籤群組，以便您隨時可以存取這些群組。
 
->
+>[!NOTE]
 >
 > * 您必須新增內容引動程式碼片段，才能在搜尋中啟用標籤篩選器。
 > * 必須使用對應至標籤群組型別`(property=xcm:keywords.id=)`的名稱屬性。

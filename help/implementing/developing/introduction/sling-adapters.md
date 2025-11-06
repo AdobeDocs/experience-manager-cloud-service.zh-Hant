@@ -3,8 +3,8 @@ title: 使用 Sling 介面卡
 description: Sling提供轉接器模式，可方便翻譯實作轉接器介面的物件
 exl-id: 8ffe3bbd-01fe-44c2-bf60-7a4d25a6ba2b
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 3%
@@ -67,13 +67,13 @@ null傳回有多種原因，包括：
 
   物件仍必須實作`Adaptable`介面且必須延伸[`SlingAdaptable`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/adapter/SlingAdaptable.html) （這會將`adaptTo`呼叫傳遞給中央介面卡管理員）。
 
-  此方法允許連結到現有類別（例如`Resource`）的`adaptTo`機制。
+  此方法允許連結到現有類別（例如`adaptTo`）的`Resource`機制。
 
 * 兩者的組合。
 
-對於第一種情況，Java™檔案可以說明哪些`adaptTo-targets`是可能的。 不過，對於特定子類別（例如JCR型資源），此陳述式通常無法執行。 在後一種情況下，`AdapterFactory`的實施通常是套件組合私用類別的一部分，因此不會在使用者端API中公開，也不會列在Java™檔案中。 理論上來說，可以從[OSGi](/help/implementing/deploying/configuring-osgi.md)服務執行階段存取所有`AdapterFactory`實作，並檢視其「可適配」（來源和目標）組態，但無法相互對應。 最後，這取決於內部邏輯，而這必須記錄在案。 因此，請參閱此參考檔案。
+對於第一種情況，Java™檔案可以說明哪些`adaptTo-targets`是可能的。 不過，對於特定子類別（例如JCR型資源），此陳述式通常無法執行。 在後一種情況下，`AdapterFactory`的實施通常是套件組合私用類別的一部分，因此不會在使用者端API中公開，也不會列在Java™檔案中。 理論上來說，可以從`AdapterFactory`OSGi[服務執行階段存取所有](/help/implementing/deploying/configuring-osgi.md)實作，並檢視其「可適配」（來源和目標）組態，但無法相互對應。 最後，這取決於內部邏輯，而這必須記錄在案。 因此，請參閱此參考檔案。
 
-## 參考 {#reference}
+## 參照 {#reference}
 
 ### Sling {#sling}
 
@@ -359,4 +359,4 @@ null傳回有多種原因，包括：
 
 #### 其他 {#other}
 
-此外，Sling / JCR / OCM也為自訂OCM （[物件內容對應](https://jackrabbit.apache.org/jcr/object-content-mapping.html)）物件提供[`AdapterFactory`](https://sling.apache.org/documentation/the-sling-engine/adapters.html)。
+此外，Sling / JCR / OCM也為自訂OCM （[`AdapterFactory`物件內容對應](https://sling.apache.org/documentation/the-sling-engine/adapters.html)）物件提供[](https://jackrabbit.apache.org/jcr/object-content-mapping.html)。

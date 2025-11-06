@@ -4,8 +4,8 @@ description: 在 AEM Headless 開發人員歷程的此延續部分 (選擇性)�
 exl-id: d74848f2-683e-49e1-9374-32596ca5d7d7
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: a69658d5657f4e1a4feed20cf7eda5e9899aaa3d
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1250'
 ht-degree: 100%
@@ -96,7 +96,7 @@ AEM 中的 SPA 支援帶入一個薄 JavaScript 層，在頁面編輯器中載�
 
 ## 容納現有的 SPA {#existing-spas}
 
-如果您已有 SPA，AEM 支援將其內嵌到 AEM，以便您的內容作者可在 AEM 編輯器看到它。對於透過內容片段建立的內容，此功能可大力協助在終端應用程式 (其會取用該內容) 的情境下檢視該內容。
+如果您已有 SPA，AEM 支援將其嵌入到 AEM，以便您的內容作者可在 AEM 編輯器看到它。對於透過內容片段建立的內容，此功能可大力協助在終端應用程式 (其會取用該內容) 的情境下檢視該內容。
 
 此外，只需少量變更，您就可以在 AEM 編輯器中對外部 SPA 進行特定編輯。
 
@@ -126,7 +126,7 @@ RemotePage 元件允許在 AEM 中呈現外部 SPA。
 * [AEM Headful 和 Headless 技術](/help/implementing/developing/headful-headless.md) - 描述 AEM 提供的不同傳遞模型
 * [SPA 簡介和逐步解說](/help/implementing/developing/hybrid/introduction.md)- 對 AEM 中的 SPA 有很好的介紹。
 * [開發 SPA 以在 AEM 中使用](/help/implementing/developing/hybrid/developing.md) - 說明如何開發 SPA 以在 AEM 中使用
-* [SPA 編輯器概述](/help/implementing/developing/hybrid/editor-overview.md) - 詳細說明 SPA 編輯器的運作原理
+* [SPA 編輯器概觀](/help/implementing/developing/hybrid/editor-overview.md) - 詳細說明 SPA 編輯器的運作原理
 * [SPA 參考文件](/help/implementing/developing/hybrid/reference-materials.md) - 開放原始碼 AEM SPA GitHub 專案的 JavaScript API 參考和連結
 * [內容片段](/help/sites-cloud/administering/content-fragments/managing.md#creating-content-fragments) - 如何建立內容片段
-* [AEM 專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant) - 一種 Maven 範本，其依照最佳做法建立簡化的 Adobe Experience Manager (AEM) 專案，作為您網站的起點。
+* [AEM 專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) - 一種 Maven 範本，其依照最佳做法建立簡化的 Adobe Experience Manager (AEM) 專案，作為您網站的起點。

@@ -3,9 +3,9 @@ title: 針對 AEM 開發 SPA
 description: 本文介紹當聘請前端開發人員為AEM開發SPA時應考慮的重要問題。 此外也提供有關SPA的AEM架構概觀，以供在AEM上部署已開發的SPA時牢記在心。
 exl-id: f6c6f31a-69ad-48f6-b995-e6d0930074df
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 index: false
-source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2028'
 ht-degree: 8%
@@ -60,11 +60,11 @@ SPA應該僅依賴內容的動態轉譯。 此預期是AEM擷取並轉譯內容�
 
 ## AEM 專案原型 {#aem-project-archetype}
 
-任何 AEM 專案都應使用 [AEM 專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)，它支援使用 React 或 Angular 的 SPA 專案並使用 SPA SDK。
+任何 AEM 專案都應使用 [AEM 專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)，它支援使用 React 或 Angular 的 SPA 專案並使用 SPA SDK。
 
 ## SPA設計模型 {#spa-design-models}
 
-如果遵循AEM[&#128279;](#spa-development-principles-for-aem)中開發SPA的原則，則您的SPA可使用所有支援的AEM內容製作功能。
+如果遵循AEM[中開發SPA的](#spa-development-principles-for-aem)原則，則您的SPA可使用所有支援的AEM內容製作功能。
 
 但是，在某些情況下，此功能並非完全必要。 下表概述各種設計模型、其優點和缺點。
 

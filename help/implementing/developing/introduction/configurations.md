@@ -3,8 +3,8 @@ title: 設定和設定瀏覽器
 description: 瞭解Adobe Experience Manager (AEM)設定，以及這些設定如何在AEM中管理工作區設定。
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1482'
 ht-degree: 5%
@@ -103,13 +103,13 @@ AEM管理員和作者可以將設定視為工作區。 藉由實作這些功能�
    >
    >建立設定後，就無法取消選取功能。
 
-1. 使用&#x200B;**有效許可權**&#x200B;按鈕來檢視角色矩陣，以及這些角色目前授與組態哪些許可權。
+1. 使用&#x200B;**有效許可權**按鈕來檢視角色矩陣，以及這些角色目前授與組態哪些許可權。
    ![有效許可權視窗](assets/configuration-effective-permissions.png)
 1. 若要指派新許可權，請在&#x200B;**新增許可權**&#x200B;區段的&#x200B;**選取使用者或群組**&#x200B;欄位中輸入使用者或群組名稱。
    * **選取使用者或群組**&#x200B;欄位會根據現有的使用者和角色提供自動完成功能。
 1. 從自動完成結果中選取適當的使用者或角色。
    * 您可以選取多個使用者或角色。
-1. 檢查一或多個選取的使用者或角色應該擁有的存取選項，然後按一下[新增]。**&#x200B;**
+1. 檢查一或多個選取的使用者或角色應該擁有的存取選項，然後按一下[新增]。****
    ![新增存取許可權至設定](assets/configuration-edit.png)
 1. 重複這些步驟，您就可以選取使用者或角色，並視需要指派其他存取許可權。
 1. 完成時選取&#x200B;**儲存並關閉**。
@@ -161,9 +161,9 @@ String bgkcolor = imageServerSettings.get("bgkcolor", "FFFFFF");
 
 在`/conf`內跳轉，追蹤參考，然後檢視是否有`/conf/wknd`節點。 此為設定。 其查詢對應用程式程式碼而言是透明的。 範常式式碼從未有專屬參考，而是隱藏在`Conf`物件之後。 要套用哪個設定，需透過JCR內容控制。
 
-您會看到組態包含固定名稱的`settings`節點，其中包含實際專案，包括您在此情況下所需的`dam/imageserver`。 此類專案可視為「設定檔案」，並由包含實際內容的`jcr:content`的`cq:Page`表示。
+您會看到組態包含固定名稱的`settings`節點，其中包含實際專案，包括您在此情況下所需的`dam/imageserver`。 此類專案可視為「設定檔案」，並由包含實際內容的`cq:Page`的`jcr:content`表示。
 
-最後，您會看到此範常式式碼需要的屬性`bgkcolor`。 您從`getItem`回訪的`ValueMap`是以頁面的`jcr:content`節點為基礎。
+最後，您會看到此範常式式碼需要的屬性`bgkcolor`。 您從`ValueMap`回訪的`getItem`是以頁面的`jcr:content`節點為基礎。
 
 ### 設定解析度 {#configuration-resolution}
 
@@ -172,7 +172,7 @@ String bgkcolor = imageServerSettings.get("bgkcolor", "FFFFFF");
 為了支援此設定查詢，AEM具有繼承和遞補機制，其偏好設定順序如下：
 
 1. `/conf/<siteconfig>/<parentconfig>/<myconfig>`
-   * 從`/content`中某處`cq:conf`參考的特定設定
+   * 從`cq:conf`中某處`/content`參考的特定設定
    * 階層是任意的，而且可以像您的網站結構一樣設計，知道這一點並非應用程式程式碼的業務
    * 可由具有設定許可權的使用者在執行階段變更
 1. `/conf/<siteconfig>/<parentconfig>`
@@ -198,13 +198,13 @@ String bgkcolor = imageServerSettings.get("bgkcolor", "FFFFFF");
 
 ### 使用設定 {#using-configurations}
 
-AEM中的設定是根據Sling內容感知設定。 Sling套件組合提供的服務API可用於取得內容感知設定。 內容感知組態是與內容資源或資源樹狀結構相關的組態，如上一個範例[&#128279;](#developer-example)所述。
+AEM中的設定是根據Sling內容感知設定。 Sling套件組合提供的服務API可用於取得內容感知設定。 內容感知組態是與內容資源或資源樹狀結構相關的組態，如上一個範例[所述](#developer-example)。
 
 如需內容感知設定、範例及使用方式的詳細資訊，請參閱[Sling檔案](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html)。
 
 ### ConfMgr Web主控台 {#confmgr-web-console}
 
-為了偵錯和測試目的，`https://<host>:<port>/system/console/conf`有一個&#x200B;**ConfMgr**&#x200B;網頁主控台，可顯示指定路徑/專案的設定。
+為了偵錯和測試目的，**有一個** ConfMgr`https://<host>:<port>/system/console/conf`網頁主控台，可顯示指定路徑/專案的設定。
 
 ![ConfMgr](assets/configuration-confmgr.png)
 
@@ -214,11 +214,11 @@ AEM中的設定是根據Sling內容感知設定。 Sling套件組合提供的服
 * **專案**
 * **使用者**
 
-按一下[解決] **&#x200B;**，您就可以檢視已解決的組態，並取得有助於解決這些組態的程式碼範例。
+按一下[解決] ****，您就可以檢視已解決的組態，並取得有助於解決這些組態的程式碼範例。
 
 ### 內容感知設定Web主控台 {#context-aware-web-console}
 
-為了偵錯和測試目的，`https://<host>:<port>/system/console/slingcaconfig`有一個&#x200B;**內容感知設定**&#x200B;網頁主控台，可讓您查詢存放庫中的內容感知設定並檢視其屬性。
+為了偵錯和測試目的，**有一個**&#x200B;內容感知設定`https://<host>:<port>/system/console/slingcaconfig`網頁主控台，可讓您查詢存放庫中的內容感知設定並檢視其屬性。
 
 ![內容感知設定Web主控台](assets/configuration-context-aware-console.png)
 
@@ -227,4 +227,4 @@ AEM中的設定是根據Sling內容感知設定。 Sling套件組合提供的服
 * **內容路徑**
 * **設定名稱**
 
-按一下「解決&#x200B;**&#x200B;**」，以擷取所選組態的相關內容路徑和屬性。
+按一下「解決&#x200B;****」，以擷取所選組態的相關內容路徑和屬性。

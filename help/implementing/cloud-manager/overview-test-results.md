@@ -4,8 +4,8 @@ description: 大致瞭解Cloud Manager自動執行的三種型別的測試，以
 exl-id: 5f5c97b1-4180-4f49-af8b-257d4744766e
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: ac918008c3f99d74e01be59c9841083abf3604aa
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 62%
@@ -19,7 +19,7 @@ Cloud Manager for Cloud Services 管道支援三類測試。
 
 1. [程式碼品質測試](/help/implementing/cloud-manager/code-quality-testing.md)
 
-   * 程式碼品質測試會評估應用程式程式碼的品質。
+   * 程式碼品質測試會評估應用計劃程式碼的品質。
    * 在所有生產和非生產管道中的建構步驟之後立即執行。
    * Cloud Manager 根據 AEM Engineering 的最佳實務執行的[自訂程式碼品質規則](/help/implementing/cloud-manager/custom-code-quality-rules.md)。
 

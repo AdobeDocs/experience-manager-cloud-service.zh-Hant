@@ -3,8 +3,8 @@ title: Adobe Experience Manager as a Cloud Service 與網路無障礙指引
 description: Adobe Experience Manager as a Cloud Service 與網路無障礙指引簡介
 exl-id: ad7627cd-3c97-47b7-8a13-0aae39aa8169
 feature: Compliance
-role: Admin, Architect, Developer, Leader
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+role: Admin, Developer, Leader
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 100%
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Adobe Experience Manager as a Cloud Service 與網路無障礙指引{#aem-and-the-web-accessibility-guidelines}
 
-從社會、經濟和法律層面來看，無論目標對象是否有任何不方便或限制，我們都有許多動機必須盡可能方便他們存取網頁內容。因此，以 Adobe Experience Manager (AEM) as a Cloud Service 增設網頁協助功能，對理想的網頁設計而言可謂日益重要。
+從社會、經濟和法律層面來看，無論目標客群是否有任何不方便或限制，我們都有許多動機必須盡可能方便他們存取網頁內容。因此，以 Adobe Experience Manager (AEM) as a Cloud Service 增設網頁協助功能，對理想的網頁設計而言可謂日益重要。
 
 以 AEM as a Cloud Service 建立無障礙的網站和內容，可帶來以下影響：
 

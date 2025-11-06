@@ -3,8 +3,8 @@ title: 內容複製工具
 description: 內容複製工具可讓使用者根據需求，從AEM as a Cloud Service上的生產環境複製可變內容，以便用於測試目的的較低環境。
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 28a9e32395b73edff46cabba1dcc6c4134594fc6
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1450'
 ht-degree: 31%
@@ -43,7 +43,7 @@ ht-degree: 31%
 
 | 內容副本功能 | AEM管理員群組 | 部署管理員角色 |
 |---|---|---|
-| 建立和修改[內容集](#create-content-set) | 不需要 | 必要 |
+| 建立和修改[內容集](#create-content-set) | 非必要 | 必要 |
 | 開始獲取消[內容副本程序](#copy-content) | 必要 | 必要 |
 
 如需許可權及其設定方式的詳細資訊，請參閱[AEM as a Cloud Service團隊和產品設定檔](/help/onboarding/aem-cs-team-product-profiles.md)。

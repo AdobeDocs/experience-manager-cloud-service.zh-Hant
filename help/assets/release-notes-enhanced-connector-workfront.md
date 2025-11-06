@@ -4,8 +4,8 @@ description: ' [!DNL Workfront for Experience Manager enhanced connector] 版發
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 feature: Release Information
 role: Admin
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1715'
 ht-degree: 100%
 
@@ -65,9 +65,9 @@ ht-degree: 100%
 
 ### 2024 年 1 月版 {#january-2024-release}
 
-* [!DNL CRX DE] 中的 [!DNL Workfront] 設定目前不儲存 `project ID`，導致套用唯讀權限時發生錯誤。詳細了解如何[設定權限](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html?lang=zh-Hant#linked-folders)。
+* [!DNL CRX DE] 中的 [!DNL Workfront] 設定目前不儲存 `project ID`，導致套用唯讀權限時發生錯誤。詳細了解如何[設定權限](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#linked-folders)。
 
-* 沒有關於如何將自訂屬性新增至開箱即用索引定義的公開文件。深入瞭解[新增自訂屬性](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html?lang=zh-Hant#metadata-schema-mapping)。
+* 沒有關於如何將自訂屬性新增至開箱即用索引定義的公開文件。深入瞭解[新增自訂屬性](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#metadata-schema-mapping)。
 
 * 刪除增強型連接器上的連線設定會明顯影響事件訂閱和其他已儲存的設定，導致它們指向舊 URL。
 
@@ -201,13 +201,13 @@ ht-degree: 100%
          確保 `"objId": "",` 和 `"url"` 之間的內容符合 JSON 回應。建議的進行方法是從任何具有 `objId` 的事件訂閱進行複製，然後刪除該號碼。
 
       1. 記下該事件訂閱 ID。
-
       1. 刪除該錯誤的事件訂閱。進行刪除 API 呼叫 `<your-aem-domain>/attask/eventsubscription/api/v1/subscriptions/<event-subscription-ID-from-previous-step>`
 
          `200` 做為回應代碼表示成功刪除了錯誤的事件訂閱。
-  >[!NOTE]
-  >
-  >如果您在執行此程序所述的步驟之前已經刪除了錯誤的事件訂閱，則可以跳過此程序的最後一步。
+
+         >[!NOTE]
+         >
+         >如果您在執行此程序所述的步驟之前已經刪除了錯誤的事件訂閱，則可以跳過此程序的最後一步。
 
 ### 2022 年 10 月版 {#october-2022-release}
 

@@ -5,11 +5,11 @@ index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 07ed9bd6d9830bc9120b59cab43f834ef8620709
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1466'
-ht-degree: 58%
+ht-degree: 60%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 58%
 
 ## 非生產管道 {#non-production-pipelines}
 
-此外[生產管道](#configuring-production-pipelines.md)部署到中繼和生產環境，您還可以設定非生產管道來驗證您的程式碼。
+此外[生產管道](#configuring-production-pipelines.md)部署到登台和生產環境，您還可以設定非生產管道來驗證您的程式碼。
 
 有兩種類型的非生產管道：
 
@@ -38,10 +38,10 @@ ht-degree: 58%
 設定好方案並擁有至少一個使用 Cloud Manager UI 的環境後，您就可以依照以下步驟著手新增非生產管道了。
 
 1. 在 [experiece.adobe.com](https://experience.adobe.com) 登入 Cloud Manager。
-1. 在&#x200B;**快速存取**&#x200B;區段中，按一下&#x200B;**Experience Manager**。
+1. 在「**快速存取**」區段中，按一下「**Experience Manager**」。
 1. 在左側面板中，按一下「**Cloud Manager**」。
 1. 選取您想要的組織。
-1. 在&#x200B;**我的程式**&#x200B;主控台上，按一下程式。
+1. 在「**我的程式**」控制台中，按一下某個程式。
 
 1. 從 Cloud Manager 首頁畫面存取&#x200B;**管道**&#x200B;卡。按一下「**+新增**」並選取「**新增非生產管道**」。
 
@@ -123,7 +123,7 @@ ht-degree: 58%
    * 在任何時候，每個環境只能有一個設定管道。
 * **設定Edge Delivery Services設定管道** - Edge Delivery設定管道沒有獨立的開發、測試和生產環境。 在AEM as a Cloud Service中，變更會經過開發、階段和生產等層級。 相反地，Edge Delivery設定管道會直接將其設定套用至在Cloud Manager中註冊的所有Edge Delivery Sites網域。 若要深入瞭解，請參閱[新增Edge Delivery管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)。
 * **前端計畫碼** — 為AEM應用計畫的前端設定JavaScript和CSS。
-   * 有了前端流水線，給前端開發者更多的獨立性，可以加快開發進程。
+   * 有了前端管道，給前端開發者更多的獨立性，可以加快開發進程。
    * 請參閱文件[使用前端管道開發網站](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) 了解此程序的工作原理以及需要注意的一些注意事項，以充分發揮此程序的潛力。
 * **網頁層設定** — 設定Dispatcher屬性，以儲存、處理及傳送網頁給使用者端。
    * 如需詳細資訊，請參閱檔案[CI/CD管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines)。

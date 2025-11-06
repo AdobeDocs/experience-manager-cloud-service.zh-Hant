@@ -3,8 +3,8 @@ title: 將標記內建至 AEM 應用程式中
 description: 以程式設計方式處理自訂AEM應用程式內的標籤或擴展標籤
 exl-id: a106dce1-5d51-406a-a563-4dea83987343
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # 將標記內建至 AEM 應用程式中 {#building-tagging-into-aem-applications}
 
-為了以程式設計方式使用自訂AEM應用程式內的標籤或擴展標籤，本檔案說明如何使用
+為了以程式設計方式使用自訂AEM應用程式中的標籤或擴展標籤，本檔案說明如何使用
 
 * [標籤API](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/tagging/package-summary.html)
 
@@ -45,7 +45,7 @@ JcrTagManagerFactory jcrTagManagerFactory;
 TagManager tagManager = jcrTagManagerFactory.getTagManager(session);
 ```
 
-在一般Sling內容中，您也可以從`ResourceResolver`調整`TagManager`：
+在一般Sling內容中，您也可以從`TagManager`調整`ResourceResolver`：
 
 ```java
 TagManager tagManager = resourceResolver.adaptTo(TagManager.class);
@@ -53,7 +53,7 @@ TagManager tagManager = resourceResolver.adaptTo(TagManager.class);
 
 ### 擷取標籤物件 {#retrieving-a-tag-object}
 
-可透過`TagManager`透過解析現有標籤或建立標籤來擷取`Tag`：
+可透過`Tag`透過解析現有標籤或建立標籤來擷取`TagManager`：
 
 ```java
 Tag tag = tagManager.resolve("my/tag"); // for existing tags
@@ -61,7 +61,7 @@ Tag tag = tagManager.resolve("my/tag"); // for existing tags
 Tag tag = tagManager.createTag("my/tag"); // for new tags
 ```
 
-對於將`Tags`對應到JCR `Nodes`的JCR型實作，如果您有資源（例如`/content/cq:tags/default/my/tag`），可以直接使用Sling的`adaptTo`機制：
+對於將`Tags`對應到JCR `Nodes`的JCR型實作，如果您有資源（例如`adaptTo`），可以直接使用Sling的`/content/cq:tags/default/my/tag`機制：
 
 ```java
 Tag tag = resource.adaptTo(Tag.class);
@@ -140,7 +140,7 @@ replicator.replicate(session, replicationActionType, tagPath);
 
 標籤`title`可以不同的語言定義。 然後，區分語言的屬性會新增至標籤節點。 這個屬性的格式為`jcr:title.<locale>`，例如，法文翻譯為`jcr:title.fr`。 `<locale>`必須是小寫的ISO地區設定字串，並使用底線(`_`)而非連字型大小/破折號(`-`)，例如： `de_ch`。
 
-例如，將&#x200B;**Animals**&#x200B;標籤新增至&#x200B;**Products**&#x200B;頁面時，值`stockphotography:animals`會新增至節點`/content/wknd/en/products/jcr:content`的屬性`cq:tags`。 將從標籤節點引用翻譯。
+例如，將&#x200B;**Animals**&#x200B;標籤新增至&#x200B;**Products**&#x200B;頁面時，值`stockphotography:animals`會新增至節點`cq:tags`的屬性`/content/wknd/en/products/jcr:content`。 將從標籤節點引用翻譯。
 
 伺服器端API已本地化`title`相關方法：
 
@@ -163,7 +163,7 @@ replicator.replicate(session, replicationActionType, tagPath);
 
 下列程式說明如何新增語言（例如，芬蘭文）至&#x200B;**標籤編輯**&#x200B;對話方塊：
 
-1. 在&#x200B;**CRXDE**&#x200B;中，編輯節點`/content/cq:tags`的多值屬性`languages`。
+1. 在&#x200B;**CRXDE**&#x200B;中，編輯節點`languages`的多值屬性`/content/cq:tags`。
 1. 新增`fi_fi` （代表芬蘭語言環境）並儲存變更。
 
 在&#x200B;**標籤**&#x200B;主控台中編輯標籤時，現在可以在頁面屬性的標籤對話方塊和&#x200B;**編輯標籤**&#x200B;對話方塊中使用芬蘭文。

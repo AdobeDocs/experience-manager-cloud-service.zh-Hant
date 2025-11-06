@@ -3,10 +3,10 @@ title: 可編輯的範本
 description: 瞭解在建立頁面、定義其初始內容、結構化內容、編寫原則和版面配置時，如何使用可編輯範本。
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '3443'
+source-wordcount: '3442'
 ht-degree: 1%
 
 ---
@@ -58,7 +58,7 @@ ht-degree: 1%
 
 建立可編輯的範本時，您可以：
 
-1. 為範本[&#128279;](#template-folders)建立資料夾。 這並不強制，但建議最佳實務。
+1. 為範本[建立](#template-folders)資料夾。 這並不強制，但建議最佳實務。
 1. 選取[範本型別](#template-type)。 這已複製以建立[範本定義](#template-definitions)。
 
    >[!NOTE]
@@ -128,7 +128,7 @@ ht-degree: 1%
 
 >[!TIP]
 >
->切勿在範本中輸入任何必須國際化的資訊。 基於內部化的目的，建議使用核心元件[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=zh-Hant)的本地化功能。
+>切勿在範本中輸入任何必須國際化的資訊。 基於內部化的目的，建議使用核心元件[的](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)本地化功能。
 
 >[!NOTE]
 >
@@ -215,13 +215,13 @@ ht-degree: 1%
 
    現有資料夾會列在左側，包括`global`資料夾。
 
-1. 按一下&#x200B;**建立**。
+1. 按一下「**建立**」。
 1. 在&#x200B;**建立設定**&#x200B;對話方塊中，需要設定下列欄位：
 
    * **標題**：提供設定資料夾的標題
    * **可編輯的範本**：勾選以允許此資料夾中的可編輯範本
 
-1. 按一下「**建立**」。
+1. 按一下「**建立**」
 
 >[!NOTE]
 >
@@ -316,7 +316,7 @@ ht-degree: 1%
    * 根節點的原則，定義範本編輯器中允許的元件。
    * 建議為回應式格線定義中斷點，並在範本型別上設定行動模擬器。
 
-* AEM提供少量現成可用的範本型別，例如「HTML5頁面」和「最適化表單頁面」。
+* AEM提供少量現成可用的範本型別，例如HTML5頁面和調適型表單頁面。
 
    * 提供其他範例作為[WKND教學課程](/help/implementing/developing/introduction/develop-wknd-tutorial.md)的一部分。
 
@@ -370,9 +370,9 @@ When creating an editable template, the value is copied from the template type t
 如果您已建立可作為其他範本基礎的範本，則可以複製此範本作為範本型別。
 
 1. 建立範本，就像建立任何頁面範本一樣。 請參閱[範本，以建立可使用頁面編輯器](/help/sites-cloud/authoring/page-editor/templates.md#creating-a-new-template-template-author)編輯的頁面。 這會作為範本型別的基礎。
-1. 使用CRXDE Lite，將建立的範本從`templates`節點複製到[範本資料夾](#template-folders)下的`template-types`節點。
-1. 從[範本資料夾](#template-folders)下的`templates`節點中刪除範本。
-1. 在`template-types`節點下的範本復本中，從所有`jcr:content`節點刪除所有`cq:template`和`cq:templateType`屬性。
+1. 使用CRXDE Lite將建立的範本從`templates`節點複製到`template-types`範本資料夾[下的](#template-folders)節點。
+1. 從`templates`範本資料夾[下的](#template-folders)節點中刪除範本。
+1. 在`template-types`節點下的範本復本中，從所有`cq:template`節點刪除所有`cq:templateType`和`jcr:content`屬性。
 
 您也可以使用GitHub提供的範例可編輯範本，在此基礎上開發自己的範本型別。
 
@@ -433,7 +433,7 @@ GITHUB上的程式碼
    * ` [policies](#policies)`
    * `thumbnail.png`
 
-### jcr：content {#jcr-content}
+### jcr:content {#jcr-content}
 
 此節點會保留範本的屬性：
 
@@ -473,7 +473,7 @@ GITHUB上的程式碼
 
 內容原則會定義元件的設計屬性。 例如，可用的元件或最小/最大尺寸。 這些適用於範本（以及使用範本建立的頁面）。 可在範本編輯器中建立和選取內容原則。
 
-* `root`節點上的屬性`cq:policy`
+* `cq:policy`節點上的屬性`root`
   `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
 提供頁面段落系統內容原則的相對參照。
 
@@ -496,12 +496,11 @@ GITHUB上的程式碼
 
    使用範本之前，必須透過以下任一方式啟用它：
 
-   * [正在從&#x200B;**範本**&#x200B;主控台啟用範本](/help/sites-cloud/authoring/page-editor/templates.md)。
+   * [正在從](/help/sites-cloud/authoring/page-editor/templates.md)範本&#x200B;**主控台啟用範本**。
 
    * 正在設定`jcr:content`節點上的狀態屬性。
 
       * 例如，在：
-
         `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
 
       * 定義屬性：
@@ -514,7 +513,6 @@ GITHUB上的程式碼
 
    * [在適當的頁面或子分支的根頁面的&#x200B;**頁面屬性**](/help/sites-cloud/authoring/page-editor/templates.md#allowing-a-template-author)&#x200B;上定義允許的範本路徑。
    * 設定屬性：
-
      `cq:allowedTemplates`
 在必要分支的`jcr:content`節點上。
 
@@ -547,7 +545,7 @@ GITHUB上的程式碼
 
 * **範本**：
 
-   * 已參考其`jcr:content`節點的`cq:template`屬性，以存取對應於該頁面的範本。
+   * 已參考其`cq:template`節點的`jcr:content`屬性，以存取對應於該頁面的範本。
 
 * **元件**：
 
@@ -563,17 +561,17 @@ GITHUB上的程式碼
 
 下列屬性決定是否允許範本`T`用於要放置為頁面`P`子項的新頁面。 這些屬性都是多值字串，其中包含零個或多個用於和路徑比對的規則運算式：
 
-* `P`的`jcr:content`子節點或`P`的上階的`cq:allowedTemplates`屬性。
+* `cq:allowedTemplates`的`jcr:content`子節點或`P`的上階的`P`屬性。
 
-* `T`的`allowedPaths`屬性。
+* `allowedPaths`的`T`屬性。
 
-* `T`的`allowedParents`屬性。
+* `allowedParents`的`T`屬性。
 
-* `P`之範本的`allowedChildren`屬性。
+* `allowedChildren`之範本的`P`屬性。
 
 評估的運作方式如下：
 
-* 以`P`開頭的頁面階層遞增時，找到的第一個非空白`cq:allowedTemplates`屬性與`T`的路徑相符。 如果沒有任何相符的值，則會拒絕`T`。
+* 以`cq:allowedTemplates`開頭的頁面階層遞增時，找到的第一個非空白`P`屬性與`T`的路徑相符。 如果沒有任何相符的值，則會拒絕`T`。
 
 * 如果`T`具有非空白的`allowedPaths`屬性，但沒有符合`P`路徑的值，則會拒絕`T`。
 
@@ -593,7 +591,7 @@ GITHUB上的程式碼
 >
 >AEM提供多個屬性，可控制&#x200B;**網站**&#x200B;下允許的範本。 不過，將它們合併可能會產生非常複雜的規則，而且難以追蹤和管理。
 >
->因此，Adobe建議您透過定義以下內容來開始簡化：
+>因此，Adobe建議您先定義：
 >
 >* 僅`cq:allowedTemplates`屬性
 >
@@ -601,14 +599,14 @@ GITHUB上的程式碼
 >
 >如需範例，請參閱[WKND教學課程](/help/implementing/developing/introduction/develop-wknd-tutorial.md)內容： `/content/wknd/jcr:content`
 >
->屬性`allowedPaths`、`allowedParents`和`allowedChildren`也可以放在範本上，以定義更複雜的規則。 不過，如果可能的話，如果需要進一步限制允許的範本，在網站的子區段上定義其他`cq:allowedTemplates`屬性會更簡單&#x200B;*許多*。
+>屬性`allowedPaths`、`allowedParents`和`allowedChildren`也可以放在範本上，以定義更複雜的規則。 不過，如果可能的話，如果需要進一步限制允許的範本，在網站的子區段上定義其他&#x200B;*屬性會更簡單*&#x200B;許多`cq:allowedTemplates`。
 >
 >另一個優點是`cq:allowedTemplates`屬性可由作者在&#x200B;**頁面屬性**&#x200B;的&#x200B;**進階**&#x200B;索引標籤中更新。 無法使用（標準） UI更新其他範本屬性，因此需要開發人員維護規則和每次變更的程式碼部署。
 
 #### 限制子頁面中使用的範本 {#limiting-templates-used-in-child-pages}
 
-若要限制哪些範本可用於在指定頁面下建立子頁面，請使用頁面`jcr:content`節點的`cq:allowedTemplates`屬性，指定允許做為子頁面的範本清單。 清單中的每個值都必須是允許之子頁面的範本的絕對路徑，例如`/apps/wknd/templates/page-content`。
+若要限制哪些範本可用於在指定頁面下建立子頁面，請使用頁面`cq:allowedTemplates`節點的`jcr:content`屬性，指定允許做為子頁面的範本清單。 清單中的每個值都必須是允許之子頁面的範本的絕對路徑，例如`/apps/wknd/templates/page-content`。
 
-您可以在範本的`jcr:content`節點上使用`cq:allowedTemplates`屬性，將此組態套用至使用此範本的所有已建立頁面。
+您可以在範本的`cq:allowedTemplates`節點上使用`jcr:content`屬性，將此組態套用至使用此範本的所有已建立頁面。
 
 如果您想要新增更多限制，例如關於範本階層，您可以在範本上使用`allowedParents/allowedChildren`屬性。 然後，您可以明確指定從範本T建立的頁面必須是從範本T建立的頁面的父項/子項。

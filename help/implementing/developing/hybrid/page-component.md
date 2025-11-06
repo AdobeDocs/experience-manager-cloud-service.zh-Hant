@@ -3,9 +3,9 @@ title: SPA 頁面元件
 description: 在SPA中，頁面元件不提供其子元件的HTML元素，而是將其委派給SPA框架。 本檔案說明如何藉此讓SPA的頁面元件具有唯一性。
 exl-id: 41b56a60-ebb8-499d-a0ab-a2e920f26227
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 index: false
-source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 7%
@@ -73,7 +73,7 @@ SPA的頁面元件不會透過JSP或HTL檔案和資源物件提供其子元件�
 
 * `cq:wcmmode`：編輯器的WCM模式（例如，頁面、範本）
 * `cq:pagemodel_root_url`：應用程式根模型的URL。 由於子頁面模型是應用程式根模型的片段，因此直接存取子頁面時十分重要。 然後，`PageModelManager`會系統地將應用程式初始模型重新組合為從根進入點進入應用程式。
-* `cq:pagemodel_router`：啟用或停用`PageModelManager`資料庫的[`ModelRouter`](routing.md)
+* `cq:pagemodel_router`：啟用或停用[`ModelRouter`](routing.md)資料庫的`PageModelManager`
 * `cq:pagemodel_route_filters`：以逗號分隔的清單或規則運算式，提供[`ModelRouter`](routing.md)必須忽略的路由。
 
 ## 頁面編輯器覆蓋同步 {#page-editor-overlay-synchronization}

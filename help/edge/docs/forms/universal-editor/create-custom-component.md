@@ -2,10 +2,10 @@
 title: 為 EDS Forms 建立自訂元件
 description: 為 EDS Forms 建立自訂元件
 feature: Edge Delivery Services
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: 9664495d17ad8a8101c886408bee1584b3d48f1e
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '2103'
 ht-degree: 100%
 
@@ -505,13 +505,13 @@ git add . && git commit -m "Add card custom component" && git push
 
 10. **Update _component-definition.json**：在 `models/_component-definition.json` 中，以下列方式使用物件，將具有 `id custom-components` 群組內的陣列進行更新：
 
-    ```javascript
-    {
-    "...":"../blocks/form/components/cards/_cards.json#/definitions"
-    }
-    ```
+   ```javascript
+   {
+   "...":"../blocks/form/components/cards/_cards.json#/definitions"
+   }
+   ```
 
-    其目的在於為將與其他元件一起建置的新卡片元件提供參考
+   其目的在於為將與其他元件一起建置的新卡片元件提供參考
 
 11. **執行建置 :json 指令碼**：執行 `npm run build:json`，將所有元件 JSON 定義進行編譯並合併為單一檔案，再由伺服器提供服務。這可確保您新元件結構描述包含在已合併的輸出中。
 
@@ -583,7 +583,7 @@ git add . && git commit -m "Add card custom component" && git push
 
 - **使用可編寫的屬性：**&#x200B;透過 JSON 結構描述顯示可設定的選項
 
-- **以名稱空間標記您的 CSS**：透過使用唯一的類別名稱來避免樣式衝突
+- **以命名空間標記您的 CSS**：透過使用唯一的類別名稱來避免樣式衝突
 
 ## 參照
 

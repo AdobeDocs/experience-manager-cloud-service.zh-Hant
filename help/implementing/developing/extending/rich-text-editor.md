@@ -4,8 +4,8 @@ description: 設定RTF編輯器以在 [!DNL Adobe Experience Manager] as a Cloud
 contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 2c1b444d7b7dad94cc9ebda59783f9c6fde84a91
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1892'
 ht-degree: 0%
@@ -33,7 +33,7 @@ RTF編輯器(RTE)為作者提供編輯文字內容的廣泛功能。 提供圖�
 
 RTE介面為製作環境提供[回應式設計](/help/sites-cloud/authoring/page-editor/responsive-layout.md)。 此介面專為觸控和桌上型裝置所設計。
 
-![&#x200B; RTF編輯器工具列](assets/rte-toolbar-full-screen-mode.png)
+![ RTF編輯器工具列](assets/rte-toolbar-full-screen-mode.png)
 
 *圖： RTF編輯器工具列已啟用所有可用選項。*
 
@@ -159,7 +159,7 @@ RTE功能可透過一系列外掛程式使用，每個外掛程式都具備功�
 <!-- TBD ENGREVIEW: To confirm if the sample works in CS or not?
 **Sample**: Download [this sample configuration](/help/sites-administering/assets/rte-sample-all-features-enabled-10.zip) that illustrates how to configure RTE. In this package all the features are enabled. -->
 
-[核心元件文字元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=zh-Hant#the-text-component-and-the-rich-text-editor)可讓範本編輯器使用使用者介面作為內容原則來設定許多RTE外掛程式，而不需要技術設定。 內容原則可搭配使用RTE UI設定，如本檔案所述。 如需詳細資訊，請參閱[建立頁面範本](/help/sites-cloud/authoring/page-editor/templates.md)以及[核心元件開發人員檔案](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html?lang=zh-Hant)。
+[核心元件文字元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor)可讓範本編輯器使用使用者介面作為內容原則來設定許多RTE外掛程式，而不需要技術設定。 內容原則可搭配使用RTE UI設定，如本檔案所述。 如需詳細資訊，請參閱[建立頁面範本](/help/sites-cloud/authoring/page-editor/templates.md)以及[核心元件開發人員檔案](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html)。
 
 >為了參考之用，預設Text元件（作為標準安裝的一部分提供）可在以下位置找到：
 >
@@ -233,7 +233,7 @@ RTE中可用的選項會從使用者介面設定向下流向內容原則。
 * 如果RTE的使用者介面設定已移除或未啟用專案，則內容原則無法進行設定。
 * 作者只能存取使用者介面設定和內容原則所提供的功能。
 
-例如，您可以看到[文字核心元件檔案](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=zh-Hant#the-text-component-and-the-rich-text-editor)。
+例如，您可以看到[文字核心元件檔案](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor)。
 
 ## 自訂工具列圖示和命令之間的對應 {#iconstoolbar}
 

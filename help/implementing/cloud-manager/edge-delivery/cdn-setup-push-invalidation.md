@@ -3,10 +3,10 @@ title: 為 Edge Delivery 網站設定推播失效
 description: 了解如何為 Edge Delivery 網站設定推播失效，以確保內容更新和快取控制的效率。
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 7cded93c-325c-4a4b-8644-e6a2379d5179
-source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 100%
 

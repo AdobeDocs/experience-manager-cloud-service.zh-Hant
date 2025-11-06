@@ -4,7 +4,7 @@ description: 瞭解如何為最適化Forms核心元件的記錄檔案(DoR)產生
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: 03e46bb43e684a6b7057045cf298f40f9f1fe622
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '3244'
 ht-degree: 1%
@@ -93,7 +93,7 @@ ht-degree: 1%
    * （針對AcroForm範本） **[!UICONTROL 記錄檔案繫結參考欄位]**&#x200B;屬性。
    * （適用於XFA範本） **[!UICONTROL 資料模型繫結參考]**&#x200B;屬性。
 
-1. 按一下「**[!UICONTROL 儲存]**」。
+1. 按一下&#x200B;**[!UICONTROL 儲存]**。
 
 <!-- 
 In the following video, Adaptive Form components are bound with corresponding Acroform template fields and the Document of Record is sent as an email attachment.
@@ -135,7 +135,7 @@ The form developer binds Adaptive Forms fields with corresponding Document of Re
 
 現在，當提交最適化表單時，會產生更新的記錄檔案。
 
-![已更新 — &#x200B;](assets/we-retail-new-invoice-sent-to-customer.png)
+![已更新 — ](assets/we-retail-new-invoice-sent-to-customer.png)
 
 ## 使用記錄檔案時的主要考量事項 {#key-considerations-when-working-with-document-of-record}
 
@@ -301,7 +301,7 @@ When you select a form model, configure Document of Record using options availab
 
 1. 選取&#x200B;**[!UICONTROL Forms — 記錄檔案]**&#x200B;類別。
 1. 選取&#x200B;**[!UICONTROL DoR基底範本]**。
-1. 按一下[下一步]&#x200B;**&#x200B;**&#x200B;並提供必要的資訊。
+1. 按一下[下一步]****&#x200B;並提供必要的資訊。
 
 1. （選擇性）修改您要在記錄檔案中欄位上套用的欄位樣式和外觀。
 1. 儲存表單。
@@ -338,13 +338,14 @@ When you select a form model, configure Document of Record using options availab
 
       * **包含未繫結至資料模型的表單物件**：設定屬性會包含記錄檔案中結構描述型最適化表單中未繫結的欄位。
 
-      <!-- **Exclude hidden fields from the Document of Record**: Setting the property identifies the hidden fields for exclusion from Document of Record.-->
+        <!-- **Exclude hidden fields from the Document of Record**: Setting the property identifies the hidden fields for exclusion from Document of Record.-->
 
       * **隱藏面板的描述**：設定屬性會從記錄檔案中排除面板/表格的描述。 適用於面板和表格。
 
 
 
    1. **表單欄位屬性**：
+
       * **對於核取方塊與選項按鈕元件，僅顯示選取的值**：設定屬性只會顯示[!UICONTROL 記錄檔案]中核取方塊與選項按鈕的選取值。
       * **多個值的分隔符號**：您可以選擇任何分隔符號，例如逗號或分行符號，以顯示多個值。
       * **選項對齊方式**：您可以選取想要的對齊方式（水準、垂直、與調適型表單相同），以設定在[!UICONTROL 記錄檔案]上顯示的核取方塊或選項按鈕等欄位對齊方式。 根據預設，[!UICONTROL 記錄檔案]中的欄位會設定垂直對齊方式。 從DoR的[!UICONTROL 表單欄位屬性]設定屬性，會覆寫最適化表單上欄位在[!UICONTROL 專案對齊方式]中設定的屬性。 如果您選取[!UICONTROL 與適用性表單相同]選項，適用性表單作者執行個體中設定的對齊方式會用於[!UICONTROL 記錄檔案]欄位。
@@ -353,6 +354,7 @@ When you select a form model, configure Document of Record using options availab
 
 
    1. **主版頁面屬性**：
+
       * **標誌影像**：您可以選擇使用最適化表單的標誌影像、從DAM選擇標誌影像，或從您的電腦上傳標誌影像。
       * **表單標題**： DoR標題。
       * **標題文字**：出現在記錄檔案標題區段的文字。
@@ -362,21 +364,21 @@ When you select a form model, configure Document of Record using options availab
 
       ![主版頁面屬性](/help/forms/assets/dorpropertiesimg.png)
 
-   >[!NOTE]
-   >
-   >如果您使用以6.3之前的Designer版本建立的調適型表單範本，為了使輔色和字型系列屬性運作，請確定根子表單下的調適型表單範本中存在下列專案：
+      >[!NOTE]
+      >
+      >如果您使用以6.3之前的Designer版本建立的調適型表單範本，為了使輔色和字型系列屬性運作，請確定根子表單下的調適型表單範本中存在下列專案：
 
-   ```xml
-   <proto>
-   <font typeface="Arial"/>
-   <fill>
-   <color value="4,166,203"/>
-   </fill>
-   <edge>
-   <color value="4,166,203"/>
-   </edge>
-   </proto>
-   ```
+      ```xml
+      <proto>
+      <font typeface="Arial"/>
+      <fill>
+      <color value="4,166,203"/>
+      </fill>
+      <edge>
+      <color value="4,166,203"/>
+      </edge>
+      </proto>
+      ```
 
 1. 若要儲存品牌變更，請選取&#x200B;**[!UICONTROL 完成]**。
 

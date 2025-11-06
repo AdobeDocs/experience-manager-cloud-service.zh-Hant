@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: 在VRE中叫用服務增強功能，使用叫用服務填入下拉式選項，使用叫用服務的輸出設定可重複面板，使用叫用服務的輸出設定面板，使用叫用服務的輸出引數驗證其他欄位。
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1800'
 ht-degree: 1%
@@ -87,6 +87,7 @@ ht-degree: 1%
 **表單欄位**
 
 新增下列欄位至表單：
+
 * **輸入Pet ID**： Textbox
 * **選取像片URL**：下拉式清單
 * **標籤**：面板
@@ -103,6 +104,7 @@ ht-degree: 1%
 **設定面板**
 
 將面板設定為具有下列限制的重複面板：
+
 * 最小值： 1
 * 最大值： 4
 

@@ -4,8 +4,8 @@ description: 取得 Experience Manager as a Cloud Service 合規性概觀。
 landing-page-description: 如需 AEM as a Cloud Service 合規性的概觀，包括隱私權和協助工具，請從這裡開始。
 exl-id: d7ef2875-a6d7-4f97-b14e-7e5a383cdee9
 feature: Compliance
-role: Admin, Architect, Developer, Leader
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+role: Admin, Developer, Leader
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '90'
 ht-degree: 100%

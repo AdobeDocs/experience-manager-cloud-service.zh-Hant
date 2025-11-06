@@ -2,10 +2,10 @@
 title: 在內容片段主控台中檢視和管理Assets
 description: 瞭解如何在Adobe Experience Manager as a Cloud Service的內容片段主控台中檢視和管理Assets。
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
 exl-id: 865e1fa8-2956-45cf-9dd7-034d491808fe
 solution: Experience Manager Sites
-source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '247'
 ht-degree: 6%
@@ -57,7 +57,7 @@ ht-degree: 6%
 
 請參閱[管理Assets](/help/assets/manage-organize-assets-view.md)以取得更多詳細資料：
 
-* 詳細資料
+* 詳細資訊
 * 下載
 * 分享連結
 * 刪除

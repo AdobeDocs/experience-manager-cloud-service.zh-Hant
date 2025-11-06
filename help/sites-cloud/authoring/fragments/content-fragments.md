@@ -5,7 +5,7 @@ exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 solution: Experience Manager Sites
 feature: Authoring, Content Fragments
 role: User
-source-git-commit: 369f0be002413d164911515349b3e25d33eb8b2f
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1272'
 ht-degree: 2%
@@ -33,12 +33,13 @@ Adobe Experience Manager (AEM) as a Cloud Service中的內容片段是[建立並
 >[!NOTE]
 >
 >**內容片段**&#x200B;和&#x200B;**[體驗片段](/help/sites-cloud/authoring/fragments/content-fragments.md)**&#x200B;是AEM中的不同功能：
+>
 >* **內容片段**&#x200B;是可編輯內容，具有定義和結構，但沒有額外的視覺設計和/或版面配置。 它們可用於存取結構化資料，包括文字、數字和日期等。
 >* **體驗片段**&#x200B;是完整佈局的內容；網頁的片段。
 >
 >體驗片段可以包含內容片段形式的內容，反之則不行。
 >
->如需詳細資訊，請參閱[瞭解AEM中的內容片段和體驗片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=zh-Hant#content-fragments)。
+>如需詳細資訊，請參閱[瞭解AEM中的內容片段和體驗片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments)。
 
 內容片段會啟用：
 
@@ -63,7 +64,7 @@ Adobe Experience Manager (AEM) as a Cloud Service中的內容片段是[建立並
 
 1. 開啟您的頁面以進行編輯。
 2. 新增&#x200B;**內容片段**&#x200B;元件；從&#x200B;**元件**&#x200B;瀏覽器或&#x200B;**插入新元件**。
-3. 您可以執行下列兩個動作中的一個:
+3. 下列兩個動作您可以擇一執行：
    * 開啟&#x200B;**Assets**&#x200B;瀏覽器並篩選&#x200B;**內容片段** （預設為「影像」）。 然後將所需的片段拖曳到元件例項上。
    * 選取內容片段元件，然後從工具列&#x200B;**設定**。 在對話方塊中，您可以開啟選取對話方塊以瀏覽並選取所需的&#x200B;**內容片段**。
 
@@ -88,7 +89,7 @@ Adobe Experience Manager (AEM) as a Cloud Service中的內容片段是[建立並
 
 >[!NOTE]
 >
->另請參閱[核心元件、內容片段元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=zh-Hant)
+>另請參閱[核心元件、內容片段元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
 
 在適當的組態對話方塊中，您可以選取可用的引數，包括：
 
@@ -153,11 +154,12 @@ Adobe Experience Manager (AEM) as a Cloud Service中的內容片段是[建立並
 >* 中間元件在片段流程中的元件順序內有絕對位置。 此位置不會變更，即使片段中段落的內容變更亦然。
 >
 >  這可能使其看起來像是相對位置已變更，因為中間段落與它們旁邊的（片段）段落沒有上下文關係。
+>
 >* 除非兩個段落結構衝突；在這種情況下，不會顯示中間內容（儘管它仍然存在於內部）。
 
 ### 使用關聯內容 {#using-associated-content}
 
-如果您有[&#128279;](/help/assets/content-fragments/content-fragments-assoc-content.md)與[內容片段](/help/assets/content-fragments/content-fragments.md)相關聯的內容，這些資產便可從側面板使用（在您將片段放在內容頁面後）。 關聯內容實際上是[中間內容](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments)的特殊內容來源。
+如果您有[與](/help/assets/content-fragments/content-fragments-assoc-content.md)內容片段[相關聯的內容](/help/assets/content-fragments/content-fragments.md)，這些資產便可從側面板使用（在您將片段放在內容頁面後）。 關聯內容實際上是[中間內容](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments)的特殊內容來源。
 
 >[!NOTE]
 >

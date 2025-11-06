@@ -4,8 +4,8 @@ description: 了解 Cloud Manager 的階層以及不同類型的計畫如何適�
 exl-id: 507df619-a5b5-419a-9e38-db77541425a2
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: dc4008a33f6a786884a9aad30096ff4f0561346c
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 44%
@@ -30,7 +30,7 @@ Cloud Manager 是圍繞實體階層建置的。詳細資訊對於您在Cloud Man
 
 * WKND Travel and Adventure Enterprises 可能是專注於旅遊相關媒體的&#x200B;**租用戶**。
 * WKND Travel and Adventure Enterprises 租用戶可能有兩個&#x200B;**方案**：一個用於 WKND Magazine 的 Sites 方案，和一個用於 WKND Media 的 Assets 方案。
-* WKND Magazine 和 WKND Media 方案都將有開發、測試和製作&#x200B;**環境**。
+* WKND Magazine 和 WKND Media 方案都將有開發、測試和生產&#x200B;**環境**。
 
 ## 原始程式碼存放庫 {#source-code-repository}
 

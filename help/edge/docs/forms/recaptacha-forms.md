@@ -3,9 +3,9 @@ title: reCAPTCHA 與 AEM Forms as a Cloud Service 適用的 Edge Delivery Servic
 description: 在 AEM Forms 適用的 Edge Delivery Services 表單中使用 Google reCAPTCHA
 feature: Edge Delivery Services
 exl-id: ac104e23-f175-435f-8414-19847efa5825
-role: Admin, Architect, Developer
-source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '815'
 ht-degree: 100%
 
@@ -29,6 +29,7 @@ Edge Delivery Services 僅支援最適化表單區塊的&#x200B;**分數型 (v3)
 
 
 閱讀完本文章後，您將學會：
+
 - [為單一表單啟用 Google reCAPTCHA](#enable-google-recaptchas-for-a-single-form)
 - [為網站上所有表單啟用 reCAPTCHA](#enable-recaptcha-for-all-the-forms)
 

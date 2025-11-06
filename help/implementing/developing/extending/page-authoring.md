@@ -3,11 +3,11 @@ title: 自訂頁面編寫
 description: 了解 AEM as a Cloud Service 提供用來自訂頁面編寫功能的機制。
 exl-id: 98d3c7ab-46d2-4e8d-b0da-5c8a7b398135
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '937'
-ht-degree: 88%
+source-wordcount: '936'
+ht-degree: 85%
 
 ---
 
@@ -30,7 +30,7 @@ Clientlib 讓您可擴充預設實作以啟用新功能，同時會重複使用�
 
 覆蓋會根據節點定義，並可讓您覆蓋 `/libs` 中的標準功能和 `/apps` 中您自己的自訂功能。
 
-建立覆蓋時，不需要按原件 1:1 複製，因為 [Sling 資源合併](/help/implementing/developing/introduction/sling-resource-merger.md)可容許繼承。
+建立覆蓋時，不需要1:1原始復本，因為[sling資源合併器](/help/implementing/developing/introduction/sling-resource-merger.md)允許繼承。
 
 如需詳細資訊，請參閱[JS檔案集](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html)。
 

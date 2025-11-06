@@ -3,8 +3,8 @@ title: 為查詢產生器實作自訂述詞求值器
 description: AEM中的查詢產生器提供簡單且可自訂的方式來查詢內容存放庫
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 0%
@@ -135,7 +135,7 @@ replic.action=Activate
 >下列程式說明如何建置`Xpath`運算式以篩選資料。 另一個選項是實作以列為基礎選取資料的`includes`方法。 如需詳細資訊，請參閱[Java檔案](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html)。
 
 1. 建立擴充`com.day.cq.search.eval.AbstractPredicateEvaluator`的新Java類別
-1. 以[統一的diff格式](https://en.wikipedia.org/wiki/Diff#Unified_format)使用`@Component`之類的程式碼片段來標註您的類別
+1. 以`@Component`統一的diff格式[使用](https://en.wikipedia.org/wiki/Diff#Unified_format)之類的程式碼片段來標註您的類別
 
    ```text
    @@ -19,8 +19,11 @@
@@ -165,7 +165,7 @@ replic.action=Activate
    public String getXPathExpression(Predicate predicate, EvaluationContext context)
    ```
 
-   在覆寫方法中，您會根據引數中指定的`Predicate`建置`Xpath`運算式。
+   在覆寫方法中，您會根據引數中指定的`Xpath`建置`Predicate`運算式。
 
 ### 復寫中繼資料的自訂述詞求值器範例 {#example-of-a-custom-predicate-evaluator-for-replication-metadata}
 

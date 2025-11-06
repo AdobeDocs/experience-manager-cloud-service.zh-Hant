@@ -4,10 +4,10 @@ description: 了解如何在 Adobe Experience Manager as a Cloud Service 中保�
 feature: Headless, Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1952'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -278,8 +278,10 @@ query getAdventuresByActivity($activity: String!) {
 
    * 在 Dispatcher 上啟用 `DispatcherNoCanonURL`。這將指示 Dispatcher 將原始 URL 轉發到 AEM，以防止重複編碼。然而，此設置目前僅在 `vhost` 層級上有效，因此，如果您已經有 Dispatcher 設定來重寫 URL (例如，使用縮短的 URL)，您可能需要為持續性查詢 URL 設定一個單獨的 `vhost`。
 
-   * 傳送未編碼的 `/` 或 `\` 字元。
-呼叫持續性查詢 URL 時，請確保所有 `/` 或 `\` 字元在持續性查詢變數的值中保持未編碼狀態。
+   * 傳送`/`或`\`個未編碼的字元。
+
+     呼叫持續性查詢 URL 時，請確保所有 `/` 或 `\` 字元在持續性查詢變數的值中保持未編碼狀態。
+
      >[!NOTE]
      >
      >僅當 `DispatcherNoCanonURL` 解決方案因故無法實施時才建議使用此選項。

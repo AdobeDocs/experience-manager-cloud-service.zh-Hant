@@ -3,8 +3,8 @@ title: 自訂頁面屬性的檢視
 description: 了解作者如何檢視和編輯頁面屬性。
 exl-id: 363b3c2d-f965-485f-bdae-2ea5b4cecb83
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '352'
 ht-degree: 92%
@@ -28,7 +28,7 @@ ht-degree: 92%
    * 名稱：`cq:showOnCreate`
    * 類型：`Boolean`
 
-* 頁面屬性會在編輯檢視 (例如&#x200B;**檢視**/**編輯**&#x200B;**屬性**&#x200B;選項) 中提供：
+* 頁面屬性會在編輯檢視 (例如&#x200B;**檢視**/**編輯****屬性**&#x200B;選項) 中提供：
 
    * 名稱：`cq:hideOnEdit`
    * 類型：`Boolean`

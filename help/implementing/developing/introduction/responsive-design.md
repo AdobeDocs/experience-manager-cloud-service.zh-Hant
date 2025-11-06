@@ -3,8 +3,8 @@ title: 回應式設計
 description: 透過回應式設計，相同的體驗能夠有效地以多個方向顯示在多個裝置上。
 exl-id: be645062-d6d6-45a2-97dc-d8aa235539b8
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 2e2a0bdb7604168f0e3eb1672af4c2bc9b12d652
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1165'
 ht-degree: 0%
@@ -85,7 +85,7 @@ W3C群組提供說明此CSS3功能與語法的[媒體查詢](https://www.w3.org/
 
 ### 搭配AEM頁面使用媒體查詢 {#using-media-queries-with-aem-pages}
 
-[WKND範例專案](/help/implementing/developing/introduction/develop-wknd-tutorial.md)和[AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)使用[頁面核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html?lang=zh-Hant)，其中包含透過頁面原則的clientlibs。
+[WKND範例專案](/help/implementing/developing/introduction/develop-wknd-tutorial.md)和[AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)使用[頁面核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html)，其中包含透過頁面原則的clientlibs。
 
 如果您自己的頁面元件並非以頁面核心元件為基礎，您也可以將使用者端程式庫資料夾包含在其的HTL或JSP指令碼中。 這麼做將產生並參照CSS檔案，其中包含回應式格線運作所需的媒體查詢。
 
@@ -135,9 +135,9 @@ JSP指令碼會產生下列HTML程式碼，這些程式碼會參考樣式表：
 
 回應式頁面會動態調整以適合其轉譯的裝置，為使用者提供更好的體驗。 不過，將資產最佳化成中斷點和裝置以縮短頁面載入時間也是很重要的一點。
 
-[核心元件影像元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=zh-Hant)具備最適化影像選取範圍等功能。
+[核心元件影像元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html)具備最適化影像選取範圍等功能。
 
-* 依預設，影像元件會使用[最適化影像Servlet](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/adaptive-image-servlet.html?lang=zh-Hant)來提供適當的轉譯。
+* 依預設，影像元件會使用[最適化影像Servlet](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/adaptive-image-servlet.html)來提供適當的轉譯。
 * [網頁最佳化的影像傳送](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=zh-Hant)也可透過其原則中的簡單核取方塊取得，該核取方塊會以WebP格式從DAM傳送影像資產，平均可將影像的下載大小減少約25%。
 
 ## 配置容器 {#layout-container}

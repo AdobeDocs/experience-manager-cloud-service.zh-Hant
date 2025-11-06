@@ -4,8 +4,8 @@ description: 瞭解如何在Cloud Manager中使用管道變數來管理組建的
 exl-id: cfcef2e2-0590-457d-a0f9-6092a6d9e0e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: fb180685152a00d520530d21a44337381febba7f
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 14%

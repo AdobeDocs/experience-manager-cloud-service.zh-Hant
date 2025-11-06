@@ -3,9 +3,9 @@ title: SPA的元件對應動態模型
 description: 本文說明在AEM的JavaScript SPA SDK中，元件對映的動態模型如何發生。
 exl-id: 3a7b3f26-4a09-40c1-af03-bb8408a68e57
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 index: false
-source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 0%
@@ -34,7 +34,7 @@ ht-degree: 0%
 使用適用於AEM的JavaScript SPA SDK的單頁應用程式是模型導向的：
 
 1. 前端元件註冊到[元件對應存放區](#componentmapping-module)。
-1. 然後[模型提供者](blueprint.md#the-model-provider)提供模型的[容器](blueprint.md#container)會反複執行其模型內容(`:items`)。
+1. 然後[模型提供者](blueprint.md#container)提供模型的[容器](blueprint.md#the-model-provider)會反複執行其模型內容(`:items`)。
 
 1. 如果有頁面，其子系(`:children`)會先從[元件對應](blueprint.md#componentmapping)取得元件類別，然後將其具現化。
 

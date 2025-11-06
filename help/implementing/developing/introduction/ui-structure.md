@@ -1,25 +1,25 @@
 ---
 title: AEM UI 的結構
-description: AEM UI具有幾項基礎原則，並由數種關鍵元素組成
+description: AEM UI具有數項基礎原則，並由數項關鍵元素組成
 exl-id: ac211716-d699-4fdb-a286-a0a1122c86c5
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 7d09e0c990c716d7bbb305210960621ba8735de4
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '939'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 # AEM UI 的結構 {#structure-of-the-aem-ui}
 
-AEM UI具有幾項基礎原則，並由數個關鍵元素組成：
+AEM UI具有幾項基礎原則，而且由數個關鍵元素組成：
 
 ## 主控台 {#consoles}
 
 ### 基本版面與調整大小 {#basic-layout-and-resizing}
 
-UI同時適用於行動裝置和桌上型裝置，不過AEM不但不建立兩種樣式，而是使用一種適用於所有熒幕和裝置的樣式。
+UI同時適用於行動裝置和桌上型裝置，不過AEM並非建立兩種樣式，而是使用一種適用於所有熒幕和裝置的樣式。
 
 所有模組都使用相同的基本版面配置：
 
@@ -61,9 +61,9 @@ UI同時適用於行動裝置和桌上型裝置，不過AEM不但不建立兩種
 您可以視需要開啟/隱藏左側邊欄，以顯示：
 
 * **僅內容**
-* **內容樹狀結構**
+* **內容樹**
 * **時間表**
-* **個參考**
+* **參照**
 * **篩選器**
 
 預設值為&#x200B;**僅內容** （隱藏邊欄）。
@@ -144,7 +144,7 @@ UI同時適用於行動裝置和桌上型裝置，不過AEM不但不建立兩種
 
 這些圖層提供整個頁面的複雜功能，而非個別元件上的特定動作。
 
-AEM隨附數個已實作用於頁面製作的圖層；例如包括編輯、預覽和附註圖層。
+AEM隨附數個已實作用於頁面製作的圖層；例如包括編輯、預覽和註釋圖層。
 
 >[!NOTE]
 >
@@ -174,7 +174,7 @@ AEM隨附數個已實作用於頁面製作的圖層；例如包括編輯、預�
 
 ### Unified Shell {#unified-shell}
 
-如果您使用Unified Shell做為AEM UI，請參閱Unified Shell上的[AEM as a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md)。
+如果您使用Unified Shell做為AEM UI，請參閱[Unified Shell上的AEM as a Cloud Service](/help/overview/aem-cloud-service-on-unified-shell.md)。
 
 如果您需要進行任何自訂，或已經進行任何自訂，則可停用「統一」：
 

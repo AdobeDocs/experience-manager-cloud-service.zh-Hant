@@ -2,15 +2,15 @@
 title: 使用內容片段AJO外部參考擴充功能
 description: 瞭解內容片段AJO外部參考擴充功能
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
 solution: Experience Manager Sites
-source-git-commit: f755a5c621b68b3110642e6cfe150798555b6707
+exl-id: 79c90e6b-91da-4f5a-ac96-a98ef7f8d4cd
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 0%
 
 ---
-
 
 # 內容片段AJO外部參考擴充功能 {#content-fragment-external-references-extension}
 
@@ -30,7 +30,7 @@ AJO外部參考擴充功能的運作方式是，從與預先定義標籤相關�
 
 >[!NOTE]
 >
->另請參閱[AJO整合](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/integrations/aem-fragments)。
+>另請參閱[AJO整合](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/integrations/aem-fragments)。
 
 1. 開啟[內容片段主控台](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)。
 

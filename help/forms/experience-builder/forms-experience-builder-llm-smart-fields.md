@@ -4,14 +4,14 @@ description: 瞭解如何使用適用於地理資料、業務分類和產業標�
 hide: true
 index: false
 hidefromtoc: true
-role: Admin, Architect, Developer
-source-git-commit: de524aeddd5f53cbd713ff0523222966752ebbc0
+role: Admin, Developer
+exl-id: a03b247c-1e50-4dee-9182-bc81fb83a48b
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1474'
 ht-degree: 24%
 
 ---
-
 
 # Forms Experience Builder中的LLM增強智慧型欄位 {#llm-enhanced-smart-fields}
 
@@ -292,8 +292,7 @@ LLM增強型智慧型欄位是表單欄位，會使用AI的內建知識庫自動
 
 ## 相關的文章
 
-* [Forms Experience Builder快速入門](forms-experience-builder-getting-started.md)
+* [表單體驗建立工具快速入門](forms-experience-builder-getting-started.md)
 * [AI支援表單建立](forms-experience-builder-prompt-examples-library.md)
 * [規則建立與商業邏輯](forms-experience-builder-prompt-examples-library.md#rule-creation--business-logic)
 * [表單提交與整合](form-submission-integration.md)
-

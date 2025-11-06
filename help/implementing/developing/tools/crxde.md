@@ -3,10 +3,10 @@ title: 使用 CRXDE Lite
 description: CRXDE Lite是AEM快速入門的一部分，可供您在瀏覽器中存取和修改本機開發環境中的存放庫。
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1678'
+source-wordcount: '1677'
 ht-degree: 1%
 
 ---
@@ -28,13 +28,13 @@ CRXDE Lite是AEM快速入門的一部分，可供您在瀏覽器中存取和修�
 1. 輸入您的&#x200B;**使用者名稱**&#x200B;和&#x200B;**密碼**。
 1. 按一下&#x200B;**「確定」**。
 
-CRXDE Lite使用者介面會在您的瀏覽器中顯示如下：
+CRXDE Lite使用者介面會在瀏覽器中顯示如下：
 
 ![CRXDE Lite介面](assets/crxde-lite.png)
 
 >[!TIP]
 >
->您也可以從AEM功能表存取CRXDE Lite。 從主功能表選取&#x200B;**工具** > **一般** > **CRXDE Lite**。
+>您也可以從AEM功能表存取CRXDE Lite 。 從主功能表選取&#x200B;**工具** > **一般** > **CRXDE Lite**。
 
 ## 使用者介面概觀 {#overview-of-the-user-interface}
 
@@ -75,7 +75,7 @@ CRXDE Lite的使用者介面有許多部分且有許多功能。
 
 連按兩下&#x200B;**編輯窗格**&#x200B;的狀態行會開啟&#x200B;**移至行**&#x200B;對話方塊，讓您輸入特定的行號。
 
-### 屬性標籤 {#properties-tab}
+### 屬性索引標籤 {#properties-tab}
 
 **屬性標籤**&#x200B;會顯示您已選取之節點的屬性。 您可以新增屬性或刪除現有屬性。
 
@@ -121,7 +121,7 @@ CRXDE Lite的使用者介面有許多部分且有許多功能。
 **建立按鈕**&#x200B;是下拉式功能表，可在選取的節點下建立下列專案：
 
 * 節點 — 具有任意節點型別的節點
-* 檔案 — `nt:file`節點及其nt：resource子節點
+* 檔案 — `nt:file`節點及其nt:resource子節點
 * 資料夾 — `nt:folder`節點
 
 ### 刪除按鈕 {#delete-button}
@@ -169,24 +169,24 @@ CRXDE Lite的使用者介面有許多部分且有許多功能。
 
 ## 建立資料夾 {#creating-a-folder}
 
-若要建立具有CRXDE Lite的資料夾：
+若要使用CRXDE Lite建立資料夾：
 
-1. 在瀏覽器中開啟CRXDE Lite。
+1. 在瀏覽器中開啟CRXDE Lite 。
 1. 在[導覽]窗格中，用滑鼠右鍵按一下您要建立新資料夾的資料夾，選取&#x200B;**建立……**，然後選取&#x200B;**建立資料夾……**。
 
 1. 輸入資料夾&#x200B;**名稱**&#x200B;並按一下&#x200B;**確定**。
 
-1. 按一下[儲存全部]&#x200B;**&#x200B;**&#x200B;儲存伺服器上的變更。
+1. 按一下[儲存全部]****&#x200B;儲存伺服器上的變更。
 
 ## 建立節點 {#creating-a-node}
 
-若要建立具有CRXDE Lite的節點：
+若要使用CRXDE Lite建立節點：
 
-1. 在瀏覽器中開啟CRXDE Lite。
+1. 在瀏覽器中開啟CRXDE Lite 。
 1. 在&#x200B;[**探索者窗格**](#explorer-pane)&#x200B;中，用滑鼠右鍵按一下您要建立新節點的節點，選取&#x200B;**建立**，然後選取&#x200B;**建立節點**。
 1. 輸入&#x200B;**名稱**&#x200B;並選取&#x200B;**型別**。
 1. 按一下&#x200B;**「確定」**。
-1. 按一下[儲存全部]按鈕&#x200B;**[&#128279;](#save-all-button)，將變更儲存在伺服器上。**
+1. 按一下[儲存全部]按鈕&#x200B;[**，將變更儲存在伺服器上。**](#save-all-button)
 
 您現在可以透過修改屬性或建立新節點來調整節點以符合您的需求。
 
@@ -200,17 +200,17 @@ CRXDE Lite的使用者介面有許多部分且有許多功能。
 
 若要使用CRXDE Lite建立屬性：
 
-1. 在瀏覽器中開啟CRXDE Lite。
+1. 在瀏覽器中開啟CRXDE Lite 。
 1. 在&#x200B;[**Explorer窗格**](#explorer-pane)&#x200B;中，選取您要新增屬性的節點。
 1. 在底部窗格的&#x200B;[**屬性標籤**](#properties-tab)&#x200B;中，輸入&#x200B;**名稱**、**型別**&#x200B;和&#x200B;**值**。
 1. 按一下&#x200B;**新增**。
-1. 按一下[儲存全部]按鈕&#x200B;**[&#128279;](#save-all-button)，將變更儲存在伺服器上。**
+1. 按一下[儲存全部]按鈕&#x200B;[**，將變更儲存在伺服器上。**](#save-all-button)
 
 ## 建立檔案 {#creating-a-file}
 
-若要建立具有CRXDE Lite的檔案：
+若要使用CRXDE Lite建立檔案：
 
-1. 在瀏覽器中開啟CRXDE Lite。
+1. 在瀏覽器中開啟CRXDE Lite 。
 1. 在&#x200B;[**Explorer窗格**](#explorer-pane)&#x200B;中，用滑鼠右鍵按一下您要建立檔案的元件，選取&#x200B;**建立**，然後選取&#x200B;**建立檔案**。
 1. 輸入包含副檔名的檔案&#x200B;**名稱**。
 1. 按一下&#x200B;**「確定」**。
@@ -220,11 +220,11 @@ CRXDE Lite的使用者介面有許多部分且有許多功能。
 
 ## 匯出和匯入節點型別 {#exporting-and-importing-node-types}
 
-使用CRXDE Lite，您可以在[壓縮名稱空間和節點型別定義(CND)標籤法](https://jackrabbit.apache.org/jcr/node-type-notation.html)中匯入和/或匯出節點型別定義。
+透過CRXDE Lite，您可以在[壓縮名稱空間和節點型別定義(CND)標籤法](https://jackrabbit.apache.org/jcr/node-type-notation.html)中匯入和/或匯出節點型別定義。
 
-若要以CRXDE Lite匯出節點型別定義：
+若要匯出CRXDE Lite中的節點型別定義：
 
-1. 在瀏覽器中開啟CRXDE Lite。
+1. 在瀏覽器中開啟CRXDE Lite 。
 1. 選取您需要的節點。
 1. 選取&#x200B;**工具**&#x200B;然後&#x200B;**匯出節點型別**。
 1. 定義會以CND標籤法顯示在瀏覽器的新索引標籤中。
@@ -232,7 +232,7 @@ CRXDE Lite的使用者介面有許多部分且有許多功能。
 
 若要匯入節點型別定義，請執行下列動作：
 
-1. 在瀏覽器中開啟CRXDE Lite。
+1. 在瀏覽器中開啟CRXDE Lite 。
 1. 選取&#x200B;**工具**&#x200B;然後&#x200B;**匯入節點型別**。
 1. 新索引標籤會在&#x200B;[**編輯窗格**](#edit-pane)&#x200B;中開啟，標籤為&#x200B;**匯入節點型別**。
 1. 在&#x200B;**匯入節點型別**&#x200B;索引標籤的文字方塊中，輸入定義的CND標籤法。
@@ -241,9 +241,9 @@ CRXDE Lite的使用者介面有許多部分且有許多功能。
 
 ## 記錄 {#logging}
 
-您可以使用CRXDE Lite顯示位於檔案系統`<aem-install-dir>/crx-quickstart/logs`的檔案`error.log`，並使用適當的記錄層級加以篩選。 請依照下列步驟進行：
+透過CRXDE Lite，您可以顯示位於檔案系統`error.log`上的檔案`<aem-install-dir>/crx-quickstart/logs`，並使用適當的記錄層級加以篩選。 請依照下列步驟進行：
 
-1. 在瀏覽器中開啟CRXDE Lite。
+1. 在瀏覽器中開啟CRXDE Lite 。
 1. 在視窗底部&#x200B;[**主控台標籤**](#console-tab)&#x200B;右側的下拉式功能表中，選取&#x200B;**伺服器記錄檔**。
 1. 按一下&#x200B;**停止**&#x200B;圖示以顯示訊息。
 

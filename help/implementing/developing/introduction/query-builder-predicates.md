@@ -3,8 +3,8 @@ title: 查詢產生器述詞參考
 description: AEM as a Cloud Service中查詢產生器API的述詞參考。
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2270'
 ht-degree: 1%
@@ -61,7 +61,7 @@ group.2_group.path=/content/dam/wknd
 group.2_group.type=dam:Asset
 ```
 
-在`/content/wknd/ch/de`的頁面中或`/content/dam/wknd`的資產中搜尋字詞&#x200B;**Management**。
+在&#x200B;**的頁面中或**&#x200B;的資產中搜尋字詞`/content/wknd/ch/de`Management`/content/dam/wknd`。
 
 概念上，它是`fulltext AND ( (path AND type) OR (path AND type) )`。 基於效能原因，這些OR聯結需要良好的索引。
 
@@ -121,8 +121,8 @@ group.2_group.type=dam:Asset
 * **`operation`**
    * `=`為完全相符（預設）
    * 不相等比較的`!=`
-   * `property1`的`>`大於`property2`
-   * `property1`的`>=`大於或等於`property2`
+   * `>`的`property1`大於`property2`
+   * `>=`的`property1`大於或等於`property2`
 
 ### 日期範圍 {#daterange}
 
@@ -181,7 +181,7 @@ group.2_group.type=dam:Asset
 
 ### 語言 {#language}
 
-此述詞尋找特定語言的AEM頁面。 它會同時檢視頁面語言屬性和頁面路徑，這通常會包含頂層網站結構中的語言或地區設定。
+此述詞會尋找特定語言的AEM頁面。 它會同時檢視頁面語言屬性和頁面路徑，這通常會包含頂層網站結構中的語言或地區設定。
 
 僅限篩選的述詞，且無法使用搜尋索引。
 
@@ -265,12 +265,12 @@ group.2_group.type=dam:Asset
 
 * **`property`** — 屬性的相對路徑，例如`jcr:title`。
 * **`value`** — 要檢查屬性的值；遵循JCR屬性型別進行字串轉換。
-* **`N_value`** — 使用`1_value`、`2_value`、...檢查多個值（預設會與`OR`結合，如果`and=true`則為`AND`）。
+* **`N_value`** — 使用`1_value`、`2_value`、...檢查多個值（預設會與`OR`結合，如果`AND`則為`and=true`）。
 * **`and`** — 設定為`true`以結合多個值(`N_value`)與`AND`
 * **`operation`**
    * `equals`為完全相符（預設）。
    * 不相等比較的`unequals`。
-   * 使用`jcr:like` xpath函式的`like` （選擇性）。
+   * 使用`like` xpath函式的`jcr:like` （選擇性）。
    * 沒有相符專案的`not` （例如xpath中的`not(@prop)`，會忽略值引數）。
    * `exists`是否存在。
       * `true`屬性必須存在。
@@ -296,7 +296,7 @@ group.2_group.type=dam:Asset
 
 ### 相對日期範圍 {#relativedaterange}
 
-此述詞使用相對於目前伺服器時間的時間位移，針對日期/時間間隔比對`JCR DATE`屬性。 您可以使用毫秒值或Bugzilla語法`1s 2m 3h 4d 5w 6M 7y` （一秒、兩分鐘、三小時、四天、五週、六個月、七年）來指定`lowerBound`和`upperBound`。 前置詞為`-`，表示目前時間之前的負位移。 如果您只指定`lowerBound`或`upperBound`，則另一個預設為`0`，代表目前時間。
+此述詞使用相對於目前伺服器時間的時間位移，針對日期/時間間隔比對`JCR DATE`屬性。 您可以使用毫秒值或Bugzilla語法`lowerBound` （一秒、兩分鐘、三小時、四天、五週、六個月、七年）來指定`upperBound`和`1s 2m 3h 4d 5w 6M 7y`。 前置詞為`-`，表示目前時間之前的負位移。 如果您只指定`lowerBound`或`upperBound`，則另一個預設為`0`，代表目前時間。
 
 例如：
 
@@ -351,7 +351,7 @@ group.2_group.type=dam:Asset
 #### 屬性 {#properties-21}
 
 * **`tag`** — 要尋找的標籤標題路徑，例如`properties:orientation/landscape`
-* **`N_value`** — 使用`1_value`、`2_value`、...來檢查多個標籤（預設會與`OR`結合，如果`and=true`則會與`AND`結合）
+* **`N_value`** — 使用`1_value`、`2_value`、...來檢查多個標籤（預設會與`OR`結合，如果`AND`則會與`and=true`結合）
 * **`property`** — 要檢視的屬性（或屬性的相對路徑） （預設`cq:tags`）
 
 ### 標籤ID {#tagid}
@@ -363,7 +363,7 @@ group.2_group.type=dam:Asset
 #### 屬性 {#properties-22}
 
 * **`tagid`** — 要尋找的標籤識別碼，例如`properties:orientation/landscape`
-* **`N_value`** — 使用`1_value`、`2_value`、...來檢查多個標籤ID （預設會與`OR`結合，如果`and=true`則為`AND`）
+* **`N_value`** — 使用`1_value`、`2_value`、...來檢查多個標籤ID （預設會與`OR`結合，如果`AND`則為`and=true`）
 * **`property`** — 要檢視的屬性（或屬性的相對路徑） （預設`cq:tags`）
 
 ### tagsearch {#tagsearch}

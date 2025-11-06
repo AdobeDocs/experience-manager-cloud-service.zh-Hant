@@ -3,9 +3,9 @@ title: 屬性和項目類型
 description: 了解通用編輯器需要的資料屬性和項目類型。
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 597315a7d569ebd62243322c543627b7a3535a6b
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 100%
 

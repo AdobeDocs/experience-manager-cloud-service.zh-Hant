@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 5514aec10184d67c24d00d2ed783a154e6587035
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '10070'
+source-wordcount: '10063'
 ht-degree: 2%
 
 ---
@@ -60,7 +60,6 @@ ht-degree: 2%
    * 預覽和發佈視訊資產
 
       * 檢視視訊的來源視訊和編碼轉譯及其相關縮圖：
-
         [預覽視訊](/help/assets/manage-video-assets.md#upload-and-preview-video-assets)或[預覽資產](/help/assets/dynamic-media/previewing-assets.md)
         [管理視訊轉譯](/help/assets/manage-digital-assets.md#managing-renditions)
 
@@ -70,7 +69,6 @@ ht-degree: 2%
    * 使用視訊中繼資料
 
       * 編輯視訊的屬性，例如標題、說明和標籤、自訂中繼資料欄位：
-
         [編輯視訊內容](/help/assets/manage-digital-assets.md#editing-properties)
 
       * [管理數位資產的中繼資料](/help/assets/manage-metadata.md)
@@ -95,11 +93,9 @@ ht-degree: 2%
    * 如果您使用協力廠商WCM系統，您可以將視訊連結或內嵌至網頁。
 
       * 使用URL整合視訊：
-
         [將URL連結至您的網頁應用程式](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)。
 
       * 使用網頁上的內嵌程式碼整合影片：
-
         [將視訊檢視器內嵌在網頁上](/help/assets/dynamic-media/embed-code.md)。
 
    * [產生視訊報告](#viewing-video-reports)。
@@ -135,7 +131,7 @@ Dynamic Media中的視訊是端對端解決方案，可讓您輕鬆發佈高品�
 * 使用完整中繼資料支援來組織、瀏覽和搜尋視訊，以有效管理視訊資產。
 * 將最適化視訊集傳送至網頁版、桌上型電腦、平板電腦和行動裝置。
 
-各種iOS平台均支援最適化視訊串流。 請參閱[Dynamic Media檢視器參考指南](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference)。
+各種iOS平台均支援最適化視訊串流。 請參閱[Dynamic Media檢視器參考指南](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference)。
 
 <!-- OUTDATED 2/28/22 BASED ON CQDOC-18692 Dynamic Media supports mobile video playback for MP4 H.264 video. You can find BlackBerry&reg; devices that support this video format at the following: [Supported video formats on BlackBerry&reg;](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
@@ -151,7 +147,7 @@ OUTDATED 2/28/22 BASED ON CQDOC-18692 You can find Windows&reg; devices that sup
 
 <!-- GIVES a 404 See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480) sample. -->
 
-另請參閱[Dynamic Media檢視器參考指南](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources)中的[Experience Manager Assets檢視器與Dynamic Media Classic &#x200B;](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc)以及[僅適用於Experience Manager Assets的檢視器](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only)。
+另請參閱[Dynamic Media檢視器參考指南](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc)中的[Experience Manager Assets檢視器與Dynamic Media Classic ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only)以及[僅適用於Experience Manager Assets的檢視器](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources)。
 
 ## 最佳實務：使用HTML5視訊檢視器 {#best-practice-using-the-html-video-viewer}
 
@@ -163,7 +159,7 @@ Dynamic Media HTML5視訊檢視器預設集是強大的視訊播放器。 您可
 
 您可以使用HTML5和CSS將設計播放元件的功能結合為單一播放器。 它可以內嵌播放，並根據瀏覽器的功能使用最適化和漸進式串流。 所有這些功能都表示您可以將多媒體內容的觸角伸展至桌上型電腦和行動使用者，並確保簡化的視訊體驗。
 
-另請參閱[Dynamic Media檢視器參考指南](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources)中的[僅適用於Experience Manager Assets的檢視器](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only)。
+另請參閱[Dynamic Media檢視器參考指南](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only)中的[僅適用於Experience Manager Assets的檢視器](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources)。
 
 
 ### 使用HTML5視訊檢視器在桌上型電腦和行動裝置上播放視訊 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
@@ -183,7 +179,7 @@ DASH是國際標準，HLS是Apple標準。 兩者都用於自我調整視訊串�
 
 漸進式視訊的傳送方式，是將視訊下載並儲存在使用者的案頭系統或行動裝置上。
 
-下表說明使用[Dynamic Media HTML5視訊檢視器](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video#interactive-video)在桌上型電腦和行動裝置上播放視訊的裝置、瀏覽器和方法。
+下表說明使用[Dynamic Media HTML5視訊檢視器](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video#interactive-video)在桌上型電腦和行動裝置上播放視訊的裝置、瀏覽器和方法。
 
 <table>
  <tbody>
@@ -443,11 +439,11 @@ Dynamic Media建議使用MP4 H.264視訊編碼預設集。 由於MP4檔案使用
 1. 在Experience Manager的左上角，選取Experience Manager標誌。 在左側導軌中，按一下![槌子圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Hammer_18_N.svg) > **[!UICONTROL Assets]** > **[!UICONTROL 視訊報表]**。
 1. 在「視訊報表」頁面上，執行下列任一項作業：
 
-   * 在右上角附近，選取&#x200B;**[!UICONTROL 重新整理視訊報告]**&#x200B;圖示。
+   * 在右上角附近，選取&#x200B;**[!UICONTROL 重新整理視訊報告]**圖示。
 只有在報表的結束日期是當天時，您才可以使用「重新整理」。 此功能可確保您檢視自上次執行報表以來發生的視訊追蹤。
 
-   * 在右上角附近，選取&#x200B;**[!UICONTROL 日期選擇器]**&#x200B;圖示。
-指定您要視訊資料的開始和結束日期範圍，然後選取&#x200B;**[!UICONTROL 執行報表]**。
+   * 在右上角附近，選取&#x200B;**[!UICONTROL 日期選擇器]**圖示。
+指定您要視訊資料的開始和結束日期範圍，然後選取**[!UICONTROL 執行報表]**。
 
    「排名在前的量度」群組方塊可識別您網站上所有&#x200B;*已發佈*&#x200B;視訊的各種彙總測量。
 
@@ -460,7 +456,7 @@ If you are using an out-of-box video viewer provided by Dynamic Media, or if you
 
 Use the Dynamic Media Viewers Reference and the Dynamic Media HTML5 Viewers SDK to create your own video viewers.
 
-See [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=zh-Hant).
+See [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
 
 Download the Scene7 HTML Viewer SDK from Adobe Developer Connection.
 
@@ -540,7 +536,7 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
 |  | 註解追蹤 |
 |  | 描述性音訊 |
 
-Dynamic Media [&#128279;](/help/assets/file-format-support.md)和所有Dynamic Media視訊檢視器（Dynamic Media *Video_360*&#x200B;檢視器除外）支援的所有視訊格式都可搭配多重字幕和音軌使用。
+Dynamic Media [和所有Dynamic Media視訊檢視器（Dynamic Media ](/help/assets/file-format-support.md)Video_360 *檢視器除外）支援的所有*&#x200B;視訊格式都可搭配多重字幕和音軌使用。
 
 ### 在視訊中新增多個註解和音訊曲目 {#add-msma}
 
@@ -584,7 +580,7 @@ Dynamic Media [&#128279;](/help/assets/file-format-support.md)和所有Dynamic M
       |--- |--- |
       | 檔案名稱 | 預設檔案名稱衍生自原始檔案名稱。 檔案名稱只能在上傳時變更，以後無法變更。 檔案名稱字元需求與AEM Assets相同。<br>其他音訊曲目檔或標題檔不能使用相同的檔名。 |
       | 語言 | 選取音訊曲目的正確語言。 |
-      | 類型 | 選取您正在使用的音軌型別。<br>**原始** — 音訊曲目最初附加至視訊，並在預設選取語言為`English`的標籤中以`[Original]`表示。 雖然&#x200B;**[!UICONTROL 標籤]**&#x200B;和&#x200B;**[!UICONTROL 語言]**&#x200B;可以在&#x200B;**[!UICONTROL 編輯音軌]**&#x200B;對話方塊中變更，但如果重新處理主要視訊，預設值會為原始值。<br>**標準** — 原始語言以外的附加音軌。<br>**音訊描述** — 音訊曲目也包含視訊中非語言動作和手勢的描述性旁白，讓視障者更容易存取內容。 |
+      | 類型 | 選取您正在使用的音軌型別。<br>**原始** — 音訊曲目最初附加至視訊，並在預設選取語言為`[Original]`的標籤中以`English`表示。 雖然&#x200B;**[!UICONTROL 標籤]**&#x200B;和&#x200B;**[!UICONTROL 語言]**&#x200B;可以在&#x200B;**[!UICONTROL 編輯音軌]**&#x200B;對話方塊中變更，但如果重新處理主要視訊，預設值會為原始值。<br>**標準** — 原始語言以外的附加音軌。<br>**音訊描述** — 音訊曲目也包含視訊中非語言動作和手勢的描述性旁白，讓視障者更容易存取內容。 |
       | 標籤 | 在媒體播放器的&#x200B;**[!UICONTROL 選取音訊或標題]**&#x200B;快顯清單中顯示為音軌名稱的文字。 客戶看到的標籤與音訊軌相對應。 例如 `English [Original]`。附加至視訊的音訊標籤預設為`[Original]`。 |
 
       如有需要，您可以稍後變更或編輯此音訊曲目中繼資料。 發佈影片時，這些詳細資料會反映在已發佈影片中的公開URL上。
@@ -605,7 +601,7 @@ Dynamic Media [&#128279;](/help/assets/file-format-support.md)和所有Dynamic M
    ![建立註解選項。](/help/assets/dynamic-media/assets/msma-createcaption.png)
    *「建立註解」下拉式功能表提供您三個選項：上傳檔案、轉換音軌和翻譯註解。*
 
-+++**選項1：** *我擁有自己預先存在的註解檔案，這些檔案都是我想使用的語言* （**[!UICONTROL 上傳檔案]**&#x200B;選項）
+   +++**選項1：** *我擁有自己預先存在的註解檔案，這些檔案都是我想使用的語言* （**[!UICONTROL 上傳檔案]**&#x200B;選項）
 
    1. 在頁面的右上角附近，按一下&#x200B;**[!UICONTROL 建立標題]** > **[!UICONTROL 上傳檔案]**。
    1. 瀏覽並選取一或多個既有的`.vtt`檔案，然後開啟這些檔案。
@@ -629,9 +625,9 @@ Dynamic Media [&#128279;](/help/assets/file-format-support.md)和所有Dynamic M
    1. 如果您在上一個步驟選取了&#x200B;**[!UICONTROL 儲存並關閉]**，而不是選取&#x200B;**[!UICONTROL 儲存]**，您仍可檢視已上傳檔案的處理狀態。 請參閱[檢視上傳的標題和音訊曲目檔案的生命週期狀態](#lifecycle-status-video)。
    1. 繼續步驟8。
 
-+++
+   +++
 
-+++**選項2：** *我希望AI以多種語言產生我的註解檔案* （**[!UICONTROL 轉換音軌]**&#x200B;選項）
+   +++**選項2：** *我希望AI以多種語言產生我的註解檔案* （**[!UICONTROL 轉換音軌]**&#x200B;選項）
 
    1. 在頁面的右上角附近，按一下&#x200B;**[!UICONTROL 建立標題]** > **[!UICONTROL 轉換音軌]**。
 
@@ -645,7 +641,7 @@ Dynamic Media [&#128279;](/help/assets/file-format-support.md)和所有Dynamic M
       | 要轉換的音軌 | 按一下![「向下V形」圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg)，然後選擇您要使用AI產生字幕的上傳音訊曲目檔案。 |
       | 輸出語言 | 按一下![向下V形圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg)，然後選取您要顯示註解檔案的一或多個語言。<br>若要移除選取的語言，請按一下![關閉圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg)。<br>在視訊播放期間，語言清單會依照您在這裡選取的順序顯示在媒體播放器中。 |
 
-   1. 按一下&#x200B;**[!UICONTROL 「完成」]**。
+   1. 按一下&#x200B;**[!UICONTROL 完成]**。
    1. 在頁面右上角附近，在&#x200B;**[!UICONTROL 儲存並關閉]**&#x200B;下拉式清單中，按一下&#x200B;**[!UICONTROL 儲存]**。
    1. 再按一下&#x200B;**[!UICONTROL 註解和音軌]**&#x200B;索引標籤。 已建立一或多個註解檔案並開始處理，如介面的&#x200B;**狀態**&#x200B;欄中所示。 另請參閱[檢視上傳的標題和音訊曲目檔案的生命週期狀態](#lifecycle-status-video)。
 
@@ -663,9 +659,9 @@ Dynamic Media [&#128279;](/help/assets/file-format-support.md)和所有Dynamic M
       如有需要，您可以稍後變更或編輯特定註解中繼資料。 發佈視訊時，這些中繼資料詳細資料會反映在已發佈視訊的公開URL中。
    1. 繼續步驟8。
 
-+++
+   +++
 
-+++**選項3：** *註解檔案(`.vtt`)中的文字需要更正，請重新上傳以取代舊的`.vtt`檔案，然後讓AI翻譯更正的檔案* （**[!UICONTROL 翻譯註解]**&#x200B;選項）
+   +++**選項3：** *註解檔案(`.vtt`)中的文字需要更正，請重新上傳以取代舊的`.vtt`檔案，然後讓AI翻譯更正的檔案* （**[!UICONTROL 翻譯註解]**&#x200B;選項）
 
    1. 按一下&#x200B;**[!UICONTROL 建立註解]** > **[!UICONTROL 翻譯註解]**。 如果已經新增並處理一或多個註解檔案，則此選項可供使用。
 
@@ -679,7 +675,7 @@ Dynamic Media [&#128279;](/help/assets/file-format-support.md)和所有Dynamic M
       | 要翻譯的標題 | 按一下![向下V形圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg)，然後選擇您要使用AI產生註解的註解檔案。 |
       | 輸出語言 | 按一下![向下V形圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg)，然後選取您要顯示註解檔案的一或多個語言。<br>若要移除選取的語言，請按一下![關閉圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg)。<br>在視訊播放期間，語言清單會依照您在這裡選取的順序顯示在媒體播放器中。 |
 
-   1. 按一下&#x200B;**[!UICONTROL 「完成」]**。
+   1. 按一下&#x200B;**[!UICONTROL 完成]**。
    1. 在頁面右上角附近，在&#x200B;**[!UICONTROL 儲存並關閉]**&#x200B;下拉式清單中，按一下&#x200B;**[!UICONTROL 儲存]**。
    1. 再按一下&#x200B;**[!UICONTROL 註解和音軌]**&#x200B;索引標籤。 已建立一或多個註解檔案並開始處理，如介面的&#x200B;**狀態**&#x200B;欄中所示。 另請參閱[檢視上傳的標題和音訊曲目檔案的生命週期狀態](#lifecycle-status-video)。
 
@@ -698,7 +694,7 @@ Dynamic Media [&#128279;](/help/assets/file-format-support.md)和所有Dynamic M
 
    1. 繼續步驟8。
 
-+++
+   +++
 
 1. （可選）在發佈之前預覽視訊，以確保字幕和音訊如預期般運作。 請參閱[預覽含有多個字幕和音軌的視訊](#preview-video-audio-subtitle)。
 1. 發佈視訊。 請參閱[發佈資產](publishing-dynamicmedia-assets.md)。
@@ -840,7 +836,7 @@ Dynamic Media支援透過URL修飾元在視訊中新增單一註解。 請參閱
 
 1. 若要開始播放，請按一下![光碟機圖示](https://spectrum.adobe.com/static/icons/workflow_22/Smock_PlayCircle_22_N.svg)。
 如有需要，請按一下![最大化圖示](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Maximize_22_N.svg)以最大化檢視視窗。
-請注意頁面左下角附近的&#x200B;**[!UICONTROL URL]**&#x200B;和&#x200B;**[!UICONTROL Embed]**&#x200B;按鈕。 使用這些按鈕分別將視訊的URL[連結至您的網頁應用程式](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)或[將視訊內嵌至網頁](/help/assets/dynamic-media/embed-code.md)。
+請注意頁面左下角附近的**[!UICONTROL URL]**&#x200B;和&#x200B;**[!UICONTROL Embed]**&#x200B;按鈕。 使用這些按鈕分別將視訊的URL[連結至您的網頁應用程式](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)或[將視訊內嵌至網頁](/help/assets/dynamic-media/embed-code.md)。
 1. 在預覽頁面的右上角附近，按一下&#x200B;**[!UICONTROL 關閉]**。
 
 ### 從視訊中刪除註解或音訊曲目檔案
@@ -860,7 +856,7 @@ Dynamic Media支援透過URL修飾元在視訊中新增單一註解。 請參閱
    * 註解 — 在&#x200B;**註解**&#x200B;標題下，選取一或多個要從視訊中刪除的註解檔案，然後按一下![刪除圖示](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Delete_22_N.svg) **[!UICONTROL 刪除]**。
    * 音訊曲目 — 在&#x200B;**音訊曲目**&#x200B;標題下，選取一或多個您要從視訊中刪除的音訊曲目檔案，然後按一下![刪除圖示](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Delete_22_N.svg) **[!UICONTROL 刪除]**。
 
-1. 在[刪除]對話方塊中，按一下[確定]。**&#x200B;**
+1. 在[刪除]對話方塊中，按一下[確定]。****
 1. 發佈視訊。
 
 ### 下載已上傳至視訊的註解或音訊曲目檔案
@@ -920,7 +916,7 @@ These features in Dynamic Media make AI-powered video aptions a valuable tool fo
 
 Dynamic Media可以將註解檔案轉換為JSON (JavaScript物件標籤法)格式。 此轉換表示您可以將JSON文字內嵌至網頁，做為影片隱藏但完整的文字記錄。 搜尋引擎接著可以編目/索引內容，讓影片更容易找到，並為客戶提供更多有關影片內容的詳細資料。
 
-如需在URL中使用JSON函式的詳細資訊，請參閱[提供靜態（非影像）內容](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents#image-serving-api)。
+如需在URL中使用JSON函式的詳細資訊，請參閱[提供靜態（非影像）內容](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents#image-serving-api)。
 
 **若要在視訊中新增字幕：**
 
@@ -1079,7 +1075,7 @@ Experience Manager中的所有視訊都必須有關聯的縮圖。 根據預設�
       * 導覽至您想要使用的先前上傳和發佈影像資產。 資產會自動調整大小，以作為視訊的縮圖影像。
       * 選取影像資產，然後按一下&#x200B;**[!UICONTROL 選取]**。
 
-1. 在[變更縮圖]對話方塊中，按一下[儲存變更]。**&#x200B;**
+1. 在[變更縮圖]對話方塊中，按一下[儲存變更]。****
 1. 在影片的「屬性」頁面右上角，按一下「**[!UICONTROL 儲存並關閉]**」或「**[!UICONTROL 儲存]**」。
 
 
@@ -1220,7 +1216,7 @@ String getVideoManifestURI(Resource resource, ManifestType manifestType, boolean
    * 未使用Dynamic Media中的最適化視訊集擷取視訊。
 
 * 在連線至Dynamic Media時發生問題時，`IOException`會獲得記錄。
-* 當傳遞的`manifestType`引數為`ManifestType.DASH`且未使用DASH格式處理視訊時，會記錄`UnsupportedOperationException`。
+* 當傳遞的`UnsupportedOperationException`引數為`manifestType`且未使用DASH格式處理視訊時，會記錄`ManifestType.DASH`。
 
 <!-- THE REMAINING SECTION IS FOR 6.5 ONLY 
 
@@ -1539,7 +1535,7 @@ Enabling any of the above three capabilities, enables all of them. So, if you on
 
 **To enable DASH, multi-captions and multi-audio tracks, and AI-generated captions support on your Dynamic Media account:** 
 
-1. [Use the Admin Console to start the creation of a new support case](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html).
+1. [Use the Admin Console to start the creation of a new support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 1. To create a support case, follow the instructions while ensuring you provide the following information:
 
     * Primary contact name, email, phone.
@@ -1568,7 +1564,7 @@ With multiple caption and audio track capability in Dynamic Media, you can easil
 
 Some of the use cases to consider for adding multiple captions and audio tracks to your primary video include the following:
 
-| Type | Use case | 
+| Type | Use case |
 | --- | --- |
 | Captions | Multiple language support<br>Descriptive text for accessibility |
 | Audio tracks | Multiple language support<br>Commentary tracks<br>Descriptive audio |

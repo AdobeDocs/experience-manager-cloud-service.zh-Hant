@@ -4,8 +4,8 @@ description: 自訂 UI 測試是一項選擇性功能，可讓您為自訂應用
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2601'
 ht-degree: 56%
@@ -149,7 +149,7 @@ UI測試會在&#x200B;[**自訂UI測試**](/help/implementing/cloud-manager/depl
 
 程序集描述符指示插件建立類型的封存`.tar.gz`並指派`ui-test-docker-context`分類器。此外，它列出了必須包含在封存中的檔案，包括以下內容：
 
-* 一個 `Dockerfile`，構建 Docker 鏡像所必需的
+* 一個 `Dockerfile`，構建 Docker 映像所必需的
 * `wait-for-grid.sh` 腳本，其用途如下所述
 * 由 Node.js 項目實現的實際 UI 測試`test-module`資料夾
 
@@ -244,7 +244,7 @@ Cypress: 使用標準函數 `Cypress.env('VARIABLE_NAME')`
 
 ### 產生測試報告 {#generate-test-reports}
 
-Docker 鏡像必須產生 JUnit XML 格式的測試報告，並保存在環境變數 `REPORTS_PATH` 指定的路徑中。JUnit XML 格式是廣泛使用的測試結果報告格式。如果 Docker 鏡像使用 Java 和 Maven，標準測試模組如 [Maven Surefire 插件](https://maven.apache.org/surefire/maven-surefire-plugin/)和 [Maven 故障安全插件](https://maven.apache.org/surefire/maven-failsafe-plugin/)可以開箱即用地產生此類報告。
+Docker 映像必須產生 JUnit XML 格式的測試報告，並保存在環境變數 `REPORTS_PATH` 指定的路徑中。JUnit XML 格式是廣泛使用的測試結果報告格式。如果 Docker 映像使用 Java 和 Maven，標準測試模組如 [Maven Surefire 插件](https://maven.apache.org/surefire/maven-surefire-plugin/)和 [Maven 故障安全插件](https://maven.apache.org/surefire/maven-failsafe-plugin/)可以開箱即用地產生此類報告。
 
 如果 Docker 映像是使用其他編程語言或測試執行計畫實現的，請查看所選工具的文件以了解如何產生 JUnit XML 報告。
 

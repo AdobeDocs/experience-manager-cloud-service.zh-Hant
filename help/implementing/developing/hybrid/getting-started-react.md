@@ -3,12 +3,12 @@ title: 使用React在AEM中開始使用SPA
 description: 本文介紹SPA應用程式範例，說明其如何組合，並可讓您使用React框架快速啟動並執行您自己的SPA。
 exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 index: false
-source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1127'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
@@ -70,7 +70,7 @@ SPA製作功能提供全方位的解決方案，可支援AEM中的SPA。 本文�
 
 `"aem-clientlib-generator": "^1.4.1",`
 
-如需詳細資訊，請參閱GitHub[&#128279;](https://github.com/wcm-io-frontend/aem-clientlib-generator)上的aem-clientlib-generator。
+如需詳細資訊，請參閱GitHub[上的](https://github.com/wcm-io-frontend/aem-clientlib-generator)aem-clientlib-generator。
 
 `aem-clientlib-generator`在`clientlib.config.js`檔案中的設定如下。
 
@@ -111,7 +111,7 @@ module.exports = {
 
 ### AEM 專案原型 {#aem-project-archetype}
 
-任何 AEM 專案都應使用 [AEM 專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)，它支援使用 React 或 Angular 的 SPA 專案並使用 SPA SDK。
+任何 AEM 專案都應使用 [AEM 專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)，它支援使用 React 或 Angular 的 SPA 專案並使用 SPA SDK。
 
 ## 應用程式結構 {#application-structure}
 
@@ -184,7 +184,7 @@ MapTo('my-react-app/components/structure/page')(withComponentMappingContext(AppP
 
 在此範例中，`AppPage`類別會擴充`Page`，其中包含之後可以使用的內部內容方法。
 
-`Page`會擷取頁面模型的JSON表示法，並處理內容以包裝/裝飾頁面的每個元素。 在[SPA Blueprint](blueprint.md)檔案中可以找到`Page`的更多詳細資料。
+`Page`會擷取頁面模型的JSON表示法，並處理內容以包裝/裝飾頁面的每個元素。 在`Page`SPA Blueprint[檔案中可以找到](blueprint.md)的更多詳細資料。
 
 ### Image.js {#image-js}
 

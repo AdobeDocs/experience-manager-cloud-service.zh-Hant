@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.2.0 版�
 feature: Release Information
 role: Admin
 exl-id: b893663d-35f1-43ae-a029-4c249b117f2d
-source-git-commit: 403ffbede5438131d0b0e770215b990e2d16c018
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1527'
 ht-degree: 96%
@@ -57,7 +57,7 @@ ht-degree: 96%
 
 **內容片段編輯器轉出**
 
-我們將繼續使用[Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) （使用Spectrum-UI）在AEM as a Cloud Service中啟用新的[內容片段編輯器](/help/sites-cloud/administering/content-fragments/authoring.md)。 繼在 2024 年 11 月成為所有雲端服務開發人員環境的預設選項後，此功能將在 2025 年 4 月 1 日成為所有中繼環境的預設選項，並在 2025 年 5 月 1 日成為所有生產環境的預設選項。在所有情況下，使用者仍然可以選擇恢復使用 AEM Touch UI 中的傳統內容片段編輯器。
+我們將繼續使用[Unified Shell](/help/sites-cloud/administering/content-fragments/authoring.md) （使用Spectrum-UI）在AEM as a Cloud Service中啟用新的[內容片段編輯器](/help/overview/aem-cloud-service-on-unified-shell.md)。 繼在 2024 年 11 月成為所有雲端服務開發人員環境的預設選項後，此功能將在 2025 年 4 月 1 日成為所有中繼環境的預設選項，並在 2025 年 5 月 1 日成為所有生產環境的預設選項。在所有情況下，使用者仍然可以選擇恢復使用 AEM Touch UI 中的傳統內容片段編輯器。
 
 **翻譯 HTTP API**
 
@@ -128,6 +128,7 @@ AEM Forms 搶先體驗計劃為您提供獨一無二的機會，獲得先進創�
 邊緣運算可讓資料處理更接近瀏覽器，其優點包括減少延遲。Adobe 想要知道，您覺得這項技術對於 AEM Publish Delivery 和 Edge Delivery Services 專案來說是否實用。此外，我們也想知道您預計會如何使用它，以作為我們擬定產品路徑圖的參考。
 
 一些可能的使用案例：
+
 * 使用 IdP 進行驗證以控制內容存取
 * 根據地理位置、裝置類型、使用者屬性等，轉譯動態 (個人化、本地化) 內容。
 * 進階影像處理

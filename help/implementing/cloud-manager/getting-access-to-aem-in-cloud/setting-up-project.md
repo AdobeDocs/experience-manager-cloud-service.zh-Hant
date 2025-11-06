@@ -4,8 +4,8 @@ description: 瞭解如何使用Maven構建AEM專案，以及在建立自己的�
 exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 88b4864da30fbf201dbd5bde1ac17d3be977648f
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1395'
 ht-degree: 68%
@@ -18,12 +18,12 @@ ht-degree: 68%
 
 ## 專案設定詳細資料 {#project-setup-details}
 
-為了使用Cloud Manager成功建置和部署，AEM專案需要遵守以下准則：
+AEM專案若要使用Cloud Manager成功建置和部署，必須遵守下列准則：
 
 * 必須使用[Apache Maven](https://maven.apache.org)建置專案。
 * 在 Git 存放庫的根目錄中必須有一個 `pom.xml` 檔案。如有必要，此 `pom.xml` 檔案可參照的子模組 (這些子模組又可能有其他子模組等) 數量並無限制。
 * 您可以在`pom.xml`檔案中新增對其他Maven成品存放庫的參照。 設定後，可支援對[受密碼保護的成品存放庫](#password-protected-maven-repositories)的存取權。但是，不支援對受網路保護的成品存放庫的存取權。
-* 透過掃描在名為`target`的目錄中所包含的內容套件`.zip`檔案來探索可部署的內容套件。 任何數量的子模組都可產生內容套件。
+* 透過掃描在名為`.zip`的目錄中所包含的內容套件`target`檔案來探索可部署的內容套件。 任何數量的子模組都可產生內容套件。
 * 透過掃描`.zip`個檔案（也包含在名為`target`的目錄中）探索可部署的Dispatcher成品，這些檔案包含名為`conf`和`conf.d`的目錄。
 * 如果有超過一個內容套件，則不保證套件部署的順序。 如果需要特定的順序，可以使用內容套件相依性來定義順序。
 * 部署時可能會[略過](#skipping-content-packages)套件。
@@ -115,7 +115,7 @@ ht-degree: 68%
 **若要在Cloud Manager中使用受密碼保護的Maven存放庫：**
 
 1. 將密碼 (以及可選的使用者名) 指定為機密[管道變數](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)。
-1. 然後在一個名為`.cloudmanager/maven/settings.xml`在 git 存放庫中，它遵循[Maven 設定檔案](https://maven.apache.org/settings.html)架構。
+1. 然後在一個名為`.cloudmanager/maven/settings.xml`在 git 存放庫中，它遵循[Maven 設定檔案](https://maven.apache.org/settings.html)結構。
 
 當 Cloud Manager 建置過程開始時：
 
@@ -213,7 +213,7 @@ ht-degree: 68%
 
 ### 部署專案原始程式碼 {#deploying-project-sources}
 
-同時部署整個專案的原始程式碼以及二進位至 Maven 存放庫是建議的做法。如此可讓您重建精確的成品。
+同時部署整個專案的原始程式碼以及二進位至 Maven 存放庫是建議的做法。 如此可讓您重建精確的成品。
 
 以下列方式在您的專案中設定maven-assembly-plugin：
 
@@ -278,7 +278,7 @@ ht-degree: 68%
 
 ## 組建成品重複使用 {#build-artifact-reuse}
 
-在許多情況下，相同的程式碼會部署到多個 AEM 環境中。在可能的情況下，當 Cloud Manager 偵測到於多個全端管道執行中都使用相同的 Git 認可時，會避免重新建置程式碼庫。
+在許多情況下，會將相同的程式碼部署到多個 AEM 環境中。在可能的情況下，當 Cloud Manager 偵測到於多個全端管道執行中都使用相同的 Git 認可時，會避免重新建置程式碼庫。
 
 開始執行時，將擷取分支管道的最新 HEAD 認可。在 UI 中以及透過 API 看得見該認可雜湊。當建置步驟成功完成時，所產生的成品將根據該認可雜湊進行儲存，並可能在後續管道執行中重複使用。
 

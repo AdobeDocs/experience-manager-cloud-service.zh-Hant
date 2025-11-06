@@ -3,10 +3,10 @@ title: 使用 MSM 重複使用資產
 description: 跨衍生自父資產並連結至該資產的多個頁面/資料夾使用資產。 資產會與主要副本保持同步，只要按幾下，即可從父資產接收更新。
 contentOwner: AG
 mini-toc-levels: 1
-role: User, Admin, Architect
+role: User, Admin, Developer
 feature: Asset Management
 exl-id: a71aebdf-8e46-4c2d-8960-d188b14aaae9
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '3407'
 ht-degree: 11%
@@ -17,7 +17,7 @@ ht-degree: 11%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/reuse-assets-using-msm.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/reuse-assets-using-msm.html) |
 | AEM as a Cloud Service  | 本文章 |
 
 [!DNL Adobe Experience Manager]中的多網站管理員(MSM)功能可讓使用者重複使用編寫一次且可在多個網站位置重複使用的內容。 [!DNL Assets]可使用相同功能的MSM名稱數位資產。 使用[!DNL Assets]的MSM時，您可以：
@@ -34,7 +34,7 @@ ht-degree: 11%
 >
 >只有在透過&#x200B;**[!UICONTROL Assets]**&#x200B;主控台使用內容片段時，才能使用內容片段的MSM。
 >
->使用&#x200B;**[!UICONTROL 內容片段]**&#x200B;主控台時，MSM功能&#x200B;*無法*&#x200B;使用。
+>使用&#x200B;*內容片段*&#x200B;主控台時，MSM功能&#x200B;**[!UICONTROL 無法]**&#x200B;使用。
 
 ## 瞭解MSM的好處和概念 {#concepts}
 
@@ -225,15 +225,15 @@ MSM會維護來源資產與其即時副本之間的即時關係，以便：
 
 | [!DNL Experience Manager]介面的位置 | 使用的時機與原因 | 使用方法 |
 |---|---|---|
-| [!UICONTROL 個參考]邊欄 | 當您已選取來源時，請快速同步處理。 | 檢視來源[&#128279;](#ref-rail-source)之參考邊欄中的快速動作 |
+| [!UICONTROL 個參考]邊欄 | 當您已選取來源時，請快速同步處理。 | 檢視來源[之參考邊欄中的](#ref-rail-source)快速動作 |
 | [!UICONTROL 屬性]頁面中的工具列 | 當您已經開啟即時副本屬性時，啟動同步。 | 請參閱[同步處理即時副本](#sync-lc) |
 | [!UICONTROL 即時副本總覽]主控台 | 選取來源資料夾或[!UICONTROL 即時副本總覽]主控台已開啟時，快速同步處理多個資產（不一定是全部）。 系統會一次起始一個資產的同步動作，但可一次同步多個資產的更快速方式。 | 檢視即時副本資料夾中許多資產的[動作](#bulk-actions) |
 
 ### 同步即時副本 {#sync-lc}
 
-若要啟動同步動作，請開啟即 **[!UICONTROL 時副本的「屬性]** 」頁面，按一下「即時 **&#x200B;**&#x200B;副本」，然後從工具列按一下所要的動作。
+若要啟動同步動作，請開啟即 **[!UICONTROL 時副本的「屬性]** 」頁面，按一下「即時 **** 副本」，然後從工具列按一下所要的動作。
 
-要查看與同步操作相關的狀態和資訊，請參 [閱即時副本的資訊和狀態](#status-lc-asset) [以及資料夾所有即時副本的狀態](#status-lc-folder)。
+要查看與同步操作相關的狀態和資訊，請參 [閱即時副本的資訊和狀態](#status-lc-asset)[以及資料夾所有即時副本的狀態](#status-lc-folder)。
 
 ![同步處理動作提取對來源](assets/livecopy_sync.png)所做的變更
 
@@ -279,7 +279,7 @@ MSM會維護來源資產與其即時副本之間的即時關係，以便：
 
 您可以暫時暫停關係，以防止即時副本接收對來源資產或資料夾所做的修改。 也可以恢復關係，讓即時副本開始從來源接收修改。
 
-若要暫停或繼續，請開啟即 **[!UICONTROL 時副本的「屬性]** 」頁面，按一下「即時副本 **&#x200B;**&#x200B;」，然後從工具列按一下所要的動作。
+若要暫停或繼續，請開啟即 **[!UICONTROL 時副本的「屬性]** 」頁面，按一下「即時副本 **** 」，然後從工具列按一下所要的動作。
 
 或者，您也可以從即時副本概觀主控台，快速暫停或繼續即時副本資料夾中多 **[!UICONTROL 個資產的關係]** 。請參 [閱對即時副本資料夾中的許多資產採取動作](#bulk-actions)。
 
@@ -309,7 +309,7 @@ MSM會維護來源資產與其即時副本之間的即時關係，以便：
 
    >[!CAUTION]
    >
-   >當您按一下對話方塊中的&#x200B;**[!UICONTROL 分離]**&#x200B;時，關係會立即移除。 按一下[屬性]頁面上的[取消] **&#x200B;**&#x200B;無法復原它。
+   >當您按一下對話方塊中的&#x200B;**[!UICONTROL 分離]**&#x200B;時，關係會立即移除。 按一下[屬性]頁面上的[取消] ****&#x200B;無法復原它。
 
 或者，您也可以從&#x200B;**[!UICONTROL 即時副本概述]**&#x200B;主控台快速分離即時副本資料夾中的多個資產。 請參 [閱對即時副本資料夾中的許多資產採取動作](#bulk-actions)。
 

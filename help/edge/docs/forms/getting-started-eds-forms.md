@@ -3,9 +3,9 @@ title: 開始使用 AEM Edge Delivery Services 上的 Forms
 description: 了解如何在 Adobe Experience Manager Edge Delivery Services 上建立和傳遞高效能表單，並強調通用編輯器的製作方法。
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-role: Admin, Architect, Developer
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '580'
 ht-degree: 100%
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 # 開始使用 AEM Edge Delivery Services 上的 Forms
 
 <!--
-<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hant#new-features">pre-release channel</a>. </span>
+<span class="preview"> This is a pre-release feature available through our <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">pre-release channel</a>. </span>
 -->
 
 透過 Adobe Experience Manager (AEM) Edge Delivery Services (EDS)，您可以從邊緣提供極快速且高度可擴充的網頁體驗。本指南說明&#x200B;**如何建置和發佈符合這些體驗的表單**，並具備明確的建議階層：
@@ -24,7 +24,7 @@ ht-degree: 100%
 2. **文件型製作 (文件/試算表)－非常適合快速、簡單的表單**
 3. **文件製作 (DA) – 可以將表單嵌入至 DA 製作的頁面中**
 
-最後，您將能選擇正確的製作方法、了解提交選項，並按照後續步驟製作立即可用的表單。
+最後，您將能選擇正確的製作方法、了解提交選項，並按照後續步驟製作生產就緒的表單。
 
 
 

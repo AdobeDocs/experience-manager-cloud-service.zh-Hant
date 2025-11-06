@@ -4,17 +4,17 @@ description: 瞭解如何編輯頁面的屬性並變更頁面的行為以及其�
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 83e61ae4af3dcd76ad51722decd0032cceb737a5
+exl-id: 8fee7e24-bbaa-4cc4-a047-165c9f2cd973
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '861'
 ht-degree: 1%
 
 ---
 
-
 # 編輯頁面屬性 {#page-properties}
 
-瞭解如何編輯頁面[&#128279;](/help/sites-cloud/authoring/sites-console/page-properties.md)的屬性並變更頁面的行為以及其管理方式。
+瞭解如何編輯頁面[的](/help/sites-cloud/authoring/sites-console/page-properties.md)屬性並變更頁面的行為以及其管理方式。
 
 >[!TIP]
 >
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 您可以在AEM中的多個位置編輯頁面屬性。
 
-* [從 &#x200B;](#from-the-sites-console)
+* [從 ](#from-the-sites-console)
 * [從頁面編輯器](#from-the-page-editor)
 * [從通用編輯器](#from-the-universal-editor)
 
@@ -87,14 +87,18 @@ ht-degree: 1%
 大量編輯視窗會垂直分成兩半：
 
 * 左側是您選取要大量編輯的頁面的清單。
+
    * 您可以視需要選取/取消選取頁面。
    * 依預設，會選取全部。
+
 * 右側是可大量編輯的[屬性清單。](/help/implementing/developing/extending/bulk-editor.md)
+
    * 和檢視單一頁面屬性時一樣，屬性會依索引標籤排序。
    * 會顯示所有選定頁面上可用的屬性，這些屬性已明確定義為可大量編輯。
    * 如果您將頁面選取範圍縮小至一頁，則會顯示所有屬性。
    * 只會顯示具有相同值的屬性。
    * 當欄位有多個值時（例如Tags），只有在&#x200B;*所有*&#x200B;為通用時，才會顯示值。 如果只有部分相同，則僅在編輯時顯示。
+
 * 不同頁面中相同但值不同的欄位會以特殊值（例如文字`<Mixed Entries>`）表示。
 
 您可以更新所選頁面上可用欄位中的值。 當您選取&#x200B;**完成**&#x200B;時，新值會套用至所有選取的頁面。 當欄位有多個值時（例如「標籤」），您可以附加新值或移除通用值。

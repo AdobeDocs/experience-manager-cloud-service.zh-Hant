@@ -4,10 +4,10 @@ description: 了解如何在 Adobe Experience Manager 中使用 GraphiQL IDE。
 feature: Headless, Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
-workflow-type: ht
-source-wordcount: '1136'
-ht-degree: 100%
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
+source-wordcount: '1135'
+ht-degree: 98%
 
 ---
 
@@ -25,6 +25,7 @@ ht-degree: 100%
 >您必須在[設定瀏覽器](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)中[設定您的端點](/help/headless/graphql-api/graphql-endpoint.md)，才能使用 GraphiQL IDE。
 
 **GraphiQL** 工具可讓您透過以下方式對 GraphQL 查詢進行測試和偵錯：
+
 * 選擇適合您要用於查詢之 Sites 設定的&#x200B;**端點**
 * 直接輸入新查詢
 * 建立和存取&#x200B;**[持續性查詢](/help/headless/graphql-api/persisted-queries.md)**
@@ -141,7 +142,7 @@ GraphiQL IDE 也讓您管理[查詢變數](/help/headless/graphql-api/content-fr
 
 >[!NOTE]
 >
->持續性查詢快取 `Time To Live` {&quot;cache-control&quot;:&quot;parameter&quot;:value} 定義的預設值為 2 小時 (7200 秒)。
+>持續查詢的快取`Time To Live` {&quot;cache-control&quot;：&quot;parameter&quot;:value}定義的預設值為2小時（7200秒）。
 
 ## 取消發佈持續性查詢 {#unpublishing-persisted-queries}
 

@@ -4,8 +4,8 @@ description: 瞭解如何使用Cloud Manager新增您自己的IP允許清單。
 exl-id: 769be71f-5c11-4f98-8906-7a5667a25aee
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 39af50d05fcbd22b3f4b4664f2c99590e7fb9da9
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '310'
 ht-degree: 7%
@@ -47,7 +47,7 @@ ht-degree: 7%
 
 1. 完成輸入最後一個IP位址或CIDR區塊之後，請按`Enter`確認輸入。 只有在您按下`Enter`後，專案才會被確認，且&#x200B;**儲存**&#x200B;按鈕會變成使用中。
 
-1. 按一下「**儲存**」。
+1. 按一下&#x200B;**儲存**。
 
 儲存後，新建立的IP允許清單會在&#x200B;**IP允許清單**&#x200B;頁面的表格中顯示為一列。
 

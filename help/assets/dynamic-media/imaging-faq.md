@@ -1,19 +1,19 @@
 ---
-title: 智慧型影像
+title: 智慧型影像處理
 description: 瞭解智慧型影像與Adobe Sensei AI搭配可套用每位使用者獨特的檢視特性，以自動提供針對其體驗最佳化的正確影像，進而提高效能和參與度。
 contentOwner: Rick Brough
 feature: Asset Management,Renditions,Best Practices
 role: User
 mini-toc-levels: 2
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '3221'
 ht-degree: 1%
 
 ---
 
-# 智慧型影像 {#smart-imaging}
+# 智慧型影像處理 {#smart-imaging}
 
 瞭解智慧型影像與Adobe Sensei AI搭配可套用每位使用者獨特的檢視特性，以自動提供針對其體驗最佳化的正確影像，進而提高效能和參與度。
 
@@ -86,7 +86,7 @@ In terms of images, the goal is to serve the best quality images as efficiently 
 
 您可以將`bfc=off`附加至影像的URL以關閉智慧型影像。
 
-另請參閱Dynamic Media影像提供與轉譯API中的[bfc](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc)。
+另請參閱Dynamic Media影像提供與轉譯API中的[bfc](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc)。
 
 ### 關於裝置畫素比最佳化 {#dpr}
 
@@ -96,7 +96,7 @@ In terms of images, the goal is to serve the best quality images as efficiently 
 
 目前，顯示器的畫素密度來自Akamai CDN標題值。
 
-| 影像URL中的允許值 | 描述 |
+| 影像URL中的允許值 | 說明 |
 |---|---|
 | `dpr=off` | 關閉個別影像URL層級的DPR最佳化。 |
 | `dpr=on,dprValue` | 使用自訂值（任何使用者端邏輯或其他方式偵測到的值）覆寫智慧型影像偵測到的DPR值。 `dprValue`的允許值是大於0的任何數字。 |
@@ -119,7 +119,7 @@ In terms of images, the goal is to serve the best quality images as efficiently 
 
 您的公司可以將`network=off`附加至影像URL，以停用個別影像的網路頻寬最佳化。
 
-| 影像URL中的允許值 | 描述 |
+| 影像URL中的允許值 | 說明 |
 |---|---|
 | `network=off` | 關閉個別影像URL層級的網路最佳化。 |
 
@@ -279,7 +279,7 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 
       * 列出所有相關網域，例如&#x200B;*`company.com`*&#x200B;或&#x200B;*`mycompany.scene7.com`*
       * 智慧型影像支援一般和自訂網域。
-      * 若要識別您的網域，請開啟[Dynamic Media Classic案頭應用程式](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started)並登入您的公司帳戶。
+      * 若要識別您的網域，請開啟[Dynamic Media Classic案頭應用程式](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started)並登入您的公司帳戶。
 
          1. 瀏覽至&#x200B;**[!UICONTROL 設定]** > **[!UICONTROL 應用程式設定]** > **[!UICONTROL 一般設定]**。
          1. 尋找&#x200B;**[!UICONTROL 發佈的伺服器名稱]**&#x200B;欄位以確認您的網域。

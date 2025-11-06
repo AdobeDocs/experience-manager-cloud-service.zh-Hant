@@ -4,7 +4,7 @@ description: 瞭解中繼資料最佳實務，以有效管理您的數位資產�
 role: User, Admin
 exl-id: d90519df-55a6-4e23-81ad-ff2365d71c0d
 feature: Metadata, Best Practices
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1384'
 ht-degree: 1%
@@ -97,7 +97,7 @@ experience manager metadata-->
 
 >[!NOTE]
 >
->瞭解如何[管理數位資產的中繼資料](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html?lang=zh-Hant)。
+>瞭解如何[管理數位資產的中繼資料](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html)。
 
 ### 與中繼資料策略一致
 
@@ -107,13 +107,15 @@ experience manager metadata-->
 
 以下是一些要遵循的最佳實務：
 
-* **避免重複值：**&#x200B;如果您擁有行銷活動的影像集合，請使用一致的名稱並避免重複。<br>
-舉例來說，請實作系統性的命名慣例（例如*event_promotion*&#x200B;和&#x200B;*product_launch*），而不使用重複的名稱（如&#x200B;*campaign_image_001*&#x200B;和&#x200B;*campaign_image_002*），以確保識別清楚且有序。
+* **避免重複值：**&#x200B;如果您擁有行銷活動的影像集合，請使用一致的名稱並避免重複。
 
-* **有效使用控制辭彙：**&#x200B;使用標準化的標籤辭彙來實作控制辭彙。 瞭解如何有效實作[AEM Tagging Framework](/help/implementing/developing/introduction/tagging-framework.md)。  <br>
-例如，當使用主題標籤影像以維持系統順序時，請一致使用*product_launch*&#x200B;或&#x200B;*event_promotion*&#x200B;等辭彙。
+  舉例來說，請實作系統性的命名慣例（例如&#x200B;*event_promotion*&#x200B;和&#x200B;*product_launch*），而不使用重複的名稱（如&#x200B;*campaign_image_001*&#x200B;和&#x200B;*campaign_image_002*），以確保識別清楚且有序。
 
-* **維持正確性和完整性：**&#x200B;若要保持中繼資料的一致性，正確性、完整性和各種來源之間的一致性至關重要。
+* **有效使用控制辭彙：**&#x200B;使用標準化的標籤辭彙來實作控制辭彙。 瞭解如何有效實作[AEM Tagging Framework](/help/implementing/developing/introduction/tagging-framework.md)。
+
+  例如，當使用主題標籤影像以維持系統順序時，請一致使用&#x200B;*product_launch*&#x200B;或&#x200B;*event_promotion*&#x200B;等辭彙。
+
+* **維持正確性和完整性：**若要保持中繼資料的一致性，正確性、完整性和各種來源之間的一致性至關重要。
 例如，將中繼資料新增至PDF檔案時，請確認作者名稱和關鍵字等詳細資料正確且完整。
 
 #### 影片：將大量中繼資料新增至資產
@@ -131,14 +133,14 @@ experience manager metadata-->
    1. 移至&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL 檔案]** > **[!UICONTROL [資產資料夾]]**。
    1. 選取您要更新中繼資料的資產，然後按一下&#x200B;**[!UICONTROL 屬性]**。
    1. 導覽至&#x200B;**[!UICONTROL 進階]**&#x200B;索引標籤，然後按一下&#x200B;**[!UICONTROL 提升搜尋關鍵字]**&#x200B;下的&#x200B;**[!UICONTROL 新增]**。 <br>您必須使用預設的中繼資料結構描述來提升搜尋關鍵字。
-   1. 輸入您要增加搜尋的關鍵字，然後按一下[新增]。**&#x200B;**<br>
+   1. 輸入您要增加搜尋的關鍵字，然後按一下[新增]。****<br>
 您可以新增多個關鍵字，並根據您的優先順序排列關鍵字。
    1. 按一下&#x200B;**[!UICONTROL 儲存並關閉]**。
 使用您新增的關鍵字搜尋資產。 資產會出現在最熱門的搜尋結果中。
 
-  瞭解如何[在Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=zh-Hant)中提升搜尋。
+  瞭解如何[在Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html)中提升搜尋。
 
-* **自訂中繼資料欄位：**&#x200B;自訂中繼資料欄位，以擷取有關資產的其他資訊。 例如，為專案詳細資訊、版權資訊或任何其他可增強搜尋功能的相關資料新增特定欄位。 瞭解如何在Experience Manager Assets中編輯或新增自訂中繼資料[&#128279;](meta-edit.md)。
+* **自訂中繼資料欄位：**&#x200B;自訂中繼資料欄位，以擷取有關資產的其他資訊。 例如，為專案詳細資訊、版權資訊或任何其他可增強搜尋功能的相關資料新增特定欄位。 瞭解如何在Experience Manager Assets中編輯或新增自訂中繼資料[。](meta-edit.md)
 
 
 * **中繼資料驗證：**&#x200B;實作中繼資料專案的驗證檢查，以確保一致性和準確性。 使用受控辭彙表可讓驗證程式更順暢，並減少輸入內容不清楚或不一致的機率。 這可能涉及為某些中繼資料屬性設定指導方針，以避免資訊模糊或不一致。
@@ -162,8 +164,8 @@ experience manager metadata-->
 
 ### 分析內容歷程
 
-檢查內容供應鏈以尋找中繼資料來源，並動員所有利害關係人（從最高層開始）參與，以取得徹底的最佳實務方法。 讓不同的員工參與，以確保整個組織的完整支援。 <br>在不同階段合併中繼資料，以分擔在上傳期間提供資產詳細資訊的責任。 例如，整合[!DNL Experience Manager Assets]和[!DNL Workfront]可在中繼資料管理、提升內容建立與管理的效率及共同作業方面提供顯著的好處。 此整合可確保連結資產的有效中繼資料同步，在[!DNL Workfront]中進行變更時自動更新專案詳細資料。
+檢查內容supply chain以尋找中繼資料來源，並動員所有利害關係人（從頭開始）參與，以獲得徹底的最佳實務方法。 讓不同的員工參與，以確保整個組織的完整支援。 <br>在不同階段合併中繼資料，以分擔在上傳期間提供資產詳細資訊的責任。 例如，整合[!DNL Experience Manager Assets]和[!DNL Workfront]可在中繼資料管理、提升內容建立與管理的效率及共同作業方面提供顯著的好處。 此整合可確保連結資產的有效中繼資料同步，在[!DNL Workfront]中進行變更時自動更新專案詳細資料。
 
 及早溝通目標、進度、里程碑和挑戰，以接收所有利害關係人的意見與合作。 鼓勵整個組織的共同作業，建立有效率的流程和寶貴的中繼資料。
 
-深入瞭解[中繼資料及其相關概念](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-concepts.html?lang=zh-Hant)，以有效管理您的Experience Manager中繼資料。
+深入瞭解[中繼資料及其相關概念](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-concepts.html)，以有效管理您的Experience Manager中繼資料。

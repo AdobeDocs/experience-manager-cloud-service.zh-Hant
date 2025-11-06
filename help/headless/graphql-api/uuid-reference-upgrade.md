@@ -4,7 +4,7 @@ description: 瞭解如何升級您的內容片段，以在Adobe Experience Manag
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
 exl-id: 004d1340-8e3a-4e9a-82dc-fa013cea45a7
-source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1123'
 ht-degree: 2%
@@ -128,7 +128,7 @@ ht-degree: 2%
 
 ### 範例內容升級請求 {#example-content-upgrade-request}
 
-+++要求
++++請求
 
 ```http
 POST http://localhost:4502/libs/dam/cfm/maintenance.json
@@ -191,7 +191,7 @@ Content-Length: 386
 
 ### 內容升級狀態請求範例 {#example-content-upgrade-status-request}
 
-+++要求
++++請求
 
 ```http
 GET http://localhost:4502/libs/dam/cfm/maintenance.json?action=status&jobId=91af43a6-63ff-45e5-ac7b-06ccf565bdfa
@@ -308,7 +308,7 @@ com.adobe.cq.dam.cfm.impl.servicing.PhaseChainProcessor Phase phase-x, processed
 
 ### 中止內容升級請求的範例 {#example-abort-content-upgrade-request}
 
-+++要求
++++請求
 
 ```http
 POST http://localhost:4502/libs/dam/cfm/maintenance.json

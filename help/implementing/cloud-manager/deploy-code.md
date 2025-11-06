@@ -4,8 +4,8 @@ description: 了解如何在 AEM as a Cloud Service 中使用 Cloud Manager 管�
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 2aea79d42ef9627a8fc758077a7ee012592888d7
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1185'
 ht-degree: 41%
@@ -24,7 +24,7 @@ ht-degree: 41%
 1. **部署至中繼環境** — 程式碼已建置並部署至中繼環境，以進行自動化功能測試、UI測試、體驗稽核和使用者驗收測試(UAT)。
 1. **部署到生產環境** — 一旦組建在Stage上經過驗證，並核准升級至生產環境，相同的組建成品就會部署到生產環境。
 
-_只有 Full Stack Code 流水線類型支援程式碼掃描、功能測試、UI 測試和體驗稽核。_
+_只有 Full Stack Code 管道類型支援程式碼掃描、功能測試、UI 測試和體驗稽核。_
 
 ## 部署流程 {#deployment-process}
 
@@ -36,7 +36,7 @@ _只有 Full Stack Code 流水線類型支援程式碼掃描、功能測試、UI
 
 ## 在AEM as a Cloud Service中使用Cloud Manager部署您的程式碼 {#deploying-code-with-cloud-manager}
 
-[在配置了 Pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) (存放庫、環境和測試環境) 後，您就可以部署程式碼。
+在[設定了生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)  (儲存庫、環境和測試環境) 後，您就可以部署程式碼。
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 

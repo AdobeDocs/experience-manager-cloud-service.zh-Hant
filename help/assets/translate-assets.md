@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management, Translation
 role: Admin, User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2615'
 ht-degree: 17%
@@ -16,7 +16,7 @@ ht-degree: 17%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/multilingual-assets.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/multilingual-assets.html?lang=en) |
 | AEM as a Cloud Service  | 本文章 |
 
 多語言資產是指具有多語言二進位檔案、中繼資料和標籤的資產。 一般而言，資產的二進位檔案、中繼資料和標籤會以一種語言存在，然後會翻譯成其他語言以用於多語言專案。 Adobe Experience Manager Assets可讓您自動化翻譯資產（包括二進位檔案、中繼資料和標籤）的工作流程，以產生其他語言版本的資產，以用於多語言專案。
@@ -30,11 +30,11 @@ AEM中的機器資產翻譯：機器翻譯服務會立即翻譯資產的中繼�
 <!--
 We have multiple articles around translation of assets. For now, dumping all content in this article to remove others and create only ONE UBER article.
 
-https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/translation-projects.html?lang=zh-Hant
-https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/preparing-assets-for-translation.html?lang=zh-Hant
-[Apply translation cloud services to folders](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/transition-cloud-services.html?lang=zh-Hant)
+https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/translation-projects.html
+https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/preparing-assets-for-translation.html
+[Apply translation cloud services to folders](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/transition-cloud-services.html)
 
-One of these articles is a copy of [Preparing Content for Translation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/tc-prep.html?lang=zh-Hant
+One of these articles is a copy of [Preparing Content for Translation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/tc-prep.html
 
 -->
 
@@ -111,7 +111,7 @@ Also see, [Creating translation projects for content fragments](creating-transla
 1. 從&#x200B;**[!UICONTROL 專案]**&#x200B;清單中，選取&#x200B;**[!UICONTROL 建立新的翻譯專案]**。
 1. 在「專 **[!UICONTROL 案標題]** 」欄位中，輸入專案標題。
 1. 在&#x200B;**[!UICONTROL 建立]**&#x200B;上選取。 來源資料夾中的Assets會複製到您在步驟4中所選地區設定的目標資料夾。
-1. 若要導覽至資料夾，請選取語言副本，然後按一下[在Assets中顯示] **&#x200B;**。
+1. 若要導覽至資料夾，請選取語言副本，然後按一下[在Assets中顯示] ****。
 1. 導覽至「專案」主控台。 翻譯資料夾會複製到專案主控台。
 1. 開啟資料夾以檢視翻譯專案。
 1. 選取專案以開啟詳細資訊頁面。
@@ -132,9 +132,11 @@ Also see, [Creating translation projects for content fragments](creating-transla
 1. 選取底部的&#x200B;**[!UICONTROL 建立並翻譯]**。
 1. 從&#x200B;**[!UICONTROL 目標語言]**&#x200B;清單中，選取您要建立資料夾結構的語言。
 1. 從「項 **[!UICONTROL 目]** 」清單中，選擇「 **[!UICONTROL 添加到現有翻譯項目」]** ，以在資料夾中運行翻譯工作流。
+
    >[!NOTE]
    >
    >如果您選擇&#x200B;**[!UICONTROL 新增至現有翻譯專案]**&#x200B;選項，則只有在您的專案設定完全符合現有專案的設定時，才會將您的翻譯專案新增至現有專案。 否則，將會建立新專案。
+
 1. 從&#x200B;**[!UICONTROL 現有翻譯專案]**&#x200B;清單中，選取要新增要翻譯的資產的專案。
 1. 選擇 **[!UICONTROL 建立]**。要翻譯的資產會新增至目標資料夾。更新的資料夾會列在「語言復 **[!UICONTROL 本」區段下]** 。
 1. 導覽至「專案」主控台，並開啟您新增的現有翻譯專案。

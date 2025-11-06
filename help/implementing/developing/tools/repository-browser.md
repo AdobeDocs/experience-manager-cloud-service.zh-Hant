@@ -5,8 +5,8 @@ description: 存放庫瀏覽器針對作者、發佈和預覽層級的所有環�
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 9d1b51b465a148551de93f8180b056b8e7752db5
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '871'
 ht-degree: 1%
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 >[!INFO]
 >
->您也可以觀看[此片段](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html?lang=zh-Hant)，快速瞭解如何使用存放庫瀏覽器偵錯AEM as a Cloud Service。
+>您也可以觀看[此片段](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html)，快速瞭解如何使用存放庫瀏覽器偵錯AEM as a Cloud Service。
 
 ## 簡介 {#introduction}
 
@@ -29,19 +29,19 @@ ht-degree: 1%
 
 可從[AEM as a Cloud Service Developer Console](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console)存取，它可用來瀏覽所選環境的作者或發佈執行個體的存放庫。
 
-### 存取必要條件 {#access-prerequisites}
+### 存取的先決條件 {#access-prerequisites}
 
 要存取AEM as a Cloud Service Developer Console或存放庫瀏覽器，必須滿足以下條件
 
-若要存取AEM as a Cloud Service Developer Console，請參閱[Developer Console存取權](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access)。
+若要存取AEM as a Cloud Service Developer Console，請參閱[Developer Console存取權](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access)。
 
 若要存取存放庫瀏覽器，必須具備與AEM as a Cloud Service Developer Console （以上指定）相同的條件。 檢視特定執行處理的「儲存區域瀏覽器」內容：
 
-* 作者執行個體：具有&#x200B;**作者執行個體**&#x200B;的AEM使用者產品設定檔的使用者能夠以最低的讀取存取權檢視存放庫瀏覽器；瀏覽存放庫時會考量使用者的許可權。 具有AEM管理員產品設定檔的使用者可以檢視具有完整讀取存取權的存放庫瀏覽器。
+* 作者執行個體：擁有&#x200B;**作者執行個體**&#x200B;的AEM使用者產品設定檔的使用者，能夠以最低的讀取存取權檢視存放庫瀏覽器；瀏覽存放庫時會考量使用者的許可權。 具有AEM管理員產品設定檔的使用者可以檢視具有完整讀取存取權的存放庫瀏覽器。
 
-* Publish執行個體：具有&#x200B;**Publish執行個體**&#x200B;的AEM使用者產品設定檔的使用者，能夠以最低的讀取存取權檢視存放庫瀏覽器。 若沒有該產品設定檔集，使用者將以匿名使用者身分導覽，且由於許可權有限，部分路徑將不會顯示。
+* 發佈執行個體：具有&#x200B;**發佈執行個體**&#x200B;之AEM使用者產品設定檔的使用者，能夠以最低的讀取存取權檢視存放庫瀏覽器。 若沒有該產品設定檔集，使用者將以匿名使用者身分導覽，且由於許可權有限，部分路徑將不會顯示。
 
-如需設定使用者許可權的詳細資訊，請參閱[Cloud Manager檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=zh-Hant)。
+如需設定使用者許可權的詳細資訊，請參閱[Cloud Manager檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html)。
 
 ### 啟動存放庫瀏覽器 {#launching-the-repository-browser}
 
@@ -94,16 +94,16 @@ ht-degree: 1%
 
    ![repobrowser10](/help/implementing/developing/tools/assets/repobrowser10.png)
 
-1. 請等候幾分鐘，然後開啟&#x200B;**AEM作者**&#x200B;主控台
+1. 請稍候幾分鐘，然後開啟&#x200B;**AEM作者**&#x200B;主控台
 1. 按一下作者上的&#x200B;**工具 — 安全性 — 群組**，然後按一下&#x200B;**管理員**&#x200B;群組，將對應到新產品設定檔的群組新增為管理員群組的成員。 然後，新增群組，如下所示
 
    ![repobrowser11](/help/implementing/developing/tools/assets/repobrowser11.png)
 
-1. 啟動&#x200B;**管理員**&#x200B;和新的&#x200B;**DEV - AEM管理員Publish**&#x200B;群組，讓它們在發佈時可供使用
+1. 啟動&#x200B;**管理員**&#x200B;和新的&#x200B;**DEV - AEM管理員發佈**&#x200B;群組，讓它們在發佈時可供使用
 
    ![repobrowser12](/help/implementing/developing/tools/assets/repobrowser12.png)
 
-1. 好的安全性作法是，從&#x200B;**作者**&#x200B;上的管理員群組移除新的&#x200B;**DEV - AEM Administrators Publish**&#x200B;群組，以便將該新群組隔離以供發佈
+1. 好的安全性作法是，從&#x200B;**作者**&#x200B;上的管理員群組移除新的&#x200B;**DEV - AEM Administrators Publish**&#x200B;群組，以便將該新群組隔離以進行發佈
 
    ![repobrowser13](/help/implementing/developing/tools/assets/repobrowser13.png)
 

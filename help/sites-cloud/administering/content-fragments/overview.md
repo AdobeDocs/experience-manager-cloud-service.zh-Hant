@@ -2,10 +2,10 @@
 title: 使用內容片段的概觀
 description: 瞭解Adobe Experience Manager (AEM) as a Cloud Service中的內容片段如何讓您建立和使用結構化內容；非常適合於Headless傳送和頁面編寫。
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: d1e5651dcad75df430e7055f4f8162e666d91f04
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2021'
 ht-degree: 4%
@@ -57,7 +57,7 @@ ht-degree: 4%
 使用AEM核心元件的Sling模型(JSON)匯出功能，內容片段也可以以JSON格式傳送。 此傳遞形式：
 
 * 可讓您使用元件來管理要傳送片段的哪些元素
-* 允許大量傳送；方法是在用於API傳送的頁面上新增多個[內容片段核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=zh-Hant)
+* 允許大量傳送；方法是在用於API傳送的頁面上新增多個[內容片段核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)
 
 通訊管道的數量每年都在增加。 通常，管道是指傳遞機制，例如：
 
@@ -80,12 +80,13 @@ ht-degree: 4%
 >[!NOTE]
 >
 >**內容片段**&#x200B;和&#x200B;**[體驗片段](/help/sites-cloud/authoring/fragments/content-fragments.md)**&#x200B;是AEM中的不同功能：
+>
 >* **內容片段**&#x200B;是可編輯內容，具有定義和結構，但沒有額外的視覺設計和/或版面配置。 它們可用於存取結構化資料，包括文字、數字和日期等。
 >* **體驗片段**&#x200B;是完整佈局的內容；網頁的片段。
 >
 >體驗片段可以包含內容片段形式的內容，反之則不行。
 >
->如需進一步資訊，請參閱[瞭解AEM中的內容片段和體驗片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=zh-Hant#content-fragments)。
+>如需進一步資訊，請參閱[瞭解AEM中的內容片段和體驗片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments)。
 
 本頁和下列頁面涵蓋建立、設定、維護及使用內容片段的任務：
 
@@ -184,9 +185,9 @@ AEM內容片段可用於說明和管理結構化內容。 結構化內容在可�
 
 * 可使用[AEM GraphQL API](/help/headless/graphql-api/content-fragments.md)進行內容傳送。
 
-* 使用內容片段元件[&#x200B; （參考元件）可在](/help/sites-cloud/authoring/fragments/content-fragments.md)頁面編輯器中取得：
+* 使用內容片段元件[ （參考元件）可在](/help/sites-cloud/authoring/fragments/content-fragments.md)頁面編輯器中取得：
 
-   * [內容片段核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=zh-Hant)可供頁面作者使用。 它可讓他們以HTML或JSON格式參考及傳送所需的內容片段。
+   * [內容片段核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)可供頁面作者使用。 它可讓他們以HTML或JSON格式參考及傳送所需的內容片段。
 
 內容片段是內容結構，具備以下功能：
 
@@ -273,7 +274,7 @@ Assets可以透過數個方式與內容片段搭配使用；各有其優點：
    * 負責片段的佈局和傳遞；例如管道。
    * 片段需要一或多個專用元件來定義版面並傳遞部分或全部元素/變數和關聯內容。
    * 在製作中將片段拖曳到頁面上會自動建立所需元件的關聯。
-   * 檢視[內容片段核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=zh-Hant)。
+   * 檢視[內容片段核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)。
 
 ## 內容片段主控台 {#content-fragments-console}
 

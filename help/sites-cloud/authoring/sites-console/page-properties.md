@@ -6,7 +6,7 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 mini-toc-levels: 2
-source-git-commit: b9328a22ff544f2c663868d33d7b06e02819f1d7
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2138'
 ht-degree: 2%
@@ -30,32 +30,42 @@ ht-degree: 2%
 >
 >本檔案說明所有可能的頁面屬性。 根據頁面型別，並非所有屬性都可用。
 
-## 基本標籤 {#basic}
+## 基本索引標籤 {#basic}
 
 ### 標題和標籤 {#title-tags}
 
 * **Title** — 定義用於SEO目的的頁面中繼標題，以及頁面內容中顯示的標題（除非被覆寫）
-   * 頁面的標題會顯示在AEM UI中的各種位置，包括[網站主控台&#x200B;**網站**&#x200B;卡片/清單檢視。](/help/sites-cloud/authoring/sites-console/introduction.md)
+
+   * 頁面的標題會顯示在AEM UI中的各種位置，包括&#x200B;**網站主控台**&#x200B;網站[卡片/清單檢視。](/help/sites-cloud/authoring/sites-console/introduction.md)
    * 這是必要欄位。
+
 * **標籤** — 定義用於SEO的頁面中繼標籤
+
    * 您可以更新選取方塊中的清單，在頁面中新增或移除標籤。
    * 使用下拉式清單從現有標籤中選取。
    * 選取標籤後，標籤會列在選取方塊下方。 您可以使用x從此清單中移除標籤。
    * 在空白選取方塊中輸入名稱，即可輸入全新的標籤。
+
       * 當您按下Enter鍵時，就會建立新標籤。
       * 然後，新標籤將顯示為右側的小型星號，表示它是新標籤。
+
    * 當您將滑鼠移到選取方塊中的標籤專案上時，會出現x，可用來為此頁面移除該標籤。
    * 如需關於標籤的詳細資訊，請參閱[使用標籤。](/help/sites-cloud/authoring/sites-console/tags.md)
+
 * **在導覽中隱藏** — 指示在產生的網站頁面導覽中是顯示還是隱藏頁面
 
 ### 品牌元素 {#branding}
 
-藉由將品牌概要附加至每個頁面標題，跨頁面套用一致的品牌識別。 此功能需要使用2.14.0版或更新版本的[核心元件。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)的頁面元件
+藉由將品牌概要附加至每個頁面標題，跨頁面套用一致的品牌識別。 此功能需要使用2.14.0版或更新版本的[核心元件。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)的頁面元件
 
 * **品牌概要**
+
    * **覆寫** — 檢查以在此頁面上定義品牌概要。
+
       * 此值由任何子頁面繼承，除非它們也設定了&#x200B;**覆寫**&#x200B;值。
+
    * **覆寫值** — 要附加至頁面標題的品牌概要文字。
+
       * 值會附加至頁面標題後的垂直號字元，例如`Cycling Tuscany | Always ready for the WKND`
 
 ### HTML ID {#html-id}
@@ -65,10 +75,14 @@ ht-degree: 2%
 ### 更多標題和說明 {#more-titles}
 
 * **頁面標題** — 要在頁面上使用的標題
+
    * 這通常由標題元件使用。
    * 如果空白，則使用&#x200B;**標題**。
+
 * **導覽標題** — 您可以指定單獨的標題以用於導覽（例如，如果您想要更簡潔的標題）。
+
    * 如果空白，則使用&#x200B;**頁面標題**。
+
 * **子標題** — 頁面上使用的子標題
 * **描述** — 頁面的描述、用途或您要新增的任何其他詳細資訊
 
@@ -97,7 +111,7 @@ ht-degree: 2%
 
 ### 虛名 URL {#vanity-url}
 
-此屬性可讓您輸入此頁面的虛名URL，此URL可讓您使用較短和/或較具表現力的URL。 例如，如果網站`http://example.com`的虛名URL設定為路徑`/v1.0/startpage`所識別的頁面`welcome`，則`http://example.com/welcome`將是`http://example.com/content/v1.0/startpage`的虛名URL
+此屬性可讓您輸入此頁面的虛名URL，此URL可讓您使用較短和/或較具表現力的URL。 例如，如果網站`welcome`的虛名URL設定為路徑`/v1.0/startpage`所識別的頁面`http://example.com`，則`http://example.com/welcome`將是`http://example.com/content/v1.0/startpage`的虛名URL
 
 >[!CAUTION]
 >
@@ -122,7 +136,7 @@ ht-degree: 2%
    * **永久重新導向** — 選取後，頁面會重新導向至與HTML `301 Moved Permanently`狀態一起提供的目標路徑。
 * **Design**
 * **別名** — 指定要用於此頁面的別名
-   * 例如，如果您為頁面`/content/wknd/us/en/magazine/members-only`定義別名`private`，則也可以透過`/content/wknd/us/en/magazine/private`存取此頁面
+   * 例如，如果您為頁面`private`定義別名`/content/wknd/us/en/magazine/members-only`，則也可以透過`/content/wknd/us/en/magazine/private`存取此頁面
    * 建立別名會設定頁面節點上的`sling:alias`屬性，這只會影響資源，而不會影響存放庫路徑。
    * 無法發佈編輯器中以別名存取的頁面。 編輯器中的[發佈選項](/help/sites-cloud/authoring/sites-console/publishing-pages.md)僅適用於透過實際路徑存取的頁面。
    * 如需詳細資訊，請參閱SEO和URL管理最佳實務底下的[本地化頁面名稱](/help/overview/seo-and-url-management.md#localized-page-names)。

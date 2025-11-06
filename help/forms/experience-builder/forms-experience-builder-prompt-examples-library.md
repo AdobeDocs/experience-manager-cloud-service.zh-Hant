@@ -4,15 +4,14 @@ description: 各種經確認的提示模式和範例之集合，在表單管理�
 hide: true
 index: false
 hidefromtoc: true
-role: Admin, Architect, Developer
-exl-id: c8f64082-a23f-4919-ad66-042faad77d31
-source-git-commit: de524aeddd5f53cbd713ff0523222966752ebbc0
+role: Admin, Developer
+exl-id: 48eb137c-fe12-4e4f-b845-3321ca8b6075
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2193'
 ht-degree: 99%
 
 ---
-
 
 # 表單體驗建立工具 - 提示資料庫
 
@@ -335,11 +334,11 @@ ht-degree: 99%
 
 **規則特定提示：**
 
-    建立一個&#x200B;**可見性規則**，僅當 @maritalStatus 等於「已婚」或「同居關係」時才顯示 @spouseInformation 面板
+    建立一個**可見性規則**，僅當 @maritalStatus 等於「已婚」或「同居關係」時才顯示 @spouseInformation 面板
     
-    新增&#x200B;**漸進式揭露**，其中根據先前的答案出現其他問題。從基本資訊開始，然後顯示相關的後續訊息
+    新增**漸進式揭露**，其中根據先前的答案出現其他問題。從基本資訊開始，然後顯示相關的後續訊息
     
-    實現&#x200B;**智慧預設**，其中 @country 選項自動設定相關欄位。允許手動覆寫
+    實現**智慧預設**，其中 @country 選項自動設定相關欄位。允許手動覆寫
 
 ## 資料整合與提交
 
@@ -392,11 +391,11 @@ ht-degree: 99%
 
 **整合特定提示：**
 
-    將此表單連接至&#x200B;**CRM 系統**，建立新的商機。將 @firstName 對應到「姓名」，將 @email 對應到「電子郵件」，將「商機來源」設定為「網頁表單」，將「狀態」設定為「新增」
+    將此表單連接至**CRM 系統**，建立新的商機。將 @firstName 對應到「姓名」，將 @email 對應到「電子郵件」，將「商機來源」設定為「網頁表單」，將「狀態」設定為「新增」
     
-    在提交表單時設定&#x200B;**工作流程觸發程序**。傳遞所有表單資料，並透過管理員通知觸發核准工作流程
+    在提交表單時設定**工作流程觸發程序**。傳遞所有表單資料，並透過管理員通知觸發核准工作流程
     
-    設定&#x200B;**資料庫整合**，將表單提交儲存為記錄。替每個提交的上傳檔案建立新資料夾
+    設定**資料庫整合**，將表單提交儲存為記錄。替每個提交的上傳檔案建立新資料夾
 
 
 
@@ -492,4 +491,4 @@ ht-degree: 99%
 
 如需了解完整的最佳做法和驗證指引，請參閱[表單體驗建立工具快速入門指南](/help/forms/experience-builder/forms-experience-builder-getting-started.md)。
 
-*此提示程式庫會根據使用者意見回饋和新的表單體驗建立工具功能持續更新。如需了解最新功能和範例，請查看 [AEM Forms 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=zh-Hant)。*
+*此提示程式庫會根據使用者意見回饋和新的表單體驗建立工具功能持續更新。如需了解最新功能和範例，請查看 [AEM Forms 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html)。*

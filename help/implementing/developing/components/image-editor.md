@@ -1,19 +1,19 @@
 ---
 title: 影像編輯器
-description: 影像編輯器是AEM的一項核心功能，元件可使用它來協助內容作者操控影像。
+description: 影像編輯器是AEM的核心元件，元件可使用它來協助內容作者操控影像。
 exl-id: c8ae4f59-75b1-49b4-8dd4-957d2e33000b
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '273'
-ht-degree: 2%
+ht-degree: 10%
 
 ---
 
 # 影像編輯器 {#image-editor}
 
-影像編輯器是AEM的一項核心功能，元件可使用它來協助內容作者操控影像。
+影像編輯器是AEM的核心元件，元件可使用它來協助內容作者操控影像。
 
 ## 影像地圖的相對單位 {#relative-units-for-image-map}
 
@@ -40,7 +40,7 @@ ht-degree: 2%
 
 影像編輯器支援可縮放向量圖形(SVG)。
 
-* 支援從DAM拖放SVG資產以及從本機檔案系統上傳SVG檔案。
+* 支援從 DAM 拖放 SVG 資產以及上傳從本機檔案系統上傳的 SVG 檔案。
 
 ## 依MIME型別啟用外掛程式 {#enabling-plugins-by-mime-type}
 
@@ -50,9 +50,9 @@ ht-degree: 2%
 
 ### 範例 {#example}
 
-舉例來說，我們假設只有GIF、JPEG、PNG、WEBP和TIFF影像才允許裁切功能。
+例如，假設僅允許裁切功能用於GIF、JPEG、PNG、WEBP和TIFF影像。
 
-然後，必須在影像元件的`cq:editConfig`節點上的外掛程式的設定節點上，將`supportedMimeTypes`屬性設定為允許的MIME型別字串。
+然後，必須在影像元件的`supportedMimeTypes`節點上的外掛程式的設定節點上，將`cq:editConfig`屬性設定為允許的MIME型別字串。
 
 `/apps/core/wcm/components/image/v2/image/cq:editConfig`
 

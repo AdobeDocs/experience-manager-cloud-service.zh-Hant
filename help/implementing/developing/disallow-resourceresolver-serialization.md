@@ -3,8 +3,8 @@ title: 禁止透過 Sling 模型匯出工具序列化 ResourceResolvers
 description: 禁止透過 Sling 模型匯出工具序列化 ResourceResolvers
 exl-id: 63972c1e-04bd-4eae-bb65-73361b676687
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 5%
@@ -13,7 +13,7 @@ ht-degree: 5%
 
 # 禁止透過 Sling 模型匯出工具序列化 ResourceResolvers {#disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter}
 
-Sling模型匯出工具功能允許將Sling模型物件序列化為JSON格式。 此功能廣泛使用，因為它可讓SPA （單頁應用程式）輕鬆從AEM存取資料。 實施方面，Jackson Databind資料庫是用來序列化這些物件。
+Sling模型匯出工具功能允許將Sling模型物件序列化為JSON格式。 此功能廣泛使用，因為它可讓SPA （單頁應用程式）輕鬆存取AEM中的資料。 實施方面，Jackson Databind資料庫是用來序列化這些物件。
 
 序列化是遞回作業。 從「根物件」開始，它會遞回循環遍歷所有合格的物件，並將它們及其子件序列化。 您可以在文章[Jackson — 決定哪些欄位要序列化/還原序列化](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not)中找到哪些欄位的描述。
 
@@ -28,9 +28,9 @@ Sling模型匯出工具功能允許將Sling模型物件序列化為JSON格式。
 Adobe計畫以兩步驟方式停用`ResourceResolvers`的序列化：
 
 1. 從AEM as a Cloud Service發行說14697開始，每當`ResourceResolver`序列化時，AEM都會記錄警告訊息。 建議所有客戶檢查其應用程式記錄檔中是否有這些記錄陳述式，並據此調整程式碼基底。
-1. 稍後，Adobe會停用`ResourceResolver`的JSON序列化功能。
+1. Adobe稍後會停用`ResourceResolver`的JSON序列化功能。
 
-## 實作 {#implementation}
+## 實施 {#implementation}
 
 警告訊息同時記錄在AEM as a Cloud Service和本機AEM SDK執行個體中，看起來像這樣：
 
@@ -47,7 +47,7 @@ Adobe計畫以兩步驟方式停用`ResourceResolvers`的序列化：
 
 ## 請求的動作 {#requested-action}
 
-Adobe會要求所有客戶檢查其應用程式記錄和程式碼庫，以檢視他們是否受此問題影響，並視需要變更自訂應用程式，讓此警告訊息不再出現在記錄中。
+Adobe要求所有客戶檢查其應用程式記錄和程式碼基底，檢視他們是否受此問題影響，並在必要時變更自訂應用程式，使此警告訊息不再出現在記錄中。
 
 我們假設在大多數情況下，這些必要的變更是直接的。 JSON輸出中完全不需要`ResourceResolver`物件，因為包含在該處的資訊通常不是前端應用程式所必需的，這表示在大多數情況下，應該足以排除Jackson不會考慮`ResourceResolver`物件（請參閱[規則](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not)）。
 

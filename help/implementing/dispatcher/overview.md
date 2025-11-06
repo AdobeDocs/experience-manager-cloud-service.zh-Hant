@@ -4,7 +4,7 @@ description: 進一步了解關於內容傳送資料流量，以及發佈內容�
 exl-id: fe42fb9e-cdf4-43e1-b688-7cecf4124fa5
 feature: Dispatcher
 role: Admin
-source-git-commit: d58055cd0ed2451b5e8063fbb4e7269885d0787c
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 93%
@@ -32,6 +32,7 @@ ht-degree: 93%
 依預設，內容類型 HTML/文字設定為在 Dispatcher 層 300 秒 (5 分鐘) 後過期，這是 Dispatcher 快取和 CDN 都遵守的閾值。重新部署發佈服務期間，Dispatcher 快取被清空，然後在新發佈節點接受流量之前會做準備。
 
 以下章節提供更多有關內容傳遞的詳細資訊：
+
 * [CDN 設定](/help/implementing/dispatcher/cdn.md)
 * [快取](/help/implementing/dispatcher/caching.md)
 

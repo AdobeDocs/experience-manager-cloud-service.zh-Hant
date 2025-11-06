@@ -5,8 +5,8 @@ index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: ac918008c3f99d74e01be59c9841083abf3604aa
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1546'
 ht-degree: 32%
@@ -152,7 +152,7 @@ Cloud Manager 提供兩種類型的管道：
 
 ### 使用前端管道開發網站 {#developing-with-front-end-pipeline}
 
-有了前端流水線，給前端開發者更多的獨立性，可以加快開發進程。
+有了前端管道，給前端開發者更多的獨立性，可以加快開發進程。
 
 請參閱[使用前端管道開發Sites](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)，瞭解此程式的運作方式以及需要注意的一些注意事項，以充分發揮此程式的潛力。
 

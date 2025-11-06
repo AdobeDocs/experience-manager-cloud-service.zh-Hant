@@ -2,12 +2,12 @@
 title: 停止支援 SPA 編輯器
 description: 雖然SPA Editor仍受Adobe支援，但瞭解其淘汰對您的專案有何影響，以及您對未來專案有哪些選項。
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 58b1bb4a-33df-46df-8743-a56cefc5a60a
-source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '915'
-ht-degree: 2%
+ht-degree: 16%
 
 ---
 
@@ -62,18 +62,18 @@ Adobe已[發行2025.01版的AEM as a Cloud Service，](/help/release-notes/relea
 Universal Editor具備許多優點，因此移轉至此編輯器可成為新專案的絕佳解決方案。
 
 * **Visual Editing：**&#x200B;如同SPA Editor，作者可以在預覽中直接編輯內容，並立即看到其變更如何影響訪客體驗。
-* **未來考量：** AEM的藍圖會優先將通用編輯器設為視覺化編輯器。 採用可確儲存取最新的創新和增強功能。
-* **更簡單的整合：**&#x200B;使用Universal Editor不需要特定AEM的SDK，減少技術棧疊鎖定。
-* **自備應用程式：** Universal Editor支援任何Web架構或架構，允許採用而不需要複雜的重構。
-* **擴充性：** Universal Editor受益於強大的[擴充架構，](/help/implementing/universal-editor/extending.md)，包括與GenAI、Workfront等的整合。
+* **符合未來需求：** AEM 的路徑圖優先發展作為視覺化編輯器的通用編輯器。採用通用編輯器可以確保獲得最新的創新和增強功能。
+* **更簡單的整合：**&#x200B;使用通用編輯器不需要 AEM 特定的 SDK，減少過度依賴技術堆疊的情形。
+* **自備應用程式：**&#x200B;通用編輯器支援任何網頁框架或架構，不需要複雜的重構過程即可採用。
+* **可擴充性：**&#x200B;因為擁有強大的[擴充框架，](/help/implementing/universal-editor/extending.md)包括與生成式 AI、Workfront 等的整合，使通用編輯器更具優勢。
 
-沒有從SPA編輯器直接移轉至通用編輯器的路徑。 這是因為兩種技術的根本差異。
+沒有從SPA編輯器直接移轉至通用編輯器的路徑。 這是因為兩種技術存在根本差異。
 
-* 通用編輯器不會重新引入範本編輯器、樣式系統或回應式格線等功能。
+* 通用編輯器並未重新引進範本編輯器、樣式系統或回應式網格等功能。
    * 在Edge Delivery Services或Headless專案中，現在可使用精簡前端CSS和JS更有效地處理這些使用案例。
 * 由於通用編輯器是editor-as-a-service，實作人員無法將CSS或JS插入元件對話方塊中。
-   * 這可防止從頁面編輯器自動轉換元件對話方塊。
-   * 這會影響對話方塊的許多區域，例如自訂Widget、欄位驗證、顯示/隱藏規則，以及範本型自訂。
+   * 故不能從頁面編輯器自動轉換元件對話框。
+   * 此情況會影響對話框的很多地方，例如自訂小工具、欄位驗證、顯示/隱藏規則，以及範本型自訂功能。
 
 考慮到這些技術差異，Adobe建議您：
 

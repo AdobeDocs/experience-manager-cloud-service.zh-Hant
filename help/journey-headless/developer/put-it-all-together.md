@@ -4,9 +4,9 @@ description: 在 AEM Headless 開發人員歷程的這一部分中，了解如�
 exl-id: bece84ad-4c8c-410c-847e-9ef3f79970cb
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1056'
 ht-degree: 100%
 
@@ -43,7 +43,7 @@ AEM SDK 用於建置和部署自訂程式碼。它是您在上線前開發和測
 
 與 AEM SDK 不同，AEM **Headless SDK** 是一組程式庫，用戶端可以使用這些程式庫透過 HTTP 快速輕鬆地與 AEM Headless API 互動。
 
-如需詳細資訊，請參閱 [AEM Headless SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/aem-headless-sdk.html?lang=zh-Hant)。
+如需詳細資訊，請參閱 [AEM Headless SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/aem-headless-sdk.html)。
 
 ## 其他開發工具 {#additional-development-tools}
 
@@ -113,10 +113,10 @@ Node.js 是 JavaScript 執行階段環境，用於處理 AEM 專案 `ui.frontend
 ## 其他資源 {#additional-resources}
 
 * [AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
-* [設定本機 AEM 環境](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=zh-Hant)
+* [設定本機 AEM 環境](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)
 * [適用於用戶端瀏覽器的 AEM Headless SDK (JavaScript)](https://github.com/adobe/aem-headless-client-js)
 * [適用於伺服器端/Node.js 的 AEM Headless SDK (JavaScript)](https://github.com/adobe/aem-headless-client-nodejs)
 * [適用於 Java™ 的 AEM Headless SDK](https://github.com/adobe/aem-headless-client-java)
 * [AEM as a Headless CMS 簡介](/help/headless/introduction.md)
-* [AEM 開發人員入口網站](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hant)
-* [AEM 中的 Headless 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=zh-Hant)
+* [AEM 開發人員入口網站](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* [AEM 中的 Headless 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)

@@ -4,8 +4,8 @@ description: 了解如何使用 Cloud Manager 檢查 SSL 憑證的狀態以及�
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: bf903736e256bb9275bad6c0271b31b8dbdec625
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1048'
 ht-degree: 13%
@@ -21,14 +21,14 @@ ht-degree: 13%
 
 Cloud Manager會提供程式中所有憑證狀態的概觀。
 
-1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager，然後選取適當的程式。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager，然後選取適當的方案。
 1. 在「**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**」控制台中，選取程式。
 1. 在頁面的左上角，按一下![顯示功能表圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)以顯示側邊功能表。
 1. 在&#x200B;**服務**&#x200B;標題下，按一下![鎖定已關閉圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL憑證**。
 
 **SSL憑證**&#x200B;頁面會提供您SSL憑證的狀態。
 
-| SSL憑證的狀態 | 描述 |
+| SSL憑證的狀態 | 說明 |
 | --- | --- |
 | 綠色 | 憑證從目前日期起至少14天有效。 |
 | 橙色 | 憑證將在14天內到期。<br>·確定您有更新憑證的計畫，並透過Cloud Manager使用者介面取代憑證，以避免可能的網站存取或中斷。<br>· Cloud Manager會在UI中定期傳送通知，提醒您憑證即將到期。 |
@@ -46,7 +46,7 @@ Cloud Manager會提供程式中所有憑證狀態的概觀。
 
 **若要更新已過期的客戶管理的SSL憑證：**
 
-1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager，然後選取適當的程式。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager，然後選取適當的方案。
 1. 在「**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**」控制台中，選取程式。
 1. 在頁面的左上角，按一下![顯示功能表圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)以顯示側邊功能表。
 1. 在&#x200B;**服務**&#x200B;標題下，按一下![鎖定已關閉圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **SSL憑證**。
@@ -84,7 +84,7 @@ Cloud Manager會提供程式中所有憑證狀態的概觀。
 
 **若要重新命名Adobe管理的SSL憑證：**
 
-1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager，然後選取適當的程式。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager，然後選取適當的方案。
 
 1. 在「**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**」控制台中，選取程式。
 
@@ -113,7 +113,7 @@ Cloud Manager會提供程式中所有憑證狀態的概觀。
 
 **若要刪除SSL憑證：**
 
-1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager，然後選取適當的程式。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager，然後選取適當的方案。
 
 1. 在「**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**」控制台中，選取程式。
 

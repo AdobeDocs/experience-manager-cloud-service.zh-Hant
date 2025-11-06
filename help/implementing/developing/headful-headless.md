@@ -3,8 +3,8 @@ title: AEM Headful 和 Headless 技術
 description: AEM 專案可以在 Headful 和 Headless 模型中實作，但這不必是二選一。AEM 提供了在一個專案中利用兩種模型優勢的靈活性。
 exl-id: 709850ca-7757-47ab-9625-f411121cde2c
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1024'
 ht-degree: 93%
@@ -13,7 +13,7 @@ ht-degree: 93%
 
 # AEM Headful 和 Headless 技術 {#headful-headless}
 
-Adobe Experience Manager 專案可以在 Headful 和 Headless 模型中實作，但這不必是二選一。AEM 提供了在一個專案中利用兩種模型優勢的靈活性。此文件概述了不同模型和 SPA 整合的層級。
+Adobe Experience Manager 專案可以在 Headful 和 Headless 模型中實作，但這不必是二選一。AEM 提供了在一個專案中利用兩種模型優勢的靈活性。此文件概觀了不同模型和 SPA 整合的層級。
 
 ## 概觀 {#overview}
 

@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2024.1.0 版�
 exl-id: 9f5d97c6-6536-4593-acbf-cbe8bf9b5eeb
 feature: Release Information
 role: Admin
-source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1019'
-ht-degree: 90%
+source-wordcount: '1018'
+ht-degree: 89%
 
 ---
 
@@ -19,11 +19,11 @@ ht-degree: 90%
 >
 >從這裡，您可以導覽至先前版本的發行說明，例如 2021 或 2022。
 >
->查看 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=zh-Hant)，了解關於 [!DNL Experience Manager] as a Cloud Service 未來功能的啟用。
+>查看 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html)，了解關於 [!DNL Experience Manager] as a Cloud Service 未來功能的啟用。
 
 >[!NOTE]
 >
->請參閱[近期文件更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=zh-Hant)瞭解與版本不直接相關的文件更新的詳細資料。
+>請參閱[近期文件更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)瞭解與版本不直接相關的文件更新的詳細資料。
 
 ## 發行日期 {#release-date}
 
@@ -37,13 +37,13 @@ ht-degree: 90%
 
 請觀看 2024 年 1 月發行概觀影片，了解 2024.1.0 版本新增功能摘要：
 
->[!VIDEO](https://video.tv.adobe.com/v/3448940?quality=12&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3427041?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### AEM Sites 的 Extension Manager {#sites-extension-manager}
 
-**探索 [&#x200B; AEM Sites 的全新 Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/)** ，透過設定 UI 擴充功能為您的 AEM 設定進行個人化。
+**探索 [ AEM Sites 的全新 Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/)** ，透過設定 UI 擴充功能為您的 AEM 設定進行個人化。
 
 ![AEM Sites 的 Extension Manager](/help/assets/sites/extension-manager/homepage.png)
 
@@ -95,7 +95,7 @@ Assets Essentials 現在允許您定義封鎖清單，其中包含上傳到存�
 
   您可以透過您的官方電子郵件 ID 寫信給 `aem-forms-early-adopter-program@adobe.com`，加入早期採用者計畫並要求存取該功能。
 
-* **[您可以利用作業遙測服務](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**&#x200B;來啟用AEM as a Cloud Service的使用者端集合。
+* **[您可以利用作業遙測服務](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**來啟用AEM as a Cloud Service的使用者端集合。
 作業遙測服務可更精確地反映使用者互動，確保網站互動的可靠測量。 這是深入了解頁面效能的絕佳機會。這對於使用 Adobe 管理 CDN 或非 Adobe 管理 CDN 的客戶很有幫助。此外，對於使用非 Adobe 管理 CDN 的客戶，現在可以啟用自動流量報告，而無需與 Adobe 共享任何流量報告。
 
   如果您有興趣測試這項新功能並分享您的回饋意見，請傳送電子郵件至`aemcs-rum-adopter@adobe.com`，連同您想要從與Adobe ID關聯的電子郵件地址為每個環境啟用作業遙測的網域名稱。 Adobe的產品團隊會接著為您啟用作業遙測服務。
@@ -112,7 +112,8 @@ Dynatrace 客戶可以監控他們的 AEM 使用情況。[了解如何](/help/im
 
 ### 網域對應早期採用者計畫 {#cdn-config-early-adopter}
 
-除了最近發佈的[流量篩選規則](/help/security/traffic-filter-rules-including-waf.md) (其中包含可以選擇授權的 Web 應用程式防火牆 (WAF) 規則)，也可以使用設定管道來聲明及部署[其他類型的 CDN 設定](/help/implementing/dispatcher/cdn-configuring-traffic.md)。發送電子郵件至 **aemcs-cdn-config-adopter@adobe.com** 加入早期採用者計劃，即可存取：
+除了最近發佈的[流量篩選規則](/help/security/traffic-filter-rules-including-waf.md) (其中包含可以選擇授權的 Web 應用程式防火牆 (WAF) 規則)，也可以使用設定管道來聲明及部署[其他類型的 CDN 設定](/help/implementing/dispatcher/cdn-configuring-traffic.md)。透過寄送電子郵件給&#x200B;**`aemcs-cdn-config-adopter@adobe.com`**&#x200B;加入早期採用者計畫，以取得：
+
 * 301/302 用戶端重新導向
 * 將邊緣要求代理到任意來源
 * URL 轉換

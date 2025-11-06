@@ -4,8 +4,8 @@ description: 了解如何使用 Cloud Manager 建立您自己的生產計畫來�
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: f99a0bfee76c7efd6f3e441db67d30f8a52707e5
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1079'
 ht-degree: 11%
@@ -64,7 +64,7 @@ ht-degree: 11%
 
    ![選取附加元件](assets/setup-prod-commerce.png)
 
-1. 選取完解決方案和附加元件後，請按一下[繼續]。**&#x200B;**
+1. 選取完解決方案和附加元件後，請按一下[繼續]。****
 
 1. 在&#x200B;**上線日期**&#x200B;索引標籤上，輸入您計畫讓生產計畫上線的日期。
 

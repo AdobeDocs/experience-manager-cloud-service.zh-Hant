@@ -3,8 +3,8 @@ title: 開發和頁面差異
 description: 瞭解頁面差異功能的運作方式及其對開發人員的影響
 exl-id: 03c08616-2203-4b90-bed6-4836266e2507
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 1%
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 ## 作業詳細資料 {#operation-details}
 
-比較頁面的版本時，使用者想要比較的先前版本會由AEM在背景重新建立，以利進行差異。 若要呈現內容[以並排比較](/help/sites-cloud/authoring/sites-console/page-diff.md)，則必須使用這個舊版。
+比較頁面的版本時，使用者想要比較的先前版本會由AEM在背景重新建立，以利差異的進行。 若要呈現內容[以並排比較](/help/sites-cloud/authoring/sites-console/page-diff.md)，則必須使用這個舊版。
 
 此重新建立操作由AEM內部完成，對使用者而言是透明的，不需要任何干涉。 但是，管理員檢視存放庫(例如，在CRXDE Lite中)，會在內容結構中看到這些重新建立的版本。
 

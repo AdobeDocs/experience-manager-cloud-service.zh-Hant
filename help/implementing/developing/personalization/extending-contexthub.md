@@ -3,8 +3,8 @@ title: 延伸 ContextHub
 description: 當提供的ContextHub存放區和模組不符合您的解決方案需求時，定義這些新的型別
 exl-id: ba817c18-f8bd-485d-b043-87593a6a93b5
 feature: Developing, Personalization
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 0%
@@ -49,7 +49,7 @@ ContextHub.Utils.inheritance.inherit(myStoreCandidate,ContextHub.Store.Persisted
 
 ### 註冊ContextHub存放區候選專案 {#registering-a-contexthub-store-candidate}
 
-註冊存放區候選項，以將其與ContextHub架構整合，並啟用從中建立存放區的功能。 若要登入存放區候選專案，請使用`ContextHub.Utils.storeCandidates`類別的[`registerStoreCandidate`](contexthub-api.md#registerstorecandidate-store-storetype-priority-applies)函式。
+註冊存放區候選項，以將其與ContextHub架構整合，並啟用從中建立存放區的功能。 若要登入存放區候選專案，請使用[`registerStoreCandidate`](contexthub-api.md#registerstorecandidate-store-storetype-priority-applies)類別的`ContextHub.Utils.storeCandidates`函式。
 
 註冊候選商店時，需提供該商店型別的名稱。 從候選者建立存放區時，您可以使用存放區型別來識別它所依據的候選者。
 
@@ -60,18 +60,18 @@ ContextHub.Utils.storeCandidates.registerStoreCandidate(myStoreCandidate,
                                 'contexthub.mystorecandidate', 0);
 ```
 
-在大多數情況下，只需要一個候選者，而且優先順序可以設定為`0`，但如果您有興趣，可以瞭解更多進階註冊[&#128279;](contexthub-api.md#registerstorecandidate-store-storetype-priority-applies)，這可讓您根據javascript條件(`applies`)和候選者優先順序，選擇少數幾個商店實作之一。
+在大多數情況下，只需要一個候選者，而且優先順序可以設定為`0`，但如果您有興趣，可以瞭解更多進階註冊[，這可讓您根據javascript條件(](contexthub-api.md#registerstorecandidate-store-storetype-priority-applies))和候選者優先順序，選擇少數幾個商店實作之一。`applies`
 
 ## 建立ContextHub UI模組型別 {#creating-contexthub-ui-module-types}
 
-當與ContextHub[&#128279;](sample-modules.md)一起安裝的模組不符合您的需求時，請建立自訂UI模組型別。 若要建立UI模組型別，請擴充`ContextHub.UI.BaseModuleRenderer`類別，然後向`ContextHub.UI`註冊，以建立UI模組轉譯器。
+當與ContextHub[一起安裝的](sample-modules.md)模組不符合您的需求時，請建立自訂UI模組型別。 若要建立UI模組型別，請擴充`ContextHub.UI.BaseModuleRenderer`類別，然後向`ContextHub.UI`註冊，以建立UI模組轉譯器。
 
 若要建立UI模組轉譯器，請建立包含轉譯UI模組的邏輯的`Class`物件。 您的類別至少必須執行下列動作：
 
 * 擴充`ContextHub.UI.BaseModuleRenderer`類別。 此類別是所有UI模組轉譯器的基本實施。 `Class`物件定義名為`extend`的屬性，您可用來將此類別命名為要擴充的類別。
 * 提供預設設定。 建立`defaultConfig`屬性。 此屬性是物件，其中包含為[`contexthub.base`](sample-modules.md#contexthub-base-ui-module-type) UI模組定義的屬性，以及您需要的任何其他屬性。
 
-`ContextHub.UI.BaseModuleRenderer`的來源位於`/libs/granite/contexthub/code/ui/container/js/ContextHub.UI.BaseModuleRenderer.js`。  若要註冊轉譯器，請使用`ContextHub.UI`類別的[`registerRenderer`](contexthub-api.md#registerrenderer-moduletype-renderer-dontrender)方法。 您必須提供模組型別的名稱。 管理員根據此轉譯器建立UI模組時，會指定此名稱。
+`ContextHub.UI.BaseModuleRenderer`的來源位於`/libs/granite/contexthub/code/ui/container/js/ContextHub.UI.BaseModuleRenderer.js`。  若要註冊轉譯器，請使用[`registerRenderer`](contexthub-api.md#registerrenderer-moduletype-renderer-dontrender)類別的`ContextHub.UI`方法。 您必須提供模組型別的名稱。 管理員根據此轉譯器建立UI模組時，會指定此名稱。
 
 在自動執行的匿名函式中建立並註冊轉譯器類別。 下列範例是以`contexthub.browserinfo` UI模組的原始程式碼為基礎。 此UI模組是`ContextHub.UI.BaseModuleRenderer`類別的簡單擴充。
 
@@ -106,4 +106,4 @@ ContextHub.Utils.storeCandidates.registerStoreCandidate(myStoreCandidate,
 contexthub.module.[moduleType]
 ```
 
-類別的`[moduleType]`部分是模組轉譯器登入的`moduleType`。 例如，對於`contexthub.browserinfo`的`moduleType`，使用者端資料庫資料夾的類別必須是`contexthub.module.contexthub.browserinfo`。
+類別的`[moduleType]`部分是模組轉譯器登入的`moduleType`。 例如，對於`moduleType`的`contexthub.browserinfo`，使用者端資料庫資料夾的類別必須是`contexthub.module.contexthub.browserinfo`。

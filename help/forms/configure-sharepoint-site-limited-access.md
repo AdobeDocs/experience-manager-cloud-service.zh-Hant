@@ -5,16 +5,16 @@ keywords: 如何設定具有有限存取權的SharePoint網站？、設定具有
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: 3230bab2-c1aa-409d-9f01-c42cf88b1135
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '842'
-ht-degree: 13%
+ht-degree: 15%
 
 ---
 
 # 使用授權範圍設定 SharePoint 網站，使其擁有有限的存取權
 
-<span class="preview">此功能可在早期採用者方案下使用。 您可以從您的官方電子郵件ID寫信到aem-forms-ea@adobe.com ，以加入率先採用者計畫並請求存取該功能。</span>
+<span class="preview">此功能可在早期採用者方案下使用。 您可以使用官方電子郵件 ID 寫信至 aem-forms-ea@adobe.com，以加入早期採用者計劃並要求存取該功能。</span>
 
 有限或受限存取的目的是透過允許管理員控制使用者對特定SharePoint網站或一組SharePoint網站的存取來增強安全管理。 當您需要授予使用者或群組存取特定網站的許可權，而不允許他們檢視任何其他不允許的SharePoint網站時，許可權層級就十分實用。
 
@@ -36,7 +36,7 @@ ht-degree: 13%
 
 請依照下列步驟，使用授權範圍將SharePoint Sites設定為具有有限存取權：
 
-1. [建立應用程式，使用 &#x200B;](#create-an-application-with-the-limited-permission-in-the-azure-portal)
+1. [建立應用程式，使用 ](#create-an-application-with-the-limited-permission-in-the-azure-portal)
 1. [在AEM執行個體設定授權範圍](#set-the-authorization-scope-at-aem-instance)
 
 ### 在Azure入口網站中建立具有有限許可權的應用程式
@@ -46,6 +46,7 @@ ht-degree: 13%
 ![SharePoint選取的網站](/help/forms/assets/sharepoint-selected-site.png)
 
 如需如何擷取`Client ID`之`Client Secret`、`Tenant ID`和`OAuth URL`的相關資訊，請參閱[Microsoft®檔案](https://learn.microsoft.com/en-us/graph/auth-register-app-v2)。
+
 * 在 Microsoft® Azure 入口網站中，將重新導向 URI 新增為 `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`。以作者執行個體的 URL 取代 `[author-instance]`。
 * 在Microsoft的Graph API中新增`offline_access`和`Sites.Selected`許可權範圍，以提供受限制的網站存取權。
 * 針對OAuth URL： `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`。 從 Microsoft® Azure 入口網站，以應用程式的 `tenant-id` 取代 `<tenant-id>`。
@@ -91,6 +92,7 @@ ht-degree: 13%
 ## 額外的位元組
 
 若要擷取`SharePoint Site ID`的值：
+
 1. 移至[Microsoft Graph Explorer API](https://developer.microsoft.com/en-us/graph/graph-explorer)。
 1. 在左窗格的`SharePoint Sites` API底下，按一下`Search for a SharePoint site by keyword`。
 1. 將預留位置`contoso`取代為SharePoint網站的實際名稱，以擷取對應的網站識別碼。

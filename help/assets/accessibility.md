@@ -3,9 +3,9 @@ title: ' [!DNL Experience Manager Assets] 中的協助工具'
 description: 瞭解 [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 中的協助工具功能如何協助殘障使用者。
 contentOwner: AG
 feature: Accessibility, Asset Management
-role: User, Architect, Leader
+role: User, Developer, Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1923'
 ht-degree: 2%
@@ -80,7 +80,7 @@ To know how [!DNL Dynamic Media] is accessible, see [accessibility in [!DNL Dyna
 
 ### [!DNL Assets]中的鍵盤快速鍵 {#keyboard-shortcuts}
 
-[!DNL Assets]中的下列動作可搭配列出的鍵盤快速鍵使用。 大部分套用至[!DNL Experience Manager]主控台的鍵盤快速鍵也套用至[!DNL Assets]。 請參閱主控台[&#128279;](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)的鍵盤快速鍵。 瞭解如何[啟用或停用鍵盤快速鍵](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)。
+[!DNL Assets]中的下列動作可搭配列出的鍵盤快速鍵使用。 大部分套用至[!DNL Experience Manager]主控台的鍵盤快速鍵也套用至[!DNL Assets]。 請參閱主控台[的](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)鍵盤快速鍵。 瞭解如何[啟用或停用鍵盤快速鍵](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md)。
 
 | 使用者介面或情境 | 鍵盤快速鍵 | 動作 |
 |---|---|---|
@@ -148,7 +148,7 @@ Review CQ-4282133 before adding - Close button in a coral-dialog box was not acc
 * 使用`Esc`鍵從縮圖檢視中移除快速動作圖示並不會從最後一個焦點專案移除鍵盤焦點。
 * 選取資產後，選取`Alt + 4`鍵盤快速鍵會開啟左側邊欄中的[!UICONTROL 參考]清單。 使用`Tab`鍵，使用者可以瀏覽非零參考專案。 僅瀏覽非零參照專案，可節省工作量和按鍵動作。
 * 資產時間軸中提供資產上的註解。 若使用鍵盤或鍵盤快速鍵存取左側邊欄，即可存取。
-* [!DNL Experience Manager]中的[!UICONTROL 檢視設定]可使用鍵盤存取。 使用者可以使用方向鍵瀏覽可用的卡片大小，並選取和Tab鍵瀏覽，以瀏覽和設定現有「檢視設定」檢視中的其他元素。
+* [!UICONTROL 中的]檢視設定[!DNL Experience Manager]可使用鍵盤存取。 使用者可以使用方向鍵瀏覽可用的卡片大小，並選取和Tab鍵瀏覽，以瀏覽和設定現有「檢視設定」檢視中的其他元素。
 
 <!-- TBD: Gradually, as more enhancements are done in these categories, add more content.
 

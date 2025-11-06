@@ -3,11 +3,11 @@ title: 內容服務的 JSON 匯出工具
 description: AEM Content Services的設計目的，是要概括AEM內/外部內容的說明和傳遞，而不只是關注網頁。 這些頻道使用任何使用者端都能使用的標準化方法，將內容傳送至非傳統AEM網頁的管道。
 exl-id: d3ddffb7-cef9-4c86-aa31-175f13f9b4a5
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '383'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
 
@@ -81,4 +81,4 @@ AEM Content Services的設計目的，是要概括AEM內/外部內容的說明�
 * [內容片段](/help/sites-cloud/administering/content-fragments/overview.md)
 * [內容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 * [使用內容片段製作](/help/sites-cloud/authoring/fragments/content-fragments.md)
-* [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-hant)和[內容片段元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=zh-Hant)
+* [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)和[內容片段元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)

@@ -2,9 +2,9 @@
 title: 群組移轉
 description: AEM as a Cloud Service中的群組移轉概觀。
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 50c8dd725e20cbd372a7d7858fc67b0f53a8d6d4
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1921'
+source-wordcount: '1917'
 ht-degree: 3%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 3%
 
 在轉換至Adobe Experience Manager (AEM) as a Cloud Service的過程中，群組必須從現有的AEM系統移轉至AEM as a Cloud Service。 此工作由「內容轉移工具」完成。
 
-AEM as a Cloud Service的一項重大變更是完全整合使用Adobe ID來存取作者階層。 此程式需要使用[Adobe Admin Console](https://helpx.adobe.com/tw/enterprise/using/admin-console.html)來管理使用者和使用者群組。 使用者設定檔資訊會集中在Adobe Identity Management系統(IMS)中，可提供所有Adobe雲端應用程式的單一登入。 如需詳細資訊，請參閱[Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html?lang=zh-Hant#identity-management)。 由於此變更，使用者首次透過IMS登入時，系統會自動在AEM上建立。  因此，CTT不會將使用者移轉至雲端系統。  IMS使用者必須放置在IMS群組中，這些群組可以是移轉的群組，或放置在AEM群組(這些群組已獲得存取要移轉的AEM內容的許可權)中的新群組。  如此一來，雲端系統上的使用者就能在來源AEM系統上擁有相同的存取權。
+AEM as a Cloud Service的一項重大變更是完全整合使用Adobe ID來存取作者階層。 此程式需要使用[Adobe Admin Console](https://helpx.adobe.com/tw/enterprise/using/admin-console.html)來管理使用者和使用者群組。 使用者設定檔資訊會集中在Adobe Identity Management系統(IMS)中，可提供所有Adobe雲端應用程式的單一登入。 如需詳細資訊，請參閱[Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html#identity-management)。 由於此變更，使用者首次透過IMS登入時，系統會自動在AEM上建立。  因此，CTT不會將使用者移轉至雲端系統。  IMS使用者必須放置在IMS群組中，這些群組可以是移轉的群組，或放置在AEM群組(這些群組已獲得存取要移轉的AEM內容的許可權)中的新群組。  如此一來，雲端系統上的使用者就能在來源AEM系統上擁有相同的存取權。
 
 ## 群組移轉詳細資料 {#group-migration-detail}
 
@@ -58,19 +58,21 @@ CTT 3.0.20版及更新版本包含可停用群組移轉的選項。  這在OSGI�
 * 開啟OSGI設定`(http://<server>/system/console/configMgr)`
 * 按一下名為&#x200B;**內容轉移工具擷取服務組態**&#x200B;的組態
 * 取消勾選&#x200B;**在移轉中包含群組**&#x200B;以停用群組移轉
-* 按一下[儲存] **&#x200B;**，確定組態已儲存並在伺服器上啟用
+* 按一下[儲存] ****，確定組態已儲存並在伺服器上啟用
 
 停用此設定後，將不會移轉群組，而且不會有主體移轉報告或使用者報告（請參閱下文）。
 
 ## 主體移轉報告和使用者報告 {#principal-migration-report}
 
 移轉期間若包含群組（預設），系統便會儲存「主體移轉報告」，當中會概述每個群組在移轉期間發生的情況。  若要在成功內嵌後下載此報表：
+
 * 在CAM中，前往「內容轉移」並選取「擷取工作」。
 * 按一下相關內嵌行上的省略符號(...)，然後選擇「檢視主體摘要」。
 * 在出現的對話方塊中，從「下載檔案……」下的下拉式清單中選取「主體移轉報告」，然後按一下「下載」按鈕。
 * 儲存產生的CSV檔案。
 
 每個群組記錄的部分資訊為：
+
 * 如果移轉，則為導致群組移轉的第一個ACL或CUG的路徑。
 * 無論群組先前是否已移轉；如果目前的擷取為非擦去擷取，則某些群組可能已在先前的擷取期間移轉。
 * 群組是否為內建群組；這些群組不會移轉，因為它們一律位於目標AEMaaCS環境。
@@ -109,7 +111,7 @@ CTT 3.0.20版及更新版本包含可停用群組移轉的選項。  這在OSGI�
 
 * 如果設定了&#x200B;**在內嵌之前擦除雲端執行個體上的現有內容**，則會刪除先前傳輸至Cloud Service執行個體的群組以及整個現有存放庫；將建立新存放庫，並內嵌內容。 此程式也會重設所有設定，包括目標Cloud Service執行個體的許可權，且對於新增至&#x200B;**管理員**&#x200B;群組的任何使用者而言皆為真。 必須將管理員使用者重新新增到&#x200B;**管理員**&#x200B;群組，才能擷取CTT/CAM擷取的存取權杖。
 * 執行非擦去擷取時（**未設定擦去現有內容**），如果內容未傳輸，因為在上次傳輸後內容未變更，則與該內容關聯的群組也不會傳輸。 即使群組在來源系統上已變更，此規則仍為真。 這是因為群組只會隨著與其相關聯的內容一起移轉。 因此，在此情況下，任何屬於來源系統群組成員的群組，都不會進行移轉，除非這些群組屬於正在移轉的不同群組，或位於正在移轉的不同內容的ACL中。 若要在之後移轉這些群組，請考慮使用套件、從目標中刪除群組並重新移轉相關內容，或使用擦去內嵌重新移轉。
-* 在非擦去擷取期間，如果來源AEM執行個體和目標AEM Cloud Service執行個體上存在具有任何相同唯一性限制資料（rep：principalName、rep：authorizableId、jcr：uuid或rep：externalId）的群組，則有問題的群組是&#x200B;_未_&#x200B;移轉，而雲端系統上先前存在的群組保持不變。 這會記錄在「主要移轉報表」中。
+* 在非擦去擷取期間，如果來源AEM執行個體和目標AEM Cloud Service執行個體上存在具有任何相同唯一性限制資料（rep:principalName、rep:authorizableId、jcr:uuid或rep:externalId）的群組，則有問題的群組是&#x200B;_未_&#x200B;移轉，而雲端系統上先前存在的群組保持不變。 這會記錄在「主要移轉報表」中。
 * 請參閱[移轉封閉式使用者群組](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md)，以了解封閉式使用者群組(CUG)原則中所使用群組的額外考量事項。
 
 ## 最終摘要與報告

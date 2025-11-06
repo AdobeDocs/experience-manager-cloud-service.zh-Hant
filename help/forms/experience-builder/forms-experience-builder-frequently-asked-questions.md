@@ -5,14 +5,14 @@ feature: Edge Delivery Services
 hide: true
 index: false
 hidefromtoc: true
-role: Admin, Architect, Developer
-source-git-commit: de524aeddd5f53cbd713ff0523222966752ebbc0
+role: Admin, Developer
+exl-id: f43c2586-9075-47dc-aa45-5ed2d2979b6d
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1060'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
-
 
 # Forms Experience Builder — 常見問題
 
@@ -111,7 +111,6 @@ AI會自動設定包含步驟間導覽的表單結構。
     將美國電話號碼格式驗證新增至@phoneNumber
     設定年齡驗證：@dateOfBirth
 必須是18歲或以上
-
 ## 進階功能
 
 ### 什麼是LLM增強型智慧型欄位？
@@ -240,8 +239,8 @@ Forms Experience Builder包含協助工具功能：
 ## 相關的文章
 
 - [Forms Experience Builder概述](product-overview.md)
-- [Forms Experience Builder快速入門](forms-experience-builder-getting-started.md)
-- [部署和設定Forms Experience Builder](deploy-forms-experience-builder.md)
+- [表單體驗建立工具快速入門](forms-experience-builder-getting-started.md)
+- [部署和設定表單體驗建立工具](deploy-forms-experience-builder.md)
 - [LLM增強型智慧型欄位](forms-experience-builder-llm-smart-fields.md)
 - [智慧型匯入和轉換](intelligent-import-conversion.md)
 - [表單提交與整合](form-submission-integration.md)

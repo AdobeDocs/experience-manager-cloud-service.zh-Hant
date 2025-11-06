@@ -9,7 +9,7 @@ kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
 role: Admin
-source-git-commit: 856442039fcd25ec675a6258d182f7a35f590c3c
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1092'
 ht-degree: 1%
@@ -36,7 +36,7 @@ AEM Commerce as a Cloud Service的上線流程分為兩個步驟：
 
 Adobe已完成第一個入門步驟。 如需有關定價和布建的詳細資訊，請洽詢您的銷售代表。
 
-布建CIF附加元件後，它會套用至任何現有的Cloud Manager方案。 如果您沒有Cloud Manager計畫，則必須建立一個計畫。 如需詳細資訊，請參閱[設定您的程式。](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html?lang=zh-Hant)
+布建CIF附加元件後，它會套用至任何現有的Cloud Manager方案。 如果您沒有Cloud Manager計畫，則必須建立一個計畫。 如需詳細資訊，請參閱[設定您的程式。](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html)
 
 第二步是每個AEM as a Cloud Service環境的自助服務。 在CIF附加元件初始布建後，您必須進行一些其他設定。
 
@@ -77,7 +77,7 @@ CIF附加元件可選擇性支援對Adobe Commerce Enterprise/Cloud作者使用�
 
 1. 使用Cloud Manager外掛程式取得Adobe I/O CLI。
 
-   * 請檢視[Adobe Cloud Manager檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=zh-Hant)，瞭解如何下載、設定和使用[Adobe I/O CLI](https://github.com/adobe/aio-cli)搭配[Cloud Manager CLI外掛程式。](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+   * 請檢視[Adobe Cloud Manager檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)，瞭解如何下載、設定和使用[Adobe I/O CLI](https://github.com/adobe/aio-cli)搭配[Cloud Manager CLI外掛程式。](https://github.com/adobe/aio-cli-plugin-cloudmanager)
 
 1. 使用AEM as a Cloud Service程式驗證Adobe I/O CLI。
 
@@ -128,14 +128,19 @@ CIF附加元件和[CIF核心元件](https://github.com/adobe/aem-core-cif-compon
 * GraphQL使用者端 — 選取已設定的GraphQL使用者端以進行商務後端通訊。 此使用者端通常應維持預設值。
 * 存放區檢視 — 存放區檢視識別碼。 如果空白，則使用預設存放區檢視。
 * GraphQL Proxy路徑 — AEM中的GraphQL Proxy用來將請求代理至商務後端GraphQL端點的URL路徑。
+
   >[!NOTE]
   >
   > 在大多數設定中，不可變更預設值`/api/graphql`。 只有未使用所提供GraphQL Proxy的進階設定，才應變更此設定。
+
 * 啟用目錄UID支援 — 在商務後端GraphQL呼叫中啟用對UID的支援，而非ID。
+
   >[!NOTE]
   >
   > Adobe Commerce 2.4.2引進了對UID的支援。只有當您的商務後端支援2.4.2版或更新版本的GraphQL結構描述時，才啟用UID。
+
 * 目錄根類別識別碼 — 商店目錄根的識別碼(UID或ID)
+
   >[!CAUTION]
   >
   > 從CIF核心元件2.0.0版開始，已移除對`id`的支援，並取代為`uid`。 如果您的專案使用CIF核心元件2.0.0版，您必須啟用目錄UID支援，並使用有效類別UID做為「目錄根類別識別碼」。

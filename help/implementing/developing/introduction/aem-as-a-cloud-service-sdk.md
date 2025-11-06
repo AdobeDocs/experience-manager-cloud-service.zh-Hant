@@ -3,8 +3,8 @@ title: AEM as a Cloud Service SDK
 description: AEM as a Cloud Service Software Development Kit概述。
 exl-id: 06f3d5ee-440e-4cc5-877a-5038f9bd44c6
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 82f5078740b2cf6ac481d83df40bbbc4fb3c1a77
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1246'
 ht-degree: 1%
@@ -31,7 +31,7 @@ AEM as a Cloud Service SDK由下列成品組成：
 
 ## 為SDK建立 {#building-for-the-sdk}
 
-AEM as a Cloud Service SDK可用來建置和部署自訂程式碼。 請參閱[AEM專案原型檔案](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/developing/archetype/using)。 基本上，會執行下列步驟：
+AEM as a Cloud Service SDK可用來建置和部署自訂程式碼。 請參閱[AEM專案原型檔案](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using)。 基本上，會執行下列步驟：
 
 * **編譯程式碼** — 已編譯Source程式碼，產生產生的內容封裝。
 * **建置成品** — 在此過程中建置成品。

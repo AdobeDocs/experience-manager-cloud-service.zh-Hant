@@ -2,10 +2,10 @@
 title: 篩選元件
 description: 了解如何使用元件篩選器限制通用編輯器中每個容器所允許的元件。
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: eeae8d7c-c563-4d9b-8c54-1098a4e98c18
-source-git-commit: cdad4954b13f5582bebfd604220da90529231ccd
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '153'
 ht-degree: 100%
 

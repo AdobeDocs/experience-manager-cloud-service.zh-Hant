@@ -2,10 +2,10 @@
 title: 定義內容片段模型
 description: 瞭解內容片段模型如何作為您在AEM中內容片段的基礎，讓您建立結構化內容，以用於Headless傳送或頁面編寫。
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 solution: Experience Manager Sites
-source-git-commit: 416cb98fbf48885688ee70d63e606e3f7c90f9f8
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2201'
 ht-degree: 3%
@@ -219,12 +219,12 @@ Adobe Experience Manager (AEM) as a Cloud Service中的內容片段模型定義[
   在片段中實現/轉譯欄位的各種選項。 這通常可讓您定義作者將看到欄位的單一例項，還是允許建立多個例項。 使用&#x200B;**多個欄位**&#x200B;時，您可以定義專案的最小和最大數量 — 如需詳細資訊，請參閱[驗證](#validation)。
 
 * **欄位標籤**
-輸入&#x200B;**欄位標籤**&#x200B;會自動產生&#x200B;**屬性名稱**，然後可視需要手動更新。
+輸入**欄位標籤**&#x200B;會自動產生&#x200B;**屬性名稱**，然後可視需要手動更新。
 
 * **驗證**
-基本驗證可由機制使用，例如&#x200B;**Required**&#x200B;屬性。 有些資料型別有額外的驗證欄位。 如需詳細資訊，請參閱[驗證](#validation)。
+基本驗證可由機制使用，例如**Required**&#x200B;屬性。 有些資料型別有額外的驗證欄位。 如需詳細資訊，請參閱[驗證](#validation)。
 
-* 對於「多行」 **資料類型** ，可將「預設類型 **&#x200B;**&#x200B;」定義為：
+* 對於「多行」 **資料類型** ，可將「預設類型 **** 」定義為：
 
    * **RTF 文字**
    * **Markdown**
@@ -313,10 +313,10 @@ Adobe Experience Manager (AEM) as a Cloud Service中的內容片段模型定義[
 >AEM針對下列專案提供週期性保護：
 >
 >* 內容參考
->  &#x200B;>  這可防止使用者新增對目前片段的引用，並可能導致空白的片段引用選取器對話方塊。
+>  這可防止使用者新增對目前片段的引用，並可能導致空白的片段引用選取器對話方塊。
 >
 >* GraphQL中的片段參考
->  &#x200B;>  如果您建立深層查詢，且該查詢傳回多個互相參照的內容片段，則它會在第一次出現時傳回null。
+>  如果您建立深層查詢，且該查詢傳回多個互相參照的內容片段，則它會在第一次出現時傳回null。
 
 >[!CAUTION]
 >
@@ -331,6 +331,7 @@ Adobe Experience Manager (AEM) as a Cloud Service中的內容片段模型定義[
 除了標準屬性之外，您還可以指定：
 
 * **根路徑**，指定或代表要儲存任何參考內容的位置
+
   >[!NOTE]
   >
   >如果您想在使用內容片段編輯器時直接在此欄位上傳和參考影像，則必須使用此選項。
@@ -338,6 +339,7 @@ Adobe Experience Manager (AEM) as a Cloud Service中的內容片段模型定義[
   >如需詳細資訊，請參閱[參考影像](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images)。
 
 * 可參考的內容型別
+
   >[!NOTE]
   >
   >如果您想要在使用內容片段編輯器時直接上傳和參考此欄位中的影像，這些必須包含&#x200B;**影像**。
@@ -346,6 +348,7 @@ Adobe Experience Manager (AEM) as a Cloud Service中的內容片段模型定義[
 
 * 檔案大小限制
 * 如果參照影像：
+
    * 顯示縮圖
    * 影像高度和寬度的限制
 

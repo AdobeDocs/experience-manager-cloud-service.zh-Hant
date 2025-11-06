@@ -3,8 +3,8 @@ title: 頁面編輯器限制
 description: 頁面編輯器會使用覆蓋來與限定在iframe中的內容互動。 這個互動會對編輯器的使用以及開發人員造成一些限制。
 exl-id: 6a4f0e43-1076-4da9-95dc-9c5bf83e30d0
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 8b38e26b16c1fb565f122777f0577d332f62c39c
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '312'
 ht-degree: 4%

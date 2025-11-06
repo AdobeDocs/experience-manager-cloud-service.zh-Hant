@@ -2,10 +2,10 @@
 title: 設定 Edge Delivery 網站以使用外部 Git 存放庫
 description: 了解如何將 Edge Delivery 網站連結至私人或企業 Git 存放庫。
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 1dbaef34-efa3-4287-b7b1-f60db938146d
-source-git-commit: e1922bd862a2106a274694ea1d3a98da9c186049
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '325'
 ht-degree: 100%
 

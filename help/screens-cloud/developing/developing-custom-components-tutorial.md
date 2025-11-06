@@ -4,7 +4,7 @@ description: 下列教學課程將逐步說明為AEM Screens建立自訂元件�
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
 feature: Developing Screens
 role: Admin, Developer, User
-source-git-commit: 1179e45f6e75a8a4f5e5e76903243f64d9f406ae
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2039'
 ht-degree: 2%
@@ -30,12 +30,12 @@ ht-degree: 2%
 
 1. 本機開發環境
 
-教學課程步驟和熒幕擷取畫面使用&#x200B;**CRXDE Lite**&#x200B;執行。 您也可以使用IDE來完成本教學課程。 有關使用IDE來開發[與AEM的詳細資訊，請參閱此處](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=zh-Hant)。
+教學課程步驟和熒幕擷取畫面使用&#x200B;**CRXDE Lite**&#x200B;執行。 您也可以使用IDE來完成本教學課程。 有關使用IDE來開發[與AEM的詳細資訊，請參閱此處](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html)。
 
 
 ## 專案設定 {#project-setup}
 
-Screens專案的原始程式碼通常會作為多模組Maven專案來管理。 為了加快教學課程，已使用[AEM專案原型13](https://github.com/adobe/aem-project-archetype)預先產生專案。 如需使用Maven AEM專案原型建立專案的詳細資訊，請參閱[專案設定](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=zh-Hant)。
+Screens專案的原始程式碼通常會作為多模組Maven專案來管理。 為了加快教學課程，已使用[AEM專案原型13](https://github.com/adobe/aem-project-archetype)預先產生專案。 如需使用Maven AEM專案原型建立專案的詳細資訊，請參閱[專案設定](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html)。
 
 1. 使用[CRX Package Manager](http://localhost:4502/crx/packmgr/index.jsp)下載並安裝下列套件：
 
@@ -131,7 +131,7 @@ AEM Screens有一些有趣的限制，不適用於傳統WCM Sites元件。
    <sly data-sly-test="${!production}" data-sly-include="edit.html" />
    ```
 
-   根據目前使用的[編寫模式](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/authoring/author-environment-tools.html?lang=zh-Hant#page-modes)，Screens元件需要兩種不同的轉譯：
+   根據目前使用的[編寫模式](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/authoring/author-environment-tools.html#page-modes)，Screens元件需要兩種不同的轉譯：
 
    1. **生產**：預覽或發佈模式(wcmmode=disabled)
    1. **編輯**：用於所有其他編寫模式，也就是編輯、設計、支架、開發人員……
@@ -339,7 +339,7 @@ AEM Screens元件在編輯模式與預覽/生產模式中的轉譯方式不同�
 
    這麼做可確保只在「預覽/生產」模式中載入樣式。
 
-   ![&#x200B; /apps/weretail-run/components/content/helloworld/clientlibs/production的屬性](/help/screens-cloud/developing/assets/2018-04-30_at_5_04pm.png)
+   ![ /apps/weretail-run/components/content/helloworld/clientlibs/production的屬性](/help/screens-cloud/developing/assets/2018-04-30_at_5_04pm.png)
 
    /apps/weretail-run/components/content/helloworld/clientlibs/production的屬性
 
@@ -370,7 +370,7 @@ AEM Screens元件在編輯模式與預覽/生產模式中的轉譯方式不同�
 
 第三個clientlibrary類別： `cq.screens.components.edit`可用來將Edit-only特定樣式新增至元件。
 
-| Clientlib類別 | 使用情況 |
+| Clientlib類別 | 用途 |
 |---|---|
 | `cq.screens.components` | 在編輯和生產模式之間共用的樣式和指令碼 |
 | `cq.screens.components.edit` | 僅用於編輯模式的樣式和指令碼 |
@@ -378,7 +378,7 @@ AEM Screens元件在編輯模式與預覽/生產模式中的轉譯方式不同�
 
 ## 建立設計頁面 {#design-page}
 
-AEM Screens使用[靜態頁面範本](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-static.html?lang=zh-Hant)和[設計設定](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/default-components-designmode.html?lang=zh-Hant)進行全域變更。 設計設定常用於設定通道上Parsys的允許元件。 最佳實務是以應用程式專屬的方式儲存這些設定。
+AEM Screens使用[靜態頁面範本](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/templates/page-templates-static.html)和[設計設定](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/default-components-designmode.html)進行全域變更。 設計設定常用於設定通道上Parsys的允許元件。 最佳實務是以應用程式專屬的方式儲存這些設定。
 
 We.Retail Run設計頁面會建立於下方，用於儲存We.Retail Run專案的所有特定設定。
 
@@ -540,7 +540,7 @@ public class MyCustomHandler extends AbstractResourceHandler {
       </dependencies>
 ```
 
-## 整合所有內容 {#putting-it-all-together}
+## 整合 {#putting-it-all-together}
 
 以下影片說明完成的元件，以及如何將其新增到序列頻道。 該管道隨後會新增至位置顯示，並最終指派給Screens播放器。
 
@@ -548,7 +548,7 @@ public class MyCustomHandler extends AbstractResourceHandler {
 
 ## 完成的程式碼 {#finished-code}
 
-以下是教學課程中完成的程式碼。 **screens-weretail-run.ui.apps-0.0.1-SNAPSHOT.zip**&#x200B;和&#x200B;**screens-weretail-run.ui.content-0.0.1-SNAPSHOT.zip**&#x200B;是編譯的AEM套件。 **SRC-screens-weretail-run-0.0.1.zip &#x200B;** 是可以使用Maven部署的未編譯原始程式碼。
+以下是教學課程中完成的程式碼。 **screens-weretail-run.ui.apps-0.0.1-SNAPSHOT.zip**&#x200B;和&#x200B;**screens-weretail-run.ui.content-0.0.1-SNAPSHOT.zip**&#x200B;是編譯的AEM套件。 **SRC-screens-weretail-run-0.0.1.zip**&#x200B;是可以使用Maven部署的未編譯原始程式碼。
 
 [取得檔案](/help/screens-cloud/developing/assets/screens-weretail-runuiapps-001-snapshot.zip)
 

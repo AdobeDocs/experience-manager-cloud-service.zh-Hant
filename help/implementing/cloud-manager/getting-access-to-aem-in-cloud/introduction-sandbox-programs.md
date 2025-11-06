@@ -4,8 +4,8 @@ description: 瞭解沙箱程式是什麼以及它們與生產程式有何不同�
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 32%
@@ -41,7 +41,7 @@ ht-degree: 32%
 
 由於沙箱程式不適用於即時流量，因此沙箱程式對其使用有一定的限制和條件，這使其與生產程式不同。
 
-| 限制/條件 | 描述 |
+| 限制/條件 | 說明 |
 | --- | --- |
 | 沒有即時流量 | 沙箱程式並不意味著承載即時流量，因此不受[AEM as a Cloud Service承諾](https://www.adobe.com/tw/legal/service-commitments.html)的約束。 |
 | 無自動縮放 | 在沙箱計畫中建立的環境未配置為自動縮放。因此，這些環境不適合進行效能或負載測試。 |

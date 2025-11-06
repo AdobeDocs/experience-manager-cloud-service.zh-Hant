@@ -3,8 +3,8 @@ title: 設定搜尋表單
 description: 設定Adobe Experience Manager as a Cloud Service的搜尋Forms 。
 exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2036'
 ht-degree: 9%
@@ -15,7 +15,7 @@ ht-degree: 9%
 
 Adobe Experience Manager as a Cloud Service提供強大的[搜尋](/help/sites-cloud/authoring/search.md)機制。
 
-除此之外，還有一組預先定義的選項，可協助您篩選內容。 這些保留預先定義的Facet，例如&#x200B;**修改日期**、**Publish狀態**&#x200B;或&#x200B;**即時副本狀態**，可協助您快速向下展開至您需要的資源。
+除此之外，還有一組預先定義的選項，可協助您篩選內容。 這些保留預先定義的Facet，例如&#x200B;**修改日期**、**發佈狀態**&#x200B;或&#x200B;**即時副本狀態**，可協助您快速向下展開至您需要的資源。
 
 ![搜尋和篩選使用方式](assets/csf-usage.png)
 
@@ -31,7 +31,7 @@ Adobe Experience Manager as a Cloud Service提供強大的[搜尋](/help/sites-c
 
 使用&#x200B;**搜尋Forms**，您可以根據特定需求自訂及擴充這些面板。
 
-**搜尋Forms**&#x200B;提供您可以組合和定義的[述詞](#predicates-and-their-settings)的現成選擇。 設定這些表單[&#128279;](#configuring-your-search-forms)的對話方塊可透過下列方式存取：
+**搜尋Forms**&#x200B;提供您可以組合和定義的[述詞](#predicates-and-their-settings)的現成選擇。 設定這些表單[的](#configuring-your-search-forms)對話方塊可透過下列方式存取：
 
 * **工具**
    * **一般**
@@ -53,7 +53,7 @@ Adobe Experience Manager as a Cloud Service提供強大的[搜尋](/help/sites-c
 * **頁面編輯器（頁面搜尋）**
 * **頁面編輯器（段落搜尋）**
 * **頁面編輯器（產品搜尋）**
-* **頁面編輯器(Scene7搜尋)**
+* **頁面編輯器（Scene7搜尋）**
 * **頁面編輯器（視訊搜尋）**
 * **專案管理搜尋邊欄**
 * **專案翻譯搜尋邊欄**
@@ -288,7 +288,7 @@ Adobe Experience Manager as a Cloud Service提供強大的[搜尋](/help/sites-c
    <td>
     <ul>
      <li>欄位標籤</li>
-     <li>Publish屬性名稱*</li>
+     <li>發佈屬性名稱*</li>
      <li>鎖定的頁面屬性名稱*</li>
      <li>說明</li>
     </ul> </td>
@@ -339,7 +339,7 @@ Adobe Experience Manager as a Cloud Service提供強大的[搜尋](/help/sites-c
    </td>
   </tr>
   <tr>
-   <td>Publish狀態</td>
+   <td>發佈狀態</td>
    <td>根據資源的發佈狀態來篩選資源。</td>
    <td>
     <ul>
@@ -370,13 +370,13 @@ Adobe Experience Manager as a Cloud Service提供強大的[搜尋](/help/sites-c
     </ul> </td>
   </tr>
   <tr>
-   <td>相對日期</td>
+   <td>相對時間</td>
    <td>根據資源的相對建立日期篩選資源。 例如1週前、1個月前。</td>
    <td>
     <ul>
      <li>欄位標籤</li>
      <li>屬性名稱*</li>
-     <li>相對日期</li>
+     <li>相對時間</li>
      <li>說明</li>
     </ul> </td>
   </tr>
@@ -511,7 +511,7 @@ Adobe Experience Manager as a Cloud Service提供強大的[搜尋](/help/sites-c
 
   要搜尋的屬性。 它使用相對路徑，萬用字元`*/*/*`指定相對於`jcr:content`節點的屬性深度（每個星號代表一個節點層級）。
 
-  如果您只想在`jcr:content`節點上具有`x`屬性的資源之第一層子節點上搜尋，請使用`*/jcr:content/x`
+  如果您只想在`x`節點上具有`jcr:content`屬性的資源之第一層子節點上搜尋，請使用`*/jcr:content/x`
 
 * **屬性深度**
 
@@ -536,12 +536,12 @@ Adobe Experience Manager as a Cloud Service提供強大的[搜尋](/help/sites-c
   `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
 
 * **選項節點路徑**
-實際上與&#x200B;**選項路徑**&#x200B;相同，只有這個在通用述詞欄位中，其他則專用於資產。
+實際上與**選項路徑**&#x200B;相同，只有這個在通用述詞欄位中，其他則專用於資產。
 
 * **單選**
 如果勾選，選項會呈現為僅允許單一選取的核取方塊。 如果錯誤地選取了，則可取消選取核取方塊。
 
-* **Publish和即時副本屬性名稱**
+* **發佈和即時副本屬性名稱**
 網站特定述詞的發佈和即時副本核取方塊的標籤。
 
 * **設定**&#x200B;標籤中欄位標籤上的&amp;amp；ast；表示欄位是必填欄位，如果留白，將會出現錯誤訊息。
@@ -704,7 +704,7 @@ Adobe Experience Manager as a Cloud Service提供強大的[搜尋](/help/sites-c
   </tr>
   <tr>
    <td>預覽</td>
-   <td><code>/var/dam/content</code>節點的讀取、寫入、刪除許可權。<code>/apps</code>節點上的<br />讀取、寫入許可權。</td>
+   <td><code>/var/dam/content</code>節點的讀取、寫入、刪除許可權。<br />節點上的<code>/apps</code>讀取、寫入許可權。</td>
   </tr>
  </tbody>
 </table>

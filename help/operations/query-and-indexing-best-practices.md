@@ -1,13 +1,13 @@
 ---
 title: 查詢和編製索引最佳做法
-description: 瞭解如何根據Adobe的最佳實務准則最佳化您的索引和查詢。
+description: 瞭解如何根據Adobe的最佳實務准則來最佳化您的索引和查詢。
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
 feature: Operations
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '3088'
+source-wordcount: '3086'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ AEM as a Cloud Service提供[查詢效能工具](#query-performance-tool)，其�
 * 它會顯示已執行的查詢及其相關效能特性及查詢計畫。
 * 它允許在不同層級執行特定查詢，從僅顯示查詢計畫到執行完整查詢。
 
-查詢效能工具可透過Cloud Manager[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=zh-Hant#queries)中的Developer Console存取。 與AEM 6.x版相比，AEM as a Cloud Service的查詢效能工具可提供更多有關查詢執行細節的資訊。
+查詢效能工具可透過Cloud Manager[中的](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries)Developer Console存取。 與AEM 6.x版相比，AEM as a Cloud Service的查詢效能工具可提供更多有關查詢執行細節的資訊。
 
 此圖表說明使用查詢效能工具最佳化查詢的一般流程。
 
@@ -111,7 +111,8 @@ AEM as a Cloud Service提供[查詢效能工具](#query-performance-tool)，其�
 
 ## 查詢效能工具 {#query-performance-tool}
 
-查詢效能工具(位於`/libs/granite/operations/content/diagnosistools/queryPerformance.html`，可透過Cloud Manager[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=zh-Hant#queries)中的Developer Console取得)提供 — 
+查詢效能工具(位於`/libs/granite/operations/content/diagnosistools/queryPerformance.html`，可透過Cloud Manager[中的](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries)Developer Console取得)提供 — 
+
 * 任何「緩慢查詢」的清單；目前定義為讀取/掃描超過5000列的查詢。
 * 「常見查詢」清單
 * 「說明查詢」工具，用於瞭解Oak將如何執行特定查詢。
@@ -119,6 +120,7 @@ AEM as a Cloud Service提供[查詢效能工具](#query-performance-tool)，其�
 ![查詢效能工具](assets/query-performance-tool.png)
 
 「緩慢查詢」和「常見查詢」表格包括 — 
+
 * 查詢陳述式本身。
 * 最後一個執行查詢的執行緒的詳細資訊，允許識別執行查詢的頁面或應用程式功能。
 * 查詢的「讀取最佳化」分數。
@@ -155,6 +157,7 @@ Explain查詢工具可讓開發人員瞭解查詢執行計畫（請參閱[讀取
 
 選取`Explain`後，使用者會看到一個快顯視窗，說明查詢說明的結果（以及執行，如果選取）。
 此快顯視窗包括 — 
+
 * 執行查詢時使用的索引（如果查詢是使用[存放庫周遊](#repository-traversal)執行，則無索引）。
 * 執行時間（如果已核取`Include Execution Time`核取方塊）和讀取的結果計數（如果已核取`Read first page of results`或`Include Node Count`核取方塊）。
 * 執行計畫，允許查詢執行方式的詳細分析 — 請參閱[閱讀查詢執行計畫](#reading-query-execution-plan)以瞭解如何解譯。
@@ -172,6 +175,7 @@ Explain查詢工具可讓開發人員瞭解查詢執行計畫（請參閱[讀取
 ```
 
 ...其中包含 — 
+
 * 3個限制
    * 節點型別(`dam:Asset`)
    * 路徑（`/content/dam`的子代）
@@ -191,11 +195,12 @@ lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) +:ancestors:/content/dam +j
 ```
 
 計畫的這個區段指出 — 
+
 * 索引是用來執行此查詢 — 
    * 在此案例中，將使用Lucene索引`/oak:index/damAssetLucene-9`，因此其餘資訊為Lucene查詢語法。
 * 所有3個限制都由索引處理 — 
    * 節點型別限制
-      * 隱含，因為`damAssetLucene-9`只索引dam：Asset型別的節點。
+      * 隱含，因為`damAssetLucene-9`只索引dam:Asset型別的節點。
    * 路徑限制
       * 因為`+:ancestors:/content/dam`出現在Lucene查詢中。
    * 屬性限制
@@ -212,6 +217,7 @@ lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) +:ancestors:/content/dam +j
 ```
 
 ...其中包含 — 
+
 * 3個限制
    * 節點型別(`dam:Asset`)
    * 路徑（`/content/dam`的子代）
@@ -231,9 +237,10 @@ lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) :ancestors:/content/dam ord
 ```
 
 計畫的這個區段指出 — 
+
 * 索引只會處理2個限制（共3個） — 
    * 節點型別限制
-      * 隱含，因為`damAssetLucene-9`只索引dam：Asset型別的節點。
+      * 隱含，因為`damAssetLucene-9`只索引dam:Asset型別的節點。
    * 路徑限制
       * 因為`+:ancestors:/content/dam`出現在Lucene查詢中。
 * 屬性限制`jcr:content/metadata/myProperty = "My Property Value"`不是在索引上執行，而是將套用為查詢引擎篩選基礎Lucene查詢的結果。
@@ -255,7 +262,7 @@ lucene:damAssetLucene-9(/oak:index/damAssetLucene-9) :ancestors:/content/dam ord
 
 ## JCR查詢速查表 {#jcr-query-cheatsheet}
 
-為了支援建立有效的JCR查詢和索引定義，[JCR查詢速查表](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=zh-Hant#jcrquerycheatsheet)可供下載，並可在開發期間作為參考使用。
+為了支援建立有效的JCR查詢和索引定義，[JCR查詢速查表](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html#jcrquerycheatsheet)可供下載，並可在開發期間作為參考使用。
 
 它包含QueryBuilder、XPath和SQL-2的範例查詢，涵蓋了在查詢效能方面行為不同的多個案例。 此外，也提供如何建立或自訂Oak索引的建議。 本速查表內容適用於AEM as a Cloud Service和AEM 6.5。
 

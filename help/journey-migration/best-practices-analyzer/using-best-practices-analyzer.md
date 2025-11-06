@@ -4,7 +4,7 @@ description: 瞭解如何使用Best Practices Analyzer以瞭解升級整備程�
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 feature: Migration
 role: Admin
-source-git-commit: 951f7fb56d1d8a3285973fda945cbc21f310925f
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2796'
 ht-degree: 37%
@@ -23,7 +23,7 @@ ht-degree: 37%
 
 請參考以下章節，瞭解執行Best Practices Analyzer (BPA)時的重要考量：
 
-* BPA報告是使用Adobe Experience Manager (AEM) [模式偵測器](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html?lang=zh-Hant)的輸出所建置。 BPA使用的模式偵測器版本包含在BPA安裝封裝中。
+* BPA報告是使用Adobe Experience Manager (AEM) [模式偵測器](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html)的輸出所建置。 BPA使用的模式偵測器版本包含在BPA安裝封裝中。
 
 * BPA只能由&#x200B;**管理員**&#x200B;使用者或&#x200B;**管理員**&#x200B;群組中的使用者執行。
 
@@ -166,14 +166,14 @@ For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP i
 >id="aemcloud_bpa_interpreting"
 >title="最佳做法分析工具報告解讀"
 >abstract="檢視 BPA 報表輸出有兩種選項：UI 和 CSV。在 AEM 執行個體中執行最佳做法分析工具時，UI 報表會在工具視窗中顯示為結果。CSV 格式的報表包含從「模式偵測器」輸出產生的資訊，且會依類別類型、子類型和重要性層級排序和編排。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=zh-Hant#analysis-report" text="檢閱最佳做法分析報表"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=zh-Hant" text="了解最佳做法分析工具報表類別"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html#analysis-report" text="檢閱最佳做法分析報表"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html" text="了解最佳做法分析工具報表類別"
 
 在AEM例項中執行Best Practices Analyzer工具時，報表會在工具視窗中顯示為結果。
 
 報表格式為：
 
-* **報表概覽**：報表本身的相關資訊，包括下列資訊：
+* **報表概觀**：報表本身的相關資訊，包括下列資訊：
    * **報告時間**：產生報表內容並首次提供的時間。
    * **過期時間**：報表內容快取的過期時間。
    * **產生時段**：報表內容產生程序所花費的時間。
@@ -184,7 +184,7 @@ For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP i
 系統會為每個結果指派一個重要性層級，以指出動作的概略優先順序。
 
 >[!NOTE]
->若要深入瞭解每個發現專案類別，請參閱[模式偵測器類別](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=zh-Hant)。
+>若要深入瞭解每個發現專案類別，請參閱[模式偵測器類別](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html)。
 
 請參考下表以了解重要性層級：
 
@@ -222,6 +222,7 @@ CSV 格式報表的欄包括：
 BPA提供HTTP介面，可作為AEM使用者介面的替代介面。 該介面同時支援 HEAD 和 GET 命令。它可用來產生BPA報表，並以三種格式之一傳回：JSON、CSV和定位鍵分隔值(TSV)。
 
 下列URL可用於HTTP存取，其中`<host>`是安裝BPA之伺服器的主機名稱和連線埠（如有需要）：
+
 * `http://<host>/apps/best-practices-analyzer/analysis/report.json` (JSON 格式)
 * `http://<host>/apps/best-practices-analyzer/analysis/report.csv` (CSV 格式)
 * `http://<host>/apps/best-practices-analyzer/analysis/report.tsv` (TSV 格式)
@@ -286,8 +287,8 @@ HTTP 介面可用於多種方法中。
 
 BPA使用名為`repository-reader-service`的系統服務使用者帳戶來執行模式偵測器。 此帳戶適用於 AEM 6.2 和更新版本。在AEM 6.1上，您必須執行下列步驟，在安裝BPA *之前*&#x200B;建立此帳戶：
 
-1. 依照[建立新的服務使用者](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html?lang=zh-Hant#creating-a-new-service-user)中的指示建立使用者。將 UserID 設為 `repository-reader-service`，並將中繼路徑保留為空白，然後按一下綠色核取記號。
+1. 依照[建立新的服務使用者](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user)中的指示建立使用者。將 UserID 設為 `repository-reader-service`，並將中繼路徑保留為空白，然後按一下綠色核取記號。
 
-2. 依照[管理使用者和群組](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=zh-Hant#managing-users-and-groups)中的指示 (尤其是「將使用者新增至群組」的指示)，將 `repository-reader-service` 使用者新增至 `administrators` 群組。
+2. 依照[管理使用者和群組](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html#managing-users-and-groups)中的指示 (尤其是「將使用者新增至群組」的指示)，將 `repository-reader-service` 使用者新增至 `administrators` 群組。
 
 3. 透過封裝管理程式，在您的來源AEM執行個體上安裝BPA套件。 (這將會在 `repository-reader-service` 系統服務使用者的 ServiceUserMapper 設定中新增必要的設定修正。)

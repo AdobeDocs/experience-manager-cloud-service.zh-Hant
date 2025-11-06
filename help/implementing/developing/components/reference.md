@@ -3,21 +3,21 @@ title: 元件參考指南
 description: 開發人員參考指南，瞭解元件及其結構的詳細資訊
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '3481'
+source-wordcount: '3476'
 ht-degree: 1%
 
 ---
 
 # 元件參考指南 {#components-reference-guide}
 
-元件是在AEM中建立體驗的核心。 [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-hant)和[AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)可讓您輕鬆開始使用一組現成且強大的元件。 [WKND教學課程](/help/implementing/developing/introduction/develop-wknd-tutorial.md)會帶領開發人員瞭解如何使用這些工具，以及如何建置自訂元件來建立AEM網站。
+元件是在AEM中建立體驗的核心。 [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)和[AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)可讓您輕鬆開始使用一組現成且強大的元件。 [WKND教學課程](/help/implementing/developing/introduction/develop-wknd-tutorial.md)會帶領開發人員瞭解如何使用這些工具，以及如何建置自訂元件以建立AEM網站。
 
 >[!TIP]
 >
->在參考此檔案之前，請確定您已完成[WKND教學課程](/help/implementing/developing/introduction/develop-wknd-tutorial.md)，因此熟悉[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)和[AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)。
+>在參考此檔案之前，請確定您已完成[WKND教學課程](/help/implementing/developing/introduction/develop-wknd-tutorial.md)，因此熟悉[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)和[AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)。
 
 由於WKND教學課程涵蓋大部分的使用案例，本檔案旨在補充這些資源。 它提供了有關如何在AEM中建構和設定元件的深入技術細節，並非旨在作為快速入門手冊。
 
@@ -34,16 +34,16 @@ ht-degree: 1%
 * 您的元件需要邏輯才能選取/操控內容嗎？
    * 邏輯應與使用者介面層分開。 HTL的設計目的是協助確保做到這一點。
 * 您的元件是否需要CSS格式？
-   * CSS格式應與元件定義分開。 定義命名HTML元素的慣例，以便您可以透過外部CSS檔案來修改它們。
+   * CSS格式應與元件定義分開。 定義命名HTML元素的慣例，以便透過外部CSS檔案進行修改。
 * 您的新元件可能會引入哪些安全性影響？
 
 ### 重複使用現有元件 {#reusing-components}
 
-在您花時間建立全新元件之前，請考慮自訂或擴充現有元件。 [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)提供一套彈性、強大且經過充分測試的生產就緒元件。
+在您花時間建立全新元件之前，請考慮自訂或擴充現有元件。 [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)提供一套彈性、強大且經過充分測試的生產就緒元件。
 
 #### 擴充核心元件 {#extending-core-components}
 
-核心元件也提供[清晰的自訂模式](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=zh-Hant)，您可將其調整為您自己的專案需求。
+核心元件也提供[清晰的自訂模式](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)，您可將其調整為您自己的專案需求。
 
 #### 覆蓋元件 {#overlying-components}
 
@@ -57,16 +57,16 @@ ht-degree: 1%
 
 ### 內容邏輯和轉譯標籤  {#content-logic-and-rendering-markup}
 
-您的元件已以[HTML](https://www.w3schools.com/htmL/html_intro.asp)呈現。 您的元件必須定義取得所需內容所需的HTML，然後視需要在製作和發佈環境中轉譯。
+您的元件已使用[HTML](https://www.w3schools.com/htmL/html_intro.asp)轉譯。 您的元件必須定義所需的HTML才能取得所需內容，然後視需要在製作和發佈環境中轉譯。
 
 建議將負責標示和轉譯的程式碼，與控制用來選取元件內容的邏輯的程式碼分開。
 
-[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=zh-Hant)支援此理念，這是一種範本化語言，刻意加以限制，以確保使用真正的程式語言來定義基礎商業邏輯。 此機制會醒目顯示呼叫特定檢視的程式碼，並在必要時允許同一元件的不同檢視使用特定邏輯。
+[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)支援此理念，這是一種範本化語言，刻意加以限制，以確保使用真正的程式語言來定義基礎商業邏輯。 此機制會醒目顯示呼叫特定檢視的程式碼，並在必要時允許同一元件的不同檢視使用特定邏輯。
 
 此（選用）邏輯可透過不同方式實作，並使用特定命令從HTL叫用：
 
-* 使用Java - [&#x200B; HTL Java Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=zh-Hant)可讓HTL檔案存取自訂Java類別中的Helper方法。 這可讓您使用Java程式碼來實作選取和設定元件內容的邏輯。
-* 使用JavaScript - [HTL JavaScript Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html?lang=zh-Hant)可讓HTL檔案存取以JavaScript撰寫的Helper程式碼。 這可讓您使用JavaScript程式碼來實作選取和設定元件內容的邏輯。
+* 使用Java - [ HTL Java Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html)可讓HTL檔案存取自訂Java類別中的Helper方法。 這可讓您使用Java程式碼來實作選取和設定元件內容的邏輯。
+* 使用JavaScript - [HTL JavaScript Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html)可讓HTL檔案存取以JavaScript撰寫的Helper程式碼。 這可讓您使用JavaScript程式碼來實作選取和設定元件內容的邏輯。
 * 使用使用者端資料庫 — 現代網站非常依賴由複雜的JavaScript和CSS程式碼驅動的使用者端處理。 如需詳細資訊，請參閱檔案[在AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md)上使用使用者端資料庫。
 
 ## 元件結構 {#structure}
@@ -76,7 +76,7 @@ AEM元件的結構既強大又靈活。 主要部分為：
 * [資源類型](#resource-type)
 * [元件定義](#component-definition)
 * [元件的屬性和子節點](#properties-and-child-nodes-of-a-component)
-* [對話方塊](#dialogs)
+* [對話框](#dialogs)
 * [設計對話方塊](#design-dialogs)
 
 ### 資源類型 {#resource-type}
@@ -93,7 +93,7 @@ AEM元件的結構既強大又靈活。 主要部分為：
 元件的定義可劃分如下：
 
 * AEM元件是以[Sling](https://sling.apache.org/documentation.html)為基礎。
-* AEM元件位於`/libs/core/wcm/components`之下。
+* AEM元件位於`/libs/core/wcm/components`下方。
 * 專案/網站特定元件位於`/apps/<myApp>/components`下方。
 * AEM標準元件已定義為`cq:Component`，並具有關鍵元素：
    * jcr屬性 — jcr屬性的清單。 這些是變數，有些可能是選擇性的，但元件節點的基本結構、其屬性和子節點是由`cq:Component`定義所定義。
@@ -110,7 +110,7 @@ AEM元件的結構既強大又靈活。 主要部分為：
    * 如需詳細資訊，請參閱[元件圖示](#component-icon)一節。
 * **重要的子節點**：
    * `cq:editConfig (cq:EditConfig)` — 定義元件的編輯屬性，並讓元件出現在元件瀏覽器中。
-      * 如果元件有對話方塊，即使cq：editConfig不存在，它也會自動出現在「元件」瀏覽器或Sidekick中。
+      * 如果元件有對話方塊，即使cq:editConfig不存在，它也會自動出現在元件瀏覽器或Sidekick中。
    * `cq:childEditConfig (cq:EditConfig)` — 控制未定義自己`cq:editConfig`之子元件的作者UI方面。
    * `cq:dialog (nt:unstructured)` — 此元件的對話方塊。 定義允許使用者設定元件及/或編輯內容的介面。
    * `cq:design_dialog (nt:unstructured)` — 為此元件設計編輯。
@@ -172,7 +172,7 @@ AEM元件的結構既強大又靈活。 主要部分為：
 | `cq:isContainer` | `Boolean` | 這表示元件是否為容器元件，因此可包含其他元件，例如段落系統。 |
 | `cq:dialog` | `nt:unstructured` | 這是元件之「編輯」對話方塊的定義。 |
 | `cq:design_dialog` | `nt:unstructured` | 這是元件之「設計」對話方塊的定義。 |
-| `cq:editConfig` | `cq:EditConfig` | 這會定義元件[&#128279;](#edit-behavior)的編輯組態。 |
+| `cq:editConfig` | `cq:EditConfig` | 這會定義元件[的](#edit-behavior)編輯組態。 |
 | `cq:htmlTag` | `nt:unstructured` | 這會傳回新增至周圍HTML標籤的其他標籤屬性。 啟用向自動產生的div新增屬性。 |
 | `cq:noDecoration` | `Boolean` | 如果為true，則元件不會使用自動產生的div和css類別轉譯。 |
 | `cq:template` | `nt:unstructured` | 如果找到，從元件瀏覽器新增元件時，會將此節點作為內容範本使用。 |
@@ -181,7 +181,7 @@ AEM元件的結構既強大又靈活。 主要部分為：
 | `jcr:title` | `String` | 這是元件的標題。 |
 | `sling:resourceSuperType` | `String` | 設定後，元件會繼承自此元件。 |
 | `component.html` | `nt:file` | 這是元件的HTL指令碼檔案。 |
-| `cq:icon` | `String` | 此值指向元件[&#128279;](#component-icon)的圖示，並出現在「元件瀏覽器」中。 |
+| `cq:icon` | `String` | 此值指向元件[的](#component-icon)圖示，並出現在「元件瀏覽器」中。 |
 
 如果檢視&#x200B;**Text**&#x200B;元件，您可以看到幾個元素：
 
@@ -199,7 +199,7 @@ AEM元件的結構既強大又靈活。 主要部分為：
 * `cq:dialog` — 這定義了用於編輯此元件內容的對話方塊。
 * `cq:design_dialog` — 這會指定此元件的設計編輯選項。
 
-### 對話方塊 {#dialogs}
+### 對話框 {#dialogs}
 
 對話方塊是元件的關鍵元素，因為對話方塊為作者提供介面，讓作者可在內容頁面上設定元件，並提供該元件的輸入。 如需內容作者如何與元件互動的詳細資訊，請參閱[撰寫檔案](/help/sites-cloud/authoring/page-editor/edit-content.md)。
 
@@ -207,7 +207,7 @@ AEM元件的結構既強大又靈活。 主要部分為：
 
 AEM元件的對話方塊：
 
-* 是`nt:unstructured`型別的`cq:dialog`節點。
+* 是`cq:dialog`型別的`nt:unstructured`節點。
 * 位於其`cq:Component`節點下及其元件定義旁邊。
 * 定義用於編輯此元件內容的對話方塊。
 * 是使用Granite UI元件來定義。
@@ -225,7 +225,7 @@ AEM元件的對話方塊：
 
 「設計」對話方塊類似於用來編輯和設定內容的對話方塊，但它們為範本作者提供了介面，讓他們可以預先設定，並為頁面範本上的該元件提供設計詳細資訊。 然後，內容作者會使用頁面範本來建立內容頁面。 如需如何建立範本的詳細資訊，請參閱[範本檔案](/help/sites-cloud/authoring/page-editor/templates.md)。
 
-編輯頁面範本[&#128279;](/help/sites-cloud/authoring/page-editor/templates.md)時會使用設計對話方塊，不過並非所有元件都需要。 例如，**Title**&#x200B;和&#x200B;**影像元件**&#x200B;都有設計對話方塊，而&#x200B;**社群媒體共用元件**&#x200B;則沒有。
+編輯頁面範本[時會使用](/help/sites-cloud/authoring/page-editor/templates.md)設計對話方塊，不過並非所有元件都需要。 例如，**Title**&#x200B;和&#x200B;**影像元件**&#x200B;都有設計對話方塊，而&#x200B;**社群媒體共用元件**&#x200B;則沒有。
 
 ### Coral UI和Granite UI {#coral-and-granite}
 
@@ -301,7 +301,7 @@ Content not found
 
 ## 元件階層與繼承 {#component-hierarchy-and-inheritance}
 
-AEM中的元件必須遵守&#x200B;**資源型別階層**。 這是用來使用屬性`sling:resourceSuperType`擴充元件。 這可讓元件繼承自其他元件。
+AEM中的元件須遵循&#x200B;**資源型別階層**。 這是用來使用屬性`sling:resourceSuperType`擴充元件。 這可讓元件繼承自其他元件。
 
 如需詳細資訊，請參閱[重複使用元件](#reusing-components)一節。
 
@@ -309,7 +309,7 @@ AEM中的元件必須遵守&#x200B;**資源型別階層**。 這是用來使用�
 
 本節說明如何設定元件的編輯行為。 這包括元件可用的動作、in.place編輯器的特性，以及與元件事件相關的接聽程式等屬性。
 
-元件的編輯行為是透過在元件節點（型別為`cq:Component`）下方新增型別為`cq:EditConfig`的`cq:editConfig`節點以及新增特定屬性和子節點來設定。 下列屬性和子節點可供使用：
+元件的編輯行為是透過在元件節點（型別為`cq:editConfig`）下方新增型別為`cq:EditConfig`的`cq:Component`節點以及新增特定屬性和子節點來設定。 下列屬性和子節點可供使用：
 
 * `cq:editConfig`節點屬性
 * [`cq:editConfig`子節點](#configuring-with-cq-editconfig-child-nodes)：
@@ -317,20 +317,20 @@ AEM中的元件必須遵守&#x200B;**資源型別階層**。 這是用來使用�
    * `cq:inplaceEditing` （節點型別`cq:InplaceEditingConfig`）：定義元件的就地編輯設定
    * `cq:listeners` （節點型別`cq:EditListenersConfig`）：定義在元件上發生動作之前或之後所發生的事件
 
-AEM中有許多現有設定。 您可以使用&#x200B;**CRXDE Lite**&#x200B;中的查詢工具輕鬆搜尋特定屬性或子節點。
+AEM中有許多現有設定。 您可以使用&#x200B;**CRXDE Lite**&#x200B;中的查詢工具，輕鬆搜尋特定屬性或子節點。
 
 ### 元件預留位置 {#component-placeholders}
 
-元件必須一律呈現某些作者可見的HTML，即使元件沒有內容亦然。 否則，編輯器介面中可能會看不到它，從技術上講它會出現，但不會顯示在頁面和編輯器中。 在這種情況下，作者將無法選取空白元件並與之互動。
+元件必須一律呈現作者可見的某些HTML，即使元件沒有內容亦然。 否則，編輯器介面中可能會看不到它，從技術上講它會出現，但不會顯示在頁面和編輯器中。 在這種情況下，作者將無法選取空白元件並與之互動。
 
 因此，只要元件在頁面編輯器中轉譯頁面時（當WCM模式為`edit`或`preview`時）沒有轉譯任何可見輸出，就應該轉譯預留位置。
-預留位置的一般HTML標示如下：
+預留位置的一般HTML標籤如下：
 
 ```HTML
 <div class="cq-placeholder" data-emptytext="Component Name"></div>
 ```
 
-轉譯上述預留位置HTML的典型HTL指令碼如下：
+轉譯上述預留位置HTML的一般HTL指令碼如下：
 
 ```HTML
 <div class="cq-placeholder" data-emptytext="${component.properties.jcr:title}"
@@ -352,15 +352,15 @@ AEM中有許多現有設定。 您可以使用&#x200B;**CRXDE Lite**&#x200B;中�
 
 此範本的範例使用可在核心元件[中看到，例如在標題元件](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27)中。
 
-### 使用cq：EditConfig子節點進行配置 {#configuring-with-cq-editconfig-child-nodes}
+### 使用cq:EditConfig子節點進行設定 {#configuring-with-cq-editconfig-child-nodes}
 
-#### 將Assets拖曳至對話方塊 — cq：dropTargets {#cq-droptargets}
+#### 將Assets拖曳到對話方塊中 — cq:dropTargets {#cq-droptargets}
 
 `cq:dropTargets`節點（節點型別`nt:unstructured`）定義可以接受從內容尋找器拖曳之資產的放置目標。 它是型別`cq:DropTargetConfig`的節點。
 
 型別`cq:DropTargetConfig`的子節點定義元件中的放置目標。
 
-### 就地編輯 — cq：inplaceEditing {#cq-inplaceediting}
+### 就地編輯 — cq:inplaceEditing {#cq-inplaceediting}
 
 就地編輯器可讓使用者直接在內容流程中編輯內容，而不需要開啟對話方塊。 例如，標準&#x200B;**Text**&#x200B;和&#x200B;**Title**&#x200B;元件都有就地編輯器。
 
@@ -383,7 +383,7 @@ AEM中有許多現有設定。 您可以使用&#x200B;**CRXDE Lite**&#x200B;中�
         editorType="plaintext"/>
 ```
 
-### 處理欄位事件 — cq：listeners {#cq-listeners}
+### 處理欄位事件 — cq:listeners {#cq-listeners}
 
 處理對話方塊欄位上的事件的方法是在自訂[使用者端資料庫](/help/implementing/developing/introduction/clientlibs.md)中的接聽程式中完成。
 

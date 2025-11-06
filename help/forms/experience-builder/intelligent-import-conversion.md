@@ -4,14 +4,14 @@ description: 瞭解如何使用Forms Experience Builder的智慧型匯入和轉�
 hide: true
 index: false
 hidefromtoc: true
-role: Admin, Architect, Developer
-source-git-commit: de524aeddd5f53cbd713ff0523222966752ebbc0
+role: Admin, Developer
+exl-id: 7268c4be-1e4a-4d31-aa76-9076d7ee83ce
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '821'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
-
 
 # 智慧型匯入和轉換
 
@@ -266,7 +266,7 @@ PDF檔案的&#x200B;**：**
 ## 相關的文章
 
 - [Forms Experience Builder概述](product-overview.md)
-- [Forms Experience Builder快速入門](forms-experience-builder-getting-started.md)
-- [部署和設定Forms Experience Builder](deploy-forms-experience-builder.md)
+- [表單體驗建立工具快速入門](forms-experience-builder-getting-started.md)
+- [部署和設定表單體驗建立工具](deploy-forms-experience-builder.md)
 - [表單提交與整合](form-submission-integration.md)
 - [常見問題](forms-experience-builder-frequently-asked-questions.md)

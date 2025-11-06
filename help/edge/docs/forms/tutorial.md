@@ -3,9 +3,9 @@ title: 開始使用 AEM Forms 適用的 Edge Delivery Services - 開發人員教
 description: 本教學課程可協助您啟動並執行新的 Adobe Experience Manager Forms (AEM) 專案。您將能在 10 到 20 分鐘內建立好自己的表單。
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
-role: Admin, Architect, Developer
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1921'
 ht-degree: 100%
 

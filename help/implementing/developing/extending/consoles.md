@@ -3,11 +3,11 @@ title: 自訂主控台
 description: 了解 AEM 提供哪些不同的選項，讓您可自訂編寫執行個體的主控台。
 exl-id: 832f9a86-07c4-4229-a0dc-8ad50a8195b0
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '516'
-ht-degree: 87%
+source-wordcount: '515'
+ht-degree: 83%
 
 ---
 
@@ -23,11 +23,11 @@ Clientlib 可讓您擴充預設實作以提供新功能，同時會重複使用�
 
 ## 覆蓋 {#overlays}
 
-覆蓋會根據節點定義，並可讓您覆蓋在 `/libs` 下面發現的標準功能，以及覆蓋在 `/apps` 下面您自己的自訂功能。建立覆蓋時，不需要按原件 1：1 複製，因為 [Sling 資源合併](/help/implementing/developing/introduction/sling-resource-merger.md)允許繼承。
+覆蓋會根據節點定義，並可讓您覆蓋在 `/libs` 下面發現的標準功能，以及覆蓋在 `/apps` 下面您自己的自訂功能。建立覆蓋時，不需要原始檔案的1:1副本，因為[Sling資源合併器](/help/implementing/developing/introduction/sling-resource-merger.md)允許繼承。
 
 覆蓋可用於多種方式，以擴充您的 AEM 主控台。以下章節會提供幾個範例。
 
-另請參閱Adobe Experience Manager as a Cloud Service[&#128279;](/help/implementing/developing/introduction/overlays.md)的覆蓋。
+另請參閱Adobe Experience Manager as a Cloud Service[的](/help/implementing/developing/introduction/overlays.md)覆蓋。
 
 >[!TIP]
 >

@@ -4,8 +4,8 @@ description: 瞭解如何確認Cloud Manager已成功確認您的自訂網域名
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 68da11037cb3572a6f869fe8bd6a898e0aad87ec
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '863'
 ht-degree: 19%
@@ -37,7 +37,7 @@ ht-degree: 19%
 
 >[!NOTE]
 >
->如果您正在搭配網域使用&#x200B;*Adobe Managed (DV) SSL憑證*，當您在[新增自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)時，Cloud Manager會在您按一下[驗證網域]對話方塊中的&#x200B;**驗證**&#x200B;時自動觸發驗證。
+>如果您正在搭配網域使用&#x200B;*Adobe Managed (DV) SSL憑證*，當您在&#x200B;**新增自訂網域名稱**&#x200B;時，Cloud Manager會在您按一下[驗證網域]對話方塊中的[驗證](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)時自動觸發驗證。
 >
 >如果您打算使用&#x200B;**客戶管理的(OV/EV) SSL憑證**，請在&#x200B;*之後*&#x200B;驗證您的網域[新增OV/EV SSL憑證](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)。
 

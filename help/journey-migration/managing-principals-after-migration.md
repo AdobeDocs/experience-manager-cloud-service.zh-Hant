@@ -2,8 +2,8 @@
 title: 遷移後管理主體
 description: 了解如何在 IMS 和 AEM 中設定使用者和群組
 exl-id: 46c4abfb-7e28-4f18-a6d4-f729dd42ea7b
-source-git-commit: 50c8dd725e20cbd372a7d7858fc67b0f53a8d6d4
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '851'
 ht-degree: 100%
 
@@ -53,6 +53,7 @@ ht-degree: 100%
 建立資產集合或私人資料夾，也會自動建立一些群組來管理對該資產內容的存取權。如果在已移轉的內容中提及這些群組，便會移轉這些群組，但這些群組並未設定為直接連結到 IMS 群組；在 AEM 中，這些群組仍然是「本機群組」，而且無法透過 IMS 進行管理。
 
 由於這些群組不在 IMS 中，因此無法使用大量上傳工具建立使用者作為其直接成員。同樣位於 AEM 中的 IMS 使用者可以單獨新增到這些群組中，但大量執行此操作需要額外的步驟。以下為可以完成此操作的一種方法：
+
 * 在 Admin Console/IMS 中建立一或多個新群組，以存取集合/私人資料夾並將其設定為適用於 AEM。
 * 以群組成員身分登入，以便在 AEM 中建立群組。
 * 對於已移轉的集合或私人資料夾，使用資產使用者介面增加新群組作為編輯者/擁有者/檢視者。

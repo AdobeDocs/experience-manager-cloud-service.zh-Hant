@@ -3,8 +3,8 @@ title: 資料保護和資料隱私權法規 - Adobe Experience Manager as a Clou
 description: 了解 Adobe Experience Manager as a Cloud Service 對各種資料保護和資料隱私權法規的支援，以及在實作新的 AEM as a Cloud Service 專案時如何遵守。這些法規包括歐盟一般資料保護規範 (GDPR)、加州消費者隱私法。
 exl-id: 5dfa353b-84c5-4b07-bfcd-b03c2d361553
 feature: Compliance
-role: Admin, Architect, Developer, Leader
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+role: Admin, Developer, Leader
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 100%
@@ -99,6 +99,6 @@ Adobe 正提供各項程序，用於處理與存取、刪除和選擇退出 Adob
 Adobe Experience Manager as a Cloud Service 與 Adobe Target 和 Adobe Analytics 的整合是透過資料保護和隱私權 (例如 GDPR) 整備服務實作。來自 Adobe Target 或 Adobe Analytics 與整合相關的個人資料不會儲存在 AEM 中。
 如需詳細資訊，請參閱：
 
-* [Adobe Target - 隱私權概觀](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html?lang=zh-Hant)
+* [Adobe Target - 隱私權概觀](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html)
 
-* [Adobe Analytics 資料隱私權工作流程](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html?lang=zh-Hant)
+* [Adobe Analytics 資料隱私權工作流程](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html)

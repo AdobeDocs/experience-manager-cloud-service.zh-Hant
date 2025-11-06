@@ -4,7 +4,7 @@ description: 了解如何將 Adobe Experience Manager (AEM) as a Cloud Service �
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 25e566ac2b1e8d59be25c34bd17fff5d28354ffd
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '5984'
 ht-degree: 91%
@@ -173,7 +173,7 @@ GraphQL 是強式類型 API，這表示資料必須結構明確並按類型組�
 
 GraphQL 規格提供了一系列指南，說明如何建立健全的 API 來查詢特定執行個體上的資料。為此，用戶端必須擷取[結構描述](#schema-generation)，其中包含查詢所需的所有類型。
 
-對於內容片段，GraphQL 結構描述 (結構和類型) 是以&#x200B;**啟用的**&#x200B;[內容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)及其資料類型為基礎。
+對於內容片段，GraphQL 結構描述 (結構和類型) 是以&#x200B;**啟用的**[內容片段模型](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)及其資料類型為基礎。
 
 >[!CAUTION]
 >
@@ -349,7 +349,7 @@ GraphQL for AEM 支援類型清單。表示所有支援的內容片段模型資�
 | `calendarMetadata:[CalendarMetadata]!` |
 | `calendarArrayMetadata:[CalendarArrayMetadata]!` |
 
-每個純量類型代表單一名稱-值配對或名稱-值配對組，配對中的值屬於該群組的類型。
+每個標量類型代表單一名稱-值對，或名稱-值對的陣列，其中該對的值屬於其被歸類的類型。
 
 例如，如果你想擷取內容片段的標題，我們知道這個屬性是字串屬性，所以我們會查詢所有的字串中繼資料：
 
@@ -375,7 +375,7 @@ GraphQL for AEM 支援類型清單。表示所有支援的內容片段模型資�
 >[!NOTE]
 >
 >**一般和陣列中繼資料的區別**
->&#x200B;>請記住，`StringMetadata` 和 `StringArrayMetadata` 都是指儲存在存放庫的中繼資料，而不是擷取它們的方式。
+>請記住，`StringMetadata` 和 `StringArrayMetadata` 都是指儲存在存放庫的中繼資料，而不是擷取它們的方式。
 >
 >例如，呼叫 `stringMetadata` 欄位，您將收到以 `String` 儲存在存放庫之所有中繼資料的陣列，如果呼叫 `stringArrayMetadata`，則會收到以 `String[]` 儲存在存放庫之所有中繼資料的陣列。
 
@@ -770,6 +770,7 @@ GraphQL 中的解決方案代表您可以：
 >[!NOTE]
 >
 >**內容參考** 可用於 DAM 資產和 Dynamic Media 資產。擷取適當的 URL 使用不同的參數：
+>
 >* `_dynamicUrl`：DAM 資產
 >* `_dmS7Url`：Dynamic Media 資產
 > 
@@ -784,13 +785,17 @@ GraphQL 中的解決方案代表您可以：
 * `format`：分項清單，包含所有支援格式 (依據其副檔名：GIF、PNG、PNG8、JPG、PJPG、BJPG、WEBP、WEBPLL 或 WEBPLY)
 * `seoName`：字串，做為檔案名稱而不是節點名稱
 * `crop`：框架子結構，如果省略寬度或高度，則高度或寬度會使用相同值
+
    * `xOrigin`：框架的 x 原點，必須存在
    * `yOrigin`：框架的 y 原點，必須存在
    * `width`：框架的寬度
    * `height`：框架的高度
+
 * `size`：維度子結構，如果省略寬度或高度，則高度或寬度會使用相同值
+
    * `width`：維度的寬度
    * `height`：維度的高度
+
 * `rotation`：分項清單，包含所有支援的旋轉：R90、R180、R270
 * `flip`：分項清單，包含 HORIZONTAL、VERTICAL、HORIZONTAL_AND_VERTICAL
 * `quality`：1–100 的整數，表示影像品質的百分比
@@ -980,6 +985,7 @@ GraphQL 中的解決方案代表您可以：
 ### Dynamic Media 資產透過 URL 進行傳遞的範例查詢 - 影像參考{#sample-query-dynamic-media-asset-delivery-by-url-imageref}
 
 以下是範例查詢：
+
 * 對於類型為 `team` 和 `person` 的多個內容片段，傳回 `ImageRef`
 
 ```graphql
@@ -1007,6 +1013,7 @@ query allTeams {
 ### Dynamic Media 資產透過 URL 進行傳遞的範例查詢 - 多個參考{#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs}
 
 以下是範例查詢：
+
 * 對於類型為 `team` 和 `person` 的多個內容片段，傳回 `ImageRef`、`MultimediaRef` 和 `DocumentRef`：
 
 ```graphql
@@ -1209,10 +1216,11 @@ query allTeams {
    * 請參閱[特定模式的多個內容片段與其變化的範例查詢](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragment-variations-given-model)
 
   >[!CAUTION]
+  >
   >篩選器 `includeVariations` 和系統產生的欄位 `_variation` 無法同時用於同一個查詢定義中。
 
 * 如果要使用邏輯 OR：
-   * 使用 ` _logOp: OR`
+   * 使用 `_logOp: OR`
    * 請參閱[範例查詢 - 姓名為「Jobs」或「Smith」的所有人員](/help/headless/graphql-api/sample-queries.md#sample-all-persons-jobs-smith)
 
 * 邏輯 AND 也存在，但 (通常) 是隱含的

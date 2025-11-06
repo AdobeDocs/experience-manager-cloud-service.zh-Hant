@@ -1,18 +1,18 @@
 ---
-title: 搭配使用Git與Cloud Manager
+title: 將 Git 與 Cloud Manager 一起使用
 description: 了解如何使用 Cloud Manager 的 Git 存放庫以及如何將您內部部署客戶管理的 Git 存放庫與 Cloud Manager 整合。
 exl-id: 57e71b8a-4546-4d7f-825c-a1637d08e608
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 80206fc1396896fe45e2c959c78a0bf30eba71c5
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '309'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
-# 搭配使用Git與Cloud Manager {#git-integration}
+# 將 Git 與 Cloud Manager 一起使用 {#git-integration}
 
 Adobe Cloud Manager 佈建了一個 Git 存放庫，用於使用 Cloud Manager 的 CI/CD 管道部署程式碼。
 
@@ -58,7 +58,7 @@ Adobe Cloud Manager 佈建了一個 Git 存放庫，用於使用 Cloud Manager �
 
 >[!VIDEO](https://video.tv.adobe.com/v/28724/?quality=12)
 
-## 同步版本標籤 {#sync-tags}
+## 同步版本標記 {#sync-tags}
 
 將 Cloud Manager Git 存放庫中的版本標記同步到客戶管理的 Git 存放庫中，以便提供有關已將哪些程式碼部署到中繼和生產環境的可見度。
 

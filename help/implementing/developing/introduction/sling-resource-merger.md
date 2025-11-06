@@ -3,8 +3,8 @@ title: 在Adobe Experience Manager as a Cloud Service中使用Sling Resource Mer
 description: Sling Resource Merger提供存取及合併資源的服務
 exl-id: 5b6e5cb5-4c6c-4246-ba67-6b9f752867f5
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1158'
 ht-degree: 1%
@@ -17,9 +17,9 @@ ht-degree: 1%
 
 Sling Resource Merger提供存取及合併資源的服務。 它為兩者提供不同（差異）機制：
 
-* 使用[搜尋路徑](/help/implementing/developing/introduction/overlays.md#search-paths)的&#x200B;**[資源重疊](/help/implementing/developing/introduction/overlays.md)**。
+* 使用&#x200B;**[搜尋路徑](/help/implementing/developing/introduction/overlays.md)**&#x200B;的[資源重疊](/help/implementing/developing/introduction/overlays.md#search-paths)。
 
-* 使用資源型別階層（透過屬性`sling:resourceSuperType`）覆寫觸控式UI (`cq:dialog`)的元件對話方塊的&#x200B;**覆寫**。
+* 使用資源型別階層（透過屬性&#x200B;**）覆寫觸控式UI (**)的元件對話方塊的`cq:dialog`覆寫`sling:resourceSuperType`。
 
 透過Sling Resource Merger，覆蓋/覆寫資源和/或屬性會與原始資源/屬性合併：
 
@@ -76,7 +76,7 @@ Sling Resource Merger提供存取及合併資源的服務。 它為兩者提供�
 
   包含同層級節點的名稱，目前節點應位於該節點的前面。
 
-這些屬性會影響覆蓋/覆寫（通常在`/apps`中）使用對應/原始資源/屬性（來自`/libs`）的方式。
+這些屬性會影響覆蓋/覆寫（通常在`/libs`中）使用對應/原始資源/屬性（來自`/apps`）的方式。
 
 ### 建立結構 {#creating-the-structure}
 
@@ -152,7 +152,7 @@ Sling Resource Merger提供存取及合併資源的服務。 它為兩者提供�
 
   依預設，自動建立的屬性（例如`jcr:primaryType`）不受覆蓋/覆寫約束，以確保目前在`/libs`之下的節點型別受到遵守。 若要強制覆蓋/覆寫，您必須在`/apps`中重新建立節點，明確隱藏屬性並重新定義它：
 
-   1. 使用所需的`jcr:primaryType`在`/apps`下建立對應的節點
+   1. 使用所需的`/apps`在`jcr:primaryType`下建立對應的節點
    1. 在該節點上建立屬性`sling:hideProperties`，其值設為自動建立屬性的值；例如`jcr:primaryType`
 
       這個在`/apps`下定義的屬性，現在會優先於`/libs`下定義的屬性
@@ -171,7 +171,7 @@ Sling Resource Merger提供存取及合併資源的服務。 它為兩者提供�
   屬性已在`/libs`中定義，但在`/apps`覆蓋/覆寫中並非必要。
 
    1. 在`/apps`中建立對應的節點
-   1. 建立型別`String`或`String[]`的屬性`sling:hideProperties`。 使用此項可指定要隱藏/忽略的屬性。 也可以使用萬用字元。 例如：
+   1. 建立型別`sling:hideProperties`或`String`的屬性`String[]`。 使用此項可指定要隱藏/忽略的屬性。 也可以使用萬用字元。 例如：
 
       * `*`
       * `["*"]`

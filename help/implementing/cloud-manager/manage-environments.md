@@ -4,8 +4,8 @@ description: 了解您可以建立的環境類型，以及如何為您的 Cloud 
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 498a58c89910f41e6b86c5429629ec9282028987
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2489'
 ht-degree: 41%
@@ -304,11 +304,11 @@ Cloud Manager 為每個 AEM as a Cloud Service 環境提供預覽服務 (作為�
 
 已在您的瀏覽器中開啟新索引標籤，其登入頁面為&#x200B;**Developer Console**。
 
-![登入 Developer Console &#x200B;](assets/environ-devconsole.png)
+![登入 Developer Console ](assets/environ-devconsole.png)
 
 只有具有&#x200B;**開發人員**&#x200B;角色的使用者才能存取 **Developer Console**。但是，對於沙箱計畫，任何有權存取沙箱計畫的使用者都可以存取&#x200B;**Developer Console**。
 
-如需更多詳細資訊，請參閱[休眠和去休眠沙箱環境](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation)。
+如需更多詳細資訊，請參閱[休眠和去休眠沙箱環境](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation)。
 
 按一下個別環境的&#x200B;**更多圖示**&#x200B;時，此選項也可從&#x200B;**總覽**&#x200B;視窗的![環境](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)索引標籤中使用。
 
@@ -344,4 +344,4 @@ Cloud Manager支援IP允許清單，用於Sites計畫的作者、發佈和預覽
 
 >[!TIP]
 >
->如需詳細資訊，請參閱[&#x200B; IP允許清單簡介](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)。
+>如需詳細資訊，請參閱[ IP允許清單簡介](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)。

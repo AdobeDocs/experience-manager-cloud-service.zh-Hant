@@ -4,8 +4,8 @@ description: 了解管道程式碼品質測試如何運作及如何提高部署�
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 91a1fb46d4300540eeecf38f7f049a2991513d29
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1166'
 ht-degree: 80%
@@ -19,17 +19,17 @@ ht-degree: 80%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_codequalitytests"
 >title="程式碼品質測試"
->abstract="程式碼品質測試根據一組品質規則評估您的應用程式程式碼。這是程式碼品質管道的主要目的，並在所有生產和非生產管道中的建構步驟之後立即執行。"
+>abstract="程式碼品質測試根據一組品質規則評估您的應用計劃程式碼。這是程式碼品質管道的主要目的，並在所有生產和非生產管道中的建構步驟之後立即執行。"
 
 ## 簡介 {#introduction}
 
-程式碼品質測試根據一組品質規則評估您的應用程式程式碼。這是程式碼品質管道的主要目的，並在所有生產和非生產管道中的建構步驟之後立即執行。
+程式碼品質測試根據一組品質規則評估您的應用計劃程式碼。這是程式碼品質管道的主要目的，並在所有生產和非生產管道中的建構步驟之後立即執行。
 
 請參閱[設定 CI-CD 管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)，深入了解不同類型管道。
 
 ## 程式碼品質規則 {#understanding-code-quality-rules}
 
-程式碼品質測試會掃描原始程式碼以確保其符合特定的品質標準。SonarQube和使用OakPAL的內容套件層級檢查的組合會實作此步驟。 有超過100條規則結合了通用Java規則和AEM特定規則。 部分AEM特定規則是根據AEM Engineering的最佳實務，稱為[自訂程式碼品質規則](/help/implementing/cloud-manager/custom-code-quality-rules.md)。
+程式碼品質測試會掃描原始程式碼以確保其符合特定的品質標準。SonarQube和使用OakPAL的內容套件層級檢查的組合會實作此步驟。 有超過100條規則結合了通用Java規則和AEM特定規則。 部分AEM特定規則是根據AEM工程團隊的最佳做法，稱為[自訂程式碼品質規則](/help/implementing/cloud-manager/custom-code-quality-rules.md)。
 
 你可以[使用此連結](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)下載目前完整的規則清單。
 
@@ -61,7 +61,7 @@ ht-degree: 80%
 |--- |--- |--- |--- |
 | 安全評等 | A = 無漏洞<br/>B = 至少 1 個輕微漏洞<br/>C = 至少 1 個重大漏洞<br/>D = 至少 1 個嚴重漏洞<br/>E = 至少 1 個阻斷式漏洞 | 嚴重 | &lt; B |
 | 可靠度評等 | A = 無錯誤<br/>B = 至少 1 個輕微錯誤<br/>C = 至少 1 個重大錯誤<br/>D = 至少 1 個嚴重錯誤<br>E = 至少 1 個阻斷式錯誤 | 嚴重 | &lt; D |
-| 可維護性評等 | 由程式碼異味的待處理修復成本定義為已進入應用程式的時間的百分比<br/><ul><li>A = &lt;=5%</li><li>B = 6-10%</li><li>C = 11-20%</li><li>D = 21-50%</li><li>E = >50%</li></ul> | 重要 | &lt; A |
+| 可維護性評等 | 由程式碼異味的待處理修復成本定義為已進入應用計劃的時間的百分比<br/><ul><li>A = &lt;=5%</li><li>B = 6-10%</li><li>C = 11-20%</li><li>D = 21-50%</li><li>E = >50%</li></ul> | 重要 | &lt; A |
 | 適用範圍 | 使用以下公式將單位測試行適用範圍和條件適用範圍混合後定義：<br/>`Coverage = (CT + CF + LC)/(2*B + EL)`  <ul><li>`CT` = 在執行單位測試時已經至少一次評估為 `true` 的條件</li><li>`CF` = 在執行單位測試時已經至少一次評估為 `false` 的條件</li><li>`LC` = 適用行數 = lines_to_cover - uncovered_lines</li><li>`B` = 條件總數</li><li>`EL` = 可執行行的總數 (lines_to_cover)</li></ul> | 重要 | &lt; 50% |
 | 略過的單位測試 | 略過的單位測試總數 | 資訊 | > 1 |
 | 未解決的問題 | 整體問題類型 - 漏洞、錯誤和程式碼異味 | 資訊 | > 0 |

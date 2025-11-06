@@ -2,10 +2,10 @@
 title: 內容片段的啟動
 description: 瞭解如何針對Adobe Experience Manager as a Cloud Service中的內容片段使用啟動。 啟動可讓您有效率地開發未來版本的內容，同時維護您目前的內容片段。
 feature: Content Fragments
-role: User, Developer, Architect
+role: User, Developer
 solution: Experience Manager Sites
 exl-id: c0b9e571-3be5-42ab-8d56-d93e8ef4c2f7
-source-git-commit: 39ff527f0082a18f0853964172eabf438caa1098
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1582'
 ht-degree: 2%

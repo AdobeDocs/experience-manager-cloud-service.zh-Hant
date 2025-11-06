@@ -1,17 +1,17 @@
 ---
-title: 在Screens中建立和管理管道as a Cloud Service
-description: 本頁面說明如何在Screens中建立和管理管道as a Cloud Service。
+title: 在Screens as a Cloud Service中建立和管理管道
+description: 本頁說明如何在Screens as a Cloud Service中建立和管理管道。
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
 feature: Authoring Screens
 role: Admin, Developer, User
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1102'
 ht-degree: 1%
 
 ---
 
-# 在Screens中建立和管理管道as a Cloud Service {#creating-channels-screens-cloud}
+# 在Screens as a Cloud Service中建立和管理管道 {#creating-channels-screens-cloud}
 
 建立AEM Screens專案後，您必須建立管道。
 ***管道***，顯示一系列內容（影像和視訊）、網站或單頁應用程式。
@@ -24,11 +24,11 @@ ht-degree: 1%
 * 管理和編輯您的頻道中的內容
 * 在[Screens服務提供者](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=zh-Hant)中管理您頻道的指派與啟用排程
 
-## 在Screens中建立新順序頻道的步驟as a Cloud Service {#create-new-channel}
+## 在Screens as a Cloud Service中建立新順序頻道的步驟 {#create-new-channel}
 
 >[!NOTE]
->**必備條件**
->在開始本指南的本節之前，請先檢閱[在Screens中建立和管理專案as a Cloud Service](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md)。
+>**先決條件**
+>在開始本指南的本節之前，請先檢閱[在Screens as a Cloud Service中建立和管理專案](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md)。
 
 請依照下列步驟，在Screens as a Cloud Service中建立順序頻道：
 
@@ -78,7 +78,7 @@ ht-degree: 1%
    ![edit-channel2](/help/screens-cloud/assets/create-content/edit-channel2.png)
 
    >[!NOTE]
-   >按一下&#x200B;**預覽**&#x200B;以預覽您的頻道內容。
+   >按一下&#x200B;**預覽**以預覽您的頻道內容。
    >![edit-channelpreview](/help/screens-cloud/assets/create-content/edit-channelpreview.png)
 
 ## 建立精靈中的可用範本 {#available-templates}
@@ -114,6 +114,7 @@ ht-degree: 1%
    ![影像](/help/screens-cloud/assets/display/Assignments3.png)
 
 此圖磚會顯示下列資訊：
+
 * 管道在顯示中的預設優先順序。
 * 頻道排程播放時的啟用開始和結束日期。
 * 週期的綜合檢視（每小時/每日/每週/每月/每年，以及指定給該週期的名稱）。
@@ -174,9 +175,9 @@ ht-degree: 1%
 
 1. 按一下&#x200B;*移除*&#x200B;以驗證變更。
 
-**注意：**&#x200B;從頻道移除預設指派詳細資料，將會移除所有使用它的顯示器上的相符指派。
+**注意：**從頻道移除預設指派詳細資料，將會移除所有使用它的顯示器上的相符指派。
 因此，如果沒有其他內容可播放，這可能會導致空白熒幕。
 
-## 下一步 {#whats-next}
+## 後續步驟 {#whats-next}
 
-現在，您已在專案中設定AEM Screens管道，因此需要發佈您的管道。 在從Screens服務提供者管理您的播放器之前，請參閱[在Screens as a Cloud Service中發佈管道](manage-publish.md)。
+現在，您已在專案中設定AEM Screens管道，因此需要發佈您的管道。 從Screens服務提供者管理您的播放器之前，請參閱[在Screens as a Cloud Service中發佈管道](manage-publish.md)。

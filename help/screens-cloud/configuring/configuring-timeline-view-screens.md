@@ -1,10 +1,10 @@
 ---
 title: 設定AEM Screens的時間軸檢視
-description: 本頁面說明如何在Screensas a Cloud Service中設定時間表檢視。
+description: 本頁面說明如何在Screens as a Cloud Service中設定時間表檢視。
 exl-id: 53afe1f5-8f0b-4cca-a819-d3e9375cbe37
 feature: Administering Screens
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '813'
 ht-degree: 1%
@@ -36,7 +36,7 @@ AEM提供了一套功能，可讓組織中的多個群組人員在建立、管�
 ### 新增註解 {#addcomment}
 
 透過時間軸提供的註解可讓使用者為畫面中發生的頻道、位置或任何資料夾討論，建立集中和歷史記錄。
-評論為AEM使用者提供了一個良好的整合方式，以討論可以持續存在的方式，讓其他人瞭解關鍵決策。
+評論為AEM使用者提供了一個良好的整合方式，讓他們得以討論可持續的方式，讓其他人瞭解關鍵決策。
 
 1. 導覽至您要新增註解的管道。
 1. 選取頻道。
@@ -52,6 +52,7 @@ AEM提供了一套功能，可讓組織中的多個群組人員在建立、管�
 ### 儲存版本 {#saveversion}
 
 版本設定功能會在特定時間點建立管道的「快照」。 使用版本設定，您可以執行下列動作：
+
 * 建立頻道的版本。
 * 將管道還原至先前的版本；例如：
    * 還原您對頁面所做的變更。
@@ -141,7 +142,7 @@ AEM提供了一套功能，可讓組織中的多個群組人員在建立、管�
 
    ![開始工作流程](/help/screens-cloud/assets/configure/screens-timeline11.jpg)
 
-1. 按[下一步] **&#x200B;**&#x200B;繼續。
+1. 按[下一步] ****&#x200B;繼續。
 1. 在範圍步驟中，您可以：
    * **新增內容**&#x200B;以新增其他資源至工作流程。
    * **包含子項**&#x200B;以指定該資源的子項將包含在工作流程中。

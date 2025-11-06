@@ -3,8 +3,8 @@ title: 自訂和擴充內容片段
 description: 內容片段可擴充標準資產。 瞭解如何自訂。
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
 feature: Developing, Content Fragments
-role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1689'
 ht-degree: 1%
@@ -63,14 +63,13 @@ ht-degree: 1%
 * 所有內容都儲存在資產的`jcr:content/data`節點下：
 
    * 元素資料儲存在主子節點下：
-
      `jcr:content/data/master`
 
    * 變數會儲存在具有變數名稱的子節點下：
 例如，`jcr:content/data/myvariation`
 
    * 每個元素的資料都會儲存在個別子節點中，作為具有元素名稱的屬性：
-例如，專案`text`的內容儲存為`jcr:content/data/master`上的屬性`text`
+例如，專案`text`的內容儲存為`text`上的屬性`jcr:content/data/master`
 
 * 中繼資料和關聯內容儲存在`jcr:content/metadata`下方
 除了標題和說明（不被視為傳統中繼資料，且儲存在`jcr:content`中）
@@ -99,9 +98,9 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->[內容片段元件是核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=zh-Hant)的一部分。 如需詳細資訊，請參閱[開發核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=zh-Hant)。
+>[內容片段元件是核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)的一部分。 如需詳細資訊，請參閱[開發核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html)。
 
-內容片段可以從AEM頁面引用，就像任何其他資產型別一樣。 AEM提供&#x200B;**[內容片段核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=zh-Hant)** - [元件，可讓您在頁面上包含內容片段](/help/sites-cloud/authoring/fragments/content-fragments.md#adding-a-content-fragment-to-your-page)。 您也可以擴充此&#x200B;**[內容片段](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=zh-Hant)**&#x200B;核心元件。
+內容片段可以從AEM頁面引用，就像任何其他資產型別一樣。 AEM提供&#x200B;**[內容片段核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)** - [元件，可讓您在頁面上包含內容片段](/help/sites-cloud/authoring/fragments/content-fragments.md#adding-a-content-fragment-to-your-page)。 您也可以擴充此&#x200B;**[內容片段](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html)**&#x200B;核心元件。
 
 * 元件使用`fragmentPath`屬性來參考實際內容片段。 `fragmentPath`屬性的處理方式與其他資產型別的類似屬性相同；例如，當內容片段移至其他位置時。
 
@@ -149,7 +148,7 @@ ht-degree: 1%
 
   >[!NOTE]
   >
-  >AEM翻譯工作流程可搭配`/content`使用：
+  >AEM翻譯工作流程可與`/content`搭配使用：
   >
   >* 由於內容片段模型位於`/conf`，這些翻譯未包含在內。 您可以國際化UI字串。
 
@@ -285,7 +284,7 @@ ht-degree: 1%
 >
 >請考量此背景資訊。 您不應該在此變更任何專案（因為儲存庫中已標示為&#x200B;*私人區域*），但有時這可能有助於瞭解事情的幕後運作方式。
 
-編輯內容片段是原子性的，它可以跨越多個檢視(=HTML頁面)。 因此，原子式多檢視編輯功能不是典型的AEM概念，內容片段會使用所謂的&#x200B;*編輯工作階段*。
+編輯內容片段(可跨越多個檢視(= HTML頁面))屬於原子性質。 因此，原子式多檢視編輯功能不是典型的AEM概念，內容片段會使用所謂的&#x200B;*編輯工作階段*。
 
 當使用者在編輯器中開啟內容片段時，會啟動編輯工作階段。 當使用者透過選取&#x200B;**儲存**&#x200B;或&#x200B;**取消**&#x200B;而離開編輯器時，編輯工作階段即已完成。
 
@@ -351,4 +350,4 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 
 如需詳細資訊，請參閱
 
-* [核心元件 — 內容片段元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=zh-Hant) （建議）
+* [核心元件 — 內容片段元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html) （建議）

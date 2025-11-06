@@ -3,8 +3,8 @@ title: 查詢產生器 API
 description: Asset Share Query Builder的功能透過Java&amp；trade； API和REST API公開。
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1830'
 ht-degree: 0%
@@ -25,19 +25,19 @@ REST API透過HTTP提供相同功能的存取權，且回應會以JSON傳送。
 
 >[!NOTE]
 >
->QueryBuilder API是使用JCR API建置。 您也可以使用OSGi套件組合中的JCR API來查詢AEM JCR。 如需詳細資訊，請參閱[使用JCR API查詢Adobe Experience Manager資料](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html?lang=zh-Hant)。
+>QueryBuilder API是使用JCR API建置。 您也可以使用OSGi套件組合中的JCR API來查詢AEM JCR。 如需詳細資訊，請參閱[使用JCR API查詢Adobe Experience Manager資料](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/query-builder/querybuilder-api.html)。
 
 ## Gem講座 {#gem-session}
 
-[AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html?lang=zh-Hant)是Adobe專家提供的一系列深入探討Adobe Experience Manager的技術影片。
+[AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html)是Adobe專家提供的一系列深入探討Adobe Experience Manager的技術影片。
 
-您可以[檢閱專用於查詢產生器的工作階段](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-search-forms-using-querybuilder.html?lang=zh-Hant)，以取得概述及工具的使用情況。
+您可以[檢閱專用於查詢產生器的工作階段](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-search-forms-using-querybuilder.html)，以取得概述及工具的使用情況。
 
 ## 範例查詢 {#sample-queries}
 
 這些範例以Java™屬性樣式標籤法提供。 若要搭配Java™ API使用，請使用Java™ `HashMap`，如下面的API範例所示。
 
-對於`QueryBuilder` JSON Servlet，每個範例都包含指向AEM安裝的範例連結（在預設位置`http://<host>:<port>`）。 在使用這些連結之前，請登入您的AEM執行個體。
+對於`QueryBuilder` JSON Servlet，每個範例都包含指向AEM安裝的範例連結（在預設位置`http://<host>:<port>`）。 使用這些連結之前，請先登入您的AEM執行個體。
 
 >[!CAUTION]
 >
@@ -97,7 +97,7 @@ p.guessTotal=true
 orderby=path
 ```
 
-查詢傳回`10`個結果的`p.limit`預設值（含`0`位移）：
+查詢傳回`p.limit`個結果的`10`預設值（含`0`位移）：
 
 ```xml
 "success": true,
@@ -210,7 +210,7 @@ group.2_path=/content/wknd/us/en/adventures
 
 在範例中的群組內，`path`述詞使用多次。 若要區分和排序述詞的兩個執行個體（某些述詞需要排序），您必須以`N_`作為述詞的前置詞，其中`N`是排序索引。 在上一個範例中，產生的述詞是`1_path`和`2_path`。
 
-`p.or`中的`p`是特殊分隔符號，表示後面的（在此例中是`or`）是群組的&#x200B;*引數*，與群組的子述詞（例如`1_path`）相反。
+`p`中的`p.or`是特殊分隔符號，表示後面的（在此例中是`or`）是群組的&#x200B;*引數*，與群組的子述詞（例如`1_path`）相反。
 
 如果未指定`p.or`，則所有述詞都會AND在一起，也就是說，每個結果都必須滿足所有述詞。
 
@@ -349,9 +349,9 @@ p.nodedepth=5
 
 如需更多述詞，請參閱[查詢產生器述詞參考頁面](query-builder-predicates.md)。
 
-您也可以檢查`PredicateEvaluator`類別的[Javadoc](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html)。 這些類別的Javadoc包含您可以使用的屬性清單。
+您也可以檢查[類別的`PredicateEvaluator`Javadoc](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html)。 這些類別的Javadoc包含您可以使用的屬性清單。
 
-類別名稱的前置詞（例如[`SimilarityPredicateEvaluator`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html)中的`similar`）是類別的&#x200B;*主體屬性*。 此屬性也是要在查詢中使用的述詞名稱（小寫）。
+類別名稱的前置詞（例如`similar`[`SimilarityPredicateEvaluator`中的](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html)）是類別的&#x200B;*主體屬性*。 此屬性也是要在查詢中使用的述詞名稱（小寫）。
 
 對於這類主要屬性，您可以縮短查詢並使用`similar=/content/en`來取代完整變體`similar.similar=/content/en`。 類別的所有非主要屬性都必須使用完整格式。
 
@@ -423,7 +423,7 @@ for (Hit hit : result.getHits()) {
 void storeQuery(Query query, String path, boolean createFile, Session session) throws RepositoryException, IOException;
 ```
 
-使用[`QueryBuilder#storeQuery`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/QueryBuilder.html#storeQuery-com.day.cq.search.Query-java.lang.String-boolean-javax.jcr.Session-)方法時，指定的`Query`會根據`createFile`引數值，以檔案或屬性的形式儲存在儲存庫中。 下列範例說明如何將路徑`/mypath/getfiles`的`Query`儲存為檔案：
+使用[`QueryBuilder#storeQuery`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/QueryBuilder.html#storeQuery-com.day.cq.search.Query-java.lang.String-boolean-javax.jcr.Session-)方法時，指定的`Query`會根據`createFile`引數值，以檔案或屬性的形式儲存在儲存庫中。 下列範例說明如何將路徑`Query`的`/mypath/getfiles`儲存為檔案：
 
 ```java
 builder.storeQuery(query, "/mypath/getfiles", true, session);
@@ -435,7 +435,7 @@ builder.storeQuery(query, "/mypath/getfiles", true, session);
 Query loadQuery(String path, Session session) throws RepositoryException, IOException
 ```
 
-例如，儲存至路徑`/mypath/getfiles`的`Query`可透過下列程式碼片段載入：
+例如，儲存至路徑`Query`的`/mypath/getfiles`可透過下列程式碼片段載入：
 
 ```java
 Query loadedQuery = builder.loadQuery("/mypath/getfiles", session);
@@ -453,14 +453,14 @@ Query loadedQuery = builder.loadQuery("/mypath/getfiles", session);
 
 `path=/tmp`只是一個範例。
 
-### Recommendations的一般偵錯 {#general-debugging-recommendations}
+### 一般偵錯建議 {#general-debugging-recommendations}
 
 ### 透過記錄取得可解釋的XPath {#obtain-explain-able-xpath-via-logging}
 
 說明在開發週期期間針對目標索引集進行的&#x200B;**所有**&#x200B;查詢。
 
 1. 啟用QueryBuilder的DEBUG記錄檔以取得基礎的、可解釋的XPath查詢
-   * 瀏覽至`https://<host>:<port>/system/console/slinglog`。 在&#x200B;**DEBUG**&#x200B;為`com.day.cq.search.impl.builder.QueryImpl`建立記錄器。
+   * 瀏覽至`https://<host>:<port>/system/console/slinglog`。 在`com.day.cq.search.impl.builder.QueryImpl`DEBUG **為**&#x200B;建立記錄器。
 1. 為上述類別啟用DEBUG之後，記錄會顯示查詢產生器產生的XPath。
 1. 從關聯的Query Builder查詢的記錄專案複製XPath查詢，例如：
    * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "WKND") or jcr:contains(jcr:content/@cq:tags, "WKND"))]`

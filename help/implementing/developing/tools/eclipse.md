@@ -3,8 +3,8 @@ title: Eclipse 適用的 AEM 開發人員工具
 description: 瞭解如何使用適用於Eclipse的AEM開發人員工具，這是以適用於Apache Sling的Eclipse外掛程式為基礎的Eclipse外掛程式。
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 676a10a98f850dbc803b2c7b367a61fce51089f4
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1228'
 ht-degree: 2%
@@ -121,7 +121,7 @@ _適用於Eclipse的Experience Manager Developer Tools_&#x200B;是以Apache授�
 
    >[!TIP]
    >
-   >如需有關在本機AEM SDK上執行專案的偵錯的詳細資訊，請參閱檔案[遠端偵錯AEM SDK。](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-sdk/remote-debugging)
+   >如需有關在本機AEM SDK上執行專案的偵錯的詳細資訊，請參閱檔案[遠端偵錯AEM SDK。](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-sdk/remote-debugging)
 
 1. 按一下&#x200B;**完成**。
 

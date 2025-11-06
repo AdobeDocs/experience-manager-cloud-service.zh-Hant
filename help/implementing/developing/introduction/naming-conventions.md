@@ -3,8 +3,8 @@ title: 命名慣例
 description: 存放庫中的節點會遵守Java內容存放庫的命名慣例
 exl-id: 3c5c39dd-b209-488b-a93e-e840786fe224
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 1%
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 * JcrUtil： [JCR公用程式](#jcr-utilities)的AEM實作。
 * PageManager： [頁面管理員](#page-manager)提供頁面層級作業的方法。
-* 在AEM UI {#ui-behavior}內
+* 在AEM UI中 {#ui-behavior}
 
 ### jcr公用程式 {#jcr-utilities}
 

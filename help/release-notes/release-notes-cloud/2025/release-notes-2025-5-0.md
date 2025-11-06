@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.5.0 版�
 feature: Release Information
 role: Admin
 exl-id: b7a21533-9db1-4111-814c-cab917041be4
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2162'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 99%
 
 請觀看 2025 年 5 月版本概觀影片，了解 2025.5.0 版本新增功能的摘要：
 
->[!VIDEO](https://video.tv.adobe.com/v/3464361?quality=12&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3464307?quality=12)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -58,7 +58,7 @@ AEM Assets 可以和 Figma 原生整合，讓設計者能自 Figma 使用者介�
 
 **屬性型存取控制 (ABAC)**
 
-[Content Hub 現在允許您針對資產存取套用規則型限制。](/help/assets/attribute-based-access-control.md)資產許可權可確保治理，也確保使用者只能存取相關的資產。
+[Content Hub 現在允許您針對資產存取套用規則型限制。](/help/assets/attribute-based-access-control.md)資產權限確保資產受到管理，並確保使用者僅能存取相關的資產。
 
 資產限制規則以中繼資料為基礎，若規則中所定義的條件和資產中繼資料相互符合，該使用者群組便能看見該資產。
 
@@ -108,7 +108,7 @@ Content Hub 現在支援[產生共用連結，允許外部使用者](/help/asset
 
 [Experience Manager (AEM) Dynamic Media 與 Journey Optimizer (AJO) B2C 的原生整合](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/content-management/combine/aem-dynamic)，讓行銷人員能夠輕鬆地將 AEM Dynamic Media 資產 (轉譯和 DM 範本) 嵌入至 AJO 內容中，並在多個通道之間提供即時更新和極度個人化的體驗。
 
->[!VIDEO](https://video.tv.adobe.com/v/3463793/?learn=on&enablevpops=&autoplay=true&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -150,6 +150,7 @@ Adobe 會定期審查功能、資料庫、API 和設定，確保其符合效能�
   <summary>展開以查看棄用內容</summary>
 
 Java API：
+
 * `org.apache.sling.commons.auth`
 * `org.apache.felix.webconsole`
 * `org.eclipse.jetty`
@@ -237,7 +238,7 @@ OSGi 屬性：
 * 根據地理位置、裝置類型或使用者屬性，將內容個人化
 * 做為 CDN 和您來源之間的中介軟體
 * 將第三方 API 的回應傳送至瀏覽器之前，先對其進行重新格式化 (且可能彙總多個 API 的回應)
-* 使用從各個後端拼接的內容，在邊緣編寫並提供伺服器轉譯的 HTML
+* 使用從各個後端拼接而成的內容，在邊緣編寫及提供伺服器轉譯的 HTML
 
 我們針對正式生產網站提供數量有限的 AEM Publish Delivery 或 Edge Delivery Services 專案機會。若您有興趣參與，或想了解更多相關資訊，請傳送電子郵件至 [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com)，並簡要描述您的使用案例。
 

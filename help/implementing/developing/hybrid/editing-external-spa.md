@@ -3,9 +3,9 @@ title: 在 AEM 中編輯外部 SPA
 description: 本檔案說明將獨立SPA上傳至AEM執行個體、新增內容的可編輯區段及啟用編寫功能的建議步驟。
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 index: false
-source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2370'
 ht-degree: 1%
@@ -28,17 +28,17 @@ ht-degree: 1%
 先決條件很簡單。
 
 * 確定AEM的執行個體在本機執行。
-* 使用[AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant&#available-properties)建立基礎AEM SPA專案。
+* 使用[AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?#available-properties)建立基礎AEM SPA專案。
    * Forms是AEM專案的基礎，已更新以包括外部SPA。
-   * 對於本檔案中的範例，Adobe使用[WKND SPA專案](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=zh-Hant#spa-editor)的起點。
+   * 對於本檔案中的範例，Adobe使用[WKND SPA專案](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html#spa-editor)的起點。
 * 隨時準備要整合的可使用外部React SPA。
 
 ## 將SPA上傳至AEM專案 {#upload-spa-to-aem-project}
 
 首先，您必須上傳外部SPA至您的AEM專案。
 
-1. 將`/ui.frontend`專案資料夾中的`src`取代為React應用程式的`src`資料夾。
-1. 在`/ui.frontend/package.json`檔案中的應用程式`package.json`中包含任何其他相依性。
+1. 將`src`專案資料夾中的`/ui.frontend`取代為React應用程式的`src`資料夾。
+1. 在`package.json`檔案中的應用程式`/ui.frontend/package.json`中包含任何其他相依性。
    * 請確定SPA SDK相依性為[建議的版本](/help/implementing/developing/hybrid/getting-started-react.md#dependencies)。
 1. 在`/public`資料夾中包含任何自訂專案。
 1. 包含任何新增至`/public/index.html`檔案的內嵌指令碼或樣式。
@@ -71,9 +71,9 @@ npm install --save @adobe/aem-spa-component-mapping @adobe/aem-spa-page-model-ma
 
 此初始化必須在應用程式的`src/index.js`檔案中或在呈現應用程式根目錄的任何位置完成。
 
-若要進行此初始化，您可以使用`ModelManager`提供的`initializationAsync` API。
+若要進行此初始化，您可以使用`initializationAsync`提供的`ModelManager` API。
 
-下列熒幕擷圖顯示如何在簡單的React應用程式中啟用`ModelManager`的初始化。 唯一的限制是必須在`ReactDOM.render()`之前呼叫`initializationAsync`。
+下列熒幕擷圖顯示如何在簡單的React應用程式中啟用`ModelManager`的初始化。 唯一的限制是必須在`initializationAsync`之前呼叫`ReactDOM.render()`。
 
 ![初始化ModelManager](assets/external-spa-initialize-modelmanager.png)
 
@@ -247,7 +247,7 @@ mvn clean install -PautoInstallSinglePackage
 
 ![aem](assets/external-spa-text20-aem.png)中的text_20節點
 
-內容作者更新此元件時，會在`/content/wknd-spa-react/us/en/home`的`root/responsivegrid/text_20`建立新的`text_20`節點。
+內容作者更新此元件時，會在`text_20`的`root/responsivegrid/text_20`建立新的`/content/wknd-spa-react/us/en/home`節點。
 
 ![text20節點](assets/external-spa-text20-node.png)
 
@@ -280,13 +280,13 @@ mvn clean install -PautoInstallSinglePackage
 
 ![容器預留位置](assets/container-placeholder.png)
 
-JCR![&#128279;](assets/container-jcr-structure.png)中的容器位置
+JCR![中的](assets/container-jcr-structure.png)容器位置
 
 一旦作者將子元件新增至容器後，新容器節點就會以JCR結構中的對應名稱建立。
 
 ![包含內容的容器](assets/container-with-content.png)
 
-含有JCR![&#128279;](assets/container-with-content-jcr.png)內容的容器
+含有JCR![內容的](assets/container-with-content-jcr.png)容器
 
 現在可以根據作者的需要將更多元件和內容新增到容器中，且變更會持續存在。
 
@@ -306,13 +306,13 @@ JCR![&#128279;](assets/container-jcr-structure.png)中的容器位置
 
 ### 根節點ID {#root-node-id}
 
-依預設，您可以假設React應用程式呈現在元素識別碼`spa-root`的`div`內。 如有需要，可自訂此語法。
+依預設，您可以假設React應用程式呈現在元素識別碼`div`的`spa-root`內。 如有需要，可自訂此語法。
 
-例如，假設您有SPA，應用程式在專案ID `root`的`div`內呈現。 此語法必須反映在三個檔案中。
+例如，假設您有SPA，應用程式在專案ID `div`的`root`內呈現。 此語法必須反映在三個檔案中。
 
 1. 在React應用程式的`index.js`中（或呼叫`ReactDOM.render()`的位置）
 
-   index.js檔案![&#128279;](assets/external-spa-root-index.png)中的ReactDOM.render()
+   index.js檔案![中的](assets/external-spa-root-index.png)ReactDOM.render()
 
 1. 在React應用程式的`index.html`
 
@@ -353,7 +353,7 @@ JCR![&#128279;](assets/container-jcr-structure.png)中的容器位置
 
    ![路由協助程式](assets/external-spa-router-helper.png)
 
-   * 可以使用`@adobe/cq-spa-page-model-manager`提供的`toAEMPath`協助程式。 它會轉換為路由提供的路徑，以便在AEM例項上開啟應用程式時包含AEM的特定部分。 它接受三個引數：
+   * 可以使用`toAEMPath`提供的`@adobe/cq-spa-page-model-manager`協助程式。 它會轉換為路由提供的路徑，以便在AEM例項上開啟應用程式時包含AEM的特定部分。 它接受三個引數：
       * 路由所需的路徑
       * 編輯SPA的AEM執行個體的來源URL
       * AEM上的專案根目錄，如第一步所決定
@@ -366,15 +366,15 @@ JCR![&#128279;](assets/container-jcr-structure.png)中的容器位置
 
 ## 框架限制 {#framework-limitations}
 
-RemotePage元件預期實作會提供資產資訊清單，例如GitHub[&#128279;](https://github.com/shellscape/webpack-manifest-plugin)上的webpack-manifest-plugin。 不過，RemotePage元件僅通過測試可用於React架構（以及透過remote-page-next元件的Next.js），因此不支援從其他架構(例如Angular)從遠端載入應用程式。
+RemotePage元件預期實作會提供資產資訊清單，例如GitHub[上的](https://github.com/shellscape/webpack-manifest-plugin)webpack-manifest-plugin。 不過，RemotePage元件僅通過測試可用於React架構（以及透過remote-page-next元件的Next.js），因此不支援從其他架構(例如Angular)從遠端載入應用程式。
 
 ## 其他資源 {#additional-resources}
 
 下列參考資料可協助您瞭解AEM內容中的SPA。
 
 * [AEM Headful 和 Headless 技術](/help/implementing/developing/headful-headless.md)
-* [AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)
-* [WKND SPA專案](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=zh-Hant)
+* [AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
+* [WKND SPA專案](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html)
 * [使用React在AEM中開始使用SPA](/help/implementing/developing/hybrid/getting-started-react.md)
 * [SPA參考資料（API參考）](/help/implementing/developing/hybrid/reference-materials.md)
 * [SPA Blueprint和PageModelManager](/help/implementing/developing/hybrid/blueprint.md#pagemodelmanager)

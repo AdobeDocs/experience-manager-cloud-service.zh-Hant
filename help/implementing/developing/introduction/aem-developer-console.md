@@ -2,9 +2,9 @@
 title: AEM AS A CLOUD SERVICE DEVELOPER CONSOLE - BETA
 description: 瞭解CRXDE Lite和AEM as a Cloud Service Developer Console。
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 4b0fc3e9-b7c4-4c95-bd97-8b24e4d5cb3d
-source-git-commit: 11c52f6782df3b608bedd4b120c145a7a80a0702
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1009'
 ht-degree: 1%
@@ -106,5 +106,5 @@ Dev Console UI中的![組態標籤](/help/implementing/developing/introduction/a
 
 對於生產計畫，Adobe Admin Console中的「Cloud Manager — 開發人員角色」可控制AEM as a Cloud Service Developer Console的存取權。 對於沙箱計畫，任何擁有授予AEM存取權的產品設定檔的使用者都可以使用Developer Console。 對於所有計畫，狀態傾印和存取存放庫瀏覽器需要「Cloud Manager — 開發人員角色」。 若要檢視來自作者與發佈服務的資料，使用者也必須同時被指派給這兩項服務上的AEM使用者或AEM管理員產品設定檔。
 
-如需設定使用者許可權的詳細資訊，請參閱[Cloud Manager檔案](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-manager/content/requirements/users-and-roles)。
+如需設定使用者許可權的詳細資訊，請參閱[Cloud Manager檔案](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles)。
 

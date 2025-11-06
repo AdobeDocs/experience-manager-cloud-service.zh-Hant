@@ -5,18 +5,18 @@ keywords: 如何連結Marketo執行個體與表單？、將表單連線至Market
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 74cd25f9-1ee1-4f3f-8e02-8714071e7c86
-source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '794'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
 # 將 Marketo Engage 與 AEM Forms 進行整合
 
-<span class="preview">此功能可在早期採用者方案下使用。 您可以從您的官方電子郵件ID寫信到aem-forms-ea@adobe.com ，以加入率先採用者計畫並請求存取該功能。</span>
+<span class="preview">此功能可在早期採用者方案下使用。 您可以使用官方電子郵件 ID 寫信至 aem-forms-ea@adobe.com，以加入早期採用者計劃並要求存取該功能。</span>
 
-將AEM Forms與[Adobe Marketo Engage](https://experienceleague.adobe.com/zh-hant/docs/marketo/using/home)整合可讓使用者運用Marketo Engage的功能，從擷取的資料建立商業邏輯，並自動化工作流程，包括智慧行銷活動和電子郵件自動化。 設定的表單可以將擷取的資料傳送到Marketo Engage進行處理。
+將AEM Forms與[Adobe Marketo Engage](https://experienceleague.adobe.com/en/docs/marketo/using/home)整合可讓使用者運用Marketo Engage的功能，從擷取的資料建立商業邏輯，並自動化工作流程，包括智慧行銷活動和電子郵件自動化。 設定的表單可以將擷取的資料傳送到Marketo Engage進行處理。
 
 ## 將Marketo Engage與表單整合的優點
 
@@ -52,7 +52,7 @@ ht-degree: 3%
 整合Marketo Engage與AEM Forms時的一些考量事項：
 
 * AEM僅支援各種Marketo資料庫中的People (Leads)資料庫。
-* Marketo允許建立[10個自訂物件](https://experienceleague.adobe.com/zh-hant/docs/marketo/using/product-docs/administration/marketo-custom-objects/add-marketo-custom-object-fields)作為使用者定義的物件，以儲存潛在客戶中標準欄位以外的專門資料，支援獨特的業務需求。
+* Marketo允許建立[10個自訂物件](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/marketo-custom-objects/add-marketo-custom-object-fields)作為使用者定義的物件，以儲存潛在客戶中標準欄位以外的專門資料，支援獨特的業務需求。
 * AEM只能存取與Lead資料庫相關聯的自訂物件
 
 ## 將Marketo Engage與表單整合的先決條件
@@ -60,7 +60,7 @@ ht-degree: 3%
 以下是連線Marketo Engage與AEM Forms的先決條件：
 
 * 有效的Adobe Marketo Engage授權
-* 用於[擷取使用者端ID和使用者端密碼](https://experienceleague.adobe.com/zh-hant/docs/marketo/using/product-docs/administration/additional-integrations/create-a-custom-service-for-use-with-rest-api)以建立雲端設定的Marketo Engage工作執行個體。
+* 用於[擷取使用者端ID和使用者端密碼](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/additional-integrations/create-a-custom-service-for-use-with-rest-api)以建立雲端設定的Marketo Engage工作執行個體。
 
 ## 建立雲端服務設定以連線AEM Forms (Adaptive Forms)與Marketo Engage
 
@@ -76,18 +76,19 @@ ht-degree: 3%
 
    ![Marketo Engage](/help/forms/assets/marketo-engage.png)
 
-2. 開啟資料夾以裝載組態，然後按一下[建立]。**&#x200B;** **建立Marketo Engage組態**&#x200B;視窗會出現。
+1. 開啟資料夾以裝載組態，然後按一下[建立]。**** **建立Marketo Engage組態**&#x200B;視窗會出現。
 
    >[!NOTE]
    >
    > 您也可以[設定雲端服務設定的資料夾](/help/forms/configure-data-sources.md#configure-folder-for-cloud-service-configurations)。
 
-3. 指定組態的&#x200B;**標題**&#x200B;和要連線至服務的認證。 您可以從Adobe Marketo Engage儀表板擷取驗證認證：
+1. 指定組態的&#x200B;**標題**&#x200B;和要連線至服務的認證。 您可以從Adobe Marketo Engage儀表板擷取驗證認證：
+
    * **使用者端識別碼**&#x200B;和&#x200B;**使用者端密碼**&#x200B;可在&#x200B;**管理員** > **整合** > **LaunchPoint**&#x200B;中使用，方法是選取自訂服務並按一下&#x200B;**檢視詳細資料**。
    * **身分URL**&#x200B;可在&#x200B;**管理員** > **整合** > **網頁服務**&#x200B;中使用，在&#x200B;**REST API**&#x200B;區段中做為&#x200B;**身分**。
 
-4. 按一下&#x200B;**連線**。  連結成功後，就會顯示 `Authentication Successful` 訊息。
-5. 按一下&#x200B;**[!UICONTROL 建立]**&#x200B;以儲存雲端組態設定。
+1. 按一下&#x200B;**連線**。  連結成功後，就會顯示 `Authentication Successful` 訊息。
+1. 按一下&#x200B;**[!UICONTROL 建立]**&#x200B;以儲存雲端組態設定。
 
 ![Marketo Engage雲端設定](/help/forms/assets/marketo-engage-cloud-configuration.png)
 
@@ -96,6 +97,7 @@ ht-degree: 3%
 ## 下一步
 
 您已建立雲端服務設定來整合Adobe Marketo Engage與AEM Forms。 現在，您可以整合：
+
 * [使用Marketo Engage建立最適化表單](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
 * [使用Marketo Engage的現有最適化表單](/help/forms/use-marketo-engage-data-source-in-form.md)
 

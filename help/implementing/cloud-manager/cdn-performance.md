@@ -4,8 +4,8 @@ description: 瞭解Cloud Manager如何評估內容傳遞網路(CDN)效能，以�
 exl-id: ecd8c1ca-873f-4e73-ad73-b5f7561eb109
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: f24b2672431ecf7b7b0ed11b6dc9b09344946239
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 4%
@@ -48,7 +48,7 @@ CDN控制面板可在每個計畫的概觀頁面上取得。
 
 按一下圖表下方的&#x200B;**檢視**&#x200B;以變更圖表的時間範圍。
 
-如需如何改善CDN效能的建議，請選取&#x200B;**Recommendations**&#x200B;索引標籤。
+如需如何改善CDN效能的建議，請選取&#x200B;**建議**&#x200B;索引標籤。
 
 ![CDN建議](assets/cdn-performance-recommendations.png)
 

@@ -5,10 +5,10 @@ keywords: AEM Forms REST端點、提交至REST端點、將資料發佈至REST UR
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 role: User, Developer
 exl-id: 58c63ba6-aec5-4961-a70a-265990ab9cc8
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1471'
-ht-degree: 56%
+ht-degree: 60%
 
 ---
 
@@ -68,7 +68,7 @@ AEM as a Cloud Service提供多種立即可用的提交動作，用於處理表�
 
    您也可以「**[!UICONTROL 啟用 POST 要求]**」並提供用於發佈要求的 URL。若要將資料提交到託管表單的 AEM 伺服器，請使用對應至 AEM 伺服器根路徑的相對路徑。例如 `/content/forms/af/SampleForm.html`。若要將資料提交到任何其他伺服器，請使用絕對路徑。
 
-1. 按一下&#x200B;**[!UICONTROL 「完成」]**。
+1. 按一下&#x200B;**[!UICONTROL 完成]**。
 
 >[!TAB 核心元件]
 
@@ -123,7 +123,7 @@ AEM as a Cloud Service提供多種立即可用的提交動作，用於處理表�
 
    +++
 
-1. 按一下&#x200B;**[!UICONTROL 「完成」]**。
+1. 按一下&#x200B;**[!UICONTROL 完成]**。
 
 >[!TAB 通用編輯器]
 
@@ -131,11 +131,14 @@ AEM as a Cloud Service提供多種立即可用的提交動作，用於處理表�
 
 1. 開啟最適化表單進行編輯。
 1. 按一下編輯器上的&#x200B;**編輯表單屬性**&#x200B;擴充功能。
-**表單屬性**&#x200B;對話方塊就會顯示。
+
+   **表單屬性**&#x200B;對話方塊就會顯示。
+
    >[!NOTE]
    >
-   > * 如果您在通用編輯器介面中看不到&#x200B;**編輯表單屬性**&#x200B;圖示，請在Extension Manager中啟用&#x200B;**編輯表單屬性**&#x200B;擴充功能。
-   > * 請參閱[Extension Manager功能焦點](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)文章，瞭解如何在通用編輯器中啟用或停用擴充功能。
+   > * 若您在通用編輯器介面中沒有看到「**編輯表單屬性**」圖示，請在 Extension Manager 中啟用&#x200B;**編輯表單屬性**&#x200B;擴充功能。
+   > * 請參閱 [Extension Manager 功能重點介紹](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)文章，了解如何在通用編輯器中啟用或停用擴充功能。
+
 1. 按一下&#x200B;**提交**&#x200B;索引標籤，然後選取&#x200B;**[!UICONTROL 提交至Rest端點]**&#x200B;提交動作。
 
    若要將資料發佈到內部伺服器，請提供資源的路徑。資料會發佈到資源的路徑。例如 `/content/restEndPoint`。對於此類發佈要求，會使用提交要求的驗證資訊。
@@ -200,7 +203,7 @@ AEM as a Cloud Service提供多種立即可用的提交動作，用於處理表�
 
 
 
-## 最佳實務
+## 最佳做法
 
 * 將資料張貼至外部伺服器時，請確定URL是安全的，並設定以匿名方式處理POST要求的路徑，以保護敏感資訊。
 * 若要將欄位做為 REST URL 的參數傳遞，所有欄位都必須具有不同的元素名稱，即使這些欄位位於不同面板上也是如此。

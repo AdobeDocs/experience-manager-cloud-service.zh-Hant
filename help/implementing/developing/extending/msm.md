@@ -3,10 +3,10 @@ title: 擴充多網站管理員
 description: 了解如何擴充多網站管理員的功能。
 exl-id: 4b7a23c3-65d1-4784-9dea-32fcceca37d1
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '2337'
+source-wordcount: '2336'
 ht-degree: 92%
 
 ---
@@ -183,17 +183,14 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 1. 將以下屬性新增至此節點：
 
    * **名稱**：`jcr:title`
-
      **類型**：`String`
      **值**：會在 UI 中顯示的識別標題
 
    * **名稱**：`jcr:description`
-
      **類型**：`String`
      **值**：選用的說明。
 
    * **名稱**：`cq:trigger`
-
      **類型**：`String`
      **值**：所要使用的[推出觸發器](/help/sites-cloud/administering/msm/live-copy-sync-config.md#rollout-triggers)
       * `rollout`
@@ -525,7 +522,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
    * **標題**：推出設定範例
    * **名稱**：examplerolloutconfig
-   * **cq：trigger**：`publish`
+   * **cq:trigger**： `publish`
 
 ### 將即時動作新增到推出設定範例中 {#add-the-live-action-to-the-example-rollout-configuration}
 
@@ -639,7 +636,6 @@ MSM 會使用儲存的語言和國家/地區代碼清單來確定和頁面語言
       * **類型**：`String`
       * **值**：持有考慮中的屬性名稱，並相當於屬性 `name` 的值
          * 如需範例，請參閱
-
            `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
 
 若已定義 `cq-msm-lockable`，則毀損/關閉鏈會以下列方式和 MSM 互動：

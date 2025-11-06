@@ -3,9 +3,9 @@ title: 使用資產微服務處理資產
 description: 使用雲端原生和可擴展的資產處理微服務來處理您的數位資產。
 contentOwner: AG
 feature: Asset Compute Microservices, Asset Ingestion, Asset Processing
-role: Architect, Admin
+role: Developer, Admin
 exl-id: 1e069b95-a018-40ec-be01-9a74ed883b77
-source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '837'
 ht-degree: 100%
@@ -25,7 +25,7 @@ Adobe Experience Manager as a [!DNL Cloud Service] 提供一種雲端原生方�
 * 在適合的情況下使用原生 Adobe 檔案處理服務，提供高保真輸出和[有效率處理 Adobe 專屬格式](file-format-support.md)。
 * 能夠設定後處理工作流程以新增使用者特定的動作和整合。
 
-資產微服務可讓您不需要協力廠商的呈現工具和方法 (例如 [!DNL ImageMagick] 和 FFmpeg 轉碼)，同時依預設提供適用於常見檔案格式的基本功能。
+資產微服務可讓您不需要第三方的呈現工具和方法 (例如 [!DNL ImageMagick] 和 FFmpeg 轉碼)，同時依預設提供適用於常見檔案格式的基本功能。
 
 ## 高層架構 {#asset-microservices-architecture}
 
@@ -97,5 +97,5 @@ Adobe Experience Manager 可以設定成在資產處理完成後自動觸發後�
 >* [開始使用資產微服務](asset-microservices-configure-and-use.md)
 >* [支援的檔案格式](file-format-support.md)
 >* [Adobe Asset Link](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html)
->* [[!DNL Experience Manager] 桌面應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=zh-Hant)
+>* [[!DNL Experience Manager] 桌面應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
 >* [關於直接二進位檔存取的 Apache Oak 文件](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html)

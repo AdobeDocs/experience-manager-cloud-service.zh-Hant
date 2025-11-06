@@ -4,10 +4,10 @@ description: 透過探索範例內容和查詢，了解如何搭配使用 GraphQ
 feature: Headless, Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 role: Admin, Developer
-source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1938'
-ht-degree: 94%
+source-wordcount: '1927'
+ht-degree: 93%
 
 ---
 
@@ -1980,10 +1980,10 @@ query {
 
 | 名稱 | 國家/地區 | 人口 | 類別 |
 |--- |--- |--- |--- |
-| 巴塞爾 | 瑞士 | 172258 | city:emea |
-| 柏林 | 德國 | 3669491 | city:capital<br>city:emea |
-| 布加勒斯特 | 羅馬尼亞 | 1821000 | city:capital<br>city:emea |
-| 舊金山 | 美國 | 883306 | city:beach<br>city:na |
-| 聖荷西 | 美國 | 102635 | city:na |
-| 斯圖加特 | 德國 | 634830 | city:emea |
-| 蘇黎世 | 瑞士 | 415367 | city:capital<br>city:emea |
+| 巴塞爾 | 瑞士 | 172258 | 城市:emea |
+| 柏林 | 德國 | 3669491 | 城市:capital<br>城市:emea |
+| 布加勒斯特 | 羅馬尼亞 | 1821000 | 城市:capital<br>城市:emea |
+| 舊金山 | 美國 | 883306 | 城市:beach<br>城市:na |
+| 聖荷西 | 美國 | 102635 | 城市:na |
+| 斯圖加特 | 德國 | 634830 | 城市:emea |
+| 蘇黎世 | 瑞士 | 415367 | 城市:capital<br>城市:emea |

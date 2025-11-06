@@ -3,9 +3,9 @@ title: Universal Editor 架構
 description: 了解 Universal Editor 的架構，以及資料如何在其服務和階層之間流動。
 exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 100%
 
@@ -40,7 +40,7 @@ Universal Editor 由四個基本建置區塊組成，這些建置區塊可進行
 
 ### 遠端應用程式 {#remote-app}
 
-要在 Universal Editor 中編輯應用程式內容，就必須對 DOM 進行檢測。遠端應用程式必須在 DOM 中呈現某些屬性。如需必要中繼資料的詳細資訊，請參閱[屬性和類型](attributes-types.md)。請參閱文件[AEM 中 Universal Editor 快速入門](getting-started.md)，了解 AEM 中的檢測範例。
+要在 Universal Editor 中編輯應用程式內容，就必須對 DOM 進行檢測。遠端應用程式必須在 DOM 中呈現某些屬性。如需必要中繼資料的詳細資訊，請參閱[屬性和類型](attributes-types.md)。請參閱 [AEM 中通用編輯器快速入門](getting-started.md)文件，了解 AEM 中的檢測範例。
 
 Universal Editor 致力於最小化 SDK，因此檢測是遠端應用程式實作的責任。
 

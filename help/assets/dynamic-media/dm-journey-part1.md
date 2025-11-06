@@ -11,10 +11,10 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '3615'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 此歷程涵蓋Dynamic Media的基本概念、運作方式、可為您做的事情，以及可為您的工作和客戶帶來的價值。
 
-**_必備條件_**
+**_先決條件_**
 
 * 影像和視訊格式的基本瞭解
 * 對HTML和CSS的基本瞭解
@@ -65,7 +65,7 @@ _第二部分_
 
 ## 什麼是Dynamic Media以及它如何協助您？ {#dm-journey-a}
 
-Dynamic Media可協助您隨選提供豐富的視覺化銷售和行銷資產。 此外，也能協助您建立及提供互動式檢視體驗，包括縮放、360度旋轉和視訊。 您的資產會動態調整規模，以因應網頁、行動裝置和社交網站上的使用量。 使用影像、視訊和3D等一組主要來源資產，Dynamic Media會透過其全球性、可擴充、效能最佳化的CDN （內容傳遞網路），即時產生並傳遞這種豐富內容的多種變數。
+Dynamic Media 能協助您按照需求提供豐富的視覺化銷售和行銷資產。亦能協助您建立與提供互動式檢視體驗，包括縮放、360 度迴轉和影片。您的資產會動態擴展，以供網頁、行動裝置及社交網站使用。Dynamic Media 使用一組主要來源資產 (例如影像、影片和 3D)，透過其全球可擴展、效能最佳化的 CDN (內容傳遞網路) 即時產生並傳遞此豐富內容的多種變化版本。
 
 Dynamic Media整合Adobe Experience Manager Assets數位資產管理解決方案的工作流程，以簡化及簡化數位行銷活動管理程式。
 
@@ -96,7 +96,7 @@ _Adobe Dynamic Media可確保在任何熒幕都能提供一致、高品質的體
 
 過去，CDN每月會提供3.5 PB的流量給客戶。 此系統在一天內可提供520億個資產。 該數字等於成功傳送給客戶的864,000張影像和視訊，_每秒_。
 
-### 智慧型影像
+### 智慧型影像處理
 
 Dynamic Media在最佳化資產以及確保每個資產可透過CDN在行動裝置和桌上型電腦系統上快速載入方面已經功不可沒。 為了達到此目的，Dynamic Media使用影像預設集來定義影像品質。 它們也會定義您要傳送的影像型別、其銳利度，以及您體驗或頁面不同部分的其他片段。
 
@@ -125,7 +125,7 @@ _智慧型影像處理會根據客戶的瀏覽器功能和網路速度，自動�
 
 「自我調整視訊集」會將使用不同位元速率和格式編碼的相同視訊版本分組。
 
-您先從您上傳到系統中的原始主要視訊開始。 Dynamic Media會自動調整視訊大小，或將&#x200B;_轉碼為_&#x200B;多個視訊。 然後，在傳送時，它會聰明地決定要使用的視訊畫面、品質和格式，並將它傳送到手機、平板電腦或桌上型電腦。
+您會從上傳至系統的原始主要影片開始。Dynamic Media會自動調整視訊大小，或將&#x200B;_轉碼為_&#x200B;多個視訊。 然後，在傳遞時，其會智慧地判定使用何種影片畫面、何種畫質以及何種格式，將其傳遞至手機、平板電腦或桌上型電腦。
 
 例如，在iOS行動裝置上，它會偵測4G、5G或Wi-Fi等頻寬。 之後，它會從「自我調整視訊集」中的各種視訊位元速率中，自動選取正確的編碼視訊。 影片會串流至行動裝置、平板電腦或桌上型電腦。
 
@@ -246,7 +246,7 @@ Adobe建議您以無損格式上傳資產。 一般來說，最好避免JPEG，�
 
 ### 發佈和預覽資產
 
-將資產上傳到Dynamic Media之後，請選取資產，然後按一下Dynamic Media中的&#x200B;**[!UICONTROL 發佈]**&#x200B;或&#x200B;**[!UICONTROL 快速發佈]**，以便&#x200B;_發佈_&#x200B;資產，這是不錯的作法。 如果您想要在任何體驗中使用資產，則必須發佈資產。 發佈資產後，您可使用複製的動態媒體產生URL或透過將程式碼內嵌在頁面上，將資產納入網頁中。
+將資產上傳到Dynamic Media之後，請選取資產，然後按一下Dynamic Media中的&#x200B;_發佈_&#x200B;或&#x200B;**[!UICONTROL 快速發佈]**，以便&#x200B;**[!UICONTROL 發佈]**&#x200B;資產，這是不錯的作法。 如果您想要在任何體驗中使用資產，則必須發佈資產。 發佈資產後，您可使用複製的動態媒體產生URL或透過將程式碼內嵌在頁面上，將資產納入網頁中。
 
 除了手動發佈資產外，您可以設定Dynamic Media，以便在上傳時立即發佈資產（無需任何使用者介入）。
 
@@ -284,8 +284,8 @@ _Dynamic Media Help topics_
 
 _動態媒體教學課程_
 
-* [搭配Experience Manager Assets使用Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=zh-Hant)
-* [Adobe Experience Manager內容庫](https://experienceleague.adobe.com/zh-hant?lang=en#recommended/solutions/experience-manager) （在&#x200B;_Dynamic Media_&#x200B;上搜尋）
+* [搭配Experience Manager Assets使用Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
+* [Adobe Experience Manager內容庫](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) （在&#x200B;_Dynamic Media_&#x200B;上搜尋）
 
 _Dynamic Media檢視器_
 

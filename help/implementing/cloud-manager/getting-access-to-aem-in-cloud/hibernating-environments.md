@@ -4,8 +4,8 @@ description: 瞭解沙箱程式的環境如何自動進入休眠模式以及如�
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '698'
 ht-degree: 42%
@@ -38,9 +38,9 @@ ht-degree: 42%
 
 1. 在&#x200B;**環境**&#x200B;卡片上，按一下![更多圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，然後按一下&#x200B;**Developer Console**。
 
-   * 如需 Developer Console 的更多詳細資訊，請參閱[存取 Developer Console &#x200B;](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console)。
+   * 如需 Developer Console 的更多詳細資訊，請參閱[存取 Developer Console ](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console)。
 
-   ![&#x200B; Developer Console 選單選項](/help/implementing/cloud-manager/assets/developer-console-menu-option.png)
+   ![ Developer Console 選單選項](/help/implementing/cloud-manager/assets/developer-console-menu-option.png)
 
 1. 在&#x200B;**Developer Console**&#x200B;頁面上按一下&#x200B;**休眠**。
 
@@ -76,7 +76,7 @@ ht-degree: 42%
 
 1. 在&#x200B;**環境**&#x200B;卡片上，按一下![更多圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，然後按一下&#x200B;**Developer Console**。
 
-   * 如需 Developer Console 的更多詳細資訊，請參閱[存取 Developer Console &#x200B;](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console)。
+   * 如需 Developer Console 的更多詳細資訊，請參閱[存取 Developer Console ](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console)。
 
 1. 按一下&#x200B;**解除休眠**。
 

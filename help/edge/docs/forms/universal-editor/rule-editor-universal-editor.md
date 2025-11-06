@@ -2,11 +2,11 @@
 title: 適用於 Edge Delivery Services Forms 的規則編輯器
 description: 在通用編輯器中使用規則編輯器建立動態的智慧型表單。無需編寫程式碼即可新增條件式邏輯、計算和互動式行為。
 feature: Edge Delivery Services
-role: Admin, Architect, Developer
+role: Admin, Developer
 level: Intermediate
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: 0d088d4e3b4e27fac0a05ff93a7fd01535bba6af
-workflow-type: ht
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '2824'
 ht-degree: 100%
 
@@ -310,7 +310,7 @@ ht-degree: 100%
 
 1. **開啟通用編輯器**：
    - 導覽至 AEM Sites 控制台，選取您的頁面，然後按一下「**編輯**」
-   - 確保您已正確設定[通用編輯器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=zh-Hant)
+   - 確保您已正確設定[通用編輯器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html)
 
 2. **依下列順序新增表單元件**：
    - 標題 (H2)：「稅額計算表」
@@ -535,7 +535,7 @@ export { getFullName, days };
 ![規則編輯器中的自訂函數](/help/edge/docs/forms/assets/custom-function-rule-editor.png)
 圖：在規則編輯器介面中選取及設定自訂函數
 
->
+>[!NOTE]
 >
 > 規則編輯器的增強功能包括自訂事件型規則、動態變數支援及 API 整合，亦可用於 Edge Delivery Services Forms。若要了解更多有關這些增強功能和使用方法，請參閱[規則編輯器增強功能和使用案例](/help/forms/rule-editor-enhancements-use-cases.md)文章。
 
@@ -623,7 +623,7 @@ export { getFullName, days};
 - 使用邊緣案例和已知規則進行測試
 - 針對各種瀏覽器進行驗證
 - 記錄複雜規則背後的意圖，而不只是機制
-- 維護大型表單的規則清單
+- 維護大型表單的規則庫存
 - 元件和規則使用一致的命名方式
 - 控制自訂函數的版本，並在非生產環境中進行測試
 
@@ -732,7 +732,7 @@ export { getFullName, days};
 
 **其他資源**：
 
-- [通用編輯器文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html?lang=zh-Hant)提供更多相關內容
+- [通用編輯器文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction.html)提供更多相關內容
 - [Extension Manager 指南](/help/implementing/developing/extending/extension-manager.md)，協助啟用更多功能
 - [Edge Delivery Services 表單](/help/edge/docs/forms/overview.md)，提供全方位的表單製作指引
 

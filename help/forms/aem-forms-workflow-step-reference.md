@@ -6,7 +6,7 @@ google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 keywords: 使用AEM工作流程、使用指派工作步驟、轉換至PDF/A步驟、產生記錄步驟的檔案、使用工作流程、簽署檔案步驟、產生列印輸出步驟、產生非互動式PDF輸出
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: f772a193cce35a1054f5c6671557a6ec511671a9
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '7409'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html) |
 | AEM as a Cloud Service  | 本文章 |
 
 您使用工作流程模型。 模型可協助您定義並執行一系列步驟。 您也可以定義模型屬性，例如工作流程是暫時的或使用多個資源。 您可以[在模型中加入各種AEM工作流程步驟，以達成商業邏輯](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=zh-Hant#extending-aem)。
@@ -121,7 +121,7 @@ ht-degree: 0%
     -->
 
 * **[!UICONTROL 受指派人]** > **[!UICONTROL 指派選項]**：指定將工作指派給使用者的方法。 您可以使用「參與者選擇器」指令碼動態地將任務指派給使用者或群組，或將任務指派給特定的AEM使用者或群組。
-* **[!UICONTROL 參與者選擇器]**：在[指派選項]欄位中選取&#x200B;**[!UICONTROL 動態至使用者或群組]**&#x200B;選項時，即可使用此選項。 您可以使用ECMAScript或服務來動態選取使用者或群組。 如需詳細資訊，請參閱[建立自訂Adobe Experience Manager動態參與者步驟](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hant&CID=RedirectAEMCommunityKautuk)。
+* **[!UICONTROL 參與者選擇器]**：在[指派選項]欄位中選取&#x200B;**[!UICONTROL 動態至使用者或群組]**&#x200B;選項時，即可使用此選項。 您可以使用ECMAScript或服務來動態選取使用者或群組。 如需詳細資訊，請參閱[建立自訂Adobe Experience Manager動態參與者步驟](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en&CID=RedirectAEMCommunityKautuk)。
 
 * **[!UICONTROL 參與者]**：在&#x200B;**[!UICONTROL 參與者選擇器]**&#x200B;欄位中選取&#x200B;**[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]**&#x200B;選項時，即可使用此欄位。 欄位可讓您為RandomParticipantChooser選項選取使用者或群組。
 
@@ -177,6 +177,7 @@ PDF/A是一種用於長期儲存檔案內容的封存格式，其方式為嵌入
 **[!UICONTROL 輸入檔案]**：輸入檔案可以相對於承載、具有絕對路徑、可以作為承載提供或儲存在Document資料型別的變數中。
 
 **[!UICONTROL 轉換選項]**：使用此屬性，可指定將PDF檔案轉換為PDF/A檔案的設定。 此標籤下可用的各種選項包括：
+
 * **[!UICONTROL 法規遵循]**：指定輸出PDF/A檔案必須符合的標準。 它支援不同的PDF標準，例如PDF/A-1b、PDF/A-2b或PDF/A-3b。
 * **[!UICONTROL 結果層級]**：將轉換輸出的結果層級指定為PassFail、Summary或Detailed。
 * **[!UICONTROL 色域]**：將預先定義的色域指定為S_RGB、COATED_FOGRA27、JAPAN_COLOR_COATED或SWOP，可用於輸出PDF/A檔案。
@@ -189,7 +190,7 @@ PDF/A是一種用於長期儲存檔案內容的封存格式，其方式為嵌入
 
 使用電子郵件步驟來傳送電子郵件，例如，包含記錄檔案、最適化表單<!-- , link of an interactive communication-->連結或附加PDF檔案的電子郵件。 傳送電子郵件步驟支援[HTML電子郵件](https://en.wikipedia.org/wiki/HTML_email)。 HTML電子郵件會迅速回應，並因應收件者的電子郵件使用者端和熒幕大小。 您可以使用HTML電子郵件範本來定義電子郵件的外觀、色彩配置和行為。
 
-電子郵件步驟使用Day CQ Mail Service傳送電子郵件。 在使用電子郵件步驟之前，請確定已設定電子郵件服務。 預設僅支援HTTP和HTTP通訊協定。 [請連絡支援團隊](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=zh-Hant#sending-email)以啟用連線埠來傳送電子郵件，並為您的環境啟用SMTP通訊協定。 此限制有助於改善平台的安全性。
+電子郵件步驟使用Day CQ Mail Service傳送電子郵件。 在使用電子郵件步驟之前，請確定已設定電子郵件服務。 預設僅支援HTTP和HTTP通訊協定。 [請連絡支援團隊](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=en#sending-email)以啟用連線埠來傳送電子郵件，並為您的環境啟用SMTP通訊協定。 此限制有助於改善平台的安全性。
 
 電子郵件步驟有下列屬性：
 
@@ -255,11 +256,13 @@ PDF/A是一種用於長期儲存檔案內容的封存格式，其方式為嵌入
 叫用DDX步驟具有以下特性：
 
 **[!UICONTROL 輸入檔案]**：用來設定輸入檔案的屬性。 此標籤下可用的各種選項包括：
+
 * **[!UICONTROL 使用]**&#x200B;指定DDX：指定相對於承載的輸入檔案、具有絕對路徑、可作為承載提供，或儲存在Document資料型別的變數中。
 * **[!UICONTROL 從承載建立對應]**：將承載資料夾下的所有檔案新增到輸入檔案的對應，以供組合器中的叫用API使用。 每個檔案的節點名稱都會作為對應中的索引鍵。
 * **[!UICONTROL 輸入檔案的對應]**：選項是用來使用&#x200B;**[!UICONTROL ADD]**&#x200B;按鈕新增多個專案。 每個專案代表對應中的檔案索引鍵和檔案的來源。
 
 **[!UICONTROL 環境選項]**：此選項是用來設定叫用API的處理設定。 此標籤下可用的各種選項包括：
+
 * **[!UICONTROL 僅驗證]**：檢查輸入DDX檔案的有效性。
 * **[!UICONTROL 發生錯誤時失敗]**：布林值，表示如果發生錯誤，叫用API服務是否失敗。 預設情況下，其值會設為False。
 * **[!UICONTROL 第一個Bates數字]**：指定自動遞增的數字。 此自動遞增數字會自動顯示在每個連續頁面上。
@@ -270,6 +273,7 @@ PDF/A是一種用於長期儲存檔案內容的封存格式，其方式為嵌入
 >環境選項會與HTTP API保持同步。
 
 **[!UICONTROL 輸出檔案]**：指定儲存輸出檔案的位置。 此標籤下可用的各種選項包括：
+
 * **[!UICONTROL 將輸出儲存在承載中]**：將輸出檔案儲存在承載資料夾下，或覆寫承載，以防承載是檔案。
 * **[!UICONTROL 輸出檔案的對映]**：指定每個檔案檔案明確儲存的位置，方法是在每個檔案新增一個專案。 每個專案代表檔案以及儲存檔案的位置。 如果有多個輸出檔案，則使用此選項。
 
@@ -575,7 +579,7 @@ Send a document directly to a printer. It supports the following printing access
 
 1. 拖曳Sidekick中「PDF」標籤下的「產生非互動式Forms Workflow輸出」工作流程。
 1. 連按兩下新增的工作流程步驟以編輯元件。
-1. 在[編輯元件]對話方塊中，設定輸入檔案、輸出檔案和其他引數，然後按一下[確定]。**&#x200B;**
+1. 在[編輯元件]對話方塊中，設定輸入檔案、輸出檔案和其他引數，然後按一下[確定]。****
 
 ### 輸入檔案 {#input-documents-3}
 

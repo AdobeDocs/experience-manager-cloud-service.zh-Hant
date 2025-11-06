@@ -3,9 +3,9 @@ title: ' [!DNL Assets]的開發人員參考'
 description: '[!DNL Assets] API和開發人員參考內容可讓您管理資產，包括二進位檔案、中繼資料、轉譯、註解和 [!DNL Content Fragments]。'
 contentOwner: AG
 feature: Assets HTTP API
-role: Developer, Architect, Admin
+role: Developer, Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1870'
 ht-degree: 4%
@@ -24,13 +24,13 @@ ht-degree: 4%
 >
 >有些API持續存在，但未主動支援(以×表示)。 請儘量不要使用這些API。
 
-| 支援等級 | 說明 |
+| 支援層級 | 說明 |
 | ------------- | --------------------------- |
 | ✓ | 支援 |
 | × | 不支援。 請勿使用。 |
 | - | 無法使用 |
 
-| 使用案例 | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager / Sling / JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) Java API | [資產計算服務](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=zh-Hant) | [[!DNL Assets] HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=zh-Hant#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) servlet | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=zh-Hant) |
+| 使用案例 | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager / Sling / JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) Java API | [資產計算服務](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) servlet | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) |
 | ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
 | **原始二進位檔** |  |  |  |  |  |  |
 | 建立原始檔案 | ✓ | × | - | × | × | - |
@@ -39,7 +39,7 @@ ht-degree: 4%
 | 刪除原始檔案 | - | ✓ | - | ✓ | ✓ | - |
 | 複製原始檔案 | - | ✓ | - | ✓ | ✓ | - |
 | 移動原始檔案 | - | ✓ | - | ✓ | ✓ | - |
-| **中繼資料** |  |  |  |  |  |  |
+| **後設資料** |  |  |  |  |  |  |
 | 建立中繼資料 | - | ✓ | ✓ | ✓ | ✓ | - |
 | 讀取中繼資料 | - | ✓ | - | ✓ | ✓ | - |
 | 更新中繼資料 | - | ✓ | ✓ | ✓ | ✓ | - |
@@ -450,7 +450,7 @@ echo "File upload completed successfully."
 
 ## 資產處理和後續處理工作流程 {#post-processing-workflows}
 
-在[!DNL Experience Manager]中，資產處理是以使用[資產微服務](asset-microservices-configure-and-use.md#get-started-using-asset-microservices)的&#x200B;**[!UICONTROL 處理設定檔]**&#x200B;組態為基礎。 處理不需要開發人員擴充功能。
+在[!DNL Experience Manager]中，資產處理是以使用&#x200B;**[!UICONTROL 資產微服務]**&#x200B;的[處理設定檔](asset-microservices-configure-and-use.md#get-started-using-asset-microservices)組態為基礎。 處理不需要開發人員擴充功能。
 
 若要設定後續處理工作流程，請將標準工作流程與擴充功能搭配使用，並搭配自訂步驟。
 

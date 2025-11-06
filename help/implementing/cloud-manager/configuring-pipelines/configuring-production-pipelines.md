@@ -5,11 +5,11 @@ index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: ac918008c3f99d74e01be59c9841083abf3604aa
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1402'
-ht-degree: 35%
+ht-degree: 37%
 
 ---
 
@@ -43,10 +43,10 @@ ht-degree: 35%
 >在設定前端管道之前，請參閱[AEM Quick Site建立歷程](/help/journey-sites/quick-site/overview.md)，以透過易於使用的AEM Quick Site建立工具取得端到端指南。 此歷程可幫助您簡化AEM網站的前端開發，讓您無需AEM後端知識即可快速自訂網站。
 
 1. 在 [experiece.adobe.com](https://experience.adobe.com) 登入 Cloud Manager。
-1. 在&#x200B;**快速存取**&#x200B;區段中，按一下&#x200B;**Experience Manager**。
+1. 在「**快速存取**」區段中，按一下「**Experience Manager**」。
 1. 在左側面板中，按一下「**Cloud Manager**」。
 1. 選取您想要的組織。
-1. 在&#x200B;**我的程式**&#x200B;主控台上，按一下程式。
+1. 在「**我的程式**」控制台中，按一下某個程式。
 
 1. 在「**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**」控制台中，選取程式。
 
@@ -128,7 +128,7 @@ ht-degree: 35%
    * 在任何時候，每個環境只能有一個設定管道。
 * **設定Edge Delivery Services設定管道** - Edge Delivery設定管道沒有獨立的開發、測試和生產環境。 在AEM as a Cloud Service中，變更會經過開發、階段和生產等層級。 相反地，Edge Delivery設定管道會直接將其設定套用至在Cloud Manager中註冊的所有Edge Delivery Sites網域。 若要深入瞭解，請參閱[新增Edge Delivery管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)。
 * **前端計畫碼** — 為AEM應用計畫的前端設定JavaScript和CSS。
-   * 有了前端流水線，給前端開發者更多的獨立性，可以加快開發進程。
+   * 有了前端管道，給前端開發者更多的獨立性，可以加快開發進程。
    * 請參閱文件[使用前端管道開發網站](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) 了解此程序的工作原理以及需要注意的一些注意事項，以充分發揮此程序的潛力。
 * **網頁層設定** — 設定Dispatcher屬性，以儲存、處理及傳送網頁給使用者端。
    * 如需詳細資訊，請參閱檔案[CI/CD管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines)。

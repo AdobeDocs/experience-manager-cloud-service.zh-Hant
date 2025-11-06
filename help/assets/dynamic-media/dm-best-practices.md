@@ -1,5 +1,5 @@
 ---
-title: Dynamic Media 最佳實務
+title: Dynamic Media 最佳做法
 description: 瞭解使用影像和影片的Dynamic Media最佳實務，以及Dynamic Media檢視器的最佳實務。
 contentOwner: Rick Brough
 products: Experience Manager as a Cloud Service
@@ -9,14 +9,14 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '4049'
 ht-degree: 0%
 
 ---
 
-# Dynamic Media 最佳實務{#about-dm-best-practices}
+# Dynamic Media 最佳做法{#about-dm-best-practices}
 
 <!--**Organizations today must connect with their customers through an ever-growing array of channels and devices.** The customer experience spans physical stores, websites, mobile apps, social media, email, and e-commerce platforms. This diversity requires organizations to create many more versions of each piece of content. Personalization adds complexity by increasing the number of variations needed for each item. Despite budget constraints for content creation, there's still a need to produce more campaigns in the same timeframe, on a global scale. AEM Dynamic Media offers a comprehensive set of tools to meet these challenges, providing consistent, personalized, high-performance, and optimized brand experiences across all channels and devices. 
 
@@ -46,7 +46,7 @@ Dynamic Media的部分重要原則包括：
 * **體驗檢視器程式庫：**&#x200B;自訂影像和視訊的體驗檢視器和品牌化。 這些檢視器可順暢地整合至您的數位體驗。
 * **新興格式支援：** Dynamic Media可提供3D與全景體驗。
 
-探索[Dynamic Media歷程](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-journey/dm-journey-part1)時，檢閱下列最佳實務的彙總清單可協助您充分運用其功能。 調整這些Dynamic Media最佳實務，以符合您的特定內容和專案需求，這樣您就可以跨管道和裝置最佳化您的體驗。
+探索[Dynamic Media歷程](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-journey/dm-journey-part1)時，檢閱下列最佳實務的彙總清單可協助您充分運用其功能。 調整這些Dynamic Media最佳實務，以符合您的特定內容和專案需求，這樣您就可以跨管道和裝置最佳化您的體驗。
 
 <!-- In Dynamic Media on AEM, there are sets of methods, techniques, and guidelines that can help you maximize the potential of your rich media content. These best practices can lead to optimal results and increase efficiency in your use of Dynamic Media. They represent the most efficient and effective courses of action in a particular situation. They also unlock high value for your audience and deliver high-quality, engaging content. -->
 
@@ -91,12 +91,12 @@ Dynamic Media Viewer最佳實務是基本准則，旨在最佳化AEM上Dynamic M
 * **智慧型裁切：**
 使用智慧型裁切的影像v3元件來增強影像資產簡報。
 * **JavaScript檔案包含：**
-在您的頁面上僅包含主要檢視器JavaScript檔案。 避免參照檢視器的執行階段邏輯可能下載的其他JavaScript檔案。 具體而言，請勿從`/s7viewers`內容路徑(稱為整合的HTML包含)直接連結至SDK5 SDK `Utils.js`資料庫。 檢視器的邏輯會管理`Utils.js`或類似的執行階段檢視器程式庫的位置，這些程式庫可能會在發行版本之間變更。 Adobe不會保留伺服器上較舊的次要檢視器版本，因此直接參照這些版本可能會在日後的更新中破壞檢視器功能。
+在您的頁面上僅包含主要檢視器JavaScript檔案。 避免參照檢視器的執行階段邏輯可能下載的其他JavaScript檔案。 具體而言，請勿從`Utils.js`內容路徑(稱為整合的HTML包含)直接連結至SDK5 SDK `/s7viewers`資料庫。 檢視器的邏輯會管理`Utils.js`或類似的執行階段檢視器程式庫的位置，這些程式庫可能會在發行版本之間變更。 Adobe不會保留伺服器上較舊的次要檢視器版本，因此直接參照這些版本可能會在日後的更新中破壞檢視器功能。
 * **內嵌准則：**
 使用本檔案內嵌每個檢視器特有的准則。
-想要進一步瞭解嗎？ 移至AEM Assets [&#128279;](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers)的檢視器。
+想要進一步瞭解嗎？ 移至AEM Assets [的](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers)檢視器。
 * **SDK教學課程與範例：**
-檢閱[檢視器SDK教學課程](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources/library/c-tutorial)和[HTML5 SDK應用程式範例](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html)，以深入瞭解SDK元件API。
+檢閱[檢視器SDK教學課程](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-tutorial)和[HTML5 SDK應用程式範例](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html)，以深入瞭解SDK元件API。
 
 
 ## 準備資產以進行傳送
@@ -200,7 +200,7 @@ Dynamic Media提供一套命令，用於增強影像以及動態建立視覺效�
 | --- | --- |
 | **上傳並發佈原始影像** | <ul><li> 首先，將原始影像上傳至Dynamic Media。</li><li> 請確定已發佈並可透過URL存取。</li><li> 在此範例中，具有白色背景的手錶的庫存影像（我們將其稱為「影像X」）會上傳至Dynamic Media。<br>[https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer](https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer)</li></ul> |
 | **建立遮罩** | <ul><li> 開發定義主旨（要套用效果的區域）和背景（要變更的區域）的遮色片。<br>[https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer-maskps](https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer-maskps)</li><li> 遮色片通常是灰階影像，其中白色代表主題，黑色代表背景。 您可以使用Adobe Photoshop等工具建立遮色片。<br>想進一步瞭解嗎？ 移至[在Photoshop](https://helpx.adobe.com/in/photoshop/using/create-temporary-quick-mask.html)中建立和編輯快速遮色片。</li><li> 針對「影像X」，請建立一個遮色片，精確勾勒出您要增強的主題外框。 例如，人員、物件等。</li></ul> |
-| **套用Dynamic Media URL命令以取得效果** | 當您擁有遮色片之後，請使用URL指令套用像外光暈這樣的效果，或將背景顏色變更為「影像X」。 以下是兩個範例：<ul><li> **外部光暈效果：**<br>&#x200B;若要沿著主體邊界加入外部光暈效果，請編輯如下URL：<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&maskUse=invert&effect=-1&pos=100,100&op_blur=75&op_grow=1&opac=25](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&maskUse=invert&effect=-1&pos=100,100&op_blur=75&op_grow=1&opac=25)<br>在此URL中，`op_blur`、`op_grow`和`opac`引數會建立外部光暈效果。</li><li> **背景顏色變更：**<br>&#x200B;若要變更背景顏色，請使用具有不同背景顏色值的URL：<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&maskUse=invert&maskUse=invert&color=255,255,0](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&maskUse=invert&maskUse=invert&color=255,255,0)<br>在此範例中，`color=255,255,0`會將背景顏色設定為黃色。 將背景編輯成特定顏色，以符合視覺效果。</li></ul> |
+| **套用Dynamic Media URL命令以取得效果** | 當您擁有遮色片之後，請使用URL指令套用像外光暈這樣的效果，或將背景顏色變更為「影像X」。 以下是兩個範例：<ul><li> **外部光暈效果：**<br>&#x200B;若要沿著主體邊界加入外部光暈效果，請編輯如下URL：<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&maskUse=invert&effect=-1&pos=100,100&op_blur=75&op_grow=1&opac=25)<br>在此URL中，`op_blur`、`op_grow`和`opac`引數會建立外部光暈效果。</li><li> **背景顏色變更：**<br>&#x200B;若要變更背景顏色，請使用具有不同背景顏色值的URL：<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&maskUse=invert&maskUse=invert&color=255,255,0)<br>在此範例中，`color=255,255,0`會將背景顏色設定為黃色。 將背景編輯成特定顏色，以符合視覺效果。</li></ul> |
 
 #### 新增影像邊框
 
@@ -208,9 +208,9 @@ Dynamic Media可讓您直接透過URL操作影像，使其成為建立動態數�
 
 | 任務 | 該做什麼 |
 | --- | --- |
-| **白色邊框** | 若要新增白邊框，請使用下列URL：<br>[https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10)<br>在此URL中，`extend=10,10,10,10`引數指定四面十個畫素的邊框大小。 |
-| 沿著白色框線&#x200B;**模糊** | 若要沿著白色邊框加入模糊效果，您可以編輯URL，如下所示：<br>[https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10&effect=-1&op_blur=60&color=0,0,0](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10&effect=-1&op_blur=60&color=0,0,0)<br>在此URL中，`effect=-1`引數會套用模糊效果，而`op_blur=60`會控制模糊強度。 |
-| **沿著外部邊界的陰影效果** | 若要沿著外部邊界加入陰影效果，請使用此URL：<br>[https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10&effect=-1&$shadow$&amp;color=0,0,0](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10&effect=-1&$shadow$&amp;color=0,0,0)<br> `$shadow$`引數會建立陰影效果，而`color=0,0,0`會將陰影顏色設定為黑色。 |
+| **白色邊框** | 若要新增白邊框，請使用下列URL：<br>[https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&amp;extend=10,10,10,10](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10)<br>在此URL中，`extend=10,10,10,10`引數指定四面十個畫素的邊框大小。 |
+| 沿著白色框線&#x200B;**模糊** | 若要沿著白色邊框加入模糊效果，您可以編輯URL，如下所示：<br>[https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&amp;extend=10,10,10,10&amp;effect=-1&amp;op_blur=60&amp;color=0,0,0](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10&effect=-1&op_blur=60&color=0,0,0)<br>在此URL中，`effect=-1`引數會套用模糊效果，而`op_blur=60`會控制模糊強度。 |
+| **沿著外部邊界的陰影效果** | 若要沿著外部邊界加入陰影效果，請使用此URL：<br>[https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&amp;extend=10,10,10,10&amp;effect=-1&amp;$shadow$&amp;color=0,0,0](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&extend=10,10,10,10&effect=-1&$shadow$&color=0,0,0)<br> `$shadow$`引數會建立陰影效果，而`color=0,0,0`會將陰影顏色設定為黑色。 |
 
 您可以嘗試使用這些URL來取得想要的視覺效果。
 
@@ -222,9 +222,9 @@ Dynamic Media可讓您直接透過URL操作影像，使其成為建立動態數�
 | --- | --- |
 | **上傳並發佈基本影像** | 首先，上傳並發佈您要重疊標誌或圖示的基本影像。 您可以使用任何影像作為基礎。<br>例如，以下是基礎影像：<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa)。 |
 | **上傳並發佈標誌或圖示影像** | 接著，上傳並發佈您要重疊在基本影像上的影像。 此影像應是透明的PNG，並應包含您要覆蓋的標誌或圖示。<br>這是即將重疊的具有透明效果的star物件的透明PNG影像：<br>[https://s7g2.scene7.com/is/image/genaibeta/decorate-star](https://s7g2.scene7.com/is/image/genaibeta/decorate-star) |
-| **套用Dynamic Media URL** | 現在，請建立結合基本影像與標誌或圖示影像的Dynamic Media URL。 您可以使用URL命令來達到此效果。<br>URL結構看起來像這樣：<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&src=decorate-star&scale=1.25&posN=0.33,-.25&fmt=png](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&src=decorate-star&scale=1.25&posN=0.33,-.25&fmt=png)<br>資產所在的位置<ul><li> `hotspotRetailBaseImage`是基本影像。</li><li> `starxp`是標誌/圖示影像。</li><li> `layer=1`指定標誌或圖示應重疊在基本影像上。</li><li> `scale=1.25`會調整標誌/圖示的大小。</li><li> `posN=0.33,-.25`決定相對於基本影像的標誌/圖示位置。</li><li> `fmt=png`確保輸出為PNG格式。</li></ul> |
+| **套用Dynamic Media URL** | 現在，請建立結合基本影像與標誌或圖示影像的Dynamic Media URL。 您可以使用URL命令來達到此效果。<br>URL結構看起來像這樣：<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&src=decorate-star&scale=1.25&posN=0.33,-.25&fmt=png)<br>資產所在的位置<ul><li> `hotspotRetailBaseImage`是基本影像。</li><li> `starxp`是標誌/圖示影像。</li><li> `layer=1`指定標誌或圖示應重疊在基本影像上。</li><li> `scale=1.25`會調整標誌/圖示的大小。</li><li> `posN=0.33,-.25`決定相對於基本影像的標誌/圖示位置。</li><li> `fmt=png`確保輸出為PNG格式。</li></ul> |
 
-要進一步瞭解什麼？ 移至[src](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src)，以取得有關`src`命令和其他Dynamic Media URL命令的詳細資料。
+要進一步瞭解什麼？ 移至[src](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src)，以取得有關`src`命令和其他Dynamic Media URL命令的詳細資料。
 
 
 #### 重疊促銷文字
@@ -234,7 +234,7 @@ Dynamic Media可讓您直接透過URL操作影像，使其成為建立動態數�
 | 步驟 | 該做什麼 |
 | --- | --- |
 | **上傳並發佈基本影像** | 首先，上傳並發佈您要附加文字的基本影像。 您可以使用任何您喜歡的影像。 例如，以下是範例基本影像：<br>[https://s7g2.scene7.com/is/image/genaibeta/leather-sofa](https://s7g2.scene7.com/is/image/genaibeta/leather-sofa)<br> |
-| **套用Dynamic Media文字運運算元** | 使用Dynamic Media時，您可以套用文字運運算元，將動態文字直接覆蓋在影像上。 下列範例URL示範此能力：<br>[https://s7g10.scene7.com/is/image/genaibeta/leather-sofa?layer=1&posN=-0.3,-0.455&text=%7b\rtf1\ansi%7b\fonttbl%7b\f0+Arial；%7d%7d%7b\colortbl+\red255\green255\blue255；%7d\copyfit1000\vertalc\qc%7b\cf0\fs42+New+Collection%7d%7d&amp;size=370,70&amp;textAttr=130&amp;bgcolor=FF3333&amp;wid=600&amp;hei=600](https://s7g10.scene7.com/is/image/genaibeta/leather-sofa?layer=1&posN=-0.3,-0.455&text=%7b\rtf1\ansi%7b\fonttbl%7b\f0+Arial；%7d%7d%7b\colortbl+\red255\green255\blue255；%7d\copyfit1000\vertalc\qc%7b\cf0\fs42+New+Collection%7d%7d&amp;size=370,70&amp;textAttr=130&amp;bgcolor=FF3333&amp;wid=600&amp;hei=600) |
+| **套用Dynamic Media文字運運算元** | 使用Dynamic Media時，您可以套用文字運運算元，將動態文字直接覆蓋在影像上。 下列範例URL示範此能力：<br>[https://s7g10.scene7.com/is/image/genaibeta/leather-sofa?layer=1&amp;posN=-0.3,-0.455&amp;text=%7b\rtf1\ansi%7b\fonttbl%7b\f0+Arial；%7d%7d%7b\colortbl+\red255\green255\blue255；%7d\copyfit1000\vertalc\qc%7b\cf0\fs42+New+Collection%7d%7d&amp;size=370,70&amp;textAttr=130&amp;bgcolor=FF3333&amp;wid=600&amp;hei=600](https://s7g10.scene7.com/is/image/genaibeta/leather-sofa?layer=1&posN=-0.3,-0.455&text=%7b\rtf1\ansi%7b\fonttbl%7b\f0+Arial；%7d%7d%7b\colortbl+\red255\green255\blue255；%7d\copyfit1000\vertalc\qc%7b\cf0\fs42+New+Collection%7d%7d&size=370,70&textAttr=130&bgcolor=FF3333&wid=600&hei=600) |
 
 #### 調整大小及裁切各種使用案例
 
@@ -264,19 +264,19 @@ Dynamic Media可讓您直接透過URL操作影像，使其成為建立動態數�
   [https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa)
 * **縮圖(200 px x 200 px)：**
 適合快速載入或顯示的較小版本。
-  [https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=200&hei=200&fit=crop](https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=200&hei=200&fit=crop)
+  [https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=200&amp;hei=200&amp;fit=crop](https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=200&hei=200&fit=crop)
 * **裁切的縮圖(200 px x 200 px)：**
 已裁剪以聚焦於沙發區域。
-  [https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=200&hei=200&cropN=.24,.24,.6,.72&fit=crop](https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=200&hei=200&cropN=.24,.24,.6,.72&fit=crop)
+  [https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=200&amp;hei=200&amp;cropN=.24,.24,.6,.72&amp;fit=crop](https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=200&hei=200&cropN=.24,.24,.6,.72&fit=crop)
 * **產品顯示影像(800 px x 600 px)：**
 為了展示沙發而裁切和調整大小。
-  [https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=800&hei=600&cropN=.24,.24,.6,.72&fit=crop](https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=800&hei=600&cropN=.24,.24,.6,.72&fit=crop)
+  [https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=800&amp;hei=600&amp;cropN=.24,.24,.6,.72&amp;fit=crop](https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=800&hei=600&cropN=.24,.24,.6,.72&fit=crop)
 * **橫幅(1720 px x 820 px)：**
 從原始影像衍生，強調空間。
-  [https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=1720&hei=820&cropN=0,.1,1,1&fit=crop](https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=1720&hei=820&cropN=0,.1,1,1&fit=crop)
+  [https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=1720&amp;hei=820&amp;cropN=0,.1,1,1&amp;fit=crop](https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=1720&hei=820&cropN=0,.1,1,1&fit=crop)
 
 您可以根據特定需求，隨時探索這些變數。
-想要進一步瞭解URL中可用的命令？ 移至[命令參考](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference)。
+想要進一步瞭解URL中可用的命令？ 移至[命令參考](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference)。
 
 ### 傳遞GIF影像
 
@@ -320,7 +320,7 @@ Dynamic Media可讓您直接透過URL操作影像，使其成為建立動態數�
    * **內嵌視訊：**
 複製提供的內嵌程式碼，並將其貼到您要顯示視訊的網頁的HTML中。 如此一來，影片就能直接在您的網站上播放。
 
-想要進一步瞭解嗎？ 移至[影片](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/dynamicmedia/video)。
+想要進一步瞭解嗎？ 移至[影片](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/video)。
 
 ### 設定影片以獲得最佳品質和參與
 

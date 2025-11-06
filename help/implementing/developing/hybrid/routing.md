@@ -3,9 +3,9 @@ title: SPA模型路由
 description: 若為AEM中的單頁應用程式，則由應用程式負責路由。 本檔案說明路由機制、合約及可用的選項。
 exl-id: 1186b64e-11f8-43a6-bc75-450c4d7587ec
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 index: false
-source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 0%
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 ## 手動與自動模型製程 {#manual-vs-automatic-model-routing}
 
-`ModelRouter`會自動擷取模型的片段。 但就像任何自動化工具一樣，它也伴隨著限制。 必要時，可以停用`ModelRouter`，或將其設定為使用中繼屬性略過路徑（請參閱[SPA頁面元件](page-component.md)檔案的[中繼屬性]區段）。 前端開發人員可以透過請求`PageModelManager`使用`getData()`函式載入任何指定的模型片段，來實作他們自己的模型路由層。
+`ModelRouter`會自動擷取模型的片段。 但就像任何自動化工具一樣，它也伴隨著限制。 如有需要，可停用`ModelRouter`，或將其設定為使用中繼屬性略過路徑(請參閱[SPA頁面元件](page-component.md)檔案的「Meta屬性」一節)。 前端開發人員可以透過請求`PageModelManager`使用`getData()`函式載入任何指定的模型片段，來實作他們自己的模型路由層。
 
 >[!CAUTION]
 >

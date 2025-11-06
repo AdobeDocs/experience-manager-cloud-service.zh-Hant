@@ -2,16 +2,16 @@
 title: 瞭解Adobe Experience Manager as a Cloud Service中的Extension Manager
 description: AEM中的Extension Manager可讓開發人員和從業人員使用以App Builder建立的擴充功能來增強AEM的功能。
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 7d69112c5a1dd2256ed38b2cd01c84583f587912
+role: Admin, Developer
+exl-id: 8bc58d13-3c0f-4b09-a95a-f745114ceda1
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '149'
-ht-degree: 4%
+ht-degree: 8%
 
 ---
 
-
-# 擴充功能與Extension Manager {#extensions-and-the-extension-manager}
+# 擴充功能與 Extension Manager {#extensions-and-the-extension-manager}
 
 Adobe Experience Manager (AEM) as a Cloud Service中的Extension Manager可讓開發人員和從業人員使用以AEM App Builder建立的UI擴充功能來增強Adobe的功能。
 
@@ -29,7 +29,7 @@ AEM中的![Extension Manager](/help/implementing/developing/extending/assets/hom
 
 * Extension Manager：
 
-   * AEM Experience Manager[&#128279;](https://developer.adobe.com/uix/docs/extension-manager/)中的Extension Manager
+   * AEM Experience Manager[中的](https://developer.adobe.com/uix/docs/extension-manager/)Extension Manager
    * [由Adobe開發的擴充功能](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)
 
 * AEM App Builder

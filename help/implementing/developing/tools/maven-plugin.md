@@ -1,29 +1,29 @@
 ---
-title: Adobe內容套件Maven外掛程式
+title: Adobe Content Package Maven增效模組
 description: 使用Content Package Maven外掛程式來部署AEM應用程式
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1235'
 ht-degree: 4%
 
 ---
 
-# Adobe內容套件Maven外掛程式 {#adobe-content-package-maven-plugin}
+# Adobe Content Package Maven增效模組 {#adobe-content-package-maven-plugin}
 
-使用Adobe內容套件Maven外掛程式，將套件部署和管理任務整合到您的Maven專案中。
+使用Adobe Content Package Maven外掛程式，將套件部署和管理工作整合到您的Maven專案中。
 
-將建構的封裝部署到AEM是由AdobeContent Package Maven外掛程式執行，並且允許自動化通常使用AEM [封裝管理員](/help/implementing/developing/tools/package-manager.md)執行的工作
+將建構的套件部署至AEM是由Adobe Content Package Maven外掛程式執行，並可讓通常使用AEM [封裝管理員](/help/implementing/developing/tools/package-manager.md)執行的工作自動化
 
 * 從檔案系統中的檔案建立新封裝。
 * 在AEM上安裝及解除安裝套件。
 * 建置已在AEM上定義的套件。
-* 取得AEM上安裝的套件清單。
+* 取得安裝在AEM上的套件清單。
 * 從AEM移除套件。
 
-本檔案詳細說明如何使用Maven管理這些任務。 不過，瞭解[AEM專案及其封裝的結構方式也很重要](#aem-project-structure)。
+本檔案詳細說明如何使用Maven管理這些任務。 不過，瞭解[AEM專案及其套件的結構也很重要](#aem-project-structure)。
 
 >[!NOTE]
 >
@@ -33,7 +33,7 @@ ht-degree: 4%
 >
 >套件&#x200B;**建立**&#x200B;現在由[Apache Jackrabbit FileVault Package Maven外掛程式](https://jackrabbit.apache.org/filevault-package-maven-plugin/)擁有。
 >
->本文說明由Adobe內容套件Maven外掛程式執行的將已建構套件部署至AEM的&#x200B;**部署**。
+>本文說明由AEM Content Package Maven外掛程式執行的將建構套件部署至Adobe的&#x200B;**部署**。
 
 ## 套件和AEM專案結構 {#aem-project-structure}
 
@@ -41,7 +41,7 @@ AEM as a Cloud Service遵循由最新AEM專案原型實作的套件管理和專�
 
 >[!TIP]
 >
->請參閱AEM as a Cloud Service檔案中的[AEM專案結構](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=zh-Hant)文章和[AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)檔案。 AEM 6.5完全支援這兩項功能。
+>請參閱AEM檔案中的[AEM as a Cloud Service專案結構](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)文章和[AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)檔案。 AEM 6.5完全支援這兩項功能。
 
 ## 取得內容套件Maven外掛程式 {#obtaining-the-content-package-maven-plugin}
 
@@ -86,7 +86,7 @@ mvn content-package:install -Dvault.targetURL="https://192.168.1.100:4502/crx/pa
 
 ### 代理 {#proxies}
 
-使用AEM代理的目標會使用Maven設定中找到的第一個有效Proxy設定。 如果未找到Proxy設定，則不會使用Proxy。 檢視[通用引數](#common-parameters)區段中的`useProxy`引數。
+使用AEM代理的目標會使用Maven設定中找到的第一個有效Proxy設定。 如果未找到Proxy設定，則不會使用Proxy。 檢視`useProxy`通用引數[區段中的](#common-parameters)引數。
 
 ### 通用引數 {#common-parameters}
 
@@ -96,7 +96,7 @@ mvn content-package:install -Dvault.targetURL="https://192.168.1.100:4502/crx/pa
 |---|---|---|---|---|---|
 | `failOnError` | `boolean` | 否 | `false` | 發生錯誤時，`true`的值會導致組建失敗。 值為`false`會導致組建忽略錯誤。 | 除`package`以外的所有目標 |
 | `name` | `String` | `build`：是，`install`：否，`rm`：是 | `build`：無預設值，`install`： Maven專案的`artifactId`屬性值 | 要對其採取動作的套件的名稱 | 除`ls`以外的所有目標 |
-| `password` | `String` | 是 | `admin` | 用於使用AEM進行驗證的密碼 | 除`package`以外的所有目標 |
+| `password` | `String` | 是 | `admin` | 用於透過AEM進行驗證的密碼 | 除`package`以外的所有目標 |
 | `serverId` | `String` | 否 | 要從中擷取使用者名稱和密碼以進行驗證的伺服器ID | 除`package`以外的所有目標 |
 | `targetURL` | `String` | 是 | `http://localhost:4502/crx/packmgr/service.jsp` | AEM封裝管理員的HTTP服務API的URL | 除`package`以外的所有目標 |
 | `timeout` | `int` | 否 | `5` | 與封裝管理程式服務通訊的連線逾時（以秒為單位） | 除`package`以外的所有目標 |
@@ -211,8 +211,8 @@ mvn content-package:install -Dvault.targetURL="https://192.168.1.100:4502/crx/pa
 
 ## 使用AEM專案原型來產生AEM專案 {#using-archetypes}
 
-最新的AEM專案原型會為內部部署和AMS實作實施最佳實務套件結構，並建議用於所有AEM專案。
+最新的AEM專案原型會為內部部署和AMS實作實作實施最佳實務套件結構，並建議用於所有AEM專案。
 
 >[!TIP]
 >
->請參閱AEM as a Cloud Service檔案中的[AEM專案結構](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=zh-Hant)文章和[AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)檔案。 AEM 6.5完全支援這兩項功能。
+>請參閱AEM檔案中的[AEM as a Cloud Service專案結構](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)文章和[AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)檔案。 AEM 6.5完全支援這兩項功能。

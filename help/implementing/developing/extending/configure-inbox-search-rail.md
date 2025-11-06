@@ -3,8 +3,8 @@ title: 如何設定收件匣的搜尋篩選器？
 description: 瞭解如何設定收件匣專案的搜尋篩選器。
 exl-id: 0e82d7ad-7a82-4d67-8eb8-9af6936652d8
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1010'
 ht-degree: 1%
@@ -53,7 +53,7 @@ ht-degree: 1%
 
 設定範圍述詞：
 
-1. 開啟組態[&#128279;](#creating-opening-customized-configuration)的表單。
+1. 開啟組態[的](#creating-opening-customized-configuration)表單。
 1. 選取&#x200B;**[!UICONTROL 選取述詞]**&#x200B;索引標籤，並將&#x200B;**[!UICONTROL 範圍述詞]**&#x200B;拖曳至表單。
 1. 在&#x200B;**[!UICONTROL 設定]**&#x200B;索引標籤中，從&#x200B;**[!UICONTROL 欄名稱]**&#x200B;欄位選取搜尋所依據的收件匣欄名稱。
 1. 在&#x200B;**[!UICONTROL 篩選器標籤]**&#x200B;欄位中指定篩選的標籤。 選取&#x200B;**[!UICONTROL 啟用小數值]**&#x200B;核取方塊，以在定義範圍時接受數字的小數值。
@@ -71,7 +71,7 @@ ht-degree: 1%
 
 設定文字述詞：
 
-1. 開啟組態[&#128279;](#creating-opening-customized-configuration)的表單。
+1. 開啟組態[的](#creating-opening-customized-configuration)表單。
 1. 選取&#x200B;**[!UICONTROL 選取述詞]**&#x200B;索引標籤，並將&#x200B;**[!UICONTROL 文字述詞]**&#x200B;拖曳至表單。
 1. 在&#x200B;**[!UICONTROL 設定]**&#x200B;索引標籤中，從&#x200B;**[!UICONTROL 欄名稱]**&#x200B;欄位選取搜尋所依據的收件匣欄名稱。
 1. 指定在「搜尋」文字方塊中顯示的文字，作為&#x200B;**[!UICONTROL 搜尋文字方塊預留位置]**&#x200B;欄位中的預留位置文字。
@@ -85,7 +85,7 @@ ht-degree: 1%
 
 設定日期範圍述詞：
 
-1. 開啟組態[&#128279;](#creating-opening-customized-configuration)的表單。
+1. 開啟組態[的](#creating-opening-customized-configuration)表單。
 1. 選取&#x200B;**[!UICONTROL 選取述詞]**&#x200B;索引標籤，並將&#x200B;**[!UICONTROL 日期範圍述詞]**&#x200B;拖曳至表單。
 1. 在&#x200B;**[!UICONTROL 設定]**&#x200B;索引標籤中，從&#x200B;**[!UICONTROL 欄名稱]**&#x200B;欄位選取搜尋所依據的收件匣欄名稱。
 1. 在&#x200B;**[!UICONTROL 篩選標籤]**&#x200B;欄位中指定日期範圍篩選的標籤。
@@ -100,7 +100,7 @@ ht-degree: 1%
 
 設定自訂欄選項述詞：
 
-1. 開啟組態[&#128279;](#creating-opening-customized-configuration)的表單。
+1. 開啟組態[的](#creating-opening-customized-configuration)表單。
 1. 選取&#x200B;**[!UICONTROL 選取述詞]**&#x200B;索引標籤，並將&#x200B;**[!UICONTROL 自訂資料行選項述詞]**&#x200B;拖曳至表單。
 1. 在&#x200B;**[!UICONTROL 設定]**&#x200B;索引標籤中，從&#x200B;**[!UICONTROL 欄名稱]**&#x200B;欄位選取搜尋所依據的收件匣欄名稱。
 1. 在&#x200B;**[!UICONTROL 篩選標籤]**&#x200B;欄位中指定自訂資料行選項篩選的標籤。

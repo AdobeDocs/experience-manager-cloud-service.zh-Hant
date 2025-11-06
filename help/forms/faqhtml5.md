@@ -1,5 +1,5 @@
 ---
-title: HTML5表單常見問題集(FAQ)
+title: HTML5 表單常見問題集 (FAQ)
 description: 關於HTML5表單版面配置、指令碼支援和範圍的常見問題集(FAQ)。
 contentOwner: robhagat
 content-type: reference
@@ -10,15 +10,15 @@ feature: HTML5 Forms,Mobile Forms
 exl-id: 85c9315e-1bc8-44a9-937e-af6fc7cf54d1
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '2033'
+source-wordcount: '2032'
 ht-degree: 0%
 
 ---
 
 
-# HTML5表單常見問題集(FAQ){#frequently-asked-questions-faq-for-html-forms}
+# HTML5 表單常見問題集 (FAQ){#frequently-asked-questions-faq-for-html-forms}
 
 <span class="preview"> HTML5 Forms功能屬於Early Access方案的一部分。 若要要求存取權，請將您的正式（工作）電子郵件ID傳送電子郵件至aem-forms-ea@adobe.com。
 </span>
@@ -216,7 +216,7 @@ ht-degree: 0%
 
 1. HTML5表單會多次執行初始化指令碼和表單就緒事件嗎？
 
-   回答：是，初始化指令碼和表單就緒事件會執行多次，在伺服器上至少執行一次，在使用者端執行一次。 建議根據某些商業邏輯（表單或欄位資料）編寫初始化或表單：ready事件等指令碼，以便根據資料和等冪狀態（如果資料相同）執行動作。
+   回答：是，初始化指令碼和表單就緒事件會執行多次，在伺服器上至少執行一次，在使用者端執行一次。 建議根據某些商業邏輯（表單或欄位資料）編寫初始化或表單:ready事件之類的指令碼，以便根據資料與等冪狀態（如果資料相同）執行動作。
 
 ### 設計XDP {#designing-xdp}
 

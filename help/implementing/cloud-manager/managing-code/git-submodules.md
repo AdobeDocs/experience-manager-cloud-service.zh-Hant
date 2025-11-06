@@ -3,8 +3,8 @@ title: Git 子模組支援
 description: 了解如何使用 Git 子模組在建置期間將橫跨多個不同 Git 存放庫的多個分支內容合併。
 exl-id: fa5b0f49-4b87-4f39-ad50-7e62094d85f4
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 8a53bef8bdf592869c895cbaca1e79034e52f856
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 24%

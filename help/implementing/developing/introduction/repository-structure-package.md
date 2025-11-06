@@ -3,8 +3,8 @@ title: AEM 專案存放庫結構套件
 description: Adobe Experience Manager as a Cloud Service上的Maven專案需要存放庫結構子套件定義，其唯一用途是定義專案的程式碼子套件部署到的JCR存放庫根。
 exl-id: dec08410-d109-493d-bf9d-90e5556d18f0
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 520ab0229b4f00a1de981209bf26059b0d00c3da
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 2%
@@ -13,9 +13,9 @@ ht-degree: 2%
 
 # AEM 專案存放庫結構套件
 
-Adobe Experience Manager as a Cloud Service的Maven專案需要存放庫結構子套件定義，其唯一用途是定義專案的程式碼子套件部署到的JCR存放庫根。 此方法可確保依照JCR資源相依性自動對Experience Manageras a Cloud Service中套件的安裝排序。 缺少相依性可能會導致子結構安裝在其父結構之前，因此意外地被移除，中斷部署的情況。
+Adobe Experience Manager as a Cloud Service的Maven專案需要存放庫結構子套件定義，其唯一用途是定義專案的程式碼子套件部署到的JCR存放庫根。 此方法可確保Experience Manager as a Cloud Service中套件的安裝會依JCR資源相依性自動排序。 缺少相依性可能會導致子結構安裝在其父結構之前，因此意外地被移除，中斷部署的情況。
 
-如果您的程式碼套件部署到程式碼套件未涵蓋的位置&#x200B;**&#x200B;**，則必須在存放庫結構套件中列舉任何上階資源（靠近JCR根的JCR資源）。 建立這些相依性需要此程式。
+如果您的程式碼套件部署到程式碼套件未涵蓋的位置&#x200B;****，則必須在存放庫結構套件中列舉任何上階資源（靠近JCR根的JCR資源）。 建立這些相依性需要此程式。
 
 ![存放庫結構封裝](./assets/repository-structure-packages.png)
 
@@ -24,7 +24,7 @@ Adobe Experience Manager as a Cloud Service的Maven專案需要存放庫結構�
 要包含在存放庫結構封裝中的最典型路徑是：
 
 + `/apps`是系統提供的節點
-+ 為`/libs`提供一般覆蓋的`/apps/cq/...`、`/apps/dam/...`、`/apps/wcm/...`和`/apps/sling/...`。
++ 為`/apps/cq/...`提供一般覆蓋的`/apps/dam/...`、`/apps/wcm/...`、`/apps/sling/...`和`/libs`。
 + `/apps/settings`是共用的內容感知設定根路徑
 
 此子封裝&#x200B;**沒有**&#x200B;任何內容，且僅由定義篩選根目錄的`pom.xml`組成。
@@ -118,7 +118,7 @@ Adobe Experience Manager as a Cloud Service的Maven專案需要存放庫結構�
 
 ## 參考存放庫結構套件
 
-若要使用存放庫結構套件，請透過FileVault內容套件Maven外掛程式`<repositoryStructurePackage>`設定透過所有程式碼套件（部署到`/apps`的子套件）參考Maven專案。
+若要使用存放庫結構套件，請透過FileVault內容套件Maven外掛程式`/apps`設定透過所有程式碼套件（部署到`<repositoryStructurePackage>`的子套件）參考Maven專案。
 
 在`ui.apps/pom.xml`和任何其他程式碼套件`pom.xml`中，將專案的存放庫結構套件(#repository-structure-package)組態的參考新增到FileVault套件Maven外掛程式。
 
@@ -168,7 +168,7 @@ Adobe Experience Manager as a Cloud Service的Maven專案需要存放庫結構�
 
 在此案例中：
 
-+ 程式碼套件A應在專案的存放庫結構套件（應該有`/apps`的篩選器）上定義`<repositoryStructurePackage>`。
++ 程式碼套件A應在專案的存放庫結構套件（應該有`<repositoryStructurePackage>`的篩選器）上定義`/apps`。
 + 程式碼套件B應在程式碼套件A上定義`<repositoryStructurePackage>`，因為程式碼套件B會部署到程式碼套件A共用的空間。
 
 ## 錯誤與偵錯
@@ -180,7 +180,7 @@ Adobe Experience Manager as a Cloud Service的Maven專案需要存放庫結構�
 Filter root's ancestor '/apps/some/path' is not covered by any of the specified dependencies.
 ```
 
-此錯誤表示中斷程式碼封裝的篩選清單中沒有列出`/apps/some/path`的`<repositoryStructurePackage>`。
+此錯誤表示中斷程式碼封裝的篩選清單中沒有列出`<repositoryStructurePackage>`的`/apps/some/path`。
 
 ## 其他資源
 

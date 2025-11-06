@@ -3,9 +3,9 @@ title: SPA 簡介和逐步解說
 description: 本文章介紹 SPA 的概念，並逐步解說如何使用基本 SPA 應用程式進行編寫，說明它與基礎 AEM SPA 編輯器的關係。
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 index: false
-source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2045'
 ht-degree: 93%
@@ -94,10 +94,12 @@ SPA 背後的主要概念是減少對伺服器呼叫和依賴，以儘量減少�
 >[!TIP]
 >
 >如需 SPA 如何在 AEM 中運作的詳細技術資訊，請參閱文章：
+>
 >* [開始在 AEM 中使用 React 建立 SPA](getting-started-react.md)
 >* [開始在 AEM 中使用 Angular 建立 SPA](getting-started-angular.md)
 >
 >如需詳細了解 SPA 編輯器的設計、架構和技術工作流程，請參閱文章：
+>
 >* [SPA 編輯器概觀](editor-overview.md)。
 
 ## SPA 的內容編輯體驗 {#content-editing-experience-with-spa}

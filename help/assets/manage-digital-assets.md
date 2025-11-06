@@ -4,9 +4,9 @@ description: 瞭解各種資產管理和編輯方法
 contentOwner: AG
 mini-toc-levels: 3
 feature: Asset Management, Publishing,Collaboration, Asset Processing
-role: User, Architect, Admin
+role: User, Developer, Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '4277'
 ht-degree: 10%
@@ -17,7 +17,7 @@ ht-degree: 10%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=en) |
 | AEM as a Cloud Service  | 本文章 |
 
 本文說明如何在[!DNL Adobe Experience Manager Assets]中管理和編輯資產。 若要管理[!DNL Content Fragments]，請參閱[[!DNL Content Fragments]](content-fragments/content-fragments.md)資產。
@@ -59,10 +59,10 @@ ht-degree: 10%
 
    ![zip解壓縮](assets/zip-extraction.png)
 
->[!NOTE]
->
->* 支援的ZIP檔案大小上限為15 GB。
->* 您一次最多可以解壓縮三個ZIP檔案。
+   >[!NOTE]
+   >
+   >* 支援的ZIP檔案大小上限為15 GB。
+   >* 您一次最多可以解壓縮三個ZIP檔案。
 
 ## 預覽資產 {#previewing-assets}
 
@@ -70,7 +70,6 @@ ht-degree: 10%
 
 1. 從Assets使用者介面，導覽至您要預覽的資產位置。
 1. 選取要開啟的資產。
-
 1. 在預覽模式中，縮放選項可用於[支援的影像型別](/help/assets/file-format-support.md) （具有互動式編輯）。
 
    若要放大資產，請選取`+` （或選取資產上的放大鏡）。 若要縮小顯示，請選取`-`。 放大時，您可以透過平移仔細檢視影像的任何區域。 重設縮放箭頭可讓您回到原始檢視。
@@ -80,7 +79,6 @@ ht-degree: 10%
 ## 編輯屬性 {#editing-properties}
 
 1. 導覽至您要編輯其中繼資料的資產位置。
-
 1. 選取資產，然後從工具列選取&#x200B;**[!UICONTROL 屬性]**&#x200B;以檢視資產屬性。 或者，選擇資產卡上的&#x200B;**[!UICONTROL 屬性]**&#x200B;快速動作。
 
    ![properties_quickaction](assets/properties_quickaction.png)
@@ -97,17 +95,17 @@ ht-degree: 10%
 
 1. 若要在特定期間之後停用資產，請從&#x200B;**[!UICONTROL 關閉時間]**&#x200B;欄位旁的日期選擇器中選擇停用日期/時間。 停用日期應晚於資產的啟用日期。 在[!UICONTROL 關閉時間]之後，無法透過Assets網路介面或HTTP API使用資產及其轉譯。
 
-   <!--![chlimage_1-218](assets/chlimage_1-218.png)
+   <!--![chlimage_1-218](assets/chlimage_1-218.png)-->
+
 1. 在&#x200B;**[!UICONTROL 標籤]**&#x200B;欄位中，選取一或多個標籤。 若要新增自訂標籤，請在方塊中輸入標簽名稱，並選取`Enter`索引鍵。 新標籤儲存在[!DNL Experience Manager]中。
 
    YouTube需要標籤才能發佈，而且必須具備YouTube連結（如果可以找到合適的連結）。
 
    >[!NOTE]
    >
-   > 若要建立標籤，您必須在CRX存放庫中的`/content/cq:tags/default`路徑有寫入許可權。
+   >若要建立標籤，您必須在CRX存放庫中的`/content/cq:tags/default`路徑有寫入許可權。
 
 1. 選取「**[!UICONTROL 儲存並關閉]**」。
-
 1. 導覽至Assets使用者介面。 編輯的中繼資料屬性（包括標題、說明和標籤）會顯示在「卡片」檢視的資產卡片上，以及「清單」檢視的相關欄下。
 
 <!-- TBD: Uncomment after verification for Dec release.
@@ -166,7 +164,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
 1. 在「移動Assets」精靈中，執行下列任一項作業：
 
-   * 指定資產移動後的名稱。 然後選取「下一步」**&#x200B;**&#x200B;以繼續。
+   * 指定資產移動後的名稱。 然後選取「下一步」****&#x200B;以繼續。
 
    * 選取&#x200B;**[!UICONTROL 取消]**&#x200B;以停止處理程式。
 
@@ -185,7 +183,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
    在&#x200B;**[!UICONTROL 調整參考]**&#x200B;畫面中執行下列任一項作業：
 
-   * 根據新的詳細資料指定要調整的參考，然後選取[移動]&#x200B;**[!UICONTROL 以繼續。]**
+   * 根據新的詳細資料指定要調整的參考，然後選取[移動]**[!UICONTROL 以繼續。]**
 
    * 從&#x200B;**[!UICONTROL 調整]**&#x200B;欄，選取/取消選取資產的參考。
    * 選取&#x200B;**[!UICONTROL 上一步]**&#x200B;以返回&#x200B;**[!UICONTROL 選取目的地]**&#x200B;畫面。
@@ -230,7 +228,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
    >[!NOTE]
    >
-   >如果您從「轉譯」面板選取轉譯 **&#x200B;**&#x200B;，工具列會變更上下文，並僅顯示與轉譯相關的動作。不會顯示「上傳轉譯」圖示等選項。若要在工具列中檢視這些選項，請導覽至資產的詳細資訊頁面。
+   >如果您從「轉譯」面板選取轉譯 **** ，工具列會變更上下文，並僅顯示與轉譯相關的動作。不會顯示「上傳轉譯」圖示等選項。若要在工具列中檢視這些選項，請導覽至資產的詳細資訊頁面。
 
    您可以設定要在影像或視訊資產的詳細資訊頁面中顯示的轉譯尺寸。 Assets會根據您指定的維度顯示具有精確或最接近維度的轉譯。
 
@@ -248,7 +246,7 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
    <!--![chlimage_1-222](assets/chlimage_1-222.png)-->
 
-   若要設定視訊資產的轉譯維度，請導覽至CRX存放庫中`/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`位置的`videopicker`節點、覆蓋節點，然後編輯適當的屬性。
+   若要設定視訊資產的轉譯維度，請導覽至CRX存放庫中`videopicker`位置的`/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`節點、覆蓋節點，然後編輯適當的屬性。
 
    >[!NOTE]
    >
@@ -412,7 +410,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 >[!NOTE]
 >
->時間軸包含數個內容片段[&#128279;](content-fragments/content-fragments.md)專屬的選項。
+>時間軸包含數個內容片段[專屬的](content-fragments/content-fragments.md)選項。
 
 ## 為資產加上註釋 {#annotating}
 
@@ -422,7 +420,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
 >[!NOTE]
 >
->對於內容片段，會在片段編輯器[&#128279;](content-fragments/content-fragments.md)中建立註解。
+>對於內容片段，會在片段編輯器[中建立](content-fragments/content-fragments.md)註解。
 
 1. 導覽至您要新增註解的資產位置。
 1. 從下列任一項中選取&#x200B;**[!UICONTROL 註釋]**&#x200B;圖示：
@@ -535,7 +533,7 @@ The editing tools in the [!DNL Experience Manager Assets] interface let you perf
 
    您可以根據要在打印的PDF中顯示注釋/狀態的位置選擇其他設定。如果您希望註解/狀態顯示在與印刷資產不同的頁面中，請選擇「下 **[!UICONTROL 一頁」]**。
 
-1. 按一下&#x200B;**[!UICONTROL 列印]**。 根據您在步驟2中選擇的選項，產生的PDF會在指定位置顯示註解/狀態。例如，如果您選擇使用左上角設定打印注釋和審閱狀態 **&#x200B;**&#x200B;，則生成的輸出類似於此處所示的PDF檔案。
+1. 按一下&#x200B;**[!UICONTROL 列印]**。 根據您在步驟2中選擇的選項，產生的PDF會在指定位置顯示註解/狀態。例如，如果您選擇使用左上角設定打印注釋和審閱狀態 **** ，則生成的輸出類似於此處所示的PDF檔案。
 
    <!--![chlimage_1-246](assets/chlimage_1-246.png)-->
 
@@ -659,7 +657,7 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 --data-urlencode '../../jcr:primaryType=sling:Folder'
 ```
 
-若要瞭解更多資訊，請參閱如何[使用案頭應用程式瀏覽DAM資產](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=zh-Hant#browse-search-preview-assets)及[如何使用Adobe Asset Link](https://helpx.adobe.com/tw/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html)。
+若要瞭解更多資訊，請參閱如何[使用案頭應用程式瀏覽DAM資產](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)及[如何使用Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html)。
 
 **另請參閱**
 

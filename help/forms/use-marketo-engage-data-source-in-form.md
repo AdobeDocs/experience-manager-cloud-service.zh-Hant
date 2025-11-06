@@ -5,7 +5,7 @@ keywords: 在最適化Forms中使用Marketo Engage資料來源。如何連結Mar
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 exl-id: 4656ec65-f1ad-4e97-8d93-25933cdc7f7b
-source-git-commit: 4bb63932a658cf01cc493b9e5e68b96984cce49c
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '764'
 ht-degree: 8%
@@ -109,8 +109,10 @@ ht-degree: 8%
 **問：變更表單的聯結器會發生什麼事？**\
 **A：**&#x200B;如果您變更表單的聯結器，現有的繫結就會變成無效。
 
-**問：規則編輯器的Invoke Service中哪些作業可用於與Marketo Engage整合的表單？**\
+**問：規則編輯器的Invoke Service中哪些作業可用於與Marketo Engage整合的表單？**
+
 **A：**&#x200B;在與Marketo Engage整合的表單的&#x200B;**叫用服務**&#x200B;中可用的三個現成作業是：
+
 * 同步處理銷售機會
 * 依ID取得銷售機會
 * 依篩選器型別取得銷售機會

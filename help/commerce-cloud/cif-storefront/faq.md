@@ -3,8 +3,8 @@ title: AEM - 使用 Commerce Integration Framework 進行商務整合常見問�
 description: AEM - 使用 Commerce Integration Framework 進行商務整合常見問題集
 exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
 feature: Commerce Integration Framework
-role: Admin, Architect, User
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+role: Admin, Developer, User
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '960'
 ht-degree: 97%
@@ -50,7 +50,7 @@ PIM 資料透過 GraphQL 要求公開給 AEM 和用戶端。建議將 PIM 與商
 
 ## &#x200B;9. AEM Dispatcher 的快取失效如何與 AEM 和 Commerce 搭配使用？ {#faq-9}
 
-Adobe 建議為 Dispatcher 上快取的頁面設定 TTL 型快取失效。對於價格或庫存等動態訊息，Adobe 建議在用戶端呈現資料。有關 TTL 型快取失效的詳細資訊，請參閱[最佳化 Dispatcher 快取](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html?lang=zh-Hant)。
+Adobe 建議為 Dispatcher 上快取的頁面設定 TTL 型快取失效。對於價格或庫存等動態訊息，Adobe 建議在用戶端呈現資料。有關 TTL 型快取失效的詳細資訊，請參閱[最佳化 Dispatcher 快取](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html)。
 
 ## &#x200B;10. 對於使用 Commerce 跨 AEM 內容進行整合搜尋有什麼建議嗎？ {#faq-10}
 
@@ -70,7 +70,7 @@ Adobe 建議在 AEM 中管理行銷相關資料和內容。使用內容片段透
 
 ## &#x200B;14. 在整個表示層使用 AEM 時，如何確保 PCI 合規性？ {#faq-14}
 
-Adobe 建議使用抽象的付款方式。這可讓瀏覽器用戶端與支付閘道提供者直接通訊，如此 Adobe 或商務解決方案都不會儲存或傳遞持卡人資料。此方法僅需要 3 級 PCI 合規性。然而，要完全符合 PCI 標準還需要考慮其他事項，例如員工如何與系統和資料互動。如需Adobe Commerce PCI法規遵循的詳細資訊，請參閱[PCI法規遵循需求。](https://business.adobe.com/tw/products/magento/pci-compliance.html)
+Adobe 建議使用抽象的付款方式。這可讓瀏覽器用戶端與支付閘道提供者直接通訊，如此 Adobe 或商務解決方案都不會儲存或傳遞持卡人資料。此方法僅需要 3 級 PCI 合規性。然而，要完全符合 PCI 標準還需要考慮其他事項，例如員工如何與系統和資料互動。如需Adobe Commerce PCI法規遵循的詳細資訊，請參閱[PCI法規遵循需求。](https://business.adobe.com/products/magento/pci-compliance.html)
 
 ## &#x200B;15. 如果我使用 AEM 和 Adobe Commerce 雲端版本，此聯合解決方案是否符合 PCI 要求？ {#faq-15}
 

@@ -3,8 +3,8 @@ title: 外部化URL
 description: Externalizer是一項OSGi服務，可讓您以程式設計方式將資源路徑轉換為外部和絕對URL。
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 3f3df8866e9c9555e0c7d2d8ff2637b212dea0b9
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '647'
 ht-degree: 0%
@@ -97,7 +97,7 @@ Externalizer服務可讓您集中定義網域，以程式設計方式為資源�
    >
    >自訂組態可讓您新增類別，例如`production`、`staging`，甚至外部非AEM系統，例如`my-internal-webservice`。 避免在專案的程式碼基底中跨不同位置對這類URL進行硬式編碼很有用。
 
-1. 按一下[儲存]儲存變更。**&#x200B;**
+1. 按一下[儲存]儲存變更。****
 
 ### 使用Externalizer服務 {#using-the-externalizer-service}
 

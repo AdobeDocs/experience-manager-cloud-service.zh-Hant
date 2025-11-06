@@ -4,9 +4,9 @@ description: 了解如何將 AEM 連接到翻譯服務。
 exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '1216'
 ht-degree: 100%
 
@@ -35,7 +35,7 @@ ht-degree: 100%
 
 ## 翻譯整合框架 {#tif}
 
-AEM 的翻譯整合框架 (TIF) 整合協力廠商翻譯服務以協調 AEM 內容的翻譯工作。它涉及三個基本步驟。
+AEM 的翻譯整合框架 (TIF) 整合第三方翻譯服務以協調 AEM 內容的翻譯工作。它涉及三個基本步驟。
 
 1. 連接到您的翻譯服務提供者。
 1. 建立翻譯整合框架設定。
@@ -141,5 +141,5 @@ AEM 是一種靈活而強大的工具，透過多個連接器和多個設定，�
 
 雖然建議您檢閱文件「[設定翻譯規則](translation-rules.md)」以繼續 Headless 翻譯歷程的下一個部分，但下列是一些其他選用資源，深入探究了本文件提到的一些概念，不過這些資源並非繼續 Headless 歷程的必要條件。
 
-* [設定翻譯整合框架](/help/sites-cloud/administering/translation/integration-framework.md) - 檢視所選翻譯連接器清單，了解如何設定翻譯整合框架以與協力廠商翻譯服務整合。
+* [設定翻譯整合框架](/help/sites-cloud/administering/translation/integration-framework.md) - 檢視所選翻譯連接器清單，了解如何設定翻譯整合框架以與第三方翻譯服務整合。
 * [連接到 Microsoft Translator](/help/sites-cloud/administering/translation/connect-ms-translator.md) - AEM 提供 Microsoft Translator 試用版帳戶用於測試目的。

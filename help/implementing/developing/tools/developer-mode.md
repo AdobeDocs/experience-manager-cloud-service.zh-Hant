@@ -5,8 +5,8 @@ description: 開發人員模式會開啟一個側面板，其中包含數個標�
 seo-description: Developer mode opens a side panel with several tabs that provide a developer with information about the current page
 exl-id: fbf11c0f-dc6e-43f3-bcf2-080eacc6ba99
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '527'
 ht-degree: 0%
@@ -31,8 +31,7 @@ ht-degree: 0%
 >
 >開發人員模式：
 >
->* 在行動裝置或桌上型電腦的小型視窗上無法使用（由於空間限制）。
->  * 當寬度小於1024畫素時，就會發生這種情況。
+>* 在行動裝置或桌上型電腦的小型視窗上無法使用（由於空間限制）。 當寬度小於1024畫素時，就會發生這種情況。
 >* 僅適用於`administrators`群組成員的使用者。
 
 ## 開啟開發人員模式 {#opening-developer-mode}
@@ -76,7 +75,7 @@ ht-degree: 0%
 
      ![檢視詳細資料](assets/developer-mode-view-details.png)
 
-* **編輯指令碼：**&#x200B;以CRXDE Lite開啟元件指令碼的連結。
+* **編輯指令碼：**&#x200B;在CRXDE Lite中開啟元件指令碼的連結。
 
 * **檢視元件詳細資料：**&#x200B;在[元件主控台](/help/sites-cloud/authoring/components-console.md)中開啟元件的詳細資料。
 
@@ -91,7 +90,7 @@ ht-degree: 0%
 
 希望&#x200B;**錯誤**&#x200B;索引標籤永遠是空的（如上所述），但是當問題發生時，可能會顯示每個元件的下列詳細資料：
 
-* 如果元件將專案寫入錯誤記錄檔，連同錯誤的詳細資訊以及指向CRXDE Lite內適當程式碼的直接連結，會出現警告。
+* 如果元件將專案寫入錯誤記錄檔，連同錯誤的詳細資料和指向CRXDE Lite中適當程式碼的直接連結時，系統會發出警告。
 * 如果元件開啟管理員工作階段，會出現警告。
 
 例如，如果呼叫未定義的方法，產生的錯誤會顯示在&#x200B;**Errors**&#x200B;索引標籤中，而且&#x200B;**Components**&#x200B;索引標籤樹狀結構中的元件專案也會在錯誤發生時標示為指示器。

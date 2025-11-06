@@ -4,14 +4,14 @@ description: 瞭解如何設定和自訂Forms Experience Builder介面選項和�
 hide: true
 index: false
 hidefromtoc: true
-role: Admin, Architect, Developer
-source-git-commit: de524aeddd5f53cbd713ff0523222966752ebbc0
+role: Admin, Developer
+exl-id: d481e705-62bf-47f7-a832-1a005ec5ec59
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '428'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
-
 
 # 設定Forms Experience Builder UI選項
 
@@ -106,6 +106,6 @@ Forms Experience Builder提供各種UI設定選項，讓您根據工作流程偏
 ## 相關的文章
 
 - [Forms Experience Builder概述](product-overview.md)
-- [Forms Experience Builder快速入門](forms-experience-builder-getting-started.md)
-- [部署和設定Forms Experience Builder](deploy-forms-experience-builder.md)
+- [表單體驗建立工具快速入門](forms-experience-builder-getting-started.md)
+- [部署和設定表單體驗建立工具](deploy-forms-experience-builder.md)
 - [常見問題](forms-experience-builder-frequently-asked-questions.md)

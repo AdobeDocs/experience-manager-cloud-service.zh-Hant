@@ -3,8 +3,8 @@ title: 生產和中繼環境的健康狀態評估
 description: 瞭解如何使用Cloud Manager的健康狀態評估。 您可以掃描AEM環境、執行及檢閱報告、檢視問題詳細資訊、匯出PDF及管理過去執行。
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 5f9d53958076b77cd333a042003c83853594db87
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1406'
 ht-degree: 9%
@@ -32,7 +32,7 @@ ht-degree: 9%
 ## 存取「健康狀態評估」頁面 {#access-health-assessment}
 
 1. 在 [experiece.adobe.com](https://experience.adobe.com) 登入 Cloud Manager。
-1. 在&#x200B;**快速存取**&#x200B;區段中，按一下&#x200B;**Experience Manager**。
+1. 在「**快速存取**」區段中，按一下「**Experience Manager**」。
 1. 在左側面板中，按一下「**Cloud Manager**」。
 1. 選取您想要的組織。 下圖是插圖。 選取您自己的組織名稱。
 
@@ -126,9 +126,9 @@ ht-degree: 9%
 | 圖樣名稱 | 類別 | 類型 | 說明 | 影響 | 自動修正？ |
 | --- | --- | --- | --- | --- | --- |
 | 包含直接使用者新增的自訂AEM群組 | 安全性 | 內容分析 | 使用者直接新增至AEM群組，而非將IMS群組新增為成員。 | 許可權管理和安全性控管可能會變得複雜。 [IMS支援](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/security/ims-support) | 否 |
-| 頁面中缺少JCR內容節點 | 存放庫結構 | 內容分析 | 頁面中遺失`jcr:content`節點。 | Experience Manager as a Cloud Service的功能限制。 [圖樣偵測 — ACV](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-pattern-detection/table-of-contents/acv) | 否 |
-| 頁面中缺少Sling資源型別 | 存放庫結構 | 內容分析 | 頁面中遺失`sling:resourceType`。 | Experience Manager as a Cloud Service的功能限制。 [圖樣偵測 — ACV](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-pattern-detection/table-of-contents/acv) | 否 |
-| 節點計數過多的頁面 | 效能 | 內容分析 | 頁面結構中有大量節點。 | 頁面載入時間緩慢和使用者體驗不佳。 [模式偵測 — PCX](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-pattern-detection/table-of-contents/pcx) | 否 |
+| 頁面中缺少JCR內容節點 | 存放庫結構 | 內容分析 | 頁面中遺失`jcr:content`節點。 | Experience Manager as a Cloud Service的功能限制。 [圖樣偵測 — ACV](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) | 否 |
+| 頁面中缺少Sling資源型別 | 存放庫結構 | 內容分析 | 頁面中遺失`sling:resourceType`。 | Experience Manager as a Cloud Service的功能限制。 [圖樣偵測 — ACV](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) | 否 |
+| 節點計數過多的頁面 | 效能 | 內容分析 | 頁面結構中有大量節點。 | 頁面載入時間緩慢和使用者體驗不佳。 [模式偵測 — PCX](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/pcx) | 否 |
 | 過多正在執行的工作流程例項 | 效能 | 內容分析 | 正在執行的工作流程例項太多。 | 整體系統效能降低。 [維護任務](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/operations/maintenance) | 否 |
 | 未永久刪除的已完成工作流程例項 | 效能 | 內容分析 | 不會清除較舊的已完成工作流程例項。 | 降低系統效率並增加儲存成本。 [維護任務](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/operations/maintenance) | 否 |
 | 內容片段使用統計資料 | 統計資料 | 內容分析 | 追蹤使用中的內容片段數量。 | N/A | N/A |

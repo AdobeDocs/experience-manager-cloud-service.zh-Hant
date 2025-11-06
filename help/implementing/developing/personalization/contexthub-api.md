@@ -3,8 +3,8 @@ title: ContextHub JavaScript API參考
 description: 將ContextHub元件新增至頁面後，指令碼即可使用ContextHub JavaScript API
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
 feature: Developing, Personalization
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '4602'
 ht-degree: 2%
@@ -169,7 +169,7 @@ ContextHub存放區的基底類別。
 ##### 參數 {#parameters-addallitems}
 
 * **`tree`：** （物件或陣列）要新增至存放區的資料。
-* **`options`：** （物件）傳遞至setItem函式的選擇性物件。 如需詳細資訊，請參閱[`setItem(key,value,options)`](#setitem-key-value-options)的`options`引數。
+* **`options`：** （物件）傳遞至setItem函式的選擇性物件。 如需詳細資訊，請參閱`options`的[`setItem(key,value,options)`](#setitem-key-value-options)引數。
 
 ##### 傳回 {#returns-addallitems}
 
@@ -235,8 +235,8 @@ ContextHub存放區的基底類別。
 
 使用參照索引鍵作為參照索引鍵的索引的陣列：
 
-* 參考索引鍵對應至`addReference`函式的`key`引數。
-* 參考的索引鍵對應至`addReference`函式的`anotherKey`引數。
+* 參考索引鍵對應至`key`函式的`addReference`引數。
+* 參考的索引鍵對應至`anotherKey`函式的`addReference`引數。
 
 #### getTree(includeInternals) {#gettree-includeinternals}
 
@@ -309,7 +309,7 @@ ContextHub存放區的基底類別。
 
 ##### 參數 {#parameters-removereference}
 
-* **`key`：**&#x200B;要移除的索引鍵參考。 此引數對應至`addReference`函式的`key`引數。
+* **`key`：**&#x200B;要移除的索引鍵參考。 此引數對應至`key`函式的`addReference`引數。
 
 ##### 傳回 {#returns-removereference}
 
@@ -334,7 +334,7 @@ ContextHub存放區的基底類別。
 
 ##### 參數 {#parameters-resolvereference}
 
-* **`key`：** （字串）要解析參考的索引鍵。 此`key`引數對應至`addReference`函式的`key`引數。
+* **`key`：** （字串）要解析參考的索引鍵。 此`key`引數對應至`key`函式的`addReference`引數。
 * **`retry`：** （數字）要使用的反複專案數。
 
 ##### 傳回 {#returns-resolvereference}
@@ -459,7 +459,7 @@ ContextHub.Store.JSONPStore擴充[ContextHub.Store.Core](#contexthub-store-core)
 
 #### queryService（重新載入） {#queryservice-reload}
 
-查詢遠端JSONP服務並快取回應。 如果自上次呼叫此函式以來的時間小於`config.service.ttl`的值，則不會呼叫服務，也不會變更快取的回應。 您可以選擇強制呼叫服務。 呼叫[init](#init-name-config)函式以初始化存放區時，已設定`config.service.ttl`屬性。
+查詢遠端JSONP服務並快取回應。 如果自上次呼叫此函式以來的時間小於`config.service.ttl`的值，則不會呼叫服務，也不會變更快取的回應。 您可以選擇強制呼叫服務。 呼叫`config.service.ttl`init[函式以初始化存放區時，已設定](#init-name-config)屬性。
 
 查詢完成時觸發就緒事件。 如果未設定JSONP服務URL，則函式不會執行任何動作。
 
@@ -634,8 +634,8 @@ ContextHub.Utils.Cookie.vanish([/^cq-authoring/, 'cq-scrollpos']);
 * **`value`：**&#x200B;包含Cookie值的字串。
 * **`options`：** （選擇性）物件，包含下列任何設定Cookie屬性的屬性：
    * `expires`：指定Cookie過期時間的`date`或`number`值。 日期值會指定絕對到期時間。 數字（以天為單位）會將到期時間設定為目前時間加上數字。 預設值為 `undefined`。
-   * `secure`：指定Cookie之`Secure`屬性的`boolean`值。 預設值為 `false`。
-   * `path`：要用作Cookie之`Path`屬性的`String`值。 預設值為 `undefined`。
+   * `secure`：指定Cookie之`boolean`屬性的`Secure`值。 預設值為 `false`。
+   * `path`：要用作Cookie之`String`屬性的`Path`值。 預設值為 `undefined`。
 
 ##### 傳回 {#returns-setitem-1}
 
@@ -658,8 +658,8 @@ ContextHub.Utils.Cookie.setItem("name", "mycookie", {
 
 ##### 參數 {#parameters-vanish}
 
-* **`filter`：**&#x200B;在呼叫[`getKeys`](#getkeys-filter)函式時要使用的`filter`引數。
-* **`options`：**&#x200B;在呼叫[`removeItem`](#removeitem-key-options)函式時要使用的`options`引數。
+* **`filter`：**&#x200B;在呼叫`filter`函式時要使用的[`getKeys`](#getkeys-filter)引數。
+* **`options`：**&#x200B;在呼叫`options`函式時要使用的[`removeItem`](#removeitem-key-options)引數。
 
 ##### 傳回 {#returns-vanish}
 
@@ -667,7 +667,7 @@ ContextHub.Utils.Cookie.setItem("name", "mycookie", {
 
 ## ContextHub.Utils.Eventing {#contexthub-utils-eventing}
 
-可讓您將函式繫結和解除繫結至ContextHub存放區事件。 使用存放區的[eventing](#eventing)屬性存取存放區的`ContextHub.Utils.Eventing`物件。
+可讓您將函式繫結和解除繫結至ContextHub存放區事件。 使用存放區的`ContextHub.Utils.Eventing`eventing[屬性存取存放區的](#eventing)物件。
 
 ### 函式(ContextHub.Utils.Eventing) {#functions-contexthub-utils-eventing}
 
@@ -677,8 +677,8 @@ ContextHub.Utils.Cookie.setItem("name", "mycookie", {
 
 ##### 參數 {#parameters-off}
 
-* **`name`：**&#x200B;您要解除繫結函式的事件[&#128279;](#contexthub-utils-eventing)的名稱。
-* **`selector`：**&#x200B;識別繫結的選擇器。 （請參閱[`on`](#on-name-handler-selector-triggerforpastevents)和[`once`](#once-name-handler-selector-triggerforpastevents)函式的`selector`引數）。
+* **`name`：**&#x200B;您要解除繫結函式的事件[的](#contexthub-utils-eventing)名稱。
+* **`selector`：**&#x200B;識別繫結的選擇器。 （請參閱`selector`和[`on`](#on-name-handler-selector-triggerforpastevents)函式的[`once`](#once-name-handler-selector-triggerforpastevents)引數）。
 
 ##### 傳回 {#returns-off}
 
@@ -690,7 +690,7 @@ ContextHub.Utils.Cookie.setItem("name", "mycookie", {
 
 ##### 參數 {#parameters-on}
 
-* **`name`：** （字串）您要繫結函式的事件[&#128279;](#contexthub-utils-eventing)的名稱。
+* **`name`：** （字串）您要繫結函式的事件[的](#contexthub-utils-eventing)名稱。
 * **`handler`：** （函式）要繫結至事件的函式。
 * **`selector`：** （字串）繫結的唯一識別碼。 如果要使用`off`函式移除繫結，則需要選取器識別繫結。
 * **`triggerForPastEvents`：** （布林值）指出是否應針對過去發生的事件執行處理常式。 `true`的值會呼叫過去事件的處理常式。 `false`的值會呼叫未來事件的處理常式。 預設值為 `true`。
@@ -730,7 +730,7 @@ ContextHub.Utils.Cookie.setItem("name", "mycookie", {
 
 ##### 參數 {#parameters-once}
 
-* **`name`：** （字串）您要繫結函式的事件[&#128279;](#contexthub-utils-eventing)的名稱。
+* **`name`：** （字串）您要繫結函式的事件[的](#contexthub-utils-eventing)名稱。
 * **`handler`：** （函式）要繫結至事件的函式。
 * **`selector`：** （字串）繫結的唯一識別碼。 如果要使用`off`函式移除繫結，則需要選取器識別繫結。
 * **`triggerForPastEvents`：** （布林值）指出是否應針對過去發生的事件執行處理常式。 `true`的值會呼叫過去事件的處理常式。 `false`的值會呼叫未來事件的處理常式。 預設值為 `true`。
@@ -1043,7 +1043,7 @@ ContextHub.Utils.JSON.tree.sanitizeKey(key)
 
 ##### 傳回 {#returns-setitem-2}
 
-包含`key`/ `value`配對的`tree`物件復本。
+包含`tree`/ `key`配對的`value`物件復本。
 
 ##### 範例 {#example-setitem-2}
 
@@ -1080,7 +1080,7 @@ myObject = ContextHub.Utils.JSON.tree.setItem(myObject, myKey, myValue);
 
 ##### 參數 {#parameters-getregisteredcandidates}
 
-* **`storeType`：** （字串）存放區型別的名稱。 檢視[`ContextHub.Utils.storeCandidates.registerStoreCandidate`](#contexthub-utils-storecandidates)函式的`storeType`引數。
+* **`storeType`：** （字串）存放區型別的名稱。 檢視`storeType`函式的[`ContextHub.Utils.storeCandidates.registerStoreCandidate`](#contexthub-utils-storecandidates)引數。
 
 ##### 傳回 {#returns-getregisteredcandidates}
 
@@ -1092,7 +1092,7 @@ myObject = ContextHub.Utils.JSON.tree.setItem(myObject, myKey, myValue);
 
 ##### 參數 {#parameters-getstorefromcandidates}
 
-* `storeType`： （字串）存放區候選的名稱。 檢視[`ContextHub.Utils.storeCandidates.registerStoreCandidate`](#registerstorecandidate-store-storetype-priority-applies)函式的`storeType`引數。
+* `storeType`： （字串）存放區候選的名稱。 檢視`storeType`函式的[`ContextHub.Utils.storeCandidates.registerStoreCandidate`](#registerstorecandidate-store-storetype-priority-applies)引數。
 
 ##### 傳回 {#returns-getstorefromcandidates}
 
@@ -1104,7 +1104,7 @@ myObject = ContextHub.Utils.JSON.tree.setItem(myObject, myKey, myValue);
 
 ##### 傳回 {#returns-getsupportedstoretypes}
 
-字串值的陣列，其中每個字串是用來登入存放區候選的存放區型別。 檢視[`ContextHub.Utils.storeCandidates.registerStoreCandidate`](#contexthub-utils-storecandidates)函式的`storeType`引數。
+字串值的陣列，其中每個字串是用來登入存放區候選的存放區型別。 檢視`storeType`函式的[`ContextHub.Utils.storeCandidates.registerStoreCandidate`](#contexthub-utils-storecandidates)引數。
 
 #### registerStoreCandidate(store， storeType， priority， applies) {#registerstorecandidate-store-storetype-priority-applies}
 

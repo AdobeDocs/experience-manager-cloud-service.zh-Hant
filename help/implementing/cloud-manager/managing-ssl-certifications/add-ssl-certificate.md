@@ -4,8 +4,8 @@ description: 瞭解如何使用Cloud Manager的自助服務工具新增您自己
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1021'
 ht-degree: 6%
@@ -31,7 +31,7 @@ ht-degree: 6%
 ## 先決條件 {#prerequisites}
 
 * 使用者必須是&#x200B;**企業所有者**&#x200B;或&#x200B;**部署管理員**&#x200B;角色的成員才能新增SSL憑證。
-* 如果您正在安裝自己的憑證，請參閱[管理SSL憑證簡介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md#requirements)中的&#x200B;**憑證需求**。
+* 如果您正在安裝自己的憑證，請參閱&#x200B;**管理SSL憑證簡介**&#x200B;中的[憑證需求](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md#requirements)。
 
 ## 選擇要新增的SSL憑證 {#which-ssl-to-add}
 
@@ -59,7 +59,7 @@ ht-degree: 6%
 
 **若要新增Adobe Managed (DV) SSL憑證：**
 
-1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager，然後選取適當的程式。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager，然後選取適當的方案。
 1. 在「**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**」控制台中，選取程式。
 1. 在頁面的左上角，按一下![顯示功能表圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg)以顯示側邊功能表。
 
@@ -67,7 +67,7 @@ ht-degree: 6%
 
    ![正在新增SSL憑證](/help/implementing/cloud-manager/assets/ssl/ssl-cert-add.png)
 
-1. 在[SSL憑證]頁面的右上角附近，按一下[新增SSL憑證]。**&#x200B;**
+1. 在[SSL憑證]頁面的右上角附近，按一下[新增SSL憑證]。****
 
 1. 在&#x200B;**新增SSL憑證**&#x200B;對話方塊中，根據[您的特定使用案例](#which-ssl-to-add)，選取&#x200B;**Adobe Managed (DV)**。
 
@@ -99,7 +99,7 @@ ht-degree: 6%
 
 **若要新增客戶管理的(OV/EV) SSL憑證：**
 
-1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager，然後選取適當的程式。
+1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager，然後選取適當的方案。
 
 1. 在「**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**」控制台中，選取程式。
 
@@ -109,11 +109,11 @@ ht-degree: 6%
 
    ![正在新增SSL憑證](/help/implementing/cloud-manager/assets/ssl/ssl-cert-add.png)
 
-1. 在[SSL憑證]頁面的右上角附近，按一下[新增SSL憑證]。**&#x200B;**
+1. 在[SSL憑證]頁面的右上角附近，按一下[新增SSL憑證]。****
 
 1. 在&#x200B;**新增SSL憑證**&#x200B;對話方塊中，根據[您的特定使用案例](#which-ssl-to-add)，選取&#x200B;**客戶管理(OV/EV)**。
 
-1. 在&#x200B;**憑證名稱**&#x200B;欄位中，輸入憑證的名稱。
+1. 在&#x200B;**憑證名稱**欄位中，輸入憑證的名稱。
 此欄位僅供參考，可以是任何有助於您輕鬆參考SSL憑證的名稱。
 
 1. 在&#x200B;**憑證**、**私密金鑰**&#x200B;和&#x200B;**憑證鏈**&#x200B;欄位中，複製OV或EV SSL憑證的必要值，並將其貼到對話方塊中各自的欄位中。
@@ -126,7 +126,7 @@ ht-degree: 6%
 
    >[!NOTE]
    >
-   >* 如果您在[新增自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)時選取&#x200B;**客戶管理的憑證**，會在&#x200B;***之後驗證網域***&#x200B;新增並儲存客戶管理的(OV/EV) SSL憑證。 另請參閱[檢查自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#how-to)的狀態。
+   >* 如果您在&#x200B;**新增自訂網域名稱**&#x200B;時選取[客戶管理的憑證](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)，會在&#x200B;***之後驗證網域***&#x200B;新增並儲存客戶管理的(OV/EV) SSL憑證。 另請參閱[檢查自訂網域名稱](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#how-to)的狀態。
 
    成功發行SSL憑證後，**SSL憑證**&#x200B;表格中會顯示綠色的驗證核取記號。
 

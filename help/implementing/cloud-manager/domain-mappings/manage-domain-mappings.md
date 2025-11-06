@@ -3,9 +3,9 @@ title: 管理網域對應
 description: 瞭解如何使用Cloud Manager編輯和更新，或刪除Edge Delivery網站或Cloud Manager環境的CDN設定。
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 exl-id: 2ec16c91-0195-4732-a26d-ac223e10afb9
-source-git-commit: c1040572085183f0ddd2a12f159f74e399c12df3
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1073'
 ht-degree: 8%
@@ -47,7 +47,7 @@ ht-degree: 8%
 
 ## 從環境頁面編輯CDN設定
 
-從&#x200B;**環境**&#x200B;頁面編輯CDN設定的步驟幾乎與從網域對應頁面[&#128279;](#edit-cdn)編輯CDN設定的步驟相同，但進入點不同。
+從&#x200B;**環境**&#x200B;頁面編輯CDN設定的步驟幾乎與從網域對應頁面[編輯CDN設定的步驟](#edit-cdn)相同，但進入點不同。
 
 **若要從環境頁面編輯CDN設定：**
 

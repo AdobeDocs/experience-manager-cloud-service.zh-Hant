@@ -4,8 +4,8 @@ description: 在 AEM Headless 開發人員歷程的這一部分，了解 AEM Hea
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '3068'
 ht-degree: 100%
@@ -148,7 +148,7 @@ AEM 支援 CMS 的全 Headless 模型和傳統的全堆疊或 Headful 模型。�
 
 明確定義專案的範圍很重要。範圍會告知接受標準，並讓您設立完成的定義。
 
-您必須問的第一個問題是「我想透過 AEM Headless 實現什麼目標？」一般來說，答案應該是您擁有或將來將擁有您使用自己的開發工具而非 AEM 建置的體驗應用程式。此體驗應用程式可以是行動應用程式、網站或任何其他面向取用內容之使用者的體驗應用程式。使用 AEM Headless 的目標是使用最先進的 API 為您的體驗應用程式提供在 AEM 中建立、儲存和管理的內容，這些 API 會直接從您的體驗應用程式呼叫 AEM Headless 以擷取內容或甚至是全 CRUD 內容。如果這不是您想要的，您可能想要[返回 AEM 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=zh-Hant)尋找符合您目標的內容。
+您必須問的第一個問題是「我想透過 AEM Headless 實現什麼目標？」一般來說，答案應該是您擁有或將來將擁有您使用自己的開發工具而非 AEM 建置的體驗應用程式。此體驗應用程式可以是行動應用程式、網站或任何其他面向取用內容之使用者的體驗應用程式。使用 AEM Headless 的目標是使用最先進的 API 為您的體驗應用程式提供在 AEM 中建立、儲存和管理的內容，這些 API 會直接從您的體驗應用程式呼叫 AEM Headless 以擷取內容或甚至是全 CRUD 內容。如果這不是您想要的，您可能想要[返回 AEM 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html)尋找符合您目標的內容。
 
 ### 角色和責任 {#roles-responsibilities}
 
@@ -161,7 +161,7 @@ AEM 支援 CMS 的全 Headless 模型和傳統的全堆疊或 Headful 模型。�
 
 #### 管理員 {#administrator}
 
-管理員負責系統的基本設定和配置。例如，管理員在 Adobe 使用者管理系統 (稱為 Identity Management System (IMS)) 中設定您的組織。Adobe 在 IMS 中建立您的組織後，管理員是組織中第一個收到來自 Adobe 的電子郵件邀請的使用者。管理員可以登入 IMS 並新增其他角色的使用者。
+管理員負責系統的基本設定和配置。例如，管理員在 Adobe 使用者管理系統 (稱為 Identity Management System (IMS)) 中設定您的組織。Adobe 在 IMS 中建立您的組織後，管理員是組織中第一個收到來自 Adobe 的電子郵件邀請的使用者。管理員可以登入 IMS 並新增其他人物誌的使用者。
 
 管理員設定好使用者後，他們將被授予存取所有 AEM 資源的權限，以完成他們的份內工作，使用 AEM Headless 傳遞體驗應用程式。
 
@@ -175,7 +175,7 @@ AEM 支援 CMS 的全 Headless 模型和傳統的全堆疊或 Headful 模型。�
 
 #### 翻譯計畫 {#translation}
 
-在專案一開始就計畫翻譯。將「翻譯專家」視為一個獨立的角色，其職責是定義哪些內容應該翻譯，哪些內容不應該翻譯，以及哪些翻譯內容可以由區域或本機內容作者修改。
+在專案一開始就計畫翻譯。將「翻譯專家」視為一個獨立的人物誌，其職責是定義哪些內容應該翻譯，哪些內容不應該翻譯，以及哪些翻譯內容可以由區域或本機內容作者修改。
 
 根據您需要的內容翻譯擬訂計畫。
 
@@ -285,9 +285,9 @@ GraphQL 可作為 AEM 和 Headless 內容取用者之間的「黏著劑」。Gra
 * [ AEM Headless 翻譯歷程](/help/journey-headless/translation/overview.md) - 此文件歷程讓您對 Headless 技術、AEM 如何提供 Headless 內容以及如何翻譯它，有廣泛的了解。
 * [Adobe Experience Manager as a Cloud Service 架構簡介](/help/overview/architecture.md) - 了解 AEM as a Cloud Service 的架構
 * [AEM as a Headless CMS 簡介](/help/headless/introduction.md)
-* [AEM 開發人員入口網站](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hant)
-* [AEM Headless 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=zh-Hant) - 利用這些實作教學課程來探索如何運用各種不同方式使用 AEM 將內容傳遞到 Headless 端點，並選擇適合您的方式。
-* [使用 GraphQL API 進行 Headless 內容管理](https://experienceleague.adobe.com/zh-hant?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;Launch=ExperienceManager-D-1-2020.1.headless#courses) - 按照本課程說明對 AEM 中實作的 GraphQL API 有概略的了解。必須透過 AdobeID 進行驗證。
+* [AEM 開發人員入口網站](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* [AEM Headless 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - 利用這些實作教學課程來探索如何運用各種不同方式使用 AEM 將內容傳遞到 Headless 端點，並選擇適合您的方式。
+* [使用 GraphQL API 進行 Headless 內容管理](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens&Launch=ExperienceManager-D-1-2020.1.headless#courses) - 按照本課程說明對 AEM 中實作的 GraphQL API 有概略的了解。必須透過 AdobeID 進行驗證。
 * [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) - 此 GitHub 專案包含以 AEM GraphQL API 為重點的範例應用程式。
 * [製作概念](/help/sites-cloud/authoring/author-publish.md) - 關於 AEM 製作環境的技術文件，包含製作-發佈設定的詳細說明。
 * [發佈頁面](/help/sites-cloud/authoring/sites-console/publishing-pages.md) - 關於在 AEM 發佈內容的技術文件。

@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Image Sets
 role: User
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2145'
 ht-degree: 4%
@@ -61,7 +61,7 @@ ht-degree: 4%
 
    在「影像集」中，使用者按一下「影像集檢視器」中的縮圖影像。
 
-   若要在Assets中建立影像集，請選取&#x200B;**[!UICONTROL 建立]** > **[!UICONTROL 影像集]**。 然後，新增影像並按一下[儲存]。**&#x200B;**
+   若要在Assets中建立影像集，請選取&#x200B;**[!UICONTROL 建立]** > **[!UICONTROL 影像集]**。 然後，新增影像並按一下[儲存]。****
 
    請參閱[準備影像集資產以上傳及上傳您的檔案](#uploading-assets-in-image-sets)。
 
@@ -158,7 +158,7 @@ ht-degree: 4%
 
    ![6_5_imageset-creatingnewset](assets/6_5_imageset-creatingnewset.png)
 
-1. 執行下列任一項：
+1. 執行下列其中一項：
 
    * 在「影像集編輯器」頁面的左上角附近，選取&#x200B;**[!UICONTROL 新增資產]**。
 
@@ -247,6 +247,7 @@ ht-degree: 4%
      >[!NOTE]
      >
      >如果您刪除Experience Manager用於縮圖的影像，改為其他影像，仍會顯示原始資產。
+
    * 若要刪除資產，請選取該資產，然後選取&#x200B;**[!UICONTROL 刪除資產]**。
    * 若要套用預設集，在頁面右上角附近，選取&#x200B;**[!UICONTROL 預設集]**，然後選取檢視器預設集。
    * 若要新增或變更縮圖，請選取資產右側旁的縮圖圖示。 導覽至新的縮圖或色票資產，選取它，然後選取&#x200B;**[!UICONTROL 選取]**。

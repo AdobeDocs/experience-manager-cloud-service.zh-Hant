@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: df92b91e-f3b0-4a08-bd40-e99edc9a50a5
-source-git-commit: 5b5b44f8dffc01a75eda464cd7759cf03028c2c6
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2184'
 ht-degree: 0%
@@ -86,11 +86,11 @@ ht-degree: 0%
 
 在此範例中，在按一下按鈕時就會進行`personaldetails`面板的驗證。 如果在面板中未偵測到任何錯誤，則按一下按鈕時，另一個面板（`feedback`面板）會變成可見。
 
-讓我們為`Next`按鈕建立規則，以驗證`personaldetails`面板，並讓使用者按一下`Next`按鈕時顯示`feedback`面板。
+讓我們為`Next`按鈕建立規則，以驗證`personaldetails`面板，並讓使用者按一下`feedback`按鈕時顯示`Next`面板。
 
 ![設定屬性](/help/forms/assets/custom-function-set-property.png)
 
-請參閱下圖以示範，按一下`Next`按鈕後，`personaldetails`面板在哪裡驗證。 如果`personaldetails`中的所有欄位都已驗證，`feedback`面板就會顯示出來。
+請參閱下圖以示範，按一下`personaldetails`按鈕後，`Next`面板在哪裡驗證。 如果`personaldetails`中的所有欄位都已驗證，`feedback`面板就會顯示出來。
 
 ![設定屬性表單預覽](/help/forms/assets/set-property-form-preview.png)
 
@@ -165,7 +165,7 @@ ht-degree: 0%
 >
 > 如果未在`reset()`函式中傳遞引數，則會驗證表單。
 
-在此範例中，按一下`Clear`按鈕時，`personaldetails`面板會重設。 下一步是為`Clear`按鈕建立規則，以在按鈕點選時重設面板。
+在此範例中，按一下`personaldetails`按鈕時，`Clear`面板會重設。 下一步是為`Clear`按鈕建立規則，以在按鈕點選時重設面板。
 
 ![清除按鈕](/help/forms/assets/custom-function-reset-field.png)
 
@@ -222,6 +222,7 @@ ht-degree: 0%
 
 下列程式碼行：
 `globals.functions.submitForm(globals.functions.exportData(), false);`用於在操作後提交表單資料。
+
 * 第一個引數是要提交的資料。
 * 第二個引數代表是否要在提交前驗證表單。 它是`optional`，預設為`true`。
 * 第三個引數是提交的`contentType`，也是選擇性的，預設值為`multipart/form-data`。 其他值可以是`application/json`和`application/x-www-form-urlencoded`。
@@ -461,13 +462,13 @@ function testImportData(globals)
 
 >[!NOTE]
 >
-> 如果您想要專注在相對於`email`欄位的下一個或上一個欄位，可以使用選用的`$focusOption`引數。
+> 如果您想要專注在相對於`$focusOption`欄位的下一個或上一個欄位，可以使用選用的`email`引數。
 
 ## 使用`dispatchEvent`屬性新增或刪除可重複的面板
 
-讓我們瞭解自訂函式如何在`Booking Form`的協助下，使用`dispatchEvent`屬性使用欄位和全域物件來新增或刪除可重複的面板。
+讓我們瞭解自訂函式如何在`dispatchEvent`的協助下，使用`Booking Form`屬性使用欄位和全域物件來新增或刪除可重複的面板。
 
-新增下列程式碼行（如[create-custom-function](/help/forms/custom-function-core-component-create-function.md)區段中所述），以在使用`dispatchEvent`屬性按一下`Add Traveler`按鈕時新增面板：
+新增下列程式碼行（如[create-custom-function](/help/forms/custom-function-core-component-create-function.md)區段中所述），以在使用`Add Traveler`屬性按一下`dispatchEvent`按鈕時新增面板：
 
 ```javascript
 /**
@@ -490,7 +491,7 @@ function testAddInstance(globals)
 
 ![新增面板](/help/forms/assets/custom-function-add-panel.gif)
 
-同樣地，新增下列程式碼行（如[create-custom-function](#create-custom-function)區段中所述），以便在使用`dispatchEvent`屬性按一下`Delete Traveler`按鈕時刪除面板：
+同樣地，新增下列程式碼行（如[create-custom-function](#create-custom-function)區段中所述），以便在使用`Delete Traveler`屬性按一下`dispatchEvent`按鈕時刪除面板：
 
 ```javascript
 /**
@@ -528,9 +529,9 @@ function testRemoveInstance(globals)
 * 如果自訂提交處理常式無法在現有AEM專案或表單中按預期執行，請執行以下步驟：
    * 請確定[核心元件版本已更新至3.0.18和更新版本](https://github.com/adobe/aem-core-forms-components)。 不過，對於現有的AEM專案和表單，還有其他要遵循的步驟：
 
-   * 對於AEM專案，使用者應使用`submitForm()`取代`submitForm('custom:submitSuccess', 'custom:submitError')`的所有執行個體，並透過Cloud Manager管道部署專案。
+   * 對於AEM專案，使用者應使用`submitForm('custom:submitSuccess', 'custom:submitError')`取代`submitForm()`的所有執行個體，並透過Cloud Manager管道部署專案。
 
-   * 針對現有表單，如果自訂提交處理常式無法正常運作，使用者需要使用規則編輯器在&#x200B;**提交**&#x200B;按鈕上開啟並儲存`submitForm`規則。 此動作將表單中`submitForm('custom:submitSuccess', 'custom:submitError')`的現有規則取代為`submitForm()`。
+   * 針對現有表單，如果自訂提交處理常式無法正常運作，使用者需要使用規則編輯器在`submitForm`提交&#x200B;**按鈕上開啟並儲存**&#x200B;規則。 此動作將表單中`submitForm('custom:submitSuccess', 'custom:submitError')`的現有規則取代為`submitForm()`。
 
 ## 另請參閱
 

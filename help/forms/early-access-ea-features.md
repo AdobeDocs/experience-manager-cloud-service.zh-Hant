@@ -6,9 +6,9 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: ed51ff8df6d1e387960e8580c6dfb543a09ef8fa
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '3076'
+source-wordcount: '3068'
 ht-degree: 19%
 
 ---
@@ -177,7 +177,12 @@ AEM Forms HTML5 Forms可讓您以HTML5格式轉譯現有的XFA (XML Forms Archit
 
 使用AEM Forms CLI工具加速AEM Forms Edge Delivery Services開發。 這個命令列介面可讓您立即產生啟動自訂元件開發所需的程式碼和接線 — 沒有樣板，也不麻煩。
 
->[!VIDEO]（<https://video.tv.adobe.com/v/3470514/aem-forms>支架 — aem-custom component generator-aem-forms cli-aem-forms custom component-aem-forms開發工具）
+<!--
+not sure what's going on with this video link. cleaned up version below
+>[!VIDEO](<https://video.tv.adobe.com/v/3470514/aem-forms> scaffolding-aem-custom component generator-aem-forms cli-aem-forms custom component-aem-forms development tool)
+-->
+
+>[!VIDEO](https://video.tv.adobe.com/v/3470514/)
 
 **主要功能：**
 

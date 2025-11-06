@@ -1,14 +1,14 @@
 ---
-title: 如何針對AEM Formsas a Cloud Service環境的安裝和設定問題進行疑難排解？
-description: 疑難排解AEM Formsas a Cloud Service環境的安裝和設定。
+title: 如何針對AEM Forms as a Cloud Service環境的安裝和設定問題進行疑難排解？
+description: 疑難排解AEM Forms as a Cloud Service環境的安裝和設定。
 contentOwner: khsingh
 feature: Adaptive Forms
 role: User
 exl-id: 249ec8f2-4176-428a-bfcf-80b381ec7263
-source-git-commit: 0b693cb51a96011235fa87a5899426c6b0c2509a
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '213'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -30,7 +30,8 @@ ht-degree: 0%
 1. 選取&#x200B;**[!UICONTROL Forms]**&#x200B;選項並按一下&#x200B;**[!UICONTROL 儲存]**。
 
    ![選取Forms選項](assets/installation-configuration-select-forms-option.png)
-1. [建立](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=zh-Hant#how-to-use)和[執行](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=zh-Hant)生產和非生產管道。
+
+1. [建立](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#how-to-use)和[執行](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)生產和非生產管道。
 
 建置和部署管道後，**[!UICONTROL 導覽]**&#x200B;頁面上的&#x200B;**[!UICONTROL Forms]**&#x200B;選項。
 
@@ -59,7 +60,7 @@ If the profile exists and issues still persist, contact Adobe Support. -->
 
 若要解決此問題，請執行以下步驟：
 
-1. 啟動AEM，並等待它完全啟動，直到所有套件組合都啟動為止。
+1. 啟動AEM，並等待它完全啟動，直到所有套件組合都已啟動。
 1. 停止AEM (Ctrl + C)。
 1. 將Forms `.far`檔案放在安裝資料夾中。
 1. 重新啟動AEM伺服器。

@@ -3,15 +3,15 @@ title: 新增Edge Delivery管道
 description: 瞭解如何新增Edge Delivery管道以建置計畫碼並將其部署到生產環境。
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 hide: false
 index: false
 hidefromtoc: false
 exl-id: 5ad342fa-dd71-4105-a9cb-2d999d402780
-source-git-commit: 9ad50747b46b75c33cb5b034e8b8e41d5079e967
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '613'
-ht-degree: 10%
+ht-degree: 14%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 10%
 >
 >* 已建立包含一個Edge Delivery Services網站和一個對應網域的計畫。 否則，稱為「**新增Edge Delivery管道**」的選項在使用者介面中會顯示為停用，工具提示會說明缺少的需求。 請參閱[在Cloud Manager中建立Edge Delivery網站](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
 >* Git存放庫至少有一個分支。 請參閱[在Cloud Manager中管理存放庫](/help/implementing/cloud-manager/managing-code/managing-repositories.md)。
->* 生產和中繼環境隨即建立。 請參閱[&#x200B; CI/CD管道簡介](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)。
+>* 生產和中繼環境隨即建立。 請參閱[ CI/CD管道簡介](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)。
 
 <!-- CMGR‑69680 -->
 
@@ -44,10 +44,10 @@ ht-degree: 10%
 **若要新增Edge Delivery管道：**
 
 1. 在[experience.adobe.com](https://experience.adobe.com)登入Cloud Manager。
-1. 在&#x200B;**快速存取**&#x200B;區段中，按一下&#x200B;**Experience Manager**。
+1. 在「**快速存取**」區段中，按一下「**Experience Manager**」。
 1. 在左側面板中，按一下「**Cloud Manager**」。
 1. 選取您想要的組織。
-1. 在&#x200B;**我的程式**&#x200B;主控台上，按一下程式。
+1. 在「**我的程式**」控制台中，按一下某個程式。
 
    在Cloud Manager中![我的方案頁面](/help/implementing/cloud-manager/configuring-pipelines/assets/my-programs.png)
 

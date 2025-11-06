@@ -3,9 +3,9 @@ title: SPA 藍圖
 description: 本檔案說明任何SPA框架都應該履行的一般且獨立於框架的合約，以便您在AEM中實作可編輯的SPA元件。
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 index: false
-source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2022'
 ht-degree: 1%
@@ -71,7 +71,7 @@ ht-degree: 1%
 
 SPA元件必須和頁面模型同步，並相應地隨其內容的任何變更而更新。 使用動態元件的陣列必須用來按照提供的頁面模型結構即時例項化元件。
 
-### 中繼欄位 {#meta-fields}
+### Meta欄位 {#meta-fields}
 
 頁面模型使用JSON模型匯出程式，其本身是以[Sling模型](https://sling.apache.org/documentation/bundles/models.html) API為基礎。 可匯出的Sling模型會顯示下列欄位清單，以啟用基礎程式庫來解譯資料模型：
 
@@ -83,7 +83,7 @@ SPA元件必須和頁面模型同步，並相應地隨其內容的任何變更�
 * `:itemsOrder`：子項的已排序清單。 JSON對應物件無法保證其欄位的順序。 透過同時使用對應和目前的陣列，API的取用者便擁有兩種結構的優點
 * `:path`：專案的內容路徑（存在於代表頁面的專案上）
 
-另請參閱[AEM Content Services快速入門](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=zh-Hant)。
+另請參閱[AEM Content Services快速入門](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)。
 
 ### 框架特定模組 {#framework-specific-module}
 

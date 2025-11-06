@@ -3,10 +3,10 @@ title: Adobe Experience Manager as a Cloud Service的覆蓋圖
 description: AEM as a Cloud Service使用覆蓋原則，可讓您擴充和自訂主控台和其他功能
 exl-id: 24bdb1a9-6d77-43c7-a75e-28e6e0fd7608
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '383'
 ht-degree: 2%
 
 ---
@@ -23,9 +23,9 @@ Adobe Experience Manager as a Cloud Service使用覆蓋原則，可讓您擴充�
 
    * 方法
 
-      * 在`/apps`下重新建構適當的`/libs`結構。
+      * 在`/libs`下重新建構適當的`/apps`結構。
 
-        此重新建構不需要1:1復本，因為[Sling資源合併器](/help/implementing/developing/introduction/sling-resource-merger.md)是用來互動參照所需的原始定義。 Sling Resource Merger提供的服務可存取及合併具有不同（差異）機制的資源。
+        此重新建構不需要複製1:1，因為[Sling資源合併器](/help/implementing/developing/introduction/sling-resource-merger.md)是用來互動參照所需的原始定義。 Sling Resource Merger提供的服務可存取及合併具有不同（差異）機制的資源。
 
       * 在`/apps`底下，進行變更。
 
@@ -47,6 +47,6 @@ Adobe Experience Manager as a Cloud Service使用覆蓋原則，可讓您擴充�
 
 ## 搜尋路徑 {#search-paths}
 
-AEM使用搜尋路徑來尋找資源，先搜尋（依預設） `/apps`分支，然後搜尋`/libs`分支。 此機制表示您在`/apps` （以及其中定義的自訂）中的覆蓋有優先順序。
+AEM使用搜尋路徑來尋找資源，會先搜尋（預設情況下）「`/apps`」分支，然後搜尋`/libs`分支。 此機制表示您在`/apps` （以及其中定義的自訂）中的覆蓋有優先順序。
 
 對於覆蓋，傳送的資源是擷取的資源和屬性的彙總，取決於OSGi設定中定義的搜尋路徑。

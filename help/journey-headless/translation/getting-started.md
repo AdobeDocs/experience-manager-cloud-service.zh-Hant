@@ -4,8 +4,8 @@ description: 了解如何組織 Headless 內容以及 AEM 翻譯工具的運作�
 exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: 66cd28d43c56f2e8fc44674175aa9b70b7a72ed1
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1409'
 ht-degree: 95%
@@ -63,7 +63,7 @@ AEM 的內容，無論是 Headless 網頁還是傳統網頁，都是由其結構
 >
 >在 Headless 專案一開始就為翻譯進行規劃。儘早與專案經理和內容架構師密切合作。
 >
->可能需要一位具獨立角色的國際化專案經理，其職責是定義哪些內容應該翻譯，哪些內容不應該翻譯，以及哪些已翻譯內容可以由區域或本地內容製作者修改。
+>可能需要一位具獨立人物誌的國際化專案經理，其職責是定義哪些內容應該翻譯，哪些內容不應該翻譯，以及哪些已翻譯內容可以由區域或本地內容製作者修改。
 
 ## AEM 如何儲存 Headless 內容 {#headless-content-in-aem}
 
@@ -84,7 +84,7 @@ AEM 的內容，無論是 Headless 網頁還是傳統網頁，都是由其結構
 1. 導覽至內容片段主控台，並選取內容片段模式的「 」標籤。
 1. 內容片段模型通常儲存在資料夾結構中。選取您的專案資料夾。
 1. 接著列出模型。選取模型並開啟編輯器。
-1. **內容片段模型編輯器**&#x200B;開啟。
+1. **內容片段模型編輯器**開啟。
    ![內容片段模型編輯器](/help/sites-cloud/administering/content-fragments/assets/cf-cfmodels-field-properties.png)
 
    * 左側面板會列出可能的資料型別。
@@ -190,7 +190,7 @@ AEM 的內容，無論是 Headless 網頁還是傳統網頁，都是由其結構
 
 * [AEM 基本處理](/help/sites-cloud/authoring/basic-handling.md) - 了解 AEM UI 的基本知識，以便能夠輕鬆導覽和執行基本任務，例如尋找您的內容。
 * [識別要翻譯的內容](/help/sites-cloud/administering/translation/rules.md) - 了解翻譯規則如何識別需要翻譯的內容。
-* [設定翻譯整合框架](/help/sites-cloud/administering/translation/integration-framework.md) - 了解如何設定翻譯整合框架以與協力廠商翻譯服務整合。
+* [設定翻譯整合框架](/help/sites-cloud/administering/translation/integration-framework.md) - 了解如何設定翻譯整合框架以與第三方翻譯服務整合。
 * [管理翻譯專案](/help/sites-cloud/administering/translation/managing-projects.md) - 了解如何在 AEM 中建立和管理機器和人工翻譯專案。
 * [AEM as a Headless CMS 簡介](/help/headless/introduction.md)
-* [AEM 中的 Headless 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=zh-Hant)
+* [AEM 中的 Headless 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)

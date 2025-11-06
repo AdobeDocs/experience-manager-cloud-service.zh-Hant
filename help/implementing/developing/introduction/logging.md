@@ -3,8 +3,8 @@ title: AEM as a Cloud Service的記錄
 description: 瞭解如何使用AEM as a Cloud Service的記錄來設定中央記錄服務的全域引數、個別服務的特定設定，或如何請求資料記錄。
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
-role: Admin, Architect, Developer
-source-git-commit: 5c32a088cf7e334ba6497a595b5176e5389ce9ed
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '2556'
 ht-degree: 10%
@@ -158,6 +158,7 @@ AEM Java記錄檔會定義為OSGi設定，因此可使用執行模式資料夾�
 變更其他LogManager OSGi設定屬性可能會導致AEM as a Cloud Service中的可用性問題。
 
 如上一節所述，為確保有效監控客戶環境：
+
 * AEM的預設記錄設定（Apache Sling記錄設定）的記錄層級不能從其預設值「INFO」修改。
 * 對於個別產品程式碼套件（使用「Apache Sling記錄記錄器設定」OSGi設定處理站的執行個體），將記錄層級設定為DEBUG是可以接受的，但請謹慎使用，以防止效能降低，並在不再需要時還原為INFO。
 * 調整客戶開發程式碼的記錄層級是可接受的。
@@ -165,8 +166,10 @@ AEM Java記錄檔會定義為OSGi設定，因此可使用執行模式資料夾�
 * 記錄輸出必須保持導向到預設檔案&quot;logs/error.log&quot;。
 
 為此，不得對以下OSGi屬性進行變更：
+
 * **Apache Sling 記錄設定** (PID: `org.apache.sling.commons.log.LogManager`)：*所有屬性*
 * **Apache Sling 記錄記錄器設定** (工廠 PID: `org.apache.sling.commons.log.LogManager.factory.config`)：
+
    * `org.apache.sling.commons.log.file`
    * `org.apache.sling.commons.log.pattern`
 
@@ -210,7 +213,7 @@ AEM Java記錄檔會定義為OSGi設定，因此可使用執行模式資料夾�
 
 ## AEM HTTP要求記錄 {#aem-http-request-logging}
 
-AEM as a Cloud Service的HTTP請求記錄可讓您依時間順序深入分析向AEM提出的HTTP請求及其HTTP回應。 此記錄有助於瞭解向AEM發出的HTTP請求，以及這些請求被處理和回應的順序。
+AEM as a Cloud Service的HTTP請求記錄可讓insight依時間順序進入對AEM提出的HTTP請求及其HTTP回應。 此記錄有助於瞭解向AEM發出的HTTP請求，以及這些請求被處理和回應的順序。
 
 瞭解此記錄的關鍵在於透過其ID （以方括弧中的數值表示）對應HTTP請求和回應配對。 通常請求及其對應的回應會在記錄中於其他HTTP請求和回應之間插入。
 

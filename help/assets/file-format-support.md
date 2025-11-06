@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management, Renditions
 role: User, Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 0129bf13301a208b777b61f65623222cdf2b4b18
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1082'
 ht-degree: 9%
@@ -28,7 +28,7 @@ ht-degree: 9%
 
 下列圖例說明每種格式的支援等級。
 
-| 支援等級 | 說明 |
+| 支援層級 | 說明 |
 | ------------- | --------------------------- |
 | ✓ | 支援 |
 | * | 請參閱表格下方的備註 |
@@ -37,8 +37,8 @@ ht-degree: 9%
 >[!IMPORTANT]
 >
 >[!DNL Adobe Experience Manager Assets]僅支援本文列出的檔案格式。
->&#x200B;>有些功能似乎可以搭配其他格式使用，但這些格式並非正式支援。 結果可能不一致，且功能可能無法如預期運作。
->&#x200B;>為了確保一致且可靠的結果，請僅使用支援的格式。
+>有些功能似乎可以搭配其他格式使用，但這些格式並非正式支援。 結果可能不一致，且功能可能無法如預期運作。
+>為了確保一致且可靠的結果，請僅使用支援的格式。
 
 ## Adobe格式 {#adobe-formats}
 

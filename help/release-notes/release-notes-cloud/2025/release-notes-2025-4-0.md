@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.4.0 版�
 feature: Release Information
 role: Admin
 exl-id: 48e09824-5c67-49d8-8896-358d679649fc
-source-git-commit: 0664e5dc4a7619a52cd28c171a44ba02c592ea3d
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1828'
 ht-degree: 97%
@@ -37,7 +37,7 @@ ht-degree: 97%
 
 請觀看 2025 年 4 月發行概觀影片，以了解 2025.4.0 版本新增功能摘要：
 
->[!VIDEO](https://video.tv.adobe.com/v/3464013?quality=12&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3463991?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -164,12 +164,14 @@ CDN 規則現在可以針對包括封鎖流量和重新導向在內的使用案�
 為確保能有效監視客戶環境，AEM Java 記錄必須維持一致的格式，且不應被自訂設定覆寫。記錄輸出必須維持導向預設檔案。針對 AEM 產品程式碼，必須保留預設記錄等級。不過，可以針對客戶開發的程式碼調整記錄等級。
 
 為此，不應變更以下 OSGi 屬性：
+
 * **Apache Sling 記錄設定** (PID: `org.apache.sling.commons.log.LogManager`)：*所有屬性*
 * **Apache Sling 記錄記錄器設定** (工廠 PID: `org.apache.sling.commons.log.LogManager.factory.config`)：
    * `org.apache.sling.commons.log.file`
    * `org.apache.sling.commons.log.pattern`
 
 5 月中旬，AEM 將強制執行一項原則，屆時會忽略對這些屬性的任何自訂修改。請檢閱並從而調整您的下游流程。舉例來說，若您使用記錄轉送功能：
+
 * 如果您的記錄目標需要自訂 (非預設) 記錄格式，則可能需要更新您的攝取規則。
 * 若記錄等級的變更會使記錄的詳細程度降低，請注意預設的記錄等級可能會導致記錄量顯著增加。
 

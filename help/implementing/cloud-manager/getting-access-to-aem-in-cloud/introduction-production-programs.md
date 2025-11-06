@@ -4,8 +4,8 @@ description: 了解什麼是生產計畫以及如何設定您的計畫的建議�
 exl-id: bb8d4a5a-b26a-4718-9327-149fedb87e6a
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
-source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 83%
@@ -15,13 +15,13 @@ ht-degree: 83%
 
 # 生產計畫簡介 {#production-programs}
 
-生產計畫適用於準備開始編寫、構建和測試程式碼的團隊，目標是部署它以託管實時流量。
+生產程序適用於準備開始編寫、構建和測試程式碼的團隊，目標是部署它以託管實時流量。
 
 在您[建立您的生產計畫](creating-production-programs.md)之後，[計畫建立精靈](using-the-wizard.md)會根據使用者建立計畫的目標，引導使用者進行選擇。
 
 ## 計畫建立選項 {#program-creation-options}
 
-您與 Adobe 的合約協議定義了您的特定組織在建立生產計畫時可用的解決方案的數量和類型。您可以控制如何將可用解決方案映射到 Cloud Manager 計畫。
+您與 Adobe 的合約協議定義了您的特定組織在建立生產程式時可用的解決方案的數量和類型。您可以控制如何將可用解決方案映射到 Cloud Manager 計畫。
 
 下表描述了可用解決方案的常見場景以及基於它們建立的典型生產計畫。
 

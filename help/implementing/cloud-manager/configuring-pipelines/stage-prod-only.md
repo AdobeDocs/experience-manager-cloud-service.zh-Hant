@@ -3,12 +3,12 @@ title: 分割僅限階段和僅限生產的管道
 description: 了解如何使用專用管道，分割中繼和生產部署。
 solution: Experience Manager
 feature: Cloud Manager, Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 hide: false
 hidefromtoc: false
 index: true
 exl-id: 7d76a87c-122c-4c4d-8071-957bef4c9cf1
-source-git-commit: 890d18778273ce60a676cb74fa8025d6b48dc70d
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1046'
 ht-degree: 49%
@@ -72,7 +72,7 @@ badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/releas
 
 1. 在&#x200B;**新增非生產管道**&#x200B;對話方塊的&#x200B;**組態**&#x200B;索引標籤上，為您的管道選取&#x200B;**部署管道**&#x200B;欄位。
 1. 在「非生產管線名稱」欄位中，輸入任意文字的名稱。
-1. 選取所需的部署選項，然後按一下[繼續]。**&#x200B;**
+1. 選取所需的部署選項，然後按一下[繼續]。****
 
    在新增非生產管道對話方塊中的![設定索引標籤](/help/implementing/cloud-manager/configuring-pipelines/assets/add-non-prod-pipeline-1.png)
 
@@ -80,7 +80,7 @@ badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/releas
 
 1. 在&#x200B;**合格的部署環境**&#x200B;下拉式清單中，選取&#x200B;**階段**&#x200B;環境作為您管道的部署環境。 選取階段會建立專用於階段環境的管道（生產升級會透過個別管道進行）。
 
-1. 在各自的下拉式清單中選取您的&#x200B;**存放庫**&#x200B;和&#x200B;**Git分支**，然後按一下[繼續]&#x200B;**&#x200B;**。
+1. 在各自的下拉式清單中選取您的&#x200B;**存放庫**&#x200B;和&#x200B;**Git分支**，然後按一下[繼續]****。
 
    在新增非生產管道對話方塊中的![Source程式碼索引標籤](/help/implementing/cloud-manager/configuring-pipelines/assets/add-non-prod-pipeline-2.png)
 

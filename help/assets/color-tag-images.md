@@ -4,10 +4,10 @@ description: Adobe Experience Manager Assets可讓您區分影像中的顏色，
 exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
 feature: Smart Imaging, Interactive Images, Asset Management
 role: User, Admin
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1244'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 ![顏色標籤橫幅](assets/banner-image.png)
 
-Adobe Experience Manager (AEM) Assets使用Adobe Sensei AI功能來區分影像中的顏色，並在擷取時自動將這些差異套用為標籤。 這些標籤會根據影像顏色組合來增強搜尋體驗。
+Adobe Experience Manager (AEM) Assets使用Adobe Sensei AI功能來區分影像中的顏色，並在擷取時自動將這些差異套用為標籤。 這些標記讓我們能夠根據影像色彩組成來搜尋，藉此提升搜尋體驗。
 
 您可以設定標籤到影像的顏色數量（範圍在1到40之間），以便日後可以根據這些顏色搜尋影像。 Experience Manager Assets會根據影像中的顏色涵蓋範圍套用標籤。 您也可以設定顏色標籤的顯示格式。
 
@@ -54,7 +54,7 @@ Adobe Experience Manager (AEM) Assets使用Adobe Sensei AI功能來區分影像�
    >
    >Adobe建議在此欄位中使用接近預設值的值。 設定為此欄位設定的高數值（例如，大於25）可能會傳回幾個搜尋結果。 同樣地，設定低數值（例如，小於6）可能會傳回太多搜尋結果，因此可能沒有用處。
 
-1. 按一下「**[!UICONTROL 儲存]**」。
+1. 按一下&#x200B;**[!UICONTROL 儲存]**。
 
 
    >[!VIDEO](https://video.tv.adobe.com/v/340108)
@@ -100,7 +100,7 @@ Adobe Experience Manager (AEM) Assets使用Adobe Sensei AI功能來區分影像�
 
 1. 在&#x200B;**[!UICONTROL 設定]**&#x200B;索引標籤的&#x200B;**[!UICONTROL 欄位標籤]**&#x200B;欄位中指定適當的值。
 
-1. 按一下「**[!UICONTROL 儲存]**」。
+1. 按一下&#x200B;**[!UICONTROL 儲存]**。
 
    >[!VIDEO](https://video.tv.adobe.com/v/340124)
 

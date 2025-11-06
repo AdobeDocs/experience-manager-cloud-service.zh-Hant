@@ -3,9 +3,9 @@ title: SPA 中的複合元件
 description: 瞭解如何建立您自己的複合元件，也就是由AEM單頁應用程式(SPA)編輯器運作的其他元件所組成的元件。
 exl-id: fa1ab1dd-9e8e-4e2c-aa9a-5b46ed8a02cb
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 index: false
-source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '782'
 ht-degree: 1%
@@ -33,7 +33,7 @@ ht-degree: 1%
 
 * 您的AEM開發執行個體正在連線埠4502上本機執行，並有一個範例專案。
 * 您已啟用有效的外部React應用程式[，以便在AEM](editing-external-spa.md)中編輯。
-* React應用程式已使用RemotePage元件[&#128279;](remote-page.md)載入AEM編輯器中。
+* React應用程式已使用RemotePage元件[載入AEM編輯器](remote-page.md)中。
 
 ## 將複合元件新增至SPA {#adding-composite-components}
 
@@ -50,7 +50,7 @@ ht-degree: 1%
 首先，建立構成複合元件的元件，也就是影像及其文字的元件。
 
 1. 在您的AEM專案中建立文字元件。
-1. 從元件的`editConfig`節點中的專案新增對應的`resourceType`。
+1. 從元件的`resourceType`節點中的專案新增對應的`editConfig`。
 
    ```text
     resourceType: 'wknd-spa/components/text' 
@@ -136,7 +136,7 @@ function Home() {
 
 接著，您可以將它新增至SPA並擷取其內容。
 
-1. 在SPA中為此建立對應的元件。 確保子元件對應至SPA專案中其對應的AEM資源型別。 在此範例中，我們使用與先前案例[&#128279;](#component-does-not-exist)中詳細相同的`AEMText`和`AEMImage`元件。
+1. 在SPA中為此建立對應的元件。 確保子元件對應至SPA專案中其對應的AEM資源型別。 在此範例中，我們使用與先前案例`AEMText`中詳細`AEMImage`相同的[和](#component-does-not-exist)元件。
 
    ```javascript
    import React from 'react';
@@ -162,7 +162,7 @@ function Home() {
     itemPath='root/responsivegrid' />
    ```
 
-1. 將已建立的`wknd-spa/components/imagecard`元件新增至頁面範本[&#128279;](/help/sites-cloud/authoring/page-editor/templates.md)中容器元件的允許元件。
+1. 將已建立的`wknd-spa/components/imagecard`元件新增至頁面範本[中容器元件](/help/sites-cloud/authoring/page-editor/templates.md)的允許元件。
 
 現在可以直接將`imagecard`元件新增到AEM編輯器中的容器。
 
@@ -180,4 +180,4 @@ function Home() {
 
 ![節點結構中的複合路徑](assets/composite-path.png)
 
-`AEMCard`元件與先前使用案例[&#128279;](#content-does-not-exist)中定義的相同。 此處，上述位置在AEM專案中定義的內容包含在SPA中。
+`AEMCard`元件與先前使用案例[中定義的](#content-does-not-exist)相同。 此處，上述位置在AEM專案中定義的內容包含在SPA中。

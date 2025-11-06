@@ -3,9 +3,9 @@ title: 資料保護與資料隱私權法規 - AEM Sites 整備程度
 description: 了解 Experience Manager as a Cloud Service Sites 如何支援各種資料保護和資料隱私權法規；包括歐盟一般資料保護規範 (GDPR)、加州消費者隱私法，以及在實作新的 AEM as a Cloud Service 專案時如何遵守這些規定。
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
 feature: Compliance
-role: Admin, Architect, Developer, Leader
-source-git-commit: 974f85b91a629ea6d4f34e2066d242c42a04015b
-workflow-type: ht
+role: Admin, Developer, Leader
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '989'
 ht-degree: 100%
 
@@ -78,13 +78,13 @@ Adobe Experience Manager 受用於管理使用者選擇加入/選擇退出的 co
 
 AEM Sites 包括與 Analytics Foundation 的選擇性整合，後者使用 Adobe Analytics 隨選服務中的功能。
 
-如需深入了解如何管理 Adobe Analytics 相關的資料主體要求，請參閱 [Adobe Analytics 和資料隱私權](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html?lang=zh-Hant)。
+如需深入了解如何管理 Adobe Analytics 相關的資料主體要求，請參閱 [Adobe Analytics 和資料隱私權](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html)。
 
 ## Personalization Foundation by Target {#personalization-foundation-by-target}
 
 AEM Sites 包括與 Personalization Foundation by Target 的選擇性整合，後者使用 Adobe Target 隨選服務中的功能。
 
-如需深入了解如何管理 Adobe Target 相關的資料主體要求，請參閱[Adobe Target - 隱私權和一般資料保護規範](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html?lang=zh-Hant)。
+如需深入了解如何管理 Adobe Target 相關的資料主體要求，請參閱[Adobe Target - 隱私權和一般資料保護規範](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html)。
 
 ## ContextHub {#contexthub}
 

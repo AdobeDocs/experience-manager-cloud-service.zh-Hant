@@ -5,11 +5,11 @@ contentOwner: AG
 mini-toc-levels: 1
 exl-id: 91619662-e865-47d1-8bec-0739f402353a
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '4303'
-ht-degree: 0%
+source-wordcount: '4302'
+ht-degree: 2%
 
 ---
 
@@ -42,7 +42,7 @@ RTE功能可透過一系列外掛程式使用，每個外掛程式都具備功�
       * 替代設定節點： `.../text/cq:editConfig/cq:inplaceEditing/inplaceEditingTextConfig`
       * `text: .../text/dialog/items/tab1/items/text`
 
-   * 型別為： **jcr：primaryType** `cq:Widget`
+   * 型別為： **jcr:primaryType** `cq:Widget`
    * 兩者都有以下屬性：
 
       * **名稱** `name`
@@ -64,16 +64,16 @@ RTE功能可透過一系列外掛程式使用，每個外掛程式都具備功�
 | | 啟用所有功能 | 啟用幾項特定功能。 | 停用所有功能。 |
 |---|---|---|---|
 | 名稱 | 功能 | 功能 | 功能 |
-| 類型 | 字串 | `String` (多字串；將Type設定為`String`並按一下CRXDE Lite中的`Multi`) | 字串 |
+| 類型 | 字串 | `String` (多字串；將Type設定為`String`，然後按一下CRXDE Lite中的`Multi`) | 字串 |
 | 值 | `*` （星號） | 設定為一個或多個特徵值。 | - |
 
 ## 瞭解findreplace外掛程式 {#findreplace}
 
 `findreplace`外掛程式不需要任何設定。 開箱即用。
 
-使用取代功能時，要取代的取代字串應與尋找字串同時輸入。 不過，您仍然可以按一下「尋找」來搜尋字串，然後再取代它。 如果在按一下「尋找」之後輸入取代字串，則搜尋會重設為文字的開頭。
+使用取代功能時，要取代的取代字串應與尋找字串同時輸入。不過，您仍然可以按一下「尋找」來搜尋字串，然後再取代它。如果在按一下「尋找」之後輸入取代字串，則搜尋會重設回文字的開頭。
 
-按一下「尋找」時，「尋找和取代」對話方塊會變成透明，按一下「取代」時，對話方塊會變成不透明。 行為可讓作者檢閱要取代的文字。 如果使用者按一下全部取代，對話方塊會關閉並顯示所做的取代數目。
+按一下「尋找」時，「尋找和取代」對話框會變成透明，按一下「取代」時，對話框會變成不透明。行為可讓作者檢閱要取代的文字。 如果使用者按一下全部取代，對話方塊會關閉並顯示所做的取代數目。
 
 ## 設定貼上模式 {#pastemodes}
 
@@ -93,13 +93,13 @@ RTE功能可透過一系列外掛程式使用，每個外掛程式都具備功�
 
 * **[!UICONTROL 貼上成文字]**：提供純文字模式功能。
 
-* 從Word **貼上**&#x200B;功能：提供MS Word模式功能。
+* 從Word **[!UICONTROL 貼上]**&#x200B;功能：提供MS Word模式功能。
 
 若要設定RTE以顯示必要的圖示，請按照下列步驟操作。
 
 1. 導覽至您的元件，例如`/apps/<myProject>/components/text`。
 1. 導覽至節點`rtePlugins/edit`。 如果節點不存在，請參閱[啟用外掛程式](#activateplugin)。
-1. 在`edit`節點上建立`features`屬性，並新增一或多個功能。 儲存所有變更。
+1. 在`features`節點上建立`edit`屬性，並新增一或多個功能。 儲存所有變更。
 
 ### 設定貼上(Ctrl+V)圖示和捷徑的行為 {#configure-the-behavior-of-the-paste-ctrl-v-icon-and-shortcut}
 
@@ -122,7 +122,7 @@ RTE功能可透過一系列外掛程式使用，每個外掛程式都具備功�
 
 ### 設定貼上內容時允許的格式 {#pasteformats}
 
-您可以進一步設定paste-as-Microsoft-Word (`paste-wordhtml`)模式，以便在從其他程式（例如[!DNL Microsoft Word]）貼入[!DNL Experience Manager]時明確允許一些樣式。
+您可以進一步設定paste-as-Microsoft-Word (`paste-wordhtml`)模式，以便在從其他程式（例如[!DNL Experience Manager]）貼入[!DNL Microsoft Word]時明確允許一些樣式。
 
 例如，如果在[!DNL Experience Manager]中貼上時只允許使用粗體格式和清單，您可以篩選掉其他格式。 這稱為可設定的貼上篩選，可同時針對下列兩項執行：
 
@@ -193,7 +193,7 @@ RTE功能可透過一系列外掛程式使用，每個外掛程式都具備功�
 
 ## 設定文字樣式 {#textstyles}
 
-作者可以套用樣式來變更部分文字的外觀。 樣式是以您在CSS樣式表中預先定義的CSS類別為基礎。 樣式化內容使用`class`屬性括在`span`標籤中，以參照CSS類別。 例如：
+作者可以套用樣式來變更部分文字的外觀。 樣式是以您在CSS樣式表中預先定義的CSS類別為基礎。 樣式化內容使用`span`屬性括在`class`標籤中，以參照CSS類別。 例如：
 
 `<span class=monospaced>Monospaced Text Here</span>`
 
@@ -214,7 +214,7 @@ RTE功能可透過一系列外掛程式使用，每個外掛程式都具備功�
 若要這麼做，請啟用樣式外掛程式。
 
 1. 在您的元件中，導覽至節點`<rtePlugins-node>/styles`。 如果節點不存在，則建立節點。 如需詳細資訊，請參閱[啟用外掛程式](#activateplugin)。
-1. 在`styles`節點上建立`features`屬性：
+1. 在`features`節點上建立`styles`屬性：
 
    * **名稱** `features`
    * **型別** `String`
@@ -243,7 +243,7 @@ RTE功能可透過一系列外掛程式使用，每個外掛程式都具備功�
 
 1. 儲存所有變更。
 
-在對話方塊（傳統UI）中使用RTE時，您可以指定針對RTF編輯最佳化的樣式表。 由於技術限制，編輯器中的CSS上下文會遺失，因此您可以模擬此上下文以改善WYSIWYG體驗。
+在對話方塊（傳統UI）中使用RTE時，您可以指定針對RTF編輯最佳化的樣式表。 由於技術限制，編輯器中的CSS上下文會遺失，因此您可以模擬此上下文，以改善WYSIWYG體驗。
 
 RTF編輯器使用識別碼為`CQrte`的容器DOM元素，提供不同的樣式來檢視和編輯：
 
@@ -345,7 +345,7 @@ RTF編輯器使用識別碼為`CQrte`的容器DOM元素，提供不同的樣式�
 若要啟用`paraformat`外掛程式，請遵循下列步驟：
 
 1. 在您的元件中，導覽至節點`<rtePlugins-node>/paraformat`。 如果節點不存在，則建立節點。 如需詳細資訊，請參閱[啟用外掛程式](#activateplugin)。
-1. 在`paraformat`節點上建立`features`屬性：
+1. 在`features`節點上建立`paraformat`屬性：
 
    * **名稱** `features`
    * **型別** `String`
@@ -409,7 +409,7 @@ RTF編輯器使用識別碼為`CQrte`的容器DOM元素，提供不同的樣式�
 ### 定義單一字元 {#definesinglechar}
 
 1. 在您的元件中，導覽至節點`<rtePlugins-node>/misctools`。 如果節點不存在，則建立節點。 如需詳細資訊，請參閱[啟用外掛程式](#activateplugin)。
-1. 在`misctools`節點上建立`features`屬性：
+1. 在`features`節點上建立`misctools`屬性：
 
    * **名稱** `features`
    * **型別** `String[]`
@@ -455,12 +455,10 @@ RTF編輯器使用識別碼為`CQrte`的容器DOM元素，提供不同的樣式�
 1. 在此節點下（根據特殊字元範圍命名）新增以下兩個屬性：
 
    * **名稱** `rangeStart`
-
      **型別** `Long`
      **值**&#x200B;範圍中第一個字元的[Unicode](https://unicode.org/)表示法（十進位）
 
    * **名稱** `rangeEnd`
-
      **型別** `Long`
      **值**&#x200B;範圍中最後一個字元的[Unicode](https://unicode.org/)表示法（十進位）
 
@@ -487,7 +485,7 @@ RTF編輯器使用識別碼為`CQrte`的容器DOM元素，提供不同的樣式�
 >在RTE元件中或從RTE元件複製和貼上表格是瀏覽器相依的。 並非所有瀏覽器都支援此功能。 根據表格結構和瀏覽器，您可能會獲得不同的結果。 例如，當您在傳統UI和觸控式UI中，於Mozilla Firefox複製並貼上RTE元件中的表格時，不會保留表格的版面。
 
 1. 在您的元件內，導覽至節點`<rtePlugins-node>/table`。 如果節點不存在，則建立節點。 如需詳細資訊，請參閱[啟用外掛程式](#activateplugin)。
-1. 在`table`節點上建立`features`屬性：
+1. 在`features`節點上建立`table`屬性：
 
    * **名稱** `features`
    * **型別** `String`
@@ -500,10 +498,10 @@ RTF編輯器使用識別碼為`CQrte`的容器DOM元素，提供不同的樣式�
    >* **型別** `String[]`
    >
    >* **值**&#x200B;下列其中一項（或兩項），視需要而定：
-   >* `table`以允許編輯表格屬性；包括樣式。
-   >* `cellprops`以允許編輯儲存格屬性，包括樣式。
+   >   * `table`以允許編輯表格屬性；包括樣式。
+   >   * `cellprops`以允許編輯儲存格屬性，包括樣式。
 
-1. 定義CSS樣式表的位置以參照這些樣式表。 請參閱[指定樣式表](#locationofstylesheet)的位置，因為這與定義文字[&#128279;](#textstyles)的樣式相同。 如果您定義了其他樣式，則可定義位置。
+1. 定義CSS樣式表的位置以參照這些樣式表。 請參閱[指定樣式表](#locationofstylesheet)的位置，因為這與定義文字[的](#textstyles)樣式相同。 如果您定義了其他樣式，則可定義位置。
 1. 在`table`節點下，視需要建立下列節點：
 
    * 若要定義整個表格的樣式（可在&#x200B;**[!UICONTROL 表格屬性]**&#x200B;下使用）：
@@ -651,7 +649,7 @@ RTE可讓作者還原或重做幾項最後的編輯。 依預設，50項編輯�
 
 ## 設定連結的樣式和通訊協定 {#linkstyles}
 
-在[!DNL Experience Manager]中新增連結時，您可以定義要使用的CSS樣式以及要自動接受的通訊協定。 若要設定如何從其他程式新增連結到[!DNL Experience Manager]，請定義HTML規則。
+在[!DNL Experience Manager]中新增連結時，您可以定義要使用的CSS樣式以及要自動接受的通訊協定。 若要設定如何將連結新增到其他程式的[!DNL Experience Manager]，請定義HTML規則。
 
 1. 使用CRXDE Lite，找出專案的文字元件。
 1. 在與`<rtePlugins-node>`相同的層級上建立節點，也就是說，在`<rtePlugins-node>`的父節點下建立節點：

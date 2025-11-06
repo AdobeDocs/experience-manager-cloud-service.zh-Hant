@@ -3,8 +3,8 @@ title: 設定 ContextHub
 description: 瞭解如何設定Context Hub，此架構用於儲存、操控和呈現內容資料。
 exl-id: 1fd7d41e-31ad-4838-8749-a5791edcfd63
 feature: Developing, Personalization
-role: Admin, Architect, Developer
-source-git-commit: 79480fc14163b144c76ea33d38cda7c6b84f826b
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1609'
 ht-degree: 0%
@@ -151,7 +151,7 @@ contexthub.generic-jsonp存放區已設定為儲存服務呼叫`https://md5.json
 
 contexthub.generic-jsonp範例存放區候選專案可讓您從JSONP服務或傳回JSON資料的Web服務擷取資料。 對於此存放區候選專案，請使用存放區設定來提供有關要使用的JSONP服務的詳細資訊。
 
-[&#x200B; JavaScript類別的](contexthub-api.md#init-name-config)init`ContextHub.Store.JSONPStore`函式定義初始化此存放區候選專案的`config`物件。 `config`物件包含`service`物件，其中包含有關JSONP服務的詳細資料。 若要設定存放區，請以JSON格式提供`service`物件，作為Detail Configuration屬性的值。
+[ JavaScript類別的](contexthub-api.md#init-name-config)init`ContextHub.Store.JSONPStore`函式定義初始化此存放區候選專案的`config`物件。 `config`物件包含`service`物件，其中包含有關JSONP服務的詳細資料。 若要設定存放區，請以JSON格式提供`service`物件，作為Detail Configuration屬性的值。
 
 若要從jsontest.com網站的MD5服務儲存資料，請使用[使用下列屬性建立ContextHub存放區](#creating-a-contexthub-store)中的程式：
 

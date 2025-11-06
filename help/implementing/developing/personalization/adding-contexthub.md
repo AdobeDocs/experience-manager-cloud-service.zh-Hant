@@ -3,8 +3,8 @@ title: 將ContextHub新增至頁面並存取存放區
 description: 將ContextHub新增至您的頁面，以啟用ContextHub功能並連結至ContextHub JavaScript資料庫
 exl-id: 8bfe2cff-3944-4e86-a95c-ebf1cb13913c
 feature: Developing, Personalization
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '898'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ContextHub JavaScript API可讓您存取ContextHub管理的內容資料。 本�
 
 ## 將ContextHub新增至頁面元件 {#adding-contexthub-to-a-page-component}
 
-若要啟用ContextHub功能並連結至ContextHub JavaScript資料庫，請在頁面的`head`區段中包含`contexthub`元件。 頁面元件的HTL程式碼應類似下列範例：
+若要啟用ContextHub功能並連結至ContextHub JavaScript資料庫，請在頁面的`contexthub`區段中包含`head`元件。 頁面元件的HTL程式碼應類似下列範例：
 
 ```xml
 <sly data-sly-resource="${'contexthub' @ resourceType='granite/contexthub/components/contexthub'}"/>
@@ -42,8 +42,8 @@ ContextHub JavaScript API可讓您存取ContextHub管理的內容資料。 本�
 
 Context Hub存放區會使用下列其中一個持續性模式：
 
-* **本機：**&#x200B;使用HTML5 localStorage保留資料。 本機儲存體會跨工作階段儲存在瀏覽器上。
-* **工作階段：**&#x200B;使用HTML5 sessionStorage來儲存資料。 工作階段存放區會在瀏覽器工作階段期間持續保留，並可供所有瀏覽器視窗使用。
+* **本機：**&#x200B;使用HTML5 localStorage來儲存資料。 本機儲存體會跨工作階段儲存在瀏覽器上。
+* **工作階段：**&#x200B;使用HTML5 sessionStorage保留資料。 工作階段存放區會在瀏覽器工作階段期間持續保留，並可供所有瀏覽器視窗使用。
 * **Cookie：**&#x200B;使用瀏覽器原生支援的Cookie來儲存資料。 Cookie資料會以HTTP要求傳送至伺服器，或從伺服器傳送。
 * **Window.name：**&#x200B;使用window.name屬性來儲存資料。
 * **記憶體：**&#x200B;使用JavaScript物件來儲存資料。
@@ -111,7 +111,7 @@ ContextHub提供[`ContextHub.Utils.JSON.tree`](contexthub-api.md#contexthub-util
 >
 >ContextHub預設不會知道發佈伺服器上目前使用的登入，並且ContextHub會將此類使用者視為「匿名」。
 >
->您可以載入設定檔存放區，讓ContextHub知道登入的使用者。 檢視範常式式碼： GitHub[&#128279;](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js)上的aem-sample-we-retail。
+>您可以載入設定檔存放區，讓ContextHub知道登入的使用者。 檢視範常式式碼： GitHub[上的](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js)aem-sample-we-retail。
 
 ### ContextHub事件 {#contexthub-eventing}
 
@@ -123,7 +123,7 @@ Context Hub JavaScript API提供處理瀏覽器Cookie的跨瀏覽器支援。 [`
 
 ## 決定已解析的ContextHub區段 {#determining-resolved-contexthub-segments}
 
-ContextHub區段引擎可讓您決定要在目前前後關聯中解析哪些已註冊區段。 使用[`ContextHub.SegmentEngine.SegmentManager`](contexthub-api.md#contexthub-segmentengine-segmentmanager)類別的getResolvedSegments函式來擷取已解析的區段。 然後，使用[`ContextHub.SegmentEngine.Segment`](contexthub-api.md#contexthub-segmentengine-segment)類別的`getName`或`getPath`函式來測試區段。
+ContextHub區段引擎可讓您決定要在目前前後關聯中解析哪些已註冊區段。 使用[`ContextHub.SegmentEngine.SegmentManager`](contexthub-api.md#contexthub-segmentengine-segmentmanager)類別的getResolvedSegments函式來擷取已解析的區段。 然後，使用`getName`類別的`getPath`或[`ContextHub.SegmentEngine.Segment`](contexthub-api.md#contexthub-segmentengine-segment)函式來測試區段。
 
 ### ContextHub 區段 {#contexthub-segments}
 

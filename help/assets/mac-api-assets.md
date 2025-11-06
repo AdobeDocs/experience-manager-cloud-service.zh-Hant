@@ -3,9 +3,9 @@ title: Assets HTTP API
 description: 在 [!DNL Experience Manager Assets]中使用HTTP API來建立、讀取、更新、刪除及管理數位資產。
 contentOwner: AG
 feature: Assets HTTP API
-role: Developer, Architect, Admin
+role: Developer, Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1691'
 ht-degree: 5%
@@ -16,7 +16,7 @@ ht-degree: 5%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html?lang=en) |
 | AEM as a Cloud Service  | 本文章 |
 
 ## 開始使用AEM [!DNL Assets] HTTP API {#overview}
@@ -30,7 +30,7 @@ AEM [!DNL Assets] HTTP API透過/`api/assets`提供的REST介面啟用數位資�
 若要存取API：
 
 1. 在`https://[hostname]:[port]/api.json`開啟API服務檔案。
-1. 依循前往`https://[hostname]:[server]/api/assets.json`的[!DNL Assets]服務連結。
+1. 依循前往[!DNL Assets]的`https://[hostname]:[server]/api/assets.json`服務連結。
 
 API回應是部分MIME型別的JSON檔案，以及所有MIME型別的回應代碼。 JSON回應為選用專案，可能無法用於PDF等檔案。 仰賴回應程式碼進行進一步分析或動作。
 
@@ -42,7 +42,7 @@ API回應是部分MIME型別的JSON檔案，以及所有MIME型別的回應代�
 
 [內容片段](/help/assets/content-fragments/content-fragments.md)是儲存文字、數字和日期的結構化資產。 由於`standard`資產（例如影像或檔案）有幾項差異，因此處理內容片段會套用一些其他規則。
 
-如需詳細資訊，請參閱 [!DNL Experience Manager Assets] HTTP API[&#128279;](/help/assets/content-fragments/assets-api-content-fragments.md)中的內容片段支援。
+如需詳細資訊，請參閱[HTTP API [!DNL Experience Manager Assets] 中的](/help/assets/content-fragments/assets-api-content-fragments.md)內容片段支援。
 
 >[!NOTE]
 >
@@ -71,7 +71,7 @@ API回應是部分MIME型別的JSON檔案，以及所有MIME型別的回應代�
 
 >[!NOTE]
 >
->資料夾或資產的某些屬性會對應至不同的首碼。 `jcr:title`、`jcr:description`和`jcr:language`的`jcr`首碼已取代為`dc`首碼。 因此，在傳回的JSON中，`dc:title`和`dc:description`分別包含`jcr:title`和`jcr:description`的值。
+>資料夾或資產的某些屬性會對應至不同的首碼。 `jcr`、`jcr:title`和`jcr:description`的`jcr:language`首碼已取代為`dc`首碼。 因此，在傳回的JSON中，`dc:title`和`dc:description`分別包含`jcr:title`和`jcr:description`的值。
 
 **連結**&#x200B;資料夾公開三個連結：
 
@@ -141,7 +141,7 @@ API回應是部分MIME型別的JSON檔案，以及所有MIME型別的回應代�
 * 404 - NOT FOUND — 資料夾不存在或無法存取。
 * 500 — 內部伺服器錯誤 — 如果發生其他錯誤。
 
-**回應**：傳回的實體類別是資產或資料夾。 包含之圖元的屬性是每個圖元之完整屬性集的子集。 若要取得實體的完整表示法，使用者端應擷取連結所指向的URL內容，該URL具有`self`的`rel`。
+**回應**：傳回的實體類別是資產或資料夾。 包含之圖元的屬性是每個圖元之完整屬性集的子集。 若要取得實體的完整表示法，使用者端應擷取連結所指向的URL內容，該URL具有`rel`的`self`。
 
 ## 建立資料夾 {#create-a-folder}
 
@@ -292,11 +292,11 @@ API回應是部分MIME型別的JSON檔案，以及所有MIME型別的回應代�
 
 ## 遵循最佳實務並注意限制 {#tips-limitations}
 
-* 當達到[!UICONTROL 關閉時間]時，透過[!DNL Assets]網頁介面和HTTP API，Assets及其轉譯將無法使用。 如果[!UICONTROL 開啟時間]是未來時間，或[!UICONTROL 關閉時間]是過去時間，API會傳回404錯誤。
+* 當達到[!DNL Assets]關閉時間[!UICONTROL 時，透過]網頁介面和HTTP API，Assets及其轉譯將無法使用。 如果[!UICONTROL 開啟時間]是未來時間，或[!UICONTROL 關閉時間]是過去時間，API會傳回404錯誤。
 
 * Assets HTTP API只會傳回中繼資料的子集。 系統會以硬式編碼撰寫名稱空間，而且只會傳回這些名稱空間。 如需完整的中繼資料，請參閱資產路徑`/jcr_content/metadata.json`。
 
-* 使用API更新時，資料夾或資產的某些屬性會對應至不同的首碼。 `jcr:title`、`jcr:description`和`jcr:language`的`jcr`首碼已取代為`dc`首碼。 因此，在傳回的JSON中，`dc:title`和`dc:description`分別包含`jcr:title`和`jcr:description`的值。
+* 使用API更新時，資料夾或資產的某些屬性會對應至不同的首碼。 `jcr`、`jcr:title`和`jcr:description`的`jcr:language`首碼已取代為`dc`首碼。 因此，在傳回的JSON中，`dc:title`和`dc:description`分別包含`jcr:title`和`jcr:description`的值。
 
 **探索相關資源**
 
@@ -315,4 +315,4 @@ API回應是部分MIME型別的JSON檔案，以及所有MIME型別的回應代�
 
 >[!MORELIKETHIS]
 >
->*  [!DNL Assets][&#128279;](/help/assets/developer-reference-material-apis.md)的開發人員參考檔案
+>* [的 [!DNL Assets]](/help/assets/developer-reference-material-apis.md)開發人員參考檔案

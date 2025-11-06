@@ -3,9 +3,9 @@ title: 使用前端管道開發網站
 description: 前端管道增強了開發人員的獨立性，並加快了開發流程。 本文概述前端建置流程的主要考量事項，以確保最佳效能和效率。
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
 feature: Developing
-role: Admin, Architect, Developer
+role: Admin, Developer
 recommendations: noDisplay, noCatalog
-source-git-commit: 8c4b34a77ef85869048fae254728c58cf0d99b66
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1126'
 ht-degree: 0%

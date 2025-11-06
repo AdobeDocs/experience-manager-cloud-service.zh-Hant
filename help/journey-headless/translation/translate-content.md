@@ -4,9 +4,9 @@ description: 使用翻譯連接器來翻譯您的 Headless 內容。
 exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+workflow-type: tm+mt
 source-wordcount: '2120'
 ht-degree: 100%
 
@@ -45,7 +45,7 @@ ht-degree: 100%
 1. 選擇內容的語言根，讓 AEM 根據內容路徑自動建立翻譯專案。
 1. 建立空白專案並手動選擇要新增至翻譯專案的內容
 
-兩種都是有效的方法，通常只是根據執行翻譯的角色而不同：
+兩種都是有效的方法，通常只是根據執行翻譯的人物誌而不同：
 
 * 翻譯專案經理 (TPM) 通常需要靈活地手動選擇翻譯專案的內容。
 * 如果內容所有者也負責翻譯，讓 AEM 根據所選的內容路徑自動建立專案通常是更輕鬆的方法。

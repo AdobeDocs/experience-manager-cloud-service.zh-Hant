@@ -3,10 +3,10 @@ title: AEM 標記框架
 description: 標籤內容，並使用AEM標籤基礎結構來分類及組織內容。
 exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
 feature: Developing
-role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+role: Admin, Developer
+source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
-source-wordcount: '1562'
+source-wordcount: '1559'
 ht-degree: 0%
 
 ---
@@ -18,17 +18,17 @@ ht-degree: 0%
 * 請參閱[使用標籤](/help/sites-cloud/authoring/sites-console/tags.md)，以取得將內容標籤為內容作者的相關資訊。
 * 請參閱管理標籤，以取得管理員對於建立和管理標籤以及已對哪些內容套用標籤的觀點。
 
-本文主要介紹在AEM中支援標籤的基本架構，以及如何作為開發人員使用它。
+本文主要說明在AEM中支援標籤的基本架構，以及如何以開發人員身分使用。
 
 ## 簡介 {#introduction}
 
-若要標籤內容並使用AEM標籤基礎架構：
+若要標籤內容並使用AEM標籤基礎結構：
 
-* 標籤必須以[分類根節點](#taxonomy-root-node)下型別[`cq:Tag`](#cq-tag-node-type)的節點存在。
+* 標籤必須以[`cq:Tag`](#cq-tag-node-type)分類根節點[下型別](#taxonomy-root-node)的節點存在。
 * 標籤的內容節點的`NodeType`必須包含[`cq:Taggable`](#taggable-content-cq-taggable-mixin) mixin。
 * [`TagID`](#tagid)已新增至內容節點的[`cq:tags`](#cq-tags-property)屬性，並解析為型別[`cq:Tag`](#cq-tag-node-type)的節點。
 
-## cq：Tag節點型別 {#cq-tag-node-type}
+## cq:Tag節點型別 {#cq-tag-node-type}
 
 標籤宣告是在型別`cq:Tag.`的節點的儲存庫中擷取的
 
@@ -52,7 +52,7 @@ ht-degree: 0%
 
 `TagID`會識別解析成存放庫中的標籤節點的路徑。
 
-一般而言，`TagID`是以名稱空間開頭的速記`TagID`，或者可以是從[分類根節點](#taxonomy-root-node)開始的絕對`TagID`。
+一般而言，`TagID`是以名稱空間開頭的速記`TagID`，或者可以是從`TagID`分類根節點[開始的絕對](#taxonomy-root-node)。
 
 標籤內容時，如果內容尚不存在，[`cq:tags`](#cq-tags-property)屬性會新增至內容節點，而`TagID`會新增至屬性的`String`陣列值。
 
@@ -115,26 +115,26 @@ ht-degree: 0%
 
 * 允許`tag-administrators`群組/角色對所有名稱空間的寫入存取權（在`/content/cq:tags`下新增/修改）。 此群組隨附AEM立即可用。
 * 允許使用者/作者讀取他們應可讀取的所有名稱空間（幾乎全部）。
-* 允許使用者/作者寫入存取那些標籤應該可由使用者/作者自由定義的名稱空間（`/content/cq:tags/some_namespace`下的`add_node`）
+* 允許使用者/作者寫入存取那些標籤應該可由使用者/作者自由定義的名稱空間（`add_node`下的`/content/cq:tags/some_namespace`）
 
-## 可標籤的內容：cq：Taggable Mixin {#taggable-content-cq-taggable-mixin}
+## 可標籤的內容：cq:Taggable Mixin {#taggable-content-cq-taggable-mixin}
 
 若要讓應用程式開發人員將標籤附加至內容型別，節點的註冊([CND](https://jackrabbit.apache.org/jcr/node-type-notation.html))必須包含`cq:Taggable` mixin或`cq:OwnerTaggable` mixin。
 
-繼承自`cq:Taggable`的`cq:OwnerTaggable` mixin旨在表示內容可由擁有者/作者分類。 在AEM中，它只是`cq:PageContent`節點的屬性。 標籤架構不需要`cq:OwnerTaggable` mixin。
+繼承自`cq:OwnerTaggable`的`cq:Taggable` mixin旨在表示內容可由擁有者/作者分類。 在AEM中，它只是`cq:PageContent`節點的屬性。 標籤架構不需要`cq:OwnerTaggable` mixin。
 
 >[!NOTE]
 >
 >建議僅在彙總內容專案的頂層節點（或其`jcr:content`節點）上啟用標籤。 例如：
 >
->* `jcr:content`節點為`cq:PageContent`型別（包含`cq:Taggable` mixin）的頁面(`cq:Page`)。
+>* `cq:Page`節點為`jcr:content`型別（包含`cq:PageContent` mixin）的頁面(`cq:Taggable`)。
 >* Assets (`cq:Asset`)，其中`jcr:content/metadata`節點一律有`cq:Taggable` mixin。
 
 ### 節點型別標籤法(CND) {#node-type-notation-cnd}
 
 節點型別定義以CND檔案的形式存在於存放庫中。 CND標籤法定義為[JCR檔案](https://jackrabbit.apache.org/jcr/node-type-notation.html)的一部分。
 
-AEM中包含的「節點型別」的基本定義如下：
+AEM中包含之節點型別的基本定義如下：
 
 ```xml
 [cq:Tag] > mix:title, nt:base
@@ -151,7 +151,7 @@ AEM中包含的「節點型別」的基本定義如下：
     mixin
 ```
 
-## cq：tags屬性 {#cq-tags-property}
+## cq:tags屬性 {#cq-tags-property}
 
 `cq:tags`屬性是`String`陣列，用來儲存作者或網站訪客套用至內容的一或多個`TagID`。 屬性只有在新增至使用[`cq:Taggable`](#taggable-content-cq-taggable-mixin) mixin定義的節點時才有意義。
 
