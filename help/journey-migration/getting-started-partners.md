@@ -80,7 +80,7 @@ Cloud Manager是Managed Services的選用內容傳送工具，現在需使用。
 1. **存取記錄檔**
 
    * [透過CM UI](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html)
-   * 透過Adobe i/o cli[](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html#debugging)
+   * 透過Adobe i/o cli[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html#debugging)
 
 1. [作業與維護](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/home.html)
 

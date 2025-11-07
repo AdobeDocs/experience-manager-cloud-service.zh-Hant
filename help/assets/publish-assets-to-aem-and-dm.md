@@ -82,7 +82,7 @@ ht-degree: 0%
 若要使用資產瀏覽頁面發佈資產：
 
 1. 按一下左窗格中可用的&#x200B;**[!UICONTROL Assets管理]**&#x200B;區段中的&#x200B;**[!UICONTROL Assets]**。
-1. 選取一或多個您需要發佈的資產或資料夾，然後按一下[發佈]。****
+1. 選取一或多個您需要發佈的資產或資料夾，然後按一下[發佈]。**&#x200B;**
 1. 選取&#x200B;**[!UICONTROL AEM]**&#x200B;並按一下&#x200B;**[!UICONTROL 發佈]**&#x200B;以將資產發佈到[!DNL AEM and Dynamic Media]。
 
    ![資產瀏覽](/help/assets/assets/browse-uactivation-immediate.svg)

@@ -147,7 +147,7 @@ OUTDATED 2/28/22 BASED ON CQDOC-18692 You can find Windows&reg; devices that sup
 
 <!-- GIVES a 404 See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480) sample. -->
 
-另請參閱[Dynamic Media檢視器參考指南](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc)中的[Experience Manager Assets檢視器與Dynamic Media Classic ](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only)以及[僅適用於Experience Manager Assets的檢視器](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources)。
+另請參閱[Dynamic Media檢視器參考指南](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc)中的[Experience Manager Assets檢視器與Dynamic Media Classic &#x200B;](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only)以及[僅適用於Experience Manager Assets的檢視器](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources)。
 
 ## 最佳實務：使用HTML5視訊檢視器 {#best-practice-using-the-html-video-viewer}
 
@@ -439,11 +439,11 @@ Dynamic Media建議使用MP4 H.264視訊編碼預設集。 由於MP4檔案使用
 1. 在Experience Manager的左上角，選取Experience Manager標誌。 在左側導軌中，按一下![槌子圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Hammer_18_N.svg) > **[!UICONTROL Assets]** > **[!UICONTROL 視訊報表]**。
 1. 在「視訊報表」頁面上，執行下列任一項作業：
 
-   * 在右上角附近，選取&#x200B;**[!UICONTROL 重新整理視訊報告]**圖示。
+   * 在右上角附近，選取&#x200B;**[!UICONTROL 重新整理視訊報告]**&#x200B;圖示。
 只有在報表的結束日期是當天時，您才可以使用「重新整理」。 此功能可確保您檢視自上次執行報表以來發生的視訊追蹤。
 
-   * 在右上角附近，選取&#x200B;**[!UICONTROL 日期選擇器]**圖示。
-指定您要視訊資料的開始和結束日期範圍，然後選取**[!UICONTROL 執行報表]**。
+   * 在右上角附近，選取&#x200B;**[!UICONTROL 日期選擇器]**&#x200B;圖示。
+指定您要視訊資料的開始和結束日期範圍，然後選取&#x200B;**[!UICONTROL 執行報表]**。
 
    「排名在前的量度」群組方塊可識別您網站上所有&#x200B;*已發佈*&#x200B;視訊的各種彙總測量。
 
@@ -536,7 +536,7 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
 |  | 註解追蹤 |
 |  | 描述性音訊 |
 
-Dynamic Media [和所有Dynamic Media視訊檢視器（Dynamic Media ](/help/assets/file-format-support.md)Video_360 *檢視器除外）支援的所有*&#x200B;視訊格式都可搭配多重字幕和音軌使用。
+Dynamic Media [和所有Dynamic Media視訊檢視器（Dynamic Media &#x200B;](/help/assets/file-format-support.md)Video_360 *檢視器除外）支援的所有*&#x200B;視訊格式都可搭配多重字幕和音軌使用。
 
 ### 在視訊中新增多個註解和音訊曲目 {#add-msma}
 
@@ -836,7 +836,7 @@ Dynamic Media支援透過URL修飾元在視訊中新增單一註解。 請參閱
 
 1. 若要開始播放，請按一下![光碟機圖示](https://spectrum.adobe.com/static/icons/workflow_22/Smock_PlayCircle_22_N.svg)。
 如有需要，請按一下![最大化圖示](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Maximize_22_N.svg)以最大化檢視視窗。
-請注意頁面左下角附近的**[!UICONTROL URL]**&#x200B;和&#x200B;**[!UICONTROL Embed]**&#x200B;按鈕。 使用這些按鈕分別將視訊的URL[連結至您的網頁應用程式](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)或[將視訊內嵌至網頁](/help/assets/dynamic-media/embed-code.md)。
+請注意頁面左下角附近的&#x200B;**[!UICONTROL URL]**&#x200B;和&#x200B;**[!UICONTROL Embed]**&#x200B;按鈕。 使用這些按鈕分別將視訊的URL[連結至您的網頁應用程式](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)或[將視訊內嵌至網頁](/help/assets/dynamic-media/embed-code.md)。
 1. 在預覽頁面的右上角附近，按一下&#x200B;**[!UICONTROL 關閉]**。
 
 ### 從視訊中刪除註解或音訊曲目檔案
@@ -856,7 +856,7 @@ Dynamic Media支援透過URL修飾元在視訊中新增單一註解。 請參閱
    * 註解 — 在&#x200B;**註解**&#x200B;標題下，選取一或多個要從視訊中刪除的註解檔案，然後按一下![刪除圖示](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Delete_22_N.svg) **[!UICONTROL 刪除]**。
    * 音訊曲目 — 在&#x200B;**音訊曲目**&#x200B;標題下，選取一或多個您要從視訊中刪除的音訊曲目檔案，然後按一下![刪除圖示](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Delete_22_N.svg) **[!UICONTROL 刪除]**。
 
-1. 在[刪除]對話方塊中，按一下[確定]。****
+1. 在[刪除]對話方塊中，按一下[確定]。**&#x200B;**
 1. 發佈視訊。
 
 ### 下載已上傳至視訊的註解或音訊曲目檔案
@@ -1075,7 +1075,7 @@ Experience Manager中的所有視訊都必須有關聯的縮圖。 根據預設�
       * 導覽至您想要使用的先前上傳和發佈影像資產。 資產會自動調整大小，以作為視訊的縮圖影像。
       * 選取影像資產，然後按一下&#x200B;**[!UICONTROL 選取]**。
 
-1. 在[變更縮圖]對話方塊中，按一下[儲存變更]。****
+1. 在[變更縮圖]對話方塊中，按一下[儲存變更]。**&#x200B;**
 1. 在影片的「屬性」頁面右上角，按一下「**[!UICONTROL 儲存並關閉]**」或「**[!UICONTROL 儲存]**」。
 
 
