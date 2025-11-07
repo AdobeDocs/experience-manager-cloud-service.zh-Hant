@@ -4,10 +4,10 @@ description: 「互動式通訊編輯器」中的「範本鎖定」可讓範本�
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 371838c77beafa8c67259a865b25325632bea0b0
+source-git-commit: 957944da363b506c34c2630aeedbe984442f34b8
 workflow-type: tm+mt
-source-wordcount: '458'
-ht-degree: 11%
+source-wordcount: '505'
+ht-degree: 10%
 
 ---
 
@@ -27,6 +27,8 @@ ht-degree: 11%
 互動式通訊(IC)編輯器中的「範本鎖定」功能可讓範本作者限制對通訊範本的特定元素進行修改。 這樣可確保設計的一致性、保護關鍵內容，並強制在重複使用範本以建立個人化通訊的團隊間進行治理。
 
 套用時，鎖定的元件會以不同的視覺效果顯示，且下游作者或貢獻者無法加以修改（視鎖定型別設定而定）。 此功能有助於維護所有衍生通訊的品牌標準、資料完整性和版面配置一致性。
+
+![尋找IC檔案](/help/forms/interactive-communication/assets/template-lock.png)
 
 ## 2.鎖定型別
 
@@ -56,15 +58,29 @@ ht-degree: 11%
 
 - 調整元素的寬度或高度
 
-## 3.衍生通訊中的行為
+## 3.如何在互動式通訊編輯器中使用範本鎖定
 
-- 從鎖定的範本建立通訊時，通訊作者的IC編輯器中鎖定的元素會顯示為唯讀。
+請依照下列步驟，在互動式通訊(IC)範本中套用「內容」或「版面鎖定」：
 
-- 具有內容鎖定的元件無法變更其內部屬性或繫結。
+1. 開啟您的範本
+開啟或建立範本，請遵循指南[建立互動式通訊範本](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/interactive-communication/overview/create-interactive-communication-template)
 
-- 無法移動具有版面鎖定的元件或調整其大小。
+1. 選取元件
+按一下要限制的元件（文字方塊、影像或子表單）。
 
-這可讓範本建立者維持對設計和結構的控制，同時讓其他使用者專注於可變內容和資料導向的自訂。
+1. 存取鎖定選項
+在「屬性」面板中，移至「鎖定」區段。
+
+1. 套用鎖定
+
+   1. 內容鎖定：防止編輯文字、樣式和資料。
+
+   1. 版面配置鎖定：限制移動和調整大小。
+
+   1. 您可以啟用兩者來達到完整保護。
+
+1. 儲存並驗證
+儲存範本並依據此範本建立新的IC，以確認無法修改鎖定的元素。
 
 ## 4.最佳作法
 

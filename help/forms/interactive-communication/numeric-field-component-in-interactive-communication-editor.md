@@ -1,10 +1,10 @@
 ---
-title: 互動式通訊編輯器中的數值欄位物件
-description: AEM Forms互動式通訊編輯器中的數值欄位物件，可讓作者以受控制格式從使用者收集數值輸入。
+title: 互動式通訊編輯器中的數值欄位元件
+description: AEM Forms互動式通訊編輯器中的數值欄位元件可讓作者以可控格式從使用者收集數值輸入。
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: bd8992792afddb2243736578acd24bc47efad842
+source-git-commit: 957944da363b506c34c2630aeedbe984442f34b8
 workflow-type: tm+mt
 source-wordcount: '738'
 ht-degree: 9%
@@ -12,7 +12,7 @@ ht-degree: 9%
 ---
 
 
-# 互動式通訊編輯器中的數值欄位物件
+# 互動式通訊編輯器中的數值欄位元件
 
 >[!NOTE]
 >
@@ -130,6 +130,6 @@ ht-degree: 9%
 
 - 外觀和印刷樣式需保持一致，以符合品牌方針。
 
-互動式通訊編輯器中的&#x200B;**數值欄位**&#x200B;物件是精確且可靠的工具，可用於以數字為基礎的資料收集。 透過強大的格式設定、可見度控制項和資料繫結選項，可確保資料輸入被完整擷取，並順暢地整合至數位表格中。 正確設定樣式和設定後，可大幅提升表單可用性與整體資料準確度。
+互動式通訊編輯器中的&#x200B;**數值欄位**&#x200B;元件是精確且可靠的數字資料收集工具。 透過強大的格式設定、可見度控制項和資料繫結選項，可確保資料輸入被完整擷取，並順暢地整合至數位表格中。 正確設定樣式和設定後，可大幅提升表單可用性與整體資料準確度。
 
 

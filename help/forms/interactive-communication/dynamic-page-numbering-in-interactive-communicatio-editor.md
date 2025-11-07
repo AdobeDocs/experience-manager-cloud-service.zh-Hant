@@ -4,10 +4,10 @@ description: 互動式通訊編輯器中的動態頁碼編排可讓作者在其P
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 371838c77beafa8c67259a865b25325632bea0b0
+source-git-commit: 957944da363b506c34c2630aeedbe984442f34b8
 workflow-type: tm+mt
-source-wordcount: '293'
-ht-degree: 18%
+source-wordcount: '404'
+ht-degree: 13%
 
 ---
 
@@ -25,6 +25,25 @@ ht-degree: 18%
 ## 簡介
 
 互動式通訊(IC)中的動態頁碼功能可讓作者在其PDF輸出中自動顯示頁碼。 可以在主版頁面層級啟用頁碼編排，確保所有關聯設計頁面的編排一致。 這有助於保持清晰的頁面追蹤，以及跨頁面通訊的專業版面配置。
+
+![尋找IC檔案](/help/forms/interactive-communication/assets/dynamic-page.png)
+
+## 如何在互動式通訊編輯器中使用動態頁面編號
+
+1. 開啟互動式通訊編輯器
+在IC編輯器中開啟您的互動式通訊專案。
+
+1. 移至主版頁面
+頁碼只能在「主版頁面」中啟用。 導覽至通訊的主版頁面。
+
+1. 啟用頁面編號
+在「屬性」面板中，開啟「啟用頁碼」切換按鈕。 這會自動將頁碼新增至所有關聯頁面。
+
+1. 自訂位置
+「頁碼」元件在拖放後，可放置在畫布上的任何位置，並可使用標準文字屬性自由自訂。
+
+1. 在PDF中預覽
+頁碼僅在PDF預覽期間顯示，並在每個頁面上顯示動態編號。
 
 ## 主要功能
 

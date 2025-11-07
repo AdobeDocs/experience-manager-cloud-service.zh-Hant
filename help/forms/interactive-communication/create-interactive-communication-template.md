@@ -5,10 +5,10 @@ products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 exl-id: 926fd6af-aea1-40be-9d38-8f1ea0900132
-source-git-commit: 8f25010ed57bd76acac7c56533ba8e37913511b7
+source-git-commit: 957944da363b506c34c2630aeedbe984442f34b8
 workflow-type: tm+mt
 source-wordcount: '317'
-ht-degree: 18%
+ht-degree: 23%
 
 ---
 
@@ -33,7 +33,7 @@ AEM中的互動式通訊範本可讓使用者定義可重複使用的版面配�
 
 ## 建立互動式通訊範本
 
-若要建立互動式通訊片段，請執行下列步驟：
+若要建立互動式通訊範本，請執行下列步驟：
 
 1. 開啟您的&#x200B;**Adobe Experience Manager (AEM) Forms as a Cloud Service執行個體**。
 
@@ -51,7 +51,7 @@ AEM中的互動式通訊範本可讓使用者定義可重複使用的版面配�
 
    ![尋找IC檔案](/help/forms/interactive-communication/assets/choosefolder.png)
 
-1. 建立新範本，按一下[建立]，然後選取[互動式通訊一般範本]。**&#x200B;**
+1. 建立新範本，按一下[建立]，然後選取[互動式通訊一般範本]。****
 
    ![尋找IC檔案](/help/forms/interactive-communication/assets/create1.png)
 
