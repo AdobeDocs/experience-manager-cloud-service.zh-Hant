@@ -4,7 +4,7 @@ description: 使用Content Package Maven外掛程式來部署AEM應用程式
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '1235'
 ht-degree: 4%
@@ -41,7 +41,7 @@ AEM as a Cloud Service遵循由最新AEM專案原型實作的套件管理和專�
 
 >[!TIP]
 >
->請參閱AEM檔案中的[AEM as a Cloud Service專案結構](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=zh-Hant)文章和[AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)檔案。 AEM 6.5完全支援這兩項功能。
+>請參閱AEM檔案中的[AEM as a Cloud Service專案結構](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)文章和[AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)檔案。 AEM 6.5完全支援這兩項功能。
 
 ## 取得內容套件Maven外掛程式 {#obtaining-the-content-package-maven-plugin}
 
@@ -97,7 +97,7 @@ mvn content-package:install -Dvault.targetURL="https://192.168.1.100:4502/crx/pa
 | `failOnError` | `boolean` | 否 | `false` | 發生錯誤時，`true`的值會導致組建失敗。 值為`false`會導致組建忽略錯誤。 | 除`package`以外的所有目標 |
 | `name` | `String` | `build`：是，`install`：否，`rm`：是 | `build`：無預設值，`install`： Maven專案的`artifactId`屬性值 | 要對其採取動作的套件的名稱 | 除`ls`以外的所有目標 |
 | `password` | `String` | 是 | `admin` | 用於透過AEM進行驗證的密碼 | 除`package`以外的所有目標 |
-| `serverId` | `String` | 否 | 要從中擷取使用者名稱和密碼以進行驗證的伺服器ID | 除`package`以外的所有目標 |
+| `serverId` | `String` | 否 | 要從中擷取使用者名稱和密碼以進行驗證的伺服器ID | 除`package`以外的所有目標 |  |
 | `targetURL` | `String` | 是 | `http://localhost:4502/crx/packmgr/service.jsp` | AEM封裝管理員的HTTP服務API的URL | 除`package`以外的所有目標 |
 | `timeout` | `int` | 否 | `5` | 與封裝管理程式服務通訊的連線逾時（以秒為單位） | 除`package`以外的所有目標 |
 | `useProxy` | `boolean` | 否 | `true` | 值為`true`會讓Maven使用找到的第一個作用中Proxy設定，將請求代理至封裝管理員。 | 除`package`以外的所有目標 |
@@ -215,4 +215,4 @@ mvn content-package:install -Dvault.targetURL="https://192.168.1.100:4502/crx/pa
 
 >[!TIP]
 >
->請參閱AEM檔案中的[AEM as a Cloud Service專案結構](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=zh-Hant)文章和[AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)檔案。 AEM 6.5完全支援這兩項功能。
+>請參閱AEM檔案中的[AEM as a Cloud Service專案結構](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)文章和[AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)檔案。 AEM 6.5完全支援這兩項功能。

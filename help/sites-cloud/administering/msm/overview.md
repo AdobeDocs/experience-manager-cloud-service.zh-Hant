@@ -5,10 +5,10 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
-source-wordcount: '2721'
-ht-degree: 92%
+source-wordcount: '2719'
+ht-degree: 91%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 92%
    * 當您變更來源內容時，來源和即時副本會同步。
    * 您可以透過斷開各個子頁面和/或元件的即時關係，僅對 Live Copy 的內容進行調整。
 
-此頁面概述如何吏用 MSM 重複使用內容。以下頁面詳細介紹相關問題。
+此頁面概觀如何吏用 MSM 重複使用內容。以下頁面詳細介紹相關問題。
 
 * [建立和同步 Live Copies](creating-live-copies.md)
 * [Live Copy 概觀主控台](live-copy-overview.md)
@@ -153,7 +153,7 @@ MSM 可以使用相關主控台的各種選項直接在 UI 中存取 MSM。
 
 ### 使用的術語 {#terms-used}
 
-出於介紹目的，下表概述與 MSM 一起使用的主要術語。這些術語會在後續章節和頁面中進行更詳細的介紹。
+出於介紹目的，下表概觀與 MSM 一起使用的主要術語。這些術語會在後續章節和頁面中進行更詳細的介紹。
 
 | 術語 | 定義 | 進一步詳細資訊 |
 |---|---|---|
@@ -197,20 +197,20 @@ MSM Live Copy 是特定網站內容的副本，與原始來源保持即時關係
 * 作者在`/content/wknd/language-masters/en`底下變更頁面。
 * 觸發後，MSM 會將這些變更同步到 Live Copy。
 
-### Live Copy - 組成項目 {#live-copies-composition}
+### Live Copy - 構成項目 {#live-copies-composition}
 
 >[!NOTE]
 >
 >本章節中的圖表和描述為潛在 Live Copy 的概述。提供的資訊並不全面，只是概要說明以強調特定的特性。
 
-最初建立 Live Copy 時，所選來源頁面會以 1:1 的比例反映在 Live Copy 中。此後，也可以直接在 Live Copy 中建立新資源 (頁面和/或段落)，因此了解這些變化及其對同步的影響是很有用的。可能的組成項目包括：
+當您最初建立即時副本時，所選的來源頁面會以1:1為基礎反映在即時副本中。 此後，也可以直接在 Live Copy 中建立新資源 (頁面和/或段落)，因此了解這些變化及其對同步的影響是很有用的。可能的構成項目包括：
 
 * [含非 Live Copy 頁面的 Live Copy](#live-copy-with-non-live-copy-pages)
 * [巢狀 Live Copy](#nested-live-copies)
 
 Live Copy 的基本形式有：
 
-* 以 1:1 的比例反映所選來源頁面的 Live Copy 頁面。
+* 以1:1為基礎反映所選來源頁面的即時副本頁面。
 * 一個設定定義。
 * 為每個資源定義的即時關係：
    * 將 Live Copy 資源與其藍圖/來源相連結。
@@ -218,7 +218,7 @@ Live Copy 的基本形式有：
 
 變更可以根據需要[同步](creating-live-copies.md#synchronizing-your-live-copy)。
 
-![Live Copy 組成項目概觀](../assets/live-copy-composition.png)
+![Live Copy 構成項目概觀](../assets/live-copy-composition.png)
 
 #### 含非 Live Copy 頁面的 Live Copy {#live-copy-with-non-live-copy-pages}
 
@@ -293,7 +293,7 @@ Live Copy 的來源可以是一般頁面或藍圖設定所包含的頁面。兩�
 
 ### 推出衝突 {#rollout-conflicts}
 
-推出可能會變得複雜，尤其是當作者同時在來源和 Live Copy 中編輯內容時。因此，瞭解AEM如何處理轉出[&#128279;](rollout-conflicts.md)期間可能發生的任何衝突會很有用。
+推出可能會變得複雜，尤其是當作者同時在來源和 Live Copy 中編輯內容時。因此，瞭解AEM如何處理轉出[期間可能發生的任何](rollout-conflicts.md)衝突會很有用。
 
 ### 暫停和取消繼承和同步 {#suspending-and-cancelling-inheritance-and-synchronization}
 

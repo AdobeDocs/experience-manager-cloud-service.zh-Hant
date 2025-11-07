@@ -4,7 +4,7 @@ description: 瞭解如何為最適化Forms核心元件的記錄檔案(DoR)產生
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '3244'
 ht-degree: 1%
@@ -135,7 +135,7 @@ The form developer binds Adaptive Forms fields with corresponding Document of Re
 
 現在，當提交最適化表單時，會產生更新的記錄檔案。
 
-![已更新 — &#x200B;](assets/we-retail-new-invoice-sent-to-customer.png)
+![已更新 — ](assets/we-retail-new-invoice-sent-to-customer.png)
 
 ## 使用記錄檔案時的主要考量事項 {#key-considerations-when-working-with-document-of-record}
 
@@ -262,7 +262,7 @@ When you select a form model, configure Document of Record using options availab
 | 最適化表單元件 | 對應的XFA元件 | 備註 |
 |---|---|---|
 | 影像 | 影像 | 除非使用記錄檔案設定加以排除，否則TextDraw和Image元件（無論繫結或未繫結）一律顯示在XSD型調適型表單的記錄檔案中。 |
-| 文字 | 文字 |
+| 文字 | 文字 |  |
 
 ### 表格 {#tables}
 
@@ -301,7 +301,7 @@ When you select a form model, configure Document of Record using options availab
 
 1. 選取&#x200B;**[!UICONTROL Forms — 記錄檔案]**&#x200B;類別。
 1. 選取&#x200B;**[!UICONTROL DoR基底範本]**。
-1. 按一下[下一步]&#x200B;**&#x200B;**&#x200B;並提供必要的資訊。
+1. 按一下[下一步]****&#x200B;並提供必要的資訊。
 
 1. （選擇性）修改您要在記錄檔案中欄位上套用的欄位樣式和外觀。
 1. 儲存表單。

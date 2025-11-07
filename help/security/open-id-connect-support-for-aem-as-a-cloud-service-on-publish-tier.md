@@ -4,7 +4,7 @@ description: 了解如何在發佈階層為 AEM as a Cloud Service 設定 Open I
 feature: Security
 role: Admin
 exl-id: d2f30406-546c-4a2f-ba88-8046dee3e09b
-source-git-commit: eb03c8941f848ff10c38a4880c8fe85387cc441f
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '1469'
 ht-degree: 100%
@@ -156,7 +156,7 @@ IdP 設定的資訊：
 | `user.dynamicMembership` | 我們建議啟用動態群組會籍 | true |
 | `user.enforceDynamicMembership` | 我們建議對動態群組會籍啟用強制執行 | true |
 | `group.dynamicGroups` | 我們建議啟用動態群組 | true |
-| user.propertyMapping | 提供的 `UserInfoProcessor` 實施僅同步少數屬性。它可以修改和自訂。 | <code>&quot;profile/givenName=profile/given_name&quot;、</code><br><code>“profile/familyName=profile/family_name”、</code><br><code>&quot;rep:fullname=profile/name&quot;、</code><br><code>&quot;profile/email=profile/email&quot;、</code><br><code>&quot;access_token=access_token&quot;、</code><br><code>&quot;refresh_token=refresh_token&quot;</code> |  |
+| user.propertyMapping | 提供的 `UserInfoProcessor` 實施僅同步少數屬性。它可以修改和自訂。 | <code>&quot;profile/givenName=profile/given_name&quot;、</code><br><code>“profile/familyName=profile/family_name”、</code><br><code>&quot;rep:fullname=profile/name&quot;、</code><br><code>&quot;profile/email=profile/email&quot;、</code><br><code>&quot;access_token=access_token&quot;、</code><br><code>&quot;refresh_token=refresh_token&quot;</code> |
 | `user.membershipNestingDepth` | 傳回會籍關係同步時群組內嵌的深度上限。值為 0 可有效停用群組會籍查詢。值為 1 僅新增使用者的直接群組。僅在同步使用者會籍系譜時，此值同步單一群組無效。 | 1 |
 
 ### 設定外部登入模組 {#configure-the-external-login-module}

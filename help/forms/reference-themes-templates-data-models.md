@@ -4,10 +4,10 @@ description: AEM Forms提供範例調適型表單主題、範本和表單資料�
 feature: Adaptive Forms, Foundation Components
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
 role: User, Developer, Admin
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '778'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -16,26 +16,26 @@ ht-degree: 4%
 
 | 套用至 | 文章連結 |
 | -------- | ---------------------------- |
-| 根據核心元件的最適化表單 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=zh-Hant) |
+| 根據核心元件的最適化表單 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) |
 | 根據Foundation元件的最適化表單 | 本文章 |
 
 >[!NOTE]
 >
-> Adobe建議針對[建立新的Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md)或[將Adaptive Forms新增至AEM Sites頁面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)，使用現代且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文說明使用基礎元件製作最適化Forms的舊方法。
+> Adobe建議針對[建立新的Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)或[將Adaptive Forms新增至AEM Sites頁面](/help/forms/creating-adaptive-form-core-components.md)，使用現代且可擴充的資料擷取[核心元件](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文說明使用基礎元件製作最適化Forms的舊方法。
 
-AEM Formsas a Cloud Service提供多種參考主題、範本和表單資料模型(FDM)，可幫助您快速開始建立最適化Forms。 您可以從軟體發佈入口網站[&#128279;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip)下載參考內容套件，並使用[套件管理員](/help/implementing/developing/tools/package-manager.md)在您的生產、開發或本機開發環境中安裝[參考內容套件](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip)，以將這些參考資產傳送到您的環境。
+AEM Forms as a Cloud Service提供多種參考主題、範本和表單資料模型(FDM)，可幫助您快速開始建立最適化Forms。 您可以從軟體發佈入口網站[下載](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip)參考內容套件，並使用[套件管理員](/help/implementing/developing/tools/package-manager.md)在您的生產、開發或本機開發環境中安裝[參考內容套件](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip)，以將這些參考資產傳送到您的環境。
 
 參考內容套件中包含的主題、範本和表單資料模型(FDM)包括：
 
 
 | 主題 | 範本 | 表單資料模型(FDM) |
----------|----------|---------
+|---------|----------|---------|
 | Canvas 3.0 | 基本 | Microsoft Dynamics 365 |
 | 寧靜 | 空白 | Salesforce |
 | 城市化 |   |  |
 | Ultraminary |  |  |
 | 貝瑞爾 |  |  |
-| 保健 |  |   |
+| 醫療保健 |  |   |
 | FSI |   |   |
 
 ## 參考主題 {#reference-themes}
@@ -47,7 +47,7 @@ AEM Formsas a Cloud Service提供多種參考主題、範本和表單資料模�
 * 寧靜
 * 城市化
 * Ultraminary
-* 保健
+* 醫療保健
 * FSI （金融服務與保險）
 
 每個佈景主題都包含獨特且優雅的樣式，可用來為使用者建立令人愉悅的最適化表單。 它包含面板、文字方塊、數值方塊、選項按鈕、表格和切換器等選取器的唯一樣式。 這些主題中的樣式是根據需求。 例如，在特定案例中，您需要使用簡潔字型的極簡佈景主題。 自由佈景主題可讓您達到這個效果。
@@ -91,7 +91,7 @@ Ultraminary主題使用深藍色陰影來反白標示元件，例如定位點、
 
 ![超海洋佈景主題](assets/ultramarine.png)
 
-## 保健 {#healthcare}
+## 醫療保健 {#healthcare}
 
 醫療保健主題使用深綠色陰影來反白顯示標籤、面板、文字方塊和按鈕等元件。
 
@@ -129,7 +129,7 @@ FSI主題強調表單的極簡和功能外觀。 當您將FSI主題套用至表�
 * Microsoft® Dynamics 365
 * Salesforce
 
-如需使用這些模型的詳細資訊，請參閱[設定Microsoft Dynamics 365和Salesforce雲端服務](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=zh-Hant#configure-dynamics-cloud-service)
+如需使用這些模型的詳細資訊，請參閱[設定Microsoft Dynamics 365和Salesforce雲端服務](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=en#configure-dynamics-cloud-service)
 
 
 ## 另請參閱 {#see-also}

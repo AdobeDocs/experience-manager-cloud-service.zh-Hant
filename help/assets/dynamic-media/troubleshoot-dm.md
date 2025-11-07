@@ -1,13 +1,13 @@
 ---
 title: Dynamic Media 疑難排解
-description: 瞭解當您在Dynamic Media中處理影像、集合和檢視器時，可以嘗試的疑難排解提示。
+description: 瞭解當您在Dynamic Media中處理影像、集和檢視器時，可以嘗試的疑難排解提示。
 contentOwner: Rick Brough
 feature: Troubleshooting,Image Sets,Viewers
 role: Admin,User
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
-source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
-source-wordcount: '1141'
+source-wordcount: '1144'
 ht-degree: 1%
 
 ---
@@ -16,9 +16,9 @@ ht-degree: 1%
 
 下列主題說明Dynamic Media的疑難排解。
 
-## 全新Dynamic Media設定 {#new-dm-config}
+## 新增Dynamic Media設定 {#new-dm-config}
 
-請參閱[新Dynamic Media組態疑難排解](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config)。
+請參閱[新Dynamic Media組態的疑難排解](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config)。
 
 ## 一般(所有Assets) {#general-all-assets}
 
@@ -26,18 +26,18 @@ ht-degree: 1%
 
 ### 資產同步狀態屬性 {#asset-synchronization-status-properties}
 
-您可在CRXDE Lite中檢閱下列資產屬性，以確認已成功將資產從Adobe Experience Manager同步至Dynamic Media：
+您可在CRXDE Lite中檢閱下列資產屬性，以確認資產成功從Adobe Experience Manager同步至Dynamic Media：
 
 | **屬性** | **範例** | **說明** |
 |---|---|---|
-| `<object_node>/jcr:content/metadata/dam:scene7ID` | **`a|364266`** | 節點連結至Dynamic Media的一般指標。 |
+| `<object_node>/jcr:content/metadata/dam:scene7ID` | **`a\|364266`** | 節點連結至Dynamic Media的一般指標。 |
 | `<object_node>/jcr:content/metadata/dam:scene7FileStatus` | **PublishComplete**&#x200B;或錯誤文字 | 將資產上傳至Dynamic Media的狀態。 |
-| `<object_node>/jcr:content/metadata/dam:scene7File` | **myCompany/myAssetID** | 必須填入，才能產生Dynamic Media遠端資產的URL。 |
+| `<object_node>/jcr:content/metadata/dam:scene7File` | **myCompany/myAssetID** | 必須填入才能產生Dynamic Media遠端資產的URL。 |
 | `<object_node>/jcr:content/dam:lastSyncStatus` | **成功**&#x200B;或&#x200B;**失敗：`<error text>`** | 集合（迴轉集、影像集等）、影像預設集、檢視器預設集、資產的影像地圖更新或已編輯影像的同步狀態。 |
 
 ### 同步記錄 {#synchronization-logging}
 
-同步處理錯誤和問題記錄在`error.log` (Experience Manager伺服器目錄`/crx-quickstart/logs/`)。 有足夠的記錄可判斷大部分問題的根本原因，但您可以透過Sling主控台([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog))增加`com.adobe.cq.dam.ips`封裝上DEBUG的記錄以收集更多資訊。
+同步處理錯誤和問題記錄在`error.log` (Experience Manager伺服器目錄`/crx-quickstart/logs/`)。 有充足的記錄可判斷大部分問題的根本原因，但您可以透過Sling主控台(`com.adobe.cq.dam.ips`https://localhost[/system/console/slinglog:4502)增加](https://localhost:4502/system/console/slinglog)套件上DEBUG的記錄以收集詳細資訊。
 
 ### 版本控制 {#version-control}
 
@@ -64,13 +64,13 @@ ht-degree: 1%
     <ol>
      <li><p>前往CRX/DE：</p>
       <ul>
-       <li>檢查JCR <code>/etc/dam/presets/viewer/&lt;preset&gt; has lastReplicationAction</code>中的預設集是否已定義。 如果您從Experience Manager6.x升級至6.4並選擇退出移轉，則此位置適用。 否則，位置為<code>/conf/global/settings/dam/dm/presets/viewer</code>。</li>
+       <li>檢查JCR <code>/etc/dam/presets/viewer/&lt;preset&gt; has lastReplicationAction</code>中的預設集是否已定義。 如果您從Experience Manager 6.x升級至6.4並選擇退出移轉，則此位置適用。 否則，位置為<code>/conf/global/settings/dam/dm/presets/viewer</code>。</li>
        <li>確認JCR中的資產在中繼資料下有<code>dam:scene7FileStatus</code><strong> </strong>顯示為<code>PublishComplete</code>。</li>
       </ul> </li>
     </ol> </td>
    <td><p>重新整理頁面/導覽至其他頁面並返回（側邊欄JSP必須重新編譯）</p> <p>如果這樣行不通：</p>
     <ul>
-     <li>Publish資產。</li>
+     <li>發佈資產。</li>
      <li>重新上傳資產並發佈。</li>
     </ul> </td>
   </tr>
@@ -80,8 +80,8 @@ ht-degree: 1%
    <td><p>轉盤僅使用相同大小的影像。</p> </td>
   </tr>
   <tr>
-   <td>影像沒有使用Dynamic Media檢視器預覽</td>
-   <td><p>檢查中繼資料屬性(CRXDE Lite)中是否包含<code>dam:scene7File</code></p> </td>
+   <td>影像未使用動態媒體檢視器預覽</td>
+   <td><p>檢查資產的中繼資料屬性(CRXDE Lite)中是否包含<code>dam:scene7File</code></p> </td>
    <td><p>檢查所有資產是否已完成處理。</p> </td>
   </tr>
   <tr>
@@ -134,12 +134,12 @@ ht-degree: 1%
    <td>視訊未編碼</td>
    <td>
     <ul>
-     <li>檢查是否已設定Dynamic MediaCloud Service。</li>
+     <li>檢查是否已設定Dynamic Media Cloud Service。</li>
      <li>檢查視訊設定檔是否與上傳資料夾相關聯。</li>
     </ul> </td>
    <td>
     <ol>
-     <li>檢查Cloud Service底下的「Dynamic Media設定」是否已正確設定。</li>
+     <li>檢查雲端服務底下的Dynamic Media設定是否已正確設定。</li>
      <li>檢查資料夾是否有視訊設定檔。 此外，檢查視訊設定檔。</li>
     </ol> </td>
   </tr>
@@ -187,16 +187,16 @@ ht-degree: 1%
 **解決方案**
 
 1. 瀏覽至管理工具中的檢視器預設集清單： `https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html`
-1. 選取所有檢視器預設集，然後選取&#x200B;**Publish**。
+1. 選取所有檢視器預設集，然後選取&#x200B;**發佈**。
 1. 導覽回範例管理員，並觀察未啟用的資產計數現在為零。
 
 ### 問題：檢視器預設集圖稿從資產詳細資料中的預覽或複製URL/內嵌程式碼中返回404 {#viewer-preset-404}
 
 **如何偵錯**
 
-在CRXDE Lite中，執行下列動作：
+在CRXDE Lite中執行下列動作：
 
-1. 導覽至Dynamic Media同步處理資料夾中的`<sync-folder>/_CSS/_OOTB`資料夾（例如，`/content/dam/_CSS/_OOTB`）。
+1. 導覽至Dynamic Media同步處理資料夾中的`<sync-folder>/_CSS/_OOTB`資料夾（例如`/content/dam/_CSS/_OOTB`）。
 1. 尋找有問題的資產的中繼資料節點（例如，`<sync-folder>/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png/jcr:content/metadata/`）。
 1. 檢查`dam:scene7*`屬性是否存在。 如果資產已成功同步和發佈，您會看到`dam:scene7FileStatus`集合為&#x200B;**PublishComplete**。
 1. 串連下列屬性和字串常值的值，嘗試直接向Dynamic Media要求圖稿：
@@ -211,12 +211,12 @@ ht-degree: 1%
 
 如果範例資產或檢視器預設集圖稿尚未同步或發佈，請重新啟動整個複製/同步程式：
 
-1. 導覽至「CRXDE Lite」。
+1. 導覽至CRXDE Lite。
 1. 刪除`<sync-folder>/_CSS/_OOTB`。
 1. 瀏覽至CRX封裝管理員： `https://localhost:4502/crx/packmgr/`。
 1. 在清單中搜尋檢視器套件；它以`cq-dam-scene7-viewers-content`開頭。
 1. 選取&#x200B;**重新安裝**。
-1. 在Cloud Service底下，導覽至Dynamic Media設定頁面，然後開啟Dynamic Media - S7設定的設定對話方塊。
+1. 在雲端服務底下，導覽至Dynamic Media設定頁面，然後開啟Dynamic Media - S7設定的設定對話方塊。
 1. 不做任何變更，選取&#x200B;**儲存**。
 這個儲存動作會再次觸發邏輯，以建立並同步範例資產、檢視器預設集CSS和圖稿。
 
@@ -237,4 +237,4 @@ ht-degree: 1%
 1. 刪除`viewer`資料夾。
 1. 在CRXDE Lite頁面的左上角附近，選取&#x200B;**[!UICONTROL 全部儲存]**。
 1. 在CRXDE Lite頁面的左上角，選取&#x200B;**首頁**&#x200B;圖示。
-1. 在Cloud Service[&#128279;](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)中重新建立Dynamic Media設定。
+1. 在雲端服務[中重新建立](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services)Dynamic Media設定。

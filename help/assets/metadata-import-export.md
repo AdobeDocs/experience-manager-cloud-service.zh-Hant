@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Metadata
 role: User, Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 10%
@@ -32,7 +32,7 @@ Adobe Experience Manager Assets可讓您使用CSV檔案大量匯入資產中繼�
    | ---------------------- | ------- |
    | 批次大小 | 批次中要匯入中繼資料的資產數量。 預設值為 50。最大值為100。 |
    | 欄位分隔符號 | 預設值為`,` （逗號）。 您可以指定任何其他字元。 |
-   | 多值分隔符號 | 中繼資料值的分隔符號。 預設值為`|`。 |
+   | 多值分隔符號 | 中繼資料值的分隔符號。 預設值為`\|`。 |
    | 啟動工作流程 | 預設為False。 設為`true`時，預設設定對DAM中繼資料WriteBack工作流程(將中繼資料寫入二進位XMP資料)有效。 啟用工作流程會拖慢系統速度。 |
    | 資產路徑欄名稱 | 為含有資產的CSV檔案定義欄名稱。 |
 
@@ -75,7 +75,7 @@ Adobe Experience Manager Assets可讓您使用CSV檔案大量匯入資產中繼�
 1. 在&#x200B;**[!UICONTROL 要匯出的屬性]**&#x200B;欄位中，指定您是要匯出所有屬性還是特定屬性。 如果您選擇要匯出的「選擇性」屬性，請新增所需的屬性。
 
 1. 從工具列中選取&#x200B;**[!UICONTROL 匯出]**。 系統會顯示訊息，確認中繼資料已匯出。 關閉訊息。
-1. 開啟導出作業的收件箱通知。選擇作業，然後從工具 **[!UICONTROL 欄中]** ，按一下「開啟」。若要下載含有中繼資料的CSV檔案，請從工具列選取&#x200B;**[!UICONTROL CSV下載]**。 按一下&#x200B;**[!UICONTROL 關閉]**。
+1. 開啟匯出作業的收件箱通知。選擇作業，然後從工具 **[!UICONTROL 欄中]** ，按一下「開啟」。若要下載含有中繼資料的CSV檔案，請從工具列選取&#x200B;**[!UICONTROL CSV下載]**。 按一下&#x200B;**[!UICONTROL 關閉]**。
 
    ![用於下載包含大量匯出之中繼資料的CSV檔案的對話方塊](assets/csv_download.png)
 

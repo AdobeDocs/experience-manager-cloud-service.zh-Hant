@@ -4,7 +4,7 @@ description: 了解如何在 Adobe Experience Manager as a Cloud Service 中保�
 feature: Headless, Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '1952'
 ht-degree: 99%
@@ -299,7 +299,7 @@ query getAdventuresByActivity($activity: String!) {
 | 快取類型 | [HTTP 標頭](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control) | cURL | OSGi 設定 | Cloud Manager |
 |--- |--- |--- |--- |--- |
 | 瀏覽器 | `max-age` | `cache-control : max-age` | `cacheControlMaxAge` | `graphqlCacheControl` |
-| CDN | `s-maxage` | `surrogate-control : max-age` | `surrogateControlMaxAge` | `graphqlSurrogateControl` | 60 |
+| CDN | `s-maxage` | `surrogate-control : max-age` | `surrogateControlMaxAge` | `graphqlSurrogateControl` \|60 |
 | CDN | `stale-while-revalidate` | `surrogate-control : stale-while-revalidate ` | `surrogateControlStaleWhileRevalidate` | `graphqlStaleWhileRevalidate` |
 | CDN | `stale-if-error` | `surrogate-control : stale-if-error` | `surrogateControlStaleIfError` | `graphqlStaleIfError` |
 
@@ -382,7 +382,7 @@ curl -u admin:admin -X POST \
 
 ### 使用 OSGi 設定管理快取 {#cache-osgi-configration}
 
-若要全域管理快取，您可以為&#x200B;**持續性查詢服務設定**&#x200B;[進行 OSGi 設定](/help/implementing/deploying/configuring-osgi.md)。
+若要全域管理快取，您可以為&#x200B;**持續性查詢服務設定**[進行 OSGi 設定](/help/implementing/deploying/configuring-osgi.md)。
 
 >[!NOTE]
 >

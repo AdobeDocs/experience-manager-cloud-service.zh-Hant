@@ -5,7 +5,7 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '1918'
 ht-degree: 2%
@@ -95,8 +95,7 @@ AEM as a Cloud Service會套用伺服器端收集規則來計數內容請求。 
 | 來自DDOS攻擊的流量 | 已排除 | DDOS保護。 AEM會自動偵測部分DDOS攻擊並加以封鎖。 偵測到的DDOS攻擊無法計費。 |
 | AEM as a Cloud Service New Relic監控 | 已排除 | AEM as a Cloud Service全球監控。 |
 | 供客戶監控其Cloud Service程式的URL | 已排除 | Adobe建議您使用URL來監視外部可用性或健康狀態檢查。<br><br>`/system/probes/health` |
-| AEM as a Cloud Service Pod熱身服務 | 已排除 |
-| 代理程式： skyline-service-warmup/1.* |
+| AEM as a Cloud Service Pod熱身服務 | 已排除 | 代理程式： skyline-service-warmup/1.* |
 | 著名的搜尋引擎、社交網路和HTTP資料庫（由Fastly標籤） | 已排除 | 定期造訪網站以重新整理其搜尋索引或服務的知名服務： <br><br>範例： <br>· AddSearchBot<br>· AhrefsBot<br>· Applebot<br>· Ask Jeeves Corporate Spider<br>· Bingbot<br>· BingPreview<br>· BLEXBot<br>· BuildWith<br>· Bytespider<br>· CrawlerKengo<br>· Facebookexternalhit<br>· Google AdsAdsAds機器人<br>· Google AdsBot Mobile<br>· Googlebot<br>· Googlebot Mobile<br>· lmspider<br>· LucidWorks<br>· `MJ12bot`<br>· Pinterest<br>· SemrushBot<br>· SiteImprovement<br>· StatusCake<br>· YandexBot<br>· ContentKing<br>克勞德博特<br> |
 | 排除Commerce integration framework呼叫 | 已排除 | 向AEM提出且轉送至Commerce integration framework的請求（URL開頭為`/api/graphql`）為避免重複計算，Cloud Service不為這些請求記帳。 |
 | 排除`manifest.json` | 已排除 | 資訊清單不是API呼叫。 此處提供如何在桌上型電腦或行動電話上安裝網站的資訊。 Adobe不應將JSON請求計算為`/etc.clientlibs/*/manifest.json` |

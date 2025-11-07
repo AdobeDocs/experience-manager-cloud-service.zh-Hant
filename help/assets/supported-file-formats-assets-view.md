@@ -5,7 +5,7 @@ role: User, Leader, Admin, Developer
 contentOwner: AG
 exl-id: 5936ace2-318e-4888-9ad4-23e6f6bfb857
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 100%
@@ -55,10 +55,12 @@ ht-degree: 100%
 
 ## 搜尋、使用和編輯資產 {#support-to-search-use-edit}
 
+<!--writer - please check RAW files row below. There was an extra column, so I deleted a duplicate section. I think I did it right. -->
+
 | 資產類型 | [下載](/help/assets/manage-organize-assets-view.md#download) | 拖放 | [影像編輯器](/help/assets/edit-images-assets-view.md) | [搜尋](/help/assets/search-assets-view.md) | [智慧標記](/help/assets/metadata-assets-view.md#tags) | [重新命名](/help/assets/manage-organize-assets-view.md) | [版本](/help/assets/manage-organize-assets-view.md#versions-of-assets) |
 |---------------|----------|---------------|--------------|----------|------------|----------|----------|
 | 點陣圖 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| RAW 檔案 | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ | ✓ |
+| RAW 檔案 | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | 資料夾 | ✓ | ✓ | − | ✓ | − | ✓ | ✓ |
 | 影片 | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ |
 | CC Libraries | − | − | − | − | − | ✓ | ✓ |
@@ -128,4 +130,4 @@ ht-degree: 100%
 
 * 若要提供文件意見回饋，請使用右側邊欄提供的[!UICONTROL 編輯此頁面]![來編輯頁面](assets/do-not-localize/edit-page.png)或[!UICONTROL 記錄問題]![來建立 GitHub 問題](assets/do-not-localize/github-issue.png)
 
-* 聯絡[客戶服務](https://experienceleague.adobe.com/zh-hant?support-solution=General#support)
+* 聯絡[客戶服務](https://experienceleague.adobe.com/?support-solution=General#support)
