@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: cb4764709a86ae2acb33a10dc9a53126804ee7ec
+source-git-commit: a5e20bd3ee4d332b46bdff2fbf5222c9a9fead2f
 workflow-type: tm+mt
-source-wordcount: '1666'
-ht-degree: 66%
+source-wordcount: '1871'
+ht-degree: 59%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 66%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440931?captions=chi_hant&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -66,7 +66,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -76,7 +76,19 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 **適用於自適應表單和表單片段的通用編輯器**
 
-Universal Editor現在為建立最適化Forms和可重複使用的表單片段提供統一的編寫體驗。 作者能以視覺化方式設計表單、設定提交動作，以及在直覺式的WYSIWYG環境中整合reCAPTCHA驗證。
+Universal Editor現在為建立最適化Forms和可重複使用的表單片段提供統一的編寫體驗。 作者可在直覺式的WYSIWYG環境中，運用強大的擴充功能和完整的提交功能，以視覺化方式設計表單。 該編輯器整合了reCAPTCHA驗證以增強安全性，提供預填服務以減少手動輸入，並支援所有裝置的回應式設計。
+
+**可用的副檔名：**
+
+* **規則編輯器**：視覺化規則編輯器可讓表單作者新增動態行為至表單欄位，而不需要編碼、支援事件導向規則、即時驗證及錯誤處理。
+* **表單屬性**：精靈，可協助使用者在編輯器中直接設定提交動作、預填服務、感謝訊息以及其他與表單相關的行為。
+* **表單資料Source和繫結參考**：資料來源擴充功能可讓表單作者將與資料模型相關聯的元件直接新增至最適化表單，並從所有元件的樹狀結構選取項中選取繫結參考。
+
+**支援的提交動作：**
+
+通用編輯器支援完整的提交工作流程，包括自訂提交動作、提交至Microsoft SharePoint、提交至Microsoft OneDrive、提交至Azure Blob儲存體、提交至REST端點、叫用AEM工作流程、叫用Power Automate流程、提交至Marketo Engage、提交至Adobe Experience Platform (AEP)、提交至試算表、使用表單資料模型(FDM)提交、提交至Workfront Fusion以及傳送電子郵件。
+
+如需完整詳細資訊，請參閱適用於Forms的[Edge Delivery Services通用編輯器檔案](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)。 如需設定提交動作的資訊，請參閱[最適化表單提交動作](/help/edge/docs/forms/universal-editor/submit-action.md)。
 
 <!-- ### Pre-Release features in AEM Forms 
 
