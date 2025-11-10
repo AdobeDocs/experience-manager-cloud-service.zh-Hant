@@ -4,9 +4,9 @@ description: 如何建立品牌導向和個人化的通訊？
 feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
+source-git-commit: 5e3175cc4d96c89df4154ae42c5042cf9c2ca739
 workflow-type: tm+mt
-source-wordcount: '1706'
+source-wordcount: '1710'
 ht-degree: 2%
 
 ---
@@ -181,3 +181,4 @@ API參考檔案提供API提供的所有引數、驗證方法和各種服務的�
 >* 最適化AEM Forms和通訊API的[Forms as a Cloud Service架構](/help/forms/aem-forms-cloud-service-architecture.md)
 >* [通訊處理 — 同步API](/help/forms/aem-forms-cloud-service-communications.md)
 >* [通訊處理 — 批次API](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [通訊處理 — 隨選API](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)
