@@ -92,7 +92,7 @@ OAuth伺服器對伺服器驗證允許以權杖為基礎的安全存取AEM Forms
    **B。適用於Adaptive Forms Runtime API**
 
    1. **按一下[新增API]**
-在您的專案中，按一下**新增API**&#x200B;按鈕
+在您的專案中，按一下&#x200B;**新增API**&#x200B;按鈕
 
       ![新增API](/help/forms/assets/adc-add-api.png)
 
@@ -102,7 +102,7 @@ OAuth伺服器對伺服器驗證允許以權杖為基礎的安全存取AEM Forms
       3. 按一下「**下一步**」。
 
    3. **驗證方法**
-選取**OAuth伺服器對伺服器**&#x200B;驗證方法。
+選取&#x200B;**OAuth伺服器對伺服器**&#x200B;驗證方法。
 
 
       ![選取驗證方法](/help/forms/assets/adc-add-authentication-method.png)
