@@ -4,10 +4,10 @@ description: 集合是Experience Manager Assets檢視中的一組資產。 使�
 exl-id: 540dc1d9-eaf4-4e08-8087-dc58da23a6e8
 feature: Collections, Asset Management
 role: User
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 836805b4eac5ab940dff5c66ec0dcf1ca8652837
 workflow-type: tm+mt
-source-wordcount: '910'
-ht-degree: 90%
+source-wordcount: '1084'
+ht-degree: 78%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 90%
 >title="管理集合"
 >abstract="收藏集是 Assets 檢視中的一組資產、檔案夾或其他集合。使用集合在使用者之間共用資產。和檔案夾不同，集合可包含來自不同位置的資產。您可以和使用者共用多個集合。每個集合都包含資產的參考資料。資產的參考完整性會跨越集合來維護。"
 
-收藏集是Adobe Experience Manager Assets檢視中的一組資產、資料夾或其他收藏集。 使用集合在使用者之間共用資產。
+集合是指 Adobe Experience Manager Assets 視圖中的一組資產、資料夾或其他集合。使用集合在使用者之間共用資產。
 
 和檔案夾不同，集合可包含來自不同位置的資產。
 
@@ -37,6 +37,8 @@ You can share collections with various users that are assigned different levels 
 * [將資產新增至集合](#add-assets-to-collection)
 
 * [從集合移除資產](#remove-assets-from-collection)
+
+* [在集合內搜尋](#search-collection)
 
 * [建立智慧型集合](#create-smart-collection)
 
@@ -93,6 +95,32 @@ You can share collections with various users that are assigned different levels 
 1. 按一下集合，然後選取您需要從集合移除的項目。
 
 1. 按一下&#x200B;**[!UICONTROL 移除]**。
+
+## 在集合內搜尋 {#search-collection}
+
+您可以在集合中搜尋，輕鬆尋找相關資產。 要執行此操作，請執行下列步驟：
+
+* 瀏覽至&#x200B;**[!DNL Collections]**。 在搜尋列中，輸入關鍵字以找出所需的集合。 搜尋列會顯示所選集合的位置。
+
+* 若要精簡搜尋結果，請開啟&#x200B;**[!DNL Filters]**&#x200B;並確保在&#x200B;**[!DNL Collections]**&#x200B;下選取&#x200B;**[!DNL Asset Type]**。
+
+* 在&#x200B;**[!DNL Collection Visibility]**&#x200B;下拉式清單中，選擇下列其中一個選項：
+
+   * **[!DNL All]：**&#x200B;顯示所有集合，無論可見度為何。
+   * **[!DNL Public Collection]：**&#x200B;只顯示所有使用者可見的集合。
+   * **[!DNL Private Collection]：**&#x200B;只顯示特定使用者或群組所限制或可見的集合。
+
+* 在[!DNL Collection Type]下拉式清單中，選擇下列其中一個選項：
+
+   * **[!DNL All]：**&#x200B;同時顯示一般和智慧型集合。
+   * **[!DNL Collection]：**&#x200B;顯示手動建立的集合，其中資產會個別新增。
+   * **[!DNL Smart Collection]：**&#x200B;顯示自動包含在[智慧型集合](#manage-smart-collection)下儲存之資產的集合。
+
+* **[!DNL Created Date]**&#x200B;下拉式清單可讓您根據集合建立時間來篩選集合。 您可以指定日期範圍以尋找最近建立或較舊的集合。
+
+  ![搜尋集合](assets/search-collection.png)
+
+如需詳細資訊，請參閱[搜尋資產](search-assets-view.md)、[篩選搜尋結果](search-assets-view.md#refine-search-results)或[管理已儲存的搜尋](search-assets-view.md##saved-search)。
 
 ## 管理智慧型集合 {#manage-smart-collection}
 
@@ -208,4 +236,4 @@ Click **[!UICONTROL Collections]** in the left rail and use the Search box to sp
 
 * 若要提供文件意見回饋，請使用右側邊欄提供的[!UICONTROL 編輯此頁面]![來編輯頁面](assets/do-not-localize/edit-page.png)或[!UICONTROL 記錄問題]![來建立 GitHub 問題](assets/do-not-localize/github-issue.png)
 
-* 聯絡[客戶服務](https://experienceleague.adobe.com/zh-hant?support-solution=General#support)
+* 聯絡[客戶服務](https://experienceleague.adobe.com/?support-solution=General#support)

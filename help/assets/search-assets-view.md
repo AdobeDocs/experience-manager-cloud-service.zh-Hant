@@ -4,10 +4,10 @@ description: 瞭解如何在AEM Assets檢視中搜尋和探索資產。 強大�
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 339528082561c432b7b98290d09e904ee058186f
+source-git-commit: 836805b4eac5ab940dff5c66ec0dcf1ca8652837
 workflow-type: tm+mt
-source-wordcount: '2255'
-ht-degree: 83%
+source-wordcount: '2277'
+ht-degree: 82%
 
 ---
 
@@ -33,22 +33,19 @@ ht-degree: 83%
 
 ## 篩選搜尋結果 {#refine-search-results}
 
+您可以套用多個篩選條件，調整搜尋結果以尋找相關資產。 這些篩選器由管理員設定，且以檔案、資料夾和集合為基礎。 請參閱[自訂搜尋篩選器](custom-search-filters.md)。
+
+![搜尋篩選器](assets/filters-panel.gif)
+
 您可以根據以下參數來篩選搜尋結果。
 
-![搜尋篩選器](assets/filters1.png)
-
-*圖：請根據各種參數篩選已搜尋的資產。*
-
 * 資產狀態：使用 `Approved`、`Rejected` 或 `No Status` 資產狀態來篩選搜尋結果。
-
 * 檔案類型：依照支援的檔案類型篩選搜尋結果，也就是 `Images`、`Documents` 和 `Videos`。
 * MIME 類型：篩選一個或更多支援的檔案格式。<!-- TBD:  [supported file formats](/help/using/supported-file-formats.md). -->
 * 影像大小：提供一個或更多最小和最大尺寸，以篩選影像。以尺寸 (像素) 提供大小，而非影像的檔案大小。
 * 建立日期：資產的建立日期如中繼資料中所提供。使用的標準日期格式為 `yyyy-mm-dd`。
 * 修改日期：上次修改資產的日期。使用的標準日期格式為 `yyyy-mm-dd`。
-
 * 過期日期：根據`Expired`資產狀態來篩選搜尋結果。此外，您可以指定資產的過期日期範圍以進一步篩選搜尋結果。
-
 * 自訂篩選器： [新增自訂篩選器](#custom-filters)至Assets檢視使用者介面。 除了標準篩選器之外，您還可以套用自訂篩選器來縮小您的搜尋結果。
 
 您可以依照 `Name`、`Relevance`、`Size`、`Modified` 和 `Created` 的遞增或遞減順序排序搜尋的資產。已搜尋的資產會依`Relevance` (依預設) 進行排序。
@@ -375,6 +372,7 @@ Assets檢視可讓您為組織選取預設登陸頁面。 使用「搜尋優先�
 
 * 若要提供文件意見回饋，請使用右側邊欄提供的[!UICONTROL 編輯此頁面]![來編輯頁面](assets/do-not-localize/edit-page.png)或[!UICONTROL 記錄問題]![來建立 GitHub 問題](assets/do-not-localize/github-issue.png)。
 
-* 聯絡[客戶服務](https://experienceleague.adobe.com/zh-hant?support-solution=General#support)
+* 聯絡[客戶服務](https://experienceleague.adobe.com/?support-solution=General#support)
+
 
 
