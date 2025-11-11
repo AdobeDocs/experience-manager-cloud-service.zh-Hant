@@ -4,9 +4,9 @@ description: AEM Forms通訊API概觀，包括驗證方法和完整的API參考
 role: Developer, User
 feature: Adaptive Forms, APIs & Integrations
 hide: true
-hidefromToC: true
+hidefromtoc: true
 index: false
-source-git-commit: 69704ca8de41c655b59ce6652a4a43b788ba75ec
+source-git-commit: fcc25eb44b485db69ec1c267f4cf8774c4279b24
 workflow-type: tm+mt
 source-wordcount: '899'
 ht-degree: 8%
@@ -22,7 +22,7 @@ AEM Forms API的結構化可透過兩個主要主控台進行存取：
 
 * [Adobe Developer Console (ADC)](https://developer.adobe.com/developer-console/) - Adobe Developer Console是Adobe API、事件、執行階段和App Builder的閘道。
 
-* [AEM Developer Console](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console) - AEM Developer Console提供用於偵錯和檢查AEM as a Cloud Service環境的工具。
+* [AEM Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console) - AEM Developer Console提供用於偵錯和檢查AEM as a Cloud Service環境的工具。
 
 每個主控台都可讓您存取不同的API和服務，以執行檔案處理、產生、轉換、加密和通訊工作。 API支援不同的[驗證方法](#authentication-methods)。
 

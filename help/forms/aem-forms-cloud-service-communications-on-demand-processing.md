@@ -4,9 +4,9 @@ description: 為Adobe Experience Manager Forms as a Cloud Service的互動式通
 role: Admin, Developer, User
 feature: Adaptive Forms,APIs & Integrations
 hide: true
-hidefromToC: true
+hidefromtoc: true
 index: false
-source-git-commit: 5e3175cc4d96c89df4154ae42c5042cf9c2ca739
+source-git-commit: cbf640e0c4643616638de96e9daa460cdcf2a4a5
 workflow-type: tm+mt
 source-wordcount: '2574'
 ht-degree: 1%
@@ -38,7 +38,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-> 若要進一步瞭解指派角色和授與使用者存取權，請參閱文章[新增使用者和角色](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-manager/content/requirements/users-and-roles)。
+> 若要進一步瞭解指派角色和授與使用者存取權，請參閱文章[新增使用者和角色](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles)。
 
 **Cloud Manager存取權**
 
@@ -118,7 +118,7 @@ ht-degree: 1%
       ![克隆Git存放庫](/help/forms/assets/repo-clone.png)
 
 
-### Git存放庫整合選項
+**Git存放庫整合選項**
 
 Adobe Cloud Manager支援兩種存放庫選項：
 
@@ -187,7 +187,7 @@ Adobe Cloud Manager支援兩種存放庫選項：
 
 >[!NOTE]
 >
-> 若要瞭解如何存取AEM雲端服務環境和AEM Forms端點，請參閱[管理環境檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=zh-Hant)。
+> 若要瞭解如何存取AEM雲端服務環境和AEM Forms端點，請參閱[管理環境檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html)。
 
 ### 步驟4： API存取設定
 
@@ -493,7 +493,7 @@ curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' \
 
    現在管道已建立，請部署您的`api.yaml`設定：
 
-   1. 從管道總覽&#x200B;**&#x200B;**
+   1. 從管道總覽&#x200B;****
       1. 在方案總覽頁面上，找到&#x200B;**管道**&#x200B;卡片
       2. 瀏覽至清單中新建立的設定管道。 例如，尋找您建立的管道名稱（例如「api-config-pipeline」）。 您可以檢視管道詳細資訊，包括狀態和上次執行。
 

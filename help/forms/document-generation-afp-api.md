@@ -4,16 +4,16 @@ description: 瞭解如何使用AFP Output Sync API來擷取及同步輸出轉譯
 feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, User
 exl-id: 5602fc63-ef74-44eb-b3be-61b8f8a2795a
-source-git-commit: 33dcc771c8c2deb2e5fcb582de001ce5cfaa9ce4
+source-git-commit: cbf640e0c4643616638de96e9daa460cdcf2a4a5
 workflow-type: tm+mt
-source-wordcount: '238'
-ht-degree: 14%
+source-wordcount: '253'
+ht-degree: 13%
 
 ---
 
 # 使用 AEM Forms API 產生 AFP 輸出
 
-<span class="preview">這是一項預先發佈功能，可透過我們的[預先發佈管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hant#new-features)存取。</span>
+<span class="preview">這是一項預先發佈功能，可透過我們的[預先發佈管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features)存取。</span>
 
 進階功能簡報(AFP)是專為列印目的而設計的高效能檔案格式。\
 本指南概述使用AEM Forms產生AFP輸出所需的所有必要步驟和設定。
@@ -39,12 +39,12 @@ To support AFP output generation, the following OSGi bundles must be present and
 
 ### 授權
 
-您可以將&#x200B;**BasicAuth** （管理員認證）用於本機環境，或將&#x200B;**BearerAuth**&#x200B;授權用於AEM Cloud執行個體。
+您可以針對本機環境使用&#x200B;**BasicAuth** （管理員認證），或針對AEM Cloud執行個體使用&#x200B;**OAuth伺服器對伺服器**&#x200B;授權。
 
 ### 請求
 
 **端點：**
-`POST http://<server>:<port>/adobe/forms/document/generate/afp`
+[https://[publish-url].adobeaemcloud.com/adobe/forms/doc/v1/adobe/forms/doc/v1/generate/afp](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Communications-Services/paths/~1adobe~1forms~1doc~1v1~1generate~1afp/post)
 
 ### 標頭
 
