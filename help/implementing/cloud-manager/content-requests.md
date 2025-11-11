@@ -5,7 +5,7 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
+source-git-commit: f9a767e3d5ae33cd46dc100c2ee59ec9ce8f63ac
 workflow-type: tm+mt
 source-wordcount: '1918'
 ht-degree: 2%
@@ -109,7 +109,7 @@ AEM as a Cloud Service會套用伺服器端收集規則來計數內容請求。 
 ### 管理內容請求的實作技術 {#implementation-techniques-to-manage-crs}
 
 * 確保任何「找不到頁面」回應皆會以HTTP狀態404傳送。  如果以200狀態傳回，則會計入內容請求。
-* 將健康情況檢查或監控工具路由至/systems/probes/health URL，或使用HEAD方法而非GET以避免發生內容請求。
+* 將健康情況檢查或監視工具路由到/system/probes/health URL或使用HEAD方法而不是GET以避免發生內容請求。
 * 針對您與網站整合的任何自訂搜尋編目程式，在內容新鮮度的需求與AEM授權成本之間取得平衡。  過於激進的編目程式可能會使用許多內容請求。
 * 以伺服器端（狀態301或302）而非使用者端（狀態200含javascript重新導向）的方式處理任何重新導向，以避免兩個不同的內容請求。
 * 合併或減少API呼叫，這些是來自AEM的JSON回應，可載入以轉譯頁面。
