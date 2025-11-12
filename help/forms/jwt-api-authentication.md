@@ -6,9 +6,9 @@ feature: Adaptive Forms, APIs & Integrations
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: fcc25eb44b485db69ec1c267f4cf8774c4279b24
+source-git-commit: a9ef6553a7f480895f53f1240cd454c6f4fc7d24
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '451'
 ht-degree: 3%
 
 ---
@@ -78,7 +78,7 @@ JWT產生的存取權杖在目前憑證到期後或2026年3月1日（以較早�
 
 4. 產生存取權杖
 
-   使用Adobe IMS API以程式設計方式產生代號：
+   使用cURL命令以程式設計方式產生權杖：
 
    **必要的認證：**
 
@@ -92,7 +92,7 @@ JWT產生的存取權杖在目前憑證到期後或2026年3月1日（以較早�
    https://ims-na1.adobelogin.com/ims/token/v3
    ```
 
-   **範例要求(curl)：**
+   **範例要求(cURL)：**
 
    ```bash
    curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' \
@@ -112,6 +112,11 @@ JWT產生的存取權杖在目前憑證到期後或2026年3月1日（以較早�
    "expires_in": 86399
    }
    ```
+
+
+>[!NOTE]
+>
+> 若要進一步瞭解服務認證，以及如何使用Adobe IMS API產生存取權杖，[請按一下這裡](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials)。
 
 您現在可以使用產生的存取Token針對開發、預備或生產環境進行API呼叫。
 
