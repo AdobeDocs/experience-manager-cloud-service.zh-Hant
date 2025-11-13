@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 437b9bdf48fc8235ef90cac4a38c2a0b41f89a8f
+source-git-commit: d938abce2b46786343b19113454da1738a824ed0
 workflow-type: tm+mt
-source-wordcount: '1820'
+source-wordcount: '1847'
 ht-degree: 19%
 
 ---
@@ -78,7 +78,7 @@ Experience Platform頂端導覽列一律會顯示在畫面頂端。 這是一個
 
 ![Experience Cloud 標頭](assets/experience-cloud-header.png)
 
-如需Experience Platform頂端導覽列的詳細資訊，請參閱[Adobe Experience Platform UI指南](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
+如需Experience Platform頂端導覽列的詳細資訊，請參閱[Adobe Experience Platform UI指南](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
 
 #### 帳戶 {#user-properties}
 
@@ -142,6 +142,12 @@ Universal Editor工具列永遠出現在熒幕頂端[Experience Cloud標題](#ex
 如果您需要[設定本機開發目的的自訂驗證標頭](/help/implementing/universal-editor/developer-overview.md#auth-header)，請選取驗證標頭圖示。
 
 ![驗證標頭設定按鈕](assets/authentication-header-settings.png)
+
+#### 本機開發人員登入 {#local-developer-login}
+
+如果您需要在本機開發時輕鬆驗證本機的AEM SDK [，請選取本機開發人員登入圖示。](/help/implementing/universal-editor/local-dev.md)
+
+![本機開發人員登入按鈕](assets/local-developer-login.png)
 
 #### 回應式模式 {#emulator}
 

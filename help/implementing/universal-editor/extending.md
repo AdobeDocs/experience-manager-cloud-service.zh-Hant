@@ -4,9 +4,9 @@ description: 了解擴充通用編輯器功能的不同選項以便支援內容�
 feature: Developing
 role: Admin, Developer
 exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: d938abce2b46786343b19113454da1738a824ed0
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '565'
 ht-degree: 100%
 
 ---
@@ -28,7 +28,6 @@ ht-degree: 100%
 * **[AEM 網站管理員擴充功能](/help/sites-cloud/authoring/universal-editor/authoring.md#sites-console)**：在通用編輯器中頁面的位置開啟 Sites 控制台
 * **[AEM 頁面鎖定擴充功能](/help/sites-cloud/authoring/universal-editor/authoring.md#locking-pages)**：從通用編輯器檢視和變更頁面鎖定狀態
 * **[AEM 工作流程擴充功能](/help/sites-cloud/authoring/universal-editor/authoring.md#workflows)**：從通用編輯器啟動頁面和頁面內容的工作流程
-* **[AEM 通用編輯器開發人員登入擴充功能](/help/sites-cloud/authoring/universal-editor/authoring.md#developer-login)**：執行本機開發時輕鬆完成本機 AEM SDK 的驗證
 * **[產生變化版本](/help/generative-ai/generate-variations-integrated-editor.md)**：使用生成式 AI 直接在屬性面板中建立內容的變化版本。
 * **[通用編輯器的 AEM 產品選取器](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/ue-product-picker/)**：從編輯器中選取或移除產品資料，以便整合 Adobe Commerce 資料。
 * **[通用編輯器內容草稿](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/universal-editor-content-drafts/)**：建立、編輯和管理多個內容草稿。
