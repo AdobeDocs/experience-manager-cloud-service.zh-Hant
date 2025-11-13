@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 5474d0c4295cf8eb576cc416589727c67ffafac7
+source-git-commit: 39993d115d58d9dfe1f9328c5ceba0d30a78569d
 workflow-type: tm+mt
-source-wordcount: '1195'
+source-wordcount: '1213'
 ht-degree: 19%
 
 ---
@@ -16,17 +16,17 @@ ht-degree: 19%
 
 下節是 Experience Manager as a Cloud Service 目前維護版本的技術版本發行說明。
 
-## 23320 版 {#23320}
+## 23385 版 {#23385}
 
-以下摘要說明維護版本23320數的持續改善，該版本於2025年11月12日公開發佈。 前一個維護版本是 22943 版。
+以下摘要說明維護版本23385數的持續改善，該版本於2025年11月13日公開發佈。 前一個維護版本是 22943 版。
 
 啟用 2025.11.0 功能即可使用此維護版本的完整功能集。如需詳細資訊，請參閱 [Experience Manager 發行路徑圖](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
 >[!NOTE]
 >
->發行說23122已於11月3日設為私人。
+>版本 23320 和 23122 已設為私人版本。
 
-### 增強功能 {#enhancements-23320}
+### 增強功能 {#enhancements-23385}
 
 * CQ-4361363：最新的 AEM 和 Granite 翻譯。
 * Forms-21594：為內容作者啟用互動式通訊範本內容與版面配置鎖定功能。
@@ -61,7 +61,7 @@ ht-degree: 19%
 * SKYOPS-118390：將JCR資源更新至3.3.6。
 * SKYOPS-121082：更新`org.apache.sling.discovery.standalone`、`org.apache.sling.jcr.packageinit`和`org.apache.sling.commons.fsclassloader` Sling套裝的版本。
 
-### 已修正的問題 {#fixed-issues-23320}
+### 已修正的問題 {#fixed-issues-23385}
 
 * Assets-58926：修正DM中的視訊變更縮圖功能。
 * Assets-58623：設定存在時修正omnisearch中的npe。
@@ -88,13 +88,14 @@ ht-degree: 19%
 * SITES-35409：修正移動頁面時無法重新發佈已調整片段的錯誤。
 * SITES-15757：修正無法在移動頁面時重新發佈已調整頁面的錯誤。
 * SITES-34638：修正建立新版本時，不會納入祖父頁面屬性的錯誤。
+* SITES-35226：修正導致頁面編輯器中的資產選擇器在某些情況下無法載入的回歸。
 * SITES-35071：當Omnisearch使用引號中的短語時，CSV匯出會傳回未篩選的結果。
 * SITES-32182：使用通用編輯器的Edge Delivery — 修正包含已編碼請求引數的URL的編碼問題。
 * SITES-34324：使用通用編輯器的Edge Delivery — 修正使用tel：通訊協定轉譯連結的問題。
 * SITES-35333：使用通用編輯器的Edge Delivery — 修正頁面中繼資料中影像的資產轉譯選擇。
 * SITES-35549：使用通用編輯器的Edge Delivery — 修正頁面中繼資料中的雙重編碼html實體。
 
-#### AEM Guides {#guides-23320}
+#### AEM Guides {#guides-23385}
 
 * GUIDES-33597：如果將沒有屬性或值的空白`prop`元素新增到DITAVAL檔案，則無法新增其他`prop`元素。
 * GUIDES-33693：當您透過Experience Manager Guides UI重新上傳已編輯的影像時，影像的原始轉譯會更新，但關聯的DITA內容會繼續顯示影像的先前版本。
@@ -104,19 +105,19 @@ ht-degree: 19%
 如需更多有關該版本中新增功能和增強功能以及已修復問題的資訊，請查看 [Experience Manager Guides 發行藍圖](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)。
 
 
-### 已知問題 {#known-issues-23320}
+### 已知問題 {#known-issues-23385}
 
 * Forms-22633：使用依賴GuideBridge API （`getData`或`getDataXML`）的自訂程式碼時，表單提交可能會失敗。 如果您遇到此問題，請聯絡Adobe支援以尋求協助。
 
-### 已過時的功能和 API {#deprecated-23320}
+### 已過時的功能和 API {#deprecated-23385}
 
 [「已過時和已移除的功能及 API」](/help/release-notes/deprecated-removed-features.md)文件中詳細介紹 AEM as a Cloud Service 中已過時和已移除的功能及 API。
 
-### 安全性修正 {#security-23320}
+### 安全性修正 {#security-23385}
 
 AEM as a Cloud Service 專門負責將您的平台的安全性與效能最佳化。此維護版本解決 31 個已確認的漏洞，強化我們提供健全系統保護的承諾。
 
-### 嵌入技術 {#embedded-tech-23320}
+### 嵌入技術 {#embedded-tech-23385}
 
 | 技術 | 版本 | 連結 |
 |---|---|---|
