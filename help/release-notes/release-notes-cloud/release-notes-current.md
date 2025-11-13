@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: a5e20bd3ee4d332b46bdff2fbf5222c9a9fead2f
+source-git-commit: 95bebfd554aee90d0066e1d7dea5d5c7e43100e6
 workflow-type: tm+mt
-source-wordcount: '1871'
-ht-degree: 59%
+source-wordcount: '1887'
+ht-degree: 58%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 59%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440931?captions=chi_hant&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -66,7 +66,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -271,9 +271,9 @@ Now in beta, youcan deploy a config pipeline for features including CDN origin s
 
 AI解答為訪客引進了一種與您的內容互動的新方式。 透過擷取增強型產生(RAG)技術，使用AEM管理的資料，直接在數位體驗中提供準確、品牌一致的答案。
 
-在此測試版中，您可以在AEM Cloud Service環境中安全地探索AI答案。 此方法可讓您在將效能、準確性和整體體驗提供給您的即時受眾之前，先加以驗證。 驗證後，您就可以將AI Answers體驗提升至完整生產環境。
+我們正準備啟動AI Answers Beta計畫，目前正邀請客戶註冊其興趣。 由於Beta版的容量非常有限，提早註冊將獲得優先考量。 參與Beta版可讓您在AEM Cloud Service環境中探索AI答案、驗證效能和準確性，並在未來體驗正式推出之前協助打造體驗。
 
-若要要求測試版存取權或分享您的意見，請連絡[feedback-ai-answers@adobe.com](mailto:feedback-ai-answers@adobe.com)。
+若要要求參與或接收更新，請連絡[feedback-ai-answers@adobe.com](mailto:feedback-ai-answers@adobe.com)。
 
 
 ### RDE 快照 (Alpha 方案) {#rde-snapshot-program}
