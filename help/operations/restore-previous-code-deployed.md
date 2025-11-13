@@ -3,24 +3,27 @@ title: 還原先前部署的Source程式碼
 description: 瞭解如何將環境還原至其上次成功建置的&amp；ndash；不需要執行管道。
 feature: Operations
 role: Admin
-badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: 8f804f55-a66d-47ad-a48d-61b861cef4f7
-source-git-commit: 7968668766ae4c8a966bbde93aa2f2ac0c401659
+source-git-commit: 4008b2f81bbd81cef343c6d2b04ba536b66d7d89
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '578'
 ht-degree: 3%
 
 ---
 
 # 還原先前在AEM as a Cloud Service中部署的原始程式碼 {#restore-previous-code-deployed}
 
+<!-- BETA BADGE REMOVED FOR NOVEMBER 2025 CM RELEASE badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
+
 >[!NOTE]
 >
->本文所述功能僅可透過Beta版計畫使用。 若要註冊Beta版，請參閱[管道部署的一鍵回覆](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback)。
+>The feature described in this article is only available through the beta program. To sign up for the beta, see [One-click rollback for pipeline deployments](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback). -->
 
 使用&#x200B;**還原先前部署的程式碼**，將環境立即復原到其上次成功的組建 — 不需要執行管道。
 
 您只要開啟所選環境的![更多圖示或省略符號選單圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)選單，並選擇&#x200B;**還原** > **先前部署程式碼**&#x200B;即可回覆最近部署的原始程式碼（以秒為單位）。
+
+另請參閱[在AEM as a Cloud Service中還原內容](/help/operations/restore.md)。
 
 >[!TIP]
 >
@@ -32,7 +35,7 @@ ht-degree: 3%
 
 * 每個成功的管道執行僅允許一個還原；若要再次還原，請完成另一個成功的管道執行。
 * 您擁有&#x200B;**環境還原建立**&#x200B;許可權。 如需管理許可權的詳細資訊，請參閱[自訂許可權](/help/implementing/cloud-manager/custom-permissions.md)。
-* 您的組織已註冊Beta版計畫，且功能標幟已啟用。
+* 保護此功能的功能標幟已啟用（開啟）。
 * 程式會在AEM as a Cloud Service上執行。
 * 該環境的最後一個管道已成功完成，並在&#x200B;**少於30天**&#x200B;前執行。
 * 環境狀態為&#x200B;*正在執行*，而且沒有管道正在進行中。
@@ -41,7 +44,7 @@ ht-degree: 3%
 
 >[!IMPORTANT]
 >
->Adobe強烈建議在`Stage`中使用&#x200B;*之前，於* `Production`中驗證程式，以降低風險並確保穩定性。
+>對於首次使用，Adobe強烈建議在`Stage`在&#x200B;*之前的* `Production`中驗證此程式，以降低風險並確保穩定性。
 
 
 如果任何檢查失敗，Cloud Manager會開啟下列對話方塊，其中列出一或多個未滿足的條件，並停用&#x200B;**Confirm**，以防止還原。
@@ -81,3 +84,8 @@ ht-degree: 3%
 1. Cloud Manager將環境復原到先前的組建、保持內容和設定不變，並在環境頁面上標示環境&#x200B;**正在還原**，直到部署完成。
 
    ![正在還原啟用](/help/operations/assets/restore-previous-code-deployed-restoring.png)
+
+1. 在頁面的右上角附近，按一下![鈴鐺圖示或「通知」圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bell_18_N.svg) **通知**，以瞭解您的還原何時開始和結束。
+
+   ![開始還原時及還原完成時，還原先前的程式碼通知](/help/operations/assets/restore-previous-code-notifications.png)
+   *還原先前程式碼工作的通知。*

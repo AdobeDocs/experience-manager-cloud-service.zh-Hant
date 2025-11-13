@@ -4,10 +4,10 @@ description: 瞭解如何使用 Cloud Manager 從備份中還原 AEM as a Cloud 
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
 feature: Operations
 role: Admin
-source-git-commit: 3aff6beda8bcafc884c46ffdc55c530d581543e4
+source-git-commit: 4008b2f81bbd81cef343c6d2b04ba536b66d7d89
 workflow-type: tm+mt
-source-wordcount: '1359'
-ht-degree: 29%
+source-wordcount: '1358'
+ht-degree: 30%
 
 ---
 
@@ -16,11 +16,13 @@ ht-degree: 29%
 
 您可以使用Cloud Manager從備份中還原AEM as a Cloud Service內容。
 
-## 概觀 {#overview}
+
 
 Cloud Manager 的自助還原程式會從 Adobe 系統備份中複製資料，並將其還原到其原始環境。 執行還原以將已遺失、損壞或意外刪除的資料恢復至其原始狀態。
 
-還原程式只會影響內容，而不會變更您的程式碼和 AEM 版本。 您可以隨時啟動個別環境的還原操作。 （如果您需要以簡單快速的方式還原先前部署的原始程式碼，而不需要啟動新的管道執行，則可以使用[還原先前部署的程式碼](/help/operations/restore-previous-code-deployed.md)）。
+還原程式只會影響內容，而不會變更您的程式碼和 AEM 版本。 您可以隨時啟動個別環境的還原操作。
+
+如果您需要以簡單快速的方式還原先前部署的原始程式碼，而不需要啟動新的管道執行，則可以使用[還原先前部署的程式碼](/help/operations/restore-previous-code-deployed.md)。
 
 Cloud Manager 提供兩種型別的備份，您可以從中還原內容。
 
