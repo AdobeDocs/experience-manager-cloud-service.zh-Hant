@@ -4,10 +4,10 @@ description: 瞭解如何在AEM Assets檢視中搜尋和探索資產。 強大�
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 836805b4eac5ab940dff5c66ec0dcf1ca8652837
+source-git-commit: 391294cf461662d145a52b6c8a366e53f39ff84a
 workflow-type: tm+mt
-source-wordcount: '2277'
-ht-degree: 82%
+source-wordcount: '1887'
+ht-degree: 79%
 
 ---
 
@@ -118,33 +118,29 @@ Assets檢視提供下列自訂篩選器：
 
 1. 按一下&#x200B;**[!UICONTROL 確認]**，即可將篩選器從使用者介面移除。
 
-## 語意搜尋 {#semantic-search}
+## AI 搜尋 {#ai-search}
 
-語意搜尋是一種進階搜尋功能，可瞭解使用者查詢的涵義和意圖，而不是依賴精確的關鍵字比對。 它使用人工智慧(AI)、自然語言處理(NLP)和機器學習來提供更準確且內容感知的結果。
+AI搜尋是一種進階搜尋功能，可瞭解使用者查詢的涵義和意圖，而非依賴精確的關鍵字比對。 它使用人工智慧(AI)和機器學習，提供更準確且內容感知的結果。
 
-傳統關鍵字式搜尋會尋找精確字詞，而語意搜尋則不同，它會解譯字詞、概念和使用者意圖之間的關係。 這可確保使用者找到他們要尋找的內容 — 即使他們的查詢用詞不同、包含拼寫錯誤或使用另一種語言。
+傳統關鍵字式搜尋會尋找精確字詞，AI搜尋則不同，它會解譯字詞、概念和使用者意圖之間的關係。 這可確保使用者找到他們要尋找的內容 — 即使他們的查詢用詞不同、包含拼寫錯誤或使用另一種語言。
 
 如果其主要優點包括：
 
 * **多語言支援**：搜尋多種語言，不需要精確翻譯。 使用者無論查詢語言為何，都能找到相關內容。
 
-* **處理錯誤拼字**：自動更正或解譯拼字錯誤和拼字錯誤，即使輸入不完美也能確保正確的結果。
+* **處理錯誤拼字**：解譯拼字錯誤和拼字錯誤，即使輸入不完美也能確保正確的結果。
 
 * **瞭解同義字**：提供相關辭彙和短語的結果，因此使用者不需要猜測正確的關鍵字。
 
-* **內容感知搜尋**：辨識查詢背後的目的，而不只是文字。
+* **內容感知搜尋**：辨識查詢背後的目的，而不只是確切的字詞。
 
->[!IMPORTANT]
->
-> 指定三個或三個以上的字詞讓語意搜尋顯示適當的結果。
-
-### 語意搜尋的範例 {#examples-semantic-search}
+### AI搜尋範例 {#examples-ai-search}
 
 **範例提示**： *喝咖啡的女人*
 
-傳統關鍵字式搜尋會尋找完全相符的資產中繼資料，例如Woman、Coffee等，並傳回包含這些關鍵字的資產。
+傳統關鍵字式搜尋會尋找完全符合的資產中繼資料，例如`Woman`、`drinking`、`Coffee`，並傳回包含中繼資料中所有字詞的資產。
 
-不過，語意搜尋會尋找類似的字詞，例如`Girl`的`Lady`、`Woman`和咖啡選項，例如`Cappuccino`的`Latte`和`Coffee`。
+不過，AI搜尋在`Girl`的情況下會比對類似字詞，例如`Lady`、`Woman`，在`Cappuccino`的情況下會比對到`Latte`和`Coffee`。
 
 同樣地，您可以用西班牙文或拼錯拼字`Woman`來指定此提示為`Wman`，仍會得到相同的結果。
 
@@ -280,89 +276,94 @@ Assets檢視可讓您為組織選取預設登陸頁面。 使用「搜尋優先�
 
    ![搜尋優先首頁預覽](/help/assets/assets/search-first-preview.gif)
 
-## 內容相關搜尋 {#contextual-search}
 
-您也可以透過定義文字提示來搜尋存放庫中可用的資產。Experience Manager Assets 會自動轉換這些文字提示，以便搜尋篩選器並顯示搜尋結果。您可以使用篩選器窗格查看和修改自動篩選器，以進一步縮小搜尋結果範圍。
+<!--
 
-### 存取內容搜尋 {#access-contextual-search}
+## Contextual Search {#contextual-search}
 
-若要存取 Experience Manager Assets 中的內容搜尋：
+You can also search assets available in the repository by defining text prompts. Experience Manager Assets automatically transforms those text prompts to search filters and displays the search results. You can view and modify automatic filters using the Filters Pane to further narrow down the search results.
 
-1. 在左側窗格中，按一下「**[!UICONTROL 搜尋]**」 。
+### Access Contextual Search {#access-contextual-search}
 
-   ![內容相關搜尋](assets/access-contextual-search.png)
+To access Contextual Search in Experience Manager Assets:
 
-1. 在「搜尋」文字方塊中定義文字提示，然後按一下「**[!UICONTROL 內容搜尋]**」。
+1. Click **[!UICONTROL Search]** in the left pane.
 
-   ![內容搜尋文字提示](/help/assets/assets/wknd-contextual-search.png)
+   ![Contextual Search](assets/access-contextual-search.png)
 
-   [!DNL Experience Manager Assets] 會顯示搜尋結果。
+1. Define the text prompt in the Search text box and click **[!UICONTROL Contextual Search]**.
 
-### 支援篩選器 {#supported-filters}
+   ![Contextual Search text prompt](/help/assets/assets/wknd-contextual-search.png)
 
-內容搜尋支援以下開箱即用的篩選器。根據這些篩選器來設定文字提示，以查看適當的搜尋結果。
+   [!DNL Experience Manager Assets] displays the search results.
 
-* 影像高度
+### Supported filters {#supported-filters}
 
-* 影像寬度
+Contextual Search supports the following filters out-of-the-box. Base your text prompts on these filters to view appropriate search results.
 
-* 檔案類型：影像、文件、影片或資料夾。
+* Image height
 
-* MIME 類型：JPG、PNG、TIFF、GIF、MP4、PDF、PPTX、DOCX 或 XLSX
+* Image width
 
-* 建立日期
+* File type: image, document, video, or folder.
 
-* 修改日期
+* MIME type: JPG, PNG, TIFF, GIF, MP4, PDF, PPTX, DOCX or XLSX
 
-* 過期日期
+* Created date
 
-* 資產狀態：已核准、已拒絕或全部
+* Modified date
 
-* 過期資產
+* Expiration date
 
-### 文字提示範例 {#text-prompts-examples}
+* Asset status: Approved, Rejected, or all
 
-**範例 1**
+* Expired assets
 
-**文字提示**：本月建立的影像。
+### Examples for the text prompts {#text-prompts-examples}
 
-[!DNL Experience Manager Assets] 會自動套用以下篩選器並顯示搜尋結果：
+**Example 1**
 
-![內容搜尋範例 1](assets/contextual-search-example1.png)
+**Text Prompt**: Images created this month.
 
-**範例 2**
+[!DNL Experience Manager Assets] applies the following filters automatically and displays the search results:
 
-**文字提示**：至少 200 像素高、100 像素寬的影像，且有海灘和晴朗的天空。
+![Contextual Search Example 1](assets/contextual-search-example1.png)
 
-[!DNL Experience Manager Assets] 會自動套用以下篩選器並顯示搜尋結果：
+**Example 2**
 
-![內容搜尋範例 2](assets/contextual-search-example2.png)
+**Text prompt**: Images at least 200px tall and 100px wide with beach and clear sky.
 
-**範例 3**
+[!DNL Experience Manager Assets] applies the following filters automatically and displays the search results:
 
-**文字提示**：我需要高度為 1500 和 2500 像素的藍天影像，而且是過去一個月內建立的未過期及已核准影像。
+![Contextual Search Example 2](assets/contextual-search-example2.png)
 
-[!DNL Experience Manager Assets] 會自動套用以下篩選器並顯示搜尋結果：
+**Example 3**
 
-![內容搜尋範例 3](assets/contextual-search-example3.png)
+**Text prompt**: I need images of blue sky that are 1500 and 2500 pixel height and created in the past month that is not expired and approved.
 
-以下影片示範從存取內容搜尋使用者介面到定義文字提示，以及查看搜尋結果的端到端過程。
+[!DNL Experience Manager Assets] applies the following filters automatically and displays the search results:
+
+![Contextual Search Example 3](assets/contextual-search-example3.png)
+
+The following video illustrates the end-to-end process from accessing the Contextual Search User Interface to defining text prompts, and viewing the search results.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428407)
 
-### 停用內容搜尋 {#disable-contextual-search}
+### Disable Contextual Search {#disable-contextual-search}
 
-管理員也可以選擇停用組織中使用者的內容搜尋。若要如此做，請執行以下步驟：
+Administrators also have the option to disable Contextual Search for users in your organization. To do so, execute the following steps:
 
-1. 瀏覽至「**[!UICONTROL 設定]**」>「**[!UICONTROL 一般設定]**」。
+1. Navigate to **[!UICONTROL Settings]** > **[!UICONTROL General Settings]**.
 
-1. 在「[!UICONTROL 內容搜尋]」區段中，關閉「**[!UICONTROL 為您的組織啟用內容搜尋]**」切換開關，以停用您組織中所有使用者的內容搜尋功能。
+1. In the [!UICONTROL Contextual Search] section, turn off the **[!UICONTROL Enable Contextual Search for your organization]** toggle to disable the Contextual Search feature for all users in your organization.  
 
-### 內容搜尋意見回饋 {#contextual-search-feedback}
+### Contextual Search feedback {#contextual-search-feedback}
 
-如果您需要提供有關內容搜尋功能的意見回饋，請按一下 ![內容搜尋圖示](assets/do-not-localize/Smock_Help_18_N.svg)，然後按一下「意見回饋」圖示。選取意見回饋類型，指定主題和描述，然後按一下「**[!UICONTROL 提交]**」。
+If you need to provide feedback on the Contextual Search feature, click ![Contextual Search icon](assets/do-not-localize/Smock_Help_18_N.svg)  and click the Feedback icon. Select the feedback type, specify the subject and description, and click **[!UICONTROL Submit]**.
 
-![內容搜尋意見回饋](assets/contextual-search-feedback.png)
+![Contextual Search feedback](assets/contextual-search-feedback.png)
+
+-->
 
 ## 後續步驟 {#next-steps}
 
@@ -372,7 +373,7 @@ Assets檢視可讓您為組織選取預設登陸頁面。 使用「搜尋優先�
 
 * 若要提供文件意見回饋，請使用右側邊欄提供的[!UICONTROL 編輯此頁面]![來編輯頁面](assets/do-not-localize/edit-page.png)或[!UICONTROL 記錄問題]![來建立 GitHub 問題](assets/do-not-localize/github-issue.png)。
 
-* 聯絡[客戶服務](https://experienceleague.adobe.com/zh-hant?support-solution=General#support)
+* 聯絡[客戶服務](https://experienceleague.adobe.com/?support-solution=General#support)
 
 
 
