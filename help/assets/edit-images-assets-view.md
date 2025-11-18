@@ -26,7 +26,7 @@ ht-degree: 75%
 ## 編輯影像 {#edit-image}
 
 進入資產檢視介面，使用連結 - [資產檢視](https://experience.adobe.com/#/assets) ，並選擇正確的儲存庫。 若要獲得存取權，請聯絡您組織的管理員。
-如需更多參考資訊，請參閱「 [開始使用 Adobe Experience Manager 資產檢視](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view)」、「 [了解資產檢視使用者介面](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation)」及 [「資產檢視」的使用案例](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases)。
+如需更多參考資訊，請參閱「 [開始使用 Adobe Experience Manager 資產檢視](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view)」、「 [了解資產檢視使用者介面](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation)」及 [「資產檢視」的使用案例](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases)。
 <!--
 >[!CONTEXTUALHELP]
 >id="assets_express_integration"
@@ -154,7 +154,7 @@ The brush samples the retouched area and makes the repaired pixels blend seamles
 
 <!-- 
 TBD: See if we should give backlinks to PS docs for these concepts.
-For more information about how Spot Healing works in Photoshop, see [retouching and repairing photos](https://helpx.adobe.com/photoshop/using/retouching-repairing-images.html). 
+For more information about how Spot Healing works in Photoshop, see [retouching and repairing photos](https://helpx.adobe.com/tw/photoshop/using/retouching-repairing-images.html). 
 -->
 <!-- 
 ### Crop and straighten images {#crop-straighten-images-using-photoshop-express}
