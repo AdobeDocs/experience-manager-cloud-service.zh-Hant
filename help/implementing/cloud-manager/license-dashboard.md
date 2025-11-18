@@ -5,10 +5,10 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 4bebe8a3a283711a053320bfda4a8aac32096aa6
 workflow-type: tm+mt
-source-wordcount: '938'
-ht-degree: 23%
+source-wordcount: '1026'
+ht-degree: 21%
 
 ---
 
@@ -19,13 +19,13 @@ Cloud Manager提供了一個儀表板，用於輕鬆檢視您的組織或租使�
 
 >[!IMPORTANT]
 >
->授權儀表板僅適用於AEM as a Cloud Service計畫。 [AMS程式](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-manager/content/introduction)未包含在授權儀表板中。
+>授權儀表板僅適用於AEM as a Cloud Service計畫。 [AMS程式](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)未包含在授權儀表板中。
 >
 >若要判斷您的程式具有的服務型別（AMS或AEMaaCS），請參閱[瀏覽Cloud Manager UI](/help/implementing/cloud-manager/navigation.md#program-cards)。
 
 ## 概觀 {#overview}
 
-Cloud Manager授權儀表板可讓您輕鬆存取所有計畫中可用的解決方案權益，包括使用內容和可用內容。 以及Sites解決方案按月趨勢的內容請求消耗量度。
+Cloud Manager授權儀表板可讓您輕鬆存取所有計畫中可用的解決方案權益，包括使用的數量和可用的數量。 以及Sites解決方案按月趨勢的內容請求消耗量度。
 
 ## 存取授權儀表板 {#using-dashboard}
 
@@ -67,6 +67,15 @@ Cloud Manager授權儀表板可讓您輕鬆存取所有計畫中可用的解決�
 The **View usage details** button gives access to the chosen solution's **Usage Details** window. This window gives a detailed breakdown including charts to show your solution's usage. How that usage is measured depends on the chosen solution. -->
 
 Cloud Manager授權區域中的&#x200B;**檢視使用狀況詳細資料**&#x200B;按鈕提供您目前資源使用狀況的詳細劃分。 按一下就會開啟報表或控制面板，顯示與授權相關的重要量度。 <!-- ADD THIS SENTENCE IF ASSETS USAGE DETAILS GETS REINSTATED ", such as the number of users, storage consumption, or bandwidth usage, depending on the type of services you're using." -->此功能可協助您監視並確保您保持在合約的限制內，同時提供深入分析以更好地規劃資源及最佳化。
+
+在下列情況中，**檢視使用狀況詳細資料**&#x200B;按鈕為&#x200B;*已停用* （已關閉）：
+
+* 本解決方案不屬於您的合約，且沒有信用額度。 若存在銷退折讓，即使已沖銷所有銷退折讓，此按鈕仍可使用。
+* 沒有針對該解決方案設定的Cloud Manager程式。
+* 控制使用詳細資訊的功能標幟已停用。 按鈕可用之前，必須為您的組織&#x200B;*啟用* （已開啟）。
+* 解決方案的使用已明確停用。 目前此情況僅適用於Edge Delivery Services。
+
+
 
 ### Sites 使用情況詳細資訊 {#sites-usage-details}
 
