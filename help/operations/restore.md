@@ -33,7 +33,7 @@ Cloud Manager 提供兩種型別的備份，您可以從中還原內容。
 
 >[!TIP]
 >
->也可以使用公開 API[ 還原備份](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)。
+>也可以使用公開 API[&#x200B; 還原備份](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)。
 
 >[!WARNING]
 >
@@ -81,7 +81,7 @@ Cloud Manager 提供兩種型別的備份，您可以從中還原內容。
 
      ![「環境」索引標籤](assets/environments-1.png)
 
-   * 從左側選單，在程式下方&#x200B;**點選**&#x200B;總覽&#x200B;**，然後從**&#x200B;環境&#x200B;**卡點選**&#x200B;工作流程圖示![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg)「全部顯示」。****
+   * 從左側選單，在程式下方&#x200B;**點選**&#x200B;總覽&#x200B;**，然後從**&#x200B;環境&#x200B;**卡點選**&#x200B;工作流程圖示![](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg)「全部顯示」。**&#x200B;**
 
      ![顯示全部選項](assets/environments-2.png)
 
