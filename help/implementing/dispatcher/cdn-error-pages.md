@@ -4,7 +4,7 @@ description: 瞭解如何在自行託管的儲存體(例如Amazon S3或Azure Blo
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
 role: Admin
-source-git-commit: edfefb163e2d48dc9f9ad90fa68809484ce6abb0
+source-git-commit: 3a46db9c98fe634bf2d4cffd74b54771de748515
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 1%
@@ -37,8 +37,6 @@ ht-degree: 1%
 ```
 kind: "CDN"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   errorPages:
     spa:
@@ -93,6 +91,6 @@ curl "https://publish-pXXXXX-eXXXXXX.adobeaemcloud.com/cdnstatus?code=403"
 
 ### 教學課程
 
-請參閱[CDN錯誤頁面](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages)教學課程，以取得如何建立、部署和測試CDN提供的錯誤頁面的逐步指示。
+請參閱[CDN錯誤頁面](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages)教學課程，以取得如何建立、部署和測試CDN提供的錯誤頁面的逐步指示。
 
 
