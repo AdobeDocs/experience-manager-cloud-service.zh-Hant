@@ -4,7 +4,7 @@ description: 瞭解如何在AEM as a Cloud Service中將記錄轉送給記錄廠
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 3a46db9c98fe634bf2d4cffd74b54771de748515
 workflow-type: tm+mt
 source-wordcount: '2478'
 ht-degree: 3%
@@ -111,8 +111,6 @@ AEM和Apache/Dispatcher記錄檔可選擇透過AEM的進階網路基礎結構（
    ```yaml
    kind: "LogForwarding"
    version: "1"
-   metadata:
-     envTypes: ["dev"]
    data:
      splunk:
        default:
@@ -135,8 +133,6 @@ AEM和Apache/Dispatcher記錄檔可選擇透過AEM的進階網路基礎結構（
 ```yaml
    kind: "LogForwarding"
    version: "1"
-   metadata:
-     envTypes: ["dev"]
    data:
      splunk:
        default:
@@ -155,8 +151,6 @@ AEM和Apache/Dispatcher記錄檔可選擇透過AEM的進階網路基礎結構（
 ```yaml
    kind: "LogForwarding"
    version: "1"
-   metadata:
-     envTypes: ["dev"]
    data:
      splunk:
        default:
@@ -218,8 +212,6 @@ AEM和Apache/Dispatcher記錄檔可選擇透過AEM的進階網路基礎結構（
 ```yaml
 kind: "LogForwarding"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   splunk:
     default:
@@ -254,9 +246,7 @@ data:
 
 ```yaml
 kind: "LogForwarding"
-version: "1.0"
-metadata:
-  envTypes: ["dev"]
+version: "1"
 data:
   awsS3:
     default:
@@ -294,8 +284,6 @@ IAM原則應該允許使用者使用`s3:putObject`。  例如：
 ```yaml
 kind: "LogForwarding"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   azureBlob:
     default:
@@ -364,8 +352,6 @@ AEM記錄(包括Apache/Dispatcher)會顯示在具有以下命名慣例的資料�
 ```yaml
 kind: "LogForwarding"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   datadog:
     default:
@@ -392,8 +378,6 @@ data:
 ```yaml
 kind: "LogForwarding"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   elasticsearch:
     default:
@@ -426,8 +410,6 @@ ctx._index = sourceType + "_" + envType + "_" + date;
 ```yaml
 kind: "LogForwarding"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   https:
     default:
@@ -472,8 +454,6 @@ Web要求(POST)將持續傳送，其有json裝載（記錄專案陣列），其�
 ```yaml
   kind: "LogForwarding"
   version: "1"
-  metadata:
-    envTypes: ["dev"]
   data:
     newRelic:
       default:
@@ -499,8 +479,6 @@ Token需要「擷取記錄檔」範圍屬性。
 ```yaml
   kind: "LogForwarding"
   version: "1"
-  metadata:
-    envTypes: ["dev"]
   data:
     dynatrace:
       default:
@@ -517,8 +495,6 @@ Token需要「擷取記錄檔」範圍屬性。
 ```yaml
 kind: "LogForwarding"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   splunk:
     default:
@@ -552,8 +528,6 @@ data:
 ```yaml
 kind: "LogForwarding"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   sumoLogic:
     default:
