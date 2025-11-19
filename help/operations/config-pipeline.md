@@ -4,9 +4,9 @@ description: 瞭解如何使用設定管道在AEM as a Cloud Service中部署不
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: b0357c9fcc19d29c3d685e6b14369a6fcc6832e1
+source-git-commit: 5e0626c57f233ac3814355d7efe7db010897d72b
 workflow-type: tm+mt
-source-wordcount: '1340'
+source-wordcount: '1378'
 ht-degree: 2%
 
 ---
@@ -63,21 +63,32 @@ Cloud Manager設定管道將設定檔案（以YAML格式建立）部署到目標
 每個設定檔案都會以類似下列範常式式碼片段的屬性開頭：
 
 ```yaml
-   kind: "LogForwarding"
+   kind: "CDN"
    version: "1"
-   metadata:
-     envTypes: ["dev"]
+   metadata: ...
+   data: ...
 ```
 
 | 屬性 | 說明 | 預設 |
 |---|---|---|
 | `kind` | 字串；決定組態型別，如記錄轉送、流量篩選規則或要求轉換 | 必要，無預設值 |
 | `version` | 代表結構描述版本的字串 | 必要，無預設值 |
-| `envTypes` | 這個字串陣列是`metadata`節點的子屬性。 對於&#x200B;**發佈傳遞**，可能的值是dev、stage、prod或任何組合，它決定要處理設定的環境型別。 例如，如果陣列僅包含`dev`，則不會在Stage或Prod環境中載入組態，即使組態已部署於其中亦然。 對於&#x200B;**Edge Delivery**，只應使用`prod`的值。 | 所有環境型別，也就是(dev、stage、prod) for Publish Delivery或prod for Edge Delivery。 |
+| `metadata` | （選擇性）這包含字串`envTypes`的陣列，可決定要處理設定的環境型別。 **發佈傳遞**&#x200B;可能的值為`dev`、`stage`和`prod`。 對於&#x200B;**Edge Delivery**，只應使用`prod`的值。 例如，如果陣列僅包含`dev`，則不會在Stage或Prod環境中載入組態，即使組態已部署於其中亦然。 | 所有環境型別，也就是(dev、stage、prod) for Publish Delivery或prod for Edge Delivery。 |
 
 您可以使用`yq`公用程式在本機驗證組態檔的YAML格式（例如，`yq cdn.yaml`）。
 
-## 檔案夾結構 {#folder-structure}
+## 發佈傳遞 {#yamls-for-aem}
+
+**發佈傳遞**&#x200B;設定將部署至目標環境。 鎖定多個環境時，可以用不同方式組織不同的檔案。 例如，如果陣列僅包含`dev`，則不會在Stage或Prod環境中載入組態，即使組態已部署於其中亦然。
+
+```yaml
+   kind: "CDN"
+   version: "1"
+   metadata:
+    envType: ["dev"]
+```
+
+### 檔案夾結構 {#folder-structure}
 
 名稱為`/config`或類似的資料夾應位於樹狀結構頂端，其下方的樹狀結構中會有一個以上的YAML檔案。
 
@@ -115,7 +126,7 @@ Cloud Manager設定管道將設定檔案（以YAML格式建立）部署到目標
 當相同的設定足以滿足所有環境和所有型別的設定（CDN、記錄轉送等）時，請使用此結構。 在此案例中，`envTypes`陣列屬性將包含所有環境型別。
 
 ```yaml
-   kind: "cdn"
+   kind: "CDN"
    version: "1"
    metadata:
      envTypes: ["dev", "stage", "prod"]
@@ -175,7 +186,7 @@ data:
 
 此方法的不同之處在於為每個環境維護單獨的分支。
 
-### Edge Delivery Services {#yamls-for-eds}
+## Edge Delivery Services {#yamls-for-eds}
 
 Edge Delivery設定管道沒有單獨的開發、測試和生產環境。 在發佈傳送環境中，會透過開發、階段和生產層級變更進度。 相較之下，Edge Delivery設定管道會將設定直接套用至Edge Delivery網站在Cloud Manager中註冊的所有網域對應。
 
@@ -188,7 +199,7 @@ Edge Delivery設定管道沒有單獨的開發、測試和生產環境。 在發
   logForwarding.yaml
 ```
 
-如果每個Edge Delivery網站上的規則必須不同，請使用語法&#x200B;*when*&#x200B;來區分規則。 例如，請注意網域符合下列程式碼片段中的dev.example.com ，這可以和網域www.example.com區別。
+如果每個Edge Delivery網站上的規則必須不同，請使用語法&#x200B;*when*&#x200B;來區分規則。 例如，請注意網域符合下列程式碼片段中的dev.example.com，可以區別於網域`www.example.com`。
 
 ```
 kind: "CDN"
@@ -220,8 +231,6 @@ data:
 ```
 kind: "LogForwarding"
 version: "1"
-metadata:
-  envTypes: ["dev"]
 data:
   splunk:
     default:
