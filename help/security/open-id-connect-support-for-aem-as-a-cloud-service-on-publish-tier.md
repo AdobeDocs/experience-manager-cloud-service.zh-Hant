@@ -354,12 +354,12 @@ ACL可以使用RepoInit指令碼直接套用至外部群組。
 
 ## 如何從Saml驗證處理常式移轉至Oidc驗證處理常式
 
-當AEM已設定SAML驗證處理常式，且使用者存在於已啟用[資料同步化](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization)的存放庫時，原始SAML使用者與新OIDC使用者之間可能會發生衝突。
+當AEM已設定SAML驗證處理常式，且使用者存在於已啟用[資料同步化](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization)的存放庫時，原始SAML使用者與新OIDC使用者之間可能會發生衝突。
 
 1. 設定[OidcAuthenticationHandler](#configure-oidc-authentication-handler)，並在`idpNameInPrincipals`SlingUserInfoProcessor[設定中啟用](#configure-slinguserinfoprocessor)
 1. 設定外部群組[的](#configure-acl-for-external-groups)ACL。
 1. 從使用者登入後，可以刪除saml驗證處理常式建立的舊使用者。
 
 >[!NOTE]
->一旦SAML驗證處理常式停用，且OIDC驗證處理常式已啟用，如果未啟用[資料同步處理](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization)，則現有工作階段會變成無效。 使用者必須再次驗證，這會導致在存放庫中建立新的OIDC使用者節點。
+>一旦SAML驗證處理常式停用，且OIDC驗證處理常式已啟用，如果未啟用[資料同步處理](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization)，則現有工作階段會變成無效。 使用者必須再次驗證，這會導致在存放庫中建立新的OIDC使用者節點。
 
