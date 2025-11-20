@@ -333,7 +333,7 @@ ACL可以使用RepoInit指令碼直接套用至外部群組。
 
 要在 Microsoft Azure 入口網站中為企業應用程式設定群組，您需要在&#x200B;**企業應用程式**&#x200B;搜尋該應用程式並新增群組：<!-- Alexandru: this bit cound be clearer-->
 
-![OIDC 群組新增 ](/help/security/assets/oidc-ad-additional-info.png)
+![OIDC 群組新增 &#x200B;](/help/security/assets/oidc-ad-additional-info.png)
 
 若要在 ID 權杖中啟用群組申請，請在 Microsoft Azure 入口網站的&#x200B;**權杖設定**&#x200B;欄位新增申請：<!-- Alexandru: this bit cound be clearer as well-->
 
