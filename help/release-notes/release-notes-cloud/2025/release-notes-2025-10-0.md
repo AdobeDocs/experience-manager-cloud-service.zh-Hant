@@ -1,20 +1,18 @@
 ---
-title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明。'
-description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明。'
-mini-toc-levels: 1
-exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
+title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.10.0 版發行說明。'
+description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.10.0 版發行說明。'
 feature: Release Information
 role: Admin
-source-git-commit: 33655e7d58f19a5637ad120d8df537015f2f0aec
+source-git-commit: c5918c887be60c5198b762d860fe72afd31df352
 workflow-type: tm+mt
-source-wordcount: '1428'
-ht-degree: 67%
+source-wordcount: '1894'
+ht-degree: 58%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Service 最新發行說明 {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service 2025.10.0 版發行說明 {#release-notes}
 
-以下章節概述 [!DNL Experience Manager] as a Cloud Service 目前 (最新) 版本的功能發行說明。
+以下章節概述 [!DNL Experience Manager] as a Cloud Service 2025.10.0 版的功能發行說明。
 
 >[!NOTE]
 >
@@ -28,7 +26,7 @@ ht-degree: 67%
 
 ## 發行日期 {#release-date}
 
-[!DNL Adobe Experience Manager]作為[!DNL Cloud Service]目前功能版本(2025.11.0)的發行日期是2025年11月20日。 下一個功能版本(2025.12.0)計畫於2025年12月11日發行。
+[!DNL Adobe Experience Manager]作為[!DNL Cloud Service]目前功能版本(2025.10.0)的發行日期是2025年10月30日。 下一個功能版本(2025.11.0)計畫於2025年11月20日發行。
 
 ## 維護版本發行說明 {#maintenance}
 
@@ -43,6 +41,14 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 >[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
+
+## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+
+### Experience Manager Sites 的新功能 {#new-sites}
+
+* [啟動內容片段](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md)：內容作者現在可以使用啟動內容片段來建立和排程未來結構化內容的變數。 新的內容片段主控台允許建立、編輯、管理和排程內容片段啟動，作為可與來源分支同步的未來內容的分支。 新的「差異檢視」會在認可Launch以供未來發佈之前，提供所有內容變更的清晰概觀。
+
+* AEM內容片段[的](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)內容模型編輯器已更新，以與AEM中的其他React光譜型介面一致。 其使用者介面實施方式和擴充性模型，現在與內容片段編輯器及通用編輯器一致。現在，從新的內容模型管理員使用者介面開啟時，預設會使用新的模型編輯器。在觸控式使用者介面中開啟內容模型，會開啟觸控式使用者介面編輯器，並建議您試用新的編輯器。
 
 <!--
 
@@ -63,6 +69,24 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 -->
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
+
+### Experience Manager Forms 的新功能 {#new-features-forms}
+
+**適用於自適應表單和表單片段的通用編輯器**
+
+Universal Editor現在為建立最適化Forms和可重複使用的表單片段提供統一的編寫體驗。 作者可在直覺式的WYSIWYG環境中，運用強大的擴充功能和完整的提交功能，以視覺化方式設計表單。 該編輯器整合了reCAPTCHA驗證以增強安全性，提供預填服務以減少手動輸入，並支援所有裝置的回應式設計。
+
+**可用的副檔名：**
+
+* **規則編輯器**：視覺化規則編輯器可讓表單作者新增動態行為至表單欄位，而不需要編碼、支援事件導向規則、即時驗證及錯誤處理。
+* **表單屬性**：精靈，可協助使用者在編輯器中直接設定提交動作、預填服務、感謝訊息以及其他與表單相關的行為。
+* **表單資料Source和繫結參考**：資料來源擴充功能可讓表單作者將與資料模型相關聯的元件直接新增至最適化表單，並從所有元件的樹狀結構選取項中選取繫結參考。
+
+**支援的提交動作：**
+
+通用編輯器支援完整的提交工作流程，包括自訂提交動作、提交至Microsoft SharePoint、提交至Microsoft OneDrive、提交至Azure Blob儲存體、提交至REST端點、叫用AEM工作流程、叫用Power Automate流程、提交至Marketo Engage、提交至Adobe Experience Platform (AEP)、提交至試算表、使用表單資料模型(FDM)提交、提交至Workfront Fusion以及傳送電子郵件。
+
+如需完整詳細資訊，請參閱適用於Forms的[Edge Delivery Services通用編輯器檔案](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)。 如需設定提交動作的資訊，請參閱[最適化表單提交動作](/help/edge/docs/forms/universal-editor/submit-action.md)。
 
 <!-- ### Pre-Release features in AEM Forms 
 
@@ -121,11 +145,37 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] 基礎 {#foundation}
 
-### [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation新功能 {#foundation-new}
+### 發行管理中的新功能 {#new-features-release-management}
 
-#### Java API 即將棄用 {#java-api-deprecation}
+**暫停自動維護更新**
 
-數個已棄用的 API 已標記要於 8 月 31 日移除，因此不應再參照。如果在程式碼中偵測到過時的API使用方式，您將會收到動作中心通知，12月3日後，Cloud Manager建置期間將會顯示通知，強調移除使用方式的重要性。 請參閱[棄用文章](/help/release-notes/deprecated-removed-features.md#aem-apis)，了解完整的詳細資訊，但為了方便起見，這些 API 條列如下：
+上線日、現場活動、銷售高峰，這些時刻無法中斷。[我們新的自助服務功能](/help/implementing/deploying/quiet-hours-update-free-periods.md)會在重要時刻停止自動維護更新，讓您的團隊保持專注。
+
+* 暫停更新時段：在每天固定的時段內停止自動維護。適合在工作時間、夜間執行或早晨切換時使用。
+* 暫停更新期間：一整週皆停止自動維護。在發佈期間、促銷活動或年度凍結時使用。
+
+>[!NOTE]
+>
+>於 9 月 25 日以「有限開放」功能的形式提供。
+>寄送電子郵件至 [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com)，以便在您的方案中啟動此功能。
+
+### AEM記錄轉送至更多目的地 {#log-forwarding}
+
+現在可將AEM記錄轉送至Amazon S3、Sumo Logic、Dynatrace和您自己的New Relic帳戶(非Adobe提供的帳戶)。 請注意，這些記錄目的地支援AEM記錄(包括Apache/Dispatcher)，但CDN記錄不受支援。
+
+檢視[支援的記錄轉送目的地](/help/implementing/developing/introduction/log-forwarding.md)的完整集合。
+
+### 設定Edge Delivery Services的管道 {#config-pipeline-eds}
+
+使用Edge Delivery Services建置的網站現在支援設定管道，將此功能擴展到AEM Author和AEM發佈交付之外。 您可以使用設定管道來管理CDN設定等設定，包括流量篩選規則和來源選擇器。 請參閱[支援的設定](/help/operations/config-pipeline.md#configurations)。
+
+Edge Delivery 設定管道也能透過 Cloud Manager 管道變數支援密碼。
+
+請參閱[新增 Edge Delivery 管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)。
+
+### Java API 即將棄用 {#java-api-deprecation}
+
+數個已棄用的 API 已標記要於 8 月 31 日移除，因此不應再參照。若在您的程式碼中偵測到使用已棄用 API 的情形，您會收到行動中心通知，而在 11 月 13 日之後，Cloud Manager 建置期間會顯示相關通知，強調不再使用此類 API 的重要性。請參閱[棄用文章](/help/release-notes/deprecated-removed-features.md#aem-apis)，了解完整的詳細資訊，但為了方便起見，這些 API 條列如下：
 
 +++ 展開以查看 Java API 淘汰內容
 
@@ -157,42 +207,27 @@ OSGi properties:
 
 -->
 
-#### 棄用 Java 11 執行階段 {#java11-runtime-deprecation}
+### 棄用 Java 11 執行階段 {#java11-runtime-deprecation}
 
-Adobe已於2025年10月14日將&#x200B;**Stage**&#x200B;和&#x200B;**Production**&#x200B;環境升級為效能較高的&#x200B;**Java 21執行階段**。 自&#x200B;**1月**&#x200B;下旬開始，AEM Cloud Service SDK或任何雲端環境都不會搭配Java 11執行階段使用。
+Adobe已於2025年10月14日將&#x200B;**Stage**&#x200B;和&#x200B;**Production**&#x200B;環境升級為效能較高的&#x200B;**Java 21執行階段**。 從1月底開始，AEM Cloud Service SDK或任何雲端環境都不會搭配Java 11執行階段使用。
 
 >[!NOTE]
 >
 > 若要利用最新的效能最佳化和語言增強功能，建議使用Java 17或Java 21 （偏好設定）建置。 目前仍支援使用Java 8和Java 11進行建置，但即將發行的版本將棄用。 在棄用之前，將會發出單獨的通訊。 請參閱&#x200B;*本文章*&#x200B;的[建置時間需求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements)區段。
 >
 
-#### 執行 AEM Java 記錄設定原則 {#logconfig-policy}
+### 執行 AEM Java 記錄設定原則 {#logconfig-policy}
 
 如 4 月的發行說明中所述，AEM Java 記錄必須遵循標準格式，以確保在所有客戶環境中皆進行可靠的監視。不再支援自訂記錄設定 (例如變更記錄格式、輸出檔案或預設記錄等級)。記錄必須保持導向預設檔案，並且必須保留 AEM 產品程式碼的預設記錄等級。如需完整詳情，請參閱[記錄文章](/help/implementing/developing/introduction/logging.md#configuration-loggers)。
 
-從&#x200B;**12月10日**&#x200B;開始，將忽略任何不支援的自訂記錄覆寫。 根據我們的分析，大多數客戶將不會受影響，而 Adobe 會直接聯絡其目前設定可能受影響的客戶。
+從&#x200B;**11月20日**&#x200B;開始，將忽略任何不支援的自訂記錄覆寫。 根據我們的分析，大多數客戶將不會受影響，而 Adobe 會直接聯絡其目前設定可能受影響的客戶。
 
 請審閱所有取決於自訂記錄行為的下游流程，並將其更新。例如：
 
 * 若您的記錄轉送系統需要自訂的記錄格式，則可能需要調整攝取規則。
 * 若您先前已透過變更記錄等級降低記錄的詳細程度，請注意，恢復至預設等級可能會增加記錄量。
 
-### [!DNL Experience Manager]作為[!DNL Cloud Service] Foundation早期採用者功能 {#foundation-early-adopter}
-
-#### 暫停自動維護更新 {#pause-updates}
-
-上線日、現場活動、銷售高峰，這些時刻無法中斷。[我們新的自助服務功能](/help/implementing/deploying/quiet-hours-update-free-periods.md)會在重要時刻停止自動維護更新，讓您的團隊保持專注。
-
-* 暫停更新時段：在每天固定的時段內停止自動維護。適合在工作時間、夜間執行或早晨切換時使用。
-* 暫停更新期間：一整週皆停止自動維護。在發佈期間、促銷活動或年度凍結時使用。
-
->[!NOTE]
->
->於 9 月 25 日以「有限開放」功能的形式提供。
->寄送電子郵件至 [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com)，以便在您的方案中啟動此功能。
->
-
-#### Edge 運算 (Beta 版方案) {#edge-computing}
+### Edge 運算 (Beta 版方案) {#edge-computing}
 
 邊緣運算讓您能夠在 CDN 層執行 JavaScript，使資料處理更為接近一般使用者。因此而減少延遲並達到邊緣的回應式動態體驗。
 
@@ -206,14 +241,14 @@ Adobe已於2025年10月14日將&#x200B;**Stage**&#x200B;和&#x200B;**Production*
 
 我們針對正式生產網站提供數量有限的 AEM Publish Delivery 或 Edge Delivery Services 專案機會。若您有興趣參與，或想了解更多相關資訊，請傳送電子郵件至 [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com)，並簡要描述您的使用案例。
 
-#### Edge Delivery Services 的 Edge 驗證 (Beta 版方案) {#edge-authentication}
+### Edge Delivery Services 的 Edge 驗證 (Beta 版方案) {#edge-authentication}
 
 透過 Edge 驗證，您可以限制 Edge Delivery Services 頁面的存取權，僅允許通過您的身分提供者 (IdP) 驗證的使用者存取。部署 OpenID Connect (OIDC) 設定 YAML 檔案即可做到上述動作。
 
 若有興趣，請寄送電子郵件至 [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com)，簡短說明您的使用案例以及任何問題。
 
 <!--
-#### CDN Configuration for Edge Delivery Services (Beta Program) {#cdn-eds-beta}
+### CDN Configuration for Edge Delivery Services (Beta Program) {#cdn-eds-beta}
 
 The Adobe-Managed CDN offers flexible configuration options, as described in the [Config Pipeline article](/help/operations/config-pipeline.md#configurations). 
 
@@ -221,7 +256,7 @@ Now in beta, youcan deploy a config pipeline for features including CDN origin s
 
 -->
 
-#### Canary 生產部署，以便在接受即時流量之前測試程式碼 (Beta 版方案) {#canary-beta}
+### Canary 生產部署，以便在接受即時流量之前測試程式碼 (Beta 版方案) {#canary-beta}
 
 向一般使用者公開之前，先使用僅限內部的測試流量驗證生產建置版本。運送至生產環境、僅路由 Canary 流量 (使用特殊標頭)、監視行為，然後升級至即時流量或復原，而不會影響客戶。
 
@@ -230,7 +265,7 @@ Now in beta, youcan deploy a config pipeline for features including CDN origin s
 寄送電子郵件至 [aemcs-canary-deployments-beta@adobe.com](mailto:aemcs-canary-deployments-beta@adobe.com) 來請求存取權及提供意見回饋。
 
 
-#### AI回答 — 適用於AEM Sites (Beta計畫)的更聰明、內容感知的回應 {#ai-answers-beta}
+### AI回答 — 適用於AEM Sites (Beta計畫)的更聰明、內容感知的回應 {#ai-answers-beta}
 
 AI解答為訪客引進了一種與您的內容互動的新方式。 透過擷取增強型產生(RAG)技術，使用AEM管理的資料，直接在數位體驗中提供準確、品牌一致的答案。
 
@@ -238,19 +273,14 @@ AI解答為訪客引進了一種與您的內容互動的新方式。 透過擷�
 
 若要要求參與或接收更新，請連絡[feedback-ai-answers@adobe.com](mailto:feedback-ai-answers@adobe.com)。
 
-#### 使用AI加速AEM開發(Alpha計畫)  {#ai-dev-alpha}
 
-AEM Java棧疊團隊越來越多地在Cursor、Claude Code、Visual Studio和IntelliJ等工具中使用AI輔助開發，以加快功能交付並提高計畫碼品質。 我們正在收集真實世界的體驗，以協助塑造未來Adobe支援的AI功能。
-
-透過傳送電子郵件至[aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com)，分享您團隊的工作成果，以及您希望Adobe提供的成果。
-
-#### RDE 快照 (Alpha 方案) {#rde-snapshot-program}
+### RDE 快照 (Alpha 方案) {#rde-snapshot-program}
 
 在 Alpha 版本中，快速開發環境 (RDE) 現在支援對程式碼和內容的目前狀態進行快照的功能，這些快照可以在之後還原。在同步可能需要復原的程式碼，或在不同功能的開發之間切換時，此功能很實用。您也可以僅還原可變內容做為測試的已知起點。
 
 如果您有興趣對此功能提供意見，請寄送電子郵件至 [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com)。
 
-#### 擴充應用程式效能監視 (APM) (Alpha 版方案) {#apm-alpha}
+### 擴充應用程式效能監視 (APM) (Alpha 版方案) {#apm-alpha}
 
 為便於觀察，AEM Cloud Service 目前支援 Adobe 提供的 [New Relic One](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic) 和客戶管理的 [Dynatrace](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/dynatrace)。由於我們仍在探索其他 APM 選項支援，請寄送電子郵件至 [aemcs-apm-beta@adobe.com](mailto:aemcs-apm-beta@adobe.com) 與我們聯絡，告知您偏好的供應商或技術，並提供使用案例。
 
