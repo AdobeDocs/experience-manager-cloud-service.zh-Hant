@@ -91,6 +91,6 @@ curl "https://publish-pXXXXX-eXXXXXX.adobeaemcloud.com/cdnstatus?code=403"
 
 ### 教學課程
 
-請參閱[CDN錯誤頁面](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages)教學課程，以取得如何建立、部署和測試CDN提供的錯誤頁面的逐步指示。
+請參閱[CDN錯誤頁面](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages)教學課程，以取得如何建立、部署和測試CDN提供的錯誤頁面的逐步指示。
 
 

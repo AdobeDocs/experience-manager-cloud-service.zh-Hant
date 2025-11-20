@@ -22,11 +22,11 @@ ht-degree: 1%
 
 AEM as a Cloud Service CDN中HTTP回應的快取是由以下來自來源的HTTP回應標題所控制： `Cache-Control`、`Surrogate-Control`或`Expires`。
 
-這些快取標頭通常在使用mod_headers的AEM Dispatcher vhost設定中設定，但也可以在AEM Publish本身中執行的自訂Java™程式碼中設定（請參閱[如何啟用CDN快取](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/enable-caching)）。
+這些快取標頭通常在使用mod_headers的AEM Dispatcher vhost設定中設定，但也可以在AEM Publish本身中執行的自訂Java™程式碼中設定（請參閱[如何啟用CDN快取](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/caching/how-to/enable-caching)）。
 
 CDN資源的快取索引鍵包含完整的請求url，包括查詢引數，因此每個不同的查詢引數都會產生不同的快取專案。 請考慮移除不要的查詢引數；[請參閱下文](#marketing-parameters)以改進快取命中率。
 
-AEM as a Cloud Service的CDN不會快取`private`中包含`no-cache`、`no-store`或`Cache-Control`的原始回應（如需詳細資訊，請參閱[如何停用CDN快取](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/disable-caching)）。  此外，設定Cookie （即具有`Set-Cookie`回應標題）的回應不會由CDN快取。
+AEM as a Cloud Service的CDN不會快取`private`中包含`no-cache`、`no-store`或`Cache-Control`的原始回應（如需詳細資訊，請參閱[如何停用CDN快取](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/caching/how-to/disable-caching)）。  此外，設定Cookie （即具有`Set-Cookie`回應標題）的回應不會由CDN快取。
 
 ### HTML/文字 {#html-text}
 
@@ -53,7 +53,7 @@ Define DISABLE_DEFAULT_CACHING
   ```
 
   >[!NOTE]
-  >Surrogate-Control標頭會套用至Adobe管理的CDN。 如果使用[客戶管理的CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html#point-to-point-CDN)，則視您的CDN提供者而定，可能需要不同的標頭。
+  >Surrogate-Control標頭會套用至Adobe管理的CDN。 如果使用[客戶管理的CDN](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=zh-Hant#point-to-point-CDN)，則視您的CDN提供者而定，可能需要不同的標頭。
 
   設定全域快取控制標頭或符合寬範圍Regex的類似快取標頭時，請務必謹慎，以免套用至必須私人儲存的內容。 請考慮使用多個指示，以確保以微調的方式套用規則。 如此一來，如果AEM as a Cloud Service偵測到快取標題已套用至偵測到Dispatcher無法快取的專案，則會移除快取標題，如Dispatcher檔案所述。 若要強制AEM一律套用快取標頭，您可以新增&#x200B;**`always`**&#x200B;選項，如下所示：
 
@@ -83,13 +83,13 @@ Define DISABLE_DEFAULT_CACHING
     </LocationMatch>
   ```
 
-* 雖然CDN不會快取設定為私用的HTML內容，但若已設定[許可權敏感型快取](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html)，則可以在Dispatcher快取該內容，以確保只有授權的使用者才能獲得該內容。
+* 雖然CDN不會快取設定為私用的HTML內容，但若已設定[許可權敏感型快取](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=zh-Hant)，則可以在Dispatcher快取該內容，以確保只有授權的使用者才能獲得該內容。
 
   >[!NOTE]
   >其他方法(包括[Dispatcher-ttl AEM ACS Commons專案](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/))無法成功覆寫值。
 
   >[!NOTE]
-  >Dispatcher可能仍會根據自己的[快取規則](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html)快取內容。 若要讓內容確實為私人，請確保Dispatcher不會快取內容。
+  >Dispatcher可能仍會根據自己的[快取規則](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html?lang=zh-Hant)快取內容。 若要讓內容確實為私人，請確保Dispatcher不會快取內容。
 
 ### 使用者端資料庫(js，css) {#client-side-libraries}
 
@@ -157,7 +157,7 @@ AEM層預設不會快取blob內容。
 >[!NOTE]
 >將Cloud Manager環境變數AEM_BLOB_ENABLE_CACHING_HEADERS設定為true，以將較舊的預設行為變更為與新的行為(高於65000的程式ID)一致。 如果程式已上線，請務必確認在變更後，內容會如預期般運作。
 
-現在，無法使用[許可權敏感型快取](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html)，在Dispatcher快取標示為私用的Blob儲存體中的影像。 系統會一律向AEM來源要求影像，並在使用者獲得授權時提供影像。
+現在，無法使用[許可權敏感型快取](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=zh-Hant)，在Dispatcher快取標示為私用的Blob儲存體中的影像。 系統會一律向AEM來源要求影像，並在使用者獲得授權時提供影像。
 
 >[!NOTE]
 >其他方法(包括[dispatcher-ttl AEM ACS Commons專案](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/))無法成功覆寫值。
@@ -237,7 +237,7 @@ AEM層預設不會快取blob內容。
 
 ### 分析CDN快取命中率 {#analyze-chr}
 
-請參閱[快取命中率分析教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/cdn-cache-hit-ratio-analysis.html)，以取得有關使用儀表板下載CDN記錄檔和分析網站快取命中率的資訊。
+請參閱[快取命中率分析教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/caching/cdn-cache-hit-ratio-analysis.html?lang=zh-Hant)，以取得有關使用儀表板下載CDN記錄檔和分析網站快取命中率的資訊。
 
 ### HEAD請求行為 {#request-behavior}
 
@@ -265,7 +265,7 @@ data:
     removeMarketingParams: false
 ```
 
-如果CDN層級的`removeMarketingParams`功能已停用，仍建議設定Dispatcher設定的`ignoreUrlParams`屬性；請參閱[設定Dispatcher — 忽略URL引數](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters)。
+如果CDN層級的`removeMarketingParams`功能已停用，仍建議設定Dispatcher設定的`ignoreUrlParams`屬性；請參閱[設定Dispatcher — 忽略URL引數](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hant#ignoring-url-parameters)。
 
 忽略行銷引數有兩種可能性。 （其中第一個偏好使用查詢引數來忽略防快取）：
 
@@ -301,7 +301,7 @@ data:
 >[!NOTE]
 >為正確使Dispatcher失效，請確定來自「127.0.0.1」、「localhost」、「\*.local」、「\*.adobeaemcloud.com」和「\*.adobeaemcloud.net」的請求都符合，並由vhost設定處理，以便可以提供請求。 您可以依照參考[AEM原型](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.d/available_vhosts/default.vhost)中的模式，在全域比對「*」的全域vhost設定中執行此工作。 或者，您也可以確保前述清單是由其中一個主機擷取。
 
-當發佈執行個體收到來自作者的新版本頁面或資產時，會使用排清代理程式來使其Dispatcher上的適當路徑失效。 更新的路徑會連同其父項一起從Dispatcher快取中移除，直到某個層級（您可以使用[statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level)設定此層級）。
+當發佈執行個體收到來自作者的新版本頁面或資產時，會使用排清代理程式來使其Dispatcher上的適當路徑失效。 更新的路徑會連同其父項一起從Dispatcher快取中移除，直到某個層級（您可以使用[statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hant#invalidating-files-by-folder-level)設定此層級）。
 
 ## Dispatcher快取明確失效 {#explicit-invalidation}
 
@@ -512,7 +512,7 @@ Replicator.replicate (session,ReplicationActionType.DELETE,paths, options);
 >1. Invoke the replication agent, specifying the publish dispatcher flush agent
 >2. Directly calling the `invalidate.cache` API (for example, `POST /dispatcher/invalidate.cache`)
 >
->The dispatcher's `invalidate.cache` API approach will no longer be supported since it addresses only a specific dispatcher node. AEM as a Cloud Service operates at the service level, not the individual node level and so the invalidation instructions in the [Invalidating Cached Pages From AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html) page are not longer valid for AEM as a Cloud Service.
+>The dispatcher's `invalidate.cache` API approach will no longer be supported since it addresses only a specific dispatcher node. AEM as a Cloud Service operates at the service level, not the individual node level and so the invalidation instructions in the [Invalidating Cached Pages From AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=zh-Hant) page are not longer valid for AEM as a Cloud Service.
 
 The replication flush agent should be used. This can be done using the [Replication API](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/replication/Replicator.html). The flush agent endpoint is not configurable but pre-configured to point to the dispatcher, matched with the publish service running the flush agent. The flush agent can typically be triggered by OSGi events or workflows.
 
@@ -524,9 +524,9 @@ The diagram presented below illustrates this.
 
 ![CDN](assets/cdnd.png "CDN")
 
-If there is a concern that the dispatcher cache is not clearing, contact [customer support](https://helpx.adobe.com/support.ec.html) who can flush the dispatcher cache if necessary.
+If there is a concern that the dispatcher cache is not clearing, contact [customer support](https://helpx.adobe.com/tw/support.ec.html) who can flush the dispatcher cache if necessary.
 
-The Adobe-managed CDN respects TTLs and thus there is no need fo it to be flushed. If an issue is suspected, [contact customer support](https://helpx.adobe.com/support.ec.html) support who can flush an Adobe-managed CDN cache as necessary. -->
+The Adobe-managed CDN respects TTLs and thus there is no need fo it to be flushed. If an issue is suspected, [contact customer support](https://helpx.adobe.com/tw/support.ec.html) support who can flush an Adobe-managed CDN cache as necessary. -->
 
 ## 使用者端程式庫和版本一致性 {#content-consistency}
 

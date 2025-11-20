@@ -63,7 +63,7 @@ data:
 
 請參閱[「使用設定管道」](/help/operations/config-pipeline.md#common-syntax)，取得 `data` 節點上方屬性的描述。`kind`屬性值應該是&#x200B;*CDN*，且`version`屬性應該設定為`1`。
 
-如需詳細資訊，請參閱[設定和部署HTTP標頭驗證CDN規則](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule)教學課程步驟。
+如需詳細資訊，請參閱[設定和部署HTTP標頭驗證CDN規則](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule)教學課程步驟。
 
 其他屬性包括：
 
@@ -183,7 +183,7 @@ data:
 >[!NOTE]
 >在部署參考清除金鑰的組態之前，必須將清除金鑰設定為[機密型別Cloud Manager環境變數](/help/operations/config-pipeline.md#secret-env-vars)。 建議使用至少32個位元組長度的唯一隨機金鑰；例如，Open SSL密碼編譯程式庫可以透過執行命令openssl rand -hex 32來產生隨機金鑰
 
-您可以參考以設定清除金鑰和執行CDN快取清除為重點的[教學課程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache)。
+您可以參考以設定清除金鑰和執行CDN快取清除為重點的[教學課程](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache)。
 
 ## 基本驗證 {#basic-auth}
 
