@@ -3,9 +3,9 @@ title: 表單建立技能
 description: 瞭解Experience Production代理程式的表單建立技能，以及如何使用自然語言從頭開始建立表單。
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: d5b7a8343551c5880b40c692266f33a1864f9d2b
+source-git-commit: df7218043e8989d98c1228f129d7dfab4f93b61a
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '507'
 ht-degree: 0%
 
 ---
@@ -24,9 +24,9 @@ ht-degree: 0%
 
 ## 功能 {#capabilitiess}
 
-* **建立具有純文字提示的新表單**：您可以透過以純文字提交您的要求，建立品牌內表單體驗。
+* **建立具有純文字提示的新表單**：您可以透過以純文字提交您的要求來建立表單。 代理程式會根據您的自然語言說明和指定的範本，自動產生適當的表單結構、欄位型別和品牌上體驗。 此功能可加速表單建立，同時確保維持品牌和合規性標準。
 
-* **匯入PDF或影像並將其轉換為表單**：您可以將現有的影像或PDF檔案匯入並轉換為表單。 代理程式會分析上傳的內容以偵測欄位型別、保留版面，並透過回應式設計和驗證邏輯增強表單。 支援的格式包括Acroform、XFA PDF、平面PDF、影像(JPG、PNG)和手繪表單像片。
+* **匯入PDF或影像並將其轉換為表單**：您可以將現有的影像或PDF檔案匯入並轉換為表單。 代理程式會分析已上傳的內容，以偵測欄位型別、保留版面，並透過回應式設計和驗證邏輯來增強表單，同時確保維護品牌和合規性標準。 支援的格式包括PDF檔案、影像(JPG、PNG)和手繪表單像片。
 
   使用任何上述功能時，系統會提示您選擇要建立的表單型別、指定核心元件式最適化表單範本或Edge Delivery Services式最適化表單範本，並指示您儲存表單的偏好路徑。 如果您是根據Edge Delivery Services建立表單，也可以指定存放庫的GitHub URL。
 
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 ## 後續步驟 {#refine-with-forms-experience-builder}
 
-使用AI Assistant建立初始表單結構後，您可以使用Forms建立擴充功能來：
+使用AI Assistant建立初始表單結構後，您可以使用Forms Experience Builder來：
 
 * **更新表單**：透過視覺化編輯器新增或修改欄位、調整欄位型別，以及視需要更新樣式。
 
