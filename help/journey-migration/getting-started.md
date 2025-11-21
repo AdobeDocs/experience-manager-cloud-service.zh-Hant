@@ -52,11 +52,11 @@ AEM as a Cloud Service 為 Experience Manager Assets、Forms 和 Screens 提供�
 >title="關於 Cloud Acceleration Manager "
 >abstract="Cloud Acceleration Manager 是雲端型應用程式，旨在引導您的 IT 團隊進行從規劃到在 Cloud Service 上線的轉變歷程。"
 >additional-url="https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/migration-journey/getting-started#aem-moving-to-aem-guide" text="移至 AEM as a Cloud Service"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/sites-cloud-changes.html" text="AEM Sites as a Cloud Service 重大變更"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/sites-cloud-changes.html?lang=zh-Hant" text="AEM Sites as a Cloud Service 重大變更"
 
 除了本歷程中概述的步驟之外，Adobe 還提供 Cloud Acceleration Manager；這是一種雲端型應用程式，旨在引導您的 IT 團隊完成從規劃到在 Cloud Service 上上線的整個轉換歷程。透過 Adobe 建議的最佳做法、秘訣、文件和工具，協助進行 AEM as Cloud Service 的每個歷程階段，讓您的團隊成功進行遷移。
 
-您可以查閱 [Cloud Acceleration Manager 文件](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md)或觀看[介紹影片](https://experienceleague.adobe.com/en/playlists/experience-manager-all-move-to-cloud-service#dashboard/learning)，以展開您的遷移歷程。
+您可以查閱 [Cloud Acceleration Manager 文件](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md)或觀看[介紹影片](https://experienceleague.adobe.com/zh-hant/playlists/experience-manager-all-move-to-cloud-service#dashboard/learning)，以展開您的遷移歷程。
 
 ## 後續步驟 {#what-is-next}
 
