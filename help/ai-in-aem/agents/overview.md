@@ -3,9 +3,9 @@ title: 業務代理概述
 description: 瞭解AEM中可用的業務代理，以加速內容建立並自動協調變更。
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 199ff4d21acca9edfa2c27e5231c7906b82015b2
+source-git-commit: e9aded21b788c94bdfdac699655946e991c9be94
 workflow-type: tm+mt
-source-wordcount: '326'
+source-wordcount: '327'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->若要使用代理程式，您必須先註冊。
+>若要使用代理程式，您必須註冊。
 
 ## Experience Production Agent {#experience-production-agent}
 
