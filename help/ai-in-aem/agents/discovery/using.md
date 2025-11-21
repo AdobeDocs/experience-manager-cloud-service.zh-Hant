@@ -152,7 +152,7 @@ Discovery Agent會傳回每個查詢的前20個結果（依相關性排序），
 
 >[!NOTE]
 >
->[Dynamic Media URL](/help/assets/dynamic-media/dynamic-media.md)欄位只有在資產已發佈且您具備有效的Dynamic Media授權時，才會顯示在搜尋結果中。 同樣地，只有當您具備有效的Dynamic Media授權且您的AEM as a Cloud Service執行個體已啟用具有OpenAPI的Dynamic Media時，才會顯示[具有OpenAPI URL的Dynamic Media ](/help/assets/dynamic-media-open-apis-overview.md)欄位。
+>[Dynamic Media URL](/help/assets/dynamic-media/dynamic-media.md)欄位只有在資產已發佈且您具備有效的Dynamic Media授權時，才會顯示在搜尋結果中。 同樣地，只有當您具備有效的Dynamic Media授權且您的AEM as a Cloud Service執行個體已啟用具有OpenAPI的Dynamic Media時，才會顯示[具有OpenAPI URL的Dynamic Media &#x200B;](/help/assets/dynamic-media-open-apis-overview.md)欄位。
 
 ### 內容片段 {#discovery-agent-search-results-content-fragments}
 
