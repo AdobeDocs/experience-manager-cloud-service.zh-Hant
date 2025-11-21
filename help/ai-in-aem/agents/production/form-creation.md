@@ -3,9 +3,9 @@ title: 表單建立技能
 description: 瞭解Experience Production代理程式的表單建立技能，以及如何使用自然語言從頭開始建立表單。
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: df7218043e8989d98c1228f129d7dfab4f93b61a
+source-git-commit: 701c35341ead684cdf306cadcacd8c638004facd
 workflow-type: tm+mt
-source-wordcount: '507'
+source-wordcount: '493'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 * **建立具有純文字提示的新表單**：您可以透過以純文字提交您的要求來建立表單。 代理程式會根據您的自然語言說明和指定的範本，自動產生適當的表單結構、欄位型別和品牌上體驗。 此功能可加速表單建立，同時確保維持品牌和合規性標準。
 
-* **匯入PDF或影像並將其轉換為表單**：您可以將現有的影像或PDF檔案匯入並轉換為表單。 代理程式會分析已上傳的內容，以偵測欄位型別、保留版面，並透過回應式設計和驗證邏輯來增強表單，同時確保維護品牌和合規性標準。 支援的格式包括PDF檔案、影像(JPG、PNG)和手繪表單像片。
+* **匯入PDF檔案並將其轉換為表單**：您可以將現有的PDF檔案匯入並轉換為表單。 代理程式會分析已上傳的內容，以偵測欄位型別、保留版面，並透過回應式設計和驗證邏輯來增強表單，同時確保維護品牌和合規性標準。
 
   使用任何上述功能時，系統會提示您選擇要建立的表單型別、指定核心元件式最適化表單範本或Edge Delivery Services式最適化表單範本，並指示您儲存表單的偏好路徑。 如果您是根據Edge Delivery Services建立表單，也可以指定存放庫的GitHub URL。
 
@@ -40,7 +40,7 @@ ht-degree: 0%
 * *匯入PDF檔案(位於&#39;https://[aem-author-url]/path/to/pdf/file*)，以建立信用卡申請表
 * *使用&#39;<https://github.com/wkndforms/wesecure>&#39;*&#x200B;的樣版建立意見反應表單
 
-## 後續步驟 {#refine-with-forms-experience-builder}
+## 精簡您的表單 {#refine-with-forms-experience-builder}
 
 使用AI Assistant建立初始表單結構後，您可以使用Forms Experience Builder來：
 
