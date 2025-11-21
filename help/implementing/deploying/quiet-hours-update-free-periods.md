@@ -5,9 +5,9 @@ feature: Deploying
 role: Admin
 badge: label="可用性限制" type="Positive"
 exl-id: 54f86a58-eb56-43e6-ab51-7af7466a2d40
-source-git-commit: aec58ceffbbc6c7e2921c471d608ed3c381fe2e4
+source-git-commit: 19ef83258bf2cf8fa69411977d40ebbb8ac6432b
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '746'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ AEM as a Cloud Service [自動維護更新](/help/implementing/deploying/aem-ver
 * **無訊息時數** — 您可以定義不會發生更新的每日時間間隔（最多8小時）。
 * **更新可用期間** — 您可以定義不會發生更新的7天期間。 在12個月的時間範圍內，您最多可以有三個更新可用期間。
 
-更新可用期間和無訊息時數功能是以「每個程式」為基礎進行設定。
+更新可用期間和無訊息時數功能是以「每個程式」為基礎進行設定。 請記住，只有具有&#x200B;**業務負責人**&#x200B;和&#x200B;**部署管理員**&#x200B;的「使用者角色」的使用者才能檢視和使用這些功能。
 
 此外，如需有關已排程的AEM as a Cloud Service自動維護期的資訊，請參閱[Experience Manager發行藍圖](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)頁面。
 
@@ -76,3 +76,13 @@ AEM as a Cloud Service [自動維護更新](/help/implementing/deploying/aem-ver
 ![更新可用期間設定](assets/update-free-periods.png)
 
 目前作用中的更新可用期間附近會顯示&#x200B;**作用中**&#x200B;圖示，而已完成更新可用期間附近會顯示&#x200B;**完成**&#x200B;圖示。
+
+## 規劃的維護排除期 {#planned-maintenance}
+
+Adobe有許多規劃的維護排除期。 這些期間由Adobe定義，旨在將重大事件的風險降至最低，通常每年發生兩或三次。 您可以在[維護版本藍圖](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)頁面上檢視維護排除期的確切排程。
+
+為了協助您正確設定無更新期間，維護排除期間也會顯示在「無訊息時數」和「更新無更新期間」使用者介面中。
+
+![計畫的維護排除期](assets/planned-maintenance.png)
+
+請注意，您無法在排除期間建立更新自由時段。
