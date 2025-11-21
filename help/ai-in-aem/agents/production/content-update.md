@@ -3,10 +3,10 @@ title: 內容更新技能
 description: 瞭解Experience Production Agent的內容更新技能以及可為您執行的操作。
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: d5b7a8343551c5880b40c692266f33a1864f9d2b
+source-git-commit: 7f42357292fab3001a3905919dfcb78f4dfd30ba
 workflow-type: tm+mt
-source-wordcount: '725'
-ht-degree: 2%
+source-wordcount: '862'
+ht-degree: 1%
 
 ---
 
@@ -37,15 +37,17 @@ Experience Production Agent的內容更新技能可自動化內容製作，以�
 
 ![存取探索代理程式](/help/ai-in-aem/agents/production/assets/content-update-ai-assistant-example.png)
 
-<!--
-### Sample Prompts {#sample-prompts}
+### 範例提示 {#sample-prompts}
 
-To initiate content updates you can give a wide range of natural language prompts. You also need to specify the public facing URL of the page you want to update:
+若要啟動內容更新，您可以提供各種自然語言提示。 您也必須指定要更新之頁面的公開顯示URL。 例如：
 
-* Change your headlines
+* 修改下列頁面https://www.your-url.com/sale將主圖示題更新為「黑色星期五特大促銷 — 高達70%折扣」、將倒數計時器變更為「48小時後結束」、移除「註冊更新」、將所有「立即購買」按鈕變更為「搶先交易」
 
-  * On your-URL change the headline from X to Y
--->
+* https://www.your-url.com/laptops/your-laptop-model將橫幅副本更新為「僅今日節省300美元」，將價格從1,299美元更新為999美元，移除融資選項橫幅
+
+* https://www.your-url.com/your-sneaker將庫存狀態從「低庫存」更新為「補貨 — 有限數量」，變更大小選擇器以綠色反白顯示可用大小，移除「即將推出」徽章
+
+* https://www.your-url.com/your-sneaker更新產品影像以顯示新色道
 
 >[!NOTE]
 >
@@ -109,7 +111,7 @@ To initiate content updates you can give a wide range of natural language prompt
 
 ### 啟用 {#activation}
 
-若要使用Jira啟動並存取生產代理程式，您需要傳送電子郵件給Adobe。 若要開始使用，您可以聯絡：
+若要使用Jira啟用和存取Experience Production Agent，您必須傳送電子郵件至Adobe。 若要開始使用，您可以聯絡：
 
 * `experience-production-agent@adobe.com`
 * 或聯絡您的帳戶團隊
