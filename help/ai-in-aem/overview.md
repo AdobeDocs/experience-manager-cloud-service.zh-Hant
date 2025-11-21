@@ -1,40 +1,51 @@
 ---
 title: AEM as a Cloud Service中的AI
 description: 瞭解Adobe Experience Manager as a Cloud Service中的AI
-feature: Generative AI, AI Assistant, AI Tools
+feature: Generative AI, AI Assistant, AI Tools, Agentic AI
 role: Admin, Developer, User
 exl-id: 60fd4c57-53ed-4b4a-aea1-1c132184916f
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 016d0f155278d6bde5dd09175ec179b10e6acb75
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 79%
+source-wordcount: '440'
+ht-degree: 48%
 
 ---
 
+
 # AEM as a Cloud Service中的AI {#ai-in-aem-as-a-cloud-service}
 
-AI是Adobe Experience Manager as a Cloud Service不可或缺的一部分，用於支援使用者尋找資訊或產生體驗。
+人工智慧(AI)是Adobe Experience Manager as a Cloud Service不可或缺的一部分，可支援使用者尋找資訊或產生體驗。
 
 ## AI 助理 {#ai-assistant}
 
 Adobe Experience Manager[中的](/help/implementing/cloud-manager/ai-assistant-in-aem.md)AI助理提供對話式介面，可簡化尋找與AEM相關之查詢的答案。
 
+## AEM中的Agentic AI {#agentic-ai-in-aem}
+
+AEM提供一系列[業務代理程式](/help/ai-in-aem/agents/overview.md)，可加速您的內容建立並自動協調變更：
+
+* [生產代理程式](/help/ai-in-aem/agents/production/overview.md)
+* [內容最佳化代理程式](/help/ai-in-aem/agents/content-optimization/using.md)
+* [探索代理程式](/help/ai-in-aem/agents/discovery/using.md)
+* [開發代理程式](/help/ai-in-aem/agents/development/overview.md)
+* [治理代理程式](/help/ai-in-aem/agents/governance/overview.md)
+
 ## AEM中的Generative AI {#generative-ai-in-aem}
 
 Adobe Experience Manager (AEM) as a Cloud Service 的 Adobe 生成式 AI，讓品牌能夠在編輯介面內透過副本和影像的生成建立高效能體驗。藉助生成式 AI，您可以自動建立以下內容：
 
-* 品牌意識：建立包含品牌語調、風格指南和其他特定要求的內容。
-* 根據客群進行個人化：善用精細的內容效能見解，為所有管道中的任何人物誌量身打造內容。
-* 區域特定：超越翻譯並根據區域性偏好和行為模式調整您的內容。
-* 持續最佳化：執行實驗以判別哪些變化版本效能最佳，並利用見解改善未來 AI 生成的內容。
+* **品牌感知** — 建立結合品牌語調、風格准則和其他特定要求的內容。
+* **依對象個人化** — 運用精細的內容效能深入分析，為所有管道的任何角色量身打造內容。
+* **地區特定** — 超越翻譯，根據地區偏好和行為模式調整您的內容。
+* **持續最佳化** — 執行實驗以判斷哪些變數表現最佳並使用見解來改善未來AI產生的內容。
 
 生成式 AI 在整個 AEM 中廣泛應用：
 
 * [產生變化版本：與 AEM 編輯器整合](/help/generative-ai/generate-variations-integrated-editor.md)
 
-  產生變化版本使用生成式人工智慧 (AI)，根據您的輸入建立內容變化版本。建立變化版本後，您可以在網站上使用這些內容，也可以使用 Edge Delivery Services 的「實驗」功能來衡量其是否成功。
+  「產生變化」會使用產生AI，根據您的輸入建立內容變化。 建立變化後，您可以在網站上使用內容，也可以使用Edge Delivery Services的Experimentation功能來衡量其成功與否。
 
-   * 以及先前版本的[產生變化版本](/help/generative-ai/generate-variations.md)
+   * [編輯器外的舊版「產生變數」](/help/generative-ai/generate-variations.md)仍可使用。
 
      >[!NOTE]
      >

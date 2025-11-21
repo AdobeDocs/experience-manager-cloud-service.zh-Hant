@@ -1,19 +1,19 @@
 ---
-title: 存取和管理記錄檔
+title: 存取和管理記錄
 description: 了解如何存取和管理記錄檔以協助進行 AEM as a Cloud Service 中的開發流程。
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
 solution: Experience Manager
 feature: Log Files, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2c863e0cfad3211e811665a5169def7705e8b907
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 69%
+source-wordcount: '344'
+ht-degree: 68%
 
 ---
 
 
-# 存取和管理記錄檔 {#manage-logs}
+# 存取及管理記錄 {#manage-logs}
 
 了解如何存取和管理記錄檔以協助進行 AEM as a Cloud Service 中的開發流程。
 
@@ -21,9 +21,7 @@ ht-degree: 69%
 
 記錄檔會保留七天。
 
-## 正在下載記錄檔 {#download-logs}
-
-若要下載記錄檔，請執行下列動作：
+## 下載記錄檔 {#download-logs}
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
@@ -49,7 +47,7 @@ ht-degree: 69%
 
 ![環境畫面的記錄檔](assets/download-logs.png)
 
-## 透過 API 的記錄檔 {#logs-through-api}
+## 透過API記錄 {#logs-through-api}
 
 除了透過 UI 下載記錄檔外，還可以透過 API 和命令行介面取得記錄檔。
 
@@ -101,5 +99,5 @@ Environment Id Service    Name
 
 請參閱下列其他資源，以進一步瞭解AEM as a Cloud Service中的記錄檔：
 
-* [Cloud 5 AEM記錄檔](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files#)
-* [使用記錄檔偵錯AEM as a Cloud Service](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#)
+* [Cloud 5 AEM記錄檔](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files#)
+* [使用記錄檔偵錯AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs#)
