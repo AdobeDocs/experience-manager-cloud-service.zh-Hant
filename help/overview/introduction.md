@@ -5,7 +5,7 @@ exl-id: d81b85bb-a69d-49a4-9e75-76f1c6bbcd67
 feature: Release Information
 role: Admin
 source-git-commit: f4c89fc715b686aaabd0766a2e24219ab6811b0b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '631'
 ht-degree: 100%
 
@@ -77,7 +77,7 @@ AEM 採用現代化雲端服務的主要特色來達成下列目標：
 * [AEM Sites as a Cloud Service 重大變更](/help/sites-cloud/sites-cloud-changes.md)
 * [AEM Assets as a Cloud Service 重大變更](/help/assets/assets-cloud-changes.md)
 * [Assets as a Cloud Service 簡介](/help/assets/overview.md)
-* [Adobe Experience Manager as a Cloud Service 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=zh-Hant)
+* [Adobe Experience Manager as a Cloud Service 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 
 >[!TIP]
 >

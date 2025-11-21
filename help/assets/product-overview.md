@@ -11,7 +11,7 @@ ht-degree: 100%
 
 # Content Hub 概觀 {#overview-content-hub}
 
-Content Hub 作為 Experience Manager Assets as a Cloud Service 的一部分提供，以實現組織及其業務合作夥伴對品牌內容的大眾化存取。其專注於分配資產以進行大規模啟用，並建立品牌內容變體來提高行銷靈敏度。
+Content Hub 作為 Experience Manager Assets as a Cloud Service 的一部分提供，以實現組織及其業務合作夥伴對品牌內容的民主化存取權。其專注於分配資產以進行大規模啟用，並建立品牌內容變體來提高行銷靈敏度。
 
 ## Content Hub 示範 {#content-hub-demo}
 

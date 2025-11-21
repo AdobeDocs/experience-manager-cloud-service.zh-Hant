@@ -6,7 +6,7 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 source-git-commit: 3761019b42ddc4b3a6cc904afe91b47eb3d99ac6
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 100%
 
@@ -26,7 +26,7 @@ AEM Sites as a Cloud Service 提供體驗管理功能，作為雲端原生 AEM a
 >* [AEM as a Cloud Service 重大變更 (發行說明)](/help/release-notes/aem-cloud-changes.md)
 >* [AEM Assets as a Cloud Service 重大變更](/help/assets/assets-cloud-changes.md)
 >* [AEM Assets as a Cloud Service 簡介](/help/assets/overview.md)
->* [Adobe Experience Manager as a Cloud Service 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=zh-Hant)
+>* [Adobe Experience Manager as a Cloud Service 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 
 AEM Sites as a Cloud Service 中的變更與新增內容如下：
 

@@ -46,7 +46,7 @@ AEM as a Cloud Service 是一種適用於無周邊實作模型的靈活工具，
 1. **用於傳遞的內容 API**
    * 請參閱[結構化內容傳遞與管理的AEM API](/help/headless/apis-headless-and-content-fragments.md)，以取得各種可用API的概觀，以及所涉及概念的比較。
 
-   * 使用[內容片段核心元件的 JSON 匯出](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=zh-Hant) 也可以直接傳遞內容。
+   * 使用[內容片段核心元件的 JSON 匯出](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html) 也可以直接傳遞內容。
 
 ## 您的開始步驟 {#first-steps}
 
@@ -56,7 +56,7 @@ AEM as a Cloud Service 是一種適用於無周邊實作模型的靈活工具，
 |---|---|---|---|---|
 | [Headless 開發人員歷程](/help/journey-headless/developer/overview.md) | **對於剛接觸 AEM 和無周邊技術的開發人員**，從這裡開始全面介紹 AEM 及其無周邊功能，從無周邊理論到實作您的第一個無周邊體驗。 | 指南 | **剛接觸 AEM 和無周邊技術** 的開發人員 | 1 小時 |
 | [Headless 設定](/help/headless/setup/introduction.md) | 對於需要扼要介紹關鍵 AEM 無周邊功能的&#x200B;**有經驗 AEM 使用者**，請查看此快速入門概觀。 | 參考設定 | **具有 AEM 經驗**&#x200B;的開發人員、管理員 | 20 分鐘 |
-| [Headless 實作教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=zh-Hant) | **如果您偏好實作教學並且熟悉 AEM**，本教程將直接深入實作簡單無周邊應用程式。 | 教學課程 | 開發人員 | 2 小時 |
+| [Headless 實作教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) | **如果您偏好實作教學並且熟悉 AEM**，本教程將直接深入實作簡單無周邊應用程式。 | 教學課程 | 開發人員 | 2 小時 |
 | [Headless 架構師歷程](/help/journey-headless/architect/overview.md)  | **對於剛接觸 AEM 和無周邊技術的架構師**，從這裡開始介紹 Adobe Experience Manager as a Cloud Service 的強大、靈活、無周邊功能，以及如何為您的專案建立內容模型。 | 指南 | 架構師 | 1 小時 |
 | [Headless 編寫歷程](/help/journey-headless/author/overview.md) | **對於剛接觸 AEM 和無周邊技術的商業使用者**，從這裡開始介紹 Adobe Experience Manager as a Cloud Service 的強大、靈活、無周邊功能，以及如何為您的專案建立內容模型。 | 指南 | 內容建立者 | 1 小時 |
 | [Headless 翻譯歷程](/help/journey-headless/translation/overview.md) | 對於那些&#x200B;**對 AEM 的無周邊翻譯方法感興趣的人**。了解無周邊技術以及在 AEM 中建立和更新翻譯專案的整個過程。 | 指南 | 翻譯專家 | 1 小時 |

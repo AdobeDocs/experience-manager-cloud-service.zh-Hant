@@ -3,7 +3,7 @@ title: 在 AEM 中引進 Assets as a Cloud Service 進行數位資產管理
 description: 在 AEM 中引進 Assets as a Cloud Service 進行數位資產管理
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
 source-git-commit: f72f72e87dabe89cafc0a56feb35f58ae1a97dfb
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '5078'
 ht-degree: 100%
 
@@ -636,7 +636,7 @@ AEM Assets 透過 Content Hub 與 Dynamic Media 的整合，包括強大的 Open
 
 +++**Content Hub**
 
-Content Hub 作為 Experience Manager Assets as a Cloud Service 的一部分提供，以實現組織及其業務合作夥伴對品牌內容的大眾化存取。其專注於分配資產以進行大規模啟用，並建立品牌內容變體來提高行銷靈敏度。
+Content Hub 作為 Experience Manager Assets as a Cloud Service 的一部分提供，以實現組織及其業務合作夥伴對品牌內容的民主化存取權。其專注於分配資產以進行大規模啟用，並建立品牌內容變體來提高行銷靈敏度。
 
 Content Hub 提供以下主要優勢：
 
@@ -894,7 +894,7 @@ Dynamic Media 提供以下主要功能：
 
 >[!ENDTABS]
 
-## 適用於數位資產管理以角色為主的體驗 {#persona-based-experiences}
+## 適用於數位資產管理以人物誌為主的體驗 {#persona-based-experiences}
 
 Adobe 為您提供健全的數位資產管理 (DAM) 解決方案，可供您善加利用您的數位資產。Adobe Experience Manager Assets 具有兩種使用同一雲端服務存放庫的獨立體驗：
 
