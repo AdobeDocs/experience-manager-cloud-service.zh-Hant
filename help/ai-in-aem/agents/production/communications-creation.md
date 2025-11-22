@@ -3,15 +3,19 @@ title: 溝通建立技能
 description: 瞭解Experience Production Agent的通訊建立技能，以及如何使用自然語言建立互動式通訊。
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 701c35341ead684cdf306cadcacd8c638004facd
+source-git-commit: dab727f81a8863ca82c7c531e65c365b29fd5c23
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---
 
 
 # 溝通建立技能 {#ic-creation-skill}
+
+>[!NOTE]
+>
+> 「通訊建立」技能目前為Alpha版。 如果您想要參與，請將您的正式電子郵件地址傳送至[aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)。
 
 互動式通訊是個人化的資料導向檔案，專為商業通訊而設計，例如帳戶對帳單、原則檔案、帳單、歡迎套件和福利通知。 不同於從使用者收集輸入的表單，互動式通訊會產生具有動態、收件者特定內容的輸出檔案。
 
@@ -39,7 +43,9 @@ ht-degree: 0%
 * *從位於https://[aem-author-url]/path/to/image/file*&#x200B;的影像檔建立通訊
 * 使用PDF檔案建立信件，網址為https://[aem-author-url]/path/to/pdf/file
 
+
 ## 精簡您的通訊內容 {#refine-with-ic-editor}
+
 
 使用AI助理建立初始通訊結構後，您可以使用互動式通訊編輯器來調整及增強您的檔案。 在互動式通訊編輯器中，您可以使用自然語言提供提示以：
 
@@ -65,4 +71,3 @@ ht-degree: 0%
 * *將條款與條件區段的行距變更為1.5*
 
 如需互動式通訊編輯器功能的詳細資訊，請參閱[互動式通訊檔案](/help/forms/introduction-to-interactive-communication.md)。
-
