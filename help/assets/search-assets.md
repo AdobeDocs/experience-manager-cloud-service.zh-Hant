@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Selectors, Adobe Stock, Asset Distribution, Asset Management, Asset Processing
 role: User, Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 391294cf461662d145a52b6c8a366e53f39ff84a
+source-git-commit: 32bc8ba2a7e7a783b3e816c78873c6a8c559c1a1
 workflow-type: tm+mt
-source-wordcount: '6089'
+source-wordcount: '5969'
 ht-degree: 5%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 5%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/search-assets.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/search-assets.html) |
 | AEM as a Cloud Service  | 本文章 |
 
 [!DNL Adobe Experience Manager Assets]提供強大的資產搜尋方法，協助您達到更高的內容速度。 您的團隊可使用開箱即用的功能和自訂方法，透過順暢的智慧型資產搜尋體驗縮短上市時間。 搜尋資產功能是使用數位資產管理系統的核心，不論是供創意人員進一步使用、供業務使用者和行銷人員健全管理資產，還是DAM管理員管理。 您可以透過[!DNL Assets]使用者介面或其他應用程式和介面執行的簡單、進階和自訂搜尋，有助於完成這些使用案例。
@@ -53,19 +53,19 @@ AEM中的資產搜尋支援下列使用案例，本文介紹這些使用案例�
 ![瞭解Experience Manager Assets搜尋結果介面](assets/aem-search-interface.png)
 *圖：瞭解[!DNL Experience Manager Assets]搜尋結果介面。*
 
-**A.**&#x200B;將搜尋儲存為智慧型集合。
-**B.**&#x200B;篩選或述詞以縮小搜尋結果。
-**C.**&#x200B;顯示檔案、資料夾或兩者。
-**D.**&#x200B;搜尋位置為DAM。
-**E.**&#x200B;存取已儲存的搜尋。
-**F.**&#x200B;按一下[篩選器]以開啟或關閉左側邊欄。
-**G.**&#x200B;將Assets顯示為預設搜尋。
-**H.**&#x200B;搜尋位置為DAM。
+**A.**將搜尋儲存為智慧型集合。
+**B.**篩選或述詞以縮小搜尋結果。
+**C.**顯示檔案、資料夾或兩者。
+**D.**搜尋位置為DAM。
+**E.**存取已儲存的搜尋。
+**F.**按一下[篩選器]以開啟或關閉左側邊欄。
+**G.**將Assets顯示為預設搜尋。
+**H.**搜尋位置為DAM。
 **I.** Omnisearch欄位包含使用者提供的搜尋關鍵字。
-**J.**&#x200B;選取載入的搜尋結果。
-**K.**&#x200B;依建立、修改、名稱、無進行排序。
-**L.**&#x200B;依遞增或遞減順序排序。
-**M.**&#x200B;搜尋結果總數中顯示的搜尋結果數目。 **N.**&#x200B;關閉搜尋。
+**J.**選取載入的搜尋結果。
+**K.**依建立、修改、名稱、無進行排序。
+**L.**依遞增或遞減順序排序。
+**M.**&#x200B;搜尋結果總數中顯示的搜尋結果數目。 **N.**關閉搜尋。
 **O.**&#x200B;在卡片檢視和清單檢視之間切換。
 
 ### 動態搜尋Facet {#dynamicfacets}
@@ -86,7 +86,7 @@ Experience Manager Assets預設會顯示兩個屬性的Facet計數：
 
 `damAssetLucene-9`變更Oak查詢Facet計數的行為，不再評估基礎搜尋索引傳回之Facet計數的存取控制，進而加快搜尋回應時間。 因此，使用者可能會看到面向計數值，其中包括他們無權存取的資產。 這些使用者無法存取、下載或讀取這些資產的任何其他詳細資訊，包括其路徑，或取得任何有關這些資產的進一步資訊。
 
-如果您需要切換到先前的行為（`statistical`模式），請參閱[內容搜尋和索引](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=zh-Hant)以建立`damAssetLucene-9`索引的自訂版本。 由於對大型結果集的搜尋回應時間造成影響，Adobe不建議切換至`secure`模式。
+如果您需要切換到先前的行為（`statistical`模式），請參閱[內容搜尋和索引](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html)以建立`damAssetLucene-9`索引的自訂版本。 由於對大型結果集的搜尋回應時間造成影響，Adobe不建議切換至`secure`模式。
 
 如需Oak多面向功能的詳細資訊，包括這些模式的詳細說明，請參閱[多面向 — Oak檔案 — Lucene索引](https://jackrabbit.apache.org/oak/docs/query/lucene.html#facets)。
 
@@ -143,13 +143,13 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 您可以改善特定資產的關鍵字關聯性，以協助根據關鍵字提升搜尋次數。 換言之，當您根據這些關鍵字進行搜尋時，您為其升級特定關鍵字的影像會出現在搜尋結果的最上方。
 
-1. 從[!DNL Assets]使用者介面，開啟資產的屬性頁面。 按一下「進階」**&#x200B;**，然後按一下「**[!UICONTROL 提升搜尋關鍵字]**」下的「新增」**&#x200B;**。
+1. 從[!DNL Assets]使用者介面，開啟資產的屬性頁面。 按一下「進階」****，然後按一下「**[!UICONTROL 提升搜尋關鍵字]**」下的「新增」****。
 1. 在&#x200B;**[!UICONTROL 搜尋提升]**&#x200B;方塊中，指定您要提升影像搜尋的關鍵字，然後按一下&#x200B;**[!UICONTROL 新增]**。 您可以用相同方式指定多個關鍵字。
 1. 按一下&#x200B;**[!UICONTROL 儲存並關閉]**。 您針對此關鍵字提升的資產會出現在最上層的搜尋結果中。
 
-您可以藉此機會提升目標關鍵字搜尋結果中某些資產的排名。 請觀看下方的視訊範例。 如需詳細資訊，請參閱[搜尋 [!DNL Experience Manager]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=zh-Hant)。
+您可以藉此機會提升目標關鍵字搜尋結果中某些資產的排名。 請觀看下方的視訊範例。 如需詳細資訊，請參閱[搜尋 [!DNL Experience Manager]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html)。
 
->[!VIDEO](https://video.tv.adobe.com/v/3444069/?captions=chi_hant&quality=6)
+>[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
 *影片：瞭解搜尋結果的排名方式，以及如何影響排名。*
 
@@ -184,7 +184,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 ### 尋找類似影像 {#visualsearch}
 
-若要尋找視覺上類似使用者選取之影像的影像，請從影像的卡片檢視或工具列按一下「尋找類似 **&#x200B;**&#x200B;」選項。[!DNL Experience Manager]會顯示來自DAM存放庫的智慧型標籤影像，這些影像類似於使用者選取的影像。
+若要尋找視覺上類似使用者選取之影像的影像，請從影像的卡片檢視或工具列按一下「尋找類似 **** 」選項。[!DNL Experience Manager]會顯示來自DAM存放庫的智慧型標籤影像，這些影像類似於使用者選取的影像。
 
 ![使用卡片檢視中的選項尋找類似的影像](assets/search_find_similar.png)
 
@@ -253,11 +253,11 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 ### 搜尋[!DNL Experience Manager]案頭應用程式中的資產 {#desktop-app}
 
-Creative專業人員使用案頭應用程式，讓[!DNL Experience Manager Assets]可輕鬆地在本機案頭(Win或Mac)上搜尋和使用。 創意人員可以輕鬆地在Mac Finder或Windows檔案總管中顯示所需的資產、在案頭應用程式中開啟並在本機變更 — 變更會透過在存放庫中建立的新版本儲存回[!DNL Experience Manager]。 應用程式支援使用一或多個關鍵字、`*`和`?`萬用字元以及`AND`運運算元進行基本搜尋。 請參閱案頭應用程式中的[瀏覽、搜尋及預覽資產](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=zh-Hant#browse-search-preview-assets)。
+Creative專業人員使用案頭應用程式，讓[!DNL Experience Manager Assets]可輕鬆地在本機案頭(Win或Mac)上搜尋和使用。 創意人員可以輕鬆地在Mac Finder或Windows檔案總管中顯示所需的資產、在案頭應用程式中開啟並在本機變更 — 變更會透過在存放庫中建立的新版本儲存回[!DNL Experience Manager]。 應用程式支援使用一或多個關鍵字、`*`和`?`萬用字元以及`AND`運運算元進行基本搜尋。 請參閱案頭應用程式中的[瀏覽、搜尋及預覽資產](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)。
 
 ### 搜尋 [!DNL Brand Portal] 中的資產 {#brand-portal}
 
-業務線使用者和行銷人員可使用Brand Portal，有效率且安全地與擴充的內部團隊、合作夥伴和經銷商共用核准的數位資產。 請參閱[在Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html?lang=zh-Hant)上搜尋資產。
+業務線使用者和行銷人員可使用Brand Portal，有效率且安全地與擴充的內部團隊、合作夥伴和經銷商共用核准的數位資產。 請參閱[在Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html)上搜尋資產。
 
 ### 搜尋[!DNL Adobe Stock]個影像 {#adobe-stock1}
 
@@ -400,44 +400,23 @@ AI搜尋是一種進階搜尋功能，可瞭解使用者查詢的涵義和意圖
 同樣地，您可以用西班牙文或拼錯拼字`Woman`來指定此提示為`Wman`，仍會得到相同的結果。
 
 
+### 在管理員檢視中啟用或停用AI搜尋 {#enable-disable-ai-search}
+
+執行以下步驟，在管理員檢視中啟用或停用AI搜尋：
+
+1. 導覽至&#x200B;**[!UICONTROL 工具]** >> **[!UICONTROL Assets]** >> **[!UICONTROL Assets設定]** >> **[!UICONTROL Assets Omnisearch設定]**。
+
+1. 在&#x200B;**[!UICONTROL 搜尋]**&#x200B;區段中，選取&#x200B;**[!UICONTROL AI搜尋]**&#x200B;以啟用AI搜尋，或選取&#x200B;**[!UICONTROL 關鍵字]**&#x200B;以停用它。
+
+   ![啟用或停用AI搜尋](/help/assets/assets/enable-ai-search-admin-view.png)
+
+1. 按一下&#x200B;**[!UICONTROL 儲存]**。
+
 ## 與搜尋功能相關的設定和管理工作 {#configadmin}
 
 ### 搜尋索引設定 {#searchindex}
 
 資產探索有賴於DAM內容的索引，包括中繼資料。 更快、更精確的資產探索有賴於最佳化的索引和適當的設定。 請參閱[索引](/help/operations/indexing.md)。
-
-### 視覺或相似性搜尋 {#configvisualsearch}
-
-視覺化搜尋使用智慧標籤。 設定智慧標籤功能後，請遵循下列步驟。
-
-1. 在[!DNL Experience Manager] CRXDE的`/oak:index/lucene`節點中，新增下列屬性和值並儲存變更。
-
-   * 值為`costPerEntry`之型別`Double`的`10`屬性。
-
-   * 值為`costPerExecution`之型別`Double`的`2`屬性。
-
-   * 值為`refresh`之型別`Boolean`的`true`屬性。
-
-   此設定允許從適當的索引進行搜尋。
-
-1. 若要建立Lucene索引，請在CRXDE的`/oak:index/damAssetLucene/indexRules/dam:Asset/properties`建立型別為`imageFeatures`且名為`nt-unstructured`的節點。 在`imageFeatures`節點中，
-
-   * 新增值為`name`的型別`String`的`jcr:content/metadata/imageFeatures/haystack0`屬性。
-
-   * 新增值為`nodeScopeIndex`的型別`Boolean`的`true`屬性。
-
-   * 新增值為`propertyIndex`的型別`Boolean`的`true`屬性。
-
-   * 新增值為`useInSimilarity`的型別`Boolean`的`true`屬性。
-
-   儲存變更。
-
-1. 存取`/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags`並新增值為`similarityTags`之型別`Boolean`的`true`屬性。
-1. 將智慧標籤套用至[!DNL Experience Manager]存放庫中的資產。 請參閱[如何設定智慧標籤](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html?lang=zh-Hant#configuring)。
-1. 在CRXDE的`/oak-index/damAssetLucene`節點中，將`reindex`屬性設定為`true`。 儲存變更。
-1. （選擇性）如果您有自訂的搜尋表單，則將`/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch`節點複製到`/conf/global/settings/dam/search/facets/assets/jcr:content/items`。 儲存變更。
-
-如需相關資訊，請參閱[瞭解Experience Manager中的智慧標籤](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html?lang=zh-Hant)和[如何管理智慧標籤](/help/assets/smart-tags.md)。
 
 ### 必要中繼資料 {#mandatorymetadata}
 
@@ -510,7 +489,7 @@ AI搜尋是一種進階搜尋功能，可瞭解使用者查詢的涵義和意圖
 
 ### 下載搜尋的資產 {#download}
 
-您可以下載搜尋的資產及其轉譯，就像從資料夾下載一般資產一樣。 從搜尋結果中選取一或多個資產，然後按一下工具列中的[下載]。 **&#x200B;**&#x200B;檢視[下載資產](/help/assets/download-assets-from-aem.md)
+您可以下載搜尋的資產及其轉譯，就像從資料夾下載一般資產一樣。 從搜尋結果中選取一或多個資產，然後按一下工具列中的[下載]。 ****&#x200B;檢視[下載資產](/help/assets/download-assets-from-aem.md)
 
 ### 大量更新中繼資料屬性 {#metadata-updates}
 
@@ -529,7 +508,7 @@ AI搜尋是一種進階搜尋功能，可瞭解使用者查詢的涵義和意圖
 
 ### 建立版本 {#create-version}
 
-建立顯示在搜尋結果中的資產版本。 選取資產並按一下&#x200B;**[!UICONTROL 建立]** > **[!UICONTROL 版本]**。 新增選用標籤或註解，然後按一下[建立]。**&#x200B;** 您也可以選取多個資產，並同時為其建立版本。
+建立顯示在搜尋結果中的資產版本。 選取資產並按一下&#x200B;**[!UICONTROL 建立]** > **[!UICONTROL 版本]**。 新增選用標籤或註解，然後按一下[建立]。**** 您也可以選取多個資產，並同時為其建立版本。
 
 ### 建立工作流程 {#create-workflow}
 
@@ -578,5 +557,5 @@ AI搜尋是一種進階搜尋功能，可瞭解使用者查詢的涵義和意圖
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] 搜尋實作指南](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html?lang=zh-Hant)
->* [提升搜尋結果的進階設定](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=zh-Hant)
+>* [[!DNL Experience Manager] 搜尋實作指南](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html)
+>* [提升搜尋結果的進階設定](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html)
