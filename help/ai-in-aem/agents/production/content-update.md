@@ -3,9 +3,9 @@ title: 內容更新技能
 description: 瞭解Experience Production Agent的內容更新技能以及可為您執行的操作。
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 7f42357292fab3001a3905919dfcb78f4dfd30ba
+source-git-commit: 8cd524891df550913a734a9355c1012dc11adf5b
 workflow-type: tm+mt
-source-wordcount: '862'
+source-wordcount: '860'
 ht-degree: 1%
 
 ---
@@ -109,9 +109,9 @@ Experience Production Agent的內容更新技能可自動化內容製作，以�
 
   ![使用Experience Production Agent的內容更新技能的Jira範例](assets/content-update-jira-example.png)
 
-### 啟用 {#activation}
+## 啟用 {#activation}
 
-若要使用Jira啟用和存取Experience Production Agent，您必須傳送電子郵件至Adobe。 若要開始使用，您可以聯絡：
+若要啟用和存取Experience Production Agent，您需要聯絡Adobe。 若要開始使用，您可以聯絡：
 
 * `experience-production-agent@adobe.com`
 * 或聯絡您的帳戶團隊
