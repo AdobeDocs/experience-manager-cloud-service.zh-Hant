@@ -1,11 +1,11 @@
 ---
 title: Development Agent概述
 description: 瞭解AEM中的開發代理程式如何分析Cloud Manager中的失敗管道和建置記錄檔，以建議程式碼修正並加快偵錯速度。
-feature: Agentic AI
+feature: Agentic AI, AI Assistant, AI Tools, User Roles
 role: User, Admin, Architect, Developer
-source-git-commit: 3648dd25c3b3b46663cc09d379aeadfd07cedfa4
+source-git-commit: 897f6376c594604527231f6f5a05a8b85d6858f3
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '476'
 ht-degree: 1%
 
 ---
@@ -81,8 +81,8 @@ Development Agent的管道疑難排解工作需要Cloud Manager — 開發人員
 
 | 提示 | 結果 |
 | --- | --- |
-| *列出我失敗的主要程式管道。* | 雖然結果可能有所不同，但此提示應輸出失敗管道的表格，並提供後續建議，以參考要分析的特定管道。 |
-| *分析我的失敗管道，稱為「開發管道」。* | 此提示應會分析失敗的管道，並提供修正的建議。 |
+| *列出我失敗的主要程式管道。* | 雖然結果可能有所不同，但此提示會輸出失敗管道的表格，並提供後續建議，以參考要分析的特定管道。 |
+| *分析我的失敗管道，稱為「開發管道」。* | 此提示會分析失敗的管道，並提供修正的建議。 |
 
 ## 超出範圍的功能 {#out-of-scope-features}
 

@@ -4,7 +4,7 @@ description: 了解如何使用 Edge Delivery Services 傳遞您的 Cloud Manage
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 897f6376c594604527231f6f5a05a8b85d6858f3
 workflow-type: tm+mt
 source-wordcount: '819'
 ht-degree: 100%
@@ -73,7 +73,7 @@ AEM as a Cloud Service 中的 Cloud Manager 可讓您為專案啟用 Edge Delive
 
 Cloud Manager 中的 **Edge Delivery 待辦事項清單**&#x200B;是上線任務檢查清單，目的為全程引導您上線，管理您的 Edge Delivery 網站一直到[上線](/help/journey-onboarding/go-live-checklist.md)。
 
-![Cloud Manager 中的 Edge Delivery 網站待辦事項清單。](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
+![Cloud Manager 中的 Edge Delivery 網站待辦事項清單](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
 
 |   | 任務 | 描述 |
 | --- | --- | --- |
@@ -87,7 +87,7 @@ Cloud Manager 中的 **Edge Delivery 待辦事項清單**&#x200B;是上線任務
 | 8 | 設定推播驗證 | 請參閱「[為 Edge Delivery 網站設定推播驗證](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)」。 |
 | 9 | 上線 | 請參閱「[上線檢查清單](https://www.aem.live/docs/go-live-checklist)」。 |
 
->[!VIDEO](https://video.tv.adobe.com/v/3441574?captions=chi_hant&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## 記錄支援服務單 {#eds-support-ticket}
 

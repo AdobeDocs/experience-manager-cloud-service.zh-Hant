@@ -5,9 +5,9 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 897f6376c594604527231f6f5a05a8b85d6858f3
 workflow-type: tm+mt
-source-wordcount: '1547'
+source-wordcount: '1544'
 ht-degree: 29%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 29%
 
 >[!TIP]
 >
->本檔案說明Cloud Manager為開發AEM as a Cloud Service專案而建立的組建環境。 如需AEM as a Cloud Service支援的內容製作使用者端平台的詳細資料，請參閱檔案[支援的使用者端平台。](/help/overview/supported-platforms.md)
+>本檔案說明Cloud Manager為開發AEM as a Cloud Service專案而建立的組建環境。 如需AEM as a Cloud Service支援的內容製作使用者端平台的詳細資訊，請參閱[支援的使用者端平台](/help/overview/supported-platforms.md)。
 
 ## 建置環境詳細資訊 {#build-environment-details}
 
