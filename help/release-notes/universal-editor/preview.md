@@ -3,10 +3,10 @@ title: 通用編輯器預覽發行說明
 description: 這是通用編輯器預覽版本的發行說明。
 feature: Release Information
 role: Admin
-source-git-commit: 434bf669f4a060f2d79dcc57f94fbcff27a840e1
+source-git-commit: b060b77954471124a5062fa4b08e905052bc9010
 workflow-type: tm+mt
-source-wordcount: '174'
-ht-degree: 64%
+source-wordcount: '186'
+ht-degree: 60%
 
 ---
 
@@ -27,6 +27,7 @@ ht-degree: 64%
 
 ## 即將推出的新功能 {#what-is-new}
 
+* 已停用授權標頭，以支援[本機開發人員登入。](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login)
 * 現在，在結構化樹狀結構上按一下滑鼠右鍵，會提供內容功能表。
 * 已新增快速鍵至重複的元件。
 
