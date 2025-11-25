@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 8a8f63758cf216b502d5ee894ff5af7285777889
 workflow-type: tm+mt
-source-wordcount: '2778'
+source-wordcount: '2819'
 ht-degree: 5%
 
 ---
@@ -135,6 +135,12 @@ ht-degree: 5%
 * [刪除變數](#delete-variation)
 
 ### 建立變數 {#create-variation}
+
+>[!NOTE]
+>
+>變數會為內容片段增加處理時間、在製作環境中和傳送時。 建議您將變異數維持在可控的最低限度。
+>
+>最佳實務是每個內容片段不超過十個變數。
 
 若要建立內容片段的變數：
 
@@ -267,7 +273,7 @@ ht-degree: 5%
 
   >[!CAUTION]
   >
-  >同步僅可用於將變更&#x200B;*從&#x200B;**Main**&#x200B;複製到變數*。
+  >同步僅可用於將變更&#x200B;*從&#x200B;**Main**複製到變數*。
   >
   >將變更&#x200B;*從變化傳輸至&#x200B;**主要***不提供選項。
 
