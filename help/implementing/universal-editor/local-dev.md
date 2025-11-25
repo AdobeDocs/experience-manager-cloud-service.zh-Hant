@@ -4,10 +4,10 @@ description: 了解如何執行您自己的通用編輯器服務，無論是為�
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Developer
-source-git-commit: d938abce2b46786343b19113454da1738a824ed0
+source-git-commit: 0df573a3d869f2718983b4e661a86c769b4d3f1a
 workflow-type: tm+mt
-source-wordcount: '981'
-ht-degree: 95%
+source-wordcount: '979'
+ht-degree: 93%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 95%
 
 >[!NOTE]
 >
->搭配 Edge Delivery Services 使用 AEM 製作的專案，不需要也不支援本機通用編輯器服務。
+>使用AEM製作與Edge Delivery Services的專案不需要本機通用編輯器服務。
 
 ## 概觀 {#overview}
 
@@ -45,7 +45,7 @@ ht-degree: 95%
 
 為此，您需要將 AEM 設定為在 HTTPS 上執行。出於開發目的，您可以使用自我簽署憑證。
 
-[參閱此文件](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html?lang=zh-Hant)了解如何設定 AEM 在 HTTPS 上執行，包括您可以使用的自我簽署憑證。
+[參閱此文件](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html)了解如何設定 AEM 在 HTTPS 上執行，包括您可以使用的自我簽署憑證。
 
 ## 安裝通用編輯器服務 {#install-ue-service}
 
@@ -53,7 +53,7 @@ ht-degree: 95%
 
 執行通用編輯器服務的本機副本需要 [NodeJS 版本 20](https://nodejs.org/en/download/releases)。
 
-通用編輯器服務可透過 Software Distribution 取得。關於如何存取通用編輯器的詳細資訊，請參閱 [Software Distribution 文件](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hant)。
+通用編輯器服務可透過 Software Distribution 取得。關於如何存取通用編輯器的詳細資訊，請參閱 [Software Distribution 文件](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)。
 
 將來自 Software Distribution 的檔案 `universal-editor-service.cjs` 儲存到您的本機開發環境。
 
