@@ -5,9 +5,9 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: fb4f5a92ac0ef14d9e5bde2155deb702800e2e81
+source-git-commit: b94debebf36f379fc2cb2f193a244fe154c77537
 workflow-type: tm+mt
-source-wordcount: '1263'
+source-wordcount: '1260'
 ht-degree: 16%
 
 ---
@@ -164,7 +164,7 @@ SSL 憑證文件必須是 PEM 格式才能與 Cloud Manager 一起安裝。PEM�
 
 ### 讓我們加密Adobe管理的DV憑證的速率限制
 
-Adobe管理的DV憑證依賴Let&#39;s Encrypt。 除了已安裝憑證的Cloud Manager限制外，Let』s Encrypt還強制執行其本身的速率限制。 一個金鑰限制是&#x200B;**每個識別碼集的新憑證**：在任何7天期間，最多可以為相同的主機名稱集核發5個憑證。 如果達到此限制，Cloud Manager會顯示相對應的Let&#39;s Encrypt錯誤，而且在重設速率限制視窗之前，無法為該主機名稱設定建立更多憑證。 如需最新值及其他相關限制，請參閱[Let&#39;s Encrypt rate-limits檔案](https://letsencrypt.org/docs/rate-limits/#new-certificates-per-exact-set-of-identifiers)。
+Adobe管理的DV憑證依賴Let&#39;s Encrypt。 除了已安裝憑證的Cloud Manager限制外，Let』s Encrypt還強制執行其本身的速率限制。 一個金鑰限制是&#x200B;**每個識別碼集的新憑證**：在任何7天期間，最多可以為相同的主機名稱集核發5個憑證。 如果達到此限制，Cloud Manager會顯示錯誤，且在重設速率限制視窗之前，無法為該主機名稱設定建立更多憑證。 如需最新值及其他相關限制，請參閱[Let&#39;s Encrypt rate-limits檔案](https://letsencrypt.org/docs/rate-limits/#new-certificates-per-exact-set-of-identifiers)。
 
 ## 了解更多 {#learn-more}
 
