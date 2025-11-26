@@ -3,9 +3,9 @@ title: 溝通建立技能
 description: 瞭解Experience Production Agent的通訊建立技能，以及如何使用自然語言建立互動式通訊。
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: dab727f81a8863ca82c7c531e65c365b29fd5c23
+source-git-commit: aa8369979c99535f0fd77e6a51af10cc17afd971
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '769'
 ht-degree: 0%
 
 ---
@@ -71,3 +71,39 @@ ht-degree: 0%
 * *將條款與條件區段的行距變更為1.5*
 
 如需互動式通訊編輯器功能的詳細資訊，請參閱[互動式通訊檔案](/help/forms/introduction-to-interactive-communication.md)。
+
+## 啟用 {#activation}
+
+若要為貴組織啟用Experience Production Agent，必須透過Adobe啟動啟用。 透過以下方式聯絡以開始此程式：
+
+* 電子郵件： `experience-production-agent@adobe.com`
+* 或者，請聯絡您指定的Adobe客戶團隊。
+
+為了提供有效的上線體驗，請準備並提供以下詳細資訊：
+
+針對&#x200B;**AEM as a Cloud Service**，共用下列識別碼：
+
+* 組織 ID
+* `product_id`
+* `profile_id`
+
+您的AEM管理員可透過以下方式找到這些連結：
+
+1. 瀏覽至<https://adminconsole.adobe.com/>
+1. 選取&#x200B;**Adobe Experience Manager as a Cloud Service**
+1. 在您的環境中選擇適當的AEM執行個體
+1. 選取具有相關內容讀取/寫入許可權的設定檔
+1. 從此頁面複製完整的瀏覽器URL
+1. 正在從URL擷取`product_id`和`profile_id`值\
+   （例如，`https://adminconsole.adobe.com/products/profiles/users`之類的URL包含這些引數）。
+
+針對&#x200B;**Edge Delivery檔案製作**，為您的Adobe團隊提供：
+
+* 您的Edge Delivery Services環境的網域
+* 對應的GitHub詳細資料：
+   * 組織(Org)
+   * 存放庫(Repo)
+   * 分支
+
+提供完整且準確的資訊，可加快啟用程式，並確保及時布建Experience Production Agent。
+
