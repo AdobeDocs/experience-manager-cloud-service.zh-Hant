@@ -3,9 +3,9 @@ title: 內容更新技能
 description: 瞭解Experience Production Agent的內容更新技能以及可為您執行的操作。
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 8cd524891df550913a734a9355c1012dc11adf5b
+source-git-commit: 8b7bdb86c3d1b537b536173b6307c486fe436636
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '861'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,7 @@ Experience Production Agent的內容更新技能可自動化內容製作，以�
 
 ## AI 助理 {#ai-assistant}
 
-您可以透過AI助理存取AEM Business Agent。
+您可以透過AI助理存取AEM中的代理程式。
 
 從experience.adobe.com開啟AI小幫手，然後使用`Ask AI Assistant anything`欄位以自然語言指定提示來開始互動：
 

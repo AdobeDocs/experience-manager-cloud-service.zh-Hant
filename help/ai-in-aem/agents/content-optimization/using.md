@@ -3,9 +3,9 @@ title: 內容最佳化代理程式
 description: 瞭解如何使用內容最佳化代理程式，透過套用自然語言指示建立通道就緒的變數，轉變使用者如何調整及調整資產。
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: ab94d59ff93eb4cf29e15a8945063b8ae00c57e8
+source-git-commit: 8b7bdb86c3d1b537b536173b6307c486fe436636
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '907'
 ht-degree: 0%
 
 ---
@@ -68,10 +68,9 @@ ht-degree: 0%
 
 地區行銷人員和機構職員也可以使用內容最佳化代理程式，快速產生適用於管道的影像變化，以支援更快、更一致的內容製作。
 
-
 ## 如何存取Content Optimization Agent？ {#access-content-optimization-agent}
 
-您可以透過AI Assistant存取AEM Business Agent。 登入experience.adobe.com，您可以使用`Ask AI Assistant anything`欄位以自然語言指定提示，開始與AI助理互動：
+您可以透過AI助理存取AEM中的代理程式。 登入experience.adobe.com，您可以使用`Ask AI Assistant anything`欄位以自然語言指定提示，開始與AI助理互動：
 
 ![存取探索代理程式](/help/ai-in-aem/agents/discovery/assets/access-discovery-agent.png)
 

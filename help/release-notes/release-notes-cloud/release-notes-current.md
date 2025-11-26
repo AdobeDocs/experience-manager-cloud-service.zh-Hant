@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 603106282e513ea20b3fb6a022381087cc8491d3
+source-git-commit: 8b7bdb86c3d1b537b536173b6307c486fe436636
 workflow-type: tm+mt
 source-wordcount: '1457'
 ht-degree: 66%
@@ -40,13 +40,13 @@ ht-degree: 66%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440931?captions=chi_hant&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
-## AEM Business Agents {#aem-business-agents}
+## AEM中的代理程式 {#agents-in-aem}
 
-AEM提供了一系列的業務代理，讓您能夠加速內容建立並自動協調變更。 如需詳細資訊，請參閱[AEM Business Agent概觀](/help/ai-in-aem/agents/overview.md)。
+AEM提供了一系列代理程式，可讓您加速內容建立並自動協調變更。 如需詳細資訊，請參閱[AEM代理程式概述](/help/ai-in-aem/agents/overview.md)。
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 

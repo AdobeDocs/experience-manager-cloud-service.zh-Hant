@@ -1,19 +1,19 @@
 ---
-title: 業務代理概述
-description: 瞭解AEM中可用的業務代理，以加速內容建立並自動協調變更。
+title: AEM代理程式概觀
+description: 瞭解AEM中可用的代理程式，以加速內容建立並自動協調變更。
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: e9aded21b788c94bdfdac699655946e991c9be94
+source-git-commit: 8b7bdb86c3d1b537b536173b6307c486fe436636
 workflow-type: tm+mt
-source-wordcount: '327'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
 
 
-# AEM Business Agent概述 {#business-agents-overview}
+# AEM代理程式概觀 {#overview-of-agents-in-aem}
 
-這些業務代理可在Adobe Experience Manager (AEM) as a Cloud Service中使用，以加速內容建立並自動協調變更。
+Adobe Experience Manager (AEM) as a Cloud Service提供這些代理程式，可加速內容建立並自動協調變更。
 
 >[!IMPORTANT]
 >
