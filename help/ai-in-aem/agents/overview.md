@@ -3,7 +3,7 @@ title: AEM代理程式概觀
 description: 瞭解AEM中可用的代理程式，以加速內容建立並自動協調變更。
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 8b7bdb86c3d1b537b536173b6307c486fe436636
+source-git-commit: f981e7ed9f4bbd26226facf37c343f16a9e99263
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 0%
@@ -32,11 +32,11 @@ Adobe Experience Manager (AEM) as a Cloud Service提供這些代理程式，可�
 
 ## 內容最佳化代理程式 {#content-optimization-agent}
 
-[內容最佳化代理程式](/help/ai-in-aem/agents/content-optimization/using.md)透過套用自然語言指示來建立適合管道的變數，以轉換使用者如何調整並調整資產。 代理程式會解譯使用者意圖並自動執行複雜的編輯工作，以執行包括產生新轉譯、調整視覺屬性、變更背景或為特定數位頻道準備資產等工作。
+[內容最佳化代理程式](/help/ai-in-aem/agents/content-optimization/overview.md)透過套用自然語言指示來建立適合管道的變數，以轉換使用者如何調整並調整資產。 代理程式會解譯使用者意圖並自動執行複雜的編輯工作，以執行包括產生新轉譯、調整視覺屬性、變更背景或為特定數位頻道準備資產等工作。
 
 ## 探索代理程式 {#discovery-agent}
 
-[探索代理程式](/help/ai-in-aem/agents/discovery/using.md)提供AEM內容，提供精簡的免費探索體驗。 它會在Assets、內容片段和最適化Forms中聰明地搜尋，以傳遞相關素材，例如影像、影片、PDF檔案、文章和表單範本。
+[探索代理程式](/help/ai-in-aem/agents/discovery/overview.md)提供AEM內容，提供精簡的免費探索體驗。 它會在Assets、內容片段和最適化Forms中聰明地搜尋，以傳遞相關素材，例如影像、影片、PDF檔案、文章和表單範本。
 
 ## 開發代理程式 {#development-agent}
 
