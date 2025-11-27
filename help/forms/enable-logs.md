@@ -28,7 +28,7 @@ ht-degree: 5%
 
 1. 移至`https://'[server]:[port]'/system/console/configMgr`。 找到並開啟&#x200B;*Apace Sling記錄記錄器組態*&#x200B;選項。 對話方塊隨即顯示：
 
-   ![ Apace Sling記錄記錄器組態選項對話方塊](assets/logconfig.png)
+   ![&#x200B; Apace Sling記錄記錄器組態選項對話方塊](assets/logconfig.png)
 
    Apace Sling記錄記錄器設定選項
 
