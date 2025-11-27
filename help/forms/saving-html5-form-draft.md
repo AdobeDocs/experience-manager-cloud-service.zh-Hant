@@ -1,8 +1,7 @@
 ---
-title: 將HTML5表單儲存為草稿
+title: 將 HTML5 表單儲存為草稿
 description: 將HTML5表單儲存為草稿，並在稍後階段繼續填寫表單。
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 445e24af-cd1a-414d-bd01-9feb6631bbef
 feature: HTML5 Forms,Mobile Forms
@@ -11,15 +10,15 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 81a6c2b942df0e72a0b7d359f29c615a44640396
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '326'
-ht-degree: 4%
+ht-degree: 9%
 
 ---
 
 
-# 將HTML5表單儲存為草稿 {#saving-an-html-form-as-a-draft}
+# 將 HTML5 表單儲存為草稿 {#saving-an-html-form-as-a-draft}
 
 <span class="preview"> HTML5 Forms功能屬於Early Access方案的一部分。 若要要求存取權，請將您的正式（工作）電子郵件ID傳送電子郵件至aem-forms-ea@adobe.com。
 </span>
@@ -78,4 +77,4 @@ AEM Forms可立即提供&#x200B;**另存為草稿**&#x200B;設定檔。 您可�
  </tbody>
 </table>
 
-依預設，AEM Forms會將與表單草稿和提交相關聯的使用者資料儲存在發佈執行個體上的/content/forms/fp節點中。 您可以新增自訂儲存提供者，如需詳細資訊，請參閱[草稿與提交元件的自訂儲存](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/forms/use-forms-portal/adding-custom-storage-provider-forms)。
+依預設，AEM Forms會將與表單草稿和提交相關聯的使用者資料儲存在發佈執行個體上的/content/forms/fp節點中。 您可以新增自訂儲存提供者，如需詳細資訊，請參閱[草稿與提交元件的自訂儲存](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/use-forms-portal/adding-custom-storage-provider-forms)。

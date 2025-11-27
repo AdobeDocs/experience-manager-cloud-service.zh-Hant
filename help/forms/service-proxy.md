@@ -1,22 +1,20 @@
 ---
-title: HTML5 forms service proxy
+title: HTML5 表單服務代理
 description: HTML5 Forms Service Proxy是登入提交服務Proxy的設定。 若要設定服務Proxy，請透過要求引數submissionServiceProxy指定送出服務的URL。
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
 exl-id: 8f9b10ae-1600-49c2-a061-153a2a89c67e
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '723'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# HTML5 forms service proxy{#html-forms-service-proxy}
+# HTML5 表單服務代理{#html-forms-service-proxy}
 
 <span class="preview"> HTML5 Forms功能屬於Early Access方案的一部分。 若要要求存取權，請將您的正式（工作）電子郵件ID傳送電子郵件至aem-forms-ea@adobe.com。
 </span>

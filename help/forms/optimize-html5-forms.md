@@ -1,22 +1,21 @@
 ---
-title: 最佳化HTML5表單
+title: 最佳化 HTML5 表單
 description: 您可以最佳化HTML5表單的輸出大小。
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: bdb9edc2-6a37-4d3f-97d5-0fc5664316be
 feature: HTML5 Forms,Mobile Forms
 exl-id: 14309ebd-8d00-4ca5-b4ab-44d80d97d066
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
-source-wordcount: '311'
-ht-degree: 0%
+source-wordcount: '310'
+ht-degree: 1%
 
 ---
 
-# 最佳化HTML5表單 {#optimizing-html-forms}
+# 最佳化 HTML5 表單 {#optimizing-html-forms}
 
 <span class="preview"> HTML5 Forms功能屬於Early Access方案的一部分。 若要要求存取權，請將您的正式（工作）電子郵件ID傳送電子郵件至aem-forms-ea@adobe.com。
 </span>
@@ -86,4 +85,4 @@ Apache可以使用HTTP或AJP通訊協定與JBoss通訊。
    </Location>
    ```
 
-1. 若要存取AEM伺服器，請使用https://[Apache_server]：80。
+1. 若要存取AEM伺服器，請使用https://[Apache_server]:80。

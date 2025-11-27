@@ -1,25 +1,23 @@
 ---
-title: HTML5 Forms的架構
+title: HTML5 表單架構
 description: HTML5 Forms會部署為內嵌AEM執行個體中的套件，並使用RESTful Apache Sling架構透過HTTP/S公開作為REST端點的功能。
 contentOwner: robhagat
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
 exl-id: ed8349a1-f761-483f-9186-bf435899df7d
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
-source-wordcount: '1996'
-ht-degree: 0%
+source-wordcount: '1991'
+ht-degree: 1%
 
 ---
 
-# HTML5 Forms的架構{#architecture-of-html-forms}
+# HTML5 表單架構{#architecture-of-html-forms}
 
 <span class="preview"> HTML5 Forms功能屬於Early Access方案的一部分。 若要要求存取權，請將您的正式（工作）電子郵件ID傳送電子郵件至aem-forms-ea@adobe.com。
 </span>
@@ -32,11 +30,11 @@ HTML5 Forms功能會部署為內嵌AEM執行個體中的套件，並使用RESTfu
 
 ### 使用Sling架構 {#using-sling-framework}
 
-[Apache Sling](https://sling.apache.org/)是以資源為中心。 它會使用請求URL來先解析資源。 每個資源都有&#x200B;**sling：resourceType** （或&#x200B;**sling：resourceSuperType**）屬性。 接著，會根據此屬性、要求方法和要求URL的屬性，選取sling指令碼來處理要求。 此Sling指令碼可以是JSP或servlet。 對於HTML5表單，**設定檔**&#x200B;節點會當作Sling資源，**設定檔轉譯器**&#x200B;會當作Sling指令碼，處理使用特定設定檔轉譯行動表單的請求。 **設定檔轉譯器**&#x200B;是從請求讀取引數並呼叫Forms OSGi服務的JSP。
+[Apache Sling](https://sling.apache.org/)是以資源為中心。 它會使用請求URL來先解析資源。 每個資源都有&#x200B;**sling:resourceType** （或&#x200B;**sling:resourceSuperType**）屬性。 接著，會根據此屬性、要求方法和要求URL的屬性，選取sling指令碼來處理要求。 此Sling指令碼可以是JSP或servlet。 對於HTML5表單，**設定檔**&#x200B;節點會當作Sling資源，**設定檔轉譯器**&#x200B;會當作Sling指令碼，處理使用特定設定檔轉譯行動表單的請求。 **設定檔轉譯器**&#x200B;是從請求讀取引數並呼叫Forms OSGi服務的JSP。
 
 如需REST端點和支援的要求引數的詳細資訊，請參閱[轉譯表單範本](/help/forms/rendering-form-template.md)。
 
-當使用者從使用者端裝置(例如iOS或Android™瀏覽器)提出請求時，Sling會先根據請求URL解析設定檔節點。 此設定檔節點會讀取&#x200B;**sling：resourceSuperType**&#x200B;和&#x200B;**sling：resourceType**，以決定可處理此表單轉譯器請求的所有可用指令碼。 接著，它會使用Sling要求選取器搭配request方法，以識別最適合處理此要求的指令碼。 請求到達設定檔轉譯器JSP後，JSP會呼叫Forms OSGi服務。
+當使用者從使用者端裝置(例如iOS或Android™瀏覽器)提出請求時，Sling會先根據請求URL解析設定檔節點。 從這個設定檔節點，它會讀取&#x200B;**sling:resourceSuperType**&#x200B;和&#x200B;**sling:resourceType**，以決定可處理此表單轉譯器請求的所有可用指令碼。 接著，它會使用Sling要求選取器搭配request方法，以識別最適合處理此要求的指令碼。 請求到達設定檔轉譯器JSP後，JSP會呼叫Forms OSGi服務。
 
 如需Sling指令碼解析的詳細資訊，請參閱[AEM Sling速查表](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hant)或[Apache Sling Url分解](https://sling.apache.org/documentation/the-sling-engine/url-decomposition.html)。
 
@@ -177,7 +175,7 @@ Sling套件包含與設定檔和設定檔轉譯器相關的內容。
 
 #### 設定檔轉譯器 {#profile-renderers}
 
-設定檔節點具有屬性&#x200B;**sling：resourceSuperType**，值為&#x200B;**xfaforms/profile**。 此屬性會在內部將要求轉寄給&#x200B;**/libs/xfaforms/profile**&#x200B;資料夾中設定檔節點的sling指令碼。 這些指令碼是JSP頁面，是用來組合HTML表單和必要JS/CSS成品的容器。 這些頁面包含對下列專案的參照：
+設定檔節點具有屬性&#x200B;**sling:resourceSuperType**，值為&#x200B;**xfaforms/profile**。 此屬性會在內部將要求轉寄給&#x200B;**/libs/xfaforms/profile**&#x200B;資料夾中設定檔節點的sling指令碼。 這些指令碼是JSP頁面，是用來組合HTML表單和必要JS/CSS成品的容器。 這些頁面包含對下列專案的參照：
 
 * **xfaforms.I18N。&lt;locale>**：此程式庫包含當地語系化的資料。
 * **xfaforms.profile**：此程式庫包含XFA指令碼和配置引擎的實作。

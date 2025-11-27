@@ -1,22 +1,21 @@
 ---
-title: HTML5表單的指令碼支援
+title: HTML5 表單的指令碼支援
 description: HTML5 Forms支援的JavaScript、FormCalc屬性及其他方法。
 contentOwner: robhagat
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 feature: HTML5 Forms,Mobile Forms
 exl-id: bcb5afc5-2190-4269-aba2-63842db9df3f
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '3916'
 ht-degree: 6%
 
 ---
 
-# HTML5表單的指令碼支援 {#scripting-support-for-html-forms}
+# HTML5 表單的指令碼支援 {#scripting-support-for-html-forms}
 
 HTML5表單支援的JavaScript、FormCalc屬性和方法，如下所示：
 
@@ -548,7 +547,7 @@ HTML5表單支援的JavaScript、FormCalc屬性和方法，如下所示：
 |---|---|---|
 | instanceManager | instanceManager物件可管理表單模型物件的建立、移除和移動。 | 無 |
 
-## content {#content}
+## 內容 {#content}
 
 | **屬性** | **說明** | **例外狀況** |
 |---|---|---|
@@ -640,7 +639,7 @@ HTML5表單支援的JavaScript、FormCalc屬性和方法，如下所示：
  </tbody>
 </table>
 
-## 圖樣 {#pattern}
+## pattern {#pattern}
 
 <table>
  <tbody>

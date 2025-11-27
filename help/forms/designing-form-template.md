@@ -1,33 +1,31 @@
 ---
-title: 為HTML5表單設計表單範本
+title: 設計 HTML5 表單的表單範本
 description: AEM Forms可將XFA表單範本轉譯為HTML5格式。 表單設計人員可以使用Designer設計表單範本並使用HTML5轉譯功能。
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
 exl-id: 7c8d501f-c953-495e-8bac-1f66fd99c783
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 0%
+source-wordcount: '505'
+ht-degree: 3%
 
 ---
 
-# 為HTML5表單設計表單範本{#designing-form-templates-for-html-forms}
+# 設計 HTML5 表單的表單範本{#designing-form-templates-for-html-forms}
 
 <span class="preview"> HTML5 Forms功能屬於Early Access方案的一部分。 若要要求存取權，請將您的正式（工作）電子郵件ID傳送電子郵件至aem-forms-ea@adobe.com。
 </span>
 
-AEM中的HTML5表單元件可將XFA表單範本轉譯為HTML5格式。 表單設計人員可以使用[Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63)設計表單範本，並使用HTML5轉譯功能。 這些表單範本及其資產可以位於AEM存放庫、檔案系統，或透過http公開。 不過，如果您打算使用Forms Manager管理表單，範本和資產應存放在AEM存放庫中。
+AEM中的HTML5表單元件可將XFA表單範本轉譯為HTML5格式。 表單設計人員可以使用Forms Designer設計表單範本，並使用HTML5轉譯功能。 這些表單範本及其資產可以位於AEM存放庫、檔案系統，或透過http公開。 不過，如果您打算使用Forms Manager管理表單，範本和資產應存放在AEM存放庫中。
 
 雖然HTML5表單在很大程度上符合PDF forms的行為，但兩種格式都有部分功能不適用於其他格式。 例如，Adobe Reader在PDF表單上套用條碼的方式，會因行動表單而異，或是表單的數位簽署方式也會因格式而異。 如需這類變化的詳細資訊，請參閱[HTML5表單與PDF forms之間的功能差異](/help/forms/feature-differentiation-html5-forms-pdf-forms.md)。
 
 如需常見的XFA功能，請參閱下列最佳實務和指導方針，以設計同時適用於兩種格式的表單。
 
-## 最佳實務 {#best-practices}
+## 最佳做法 {#best-practices}
 
 設計表單範本的大部分步驟（例如結構描述繫結或撰寫表單邏輯）都是相同的。 不過，由於Adobe Reader等厚型使用者端的轉譯與指令碼引擎與瀏覽器表單的內在差異，[最佳實務](/help/forms/design-accessible-html5-forms.md)文章中會說明一些建議。 這些最佳實務可協助您設計表單範本，使其在兩種格式中都能如預期般運作。
 

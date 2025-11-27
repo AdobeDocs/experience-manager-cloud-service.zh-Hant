@@ -1,22 +1,20 @@
 ---
-title: 變更HTML5表單的預設樣式
+title: 變更 HTML5 表單的預設樣式
 description: HTML5表單樣式是以CSS為基礎。 您可以變更表單的預設樣式。
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
 exl-id: 4c84cfd1-50a4-416f-b4a5-7f2f4c7f10af
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 0%
+source-wordcount: '391'
+ht-degree: 3%
 
 ---
 
-# 變更HTML5表單的預設樣式{#changing-default-styles-of-html-forms}
+# 變更 HTML5 表單的預設樣式{#changing-default-styles-of-html-forms}
 
 <span class="preview"> HTML5 Forms功能屬於Early Access方案的一部分。 若要要求存取權，請將您的正式（工作）電子郵件ID傳送電子郵件至aem-forms-ea@adobe.com。
 </span>
@@ -53,7 +51,7 @@ HTML5表單會使用HTML5功能轉譯，轉譯後的表單樣式會使用CSS完�
 
    1. 在轉譯器頁面中搜尋下列行：
 
-      &lt;cq：includeClientLib categories=&quot;xfaforms.profile&quot; />
+      &lt;cq:includeClientLib categories=&quot;xfaforms.profile&quot; />
 
    1. 在上面的行下方插入下列內容，以包含樣式表：
 

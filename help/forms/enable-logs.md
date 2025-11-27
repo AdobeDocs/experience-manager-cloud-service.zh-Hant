@@ -1,23 +1,21 @@
 ---
-title: 啟用HTML5表單的記錄
+title: 啟用 HTML5 表單的記錄
 description: 記錄器公用程式可啟用表單的記錄，並幫助您偵錯表單相關問題。
 contentOwner: robhagat
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
 exl-id: 2f574c98-550c-4b84-be1e-46a2700e7277
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '655'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
-# 啟用HTML5表單的記錄{#enable-logging-for-html-forms}
+# 啟用 HTML5 表單的記錄{#enable-logging-for-html-forms}
 
 <span class="preview"> HTML5 Forms功能屬於Early Access方案的一部分。 若要要求存取權，請將您的正式（工作）電子郵件ID傳送電子郵件至aem-forms-ea@adobe.com。
 </span>
@@ -30,7 +28,7 @@ ht-degree: 4%
 
 1. 移至`https://'[server]:[port]'/system/console/configMgr`。 找到並開啟&#x200B;*Apace Sling記錄記錄器組態*&#x200B;選項。 對話方塊隨即顯示：
 
-   ![&#x200B; Apace Sling記錄記錄器組態選項對話方塊](assets/logconfig.png)
+   ![ Apace Sling記錄記錄器組態選項對話方塊](assets/logconfig.png)
 
    Apace Sling記錄記錄器設定選項
 
@@ -42,7 +40,7 @@ ht-degree: 4%
    >
    >若要在HTML5表單記錄目錄中產生記錄，請在檔案名稱前新增……/logs/ 。
 
-1. 將&#x200B;**記錄器**&#x200B;變更為&#x200B;**HTMLFormsPerfLogger**。 按一下「**儲存**」。
+1. 將&#x200B;**記錄器**&#x200B;變更為&#x200B;**HTMLFormsPerfLogger**。 按一下&#x200B;**儲存**。
 
 ## 設定使用者端記錄 {#configuring-client-logging}
 
@@ -172,9 +170,9 @@ ht-degree: 4%
 >[!NOTE]
 >
 >每個日誌類別a (xfa)、b (xfaView)和c (xfaPerf)的預設日誌層級為2 （錯誤）。 因此，對於記錄設定：2-b6，不同類別的記錄層級為：
->&#x200B;>a (xfa)：2 （預設層次錯誤）
->&#x200B;>b (xfaView)： 6 (使用者指定的TRACE)
->&#x200B;>a (xfaPerf)：2 （預設層級ERROR）
+>a (xfa)：2 （預設層次錯誤）
+>b (xfaView)： 6 (使用者指定的TRACE)
+>a (xfaPerf)：2 （預設層級ERROR）
 
 ### 使用Configuration Manager啟用記錄 {#enabling-logging-using-configuration-manager}
 

@@ -1,22 +1,21 @@
 ---
-title: HTML5表單的轉譯表單範本
+title: 轉譯 HTML5 表單的表單範本
 description: HTML5表單設定檔與設定檔轉譯器相關聯。 設定檔轉譯器是JSP頁面，負責呼叫HTML OSGi服務來產生表單的Forms表示法。
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: cb75b826-d044-44be-b364-790c046513e0
 feature: HTML5 Forms,Mobile Forms
 exl-id: 022b9953-2d64-473f-87b7-aac1602f6a7e
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '561'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
-# HTML5表單的轉譯表單範本 {#rendering-form-template-for-html-forms}
+# 轉譯 HTML5 表單的表單範本 {#rendering-form-template-for-html-forms}
 
 <span class="preview"> HTML5 Forms功能屬於Early Access方案的一部分。 若要要求存取權，請將您的正式（工作）電子郵件ID傳送電子郵件至aem-forms-ea@adobe.com。
 </span>
@@ -25,7 +24,7 @@ ht-degree: 1%
 
 HTML5表單具有&#x200B;**設定檔**&#x200B;的概念，此設定檔會公開為REST端點，以啟用表單範本的行動轉譯。 這些設定檔已關聯&#x200B;**設定檔轉譯器**。 這些是JSP頁面，負責呼叫HTML OSGi服務來產生Forms表單表示法。 「設定檔」節點的JCR路徑會決定轉譯器端點的URL。 指向「預設」設定檔之表單的預設轉譯端點看起來如下所示：
 
-https://&lt;*主機*>：&lt;*連線埠*>/content/xfaforms/profiles/default.html？contentRoot=&lt;*包含表單xdp*>&amp;template=&lt;*xdp*>的資料夾路徑
+https://<*主機*>：<*連線埠*>/content/xfaforms/profiles/default.html？contentRoot=<*包含表單xdp*>&template=<*xdp*>的資料夾路徑
 
 例如 `http://localhost:4502/content/xfaforms/profiles/default.html?contentRoot=c:/xdps&template=sampleForm.xdp`
 

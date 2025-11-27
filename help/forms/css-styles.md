@@ -1,23 +1,22 @@
 ---
-title: 建立HTML5表單的CSS樣式
+title: 建立 HTML5 表單的 CSS 樣式
 description: 瞭解如何修改與HTML表單元素關聯的CSS類別，以變更HTML5表單的外觀。
 contentOwner: robhagat
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: a8d986ab-2a4c-488b-957e-4606f7391bd3
 feature: HTML5 Forms,Mobile Forms
 exl-id: 8cc90ff7-284e-41cd-bfda-7fa09371e270
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '838'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
-# 建立HTML5表單的CSS樣式 {#creating-css-styles-for-html-forms}
+# 建立 HTML5 表單的 CSS 樣式 {#creating-css-styles-for-html-forms}
 
 <span class="preview"> HTML5 Forms功能屬於Early Access方案的一部分。 若要要求存取權，請將您的正式（工作）電子郵件ID傳送電子郵件至aem-forms-ea@adobe.com。
 </span>

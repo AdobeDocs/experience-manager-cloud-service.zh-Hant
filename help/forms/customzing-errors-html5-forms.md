@@ -1,20 +1,19 @@
 ---
-title: 為HTML5表單自訂錯誤訊息
+title: 自訂 HTML5 表單的錯誤訊息
 description: 瞭解如何自訂HTML5表單的錯誤訊息顯示，包括如何變更其位置和外觀。
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 feature: HTML5 Forms,Mobile Forms
 exl-id: c4ae53a3-8de1-4985-a73e-829749de9814
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '523'
-ht-degree: 3%
+ht-degree: 5%
 
 ---
 
-# 為HTML5表單自訂錯誤訊息 {#customizing-error-messages-for-html-forms}
+# 自訂 HTML5 表單的錯誤訊息 {#customizing-error-messages-for-html-forms}
 
 <span class="preview"> HTML5 Forms功能屬於Early Access方案的一部分。 若要要求存取權，請將您的正式（工作）電子郵件ID傳送電子郵件至aem-forms-ea@adobe.com。
 </span>
@@ -78,7 +77,7 @@ ht-degree: 3%
    ```
 
 1. 儲存並關閉檔案。
-1. 導覽至`CustomErrorManager-1.0-SNAPSHOT`資料夾，並建立jcr_root和META-INF資料夾的封存。 將封存重新命名為CustomErrorManager-1.0-SNAPSHOT.zip。
+1. 導覽至`CustomErrorManager-1.0-SNAPSHOT`資料夾，並建立jcr_root與META-INF資料夾的封存。 將封存重新命名為CustomErrorManager-1.0-SNAPSHOT.zip。
 1. 使用封裝管理員來上傳及安裝封裝。
 
 ## 顯示多個欄位的錯誤訊息  {#display-error-messages-for-multiple-fields-nbsp}

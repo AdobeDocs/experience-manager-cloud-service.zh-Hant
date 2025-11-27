@@ -1,29 +1,28 @@
 ---
-title: 建立HTML5表單的自訂設定檔
+title: 建立 HTML5 表單的自訂設定檔
 description: HTML5表單設定檔是Apache Sling中的資源節點。 它代表HTML5 Forms轉譯服務的自訂版本。
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 9cd22244-9aa6-4b5f-96cf-c9cb3d6f9c8a
 feature: HTML5 Forms,Mobile Forms
 exl-id: cf86c810-c466-4894-acc2-d4faf49754cc
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
-source-wordcount: '682'
-ht-degree: 0%
+source-wordcount: '680'
+ht-degree: 2%
 
 ---
 
-# 建立HTML5表單的自訂設定檔 {#creating-a-custom-profile-for-html-forms}
+# 建立 HTML5 表單的自訂設定檔 {#creating-a-custom-profile-for-html-forms}
 
 <span class="preview"> HTML5 Forms功能屬於Early Access方案的一部分。 若要要求存取權，請將您的正式（工作）電子郵件ID傳送電子郵件至aem-forms-ea@adobe.com。
 </span>
 
 設定檔是[Apache Sling](https://sling.apache.org/)中的資源節點。 它代表HTML5 Forms轉譯服務的自訂版本。 您可以使用HTML5 Forms轉譯服務來自訂HTML5表單的外觀、行為和互動。 設定檔節點存在於JCR存放庫的`/content`資料夾中。 您可以直接將節點放在`/content`資料夾或`/content`資料夾的任何子資料夾下。
 
-設定檔節點具有&#x200B;**sling：resourceSuperType**&#x200B;屬性，預設值為&#x200B;**xfaforms/profile**。 節點的轉譯器指令碼位於/libs/xfaforms/profile。
+設定檔節點具有&#x200B;**sling:resourceSuperType**&#x200B;屬性，預設值為&#x200B;**xfaforms/profile**。 節點的轉譯器指令碼位於/libs/xfaforms/profile。
 
 Sling指令碼是JSP指令碼。 這些JSP指令碼可當作容器，用來將請求表單和必要的JS / CSS成品的HTML放在一起。 這些Sling指令碼也稱為&#x200B;**設定檔轉譯器指令碼**。 設定檔轉譯器會呼叫Forms OSGi服務來轉譯請求的表單。
 
@@ -67,7 +66,7 @@ footer.jsp模組是空的。 它可讓您新增僅用於使用者互動的指令
 
 1. 複製節點預設值，並將節點貼到名稱為&#x200B;*hrform*&#x200B;的不同資料夾(*/content/profiles*)中。
 
-1. 選取新節點&#x200B;*hrform*，然後新增字串屬性： *sling：resourceType*，值為： *hrform/demo*。
+1. 選取新節點&#x200B;*hrform*，然後新增字串屬性： *sling:resourceType*，值為： *hrform/demo*。
 
 1. 按一下工具列功能表中的「儲存全部」以儲存變更。
 

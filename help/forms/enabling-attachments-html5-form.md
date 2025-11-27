@@ -1,22 +1,21 @@
 ---
-title: 啟用HTML5表單的附件
+title: 啟用 HTML5 表單附件
 description: 依預設，會停用HTML5表單的附件支援。
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 8eebfcd6-0597-44ed-b718-bf9a1baa6c12
 feature: HTML5 Forms,Mobile Forms
 exl-id: 68912260-179a-4d1b-b944-0a1777c021ac
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '365'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
-# 啟用HTML5表單的附件 {#enabling-attachments-for-an-html-form}
+# 啟用 HTML5 表單附件 {#enabling-attachments-for-an-html-form}
 
 <span class="preview"> HTML5 Forms功能屬於Early Access方案的一部分。 若要要求存取權，請將您的正式（工作）電子郵件ID傳送電子郵件至aem-forms-ea@adobe.com。
 </span>
@@ -30,7 +29,7 @@ ht-degree: 1%
    | multiSelect | true或false （預設為true） |
    | fileSizeLimit | 以MB為單位的編號（預設為2 MB）。 例如，5。 |
    | 按鈕文字 | 快顯視窗的按鈕文字（預設為「附加」） |
-   | 接受 | 要接受的檔案型別清單（預設為「audio/&amp;amp； ast；， video/&amp;amp； ast；， image/&amp;amp； ast；， text/&amp;amp； ast；， .pdf」）（以逗號分隔） |
+   | accept | 要接受的檔案型別清單（預設為「audio/&amp;amp； ast；， video/&amp;amp； ast；， image/&amp;amp； ast；， text/&amp;amp； ast；， .pdf」）（以逗號分隔） |
 
    例如：
 

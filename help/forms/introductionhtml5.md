@@ -1,28 +1,26 @@
 ---
-title: HTML5 forms簡介
-description: HTML5 forms是Adobe Experience Manager 6.0 (AEM 6.0)軟體中的新功能，可以轉譯HTML5格式的XFA表單範本。
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
+title: HTML5 表單簡介
+description: HTML5 forms是Adobe Experience Manager軟體中的新功能，可轉譯HTML5格式的XFA表單範本。
 topic-tags: hTML5_forms
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
 exl-id: 0facca18-ffa1-420c-859a-6f1f2c449d71
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
-source-wordcount: '433'
-ht-degree: 0%
+source-wordcount: '416'
+ht-degree: 1%
 
 ---
 
-# HTML5 forms簡介{#introduction-to-html-forms}
+# HTML5 表單簡介{#introduction-to-html-forms}
 
 <span class="preview"> HTML5 Forms功能屬於Early Access方案的一部分。 若要要求存取權，請將您的正式（工作）電子郵件ID傳送電子郵件至aem-forms-ea@adobe.com。
 </span>
 
-HTML5 forms是Adobe Experience Manager 6.0 (AEM 6.0)軟體中的新功能，可以轉譯HTML5格式的XFA表單範本。 此功能可讓您在不支援XFA型PDF的行動裝置和桌上型瀏覽器上轉譯表單。 HTML5表單不僅支援XFA表單範本的現有功能，也新增了適用於行動裝置的新功能，例如手寫簽名。
+HTML5 forms是Adobe Experience Manager軟體中的新功能，可轉譯HTML5格式的XFA表單範本。 此功能可讓您在不支援XFA型PDF的行動裝置和桌上型瀏覽器上轉譯表單。 HTML5表單不僅支援XFA表單範本的現有功能，也新增了適用於行動裝置的新功能，例如手寫簽名。
 
-HTML5 forms會根據標準HTML5建構產生檔案。 您可以在支援HTML5的所有新式瀏覽器中檢視HTML5表單。 它不需要為瀏覽器安裝任何其他瀏覽器外掛程式。 如需支援瀏覽器的詳細資訊，請參閱[支援的使用者端平台](https://adobe.com/go/learn_aemforms_supportedplatforms_63)。
+HTML5 forms會根據標準HTML5建構產生檔案。 您可以在支援HTML5的所有新式瀏覽器中檢視HTML5表單。 它不需要為瀏覽器安裝任何其他瀏覽器外掛程式。<!--For more information about supported browsers, see [Supported client platforms](https://adobe.com/go/learn_aemforms_supportedplatforms_63).-->
 
 ![HTML5表單預覽](assets/mobile_form_on_an_ipad_date_14.png)
 

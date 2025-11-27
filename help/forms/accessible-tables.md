@@ -1,22 +1,21 @@
 ---
-title: 在HTML5表單中建立無障礙的複雜表格
+title: 在 HTML5 表單中建立無障礙的複雜表單
 description: 瞭解如何在HTML5表單中建立無障礙的表格。
 content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 3504afe1-abf5-4fbf-a0d2-e093361764bd
 feature: HTML5 Forms,Mobile Forms
 exl-id: 3b8e3323-9ac4-4f5c-8c52-e2186e9169ea
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '297'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
-# 在HTML5表單中建立無障礙的複雜表格 {#create-accessible-complex-tables-in-html-forms}
+# 在 HTML5 表單中建立無障礙的複雜表單 {#create-accessible-complex-tables-in-html-forms}
 
 <span class="preview"> HTML5 Forms功能屬於Early Access方案的一部分。 若要要求存取權，請將您的正式（工作）電子郵件ID傳送電子郵件至aem-forms-ea@adobe.com。
 </span>

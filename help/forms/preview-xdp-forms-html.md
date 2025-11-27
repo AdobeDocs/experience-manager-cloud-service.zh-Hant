@@ -1,21 +1,19 @@
 ---
-title: 產生XDP表單的HTML5預覽
+title: 產生 XDP 表單的 HTML5 預覽
 description: 在LiveCycle Designer中預覽HTML索引標籤可用來預覽顯示在瀏覽器中的表單。
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-docset: aem65
 feature: HTML5 Forms,Mobile Forms
 exl-id: 548f302b-57f0-4bdc-8a99-1a4967caa32f
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
 workflow-type: tm+mt
 source-wordcount: '807'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
-# 產生XDP表單的HTML5預覽{#generate-html-preview-of-an-xdp-form}
+# 產生 XDP 表單的 HTML5 預覽{#generate-html-preview-of-an-xdp-form}
 
 <span class="preview"> HTML5 Forms功能屬於Early Access方案的一部分。 若要要求存取權，請將您的正式（工作）電子郵件ID傳送電子郵件至aem-forms-ea@adobe.com。
 </span>
@@ -53,7 +51,7 @@ ht-degree: 0%
    >請勿複製並貼上「驗證需求」欄位中的指定值，因為這會損壞值中的特殊字元。 請改為在欄位中輸入指定的值。
 
 1. 在&#x200B;**[!UICONTROL 匿名使用者名稱]**&#x200B;與&#x200B;**[!UICONTROL 匿名使用者密碼]**&#x200B;欄位中分別指定使用者名稱與密碼。 指定的認證用於處理匿名驗證，並允許匿名使用者存取。
-1. 按一下[儲存]儲存組態。**&#x200B;**
+1. 按一下[儲存]儲存組態。****
 
 ### 停用保護模式 {#disable-protected-mode}
 
@@ -70,7 +68,7 @@ ht-degree: 0%
 ### 提供AEM Forms伺服器的詳細資訊 {#provide-details-of-aem-forms-server}
 
 1. 在Designer中，移至&#x200B;**工具** > **選項**。
-1. 在[選項]視窗中，選取[伺服器選項]頁面&#x200B;**&#x200B;**，提供下列詳細資料，然後按一下[確定]&#x200B;**&#x200B;**。
+1. 在[選項]視窗中，選取[伺服器選項]頁面&#x200B;****，提供下列詳細資料，然後按一下[確定]****。
 
    * **伺服器網址**： AEM Forms伺服器網址。
 
@@ -120,9 +118,9 @@ Designer可讓您使用範例XML資料預覽及測試表單。 建議您經常�
 
 1. 選取&#x200B;**檔案>表單屬性**。
 
-1. 按一下「**預覽**」標籤，然後在「資料檔案」方塊中輸入測試資料檔案的完整路徑。 您也可以使用「瀏覽」按鈕來導覽至檔案。
+2. 按一下「**預覽**」標籤，然後在「資料檔案」方塊中輸入測試資料檔案的完整路徑。 您也可以使用「瀏覽」按鈕來導覽至檔案。
 
-1. 按一下&#x200B;**確定**。 下次您在&#x200B;**預覽HTML**&#x200B;索引標籤中預覽表單時，範例XML檔案中的資料值將會顯示在個別物件中。
+3. 按一下&#x200B;**確定**。 下次您在&#x200B;**預覽HTML**&#x200B;索引標籤中預覽表單時，範例XML檔案中的資料值將會顯示在個別物件中。
 
 ## 在存放庫中預覽表單 {#html-preview-of-forms-in-forms-manager}
 
