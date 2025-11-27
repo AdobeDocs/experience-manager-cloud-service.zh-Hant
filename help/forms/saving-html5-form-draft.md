@@ -77,4 +77,4 @@ AEM Forms可立即提供&#x200B;**另存為草稿**&#x200B;設定檔。 您可�
  </tbody>
 </table>
 
-依預設，AEM Forms會將與表單草稿和提交相關聯的使用者資料儲存在發佈執行個體上的/content/forms/fp節點中。 您可以新增自訂儲存提供者，如需詳細資訊，請參閱[草稿與提交元件的自訂儲存](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/use-forms-portal/adding-custom-storage-provider-forms)。
+依預設，AEM Forms會將與表單草稿和提交相關聯的使用者資料儲存在發佈執行個體上的/content/forms/fp節點中。 您可以新增自訂儲存提供者，如需詳細資訊，請參閱[草稿與提交元件的自訂儲存](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/forms/use-forms-portal/adding-custom-storage-provider-forms)。
