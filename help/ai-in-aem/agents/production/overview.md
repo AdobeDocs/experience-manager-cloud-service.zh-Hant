@@ -3,9 +3,9 @@ title: Experience Production Agent概述
 description: 瞭解AEM中的Experience Production Agent如何協助您加速內容建立並自動協調變更。
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: c3757aff37a9896a7aaaa91a2d3a352a9f9e96d2
+source-git-commit: 229c91706cec0a2689d9449549a1e2b2e236b87d
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '349'
 ht-degree: 3%
 
 ---
@@ -32,7 +32,7 @@ Experience Production Agent可自動處理大量及大量工作。 強化團隊�
 
 ### 內容更新 {#content-update}
 
-[內容更新](/help/ai-in-aem/agents/production/content-update.md)可輕鬆更新整個CMS的現有內容，包括內容片段、頁面、表單及資產。 代理程式可以執行更新、移除、取代或新增內容元素等動作，以保持體驗精確且最新。 輸入可以是自然語言說明，在搭配Jira PDF使用時，熒幕擷取畫面也可以提供輸入。
+[內容更新](/help/ai-in-aem/agents/production/content-update.md)可輕鬆更新現有內容，包括內容片段、頁面、表單及資產。 代理程式可以執行更新、移除、取代或新增內容元素等動作，以保持體驗精確且最新。 輸入可以是自然語言說明，在搭配Jira PDF使用時，熒幕擷取畫面也可以提供輸入。
 
 ### 表單建立 {#form-creation}
 
