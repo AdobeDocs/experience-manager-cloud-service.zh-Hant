@@ -3,9 +3,9 @@ title: 內容更新技能
 description: 瞭解Experience Production Agent的內容更新技能以及可為您執行的操作。
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 8b7bdb86c3d1b537b536173b6307c486fe436636
+source-git-commit: 437da39f61d7af2fe01a1617d3299fd60ee38ad5
 workflow-type: tm+mt
-source-wordcount: '861'
+source-wordcount: '858'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 Experience Production Agent的內容更新技能可自動化內容製作，以加速Adobe Experience Manager (AEM) as a Cloud Service和Edge Delivery Services的日常工作。
 
-內容更新技能會更新CMS中的現有內容，包括內容片段、頁面、表單和資產。 代理程式可以執行更新、移除、取代或新增內容元素等動作，以保持體驗精確且最新。 輸入可以是自然語言說明，在搭配Jira PDF使用時，熒幕擷取畫面也可以提供輸入。
+內容更新技能更新現有內容，包括內容片段、頁面、表單和資產。 代理程式可以執行更新、移除、取代或新增內容元素等動作，以保持體驗精確且最新。 輸入可以是自然語言說明，在搭配Jira PDF使用時，熒幕擷取畫面也可以提供輸入。
 
 ## 概觀 {#overview}
 
