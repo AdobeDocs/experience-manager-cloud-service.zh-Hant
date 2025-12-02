@@ -5,9 +5,9 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: f9a767e3d5ae33cd46dc100c2ee59ec9ce8f63ac
+source-git-commit: 83ab0fb97b233828fe43c1b53e649c918ce7b100
 workflow-type: tm+mt
-source-wordcount: '1918'
+source-wordcount: '1976'
 ht-degree: 2%
 
 ---
@@ -113,6 +113,7 @@ AEM as a Cloud Service會套用伺服器端收集規則來計數內容請求。 
 * 針對您與網站整合的任何自訂搜尋編目程式，在內容新鮮度的需求與AEM授權成本之間取得平衡。  過於激進的編目程式可能會使用許多內容請求。
 * 以伺服器端（狀態301或302）而非使用者端（狀態200含javascript重新導向）的方式處理任何重新導向，以避免兩個不同的內容請求。
 * 合併或減少API呼叫，這些是來自AEM的JSON回應，可載入以轉譯頁面。
+* 請確認瀏覽器的使用者代理程式已正確傳遞至AEM，以便運用上述的「知名搜尋引擎」內容請求排除規則。  有時候，某些Headless實施或CDN設定會遺失原始使用者代理程式，其可能會防止排除，並導致比傳遞使用者代理程式時更高的內容請求。
 
 ### 管理內容請求的流量篩選規則 {#traffic-filter-rules-to-manage-crs}
 

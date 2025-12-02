@@ -4,9 +4,9 @@ description: 瞭解如何使用設定管道在AEM as a Cloud Service中部署不
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 5e0626c57f233ac3814355d7efe7db010897d72b
+source-git-commit: ac04829b63ca5e2fee71f6c71d0730f21c576382
 workflow-type: tm+mt
-source-wordcount: '1378'
+source-wordcount: '1405'
 ht-degree: 2%
 
 ---
@@ -49,6 +49,7 @@ Cloud Manager設定管道將設定檔案（以YAML格式建立）部署到目標
 | [基本驗證](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#basic-auth) | `CDN` | 為保護特定URL的基本驗證對話方塊宣告使用者名稱和密碼。 | X | X |
 | [版本清除維護任務](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | 透過在應清除內容版本的時機周圍宣告規則來最佳化AEM存放庫 | X |  |
 | [稽核記錄清除維護任務](/help/operations/maintenance.md#purge-tasks) | `MaintenanceTasks` | 最佳化AEM稽核記錄，透過在應清除記錄的時間周圍宣告規則來提高效能 | X |  |
+| [工作流程清除維護任務](/help/operations/maintenance.md) | `MaintenanceTasks` | 將工作流程例項的數目減到最少，以協助提高工作流程引擎的效能。<br><br>另請參閱[定期清除工作流程執行個體](/help/sites-cloud/administering/workflows-administering.md#regular-purging-of-workflow-instances) | X |  |
 | [記錄檔轉送](/help/implementing/developing/introduction/log-forwarding.md) | `LogForwarding` | 設定可將記錄轉送至不同目的地的端點和認證，包括Azure Blob Storage、Datadog、HTTPS、Elasticsearch、Splunk | X | X |
 | [正在註冊使用者端ID](/help/implementing/developing/open-api-based-apis.md) | `API` | 註冊使用者端ID，將Adobe Developer Console API專案範圍設定為特定AEM環境。 需要使用需要驗證的OpenAPI型API | X |  |
 
