@@ -4,9 +4,9 @@ description: 瞭解如何在設定檔案中宣告規則，再使用Cloud Manager
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: 3a46db9c98fe634bf2d4cffd74b54771de748515
+source-git-commit: 68a41d468650228b4ac35315690a76465ffe4c0b
 workflow-type: tm+mt
-source-wordcount: '1939'
+source-wordcount: '2028'
 ht-degree: 3%
 
 ---
@@ -22,13 +22,38 @@ Adobe提供的CDN具有多項功能和服務，部分功能和服務會仰賴憑
 
 各項（包括設定語法）將於下文其本身的章節中說明。
 
-有一節說明如何[旋轉金鑰](#rotating-secrets)，這是良好的安全性作法。
+可以使用`${{..}}`語法參考環境或管道（部署步驟）秘密，並且可以在條件或setter中使用常值的任何地方使用。
 
->[!NOTE]
-> 定義為環境變數的秘密應視為不可變。 您應建立具有新名稱的新密碼並在設定中參照該密碼，而不是變更其值。 若未這麼做，將會導致秘密更新不可靠。
+```
+kind: "CDN"
+version: "1"
+data:
+  originSelectors:
+    rules:
+      - name: select-origin-example
+        when: { reqHeader: "x-auth-header", equals: "${{AUTH_HEADER}}" }
+        action:
+          type: selectOrigin
+          originName: origin-name
+          headers:
+            Authorization: "${{AUTH_HEADER}}"
+    ...
+```
 
->[!WARNING]
->請勿移除CDN設定中參照的環境變數。 這樣做可能會導致更新CDN設定失敗（例如，更新規則或自訂網域和憑證）。
+處理秘密時，請謹記以下一些准則：
+
+* 環境密碼必須解除部署為[Cloud Manager密碼型別的環境變數](/help/operations/config-pipeline.md#secret-env-vars)。 在「已套用服務」欄位中，選取全部。
+* 秘密參考不會內插在字串中(例如 `"Token ${{AUTH_TOKEN}}"`將無法運作)
+* 如果設定中仍參考參考某個參考的環境機密，則不應移除此環境機密。
+
+  >[!WARNING]
+  >請勿移除CDN設定中參照的環境變數。 這樣做可能會導致更新CDN設定失敗（例如，更新規則或自訂網域和憑證）。
+
+* 秘密應定期旋轉。 有一節說明如何[旋轉金鑰](#rotating-secrets)，這是良好的安全性作法。
+
+  >[!NOTE]
+  > 定義為環境變數的秘密應視為不可變。 您應建立具有新名稱的新密碼並在設定中參照該密碼，而不是變更其值。 若未這麼做，將會導致秘密更新不可靠。
+
 
 ## 客戶管理的CDN HTTP標頭值 {#CDN-HTTP-value}
 
@@ -63,7 +88,7 @@ data:
 
 請參閱[「使用設定管道」](/help/operations/config-pipeline.md#common-syntax)，取得 `data` 節點上方屬性的描述。`kind`屬性值應該是&#x200B;*CDN*，且`version`屬性應該設定為`1`。
 
-如需詳細資訊，請參閱[設定和部署HTTP標頭驗證CDN規則](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule)教學課程步驟。
+如需詳細資訊，請參閱[設定和部署HTTP標頭驗證CDN規則](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule)教學課程步驟。
 
 其他屬性包括：
 
@@ -183,7 +208,7 @@ data:
 >[!NOTE]
 >在部署參考清除金鑰的組態之前，必須將清除金鑰設定為[機密型別Cloud Manager環境變數](/help/operations/config-pipeline.md#secret-env-vars)。 建議使用至少32個位元組長度的唯一隨機金鑰；例如，Open SSL密碼編譯程式庫可以透過執行命令openssl rand -hex 32來產生隨機金鑰
 
-您可以參考以設定清除金鑰和執行CDN快取清除為重點的[教學課程](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache)。
+您可以參考以設定清除金鑰和執行CDN快取清除為重點的[教學課程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache)。
 
 ## 基本驗證 {#basic-auth}
 
