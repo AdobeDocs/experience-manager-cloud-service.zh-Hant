@@ -1,20 +1,20 @@
 ---
-title: 通用編輯器 2025.11.20 版發行說明
-description: 以下是通用編輯器 2025.11.20 版的發行說明。
+title: 通用編輯器 2025.12.04 版發行說明
+description: 以下是通用編輯器 2025.12.04 版的發行說明。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: e36ff1c7c3f03124941c464cc340deef0cdd403b
+source-git-commit: e500b971e36fdb3d867e2d6b2a21eced66005182
 workflow-type: tm+mt
-source-wordcount: '176'
-ht-degree: 82%
+source-wordcount: '166'
+ht-degree: 66%
 
 ---
 
 
-# 通用編輯器 2025.11.20 版發行說明 {#release-notes}
+# 通用編輯器 2025.12.04 版發行說明 {#release-notes}
 
-這是通用編輯器 2025 年 11 月 20 日版本的發行說明。
+這是通用編輯器 2025 年 12 月 4 日版本的發行說明。
 
 >[!TIP]
 >
@@ -26,11 +26,9 @@ ht-degree: 82%
 
 ## 新增功能 {#what-is-new}
 
-* Toasts已移轉至新的UI。
-
-## 早期採用功能 {#early-adopter}
-
-如果您有興趣測試這些即將推出的功能並分享意見回饋，請使用與您 Adobe ID 相關聯的電子郵件地址，傳送電子郵件給您的 Adobe 客戶成功經理。
+* 已停用授權標頭，以支援[本機開發人員登入。](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login)
+* 在[結構化樹狀結構上按一下滑鼠右鍵即可使用內容功能表。](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)
+* 已將快速鍵新增至[重複的元件。](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate)
 
 ### 新 RTE {#new-rte}
 
@@ -38,7 +36,6 @@ ht-degree: 82%
 
 ## 其他改善功能 {#other-improvements}
 
-* RTE值的處理方式已簡化。
-* 罕見的工作列競爭條件已解決。
-* 未使用的功能切換已移除。
-* 相依性已更新。
+* RTE未正確儲存在畫布上的問題已解決。
+* 已修正內容選擇器資料夾樹狀結構剪輯。
+* `componentId`現在會在新增動作期間提供。

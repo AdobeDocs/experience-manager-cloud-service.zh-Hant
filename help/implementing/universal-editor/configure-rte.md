@@ -4,9 +4,9 @@ description: 瞭解如何在通用編輯器中設定RTF編輯器(RTE)。
 feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
-source-git-commit: 0557379b8d70205043ed87e104d9576ed40a13ce
+source-git-commit: edcba16831a40bd03c1413b33794268b6466d822
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '462'
 ht-degree: 1%
 
 ---
@@ -14,10 +14,6 @@ ht-degree: 1%
 # 為通用編輯器設定RTE {#configure-rte}
 
 瞭解如何在通用編輯器中設定RTF編輯器(RTE)。
-
->[!NOTE]
->
->本檔案適用於通用編輯器的新RTE，可作為早期採用者功能使用。 如果您有興趣測試這項新功能，[請參閱發行說明以取得詳細資料。](/help/release-notes/universal-editor/current.md#new-rte)
 
 ## 概觀 {#overview}
 

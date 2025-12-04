@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: d938abce2b46786343b19113454da1738a824ed0
+source-git-commit: 6efb04369109fcae638b699e1daff09624224098
 workflow-type: tm+mt
-source-wordcount: '1847'
+source-wordcount: '1853'
 ht-degree: 19%
 
 ---
@@ -78,7 +78,7 @@ Experience Platform頂端導覽列一律會顯示在畫面頂端。 這是一個
 
 ![Experience Cloud 標頭](assets/experience-cloud-header.png)
 
-如需Experience Platform頂端導覽列的詳細資訊，請參閱[Adobe Experience Platform UI指南](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
+如需Experience Platform頂端導覽列的詳細資訊，請參閱[Adobe Experience Platform UI指南](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
 
 #### 帳戶 {#user-properties}
 
@@ -136,12 +136,6 @@ Universal Editor工具列永遠出現在熒幕頂端[Experience Cloud標題](#ex
 >[!TIP]
 >
 >分別使用快速鍵`Command-Z`或`Shift-Command-Z`來復原或重做。
-
-#### 驗證標頭 {#authentication-settings}
-
-如果您需要[設定本機開發目的的自訂驗證標頭](/help/implementing/universal-editor/developer-overview.md#auth-header)，請選取驗證標頭圖示。
-
-![驗證標頭設定按鈕](assets/authentication-header-settings.png)
 
 #### 本機開發人員登入 {#local-developer-login}
 
@@ -265,6 +259,7 @@ Universal Editor提供可自訂且可擴充的撰寫體驗。 如果您在工具
 
 * 在內容樹中選取一個項目時，編輯器會捲動到該內容並予以選取。
 * 按兩下內容樹狀結構中的專案時，編輯器會捲動至該內容並選取它，同時在[屬性模式中開啟關聯的屬性。](#properties-mode)
+* 在樹狀結構中的專案上按一下滑鼠右鍵時，將會開啟前後關聯功能表，其中包含該專案的適當動作。
 
 ![內容樹](assets/content-tree.png)
 
@@ -307,6 +302,10 @@ Universal Editor提供可自訂且可擴充的撰寫體驗。 如果您在工具
 ![圖示重複](assets/duplicate.png)
 
 點選或按一下重複按鈕[會重複選取的元件](/help/sites-cloud/authoring/universal-editor/authoring.md#duplicating-components)。
+
+>[!TIP]
+>
+>使用快速鍵`Command+d`從容器中刪除選取的元件。
 
 ##### 刪除 {#delete}
 
