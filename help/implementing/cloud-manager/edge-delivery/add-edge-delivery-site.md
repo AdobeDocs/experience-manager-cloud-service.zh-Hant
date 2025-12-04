@@ -4,10 +4,10 @@ description: 了解如何將 Edge Delivery 網站新增至您的生產程式或�
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 7c990e7e42477120c7ce0720bdb6dc7d03308f92
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 100%
+source-wordcount: '581'
+ht-degree: 95%
 
 ---
 
@@ -58,6 +58,12 @@ ht-degree: 100%
    | **3** | 在 Git 存放庫中為您剛建立的變更建立一項提取請求，然後將其合併到 `main` 以提交程式碼。 |
 
 1. 按一下「**驗證**」。
+
+   >[!NOTE]
+   >
+   >如果您的Edge Delivery Services網站使用Helix驗證，則無法存取驗證挑戰。 暫時停用驗證，完成網站驗證，然後開啟驗證。
+
+
 
 當存放庫通過驗證，它在 Edge Delivery 網站表格中的狀態就會更新。內有白色核取記號的綠色圓圈表示該狀態。
 

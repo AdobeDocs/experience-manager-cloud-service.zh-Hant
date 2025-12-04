@@ -5,10 +5,10 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 15da86656733074afccef85910cc8ea0109933e6
 workflow-type: tm+mt
-source-wordcount: '698'
-ht-degree: 41%
+source-wordcount: '749'
+ht-degree: 38%
 
 ---
 
@@ -29,6 +29,10 @@ Adobe Experience Manager as a Cloud Service已佈建預設網域名稱，結尾�
 每個網站都有一個與之關聯的電腦可讀取的唯一數字位址，例如 `184.33.123.64`。網域名稱系統 (DNS) 可讓您將數字位址轉換為令人難忘的位址，以將自訂、品牌化網域附加至網站上，例如，`wknd.com`。
 
 為您的網站命名網域名稱是很好的作法，這會讓客戶難忘並反映您的品牌。
+
+>[!IMPORTANT]
+>
+> adobeaemcloud.com **下的預設網域不應使用**&#x200B;來提供對SEO而言重要的內容。 搜尋引擎無法索引adobeaemcloud.com網域和子網域，因為它們提供[預設的robots.txt](https://cdn.adobeaemcloud.com/robots.txt)，可防止編目和建立索引。 請改用您自己的自訂領域來提供自訂robots.txt。
 
 您可以向網域名稱註冊機構、管理和銷售網域名稱的公司或組織購買網域名稱。網域名稱註冊機構管理 DNS 伺服器上的網域名稱。
 
