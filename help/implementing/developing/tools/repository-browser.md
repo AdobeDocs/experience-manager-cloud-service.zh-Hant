@@ -6,9 +6,9 @@ seo-description: The repository browser provides a read-only view into the repos
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 414608955bce3feebd1249a91e4f77161144e51e
 workflow-type: tm+mt
-source-wordcount: '871'
+source-wordcount: '710'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 >[!INFO]
 >
->您也可以觀看[此片段](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html?lang=zh-Hant)，快速瞭解如何使用存放庫瀏覽器偵錯AEM as a Cloud Service。
+>您也可以觀看[此片段](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html)，快速瞭解如何使用存放庫瀏覽器偵錯AEM as a Cloud Service。
 
 ## 簡介 {#introduction}
 
@@ -33,7 +33,7 @@ ht-degree: 1%
 
 要存取AEM as a Cloud Service Developer Console或存放庫瀏覽器，必須滿足以下條件
 
-若要存取AEM as a Cloud Service Developer Console，請參閱[Developer Console存取權](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access)。
+若要存取AEM as a Cloud Service Developer Console，請參閱[Developer Console存取權](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access)。
 
 若要存取存放庫瀏覽器，必須具備與AEM as a Cloud Service Developer Console （以上指定）相同的條件。 檢視特定執行處理的「儲存區域瀏覽器」內容：
 
@@ -41,7 +41,7 @@ ht-degree: 1%
 
 * 發佈執行個體：具有&#x200B;**發佈執行個體**&#x200B;之AEM使用者產品設定檔的使用者，能夠以最低的讀取存取權檢視存放庫瀏覽器。 若沒有該產品設定檔集，使用者將以匿名使用者身分導覽，且由於許可權有限，部分路徑將不會顯示。
 
-如需設定使用者許可權的詳細資訊，請參閱[Cloud Manager檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=zh-Hant)。
+如需設定使用者許可權的詳細資訊，請參閱[Cloud Manager檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html)。
 
 ### 啟動存放庫瀏覽器 {#launching-the-repository-browser}
 
@@ -76,38 +76,42 @@ ht-degree: 1%
 
 對於發佈，依預設，存放庫瀏覽器只會顯示公開內容，因此某些資料夾（如`/conf`或`/home`）不會顯示。
 
-若要使這些位置可見，請執行下列動作。
+若要顯示這些位置，請使用AEM管理員發佈產品設定檔。 如需詳細資訊，請參閱[團隊和產品設定檔檔案](/help/onboarding/aem-cs-team-product-profiles.md)。
 
-1. 按一下您所選環境旁的三個點，然後選取&#x200B;**管理存取權**
+<!-- Drafting because of CQDOC-23204
+
+1. Click the three dots next to the environment of your choice and select **Manage Access**
 
    ![repobrowser7](/help/implementing/developing/tools/assets/repobrowser7.png)
 
-1. 尋找您的發佈執行個體，然後按一下它
+1. Find your publish instance, then click it
 
    ![repobrowser8](/help/implementing/developing/tools/assets/repobrowser8.png)
 
-1. 為發佈管理員建立產品設定檔。 在下列範例中，它稱為&#x200B;**DEV - AEM Administrators Publish**
+1. Create a product profile for publish administrators. In the example below, it is called **DEV - AEM Administrators Publish**
 
-   ![報表瀏覽器9](/help/implementing/developing/tools/assets/repobrowser9.png)
+   ![repobrowser9](/help/implementing/developing/tools/assets/repobrowser9.png)
 
-1. 將適當的使用者（對應於應能瀏覽具有完整存取權的發佈存放庫瀏覽器的使用者）新增至新產品設定檔
+1. Add the appropriate users, corresponding to who should be able to navigate the publish repository browser with full access, to the new product profile
 
    ![repobrowser10](/help/implementing/developing/tools/assets/repobrowser10.png)
 
-1. 請稍候幾分鐘，然後開啟&#x200B;**AEM作者**&#x200B;主控台
-1. 按一下作者上的&#x200B;**工具 — 安全性 — 群組**，然後按一下&#x200B;**管理員**&#x200B;群組，將對應到新產品設定檔的群組新增為管理員群組的成員。 然後，新增群組，如下所示
+1. Wait for a few minutes, then open the **AEM author** console
+1. Add the group corresponding to the new product profile as a member of the administrator's group by clicking **Tools - Security - Groups on author**, then clicking the **administrators** group. Then, add the group as shown below
 
    ![repobrowser11](/help/implementing/developing/tools/assets/repobrowser11.png)
 
-1. 啟動&#x200B;**管理員**&#x200B;和新的&#x200B;**DEV - AEM管理員發佈**&#x200B;群組，讓它們在發佈時可供使用
+1. Activate the **administrators** and the new **DEV - AEM Administrators Publish** group so that they become available on publish
 
    ![repobrowser12](/help/implementing/developing/tools/assets/repobrowser12.png)
 
-1. 好的安全性作法是，從&#x200B;**作者**&#x200B;上的管理員群組移除新的&#x200B;**DEV - AEM Administrators Publish**&#x200B;群組，以便將該新群組隔離以進行發佈
+1. As a good security practice, remove the new **DEV - AEM Administrators Publish** group from the administrator's group on **author** so the new group is isolated to publish 
 
    ![repobrowser13](/help/implementing/developing/tools/assets/repobrowser13.png)
 
-1. 存取發佈執行個體的存放庫瀏覽器時，所有資料夾皆可見，包括`/home`和`/conf`。
+1. Upon accessing repository browser for a publish instance, all folders are visible, including `/home` and `/conf`.
+
+-->
 
 ### 檢視JCR屬性 {#view-jcr-properties}
 
