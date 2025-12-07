@@ -3,10 +3,10 @@ title: 在管理員檢視中使用AI產生的中繼資料增強內容探索
 description: 瞭解如何在「管理檢視」中使用AI產生的中繼資料來增強內容探索
 feature: Smart Tags,Tagging
 role: Admin,User
-source-git-commit: 5dbad509f5a5a9addfe6b52c3c3dd7ce5fa3229d
+source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
 workflow-type: tm+mt
-source-wordcount: '646'
-ht-degree: 8%
+source-wordcount: '594'
+ht-degree: 9%
 
 ---
 
@@ -27,8 +27,6 @@ AI不會依賴手動輸入，而是自動將描述性標籤指派給數位資產
 若要啟用AI產生的中繼資料：
 
 * 最低必要的AEM發行版本為`20626`。
-
-* 您必須簽署GenAI Rider合約。 如需詳細資訊，請聯絡您的Adobe代表。
 
 ## 設定AI產生的標題 {#configure-ai-generated-titles}
 
@@ -71,20 +69,12 @@ AEM可讓您在「資產瀏覽」頁面上的「卡片」檢視或「清單」�
 
 ## 停用AI產生的中繼資料 {#disable-ai-generated-metadata}
 
-您可以在資料夾層級停用AI產生的中繼資料。 所有子資料夾都會繼承父資料夾的屬性。
+若要停用AI產生的中繼資料：
 
-若要在資料夾層級停用AI產生的中繼資料：
+1. 導覽至&#x200B;**[!UICONTROL 工具> Assets > Assets設定>智慧標籤增強設定]**。
 
-1. 導覽至&#x200B;**[!UICONTROL Adobe Experience Manager > Assets >檔案]**。
+1. 選取&#x200B;**[!UICONTROL 停用智慧標籤增強功能]**。
 
-1. 選取資料夾並按一下&#x200B;**[!UICONTROL 屬性]**。
+1. 按一下「**[!UICONTROL 儲存]**」。
 
-1. 在&#x200B;**[!UICONTROL 資產處理]**&#x200B;索引標籤中，導覽至&#x200B;**[!UICONTROL 影像的智慧標籤增強功能]**&#x200B;資料夾。 從下拉式清單中選取下列其中一個值：
-
-   * 繼承 — 資料夾繼承父資料夾的啟用或停用選項。
-
-   * 啟用 — 為選取的資料夾啟用AI產生的中繼資料。
-
-   * 停用 — 停用所選資料夾的AI產生中繼資料。
-
-     ![停用AI產生的中繼資料](assets/disable-ai-generated-metadata.png)
+上傳至AEM Assets的新資產或資料夾將停用AI產生的中繼資料。 已產生AI產生中繼資料欄位的現有資產或資料夾仍會繼續顯示這些欄位。

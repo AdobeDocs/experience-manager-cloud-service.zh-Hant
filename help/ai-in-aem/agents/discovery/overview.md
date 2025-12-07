@@ -3,9 +3,9 @@ title: 探索代理程式概述
 description: 瞭解如何使用Discovery Agent，透過順暢的對話提示來隨選提供相關的AEM內容，以提供精簡的免費探索體驗。
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 0a23cdf1cbc7738d843438b8d1aad358101c918e
+source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
 workflow-type: tm+mt
-source-wordcount: '1275'
+source-wordcount: '1265'
 ht-degree: 1%
 
 ---
@@ -92,13 +92,13 @@ DAM資料庫管理員可以標幟缺少組織所設定的中繼資料標準的�
 * 顯示資料夾`Nov 1 2025`中在`WKND`之後修改的資產。
 * 在資料夾`lifestyle`中列出`WKND`影像。
 
-**解析度與格式型資產探索**
+**以格式為基礎的資產探索**
 
-Discovery Agent可識別符合特定品質要求的資產（例如檔案格式或最低解析度），讓使用者快速找到產品視覺效果，以便跨管道進行高品質的傳送和重複使用。
+Discovery代理程式可識別符合特定品質要求的資產（例如檔案格式），讓使用者能夠快速找到產品視覺效果，以利跨管道進行高品質的傳送和重複使用。
 
 範例提示：
 
-尋找至少2000px寬的產品包裝PNG影像。
+尋找產品封裝PNG影像。
 
 **方向型內容探索**
 
@@ -152,7 +152,7 @@ Discovery Agent會傳回每個查詢的前幾個結果（依相關性排序）�
 
 >[!NOTE]
 >
->[Dynamic Media URL](/help/assets/dynamic-media/dynamic-media.md)欄位只有在資產已發佈且您具備有效的Dynamic Media授權時，才會顯示在搜尋結果中。 同樣地，只有當您具備有效的Dynamic Media授權且您的AEM as a Cloud Service執行個體已啟用具有OpenAPI的Dynamic Media時，才會顯示[具有OpenAPI URL的Dynamic Media &#x200B;](/help/assets/dynamic-media-open-apis-overview.md)欄位。
+>[Dynamic Media URL](/help/assets/dynamic-media/dynamic-media.md)欄位只有在資產已發佈且您具備有效的Dynamic Media授權時，才會顯示在搜尋結果中。 同樣地，只有當您具備有效的Dynamic Media授權且您的AEM as a Cloud Service執行個體已啟用具有OpenAPI的Dynamic Media時，才會顯示[具有OpenAPI URL的Dynamic Media ](/help/assets/dynamic-media-open-apis-overview.md)欄位。
 
 ### 內容片段 {#discovery-agent-search-results-content-fragments}
 

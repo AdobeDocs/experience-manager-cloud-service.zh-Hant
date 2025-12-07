@@ -1,9 +1,9 @@
 ---
 title: 使用AI產生的中繼資料增強內容探索
 description: 瞭解如何使用AI產生的中繼資料增強內容探索
-source-git-commit: e5b4d7692c9c57ba3e9c76940f28d72ad14d9fc0
+source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '357'
 ht-degree: 4%
 
 ---
@@ -21,7 +21,6 @@ AI不會依賴手動輸入，而是自動將描述性標籤指派給數位資產
 
 * 最低必要的AEM發行版本為`20626`。
 
-* 您必須簽署GenAI Rider合約。 如需詳細資訊，請聯絡您的Adobe代表。
 
 ## 使用AI產生的中繼資料 {#using-ai-generated-smart-tags}
 

@@ -4,10 +4,10 @@ description: 瞭解如何在AEM Assets檢視中搜尋和探索資產。 強大�
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 32bc8ba2a7e7a783b3e816c78873c6a8c559c1a1
+source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
 workflow-type: tm+mt
-source-wordcount: '1938'
-ht-degree: 77%
+source-wordcount: '1621'
+ht-degree: 74%
 
 ---
 
@@ -50,73 +50,77 @@ ht-degree: 77%
 
 您可以依照 `Name`、`Relevance`、`Size`、`Modified` 和 `Created` 的遞增或遞減順序排序搜尋的資產。已搜尋的資產會依`Relevance` (依預設) 進行排序。
 
-## 管理自訂篩選器 {#custom-filters}
+<!--
+  
+## Manage custom filters {#custom-filters}
 
-**需要的權限：**`Can Edit`、`Owner` 或管理員。
+**Permissions required:**  `Can Edit`, `Owner`, or Administrator.
 
-Assets檢視也可讓您將自訂篩選器新增到使用者介面。 然後，除了[標準篩選器](#refine-search-results)之外，您還可以套用這些自訂篩選器來縮小您的搜尋結果。
+Assets view also enable you to add custom filters to the user interface. You can then apply those custom filters in addition to the [standard filters](#refine-search-results) to refine your search results.
 
-Assets檢視提供下列自訂篩選器：
+Assets view provides the following custom filters:
 
 <table>
     <tbody>
      <tr>
-      <th><strong>自訂篩選器名稱</strong></th>
-      <th><strong>說明</strong></th>
+      <th><strong>Custom filter name</strong></th>
+      <th><strong>Description</strong></th>
      </tr>
      <tr>
-      <td>標題</td>
-      <td>使用該資產標題來篩選資產。您在區分大小寫的搜尋條件中指定的標題必須和要在結果中顯示的資產的精確標題完全相符。</td>
+      <td>Title</td>
+      <td>Filter assets using the asset title. The title that you specify in the case-sensitive search criteria must match the exact title of the asset to display in the results.</td>
      </tr>
      <tr>
-      <td>名稱</td>
-      <td>使用該資產檔名來篩選資產。您在區分大小寫的搜尋條件中指定的名稱必須和要在結果中顯示的資產的精確檔名完全相符。</td>
+      <td>Name</td>
+      <td>Filter assets using the asset file name. The name that you specify in the case-sensitive search criteria must match the exact file name of the asset to display in the results.</td>
      </tr>
      <tr>
-      <td>資產大小</td>
-      <td>透過在要顯示在結果中的資產的搜尋條件中定義大小範圍 (以位元組為單位) 來篩選資產。</td>
+      <td>Asset Size</td>
+      <td>Filter assets by defining a size range, in bytes, in the search criteria for an asset to display in the results.</td>
      </tr>
      <tr>
-      <td>預測標記</td>
-      <td>使用該資產智慧標記來篩選資產。您在區分大小寫的搜尋條件中指定的智慧標記必須和要在結果中顯示的資產的精確智慧標記名稱完全相符。您無法在搜尋條件中指定多個智慧標記。</td>
+      <td>Predicted Tags</td>
+      <td>Filter assets using the asset smart tag. The smart tag name that you specify in the case-sensitive search criteria must match the exact smart tag name of the asset to display in the results. You cannot specify multiple smart tags in search criteria.</td>
      </tr>    
     </tbody>
    </table>
 
-<!--
+   <!--
    You can use a wildcard operator (*) to enable Assets view to display assets in the results that partially match the search criteria. For example, if you define <b>ma*</b> as the search criteria, Assets view displays assets with title, such as, market, marketing, man, manchester, and so on in the results.
 
    You can use a wildcard operator (*) to enable Assets view to display assets in the results that partially match the search criteria.
 
    You can use a wildcard operator (*) to enable Assets view to display assets in the results that partially match the search criteria. You can specify multiple smart tags separated by a comma in the search criteria.
 
-   -->
+   
 
-### 新增自訂篩選器 {#add-custom-filters}
+### Add custom filters {#add-custom-filters}
 
-若要新增自訂篩選器：
+To add custom filters:
 
-1. 請按一下&#x200B;**[!UICONTROL 篩選器]**。
+1. Click **[!UICONTROL Filters]**. 
 
-1. 在&#x200B;**[!UICONTROL 自訂篩選器]**&#x200B;區段中，按一下&#x200B;**[!UICONTROL 編輯]**&#x200B;或&#x200B;**[!UICONTROL 新增篩選器]**。
+1. In the **[!UICONTROL Custom Filters]** section, click **[!UICONTROL Edit]** or **[!UICONTROL Add Filters]**.
 
-   ![新增自訂篩選器](assets/add-custom-filters.png)
+   ![Add custom filters](assets/add-custom-filters.png)
 
-1. 在&#x200B;**[!UICONTROL 自訂篩選器管理]**&#x200B;對話框中，選取您需要新增至現有篩選器清單上的篩選器。選取&#x200B;**[!UICONTROL 自訂篩選器]**，以選取所有篩選器。
+1. On the **[!UICONTROL Custom filters management]** dialog box, select the filters that you need to add to the existing list of filters. Select **[!UICONTROL Custom Filters]** to select all filters.
 
-1. 按一下&#x200B;**[!UICONTROL 確認]**，即可將篩選器新增到使用者介面。
+1. Click **[!UICONTROL Confirm]** to add the filters to the user interface.
 
-### 移除自訂篩選器 {#remove-custom-filters}
+### Remove custom filters {#remove-custom-filters}
 
-若要移除自訂篩選器：
+To remove custom filters:
 
-1. 請按一下&#x200B;**[!UICONTROL 篩選器]**。
+1. Click **[!UICONTROL Filters]**. 
 
-1. 在&#x200B;**[!UICONTROL 自訂篩選器]**&#x200B;區段中，按一下&#x200B;**[!UICONTROL 編輯]**。
+1. In the **[!UICONTROL Custom Filters]** section, click **[!UICONTROL Edit]**.
 
-1. 在&#x200B;**[!UICONTROL 自訂篩選器管理]**&#x200B;對話框中，將您需要從現有篩選器清單中移除的篩選器取消選取。
+1. On the **[!UICONTROL Custom filters management]** dialog box, deselect the filters that you need to remove from the existing list of filters.
 
-1. 按一下&#x200B;**[!UICONTROL 確認]**，即可將篩選器從使用者介面移除。
+1. Click **[!UICONTROL Confirm]** to remove the filters from the user interface.
+
+-->
 
 ## AI 搜尋 {#ai-search}
 
@@ -193,13 +197,17 @@ AI搜尋是一種進階搜尋功能，可瞭解使用者查詢的涵義和意圖
 
 1. 按一下「**另存為新資產**」，以儲存資產。
 
-### 上傳資產 {#upload-assets-firefly}
+<!--
 
-若要將產生的資產上傳到資產存放庫：
+### Upload assets {#upload-assets-firefly}
 
-1. 按一下 **[!UICONTROL 上傳]**。
-1. 選取需要上傳資產的資產資料夾，然後按一下 **[!UICONTROL 選取資料夾]**。
-   ![上傳資產](assets/upload-asset-firefly.jpg)
+To upload the generated asset to the assets repository:
+
+1. Click **[!UICONTROL Upload]**.
+1. Select the asset folder to which you need to upload the asset and click **[!UICONTROL Select Folder]**.
+ ![Upload asset](assets/upload-asset-firefly.jpg)
+
+ -->
 
 ## 已儲存搜尋 {#saved-search}
 
@@ -386,7 +394,7 @@ If you need to provide feedback on the Contextual Search feature, click ![Contex
 
 * 若要提供文件意見回饋，請使用右側邊欄提供的[!UICONTROL 編輯此頁面]![來編輯頁面](assets/do-not-localize/edit-page.png)或[!UICONTROL 記錄問題]![來建立 GitHub 問題](assets/do-not-localize/github-issue.png)。
 
-* 聯絡[客戶服務](https://experienceleague.adobe.com/zh-hant?support-solution=General#support)
+* 聯絡[客戶服務](https://experienceleague.adobe.com/?support-solution=General#support)
 
 
 
