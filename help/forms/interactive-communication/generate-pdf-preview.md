@@ -50,7 +50,7 @@ PDF預覽功能可讓使用者以三種不同的方式預覽互動式通訊：�
 
 +++2.使用本機JSON資料預覽
 
-2.1.準備結構化JSON檔案。 如需參考，您可以從用於通訊的JSON結構描述[(FDM)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model)複製範例資料。
+2.1.準備結構化JSON檔案。 如需參考，您可以從用於通訊的JSON結構描述[(FDM)](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model)複製範例資料。
 
 2.2.在IC編輯器中，移至&#x200B;**PDF預覽** >使用本機資料。
 

@@ -63,7 +63,7 @@ ht-degree: 10%
 請依照下列步驟，在互動式通訊(IC)範本中套用「內容」或「版面鎖定」：
 
 1. 開啟您的範本
-開啟或建立範本，請遵循指南[建立互動式通訊範本](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/interactive-communication/overview/create-interactive-communication-template)
+開啟或建立範本，請遵循指南[建立互動式通訊範本](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/forms/interactive-communication/overview/create-interactive-communication-template)
 
 1. 選取元件
 按一下要限制的元件（文字方塊、影像或子表單）。

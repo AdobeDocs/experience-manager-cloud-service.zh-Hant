@@ -33,7 +33,7 @@ Adobe Experience Manager (AEM) Forms中的&#x200B;**互動式通訊(IC)編輯器
 
 ### 驗證瀏覽器
 
-若要瞭解支援的瀏覽器和使用者端平台，請遵循連結的文章[支援的使用者端平台](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/overview/supported-platforms)
+若要瞭解支援的瀏覽器和使用者端平台，請遵循連結的文章[支援的使用者端平台](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/overview/supported-platforms)
 
 >[!NOTE]
 >
@@ -49,7 +49,7 @@ Adobe Experience Manager (AEM) Forms中的&#x200B;**互動式通訊(IC)編輯器
 | **表單作者** | 建立和編輯互動式通訊。 | 建立、編輯、預覽和發佈互動通訊。 |
 | **範本作者** | 為互動式通訊設計可重複使用的範本。 | 建立並鎖定範本，定義版面。 |
 | **管理員** | 管理使用者存取、許可權和設定。 | 指派角色、管理範本、發佈互動通訊。 |
-| **FDM作者** | [建立和管理表單資料模型(FDM)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models)以進行資料整合。 | 建立、編輯和設定資料來源和模型。 |
+| **FDM作者** | [建立和管理表單資料模型(FDM)](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models)以進行資料整合。 | 建立、編輯和設定資料來源和模型。 |
 
 >[!NOTE]
 >
