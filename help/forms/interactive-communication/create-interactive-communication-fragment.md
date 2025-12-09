@@ -5,10 +5,10 @@ products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 exl-id: d1c62f32-372b-475a-9258-67c2276e79f3
-source-git-commit: 8f25010ed57bd76acac7c56533ba8e37913511b7
+source-git-commit: d24e88b545a17e50c1e80e1aedbb1d0adf55f609
 workflow-type: tm+mt
-source-wordcount: '294'
-ht-degree: 18%
+source-wordcount: '291'
+ht-degree: 23%
 
 ---
 
@@ -25,9 +25,9 @@ ht-degree: 18%
 
 互動式通訊片段可讓使用者建立可重複使用的模組化內容區塊，例如可用於多個通訊檔案的頁首、頁尾或標準免責宣告。 建立個人化、資料整合式通訊時，這些片段有助於維持一致性、減少重複工作，並加快設計流程。
 
-## 必備條件
-
-* [確定作者是forms-users群組的成員](/help/forms/setup-forms-cloud-service.md#configure-users)
+>[!NOTE]
+>
+> [作者必須是「forms-users」群組的成員](/help/forms/setup-forms-cloud-service.md#configure-users)
 
 ## 建立互動式通訊片段
 
@@ -41,7 +41,7 @@ ht-degree: 18%
 
 1. 選取互動式通訊片段後，畫面隨即顯示，您可在其中定義關鍵片段詳細資訊，例如標題、名稱、說明、資料模型（後端資料的結構化表示）和標籤。
 
-   若要瞭解更多資訊，請參閱[資料模型設定指南](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models)。
+   若要瞭解更多資訊，請參閱[資料模型設定指南](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models)。
 
    ![尋找IC檔案](/help/forms/interactive-communication/assets/createfrgmnt.png)
 

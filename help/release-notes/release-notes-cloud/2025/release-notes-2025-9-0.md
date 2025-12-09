@@ -3,7 +3,7 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.9.0 版發行�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.9.0 版發行說明。'
 feature: Release Information
 role: Admin
-source-git-commit: ed51ff8df6d1e387960e8580c6dfb543a09ef8fa
+source-git-commit: ecc32b6b501be4a53bf26f170e501dc1407d1a57
 workflow-type: tm+mt
 source-wordcount: '2083'
 ht-degree: 89%
@@ -38,7 +38,7 @@ ht-degree: 89%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440931?captions=chi_hant&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -95,7 +95,7 @@ Content Hub Administrators can now pin collections in Content Hub for quick acce
 
 >[!NOTE]
 >
->These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
+>These features are available as Limited Availability features. You can [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) to enable it for your deployment.
 
 -->
 
@@ -117,15 +117,15 @@ AEM Forms 搶先體驗方案為您提供獨一無二的機會，享有尖端創�
 
 * **互動式通訊編輯器中的 PDF 預覽**
 
-  使用者可以預覽不包含資料、包含本機 JSON 資料檔案，或包含來自資料模型之資料的互動式通訊 PDF，藉此彈性地進行資料驅動測試。如需詳細資訊，請參閱[互動式通訊編輯器中的 PDF 預覽](/help/forms/interactive-communication/pdf-preview-in-interactive-communication-editor-with-different-data-options.md)。
+  使用者可以預覽不包含資料、包含本機 JSON 資料檔案，或包含來自資料模型之資料的互動式通訊 PDF，藉此彈性地進行資料驅動測試。如需詳細資訊，請參閱[互動式通訊編輯器中的 PDF 預覽](/help/forms/interactive-communication/generate-pdf-preview.md)。
 
 * **互動式通訊支援自訂字型**
 
-  透過自訂字型功能，使用者能夠在互動式通訊中嵌入自訂或組織核准的字型，確保在各種裝置和平台上呈現一致的品牌化 PDF 渲染。如需詳細資訊，請參閱[互動式通訊支援自訂字型](/help/forms/interactive-communication/add-custom-fonts-to-interactive-communication-editor.md)。
+  透過自訂字型功能，使用者能夠在互動式通訊中嵌入自訂或組織核准的字型，確保在各種裝置和平台上呈現一致的品牌化 PDF 渲染。如需詳細資訊，請參閱[互動式通訊支援自訂字型](/help/forms/interactive-communication/add-custom-fonts.md)。
 
 * **匯入與匯出互動式通訊**
 
-  透過這項功能，可以在不同的環境之間移轉及重複使用互動式通訊。您現在可以從一個環境中匯出互動式通訊及其相關片段和資料模型，然後將這些匯入另一個環境中。如需詳細資訊，請參閱[匯入與匯出互動式通訊](/help/forms/interactive-communication/import-and-export-interactive-communications.md)。
+  透過這項功能，可以在不同的環境之間移轉及重複使用互動式通訊。您現在可以從一個環境中匯出互動式通訊及其相關片段和資料模型，然後將這些匯入另一個環境中。如需詳細資訊，請參閱[匯入與匯出互動式通訊](/help/forms/interactive-communication/import-and-export-the-interactive-communication.md)。
 
 * **規則編輯器增強功能**
 
@@ -166,7 +166,7 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 >[!NOTE]
 >
 >於 9 月 25 日以「有限開放」功能的形式提供。
->&#x200B;>寄送電子郵件至 [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com)，以便在您的方案中啟動此功能。
+>寄送電子郵件至 [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com)，以便在您的方案中啟動此功能。
 
 ### Eclipse 適用的 AEM 開發人員工具新版本 {#aem-develeper-tools-for-eclipse}
 
