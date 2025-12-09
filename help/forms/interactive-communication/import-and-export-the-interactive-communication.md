@@ -37,8 +37,8 @@ ht-degree: 18%
 +++1.如何匯出互動式通訊
 
 1.1.選取[建立的互動式通訊](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/interactive-communication/create-interactive-communication) (IC)。
-1.2.按一下**下載**選項，將其匯出為ZIP檔。
-1.3.下載的ZIP檔案包含IC及其選取的**範本**、**片段**&#x200B;和&#x200B;**資料模型**。
+1.2.按一下&#x200B;**下載**&#x200B;選項，將其匯出為ZIP檔。
+1.3.下載的ZIP檔案包含IC及其選取的&#x200B;**範本**、**片段**&#x200B;和&#x200B;**資料模型**。
 
 ![尋找IC檔案](/help/forms/interactive-communication/assets/downloadic.png)
 +++
@@ -46,8 +46,8 @@ ht-degree: 18%
 +++2.如何匯入互動式通訊
 
 2.1.前往目標環境。
-2.2.瀏覽至**Forms > Forms和檔案>建立>檔案上傳**。
-2.3.上傳ZIP檔案至**匯入** IC。
+2.2.瀏覽至&#x200B;**Forms > Forms和檔案>建立>檔案上傳**。
+2.3.上傳ZIP檔案至&#x200B;**匯入** IC。
 
 ![尋找IC檔案](/help/forms/interactive-communication/assets/uploadfile.png)
 
