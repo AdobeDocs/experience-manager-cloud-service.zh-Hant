@@ -5,9 +5,9 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 83ab0fb97b233828fe43c1b53e649c918ce7b100
+source-git-commit: c5f4a3502153ff3c7e9fbce164a9c9b63196b547
 workflow-type: tm+mt
-source-wordcount: '1976'
+source-wordcount: '1968'
 ht-degree: 2%
 
 ---
@@ -76,7 +76,7 @@ AEM as a Cloud Service會套用伺服器端收集規則來計數內容請求。 
 
 | 請求型別 | 內容要求 | 說明 |
 | --- | --- | --- |
-| HTTP代碼100-299 | 已包含 | 包括傳回完整或部分HTML或JSON內容的成功請求。<br>HTTP程式碼206：這些要求只會傳遞完整內容的一部分。 例如，視訊或大型影像。 部分內容請求會在其傳送轉譯頁面內容中所使用的HTML或JSON回應的一部分時納入。 |
+| HTTP代碼100-299 | 已包含 | 包括傳回完整或部分HTML或JSON內容的成功請求。<br>HTTP程式碼206：這些要求只會傳遞完整內容的一部分。 部分請求會在其傳送轉譯頁面內容所使用的一部份HTML或JSON回應時納入。 |
 | 用於自動化的HTTP程式庫 | 已包含 | 擷取頁面內容的工具或程式庫提出的請求。 範例包含下列專案： <br>· Amazon CloudFront<br>· Apache Http Client<br>·非同步HTTP使用者端<br>· Axios<br>· Azureus<br>· Curl<br>· GitHub節點擷取<br>· Guzzle<br>· Go-http-client<br>· Headless Chrome<br>· Java™ Client<br>· Jersey<br>· Node Oembed<br>· Okhttp<br>· python請求<br>· Reactor Netty<br>· Wget<br>· WinHTTP<br>· Fast HTTP<br>· GitHub節點提取<br>· Reactor Netty |
 | 監視和健康狀態檢查工具 | 已包含 | 用來監督頁面健康狀態或可用性的要求。<br>檢視[排除的內容要求型別](#excluded-content-request)。<br>範例包含下列專案：<br>· `Amazon-Route53-Health-Check-Service`<br>· EyeMonIT_bot_version_0.1_[(https://eyemonit.com/)](https://eyemonit.com/)<br>· Investis-Site24x7<br>· Mozilla/5.0+ (相容； UptimeRobot/2.0； [https://uptimerobot.com/](https://uptimerobot.com/))<br>· ThousandEyes-Dragonfly-x1<br>· OmtrBot/1.0<br>· WebMon/2.0.0 |
 | `<link rel="prefetch">`個請求 | 已包含 | 當客戶預先載入或預先擷取內容（例如，使用`<link rel="prefetch">`）時，系統會計算這些伺服器端請求。 請注意，此方法可能會增加流量，端視預先擷取的頁面數量而定。 |
