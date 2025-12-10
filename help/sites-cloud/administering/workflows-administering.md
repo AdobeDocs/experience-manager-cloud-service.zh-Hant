@@ -48,7 +48,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   > 若要維持工作流程執行個體正常運作，請遵循最佳實務： [定期清除工作流程執行個體](#regular-purging-of-workflow-instances)或[工作流程最佳實務](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html)。
+   > 若要維持工作流程執行個體正常運作，請遵循最佳實務： [定期清除工作流程執行個體](#regular-purging-of-workflow-instances)或[工作流程最佳實務](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html?lang=zh-Hant)。
 
 ## 搜尋工作流程例項 {#search-workflow-instances}
 
