@@ -5,9 +5,9 @@ feature: Administering
 role: Admin
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 372d8969b1939e9a24d7910a1678a17c0dc9f9fd
 workflow-type: tm+mt
-source-wordcount: '1286'
+source-wordcount: '1282'
 ht-degree: 0%
 
 ---
@@ -33,26 +33,22 @@ ht-degree: 0%
 1. **執行中的工作流程**&#x200B;顯示執行中的工作流程數目及其狀態。 例如，在指定的影像中，顯示的是AEM執行個體的&#x200B;**執行中工作流程**&#x200B;和&#x200B;**狀態**&#x200B;數目：
 
    * **狀態：狀況良好**
-
      ![狀態正常](/help/sites-cloud/administering/assets/status-healthy.png)
 
    * **狀態：狀況不良**
-
      ![狀態不正常](/help/sites-cloud/administering/assets/status-unhealthy.png)
 
 1. 如需&#x200B;**工作流程執行個體的狀態詳細資料**，請按一下&#x200B;**詳細資料**，以顯示&#x200B;**執行中的工作流程執行個體數目**、**已完成的工作流程執行個體**、**中止的工作流程執行個體**、**失敗的工作流程執行個體**&#x200B;等等。 例如，下面是顯示&#x200B;**狀態詳細資料**&#x200B;的指定影像：
 
    * **狀態詳細資料：狀況良好**
-
      ![狀態詳細資料 — 狀況良好](/help/sites-cloud/administering/assets/status-details-healthy.png)
 
    * **狀態詳細資料：狀況不良**
-
      ![狀態詳細資料 — 不健康](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
 
    >[!NOTE]
    >
-   > 若要維持工作流程執行個體正常運作，請遵循最佳實務： [定期清除工作流程執行個體](#regular-purging-of-workflow-instances)或[工作流程最佳實務](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html?lang=zh-Hant)。
+   > 若要維持工作流程執行個體正常運作，請遵循最佳實務： [定期清除工作流程執行個體](#regular-purging-of-workflow-instances)或[工作流程最佳實務](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html)。
 
 ## 搜尋工作流程例項 {#search-workflow-instances}
 
@@ -116,7 +112,7 @@ ht-degree: 0%
 當工作流程失敗時，AEM會提供&#x200B;**失敗**&#x200B;主控台，讓您在原始原因得到處理之後，立即調查並採取適當的動作：
 
 * **失敗詳細資料**
-開啟視窗以顯示&#x200B;**失敗訊息**、**步驟和&#x200B;**&#x200B;失敗棧疊**。
+開啟視窗以顯示**失敗訊息**、**步驟和&#x200B;**失敗棧疊**。
 
 * **開啟歷程記錄**
 顯示工作流程記錄的詳細資料。
@@ -138,7 +134,7 @@ ht-degree: 0%
 
 將工作流程例項的數目降至最低會提升工作流程引擎的效能，因此您可以定期從儲存庫中清除已完成或執行中的工作流程例項。
 
-設定&#x200B;**AdobeGranite工作流程清除組態**&#x200B;以根據其年齡和狀態清除工作流程執行個體。 您也可以清除所有模型或特定模型的工作流程例項。
+設定&#x200B;**Adobe Granite工作流程清除設定**&#x200B;以根據其年齡和狀態清除工作流程執行個體。 您也可以清除所有模型或特定模型的工作流程例項。
 
 您也可以建立多個服務組態，以永久刪除滿足不同條件的工作流程例項。 例如，建立一個設定，當特定工作流程模型的執行個體執行的時間遠超過預期時間時，該設定會清除這些執行個體。 建立另一個設定，該設定會在幾天後清除所有已完成的工作流程，以將存放庫的大小降至最低。
 
@@ -150,43 +146,18 @@ ht-degree: 0%
 >因為服務是工廠服務，`sling:OsgiConfig`節點的名稱需要識別碼尾碼，例如：
 >`com.adobe.granite.workflow.purge.Scheduler-myidentifier`
 
-<table>
- <tbody>
-  <tr>
-   <th>屬性名稱（Web主控台）</th>
-   <th>OSGi屬性名稱</th>
-   <th>說明</th>
-  </tr>
-  <tr>
-   <td>工作名稱</td>
-   <td>scheduledpurge.name</td>
-   <td>排定永久刪除的描述性名稱。</td>
-  </tr>
-  <tr>
-   <td>工作流程狀態</td>
-   <td>scheduledpurge.workflowStatus</td>
-   <td><p>要清除的工作流程執行處理的狀態。 下列值有效：</p>
-    <ul>
-     <li>已完成：已永久刪除已完成的工作流程執行個體。</li>
-     <li>執行中：清除執行中的工作流程執行個體。</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td>要永久刪除的模型</td>
-   <td>scheduledpurge.modelIds</td>
-   <td><p>要清除的工作流程模型識別碼。 ID是模型節點的路徑，例如：<br /> /conf/global/settings/workflow/models/dam/update_asset/jcr：content/model<br />不指定任何值可清除所有工作流程模型的執行個體。</p> <p>若要指定多個模型，請按一下Web主控台中的+按鈕。 </p> </td>
-  </tr>
-  <tr>
-   <td>工作流程期限</td>
-   <td>scheduledpurge.daysold</td>
-   <td>要清除的工作流程例項期限（以天為單位）。</td>
-  </tr>
- </tbody>
-</table>
+| 屬性名稱（Web主控台） | OSGi屬性名稱 | 說明 |
+|--- |--- |--- |
+| 工作名稱  | `scheduledpurge.name` | 排定永久刪除的描述性名稱。 |
+| 工作流程狀態 | `scheduledpurge.workflowStatus` | 要清除的工作流程執行處理的狀態。 下列值有效： <br><br>- COMPLETED：已清除已完成的工作流程執行個體。<br> — 執行中：正在執行的工作流程執行個體已清除。 |
+| 要永久刪除的模型 | `scheduledpurge.modelIds` | 要清除的工作流程模型識別碼。<br>識別碼是模型節點的路徑，例如：<br> `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model` <br><br>未指定任何值以清除所有工作流程模型的執行個體。<br>若要指定多個模型，請按一下Web主控台中的`+`按鈕。 |
+| 工作流程期限 | `scheduledpurge.daysold` | 要清除的工作流程例項期限（以天為單位）。 |
+| 工作流程裝載封裝 | `scheduledpurge.purgePackagePayload` | 指示應清除裝載封裝； `true`或`false`。 |
+
 
 ## 設定收件匣大小上限 {#setting-the-maximum-size-of-the-inbox}
 
-您可以設定&#x200B;**AdobeGranite工作流程服務**&#x200B;來設定收件匣的大小上限，請參閱[將OSGi設定新增至存放庫](/help/implementing/deploying/configuring-osgi.md)。 下表說明您設定的屬性。
+您可以設定&#x200B;**Adobe Granite工作流程服務**&#x200B;來設定收件匣的大小上限，請參閱[將OSGi設定新增至存放庫](/help/implementing/deploying/configuring-osgi.md)。 下表說明您設定的屬性。
 
 >[!NOTE]
 >若要將設定新增至存放庫，服務PID為：
@@ -198,13 +169,13 @@ ht-degree: 0%
 
 ## 對客戶擁有的資料存放區使用工作流程變數 {#using-workflow-variables-customer-datastore}
 
-工作流程處理的資料儲存在Adobe提供的儲存空間(JCR)。 此資料本質上可能是敏感資料。 您可能希望將所有使用者定義的中繼資料/資料儲存在您自己的受管理儲存空間中，而非Adobe提供的儲存空間。 以下各節說明如何為外部儲存設定這些變數。
+工作流程處理的資料儲存在Adobe提供的儲存空間(JCR)。 此資料本質上可能是敏感資料。 您可能想要將所有使用者定義的中繼資料/資料儲存在您自己的受管儲存空間中，而非Adobe提供的儲存空間。 以下各節說明如何為外部儲存設定這些變數。
 
 ### 設定模型以使用中繼資料的外部儲存 {#set-model-for-external-storage}
 
 在工作流程模型的層級，會提供旗標，指出模型（及其執行階段執行個體）具有中繼資料的外部儲存。 對於標籤為外部儲存的模型的工作流程例項，工作流程變數將不會儲存在JCR中。
 
-屬性&#x200B;*userMetadataPersistenceEnabled*&#x200B;儲存在工作流程模型的&#x200B;*jcr：content節點*&#x200B;上。 此旗標會以&#x200B;*cq：userMetaDataCustomPersistenceEnabled*&#x200B;保留在工作流程中繼資料中。
+屬性&#x200B;*userMetadataPersistenceEnabled*&#x200B;儲存在工作流程模型的&#x200B;*jcr:content節點*&#x200B;上。 此旗標會以&#x200B;*cq:userMetaDataCustomPersistenceEnabled*&#x200B;形式保留在工作流程中繼資料中。
 
 下圖說明如何在工作流程上設定標幟。
 
