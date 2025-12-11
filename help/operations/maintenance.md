@@ -4,9 +4,9 @@ description: 瞭解AEM as a Cloud Service中的維護任務以及如何進行設
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: f6e8066ecdfdbd0c7e79c2557dc19eec81657047
+source-git-commit: 5de6ff7e6ac777c90b41bfeb9a56b909c83ed7d3
 workflow-type: tm+mt
-source-wordcount: '2042'
+source-wordcount: '2054'
 ht-degree: 8%
 
 ---
@@ -29,6 +29,8 @@ ht-degree: 8%
 >
 >Adobe保留覆寫客戶維護任務組態設定的權利，以緩解效能降級等問題。
 
+### 維護任務 {#maintenance-tasks}
+
 下表說明可用的維護任務。
 
 <table style="table-layout:auto">
@@ -47,14 +49,14 @@ ht-degree: 8%
   <tr>
     <td>版本清除</td>
     <td>客戶</td>
-    <td>目前預設會停用版本清除，但可以設定原則，如<a href="https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">版本清除和稽核記錄清除維護工作</a>區段中所述。<br/><br/>預設即將啟用清除，這些值可覆寫。<br>
+    <td>目前預設會停用版本清除，但可以設定原則，如<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">版本清除和稽核記錄清除維護工作</a>區段中所述。<br/><br/>預設即將啟用清除，這些值可覆寫。<br>
    </td>
   </td>
   </tr>
   <tr>
     <td>稽核記錄清除</td>
     <td>客戶</td>
-    <td>稽核記錄清除目前預設為停用，但可以設定原則，如<a href="https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">版本清除和稽核記錄清除維護任務</a>一節中所述。<br/><br/>預設即將啟用清除，這些值可覆寫。<br>
+    <td>稽核記錄清除目前預設為停用，但可以設定原則，如<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">版本清除和稽核記錄清除維護任務</a>一節中所述。<br/><br/>預設即將啟用清除，這些值可覆寫。<br>
    </td>
    </td>
   </tr>
@@ -85,11 +87,15 @@ ht-degree: 8%
     <td>客戶</td>
     <td>
     <p>必須在Git中完成。 覆寫<code>/libs</code>下的現成維護視窗設定節點，方法是在資料夾<code>/apps/settings/granite/operations/maintenance/granite_weekly</code>、<code>granite_daily</code>或<code>granite_monthly</code>下建立屬性。 如需其他組態詳細資訊，請參閱下方的維護期間表格。</p>
-    <p>透過在上面的節點底下新增另一個具有適當屬性的節點（將其命名為<code>granite_ProjectPurgeTask</code>）來啟用維護任務。 檢視<a href="https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi">Adobe專案清除設定</a>的<b>OSGi屬性</b>清單。</p>
+    <p>透過在上面的節點底下新增另一個具有適當屬性的節點（將其命名為<code>granite_ProjectPurgeTask</code>）來啟用維護任務。 檢視<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi">Adobe專案清除設定</a>的<b>OSGi屬性</b>清單。</p>
   </td>
   </tr>
   </tbody>
 </table>
+
+### 維護時段設定 {#maintenance-window-configurations}
+
+下表說明可用的維護視窗設定。
 
 <table style="table-layout:auto">
  <tbody>
@@ -138,15 +144,15 @@ ht-degree: 8%
     </tbody>
 </table>
 
-**位置**：
+### 位置 {#locations}
 
 * 每日 — /apps/settings/granite/operations/maintenance/granite_daily
 * 每週 — /apps/settings/granite/operations/maintenance/granite_weekly
 * 每月 — /apps/settings/granite/operations/maintenance/granite_monthly
 
-**程式碼範例**：
+### 程式碼範例 {#code-samples}
 
-程式碼範例1 （每日）
+**程式碼範例1 （每日）**
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -161,7 +167,7 @@ ht-degree: 8%
  />
 ```
 
-程式碼範例2 （每週）
+**程式碼範例2 （每週）**
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -176,7 +182,7 @@ ht-degree: 8%
    windowStartTime="14:30"/>
 ```
 
-程式碼範例3 （每月）
+**程式碼範例3 （每月）**
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -220,54 +226,54 @@ ht-degree: 8%
 > 
 >同樣地，在組態檔中部署稽核記錄清除節點後，必須將其保持宣告狀態，不得將其移除。
 
-**1**&#x200B;建立名為`mt.yaml`或類似的檔案。
+1. 建立名為`mt.yaml`或類似的檔案。
 
-**2**&#x200B;將檔案放置在名為`config`或類似名稱的頂層資料夾下，如[使用設定管道](/help/operations/config-pipeline.md#folder-structure)中所述。
+1. 將檔案放置在名為`config`或類似名稱的頂層資料夾之下，如[使用設定管道](/help/operations/config-pipeline.md#folder-structure)中所述。
 
-**3** — 在組態檔中宣告屬性，包括：
+1. 在組態檔案中宣告屬性，包括：
 
-* 資料節點上方的一些屬性 — 如需相關說明，請參閱[使用設定管道](/help/operations/config-pipeline.md#common-syntax)。 `kind`屬性值應該是&#x200B;*MaintenanceTasks*，而且版本應該設定為&#x200B;*1*。
+   * 資料節點上方的一些屬性 — 如需相關說明，請參閱[使用設定管道](/help/operations/config-pipeline.md#common-syntax)。 `kind`屬性值應該是&#x200B;*MaintenanceTasks*，而且版本應該設定為&#x200B;*1*。
 
-* 同時具有`versionPurge`和`auditLogPurge`物件的資料物件。
+   * 同時具有`versionPurge`和`auditLogPurge`物件的資料物件。
 
-請參閱下列`versionPurge`與`auditLogPurge`物件的定義與語法。
+   請參閱下列`versionPurge`與`auditLogPurge`物件的定義與語法。
 
-建構類似於以下範例的設定：
+   建構類似於以下範例的設定：
 
-```
-kind: "MaintenanceTasks"
-version: "1"
-metadata:
-  envTypes: ["dev"]
-data:
-  versionPurge:
-    maximumVersions: 15
-    maximumAgeDays: 20
-    paths: ["/content"]
-    minimumVersions: 1
-    retainLabelledVersions: false
-  auditLogPurge:
-    rules:
-      - replication:
-          maximumAgeDays: 15
-          contentPath: "/content"
-          types: ["Activate", "Deactivate", "Delete", "Test", "Reverse", "Internal Poll"]
-      - pages:
-          maximumAgeDays: 15
-          contentPath: "/content"
-          types: ["PageCreated", "PageModified", "PageMoved", "PageDeleted", "VersionCreated", "PageRestored", "PageValid", "PageInvalid"]
-      - dam:
-          maximumAgeDays: 15
-          contentPath: "/content"
-          types: ["ASSET_EXPIRING", "METADATA_UPDATED", "ASSET_EXPIRED", "ASSET_REMOVED", "RESTORED", "ASSET_MOVED", "ASSET_VIEWED", "PROJECT_VIEWED", "PUBLISHED_EXTERNAL", "COLLECTION_VIEWED", "VERSIONED", "ADDED_COMMENT", "RENDITION_UPDATED", "ACCEPTED", "DOWNLOADED", "SUBASSET_UPDATED", "SUBASSET_REMOVED", "ASSET_CREATED", "ASSET_SHARED", "RENDITION_REMOVED", "ASSET_PUBLISHED", "ORIGINAL_UPDATED", "RENDITION_DOWNLOADED", "REJECTED"]
-```
+   ```
+   kind: "MaintenanceTasks"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     versionPurge:
+       maximumVersions: 15
+       maximumAgeDays: 20
+       paths: ["/content"]
+       minimumVersions: 1
+       retainLabelledVersions: false
+     auditLogPurge:
+       rules:
+         - replication:
+             maximumAgeDays: 15
+             contentPath: "/content"
+             types: ["Activate", "Deactivate", "Delete", "Test", "Reverse", "Internal Poll"]
+         - pages:
+             maximumAgeDays: 15
+             contentPath: "/content"
+             types: ["PageCreated", "PageModified", "PageMoved", "PageDeleted", "VersionCreated", "PageRestored", "PageValid", "PageInvalid"]
+         - dam:
+             maximumAgeDays: 15
+             contentPath: "/content"
+             types: ["ASSET_EXPIRING", "METADATA_UPDATED", "ASSET_EXPIRED", "ASSET_REMOVED", "RESTORED", "ASSET_MOVED", "ASSET_VIEWED", "PROJECT_VIEWED", "PUBLISHED_EXTERNAL", "COLLECTION_VIEWED", "VERSIONED", "ADDED_COMMENT", "RENDITION_UPDATED", "ACCEPTED", "DOWNLOADED", "SUBASSET_UPDATED", "SUBASSET_REMOVED", "ASSET_CREATED", "ASSET_SHARED", "RENDITION_REMOVED", "ASSET_PUBLISHED", "ORIGINAL_UPDATED", "RENDITION_DOWNLOADED", "REJECTED"]
+   ```
 
-請記住，為了讓設定有效：
+   請記住，為了讓設定有效：
 
-* 必須定義所有屬性。 沒有繼承的預設值。
-* 下方屬性表格中的型別（整數、字串、布林值等）必須遵守。
+   * 必須定義所有屬性。 沒有繼承的預設值。
+   * 下方屬性表格中的型別（整數、字串、布林值等）必須遵守。
 
-**4** — 在Cloud Manager中建立設定管道，如[設定管道文章](/help/operations/config-pipeline.md#managing-in-cloud-manager)所述。
+1. 在Cloud Manager中建立設定管道，如[設定管道文章](/help/operations/config-pipeline.md#managing-in-cloud-manager)所述。
 
 ### 版本清除 {#version-purge}
 
@@ -308,7 +314,6 @@ data:
 | maximumVersions | 5 | 0 （無限制） | 是 | 整數 | 第n個最新版本之前的任何版本都會被移除。 如果值為0，則不會根據版本數執行永久刪除。 |
 | minimumVersions | 1 | 1 | 是 | 整數 | 無論年齡為何，保留的最低版本數量。 請注意，一律會保留至少1個版本；其值必須為1或更高。 |
 | retainLabelledVersioned | false | false | 是 | 布林值 | 決定是否從清除中排除明確標籤的版本。 為求較佳的存放庫最佳化，建議將此值設為false。 |
-
 
 **屬性互動**
 
@@ -366,7 +371,6 @@ minimumVersions = 1
 允許的屬性列於下方。
 
 指示&#x200B;*預設*&#x200B;的資料行指示未來套用預設時的預設值；*待定*&#x200B;反映尚未確定的環境ID。
-
 
 | 屬性 | 環境>待定的未來預設值 | 環境&lt;=TBD的未來預設值 | 必要 | 類型 | 值 |
 |-----------|--------------------------|-------------|-----------|---------------------|-------------|
