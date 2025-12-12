@@ -5,9 +5,9 @@ exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2449bc380268ed42b6c8d23ae4a4fecaf1736889
 workflow-type: tm+mt
-source-wordcount: '2247'
+source-wordcount: '2576'
 ht-degree: 4%
 
 ---
@@ -93,7 +93,7 @@ ht-degree: 4%
 >
 >體驗片段可以包含內容片段形式的內容，反之則不行。
 >
->如需詳細資訊，另請參閱[瞭解AEM中的內容片段和體驗片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=zh-Hant#content-fragments)。
+>如需詳細資訊，另請參閱[瞭解AEM中的內容片段和體驗片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments)。
 
 ## 內容片段與內容服務 {#content-fragments-and-content-services}
 
@@ -128,7 +128,7 @@ AEM內容片段可用於說明和管理結構化內容。 結構化內容在可�
    * 內容片段（及其變數）可以從&#x200B;**Assets**&#x200B;主控台建立及維護。
    * 在內容片段編輯器中撰寫和編輯。
 
-* 內容片段元件[&#x200B; （參考元件）在](/help/sites-cloud/authoring/fragments/content-fragments.md)頁面編輯器中使用：
+* 內容片段元件[ （參考元件）在](/help/sites-cloud/authoring/fragments/content-fragments.md)頁面編輯器中使用：
 
    * **內容片段**&#x200B;元件可供頁面作者使用。 它可讓他們以HTML或JSON格式參考及傳送所需的內容片段。
 
@@ -187,7 +187,7 @@ Assets可以透過數個方式與內容片段一起使用；各有其優點：
 
    * 文字區塊，通常是以個別實體分隔的多行。
 
-   * 在富 [文本](/help/assets/content-fragments/content-fragments-variations.md#rich-text) [&#128279;](/help/assets/content-fragments/content-fragments-variations.md#markdown) 和標籤下拉模式中，段落可以格式化為標題，在這種情況下，它和以下段落作為一個單位一起組成。
+   * 在富 [文本](/help/assets/content-fragments/content-fragments-variations.md#rich-text)[](/help/assets/content-fragments/content-fragments-variations.md#markdown) 和標籤下拉模式中，段落可以格式化為標題，在這種情況下，它和以下段落作為一個單位一起組成。
 
    * 在頁面製作期間啟用內容控制。
 
@@ -323,3 +323,47 @@ WKND專案包括：
 
 * 內容片段 (和其他內容) 可在以下位置取用：
   `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
+
+## 最佳做法 {#best-practices}
+
+內容片段可用於形成複雜結構。 Adobe提供在定義及使用模型與片段時最佳實務的建議。
+
+### 保持簡單 {#keep-it-simple}
+
+在AEM中建立結構化內容模型時，請儘可能簡化內容結構，以確保強大的系統效能和簡化的控管。
+
+### 模型數量 {#number-of-models}
+
+視需要建立儘可能多的內容模型，但不用再建立。
+
+太多模型會使控管複雜化，並可能會減慢GraphQL查詢的速度。 一小部分模型（最多數十個）通常就足夠了。 如果您接近數十或更高的數值，請重新考慮您的模型策略。
+
+### 巢狀模型和片段（非常重要） {#nesting-models-and-fragments}
+
+使用內容片段參考避免內容片段巢狀過多或過深，此參考允許片段參考其他片段，有時會跨多個層級。
+
+大量使用內容片段參考資料可能會顯著影響系統效能、UI回應速度和GraphQL查詢執行。 旨在將巢狀結構保持不超過10個層級。
+
+###每個模型的資料欄位和型別數目 {#number-of-data-fields-and-types-per-model}
+
+僅包含模型真正需要的資料欄位和型別。
+
+過於複雜的模型會導致過於複雜的片段，這會使編寫變得困難並降低編輯器效能。
+
+### RTF欄位 {#rich-text-fields}
+
+考慮使用RTF欄位（**多行文字**&#x200B;資料型別）。
+
+限制每個模型的RTF文字欄位數。 還有每個片段中儲存的文字量，以及HTML格式化的數量。 非常大的RTF內容可能會對系統效能產生負面影響。
+
+### 變化版本數量 {#number-of-variations}
+
+視需要建立儘可能多的片段變數，但僅此而已。
+
+變數會為內容片段增加處理時間、在製作環境中和傳送時。 建議您將變異數維持在可控的最低限度。
+
+最佳實務是每個內容片段不超過十個變數。
+
+### 生產前測試 {#test-before-production}
+
+如有疑問，請先原型設計您預期的內容結構，然後再將其推出至生產環境。 及早的概念證明，加上充分的技術和使用者接受度測試，有助於避免日後生產面臨截止日期時的問題。

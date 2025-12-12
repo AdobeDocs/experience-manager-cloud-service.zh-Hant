@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 8a8f63758cf216b502d5ee894ff5af7285777889
+source-git-commit: 8dc6874f3f8833ef67a4fa93d2a830fa8485b593
 workflow-type: tm+mt
-source-wordcount: '2819'
+source-wordcount: '2793'
 ht-degree: 5%
 
 ---
@@ -32,6 +32,10 @@ ht-degree: 5%
 * 能夠在編輯器中[檢視版本詳細資料](#view-version-history)。 您也可以還原至選取的版本。
 * 能夠[檢視和開啟父系參考](#view-parent-references)。
 * 使用[結構樹狀結構](#structure-tree)的內容片段及其參考的階層檢視。
+
+>[!NOTE]
+>
+>使用您的內容片段模型和內容片段時，請留意[最佳實務](/help/sites-cloud/administering/content-fragments/overview.md)。
 
 >[!WARNING]
 >
@@ -89,7 +93,7 @@ ht-degree: 5%
 
 * 已針對此片段建立的&#x200B;**[變數](#variations)**&#x200B;清單：
    * **Main**&#x200B;是第一次建立內容片段時出現的變數，您可以稍後新增其他變數
-   * 您可以使用「產生變#generate-variations」，以使用Adobe針對特定使用案例建立的提示型範本。
+   * 您可以使用[產生變數](#generate-variations-ai)來使用Adobe針對特定使用案例建立的提示型範本。
    * 您也可以[建立變數](#create-variation)
 * 片段中的&#x200B;**欄位**&#x200B;及其變數：
    * 圖示表示[資料型別](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
@@ -135,12 +139,6 @@ ht-degree: 5%
 * [刪除變數](#delete-variation)
 
 ### 建立變數 {#create-variation}
-
->[!NOTE]
->
->變數會為內容片段增加處理時間、在製作環境中和傳送時。 建議您將變異數維持在可控的最低限度。
->
->最佳實務是每個內容片段不超過十個變數。
 
 若要建立內容片段的變數：
 
@@ -273,7 +271,7 @@ ht-degree: 5%
 
   >[!CAUTION]
   >
-  >同步僅可用於將變更&#x200B;*從&#x200B;**Main**&#x200B;複製到變數*。
+  >同步僅可用於將變更&#x200B;*從&#x200B;**Main**複製到變數*。
   >
   >將變更&#x200B;*從變化傳輸至&#x200B;**主要***不提供選項。
 

@@ -5,9 +5,9 @@ exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 feature: Content Fragments, GraphQL API
 role: User, Admin, Developer
 solution: Experience Manager Sites
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 8dc6874f3f8833ef67a4fa93d2a830fa8485b593
 workflow-type: tm+mt
-source-wordcount: '3588'
+source-wordcount: '3604'
 ht-degree: 7%
 
 ---
@@ -22,6 +22,10 @@ AEM中的內容片段模型定義您[內容片段](/help/assets/content-fragment
 1. [建立](#creating-a-content-fragment-model)，並[設定您的內容片段模型](#defining-your-content-fragment-model)
 1. [啟用您的內容片段模型](#enabling-disabling-a-content-fragment-model)，以便在建立內容片段時使用
 1. [藉由設定](#allowing-content-fragment-models-assets-folder)原則&#x200B;**，在必要的Assets資料夾**&#x200B;上允許您的內容片段模型。
+
+>[!NOTE]
+>
+>使用您的內容片段模型和內容片段時，請留意[最佳實務](/help/assets/content-fragments/content-fragments.md)。
 
 >[!NOTE]
 >
@@ -48,7 +52,7 @@ AEM中的內容片段模型定義您[內容片段](/help/assets/content-fragment
    >如果[尚未啟用使用內容片段模型](/help/assets/content-fragments/content-fragments-configuration-browser.md)，則&#x200B;**建立**&#x200B;選項將無法使用。
 
 1. 指定&#x200B;**模型標題**。
-您也可以定義各種屬性；例如，新增&#x200B;**標籤**、**描述**，並選取&#x200B;**啟用模型**&#x200B;以[啟用模型](#enabling-disabling-a-content-fragment-model) （如有必要）。
+您也可以定義各種屬性；例如，新增**標籤**、**描述**，並選取&#x200B;**啟用模型**&#x200B;以[啟用模型](#enabling-disabling-a-content-fragment-model) （如有必要）。
 
    >[!NOTE]
    >
@@ -217,15 +221,15 @@ AEM中的內容片段模型定義您[內容片段](/help/assets/content-fragment
   >如果在舊版AEM中建立的模型包含非法字元，請移除或更新這些字元。
 
 * **呈現為**
-在片段中實現/轉譯欄位的各種選項。 通常，此屬性可讓您定義作者是否看到欄位的單一例項，或允許建立多個例項。 使用&#x200B;**多個欄位**&#x200B;時，您可以定義專案的最小和最大數量 — 如需詳細資訊，請參閱[驗證](#validation)。
+在片段中實現/轉譯欄位的各種選項。 通常，此屬性可讓您定義作者是否看到欄位的單一例項，或允許建立多個例項。 使用**多個欄位**&#x200B;時，您可以定義專案的最小和最大數量 — 如需詳細資訊，請參閱[驗證](#validation)。
 
 * **欄位標籤**
-輸入&#x200B;**欄位標籤**&#x200B;將會自動產生&#x200B;**屬性名稱**，然後可視需要手動更新。
+輸入**欄位標籤**&#x200B;將會自動產生&#x200B;**屬性名稱**，然後可視需要手動更新。
 
 * **驗證**
-基本驗證可由機制使用，例如&#x200B;**Required**&#x200B;屬性。 有些資料型別有額外的驗證欄位。 如需詳細資訊，請參閱[驗證](#validation)。
+基本驗證可由機制使用，例如**Required**&#x200B;屬性。 有些資料型別有額外的驗證欄位。 如需詳細資訊，請參閱[驗證](#validation)。
 
-* 對於「多行」 **資料類型** ，可將「預設類型 **&#x200B;**&#x200B;」定義為：
+* 對於「多行」 **資料類型** ，可將「預設類型 **** 」定義為：
 
    * **RTF 文字**
    * **Markdown**
@@ -588,7 +592,7 @@ type CompanyModel {
 
    * 您可以&#x200B;**解鎖**&#x200B;模型以啟用編輯。
 
-     如果您選取&#x200B;**解除鎖定**，會顯示警告，而且您必須確認&#x200B;**解除鎖定**&#x200B;動作：
+     如果您選取&#x200B;**解除鎖定**，會顯示警告，而且您必須確認&#x200B;**解除鎖定**動作：
      解鎖內容片段模型![時出現](assets/cfm-model-unlock-message.png)訊息
 
      然後您可以開啟模型以進行編輯。

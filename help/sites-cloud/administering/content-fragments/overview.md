@@ -1,18 +1,18 @@
 ---
-title: 使用內容片段的概觀
+title: 使用內容片段的概念和最佳實務概觀
 description: 瞭解Adobe Experience Manager (AEM) as a Cloud Service中的內容片段如何讓您建立和使用結構化內容；非常適合於Headless傳送和頁面編寫。
 feature: Content Fragments
 role: User, Developer
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2449bc380268ed42b6c8d23ae4a4fecaf1736889
 workflow-type: tm+mt
-source-wordcount: '2021'
-ht-degree: 4%
+source-wordcount: '2357'
+ht-degree: 3%
 
 ---
 
-# 使用內容片段的概觀 {#overview-working-with-content-fragments}
+# 使用內容片段 — 概念與最佳實務 {#working-with-content-fragments-concepts-and-best-practices}
 
 透過Adobe Experience Manager (AEM) as a Cloud Service，內容片段可讓您設計、建立、管理和發佈獨立於頁面的內容。 它們可讓您準備內容以用於多個位置及多個管道，非常適合[Headless傳遞](/help/headless/what-is-headless.md)及[頁面製作](/help/sites-cloud/authoring/fragments/content-fragments.md)。
 
@@ -57,7 +57,7 @@ ht-degree: 4%
 使用AEM核心元件的Sling模型(JSON)匯出功能，內容片段也可以以JSON格式傳送。 此傳遞形式：
 
 * 可讓您使用元件來管理要傳送片段的哪些元素
-* 允許大量傳送；方法是在用於API傳送的頁面上新增多個[內容片段核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=zh-Hant)
+* 允許大量傳送；方法是在用於API傳送的頁面上新增多個[內容片段核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)
 
 通訊管道的數量每年都在增加。 通常，管道是指傳遞機制，例如：
 
@@ -86,7 +86,7 @@ ht-degree: 4%
 >
 >體驗片段可以包含內容片段形式的內容，反之則不行。
 >
->如需進一步資訊，請參閱[瞭解AEM中的內容片段和體驗片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=zh-Hant#content-fragments)。
+>如需進一步資訊，請參閱[瞭解AEM中的內容片段和體驗片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments)。
 
 本頁和下列頁面涵蓋建立、設定、維護及使用內容片段的任務：
 
@@ -185,9 +185,9 @@ AEM內容片段可用於說明和管理結構化內容。 結構化內容在可�
 
 * 可使用[AEM GraphQL API](/help/headless/graphql-api/content-fragments.md)進行內容傳送。
 
-* 使用內容片段元件[&#x200B; （參考元件）可在](/help/sites-cloud/authoring/fragments/content-fragments.md)頁面編輯器中取得：
+* 使用內容片段元件[ （參考元件）可在](/help/sites-cloud/authoring/fragments/content-fragments.md)頁面編輯器中取得：
 
-   * [內容片段核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=zh-Hant)可供頁面作者使用。 它可讓他們以HTML或JSON格式參考及傳送所需的內容片段。
+   * [內容片段核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)可供頁面作者使用。 它可讓他們以HTML或JSON格式參考及傳送所需的內容片段。
 
 內容片段是內容結構，具備以下功能：
 
@@ -274,7 +274,7 @@ Assets可以透過數個方式與內容片段搭配使用；各有其優點：
    * 負責片段的佈局和傳遞；例如管道。
    * 片段需要一或多個專用元件來定義版面並傳遞部分或全部元素/變數和關聯內容。
    * 在製作中將片段拖曳到頁面上會自動建立所需元件的關聯。
-   * 檢視[內容片段核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=zh-Hant)。
+   * 檢視[內容片段核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)。
 
 ## 內容片段主控台 {#content-fragments-console}
 
@@ -325,3 +325,47 @@ WKND專案包括：
 * 內容片段 (和其他內容) 可在以下位置取用：
 
    * `.../assets.html/content/dam/wknd/en`
+
+## 最佳做法 {#best-practices}
+
+內容片段可用於形成複雜結構。 Adobe提供在定義及使用模型與片段時最佳實務的建議。
+
+### 保持簡單 {#keep-it-simple}
+
+在AEM中建立結構化內容模型時，請儘可能簡化內容結構，以確保強大的系統效能和簡化的控管。
+
+### 模型數量 {#number-of-models}
+
+視需要建立儘可能多的內容模型，但不用再建立。
+
+太多模型會使控管複雜化，並可能會減慢GraphQL查詢的速度。 一小部分模型（最多數十個）通常就足夠了。 如果您接近數十或更高的數值，請重新考慮您的模型策略。
+
+### 巢狀模型和片段（非常重要） {#nesting-models-and-fragments}
+
+使用內容片段參考避免內容片段巢狀過多或過深，此參考允許片段參考其他片段，有時會跨多個層級。
+
+大量使用內容片段參考資料可能會顯著影響系統效能、UI回應速度和GraphQL查詢執行。 旨在將巢狀結構保持不超過10個層級。
+
+###每個模型的資料欄位和型別數目 {#number-of-data-fields-and-types-per-model}
+
+僅包含模型真正需要的資料欄位和型別。
+
+過於複雜的模型會導致過於複雜的片段，這會使編寫變得困難並降低編輯器效能。
+
+### RTF欄位 {#rich-text-fields}
+
+考慮使用RTF欄位（**多行文字**&#x200B;資料型別）。
+
+限制每個模型的RTF文字欄位數。 還有每個片段中儲存的文字量，以及HTML格式化的數量。 非常大的RTF內容可能會對系統效能產生負面影響。
+
+### 變化版本數量 {#number-of-variations}
+
+視需要建立儘可能多的片段變數，但僅此而已。
+
+變數會為內容片段增加處理時間、在製作環境中和傳送時。 建議您將變異數維持在可控的最低限度。
+
+最佳實務是每個內容片段不超過十個變數。
+
+### 生產前測試 {#test-before-production}
+
+如有疑問，請先原型設計您預期的內容結構，然後再將其推出至生產環境。 及早的概念證明，加上充分的技術和使用者接受度測試，有助於避免日後生產面臨截止日期時的問題。
