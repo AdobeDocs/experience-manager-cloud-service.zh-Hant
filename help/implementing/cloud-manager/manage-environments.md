@@ -5,9 +5,9 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a254afed91dce2cd58df8762a6dbe39680fe9e5c
 workflow-type: tm+mt
-source-wordcount: '2489'
+source-wordcount: '2464'
 ht-degree: 41%
 
 ---
@@ -28,9 +28,11 @@ ht-degree: 41%
 | **快速開發** | 快速開發環境(RDE)可讓開發人員快速部署及檢閱變更。 此功能可縮短測試已在本機開發環境中驗證的功能所需的時間。 若要深入了解 RDE 的使用方法，請參閱[快速開發環境文件](/help/implementing/developing/introduction/rapid-development-environments.md)。 |
 | **專業測試環境** | 專業測試環境提供專屬的空間，可在接近生產環境的情況下驗證功能，非常適合壓力測試和進階部署前檢查。 請參閱[新增專業測試環境](/help/implementing/cloud-manager/specialized-test-environment.md) |
 
+<!-- 
 >[!NOTE]
 >
->**專業測試環境**&#x200B;功能目前只能透過私人測試版計畫取得。 若要註冊私人測試版，請參閱[專業測試環境](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment)。
+>The **Specialized Testing Environment** feature is currently available only through the private beta program. To sign up for the private beta, see [Specialized Testing Environment](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
+-->
 
 個別環境的功能取決於環境的[方案](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)中啟用的解決方案。
 
@@ -304,11 +306,11 @@ Cloud Manager 為每個 AEM as a Cloud Service 環境提供預覽服務 (作為�
 
 已在您的瀏覽器中開啟新索引標籤，其登入頁面為&#x200B;**Developer Console**。
 
-![登入 Developer Console &#x200B;](assets/environ-devconsole.png)
+![登入 Developer Console ](assets/environ-devconsole.png)
 
 只有具有&#x200B;**開發人員**&#x200B;角色的使用者才能存取 **Developer Console**。但是，對於沙箱計畫，任何有權存取沙箱計畫的使用者都可以存取&#x200B;**Developer Console**。
 
-如需更多詳細資訊，請參閱[休眠和去休眠沙箱環境](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation)。
+如需更多詳細資訊，請參閱[休眠和去休眠沙箱環境](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation)。
 
 按一下個別環境的&#x200B;**更多圖示**&#x200B;時，此選項也可從&#x200B;**總覽**&#x200B;視窗的![環境](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)索引標籤中使用。
 
@@ -344,4 +346,4 @@ Cloud Manager支援IP允許清單，用於Sites計畫的作者、發佈和預覽
 
 >[!TIP]
 >
->如需詳細資訊，請參閱[&#x200B; IP允許清單簡介](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)。
+>如需詳細資訊，請參閱[ IP允許清單簡介](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)。
