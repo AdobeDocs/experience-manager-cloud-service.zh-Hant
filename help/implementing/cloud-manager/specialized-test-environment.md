@@ -79,6 +79,6 @@ ht-degree: 12%
 
 ## 其他資源 {#additional-resources}
 
-* 影片： [瞭解AEM Cloud Manager中的環境型別](https://experienceleague.adobe.com/en/perspectives/cloud-manager-environment-types)
+* 影片： [瞭解AEM Cloud Manager中的環境型別](https://experienceleague.adobe.com/zh-hant/perspectives/cloud-manager-environment-types)
 * [管理環境](/help/implementing/cloud-manager/manage-environments.md)
 
