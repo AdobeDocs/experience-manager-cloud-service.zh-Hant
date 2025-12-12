@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 6efb04369109fcae638b699e1daff09624224098
+source-git-commit: 42c82384a0683ca2baca522dc9b2d5153ce01b69
 workflow-type: tm+mt
-source-wordcount: '1853'
+source-wordcount: '1871'
 ht-degree: 19%
 
 ---
@@ -78,7 +78,7 @@ Experience Platform頂端導覽列一律會顯示在畫面頂端。 這是一個
 
 ![Experience Cloud 標頭](assets/experience-cloud-header.png)
 
-如需Experience Platform頂端導覽列的詳細資訊，請參閱[Adobe Experience Platform UI指南](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
+如需Experience Platform頂端導覽列的詳細資訊，請參閱[Adobe Experience Platform UI指南](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
 
 #### 帳戶 {#user-properties}
 
@@ -224,6 +224,8 @@ Universal Editor提供可自訂且可擴充的撰寫體驗。 如果您在工具
 編輯器會佔據大部分視窗，而且是[位置列](#location-bar)中指定之頁面的呈現位置。
 
 ![編輯器](assets/editor.png)
+
+依預設，編輯器會開啟，以便您可以[就地或使用](/help/sites-cloud/authoring/universal-editor/authoring.md)屬性面板[編寫內容。](#properties-rail)
 
 如果編輯器處於[預覽模式](#preview-mode)，內容將可供瀏覽，您可以關注連結，但您無法編輯內容。
 

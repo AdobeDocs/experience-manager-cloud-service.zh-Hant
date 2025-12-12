@@ -4,9 +4,9 @@ description: 瞭解如何在通用編輯器中設定RTF編輯器(RTE)。
 feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
-source-git-commit: edcba16831a40bd03c1413b33794268b6466d822
+source-git-commit: 482c9604bf4dd5e576b560d350361cdc598930e3
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '718'
 ht-degree: 1%
 
 ---
@@ -176,6 +176,44 @@ RTE組態包含兩個部分：
 * `wrapInPicture`： `false` （預設） — 產生簡單`<img>`元素
 * `wrapInPicture`： `true` — 將影像包裝在`<picture>`個元素中以用於回應式設計
 
+### 縮排設定 {#indentation}
+
+縮排具有控制縮排行為範圍的功能層級組態，以及捷徑與標籤的個別動作組態。
+
+```json
+{
+  "actions": {
+    // Feature-level configuration
+    "indentation": {
+      "scope": "all"  // Controls what content can be indented (default: "all")
+    },
+
+    // Individual action configurations
+    "indent": {
+      "shortcut": "Tab",           // Custom keyboard shortcut
+      "label": "Increase Indent"   // Custom button label
+    },
+    "outdent": {
+      "shortcut": "Shift-Tab",     // Custom keyboard shortcut
+      "label": "Decrease Indent"   // Custom button label
+    }
+  }
+}
+```
+
+#### 縮排範圍選項 {#indentation-options}
+
+* `scope`： `all` （預設） — 縮排/凸排套用至所有內容：
+   * 清單：巢狀/取消巢狀清單專案
+   * 段落和標題：增加/減少一般縮排層級
+* `scope`： `lists` — 縮排/凸排僅適用於清單專案：
+   * 清單：巢狀/取消巢狀清單專案
+   * 段落和標題：無縮排（按鈕已針對這些專案停用）
+
+>[!NOTE]
+>
+>透過Tab/Shift+Tab鍵的清單巢狀功能與一般縮排設定無關。
+
 ### 其他動作 {#other}
 
 所有其他動作都支援基本自訂。 可使用下列章節。
@@ -307,6 +345,35 @@ RTE組態包含兩個部分：
 * 每個清單專案有多個段落
 * 一致的區塊層級樣式
 
+### `wrapInPicture`{#wrapinpicture}
+
+影像的`wrapInPicture`選項可控制針對影像內容產生的HTML結構。
+
+#### wrapInPicture： false （預設） {#wrapinpicture-false}
+
+```html
+<img src="image.jpg" alt="Description" />
+```
+
+#### wrapInPicture： true {#wrapinpicture-true}
+
+```html
+<picture>
+  <img src="image.jpg" alt="Description" />
+</picture>
+```
+
+當您需要下列專案時使用`wrapInPicture: true`：
+
+* 具有`<source>`個元素的回應式影像支援。
+* 藝術方向功能。
+* 進階影像功能的未來保障。
+* 一致的圖片元素結構。
+
+>[!NOTE]
+>
+>啟用`wrapInPicture: true`時，影像可以針對不同的媒體查詢和格式使用其他`<source>`元素來增強，使其在回應式設計上更靈活。
+
 ### 連結目標選項 {#link-target}
 
 連結的`hideTarget`選項會控制`target`屬性是否包含在產生的連結中，以及建立連結的對話方塊是否包含目標選取的欄位。
@@ -318,11 +385,60 @@ RTE組態包含兩個部分：
 <a href="https://example.com" target="_blank">External link</a>
 ```
 
-### `hideTarget: true` {#hideTarget-true}
+#### `hideTarget: true` {#hideTarget-true}
 
 ```html
 <a href="https://example.com">Link text</a>
 ```
+
+### 停用影像上的連結 {#disableforimages}
+
+連結的`disableForImages`選項控制使用者是否可以在影像和圖片元素上建立連結。 這同時適用於內嵌`<img>`元素和區塊層級`<picture>`元素。
+
+#### `disableForImages: false` (預設) {#disableforimages-false}
+
+使用者可以選取影像，並將它們包裝在連結中。
+
+```html
+<!-- Inline image with link -->
+<a href="https://example.com">
+  <img src="image.jpg" alt="Description" />
+</a>
+
+<!-- Block-level picture with link -->
+<a href="https://example.com">
+  <picture>
+    <img src="image.jpg" alt="Description" />
+  </picture>
+</a>
+```
+
+#### disableForImages： true {#disableforimages-true}
+
+選取影像或圖片時，連結按鈕會停用。 使用者只能在文字內容上建立連結。
+
+```html
+<!-- Images remain standalone without links -->
+<img src="image.jpg" alt="Description" />
+
+<picture>
+  <img src="image.jpg" alt="Description" />
+</picture>
+
+<!-- Links work normally on text -->
+<a href="https://example.com">Link text</a>
+```
+
+當您想要：`disableForImages: true`時，請使用
+
+* 防止連結的影像，以維持視覺上的一致性。
+* 將影像與導覽分開，簡化內容結構。
+* 強制實施限制影像連結的內容原則。
+* 降低內容中的協助工具複雜性。
+
+>[!NOTE]
+>
+>此設定只會影響在影像上建立新連結的能力。 它不會移除內容中影像的現有連結。
 
 ### 標籤選項 {#tag}
 

@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: fd80b6b0a3c6d06f8dddaa8387dbae6c33f96038
+source-git-commit: 87368be0b4c934bb4d4799833a90edfee72348e6
 workflow-type: tm+mt
-source-wordcount: '2534'
-ht-degree: 21%
+source-wordcount: '2625'
+ht-degree: 20%
 
 ---
 
@@ -69,17 +69,21 @@ ht-degree: 21%
 
 快顯選單會在RTF區塊上方開啟，並在快顯選單中提供基本的格式選項。 由於空間限制，某些選項可能會隱藏在省略符號按鈕後面。
 
-![&#x200B; RTF內容功能表](assets/rich-text-context-menu.png)
+![ RTF內容功能表](assets/rich-text-context-menu.png)
 
 一旦焦點離開已編輯的欄位，變更會自動儲存。
 
 #### 屬性面板 {#properties-rail}
 
-[屬性面板](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)會顯示所選文字的專案。 點選專案以開啟對話方塊，顯示較大的畫布以編輯文字。
+[屬性面板](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)會顯示所選RTF元件的專案。
+
+屬性面板中的![RTF元件](assets/rich-text-properties-panel.png)
+
+點選專案以開啟對話方塊，顯示較大的畫布以編輯RTF文字。
 
 ![RTF編輯對話方塊](assets/rich-text-canvas.png)
 
-點選或按一下「**取消**」或「**完成**」，分別捨棄或儲存變更。
+點選或按一下「**取消**」或「**完成**」，分別捨棄或儲存變更。 您也可以按下ESC鍵以儲存變更並關閉對話方塊。
 
 #### RTF格式選項 {#formatting-options}
 
@@ -92,8 +96,15 @@ ht-degree: 21%
 * 上標
 * 下標
 * 專案符號清單
-* 編號清單
+   * 使用Tab鍵以縮排，並使用Shift+Tab鍵以縮排
+* 排序清單
+   * 使用Tab鍵以縮排，並使用Shift+Tab鍵以縮排
 * 連結
+* 取消連結
+* 影像
+* 移除所有格式設定
+
+可以使用RTE編輯現有表格，但無法建立新表格。
 
 RTE可設定為根據作者需求隱藏選項或顯示其他選項。 如需詳細資訊，請參閱檔案[為通用編輯器設定RTE](/help/implementing/universal-editor/configure-rte.md)。
 
@@ -230,7 +241,11 @@ RTE可設定為根據作者需求隱藏選項或顯示其他選項。 如需詳�
 >
 >分別使用快速鍵`Command-C`或`Command-V`來複製或貼上。
 
+## 內容選項 {#context-options}
 
+就地編輯時，編輯器將透過按一下滑鼠右鍵提供內容相關的選項，例如複製、刪除或複製元件。
+
+![內容選項功能表](assets/context-options-menu.png)
 
 ## 預覽內容 {#previewing-content}
 

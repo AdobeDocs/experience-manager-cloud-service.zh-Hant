@@ -1,20 +1,20 @@
 ---
-title: 通用編輯器 2025.12.04 版發行說明
-description: 以下是通用編輯器 2025.12.04 版的發行說明。
+title: 通用編輯器 2025.12.12 版發行說明
+description: 以下是通用編輯器 2025.12.11 版的發行說明。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: e500b971e36fdb3d867e2d6b2a21eced66005182
+source-git-commit: 577bc81c35ad052a96b85ed4de13b21f06e385aa
 workflow-type: tm+mt
-source-wordcount: '166'
-ht-degree: 66%
+source-wordcount: '323'
+ht-degree: 26%
 
 ---
 
 
-# 通用編輯器 2025.12.04 版發行說明 {#release-notes}
+# 通用編輯器 2025.12.12 版發行說明 {#release-notes}
 
-這是通用編輯器 2025 年 12 月 4 日版本的發行說明。
+這是通用編輯器 2025 年 12 月 12 日版本的發行說明。
 
 >[!TIP]
 >
@@ -26,16 +26,27 @@ ht-degree: 66%
 
 ## 新增功能 {#what-is-new}
 
-* 已停用授權標頭，以支援[本機開發人員登入。](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login)
-* 在[結構化樹狀結構上按一下滑鼠右鍵即可使用內容功能表。](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)
-* 已將快速鍵新增至[重複的元件。](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate)
+* 已在[RTF編輯器中新增現有資料表的支援。](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
+* 已在[RTF編輯器中啟用巢狀清單的Tab鍵。](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
+* 開發人員登入功能現在可以透過[中繼標籤`dev-login`停用。](/help/implementing/universal-editor/customizing.md#meta-tags)
+* 在覆蓋區段中按一下滑鼠右鍵，現在會顯示[內容選項功能表。](/help/sites-cloud/authoring/universal-editor/authoring.md#context-options)
+* [RTF編輯器現在支援](/help/implementing/universal-editor/configure-rte.md#indentation)範圍縮排[。](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
 
-### 新 RTE {#new-rte}
+## 早期採用功能 {#early-adopter}
 
-新的 ProseMirror RTE 在連結對話框中具備頁面選擇器，現在可以在右側面板中使用。[此 RTE 具有靈活的設定選項。](/help/implementing/universal-editor/configure-rte.md)
+如果您有興趣測試下列即將推出的功能並分享您的回饋意見，請透過與您的Adobe相關聯的電子郵件地址，傳送電子郵件給您的Adobe ID客戶成功經理。
+
+* 已為內容片段實施淺層複製。
 
 ## 其他改善功能 {#other-improvements}
 
-* RTE未正確儲存在畫布上的問題已解決。
-* 已修正內容選擇器資料夾樹狀結構剪輯。
-* `componentId`現在會在新增動作期間提供。
+* 現在，當多個欄位在內容中變更時，屬性邊欄會同步。
+* 內容片段選擇器現在會在AEM 6.5執行個體上如預期般開啟。
+* 逸出鍵現在會關閉RTF編輯器中的對話方塊。
+* **移除元件**&#x200B;動作現在僅在選取元件時可用。
+* 現在會根據使用的例項開啟正確的（舊或新）內容片段編輯器(如果主機名稱是AEM as a Cloud Service模式，則使用新編輯器，否則使用舊版編輯器)。
+* 篩選器驗證已新增到重複動作。
+* 長標題現在會在屬性邊欄中截斷。
+* 現在可以正確處理超過10個值的多站台管理員陣列。
+* 現在可正確處理建立多個同名元件時的衝突錯誤。
+* 已新增值為>10的多站台管理員陣列處理。
