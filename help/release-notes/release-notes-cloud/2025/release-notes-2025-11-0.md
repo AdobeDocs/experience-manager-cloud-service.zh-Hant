@@ -1,20 +1,18 @@
 ---
-title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明。'
-description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明。'
-mini-toc-levels: 1
-exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
+title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.11.0 版發行說明。'
+description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.11.0 版發行說明。'
 feature: Release Information
 role: Admin
-source-git-commit: 6d86413449dbde8566f0f653071a2f29ab9c13ab
+source-git-commit: 2cc6f1bea3fc9cd56a20048db0ce5357dbb5ee0e
 workflow-type: tm+mt
-source-wordcount: '1459'
-ht-degree: 62%
+source-wordcount: '1461'
+ht-degree: 66%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Service 最新發行說明 {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service 2025.11.0 版發行說明 {#release-notes}
 
-以下章節概述 [!DNL Experience Manager] as a Cloud Service 目前 (最新) 版本的功能發行說明。
+以下章節概述 [!DNL Experience Manager] as a Cloud Service 2025.11.0 版的功能發行說明。
 
 >[!NOTE]
 >
@@ -28,7 +26,7 @@ ht-degree: 62%
 
 ## 發行日期 {#release-date}
 
-[!DNL Adobe Experience Manager]作為[!DNL Cloud Service]目前功能版本(2025.12.0)的發行日期是2025年12月11日。 下一個功能版本(2026.1.0)計畫於2026年1月29日發行。
+[!DNL Adobe Experience Manager]作為[!DNL Cloud Service]目前功能版本(2025.11.0)的發行日期是2025年11月20日。 下一個功能版本(2025.12.0)計畫於2025年12月11日發行。
 
 ## 維護版本發行說明 {#maintenance}
 
@@ -46,7 +44,7 @@ Have a look at the July 2025 Release Overview video for a summary of the feature
 
 ## AEM中的代理程式 {#agents-in-aem}
 
-AEM提供了一系列代理程式，可讓您加速內容建立並自動協調變更。 如需詳細資訊，請參閱[AEM代理程式概述](/help/ai-in-aem/agents/overview.md)。
+AEM提供了一系列代理程式，可讓您加速內容建立並自動協調變更。 如需詳細資訊，請參閱[代理程式概述](/help/ai-in-aem/agents/overview.md)。
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -111,7 +109,7 @@ With Forms Optimization, you get automated, data-driven recommendations and vari
 
 #### Java API 即將棄用 {#java-api-deprecation}
 
-數個已棄用的 API 已標記要於 8 月 31 日移除，因此不應再參照。如果在程式碼中偵測到過時的API使用方式，您將會收到動作中心通知，且在1月29日之後，Cloud Manager建置期間將會出現通知，強調移除使用方式的重要性。 請參閱[棄用文章](/help/release-notes/deprecated-removed-features.md#aem-apis)，了解完整的詳細資訊，但為了方便起見，這些 API 條列如下：
+數個已棄用的 API 已標記要於 8 月 31 日移除，因此不應再參照。如果在程式碼中偵測到過時的API使用方式，您將會收到動作中心通知，12月3日後，Cloud Manager建置期間將會顯示通知，強調移除使用方式的重要性。 請參閱[棄用文章](/help/release-notes/deprecated-removed-features.md#aem-apis)，了解完整的詳細資訊，但為了方便起見，這些 API 條列如下：
 
 +++ 展開以查看 Java API 淘汰內容
 
@@ -156,7 +154,7 @@ Adobe已於2025年10月14日將&#x200B;**Stage**&#x200B;和&#x200B;**Production*
 
 如 4 月的發行說明中所述，AEM Java 記錄必須遵循標準格式，以確保在所有客戶環境中皆進行可靠的監視。不再支援自訂記錄設定 (例如變更記錄格式、輸出檔案或預設記錄等級)。記錄必須保持導向預設檔案，並且必須保留 AEM 產品程式碼的預設記錄等級。如需完整詳情，請參閱[記錄文章](/help/implementing/developing/introduction/logging.md#configuration-loggers)。
 
-從&#x200B;**1月29日**&#x200B;開始，將忽略任何不支援的自訂記錄覆寫。 根據我們的分析，大多數客戶將不會受影響，而 Adobe 會直接聯絡其目前設定可能受影響的客戶。
+從&#x200B;**12月10日**&#x200B;開始，將忽略任何不支援的自訂記錄覆寫。 根據我們的分析，大多數客戶將不會受影響，而 Adobe 會直接聯絡其目前設定可能受影響的客戶。
 
 請審閱所有取決於自訂記錄行為的下游流程，並將其更新。例如：
 
@@ -198,6 +196,15 @@ Adobe已於2025年10月14日將&#x200B;**Stage**&#x200B;和&#x200B;**Production*
 
 若有興趣，請寄送電子郵件至 [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com)，簡短說明您的使用案例以及任何問題。
 
+<!--
+#### CDN Configuration for Edge Delivery Services (Beta Program) {#cdn-eds-beta}
+
+The Adobe-Managed CDN offers flexible configuration options, as described in the [Config Pipeline article](/help/operations/config-pipeline.md#configurations). 
+
+Now in beta, youcan deploy a config pipeline for features including CDN origin selectors, response and request transformations, CDN log forwarding and more. Please reach out to [aemcs-cdn-config-adopter@adobe.com](mailto:aemcs-cdn-config-adopter@adobe.com) with the details of your use case.
+
+-->
+
 #### Canary 生產部署，以便在接受即時流量之前測試程式碼 (Beta 版方案) {#canary-beta}
 
 向一般使用者公開之前，先使用僅限內部的測試流量驗證生產建置版本。運送至生產環境、僅路由 Canary 流量 (使用特殊標頭)、監視行為，然後升級至即時流量或復原，而不會影響客戶。
@@ -215,17 +222,17 @@ AI解答為訪客引進了一種與您的內容互動的新方式。 透過擷�
 
 若要要求參與或接收更新，請連絡[feedback-ai-answers@adobe.com](mailto:feedback-ai-answers@adobe.com)。
 
-#### RDE快照(Beta計畫) {#rde-snapshot-program}
-
-在Beta版中，快速開發環境(RDE)現在支援對程式碼和內容的目前狀態建立快照的功能，以便稍後復原。 在同步可能需要復原的程式碼，或在不同功能的開發之間切換時，此功能很實用。您也可以僅還原可變內容做為測試的已知起點。
-
-若您有興趣使用此功能並提供意見反應，請寄電子郵件給[aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com)。
-
-#### 使用AI加速AEM開發(Alpha計畫) {#ai-dev-alpha}
+#### 使用AI加速AEM開發(Alpha計畫)  {#ai-dev-alpha}
 
 AEM Java棧疊團隊越來越多地在Cursor、Claude Code、Visual Studio和IntelliJ等工具中使用AI輔助開發，以加快功能交付並提高計畫碼品質。 我們正在收集真實世界的體驗，以協助塑造未來Adobe支援的AI功能。
 
 透過傳送電子郵件至[aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com)，分享您團隊的工作成果，以及您希望Adobe提供的成果。
+
+#### RDE 快照 (Alpha 方案) {#rde-snapshot-program}
+
+在 Alpha 版本中，快速開發環境 (RDE) 現在支援對程式碼和內容的目前狀態進行快照的功能，這些快照可以在之後還原。在同步可能需要復原的程式碼，或在不同功能的開發之間切換時，此功能很實用。您也可以僅還原可變內容做為測試的已知起點。
+
+如果您有興趣對此功能提供意見，請寄送電子郵件至 [aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com)。
 
 #### 擴充應用程式效能監視 (APM) (Alpha 版方案) {#apm-alpha}
 
