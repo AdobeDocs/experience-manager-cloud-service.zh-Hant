@@ -56,7 +56,7 @@ ht-degree: 12%
 1. 執行下列任一項作業：
 
    * 在&#x200B;**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;主控台的&#x200B;**環境**&#x200B;卡片上，按一下&#x200B;**新增環境**。
-如果**新增環境**&#x200B;選項變暗（已停用），可能是因為缺少許可權或依賴授權的資源。
+如果&#x200B;**新增環境**&#x200B;選項變暗（已停用），可能是因為缺少許可權或依賴授權的資源。
 
      ![環境卡](assets/no-environments.png)
 
