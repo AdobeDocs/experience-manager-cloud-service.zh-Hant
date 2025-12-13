@@ -125,7 +125,7 @@ AEM Forms會優先使用下列方法來判斷最適化表單的地區設定：
 
    **在哪裡可以找到此資訊？**
 
-   如需尋找這些詳細資訊的逐步指示，請參閱Adobe Experience League文章&quot;[存取Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)&quot;。
+   如需尋找這些詳細資訊的逐步指示，請參閱Adobe Experience League文章&quot;[存取Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hant#accessing-git)&quot;。
 
    **您的專案已就緒！**
 
@@ -402,7 +402,7 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 ## 支援新本地化的最佳實務 {#best-practices}
 
 * Adobe建議您在建立最適化表單之後建立翻譯專案。 這能簡化本地化程式。
-* 當數值方塊和日期選擇器元件轉換為特定地區設定時，可能會出現格式問題。 為了緩解此問題，**語言**&#x200B;選項已納入[日期選擇器元件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-picker#format-tab)和[數值方塊元件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/numeric-box#formats-configure-tab)的「設定」對話方塊中。
+* 當數值方塊和日期選擇器元件轉換為特定地區設定時，可能會出現格式問題。 為了緩解此問題，**語言**&#x200B;選項已納入[日期選擇器元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-picker#format-tab)和[數值方塊元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/numeric-box#formats-configure-tab)的「設定」對話方塊中。
 
 
 * 處理新欄位：

@@ -32,7 +32,7 @@ ht-degree: 1%
 
 設定之後，這些工作流程就可以手動觸發，以完成定義的程式，或在使用者提交表單<!-- or [correspondence management](cm-overview.md) letter-->時以程式設計方式執行。<!-- With this enhanced AEM Workflow capabilities, [!DNL AEM Forms] offers two distinct, yet similar, capabilities. As part of your deployment strategy, you need to decide which one works for you. See a [comparison](capabilities-osgi-jee-workflows.md) of the Forms-centric AEM Workflows on OSGi and Process Management on JEE. Moreover, for the deployment topology see, [Architecture and deployment topologies for [!DNL AEM Forms]]((aem-forms-architecture-deployment.md). -->
 
-OSGi上的Forms導向工作流程延伸[AEM收件匣](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html#authoring)，並為AEM工作流程編輯器提供額外元件（步驟），以新增對[!DNL AEM Forms]導向工作流程的支援。<!-- The extended AEM Inbox has functionalities similar to [[!DNL AEM Forms] Workspace](introduction-html-workspace.md). Along with managing human-centric workflows (Approval, Review, and so on), you can use AEM workflows to automate [document services](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem)-related operations (for example, Generate PDF) and electronically signing (Adobe Sign) documents. -->
+OSGi上的Forms導向工作流程延伸[AEM收件匣](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html?lang=zh-Hant#authoring)，並為AEM工作流程編輯器提供額外元件（步驟），以新增對[!DNL AEM Forms]導向工作流程的支援。<!-- The extended AEM Inbox has functionalities similar to [[!DNL AEM Forms] Workspace](introduction-html-workspace.md). Along with managing human-centric workflows (Approval, Review, and so on), you can use AEM workflows to automate [document services](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=zh-Hant#extending-aem)-related operations (for example, Generate PDF) and electronically signing (Adobe Sign) documents. -->
 
 所有[!DNL AEM Forms]工作流程步驟都支援使用變數。 變數可讓工作流程步驟在執行階段跨步驟保留和傳遞中繼資料。 您可以建立不同型別的變數來儲存不同型別的資料。 您也可以建立變數集合（陣列），以儲存多個相關、相同型別資料的執行個體。 通常情況下，當您需要根據變數或變數集合持有的值來做出決定，或儲存您稍後在程式中需要的資訊時，會使用變數或變數集合。 如需有關在這些以Forms為中心的工作流程元件（步驟）中使用變數的詳細資訊，請參閱[在OSGi上以Forms為中心的工作流程 — 步驟參考](aem-forms-workflow-step-reference.md)。 如需建立和管理變數的詳細資訊，請參閱[AEM工作流程中的變數](variable-in-aem-workflows.md)。
 
@@ -73,9 +73,9 @@ OSGi上的Forms導向工作流程延伸[AEM收件匣](https://experienceleague.a
 
 ## 建立工作流程模型 {#create-a-workflow-model}
 
-工作流程模型包含商務處理的邏輯與流程。 它由一系列步驟組成。 這些步驟是AEM元件。 您可以利用引數和指令碼擴充工作流程步驟，以視需要提供更多功能與控制。 除了開箱即用的AEM步驟外，[!DNL AEM Forms]還提供一些步驟。 如需AEM和[!DNL AEM Forms]步驟的詳細清單，請參閱[AEM工作流程步驟參考](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem)和[OSGi上的Forms導向工作流程 — 步驟參考](aem-forms-workflow.md)。
+工作流程模型包含商務處理的邏輯與流程。 它由一系列步驟組成。 這些步驟是AEM元件。 您可以利用引數和指令碼擴充工作流程步驟，以視需要提供更多功能與控制。 除了開箱即用的AEM步驟外，[!DNL AEM Forms]還提供一些步驟。 如需AEM和[!DNL AEM Forms]步驟的詳細清單，請參閱[AEM工作流程步驟參考](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=zh-Hant#extending-aem)和[OSGi上的Forms導向工作流程 — 步驟參考](aem-forms-workflow.md)。
 
-AEM提供直覺式使用者介面，讓您使用提供的工作流程步驟建立工作流程模型。 如需建立工作流程模型的逐步指示，請參閱[建立工作流程模型](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/workflows/overview.html#workflows)。 下列範例提供逐步指示，讓您為核准與複查工作流程建立工作流程模型：
+AEM提供直覺式使用者介面，讓您使用提供的工作流程步驟建立工作流程模型。 如需建立工作流程模型的逐步指示，請參閱[建立工作流程模型](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/workflows/overview.html?lang=zh-Hant#workflows)。 下列範例提供逐步指示，讓您為核准與複查工作流程建立工作流程模型：
 
 >[!NOTE]
 >

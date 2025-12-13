@@ -15,10 +15,10 @@ ht-degree: 22%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/forms-groups-privileges-tasks.html) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/forms-groups-privileges-tasks.html?lang=zh-Hant) |
 | AEM as a Cloud Service  | 本文章 |
 
-您可以[建立群組](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing)，並將原則和[使用者](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing)指派給群組。 這些原則可控制屬於群組之使用者的許可權。
+您可以[建立群組](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=zh-Hant#accessing)，並將原則和[使用者](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=zh-Hant#accessing)指派給群組。 這些原則可控制屬於群組之使用者的許可權。
 
 設定[!DNL AEM Forms] as a Cloud Service後，下表列出的群組（例如[!DNL forms-users]和forms-power-user）便會自動可供指派：
 
