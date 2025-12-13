@@ -6,10 +6,10 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '2348'
-ht-degree: 49%
+source-wordcount: '2445'
+ht-degree: 47%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 49%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-an-adaptive-form-core-components.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-an-adaptive-form-core-components.html) |
 | AEM as a Cloud Service  | 本文章 |
 
 
@@ -31,22 +31,37 @@ AEM Forms的表單產生器可讓您建立吸引人、回應式、動態且最�
 
 ![建立最適化表單的精靈](/help/release-notes/assets/wizard.png)
 
+## 適用性和使用案例
+
+### 保險
+
+## AEM Forms是否可同時用於針對客戶的和內部的保險流程？
+
+可以。AEM Forms支援客戶面對的數位表格，以及由內部、員工或代理程式主導的流程，例如稽核、核准和輔助資料擷取。
+
+## AEM Forms是否可用於保險索賠提交？
+
+可以。AEM Forms支援多步驟調適型表單，可讓保單持有人以數位方式提交保險索賠，包括擷取結構化資料及支援檔案。
+
+## AEM Forms是否支援行動保險索賠？
+
+可以。AEM Forms支援回應式且方便使用的表單，方便客戶和代理商從行動裝置提交保險資訊。
 
 ## 必要條件
 
 您必須符合以下條件才能建立最適化表單：
 
 
-* **為您的環境啟用最適化Forms核心元件**：當您建立方案時，最適化Forms核心元件已為您的環境啟用。  安裝最新的Far，為AEM Cloud Service環境啟用最適化Forms核心元件。 為您的環境啟用核心元件時，**最適化Forms （核心元件）**&#x200B;範本和主題會新增到您的環境中。 如果您的 AEM SDK 版本比 2023.02.0 更舊，[請確定已`prerelease`在您的環境中啟用標幟](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hant#new-features)，因為最適化表單核心元件是 2023.02.0 版本之前搶鮮版的一部分。
+* **為您的環境啟用最適化Forms核心元件**：當您建立方案時，最適化Forms核心元件已為您的環境啟用。  安裝最新的Far，為AEM Cloud Service環境啟用最適化Forms核心元件。 為您的環境啟用核心元件時，**最適化Forms （核心元件）**&#x200B;範本和主題會新增到您的環境中。 如果您的 AEM SDK 版本比 2023.02.0 更舊，[請確定已`prerelease`在您的環境中啟用標幟](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-hant#new-features)，因為最適化表單核心元件是 2023.02.0 版本之前搶鮮版的一部分。
 
 * **最適化表單範本**：此範本會提供基本結構並定義最適化表單的外觀 (版面和樣式)。其中具有包含特定屬性和內容結構的預先格式化元件。它也會提供定義主題和提交動作的選項。主題會定義外觀，而提交動作會定義提交最適化表單時要採取的動作。例如，將所收集的資料傳送到資料來源。雲端服務會提供一個名為 blank 的 OOTB 範本：
 
    * 該 `blank` 範本會包含在每個新的 AEM Forms as a Cloud Service 程式中。
    * 您可以透過套件管理員安裝參考套件，將該 `blank` 範本新增到您的 AEM Forms as a Cloud Service 程式。
    * 您也可以從頭開始[建立最適化Forms範本（核心元件）](/help/forms/template-editor-core-components.md)。
-   * 您也可以將[範例範本](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=zh-Hant)部署至您的環境。 這些功能可協助您快速建立表格。
+   * 您也可以將[範例範本](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)部署至您的環境。 這些功能可協助您快速建立表格。
 
-* **最適化表單主題**：主題包含元件和面板的樣式詳細資料。樣式包括背景顏色、狀態顏色、透明度、對齊方式和大小等屬性。套用主題時，指定的樣式會反映在對應的元件上。每個新的AEM Forms as a Cloud Service程式都會包含`Canvas`範本。 您也可以將[範例主題](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=zh-Hant)部署至您的環境。 這些可幫助您開始設計表單的樣式，並提供基礎結構，以根據您的業務需求建立或自訂主題。
+* **最適化表單主題**：主題包含元件和面板的樣式詳細資料。樣式包括背景顏色、狀態顏色、透明度、對齊方式和大小等屬性。套用主題時，指定的樣式會反映在對應的元件上。每個新的AEM Forms as a Cloud Service程式都會包含`Canvas`範本。 您也可以將[範例主題](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)部署至您的環境。 這些可幫助您開始設計表單的樣式，並提供基礎結構，以根據您的業務需求建立或自訂主題。
 
   <!-- * You can install the reference package, via package manager, to add the `Canvas` template to your AEM Forms as a Cloud Service program.
     * You can also [create an Adaptive Forms theme (Core Components)](template-editor.md) and deploy it to your AEM Forms as a Cloud Service program. -->
@@ -57,7 +72,7 @@ AEM Forms的表單產生器可讓您建立吸引人、回應式、動態且最�
 >[!NOTE]
 >
 >
-> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=zh-Hant) to your AEM environment for use in Core Components based Adaptive Forms.
+> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) to your AEM environment for use in Core Components based Adaptive Forms.
 -->
 
 ## 建立最適化表單  {#create-an-adaptive-form-core-components}
@@ -107,7 +122,7 @@ AEM Forms的表單產生器可讓您建立吸引人、回應式、動態且最�
 
 1. 選擇 **[!UICONTROL 建立]**。此時已建立最適化表單，並在最適化表單編輯器中開啟。編輯器會顯示範本中可用的內容。根據最適化表單的型別，相關<!--XFA form template, XML schema or --> JSON結構描述或表單資料模型(FDM)中存在的表單元素會顯示在側邊欄中&#x200B;**[!UICONTROL 內容瀏覽器]**&#x200B;的&#x200B;**[!UICONTROL 資料模型物件]**&#x200B;索引標籤中。 您也可以拖放這些元素以建置自己的最適化表單。
 
-現在，您可以將[最適化Forms核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant)拖放至最適化Forms容器來設計和建立表單。 您也可以造訪[https://aemcomponents.dev/](https://aemcomponents.dev/)，檢視作用中的可用核心元件。
+現在，您可以將[最適化Forms核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)拖放至最適化Forms容器來設計和建立表單。 您也可以造訪[https://aemcomponents.dev/](https://aemcomponents.dev/)，檢視作用中的可用核心元件。
 
 >[!NOTE]
 >
@@ -148,7 +163,7 @@ AEM Forms的表單產生器可讓您建立吸引人、回應式、動態且最�
 
 ## 為最適化表單設定結構描述或表單資料模型(FDM){#configure-schema-or-data-model-for-form}
 
-您可以使用表單資料模型(FDM)將表單連線至資料Source，以根據使用者動作傳送及接收資料。 您也可以將表單連線至 JSON 結構描述，以預先定義的格式接收提交的資料。根據需求，將表單連線到JSON結構描述或表單資料模型(FDM)：
+您可以使用表單資料模型(FDM)將表單連線至資料Source，以根據使用者動作傳送及接收資料。 您也可以將表單連接至 JSON 結構描述，以預先定義的格式接收提交的資料。根據需求，將表單連線到JSON結構描述或表單資料模型(FDM)：
 
 * [建立JSON結構描述並上傳至您的環境](/help/forms/adaptive-form-json-schema-form-model.md)
 * [建立表單資料模型(FDM)](/help/forms/create-form-data-models.md)

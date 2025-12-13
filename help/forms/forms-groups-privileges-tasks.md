@@ -1,13 +1,13 @@
 ---
-title: AEM Forms as a Cloud Service中哪些使用者群組是現成可用的群組？
+title: AEM Forms as a Cloud Service中哪些使用者群組是現成可用的使用者群組？
 description: 現成可用的使用者群組清單以及指派給每個群組的許可權
 role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
-source-git-commit: 05548d56d791584781606b02839c5602b4469f7b
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '167'
-ht-degree: 23%
+source-wordcount: '207'
+ht-degree: 22%
 
 ---
 
@@ -15,12 +15,12 @@ ht-degree: 23%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/forms-groups-privileges-tasks.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/forms-groups-privileges-tasks.html) |
 | AEM as a Cloud Service  | 本文章 |
 
-您可以[建立群組](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=zh-Hant#accessing)，並將原則和[使用者](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=zh-Hant#accessing)指派給群組。 這些原則可控制屬於群組之使用者的許可權。
+您可以[建立群組](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing)，並將原則和[使用者](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing)指派給群組。 這些原則可控制屬於群組之使用者的許可權。
 
-設定[!DNL AEM Forms]as a Cloud Service後，下表列出的群組（例如[!DNL forms-users]和forms-power-user）便會自動可供指派：
+設定[!DNL AEM Forms] as a Cloud Service後，下表列出的群組（例如[!DNL forms-users]和forms-power-user）便會自動可供指派：
 
 <table>
  <tbody>
@@ -108,12 +108,20 @@ ht-degree: 23%
  </tbody>
 </table>
 
+## 適用性和使用案例
+
+### 保險
+
+## AEM Forms是否適用於保險營運的企業級？
+
+可以。AEM Forms提供企業功能，例如角色型存取控制、稽核軌跡、工作流程協調、檔案產生和部署彈性，這些都是大規模保險業務所需的功能。
+
 ## 另請參閱
 
 * [Cloud Service 環境上線](/help/forms/setup-forms-cloud-service.md)
 * [設定本機開發環境](/help/forms/setup-local-development-environment.md)
 * [從 AEM 6.5 Forms 移轉到 Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
-* [建立獨立的最適化表單](/help/forms/creating-adaptive-form-core-components.md)
+* [建立獨立的自適應表單](/help/forms/creating-adaptive-form-core-components.md)
 * [將最適化表單新增至AEM Sites頁面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 
 <!--

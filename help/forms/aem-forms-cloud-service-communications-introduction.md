@@ -5,10 +5,10 @@ Keywords: document generation, PDF manipulation, document security, batch proces
 feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, Developer, User
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 8803896bf728524833a0dde004ddaa2e8b6bb103
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '2663'
-ht-degree: 24%
+source-wordcount: '2720'
+ht-degree: 27%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 24%
 
 > **版本可用性**
 >
-> * **AEM 6.5**： [AEM檔案服務總覽](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html?lang=zh-Hant)
+> * **AEM 6.5**： [AEM檔案服務總覽](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html)
 > * **AEM as a Cloud Service**：此文章
 
 ## 簡介
@@ -41,6 +41,18 @@ AEM Forms as a Cloud Service中的通訊API可幫助您根據業務需求建立�
 | 將範本與多種格式(包括PDF和列印格式)的資料合併，以產生個人化檔案。 | 以程式設計方式組合、重新排列和驗證PDF檔案，以建立新的檔案套件。 | 從PDF檔案擷取屬性、中繼資料和內容，以供進一步處理。 | 轉換不同格式的檔案，包括針對封存需求進行PDF/A合規性驗證。 | 套用數位簽章、憑證和加密，以保全和保護檔案。 |
 
 [API參考檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)提供API提供的所有引數、驗證方法和各種服務的詳細資訊。 API參考檔案也以.yaml格式提供。 您可以下載.yaml並將其上傳到Postman以檢查API的功能。
+
+## 適用性和使用案例
+
+### 保險
+
+## AEM Forms可以產生保單檔案嗎？
+
+可以。AEM Forms可使用範本和透過表單擷取的結構化資料來產生原則相關檔案。
+
+## AEM Forms可以大規模處理保險業務嗎？
+
+可以。若在Adobe Managed Services或私密雲端上使用建議的架構進行部署，AEM Forms可支援大量表單提交和企業規模工作負載。
 
 ## 檔案產生
 
@@ -77,7 +89,7 @@ Communications document generation API可協助結合範本(XFA或PDF)與客戶�
 
 檔案產生API會傳回產生的PDF檔案或AFP檔案。 您也可以選擇上傳產生的PDF至Azure Blob儲存體。
 
-<span class="preview">使用Document Generation API將產生的PDF上傳到Azure Blob Storage功能在[早期採用者計畫](/help/forms/early-access-ea-features.md)之下。 您可以從您的官方電子郵件ID寫信到aem-forms-ea@adobe.com ，以加入率先採用者計畫並請求存取該功能。</span>
+<span class="preview">使用Document Generation API將產生的PDF上傳到Azure Blob Storage功能在[早期採用者計畫](/help/forms/early-access-ea-features.md)之下。 您可以使用官方電子郵件 ID 寫信至 aem-forms-ea@adobe.com，以加入早期採用者計劃並要求存取該功能。</span>
 
 #### 建立 PostScript (PS)、印表機命令語言 (PCL)、Zebra 列印語言 (ZPL) 文件 {#create-PS-PCL-ZPL-documents}
 
@@ -124,7 +136,7 @@ Communications document generation API可協助結合範本(XFA或PDF)與客戶�
 
 ## 檔案擷取
 
-<span class="preview">檔案擷取功能屬於早期採用者計畫。 您可以從您的官方電子郵件ID寫信到aem-forms-ea@adobe.com ，以加入率先採用者計畫並請求存取該功能。</span>
+<span class="preview">檔案擷取功能屬於早期採用者計畫。 您可以使用官方電子郵件 ID 寫信至 aem-forms-ea@adobe.com，以加入早期採用者計劃並要求存取該功能。</span>
 
 檔案擷取服務可讓您取得PDF檔案的屬性，例如使用許可權、PDF屬性和中繼資料。 檔案擷取功能包括：
 
@@ -142,7 +154,7 @@ Communications document generation API可協助結合範本(XFA或PDF)與客戶�
 
 ### 將PDF轉換為XDP {#convert-pdf-to-xdp}
 
-<span class="preview">將PDF轉換成XDP功能屬於早期採用者計畫。 您可以從您的官方電子郵件ID寫信到aem-forms-ea@adobe.com ，以加入率先採用者計畫並請求存取該功能。</span>
+<span class="preview">將PDF轉換成XDP功能屬於早期採用者計畫。 您可以使用官方電子郵件 ID 寫信至 aem-forms-ea@adobe.com，以加入早期採用者計劃並要求存取該功能。</span>
 
 將PDF檔案轉換為XDP檔案。 若要將PDF檔案成功轉換為XDP檔案，PDF檔案必須在字典中包含XFA資料流。
 
@@ -161,7 +173,7 @@ DocAssurance服務包含簽名和加密API：
 * 從PDF檔案中的指定簽名欄位中移除簽名
 * 從PDF檔案刪除指定的簽名欄位
 
-<span class="preview">從指定的簽章欄位中移除簽章，並從PDF檔案中刪除指定的簽章欄位（可在早期採用者程式下取得）。 您可以從您的官方電子郵件ID寫信到aem-forms-ea@adobe.com ，以加入率先採用者計畫並請求存取該功能。</span>
+<span class="preview">從指定的簽章欄位中移除簽章，並從PDF檔案中刪除指定的簽章欄位（可在早期採用者程式下取得）。 您可以使用官方電子郵件 ID 寫信至 aem-forms-ea@adobe.com，以加入早期採用者計劃並要求存取該功能。</span>
 
 ### 加密API
 
@@ -182,7 +194,7 @@ DocAssurance服務包含簽名和加密API：
 
 #### 使用許可權API (Reader擴充功能)
 
-<span class="preview">使用許可權(Reader擴充功能)功能屬於率先採用者計畫。 您可以從您的官方電子郵件ID寫信到aem-forms-ea@adobe.com ，以加入率先採用者計畫並請求存取該功能。</span>
+<span class="preview">使用許可權(Reader擴充功能)功能屬於率先採用者計畫。 您可以使用官方電子郵件 ID 寫信至 aem-forms-ea@adobe.com，以加入早期採用者計劃並要求存取該功能。</span>
 
 使用許可權功能可讓您組織透過擴充具有其他使用許可權的PDF Reader功能，輕鬆共用互動式Adobe Reader檔案。 此服務可與Adobe Reader 7.0或更新版本搭配使用，並在PDF檔案中新增使用許可權。 此動作會啟動使用Adobe Reader開啟PDF檔案時通常無法使用的功能，例如新增註釋至檔案、填寫表單及儲存檔案。
 

@@ -9,9 +9,9 @@ role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: f0fec4a9-b214-4931-bf09-5898b082481e
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '2335'
+source-wordcount: '2489'
 ht-degree: 1%
 
 ---
@@ -26,13 +26,13 @@ ht-degree: 1%
 
 ## OSGi上Forms中心工作流程簡介 {#introduction-to-forms-centric-workflow-on-osgi}
 
-您可以使用AEM工作流程快速建立最適化Forms型工作流程。 這些工作流程可用於稽核和核准、業務流程流、啟動檔案服務、與Adobe Sign簽名工作流程整合以及類似操作。 例如，信用卡申請處理、員工休假核准工作流程、將表單儲存為PDF檔案。 此外，這些工作流程也可在組織內或跨網路防火牆使用。
+您可以使用AEM工作流程快速建立最適化Forms型工作流程。 這些工作流程可用於審查和核准、業務流程流程、啟動檔案服務、與Adobe Sign簽名工作流程整合以及類似操作。 例如，信用卡申請處理、員工休假核准工作流程、將表單儲存為PDF檔案。 此外，這些工作流程也可在組織內或跨網路防火牆使用。
 
-透過OSGi上的Forms工作流程，您可以在OSGi棧疊上快速建置和部署各種工作的工作流程，而不需要在JEE棧疊上安裝完整的流程管理功能。 工作流程的開發和管理使用熟悉的AEM Workflow和AEM Inbox功能。 工作流程構成了自動化跨越多個軟體系統、網路、部門甚至組織的真實業務流程的基礎。
+透過OSGi上的Forms工作流程，您可以在OSGi棧疊上快速建置和部署各種工作的工作流程，而不需要在JEE棧疊上安裝完整的流程管理功能。 工作流程的開發和管理使用熟悉的AEM工作流程和AEM收件匣功能。 工作流程構成了自動化跨越多個軟體系統、網路、部門甚至組織的真實業務流程的基礎。
 
 設定之後，這些工作流程就可以手動觸發，以完成定義的程式，或在使用者提交表單<!-- or [correspondence management](cm-overview.md) letter-->時以程式設計方式執行。<!-- With this enhanced AEM Workflow capabilities, [!DNL AEM Forms] offers two distinct, yet similar, capabilities. As part of your deployment strategy, you need to decide which one works for you. See a [comparison](capabilities-osgi-jee-workflows.md) of the Forms-centric AEM Workflows on OSGi and Process Management on JEE. Moreover, for the deployment topology see, [Architecture and deployment topologies for [!DNL AEM Forms]]((aem-forms-architecture-deployment.md). -->
 
-OSGi上的Forms導向工作流程延伸[AEM收件匣](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html?lang=zh-Hant#authoring)，並為AEM工作流程編輯器提供額外元件（步驟），以新增對[!DNL AEM Forms]導向工作流程的支援。<!-- The extended AEM Inbox has functionalities similar to [[!DNL AEM Forms] Workspace](introduction-html-workspace.md). Along with managing human-centric workflows (Approval, Review, and so on), you can use AEM workflows to automate [document services](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=zh-Hant#extending-aem)-related operations (for example, Generate PDF) and electronically signing (Adobe Sign) documents. -->
+OSGi上的Forms導向工作流程延伸[AEM收件匣](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html#authoring)，並為AEM工作流程編輯器提供額外元件（步驟），以新增對[!DNL AEM Forms]導向工作流程的支援。<!-- The extended AEM Inbox has functionalities similar to [[!DNL AEM Forms] Workspace](introduction-html-workspace.md). Along with managing human-centric workflows (Approval, Review, and so on), you can use AEM workflows to automate [document services](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem)-related operations (for example, Generate PDF) and electronically signing (Adobe Sign) documents. -->
 
 所有[!DNL AEM Forms]工作流程步驟都支援使用變數。 變數可讓工作流程步驟在執行階段跨步驟保留和傳遞中繼資料。 您可以建立不同型別的變數來儲存不同型別的資料。 您也可以建立變數集合（陣列），以儲存多個相關、相同型別資料的執行個體。 通常情況下，當您需要根據變數或變數集合持有的值來做出決定，或儲存您稍後在程式中需要的資訊時，會使用變數或變數集合。 如需有關在這些以Forms為中心的工作流程元件（步驟）中使用變數的詳細資訊，請參閱[在OSGi上以Forms為中心的工作流程 — 步驟參考](aem-forms-workflow-step-reference.md)。 如需建立和管理變數的詳細資訊，請參閱[AEM工作流程中的變數](variable-in-aem-workflows.md)。
 
@@ -40,18 +40,42 @@ OSGi上的Forms導向工作流程延伸[AEM收件匣](https://experienceleague.a
 
 ![introduction-to-aem-forms-workflow](assets/introduction-to-aem-forms-workflow.jpg)
 
+## 適用性和使用案例
+
+### 保險
+
+## AEM Forms是否支援保險核准工作流程？
+
+可以。AEM Forms支援以工作流程為基礎的稽核和核准，作為保險流程的一部分，啟用調整者稽核、經理核准和重新工作回圈。
+
+## AEM Forms是否支援保險的製造商檢查程式流程？
+
+可以。AEM Forms工作流程可設定為支援製作者 — 檢查者模式，確保資料輸入與核准角色之間的職責分離。
+
+## AEM Forms是否可追蹤保險索賠或申請的狀態？
+
+可以。AEM Forms工作流程可讓保險公司追蹤業務流程不同階段的表單提交和處理狀態。
+
+## AEM Forms是否支援包銷工作流程？
+
+是，且具有工作流程與整合。 AEM Forms支援工作流程導向的流程和後端整合，好讓應用程式資料可流入承保和決策系統。
+
+## AEM Forms是否支援保險流程的稽核軌跡？
+
+可以。AEM Forms透過工作流程歷史記錄、存取控制項和系統記錄支援稽核能力，可協助保險公司滿足內部和外部稽核需求。
+
 ## 開始之前 {#before-you-start}
 
 * 工作流程是真實世界業務流程的表示法。 讓您的真實商業程式與商業程式參與者清單隨時待命。 此外，在開始建立工作流程之前，請準備好附屬資料(最適化Forms、PDF檔案等)。
-* 一個工作流程可以有多個階段。 這些階段會顯示在AEM收件匣中，並協助報告工作流程的進度。 將您的業務流程劃分為邏輯階段。
-* 您可以設定AEM Workflows的指派工作步驟，以傳送電子郵件通知給使用者或受指派人。 因此，[啟用電子郵件通知](#configure-email-service)。
-* 工作流程也可以使用Adobe簽章進行數位簽章。 如果您打算在工作流程中使用Adobe Sign，請先為 [!DNL AEM Forms][&#128279;](adobe-sign-integration-adaptive-forms.md)設定Adobe Sign，然後再在工作流程中使用。
+* 一個工作流程可以有多個階段。 這些階段會顯示在AEM收件匣中，並有助於報告工作流程的進度。 將您的業務流程劃分為邏輯階段。
+* 您可以設定AEM工作流程的指派工作步驟，以傳送電子郵件通知給使用者或受指派人。 因此，[啟用電子郵件通知](#configure-email-service)。
+* 工作流程也可以使用Adobe sign進行數位簽名。 如果您打算在工作流程中使用Adobe Sign，請先為[設定 [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md)的Adobe Sign，然後再在工作流程中使用。
 
 ## 建立工作流程模型 {#create-a-workflow-model}
 
-工作流程模型包含商務處理的邏輯與流程。 它由一系列步驟組成。 這些步驟是AEM元件。 您可以利用引數和指令碼擴充工作流程步驟，以視需要提供更多功能與控制。 除了開箱即用的AEM步驟外，[!DNL AEM Forms]還提供一些步驟。 如需AEM和[!DNL AEM Forms]步驟的詳細清單，請參閱[AEM工作流程步驟參考](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=zh-Hant#extending-aem)和[OSGi上的Forms導向工作流程 — 步驟參考](aem-forms-workflow.md)。
+工作流程模型包含商務處理的邏輯與流程。 它由一系列步驟組成。 這些步驟是AEM元件。 您可以利用引數和指令碼擴充工作流程步驟，以視需要提供更多功能與控制。 除了開箱即用的AEM步驟外，[!DNL AEM Forms]還提供一些步驟。 如需AEM和[!DNL AEM Forms]步驟的詳細清單，請參閱[AEM工作流程步驟參考](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem)和[OSGi上的Forms導向工作流程 — 步驟參考](aem-forms-workflow.md)。
 
-AEM提供直覺式使用者介面，讓您使用提供的工作流程步驟建立工作流程模型。 如需建立工作流程模型的逐步指示，請參閱[建立工作流程模型](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/workflows/overview.html?lang=zh-Hant#workflows)。 下列範例提供逐步指示，讓您為核准與複查工作流程建立工作流程模型：
+AEM提供直覺式使用者介面，讓您使用提供的工作流程步驟建立工作流程模型。 如需建立工作流程模型的逐步指示，請參閱[建立工作流程模型](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/workflows/overview.html#workflows)。 下列範例提供逐步指示，讓您為核准與複查工作流程建立工作流程模型：
 
 >[!NOTE]
 >
@@ -59,11 +83,11 @@ AEM提供直覺式使用者介面，讓您使用提供的工作流程步驟建�
 
 ### 建立核准和稽核工作流程的模型 {#create-a-model-for-an-approval-and-review-workflow}
 
-核准和稽核工作流程適用於需要人為干預才能做出決定的任務。 下列範例會建立由前台銀行代理商填寫的按揭貸款申請的工作流程模型。 填妥應用程式後，就會傳送以進行核准。 稍後會使用Adobe Sign將核准的申請傳送給申請者，以索取電子簽章。
+核准和稽核工作流程適用於需要人為干預才能做出決定的任務。 下列範例會建立由前台銀行代理商填寫的按揭貸款申請的工作流程模型。 填妥應用程式後，就會傳送以進行核准。 稍後，核准的申請會使用Adobe Sign傳送給申請人以索取電子簽章。
 
 此範例可作為以下附加的套件提供。 使用封裝管理員匯入並安裝範例。 您也可以執行下列步驟，手動建立應用程式的工作流程模型：
 
-此範例會建立工作流程模型，作為前台銀行代理商填寫的貸款應用程式。 填寫後，將傳送申請以供核准。 稍後，核准的應用程式會傳送給客戶，以使用Adobe Sign進行電子簽章。 您可以使用封裝管理員匯入及安裝範例。
+此範例會建立工作流程模型，作為前台銀行代理商填寫的貸款應用程式。 填寫後，將傳送申請以供核准。 稍後，核准的應用程式會傳送給客戶，以供使用Adobe Sign進行電子簽章。 您可以使用封裝管理員匯入及安裝範例。
 
 [取得檔案](assets/example-mortgage-loan-application.zip)
 
@@ -78,8 +102,8 @@ AEM提供直覺式使用者介面，讓您使用提供的工作流程步驟建�
 1. 啟用電子郵件通知。 您可以在OSGi上設定以Forms為中心的工作流程，以傳送電子郵件通知給使用者或受指派人。 執行以下設定以啟用電子郵件通知：
 
    1. 前往`https://[server]:[port]/system/console/configMgr`的AEM設定管理員。
-   1. 開啟&#x200B;**[!UICONTROL 天CQ郵件服務]**&#x200B;設定。 指定&#x200B;**[!UICONTROL SMTP伺服器主機名稱]**、**[!UICONTROL SMTP伺服器連線埠]**&#x200B;和&#x200B;**[!UICONTROL 「寄件者」位址]**&#x200B;欄位的值。 按一下「**[!UICONTROL 儲存]**」。
-   1. 開啟&#x200B;**[!UICONTROL Day CQ Link Externalizer]**&#x200B;設定。 在&#x200B;**[!UICONTROL 網域]**&#x200B;欄位中，指定本機、作者和發佈執行個體的實際主機名稱/IP位址和連線埠號碼。 按一下「**[!UICONTROL 儲存]**」。
+   1. 開啟&#x200B;**[!UICONTROL 天CQ郵件服務]**&#x200B;設定。 指定&#x200B;**[!UICONTROL SMTP伺服器主機名稱]**、**[!UICONTROL SMTP伺服器連線埠]**&#x200B;和&#x200B;**[!UICONTROL 「寄件者」位址]**&#x200B;欄位的值。 按一下&#x200B;**[!UICONTROL 儲存]**。
+   1. 開啟&#x200B;**[!UICONTROL Day CQ Link Externalizer]**&#x200B;設定。 在&#x200B;**[!UICONTROL 網域]**&#x200B;欄位中，指定本機、作者和發佈執行個體的實際主機名稱/IP位址和連線埠號碼。 按一下&#x200B;**[!UICONTROL 儲存]**。
 
 1. 建立工作流程階段。 一個工作流程可以有多個階段。 這些階段會顯示在AEM收件匣中，並報告工作流程的進度。
 
@@ -87,13 +111,13 @@ AEM提供直覺式使用者介面，讓您使用提供的工作流程步驟建�
 
 1. 將&#x200B;**指派任務**&#x200B;步驟瀏覽器拖放至工作流程模型。 使其成為模型的第一步。
 
-   指派任務元件會指派由工作流程建立的任務給使用者或群組。 除了指派工作之外，您也可以使用元件來指定工作的最適化表單或非互動式PDF。 最適化表單必須接受使用者的輸入，且非互動式PDF，或唯讀最適化表單僅用於稽核工作流程。
+   指派任務元件會指派由工作流程建立的任務給使用者或群組。 除了指派工作之外，您也可以使用元件，為該工作指定最適化表單或非互動式PDF。 若要接受使用者的輸入，且非互動式PDF或唯讀的最適化表單必須使用於僅供檢閱的工作流程，最適化表單為必要項。
 
    您也可以使用步驟來控制工作的行為。 例如，建立自動記錄檔案、將任務指派給特定使用者或群組、提交資料的路徑、要預先填入的資料路徑以及預設動作。 如需指派工作步驟選項的詳細資訊，請參閱OSGi上的[Forms導向工作流程 — 步驟參考](aem-forms-workflow.md)檔案。
 
    ![工作流程編輯器](assets/workflow-editor.png)
 
-   以按揭應用程式為例，設定指派工作步驟以使用唯讀最適化表單，並在工作完成後顯示PDF檔案。 此外，選取允許核准貸款請求的使用者群組。 在&#x200B;**動作**&#x200B;索引標籤上，停用&#x200B;**提交**&#x200B;選項。 建立String資料型別的&#x200B;**actionTaken**&#x200B;變數，並將變數指定為&#x200B;**路由變數**。 例如，actionTaken。 此外，請新增核准與拒絕路由。 路由會在AEM收件匣中顯示為個別的動作（按鈕）。 工作流程會根據使用者點選的動作（按鈕）選取分支。
+   以按揭應用程式為例，設定指派工作步驟以使用唯讀調適型表單，並在工作完成後顯示PDF檔案。 此外，選取允許核准貸款請求的使用者群組。 在&#x200B;**動作**&#x200B;索引標籤上，停用&#x200B;**提交**&#x200B;選項。 建立String資料型別的&#x200B;**actionTaken**&#x200B;變數，並將變數指定為&#x200B;**路由變數**。 例如，actionTaken。 此外，請新增核准與拒絕路由。 路由會在AEM收件匣中顯示為個別的動作（按鈕）。 工作流程會根據使用者點選的動作（按鈕）選取分支。
 
    您可以為設定的指派工作步驟的所有欄位（例如，抵押應用程式）匯入範例套件（可在區段開頭下載）。
 
@@ -105,7 +129,7 @@ AEM提供直覺式使用者介面，讓您使用提供的工作流程步驟建�
 
    分支1 **的**&#x200B;路由運算式
 
-   當使用者在AEM收件匣中點選&#x200B;**核准**&#x200B;時，分支1會啟動。
+   當使用者在AEM收件匣中點選&#x200B;**核准**&#x200B;時，分支1會啟用。
 
    ![OR分割範例](assets/orsplit_branch1_active_new.png)
 
@@ -115,7 +139,7 @@ AEM提供直覺式使用者介面，讓您使用提供的工作流程步驟建�
 
    ![OR分割範例](assets/orsplit_branch2_active_new.png)
 
-   如需有關使用變數建立路由運算式的資訊，請參閱 [!DNL AEM Forms] 工作流程[&#128279;](variable-in-aem-workflows.md)中的變數。
+   如需有關使用變數建立路由運算式的資訊，請參閱[工作流程 [!DNL AEM Forms] 中的](variable-in-aem-workflows.md)變數。
 
 1. 新增其他工作流程步驟以建置商業邏輯。
 
@@ -158,7 +182,7 @@ AEM提供直覺式使用者介面，讓您使用提供的工作流程步驟建�
   </tr>
   <tr>
    <td>最適化表單</td>
-   <td><p>指定自適應表單的路徑。 當使用者啟動應用程式時，會顯示指定的調適型表單。</p> <p><strong>注意</strong>：工作流程應用程式不支援超過一頁的表單和PDF檔案，或需要在Apple iPad上捲動。 在Apple iPad上開啟應用程式，且最適化表單或PDF檔案長於頁面時，第二頁的表單欄位和內容會遺失。</p> </td>
+   <td><p>指定自適應表單的路徑。 當使用者啟動應用程式時，會顯示指定的調適型表單。</p> <p><strong>注意</strong>：工作流程應用程式不支援超過一頁的表單和PDF檔案，或需要在Apple iPad上捲動。 在Apple iPad上開啟應用程式，且最適化表單或PDF檔案超過一頁時，第二頁的表單欄位和內容會遺失。</p> </td>
   </tr>
   <tr>
    <td>存取群組</td>

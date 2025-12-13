@@ -1,14 +1,14 @@
 ---
-title: 如何預先填寫最適化表單欄位？
+title: 如何預填自適應表單欄位？
 description: 使用現有資料預先填寫最適化表單的欄位，使用者可以使用其社交設定檔登入，預先填寫表單中的基本資訊。
 topic-tags: develop
 feature: Adaptive Forms, Foundation Components
 exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
 role: User, Developer
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '2007'
-ht-degree: 1%
+source-wordcount: '2044'
+ht-degree: 2%
 
 ---
 
@@ -16,16 +16,24 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-> Adobe建議針對[建立新的Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md)或[將Adaptive Forms新增至AEM Sites頁面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)，使用現代且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文說明使用基礎元件製作最適化Forms的舊方法。
+> Adobe建議針對[建立新的Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)或[將Adaptive Forms新增至AEM Sites頁面](/help/forms/creating-adaptive-form-core-components.md)，使用現代且可擴充的資料擷取[核心元件](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文說明使用基礎元件製作最適化Forms的舊方法。
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html) |
 | AEM as a Cloud Service  | 本文章 |
 
 ## 簡介 {#introduction}
 
 您可以使用現有資料預先填寫最適化表單的欄位。 當使用者開啟表單時，這些欄位的值將被預填。 若要在調適型表單中預先填入資料，請遵循預先填入調適型Forms資料結構的格式，將使用者資料填入為預先填入XML/JSON。
+
+## 適用性和使用案例
+
+### 保險
+
+## AEM Forms可以預先填入保險應用程式資料嗎？
+
+可以。AEM Forms支援使用後端資料來源預先填寫表單欄位，讓保險公司可重複使用現有的客戶或保單資料，並減少手動輸入次數。
 
 ## 預填資料的結構 {#the-prefill-structure}
 
@@ -136,7 +144,7 @@ Prefill-Submit-Data-ContentPackage.zip
 
 >[!NOTE]
 >
->建議不要在繫結面板(具有非空白`bindRef`且已透過從Sidekick或資料來源標籤拖曳元件而建立的面板)中使用未繫結欄位。 這可能會導致這些未繫結欄位的資料遺失。 此外，建議整個表單中的欄位名稱必須是唯一的，尤其是未繫結的欄位。
+>建議不要在繫結面板(具有非空白`bindRef`且已透過從Sidekick或「資料來源」索引標籤拖曳元件而建立的面板)中使用未繫結欄位。 這可能會導致這些未繫結欄位的資料遺失。 此外，建議整個表單中的欄位名稱必須是唯一的，尤其是未繫結的欄位。
 
 #### 不含afData和afBoundData包裝函式的範例 {#an-example-without-afdata-and-afbounddata-wrapper}
 
@@ -207,12 +215,12 @@ Prefill-Submit-Data-ContentPackage.zip
 
 >[!NOTE]
 >
-> 在繫結面板(具有非空白bindRef的面板，這些面板是透過從Sidekick或資料來源標籤拖曳元件而建立的)中使用未繫結欄位，是&#x200B;**不**&#x200B;建議，因為它可能會導致未繫結欄位的資料遺失。 建議在表單中設定唯一的欄位名稱，尤其是未繫結欄位。
+> 不建議在繫結面板(具有非空白bindRef的面板，這些面板是從Sidekick或「資料來源」索引標籤拖曳元件而建立的)中使用未繫結欄位，因為這可能會造成未繫結欄位的資料遺失。**** 建議在表單中設定唯一的欄位名稱，尤其是未繫結欄位。
 >
 
 ### 無表單模型的最適化表單 {#adaptive-form-with-no-form-model}
 
-針對沒有表單模型的最適化Forms，所有欄位的資料都在`<afUnboundData> tag`的`<data>`標籤下。
+針對沒有表單模型的最適化Forms，所有欄位的資料都在`<data>`的`<afUnboundData> tag`標籤下。
 
 此外，請注意下列事項：
 
@@ -239,7 +247,7 @@ Prefill-Submit-Data-ContentPackage.zip
 
 ## 設定預填服務 {#configuring-prefill-service-using-configuration-manager}
 
-使用&#x200B;**預設預填服務組態**&#x200B;的`alloweddataFileLocations`屬性來設定資料檔的位置，或資料檔位置的regex （規則運算式）。
+使用`alloweddataFileLocations`預設預填服務組態&#x200B;**的**&#x200B;屬性來設定資料檔的位置，或資料檔位置的regex （規則運算式）。
 
 下列JSON檔案顯示範例：
 
@@ -249,7 +257,7 @@ Prefill-Submit-Data-ContentPackage.zip
   }
 ```
 
-若要設定組態的值，請[使用AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=zh-Hant#generating-osgi-configurations-using-the-aem-sdk-quickstart)產生OSGi組態，然後[將組態](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=zh-Hant#deployment-process)部署至您的Cloud Service執行個體。
+若要設定組態的值，請[使用AEM SDK產生OSGi組態](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=zh-Hant#generating-osgi-configurations-using-the-aem-sdk-quickstart)並[將組態](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=zh-Hant#deployment-process)部署至您的Cloud Service執行個體。
 
 >[!NOTE]
 >
@@ -309,7 +317,7 @@ https://`servername`/content/forms/af/abc.html?wcmmode=disabled&dataRef=service:
 
 ### 在slingRequest中設定資料屬性 {#setting-data-attribute-in-slingrequest}
 
-您也可以在`slingRequest`中設定`data`屬性，其中`data`屬性是包含XML或JSON的字串，如下列範常式式碼所示（範例為XML）：
+您也可以在`data`中設定`slingRequest`屬性，其中`data`屬性是包含XML或JSON的字串，如下列範常式式碼所示（範例為XML）：
 
 ```javascript
 <%
@@ -346,7 +354,7 @@ https://`servername`/content/forms/af/abc.html?wcmmode=disabled&dataRef=service:
 
 預填服務是一項OSGi服務，會透過OSGi套件組合封裝。 您建立OSGi套件組合，將其上傳並安裝至[!DNL AEM Forms]套件組合。 開始建立套件組合之前：
 
-- [下載 [!DNL AEM Forms] 使用者端SDK](https://helpx.adobe.com/tw/aem-forms/kb/aem-forms-releases.html)
+- [下載 [!DNL AEM Forms] 使用者端SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)
 - 下載範本套件
 
 - 將資料（預填資料）檔案放入crx存放庫中。 您可以將檔案放置在crx-repository的\contents資料夾中的任何位置。
@@ -392,4 +400,4 @@ You can configure the [!DNL AEM Forms] server to perform the data merge action a
   * To disable, run the following cURL command:
     `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=false \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
 
-   To take full advantage of the prepopulate data at client option, update your prefill service to return [FileAttachmentMap](https://helpx.adobe.com/tw/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) and [CustomContext](https://helpx.adobe.com/tw/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) -->
+   To take full advantage of the prepopulate data at client option, update your prefill service to return [FileAttachmentMap](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) and [CustomContext](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) -->

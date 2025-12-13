@@ -4,9 +4,9 @@ description: 瞭解如何為最適化Forms核心元件的記錄檔案(DoR)產生
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '3244'
+source-wordcount: '3305'
 ht-degree: 1%
 
 ---
@@ -18,6 +18,18 @@ ht-degree: 1%
 填寫或提交表單時，您可以以列印或檔案格式來保留表單的記錄。 此記錄稱為記錄檔案(DoR)。 這是一份容易列印的已提交表格。 您也可以參考記錄檔案以瞭解客戶在稍後日期填寫的資訊，或使用記錄檔案以PDF格式將表單和內容一起封存。
 
 ![記錄檔案](assets/document-of-record.png)
+
+## 適用性和使用案例
+
+### 保險
+
+## AEM Forms可以產生保險索賠檔案嗎？
+
+可以。AEM Forms支援產生記錄檔案(DoR)，讓保險公司能根據提交的表單資料產生PDF和記錄。
+
+## AEM Forms產生的檔案是否適用於稽核？
+
+可以。AEM Forms支援一致的檔案產生、控制存取和可追蹤性，這些對於稽核和合規性要求至關重要。
 
 為了建立記錄檔案，會將XFA或Acroform型範本與透過最適化表單收集的資料合併。 您可以自動或依需求產生記錄檔案。 隨選選項可讓您指定自訂XFA或Acroform型範本，以提供記錄檔案的自訂外觀。
 
@@ -135,7 +147,7 @@ The form developer binds Adaptive Forms fields with corresponding Document of Re
 
 現在，當提交最適化表單時，會產生更新的記錄檔案。
 
-![已更新 — &#x200B;](assets/we-retail-new-invoice-sent-to-customer.png)
+![已更新 — ](assets/we-retail-new-invoice-sent-to-customer.png)
 
 ## 使用記錄檔案時的主要考量事項 {#key-considerations-when-working-with-document-of-record}
 
@@ -301,7 +313,7 @@ When you select a form model, configure Document of Record using options availab
 
 1. 選取&#x200B;**[!UICONTROL Forms — 記錄檔案]**&#x200B;類別。
 1. 選取&#x200B;**[!UICONTROL DoR基底範本]**。
-1. 按一下[下一步]&#x200B;**&#x200B;**&#x200B;並提供必要的資訊。
+1. 按一下[下一步]****&#x200B;並提供必要的資訊。
 
 1. （選擇性）修改您要在記錄檔案中欄位上套用的欄位樣式和外觀。
 1. 儲存表單。

@@ -1,13 +1,13 @@
 ---
 title: 如何將資料庫連線至 [!DNL AEM Forms] as a Cloud Service？
-description: 從最適化表單或AEM Workflow擷取資料並儲存至RESTful Web服務、SOAP型Web服務和OData服務。
+description: 從調適型表單或AEM工作流程擷取資料並儲存至RESTful Web服務、SOAP型Web服務及OData服務。
 feature: Adaptive Forms, Form Data Model
 role: Admin, User
 exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
-source-git-commit: 5ee37f59bb959e0549c0541c6568aa8c135c330e
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 3%
+source-wordcount: '668'
+ht-degree: 2%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/data-integration.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/data-integration.html) |
 | AEM as a Cloud Service  | 本文章 |
 
 
@@ -45,6 +45,26 @@ ht-degree: 3%
 * 從已設定的資料來源預先填入最適化Forms
 * 使用最適化表單規則叫用資料來源服務/作業
 * 將提交的最適化表單資料寫入資料來源
+
+## 適用性和使用案例
+
+### 保險
+
+## AEM Forms是否可用於保單應用程式？
+
+可以。AEM Forms可用來建立數位保險申請表單，以收集申請人資訊、驗證輸入內容，並與後端承保系統整合。
+
+## AEM Forms是否支援包銷工作流程？
+
+是，且具有工作流程與整合。 AEM Forms支援工作流程導向的流程和後端整合，好讓應用程式資料可流入承保和決策系統。
+
+## AEM Forms可以與保險核心系統整合嗎？
+
+可以。AEM Forms支援使用REST和SOAP API進行整合，使其能夠與原則管理系統、宣告管理系統和CRM連線。
+
+## AEM Forms可以將表單資料寫回保險系統嗎？
+
+可以。AEM Forms支援將資料回寫至後端系統，做為表單提交和工作流程執行的一部分。
 
 ## 開始使用資料整合 {#get-started-with-data-integration}
 

@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 Role: Developer, Author
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
 role: User, Developer
-source-git-commit: cc2a226898f5dbe9073ba9b5a859218da664b1d7
+source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
 workflow-type: tm+mt
-source-wordcount: '2124'
-ht-degree: 2%
+source-wordcount: '2154'
+ht-degree: 3%
 
 ---
 
@@ -19,11 +19,19 @@ ht-degree: 2%
 | 基礎元件 | [按一下這裡](supporting-new-language-localization.md) |
 | 核心元件 | 本文章 |
 
-<span class="preview">從右至左語言支援功能可在早期採用者程式下取得。 您可以從您的官方電子郵件ID寫信到aem-forms-ea@adobe.com ，以加入率先採用者計畫並請求存取該功能。</span>
+<span class="preview">從右至左語言支援功能可在早期採用者程式下取得。 您可以使用官方電子郵件 ID 寫信至 aem-forms-ea@adobe.com，以加入早期採用者計劃並要求存取該功能。</span>
 
 AEM Forms提供英文(en)、西班牙文(es)、法文(fr)、義大利文(it)、德文(de)、日文(ja)、葡萄牙文 — 巴西(pt-BR)、中文(zh-CN)、中文 — 台灣(zh-TW)和韓文(ko-KR)地區設定的立即可用支援。 您也可以新增對更多地區設定的支援，例如印地語(hi_IN)。 您也可以新增這些地區設定，以從右至左(RTL)語言呈現最適化Forms，例如阿拉伯文、波斯文和烏爾都文。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3433132/adaptive-forms-rtl--arabic-hebrew-farsi)
+
+## 適用性和使用案例
+
+### 保險
+
+## AEM Forms是否支援多語言保險使用案例？
+
+可以。AEM Forms支援多語言表單體驗，這對於跨地區和語言運作的保險公司很重要。
 
 ## AEM Forms如何決定最適化表單的地區設定？
 
@@ -117,7 +125,7 @@ AEM Forms會優先使用下列方法來判斷最適化表單的地區設定：
 
    **在哪裡可以找到此資訊？**
 
-   如需尋找這些詳細資訊的逐步指示，請參閱Adobe Experience League文章&quot;[存取Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hant#accessing-git)&quot;。
+   如需尋找這些詳細資訊的逐步指示，請參閱Adobe Experience League文章&quot;[存取Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)&quot;。
 
    **您的專案已就緒！**
 
@@ -140,7 +148,7 @@ AEM Forms會優先使用下列方法來判斷最適化表單的地區設定：
      [AEMaaCS project directory]/ui.config/src/main/content/jcr_root/apps/<appid>/osgiconfig/config`. 
      ```
 
-     將`<appid>`取代為您的專案特定應用程式識別碼。 您可以在`archetype.properties`檔案中找到您AEM專案的`<appid>`。
+     將`<appid>`取代為您的專案特定應用程式識別碼。 您可以在`<appid>`檔案中找到您AEM專案的`archetype.properties`。
 
      ![Archetype屬性](/help/forms/assets/archetype-properties.png)
 
@@ -228,7 +236,7 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 
       ![貼上clientlib-it-custom-locale](/help/forms/assets/clientlib-it-custom-locale-paste.png)
 
-1. 更新`languageinit.js`中的`aemLangUrl`路徑
+1. 更新`aemLangUrl`中的`languageinit.js`路徑
 
    1. 導覽至[AEMaaCS專案目錄]中的下列目錄：
 
@@ -265,7 +273,7 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 
 1. 找到範例英文檔案：
 
-   AEM Forms在GitHub[&#128279;](https://github.com/adobe/aem-core-forms-components/blob/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/af-clientlibs/core-forms-components-runtime-all/resources/i18n/en.json)上提供範例英文地區設定檔(.json)。
+   AEM Forms在GitHub[上提供](https://github.com/adobe/aem-core-forms-components/blob/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/af-clientlibs/core-forms-components-runtime-all/resources/i18n/en.json)範例英文地區設定檔(.json)。
 
    英文檔案包含預設的參考字串集。 您的地區設定特定檔案應模擬英文檔案的結構。
 
@@ -335,7 +343,7 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 
 1. 在filter.xml中包含新資料夾：
 
-   導覽至[AEMaaCS專案目錄]中的`/ui.content/src/main/content/meta-inf/vault/filter.xml`檔案。
+   導覽至`/ui.content/src/main/content/meta-inf/vault/filter.xml`AEMaaCS專案目錄[中的]檔案。
 
    開啟檔案，並在結尾新增下列行：
 
@@ -343,7 +351,7 @@ git clone https://github.com/adobe/aem-core-forms-components.git
    <filter root="/etc/languages"/>
    ```
 
-   ![在`/ui.content/src/main/content/meta-inf/vault/filter.xml`](langauge-filter.png)下的`filter.xml`中新增建立的資料夾
+   ![在`filter.xml`下的`/ui.content/src/main/content/meta-inf/vault/filter.xml`](langauge-filter.png)中新增建立的資料夾
 
 1. 儲存檔案。
 
@@ -375,26 +383,26 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 
       透過[現有的完整棧疊管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hant#setup-pipeline)觸發程式碼的部署。 這會透過新的地區設定支援自動建置和部署更新的程式碼。
 
-      如果您尚未設定管道，請參閱[上的指南如何設定AEM Formsas a Cloud Service的管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hant#setup-pipeline)。
+      如果您尚未設定管道，請參閱[上的指南以瞭解如何設定AEM Forms as a Cloud Service的管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hant#setup-pipeline)。
 
 
 ## 預覽具有新增地區設定的最適化表單
 
 以下步驟將引導您預覽具有新新增地區設定的最適化表單：
 
-1. 登入您的AEM Formsas a Cloud Service執行個體。
+1. 登入您的AEM Forms as a Cloud Service執行個體。
 1. 移至&#x200B;**Forms** > **Forms和檔案**。
 1. 選取最適化表單，然後按一下&#x200B;**新增字典**&#x200B;和&#x200B;**新增字典至翻譯專案**&#x200B;精靈出現。
 1. 指定&#x200B;**專案標題**，並從&#x200B;**新增字典至翻譯專案**&#x200B;精靈的下拉式功能表中選取&#x200B;**目標語言**。
 1. 按一下&#x200B;**完成**&#x200B;並執行已建立的翻譯專案。
 1. 移至&#x200B;**Forms** > **Forms和檔案**。
-1. 選取最適化表單，然後選擇&#x200B;**預覽為HTML**&#x200B;選項。
+1. 選取最適化表單，然後選擇&#x200B;**以HTML預覽**&#x200B;選項。
 1. 將`&afAcceptLang=<locale-name>`附加至預覽URL並按回車鍵。 將`<locale-name>`取代為您的實際地區設定代碼。 最適化表單會以指定的地區設定顯示。
 
 ## 支援新本地化的最佳實務 {#best-practices}
 
 * Adobe建議您在建立最適化表單之後建立翻譯專案。 這能簡化本地化程式。
-* 當數值方塊和日期選擇器元件轉換為特定地區設定時，可能會出現格式問題。 為了緩解此問題，**語言**&#x200B;選項已納入[日期選擇器元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-picker#format-tab)和[數值方塊元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/numeric-box#formats-configure-tab)的「設定」對話方塊中。
+* 當數值方塊和日期選擇器元件轉換為特定地區設定時，可能會出現格式問題。 為了緩解此問題，**語言**&#x200B;選項已納入[日期選擇器元件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-picker#format-tab)和[數值方塊元件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/numeric-box#formats-configure-tab)的「設定」對話方塊中。
 
 
 * 處理新欄位：
@@ -409,5 +417,5 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 {{see-also}}
 
 * [產生最適化Forms的記錄檔案](/help/forms/generate-document-of-record-core-components.md)
-* [新增最適化表單至 AEM Sites 頁面或體驗片段](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [新增自適應表單至 AEM Sites 頁面或體驗片段](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 
