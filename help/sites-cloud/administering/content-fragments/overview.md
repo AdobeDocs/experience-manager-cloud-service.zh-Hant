@@ -185,7 +185,7 @@ AEM內容片段可用於說明和管理結構化內容。 結構化內容在可�
 
 * 可使用[AEM GraphQL API](/help/headless/graphql-api/content-fragments.md)進行內容傳送。
 
-* 使用內容片段元件[ （參考元件）可在](/help/sites-cloud/authoring/fragments/content-fragments.md)頁面編輯器中取得：
+* 使用內容片段元件[&#x200B; （參考元件）可在](/help/sites-cloud/authoring/fragments/content-fragments.md)頁面編輯器中取得：
 
    * [內容片段核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)可供頁面作者使用。 它可讓他們以HTML或JSON格式參考及傳送所需的內容片段。
 
