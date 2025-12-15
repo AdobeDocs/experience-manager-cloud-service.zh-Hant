@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: 2449bc380268ed42b6c8d23ae4a4fecaf1736889
+source-git-commit: bd7b822262e0e7994fe5140f3786c1b7ab96e7a1
 workflow-type: tm+mt
-source-wordcount: '2357'
+source-wordcount: '2391'
 ht-degree: 3%
 
 ---
@@ -57,7 +57,7 @@ ht-degree: 3%
 使用AEM核心元件的Sling模型(JSON)匯出功能，內容片段也可以以JSON格式傳送。 此傳遞形式：
 
 * 可讓您使用元件來管理要傳送片段的哪些元素
-* 允許大量傳送；方法是在用於API傳送的頁面上新增多個[內容片段核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=zh-Hant)
+* 允許大量傳送；方法是在用於API傳送的頁面上新增多個[內容片段核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)
 
 通訊管道的數量每年都在增加。 通常，管道是指傳遞機制，例如：
 
@@ -86,7 +86,7 @@ ht-degree: 3%
 >
 >體驗片段可以包含內容片段形式的內容，反之則不行。
 >
->如需進一步資訊，請參閱[瞭解AEM中的內容片段和體驗片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=zh-Hant#content-fragments)。
+>如需進一步資訊，請參閱[瞭解AEM中的內容片段和體驗片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments)。
 
 本頁和下列頁面涵蓋建立、設定、維護及使用內容片段的任務：
 
@@ -185,9 +185,9 @@ AEM內容片段可用於說明和管理結構化內容。 結構化內容在可�
 
 * 可使用[AEM GraphQL API](/help/headless/graphql-api/content-fragments.md)進行內容傳送。
 
-* 使用內容片段元件[&#x200B; （參考元件）可在](/help/sites-cloud/authoring/fragments/content-fragments.md)頁面編輯器中取得：
+* 使用內容片段元件[ （參考元件）可在](/help/sites-cloud/authoring/fragments/content-fragments.md)頁面編輯器中取得：
 
-   * [內容片段核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=zh-Hant)可供頁面作者使用。 它可讓他們以HTML或JSON格式參考及傳送所需的內容片段。
+   * [內容片段核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)可供頁面作者使用。 它可讓他們以HTML或JSON格式參考及傳送所需的內容片段。
 
 內容片段是內容結構，具備以下功能：
 
@@ -274,7 +274,7 @@ Assets可以透過數個方式與內容片段搭配使用；各有其優點：
    * 負責片段的佈局和傳遞；例如管道。
    * 片段需要一或多個專用元件來定義版面並傳遞部分或全部元素/變數和關聯內容。
    * 在製作中將片段拖曳到頁面上會自動建立所需元件的關聯。
-   * 檢視[內容片段核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=zh-Hant)。
+   * 檢視[內容片段核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)。
 
 ## 內容片段主控台 {#content-fragments-console}
 
@@ -346,7 +346,7 @@ WKND專案包括：
 
 大量使用內容片段參考資料可能會顯著影響系統效能、UI回應速度和GraphQL查詢執行。 旨在將巢狀結構保持不超過10個層級。
 
-### 每個模型的資料欄位和型別數目 {#number-of-data-fields-and-types-per-model}
+### 每個模型的資料欄位和型別數 {#number-of-data-fields-and-types-per-model}
 
 僅包含模型真正需要的資料欄位和型別。
 
@@ -354,9 +354,15 @@ WKND專案包括：
 
 ### RTF欄位 {#rich-text-fields}
 
-考慮使用RTF欄位（**多行文字**&#x200B;資料型別）。
+考慮使用RTF欄位（**多行文字**&#x200B;資料型別）：
 
-限制每個模型的RTF文字欄位數。 還有每個片段中儲存的文字量，以及HTML格式化的數量。 非常大的RTF內容可能會對系統效能產生負面影響。
+* 欄位
+
+  限制每個模型的RTF文字欄位數。 基於效能考量，不建議在單一模式中使用超過10個RTF欄位。 如有需要，建議您使用[巢狀內容片段](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#using-references-to-form-nested-content)。
+
+* 內容
+
+  您也應該限制每個片段中儲存的文字量，以及HTML格式化的數量。 非常大的RTF內容可能會對系統效能產生負面影響。
 
 ### 變化版本數量 {#number-of-variations}
 
