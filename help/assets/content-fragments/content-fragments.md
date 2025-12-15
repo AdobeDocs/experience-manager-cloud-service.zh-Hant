@@ -93,7 +93,7 @@ ht-degree: 4%
 >
 >體驗片段可以包含內容片段形式的內容，反之則不行。
 >
->如需詳細資訊，另請參閱[瞭解AEM中的內容片段和體驗片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments)。
+>如需詳細資訊，另請參閱[瞭解AEM中的內容片段和體驗片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=zh-Hant#content-fragments)。
 
 ## 內容片段與內容服務 {#content-fragments-and-content-services}
 
