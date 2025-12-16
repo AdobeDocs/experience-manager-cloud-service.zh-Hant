@@ -4,7 +4,7 @@ description: 以下是通用編輯器 2025.12.11 版的發行說明。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 577bc81c35ad052a96b85ed4de13b21f06e385aa
+source-git-commit: b7b89587a81d0cadc81d4b2a486c022557c4a9fb
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 26%
@@ -28,7 +28,7 @@ ht-degree: 26%
 
 * 已在[RTF編輯器中新增現有資料表的支援。](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
 * 已在[RTF編輯器中啟用巢狀清單的Tab鍵。](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
-* 開發人員登入功能現在可以透過[中繼標籤`dev-login`停用。](/help/implementing/universal-editor/customizing.md#meta-tags)
+* 開發人員登入功能現在可以透過[中繼標籤`aem-dev-login`停用。](/help/implementing/universal-editor/customizing.md#meta-tags)
 * 在覆蓋區段中按一下滑鼠右鍵，現在會顯示[內容選項功能表。](/help/sites-cloud/authoring/universal-editor/authoring.md#context-options)
 * [RTF編輯器現在支援](/help/implementing/universal-editor/configure-rte.md#indentation)範圍縮排[。](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
 

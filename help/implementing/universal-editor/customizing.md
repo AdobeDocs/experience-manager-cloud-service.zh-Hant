@@ -4,7 +4,7 @@ description: 了解自訂通用編輯器的不同選項以支援內容作者的�
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Developer
-source-git-commit: 42c82384a0683ca2baca522dc9b2d5153ce01b69
+source-git-commit: b7b89587a81d0cadc81d4b2a486c022557c4a9fb
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 67%
@@ -43,7 +43,7 @@ ht-degree: 67%
 | `copy` | 停用[複製和貼上按鈕](/help/sites-cloud/authoring/universal-editor/authoring.md#copy-paste) |
 | `duplicate` | 停用[重複按鈕](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate) |
 | `header-open-page` | 停用[開啟頁面按鈕](/help/sites-cloud/authoring/universal-editor/navigation.md#open-page) |
-| `dev-login` | 停用[開發人員登入按鈕](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login) |
+| `aem-dev-login` | 停用[開發人員登入按鈕](/help/sites-cloud/authoring/universal-editor/navigation.md#local-developer-login) |
 
 ## 變更您的端點 {#custom-endpoint}
 
