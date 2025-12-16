@@ -4,9 +4,9 @@ description: 瞭解如何使用AEM管理的CDN，以及如何將您自己的CDN�
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 7f00e68eac0b1e0090bdb57a8188af7bbe21ad1b
+source-git-commit: 29aded35239bb8c9a5cf71f9b9dd036c4c32f026
 workflow-type: tm+mt
-source-wordcount: '1768'
+source-wordcount: '1772'
 ht-degree: 11%
 
 ---
@@ -132,7 +132,7 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 只有在發生快取遺失時，才需要客戶CDN和AEM CDN之間的額外躍點。 使用本文所述的快取最佳化策略，新增客戶CDN應該只會帶來可忽略的延遲。
 
-發佈層級支援此客戶CDN設定，但製作層級前不支援。
+發佈層和預覽層級支援此客戶CDN設定，但製作層級前不支援。
 
 ### 偵錯設定
 
@@ -163,7 +163,7 @@ x-aem-debug: byocdn=true,edge=true,edge-auth=edge-auth,edge-key=edgeKey1,X-AEM-E
 >您可以使用快速開發環境(RDE)來部署和測試您的設定：
 >
 >* [快速開發環境](/help/implementing/developing/introduction/rapid-development-environments.md)
->* [如何使用快速開發環境](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
+>* [如何使用快速開發環境](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
 
 ### CDN廠商設定範例 {#sample-configurations}
 
