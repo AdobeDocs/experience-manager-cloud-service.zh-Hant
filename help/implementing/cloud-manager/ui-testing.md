@@ -5,10 +5,10 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 7d86ec9cd7cc283082da44111ad897a5aa548f58
 workflow-type: tm+mt
-source-wordcount: '2601'
-ht-degree: 56%
+source-wordcount: '2664'
+ht-degree: 53%
 
 ---
 
@@ -40,7 +40,7 @@ UI測試會在&#x200B;[**自訂UI測試**](/help/implementing/cloud-manager/depl
 > 
 >Adobe 也提供以 JavaScript 搭配 WebdriverIO 為基礎 (請參閱 [AEM 專案原型](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)) 和以 Java 搭配 WebDriver 為基礎 (請參閱 [AEM 測試範例存放庫](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)) 的 UI 測試模組。
 
-## 開始使用 UI 測試 {#get-started-ui-tests}
+## 開始使用UI測試 {#get-started-ui-tests}
 
 本節旨在說明設定 UI 測試以便在 Cloud Manager 中執行所需的步驟。
 
@@ -62,7 +62,7 @@ UI測試會在&#x200B;[**自訂UI測試**](/help/implementing/cloud-manager/depl
 
 1. 將您的程式碼提交到 Cloud Manager 存放庫並執行 Cloud Manager 管道。
 
-## 構建 UI 測試 {#building-ui-tests}
+## 建立UI測試 {#building-ui-tests}
 
 一個 Maven 項目會產生一個 Docker 建置內容。此 Docker 建置內容旨在說明如何建立包含 UI 測試的 Docker 映像，Cloud Manager 會用來透過該影像產生包含實際 UI 測試的 Docker 映像。
 
@@ -72,7 +72,7 @@ UI測試會在&#x200B;[**自訂UI測試**](/help/implementing/cloud-manager/depl
 >
 >這 [AEM Project 原型](https://github.com/adobe/aem-project-archetype)可以為您產生 UI 測試專案 (遵照以下說明來測試)，但前提是您對編程語言沒有特殊要求。
 
-### 產生 Docker 建置內容 {#generate-docker-build-context}
+### 生成Docker構建上下文 {#generate-docker-build-context}
 
 若要產生 Docker 建置環境，您需要一個 Maven 模組：
 
@@ -182,11 +182,11 @@ Cloud Manager在部署管道期間自動提取Docker build-context封存並構�
 [...]
 ```
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >如果您的專案不包含此行，請編輯檔案以選擇進行UI測試。
 >
->該檔案可能包含一條建議不要編輯它的行。原因是因為它是在引入選擇加入UI測試之前被引入您的專案的，並且客戶端不打算編輯該檔案。 您可以安全地忽略建議。
+>檔案可能包含一行，顯示&#x200B;*DO NOT MODIFY*。 這只是舊版範本/範例的舊版警告，並&#x200B;*不會*&#x200B;阻止您進行Cloud Manager UI測試所需的選擇加入編輯。 您可以安全地忽略建議。 也就是說，您可以在遵循選擇加入步驟時（例如，加入`assembly-ui-test-docker-context.xml`），在`pom.xml`您的專案&#x200B;*中編輯*&#x200B;和`testing.properties`。
 
 如果您是使用 Adobe 提供的範例：
 
@@ -202,7 +202,7 @@ Cloud Manager在部署管道期間自動提取Docker build-context封存並構�
 
 * Adobe提供的Cypress和Java Selenium測試範例已設定選擇加入旗標。
 
-## 編寫 UI 測試 {#writing-ui-tests}
+## 編寫UI測試 {#writing-ui-tests}
 
 本節介紹包含 UI 測試的 Docker 映像必須遵循的約定。Docker 映像是根據上一節中描述的 Docker 建置內容建構的。
 
@@ -273,6 +273,9 @@ Docker 映像必須產生 JUnit XML 格式的測試報告，並保存在環境�
 | 逾時 | 30m | 測試執行多久。 |
 | 建議的持續時間 | 15m | Adobe建議在此時間限制內進行測試。 |
 
+* 如果目標作者/發佈受到IP允許清單的保護，則管道UI測試基礎結構必須列入允許清單，否則UI測試可能會失敗並出現403禁止名單。
+另請參閱[由於IP允許清單](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26654#)和[IP允許清單簡介](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)，AEMaaCS中的UI測試失敗。
+
 >[!NOTE]
 >
 > 若您需要更多資源，請建立客戶服務案例並描述您的使用案例；Adobe會稽核您的請求並提供適當的協助。
@@ -283,9 +286,9 @@ Docker 映像必須產生 JUnit XML 格式的測試報告，並保存在環境�
 >
 >本節僅在選擇 Selenium 作為測試基礎結構時適用。
 
-### 等待 Selenium 準備就緒 {#waiting-for-selenium}
+### 等待Selenium準備就緒 {#waiting-for-selenium}
 
-在測試開始之前，Docker 影像負責確保 Selenium 伺服器啟動並執行。等待 Selenium 服務有兩個步驟。
+在測試開始之前，Docker 映像負責確保 Selenium 伺服器啟動並執行。等待 Selenium 服務有兩個步驟。
 
 1. 從 `SELENIUM_BASE_URL` 環境變數中讀取 Selenium 服務的 URL。
 1. 定期輪詢Selenium API公開的[狀態端點](https://github.com/SeleniumHQ/docker-selenium/#waiting-for-the-grid-to-be-ready)。
@@ -440,11 +443,11 @@ if (proxyServer !== '') {
 > 您可以在[GitHub](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-playwright)上的Playwright範例測試模組中找到實作範例。
 
 
-## 在本機執行 UI 測試 {#run-ui-tests-locally}
+## 在本機執行UI測試 {#run-ui-tests-locally}
 
 在Cloud Manager管道中啟用UI測試之前，Adobe建議您對[AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)在本機執行UI測試。 或者，針對實際的AEM as a Cloud Service執行個體執行。
 
-### Cypress 測試範例 {#cypress-sample}
+### Cypress測試範例 {#cypress-sample}
 
 1. 打開 shell 並瀏覽至存放庫中的 `ui.tests/test-module` 資料夾
 
@@ -480,7 +483,7 @@ if (proxyServer !== '') {
 >
 >如需詳細資訊，請參閱[AEM測試範例存放庫](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/README.md)。
 
-### JavaScript WebdriverIO 測試範例 {#javascript-sample}
+### JavaScript WebdriverIO測試範例 {#javascript-sample}
 
 1. 打開 shell 並瀏覽至存放庫中的 `ui.tests` 資料夾。
 
@@ -533,7 +536,7 @@ if (proxyServer !== '') {
 >如需詳細資訊，請參閱[AEM測試範例存放庫](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-playwright)。
 
 
-### Java Selenium WebDriver 測試範例 {#java-sample}
+### Java Selenium WebDriver測試範例 {#java-sample}
 
 1. 打開 shell 並瀏覽至存放庫中的 `ui.tests/test-module` 資料夾
 

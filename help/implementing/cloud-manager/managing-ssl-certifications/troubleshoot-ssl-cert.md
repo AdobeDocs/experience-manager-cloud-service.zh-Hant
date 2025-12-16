@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 8fb8f708-51a5-46d0-8317-6ce118a70fab
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 7d86ec9cd7cc283082da44111ad897a5aa548f58
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '557'
 ht-degree: 37%
 
 ---
@@ -130,7 +130,7 @@ openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.1" -B5
 
 +++
 
-+++**憑證有效性
++++憑證有效性
 
 ## 憑證有效性 {#validity}
 
@@ -138,16 +138,16 @@ Cloud Manager 預計 SSL 憑證從當前日期起至少 90 天內有效。檢查
 
 +++
 
-+++**錯誤的SAN憑證套用到我的網域
++++錯誤的SAN憑證套用到我的網域
 
 ## 錯誤的SAN憑證套用到我的網域 {#wrong-san-cert}
 
 假設您想要將`dev.yoursite.com`和`stage.yoursite.com`連結至非生產環境，並將`prod.yoursite.com`連結至生產環境。
 
-為了設定這些網域的CDN，您需要為每個安裝憑證，這樣您就可以在非生產網域安裝一個涵蓋`*.yoursite.com`的憑證，並為生產網域安裝另一個涵蓋`*.yoursite.com`的憑證。
+若要設定這些網域的CDN，您必須為每個安裝憑證，因此您必須安裝一個可涵蓋非生產網域`*.yoursite.com`的憑證，以及另一個可涵蓋生產網域`*.yoursite.com`的憑證。
 
-此設定有效。 不過，當您更新其中一個憑證時，因為兩個憑證都涵蓋相同的SAN專案，所以CDN會在所有適用的網域上安裝最新的憑證，這可能出現意外狀況。
+此設定有效。 但是，當您更新其中一個憑證時，兩個憑證仍然涵蓋相同的SAN專案。 因此，CDN會在所有適用的網域上安裝最新的憑證，這可能看起來與預期不符。
 
-雖然這可能非預期，但這並非錯誤，且是基礎CDN的標準行為。 如果您有兩個以上涵蓋相同SAN網域專案的SAN憑證，若該網域由其中一個憑證涵蓋，且另一個憑證已更新，則現在會為該網域安裝後者。
+雖然此情況可能是意外狀況，但這並非錯誤，且是基礎CDN的標準行為。 如果您有兩個以上涵蓋相同SAN網域專案的SAN憑證，CDN會為該網域安裝最近更新的憑證。 即使其他憑證已涵蓋相同的網域專案，也會發生這種情況。
 
 +++
