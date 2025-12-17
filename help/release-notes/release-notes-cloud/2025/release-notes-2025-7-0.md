@@ -223,7 +223,7 @@ OSGi 屬性：
 
 ### Java 11 執行階段棄用 {#java11-runtime-deprecation}
 
-現已棄用 **Java 11 執行階段*，且大多數環境已升級至效能更好的 **Java 21 執行階段**。
+現已棄用 **Java 11 執行階段*，且大多數環境已升級至效能更好的 &#x200B;** Java 21 執行階段**。
 
 若您的環境因相依性不支援而無法升級 (請參閱 [Java 21 執行階段要求](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements))，您應已收到一封 Adobe 傳送的電子郵件，其中包含具體的後續步驟。請確保在 **2025 年 8 月 28 日**&#x200B;前完成所有必要的更新，您的環境方能無中斷地進行升級。
 
