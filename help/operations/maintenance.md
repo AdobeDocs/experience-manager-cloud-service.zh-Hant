@@ -49,14 +49,14 @@ ht-degree: 8%
   <tr>
     <td>版本清除</td>
     <td>客戶</td>
-    <td>目前預設會停用版本清除，但可以設定原則，如<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">版本清除和稽核記錄清除維護工作</a>區段中所述。<br/><br/>預設即將啟用清除，這些值可覆寫。<br>
+    <td>目前預設會停用版本清除，但可以設定原則，如<a href="https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">版本清除和稽核記錄清除維護工作</a>區段中所述。<br/><br/>預設即將啟用清除，這些值可覆寫。<br>
    </td>
   </td>
   </tr>
   <tr>
     <td>稽核記錄清除</td>
     <td>客戶</td>
-    <td>稽核記錄清除目前預設為停用，但可以設定原則，如<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">版本清除和稽核記錄清除維護任務</a>一節中所述。<br/><br/>預設即將啟用清除，這些值可覆寫。<br>
+    <td>稽核記錄清除目前預設為停用，但可以設定原則，如<a href="https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">版本清除和稽核記錄清除維護任務</a>一節中所述。<br/><br/>預設即將啟用清除，這些值可覆寫。<br>
    </td>
    </td>
   </tr>
@@ -87,7 +87,7 @@ ht-degree: 8%
     <td>客戶</td>
     <td>
     <p>必須在Git中完成。 覆寫<code>/libs</code>下的現成維護視窗設定節點，方法是在資料夾<code>/conf/global/settings/granite/operations/maintenance/granite_weekly</code>、<code>granite_daily</code>或<code>granite_monthly</code>下建立屬性。 如需其他組態詳細資訊，請參閱下方的維護期間表格。</p>
-    <p>透過在上面的節點底下新增另一個具有適當屬性的節點（將其命名為<code>granite_ProjectPurgeTask</code>）來啟用維護任務。 檢視<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi">Adobe專案清除設定</a>的<b>OSGi屬性</b>清單。</p>
+    <p>透過在上面的節點底下新增另一個具有適當屬性的節點（將其命名為<code>granite_ProjectPurgeTask</code>）來啟用維護任務。 檢視<a href="https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi">Adobe專案清除設定</a>的<b>OSGi屬性</b>清單。</p>
   </td>
   </tr>
   </tbody>
