@@ -3,10 +3,11 @@ title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.7.0 版發行�
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2025.7.0 版發行說明。'
 feature: Release Information
 role: Admin
-source-git-commit: 7787a195cc9ae39f8ac759da03c88a9f1e61226d
+exl-id: b1d25db0-d4a8-4663-b7fe-2d7381e12567
+source-git-commit: 76ccdf13f56d7020ef266bc54bebbcc6eff1067d
 workflow-type: tm+mt
-source-wordcount: '2276'
-ht-degree: 100%
+source-wordcount: '2273'
+ht-degree: 96%
 
 ---
 
@@ -38,7 +39,7 @@ ht-degree: 100%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440931?quality=12&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -241,18 +242,20 @@ OSGi 屬性：
 
 ### 預設清除舊版本和稽核記錄 {#mt-defaults}
 
-目前，內容版本和稽核記錄皆將其相關的*清除維護任務預設為停用，因此，除非經過明確設定，否則不會移除任何資料。
+目前，內容版本和稽核日誌皆將其相關的&#x200B;*清除維護任務*&#x200B;預設為停用，因此除非明確地進行設定，否則不會移除任何資料。
 
-不過，為了讓存放庫發揮最佳效能，將依之後公告的日期預設啟用清除功能，並遵循以下準則：
+不過，為了最佳化存放庫效能，系統將在未來公佈的日期預設啟用清除。
+
+如需更多詳細資訊，請參閱[維護任務文章](/help/operations/maintenance.md#defaults)。
 
 #### 內容版本 {#mt-content}
 
-* **新的環境* (建立於即將到來的日期 (稍後通知) 之後)
-   * 已存在超過 **30 天*&#x200B;的版本會定期被刪除。
-   * 保留過去 30 天內五個最新版本，加上最新版本和目前版本，無論其已存在多久。
+* **新環境** （建立於即將來臨的日期之後，將於稍後通訊）：
+   * 將定期刪除超過30天的版本。
+   * 保留過去 30 天內的五個最新版本，以及最新版本和目前版本，無論其已存在多久。
 
-* **現有環境* (建立於此即將到來的日期之前)：
-   * 已存在超過 **7 年*&#x200B;的版本會定期被刪除。
+* **現有環境** (建立於此即將到來的日期之前)：
+   * 將定期刪除超過7年的版本。
    * 保留過去 7 年內的所有版本。
    * 此較高的預設臨界值能防止意外移除最近的資料。然而，若要讓存放庫效能最佳化，建議設定較低的值。
 
@@ -260,18 +263,16 @@ OSGi 屬性：
 
 #### 稽核記錄 {#mt-auditlogs}
 
-* **新的環境* (建立於即將到來的日期之後，該日期將另行通知)：
-   * 已存在超過 **7 天*&#x200B;的複寫、DAM 和頁面稽核記錄會定期被刪除。
+* **新的環境** (建立於即將到來的日期之後，該日期將另行通知)：
+   * 將定期刪除超過7天的復寫、DAM和頁面稽核記錄。
    * 預設情況下會記錄所有事件。
 
-* **現有環境* (建立於此即將到來的日期之前)：
-   * 已存在超過 **7 年*&#x200B;的複寫、DAM 和頁面稽核記錄會定期被刪除。
+* **現有環境** (建立於此即將到來的日期之前)：
+   * 將定期刪除超過7年的復寫、DAM和頁面稽核記錄。
    * 預設情況下會記錄所有事件。
    * 此較高的預設臨界值能防止意外移除最近的資料。然而，若要讓存放庫效能最佳化，建議設定較低的值。
 
 * 您可以透過 YAML 設定來修改這些預設值，並透過設定管道部署。
-
-如需更多詳細資訊，請參閱[維護任務文章](/help/operations/maintenance.md#defaults)。
 
 ### 邊緣運算 (Alpha 版計劃) {#edge-computing}
 
