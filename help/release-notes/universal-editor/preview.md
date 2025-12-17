@@ -3,7 +3,7 @@ title: 通用編輯器預覽發行說明
 description: 這是通用編輯器預覽版本的發行說明。
 feature: Release Information
 role: Admin
-source-git-commit: 0f33ef46ea58ecbdbf30ac078f24f2193ae26395
+source-git-commit: 57b8a38219431ff7f264ef1f64de5506e283a650
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 66%
@@ -13,7 +13,7 @@ ht-degree: 66%
 
 # 通用編輯器預覽發行說明 {#preview}
 
-這是通用編輯器&#x200B;**預覽版本**&#x200B;的發行說明。您目前可以在通用編輯器&#x200B;**預覽環境**&#x200B;中使用這些功能。這些功能預計於2025年12月18日正式發佈。
+這是通用編輯器&#x200B;**預覽版本**&#x200B;的發行說明。您目前可以在通用編輯器&#x200B;**預覽環境**&#x200B;中使用這些功能。這些功能預計於2026年1月15日正式發行。
 
 提供這些&#x200B;**預覽**&#x200B;發行說明是為了方便您了解通用編輯器將有哪些變更，而您可以[切換至預覽環境](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)來測試這些變更。
 
