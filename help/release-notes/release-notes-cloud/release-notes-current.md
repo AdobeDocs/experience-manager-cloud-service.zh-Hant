@@ -1,18 +1,18 @@
 ---
-title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明。'
+title: ' [!DNL Adobe Experience Manager] as a Cloud Service目前的發行說明'
 description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 最新發行說明。'
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 6d86413449dbde8566f0f653071a2f29ab9c13ab
+source-git-commit: bdc4b266e2d5725674d00a24fbb1d2cbaac4a53f
 workflow-type: tm+mt
-source-wordcount: '1459'
-ht-degree: 62%
+source-wordcount: '1704'
+ht-degree: 52%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Service 最新發行說明 {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service的最新發行說明 {#release-notes}
 
 以下章節概述 [!DNL Experience Manager] as a Cloud Service 目前 (最新) 版本的功能發行說明。
 
@@ -30,7 +30,7 @@ ht-degree: 62%
 
 [!DNL Adobe Experience Manager]作為[!DNL Cloud Service]目前功能版本(2025.12.0)的發行日期是2025年12月11日。 下一個功能版本(2026.1.0)計畫於2026年1月29日發行。
 
-## 維護版本發行說明 {#maintenance}
+## 維護版本注意事項 {#maintenance}
 
 您可以在[這裡](/help/release-notes/maintenance/latest.md)找到最新的維護版本發行說明。
 
@@ -40,13 +40,41 @@ ht-degree: 62%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440931?captions=chi_hant&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
-## AEM中的代理程式 {#agents-in-aem}
+## AEM測試版計畫 {#aem-beta-programs}
 
-AEM提供了一系列代理程式，可讓您加速內容建立並自動協調變更。 如需詳細資訊，請參閱[AEM代理程式概述](/help/ai-in-aem/agents/overview.md)。
+Adobe Experience Manager (AEM)測試版計畫是讓客戶存取發行前功能和程式碼、提供意見回饋，以及指引AEM未來發展的方法。
+
+>[!IMPORTANT]
+>
+>Beta發行版本可能包含瑕疵，並依「現況」提供，並無任何保固。 Adobe沒有義務維護、更正、更新、變更、修改或以其他方式支援(透過Adobe支援服務或其他方式)測試版。 Adobe建議客戶謹慎行事，不要依賴Beta版正確運作或效能，或依賴任何隨附的檔案或資料。 Beta版中的功能和API可能會有所變更，恕不另行通知。 因此，使用測試版完全由客戶自行承擔風險。
+
+**參與的優點**
+客戶與合作夥伴可提早存取Adobe正在開發的功能，以提供意見並影響產品開發。 此外，也能協助客戶在功能全面推出前做好採用新功能的準備。
+
+**目前的Beta版計畫**
+以下小節列出作用中的Beta版計畫。
+
+### AEM (Beta程式)中的代理程式
+
+搶先使用強大的全新AEM代理功能，涵蓋生產、治理、最佳化、探索和開發。 您的意見直接影響Adobe的發展藍圖和最終功能。 如需瞭解詳細資訊，請參閱[AEM代理程式概觀](/help/ai-in-aem/agents/overview.md)。
+
+若要選擇加入此計畫，請傳送電子郵件至[aemagentsteam@adobe.com](mailto:aemagentsteam@adobe.com)，並儘可能加入下列詳細資料：
+
+將主動使用代理的團隊成員的    *名稱和Adobe ID。
+    *列出您或您的團隊想要使用的特定代理程式。 或直接說「所有代理程式」。
+
+### AEM Foundation (Beta計畫)
+
+    參閱[AEM Foundation測試版計畫](#foundation-early-adopter)。
+
+### Cloud Manager (Beta計畫)
+
+    請參閱[Cloud Manager測試版計畫](/help/implementing/cloud-manager/release-notes/current.md)。
+
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
