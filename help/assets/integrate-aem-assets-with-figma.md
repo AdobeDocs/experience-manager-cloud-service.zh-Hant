@@ -40,13 +40,13 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-> 如果您在登入您的[環境後看到](https://helpx.adobe.com/contact.html)網路錯誤&#x200B;**[!UICONTROL 訊息，請]**&#x200B;聯絡Adobe支援[!DNL AEM]以取得協助。
+> 如果您在登入您的[環境後看到](https://helpx.adobe.com/tw/contact.html)網路錯誤&#x200B;**[!UICONTROL 訊息，請]**&#x200B;聯絡Adobe支援[!DNL AEM]以取得協助。
 
 ## 將[!DNL AEM]資產匯入[!DNL Figma]畫布{#import-aem-assets-into-figma-workflow}
 
 在您的[設計介面中[!UICONTROL 存取]Adobe Experience Manager (AEM) Assets Connector](#access-aem-assets-connector)面板[!DNL Figma]，並執行下列動作：
 
-1. 在[!UICONTROL Adobe Experience Manager (AEM) Assets Connector]面板中搜尋資產。 如需詳細資訊，請參閱[使用Asset Selector](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector#using-asset-selector)。
+1. 在[!UICONTROL Adobe Experience Manager (AEM) Assets Connector]面板中搜尋資產。 如需詳細資訊，請參閱[使用Asset Selector](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector#using-asset-selector)。
 
 1. 將資產拖放至畫布或選取資產，然後按一下「選取&#x200B;**[!UICONTROL 」]**&#x200B;將資產放到畫布上。
 
