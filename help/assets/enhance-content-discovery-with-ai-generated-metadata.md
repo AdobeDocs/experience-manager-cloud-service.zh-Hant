@@ -3,10 +3,10 @@ title: 在管理員檢視中使用AI產生的中繼資料增強內容探索
 description: 瞭解如何在「管理檢視」中使用AI產生的中繼資料來增強內容探索
 feature: Smart Tags,Tagging
 role: Admin,User
-source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
+source-git-commit: 3f44e74488fc73c406fefb6decc41782859d029b
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 9%
+source-wordcount: '669'
+ht-degree: 8%
 
 ---
 
@@ -69,7 +69,9 @@ AEM可讓您在「資產瀏覽」頁面上的「卡片」檢視或「清單」�
 
 ## 停用AI產生的中繼資料 {#disable-ai-generated-metadata}
 
-若要停用AI產生的中繼資料：
+您可以為您的AEM as a Cloud Service環境停用AI產生的中繼資料，也可以在資料夾層級停用它。
+
+若要為AEM as a Cloud Service環境停用AI產生的中繼資料：
 
 1. 導覽至&#x200B;**[!UICONTROL 工具> Assets > Assets設定>智慧標籤增強設定]**。
 
@@ -78,3 +80,15 @@ AEM可讓您在「資產瀏覽」頁面上的「卡片」檢視或「清單」�
 1. 按一下「**[!UICONTROL 儲存]**」。
 
 上傳至AEM Assets的新資產或資料夾將停用AI產生的中繼資料。 已產生AI產生中繼資料欄位的現有資產或資料夾仍會繼續顯示這些欄位。
+
+### 停用資料夾AI產生的中繼資料 {#disable-ai-generated-metadata-folder-level}
+
+若要在資料夾層級停用AI產生的中繼資料：
+
+1. 選取資料夾並按一下&#x200B;**[!UICONTROL 屬性]**。
+
+1. 選取&#x200B;**[!UICONTROL 資產處理]**&#x200B;索引標籤。
+
+1. 在&#x200B;**[!UICONTROL 影像的智慧標籤增強功能]**&#x200B;區段中，從下拉式功能表中選取&#x200B;**[!UICONTROL 停用]**。
+
+1. 按一下&#x200B;**[!UICONTROL 儲存並關閉]**&#x200B;以停用所選資料夾的AI產生中繼資料。

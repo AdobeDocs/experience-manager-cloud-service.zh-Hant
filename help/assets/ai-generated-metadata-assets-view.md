@@ -1,7 +1,7 @@
 ---
 title: 使用AI產生的中繼資料增強內容探索
 description: 瞭解如何使用AI產生的中繼資料增強內容探索
-source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
+source-git-commit: 3f44e74488fc73c406fefb6decc41782859d029b
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 4%
@@ -43,4 +43,4 @@ AI不會依賴手動輸入，而是自動將描述性標籤指派給數位資產
 
 1. [選擇性]如果您覺得遺漏任何相關標籤，可以新增其他標籤或建立自己的標籤。 若要這麼做，請在&#x200B;**[!UICONTROL 產生的關鍵字]**&#x200B;欄位中寫入您的標籤，然後按一下&#x200B;**[!UICONTROL 儲存]**。
 
-如需有關如何停用AI產生的中繼資料的資訊，請參閱[停用AI產生的中繼資料](/help/assets/smart-tags.md#disable-ai-generated-metadata)。
+如需有關如何停用AI產生的中繼資料的資訊，請參閱[停用AI產生的中繼資料](/help/assets/enhance-content-discovery-with-ai-generated-metadata.md#disable-ai-generated-metadata)。
