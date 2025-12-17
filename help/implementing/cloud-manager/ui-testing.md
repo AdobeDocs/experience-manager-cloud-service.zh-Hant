@@ -274,7 +274,7 @@ Docker 映像必須產生 JUnit XML 格式的測試報告，並保存在環境�
 | 建議的持續時間 | 15m | Adobe建議在此時間限制內進行測試。 |
 
 * 如果目標作者/發佈受到IP允許清單的保護，則管道UI測試基礎結構必須列入允許清單，否則UI測試可能會失敗並出現403禁止名單。
-另請參閱[由於IP允許清單](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26654#)和[IP允許清單簡介](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)，AEMaaCS中的UI測試失敗。
+另請參閱[由於IP允許清單](https://experienceleague.adobe.com/zh-hant/docs/experience-cloud-kcs/kbarticles/ka-26654#)和[IP允許清單簡介](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)，AEMaaCS中的UI測試失敗。
 
 >[!NOTE]
 >
