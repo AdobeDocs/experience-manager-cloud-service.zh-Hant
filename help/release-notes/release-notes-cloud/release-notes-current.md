@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 50c3f49a6a629301076edac3c2462e1f220055dd
+source-git-commit: d1b3753261bd103fff5267a95db90a88f6749e59
 workflow-type: tm+mt
-source-wordcount: '1698'
-ht-degree: 53%
+source-wordcount: '1718'
+ht-degree: 52%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 53%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440931?captions=chi_hant&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -61,6 +61,8 @@ Adobe Experience Manager (AEM)測試版計畫是讓客戶存取發行前功能�
 ### AEM (Beta程式)中的代理程式 {#agents-in-aem-beta-program}
 
 搶先使用強大的全新AEM代理功能，涵蓋生產、治理、最佳化、探索和開發。 您的意見直接影響Adobe的發展藍圖和最終功能。 如需瞭解詳細資訊，請參閱[AEM代理程式概觀](/help/ai-in-aem/agents/overview.md)。
+
+此計畫通常持續4至6週，但可針對您的主動參與能力進行靈活調整。
 
 若要選擇加入此計畫，請傳送電子郵件至[aemagentsteam@adobe.com](mailto:aemagentsteam@adobe.com)，並儘可能加入下列詳細資料：
 
