@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 582faf38a341ecfe9f4e7d338a451e314924abb3
+source-git-commit: 50c3f49a6a629301076edac3c2462e1f220055dd
 workflow-type: tm+mt
 source-wordcount: '1698'
 ht-degree: 53%
@@ -40,7 +40,7 @@ ht-degree: 53%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440931?captions=chi_hant&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -58,7 +58,7 @@ Adobe Experience Manager (AEM)測試版計畫是讓客戶存取發行前功能�
 **目前的Beta版計畫**
 以下小節列出作用中的Beta版計畫。
 
-### AEM (Beta程式)中的代理程式
+### AEM (Beta程式)中的代理程式 {#agents-in-aem-beta-program}
 
 搶先使用強大的全新AEM代理功能，涵蓋生產、治理、最佳化、探索和開發。 您的意見直接影響Adobe的發展藍圖和最終功能。 如需瞭解詳細資訊，請參閱[AEM代理程式概觀](/help/ai-in-aem/agents/overview.md)。
 
@@ -67,11 +67,11 @@ Adobe Experience Manager (AEM)測試版計畫是讓客戶存取發行前功能�
 * 將主動使用代理的團隊成員的名稱和Adobe ID。
 * 列出您或您的團隊要使用的特定代理程式。 或者說「所有代理程式」。
 
-### AEM Foundation (Beta計畫)
+### AEM Foundation (Beta計畫) {#aem-foundation-beta-programs}
 
 請參閱[AEM Foundation測試版計畫](#foundation-early-adopter)。
 
-### Cloud Manager (Beta計畫)
+### Cloud Manager (Beta計畫) {#cloud-manager-beta-programs}
 
 請參閱[Cloud Manager測試版計畫](/help/implementing/cloud-manager/release-notes/current.md)。
 
@@ -206,7 +206,7 @@ Adobe已於2025年10月14日將&#x200B;**Stage**&#x200B;和&#x200B;**Production*
 >寄送電子郵件至 [aemcs-update-free@adobe.com](mailto:aemcs-update-free@adobe.com)，以便在您的方案中啟動此功能。
 >
 
-#### Edge 運算 (Beta 版方案) {#edge-computing}
+#### Edge 運算 (Beta 版方案)
 
 邊緣運算讓您能夠在 CDN 層執行 JavaScript，使資料處理更為接近一般使用者。因此而減少延遲並達到邊緣的回應式動態體驗。
 
