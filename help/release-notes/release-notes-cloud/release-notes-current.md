@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: d1b3753261bd103fff5267a95db90a88f6749e59
+source-git-commit: ed358f58ba0dd4d5a9b283291702f867774515e4
 workflow-type: tm+mt
-source-wordcount: '1718'
-ht-degree: 52%
+source-wordcount: '1857'
+ht-degree: 48%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 52%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440931?captions=chi_hant&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -76,6 +76,24 @@ Adobe Experience Manager (AEM)測試版計畫是讓客戶存取發行前功能�
 ### Cloud Manager (Beta計畫) {#cloud-manager-beta-programs}
 
 請參閱[Cloud Manager測試版計畫](/help/implementing/cloud-manager/release-notes/current.md)。
+
+
+## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
+
+**與AEM Assets整合的Figma外掛程式新版本已推出**
+
+* 將資產從AEM存放庫匯入至Figma檔案時，支援視訊檔案(MP4、MOV、WebM)、動畫檔案(GIF)和向量檔案(SVG)。
+
+* 支援檢查與AEM存放庫中的資產比較，Figma檔案中使用的資產是否有任何更新，如果有任何更新，則取得最新版本的資產。
+
+* 匯出PNG （縮放）和JPG （影像縮放和品質）檔案格式時，支援匯出設定。
+
+  ![Figma外掛程式](/help/assets/assets/figma-v2-plugin.png)
+
+已上傳資產的&#x200B;**惡意程式碼偵測**
+
+AEM Assets現在包含對已上傳檔案的自動惡意程式碼掃描，確保在進入DAM之前隔離可疑資產，以保護您的存放庫免受威脅。 管理員可以設定掃描設定和隔離保留原則，以簡化安全性控制。
+
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
