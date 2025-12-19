@@ -3,14 +3,14 @@ title: Adobe Experience Manager as a Cloud Service的微前端內容片段選擇
 description: 屬性可設定微前端內容片段選擇器，以搜尋、尋找及擷取您應用程式的內容片段。
 role: Admin, User
 exl-id: c81b5256-09fb-41ce-9581-f6d1ad316ca4
-source-git-commit: a3d8961b6006903c42d983c82debb63ce8abe9ad
+source-git-commit: 58995ae9c29d5a76b3f94de43f2bafecdaf7cf68
 workflow-type: tm+mt
-source-wordcount: '894'
-ht-degree: 3%
+source-wordcount: '1073'
+ht-degree: 4%
 
 ---
 
-# 內容片段選擇器 — 相關屬性 {#content-fragment-selector-related-properties}
+# 內容片段選擇器 - 相關屬性 {#content-fragment-selector-related-properties}
 
 微前端內容片段選擇器可讓您瀏覽或搜尋存放庫中的內容片段，並在您的應用程式中使用這些片段。
 
@@ -20,28 +20,34 @@ ht-degree: 3%
 
 | 屬性 | 類型 | 必要 | 預設 | 說明 |
 |--- |--- |--- |--- |--- |
-| `imsToken` | 字串 | 否 | | 用於驗證的IMS權杖。 |
-| `repoId` | 字串 | 否 | | 用於驗證的存放庫ID。 |
-| `orgId` | 字串 | 是 | | 用於驗證的組織ID。 |
-| `locale` | 字串 | 否 | | 地區設定資料。 |
-| `env` | 環境 | 否 | | 內容片段選擇器部署環境。 |
-| `filters` | Fragmentfilter | 否 | | 要套用於內容片段清單的篩選器。 依預設，`/content/dam`下的片段將會顯示。 預設值： `{ folder: "/content/dam" }` |
-| `isOpen` | 布林值 | 是 | `false` | 此旗標可觸發開啟或關閉選取器。 |
-| `onDismiss` | () =>無效 | 是 | | 選取&#x200B;**解除**&#x200B;時要呼叫的函式。 |
-| `onSubmit` | ({ contentFragments： `{id: string, path: string}[]`， domainNames： `string[]` }) => void | 是 | | 選取一或多個內容片段後使用&#x200B;**Select**&#x200B;時要呼叫的函式。 <br><br>函式將接收：<br><ul><li> 具有`id`和`path`欄位的所選內容片段</li><li>與存放庫的計畫識別碼和環境識別碼相關的網域名稱，其狀態為`ready`和`tier`發佈</li></ul><br>如果沒有網域名稱，則會使用Publish執行個體做為遞補網域。 |
-| `theme` | &quot;light&quot;或&quot;dark&quot; | 否 | | 內容片段選擇器的主題。 預設主題已設定為UnifiedShell環境的主題。 |
-| `selectionType` | 「單一」或「多個」 | 否 | `single` | 可用來限制FragmentSelector選取範圍的選取型別。 |
-| `dialogSize` | &quot;fullscreen&quot;或&quot;fullscreenTakeover&quot; | 否 | `fullscreen` | 控制對話方塊大小的選用屬性。 |
-| `waitForImsToken` | 布林值 | 否 | `false` | 表示內容片段選擇器是否在SUSI流程的內容中呈現，且需要等待`imsToken`準備就緒。 |
-| `imsAuthInfo` | ImsAuthInfo | 否 | | 包含登入使用者的IMS驗證資訊的物件。 |
-| `runningInUnifiedShell` | 布林值 | 否 | | 指出內容片段選擇器是在UnifiedShell下執行，還是獨立執行。 |
-| `readonlyFilters` | ResourceReadonlyFiltersField | 否 | | 可應用於內容清單且無法移除的唯讀篩選器。 |
+| `ref` | FragmentSelectorRef | | | 參考`ContentFragmentSelector`執行個體，允許存取提供的功能，例如`reload`。 |
+| `imsToken` | 字串 | 否 | | 用於驗證的IMS權杖。 如果未提供，將起始IMS登入流程。 |
+| `repoId` | 字串 | 否 | | 用於片段選擇器的存放庫ID。 提供後，選取器會自動連線至指定的存放庫，而存放庫下拉式清單會隱藏。 如果未提供，使用者可以從他們有權存取的可用存放庫清單中選取存放庫。 |
+| `defaultRepoId` | 字串 | 否 | | 顯示存放庫選擇器時，預設會選取的存放庫ID。 僅在未提供`repoId`時使用。 如果設定`repoId`，則會隱藏存放庫選擇器，並忽略此值。 |
+| `orgId` | 字串 | 否 | | 用於驗證的組織ID。 如果未提供，使用者可以從他們有權存取的不同組織中選擇存放庫。 如果使用者無權存取任何存放庫或組織，則不會載入內容。 |
+| `locale` | 字串 | 否 | &quot;en-US&quot; | 地區設定。 |
+| `env` | 字串 | 否 | | 部署環境。 檢視允許的環境名稱的`Env`型別。 |
+| `filters` | Fragmentfilter | 否 | `{ folder: "/content/dam" }` | 要套用至內容片段清單的篩選器。 依預設，`/content/dam`下的片段將會顯示。 |
+| `isOpen` | 布林值 | 否 | `false` | 控制選取器是開啟還是關閉的旗標。 |
+| `noWrap` | 布林值 | 否 | `false` | 決定是否呈現片段選擇器而不使用包裝對話方塊。 設定為`true`時，片段選擇器會直接內嵌在父容器中。 將選取器整合至自訂配置或工作流程時相當實用。 |
+| `onSelectionChange` | ({ contentFragments： `ContentFragmentSelection`， domainName？： `string`， tenantInfo？： `string`， repoId？： `string`， deliveryRepos？： `DeliveryRepository[]` }) => void | 否 | | 每當內容片段的選擇變更時，就會觸發回呼函式。 提供目前選取的片段、網域名稱、租使用者資訊、存放庫ID和傳遞存放庫。 |
+| `onDismiss` | () =>無效 | 否 | | 執行解除動作時觸發的回呼函式（例如，關閉選取器）。 |
+| `onSubmit` | ({ contentFragments： `ContentFragmentSelection`， domainName？： `string`， tenantInfo？： `string`， repoId？： `string`， deliveryRepos？： `DeliveryRepository[]` }) => void | 否 | | 使用者確認選取時觸發的回呼函式。 接收選取的內容片段、網域名稱、租使用者資訊、存放庫ID和傳遞存放庫。 |
+| `theme` | &quot;light&quot;或&quot;dark&quot; | 否 | | 片段選擇器的主題。 預設會設定為unifiedShell環境主題。 |
+| `selectionType` | 「單一」或「多個」 | 否 | `single` | 選擇型別可用於限製片段選擇器的選擇。 |
+| `dialogSize` | &quot;fullscreen&quot;或&quot;fullscreenTakeover&quot; | 否 | `fullscreen` | 控制對話方塊大小的選用Prop。 |
+| `runningInUnifiedShell` | 布林值 | 否 | | DestinationSelector是在UnifiedShell下執行，還是獨立執行。 |
+| `readonlyFilters` | ResourceReadonlyFiltersField[] | 否 | | 唯讀篩選器套用到內容片段清單。 使用者無法移除這些篩選器。 |
+| `selectedFragments` | ContentFragmentIdentifier[] | 否 | `[]` | 選擇器開啟時要預先選取的內容片段的初始選擇。 |
+| `hipaaEnabled` | 布林值 | 否 | `false` | 指出是否已啟用HIPAA規範。 |
+| `inventoryView` | InventoryViewType | 否 | `table` | 要用於選擇器的詳細目錄預設檢視型別。 |
+| `inventoryViewToggleEnabled` | 布林值 | 否 | `false` | 表示是否啟用庫存檢視切換，讓使用者在表格檢視和格線檢視之間切換。 |
 
 ## ImsAuthProps屬性 {#imsauthprops-properties}
 
 `ImsAuthProps`屬性定義內容片段選擇器用來取得`imsToken`的驗證資訊和流程。 藉由設定這些屬性，您可以控制驗證流程應該如何行為並註冊各種驗證事件的接聽程式。
 
-| 屬性名稱 | 描述 |
+| 屬性名稱 | 說明 |
 |--- |--- |
 | `imsClientId` | 代表用於驗證目的之IMS使用者端ID的字串值。 此值由Adobe提供，且為您的Adobe AEM CS組織專用。 |
 | `imsScope` | 說明用於驗證的範圍。 範圍會決定應用程式對貴組織資源的存取層級。 多個範圍可以用逗號分隔。 |
@@ -56,7 +62,7 @@ ht-degree: 3%
 
 `ImsAuthService`類別會處理內容片段選擇器的驗證流程。 其負責從Adobe IMS驗證服務取得`imsToken`。 `imsToken`用於驗證使用者並授權存取Adobe Experience Manager (AEM) CS存放庫。 ImsAuthService使用`ImsAuthProps`屬性來控制驗證流程並註冊各種驗證事件的接聽程式。 您可以使用方便的`registerContentFragmentSelectorAuthService`函式向內容片段選取器註冊`ImsAuthService`執行個體。 `ImsAuthService`類別上有以下可用函式。 不過，如果您使用`registerContentFragmentSelectorAuthService`函式，則不需要直接呼叫這些函式。
 
-| 函式名稱 | 描述 |
+| 函式名稱 | 說明 |
 |--- |--- |
 | `isSignedInUser` | 判斷使用者目前是否已登入服務並據此傳回布林值。 |
 | `getImsToken` | 擷取目前登入使用者的驗證`imsToken`，此驗證可用於驗證其他服務的要求，例如產生資產&#x200B;_轉譯。_ |
