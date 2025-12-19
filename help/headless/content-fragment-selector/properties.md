@@ -3,9 +3,9 @@ title: Adobe Experience Manager as a Cloud Service的微前端內容片段選擇
 description: 屬性可設定微前端內容片段選擇器，以搜尋、尋找及擷取您應用程式的內容片段。
 role: Admin, User
 exl-id: c81b5256-09fb-41ce-9581-f6d1ad316ca4
-source-git-commit: 58995ae9c29d5a76b3f94de43f2bafecdaf7cf68
+source-git-commit: 74b9493fc3cdba4a1fc64d1137f5c50c6bebca0a
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1074'
 ht-degree: 4%
 
 ---
@@ -25,13 +25,13 @@ ht-degree: 4%
 | `repoId` | 字串 | 否 | | 用於片段選擇器的存放庫ID。 提供後，選取器會自動連線至指定的存放庫，而存放庫下拉式清單會隱藏。 如果未提供，使用者可以從他們有權存取的可用存放庫清單中選取存放庫。 |
 | `defaultRepoId` | 字串 | 否 | | 顯示存放庫選擇器時，預設會選取的存放庫ID。 僅在未提供`repoId`時使用。 如果設定`repoId`，則會隱藏存放庫選擇器，並忽略此值。 |
 | `orgId` | 字串 | 否 | | 用於驗證的組織ID。 如果未提供，使用者可以從他們有權存取的不同組織中選擇存放庫。 如果使用者無權存取任何存放庫或組織，則不會載入內容。 |
-| `locale` | 字串 | 否 | &quot;en-US&quot; | 地區設定。 |
+| `locale` | 字串 | 否 | `en-US` | 地區設定。 |
 | `env` | 字串 | 否 | | 部署環境。 檢視允許的環境名稱的`Env`型別。 |
 | `filters` | Fragmentfilter | 否 | `{ folder: "/content/dam" }` | 要套用至內容片段清單的篩選器。 依預設，`/content/dam`下的片段將會顯示。 |
 | `isOpen` | 布林值 | 否 | `false` | 控制選取器是開啟還是關閉的旗標。 |
 | `noWrap` | 布林值 | 否 | `false` | 決定是否呈現片段選擇器而不使用包裝對話方塊。 設定為`true`時，片段選擇器會直接內嵌在父容器中。 將選取器整合至自訂配置或工作流程時相當實用。 |
 | `onSelectionChange` | ({ contentFragments： `ContentFragmentSelection`， domainName？： `string`， tenantInfo？： `string`， repoId？： `string`， deliveryRepos？： `DeliveryRepository[]` }) => void | 否 | | 每當內容片段的選擇變更時，就會觸發回呼函式。 提供目前選取的片段、網域名稱、租使用者資訊、存放庫ID和傳遞存放庫。 |
-| `onDismiss` | () =>無效 | 否 | | 執行解除動作時觸發的回呼函式（例如，關閉選取器）。 |
+| `onDismiss` | () =>無效 | 否 | | 執行解除動作時觸發的回呼函式；例如，關閉選取器。 |
 | `onSubmit` | ({ contentFragments： `ContentFragmentSelection`， domainName？： `string`， tenantInfo？： `string`， repoId？： `string`， deliveryRepos？： `DeliveryRepository[]` }) => void | 否 | | 使用者確認選取時觸發的回呼函式。 接收選取的內容片段、網域名稱、租使用者資訊、存放庫ID和傳遞存放庫。 |
 | `theme` | &quot;light&quot;或&quot;dark&quot; | 否 | | 片段選擇器的主題。 預設會設定為unifiedShell環境主題。 |
 | `selectionType` | 「單一」或「多個」 | 否 | `single` | 選擇型別可用於限製片段選擇器的選擇。 |
