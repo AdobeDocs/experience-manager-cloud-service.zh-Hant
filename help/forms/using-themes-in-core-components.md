@@ -5,10 +5,10 @@ keywords: 表單產生器主題，最適化表單樣式化核心元件，表單�
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: c0e0a700e85563ff65c703d5d20e6d6c1ff0651c
 workflow-type: tm+mt
-source-wordcount: '2806'
-ht-degree: 5%
+source-wordcount: '2897'
+ht-degree: 4%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 5%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-or-customize-themes-for-adaptive-forms-core-components.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-or-customize-themes-for-adaptive-forms-core-components.html) |
 | AEM as a Cloud Service  | 本文章 |
 
 您可以建立並套用主題來設定最適化表單的樣式。 主題包含元件和面板的樣式詳細資訊。 樣式包括背景顏色、狀態顏色、透明度、對齊方式和大小等屬性。套用主題時，指定的樣式會反映在對應的元件上。主題是獨立管理，不需參照最適化表單，且可在多個最適化Forms中重複使用。
@@ -63,15 +63,15 @@ Forms如Cloud Service所提供，以下列出核心元件型最適化Forms的最
 
 ### 先決條件 {#prerequisites-to-customize}
 
-* 熟悉[在Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hant#setup-pipeline)中設定管道，並瞭解如何設定管道的基本知識，可協助您有效率地管理和部署您的主題自訂。
-* 瞭解如何[設定具有貢獻者角色](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html?lang=zh-Hant)的使用者。 瞭解如何使用投稿人角色設定使用者，可讓您授與佈景主題自訂的必要許可權。
+* 熟悉[在Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline)中設定管道，並瞭解如何設定管道的基本知識，可協助您有效率地管理和部署您的主題自訂。
+* 瞭解如何[設定具有貢獻者角色](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html)的使用者。 瞭解如何使用投稿人角色設定使用者，可讓您授與佈景主題自訂的必要許可權。
 * 安裝最新版的[Apache Maven](https://maven.apache.org/download.cgi)。 Apache Maven是常用於Java™專案的組建自動化工具。 安裝最新版本可確保您擁有佈景主題自訂的必要相依性。
 * 安裝純文字編輯器。 例如，Microsoft® Visual Studio Code。 使用純文字編輯器(例如Microsoft® Visual Studio Code)可提供方便使用的環境，用於編輯和修改佈景主題檔案。
 
 ### 設定您的環境
 
 * 安裝最新的Far，為AEM Cloud Service環境啟用最適化Forms核心元件。
-* 為您的Cloud Service環境設定[前端部署管道](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html?lang=zh-Hant)。 或者，您可以稍後設定管道，讓您在設定部署管道之前，靈活地排定測試的優先順序並調整主題。
+* 為您的Cloud Service環境設定[前端部署管道](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html)。 或者，您可以稍後設定管道，讓您在設定部署管道之前，靈活地排定測試的優先順序並調整主題。
 
 <!-- 
 To deploy your themes to a Forms as a Cloud Service environment, first test theme on a local development environment to address any issues. Once the theme is tested, configure the front-end deployment pipeline, which is responsible for deploying the themes.
@@ -321,7 +321,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 ##### 5.1建立主題的存放庫{#create-a-new-theme-repo}
 
-您需要存放庫才能部署主題。 登入您的[AEM Cloud Manager存放庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hant#accessing-git)，並為您的主題新增存放庫。
+您需要存放庫才能部署主題。 登入您的[AEM Cloud Manager存放庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)，並為您的主題新增存放庫。
 
 1. 按一下&#x200B;**[!UICONTROL 存放庫]** > **[!UICONTROL 新增存放庫]**，為主題建立新的存放庫。
 
@@ -373,14 +373,14 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 ##### 5.3執行前端管道 {#run-a-frontend-pipeline}
 
-使用[前端管道](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html?lang=zh-Hant)部署主題。 若要部署佈景主題，請執行下列步驟：
+使用[前端管道](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html)部署主題。 若要部署佈景主題，請執行下列步驟：
 
 1. 登入您的AEM Cloud Manager存放庫。
 1. 按一下&#x200B;**[!UICONTROL 管道]**&#x200B;區段中的&#x200B;**[!UICONTROL 新增]**&#x200B;按鈕。
 1. 根據Cloud Service環境選取&#x200B;**[!UICONTROL 新增非生產管道]**&#x200B;或&#x200B;**[!UICONTROL 新增生產管道]**。 例如，此處已選取&#x200B;**[!UICONTROL 新增生產管道]**&#x200B;選項。
 1. 在&#x200B;**[!UICONTROL 新增生產管道]**&#x200B;對話方塊中，作為&#x200B;**[!UICONTROL 設定]**&#x200B;步驟的一部分，請指定管道的名稱。 例如，管道的名稱為`customcanvastheme`。
 1. 按一下「**[!UICONTROL 繼續]**」。
-1. 選取&#x200B;**[!UICONTROL 目標部署]** > **[!UICONTROL 前端計畫碼]**&#x200B;選項，在
+1. 選取&#x200B;**[!UICONTROL 目標部署]** > **[!UICONTROL 前端計畫碼]**選項，在
 **[!UICONTROL Source程式碼]**&#x200B;步驟。
 1. 選取包含您最新變更的&#x200B;**[!UICONTROL 存放庫]**&#x200B;和&#x200B;**[!UICONTROL Git分支]**&#x200B;值。 例如，此處選取的存放庫名稱為`custom-canvas-theme-repo`，而Git分支為`main`。
 1. 如果您的變更出現在根資料夾中，請選取&#x200B;**[!UICONTROL 程式碼位置]**&#x200B;作為`/`。
@@ -388,6 +388,10 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
    ![建立前端管道](/help/forms/assets/canvas-theme-frontendpipeline.gif)
 
    管道設定完成後，call-to-action卡會更新。
+
+   >[!NOTE]
+   >
+   > 為確保您的前端管道在Cloud Manager中不會失敗，[請將Node.js版本設定為20](#set-the-nodejs-vesrion-to-20)。
 
 1. 以滑鼠右鍵按一下已建立的管線。
 1. 按一下「**[!UICONTROL 執行]**」。
@@ -416,6 +420,21 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 
 最適化表單主題用於最適化表單範本的一部分，以便在建立最適化表單時定義樣式。
 
+## 將Node.js版本設為20
+
+若要使用管道設定將Node.js版本設為20：
+
+1. 前往&#x200B;**管道**&#x200B;區段並找到您的前端管道。
+2. 在管道的右側，按一下三點選單&#x200B;**⋯**，然後從下拉式清單中選取&#x200B;**檢視/編輯變數**。
+3. 在&#x200B;**變陣列態**&#x200B;對話方塊中，請依照下列方式填寫欄位：
+   * **名稱** - NODE_VERSION
+   * **值** - 20
+   * **步驟已套用** — 建置
+   * **型別** — 變數
+4. 按一下[儲存]以套用組態。****
+
+![管道設定](/help/forms/assets/pipeline-config.png)
+
 ## 最佳做法 {#best-practices}
 
 * **從另一個主題中避免資產**
@@ -441,7 +460,7 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 * [Set layout of forms for different screen sizes and device types](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 * [Generate Document of Record for Adaptive Forms (Core Components](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Create an Adaptive Forms with Repeatable sections](/help/forms/create-forms-repeatable-sections.md)
-* [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=zh-Hant)
+* [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
 
 -->
 
@@ -453,4 +472,4 @@ These themes are deployed to a Forms as a Cloud Service environment via the fron
 * [設定不同熒幕大小和裝置型別的表單版面](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 * [產生最適化Forms的記錄檔案（核心元件）](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [建立具有可重複區段的最適化Forms](/help/forms/create-forms-repeatable-sections.md)
-* [範例主題範本和表單資料模型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=zh-Hant)
+* [範例主題範本和表單資料模型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
