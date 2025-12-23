@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 5e01d1674134db73fc0f5c0013e10170ad6747f7
+source-git-commit: c5cdcccdb3ac16c5088e46e3f64e8cfc4139e0e4
 workflow-type: tm+mt
-source-wordcount: '1080'
+source-wordcount: '1076'
 ht-degree: 18%
 
 ---
@@ -75,7 +75,7 @@ ht-degree: 18%
 * SITES-36570：啟動分塊建立即時副本切換後，建立即時副本失敗。
 * SITES-36158：轉出失敗，作業由於例外狀況而失敗。
 * SITES-35655：新的CF編輯器在中斷後會顯示作用中繼承。
-* SITES-31425：在網站的開始工作流程中顯示未本地化的錯誤訊息「錯誤：需要{}欄位」。
+* SITES-31425：在網站的開始工作流程中顯示未本地化的錯誤訊息`Error: {} field is required`。
 * SITES-19802：工具提示在「核心元件網站>目錄」中未本地化。
 * SITES-36543：修正允許管理員編輯已簽出內容片段的問題。
 * SITES-36967：修正嘗試為損毀的內容片段產生縮圖資料時發生的NullPointerExceptions。
