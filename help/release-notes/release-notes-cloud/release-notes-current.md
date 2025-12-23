@@ -5,14 +5,14 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: ed358f58ba0dd4d5a9b283291702f867774515e4
+source-git-commit: d2e36674f6052d73c418a428e11e3c29075ab24c
 workflow-type: tm+mt
 source-wordcount: '1857'
-ht-degree: 48%
+ht-degree: 49%
 
 ---
 
-# [!DNL Adobe Experience Manager] as a Cloud Service的最新發行說明 {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service 最新發行說明 {#release-notes}
 
 以下章節概述 [!DNL Experience Manager] as a Cloud Service 目前 (最新) 版本的功能發行說明。
 
@@ -30,7 +30,7 @@ ht-degree: 48%
 
 [!DNL Adobe Experience Manager]作為[!DNL Cloud Service]目前功能版本(2025.12.0)的發行日期是2025年12月11日。 下一個功能版本(2026.1.0)計畫於2026年1月29日發行。
 
-## 維護版本注意事項 {#maintenance}
+## 維護版本發行說明 {#maintenance}
 
 您可以在[這裡](/help/release-notes/maintenance/latest.md)找到最新的維護版本發行說明。
 
@@ -40,11 +40,11 @@ ht-degree: 48%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440931?captions=chi_hant&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
-## AEM測試版計畫 {#aem-beta-programs}
+## AEM Beta計畫 {#aem-beta-programs}
 
 Adobe Experience Manager (AEM)測試版計畫是讓客戶存取發行前功能和程式碼、提供意見回饋，以及指引AEM未來發展的方法。
 
@@ -93,7 +93,6 @@ Adobe Experience Manager (AEM)測試版計畫是讓客戶存取發行前功能�
 已上傳資產的&#x200B;**惡意程式碼偵測**
 
 AEM Assets現在包含對已上傳檔案的自動惡意程式碼掃描，確保在進入DAM之前隔離可疑資產，以保護您的存放庫免受威脅。 管理員可以設定掃描設定和隔離保留原則，以簡化安全性控制。
-
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
