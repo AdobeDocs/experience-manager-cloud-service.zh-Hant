@@ -4,7 +4,7 @@ description: 瞭解如何使用AEM管理的CDN，以及如何將您自己的CDN�
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: afe526e72ac2116cd2e7da73d73f62a15f011e70
+source-git-commit: a36eae0f32b36224c53f756238ba2f5f90699e6c
 workflow-type: tm+mt
 source-wordcount: '1772'
 ht-degree: 11%
@@ -39,7 +39,7 @@ AEM管理的CDN符合大部分客戶的效能與安全性需求。 對於發佈�
 * [SSL 憑證簡介](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)
 * [設定CDN](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md)
 
-**限制流量**
+### 限制流量 {#restricting-traffic}
 
 根據預設，對於AEM管理的CDN設定，所有公用流量都可進入發佈服務，無論是生產環境還是非生產（開發和中繼）環境。 您可以透過Cloud Manager使用者介面限制特定環境的發佈服務流量（例如，依IP位址範圍限制分段）。
 
@@ -74,7 +74,7 @@ AEM管理的CDN符合大部分客戶的效能與安全性需求。 對於發佈�
 
 對於輕度驗證使用案例，包括商務利害關係人審查內容，顯示需要使用者名稱和密碼的基本驗證對話方塊以保護內容。 [了解更多](/help/implementing/dispatcher/cdn-credentials-authentication.md)。
 
-## 客戶管理的內容傳遞網路會指向 AEM 管理的內容傳遞網路 {#point-to-point-CDN}
+## 客戶管理的內容傳遞網路會指向 AEM 管理的內容傳遞網路 {#point-to-point-cdn}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"
@@ -106,7 +106,7 @@ AEM管理的CDN符合大部分客戶的效能與安全性需求。 對於發佈�
 
 設定`X-AEM-Edge-Key`後，您可以依照以下方式測試要求是否正確路由。
 
-在Linux®中：
+在Linux中：
 
 ```
 curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H "X-Forwarded-Host: example.com" -H "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>"
@@ -138,7 +138,7 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 若要偵錯BYOCDN設定，請使用值為`x-aem-debug`的`edge=true`標頭。 例如：
 
-在Linux®中：
+在Linux中：
 
 ```
 curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -v -H "X-Forwarded-Host: example.com" -H "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>" -H "x-aem-debug: edge=true"
@@ -163,23 +163,23 @@ x-aem-debug: byocdn=true,edge=true,edge-auth=edge-auth,edge-key=edgeKey1,X-AEM-E
 >您可以使用快速開發環境(RDE)來部署和測試您的設定：
 >
 >* [快速開發環境](/help/implementing/developing/introduction/rapid-development-environments.md)
->* [如何使用快速開發環境](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
+>* [如何使用快速開發環境](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
 
 ### CDN廠商設定範例 {#sample-configurations}
 
 以下提供數家領先CDN廠商的數個設定範例。
 
-#### **Akamai** {#byocdn-akamai}
+#### Akamai {#byocdn-akamai}
 
 ![Akamai1](assets/akamai1.png "Akamai")
 ![Akamai2](assets/akamai2.png "Akamai")
 
-#### **Amazon CloudFront** {#byocdn-cloudfront}
+#### Amazon CloudFront {#byocdn-cloudfront}
 
 ![CloudFront1](assets/cloudfront1.png "Amazon CloudFront")
 ![CloudFront2](assets/cloudfront2.png "Amazon CloudFront")
 
-#### **Cloudflare** {#byocdn-cloudflare}
+#### Cloudflare {#byocdn-cloudflare}
 
 ![Cloudflare1](assets/cloudflare1.png "Cloudflare")
 ![Cloudflare2](assets/cloudflare2.png "Cloudflare")
@@ -188,15 +188,15 @@ x-aem-debug: byocdn=true,edge=true,edge-auth=edge-auth,edge-key=edgeKey1,X-AEM-E
 
 提供的設定範例顯示所需的基本設定。 但是，客戶設定可能有其他影響規則，這些規則會移除、編輯或重新排列AEM as a Cloud Service提供流量所需的標頭。 以下是在設定客戶管理的CDN以指向AEM as a Cloud Service時發生的常見錯誤。
 
-**重新導向至發佈服務端點**
+#### 重新導向至發佈服務端點 {#redirect-publish}
 
 當請求收到403禁止的回應時，表示請求缺少某些必要的標頭。 發生此情況的常見原因是CDN同時管理Apex和`www`網域流量，但未為`www`網域新增正確的標頭。 可透過檢查您的AEM as a Cloud Service CDN記錄並驗證所需的請求標頭來測試此問題。
 
-**錯誤421錯誤導向重新導向**
+#### 錯誤421錯誤導向重新導向 {#error-421}
 
 訊息為`Requested host does not match any Subject Alternative Names (SANs) on TLS certificate`的421錯誤指出HTTP `Host`不符合憑證上列出的任何主機。 此問題通常表示`Host`或SNI設定錯誤。 確定`Host`以及SNI設定都指向publish-p&lt;PROGRAM_ID>-e.adobeaemcloud.com主機。
 
-**太多重新導向回圈**
+#### 太多重新導向回圈 {#redirect-loop}
 
 當頁面收到「太多重新導向」回圈時，系統會在CDN新增一些要求標題，以符合強制傳回本身的重新導向。 例如：
 
