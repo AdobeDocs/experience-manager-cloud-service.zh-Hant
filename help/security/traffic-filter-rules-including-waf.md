@@ -4,10 +4,10 @@ description: 設定流量篩選規則，包括 Web 應用程式防火牆 (WAF) �
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 3a46db9c98fe634bf2d4cffd74b54771de748515
+source-git-commit: d967706a000edc8c06193d1a8a39a1931fffbb99
 workflow-type: tm+mt
-source-wordcount: '4582'
-ht-degree: 100%
+source-wordcount: '4610'
+ht-degree: 97%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 許多流量篩選規則可供所有 AEM as a Cloud Service Sites 和 Forms 客戶使用。可將其稱之為&#x200B;*標準流量篩選規則*，主要根據要求屬性和要求標頭進行運作，包括 IP、主機名稱、路徑以及使用者代理程式。標準流量篩選規則包括速率限制規則，以防止流量尖峰。
 
-流量篩選規則的子類別需要增強的安全性授權或 WAF-DDoS 保護授權。這些強大的規則也稱為 WAF (網頁應用程式防火牆) 流量篩選規則 (或簡稱為 *WAF 規則*)，且可以存取本文稍後將進行說明的 [WAF 標幟](#waf-flags-list)。
+流量篩選規則的子類別需要擴充安全性(先前稱為WAF-DdS保護)或醫療保健的擴充安全性（先前稱為增強安全性）授權。 這些強大的規則也稱為 WAF (網頁應用程式防火牆) 流量篩選規則 (或簡稱為 *WAF 規則*)，且可以存取本文稍後將進行說明的 [WAF 標幟](#waf-flags-list)。
 
 流量篩選器規則可以透過 Cloud Manager 設定管道，部署至開發、中繼和生產環境類型。可以使用命令列工具將設定檔案部署至快速開發環境 (RDE) 中。
 
@@ -111,7 +111,7 @@ ht-degree: 100%
 
 您可以將&#x200B;*流量篩選規則*&#x200B;設定為符合 IPS、使用者代理、要求標頭、主機名稱、地理位置和 URL 等模式。
 
-授權強化的安全性或 WAF-DDoS 保護安全性產品的客戶，也可以設定特殊類別的流量篩選規則 *WAF 流量篩選規則* (或簡稱為 *WAF 規則*)，其參考一個或多個 [WAF 標幟](#waf-flags-list)。
+授權延伸安全性(先前名為WAF-DDoS Protection)或醫療保健延伸安全性（先前名為Enhanced Security）產品的客戶，也可以設定稱為&#x200B;*WAF流量篩選規則* (或簡稱&#x200B;*WAF規則*)的特殊流量篩選規則類別，以參考一或多個[WAF旗標](#waf-flags-list)。
 
 以下是一組流量篩選規則的範例，其中也包括 WAF 規則。
 
@@ -430,7 +430,7 @@ data:
 
 **範例 1**
 
-當在過去 10 秒內超過平均 60 個要求/秒時 (per CDN POP)，此規則將封鎖用戶端 5 毫秒：
+此規則在使用者端在過去10秒內超過平均每秒60個要求（每個CDN POP）時會封鎖5分鐘：
 
 ```
 kind: "CDN"
@@ -641,7 +641,7 @@ Adobe 提供了將儀表板工具下載到您電腦上的機制，以擷取透�
 
 ## 建議的入門規則 {#recommended-starter-rules}
 
-Adobe 建議從以下的流量篩選規則開始，然後隨著時間的變化進行調整。*標準規則*&#x200B;可透過 Sites 或 Forms 授權提供，而 *WAF 規則*&#x200B;則需要增強安全性或 WAF-DDoS 保護授權。
+Adobe 建議從以下的流量篩選規則開始，然後隨著時間的變化進行調整。*Sites或Forms授權可使用*&#x200B;標準規則，而&#x200B;*WAF規則*&#x200B;需要延伸安全性(先前名為WAF-DDoS Protection)或醫療保健延伸安全性（先前名為Enhanced Security）授權。
 
 ### 建議的入門規則 {#recommended-nonwaf-starter-rules}
 
