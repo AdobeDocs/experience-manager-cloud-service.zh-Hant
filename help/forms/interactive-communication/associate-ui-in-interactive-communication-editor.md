@@ -4,9 +4,9 @@ description: 透過啟用面向客戶的代理程式產生個人化、合規的�
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 19270498fa60f860b31400ad40705ecd2f821cf8
+source-git-commit: 234b6dc747bbba21e9249d526bf894860572dfe5
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '600'
 ht-degree: 3%
 
 ---
@@ -97,7 +97,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
-> 支援的關聯元件：日期欄位、數值欄位、文字欄位。
+> 支援的關聯元件：日期欄位、數值欄位、文字欄位、日期時間欄位、日期欄位、核取方塊、選項按鈕、下拉式清單。
 
 ### 建立互動通訊
 
