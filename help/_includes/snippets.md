@@ -179,7 +179,7 @@ ht-degree: 99%
 >[!IMPORTANT]
 >
 >如果您使用 (或打算使用) 前端管道來開發網站，必須先行新增 Cloud Manager IP 允許清單。
->請參閱「[ Cloud Manager IP 允許清單與前端管道搭配使用](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline)」。
+>請參閱「[&#x200B; Cloud Manager IP 允許清單與前端管道搭配使用](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline)」。
 
 ## IP 允許清單和通用編輯器 {#ip-allow-lists-ue}
 

@@ -207,8 +207,8 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
 1. 選取&#x200B;**[!UICONTROL 建立]**&#x200B;以開啟&#x200B;**[!UICONTROL 建立資料Source設定精靈]**。 指定設定的名稱及標題，從&#x200B;**[!UICONTROL 服務型別]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL RESTful服務]**，選擇性地瀏覽並選取設定的縮圖影像，然後選取&#x200B;**[!UICONTROL 下一步]**。
 1. 指定RESTful服務的下列詳細資料：
 
-   * 從[!UICONTROL Swagger Source]下拉式清單中選取URL或檔案，並相應地指定[!DNL Swagger URL]定義檔案的[!DNL  Swagger]或從您的本機檔案系統上傳[!DNL Swagger]檔案。
-   * 根據[!DNL  Swagger] Source輸入，下列欄位已預先填入值：
+   * 從[!UICONTROL Swagger Source]下拉式清單中選取URL或檔案，並相應地指定[!DNL Swagger URL]定義檔案的[!DNL &#x200B; Swagger]或從您的本機檔案系統上傳[!DNL Swagger]檔案。
+   * 根據[!DNL &#x200B; Swagger] Source輸入，下列欄位已預先填入值：
 
       * 配置： REST API使用的傳輸通訊協定。 下拉式清單中顯示的配置型別數目，取決於[!DNL Swagger]來源中定義的配置。
       * 主機：提供REST API之主機的網域名稱或IP位址。 這是必填欄位。
@@ -232,8 +232,8 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
 1. 選取&#x200B;**[!UICONTROL 建立]**&#x200B;以開啟&#x200B;**[!UICONTROL 建立資料Source設定精靈]**。 指定設定的名稱及標題，從&#x200B;**[!UICONTROL 服務型別]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL RESTful服務]**，選擇性地瀏覽並選取設定的縮圖影像，然後選取&#x200B;**[!UICONTROL 下一步]**。
 1. 指定RESTful服務的下列詳細資料：
 
-   * 從[!UICONTROL Swagger Source]下拉式清單中選取URL或檔案，並相應地指定[!DNL Swagger 3.0 URL]定義檔案的[!DNL  Swagger]或從您的本機檔案系統上傳[!DNL Swagger]檔案。
-   * 根據[!DNL  Swagger] Source輸入，會顯示與目標伺服器的連線資訊。
+   * 從[!UICONTROL Swagger Source]下拉式清單中選取URL或檔案，並相應地指定[!DNL Swagger 3.0 URL]定義檔案的[!DNL &#x200B; Swagger]或從您的本機檔案系統上傳[!DNL Swagger]檔案。
+   * 根據[!DNL &#x200B; Swagger] Source輸入，會顯示與目標伺服器的連線資訊。
    * 選取驗證型別 — 無、OAuth2.0（[授權碼](https://oauth.net/2/grant-types/authorization-code/)、[使用者端認證](https://oauth.net/2/grant-types/client-credentials/)）、基本驗證、API金鑰或自訂驗證 — 以存取RESTful服務，並相應地提供驗證的詳細資料。
 
    如果您選取&#x200B;**[!UICONTROL API金鑰]**&#x200B;作為驗證型別，請指定API金鑰的值。 API金鑰可作為請求標頭或查詢引數傳送。 從&#x200B;**[!UICONTROL 位置]**&#x200B;下拉式清單中選取其中一個選項，並相應地在&#x200B;**[!UICONTROL 引數名稱]**&#x200B;欄位中指定標頭名稱或查詢引數。
