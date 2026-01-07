@@ -4,9 +4,9 @@ description: 瞭解如何在通用編輯器中設定RTF編輯器(RTE)。
 feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
-source-git-commit: 482c9604bf4dd5e576b560d350361cdc598930e3
+source-git-commit: af63b3ff705954fe2145303ea0dc80720ad9e552
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '765'
 ht-degree: 1%
 
 ---
@@ -20,6 +20,13 @@ ht-degree: 1%
 通用編輯器在適當位置和屬性面板中提供RTF編輯器(RTE)，讓作者在編輯文字時套用格式變更。
 
 此RTE可使用[元件篩選器來設定。](/help/implementing/universal-editor/filtering.md)本檔案說明可用的組態選項以及範例。
+
+>[!NOTE]
+>
+>啟動Universal Editor專案時，後端支援的所有RTF文字功能(AEM搭配Edge Delivery或Headless實作)都會自動啟用。
+>
+>* 您可以停用這些不需要的選項。
+>* 不支援啟用與您的專案型別不相容的選項。
 
 ## 設定結構 {#structure}
 
