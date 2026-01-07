@@ -4,10 +4,10 @@ description: 了解通用編輯器傳送的不同事件，而您可以使用這�
 exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: ac361c31b116466cc9a718640c1de4e4ef396fba
 workflow-type: tm+mt
-source-wordcount: '510'
-ht-degree: 100%
+source-wordcount: '530'
+ht-degree: 94%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 100%
 
 ## 內容更新事件 {#content-events}
 
-### aue:content-add {#content-add}
+### aue&amp;amp；冒號；content-add {#content-add}
 
 當新元件新增至容器時會觸發 `aue:content-add` 事件。
 
@@ -53,7 +53,7 @@ ht-degree: 100%
 }
 ```
 
-### aue:content-details {#content-details}
+### aue&amp;amp；冒號；內容詳細資料 {#content-details}
 
 當屬性面板中載入元件時會觸發 `aue:content-details` 事件。
 
@@ -70,7 +70,7 @@ ht-degree: 100%
 }
 ```
 
-### aue:content-move {#content-move}
+### aue&amp;amp；冒號；內容移動 {#content-move}
 
 當元件移動時會觸發 `aue:content-move` 事件。
 
@@ -89,7 +89,7 @@ ht-degree: 100%
 }
 ```
 
-### aue:content-patch {#content-patch}
+### aue&amp;amp；冒號；content-patch {#content-patch}
 
 當屬性面板中元件的資料更新時會觸發 `aue:content-patch` 事件。
 
@@ -108,7 +108,7 @@ ht-degree: 100%
 }
 ```
 
-### aue:content-remove {#content-remove}
+### aue&amp;amp；冒號；content-remove {#content-remove}
 
 當元件從容器中移除時會觸發 `aue:content-remove` 事件。
 
@@ -124,7 +124,7 @@ ht-degree: 100%
 }
 ```
 
-### aue:content-update {#content-update}
+### aue&amp;amp；冒號；內容更新 {#content-update}
 
 當元件的屬性在內容中更新時，會觸發 `aue:content-update` 事件。
 
@@ -180,7 +180,7 @@ ht-degree: 100%
 
 ## 使用者介面事件 {#ui-events}
 
-### aue:ui-preview {#ui-preview}
+### 自動&amp;amp；冒號；ui — 預覽 {#ui-preview}
 
 當頁面的編輯模式變更為「**預覽**」時會觸發 `aue:ui-preview` 事件。
 
@@ -192,7 +192,7 @@ ht-degree: 100%
 }
 ```
 
-### aue:ui-edit {#ui-edit}
+### aue&amp;amp；冒號；ui-edit {#ui-edit}
 
 當頁面的編輯模式變更為「**編輯**」時會觸發 `aue:ui-edit` 事件。
 
@@ -204,7 +204,7 @@ ht-degree: 100%
 }
 ```
 
-### aue:ui-viewport-change {#ui-viewport-change}
+### aue&amp;amp；冒號；ui-viewport-change {#ui-viewport-change}
 
 當檢視區大小變更時會觸發 `aue:ui-viewport-change` 事件。
 
@@ -219,7 +219,7 @@ ht-degree: 100%
 }
 ```
 
-### aue:initialized {#initialized}
+### aue&amp;amp；冒號；已初始化 {#initialized}
 
 觸發 `aue:initialized` 事件，讓遠端頁面知道其已成功載入通用編輯器中。
 
@@ -257,4 +257,3 @@ ht-degree: 100%
 ## 其他資源 {#additional-resources}
 
 * [通用編輯器呼叫](/help/implementing/universal-editor/calls.md)
-
