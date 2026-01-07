@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: 在VRE中叫用服務增強功能，使用叫用服務填入下拉式選項，使用叫用服務的輸出設定可重複面板，使用叫用服務的輸出設定面板，使用叫用服務的輸出引數驗證其他欄位。
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 43535e52fd749cc599a4e30be25bcc0dbf20eaef
 workflow-type: tm+mt
-source-wordcount: '1800'
+source-wordcount: '1860'
 ht-degree: 1%
 
 ---
@@ -39,6 +39,8 @@ ht-degree: 1%
 視覺化規則編輯器可讓您根據輸出回應，為&#x200B;**Invoke Service**&#x200B;作業建立成功和失敗處理常式的規則。 下圖描繪了最適化表單的視覺化規則編輯器中的&#x200B;**叫用服務**：
 
 ![啟動服務處理常式](/help/forms/assets/invoke-service-rule-editor.png)
+
+### 新增成功處理常式和失敗處理常式
 
 若要新增成功或失敗處理常式，請分別按一下&#x200B;**[!UICONTROL 新增成功處理常式]**&#x200B;或&#x200B;**[!UICONTROL 新增失敗處理常式]**。
 
@@ -160,6 +162,10 @@ ht-degree: 1%
 
 ![設定下拉式清單值](/help/forms/assets/set-dropdownoption.png)
 
+>[!NOTE]
+>
+> 請參閱[新增成功處理常式與失敗處理常式](#adding-success-handler-and-failure-handler)區段，瞭解如何設定成功和失敗處理常式。
+
 #### 輸出
 
 在`101`文字方塊中輸入`Pet ID`，以根據輸入的值動態填入下拉式清單選項。
@@ -181,6 +187,10 @@ ht-degree: 1%
 
 ![建立可重複面板的規則](/help/forms/assets/create-rule-repeatable-panel.png)
 
+>[!NOTE]
+>
+> 請參閱[新增成功處理常式與失敗處理常式](#adding-success-handler-and-failure-handler)區段，瞭解如何設定成功和失敗處理常式。
+
 #### 輸出
 
 在`101`文字方塊中輸入`Pet ID`，以根據輸入值動態填入可重複面板。
@@ -199,6 +209,10 @@ ht-degree: 1%
 #### 實施
 
 在`Pet ID`文字方塊上建立規則以叫用`getPetById`服務。 在&#x200B;**[!UICONTROL 新增成功處理常式]**&#x200B;中，新增另一個成功處理常式回應。 在規則中將`categoryname`文字方塊的值設定為`category.name`。
+
+>[!NOTE]
+>
+> 請參閱[新增成功處理常式與失敗處理常式](#adding-success-handler-and-failure-handler)區段，瞭解如何設定成功和失敗處理常式。
 
 ![建立可重複面板的規則](/help/forms/assets/set-panel-values.png)
 
