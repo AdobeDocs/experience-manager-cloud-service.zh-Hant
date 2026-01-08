@@ -3,7 +3,7 @@ title: 在Content Hub中管理集合
 description: 瞭解如何在Content Hub中管理集合
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: 676edf3638ebf660aeb8204dc527d9066d2a731e
+source-git-commit: 69140e717ebc25284f715f73a3abb0b36b66deb2
 workflow-type: tm+mt
 source-wordcount: '1325'
 ht-degree: 2%
@@ -136,7 +136,7 @@ Content Hub可讓您篩選集合檢視，根據您的偏好縮小選項，輕鬆
 
 ## 共用收藏集中可用的資產 {#share-assets-available-within-collection}
 
-您也可以共用收藏集中可用的資產。 請確定[在Content Hub](configure-content-hub-ui-options.md#enable-public-link-sharing)中啟用公用連結共用。 瀏覽至&#x200B;**[!UICONTROL 集合]**&#x200B;索引標籤。 選取集合卡上的![共用圖示](assets/share.svg)圖示。 會複製共用連結。 您可以與收件者共用複製的連結。 深入瞭解[在 [!DNL Content Hub]](share-assets-content-hub.md)中共用資產。
+您也可以共用收藏集中可用的資產。 請確定[在Content Hub](configure-content-hub-ui-options.md#configure-collections-content-hub)中啟用公用連結共用。 瀏覽至&#x200B;**[!UICONTROL 集合]**&#x200B;索引標籤。 選取資產卡上的![共用圖示](assets/share.svg)圖示。 會複製共用連結。 您可以與收件者共用複製的連結。 深入瞭解[在 [!DNL Content Hub]](share-assets-content-hub.md)中共用資產。
 
 Content Hub集合提供全方位的控管工具，包括可自訂的共用許可權和共同作業功能，以有效管理資產。 從唯讀存取到完整管理控制，這些設定支援對資產散佈進行精細治理。 單獨或作為集合的一部分共用資產時，存取範圍由指派給使用者的集合當前存取層級決定。 或者，您無法共用私人集合。
 
@@ -154,7 +154,7 @@ Content Hub集合提供全方位的控管工具，包括可自訂的共用許可
 * 集合的擁有者
 * 具有編輯許可權的非管理員使用者
 
-若要從集合中移除資產，請按一下需要移除資產的集合、選取資產，然後按一下[從集合中移除]。**&#x200B;**
+若要從集合中移除資產，請按一下需要移除資產的集合、選取資產，然後按一下[從集合中移除]。****
 
 ![移除集合](assets/remove-collection-new.jpg)
 
