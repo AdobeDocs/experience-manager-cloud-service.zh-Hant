@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: c5cdcccdb3ac16c5088e46e3f64e8cfc4139e0e4
+source-git-commit: b4df0abb43d69f629d2c643c408cb77af697b942
 workflow-type: tm+mt
-source-wordcount: '1076'
+source-wordcount: '1090'
 ht-degree: 18%
 
 ---
@@ -17,6 +17,10 @@ ht-degree: 18%
 下節是 Experience Manager as a Cloud Service 目前維護版本的技術版本發行說明。
 
 ## 23862 版 {#23862}
+
+>[!CAUTION]
+>
+> 發行說23862已設為私人。 即將提供新的維護發行。
 
 以下摘要說明維護版本23862數的持續改善，該版本於2025年12月23日公開發佈。 前一個維護版本是 23482 版。
 
