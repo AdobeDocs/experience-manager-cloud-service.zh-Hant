@@ -75,7 +75,7 @@ OAuth伺服器對伺服器驗證允許以權杖為基礎的安全存取AEM Forms
 
 >[!BEGINTABS]
 
->適用於AEM Forms Communications API的[!TAB ]
+>[!TAB 適用於AEM Forms Communications API的] 
 
 1. 按一下&#x200B;**新增API**
 
@@ -92,7 +92,7 @@ OAuth伺服器對伺服器驗證允許以權杖為基礎的安全存取AEM Forms
 
       ![選取驗證方法](/help/forms/assets/adc-add-authentication-method.png)
 
->最適化Forms執行階段API的[!TAB ]
+>[!TAB 最適化Forms執行階段API的] 
 
 1. **按一下[新增API]**
 
@@ -104,7 +104,7 @@ OAuth伺服器對伺服器驗證允許以權杖為基礎的安全存取AEM Forms
       ![新增Forms通訊API](/help/forms/assets/adc-add-runtime-api.png)
 
    3. 按一下「**下一步**」。
-   4. 選取&#x200B;**OAuth伺服器對伺服器**驗證方法。
+   4. 選取&#x200B;**OAuth伺服器對伺服器**&#x200B;驗證方法。
       ![選取驗證方法](/help/forms/assets/adc-add-authentication-method.png)
 
 >[!ENDTABS]
