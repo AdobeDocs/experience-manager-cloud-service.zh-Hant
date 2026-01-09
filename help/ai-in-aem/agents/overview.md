@@ -24,7 +24,7 @@ Adobe Experience Manager (AEM) as a Cloud Service提供這些代理程式，可�
 
 >[!IMPORTANT]
 >
->若要使用代理程式，您必須註冊Beta程式。 您可以在[此處](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs)找到有關AEM代理程式Beta方案的詳細資訊。
+>若要使用代理程式，您必須註冊Beta程式。 您可以在[此處](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs)找到有關AEM代理程式Beta方案的詳細資訊。
 
 ## Experience Production Agent {#experience-production-agent}
 
