@@ -3,9 +3,9 @@ title: AEM代理程式概觀
 description: 瞭解AEM中可用的代理程式，以加速內容建立並自動協調變更。
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: f981e7ed9f4bbd26226facf37c343f16a9e99263
+source-git-commit: 5f17f58e70536882eb1a453d12ed08602aec31a6
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '344'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Adobe Experience Manager (AEM) as a Cloud Service提供這些代理程式，可�
 
 >[!IMPORTANT]
 >
->若要使用代理程式，您必須註冊。
+>若要使用代理程式，您必須註冊Beta程式。 您可以在[此處](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs)找到有關AEM代理程式Beta方案的詳細資訊。
 
 ## Experience Production Agent {#experience-production-agent}
 
