@@ -1,24 +1,22 @@
 ---
-title: 如何設定互動式通訊同步API？
+title: 如何設定Forms通訊同步API？
 description: 為Adobe Experience Manager Forms as a Cloud Service的互動式通訊同步API設定開發環境
 role: Admin, Developer, User
 feature: Adaptive Forms,APIs & Integrations
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 9401d96bcf5375dc20c33055343a5b895b4e9107
+source-git-commit: e2f57a32fcc098a2331ad74540a3d48832c2b3c3
 workflow-type: tm+mt
-source-wordcount: '2573'
+source-wordcount: '2380'
 ht-degree: 1%
 
 ---
 
 
-# AEM Forms as a Cloud Service通訊同步API處理
+# 設定AEM Forms Communications同步API的OAuth伺服器對伺服器存取
 
-本指南提供設定及使用AEM Forms Communications Synchronous API的完整指示。
-
-瞭解如何使用OAuth伺服器對伺服器驗證來設定AEM as a Cloud Service環境、啟用API存取及叫用通訊API。
+本指南提供設定及叫用AEM Forms Communications Synchronous API的說明，這些API是透過Adobe Developer Console使用OAuth伺服器對伺服器驗證來存取。
 
 ## 先決條件
 
@@ -30,27 +28,30 @@ ht-degree: 1%
 
 **使用者和角色許可權**
 
-- 已在[https://account.adobe.com/](https://account.adobe.com/)建立Adobe ID
-- 與您組織電子郵件相關聯的Adobe ID
-- 已指派Adobe Managed Services產品內容
 - 在Adobe Admin Console中指派的開發人員角色
 - 在Adobe Developer Console中建立專案的許可權
 
 >[!NOTE]
 >
-> 若要進一步瞭解指派角色和授與使用者存取權，請參閱文章[新增使用者和角色](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-manager/content/requirements/users-and-roles)。
-
-**Cloud Manager存取權**
-
-- [Cloud Manager](https://my.cloudmanager.adobe.com)的登入認證
-- 存取以檢視和管理您的方案環境
-- 建立和執行CI/CD管道的許可權
-- 存取環境詳細資料和設定
+> 若要進一步瞭解指派角色和授與使用者存取權，請參閱文章[新增使用者和角色](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles)。
 
 **Git存放庫存取權**
 
 - 存取Cloud Manager Git存放庫
 - 用於複製和推送變更的Git憑證
+
+>[!NOTE]
+>
+> 若要進一步瞭解如何整合Adobe Cloud Manager與Adobe Cloud Manager，請參閱[Git整合檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/git-integration.html)。
+
+### 使用Adobe Developer Console (ADC)產生存取權杖
+
+- 使用OAuth伺服器對伺服器驗證，透過Adobe Developer Console產生存取權杖。
+- 從Adobe Developer Console擷取使用者端ID
+
+>[!NOTE]
+>
+> 如需使用Adobe Developer Console進行OAuth伺服器對伺服器驗證的詳細資訊，[請按一下這裡](/help/forms/oauth-api-authetication.md)。
 
 ### 開發工具
 
@@ -64,315 +65,263 @@ ht-degree: 1%
 >
 > 這是每個環境的一次性流程，在繼續進行AEM Forms Communications API設定之前必須先完成。
 
-現在，讓我們詳細瞭解每個步驟。
+## 設定AEM Forms通訊同步API
 
-### 步驟1：更新AEM執行個體
+透過Adobe Developer Console，使用OAuth伺服器對伺服器驗證存取AEM Forms通訊API。
 
-若要更新AEM執行個體：
+請依照下列步驟說明如何使用範本和XDP檔案來設定Forms通訊同步API，以產生PDF：
 
-1. **登入Adobe Cloud Manager**
-   1. 瀏覽至[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)
-   2. 使用您的Adobe ID登入
+### 步驟1：存取AEM雲端服務環境和AEM Forms端點
 
-2. **瀏覽至計畫總覽**
-   1. 從清單中選取您的計畫。 系統會將您重新導向至方案概觀頁面
+存取您的AEM Cloud Service環境詳細資訊，以取得API設定所需的URL和識別碼。
 
-3. **尋找環境詳細資料**
-   1. 選取環境名稱旁的`ellipsis`(...)圖示，然後按一下&#x200B;**更新**
-   2. 按一下&#x200B;**提交**&#x200B;按鈕，然後執行建議的完整棧疊管道。
+#### 1.1登入Adobe Cloud Manager
 
-      ![更新環境](/help/forms/assets/update-env.png)
+1. 瀏覽至[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)
+2. 使用您的Adobe ID登入
+
+#### 1.2瀏覽至計畫總覽
+
+從清單中選取您的計畫。 您被重新導向至&#x200B;**方案總覽**&#x200B;頁面
+
+![方案概觀頁面](/help/forms/assets/program-overview.png)
+
+#### 1.3存取和檢視AEM Cloud Service環境
+
+您可以使用以下兩個選項之一，檢視或存取AEM雲端服務環境詳細資訊：
+
+>[!BEGINTABS]
+
+>[!TAB 選項1：從概觀頁面]
+
+1. 在&#x200B;**計畫總覽**&#x200B;頁面
+2. 按一下左側功能表中的&#x200B;**「環境」**。  您可以檢視所有環境的清單
+3. 按一下特定環境名稱以檢視詳細資訊
+
+   ![檢視所有環境](/help/forms/assets/all-env.png)
+
+>[!TAB 選項2：來自環境區段]
+
+1. 在&#x200B;**計畫總覽**&#x200B;頁面
+2. 找到&#x200B;**環境**&#x200B;區段
+3. 按一下&#x200B;**「全部顯示」**&#x200B;以檢視所有環境
+4. 按一下環境旁的&#x200B;**省略符號選單(...)**
+5. 選取&#x200B;**「檢視詳細資料」**
+
+   ![選項1 — 環境詳細資料](/help/forms/assets/option2-env-details.png)
+
+>[!ENDTABS]
+
+#### 4.尋找您的AEM Forms端點
+
+從&#x200B;**環境**&#x200B;詳細資訊頁面，記下您的AEM URL執行個體。
+
+![選項1 — 環境詳細資料](/help/forms/assets/option1-env.png)
+
+>[!NOTE]
+>
+> 若要瞭解如何存取AEM雲端服務環境和AEM Forms端點，請參閱[管理環境檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html)。
 
 ### 步驟2：複製Git存放庫
 
 複製Cloud Manager Git存放庫以管理您的API設定檔案。
 
-1. **找到存放庫區段**
-   1. 在&#x200B;**計畫總覽**&#x200B;頁面上，按一下&#x200B;**存放庫**&#x200B;索引標籤
-   2. 找到存放庫名稱，然後按一下省略符號選單(...)
-   3. 複製存放庫URL
+#### 2.1找出「存放庫」區段
 
-      >[!NOTE]
-      >
-      > URL格式通常是`https://git.cloudmanager.adobe.com/<org>/<program>/`
+1. 在&#x200B;**計畫總覽**&#x200B;頁面上，按一下&#x200B;**存放庫**&#x200B;索引標籤
+2. 找到存放庫名稱，然後按一下省略符號選單(...)
+3. 複製存放庫URL
 
-2. 使用Git命令&#x200B;**複製**
-
-   1. 開啟命令提示或終端機
-   2. 執行`git clone`命令以複製Git存放庫。
-
-      ```bash
-      git clone [repository-url]
-      ```
-
-      >[!NOTE]
-      >
-      > 若要複製Git存放庫，請使用Adobe Cloud Manager提供的憑證。
-
-      例如，若要複製Git存放庫，請執行以下命令：
-
-      ```bash
-      https://git.cloudmanager.adobe.com/formsinternal01/AEMFormsInternal-ReleaseSanity-p43162-uk59167/
-      ```
-
-      ![克隆Git存放庫](/help/forms/assets/repo-clone.png)
-
-
-**Git存放庫整合選項**
-
-Adobe Cloud Manager支援兩種存放庫選項：
-
-- **直接使用Cloud Manager的Git存放庫**
-   - 使用Cloud Manager的原生Git存放庫
-   - 內建與管道的整合
-
-- **與客戶管理的Git存放庫整合**
-   - 連線您自己的Git存放庫（GitHub、GitLab、Bitbucket等）
-   - 設定與Adobe Cloud Manager的同步
-
-若要進一步瞭解如何整合Adobe Cloud Manager與Adobe Cloud Manager，請參閱[Git整合檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/git-integration.html)。
-
-### 步驟3：存取AEM雲端服務環境和AEM Forms端點
-
-存取您的AEM Cloud Service環境詳細資訊，以取得API設定所需的URL和識別碼。
-
-1. **登入Adobe Cloud Manager**
-   1. 瀏覽至[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)
-   2. 使用您的Adobe ID登入
-
-2. **瀏覽至計畫總覽**
-從清單中選取您的計畫。 系統會將您重新導向至方案概觀頁面
-
-3. **存取及檢視AEM雲端服務環境**
-
-   您可以使用以下兩個選項之一，檢視或存取AEM雲端服務環境詳細資訊：
-
-   - **選項1：從概觀頁面**
-
-      1. 在&#x200B;**計畫總覽**&#x200B;頁面
-      2. 按一下左側功能表中的&#x200B;**「環境」**。  您可以檢視所有環境的清單
-
-         ![檢視所有環境](/help/forms/assets/all-env.png)
-
-      3. 按一下特定環境名稱以檢視詳細資訊
-
-         ![選項1 — 環境詳細資料](/help/forms/assets/option1-env.png)
-
-   - **選項2：來自環境區段**
-
-      1. 在計畫總覽頁面
-      2. 找到&#x200B;**環境**&#x200B;區段
-      3. 按一下&#x200B;**「全部顯示」**&#x200B;以檢視所有環境
-      4. 按一下環境旁的&#x200B;**省略符號選單(...)**
-         ![選項1 — 環境詳細資料](/help/forms/assets/option2-env-details.png)
-      5. 選取&#x200B;**「檢視詳細資料」**
-
-         ![選項1 — 環境詳細資料](/help/forms/assets/option1-env.png)
-
-4. **尋找您的AEM Forms端點**
-
-   從&#x200B;**環境**&#x200B;詳細資訊頁面，請注意下列詳細資訊：
-
-   **作者服務URL**
-
-   - URL： `https://author-pXXXXX-eYYYYY.adobeaemcloud.com`
-   - 貯體：author-pXXXXX-eYYYY
-範例： `https://author-p43162-e177398.adobeaemcloud.com`
-
-   **發佈服務URL**
-
-   - URL： `https://publish-pXXXXX-eYYYYY.adobeaemcloud.com`
-   - 貯體：publish-pXXXXX-eYYYY
-範例： `https://publish-p43162-e177398.adobeaemcloud.com`
+   ![複製存放庫URL](/help/forms/assets/copy-repo-url.png)
 
 >[!NOTE]
 >
-> 若要瞭解如何存取AEM雲端服務環境和AEM Forms端點，請參閱[管理環境檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=zh-Hant)。
+> URL格式通常是`https://git.cloudmanager.adobe.com/<org>/<program>/`
 
-### 步驟4： API存取設定
+#### 2.2使用Git命令複製
 
-執行以下步驟來設定AEM Forms Communications API：
+1. 開啟命令提示或終端機
+2. 執行`git clone`命令以複製Git存放庫。
 
-#### 4.1 Adobe Developer Console專案設定
+   ```bash
+   git clone [repository-url]
+   ```
 
-1. **存取Adobe Developer Console**
-   1. 導覽至[Adobe Developer Console](https://developer.adobe.com/console)
-   2. 使用您的Adobe ID登入
+>[!NOTE]
+>
+> 若要複製Git存放庫，請使用Adobe Cloud Manager提供的憑證。
 
-2. **建立新專案**
-   1. 在&#x200B;**快速入門**&#x200B;區段中，按一下&#x200B;**建立新專案**
-   2. 使用預設名稱建立新專案
+例如，若要複製Git存放庫，請執行以下命令：
 
-      ![建立ADC專案](/help/forms/assets/adc-home.png)
+```bash
+https://git.cloudmanager.adobe.com/formsinternal01/AEMFormsInternal-ReleaseSanity-pXXX-ukYYYY/
+```
 
-   3. 按一下右上角的&#x200B;**編輯專案**
+![克隆Git存放庫](/help/forms/assets/repo-clone.png)
 
-      ![編輯專案](/help/forms/assets/adc-edit-project.png)
+若要進一步瞭解如何整合Adobe Cloud Manager與Adobe Cloud Manager，請參閱[Git整合檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/git-integration.html)。
 
-   4. 提供有意義的名稱（例如「formsproject」）
-   5. 按一下「**儲存**」
+### 步驟3：Adobe Developer Console專案設定
 
-      ![編輯專案名稱](/help/forms/assets/adc-edit-projectname.png)
+#### 3.1存取Adobe Developer Console
 
-#### 4.2新增Forms通訊API
+1. 導覽至[Adobe Developer Console](https://developer.adobe.com/console)
+2. 使用您的Adobe ID登入
+3. 建立新專案或導覽至您現有的專案
 
-您可以根據需求新增不同的AEM Forms Communications API。
+>[!BEGINTABS]
 
-**A。針對Document Services API**
+>[!TAB 若要建立新專案]
+
+1. 在&#x200B;**快速入門**&#x200B;區段中，按一下&#x200B;**建立新專案**
+2. 使用預設名稱建立新專案
+
+   ![建立ADC專案](/help/forms/assets/adc-home.png)
+
+3. 按一下右上角的&#x200B;**編輯專案**
+
+   ![編輯專案](/help/forms/assets/adc-edit-project.png)
+
+4. 提供有意義的名稱（例如「formsproject」）
+5. 按一下「**儲存**」
+
+   ![編輯專案名稱](/help/forms/assets/adc-edit-projectname.png)
+
+>[!TAB 瀏覽至您現有的專案]
+
+1. 從Adobe Developer Console按一下&#x200B;**所有專案**
+
+   ![搜尋專案](/help/forms/assets/search-adc-project.png)
+
+2. 找到您的專案，然後按一下以開啟。
+
+   ![尋找專案](/help/forms/assets/locate-adc-project.png)
+
+>[!ENDTABS]
+
+#### 3.2新增Forms通訊API
 
 1. 按一下&#x200B;**新增API**
 
    ![新增API](/help/forms/assets/adc-add-api.png)
 
-2. 選取&#x200B;**Forms通訊API**
-   1. 在&#x200B;_新增API_&#x200B;對話方塊中，依&#x200B;**Experience Cloud**&#x200B;篩選
-   2. 選取&#x200B;**「Forms通訊API」**
+2. 在&#x200B;_新增API_&#x200B;對話方塊中，依&#x200B;**Experience Cloud**&#x200B;篩選
+3. 選取&#x200B;**「Forms通訊API」**
 
    ![新增Forms通訊API](/help/forms/assets/adc-add-forms-api.png)
 
-
-3. 選取&#x200B;**OAuth伺服器對伺服器**&#x200B;驗證方法
+4. 按一下「**下一步**」。
+5. 選取&#x200B;**OAuth伺服器對伺服器**&#x200B;驗證方法
 
    ![選取驗證方法](/help/forms/assets/adc-add-authentication-method.png)
+6. 按一下「**下一步**」。
 
-**B。適用於Forms執行階段API**
+#### 3.3新增產品設定檔
 
-1. **按一下[新增API]**
-   - 在您的專案中，按一下&#x200B;**新增API**&#x200B;按鈕
+1. 選取符合您AEM執行個體URL (**)的**&#x200B;產品設定檔`https://Service Type -Environment Type-Program XXX-Environment XXX.adobeaemcloud.com`。
 
-   ![新增API](/help/forms/assets/adc-add-api.png)
-
-2. **選取AEM Forms傳遞和執行階段API**
-   - 在&#x200B;_新增API_&#x200B;對話方塊中，依&#x200B;**Experience Cloud**&#x200B;篩選
-   - 選取&#x200B;**「AEM Forms傳遞和執行階段API」**
-   - 按一下「**下一步**」。
-
-   ![新增執行階段API](/help/forms/assets/add-runtime-api.png)
-
-
-3. **驗證方法**
-   - 選取&#x200B;**OAuth伺服器對伺服器**&#x200B;驗證方法。
-
-
-   ![選取驗證方法](/help/forms/assets/add-authentication-for-runtime-apis.png)
-
-#### 4.3新增產品設定檔
-
-請依照下列步驟新增產品設定檔：
-
-1. 根據所需的存取層級選取適當的&#x200B;**產品設定檔**：
-
-   | 存取型別 | 產品設定檔 |
-   |------------------|----------------------|
-   | 唯讀存取權 | `AEM Users - author - Program XXX - Environment XXX` |
-   | 讀取/寫入存取權 | `AEM Assets Collaborator Users - author - Program XXX - Environment XXX` |
-   | 完整管理存取權 | `AEM Administrators - author - Program XXX - Environment XXX` |
-
-2. 選取符合作者服務URL (**)的**&#x200B;產品設定檔`https://author-pXXXXX-eYYYYY.adobeaemcloud.com`。 例如：選取`https://author-pXXXXX-eYYYYY.adobeaemcloud.com`。
-
-3. 按一下&#x200B;**「儲存已設定的 API」**。API和產品描述檔已新增到您的專案
+2. 按一下&#x200B;**「儲存已設定的 API」**。API和產品描述檔已新增到您的專案
 
    ![選取專案組態](/help/forms/assets/adc-add-product-profile.png)
 
-#### 4.4產生並儲存認證
-
-1. **存取您的認證**
-
-   1. 在Adobe Developer Console中導覽至您的專案
-   2. 按一下&#x200B;**OAuth伺服器對伺服器**&#x200B;認證
-   3. 檢視&#x200B;**認證詳細資料**&#x200B;區段
+3. 檢視&#x200B;**認證詳細資料**&#x200B;區段
 
    ![檢視認證](/help/forms/assets/adc-view-credential.png)
 
-2. **記錄API認證**
+**記錄API認證**
 
-   ```text
-   API Credentials:
-   ================
-   Client ID: <your_client_id>
-   Client Secret: <your_client_secret>
-   Technical Account ID: <tech_account_id>
-   Organization ID: <org_id>
-   Scopes: AdobeID,openid,read_organizations
-   ```
+```text
+    API Credentials:
+    ================
+    Client ID: <your_client_id>
+    Client Secret: <your_client_secret>
+    Technical Account ID: <tech_account_id>
+    Organization ID: <org_id>
+    Scopes: AdobeID,openid,read_organizations
+```
 
-#### 4.5存取Token產生
+#### 3.4產生存取權
 
-**A。測試**
+>[!BEGINTABS]
+
+>[!TAB 以進行測試]
 
 在Adobe Developer Console中手動產生存取權杖：
 
-1. **瀏覽至您的專案**
-   1. 在Adobe Developer Console中，開啟您的專案
-   2. 按一下&#x200B;**OAuth伺服器對伺服器**
-
-2. **產生存取權杖**
-   1. 按一下專案API區段中的&#x200B;**「產生存取權杖」**&#x200B;按鈕
-   2. 複製產生的存取權杖
+1. 按一下專案API區段中的&#x200B;**「產生存取權杖」**&#x200B;按鈕
+2. 複製產生的存取權杖
 
    ![產生存取權杖](/help/forms/assets/adc-access-token.png)
 
-   >[!NOTE]
-   >
-   > 存取權杖的有效期限為&#x200B;**24小時**
+>[!NOTE]
+>
+> 存取權杖僅對&#x200B;**24小時**&#x200B;有效
 
-**B。用於生產**
+>[!TAB 用於生產]
 
-使用cURL命令以程式設計方式產生權杖：
+使用[Adobe IMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service) API以程式設計方式產生權杖：
 
 **必要的認證：**
 
 - 用戶端 ID
 - 用戶端密碼
-- 範圍（通常： `AdobeID,openid,read_organizations`）
+- 範圍（通常： `openid, AdobeID, read_organizations, additional_info.projectedProductContext, read_pc.dma_aem_cloud, aem.document`）
 
 **權杖端點：**
 
 ```
-https://ims-na1.adobelogin.com/ims/token/v3
+    https://ims-na1.adobelogin.com/ims/token/v3
 ```
 
 **範例要求(curl)：**
 
 ```bash
-curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' \
-  -H 'Content-Type: application/x-www-form-urlencoded' \
-  -d 'grant_type=client_credentials' \
-  -d 'client_id=<YOUR_CLIENT_ID>' \
-  -d 'client_secret=<YOUR_CLIENT_SECRET>' \
-  -d 'scope=AdobeID,openid,read_organizations'
+    curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' \
+    -H 'Content-Type: application/x-www-form-urlencoded' \
+    -d 'grant_type=client_credentials' \
+    -d 'client_id=<YOUR_CLIENT_ID>' \
+    -d 'client_secret=<YOUR_CLIENT_SECRET>' \
+    -d 'scope=AdobeID,openid,read_organizations'
 ```
 
 **回應：**
 
 ```json
-{
-  "access_token": "eyJhbGciOiJSUz...",
-  "token_type": "bearer",
-  "expires_in": 86399
-}
+        {
+        "access_token": "eyJhbGciOiJSUz...",
+        "token_type": "bearer",
+        "expires_in": 86399
+        }
 ```
 
-#### 4.6向AEM環境註冊使用者端ID
+>[!ENDTABS]
+
+您現在可以使用產生的存取Token針對開發、預備或生產環境進行API呼叫。
+
+>[!NOTE]
+>
+> 若要進一步瞭解透過Adobe Developer Console的OAuth伺服器對伺服器驗證，請參閱[OAuth伺服器對伺服器驗證](/help/forms/oauth-api-authetication.md)文章。
+
+### 步驟4：向AEM環境註冊使用者端ID
 
 若要讓ADC專案的使用者端ID能夠與AEM執行個體通訊，您必須使用YAML設定檔案進行註冊，並透過設定管道進行部署。
 
-1. **尋找或建立設定目錄**
+#### 4.1尋找或建立設定目錄
 
-   1. 導覽至複製的AEM專案存放庫，然後導覽至`config`資料夾
-   2. 如果該檔案不存在，請在專案根層級建立：
+1. 導覽至複製的AEM專案存放庫，並找到`config`資料夾
+2. 如果該檔案不存在，請在專案根層級建立：
 
    ```bash
    mkdir config
    ```
 
-2. 在`api.yaml`目錄中建立名為`config`的新檔案：
+3. 在`api.yaml`目錄中建立名為`config`的新檔案：
 
    ```bash
    touch config/api.yaml
    ```
 
-3. 在`api.yaml`檔案中新增下列程式碼：
+4. 在`api.yaml`檔案中新增下列程式碼：
 
    ```yaml
    kind: "API"
@@ -389,26 +338,24 @@ curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' \
        - "<your_client_id>"
    ```
 
-   以下說明組態引數：
+以下說明組態引數：
 
-   - **kind**：一律設為`"API"` （將此識別為API設定）
-   - **版本**： API版本，通常是`"1"`或`"1.0"`
-   - **envTypes**：套用此設定的環境型別陣列
-      - `["dev"]` — 僅開發環境
-      - `["stage"]` — 僅暫存環境
-      - `["prod"]` — 僅生產環境
-   - **allowedClientIDs**：允許使用者端ID存取您的AEM執行個體
-      - **作者**：作者層的使用者端ID
-      - **發佈**：發佈層級的使用者端ID
-      - **預覽**：預覽層的使用者端ID
+- **kind**：一律設為`"API"` （將此識別為API設定）
+- **版本**： API版本，通常是`"1"`或`"1.0"`
+- **envTypes**：套用此設定的環境型別陣列
+   - `["dev"]` — 僅開發環境
+   - `["stage"]` — 僅暫存環境
+   - `["prod"]` — 僅生產環境
+- **allowedClientIDs**：允許使用者端ID存取您的AEM執行個體
+   - **作者**：作者層的使用者端ID
+   - **發佈**：發佈層級的使用者端ID
+   - **預覽**：預覽層的使用者端ID
 
-   例如，將`allowedClientIDs`新增為`6bc4589785e246eda29a545d3ca55980`，並將envTypes新增為`dev`：
+![正在新增設定檔](/help/forms/assets/create-api-yaml-file.png)
 
-   ![正在新增設定檔](/help/forms/assets/create-api-yaml-file.png)
+#### 4.2提交和推送變更
 
-4. **認可和推播變更**
-
-   1. 導覽至您克隆的存放庫的根資料夾，然後執行下列命令：
+1. 導覽至您克隆的存放庫的根資料夾，然後執行下列命令：
 
 
    ```bash
@@ -420,112 +367,115 @@ curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' \
    ![推播Git變更](/help/forms/assets/push-yaml-changes-in-git.png)
 
 
-5. **安裝設定管道**
+### 步驟5：設定設定管道
 
-   1. **登入Cloud Manager**
-      1. 瀏覽至[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)
-      2. 使用您的Adobe ID登入
+#### 5.1找到管道卡
 
-   2. **瀏覽至您的程式**
-從清單中選取您的方案，系統就會將您重新導向方案概觀頁面
+1. 在計畫總覽頁面上找到&#x200B;**管道**&#x200B;卡
+2. 按一下&#x200B;**「新增」**&#x200B;按鈕
 
-   3. **找到管道卡**
-      1. 在計畫總覽頁面上找到&#x200B;**管道**&#x200B;卡
-      1. 按一下&#x200B;**「新增」**&#x200B;按鈕
+   ![新增管道](/help/forms/assets/add-pipeline.png)
 
-   4. **選取管道型別**
+#### 5.2選取管線型別
 
-      - **適用於開發環境**：選取&#x200B;**「新增非生產管道」**。 非生產管道適用於開發和測試環境
+- **適用於開發環境**：選取&#x200B;**「新增非生產管道」**。 非生產管道適用於開發和測試環境
 
-      - **針對生產環境**：選取&#x200B;**「新增生產管道」**。 生產管道需要其他核准
+- **針對生產環境**：選取&#x200B;**「新增生產管道」**。 生產管道需要其他核准
 
-        >[!NOTE]
-        >
-        > 在這種情況下，請建立非生產管道，因為開發環境可供使用。
+>[!NOTE]
+>
+> 在這種情況下，請建立非生產管道，因為開發環境可供使用。
 
-   5. **設定管道 — 設定索引標籤**
+**1. 設定管道 — 設定索引標籤**
 
-      在&#x200B;**組態**&#x200B;索引標籤中：
+在&#x200B;**組態**&#x200B;索引標籤中：
 
-      a. **管線型別**
-      - 選取&#x200B;**「部署管道」**
+a. **管線型別**
 
-      b. **管道名稱**
-      - 提供描述性名稱，例如，將管道命名為`api-config-pipieline`
+- 選取&#x200B;**「部署管道」**
 
-      c. **部署觸發程式**
-      - **手動**：僅在手動觸發時部署（建議用於初始設定）
-      - **在Git變更上**：將變更推送至分支時自動部署
+b. **管道名稱**
 
-      d. **重要量度失敗行為**
-      - **每次都詢問**：失敗時提示動作（預設）
-      - **立即失敗**：在量度失敗時自動讓管道失敗
-      - **立即繼續**：失敗仍繼續
+- 提供描述性名稱，例如，將管道命名為`api-config-pipieline`
 
-      e.按一下&#x200B;**「繼續」**&#x200B;以繼續前往&#x200B;**Source程式碼**&#x200B;標籤
+c. **部署觸發程式**
 
-      ![設定管道](/help/forms/assets/add-config-pipeline.png)
+- **手動**：僅在手動觸發時部署（建議用於初始設定）
+- **在Git變更上**：將變更推送至分支時自動部署
 
-   6. **設定Pipeline - Source程式碼標籤**
+d. **重要量度失敗行為**
 
-      在&#x200B;**Source程式碼**&#x200B;索引標籤中：
+- **每次都詢問**：失敗時提示動作（預設）
+- **立即失敗**：在量度失敗時自動讓管道失敗
+- **立即繼續**：失敗仍繼續
 
-      a. **部署型別**
-      - 選取&#x200B;**「目標部署」**
+e.按一下&#x200B;**「繼續」**&#x200B;以繼續前往&#x200B;**Source程式碼**&#x200B;標籤
 
-      b. **部署選項**
-      - 選取&#x200B;**「設定」** （僅部署設定檔）。 它會告訴Cloud Manager這是設定部署。
+![設定管道](/help/forms/assets/add-config-pipeline.png)
 
-      c. **選取合格的部署環境**
-      - 選擇您要部署設定的環境。 在此案例中，它是`dev`環境。
+**2. 設定Pipeline - Source程式碼標籤**
 
-      d. **定義Source程式碼詳細資料**
+在&#x200B;**Source程式碼**&#x200B;索引標籤中：
 
-      - **存放庫**：選取包含您`api.yaml`檔案的存放庫。 例如，選取`AEMFormsInternal-ReleaseSanity-p43162-uk59167`存放庫。
-      - **Git分支**：選取您的分支。 例如，在此案例中，我們的程式碼部署在`main`分支。
-      - **程式碼位置**：輸入`config`目錄的路徑。 由於`api.yaml`位於根目錄的`config`資料夾中，所以請輸入`/config`
+a. **部署型別**
 
-      e.按一下&#x200B;**「儲存」**&#x200B;以建立管道
+- 選取&#x200B;**「目標部署」**
 
-      ![設定管道](/help/forms/assets/confirm-pipeline-1.png)
+b. **部署選項**
 
-6. **部署組態**
+- 選取&#x200B;**「設定」** （僅部署設定檔）。 它會告訴Cloud Manager這是設定部署。
 
-   現在管道已建立，請部署您的`api.yaml`設定：
+c. **選取合格的部署環境**
 
-   1. 從管道總覽&#x200B;**&#x200B;**
-      1. 在方案總覽頁面上，找到&#x200B;**管道**&#x200B;卡片
-      2. 瀏覽至清單中新建立的設定管道。 例如，尋找您建立的管道名稱（例如「api-config-pipeline」）。 您可以檢視管道詳細資訊，包括狀態和上次執行。
+- 選擇您要部署設定的環境。 在此案例中，它是`dev`環境。
 
-   2. **開始部署**
-      1. 按一下您的管道旁的&#x200B;**「建置」**&#x200B;按鈕（或播放圖示▶）
-      2. 如果出現提示且管道執行開始，則確認部署
+d. **定義Source程式碼詳細資料**
 
-      ![執行管道](/help/forms/assets/run-config-pipeline.png)
+- **存放庫**：選取包含您`api.yaml`檔案的存放庫。 例如，選取`AEMFormsInternal-ReleaseSanity-pXXXXX-ukYYYYY`存放庫。
+- **Git分支**：選取您的分支。 例如，在此案例中，我們的程式碼部署在`main`分支。
+- **程式碼位置**：輸入`config`目錄的路徑。 由於`api.yaml`位於根目錄的`config`資料夾中，所以請輸入`/config`
 
-   3. **驗證部署成功**
-      - 等待管道完成。
-         - 如果成功，狀態會變更為「成功」（綠色核取記號✓）。
-         - 如果失敗，狀態會變更為「失敗」（紅十字✗）。 按一下&#x200B;**下載記錄檔**&#x200B;以檢視錯誤詳細資料。
+e.按一下&#x200B;**「儲存」**&#x200B;以建立管道
 
-           ![管道成功](/help/forms/assets/pipeline-suceess.png)
+![設定管道](/help/forms/assets/confirm-pipeline-1.png)
 
-      現在，您可以開始測試Forms Communications API。 為了測試目的，您可以使用Postman、curl或任何其他REST使用者端來叫用API。
+### 步驟6：部署設定
 
-### 步驟5：API規格和測試
+現在管道已建立，請部署您的`api.yaml`設定：
 
-現在您的環境已設定完畢，您可以使用[Swagger UI](#a-using-swagger-ui-for-api-testing)或以程式設計方式開發NodeJS應用程式，以開始測試AEM Forms Communication API。
+#### 6.1來自管道概觀
 
-在此範例中，讓我們使用範本和XDP檔案，透過檔案服務API來產生PDF。
+1. 在方案總覽頁面上，找到&#x200B;**管道**&#x200B;卡片
+2. 瀏覽至清單中新建立的設定管道。 例如，尋找您建立的管道名稱（例如「api-config-pipeline」）。 您可以檢視管道詳細資訊，包括狀態和上次執行。
 
-#### A.使用Swagger UI進行API測試
+#### 6.2開始部署**
 
-Swagger UI提供互動式介面來測試API，而不需撰寫程式碼。請使用&#x200B;**嘗試它**&#x200B;功能來叫用及測試[產生PDF](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFForm) Document Service API。
+1. 按一下您的管道旁的&#x200B;**「建置」**&#x200B;按鈕（或播放圖示▶）
+2. 如果出現提示且管道執行開始，則確認部署
 
-1. 導覽至API檔案
-   - Forms API： [Forms API參考](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
-   - 檔案服務： [檔案服務API參考](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
-在瀏覽器中，開啟[Document Services API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document)檔案。
+![執行管道](/help/forms/assets/run-config-pipeline.png)
+
+#### 6.3驗證部署是否成功
+
+- 等待管道完成。
+   - 如果成功，狀態會變更為「成功」（綠色核取記號✓）。
+   - 如果失敗，狀態會變更為「失敗」（紅十字✗）。 按一下&#x200B;**下載記錄檔**&#x200B;以檢視錯誤詳細資料。
+
+     ![管道成功](/help/forms/assets/pipeline-suceess.png)
+
+現在，您可以開始測試Forms Communications API。 為了測試目的，您可以使用Postman、curl或任何其他REST使用者端來叫用API。
+
+### 步驟7：API規格和測試
+
+現在您的環境已設定完畢，您可以開始使用Swagger UI或以程式設計方式開發NodeJS應用程式來測試AEM Forms Communication API。
+
+>[!BEGINTABS]
+
+>[!TAB A。使用Swagger UI進行API測試]
+
+Swagger UI提供互動式介面來測試API，而不需撰寫程式碼。請使用&#x200B;**嘗試使用**&#x200B;功能，叫用並測試[產生PDF](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFForm) Forms通訊API。
+
+1. 導覽至[Forms Communication API Reference](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)，然後在瀏覽器中開啟[Forms Communication API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document)檔案。
 2. 展開&#x200B;**Document Generation**&#x200B;區段並選取[從XDP或PDF範本產生可填寫的PDF表單，可選擇合併資料](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFForm)。
 3. 在右窗格中，按一下&#x200B;**試用**。
 
@@ -534,8 +484,8 @@ Swagger UI提供互動式介面來測試API，而不需撰寫程式碼。請使�
 
    | **節** | **引數** | **值** |
    |--------------|---------------|------------|
-   | 貯體 | AEM執行個體 | 不含AEM網域名稱(`.adobeaemcloud.com`)的Adobe執行個體名稱例如，使用`p43162-e177398`做為貯體。 |
-   | 安全性 | 持有人權杖 | 使用Adobe Developer Console專案的OAuth伺服器對伺服器認證中的存取權杖 |
+   | 貯體 | AEM執行個體 | 不含AEM網域名稱(`.adobeaemcloud.com`)的Adobe執行個體名稱例如，使用`pXXXXX-eYYYYY`做為貯體。 |
+   | 安全性 | 持有人權杖 | 使用Adobe Developer Console專案之OAuth伺服器對伺服器認證的[存取權杖](/help/forms/oauth-api-authetication.md#how-to-generate-an-access-token-using-oauth-server-to-server-authentication) |
    | 內文 | 範本 | 上傳XDP以產生PDF表單。 例如，您可以使用此[XDP](/help/forms/assets/ClosingForm.xdp)來產生PDF。 |
    | 內文 | 資料 | 選用的XML檔案，其中包含要與範本合併的資料，以產生預先填入的PDF表單。 例如，您可以使用此[XML](/help/forms/assets/ClosingForm.xml)來產生PDF。 |
    | 參數 | X-Adobe-Accept-Experimental | 1 |
@@ -548,6 +498,7 @@ Swagger UI提供互動式介面來測試API，而不需撰寫程式碼。請使�
    - 如果回應代碼為`200`，表示已成功建立PDF。
    - 如果回應代碼為`400`，表示要求引數無效或格式錯誤。
    - 如果回應代碼為`500`，表示存在內部伺服器錯誤。
+   - 如果回應代碼為`403`，表示存在授權錯誤。
 
    在此案例中，回應代碼為`200`，這表示已成功產生PDF：
 
@@ -557,15 +508,15 @@ Swagger UI提供互動式介面來測試API，而不需撰寫程式碼。請使�
 
    ![檢視PDF](/help/forms/assets/create-pdf.png)
 
->[!NOTE]
->
-> 為了測試目的，您也可以使用[Postman](https://www.postman.com/)、[curl](https://curl.se/)或任何其他REST使用者端來叫用AEM API。
+   >[!NOTE]
+   >
+   > 為了測試目的，您也可以使用[Postman](https://www.postman.com/)、[curl](https://curl.se/)或任何其他REST使用者端來叫用AEM API。
 
-#### B.以程式設計方式開發NodeJS應用程式
+>[!TAB B。以程式設計方式開發NodeJS應用程式]
 
 開發Node.js應用程式，以使用&#x200B;**Document Services API**&#x200B;從&#x200B;**XDP**&#x200B;範本和&#x200B;**XML**&#x200B;資料檔產生可填寫的PDF表單
 
-##### 先決條件
+**先決條件**
 
 - 系統上已安裝的Node.js
 - 作用中的AEM as a Cloud Service執行個體
@@ -575,7 +526,7 @@ Swagger UI提供互動式介面來測試API，而不需撰寫程式碼。請使�
 
 若要開發Node.js應用程式，請遵循逐步開發步驟：
 
-##### 步驟1：建立新的Node.js專案
+**步驟1：建立新的Node.js專案**
 
 開啟cmd/終端機並執行以下命令：
 
@@ -590,7 +541,7 @@ npm init -y
 
 ![建立新節點js專案](/help/forms/assets/api-1.png)
 
-##### 步驟2：安裝必要的相依性
+**步驟2：安裝必要的相依性**
 
 安裝&#x200B;**node-fetch**、**dotenv**&#x200B;和&#x200B;**form-data**&#x200B;程式庫，以分別發出HTTP要求、讀取環境變數及處理表單資料。
 
@@ -602,7 +553,7 @@ npm install form-data
 
 ![安裝npm相依性](/help/forms/assets/api-2.png)
 
-##### 步驟3：更新package.json
+**步驟3：更新package.json**
 
 1. 開啟cmd/終端機並執行命令：
 
@@ -627,7 +578,7 @@ npm install form-data
 
    ![更新封裝檔案](/help/forms/assets/api-4.png)
 
-##### 步驟4：建立.env檔案
+**步驟4：建立.env檔案**
 
 1. 在專案的根層級建立.env檔案
 2. 新增下列設定，並將預留位置取代為ADC專案的OAuth伺服器對伺服器認證中的實際值。
@@ -644,7 +595,7 @@ npm install form-data
    >
    > 您可以從Adobe Developer Console專案複製`CLIENT_ID`、`CLIENT_SECRET`和`SCOPES`。
 
-##### 步驟5：建立src/index.js
+**步驟5：建立src/index.js**
 
 1. 在專案的根層級建立`index.js`檔案
 2. 新增下列程式碼，並以實際值取代預留位置：
@@ -739,7 +690,7 @@ generatePDF();
 
 ![建立index.js](/help/forms/assets/api-6.png)
 
-##### 步驟6：執行應用程式
+**步驟6：執行應用程式**
 
 ```bash
 node src/index.js
@@ -750,6 +701,10 @@ node src/index.js
 PDF是在`demo-nodejs-generate-pdf`資料夾中建立。 瀏覽至資料夾以尋找名為`generatedForm.pdf`的產生檔案。
 
 ![檢視建立的pdf](/help/forms/assets/api-8.png)
+
+![檢視PDF](/help/forms/assets/create-pdf.png)
+
+>[!ENDTABS]
 
 您可以開啟[產生的PDF](/help/forms/assets/create-pdf.png)進行檢視。
 
@@ -762,13 +717,11 @@ PDF是在`demo-nodejs-generate-pdf`資料夾中建立。 瀏覽至資料夾以�
 **症狀：**
 
 - API要求傳回`403 Forbidden`
-- 錯誤訊息： *拒絕存取*&#x200B;或&#x200B;*許可權不足*
-- 即使使用有效的存取權杖也會發生
+- 錯誤訊息： *未經授權的存取*
 
 **可能的原因：**
 
-- 連結至OAuth伺服器對伺服器認證的產品設定檔中的許可權不足
-- AEM Author中的服務使用者群組缺少必要內容路徑上的必要許可權
+- 使用者端ID未在AEM執行個體的`api.yaml`設定中註冊
 
 #### 問題2： 401未授權錯誤
 
@@ -781,7 +734,6 @@ PDF是在`demo-nodejs-generate-pdf`資料夾中建立。 瀏覽至資料夾以�
 
 - 存取權杖已過期（僅適用於24小時）
 - 使用者端ID和使用者端密碼不正確或不相符
-- API請求中缺少驗證標頭或驗證標頭格式錯誤
 
 #### 問題3： 404 Not Found錯誤
 
@@ -792,21 +744,9 @@ PDF是在`demo-nodejs-generate-pdf`資料夾中建立。 瀏覽至資料夾以�
 
 **可能的原因：**
 
-- 使用者端ID未在AEM執行個體的`api.yaml`設定中註冊
 - 不正確的貯體引數(不符合AEM執行個體識別碼)
-- 資源ID （表單或資產）無效或不存在
 
-#### 問題4：無法使用伺服器對伺服器驗證選項
-
-**症狀：**
-
-- Adobe Developer Console中的OAuth伺服器對伺服器選項遺失或停用
-
-**可能的原因：**
-
-- 建立整合的使用者不會在關聯的產品設定檔中新增為&#x200B;**開發人員**
-
-#### 問題5：管道部署失敗
+#### 問題4：管道部署失敗
 
 **症狀：**
 
@@ -818,8 +758,30 @@ PDF是在`demo-nodejs-generate-pdf`資料夾中建立。 瀏覽至資料夾以�
 - 無效的YAML語法（縮排、引號或陣列格式問題）
 - `api.yaml`放置在不正確的目錄中
 - 設定中的使用者端ID格式不正確或不正確
+- 無效的使用者端密碼
 
+#### 問題5： Forms Communication API無法執行
+
+**症狀：**
+
+- API請求傳回錯誤，指出不支援或無法使用的功能。
+- 使用XDP和XML產生PDF無法運作。
+- 管道部署成功完成，但執行階段API呼叫失敗。
+
+**可能的原因：**
+
+AEM環境執行的是引進或支援Forms Communication API之前發行的版本。
+若要更新AEM環境，請參閱[更新AEM執行個體](#update-aem-instance)區段。
+
+## 更新AEM執行個體
+
+若要更新AEM執行個體以找出環境詳細資訊：
+
+1. 選取環境名稱旁的`ellipsis`(...)圖示，然後按一下&#x200B;**更新**
+2. 按一下&#x200B;**提交**&#x200B;按鈕，然後執行建議的完整棧疊管道。
+
+   ![更新環境](/help/forms/assets/update-env.png)
 
 ## 相關文章
 
-若要瞭解如何設定批次環境（非同步API），請參閱[AEM Forms as a Cloud Service通訊批次處理](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)。
+- 若要瞭解如何設定批次環境（非同步API），請參閱[AEM Forms as a Cloud Service通訊批次處理](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)。
