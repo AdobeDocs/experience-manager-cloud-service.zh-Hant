@@ -6,9 +6,9 @@ feature: Adaptive Forms,APIs & Integrations
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: e2f57a32fcc098a2331ad74540a3d48832c2b3c3
+source-git-commit: 77da2f4ddcd9074a79883f18a33b6fe50e32b266
 workflow-type: tm+mt
-source-wordcount: '2380'
+source-wordcount: '2396'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-> 若要進一步瞭解指派角色和授與使用者存取權，請參閱文章[新增使用者和角色](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-manager/content/requirements/users-and-roles)。
+> 若要進一步瞭解指派角色和授與使用者存取權，請參閱文章[新增使用者和角色](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles)。
 
 **Git存放庫存取權**
 
@@ -112,7 +112,7 @@ ht-degree: 1%
 
 >[!ENDTABS]
 
-#### 4.尋找您的AEM Forms端點
+#### 1.4.尋找您的AEM Forms端點
 
 從&#x200B;**環境**&#x200B;詳細資訊頁面，記下您的AEM URL執行個體。
 
@@ -120,7 +120,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-> 若要瞭解如何存取AEM雲端服務環境和AEM Forms端點，請參閱[管理環境檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=zh-Hant)。
+> 若要瞭解如何存取AEM雲端服務環境和AEM Forms端點，請參閱[管理環境檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html)。
 
 ### 步驟2：複製Git存放庫
 
@@ -259,7 +259,7 @@ https://git.cloudmanager.adobe.com/formsinternal01/AEMFormsInternal-ReleaseSanit
 
 >[!TAB 用於生產]
 
-使用[Adobe IMS](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service) API以程式設計方式產生權杖：
+使用[Adobe IMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service) API以程式設計方式產生權杖：
 
 **必要的認證：**
 
@@ -369,6 +369,11 @@ https://git.cloudmanager.adobe.com/formsinternal01/AEMFormsInternal-ReleaseSanit
 
 ### 步驟5：設定設定管道
 
+#### 5.1登入Adobe Cloud Manager
+
+1. 瀏覽至[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)
+2. 使用您的Adobe ID登入
+
 #### 5.1找到管道卡
 
 1. 在計畫總覽頁面上找到&#x200B;**管道**&#x200B;卡
@@ -441,7 +446,7 @@ e.按一下&#x200B;**「儲存」**&#x200B;以建立管道
 
 ### 步驟6：部署設定
 
-現在管道已建立，請部署您的`api.yaml`設定：
+現在管道已建立，請部署您的`api.yaml`設定
 
 #### 6.1來自管道概觀
 
