@@ -3,10 +3,7 @@ title: 如何設定JWT （JSON Web權杖）驗證？
 description: 瞭解如何為Adobe Experience Manager Forms as a Cloud Service設定JWT （JSON Web權杖）驗證
 role: Admin, Developer, User
 feature: Adaptive Forms, APIs & Integrations
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: e2f57a32fcc098a2331ad74540a3d48832c2b3c3
+source-git-commit: d9eb9a93aba71a5ef5940c9d1d75cfd4e738c26b
 workflow-type: tm+mt
 source-wordcount: '393'
 ht-degree: 3%
@@ -23,7 +20,7 @@ AEM Forms中的JWT伺服器對伺服器驗證，尤其是與AEM as a Cloud Servi
 開始之前，請確定符合下列必要條件：
 
 * 確保您有權存取您使用環境專屬的[Adobe Cloud Manager](https://experience.adobe.com/#/@formsinternal01/cloud-manager/landing.html)。
-* 指派[系統管理員或開發人員角色以存取Adobe Cloud Manager](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-manager/content/requirements/access-rights)。
+* 指派[系統管理員或開發人員角色以存取Adobe Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights)。
 
 ## 如何使用JWT憑證產生存取權杖？
 
@@ -109,7 +106,7 @@ AEM Forms中的JWT伺服器對伺服器驗證，尤其是與AEM as a Cloud Servi
 
 >[!NOTE]
 >
-> 若要進一步瞭解服務認證，以及如何使用Adobe IMS API產生存取權杖，[請按一下這裡](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials)。
+> 若要進一步瞭解服務認證，以及如何使用Adobe IMS API產生存取權杖，[請按一下這裡](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials)。
 
 您現在可以使用產生的存取Token針對開發、預備或生產環境進行API呼叫。
 

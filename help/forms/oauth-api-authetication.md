@@ -3,12 +3,9 @@ title: 如何設定OAuth伺服器對伺服器驗證？
 description: 瞭解如何為Adobe Experience Manager Forms as a Cloud Service設定OAuth伺服器對伺服器驗證
 role: Admin, Developer, User
 feature: Adaptive Forms, APIs & Integrations
-hide: true
-hidefromtoc: true
-index: false
-source-git-commit: 6bd2e1698cceaf8fe47e19e0645d0782c916644a
+source-git-commit: d9eb9a93aba71a5ef5940c9d1d75cfd4e738c26b
 workflow-type: tm+mt
-source-wordcount: '817'
+source-wordcount: '799'
 ht-degree: 3%
 
 ---
@@ -22,7 +19,7 @@ OAuth伺服器對伺服器驗證允許以權杖為基礎的安全存取AEM Forms
 
 開始之前，請確定符合下列必要條件：
 
-* 確保您擁有[存取您使用環境專屬的Adobe Developer Console](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-manager/content/requirements/access-rights)的許可權。
+* 確保您擁有[存取您使用環境專屬的Adobe Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights)的許可權。
 * [在Adobe Admin Console中指派系統管理員或開發人員角色](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions)以啟用Adobe Developer Console的存取權。
 
 ## 如何使用OAuth伺服器對伺服器驗證產生存取權杖？
@@ -75,7 +72,7 @@ OAuth伺服器對伺服器驗證允許以權杖為基礎的安全存取AEM Forms
 
 >[!BEGINTABS]
 
->[!TAB 適用於AEM Forms Communications API的] 
+>適用於AEM Forms Communications API的[!TAB ]
 
 1. 按一下&#x200B;**新增API**
 
@@ -92,7 +89,7 @@ OAuth伺服器對伺服器驗證允許以權杖為基礎的安全存取AEM Forms
 
       ![選取驗證方法](/help/forms/assets/adc-add-authentication-method.png)
 
->[!TAB 最適化Forms執行階段API的] 
+>最適化Forms執行階段API的[!TAB ]
 
 1. **按一下[新增API]**
 
@@ -104,7 +101,7 @@ OAuth伺服器對伺服器驗證允許以權杖為基礎的安全存取AEM Forms
       ![新增Forms通訊API](/help/forms/assets/adc-add-runtime-api.png)
 
    3. 按一下「**下一步**」。
-   4. 選取&#x200B;**OAuth伺服器對伺服器**&#x200B;驗證方法。
+   4. 選取&#x200B;**OAuth伺服器對伺服器**驗證方法。
       ![選取驗證方法](/help/forms/assets/adc-add-authentication-method.png)
 
 >[!ENDTABS]
@@ -180,7 +177,7 @@ OAuth伺服器對伺服器驗證允許以權杖為基礎的安全存取AEM Forms
 
 >[!TAB 用於生產]
 
-使用[Adobe IMS](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service) API以程式設計方式產生權杖：
+使用[Adobe IMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service) API以程式設計方式產生權杖：
 
 **必要的認證：**
 
@@ -218,10 +215,6 @@ curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' \
 >[!ENDTABS]
 
 您現在可以使用產生的存取Token針對開發、預備或生產環境進行API呼叫。
-
->
->
-> 若要進一步瞭解OAuth伺服器對伺服器實作，以產生存取權杖並進行API呼叫，[按一下這裡](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)。
 
 ## 最佳實務：管理開發、測試和生產的認證
 

@@ -5,9 +5,9 @@ Keywords: document generation, PDF manipulation, document security, batch proces
 feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, Developer, User
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
+source-git-commit: e2716b7f9612d5769c422a0fc2915a604ea40de5
 workflow-type: tm+mt
-source-wordcount: '2720'
+source-wordcount: '2772'
 ht-degree: 27%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 27%
 
 > **版本可用性**
 >
-> * **AEM 6.5**： [AEM檔案服務總覽](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html?lang=zh-Hant)
+> * **AEM 6.5**： [AEM檔案服務總覽](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html)
 > * **AEM as a Cloud Service**：此文章
 
 ## 簡介
@@ -91,6 +91,10 @@ Communications document generation API可協助結合範本(XFA或PDF)與客戶�
 
 <span class="preview">使用Document Generation API將產生的PDF上傳到Azure Blob Storage功能在[早期採用者計畫](/help/forms/early-access-ea-features.md)之下。 您可以使用官方電子郵件 ID 寫信至 aem-forms-ea@adobe.com，以加入早期採用者計劃並要求存取該功能。</span>
 
+>
+>
+> Document Generation API包括批次和同步輸出產生端點。這些API根據端點支援使用JWT或OAuth的伺服器對伺服器驗證。 若要進一步瞭解Document Generation API，[請按一下這裡](/help/forms/aem-forms-communication-api-overview.md#document-generation-apis)。
+
 #### 建立 PostScript (PS)、印表機命令語言 (PCL)、Zebra 列印語言 (ZPL) 文件 {#create-PS-PCL-ZPL-documents}
 
 您可以使用檔案產生API來建立以XDP表單設計或PDF檔案為基礎的PostScript (PS)、印表機命令語言(PCL)和Zebra列印語言(ZPL)檔案。 這些 API 可協助將表單設計與表單資料合併以產生文件。您可以將文件儲存到檔案和開發自訂流程將其傳送到印表機。
@@ -104,6 +108,10 @@ Communications document generation API可協助結合範本(XFA或PDF)與客戶�
 ## 檔案操作
 
 通訊檔案操作（檔案轉換） API有助於組合、重新排列PDF檔案。 通常，您會建立一個 DDX 並將其提交給文件操控 API 以組合或重新排列文件。[DDX 文件](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf)提供了有關如何使用來源文件產生一組所需文件的說明。DDX參考檔案提供所有支援作業的詳細資訊。
+
+>
+>
+> Document Manipulation API支援使用JWT的伺服器對伺服器驗證。 若要進一步瞭解Document Manipulation API，[請按一下這裡](/help/forms/aem-forms-communication-api-overview.md#document-manipulation-apis)。
 
 ### 關鍵檔案操作功能
 
@@ -144,7 +152,10 @@ Communications document generation API可協助結合範本(XFA或PDF)與客戶�
 * 擷取PDF檔案中啟用的使用許可權，使用者會擷取在PDF檔案中啟用或停用的使用許可權，以便Adobe Acrobat Reader擴充。
 * 取得出現在PDF檔案中的中繼資料資訊，該中繼資料就是檔案的相關資訊(與檔案的內容（例如文字和圖形）有所區別)。 Adobe可延伸中繼資料平台(XMP)是處理檔案中繼資料的標準。 XMP公用程式服務可從XMP檔案中擷取PDF中繼資料，並將XMP中繼資料匯出至PDF檔案。
 
-[API參考檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)提供API所提供之所有引數、驗證方法及服務的詳細資訊。 API參考檔案也以.yaml格式提供。 您可以下載.yaml並將其上傳到Postman以檢查API的功能。
+>
+>
+> 檔案擷取API支援使用OAuth的伺服器對伺服器驗證。 若要進一步瞭解檔案擷取API，[請按一下這裡](/help/forms/aem-forms-communication-api-overview.md#document-extraction-apis)。
+>
 
 ## 檔案轉換
 
@@ -157,6 +168,10 @@ Communications document generation API可協助結合範本(XFA或PDF)與客戶�
 <span class="preview">將PDF轉換成XDP功能屬於早期採用者計畫。 您可以使用官方電子郵件 ID 寫信至 aem-forms-ea@adobe.com，以加入早期採用者計劃並要求存取該功能。</span>
 
 將PDF檔案轉換為XDP檔案。 若要將PDF檔案成功轉換為XDP檔案，PDF檔案必須在字典中包含XFA資料流。
+
+>
+>
+> 檔案轉換API支援使用OAuth的伺服器對伺服器驗證。 若要進一步瞭解檔案轉換API，[請按一下這裡](/help/forms/aem-forms-communication-api-overview.md#document-conversion-apiss)。
 
 ## 檔案Assurance {#doc-assurance}
 
@@ -174,6 +189,10 @@ DocAssurance服務包含簽名和加密API：
 * 從PDF檔案刪除指定的簽名欄位
 
 <span class="preview">從指定的簽章欄位中移除簽章，並從PDF檔案中刪除指定的簽章欄位（可在早期採用者程式下取得）。 您可以使用官方電子郵件 ID 寫信至 aem-forms-ea@adobe.com，以加入早期採用者計劃並要求存取該功能。</span>
+
+>
+>
+> 檔案Assurance API支援使用OAuth的伺服器對伺服器驗證。 若要進一步瞭解檔案Assurance API，[請按一下這裡](/help/forms/aem-forms-communication-api-overview.md#document-assurance-apis)。
 
 ### 加密API
 
