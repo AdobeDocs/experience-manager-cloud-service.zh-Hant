@@ -4,10 +4,10 @@ description: 使用 AEM 內容片段模型定義內容片段的結構，這是 H
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: 38a4bf89e099432163163e90e08aa0f47407724f
+source-git-commit: 95624ebf1a77dac1f535e199b660096c8efdfa76
 workflow-type: tm+mt
-source-wordcount: '268'
-ht-degree: 86%
+source-wordcount: '267'
+ht-degree: 81%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 86%
 
 [現在您已經建立內容片段模型](create-content-model.md)，它定義您未來內容片段所需的結構，您可能很想建立一些片段。
 
-但是，您首先需要建立可以儲存片段的資產資料夾。
+不過，您首先需要建立資產資料夾，以便在其中儲存這些資產。
 
 資產資料夾用於[組織傳統內容資產](/help/assets/manage-digital-assets.md)，例如影像和影片，連同內容片段。
 
