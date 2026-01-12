@@ -19,7 +19,7 @@ OAuth伺服器對伺服器驗證允許以權杖為基礎的安全存取AEM Forms
 
 開始之前，請確定符合下列必要條件：
 
-* 確保您擁有[存取您使用環境專屬的Adobe Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights)的許可權。
+* 確保您擁有[存取您使用環境專屬的Adobe Developer Console](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-manager/content/requirements/access-rights)的許可權。
 * [在Adobe Admin Console中指派系統管理員或開發人員角色](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions)以啟用Adobe Developer Console的存取權。
 
 ## 如何使用OAuth伺服器對伺服器驗證產生存取權杖？
@@ -177,7 +177,7 @@ OAuth伺服器對伺服器驗證允許以權杖為基礎的安全存取AEM Forms
 
 >[!TAB 用於生產]
 
-使用[Adobe IMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service) API以程式設計方式產生權杖：
+使用[Adobe IMS](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service) API以程式設計方式產生權杖：
 
 **必要的認證：**
 
