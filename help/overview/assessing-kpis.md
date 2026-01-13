@@ -1,13 +1,13 @@
 ---
-title: 存取 KPI
-description: 了解如何存取您的 KPI 並定義報告流程
+title: 評估 KPI
+description: 瞭解如何評估您的KPI並定義報告流程
 exl-id: 8556e0e3-a557-4fd6-9b82-09cb1decff0a
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 2a3c93d1a2e214a584fca5ede9a9189143d04889
 workflow-type: tm+mt
 source-wordcount: '532'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -17,8 +17,8 @@ ht-degree: 100%
 >id="aemcloud_assesskpis"
 >title="評估 KPI"
 >abstract="在開始啟動 Adobe Experience Manager 之前，與專案有利害關係的每個人都應該知道您的前三大 KPI 是什麼以及它們為什麼重要。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=zh-Hant" text="調整 KPI"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html?lang=zh-Hant" text="選擇合適的團隊"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html" text="調整 KPI"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html" text="選擇合適的團隊"
 
 在開始啟動 Adobe Experience Manager 之前，與專案有利害關係的每個人都應該知道您的前三大 KPI 是什麼以及它們為什麼重要。
 
@@ -29,7 +29,7 @@ ht-degree: 100%
 
 若要實現同樣巨大的收獲，您的組織需要訂立 Experience Manager 實作的明確目標。您需要有 KPI 來協助每個人專注於這些目標。
 
-## 存取 KPI
+## 評估 KPI
 
 在評估您的 KPI 時，請確保：
 
@@ -43,7 +43,7 @@ ht-degree: 100%
 
 在定義報告流程時，請考慮以下問題：
 
-1. 此 KPI 報告的對象是誰？對於每個 KPI，請確保您已經確定了一位會要求您和團隊其他成員對該指標負責的高階主管，以及更多應該定期收到報告的人員名單。
+1. 此 KPI 報告的客群是誰？對於每個 KPI，請確保您已經確定了一位會要求您和團隊其他成員對該指標負責的高階主管，以及更多應該定期收到報告的人員名單。
 1. 多久要報告一次此 KPI？
 1. 如何追蹤此 KPI？誰會提取資料？該人員或團隊將使用哪些資料來源？您現在可以做些什麼來簡化此流程？
 1. 報告將採用什麼格式？
