@@ -3,7 +3,7 @@ title: Development Agent概述
 description: 瞭解AEM中的開發代理程式如何分析Cloud Manager中的失敗管道和建置記錄檔，以建議程式碼修正並加快偵錯速度。
 feature: Agentic AI, AI Assistant, AI Tools, User Roles
 role: User, Admin, Architect, Developer
-source-git-commit: 3e565ba0cd53d9064a9aed20f4d6663781759b63
+source-git-commit: b206c73853e2f81a1bd5a15bb1e0d5d7658f70a5
 workflow-type: tm+mt
 source-wordcount: '476'
 ht-degree: 1%
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 目前，代理程式可以擷取管道狀態，並透過建議修正來協助您疑難排解失敗的建置步驟，進而節省在開發、中繼和生產環境中偵錯AEM as a Cloud Service部署的時間。 它會檢查組建記錄檔和相關程式碼，以建議您可以手動套用的修正。
 
->[!VIDEO](https://video.tv.adobe.com/v/3478018?captions=chi_hant&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3478006?quality=12&learn=on)
 
 >[!IMPORTANT]
 >
@@ -77,8 +77,6 @@ ht-degree: 1%
 
 Development Agent的管道疑難排解工作需要Cloud Manager — 開發人員角色或Cloud Manager — 方案管理員角色。
 
-
-
 ## 範例提示 {#sample-prompts}
 
 | 提示 | 結果 |
@@ -93,4 +91,3 @@ Development Agent的管道疑難排解工作需要Cloud Manager — 開發人員
 檢視[存取及下載記錄檔](/help/implementing/cloud-manager/manage-logs.md)。
 
 使用BYOGIT （自備Git）的程式不支援管道疑難排解。
-
