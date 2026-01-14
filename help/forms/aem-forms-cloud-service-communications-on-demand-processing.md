@@ -3,15 +3,15 @@ title: 如何設定Forms通訊同步API？
 description: 為Adobe Experience Manager Forms as a Cloud Service的互動式通訊同步API設定開發環境
 role: Admin, Developer, User
 feature: Adaptive Forms,APIs & Integrations
-source-git-commit: a0db7a0a2dc82c9857b34b79fe3b3b6f3e179372
+source-git-commit: 43b648eb3984867fda35ee04de10b78dd836b481
 workflow-type: tm+mt
-source-wordcount: '2417'
+source-wordcount: '2428'
 ht-degree: 1%
 
 ---
 
 
-# 設定AEM Forms Communications API的OAuth伺服器對伺服器存取
+# 使用OAuth伺服器對伺服器驗證叫用AEM Forms Communications API
 
 本指南提供設定及叫用AEM Forms Communications Synchronous API的說明，這些API是透過Adobe Developer Console使用OAuth伺服器對伺服器驗證來存取。
 
@@ -35,7 +35,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-> 若要進一步瞭解指派角色和授與使用者存取權，請參閱文章[新增使用者和角色](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-manager/content/requirements/users-and-roles)。
+> 若要進一步瞭解指派角色和授與使用者存取權，請參閱文章[新增使用者和角色](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles)。
 
 **Git存放庫存取權**
 
@@ -122,7 +122,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-> 若要瞭解如何存取AEM雲端服務環境和AEM Forms端點，請參閱[管理環境檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=zh-Hant)。
+> 若要瞭解如何存取AEM雲端服務環境和AEM Forms端點，請參閱[管理環境檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html)。
 
 ### 步驟2：複製Git存放庫
 
@@ -261,7 +261,7 @@ https://git.cloudmanager.adobe.com/formsinternal01/AEMFormsInternal-ReleaseSanit
 
 >[!TAB 用於生產]
 
-使用[Adobe IMS](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service) API以程式設計方式產生權杖：
+使用[Adobe IMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service) API以程式設計方式產生權杖：
 
 **必要的認證：**
 
@@ -789,6 +789,10 @@ AEM環境執行的是引進或支援Forms Communication API之前發行的版本
 
    ![更新環境](/help/forms/assets/update-env.png)
 
-## 相關文章
-
-* 若要瞭解如何設定批次環境（非同步API），請參閱[AEM Forms as a Cloud Service通訊批次處理](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)。
+>[!MORELIKETHIS]
+>
+>* [AEM Forms as a Cloud Service通訊簡介](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* 最適化AEM Forms和通訊API的[Forms as a Cloud Service架構](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [通訊處理 — 同步API](/help/forms/aem-forms-cloud-service-communications.md)
+>* [通訊處理 — 批次API](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [Forms Communications API — 教學課程](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)

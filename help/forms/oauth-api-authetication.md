@@ -3,9 +3,9 @@ title: 如何設定OAuth伺服器對伺服器驗證？
 description: 瞭解如何為Adobe Experience Manager Forms as a Cloud Service設定OAuth伺服器對伺服器驗證
 role: Admin, Developer, User
 feature: Adaptive Forms, APIs & Integrations
-source-git-commit: d9eb9a93aba71a5ef5940c9d1d75cfd4e738c26b
+source-git-commit: 43b648eb3984867fda35ee04de10b78dd836b481
 workflow-type: tm+mt
-source-wordcount: '799'
+source-wordcount: '833'
 ht-degree: 3%
 
 ---
@@ -19,7 +19,7 @@ OAuth伺服器對伺服器驗證允許以權杖為基礎的安全存取AEM Forms
 
 開始之前，請確定符合下列必要條件：
 
-* 確保您擁有[存取您使用環境專屬的Adobe Developer Console](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-manager/content/requirements/access-rights)的許可權。
+* 確保您擁有[存取您使用環境專屬的Adobe Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights)的許可權。
 * [在Adobe Admin Console中指派系統管理員或開發人員角色](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions)以啟用Adobe Developer Console的存取權。
 
 ## 如何使用OAuth伺服器對伺服器驗證產生存取權杖？
@@ -72,7 +72,7 @@ OAuth伺服器對伺服器驗證允許以權杖為基礎的安全存取AEM Forms
 
 >[!BEGINTABS]
 
->[!TAB 適用於AEM Forms Communications API的] 
+>適用於AEM Forms Communications API的[!TAB ]
 
 1. 按一下&#x200B;**新增API**
 
@@ -89,7 +89,7 @@ OAuth伺服器對伺服器驗證允許以權杖為基礎的安全存取AEM Forms
 
       ![選取驗證方法](/help/forms/assets/adc-add-authentication-method.png)
 
->[!TAB 最適化Forms執行階段API的] 
+>最適化Forms執行階段API的[!TAB ]
 
 1. **按一下[新增API]**
 
@@ -101,7 +101,7 @@ OAuth伺服器對伺服器驗證允許以權杖為基礎的安全存取AEM Forms
       ![新增Forms通訊API](/help/forms/assets/adc-add-runtime-api.png)
 
    3. 按一下「**下一步**」。
-   4. 選取&#x200B;**OAuth伺服器對伺服器**&#x200B;驗證方法。
+   4. 選取&#x200B;**OAuth伺服器對伺服器**驗證方法。
       ![選取驗證方法](/help/forms/assets/adc-add-authentication-method.png)
 
 >[!ENDTABS]
@@ -177,7 +177,7 @@ OAuth伺服器對伺服器驗證允許以權杖為基礎的安全存取AEM Forms
 
 >[!TAB 用於生產]
 
-使用[Adobe IMS](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service) API以程式設計方式產生權杖：
+使用[Adobe IMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service) API以程式設計方式產生權杖：
 
 **必要的認證：**
 
@@ -288,4 +288,10 @@ curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' \
 </div>
 <!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
 
-
+>[!MORELIKETHIS]
+>
+>* [AEM Forms as a Cloud Service通訊簡介](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* 最適化AEM Forms和通訊API的[Forms as a Cloud Service架構](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [通訊處理 — 同步API](/help/forms/aem-forms-cloud-service-communications.md)
+>* [通訊處理 — 批次API](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [Forms Communications API — 教學課程](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)

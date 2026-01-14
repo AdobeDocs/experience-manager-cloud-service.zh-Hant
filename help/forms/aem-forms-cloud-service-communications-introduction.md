@@ -5,10 +5,10 @@ Keywords: document generation, PDF manipulation, document security, batch proces
 feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, Developer, User
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: e2716b7f9612d5769c422a0fc2915a604ea40de5
+source-git-commit: 43b648eb3984867fda35ee04de10b78dd836b481
 workflow-type: tm+mt
-source-wordcount: '2772'
-ht-degree: 27%
+source-wordcount: '2789'
+ht-degree: 26%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 27%
 
 > **版本可用性**
 >
-> * **AEM 6.5**： [AEM檔案服務總覽](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html?lang=zh-Hant)
+> * **AEM 6.5**： [AEM檔案服務總覽](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html)
 > * **AEM as a Cloud Service**：此文章
 
 ## 簡介
@@ -298,10 +298,12 @@ DocAssurance服務包含簽名和加密API：
 > `# Allow Forms Doc Generation requests`
 > `/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`
 
-## 其他資源 {#see-also}
-
-* [通訊處理 — 同步API](/help/forms/aem-forms-cloud-service-communications.md)
-* [通訊處理 — 批次API](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
-* [AEM Forms as a Cloud Service架構](/help/forms/aem-forms-cloud-service-architecture.md)
-* [API參考檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
-* [早期採用者計畫功能](/help/forms/early-access-ea-features.md)
+>[!MORELIKETHIS]
+>
+>* [AEM Forms as a Cloud Service通訊簡介](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* 最適化AEM Forms和通訊API的[Forms as a Cloud Service架構](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [通訊處理 — 同步API](/help/forms/aem-forms-cloud-service-communications.md)
+>* [通訊處理 — 批次API](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+>* [Forms Communications API — 教學課程](/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md)
+>* [API參考檔案](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
+>* [早期採用者程式功能](/help/forms/early-access-ea-features.md)
