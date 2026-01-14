@@ -119,7 +119,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 * 建立其他版本：在存放庫中建立現有資產的新版本。 您可以在[!UICONTROL 時間表]中檢視這兩個版本，並可視需要還原成先前的現有版本。
 * 保留兩者：如果您選擇保留兩個資產，則新資產會重新命名。
 
-若要在[!DNL Assets]中保留重複的資產，請按一下[保留]。**** 若要刪除您上傳的重複資產，請按一下[刪除]。****
+若要在[!DNL Assets]中保留重複的資產，請按一下[保留]。**&#x200B;** 若要刪除您上傳的重複資產，請按一下[刪除]。**&#x200B;**
 
 ### 檔案名稱處理和禁止使用的字元 {#filename-handling}
 
@@ -199,7 +199,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 1. (選用) 在「**[!UICONTROL 中繼資料檔案]**」欄位中指定要匯入的中繼資料檔案 (以 CSV 格式提供)。在來源Blob位置中指定CSV檔案，並在設定「大量匯入」工具時參照路徑。 當您[大量匯入和匯出資產中繼資料](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/metadata-import-export.html)時，此欄位中參考的CSV檔案格式與CSV檔案格式相同。 如果您選取&#x200B;**匯入後刪除來源檔案**&#x200B;選項，請使用&#x200B;**排除**、**包含MIME型別**&#x200B;或&#x200B;**依路徑/檔案**&#x200B;欄位篩選CSV檔案。 您可以使用規則運算式來篩選這些欄位中的CSV檔案。
 
-1. 按一下[儲存]儲存組態。****
+1. 按一下[儲存]儲存組態。**&#x200B;**
 
 ### 管理大量匯入工具設定 {#manage-bulk-import-configuration}
 
@@ -207,7 +207,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 ### 編輯設定 {#edit-configuration}
 
-若要編輯組態詳細資料，請選取組態，然後按一下[編輯]。**** 執行編輯操作時，您無法編輯設定和匯入資料來源的標題。
+若要編輯組態詳細資料，請選取組態，然後按一下[編輯]。**&#x200B;** 執行編輯操作時，您無法編輯設定和匯入資料來源的標題。
 
 ### 刪除設定 {#delete-configuration}
 
@@ -332,19 +332,19 @@ Following are the file naming conventions that are applied while uploading asset
 
 若要啟動大量匯入程式，請瀏覽至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 大量匯入]**，選取[大量匯入設定](#configure-bulk-ingestor-tool)，然後按一下&#x200B;**[!UICONTROL 執行]**。 再按一下&#x200B;**[!UICONTROL 執行]**&#x200B;以確認。
 
-Experience Manager會在成功完成工作後，將工作的狀態更新為&#x200B;**處理中**&#x200B;和&#x200B;**成功**。 若要在Experience Manager中檢視匯入的資產，請按一下[檢視Assets]。****
+Experience Manager會在成功完成工作後，將工作的狀態更新為&#x200B;**處理中**&#x200B;和&#x200B;**成功**。 若要在Experience Manager中檢視匯入的資產，請按一下[檢視Assets]。**&#x200B;**
 
-當工作正在進行時，您也可以選取組態並按一下[停止] **以停止大量擷取程式。**&#x200B;再按一下[執行&#x200B;****]繼續此程式。 您也可以按一下&#x200B;**試執行**，瞭解仍在等候匯入的資產詳細資訊。
+當工作正在進行時，您也可以選取組態並按一下[停止] **以停止大量擷取程式。**&#x200B;再按一下[執行&#x200B;**&#x200B;**]繼續此程式。 您也可以按一下&#x200B;**試執行**，瞭解仍在等候匯入的資產詳細資訊。
 
 #### 管理執行後的工作 {#manage-jobs-after-execution}
 
 Experience Manager可讓您檢視大量匯入工作的歷史記錄。 工作歷史記錄包含工作的狀態、工作建立者、記錄以及其他詳細資訊，例如開始日期和時間、建立日期和時間，以及完成日期和時間。
 
-若要存取組態的工作記錄，請選取組態並按一下&#x200B;**[!UICONTROL 工作記錄]**。 選取工作並按一下[開啟]。****
+若要存取組態的工作記錄，請選取組態並按一下&#x200B;**[!UICONTROL 工作記錄]**。 選取工作並按一下[開啟]。**&#x200B;**
 
 ![排程大量擷取器工作](assets/job-history-bulk-import.png)
 
-Experience Manager會顯示工作歷史記錄。 在[大量匯入工作記錄]頁面上，您也可以按一下[刪除]，刪除[大量匯入]組態的該工作。****
+Experience Manager會顯示工作歷史記錄。 在[大量匯入工作記錄]頁面上，您也可以按一下[刪除]，刪除[大量匯入]組態的該工作。**&#x200B;**
 
 
 ## 使用案頭使用者端上傳資產 {#upload-assets-desktop-clients}

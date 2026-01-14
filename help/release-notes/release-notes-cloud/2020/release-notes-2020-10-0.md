@@ -91,7 +91,7 @@ Experience Manager as a Cloud Service 2020.10.0中的Cloud Manager發行日期�
 
 * 每個環境的環境變數數量提高至 200 個。
 
-* 總覽頁面上的環境卡現在會列出最多三個環境。 使用者可以選擇&#x200B;**全部顯示**按鈕，瀏覽到「環境摘要」頁面以查看包含完整環境清單的表格。
+* 總覽頁面上的環境卡現在會列出最多三個環境。 使用者可以選擇&#x200B;**全部顯示**&#x200B;按鈕，瀏覽到「環境摘要」頁面以查看包含完整環境清單的表格。
 如需更多詳細資訊，請參閱[檢視環境](/help/implementing/cloud-manager/manage-environments.md#viewing-environment)。
 
 ### 錯誤修正 {#bug-fixes-cloud-manager}

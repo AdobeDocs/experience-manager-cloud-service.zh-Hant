@@ -520,7 +520,7 @@ AEM Assets 能夠與各種 Adobe 及非 Adobe 應用程式緊密整合。以下�
 
 * **與 Adobe Workfront 整合**：[!DNL Adobe Workfront] 是一項工作管理應用程式，能協助您在同一個地方管理整個工作生命週期。[!DNL Workfront] 與 [!DNL Adobe Experience Manager Assets] 整合之後，組織便可以透過工作和數位資產管理的內在連結，改善內容速度與上市時間。就在 Workfront 中管理其工作而言，使用者可以存取必要的文件和影像。
 
-  Adobe 提供 [ [!DNL Workfront]  和  [!DNL Adobe Experience Manager Assets]  的原生整合](https://experienceleague.adobe.com/zh-hant/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations)。
+  Adobe 提供 [&#x200B; [!DNL Workfront]  和  [!DNL Adobe Experience Manager Assets]  的原生整合](https://experienceleague.adobe.com/zh-hant/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations)。
 
 * **與 Figma 整合**：AEM Assets 可以用原生方式與 Figma 整合，讓設計者能夠從 Figma 使用者介面直接存取儲存在 AEM Assets 中的資產。您可以將 AEM Assets 內所管理的內容放置於 Figma 畫布中，然後將新的或編輯後的內容儲存在 AEM Assets 存放庫中。若要存取 Figma 社群頁面上提供的 AEM Assets 連接器，請按一下[此處](https://www.figma.com/community/plugin/1512561378275712210/adobe-experience-manager-aem-assets-connector)。
 
