@@ -29,7 +29,7 @@ ht-degree: 10%
 |---------------------|----------------|-----------------|
 | [Assets主控台使用者介面](#upload-assets) | 偶爾上傳、輕鬆按壓和拖曳、尋找上傳。 請勿使用上傳許多資產。 | 所有使用者 |
 | [上傳API](#upload-using-apis) | 適用於上傳期間的動態決策。 | 開發人員 |
-| [[!DNL Experience Manager] 桌面應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | 低流量資產擷取，但不適用於移轉。 | 管理員、行銷人員 |
+| [[!DNL Experience Manager] 桌面應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=zh-Hant) | 低流量資產擷取，但不適用於移轉。 | 管理員、行銷人員 |
 | [[!DNL Adobe Asset Link]](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html) | 當創意人員與行銷人員從支援的[!DNL Creative Cloud]案頭應用程式內處理資產時相當實用。 | Creative，行銷人員 |
 | [資產大量擷取](#asset-bulk-ingestor) | 建議用於大規模移轉及不定期的大量擷取。 僅適用於支援的資料存放區。 | 管理員、開發人員 |
 
@@ -141,7 +141,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 若要上傳大量檔案，請使用下列其中一種方法。 另請參閱[使用案例和方法](#upload-methods-comparison)
 
 * [資產上傳API](developer-reference-material-apis.md#asset-upload)：如有必要，請使用自訂上傳指令碼或使用API的工具來新增資產的額外處理（例如，翻譯中繼資料或重新命名檔案）。
-* [[!DNL Experience Manager] 案頭應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)：對於從本機檔案系統上傳資產的創意專業人員和行銷人員非常有用。 用它來上傳本機可用的巢狀資料夾。
+* [[!DNL Experience Manager] 案頭應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=zh-Hant)：對於從本機檔案系統上傳資產的創意專業人員和行銷人員非常有用。 用它來上傳本機可用的巢狀資料夾。
 * [大量擷取工具](#asset-bulk-ingestor)：在部署[!DNL Experience Manager]時，用於偶爾或最初擷取大量資產。
 
 ### 資產大量匯入工具 {#asset-bulk-ingestor}
@@ -197,7 +197,7 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 
 1. 要使用「**[!UICONTROL 資產目標資料夾]**」欄位在所要匯入資產的 DAM 中定義位置，請指定路徑。 例如，`/content/dam/imported_assets`。
 
-1. (選用) 在「**[!UICONTROL 中繼資料檔案]**」欄位中指定要匯入的中繼資料檔案 (以 CSV 格式提供)。在來源Blob位置中指定CSV檔案，並在設定「大量匯入」工具時參照路徑。 當您[大量匯入和匯出資產中繼資料](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/metadata-import-export.html)時，此欄位中參考的CSV檔案格式與CSV檔案格式相同。 如果您選取&#x200B;**匯入後刪除來源檔案**&#x200B;選項，請使用&#x200B;**排除**、**包含MIME型別**&#x200B;或&#x200B;**依路徑/檔案**&#x200B;欄位篩選CSV檔案。 您可以使用規則運算式來篩選這些欄位中的CSV檔案。
+1. (選用) 在「**[!UICONTROL 中繼資料檔案]**」欄位中指定要匯入的中繼資料檔案 (以 CSV 格式提供)。在來源Blob位置中指定CSV檔案，並在設定「大量匯入」工具時參照路徑。 當您[大量匯入和匯出資產中繼資料](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/metadata-import-export.html?lang=zh-Hant)時，此欄位中參考的CSV檔案格式與CSV檔案格式相同。 如果您選取&#x200B;**匯入後刪除來源檔案**&#x200B;選項，請使用&#x200B;**排除**、**包含MIME型別**&#x200B;或&#x200B;**依路徑/檔案**&#x200B;欄位篩選CSV檔案。 您可以使用規則運算式來篩選這些欄位中的CSV檔案。
 
 1. 按一下[儲存]儲存組態。**&#x200B;**
 
@@ -352,7 +352,7 @@ Experience Manager會顯示工作歷史記錄。 在[大量匯入工作記錄]�
 除了網頁瀏覽器使用者介面，[!DNL Experience Manager]還支援案頭上的其他使用者端。 並提供無需前往網頁瀏覽器的上傳體驗。
 
 * [[!DNL Adobe Asset Link]](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html)可讓您存取Adobe Photoshop、Adobe Illustrator和Adobe InDesign案頭應用程式中[!DNL Experience Manager]的資產。 您可以從這些案頭應用程式內，直接從Adobe Asset Link使用者介面將目前開啟的檔案上傳到[!DNL Experience Manager]。
-* [[!DNL Experience Manager] 案頭應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)可簡化在案頭上處理資產的工作，不受其檔案型別或處理資產的原生應用程式影響。 要從本機檔案系統上傳巢狀資料夾階層中的檔案時，這個應用程式很實用，因為瀏覽器上傳功能僅支援上傳平面檔案清單。
+* [[!DNL Experience Manager] 案頭應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=zh-Hant)可簡化在案頭上處理資產的工作，不受其檔案型別或處理資產的原生應用程式影響。 要從本機檔案系統上傳巢狀資料夾階層中的檔案時，這個應用程式很實用，因為瀏覽器上傳功能僅支援上傳平面檔案清單。
 
 ## 上傳時處理資產 {#process-when-uploaded}
 
@@ -416,7 +416,7 @@ Experience Manager會顯示工作歷史記錄。 在[大量匯入工作記錄]�
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Adobe Experience Manager] 桌面應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)
+>* [[!DNL Adobe Experience Manager] 桌面應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=zh-Hant)
 >* [關於 [!DNL Adobe Asset Link]](https://www.adobe.com/tw/creativecloud/business/enterprise/adobe-asset-link.html)
 >* [[!DNL Adobe Asset Link] 文件](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html)
 >* [資產上傳的技術參考](developer-reference-material-apis.md#asset-upload)

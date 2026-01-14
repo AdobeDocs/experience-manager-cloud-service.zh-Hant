@@ -21,7 +21,7 @@ ht-degree: 26%
 
 >[!NOTE]
 >
->請參閱[近期文件更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)瞭解與版本不直接相關的文件更新的詳細資料。
+>請參閱[近期文件更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=zh-Hant)瞭解與版本不直接相關的文件更新的詳細資料。
 
 ## 發行日期 {#release-date}
 
@@ -47,7 +47,7 @@ ht-degree: 26%
 
 * [Dynamic Media智慧型影像](https://medium.com/adobetech/one-solution-fits-all-smart-imaging-with-aem-dynamic-media-be690b62df9f)現在支援AVIF檔案格式 — 進一步改善Google Core Web Vital （最大內容繪製）；相較於WebP，AVIF提供20%的額外大小縮減。 相較於JPEG，AVIF總計平均大小縮減率高達41% （在某些影像中甚至高達76%）。
 
-* [!UICONTROL Experience Manager Assets Brand Portal]現在每12小時執行一次自動工作，以刪除發佈至AEM的所有Brand Portal資產。 因此，您不需要手動刪除「貢獻」資料夾中的資產，使資料夾大小不超過臨界值限制。請參閱[Experience Manager Assets Brand Portal的新增功能](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html)。
+* [!UICONTROL Experience Manager Assets Brand Portal]現在每12小時執行一次自動工作，以刪除發佈至AEM的所有Brand Portal資產。 因此，您不需要手動刪除「貢獻」資料夾中的資產，使資料夾大小不超過臨界值限制。請參閱[Experience Manager Assets Brand Portal的新增功能](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=zh-Hant)。
 
 ### [!DNL Assets] 發行前通道中可用的新功能 {#prerelease-features-assets}
 

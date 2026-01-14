@@ -111,7 +111,7 @@ ht-degree: 11%
 
 * **智慧標籤：** [!DNL The Content Hub]使用Adobe AI的智慧內容服務，在標籤架構上使用辨識演演算法來訓練資產。 然後，再利用這些內容智慧對不同的資產集套用相關標記。智慧標籤可協助您快速找到相關資產，提升專案的內容速度。 智慧型標籤即是不含在影像中的資產資訊範例。 [!DNL Experience Manager Assets]預設會自動將智慧標籤套用至資產。
 
-* **色彩標籤：** [色彩標籤](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en)可協助您使用Adobe的AI功能，在資產中自動識別的顏色，來識別資產。
+* **色彩標籤：** [色彩標籤](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=zh-Hant)可協助您使用Adobe的AI功能，在資產中自動識別的顏色，來識別資產。
 
 * 上傳日期
 

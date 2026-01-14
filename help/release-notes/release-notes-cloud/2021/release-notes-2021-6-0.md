@@ -21,7 +21,7 @@ ht-degree: 48%
 
 >[!NOTE]
 >
->請參閱[近期文件更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)瞭解與版本不直接相關的文件更新的詳細資料。
+>請參閱[近期文件更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=zh-Hant)瞭解與版本不直接相關的文件更新的詳細資料。
 
 ## 發行日期 {#release-date}
 
@@ -155,7 +155,7 @@ AEM Screens as a Cloud Service的發行日期為2021年6月24日。
 ### 新增功能 {#what-is-new-screens-june}
 
 >[!NOTE]
->請參閱[AEM Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html)指南，以取得成功安裝、設定和執行Screens as a Cloud Service所需的基礎知識，以及指向詳細概念技術檔案的連結。
+>請參閱[AEM Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html?lang=zh-Hant)指南，以取得成功安裝、設定和執行Screens as a Cloud Service所需的基礎知識，以及指向詳細概念技術檔案的連結。
 
 * 大量裝置註冊管理意味著布建大量播放器裝置變得更快且更有效率。
 
@@ -184,7 +184,7 @@ AEM Screens as a Cloud Service的發行日期為2021年6月24日。
 
 ### 新增功能 {#what-is-new-ctt-latest}
 
-* 新增支援選用的[預先複製](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html)步驟，以搭配CTT使用。 當來源AEM例項設定為使用Amazon S3或Azure Blob儲存體資料存放區時，預先複製步驟可用來大幅加快內容轉移活動的擷取和擷取階段。
+* 新增支援選用的[預先複製](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=zh-Hant)步驟，以搭配CTT使用。 當來源AEM例項設定為使用Amazon S3或Azure Blob儲存體資料存放區時，預先複製步驟可用來大幅加快內容轉移活動的擷取和擷取階段。
 
 * CTT新增了護欄，以防止使用者在擷取階段期間達到關鍵點時停止擷取並可能損壞資料。
 

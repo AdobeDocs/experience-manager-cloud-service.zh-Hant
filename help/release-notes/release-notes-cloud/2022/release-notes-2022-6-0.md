@@ -21,7 +21,7 @@ ht-degree: 28%
 
 >[!NOTE]
 >
->請參閱[近期文件更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)瞭解與版本不直接相關的文件更新的詳細資料。
+>請參閱[近期文件更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=zh-Hant)瞭解與版本不直接相關的文件更新的詳細資料。
 
 ## 發行日期 {#release-date}
 
@@ -43,7 +43,7 @@ ht-degree: 28%
 
   ![內容片段主控台](/help/release-notes/assets/cf-ui.png)
 
-* 新的[目錄元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/tableofcontents.html)不僅可以與核心元件搭配使用，也可以與所有元件搭配使用，以在內容頁面上自動呈現ToCs。 而且，由於它是在伺服器端呈現並由Dispatcher完全快取，因此載入也相當有效率。
+* 新的[目錄元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/tableofcontents.html?lang=zh-Hant)不僅可以與核心元件搭配使用，也可以與所有元件搭配使用，以在內容頁面上自動呈現ToCs。 而且，由於它是在伺服器端呈現並由Dispatcher完全快取，因此載入也相當有效率。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 

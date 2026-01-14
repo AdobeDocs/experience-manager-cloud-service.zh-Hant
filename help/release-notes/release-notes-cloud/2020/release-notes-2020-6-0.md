@@ -25,7 +25,7 @@ ht-degree: 91%
 
 ### 新增功能 {#whats-new-2020.6.0}
 
-[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 2.9.0 版現已隨附於 AEM Sites，其中包含：
+[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant) 2.9.0 版現已隨附於 AEM Sites，其中包含：
 
 * [Adobe 用戶端資料層](https://github.com/adobe/adobe-client-data-layer)與核心元件的整合
 * 所有元件可設定的 HTML ID 屬性
