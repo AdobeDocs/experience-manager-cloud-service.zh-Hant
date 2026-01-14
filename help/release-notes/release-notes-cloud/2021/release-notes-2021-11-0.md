@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.11.0 版
 exl-id: 86f8ddd1-af51-4874-9111-0935b5a162c1
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
-source-wordcount: '1058'
+source-wordcount: '1059'
 ht-degree: 55%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 55%
 
 >[!NOTE]
 >
->請參閱[近期文件更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=zh-Hant)瞭解與版本不直接相關的文件更新的詳細資料。
+>請參閱[近期文件更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)瞭解與版本不直接相關的文件更新的詳細資料。
 
 ## 發行日期 {#release-date}
 
@@ -36,11 +36,11 @@ ht-degree: 55%
 
 ### [!DNL Assets] 中的新功能 {#assets-features}
 
-* Dynamic Media影像智慧型裁切和色票現在由最新的Sensei服務提供支援，可製作出更佳裁切和色票成果。 此外，已啟動增強功能以產生相同縱橫比但跨不同解析度的不同裁切內容。 此外，如果「影像設定檔」中的寬度和高度沒有變化，則在重新處理時會保留任何手動編輯。
+* Dynamic Media影像智慧型裁切和色票現在由最新的Adobe AI服務提供支援，可製作出更佳裁切和色票成果。 此外，已啟動增強功能以產生相同縱橫比但跨不同解析度的不同裁切內容。 此外，如果「影像設定檔」中的寬度和高度沒有變化，則在重新處理時會保留任何手動編輯。
 
 ### [!DNL Assets]發行前管道中的新功能 {#assets-prerelease-features}
 
-* [!DNL Dynamic Media] — 您現在可以使用AEM Dynamic Media介面進行設定，包括一般設定和Publish設定，而不必透過Dynamic Media Classic案頭應用程式來進行。
+* [!DNL Dynamic Media] — 您現在可以使用AEM Dynamic Media介面進行設定，包括一般設定和發佈設定，而不必透過Dynamic Media Classic案頭應用程式來進行。
 
 * [!DNL Dynamic Media]現在支援MXF影片的擷取、預覽、播放和發佈。 尚不支援MXF影片的附註和可訂購影片。
 
@@ -54,14 +54,14 @@ ht-degree: 55%
 
 ### [!DNL Forms] 發行前通道中可用的新功能 {#prerelease-features-forms}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**：[通訊 API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html?lang=zh-Hant) 可幫助您合併範本和 XML 資料，以產生多種格式的列印文件。 此服務可讓您以同步和批次模式產生文件。這些 API 可讓您建立以下用途的應用程式：
+* **[!DNL AEM Forms as a Cloud Service - Communications]**：[通訊 API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html) 可幫助您合併範本和 XML 資料，以產生多種格式的列印文件。 此服務可讓您以同步和批次模式產生文件。這些 API 可讓您建立以下用途的應用程式：
 
    * 使用 XML 資料填寫範本檔案 (PDF 和 XDP) 來產生文件。
    * 產生多種格式的輸出表單，包括非互動式 PDF 列印資料流。
 
-* **記錄檔案和使用Communications API建立的PDF檔案的自訂字型**：您現在可以在使用Communications API產生的PDF檔案中使用品牌核准的字型，以符合您的組織要求。
+* **使用Communications API建立的記錄檔案和PDF檔案的自訂字型**：您現在可以在使用Communications API產生的PDF檔案中使用品牌核准的字型，以符合您的組織要求。
 
-* **Forms入口網站**：您可以使用[Forms入口網站](/help/forms/configure-forms-portal.md)，在AEM Sites頁面上列出您已發佈的最適化表單。 這有助於網站訪客發現所有可用表單。 此外，訪客可使用Forms入口網站來儲存和存取最適化表單的草稿，並檢視已提交最適化表單的PDF版本。
+* **Forms入口網站**：您可以使用[Forms入口網站](/help/forms/configure-forms-portal.md)，在AEM Sites頁面上列出您已發佈的最適化表單。 這有助於網站訪客發現所有可用表單。 此外，訪客可以使用Forms入口網站來儲存和存取最適化表單的草稿，並檢視已提交最適化表單的PDF版本。
 
 ## CIF 附加元件 {#cloud-services-cif}
 
@@ -71,7 +71,7 @@ ht-degree: 55%
 
 ![延伸myAccount元件](/help/assets/CIF/extended-myAccount-components.png)
 
-* 作者可使用其他建議型別來建立臨機Commerce產品Recommendations
+* 作者可使用其他建議型別來建立臨機Commerce產品建議
 
 * 支援AEM Storefront中的禮品卡
 

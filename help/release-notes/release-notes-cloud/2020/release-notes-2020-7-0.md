@@ -1,17 +1,17 @@
 ---
 title: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2020.7.0 版發行說明。'
-description: "[!DNL Adobe Experience Manager]個2020.7.0as a Cloud Service發行說明。"
+description: '[!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0版發行說明。'
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '1012'
 ht-degree: 72%
 
 ---
 
-# [!DNL Adobe Experience Manager]as a Cloud Service2020.7.0版發行說明 {#release-notes}
+# [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0版發行說明 {#release-notes}
 
 以下章節概述 Experience Manager as a Cloud Service 2020.7.0 版的一般發行說明。
 
@@ -19,7 +19,7 @@ ht-degree: 72%
 
 [!DNL Experience Manager] as a Cloud Service 2020.7.0 版的發行日期為 2020 年 7 月 30 日。
 
-## Adobe Experience Manager Sitesas a Cloud Service {#cloud-services-sites}
+## Adobe Experience Manager Sites as a Cloud Service {#cloud-services-sites}
 
 ### 新增功能 {#what-is-new-sites}
 
@@ -27,15 +27,15 @@ ht-degree: 72%
 
 * 新版使用者介面實作會取代以傳統版 UI 為基礎的實作。
 
-* 簡化使用者介面對話方塊，將變數對應的框架建立作業和其他設定保留給 [!DNL Adobe Launch]。請參閱[整合 Adobe Analytics](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/integrations/integrating-adobe-analytics.html?lang=zh-Hant) 和[整合 Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/integrations/integrating-adobe-target.html?lang=zh-Hant)。
+* 簡化使用者介面對話方塊，將變數對應的框架建立作業和其他設定保留給 [!DNL Adobe Launch]。請參閱[整合 Adobe Analytics](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/integrations/integrating-adobe-analytics.html) 和[整合 Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/integrations/integrating-adobe-target.html)。
 
 * 設定現在會儲存在 Experience Manager 存放庫的 `/conf`，而非 `/etc/cloudsettings`。
 
-## [!DNL Adobe Experience Manager Assets]個as a Cloud Service {#assets}
+## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
 ### [!DNL Assets] 的新增功能 {#what-is-new-assets}
 
-* [!DNL Asset Compute Service] 是可擴充的資產處理服務。管理員可以設定[!DNL Experience Manager]以叫用使用[!DNL Asset Compute Service]建立的自訂應用程式。 開發人員可使用此服務建立專門的自訂應用程式，以配合複雜的使用案例。 此網站服務可針對不同的檔案型別產生縮圖、以Adobe檔案格式產生高品質的影像轉譯、影片編碼（未來功能）、擷取中繼資料、擷取全文作為索引的前導，以及透過所有可用的[!DNL Sensei]服務執行資產。 請參閱[使用資產微服務及處理設定檔](/help/assets/asset-microservices-configure-and-use.md)。
+* [!DNL Asset Compute Service] 是可擴充的資產處理服務。管理員可以設定[!DNL Experience Manager]以叫用使用[!DNL Asset Compute Service]建立的自訂應用程式。 開發人員可使用此服務建立專門的自訂應用程式，以配合複雜的使用案例。 此網站服務可針對不同的檔案型別產生縮圖、以Adobe檔案格式產生高品質的影像轉譯、影片編碼（未來功能）、擷取中繼資料、擷取全文作為索引的前導，以及透過所有可用的[!DNL AI]服務執行資產。 請參閱[使用資產微服務及處理設定檔](/help/assets/asset-microservices-configure-and-use.md)。
 
 * [!DNL Experience Manager] as a Cloud Service 中 [!DNL Dynamic Media] 的初始設定經過改良，更加健全。現在可為管理員提供處理程序的進度。
 
@@ -43,7 +43,7 @@ ht-degree: 72%
 
 * 若工作流程步驟與雲端服務部署不相容，系統會在[!UICONTROL 工作流程模型]編輯器中標示警告。此外，在Cloud Service環境中執行現有工作流程時，系統會略過不相容的工作流程步驟。
 
-* 在與[!DNL Cloud Manager]中的環境相關聯的Git專案中，由客戶建立且部署至`/conf/global`的工作流程模型會自動部署至`/var`，因此可在[!DNL Experience Manager]中使用。 `/libs` 底下經客戶變更的產品工作流程模型則不會自動部署至 `/var`。
+* 在與`/conf/global`中的環境相關聯的Git專案中，由客戶建立且部署至[!DNL Cloud Manager]的工作流程模型會自動部署至`/var`，因此可在[!DNL Experience Manager]中使用。 `/libs` 底下經客戶變更的產品工作流程模型則不會自動部署至 `/var`。
 
 ### 已修正的錯誤 {#assets-bugs-fixed}
 
@@ -51,26 +51,26 @@ ht-degree: 72%
 * `dam:size`和`dam:sha1`的值已從XMP回寫中排除。 (CQ-4237355)
 * 大量取消發佈資產時，[!DNL Brand Portal]會產生錯誤，指出請求URI太長。 (CQ-4299474)
 
-## Adobe Experience Manager Commerceas a Cloud Service {#cloud-services-commerce}
+## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
 ### 新增功能 {#what-is-new-commerce}
 
 AEM Commerce現在可在Cloud Service上使用。
 
-如需詳細資訊，請參閱[AEM Commerce快速入門as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html?lang=zh-Hant)。
+如需詳細資訊，請參閱[AEM Commerce as a Cloud Service快速入門](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html)。
 
 ## 核心元件 {#core-components}
 
 ### 新增功能 {#what-is-new-core-components}
 
-[AEM 核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant) 2.11.0 版現在隨附於 AEM Sites，其中包含：
+[AEM 核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 2.11.0 版現在隨附於 AEM Sites，其中包含：
 
 * 導入最新 [PDF 檢視器元件](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/pdf-viewer.html)。
 
 * 提供核心元件的 Accelerated Mobile Pages (AMP) 支援。從 Google 行動搜尋結果進入網站時，系統會即時轉換頁面，有助於提供更快速的客戶體驗，進而改善使用者參與和 SEO。
-如需詳細資訊，請參閱核心元件的[AMP支援](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html?lang=zh-Hant)。
+如需詳細資訊，請參閱核心元件的[AMP支援](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html)。
 
-* 與 [Adobe 用戶端資料層](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=zh-Hant) 1.0.2 版相容。
+* 與 [Adobe 用戶端資料層](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html) 1.0.2 版相容。
 
 * 錯誤修正並提升程式碼品質。
 
@@ -116,7 +116,7 @@ AEM Commerce現在可在Cloud Service上使用。
 
 ### 已知問題 {#known-issues}
 
-* 由於程式碼涵蓋範圍的計算方式有所變更，Jacoco 外掛程式的&#x200B;*最低*&#x200B;版本現在是 0.7.5.201505241946 (2015 年 5 月發佈)。若客戶明確參考較舊版本，會在程式碼品質處理程序中收到錯誤訊息。
+* 由於程式碼涵蓋範圍的計算方式有所變更，Jacoco 外掛計劃的&#x200B;*最低*&#x200B;版本現在是 0.7.5.201505241946 (2015 年 5 月發佈)。若客戶明確參考較舊版本，會在程式碼品質處理程序中收到錯誤訊息。
 
 ## Adobe Experience Manager as a Cloud Service 基礎 {#cloud-foundation}
 
@@ -138,9 +138,9 @@ AEM Commerce現在可在Cloud Service上使用。
 
 * CRA 較早版本無法在 Adobe Experience Manager (AEM) 6.1 上執行。新增明確支援，讓管理員群組中的使用者使用。
 
-  如需詳細資訊，請參閱[在AEM 6.1](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html?lang=zh-Hant#installing-on-aem61)上安裝CRA 。
+  如需詳細資訊，請參閱[在AEM 6.1](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61)上安裝CRA 。
 
-* 摘要報告顯示的到期時間戳記不正確。
+* 摘要報告顯示的過期時間戳記不正確。
 
 * CRA 偵測到重複的自訂元件。
 

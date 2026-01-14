@@ -5,10 +5,10 @@ role: User, Leader, Admin, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 67f9ec20667639458d8a6b142df3fc76ff574f26
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '2236'
-ht-degree: 80%
+ht-degree: 79%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 80%
 
 ![檢視資產的中繼資料](assets/metadata-view.png)
 
-*圖：若要檢視資產及其中繼資料，請從工具列按一下&#x200B;**[!UICONTROL 詳細資訊]**&#x200B;或按兩下資產。*
+*圖：若要檢視資產及其中繼資料，請從工具列按一下&#x200B;**[!UICONTROL 詳細資訊]**或按兩下資產。*
 
 標題、說明和上傳日期之類的基本中繼資料可在[!UICONTROL 基本]標籤中取得。[!UICONTROL 進階]標籤包含更進階的中繼資料，例如相機型號、鏡頭詳細資訊和地理標籤。[!UICONTROL 標記]標籤會根據影像內容包含自動套用的標記。
 
@@ -43,19 +43,19 @@ ht-degree: 80%
 
 ## 智慧標記 {#smart-tags}
 
-[!DNL Experience Manager Assets] 使用 [Adobe Sensei](https://www.adobe.com/tw/sensei.html) 所提供的人工智慧，自動將相關標記套用至您所有上傳的資產。這些標記名為智慧型標記，有助於您快速尋找相關資產，提高專案的內容速度。智慧型標記即是不含在影像內的中繼資料範例。
+[!DNL Experience Manager Assets]使用[Adobe AI](https://business.adobe.com/ai/adobe-genai.html)所提供的人工智慧，自動將相關標籤套用至您所有上傳的資產。 這些標記名為智慧型標記，有助於您快速尋找相關資產，提高專案的內容速度。智慧型標記即是不含在影像內的中繼資料範例。
 
 智慧型標記近乎即時套用，並根據影像內容產生。上傳資產時，使用者介面會在資產縮圖上顯示[!UICONTROL 處理中]一段時間。待處理完成後，即可[檢視中繼資料](#view-metadata)和智慧型標記。
 
 ![檢視資產的智慧型標記](assets/metadata-view-tags.png)
 
-*圖：若要檢視智慧標記，請從工具列按一下&#x200B;**[!UICONTROL 詳細資訊]**&#x200B;或按兩下資產。*
+*圖：若要檢視智慧標記，請從工具列按一下&#x200B;**[!UICONTROL 詳細資訊]**或按兩下資產。*
 
 智慧型標記也包含信賴分數 (以百分比呈現)。這表示與套用標記相關的信賴度。您可以審核自動套用的智慧型標記。
 
 ## 新增或更新關鍵字 {#manually-tag}
 
-除了使用 [!DNL Adobe Sensei] 智慧型服務自動新增的智慧型標記之外，您還可新增更多標記到您的資產。開啟要預覽的資產，按一下[!UICONTROL 標記]，然後在[!UICONTROL 關鍵字]欄位中輸入所需的關鍵字。若要新增標記，請按一下「Return」。[!DNL Assets view] 會近乎即時地編製關鍵字的索引，因此您的團隊很快就能使用新的關鍵字搜尋更新的資產。
+除了使用 [!DNL Adobe AI] 智慧型服務自動新增的智慧型標記之外，您還可新增更多標記到您的資產。開啟要預覽的資產，按一下[!UICONTROL 標記]，然後在[!UICONTROL 關鍵字]欄位中輸入所需的關鍵字。若要新增標記，請按一下「Return」。[!DNL Assets view] 會近乎即時地編製關鍵字的索引，因此您的團隊很快就能使用新的關鍵字搜尋更新的資產。
 
 您也可以從[!UICONTROL 智慧標記]區段移除由 [!DNL Assets view] 自動新增到所有上傳資產的標記。
 
@@ -226,17 +226,17 @@ See [Assign metadata form to folders](#assign-metadata-form-folder). Follow the 
 1. 開啟索引標籤（**[!DNL Basic]**、**[!DNL Advanced]**&#x200B;或&#x200B;**[!DNL Tags]**）。
 1. 選取中繼資料屬性，以在&#x200B;**[!UICONTROL 設定]**&#x200B;面板中編輯其設定。 您可以在&#x200B;**[!UICONTROL 設定]**&#x200B;面板中更新屬性對應、重新命名標籤、修改或新增屬性值，以及執行更多此類編輯。
 1. 按一下&#x200B;**[!UICONTROL 預覽]**&#x200B;以檢閱表單變更，然後再儲存這些變更。
-1. 按一下[儲存]以套用變更。**&#x200B;**
+1. 按一下[儲存]以套用變更。****
 
 ## 後續步驟 {#next-steps}
 
-* [觀看在Assets檢視中管理中繼資料表單的相關影片](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html?lang=zh-Hant)
+* [觀看在Assets檢視中管理中繼資料表單的相關影片](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html)
 
 * 使用資產檢視使用者介面所提供的[!UICONTROL 意見回饋]選項提供產品意見回饋
 
 * 若要提供文件意見回饋，請使用右側邊欄提供的[!UICONTROL 編輯此頁面]![來編輯頁面](assets/do-not-localize/edit-page.png)或[!UICONTROL 記錄問題]![來建立 GitHub 問題](assets/do-not-localize/github-issue.png)
 
-* 聯絡[客戶服務](https://experienceleague.adobe.com/zh-hant?support-solution=General#support)
+* 聯絡[客戶服務](https://experienceleague.adobe.com/?support-solution=General#support)
 
 <!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
 To reuse an existing form to create a form, do one of these:

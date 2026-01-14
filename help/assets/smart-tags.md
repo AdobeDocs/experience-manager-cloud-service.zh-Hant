@@ -1,10 +1,10 @@
 ---
-title: 使用 [!DNL Adobe Sensei] 智慧服務自動標籤資產
+title: 使用 [!DNL Adobe AI] 智慧服務自動標籤資產
 description: 透過會套用內容關聯式和描述性業務標記的人工智慧服務來標記資產。
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 03cbcf098e0640705aa2a69a8fa605ab1e8cbb06
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '2082'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 例如，在字典中依字母順序排列的單字比隨機散佈的單字更容易找到。 標籤有類似的用途。 它會根據商業分類法組織資產，確保最相關的資產會出現在搜尋結果中。 例如，汽車製造商可以使用模型名稱來標籤汽車影像，以便在設計促銷活動時只顯示相關影像。 無論是「跑鞋」或「跑鞋」標籤的使用者無需擔心拼字、拼字變化或替代搜尋詞 — 智慧標籤可識別所有搜尋詞。
 
-在背景中，此功能使用[Adobe Sensei](https://business.adobe.com/tw/products/sensei/adobe-sensei.html)的人工智慧型架構，依預設會自動將智慧標籤套用至已上傳的資產，連同對齊商業分類的文字。
+在背景中，此功能使用[Adobe AI](https://business.adobe.com/ai/adobe-genai.html)的人工智慧型架構，依預設會自動將智慧標籤套用至已上傳的資產，連同對齊商業分類法的文字。
 
 ## 必要條件和設定 {#smart-tags-prereqs-config}
 
@@ -27,7 +27,7 @@ ht-degree: 1%
 
 ## 智慧標籤工作流程 {#smart-tags-workflow}
 
-[!DNL Adobe Sensei]支援的智慧標籤使用人工智慧模型來分析內容並將標籤新增到資產。 從而減少DAM使用者為客戶提供豐富體驗的時間。 智慧標籤在資產屬性中會依其[信賴分數](#confidence-score)的遞減順序顯示。
+[!DNL Adobe AI]支援的智慧標籤使用人工智慧模型來分析內容並將標籤新增到資產。 從而減少DAM使用者為客戶提供豐富體驗的時間。 智慧標籤在資產屬性中會依其[信賴分數](#confidence-score)的遞減順序顯示。
 
 * **影像型資產**
 對於影像，智慧標籤是以某些視覺方面為基礎。 許多格式的影像會使用智慧內容服務加以標籤。 智慧標籤已套用至[支援的檔案型別](#supported-file-formats)，這些檔案型別會產生JPG和PNG格式的轉譯。
@@ -35,7 +35,7 @@ ht-degree: 1%
   <!-- ![Image Smart Tag](assets/image-smart-tag.png)-->
 
 * **視訊資產**
-對於視訊型資產，標籤在[!DNL Adobe Experience Manager]中預設為[!DNL Cloud Service]啟用。 同樣地，當您上傳新影片或重新處理現有影片時，也會以影像和文字標籤自動標籤影片。 [!DNL Adobe Sensei]為視訊產生兩組標籤：一組對應至該視訊中的物件、場景和屬性，而另一組則與飲酒、跑步和慢跑等動作相關。 同時檢查[選擇退出視訊智慧標籤](#opt-out-video-smart-tagging)。
+對於視訊型資產，標籤在[!DNL Adobe Experience Manager]中預設為[!DNL Cloud Service]啟用。 同樣地，當您上傳新影片或重新處理現有影片時，也會以影像和文字標籤自動標籤影片。 [!DNL Adobe AI]為視訊產生兩組標籤：一組對應至該視訊中的物件、場景和屬性，而另一組則與飲酒、跑步和慢跑等動作相關。 同時檢查[選擇退出視訊智慧標籤](#opt-out-video-smart-tagging)。
 
 * **文字型資產**
 針對支援的資產，[!DNL Experience Manager]已擷取文字，然後編制索引並用於搜尋資產。 不過，以文字中的關鍵字為基礎的智慧標籤可提供專用的、結構化的和較高優先順序的搜尋Facet。 相較於搜尋索引，後者有助於改善資產探索。
@@ -74,7 +74,7 @@ ht-degree: 1%
 
 ## 準備立即可用的智慧標籤資產
 
-當您[將資產](add-assets.md#upload-assets)上傳至[!DNL Adobe Experience Manager]做為[!DNL Cloud Service]時，系統會處理上傳的資產。 處理完成後，請參閱資產[!UICONTROL 屬性]頁面的[!UICONTROL 基本]標籤。 智慧標籤會自動新增至[!UICONTROL 智慧標籤]下的資產。 資產微服務使用[!DNL Adobe Sensei]來建立這些智慧標籤。
+當您[將資產](add-assets.md#upload-assets)上傳至[!DNL Adobe Experience Manager]做為[!DNL Cloud Service]時，系統會處理上傳的資產。 處理完成後，請參閱資產[!UICONTROL 屬性]頁面的[!UICONTROL 基本]標籤。 智慧標籤會自動新增至[!UICONTROL 智慧標籤]下的資產。 資產微服務使用[!DNL Adobe AI]來建立這些智慧標籤。
 
 ![智慧標籤已新增至視訊，並可在資產屬性的「基本」標籤中看到](assets/smart-tags-added-to-videos.png)
 
@@ -88,7 +88,7 @@ The applied smart tags are sorted in descending order of [confidence score](#con
 
 ## DAM中未標籤的Assets {#smart-tag-existing-assets}
 
-DAM中的現有或舊版資產不會自動加上智慧標籤。 您必須手動[重新處理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=zh-Hant#adjusting-load) Assets，才能為其產生智慧標籤。 程式完成後，請導覽至資料夾內任何資產的[!UICONTROL 屬性]頁面。 自動新增的標籤會顯示在[!UICONTROL 基本]索引標籤的[!UICONTROL 智慧標籤]區段中。 這些套用的智慧標籤會以[信賴分數](#confidence-score)的遞減順序排序。
+DAM中的現有或舊版資產不會自動加上智慧標籤。 您必須手動[重新處理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/about-image-video-profiles.html?lang=en#adjusting-load) Assets，才能為其產生智慧標籤。 程式完成後，請導覽至資料夾內任何資產的[!UICONTROL 屬性]頁面。 自動新增的標籤會顯示在[!UICONTROL 基本]索引標籤的[!UICONTROL 智慧標籤]區段中。 這些套用的智慧標籤會以[信賴分數](#confidence-score)的遞減順序排序。
 
 <!--
 To smart tag assets, or folders (including subfolders) of assets that exist in assets repository, follow these steps:
@@ -113,7 +113,7 @@ The default threshold for action and object tags in [!DNL Adobe Experience Manag
 
 To add the confidence score OSGI configuration to the project deployed to [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] through [!DNL Cloud Manager]:
 
-In the [!DNL Adobe Experience Manager] project (`ui.config` since Archetype 24, or previously `ui.apps`) the `config.author` OSGi configuration, include a config file named `com.adobe.cq.assetcompute.impl.senseisdk.SenseiSdkImpl.cfg.json` with the following contents:
+In the [!DNL Adobe Experience Manager] project (`ui.config` since Archetype 24, or previously `ui.apps`) the `config.author` OSGi configuration, include a config file named `com.adobe.cq.assetcompute.impl.aisdk.AISdkImpl.cfg.json` with the following contents:
 
 ```json
 {
@@ -224,7 +224,7 @@ Following are the benefits of using Smart Tags in your AEM Assets:
    * 非視覺化抽象層面。 例如，產品發佈的年份或季節、影像引發的情緒或情感，以及視訊的主觀內涵。
    * 產品的細微視覺差異，例如有領襯衫和沒有領子的襯衫，或嵌入在產品上的小產品標誌。
 
-* 系統只會自動標籤檔案大小小於300 MB的視訊。 [!DNL Adobe Sensei]服務會略過較大大小的視訊檔案。
+* 系統只會自動標籤檔案大小小於300 MB的視訊。 [!DNL Adobe AI]服務會略過較大大小的視訊檔案。
 * 若要搜尋含有智慧標籤的檔案（一般或增強功能），請使用[!DNL Assets]搜尋（全文檢索搜尋）。 智慧標籤沒有單獨的搜尋述詞。
 * 相較於一般標籤，使用商業分類法標籤的資產更容易透過標籤式搜尋識別和擷取。
 
@@ -232,7 +232,7 @@ Following are the benefits of using Smart Tags in your AEM Assets:
 
 +++**智慧標籤如何改善資產的搜尋體驗？**
 
-上傳資產後，[!DNL Adobe]個Sensei會自動標籤資產。 自動化程式在後端執行得太快，您會在上傳完成數秒後看到資產中新增的標籤。
+上傳資產後，[!DNL Adobe]人工智慧會自動標籤資產。 自動化程式在後端執行得太快，您會在上傳完成數秒後看到資產中新增的標籤。
 
 +++
 

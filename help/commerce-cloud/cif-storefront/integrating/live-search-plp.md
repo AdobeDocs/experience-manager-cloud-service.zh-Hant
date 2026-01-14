@@ -5,7 +5,7 @@ exl-id: 7f2d9a43-a7cb-4d9d-a108-b016cd1ff81e
 feature: Commerce Integration Framework
 role: Admin
 index: false
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '306'
 ht-degree: 0%
@@ -15,13 +15,13 @@ ht-degree: 0%
 
 # [!DNL Live Search] CIF元件 {#live-search-cif-component}
 
-Adobe Commerce的Live Search提供快速、相關且直覺的搜尋體驗，不需額外付費。 由Adobe Sensei提供支援的即時搜尋功能會使用人工智慧和機器學習演演算法，對彙總的訪客資料執行深入分析。 此資料與您的Adobe Commerce目錄結合時，會產生相關且個人化的購物體驗。
+Adobe Commerce的Live Search提供快速、相關且直覺的搜尋體驗，不需額外付費。 由Adobe AI提供支援的即時搜尋功能會使用人工智慧和機器學習演演算法，對彙總的訪客資料執行深入分析。 此資料與您的Adobe Commerce目錄結合時，會產生相關且個人化的購物體驗。
 
 本主題說明如何使用AEM CIF元件，將[!DNL Live Search]產品清單頁面(PLP) Widget實作至您的AEM網站。
 
 ## 先決條件 {#prerequisites}
 
-本主題假設您已設定本機[AEM環境](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=zh-Hant)。
+本主題假設您已設定本機[AEM環境](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)。
 
 PLP元件需要安裝[[!DNL Live Search] Popover CIF元件](/help/commerce-cloud/cif-storefront/integrating/live-search-popover.md)。 PLP Widget需要由彈出視窗產生的瀏覽器工作階段變數。
 

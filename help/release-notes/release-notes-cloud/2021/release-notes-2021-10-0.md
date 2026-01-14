@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.10.0 版
 exl-id: ab584923-5f06-4b54-941b-e00bc1158b81
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '1436'
 ht-degree: 66%
@@ -21,7 +21,7 @@ ht-degree: 66%
 
 >[!NOTE]
 >
->請參閱[近期文件更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=zh-Hant)瞭解與版本不直接相關的文件更新的詳細資料。
+>請參閱[近期文件更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)瞭解與版本不直接相關的文件更新的詳細資料。
 
 ## 發行日期 {#release-date}
 
@@ -46,7 +46,7 @@ ht-degree: 66%
 
 ### [!DNL Assets]發行前管道中的新功能 {#assets-prerelease-features}
 
-* [!DNL Dynamic Media]影像智慧型裁切和色票現在由最新的Sensei服務提供支援，可製作出更佳裁切和色票成果。 此外，已啟動增強功能以產生相同縱橫比但跨不同解析度的不同裁切內容。 此外，如果「影像設定檔」中的寬度和高度沒有變化，則在重新處理時會保留任何手動編輯。
+* [!DNL Dynamic Media]影像智慧型裁切和色票現在由最新的AI服務提供支援，可製作出更佳裁切和色票成果。 此外，已啟動增強功能以產生相同縱橫比但跨不同解析度的不同裁切內容。 此外，如果「影像設定檔」中的寬度和高度沒有變化，則在重新處理時會保留任何手動編輯。
 
 * 智慧標籤會自動套用至使用資產微服務的資產，而非智慧內容服務。 基礎模型已更新，以改善標籤結果並減少偏差。<!-- As it uses asset microservices, it is now possible to develop custom workers using Stock10-based Smart Tags. -->
 
@@ -66,9 +66,9 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 
 * **外部化 AEM Workflow 資料以進行安全處理**：您可以將包含敏感個人資料 (SPD) 元素的程序內 AEM 工作流程資料 (AEM 工作流程變數資料) 儲存在客戶管理的存放庫中，以進行安全處理。資料元素和工作流程變數未儲存在 AEM 存放庫，並在處理工作流程時隨選從客戶管理的存放庫擷取。
 
-### [!DNL Forms] 的 Beta 版功能 {#what-is-new-forms-oct2021-beta}
+### [!DNL Forms] 的 Beta 版功能  {#what-is-new-forms-oct2021-beta}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**：[通訊 API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html?lang=zh-Hant) 可幫助您合併範本和 XML 資料，以產生多種格式的列印文件。 此服務可讓您以同步和批次模式產生文件。這些 API 可讓您建立以下用途的應用程式：
+* **[!DNL AEM Forms as a Cloud Service - Communications]**：[通訊 API](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html) 可幫助您合併範本和 XML 資料，以產生多種格式的列印文件。 此服務可讓您以同步和批次模式產生文件。這些 API 可讓您建立以下用途的應用程式：
 
    * 使用 XML 資料填寫範本檔案 (PDF 和 XDP) 來產生文件。
    * 產生多種格式的輸出表單，包括非互動式 PDF 列印資料流。
@@ -81,11 +81,11 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 
 * CIF附加元件支援具有新Commerce API和結構描述的最新GraphQL v2.4.3
 
-* 作者可使用RTF編輯器(RTE)，在文字欄位中新增產品與目錄頁面的連結。 RTE工具列中新增了CIF圖示，可開啟選擇器，以便快速搜尋和選取產品或類別，而不需離開內容。
+* 作者可使用RTF編輯器(RTE)，在文字欄位中新增產品與目錄頁面的連結。 RTE工具列已新增CIF圖示，可開啟選擇器，以快速搜尋並選取產品或類別，而不需離開內容。
 
 * 現有的彈出式購物車和結帳頁面已替換為專用的AEM購物車和結帳頁面。 這些頁面上的元件是使用Adobe Commerce的可擴充Peregrine元件所建置
 
-* 商家可使用Commerce後端，在導覽中隱藏特定產品目錄類別。 CIF導覽核心元件依照商務後端設定「包含在功能表中」以在導覽中顯示/隱藏類別
+* 商家可使用Commerce後端，在導覽中隱藏特定產品目錄類別。 CIF導覽核心元件遵守Commerce後端設定「包含在功能表中」以在導覽中顯示/隱藏類別
 
 * 如果找不到類別或產品頁面，AEM Storefront Venia會傳回HTTP 404錯誤
 
@@ -146,7 +146,7 @@ AEM as a Cloud Service 2021.10.0 中的 Cloud Manager 發行日期是 2021 年 1
 
 ### 新增功能 {#what-is-new-cm-oct}
 
-* 為了準備一些即將發生的變化，現有的部署管道現在將在使用者界面中被引用和標記為&#x200B;**完整堆疊**&#x200B;管道。
+* 為了準備一些即將發生的變化，現有的部署管道現在將在使用者界面中被引用和被其標籤為&#x200B;**完整堆疊**&#x200B;管道。
 
 * 管道卡已刷新，現在顯示一個整合的面，顯示生產和非生產管道，使用者可以直接從與每個管道關聯的操作選單中選擇執行/暫停/恢復。
 

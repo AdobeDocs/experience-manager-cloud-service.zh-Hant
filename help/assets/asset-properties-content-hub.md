@@ -3,9 +3,9 @@ title: 在 [!DNL the Content Hub]中預覽資產及其屬性
 description: 瞭解如何預覽 [!DNL Content Hub]中的資產和屬性
 role: User
 exl-id: a85af980-4c51-4d30-9fad-afd16370e9db
-source-git-commit: 45e731d2286b07db5852138ae1ac914a56b13a6a
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '635'
 ht-degree: 11%
 
 ---
@@ -60,43 +60,43 @@ ht-degree: 11%
     </tr>
     </tr>
     <tr>
-        <td>[!UICONTROL JPEG]</td>
+        <td>[！UICONTROL JPEG]</td>
     </tr>
     <tr>
-        <td>[!UICONTROL PNG]</td>
+        <td>[！UICONTROL PNG]</td>
     </tr>
     <tr>
         <td rowspan="4"> 影片 </td>
     </tr>
     </tr>
     <tr>
-        <td>[!UICONTROL Quicktime]</td>
+        <td>[！UICONTROL Quicktime]</td>
     </tr>
     <tr>
-        <td>[!UICONTROL MP4]</td>
+        <td>[！UICONTROL MP4]</td>
     </tr>
     <tr>
-        <td>[!UICONTROL MPEG]</td>
+        <td>[！UICONTROL MPEG]</td>
     </tr>
     <tr>
         <td rowspan="4"> 文件 </td>
     </tr>
     </tr>
     <tr>
-        <td>[!UICONTROL txt] （純文字）</td>
+        <td>[！UICONTROL txt] （純文字）</td>
     </tr>
     <tr>
-        <td>[!UICONTROL Doc/Docx]</td>
+        <td>[！UICONTROL Doc/Docx]</td>
     </tr>
     <tr>
-        <td>[!UICONTROL XML]</td>
+        <td>[！UICONTROL XML]</td>
     </tr>
     <tr>
         <td rowspan="2"> 列印媒體 </td>
     </tr>
     </tr>
     <tr>
-        <td>[!UICONTROL PDF]</td>
+        <td>[！UICONTROL PDF]</td>
     </tr>
     </tbody>
 </table>
@@ -109,9 +109,9 @@ ht-degree: 11%
 
 <!--* **Tags:** Tags help you categorize assets that can be browsed and searched more efficiently. Tagging helps in propagating the appropriate taxonomy to other users and workflows. -->
 
-* **智慧標籤：** [!DNL The Content Hub]使用Adobe Sensei的智慧內容服務，在標籤架構上使用辨識演演算法來訓練資產。 然後，再利用這些內容智慧對不同的資產集套用相關標記。智慧標籤可協助您快速找到相關資產，提升專案的內容速度。 智慧型標籤即是不含在影像中的資產資訊範例。 [!DNL Experience Manager Assets]預設會自動將智慧標籤套用至資產。
+* **智慧標籤：** [!DNL The Content Hub]使用Adobe AI的智慧內容服務，在標籤架構上使用辨識演演算法來訓練資產。 然後，再利用這些內容智慧對不同的資產集套用相關標記。智慧標籤可協助您快速找到相關資產，提升專案的內容速度。 智慧型標籤即是不含在影像中的資產資訊範例。 [!DNL Experience Manager Assets]預設會自動將智慧標籤套用至資產。
 
-* **色彩標籤：** [色彩標籤](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=zh-Hant)可協助您使用Adobe的Sensei AI功能，在資產中自動識別的顏色，識別資產。
+* **色彩標籤：** [色彩標籤](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en)可協助您使用Adobe的AI功能，在資產中自動識別的顏色，來識別資產。
 
 * 上傳日期
 

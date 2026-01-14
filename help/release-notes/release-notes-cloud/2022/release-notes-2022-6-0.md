@@ -4,16 +4,16 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2022.6.0 版�
 exl-id: cf2133dc-56cd-4a07-ab11-72e16f015ff5
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
-source-wordcount: '633'
-ht-degree: 27%
+source-wordcount: '632'
+ht-degree: 28%
 
 ---
 
 # [!DNL Adobe Experience Manager] as a Cloud Service 2022.6.0 版發行說明 {#release-notes}
 
-以下章節概述2022.6.0版[!DNL Experience Manager]as a Cloud Service的功能發行說明。
+以下章節概述2022.6.0版[!DNL Experience Manager] as a Cloud Service的功能發行說明。
 
 >[!NOTE]
 >
@@ -21,7 +21,7 @@ ht-degree: 27%
 
 >[!NOTE]
 >
->請參閱[近期文件更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=zh-Hant)瞭解與版本不直接相關的文件更新的詳細資料。
+>請參閱[近期文件更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)瞭解與版本不直接相關的文件更新的詳細資料。
 
 ## 發行日期 {#release-date}
 
@@ -43,13 +43,13 @@ ht-degree: 27%
 
   ![內容片段主控台](/help/release-notes/assets/cf-ui.png)
 
-* 新的[目錄元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/tableofcontents.html?lang=zh-Hant)不僅可以與核心元件搭配使用，也可以與所有元件搭配使用，以在內容頁面上自動呈現ToCs。 而且，由於它是在伺服器端呈現並由Dispatcher完全快取，因此載入也相當有效率。
+* 新的[目錄元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/tableofcontents.html)不僅可以與核心元件搭配使用，也可以與所有元件搭配使用，以在內容頁面上自動呈現ToCs。 而且，由於它是在伺服器端呈現並由Dispatcher完全快取，因此載入也相當有效率。
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### [!DNL Assets] 中的新功能 {#assets-features}
 
-Experience Manager Assets現在使用Adobe Sensei AI功能[區分影像中的顏色，並在擷取時自動將這些差異套用為標籤](/help/assets/color-tag-images.md)。 這些標籤會根據影像顏色組合來增強搜尋體驗。 您可以設定標籤到影像的顏色數量（範圍在1到40之間），以便日後可以根據這些顏色搜尋影像。
+Experience Manager Assets現在使用Adobe AI功能[區分影像中的顏色，並在擷取時自動將這些差異套用為標籤](/help/assets/color-tag-images.md)。 這些標籤會根據影像顏色組合來增強搜尋體驗。 您可以設定標籤到影像的顏色數量（範圍在1到40之間），以便日後可以根據這些顏色搜尋影像。
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -73,7 +73,7 @@ Experience Manager Assets現在使用Adobe Sensei AI功能[區分影像中的顏
 
 * 改善對GQL使用者端設定覆寫的支援（例如，設定自訂快取行為）
 
-* 現成支援多個商務端點，並可透過Cloud Manager設定。 您可以在CIF部落格[這裡](https://medium.com/adobetech/use-aem-as-a-cloud-service-with-multiple-adobe-commerce-systems-9295612a9554)找到詳細資料。
+* 現成支援多個商務端點，並可透過Cloud Manager設定。 您可以在CIF部落格[此處](https://medium.com/adobetech/use-aem-as-a-cloud-service-with-multiple-adobe-commerce-systems-9295612a9554)找到詳細資料。
 
 
 ### 錯誤修正 {#bug-fixes-cif}
@@ -86,7 +86,7 @@ Experience Manager Assets現在使用Adobe Sensei AI功能[區分影像中的顏
 
 ### 新增功能 {#what-is-new-demos}
 
-* 全新WKND內容與Commerce範本，可擴充WKND的E2E購物體驗，包含產品目錄、購物車、結帳和myAccount。 此範本使用CIF及其CIF核心元件，因此您也需要安裝CIF附加元件。 您可以在CIF部落格[這裡](https://medium.com/adobetech/learn-how-to-create-a-shoppable-experience-with-the-new-wknd-reference-site-and-cif-b3b2c161f67e)找到詳細資料。
+* 全新WKND內容與Commerce範本，可擴充WKND的E2E購物體驗，包含產品目錄、購物車、結帳和myAccount。 此範本使用CIF及其CIF核心元件，因此您也需要安裝CIF附加元件。 您可以在CIF部落格[此處](https://medium.com/adobetech/learn-how-to-create-a-shoppable-experience-with-the-new-wknd-reference-site-and-cif-b3b2c161f67e)找到詳細資料。
 
 ![WKND商店](/help/assets/CIF/wknd_shop.png)
 
@@ -96,7 +96,7 @@ Experience Manager Assets現在使用Adobe Sensei AI功能[區分影像中的顏
 
 ### 新增功能 {#what-is-new-foundation}
 
-* 如5月(2022.5.0)發行說明中所述，復寫代理程式管理畫面的「**發佈**」標籤下的「新增樹狀結構」選項已移除。 應改用[管理發布](/help/operations/replication.md#manage-publication)或[Publish內容樹狀結構](/help/operations/replication.md#manage-publication#publish-content-tree-workflow)工作流程，來復寫具有樹狀階層內容的套件。
+* 如5月(2022.5.0)發行說明中所述，復寫代理程式管理畫面的「**發佈**」標籤下的「新增樹狀結構」選項已移除。 應改用[管理發布](/help/operations/replication.md#manage-publication)或[發佈內容樹狀結構](/help/operations/replication.md#manage-publication#publish-content-tree-workflow)工作流程，來復寫具有樹狀階層內容的封裝。
 
 ## Cloud Manager {#cloud-manager}
 

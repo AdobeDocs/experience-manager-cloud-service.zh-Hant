@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Renditions,Best Practices
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '3518'
 ht-degree: 2%
@@ -34,7 +34,7 @@ ht-degree: 2%
  <tbody>
   <tr>
    <td><strong>選項</strong></td>
-   <td><strong>描述</strong></td>
+   <td><strong>說明</strong></td>
   </tr>
   <tr>
    <td>數量</td>
@@ -86,11 +86,11 @@ ht-degree: 2%
 >
 >Adobe建議您檢閱任何產生的裁切和色票，確保它們適當且與您的品牌和價值相關。
 
-| 選項 | 使用時機 | 描述 |
+| 選項 | 使用時機 | 說明 |
 | --- | --- | --- |
 | **[!UICONTROL 畫素裁切]** | 僅根據尺寸大量裁切影像。 | 從&#x200B;**[!UICONTROL 裁切選項]**&#x200B;下拉式清單中，選取&#x200B;**[!UICONTROL 畫素裁切]**。<br>若要從影像側面裁切，請輸入影像任何側面或每一側面要裁切的畫素數。 裁切多少影像取決於影像檔案中的ppi （每英吋畫素）設定。<br>影像設定檔畫素裁切會以下列方式呈現：<br>·值為上、下、左和右。<br>·左上方會視為`0,0`，而畫素裁切是從此處計算的。<br>·裁切起點：左邊是X，上邊是Y<br>·水準計算：原始影像的水準畫素大小減去左邊，再減去右邊。<br>·垂直計算：垂直畫素高度減去「頂端」，然後減去「底部」。<br>例如，假設您有4000 x 3000畫素影像。 您使用下列值：Top=250、Bottom=500、Left=300、Right=700。<br>從左上角(300,250)裁切，使用（4000-300-700、3000-250-500或3000,2250）的填色空間。 |
-| **[!UICONTROL 智慧型裁切]** | 根據視覺焦點批次裁切影像。 | 智慧型裁切利用Adobe Sensei中人工智慧的強大功能，快速大量自動裁切影像。 智慧型裁切會自動偵測並裁切至任何影像中的焦點，以取得預期的目標點，無論熒幕大小為何。<br>從&#x200B;**[!UICONTROL 裁切選項]**&#x200B;下拉式清單中，選取&#x200B;**[!UICONTROL 智慧型裁切]**，然後在&#x200B;**[!UICONTROL 回應式影像裁切]**&#x200B;的右側，啟用（開啟）此功能。<br>預設中斷點大小(**[!UICONTROL 大]**、**[!UICONTROL Medium]**、**[!UICONTROL 小]**)涵蓋行動裝置和平板電腦、桌上型電腦及橫幅上大部分影像使用的完整大小。 如有需要，您可以編輯「大」、「Medium」和「小」的預設名稱。<br>若要新增更多中斷點，請選取&#x200B;**[!UICONTROL 新增裁切]**；若要刪除裁切，請選取「垃圾桶」圖示。 |
-| **[!UICONTROL 顏色和影像色票]** | 大量產生每個影像的影像色票。 | **注意**： Dynamic Media Classic不支援智慧型色票。<br>從顯示顏色或紋理的產品影像自動尋找並產生高品質色票。<br>從&#x200B;**[!UICONTROL 裁切選項]**&#x200B;下拉式清單中，選取&#x200B;**[!UICONTROL 智慧型裁切]**。 然後在&#x200B;**[!UICONTROL 顏色和影像色票]**&#x200B;的右側，啟用（開啟）此功能。 在&#x200B;**[!UICONTROL 寬度]**&#x200B;和&#x200B;**[!UICONTROL 高度]**&#x200B;文字方塊中輸入畫素值。<br>雖然所有影像裁切都可從「轉譯」邊欄取得，但色票只能透過&#x200B;**[!UICONTROL 複製URL]**&#x200B;功能使用。 使用您自己的檢視元件來呈現網站上的色票。 此規則的例外是輪播橫幅。 Dynamic Media提供轉盤橫幅中所使用色票的檢視元件。<br><br>**使用影像色票**<br>&#x200B;影像色票的URL簡單明瞭：<br>`/is/image/company/&lt;asset_name&gt;:Swatch`<br>其中`:Swatch`已附加至資產要求。<br><br>**使用色票**<br>&#x200B;若要使用色票，您需提出包含下列內容的`req=userdata`要求：<br>`/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata`<br><br>例如，下列是Dynamic Media Classic中的色票資產：<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch`<br>以下是色票資產對應的`req=userdata` URL：<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata`<br> `req=userdata`回應如下：<br>`SmartCropDef=Swatch`<br>`SmartCropHeight=200.0`<br>`SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200`<br>`SmartCropType=Swatch`<br>`SmartCropWidth=200.0`<br>`SmartSwatchColor=0xA56DB2`<br>您也可以要求XML或JSON格式的`req=userdata`回應，如下列個別URL範例所示：<br>·`https://my.company.com</code>:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,json`<br>·`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,xml`<br><br>**注意**：您必須建立自己的WCM元件來要求回應取樣並分析`SmartSwatchColor`屬性，該屬性由24位RGB十六進位制值表示。<br>另請參閱檢視器參考指南中的[`userdata`](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/req/r-userdata)。 |
+| **[!UICONTROL 智慧型裁切]** | 根據視覺焦點批次裁切影像。 | 智慧型裁切利用Adobe AI中人工智慧的強大功能，快速大量自動裁切影像。 智慧型裁切會自動偵測並裁切至任何影像中的焦點，以取得預期的目標點，無論熒幕大小為何。<br>從&#x200B;**[!UICONTROL 裁切選項]**&#x200B;下拉式清單中，選取&#x200B;**[!UICONTROL 智慧型裁切]**，然後在&#x200B;**[!UICONTROL 回應式影像裁切]**&#x200B;的右側，啟用（開啟）此功能。<br>預設中斷點大小(**[!UICONTROL 大]**、**[!UICONTROL Medium]**、**[!UICONTROL 小]**)涵蓋行動裝置和平板電腦、桌上型電腦及橫幅上大部分影像使用的完整大小。 如有需要，您可以編輯「大」、「Medium」和「小」的預設名稱。<br>若要新增更多中斷點，請選取&#x200B;**[!UICONTROL 新增裁切]**；若要刪除裁切，請選取「垃圾桶」圖示。 |
+| **[!UICONTROL 顏色和影像色票]** | 大量產生每個影像的影像色票。 | **注意**： Dynamic Media Classic不支援智慧型色票。<br>從顯示顏色或紋理的產品影像自動尋找並產生高品質色票。<br>從&#x200B;**[!UICONTROL 裁切選項]**&#x200B;下拉式清單中，選取&#x200B;**[!UICONTROL 智慧型裁切]**。 然後在&#x200B;**[!UICONTROL 顏色和影像色票]**&#x200B;的右側，啟用（開啟）此功能。 在&#x200B;**[!UICONTROL 寬度]**&#x200B;和&#x200B;**[!UICONTROL 高度]**&#x200B;文字方塊中輸入畫素值。<br>雖然所有影像裁切都可從「轉譯」邊欄取得，但色票只能透過&#x200B;**[!UICONTROL 複製URL]**&#x200B;功能使用。 使用您自己的檢視元件來呈現網站上的色票。 此規則的例外是輪播橫幅。 Dynamic Media提供轉盤橫幅中所使用色票的檢視元件。<br><br>**使用影像色票**<br>&#x200B;影像色票的URL簡單明瞭：<br>`/is/image/company/&lt;asset_name&gt;:Swatch`<br>其中`:Swatch`已附加至資產要求。<br><br>**使用色票**<br>&#x200B;若要使用色票，您需提出包含下列內容的`req=userdata`要求：<br>`/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata`<br><br>例如，下列是Dynamic Media Classic中的色票資產：<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch`<br>以下是色票資產對應的`req=userdata` URL：<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata`<br> `req=userdata`回應如下：<br>`SmartCropDef=Swatch`<br>`SmartCropHeight=200.0`<br>`SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200`<br>`SmartCropType=Swatch`<br>`SmartCropWidth=200.0`<br>`SmartSwatchColor=0xA56DB2`<br>您也可以要求XML或JSON格式的`req=userdata`回應，如下列個別URL範例所示：<br>·`https://my.company.com</code>:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,json`<br>·`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,xml`<br><br>**注意**：您必須建立自己的WCM元件來要求回應取樣並分析`SmartSwatchColor`屬性，該屬性由24位RGB十六進位制值表示。<br>另請參閱檢視器參考指南中的[`userdata`](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/req/r-userdata)。 |
 | **[!UICONTROL 保留所有目標解析度的裁切內容]** | 若要維持相同外觀比例的裁切內容 | 當您建立智慧型裁切設定檔時使用。<br>若要針對不同解析度的指定外觀比例，產生新的裁切內容（同時仍維持焦點），請取消勾選此選項<br>如果您決定取消勾選此方塊，請確定原始影像解析度大於您為智慧型裁切描述檔定義的解析度。<br><br>例如，假設您已將外觀比例設定為600 x 600 （大）、400 x 400 (Medium)和300 x 300 （小）。<br>當&#x200B;**[!UICONTROL 保留所有目標解析度的裁切內容]**&#x200B;選項為&#x200B;*核取*&#x200B;時，您會看到所有三個解析度的相同裁切，類似於下列影像輸出範例（僅供說明用途）：<br>![核取選項](/help/assets/dynamic-media/assets/preserve-checked.png)<br><br>當&#x200B;**[!UICONTROL 保留所有目標解析度的裁切內容]**&#x200B;選項為&#x200B;*未核取*&#x200B;時，所有三個解析度的裁切內容都是新的，類似於以下影像輸出範例（僅供說明用途）：<br>![未核取選項](/help/assets/dynamic-media/assets/preserve-unchecked.png) |
 
 ### 智慧型裁切和色票支援的影像檔案格式
@@ -107,11 +107,11 @@ ht-degree: 2%
 | CMYK | | | | | 是 |
 | EPS | | | | | 否 |
 | GIF | `.gif` | image/gif | sRGB | 15 GB | 是；動畫GIF的第一個影格會用於轉譯。 您無法設定或變更第一個影格。 |
-| JPEG | `.jpg`和`.jpeg` | image/jpeg | sRGB | 15 GB | 是 |
+| JPEG | `.jpg` 和 `.jpeg` | image/jpeg | sRGB | 15 GB | 是 |
 | PNG | `.png` | image/png | sRGB | 15 GB | 是 |
 | PSD | `.psd` | image/vnd.adobe.photoshop | sRGB<br>CMYK | 2 GB | 是 |
 | SVG | | | | | 否 |
-| TIFF | `.tif`和`.tiff` | image/tiff | sRGB<br>CMYK | 4 GB | 是 |
+| TIFF | `.tif` 和 `.tiff` | image/tiff | sRGB<br>CMYK | 4 GB | 是 |
 | WebP/動畫WebP | | | | | 否 |
 
 ## 建立Dynamic Media影像設定檔 {#creating-image-profiles}
@@ -132,7 +132,7 @@ ht-degree: 2%
    >
    >使用專屬於其預定用途的設定檔名稱。 例如，假設您想建立只產生色票的輪廓。 也就是說，智慧型裁切已停用（關閉）且顏色和影像色票已啟用（開啟）。 在這種情況下，您可以使用設定檔名稱「智慧型色票」。
 
-   另請參 [閱智慧型裁切和智慧型色票選項](#crop-options) [和遮色片銳利化](#unsharp-mask)。
+   另請參閱 [智慧裁切和智慧型色票選項](#crop-options)[和遮色片銳利化](#unsharp-mask)。
 
    ![裁切](assets/crop.png)
 
@@ -224,7 +224,7 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->當您手動調整資產的智慧型裁切視窗時，您的變更將會儲存。 即使您稍後重新處理資產，這些編輯仍會維持不變。 不過，如果您在影像設定檔的&#x200B;**[!UICONTROL 回應式影像裁切]**&#x200B;區域中編輯寬度或/及高度，則該資產必須重新處理。
+>當您手動調整資產的智慧型裁切視窗時，您的變更將會儲存。 即使您稍後重新處理資產，這些編輯仍會維持不變。 不過，如果您在影像設定檔的&#x200B;**[!UICONTROL 回應式影像裁切]**區域中編輯寬度或/及高度，則該資產必須重新處理。
 >請參閱[重新處理資料夾](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)中的Dynamic Media資產。
 
 如有必要，請重新執行智慧型裁切以再次產生其他裁切。
@@ -264,7 +264,7 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->當您手動調整多個資產的智慧型裁切視窗時，您的變更將會儲存。 即使您稍後重新處理資產，這些編輯仍會維持不變。 然而，如果您在「影像設定檔」的&#x200B;**[!UICONTROL 回應式影像裁切]**&#x200B;區域中編輯寬度或/及高度，這些資產就需要重新處理。
+>當您手動調整多個資產的智慧型裁切視窗時，您的變更將會儲存。 即使您稍後重新處理資產，這些編輯仍會維持不變。 然而，如果您在「影像設定檔」的&#x200B;**[!UICONTROL 回應式影像裁切]**區域中編輯寬度或/及高度，這些資產就需要重新處理。
 >請參閱[重新處理資料夾](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets)中的Dynamic Media資產。
 
 如有必要，請重新執行智慧型裁切以再次產生其他裁切。

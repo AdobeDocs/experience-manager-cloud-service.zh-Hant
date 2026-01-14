@@ -1,13 +1,13 @@
 ---
 title: Adobe Experience Manager as a Cloud Service 2020.6.0 版發行說明
-description: "[!DNL Adobe Experience Manager]個2020.6.0as a Cloud Service發行說明。"
+description: '[!DNL Adobe Experience Manager] as a Cloud Service 2020.6.0版發行說明。'
 exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
-source-wordcount: '1939'
-ht-degree: 92%
+source-wordcount: '1938'
+ht-degree: 91%
 
 ---
 
@@ -23,9 +23,9 @@ ht-degree: 92%
 
 請詳閱本節，了解 AEM as a Cloud Service 2020.6.0 版中 AEM Sites 的新增功能和更新。
 
-### 新功能 {#whats-new-2020.6.0}
+### 新增功能 {#whats-new-2020.6.0}
 
-[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant) 2.9.0 版現已隨附於 AEM Sites，其中包含：
+[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 2.9.0 版現已隨附於 AEM Sites，其中包含：
 
 * [Adobe 用戶端資料層](https://github.com/adobe/adobe-client-data-layer)與核心元件的整合
 * 所有元件可設定的 HTML ID 屬性
@@ -40,7 +40,7 @@ ht-degree: 92%
 
 * 已新增僅限 Angular 頁面和 AEM/Angular 頁面的路由管理功能。
 
-### 親和力 {#accessibility}
+### 無障礙功能 {#accessibility}
 
 * 現在，使用向下箭頭在瀏覽模式中導覽時，可以針對&#x200B;**建立頁面**&#x200B;對話方塊中的「石造」項目提供角色和狀態旁白。
 
@@ -50,7 +50,7 @@ ht-degree: 92%
 
 ## AEM as a Cloud Service基礎的新增功能 {#foundations}
 
-將AEM專案的pom.xml中的所有參照移至遠端存放庫`https://downloads.experiencecloud.adobe.com/content/maven/public`之後，AEM專案建置時間將有所改善。
+AEM專案的pom.xml中所有的參照移至遠端存放庫`https://downloads.experiencecloud.adobe.com/content/maven/public`後，AEM專案建置時間將有所改善。
 
 AEM as a Cloud Service SDK API Jar （先前託管於該位置）現在位於Maven Central （Maven的預設成品存放庫）中。
 
@@ -70,7 +70,7 @@ AEM as a Cloud Service SDK API Jar （先前託管於該位置）現在位於Mav
 
 * 登陸頁面上的「指導」標記可為使用者提供關於基本導覽的通知和指示。
 
-* **計畫概觀**&#x200B;頁面上的「指導」標記，可為使用者提供與 Cloud Manager 中的基本導覽有關的通知和指示，方便他們開始使用。
+* **方案概觀**&#x200B;頁面上的「指導」標記，可為使用者提供與 Cloud Manager 中的基本導覽有關的通知和指示，方便他們開始使用。
 
 * 現在，Cloud Manager 中提供&#x200B;**學習**&#x200B;頁面，可透過上層導覽存取。此頁面提供相關資源，可協助使用者了解與他們在 Cloud Manager 中指派的角色有關的常用工作流程。
 
@@ -94,7 +94,7 @@ AEM as a Cloud Service SDK API Jar （先前託管於該位置）現在位於Mav
 
 * 在某些情況下，**建立方案**&#x200B;對話方塊中的圖示不會對齊。
 
-* AEM 版本識別碼不一定會顯示在&#x200B;**計畫概觀**&#x200B;頁面上。
+* AEM 版本識別碼不一定會顯示在&#x200B;**方案概觀**&#x200B;頁面上。
 
 * 在設定生產管道時，某些客戶看不到&#x200B;**排定的部署**&#x200B;選項。
 
@@ -106,7 +106,7 @@ AEM as a Cloud Service SDK API Jar （先前託管於該位置）現在位於Mav
 
 ## [!DNL Adobe Experience Manager Assets]的新增功能 {#aem-assets}
 
-**增強型智慧標記的引導式使用者體驗 (由 Adobe Sensei 提供技術支援)**
+**增強型智慧標籤的引導式使用者體驗(由Adobe AI提供技術支援)**
 
 增強型智慧標記可讓組織訓練智慧標記模型，以在一般智慧標記以外，還能根據客戶特定的商業標記來識別影像。
 
@@ -142,7 +142,7 @@ AEM as a Cloud Service SDK API Jar （先前託管於該位置）現在位於Mav
 
 * 在「資產」使用者介面上，無法使用鍵盤存取視圖設定。(CQ-4289038)
 
-* 黃色評等圖示的明度比小於 3:1。對於視力不良和無法分辨顏色的使用者而言，此功能並不實用。評等星級會顯示在資產的索引標籤中或卡片視圖中
+* 黃色評等圖示的明度比小於3:1。 對於視力不良和無法分辨顏色的使用者而言，此功能並不實用。評等星級會顯示在資產的索引標籤中或卡片視圖中
 
 * 某些使用者介面元素的顏色和對比已更新，以便視力不良和無法分辨顏色的使用者區分這些使用者介面元素。例如，在資產的[!UICONTROL 屬性]中，[!UICONTROL 進階]索引標籤的[!UICONTROL 評等]區段中的評等星級圖示色彩已變更，以提供適當的對比，而卡片視圖中的圖示也是如此。(CQ-4295106)
 

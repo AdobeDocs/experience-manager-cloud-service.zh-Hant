@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management, Best Practices
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '929'
 ht-degree: 6%
@@ -16,7 +16,7 @@ ht-degree: 6%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/organize-assets.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/organize-assets.html?lang=en) |
 | AEM as a Cloud Service  | 本文章 |
 
 Microsoft® Office和PDF檔案的所有數位資產、中繼資料和內容都會經過擷取，並可供搜尋。 搜尋可讓您對資產進行複雜的篩選，並完全遵循適當的許可權。 有關中繼資料的詳情，請參閱數位資產管理的中繼資料。
@@ -79,9 +79,9 @@ Date24/08/2021
 
 ## 使用標籤組織資產 {#use-tags-to-organize-assets}
 
-將標籤新增至資產可讓他們更輕鬆地在搜尋期間擷取、使用搜尋結果建立集合、提升某些資產的搜尋排名，以及套用Adobe Sensei的AI演演算法以進行資產探索。
+將標籤新增至資產可讓他們更輕鬆地在搜尋期間擷取、使用搜尋結果建立集合、提升某些資產的搜尋排名，以及套用Adobe AI的AI演演算法以進行資產探索。
 
-[!DNL Adobe Experience Manager Assets]會使用自我學習演演算法來建立高度描述性的標籤，讓您只需按幾下滑鼠即可找到正確的資產。 智慧標籤使用Adobe Sensei、人工智慧和機器學習架構，這些架構經過訓練可辨識標準標籤和業務特定標籤，並套用至影像。 智慧標籤也可以識別內容、個別字詞或片語，並自動將描述性標籤套用至資產。
+[!DNL Adobe Experience Manager Assets]會使用自我學習演演算法來建立高度描述性的標籤，讓您只需按幾下滑鼠即可找到正確的資產。 智慧標籤使用Adobe AI、人工智慧和機器學習架構，這些架構經過訓練可辨識標準標籤和業務特定標籤，並套用至影像。 智慧標籤也可以識別內容、個別字詞或片語，並自動將描述性標籤套用至資產。
 
 以下是將標籤新增至資產的步驟：
 

@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
-source-wordcount: '3615'
+source-wordcount: '3614'
 ht-degree: 3%
 
 ---
@@ -201,7 +201,7 @@ Dynamic Media的解決方案是取用那個主要視訊檔案，讓Dynamic Media
 
 | **問題** | **Dynamic Media解決方案** |
 |---|---|
-| 手動繪製、測量及剪下影像或視訊，以強調焦點並在所有熒幕大小和裝置上適當地顯示，既費時又費力。 | 使用Adobe Sensei AI功能Dynamic Media中的智慧型裁切功能，自動偵測任何影像或視訊中的焦點，並裁切以維持焦點。 |
+| 手動繪製、測量及剪下影像或視訊，以強調焦點並在所有熒幕大小和裝置上適當地顯示，既費時又費力。 | 使用Adobe AI功能Dynamic Media中的智慧型裁切功能，自動偵測任何影像或視訊中的焦點，並裁切以維持焦點。 |
 | 可以更妥善地用於建立具高度影響力的體驗的時間損失。 | 擷取預期的興趣點，無論熒幕大小為何。 |
 | 為每個體驗和裝置建立的一次性資產。 | 省去繁瑣的手動工作，並提供高品質、快速載入的影像和視訊，在任何裝置或熒幕上都能完美呈現。 |
 
@@ -284,8 +284,8 @@ _Dynamic Media Help topics_
 
 _動態媒體教學課程_
 
-* [搭配Experience Manager Assets使用Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=zh-Hant)
-* [Adobe Experience Manager內容庫](https://experienceleague.adobe.com/zh-hant?lang=en#recommended/solutions/experience-manager) （在&#x200B;_Dynamic Media_&#x200B;上搜尋）
+* [搭配Experience Manager Assets使用Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
+* [Adobe Experience Manager內容庫](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) （在&#x200B;_Dynamic Media_&#x200B;上搜尋）
 
 _Dynamic Media檢視器_
 

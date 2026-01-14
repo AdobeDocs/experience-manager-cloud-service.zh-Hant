@@ -3,7 +3,7 @@ title: 將您的品牌核准資產上傳至 [!DNL Content Hub]
 description: 瞭解如何將您的品牌核准資產上傳至Content Hub
 role: User
 exl-id: f1be7cfc-1803-4c17-bb58-947104aa883c
-source-git-commit: dc0f6b5faf75fb7303611e3f25febe89b43a834d
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 17%
@@ -27,7 +27,7 @@ ht-degree: 17%
 
 * 成功上傳後為每個資產自動產生更多屬性，例如檔案大小、格式、解析度和其他某些屬性。
 
-* 使用[Adobe Sensei](https://www.adobe.com/tw/sensei.html)所提供的人工智慧，自動將相關標籤套用至您所有上傳的資產。 這些標籤名為智慧型標籤，有助於您快速尋找相關資產，提高專案的內容速度。
+* 使用[Adobe AI](https://business.adobe.com/ai/adobe-genai.html)所提供的人工智慧，自動將相關標籤套用至您所有上傳的資產。 這些標籤名為智慧型標籤，有助於您快速尋找相關資產，提高專案的內容速度。
 
 請確定您僅將[品牌核准的資產上傳至Content Hub](/help/assets/approve-assets.md)。
 

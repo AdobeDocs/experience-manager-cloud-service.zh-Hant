@@ -4,9 +4,9 @@ description: Adobe Experience Manager Assets可讓您區分影像中的顏色，
 exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
 feature: Smart Imaging, Interactive Images, Asset Management
 role: User, Admin
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
 workflow-type: tm+mt
-source-wordcount: '1244'
+source-wordcount: '1243'
 ht-degree: 7%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 7%
 
 ![顏色標籤橫幅](assets/banner-image.png)
 
-Adobe Experience Manager (AEM) Assets使用Adobe Sensei AI功能來區分影像中的顏色，並在擷取時自動將這些差異套用為標籤。 這些標記讓我們能夠根據影像色彩組成來搜尋，藉此提升搜尋體驗。
+Adobe Experience Manager (AEM) Assets使用Adobe AI功能來區分影像中的顏色，並在擷取時自動將這些差異套用為標籤。 這些標記讓我們能夠根據影像色彩組成來搜尋，藉此提升搜尋體驗。
 
 您可以設定標籤到影像的顏色數量（範圍在1到40之間），以便日後可以根據這些顏色搜尋影像。 Experience Manager Assets會根據影像中的顏色涵蓋範圍套用標籤。 您也可以設定顏色標籤的顯示格式。
 
