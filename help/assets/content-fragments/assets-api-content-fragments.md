@@ -4,9 +4,9 @@ description: 瞭解Adobe Experience Manager HTTP API支援內容片段，這是A
 feature: Content Fragments, Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
 role: User, Admin
-source-git-commit: 1995c84bb669fd52ecd53c7e695acc518a5226e8
+source-git-commit: f55299d7054a9e1f8e1356cb975dfeee162ec202
 workflow-type: tm+mt
-source-wordcount: '1857'
+source-wordcount: '1856'
 ht-degree: 14%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 14%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/assets-api-content-fragments.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/assets-api-content-fragments.html) |
 | AEM as a Cloud Service  | 本文章 |
 
 >[!CAUTION]
@@ -53,7 +53,7 @@ ht-degree: 14%
 
 例如，[單頁應用程式(SPA)](/help/implementing/developing/hybrid/introduction.md) （以框架為基礎或自訂）需要透過HTTP API提供的內容，通常為JSON格式。
 
-雖然[AEM核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)提供可自訂的API，可提供此用途的必要讀取作業，並可自訂其JSON輸出，但實作時確實需要AEM WCM （Web內容管理）技術。 這是因為它們必須在以專用的AEM範本為基礎的頁面中託管。 並非所有SPA開發組織都能直接存取這些知識。
+雖然[AEM核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)提供可自訂的API，可提供此用途的必要讀取作業，並可自訂其JSON輸出，但實作時確實需要AEM WCM （Web內容管理）技術。 這是因為它們必須在以專用的AEM範本為基礎的頁面中託管。 並非所有SPA開發組織都能直接存取這些知識。
 
 此時可使用Assets REST API。 它可讓開發人員直接存取資產（例如影像和內容片段），而不需要先將資產內嵌在頁面中，並以序列化JSON格式傳送其內容。
 
@@ -87,6 +87,7 @@ Assets REST API提供[REST](https://en.wikipedia.org/wiki/Representational_state
 例如，若要存取 `/content/dam/wknd/en/adventures/cycling-tuscany`，要求 `/api/assets/wknd/en/adventures/cycling-tuscany.json`
 
 >[!NOTE]
+>
 >存取：
 >
 >* `/api/assets`**不需要**&#x200B;使用 `.model` 選擇器。
@@ -138,7 +139,7 @@ HTTP 方法決定要執行的操作：
   </tr>
   <tr>
    <td>存取</td>
-   <td><p>可以直接存取。</p> <p>使用對應至<code>/content/dam</code> （在存放庫中）的<code>/api/assets </code>端點。</p> 
+   <td><p>可以直接存取。</p> <p>使用對應至<code>/api/assets </code> （在存放庫中）的<code>/content/dam</code>端點。</p> 
    <p>範例路徑如下所示： <code>/api/assets/wknd/en/adventures/cycling-tuscany.json</code></p>
    </td>
     <td><p>必須透過AEM頁面上的AEM元件來參照。</p> <p>使用<code>.model</code>選取器建立JSON表示方式。</p> <p>範例路徑如下所示：<br/> <code>/content/wknd/language-masters/en/adventures/cycling-tuscany.model.json</code></p> 
@@ -170,8 +171,8 @@ HTTP 方法決定要執行的操作：
 >
 >如需詳細資訊，請參閱：
 >
->* [CORS/AEM 說明](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=zh-Hant)
->* [影片 — 使用AEM開發CORS (04:06)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=zh-Hant)
+>* [CORS/AEM 說明](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html)
+>* [影片 — 使用AEM (04:06)為CORS開發](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html)
 >
 
 在有特定驗證需求的環境中，建議使用OAuth。
@@ -329,7 +330,7 @@ Assets可以有多個轉譯。 這些通常會顯示為子實體，其中一個�
   以下列出傳回此錯誤狀態的常見案例，以及產生的錯誤訊息（等寬）：
 
    * 父資料夾不存在（透過`POST`建立內容片段時）
-   * 未提供任何內容片段模型（缺少cq：model）、無法讀取（由於無效路徑或許可權問題）或沒有有效的片段模型：
+   * 未提供任何內容片段模型（缺少cq:model）、無法讀取（因為路徑無效或許可權問題）或沒有有效的片段模型：
 
       * `No content fragment model specified`
       * `Cannot create a resource of given model '/foo/bar/qux'`
@@ -383,4 +384,4 @@ Assets可以有多個轉譯。 這些通常會顯示為子實體，其中一個�
 如需詳細資訊，請參閱：
 
 * [Assets HTTP API檔案](/help/assets/mac-api-assets.md)
-* [AEM Gem工作階段： OAuth](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-oauth-server-functionality-in-aem.html?lang=zh-Hant)
+* [AEM Gem工作階段： OAuth](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-oauth-server-functionality-in-aem.html)
