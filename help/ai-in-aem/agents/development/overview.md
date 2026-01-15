@@ -3,9 +3,9 @@ title: Development Agent概述
 description: 瞭解AEM中的開發代理程式如何分析Cloud Manager中的失敗管道和建置記錄檔，以建議程式碼修正並加快偵錯速度。
 feature: Agentic AI, AI Assistant, AI Tools, User Roles
 role: User, Admin, Architect, Developer
-source-git-commit: b206c73853e2f81a1bd5a15bb1e0d5d7658f70a5
+source-git-commit: d10eb260195e402a6347ad40ddb851baf5949c83
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '532'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 目前，代理程式可以擷取管道狀態，並透過建議修正來協助您疑難排解失敗的建置步驟，進而節省在開發、中繼和生產環境中偵錯AEM as a Cloud Service部署的時間。 它會檢查組建記錄檔和相關程式碼，以建議您可以手動套用的修正。
 
->[!VIDEO](https://video.tv.adobe.com/v/3478018?captions=chi_hant&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3478006?quality=12&learn=on)
 
 >[!IMPORTANT]
 >
@@ -28,6 +28,8 @@ ht-degree: 1%
 <!-- 
 ## Cloud Manager Pipeline Troubleshooting  {#cloud-manager-pipeline-troubleshooting}
 -->
+
+電子郵件[aem-devagent@adobe.com](mailto:aem-devagent@adobe.com)包含回饋意見或存取此代理程式的請求。
 
 ## 透過Cloud Manager存取開發代理程式 {#how-to-access-the-agent}
 
@@ -81,13 +83,13 @@ Development Agent的管道疑難排解工作需要Cloud Manager — 開發人員
 
 | 提示 | 結果 |
 | --- | --- |
+| *疑難排解我失敗的管道* | 執行管道失敗原因的分析；如果不清楚引用了哪個管道，將向使用者詢問其他問題。 |
 | *列出我失敗的主要程式管道。* | 雖然結果可能有所不同，但此提示會輸出失敗管道的表格，並提供後續建議，以參考要分析的特定管道。 |
-| *分析我的失敗管道，稱為「開發管道」。* | 此提示會分析失敗的管道，並提供修正的建議。 |
+| *分析我的失敗管道，稱為「開發管道」。* | 此提示會分析失敗的管道，並提供修正的建議。 如果多次失敗，則會詢問使用者的其他問題。 |
+| *疑難排解管道執行1234567* | 透過提供精確的管道執行ID，會執行管道分析。 |
 
 ## 超出範圍的功能 {#out-of-scope-features}
 
 管道疑難排解會在完整棧疊管道的建置步驟中操作。 對於其他管道型別和步驟，透過下載和檢查日誌來偵錯失敗。
 
 檢視[存取及下載記錄檔](/help/implementing/cloud-manager/manage-logs.md)。
-
-使用BYOGIT （自備Git）的程式不支援管道疑難排解。
