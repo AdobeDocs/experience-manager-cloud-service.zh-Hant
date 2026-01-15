@@ -4,7 +4,7 @@ description: 了解擴充通用編輯器功能的不同選項以便支援內容�
 feature: Developing
 role: Admin, Developer
 exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
-source-git-commit: d938abce2b46786343b19113454da1738a824ed0
+source-git-commit: 9adf2bc4f9f25ee7fc0a39b0f1a3ae9e45fce7d2
 workflow-type: tm+mt
 source-wordcount: '565'
 ht-degree: 100%
@@ -60,4 +60,4 @@ ht-degree: 100%
 
 * **[區塊](https://www.aem.live/developer/block-collection)**：採用簡單的 JSON 格式，專案可以調整供建立內容使用的區塊和 UE 功能。
 * **[自訂使用者介面](#extending-ui)**：擴充功能可以在側邊面板或模態視窗對話框中顯示所需的使用者介面。
-* **[事件](/help/implementing/universal-editor/events.md)**：擴充功能在頁面上接收關於作者動作和選取項目的事件，以便做出適當回應。
+* **[事件](/help/implementing/universal-editor/events-universal-editor.md)**：擴充功能在頁面上接收關於作者動作和選取項目的事件，以便做出適當回應。
