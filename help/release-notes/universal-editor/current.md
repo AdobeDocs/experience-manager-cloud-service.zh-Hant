@@ -1,20 +1,20 @@
 ---
-title: 通用編輯器 2025.12.12 版發行說明
-description: 以下是通用編輯器 2025.12.11 版的發行說明。
+title: 通用編輯器 2026.01.15 版發行說明
+description: 以下是通用編輯器 2026.01.15 版的發行說明。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: b7b89587a81d0cadc81d4b2a486c022557c4a9fb
+source-git-commit: 08e495b0859e9f0a0378a0fb8bd565bc76c777da
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 26%
+source-wordcount: '204'
+ht-degree: 42%
 
 ---
 
 
-# 通用編輯器 2025.12.12 版發行說明 {#release-notes}
+# 通用編輯器 2026.01.15 版發行說明 {#release-notes}
 
-這是通用編輯器 2025 年 12 月 12 日版本的發行說明。
+此為通用編輯器 2026 年 1 月 15 日版本的發行說明。
 
 >[!TIP]
 >
@@ -26,11 +26,10 @@ ht-degree: 26%
 
 ## 新增功能 {#what-is-new}
 
-* 已在[RTF編輯器中新增現有資料表的支援。](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
-* 已在[RTF編輯器中啟用巢狀清單的Tab鍵。](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
-* 開發人員登入功能現在可以透過[中繼標籤`aem-dev-login`停用。](/help/implementing/universal-editor/customizing.md#meta-tags)
-* 在覆蓋區段中按一下滑鼠右鍵，現在會顯示[內容選項功能表。](/help/sites-cloud/authoring/universal-editor/authoring.md#context-options)
-* [RTF編輯器現在支援](/help/implementing/universal-editor/configure-rte.md#indentation)範圍縮排[。](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)
+* 已新增對設定和儲存模型欄位[預設值的支援。](/help/implementing/universal-editor/field-types.md)
+   * 如果未設定任何值，則通用編輯器將保留在模型定義中定義為`value`的任何內容。
+   * 這可確保您看到的內容與後端中儲存的內容相符。
+   * 這是重大變更。
 
 ## 早期採用功能 {#early-adopter}
 
@@ -40,13 +39,6 @@ ht-degree: 26%
 
 ## 其他改善功能 {#other-improvements}
 
-* 現在，當多個欄位在內容中變更時，屬性邊欄會同步。
-* 內容片段選擇器現在會在AEM 6.5執行個體上如預期般開啟。
-* 逸出鍵現在會關閉RTF編輯器中的對話方塊。
-* **移除元件**&#x200B;動作現在僅在選取元件時可用。
-* 現在會根據使用的例項開啟正確的（舊或新）內容片段編輯器(如果主機名稱是AEM as a Cloud Service模式，則使用新編輯器，否則使用舊版編輯器)。
-* 篩選器驗證已新增到重複動作。
-* 長標題現在會在屬性邊欄中截斷。
-* 現在可以正確處理超過10個值的多站台管理員陣列。
-* 現在可正確處理建立多個同名元件時的衝突錯誤。
-* 已新增值為>10的多站台管理員陣列處理。
+* 現在已在內容交換器上正確執行資料清除。
+* 現在支援擴充功能更新中的多項作業。
+* 開發人員登入的「關閉」按鈕現在會如預期般運作。
