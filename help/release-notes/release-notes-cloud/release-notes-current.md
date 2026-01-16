@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 0411792d22efa70f98777971eb4f16700820abe5
+source-git-commit: a1b860b4d691515f7f868e4e7e1a70bac0c20cbe
 workflow-type: tm+mt
-source-wordcount: '1857'
-ht-degree: 49%
+source-wordcount: '1944'
+ht-degree: 46%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 49%
 
 Have a look at the July 2025 Release Overview video for a summary of the features added in the 2025.7.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440931?captions=chi_hant&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -93,6 +93,10 @@ Adobe Experience Manager (AEM)測試版計畫是讓客戶存取發行前功能�
 已上傳資產的&#x200B;**惡意程式碼偵測**
 
 AEM Assets現在包含對已上傳檔案的自動惡意程式碼掃描，確保在進入DAM之前隔離可疑資產，以保護您的存放庫免受威脅。 管理員可以設定掃描設定和隔離保留原則，以簡化安全性控制。
+
+**AI產生的中繼資料 — 適用性更新**
+
+AEM Assets中AI產生的中繼資料不再需要簽署GenAI騎士才能啟用。 已簽署GenAI Rider的客戶和尚未驗證的客戶現在都可使用此功能。 明確選擇不使用GenAI的客戶將繼續停用該功能。 若要在環境層級管理功能啟用，請參閱[停用AI產生的中繼資料](/help/assets/enhance-content-discovery-with-ai-generated-metadata.md#disable-ai-generated-metadata)。 此變更適用於版本23482或更新版本的客戶。
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
