@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: b4df0abb43d69f629d2c643c408cb77af697b942
+source-git-commit: be61c21e111e1655921325a35da6fa88545fb39f
 workflow-type: tm+mt
-source-wordcount: '1090'
-ht-degree: 18%
+source-wordcount: '1095'
+ht-degree: 17%
 
 ---
 
@@ -16,17 +16,17 @@ ht-degree: 18%
 
 下節是 Experience Manager as a Cloud Service 目前維護版本的技術版本發行說明。
 
-## 23862 版 {#23862}
+## 23963 版 {#23963}
 
->[!CAUTION]
+以下摘要說明維護版本23963數的持續改善，該版本於2026年1月19日公開發佈。 前一個維護版本是 23482 版。
+
+啟用 2026.1.0 功能即可使用此維護版本的完整功能集。如需詳細資訊，請參閱 [Experience Manager 發行路徑圖](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
+
+>[!NOTE]
 >
-> 發行說23862已設為私人。 即將提供新的維護發行。
+>發行說23862已設為私人。
 
-以下摘要說明維護版本23862數的持續改善，該版本於2025年12月23日公開發佈。 前一個維護版本是 23482 版。
-
-啟用 2026.1.0 功能即可使用此維護版本的完整功能集。如需詳細資訊，請參閱 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
-
-### 增強功能 {#enhancements-23862}
+### 增強功能 {#enhancements-23963}
 
 * CQ-4361812：新增對rest api中選用的param folderPath的支援。 說明：新的翻譯專案由API建立，將放置在選用的`folderPath`引數指定的路徑內，否則預設為根專案路徑`/content/projects`。
 * Forms-21960：新增本機畫布編輯的互動式通訊支援，與forms-spa類似。
@@ -50,13 +50,14 @@ ht-degree: 18%
 * SITES-37794：使用通用編輯器的Edge Delivery：簡化頁面建立精靈。
 * SITES-36963：將對象/區段端點移轉至Target API v3以獲得Workspace支援。
 
-### 已修正的問題 {#fixed-issues-23862}
+### 已修正的問題 {#fixed-issues-23963}
 
 * CQ-4361831：修正導致genai_dropdown_span未定義的問題。
 * CQ-4360895：修正並行更新期間專案中翻譯工作狀態計數不準確的問題。
 * CQ-4361599：修正2025.7升級後略過翻譯工作的內容片段問題。
 * CQ-4360747：固定的可重複翻譯工作會建立空的負載並經常觸發（ScheduleRepeatTranslationProject中的NullPointerException）。
 * CQ-4359994：修正單一語言和多語言專案的destinationLanguage欄位型別不一致問題。
+* Forms-23557： Rhino更新導致`*.js`無法由Use API正確具現化。
 * SITES-38153：修正uuid型參考的cf發佈參考提供者。
 * SITES-37594：依據標籤功能的模型效能改善。
 * SITES-37337： FragmentCreateProcessor：在記錄中提供其他錯誤詳細資料。
@@ -93,19 +94,19 @@ ht-degree: 18%
 * SITES-37349：使用通用編輯器的Edge Delivery：將具有單一專案的多個欄位顯示為具有單一清單專案的清單。
 * SITES-36148：使用通用編輯器的Edge Delivery：修正複合多欄位的data-aue-label。
 
-### 已知問題 {#known-issues-23862}
+### 已知問題 {#known-issues-23963}
 
 無。
 
-### 已過時的功能和 API {#deprecated-23862}
+### 已過時的功能和 API {#deprecated-23963}
 
 [「已過時和已移除的功能及 API」](/help/release-notes/deprecated-removed-features.md)文件中詳細介紹 AEM as a Cloud Service 中已過時和已移除的功能及 API。
 
-### 安全性修正 {#security-23862}
+### 安全性修正 {#security-23963}
 
 AEM as a Cloud Service 專門負責將您的平台的安全性與效能最佳化。此維護版本解決 23 個已確認的漏洞，強化我們提供健全系統保護的承諾。
 
-### 嵌入技術 {#embedded-tech-23862}
+### 嵌入技術 {#embedded-tech-23963}
 
 | 技術 | 版本 | 連結 |
 |---|---|---|
