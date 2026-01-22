@@ -131,7 +131,7 @@ Install the latest far to enable Adaptive Forms Core Components for your AEM Clo
 
 在用來建立含有表單之頁面的範本的頁面原則中，包含執行階段使用者端程式庫或自訂函式程式庫。
 
-1. 開啟AEM Sites頁面或體驗片段進行編輯。 若要開啟頁面進行編輯，請選取頁面，然後按一下[編輯]。****
+1. 開啟AEM Sites頁面或體驗片段進行編輯。 若要開啟頁面進行編輯，請選取頁面，然後按一下[編輯]。**&#x200B;**
 2. 開啟網站或體驗片段頁面的範本。 若要開啟範本，前往&#x200B;**[!UICONTROL 頁面資訊]** ![頁面資訊](/help/forms/assets/Smock_Properties_18_N.svg)>**[!UICONTROL 編輯範本]**。 它會在範本編輯器中開啟對應的範本。
 3. 移至範本的&#x200B;**[!UICONTROL 頁面資訊]** ![頁面資訊](/help/forms/assets/Smock_Properties_18_N.svg)區段，並選取&#x200B;**[!UICONTROL 頁面原則]**&#x200B;選項。 這會開啟AEM Sites範本的屬性，您可在此定義自訂函式或執行階段使用者端程式庫。
 4. 按一下&#x200B;**[!UICONTROL 屬性]**&#x200B;索引標籤中的&#x200B;**[!UICONTROL 新增]**&#x200B;按鈕，以新增自訂函式庫或執行階段程式庫。
