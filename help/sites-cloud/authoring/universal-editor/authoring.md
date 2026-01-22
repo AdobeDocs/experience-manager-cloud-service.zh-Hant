@@ -73,7 +73,7 @@ ht-degree: 20%
 
 快顯選單會在RTF區塊上方開啟，並在快顯選單中提供基本的格式選項。 由於空間限制，某些選項可能會隱藏在省略符號按鈕後面。
 
-![ RTF內容功能表](assets/rich-text-context-menu.png)
+![&#x200B; RTF內容功能表](assets/rich-text-context-menu.png)
 
 一旦焦點離開已編輯的欄位，變更會自動儲存。
 
