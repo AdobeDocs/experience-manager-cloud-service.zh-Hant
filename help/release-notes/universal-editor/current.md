@@ -1,20 +1,20 @@
 ---
-title: 通用編輯器 2026.01.15 版發行說明
-description: 以下是通用編輯器 2026.01.15 版的發行說明。
+title: 通用編輯器 2026.01.22 版發行說明
+description: 以下是通用編輯器 2026.01.22 版的發行說明。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 08e495b0859e9f0a0378a0fb8bd565bc76c777da
+source-git-commit: 83653ef9938e02b58d3c82ebd6395773f293f1a4
 workflow-type: tm+mt
-source-wordcount: '204'
-ht-degree: 42%
+source-wordcount: '243'
+ht-degree: 35%
 
 ---
 
 
-# 通用編輯器 2026.01.15 版發行說明 {#release-notes}
+# 通用編輯器 2026.01.22 版發行說明 {#release-notes}
 
-此為通用編輯器 2026 年 1 月 15 日版本的發行說明。
+此為通用編輯器 2026 年 1 月 22 日版本的發行說明。
 
 >[!TIP]
 >
@@ -26,10 +26,11 @@ ht-degree: 42%
 
 ## 新增功能 {#what-is-new}
 
-* 已新增對設定和儲存模型欄位[預設值的支援。](/help/implementing/universal-editor/field-types.md)
-   * 如果未設定任何值，則通用編輯器將保留在模型定義中定義為`value`的任何內容。
-   * 這可確保您看到的內容與後端中儲存的內容相符。
-   * 這是重大變更。
+* 標籤（作為簡短文字預覽）已新增到[內容樹狀目錄](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)中的文字區塊。
+* 純文字欄位現在支援TextArea。
+* 設定端點現在用於UI功能。
+* 現在支援來自內容片段的TextArea。
+* Toast API現在對擴充功能公開。
 
 ## 早期採用功能 {#early-adopter}
 
@@ -39,6 +40,12 @@ ht-degree: 42%
 
 ## 其他改善功能 {#other-improvements}
 
-* 現在已在內容交換器上正確執行資料清除。
-* 現在支援擴充功能更新中的多項作業。
-* 開發人員登入的「關閉」按鈕現在會如預期般運作。
+* 已修正透過位置列導覽時的畫布配置問題。
+* RTE中清理了前導空白字元。
+* Enter鍵後已還原內嵌編輯。
+* 拖曳標籤已恢復為不顯示整個內容。
+* 瀏覽器協助工具問題已解決。
+* `selectEditables([])`現在用於透過擴充功能取消選取所有元件。
+* 中繼資料表格現在會在正確的位置建立。
+* 修正複製的內容片段資源指向`/data/undefined`的問題。
+

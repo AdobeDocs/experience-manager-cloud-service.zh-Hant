@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 87368be0b4c934bb4d4799833a90edfee72348e6
+source-git-commit: bb946f28a3d1a1d64c564029d9903c315bb9ffbb
 workflow-type: tm+mt
-source-wordcount: '2625'
+source-wordcount: '2657'
 ht-degree: 20%
 
 ---
@@ -25,11 +25,11 @@ ht-degree: 20%
 
 >[!NOTE]
 >
->本檔案假設您已熟悉如何存取和導覽通用編輯器。 如果沒有，請參閱[存取及導覽通用編輯器](/help/sites-cloud/authoring/universal-editor/navigation.md)。
+>本檔案假設您已熟悉如何存取和導覽通用編輯器。 如果沒有，請參閱[存取及導覽通用編輯器。](/help/sites-cloud/authoring/universal-editor/navigation.md)
 
 >[!TIP]
 >
->如需Universal Editor的詳細介紹，請參閱[Universal Editor簡介](/help/implementing/universal-editor/introduction.md)。
+>如需Universal Editor的詳細介紹，請參閱[Universal Editor簡介。](/help/implementing/universal-editor/introduction.md)
 
 ## 編輯內容 {#editing-content}
 
@@ -39,9 +39,13 @@ ht-degree: 20%
 
 >[!TIP]
 >
->依預設，點選或按一下內容會選取內容以進行編輯。 如果您想透過下列連結導覽內容，請切換至[預覽模式](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)。
+>依預設，點選或按一下內容會選取內容以進行編輯。 如果您想透過下列連結導覽內容，請切換至[預覽模式。](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)
 
-根據您選取的內容，您可能有不同的就地編輯選項，而且您可能會在[屬性面板](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)中針對內容提供額外的資訊和選項。
+根據您選取的內容，您可能有不同的就地編輯選項，而且您可能會針對[屬性面板中的內容提供其他資訊和選項。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+
+每一段可編輯內容都標示其內容型別。 根據內容，您可以按一下此徽章以快速存取以編輯動作。
+
+![可編輯的徽章選項](assets/editable-badge.png)
 
 ### 編輯純文字 {#edit-plain-text}
 
@@ -51,7 +55,7 @@ ht-degree: 20%
 
 薄的藍色輪廓會變成粗的藍色輪廓來指示選取，並且會出現游標。 進行變更，然後按下Enter/Return或在文字方塊外選取，以儲存變更。
 
-當您選取文字元件時，其詳細資料會顯示在[屬性面板](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)中。 您也可以在面板中編輯文字。
+當您選取文字元件時，其詳細資訊會顯示在[屬性面板中。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)您也可以在面板中編輯文字。
 
 ![正在編輯屬性面板中的文字](assets/ue-editing-text-component-rail.png)
 
@@ -69,7 +73,7 @@ ht-degree: 20%
 
 快顯選單會在RTF區塊上方開啟，並在快顯選單中提供基本的格式選項。 由於空間限制，某些選項可能會隱藏在省略符號按鈕後面。
 
-![&#x200B; RTF內容功能表](assets/rich-text-context-menu.png)
+![ RTF內容功能表](assets/rich-text-context-menu.png)
 
 一旦焦點離開已編輯的欄位，變更會自動儲存。
 
@@ -110,7 +114,7 @@ RTE可設定為根據作者需求隱藏選項或顯示其他選項。 如需詳�
 
 ### 編輯媒體 {#edit-media}
 
-您可以在[屬性面板](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)中檢視其詳細資料。
+您可以在[屬性面板中檢視其詳細資料。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ![編輯媒體](assets/ue-edit-media.png)
 
@@ -123,7 +127,7 @@ RTE可設定為根據作者需求隱藏選項或顯示其他選項。 如需詳�
 
 ### 編輯內容片段 {#edit-content-fragment}
 
-如果您選取[內容片段](/help/sites-cloud/administering/content-fragments/overview.md)，您可以在[屬性面板](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)中編輯其詳細資料。
+如果您選取[內容片段](/help/sites-cloud/administering/content-fragments/overview.md)，您可以在[屬性面板中編輯其詳細資料。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ![編輯內容片段](assets/ue-edit-cf.png)
 
@@ -251,7 +255,7 @@ RTE可設定為根據作者需求隱藏選項或顯示其他選項。 如需詳�
 
 內容編輯完成後，您通常會希望瀏覽其內容，以查看它在其他頁面內容中的樣子。在[預覽模式](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)中，您可以點選連結，像讀者一樣瀏覽您的內容。內容在編輯器中呈現的樣子就是將會發佈的樣子。
 
-在預覽模式中，點選或按一下內容的反應就像對內容的讀者一樣。 若要選取要編輯的內容，請切換出[預覽模式](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)。
+在預覽模式中，點選或按一下內容的反應就像對內容的讀者一樣。 若要選取要編輯的內容，請切換出[預覽模式。](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)
 
 ## 編輯元件繼承 {#inheritance}
 
@@ -261,7 +265,7 @@ RTE可設定為根據作者需求隱藏選項或顯示其他選項。 如需詳�
 
 如果您的程式已啟用&#x200B;**AEM多網站管理(MSM)擴充功能**，您就有[額外的工具列選項](#inheritance-extension)可檢視和變更通用編輯器中個別元件的繼承狀態。
 
-如需有關使用通用編輯器繼承如何運作的詳細資訊，請參閱[通用編輯器中的內容繼承](/help/sites-cloud/authoring/universal-editor/inheritance.md)。
+如需有關使用通用編輯器繼承如何運作的詳細資訊，請參閱[通用編輯器中的內容繼承。](/help/sites-cloud/authoring/universal-editor/inheritance.md)
 
 ## 選用的工具列功能 {#toolbar-options}
 
