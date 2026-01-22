@@ -5,9 +5,9 @@ feature: Adaptive Forms, Foundation Components
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
 role: User, Developer
-source-git-commit: 958c166585ac7eeb667d73744403558b2dc5ce94
+source-git-commit: bc9fa030aeab4f2dddafc2241fade7b5d0689926
 workflow-type: tm+mt
-source-wordcount: '3339'
+source-wordcount: '3312'
 ht-degree: 18%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 18%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html) |
 | AEM as a Cloud Service  | 本文章 |
 
 ## 概觀 {#overview}
@@ -41,7 +41,7 @@ AEM Forms Cloud Service提供最適化表單容器和Adaptive Forms — 內嵌�
 * **標籤：** AEM Sites頁面可讓您[將標籤或標籤指派給頁面、資產或其他內容](/help/implementing/developing/introduction/tagging-framework.md)。 標籤是關鍵字或中繼資料標籤，提供根據特定條件分類及組織內容的方式。 您可以指派一或多個標籤給AEM中的頁面、資產或任何其他內容專案，以改善搜尋並將資產分類。
 * **鎖定和解鎖內容：** AEM Sites可讓使用者[控制AEM Sites環境中對頁面](/help/sites-cloud/authoring/page-editor/edit-content.md)的存取與修改。 頁面鎖定時，即表示頁面可免受其他使用者未經授權的變更或編輯作業。 只有已鎖定內容的使用者或指定的管理員可以解除鎖定內容以允許修改。
 
-此外，AEM頁面編輯器中的最適化Forms使用[最適化Forms核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant#features)。 這些核心元件提供標準且更簡單的方法來樣式化和自訂元件，與[AEM Sites WCM元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)相同。
+此外，AEM頁面編輯器中的最適化Forms使用[最適化Forms核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features)。 這些核心元件提供標準且更簡單的方法來樣式化和自訂元件，與[AEM Sites WCM元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)相同。
 
 
 ## 如何在AEM Sites頁面或AEM體驗片段中建立或新增最適化表單？ {#various-options-to-creat-or-add-an-adaptive-form-in-aem-sites-page-or-aem-experience-fragment}
@@ -72,9 +72,9 @@ AEM Forms Cloud Service提供最適化表單容器和Adaptive Forms — 內嵌�
 
 開始建立最適化表單之前，請啟用最適化Forms核心元件，並將最適化Forms使用者端程式庫新增到AEM Sites頁面：
 
-### 為您的AEM Cloud Service環境啟用最適化Forms核心元件
+<!--### Enable Adaptive Forms Core Components for your AEM Cloud Service environment
 
-安裝最新的Far，為AEM Cloud Service環境啟用最適化Forms核心元件。
+Install the latest far to enable Adaptive Forms Core Components for your AEM Cloud Service environment. -->
 
 ### 新增最適化Forms使用者端資料庫至您的AEM Sites頁面或體驗
 
@@ -82,7 +82,7 @@ AEM Forms Cloud Service提供最適化表單容器和Adaptive Forms — 內嵌�
 
 若要啟用調適型表單容器元件的完整功能，請使用部署管道將 Customheaderlibs 和 Customfooterlibs 客戶端資料庫新增至您的 AEM Sites 頁面。 若要新增資料庫：
 
-1. 存取並原地複製您的 [AEM Cloud Service Git 存放庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/repositories.html?lang=zh-Hant)。
+1. 存取並原地複製您的 [AEM Cloud Service Git 存放庫](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/repositories.html)。
 1. 在純文字編輯器中開啟 AEM Cloud Service Git 存放庫資料夾。 例如，Microsoft 視覺效果程式碼。
 1. 開啟`ui.apps\src\main\content\jcr_root\apps\[your-project]\components\page\customheaderlibs.html`檔案，並將下列程式碼新增至檔案：
 
@@ -121,7 +121,7 @@ AEM Forms Cloud Service提供最適化表單容器和Adaptive Forms — 內嵌�
        </sly> 
    ```
 
-1. [執行部署管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html?lang=zh-Hant)，將客戶端資料庫部署到您的 AEM as a Cloud Service 環境。
+1. [執行部署管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html)，將客戶端資料庫部署到您的 AEM as a Cloud Service 環境。
 
 >[!NOTE]
 >
@@ -131,7 +131,7 @@ AEM Forms Cloud Service提供最適化表單容器和Adaptive Forms — 內嵌�
 
 在用來建立含有表單之頁面的範本的頁面原則中，包含執行階段使用者端程式庫或自訂函式程式庫。
 
-1. 開啟AEM Sites頁面或體驗片段進行編輯。 若要開啟頁面進行編輯，請選取頁面，然後按一下[編輯]。**&#x200B;**
+1. 開啟AEM Sites頁面或體驗片段進行編輯。 若要開啟頁面進行編輯，請選取頁面，然後按一下[編輯]。****
 2. 開啟網站或體驗片段頁面的範本。 若要開啟範本，前往&#x200B;**[!UICONTROL 頁面資訊]** ![頁面資訊](/help/forms/assets/Smock_Properties_18_N.svg)>**[!UICONTROL 編輯範本]**。 它會在範本編輯器中開啟對應的範本。
 3. 移至範本的&#x200B;**[!UICONTROL 頁面資訊]** ![頁面資訊](/help/forms/assets/Smock_Properties_18_N.svg)區段，並選取&#x200B;**[!UICONTROL 頁面原則]**&#x200B;選項。 這會開啟AEM Sites範本的屬性，您可在此定義自訂函式或執行階段使用者端程式庫。
 4. 按一下&#x200B;**[!UICONTROL 屬性]**&#x200B;索引標籤中的&#x200B;**[!UICONTROL 新增]**&#x200B;按鈕，以新增自訂函式庫或執行階段程式庫。
