@@ -63,7 +63,7 @@ Adobe Experience Manager (AEM) as a Cloud Service中的內容片段可讓您準�
 1. 使用&#x200B;**建立**&#x200B;開啟對話方塊，您可以：
 
    1. 指定&#x200B;**標題**。
-   1. 建立後，**Name**會成為存放庫中的節點名稱。
+   1. 建立後，**Name**&#x200B;會成為存放庫中的節點名稱。
 您可以輸入名稱。 如果您將欄位保留空白，欄位將根據標題自動產生，然後根據[AEM命名慣例](/help/implementing/developing/introduction/naming-conventions.md)進行調整；您可以視需要調整結果。
    1. 若要啟用其使用，請選取
       * **內容片段模型**
