@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: b3e1d3a3770531728d696be125f074881f179573
 workflow-type: tm+mt
-source-wordcount: '2927'
+source-wordcount: '2937'
 ht-degree: 2%
 
 ---
@@ -403,6 +403,10 @@ FolderC
 >如果您的片段是以模型為基礎，則您應該確定[模型已發佈](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#publishing-a-content-fragment-model)。
 >
 >如果您發佈的內容片段尚未發佈模式，選擇清單會指出這一點，模式會與片段一起發佈。
+
+>[!TIP]
+>
+>內容片段可以[發佈至Edge Delivery Services。](https://www.aem.live/developer/content-fragment-overlay)
 
 ### 發佈 {#publishing}
 
