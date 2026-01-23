@@ -3,10 +3,10 @@ title: 通用編輯器預覽發行說明
 description: 這是通用編輯器預覽版本的發行說明。
 feature: Release Information
 role: Admin
-source-git-commit: bb946f28a3d1a1d64c564029d9903c315bb9ffbb
+source-git-commit: cb8f4911b5285b92894ab1d4458561c6607a2d9c
 workflow-type: tm+mt
-source-wordcount: '196'
-ht-degree: 57%
+source-wordcount: '200'
+ht-degree: 56%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 57%
 * 定義具有擴充性。
 * 移動元件方法已公開給`editorActions`。
 * 新增元件方法已公開給`editorActions`。
-* 針對V2實作的區塊詳細資料。
+* Document Authoring API 2.0版已發行。
 
 ## 即將推出的改善功能 {#other-improvements}
 
