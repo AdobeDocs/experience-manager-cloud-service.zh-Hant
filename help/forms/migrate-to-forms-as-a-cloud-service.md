@@ -81,7 +81,7 @@ ht-degree: 1%
 
 執行以下步驟，讓您的[!DNL AEM Forms]資產與Cloud Service相容，並將它們轉移到[!DNL AEM]as a Cloud Service環境。
 
-1. 建立現有[!DNL AEM Forms]環境的[複製](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/correct-method-to-clone-the-aem-environment/qaq-p/363487)。
+1. 建立現有[!DNL AEM Forms]環境的[複製](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/correct-method-to-clone-the-aem-environment/qaq-p/363487?profile.language=zh-Hant)。
 
    >[!NOTE]
    >

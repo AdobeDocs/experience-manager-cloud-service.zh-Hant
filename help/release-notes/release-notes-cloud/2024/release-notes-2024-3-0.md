@@ -49,7 +49,7 @@ AEM Sites 現在可以用作 Edge Delivery Services 的內容來源。作者可�
 
 ![AEM 製作](/help/edge/assets/universal_editor_edge_delivery_services.png)
 
-若要了解更多資訊，請參閱[文件](/help/edge/overview.md)並觀看 [AEM Gems - 開始使用 AEM Authoring 和 Edge Delivery Services](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-gems-getting-started-with-aem-authoring-and-edge-delivery/m-p/652694#M43905)
+若要了解更多資訊，請參閱[文件](/help/edge/overview.md)並觀看 [AEM Gems - 開始使用 AEM Authoring 和 Edge Delivery Services](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-gems-getting-started-with-aem-authoring-and-edge-delivery/m-p/652694?profile.language=zh-Hant#M43905)
 
 **Headless 實作的 Universal Editor**
 

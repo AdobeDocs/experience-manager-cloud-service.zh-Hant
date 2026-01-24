@@ -106,7 +106,7 @@ Cloud Manager是Managed Services的選用內容傳送工具，現在需使用。
 > 如需其他說明，您可能需要：
 >
 >1. [聯絡Experience Manager支援團隊](https://experienceleague.adobe.com/docs/customer-one/using/home.html?lang=zh-Hant)
->1. 探索[Experience Manager社群與論壇](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
+>1. 探索[Experience Manager社群與論壇](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=zh-Hant)
 
 <br>
 
@@ -219,4 +219,4 @@ Cloud Manager可讓組織在雲端中自行管理Experience Manager。 它包含
 > 如需其他說明，您可能需要：
 >
 >1. [聯絡Experience Manager支援團隊](https://experienceleague.adobe.com/docs/customer-one/using/home.html?lang=zh-Hant)
->1. 探索[Experience Manager社群與論壇](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
+>1. 探索[Experience Manager社群與論壇](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=zh-Hant)
