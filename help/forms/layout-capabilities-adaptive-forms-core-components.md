@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 keywords: 根據核心元件的調適型表單版面配置、表單的不同版面配置、動態表單版面配置AEM、AEM Cloud Service表單版面配置、AEM核心元件中的表單版面配置型別、調適型表單版面配置
 role: User, Developer, Admin
 exl-id: dcc01d84-0d39-4fa8-ac47-71a9aba91b1e
-source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
+source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
 workflow-type: tm+mt
-source-wordcount: '2176'
+source-wordcount: '2142'
 ht-degree: 15%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 15%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html) |
 | AEM as a Cloud Service (基礎元件) | [按一下這裡](/help/forms/layout-capabilities-adaptive-forms.md) |
 | AEM as a Cloud Service (核心元件) | 本文章 |
 
@@ -37,9 +37,6 @@ ht-degree: 15%
 
 可以。AEM Forms支援將安全檔案上傳作為表單提交的一部分，並擁有符合企業安全需求的存取控制項和安全資料處理。
 
-## 必要條件
-
-在探索版面的各種功能之前，請確定您的環境已啟用核心元件。 安裝最新的Far，為AEM Cloud Service環境啟用最適化Forms核心元件。
 
 ## 最適化Forms版面配置型別
 
@@ -81,7 +78,7 @@ ht-degree: 15%
 
 垂直索引標籤配置
 
-您可以使用[垂直分頁元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)，在表單中新增垂直分頁配置。 如需有關如何設定垂直標籤元件各種屬性的詳細指示，請參閱[垂直標籤元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)文章。
+您可以使用[垂直分頁元件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)，在表單中新增垂直分頁配置。 如需有關如何設定垂直標籤元件各種屬性的詳細指示，請參閱[垂直標籤元件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)文章。
 
 
 >[!TAB 水準標籤配置]
@@ -93,7 +90,7 @@ ht-degree: 15%
 
 水準索引標籤配置
 
-您可以使用[水準標籤元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs)，在表單中新增水準標籤配置。 如需如何設定水準標籤元件各種屬性的詳細指示，請參閱[水準標籤元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs)文章。
+您可以使用[水準標籤元件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs)，在表單中新增水準標籤配置。 如需如何設定水準標籤元件各種屬性的詳細指示，請參閱[水準標籤元件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs)文章。
 
 
 >[!TAB 摺疊式版面]
@@ -236,7 +233,7 @@ ht-degree: 15%
 * [Drag and drop components into a layout's panel](#drag-and-drop-components-into-a-layouts-panel) -->
 
 1. 在面板中找出可新增元件的區段。
-1. 按一下&#x200B;**新增**&#x200B;圖示。 圖示是加號(+)，表示可新增元件的選項。
+1. 按一下&#x200B;**新增**圖示。 圖示是加號(+)，表示可新增元件的選項。
    ![插入版面配置](/help/forms/assets/tabs-on-top-add-component.png)
 
    按一下&#x200B;**新增**&#x200B;圖示會顯示&#x200B;**插入新元件**&#x200B;對話方塊，其中顯示要插入的各種元件。

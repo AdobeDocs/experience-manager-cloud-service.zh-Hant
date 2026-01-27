@@ -4,9 +4,9 @@ description: 瞭解如何將表單連結新增至AEM Sites頁面。
 feature: Adaptive Forms, Core Components
 role: User, Developer, Admin
 exl-id: a55d0776-8827-46cc-9625-5d6f5f6bda3b
-source-git-commit: 16b1e7ffa4e3812e9207bb283c63029939f7d14e
+source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '481'
 ht-degree: 1%
 
 ---
@@ -17,11 +17,6 @@ ht-degree: 1%
 
 ![連結圖示](/help/forms/assets/link-forms.png)
 
-## 先決條件
-
-探索Forms Portal元件的各種功能之前，請確定您的環境已啟用核心元件。 安裝最新的Far，為AEM Cloud Service環境啟用最適化Forms核心元件。
-
-將最新核心元件部署至您的環境後，您便可在編寫環境中存取Forms Portal元件。
 
 ## 將連結元件新增至您的網站頁面
 
@@ -35,7 +30,7 @@ ht-degree: 1%
 
    ![原則選擇](/help/forms/assets/add-link.png)
 
-1. 按一下&#x200B;**[!UICONTROL 「完成」]**。
+1. 按一下&#x200B;**[!UICONTROL 完成]**。
 1. 現在，請在撰寫模式中重新開啟AEM Sites頁面。
 1. 在頁面編輯器中找出區段，讓您新增Forms Portal元件。
 

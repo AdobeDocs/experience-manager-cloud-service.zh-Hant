@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: 在VRE中叫用服務增強功能，使用叫用服務填入下拉式選項，使用叫用服務的輸出設定可重複面板，使用叫用服務的輸出設定面板，使用叫用服務的輸出引數驗證其他欄位。
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: 43535e52fd749cc599a4e30be25bcc0dbf20eaef
+source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
 workflow-type: tm+mt
-source-wordcount: '1860'
+source-wordcount: '1835'
 ht-degree: 1%
 
 ---
@@ -66,7 +66,6 @@ ht-degree: 1%
 
 * 請確定您已設定資料來源。 如需設定資料來源的指示，[請按一下這裡](/help/forms/configure-data-sources.md)。
 * 使用已設定的資料來源建立表單資料模型。 如需建立表單資料模型的相關指引，[請按一下這裡](/help/forms/create-form-data-models.md)。
-* 確認您的環境已啟用核心元件。 安裝最新的Far，為AEM Cloud Service環境啟用最適化Forms核心元件。
 
 ## 透過不同的使用案例探索啟動服務
 

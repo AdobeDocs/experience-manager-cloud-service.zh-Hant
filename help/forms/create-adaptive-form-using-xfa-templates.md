@@ -5,16 +5,16 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: f3c9b798-8b20-4674-9b96-a3a0b143d947
-source-git-commit: 8d43f28e62a865b6b990678544e0d9589f17722a
+source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
 workflow-type: tm+mt
-source-wordcount: '719'
-ht-degree: 13%
+source-wordcount: '683'
+ht-degree: 16%
 
 ---
 
 # 以 XFA Form 範本為基礎建立最適化表單 (核心元件)
 
-<span class="preview">此功能可在早期採用者方案下使用。 您可以從您的官方電子郵件ID寫信到aem-forms-ea@adobe.com ，以加入率先採用者計畫並請求存取該功能。</span>
+<span class="preview">此功能可在早期採用者方案下使用。 您可以使用官方電子郵件 ID 寫信至 aem-forms-ea@adobe.com，以加入早期採用者計劃並要求存取該功能。</span>
 
 AEM as a Cloud Service讓使用者可選擇使用XFA (XML Forms Architecture)表單範本或`*.XDP` (XML Data Package)檔案，根據核心元件建立最適化Forms。 此功能可讓使用者將欄位從XFA表單範本或XDP檔案直接移轉至最適化Forms，以節省時間。
 
@@ -31,9 +31,7 @@ AEM as a Cloud Service讓使用者可選擇使用XFA (XML Forms Architecture)表
 
 ## 必要條件
 
-您需要下列專案，才能使用XFA表單範本或XDP檔案，根據核心元件建立最適化表單：
 
-* 安裝最新的Far，為AEM Cloud Service環境啟用最適化Forms核心元件。
 * 建議熟悉下列領域：
    * 建立最適化表單
    * XFA (XML Forms架構)
@@ -76,7 +74,7 @@ AEM as a Cloud Service讓使用者可選擇使用XFA (XML Forms Architecture)表
 
    ![選取XDP檔案](/help/forms/assets/select-xdp-file.png)
 
-   熒幕上會顯示警告對話方塊。 按一下[確定]&#x200B;**&#x200B;**&#x200B;以繼續進行。
+   熒幕上會顯示警告對話方塊。 按一下[確定]****&#x200B;以繼續進行。
 
    ![警告對話方塊](/help/forms/assets/fdm-warning.png)
 
