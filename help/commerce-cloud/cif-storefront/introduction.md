@@ -5,7 +5,7 @@ thumbnail: introducing-aem-commerce.jpg
 feature: Commerce Integration Framework
 role: Admin
 exl-id: 3f18f976-ff8a-4726-b4c5-db4e19ae7cee
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: e707bddc17208d599491d27c5bc0134cb41233e0
 workflow-type: tm+mt
 source-wordcount: '586'
 ht-degree: 61%
@@ -62,7 +62,7 @@ CIF會根據最佳實務提供標準化的整合模式來支援您。 這有助�
    * 無法存取中繼資料
    * 需要即時產品資料和體驗
 * 數位成熟度的日益成長，導致需要體驗管理
-* &#x200B;
+* 
    * CIF 提供產品體驗管理功能，無需額外的 IT 工作即可逐步整合。
 * 準備好使用全通道
    * CIF支援各種接觸點技術（伺服器端、混合式、使用者端），並具備模式、加速器和核心元件。

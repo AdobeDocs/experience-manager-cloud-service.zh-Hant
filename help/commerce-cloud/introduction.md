@@ -5,7 +5,7 @@ thumbnail: introducing-aem-commerce.jpg
 exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 80f1c9548b8b87dc6280e0e95988d84a8376f7ab
+source-git-commit: e707bddc17208d599491d27c5bc0134cb41233e0
 workflow-type: tm+mt
 source-wordcount: '628'
 ht-degree: 1%
@@ -33,15 +33,15 @@ AEM可以根據您的情況和偏好設定為您提供支援。 請遵循下列�
 
 #### 1.與Adobe Commerce as a Cloud Service整合 {#acaacs}
 
-Adobe建議使用Edge Delivery和[Adobe Commerce店面](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hant)作為您的起點。 店面附有預先與Adobe Commerce服務、API整合的展示板，並提供各種Commerce下拉式元件以快速建立店面。
+Adobe建議使用Edge Delivery和[Adobe Commerce店面](https://experienceleague.adobe.com/developer/commerce/storefront/)作為您的起點。 店面附有預先與Adobe Commerce服務、API整合的展示板，並提供各種Commerce下拉式元件以快速建立店面。
 
 適用性極佳：Adobe Commerce as a Cloud Service的一般店面體驗
 
 #### 2.與Adobe Commerce Optimizer整合（適用於任何第三方解決方案） {#aco}
 
-如果您想要整合現有的商務解決方案並提升目錄效能，Adobe的建議是使用[Adobe Commerce Optimizer](https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)作為現代化的整合層。 Commerce Optimizer透過用於目錄和商品銷售的高效能SaaS服務來增強您的商務解決方案。 和Adobe Commerce as a Cloud Service一樣，[Adobe Commerce店面](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hant)可立即與其搭配使用。
+如果您想要整合現有的商務解決方案並提升目錄效能，Adobe的建議是使用[Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)作為現代化的整合層。 Commerce Optimizer透過用於目錄和商品銷售的高效能SaaS服務來增強您的商務解決方案。 和Adobe Commerce as a Cloud Service一樣，[Adobe Commerce店面](https://experienceleague.adobe.com/developer/commerce/storefront/)可立即與其搭配使用。
 
-可與商業商務解決方案(例如Salesforce Commerce)整合。 請洽詢您的Adobe代表。
+可與Salesforce Commerce等商業商業解決方案整合。 請洽詢您的Adobe代表。
 
 適用性極佳：使用現有商務解決方案提供典型的店面體驗
 
@@ -49,11 +49,11 @@ Adobe建議使用Edge Delivery和[Adobe Commerce店面](https://experienceleague
 
 如果您想要建立自訂整合，Adobe也建議使用Edge Delivery Services。 您可以從頭開始，或在Edge Delivery店面中重複使用現有JS-framework商務元件（例如交易零件）。 如此一來，您的客戶將獲得超快的購物體驗，並具備代理程式功能，同時您可以重複利用現有的投資來增加TTV。 您的起始點是預設的[Edge Delivery樣板](https://www.aem.live/developer/tutorial)。
 
-配合良好：Edge Deliery店面的低價值
+配合良好：Edge Delivery店面的低價值
 
 ### 使用您自己的店面(Headless AEM整合) {#own-storefront}
 
-您已有現成的店面（例如使用React JS建置），且想要使用Adobe Experience Manager進行內容管理和傳送（內容片段）、資產，以及內容內編輯（通用編輯器）。 您整合的起點是[Adobe Experience Manager as a Headless CMS簡介](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/headless/introduction)和[CIF附加元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/authoring/enrich-product-associated-content)。 CIF附加元件可讓您將產品資料順暢整合至AEM (在AEM UI中搜尋、瀏覽和尋找產品)，以便用於建立商務專屬體驗。
+您已有現成的店面（例如使用React JS建置），且想要使用Adobe Experience Manager進行內容管理和傳送（內容片段）、資產，以及內容內編輯（通用編輯器）。 您整合的起點是[Adobe Experience Manager as a Headless CMS簡介](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/headless/introduction)和[CIF附加元件](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/authoring/enrich-product-associated-content)。 CIF附加元件可讓您將產品資料順暢整合至AEM (在AEM UI中搜尋、瀏覽和尋找產品)，以便用於建立商務專屬體驗。
 
 ### AEM CIF店面 {#cif}
 
@@ -61,4 +61,4 @@ Adobe的建議與參考架構為使用Edge Delivery Services。 CIF店面及其A
 
 >[!NOTE]
 >
->現有客戶若想使用新的AEM / Commerce功能，應將其網站移至Edge Delivery。 常見的模式是僅將一部分頁面移動到Edge Delivery，並以並排方式執行Edge Deliery和CIF頁面。 您也可以使用新的[AEM CIF增益集元件](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=zh-Hant)來取代Commerce元件，以運用新的Commerce功能。
+>現有客戶若想使用新的AEM / Commerce功能，應將其網站移至Edge Delivery。 常見的模式是先僅將一部分頁面移至Edge Delivery，然後並排執行Edge Delivery和CIF頁面。 您也可以使用新的[AEM CIF增益集元件](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)來取代Commerce元件，以運用新的Commerce功能。

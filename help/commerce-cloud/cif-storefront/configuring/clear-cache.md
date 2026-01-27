@@ -5,7 +5,7 @@ feature: Commerce Integration Framework
 role: Admin
 exl-id: f89c07c7-631f-41a4-b5b9-0f629ffc36f0
 index: false
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: e707bddc17208d599491d27c5bc0134cb41233e0
 workflow-type: tm+mt
 source-wordcount: '886'
 ht-degree: 3%
@@ -89,7 +89,7 @@ ht-degree: 3%
 | `Authorization` | 對應作者的使用者認證（驗證型別：基本驗證） | 必要 | 新增對應的使用者名稱和密碼。 |
 
 
-### 總額 {#payload}
+### 承載 {#payload}
 
 下表顯示特徵現成可用的現有屬性。 這些`InvalidateType`屬性必須結合必要屬性（例如`storePath`）一起提供。
 
@@ -123,7 +123,7 @@ curl --location 'https://author-p10603-e145552-cmstg.adobeaemcloud.com/bin/cif/i
 }'
 ```
 
-## 擴展性 {#clear-cache-extensibility}
+## 可擴充性 {#clear-cache-extensibility}
 
 此功能不僅提供其核心功能，也提供擴充功能，讓開發人員可視需要建置及進一步自訂。
 

@@ -4,7 +4,7 @@ description: 瞭解如何在不離開上下文的情況下存取產品資料和�
 exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: e707bddc17208d599491d27c5bc0134cb41233e0
 workflow-type: tm+mt
 source-wordcount: '719'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## 概觀 {#overview}
 
-CIF附加元件以特定於Commerce的功能擴充AEM的製作功能。 這可讓作者在不離開內容的情況下存取產品資料和內容，以有效率地建置和管理商務相關的體驗。
+CIF附加元件以特定於Commerce的功能擴充AEM的製作功能。 如此一來，作者就能在不離開上下文的情況下存取產品資料和內容，有效率地建立及管理商務相關體驗。
 
 ## 選取器 {#pickers}
 
@@ -94,7 +94,7 @@ CIF產品目錄頁面是即時轉譯的虛擬頁面。 因此，不可能內嵌�
 
 ![暫存指標](../assets/authoring/staged-indicator.png)
 
-## Omnisearch {#omnisearch}
+## 全方位搜尋 {#omnisearch}
 
 使用Omnisearch可讓從業人員透過全文檢索搜尋，輕鬆尋找AEM內容和產品目錄資料。 Omnisearch將在AEM和commerce後端中執行全文搜尋，以在commerce後端和AEM內容中尋找產品目錄物件。 AEM結果也包含已標籤產品/類別資料的內容。
 
