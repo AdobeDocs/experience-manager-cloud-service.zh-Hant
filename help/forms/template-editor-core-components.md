@@ -38,7 +38,7 @@ You can download and install [!DNL AEM Forms] reference content package from [So
 >
 > 您可以在核心元件特定的資料夾中找到核心元件型的可編輯範本。
 
-Experience Manager提供可組織範本的全域資料夾。 但預設不會啟用。 您可以要求管理員啟用全域資料夾或建立範本資料夾。 如需有關如何建立資料夾的詳細資訊，請參閱[範本資料夾](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html#editing-templates-template-authors)。
+Experience Manager提供可組織範本的全域資料夾。 但預設不會啟用。 您可以要求管理員啟用全域資料夾或建立範本資料夾。 如需有關如何建立資料夾的詳細資訊，請參閱[範本資料夾](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=zh-Hant#editing-templates-template-authors)。
 
 ## 建立範本 {#create-template}
 
@@ -135,7 +135,7 @@ Header and footer are added in the Initial Content layer.
 
 結構圖層中的![配置容器](/help/forms/assets/layout-template-core-component.png)
 
-如需詳細資訊，請參閱文章[瞭解回應式配置](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/responsive-layout-feature-video-understand.html?lang=en)。
+如需詳細資訊，請參閱文章[瞭解回應式配置](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/responsive-layout-feature-video-understand.html?lang=zh-Hant)。
 
 ## 啟用範本 {#enabling-the-template}
 
@@ -148,7 +148,7 @@ Header and footer are added in the Initial Content layer.
 
 ## 匯入或匯出範本 {#importing-or-exporting-a-template}
 
-表單可與其範本搭配使用。 下載使用自訂範本建立的最適化表單時，未下載範本。 當您在不同的[!DNL AEM Forms]執行個體上匯入表單時，會匯入表單而不包含其範本。 如果表單已匯入，但其範本無法使用，則不會轉譯表單。 您可以封裝來自`/conf`中`https://<server>:<port>/crx/packmgr`節點的自訂範本，並將其連線您要上傳表單的[!DNL AEM Forms]執行個體。 您也可以[使用AEM Archetype建立範本，並將其部署至您的雲端服務執行個體](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html#prerequisites)。
+表單可與其範本搭配使用。 下載使用自訂範本建立的最適化表單時，未下載範本。 當您在不同的[!DNL AEM Forms]執行個體上匯入表單時，會匯入表單而不包含其範本。 如果表單已匯入，但其範本無法使用，則不會轉譯表單。 您可以封裝來自`/conf`中`https://<server>:<port>/crx/packmgr`節點的自訂範本，並將其連線您要上傳表單的[!DNL AEM Forms]執行個體。 您也可以[使用AEM Archetype建立範本，並將其部署至您的雲端服務執行個體](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html?lang=zh-Hant#prerequisites)。
 
 >[!NOTE]
 >
@@ -276,7 +276,7 @@ You can also save an Adaptive Form as a template for future use. To save a Adapt
 
 ## 最佳做法 {#best-practices}
 
-* 使用根據核心元件的元件建立範本，例如最適化表單文字、最適化表單容器等。 若要取得最適化Forms核心元件的資訊，[請按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)。
+* 使用根據核心元件的元件建立範本，例如最適化表單文字、最適化表單容器等。 若要取得最適化Forms核心元件的資訊，[請按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant)。
 * 限制範本的數量，以符合網站上提供的根本不同的表單型別
 * 為範本中使用的自訂元件提供必要的彈性和設定功能。
 

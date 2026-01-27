@@ -19,7 +19,7 @@ ht-degree: 7%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=zh-Hant) |
 | AEM as a Cloud Service  | 本文章 |
 
 ## 最適化Forms核心元件可用性
@@ -31,8 +31,8 @@ ht-degree: 7%
 對於&#x200B;**AEM 6.5 Forms**&#x200B;和&#x200B;**AEM 6.5 LTS Forms**&#x200B;環境，Adaptive Forms核心元件預設為不啟用。 您必須使用AEM原型將最適化Forms功能新增到您的環境。
 
 請遵循相關指南：
-- AEM 6.5 Forms： [在AEM 6.5 Forms上啟用最適化Forms核心元件](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html)。
-- AEM 6.5 LTS Forms： [在AEM 6.5 LTS Forms上啟用最適化Forms核心元件](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components)。
+- AEM 6.5 Forms： [在AEM 6.5 Forms上啟用最適化Forms核心元件](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=zh-Hant)。
+- AEM 6.5 LTS Forms： [在AEM 6.5 LTS Forms上啟用最適化Forms核心元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65-lts/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components)。
 
 **注意：**&#x200B;如果在舊版Forms 6.5環境中啟用最適化AEM核心元件的任何步驟不明確或存在特定環境的先決條件，請在嘗試啟用之前先釐清這些需求。
 

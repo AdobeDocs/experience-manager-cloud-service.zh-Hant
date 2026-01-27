@@ -17,7 +17,7 @@ ht-degree: 48%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-an-adaptive-form-core-components.html) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-an-adaptive-form-core-components.html?lang=zh-Hant) |
 | AEM as a Cloud Service  | 本文章 |
 
 
@@ -43,9 +43,9 @@ AEM Forms的表單產生器可讓您建立吸引人、回應式、動態且最�
    * 該 `blank` 範本會包含在每個新的 AEM Forms as a Cloud Service 程式中。
    * 您可以透過套件管理員安裝參考套件，將該 `blank` 範本新增到您的 AEM Forms as a Cloud Service 程式。
    * 您也可以從頭開始[建立最適化Forms範本（核心元件）](/help/forms/template-editor-core-components.md)。
-   * 您也可以將[範例範本](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)部署至您的環境。 這些功能可協助您快速建立表格。
+   * 您也可以將[範例範本](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=zh-Hant)部署至您的環境。 這些功能可協助您快速建立表格。
 
-* **最適化表單主題**：主題包含元件和面板的樣式詳細資料。樣式包括背景顏色、狀態顏色、透明度、對齊方式和大小等屬性。套用主題時，指定的樣式會反映在對應的元件上。每個新的AEM Forms as a Cloud Service程式都會包含`Canvas`範本。 您也可以將[範例主題](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)部署至您的環境。 這些可幫助您開始設計表單的樣式，並提供基礎結構，以根據您的業務需求建立或自訂主題。
+* **最適化表單主題**：主題包含元件和面板的樣式詳細資料。樣式包括背景顏色、狀態顏色、透明度、對齊方式和大小等屬性。套用主題時，指定的樣式會反映在對應的元件上。每個新的AEM Forms as a Cloud Service程式都會包含`Canvas`範本。 您也可以將[範例主題](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=zh-Hant)部署至您的環境。 這些可幫助您開始設計表單的樣式，並提供基礎結構，以根據您的業務需求建立或自訂主題。
 
   <!-- * You can install the reference package, via package manager, to add the `Canvas` template to your AEM Forms as a Cloud Service program.
     * You can also [create an Adaptive Forms theme (Core Components)](template-editor.md) and deploy it to your AEM Forms as a Cloud Service program. -->
@@ -56,7 +56,7 @@ AEM Forms的表單產生器可讓您建立吸引人、回應式、動態且最�
 >[!NOTE]
 >
 >
-> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) to your AEM environment for use in Core Components based Adaptive Forms.
+> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=zh-Hant) to your AEM environment for use in Core Components based Adaptive Forms.
 -->
 
 ## 建立最適化表單  {#create-an-adaptive-form-core-components}
@@ -106,7 +106,7 @@ AEM Forms的表單產生器可讓您建立吸引人、回應式、動態且最�
 
 1. 選擇 **[!UICONTROL 建立]**。此時已建立最適化表單，並在最適化表單編輯器中開啟。編輯器會顯示範本中可用的內容。根據最適化表單的型別，相關<!--XFA form template, XML schema or --> JSON結構描述或表單資料模型(FDM)中存在的表單元素會顯示在側邊欄中&#x200B;**[!UICONTROL 內容瀏覽器]**&#x200B;的&#x200B;**[!UICONTROL 資料模型物件]**&#x200B;索引標籤中。 您也可以拖放這些元素以建置自己的最適化表單。
 
-現在，您可以將[最適化Forms核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)拖放至最適化Forms容器來設計和建立表單。 您也可以造訪[https://aemcomponents.dev/](https://aemcomponents.dev/)，檢視作用中的可用核心元件。
+現在，您可以將[最適化Forms核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant)拖放至最適化Forms容器來設計和建立表單。 您也可以造訪[https://aemcomponents.dev/](https://aemcomponents.dev/)，檢視作用中的可用核心元件。
 
 >[!NOTE]
 >

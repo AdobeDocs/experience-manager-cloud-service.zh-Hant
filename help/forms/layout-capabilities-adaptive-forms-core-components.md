@@ -17,7 +17,7 @@ ht-degree: 15%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html?lang=zh-Hant) |
 | AEM as a Cloud Service (基礎元件) | [按一下這裡](/help/forms/layout-capabilities-adaptive-forms.md) |
 | AEM as a Cloud Service (核心元件) | 本文章 |
 
@@ -78,7 +78,7 @@ ht-degree: 15%
 
 垂直索引標籤配置
 
-您可以使用[垂直分頁元件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)，在表單中新增垂直分頁配置。 如需有關如何設定垂直標籤元件各種屬性的詳細指示，請參閱[垂直標籤元件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)文章。
+您可以使用[垂直分頁元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)，在表單中新增垂直分頁配置。 如需有關如何設定垂直標籤元件各種屬性的詳細指示，請參閱[垂直標籤元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)文章。
 
 
 >[!TAB 水準標籤配置]
@@ -90,7 +90,7 @@ ht-degree: 15%
 
 水準索引標籤配置
 
-您可以使用[水準標籤元件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs)，在表單中新增水準標籤配置。 如需如何設定水準標籤元件各種屬性的詳細指示，請參閱[水準標籤元件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs)文章。
+您可以使用[水準標籤元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs)，在表單中新增水準標籤配置。 如需如何設定水準標籤元件各種屬性的詳細指示，請參閱[水準標籤元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs)文章。
 
 
 >[!TAB 摺疊式版面]
