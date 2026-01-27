@@ -4,10 +4,10 @@ description: 透過範例了解通用編輯器可以在屬性面板中編輯的�
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Developer
-source-git-commit: 08e495b0859e9f0a0378a0fb8bd565bc76c777da
+source-git-commit: 022dea38f8597226c644fcdd8c2197a2299a1dfb
 workflow-type: tm+mt
-source-wordcount: '1604'
-ht-degree: 97%
+source-wordcount: '1617'
+ht-degree: 96%
 
 ---
 
@@ -103,6 +103,10 @@ ht-degree: 97%
 | `multi` | `boolean` | 欄位是否為多欄位<br/>請注意，屬性面板中的多欄位不允許容器巢狀 | 否 |
 | `validation` | `ValidationType` | 驗證規則或欄位的規則 | 否 |
 | `raw` | `unknown` | 元件可以使用的原始資料 | 否 |
+
+>[!NOTE]
+>
+>使用`_`或[`aem`外掛程式時，欄位名稱中不允許底線(`xwalk`)。](/help/implementing/universal-editor/component-definition.md#plugins)
 
 ### 名稱欄位和巢狀 {#nesting}
 

@@ -4,10 +4,10 @@ description: 詳細了解元件定義和通用編輯器之間的 JSON 協定。
 feature: Developing
 role: Admin, Developer
 exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 022dea38f8597226c644fcdd8c2197a2299a1dfb
 workflow-type: tm+mt
-source-wordcount: '611'
-ht-degree: 100%
+source-wordcount: '614'
+ht-degree: 97%
 
 ---
 
@@ -94,9 +94,9 @@ ht-degree: 100%
 
 `plugins` 定義哪個外掛程式負責保留元件。常見的外掛程式包括：
 
-* [AEM as a Cloud Service](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service) 的 `aem`。
-* [AEM 6.5.](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65) 和 [AEM 6.5 LTS](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65-lts) 的 `aem65`
+* `aem`適用於[AEM as a Cloud Service，](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service) [AEM 6.5.，](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65)和[AEM 6.5 LTS](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65-lts)
 * [使用 AEM Sites 進行 Edge Delivery Services 編寫](https://www.aem.live/developer/ue-tutorial) 的 `xwalk`。
+* `da`用於[檔案製作](https://docs.da.live/developers/reference/universal-editor)
 
 ## `page` 或 `cf` {#page-cf}
 
