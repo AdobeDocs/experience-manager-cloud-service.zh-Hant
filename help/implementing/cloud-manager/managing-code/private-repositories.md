@@ -4,7 +4,7 @@ description: 了解如何設定 Cloud Manager 與您自己的私人 GitHub 存�
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
+source-git-commit: 892339482c009edf9f73560f2a4b66f4317843fe
 workflow-type: tm+mt
 source-wordcount: '1000'
 ht-degree: 34%
@@ -22,7 +22,7 @@ ht-degree: 34%
 >* GitHub Enterprise Server （自行託管的GitHub版本）存放庫。
 >* GitLab （包括`gitlab.com`和自託管版本的GitLab）存放庫。
 >* Bitbucket (`bitbucket.org`和Bitbucket伺服器（BitBucket的自我主控版本）存放庫。
->* Azure DevOps （包括[dev.azure.com](http://dev.azure.com)和自託管版本的Azure DevOps）存放庫。
+>* Azure DevOps （包括[dev.azure.com](https://azure.microsoft.com/en-us/products/devops/?nav=min)和自託管版本的Azure DevOps）存放庫。
 >
 >請參閱[在Cloud Manager中新增外部存放庫 — 私人測試版](/help/implementing/cloud-manager/managing-code/external-repositories.md)。
 
