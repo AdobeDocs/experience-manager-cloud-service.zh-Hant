@@ -5,16 +5,16 @@ feature: Content Fragments
 role: User
 exl-id: 6fbf8128-3b7f-4eda-bbbd-3336578d2586
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 278242e0be1da5c64abfa5d9ac174013688ff422
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '559'
 ht-degree: 4%
 
 ---
 
 # Markdown {#markdown}
 
-當您[編寫](/help/sites-cloud/administering/content-fragments/authoring.md#edit-multi-line-text-fields-plaintext-markdown)您的內容片段時，您可能會有[多行文字欄位](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)以&#x200B;**Markdown**&#x200B;的&#x200B;**預設型別**&#x200B;定義。 內容片段編輯器使用&#x200B;*Markdown*&#x200B;語法，可讓您輕鬆編寫頁面編寫和Headless傳送的內容：
+當您[製作](/help/sites-cloud/administering/content-fragments/authoring.md#edit-multi-line-text-fields-plaintext-markdown)內容片段時，您可能會有[多行文字欄位](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)以&#x200B;**Markdown**&#x200B;的&#x200B;**預設型別**&#x200B;定義。 內容片段編輯器使用&#x200B;*Markdown*&#x200B;語法，可讓您輕鬆編寫頁面編寫和Headless傳送的內容：
 
 編輯器中的![Markdown多行文字欄位](/help/sites-cloud/administering/content-fragments/assets/cf-markdown-field-edit.png)
 
@@ -32,7 +32,7 @@ ht-degree: 4%
 
 ## 標題標籤法 {#heading-notation}
 
-若要建立標題，請在標題前面放置雜湊標籤(#)。 一個雜湊標籤(#)用於H1，兩個雜湊標籤(##)用於H2，以此類推。 您最多可以使用6個雜湊標籤。 例如：
+若要建立標題，請在標題前面放置雜湊標籤(#)。 一個雜湊標籤(#)表示H1，兩個雜湊標籤(##)表示H2，以此類推。 您最多可以使用6個雜湊標籤。 例如：
 
     `## This is an H2`
 
@@ -66,7 +66,7 @@ ht-degree: 4%
 
     `This is [an example](https://example.com/ "Title") inline link.`
 
-    `This is [an example of an email link](emailto:myaddress@mydomain.info)`
+    `This is [an example (non-standard) of an email link](emailto:myaddress@mydomain.info)`
 
     `[This link](https://example.net/) has no title attribute.`
 
@@ -150,7 +150,7 @@ ht-degree: 4%
 
 您可以新增斜體或粗體樣式至文字。
 
-若要新增斜體，如下所示：
+您可以新增斜體，如下所示：
 
     `*single asterisks*`
 
@@ -182,7 +182,7 @@ ht-degree: 4%
 
 ## 反斜線逸出 {#backslash-escapes}
 
-您可以使用反斜線逸出產生在格式語法中具有特殊意義的常值字元。 例如，如果您想在單詞周圍加上常值星號(而不是HTML&lt;em>標籤)，則可以在星號前使用反斜線，如下所示：
+您可以使用反斜線逸出產生在格式語法中也具有特殊意義的常值字元。 例如，如果您想以星號括住單字(而非HTML &lt;em>標籤)，可以在星號前使用反斜線，如下所示：
 
     `\\*literal asterisks\\*`
 
