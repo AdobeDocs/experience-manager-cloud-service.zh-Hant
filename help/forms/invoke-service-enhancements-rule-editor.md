@@ -6,9 +6,9 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: 在VRE中叫用服務增強功能，使用叫用服務填入下拉式選項，使用叫用服務的輸出設定可重複面板，使用叫用服務的輸出設定面板，使用叫用服務的輸出引數驗證其他欄位。
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: 5b55a280c5b445d366c7bf189b54b51e961f6ec2
+source-git-commit: 07f1b64753387d9ee47b26d65955e41cd961f1a5
 workflow-type: tm+mt
-source-wordcount: '1835'
+source-wordcount: '2150'
 ht-degree: 1%
 
 ---
@@ -171,6 +171,10 @@ ht-degree: 1%
 
 ![結果](/help/forms/assets/output1.png)
 
+> 
+>
+> 下拉式清單選項也可以透過叫用服務、剖析JSON回應並套用自訂函式來動態填入。 如需詳細資訊，請參閱[本節](#retrieve-property-values-from-a-json-array)。
+
 ### 使用案例2：使用叫用服務的輸出設定可重複面板
 
 此使用案例示範如何根據&#x200B;**叫用服務**&#x200B;的輸出動態填入可重複面板。
@@ -269,6 +273,123 @@ ht-degree: 1%
 按一下&#x200B;**Submit**&#x200B;按鈕時，就會叫用`redirect-api` API服務。 成功後，會將使用者重新導向至&#x200B;**聯絡我們**&#x200B;頁面。
 
 ![事件裝載輸出](/help/forms/assets/output5.gif)
+
+## 從JSON陣列擷取屬性值
+
+最適化Forms支援叫用服務、處理JSON回應及動態填入表單欄位。 本節說明如何從JSON陣列擷取屬性值，並將其繫結至表單欄位。
+
+### JSON回應範例
+
+下列範例代表美國銷售地區和銷售代表清單：
+
+
+```json
+[
+  {
+    "region": "East",
+    "salesPerson": "Emily Carter"
+  },
+  {
+    "region": "South",
+    "salesPerson": "Michael Brown"
+  },
+  {
+    "region": "Midwest",
+    "salesPerson": "Sophia Martinez"
+  },
+  {
+    "region": "Southwest",
+    "salesPerson": "David Johnson"
+  },
+  {
+    "region": "West",
+    "salesPerson": "Linda Walker"
+  }
+]
+```
+
+### 擷取屬性值的自訂函式
+
+<span class="preview">這是早期採用者的功能。 如果您有興趣，請從您的工作地址快速傳送電子郵件至mailto:aem-forms-ea@adobe.com，以要求存取功能</a>。</span>
+
+使用以下自訂函式，從JSON陣列擷取屬性值。
+
+```js
+/**
+ * Returns an array of values for a specific property from an array of objects.
+ *
+ * @name getPropertyValues
+ * @param {Object[]} jsonArray An array of objects
+ * @param {string} propertyName The property whose values should be extracted
+ * @returns {Array} An array containing the values of the specified property
+ *
+ */
+
+function getPropertyValues(jsonArray, propertyName)
+{
+    return jsonArray.map((obj) => obj[propertyName]);
+
+}
+```
+
+自訂函式接受：
+
+* **jsonArray**：服務傳回JSON陣列
+* **propertyName**：要擷取值的屬性
+
+自訂函式傳回值的簡單陣列。
+
+>[!NOTE]
+>
+> 如需有關如何新增自訂函式的詳細步驟，請參閱[以核心元件為基礎的最適化Forms的自訂函式簡介](/help/forms/create-and-use-custom-functions.md)一文。
+
+
+### 在規則編輯器中使用函式
+
+若要從JSON陣列擷取特定值：
+
+```
+event.payload.invokeServiceResponse.rawPayloadBody
+```
+
+下列範例示範如何使用此回應填入`Sales Department`表單。
+
+例如，建立`Sales Department`表單，其中包含`Select Region`和`Select Sales Representative`下拉式清單。
+
+**步驟1：在表單初始化時叫用服務**
+
+```
+WHEN
+    Form is initialized
+THEN
+    Invoke Service → salesdeptinfo
+```
+
+>[!NOTE]
+>
+> 若要瞭解如何整合API而不需在視覺規則編輯器中建立表單資料模型，[請按一下這裡](/help/forms/api-integration-in-rule-editor.md)。
+
+**步驟2：填入地區下拉式清單**
+
+為服務呼叫新增成功處理常式，並設定以下動作：
+
+```
+Set enum → Region dropdown
+getPropertyValues(
+    event.payload.invokeServiceResponse.rawPayloadBody,
+    "region"
+)
+```
+
+此規則會讀取JSON陣列、擷取`region`屬性值，並將值指派給`Select Region`下拉式清單。
+
+同樣地，在成功處理常式中設定`Select Sales Representative`下拉式清單的動作。
+
+JSON陣列的![事件承載](/help/forms/assets/event-payload.png)
+
+當表單載入時，會傳回JSON資料，且自訂函式會擷取屬性值，並自動填入下拉式清單：
+
+![事件裝載表單](/help/forms/assets/event-payload-form.png)
 
 ## 常見問題
 

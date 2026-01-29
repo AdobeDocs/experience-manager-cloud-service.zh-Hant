@@ -6,16 +6,16 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: 在規則編輯器中整合 API、叫用服務增強功能
 exl-id: fc51f86d-e672-4513-b473-6700757a0c3d
-source-git-commit: 0dba0003d8b13631e91147fa08c3b986c11b61d3
+source-git-commit: 478b9c21e5b96dc31f5926a49864ea867e1ae86c
 workflow-type: tm+mt
-source-wordcount: '1027'
-ht-degree: 1%
+source-wordcount: '1034'
+ht-degree: 3%
 
 ---
 
 # 在規則編輯器中整合API
 
-<span>規則編輯器中的Integrating API在早期採用者程式之下。 您可以從您的正式電子郵件ID寫信到`aem-forms-ea@adobe.com`，以加入早期採用者程式並請求存取權能。</span>
+<span>規則編輯器中的Integrating API在早期採用者程式之下。 您可以使用您的官方電子郵件 ID 寫信至 `aem-forms-ea@adobe.com`，來加入早期採用者計劃，並要求存取此功能。</span>
 
 >[!NOTE]
 >
@@ -123,6 +123,10 @@ ht-degree: 1%
 
 同樣地，**Passport Issuance**&#x200B;和&#x200B;**目的地國家/地區**&#x200B;使用相同的API呼叫，確保所有三個欄位中的資料一致且為最新狀態。
 
+>
+>
+> 您可以叫用API並使用自訂函式[，從JSON陣列](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array)擷取屬性值。 此方法可讓您擷取值，並將其直接繫結至表單欄位。
+
 ## 實作API失敗的重試機制
 
 當API請求失敗時，在報告錯誤給使用者之前重試請求通常會有幫助。 您可以在&#x200B;**function.js**&#x200B;檔案中寫入自訂程式碼，以實作輪詢和重試機制。
@@ -195,10 +199,6 @@ function retryHandler(requestFn) {
 ```
 
 在上述程式碼中，**retryHandler**&#x200B;函式會管理API要求，並在失敗時自動重試。 它會採用請求函式(requestFn)，並嘗試請求最多兩次，為每次重試新增中繼資料。
-
->[!NOTE]
->
-> 如需有關如何新增自訂函式的詳細步驟，請參閱[以核心元件為基礎的最適化Forms的自訂函式簡介](/help/forms/create-and-use-custom-functions.md)一文。
 
 ## 常見問題
 
