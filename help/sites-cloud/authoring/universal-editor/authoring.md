@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: bb946f28a3d1a1d64c564029d9903c315bb9ffbb
+source-git-commit: 519319f137065c1ccc8778e42c7de8f23fb5c104
 workflow-type: tm+mt
-source-wordcount: '2657'
-ht-degree: 20%
+source-wordcount: '2710'
+ht-degree: 19%
 
 ---
 
@@ -33,17 +33,25 @@ ht-degree: 20%
 
 ## 編輯內容 {#editing-content}
 
-編輯內容很簡單又直覺。當您將滑鼠移至編輯器中的內容上時，可編輯的內容會以淡藍色外框反白顯示。
+編輯內容很簡單又直覺。當您將滑鼠移至編輯器中的內容上時，可編輯的內容會以淺藍色外框和徽章反白顯示。
 
-![可編輯的內容會以藍色框醒目顯示](assets/editable-content.png)
+![可編輯的內容以淺藍色方塊醒目提示](assets/editable-content.png)
+
+輕觸或按一下反白的內容即會選取，而薄的淺藍色外框會變成具有徽章的深藍色外框。
+
+![選取的內容以深藍色方塊醒目提示](assets/selected-content.png)
 
 >[!TIP]
 >
 >依預設，點選或按一下內容會選取內容以進行編輯。 如果您想透過下列連結導覽內容，請切換至[預覽模式。](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)
 
-根據您選取的內容，您可能有不同的就地編輯選項，而且您可能會針對[屬性面板中的內容提供其他資訊和選項。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+根據您選取的內容，您可能有不同的就地編輯選項，以及[屬性面板中內容的其他資訊和選項。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
-每一段可編輯內容都標示其內容型別。 根據內容，您可以按一下此徽章以快速存取以編輯動作。
+### 內容功能表 {#context-menu}
+
+每一段可編輯內容都標示其內容型別。
+
+您可以按一下此徽章，以快速存取包含編輯動作的內容功能表。 以滑鼠右鍵按一下未選取的可編輯專案會自動選取它，也會開啟內容功能表。
 
 ![可編輯的徽章選項](assets/editable-badge.png)
 
@@ -53,7 +61,7 @@ ht-degree: 20%
 
 ![編輯內容](assets/editing-content.png)
 
-薄的藍色輪廓會變成粗的藍色輪廓來指示選取，並且會出現游標。 進行變更，然後按下Enter/Return或在文字方塊外選取，以儲存變更。
+薄的淺藍色外框會變成深藍色外框來指示選取範圍，並且會出現游標。 進行變更，然後按下Enter/Return或在文字方塊外選取，以儲存變更。
 
 當您選取文字元件時，其詳細資訊會顯示在[屬性面板中。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)您也可以在面板中編輯文字。
 
@@ -69,11 +77,11 @@ ht-degree: 20%
 
 為方便起見，您可在兩個位置找到文字的格式選項和詳細資訊。
 
-#### 內容功能表 {#context-menu}
+#### RTF內容功能表 {#rich-text-context-menu}
 
-快顯選單會在RTF區塊上方開啟，並在快顯選單中提供基本的格式選項。 由於空間限制，某些選項可能會隱藏在省略符號按鈕後面。
+隨即在RTF區塊上方開啟上下文功能表，提供上下文中的基本格式選項。 由於空間限制，某些選項可能會隱藏在省略符號按鈕後面。
 
-![&#x200B; RTF內容功能表](assets/rich-text-context-menu.png)
+![ RTF內容功能表](assets/rich-text-context-menu.png)
 
 一旦焦點離開已編輯的欄位，變更會自動儲存。
 
