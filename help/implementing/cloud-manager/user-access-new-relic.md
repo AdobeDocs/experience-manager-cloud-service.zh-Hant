@@ -5,10 +5,10 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 2c863e0cfad3211e811665a5169def7705e8b907
+source-git-commit: c91ace39d34864b88f1e07fcc7d427f347f9ed31
 workflow-type: tm+mt
-source-wordcount: '1817'
-ht-degree: 40%
+source-wordcount: '1789'
+ht-degree: 38%
 
 ---
 
@@ -29,13 +29,11 @@ Adobe 非常重視應用程式的監控、可用性和效能。AEM as a Cloud Se
 
 用於 AEM as a Cloud Service 的 New Relic One APM 具有許多功能。
 
-* 直接存取專用的 New Relic One 帳戶
+* 直接存取專屬的New Relic One帳戶。
 
-* 檢測的 New Relic One 一個 APM 代理，顯示帶有行號的準確方法調用，包括外部依賴項和資料庫
+* 檢測的New Relic One APM代理程式會以行號顯示正確的方法呼叫，包括外部相依性和資料庫。
 
-* 透過結合來自基礎設施級監控和應用程式 (Adobe Experience Manager) 監控的關鍵指標來優化整體效能
-
-* AEM as a Cloud Service直接在New Relic Insights中公開Java Management Extensions (JMX) MBean和執行狀況檢查，從而可以深入檢查應用程式效能和執行狀況量度。
+* 透過結合來自基礎設施級監控和應用程式(Adobe Experience Manager)監控的關鍵指標來最佳化整體效能。
 
 ## 啟用您的New Relic One子帳戶 {#activate-sub-account}
 
