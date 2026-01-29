@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
+source-git-commit: 2923a79a69ae537eaad591035e4fce9f3c593b23
 workflow-type: tm+mt
-source-wordcount: '3194'
-ht-degree: 100%
+source-wordcount: '3434'
+ht-degree: 92%
 
 ---
 
@@ -28,6 +28,16 @@ Adobe 會定期檢閱包括 API 和設定在內的功能，確保其符合 AEM a
 >[!WARNING]
 >
 >在某些情況下，部署新的 Cloud Manager 版本或升級至最新版本的 AEM as a Cloud Service 之前，可能有必要移除某項功能。
+
+>[!IMPORTANT]
+>  多個[已棄用的API](#aem-apis)將於&#x200B;**2026年2月26日**&#x200B;目標移除。 請檢閱這些關鍵日期和影響：
+>
+> * **自2026年1月26日起**：每個環境&#x200B;**每週都會傳送動作中心通知電子郵件**，以提醒您移除這些API的使用情況。
+> * **2026年2月26日**：包含使用這些API之程式碼的Cloud Manager管道將在&#x200B;**程式碼品質**&#x200B;步驟期間&#x200B;**暫停**。 部署管理員、專案管理員或企業所有者可以覆寫此問題，以允許管道繼續。
+> * **2026年3月26日**：包含使用這些API之程式碼的Cloud Manager管道將在&#x200B;**程式碼品質**&#x200B;步驟期間&#x200B;**失敗**，**封鎖新程式碼的部署**，直到移除使用為止。
+> * **2026年4月30日**：仍在使用這些API的環境可能&#x200B;**不再接收重要的Adobe版本更新**。
+>
+> 若要防止部署封鎖，請在2026年3月26日之前移除API使用方式。
 
 ## 棄用的功能 {#deprecated-features}
 
@@ -74,6 +84,17 @@ Adobe 會定期檢閱包括 API 和設定在內的功能，確保其符合 AEM a
 
 下方表格中的 API (按一下將其展開查看內容) 已宣佈為棄用，但尚未移除。必須在目標移除日期之前停止使用這些 API，否則您會面臨與效能、可用性和安全性相關之問題的風險。部分 API 參照下方的 API 移除指引區段。
 
+>[!IMPORTANT]
+> 多個API已排程在&#x200B;**2026年2月26日**&#x200B;移除。 請檢閱這些關鍵日期和影響：
+>
+> * **自2026年1月26日起**：每個環境&#x200B;**每週都會傳送動作中心通知電子郵件**，以提醒您移除這些API的使用情況。
+> * **2026年2月26日**：包含使用這些API之程式碼的Cloud Manager管道將在&#x200B;**程式碼品質**&#x200B;步驟期間&#x200B;**暫停**。 部署管理員、專案管理員或企業所有者可以覆寫此問題，以允許管道繼續。
+> * **2026年3月26日**：包含使用這些API之程式碼的Cloud Manager管道將在&#x200B;**程式碼品質**&#x200B;步驟期間&#x200B;**失敗**，**封鎖新程式碼的部署**，直到移除使用為止。
+> * **2026年4月30日**：仍在使用這些API的環境可能&#x200B;**不再接收重要的Adobe版本更新**。
+>
+> 若要防止部署封鎖，請在2026年3月26日之前移除API使用方式。
+
+
 <details>
   <summary>展開以查看已過時的 API 清單。</summary>
 <table style="table-layout:auto">
@@ -88,100 +109,100 @@ Adobe 會定期檢閱包括 API 和設定在內的功能，確保其符合 AEM a
     <td>org.apache.sling.commons.auth<br> org.apache.sling.commons.auth.spi</td>
     <td>使用 Sling 的 Auth Core/Auth Core SPI 介面作為替代方法。<a href="#org.apache.sling.commons.auth">請參閱下面的移除說明。</a></td>
     <td>2015 年</td>
-    <td>2025/8/31</td>
+    <td>2/26/2026</td>
   </tr>
   <tr>
 <td>org.eclipse.jetty.client<br>org.eclipse.jetty.client.api<br>org.eclipse.jetty.client.http<br>org.eclipse.jetty.client.util<br>org.eclipse.jetty.http<br>org.eclipse.jetty.http.pathmap<br>org.eclipse.jetty.io<br>org.eclipse.jetty.io.ssl<br>org.eclipse.jetty.security<br>org.eclipse.jetty.server<br>org.eclipse.jetty.server.handler<br>org.eclipse.jetty.server.handler.gzip<br>org.eclipse.jetty.server.session<br>org.eclipse.jetty.servlet<br>org.eclipse.jetty.servlet.listener<br>org.eclipse.jetty.util<br>org.eclipse.jetty.util.annotation<br>org.eclipse.jetty.util.component<br>org.eclipse.jetty.util.log<br>org.eclipse.jetty.util.resource<br>org.eclipse.jetty.util.security<br>org.eclipse.jetty.util.ssl<br>org.eclipse.jetty.util.statistic<br>org.eclipse.jetty.util.thread</td>
     <td>不再支援 Eclipse Jetty 和 Felix Http Jetty 套件。<a href="#org.eclipse.jetty">請參閱下面的移除說明。</a></td>
     <td>2021/5/27</td>
-    <td>2025/8/31</td>
+    <td>2/26/2026</td>
   </tr>
  <tr>     <td>com.mongodb<br>com.mongodb.annotations<br>com.mongodb.assertions<br>com.mongodb.async<br>com.mongodb.binding<br>com.mongodb.bulk<br>com.mongodb.client<br>com.mongodb.client.gridfs<br>com.mongodb.client.gridfs.codecs<br>com.mongodb.client.gridfs.model<br>com.mongodb.client.jndi<br>com.mongodb.client.model<br>com.mongodb.client.model.changestream<br>com.mongodb.client.model.geojson<br>com.mongodb.client.model.geojson.codecs<br>com.mongodb.client.result<br>com.mongodb.connection<br>com.mongodb.connection.netty<br>com.mongodb.diagnostics.logging<br>com.mongodb.event<br>com.mongodb.gridfs<br>com.mongodb.internal<br>com.mongodb.internal.async<br>com.mongodb.internal.authentication<br>com.mongodb.internal.connection<br>com.mongodb.internal.dns<br>com.mongodb.internal.event<br>com.mongodb.internal.management.jmx<br>com.mongodb.internal.session<br>com.mongodb.internal.thread<br>com.mongodb.internal.validator<br>com.mongodb.management<br>com.mongodb.operation<br>com.mongodb.selector<br>com.mongodb.session<br>com.mongodb.util</td>
     <td>AEM as a Cloud Service 不支援使用此 API。<a href="#com.mongodb">請參閱下面的移除說明。</a></td>
     <td>2021/5/27</td>
-    <td>2025/8/31</td>
+    <td>2/26/2026</td>
   </tr>
    <tr>
     <td>org.apache.abdera<br>org.apache.abdera.model<br>org.apache.abdera.factory<br>org.apache.abdera.ext.media<br>org.apache.abdera.util<br>org.apache.abdera.i18n.iri<br>org.apache.abdera.writer<br>org.apache.abdera.i18n.rfc4646<br>org.apache.abdera.i18n.rfc4646.enums<br>org.apache.abdera.i18n.text<br>org.apache.abdera.filter<br>org.apache.abdera.xpath<br>org.apache.abdera.i18n.text.io<br>org.apache.abdera.i18n.text.data<br>org.apache.abdera.parser</td>
     <td>此 API 已過時，因為 Apache Abdera 自 2017 年以來已為淘汰專案。<a href="#org.apache.abdera_or_org.apache.sling.atom.taglib">請參閱下面的移除說明。</a></td>
     <td>2021/7/29</td>
-    <td>2025/8/31</td>
+    <td>2/26/2026</td>
   </tr>
   <tr>
     <td>org.apache.abdera.ext.opensearch<br>org.apache.abdera.ext.opensearch.model<br>org.apache.abdera.ext.opensearch.server<br>org.apache.abdera.ext.opensearch.server.impl<br>org.apache.abdera.ext.opensearch.server.processors<br>org.apache.abdera.i18n.iri.data<br>org.apache.abdera.i18n.lang<br>org.apache.abdera.i18n.templates<br>org.apache.abdera.i18n.unicode.data<br>org.apache.abdera.parser.stax<br>org.apache.abdera.parser.stax.util<br>org.apache.abdera.protocol<br>org.apache.abdera.protocol.client<br>org.apache.abdera.protocol.client.cache<br>org.apache.abdera.protocol.client.util<br>org.apache.abdera.protocol.error<br>org.apache.abdera.protocol.server<br>org.apache.abdera.protocol.server.context<br>org.apache.abdera.protocol.server.filters<br>org.apache.abdera.protocol.server.impl<br>org.apache.abdera.protocol.server.multipart<br>org.apache.abdera.protocol.server.processors<br>org.apache.abdera.protocol.server.provider.basic<br>org.apache.abdera.protocol.server.provider.managed<br>org.apache.abdera.protocol.server.servlet<br>org.apache.abdera.protocol.util<br>org.apache.abdera.util.filter</td>
     <td>此 API 已過時，因為 Apache Abdera 自 2017 年以來已為淘汰專案。<a href="#org.apache.abdera_or_org.apache.sling.atom.taglib">請參閱下面的移除說明。</a></td>
     <td>2019/4/8</td>
-    <td>2025/8/31</td>
+    <td>2/26/2026</td>
   </tr>
   <tr>
     <td>org.apache.felix.http.whiteboard</td>
     <td>不再支援 Apache Felix Http Whiteboard。將您的程式碼移轉到 OSGi Http Whiteboard。<a href="#org.apache.felix.http.whiteboard">請參閱下面的移除說明。</a></td>
     <td>2022/1/27</td>
-    <td>2025/8/31</td>
+    <td>2/26/2026</td>
   </tr>
   <tr>
     <td>org.apache.cocoon.xml.dom<br>org.apache.cocoon.xml.sax</td>
     <td>此 API 已過時。請將您的程式碼移轉至 JDK 提供的 XML API。</td>
     <td>2022/1/27</td>
-    <td>2025/8/31</td>
+    <td>2/26/2026</td>
   </tr>
   <tr>
     <td>ch.qos.logback.classic<br>ch.qos.logback.classic.boolex<br>ch.qos.logback.classic.db.names<br>ch.qos.logback.classic.db.script<br>ch.qos.logback.classic.encoder<br>ch.qos.logback.classic.filter<br>ch.qos.logback.classic.helpers<br>ch.qos.logback.classic.html<br>ch.qos.logback.classic.jmx<br>ch.qos.logback.classic.joran<br>ch.qos.logback.classic.joran.action<br>ch.qos.logback.classic.jul<br>ch.qos.logback.classic.layout<br>ch.qos.logback.classic.log4j<br>ch.qos.logback.classic.net<br>ch.qos.logback.classic.net.server<br>ch.qos.logback.classic.pattern<br>ch.qos.logback.classic.pattern.color<br>ch.qos.logback.classic.selector<br>ch.qos.logback.classic.selector.servlet<br>ch.qos.logback.classic.servlet<br>ch.qos.logback.classic.sift<br>ch.qos.logback.classic.spi<br>ch.qos.logback.classic.turbo<br>ch.qos.logback.classic.util<br>ch.qos.logback.core<br>ch.qos.logback.core.boolex<br>ch.qos.logback.core.encoder<br>ch.qos.logback.core.filter<br>ch.qos.logback.core.helpers<br>ch.qos.logback.core.hook<br>ch.qos.logback.core.html<br>ch.qos.logback.core.joran<br>ch.qos.logback.core.joran.action<br>ch.qos.logback.core.joran.conditional<br>ch.qos.logback.core.joran.event<br>ch.qos.logback.core.joran.event.stax<br>ch.qos.logback.core.joran.node<br>ch.qos.logback.core.joran.spi<br>ch.qos.logback.core.joran.util<br>ch.qos.logback.core.joran.util.beans<br>ch.qos.logback.core.layout<br>ch.qos.logback.core.net<br>ch.qos.logback.core.net.server<br>ch.qos.logback.core.net.ssl<br>ch.qos.logback.core.pattern<br>ch.qos.logback.core.pattern.color<br>ch.qos.logback.core.pattern.parser<br>ch.qos.logback.core.pattern.util<br>ch.qos.logback.core.property<br>ch.qos.logback.core.read<br>ch.qos.logback.core.recovery<br>ch.qos.logback.core.rolling<br>ch.qos.logback.core.rolling.helper<br>ch.qos.logback.core.sift<br>ch.qos.logback.core.spi<br>ch.qos.logback.core.status<br>ch.qos.logback.core.subst<br>ch.qos.logback.core.util</td>
     <td>AEM as a Cloud Service 不支援此內部 Logback API。<a href="#ch.qos.logback">請參閱下面的移除說明。</a></td>
     <td>2022/1/27</td>
-    <td>2025/8/31</td>
+    <td>2/26/2026</td>
   </tr>
   <tr>
     <td>org.slf4j.spi</td>
     <td>AEM as a Cloud Service 不支援此內部 log4j API。<a href="#org.slf4j">請參閱下面的移除說明。</a></td>
     <td>2022/1/27</td>
-    <td>2025/8/31</td>
+    <td>2/26/2026</td>
   </tr>
   <tr>
     <td>org.apache.log4j<br>org.apache.log4j.helpers<br>org.apache.log4j.spi<br>org.apache.log4j.xml</td>
     <td>Apache Log4j 1 已於 2015 年結束其生命週期，不再支援。<a href="#org.apache.log4j">請參閱下面的移除說明。</a></td>
     <td>2022/1/27</td>
-    <td>2025/8/31</td>
+    <td>2/26/2026</td>
   </tr>
   <tr>  <td>com.google.common.annotations<br>com.google.common.base<br>com.google.common.cache<br>com.google.common.collect<br>com.google.common.escape<br>com.google.common.eventbus<br>com.google.common.hash<br>com.google.common.html<br>com.google.common.io<br>com.google.common.math<br>com.google.common.net<br>com.google.common.primitives<br>com.google.common.reflect<br>com.google.common.util.concurrent<br>com.google.common.xml</td>
     <td>Cloud Service 中的 Google Guava Core Libraries 已過時。<a href="#com.google.common">請參閱下面的移除說明。</a></td>
     <td>2023/5/15</td>
-    <td>2025/8/31</td>
+    <td>2/26/2026</td>
   </tr>
   <tr>
     <td>org.slf4j.event</td>
     <td>AEM as a Cloud Service 不支援此內部 slf4j API。<a href="#org.slf4j">請參閱下面的移除說明。</a></td>
     <td>2022/4/11</td>
-    <td>2025/8/31</td>
+    <td>2/26/2026</td>
   </tr> 
     <tr>
     <td>com.drew.*</td>
     <td>若要從影像和影片中擷取中繼資料，應透過 Cloud Service 中的 Asset Compute 或透過 Apache POI 或 Apache Tika 完成。</td>
     <td>2024 年 9 月 17 日</td>
-    <td>2025/8/31</td>
+    <td>2/26/2026</td>
   </tr>
   <tr>
     <td>org.apache.jackrabbit.oak.plugins.blob。*</td>
     <td>此 API 僅供內部使用。</td>
     <td>2024/9/23</td>
-    <td>2025/8/31</td>
+    <td>2/26/2026</td>
   </tr>
   <tr>
     <td>org.apache.jackrabbit.oak.plugins.memory</td>
     <td>此 API 僅供內部使用。</td>
     <td>2024/9/23</td>
-    <td>2025/8/31</td>
+    <td>2/26/2026</td>
   </tr>
   <tr>
 <td>org.apache.felix.webconsole<br>org.apache.felix.webconsole.bundleinfo<br>org.apache.felix.webconsole.i18n<br>org.apache.felix.webconsole.spi</td>
     <td>雲端環境不支援 Felix 網頁控制台。<a href="#org.apache.felix.webconsole">請參閱下面的移除說明。</a></td>
     <td>2021/4/30</td>
-    <td>2025/8/31</td>
+    <td>2/26/2026</td>
   </tr>
 <td>org.bson<br/>org.bson.assertions<br/>org.bson.codecs<br/>org.bson.codecs.configuration<br/>org.bson.codecs.pojo<br/>org.bson.codecs.pojo.annotations<br/>org.bson.conversions<br/>org.bson.diagnostics<br/>org.bson.internal<br/>org.bson.io<br/>org.bson.json<br/>org.bson.types<br/>org.bson.util</td>
     <td>AEM as a Cloud Service 不支援使用此 API。</td>
     <td>2022/10/31</td>
-    <td>2025/8/31</td>
+    <td>2/26/2026</td>
   </tr>  
   <tr>
     <td>org.apache.sling.runmode</td>
