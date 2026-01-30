@@ -3,9 +3,9 @@ title: 搭配AEM as a Cloud Service使用MCP
 description: 瞭解如何將模型上下文通訊協定與AEM as a Cloud Service搭配使用
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 96ce03c86d0406320223f3fae87beed3552d479f
+source-git-commit: 03ce511a28cf0fbbdd6e49d63736107720ef017b
 workflow-type: tm+mt
-source-wordcount: '2003'
+source-wordcount: '2034'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,11 @@ ht-degree: 0%
 
 * **開發人員**&#x200B;可以從其IDE或聊天應用程式協調內容作業和工作流程
 * **從業者**&#x200B;和內容架構師可以透過AI協助管理網站、內容片段和資產，同時留在AEM的現有許可權模式中。
+
+>[!IMPORTANT]
+>
+> 若是修改或刪除內容的情境，從業人員應使用AI助理介面，而不是直接叫用MCP工具，因為AI助理執行的AEM代理程式包含內建安全保障。
+>
 
 本文說明AEM的MCP功能提供哪些功能、支援哪些MCP應用程式、如何設定，以及如何在實務中使用。
 
