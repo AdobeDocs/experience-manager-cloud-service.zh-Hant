@@ -6,9 +6,9 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: a2f686e7917d47138bdb9dcd4b5245732635bed7
+source-git-commit: c5c63e4ecfa099f953c1cf01861c0342ba4bae18
 workflow-type: tm+mt
-source-wordcount: '3096'
+source-wordcount: '3133'
 ht-degree: 19%
 
 ---
@@ -127,6 +127,8 @@ Cloud上的互動式通訊是建立、管理和提供資料導向互動式通訊
 * **內容溢位**：「允許在內容內分頁」選項適用於流程版面配置，以順利編輯多頁並改善複雜檔案的文字管理。
 
 * **XDP檔案編輯**：您現在可以在瀏覽器中編輯XDP檔案，而不是只在Forms Windows案頭上執行的Microsoft Designer。
+
+* **在發佈執行個體上叫用關聯UI**：您現在可以直接在發佈執行個體上叫用關聯UI。 此功能會定義所需的設定、裝載結構和呼叫流程，藉此簡化整合併加速跨環境的部署。
 
 ##### 動態頁面編號
 
