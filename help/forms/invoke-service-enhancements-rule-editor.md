@@ -6,7 +6,7 @@ role: User, Developer
 level: Beginner, Intermediate
 keywords: 在VRE中叫用服務增強功能，使用叫用服務填入下拉式選項，使用叫用服務的輸出設定可重複面板，使用叫用服務的輸出設定面板，使用叫用服務的輸出引數驗證其他欄位。
 exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
-source-git-commit: 07f1b64753387d9ee47b26d65955e41cd961f1a5
+source-git-commit: 17dfa6e28d2510484731a736c1cf7fda22961e66
 workflow-type: tm+mt
 source-wordcount: '2150'
 ht-degree: 1%
@@ -276,6 +276,8 @@ ht-degree: 1%
 
 ## 從JSON陣列擷取屬性值
 
+<span class="preview">這是早期採用者的功能。 如果您有興趣，請從您的工作地址快速傳送電子郵件至mailto:aem-forms-ea@adobe.com，以要求存取功能</a>。</span>
+
 最適化Forms支援叫用服務、處理JSON回應及動態填入表單欄位。 本節說明如何從JSON陣列擷取屬性值，並將其繫結至表單欄位。
 
 ### JSON回應範例
@@ -309,8 +311,6 @@ ht-degree: 1%
 ```
 
 ### 擷取屬性值的自訂函式
-
-<span class="preview">這是早期採用者的功能。 如果您有興趣，請從您的工作地址快速傳送電子郵件至mailto:aem-forms-ea@adobe.com，以要求存取功能</a>。</span>
 
 使用以下自訂函式，從JSON陣列擷取屬性值。
 
