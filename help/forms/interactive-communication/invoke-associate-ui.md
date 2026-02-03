@@ -37,11 +37,11 @@ ht-degree: 2%
 - 在AEM中建立和發佈的互動式通訊
 - 已啟用快顯視窗支援的瀏覽器
 - 關聯使用者必須屬於&#x200B;**forms-associates**&#x200B;群組
-- 已設定驗證 — [SAML 2.0](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)
+- 已設定驗證 — [SAML 2.0](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)
 
 >[!NOTE]
 >
-> 對於Associate UI，[SAML 2.0驗證](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)文章中所述的標準設定之外，還需要其他SAML設定。 如需詳細資訊，請參閱[關聯UI的其他SAML設定](#additional-saml-configurations-for-associate-ui)區段。
+> 對於Associate UI，[SAML 2.0驗證](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)文章中所述的標準設定之外，還需要其他SAML設定。 如需詳細資訊，請參閱[關聯UI的其他SAML設定](#additional-saml-configurations-for-associate-ui)區段。
 
 ### 關聯UI的其他SAML設定
 
