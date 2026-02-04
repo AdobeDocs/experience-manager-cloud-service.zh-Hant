@@ -14,7 +14,7 @@ ht-degree: 3%
 
 建立所選資產的連結，以便輕鬆與他人共用。 以授權[!DNL Content Hub]使用者的身分，選取您[!DNL Content Hub]環境中可用的一或多個資產、產生連結，然後傳送給其他私人或公開使用者。
 
->[!VIDEO](https://video.tv.adobe.com/v/3474890/?learn=on&enablevpops=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3474930/?captions=chi_hant&learn=on&enablevpops=on){transcript=true}
 
 ## 先決條件 {#prerequisites}
 

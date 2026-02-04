@@ -27,7 +27,7 @@ AEM Assets 檢視中的大量匯入能讓管理員將大量資產從資料來源
 * Dropbox
 * OneDrive
 
->[!VIDEO](https://video.tv.adobe.com/v/3426857/?learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3451981/?captions=chi_hant&learn=on){transcript=true}
 
 ## 先決條件 {#prerequisites}
 
