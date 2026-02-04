@@ -6,9 +6,9 @@ feature: Interactive Communication
 role: User, Developer, Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 6b90e8f2d26d6bfd22fbd94af0d6c68466c69bbb
+source-git-commit: 2f3badafddfdfe1dd21eb74be7189102aa0474bc
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '831'
 ht-degree: 2%
 
 ---
@@ -33,15 +33,14 @@ ht-degree: 2%
 
 將「關聯UI」與應用程式整合之前，請確定您已：
 
-- AEM Forms Cloud Service發佈執行個體
-- 在AEM中建立和發佈的互動式通訊
+- 已建立和發佈互動式通訊
 - 已啟用快顯視窗支援的瀏覽器
-- 關聯使用者必須屬於&#x200B;**forms-associates**&#x200B;群組
-- 已設定驗證 — [SAML 2.0](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)
+- 關聯[使用者必須屬於Forms-associates群組](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
+- 已設定驗證 — [SAML 2.0](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)
 
 >[!NOTE]
 >
-> 對於Associate UI，[SAML 2.0驗證](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)文章中所述的標準設定之外，還需要其他SAML設定。 如需詳細資訊，請參閱[關聯UI的其他SAML設定](#additional-saml-configurations-for-associate-ui)區段。
+> 對於Associate UI，[SAML 2.0驗證](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)文章中所述的標準設定之外，還需要其他SAML設定。 如需詳細資訊，請參閱[關聯UI的其他SAML設定](#additional-saml-configurations-for-associate-ui)區段。
 
 ### 關聯UI的其他SAML設定
 
@@ -144,10 +143,10 @@ const data = {
 | 元件 | 必要 | 說明 |
 |-----------|----------|-------------|
 | `id` | 是 | 要載入的互動式通訊(IC)識別碼 |
-| `prefill` | 否 | 包含用於資料預填的服務設定。 |
-| `prefill.serviceName` | 否 | 為預先填寫資料而呼叫的表單資料模型服務的名稱 |
-| `prefill.serviceParams` | 否 | 傳遞至預填服務的機碼值組 |
-| `options` | 否 | PDF轉譯支援的其他屬性 — 地區設定、includeAttachments、embedFonts、makeAccessible |
+| `prefill` | 選用 | 包含用於資料預填的服務設定。 |
+| `prefill.serviceName` | 選用 | 為預先填寫資料而呼叫的表單資料模型服務的名稱 |
+| `prefill.serviceParams` | 選用 | 傳遞至預填服務的機碼值組 |
+| `options` | 選用 | PDF轉譯支援的其他屬性 — 地區設定、includeAttachments、embedFonts、makeAccessible |
 
 ### 步驟3：實作整合函式
 
@@ -409,7 +408,7 @@ launchAssociateUI('12345', 'FdmTestData',
 {
   "id": "12345",
   "prefill": {
-    "serviceName": "FdmTestData",
+    "serviceName": "IC_FDM",
     "serviceParams": {
       "customerId": "101",
       "accountNumber": "ACC-98765"
@@ -425,11 +424,12 @@ launchAssociateUI('12345', 'FdmTestData',
 
 ```json
 {
-  "id": "12345ß",
+  "id": "12345",
   "prefill": {
-    "serviceName": "FdmTestData",
-    "serviceParams": { 
-      "policyNumber": "POL-123" 
+    "serviceName": "IC_FDM",
+    "serviceParams": {
+      "customerId": "101",
+      "accountNumber": "ACC-98765"
     }
   },
   "options": { 
@@ -481,16 +481,16 @@ launchAssociateUI('12345', 'FdmTestData',
 - 用於生產：指定應用程式的確切來源URL
 - 確認發佈執行個體CORS設定允許您的應用程式網域
 
-## 最佳做法
+<!--## Best Practices
 
-實作關聯UI整合時，請遵循下列最佳作法：
+When implementing the Associate UI integration, follow these best practices:
 
-1. **驗證**：傳送前，請務必驗證IC ID和JSON裝載
-2. **錯誤處理**：為`window.open()`個失敗實作適當的錯誤處理
-3. **使用者體驗**：在關聯UI初始化時顯示載入的指標
-4. **記憶體管理**：在初始化之後移除事件接聽程式，以防止記憶體流失
-5. **測試**：測試已啟用快顯封鎖程式的整合，以確保順利處理
-6. **使用者許可權**：驗證使用者是否擁有表單關聯群組的適當存取權
+1. **Validation**: Always validate the IC ID and JSON payload before sending
+2. **Error Handling**: Implement proper error handling for `window.open()` failures
+3. **User Experience**: Display a loading indicator while the Associate UI initializes
+4. **Memory Management**: Remove event listeners after initialization to prevent memory leaks
+5. **Testing**: Test the integration with popup blockers enabled to ensure graceful handling
+6. **User Permissions**: Verify users have appropriate access to the forms-associates group-->
 
 ## 另請參閱
 
