@@ -3,7 +3,7 @@ title: 屬性型存取控制
 description: 瞭解如何啟用屬性型存取控制來定義中繼資料型規則，以定義Content Hub中可用資產的存取層級
 role: Admin
 exl-id: 05f54b05-40b8-4a6c-af8f-5c3f7a2089d4
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
 workflow-type: tm+mt
 source-wordcount: '944'
 ht-degree: 5%
@@ -27,6 +27,8 @@ ht-degree: 5%
 * 讓管理員能夠上傳資產並回溯性判定權限結構
 
 * 減少重複的數量，提高資產完整性。當相同的資產與不同的群組共用時，資料夾型權限需要進行重複。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3475413/?learn=on&enablevpops){transcript=true}
 
 ## 如何啟用以屬性為基礎的存取控制？ {#enable-attribute-based-access-control}
 

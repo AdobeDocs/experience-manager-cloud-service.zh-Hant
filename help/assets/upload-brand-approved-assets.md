@@ -3,7 +3,7 @@ title: 將您的品牌核准資產上傳至 [!DNL Content Hub]
 description: 瞭解如何將您的品牌核准資產上傳至Content Hub
 role: User
 exl-id: f1be7cfc-1803-4c17-bb58-947104aa883c
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
 workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 17%
@@ -18,6 +18,8 @@ ht-degree: 17%
 >abstract="將核准的資產新增至 Content Hub，可以從本機檔案系統或從 OneDrive 或 Dropbox 資料來源匯入資產。無論資料夾結構為何，所有資產將顯示在 Content Hub 的頂層，以增強搜尋功能。"
 
 [有權新增資產的Content Hub使用者](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets)可以從本機檔案系統新增資產到Content Hub，或是從OneDrive或Dropbox資料來源匯入資產。 不論本機檔案系統或OneDrive和Dropbox資料來源提供的檔案夾結構為何，所有資產都會顯示在Content Hub的頂層，以增強搜尋功能。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3432980/?learn=on){transcript=true}
 
 在Assets as a Cloud Service中標示為`Approved`的資產會自動在Content Hub中使用。 如需更多資訊，請參閱[為 Content Hub 核准資產](/help/assets/approve-assets-content-hub.md)。
 

@@ -3,7 +3,7 @@ title: 在Content Hub中管理集合
 description: 瞭解如何在Content Hub中管理集合
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: 91d8df7e002c899c3c4cfda0f10bb42af4423ca6
+source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
 workflow-type: tm+mt
 source-wordcount: '1295'
 ht-degree: 2%
@@ -29,6 +29,8 @@ ht-degree: 2%
 * **我的最愛**：將集合標示為我的最愛。
 
 它可協助使用者輕鬆存取和管理[!DNL Content Hub]中可用的各種資產。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3435687/?learn=on){transcript=true}
 
 ## 先決條件 {#prerequisites}
 
@@ -154,7 +156,7 @@ Content Hub集合提供全方位的控管工具，包括可自訂的共用許可
 * 集合的擁有者
 * 具有編輯許可權的非管理員使用者
 
-若要從集合中移除資產，請按一下需要移除資產的集合、選取資產，然後按一下[從集合中移除]。**&#x200B;**
+若要從集合中移除資產，請按一下需要移除資產的集合、選取資產，然後按一下[從集合中移除]。****
 
 ![移除集合](assets/remove-collection-new.jpg)
 
