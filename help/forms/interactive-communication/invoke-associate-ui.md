@@ -6,9 +6,9 @@ feature: Interactive Communication
 role: User, Developer, Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 2f3badafddfdfe1dd21eb74be7189102aa0474bc
+source-git-commit: bfee883205f81012fea75cbd7dc5fddd7169fdbb
 workflow-type: tm+mt
-source-wordcount: '831'
+source-wordcount: '905'
 ht-degree: 2%
 
 ---
@@ -35,12 +35,13 @@ ht-degree: 2%
 
 - 已建立和發佈互動式通訊
 - 已啟用快顯視窗支援的瀏覽器
-- 關聯[使用者必須屬於Forms-associates群組](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
-- 已設定驗證 — [SAML 2.0](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)
+- 關聯[使用者必須屬於Forms-associates群組](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
+- 使用AEM[支援的任何](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/authentication)驗證機制（例如SAML 2.0、OAuth或自訂驗證處理常式）所設定的驗證
 
 >[!NOTE]
 >
-> 對於Associate UI，[SAML 2.0驗證](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)文章中所述的標準設定之外，還需要其他SAML設定。 如需詳細資訊，請參閱[關聯UI的其他SAML設定](#additional-saml-configurations-for-associate-ui)區段。
+>- 本文示範使用SAML 2.0搭配使用[Microsoft Entra ID (Azure AD)做為身分提供者](https://learn.microsoft.com/en-us/power-pages/security/authentication/openid-settings)的驗證設定。
+>- 對於Associate UI，[SAML 2.0驗證](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)文章中所述的標準設定之外，還需要其他SAML設定。 如需詳細資訊，請參閱[關聯UI的其他SAML設定](#additional-saml-configurations-for-associate-ui)區段。
 
 ### 關聯UI的其他SAML設定
 
@@ -54,7 +55,7 @@ ht-degree: 2%
   {
     "path": ["/libs/fd/associate"],
     "serviceProviderEntityId": "https://publish-p{program-id}-e{env-id}.adobeaemcloud.com",
-    "assertionConsumerServiceURL": "https://publish-p{program-id}-e{env-id}.adobeaemcloud.com/libs/fd/associate/saml_login",
+    "assertionConsumerServiceURL": "https://publish-p{program-id}-e{env-id}.adobeaemcloud.com/libs/fd/associate/saml_login"
     "idpUrl": "https://login.microsoftonline.com/{azure-tenant-id}/saml2",
     "idpCertAlias": "{your-certificate-alias}",
     "idpIdentifier": "https://sts.windows.net/{azure-tenant-id}/",
@@ -122,6 +123,8 @@ const AEM_URL = 'https://publish-p{program-id}-e{env-id}.adobeaemcloud.com/libs/
 ```
 
 將`{program-id}`和`{env-id}`取代為您的實際環境值。
+
+基於安全理由，互動式通訊ID、預填服務和服務引數等引數不會透過URL傳遞。 相反地，這些引數是使用JavaScript函式安全地傳遞，該函式透過瀏覽器的postMessage API與關聯UI通訊。
 
 ### 步驟2：準備資料裝載
 
@@ -204,13 +207,13 @@ function launchAssociateUI(icId, prefillService, prefillParams, options) {
 launchAssociateUI('12345', '', {}, {});
 
 // With prefill service
-launchAssociateUI('12345', 'FdmTestData', 
+launchAssociateUI('12345', 'IC_FDM', 
   { customerId: '101'}, {});
 
 // With all parameters
-launchAssociateUI('12345', 'FdmTestData', 
-  { policyNumber: 'POL-123' }, 
-  { locale: 'en', acrobatVersion: 'Acrobat_11' });
+launchAssociateUI('12345', 'IC_FDM', 
+  { customerId: "101" }, 
+  { locale: 'en', includeAttachments: "true" });
 ```
 
 ## 使用範例HTML頁面測試整合
