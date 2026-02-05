@@ -3,10 +3,10 @@ title: 通用編輯器預覽發行說明
 description: 這是通用編輯器預覽版本的發行說明。
 feature: Release Information
 role: Admin
-source-git-commit: 722ab0a32947ff3386d4bd6d2d78a8dc457aa06c
+source-git-commit: b03ad4a29c55e6789b82d2da76708c6e31613c5e
 workflow-type: tm+mt
-source-wordcount: '132'
-ht-degree: 63%
+source-wordcount: '170'
+ht-degree: 48%
 
 ---
 
@@ -27,8 +27,10 @@ ht-degree: 63%
 
 ## 即將推出的新功能 {#what-is-new}
 
-* 待定
+* 現在支援動態媒體連結。
 
 ## 即將推出的改善功能 {#other-improvements}
 
-* 待定
+* 已修正視訊URL不正確的問題。
+* 以相同名稱建立多個元件時，不再傳回409錯誤。
+* Headless畫布現在持續儲存對容器中欄位的後續更新。
