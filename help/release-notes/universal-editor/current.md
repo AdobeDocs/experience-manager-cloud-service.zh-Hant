@@ -1,20 +1,20 @@
 ---
-title: 通用編輯器 2026.01.29 發行說明
-description: 此為通用編輯器 2026.01.29 版本的發行說明。
+title: 通用編輯器 2026.02.05 發行說明
+description: 此為通用編輯器 2026.02.05 版本的發行說明。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: bdbe72b0afc19d0c28c56a7e5b2595c39711ca9c
+source-git-commit: d832d202eaf7f74293e2d15cc470b0226e883e13
 workflow-type: tm+mt
-source-wordcount: '198'
-ht-degree: 43%
+source-wordcount: '157'
+ht-degree: 54%
 
 ---
 
 
-# 通用編輯器 2026.01.29 發行說明 {#release-notes}
+# 通用編輯器 2026.02.05 發行說明 {#release-notes}
 
-此為通用編輯器 2026 年 1 月 29 日版本的發行說明。
+此為通用編輯器 2026 年 2 月 5 日版本的發行說明。
 
 >[!TIP]
 >
@@ -26,12 +26,8 @@ ht-degree: 43%
 
 ## 新增功能 {#what-is-new}
 
-* 移除元件方法已公開給`editorActions`。
-* 複製元件方法已公開給`editorActions`。
-* 移動元件方法已公開給`editorActions`。
-* 新增元件方法已公開給`editorActions`。
-* 定義已公開[擴充性。](/help/implementing/universal-editor/extending.md)
-* Document Authoring API 2.0版已發行。
+* 移動動作現在可在[內容功能表中使用。](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu)
+* RTE現在支援[貼上成文字。](/help/implementing/universal-editor/configure-rte.md#paste-as-text)
 
 ## 早期採用功能 {#early-adopter}
 
@@ -41,6 +37,4 @@ ht-degree: 43%
 
 ## 其他改善功能 {#other-improvements}
 
-* `content`擴充性已重新命名為`details`以遵循API結構描述。
-* 內容功能表行為已改善。
-* 修正按一下可編輯專案的徽章時，讓內容功能表正確開啟的錯誤。
+* 使用[`xwalk`外掛程式時，AEM 6.5已啟用發佈至預覽功能。](/help/implementing/universal-editor/component-definition.md#plugins)

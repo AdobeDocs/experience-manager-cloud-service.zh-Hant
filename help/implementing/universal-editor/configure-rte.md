@@ -4,9 +4,9 @@ description: 瞭解如何在通用編輯器中設定RTF編輯器(RTE)。
 feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
-source-git-commit: af63b3ff705954fe2145303ea0dc80720ad9e552
+source-git-commit: e1773cbc2293cd8afe29c3624b29d1e011ea7e10
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '806'
 ht-degree: 1%
 
 ---
@@ -220,6 +220,28 @@ RTE組態包含兩個部分：
 >[!NOTE]
 >
 >透過Tab/Shift+Tab鍵的清單巢狀功能與一般縮排設定無關。
+
+### 以文字格式貼上 {#paste-as-text}
+
+`paste_text`編輯器動作會啟用標準的純文字貼上工作流程。
+
+* **預設捷徑：** Mod-Shift-V (在macOS上為Cmd+Shift+V，在Windows/Linux上為Ctrl+Shift+V)
+* **行為：**&#x200B;從文字/純文字貼上（忽略來源格式）
+   * 在清單中，新行會建立新的清單專案。
+
+```json
+{
+  "toolbar": {
+    "editor": ["removeformat", "paste_text"]
+  },
+  "actions": {
+    "paste_text": {
+      "shortcut": "Mod-Shift-v",
+      "label": "Paste as Text"
+    }
+  }
+}
+```
 
 ### 其他動作 {#other}
 

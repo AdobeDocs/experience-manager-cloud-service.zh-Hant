@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 42c82384a0683ca2baca522dc9b2d5153ce01b69
+source-git-commit: cca471c5511e7df57d2156d39649194f7a18a79c
 workflow-type: tm+mt
-source-wordcount: '1871'
+source-wordcount: '1874'
 ht-degree: 19%
 
 ---
@@ -78,7 +78,7 @@ Experience Platform頂端導覽列一律會顯示在畫面頂端。 這是一個
 
 ![Experience Cloud 標頭](assets/experience-cloud-header.png)
 
-如需Experience Platform頂端導覽列的詳細資訊，請參閱[Adobe Experience Platform UI指南](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
+如需Experience Platform頂端導覽列的詳細資訊，請參閱[Adobe Experience Platform UI指南](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
 
 #### 帳戶 {#user-properties}
 
@@ -86,7 +86,7 @@ Experience Platform頂端導覽列一律會顯示在畫面頂端。 這是一個
 
 ![環境切換器](assets/environment-switcher.png)
 
-對於Universal Editor，在&#x200B;**Product Settings**&#x200B;標題下，有一個選項可在目前的Universal Editor生產版本和即將推出的預覽版本之間切換。
+對於通用編輯器，在標題&#x200B;**產品設定**&#x200B;下，使用&#x200B;**切換至預覽環境**&#x200B;選項可在通用編輯器的目前生產版本與即將推出的[預覽版本之間切換。](/help/release-notes/universal-editor/preview.md)
 
 ### 通用編輯器工具列 {#universal-editor-toolbar}
 
