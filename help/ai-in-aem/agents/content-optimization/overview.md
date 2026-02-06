@@ -3,13 +3,13 @@ title: 內容最佳化代理程式
 description: 瞭解如何使用內容最佳化代理程式，透過套用自然語言指示建立通道就緒的變數，轉變使用者如何調整及調整資產。
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 3f44e74488fc73c406fefb6decc41782859d029b
+exl-id: 896fc25b-7f60-47b8-9264-2ef6b85d954c
+source-git-commit: 36cc0cd44a77554c58cec13d6478271d5ee4165c
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '914'
 ht-degree: 0%
 
 ---
-
 
 # 內容最佳化代理程式 {#content-optimization-agent}
 
@@ -157,8 +157,6 @@ ht-degree: 0%
 
 
 ## 限制 {#limitations-content-optimization}
-
-* 內容最佳化代理程式目前不支援PNG資產。
 
 * 不支援設定背景顏色。
 
