@@ -1,33 +1,24 @@
 ---
-title: 在發佈執行個體上叫用關聯UI
-description: 瞭解如何在發佈執行個體上整合及叫用AEM Forms關聯UI，讓面對客戶的專業人員即時產生個人化的互動式通訊。
+title: 為執行階段互動式通訊整合關聯UI
+description: 瞭解如何將AEM Forms關聯UI與您的應用程式整合，好讓面對客戶的專業人員在Publish執行個體上即時產生個人化的互動式通訊。
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 hide: true
 hidefromtoc: true
-source-git-commit: bfee883205f81012fea75cbd7dc5fddd7169fdbb
+source-git-commit: b76f6dfe2462cec187d549234e9050f8ca9a8cdf
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '1078'
 ht-degree: 2%
 
 ---
 
 
-# 產生與關聯UI的個人化通訊
+# 在您的應用程式中整合關聯UI
 
 <span>互動式通訊功能可在率先採用者程式下使用。 從您的工作地址傳送電子郵件給`aem-forms-ea@adobe.com`以要求存取權。</span>
 
-「關聯」UI可直接在「發佈」例項上叫用，讓面對客戶的專業人員（例如現場助理和服務代理）在客戶互動期間即時產生個人化通訊。
-
-下表描述各種真實情況，其中關聯UI可用於傳送個人化訊息給客戶：
-
-| 產業 | 使用案例 |
-|----------|----------|
-| **金融服務** | 在客戶會議期間產生即時貸款確認函、帳戶對帳單和風險設定檔摘要 |
-| **保險** | 在服務櫃檯製作立即的保險證明卡和索賠處理摘要 |
-| **醫療保健** | 使用已計算的Copay金額與排程建立患者治療計畫彙總 |
-| **政府** | 現場產生警方驗證報告、公民服務收據和案件更新摘要 |
+本文說明如何將「關聯UI」與您的應用程式整合，好讓現場助理和服務代理等客戶專用專業人員，即時在Publish執行個體上產生個人化的互動式通訊。
 
 ## 先決條件
 
@@ -35,19 +26,21 @@ ht-degree: 2%
 
 - 已建立和發佈互動式通訊
 - 已啟用快顯視窗支援的瀏覽器
-- 關聯[使用者必須屬於Forms-associates群組](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
-- 使用AEM[支援的任何](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/authentication/authentication)驗證機制（例如SAML 2.0、OAuth或自訂驗證處理常式）所設定的驗證
+- 關聯[使用者必須屬於Forms-associates群組](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
+- 使用AEM[支援的任何](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/authentication)驗證機制（例如SAML 2.0、OAuth或自訂驗證處理常式）所設定的驗證
 
 >[!NOTE]
 >
 >- 本文示範使用SAML 2.0搭配使用[Microsoft Entra ID (Azure AD)做為身分提供者](https://learn.microsoft.com/en-us/power-pages/security/authentication/openid-settings)的驗證設定。
->- 對於Associate UI，[SAML 2.0驗證](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)文章中所述的標準設定之外，還需要其他SAML設定。 如需詳細資訊，請參閱[關聯UI的其他SAML設定](#additional-saml-configurations-for-associate-ui)區段。
+>- 對於Associate UI，[SAML 2.0驗證](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)文章中所述的標準設定之外，還需要其他SAML設定。 如需詳細資訊，請參閱[關聯UI的其他SAML設定](#additional-saml-configurations-for-associate-ui)區段。
 
 ### 關聯UI的其他SAML設定
 
 為關聯UI設定SAML 2.0驗證時，您必須在OSGi設定檔案中套用以下特定設定。
 
 #### SAML驗證處理常式
+
+SAML驗證處理常式是OSGi工廠設定，可針對不同的資源樹狀結構啟用多個SAML設定。 這可啟用多網站AEM部署，並讓您新增關聯UI資源至您現有的SAML設定。
 
 在`com.adobe.granite.auth.saml.SamlAuthenticationHandler~saml.cfg.json`中建立檔案`ui.config/src/main/content/jcr_root/apps/<project-name>/osgiconfig/config.publish`：
 
@@ -85,6 +78,8 @@ ht-degree: 2%
 
 #### Sling驗證器
 
+Sling Authenticator會強制進行驗證以存取發佈上的關聯UI資源。
+
 更新`org.apache.sling.engine.impl.auth.SlingAuthenticator~saml.cfg.json`中的檔案`ui.config/src/main/content/jcr_root/apps/<project-name>/osgiconfig/config.publish`：
 
 ```json
@@ -95,6 +90,8 @@ ht-degree: 2%
 ```
 
 #### Dispatcher篩選器
+
+新增下列規則以確保互動式通訊API和關聯UI在發佈執行個體上正確運作。
 
 如果尚未出現，請將下列規則新增至您的`dispatcher/src/conf.dispatcher.d/filters/filters.any`檔案：
 
@@ -112,23 +109,248 @@ ht-degree: 2%
 
 ## 在發佈執行個體上叫用關聯UI
 
-若要從您的應用程式叫用關聯UI，請設定發佈執行個體URL、準備資料裝載，並使用整合函式在新的瀏覽器視窗中啟動關聯UI。
+本節將逐步引導您從自己的應用程式啟動關聯UI。 請依照下列步驟快速入門 — 從立即可用的範例HTML頁面開始，然後為您的環境設定它。
 
-### 步驟1：設定發佈執行個體URL
+### 步驟1：從範例HTML頁面開始
 
-關聯UI可透過您AEM Forms Cloud Service發佈執行個體上的特定端點進行存取：
+若要快速測試並瞭解關聯UI整合的運作方式，請使用以下範例HTML頁面。 將此程式碼複製到HTML檔案中，並在瀏覽器中開啟。
+
+此範例提供簡單的表單介面，您可以在其中輸入互動式通訊詳細資料，並按一下即可啟動關聯UI。
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Associate UI Integration</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+    .form-group {
+      margin: 20px 0;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    textarea {
+      height: 80px;
+      font-family: monospace;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 5px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    .btn-primary {
+      background: #007bff;
+      color: white;
+      border: none;
+    }
+    .btn-primary:hover {
+      background: #0056b3;
+    }
+    .error {
+      color: red;
+      font-size: 12px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Launch Associate UI</h1>
+
+  <form id="form">
+    <div class="form-group">
+      <label>IC ID *</label>
+      <input type="text" id="icId" placeholder="Enter Interactive Communication ID" required>
+    </div>
+
+    <div class="form-group">
+      <label>Prefill Service</label>
+      <input type="text" id="serviceName" placeholder="e.g., CustomerDataService">
+    </div>
+
+    <div class="form-group">
+      <label>Service Parameters (JSON)</label>
+      <textarea id="serviceParams" placeholder='{"customerId": "12345"}'>{}</textarea>
+      <span id="paramsError" class="error">Invalid JSON format</span>
+    </div>
+
+    <div class="form-group">
+      <label>Options (JSON)</label>
+      <textarea id="options" placeholder='{"mode": "edit", "locale": "en_US"}'>{}</textarea>
+      <span id="optionsError" class="error">Invalid JSON format</span>
+    </div>
+
+    <button type="button" onclick="reset()">Reset</button>
+    <button type="button" class="btn-primary" onclick="launch()">Launch Associate UI</button>
+  </form>
+
+  <script>
+    // Replace with your AEM Publish instance URL
+    const AEM_URL = 'https://publish-p{program-id}-e{env-id}.adobeaemcloud.com/libs/fd/associate/ui.html';
+
+    function validateJSON(str, errorId) {
+      const err = document.getElementById(errorId);
+      try {
+        const obj = JSON.parse(str || '{}');
+        err.style.display = 'none';
+        return obj;
+      } catch (e) {
+        err.style.display = 'block';
+        return null;
+      }
+    }
+
+    function launch() {
+      const icId = document.getElementById('icId').value.trim();
+      if (!icId) {
+        alert('IC ID is required');
+        return;
+      }
+
+      const params = validateJSON(document.getElementById('serviceParams').value, 'paramsError');
+      const opts = validateJSON(document.getElementById('options').value, 'optionsError');
+
+      if (!params || !opts) {
+        alert('Please fix JSON errors before launching');
+        return;
+      }
+
+      const data = {
+        id: icId,
+        prefill: {
+          serviceName: document.getElementById('serviceName').value.trim(),
+          serviceParams: params
+        },
+        options: opts
+      };
+
+      const win = window.open(AEM_URL, '_blank');
+      if (!win) {
+        alert('Pop-up blocked. Please enable pop-ups for this site.');
+        return;
+      }
+
+      const handler = (e) => {
+        if (e.data && e.data.type === 'READY' && e.data.source === 'APP') {
+          win.postMessage({ type: 'INIT', source: 'PORTAL', data }, '*');
+          window.removeEventListener('message', handler);
+        }
+      };
+
+      window.addEventListener('message', handler);
+
+      // Fallback timeout in case READY message is missed
+      setTimeout(() => {
+        if (win && !win.closed) {
+          win.postMessage({ type: 'INIT', source: 'PORTAL', data }, '*');
+          window.removeEventListener('message', handler);
+        }
+      }, 1000);
+    }
+
+    function reset() {
+      document.getElementById('form').reset();
+      document.getElementById('serviceParams').value = '{}';
+      document.getElementById('options').value = '{}';
+      document.getElementById('paramsError').style.display = 'none';
+      document.getElementById('optionsError').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
+```
+
+### 步驟2：設定您的發佈執行個體URL
+
+您必須先將範例指向AEM Forms Cloud Service Publish執行個體，才能啟動「關聯UI」。
+
+在上述HTML範例中，於`<script>`區段中找出下列行：
 
 ```javascript
 const AEM_URL = 'https://publish-p{program-id}-e{env-id}.adobeaemcloud.com/libs/fd/associate/ui.html';
 ```
 
-將`{program-id}`和`{env-id}`取代為您的實際環境值。
+將預留位置值取代為您的實際環境詳細資料：
+- `{program-id}`：您的AEM Cloud Service方案識別碼
+- `{env-id}`：您的環境識別碼
 
-基於安全理由，互動式通訊ID、預填服務和服務引數等引數不會透過URL傳遞。 相反地，這些引數是使用JavaScript函式安全地傳遞，該函式透過瀏覽器的postMessage API與關聯UI通訊。
+例如，如果您的方案識別碼為`12345`，而環境識別碼為`67890`，則URL會變成：
 
-### 步驟2：準備資料裝載
+```javascript
+const AEM_URL = 'https://publish-p12345`-e67890.adobeaemcloud.com/libs/fd/associate/ui.html';
+```
 
-以下列格式建構您的資料裝載：
+>[!NOTE]
+>
+> 基於安全理由，互動式通訊ID、預填服務和服務引數等引數不會透過URL傳遞。 相反地，這些引數是使用JavaScript的`postMessage` API安全地傳遞。
+
+### 步驟3：瞭解JavaScript整合功能
+
+範例HTML使用以下JavaScript函式來啟動關聯UI。 此函式會驗證IC ID、建構資料裝載、在新的瀏覽器視窗中開啟關聯UI，並使用瀏覽器的`postMessage` API傳送資料。
+
+```javascript
+function launchAssociateUI(icId, prefillService, prefillParams, options) {
+  if (!icId) {
+    console.error('IC ID required');
+    return;
+  }
+
+  const data = {
+    id: icId,
+    prefill: {
+      serviceName: prefillService || '',
+      serviceParams: prefillParams || {}
+    },
+    options: options || {}
+  };
+
+  const AEM_URL = 'https://your-aem.adobeaemcloud.com/libs/fd/associate/ui.html';
+  const win = window.open(AEM_URL, '_blank');
+
+  if (!win) {
+    alert('Please enable pop-ups for this site');
+    return;
+  }
+
+  const readyHandler = (event) => {
+    if (event.data && event.data.type === 'READY' && event.data.source === 'APP') {
+      win.postMessage({ type: 'INIT', source: 'PORTAL', data: data }, '*');
+      window.removeEventListener('message', readyHandler);
+    }
+  };
+
+  window.addEventListener('message', readyHandler);
+
+  // Fallback timeout in case READY message is missed
+  setTimeout(() => {
+    if (win && !win.closed) {
+      win.postMessage({ type: 'INIT', source: 'PORTAL', data: data }, '*');
+      window.removeEventListener('message', readyHandler);
+    }
+  }, 1000);
+}
+```
+
+此函式接受四個引數：IC ID （必要）、預填服務名稱、預填服務引數和其他選項。 這些引數會結構化至資料裝載，如下所述。
+
+### 步驟4：瞭解資料裝載結構
+
+**承載格式：**
 
 ```javascript
 const data = {
@@ -146,249 +368,14 @@ const data = {
 | 元件 | 必要 | 說明 |
 |-----------|----------|-------------|
 | `id` | 是 | 要載入的互動式通訊(IC)識別碼 |
-| `prefill` | 選用 | 包含用於資料預填的服務設定。 |
+| `prefill` | 選用 | 包含用於資料預填的服務設定 |
 | `prefill.serviceName` | 選用 | 為預先填寫資料而呼叫的表單資料模型服務的名稱 |
 | `prefill.serviceParams` | 選用 | 傳遞至預填服務的機碼值組 |
-| `options` | 選用 | PDF轉譯支援的其他屬性 — 地區設定、includeAttachments、embedFonts、makeAccessible |
+| `options` | 選用 | PDF轉譯支援的其他屬性 — 地區設定、包括Attachments、embedFonts、makeAccessible |
 
-### 步驟3：實作整合函式
+#### 資料裝載範例
 
-建立JavaScript函式以啟動關聯UI並處理訊息通訊：
-
-```javascript
-function launchAssociateUI(icId, prefillService, prefillParams, options) {
-  if (!icId) {
-    console.error('IC ID required');
-    return;
-  }
-   
-  const data = {
-    id: icId,
-    prefill: {
-      serviceName: prefillService || '',
-      serviceParams: prefillParams || {}
-    },
-    options: options || {}
-  };
-   
-  const AEM_URL = 'https://your-aem.adobeaemcloud.com/libs/fd/associate/ui.html';
-  const win = window.open(AEM_URL, '_blank');
-   
-  if (!win) {
-    alert('Please enable pop-ups for this site');
-    return;
-  }
-   
-  const readyHandler = (event) => {
-    if (event.data && event.data.type === 'READY' && event.data.source === 'APP') {
-      win.postMessage({ type: 'INIT', source: 'PORTAL', data: data }, '*');
-      window.removeEventListener('message', readyHandler);
-    }
-  };
-   
-  window.addEventListener('message', readyHandler);
-   
-  // Fallback timeout in case READY message is missed
-  setTimeout(() => {
-    if (win && !win.closed) {
-      win.postMessage({ type: 'INIT', source: 'PORTAL', data: data }, '*');
-      window.removeEventListener('message', readyHandler);
-    }
-  }, 1000);
-}
-```
-
-### 步驟4：叫用函式
-
-使用適當的引數呼叫函式：
-
-```javascript
-// Basic invocation with IC ID only
-launchAssociateUI('12345', '', {}, {});
-
-// With prefill service
-launchAssociateUI('12345', 'IC_FDM', 
-  { customerId: '101'}, {});
-
-// With all parameters
-launchAssociateUI('12345', 'IC_FDM', 
-  { customerId: "101" }, 
-  { locale: 'en', includeAttachments: "true" });
-```
-
-## 使用範例HTML頁面測試整合
-
-若要觀察關聯UI如何出現在前端並測試您的整合，以下是一個簡單的HTML範例。 此範例頁面可讓您輸入IC ID、設定預填服務引數、設定PDF選項，以及在您的發佈執行個體上啟動關聯UI。
-
-```html
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Associate UI Integration</title>
-  <style>
-    body { 
-      font-family: sans-serif; 
-      max-width: 600px; 
-      margin: 50px auto; 
-      padding: 20px; 
-    }
-    .form-group { 
-      margin: 20px 0; 
-    }
-    label { 
-      display: block; 
-      margin-bottom: 5px; 
-      font-weight: bold; 
-    }
-    input, textarea { 
-      width: 100%; 
-      padding: 8px; 
-      border: 1px solid #ccc; 
-      border-radius: 4px; 
-      box-sizing: border-box;
-    }
-    textarea { 
-      height: 80px; 
-      font-family: monospace; 
-    }
-    button { 
-      padding: 10px 20px; 
-      margin: 5px; 
-      cursor: pointer; 
-      border-radius: 4px;
-    }
-    .btn-primary { 
-      background: #007bff; 
-      color: white; 
-      border: none; 
-    }
-    .btn-primary:hover {
-      background: #0056b3;
-    }
-    .error { 
-      color: red; 
-      font-size: 12px; 
-      display: none; 
-    }
-  </style>
-</head>
-<body>
-  <h1>Launch Associate UI</h1>
-  
-  <form id="form">
-    <div class="form-group">
-      <label>IC ID *</label>
-      <input type="text" id="icId" placeholder="Enter Interactive Communication ID" required>
-    </div>
-    
-    <div class="form-group">
-      <label>Prefill Service</label>
-      <input type="text" id="serviceName" placeholder="e.g., CustomerDataService">
-    </div>
-    
-    <div class="form-group">
-      <label>Service Parameters (JSON)</label>
-      <textarea id="serviceParams" placeholder='{"customerId": "12345"}'>{}</textarea>
-      <span id="paramsError" class="error">Invalid JSON format</span>
-    </div>
-    
-    <div class="form-group">
-      <label>Options (JSON)</label>
-      <textarea id="options" placeholder='{"mode": "edit", "locale": "en_US"}'>{}</textarea>
-      <span id="optionsError" class="error">Invalid JSON format</span>
-    </div>
-    
-    <button type="button" onclick="reset()">Reset</button>
-    <button type="button" class="btn-primary" onclick="launch()">Launch Associate UI</button>
-  </form>
-
-  <script>
-    // Replace with your AEM Publish instance URL
-    const AEM_URL = 'https://publish-p{program-id}-e{env-id}.adobeaemcloud.com/libs/fd/associate/ui.html';
-    
-    function validateJSON(str, errorId) {
-      const err = document.getElementById(errorId);
-      try {
-        const obj = JSON.parse(str || '{}');
-        err.style.display = 'none';
-        return obj;
-      } catch (e) {
-        err.style.display = 'block';
-        return null;
-      }
-    }
-    
-    function launch() {
-      const icId = document.getElementById('icId').value.trim();
-      if (!icId) { 
-        alert('IC ID is required'); 
-        return; 
-      }
-      
-      const params = validateJSON(document.getElementById('serviceParams').value, 'paramsError');
-      const opts = validateJSON(document.getElementById('options').value, 'optionsError');
-      
-      if (!params || !opts) { 
-        alert('Please fix JSON errors before launching'); 
-        return; 
-      }
-      
-      const data = {
-        id: icId,
-        prefill: {
-          serviceName: document.getElementById('serviceName').value.trim(),
-          serviceParams: params
-        },
-        options: opts
-      };
-      
-      const win = window.open(AEM_URL, '_blank');
-      if (!win) { 
-        alert('Pop-up blocked. Please enable pop-ups for this site.'); 
-        return; 
-      }
-      
-      const handler = (e) => {
-        if (e.data && e.data.type === 'READY' && e.data.source === 'APP') {
-          win.postMessage({ type: 'INIT', source: 'PORTAL', data }, '*');
-          window.removeEventListener('message', handler);
-        }
-      };
-      
-      window.addEventListener('message', handler);
-      
-      // Fallback timeout in case READY message is missed
-      setTimeout(() => {
-        if (win && !win.closed) {
-          win.postMessage({ type: 'INIT', source: 'PORTAL', data }, '*');
-          window.removeEventListener('message', handler);
-        }
-      }, 1000);
-    }
-    
-    function reset() {
-      document.getElementById('form').reset();
-      document.getElementById('serviceParams').value = '{}';
-      document.getElementById('options').value = '{}';
-      document.getElementById('paramsError').style.display = 'none';
-      document.getElementById('optionsError').style.display = 'none';
-    }
-  </script>
-</body>
-</html>
-```
-
-### 範例的運作方式
-
-1. **IC ID欄位**：輸入互動式通訊識別碼（必要）
-2. **預填服務**：指定預填資料的表單資料模型服務名稱
-3. **服務引數**：輸入JSON物件以及要傳遞至預填服務的引數
-4. **選項**：輸入PDF的組態選項，例如locale、includeAttachments、embedFonts、makeAccessible
-5. **啟動按鈕**：在新視窗中開啟關聯UI，並傳送初始化資料
-
-## 資料裝載範例
-
-### 最小裝載（僅限IC）
+**最小承載（僅限IC ID）**
 
 當不需要預填資料時，請使用此選項：
 
@@ -403,7 +390,7 @@ launchAssociateUI('12345', 'IC_FDM',
 }
 ```
 
-### 使用預填資料
+**包含預填資料**
 
 使用此選項以動態方式將客戶資料填入IC：
 
@@ -421,7 +408,7 @@ launchAssociateUI('12345', 'IC_FDM',
 }
 ```
 
-### 使用選項設定
+**具有PDF演算選項**
 
 使用此專案來指定其他演算選項：
 
@@ -436,14 +423,36 @@ launchAssociateUI('12345', 'IC_FDM',
     }
   },
   "options": { 
-      locale: "en_US",
-      includeAttachments: "true",
-      webOptimized: "false",
-      embedFonts: "false",
-      makeAccessible: "false"
+      "locale": "en_US",
+      "includeAttachments": "true",
+      "webOptimized": "false",
+      "embedFonts": "false",
+      "makeAccessible": "false"
   }
 }
 ```
+
+### 步驟5：輸入IC ID並啟動關聯UI
+
+現在您已準備好使用範例HTML頁面啟動關聯UI：
+
+1. **輸入IC ID**：在&#x200B;**IC ID**&#x200B;欄位中，輸入已發佈互動式通訊的識別碼。 這是唯一的必填欄位。
+
+2. **設定預填服務** （選擇性）：如果您想要以動態資料預填互動通訊，請在&#x200B;**預填服務**&#x200B;欄位中輸入表單資料模型服務名稱。 例如，使用`FdmTestData`作為範例資料，或使用`IC-FDM`作為測試資料。
+
+3. **新增服務引數** （選擇性）：在&#x200B;**服務引數(JSON)**&#x200B;欄位中，輸入JSON物件以及預填服務所需的引數。 例如：
+
+   ```json
+   {"customerId": "101", "accountNumber": "ACC-98765"}
+   ```
+
+4. **設定PDF選項** （選用）：在&#x200B;**選項(JSON)**&#x200B;欄位中，設定地區設定、附件或協助工具設定等演算選項。
+
+5. **按一下[啟動關聯UI]**：按一下[啟動關聯UI]**按鈕。**&#x200B;隨即開啟新瀏覽器視窗，其中顯示與互動式通訊預先載入的關聯UI。
+
+>[!NOTE]
+>
+> 如果視窗未開啟，請檢查您的瀏覽器是否允許此網站的快顯視窗。
 
 ## 疑難排解
 
