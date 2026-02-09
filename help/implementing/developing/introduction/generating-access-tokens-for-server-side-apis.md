@@ -127,7 +127,7 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
    ![新增使用者](/help/implementing/developing/introduction/assets/s2s-addusers.png)
 
-1. 新增您建立的技術帳戶（在此案例中為`84b2c3a2-d60a-40dc-84cb-e16b786c1673@techacct.adobe.com`），然後按一下[儲存]。****
+1. 新增您建立的技術帳戶（在此案例中為`84b2c3a2-d60a-40dc-84cb-e16b786c1673@techacct.adobe.com`），然後按一下[儲存]。**&#x200B;**
 
    ![新增技術帳戶](/help/implementing/developing/introduction/assets/s2s-addtechaccount.png)
 
