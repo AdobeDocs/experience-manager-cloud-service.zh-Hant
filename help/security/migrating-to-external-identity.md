@@ -4,7 +4,7 @@ description: 在AEM as a Cloud Service中將本機使用者和群組移轉至具
 solution: Experience Manager Sites
 feature: Security
 role: Developer, Admin
-source-git-commit: bb4b60523f60b1285c5f2fd2e49f6cc8cff24324
+source-git-commit: 1f8bd9eea249e0b2242f3fbe1490b3d51052f546
 workflow-type: tm+mt
 source-wordcount: '2232'
 ht-degree: 1%
@@ -576,14 +576,14 @@ curl -X POST "http://localhost:4503/bin/migration/step3?groupPath=/home/groups/c
 
 ### 移轉前檢查清單 {#pre-migration-checklist}
 
-* [ ] **設定服務使用者**：建立並設定具有適當許可權的服務使用者（例如`group-provisioner`）
-* [ ] **驗證ExternalPrincipal設定**：確定服務使用者已設定為略過`rep:externalId`和`rep:externalPrincipalNames`上的保護
-* [ ] **測試服務使用者許可權**：驗證服務使用者是否可以在開發中設定外部識別屬性
-* [ ]識別建立使用者或群組的所有自訂程式碼
-* [ ]檢閱並更新自訂程式碼以使用外部身分模型
-* [ 在開發環境中測試]更新的程式碼
-* [ ]清查所有現有的本機使用者和群組以進行移轉
-* [ ]在較低環境中測試移轉程式
+* **設定服務使用者**：建立並設定具有適當許可權的服務使用者（例如`group-provisioner`）
+* **驗證ExternalPrincipal設定**：確定服務使用者已設定為略過`rep:externalId`和`rep:externalPrincipalNames`上的保護
+* **測試服務使用者許可權**：驗證服務使用者是否可以在開發中設定外部身分屬性
+* 識別建立使用者或群組的所有自訂程式碼
+* 檢閱並更新自訂程式碼以使用外部身分模型
+* 在開發環境中測試更新的程式碼
+* 清查所有現有的本機使用者和群組以進行移轉
+* 在較低的環境中測試移轉程式
 
 ### 執行步驟 {#execution-steps}
 
@@ -773,12 +773,12 @@ user.setProperty("rep:lastDynamicSync", valueFactory.createValue(future));
 
 將移轉servlet部署到生產環境之前：
 
-* [ ]在AEM Developer Console中建立IMS整合
-* [ ]設定Servlet以驗證技術帳戶ID
-* [ ]開發/中繼環境中的測試驗證流程
-* [ ]請考慮在CDN層級使用其他IP型限制
-* [ ]計畫在移轉完成後停用或移除移轉servlet
-* [ ]稽核並記錄所有移轉端點的存取權
+* 在AEM Developer Console中建立IMS整合
+* 設定servlet以驗證技術帳戶ID
+* 在開發/中繼環境中測試驗證流程
+* 考慮CDN層級的其他IP型限制
+* 規劃在移轉完成後停用或移除移轉servlet
+* 稽核並記錄移轉端點的所有存取權
 
 >[!IMPORTANT]
 >
@@ -787,6 +787,6 @@ user.setProperty("rep:lastDynamicSync", valueFactory.createValue(future));
 ## 其他資源 {#additional-resources}
 
 * [發佈層的使用者和群組同步](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
-* [SAML 2.0驗證處理常式](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/authentication/saml-2-0.html?lang=zh-Hant)
+* [SAML 2.0驗證處理常式](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/authentication/saml-2-0.html)
 * [外部識別提供者](https://jackrabbit.apache.org/oak/docs/security/authentication/externalloginmodule.html?lang=zh-Hant)
 * [動態群組成員資格](https://jackrabbit.apache.org/oak/docs/security/authentication/external/dynamic.html)
