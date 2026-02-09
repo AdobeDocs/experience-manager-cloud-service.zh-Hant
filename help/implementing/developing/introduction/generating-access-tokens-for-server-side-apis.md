@@ -4,9 +4,9 @@ description: 瞭解如何產生安全JWT權杖，以促進第三方伺服器與A
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 886c87b2408776e6ea877d835c81e574e5000acd
 workflow-type: tm+mt
-source-wordcount: '2112'
+source-wordcount: '2229'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=zh-Hant#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
+>In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
 
 ## 伺服器對伺服器流量 {#the-server-to-server-flow}
 
@@ -127,7 +127,7 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
    ![新增使用者](/help/implementing/developing/introduction/assets/s2s-addusers.png)
 
-1. 新增您建立的技術帳戶（在此案例中為`84b2c3a2-d60a-40dc-84cb-e16b786c1673@techacct.adobe.com`），然後按一下[儲存]。**&#x200B;**
+1. 新增您建立的技術帳戶（在此案例中為`84b2c3a2-d60a-40dc-84cb-e16b786c1673@techacct.adobe.com`），然後按一下[儲存]。****
 
    ![新增技術帳戶](/help/implementing/developing/introduction/assets/s2s-addtechaccount.png)
 
@@ -224,7 +224,6 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
 * 按下按鈕後，會產生一組包含新憑證的認證。 在AEM以外的伺服器上安裝新憑證，並確保如預期般連線，不會移除舊憑證。
 * 產生存取權杖時，請務必使用新憑證，而非舊憑證。
-* 選擇性地撤銷（然後刪除）先前的憑證，使其無法再用來向AEM as a Cloud Service進行驗證。
 
 ## 認證撤銷 {#credentials-revocation}
 
@@ -252,3 +251,15 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
    ![撤銷憑證確認](/help/implementing/developing/introduction/assets/s2s-revokecertificateconfirmation.png)
 
 1. 最後，刪除已洩漏的憑證。
+
+### 關於撤銷個別憑證的備註 {#note-on-recovacting-individual-certificates}
+
+對於JWT交握（用於擷取持有人權杖），只需要滿足以下要求：
+
+1. 您擁有私密金鑰
+1. Developer Console的個別私密金鑰底下有一或多個使用中的憑證
+1. 在擷取權杖（JWT交握）期間，IMS會檢查JWT簽章是否符合我們系統中記錄的任何已繫結且作用中（未過期）憑證，您可以在主控台中看到這些憑證。
+
+在PK下新增憑證可能會讓撤銷的憑證看起來仍然可用。 實際上，PK下的所有憑證都是同等的。 如果有一個處於活動狀態，則會將所有都視為處於活動狀態。
+
+如果您認為這是安全性問題，您應該建立個別的私密金鑰，並撤銷舊私密金鑰上的所有憑證。
