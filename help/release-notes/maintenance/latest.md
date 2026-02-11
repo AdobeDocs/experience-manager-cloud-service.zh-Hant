@@ -93,7 +93,7 @@ ht-degree: 22%
 
 >[!NOTE]
 >
-> 請注意AEM Guides中的重大變更： [已改善唯讀檔案的處理方式](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2026-releases/2601-release/whats-new-2026-01-0#improved-handling-for-read-only-files)。
+> 請注意AEM Guides中的重大變更： [已改善唯讀檔案的處理方式](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2026-releases/2601-release/whats-new-2026-01-0#improved-handling-for-read-only-files)。
 
 如需更多有關該版本中新增功能和增強功能以及已修復問題的資訊，請查看 [Experience Manager Guides 發行藍圖](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)。
 
