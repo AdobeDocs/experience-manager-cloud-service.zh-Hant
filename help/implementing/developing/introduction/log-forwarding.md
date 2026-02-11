@@ -4,9 +4,9 @@ description: 瞭解如何在AEM as a Cloud Service中將記錄轉送給記錄廠
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Developer
-source-git-commit: 3a46db9c98fe634bf2d4cffd74b54771de748515
+source-git-commit: 41605c0feb5b8cf651ecb2971a05fde12bcb86d8
 workflow-type: tm+mt
-source-wordcount: '2478'
+source-wordcount: '2482'
 ht-degree: 3%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 3%
       <td style="background-color: #ffb3b3;">未來</td>
     </tr>
     <tr>
-      <td>Azure Blob儲存體</td>
+      <td>Azure Blob儲存</td>
       <td>是</td>
       <td>是</td>
       <td>是</td>
@@ -279,7 +279,7 @@ IAM原則應該允許使用者使用`s3:putObject`。  例如：
 >[!NOTE]
 >已規劃在未來提供AWS S3的CDN記錄支援。 請傳送電子郵件給[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)以註冊感興趣的內容。
 
-### Azure Blob儲存體 {#azureblob}
+### Azure Blob儲存 {#azureblob}
 
 ```yaml
 kind: "LogForwarding"
@@ -297,8 +297,8 @@ data:
 SAS權杖應該用於驗證。 應從共用存取權杖頁面而非共用存取權杖頁面中建立，並應使用下列設定進行設定：
 
 * 允許的服務：必須選取Blob。
-* 允許的資源：必須選取物件。
-* 允許的許可權：必須選取「寫入」、「新增」、「建立」。
+* 允許的資源：必須選取物件和容器。
+* 允許的許可權：必須選取讀取、寫入、新增、清單、建立。
 * 有效的開始和到期日期/時間。
 
 以下是範例SAS權杖設定的熒幕擷圖：
@@ -332,7 +332,7 @@ aemcdn/
 
 每個檔案包含多個json記錄專案，每個專案位於一行中。 記錄專案格式在[AEM as a Cloud Service的記錄](/help/implementing/developing/introduction/logging.md)下描述，每個記錄專案也包含以下[記錄專案格式](#log-formats)區段中提及的其他屬性。
 
-#### Azure Blob儲存體AEM記錄檔 {#azureblob-aem}
+#### Azure Blob儲存AEM記錄 {#azureblob-aem}
 
 AEM記錄(包括Apache/Dispatcher)會顯示在具有以下命名慣例的資料夾下方：
 
