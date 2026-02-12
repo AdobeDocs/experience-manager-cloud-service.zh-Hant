@@ -5,9 +5,9 @@ products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
 exl-id: c23145c9-078d-4b03-a8f4-2d835cdd1592
-source-git-commit: 98465743f73f38e2a766657dda8c9ff18ecea856
+source-git-commit: f587a30da747ae3d53848ef5bb30c32a9b5d78e1
 workflow-type: tm+mt
-source-wordcount: '586'
+source-wordcount: '585'
 ht-degree: 11%
 
 ---
@@ -66,9 +66,9 @@ ht-degree: 11%
 
 1. 開啟AEM Forms as a Cloud Service執行個體。
 1. 移至&#x200B;**Forms > Forms &amp; Documents**，按一下&#x200B;**建立>互動式通訊**。
-1. 在建立表單中，從範本選擇器中&#x200B;**選取**&#x200B;已啟用的範本。
+1. 在建立表單中，從選擇器中&#x200B;**選取**&#x200B;已啟用的範本。
 1. 填寫其他詳細資訊，如標題、名稱、作者等。
-1. 按一下[建立]&#x200B;**來設計您與所選範本結構的通訊。**
+1. 按一下[建立]**來設計您與所選範本結構的通訊。**
 1. 它會開啟IC編輯器，您可以在其中開始設計通訊。
 +++
 
