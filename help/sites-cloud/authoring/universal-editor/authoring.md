@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 722ab0a32947ff3386d4bd6d2d78a8dc457aa06c
+source-git-commit: 689daf210bc0d867a0cafad32abac4aa178927ff
 workflow-type: tm+mt
-source-wordcount: '2835'
+source-wordcount: '2838'
 ht-degree: 19%
 
 ---
@@ -81,7 +81,7 @@ ht-degree: 19%
 
 隨即在RTF區塊上方開啟上下文功能表，提供上下文中的基本格式選項。 由於空間限制，某些選項可能會隱藏在省略符號按鈕後面。
 
-![&#x200B; RTF內容功能表](assets/rich-text-context-menu.png)
+![ RTF內容功能表](assets/rich-text-context-menu.png)
 
 一旦焦點離開已編輯的欄位，變更會自動儲存。
 
@@ -114,6 +114,7 @@ ht-degree: 19%
 * 連結
 * 取消連結
 * 影像
+* 以文字格式貼上
 * 移除所有格式設定
 
 可以使用RTE編輯現有表格，但無法建立新表格。
