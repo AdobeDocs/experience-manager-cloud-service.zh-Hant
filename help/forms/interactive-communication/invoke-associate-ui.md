@@ -24,13 +24,13 @@ ht-degree: 1%
 
 - 已建立和發佈互動式通訊
 - 已啟用快顯視窗支援的瀏覽器
-- 關聯[使用者必須屬於Forms-associates群組](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
-- 使用AEM[支援的任何](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/authentication)驗證機制（例如SAML 2.0、OAuth或自訂驗證處理常式）所設定的驗證
+- 關聯[使用者必須屬於Forms-associates群組](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
+- 使用AEM[支援的任何](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/authentication/authentication)驗證機制（例如SAML 2.0、OAuth或自訂驗證處理常式）所設定的驗證
 
 >[!NOTE]
 >
 >- 本文示範使用SAML 2.0搭配使用[Microsoft Entra ID (Azure AD)做為身分提供者](https://learn.microsoft.com/en-us/power-pages/security/authentication/openid-settings)的驗證設定。
->- 對於Associate UI，[SAML 2.0驗證](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)文章中所述的標準設定之外，還需要其他SAML設定。 如需詳細資訊，請參閱[關聯UI的其他SAML設定](#additional-saml-configurations-for-associate-ui)區段。
+>- 對於Associate UI，[SAML 2.0驗證](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)文章中所述的標準設定之外，還需要其他SAML設定。 如需詳細資訊，請參閱[關聯UI的其他SAML設定](#additional-saml-configurations-for-associate-ui)區段。
 
 ### 關聯UI的其他SAML設定
 
