@@ -5,10 +5,10 @@ role: User, Leader, Admin, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: 8819dc84887f79e047b4beffd18e03dee3ee45a3
 workflow-type: tm+mt
-source-wordcount: '2236'
-ht-degree: 79%
+source-wordcount: '2268'
+ht-degree: 77%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 79%
 
 ![檢視資產的中繼資料](assets/metadata-view.png)
 
-*圖：若要檢視資產及其中繼資料，請從工具列按一下&#x200B;**[!UICONTROL 詳細資訊]**&#x200B;或按兩下資產。*
+*圖：若要檢視資產及其中繼資料，請從工具列按一下&#x200B;**[!UICONTROL 詳細資訊]**或按兩下資產。*
 
 標題、說明和上傳日期之類的基本中繼資料可在[!UICONTROL 基本]標籤中取得。[!UICONTROL 進階]標籤包含更進階的中繼資料，例如相機型號、鏡頭詳細資訊和地理標籤。[!UICONTROL 標記]標籤會根據影像內容包含自動套用的標記。
 
@@ -49,7 +49,7 @@ ht-degree: 79%
 
 ![檢視資產的智慧型標記](assets/metadata-view-tags.png)
 
-*圖：若要檢視智慧標記，請從工具列按一下&#x200B;**[!UICONTROL 詳細資訊]**&#x200B;或按兩下資產。*
+*圖：若要檢視智慧標記，請從工具列按一下&#x200B;**[!UICONTROL 詳細資訊]**或按兩下資產。*
 
 智慧型標記也包含信賴分數 (以百分比呈現)。這表示與套用標記相關的信賴度。您可以審核自動套用的智慧型標記。
 
@@ -100,7 +100,9 @@ MIME 子類型 > MIME 類型 > `default` 表單 > 現成可用的表單
 
    ![左側邊欄中的中繼資料表單選項](assets/metadata-form-new.png)
 
-   *圖：中繼資料表單建立介面，其中包含新增元件的選項和預覽表單的選項。*
+   瞭解中繼資料表單[的](cascading-metadata-assets-view.md#build-metadata-forms)使用者介面。
+
+   <!--*Figure: Metadata form creation interface with options to add components and option to preview the form.*-->
 
 1. 對每個元件，在右側邊欄的「**[!UICONTROL 設定]**」命名，提供支援屬性的對應。
 1. 或是對元件選取&#x200B;**[!UICONTROL 必要]**，讓中繼資料欄位成為必要欄位，並選取&#x200B;**[!UICONTROL 唯讀]**&#x200B;讓此欄位在資產[!UICONTROL 詳細資訊]頁面中無法編輯。
@@ -139,6 +141,9 @@ MIME 子類型 > MIME 類型 > `default` 表單 > 現成可用的表單
 | 標記 | 從儲存在Taxonomy Management中的值（對應至xcm:tags）新增標籤。 |
 | 關鍵字 | 新增任意格式關鍵字（對應至dc:subject）。 |
 | 智慧標記 | 透過自動新增中繼資料標記增強搜尋功能。 |
+| 發佈 | 新增資產的發佈狀態。 |
+| 連結 | 它會儲存指向線上資源的網址，例如網頁、影像或外部參照。 |
+| 評等 | 它會新增類別值，指出資產的品質。 |
 
 ### 將中繼資料表單指派至資料夾 {#assign-metadata-form-folder}
 
@@ -226,17 +231,17 @@ See [Assign metadata form to folders](#assign-metadata-form-folder). Follow the 
 1. 開啟索引標籤（**[!DNL Basic]**、**[!DNL Advanced]**&#x200B;或&#x200B;**[!DNL Tags]**）。
 1. 選取中繼資料屬性，以在&#x200B;**[!UICONTROL 設定]**&#x200B;面板中編輯其設定。 您可以在&#x200B;**[!UICONTROL 設定]**&#x200B;面板中更新屬性對應、重新命名標籤、修改或新增屬性值，以及執行更多此類編輯。
 1. 按一下&#x200B;**[!UICONTROL 預覽]**&#x200B;以檢閱表單變更，然後再儲存這些變更。
-1. 按一下[儲存]以套用變更。**&#x200B;**
+1. 按一下[儲存]以套用變更。****
 
 ## 後續步驟 {#next-steps}
 
-* [觀看在Assets檢視中管理中繼資料表單的相關影片](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html?lang=zh-Hant)
+* [觀看在Assets檢視中管理中繼資料表單的相關影片](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html)
 
 * 使用資產檢視使用者介面所提供的[!UICONTROL 意見回饋]選項提供產品意見回饋
 
 * 若要提供文件意見回饋，請使用右側邊欄提供的[!UICONTROL 編輯此頁面]![來編輯頁面](assets/do-not-localize/edit-page.png)或[!UICONTROL 記錄問題]![來建立 GitHub 問題](assets/do-not-localize/github-issue.png)
 
-* 聯絡[客戶服務](https://experienceleague.adobe.com/zh-hant?support-solution=General#support)
+* 聯絡[客戶服務](https://experienceleague.adobe.com/?support-solution=General#support)
 
 <!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
 To reuse an existing form to create a form, do one of these:

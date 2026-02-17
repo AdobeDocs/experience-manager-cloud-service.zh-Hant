@@ -1,11 +1,10 @@
 ---
 title: 階層式中繼資料
 description: 本文說明如何定義資產的階層式中繼資料。
-contentOwner: AG
 feature: Metadata
 role: Admin, User
 exl-id: 1d3ad496-a964-476e-b1da-4aa6d8ad53b7
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 8d1744ca10ecce8637d9f9ff37eba05d2ca09ca4
 workflow-type: tm+mt
 source-wordcount: '968'
 ht-degree: 8%
@@ -79,7 +78,7 @@ ht-degree: 8%
 
    ![select_dependentfield](assets/select_dependentfield.png)
 
-1. 在&#x200B;**[!UICONTROL 需求]**&#x200B;底下，根據新規則&#x200B;**選項選擇**&#x200B;必要。
+1. 在&#x200B;**[!UICONTROL 需求]**&#x200B;底下，根據新規則&#x200B;**[!UICONTROL 選項選擇]**&#x200B;必要。
 1. 選取&#x200B;**[!UICONTROL 新增規則]**&#x200B;並選擇&#x200B;**[!UICONTROL 資產型別]**&#x200B;欄位以建立相依性。 也選擇要在其上建立相依性的欄位值。 在這種情況下，請選擇「 **[!UICONTROL 視訊」]**。選取&#x200B;**[!UICONTROL 完成]**&#x200B;以儲存變更。
 
    ![define_rule](assets/define_rule.png)
