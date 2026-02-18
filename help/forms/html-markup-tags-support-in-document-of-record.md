@@ -1,24 +1,24 @@
 ---
-title: 記錄檔案中支援的HTML標籤標籤
-description: 產生記錄檔案現在支援HTML標籤標籤的參考指南，包括演算行為和協助工具考量事項
+title: 提交PDF （原記錄檔案）中支援的HTML標籤標籤
+description: 產生提交PDF （先前稱為記錄檔案）時，支援的HTML標籤參考指南，包括演算行為和協助工具考量事項。
 feature: Adaptive Forms
 role: Developer, User
 exl-id: 8481b0dc-aae7-4bd2-acfe-1f1b6d747683
-source-git-commit: 1794ed6cac612ee4600c2f8e1ced18c6130b64a2
+source-git-commit: 0b112a5a1830fac9d0170771e052bbb2ef3cadbf
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 8%
+source-wordcount: '454'
+ht-degree: 6%
 
 ---
 
 
-# 記錄檔案中支援的HTML標籤標籤
+# 提交PDF （原記錄檔案）中支援的HTML標籤標籤
 
 ## 此參考資料涵蓋哪些內容？
 
-產生記錄檔案(DoR) PDF時，AEM Forms現在支援RTF欄位中的HTML標籤標籤。 本指南說明哪些HTML標籤標籤可以在最適化Forms中安全使用，以及這些標籤如何在產生的檔案中呈現。
+產生提交PDF （先前稱為記錄檔案）PDF時，AEM Forms現在支援RTF欄位中的HTML標籤標籤。 本指南說明哪些HTML標籤標籤可以在最適化Forms中安全使用，以及這些標籤如何在產生的提交PDF中呈現。
 
-如果您在表單中新增RTF內容（例如粗體格式、清單或連結），請務必瞭解支援的標籤及其限制。 此參考可協助您選擇適當的標籤，以確保您的內容可正確顯示並在記錄檔案中持續可供存取。
+如果您在表單中新增RTF內容（例如粗體格式、清單或連結），請務必瞭解支援的標籤及其限制。 此參考資料可協助您選擇適當的標籤，以確保您的內容可正確顯示並在提交PDF中保持可存取性。
 
 ## 開始之前
 
@@ -27,18 +27,18 @@ ht-degree: 8%
 您應該熟悉：
 
 - 基本HTML標籤語法
-- [記錄檔案基本知識](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
+- [提交PDF （前身為記錄檔案）基本要素](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 - 協助工具原則及WCAG准則
 - PDF協助工具需求
 - 接受HTML標籤的最適化表單元件
 
 ### 考量事項
 
-記錄檔案(DoR)可以是已標籤的PDF，這有助於確保輔助技術的協助工具與正確結構。 若要啟用標籤的PDF輸出，[請將XCI屬性`config/present/pdf/tagged`設定為`true`](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#use-a-custom-xci-file)。 產生PDF後，請務必確認協助工具標籤已正確套用。 您可以使用[Adobe Acrobat來檢查協助工具標籤](https://helpx.adobe.com/in/acrobat/using/create-verify-pdf-accessibility.html)，並確保您的檔案符合協助工具標準。
+提交PDF （先前稱為記錄檔案）可以是已標籤的PDF，有助於確保輔助技術的協助工具與正確結構。 若要啟用標籤的PDF輸出，[請將XCI屬性`config/present/pdf/tagged`設定為`true`](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#use-a-custom-xci-file)。 產生PDF後，請務必確認協助工具標籤已正確套用。 您可以使用[Adobe Acrobat來檢查協助工具標籤](https://helpx.adobe.com/in/acrobat/using/create-verify-pdf-accessibility.html)，並確保您的檔案符合協助工具標準。
 
 ### 新增功能
 
-記錄檔案支援RTF文字是最近的增強功能。 以前，RTF內容在產生的檔案中會顯示為純文字。 這項新功能可讓格式化內容在PDF輸出中正確呈現。
+提交PDF支援RTF文字是最近的增強功能。 以前，RTF內容在產生的檔案中會顯示為純文字。 這項新功能可讓格式化內容在PDF輸出中正確呈現。
 
 ## HTML標籤支援參考
 
@@ -46,7 +46,7 @@ ht-degree: 8%
 
 建立適當的協助工具節點可完全支援這些標籤：
 
-| HTML標籤 | 說明 | 記錄檔案支援 | 協助工具 | 範例 |
+| HTML標籤 | 說明 | 提交PDF支援 | 無障礙功能 | 範例 |
 |----------|-------------|-------------|---------------|---------|
 | `<p>` | 段落 | 是 | 完全支援 — 正確`<P>`節點 | `<p>This is a paragraph.</p>` |
 | `<br/>` | 分行符號 | 是 | 完全支援 — `<P>`節點內 | `<p>Line 1<br/>Line 2</p>` |
@@ -135,7 +135,7 @@ Expected:     <LBody>First item
 ## 相關內容
 
 
-- [為最適化表單產生記錄文件](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
-- [產生核心元件的記錄檔案](/help/forms/generate-document-of-record-core-components.md)
-- [記錄檔案範本自訂](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record)
+- [產生最適化Forms的提交PDF （原記錄檔案）](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
+- [為核心元件產生提交PDF](/help/forms/generate-document-of-record-core-components.md)
+- [提交PDF範本自訂](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record)
 
