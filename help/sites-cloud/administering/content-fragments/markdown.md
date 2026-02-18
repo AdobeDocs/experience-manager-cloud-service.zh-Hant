@@ -5,7 +5,7 @@ feature: Content Fragments
 role: User
 exl-id: 6fbf8128-3b7f-4eda-bbbd-3336578d2586
 solution: Experience Manager Sites
-source-git-commit: 278242e0be1da5c64abfa5d9ac174013688ff422
+source-git-commit: be60f0371e652549cec6e57d1449b6e07b996514
 workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 4%
@@ -32,7 +32,7 @@ ht-degree: 4%
 
 ## 標題標籤法 {#heading-notation}
 
-若要建立標題，請在標題前面放置雜湊標籤(#)。 一個雜湊標籤(#)表示H1，兩個雜湊標籤(##)表示H2，以此類推。 您最多可以使用6個雜湊標籤。 例如：
+若要建立標題，請在標題前面放置雜湊符號(#)。 一個雜湊符號(#)表示H1，兩個雜湊符號(##)表示H2，依此類推。 您最多可以使用六個雜湊符號。 例如：
 
     `## This is an H2`
 
@@ -110,17 +110,13 @@ ht-degree: 4%
 
     `>This is block quotes`
 
-    `>asdhfjlkasdhlf`
-
-    `>asdfahsdlfasdfj`
-
 您可以有巢狀區塊引號。 例如：
 
     `> This is the first level of quoting.`
 
     `>`
 
-        `>> This is nested blockquote.`
+        `>> This is a nested blockquote.`
 
     `>`
 
@@ -130,7 +126,7 @@ ht-degree: 4%
 
 您可以建立已排序和未排序清單。
 
-若要建立未排序清單，請在清單中的專案前使用&amp;amp；ast；符號。 例如：
+若要建立未排序清單，請在清單中的專案前使用&amp;amp；ast； （星號）符號。 例如：
 
     `* item in list`
 
