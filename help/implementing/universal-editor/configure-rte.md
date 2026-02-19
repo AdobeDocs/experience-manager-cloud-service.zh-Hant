@@ -171,7 +171,7 @@ RTE組態包含兩個部分：
 }
 ```
 
-####資料表組態選項 {#table-configuration-options}
+#### 資料表組態選項 {#table-configuration-options}
 
 * `wrapInParagraphs`： `false` （預設） — 表格儲存格包含未包裝的文字內容
 * `wrapInParagraphs`： `true` — 表格儲存格將內容包裝在段落標籤中
