@@ -4,9 +4,9 @@ description: 瞭解如何在通用編輯器中設定RTF編輯器(RTE)。
 feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
-source-git-commit: e1773cbc2293cd8afe29c3624b29d1e011ea7e10
+source-git-commit: 39137052e9fa409f7f5494be53fa7693aaa60b17
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '994'
 ht-degree: 1%
 
 ---
@@ -87,9 +87,29 @@ RTE組態包含兩個部分：
 }
 ```
 
-## 動作設定 {#actions}
+## 動作設定 {#action}
 
 動作設定可讓您自訂個別編輯動作的行為和外觀。 這些是可用的區段。
+
+### 常用動作選項 {#common-action-options}
+
+大部分的動作支援下列常見選項：
+
+* `shortcut?`：字串 — 覆寫動作的預設鍵盤快速鍵（如果有的話）
+* `label?`：字串 — 覆寫UI中動作使用的標籤
+* `hideInline?`：布林值 — 當`true`時，會從內文（內嵌） RTE編輯器工具列隱藏此動作
+
+```json
+{
+  "actions": {
+    "bold": {
+      "label": "Bold",
+      "shortcut": "Mod-B",
+      "hideInline": true
+    }
+  }
+}
+```
 
 ### 格式化動作 {#format}
 
@@ -134,6 +154,56 @@ RTE組態包含兩個部分：
   }
 }
 ```
+
+### 表格動作 {#table-actions}
+
+表格動作支援內容換行，以控制表格儲存格中的HTML結構：
+
+```json
+{
+  "actions": {
+    "table": {
+      "wrapInParagraphs": false, // <td>content</td> (default)
+      "shortcut": "Mod-Alt-T",   // Custom shortcut
+      "label": "Insert Table"    // Custom label
+    }
+  }
+}
+```
+
+####資料表組態選項 {#table-configuration-options}
+
+* `wrapInParagraphs`： `false` （預設） — 表格儲存格包含未包裝的文字內容
+* `wrapInParagraphs`： `true` — 表格儲存格將內容包裝在段落標籤中
+
+範例：
+
+當`wrapInParagraphs`： `false`：
+
+```html
+<!-- Single line -->
+<td>Cell content</td>
+
+<!-- Multiple paragraphs get <br> separation -->
+<td>Line 1<br />Line 2</td>
+```
+
+當`wrapInParagraphs`： `true`：
+
+```html
+<!-- Single paragraph -->
+<td><p>Cell content</p></td>
+
+<!-- Multiple paragraphs preserved -->
+<td>
+  <p>Line 1</p>
+  <p>Line 2</p>
+</td>
+```
+
+>[!NOTE]
+>
+>展開段落(`wrapInParagraphs`： `false`)時，清理程式會自動在多個段落之間插入`<br>`標籤，以保留視覺化分行符號。 這遵循HTML標準和主要RTF編輯器的常見做法。
 
 ### 連結動作 {#link}
 
@@ -487,3 +557,20 @@ RTE組態包含兩個部分：
 
 * `Mod` = Mac上的`Cmd`，Windows/Linux上的`Ctrl`
 * 範例： `Mod-B`， `Mod-Shift-8`， `Mod-Alt-1`
+
+## 不支援的HTML {#unsupported-html}
+
+依預設，編輯器剖析未知HTML標籤時，系統都會移除這些標籤。 若要保留它們，請透過`unsupportedHtml`組態選項選擇加入：
+
+```javascript
+const rteConfig = {
+  unsupportedHtml: true, // preserve unknown HTML tags (default: false)
+};
+```
+
+| 值 | 行為 |
+|---|---|
+| `false` (預設) | 剖析期間會捨棄未知的HTML標籤。 |
+| `true` | 未知的HTML標籤會包裝在自訂不支援的區塊節點中，讓內容可安全地來回。 |
+
+啟用時，編輯器會轉譯不支援的`rte-unsupported-block`類別節點。 消費者應用程式應提供此類別的樣式（例如，邊框、邊框間距、背景）。 區塊內的標籤標籤使用`rte-unsupported-label`，也可以自訂。

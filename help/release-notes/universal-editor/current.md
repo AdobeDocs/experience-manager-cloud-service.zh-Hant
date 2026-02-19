@@ -1,20 +1,20 @@
 ---
-title: 通用編輯器 2026.02.13 發行說明
-description: 此為通用編輯器 2026.02.13 版本的發行說明。
+title: 通用編輯器 2026.02.19 發行說明
+description: 此為通用編輯器 2026.02.19 版本的發行說明。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 33239a1725477d3325dc3245bcc99c438eb350c1
+source-git-commit: 39137052e9fa409f7f5494be53fa7693aaa60b17
 workflow-type: tm+mt
-source-wordcount: '182'
-ht-degree: 47%
+source-wordcount: '251'
+ht-degree: 34%
 
 ---
 
 
-# 通用編輯器 2026.02.13 發行說明 {#release-notes}
+# 通用編輯器 2026.02.19 發行說明 {#release-notes}
 
-此為通用編輯器 2026 年 2 月 13 日版本的發行說明。
+此為通用編輯器 2026 年 2 月 19 日版本的發行說明。
 
 >[!TIP]
 >
@@ -26,8 +26,14 @@ ht-degree: 47%
 
 ## 新增功能 {#what-is-new}
 
-* 現在支援動態媒體連結。
-* 現在可以使用[Document Authoring](https://docs.da.live/developers/reference/universal-editor)來建立區塊的結構描述和資料型別。
+* 已改善RTE。
+   * [現在支援在內容RTE](/help/implementing/universal-editor/configure-rte.md#common-action-options)中隱藏工具列專案。
+   * [現在支援將文字繞排在含有段落](/help/implementing/universal-editor/configure-rte.md#table-actions)的表格中。
+   * [不支援的HTML標籤](/help/implementing/universal-editor/configure-rte.md#unsupported-html)現在可由RTE保留。
+   * RTE邏輯現在由個別檔案提供。
+   * [現在可以建立](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)資料表，也可以使用RTE進行編輯。
+* 如果未設定標籤，則現在會使用元件定義中的元件標題。
+* `setEditorMode`現在可透過擴充功能使用。
 
 ## 早期採用功能 {#early-adopter}
 
@@ -37,6 +43,7 @@ ht-degree: 47%
 
 ## 其他改善功能 {#other-improvements}
 
-* 已修正視訊URL不正確的問題。
-* 以相同名稱建立多個元件時，不再傳回409錯誤。
-* Headless畫布現在持續儲存對容器中欄位的後續更新。
+* RTE端點現在可供就地編輯器使用。
+* 編輯巢狀欄位不再導致從這些結構覆寫對等專案。
+* 強制RTE欄位無法再儲存為空白。
+* 在格式化後新增連結時，就地格式不再不當套用。

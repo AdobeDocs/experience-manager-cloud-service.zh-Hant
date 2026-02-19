@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 689daf210bc0d867a0cafad32abac4aa178927ff
+source-git-commit: 3a76f7dde028eb2ba50a7bca344b347d585cc9ea
 workflow-type: tm+mt
-source-wordcount: '2838'
-ht-degree: 19%
+source-wordcount: '2902'
+ht-degree: 18%
 
 ---
 
@@ -81,7 +81,7 @@ ht-degree: 19%
 
 隨即在RTF區塊上方開啟上下文功能表，提供上下文中的基本格式選項。 由於空間限制，某些選項可能會隱藏在省略符號按鈕後面。
 
-![&#x200B; RTF內容功能表](assets/rich-text-context-menu.png)
+![ RTF內容功能表](assets/rich-text-context-menu.png)
 
 一旦焦點離開已編輯的欄位，變更會自動儲存。
 
@@ -101,23 +101,30 @@ ht-degree: 19%
 
 通用編輯器的RTF編輯器(RTE)可讓作者套用標準文字格式。 依預設，可使用下列選項。
 
-* 段落（h1、h2、h3等）
-* 粗體
-* 斜體
-* 底線
-* 上標
-* 下標
-* 專案符號清單
-   * 使用Tab鍵以縮排，並使用Shift+Tab鍵以縮排
-* 排序清單
-   * 使用Tab鍵以縮排，並使用Shift+Tab鍵以縮排
-* 連結
-* 取消連結
-* 影像
-* 以文字格式貼上
-* 移除所有格式設定
-
-可以使用RTE編輯現有表格，但無法建立新表格。
+* **段落樣式**
+   * 段落，h1-h6，代碼
+* **粗體**
+* **斜體**
+* **加底線**
+* **刪除線**
+* **上標**
+* **下標**
+* **專案符號清單**
+   * 使用Tab鍵以縮排，並使用Shift+Tab鍵以縮排。
+* **排序清單**
+   * 使用Tab鍵以縮排，並使用Shift+Tab鍵以縮排。
+* **連結**
+   * 指定URL或使用內容瀏覽器在AEM中選取路徑。
+* **取消連結**
+   * 從選取的文字移除連結。
+* **影像**
+   * 指定URL或使用[資產選擇器](/help/assets/overview-asset-selector.md#using-asset-selector)從AEM中選取資產。
+* **表格**
+   * 使用下拉式清單，插入所選欄和列數的新表格，或插入和移除新欄/列。
+* **貼上成文字**
+   * 在貼入通用編輯器之前，從剪貼簿上的文字移除格式。
+* **移除所有格式**
+   * 從選取的文字移除所有格式選項。
 
 RTE可設定為根據作者需求隱藏選項或顯示其他選項。 如需詳細資訊，請參閱檔案[為通用編輯器設定RTE](/help/implementing/universal-editor/configure-rte.md)。
 
