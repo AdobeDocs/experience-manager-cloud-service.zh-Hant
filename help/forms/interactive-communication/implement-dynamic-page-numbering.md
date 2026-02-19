@@ -4,23 +4,19 @@ description: 互動式通訊編輯器中的動態頁碼編排可讓作者在其P
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: 9adc7a5669d8bf1e64cc93998cb2f91ffa9d3dd6
+exl-id: 9f29da7d-72ad-4737-9ae3-d5cdc4f5ed25
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '404'
-ht-degree: 13%
+source-wordcount: '364'
+ht-degree: 3%
 
 ---
-
 
 # 互動式通訊編輯器中的動態頁面編號
 
 >[!NOTE]
 >
 > 互動式通訊功能在早期採用者程式中提供。 使用您的工作郵件地址寄送電子郵件至 `aem-forms-ea@adobe.com` 請求存取權限。
-
->[!IMPORTANT]
->
-> **文件內容可能隨時變更**：此提示庫目前正在針對產品進行測試，可能會進行更新和修訂。隨著表單體驗建立工具在早期採用者方案期間持續發展，相關的提示、範例和最佳做法可能會有所變更。
 
 ## 簡介
 

@@ -7,23 +7,19 @@ role: User, Developer, Admin
 hide: true
 index: false
 hidefromtoc: true
-source-git-commit: fe99fc4ddc1e2b3bdd1b2a5b583f2b4cb681dee9
+exl-id: 127abe2a-d8cf-4488-959f-f7316a8ddc3e
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '424'
-ht-degree: 12%
+source-wordcount: '384'
+ht-degree: 3%
 
 ---
-
 
 # 在互動式通訊編輯器中複製並貼上
 
 >[!NOTE]
 >
 > 互動式通訊功能在早期採用者程式中提供。 使用您的工作郵件地址寄送電子郵件至 `aem-forms-ea@adobe.com` 請求存取權限。
-
->[!IMPORTANT]
->
-> **文件內容可能隨時變更**：此提示庫目前正在針對產品進行測試，可能會進行更新和修訂。隨著表單體驗建立工具在早期採用者方案期間持續發展，相關的提示、範例和最佳做法可能會有所變更。
 
 互動式通訊(IC)編輯器中的「複製並貼上」功能可讓作者複製現有的互動式通訊，並在不同的資料夾或位置重複使用它。 此功能可啟用多種積體電路變化，而不需修改原始版本，以協助團隊有效率地工作。
 
@@ -88,4 +84,3 @@ ht-degree: 12%
 - 複製後請檢閱資料繫結和輸出通道，以確保正確性。
 
 互動式通訊中的「複製並貼上」功能可讓作者複製現有的IC並獨立修改它們，進而簡化重複使用和自訂作業。 它可讓您更快速地開發、更安全的實驗，以及一致的通訊傳遞，而不會冒變更原始互動式通訊的風險。
-

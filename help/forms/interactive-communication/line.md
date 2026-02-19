@@ -4,23 +4,19 @@ description: AEM Forms互動式通訊編輯器中的Line元件可讓作者在通
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: 1ff5ac22-d8c8-4109-8334-217dbc239f1f
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 13%
+source-wordcount: '459'
+ht-degree: 6%
 
 ---
-
 
 # 互動式通訊編輯器中的線條元件
 
 >[!NOTE]
 >
 > 互動式通訊功能在早期採用者程式中提供。 使用您的工作郵件地址寄送電子郵件至 `aem-forms-ea@adobe.com` 請求存取權限。
-
->[!IMPORTANT]
->
-> **文件內容可能隨時變更**：此提示庫目前正在針對產品進行測試，可能會進行更新和修訂。隨著表單體驗建立工具在早期採用者方案期間持續發展，相關的提示、範例和最佳做法可能會有所變更。
 
 ## &#x200B;1. 簡介
 
@@ -113,5 +109,3 @@ ht-degree: 13%
 - 隱藏不必要的線條，以避免分散注意力，同時保留版面間距。
 
 互動式通訊編輯器中的Line元件是簡單但功能強大的設計元素。 在策略性使用時，它可強化通訊檔案的視覺結構，協助使用者更順利瀏覽內容，並確保配置更乾淨、更光潔。
-
-

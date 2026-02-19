@@ -4,23 +4,19 @@ description: AEM Forms互動式通訊編輯器中的日期/時間欄位元件可
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
-source-git-commit: e651869132a232db577e94946c082c46eea26bb3
+exl-id: 7ac93d8c-5454-4789-a7cd-438571a9ff28
+source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
 workflow-type: tm+mt
-source-wordcount: '716'
-ht-degree: 9%
+source-wordcount: '676'
+ht-degree: 3%
 
 ---
-
 
 # 互動式通訊編輯器中的日期/時間欄位元件
 
 >[!NOTE]
 >
 > 互動式通訊功能在早期採用者程式中提供。 使用您的工作郵件地址寄送電子郵件至 `aem-forms-ea@adobe.com` 請求存取權限。
-
->[!IMPORTANT]
->
-> **文件內容可能隨時變更**：此提示庫目前正在針對產品進行測試，可能會進行更新和修訂。隨著表單體驗建立工具在早期採用者方案期間持續發展，相關的提示、範例和最佳做法可能會有所變更。
 
 ## &#x200B;1. 簡介
 
@@ -141,4 +137,3 @@ ht-degree: 9%
 - 將欄位繫結至有效的結構描述路徑，以確保資料擷取和處理正確。
 
 互動式通訊編輯器中的日期/時間欄位元件是功能強大且方便使用的元件，可簡化基於時間的輸入。 透過正確設定樣式、資料處理和版面配置控制項，可為使用者和後端系統啟用乾淨、可靠且直覺式的表單體驗。
-
