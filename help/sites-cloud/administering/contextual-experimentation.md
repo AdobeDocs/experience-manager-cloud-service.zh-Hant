@@ -3,9 +3,11 @@ title: AEM as a Cloud Service中的內容實驗
 description: 瞭解如何使用實驗外掛程式，將實驗功能新增至您的網站。
 feature: Administering
 role: Admin
-source-git-commit: 66ee08babae1f6640158260af051f8ad5f9bde85
+badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
+exl-id: 420f8d5e-27f9-4081-b174-b2d7752779f7
+source-git-commit: eed3a4866e3018b2ff6bc6e5c201523ab271c35f
 workflow-type: tm+mt
-source-wordcount: '1799'
+source-wordcount: '1805'
 ht-degree: 0%
 
 ---
@@ -33,7 +35,7 @@ ht-degree: 0%
 
 實驗外掛程式用於[Edge Delivery Services](/help/edge/overview.md)的內容中，因此您需要Github帳戶、SharePoint或Google Drive之類的內容存放庫，此外也需要[AEM Sidekick](https://www.aem.live/docs/sidekick)。 另請參閱[快速入門 — Universal Editor開發人員教學課程頁面](https://www.aem.live/developer/tutorial)和[快速入門 — 開發人員教學課程](https://www.aem.live/developer/tutorial)。
 
-完成所有設定後，**請觀看此影片** （標題為[立即實驗](https://business.adobe.com/tw/products/experience-manager/sites/testing-optimization.html)），以簡短示範實驗外掛程式的運作方式。
+完成所有設定後，**請觀看此影片** （標題為[立即實驗](https://business.adobe.com/products/experience-manager/sites/testing-optimization.html)），以簡短示範實驗外掛程式的運作方式。
 
 ## 常用詞語 {#frequently-used-terms}
 
