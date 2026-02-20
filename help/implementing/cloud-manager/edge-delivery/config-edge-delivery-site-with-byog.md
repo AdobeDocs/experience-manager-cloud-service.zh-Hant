@@ -4,9 +4,9 @@ description: 了解如何將 Edge Delivery 網站連結至私人或企業 Git �
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 1dbaef34-efa3-4287-b7b1-f60db938146d
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 2ea076c42a6406548bf48cd246227fc8ddb3a080
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '282'
 ht-degree: 100%
 
 ---
@@ -15,13 +15,15 @@ ht-degree: 100%
 
 您可以設定 Edge Delivery 網站，從已加入 Cloud Manager 的任何私人 Git 存放庫提取程式碼。
 
-**支援的 Git 供應商**
+<!--
+**Supported Git Vendors**
 
-| 支援層級 | 供應商 | 備註 |
+| Support level | Vendors | Notes |
 | --- | --- | --- |
-| 正式發行 | • GitHub Enterprise (自行託管版本)<br>• Bitbucket (雲端版本)<br>• GitLab (雲端和自行託管版本) | 無需啟用請求即可連接 |
-| Alpha 方案 | Azure DevOps (雲端版本) | [請求存取權](mailto:grp-cloudmanager_byog@adobe.com) |
-| Beta 方案 | Adobe 託管的存放庫 (在 Cloud Manager 中建立) | [請求存取權](mailto:grp-cloudmanager_byog@adobe.com) |
+| General availability | &bull; GitHub Enterprise (self-hosted version)<br>&bull; Bitbucket (Cloud version)<br>&bull; GitLab (Cloud and self-hosted version) | Connect without enablement requests |
+| Alpha program | Azure DevOps (Cloud version) | [Request access](mailto:grp-cloudmanager_byog@adobe.com) |
+| Beta program | Adobe-hosted repository (created in Cloud Manager) | [Request access](mailto:grp-cloudmanager_byog@adobe.com) |
+-->
 
 **若要設定 Edge Delivery 網站以使用外部 Git 存放庫：**
 
