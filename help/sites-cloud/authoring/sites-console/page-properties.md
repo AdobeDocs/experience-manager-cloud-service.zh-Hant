@@ -1,15 +1,16 @@
 ---
 title: 頁面屬性
 description: 瞭解頁面可以擁有的不同屬性，以及這些屬性如何控制頁面行為以及如何管理頁面。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 solution: Experience Manager Sites
 feature: Authoring
 role: User
 mini-toc-levels: 2
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '2138'
-ht-degree: 2%
+source-wordcount: '2144'
+ht-degree: 3%
 
 ---
 
@@ -56,7 +57,7 @@ ht-degree: 2%
 
 ### 品牌元素 {#branding}
 
-藉由將品牌概要附加至每個頁面標題，跨頁面套用一致的品牌識別。 此功能需要使用2.14.0版或更新版本的[核心元件。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)的頁面元件
+藉由將品牌概要附加至每個頁面標題，跨頁面套用一致的品牌識別。 此功能需要使用2.14.0版或更新版本的[核心元件。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)的頁面元件
 
 * **品牌概要**
 
@@ -175,7 +176,7 @@ ht-degree: 2%
 * **標準URL** — 用於覆寫頁面的標準URL
    * 如果保留為空白，頁面的URL將是其標準URL。
 
-* **Robots標籤** — 使用下拉式清單來選取Robots標籤，以控制搜尋引擎編目程式的行為
+* **Robots標籤** — 使用下拉式清單來選取Robots標籤，以控制搜尋引擎爬蟲的行為
    * 有些選項會相互衝突，以較寬鬆的選項優先。
 
 * **產生Sitemap** — 選取時，會為此頁面及其子系產生`sitemap.xml`。
@@ -212,7 +213,7 @@ ht-degree: 2%
 * **ContextHub路徑** — 定義[ContextHub設定](/help/sites-cloud/authoring/personalization/contexthub.md)
 * **區段路徑** — 定義[區段路徑](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
 
-### 定位組態 {#targeting-config}
+### 目標選擇組態 {#targeting-config}
 
 * **品牌** — 定義[品牌以指定目標定位的範圍](/help/sites-cloud/authoring/personalization/targeted-content.md)
    * 此選項要求使用者帳戶必須位於`Target Administrators`群組中。

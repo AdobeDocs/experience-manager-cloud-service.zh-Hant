@@ -1,14 +1,15 @@
 ---
 title: 個人化和內容目標鎖定
 description: 了解如何使用 AEM 建立個人化、鎖定目標的內容
+badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1054'
-ht-degree: 89%
+source-wordcount: '1060'
+ht-degree: 88%
 
 ---
 
@@ -17,14 +18,14 @@ ht-degree: 89%
 
 將您提供給客戶的網頁內容個人化，表示根據他們的興趣和需求量身打造這些體驗。你可以根據你掌握的關於他們的資訊來進行；例如購物摘要、年齡、性別、地理位置等。
 
-使用Adobe Experience Manager as a Cloud Service (AEM)，您可以建立一系列內容，然後指定哪些對象（一般使用者群組）可看見每個個別體驗。 這表示您的個人化體驗的目標鎖定在特定對象。
+透過Adobe Experience Manager as a Cloud Service (AEM)，您可以建立一系列內容，然後指定哪些對象（一般使用者群組）可以看到每個個別體驗。 這表示您的個人化體驗的目標鎖定在特定客群。
 
 當您的讀者在線時，目標定位引擎將查看此一般使用者的相關資訊，並將其與體驗定義相比較。然後，引擎&#x200B;*「決定」*&#x200B;應該顯示哪些個人化體驗。
 
 AEM 提供一個工具框架，用於：
 
-* 根據可用的客戶資訊，編寫已鎖定目標、適合一系列對象的內容。
-* 定義規則，這些規則用於根據對象定義來解析已知使用者資訊。
+* 根據可用的客戶資訊，編寫已鎖定目標、適合一系列客群的內容。
+* 定義規則，這些規則用於根據客群定義來解析已知使用者資訊。
 * 設定您的頁面以呈現已鎖定目標的個人化體驗；呈現適用於目前一般使用者的特定內容。
 
 以下概述介紹AEM as a Cloud Service中用於個人化的一些術語，以及建議採取的行動順序。
@@ -35,39 +36,39 @@ AEM 提供一個工具框架，用於：
 
 ## 個人化體驗 {#personalized-experience}
 
-個人化體驗是向有限對象展示的體驗。對象由您定義，只有當目前一般使用者的已知資訊對應該對象定義時，才會顯示內容。
+個人化體驗是向有限客群展示的體驗。客群由您定義，只有當目前一般使用者的已知資訊對應該客群定義時，才會顯示內容。
 
-建立頁面時，您定義了多個體驗，每個體驗都解析至一個 (或多個) 對象。如果未解析任何對象，則會顯示預設體驗。
+建立頁面時，您定義了多個體驗，每個體驗都解析至一個 (或多個) 客群。如果未解析任何客群，則會顯示預設體驗。
 
-### 選件 {#offer}
+### 產品建議 {#offer}
 
-選件是一種個人化體驗，通常在有限的時間內提供。
+產品建議是一種個人化體驗，通常在有限的時間內提供。
 
 例如，範例網站的頁面可以使用選件作為出現在頁面頂端的Teaser影像。 30歲以上的人和30歲以下的人可以看到不同的優惠方案作為體驗Teaser。
 
-## 對象 {#audience}
+## 客群 {#audience}
 
-對象是一般使用者群組，是個人化內容鎖定的目標。當訪客開啟網頁時，頁面邏輯會根據已知資訊決定他們所屬的對象。根據評估結果，AEM 會顯示您為該對象建立的內容。
+客群是一般使用者群組，是個人化內容鎖定的目標。當訪客開啟網頁時，頁面邏輯會根據已知資訊決定他們所屬的客群。根據評估結果，AEM 會顯示您為該客群建立的內容。
 
-對象是以行銷區段為基礎。它們是在 AEM 或 Adobe Target 中建立的；您可以使用對象主控台直接在 AEM 中建立 Adobe Target 對象。
+客群是以行銷細分群體為基礎。它們是在 AEM 或 Adobe Target 中建立的；您可以使用客群主控台直接在 AEM 中建立 Adobe Target 客群。
 
 ### 區段 {#segment}
 
-在 AEM ContextHub 中，對象被定義為根據規則 (條件) 的區段。然後，解析區段以呈現所需內容。
+在 AEM ContextHub 中，客群被定義為根據規則 (條件) 的細分群體。然後，解析區段以呈現所需內容。
 
 ## 活動 {#activity}
 
 活動：
 
-* 定義特定對象 (區段) 與特定體驗的對應
+* 定義特定客群 (細分群體) 與特定體驗的對應
 * 定義套用目標鎖定的時段
 * 識別頁面使用的[目標定位引擎](#targeting-engine)
 
 活動可以是個人化活動，也可以是 A/B 測試活動 (在 AEM 和 Adobe Target 個人化工作流程的情況下)。
 
-例如，一項活動可以為兩個不同的對象定義體驗：30 歲以上的人和 30 歲以下的人。然後，網站的一個頁面可能會為每個對象顯示不同的產品。
+例如，一項活動可以為兩個不同的客群定義體驗：30 歲以上的人和 30 歲以下的人。然後，網站的一個頁面可能會為每個客群顯示不同的產品。
 
-或者，舉另一個範例，您的產品目錄可能包含強調季節性產品的預告片。因此，夏季運動會活動可能會定義夏季預告片的目標對象。
+或者，舉另一個範例，您的產品目錄可能包含強調季節性產品的預告片。因此，夏季運動會活動可能會定義夏季預告片的目標客群。
 
 使用[活動主控台](/help/sites-cloud/authoring/personalization/activities.md)為[品牌](#brand)建立和管理活動。您也可以在使用[目標定位模式](/help/sites-cloud/authoring/personalization/targeted-content.md#adding-and-removing-experiences-using-targeting-mode)編寫[已鎖定目標的內容](/help/sites-cloud/authoring/personalization/targeted-content.md)時建立活動。
 
@@ -75,7 +76,7 @@ AEM 提供一個工具框架，用於：
 
 品牌擁有一系列行銷活動和區域。
 
-當您使用活動主控台建立品牌時，它也會出現在選件主控台中。
+當您使用活動主控台建立品牌時，它也會出現在產品建議主控台中。
 
 ### 區域 {#area}
 
@@ -91,7 +92,7 @@ AEM 提供一個工具框架，用於：
 
 組成體驗的一組元件。
 
-[體驗片段](/help/sites-cloud/authoring/fragments/content-fragments.md#personalization-experience-fragment)是由內容和資訊（樣式等）所組成，用來建立體驗；它們可以在頁面製作時直接使用。 它們可以被視為 AEM 頁面的子集。可讓內容作者重複使用跨管道的內容，包括 Sites 頁面和協力廠商系統。
+[體驗片段](/help/sites-cloud/authoring/fragments/content-fragments.md#personalization-experience-fragment)是由內容和資訊（樣式等）所組成，用來建立體驗；它們可以在頁面製作時直接使用。 它們可以被視為 AEM 頁面的子集。可讓內容作者重複使用跨管道的內容，包括 Sites 頁面和第三方系統。
 
 對於個人化範例，可以將標題、影像、描述和行動號召按鈕合併以形成預告片體驗。使用體驗片段是使用 Adobe Target 個人化的關鍵部分。
 
@@ -114,13 +115,13 @@ AEM 提供一個工具框架，用於：
 
 ### AEM ContextHub {#aem-contexthub}
 
-AEM 提供內建目標定位引擎 [ContextHub](/help/implementing/developing/personalization/contexthub.md)，用於處理頁面要求並決定要顯示的內容。使用 AEM 目標定位引擎時，您只能使用在 AEM 建立的區段來定義體驗的對象。
+AEM 提供內建目標定位引擎 [ContextHub](/help/implementing/developing/personalization/contexthub.md)，用於處理頁面要求並決定要顯示的內容。使用 AEM 目標定位引擎時，您只能使用在 AEM 建立的細分群體來定義體驗的客群。
 
 ### Adobe Target {#adobe-target}
 
 [Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md) 目標定位引擎會使頁面被造訪時所收集的資訊在 Adobe Target 中被追蹤。
 
-* 使用此目標定位引擎時，您可以使用從 Adobe Target 匯入的區段來定義體驗的對象。
+* 使用此目標定位引擎時，您可以使用從 Adobe Target 匯入的細分群體來定義體驗的客群。
 * 使用 Adobe Target 引擎的活動[會同步到 Target](/help/sites-cloud/authoring/personalization/activities.md#synchronizing-activities-with-adobe-target)。
 
 如果[已整合 Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)，即可使用此引擎。
@@ -134,12 +135,12 @@ AEM 提供內建目標定位引擎 [ContextHub](/help/implementing/developing/pe
    1. 設定 [ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md)
    1. 整合 [Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
 
-1. 設定對象。
+1. 設定客群。
 
-   1. 視目標定位引擎而定，定義[Target 對象](https://experienceleague.adobe.com/docs/target/using/audiences/target.html?lang=zh-Hant)或 [ContextHub 區段](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)以及規則。
+   1. 視目標選擇引擎而定，定義[Target 客群](https://experienceleague.adobe.com/docs/target/using/audiences/target.html)或 [ContextHub 細分群體](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)以及規則。
 
 1. 建立[品牌和活動](/help/sites-cloud/authoring/personalization/activities.md)。
 
-1. 編寫您想要向各種不同對象展示的體驗選集。
+1. 編寫您想要向各種不同客群展示的體驗選集。
 
-1. 透過將其[目標定位](/help/sites-cloud/authoring/personalization/targeted-content.md)在特定對象 (區段) 來個人化這些體驗。
+1. 透過[選擇目標](/help/sites-cloud/authoring/personalization/targeted-content.md)客群 (細分群體) 來個人化這些體驗。

@@ -1,13 +1,14 @@
 ---
 title: 管理標記
 description: 了解如何在 AEM 中管理標記，以便整理您的內容。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: 42480699-b7a7-4678-a763-569a9b7573e2
 solution: Experience Manager Sites
 feature: Workflow
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '2200'
+source-wordcount: '2206'
 ht-degree: 68%
 
 ---
@@ -36,7 +37,7 @@ ht-degree: 68%
    * 這些分類法在整個 AEM 中都適用。
 * 標記可以由作者套用，並可供網站訪客使用。
 * 無論由誰建立，所有形式的標記都可在指定給頁面或搜尋時用於選取。
-* 標記會由[清單元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=zh-Hant)用於根據選取的標記產生動態清單。
+* 標記會由[清單元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html)用於根據選取的標記產生動態清單。
 
 ## 標記需求 {#requirements}
 
@@ -52,7 +53,7 @@ ht-degree: 68%
    * 非容器標記的標記則稱為葉標記。
    * 標記命名空間可以是葉標記或容器標記。
 
-如需有關標籤如何運作的詳細技術資訊，請參閱[AEM標籤架構](/help/implementing/developing/introduction/tagging-framework.md)。
+如需標籤如何運作的詳細技術資訊，請參閱[AEM標籤架構](/help/implementing/developing/introduction/tagging-framework.md)。
 
 ## 標記主控台 {#tagging-console}
 
@@ -76,7 +77,7 @@ ht-degree: 68%
 
 1. [建立標記的命名空間](#creating-namespaces) (或選擇現有的以重複使用)。
 1. [建立新標籤](#creating-tags)。
-1. [Publish標籤](#publishing-tags)。
+1. [發佈標籤](#publishing-tags)。
 
 ### 建立命名空間 {#creating-namespaces}
 
@@ -134,7 +135,7 @@ ht-degree: 68%
 
 1. 若要發佈標籤，請開啟[標籤主控台](#tagging-console)。
 
-1. 選取您要發佈的一個或多個標籤，然後在工具列中選取&#x200B;**Publish**。
+1. 選取您要發佈的一個或多個標籤，然後在工具列中選取&#x200B;**發佈**。
 
    ![在主控台中選取標記](assets/select-tags.png)
 

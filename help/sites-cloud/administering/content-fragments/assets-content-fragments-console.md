@@ -3,12 +3,13 @@ title: 在內容片段主控台中檢視和管理Assets
 description: 瞭解如何在Adobe Experience Manager as a Cloud Service的內容片段主控台中檢視和管理Assets。
 feature: Content Fragments
 role: User, Developer
+badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: 865e1fa8-2956-45cf-9dd7-034d491808fe
 solution: Experience Manager Sites
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '247'
-ht-degree: 6%
+source-wordcount: '253'
+ht-degree: 7%
 
 ---
 

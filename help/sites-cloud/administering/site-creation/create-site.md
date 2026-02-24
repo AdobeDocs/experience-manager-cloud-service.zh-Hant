@@ -3,12 +3,13 @@ title: 建立網站
 description: 瞭解如何使用AEM建立網站，並使用網站範本定義網站的樣式和結構。
 feature: Administering
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
 solution: Experience Manager Sites
-source-git-commit: 4d45e7ef626ad0b46f5323263cca791b14f9732f
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '726'
-ht-degree: 15%
+source-wordcount: '732'
+ht-degree: 16%
 
 ---
 
@@ -39,7 +40,7 @@ ht-degree: 15%
 >
 >不要將網站範本與[頁面範本混淆。](/help/sites-cloud/authoring/page-editor/templates.md)網站範本定義網站的整體結構。 頁面範本定義單一頁面的結構和初始內容。
 
-### Adobe提供的網站範本 {#adobe-templates}
+### Adobe 提供的網站範本 {#adobe-templates}
 
 {{adobe-templates}}
 

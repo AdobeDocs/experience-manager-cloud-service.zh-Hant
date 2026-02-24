@@ -1,13 +1,14 @@
 ---
 title: 建立頁面
 description: 瞭解如何使用Sites主控台為您的網站建立新頁面。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: 77264562-e76a-40c8-9878-847a8878fb8e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '483'
 ht-degree: 2%
 
 ---
@@ -19,7 +20,7 @@ ht-degree: 2%
 
 >[!TIP]
 >
->開始建立新頁面之前，請熟悉[在AEM](/help/sites-cloud/authoring/sites-console/organizing-pages.md)中組織頁面的方式。
+>開始建立新頁面之前，請熟悉[在AEM中組織頁面的方式](/help/sites-cloud/authoring/sites-console/organizing-pages.md)。
 
 ## 存取許可權 {#access-privileges}
 
@@ -31,7 +32,7 @@ ht-degree: 2%
 
 除非所有頁面都已預先為您建立，否則您必須先建立頁面，然後才能開始建立內容：
 
-1. 開啟[&#x200B; **網站**&#x200B;主控台](/help/sites-cloud/authoring/sites-console/introduction.md)。
+1. 開啟[ **網站**&#x200B;主控台](/help/sites-cloud/authoring/sites-console/introduction.md)。
 1. 導覽至您要建立新頁面的位置。
 1. 使用工具列中的&#x200B;**Create**&#x200B;開啟下拉式選取器，然後從清單中選取&#x200B;**Page**：
 
@@ -60,7 +61,7 @@ ht-degree: 2%
 
       * 這會用來產生URI。 如果未指定，則會從標題衍生名稱。
       * 如果您在建立頁面時提供頁面&#x200B;**Name**，AEM [會依據AEM和JCR所強加的慣例](/help/implementing/developing/introduction/naming-conventions.md)驗證名稱。
-      * 您&#x200B;**無法在**&#x200B;名稱&#x200B;**欄位中提交無效的字元**。 當AEM偵測到無效字元時，該欄位會反白顯示，並顯示說明訊息，指出需要移除/取代的字元。
+      * 您&#x200B;**無法在**&#x200B;名稱&#x200B;**欄位中提交無效的字元**。 當AEM偵測到無效字元時，欄位會醒目顯示，並顯示說明訊息，指出需要移除/取代的字元。
 
    >[!TIP]
    >
@@ -84,7 +85,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->如果您使用相同位置已存在的名稱來建立頁面，AEM會以附加編號所指定之名稱的變數來建立頁面。 例如，如果`beach`已經存在，則新頁面會變成`beach1`。
+>如果您使用相同位置已存在的名稱來建立頁面，AEM會建立具有指定名稱的變數頁面，方式為附加數字。 例如，如果`beach`已經存在，則新頁面會變成`beach1`。
 
 >[!CAUTION]
 >

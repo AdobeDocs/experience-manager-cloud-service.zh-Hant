@@ -3,12 +3,13 @@ title: 翻譯多語言網站的內容
 description: 大致了解如何翻譯多語言網站的內容。
 feature: Language Copy
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: c3e89719-4d08-401b-b9dd-19d1db03d72c
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '288'
-ht-degree: 82%
+source-wordcount: '294'
+ht-degree: 81%
 
 ---
 
@@ -21,7 +22,7 @@ ht-degree: 82%
 
 >[!TIP]
 >
->如果不熟悉如何翻譯內容，請參閱[網站翻譯歷程](/help/journey-sites/translation/overview.md)，此歷程將引導您使用AEM強大的翻譯工具來翻譯您的AEM Sites內容，非常適合沒有AEM或翻譯經驗的人士。
+>如果不熟悉如何翻譯內容，請參閱[網站翻譯歷程](/help/journey-sites/translation/overview.md)，其中會指引您使用AEM強大的翻譯工具來翻譯您的AEM Sites內容，非常適合沒有AEM或翻譯經驗的人士。
 
 翻譯內容涉及以下步驟：
 

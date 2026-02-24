@@ -1,14 +1,15 @@
 ---
 title: 提升啟動
 description: 您必須提升啟動頁面，才能在發佈前將內容移回來源（生產環境）。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: b5ded40d1cb8b8fab28583467b68c4586eecf1a0
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '812'
-ht-degree: 1%
+source-wordcount: '818'
+ht-degree: 2%
 
 ---
 
@@ -23,7 +24,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->將啟動頁面提升至目標（**生產**）後，您可以啟動&#x200B;**生產**&#x200B;頁面作為實體（讓程式更快）。 將頁面新增至Workflow封裝，並作為啟動頁面封裝的Workflow的裝載。 提升啟動項之前，必須先建立工作流程封裝。 請參閱[使用AEM工作流程](#processing-promoted-pages-using-aem-workflow)處理提升頁面。
+>將啟動頁面提升至目標（**生產**）後，您可以啟動&#x200B;**生產**&#x200B;頁面作為實體（讓程式更快）。 將頁面新增至Workflow封裝，並作為啟動頁面封裝的Workflow的裝載。 提升啟動項之前，必須先建立工作流程封裝。 請參閱[使用AEM工作流程處理提升頁面](#processing-promoted-pages-using-aem-workflow)。
 
 >[!CAUTION]
 >
@@ -58,7 +59,7 @@ ht-degree: 1%
       1. 選取您的啟動項（選取縮圖）。
       1. 選取&#x200B;**升級**。
 1. 在第一個步驟中，您可以指定：
-   * **目標**
+   * **Target**
       * **促銷活動後刪除啟動項**
    * **領域**
       * **提升完整啟動項**
@@ -102,7 +103,7 @@ ht-degree: 1%
 1. 如同建立巢狀啟動項一樣，在&#x200B;**啟動項**&#x200B;主控台或&#x200B;**參考**&#x200B;邊欄中，導覽並選取所需的啟動項。
 1. 選取&#x200B;**提升啟動**&#x200B;以開啟精靈。
 1. 輸入必要的明細：
-   * **目標**
+   * **Target**
       * **促銷目標** — 您可以促銷至任何來源。
       * **促銷活動後刪除啟動項** — 促銷活動後，會刪除所選啟動項及其內巢狀啟動項。
    * **範圍** — 您可在此選取是要提升整個啟動，還是只提升已實際編輯的頁面。 如果是後者，您就可以選取包含/排除子頁面。 預設設定為僅提升目前頁面的頁面變更：

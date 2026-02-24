@@ -3,12 +3,13 @@ title: 連線到 Microsoft Translator
 description: 瞭解如何將AEM連線至現成的Microsoft Translator，以自動化您的翻譯工作流程。
 feature: Language Copy
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: ca3c50f9-005e-4871-8606-0cfd3ed21936
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '293'
-ht-degree: 6%
+source-wordcount: '299'
+ht-degree: 7%
 
 ---
 
@@ -18,7 +19,7 @@ AEM為[Microsoft Translator](https://www.microsoft.com/en-us/translator/business
 
 >[!TIP]
 >
->如果不熟悉如何翻譯內容，請參閱[網站翻譯歷程](/help/journey-sites/translation/overview.md)，此歷程將引導您使用AEM強大的翻譯工具來翻譯您的AEM Sites內容，非常適合沒有AEM或翻譯經驗的人士。
+>如果不熟悉如何翻譯內容，請參閱[網站翻譯歷程](/help/journey-sites/translation/overview.md)，其中會指引您使用AEM強大的翻譯工具來翻譯您的AEM Sites內容，非常適合沒有AEM或翻譯經驗的人士。
 
 | 屬性 | 說明 |
 |---|---|
@@ -29,17 +30,17 @@ AEM為[Microsoft Translator](https://www.microsoft.com/en-us/translator/business
 
 下列程式會建立Microsoft Translator設定。
 
-1. 在[導覽面板](/help/sites-cloud/authoring/basic-handling.md#first-steps)中，選取&#x200B;**工具** > **Cloud Service** > **翻譯Cloud Service**。
+1. 在[導覽面板](/help/sites-cloud/authoring/basic-handling.md#first-steps)中，選取&#x200B;**工具** > **雲端服務** > **翻譯雲端服務**。
 1. 導覽至您要建立設定的位置。 這通常位於您的網站根目錄中，或可為全域預設設定。
 1. 選取&#x200B;**建立**&#x200B;按鈕。
 1. 定義您的設定。
    1. 在下拉式清單中選取&#x200B;**Microsoft翻譯工具**。
-   1. 輸入設定的標題。 標題可識別Cloud Service控制檯和頁面屬性下拉式清單中的設定。
+   1. 輸入設定的標題。 標題會識別雲端服務主控台和頁面屬性下拉式清單中的設定。
    1. 選擇性地輸入儲存組態之儲存庫節點的名稱。
 
    ![建立翻譯設定](../assets/create-translation-config.png)
 
-1. 按一下&#x200B;**建立**。
+1. 按一下「**建立**」。
 1. 在&#x200B;**編輯組態**&#x200B;視窗中，提供上一個表格所述之翻譯服務的值。
 
    ![編輯翻譯設定](../assets/msft-config-ui.png)

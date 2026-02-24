@@ -3,12 +3,13 @@ title: 分析內容片段
 description: 瞭解您的內容片段的結構。 如此可提供與Headless傳送和頁面製作相關的資訊。
 feature: Content Fragments
 role: User, Developer
+badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: d9268c1a-bfe6-4df7-bad9-6007dd79e0aa
 solution: Experience Manager Sites
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '128'
-ht-degree: 3%
+source-wordcount: '134'
+ht-degree: 5%
 
 ---
 

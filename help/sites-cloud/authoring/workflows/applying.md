@@ -1,13 +1,14 @@
 ---
 title: 將工作流程套用至頁面
 description: 編寫時，您可以叫用工作流程以在頁面上動作；也可以套用多個工作流程。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '654'
+source-wordcount: '660'
 ht-degree: 11%
 
 ---
@@ -55,7 +56,7 @@ ht-degree: 11%
 * [網站工具列的[建立]選項](#starting-a-workflow-from-the-sites-toolbar)。
 * [網站主控台的時間軸邊欄](#starting-a-workflow-from-the-timeline)。
 
-在這兩種情況下，您都必須在建立工作流程精靈[&#128279;](#specifying-workflow-details-in-the-create-workflow-wizard)中指定工作流程詳細資訊。
+在這兩種情況下，您都必須在建立工作流程精靈[中](#specifying-workflow-details-in-the-create-workflow-wizard)指定工作流程詳細資訊。
 
 ### 從網站工具列啟動工作流程 {#starting-a-workflow-from-the-sites-toolbar}
 
@@ -107,7 +108,7 @@ ht-degree: 11%
 
    >[!NOTE]
    >
-   >當為「 **&#x200B;**&#x200B;多資源支援」配置了工作流且已選擇多個資源時，「保留工作流包」選項可用。
+   >當為「 **** 多資源支援」配置了工作流且已選擇多個資源時，「保留工作流包」選項可用。
 
    <!--
    >The **Keep workflow package** option is available when the workflow has been configured for [Multi Resource Support](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support) and multiple resources have been selected.
@@ -123,7 +124,7 @@ ht-degree: 11%
 
    * 檢視其他動作的現有資源：
 
-      * **包含子項**&#x200B;以指定該資源的子項包含在工作流程中。
+      * **包含子項**以指定該資源的子項包含在工作流程中。
 對話方塊開啟，可讓您根據下列條件調整選取範圍：
 
          * 僅包含直接子項。

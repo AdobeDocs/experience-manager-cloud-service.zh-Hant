@@ -1,13 +1,14 @@
 ---
 title: 樣式系統
 description: 樣式系統可讓範本作者在元件的內容原則中定義樣式類別，讓內容作者在編輯頁面上的元件時能夠選取這些類別。 這些樣式可作為元件的替代視覺變體，使其更靈活。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: d2cd112de034ca6ea22590245fb480622acf258a
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1338'
+source-wordcount: '1344'
 ht-degree: 1%
 
 ---
@@ -66,7 +67,7 @@ AEM中實際執行的只有最後三個步驟。 這表示所有必要的CSS和J
 
 ## 使用 {#use}
 
-為了示範此功能，我們將使用核心元件的[標題元件](https://www.adobe.com/go/aem_cmp_title_v2_tw)的[WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hant)實作作為範例。
+為了示範此功能，我們將使用核心元件的[標題元件](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)的[WKND](https://www.adobe.com/go/aem_cmp_title_v2_tw)實作作為範例。
 
 下列章節[As a Content Author](#as-a-content-author)及[As a Template Author](#as-a-template-author)說明如何使用WKND的樣式系統測試樣式系統的功能。
 
@@ -130,7 +131,7 @@ AEM中實際執行的只有最後三個步驟。 這表示所有必要的CSS和J
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
->透過[Sling資源合併](/help/implementing/developing/introduction/sling-resource-merger.md)，這會使用[覆蓋](/help/implementing/developing/introduction/overlays.md)。
+>透過[Sling資源合併](/help/implementing/developing/introduction/overlays.md)，這會使用[覆蓋](/help/implementing/developing/introduction/sling-resource-merger.md)。
 
 在設定元件後，AEM會自動將頁面作者設定的樣式插入裝飾元素上，AEM會自動將該元素包裝在每個可編輯的元件周圍。 元件本身不需執行任何其他動作，即可讓此情況發生。
 
@@ -144,7 +145,7 @@ AEM中實際執行的只有最後三個步驟。 這表示所有必要的CSS和J
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
->透過[Sling資源合併](/help/implementing/developing/introduction/sling-resource-merger.md)，這會使用[覆蓋](/help/implementing/developing/introduction/overlays.md)。
+>透過[Sling資源合併](/help/implementing/developing/introduction/overlays.md)，這會使用[覆蓋](/help/implementing/developing/introduction/sling-resource-merger.md)。
 
 >[!NOTE]
 >

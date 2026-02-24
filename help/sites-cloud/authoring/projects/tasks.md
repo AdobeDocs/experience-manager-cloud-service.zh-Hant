@@ -1,13 +1,14 @@
 ---
 title: 使用任務
 description: 任務表示在內容上要完成的工作專案，並用於專案中以決定目前任務的完整度等級
+badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: 66f95a1f-34d0-4e2e-aa8c-addc2029a1d9
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '579'
 ht-degree: 10%
 
 ---
@@ -22,9 +23,9 @@ ht-degree: 10%
 
 您可以透過檢視由&#x200B;**任務**&#x200B;圖磚表示的專案內的作用中/已完成任務來追蹤專案進度。 專案進度可由下列專案決定：
 
-* **&#x200B;**&#x200B;任務表徵圖：項目詳細資訊頁面上的「任務表徵圖」(Task Tile)中描述了項目的整體進度。
+* **** 任務表徵圖：項目詳細資訊頁面上的「任務表徵圖」(Task Tile)中描述了項目的整體進度。
 
-* **&#x200B;**&#x200B;任務清單：按一下「任務」表徵圖時，將顯示任務清單。此清單包含與項目相關的所有任務的詳細資訊。
+* **** 任務清單：按一下「任務」表徵圖時，將顯示任務清單。此清單包含與項目相關的所有任務的詳細資訊。
 
 兩者都會列出工作流程任務和您直接在&#x200B;**任務**&#x200B;圖磚中建立的任務。
 
@@ -79,6 +80,6 @@ ht-degree: 10%
 
 收件匣中的![任務](/help/sites-cloud/authoring/assets/projects-task-inbox.png)
 
-若要完成工作，請選取工作並按一下[完成]。**&#x200B;** 新增資訊至工作，然後按一下[完成]。**&#x200B;** 如需詳細資訊，請參閱[您的收件匣](/help/sites-cloud/authoring/inbox.md)。
+若要完成工作，請選取工作並按一下[完成]。**** 新增資訊至工作，然後按一下[完成]。**** 如需詳細資訊，請參閱[您的收件匣](/help/sites-cloud/authoring/inbox.md)。
 
 ![任務通知](/help/sites-cloud/authoring/assets/projects-task-notifications.png)

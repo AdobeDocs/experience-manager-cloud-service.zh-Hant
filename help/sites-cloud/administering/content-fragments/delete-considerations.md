@@ -3,12 +3,13 @@ title: 內容片段 - 刪除考量事項
 description: 在AEM中定義內容片段刪除原則之前，請檢閱這些重要考量。 內容片段是傳送Headless內容的強大工具，必須仔細考慮刪除這些片段的影響。
 feature: Content Fragments
 role: User, Developer
+badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: d1726bff-3aa8-4758-bee7-0cacea1f660a
 solution: Experience Manager Sites
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 0%
+source-wordcount: '456'
+ht-degree: 1%
 
 ---
 

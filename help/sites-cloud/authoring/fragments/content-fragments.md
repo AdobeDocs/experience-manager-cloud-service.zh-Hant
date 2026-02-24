@@ -1,13 +1,14 @@
 ---
 title: 內容片段
 description: Adobe Experience Manager as a Cloud Service內容片段可讓您設計、建立、組織和使用獨立於管道的內容，這些內容也可在編寫頁面時使用。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 solution: Experience Manager Sites
 feature: Authoring, Content Fragments
 role: User
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1272'
+source-wordcount: '1278'
 ht-degree: 2%
 
 ---
@@ -39,7 +40,7 @@ Adobe Experience Manager (AEM) as a Cloud Service中的內容片段是[建立並
 >
 >體驗片段可以包含內容片段形式的內容，反之則不行。
 >
->如需詳細資訊，請參閱[瞭解AEM中的內容片段和體驗片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=zh-Hant#content-fragments)。
+>如需詳細資訊，請參閱[瞭解AEM中的內容片段和體驗片段](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments)。
 
 內容片段會啟用：
 
@@ -89,7 +90,7 @@ Adobe Experience Manager (AEM) as a Cloud Service中的內容片段是[建立並
 
 >[!NOTE]
 >
->另請參閱[核心元件、內容片段元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=zh-Hant)
+>另請參閱[核心元件、內容片段元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
 
 在適當的組態對話方塊中，您可以選取可用的引數，包括：
 

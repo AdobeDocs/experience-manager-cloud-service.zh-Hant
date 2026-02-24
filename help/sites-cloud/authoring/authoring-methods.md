@@ -2,12 +2,13 @@
 title: 在AEM中創作內容的方法
 description: 瞭解您可以在AEM中編寫內容的不同方式以及它們之間的差異。
 feature: Authoring
+badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: ef482843-451b-474e-a8d0-d0bfcc17221b
 solution: Experience Manager Sites
 role: User
-source-git-commit: bb149cd43158bfd1ceb43b04cc536c8c8291f968
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: '576'
 ht-degree: 1%
 
 ---

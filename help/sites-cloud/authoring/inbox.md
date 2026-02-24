@@ -1,24 +1,25 @@
 ---
 title: 您的收件匣
 description: 瞭解如何使用到達收件匣的通知來管理您的工作。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '916'
 ht-degree: 15%
 
 ---
 
 # 您的收件匣 {#your-inbox}
 
-您可以從AEM的各種區域接收通知，包括工作流程和專案。 例如，您可能會收到下列相關通知：
+您可以從AEM的各個區域接收通知，包括工作流程和專案。 例如，您可能會收到下列相關通知：
 
 * 任務：
    * 這些也可以在AEM UI中的不同位置建立，例如&#x200B;**專案**&#x200B;下。
-   * 這些可以是工作流「建立任務」 **或「建立**&#x200B;**項目任務」步驟的產品** 。
+   * 這些可以是工作流「建立任務」 **或「建立****項目任務」步驟的產品** 。
 * 工作流程：
    * 代表您需要對頁面內容執行之動作的工作專案
       * 這些是工作流程&#x200B;**參與者**&#x200B;步驟的產品。
@@ -38,11 +39,11 @@ ht-degree: 15%
 
 在任一控制檯中，收件匣中目前的專案數量會顯示在標題中。 指標也可以開啟，以提供對需要動作的頁面的快速存取或收件匣的存取權：
 
-標題![&#128279;](/help/sites-cloud/authoring/assets/inbox-header.png)中的收件匣概觀
+標題![中的](/help/sites-cloud/authoring/assets/inbox-header.png)收件匣概觀
 
 >[!NOTE]
 >
->某些動作也會顯示在適當資源[&#128279;](/help/sites-cloud/authoring/basic-handling.md#card-view)的卡片檢視中。
+>某些動作也會顯示在適當資源[的](/help/sites-cloud/authoring/basic-handling.md#card-view)卡片檢視中。
 
 ## 開啟收件匣 {#opening-the-inbox}
 
@@ -59,7 +60,7 @@ ht-degree: 15%
 
 >[!NOTE]
 >
->收件箱作為控制台運行，因此，在您完成 [後，使用全局導航](/help/sites-cloud/authoring/basic-handling.md#global-navigation) [&#128279;](/help/sites-cloud/authoring/search.md) 或搜索導航到其他位置。
+>收件箱作為控制台運行，因此，在您完成 [後，使用全局導航](/help/sites-cloud/authoring/basic-handling.md#global-navigation)[](/help/sites-cloud/authoring/search.md) 或搜索導航到其他位置。
 
 ### 收件匣 — 清單檢視 {#inbox-list-view}
 
@@ -76,7 +77,7 @@ ht-degree: 15%
 您可以：
 
 * 選取特定檢視： **時間表**，**欄**，**清單**
-* 指定要根據「計畫」顯示的 **任務**:所有 **計畫中**&#x200B;的， **進行中**, **即將到**，過 **&#x200B;**&#x200B;**去的,**
+* 指定要根據「計畫」顯示的 **任務**:所有 **計畫中**&#x200B;的， **進行中**, **即將到**，過 ******去的,**
 * 向下展開以取得專案的詳細資訊
 * 選取日期範圍以集中檢視：
 
@@ -91,7 +92,7 @@ ht-degree: 15%
   您可以針對&#x200B;**行事曆檢視**&#x200B;設定：
 
    * **群組依據**
-   * **排程** 或無 **&#x200B;**
+   * **排程** 或無 ****
    * **卡片大小**
 
   ![收件匣行事曆檢視設定](/help/sites-cloud/authoring/assets/inbox-calendar-settings.png)
@@ -160,7 +161,7 @@ ht-degree: 15%
 您可以從收件匣建立任務：
 
 1. 選取&#x200B;**建立**，然後選取&#x200B;**工作**。
-1. 填寫「基本」和「進階 **」標籤中的必要欄位** (只有「 **標題**&#x200B;**&#x200B;** 」是必填的，其他所有欄位都是選用的):
+1. 填寫「基本」和「進階 **」標籤中的必要欄位** (只有「 **標題****** 」是必填的，其他所有欄位都是選用的):
 
    * **基本**：
 

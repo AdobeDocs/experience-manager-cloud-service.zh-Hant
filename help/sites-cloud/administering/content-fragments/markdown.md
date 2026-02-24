@@ -3,11 +3,12 @@ title: Markdown
 description: 瞭解內容片段編輯器如何使用Markdown語法，輕鬆建立頁面製作和Headless傳送的內容。
 feature: Content Fragments
 role: User
+badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: 6fbf8128-3b7f-4eda-bbbd-3336578d2586
 solution: Experience Manager Sites
-source-git-commit: be60f0371e652549cec6e57d1449b6e07b996514
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '565'
 ht-degree: 4%
 
 ---

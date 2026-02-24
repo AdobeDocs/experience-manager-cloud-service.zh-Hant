@@ -1,14 +1,15 @@
 ---
 title: Sites 主控台
 description: 瞭解如何使用Sites主控台來管理和組織AEM頁面。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: b666e62a-c3dc-4be3-8932-d5fe67b178d6
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 4c42888af1e846c011242af2c328e553bb811cfd
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1653'
-ht-degree: 5%
+source-wordcount: '1659'
+ht-degree: 7%
 
 ---
 
@@ -47,7 +48,7 @@ ht-degree: 5%
 
 如需側面板的詳細資訊，請參閱[網站主控台側面板](/help/sites-cloud/authoring/sites-console/console-side-panel.md)。
 
-### 導覽列 {#breadcrumbs}
+### 階層連結 {#breadcrumbs}
 
 階層連結位於邊欄中間，且一律顯示目前所選專案的說明，可讓您導覽網站的各個層級。
 
@@ -262,9 +263,9 @@ AEM工具列最右邊的&#x200B;**檢視**&#x200B;圖示表示目前選取的檢
 
 ## 範本
 
-在「欄檢視」或「清單檢視」中選取頁面時，您可輕鬆查看該頁 [**面所依據**](/help/sites-cloud/authoring/basic-handling.md#column-view) [**的範本**](/help/sites-cloud/authoring/basic-handling.md#list-view)。
+在「欄檢視」或「清單檢視」中選取頁面時，您可輕鬆查看該頁 [**面所依據**](/help/sites-cloud/authoring/basic-handling.md#column-view)[**的範本**](/help/sites-cloud/authoring/basic-handling.md#list-view)。
 
-## AEM中的AI助理
+## AEM 中的 AI 助理
 
-對於具有[已完成必要條件](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access)的客戶，其組織的使用者可以使用AEM中的AI助理。 檢視AEM[中的](/help/implementing/cloud-manager/ai-assistant-in-aem.md)AI小幫手。
+對於已[滿足先決條件](/help/implementing/cloud-manager/ai-assistant-in-aem.md#get-access)的客戶，AEM 中的 AI 助理可供其組織的使用者使用。請參閱 [AEM 中的 AI 助理](/help/implementing/cloud-manager/ai-assistant-in-aem.md)。
 

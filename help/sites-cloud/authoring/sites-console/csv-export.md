@@ -1,14 +1,15 @@
 ---
 title: 匯出為 CSV
 description: 將頁面的相關資訊匯出至本機系統上的CSV檔案
+badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: 818e927e-40b2-4ccb-bfb3-88284ad49829
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '197'
-ht-degree: 32%
+source-wordcount: '203'
+ht-degree: 33%
 
 ---
 
@@ -27,16 +28,16 @@ ht-degree: 32%
 **建立CSV匯出**&#x200B;精靈可讓您選取：
 
 * 要匯出的屬性
-   * 中繼資料
+   * 後設資料
       * 名稱
       * 已修改
       * 已發佈
       * 範本
       * 工作流程
-   * 轉換
+   * 翻譯
       * 已翻譯
    * 分析
-      * 頁面檢視
+      * 頁面檢視量
       * 獨特訪客
       * 頁面逗留時間
 * 深度
@@ -55,7 +56,7 @@ ht-degree: 32%
 
      ![建立CSV選項](/help/sites-cloud/authoring/assets/csv-create.png)
 
-1. 從工具列中，依序選 **取「建立**&#x200B;**CSV報表** 」以開啟精靈：
+1. 從工具列中，依序選 **取「建立****CSV報表** 」以開啟精靈：
 
    ![CSV匯出選項](/help/sites-cloud/authoring/assets/csv-options.png)
 

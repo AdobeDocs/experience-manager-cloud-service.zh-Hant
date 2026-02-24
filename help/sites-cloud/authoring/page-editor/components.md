@@ -1,13 +1,14 @@
 ---
 title: 元件
 description: 元件是AEM中內容頁面的基本製作建置組塊
+badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '341'
 ht-degree: 2%
 
 ---
@@ -26,7 +27,7 @@ AEM隨附多種現成的元件，為網站作者提供全方位功能。 在[編
 
 ## 一般使用 {#general-usage}
 
-當[編輯頁面](/help/sites-cloud/authoring/page-editor/edit-content.md)時，元件可在頁面編輯器側面板的&#x200B;**元件**&#x200B;索引標籤上使用。
+當&#x200B;**編輯頁面**&#x200B;時，元件可在頁面編輯器側面板的[元件](/help/sites-cloud/authoring/page-editor/edit-content.md)索引標籤上使用。
 
 您可以選取元件並將其拖曳至頁面上的所需位置。 您接著可以使用下列專案加以編輯：
 
@@ -42,11 +43,11 @@ AEM隨附多種現成的元件，為網站作者提供全方位功能。 在[編
 
 ## 核心元件 {#core-components}
 
-[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)提供彈性且功能豐富的製作功能，可提供建立頁面所需的基本內容型別。
+[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)提供彈性且功能豐富的製作功能，可提供建立頁面所需的基本內容型別。
 
 它們是使用AEM最佳實務建置的，也是AEM編寫體驗的基礎。 開發人員可輕鬆擴充核心元件，以符合特定專案需求。
 
-除了WCM核心元件之外，您也可以使用[最適化Forms核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant#features)。 這些核心元件提供標準且簡單的方法，可[建立表單或新增表單至AEM Sites頁面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。
+除了WCM核心元件之外，您也可以使用[最適化Forms核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features)。 這些核心元件提供標準且簡單的方法，可[建立表單或新增表單至AEM Sites頁面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。
 
 ### 設定範本 {#configuring-templates}
 

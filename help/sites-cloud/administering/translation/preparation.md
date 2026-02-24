@@ -3,11 +3,12 @@ title: 準備翻譯內容
 description: 瞭解在開發多語言網站時如何準備翻譯內容。
 feature: Language Copy
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: '762'
 ht-degree: 1%
 
 ---
@@ -18,7 +19,7 @@ ht-degree: 1%
 
 >[!TIP]
 >
->如果不熟悉如何翻譯內容，請參閱[網站翻譯歷程](/help/journey-sites/translation/overview.md)，此歷程將引導您使用AEM強大的翻譯工具來翻譯您的AEM Sites內容，非常適合沒有AEM或翻譯經驗的人士。
+>如果不熟悉如何翻譯內容，請參閱[網站翻譯歷程](/help/journey-sites/translation/overview.md)，其中會指引您使用AEM強大的翻譯工具來翻譯您的AEM Sites內容，非常適合沒有AEM或翻譯經驗的人士。
 
 [WKND教學課程網站](/help/implementing/developing/introduction/develop-wknd-tutorial.md)包含數個語言分支，並使用下列結構：
 
@@ -140,7 +141,7 @@ AEM提供&#x200B;**參考**&#x200B;邊欄，顯示已建立的語言根清單。
 >* `/content/wknd/language-masters/en`
 >* `/content/wknd/language-masters/americas/central-america/es`
 >
-> 將不會偵測到此`es`語言副本，因為它與`en`節點相差2個層級(`americas/central-america`)。
+> 將不會偵測到此`es`語言副本，因為它與`americas/central-america`節點相差2個層級(`en`)。
 
 >[!TIP]
 >

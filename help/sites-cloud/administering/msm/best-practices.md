@@ -3,11 +3,12 @@ title: MSM 最佳做法
 description: 瞭解Adobe工程和諮詢團隊編譯的最佳實務，協助啟動和執行AEM Multi Site Manager。
 feature: Multi Site Manager
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1414'
+source-wordcount: '1420'
 ht-degree: 3%
 
 ---
@@ -95,7 +96,7 @@ MSM可以透過兩種方式協助建立多語言網站：
 對Blueprint/來源樹狀結構中內容結構的修改，會以不同方式反映在即時副本中。 這取決於修改型別：
 
 * **在Blueprint中建立**&#x200B;新頁面將導致在使用標準轉出設定轉出後，在即時副本中建立對應的頁面。
-* 在Blueprint中刪除&#x200B;**1&rbrace;頁面將導致在使用標準轉出設定轉出後，對應的頁面從即時副本中刪除。**
+* 在Blueprint中刪除&#x200B;**1}頁面將導致在使用標準轉出設定轉出後，對應的頁面從即時副本中刪除。**
 * 在Blueprint中移動&#x200B;**頁面將**&#x200B;不會&#x200B;**導致在採用標準轉出設定的轉出後，在即時副本中移動對應的頁面：**
    * 此行為的原因是頁面移動隱含包含頁面刪除。 這可能會導致發佈時產生非預期的行為，因為刪除作者上的頁面會自動停用發佈上的對應內容。 這也可能對相關專案（例如連結、書籤等）產生其他影響。
       * 個別即時副本頁面中的內容繼承會更新，以反映其來源在Blueprint中的新位置。

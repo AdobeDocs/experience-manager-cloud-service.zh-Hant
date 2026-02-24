@@ -1,13 +1,14 @@
 ---
 title: 使用 Universal Editor 編寫內容
 description: 了解內容作者使用 Universal Editor 建立內容有多簡單和直覺。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 3a76f7dde028eb2ba50a7bca344b347d585cc9ea
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '2902'
+source-wordcount: '2908'
 ht-degree: 18%
 
 ---
@@ -81,7 +82,7 @@ ht-degree: 18%
 
 隨即在RTF區塊上方開啟上下文功能表，提供上下文中的基本格式選項。 由於空間限制，某些選項可能會隱藏在省略符號按鈕後面。
 
-![&#x200B; RTF內容功能表](assets/rich-text-context-menu.png)
+![ RTF內容功能表](assets/rich-text-context-menu.png)
 
 一旦焦點離開已編輯的欄位，變更會自動儲存。
 

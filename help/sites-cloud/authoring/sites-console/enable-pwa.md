@@ -1,15 +1,16 @@
 ---
 title: 啟用漸進式網頁應用程式功能
 description: AEM Sites可讓內容作者透過簡易設定（而非編碼）為任何網站啟用漸進式網頁應用程式功能。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
 solution: Experience Manager Sites
 feature: Authoring
 role: User
 index: false
-source-git-commit: 19a16bbfc23806f8bc655c0d19713df500e3b12b
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1896'
-ht-degree: 0%
+source-wordcount: '1902'
+ht-degree: 1%
 
 ---
 
@@ -60,7 +61,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe不建議在自訂元件或未從核心元件[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=zh-Hant)延伸的元件上使用PWA功能。
+>Adobe不建議在自訂元件或未從核心元件[延伸的](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)元件上使用PWA功能。
 <!--
 Your components need to include the [manifest files](https://developer.mozilla.org/en-US/docs/Web/Manifest) and [service worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API), which supports the PWA features.
 
@@ -97,7 +98,7 @@ File location: [project directory]/dispatcher/src/conf.dispatcher.d/filters/filt
 /0102 { /type "allow" /extension "webmanifest" /path "/content/*/manifest" }
 ```
 
-根據您的專案，您可能想要在重寫規則中包含不同型別的擴充功能。 當您匯入隱藏及重新導向要求至`/content/<projectName>`的規則時，`webmanifest`擴充功能將包含在重新寫入條件中會很有用。
+根據您的專案，您可能想要在重寫規則中包含不同型別的擴充功能。 當您匯入隱藏及重新導向要求至`webmanifest`的規則時，`/content/<projectName>`擴充功能將包含在重新寫入條件中會很有用。
 
 ```text
 RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
@@ -170,10 +171,10 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
    * **任何** — 應用程式會調整成使用者裝置的方向。 這是預設值。
    * **縱向** — 這會強制應用程式以縱向配置開啟，無論使用者裝置的方向為何。
    * **橫向** — 這會強制應用程式以橫向配置開啟，無論使用者裝置的方向為何。
-* **佈景主題色彩** — 這會定義應用程式[&#128279;](https://developer.mozilla.org/en-US/docs/Web/Manifest/theme_color)的色彩，會影響本機使用者的作業系統顯示原生UI工具列和導覽控制項的方式。 視瀏覽器而定，它可能會影響其他應用程式簡報元素。
+* **佈景主題色彩** — 這會定義應用程式[的](https://developer.mozilla.org/en-US/docs/Web/Manifest/theme_color)色彩，會影響本機使用者的作業系統顯示原生UI工具列和導覽控制項的方式。 視瀏覽器而定，它可能會影響其他應用程式簡報元素。
    * 使用色槽快顯視窗來選取顏色。
    * 顏色也可以由十六進位或RGB值定義。
-* **背景色彩** — 這會定義應用程式[&#128279;](https://developer.mozilla.org/en-US/docs/Web/Manifest/background_color)的背景色彩，會在應用程式載入時顯示。
+* **背景色彩** — 這會定義應用程式[的](https://developer.mozilla.org/en-US/docs/Web/Manifest/background_color)背景色彩，會在應用程式載入時顯示。
    * 使用色槽快顯視窗來選取顏色。
    * 顏色也可以由十六進位或RGB值定義。
    * 某些瀏覽器會自動從應用程式名稱、背景顏色和圖示[建立啟動畫面](https://developer.mozilla.org/en-US/docs/Web/Manifest#Splash_screens)。
@@ -223,7 +224,7 @@ Adobe建議您限制要預先快取的頁數。
 
 AEM核心元件的影像元件會決定要擷取的前端最佳轉譯。 此機制也包含與該資源上次修改時間對應的時間戳記。 此機制會使PWA預先快取的設定複雜化。
 
-設定預先快取時，使用者必須列出所有可擷取的路徑變數。 這些變化是由品質和寬度等引數所組成。 建議您將這些變數的數量減少到最多三個：小、中、大。 您可以透過[影像元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=zh-Hant)的內容原則對話方塊來執行此操作。
+設定預先快取時，使用者必須列出所有可擷取的路徑變數。 這些變化是由品質和寬度等引數所組成。 建議您將這些變數的數量減少到最多三個：小、中、大。 您可以透過[影像元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html)的內容原則對話方塊來執行此操作。
 
 若未妥善設定，記憶體與網路耗用量可能會嚴重影響PWA的效能。 此外，如果您打算預先快取50個影像，且每個影像有三個寬度，則維護網站的使用者必須在頁面屬性的PWA預先快取區段中，維護最多150個專案的清單。
 

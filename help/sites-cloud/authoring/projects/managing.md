@@ -1,13 +1,14 @@
 ---
 title: 管理專案
 description: 專案可讓您將資源分組到一個實體中，以便在「專案」主控台中存取和管理該實體，藉此組織您的專案
+badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '882'
 ht-degree: 11%
 
 ---
@@ -34,10 +35,10 @@ AEM提供這些立即可用的範本，供您在建立專案時選擇：
 * Product Photo Shoot Project 
 -->
 
-從專案到專案，建立專案的程式都相同。專案類型之間的差異包括可用的使 [用者角色](/help/sites-cloud/authoring/projects/overview.md) [和工作流程](/help/sites-cloud/authoring/projects/workflows.md)。若要建立專案：
+從專案到專案，建立專案的程式都相同。專案類型之間的差異包括可用的使 [用者角色](/help/sites-cloud/authoring/projects/overview.md)[和工作流程](/help/sites-cloud/authoring/projects/workflows.md)。若要建立專案：
 
 1. 在&#x200B;**專案**&#x200B;中，選取&#x200B;**建立**&#x200B;以開啟&#x200B;**建立專案**&#x200B;精靈：
-1. 選取範本並按一下[下一步] **&#x200B;**。
+1. 選取範本並按一下[下一步] ****。
 
    ![正在建立專案](/help/sites-cloud/authoring/assets/projects-create.png)
 

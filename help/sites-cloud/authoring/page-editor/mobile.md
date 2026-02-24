@@ -1,14 +1,15 @@
 ---
 title: 為行動裝置編寫頁面
 description: 為行動裝置製作時，您可以在數個模擬器之間切換，以檢視一般使用者看到的內容
+badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: fabd4468-3304-402f-9522-342da3bbae94
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 0%
+source-wordcount: '273'
+ht-degree: 1%
 
 ---
 
@@ -18,7 +19,7 @@ Adobe Experience Manager頁面是以回應式版面為基礎。 [回應式佈局
 
 編寫行動頁面時，頁面會以模擬行動裝置的方式顯示。 編寫頁面時，您可以在多個模擬器之間切換，以檢視一般使用者在存取頁面時看到的內容。
 
-系統會根據裝置轉譯頁面的功能，將裝置分組為類別功能、智慧型和觸控。 當一般使用者存取行動頁面時，AEM會偵測裝置並傳送與其裝置群組相對應的表示。
+系統會根據裝置轉譯頁面的功能，將裝置分組為類別功能、智慧型和觸控。 當一般使用者存取行動頁面時，AEM會偵測裝置並傳送與其裝置群組相對應的表現。
 
 >[!NOTE]
 >

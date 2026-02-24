@@ -3,12 +3,13 @@ title: 語言複製精靈
 description: 瞭解如何在AEM中使用語言複製精靈。
 feature: Language Copy
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: bf8bdc53-0248-47de-bb9d-c884a7179ab0
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '270'
-ht-degree: 2%
+source-wordcount: '276'
+ht-degree: 3%
 
 ---
 
@@ -18,7 +19,7 @@ ht-degree: 2%
 
 >[!TIP]
 >
->如果不熟悉如何翻譯內容，請參閱[網站翻譯歷程](/help/journey-sites/translation/overview.md)，此歷程將引導您使用AEM強大的翻譯工具來翻譯您的AEM Sites內容，非常適合沒有AEM或翻譯經驗的人士。
+>如果不熟悉如何翻譯內容，請參閱[網站翻譯歷程](/help/journey-sites/translation/overview.md)，其中會指引您使用AEM強大的翻譯工具來翻譯您的AEM Sites內容，非常適合沒有AEM或翻譯經驗的人士。
 
 >[!NOTE]
 >

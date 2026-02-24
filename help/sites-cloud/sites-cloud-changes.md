@@ -2,13 +2,14 @@
 title: AEM Cloud Service 中 AEM Sites 的重大變更
 description: 了解如何使用 AEM Sites as a Cloud Service 進行編寫和管理，以及 AEM Cloud Service 中對 AEM Sites 的重要變更。
 exl-id: 60b1aec4-75a0-459f-bf77-8d8c1af757ce
+badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 3761019b42ddc4b3a6cc904afe91b47eb3d99ac6
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '526'
-ht-degree: 100%
+source-wordcount: '532'
+ht-degree: 99%
 
 ---
 
@@ -26,7 +27,7 @@ AEM Sites as a Cloud Service 提供體驗管理功能，作為雲端原生 AEM a
 >* [AEM as a Cloud Service 重大變更 (發行說明)](/help/release-notes/aem-cloud-changes.md)
 >* [AEM Assets as a Cloud Service 重大變更](/help/assets/assets-cloud-changes.md)
 >* [AEM Assets as a Cloud Service 簡介](/help/assets/overview.md)
->* [Adobe Experience Manager as a Cloud Service 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=zh-Hant)
+>* [Adobe Experience Manager as a Cloud Service 教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html)
 
 AEM Sites as a Cloud Service 中的變更與新增內容如下：
 

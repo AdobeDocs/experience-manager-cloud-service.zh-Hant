@@ -1,13 +1,14 @@
 ---
 title: 使用路徑瀏覽器選取路徑
 description: 瞭解如何使用路徑瀏覽器在AEM中選取資源。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: 8eb52793-b709-4e66-832d-533ef06bc0e1
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '328'
 ht-degree: 4%
 
 ---
@@ -32,7 +33,7 @@ ht-degree: 4%
 
 ## 路徑瀏覽器 {#path-browser}
 
-路徑瀏覽器的組織方式類似於&#x200B;[**網站**&#x200B;主控台](/help/sites-cloud/authoring/sites-console/introduction.md)的[欄檢視](/help/sites-cloud/authoring/basic-handling.md#column-view)，允許更詳細的資源選擇。
+路徑瀏覽器的組織方式類似於[網站](/help/sites-cloud/authoring/basic-handling.md#column-view)主控台&#x200B;[**的**&#x200B;欄檢視](/help/sites-cloud/authoring/sites-console/introduction.md)，允許更詳細的資源選擇。
 
 ![路徑瀏覽器](/help/sites-cloud/authoring/assets/path-browser.png)
 

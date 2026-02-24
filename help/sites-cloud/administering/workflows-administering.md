@@ -3,11 +3,12 @@ title: 管理工作流程例項
 description: 瞭解如何使用工作流程主控台管理工作流程例項
 feature: Administering
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
 solution: Experience Manager Sites
-source-git-commit: 372d8969b1939e9a24d7910a1678a17c0dc9f9fd
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1282'
+source-wordcount: '1288'
 ht-degree: 0%
 
 ---
@@ -48,7 +49,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   > 若要維持工作流程執行個體正常運作，請遵循最佳實務： [定期清除工作流程執行個體](#regular-purging-of-workflow-instances)或[工作流程最佳實務](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html?lang=zh-Hant)。
+   > 若要維持工作流程執行個體正常運作，請遵循最佳實務： [定期清除工作流程執行個體](#regular-purging-of-workflow-instances)或[工作流程最佳實務](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html)。
 
 ## 搜尋工作流程例項 {#search-workflow-instances}
 
@@ -112,7 +113,7 @@ ht-degree: 0%
 當工作流程失敗時，AEM會提供&#x200B;**失敗**&#x200B;主控台，讓您在原始原因得到處理之後，立即調查並採取適當的動作：
 
 * **失敗詳細資料**
-開啟視窗以顯示&#x200B;**失敗訊息**、**步驟和&#x200B;**&#x200B;失敗棧疊**。
+開啟視窗以顯示**失敗訊息**、**步驟和&#x200B;**失敗棧疊**。
 
 * **開啟歷程記錄**
 顯示工作流程記錄的詳細資料。

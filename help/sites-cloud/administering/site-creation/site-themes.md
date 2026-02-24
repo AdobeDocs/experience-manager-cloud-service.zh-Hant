@@ -3,11 +3,12 @@ title: 網站主題
 description: 瞭解如何使用AEM網站主題來自訂網站風格和設計，供具有發佈傳送的傳統AEM製作專案使用。
 feature: Administering
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: 53d4afb3-d091-47a1-ba12-5bcec99f46b9
 solution: Experience Manager Sites
-source-git-commit: 9efba01add46c09e9839da6bb96b138d48018e54
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '394'
 ht-degree: 9%
 
 ---

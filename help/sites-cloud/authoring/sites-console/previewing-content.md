@@ -1,13 +1,14 @@
 ---
 title: 預覽內容
 description: 瞭解如何使用AEM預覽服務在內容上線前進行預覽。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: b93bcb5d26a63babf0b81c92a4fd85d358bfbea7
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '312'
 ht-degree: 1%
 
 ---
@@ -58,6 +59,6 @@ https://preview-p<programID>-e>environmentID>.adobeaemcloud.com/<pathtopage>.htm
 
 ## 從預覽中取消發佈內容 {#unpublishing-content-from-preview}
 
-從您的&#x200B;**預覽**&#x200B;環境中取消發佈內容基本上與從&#x200B;**發佈**&#x200B;環境中[取消發佈頁面](/help/sites-cloud/authoring/sites-console/publishing-pages.md#unpublishing-pages)的程式相同。
+從您的&#x200B;**預覽**&#x200B;環境中取消發佈內容基本上與從[發佈](/help/sites-cloud/authoring/sites-console/publishing-pages.md#unpublishing-pages)環境中&#x200B;**取消發佈頁面**&#x200B;的程式相同。
 
 唯一的差異是您可以選取&#x200B;**目的地**&#x200B;為&#x200B;**預覽**。

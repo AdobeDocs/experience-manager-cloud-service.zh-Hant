@@ -1,14 +1,15 @@
 ---
 title: 使用專案工作流程
 description: 各種專案工作流程都可立即使用。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: a5c9a6df-7def-43f3-b41b-524a4f4211e9
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 7%
+source-wordcount: '455'
+ht-degree: 8%
 
 ---
 
@@ -53,10 +54,10 @@ ht-degree: 7%
 
 在「專案核准」工作流程中，您可以將內容指派給使用者、檢閱，然後核准內容。
 
-1. 在您的簡單專案中，選取&#x200B;**工作流程**&#x200B;方塊中的&#x200B;**`+`**&#x200B;登入，然後選取&#x200B;**專案核准工作流程**。
+1. 在您的簡單專案中，選取&#x200B;**`+`**&#x200B;工作流程&#x200B;**方塊中的**&#x200B;登入，然後選取&#x200B;**專案核准工作流程**。
 1. 輸入標題，並從「專案團隊」清單中選取要指派給它的使用者。 如果適用，請輸入說明、內容路徑、工作優先順序和到期日。
 
-   ![要求核准](/help/sites-cloud/authoring/assets/projects-approval.png)
+   ![請求核准](/help/sites-cloud/authoring/assets/projects-approval.png)
 
 1. 按一下「**建立**」。工作流程隨即開始。 任務會出現在&#x200B;**任務**&#x200B;拼貼中。
 
@@ -64,7 +65,7 @@ ht-degree: 7%
 
 此工作流程可讓您請求啟動。
 
-1. 在您的「簡單」專案中，選取「工 **作流程」方塊中的** +登入，然後選取「請求啟 **動工作流程」**&#x200B;**&#x200B;**。
+1. 在您的「簡單」專案中，選取「工 **作流程」方塊中的** +登入，然後選取「請求啟 **動工作流程」******。
 1. 輸入啟動的標題並提供啟動來源路徑。 您也可以新增說明和上線日期（如適用）。 根據您想要啟動項的行為，選取「繼承來源頁面即時資料」或「排除子頁面」 。
 
    ![要求啟動](/help/sites-cloud/authoring/assets/projects-request-launch.png)

@@ -1,13 +1,14 @@
 ---
 title: 使用 ContextHub 資料預覽頁面
 description: ContextHub工具列會顯示ContextHub存放區中的資料，並可讓您變更存放區資料，且可用於預覽內容
+badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: 9c0536c5-900e-4814-9e31-f9fee5adc17c
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '366'
 ht-degree: 3%
 
 ---

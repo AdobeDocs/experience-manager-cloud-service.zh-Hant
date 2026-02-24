@@ -1,13 +1,14 @@
 ---
 title: 製作快速入門手冊
 description: 從這裡開始，快速瞭解高層級指南，以開始使用Sites主控台製作內容。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '755'
 ht-degree: 2%
 
 ---
@@ -25,7 +26,7 @@ ht-degree: 2%
 
 無論您是要建立新內容，還是要檢視及管理現有內容，您的中心概觀是&#x200B;**網站**&#x200B;主控台。
 
-第一次登入AEM時，您會進入全域導覽畫面。 只要點選或按一下&#x200B;**網站**&#x200B;以開啟&#x200B;**網站**&#x200B;主控台。
+當您首次登入AEM時，會進入全域導覽畫面。 只要點選或按一下&#x200B;**網站**&#x200B;以開啟&#x200B;**網站**&#x200B;主控台。
 
 ![全域導覽](assets/getting-started-global-navigation.png)
 
@@ -96,11 +97,11 @@ ht-degree: 2%
 
 ## 發佈內容 {#publishing}
 
-當您使用&#x200B;**Sites**&#x200B;主控台完成您想要對內容的變更時，您可以發佈內容。 選取您要發佈的內容，然後點選或按一下工具列中的「**快速Publish**」圖示。
+當您使用&#x200B;**Sites**&#x200B;主控台完成您想要對內容的變更時，您可以發佈內容。 選取您要發佈的內容，然後點選或按一下工具列中的「**快速發佈**」圖示。
 
 ![快速發佈](assets/getting-started-quick-publish.png)
 
-再次點選或按一下對話方塊中的&#x200B;**Publish**，以確認出版物。
+用其他點選或按一下對話方塊中的&#x200B;**發佈**&#x200B;來確認出版物。
 
 ## 其他資源 {#additional-resources}
 

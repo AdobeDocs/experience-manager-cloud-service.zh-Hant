@@ -1,13 +1,14 @@
 ---
 title: 建立可透過頁面編輯器編輯的頁面的範本
 description: 您可以使用範本編輯器建立範本，內容作者可使用該範本建立可透過「頁面編輯器」編輯的頁面。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '4415'
+source-wordcount: '4421'
 ht-degree: 7%
 
 ---
@@ -39,9 +40,9 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->范 **&#x200B;**&#x200B;本編輯器不支援直接在範本層級定位。可以定位根據可編輯範本建立的頁面，但無法定位範本本身。
+>范 **** 本編輯器不支援直接在範本層級定位。可以定位根據可編輯範本建立的頁面，但無法定位範本本身。
 
-## 在您開始之前 {#before-you-start}
+## 開始之前 {#before-you-start}
 
 開始之前，請務必考慮到建立範本需要共同作業。 因此，每個工作都會顯示[角色](#roles)。 這不會影響您實際使用範本來建立頁面的方式，但會影響頁面與其範本的關聯方式。
 
@@ -85,7 +86,7 @@ ht-degree: 7%
    * [樣式](/help/sites-cloud/authoring/page-editor/style-system.md) — 定義要用於範本及其元件的樣式。
 * [啟用範本](#enabling-a-template-template-author)，以便在建立頁面時使用
 * [允許範本](#allowing-a-template-author)用於您的網站所需頁面或分支
-* [Publish範本](#publishing-a-template-template-author)，使其可在發佈環境中使用
+* [發佈範本](#publishing-a-template-template-author)使其可在發佈環境中使用
 
 >[!NOTE]
 >
@@ -95,7 +96,7 @@ ht-degree: 7%
 >
 >切勿在範本中輸入任何必須是[國際化](/help/implementing/developing/extending/i18n/dev.md)的資訊。
 >
->對於必須本地化的範本元素（例如頁首和頁尾），請使用核心元件的[本地化功能](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=zh-Hant)。
+>對於必須本地化的範本元素（例如頁首和頁尾），請使用核心元件的[本地化功能](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)。
 
 ### 建立範本資料夾 — 管理員 {#creating-a-template-folder-admin}
 
@@ -109,7 +110,7 @@ ht-degree: 7%
    >
    >在標準AEM執行個體中，**global**&#x200B;資料夾已存在於範本主控台中。 此檔案會保留預設範本，並在目前資料夾中找不到原則及/或範本型別時，做為遞補內容。
    >
-   >建議最好使用專案[&#128279;](/help/implementing/developing/components/templates.md#template-folders)所建立的範本資料夾。
+   >建議最好使用專案[所建立的](/help/implementing/developing/components/templates.md#template-folders)範本資料夾。
 
 1. 選取&#x200B;**建立**，接著選取&#x200B;**建立範本**&#x200B;以開啟精靈。
 
@@ -141,7 +142,7 @@ ht-degree: 7%
 範本可以有下列屬性：
 
 * 影像
-   * 要做為範本[&#128279;](#template-thumbnail-image)的縮圖以輔助選取的影像，例如「建立頁面」精靈中的選取。
+   * 要做為範本[的](#template-thumbnail-image)縮圖以輔助選取的影像，例如「建立頁面」精靈中的選取。
       * 可以上傳
       * 可根據範本內容產生
 * 標題
@@ -210,7 +211,7 @@ ht-degree: 7%
 
 由於範本在轉譯頁面時為參考狀態，因此必須發佈已完整設定的範本，才能用於發佈環境。
 
-使用&#x200B;**[範本主控台](/help/sites-cloud/administering/templates-console.md)**&#x200B;的Publish範本。
+使用&#x200B;**[範本主控台](/help/sites-cloud/administering/templates-console.md)**&#x200B;發佈範本。
 
 ## 編輯範本 — 範本作者 {#editing-templates-template-authors}
 
@@ -256,7 +257,7 @@ ht-degree: 7%
 
 #### 版面配置 {#template-layout}
 
-使用版 [面](#editing-a-template-layout-template-author) ，您可以預先定義所需裝置格式的範本版面。**範本製作的** 「版面」模式與頁面製作的「版面 [**&#x200B;** 」模式功能相同](/help/sites-cloud/authoring/page-editor/responsive-layout.md#defining-layouts-layout-mode)。
+使用版 [面](#editing-a-template-layout-template-author) ，您可以預先定義所需裝置格式的範本版面。**範本製作的** 「版面」模式與頁面製作的「版面 [**** 」模式功能相同](/help/sites-cloud/authoring/page-editor/responsive-layout.md#defining-layouts-layout-mode)。
 
 #### 頁面原則 {#template-page-policies}
 
@@ -297,7 +298,7 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->將現成可用的標題元件新增至範本時 **&#x200B;**&#x200B;，其中會包含預設的文字 **結構**。
+>將現成可用的標題元件新增至範本時 **** ，其中會包含預設的文字 **結構**。
 >
 >如果您變更此專案，並新增您自己的文字，則從範本建立頁面時，會使用此更新的文字。
 >
@@ -401,7 +402,7 @@ ht-degree: 7%
 
 >[!CAUTION]
 >
->在AEM中，裁切比例定義為&#x200B;**高度/寬度**。 這和寬度/高度比的傳統定義不同，並且是由於舊有相容性的原因完成的。只要您清楚地定義&#x200B;**Name**，頁面編寫使用者就不會察覺到任何差異，因為這是UI中顯示的內容。
+>在AEM中，裁切比例定義為&#x200B;**高度/寬度**。 這和寬度/高度比的傳統定義不同，主要是為了維持與舊版系統的相容性。只要您清楚地定義&#x200B;**Name**，頁面編寫使用者就不會察覺到任何差異，因為這是UI中顯示的內容。
 
 >[!NOTE]
 >
@@ -445,7 +446,7 @@ ht-degree: 7%
 
 ###### 預設元件 {#default-components}
 
-在&#x200B;**預設元件**&#x200B;索引標籤上，您可以定義哪些元件會自動與指定的媒體型別建立關聯，這樣當作者從資產瀏覽器拖曳資產時，AEM就會知道要與哪個元件建立關聯。 只有具備拖放區域的元件才適用於此類設定。
+在&#x200B;**預設元件**&#x200B;索引標籤上，您可定義哪些元件會自動與指定媒體型別建立關聯，這樣當作者從資產瀏覽器拖曳資產時，AEM就會知道要與哪個元件建立關聯。 只有具備拖放區域的元件才適用於此類設定。
 
 選取&#x200B;**新增對應**&#x200B;以新增全新的元件和MIME型別對應。
 
@@ -477,7 +478,7 @@ ht-degree: 7%
 
 為了節省空間，配置容器不會為了容納允許的元件清單而增大。 容器會變成可捲動清單。
 
-可配置的元件以「策略」表徵圖顯示 **&#x200B;**&#x200B;，可以點選或按一下該表徵圖以編輯該元件的策略和屬性。
+可配置的元件以「策略」表徵圖顯示 **** ，可以點選或按一下該表徵圖以編輯該元件的策略和屬性。
 
 ![可設定的元件圖示](/help/sites-cloud/authoring/assets/templates-configurable-component.png)
 
@@ -491,7 +492,7 @@ ht-degree: 7%
 
 **初始內容**&#x200B;模式用於定義首次根據範本建立頁面時顯示的內容。 然後，頁面作者可以編輯初始內容。
 
-雖然在「結構 **」模式下建立的所有內容在「初始內容」中都可** 見 **&#x200B;**，但只能選擇和編輯已解鎖的元件。
+雖然在「結構 **」模式下建立的所有內容在「初始內容」中都可** 見 ****，但只能選擇和編輯已解鎖的元件。
 
 >[!NOTE]
 >
@@ -505,9 +506,9 @@ ht-degree: 7%
 
   ![已解除鎖定的元件](/help/sites-cloud/authoring/assets/templates-unlocked-components.png)
 
-* 如果容器元件已解除鎖定(在「結 **構** 」模式中)，則您可以在「初始內容 **&#x200B;**&#x200B;」模式中新增元件至容器。在「初始內 **容」模式中新增的元件** ，可在產生的頁面上移動或從中刪除。
+* 如果容器元件已解除鎖定(在「結 **構** 」模式中)，則您可以在「初始內容 **** 」模式中新增元件至容器。在「初始內 **容」模式中新增的元件** ，可在產生的頁面上移動或從中刪除。
 
-  您可以使用「拖曳元件到此處 **」區域，或從適當容器的工具列** 中使用「插入新元件 **&#x200B;**&#x200B;」選項來新增元件。
+  您可以使用「拖曳元件到此處 **」區域，或從適當容器的工具列** 中使用「插入新元件 **** 」選項來新增元件。
 
   ![新增元件](/help/sites-cloud/authoring/assets/templates-add-component.png)
   ![新增元件](/help/sites-cloud/authoring/assets/templates-add-component-dialog.png)
@@ -518,7 +519,7 @@ ht-degree: 7%
 >
 >初始內容旨在準備元件和作為建立內容起點的頁面配置。 此並非意圖讓實際內容維持原狀。 因此，初始內容無法翻譯。
 >
->如果您需要在範本中加入可翻譯的文字（例如頁首或頁尾），可以使用核心元件的[本地化功能](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=zh-Hant)。
+>如果您需要在範本中加入可翻譯的文字（例如頁首或頁尾），可以使用核心元件的[本地化功能](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)。
 
 ### 編輯範本 — 版面 — 範本作者 {#editing-a-template-layout-template-author}
 
@@ -532,7 +533,7 @@ ht-degree: 7%
 
 ### 編輯範本 — 頁面原則 — 範本作者/開發人員 {#editing-a-template-page-policy-template-author-developer}
 
-「頁面資訊」功能表的「頁面政策」選項下會維護包含必要用戶端程 **式庫的頁面原** 則 **&#x200B;**&#x200B;。
+「頁面資訊」功能表的「頁面政策」選項下會維護包含必要用戶端程 **式庫的頁面原** 則 **** 。
 
 若要存取&#x200B;**頁面原則**&#x200B;對話方塊：
 
@@ -644,7 +645,7 @@ ht-degree: 7%
 
    >[!NOTE]
    >
-   >變更不再是草稿之範本上元件的鎖定狀態時，AEM會發出明確警告。
+   >變更不再是草稿之範本上元件的鎖定狀態時，AEM會提供明確警告。
 
 1. [為您網站特定的範本建立您自己的資料夾](#creating-a-template-folder-admin)。
-1. 從&#x200B;**[範本主控台]**(/help/sites-cloud/administering/templates-console.md) [Publish您的範本](#publishing-a-template-template-author)。
+1. 從[範本主控台](#publishing-a-template-template-author)(/help/sites-cloud/administering/templates-console.md) **[發佈您的範本]**。

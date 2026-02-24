@@ -1,13 +1,14 @@
 ---
 title: 組織頁面
 description: 瞭解如何使用AEM組織您的網站。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 9a700e9eb3116252f42bb08db9dadc0e8a6adbf7
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '799'
+source-wordcount: '805'
 ht-degree: 4%
 
 ---
@@ -28,7 +29,7 @@ ht-degree: 4%
 
 網站的結構可視為儲存內容頁面的樹狀結構。 這些內容頁面的名稱會用於組成URL，而標題則會在檢視頁面內容時顯示。
 
-以下顯示[WKND教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hant)網站的範例，其中有一篇關於滑冰場(`la-skateparks`)的文章被存取：
+以下顯示[WKND教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)網站的範例，其中有一篇關於滑冰場(`la-skateparks`)的文章被存取：
 
 `http://<host>:<port>/editor.html/content/wknd/en/sports/la-skateparks.html`
 
@@ -64,14 +65,14 @@ ht-degree: 4%
 
 ### 頁面名稱限制和最佳實務 {#page-name-restrictions-and-best-practices}
 
-頁面 **標題**&#x200B;**和名稱可以單獨建立** ，但是是相關的：
+頁面 **標題****和名稱可以單獨建立** ，但是是相關的：
 
 * 建立頁面時，只需要&#x200B;**標題**&#x200B;欄位。 如果建立頁面時未提供&#x200B;**Name**，AEM將會從標題的前64個字元產生名稱（遵循以下設定的驗證）。 僅前64個字元用於支援短頁面名稱的最佳做法。
 * 如果作者手動指定頁面名稱，64字元限制不適用，但頁面名稱長度的其他技術限制可能適用。
 
 >[!TIP]
 >
->定義頁面名稱時，一個好的經驗法則是保持頁面名稱簡短，但儘可能表達到位且容易記憶，讓讀者容易理解。 如需詳細資訊，請參閱`title`專案的[W3C樣式指南](https://www.w3.org/Provider/Style/TITLE.html)。
+>定義頁面名稱時，一個好的經驗法則是保持頁面名稱簡短，但儘可能表達到位且容易記憶，讓讀者容易理解。 如需詳細資訊，請參閱[專案的](https://www.w3.org/Provider/Style/TITLE.html)W3C樣式指南`title`。
 >
 >也請記住，某些瀏覽器（例如舊版的IE）只能接受一定長度的URL，因此還有技術原因需縮短頁面名稱。
 
@@ -133,10 +134,10 @@ AEM隨附數種現成可用的範本。 可用的範本視個別網站而定。 
 * 文字
 * 影像
 * 標題
-* 傳送
+* 輪播
 * 以及更多功能
 
-建立並開啟頁面後，您就可以使用[元件瀏覽器](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)提供的元件[&#128279;](/help/sites-cloud/authoring/page-editor/edit-content.md#inserting-a-component)來新增內容。
+建立並開啟頁面後，您就可以使用[元件瀏覽器](/help/sites-cloud/authoring/page-editor/edit-content.md#inserting-a-component)提供的元件[來](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)新增內容。
 
 >[!TIP]
 >

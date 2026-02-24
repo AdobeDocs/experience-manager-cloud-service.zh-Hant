@@ -1,13 +1,14 @@
 ---
 title: 頁面差異
 description: 頁面差異功能可方便的對兩個頁面進行並排比較，並反白顯示其差異。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: 6e5c7f14-c980-48e3-8bdd-a7ec10a9e680
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: ae1dedc3d0533205decc08d396c5a844c4525ba2
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '641'
 ht-degree: 1%
 
 ---
@@ -22,7 +23,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->使用者必須具有節點`/content/versionhistory`的&#x200B;**修改/建立/刪除**&#x200B;許可權，才能使用此功能。
+>使用者必須具有節點&#x200B;**的**&#x200B;修改/建立/刪除`/content/versionhistory`許可權，才能使用此功能。
 >
 >請參閱[開發和頁面差異](/help/implementing/developing/introduction/page-diff.md#operation-details)，以取得此功能的更多技術細節。
 

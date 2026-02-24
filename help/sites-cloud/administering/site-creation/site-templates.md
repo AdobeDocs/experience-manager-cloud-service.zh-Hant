@@ -3,11 +3,12 @@ title: 網站範本
 description: 瞭解如何使用AEM網站範本來預先定義網站結構和初始內容，讓您快速建立網站。
 feature: Administering
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: 42eec922-b02e-4f2c-8107-7336192919c7
 solution: Experience Manager Sites
-source-git-commit: 4d45e7ef626ad0b46f5323263cca791b14f9732f
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '493'
 ht-degree: 22%
 
 ---
@@ -31,7 +32,7 @@ ht-degree: 22%
 >
 >不應混淆AEM網站範本與[AEM網站主題。](site-themes.md) AEM網站主題僅包含AEM網站的樣式資訊。 AEM網站範本定義網站結構和初始內容，並包含AEM網站主題，以允許[快速建立網站。](create-site.md)
 
-### Adobe提供的網站範本 {#adobe-templates}
+### Adobe 提供的網站範本 {#adobe-templates}
 
 {{adobe-templates}}
 

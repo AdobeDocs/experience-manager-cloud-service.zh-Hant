@@ -3,11 +3,12 @@ title: 定義內容片段模型
 description: 瞭解內容片段模型如何作為您在AEM中內容片段的基礎，讓您建立結構化內容，以用於Headless傳送或頁面編寫。
 feature: Content Fragments
 role: User, Developer
+badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 solution: Experience Manager Sites
-source-git-commit: ce807274d6138473ff9661897a0816e0feb99f15
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '2217'
+source-wordcount: '2223'
 ht-degree: 3%
 
 ---
@@ -223,12 +224,12 @@ Adobe Experience Manager (AEM) as a Cloud Service中的內容片段模型定義[
   在片段中實現/轉譯欄位的各種選項。 這通常可讓您定義作者將看到欄位的單一例項，還是允許建立多個例項。 使用&#x200B;**多個欄位**&#x200B;時，您可以定義專案的最小和最大數量 — 如需詳細資訊，請參閱[驗證](#validation)。
 
 * **欄位標籤**
-輸入&#x200B;**欄位標籤**&#x200B;會自動產生&#x200B;**屬性名稱**，然後可視需要手動更新。
+輸入**欄位標籤**&#x200B;會自動產生&#x200B;**屬性名稱**，然後可視需要手動更新。
 
 * **驗證**
-基本驗證可由機制使用，例如&#x200B;**Required**&#x200B;屬性。 有些資料型別有額外的驗證欄位。 如需詳細資訊，請參閱[驗證](#validation)。
+基本驗證可由機制使用，例如**Required**&#x200B;屬性。 有些資料型別有額外的驗證欄位。 如需詳細資訊，請參閱[驗證](#validation)。
 
-* 對於「多行」 **資料類型** ，可將「預設類型 **&#x200B;**&#x200B;」定義為：
+* 對於「多行」 **資料類型** ，可將「預設類型 **** 」定義為：
 
    * **RTF 文字**
    * **Markdown**

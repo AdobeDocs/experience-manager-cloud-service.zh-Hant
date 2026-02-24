@@ -4,10 +4,11 @@ description: 瞭解存取和導覽Universal Editor的基本知識。
 solution: Experience Manager Sites
 feature: Authoring
 role: User
+badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: cca471c5511e7df57d2156d39649194f7a18a79c
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1874'
+source-wordcount: '1880'
 ht-degree: 19%
 
 ---
@@ -78,7 +79,7 @@ Experience Platform頂端導覽列一律會顯示在畫面頂端。 這是一個
 
 ![Experience Cloud 標頭](assets/experience-cloud-header.png)
 
-如需Experience Platform頂端導覽列的詳細資訊，請參閱[Adobe Experience Platform UI指南](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
+如需Experience Platform頂端導覽列的詳細資訊，請參閱[Adobe Experience Platform UI指南](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-ui/ui-guide#top-navigation-bar)
 
 #### 帳戶 {#user-properties}
 

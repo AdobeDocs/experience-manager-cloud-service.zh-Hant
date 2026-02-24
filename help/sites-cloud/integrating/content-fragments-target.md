@@ -2,12 +2,13 @@
 title: 將內容片段匯出到 Adobe Target
 description: 瞭解如何將您的內容片段匯出至Adobe Target，以測試並個人化體驗。
 exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
+badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 solution: Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1994'
+source-wordcount: '2000'
 ht-degree: 1%
 
 ---
@@ -169,7 +170,7 @@ If you do not see your cloud configuration, see note in [Configuring A4T Analyti
 
   >[!NOTE]
   >
-  >Target程式庫檔案[AT.JS](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html?lang=zh-Hant)是新的Adobe Target實作程式庫，專為典型Web實作和單頁應用程式而設計。
+  >Target程式庫檔案[AT.JS](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html)是新的Adobe Target實作程式庫，專為典型Web實作和單頁應用程式而設計。
   >
   >mbox.js已過時，並將在稍後階段移除。
   >
@@ -210,7 +211,7 @@ If you do not see your cloud configuration, see note in [Configuring A4T Analyti
 
 1. 在您的Target設定頁面上，按一下「可用設定」旁的&#x200B;**+** （加號）。
 
-1. 在[建立架構]對話方塊中，指定&#x200B;**標題**，選取&#x200B;**Adobe Target架構**，然後按一下[建立]&#x200B;**&#x200B;**。
+1. 在[建立架構]對話方塊中，指定&#x200B;**標題**，選取&#x200B;**Adobe Target架構**，然後按一下[建立]****。
 
    <!-- ![Configure Target Framework Dialog](assets/config-target-framework-dialog.png) -->
 
@@ -241,7 +242,7 @@ If you do not see your cloud configuration, see note in [Configuring A4T Analyti
 <!--
 ### Associating Activities With the Target Cloud Configuration  {#associating-activities-with-the-target-cloud-configuration}
 
-Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html?lang=zh-Hant).
+Associate your [AEM activities](/help/sites-cloud/authoring/personalization/activities.md) with your Target cloud configuration so that you can mirror the activities in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html).
 
 >[!NOTE]
 >
@@ -340,7 +341,7 @@ When you associate a page with the framework, the child pages inherit the associ
 
 ## 在Adobe Target中使用內容片段 {#using-your-content-fragments-in-adobe-target}
 
-執行先前的工作後，內容片段會顯示在Target的「選件」頁面中。 請參閱[特定的Target檔案](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html?lang=zh-Hant)，瞭解您可以達到的目標。
+執行先前的工作後，內容片段會顯示在Target的「選件」頁面中。 請參閱[特定的Target檔案](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html)，瞭解您可以達到的目標。
 
 >[!NOTE]
 >
@@ -378,10 +379,10 @@ When you associate a page with the framework, the child pages inherit the associ
 * [Creating a Target Cloud Configuration](/help/sites-cloud/integrating/integrating-adobe-target.md#create-configuration)
 -->
 
-* [核心元件 — 內容片段](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=zh-Hant)
+* [核心元件 — 內容片段](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)
 
 * [Adobe Target開發](https://developers.adobetarget.com/)
 
-* [Adobe Target — 在Target活動中使用AEM內容片段，以輔助最佳化或個人化](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html?lang=zh-Hant)
+* [Adobe Target — 在Target活動中使用AEM內容片段，以輔助最佳化或個人化](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html)
 
-* [Adobe Target - AEM體驗片段和內容片段概觀](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/aem-experience-and-content-fragments.html?lang=zh-Hant)
+* [Adobe Target - AEM體驗片段和內容片段概觀](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/aem-experience-and-content-fragments.html)

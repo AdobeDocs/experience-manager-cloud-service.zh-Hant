@@ -4,10 +4,11 @@ description: 瞭解如何管理內容片段模型；這些模型可作為您在A
 feature: Content Fragments
 role: User, Developer
 solution: Experience Manager Sites
+badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: f94f75c2-12fa-47c0-a71b-327f4210077d
-source-git-commit: ce807274d6138473ff9661897a0816e0feb99f15
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '2475'
+source-wordcount: '2481'
 ht-degree: 3%
 
 ---
@@ -240,7 +241,7 @@ Adobe Experience Manager (AEM) as a Cloud Service中的內容片段模型定義[
    您也可以定義各種屬性：
 
    * **標題**
-如果您先輸入&#x200B;**Title**，則會從該標題產生&#x200B;**Name**。
+如果您先輸入**Title**，則會從該標題產生&#x200B;**Name**。
    * **描述**
    * **啟用模型**&#x200B;以[啟用模型](#enabling-disabling-a-content-fragment-model)
 

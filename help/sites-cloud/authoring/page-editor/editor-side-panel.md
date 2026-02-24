@@ -1,13 +1,14 @@
 ---
 title: 頁面編輯器側面板
 description: 瞭解如何使用AEM網站編輯器中的側面板，將元件和資產新增至您的頁面。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: 5f025828-f2ca-4cbb-9cdf-a199e9e90cc7
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1122'
+source-wordcount: '1128'
 ht-degree: 0%
 
 ---
@@ -30,7 +31,7 @@ ht-degree: 0%
 
 ## 元件瀏覽器 {#components-browser}
 
-[元件](/help/implementing/developing/components/overview.md)是用來使用AEM頁面編輯器建立內容的建置區塊。 您可以在頁面上放置多個元件，並設定其選項以建置您的內容頁面。
+[元件](/help/implementing/developing/components/overview.md)是用於使用AEM頁面編輯器建立內容的建置區塊。 您可以在頁面上放置多個元件，並設定其選項以建置您的內容頁面。
 
 元件瀏覽器會顯示目前頁面上可用的所有元件。 這些檔案可以拖曳至適當位置，然後編輯以新增您的內容。
 
@@ -154,7 +155,7 @@ ht-degree: 0%
 
 開啟時，您可以看到頁面或範本的樹狀檢視表示法，因此更容易瞭解其內容如何階層架構。 此外，在複雜頁面上，它可讓您更輕鬆地在頁面元件之間跳轉。
 
-![內容樹狀結構](assets/editor-side-panel-content-tree.png)
+![內容樹](assets/editor-side-panel-content-tree.png)
 
 頁面可以輕鬆地由許多相同型別的元件組成，因此內容樹狀結構會在元件型別名稱（黑色）後面顯示描述性文字（灰色）。 描述性文字來自元件的常見屬性，例如標題或文字。
 

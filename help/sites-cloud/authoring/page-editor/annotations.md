@@ -1,20 +1,21 @@
 ---
 title: 新增頁面註解
 description: 使用註解模式，像使用註解一樣在頁面上留下註解和草圖，以協助您的內容檢閱程式
+badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '676'
-ht-degree: 0%
+source-wordcount: '682'
+ht-degree: 1%
 
 ---
 
 # 新增頁面註解 {#adding-page-annotations}
 
-為您的數位體驗建立內容通常需要在發佈前進行討論和提出意見。 為協助進行回饋意見程式，AEM可讓您將註解新增至內容。
+為您的數位體驗建立內容通常需要在發佈前進行討論和提出意見。 為協助進行回饋意見程式，AEM可讓您在內容中新增註解。
 
 註解會在頁面上放置簡單的草圖或註解（想象一下真實世界的註解）。 註解可讓您為其他作者和檢閱者留下評論或問題。
 
@@ -122,7 +123,7 @@ ht-degree: 0%
 
 1. 在頁面上[啟動附註模式](#annotate-mode)。
 
-1. 選取草繪。 AEM會以較暗的藍色方塊反白顯示。
+1. 選取草繪。 AEM會以較暗的藍色方塊反白標示出來。
 
    ![選取要刪除的草圖](/help/sites-cloud/authoring/assets/annotation-sketch-delete.png)
 

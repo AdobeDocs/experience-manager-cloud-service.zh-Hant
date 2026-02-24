@@ -1,13 +1,14 @@
 ---
 title: 使用標記
 description: 標籤是一種將網站內容分類的快速輕鬆方法
+badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: d2a9f578-fe0a-48ea-851c-2c84463661e0
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '566'
 ht-degree: 7%
 
 ---
@@ -29,8 +30,8 @@ ht-degree: 7%
 1. **已改善搜尋** - AEM中的預設搜尋元件包含大量已建立的標籤和已套用的標籤，可套用篩選器以將結果縮小到相關範圍。
 1. **啟用SEO** — 套用為頁面屬性的標籤會自動顯示在頁面的中繼資料中，使搜尋引擎可看見該頁面。
 1. **簡單化** — 只要使用單字及按一下按鈕即可建立標籤。 之後，可以新增標題、說明和無限標籤，為標籤提供更多語意。
-1. **核心一致性** — 標籤系統是AEM的核心元件，所有AEM功能都會使用此系統來分類內容。 此外，開發人員可以使用標籤API來建立已啟用標籤的應用程式，並存取相同分類法。
-1. **結合結構性與彈性** — 由於巢狀化頁面與路徑，AEM非常適合處理結構化資訊。 由於內建的全文檢索搜尋功能，在處理非結構化資訊時，也同樣強大。 標籤結合了結構和彈性的優點。
+1. **核心一致性** — 標籤系統是AEM的核心元件，可供所有AEM功能用來分類內容。 此外，開發人員可以使用標籤API來建立已啟用標籤的應用程式，並存取相同分類法。
+1. **結合結構性與彈性** — 由於巢狀化頁面和路徑，AEM非常適合處理結構化資訊。 由於內建的全文檢索搜尋功能，在處理非結構化資訊時，也同樣強大。 標籤結合了結構和彈性的優點。
 
 在設計網站的內容結構和資產的中繼資料結構時，請考慮標籤提供的輕量且方便存取的方法。
 
@@ -38,7 +39,7 @@ ht-degree: 7%
 
 在作者環境中，作者可以透過存取頁面屬性並在&#x200B;**標籤/關鍵字**&#x200B;欄位中輸入一或多個標籤來套用標籤。
 
-若要套用預先定義的標籤，請在「頁面屬 **性** 」視窗中使用「標籤 **」欄位和「選** 取標籤 **&#x200B;**&#x200B;」視窗。「標 **準標籤** 」標籤是預設的命名空間，這表示分類 `namespace-string:` 沒有前置詞。<!-- To apply [pre-defined tags](/help/sites-administering/tags.md), in the **Page Properties** window use the **Tags** field and the **Select Tags** window.-->
+若要套用預先定義的標籤，請在「頁面屬 **性** 」視窗中使用「標籤 **」欄位和「選** 取標籤 **** 」視窗。「標 **準標籤** 」標籤是預設的命名空間，這表示分類 `namespace-string:` 沒有前置詞。<!-- To apply [pre-defined tags](/help/sites-administering/tags.md), in the **Page Properties** window use the **Tags** field and the **Select Tags** window.-->
 
 ![選取多個標籤](/help/sites-cloud/authoring/assets/tags-select.png)
 
@@ -46,7 +47,7 @@ ht-degree: 7%
 
 與發佈和取消發佈頁面的方式類似，您可以對標籤和名稱空間執行以下操作：
 
-### 啟動 {#activate}
+### 啟用 {#activate}
 
 * 啟用個別標籤。
 

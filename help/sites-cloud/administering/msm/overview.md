@@ -3,11 +3,12 @@ title: 重複使用內容 - 多網站管理員和 Live Copy
 description: 了解如何使用 AEM 強大的 Live Copy 和多網站管理員功能重複使用內容。
 feature: Multi Site Manager
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
 solution: Experience Manager Sites
-source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '2719'
+source-wordcount: '2725'
 ht-degree: 91%
 
 ---

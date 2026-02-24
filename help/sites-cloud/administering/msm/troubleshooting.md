@@ -3,12 +3,13 @@ title: 疑難排解MSM問題和常見問題
 description: 瞭解如何疑難排解最常見的MSM相關問題，並取得最常見的MSM相關問題解答。
 feature: Multi Site Manager
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 0%
+source-wordcount: '768'
+ht-degree: 1%
 
 ---
 
@@ -28,13 +29,11 @@ MSM會在資源URL上向選取器註冊數個可請求的servlet。 這些可供
 1. `http://<host>:<port>/content/path/to/bluprint/page.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
    * 在Blueprint頁面上使用這個專案來擷取連結到它的所有即時副本清單，連同其他即時副本狀態資訊。
    * 例如：
-
      `http://localhost:4502/content/wknd/language-masters/en.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
 
 1. `http://<host>:<port>/content/path/to/livecopy/page.msm.json`
    * 在即時副本頁面上使用它可擷取有關其與Blueprint頁面連線的進階資訊。 如果頁面不是即時副本，則不會傳回任何專案。
    * 例如：
-
      `http://localhost:4502/content/wknd/ca/en.msm.json`
 
 這些servlet會透過`com.day.cq.wcm.msm`記錄器產生DEBUG記錄訊息，這些訊息也可能會有所幫助。
@@ -45,7 +44,7 @@ MSM會在資源URL上向選取器註冊數個可請求的servlet。 這些可供
 
 * `cq:LiveSync` mixin型別
    * 這是在`jcr:content`節點上設定，並定義根即時副本頁面。
-   * 這些頁面具有型別為`cq:LiveCopy`的`cq:LiveSyncConfig`子節點，其中包含透過下列屬性在即時副本上的基本和必要資訊：
+   * 這些頁面具有型別為`cq:LiveSyncConfig`的`cq:LiveCopy`子節點，其中包含透過下列屬性在即時副本上的基本和必要資訊：
       * `cq:master`指向即時副本的Blueprint頁面。
       * `cq:rolloutConfigs`表示套用至即時副本的有效轉出設定。
       * 如果此根即時副本頁面的子頁面包含在即時副本中，`cq:isDeep`為true。
@@ -62,7 +61,7 @@ MSM會在資源URL上向選取器註冊數個可請求的servlet。 這些可供
 
 * `select * from cq:LiveSync`會傳回所有即時副本根頁面。
 
-## 常見問題集 {#faq}
+## 常見問題 {#faq}
 
 以下是與MSM和即時副本相關的一些常見問題。
 

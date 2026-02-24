@@ -1,13 +1,14 @@
 ---
 title: AEM頁面編輯器
 description: AEM頁面編輯器是製作內容的強大工具。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: da7d5933-f6c9-4937-a483-ec4352fba86b
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 0a458616afad836efae27e67dbe145fc44bee968
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1431'
+source-wordcount: '1437'
 ht-degree: 3%
 
 ---

@@ -1,18 +1,19 @@
 ---
-title: 建立和管理選件 (選件主控台)
+title: 建立和管理產品建議 (產品建議主控台)
 description: 使用「選件」主控台來建立您可在活動體驗中使用的選件
+badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1351'
+source-wordcount: '1357'
 ht-degree: 1%
 
 ---
 
-# 建立和管理選件 (選件主控台) {#creating-and-managing-offers}
+# 建立和管理產品建議 (產品建議主控台) {#creating-and-managing-offers}
 
 **選件**&#x200B;主控台未來將停用。 所以，從現在開始：
 

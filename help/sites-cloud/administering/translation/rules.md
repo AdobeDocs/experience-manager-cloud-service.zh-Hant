@@ -3,28 +3,29 @@ title: 識別要翻譯的內容
 description: 瞭解翻譯規則如何識別需要翻譯的內容。
 feature: Language Copy
 role: Admin
+badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '1288'
+source-wordcount: '1294'
 ht-degree: 1%
 
 ---
 
 # 識別要翻譯的內容 {#identifying-content-to-translate}
 
-翻譯規則會針對翻譯專案中包含或排除的頁面、元件和資產，識別要翻譯的內容。 在翻譯頁面或資產時，AEM會擷取此內容，以便將其傳送至翻譯服務。
+翻譯規則會針對翻譯專案中包含或排除的頁面、元件和資產，識別要翻譯的內容。 在翻譯頁面或資產時，AEM會擷取此內容，以便傳送給翻譯服務。
 
 >[!TIP]
 >
->如果不熟悉如何翻譯內容，請參閱[網站翻譯歷程](/help/journey-sites/translation/overview.md)，此歷程將引導您使用AEM強大的翻譯工具來翻譯您的AEM Sites內容，非常適合沒有AEM或翻譯經驗的人士。
+>如果不熟悉如何翻譯內容，請參閱[網站翻譯歷程](/help/journey-sites/translation/overview.md)，其中會指引您使用AEM強大的翻譯工具來翻譯您的AEM Sites內容，非常適合沒有AEM或翻譯經驗的人士。
 
 ## 內容片段和翻譯規則 {#content-fragments}
 
-只有在[翻譯整合架構組態層級](integration-framework.md#assets-configuration-properties)尚未啟用&#x200B;**啟用翻譯的內容模型欄位**&#x200B;選項時，本檔案描述的翻譯規則才會套用至內容片段。
+只有在&#x200B;**翻譯整合架構組態層級**&#x200B;尚未啟用[啟用翻譯的內容模型欄位](integration-framework.md#assets-configuration-properties)選項時，本檔案描述的翻譯規則才會套用至內容片段。
 
-如果&#x200B;**啟用翻譯的內容模型欄位**&#x200B;選項作用中，AEM將會使用[內容片段模型](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties)上的&#x200B;**可翻譯**&#x200B;欄位來決定是否要翻譯該欄位並相應地自動建立翻譯規則。 此選項會取代您可能已建立的任何翻譯規則，而且不需要介入或額外的步驟。
+如果&#x200B;**啟用翻譯的內容模型欄位**&#x200B;選項作用中，AEM將會使用&#x200B;**內容片段模型**&#x200B;上的[可翻譯](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties)欄位來判斷是否要翻譯該欄位，並據此自動建立翻譯規則。 此選項會取代您可能已建立的任何翻譯規則，而且不需要介入或額外的步驟。
 
 如果要使用翻譯規則來翻譯您的內容片段，必須停用翻譯整合框架設定上的&#x200B;**啟用翻譯的內容模型欄位**&#x200B;選項，而且您必須依照下列步驟建立規則。
 
@@ -47,7 +48,7 @@ ht-degree: 1%
 * 包含要翻譯之內容的節點屬性名稱
    * 屬性可特定於特定資源型別或所有資源型別。
 
-例如，您可以建立規則來轉譯作者新增至您頁面上所有文字元件的內容。 此規則可以識別`core/wcm/components/text/v2/text`元件的`/content`節點和`text`屬性。
+例如，您可以建立規則來轉譯作者新增至您頁面上所有文字元件的內容。 此規則可以識別`/content`元件的`text`節點和`core/wcm/components/text/v2/text`屬性。
 
 已新增一個[主控台](#translation-rules-ui)來設定翻譯規則。 UI中的定義將為您填入檔案。
 
@@ -80,7 +81,7 @@ ht-degree: 1%
    * `resourceType`屬性包含解析為實作資源型別的元件的路徑。
    * 子項`property`元素識別要翻譯的節點屬性。 以與節點規則的子`property`元素相同的方式使用此節點。
 
-下列範例規則會為`/content`節點下的所有頁面轉譯所有`text`屬性的內容。 此規則適用於任何將內容儲存在`text`屬性中的元件，例如文字元件。
+下列範例規則會為`text`節點下的所有頁面轉譯所有`/content`屬性的內容。 此規則適用於任何將內容儲存在`text`屬性中的元件，例如文字元件。
 
 ```xml
 <node path="/content">
@@ -122,7 +123,7 @@ ht-degree: 1%
 
 ## 覆寫規則 {#overriding-rules}
 
-`translation_rules.xml`檔案包含具有數個子項`node`專案的`nodelist`專案。 AEM會從上到下讀取節點清單。 如果有多個規則鎖定同一個節點，系統會使用檔案中較低位置的規則。 例如，下列規則會翻譯`text`屬性中的所有內容，但頁面的`/content/mysite/en`分支除外：
+`translation_rules.xml`檔案包含具有數個子項`nodelist`專案的`node`專案。 AEM會從上到下讀取節點清單。 如果有多個規則鎖定同一個節點，系統會使用檔案中較低位置的規則。 例如，下列規則會翻譯`text`屬性中的所有內容，但頁面的`/content/mysite/en`分支除外：
 
 ```xml
 <nodelist>
@@ -172,7 +173,7 @@ ht-degree: 1%
 
    ![選取內容](../assets/select-context.png)
 
-1. 接著您必須選取內容，然後按一下[編輯]。**&#x200B;** 如此將可開啟翻譯規則編輯器。
+1. 接著您必須選取內容，然後按一下[編輯]。**** 如此將可開啟翻譯規則編輯器。
 
    ![翻譯規則編輯器](../assets/translation-rules-editor.png)
 

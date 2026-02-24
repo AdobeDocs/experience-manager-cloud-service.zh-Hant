@@ -1,20 +1,21 @@
 ---
 title: 還原和重做限制
 description: 瞭解AEM頁面編輯器中還原和重做選項的限制。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: 87773f47-5116-4966-9ba4-5deedb7c4fa6
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '313'
 ht-degree: 1%
 
 ---
 
 # 還原和重做限制 {#undo-redo}
 
-AEM會儲存您執行動作的歷史記錄，以及執行動作的順序，如此一來，您就可以依照執行動作的順序復原多個動作，並視需要重做這些動作，以重新套用一或多個動作。
+AEM會儲存您執行動作的歷史記錄，以及執行動作的順序，如此一來，您就可以依照執行動作的順序復原多個動作，並視需要重做動作，以重新套用一或多個動作。
 
 如果選取了內容頁面上的元素（例如文字元件），則復原和重做命令會套用至選取的專案。
 

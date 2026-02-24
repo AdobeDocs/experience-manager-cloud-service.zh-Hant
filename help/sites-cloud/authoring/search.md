@@ -1,14 +1,15 @@
 ---
 title: 搜尋
 description: 透過完整的搜尋更快找到您的內容
+badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: 8a799e9a-1461-4e79-ae90-1978af6cf0ed
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '492'
-ht-degree: 7%
+source-wordcount: '498'
+ht-degree: 8%
 
 ---
 
@@ -62,14 +63,14 @@ AEM的製作環境提供多種搜尋內容的機制，視資源型別而定。
    * 已儲存的搜尋
    * 搜尋目錄
    * 標記
-   * 搜尋條件，例如修改日期、Publish狀態、即時副本狀態
+   * 搜尋條件，例如修改日期、發佈狀態、即時副本狀態
 
    >[!NOTE]
    >
    >搜尋條件可能有所不同：
    >
    >* 視您選取的資源型別而定；例如，Assets和Communities條件可理解為專門化。
-   >* 您可以自訂執行個體(適用於AEM內的位置)，以作為「搜尋Forms」。
+   >* 您可以自訂執行個體(適用於AEM內的位置)，以作為搜尋Forms。
 
 <!--
   >* Your instance as the [Search Forms](/help/sites-administering/search-forms.md) can be customized (appropriate to the location within AEM).
@@ -79,7 +80,7 @@ AEM的製作環境提供多種搜尋內容的機制，視資源型別而定。
 
 1. 您也可以新增其他搜尋詞。
 
-1. 使用 **X** (右上方 **&#x200B;**&#x200B;)關閉搜尋。
+1. 使用 **X** (右上方 **** )關閉搜尋。
 
 >[!NOTE]
 >

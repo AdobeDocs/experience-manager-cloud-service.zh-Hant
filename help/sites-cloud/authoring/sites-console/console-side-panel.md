@@ -1,13 +1,14 @@
 ---
 title: 網站主控台側面板
 description: 瞭解如何使用AEM Sites主控台中的側邊面板，以更加瞭解並導覽您的內容。
+badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: 7f2571d6-b847-4cce-8e94-94ba0d2e04a5
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 18cbf1c963fa4f12b69a08859a7ca855f0ac601b
+source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '834'
 ht-degree: 5%
 
 ---
@@ -27,7 +28,7 @@ ht-degree: 5%
 * [時間軸](#timeline)
 * [參照](#references)
 * [網站](#site)
-* [篩選](#filter)
+* [篩選器](#filter)
 * [設定 Analytics](#setup-analytics)
 
 ![網站主控台的側面板檢視](assets/sites-console-side-panel-views.png)
@@ -122,7 +123,7 @@ ht-degree: 5%
 >
 >您可以在[快速網站建立歷程](/help/journey-sites/quick-site/overview.md)中找到從範本建立網站並自訂其主題的程式的端對端說明。
 
-## 篩選 {#filter}
+## 篩選器 {#filter}
 
 **篩選器**&#x200B;面板類似於[搜尋功能](/help/sites-cloud/authoring/search.md)，已設定適當的位置篩選器，可讓您進一步篩選您要檢視的內容。
 
