@@ -40,7 +40,7 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->范 **** 本編輯器不支援直接在範本層級定位。可以定位根據可編輯範本建立的頁面，但無法定位範本本身。
+>范 **&#x200B;**&#x200B;本編輯器不支援直接在範本層級定位。可以定位根據可編輯範本建立的頁面，但無法定位範本本身。
 
 ## 開始之前 {#before-you-start}
 
@@ -257,7 +257,7 @@ ht-degree: 7%
 
 #### 版面配置 {#template-layout}
 
-使用版 [面](#editing-a-template-layout-template-author) ，您可以預先定義所需裝置格式的範本版面。**範本製作的** 「版面」模式與頁面製作的「版面 [**** 」模式功能相同](/help/sites-cloud/authoring/page-editor/responsive-layout.md#defining-layouts-layout-mode)。
+使用版 [面](#editing-a-template-layout-template-author) ，您可以預先定義所需裝置格式的範本版面。**範本製作的** 「版面」模式與頁面製作的「版面 [**&#x200B;** 」模式功能相同](/help/sites-cloud/authoring/page-editor/responsive-layout.md#defining-layouts-layout-mode)。
 
 #### 頁面原則 {#template-page-policies}
 
@@ -298,7 +298,7 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->將現成可用的標題元件新增至範本時 **** ，其中會包含預設的文字 **結構**。
+>將現成可用的標題元件新增至範本時 **&#x200B;**&#x200B;，其中會包含預設的文字 **結構**。
 >
 >如果您變更此專案，並新增您自己的文字，則從範本建立頁面時，會使用此更新的文字。
 >
@@ -478,7 +478,7 @@ ht-degree: 7%
 
 為了節省空間，配置容器不會為了容納允許的元件清單而增大。 容器會變成可捲動清單。
 
-可配置的元件以「策略」表徵圖顯示 **** ，可以點選或按一下該表徵圖以編輯該元件的策略和屬性。
+可配置的元件以「策略」表徵圖顯示 **&#x200B;**&#x200B;，可以點選或按一下該表徵圖以編輯該元件的策略和屬性。
 
 ![可設定的元件圖示](/help/sites-cloud/authoring/assets/templates-configurable-component.png)
 
@@ -492,7 +492,7 @@ ht-degree: 7%
 
 **初始內容**&#x200B;模式用於定義首次根據範本建立頁面時顯示的內容。 然後，頁面作者可以編輯初始內容。
 
-雖然在「結構 **」模式下建立的所有內容在「初始內容」中都可** 見 ****，但只能選擇和編輯已解鎖的元件。
+雖然在「結構 **」模式下建立的所有內容在「初始內容」中都可** 見 **&#x200B;**，但只能選擇和編輯已解鎖的元件。
 
 >[!NOTE]
 >
@@ -506,9 +506,9 @@ ht-degree: 7%
 
   ![已解除鎖定的元件](/help/sites-cloud/authoring/assets/templates-unlocked-components.png)
 
-* 如果容器元件已解除鎖定(在「結 **構** 」模式中)，則您可以在「初始內容 **** 」模式中新增元件至容器。在「初始內 **容」模式中新增的元件** ，可在產生的頁面上移動或從中刪除。
+* 如果容器元件已解除鎖定(在「結 **構** 」模式中)，則您可以在「初始內容 **&#x200B;**&#x200B;」模式中新增元件至容器。在「初始內 **容」模式中新增的元件** ，可在產生的頁面上移動或從中刪除。
 
-  您可以使用「拖曳元件到此處 **」區域，或從適當容器的工具列** 中使用「插入新元件 **** 」選項來新增元件。
+  您可以使用「拖曳元件到此處 **」區域，或從適當容器的工具列** 中使用「插入新元件 **&#x200B;**&#x200B;」選項來新增元件。
 
   ![新增元件](/help/sites-cloud/authoring/assets/templates-add-component.png)
   ![新增元件](/help/sites-cloud/authoring/assets/templates-add-component-dialog.png)
@@ -533,7 +533,7 @@ ht-degree: 7%
 
 ### 編輯範本 — 頁面原則 — 範本作者/開發人員 {#editing-a-template-page-policy-template-author-developer}
 
-「頁面資訊」功能表的「頁面政策」選項下會維護包含必要用戶端程 **式庫的頁面原** 則 **** 。
+「頁面資訊」功能表的「頁面政策」選項下會維護包含必要用戶端程 **式庫的頁面原** 則 **&#x200B;**&#x200B;。
 
 若要存取&#x200B;**頁面原則**&#x200B;對話方塊：
 

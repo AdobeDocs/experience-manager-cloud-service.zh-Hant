@@ -17,7 +17,7 @@ ht-degree: 6%
 
 Adobe Experience Manager (AEM)可讓您設定帳戶及製作環境的特定方面。
 
-使用頁 [首和相關「我的首選項](#user-settings) 」對話框中的「用戶」選項 [](/help/sites-cloud/authoring/basic-handling.md#the-header)[](#my-preferences) ，可以修改用戶選項，例如。
+使用頁 [首和相關「我的首選項](#user-settings) 」對話框中的「用戶」選項 [&#128279;](/help/sites-cloud/authoring/basic-handling.md#the-header) [&#128279;](#my-preferences) ，可以修改用戶選項，例如。
 
 首先，存取標頭中的[使用者](#user-settings)選項。
 

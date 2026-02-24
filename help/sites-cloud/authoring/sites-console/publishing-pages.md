@@ -80,7 +80,7 @@ ht-degree: 5%
 
    ![選取要發行的頁面](/help/sites-cloud/authoring/assets/publishing-select-pages.png)
 
-1. 在[快速發佈]對話方塊中，按一下[發佈]****&#x200B;以確認發佈，或按一下[取消]****&#x200B;以取消發佈。 請記住，任何未發佈的參考也會自動發佈。
+1. 在[快速發佈]對話方塊中，按一下[發佈]&#x200B;**&#x200B;**&#x200B;以確認發佈，或按一下[取消]&#x200B;**&#x200B;**&#x200B;以取消發佈。 請記住，任何未發佈的參考也會自動發佈。
 
    ![快速發佈確認](/help/sites-cloud/authoring/assets/publishing-quick-publish.png)
 
@@ -126,7 +126,7 @@ ht-degree: 5%
 
    ![管理出版物選項](/help/sites-cloud/authoring/assets/publishing-manage-publication-options.png)
 
-1. 按一下[下一步]****&#x200B;繼續。
+1. 按一下[下一步]&#x200B;**&#x200B;**&#x200B;繼續。
 
 1. 在管理發布精靈的下一個步驟&#x200B;**範圍**&#x200B;中，您可以定義發佈/取消發佈的範圍，例如包含子頁面和/或包含參考。
 
@@ -138,7 +138,7 @@ ht-degree: 5%
 
    選取&#x200B;**新增內容**&#x200B;按鈕會啟動[路徑瀏覽器](/help/sites-cloud/authoring/path-selection.md)以允許選擇內容。
 
-   選取必要的頁面，然後按一下[選取]將內容加入精靈，或按一下[選取]將內容加入精靈，或按一下[取消]取消選取並返回精靈。********
+   選取必要的頁面，然後按一下[選取]將內容加入精靈，或按一下[選取]將內容加入精靈，或按一下[取消]取消選取並返回精靈。**&#x200B;**&#x200B;**&#x200B;**
 
    **移除選取專案**
 
@@ -204,7 +204,7 @@ ht-degree: 5%
 如同您[使用[管理出版物]選項發佈](#manage-publication)一樣，您也可以使用它來取消發佈。
 
 1. 在網站主控台中選取一個或多個頁面，然後按一下&#x200B;**管理出版物**&#x200B;按鈕。
-1. 「管 **理出版物** 」嚮導將啟動。在第一個步驟中， **選項**，選擇「取消發佈」(Unpublish **)，而非「發佈」(Publish)的預設** 選項 ****。
+1. 「管 **理出版物** 」嚮導將啟動。在第一個步驟中， **選項**，選擇「取消發佈」(Unpublish **)，而非「發佈」(Publish)的預設** 選項 **&#x200B;**。
 
    ![取消發佈 — 選項](/help/sites-cloud/authoring/assets/publishing-unpublish.png)
 
@@ -258,7 +258,7 @@ ht-degree: 5%
 
   ![卡片檢視中的發佈狀態](/help/sites-cloud/authoring/assets/publishing-status-console-card.png)
 
-  發佈狀態會顯示在 [網站主控台](/help/sites-cloud/authoring/basic-handling.md#card-view)[的卡片](/help/sites-cloud/authoring/basic-handling.md#column-view)、欄和 [清單檢視中](/help/sites-cloud/authoring/basic-handling.md#list-view) 。
+  發佈狀態會顯示在 [網站主控台](/help/sites-cloud/authoring/basic-handling.md#card-view) [的卡片](/help/sites-cloud/authoring/basic-handling.md#column-view)、欄和 [清單檢視中](/help/sites-cloud/authoring/basic-handling.md#list-view) 。
 
 * 在[時間表](/help/sites-cloud/authoring/basic-handling.md#timeline)中
 

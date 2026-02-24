@@ -161,7 +161,7 @@ ht-degree: 5%
 >
 >選件是目標元件的內容。
 
-體驗會顯示在「客群」窗格中。在下列範例中，體驗包 **括Default**、 **Femole**、 **Femole 30歲以上，******&#x200B;以及Femole 30歲以下。此範例顯示目標影像元件的「預設 **」產品建議** 。
+體驗會顯示在「客群」窗格中。在下列範例中，體驗包 **括Default**、 **Femole**、 **Femole 30歲以上，**&#x200B;**&#x200B;**&#x200B;以及Femole 30歲以下。此範例顯示目標影像元件的「預設 **」產品建議** 。
 
 ![目標影像元件](../assets/targeted-image-component.png)
 
@@ -169,7 +169,7 @@ ht-degree: 5%
 
 ![目標影像元件已變更](../assets/targeted-image-different.png)
 
-當選取體驗且目標元件不包含該體驗的產品建議時，元件會顯示疊加在半透明預設產品建議上的「新增產品建議 **** 」。當未建立任何體驗的產品建議時，會針對對應至 **體驗的區段顯示** 「預設」產品建議。
+當選取體驗且目標元件不包含該體驗的產品建議時，元件會顯示疊加在半透明預設產品建議上的「新增產品建議 **&#x200B;**&#x200B;」。當未建立任何體驗的產品建議時，會針對對應至 **體驗的區段顯示** 「預設」產品建議。
 
 ![新增選件](../assets/targeted-add-offer.png)
 
@@ -230,7 +230,7 @@ ht-degree: 5%
 
 1. 選取體驗名稱旁的箭頭。
 1. 按一下&#x200B;**複製**&#x200B;並選擇對象。
-1. 如有需要，請重新命名體驗，然後按一下[確定]。****
+1. 如有需要，請重新命名體驗，然後按一下[確定]。**&#x200B;**
 
 ### 使用定位模式建立選件 {#creating-offers-using-targeting-mode}
 
@@ -518,13 +518,13 @@ ht-degree: 5%
    * **指定的日期和時間**：特定時間。 選取此選項時，請選取日曆圖示，選取日期，並指定活動結束時間。
 
 1. 若要指定活動的優先順序，請使用滑桿來選取&#x200B;**低**、**正常**&#x200B;或&#x200B;**高**。
-1. 如果您已使用Adobe target帳戶設定Adobe Analytics，則會看到「報 **告來源** 」下拉式功能表。選取 **Adobe Target****或** Adobe Analytics做為來源。
+1. 如果您已使用Adobe target帳戶設定Adobe Analytics，則會看到「報 **告來源** 」下拉式功能表。選取 **Adobe Target**&#x200B;**或** Adobe Analytics做為來源。
 
    如果您選取&#x200B;**Adobe Analytics**，請選取公司與報表套裝。 如果您選取&#x200B;**Adobe Target**，則不需要採取任何動作。
 
    ![報告來源](../assets/targeted-reporting-source.png)
 
-1. 在「目 **標量度** 」區域的「我的主要目標 **** 」下方，選取您要追蹤的成功量度——轉換、收入、參與——並輸入量度的測量方式 (或客群採取哪些動作來指出已達成目標)。請參閱上表中目標量度的定義，並參閱 [Adobe Target成功量度的相關檔案](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html) 。
+1. 在「目 **標量度** 」區域的「我的主要目標 **&#x200B;**&#x200B;」下方，選取您要追蹤的成功量度——轉換、收入、參與——並輸入量度的測量方式 (或客群採取哪些動作來指出已達成目標)。請參閱上表中目標量度的定義，並參閱 [Adobe Target成功量度的相關檔案](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html) 。
 
    您可以重新命名目標，只需要按一下右上角的三個點並選取&#x200B;**重新命名**。
 
@@ -636,6 +636,6 @@ ht-degree: 5%
 >
 >如果您要整合AEM與Adobe Campaign，請選取&#x200B;**Adobe Campaign**&#x200B;作為引擎。 如需詳細資訊，請參閱整合AEM與Adobe Campaign 。
 >
->如果您使用ContextHub進行目標定位，請選取&#x200B;**ContextHub**作為引擎。 如需詳細資訊，請參閱設定ContextHub 。
+>如果您使用ContextHub進行目標定位，請選取&#x200B;**ContextHub**&#x200B;作為引擎。 如需詳細資訊，請參閱設定ContextHub 。
 <!--You select **Adobe Campaign** as the engine if you are integrating AEM with Adobe Campaign. See [Integrating AEM with Adobe Campaign](/help/sites-administering/campaign.md) for more information.-->
 <!--Select **ContextHub** as the engine if you are using ContextHub for targeting. See [Configuring ContextHub](/help/sites-administering/contexthub-config.md).-->

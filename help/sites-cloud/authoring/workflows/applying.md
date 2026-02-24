@@ -108,7 +108,7 @@ ht-degree: 11%
 
    >[!NOTE]
    >
-   >當為「 **** 多資源支援」配置了工作流且已選擇多個資源時，「保留工作流包」選項可用。
+   >當為「 **&#x200B;**&#x200B;多資源支援」配置了工作流且已選擇多個資源時，「保留工作流包」選項可用。
 
    <!--
    >The **Keep workflow package** option is available when the workflow has been configured for [Multi Resource Support](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support) and multiple resources have been selected.
@@ -124,7 +124,7 @@ ht-degree: 11%
 
    * 檢視其他動作的現有資源：
 
-      * **包含子項**以指定該資源的子項包含在工作流程中。
+      * **包含子項**&#x200B;以指定該資源的子項包含在工作流程中。
 對話方塊開啟，可讓您根據下列條件調整選取範圍：
 
          * 僅包含直接子項。
