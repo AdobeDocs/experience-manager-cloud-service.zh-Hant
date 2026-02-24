@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Image Presets,Viewers,Renditions
 role: User
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: 5bccf61158c40f9c6dd84ea91d005da370686781
 workflow-type: tm+mt
-source-wordcount: '3550'
+source-wordcount: '2596'
 ht-degree: 6%
 
 ---
@@ -54,113 +54,142 @@ ht-degree: 6%
 >
 >當您在資產的詳細資料檢視中選取&#x200B;**[!UICONTROL 轉譯]**&#x200B;時，系統會顯示各種轉譯。 您可以增加或減少顯示的影像預設集數目。 請參閱[增加顯示的影像預設集數目](#increasing-or-decreasing-the-number-of-image-presets-that-display)。
 
-### Adobe Illustrator (AI)、PostScript® (EPS)和PDF檔案格式 {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
+## 影像預設集與轉譯的相關性 {#how-image-presets-relate-to-renditions}
 
-如果您想要支援AI、EPS和PDF檔案的擷取，以便產生這些檔案格式的動態轉譯，請在建立影像預設集之前檢閱下列資訊。
+影像預設集定義Dynamic Media傳送影像的方式，包括調整大小、格式設定、壓縮和其他顯示引數。 預設集本身不會產生轉譯。 相反地，這類資產會依賴處理資產時建立的轉譯。
 
-Adobe Illustrator的檔案格式是PDF的變體。 在Experience Manager Assets的情境下，主要差異如下：
+### AEM as a Cloud Service中的轉譯產生{#rendition-generation-in-aemaacs}
 
-* Adobe Illustrator檔案是由多層組成的單一頁面。 每個圖層都會擷取為Illustrator主資產下的PNG子資產。
-* PDF檔案包含一或多個頁面。 每個頁面都會擷取為主要多頁PDF檔案下的單一頁面PDF子資產。
+在AEM as a Cloud Service中，轉譯是使用&#x200B;**資產微服務**&#x200B;產生。 DAM更新資產工作流程無法在Cloud Service中進行自訂。
 
-`Create Sub Asset process`元件會在整體`DAM Update Asset`工作流程中建立子資產。 若要在工作流程中檢視此程式元件，請瀏覽至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 工作流程]** > **[!UICONTROL 模型]** > **[!UICONTROL DAM更新資產]** > **[!UICONTROL 編輯]**。
+重要考量事項包括：
 
-<!-- See also [Viewing pages of a multi-page file](/help/assets/manage-linked-subassets.md#view-pages-of-a-multi-page-file). -->
+* 轉譯會在上傳時產生。
+* 處理設定檔的變更會影響新上傳的資產。 如果需要新轉譯，則必須重新處理現有資產。
+* AEM as a Cloud Service不支援自訂工作流程模型以產生轉譯。
 
-您可以在開啟資產時檢視子資產或頁面、選取「內容」功能表，然後選取&#x200B;**[!UICONTROL 子資產]**&#x200B;或&#x200B;**[!UICONTROL 頁面]**。 子資產是真正的資產。 `Create Sub Asset`工作流程元件會提取PDF頁面。 然後，它們會儲存為主資產下方的`page1.pdf`、`page2.pdf`等。 儲存這些變數後，`DAM Update Asset`工作流程會加以處理。
+影像預設集會參考傳送時可用的轉譯。 在設定或使用影像預設集之前，請確認必要轉譯存在。
 
-若要使用Dynamic Media來預覽和產生AI、EPS或PDF檔案的動態轉譯，必須執行下列處理步驟：
+**若要控制產生哪些轉譯：**
 
-1. 在`DAM Update Asset`工作流程中，`Rasterize PDF/AI Image Preview Rendition`處理程式元件會使用設定的解析度，將原始資產的第一個頁麵點陣化為`cqdam.preview.png`轉譯。
+1. 建立或編輯[處理設定檔](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use#)。
+2. 設定必要的轉譯定義。
+3. 將處理設定檔套用至適當的資料夾。
 
-1. 工作流程中的`Dynamic Media Process Image Assets`處理序元件會將`cqdam.preview.png`轉譯最佳化為PTIFF。
+當資產上傳至已套用處理設定檔的資料夾時，資產微服務會自動產生定義的轉譯。
+
+<!--
+### Adobe Illustrator (AI), PostScript&reg; (EPS), and PDF file formats {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
+
+If you intend to support the ingestion of AI, EPS, and PDF files so that you can generate dynamic renditions of these file formats, review the following information before you create Image Presets.
+
+Adobe Illustrator's file format is a variant of PDF. The main differences, in the context of Experience Manager Assets, are the following:
+
+* Adobe Illustrator documents consist of a single page with multiple layers. Each layer is extracted as a PNG subasset under the main Illustrator asset.
+* PDF documents consist of one or more pages. Each page is extracted as a single page PDF subasset under the main multi-page PDF document.
+
+The `Create Sub Asset process` component creates the subassets within the overall `DAM Update Asset` workflow. To see this process component within the workflow, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]** > **[!UICONTROL DAM Update Asset]** > **[!UICONTROL Edit]**.
+
+See also [Viewing pages of a multi-page file](/help/assets/manage-linked-subassets.md#view-pages-of-a-multi-page-file).
+
+You can view the subassets or the pages when you open the asset, select the Content menu, and select **[!UICONTROL Subassets]** or **[!UICONTROL Pages]**. The subassets are real assets. The `Create Sub Asset` workflow component extracts the PDF pages. They are then stored as `page1.pdf`, `page2.pdf`, and so on, below the main asset. After they are stored, the `DAM Update Asset` workflow processes them.
+
+To use Dynamic Media to preview and generate dynamic renditions for AI, EPS or PDF files, the following processing steps are required:
+
+1. In the `DAM Update Asset` workflow, the `Rasterize PDF/AI Image Preview Rendition` process component rasterizes the first page of the original asset &ndash; using the configured resolution &ndash; into a `cqdam.preview.png` rendition.
+
+1. The `Dynamic Media Process Image Assets` process component within the workflow optimizes the `cqdam.preview.png` rendition into a PTIFF.
 
 >[!NOTE]
 >
->在「DAM更新資產」工作流程中， **[!UICONTROL EPS縮圖步驟]** ，會為EPS檔案生成縮圖。
+>In the DAM Update Asset workflow, the **[!UICONTROL EPS thumbnails]** step generates thumbnails for EPS files.
 
-#### PDF/AI/EPS資產中繼資料屬性 {#pdf-ai-eps-asset-metadata-properties}
+#### PDF/AI/EPS asset metadata properties {#pdf-ai-eps-asset-metadata-properties}
 
-| **中繼資料屬性** | **說明** |
+| **Metadata property** |**Description** |
 |---|---|
-| `dam:Physicalwidthininches` | 檔案寬度（英吋）。 |
-| `dam:Physicalheightininches` | 檔案高度（英吋）。 |
+| `dam:Physicalwidthininches` |Document width in inches. |
+| `dam:Physicalheightininches` |Document height in inches. |
 
-您透過`DAM Update Asset`工作流程存取`Rasterize PDF/AI Image Preview Rendition`程式元件選項。
+You access `Rasterize PDF/AI Image Preview Rendition` process component options by way of the `DAM Update Asset` workflow.
 
-選取左上方的Adobe Experience Manager，按一下&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 工作流程]** > **[!UICONTROL 模型]**。 在工作流程模型頁面上，選取&#x200B;**[!UICONTROL DAM更新資產]**，然後在工具列上選取&#x200B;**[!UICONTROL 編輯]**。 在「 DAM更新資產」工作流程頁面上，連按兩下`Rasterize PDF/AI Image Preview Rendition`流程元件，以開啟其「步驟屬性」對話方塊。
+Select Adobe Experience Manager in the upper left, the click **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**. On the Workflow Models page, select **[!UICONTROL DAM Update Asset]**, then on the toolbar select **[!UICONTROL Edit]**. On the DAM Update Asset workflow page, double-select the `Rasterize PDF/AI Image Preview Rendition` process component to open its Step Properties dialog box.
 
-#### 點陣化PDF/AI影像預覽轉譯選項 {#rasterize-pdf-ai-image-preview-rendition-options}
+#### Rasterize PDF/AI Image Preview Rendition options {#rasterize-pdf-ai-image-preview-rendition-options}
 
-![點陣化PDF或AI工作流程的引數](assets/rasterize_pdf_ai_image_preview.png)
+![Arguments to rasterize PDF or AI workflow](assets/rasterize_pdf_ai_image_preview.png)
 
-點陣化PDF或AI工作流程的引數
+Arguments to rasterize PDF or AI workflow
 
-| 程式引數 | 預設設定 | 描述 |
+|Process Argument | Default setting | Description |
 |---|---|---|
-| Mime 類型 | application/pdf<br>application/postscript<br>application/illustrator | 視為PDF或Illustrator檔案的檔案mime型別清單。 |
-| 最大寬度 | 2048 | 所產生預覽轉譯的最大寬度（畫素）。 |
-| 最大高度 | 2048 | 所產生預覽轉譯的最大高度（畫素）。 |
-| 解決方法 | 72 | 點陣化第一頁的解析度，以ppi （每英吋畫素）為單位。 |
+| Mime Types | application/pdf<br>application/postscript<br>application/illustrator| List of document mime-types that are considered to be PDF or Illustrator documents. |
+| Max Width | 2048 | Maximum width of the generated preview rendition, in pixels.|
+| Max Height | 2048| Maximum height of the generated preview rendition, in pixels. |
+| Resolution | 72 | Resolution to rasterize the first page, in ppi (pixels per inch). |
 
-使用預設處理引數，PDF/AI檔案的第一頁會以72 ppi點陣化，而產生的預覽影像會以2048 x 2048畫素調整大小。 對於典型的部署，您可以將解析度提高到至少150 ppi或更高。 例如，300 ppi的美國字母大小檔案分別需要最大寬度和高度2550 x 3300畫素。
+Using the default process arguments, the first page of a PDF/AI document is rasterized at 72 ppi and the generated preview image is sized at 2048 x 2048 pixels. For a typical deployment, you can increase the resolution to a minimum of 150 ppi or more. For example, a US letter size document at 300 ppi requires a maximum width and height of 2550 x 3300 pixels, respectively.
 
-「最大寬度」和「最大高度」會限制點陣化的解析度。 例如，如果最大值保持不變，且「解析度」設定為300 ppi，則「美國信函」檔案會以186 ppi點陣化。 也就是說，檔案是1581 x 2046畫素。
+Max Width and Max Height limit the resolution at which to rasterize. For example, if the maximums are unchanged, and Resolution is set to 300 ppi, a US Letter document is rasterized at 186 ppi. That is, the document is 1581 x 2046 pixels.
 
-`Rasterize PDF/AI Image Preview Rendition`處理序元件已定義上限，以確保它不會在記憶體中建立過大的影像。 如此大型的影像可能會使提供給JVM (Java™虛擬機器器)的記憶體溢位。 務必為JVM提供足夠的記憶體來管理已設定的並行工作流程數量，讓每個工作流程都能在已設定的最大大小下建立影像。
+The `Rasterize PDF/AI Image Preview Rendition` process component has a maximum defined to ensure that it does not create overly large images in memory. Such large images can overflow the memory provided to the JVM (Java&trade; Virtual Machine). Care must be taken to provide the JVM with enough memory to manage the configured number of parallel workflows, with each having the potential to create an image at the maximum configured size. -->
 
-### InDesign (INDD)檔案格式 {#indesign-indd-file-format}
+<!--
+### InDesign (INDD) file format {#indesign-indd-file-format}
 
-如果您想要支援INDD檔案的擷取，以便產生此檔案格式的動態轉譯，請在建立「影像預設集」之前檢閱下列資訊。
+If you intend to support the ingestion of INDD files so that you can generate dynamic rendition of this file format, review the following information before you create Image Presets.
 
-針對InDesign檔案，只有在Adobe InDesign Server已與Experience Manager整合時，才會擷取子資產。 參照的資產會根據其中繼資料進行連結。 連結不需要InDesign Server。 不過，在處理InDesign檔案之前，參考的資產必須存在於Experience Manager中，才能在InDesign檔案和參考資產之間建立連結。
+For InDesign files, sub assets are extracted only if the Adobe InDesign Server is integrated with Experience Manager. Referenced assets are linked based on their metadata. InDesign Server is not required for linking. However, the referenced assets must be present within Experience Manager before the InDesign files are processed for the links to be created between the InDesign files and the referenced assets.
 
-<!-- See [Integrate Experience Manager Assets with InDesign Server](/help/assets/indesign.md). -->
+See [Integrate Experience Manager Assets with InDesign Server](/help/assets/indesign.md).
 
-`DAM Update Asset`工作流程中的媒體擷取程式元件會執行數個預先設定的擴充指令碼，以處理InDesign檔案。
+The Media Extraction process component in the `DAM Update Asset` workflow runs several pre-configured Extend Scripts to process InDesign files.
 
-![媒體擷取程式引數中的ExtendScript路徑](/help/assets/dynamic-media/assets/6_5_mediaextractionprocess.png)
+![The ExtendScript paths in the arguments of Media Extraction process](/help/assets/dynamic-media/assets/6_5_mediaextractionprocess.png)
 
-DAM更新資產工作流程中媒體提取程式元件引數中的ExtendScript路徑。
+The ExtendScript paths in the arguments of the Media Extraction process component in the DAM Update Asset workflow.
 
-Dynamic Media整合會使用下列指令碼：
+The following scripts are used by Dynamic Media integration:
 
 
-| ExtendScript名稱 | 預設 | 說明 |
+|ExtendScript name | Default | Description |
 |---|---|---|
-| ThumbnailExport.jsx | 是 | 產生300 PPI `thumbnail.jpg`轉譯，已由`Dynamic Media Process Image Assets`處理序元件最佳化並轉換為PTIFF轉譯。 |
-| JPEGPagesExport.jsx | 是 | 為每個頁面產生300 PPI JPEG子資產。 JPEG子資產是儲存在InDesign資產下的實際資產。 `DAM Update Asset`工作流程會最佳化並將其轉換為PTIFF。 |
-| PDFPagesExport.jsx | 否 | 為每個頁面產生PDF子資產。 PDF子資產會依照先前所述進行處理。 由於PDF僅包含單一頁面，因此不會產生任何子資產。 |
+| ThumbnailExport.jsx | Yes  | Generates a 300 PPI `thumbnail.jpg` rendition that is optimized and turned into a PTIFF rendition by `Dynamic Media Process Image Assets` process component.  |
+| JPEGPagesExport.jsx | Yes | Generates a 300 PPI JPEG subasset for each page. The JPEG subasset is a real asset stored under the InDesign asset. The `DAM Update Asset` workflow optimizes and converts it into a PTIFF. |
+| PDFPagesExport.jsx | No | Generates a PDF subasset for each page. The PDF subasset gets processed as described earlier. Because the PDF contains a single page only, no subassets are generated. |
+-->
 
-### 設定影像縮圖大小 {#configuring-image-thumbnail-size}
+<!--
+### Configure the image thumbnail size {#configuring-image-thumbnail-size}
 
-您可以在&#x200B;**[!UICONTROL DAM更新資產]**&#x200B;工作流程中設定這些設定，以設定縮圖的大小。 工作流程有兩個步驟，您可以在此設定影像資產的縮圖大小。 一個(**[!UICONTROL Dynamic Media程式影像Assets]**)用於動態影像資產。 其他（**[!UICONTROL 處理作業縮圖]**）用於產生靜態縮圖，或當所有其他處理作業無法產生縮圖時。 無論如何，*兩個*&#x200B;都必須有相同的設定。
+You can configure the size of thumbnails by configuring those settings in the **[!UICONTROL DAM Update Asset]** workflow. There are two steps in the workflow where you can configure the thumbnail size of image assets. One (**[!UICONTROL Dynamic Media Process Image Assets]**) is used for dynamic image assets. The other (**[!UICONTROL Process Thumbnails]**) is used for static thumbnail generation or when all other processes fail to generate thumbnails. Regardless, *both* must have the same settings.
 
-**[!UICONTROL Dynamic Media處理影像Assets]**&#x200B;步驟使用影像伺服器產生縮圖，與套用至&#x200B;**[!UICONTROL 處理縮圖]**&#x200B;步驟的組態無關。 透過「處理縮圖 **[!UICONTROL 」步驟產生縮圖]** ，是建立縮圖的最慢且記憶體最耗用的方式。
+The **[!UICONTROL Dynamic Media Process Image Assets]** step uses the image server to generate thumbnails, independently of the configuration applied to the **[!UICONTROL Process Thumbnails]** step. Generating thumbnails through the **[!UICONTROL Process Thumbnails]** step is the slowest and most memory intensive way to create thumbnails.
 
-縮圖大小是以下列格式來定義： **[!UICONTROL 寬度:height:中心]**，例如`80:80:false`。 寬度和高度會決定縮圖的大小（以畫素為單位）。 中心值為false或true。 若設為true，表示縮圖影像大小與設定中指定的大小完全相同。 如果調整大小的影像較小，它會在縮圖內建中。
+Thumbnail sizing is defined in the following format: **[!UICONTROL width:height:center]**, for example, `80:80:false`. The width and height determine the size in pixels of the thumbnail. The center value is either false or true. If set to true, it indicates that the thumbnail image has exactly the size given in the configuration. If the resized image is smaller, it is centered within the thumbnail.
 
 >[!NOTE]
 >
->* EPS檔案的縮圖大小是在「縮圖」下&#x200B;**[!UICONTROL 引數]**&#x200B;索引標籤的&#x200B;**[!UICONTROL EPS縮圖]**&#x200B;步驟中設定。
+>* Thumbnail sizes for EPS files are configured in the **[!UICONTROL EPS thumbnails]** step, in the **[!UICONTROL Arguments]** tab under Thumbnails.
 >
->* 視訊的縮圖大小是在&#x200B;**[!UICONTROL 引數]**&#x200B;下的&#x200B;**[!UICONTROL 處理序]**&#x200B;索引標籤中的&#x200B;**[!UICONTROL FFmpeg縮圖]**&#x200B;步驟中設定。
+>* Thumbnail sizes for videos are configured in the **[!UICONTROL FFmpeg thumbnails]** step, in the **[!UICONTROL Process]** tab under **[!UICONTROL Arguments]**.
 >
 
-**若要設定影像縮圖大小：**
+**To configure the image thumbnail size:**
 
-1. 導覽至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 工作流程]** > **[!UICONTROL 模型]** > **[!UICONTROL DAM更新資產]** > **[!UICONTROL 編輯]**。
-1. 選取「**[!UICONTROL 動態媒體處理影像Assets]**」步驟，然後選取「**[!UICONTROL 縮圖]**」標籤。 視需要變更縮圖大小，然後選取&#x200B;**[!UICONTROL 確定]**。
+1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]** > **[!UICONTROL DAM Update Asset]** > **[!UICONTROL Edit]**.
+1. Select the **[!UICONTROL Dynamic Media Process Image Assets]** step and select the **[!UICONTROL Thumbnails]** tab. Change the thumbnail size, as needed, then select **[!UICONTROL OK]**.
 
    ![6_5_dynamicmediaprocessimageassets-thumbnailstab](assets/6_5_dynamicmediaprocessimageassets-thumbnailstab.png)
 
-1. 選取「**[!UICONTROL 處理縮圖]**」步驟，然後選取「**[!UICONTROL 縮圖]**」標籤。 視需要變更縮圖大小，然後選取&#x200B;**[!UICONTROL 確定]**。
+1. Select the **[!UICONTROL Process Thumbnails]** step, then select the **[!UICONTROL Thumbnails]** tab. Change the thumbnail size, as needed, then select **[!UICONTROL OK]**.
 
    >[!NOTE]
    >
-   >「處理縮圖」步驟中縮圖引數中 **[!UICONTROL 的值必須與「動態媒體處理影像資產」]** 步驟中的縮圖引數相符 **&#x200B;**&#x200B;。
+   >The values in the thumbnails argument in the **[!UICONTROL Process Thumbnails]** step must match the thumbnails argument in the **[!UICONTROL Dynamic Media Process Image Assets]** step.
 
-1. 選取&#x200B;**[!UICONTROL 儲存]**&#x200B;以儲存對工作流程所做的變更。
+1. Select **[!UICONTROL Save]** to save the changes to the workflow.
+-->
 
 ### 增加或減少顯示的影像預設集數目 {#increasing-or-decreasing-the-number-of-image-presets-that-display}
 
@@ -173,7 +202,7 @@ Dynamic Media整合會使用下列指令碼：
 
    ![increase_decreasethenumberofimagepresetsthatdisplay](assets/increase_decreasethenumberofimagepresetsthatdisplay.png)
 
-1. 在 **[!UICONTROL limit]** 屬性中，將預設設 **&#x200B;**&#x200B;定為15的值變更為所要的數字。
+1. 在 **[!UICONTROL limit]** 屬性中，將預設設 ****&#x200B;定為15的值變更為所要的數字。
 1. 導覽至`/libs/dam/gui/coral/content/commons/sidepanels/imagepresetsdetail/imgagepresetslist/datasource`的影像預設集資料來源
 
    ![chlimage_1-495](assets/chlimage_1-495.png)
@@ -234,7 +263,7 @@ Dynamic Media整合會使用下列指令碼：
 
 * **[!UICONTROL 格式]** （**[!UICONTROL 基本]**&#x200B;標籤） — 選取&#x200B;**[!UICONTROL JPEG]**&#x200B;或其他符合您需求的格式。 所有網頁瀏覽器都支援JPEG影像格式；它在小檔案大小和影像品質之間提供良好的平衡。但是，JPEG格式影像使用有損壓縮方案，如果壓縮設定太低，則該壓縮方案會引入不想要的影像偽影。因此，Adobe建議將壓縮品質設為75。此設定在影像品質和檔案大小之間取得良好的平衡。
 
-* **[!UICONTROL 啟用簡單銳利化]** -請勿選取「啟用簡 **&#x200B;**&#x200B;單銳利化」 (此銳利化濾鏡提供的控制力比「非銳利化遮色片」設定少)。
+* **[!UICONTROL 啟用簡單銳利化]** -請勿選取「啟用簡 **** 單銳利化」 (此銳利化濾鏡提供的控制力比「非銳利化遮色片」設定少)。
 
 * **[!UICONTROL 銳利化：重新取樣模式]** — 選取&#x200B;**[!UICONTROL 銳利化2]**。
 
@@ -297,7 +326,7 @@ Dynamic Media整合會使用下列指令碼：
     </ul>
     <div>
       銳利化的說明請參閱
-     <a href="https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media">搭配Experience Manager Dynamic Media使用影像銳利化</a>影片、<a href="https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-classic/using/master-files/sharpening-image#master-files">銳利化影像</a>線上說明主題，以及<a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf?lang=zh-Hant">在Dynamic Media Classic中銳利化影像的最佳作法</a>可下載的PDF。
+     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media">搭配Experience Manager Dynamic Media使用影像銳利化</a>影片、<a href="https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/master-files/sharpening-image#master-files">銳利化影像</a>線上說明主題，以及<a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf">在Dynamic Media Classic中銳利化影像的最佳作法</a>可下載的PDF。
     </div> </td>
   </tr>
   <tr>
@@ -317,7 +346,7 @@ Dynamic Media整合會使用下列指令碼：
   </tr>
   <tr>
    <td><strong>影像修飾元</strong></td>
-   <td><p>除了UI中可用的通用影像設定之外，Dynamic Media還支援您可以在<strong>影像修飾元</strong>欄位中指定的多項進階影像修改。 這些引數定義於<a href="https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/syntax-and-features/image-serving-http/c-command-overview">影像伺服器通訊協定命令參考</a>。</p> <p>重要：不支援API中列出的以下功能：</p>
+   <td><p>除了UI中可用的通用影像設定之外，Dynamic Media還支援您可以在<strong>影像修飾元</strong>欄位中指定的多項進階影像修改。 這些引數定義於<a href="https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/syntax-and-features/image-serving-http/c-command-overview">影像伺服器通訊協定命令參考</a>。</p> <p>重要：不支援API中列出的以下功能：</p>
     <ul>
      <li>基本範本化和文字演算命令： <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code>和 <code>textPs=</code></li>
      <li>本地化命令： <code>locale=</code>和 <code>req=xlate</code></li>
@@ -334,7 +363,7 @@ Dynamic Media整合會使用下列指令碼：
 
 ### 使用影像修飾元定義影像預設集選項 {#defining-image-preset-options-with-image-modifiers}
 
-除了「基本」和「進階」標籤中的可用選項外，您也可以定義影像修飾元，以便在定義「影像預設集」時提供更多選項。 影像演算依賴Dynamic Media影像演算API，並在[HTTP通訊協定參考](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction#image-rendering-api)中詳細定義。
+除了「基本」和「進階」標籤中的可用選項外，您也可以定義影像修飾元，以便在定義「影像預設集」時提供更多選項。 影像演算依賴Dynamic Media影像演算API，並在[HTTP通訊協定參考](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction#image-rendering-api)中詳細定義。
 
 以下是一些您可以使用影像修飾元進行操作的基本範例。
 
@@ -342,7 +371,7 @@ Dynamic Media整合會使用下列指令碼：
 >
 >部分影像修飾元[無法在Experience Manager](#advanced-tab-options)中使用。
 
-* [op_invert](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert) — 將每個顏色元件反轉成負影像效果。
+* [op_invert](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert) — 將每個顏色元件反轉成負影像效果。
 
   ```xml {.line-numbers}
   &op_invert=1
@@ -350,7 +379,7 @@ Dynamic Media整合會使用下列指令碼：
 
   ![6_5_imagepreset-edit-invert](assets/6_5_imagepreset-edit-invert.png)
 
-* [op_blur](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur) — 將模糊濾鏡套用至影像。
+* [op_blur](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur) — 將模糊濾鏡套用至影像。
 
   ```xml {.line-numbers}
   &op_blur=7
@@ -366,7 +395,7 @@ Dynamic Media整合會使用下列指令碼：
 
   ![chlimage_1-80](assets/chlimage_1-501.png)
 
-* [op_brightness](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness) — 減少或增加亮度。
+* [op_brightness](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness) — 減少或增加亮度。
 
   ```xml {.line-numbers}
   &op_brightness=58
@@ -374,7 +403,7 @@ Dynamic Media整合會使用下列指令碼：
 
   ![6_5_imagepreset-edit-brightness](assets/6_5_imagepreset-edit-brightness.png)
 
-* [opac](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac) — 調整影像不透明度。 可讓您減少前景不透明度。
+* [opac](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac) — 調整影像不透明度。 可讓您減少前景不透明度。
 
   ```xml {.line-numbers}
   opac=29
