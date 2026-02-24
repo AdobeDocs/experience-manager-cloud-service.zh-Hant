@@ -15,10 +15,10 @@ ht-degree: 1%
 
 # 整合 Adobe Target{#integrating-with-adobe-target}
 
-作為Adobe Experience Cloud的一部分，[Adobe Target](https://experienceleague.adobe.com/en/docs/target)可讓您透過所有管道的定位和測量，增加內容關聯性。 整合Adobe Target和AEM as a Cloud Service需要：
+作為Adobe Experience Cloud的一部分，[Adobe Target](https://experienceleague.adobe.com/zh-hant/docs/target)可讓您透過所有管道的定位和測量，增加內容關聯性。 整合Adobe Target和AEM as a Cloud Service需要：
 
 * 使用Touch UI在AEM as a Cloud Service中建立Target設定（需要IMS設定）。
-* 在[Adobe Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html)中新增並設定Adobe Target作為擴充功能。
+* 在[Adobe Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html?lang=zh-Hant)中新增並設定Adobe Target作為擴充功能。
 
 管理AEM頁面（JS資料庫/標籤）中Analytics和Target的使用者端屬性時，需要Adobe Launch。 也就是說，「體驗鎖定目標」需要與Launch整合。
 
@@ -30,7 +30,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->另請參閱Adobe Target檔案： [將Target與Adobe Experience Manager (AEM)整合](https://experienceleague.adobe.com/en/docs/target/using/integrate/aem/aem-target-integration)。
+>另請參閱Adobe Target檔案： [將Target與Adobe Experience Manager (AEM)整合](https://experienceleague.adobe.com/zh-hant/docs/target/using/integrate/aem/aem-target-integration)。
 
 ## 建立Adobe Target設定 {#create-configuration}
 
@@ -44,7 +44,7 @@ ht-degree: 1%
 
 ### IMS 設定 {#ims-configuration}
 
-透過AEM API將Target Standard與Adobe Target整合需要設定Adobe IMS (Identity Management系統)。 必須建立Target IMS設定（布建Target後）。 請參閱[設定AEM as a Cloud Service的IMS整合](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)和影片[整合Experience Platform Launch和AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html)，瞭解如何建立Target IMS設定。
+透過AEM API將Target Standard與Adobe Target整合需要設定Adobe IMS (Identity Management系統)。 必須建立Target IMS設定（布建Target後）。 請參閱[設定AEM as a Cloud Service的IMS整合](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)和影片[整合Experience Platform Launch和AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=zh-Hant)，瞭解如何建立Target IMS設定。
 
 >[!NOTE]
 >
