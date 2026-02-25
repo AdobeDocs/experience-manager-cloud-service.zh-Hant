@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Configuration,Dynamic Media
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 2ca425f9a142432a5d3bcce8ce522c97e4c2cf2d
+source-git-commit: e9a347e229deb0af203503fe6a005f5b0a244484
 workflow-type: tm+mt
-source-wordcount: '3721'
-ht-degree: 2%
+source-wordcount: '3139'
+ht-degree: 5%
 
 ---
 
@@ -22,13 +22,13 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->增強式安全性環境中不支援&#x200B;**Dynamic Media (Scene7)**
+>**增強式安全性環境不支援 Dynamic Media (Scene7)**
 >
->AEM as a Cloud Service上的Dynamic Media (Scene7)尚未符合HIPAA標準，因此無法用於已啟用「增強式安全性」的AEM環境。
+>AEM as a Cloud Service 上的 Dynamic Media (Scene7) 不符合 HIPAA 標準，因此無法在啟用增強式安全性的 AEM 環境中使用。
 >
->從2025年4月AEM as a Cloud Service發行版本開始，技術限制可防止在增強安全性的環境中設定Dynamic Media (Scene7)。 因此，**工具** > **雲端服務**&#x200B;底下的&#x200B;**Dynamic Media設定**&#x200B;卡不再顯示在這些環境中。
+>自 2025 年 4 月的 AEM as a Cloud Service 版本開始，會設有技術限制以防止在具有增強式安全性的環境中設定 Dynamic Media (Scene7)。因此，在這些環境中，於「**工具** > **雲端服務**」下不會再出現 **Dynamic Media 設定**&#x200B;卡片。
 >
->此外，使用AEM 6.5的客戶應注意Dynamic Media (Scene7)棧疊尚未準備好使用HIPAA。
+>此外，使用 AEM 6.5 的客戶應注意 Dynamic Media (Scene7) 堆疊不符合 HIPAA 標準。
 
 ## Dynamic Media架構圖 {#architecture-diagram-of-dynamic-media}
 
@@ -75,7 +75,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 ## 在雲端服務中建立Dynamic Media設定 {#configuring-dynamic-media-cloud-services}
 
-<!-- **Before you creating a Dynamic Media Configuration in Cloud Services**: After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=zh-Hant#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials. -->
+<!-- **Before you creating a Dynamic Media Configuration in Cloud Services**: After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials. -->
 
 1. 在Experience Manager as a Cloud Service中，選取Experience Manager as a Cloud Service標誌以存取全域導覽主控台。
 1. 在主控台左側，選取[工具]圖示，然後前往&#x200B;**[!UICONTROL 雲端服務> Dynamic Media設定]**。
@@ -93,7 +93,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    如有必要，您可以選取密碼眼睛圖示來顯示密碼，以檢查您已輸入或重新輸入的密碼的拼字。 再次選取圖示以隱藏密碼。
 
-1. 在&#x200B;**[!UICONTROL 重複密碼]**&#x200B;欄位中，重新輸入新密碼，然後選取&#x200B;**[!UICONTROL 完成]**。
+1. 在&#x200B;**[!UICONTROL `Repeat Password`]**&#x200B;欄位中，重新輸入新密碼，然後選取&#x200B;**[!UICONTROL 完成]**。
 
    當您在&#x200B;**[!UICONTROL 建立Dynamic Media設定]**&#x200B;頁面的右上角選取「**[!UICONTROL 儲存]**」時，新密碼便會儲存。
 
@@ -130,10 +130,10 @@ To migrate any custom viewer presets and configurations that you have created fr
    >此收件匣通知會通知您設定是否成功。
    > 如需詳細資訊，請參閱[新Dynamic Media組態疑難排解](#troubleshoot-dm-config)和[您的收件匣](/help/sites-cloud/authoring/inbox.md)。
 
-1. 為了在發佈Dynamic Media內容之前安全地預覽該內容，Experience Manager as a Cloud Service會使用權杖型驗證，因此Experience Manager Author預設會預覽Dynamic Media內容。 不過，您可以&#x200B;*加入允許清單*&#x200B;更多IP，讓使用者能夠安全地預覽內容。 若要在Experience Manager as a Cloud Service中設定此動作，請參閱[設定影像伺服器的Dynamic Media發佈設定 — 安全性索引標籤](/help/assets/dynamic-media/dm-publish-settings.md#security-tab)。<!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
+1. 為了在發佈Dynamic Media內容之前安全地預覽該內容，Experience Manager as a Cloud Service會使用權杖型驗證，因此Experience Manager Author預設會預覽Dynamic Media內容。 不過，您可以&#x200B;*加入允許清單*&#x200B;更多IP，讓使用者能夠安全地預覽內容。 若要在Experience Manager as a Cloud Service中設定此動作，請參閱主題[設定影像伺服器的Dynamic Media發佈設定 — 安全性索引標籤](/help/assets/dynamic-media/dm-publish-settings.md#security-tab)。<!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
 
 <!--
-    * Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=zh-Hant#getting-started), then sign in to your account. Your credentials and sign-in details were provided by Adobe at the time of provisioning. If you do not have this information, contact Adobe Customer Support.
+    * Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account. Your credentials and sign-in details were provided by Adobe at the time of provisioning. If you do not have this information, contact Adobe Customer Support.
     * On the navigation bar near the upper right corner of the page, go to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]**.
     * On the Image Server Publish page, in the **[!UICONTROL Publish Context]** drop-down list, select **[!UICONTROL Test Image Serving]**.
     * For the Client Address Filter, select **[!UICONTROL Add]**.
@@ -192,7 +192,7 @@ Dynamic Media中的密碼到期日設為目前系統日期起的100年。
 
      **[!UICONTROL 目前密碼]**&#x200B;欄位是刻意預先填入且隱藏在互動中。
 
-   * 在&#x200B;**[!UICONTROL 重複密碼]**&#x200B;欄位中，重新輸入新密碼，然後選取&#x200B;**[!UICONTROL 完成]**。
+   * 在&#x200B;**[!UICONTROL `Repeat Password`]**&#x200B;欄位中，重新輸入新密碼，然後選取&#x200B;**[!UICONTROL 完成]**。
 
 1. 在&#x200B;**[!UICONTROL 編輯Dynamic Media設定]**&#x200B;頁面的右上角，選取&#x200B;**[!UICONTROL 儲存]**，然後選取&#x200B;**[!UICONTROL 確定]**。
 
@@ -200,7 +200,7 @@ Dynamic Media中的密碼到期日設為目前系統日期起的100年。
 
 若要進一步自訂Dynamic Media的組態和設定，或最佳化其效能，您可以完成下列一或多個&#x200B;_選擇性_&#x200B;工作：
 
-* [（選用）在Dynamic Media中啟用ACL許可權](#optional-enable-acl)
+<!-- * [(Optional) Enable ACL permissions in Dynamic Media](#optional-enable-acl) -->
 * [（選用）動態媒體設定的設定和組態](#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings)
 * [（可選）調整Dynamic Media的效能](#optional-tuning-the-performance-of-dynamic-media-scene-mode)
 
@@ -244,7 +244,7 @@ When you run Dynamic Media on AEM as a Cloud Service, it currently forwards `/is
 
 使用Dynamic Media Classic使用者介面變更您的Dynamic Media設定。
 
-<!-- Some of the tasks above require that you open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=zh-Hant#getting-started), then sign in to your account. -->
+<!-- Some of the tasks above require that you open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account. -->
 
 設定和組態工作包括下列各項：
 
@@ -275,10 +275,10 @@ Dynamic Media色彩管理可讓您校正資產的色彩。 透過色彩校正，
 
 若要設定預設色彩屬性，以便在要求影像時啟用色彩校正：
 
-1. 開啟[Dynamic Media Classic案頭應用程式](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started)，然後使用布建期間提供的認證登入您的帳戶。
+1. 開啟[Dynamic Media Classic案頭應用程式](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started)，然後使用布建期間提供的認證登入您的帳戶。
 1. 移至&#x200B;**[!UICONTROL 設定>應用程式設定]**。
-1. 展開「發 **[!UICONTROL 布設定]** 」區域並選 **[!UICONTROL 取「影像伺服器」]**。設定發 **[!UICONTROL 布例項的預設值]** ，將「發佈內容」設 **&#x200B;**&#x200B;定為「影像伺服」。
-1. 捲動至您必須變更的屬性，例如&#x200B;**[!UICONTROL 色彩管理屬性]**&#x200B;區域中的屬性。
+1. 展開&#x200B;**[!UICONTROL `Publish Setup`]**&#x200B;區域並選取&#x200B;**[!UICONTROL 影像伺服器]**。 設定發 **[!UICONTROL 布例項的預設值]** ，將「發佈內容」設 **** 定為「影像伺服」。
+1. 捲動至您必須變更的屬性，例如&#x200B;**[!UICONTROL 色彩管理屬性]**區域中的屬性。
 您可以設定下列色彩校正屬性：
 
    | 屬性 | 說明 |
@@ -290,7 +290,7 @@ Dynamic Media色彩管理可讓您校正資產的色彩。 透過色彩校正，
 
 1. 選取「**[!UICONTROL 儲存]**」。
 
-例如，您可以將「 **[!UICONTROL RGB預設顏色空間]** 」設 *為sRGB*，將「 **[!UICONTROL CMYK預設顏色空間」設為]**&#x200B;** WebCobatedCholor。
+例如，您可以將「 **[!UICONTROL RGB預設顏色空間]** 」設 *為sRGB*，將「 **[!UICONTROL CMYK預設顏色空間」設為]**** WebCobatedCholor。
 
 這麼做會執行下列動作：
 
@@ -394,12 +394,12 @@ Dynamic Media色彩管理可讓您校正資產的色彩。 透過色彩校正，
 
 ### （可選）調整Dynamic Media的效能 {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
 
-為了讓Dynamic Media持續順暢運作，Adobe建議使用下列同步效能/可擴充性微調秘訣：
+為了讓Dynamic Media持續順暢運作，Adobe建議下列同步效能/可擴充性微調提示：
 
 * [更新預先定義的作業引數，以處理不同的檔案格式](#update-job-para)。
-* [更新預先定義的Granite工作流程佇列（視訊資產）背景工作執行緒](#update-granite-workflow-queue-worker-threads-video)
-* [更新預先定義的Granite暫時性工作流程佇列（影像和非視訊資產）工作者執行緒](#update-granite-transient-workflow-queue-worker-threads-images)。
-* [更新與Dynamic Media Classic (Scene7)伺服器的最大上傳連線數](#update-max-s7-upload-connections)。
+<!-- * [Update the predefined Granite Workflow Queue (video assets) worker threads](#update-granite-workflow-queue-worker-threads-video)
+* [Update the predefined Granite Transient Workflow Queue (images and non-video assets) worker threads](#update-granite-transient-workflow-queue-worker-threads-images).
+* [Update the maximum upload connections to the Dynamic Media Classic (Scene7) server](#update-max-s7-upload-connections).-->
 
 #### 更新預先定義的作業引數以處理不同的檔案格式 {#update-job-para}
 
@@ -423,85 +423,88 @@ Adobe建議對PDF、PostScript®和PSD檔案使用下列「調整」工作引數
 
 另請參閱[新增不支援格式的MIME型別](#adding-mime-types-for-unsupported-formats)。
 
-#### 更新預先定義的Granite工作流程佇列（視訊資產）背景工作執行緒 {#update-granite-workflow-queue-worker-threads-video}
+<!--
+#### Update the predefined Granite Workflow Queue (video assets) worker threads {#update-granite-workflow-queue-worker-threads-video}
 
-Granite工作流程佇列用於非暫時性工作流程。 在Dynamic Media中，它是用來處理&#x200B;**[!UICONTROL Dynamic Media編碼視訊]**&#x200B;工作流程的視訊。
+The Granite Workflow queue is used for non-transient workflows. In Dynamic Media, it is used to process video with the **[!UICONTROL Dynamic Media Encode Video]** workflow.
 
 >[!NOTE]
 >
->您必須以產品管理員身分登入Experience Manager as a Cloud Service，才能完成此工作。
+>You must be signed in to Experience Manager as a Cloud Service as the product administrator to complete this task.
 
-如果您沒有OSGi的存取權，請參閱[OSGi設定](/help/implementing/developing/components/overview.md#osgi-configuration)。
+If you do not have access to OSGi, see [OSGi Configuration](/help/implementing/developing/components/overview.md#osgi-configuration).
 
-**若要更新預先定義的Granite工作流程佇列（視訊資產）背景工作執行緒：**
+**To update the predefined Granite Workflow Queue (video assets) worker threads:**
 
-1. 瀏覽至`https://<server>/system/console/configMgr`並搜尋&#x200B;**佇列： Granite工作流程佇列**。
+1. Navigate to `https://<server>/system/console/configMgr` and search for **Queue: Granite Workflow Queue**.
 
    >[!NOTE]
    >
-   >必須進行文字搜尋，而非直接URL，因為OSGi PID是動態產生的。
+   >A text search is necessary instead of a direct URL because the OSGi PID is dynamically generated.
 
-1. 在&#x200B;**[!UICONTROL 最大平行工作]**&#x200B;欄位中，將數字變更為所要的值。
+1. In the **[!UICONTROL Maximum Parallel Jobs]** field, change the number to the desired value.
 
-   根據預設，平行作業的最大數量取決於可用的CPU核心數量。 例如，在4核心伺服器上，它會指派兩個背景工作執行緒。 （介於0.0和1.0之間的值是以比率為基礎，或任何大於一的數字都會指定工作者執行緒的數量。）
+   By default, the maximum number of parallel jobs depends on the number of available CPU cores. For example, on a 4-core server, it assigns two worker threads. (A value between 0.0 and 1.0 is ratio-based, or any numbers greater than one assigns the number of worker threads.)
 
-   對於大多數使用案例，0.5的預設設定就足夠了。
+   For most use cases, the 0.5 default setting is sufficient.
 
-   ![工作處理佇列的設定](assets/chlimage_1-1.jpeg)
+   ![Configuration of a job processing queue](assets/chlimage_1-1.jpeg)
 
-1. 選取「**[!UICONTROL 儲存]**」。
+1. Select **[!UICONTROL Save]**.
 
-#### 更新預先定義的Granite暫時工作流程佇列工作者執行緒 {#update-granite-transient-workflow-queue-worker-threads-images}
+#### Update the predefined Granite Transient Workflow Queue worker threads {#update-granite-transient-workflow-queue-worker-threads-images}
 
-Granite傳輸工作流程佇列已用於&#x200B;**[!UICONTROL DAM更新資產]**&#x200B;工作流程。 在Dynamic Media中，它可用來擷取及處理影像及非視訊資產。
+The Granite Transit Workflow queue is used for the **[!UICONTROL DAM Update Asset]** workflow. In Dynamic Media, it is used for image and non-video asset ingestion and processing.
 
 >[!NOTE]
 >
->您必須以產品管理員身分登入Experience Manager as a Cloud Service，才能完成此工作。
+>You must be signed in to Experience Manager as a Cloud Service as the product administrator to complete this task.
 
-**若要更新預先定義的Granite暫時性工作流程佇列工作者執行緒：**
+**To update the predefined Granite Transient Workflow queue worker threads:**
 
-1. 瀏覽至`http://<host>:<port>/system/console/configMgr`的&#x200B;**Adobe Experience Manager Web Console設定**
-1. 搜尋&#x200B;**佇列： Granite暫時性工作流程佇列**。
+1. Navigate to the **Adobe Experience Manager Web Console Configuration** at `http://<host>:<port>/system/console/configMgr`
+1. Search for **Queue: Granite Transient Workflow Queue**.
 
    >[!NOTE]
    >
-   >必須進行文字搜尋，而非直接URL，因為OSGi PID是動態產生的。
+   >A text search is necessary instead of a direct URL because the OSGi PID is dynamically generated.
 
-1. 在&#x200B;**[!UICONTROL 最大平行工作]**&#x200B;欄位中，將數字變更為所要的值。
+1. In the **[!UICONTROL Maximum Parallel Jobs]** field, change the number to the desired value.
 
-   您可以增加&#x200B;**[!UICONTROL 個最大平行工作]**，以充分支援將大量檔案上傳至Dynamic Media。 確切的值取決於硬體容量。 在某些情況下（例如初始移轉或一次性大量上傳），您可以使用大型值。 但是請注意，使用很大的數值（例如核心數的兩倍）可能會對其他並行活動產生負面影響。 因此，請根據您的特定使用案例來測試和調整值。
+   You can increase **[!UICONTROL Maximum Parallel Jobs]** to support adequately heavy upload of files to Dynamic Media. The exact value depends on hardware capacity. In certain scenarios, such as an initial migration or a one-time bulk upload, you can use a large value. Be aware, however, that using a large value (such as two times the number of cores) can have negative effects on other concurrent activities. As such, test and adjust the value based on your particular use case.
 
-<!--    By default, the maximum number of parallel jobs depends on the number of available CPU cores. For example, on a 4-core server, it assigns 2 worker threads. (A value between 0.0 and 1.0 is ratio based, or any numbers greater than 1 will assign the number of worker threads.)
+   By default, the maximum number of parallel jobs depends on the number of available CPU cores. For example, on a 4-core server, it assigns 2 worker threads. (A value between 0.0 and 1.0 is ratio based, or any numbers greater than 1 will assign the number of worker threads.)
 
-   Adobe recommends that 32 **[!UICONTROL Maximum Parallel Jobs]** be configured to adequately support heavy upload of files to Dynamic Media Classic. -->
+   Adobe recommends that 32 **[!UICONTROL Maximum Parallel Jobs]** be configured to adequately support heavy upload of files to Dynamic Media Classic.
 
-![chlimage_1](assets/chlimage_1.jpeg)
+   ![chlimage_1](assets/chlimage_1.jpeg)
 
-1. 選取「**[!UICONTROL 儲存]**」。
+1. Select **[!UICONTROL Save]**.
+-->
+<!--
+#### Update the maximum upload connections to the Dynamic Media Classic (Scene7) server {#update-max-s7-upload-connections}
 
-#### 更新與Dynamic Media Classic (Scene7)伺服器的最大上傳連線 {#update-max-s7-upload-connections}
-
-Dynamic Media Classic (Scene7)上傳連線設定會將Experience Manager資產同步至Dynamic Media Classic伺服器。
+The Dynamic Media Classic (Scene7) Upload Connection setting synchronizes Experience Manager assets to Dynamic Media Classic servers.
 
 >[!NOTE]
 >
->您必須以產品管理員身分登入Experience Manager as a Cloud Service，才能完成此工作。
+>You must be signed in to Experience Manager as a Cloud Service as the product administrator to complete this task.
 
-**若要更新與Dynamic Media Classic (Scene7)伺服器的最大上傳連線：**
+**To update the maximum upload connections to the Dynamic Media Classic (Scene7) server:**
 
-1. 瀏覽至`https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
-1. 在&#x200B;**[!UICONTROL 連線數目]**&#x200B;欄位或&#x200B;**[!UICONTROL 作用中作業逾時]**&#x200B;欄位中，或兩者中，視需要變更數目。
+1. Navigate to `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
+1. In the **[!UICONTROL Number of connections]** field, or the **[!UICONTROL Active job timeout]** field, or both, change the number as desired.
 
-   **[!UICONTROL 連線數目]**&#x200B;設定會控制Experience Manager允許的HTTP連線數目上限，以上傳至Dynamic Media。 通常預先定義的十個連線值就足夠了。
+   The **[!UICONTROL Number of connections]** setting controls the maximum number of HTTP connections allowed for Experience Manager to Dynamic Media upload. Typically, the predefined value of ten connections is sufficient.
 
-   **[!UICONTROL 作用中工作逾時]**&#x200B;設定會定義系統等待傳遞伺服器發佈已上傳之Dynamic Media資產的時間長度。 此值預設為2100秒或35分鐘。
+   The **[!UICONTROL Active job timeout]** setting defines how long the system waits for the delivery server to publish uploaded Dynamic Media assets. This value is 2100 seconds or 35 minutes by default.
 
-   對於大多數使用案例，設定2100已足夠。
+   For most use cases, the setting of 2100 is sufficient.
 
-   ![Adobe Scene7上傳服務](assets/chlimage_1-2.jpeg)
+   ![Adobe Scene7 Upload Service](assets/chlimage_1-2.jpeg)
 
-1. 選取「**[!UICONTROL 儲存]**」。
+1. Select **[!UICONTROL Save]**.
+-->
 
 <!-- NOTE - OBSOLETE that customisations to replication agents to transform content are no longer used; the following content is obsolete now 
 
