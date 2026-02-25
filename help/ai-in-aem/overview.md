@@ -4,9 +4,9 @@ description: 瞭解Adobe Experience Manager as a Cloud Service中的AI
 feature: Generative AI, AI Assistant, AI Tools, Agentic AI
 role: Admin, Developer, User
 exl-id: 60fd4c57-53ed-4b4a-aea1-1c132184916f
-source-git-commit: 34469549451106c28fc3f95c90a8759b356bdd16
+source-git-commit: 92941c325f7702be8cf5f7f5b2ef3f9bd32c6354
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '439'
 ht-degree: 48%
 
 ---
@@ -24,10 +24,9 @@ Adobe Experience Manager[中的](/help/implementing/cloud-manager/ai-assistant-i
 
 AEM提供一系列[代理程式](/help/ai-in-aem/agents/overview.md)，可加速內容建立並自動協調變更：
 
-* [體驗生產代理程式](/help/ai-in-aem/agents/production/overview.md)
-* [內容最佳化代理程式](/help/ai-in-aem/agents/content-optimization/overview.md)
-* [探索代理程式](/help/ai-in-aem/agents/discovery/overview.md)
-* [開發代理程式](/help/ai-in-aem/agents/development/overview.md)
+* [品牌體驗代理程式](/help/ai-in-aem/agents/brand-experience/overview.md)
+* [內容建議程式代理程式](/help/ai-in-aem/agents/content-advisor/overview.md)
+* [Experience Modernization Agent](/help/ai-in-aem/agents/modernization/overview.md)
 * [治理代理程式](/help/ai-in-aem/agents/governance/overview.md)
 
 ## AEM中的Generative AI {#generative-ai-in-aem}

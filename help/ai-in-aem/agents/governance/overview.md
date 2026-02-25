@@ -3,7 +3,8 @@ title: Governance Agent概述
 description: 瞭解AEM Governance Agent如何跨AEM保障品牌完整性和合規性
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: 9b26cd1f30ad6fa23e28c9f36fe48091e069962e
+exl-id: 2c73c578-6655-43bf-b03a-cb3eb2284d07
+source-git-commit: 568fd17353da93df0fa20e0c10e48d35890e7ed6
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 0%
@@ -72,4 +73,3 @@ ht-degree: 0%
 * *哪些資產最近過期？*
 * *尋找沒有到期日期的資產*
 * *顯示/content/dam/products中將在未來14天到期的所有資產*
-
