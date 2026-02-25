@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Image Presets,Viewers,Renditions
 role: User
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
-source-git-commit: c07c1f7e412e0c68338121d49781e33356f6c640
+source-git-commit: 012ce93f65d26d7f59fc874d1b225fbd458cf098
 workflow-type: tm+mt
-source-wordcount: '2597'
+source-wordcount: '2598'
 ht-degree: 6%
 
 ---
@@ -60,7 +60,7 @@ ht-degree: 6%
 
 ### AEM as a Cloud Service中的轉譯產生{#rendition-generation-in-aemaacs}
 
-在AEM as a Cloud Service中，轉譯是使用[資產微服務](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use#)產生。 DAM更新資產工作流程無法在Cloud Service中進行自訂。
+在AEM as a Cloud Service中，轉譯是使用[資產微服務](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use#)產生。 DAM更新資產工作流程無法在Cloud Service中進行自訂。
 
 重要考量事項包括：
 
@@ -72,7 +72,7 @@ ht-degree: 6%
 
 **若要控制產生哪些轉譯：**
 
-1. 建立或編輯[處理設定檔](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use#)。
+1. 建立或編輯[處理設定檔](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use#)。
 2. 設定必要的轉譯定義。
 3. 將處理設定檔套用至適當的資料夾。
 
@@ -191,7 +191,7 @@ Thumbnail sizing is defined in the following format: **[!UICONTROL width:height:
 1. Select **[!UICONTROL Save]** to save the changes to the workflow.
 -->
 
-### 增加或減少顯示的影像預設集數目 {#increasing-or-decreasing-the-number-of-image-presets-that-display}
+## 增加或減少顯示的影像預設集數目 {#increasing-or-decreasing-the-number-of-image-presets-that-display}
 
 預覽資產時，您建立的影像預設集可做為動態轉譯使用。 從&#x200B;**[!UICONTROL 詳細資料檢視>轉譯]**&#x200B;檢視資產時，Experience Manager會顯示各種動態轉譯。 您可以增加或減少顯示的轉譯限制。
 
@@ -202,7 +202,7 @@ Thumbnail sizing is defined in the following format: **[!UICONTROL width:height:
 
    ![increase_decreasethenumberofimagepresetsthatdisplay](assets/increase_decreasethenumberofimagepresetsthatdisplay.png)
 
-1. 在 **[!UICONTROL limit]** 屬性中，將預設設 **&#x200B;**&#x200B;定為15的值變更為所要的數字。
+1. 在 **[!UICONTROL limit]** 屬性中，將預設設 ****&#x200B;定為15的值變更為所要的數字。
 1. 導覽至`/libs/dam/gui/coral/content/commons/sidepanels/imagepresetsdetail/imgagepresetslist/datasource`的影像預設集資料來源
 
    ![chlimage_1-495](assets/chlimage_1-495.png)
@@ -210,7 +210,7 @@ Thumbnail sizing is defined in the following format: **[!UICONTROL width:height:
 1. 在limit屬性中，將數字變更為所要的數字，例如`{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
 1. 選取&#x200B;**[!UICONTROL 全部儲存]**。
 
-### 建立影像預設集 {#creating-image-presets}
+## 建立影像預設集 {#creating-image-presets}
 
 建立影像預設集，以便在您預覽或發佈時，跨影像一致地套用設定。
 
@@ -243,7 +243,7 @@ Thumbnail sizing is defined in the following format: **[!UICONTROL width:height:
 
 1. 選取「**[!UICONTROL 儲存]**」。
 
-### 建立回應式影像預設集 {#creating-a-responsive-image-preset}
+## 建立回應式影像預設集 {#creating-a-responsive-image-preset}
 
 若要建立回應式影像預設集，請執行[建立影像預設集](#creating-image-presets)中的步驟。 在&#x200B;**[!UICONTROL 編輯影像預設集]**&#x200B;視窗中輸入高度和寬度時，請擦除值並保留空白。
 
@@ -263,11 +263,11 @@ Thumbnail sizing is defined in the following format: **[!UICONTROL width:height:
 
 * **[!UICONTROL 格式]** （**[!UICONTROL 基本]**&#x200B;標籤） — 選取&#x200B;**[!UICONTROL JPEG]**&#x200B;或其他符合您需求的格式。 所有網頁瀏覽器都支援JPEG影像格式；它在小檔案大小和影像品質之間提供良好的平衡。但是，JPEG格式影像使用有損壓縮方案，如果壓縮設定太低，則該壓縮方案會引入不想要的影像偽影。因此，Adobe建議將壓縮品質設為75。此設定在影像品質和檔案大小之間取得良好的平衡。
 
-* **[!UICONTROL 啟用簡單銳利化]** -請勿選取「啟用簡 **&#x200B;**&#x200B;單銳利化」 (此銳利化濾鏡提供的控制力比「非銳利化遮色片」設定少)。
+* **[!UICONTROL 啟用簡單銳利化]** -請勿選取「啟用簡 **** 單銳利化」 (此銳利化濾鏡提供的控制力比「非銳利化遮色片」設定少)。
 
 * **[!UICONTROL 銳利化：重新取樣模式]** — 選取&#x200B;**[!UICONTROL 銳利化2]**。
 
-#### 基本索引標籤選項 {#basic-tab-options}
+### 基本索引標籤選項 {#basic-tab-options}
 
 | 欄位 | 說明 |
 | --- | --- |
@@ -276,7 +276,7 @@ Thumbnail sizing is defined in the following format: **[!UICONTROL width:height:
 | **格式** | 從功能表中選擇格式。<br>選擇&#x200B;**JPEG**&#x200B;提供下列其他選項：<br>· **品質** - JPEG品質比例為1-100。 當您拖曳滑桿時，比例是可見的。<br>· **啟用JPG色度縮減取樣** — 因為眼睛對高頻色彩資訊的敏感性低於高頻明度，所以JPEG影像會將影像資訊分成明度和色彩元件。 壓縮JPEG影像時，明度分量會保留為完整解析度，而色彩分量會透過將畫素群組平均來縮減取樣。 縮減取樣將資料量減少一半或三分之一，對感知品質的影響極小。 縮減取樣不適用於灰階影像。 此技術會減少高對比影像（例如文字重疊的影像）的可用壓縮量。<br><br>選擇&#x200B;**GIF**&#x200B;或&#x200B;**含Alpha的GIF**&#x200B;可提供這些額外的&#x200B;**GIF色彩量化**&#x200B;選項：<br>· **型別** — 選取&#x200B;**最適化** （預設）、**網頁**&#x200B;或&#x200B;**Macintosh**。 如果您選取&#x200B;**具有Alpha**&#x200B;的GIF，則Macintosh選項無法使用。<br>· **遞色** — 選取&#x200B;**擴散**&#x200B;或&#x200B;**關閉**。<br>· **色彩數目** — 輸入數字2 - 256。<br>· **色彩清單** — 輸入逗號分隔的清單。 例如，對於白色、灰色和黑色，請輸入`000000,888888,ffffff`。<br><br>選擇&#x200B;**PDF**、**TIFF**&#x200B;或含Alpha **的** TIFF可提供此額外選項：<br>· **壓縮** — 選取壓縮演演算法。 PDF的演演算法選項為&#x200B;**None**、**Zip**&#x200B;和&#x200B;**Jpeg**；TIFF的演演算法選項為&#x200B;**None**、**LZW**、**Jpeg**&#x200B;和&#x200B;**Zip**；搭配Alpha的TIFF的演演算法選項為&#x200B;**None**、**LZW**&#x200B;和&#x200B;**Zip**。<br><br>選擇&#x200B;**PNG**、使用Alpha的&#x200B;**PNG**&#x200B;或&#x200B;**EPS**&#x200B;不提供其他選項。 |
 | **銳利化** | 選取&#x200B;**「啟用簡單銳利化」**，在所有縮放完成後將基本銳利化濾鏡套用至影像。 銳利化有助於彌補以不同大小顯示影像時可能產生的模糊。 |
 
-#### 進階索引標籤選項 {#advanced-tab-options}
+### 進階索引標籤選項 {#advanced-tab-options}
 
 <table>
  <tbody>
@@ -326,7 +326,7 @@ Thumbnail sizing is defined in the following format: **[!UICONTROL width:height:
     </ul>
     <div>
       銳利化的說明請參閱
-     <a href="https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media">搭配Experience Manager Dynamic Media使用影像銳利化</a>影片、<a href="https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-classic/using/master-files/sharpening-image#master-files">銳利化影像</a>線上說明主題，以及<a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf?lang=zh-Hant">在Dynamic Media Classic中銳利化影像的最佳作法</a>可下載的PDF。
+     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media">搭配Experience Manager Dynamic Media使用影像銳利化</a>影片、<a href="https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/master-files/sharpening-image#master-files">銳利化影像</a>線上說明主題，以及<a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf">在Dynamic Media Classic中銳利化影像的最佳作法</a>可下載的PDF。
     </div> </td>
   </tr>
   <tr>
@@ -346,7 +346,7 @@ Thumbnail sizing is defined in the following format: **[!UICONTROL width:height:
   </tr>
   <tr>
    <td><strong>影像修飾元</strong></td>
-   <td><p>除了UI中可用的通用影像設定之外，Dynamic Media還支援您可以在<strong>影像修飾元</strong>欄位中指定的多項進階影像修改。 這些引數定義於<a href="https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/syntax-and-features/image-serving-http/c-command-overview">影像伺服器通訊協定命令參考</a>。</p> <p>重要：不支援API中列出的以下功能：</p>
+   <td><p>除了UI中可用的通用影像設定之外，Dynamic Media還支援您可以在<strong>影像修飾元</strong>欄位中指定的多項進階影像修改。 這些引數定義於<a href="https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/syntax-and-features/image-serving-http/c-command-overview">影像伺服器通訊協定命令參考</a>。</p> <p>重要：不支援API中列出的以下功能：</p>
     <ul>
      <li>基本範本化和文字演算命令： <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code>和 <code>textPs=</code></li>
      <li>本地化命令： <code>locale=</code>和 <code>req=xlate</code></li>
@@ -361,9 +361,9 @@ Thumbnail sizing is defined in the following format: **[!UICONTROL width:height:
  </tbody>
 </table>
 
-### 使用影像修飾元定義影像預設集選項 {#defining-image-preset-options-with-image-modifiers}
+## 使用影像修飾元定義影像預設集選項 {#defining-image-preset-options-with-image-modifiers}
 
-除了「基本」和「進階」標籤中的可用選項外，您也可以定義影像修飾元，以便在定義「影像預設集」時提供更多選項。 影像演算依賴Dynamic Media影像演算API，並在[HTTP通訊協定參考](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction#image-rendering-api)中詳細定義。
+除了「基本」和「進階」標籤中的可用選項外，您也可以定義影像修飾元，以便在定義「影像預設集」時提供更多選項。 影像演算依賴Dynamic Media影像演算API，並在[HTTP通訊協定參考](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction#image-rendering-api)中詳細定義。
 
 以下是一些您可以使用影像修飾元進行操作的基本範例。
 
@@ -371,7 +371,7 @@ Thumbnail sizing is defined in the following format: **[!UICONTROL width:height:
 >
 >部分影像修飾元[無法在Experience Manager](#advanced-tab-options)中使用。
 
-* [op_invert](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert) — 將每個顏色元件反轉成負影像效果。
+* [op_invert](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert) — 將每個顏色元件反轉成負影像效果。
 
   ```xml {.line-numbers}
   &op_invert=1
@@ -379,7 +379,7 @@ Thumbnail sizing is defined in the following format: **[!UICONTROL width:height:
 
   ![6_5_imagepreset-edit-invert](assets/6_5_imagepreset-edit-invert.png)
 
-* [op_blur](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur) — 將模糊濾鏡套用至影像。
+* [op_blur](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur) — 將模糊濾鏡套用至影像。
 
   ```xml {.line-numbers}
   &op_blur=7
@@ -395,7 +395,7 @@ Thumbnail sizing is defined in the following format: **[!UICONTROL width:height:
 
   ![chlimage_1-80](assets/chlimage_1-501.png)
 
-* [op_brightness](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness) — 減少或增加亮度。
+* [op_brightness](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness) — 減少或增加亮度。
 
   ```xml {.line-numbers}
   &op_brightness=58
@@ -403,7 +403,7 @@ Thumbnail sizing is defined in the following format: **[!UICONTROL width:height:
 
   ![6_5_imagepreset-edit-brightness](assets/6_5_imagepreset-edit-brightness.png)
 
-* [opac](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac) — 調整影像不透明度。 可讓您減少前景不透明度。
+* [opac](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac) — 調整影像不透明度。 可讓您減少前景不透明度。
 
   ```xml {.line-numbers}
   opac=29
@@ -411,7 +411,7 @@ Thumbnail sizing is defined in the following format: **[!UICONTROL width:height:
 
   ![6_5_imagepreset-edit-opacity](assets/6_5_imagepreset-edit-opacity.png)
 
-### 編輯影像預設集 {#modifying-image-presets}
+## 編輯影像預設集 {#modifying-image-presets}
 
 1. 在Experience Manager中，選取Experience Manager標誌以存取全域導覽主控台，然後前往&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 影像預設集]**。
 
@@ -420,11 +420,11 @@ Thumbnail sizing is defined in the following format: **[!UICONTROL width:height:
 1. 選取預設集，然後選取&#x200B;**[!UICONTROL 編輯]**。 **[!UICONTROL 編輯影像預設集]**&#x200B;視窗隨即開啟。
 1. 進行變更並選取&#x200B;**[!UICONTROL 儲存]**&#x200B;以儲存您的變更，或選取&#x200B;**[!UICONTROL 取消]**&#x200B;以取消您的變更。
 
-### 發佈影像預設集 {#publishing-image-presets}
+## 發佈影像預設集 {#publishing-image-presets}
 
 影像預設集會自動為您發佈。
 
-### 刪除影像預設集 {#deleting-image-presets}
+## 刪除影像預設集 {#deleting-image-presets}
 
 1. 在Experience Manager中，選取Experience Manager標誌以存取全域導覽主控台，並選取「工具」圖示。
 1. 導覽至&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL 影像預設集]**。
