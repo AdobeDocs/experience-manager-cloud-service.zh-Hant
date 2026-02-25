@@ -4,7 +4,7 @@ description: 瞭解Brand Experience Agent的通訊建立工作，以及如何使
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 49111cdb-e714-4590-8b81-382377083d6e
-source-git-commit: 71e3770a7a26b8d3144717513f3ec1c997b3b435
+source-git-commit: 9be60c79ef001edf7590a8fd3fd64c1a9a1ab9f9
 workflow-type: tm+mt
 source-wordcount: '614'
 ht-degree: 0%
@@ -13,6 +13,8 @@ ht-degree: 0%
 
 
 # 溝通建立技能 {#ic-creation-skill}
+
+<!-- UNCOMMENT ACTIVATION SECTION AT THE BOTTOM ONCE THIS IS NO LONGER ALPHA -->
 
 >[!NOTE]
 >
@@ -69,3 +71,11 @@ ht-degree: 0%
 * *將條款與條件區段的行距變更為1.5*
 
 如需互動式通訊編輯器功能的詳細資訊，請參閱[互動式通訊檔案。](/help/forms/introduction-to-interactive-communication.md)
+
+<!-- UNCOMMENT ONCE NO LONGER ALPHA -->
+
+<!--
+## Activation {#activation}
+
+You can explore AEM Agents through the [Playground](https://www.aem.live/developer/aem-playground), or connect with your CSM or TAM to discuss access via the Agentic SKU.
+-->

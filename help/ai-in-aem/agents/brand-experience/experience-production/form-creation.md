@@ -4,9 +4,9 @@ description: 瞭解Brand Experience Agent的表單建立工作，以及如何使
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 24ad5f36-405b-4ea2-9819-de6aea856a7a
-source-git-commit: 71e3770a7a26b8d3144717513f3ec1c997b3b435
+source-git-commit: 36f4ba8207da67b8e68c9c9851311defc909b495
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '509'
 ht-degree: 0%
 
 ---
@@ -54,15 +54,9 @@ ht-degree: 0%
 
 如需詳細資訊，請參閱[Forms Experience Builder檔案。](/help/forms/experience-builder/product-overview.md)
 
-
 ## 啟用 {#activation}
 
-若要為貴組織啟用表單建立工作，必須透過Adobe啟動啟用。 透過以下方式聯絡以開始此程式：
-
-* 電子郵件： `experience-production-agent@adobe.com`
-* 或者，請聯絡您指定的Adobe客戶團隊。
-
-聯絡時，請務必提供您的AEM as a Cloud Service組織ID。
+您可以透過[遊樂場](https://www.aem.live/developer/aem-playground)探索AEM代理程式，或連絡您的CSM或TAM，討論透過Agentic SKU的存取權。
 
 <!-- 
 #### Import and convert {#import-and-convert}
