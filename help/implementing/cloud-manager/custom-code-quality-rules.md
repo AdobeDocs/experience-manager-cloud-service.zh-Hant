@@ -5,9 +5,9 @@ exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 629cf9d88531b2e95627917ca139eed1fbddf09d
+source-git-commit: d9a6e7c56a786792599e91ca7a2734dcf15fcb23
 workflow-type: tm+mt
-source-wordcount: '4427'
+source-wordcount: '4441'
 ht-degree: 63%
 
 ---
@@ -519,9 +519,11 @@ public void doThis(Resource resource) {
 * **嚴重性**：資訊、次要或主要
 * **始自**：2026.1.0 版本
 
-Experience Manager API表面經過不斷修正，以識別需要停止使用的API。 此類API已過時，並標示移除日期。
+Experience Manager API表面經過不斷修正，以識別需要停止使用的API。 這些API已過時，並標示移除日期。
 
 移除日期越近，違反此規則的嚴重性就越高。 必須以安全的替代方式來取代此類API的使用。
+
+請參考[本文](/help/release-notes/deprecated-removed-features.md#aem-apis)以獲取有關如何移除已棄用API之使用方式的指引。
 
 ### 請勿使用 Experience Manager 已過時的 API {#sonarqube-aem-deprecated}
 
