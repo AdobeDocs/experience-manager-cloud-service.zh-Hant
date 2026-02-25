@@ -4,10 +4,10 @@ description: 了解如何在發佈階層為 AEM as a Cloud Service 設定 Open I
 feature: Security
 role: Admin
 exl-id: d2f30406-546c-4a2f-ba88-8046dee3e09b
-source-git-commit: 75c2dbc4f1d77de48764e5548637f95bee9264dd
+source-git-commit: c9b0f68751bbec69ff0d2a09aa3b7df31d35de3a
 workflow-type: tm+mt
-source-wordcount: '1986'
-ht-degree: 71%
+source-wordcount: '2153'
+ht-degree: 66%
 
 ---
 
@@ -115,7 +115,7 @@ IdP 設定的資訊：
 
 ### 設定 SlingUserInfoProcessor {#configure-slinguserinfoprocessor}
 
-1. 建立設定檔。對於此範例，我們將使用 `org.apache.sling.auth.oauth_client.impl.SlingUserInfoProcessor~azure.cfg.json`。`azure` 字尾必須是唯一識別碼。請參閱以下的設定檔範例：
+1. 建立設定檔。對於此範例，我們將使用 `org.apache.sling.auth.oauth_client.impl.SlingUserInfoProcessorImpl~azure.cfg.json`。`azure` 字尾必須是唯一識別碼。請參閱以下的設定檔範例：
 
    ```
    {
@@ -208,12 +208,14 @@ IdP 設定的資訊：
 ### 選項1 — 本機群組
 
 可以將外部群組新增為已具有所需ACL之本機群組的成員。
+
 * 外部群組必須存在於存放庫中，當屬於該群組的使用者首次登入時，就會自動發生這種情況。
 * 使用封閉式使用者群組(CUG)時，此選項通常是首選，因為本機群組同時存在於製作和發佈環境中。
 
 ### 選項2 — 透過RepoInit在外部群組上直接ACL
 
 ACL可以使用RepoInit指令碼直接套用至外部群組。
+
 * 這種方法更有效率，而且在不使用CUG時較偏好使用。
 * 下列範例顯示指派讀取許可權給外部群組的RepoInit設定。 選項`ignoreMissingPrincipal`允許建立ACL，即使該群組尚未存在於存放庫中：
 
@@ -333,7 +335,7 @@ ACL可以使用RepoInit指令碼直接套用至外部群組。
 
 要在 Microsoft Azure 入口網站中為企業應用程式設定群組，您需要在&#x200B;**企業應用程式**&#x200B;搜尋該應用程式並新增群組：<!-- Alexandru: this bit cound be clearer-->
 
-![OIDC 群組新增 &#x200B;](/help/security/assets/oidc-ad-additional-info.png)
+![OIDC 群組新增 ](/help/security/assets/oidc-ad-additional-info.png)
 
 若要在 ID 權杖中啟用群組申請，請在 Microsoft Azure 入口網站的&#x200B;**權杖設定**&#x200B;欄位新增申請：<!-- Alexandru: this bit cound be clearer as well-->
 
@@ -352,14 +354,58 @@ ACL可以使用RepoInit指令碼直接套用至外部群組。
 }
 ```
 
+## 驗證後自訂重新導向 {#custom-redirect-after-authentication}
+
+根據預設，在成功OIDC驗證後，會將使用者重新導向回最初請求的URL。 不過，您可以使用`redirect`查詢引數自訂此行為。
+
+### 使用重新導向引數
+
+起始驗證時，您可以將`redirect`引數新增至驗證請求，以指定自訂重新導向URL：
+
+```
+/content/wknd/us/en/adventures?redirect=/content/wknd/us/en/welcome
+```
+
+在此範例中，在成功驗證後，會將使用者重新導向至`/content/wknd/us/en/welcome`，而非最初要求的頁面。
+
+### 安全性限制
+
+基於安全理由，`redirect`引數有下列限制：
+
+* **必須是相對路徑**：重新導向URL必須以`/`開頭（例如`/content/mysite/dashboard`）
+* **沒有跨網站重新導向**：不允許絕對URL （例如`https://external-site.com`）
+* **沒有通訊協定相對URL**：拒絕以`//`開頭的URL，以防止通訊協定相對重新導向
+
+如果提供的重新導向URL無效，驗證將會失敗並出現錯誤。
+
+### 範例使用案例
+
+1. **登入後的歡迎頁面**：將使用者首次登入後的使用者重新導向至個人化歡迎頁面
+
+   ```
+   /content/mysite/secure-area?redirect=/content/mysite/welcome
+   ```
+
+2. **儀表板重新導向**：驗證後，將使用者導向至特定的儀表板
+
+   ```
+   /content/mysite/login?redirect=/content/mysite/user/dashboard
+   ```
+
+3. **深層連結**：允許使用者驗證，然後存取特定資源
+
+   ```
+   /content/mysite/protected?redirect=/content/mysite/protected/specific-document
+   ```
+
 ## 如何從Saml驗證處理常式移轉至Oidc驗證處理常式
 
-當AEM已設定SAML驗證處理常式，且使用者存在於已啟用[資料同步化](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization)的存放庫時，原始SAML使用者與新OIDC使用者之間可能會發生衝突。
+當AEM已設定SAML驗證處理常式，且使用者存在於已啟用[資料同步化](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization)的存放庫時，原始SAML使用者與新OIDC使用者之間可能會發生衝突。
 
 1. 設定[OidcAuthenticationHandler](#configure-oidc-authentication-handler)，並在`idpNameInPrincipals`SlingUserInfoProcessor[設定中啟用](#configure-slinguserinfoprocessor)
 1. 設定外部群組[的](#configure-acl-for-external-groups)ACL。
 1. 從使用者登入後，可以刪除saml驗證處理常式建立的舊使用者。
 
 >[!NOTE]
->一旦SAML驗證處理常式停用，且OIDC驗證處理常式已啟用，如果未啟用[資料同步處理](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization)，則現有工作階段會變成無效。 使用者必須再次驗證，這會導致在存放庫中建立新的OIDC使用者節點。
+>一旦SAML驗證處理常式停用，且OIDC驗證處理常式已啟用，如果未啟用[資料同步處理](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/personalization/user-and-group-sync-for-publish-tier#data-synchronization)，則現有工作階段會變成無效。 使用者必須再次驗證，這會導致在存放庫中建立新的OIDC使用者節點。
 
