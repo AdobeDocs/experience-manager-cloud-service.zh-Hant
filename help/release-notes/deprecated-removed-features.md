@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 0f244af47acf84814969094c6e6075169e5b83c1
+source-git-commit: 7e330f996e6726e4284b4cc168881f5eec3da5b4
 workflow-type: tm+mt
-source-wordcount: '3912'
+source-wordcount: '3918'
 ht-degree: 79%
 
 ---
@@ -55,7 +55,7 @@ Adobe 會定期檢閱包括 API 和設定在內的功能，確保其符合 AEM a
 | [!DNL Sites] | 基於範例的簡單內容片段。 | 現在[基於模型的結構化內容片段](/help/assets/content-fragments/content-fragments-models.md)。 |
 | [!DNL Assets] | 處理所擷取影像的 `DAM Asset Update` 工作流程。 | 資產擷取現在使用[資產微服務](/help/assets/asset-microservices-overview.md)。 |
 | [!DNL Assets] | 直接將資產上傳到 [!DNL Experience Manager]。請參閱[已過時的資產上傳 API](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api)。 | 使用[直接二進位上傳](/help/assets/add-assets.md)。如需技術詳細資訊，請參閱[直接上傳 API](/help/assets/developer-reference-material-apis.md#upload-binary)。 |
-| [!DNL Assets] | 不支援 [&#x200B; 工作流程中的](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps)某些工作流程步驟`DAM Asset Update`，包括呼叫命令列工具，例如 [!DNL ImageMagick]. | [資產微服務](/help/assets/asset-microservices-overview.md)可取代許多工作流程。若要自訂處理程序，請使用[後期處理工作流程](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)。 |
+| [!DNL Assets] | 不支援 [ 工作流程中的](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps)某些工作流程步驟`DAM Asset Update`，包括呼叫命令列工具，例如 [!DNL ImageMagick]. | [資產微服務](/help/assets/asset-microservices-overview.md)可取代許多工作流程。若要自訂處理程序，請使用[後期處理工作流程](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)。 |
 | [!DNL Assets] | FFmpeg 影片轉碼。 | 若要產生 FFmpeg 縮圖，請使用[資產微服務](/help/assets/asset-microservices-overview.md)。若是 FFmpeg 轉碼，請使用 [Dynamic Media](/help/assets/manage-video-assets.md)。 |
 | [!DNL Foundation] | 複寫代理程式之「散發」索引標籤下的樹狀結構複寫使用者介面 (2021 年 9 月 30 日後移除) | [管理發佈](/help/operations/replication.md#manage-publication)或[啟用樹狀工作流程步驟](/help/operations/replication.md#tree-activation)方法。 |
 | [!DNL Foundation] | 複寫代理程式管理員畫面的「散發」標籤和複寫 API 無法用來複寫超過 10MB 的內容封裝。 | [管理發佈](/help/operations/replication.md#manage-publication)或[啟用樹狀工作流程步驟](/help/operations/replication.md#tree-activation) |
@@ -198,90 +198,90 @@ Adobe 會定期檢閱包括 API 和設定在內的功能，確保其符合 AEM a
     <td>org.apache.jackrabbit.oak.plugins.blob<br>org.apache.jackrabbit.oak.plugins.blob.datastore</td>
     <td>此 API 僅供內部使用。</td>
     <td>2024/9/23</td>
-    <td>待定</td>
+    <td>9/30/2026</td>
   </tr>
   <tr>
     <td>org.bson<br/>org.bson.assertions<br/>org.bson.codecs<br/>org.bson.codecs.configuration<br/>org.bson.codecs.pojo<br/>org.bson.codecs.pojo.annotations<br/>org.bson.conversions<br/>org.bson.diagnostics<br/>org.bson.internal<br/>org.bson.io<br/>org.bson.json<br/>org.bson.types<br/>org.bson.util</td>
     <td>AEM as a Cloud Service 不支援使用此 API。</td>
     <td>2022/10/31</td>
-    <td>待定</td>
-  </tr>
-  <tr>
-    <td>org.apache.sling.runmode</td>
-    <td></td>
-    <td>2015</td>
-    <td>待定</td>
-  </tr>
-  <tr>
-    <td>org.json</td>
-    <td>建議並應該使用 Apache Johnzon 的 <a href="https://johnzon.apache.org/index.html">javax.json</a> 實作。 </td>
-    <td>2021/4/30</td>
-    <td>待定</td>
-  </tr>
-  <tr>
-<td>org.apache.commons.lang<br>org.apache.commons.lang.enums<br>org.apache.commons.lang.builder<br>org.apache.commons.lang.exception<br>org.apache.commons.lang.math<br>org.apache.commons.lang.mutable<br>org.apache.commons.lang.reflect<br>org.apache.commons.lang.text<br>org.apache.commons.lang.time</td>
-    <td>Commons Lang 2 處於維護模式。應該改用 Commons Lang 3。<a href="#apache.commons">請參閱下面的移除說明。</a></td>
-    <td>2021/4/30</td>
-    <td>待定</td>
-  </tr>
-  <tr>
-    <td>org.apache.commons.collections<br>org.apache.commons.collections.bag<br>org.apache.commons.collections.bidimap<br>org.apache.commons.collections.buffer<br>org.apache.commons.collections.collection<br>org.apache.commons.collections.comparators<br>org.apache.commons.collections.functors<br>org.apache.commons.collections.iterators<br>org.apache.commons.collections.keyvalue<br>org.apache.commons.collections.list<br>org.apache.commons.collections.map<br>org.apache.commons.collections.set</td>
-    <td>Commons Collections 3 處於維護模式。應該改用 Collections 4。<a href="#apache.commons">請參閱下面的移除說明。</a></td>
-    <td>2021/4/30</td>
-    <td>待定</td>
+    <td>9/30/2026</td>
   </tr>
   <tr>
     <td>com.day.cq.contentsync.handler.util</td>
     <td>此 API 已過時。請改用 Apache Sling 的產生器。</td>
     <td>10/31/2022</td>
-    <td>待定</td>
-  </tr>
-  <tr><td>org.apache.sling.commons.json<br>org.apache.sling.commons.json.http<br>org.apache.sling.commons.json.io<br>org.apache.sling.commons.json.jcr<br>org.apache.sling.commons.json.sling<br>org.apache.sling.commons.json.util<br>org.apache.sling.commons.json.xml</td>
-    <td>AEM as a Cloud Service 不支援此 API。</td>
-    <td>2023/5/15</td>
-    <td>待定</td>
-  </tr>
-  <tr>
-    <td>com.day.cq.xss<br>com.day.cq.xss.taglib<br>com.day.cq.xss.impl</td>
-    <td>請改用 org.apache.sling.xss。</td>
-    <td>2023 年 12 月 12 日</td>
-    <td>待定</td>
+    <td>9/30/2026</td>
   </tr>
   <tr>
     <td>com.adobe.granite.xss</td>
     <td>請改用 org.apache.sling.xss。</td>
     <td>2023 年 12 月 12 日</td>
-    <td>待定</td>
+    <td>9/30/2026</td>
   </tr>
   <tr>
     <td>com.github.jknack.handlebars<br>com.github.jknack.handlebars.cache<br>com.github.jknack.handlebars.context<br>com.github.jknack.handlebars.helper<br>com.github.jknack.handlebars.io</td>
     <td>此API已過時。</td>
     <td>07/10/2024</td>
-    <td>待定</td>
+    <td>9/30/2026</td>
   </tr>
   <tr>
     <td>com.day.cq.mailer.commons</td>
     <td>此API已過時，因為它依賴commons-lang （自2021年起已過時）。</td>
     <td>11/30/2025</td>
-    <td>待定</td>
+    <td>9/30/2026</td>
   </tr>
   <tr>
     <td>com.adobe.granite.httpcache.api</td>
     <td>不再支援此API。</td>
     <td>01/01/2026</td>
-    <td>待定</td>
+    <td>9/30/2026</td>
   </tr>
   <tr>
     <td>org.apache.jackrabbit.webdav.client.methods</td>
     <td>AEM as a Cloud Service 不支援使用此 API。</td>
     <td>2/13/2026</td>
-    <td>待定</td>
+    <td>9/30/2026</td>
+  </tr>
+  <tr>
+    <td>com.day.cq.xss<br>com.day.cq.xss.taglib<br>com.day.cq.xss.impl</td>
+    <td>請改用 org.apache.sling.xss。</td>
+    <td>2023 年 12 月 12 日</td>
+    <td>9/30/2026</td>
+  </tr>
+  <tr>
+<td>org.apache.commons.lang<br>org.apache.commons.lang.enums<br>org.apache.commons.lang.builder<br>org.apache.commons.lang.exception<br>org.apache.commons.lang.math<br>org.apache.commons.lang.mutable<br>org.apache.commons.lang.reflect<br>org.apache.commons.lang.text<br>org.apache.commons.lang.time</td>
+    <td>Commons Lang 2 處於維護模式。應該改用 Commons Lang 3。<a href="#apache.commons">請參閱下面的移除說明。</a></td>
+    <td>2021/4/30</td>
+    <td>2027年3月31日（暫定）</td>
+  </tr>
+  <tr>
+    <td>org.apache.commons.collections<br>org.apache.commons.collections.bag<br>org.apache.commons.collections.bidimap<br>org.apache.commons.collections.buffer<br>org.apache.commons.collections.collection<br>org.apache.commons.collections.comparators<br>org.apache.commons.collections.functors<br>org.apache.commons.collections.iterators<br>org.apache.commons.collections.keyvalue<br>org.apache.commons.collections.list<br>org.apache.commons.collections.map<br>org.apache.commons.collections.set</td>
+    <td>Commons Collections 3 處於維護模式。應該改用 Collections 4。<a href="#apache.commons">請參閱下面的移除說明。</a></td>
+    <td>2021/4/30</td>
+    <td>2027年3月31日（暫定）</td>
+  </tr>
+  <tr>
+    <td>org.json</td>
+    <td>建議並應該使用 Apache Johnzon 的 <a href="https://johnzon.apache.org/index.html">javax.json</a> 實作。 </td>
+    <td>2021/4/30</td>
+    <td>2027年3月31日（暫定）</td>
+  </tr>
+  <tr>
+    <td>org.apache.sling.runmode</td>
+    <td></td>
+    <td>2015</td>
+    <td>2027年12月31日（暫定）</td>
+  </tr>
+  <tr><td>org.apache.sling.commons.json<br>org.apache.sling.commons.json.http<br>org.apache.sling.commons.json.io<br>org.apache.sling.commons.json.jcr<br>org.apache.sling.commons.json.sling<br>org.apache.sling.commons.json.util<br>org.apache.sling.commons.json.xml</td>
+    <td>AEM as a Cloud Service 不支援此 API。</td>
+    <td>2023/5/15</td>
+    <td>2027年12月31日（暫定）</td>
   </tr>
   <tr>
     <td>org.osgi.service.http</td>
     <td>OSGi服務HTTP API已過時，請改用OSGi Servlet Whiteboard。</td>
     <td>5/1/2024</td>
-    <td>待定</td>
+    <td>2027年12月31日（暫定）</td>
   </tr>
   </tbody>
 </table>
@@ -374,7 +374,7 @@ Adobe 會定期檢閱包括 API 和設定在內的功能，確保其符合 AEM a
 
 本區段反映上表中各種 API 的 API 移除指引。
 
-若要識別您的程式碼正在使用哪些已棄用的Java API，請將[AEM as a Cloud Service SDK Build Analyzer Maven外掛程式](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin)整合到您的Maven專案中，並在本機執行。 此報表會列出所有偵測到的已棄用API使用方式，並指出哪個OSGi套件組合正在參考每個API。 請參考[本教學課程](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal)以瞭解如何使用Maven外掛程式。
+若要識別您的程式碼正在使用哪些已棄用的Java API，請將[AEM as a Cloud Service SDK Build Analyzer Maven外掛程式](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin)整合到您的Maven專案中，並在本機執行。 此報表會列出所有偵測到的已棄用API使用方式，並指出哪個OSGi套件組合正在參考每個API。 請參考[本教學課程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal)以瞭解如何使用Maven外掛程式。
 
 雖然您應隨著時間修正所有已棄用的API，但請優先處理「已棄用API」表格中列出的任何API，且目標移除日期為2026年2月26日（或更早日期）。 AEM Analyzer報表中，這些API的實際移除日期為2025年8月31日。
 
