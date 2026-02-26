@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 7e330f996e6726e4284b4cc168881f5eec3da5b4
+source-git-commit: 940fc779feb4b042a54b4ac5758377812df64537
 workflow-type: tm+mt
-source-wordcount: '3918'
-ht-degree: 79%
+source-wordcount: '4040'
+ht-degree: 76%
 
 ---
 
@@ -31,12 +31,12 @@ Adobe 會定期檢閱包括 API 和設定在內的功能，確保其符合 AEM a
 
 >[!IMPORTANT]
 >
->多個[已棄用的API](#aem-apis)將於&#x200B;**2026年2月26日**&#x200B;目標移除。 請檢閱這些關鍵日期和影響：
+>多個[已棄用的API](#aem-apis)將於2026年5月4日&#x200B;**移除**。 請檢閱這些關鍵日期和影響：
 >
->* **自2026年1月26日起**：每個環境&#x200B;**每週都會傳送動作中心通知電子郵件**，以提醒您移除這些API的使用情況。
->* **2026年2月26日**：包含使用這些API之程式碼的Cloud Manager管道將在&#x200B;**程式碼品質**&#x200B;步驟期間&#x200B;**暫停**。 部署管理員、專案管理員或企業所有者可以覆寫此問題，以允許管道繼續。
->* **2026年3月30日**：包含使用這些API之程式碼的Cloud Manager管道將在&#x200B;**程式碼品質**&#x200B;步驟期間&#x200B;**失敗**，**封鎖新程式碼的部署**，直到移除使用為止。
->* **2026年4月30日**：仍在使用這些API的環境可能&#x200B;**不再接收重要的Adobe版本更新**。
+>* **自2026年1月26日起**：會傳送動作中心通知電子郵件，提醒您移除使用這些API。
+>* **2026年2月26日**：包含使用這些API之程式碼的Cloud Manager管道將在&#x200B;**程式碼品質**&#x200B;步驟期間&#x200B;**暫停**。 部署管理員、專案管理員或企業所有者可以覆寫此問題，以允許管道繼續。 *這可能會降低您驗證和發行程式碼變更的能力。*
+>* **2026年3月30日**：包含使用這些API之程式碼的Cloud Manager管道將在&#x200B;**程式碼品質**&#x200B;步驟中&#x200B;**失敗**。 在移除過時的API使用方式之前，部署將會遭到封鎖。 *這可能會阻止您發佈時效性更新資料，並可能影響您的業務運作。*
+>* **2026年5月4日**：仍在使用已棄用API的環境&#x200B;**將不會收到重要的Adobe版本更新**，且不會受到Adobe有關效能和可用性的標準承諾所約束。 因此，您將不會收到新功能或錯誤修正、應用程式穩定性和運作時間可能會受到負面影響，且安全性風險暴露可能會進一步增加。
 >
 >若要防止部署封鎖，請在2026年3月30日之前移除API使用方式。
 
@@ -55,7 +55,7 @@ Adobe 會定期檢閱包括 API 和設定在內的功能，確保其符合 AEM a
 | [!DNL Sites] | 基於範例的簡單內容片段。 | 現在[基於模型的結構化內容片段](/help/assets/content-fragments/content-fragments-models.md)。 |
 | [!DNL Assets] | 處理所擷取影像的 `DAM Asset Update` 工作流程。 | 資產擷取現在使用[資產微服務](/help/assets/asset-microservices-overview.md)。 |
 | [!DNL Assets] | 直接將資產上傳到 [!DNL Experience Manager]。請參閱[已過時的資產上傳 API](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api)。 | 使用[直接二進位上傳](/help/assets/add-assets.md)。如需技術詳細資訊，請參閱[直接上傳 API](/help/assets/developer-reference-material-apis.md#upload-binary)。 |
-| [!DNL Assets] | 不支援 [&#x200B; 工作流程中的](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps)某些工作流程步驟`DAM Asset Update`，包括呼叫命令列工具，例如 [!DNL ImageMagick]. | [資產微服務](/help/assets/asset-microservices-overview.md)可取代許多工作流程。若要自訂處理程序，請使用[後期處理工作流程](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)。 |
+| [!DNL Assets] | 不支援 [ 工作流程中的](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps)某些工作流程步驟`DAM Asset Update`，包括呼叫命令列工具，例如 [!DNL ImageMagick]. | [資產微服務](/help/assets/asset-microservices-overview.md)可取代許多工作流程。若要自訂處理程序，請使用[後期處理工作流程](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows)。 |
 | [!DNL Assets] | FFmpeg 影片轉碼。 | 若要產生 FFmpeg 縮圖，請使用[資產微服務](/help/assets/asset-microservices-overview.md)。若是 FFmpeg 轉碼，請使用 [Dynamic Media](/help/assets/manage-video-assets.md)。 |
 | [!DNL Foundation] | 複寫代理程式之「散發」索引標籤下的樹狀結構複寫使用者介面 (2021 年 9 月 30 日後移除) | [管理發佈](/help/operations/replication.md#manage-publication)或[啟用樹狀工作流程步驟](/help/operations/replication.md#tree-activation)方法。 |
 | [!DNL Foundation] | 複寫代理程式管理員畫面的「散發」標籤和複寫 API 無法用來複寫超過 10MB 的內容封裝。 | [管理發佈](/help/operations/replication.md#manage-publication)或[啟用樹狀工作流程步驟](/help/operations/replication.md#tree-activation) |
@@ -86,15 +86,15 @@ Adobe 會定期檢閱包括 API 和設定在內的功能，確保其符合 AEM a
 下方表格中的 API (按一下將其展開查看內容) 已宣佈為棄用，但尚未移除。必須在目標移除日期之前停止使用這些 API，否則您會面臨與效能、可用性和安全性相關之問題的風險。部分 API 參照下方的 API 移除指引區段。
 
 >[!IMPORTANT]
-> 多個API已排程在&#x200B;**2026年2月26日**&#x200B;移除。 請檢閱這些關鍵日期和影響：
 >
-> * **自2026年1月26日起**：每個環境&#x200B;**每週都會傳送動作中心通知電子郵件**，以提醒您移除這些API的使用情況。
-> * **2026年2月26日**：包含使用這些API之程式碼的Cloud Manager管道將在&#x200B;**程式碼品質**&#x200B;步驟期間&#x200B;**暫停**。 部署管理員、專案管理員或企業所有者可以覆寫此問題，以允許管道繼續。
-> * **2026年3月30日**：包含使用這些API之程式碼的Cloud Manager管道將在&#x200B;**程式碼品質**&#x200B;步驟期間&#x200B;**失敗**，**封鎖新程式碼的部署**，直到移除使用為止。
-> * **2026年5月4日**：仍在使用這些API的環境可能&#x200B;**不再接收重要的Adobe版本更新**。
+>多個[已棄用的API](#aem-apis)將於2026年5月4日&#x200B;**移除**。 請檢閱這些關鍵日期和影響：
 >
-> 若要防止部署封鎖，請在2026年3月30日之前移除API使用方式。
-
+>* **自2026年1月26日起**：會傳送動作中心通知電子郵件，提醒您移除使用這些API。
+>* **2026年2月26日**：包含使用這些API之程式碼的Cloud Manager管道將在&#x200B;**程式碼品質**&#x200B;步驟期間&#x200B;**暫停**。 部署管理員、專案管理員或企業所有者可以覆寫此問題，以允許管道繼續。 *這可能會降低您驗證和發行程式碼變更的能力。*
+>* **2026年3月30日**：包含使用這些API之程式碼的Cloud Manager管道將在&#x200B;**程式碼品質**&#x200B;步驟中&#x200B;**失敗**。 在移除過時的API使用方式之前，部署將會遭到封鎖。 *這可能會阻止您發佈時效性更新資料，並可能影響您的業務運作。*
+>* **2026年5月4日**：仍在使用已棄用API的環境&#x200B;**將不會收到重要的Adobe版本更新**，且不會受到Adobe有關效能和可用性的標準承諾所約束。 因此，您將不會收到新功能或錯誤修正、應用程式穩定性和運作時間可能會受到負面影響，且安全性風險暴露可能會進一步增加。
+>
+>若要防止部署封鎖，請在2026年3月30日之前移除API使用方式。
 
 <details>
   <summary>展開以查看已過時的 API 清單。</summary>
@@ -374,7 +374,7 @@ Adobe 會定期檢閱包括 API 和設定在內的功能，確保其符合 AEM a
 
 本區段反映上表中各種 API 的 API 移除指引。
 
-若要識別您的程式碼正在使用哪些已棄用的Java API，請將[AEM as a Cloud Service SDK Build Analyzer Maven外掛程式](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin)整合到您的Maven專案中，並在本機執行。 此報表會列出所有偵測到的已棄用API使用方式，並指出哪個OSGi套件組合正在參考每個API。 請參考[本教學課程](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal)以瞭解如何使用Maven外掛程式。
+若要識別您的程式碼正在使用哪些已棄用的Java API，請將[AEM as a Cloud Service SDK Build Analyzer Maven外掛程式](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin)整合到您的Maven專案中，並在本機執行。 此報表會列出所有偵測到的已棄用API使用方式，並指出哪個OSGi套件組合正在參考每個API。 請參考[本教學課程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal)以瞭解如何使用Maven外掛程式。
 
 雖然您應隨著時間修正所有已棄用的API，但請優先處理「已棄用API」表格中列出的任何API，且目標移除日期為2026年2月26日（或更早日期）。 AEM Analyzer報表中，這些API的實際移除日期為2025年8月31日。
 
