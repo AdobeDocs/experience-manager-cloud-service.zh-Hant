@@ -1,20 +1,20 @@
 ---
-title: 通用編輯器 2026.02.19 發行說明
-description: 此為通用編輯器 2026.02.19 版本的發行說明。
+title: 通用編輯器 2026.02.26 發行說明
+description: 此為通用編輯器 2026.02.26 版本的發行說明。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 39137052e9fa409f7f5494be53fa7693aaa60b17
+source-git-commit: 53f77d76fc43932e16cd36e47435499f33513b18
 workflow-type: tm+mt
-source-wordcount: '251'
-ht-degree: 34%
+source-wordcount: '221'
+ht-degree: 38%
 
 ---
 
 
-# 通用編輯器 2026.02.19 發行說明 {#release-notes}
+# 通用編輯器 2026.02.26 發行說明 {#release-notes}
 
-此為通用編輯器 2026 年 2 月 19 日版本的發行說明。
+此為通用編輯器 2026 年 2 月 26 日版本的發行說明。
 
 >[!TIP]
 >
@@ -26,14 +26,9 @@ ht-degree: 34%
 
 ## 新增功能 {#what-is-new}
 
-* 已改善RTE。
-   * [現在支援在內容RTE](/help/implementing/universal-editor/configure-rte.md#common-action-options)中隱藏工具列專案。
-   * [現在支援將文字繞排在含有段落](/help/implementing/universal-editor/configure-rte.md#table-actions)的表格中。
-   * [不支援的HTML標籤](/help/implementing/universal-editor/configure-rte.md#unsupported-html)現在可由RTE保留。
-   * RTE邏輯現在由個別檔案提供。
-   * [現在可以建立](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)資料表，也可以使用RTE進行編輯。
-* 如果未設定標籤，則現在會使用元件定義中的元件標題。
-* `setEditorMode`現在可透過擴充功能使用。
+* 說明已新增至所有結構欄位，以協助開發人員產生模型/篩選器/元件定義檔案。
+* 內容片段的多欄位更新現在支援內文中編輯。
+
 
 ## 早期採用功能 {#early-adopter}
 
@@ -43,7 +38,7 @@ ht-degree: 34%
 
 ## 其他改善功能 {#other-improvements}
 
-* RTE端點現在可供就地編輯器使用。
-* 編輯巢狀欄位不再導致從這些結構覆寫對等專案。
-* 強制RTE欄位無法再儲存為空白。
-* 在格式化後新增連結時，就地格式不再不當套用。
+* 編輯器在內容到達之前，不再預設內容為`{}`，以防止某些情況下的資料遺失。
+* 欄位成為焦點時的資料持續性變得更強健。
+* 在左側面板中編輯，然後在編輯器視窗中選取其他專案時，某些情況下不再遺失變更。
+* 已修正使用OpenAPI端點時內容片段RTE欄位的持續性問題。

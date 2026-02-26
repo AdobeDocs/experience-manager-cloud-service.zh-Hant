@@ -4,12 +4,13 @@ description: 這是通用編輯器預覽版本的發行說明。
 feature: Release Information
 role: Admin
 exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
-source-git-commit: 39137052e9fa409f7f5494be53fa7693aaa60b17
+source-git-commit: 8ebc8184e642f26c004df88a16eece2563780437
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 38%
+source-wordcount: '167'
+ht-degree: 49%
 
 ---
+
 
 # 通用編輯器預覽發行說明 {#preview}
 
@@ -25,12 +26,11 @@ ht-degree: 38%
 >
 >實際發行內容及發行日期可能會有所變動。
 
-## 即將推出的改善功能 {#other-improvements}
+## 即將推出的功能 {#upcoming-features}
 
-* 編輯器在內容到達之前，不再預設內容為`{}`，以防止某些情況下的資料遺失。
-* 在左側面板中編輯，然後在編輯器視窗中選取另一個專案時，變更不再遺失。
-* 使用`headless-canvas`時不再需要手動css匯入。
-* 在CORS用途中，會將正確的端點用於舞台、預覽和生產等。
-* 說明已新增至所有結構描述欄位。
-* 內容片段的多欄位更新現在支援內文中編輯。
-* 欄位成為焦點時的資料持續性變得更強健。
+* 內容功能表中現在提供元件選擇器。
+* 現在提供RTE的檢色器。
+
+## 即將推出的改善功能 {#upcoming-improvements}
+
+* RTE[中的對齊、文字方向及縮排選項現已預設為](/help/implementing/universal-editor/configure-rte.md)啟用，前提是您的後端支援這些選項。
