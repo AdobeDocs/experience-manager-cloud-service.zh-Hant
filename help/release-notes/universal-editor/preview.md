@@ -4,10 +4,10 @@ description: 這是通用編輯器預覽版本的發行說明。
 feature: Release Information
 role: Admin
 exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
-source-git-commit: 8ebc8184e642f26c004df88a16eece2563780437
+source-git-commit: 6b4c4b92bb726da2f7222dfa0e223aa3d0309c8f
 workflow-type: tm+mt
-source-wordcount: '167'
-ht-degree: 49%
+source-wordcount: '164'
+ht-degree: 50%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 49%
 
 ## 即將推出的功能 {#upcoming-features}
 
-* 內容功能表中現在提供元件選擇器。
+* 元件選擇器有新的設計。
 * 現在提供RTE的檢色器。
 
 ## 即將推出的改善功能 {#upcoming-improvements}
