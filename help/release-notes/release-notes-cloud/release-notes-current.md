@@ -104,7 +104,7 @@ Customers selected for participation will be notified directly by Adobe. Partici
 
 * **在提交PDF中顯示多選下拉式清單的標籤**：最適化Forms中的多選下拉式清單元件現在會在[產生的提交PDF](/help/forms/generate-document-of-record-core-components.md)中轉譯其選取的顯示標籤，以確保檔案正確反映使用者在表單上看到的內容。
 
-* **核取方塊、選項按鈕和面板元件的增強協助工具**：最適化Forms核心元件為[核取方塊群組(v2)](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox-group)、[選項按鈕群組(v2)](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/radio-button)和[面板元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)引入符合WCAG 2.2的語意標籤。 這些元件運用`<fieldset>`和`<legend>` HTML元素，在群組標籤與其選項之間建立有意義的關係，讓熒幕助讀程式和其他輔助技術能夠精確解讀。
+* **核取方塊、選項按鈕和面板元件的增強協助工具**：最適化Forms核心元件為[核取方塊群組(v2)](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox-group)、[選項按鈕群組(v2)](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/radio-button)和[面板元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)引入符合WCAG 2.2的語意標籤。 這些元件運用`<fieldset>`和`<legend>` HTML元素，在群組標籤與其選項之間建立有意義的關係，讓熒幕助讀程式和其他輔助技術能夠精確解讀。
 
 * **Forms Manager中的版本設定支援**： Forms Manager現在可支援Adaptive Forms （核心元件和基礎元件）、表單片段、主題、XDP範本和二進位資產的版本設定。 直接從Forms和檔案主控台建立版本、檢視完整的版本記錄，以及還原表單資產的舊版狀態。
 
