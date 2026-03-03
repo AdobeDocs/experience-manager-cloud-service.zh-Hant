@@ -4,7 +4,7 @@ description: 瞭解Brand Experience Agent的內容更新工作是什麼，以及
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: e2d1dae8-38de-4357-bb14-ad35acb71aee
-source-git-commit: 36f4ba8207da67b8e68c9c9851311defc909b495
+source-git-commit: a3b00916c0d949fe9fac50bc0c3056b0a1b05358
 workflow-type: tm+mt
 source-wordcount: '810'
 ht-degree: 2%
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 內容更新工作會更新現有內容，包括內容片段、頁面、表單及資產。 這項工作可以執行更新、移除、取代或新增內容元素等動作，讓體驗保持精確且最新。 輸入可以是自然語言說明，在搭配Jira PDF使用時，熒幕擷取畫面也可以提供輸入。
 
-內容更新工作會將您透過自然語言或視覺效果提供的詳細資料轉換為頁面上的內容更新。 您可以提供需要更新的頁面URL，以及需要更新的詳細資訊，而代理程式技能會完成您的工作。 搭配Adobe Experience Manager (AEM) as a Cloud Service使用時，此工作會建立新的[啟動](/help/sites-cloud/authoring/launches/overview.md)，讓您在套用之前可以檢閱更新。 搭配檔案編寫使用時，工作會建立新的[版本](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/sites/document-authoring/how-to/document-versions#)。
+內容更新工作會將您透過自然語言或視覺效果提供的詳細資料轉換為頁面上的內容更新。 您可以提供需要更新的頁面URL，以及需要更新的詳細資訊，而代理程式技能會完成您的工作。 搭配Adobe Experience Manager (AEM) as a Cloud Service使用時，此工作會建立新的[啟動](/help/sites-cloud/authoring/launches/overview.md)，讓您在套用之前可以檢閱更新。 搭配檔案編寫使用時，工作會建立新的[版本](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/document-authoring/how-to/document-versions#)。
 
 ## 功能 {#capabilities}
 
@@ -118,7 +118,7 @@ ht-degree: 2%
 
 * 下圖顯示觸發內容更新工作的`process`命令的Jira範例：
 
-  ![使用Experience Production Agent的內容更新工作的範例Jira](assets/content-update-jira-example.png)
+  ![使用Brand Experience Agent的內容更新工作的範例Jira](assets/content-update-jira-example.png)
 
 ## 啟用 {#activation}
 
