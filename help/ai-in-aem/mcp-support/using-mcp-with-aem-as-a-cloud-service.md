@@ -3,13 +3,13 @@ title: 搭配AEM as a Cloud Service使用MCP
 description: 瞭解如何將模型上下文通訊協定與AEM as a Cloud Service搭配使用
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
-source-git-commit: a5eeb2cedb16f7d0ba0b31e838b3b9fa27b0bf3f
+exl-id: ddb7fc8c-affc-4374-8e08-d45d96017109
+source-git-commit: 5cbe2ae5afd6b6052f486cccc245fbc14e9569aa
 workflow-type: tm+mt
-source-wordcount: '2064'
+source-wordcount: '2100'
 ht-degree: 0%
 
 ---
-
 
 # 搭配AEM as a Cloud Service使用MCP {#using-mcp-with-aem-as-a-cloud-service}
 
@@ -54,6 +54,7 @@ AEM會公開MCP伺服器作為HTTP端點。 以下所列的端點為相對於：
 |---|---|----------------------------------------------------------------------------------------------------------------------|
 | **內容** | `/content` | 所有低階內容作業，包括頁面、片段和資產的建立、讀取、更新和刪除(CRUD)。 |
 | **內容（唯讀）** | `/content-readonly` | 頁面、片段和資產的唯讀內容作業（取得、清單/搜尋）。 |
+| **Cloud Manager** | `/cloudmanager` | 管理Cloud Manager實體，包括也可以觸發的方案、環境、存放庫和管道。 <br><br>*此MCP伺服器目前處於&#x200B;**測試版**；若要要求存取權，請傳送電子郵件至[aemcs-mcp-feedback@adobe.com](mailto:aemcs-mcp-feedback@adobe.com)，其中包含您使用案例的說明。* |
 
 每個MCP伺服器公開的特定工具可能會隨著時間而改變。 實際上，您可以要求啟用MCP的應用程式透過提示來探索工具，例如：
 

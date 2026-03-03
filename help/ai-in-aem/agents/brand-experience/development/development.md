@@ -4,10 +4,10 @@ description: 瞭解AEM中的開發工作如何分析Cloud Manager中的失敗管
 feature: Agentic AI, AI Assistant, AI Tools, User Roles
 role: User, Admin, Architect, Developer
 exl-id: 2194556f-aac2-4cdd-8f7f-00c92c8c4424
-source-git-commit: 71e3770a7a26b8d3144717513f3ec1c997b3b435
+source-git-commit: a38d153194f977cf305bece1d9cae676800f52d6
 workflow-type: tm+mt
-source-wordcount: '576'
-ht-degree: 1%
+source-wordcount: '625'
+ht-degree: 0%
 
 ---
 
@@ -18,13 +18,17 @@ ht-degree: 1%
 
 這項工作可以擷取管道狀態，並透過建議修正來幫助疑難排解失敗的建置步驟，以節省在開發、中繼和生產環境中對AEM as a Cloud Service部署進行偵錯的時間。 它會檢查組建記錄檔和相關程式碼，以建議您可以手動套用的修正。
 
->[!VIDEO](https://video.tv.adobe.com/v/3478018?captions=chi_hant&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3478006?quality=12&learn=on)
 
 >[!IMPORTANT]
 >
 >AI產生的回應可能不準確或誤導。 請務必仔細檢查建議的修正和回應。
 >
->另請參閱[Adobe Experience Cloud Generative AI使用者指南。](https://www.adobe.com/tw/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)
+>另請參閱[Adobe Experience Cloud Generative AI使用者指南](https://www.adobe.com/tw/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)。
+
+>[!NOTE]
+>
+>管道疑難排解僅限於完整棧疊管道（部署和程式碼品質），但現在在Beta版中提供&#x200B;**Web層設定管道**&#x200B;的支援。 若要要求存取權，請傳送電子郵件至[aem-devagent@adobe.com](mailto:aem-devagent@adobe.com)。 需要預先存取AEM中的代理程式。
 
 <!-- 
 ## Cloud Manager Pipeline Troubleshooting  {#cloud-manager-pipeline-troubleshooting}
@@ -32,7 +36,7 @@ ht-degree: 1%
 
 若要存取此工作，請參閱[發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs)中有關如何註冊Beta版計畫的說明，請務必指出您對開發工作的興趣。 您也可以以電子郵件將開發工作的特定意見回饋傳送至[aem-devagent@adobe.com。](mailto:aem-devagent@adobe.com)
 
-[觀看教學課程](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/ai/development-agent-troubleshoot-ci-cd-pipeline)，瞭解如何使用開發代理程式來疑難排解管道故障。
+[觀看教學課程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/development-agent-troubleshoot-ci-cd-pipeline)，瞭解如何使用開發代理程式來疑難排解管道故障。
 
 ## 透過Cloud Manager存取開發工作 {#how-to-access-the-job}
 
@@ -91,6 +95,6 @@ ht-degree: 1%
 
 ## 超出範圍的功能 {#out-of-scope-features}
 
-管道疑難排解會在完整棧疊管道的建置步驟中操作。 對於其他管道型別和步驟，透過下載和檢查日誌來偵錯失敗。
+管道疑難排解會在完整棧疊部署和計畫碼品質管道中的建置和單元測試步驟和計畫碼掃描步驟中操作。 對於其他管道型別和步驟，透過下載和檢查日誌來偵錯失敗。
 
 如需詳細資訊，請參閱[存取及下載記錄檔](/help/implementing/cloud-manager/manage-logs.md)。
