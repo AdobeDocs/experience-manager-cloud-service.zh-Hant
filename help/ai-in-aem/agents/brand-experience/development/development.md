@@ -36,7 +36,7 @@ ht-degree: 0%
 
 若要存取此代理程式，請參閱[發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs)以瞭解如何註冊Beta版計畫的說明，請務必指出您對開發代理程式的興趣。 您也可以將開發代理程式的特定意見回饋透過電子郵件傳送至[aem-devagent@adobe.com。](mailto:aem-devagent@adobe.com)
 
-[觀看教學課程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/agents/development-agent-troubleshoot-ci-cd-pipeline)，瞭解如何使用開發代理程式來疑難排解管道故障。
+[觀看教學課程](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/ai/agents/development-agent-troubleshoot-ci-cd-pipeline)，瞭解如何使用開發代理程式來疑難排解管道故障。
 
 ## 透過Cloud Manager存取開發代理程式 {#how-to-access-the-agent}
 
