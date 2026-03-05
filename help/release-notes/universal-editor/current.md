@@ -1,20 +1,20 @@
 ---
-title: 通用編輯器 2026.02.26 發行說明
-description: 此為通用編輯器 2026.02.26 版本的發行說明。
+title: 通用編輯器 2026.03.05 發行說明
+description: 此為通用編輯器 2026.03.05 版本的發行說明。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 53f77d76fc43932e16cd36e47435499f33513b18
+source-git-commit: 2148c2399c1d5121de155d512dba7eeed3315a31
 workflow-type: tm+mt
-source-wordcount: '221'
-ht-degree: 38%
+source-wordcount: '178'
+ht-degree: 48%
 
 ---
 
 
-# 通用編輯器 2026.02.26 發行說明 {#release-notes}
+# 通用編輯器 2026.03.05 發行說明 {#release-notes}
 
-此為通用編輯器 2026 年 2 月 26 日版本的發行說明。
+以下是通用編輯器 2026 年 3 月 5 日版本的發行說明。
 
 >[!TIP]
 >
@@ -26,9 +26,8 @@ ht-degree: 38%
 
 ## 新增功能 {#what-is-new}
 
-* 說明已新增至所有結構欄位，以協助開發人員產生模型/篩選器/元件定義檔案。
-* 內容片段的多欄位更新現在支援內文中編輯。
-
+* [元件選擇器](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components)有新的設計。
+* [RTE的檢色器](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)現已可用。
 
 ## 早期採用功能 {#early-adopter}
 
@@ -38,7 +37,5 @@ ht-degree: 38%
 
 ## 其他改善功能 {#other-improvements}
 
-* 編輯器在內容到達之前，不再預設內容為`{}`，以防止某些情況下的資料遺失。
-* 欄位成為焦點時的資料持續性變得更強健。
-* 在左側面板中編輯，然後在編輯器視窗中選取其他專案時，某些情況下不再遺失變更。
-* 已修正使用OpenAPI端點時內容片段RTE欄位的持續性問題。
+* RTE[中的對齊、文字方向及縮排選項現已預設為](/help/implementing/universal-editor/configure-rte.md)啟用，前提是您的後端支援這些選項。
+* 現在透過Open API和UI結構描述使用內容片段時呈現索引標籤。
