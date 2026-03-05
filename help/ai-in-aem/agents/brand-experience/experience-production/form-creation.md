@@ -4,9 +4,9 @@ description: 瞭解Brand Experience Agent的表單建立工作，以及如何使
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 24ad5f36-405b-4ea2-9819-de6aea856a7a
-source-git-commit: 36f4ba8207da67b8e68c9c9851311defc909b495
+source-git-commit: baf12e49dadc7b25f5169279a52d5712380445de
 workflow-type: tm+mt
-source-wordcount: '509'
+source-wordcount: '508'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # 表單建立工作 {#form-creation-job}
 
-表單建立工作是[Brand Experience Agent](/help/ai-in-aem/agents/brand-experience/overview.md)的一項功能，其設計是要使用自然語言提示來開發表單。 此工作會自動產生適當的表單結構和欄位型別。 此工作透過AI助理顯示。
+表單建立工作是[Experience Production Agent](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md)的一部分，其設計是要使用自然語言提示來開發表單。 此工作會自動產生適當的表單結構和欄位型別。 此工作透過AI助理顯示。
 
 表單建立工作的一些主要優點包括：
 
