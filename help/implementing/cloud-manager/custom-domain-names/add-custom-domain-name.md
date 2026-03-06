@@ -5,9 +5,9 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 423901f8bac198e875d342d10a9b3b80c20b56c5
 workflow-type: tm+mt
-source-wordcount: '1089'
+source-wordcount: '1123'
 ht-degree: 15%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 15%
 
 # 新增自訂網域名稱 {#adding-custom-domain-name}
 
-瞭解如何使用Cloud Manager中的&#x200B;**網域設定**&#x200B;來新增自訂網域名稱。
+您可以使用Cloud Manager中的&#x200B;**網域設定**&#x200B;來新增自訂網域名稱。
 
 ## 要求 {#requirements}
 
@@ -35,9 +35,13 @@ ht-degree: 15%
 
 新增自訂網域名稱時，會使用最明確的有效憑證提供網域。 如果多個憑證具有相同的網域，則選擇最近更新的憑證。 Adobe建議您管理憑證，確保沒有重疊的網域。
 
-本檔案中描述的任一方法的步驟均以Fastly為基礎。 如果您使用不同的CDN （內容傳遞網路），請使用您選擇要使用的CDN來設定網域。
+本文中所述任一方法的步驟均以Fastly為基礎。 如果您使用不同的CDN （內容傳遞網路），請使用您選擇要使用的CDN來設定網域。
 
 ## 新增自訂網域名稱 {#adding-custom-domain-name-settings}
+
+另請參閱[Edge Delivery Services](https://www.aem.live/docs/byo-cdn-adobe-managed)的&#x200B;*Adobe Managed CDN*。
+
+**若要新增自訂網域名稱：**
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
 
@@ -49,7 +53,7 @@ ht-degree: 15%
 
 1. 在&#x200B;**網域設定**&#x200B;頁面的右上角附近，按一下&#x200B;**新增網域**。
 
-1. 在&#x200B;**新增網域**&#x200B;對話方塊的&#x200B;**網域名稱**&#x200B;欄位中，輸入您正在使用的自訂網域名稱。
+1. 在&#x200B;**新增網域**&#x200B;對話方塊的&#x200B;**網域名稱**欄位中，輸入您正在使用的自訂網域名稱。
 輸入網域名稱時，請勿包含`http://`、`https://`或空格。
 
    >[!NOTE]
@@ -59,9 +63,11 @@ ht-degree: 15%
 
 1. 按一下「**建立**」。
 
+1. 在&#x200B;**網域設定**&#x200B;頁面上，按一下網域名稱右邊的![省略符號 — 更多圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，然後按一下&#x200B;**驗證**。
+
 1. 在&#x200B;**驗證網域**&#x200B;對話方塊中，在&#x200B;**您打算搭配此網域使用哪種憑證型別？**&#x200B;下拉式清單，選取下列其中一個選項：
 
-   | 憑證型別選項 | 說明 |
+   | 憑證類型 | 說明 |
    | --- | --- |
    | Adobe Managed (DV) SSL憑證 | 如果您要使用DV （網域驗證）憑證，請選取此憑證型別。 此選項適用於大多數的情況，可提供基本網域驗證。 Adobe會自動管理和更新憑證。 |
    | 客戶管理的(OV/EV) SSL憑證 | 如果您想要使用EV/OV SSL憑證來保護網域，請選取此憑證型別。 此選項提供OV （組織驗證）或EV （延伸驗證）的增強式安全性。 若需要更嚴格的驗證、更高的信任層級或自訂的憑證控制，請使用。 |
