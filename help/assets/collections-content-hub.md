@@ -3,10 +3,10 @@ title: 在Content Hub中管理集合
 description: 瞭解如何在Content Hub中管理集合
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
+source-git-commit: 12bb550ff275c84bc60869e91e953993aab57aa5
 workflow-type: tm+mt
-source-wordcount: '1295'
-ht-degree: 2%
+source-wordcount: '1914'
+ht-degree: 1%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 2%
 
 它可協助使用者輕鬆存取和管理[!DNL Content Hub]中可用的各種資產。
 
->[!VIDEO](https://video.tv.adobe.com/v/3445311/?captions=chi_hant&learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3435687/?learn=on){transcript=true}
 
 ## 先決條件 {#prerequisites}
 
@@ -156,7 +156,7 @@ Content Hub集合提供全方位的控管工具，包括可自訂的共用許可
 * 集合的擁有者
 * 具有編輯許可權的非管理員使用者
 
-若要從集合中移除資產，請按一下需要移除資產的集合、選取資產，然後按一下[從集合中移除]。**&#x200B;**
+若要從集合中移除資產，請按一下需要移除資產的集合、選取資產，然後按一下[從集合中移除]。****
 
 ![移除集合](assets/remove-collection-new.jpg)
 
@@ -198,3 +198,54 @@ Content Hub管理員可以在Content Hub中釘選集合以快速存取。 釘選
    標示為「我的最愛」的集合現在會顯示在&#x200B;**[!UICONTROL 我的我的最愛]**&#x200B;標籤下。 或者，您也可以從&#x200B;**[!UICONTROL 我的我的最愛]**&#x200B;移除集合。 若要這麼做，請按一下&#x200B;**[!UICONTROL 更多動作]** ![更多動作圖示](assets/do-not-localize/more-actions.png)，然後選取&#x200B;**[!UICONTROL 從我的最愛移除]**。
 
    ![移除收藏集作為我的最愛](assets/remove-favorite-collection.png)
+
+## 常見問題 {#faqs-manage-collections-content-hub}
+
+### 在AEM Assets Content Hub中稱為集合嗎？
+
+AEM Assets Content Hub中的集合是指可在使用者之間共用的一組資產。 收藏集可以包含來自不同位置的資產，同時維護其參考完整性。 這些功能可為使用者建立共用空間，以便有效存取及利用內容。
+
+### 如何在AEM Assets Content Hub中建立新的集合？
+
+若要在AEM Assets Content Hub中建立新的集合，請前往「集合」索引標籤，然後按一下&#x200B;**建立集合**。 在新集合視窗中，新增標題和說明，在&#x200B;**誰可以存取**&#x200B;下拉式清單下選取存取控制型別，然後按一下&#x200B;**建立**。 然後，您可以將資產新增至收藏集。
+
+### 建立集合時，可以使用哪些型別的存取控制？
+
+存取控制型別有三種： **私人** — 只有建立者和系統管理員可以編輯和存取，**公用** — 僅檢視 — 所有人都可以檢視，但只有建立者和系統管理員可以編輯，以及&#x200B;**公用** — 檢視和編輯 — 所有人都可以存取和編輯集合，不受限制。
+
+### 誰可以對Content Hub中的集合執行動作？
+
+Content Hub使用者可以執行建立、檢視、共用、下載、移除、刪除、釘選收藏集以及將收藏集標示為我的最愛等動作。 管理員具有其他許可權，例如檢視所有存取選項和刪除集合。
+
+### 如何將資產新增至AEM Assets Content Hub中的現有集合？
+
+選取您要新增的資產，按一下&#x200B;**新增至集合**，然後從清單中選擇集合。 您也可以使用搜尋列來搜尋集合。 按一下&#x200B;**新增至集合**&#x200B;以確認動作。
+
+### AEM Assets Content Hub中是否可以篩選和搜尋集合？
+
+可以，您可以在AEM Assets Content Hub中依名稱、存取許可權或建立者來篩選及搜尋集合。 篩選器包含&#x200B;**所有集合**、**只有我**、**任何人都可以檢視**、**任何人都可以編輯**、**由任何人建立**&#x200B;和&#x200B;**由我建立**&#x200B;等選項。
+
+### 如何從AEM Assets Content Hub的收藏集下載資產？
+
+若要從AEM Assets Content Hub中的收藏集下載資產，請導覽至「**收藏集**」標籤，然後按一下收藏集卡上的下載圖示來下載所有資產。 您也可以開啟收藏集、選取個別資產，然後按一下[下載] ****&#x200B;來個別下載它們。
+
+### 如何從AEM Assets Content Hub中的集合共用資產？
+
+在Content Hub中啟用公開連結共用功能，即可共用Assets。 選取資產卡片上的共用圖示以複製共用連結，然後可傳送給收件者。 請注意，私人集合無法共用。
+
+### 誰可以從AEM Assets Content Hub的集合中移除資產？
+
+集合擁有者、管理員或具有編輯許可權的非管理員使用者可以從集合中移除單一或多個資產。 若要移除，請選取資產，然後按一下&#x200B;**從集合**&#x200B;移除，然後確認移除。
+
+### 誰可以從AEM Assets Content Hub刪除收藏集，以及如何完成刪除？
+
+只有管理員和集合的建立者才能刪除集合。 若要刪除，請導覽至集合索引標籤，選取集合，然後按一下刪除圖示。 集合會從AEM Assets Content Hub中移除。
+
+### 管理員可以在AEM Assets Content Hub中為集合設定哪些所有選項？
+
+管理員可以在AEM Assets Content Hub中啟用或停用集合的下列選項：
+
+* 啟用&#x200B;**僅檢視集合**&#x200B;切換功能，讓所有人都能存取集合，但只有建立者和管理員才能編輯。
+
+* 啟用&#x200B;**公用集合**&#x200B;切換以允許所有人存取及編輯集合。 如果&#x200B;**僅檢視集合**&#x200B;與&#x200B;**公用集合**&#x200B;切換已停用，則非管理員使用者預設只能建立私人集合。
+

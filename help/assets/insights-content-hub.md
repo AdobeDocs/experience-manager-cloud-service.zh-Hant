@@ -3,10 +3,10 @@ title: 在Content Hub中檢視資產分析
 description: 瞭解如何在 [!DNL Content Hub]中檢視資產分析
 role: User
 exl-id: 29cbe017-856d-486b-acf3-aa47dbd90f3f
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 12bb550ff275c84bc60869e91e953993aab57aa5
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 17%
+source-wordcount: '465'
+ht-degree: 10%
 
 ---
 
@@ -50,3 +50,25 @@ Content Hub可讓您根據檔案格式、行銷活動、管道和區域，檢視
 * **[!UICONTROL 依促銷活動的Assets]**：資產計數以及根據促銷活動的個別百分比。
 * **[!UICONTROL 依據管道的Assets]**：資產計數和根據所用管道的個別百分比。
 * **[!UICONTROL 依地區劃分的Assets]**：資產計數以及根據資產使用地區劃分的個別百分比。
+
+## 常見問題 {#faqs-assets-insights-content-hub}
+
+### 我們需要AEM Assets Content Hub中的Assets Insights做什麼？
+
+AEM Assets Content Hub中的Assets Insights提供關於行銷活動、管道和區域間資產使用統計資料的寶貴資料，協助行銷利害關係人瞭解資產效能和人氣，以改善使用者體驗。
+
+### 誰能存取Assets Insights中所述的功能？
+
+Content Hub使用者能夠執行動作並存取Assets深入分析區段中提及的功能。
+
+### Insights索引標籤中有哪些資產分析可供使用？
+
+您可以檢視存放庫中的資產數量、收藏集數量、依年、月或日的Assets上傳、依日或月的作用中使用者，以及根據檔案格式的資產分類。
+
+### 如何在AEM Assets Content Hub中檢視已上傳資產的統計資料？
+
+您可以導覽至「深入分析」標籤，檢視已上傳資產和集合的統計資料，其中您可以按年、月或日追蹤上傳歷史記錄。
+
+### 我可以分析哪些與Content Hub中的使用者活動相關的量度？
+
+您可以依日期或月份分析作用中使用者的數量，其會使用折線圖以視覺化方式呈現。

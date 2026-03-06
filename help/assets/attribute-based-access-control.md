@@ -3,10 +3,10 @@ title: 屬性型存取控制
 description: 瞭解如何啟用屬性型存取控制來定義中繼資料型規則，以定義Content Hub中可用資產的存取層級
 role: Admin
 exl-id: 05f54b05-40b8-4a6c-af8f-5c3f7a2089d4
-source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
+source-git-commit: 44e9c1f016bfdad909d9e2aa1c9a301dcecd763b
 workflow-type: tm+mt
-source-wordcount: '944'
-ht-degree: 5%
+source-wordcount: '1391'
+ht-degree: 3%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 5%
 
 * 減少重複的數量，提高資產完整性。當相同的資產與不同的群組共用時，資料夾型權限需要進行重複。
 
->[!VIDEO](https://video.tv.adobe.com/v/3475425/?captions=chi_hant&learn=on&enablevpops){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3475413/?learn=on&enablevpops){transcript=true}
 
 ## 如何啟用以屬性為基礎的存取控制？ {#enable-attribute-based-access-control}
 
@@ -102,3 +102,34 @@ ht-degree: 5%
 * 擷取評論中規則的商業目的，無論條件是否正確寫入，因為目的可協助我們驗證並修正邏輯（若有需要）。
 
 * 設定為DRM的授權PDF檔案必須對所有人可見，以便使用者在使用授權下載資產時能夠看到這些檔案。
+
+## 常見問題 {#faqs-attribute-based-access-control-content-hub}
+
+### 什麼是AEM Assets Content Hub中的屬性型存取控制(ABAC)？
+
+AEM Assets Content Hub中的屬性型存取控制(ABAC)可讓管理員定義中繼資料型規則，以控制不同使用者群組對數位資產的存取層級。 存取權取決於資產的中繼資料是否符合規則中指定的條件，允許對資產的可見度進行精細的動態管理。
+
+### 管理員如何在AEM Assets Content Hub中使用ABAC定義存取規則？
+
+管理員會根據資產中繼資料（例如品牌或區域）建立條件，並將這些條件連結至特定的使用者群組ID，以定義存取規則。 這些規則會使用邏輯(AND、OR)和比較（等於、不等於）運運算元，準確地指定哪些資產可向哪些使用者群組顯示。
+
+### 使用ABAC較之傳統檔案夾型許可權有哪些主要優點？
+
+ABAC消除許可權對檔案夾結構的相依性，允許管理員上傳資產並回溯指派許可權，並減少所需的重複資產數量。 這麼做可改善資產完整性並簡化許可權管理，尤其是當資產需要與多個群組共用時。
+
+### 管理員可以直接在AEM Assets Content Hub介面中設定ABAC規則嗎？
+
+否，截至目前，管理員無法直接在Content Hub介面中建立ABAC規則。 相反地，他們必須下載範本試算表（本文提供的下載連結）、在此定義其規則，並透過支援票證提交給Adobe支援以進行實施。
+
+### 在AEM Assets Content Hub中設定ABAC規則時，可以使用哪些型別的中繼資料條件？
+
+AEM Assets Content Hub中的ABAC規則可以使用AND和OR等邏輯運運算元，以及等於和不等於等比較運運算元。 規則中使用的中繼資料屬性必須正確定義，並可在AEM中繼資料結構中使用，而且可包含地區、品牌或發佈狀態等欄位。
+
+### 為何AEM Assets Content Hub ABAC對於擁有大型團隊和多種資產需求的組織特別有用？
+
+ABAC對於擁有大型團隊的組織非常有用，因為它可讓您根據使用者角色、區域或品牌，以規則為基礎進行細微的資產存取。 這可確保使用者僅看到與其職責相關的資產，而不會手動指派許可權或過度重複資產。
+
+### 管理員在將ABAC試算表提交給Adobe支援前，應如何準備？
+
+管理員應在Adobe Admin Console中建立使用者群組、記下其群組ID，並清楚定義試算表中每個群組的許可權和條件。 他們應確保所有中繼資料屬性正確對應至適當的結構描述，並使用「註解」欄來釐清每個規則的商業目的，讓Adobe更容易驗證及實作規則。
+

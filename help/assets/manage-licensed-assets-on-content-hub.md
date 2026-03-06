@@ -2,10 +2,10 @@
 title: 管理 Content Hub 上的已授權資產
 description: 瞭解如何將授權欄位新增至資產中繼資料表單、將授權中繼資料屬性套用至資產資料夾，以及核准具有授權的資產以供使用。
 exl-id: ac3aad9f-c7b3-47a7-9314-a2f8277f0d3e
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: bfa7ceeb839574ff1b80ffc25b6519a629247385
 workflow-type: tm+mt
-source-wordcount: '251'
-ht-degree: 6%
+source-wordcount: '610'
+ht-degree: 3%
 
 ---
 
@@ -22,3 +22,37 @@ ht-degree: 6%
 1. 選取該資產，然後按一下&#x200B;**詳細資料**&#x200B;以檢視其屬性。 在步驟1中新增的授權欄位中，為已在步驟3中核准或先前已核准的資產授權定義絕對路徑。 Content Hub絕對路徑遵循此標準模式： `/content/dam/(The asset's folder hierarchy within the DAM repository)/(asset_name).(file_extension)`。 例如， /content/dam/teamA/projects/documents/file1.pdf
    ![絕對路徑](/help/assets/assets/absolute-path.png)
 1. 核准資產使其可在Content Hub中使用，然後按一下&#x200B;**儲存**。 如需如何核准資產的詳細資訊，請參閱[設定資產狀態](/help/assets/manage-organize-assets-view.md#set-asset-status)。
+
+## 常見問題 {#faqs-manage-licensed-assets-content-hub}
+
+### 在AEM Assets Content Hub上管理授權資產的用途為何？
+
+在Content Hub上管理授權資產可讓管理員確保只能使用具有有效授權的已核准資產，同時在AEM作者環境中維持合規性和正確的中繼資料追蹤。
+
+### 如何在Experience Manager as a Cloud Service中將授權欄位新增至資產屬性？
+
+您可以編輯中繼資料表單，加入對應至`dc:license`屬性的新文字欄位，藉此將授權欄位新增至資產屬性。 然後，此欄位會出現在AEM Assets製作環境的資產屬性中。
+
+### 如何將中繼資料表單套用至資產資料夾，以在資產屬性中包含授權欄位？
+
+編輯中繼資料表單以包含授權欄位。 將此中繼資料表單套用至所需的資產資料夾，以確保新設定已納入該資料夾中的所有資產。
+
+### 如何指定資產的授權詳細資料？
+
+若要指定授權詳細資訊，請選取資產，按一下&#x200B;**詳細資料**&#x200B;以檢視其屬性，並在新增至中繼資料表單的授權欄位中輸入已核准資產授權的絕對路徑。
+
+### 資產授權的Content Hub絕對路徑需要什麼格式？
+
+Content Hub絕對路徑應遵循以下模式：/content/dam/（DAM存放庫中的資產資料夾階層）/(asset_name)。（檔案副檔名）。 例如，`/content/dam/teamA/projects/documents/file1.pdf`。
+
+### 為何同時核准資產及其授權很重要，才能在AEM Assets Content Hub上使用？
+
+核准資產及其授權可確保在AEM Assets Content Hub上只能使用已適當授權和授權的資產，以協助維護合規性和正確的使用權利。
+
+### 在核准資產授權後，如何在AEM Assets Content Hub中提供資產？
+
+在資產屬性中定義授權路徑後，核准資產並按一下儲存。 此動作會讓授權資產可在AEM Assets Content Hub中使用。
+
+### 誰負責管理Content Hub中的授權資產？
+
+管理員負責編輯中繼資料表單、將表單指派給資產資料夾，以及在Content Hub中核准資產及其授權。

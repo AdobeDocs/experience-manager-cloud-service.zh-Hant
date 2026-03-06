@@ -3,10 +3,10 @@ title: 在 [!DNL the Content Hub]中預覽資產及其屬性
 description: 瞭解如何預覽 [!DNL Content Hub]中的資產和屬性
 role: User
 exl-id: a85af980-4c51-4d30-9fad-afd16370e9db
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: 44e9c1f016bfdad909d9e2aa1c9a301dcecd763b
 workflow-type: tm+mt
-source-wordcount: '635'
-ht-degree: 11%
+source-wordcount: '971'
+ht-degree: 7%
 
 ---
 
@@ -60,43 +60,43 @@ ht-degree: 11%
     </tr>
     </tr>
     <tr>
-        <td>[!UICONTROL JPEG]</td>
+        <td>[！UICONTROL JPEG]</td>
     </tr>
     <tr>
-        <td>[!UICONTROL PNG]</td>
+        <td>[！UICONTROL PNG]</td>
     </tr>
     <tr>
         <td rowspan="4"> 影片 </td>
     </tr>
     </tr>
     <tr>
-        <td>[!UICONTROL Quicktime]</td>
+        <td>[！UICONTROL Quicktime]</td>
     </tr>
     <tr>
-        <td>[!UICONTROL MP4]</td>
+        <td>[！UICONTROL MP4]</td>
     </tr>
     <tr>
-        <td>[!UICONTROL MPEG]</td>
+        <td>[！UICONTROL MPEG]</td>
     </tr>
     <tr>
         <td rowspan="4"> 文件 </td>
     </tr>
     </tr>
     <tr>
-        <td>[!UICONTROL txt] （純文字）</td>
+        <td>[！UICONTROL txt] （純文字）</td>
     </tr>
     <tr>
-        <td>[!UICONTROL Doc/Docx]</td>
+        <td>[！UICONTROL Doc/Docx]</td>
     </tr>
     <tr>
-        <td>[!UICONTROL XML]</td>
+        <td>[！UICONTROL XML]</td>
     </tr>
     <tr>
         <td rowspan="2"> 列印媒體 </td>
     </tr>
     </tr>
     <tr>
-        <td>[!UICONTROL PDF]</td>
+        <td>[！UICONTROL PDF]</td>
     </tr>
     </tbody>
 </table>
@@ -111,7 +111,7 @@ ht-degree: 11%
 
 * **智慧標籤：** [!DNL The Content Hub]使用Adobe AI的智慧內容服務，在標籤架構上使用辨識演演算法來訓練資產。 然後，再利用這些內容智慧對不同的資產集套用相關標記。智慧標籤可協助您快速找到相關資產，提升專案的內容速度。 智慧型標籤即是不含在影像中的資產資訊範例。 [!DNL Experience Manager Assets]預設會自動將智慧標籤套用至資產。
 
-* **色彩標籤：** [色彩標籤](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=zh-Hant)可協助您使用Adobe的AI功能，在資產中自動識別的顏色，來識別資產。
+* **色彩標籤：** [色彩標籤](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en)可協助您使用Adobe的AI功能，在資產中自動識別的顏色，來識別資產。
 
 * 上傳日期
 
@@ -135,3 +135,27 @@ ht-degree: 11%
 The date range allows you to select dates you want to see the assets. You can customize date range by choosing the start and end dates. 
 
 -->
+
+## 常見問題 {#faqs-asset-properties-content-hub}
+
+### 為何要在AEM Assets Content Hub中預覽資產及其屬性？
+
+在Content Hub中預覽資產及其屬性可讓使用者密切檢視資產詳細資訊，這對於有效率的資產發佈和管理至關重要。 隨著數位資訊成長，僅依賴檔案名稱和縮圖變得無法擴充。 檢視詳細屬性有助於分類資產、讓資產更易於存取、更易於採取行動，並確保所有使用者的資訊都完整。
+
+### 如何在AEM Assets Content Hub中檢視資產屬性並與之互動？
+
+若要在Content Hub中檢視資產屬性，請導覽至或搜尋資產，然後按一下以開啟其屬性頁面。 在這裡，您可以放大或縮小預覽、復原縮放、移至上一個或下一個資產、下載資產、使用Adobe Express編輯、將其新增至收藏集，或關閉預覽。 屬性頁面會顯示詳細資訊，例如標題、格式、大小、解析度、標籤、顏色標籤和智慧標籤。
+
+### AEM Assets Content Hub中有哪些衍生屬性，以及這些屬性是如何產生的？
+
+資產上傳並核准後，系統會自動產生Content Hub中的衍生屬性。 範例包括資產大小、智慧標籤和顏色標籤。 智慧標籤會使用Adobe AI的智慧內容服務來自動辨識及套用相關標籤，進而增強資產的可發現性。 顏色標籤也會使用AI自動識別，協助使用者透過其顯著顏色來識別資產。
+
+### 管理員可以自訂Content Hub中的可見資產屬性嗎？
+
+可以，管理員可設定要針對Content Hub中的每個資產顯示哪些屬性。 資產預覽使用者介面和搜尋結果或集合中的資產卡都可以執行此作業，確保使用者根據需求看到最相關的資訊。
+
+### 預覽資產支援哪些檔案格式？
+
+支援的檔案格式包括用於影像的JPEG和PNG、用於視訊的Quicktime、MP4和MPEG、用於檔案的TXT、DOC/DOCX和XML，以及用於列印媒體的PDF。
+
+

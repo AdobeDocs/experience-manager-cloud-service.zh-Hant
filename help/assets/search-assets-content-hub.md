@@ -3,10 +3,10 @@ title: 在 Content Hub 中搜尋資產
 description: 瞭解如何搜尋 [!DNL Content Hub]中的資產
 role: User
 exl-id: 8578d7d0-32b9-4e5c-80ef-3827e358ac6c
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: 95d7935142e26b717e2c33a2bd0e8e2c2f52a623
 workflow-type: tm+mt
-source-wordcount: '825'
-ht-degree: 0%
+source-wordcount: '1010'
+ht-degree: 1%
 
 ---
 
@@ -167,5 +167,20 @@ ht-degree: 0%
 [!DNL The Content Hub]不限於搜尋，而是可讓您直接從搜尋或預覽介面執行其他動作，例如[下載](download-assets-content-hub.md)、[共用](share-assets-content-hub.md)以及[新增資產至集合](collections-content-hub.md)。 在搜尋結果頁面上選取資產以檢視這些選項。
 
 深入瞭解[在 [!DNL Content Hub]](configure-content-hub-ui-options.md)中設定資產。
+
+## 常見問題 {#faqs-deploy-content-hub}
+
+### 如何在AEM Assets Content Hub中縮小搜尋結果的範圍？
+
+您可以使用文字式搜尋、套用各種篩選器（例如檔案格式、核准狀態、修改日期等）、依標籤或智慧標籤搜尋，以及使用篩選器面板，來縮小Content Hub中的搜尋結果。 結合多個述詞或篩選器選項可協助您精準鎖定所需的資產。
+
+### 我可以一次在AEM Assets Content Hub中大量搜尋多個資產嗎？
+
+可以，您可以輸入多個值（例如名稱、檔案格式、標籤），在Content Hub中執行大量搜尋，並以指定的分隔符號分隔。 大量搜尋功能可讓您在單一查詢中快速找到數個資產，使其比逐一搜尋資產更有效率。
+
+
+### 管理員可以自訂AEM Assets Content Hub搜尋中可用的篩選器嗎？
+
+可以，管理員可以使用AEM Assets Content Hub設定使用者介面來設定可在搜尋介面中使用的篩選器。 雖然預設篩選條件包括檔案格式、核准狀態、到期日等，但管理員可以根據組織需求量身打造這些選項。
 
 

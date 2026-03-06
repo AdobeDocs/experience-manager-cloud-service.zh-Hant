@@ -3,10 +3,10 @@ title: 將您的品牌核准資產上傳至 [!DNL Content Hub]
 description: 瞭解如何將您的品牌核准資產上傳至Content Hub
 role: User
 exl-id: f1be7cfc-1803-4c17-bb58-947104aa883c
-source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
+source-git-commit: 282ab15d8c498b3c0ddba8165b1262bc20729b75
 workflow-type: tm+mt
-source-wordcount: '761'
-ht-degree: 17%
+source-wordcount: '1123'
+ht-degree: 12%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 17%
 
 [有權新增資產的Content Hub使用者](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets)可以從本機檔案系統新增資產到Content Hub，或是從OneDrive或Dropbox資料來源匯入資產。 不論本機檔案系統或OneDrive和Dropbox資料來源提供的檔案夾結構為何，所有資產都會顯示在Content Hub的頂層，以增強搜尋功能。
 
->[!VIDEO](https://video.tv.adobe.com/v/3445392/?captions=chi_hant&learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3432980/?learn=on){transcript=true}
 
 在Assets as a Cloud Service中標示為`Approved`的資產會自動在Content Hub中使用。 如需更多資訊，請參閱[為 Content Hub 核准資產](/help/assets/approve-assets-content-hub.md)。
 
@@ -77,3 +77,30 @@ ht-degree: 17%
 * 如果停用&#x200B;**[!UICONTROL 自動核准]**&#x200B;切換開關，您使用 Content Hub 上傳的資產就不會自動顯示。這些資產會顯示在您 Assets as a Cloud Service 環境的 `hydrated-assets` 資料夾中。導覽至該資料夾，並將資產狀態[大量編輯](#bulk-approve-assets-content-hub)為 `Approved`，使資產顯示於 Content Hub 中。
 
 ![Content Hub核准流程](/help/assets/assets/content-hub-approval.png)
+
+## 常見問題 {#faqs-content-hub-upload-assets}
+
+### 我可以從哪裡上傳哪些型別的資產至Content Hub？ {#asset-types-upload-to-content-hub}
+
+有權新增資產的Content Hub使用者可以從其本機檔案系統上傳品牌核准資產。 所有上傳的資產（無論其原始檔案夾結構為何）都會顯示在Content Hub的頂層，以增強搜尋功能。
+
+### Content Hub如何增強資產搜尋和組織？ {#search-content-hub}
+
+Content Hub可讓使用者定義每次上傳的關鍵細節，例如行銷活動名稱、關鍵字、管道、時間範圍及地區，藉此增強資產搜尋和組織。 它也會為每個資產自動產生其他屬性（例如檔案大小、格式和解析度），並使用Adobe AI來套用智慧標籤，讓您更輕鬆快速地尋找相關資產。
+
+### 如何將資產從我的本機檔案系統上傳至Content Hub？ {#upload-assets-content-hub}
+
+若要從您的本機檔案系統上傳資產，請按一下[新增Assets] ****，開啟上傳對話方塊。 您可以拖放檔案或資料夾，或手動瀏覽以選取它們。 您必須將資產群組在行銷活動名稱下，建議您填寫其他欄位，例如關鍵字、管道、時間範圍及區域，以便進行更好的組織。 準備就緒後，按一下&#x200B;**上傳**，檢閱詳細資料，並確認開始上傳。
+
+### Content Hub中的資產核准程式如何運作？ {#asset-approval-content-hub}
+
+如果已啟用自動核准切換，則使用Content Hub上傳的資產會自動可供使用。 如果已停用，上傳的資產會放置在Assets as a Cloud Service的&#x200B;**水合資產**&#x200B;資料夾中，而您需要手動將其狀態大量編輯為&#x200B;**已核准**，以便在Content Hub中顯示這些資產。
+
+### 我可以設定將資產上傳至Content Hub時的強制或選用欄位嗎？ {#available-fields-while-uploading-assets-to-content-hub}
+
+管理員可使用設定使用者介面來定義將資產上傳至Content Hub時的強制或選用欄位。
+
+### 如果我的上傳資產沒有在Content Hub中自動顯示，怎麼辦？ {#assets-do-not-display-in-content-hub}
+
+如果資產未自動顯示，則表示已停用自動核准切換。 資產位於Assets as a Cloud Service環境的&#x200B;**水合資產**&#x200B;資料夾。 您必須將其狀態大量編輯為&#x200B;**已核准**，他們才會出現在Content Hub中。
+

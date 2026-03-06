@@ -3,9 +3,9 @@ title: 從Content Hub下載資產
 description: 瞭解如何從Content Hub入口網站下載一或多個資產及其轉譯。
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
+source-git-commit: 12bb550ff275c84bc60869e91e953993aab57aa5
 workflow-type: tm+mt
-source-wordcount: '941'
+source-wordcount: '1367'
 ht-degree: 1%
 
 ---
@@ -40,12 +40,12 @@ ht-degree: 1%
       > * Content Hub會將您的選取專案儲存為偏好設定（**[!UICONTROL 為每個資產建立個別的資料夾]**），並保留它以供日後下載。
       > * **[!UICONTROL 為每個資產建立個別資料夾]**&#x200B;選項僅適用於已驗證的[!DNL Content Hub]使用者。 [!DNL Content Hub]可讓公用使用者將資產下載為個別資產。
 
-   1. 按一下&#x200B;**[!UICONTROL 下載]**&#x200B;以下載您選取的資產及其轉譯。
+   1. 按一下&#x200B;**[!UICONTROL 下載]**以下載您選取的資產及其轉譯。
       ![下載多個資產](/help/assets/assets/bulk-asset-download-content-hub.png)
 
 下載進行時，您可以繼續使用[!DNL Content Hub]。 Content Hub不會在下載過程中中斷您的工作流程。
 ![下載多個資產](/help/assets/assets/download-assets-notification-ch.png)
-如果&#x200B;**[!UICONTROL 下載資產]**&#x200B;對話方塊顯示資產授權，然後從左窗格（[!UICONTROL T&amp;C檔案]區段）選取每個授權，以預覽授權並在對話方塊的中間窗格中顯示與授權關聯的選取資產。 檢閱每個授權後，選取轉譯，按一下&#x200B;**[!UICONTROL 我已閱讀並接受上述條款與條件]**，並選取&#x200B;**[!UICONTROL 下載]**&#x200B;以下載它們。
+如果**[!UICONTROL 下載資產]**&#x200B;對話方塊顯示資產授權，然後從左窗格（[!UICONTROL T&amp;C檔案]區段）選取每個授權，以預覽授權並在對話方塊的中間窗格中顯示與授權關聯的選取資產。 檢閱每個授權後，選取轉譯，按一下&#x200B;**[!UICONTROL 我已閱讀並接受上述條款與條件]**，並選取&#x200B;**[!UICONTROL 下載]**以下載它們。
 ![下載多個資產](/help/assets/assets/download-multiple-licensed-assets-CH.png)
 
 >[!NOTE]
@@ -149,7 +149,7 @@ The dialog box that displays depends on whether the download list includes expir
 
 * [智慧型裁切](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles)：智慧型裁切在裁切程式進行期間，只著重於資產的重要部分。 Dynamic Media智慧型裁切運用由Adobe AI提供支援的人工智慧來追蹤地標，確保我們的資產在所有熒幕大小上都能呈現最佳效果。 [!DNL Adobe Experience Manager]智慧型裁切會顯示資產轉譯的寬度和高度以及標題。 如需詳細資訊，請參閱[搭配AEM Assets Dynamic Media使用智慧型裁切](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use)。
 
-  智慧型裁切轉譯會顯示，而且只有在您能存取具有OpenAPI功能的[Dynamic Media &#x200B;](/help/assets/dynamic-media-open-apis-overview.md)時，才能下載。 智慧型裁切轉譯僅適用於影像資產。
+  智慧型裁切轉譯會顯示，而且只有在您能存取具有OpenAPI功能的[Dynamic Media ](/help/assets/dynamic-media-open-apis-overview.md)時，才能下載。 智慧型裁切轉譯僅適用於影像資產。
 
   ![轉譯型別](/help/assets/assets/renditions-types.png)
 
@@ -178,6 +178,43 @@ The dialog box that displays depends on whether the download list includes expir
    >[!NOTE]
    > 
    > 動態轉譯僅適用於影像資產。
+
+## 常見問題 {#faqs-download-assets-content-hub}
+
+### 如何從AEM Assets Content Hub下載單一資產或多個資產？
+
+若要下載單一資產，請按一下資產卡上的下載圖示。 若為多個資產，請選取它們並按一下動作列中的下載。 如果管理員已啟用下載，Content Hub會開始下載原始轉譯中的資產。 如果資產轉譯可供使用，您可以在下載之前選取特定的轉譯。
+
+### AEM Assets Content Hub是否有任何由管理員管理的設定，可讓使用者下載原始資產或啟用轉譯的可用性？
+
+可以，管理員可以啟用或停用「啟用轉譯可用性」**和「允許下載原始資產」**&#x200B;切換功能（位於「設定」使用者介面的「**轉譯**」標籤中），以管理原始資產的下載或啟用AEM Assets Content Hub中轉譯的可用性。****
+
+### 什麼是資產轉譯，AEM Assets Content Hub中有哪些型別可用？
+
+資產轉譯是針對不同使用案例量身打造之原始資產檔案的不同表示方式。 型別包括靜態轉譯（例如縮圖、網頁或行動最佳化版本，或高解析度檔案以供列印）、自訂靜態轉譯以及動態轉譯（包括智慧型裁切版本）。 系統會預先產生靜態轉譯，並根據請求即時建立動態轉譯。
+
+### 智慧型裁切如何與AEM Assets Content Hub中的資產搭配運作？
+
+智慧型裁切是AI支援的功能，可識別影像最重要的部分，並聰明地裁切周圍的影像。 這可確保在不同的畫面和格式中呈現絕佳的視覺效果。 如果您的組織支援Dynamic Media功能，便可對影像資產使用智慧型裁切轉譯。
+
+### 如何在AEM Assets Content Hub中啟用動態轉譯？
+
+若要啟用動態轉譯：
+
+* 確認已啟用具OpenAPI功能的Dynamic Media。 接著，核准的資產便可用於公開傳送。
+
+* 將資產核准目標設定為Content Hub。
+
+* 在設定UI中，前往轉譯索引標籤並啟用啟用轉譯的可用性。
+
+* 如果新使用OpenAPI上線到Dynamic Media，請從「管理員檢視>工具> Assets >影像預設集」（編輯>儲存）重新儲存現有的影像預設集。
+
+動態轉譯僅支援影像資產。
+
+### 如何在Content Hub中下載資產轉譯？
+
+若要下載轉譯，請選取資產並按一下下載動作。 如果管理員已啟用轉譯，則會顯示一個對話方塊，您可以在其中選擇要下載的轉譯。 若為授權資產，請先接受授權條款再下載。 若為多個資產，請選取資產、選擇轉譯，然後以ZIP檔案格式下載。 您可以選取所有可用的轉譯或特定轉譯，例如靜態或動態轉譯。
+
 
 
 
