@@ -30,7 +30,7 @@ ht-degree: 1%
 
 它可協助使用者輕鬆存取和管理[!DNL Content Hub]中可用的各種資產。
 
->[!VIDEO](https://video.tv.adobe.com/v/3435687/?learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3445311/?captions=chi_hant&learn=on){transcript=true}
 
 ## 先決條件 {#prerequisites}
 

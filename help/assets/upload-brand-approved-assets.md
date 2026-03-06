@@ -19,7 +19,7 @@ ht-degree: 12%
 
 [有權新增資產的Content Hub使用者](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets)可以從本機檔案系統新增資產到Content Hub，或是從OneDrive或Dropbox資料來源匯入資產。 不論本機檔案系統或OneDrive和Dropbox資料來源提供的檔案夾結構為何，所有資產都會顯示在Content Hub的頂層，以增強搜尋功能。
 
->[!VIDEO](https://video.tv.adobe.com/v/3432980/?learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3445392/?captions=chi_hant&learn=on){transcript=true}
 
 在Assets as a Cloud Service中標示為`Approved`的資產會自動在Content Hub中使用。 如需更多資訊，請參閱[為 Content Hub 核准資產](/help/assets/approve-assets-content-hub.md)。
 
