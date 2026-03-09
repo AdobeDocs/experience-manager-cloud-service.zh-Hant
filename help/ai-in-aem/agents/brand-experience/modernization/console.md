@@ -4,9 +4,9 @@ description: Experience現代化主控台介面和功能的參考指南
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Architect, Developer
 exl-id: 43d8c124-fc87-4cec-a91d-ab12255ae321
-source-git-commit: 51127359588edce96b87fc13447370063e9ca93b
+source-git-commit: e2a9c55644c0d9542f6a299f0df30a3dfd4a55de
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '921'
 ht-degree: 0%
 
 ---
@@ -145,5 +145,14 @@ Experience Modernization Console是Edge Delivery Services的託管、AI輔助開
 
 ![設定檢視](assets/settings-view.png)
 
-* **認證**&#x200B;可讓您為Figma指定個人存取權杖，讓主控台可以存取您專案的設計區塊。
+* **認證**&#x200B;可讓您為Figma指定個人存取權杖，讓[主控台可以存取您專案的設計區塊。](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-block-migration)
+   * 權杖需要下列唯讀範圍：
+      * `file_content:read`
+      * `file_metadata:read`
+      * `library_assets:read`
+      * `library_content:read`
+      * `team_library_content:read`
+      * `file_dev_resources:read`
+      * `projects:read`
+   * [如需設定個人存取權杖的詳細資訊，請參閱Figma檔案](https://help.figma.com/hc/en-us/articles/8085703771159-Manage-personal-access-tokens)。
 * **重設工作區**&#x200B;將主控台還原為開始狀態，所有未推送或未上傳的變更將會遺失。
