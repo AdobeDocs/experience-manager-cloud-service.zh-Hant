@@ -21,5 +21,5 @@ ht-degree: 2%
 
 如果您符合下列條件，則您可以在不定義某些IMS屬性的情況下執行驗證：
 
-* 正在[Unified Shell](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell)上整合Adobe應用程式
+* 正在[Unified Shell](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell)上整合Adobe應用程式
 * 已產生用於驗證的IMS權杖
