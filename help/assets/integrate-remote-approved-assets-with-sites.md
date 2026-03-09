@@ -44,7 +44,7 @@ ht-degree: 12%
 
      或在AEM Sites執行個體中為AEM 6.5設定[OSGi設定](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-osgi.html)，請遵循下列步驟：
 
-   1. 登入主控台並按一下&#x200B;**[!UICONTROL OSGi] >**或
+   1. 登入主控台並按一下&#x200B;**[!UICONTROL OSGi] >**&#x200B;或
 使用直接URL；例如： `https://localhost:4502/system/console/configMgr`
 
    1. 依照以下方式設定&#x200B;**新一代動態媒體設定** (`NextGenDynamicMediaConfigImpl`) OSGi設定，將值取代為您遠端資產環境的值。
@@ -123,7 +123,7 @@ ht-degree: 12%
 
 1. 按一下文字元件旁的![勾選圖示](/help/assets/assets/do-not-localize/checkmark-icon.svg)圖示。
 1. 選取&#x200B;**[!UICONTROL 遠端]**&#x200B;以從遠端DAM擷取資產。 <br>
-您可以視需要選擇**[!UICONTROL 本機]**&#x200B;或&#x200B;**[!UICONTROL 遠端]** DAM存放庫。
+您可以視需要選擇&#x200B;**[!UICONTROL 本機]**&#x200B;或&#x200B;**[!UICONTROL 遠端]** DAM存放庫。
 
    ![影像](/help/assets/assets/cf-pick.jpg)
 系統會提示您登入。

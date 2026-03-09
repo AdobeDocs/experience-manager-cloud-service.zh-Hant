@@ -53,7 +53,7 @@ ht-degree: 2%
    >
    >    ```
    >    dscacheutil -q host -a name p{PROGRAM_ID}.external.adobeaemcloud.com
-   >
+   >    
    >    ```
 
 1. 確定[!DNL Experience Manager]存放庫中不存在下列覆蓋圖。 如果您在這些路徑上預先存在覆蓋圖，則需要移除覆蓋圖，或合併兩者之間的變更差異：
