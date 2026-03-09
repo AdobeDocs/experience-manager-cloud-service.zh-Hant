@@ -155,7 +155,7 @@ Dynamic Media轉譯提供立即可用且通道最佳化的資產版本，包括[
 
 ![預覽Dynamic Media轉譯](assets/native-express-dynamic-media-preview.png)
 
-按一下&#x200B;**[!UICONTROL 新增修飾元]**，在文字方塊中指定修飾元，然後按下Enter以即時將轉換套用至轉譯。 同樣地，您可以將多個修飾元新增至轉譯並預覽這些轉換。 將資產從預覽拖放至畫布上。 套用這些修飾元後的轉譯不會儲存。 檢視[Dynamic Media Scene7](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference)和[Dynamic Media with OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat)支援的修飾元清單。
+按一下&#x200B;**[!UICONTROL 新增修飾元]**，在文字方塊中指定修飾元，然後按下Enter以即時將轉換套用至轉譯。 同樣地，您可以將多個修飾元新增至轉譯並預覽這些轉換。 將資產從預覽拖放至畫布上。 套用這些修飾元後的轉譯不會儲存。 檢視[Dynamic Media Scene7](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference)和[Dynamic Media with OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat)支援的修飾元清單。
 
 >[!IMPORTANT]
 > 
@@ -251,7 +251,7 @@ Dynamic Media轉譯提供立即可用且通道最佳化的資產版本，包括[
 
 ## 支援的檔案格式 {#supported-file-formats-import-assets}
 
-Adobe Express原生支援[上可用的格式。檢閱最低影像需求](https://helpx.adobe.com/express/web/image-creation-and-editing/change-file-formats/image-requirements.html)。 不過，AEM Assets支援下列格式型別：
+Adobe Express原生支援[上可用的格式。檢閱最低影像需求](https://helpx.adobe.com/tw/express/web/image-creation-and-editing/change-file-formats/image-requirements.html)。 不過，AEM Assets支援下列格式型別：
 
 | 支援的格式 | 最大尺寸/解析度 | 檔案大小上限 |
 |------------------|---------------------------------------------|---------------|
