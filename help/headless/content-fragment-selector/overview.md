@@ -1,14 +1,14 @@
 ---
 title: Adobe Experience Manager as a Cloud Service的微前端內容片段選擇器
 description: 使用微前端內容片段選擇器來搜尋、尋找及擷取您應用程式的內容片段。
-role: Admin, User
-source-git-commit: 32e1b3cef768b420f32b70202ddadc80db2b74e8
+role: Admin, User, Developer
+exl-id: 5b18fb2c-26c8-4d9d-ba2e-9e53c09f5022
+source-git-commit: 006bfe9067267da1524ab456605a956162c889e3
 workflow-type: tm+mt
-source-wordcount: '743'
-ht-degree: 11%
+source-wordcount: '833'
+ht-degree: 10%
 
 ---
-
 
 # 微前端內容片段選擇器 {#micro-frontend-content-fragment-selector}
 
@@ -69,9 +69,11 @@ ht-degree: 11%
 
 設定內容片段選擇器並驗證為可搭配您的AEM as a Cloud Service應用程式使用內容片段選擇器後，您可以選取內容片段或執行各種其他操作，以在存放庫中搜尋您的片段：
 
-![內容片段選擇器](/help/headless/assets/content-fragment-selector-using.png)
+![內容片段選擇器](/help/headless/assets/content-fragment-selector-unwrapped.png)
 
-* 透過右上角的&#x200B;**存放庫**&#x200B;選擇器，您可以選取要使用的存放庫
+* 從頂部的工具列可以：
+   * 使用右上角的&#x200B;**存放庫**&#x200B;選擇器來選取您要使用的存放庫
+   * 選取格式；清單或格線
 * 在最左側的面板中，您可以：
    * 從選取的存放庫隱藏或顯示資料夾
    * 選取特定資料夾以顯示該資料夾中的內容片段
@@ -81,6 +83,9 @@ ht-degree: 11%
    * 根據不同的欄排序目前的清單；升序或降序
    * 檢視檢視格式指示器
    * 顯示、隱藏和指定篩選器
+* 在最右側的面板中，您可以：
+   * 檢視屬性
+   * 檢視引用
 
 ### 隱藏/顯示面板 {#hide-show-panel}
 
@@ -94,7 +99,7 @@ ht-degree: 11%
 
 ![內容片段選擇器](/help/headless/assets/content-fragment-repository-selector.png)
 
-下拉清單中可用的存放庫選項是根據`repositoryId` `index.html`檔案中定義的屬性。此屬性以目前登入之使用者存取之所選IMS組織的環境為基礎。
+下拉清單中可用的存放庫選項是根據`repositoryId``index.html`檔案中定義的屬性。此屬性以目前登入之使用者存取之所選IMS組織的環境為基礎。
 
 消費者可以傳遞偏好的`repositoryID`以從特定存放庫轉譯片段，並停止轉譯存放庫切換器。
 
@@ -102,7 +107,7 @@ ht-degree: 11%
 
 內容片段存放庫是內容片段資料夾的集合，可用來執行操作。
 
-### 篩選條件 {#filters}
+### 篩選器 {#filters}
 
 內容片段選擇器也提供立即可用的篩選選項，來縮小您的搜尋結果。 有多種篩選器可供使用，包括：
 
@@ -130,3 +135,16 @@ ht-degree: 11%
 內容片段選擇器可讓您在中檢視片段：
 
 * **資料表檢視**
+* **格線檢視**
+
+您可從頂端工具列的圖示中選取所需的檢視：
+
+![內容片段選擇器 — 檢視型別](/help/headless/assets/content-fragment-selector-view-type.png)
+
+## 整合內容片段選擇器與應用程式 {#integrate-the-content-fragment-selector-with-applications}
+
+您可以將內容片段選擇器與各種應用程式整合，例如：
+
+* [將內容片段選擇器與Adobe應用程式整合](/help/headless/content-fragment-selector/integrate-adobe-application.md)
+* [整合內容片段選擇器與非Adobe或第三方應用程式](/help/headless/content-fragment-selector/integrate-non-adobe-application.md)
+* [使用Vanilla JS整合內容片段選擇器](/help/headless/content-fragment-selector/integrate-using-vanilla-js.md)
