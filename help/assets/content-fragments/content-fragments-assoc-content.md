@@ -1,20 +1,21 @@
 ---
 title: 關聯內容(Assets — 內容片段)
 description: 瞭解AEM內容片段的關聯內容功能如何提供連線，以便可以選擇將資產與片段搭配使用。
+badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '292'
-ht-degree: 8%
+source-wordcount: '298'
+ht-degree: 9%
 
 ---
 
 # 相關聯的內容{#associated-content}
 
-對於Adobe Experience Manager (AEM)as a Cloud Service的內容片段，相關聯的內容功能（可在原始編輯器中使用）提供連線，讓資產可選擇與片段搭配使用。 這可藉由[提供在使用內容片段](/help/assets/content-fragments/content-fragments.md#using-associated-content)時可存取的一系列資產，同時有助於減少搜尋適當資產所需的時間，提供彈性。 此功能可用於您的Headless內容傳送和頁面製作。
+對於Adobe Experience Manager (AEM) as a Cloud Service的內容片段，相關聯的內容功能（可在原始編輯器中取得）提供連線，讓資產可選擇與片段搭配使用。 這可藉由[提供在使用內容片段](/help/assets/content-fragments/content-fragments.md#using-associated-content)時可存取的一系列資產，同時有助於減少搜尋適當資產所需的時間，提供彈性。 此功能可用於您的Headless內容傳送和頁面製作。
 
 >[!NOTE]
 >

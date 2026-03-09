@@ -3,11 +3,12 @@ title: 如何在Assets檢視中管理中繼資料？
 description: 瞭解如何在Assets檢視中管理中繼資料。 更好的中繼資料管理讓資產更易於存取、更易於管理和完成。
 role: User, Leader, Admin, Developer
 contentOwner: AG
+badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 8819dc84887f79e047b4beffd18e03dee3ee45a3
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '2268'
+source-wordcount: '2274'
 ht-degree: 77%
 
 ---
@@ -33,7 +34,7 @@ ht-degree: 77%
 
 ![檢視資產的中繼資料](assets/metadata-view.png)
 
-*圖：若要檢視資產及其中繼資料，請從工具列按一下&#x200B;**[!UICONTROL 詳細資訊]**&#x200B;或按兩下資產。*
+*圖：若要檢視資產及其中繼資料，請從工具列按一下&#x200B;**[!UICONTROL 詳細資訊]**或按兩下資產。*
 
 標題、說明和上傳日期之類的基本中繼資料可在[!UICONTROL 基本]標籤中取得。[!UICONTROL 進階]標籤包含更進階的中繼資料，例如相機型號、鏡頭詳細資訊和地理標籤。[!UICONTROL 標記]標籤會根據影像內容包含自動套用的標記。
 
@@ -49,7 +50,7 @@ ht-degree: 77%
 
 ![檢視資產的智慧型標記](assets/metadata-view-tags.png)
 
-*圖：若要檢視智慧標記，請從工具列按一下&#x200B;**[!UICONTROL 詳細資訊]**&#x200B;或按兩下資產。*
+*圖：若要檢視智慧標記，請從工具列按一下&#x200B;**[!UICONTROL 詳細資訊]**或按兩下資產。*
 
 智慧型標記也包含信賴分數 (以百分比呈現)。這表示與套用標記相關的信賴度。您可以審核自動套用的智慧型標記。
 
@@ -231,17 +232,17 @@ See [Assign metadata form to folders](#assign-metadata-form-folder). Follow the 
 1. 開啟索引標籤（**[!DNL Basic]**、**[!DNL Advanced]**&#x200B;或&#x200B;**[!DNL Tags]**）。
 1. 選取中繼資料屬性，以在&#x200B;**[!UICONTROL 設定]**&#x200B;面板中編輯其設定。 您可以在&#x200B;**[!UICONTROL 設定]**&#x200B;面板中更新屬性對應、重新命名標籤、修改或新增屬性值，以及執行更多此類編輯。
 1. 按一下&#x200B;**[!UICONTROL 預覽]**&#x200B;以檢閱表單變更，然後再儲存這些變更。
-1. 按一下[儲存]以套用變更。**&#x200B;**
+1. 按一下[儲存]以套用變更。****
 
 ## 後續步驟 {#next-steps}
 
-* [觀看在Assets檢視中管理中繼資料表單的相關影片](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html?lang=zh-Hant)
+* [觀看在Assets檢視中管理中繼資料表單的相關影片](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html)
 
 * 使用資產檢視使用者介面所提供的[!UICONTROL 意見回饋]選項提供產品意見回饋
 
 * 若要提供文件意見回饋，請使用右側邊欄提供的[!UICONTROL 編輯此頁面]![來編輯頁面](assets/do-not-localize/edit-page.png)或[!UICONTROL 記錄問題]![來建立 GitHub 問題](assets/do-not-localize/github-issue.png)
 
-* 聯絡[客戶服務](https://experienceleague.adobe.com/zh-hant?support-solution=General#support)
+* 聯絡[客戶服務](https://experienceleague.adobe.com/?support-solution=General#support)
 
 <!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
 To reuse an existing form to create a form, do one of these:

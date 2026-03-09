@@ -2,10 +2,11 @@
 title: 在 [!DNL the Content Hub]中共用Assets
 description: 在 [!DNL the Content Hub]中共用Assets
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: 5284d229-1596-40bf-aa5f-af4b6500ebdf
-source-git-commit: 12bb550ff275c84bc60869e91e953993aab57aa5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '925'
 ht-degree: 2%
 
 ---
@@ -14,7 +15,7 @@ ht-degree: 2%
 
 建立所選資產的連結，以便輕鬆與他人共用。 以授權[!DNL Content Hub]使用者的身分，選取您[!DNL Content Hub]環境中可用的一或多個資產、產生連結，然後傳送給其他私人或公開使用者。
 
->[!VIDEO](https://video.tv.adobe.com/v/3474930/?captions=chi_hant&learn=on&enablevpops=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3474890/?learn=on&enablevpops=on){transcript=true}
 
 ## 先決條件 {#prerequisites}
 
@@ -51,7 +52,7 @@ ht-degree: 2%
 執行以下步驟，在預覽資產時共用資產：
 
 1. 導覽至[!DNL Content Hub]首頁，然後按一下資產縮圖以預覽資產，並在對話方塊的右側窗格中顯示功能表選項。
-1. 選取![共用](/help/assets/assets/share.svg)以顯示&#x200B;**[!UICONTROL 共用]**&#x200B;面板。
+1. 選取![共用](/help/assets/assets/share.svg)以顯示&#x200B;**[!UICONTROL 共用]**面板。
    預覽資產時![共用資產](/help/assets/assets/share-link-asset-preview.png)
 1. 請依照[共用資產](#share-assets)區段中的步驟3到5，從此&#x200B;**[!UICONTROL 共用]**&#x200B;面板產生並共用資產連結（私人或公開）。
 
@@ -59,10 +60,10 @@ ht-degree: 2%
 
 透過連結存取共用資產頁面，並執行下列動作：
 
-* 選取一或多個資產，然後按一下[下載] ![](/help/assets/assets/download-icon.svg) **[!UICONTROL &lbrace;下載]&rbrack;**，從可用的下載選項中選取[原始] **[!UICONTROL 、[靜態]]** **[!UICONTROL 或兩個轉譯。]**
+* 選取一或多個資產，然後按一下[下載] ![](/help/assets/assets/download-icon.svg) **[!UICONTROL {下載]]**，從可用的下載選項中選取[原始] **[!UICONTROL 、[靜態]]** **[!UICONTROL 或兩個轉譯。]**
   ![](/help/assets/assets/download-shared-assets.png)
 * 按一下資產縮圖以檢視資產的中繼資料。
-* 在共用資產頁面（[透過私人連結存取](#share-assets)）上，按一下資產縮圖，然後選取![下載](/help/assets/assets/download-icon.svg)，在選取和下載之前，先在&#x200B;**[!UICONTROL 下載]**&#x200B;面板上選取並檢視可用的資產動態轉譯。
+* 在共用資產頁面（[透過私人連結存取](#share-assets)）上，按一下資產縮圖，然後選取![下載](/help/assets/assets/download-icon.svg)，在選取和下載之前，先在&#x200B;**[!UICONTROL 下載]**面板上選取並檢視可用的資產動態轉譯。
   ![](/help/assets/assets/download-renditions-shared-assets-page.png)
 
 ## 常見問題 {#faqs-share-assets-content-hub}

@@ -2,10 +2,11 @@
 title: 在您的AEM Sites頁面中使用資產之前，請先預覽資產
 description: 具OpenAPI功能的Dynamic Media可讓您在Adobe Experience Manager (AEM) Sites預覽頁面上預覽資產。 此資產預覽可讓您和您的利害關係人在發佈作者頁面（包含更新的資產）以供公眾使用之前，檢閱及驗證資產的更新。
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: 6f071ca9-0f84-45fc-a6b3-047cca9d5e65
-source-git-commit: 3f3e091d09b94418fc2cda0bd3b3ce950555b7a9
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '737'
 ht-degree: 0%
 
 ---
@@ -51,13 +52,13 @@ ht-degree: 0%
    >
    > 「資產選擇器」會顯示最近狀態更新設為「已核准」或「預覽」的資產。
 
-1. 使用&#x200B;**[!UICONTROL 管理出版物]**&#x200B;選項將您的頁面發佈到預覽層。 執行[將內容發佈到預覽](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/previewing-content)區段中的步驟，將您的頁面發佈到預覽層。 發佈後，產生頁面的預覽URL。 「預覽」頁面會顯示Sites頁面中的資產（具有最近的狀態更新）。
+1. 使用&#x200B;**[!UICONTROL 管理出版物]**&#x200B;選項將您的頁面發佈到預覽層。 執行[將內容發佈到預覽](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/previewing-content)區段中的步驟，將您的頁面發佈到預覽層。 發佈後，產生頁面的預覽URL。 「預覽」頁面會顯示Sites頁面中的資產（具有最近的狀態更新）。
 
-與利害關係人共用此預覽URL，以進行檢閱和獲得回饋。 確保您的利害關係人有權存取預覽頁面。 請參閱[存取預覽服務](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments#access-preview-service)，以取得關於提供預覽頁面存取權的資訊。
+與利害關係人共用此預覽URL，以進行檢閱和獲得回饋。 確保您的利害關係人有權存取預覽頁面。 請參閱[存取預覽服務](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments#access-preview-service)，以取得關於提供預覽頁面存取權的資訊。
 
 >[!NOTE]
 >
->根據預設，[影像V3核心元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/wcm-components/image#version-and-compatibility)支援預覽版本的資產。 當您使用[Asset Selector](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/asset-selector-upload)面板選取資產的預覽版本（具有預覽狀態的資產）時，影像V3元件會自動在預覽層級（在您的Sites作者頁面上的預覽版本）中轉譯。
+>根據預設，[影像V3核心元件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/image#version-and-compatibility)支援預覽版本的資產。 當您使用[Asset Selector](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/asset-selector-upload)面板選取資產的預覽版本（具有預覽狀態的資產）時，影像V3元件會自動在預覽層級（在您的Sites作者頁面上的預覽版本）中轉譯。
 
 完成資產版本後，[將您的頁面發佈到發佈階層](#publish-your-pages-to-publish-tier)以供公眾使用。
 
@@ -66,12 +67,12 @@ ht-degree: 0%
 最終確定供公眾使用的資產版本後，將資產狀態設定為&#x200B;**[!UICONTROL 已核准]**。 然後將您的頁面發佈至發佈階層。 執行以下步驟以發佈頁面：
 
 1. 請依照上文[預覽網站預覽頁面](#asset-preview-on-sites-pages-using-Dynamic-Media-with-OpenAPI-capabilities)區段中的步驟1，將資產狀態變更為&#x200B;**[!UICONTROL 已核准]**。
-1. 導覽至您的Sites作者頁面，並將其發佈至[!DNL Publish tier]。 從頁面編輯器[區段執行](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/sites/authoring/page-editor/publishing#publishing-from-the-page-editor)發佈中的步驟，以發佈頁面。
-或者，請依照[從網站主控台](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/publishing-pages#publishing-from-the-sites-console)區段發佈頁面的步驟操作，從網站主控台發佈您的頁面。
+1. 導覽至您的Sites作者頁面，並將其發佈至[!DNL Publish tier]。 從頁面編輯器[區段執行](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/page-editor/publishing#publishing-from-the-page-editor)發佈中的步驟，以發佈頁面。
+或者，請依照[從網站主控台](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/publishing-pages#publishing-from-the-sites-console)區段發佈頁面的步驟操作，從網站主控台發佈您的頁面。
 
    >[!NOTE]
    >
    > 發佈層級上只能傳遞已核准的資產。 先核准資產，然後再將頁面發佈到發佈層級以供公眾使用。
 
    ![頁面已發佈](/help/assets/assets/the-page-has-been-publushed.png)
-確認訊息&#x200B;**[!UICONTROL 頁面已發佈]**，在成功發佈後顯示。 導覽至發佈層級上的已發佈頁面，確認更新已上線且內容如預期顯示。
+確認訊息**[!UICONTROL 頁面已發佈]**，在成功發佈後顯示。 導覽至發佈層級上的已發佈頁面，確認更新已上線且內容如預期顯示。

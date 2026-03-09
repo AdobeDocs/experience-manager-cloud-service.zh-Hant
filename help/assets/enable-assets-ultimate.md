@@ -3,10 +3,11 @@ title: 啟用Assets Ultimate
 description: 瞭解如何為新客戶和現有客戶啟用Assets Ultimate。
 feature: Asset Management
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: 45cd8ccd-e5cf-42cd-aa7f-4ae59d0587f7
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1402'
+source-wordcount: '1408'
 ht-degree: 3%
 
 ---
@@ -69,7 +70,7 @@ Admin Console上的AEM as a Cloud Service執行個體包含下列產品設定檔
 
 >[!NOTE]
 >
->如果您在2024年8月14日之前布建Content Hub，Content Hub產品設定檔會在`Limited Users`之後提及`contenthub`，而非`delivery`。
+>如果您在2024年8月14日之前布建Content Hub，Content Hub產品設定檔會在`contenthub`之後提及`Limited Users`，而非`delivery`。
 
 ## 為現有客戶啟用Assets Ultimate {#enable-assets-ultimate-existing-customers}
 
@@ -147,7 +148,7 @@ Admin Console上的AEM as a Cloud Service執行個體現在包含下列產品設
 
 >[!NOTE]
 >
->如果您在2024年8月14日之前布建Content Hub，Content Hub產品設定檔會在`Limited Users`之後提及`contenthub`，而非`delivery`。
+>如果您在2024年8月14日之前布建Content Hub，Content Hub產品設定檔會在`contenthub`之後提及`Limited Users`，而非`delivery`。
 
 ## 上線AEM Assets Collaborator使用者 {#onboard-collaborator-users}
 

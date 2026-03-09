@@ -1,13 +1,14 @@
 ---
 title: 變化 — 編寫片段內容(Assets — 內容片段)
 description: 瞭解內容片段變數如何讓您為片段製作內容，然後根據用途建立該內容的變數，從而增加彈性。
+badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 8dc6874f3f8833ef67a4fa93d2a830fa8485b593
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '2530'
+source-wordcount: '2536'
 ht-degree: 6%
 
 ---
@@ -184,7 +185,7 @@ RTF編輯可讓您設定格式：
 
 >[!CAUTION]
 >
->如果您在 **Rich Text** 和 **&#x200B;**&#x200B;Markdown之間切換，可能會在區塊引號和程式碼區塊中遇到意外的效果，因為這兩種格式在處理方式上可能會有差異。
+>如果您在 **Rich Text** 和 **** Markdown之間切換，可能會在區塊引號和程式碼區塊中遇到意外的效果，因為這兩種格式在處理方式上可能會有差異。
 
 ### 片段參考 {#fragment-references}
 
@@ -474,7 +475,7 @@ RTF編輯可讓您設定格式：
 1. 選取所需的變數。
 1. 從&#x200B;**動作**&#x200B;下拉式清單中選取&#x200B;**重新命名**。
 
-1. 在產生的對 **話方塊中** ，輸入新的「 **&#x200B;**&#x200B;標題」和/或「說明」。
+1. 在產生的對 **話方塊中** ，輸入新的「 **** 標題」和/或「說明」。
 
 1. 確認&#x200B;**重新命名**&#x200B;動作。
 
@@ -502,7 +503,7 @@ RTF編輯可讓您設定格式：
 
 >[!CAUTION]
 >
->同步僅可用於將更改從 *主&#x200B;**版複製**&#x200B;到變化*。
+>同步僅可用於將更改從 *主&#x200B;**版複製**到變化*。
 >
 >只同步變數的目前元素。
 >

@@ -2,10 +2,11 @@
 title: 適用於  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] 的資產選擇器
 description: 根據需求使用Asset Selector來自訂的範例。
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: 7a393a96-f2a2-4a25-922c-577271cafc57
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '263'
 ht-degree: 54%
 
 ---
@@ -13,7 +14,7 @@ ht-degree: 54%
 
 # 使用資產選擇器屬性的範例 {#usage-examples}
 
-您可以在&#x200B;**index.html**&#x200B;檔案中定義資產選擇器[屬性](/help/assets/asset-selector-properties.md)，以自訂應用程式中的資產選擇器顯示。
+您可以在[index.html](/help/assets/asset-selector-properties.md)檔案中定義資產選擇器&#x200B;**屬性**，以自訂應用程式中的資產選擇器顯示。
 
 ## 範例 1：邊欄視圖中的資產選擇器
 

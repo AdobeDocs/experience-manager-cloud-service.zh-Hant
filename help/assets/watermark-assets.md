@@ -4,10 +4,11 @@ description: 瞭解如何在AEM中為資產新增數位浮水印。 浮水印可
 contentOwner: AG
 feature: Asset Management,Publishing
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: 210f8925-bd15-4b4a-8714-5a1486eeb49e
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '331'
 ht-degree: 16%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 16%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/watermarking.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/watermarking.html) |
 | AEM as a Cloud Service  | 本文章 |
 
 [!DNL Adobe Experience Manager Assets]可讓您新增數位浮水印至影像和視訊。 [!DNL Assets]支援將影像作為浮水印套用至其他影像檔案。 浮水印可協助使用者驗證資產的真實性和版權所有權。 此外，浮水印可用於表示檔案的狀態，如機密、草稿、有效性等。
@@ -33,7 +34,7 @@ ht-degree: 16%
 
 1. 在&#x200B;**[!UICONTROL 比例]**&#x200B;欄位中，指定相對於轉譯寬度的浮水印比例，範圍從0.0到1.0。
 
-1. 按一下「**[!UICONTROL 儲存]**」。
+1. 按一下&#x200B;**[!UICONTROL 儲存]**。
 
    ![資產重複偵測器](assets/system-watermarking-profile.png)
 

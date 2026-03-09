@@ -1,12 +1,13 @@
 ---
 title: 我的Assets Workspace檢視
 description: 「我的工作區」是一個頁面，提供可自訂的視覺化模組，以方便存取資產使用者介面的關鍵區域以及與使用者最相關的資訊。
+badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: 4ffba974-6e8e-48e2-aa57-7d4041032226
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '745'
+source-wordcount: '751'
 ht-degree: 84%
 
 ---

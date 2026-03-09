@@ -2,17 +2,18 @@
 title: Content Hub 最新資訊
 description: 了解更多關於最近推出的 Content Hub 功能的資訊
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: 77a5c54c-bbc5-4dfb-9c3a-aa0620e836d0
-source-git-commit: 8e1beb80802076f7d7b9a043b85daa2e44aaaead
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '889'
 ht-degree: 78%
 
 ---
 
 # Content Hub 最新資訊 {#whats-new-content-hub}
 
-Content Hub 作為 Experience Manager Assets as a Cloud Service 的一部分提供，以實現組織及其業務合作夥伴對品牌內容的大眾化存取。其專注於分配資產以進行大規模啟用，並建立品牌內容變體來提高行銷靈敏度。
+Content Hub 作為 Experience Manager Assets as a Cloud Service 的一部分提供，以實現組織及其業務合作夥伴對品牌內容的民主化存取權。其專注於分配資產以進行大規模啟用，並建立品牌內容變體來提高行銷靈敏度。
 
 以下影片將示範 Content Hub 的主要功能：
 
@@ -44,7 +45,7 @@ Content Hub現在支援以平面階層下載多個資產轉譯，而不需導覽
 
 Content Hub管理員現在可以在Content Hub中釘選集合以快速存取。 釘選的集合會顯示在「集合」首頁上的專用&#x200B;**[!UICONTROL Pined]**&#x200B;區段中，以便更輕鬆地將重要集合保持在可觸及的範圍之內。
 
-[!BADGE 深入了解此功能]{type=Informative url="https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#pin-unpin-collection"}
+[!BADGE 深入了解此功能]{type=Informative url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-hub/collections-content-hub#pin-unpin-collection"}
 
 >[!IMPORTANT]
 >

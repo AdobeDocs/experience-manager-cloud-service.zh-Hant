@@ -1,12 +1,13 @@
 ---
 title: 使用 Assets 檢視大量匯入資產
 description: 了解如何使用新的 Assets UI (Assets 檢視) 大量匯入資產。此功能可讓管理員將大量資產從資料來源匯入到 AEM Assets。
+badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: 10f9d679-7579-4650-9379-bc8287cb2ff1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: 655f84593adb1199bcfc21cb54071feb3c8523c5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1874'
+source-wordcount: '1880'
 ht-degree: 91%
 
 ---
@@ -27,7 +28,7 @@ AEM Assets 檢視中的大量匯入能讓管理員將大量資產從資料來源
 * Dropbox
 * OneDrive
 
->[!VIDEO](https://video.tv.adobe.com/v/3451981/?captions=chi_hant&learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3426857/?learn=on){transcript=true}
 
 ## 先決條件 {#prerequisites}
 

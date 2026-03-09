@@ -2,11 +2,12 @@
 title: 瞭解如何搜尋和探索 [!DNL Assets view]中的資產？
 description: 瞭解如何在AEM Assets檢視中搜尋和探索資產。 強大的搜尋功能可讓您快速探索合適的資產，協助您改善內容速度。
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: f83324be68bdab65e5c76ef336eb7e4a2e318dd1
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1621'
+source-wordcount: '1627'
 ht-degree: 74%
 
 ---
@@ -124,9 +125,9 @@ To remove custom filters:
 
 ## AI 搜尋 {#ai-search}
 
-AI搜尋是一種進階搜尋功能，可瞭解使用者查詢的涵義和意圖，而非依賴精確的關鍵字比對。 它使用人工智慧(AI)和機器學習，提供更準確且內容感知的結果。
+AI 搜尋是進階搜尋功能，可瞭解使用者查詢的意義與意圖，而非依賴完全相符的關鍵字。 它使用人工智慧(AI)和機器學習，提供更準確且內容感知的結果。
 
-傳統關鍵字式搜尋會尋找精確字詞，AI搜尋則不同，它會解譯字詞、概念和使用者意圖之間的關係。 這可確保使用者找到他們要尋找的內容 — 即使他們的查詢用詞不同、包含拼寫錯誤或使用另一種語言。
+傳統關鍵字式搜尋會尋找精確字詞，而AI 搜尋則解譯字詞、概念和使用者意圖之間的關係。 這可確保使用者找到他們要尋找的內容 — 即使他們的查詢用詞不同、包含拼寫錯誤或使用另一種語言。
 
 如果其主要優點包括：
 
@@ -138,25 +139,25 @@ AI搜尋是一種進階搜尋功能，可瞭解使用者查詢的涵義和意圖
 
 * **內容感知搜尋**：辨識查詢背後的目的，而不只是確切的字詞。
 
-### AI搜尋範例 {#examples-ai-search}
+### AI 搜尋範例 {#examples-ai-search}
 
 **範例提示**： *喝咖啡的女人*
 
 傳統關鍵字式搜尋會尋找完全符合的資產中繼資料，例如`Woman`、`drinking`、`Coffee`，並傳回包含中繼資料中所有字詞的資產。
 
-不過，AI搜尋在`Girl`的情況下會比對類似字詞，例如`Lady`、`Woman`，在`Cappuccino`的情況下會比對到`Latte`和`Coffee`。
+不過，在`Girl`的情況下，AI 搜尋會符合`Lady`、`Woman`之類的類似字詞，而在`Cappuccino`的情況下，則會符合`Latte`和`Coffee`。
 
 同樣地，您可以用西班牙文或拼錯拼字`Woman`來指定此提示為`Wman`，仍會得到相同的結果。
 
 在Assets檢視中![語意搜尋](assets/semantic-search.png)
 
-### 在Assets檢視中啟用或停用AI搜尋 {#enable-disable-ai-search}
+### 在Assets檢視中啟用或停用AI 搜尋 {#enable-disable-ai-search}
 
-執行以下步驟以啟用或停用AI搜尋：
+執行以下步驟來啟用或停用AI 搜尋：
 
 1. 瀏覽至&#x200B;**[!UICONTROL 設定]** >> **[!UICONTROL 一般設定]**，然後選取&#x200B;**[!UICONTROL 搜尋]**&#x200B;標籤。
 
-1. 在&#x200B;**[!UICONTROL 搜尋]**&#x200B;區段中，選取&#x200B;**[!UICONTROL AI搜尋]**&#x200B;以啟用AI搜尋，或選取&#x200B;**[!UICONTROL 關鍵字]**&#x200B;以停用它。
+1. 在&#x200B;**[!UICONTROL 搜尋]**&#x200B;區段中，選取&#x200B;**[!UICONTROL AI 搜尋]**&#x200B;以啟用AI 搜尋，或選取&#x200B;**[!UICONTROL 關鍵字]**&#x200B;以停用。
 
    在Assets檢視中![語意搜尋](/help/assets/assets/enable-disable-ai-search.png)
 
@@ -394,7 +395,7 @@ If you need to provide feedback on the Contextual Search feature, click ![Contex
 
 * 若要提供文件意見回饋，請使用右側邊欄提供的[!UICONTROL 編輯此頁面]![來編輯頁面](assets/do-not-localize/edit-page.png)或[!UICONTROL 記錄問題]![來建立 GitHub 問題](assets/do-not-localize/github-issue.png)。
 
-* 聯絡[客戶服務](https://experienceleague.adobe.com/zh-hant?support-solution=General#support)
+* 聯絡[客戶服務](https://experienceleague.adobe.com/?support-solution=General#support)
 
 
 

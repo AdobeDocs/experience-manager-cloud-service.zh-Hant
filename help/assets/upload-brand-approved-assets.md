@@ -2,10 +2,11 @@
 title: 將您的品牌核准資產上傳至 [!DNL Content Hub]
 description: 瞭解如何將您的品牌核准資產上傳至Content Hub
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: f1be7cfc-1803-4c17-bb58-947104aa883c
-source-git-commit: 282ab15d8c498b3c0ddba8165b1262bc20729b75
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1123'
+source-wordcount: '1129'
 ht-degree: 12%
 
 ---
@@ -19,7 +20,7 @@ ht-degree: 12%
 
 [有權新增資產的Content Hub使用者](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets)可以從本機檔案系統新增資產到Content Hub，或是從OneDrive或Dropbox資料來源匯入資產。 不論本機檔案系統或OneDrive和Dropbox資料來源提供的檔案夾結構為何，所有資產都會顯示在Content Hub的頂層，以增強搜尋功能。
 
->[!VIDEO](https://video.tv.adobe.com/v/3445392/?captions=chi_hant&learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3432980/?learn=on){transcript=true}
 
 在Assets as a Cloud Service中標示為`Approved`的資產會自動在Content Hub中使用。 如需更多資訊，請參閱[為 Content Hub 核准資產](/help/assets/approve-assets-content-hub.md)。
 
@@ -90,7 +91,7 @@ Content Hub可讓使用者定義每次上傳的關鍵細節，例如行銷活動
 
 ### 如何將資產從我的本機檔案系統上傳至Content Hub？ {#upload-assets-content-hub}
 
-若要從您的本機檔案系統上傳資產，請按一下[新增Assets] **&#x200B;**，開啟上傳對話方塊。 您可以拖放檔案或資料夾，或手動瀏覽以選取它們。 您必須將資產群組在行銷活動名稱下，建議您填寫其他欄位，例如關鍵字、管道、時間範圍及區域，以便進行更好的組織。 準備就緒後，按一下&#x200B;**上傳**，檢閱詳細資料，並確認開始上傳。
+若要從您的本機檔案系統上傳資產，請按一下[新增Assets] ****，開啟上傳對話方塊。 您可以拖放檔案或資料夾，或手動瀏覽以選取它們。 您必須將資產群組在行銷活動名稱下，建議您填寫其他欄位，例如關鍵字、管道、時間範圍及區域，以便進行更好的組織。 準備就緒後，按一下&#x200B;**上傳**，檢閱詳細資料，並確認開始上傳。
 
 ### Content Hub中的資產核准程式如何運作？ {#asset-approval-content-hub}
 

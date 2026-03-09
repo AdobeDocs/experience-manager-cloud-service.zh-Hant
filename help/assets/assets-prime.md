@@ -3,10 +3,11 @@ title: Assets Prime
 description: 進一步瞭解Assets Prime的主要方面，例如主要優點、使用者型別及其許可權。
 feature: Asset Management
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: 012f94c5-b1c3-4799-8eaf-af68d06c036f
-source-git-commit: 504464ed1277c1d9629ae1f96892ebaa5ef701c8
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1100'
+source-wordcount: '1106'
 ht-degree: 15%
 
 ---
@@ -123,7 +124,7 @@ AEM Assets Collaborator使用者可以透過貴組織在其他Assets產品和非
 1. 按一下AEM as a Cloud Service的生產製作例項：
    ![AEM as a Cloud Service的產品設定檔](assets/aem-cloud-service-instances.png)
 
-1. 按一下Collaborators使用者產品設定檔，然後按一下&#x200B;**[!UICONTROL 新增使用者]**&#x200B;以將使用者新增至產品設定檔。
+1. 按一下Collaborators使用者產品設定檔，然後按一下&#x200B;**[!UICONTROL 新增使用者]**以將使用者新增至產品設定檔。
    ![使用者產品設定檔](assets/aem-assets-collaborator-user-permissions.png)
 
 1. 按一下「**[!UICONTROL 儲存]**」以儲存變更。
@@ -145,7 +146,7 @@ AEM Assets進階使用者可存取所有AEM Assets功能，包括管理資產、
 1. 按一下AEM as a Cloud Service的生產製作例項：
    ![AEM as a Cloud Service的產品設定檔](assets/aem-cloud-service-instances.png)
 
-1. 按一下Power users產品設定檔，然後按一下&#x200B;**[!UICONTROL 新增使用者]**&#x200B;以將使用者新增至產品設定檔。
+1. 按一下Power users產品設定檔，然後按一下&#x200B;**[!UICONTROL 新增使用者]**以將使用者新增至產品設定檔。
    ![使用者產品設定檔](assets/aem-assets-power-user-permissions.png)
 
 1. 按一下「**[!UICONTROL 儲存]**」以儲存變更。

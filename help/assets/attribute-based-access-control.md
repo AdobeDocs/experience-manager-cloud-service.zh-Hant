@@ -2,10 +2,11 @@
 title: 屬性型存取控制
 description: 瞭解如何啟用屬性型存取控制來定義中繼資料型規則，以定義Content Hub中可用資產的存取層級
 role: Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: 05f54b05-40b8-4a6c-af8f-5c3f7a2089d4
-source-git-commit: 44e9c1f016bfdad909d9e2aa1c9a301dcecd763b
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1391'
+source-wordcount: '1397'
 ht-degree: 3%
 
 ---
@@ -28,7 +29,7 @@ ht-degree: 3%
 
 * 減少重複的數量，提高資產完整性。當相同的資產與不同的群組共用時，資料夾型權限需要進行重複。
 
->[!VIDEO](https://video.tv.adobe.com/v/3475425/?captions=chi_hant&learn=on&enablevpops){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3475413/?learn=on&enablevpops){transcript=true}
 
 ## 如何啟用以屬性為基礎的存取控制？ {#enable-attribute-based-access-control}
 

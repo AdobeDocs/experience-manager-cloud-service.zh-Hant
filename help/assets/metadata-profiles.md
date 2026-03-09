@@ -4,10 +4,11 @@ description: 瞭解資產的中繼資料設定檔。 瞭解如何建立中繼資
 contentOwner: AG
 feature: Metadata
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1403'
+source-wordcount: '1409'
 ht-degree: 21%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 21%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-config.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-config.html?lang=en) |
 | AEM as a Cloud Service  | 本文章 |
 
 中繼資料設定檔可讓您將預設中繼資料套用至資料夾中的資產。 建立中繼資料設定檔，並將其套用至資料夾。 您之後上傳至資料夾的任何資產都會繼承您在中繼資料設定檔中設定的預設中繼資料。
@@ -28,8 +29,8 @@ ht-degree: 21%
 
 1. 導覽至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 中繼資料設定檔]**，然後按一下&#x200B;**[!UICONTROL 建立]**。
 1. 輸入中繼資料設定檔的標題，例如「範例中繼資料」，然後選取&#x200B;**[!UICONTROL 提交]**。 此時會顯示中繼資料設定檔的編輯表單。
-1. 按一下元件，然後在&#x200B;**[!UICONTROL 設定]**&#x200B;索引標籤中設定其屬性。 例如，按一下&#x200B;**[!UICONTROL Description]**&#x200B;元件並編輯其屬性。
-編輯&#x200B;**[!UICONTROL Description]**&#x200B;元件的下列屬性：
+1. 按一下元件，然後在&#x200B;**[!UICONTROL 設定]**&#x200B;索引標籤中設定其屬性。 例如，按一下&#x200B;**[!UICONTROL Description]**元件並編輯其屬性。
+編輯**[!UICONTROL Description]**&#x200B;元件的下列屬性：
 
    * **[!UICONTROL 欄位標籤]** — 中繼資料屬性的顯示名稱。 僅供使用者參考。
    * **[!UICONTROL 對應到屬性]** — 此屬性的值提供儲存於存放庫中的資產節點相對路徑/名稱。 此值應一律以`./`開頭，因為它表示路徑在資產的節點下。
@@ -80,7 +81,7 @@ ht-degree: 21%
 
 ### 將中繼資料設定檔套用至特定資料夾 {#applying-metadata-profiles-to-specific-folders}
 
-您可以從「工具」菜單或者在資料夾內的「屬性」中，將元資料設定檔&#x200B;**[!UICONTROL 應用到資料夾]**&#x200B;**&#x200B;**。本節說明如何以兩種方式將中繼資料設定檔套用至資料夾。
+您可以從「工具」菜單或者在資料夾內的「屬性」中，將元資料設定檔&#x200B;**[!UICONTROL 應用到資料夾]******。本節說明如何以兩種方式將中繼資料設定檔套用至資料夾。
 
 已為其分配輪廓的資料夾將通過資料夾名稱正下方的輪廓名稱顯示來指示。
 
@@ -114,7 +115,7 @@ ht-degree: 21%
 
 當您從資料夾中移除中繼資料描述檔時，任何子資料夾都會自動繼承其父資料夾中描述檔的移除作業。 不過，在資料夾內發生的任何檔案處理作業都會維持不變。
 
-您可以從「工具」功能表內的資料夾或在資料夾內的「屬性」中移除中繼資料設定檔，或從「屬性」中移除中繼資料設定檔，或從「屬性」中移除中繼資料設定檔，或從「工具」**功能表** 移除中繼資料設定檔 **&#x200B;**。本節將說明如何以兩種方式從資料夾中移除中繼資料設定檔。
+您可以從「工具」功能表內的資料夾或在資料夾內的「屬性」中移除中繼資料設定檔，或從「屬性」中移除中繼資料設定檔，或從「屬性」中移除中繼資料設定檔，或從「工具」**功能表** 移除中繼資料設定檔 ****。本節將說明如何以兩種方式從資料夾中移除中繼資料設定檔。
 
 ### 透過設定檔使用者介面從資料夾中移除中繼資料設定檔 {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
 

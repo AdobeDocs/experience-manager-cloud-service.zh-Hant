@@ -3,12 +3,13 @@ title: AEM as a Cloud Service 的目標選擇器
 description: 使用 AEM 目標選擇器顯示和選取可用為原始資產副本的資產。
 contentOwner: Adobe
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: 7e7bc1ee-d580-4c88-b550-273e8b0620ba
 feature: Selectors
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1887'
-ht-degree: 85%
+source-wordcount: '1880'
+ht-degree: 84%
 
 ---
 
@@ -128,18 +129,18 @@ interface SelectedDestination {
 
 | 屬性 | 類型 | 解釋 |
 |---|---|---|
-| *repo:repositoryId* | 字串 | 儲存資產之存放庫的唯一識別碼。 |
-| *repo:id* | 字串 | 資產的唯一識別碼。 |
-| *repo:assetClass* | 字串 | 資產的分類 (例如影像或影片、文件)。 |
-| *repo:name* | 字串 | 資產的名稱，包括檔案副檔名。 |
-| *repo:size* | 數字 | 資產的大小，以位元組計。 |
-| *repo:path* | 字串 | 資產在存放庫中的位置。 |
-| *repo:ancestors* | `Array<string>` | 存放庫中資產的上階項目陣列。 |
-| *repo:state* | 字串 | 存放庫中資產的目前狀態（例如，作用中、已刪除等）。 |
-| *repo:createdBy* | 字串 | 建立資產的使用者或系統。 |
-| *repo:createDate* | 字串 | 建立資產的日期與時間。 |
-| *repo:modifiedBy* | 字串 | 上次修改資產的使用者或系統。 |
-| *repo:modifyDate* | 字串 | 上次修改資產的日期和時間。 |
+| *存放庫:repositoryId* | 字串 | 儲存資產之存放庫的唯一識別碼。 |
+| *存放庫:id* | 字串 | 資產的唯一識別碼。 |
+| *存放庫:assetClass* | 字串 | 資產的分類 (例如影像或影片、文件)。 |
+| *存放庫:name* | 字串 | 資產的名稱，包括檔案副檔名。 |
+| *存放庫:size* | 數字 | 資產的大小，以位元組計。 |
+| *存放庫:path* | 字串 | 資產在存放庫中的位置。 |
+| *存放庫:ancestors* | `Array<string>` | 存放庫中資產的上階項目陣列。 |
+| *存放庫:state* | 字串 | 存放庫中資產的目前狀態（例如，作用中、已刪除等）。 |
+| *存放庫:createdBy* | 字串 | 建立資產的使用者或系統。 |
+| *存放庫:createDate* | 字串 | 建立資產的日期與時間。 |
+| *存放庫:modifiedBy* | 字串 | 上次修改資產的使用者或系統。 |
+| *存放庫:modifyDate* | 字串 | 上次修改資產的日期和時間。 |
 | *dc:format* | 字串 | 資產的格式。 |
 | *_頁面* | 順序依據：字串；計數：數字； | 包括文件的頁碼。 |
 
@@ -182,7 +183,7 @@ interface SelectedDestination {
 </html>
 ```
 
-如需詳細的範例，請造訪[目標選擇器代碼範例 &#x200B;](https://github.com/adobe/aem-assets-selectors-mfe-examples)。
+如需詳細的範例，請造訪[目標選擇器代碼範例 ](https://github.com/adobe/aem-assets-selectors-mfe-examples)。
 
 ## 使用目標選擇器屬性 {#destination-selector-properties}
 
@@ -268,10 +269,10 @@ interface SelectedDestination {
 
 目的地選擇器可讓您以四種不同的檢視檢視檢視資產：
 
-* ![清單檢視](assets/do-not-localize/list-view.png) [!UICONTROL **清單檢視**]：清單檢視在單一欄中顯示可捲動的檔案和資料夾。
-* ![格線檢視](assets/do-not-localize/grid-view.png) [!UICONTROL **格線檢視**]：格線檢視在列與欄的格線中顯示可捲動的檔案和資料夾。
-* ![圖庫檢視](assets/do-not-localize/gallery-view.png) [!UICONTROL **圖庫檢視**]：圖庫檢視在居中鎖定的水平清單中顯示檔案或資料夾。
-* ![瀑布檢視](assets/do-not-localize/waterfall-view.png) [!UICONTROL **瀑布檢視**]：瀑布檢視以 Bridge 的形式顯示檔案或資料夾。
+* ![清單檢視](assets/do-not-localize/list-view.png)[!UICONTROL **清單檢視**]：清單檢視在單一欄中顯示可捲動的檔案和資料夾。
+* ![格線檢視](assets/do-not-localize/grid-view.png)[!UICONTROL **格線檢視**]：格線檢視在列與欄的格線中顯示可捲動的檔案和資料夾。
+* ![圖庫檢視](assets/do-not-localize/gallery-view.png)[!UICONTROL **圖庫檢視**]：圖庫檢視在居中鎖定的水平清單中顯示檔案或資料夾。
+* ![瀑布檢視](assets/do-not-localize/waterfall-view.png)[!UICONTROL **瀑布檢視**]：瀑布檢視以 Bridge 的形式顯示檔案或資料夾。
 
 ### 資訊 {#info}
 

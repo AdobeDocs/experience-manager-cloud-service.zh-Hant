@@ -4,11 +4,12 @@ description: 瞭解如何使用回應式程式碼功能從Dynamic Media傳送最
 contentOwner: Rick Brough
 feature: Asset Management
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: 62af6f3f-9c86-44ad-870d-140f572f99c5
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 15%
+source-wordcount: '338'
+ht-degree: 16%
 
 ---
 
@@ -28,7 +29,7 @@ ht-degree: 15%
 
    ![chlimage_1-408](assets/chlimage_1-408.png)
 
-1. 選取回應式影像預設集。URL **[!UICONTROL 和]**&#x200B;**[!UICONTROL RESS]** 按鈕出現。
+1. 選取回應式影像預設集。URL **[!UICONTROL 和]****[!UICONTROL RESS]** 按鈕出現。
 
    ![chlimage_1-409](assets/chlimage_1-409.png)
 

@@ -1,12 +1,13 @@
 ---
 title: 快速發佈至 [!DNL AEM and Dynamic Media]
 description: 在 [!DNL Assets view] 中快速發佈可讓您將資產同時或個別發佈到 [!DNL AEM and Dynamic Media] 。 您可以選取資產和資料夾，並選擇發佈至 [!DNL Dynamic Media] 或 [!DNL AEM]。
+badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
 feature: Publishing
 role: User
-source-git-commit: 2e257634313d3097db770211fe635b348ffb36cf
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1059'
 ht-degree: 0%
 
 ---
@@ -82,7 +83,7 @@ ht-degree: 0%
 若要使用資產瀏覽頁面發佈資產：
 
 1. 按一下左窗格中可用的&#x200B;**[!UICONTROL Assets管理]**&#x200B;區段中的&#x200B;**[!UICONTROL Assets]**。
-1. 選取一或多個您需要發佈的資產或資料夾，然後按一下[發佈]。**&#x200B;**
+1. 選取一或多個您需要發佈的資產或資料夾，然後按一下[發佈]。****
 1. 選取&#x200B;**[!UICONTROL AEM]**&#x200B;並按一下&#x200B;**[!UICONTROL 發佈]**&#x200B;以將資產發佈到[!DNL AEM and Dynamic Media]。
 
    ![資產瀏覽](/help/assets/assets/browse-uactivation-immediate.svg)

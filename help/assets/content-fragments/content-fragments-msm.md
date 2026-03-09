@@ -1,14 +1,15 @@
 ---
 title: 使用MSM和即時副本重複使用內容片段
 description: 瞭解如何使用MSM的即時副本功能，以便在多個位置使用相同或類似的內容片段內容，同時與來源內容同步。
+badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: f050b2d1-856c-4cdb-ac74-bc78016f144a
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '432'
-ht-degree: 10%
+source-wordcount: '438'
+ht-degree: 12%
 
 ---
 
@@ -41,7 +42,7 @@ ht-degree: 10%
 >
 >只有在透過&#x200B;**Assets**&#x200B;主控台使用內容片段時，才能使用內容片段的MSM。
 >
->使用&#x200B;**內容片段**&#x200B;主控台時，MSM功能&#x200B;*無法*&#x200B;使用。
+>使用&#x200B;*內容片段*&#x200B;主控台時，MSM功能&#x200B;**無法**&#x200B;使用。
 
 ## 操作說明 {#how-to}
 
@@ -49,11 +50,11 @@ ht-degree: 10%
 
 * 如何針對內容片段(和Assets)使用[MSM](/help/assets/reuse-assets-using-msm.md)
 
-* [建立即時副本](/help/assets/reuse-assets-using-msm.md)
+* [建立 Live Copy](/help/assets/reuse-assets-using-msm.md)
 
   >[!CAUTION]
   >
-  >如果您想使用MSM建立內容片段的復本)，則應該從個別[內容片段模式](/help/assets/content-fragments/content-fragments-models.md)中使用的任何資料型別中移除任何&#x200B;**唯一**&#x200B;限制。
+  >如果您想使用MSM建立內容片段的復本)，則應該從個別&#x200B;**內容片段模式**&#x200B;中使用的任何資料型別中移除任何[唯一](/help/assets/content-fragments/content-fragments-models.md)限制。
 
 * [檢視來源和即時副本的屬性和狀態](/help/assets/reuse-assets-using-msm.md#properties)
 * [將修改從來源傳播到即時副本](/help/assets/reuse-assets-using-msm.md#rollout-sync)

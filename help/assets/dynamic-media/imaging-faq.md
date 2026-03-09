@@ -1,26 +1,27 @@
 ---
 title: 智慧型影像處理
-description: 瞭解智慧型影像與Adobe AI搭配可套用每位使用者獨特的檢視特性，以自動提供針對其體驗最佳化的正確影像，進而提高效能和參與度。
+description: 瞭解智慧型影像與Adobe AI搭配如何套用每位使用者獨特的檢視特性，以自動提供針對其體驗最佳化的正確影像，進而提高效能和參與度。
 contentOwner: Rick Brough
 feature: Asset Management,Renditions,Best Practices
 role: User
 mini-toc-levels: 2
+badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '3218'
+source-wordcount: '3224'
 ht-degree: 1%
 
 ---
 
 # 智慧型影像處理 {#smart-imaging}
 
-瞭解智慧型影像與Adobe AI搭配可套用每位使用者獨特的檢視特性，以自動提供針對其體驗最佳化的正確影像，進而提高效能和參與度。
+瞭解智慧型影像與Adobe AI搭配如何套用每位使用者獨特的檢視特性，以自動提供針對其體驗最佳化的正確影像，進而提高效能和參與度。
 
 
 ## 關於智慧型影像 {#about-smart-imaging}
 
-智慧型影像技術可套用Adobe AI功能，並與現有的「影像預設集」搭配使用。 它會根據使用者端瀏覽器功能自動最佳化影像格式、大小和品質，藉此增強影像傳送效能。
+智慧型影像技術可套用Adobe AI功能，並搭配現有的「影像預設集」運作。 它會根據使用者端瀏覽器功能自動最佳化影像格式、大小和品質，藉此增強影像傳送效能。
 
 現在，透過改良的智慧型影像處理（現在同時支援AVIF和WebP），取得LCP （最大內容繪製）更好的Google Core Web Vital分數。
 
@@ -86,7 +87,7 @@ In terms of images, the goal is to serve the best quality images as efficiently 
 
 您可以將`bfc=off`附加至影像的URL以關閉智慧型影像。
 
-另請參閱Dynamic Media影像提供與轉譯API中的[bfc](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc)。
+另請參閱Dynamic Media影像提供與轉譯API中的[bfc](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc)。
 
 ### 關於裝置畫素比最佳化 {#dpr}
 
@@ -104,7 +105,7 @@ In terms of images, the goal is to serve the best quality images as efficiently 
 >[!NOTE]
 >
 >* 即使公司層級DPR設定為off，您仍可使用`dpr=on,dprValue`。
->* 由於DPR最佳化，當產生的影像大於MaxPix Dynamic Media設定時，一律會透過維持影像的外觀比例來辨識MaxPix寬度。 —>
+>* 由於DPR最佳化，當產生的影像大於MaxPix Dynamic Media設定時，一律會透過維持影像的外觀比例來辨識MaxPix寬度。 -->
 
 | 要求的影像大小 | 裝置畫素比率(dpr)值 | 傳遞的影像大小 |
 |---|---|---|
@@ -279,7 +280,7 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 
       * 列出所有相關網域，例如&#x200B;*`company.com`*&#x200B;或&#x200B;*`mycompany.scene7.com`*
       * 智慧型影像支援一般和自訂網域。
-      * 若要識別您的網域，請開啟[Dynamic Media Classic案頭應用程式](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started)並登入您的公司帳戶。
+      * 若要識別您的網域，請開啟[Dynamic Media Classic案頭應用程式](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started)並登入您的公司帳戶。
 
          1. 瀏覽至&#x200B;**[!UICONTROL 設定]** > **[!UICONTROL 應用程式設定]** > **[!UICONTROL 一般設定]**。
          1. 尋找&#x200B;**[!UICONTROL 發佈的伺服器名稱]**&#x200B;欄位以確認您的網域。

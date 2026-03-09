@@ -4,10 +4,11 @@ description: 瞭解如何在Dynamic Media中使用影像集。
 contentOwner: Rick Brough
 feature: Image Sets
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '2145'
+source-wordcount: '2151'
 ht-degree: 4%
 
 ---
@@ -34,7 +35,7 @@ ht-degree: 4%
 
 | 限制型別 | 最佳實務 | 強加的限制 |
 | --- | --- | --- |
-| 每個集的重複資產數 | 無重複專案 | 20 |
+| 每個集的重複資產數 | 無重複項目 | 20 |
 | 每組影像的最大數量 | 每組5至10個影像 | 1000 |
 
 另請參閱[Dynamic Media限制](/help/assets/dynamic-media/limitations.md)。
@@ -61,7 +62,7 @@ ht-degree: 4%
 
    在「影像集」中，使用者按一下「影像集檢視器」中的縮圖影像。
 
-   若要在Assets中建立影像集，請選取&#x200B;**[!UICONTROL 建立]** > **[!UICONTROL 影像集]**。 然後，新增影像並按一下[儲存]。**&#x200B;**
+   若要在Assets中建立影像集，請選取&#x200B;**[!UICONTROL 建立]** > **[!UICONTROL 影像集]**。 然後，新增影像並按一下[儲存]。****
 
    請參閱[準備影像集資產以上傳及上傳您的檔案](#uploading-assets-in-image-sets)。
 
@@ -140,7 +141,7 @@ ht-degree: 4%
 
 | 限制型別 | 最佳實務 | 強加的限制 |
 | --- | --- | --- |
-| 每個集的重複資產數 | 無重複專案 | 20 |
+| 每個集的重複資產數 | 無重複項目 | 20 |
 | 每組影像的最大數量 | 每組5至10個影像 | 1000 |
 
 另請參閱[Dynamic Media限制](/help/assets/dynamic-media/limitations.md)。

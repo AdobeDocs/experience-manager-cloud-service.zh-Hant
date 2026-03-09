@@ -1,14 +1,15 @@
 ---
 title: 預覽 — JSON呈現(Assets — 內容片段)
 description: 瞭解如何在實作AEM Headless解決方案時輕鬆預覽內容片段的JSON表示法。
+badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: e5f3f3ee-c191-4b7b-8a29-67524bb68a8e
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 8%
+source-wordcount: '185'
+ht-degree: 9%
 
 ---
 

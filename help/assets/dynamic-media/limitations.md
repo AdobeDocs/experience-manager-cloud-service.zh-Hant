@@ -7,11 +7,12 @@ products: SG_EXPERIENCEMANAGER/Dynamic-Media-Classic
 geptopics: SG_SCENESEVENONDEMAND_PK/categories/ecatalogs
 feature: Dynamic Media Classic,Asset Management,Image Sets,Spin Sets,eCatalog
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: fb63e2d4-2c8c-48dd-a0dc-fdfbbfb57b30
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 9%
+source-wordcount: '314'
+ht-degree: 10%
 
 ---
 
@@ -31,7 +32,7 @@ ht-degree: 9%
 | 資產 — 限制型別 | 最佳實務 | 強加的限制 |
 | --- | --- | --- |
 | **影像** — 每個影像的智慧型裁切數目 | 5 | 100 |
-| **所有集合** — 每個集合的重複資產數目 | 無重複專案 | 20 |
+| **所有集合** — 每個集合的重複資產數目 | 無重複項目 | 20 |
 | **所有集合** — 每個集合的資產數量上限 | 每組5至10個影像 | 1000 |
 | **迴轉集** — 每個2D集的列/欄數上限 | 每組12至18個影像 | 1000 |
 | **PDF** — 要視為擷取的PDF最大頁數 |  | 100 （適用於所有PDF） |

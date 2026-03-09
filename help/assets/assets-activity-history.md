@@ -4,12 +4,13 @@ description: 本文說明如何在時間軸上顯示資產的活動記錄。
 contentOwner: AG
 feature: Asset Reports, Asset Management
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: 8dd82c31-f88e-4407-9b6d-c87033d7a823
 hide: true
 hidefromtoc: true
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: '241'
 ht-degree: 35%
 
 ---
@@ -29,7 +30,7 @@ ht-degree: 35%
 * 拒絕
 * 移動
 
-將從儲存日誌檔案的CRX位置提取要在時 `/var/audit/com.day.cq.dam/content/dam` 間軸中顯示的活動日誌。此外，當上傳新資產或修改現有資產並透過[Adobe資產連結](https://helpx.adobe.com/tw/enterprise/using/manage-assets-using-adobe-asset-link.html)或[[!DNL Experience Manager] 案頭應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html?lang=zh-Hant)簽入[!DNL Experience Manager]時，會記錄時間軸活動。
+將從儲存日誌檔案的CRX位置提取要在時 `/var/audit/com.day.cq.dam/content/dam` 間軸中顯示的活動日誌。此外，當上傳新資產或修改現有資產並透過[!DNL Experience Manager]Adobe資產連結[或](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html)案頭應用程式[[!DNL Experience Manager] 簽入](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html)時，會記錄時間軸活動。
 
 >[!NOTE]
 >

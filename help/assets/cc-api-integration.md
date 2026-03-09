@@ -4,10 +4,11 @@ description: 使用Creative Cloud整合產生資產的變體
 contentOwner: AG
 feature: Upload, Asset Processing, Publishing, Asset Compute Microservices
 role: User, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '801'
+source-wordcount: '807'
 ht-degree: 5%
 
 ---
@@ -60,7 +61,7 @@ ht-degree: 5%
 1. 按一下「**[!UICONTROL 繼續]**」。
 1. 展開&#x200B;**[!UICONTROL Assets]**&#x200B;並選取&#x200B;**[!UICONTROL Content Automation]**。
 1. 按一下「**[!UICONTROL 建立]**」。
-1. 執行管道以[將變更部署到Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=zh-Hant)。
+1. 執行管道以[將變更部署到Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html)。
 
 如果您需要將Content Automation附加元件新增至Cloud Manager中的現有AEM as a Cloud Service程式：
 
@@ -70,7 +71,7 @@ ht-degree: 5%
 
 1. 展開&#x200B;**[!UICONTROL Assets]**&#x200B;並選取&#x200B;**[!UICONTROL Content Automation]**。
 1. 按一下&#x200B;**[!UICONTROL 更新]**。
-1. 執行管道以[將變更部署到Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=zh-Hant)。
+1. 執行管道以[將變更部署到Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html)。
 
 ## 使用處理設定檔來大量編輯您的創意資產 {#process-assets}
 
@@ -84,7 +85,7 @@ ht-degree: 5%
 
 1. 提供&#x200B;**[!UICONTROL 轉譯名稱]** （或輸出名稱）、**[!UICONTROL 副檔名]** （或檔案型別）、選取&#x200B;**[!UICONTROL 品質]** （或輸出引數）、選取&#x200B;**[!UICONTROL 包含]**&#x200B;和&#x200B;**[!UICONTROL 排除]** MIME型別清單（或輸入資產篩選），並選取必要的創意作業。
 
-   在[!UICONTROL 處理設定檔]![&#128279;](assets/creative-processing-profile.png)中的[!UICONTROL Creative]索引標籤
+   在![[!UICONTROL 處理設定檔]中的[!UICONTROL Creative]](assets/creative-processing-profile.png)索引標籤
 
 1. 某些作業需要額外的引數（資產）。 如有必要，請為這些額外的引數提供值。
 

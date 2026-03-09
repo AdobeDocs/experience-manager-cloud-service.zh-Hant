@@ -3,10 +3,11 @@ title: '[!DNL Experience Manager Assets]與 [!DNL Adobe Workfront]整合'
 description: ' [!DNL Assets] 與 [!DNL Workfront]之間的整合簡介'
 role: Admin, Leader, Developer
 feature: Workfront Integrations and Apps
+badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '396'
 ht-degree: 13%
 
 ---
@@ -15,12 +16,12 @@ ht-degree: 13%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-integrations.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-integrations.html) |
 | AEM as a Cloud Service  | 本文章 |
 
 [!DNL Adobe Workfront]是工作管理應用程式，可協助您在一個地方管理整個工作生命週期。 [!DNL Workfront] 與 [!DNL Adobe Experience Manager Assets] 整合之後，組織便可以透過工作和數位資產管理的內在連結，改善內容速度與上市時間。就在 Workfront 中管理其工作而言，使用者可以存取必要的文件和影像。
 
-Adobe提供給[原生整合 [!DNL Workfront] 和 [!DNL Adobe Experience Manager Assets]  (支援Assets Essentials和Assets as a Cloud Service)](https://experienceleague.adobe.com/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations.html?lang=zh-Hant)。
+Adobe提供給[原生整合 [!DNL Workfront] 和 [!DNL Adobe Experience Manager Assets]  (支援Assets Essentials和Assets as a Cloud Service)](https://experienceleague.adobe.com/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations.html)。
 
 透過原生Experience Manager整合，您可以：
 

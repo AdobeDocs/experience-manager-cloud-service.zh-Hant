@@ -4,17 +4,18 @@ description: 瞭解如何在網頁上內嵌Dynamic Media影片或影像資產。
 contentOwner: Rick Brough
 feature: Asset Management
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: 76335781-e39f-4aae-967f-5af8634d8f61
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '384'
 ht-degree: 21%
 
 ---
 
 # 將Dynamic Media視訊、影像檢視器或維度檢視器內嵌在網頁上 {#embedding-the-video-or-image-viewer-on-a-web-page}
 
-當您想 **&#x200B;**&#x200B;要播放視訊或檢視內嵌在網頁上的資產時，請使用「內嵌代碼」功能。您可將內嵌代碼複製到剪貼簿，以便貼到網頁中。「內嵌代碼」對話方塊中不允許編 **[!UICONTROL 輯代碼]** 。
+當您想 **** 要播放視訊或檢視嵌入在網頁上的資產時，請使用「嵌入代碼」功能。您可將嵌入代碼複製到剪貼簿，以便貼到網頁中。「嵌入代碼」對話方塊中不允許編 **[!UICONTROL 輯代碼]** 。
 
 只有在您&#x200B;_不是_&#x200B;使用Adobe Experience Manager做為WCM時才內嵌URL。 如果您使用Experience Manager做為WCM，[請直接在頁面上新增資產](adding-dynamic-media-assets-to-pages.md)。
 
@@ -36,7 +37,7 @@ ht-degree: 21%
 
 1. 導覽至您要複製其內嵌程式碼的&#x200B;*已發佈*&#x200B;視訊或影像資產。
 
-   請記住，內嵌程式碼僅可在您首次 *發佈**資產後* 複製。此外，檢視器預設集或影像預設集也必須發佈。
+   請記住，嵌入程式碼僅可在您首次 *發佈**資產後* 複製。此外，檢視器預設集或影像預設集也必須發佈。
 
    請參閱[發佈Assets](publishing-dynamicmedia-assets.md)。
 

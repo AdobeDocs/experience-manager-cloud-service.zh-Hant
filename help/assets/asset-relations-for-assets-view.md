@@ -4,10 +4,12 @@ description: 瞭解如何關聯共用某些通用屬性的數位資產。 也使
 role: User
 feature: Collaboration,Asset Management
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 77dab2731f8d442bf999bf1614ef060944794574
+badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
+exl-id: 89149283-bbf2-40d3-9a4c-5b27ff5f944e
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '532'
-ht-degree: 9%
+source-wordcount: '538'
+ht-degree: 10%
 
 ---
 
@@ -34,13 +36,13 @@ ht-degree: 9%
    * 若要關聯衍生檔案，請從清單中選取&#x200B;**[!UICONTROL 新增衍生檔案]**。 您可以在此類別中關聯多個資產。
    * 若要在資產之間建立雙向關係，請從清單中選取&#x200B;**[!UICONTROL 新增其他]**。 您可以在此類別中關聯多個資產。
 
-1. 從&#x200B;**[!UICONTROL 選取Assets]**&#x200B;畫面中，導覽至您要建立關聯的資產位置，然後選取該資產。 您可以在按一下時按住Shift鍵，一次選取單一資產或多個資產，其中可能包括Assets檢視[&#128279;](/help/assets/supported-file-formats-assets-view.md)支援的任何檔案格式。
+1. 從&#x200B;**[!UICONTROL 選取Assets]**&#x200B;畫面中，導覽至您要建立關聯的資產位置，然後選取該資產。 您可以在按一下時按住Shift鍵，一次選取單一資產或多個資產，其中可能包括Assets檢視[支援的任何](/help/assets/supported-file-formats-assets-view.md)檔案格式。
 
    ![新增相關資產](assets/add-related-asset.png)
 
 1. 按一下&#x200B;**[!UICONTROL 選取]**。 根據您在步驟3中選擇的關係，相關資產會列在&#x200B;**[!UICONTROL 資產關係]**&#x200B;區段的適當類別下。 例如，如果您相關的資產是目前資產的來源檔案，則會列在&#x200B;**[!UICONTROL Source]**&#x200B;下。
 
-   ![Assets關係範例](assets/asset-relations-example.png)
+   ![資產關係範例](assets/asset-relations-example.png)
 
 1. 按一下&#x200B;**[!UICONTROL 取消關聯]** ![取消關聯資產](assets/do-not-localize/link-unrelate-icon.png)，可用於每個區段([!UICONTROL Source]、[!UICONTROL Derived]和[!UICONTROL Other])中的所有相關資產，以取消關聯資產。
 
@@ -56,7 +58,7 @@ ht-degree: 9%
 
 * 若要提供文件意見回饋，請使用右側邊欄提供的[!UICONTROL 編輯此頁面]![來編輯頁面](assets/do-not-localize/edit-page.png)或[!UICONTROL 記錄問題]![來建立 GitHub 問題](assets/do-not-localize/github-issue.png)
 
-* 聯絡[客戶服務](https://experienceleague.adobe.com/zh-hant?support-solution=General#support)
+* 聯絡[客戶服務](https://experienceleague.adobe.com/?support-solution=General#support)
 
 >[!MORELIKETHIS]
 >

@@ -1,13 +1,14 @@
 ---
 title: 使用內容建議程式存取Adobe Express中的AEM Assets
 description: 透過內容建議程式，直接在原生AEM Assets整合中探索及存取Adobe Express。
+badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
 feature: Collaboration
 role: User
-source-git-commit: 6d80567106fe7c32d8073ca093f895ff28500413
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '2581'
-ht-degree: 1%
+source-wordcount: '2587'
+ht-degree: 2%
 
 ---
 
@@ -154,7 +155,7 @@ Dynamic Media轉譯提供立即可用且通道最佳化的資產版本，包括[
 
 ![預覽Dynamic Media轉譯](assets/native-express-dynamic-media-preview.png)
 
-按一下&#x200B;**[!UICONTROL 新增修飾元]**，在文字方塊中指定修飾元，然後按下Enter以即時將轉換套用至轉譯。 同樣地，您可以將多個修飾元新增至轉譯並預覽這些轉換。 將資產從預覽拖放至畫布上。 套用這些修飾元後的轉譯不會儲存。 檢視[Dynamic Media Scene7](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference)和[Dynamic Media with OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat)支援的修飾元清單。
+按一下&#x200B;**[!UICONTROL 新增修飾元]**，在文字方塊中指定修飾元，然後按下Enter以即時將轉換套用至轉譯。 同樣地，您可以將多個修飾元新增至轉譯並預覽這些轉換。 將資產從預覽拖放至畫布上。 套用這些修飾元後的轉譯不會儲存。 檢視[Dynamic Media Scene7](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference)和[Dynamic Media with OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat)支援的修飾元清單。
 
 >[!IMPORTANT]
 > 
@@ -210,11 +211,11 @@ Dynamic Media轉譯提供立即可用且通道最佳化的資產版本，包括[
 
 1. 瀏覽或搜尋資產，並將它拖放至畫布上。
 
-1. 選取您要取代的影像。 按一下「取代」**&#x200B;**，然後選取&#x200B;**[!UICONTROL 「AEM Assets」]**。
+1. 選取您要取代的影像。 按一下「取代」****，然後選取&#x200B;**[!UICONTROL 「AEM Assets」]**。
 
    ![AEM取代](assets/aem-replace.png)
 
-1. [內容警告器](#intelligent-asset-discovery-content-advisor)會在左側導覽窗格中開啟。 Adobe Express會顯示您有權存取的存放庫清單，以及在根層級可用的資產和資料夾清單。 從那裡選取要預覽畫布上取代的資產，然後按一下[取代]確認。**&#x200B;**
+1. [內容警告器](#intelligent-asset-discovery-content-advisor)會在左側導覽窗格中開啟。 Adobe Express會顯示您有權存取的存放庫清單，以及在根層級可用的資產和資料夾清單。 從那裡選取要預覽畫布上取代的資產，然後按一下[取代]確認。****
 
    >[!NOTE]
    >
@@ -224,20 +225,20 @@ Dynamic Media轉譯提供立即可用且通道最佳化的資產版本，包括[
 
 在Express畫布中加入適當的修改後，您便可將其儲存在AEM Assets中。
 
-1. 按一下[共用]&#x200B;**&#x200B;**&#x200B;開啟[共用]&#x200B;**&#x200B;**&#x200B;對話方塊。
+1. 按一下[共用]****&#x200B;開啟[共用]****&#x200B;對話方塊。
 
    ![將資產儲存在 AEM 中](assets/adobe-express-share.png)
 
 2. 選取&#x200B;**AEM Assets**。 Adobe Express會顯示上傳對話方塊。
 
 3. 選取&#x200B;**目前頁面**&#x200B;或&#x200B;**所有頁面**。 指定要匯出的資產的名稱和格式。 您可以匯出PNG、JPEG、PDF、MP4、MP4+PNG或MP4+JPEG格式的畫布內容。 格式會根據畫布頁面上的資產自動調整。
-選取&#x200B;**目前頁面**&#x200B;會將目前頁面上的資產儲存到您的目的地資料夾。 如果您選取「**所有頁面**」，且匯出格式不是PDF，則所有畫布頁面都會以個別檔案的形式儲存在目的地資料夾的新資料夾中。 如果匯出格式為PDF，則所有畫布頁面都會儲存為目的地資料夾中的單一PDF檔案。
+選取**目前頁面**&#x200B;會將目前頁面上的資產儲存到您的目的地資料夾。 如果您選取「**所有頁面**」，且匯出格式不是PDF，則所有畫布頁面都會以個別檔案的形式儲存在目的地資料夾的新資料夾中。 如果匯出格式為PDF，則所有畫布頁面都會儲存為目的地資料夾中的單一PDF檔案。
 
 4. 按一下&#x200B;**目的地資料夾**&#x200B;下的資料夾圖示，以選取位置並儲存資產。
 
    ![將資產儲存在 AEM 中](/help/assets/assets/page-selection-and-destination-folder.png)
 
-5. 可選：您可以使用&#x200B;**專案或行銷活動名稱**&#x200B;欄位，新增您上傳的行銷活動中繼資料。 您可以使用現有的名稱或建立新名稱。 您可以為上傳定義多個專案或行銷活動名稱。 若要註冊名稱，只需輸入名稱並按Enter即可。
+5. 可選：您可以使用&#x200B;**專案或行銷活動名稱**欄位，新增您上傳的行銷活動中繼資料。 您可以使用現有的名稱或建立新名稱。 您可以為上傳定義多個專案或行銷活動名稱。 若要註冊名稱，只需輸入名稱並按Enter即可。
 作為最佳作法，Adobe建議在其餘欄位中指定值，並為您上傳的資產建立增強的搜尋體驗。
 
 6. 同樣地，定義&#x200B;**[!UICONTROL 關鍵字]**&#x200B;和&#x200B;**[!UICONTROL 管道]**&#x200B;欄位的值。
@@ -250,7 +251,7 @@ Dynamic Media轉譯提供立即可用且通道最佳化的資產版本，包括[
 
 ## 支援的檔案格式 {#supported-file-formats-import-assets}
 
-Adobe Express原生支援[上可用的格式。檢閱最低影像需求](https://helpx.adobe.com/tw/express/web/image-creation-and-editing/change-file-formats/image-requirements.html)。 不過，AEM Assets支援下列格式型別：
+Adobe Express原生支援[上可用的格式。檢閱最低影像需求](https://helpx.adobe.com/express/web/image-creation-and-editing/change-file-formats/image-requirements.html)。 不過，AEM Assets支援下列格式型別：
 
 | 支援的格式 | 最大尺寸/解析度 | 檔案大小上限 |
 |------------------|---------------------------------------------|---------------|

@@ -4,17 +4,18 @@ description: 瞭解什麼是動態媒體，並且您可以使用Dynamic Media來
 contentOwner: Rick Brough
 feature: Dynamic Media,Asset Management
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: 3ec3cb85-88ce-4277-a45c-30e52c75ed42
-source-git-commit: bc422429d4a57bbbf89b7af2283b537a1f516ab5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '655'
+source-wordcount: '661'
 ht-degree: 5%
 
 ---
 
 # 使用 Dynamic Media {#working-with-dynamic-media}
 
-[Dynamic Media](https://business.adobe.com/tw/products/experience-manager/assets/dynamic-media.html)可協助提供豐富的視覺銷售和行銷資產（隨選即用），並根據網路、行動及社交網站的消費自動調整。 Dynamic Media使用一組主要來源資產，透過其可擴充且效能最佳化的全域網路即時產生並傳送多種多樣的豐富內容。
+[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html)可協助提供豐富的視覺銷售和行銷資產（隨選即用），並根據網路、行動及社交網站的消費自動調整。 Dynamic Media使用一組主要來源資產，透過其可擴充且效能最佳化的全域網路即時產生並傳送多種多樣的豐富內容。
 
 Dynamic Media提供互動式檢視體驗，包括縮放、360度旋轉和視訊。 Dynamic Media以獨特方式整合Adobe Experience Manager數位資產管理(Assets)解決方案的工作流程，以簡化及簡化數位行銷活動管理程式。
 

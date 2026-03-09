@@ -3,13 +3,14 @@ title: 階層式中繼資料
 description: 本文說明如何在資產檢視中定義資產的階層式中繼資料。
 feature: Metadata
 role: Admin, User
-source-git-commit: 2bb309afc372fe18ce274a2813ed25cba22eb4de
+badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
+exl-id: e7c80792-f4db-4604-a51f-b20f066b2c1b
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1214'
+source-wordcount: '1220'
 ht-degree: 5%
 
 ---
-
 
 # 階層式中繼資料Assets檢視{#cascading-metadata-assets-view}
 
@@ -150,11 +151,10 @@ ht-degree: 5%
 
 ## 後續步驟 {#next-steps}
 
-* [觀看在Assets檢視中管理中繼資料表單的相關影片](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html?lang=zh-Hant)
+* [觀看在Assets檢視中管理中繼資料表單的相關影片](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html)
 
 * 使用資產檢視使用者介面所提供的[!UICONTROL 意見回饋]選項提供產品意見回饋
 
 * 若要提供文件意見回饋，請使用右側邊欄提供的[!UICONTROL 編輯此頁面]![來編輯頁面](assets/do-not-localize/edit-page.png)或[!UICONTROL 記錄問題]![來建立 GitHub 問題](assets/do-not-localize/github-issue.png)
 
-* 聯絡[客戶服務](https://experienceleague.adobe.com/zh-hant?support-solution=General#support)
-
+* 聯絡[客戶服務](https://experienceleague.adobe.com/?support-solution=General#support)

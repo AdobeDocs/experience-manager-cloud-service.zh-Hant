@@ -1,13 +1,14 @@
 ---
 title: 內容片段 — 設定瀏覽器(Assets — 內容片段)
 description: 瞭解如何在設定瀏覽器中啟用內容片段功能。
+badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
 feature: Content Fragments
 role: User, Admin, Developer
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '355'
+source-wordcount: '361'
 ht-degree: 17%
 
 ---
@@ -79,6 +80,6 @@ ht-degree: 17%
 
 當設定&#x200B;**global**&#x200B;啟用內容片段功能時，則套用至任何Assets資料夾。
 
-若要搭配可比的Assets資料夾使用其他設定（即不包括全域），您必須定義連線。 這個連線是透過在適當資料夾的&#x200B;**資料夾屬性**&#x200B;的&#x200B;**Cloud Service**&#x200B;索引標籤中選取適當的&#x200B;**組態**&#x200B;完成的。
+若要搭配可比的Assets資料夾使用其他設定（即不包括全域），您必須定義連線。 這個連線是透過在適當資料夾的&#x200B;**資料夾屬性**&#x200B;的&#x200B;**雲端服務**&#x200B;索引標籤中選取適當的&#x200B;**組態**&#x200B;完成的。
 
 ![套用組態](assets/cfm-conf-02.png)

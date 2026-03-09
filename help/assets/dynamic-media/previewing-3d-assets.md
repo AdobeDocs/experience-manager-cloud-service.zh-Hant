@@ -4,11 +4,12 @@ description: 瞭解如何在Experience Manager中預覽3D資產。
 contentOwner: Rick Brough
 feature: 3D Assets
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: e873bd25-f841-4063-824f-7e48f40bb678
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '621'
-ht-degree: 5%
+source-wordcount: '627'
+ht-degree: 6%
 
 ---
 
@@ -85,7 +86,7 @@ Experience Manager原生支援下列檔案格式的Interactive 3D預覽：
    _資產詳細資料檢視頁面中的3D資產互動式預覽。_
 1. 在3D資產的資產詳細資料檢視頁面上，執行下列任一項作業：
 
-   | 檢視 | 描述 | 滑鼠動作 | 觸控熒幕動作 |
+   | 檢視 | 說明 | 滑鼠動作 | 觸控熒幕動作 |
    | --- | --- | --- | --- |
    | **轉動相機** | 使檢視畫面在 3D 場景和物件周圍環繞 | 按一下左鍵+拖曳。 | 單指按下+拖曳。 |
    | **平移相機** | 向左、向右、向上或向下平移檢視。 | 按一下右鍵+拖曳。 | 雙指按下+拖曳。 |

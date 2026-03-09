@@ -4,11 +4,12 @@ description: 瞭解如何發佈Dynamic Media影片和影像資產，以便透過
 contentOwner: Rick Brough
 feature: Asset Management
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: 8ee759dc-cb8f-4e80-8175-2c3ba06da862
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 4%
+source-wordcount: '496'
+ht-degree: 5%
 
 ---
 
@@ -18,7 +19,7 @@ ht-degree: 4%
 
 您也可立即發佈您上傳的資產，無需任何使用者介入。 或者，您可以選擇發佈這些資產。 請參閱[設定Dynamic Media](config-dm.md)。 或者，您可以在資料夾層級使用&#x200B;**[!UICONTROL 選擇性發佈]**，選擇性地將資產發佈至Dynamic Media或Adobe Experience Manager （互斥）。 請參閱[在Dynamic Media中使用選擇性發佈](/help/assets/dynamic-media/selective-publishing.md)。
 
-在&#x200B;**[!UICONTROL 卡片檢視]**&#x200B;中，資產名稱正下方以及日期和時間左側會顯示一個小型全球圖示，以指出資產已發佈。 在「清 **[!UICONTROL 單檢視]**」中，「已發佈」 **&#x200B;**&#x200B;欄會指出已發佈或未發佈的資產。
+在&#x200B;**[!UICONTROL 卡片檢視]**&#x200B;中，資產名稱正下方以及日期和時間左側會顯示一個小型全球圖示，以指出資產已發佈。 在「清 **[!UICONTROL 單檢視]**」中，「已發佈」 **** 欄會指出已發佈或未發佈的資產。
 
 >[!NOTE]
 >

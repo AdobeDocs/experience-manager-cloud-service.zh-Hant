@@ -2,10 +2,11 @@
 title: 自訂搜尋篩選器
 description: 瞭解如何自訂搜尋篩選器表單
 role: User, Leader, Developer
+badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: 383e8165-439e-447b-a19d-d5446238a13f
-source-git-commit: 836805b4eac5ab940dff5c66ec0dcf1ca8652837
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1425'
+source-wordcount: '1431'
 ht-degree: 12%
 
 ---

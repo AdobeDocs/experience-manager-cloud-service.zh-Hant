@@ -8,10 +8,11 @@ contentOwner: Vishabh Gupta
 topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1668'
+source-wordcount: '1674'
 ht-degree: 2%
 
 ---
@@ -23,7 +24,7 @@ ht-degree: 2%
 
 轉錄是口語內容的文字版本；例如，您在任何OTT平台上觀看的電影通常都包含字幕，以協助協助協助協助存取或使用其他語言的內容。 或任何用於行銷、學習或娛樂目的的音訊或視訊檔案。 這些體驗從轉錄開始，然後視需要將其格式化或翻譯。 當手動執行時，轉錄音訊或視訊是一項耗時且容易出錯的程式。 鑑於對音訊/視訊內容的需求不斷增加，擴展手動程式也是一個挑戰。 [!DNL Experience Manager Assets]使用Azure的AI型轉錄，允許音訊和視訊資產進行大規模處理，並產生文字轉錄（.vtt檔案）以及時間戳記詳細資料。 除了Assets，Dynamic Media也支援轉錄功能。
 
-在[!DNL Experience Manager Assets]中可以免費使用轉譯功能。 但是，系統管理員需要使用者的Azure認證，才能在[!DNL Experience Manager Assets]中設定轉寫服務。 您也可以[直接從Microsoft®取得試用認證](https://azure.microsoft.com/en-us/pricing/details/media-services/)，體驗Assets的音訊或視訊轉寫功能。
+在[!DNL Experience Manager Assets]中可以免費使用轉譯功能。 但是，管理員需要使用者的Azure認證，才能在[!DNL Experience Manager Assets]中設定轉寫服務。 您也可以[直接從Microsoft®取得試用認證](https://azure.microsoft.com/en-us/pricing/details/media-services/)，體驗Assets的音訊或視訊轉寫功能。
 
 ## 轉錄先決條件 {#prerequisites}
 
@@ -37,9 +38,9 @@ ht-degree: 2%
    * 資源群組
    * 訂閱 ID
 
-   請參閱[Azure檔案](https://docs.microsoft.com/en-us/azure/media-services/latest/access-api-howto?tabs=portal)，以取得存取Azure Media Services API的認證。
+   請參閱[Azure檔案](https://docs.microsoft.com/en-us/azure/media-services/latest/access-api-howto?tabs=portal)以取得存取Azure Media Services API的認證。
 
-1. 請確定Azure帳戶有足夠的信用額度來處理新請求。
+1. 確保Azure帳戶有足夠的信用額度來處理新請求。
 
 ## 在[!DNL Experience Manager Assets]中設定轉錄 {#configure-transcription}
 
@@ -51,17 +52,17 @@ ht-degree: 2%
 
 ### 設定Azure媒體服務 {#configure-azure-media-services}
 
-[!DNL Experience Manager Assets]使用[!DNL Azure Media Services]，自動產生WebVTT (.vtt)格式之[支援音訊或視訊檔](#supported-file-formats-for-transcription)的口語文字轉錄。 管理員可以使用Azure認證設定[!DNL Experience Manager Assets]中的[!DNL Azure Media Services]。 [轉譯先決條件](#transcription-prerequisites)列出組態所需的[!DNL Azure]認證。 如果您沒有[!DNL Azure]帳戶和認證，請參閱[Azure Media Services檔案](https://azure.microsoft.com/en-us/pricing/details/media-services/)以取得試用認證。
+[!DNL Experience Manager Assets]使用[!DNL Azure Media Services]，自動產生WebVTT (.vtt)格式之[支援音訊或視訊檔](#supported-file-formats-for-transcription)的口語文字轉錄。 管理員可以使用Azure認證在[!DNL Azure Media Services]中設定[!DNL Experience Manager Assets]。 [轉譯先決條件](#transcription-prerequisites)列出組態所需的[!DNL Azure]認證。 如果您沒有[!DNL Azure]帳戶和認證，請參閱[Azure Media Services檔案](https://azure.microsoft.com/en-us/pricing/details/media-services/)以取得試用認證。
 
 ![configure-transcription-service](assets/configure-transcription-service.png)
 
-移至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 雲端服務]** > **[!UICONTROL Azure媒體服務設定]**。 從左側邊欄選取資料夾（位置），然後按一下「[!UICONTROL 建立]」按鈕，以設定與您的[!DNL Azure]帳戶的連線。 此資料夾是您的[!DNL Azure]雲端設定儲存在Experience Manager Assets中的位置。 輸入[!DNL Azure]認證，然後按一下&#x200B;**[!UICONTROL 儲存並關閉]**。
+移至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 雲端服務]** > **[!UICONTROL Azure Media Services設定]**。 從左側邊欄選取資料夾（位置），然後按一下「[!UICONTROL 建立]」按鈕，以設定與您的[!DNL Azure]帳戶的連線。 此資料夾是您的[!DNL Azure]雲端設定儲存在Experience Manager Assets中的位置。 輸入[!DNL Azure]認證，然後按一下&#x200B;**[!UICONTROL 儲存並關閉]**。
 
 ### 設定轉譯的處理設定檔 {#configure-processing-profile}
 
 在Experience Manager Assets中設定[!DNL Azure Media Services]後，下一步就是建立資產處理設定檔，用於產生音訊和視訊資產的AI型轉錄。 AI型處理設定檔會產生[支援的音訊或視訊資產](#supported-file-formats-for-transcription)的轉譯成Experience Manager Assets中的轉譯，並將轉譯檔案（.vtt檔案）儲存在原始資產所在的相同資料夾中。 因此，使用者更容易搜尋及找到資產及其轉譯檔案。
 
-移至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 處理設定檔]**，然後按一下&#x200B;**[!UICONTROL 建立]**&#x200B;按鈕，建立以AI為基礎的處理設定檔，以產生音訊和視訊檔案的轉錄。 依預設，處理設定檔頁面只會反映三個索引標籤（影像、視訊和自訂）。 不過，如果您已在[!DNL Experience Manager Assets]執行個體中設定[!DNL Azure Media Services]，則會顯示&#x200B;**[!UICONTROL Content AI]**&#x200B;索引標籤。 如果您在建立處理設定檔時沒有看到&#x200B;**[!UICONTROL Content AI]**&#x200B;標籤，請驗證您的[!DNL Azure]認證。
+移至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 處理設定檔]**，然後按一下&#x200B;**[!UICONTROL 建立]**&#x200B;按鈕，建立以AI為基礎的處理設定檔，以產生音訊和視訊檔案的轉錄。 依預設，處理設定檔頁面只會反映三個索引標籤（影像、視訊和自訂）。 不過，如果您已在&#x200B;**[!UICONTROL 執行個體中設定]**，則會顯示[!DNL Azure Media Services]Content AI[!DNL Experience Manager Assets]索引標籤。 如果您在建立處理設定檔時沒有看到[!DNL Azure]Content AI **[!UICONTROL 標籤，請驗證您的]**&#x200B;認證。
 
 在&#x200B;**[!UICONTROL Content AI]**&#x200B;標籤中，按一下&#x200B;**[!UICONTROL 新增]**&#x200B;按鈕以設定轉錄。 在這裡，您可以從下拉式清單中選取檔案型別，來包含和排除用於產生轉譯的檔案格式（MIME型別）。 在下圖中，包含所有支援的音訊和視訊檔案，並排除文字檔案。
 
@@ -84,7 +85,7 @@ ht-degree: 2%
 將處理設定檔設定為音訊和視訊檔案的轉譯後，您可以使用以下方法之一將此處理設定檔套用至資料夾：
 
 * 在&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 處理設定檔]**&#x200B;中選取處理設定檔定義，並使用&#x200B;**[!UICONTROL 將設定檔套用至資料夾]**&#x200B;動作。 內容瀏覽器可讓您導覽至特定資料夾、選取資料夾並確認設定檔的應用程式。
-* 在Assets使用者介面中選取資料夾，然後按一下&#x200B;**[!UICONTROL 屬性]**&#x200B;動作以開啟資料夾屬性。 按一下&#x200B;**[!UICONTROL 資產處理]**&#x200B;標籤，然後從&#x200B;**[!UICONTROL 處理設定檔]**&#x200B;清單中為資料夾選取適當的處理設定檔。 若要儲存變更，請按一下[儲存並關閉]。**&#x200B;**
+* 在Assets使用者介面中選取資料夾，然後按一下&#x200B;**[!UICONTROL 屬性]**&#x200B;動作以開啟資料夾屬性。 按一下&#x200B;**[!UICONTROL 資產處理]**&#x200B;標籤，然後從&#x200B;**[!UICONTROL 處理設定檔]**&#x200B;清單中為資料夾選取適當的處理設定檔。 若要儲存變更，請按一下[儲存並關閉]。****
 
   ![configure-transcription-service](assets/video-processing-profile3.png)
 
@@ -124,7 +125,7 @@ ht-degree: 2%
 
 另請參閱：
 
-* [有關如何將CC隱藏式字幕新增至Dynamic Media視訊的教學影片](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=zh-Hant#add-cc-closed-captioning-to-dynamic-media-video)
+* [有關如何將CC隱藏式字幕新增至Dynamic Media視訊的教學影片](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html#add-cc-closed-captioning-to-dynamic-media-video)
 * [將Dynamic Media影片發佈至YouTube](/help/assets/dynamic-media/video.md#publishing-videos-to-youtube)
 
 在下圖中，URL會反映參照文字稿（.vtt檔案）的註解部分。 視訊會在視訊中的指定時間戳記，將口語（轉錄文字）反映為&#x200B;**[!UICONTROL 隱藏式字幕]**。 使用者可以使用&#x200B;**[!UICONTROL CC]**&#x200B;按鈕來啟用或停用註解。

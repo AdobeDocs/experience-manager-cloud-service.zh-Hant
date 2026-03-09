@@ -1,14 +1,15 @@
 ---
 title: 內容片段 — 刪除考量事項(Assets — 內容片段)
 description: 在AEM中定義內容片段刪除原則之前，請檢閱這些重要考量。 內容片段是傳送Headless內容的強大工具，必須仔細考慮刪除這些片段的影響。
+badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: 69c08f2f-4d51-4aea-957e-ee81c4604377
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '470'
-ht-degree: 8%
+source-wordcount: '476'
+ht-degree: 9%
 
 ---
 
@@ -44,7 +45,7 @@ ht-degree: 8%
 
 ## 僅編輯器功能所需的許可權 {#permissions-required-for-editor-functionality-only}
 
-對於需要編輯/更新內容片段而不允許他們刪除整個片段的使用者 **&#x200B;**，必須指派特定權限，因為內容片段編輯器的基本操作要求可以刪除暫時的子元素。
+對於需要編輯/更新內容片段而不允許他們刪除整個片段的使用者 ****，必須指派特定權限，因為內容片段編輯器的基本操作要求可以刪除暫時的子元素。
 
 例如，操控變數時；編輯中繼資料或管理關聯內容時，也可以。
 

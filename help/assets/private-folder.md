@@ -4,10 +4,11 @@ description: 瞭解如何在 [!DNL Adobe Experience Manager Assets] 中建立私
 contentOwner: Vishabh Gupta
 role: User
 feature: Collaboration
+badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: d48f6daf-af81-4024-bff2-e8bf6d683b0c
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '627'
 ht-degree: 8%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 8%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/private-folder.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/private-folder.html?lang=en) |
 | AEM as a Cloud Service  | 本文章 |
 
 您可以在[!DNL Adobe Experience Manager Assets]使用者介面中建立您專屬的私人資料夾。 您可以與其他使用者共用此私人資料夾，並為他們指派各種許可權。 根據您指派的許可權層級，使用者可以在資料夾上執行各種工作，例如，檢視資料夾內的資產或編輯資產。
@@ -43,7 +44,7 @@ ht-degree: 8%
 
    已建立私人資料夾。 您現在可以[將資產](add-assets.md#upload-assets)新增至資料夾，並與其他使用者或群組共用資料夾。 除非您共用資料夾並為其指派許可權，否則其他使用者看不到該資料夾。
 
-1. 若要共用資料夾，請選取資料夾，然後按一下工具列中的[內容]。**&#x200B;**
+1. 若要共用資料夾，請選取資料夾，然後按一下工具列中的[內容]。****
 
 1. 在&#x200B;**[!UICONTROL 資料夾屬性]**&#x200B;頁面中，從&#x200B;**[!UICONTROL 新增使用者]**&#x200B;清單中選取使用者或群組，在您的私人資料夾中指派角色（`Viewer`、`Editor`或`Owner`），然後按一下&#x200B;**[!UICONTROL 新增]**。
 
@@ -79,7 +80,7 @@ ht-degree: 8%
 >
 >如果您從使用者介面中使用上述方法刪除資料夾，則關聯的使用者群組也會一併刪除。
 >
->不過，現有的備援、未使用和自動產生的使用者群組，可以在編寫執行個體(`http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`)中使用JMX中的`clean`方法從存放庫中移除。
+>不過，現有的備援、未使用和自動產生的使用者群組，可以在編寫執行個體(`clean`)中使用JMX中的`http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`方法從存放庫中移除。
 
 **另請參閱**
 

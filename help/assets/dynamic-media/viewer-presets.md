@@ -4,11 +4,12 @@ description: 瞭解如何在Dynamic Media中套用檢視器預設集。
 contentOwner: Rick Brough
 feature: Viewer Presets,Viewers
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: bec6fff8-fd79-4537-b915-e68da98e117a
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '219'
-ht-degree: 16%
+source-wordcount: '225'
+ht-degree: 17%
 
 ---
 
@@ -30,7 +31,7 @@ ht-degree: 16%
 
    ![chlimage_1-104](assets/chlimage_1-104.png)
 
-   * URL **[!UICONTROL 和]**&#x200B;**[!UICONTROL Embed]** 按鈕會在您選取檢視器預設集後顯示。
+   * URL **[!UICONTROL 和]****[!UICONTROL Embed]** 按鈕會在您選取檢視器預設集後顯示。
    * 當您在資產的「詳細資料檢視」中選取「檢視器」時，系統會顯示許多檢 **[!UICONTROL 視器預設集]**。您可以增加所檢視的預設集數目。請參閱[增加顯示的檢視器預設集數目](managing-viewer-presets.md)。
 
 1. 從左窗格選取檢視器，以便將其套用至在右窗格中看到的資產。 您也可以[複製URL以與其他使用者共用](linking-urls-to-yourwebapplication.md)。

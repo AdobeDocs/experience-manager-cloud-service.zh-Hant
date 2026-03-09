@@ -4,10 +4,11 @@ description: 有關 [!DNL Adobe Experience Manager Assets] 中您資產的報告
 contentOwner: AG
 feature: Asset Reports, Asset Management
 role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '973'
+source-wordcount: '978'
 ht-degree: 9%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 9%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html?lang=en) |
 | AEM as a Cloud Service  | 本文章 |
 
 資產報告可讓您評估[!DNL Adobe Experience Manager Assets]部署的公用程式。 透過[!DNL Assets]，您可以為您的數位資產產生各種報告。 這些報表提供關於您系統使用情況、使用者如何與資產互動，以及哪些資產是<!-- downloaded and -->共用的有用資訊。
@@ -66,7 +67,7 @@ ht-degree: 9%
 
    >[!NOTE]
    >
-   >使用&#x200B;**AEM管理員產品設定檔**&#x200B;來建立&#x200B;**下載**&#x200B;報告。 請參閱[指派AEM產品設定檔](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem)，賦予您使用AEM管理員產品設定檔的許可權。
+   >使用&#x200B;**AEM管理員產品設定檔**&#x200B;來建立&#x200B;**下載**&#x200B;報告。 請參閱[指派AEM產品設定檔](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem)，賦予您使用AEM管理員產品設定檔的許可權。
 
    ![選取報表型別](assets/choose_report.png)
 
@@ -114,7 +115,7 @@ ht-degree: 9%
    <!--![A generated report](assets/report_page.png)-->
    ![產生的報告狀態](assets/report-status.JPG)
 
-   按一下工具列中的「下載&#x200B;**&#x200B;**」，以CSV格式下載報表。
+   按一下工具列中的「下載&#x200B;****」，以CSV格式下載報表。
 
    >[!NOTE]
    >
@@ -156,9 +157,9 @@ ht-degree: 9%
 
 1. 使用屬性路徑選擇器，在CRXDE中的`jcr:content`節點下新增屬性路徑。 或者，在屬性路徑欄位中輸入路徑。
 
-   ![從jcr：content](assets/property_picker.png)中的路徑對應屬性路徑
+   ![從jcr:content](assets/property_picker.png)中的路徑對應屬性路徑
 
-   若要新增更多自訂欄，請按一下[新增] **&#x200B;**&#x200B;並重複上述步驟。
+   若要新增更多自訂欄，請按一下[新增] ****&#x200B;並重複上述步驟。
 
 1. 從工具列按一下&#x200B;**[!UICONTROL 「建立]**」。 訊息會通知您報表產生作業已啟動。
 

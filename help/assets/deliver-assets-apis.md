@@ -2,11 +2,12 @@
 title: 傳遞 API
 description: 瞭解如何使用傳送API。
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
-source-git-commit: 9f7164e99abb6fce3b1bbc6401234996bcd43889
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 5%
+source-wordcount: '642'
+ht-degree: 14%
 
 ---
 
@@ -34,16 +35,16 @@ Experience Manager資產存放庫中所有可用的[已核准資產](approve-ass
 
 >[!IMPORTANT]
 >
->您可以測試任何修飾元，但這通常無法透過實驗API取得。 例如 `</adobe/experimental/advancemodifiers-expires-YYYYMMDD/assets>`
->&#x200B;>按一下這裡以進一步瞭解如何使用[實驗API](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/#experimental-apis)和[修飾元完整清單](https://developer.adobe.com/experience-cloud/experience-manager-apis/)。
+>您可以測試任何修飾元，修飾元通常無法透過實驗性 API 取得。例如 `</adobe/experimental/advancemodifiers-expires-YYYYMMDD/assets>`
+>按一下這裡以進一步瞭解如何使用[實驗API](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/#experimental-apis)和[修飾元完整清單](https://developer.adobe.com/experience-cloud/experience-manager-apis/)。
 
 具備OpenAPI功能的Dynamic Media也支援長格式視訊。 影片可支援高達 50 GB 和 2 小時。
 
-如需有關可用的Dynamic Media產品專案及其功能的資訊，請參閱[Dynamic Media Prime和Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md)。
+若要了解有關可用的 Dynamic Media 產品資訊及其功能，請參閱 [Dynamic Media Prime 與 Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md)。
 
 >[!NOTE]
 >
->DM Prime客戶可以使用基本影像修飾元，包括旋轉、裁切、翻轉、高度、寬度和品質。 智慧型影像不支援DM Prime客戶的AVIF。
+>DM Prime 客戶可以使用基本影像修飾工具，包括旋轉、裁切、翻轉、高度、寬度及品質。DM Prime 客戶的智慧型影像不支援 AVIF。
 
 ## 傳送API端點 {#delivery-apis-endpoint}
 
@@ -73,7 +74,7 @@ headers: {
     }
 ```
 
-若要叫用傳遞API，`Authorization`詳細資料中需要IMS權杖才能傳遞受限制的資產。 IMS權杖是從技術帳戶中擷取。 請參閱[擷取AEM as a Cloud Service認證](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis)以建立新的技術帳戶。 請參閱[產生存取權杖](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis)以產生IMS權杖，並在傳遞API要求標頭中正確使用它。
+若要叫用傳遞API，`Authorization`詳細資料中需要IMS權杖才能傳遞受限制的資產。 IMS權杖是從技術帳戶中擷取。 請參閱[擷取AEM as a Cloud Service認證](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis)以建立新的技術帳戶。 請參閱[產生存取權杖](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis)以產生IMS權杖，並在傳遞API要求標頭中正確使用它。
 
 
 若要檢視要求範例、回應範例和回應代碼，請參閱[傳送API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat)。

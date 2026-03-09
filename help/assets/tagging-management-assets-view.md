@@ -1,12 +1,13 @@
 ---
 title: 如何在資產視圖中管理標記？
 description: 了解如何在資產視圖中管理標記。標記可協助您將資產分類，以便更有效地瀏覽和搜尋。
+badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: 7c5e1212-054f-46ca-9982-30e40b0482e1
 feature: Smart Tags
 role: User, Admin, Developer
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1739'
+source-wordcount: '1745'
 ht-degree: 98%
 
 ---
@@ -130,7 +131,7 @@ ht-degree: 98%
 
 ## 將標記元件新增到中繼資料表單 {#add-tags-to-metadata-form}
 
-標記元件自動被新增到`default`中繼資料表單。您可以透過使用範本或從零開始，設計一個 [中繼資料表單](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/metadata.html?lang=zh-Hant#metadata-forms)。如果您沒有使用現有的中繼資料表單範本，則可以修改中繼資料表單並新增標記元件。中繼資料屬性對應是自動填入的，此時無法修改。[!DNL Assets as a Cloud Service]使用者可以更新對應，以使用自訂命名空間儲存標記值，並使用根路徑僅公開階層的子集。
+標記元件自動被新增到`default`中繼資料表單。您可以透過使用範本或從零開始，設計一個 [中繼資料表單](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/metadata.html?lang=en#metadata-forms)。如果您沒有使用現有的中繼資料表單範本，則可以修改中繼資料表單並新增標記元件。中繼資料屬性對應是自動填入的，此時無法修改。[!DNL Assets as a Cloud Service]使用者可以更新對應，以使用自訂命名空間儲存標記值，並使用根路徑僅公開階層的子集。
 
 觀看此簡短影片，了解如何將標記元件新增到中繼資料表單中：
 

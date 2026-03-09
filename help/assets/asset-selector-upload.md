@@ -2,10 +2,11 @@
 title: 在「資產選擇器」中上傳資產
 description: 使用上傳功能在資產選擇器MFE中上傳資產
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: d6ff601c-3111-421a-9a94-cc524ce7e432
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '516'
 ht-degree: 2%
 
 ---
@@ -34,7 +35,7 @@ ht-degree: 2%
 
 您可以將中繼資料新增到資產，同時立即將資產上傳到您的應用程式。 中繼資料包含各種欄位，例如業務主旨列、產品詳細資訊、行銷活動等。 要執行此操作，請使用`metadataSchema`屬性。 移至[資產選擇器屬性](/help/assets/asset-selector-properties.md)以進一步瞭解`metadataSchema`屬性。
 
-請參閱使用中繼資料[&#128279;](/help/assets/asset-selector-customization.md#upload-with-metadata)上傳以取得組態所需的程式碼片段。
+請參閱使用中繼資料[上傳](/help/assets/asset-selector-customization.md#upload-with-metadata)以取得組態所需的程式碼片段。
 
 ![上傳包含中繼資料的資產](assets/upload-with-metadata.png)
 

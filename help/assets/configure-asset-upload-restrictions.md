@@ -1,13 +1,14 @@
 ---
 title: 設定資產上傳限制
 description: 設定Adobe Experience Manager Assets以根據MIME型別限制使用者可以上傳的資產型別。 它有助於防止意外上傳不需要的格式和惡意檔案。
+badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: 094c31f3-f2e9-4b44-9995-c76fb78ca458
 feature: Upload, Asset Ingestion
 role: User, Admin, Developer
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 12%
+source-wordcount: '378'
+ht-degree: 13%
 
 ---
 
@@ -33,9 +34,9 @@ ht-degree: 12%
 
 1. 按一下&#x200B;**[!UICONTROL 新增]**&#x200B;以定義允許的MIME型別。
 
-1. 在文字方塊中指定MIME型別。 您可以再按一下[新增&#x200B;**&#x200B;**]來指定更多允許的MIME型別。 您也可以按一下![刪除圖示](assets/delete-icon.svg)，從清單中刪除任何MIME型別。
+1. 在文字方塊中指定MIME型別。 您可以再按一下[新增&#x200B;****]來指定更多允許的MIME型別。 您也可以按一下![刪除圖示](assets/delete-icon.svg)，從清單中刪除任何MIME型別。
 
-1. 按一下「**[!UICONTROL 儲存]**」。
+1. 按一下&#x200B;**[!UICONTROL 儲存]**。
 
 **範例1：允許將所有影像和PDF檔案上傳至Experience Manager Assets**
 

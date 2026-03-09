@@ -1,12 +1,13 @@
 ---
 title: 管理通知
 description: 使用Assets檢視通知，監視對存放庫中可用的資產或資料夾執行的操作。
+badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: 1fe6a845-37d5-43c2-bb96-c5b149c238ab
 feature: Assets Essentials
 role: User, Leader
-source-git-commit: 4d31745d4ada9e68ffefbba3dc91995037f205b9
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: '780'
 ht-degree: 46%
 
 ---

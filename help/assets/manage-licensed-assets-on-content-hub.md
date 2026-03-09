@@ -1,10 +1,11 @@
 ---
 title: 管理 Content Hub 上的已授權資產
 description: 瞭解如何將授權欄位新增至資產中繼資料表單、將授權中繼資料屬性套用至資產資料夾，以及核准具有授權的資產以供使用。
+badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: ac3aad9f-c7b3-47a7-9314-a2f8277f0d3e
-source-git-commit: bfa7ceeb839574ff1b80ffc25b6519a629247385
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '610'
+source-wordcount: '616'
 ht-degree: 3%
 
 ---

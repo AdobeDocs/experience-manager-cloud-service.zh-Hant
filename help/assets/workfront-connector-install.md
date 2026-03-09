@@ -3,11 +3,12 @@ title: 安裝 [!DNL Workfront for Experience Manager enhanced connector]
 description: 安裝 [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Workfront Integrations and Apps
+badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '764'
-ht-degree: 1%
+source-wordcount: '770'
+ht-degree: 2%
 
 ---
 
@@ -15,10 +16,10 @@ ht-degree: 1%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-install.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-install.html) |
 | AEM as a Cloud Service  | 本文章 |
 
-在[!DNL Adobe Experience Manager]中具有[!DNL Cloud Service]系統管理員存取許可權的使用者會安裝增強型聯結器。 安裝之前，請先檢閱平台支援和聯結器[&#128279;](https://one.workfront.com/s/csh?context=2467&pubname=the-new-workfront-experience)的其他必要條件。
+在[!DNL Adobe Experience Manager]中具有[!DNL Cloud Service]系統管理員存取許可權的使用者會安裝增強型聯結器。 安裝之前，請先檢閱平台支援和聯結器[的其他](https://one.workfront.com/s/csh?context=2467&pubname=the-new-workfront-experience)必要條件。
 
 >[!IMPORTANT]
 >
@@ -26,7 +27,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->* Adobe僅需要透過認證合作夥伴或[!DNL Adobe Professional Services]來部署及設定[!DNL Adobe Workfront for Experience Manager enhanced connector]。 如果未透過認證合作夥伴或[!DNL Adobe Professional Services]進行部署與設定，則Adobe不支援此功能。
+>* Adobe僅需要透過認證合作夥伴或[!DNL Adobe Workfront for Experience Manager enhanced connector]來部署及設定[!DNL Adobe Professional Services]。 如果未透過認證合作夥伴或[!DNL Adobe Professional Services]進行部署與設定，則Adobe不支援此功能。
 >
 >* Adobe可能會發行[!DNL Adobe Workfront]和[!DNL Adobe Experience Manager]的更新，使此聯結器成為多餘的；如果發生這種情況，客戶可能需要從使用此聯結器進行轉換。
 >
@@ -38,9 +39,9 @@ ht-degree: 1%
 
 1. 如果您的AEM as a Cloud Service程式已設定進階網路並啟用IP允許清單，則您需要將Workfront IP新增至此允許清單，以允許事件訂閱和各種API呼叫傳遞到AEM。
 
-   * [Workfront叢集IP](https://experienceleague.adobe.com/docs/workfront/using/administration-and-setup/get-started-administration/configure-your-firewall.html?lang=zh-Hant#ip-addresses-to-allow-for-clusters-1-2-3-5-7-8-and-9)。 若要瞭解[!DNL Workfront]中的IP叢集，請瀏覽至&#x200B;**[!UICONTROL 設定]** > **[!UICONTROL 系統]** > **[!UICONTROL 客戶資訊]**。
+   * [Workfront叢集IP](https://experienceleague.adobe.com/docs/workfront/using/administration-and-setup/get-started-administration/configure-your-firewall.html?lang=en#ip-addresses-to-allow-for-clusters-1-2-3-5-7-8-and-9)。 若要瞭解[!DNL Workfront]中的IP叢集，請瀏覽至&#x200B;**[!UICONTROL 設定]** > **[!UICONTROL 系統]** > **[!UICONTROL 客戶資訊]**。
 
-   * [Workfront事件訂閱API IP](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api.html?lang=zh-Hant)
+   * [Workfront事件訂閱API IP](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api.html)
 
    >[!IMPORTANT]
    >
@@ -52,7 +53,7 @@ ht-degree: 1%
    >
    >    ```
    >    dscacheutil -q host -a name p{PROGRAM_ID}.external.adobeaemcloud.com
-   >    
+   >
    >    ```
 
 1. 確定[!DNL Experience Manager]存放庫中不存在下列覆蓋圖。 如果您在這些路徑上預先存在覆蓋圖，則需要移除覆蓋圖，或合併兩者之間的變更差異：
@@ -66,14 +67,14 @@ ht-degree: 1%
 
 1. 此安裝需要在[!DNL Experience Manager]中將Maven專案設定為[!DNL Cloud Service]的知識。 使用下列資源瞭解如何在您的Maven專案中包含協力廠商套件：
 
-   * [在您的Maven專案中包含協力廠商套件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=zh-Hant#including-third-party)。
-   * [使用 [!DNL Cloud Manager]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=zh-Hant)部署。
+   * [在您的Maven專案中包含協力廠商套件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#including-third-party)。
+   * [使用 [!DNL Cloud Manager]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html)部署。
 
 若要在[!DNL Experience Manager]中以[!DNL Cloud Service]的形式安裝附加元件，請遵循下列步驟：
 
 1. 從[Adobe軟體發佈](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/workfront-tools.ui.apps.zip)下載增強型聯結器。
 
-1. [存取](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/accessing-repos.html?lang=zh-Hant)並從Cloud Manager複製您的AEM as a Cloud Service存放庫。
+1. [存取](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/accessing-repos.html?lang=en)並從Cloud Manager複製您的AEM as a Cloud Service存放庫。
 
 1. 使用您選擇的IDE開啟複製的AEM as a Cloud Service存放庫。
 
@@ -120,7 +121,7 @@ ht-degree: 1%
       ```
 
 
-1. 新增`pom.xml`個內嵌。 將[!DNL Workfront for Experience Manager enhanced connector]套件新增至您所有子專案之`pom.xml`的`embeddeds`區段。 需要將它內嵌在所有模組`pom.xml`中。
+1. 新增`pom.xml`個內嵌。 將[!DNL Workfront for Experience Manager enhanced connector]套件新增至您所有子專案之`embeddeds`的`pom.xml`區段。 需要將它內嵌在所有模組`pom.xml`中。
 
    ```XML
    <!-- Workfront Tools -->
@@ -136,9 +137,9 @@ ht-degree: 1%
 
 1. 將變更推送至存放庫。
 
-1. 執行管道以[將變更部署到Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=zh-Hant)。
+1. 執行管道以[將變更部署到Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html)。
 
-1. 若要建立系統使用者組態，請在[!DNL Experience Manager]使用者群組中建立`wf-workfront-users`，並將許可權`jcr:all`指派給`/content/dam`。 系統使用者`workfront-tools`會自動建立，且必要的許可權會自動管理。 來自[!DNL Workfront]且使用增強型聯結器的所有使用者都會自動新增為此群組的一部分。
+1. 若要建立系統使用者組態，請在`wf-workfront-users`使用者群組中建立[!DNL Experience Manager]，並將許可權`jcr:all`指派給`/content/dam`。 系統使用者`workfront-tools`會自動建立，且必要的許可權會自動管理。 來自[!DNL Workfront]且使用增強型聯結器的所有使用者都會自動新增為此群組的一部分。
 
 如需將[!DNL Workfront for Experience Manager enhanced connector]從舊版更新為最新版本的資訊，請按一下[這裡](update-workfront-enhanced-connector.md)。
 

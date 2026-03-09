@@ -4,11 +4,12 @@ description: 瞭解在Dynamic Media中可用來選取互動式影像、互動式
 contentOwner: Rick Brough
 feature: Selectors,Interactive Images,Interactive Videos,Carousel Banners
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: a6f366ab-41b8-4909-b815-e6c4b938bf77
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '745'
-ht-degree: 5%
+source-wordcount: '751'
+ht-degree: 6%
 
 ---
 
@@ -44,7 +45,7 @@ ht-degree: 5%
 
    ![chlimage_1-523](assets/chlimage_1-523.png)
 
-   您可以點選「**[!UICONTROL 瀏覽]**」並導覽至其他資料夾，以變更[!DNL Experience Manager]瀏覽產品資料的位置。
+   您可以點選「[!DNL Experience Manager]瀏覽&#x200B;**[!UICONTROL 」並導覽至其他資料夾，以變更]**&#x200B;瀏覽產品資料的位置。
 
    ![chlimage_1-524](assets/chlimage_1-524.png)
 
@@ -99,7 +100,7 @@ ht-degree: 5%
 
    ![chlimage_1-533](assets/chlimage_1-533.png)
 
-   您可以導覽至&#x200B;**[!UICONTROL 路徑]**&#x200B;欄位中的其他資料夾，以變更[!DNL Experience Manager]瀏覽資產的位置。
+   您可以導覽至[!DNL Experience Manager]路徑&#x200B;**[!UICONTROL 欄位中的其他資料夾，以變更]**&#x200B;瀏覽資產的位置。
 
    選取&#x200B;**[!UICONTROL 集合]**&#x200B;以僅搜尋集合中的資產。
 

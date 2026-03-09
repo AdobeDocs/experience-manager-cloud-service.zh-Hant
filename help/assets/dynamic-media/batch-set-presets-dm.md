@@ -1,13 +1,14 @@
 ---
-title: 大量集預設集
+title: 批次集預設集
 description: 瞭解如何使用Dynamic Media中的批次集預設集自動建立影像集和迴轉集。
 contentOwner: Rick Brough
 feature: Image Presets,Viewer Presets
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: 022ee347-54ec-4cec-b808-9eb3a9e51424
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '3434'
+source-wordcount: '3440'
 ht-degree: 0%
 
 ---
@@ -36,7 +37,7 @@ ht-degree: 0%
 理想情況下，貴公司已針對資產在集合中的分組方式定義命名慣例。
 為協助您瞭解使用命名慣例的重要性，假設貴公司定義的命名慣例為`<style>-<color>-<view>`。 而且，集合的基底名稱必須一律為`<style>-<color>`，集合名稱副檔名為`-SET`。 如果您上傳名為`0123-RED-01`的影像，則會建立名為`0123-RED-SET`的集合。 如果您稍後上傳影像`0123-RED-03`和`0123-BLUE-01`，則會在第二個位置將`RED-03`影像新增到影像集，因為其排序低於`01`。 不過，`BLUE-01`影像會是一個名為`0123-BLUE-SET`的新集合的一部分。 在下次上傳資產時，您新增檔案`0123-RED-02`和`0123-BLUE-02`。 每個資產都會新增至其個別的集合。 由於排序順序，`RED-02`影像將會在現有`01`和`03`影像之間自動排序。
 
-[!DNL Dynamic Media]中的&#x200B;**[!UICONTROL 批次集預設集]**&#x200B;頁面可讓您建立、編輯或刪除批次集預設集，以及將批次集預設集套用至資產資料夾或從資產資料夾中移除批次集預設集。 您可以使用表單欄位下拉式清單來定義批次集預設集，或是使用&#x200B;**[!UICONTROL 原始程式碼]**&#x200B;欄位，讓您輸入規則運算式語法。
+**[!UICONTROL 中的]**&#x200B;批次集預設集[!DNL Dynamic Media]頁面可讓您建立、編輯或刪除批次集預設集，以及將批次集預設集套用至資產資料夾或從資產資料夾中移除批次集預設集。 您可以使用表單欄位下拉式清單來定義批次集預設集，或是使用&#x200B;**[!UICONTROL 原始程式碼]**&#x200B;欄位，讓您輸入規則運算式語法。
 
 您可以建立許多批次集預設集，以涵蓋所需的所有資產擷取作業。
 
@@ -75,7 +76,7 @@ ht-degree: 0%
 
 1. 在&#x200B;**[!UICONTROL 預設集型別]**&#x200B;下拉式清單中，選取&#x200B;**[!UICONTROL 影像集]**&#x200B;或&#x200B;**[!UICONTROL 迴轉集]**。 請確定您選擇正確的預設集型別；之後將無法編輯。
 1. 選取「**[!UICONTROL 建立]**」。
-1. 在&#x200B;**[!UICONTROL 編輯批次集預設集]**&#x200B;頁面的右側，在&#x200B;**[!UICONTROL 預設集詳細資料]**&#x200B;和&#x200B;**[!UICONTROL 設定命名慣例]**&#x200B;標題下設定您想要的可編輯選項。
+1. 在&#x200B;**[!UICONTROL 編輯批次集預設集]**&#x200B;頁面的右側，在&#x200B;**[!UICONTROL 預設集詳細資料]**&#x200B;和&#x200B;**[!UICONTROL 設定命名慣例]**標題下設定您想要的可編輯選項。
 若要深入瞭解您可用的可編輯選項，請參閱[預設集詳細資訊、設定命名慣例和規則結果 — RegX選項](#features-options-bsp)。
 
    ![bsp-create4.png](/help/assets/assets-dm/bsp-create4.png)
@@ -105,7 +106,7 @@ ht-degree: 0%
 
 請參閱[為影像集或迴轉集建立批次集預設集](#creating-bsp)或[編輯批次集預設集](#edit-bsp)。
 
-| **[!UICONTROL 預設集詳細資料]** | 描述 |
+| **[!UICONTROL 預設集詳細資料]** | 說明 |
 | --- | --- |
 | 預設集名稱 | 唯讀。 您第一次建立批次集時所指定的名稱。 如果您必須重新命名預設集，您可以複製現有的批次集預設集並指定新名稱。 請參閱[複製現有的批次集預設集](#copy-bsp)。 |
 | 類型 | 唯讀。 當您初次建立批次集時指定了型別。 複製現有的批次集預設集無法讓您變更其[!UICONTROL 型別]；您必須改為建立預設集。 |
@@ -257,7 +258,7 @@ ht-degree: 0%
 
 1. 在&#x200B;**[!UICONTROL 刪除批次集預設集]**&#x200B;對話方塊中，選取&#x200B;**[!UICONTROL 刪除]**。
 
-   如果您要刪除的預設集已由資產資料夾參考，請改為選取「強制刪除」**&#x200B;**。
+   如果您要刪除的預設集已由資產資料夾參考，請改為選取「強制刪除」****。
 
    ![bsp-delete3.png](/help/assets/assets-dm/bsp-delete3.png)
 

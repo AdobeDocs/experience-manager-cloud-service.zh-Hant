@@ -4,10 +4,11 @@ description: '[!DNL Experience Manager Assets]和媒體庫用於資產管理。'
 contentOwner: AG
 feature: Asset Management, Publishing
 role: User, Developer, Leader
+badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: 4737d5ee-9a93-49f3-9f20-d4368e60e9fb
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '591'
 ht-degree: 9%
 
 ---
@@ -116,5 +117,5 @@ As per PM, we must avoid stating such a list, as we do not have a list that make
 
 >[!MORELIKETHIS]
 >
->* 在[&#x200B; [!DNL Experience Manager Assets]中的](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html?lang=zh-Hant)DAM功能
->* [[!DNL Experience Manager] 作為 [!DNL Cloud Service] 產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-experience-manager-cloud-service.html)
+>* 在[ [!DNL Experience Manager Assets]中的](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html?lang=zh-Hant)DAM功能
+>* [[!DNL Experience Manager] 作為 [!DNL Cloud Service] 產品說明](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-cloud-service.html)

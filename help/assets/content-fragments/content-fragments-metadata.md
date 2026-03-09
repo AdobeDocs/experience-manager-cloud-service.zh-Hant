@@ -1,13 +1,14 @@
 ---
 title: 中繼資料 — 片段屬性(Assets — 內容片段)
 description: 瞭解如何檢視和編輯內容片段的中繼資料屬性。
+badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: bc67480d-a1e4-4ef9-b811-8bd110f70369
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '285'
+source-wordcount: '291'
 ht-degree: 6%
 
 ---
@@ -22,7 +23,7 @@ ht-degree: 6%
 >
 >編寫內容片段有兩個編輯器；雖然基本功能相同，但有一些差異。 本節涵蓋原始編輯器，主要是從&#x200B;**Assets**&#x200B;主控台存取。 請參閱網站檔案[內容片段 — 製作](/help/sites-cloud/administering/content-fragments/authoring.md)，以取得新編輯器的詳細資訊（主要從&#x200B;**內容片段**&#x200B;主控台存取）。
 
-## 編輯屬性/中繼資料 {#editing-properties-meta-data}
+## 編輯屬性/Meta資料 {#editing-properties-meta-data}
 
 您可以檢視和編輯內容片段的中繼資料（屬性）：
 

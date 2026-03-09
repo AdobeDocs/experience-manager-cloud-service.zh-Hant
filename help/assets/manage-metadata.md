@@ -5,10 +5,11 @@ contentOwner: AG
 mini-toc-levels: 1
 feature: Asset Management, Metadata
 role: User, Developer, Admin
+badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1944'
+source-wordcount: '1950'
 ht-degree: 9%
 
 ---
@@ -17,7 +18,7 @@ ht-degree: 9%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html?lang=en) |
 | AEM as a Cloud Service  | 本文章 |
 
 [!DNL Adobe Experience Manager Assets]保留每個資產的中繼資料。 它可讓您更輕鬆地分類及組織資產，並協助尋找特定資產的人。 中繼資料管理可透過從上傳至[!DNL Experience Manager Assets]的檔案擷取中繼資料，與創意工作流程整合。 有了使用資產保留和管理中繼資料的功能，您可以根據資產的中繼資料自動組織和處理資產。
@@ -238,7 +239,7 @@ To change the limit, access Web Console ( **[!UICONTROL Tools]** > **[!UICONTROL
 * CQ — 由[!DNL Experience Manager Assets]使用。
 * DAM - [!DNL Experience Manager Assets]使用。
 * DEX - [Optima SC Description Explorer](https://www.optimasc.com/products/dex/index.html)是Windows作業系統中繼資料和檔案管理工具的集合。
-* CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/tw/camera-raw/using/introduction-camera-raw.html)。
+* CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/camera-raw/using/introduction-camera-raw.html)。
 * LR - [!DNL Adobe Lightroom]。
 * MediaPro - [iView MediaPro](https://en.wikipedia.org/wiki/Phase_One_Media_Pro)。
 * MicrosoftPhoto和MP - Microsoft像片。

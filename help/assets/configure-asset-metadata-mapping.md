@@ -1,13 +1,14 @@
 ---
 title: 設定Workfront和Experience Manager Assets之間的資產中繼資料對應
 description: 在Adobe Workfront和Experience Manager as a Cloud Service應用程式之間對應資產中繼資料欄位。 對應中繼資料欄位後，當您從Workfront傳送資產至Experience Manager Assets時，可以在Experience Manager Assets中檢視對應的資產中繼資料。
+badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
 feature: Metadata, Workfront Integrations and Apps
 role: User, Admin
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1012'
-ht-degree: 4%
+source-wordcount: '1018'
+ht-degree: 5%
 
 ---
 
@@ -19,7 +20,7 @@ ht-degree: 4%
 
 **使用案例**
 
-在Adobe Workfront應用程式的`Metadata Syncs`專案中存在影像`add-users-workfront.png`。 您必須將該影像傳送至Experience Manager Assets as a Cloud Service，並具備下列中繼資料：
+在Adobe Workfront應用程式的`add-users-workfront.png`專案中存在影像`Metadata Syncs`。 您必須將該影像傳送至Experience Manager Assets as a Cloud Service，並具備下列中繼資料：
 
 * 專案名稱
 
@@ -68,7 +69,7 @@ ht-degree: 4%
 
 1. 選擇資產的目的地資料夾，然後按一下&#x200B;**[!UICONTROL 選取資料夾]**。
 
-1. 按一下「**[!UICONTROL 儲存]**」。
+1. 按一下&#x200B;**[!UICONTROL 儲存]**。
 
 ## 在Experience Manager as a Cloud Service中設定資產中繼資料對應 {#metadata-mapping-aem}
 
@@ -88,10 +89,9 @@ ht-degree: 4%
 
 1. 按一下&#x200B;**[!UICONTROL 建置表單]**&#x200B;索引標籤，並將&#x200B;**[!UICONTROL 單行文字]**&#x200B;元件拖曳至表單。 按一下表單中的元件。 在&#x200B;**[!UICONTROL 建置表單]**&#x200B;索引標籤中：
 
-   1. 在&#x200B;**[!UICONTROL 欄位標籤]**&#x200B;欄位中指定`Project Name`。
+   1. 在`Project Name`欄位標籤&#x200B;**[!UICONTROL 欄位中指定]**。
 
-   1. 在&#x200B;**[!UICONTROL 對應至屬性]**&#x200B;欄位中指定`./jcr:content/metadata/wm:projectName`。 建議先使用以下範本，在Experience Manger Assets中定義欄位對應：
-
+   1. 在`./jcr:content/metadata/wm:projectName`對應至屬性&#x200B;**[!UICONTROL 欄位中指定]**。 建議先使用以下範本，在Experience Manger Assets中定義欄位對應：
       `./jcr:content/metadata/<mapping defined for the field in workfront>`。
 
       在Workfront中設定對應時，您將`wm:projectName`個Experience Manager Assets欄位對應至專案>命名Workfront欄位。
@@ -102,16 +102,16 @@ ht-degree: 4%
 
 1. 按一下&#x200B;**[!UICONTROL 建置表單]**&#x200B;索引標籤，並將&#x200B;**[!UICONTROL 單行文字]**&#x200B;元件拖曳至表單。 按一下表單中的元件。 在&#x200B;**[!UICONTROL 建置表單]**&#x200B;索引標籤中：
 
-   1. 在&#x200B;**[!UICONTROL 欄位標籤]**&#x200B;欄位中指定`Document Name`。
+   1. 在`Document Name`欄位標籤&#x200B;**[!UICONTROL 欄位中指定]**。
 
-   1. 在&#x200B;**[!UICONTROL 對應至屬性]**&#x200B;欄位中指定`./jcr:content/metadata/wm:documentName`。
+   1. 在`./jcr:content/metadata/wm:documentName`對應至屬性&#x200B;**[!UICONTROL 欄位中指定]**。
 在Workfront中設定對應時，您將`wm:documentName`個Experience Manager Assets欄位對應至檔案>命名Workfront欄位。
 
 1. 按一下&#x200B;**[!UICONTROL 建置表單]**&#x200B;索引標籤，然後將&#x200B;**[!UICONTROL 多行文字]**&#x200B;元件拖曳至表單。 按一下表單中的元件。 在&#x200B;**[!UICONTROL 建置表單]**&#x200B;索引標籤中：
 
-   1. 在&#x200B;**[!UICONTROL 欄位標籤]**&#x200B;欄位中指定`Document Description`。
+   1. 在`Document Description`欄位標籤&#x200B;**[!UICONTROL 欄位中指定]**。
 
-   1. 在&#x200B;**[!UICONTROL 對應至屬性]**&#x200B;欄位中指定`./jcr:content/metadata/dc:description`。
+   1. 在`./jcr:content/metadata/dc:description`對應至屬性&#x200B;**[!UICONTROL 欄位中指定]**。
 在Workfront中設定對應時，您將`dc:description`個Experience Manager Assets欄位對應至檔案>說明Workfront欄位。
 
 1. 按一下「**[!UICONTROL 儲存]**」以儲存變更。
@@ -120,7 +120,7 @@ ht-degree: 4%
 
 ## 套用中繼資料設定至影像資料夾 {#apply-metadata-settings-image-folder}
 
-在Experience Manager as a Cloud Service應用程式中設定中繼資料設定後，將這些設定套用至包含從Workfront應用程式[&#128279;](#send-image-workfront-assets)傳送之影像的資料夾。
+在Experience Manager as a Cloud Service應用程式中設定中繼資料設定後，將這些設定套用至包含從Workfront應用程式[傳送之影像的](#send-image-workfront-assets)資料夾。
 
 若要將中繼資料設定套用至影像資料夾：
 
@@ -128,7 +128,7 @@ ht-degree: 4%
 
 1. 從可用清單中選取中繼資料結構描述，然後按一下&#x200B;**[!UICONTROL 套用至資料夾]**。
 
-1. 選取從Adobe Workfront應用程式[&#128279;](#send-image-workfront-assets)傳送影像的目標資料夾，然後按一下&#x200B;**[!UICONTROL 套用]**。
+1. 選取從Adobe Workfront應用程式[傳送影像的目標資料夾](#send-image-workfront-assets)，然後按一下&#x200B;**[!UICONTROL 套用]**。
 
 您可以導覽至Experience Manager Assets中的影像，並檢視與影像相關聯的中繼資料。 選取影像並按一下&#x200B;**[!UICONTROL 屬性]**&#x200B;以檢視影像中繼資料。
 

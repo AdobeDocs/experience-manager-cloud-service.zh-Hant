@@ -3,13 +3,14 @@ title: 在管理員檢視中使用AI產生的中繼資料增強內容探索
 description: 瞭解如何在「管理檢視」中使用AI產生的中繼資料來增強內容探索
 feature: Smart Tags,Tagging
 role: Admin,User
-source-git-commit: 3f44e74488fc73c406fefb6decc41782859d029b
+badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
+exl-id: c76379e3-6bdf-4dba-9d2b-f2120f85052f
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '675'
 ht-degree: 8%
 
 ---
-
 
 # 使用AI產生的中繼資料加強內容探索 {#ai-smart-tags}
 

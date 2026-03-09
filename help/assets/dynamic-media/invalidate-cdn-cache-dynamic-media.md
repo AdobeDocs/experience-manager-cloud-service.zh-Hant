@@ -4,10 +4,11 @@ description: 瞭解如何使CDN （內容傳遞網路）快取內容失效，好
 contentOwner: Rick Brough
 feature: Asset Management
 role: Admin,User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: c631079b-8082-4ff7-a122-dac1b20d8acd
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1397'
+source-wordcount: '1403'
 ht-degree: 1%
 
 ---

@@ -1,13 +1,14 @@
 ---
 title: 更新 [!DNL Workfront for Experience Manager enhanced connector]
 description: 更新 [!DNL Workfront for Experience Manager enhanced connector]
+badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: 09276b4d-a7c8-4927-8c0a-40eda48e55a7
 feature: Workfront Integrations and Apps
 role: Admin
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '226'
-ht-degree: 0%
+source-wordcount: '232'
+ht-degree: 1%
 
 ---
 
@@ -17,14 +18,14 @@ ht-degree: 0%
 
 >[!TIP]
 >
->您正在搜尋AEM 6.5的[!DNL Workfront for Experience Manager enhanced connector]更新檔案嗎？ 按一下[這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-install.html?lang=zh-Hant##update-enhanced-connector-for-workfront)。
+>您正在搜尋AEM 6.5的[!DNL Workfront for Experience Manager enhanced connector]更新檔案嗎？ 按一下[這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-install.html?lang=en##update-enhanced-connector-for-workfront)。
 
 
 若要將[!DNL Workfront for Experience Manager enhanced connector]更新至最新版本：
 
 1. 從[Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/workfront-tools.ui.apps.zip)下載最新版本的增強型聯結器。
 
-1. [存取](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/accessing-repos.html?lang=zh-Hant)並從Cloud Manager複製您的AEM as a Cloud Service存放庫。
+1. [存取](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/accessing-repos.html?lang=en)並從Cloud Manager複製您的AEM as a Cloud Service存放庫。
 
 1. 使用您選擇的IDE開啟複製的Experience Manager as a Cloud Service存放庫。
 
@@ -67,7 +68,7 @@ ht-degree: 0%
    >
    >請確定您在步驟5和步驟6中將`<scope>`和`<systemPath>`新增到相依性。
 
-1. 更新`pom.xml`內嵌。 將[!DNL Workfront for Experience Manager enhanced connector]套件新增至您所有子專案之`pom.xml`的`embeddeds`區段。 在所有模組`pom.xml`中合併更新。
+1. 更新`pom.xml`內嵌。 將[!DNL Workfront for Experience Manager enhanced connector]套件新增至您所有子專案之`embeddeds`的`pom.xml`區段。 在所有模組`pom.xml`中合併更新。
 
    ```XML
    <!-- Workfront Tools -->
@@ -85,4 +86,4 @@ ht-degree: 0%
 
 1. 將變更推送至存放庫。
 
-1. 執行管道以[將變更部署到Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=zh-Hant)。
+1. 執行管道以[將變更部署到Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html)。

@@ -2,10 +2,11 @@
 title: 在Content Hub中管理集合
 description: 瞭解如何在Content Hub中管理集合
 role: User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: 12bb550ff275c84bc60869e91e953993aab57aa5
+source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
 workflow-type: tm+mt
-source-wordcount: '1914'
+source-wordcount: '1920'
 ht-degree: 1%
 
 ---
@@ -30,7 +31,7 @@ ht-degree: 1%
 
 它可協助使用者輕鬆存取和管理[!DNL Content Hub]中可用的各種資產。
 
->[!VIDEO](https://video.tv.adobe.com/v/3445311/?captions=chi_hant&learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3435687/?learn=on){transcript=true}
 
 ## 先決條件 {#prerequisites}
 
@@ -156,7 +157,7 @@ Content Hub集合提供全方位的控管工具，包括可自訂的共用許可
 * 集合的擁有者
 * 具有編輯許可權的非管理員使用者
 
-若要從集合中移除資產，請按一下需要移除資產的集合、選取資產，然後按一下[從集合中移除]。**&#x200B;**
+若要從集合中移除資產，請按一下需要移除資產的集合、選取資產，然後按一下[從集合中移除]。****
 
 ![移除集合](assets/remove-collection-new.jpg)
 
@@ -227,7 +228,7 @@ Content Hub使用者可以執行建立、檢視、共用、下載、移除、刪
 
 ### 如何從AEM Assets Content Hub的收藏集下載資產？
 
-若要從AEM Assets Content Hub中的收藏集下載資產，請導覽至「**收藏集**」標籤，然後按一下收藏集卡上的下載圖示來下載所有資產。 您也可以開啟收藏集、選取個別資產，然後按一下[下載] **&#x200B;**&#x200B;來個別下載它們。
+若要從AEM Assets Content Hub中的收藏集下載資產，請導覽至「**收藏集**」標籤，然後按一下收藏集卡上的下載圖示來下載所有資產。 您也可以開啟收藏集、選取個別資產，然後按一下[下載] ****&#x200B;來個別下載它們。
 
 ### 如何從AEM Assets Content Hub中的集合共用資產？
 
