@@ -4,9 +4,9 @@ description: 瞭解如何將您的品牌核准資產上傳至Content Hub
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: f1be7cfc-1803-4c17-bb58-947104aa883c
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
 workflow-type: tm+mt
-source-wordcount: '1129'
+source-wordcount: '1159'
 ht-degree: 12%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 12%
 
 [有權新增資產的Content Hub使用者](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets)可以從本機檔案系統新增資產到Content Hub，或是從OneDrive或Dropbox資料來源匯入資產。 不論本機檔案系統或OneDrive和Dropbox資料來源提供的檔案夾結構為何，所有資產都會顯示在Content Hub的頂層，以增強搜尋功能。
 
->[!VIDEO](https://video.tv.adobe.com/v/3445392/?captions=chi_hant&learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3432980/?learn=on){transcript=true}
 
 在Assets as a Cloud Service中標示為`Approved`的資產會自動在Content Hub中使用。 如需更多資訊，請參閱[為 Content Hub 核准資產](/help/assets/approve-assets-content-hub.md)。
 
@@ -81,27 +81,27 @@ ht-degree: 12%
 
 ## 常見問題 {#faqs-content-hub-upload-assets}
 
-### 我可以從哪裡上傳哪些型別的資產至Content Hub？ {#asset-types-upload-to-content-hub}
+### 我可以從哪裡上傳哪些型別的資產到AEM Assets Content Hub？ {#asset-types-upload-to-content-hub}
 
-有權新增資產的Content Hub使用者可以從其本機檔案系統上傳品牌核准資產。 所有上傳的資產（無論其原始檔案夾結構為何）都會顯示在Content Hub的頂層，以增強搜尋功能。
+有權新增資產的AEM Assets Content Hub使用者可以從其本機檔案系統上傳品牌核准資產。 所有上傳的資產（無論其原始檔案夾結構為何）都會顯示在Content Hub的頂層，以增強搜尋功能。
 
-### Content Hub如何增強資產搜尋和組織？ {#search-content-hub}
+### AEM Assets Content Hub如何增強資產搜尋和組織？ {#search-content-hub}
 
-Content Hub可讓使用者定義每次上傳的關鍵細節，例如行銷活動名稱、關鍵字、管道、時間範圍及地區，藉此增強資產搜尋和組織。 它也會為每個資產自動產生其他屬性（例如檔案大小、格式和解析度），並使用Adobe AI來套用智慧標籤，讓您更輕鬆快速地尋找相關資產。
+AEM Assets Content Hub可讓使用者定義每次上傳的關鍵細節，例如行銷活動名稱、關鍵字、管道、時間範圍及地區，藉以強化資產搜尋和組織。 它也會為每個資產自動產生其他屬性（例如檔案大小、格式和解析度），並使用Adobe AI來套用智慧標籤，讓您更輕鬆快速地尋找相關資產。
 
-### 如何將資產從我的本機檔案系統上傳至Content Hub？ {#upload-assets-content-hub}
+### 如何將資產從我的本機檔案系統上傳至AEM Assets Content Hub？ {#upload-assets-content-hub}
 
-若要從您的本機檔案系統上傳資產，請按一下[新增Assets] **&#x200B;**，開啟上傳對話方塊。 您可以拖放檔案或資料夾，或手動瀏覽以選取它們。 您必須將資產群組在行銷活動名稱下，建議您填寫其他欄位，例如關鍵字、管道、時間範圍及區域，以便進行更好的組織。 準備就緒後，按一下&#x200B;**上傳**，檢閱詳細資料，並確認開始上傳。
+若要將資產從您的本機檔案系統上傳到AEM Assets Content Hub，請按一下[新增Assets] **以開啟上傳對話方塊。**&#x200B;您可以拖放檔案或資料夾，或手動瀏覽以選取它們。 您必須將資產群組在行銷活動名稱下，建議您填寫其他欄位，例如關鍵字、管道、時間範圍及區域，以便進行更好的組織。 準備就緒後，按一下&#x200B;**上傳**，檢閱詳細資料，並確認開始上傳。
 
-### Content Hub中的資產核准程式如何運作？ {#asset-approval-content-hub}
+### AEM Assets Content Hub中的資產核准程式如何運作？ {#asset-approval-content-hub}
 
-如果已啟用自動核准切換，則使用Content Hub上傳的資產會自動可供使用。 如果已停用，上傳的資產會放置在Assets as a Cloud Service的&#x200B;**水合資產**&#x200B;資料夾中，而您需要手動將其狀態大量編輯為&#x200B;**已核准**，以便在Content Hub中顯示這些資產。
+如果已啟用自動核准切換，則使用AEM Assets Content Hub上傳的資產會自動可供使用。 如果已停用，上傳的資產會放置在Assets as a Cloud Service的&#x200B;**水合資產**&#x200B;資料夾中，而您需要手動將其狀態大量編輯為&#x200B;**已核准**，以便在Content Hub中顯示這些資產。
 
-### 我可以設定將資產上傳至Content Hub時的強制或選用欄位嗎？ {#available-fields-while-uploading-assets-to-content-hub}
+### 我可以設定將資產上傳至AEM Assets Content Hub時的強制或選用欄位嗎？ {#available-fields-while-uploading-assets-to-content-hub}
 
-管理員可使用設定使用者介面來定義將資產上傳至Content Hub時的強制或選用欄位。
+管理員可使用設定使用者介面來定義將資產上傳至AEM Assets Content Hub時的強制或選用欄位。
 
-### 如果我的上傳資產沒有在Content Hub中自動顯示，怎麼辦？ {#assets-do-not-display-in-content-hub}
+### 如果我的上傳資產沒有在AEM Assets Content Hub中自動顯示，怎麼辦？ {#assets-do-not-display-in-content-hub}
 
-如果資產未自動顯示，則表示已停用自動核准切換。 資產位於Assets as a Cloud Service環境的&#x200B;**水合資產**&#x200B;資料夾。 您必須將其狀態大量編輯為&#x200B;**已核准**，他們才會出現在Content Hub中。
+如果資產未在AEM Assets Content Hub中自動顯示，則表示已停用自動核准切換。 資產位於Assets as a Cloud Service環境的&#x200B;**水合資產**&#x200B;資料夾。 您必須將其狀態大量編輯為&#x200B;**已核准**，他們才會出現在Content Hub中。
 

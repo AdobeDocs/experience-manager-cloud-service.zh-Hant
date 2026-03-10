@@ -4,9 +4,9 @@ description: 瞭解如何搜尋 [!DNL Content Hub]中的資產
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: 8578d7d0-32b9-4e5c-80ef-3827e358ac6c
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '1020'
 ht-degree: 1%
 
 ---
@@ -173,11 +173,11 @@ ht-degree: 1%
 
 ### 如何在AEM Assets Content Hub中縮小搜尋結果的範圍？
 
-您可以使用文字式搜尋、套用各種篩選器（例如檔案格式、核准狀態、修改日期等）、依標籤或智慧標籤搜尋，以及使用篩選器面板，來縮小Content Hub中的搜尋結果。 結合多個述詞或篩選器選項可協助您精準鎖定所需的資產。
+您可以使用文字式搜尋、套用各種篩選器（例如檔案格式、核准狀態、修改日期等）、依標籤或智慧標籤搜尋，以及使用篩選器面板，來縮小AEM Assets Content Hub中的搜尋結果。 結合多個述詞或篩選器選項可協助您精準鎖定所需的資產。
 
 ### 我可以一次在AEM Assets Content Hub中大量搜尋多個資產嗎？
 
-可以，您可以輸入多個值（例如名稱、檔案格式、標籤），在Content Hub中執行大量搜尋，並以指定的分隔符號分隔。 大量搜尋功能可讓您在單一查詢中快速找到數個資產，使其比逐一搜尋資產更有效率。
+可以，您可以輸入多個值（例如名稱、檔案格式、標籤），依指定的分隔字元分隔，在AEM Assets Content Hub中執行大量搜尋。 大量搜尋功能可讓您在單一查詢中快速找到數個資產，使其比逐一搜尋資產更有效率。
 
 
 ### 管理員可以自訂AEM Assets Content Hub搜尋中可用的篩選器嗎？

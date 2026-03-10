@@ -4,9 +4,9 @@ description: 在 [!DNL the Content Hub]中共用Assets
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: 5284d229-1596-40bf-aa5f-af4b6500ebdf
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 59f97fc6ded4274c27400f56b50b4a3329cc471a
 workflow-type: tm+mt
-source-wordcount: '925'
+source-wordcount: '931'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 建立所選資產的連結，以便輕鬆與他人共用。 以授權[!DNL Content Hub]使用者的身分，選取您[!DNL Content Hub]環境中可用的一或多個資產、產生連結，然後傳送給其他私人或公開使用者。
 
->[!VIDEO](https://video.tv.adobe.com/v/3474930/?captions=chi_hant&learn=on&enablevpops=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3474890/?learn=on&enablevpops=on){transcript=true}
 
 ## 先決條件 {#prerequisites}
 
@@ -52,7 +52,7 @@ ht-degree: 2%
 執行以下步驟，在預覽資產時共用資產：
 
 1. 導覽至[!DNL Content Hub]首頁，然後按一下資產縮圖以預覽資產，並在對話方塊的右側窗格中顯示功能表選項。
-1. 選取![共用](/help/assets/assets/share.svg)以顯示&#x200B;**[!UICONTROL 共用]**&#x200B;面板。
+1. 選取![共用](/help/assets/assets/share.svg)以顯示&#x200B;**[!UICONTROL 共用]**面板。
    預覽資產時![共用資產](/help/assets/assets/share-link-asset-preview.png)
 1. 請依照[共用資產](#share-assets)區段中的步驟3到5，從此&#x200B;**[!UICONTROL 共用]**&#x200B;面板產生並共用資產連結（私人或公開）。
 
@@ -60,10 +60,10 @@ ht-degree: 2%
 
 透過連結存取共用資產頁面，並執行下列動作：
 
-* 選取一或多個資產，然後按一下[下載] ![](/help/assets/assets/download-icon.svg) **[!UICONTROL &lbrace;下載]&rbrack;**，從可用的下載選項中選取[原始] **[!UICONTROL 、[靜態]]** **[!UICONTROL 或兩個轉譯。]**
+* 選取一或多個資產，然後按一下[下載] ![](/help/assets/assets/download-icon.svg) **[!UICONTROL {下載]]**，從可用的下載選項中選取[原始] **[!UICONTROL 、[靜態]]** **[!UICONTROL 或兩個轉譯。]**
   ![](/help/assets/assets/download-shared-assets.png)
 * 按一下資產縮圖以檢視資產的中繼資料。
-* 在共用資產頁面（[透過私人連結存取](#share-assets)）上，按一下資產縮圖，然後選取![下載](/help/assets/assets/download-icon.svg)，在選取和下載之前，先在&#x200B;**[!UICONTROL 下載]**&#x200B;面板上選取並檢視可用的資產動態轉譯。
+* 在共用資產頁面（[透過私人連結存取](#share-assets)）上，按一下資產縮圖，然後選取![下載](/help/assets/assets/download-icon.svg)，在選取和下載之前，先在&#x200B;**[!UICONTROL 下載]**面板上選取並檢視可用的資產動態轉譯。
   ![](/help/assets/assets/download-renditions-shared-assets-page.png)
 
 ## 常見問題 {#faqs-share-assets-content-hub}
@@ -74,7 +74,7 @@ ht-degree: 2%
 
 ### 如何使用AEM Assets Content Hub與他人共用資產或集合？
 
-若要在Content Hub中共用資產或集合，請導覽至Content Hub首頁，選取一或多個資產（或前往「集合」標籤以共用集合），然後按一下「共用」圖示。 在「共用」對話方塊中，您可以預覽資產、視需要移除任何資產、新增標題和說明、選取可以存取連結（私人或公開）的人員、設定有效期，然後按一下「取得連結」以產生和複製可共用的URL。 然後可將連結傳送給團隊成員或利害關係人。
+若要在AEM Assets Content Hub中共用資產或集合，請導覽至Content Hub首頁，選取一或多個資產（或前往「集合」標籤以共用集合），然後按一下「共用」圖示。 在「共用」對話方塊中，您可以預覽資產、視需要移除任何資產、新增標題和說明、選取可以存取連結（私人或公開）的人員、設定有效期，然後按一下「取得連結」以產生和複製可共用的URL。 然後可將連結傳送給團隊成員或利害關係人。
 
 ### 在AEM Assets Content Hub中共用資產時，有哪些存取選項可用，以及其不同之處？
 
@@ -86,11 +86,11 @@ Content Hub可讓您為共用連結選擇兩個存取選項：私人與公開。
 
 ### 我可以在AEM Assets Content Hub中設定共用資產連結的到期日嗎？這為何重要？
 
-可以，您可以在Content Hub中設定私人與公開共用連結的到期日。 對於公開連結，您可以從24小時至一週之類的預設集進行選擇，而私人連結則可讓您從預設集進行選擇，或設定自訂到期日。 到期日很重要，因為連結一旦到期，就無法再用來存取或下載資產，這有助於維持內容的安全性和控制力。
+是，您可以在AEM Assets Content Hub中設定私人與公開共用連結的到期日。 對於公開連結，您可以從24小時至一週之類的預設集進行選擇，而私人連結則可讓您從預設集進行選擇，或設定自訂到期日。 到期日很重要，因為連結一旦到期，就無法再用來存取或下載資產，這有助於維持內容的安全性和控制力。
 
 ### 收件者如何處理使用AEM Assets Content Hub建立的共用資產連結，以及是否有下載不同轉譯的選項？
 
-接收共用資產連結的收件者可在瀏覽器中開啟該連結，以預覽、選取和下載提供的資產。 如果在Content Hub中啟用資產轉譯，收件者可以選擇要下載的轉譯（例如原始或靜態）。 資產和轉譯會下載為zip檔案，而且按一下資產縮圖可檢視中繼資料。 連結在設定的到期日之前仍然有效。
+接收共用資產連結的收件者可在瀏覽器中開啟該連結，以預覽、選取和下載提供的資產。 如果在AEM Assets Content Hub中啟用資產轉譯，收件者可以選擇要下載的轉譯（例如原始或靜態）。 資產和轉譯會下載為zip檔案，而且按一下資產縮圖可檢視中繼資料。 連結在設定的到期日之前仍然有效。
 
 
 
