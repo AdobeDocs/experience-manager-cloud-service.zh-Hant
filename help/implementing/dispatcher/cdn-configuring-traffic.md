@@ -4,9 +4,9 @@ description: 瞭解如何在設定檔案中宣告規則和篩選器，並使用C
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 3a46db9c98fe634bf2d4cffd74b54771de748515
+source-git-commit: 15c49efa8ccb7d61fc506a0603b201c50a17edee
 workflow-type: tm+mt
-source-wordcount: '1698'
+source-wordcount: '1932'
 ht-degree: 1%
 
 ---
@@ -437,6 +437,10 @@ data:
 | **forwardAuthorization** （選擇性，預設為false） | 如果設為true ，則會將使用者端請求中的&quot;Authorization&quot;標頭傳遞至後端，否則會移除Authorization標頭。 |
 | **逾時** （選擇性，以秒為單位，預設為60） | CDN應等待後端伺服器傳遞HTTP回應本文第一個位元組的秒數。 此值也會用作後端伺服器的位元組逾時之間的值。 |
 
+>[!IMPORTANT]
+>
+>**網域**&#x200B;值不可包含`.adobeaemcloud.com`。 您無法直接代理至adobeaemcloud.com網域。 此限制可防止不需要的請求回圈。 若要將流量代理到您的AEM as a Cloud Service環境，請改用安裝在AEMaaCS環境中的[自訂網域](#proxying-to-aemaacs)作為原始後端。
+
 ### 將自訂網域代理至AEM靜態層 {#proxy-custom-domain-static}
 
 來源選取器可用來將AEM發佈流量路由到使用[前端管道](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)部署的AEM靜態內容。 使用案例包括在與頁面相同的網域(例如example.com/static)上或在明確不同的網域(例如static.example.com)上提供靜態資源。
@@ -494,6 +498,41 @@ data:
 >[!NOTE]
 >
 >因為已使用Adobe Managed CDN，請依照Edge Delivery Services **安裝程式推送失效檔案**，確定在[Managed](https://www.aem.live/docs/byo-dns#setup-push-invalidation)模式中設定推送失效。
+
+
+### 代理至AEMaaCS環境 {#proxying-to-aemaacs}
+
+您不能直接使用`adobeaemcloud.com`網域做為CDN設定中的來源。 拒絕這麼做（網域不得包含`.adobeaemcloud.com`）以防止不需要的請求回圈。 當從為Edge Delivery網站安裝的網域進行路由時，這也適用。
+
+如果您的自訂網域(`www.example.com`)已安裝至AEMaaCS環境，則預設路由會路由至AEM後端，而不會有任何CDN規則。 當您需要路由跨環境（例如，從`pXXXX-eYYYY`到`pXXXX-eZZZZ`）或從Edge Delivery網站路由到AEMaaCS環境時，請使用來源選取器。
+
+在這些情況下，若要將流量代理到您的AEM as a Cloud Service環境(例如，將特定路徑（例如`/graphql`）路由到後端)，請在您的AEMaaCS環境中安裝自訂網域，並將該自訂網域用作CDN設定中的來源。
+
+**範例：**&#x200B;如果您可以在`publish-pXXXXX-eYYYYY.adobeaemcloud.com`存取您的AEM發佈層級，請勿在`originSelectors`中使用該網域。 請改為使用：
+
+1. 在您的AEMaaCS環境中安裝指向發佈服務的自訂網域（例如`aem-publish-origin.example.com`）。
+2. 在您的CDN設定中，使用該自訂網域定義來源，並將所需的路徑（例如`/graphql`）路由到該網域。
+
+```
+kind: CDN
+version: '1'
+data:
+  originSelectors:
+    rules:
+      - name: graphql-to-aem-publish
+        when:
+          allOf:
+            - reqProperty: domain
+              equals: www.example.com
+            - reqProperty: path
+              like: /graphql*
+        action:
+          type: selectOrigin
+          originName: aem-publish-origin
+    origins:
+      - name: aem-publish-origin
+        domain: aem-publish-origin.example.com
+```
 
 
 ## 伺服器端重新導向 {#server-side-redirectors}
