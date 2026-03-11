@@ -4,10 +4,10 @@ description: 內容複製工具可讓使用者隨選從AEM as a Cloud Service上
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
 role: Admin, Developer
-source-git-commit: 86205946b7c4b7173448eca728f4495ab7e35064
+source-git-commit: bcd32fd359024abde5fb18ec4f3b8b3e2aa910cc
 workflow-type: tm+mt
-source-wordcount: '1502'
-ht-degree: 27%
+source-wordcount: '1574'
+ht-degree: 26%
 
 ---
 
@@ -143,7 +143,14 @@ ht-degree: 27%
 1. （選用）如有需要，請設定下列專案：
 
    * **包含存取控制清單** — 選取是否要複製內容的存取控制許可權以及內容。
-   * **擦去** — 選取此選項可在開始匯入前刪除目的地現有的內容，這樣您就可以從全新的狀態開始，避免與現有的內容衝突。 如果您未選取&#x200B;**擦去**，Cloud Manager會在現有目的地內容之上匯入新內容。 擦除開始前會顯示確認提示，Cloud Manager會記錄擦除動作並匯入詳細資訊，以利追蹤。
+   * **擦去** — 選取此選項可在開始匯入前刪除目的地現有的內容，這樣您就可以從乾淨的狀態開始，避免與現有的內容衝突。 如果您未選取&#x200B;**擦去**，Cloud Manager會在現有目的地內容之上匯入新內容。 擦除開始前會顯示確認提示，Cloud Manager會記錄擦除動作並匯入詳細資訊，以利追蹤。
+     ![正在複製內容](assets/content_copy_wipe-destination.png)
+      * 當選擇「匯入前擦除&#x200B;**」**&#x200B;選項並按一下「複製&#x200B;**」時，快顯視窗將會顯示警告，您可以選擇下列選項：**
+         * **取消** （在此情況下，**複製內容**&#x200B;流程將不會啟動）
+         * **確認** （**複製內容**流程將啟動，且目的地上的內容將被擦除）
+           ![正在複製內容](assets/content-copy-wipe-destination-warning.png)
+
+      * 如果您未選擇&#x200B;**在匯入前擦除目的地**，則&#x200B;**複製內容**&#x200B;流程將如前般運作。
 
 1. 按一下&#x200B;**複製**。
 
