@@ -115,7 +115,7 @@ function asyncOperationForOTPMatch(otp, callback) {
 1. 選取「**[!UICONTROL 建立]**」。
 1. 在規則的&#x200B;**When**&#x200B;區段中建立條件，以點選按鈕。 例如，按一下&#x200B;**When[Confirm]**。
 1. 在&#x200B;**然後**&#x200B;區段中，從&#x200B;**[!UICONTROL 選取動作]**&#x200B;下拉式清單中選取&#x200B;**非同步函式呼叫**。
-當您選取**[!UICONTROL 非同步函式呼叫]**&#x200B;時，就會顯示具有`Promise`傳回型別的函式。
+當您選取&#x200B;**[!UICONTROL 非同步函式呼叫]**&#x200B;時，就會顯示具有`Promise`傳回型別的函式。
 1. 從清單中選取非同步函式。 例如，選取`matchOTP()`函式，其回呼會顯示為`Add success callback`和`add failure callback`。
 1. 現在選取&#x200B;**[!UICONTROL 輸入]**&#x200B;繫結。 例如，選取&#x200B;**[!UICONTROL 輸入]**&#x200B;作為`Form Object`，並將其與`OTP`欄位進行比較。
 
