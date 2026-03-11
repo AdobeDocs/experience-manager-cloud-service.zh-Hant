@@ -4,10 +4,11 @@ description: 瞭解如何使用授權範圍以有限存取權設定SharePoint網
 keywords: 如何設定具有有限存取權的SharePoint網站？、設定具有有限存取權的SharePoint、使用授權範圍來限制SharePoint網站的存取權。
 feature: Adaptive Forms, Core Components
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: 3230bab2-c1aa-409d-9f01-c42cf88b1135
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '848'
 ht-degree: 15%
 
 ---
@@ -36,12 +37,12 @@ ht-degree: 15%
 
 請依照下列步驟，使用授權範圍將SharePoint Sites設定為具有有限存取權：
 
-1. [建立應用程式，使用 &#x200B;](#create-an-application-with-the-limited-permission-in-the-azure-portal)
+1. [建立應用程式，使用 ](#create-an-application-with-the-limited-permission-in-the-azure-portal)
 1. [在AEM執行個體設定授權範圍](#set-the-authorization-scope-at-aem-instance)
 
 ### 在Azure入口網站中建立具有有限許可權的應用程式
 
-在Microsoft的Graph API中，以[許可權範圍在](https://portal.azure.com/#home)Microsoft Azure入口網站`Sites.Selected`中建立應用程式。
+在[Microsoft Azure入口網站](https://portal.azure.com/#home)中建立具有Microsoft圖形API中`Sites.Selected`許可權範圍的應用程式。
 
 ![SharePoint選取的網站](/help/forms/assets/sharepoint-selected-site.png)
 

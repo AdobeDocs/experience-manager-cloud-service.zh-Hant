@@ -3,11 +3,12 @@ title: 如何預填自適應表單欄位？
 description: 使用現有資料預先填寫最適化表單的欄位，使用者可以使用其社交設定檔登入，預先填寫表單中的基本資訊。
 topic-tags: develop
 feature: Adaptive Forms, Foundation Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
 role: User, Developer
-source-git-commit: 8f39bffd07e3b4e88bfa200fec51572e952ac837
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '2044'
+source-wordcount: '2050'
 ht-degree: 2%
 
 ---
@@ -16,11 +17,11 @@ ht-degree: 2%
 
 >[!NOTE]
 >
-> Adobe建議針對[建立新的Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant)或[將Adaptive Forms新增至AEM Sites頁面](/help/forms/creating-adaptive-form-core-components.md)，使用現代且可擴充的資料擷取[核心元件](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文說明使用基礎元件製作最適化Forms的舊方法。
+> Adobe建議針對[建立新的Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)或[將Adaptive Forms新增至AEM Sites頁面](/help/forms/creating-adaptive-form-core-components.md)，使用現代且可擴充的資料擷取[核心元件](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文說明使用基礎元件製作最適化Forms的舊方法。
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html) |
 | AEM as a Cloud Service  | 本文章 |
 
 ## 簡介 {#introduction}
@@ -215,7 +216,7 @@ Prefill-Submit-Data-ContentPackage.zip
 
 >[!NOTE]
 >
-> 不建議在繫結面板(具有非空白bindRef的面板，這些面板是從Sidekick或「資料來源」索引標籤拖曳元件而建立的)中使用未繫結欄位，因為這可能會造成未繫結欄位的資料遺失。**&#x200B;** 建議在表單中設定唯一的欄位名稱，尤其是未繫結欄位。
+> 不建議在繫結面板(具有非空白bindRef的面板，這些面板是從Sidekick或「資料來源」索引標籤拖曳元件而建立的)中使用未繫結欄位，因為這可能會造成未繫結欄位的資料遺失。**** 建議在表單中設定唯一的欄位名稱，尤其是未繫結欄位。
 >
 
 ### 無表單模型的最適化表單 {#adaptive-form-with-no-form-model}
@@ -354,7 +355,7 @@ https://`servername`/content/forms/af/abc.html?wcmmode=disabled&dataRef=service:
 
 預填服務是一項OSGi服務，會透過OSGi套件組合封裝。 您建立OSGi套件組合，將其上傳並安裝至[!DNL AEM Forms]套件組合。 開始建立套件組合之前：
 
-- [下載 [!DNL AEM Forms] 使用者端SDK](https://helpx.adobe.com/tw/aem-forms/kb/aem-forms-releases.html)
+- [下載 [!DNL AEM Forms] 使用者端SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)
 - 下載範本套件
 
 - 將資料（預填資料）檔案放入crx存放庫中。 您可以將檔案放置在crx-repository的\contents資料夾中的任何位置。
@@ -400,4 +401,4 @@ You can configure the [!DNL AEM Forms] server to perform the data merge action a
   * To disable, run the following cURL command:
     `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=false \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
 
-   To take full advantage of the prepopulate data at client option, update your prefill service to return [FileAttachmentMap](https://helpx.adobe.com/tw/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) and [CustomContext](https://helpx.adobe.com/tw/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) -->
+   To take full advantage of the prepopulate data at client option, update your prefill service to return [FileAttachmentMap](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) and [CustomContext](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) -->

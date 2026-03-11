@@ -9,10 +9,11 @@ feature: Adaptive Forms
 role: User
 hide: true
 hidefromtoc: true
+badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: b01ca24b-aa39-4b30-9d55-224b103a1e83
-source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '401'
 ht-degree: 2%
 
 ---
@@ -34,7 +35,7 @@ ht-degree: 2%
 * 條款與條件
 * 條款與條件含草稿
 
-安裝套件時，會在Forms和檔案下方建立包含參考片段的參考片段資料夾。 若要安裝封裝，請參閱[透過Cloud Manager和封裝管理員部署內容封裝](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=zh-Hant#deploying-content-packages-via-cloud-manager-and-package-manager)以及[如何使用封裝](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=zh-Hant)。
+安裝套件時，會在Forms和檔案下方建立包含參考片段的參考片段資料夾。 若要安裝封裝，請參閱[透過Cloud Manager和封裝管理員部署內容封裝](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#deploying-content-packages-via-cloud-manager-and-package-manager)以及[如何使用封裝](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)。
 
 ![列出所有片段](assets/ootb-frags.png)
 

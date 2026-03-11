@@ -4,10 +4,11 @@ description: 瞭解如何在最適化Forms中使用Marketo Engage結構描述。
 keywords: 在最適化Forms中使用Marketo Engage資料來源。如何連結Marketo執行個體資料來源與表單？，將表單連線至Marketo。
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: 4656ec65-f1ad-4e97-8d93-25933cdc7f7b
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '770'
 ht-degree: 8%
 
 ---

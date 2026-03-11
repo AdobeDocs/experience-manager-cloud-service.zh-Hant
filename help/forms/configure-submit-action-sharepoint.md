@@ -3,12 +3,13 @@ title: 如何在提交最適化表單時傳送資料至SharePoint儲存空間？
 description: 瞭解如何在提交表單時，將資料從最適化表單傳送到SharePoint儲存空間，例如SharePoint清單或檔案庫。
 keywords: 如何連線SharePoint清單以取得最適化表單？、如何連線SharePoint檔案庫取得最適化表單、提交至SharePoint、建立SharePoint檔案庫組態、使用提交至SharePoint在最適化表單中的提交動作、連結最適化表單至Microsoft&amp；reg； SharePoint清單。
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
+badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: e925a750-5fb5-4950-afd3-78551eec985d
 role: User, Developer
-source-git-commit: 44a8d5d5fdd2919d6d170638c7b5819c898dcefe
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '242'
-ht-degree: 3%
+source-wordcount: '248'
+ht-degree: 4%
 
 ---
 

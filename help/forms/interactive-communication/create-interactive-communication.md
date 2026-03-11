@@ -4,11 +4,12 @@ description: 建立個人化、資料導向的通訊。 透過指南和教學課
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Interactive Communication
 role: User, Developer, Admin
+badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: c23145c9-078d-4b03-a8f4-2d835cdd1592
-source-git-commit: cdaceaabb8eeeec931b1897e1161f408606540b9
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 4%
+source-wordcount: '551'
+ht-degree: 5%
 
 ---
 
@@ -64,7 +65,7 @@ ht-degree: 4%
 1. 移至&#x200B;**Forms > Forms &amp; Documents**，按一下&#x200B;**建立>互動式通訊**。
 1. 在建立表單中，從選擇器中&#x200B;**選取**&#x200B;已啟用的範本。
 1. 填寫其他詳細資訊，如標題、名稱、作者等。
-1. 按一下[建立]&#x200B;**來設計您與所選範本結構的通訊。**
+1. 按一下[建立]**來設計您與所選範本結構的通訊。**
 1. 它會開啟IC編輯器，您可以在其中開始設計通訊。
 +++
 

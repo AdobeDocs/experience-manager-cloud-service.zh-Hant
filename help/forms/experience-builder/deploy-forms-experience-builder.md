@@ -5,10 +5,11 @@ hide: true
 index: false
 hidefromtoc: true
 role: Admin, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: 977f227e-e941-4797-ba74-53d5b8c60ca9
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1404'
+source-wordcount: '1410'
 ht-degree: 75%
 
 ---
@@ -47,7 +48,7 @@ ht-degree: 75%
 
 如果您使用Edge Delivery Services Forms，且主要使用通用編輯器。 [為Edge Delivery Services Forms準備專案](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)。 此為一次性設定，可啟用Forms Experience Builder。
 
-針對核心元件型表單&#x200B;**&#x200B;**
+針對核心元件型表單&#x200B;****
 
 如果您在AEM製作環境中使用以Forms核心元件為基礎的調適型，請確定已針對您的環境啟用[調適型Forms核心元件](/help/forms/enable-adaptive-forms-core-components.md)。
 

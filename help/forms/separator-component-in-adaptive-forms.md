@@ -3,13 +3,14 @@ title: 什麼是Adaptive Forms中的分隔符號元件？
 description: Adaptive Forms中的分隔符號元件有助於以視覺化方式分隔表單各個區段。
 feature: Adaptive Forms, Foundation Components
 role: User
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
+exl-id: 1b7857f9-b201-43ca-870d-42a09c441d9a
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 1%
+source-wordcount: '319'
+ht-degree: 2%
 
 ---
-
 
 # Adaptive Forms中的分隔符號元件{#separator-component-in-adaptive-forms}
 
@@ -35,4 +36,3 @@ ht-degree: 1%
 1. 執行下列任一項作業：
    * 按一下&#x200B;**確定**&#x200B;以確認變更
    * 按一下&#x200B;**取消**，結束對話方塊而不做任何變更。
-

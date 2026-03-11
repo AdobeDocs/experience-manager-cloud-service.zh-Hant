@@ -3,10 +3,11 @@ title: 輕鬆建立大量PDF — 透過批次處理掌握藝術 — 您製作數
 description: 如何建立品牌導向和個人化的通訊？
 feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: 5e3175cc4d96c89df4154ae42c5042cf9c2ca739
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1710'
+source-wordcount: '1716'
 ht-degree: 2%
 
 ---
@@ -40,7 +41,7 @@ ht-degree: 2%
 
 ### 批次作業的元件 {#components-of-a-batch-operations}
 
-**雲端設定**： Experience Manger雲端設定可協助您將Experience Manager執行個體連線到客戶擁有的Microsoft Azure儲存體。 它可讓您指定客戶擁有的Microsoft Azure帳戶認證，以便連線至該帳戶。
+**雲端設定**： Experience Manger雲端設定可協助您將Experience Manager執行個體連線到客戶擁有的Microsoft Azure儲存空間。 它可讓您指定客戶擁有的Microsoft Azure帳戶憑證，以便連線至該帳戶。
 
 **批次資料存放區組態(USC)**：批次資料組態可協助您為批次API設定特定的Blob存放區執行個體。 它可讓您在客戶擁有的Microsoft Azure Blob儲存空間中指定輸入和輸出位置。
 
@@ -48,7 +49,7 @@ ht-degree: 2%
 
 ![data-merge-table](assets/communications-batch-structure.png)
 
-**儲存空間**：通訊API會使用客戶擁有的Microsoft Azure雲端儲存空間來擷取客戶記錄並儲存產生的檔案。 您可以在「Microsoft設定」中設定Experience Manager Cloud Service Azure儲存體。
+**儲存空間**：通訊API會使用客戶擁有的Microsoft Azure Cloud儲存空間來擷取客戶記錄並儲存產生的檔案。 您可以在「Microsoft設定」中設定Experience Manager Cloud Service Azure儲存空間。
 
 **應用程式**：您用來使用批次API來產生和使用檔案的自訂應用程式。
 
@@ -73,29 +74,29 @@ ht-degree: 2%
 
 使用批次作業之前：
 
-* 將客戶資料（XML檔案）上傳至Microsoft Azure Blob Storage
+* 將客戶資料（XML檔案）上傳至Microsoft Azure Blob儲存空間
 * 建立雲端設定
 * 建立批次資料存放區設定
 * 將範本和其他資產上傳到您的Experience Manager Forms Cloud Service執行個體
 
-### 將客戶資料（XML檔案）上傳至Azure儲存體
+### 將客戶資料（XML檔案）上傳至Azure儲存空間
 
-在您的Microsoft Azure儲存體上，建立[容器](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-blobs)和[將客戶資料(XML)](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-blobs#managing-blobs-in-a-blob-container)上傳到容器內的[資料夾](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal)。
+在您的Microsoft Azure儲存空間中，建立[容器](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-blobs)和[將客戶資料(XML)](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-blobs#managing-blobs-in-a-blob-container)上傳至容器內的[資料夾](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal)。
 
 >[!NOTE]
 >
->您可以設定Microsoft Azure儲存體以自動清除輸入資料夾，或依排程間隔將輸出資料夾的內容移至其他位置。 不過，請確保當參照資料夾的批次作業仍在執行時，不要清除資料夾。
+>您可以設定Microsoft Azure儲存空間，以自動清除輸入資料夾，或依排程間隔將輸出資料夾的內容移至其他位置。 不過，請確保當參照資料夾的批次作業仍在執行時，不要清除資料夾。
 
 ### 建立雲端設定 {#create-a-cloud-configuration}
 
 雲端設定會將您的Experience Manager執行個體連線至Microsoft Azure儲存空間。 若要建立雲端設定：
 
-1. 前往「工具>雲端服務> Azure儲存體」
+1. 前往「工具>雲端服務> Azure儲存」
 1. 開啟要裝載設定的資料夾，然後按一下「建立」。 您可以使用全域資料夾或建立資料夾。
-1. 指定要連線至服務的組態名稱和認證。 您可以從您的Microsoft Azure儲存體入口網站[擷取這些認證](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal#view-account-access-keys)。
+1. 指定要連線至服務的組態名稱和認證。 您可以[從您的Microsoft Azure儲存入口網站](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal#view-account-access-keys)擷取這些認證。
 1. 按一下「建立」。
 
-您的Experience Manager執行個體現在已準備好連線至Microsoft Azure Storage，並視需要用它來儲存和讀取內容。
+您的Experience Manager執行個體現在已準備好連線至Microsoft Azure儲存空間，並視需要用它來儲存和讀取內容。
 
 ### 建立批次資料存放區設定 {#create-batch-data-store-configuration}
 
@@ -105,13 +106,13 @@ ht-degree: 2%
 
 1. 前往「工具> Forms >統一儲存聯結器」。
 1. 開啟要裝載設定的資料夾，然後按一下「建立」。 您可以使用全域資料夾或建立資料夾。
-1. 指定設定的標題和名稱。 在儲存體中，選取Microsoft Azure儲存體。
-1. 在儲存體設定路徑中，瀏覽並選取包含客戶擁有的Azure儲存體帳戶認證的雲端設定。
-1. 在Source資料夾中，指定Azure儲存體容器的名稱和包含記錄的資料夾。
-1. 在目標資料夾中，指定Azure儲存體容器的路徑以及儲存產生檔案的資料夾。
+1. 指定設定的標題和名稱。 在儲存空間中，選取Microsoft Azure儲存空間。
+1. 在儲存設定路徑中，瀏覽並選取包含客戶擁有的Azure儲存體帳戶認證的雲端設定。
+1. 在Source資料夾中，指定Azure儲存容器的名稱和包含記錄的資料夾。
+1. 在目標資料夾中，指定Azure儲存容器的路徑以及儲存產生檔案的資料夾。
 1. 按一下「建立」。
 
-您的Experience Manager執行個體現在已連線至Microsoft Azure Storage，並設定為擷取資料並傳送至Microsoft Azure Storage上的特定位置。
+您的Experience Manager執行個體現在已連線至Microsoft Azure儲存空間，並設定為擷取資料並傳送至Microsoft Azure儲存空間上的特定位置。
 
 ### 將範本和其他資產上傳到您的Experience Manager執行個體 {#upload-templates-and-other-assets-to-your-AEM-instance}
 

@@ -1,5 +1,5 @@
 ---
-title: XDP型最適化Forms中的XFA支援
+title: XFA 支援基於 XDP 的最適化表單
 description: 列出最適化Forms中支援的XFA事件、屬性、指令碼和驗證。
 uuid: 75d3c292-cfed-438f-afdb-4071d95a08b7
 topic-tags: develop
@@ -8,15 +8,16 @@ feature: Adaptive Forms
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
+exl-id: 59ae0eed-d832-4f46-9f99-7bcca9f82306
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '683'
-ht-degree: 5%
+source-wordcount: '689'
+ht-degree: 7%
 
 ---
 
-
-# XDP型最適化Forms中的XFA支援{#xfa-support-in-xdp-based-adaptive-forms}
+# XFA 支援基於 XDP 的最適化表單{#xfa-support-in-xdp-based-adaptive-forms}
 
 ## 簡介 {#introduction}
 
@@ -60,7 +61,7 @@ ht-degree: 5%
   </tr>
   <tr>
    <td><p>手寫簽名</p> </td>
-   <td><p>草寫簽名</p> </td>
+   <td><p>手寫簽名</p> </td>
   </tr>
   <tr>
    <td><p>數值欄位 </p> </td>
@@ -267,4 +268,3 @@ ht-degree: 5%
 >[!NOTE]
 >
 >您無法覆寫最適化表單選項按鈕的強制屬性，也無法覆寫繫結至XFA核取按鈕的核取方塊群組。
-

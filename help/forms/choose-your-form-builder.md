@@ -5,10 +5,11 @@ keywords: 表單產生器， AEM forms，表單產生器，建立表單，表單
 feature: Adaptive Forms, Core Components, Edge Delivery Services
 role: User, Developer, Admin
 level: Beginner
+badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: choose-form-builder-guide
-source-git-commit: ab84a96d0e206395063442457a61f274ad9bed23
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '954'
 ht-degree: 8%
 
 ---
@@ -104,7 +105,7 @@ Universal Editor為Edge Delivery Services提供兩種強大的撰寫方法： WY
 | **外觀** | **Foundation** | **核心** | **通用編輯器** | **檔案型** |
 |------------|----------------|----------|---------------------|-------------------|
 | **正在發佈** | 僅限 AEM | AEM + Edge Delivery + Headless API | Edge Delivery | Edge Delivery |
-| **效能** | 標準 | 已改善 | Lighthouse分數較高 | Lighthouse分數較高 |
+| **效能** | 標準 | 已改進 | Lighthouse分數較高 | Lighthouse分數較高 |
 | **SEO最佳化** | 基本 | 良好 | 極佳 | 極佳 |
 | **行動回應** | 良好 | 極佳 | 極佳 | 極佳 |
 
@@ -199,6 +200,6 @@ Universal Editor為Edge Delivery Services提供兩種強大的撰寫方法： WY
 ## 相關的文章
 
 - [詳細的表單製作比較](/help/edge/docs/forms/authoring-a-form.md)
-- [AEM Forms核心元件概觀](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant)
+- [AEM Forms核心元件概觀](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)
 - [適用於Forms的Edge Delivery Services概觀](/help/edge/docs/forms/overview.md)
 - [具有核心元件的Headless最適化Forms](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-headless-adaptive-forms/using/tutorial/build-engaging-forms-using-core-components-and-headless-adaptive-forms-aem-forms-cloud-service)

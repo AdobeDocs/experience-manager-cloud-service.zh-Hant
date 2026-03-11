@@ -4,19 +4,20 @@ description: 本文說明Foundation與核心元件規則編輯器之間的差異
 feature: Adaptive Forms, Core Components, Foundation Components
 role: User, Developer
 level: Beginner, Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: 0feef02c-6186-45f2-9929-07120126c596
-source-git-commit: 4cfdabaae23f0dcd1737c73e5edd644bbec6014e
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '112'
-ht-degree: 1%
+source-wordcount: '118'
+ht-degree: 17%
 
 ---
 
-# 不同版本規則編輯器的差異
+# 規則編輯器各個版本的差異
 
 本文提供不同版本的完整比較，著重說明其獨特的功能、長處和潛在限制。 透過檢查這些差異，使用者可以做出明智的決策，決定哪個版本最適合其特定需求和需求，以確保他們充分利用規則編輯器的全部潛能。
 
-## 基礎規則編輯器和核心元件規則編輯器之間的差異
+## 基礎規則編輯器與核心元件規則編輯器之間的差異
 
 {{rule-editor-diff}}
 

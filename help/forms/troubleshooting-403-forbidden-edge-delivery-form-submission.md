@@ -1,17 +1,18 @@
 ---
-title: 疑難排解Edge Delivery Services表單提交中的403禁止錯誤
+title: 針對 Edge Delivery Services 表單提交時出現的 403 禁止錯誤進行疑難排解
 description: 瞭解如何診斷並解決從Edge Delivery Services提交表單到AEM Publish時出現403禁止的錯誤。 本指南會說明常見原因，包括CORS、Dispatcher規則和反向連結篩選問題。
 feature: Edge Delivery Services
 role: Admin, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: f397e059-f1b3-4afa-bd38-8f5fc591bb22
-source-git-commit: d457bf9af377176222c2b96816fbbc4265e6b167
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1118'
-ht-degree: 3%
+source-wordcount: '1124'
+ht-degree: 11%
 
 ---
 
-# 疑難排解Edge Delivery Services表單提交中的403禁止錯誤 {#troubleshooting-403-forbidden-edge-delivery}
+# 針對 Edge Delivery Services 表單提交時出現的 403 禁止錯誤進行疑難排解 {#troubleshooting-403-forbidden-edge-delivery}
 
 從Edge Delivery Services提交表單至AEM Publish時，您可能會遇到&#x200B;**403禁止存取**&#x200B;錯誤。 此錯誤表示伺服器拒絕處理請求，通常是因為安全性設定。 本文可協助您找出並解決此問題最常見的原因。
 
@@ -41,7 +42,7 @@ ht-degree: 3%
 
 Edge Delivery Services表單提交中出現403禁止錯誤可能有多個原因。 請依序按照下列疑難排解步驟進行：
 
-### &#x200B;1. CORS （跨原始資源共用）問題
+### &#x200B;1. CORS (跨來源資源共用) 問題
 
 **症狀：**
 
@@ -73,9 +74,9 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 
 >[!NOTE]
 >
->將`main--abc--adobe.aem.live`和`main--abc1--adobe.aem.live`取代為您實際的網站網域。 從相同存放庫託管的每個網站都需要個別的CORS設定專案。
+>將 `main--abc--adobe.aem.live` 和 `main--abc1--adobe.aem.live` 替換為您的實際網站網域。於同一存放庫託管的每個網站皆需要單獨的 CORS 設定項目。
 
-如需詳細的CORS組態，請參閱[CORS組態指南](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)。
+如需詳細的 CORS 設定相關資訊，請參閱 [CORS 設定指南](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)。
 
 ### &#x200B;2. Dispatcher規則
 
@@ -135,9 +136,9 @@ Dispatcher篩選器設定範例：
 **解決方案：**
 設定反向連結篩選條件，以允許您的特定Edge Delivery網站網域：
 
-1. 建立或更新OSGi設定檔： `org.apache.sling.security.impl.ReferrerFilter.cfg.json`
+1. 建立或更新 OSGi 設定檔案：`org.apache.sling.security.impl.ReferrerFilter.cfg.json`
 
-2. 針對您的特定網站網域新增下列設定：
+2. 以您的特定網站網域新增下列設定：
 
    ```json
    {
@@ -165,7 +166,7 @@ Dispatcher篩選器設定範例：
    }
    ```
 
-3. 透過Cloud Manager部署設定
+3. 透過 Cloud Manager 部署設定
 
 >[!IMPORTANT]
 >
@@ -186,7 +187,7 @@ Dispatcher篩選器設定範例：
 3. 嘗試表單提交
 4. 尋找CORS相關的錯誤訊息
 
-**如果出現CORS錯誤：**&#x200B;請遵循上述CORS解決方案。
+**如果出現CORS錯誤：**請遵循上述CORS解決方案。
 **如果沒有CORS錯誤：**&#x200B;請繼續執行步驟2。
 
 ### 步驟2：檢查網路標籤
@@ -197,7 +198,7 @@ Dispatcher篩選器設定範例：
 4. 檢查失敗的請求詳細資料
 5. 檢視回應標題和狀態
 
-**如果要求無法連線到伺服器：**&#x200B;可能是Dispatcher問題。
+**如果要求無法連線到伺服器：**可能是Dispatcher問題。
 **如果要求到達伺服器但失敗：**&#x200B;可能是反向連結篩選問題。
 
 ### 步驟3：檢查AEM記錄

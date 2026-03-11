@@ -1,19 +1,20 @@
 ---
 title: 如何變更Designer中的第0頁內容？
-description: 針對非Adobe PDF檢視器，變更XFAPDF第0頁顯示的訊息。
+description: 針對非Adobe PDF檢視器，變更XFA PDF的頁面零上顯示的訊息。
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 feature: Adaptive Forms
 role: User
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
+exl-id: 726ba8a8-bfa4-44ac-8e74-e86a32505f36
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 0%
+source-wordcount: '252'
+ht-degree: 3%
 
 ---
 
-
-# 在Designer中變更零頁內容 {#changing-page-zero-content-in-designer}
+# 在 Designer 中變更頁面零內容 {#changing-page-zero-content-in-designer}
 
 當非Adobe PDF檢視器(例如[!DNL Chrome]或[!DNL Firefox]中的預設PDF檢視器)無法讀取PDF/XFA表單的內容時，預設會顯示「頁面零」內容。 預設的「頁面零」訊息顯示如下。
 
@@ -33,7 +34,7 @@ ht-degree: 0%
 1. 新增RTF格式的「頁面零」訊息作為值。 例如：
 
 
-   `<body xmlns="https://www.w3.org/1999/xhtml" xmlns:xfa="https://www.xfa.org/schema/xfa-data/1.0/"><p style="font-family:'Times';font-size:12pt;letter-spacing:0in"><span style="xfa-spacerun:yes"> </code></p><p style="font-family:'Times';font-size:12pt;letter-spacing:0in">You are seeing this message maybe because you are using a non Adobe PDF Viewer or an Old version of Adobe Reader. You can upgrade to the latest version of Adobe Reader for Windows, Mac, or Linux by visiting <span style="xfa-spacerun:yes"> </code>https://www.adobe.com/go/reader_download_tw.</p><p style="font-family:'Times';font-size:12pt;letter-spacing:0in"><span style="xfa-spacerun:yes"> </code></p><p style="font-family:'Times';font-size:12pt;letter-spacing:0in">For more assistance with Adobe Reader visit <span style="xfa-spacerun:yes"> </code>https://www.adobe.com/go/acrreader_tw.</p></body>`
+   `<body xmlns="https://www.w3.org/1999/xhtml" xmlns:xfa="https://www.xfa.org/schema/xfa-data/1.0/"><p style="font-family:'Times';font-size:12pt;letter-spacing:0in"><span style="xfa-spacerun:yes"> </code></p><p style="font-family:'Times';font-size:12pt;letter-spacing:0in">You are seeing this message maybe because you are using a non Adobe PDF Viewer or an Old version of Adobe Reader. You can upgrade to the latest version of Adobe Reader for Windows, Mac, or Linux by visiting <span style="xfa-spacerun:yes"> </code>https://www.adobe.com/go/reader_download.</p><p style="font-family:'Times';font-size:12pt;letter-spacing:0in"><span style="xfa-spacerun:yes"> </code></p><p style="font-family:'Times';font-size:12pt;letter-spacing:0in">For more assistance with Adobe Reader visit <span style="xfa-spacerun:yes"> </code>https://www.adobe.com/go/acrreader.</p></body>`
 
 1. 將表單儲存為PDF。
 

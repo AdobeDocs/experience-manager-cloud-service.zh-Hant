@@ -1,26 +1,28 @@
 ---
-title: 在Formsas a Cloud Service的最適化Forms中HTML電子郵件範本
+title: Forms as a Cloud Service適用性Forms中的HTML電子郵件範本
 description: 瞭解如何搭配最適化表單使用電子郵件範本。
 feature: Adaptive Forms, Core Components
 role: User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
+exl-id: 640130c0-e5d2-4af1-8ed9-c3bdde31d958
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '756'
-ht-degree: 0%
+source-wordcount: '759'
+ht-degree: 9%
 
 ---
 
-# 最適化Forms中的電子郵件範本
+# 最適化表單中的電子郵件範本
 
-最適化Forms可讓您使用HTML和純文字電子郵件範本。 HTML電子郵件範本可讓您在提交表單時，傳送豐富、個人化且吸引目光的電子郵件。 這些電子郵件可使用表單資料自訂，並使用各種電子郵件標籤（例如影像和連結）進行強化。 透過Adaptive Forms，您可以上傳包含HTML範本的檔案，或使用純文字編輯器來建立這些範本。
+最適化Forms可讓您使用HTML和純文字電子郵件範本。 HTML 電子郵件範本讓您能夠在提交表單時發送內容豐富又有視覺吸引力的個人化電子郵件。這些電子郵件可以使用表單資料進行自訂，並運用各種電子郵件標籤 (例如影像和連結) 加強內容。透過最適化表單，您可以上傳包含 HTML 範本的檔案，或使用純文字編輯器來建立這些範本。
 
-![HTML電子郵件範本](/help/forms/assets/html-email.png)
+![HTML 電子郵件範本](/help/forms/assets/html-email.png)
 
 本文可協助您在Adaptive Forms中設定和使用電子郵件範本。 到最後，您將能夠：
 
-* [設定最適化表單的HTML範本](#configure-an-html-template-for-an-adaptive-form)
+* [為最適化表單設定HTML範本](#configure-an-html-template-for-an-adaptive-form)
 * [為最適化表單設定純文字電子郵件範本](#configure-a-plain-text-template-for-an-adaptive-form)
 * [在電子郵件範本中使用表單資料](#use-form-data-in-your-email-templates)
 
@@ -32,9 +34,9 @@ ht-degree: 0%
 1. 選取或上傳HTML範本，或手動輸入電子郵件範本。
 1. 測試您的電子郵件設定。
 
-## 設定最適化表單的HTML範本
+## 為最適化表單設定HTML範本
 
-您可以使用&#x200B;[**傳送電子郵件**&#x200B;提交動作](/help/forms/configure-submit-action-send-email.md)，設定最適化表單以在提交時傳送電子郵件。 此動作提供兩種設定HTML範本的方法：
+您可以使用&#x200B;[**傳送電子郵件**&#x200B;提交動作](/help/forms/configure-submit-action-send-email.md)，設定最適化表單以在提交時傳送電子郵件。 此動作提供設定HTML範本的兩種方法：
 
 ### 選項1：選取包含HTML範本的檔案
 
@@ -51,7 +53,7 @@ ht-degree: 0%
 1. 按一下「外部範本路徑」選項的資料夾圖示，並瀏覽以選取您的HTML範本。
 1. 按一下&#x200B;**完成**&#x200B;以儲存組態。
 
-您的HTML範本現在已設定為最適化表單。
+您的HTML範本現在已針對最適化表單完成設定。
 
 ### 選項2：手動輸入或貼上HTML範本
 
@@ -59,7 +61,7 @@ ht-degree: 0%
 1. 移至&#x200B;**內容瀏覽器**，選取&#x200B;**節目表容器**，然後點選屬性圖示。 標題為`Adaptive Form Container`的對話方塊隨即顯示。
 1. 移至&#x200B;**提交**&#x200B;標籤，並選取&#x200B;**傳送電子郵件**&#x200B;提交動作。
 1. 啟用&#x200B;**使用HTML範本**&#x200B;選項。
-1. 直接在提供的&#x200B;**電子郵件範本**&#x200B;方塊中輸入或貼上HTML程式碼。
+1. 在提供的&#x200B;**電子郵件範本**&#x200B;方塊中，直接輸入或貼上HTML程式碼。
 
 
 ## 為最適化表單設定純文字範本
@@ -94,9 +96,9 @@ ht-degree: 0%
 * ${email}：名為「email」的欄位值。
 * ${message}：名為「message」的欄位值。
 
-### 範例HTML電子郵件範本
+### HTML電子郵件範本範例
 
-以下是使用表單資料預留位置的HTML電子郵件範本範例：
+以下範例為使用表單資料預留位置的HTML電子郵件範本：
 
 ```HTML
     <!DOCTYPE html>

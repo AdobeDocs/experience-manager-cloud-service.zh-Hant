@@ -2,12 +2,13 @@
 title: 如何在Experience Manager Sites頁面上建立Forms入口網站？
 description: 瞭解如何在AEM Sites頁面上建立Forms入口網站，並使用現成可用的核心元件。
 feature: Adaptive Forms, Core Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
 role: User, Developer
-source-git-commit: 58533d9a950fa4dc0e043ef8cb935d65fc68d233
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '359'
-ht-degree: 4%
+source-wordcount: '365'
+ht-degree: 6%
 
 ---
 
@@ -16,8 +17,8 @@ ht-degree: 4%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/introduction-publishing-forms.html?lang=zh-Hant) |
-| AEM as a Cloud Service （核心元件） | 本文章 |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/introduction-publishing-forms.html) |
+| AEM as a Cloud Service (核心元件) | 本文章 |
 
 Forms Portal提供在AEM Sites頁面上顯示和列出最適化Forms的有效方式。 對於需要平台來系統地向其使用者呈現各種形式的組織來說，這個範本非常有用。
 

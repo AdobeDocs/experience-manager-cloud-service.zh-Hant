@@ -2,12 +2,13 @@
 title: 如何翻譯以核心元件為基礎的最適化表單？
 description: 瞭解如何在AEM Forms中建立表單資料模型(FDM)、使用範例資料和服務測試模型，以及為模型設定各種選項。
 feature: Adaptive Forms, Core Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: ad46bf0f-e6ec-4c52-9695-5768a9968e16
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '885'
-ht-degree: 4%
+source-wordcount: '891'
+ht-degree: 5%
 
 ---
 
@@ -24,7 +25,7 @@ ht-degree: 4%
 
    * 若要建立翻譯專案，請選取&#x200B;**[!UICONTROL 建立新翻譯專案]**&#x200B;選項，並在&#x200B;**專案標題**&#x200B;欄位中指定標題。 例如 `Government Reference Site - German locale.`
    * 若要在現有翻譯專案中新增字典，請選取&#x200B;**[!UICONTROL 新增至現有翻譯專案]**&#x200B;選項，並選取&#x200B;**[!UICONTROL 現有翻譯專案]**。
-1. 在&#x200B;**目標語言**&#x200B;欄位中，指定地區設定（例如，`German(de)`）。 您可以指定多個地區設定。 表單已轉譯為&#x200B;**目標語言**&#x200B;欄位中指定的所有地區設定。 按一下&#x200B;**「完成」**。
+1. 在&#x200B;**目標語言**&#x200B;欄位中，指定地區設定（例如，`German(de)`）。 您可以指定多個地區設定。 表單已轉譯為&#x200B;**目標語言**&#x200B;欄位中指定的所有地區設定。 按一下&#x200B;**完成**。
 1. 在[新增的字典]對話方塊中，按一下[**開啟專案**]。
 1. 在「專案」畫面中，按一下已建立的專案。 例如，按一下&#x200B;**政府參考網站 — 德文地區設定**&#x200B;圖磚。
 1. 在&#x200B;**翻譯工作**&#x200B;圖磚上，按一下![aem62forms_downarrow](assets/aem62forms_downarrow.png)圖示，然後按一下&#x200B;**開始**。 圖磚的狀態會變更為「草稿」。 翻譯完成後，狀態會變更為&#x200B;**已核准**。 幾分鐘後重新整理頁面並驗證狀態。
@@ -32,7 +33,7 @@ ht-degree: 4%
    ![開始翻譯](/help/forms/assets/adaptive-forms-core-components-start-translation.png)
 1. 在&#x200B;**翻譯工作**&#x200B;圖磚上的狀態變更為&#x200B;**已核准**&#x200B;後，按一下![aem62forms_downarrow](assets/aem62forms_downarrow.png)圖示，然後按一下&#x200B;**完成**。
 
-1. 若要預覽本地化表單，請在AEM Forms UI上選取本地化表單。 按一下&#x200B;**[!UICONTROL 預覽]** >**[!UICONTROL 預覽為HTML]**。 將`afAcceptLang=<locale code>`新增至表單的URL後，重新開啟表單。 例如，新增`afAcceptLang=de`以開啟德文版的表單。
+1. 若要預覽本地化表單，請在AEM Forms UI上選取本地化表單。 按一下「**[!UICONTROL 預覽]** >**[!UICONTROL 以HTML預覽]**」。 將`afAcceptLang=<locale code>`新增至表單的URL後，重新開啟表單。 例如，新增`afAcceptLang=de`以開啟德文版的表單。
 
 
    >[!NOTE]
@@ -67,11 +68,11 @@ ht-degree: 4%
 
    * 若要建立翻譯專案，請選取&#x200B;**[!UICONTROL 建立新翻譯專案]**&#x200B;選項，並在&#x200B;**專案標題**&#x200B;欄位中指定標題。 例如 `Government Reference Site - German locale.`
    * 若要在現有翻譯專案中新增字典，請選取&#x200B;**[!UICONTROL 新增至現有翻譯專案]**&#x200B;選項，並選取&#x200B;**[!UICONTROL 現有翻譯專案]**。
-1. 在&#x200B;**目標語言**&#x200B;欄位中，指定地區設定（例如，`German(de)`）。 您可以指定多個地區設定。 表單已轉譯為&#x200B;**目標語言**&#x200B;欄位中指定的所有地區設定。 按一下&#x200B;**「完成」**。
+1. 在&#x200B;**目標語言**&#x200B;欄位中，指定地區設定（例如，`German(de)`）。 您可以指定多個地區設定。 表單已轉譯為&#x200B;**目標語言**&#x200B;欄位中指定的所有地區設定。 按一下&#x200B;**完成**。
 1. 在[新增的字典]對話方塊中，按一下[**開啟專案**]。
 1. 在「專案」畫面中，按一下已建立的專案。 例如，按一下&#x200B;**政府參考網站 — 德文地區設定**&#x200B;圖磚。
 1. 在&#x200B;**摘要**&#x200B;圖磚底部，按一下&#x200B;**省略符號**。 翻譯專案屬性畫面隨即開啟。
-1. 開啟&#x200B;**翻譯專案屬性**&#x200B;畫面頂端的&#x200B;**[!UICONTROL 進階]**&#x200B;標籤。 針對&#x200B;**[!UICONTROL 翻譯欄位]**，選取&#x200B;**[!UICONTROL 人工翻譯]**。 按一下熒幕上方的&#x200B;**儲存並關閉**。
+1. 開啟&#x200B;**[!UICONTROL 翻譯專案屬性]**&#x200B;畫面頂端的&#x200B;**進階**&#x200B;標籤。 針對&#x200B;**[!UICONTROL 翻譯欄位]**，選取&#x200B;**[!UICONTROL 人工翻譯]**。 按一下熒幕上方的&#x200B;**儲存並關閉**。
 1. 在&#x200B;**翻譯工作**&#x200B;圖磚上，按一下![aem62forms_downarrow](assets/aem62forms_downarrow.png)圖示，然後按一下&#x200B;**匯出**。 在「匯出」對話方塊中，按一下「下載匯出的檔案」選項。 它會下載.zip檔案。
    ![匯出翻譯檔案](/help/forms/assets/adaptive-forms-core-components-start-translation-export.png)
 1. 解壓縮下載的.zip檔案。 擷取的資料夾有兩個檔案：
@@ -83,7 +84,7 @@ ht-degree: 4%
 
    ![匯入翻譯檔案](/help/forms/assets/adaptive-forms-core-components-start-translation-import.png)
 
-1. 若要預覽本地化表單，請在AEM Forms UI上選取本地化表單。 按一下&#x200B;**[!UICONTROL 預覽]** >**[!UICONTROL 預覽為HTML]**。 將`afAcceptLang=<locale code>`新增至表單的URL後，重新開啟表單。 例如，新增`afAcceptLang=de`以開啟德文版的表單。
+1. 若要預覽本地化表單，請在AEM Forms UI上選取本地化表單。 按一下「**[!UICONTROL 預覽]** >**[!UICONTROL 以HTML預覽]**」。 將`afAcceptLang=<locale code>`新增至表單的URL後，重新開啟表單。 例如，新增`afAcceptLang=de`以開啟德文版的表單。
 
 ## 另請參閱 {#see-also}
 

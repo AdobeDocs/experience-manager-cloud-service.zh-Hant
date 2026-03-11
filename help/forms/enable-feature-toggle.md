@@ -3,10 +3,11 @@ title: 啟用功能切換以整合早期採用者和發行前功能
 description: 功能切換是AEM中的一項功能，可讓管理員在執行階段環境中啟用新功能。
 feature: Adaptive Forms, Foundation Components, Core Components
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: 3ad1370a-a399-4fbe-8168-c3a1cee06336
-source-git-commit: c1d62f0dd5a25da7fbeef537e1c28fa8421f42cd
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '410'
 ht-degree: 4%
 
 ---

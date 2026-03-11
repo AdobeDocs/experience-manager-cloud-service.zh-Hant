@@ -3,15 +3,16 @@ title: 如何在適用性Forms中使用SOM運算式？
 description: 瞭解如何在最適化Forms中擷取面板的SOM運算式。
 feature: Adaptive Forms, Foundation Components
 role: User
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
+exl-id: 5c30d5ca-12b8-4cc6-aa95-bde562419827
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 0%
+source-wordcount: '350'
+ht-degree: 2%
 
 ---
 
-
-# 在最適化Forms中使用SOM運算式{#using-som-expressions-in-adaptive-forms}
+# 在最適化表單中使用 SOM 運算式{#using-som-expressions-in-adaptive-forms}
 
 最適化Forms是以AEM頁面建模，在AEM存放庫中呈現為JCR內容結構。 內容結構的關鍵元素是guideContainer節點。 guideContainer下方有rootPanel，其中可能包含巢狀面板和欄位。
 
@@ -41,4 +42,4 @@ DOM樹狀結構
 
 使用面板工具列擷取SOM運算式
 
-[GuideBridge](https://helpx.adobe.com/tw/aem-forms/6/javascript-api/GuideBridge.html)中列出的部分API會使用專案的SOM運算式。 例如，若要將焦點置於最適化表單中的特定欄位，請將對應的SOM運算式傳遞至`guideBridge`中的`getFocus`API。
+[GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html)中列出的部分API會使用專案的SOM運算式。 例如，若要將焦點置於最適化表單中的特定欄位，請將對應的SOM運算式傳遞至`getFocus`中的`guideBridge`API。

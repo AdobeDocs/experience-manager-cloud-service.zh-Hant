@@ -1,14 +1,15 @@
 ---
 title: 如何設定重新導向頁面或感謝訊息？
-description: 瞭解使用者如何顯示感謝訊息或重新導向至表單作者在建立表單時可設定的網頁。
+description: 了解如何向使用者顯示感謝訊息，或將使用者重新導向到表單作者在建立表單時可以設定的網頁。
 feature: Adaptive Forms, Core Components
 role: User
 level: Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: 27decf88-a2ab-4b52-b6ae-babb1d3abdaa
-source-git-commit: f419883d0e83b5d711e0f594a8e14a8f2133f4b1
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '239'
-ht-degree: 0%
+source-wordcount: '245'
+ht-degree: 11%
 
 ---
 

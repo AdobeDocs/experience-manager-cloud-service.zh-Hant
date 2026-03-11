@@ -3,13 +3,14 @@ title: 如何為最適化Forms自訂自動產生的記錄檔案範本？
 description: 瞭解如何使用Adobe Forms Designer下載、自訂和重新上傳最適化Forms的自動產生記錄檔案(DoR)範本。
 feature: Adaptive Forms, Core Components, Foundation Components
 role: User, Developer
-source-git-commit: 51ec9ef76a8f3f9b7bf2cdc25b03f72e286f586f
+badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
+exl-id: 2416add3-0b9d-4a8d-a84d-d65c0762d8e8
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '846'
+source-wordcount: '852'
 ht-degree: 1%
 
 ---
-
 
 # 自訂自動產生的記錄檔案範本
 
@@ -126,4 +127,3 @@ ht-degree: 1%
 * [產生最適化Forms （基礎元件）的記錄檔案](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [記錄檔案的基礎範本](/help/forms/generate-document-of-record-core-components.md#base-template-of-a-document-of-record)
 * [自訂記錄檔案中的品牌資訊](/help/forms/generate-document-of-record-core-components.md#customize-the-branding-information-in-document-of-record)
-

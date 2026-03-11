@@ -4,10 +4,11 @@ description: 在雲端中使用AEM Forms Communication API產生、控制及保�
 Keywords: document generation, PDF manipulation, document security, batch processing, document conversion, PDF/A compliance
 feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, Developer, User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 43b648eb3984867fda35ee04de10b78dd836b481
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '2789'
+source-wordcount: '2795'
 ht-degree: 26%
 
 ---
@@ -17,7 +18,7 @@ ht-degree: 26%
 
 > **版本可用性**
 >
-> * **AEM 6.5**： [AEM檔案服務總覽](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html?lang=zh-Hant)
+> * **AEM 6.5**： [AEM檔案服務總覽](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html)
 > * **AEM as a Cloud Service**：此文章
 
 ## 簡介

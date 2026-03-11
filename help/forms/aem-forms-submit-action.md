@@ -3,15 +3,16 @@ title: 如何設定最適化表單的提交動作？
 description: 最適化表單提供多個提交動作。提交動作會定義提交之後處理最適化表單的方式。您可以使用內建的提交動作或建立自己的動作。
 feature: Adaptive Forms, Foundation Components, Edge Delivery Services, Core Components
 role: User, Developer
-source-git-commit: c0df3c6eaf4e3530cca04157e1a5810ebf5b4055
+badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
+exl-id: f609566e-6210-4a66-adaf-1dac9e9cd6d7
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '667'
-ht-degree: 58%
+source-wordcount: '673'
+ht-degree: 61%
 
 ---
 
-
-# 提交最適化Forms支援的動作
+# 自適應表單支援的提交動作
 
 最適化表單可讓您建立吸引人、回應式、動態且最適化的表單。這些模組提供直覺式使用者介面和一組現成可用的元件，讓您有效率地設計和管理表單。 您可以設定各種提交動作，將表單資料傳送至OneDrive、SharePoint、Workfront Fusion等服務。
 
@@ -23,13 +24,13 @@ ht-degree: 58%
 * 使用表單資料模型(FDM)，順暢地將資料傳送至已設定的資料來源。
 * 方便地將資料提交到 REST 端點。
 
-## 提交最適化Forms支援的動作
+## 自適應表單支援的提交動作
 
 AEM forms提供下列立即可用的提交動作：
 
 * [寄送電子郵件](/help/forms/configure-submit-action-send-email.md)
 * [叫用 Power Automate 流程](/help/forms/forms-microsoft-power-automate-integration.md)
-* [提交到 SharePoint](/help/forms/configure-submit-action-sharepoint.md)
+* [提交至 SharePoint](/help/forms/configure-submit-action-sharepoint.md)
 * [叫用Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [使用表單資料模型 (FDM) 提交](/help/forms/using-form-data-model.md)
 * [提交到 Azure Blob 儲存體](/help/forms/configure-submit-action-azure-blob-storage.md)
@@ -53,12 +54,12 @@ AEM forms提供下列立即可用的提交動作：
 |----------------------------|------------------------|------------------|------------------|------------------------|
 | 傳送電子郵件 | ✅支援 | ✅支援 | ✅支援 |                        |
 | Power Automate流程 | ✅支援 | ✅支援 | ✅支援 |                        |
-| 提交到 SharePoint | ✅支援 | ✅支援 | ✅支援 |                        |
+| 提交至 SharePoint | ✅支援 | ✅支援 | ✅支援 |                        |
 | Workfront Fusion | ✅支援 | ✅支援 | ✅支援 |                        |
 | 使用FDM提交 | ✅支援 | ✅支援 | ✅支援 |                        |
 | 提交至AEP | ✅支援 | ✅支援 | ✅支援 |                        |
-| Azure Blob儲存體 | ✅支援 | ✅支援 | ✅支援 |                        |
-| 提交至REST端點 | ✅支援 | ✅支援 | ✅支援 |                        |
+| Azure Blob儲存 | ✅支援 | ✅支援 | ✅支援 |                        |
+| 提交到 REST 端點 | ✅支援 | ✅支援 | ✅支援 |                        |
 | 提交至 Marketo Engage | ✅支援 | ✅支援 | ✅支援 |                        |
 | 提交到 OneDrive | ✅支援 | ✅支援 | ✅支援 |                        |
 | 呼叫 AEM 工作流程 | ✅支援 | ✅支援 | ✅支援 |                        |
@@ -118,4 +119,3 @@ When you prefill a form data model (FDM), or schema based Adaptive Form with XML
 ## 另請參閱
 
 {{af-submit-action}}
-

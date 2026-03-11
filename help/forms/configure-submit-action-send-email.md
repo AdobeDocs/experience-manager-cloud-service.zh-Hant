@@ -3,11 +3,12 @@ title: 如何在提交最適化表單時傳送電子郵件？
 description: 探索在提交最適化表單時設定電子郵件通知的程式。
 keywords: 如何傳送最適化表單的電子郵件、電子郵件提交動作、最適化表單電子郵件、表單提交電子郵件、傳送電子郵件指南
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
+badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: 70386e57-345b-4edb-97f1-3fd52ea9ff4f
 role: User, Developer
-source-git-commit: 79046330f5c3fe3b19ac35200ef0750f28ba31c4
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '953'
+source-wordcount: '959'
 ht-degree: 22%
 
 ---
@@ -94,7 +95,7 @@ ht-degree: 22%
 若要在Universal Editor中設定傳送電子郵件提交動作：
 
 1. 開啟最適化表單進行編輯。
-1. 按一下編輯器上的&#x200B;**編輯表單屬性**&#x200B;擴充功能。
+1. 按一下編輯器上的&#x200B;**編輯表單屬性**擴充功能。
 **表單屬性**&#x200B;對話方塊就會顯示。
 
    >[!NOTE]

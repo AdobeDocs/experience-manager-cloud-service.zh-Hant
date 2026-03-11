@@ -1,5 +1,5 @@
 ---
-title: 偵錯HTML5 forms
+title: HTML5 表單偵錯
 description: 本檔案列出疑難排解各種已知問題的步驟。
 contentOwner: robhagat
 content-type: reference
@@ -7,17 +7,18 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5260d981-da40-40ab-834e-88e091840813
 feature: HTML5 Forms,Mobile Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: 7330c03f-7102-43c0-aac6-825cce8a113d
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '811'
-ht-degree: 0%
+source-wordcount: '817'
+ht-degree: 1%
 
 ---
 
-# 偵錯HTML5 forms {#debugging-html-forms}
+# HTML5 表單偵錯 {#debugging-html-forms}
 
 本檔案包含數個疑難排解案例。 對於每種情況，都提供了疑難排解問題的一些步驟。 請按照以下步驟操作，如果問題仍然存在，請設定記錄器以取得並檢閱記錄檔中的錯誤/警告。 如需HTML5表單記錄的詳細資訊，請參閱[產生HTML5表單的記錄](/help/forms/enable-logs.md)。
 

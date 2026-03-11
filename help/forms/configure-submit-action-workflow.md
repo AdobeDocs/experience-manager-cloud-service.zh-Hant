@@ -3,12 +3,13 @@ title: 如何將AEM工作流程與最適化表單整合？
 description: 探索使用AEM Forms提交動作自動化工作流程初始化的程式。
 keywords: AEM工作流程，整合最適化表單與AEM工作流程，叫用AEM工作流程提交動作
 feature: Adaptive Forms, Core Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: b7788e3d-acd8-4867-b232-f9767cf6b2f5
 role: User, Developer
-source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1434'
-ht-degree: 60%
+source-wordcount: '1440'
+ht-degree: 64%
 
 ---
 
@@ -65,7 +66,7 @@ Before using the **[!UICONTROL Invoke an AEM Workflow]** Submit Action configure
 1. 從&#x200B;**[!UICONTROL 使用]**&#x200B;的記錄檔案下拉式清單中選取選項。
 
    **記錄文件**：包含為最適化表單產生的記錄文件。您可以使用「**[!UICONTROL 記錄文件路徑]**」選項指定記錄文件檔案的名稱，以及相對於承載的檔案路徑。例如，`/addresschange/DoR.pdf` 路徑會在相對於承載的位置建立一個名為 `addresschange` 的資料夾，並將 `DoR.pdf` 放置在相對於承載的位置。您也可以指定 `DoR.pdf` 僅儲存記錄文件而不建立資料夾階層。如果工作流程標記為外部資料儲存空間，請使用變數選項，並從工作流程模型可用的變數清單中選取變數。
-1. 按一下&#x200B;**[!UICONTROL 「完成」]**。
+1. 按一下&#x200B;**[!UICONTROL 完成]**。
 
    >[!NOTE]
    >
@@ -94,7 +95,7 @@ Before using the **[!UICONTROL Invoke an AEM Workflow]** Submit Action configure
 1. 從&#x200B;**[!UICONTROL 使用]**&#x200B;的記錄檔案下拉式清單中選取選項。
 
    **記錄文件**：包含為最適化表單產生的記錄文件。您可以使用「**[!UICONTROL 記錄文件路徑]**」選項指定記錄文件檔案的名稱，以及相對於承載的檔案路徑。例如，`/addresschange/DoR.pdf` 路徑會在相對於承載的位置建立一個名為 `addresschange` 的資料夾，並將 `DoR.pdf` 放置在相對於承載的位置。您也可以指定 `DoR.pdf` 僅儲存記錄文件而不建立資料夾階層。如果工作流程標記為外部資料儲存空間，請使用變數選項，並從工作流程模型可用的變數清單中選取變數。
-1. 按一下&#x200B;**[!UICONTROL 「完成」]**。
+1. 按一下&#x200B;**[!UICONTROL 完成]**。
 
    >[!NOTE]
    >
@@ -105,13 +106,13 @@ Before using the **[!UICONTROL Invoke an AEM Workflow]** Submit Action configure
 若要針對在Universal Editor中編寫的最適化表單設定具有[AEM工作流程](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=zh-Hant#extending-aem)的自動化程式，請執行下列步驟：
 
 1. 開啟最適化表單進行編輯。
-1. 按一下編輯器上的&#x200B;**編輯表單屬性**&#x200B;擴充功能。
+1. 按一下編輯器上的&#x200B;**編輯表單屬性**擴充功能。
 **表單屬性**&#x200B;對話方塊就會顯示。
 
    >[!NOTE]
    >
-   > * 如果您在通用編輯器介面中看不到&#x200B;**編輯表單屬性**&#x200B;圖示，請在Extension Manager中啟用&#x200B;**編輯表單屬性**&#x200B;擴充功能。
-   > * 請參閱[Extension Manager功能焦點](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)文章，瞭解如何在通用編輯器中啟用或停用擴充功能。
+   > * 若您在通用編輯器介面中沒有看到「**編輯表單屬性**」圖示，請在 Extension Manager 中啟用&#x200B;**編輯表單屬性**&#x200B;擴充功能。
+   > * 請參閱 [Extension Manager 功能重點介紹](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)文章，了解如何在通用編輯器中啟用或停用擴充功能。
 
 1. 按一下「**提交**」標籤，然後選取「**[!UICONTROL 叫用AEM工作流程]**」提交動作。
 
@@ -130,7 +131,7 @@ Before using the **[!UICONTROL Invoke an AEM Workflow]** Submit Action configure
 1. 從&#x200B;**[!UICONTROL 使用]**&#x200B;的記錄檔案下拉式清單中選取選項。
 
    **記錄文件**：包含為最適化表單產生的記錄文件。您可以使用「**[!UICONTROL 記錄文件路徑]**」選項指定記錄文件檔案的名稱，以及相對於承載的檔案路徑。例如，`/addresschange/DoR.pdf` 路徑會在相對於承載的位置建立一個名為 `addresschange` 的資料夾，並將 `DoR.pdf` 放置在相對於承載的位置。您也可以指定 `DoR.pdf` 僅儲存記錄文件而不建立資料夾階層。如果工作流程標記為外部資料儲存空間，請使用變數選項，並從工作流程模型可用的變數清單中選取變數。
-1. 按一下&#x200B;**[!UICONTROL 「完成」]**。
+1. 按一下&#x200B;**[!UICONTROL 完成]**。
 
    >[!NOTE]
    >

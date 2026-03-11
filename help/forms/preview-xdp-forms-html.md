@@ -3,12 +3,13 @@ title: 產生 XDP 表單的 HTML5 預覽
 description: 在LiveCycle Designer中預覽HTML索引標籤可用來預覽顯示在瀏覽器中的表單。
 topic-tags: author
 feature: HTML5 Forms,Mobile Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: 548f302b-57f0-4bdc-8a99-1a4967caa32f
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '807'
+source-wordcount: '813'
 ht-degree: 2%
 
 ---
@@ -51,7 +52,7 @@ ht-degree: 2%
    >請勿複製並貼上「驗證需求」欄位中的指定值，因為這會損壞值中的特殊字元。 請改為在欄位中輸入指定的值。
 
 1. 在&#x200B;**[!UICONTROL 匿名使用者名稱]**&#x200B;與&#x200B;**[!UICONTROL 匿名使用者密碼]**&#x200B;欄位中分別指定使用者名稱與密碼。 指定的認證用於處理匿名驗證，並允許匿名使用者存取。
-1. 按一下[儲存]儲存組態。**&#x200B;**
+1. 按一下[儲存]儲存組態。****
 
 ### 停用保護模式 {#disable-protected-mode}
 
@@ -68,7 +69,7 @@ ht-degree: 2%
 ### 提供AEM Forms伺服器的詳細資訊 {#provide-details-of-aem-forms-server}
 
 1. 在Designer中，移至&#x200B;**工具** > **選項**。
-1. 在[選項]視窗中，選取[伺服器選項]頁面&#x200B;**&#x200B;**，提供下列詳細資料，然後按一下[確定]&#x200B;**&#x200B;**。
+1. 在[選項]視窗中，選取[伺服器選項]頁面&#x200B;****，提供下列詳細資料，然後按一下[確定]****。
 
    * **伺服器網址**： AEM Forms伺服器網址。
 

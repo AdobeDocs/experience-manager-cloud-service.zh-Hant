@@ -3,10 +3,11 @@ title: 如何設定AEM Forms的統一儲存聯結器(USC)？
 description: 瞭解如何管理AEM Forms的統一儲存聯結器(USC)。 使用統一儲存聯結器(USC)將AEM Forms連線至外部資料儲存。
 role: Admin, Developer, User
 feature: Adaptive Forms, Workflow
+badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: c93d0242-0c15-4d69-82a1-d6fcc7da4bae
-source-git-commit: c17e4e70fa8cec176c908983230b03f2899bc1ca
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '643'
 ht-degree: 0%
 
 ---
@@ -19,7 +20,7 @@ ht-degree: 0%
 
 ## 將AEM工作流程與Microsoft Azure儲存伺服器連線 {#connect-workflows-with-azure}
 
-建立Azure儲存體設定，並使用統一儲存聯結器(USC)參照該設定。 然後，您可以設定AEM工作流程模型以將資料儲存區外部化，以將其連線至Azure儲存體伺服器。
+建立Azure儲存體設定，並使用統一儲存聯結器(USC)參照該設定。 接著，您可以設定AEM工作流程模型，將資料儲存空間外部化，以便連結至Azure儲存伺服器。
 
 ### 建立[!DNL Azure]儲存設定 {#create-azure-storage-configuration}
 
@@ -30,7 +31,7 @@ ht-degree: 0%
 1. 導覽至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 雲端服務]** > **[!UICONTROL Azure儲存空間]**。
 1. 選取資料夾以建立組態，並選取&#x200B;**[!UICONTROL 建立]**。
 1. 在&#x200B;**[!UICONTROL 標題]**&#x200B;欄位中指定組態的標題。
-1. 在&#x200B;**[!UICONTROL Azure儲存體帳戶]**&#x200B;欄位中指定[!DNL Azure]儲存體帳戶的名稱。
+1. 在[!DNL Azure]Azure儲存體帳戶&#x200B;**[!UICONTROL 欄位中指定]**&#x200B;儲存體帳戶的名稱。
 1. 在&#x200B;**[!UICONTROL Azure存取金鑰]**&#x200B;欄位中指定存取Azure儲存體帳戶的金鑰，並選取&#x200B;**[!UICONTROL 儲存]**。
 
 ### 設定AEM工作流程的統一儲存聯結器(USC) {#configure-unified-storage-connector-workflows}
@@ -40,7 +41,7 @@ ht-degree: 0%
 1. 導覽至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Forms]** > **[!UICONTROL 整合式儲存聯結器]**。
 
 1. 在&#x200B;**[!UICONTROL 工作流程]**&#x200B;區段中，從「儲存」下拉式清單中選取&#x200B;**[!UICONTROL Azure]**。
-1. 在&#x200B;**[!UICONTROL 儲存設定路徑]**&#x200B;欄位中指定Azure儲存體設定[&#128279;](#create-azure-storage-configuration)的設定路徑。
+1. 在[儲存設定路徑](#create-azure-storage-configuration)欄位中指定Azure儲存設定&#x200B;**[!UICONTROL 的]**&#x200B;設定路徑。
 1. 選取&#x200B;**[!UICONTROL 發佈]**，然後選取&#x200B;**[!UICONTROL 儲存]**&#x200B;以儲存組態。
 
 ### 設定外部資料儲存的AEM工作流程模型 {#configure-workflow-external-data-storage}
@@ -61,9 +62,9 @@ ht-degree: 0%
 
 以下是使用AEM工作流程並將資料儲存至外部資料儲存庫(例如Microsoft Azure儲存伺服器)時的准則：
 
-* 在工作流程模型步驟中定義輸入和輸出資料檔案及附件時，使用變數來儲存資料。 請勿選取&#x200B;**[!UICONTROL 相對於承載]**&#x200B;以及&#x200B;**[!UICONTROL 絕對路徑可用的]**&#x200B;選項。 當您[設定外部資料儲存的AEM工作流程模型](#configure-workflow-external-data-storage)後，**[!UICONTROL 相對於承載]**&#x200B;和&#x200B;**[!UICONTROL 在絕對路徑上可用的]**&#x200B;選項就不會自動顯示。
+* 在工作流程模型步驟中定義輸入和輸出資料檔案及附件時，使用變數來儲存資料。 請勿選取&#x200B;**[!UICONTROL 相對於承載]**&#x200B;以及&#x200B;**[!UICONTROL 絕對路徑可用的]**&#x200B;選項。 當您&#x200B;**[!UICONTROL 設定外部資料儲存的AEM工作流程模型]**&#x200B;後，**[!UICONTROL 相對於承載]**&#x200B;和[在絕對路徑上可用的](#configure-workflow-external-data-storage)選項就不會自動顯示。
 
-* 將最適化表單提交至AEM Workflow時，請使用變數來儲存資料檔案和附件。 將最適化表單提交至AEM工作流程時，請勿選取&#x200B;**[!UICONTROL 相對於承載]**&#x200B;選項。 [設定外部資料儲存的AEM工作流程模型](#configure-workflow-external-data-storage)後，**[!UICONTROL 相對於承載]**&#x200B;選項就不會自動顯示。
+* 將最適化表單提交至AEM Workflow時，請使用變數來儲存資料檔案和附件。 將最適化表單提交至AEM工作流程時，請勿選取&#x200B;**[!UICONTROL 相對於承載]**&#x200B;選項。 **[!UICONTROL 設定外部資料儲存的AEM工作流程模型]**&#x200B;後，[相對於承載](#configure-workflow-external-data-storage)選項就不會自動顯示。
 
 * 請勿在工作流程模型中使用自訂AEM工作流程步驟，將資料儲存在CRX DE存放庫中。
 
@@ -72,6 +73,6 @@ ht-degree: 0%
 >[!MORELIKETHIS]
 >
 >* [設定AEM Forms的資料來源](/help/forms/configure-data-sources.md)
->* [設定AEM Forms的Azure儲存體](/help/forms/configure-azure-storage.md)
+>* [設定AEM Forms的Azure儲存空間](/help/forms/configure-azure-storage.md)
 >* [整合Microsoft Dynamics 365](/help/forms/configure-msdynamics.md)
 >  [將Forms入口網站新增至AEM Sites頁面](/help/forms/configure-forms-portal.md)

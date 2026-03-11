@@ -5,13 +5,14 @@ feature: Release Information
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: a771aa7e683cfbcacc8a9d5765c63d50169a2756
+badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
+exl-id: c58ea216-7de0-40e1-9493-9ceb472e5ef8
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '761'
-ht-degree: 3%
+source-wordcount: '767'
+ht-degree: 5%
 
 ---
-
 
 # 建立您的第一個互動式通訊
 
@@ -70,7 +71,7 @@ ht-degree: 3%
 
 一旦您為Web版本建立了所有建置區塊（例如表單資料模型、檔案片段和範本），您就可以開始建立互動式通訊。 若要開始建立互動式通訊：
 
-1. 登入您的AEM Formsas a Cloud Service環境。
+1. 登入AEM Forms as a Cloud Service環境。
 1. 前往「Forms > Forms與檔案」
 1. 按一下&#x200B;**建立**&#x200B;並選取&#x200B;**通訊檔案**。 畫面會顯示設定下列選項的設定畫面：
 

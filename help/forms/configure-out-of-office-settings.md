@@ -1,13 +1,14 @@
 ---
 title: 如何在AEM Forms中設定「外出」設定？
 description: 在休假或休假時委派任務以無縫執行工作流程。
+badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: c7e436f1-8e1c-4334-b3dc-ab9800695301
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '873'
-ht-degree: 1%
+source-wordcount: '879'
+ht-degree: 2%
 
 ---
 
@@ -16,7 +17,7 @@ ht-degree: 1%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/configure-out-of-office-settings.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/configure-out-of-office-settings.html) |
 | AEM as a Cloud Service  | 本文章 |
 
 如果您計畫不在辦公室，則可以指定指定指定給您該期間之料號的變更。
@@ -40,8 +41,8 @@ ht-degree: 1%
 執行以下步驟來啟用您帳戶的郵件答錄機設定，並將您的收件匣專案委派給其他使用者：
 
 1. 登入您的AEM執行個體。 選取![收件匣](assets/bell.svg)圖示，然後選取&#x200B;**[!UICONTROL 全部檢視]**。 您的收件匣專案清單隨即顯示。
-1. 選取&#x200B;**[!UICONTROL 建立]**&#x200B;按鈕旁的![檢視選擇器](assets/viewlist.svg)或![檢視選擇器](assets/calendar.svg)圖示，並選取&#x200B;**[!UICONTROL 設定]**。 設定對話方塊隨即顯示。
-1. 開啟[設定]對話方塊上的[外出] **&#x200B;**&#x200B;索引標籤。
+1. 選取![建立](assets/viewlist.svg)按鈕旁的![檢視選擇器](assets/calendar.svg)或&#x200B;**[!UICONTROL 檢視選擇器]**&#x200B;圖示，並選取&#x200B;**[!UICONTROL 設定]**。 設定對話方塊隨即顯示。
+1. 開啟[設定]對話方塊上的[外出] ****&#x200B;索引標籤。
 1. 選取&#x200B;**[!UICONTROL 啟用/停用]**&#x200B;按鈕以啟用「外出」設定。
 1. 指定設定的&#x200B;**[!UICONTROL 開始時間]**&#x200B;和&#x200B;**[!UICONTROL 結束時間]**。 專案只會在指定的期間內委派。 將&#x200B;**[!UICONTROL 結束時間]**&#x200B;欄位保留空白以委派專案無限期。
 1. 選取&#x200B;**[!UICONTROL 在此期間]**&#x200B;轉寄我的專案核取方塊。 如果您未選取選項也未指定受託人，則您的專案不會轉寄給任何使用者。 雖然您已離開並啟用此設定，但專案仍會保留在您的收件匣中。
@@ -66,8 +67,8 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->(僅適用於以Forms為中心的工作流程專案)使用工作流程中&#x200B;**[!UICONTROL 指派任務]**&#x200B;步驟的「休假中」設定&#x200B;**選項，啟用**&#x200B;允許受指派人進行委派。 只有已啟用上述選項的專案才會委派給其他使用者。
->(僅適用於以Forms為中心的工作流程專案)啟用工作流程中&#x200B;**[!UICONTROL 指派任務]**&#x200B;步驟的「休假中」設定&#x200B;**選項，讓**&#x200B;允許受指派人進行委派。 只有已啟用前述選項的專案才會委派給其他使用者。
+>(僅適用於以Forms為中心的工作流程專案)使用工作流程中&#x200B;**[!UICONTROL 指派任務]**&#x200B;步驟的「休假中」設定&#x200B;**[!UICONTROL 選項，啟用]**允許受指派人進行委派。 只有已啟用上述選項的專案才會委派給其他使用者。
+>(僅適用於以Forms為中心的工作流程專案)啟用工作流程中&#x200B;**[!UICONTROL 指派任務]**&#x200B;步驟的「休假中」設定&#x200B;**[!UICONTROL 選項，讓]**&#x200B;允許受指派人進行委派。 只有已啟用前述選項的專案才會委派給其他使用者。
 
 ## 限制 {#limitations}
 

@@ -1,19 +1,20 @@
 ---
 title: 如何疑難排解表單建立失敗？
-description: 疑難排解AEM Formsas a Cloud Service環境中表單建立的失敗。
+description: 疑難排解AEM Forms as a Cloud Service環境中表單建立的失敗。
 feature: Adaptive Forms
 role: User
+badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: 169ea727-0941-4a1d-bc33-d9fe208b27ab
-source-git-commit: 0b693cb51a96011235fa87a5899426c6b0c2509a
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '183'
-ht-degree: 0%
+source-wordcount: '189'
+ht-degree: 1%
 
 ---
 
 # 發佈表單時出現問題{#form-creation-fails}
 
-使用者更新至AEM Formsas a Cloud Service版本`2024.5.16461`後：
+使用者更新至AEM Forms as a Cloud Service版本`2024.5.16461`後：
 
 **有些使用者**&#x200B;在建立表單時可能會遇到問題，當使用者建立表單時，建立對話方塊中會彈出下列錯誤訊息：
 
@@ -27,10 +28,10 @@ ht-degree: 0%
 
 若要解決此問題，請執行以下步驟：
 
-1. 確定您在表單中使用的範本在路徑`<template-path>/initial/jcr:content node`沒有`jcr:uuid`和其他系統產生的受保護屬性。
-1. 使用範本主控台明確地Publish範本。
+1. 確定您在表單中使用的範本在路徑`jcr:uuid`沒有`<template-path>/initial/jcr:content node`和其他系統產生的受保護屬性。
+1. 使用範本主控台明確地發佈範本。
 1. 現在，發佈範本時，請嘗試使用範本建立新表單。
-1. 如果您在未來的版本中使用了範本更新，請再次Publish範本（如步驟2所述）以防止建立表單失敗問題。
+1. 如果您在未來的版本中使用了範本更新，請再次發佈範本（如步驟2所述）以防止表單建立失敗問題。
 
 
 <!--

@@ -4,17 +4,18 @@ description: 視覺化規則編輯器中的非同步函式呼叫
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
+badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: a240ba26-a6d8-4643-8acb-1d8812dac61f
-source-git-commit: 2cae8bb1050bc4538f4645d9f064b227fb947d75
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1409'
+source-wordcount: '1415'
 ht-degree: 0%
 
 ---
 
 # 根據核心元件在最適化表單中使用非同步函式
 
-最適化Forms[&#128279;](/help/forms/rule-editor-core-components.md)中的規則編輯器支援非同步功能，可讓您整合和管理需要等待外部程式或資料擷取的作業，而不會中斷使用者與表單的互動。
+最適化Forms[中的](/help/forms/rule-editor-core-components.md)規則編輯器支援非同步功能，可讓您整合和管理需要等待外部程式或資料擷取的作業，而不會中斷使用者與表單的互動。
 
 ## 使用非同步或同步功能取決於哪些因素？
 
@@ -57,7 +58,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> * 當您選取&#x200B;**非同步函式呼叫**&#x200B;規則型別時，表單的規則編輯器只會顯示傳回型別為`Promise`的函式。
+> * 當您選取`Promise`非同步函式呼叫&#x200B;**規則型別時，表單的規則編輯器只會顯示傳回型別為**&#x200B;的函式。
 > * 若要瞭解如何建立自訂函式，請參閱標題為[根據核心元件為最適化表單建立自訂函式](/help/forms/custom-function-core-component-create-function.md)的文章。
 
 `matchOTP()`函式已實作為自訂函式。 下列程式碼會新增至自訂函式的JS檔案中：
@@ -113,8 +114,8 @@ function asyncOperationForOTPMatch(otp, callback) {
 1. 以編寫模式開啟最適化表單，選取表單元件，然後選取&#x200B;**[!UICONTROL 規則編輯器]**&#x200B;以開啟規則編輯器。
 1. 選取「**[!UICONTROL 建立]**」。
 1. 在規則的&#x200B;**When**&#x200B;區段中建立條件，以點選按鈕。 例如，按一下&#x200B;**When[Confirm]**。
-1. 在&#x200B;**然後**&#x200B;區段中，從&#x200B;**選取動作**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL 非同步函式呼叫]**。
-當您選取&#x200B;**[!UICONTROL 非同步函式呼叫]**&#x200B;時，就會顯示具有`Promise`傳回型別的函式。
+1. 在&#x200B;**然後**&#x200B;區段中，從&#x200B;**[!UICONTROL 選取動作]**&#x200B;下拉式清單中選取&#x200B;**非同步函式呼叫**。
+當您選取**[!UICONTROL 非同步函式呼叫]**&#x200B;時，就會顯示具有`Promise`傳回型別的函式。
 1. 從清單中選取非同步函式。 例如，選取`matchOTP()`函式，其回呼會顯示為`Add success callback`和`add failure callback`。
 1. 現在選取&#x200B;**[!UICONTROL 輸入]**&#x200B;繫結。 例如，選取&#x200B;**[!UICONTROL 輸入]**&#x200B;作為`Form Object`，並將其與`OTP`欄位進行比較。
 
@@ -122,7 +123,7 @@ function asyncOperationForOTPMatch(otp, callback) {
 
 ![規則型別](/help/forms/assets/asyn-function-rule-type.png)
 
-現在，您可以繼續實作`matchOTP`函式的`Success`和`Failure`回呼。
+現在，您可以繼續實作`Success`函式的`Failure`和`matchOTP`回呼。
 
 #### 2.2為非同步函式實作回呼
 
@@ -130,7 +131,7 @@ function asyncOperationForOTPMatch(otp, callback) {
 
 **為`Add Success callback`方法建立規則**
 
-如果OTP符合值`111`，讓我們建立規則以顯示`userdetails`面板。
+如果OTP符合值`userdetails`，讓我們建立規則以顯示`111`面板。
 
 1. 按一下&#x200B;**[!UICONTROL 新增成功回呼]**。
 1. 按一下&#x200B;**[!UICONTROL 新增陳述式]**&#x200B;以建立規則。
@@ -142,14 +143,14 @@ function asyncOperationForOTPMatch(otp, callback) {
    > **[!UICONTROL Get Event Payload]**&#x200B;函式會擷取與特定事件相關的資料，以動態管理使用者互動。
 
 1. 從&#x200B;**Input**&#x200B;區段選取其對應的繫結。 例如，選取&#x200B;**[!UICONTROL 字串]**&#x200B;並輸入`valid`。 比較輸入的字串與`true`。
-1. 在&#x200B;**然後**&#x200B;區段中，從&#x200B;**選取動作**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL 顯示]**。 例如，顯示`userdetails`面板。
+1. 在&#x200B;**然後**&#x200B;區段中，從&#x200B;**[!UICONTROL 選取動作]**&#x200B;下拉式清單中選取&#x200B;**顯示**。 例如，顯示`userdetails`面板。
 1. 按一下&#x200B;**[!UICONTROL 新增陳述式]**。
-1. 從&#x200B;**選取動作**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL 隱藏]**。 例如，隱藏`error message`文字方塊。
-1. 按一下&#x200B;**[!UICONTROL 「完成」]**。
+1. 從&#x200B;**[!UICONTROL 選取動作]**&#x200B;下拉式清單中選取&#x200B;**隱藏**。 例如，隱藏`error message`文字方塊。
+1. 按一下&#x200B;**[!UICONTROL 完成]**。
 
 ![成功呼叫](/help/forms/assets/rule-editor-success-callback.png){width=50%, height=50%}
 
-請參考下方的熒幕擷圖，其中使用者以`111`身分進入OTP，且按一下`Confirm`按鈕時就會顯示`User Details`面板。
+請參考下方的熒幕擷圖，其中使用者以`111`身分進入OTP，且按一下`User Details`按鈕時就會顯示`Confirm`面板。
 
 ![成功](/help/forms/assets/success.gif)
 
@@ -163,10 +164,10 @@ function asyncOperationForOTPMatch(otp, callback) {
 1. 在規則的&#x200B;**When**&#x200B;區段中建立條件。
 1. 選取&#x200B;**[!UICONTROL 函式輸出]** > **[!UICONTROL 取得事件承載]**。
 1. 從&#x200B;**Input**&#x200B;區段選取其對應的繫結。 例如，選取&#x200B;**[!UICONTROL 字串]**&#x200B;並輸入`valid`。 比較輸入的字串與`false`。
-1. 在&#x200B;**然後**&#x200B;區段中，從&#x200B;**選取動作**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL 顯示]**。 例如，顯示`error message`文字方塊。
+1. 在&#x200B;**然後**&#x200B;區段中，從&#x200B;**[!UICONTROL 選取動作]**&#x200B;下拉式清單中選取&#x200B;**顯示**。 例如，顯示`error message`文字方塊。
 1. 按一下&#x200B;**[!UICONTROL 新增陳述式]**。
-1. 從&#x200B;**選取動作**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL 隱藏]**。 例如，隱藏`userdetails`面板。
-1. 按一下&#x200B;**[!UICONTROL 「完成」]**。
+1. 從&#x200B;**[!UICONTROL 選取動作]**&#x200B;下拉式清單中選取&#x200B;**隱藏**。 例如，隱藏`userdetails`面板。
+1. 按一下&#x200B;**[!UICONTROL 完成]**。
 
 ![失敗回呼方法](/help/forms/assets/rule-editor-failure-callback.png){width=50%, height=50%}
 
@@ -209,7 +210,7 @@ function asyncOperationForOTPMatch(otp, callback) {
 }
 ```
 
-在上述範例中，asyncFunction函式是`asynchronous function`。 它透過向`https://petstore.swagger.io/v2/store/inventory`發出`GET`請求來執行非同步操作。 它會使用`await`等待回應、使用`response.json()`將回應本文剖析為JSON，然後傳回資料。 `callAsyncFunction`函式是同步自訂函式，會叫用`asyncFunction`函式並在主控台中顯示回應資料。 雖然`callAsyncFunction`函式是同步的，但它會呼叫非同步asyncFunction函式，並以`then`和`catch`陳述式處理其結果。
+在上述範例中，asyncFunction函式是`asynchronous function`。 它透過向`GET`發出`https://petstore.swagger.io/v2/store/inventory`請求來執行非同步操作。 它會使用`await`等待回應、使用`response.json()`將回應本文剖析為JSON，然後傳回資料。 `callAsyncFunction`函式是同步自訂函式，會叫用`asyncFunction`函式並在主控台中顯示回應資料。 雖然`callAsyncFunction`函式是同步的，但它會呼叫非同步asyncFunction函式，並以`then`和`catch`陳述式處理其結果。
 
 若要檢視其運作情況，讓我們新增按鈕，並為按鈕建立規則，此規則會在按鈕按一下時叫用非同步函式。
 

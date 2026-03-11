@@ -1,13 +1,14 @@
 ---
-title: 如何將變數新增至AEM Workflow步驟？
+title: 如何將變數新增至AEM工作流程步驟？
 description: 瞭解如何建立變數、設定變數的值，以及在 [!DNL AEM Forms] 工作流程步驟中使用變數。
+badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: d9139ea9-2f86-476c-8767-b36766790f2c
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1930'
-ht-degree: 0%
+source-wordcount: '1936'
+ht-degree: 1%
 
 ---
 
@@ -15,18 +16,18 @@ ht-degree: 0%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/variable-in-aem-workflows.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/variable-in-aem-workflows.html) |
 | AEM as a Cloud Service  | 本文章 |
 
 工作流程模型中的變數是根據其資料型別儲存值的方式。 您可以在任何工作流程步驟中使用變數的名稱，以擷取儲存在變數中的值。 您也可以使用變數名稱來定義用於進行路由決定的運算式。
 
-在AEM Workflow模型中，您可以：
+在AEM工作流程模型中，您可以：
 
 * [根據您要儲存於其中的資訊型別，建立資料型別的變數](variable-in-aem-workflows.md#create-a-variable)。
 * [使用「設定變數」工作流程步驟，設定變數](variable-in-aem-workflows.md#set-a-variable)的值。
-* [在所有[!DNL AEM Forms]工作流程步驟中使用變數](variable-in-aem-workflows.md#use-a-variable)來擷取儲存的值，並在OR Split和Goto步驟中定義路由運算式。
+* [在所有](variable-in-aem-workflows.md#use-a-variable)工作流程步驟中使用變數[!DNL AEM Forms]來擷取儲存的值，並在OR Split和Goto步驟中定義路由運算式。
 
-以下影片示範如何在AEM Workflow模型中建立、設定和使用變數：
+以下影片示範如何在AEM工作流程模型中建立、設定和使用變數：
 
 >[!VIDEO](assets/variables_introduction_1_1.mp4)
 
@@ -37,7 +38,7 @@ ht-degree: 0%
 您可以使用工作流程模型Sidekick中可用的變數區段來建立變數。 AEM工作流程變數支援下列資料型別：
 
 * **基本資料型別**： Long、Double、Boolean、Date和String
-* **複雜資料型別**： [檔案](https://helpx.adobe.com/tw/experience-manager/6-5/forms/javadocs/com/adobe/aemfd/docmanager/Document.html)、[XML](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html)、[JSON](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html)和表單資料模型執行個體。
+* **複雜資料型別**： [檔案](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aemfd/docmanager/Document.html)、[XML](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html)、[JSON](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html)和表單資料模型執行個體。
 
 >[!NOTE]
 >
@@ -157,7 +158,7 @@ ht-degree: 0%
 
 您可以使用規則定義、ECMA命令檔或外部命令檔來定義分支的路由表示式。
 
-您可以使用變數來定義使用運算式編輯器的路由運算式。 如需有關使用OR分割步驟的路由運算式的詳細資訊，請參閱[OR分割步驟](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=zh-Hant#extending-aem?lang=zh-Hant#or-split)。
+您可以使用變數來定義使用運算式編輯器的路由運算式。 如需有關使用OR分割步驟的路由運算式的詳細資訊，請參閱[OR分割步驟](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem#or-split)。
 
 在此範例中，在定義路由運算式之前，請使用[範例2](variable-in-aem-workflows.md#example2)設定&#x200B;**totalvalue**&#x200B;變數的值。 如果&#x200B;**totalvalue**&#x200B;變數的值大於50000，則分支1為作用中。 同樣地，您可以定義一個規則，在&#x200B;**totalvalue**&#x200B;變數的值小於50000時，讓Branch 2生效。
 
@@ -173,13 +174,13 @@ ht-degree: 0%
 
 與「OR分割」步驟類似，您可以使用規則定義、ECMA指令集或外部指令集來定義「轉至」步驟的路由表示式。
 
-您可以使用變數來定義使用運算式編輯器的路由運算式。 如需有關使用跳到步驟的路由運算式的詳細資訊，請參閱[跳到步驟](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=zh-Hant#extending-aem?lang=zh-Hant#goto-step)。
+您可以使用變數來定義使用運算式編輯器的路由運算式。 如需有關使用跳到步驟的路由運算式的詳細資訊，請參閱[跳到步驟](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem#goto-step)。
 
 ![移至規則](assets/variables_goto_rule1_new.png)
 
 在此範例中，如果&#x200B;**actiontaked**&#x200B;變數的值等於&#x200B;**需要更多資訊**，則「轉至」步驟會將「複查信用卡應用程式」指定為下一個步驟。
 
-如需在「跳至」步驟中使用規則定義的更多範例，請參閱[模擬For回圈](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=zh-Hant#extending-aem?lang=zh-Hant#simulateforloop)。
+如需在「跳至」步驟中使用規則定義的更多範例，請參閱[模擬For回圈](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem#simulateforloop)。
 
 #### 以Forms為中心的工作流程步驟 {#forms-workflow-centric-workflow-steps}
 
@@ -283,6 +284,6 @@ workflowSession.startWorkflow(model, wfData, metaData);
 1. 選取您要刪除之變數名稱旁的刪除圖示。
 1. 選取![done_icon](assets/Smock_Checkmark_18_N.svg)以確認並刪除變數。
 
-## 參考 {#references}
+## 參照 {#references}
 
 如需在[!DNL AEM Forms]工作流程步驟中使用變數的更多範例，請參閱[AEM工作流程中的變數](https://helpx.adobe.com/experience-manager/kt/forms/using/authoring_variables_in_aem_forms-workflow1.html)。

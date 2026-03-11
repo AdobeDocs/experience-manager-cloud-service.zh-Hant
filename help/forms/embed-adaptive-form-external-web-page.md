@@ -4,19 +4,20 @@ description: 瞭解如何將最適化Forms內嵌至網站。
 topic-tags: author
 role: Admin, Developer, User
 feature: Adaptive Forms
+badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: 00b8cd79-bf2d-4001-b2d6-1b020c868008
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '1009'
 ht-degree: 50%
 
 ---
 
-# 在外部網頁中內嵌適用性表單{#embed-adaptive-form-in-external-web-page}
+# 在外部網頁中嵌入適用性表單{#embed-adaptive-form-in-external-web-page}
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-external-web-page.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-external-web-page.html?lang=en) |
 | AEM as a Cloud Service  | 本文章 |
 
 你可以[在 AEM Sites 頁面嵌入調適型表單](/help/forms/embed-adaptive-form-aem-sites.md)或在 AEM 外部託管的網頁嵌入調適型表單。嵌入式調適型表單功能齊全，使用者無需離開頁面即可填寫並提交表單。此功能可幫助使用者在網頁維持相關的其他元素，並同時與表單進行互動。
@@ -25,15 +26,15 @@ ht-degree: 50%
 
 將調適型表單嵌入外部網站之前執行以下步驟
 
-* Publish此最適化表單將內嵌至AEM Forms伺服器的Publish執行個體。
+* 發佈要內嵌至AEM Forms伺服器發佈例項的最適化表單。
 * 在您的網站上建立或識別可託管最適化表單的網頁。 請確定網頁可以[從CDN](https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js)讀取jQuery檔案，或內嵌jQuery的本機復本。 必須有 jQuery 才可呈現調適型表單。
 * 當AEM伺服器和網頁位於不同的網域時，請執行一節中列出的步驟，[啟用AEM Forms將最適化表單提供給跨網域網站](#cross-site)。
 
-## 內嵌調適型表單 {#embed-adaptive-form}
+## 嵌入調適型表單 {#embed-adaptive-form}
 
 您可以在網頁中插入幾行 JavaScript 來嵌入調適型表單。代碼中的 API 會向 AEM 伺服器發送 HTTP 請求以獲得調適型表單資源，並將調適型表單注入指定的表單容器中。
 
-內嵌調適型表單：
+嵌入調適型表單：
 
 1. 使用以下代碼在您的網站上建立網頁：
 
@@ -116,7 +117,7 @@ ht-degree: 50%
 
 嵌入式調適型表單的外部網頁會發送請求至 AEM 伺服器；伺服器通常位於私人網絡中的防火牆後面。為確保將請求安全導向 AEM 伺刷器，建議設定反向代理伺服器。
 
-讓我們來看一個範例，說明如何在不使用Dispatcher的情況下設定Apache 2.4反向Proxy伺服器。 在此範例中，您正在裝載具有`/forms`內容路徑的AEM伺服器，並對應反向Proxy的`/forms`。 這可確保Apache伺服器上對`/forms`的任何請求都會導向到AEM執行個體。 此拓撲有助於減少Dispatcher層中的規則數量，因為所有要求都會加上前置詞`/forms`，以路由傳送至AEM伺服器。
+讓我們來看一個範例，說明如何在不使用Dispatcher的情況下設定Apache 2.4反向Proxy伺服器。 在此範例中，您正在裝載的AEM伺服器具有`/forms`內容路徑，並對應反向Proxy的`/forms`。 這可確保Apache伺服器上對`/forms`的任何請求都會導向到AEM執行個體。 此拓撲有助於減少Dispatcher層級的規則數量，因為所有要求都會加上前置詞`/forms`，以路由傳送至AEM伺服器。
 
 1. 開啟 `httpd.conf` 設定檔案並取消註釋以下代碼行。或者，您可以將這些代碼行加入檔案中。
 
@@ -159,8 +160,8 @@ ProxyPassReverse /content https://<AEM_Instance>/content
 
 * 確保網頁 CSS 定義的樣式規則與表單物件 CSS 不衝突。若要避免衝突，您可以使用AEM使用者端資料庫，重複使用最適化表單主題中的網頁CSS。 如需在最適化表單主題中使用使用者端資料庫的資訊，請參閱AEM Forms中的[主題](/help/forms/themes.md)。
 * 讓網頁中的表單容器使用整個視窗寬度。這樣可確保為行動裝置設定的 CSS 規則可使用，而無需任何變更。如果表單容器未採用完整的視窗寬度，您必須撰寫自訂CSS，讓表單能適應不同的行動裝置。
-* 使用 `[getData](https://helpx.adobe.com/tw/experience-manager/6-5/forms/javascript-api/GuideBridge.html)` API，取得用戶端以 XML 或 JSON 表示的表單資料。
-* 使用 `[unloadAdaptiveForm](https://helpx.adobe.com/tw/experience-manager/6-5/forms/javascript-api/GuideBridge.html)` API 從 HTML DOM 卸載調適型表單。
+* 使用 `[getData](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/GuideBridge.html)` API，取得用戶端以 XML 或 JSON 表示的表單資料。
+* 使用 `[unloadAdaptiveForm](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/GuideBridge.html)` API 從 HTML DOM 卸載調適型表單。
 * 設定從AEM伺服器傳送回應時的存取控制來源標頭。
 
 ## 啟用AEM Forms以向跨網域網站提供最適化表單 {#cross-site}

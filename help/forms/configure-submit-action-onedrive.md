@@ -3,11 +3,12 @@ title: 如何將最適化表單的資料提交至Microsoft&amp； reg； OneDriv
 description: 探索使用提交至OneDrive提交動作將AEM Forms與Microsoft&amp；reg； OneDrive連線的簡化流程。 瞭解設定OneDrive和設定提交動作以有效儲存及擷取資料的逐步指南
 keywords: AEM Forms OneDrive整合，連線至Microsoft OneDrive，使用AEM Forms設定OneDrive設定
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
+badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: dbfa4094-1b92-4a7c-a799-f66973d27054
 role: User, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '927'
 ht-degree: 50%
 
 ---
@@ -43,7 +44,7 @@ AEM Forms與Microsoft® OneDrive無縫整合的一些優點包括：
 1. 前往您的 **AEM Forms 作者**&#x200B;執行個體 >「**[!UICONTROL 工具]**」>「**[!UICONTROL 雲端服務]**」>「**[!UICONTROL Microsoft® OneDrive]**」。
 1. 一旦您選取了「**[!UICONTROL Microsoft® OneDrive]**」，系統就會將您重新導向到「**[!UICONTROL OneDrive 瀏覽器]**」。
 1. 選取一個&#x200B;**設定容器**。設定會儲存在選取的設定容器中。
-1. 按一下「**[!UICONTROL 建立]**」。此時會顯示 OneDrive 設定精靈。
+1. 按一下「**[!UICONTROL 建立]**」。 此時會顯示 OneDrive 設定精靈。
 
    ![OneDrive 設定畫面](/help/forms/assets/onedrive-configuration.png)
 
@@ -111,7 +112,7 @@ AEM Forms與Microsoft® OneDrive無縫整合的一些優點包括：
 執行以下步驟，使用在Universal Editor中編寫的最適化表單中的OneDrive儲存體設定：
 
 1. 開啟最適化表單進行編輯。
-1. 按一下編輯器上的&#x200B;**編輯表單屬性**&#x200B;擴充功能。
+1. 按一下編輯器上的&#x200B;**編輯表單屬性**擴充功能。
 **表單屬性**&#x200B;對話方塊就會顯示。
 
    >[!NOTE]
@@ -120,7 +121,7 @@ AEM Forms與Microsoft® OneDrive無縫整合的一些優點包括：
    > * 請參閱 [Extension Manager 功能重點介紹](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)文章，了解如何在通用編輯器中啟用或停用擴充功能。
 1. 按一下&#x200B;**提交**&#x200B;索引標籤，然後選取&#x200B;**[!UICONTROL 提交至OneDrive]**。
    ![OneDrive GIF](/help/forms/assets/submit-to-onedrive-ue.png)
-如果您選取&#x200B;**以原始名稱儲存附件**，則附件會使用其原始檔案名稱儲存在資料夾中。 您也可以將記錄檔案(DoR)儲存在Azure Blob儲存體中。
+如果您選取**以原始名稱儲存附件**，則附件會使用其原始檔案名稱儲存在資料夾中。 您也可以將記錄檔案(DoR)儲存在Azure Blob儲存空間。
 1. 選取您要儲存資料的「**[!UICONTROL 儲存空間設定]**」。
 1. 按一下&#x200B;**[!UICONTROL 儲存並關閉]**
 

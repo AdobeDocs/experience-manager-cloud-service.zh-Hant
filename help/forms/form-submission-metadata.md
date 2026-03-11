@@ -6,13 +6,14 @@ role: User
 level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
+exl-id: 12c54be1-378d-4dbe-9129-93ddc7c343a4
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '693'
-ht-degree: 0%
+source-wordcount: '699'
+ht-degree: 1%
 
 ---
-
 
 # 將使用者資料中的資訊新增至表單提交中繼資料 {#adding-information-from-user-data-to-form-submission-metadata}
 
@@ -51,13 +52,13 @@ ht-degree: 0%
 
 以上例為例，中繼資料會儲存在CRX存放庫中。 中繼資料看起來像這樣：
 
-![中繼資料](assets/metadata_entry_new.png)
+![後設資料](assets/metadata_entry_new.png)
 
 如果您在中繼資料中新增核取方塊元素，則選取的值會儲存為以逗號分隔的字串。 例如，您在表單中新增核取方塊元件，並將其名稱指定為`checkbox1`。 在核取方塊元件屬性中，您新增值0、1和2的「駕駛執照」、「社會安全號碼」和「護照」專案。
 
 ![從核取方塊儲存多個值](assets/checkbox-metadata.png)
 
-您選取最適化表單容器，然後在表單屬性中新增儲存`checkbox1.value`的中繼資料索引鍵`cb1`，並發佈表單。 當客戶填寫表單時，客戶會在核取方塊欄位中選取「護照和社會安全號碼」選項。 值1和2在提交中繼資料的cb1欄位中儲存為1， 2。
+您選取最適化表單容器，然後在表單屬性中新增儲存`cb1`的中繼資料索引鍵`checkbox1.value`，並發佈表單。 當客戶填寫表單時，客戶會在核取方塊欄位中選取「護照和社會安全號碼」選項。 值1和2在提交中繼資料的cb1欄位中儲存為1， 2。
 
 在核取方塊欄位中選取多個值的![中繼資料專案](assets/metadata-entry.png)
 

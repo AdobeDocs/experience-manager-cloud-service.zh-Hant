@@ -4,10 +4,11 @@ description: 探索提交最適化表單時設定Rest端點的步驟。
 keywords: AEM Forms REST端點、提交至REST端點、將資料發佈至REST URL、設定REST端點動作
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: 58c63ba6-aec5-4961-a70a-265990ab9cc8
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '1471'
+source-wordcount: '1477'
 ht-degree: 60%
 
 ---

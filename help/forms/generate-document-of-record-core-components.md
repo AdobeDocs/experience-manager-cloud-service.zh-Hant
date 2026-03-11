@@ -2,11 +2,12 @@
 title: 為最適化Forms產生提交PDF （原記錄檔案）
 description: 瞭解如何從最適化PDF核心元件的表單提交作業產生提交Forms 。 建立已提交表單的PDF以供封存或參考。
 feature: Adaptive Forms, Core Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: 7a033951bdf94e5b9d7553be77697d47121eb826
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '3314'
+source-wordcount: '3320'
 ht-degree: 1%
 
 ---
@@ -147,7 +148,7 @@ The form developer binds Adaptive Forms fields with corresponding Document of Re
 
 現在，提交最適化表單時，會產生更新的提交PDF。
 
-![已更新 — &#x200B;](assets/we-retail-new-invoice-sent-to-customer.png)
+![已更新 — ](assets/we-retail-new-invoice-sent-to-customer.png)
 
 ## 使用提交PDF時的主要考量事項 {#key-considerations-when-working-with-document-of-record}
 
@@ -311,7 +312,7 @@ When you select a form model, configure Document of Record using options availab
 
 1. 選取&#x200B;**[!UICONTROL Forms — 記錄檔案]**&#x200B;類別。
 1. 選取&#x200B;**[!UICONTROL DoR基底範本]**。
-1. 按一下[下一步]&#x200B;**&#x200B;**&#x200B;並提供必要的資訊。
+1. 按一下[下一步]****&#x200B;並提供必要的資訊。
 
 1. （選用）修改您要套用至提交PDF中欄位的樣式和外觀。
 1. 儲存表單。

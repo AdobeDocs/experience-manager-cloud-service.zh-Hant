@@ -1,21 +1,23 @@
 ---
-title: 使用價值實現儀表板來分析表單和檔案使用趨勢
+title: 使用價值實現儀表板分析表單和文件的使用趨勢
 description: 瞭解如何使用Forms使用分析儀表板來監控和瞭解您的表單和表單片段的效能。
 role: User, Developer
 level: Intermediate
 feature: Adaptive Forms, Foundation Components, Core Components
 hide: true
 hidefromtoc: true
-source-git-commit: 09d383638d6caba596d22a7c6b544768de5245a0
+badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
+exl-id: f58aa2df-dfb6-4eb4-b20d-e81bb01be8a7
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '873'
-ht-degree: 1%
+source-wordcount: '879'
+ht-degree: 6%
 
 ---
 
-# 使用價值實現儀表板來分析表單和檔案使用趨勢
+# 使用價值實現儀表板分析表單和文件的使用趨勢
 
-<span class="preview">此功能可透過搶先存取計畫使用。 若要要求存取權，請從您的官方地址傳送電子郵件至aem-forms-ea@adobe.com。<span>
+<span class="preview">您可以透過搶先體驗方案使用這項功能。若要要求存取權，請從您的官方地址傳送電子郵件至aem-forms-ea@adobe.com。<span>
 
 ![值實現儀表板](/help/edge/docs/forms/universal-editor/assets/forms-insights-banner.svg)
 
@@ -129,4 +131,4 @@ ht-degree: 1%
 
 ## 另請參閱
 
-- [瞭解您的價值實現儀表板](/help/forms/aem-forms-value-realization-dashboard.md)
+- [了解您的價值實現儀表板](/help/forms/aem-forms-value-realization-dashboard.md)

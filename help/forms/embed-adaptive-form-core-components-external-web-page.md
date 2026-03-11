@@ -5,20 +5,21 @@ contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin, Developer, User
 feature: Adaptive Forms, Core Components
+badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: 198f6f76-1134-4818-89a0-6ddc84ff956c
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '972'
+source-wordcount: '978'
 ht-degree: 98%
 
 ---
 
-# 根據核心元件將調適性表單內嵌至外部網頁 {#embed-adaptive-form-in-external-web-page}
+# 根據核心元件將調適性表單嵌入至外部網頁 {#embed-adaptive-form-in-external-web-page}
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service  | 本文章 |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-external-web-page.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-external-web-page.html) |
 
 
 你可以[在 AEM Sites 頁面嵌入調適型表單](/help/forms/embed-adaptive-form-aem-sites.md)或在 AEM 外部託管的網頁嵌入調適型表單。嵌入式調適型表單功能齊全，使用者無需離開頁面即可填寫並提交表單。此功能可幫助使用者在網頁維持相關的其他元素，並同時與表單進行互動。
@@ -31,11 +32,11 @@ ht-degree: 98%
 * 在您的網站上建立或識別一個網頁，以便託管調適型表單。確保網頁可以[從 CDN 讀取 jQuery 檔案](https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js)，或者網頁有已嵌入 jQuery 的本機副本。必須有 jQuery 才可呈現調適型表單。
 * 當 AEM 伺服器和網頁在不同網域上，請執行這部份所列步驟，[啟用 AEM Forms 為跨網域網站提供調適型表單](#cross-site)。
 
-## 內嵌調適型表單 {#embed-adaptive-form}
+## 嵌入調適型表單 {#embed-adaptive-form}
 
 您可以在網頁中插入幾行 JavaScript 來嵌入調適型表單。代碼中的 API 會向 AEM 伺服器發送 HTTP 請求以獲得調適型表單資源，並將調適型表單注入指定的表單容器中。
 
-內嵌調適型表單：
+嵌入調適型表單：
 
 1. 使用以下代碼在您的網站上建立網頁：
 

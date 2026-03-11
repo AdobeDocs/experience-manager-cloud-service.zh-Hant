@@ -3,10 +3,11 @@ title: 如何設定Azure儲存空間？
 description: 瞭解如何將表單與Azure儲存伺服器整合。
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: 606383b3-293c-43d2-9ba0-5843c4e0caa8
-source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '597'
 ht-degree: 1%
 
 ---
@@ -27,15 +28,15 @@ ht-degree: 1%
 
 在執行這些步驟之前，請確定您有[!DNL Azure]儲存體帳戶和存取金鑰，以授權存取[!DNL Azure]儲存體帳戶。
 
-1. 導覽至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Azure儲存體]**。
+1. 導覽至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 雲端服務]** > **[!UICONTROL Azure儲存空間]**。
 1. 選取資料夾以建立組態，並選取&#x200B;**[!UICONTROL 建立]**。
 1. 在&#x200B;**[!UICONTROL 標題]**&#x200B;欄位中指定組態的標題。
-1. 在&#x200B;**[!UICONTROL Azure儲存體帳戶]**&#x200B;欄位中指定[!DNL Azure]儲存體帳戶的名稱。
+1. 在[!DNL Azure]Azure儲存體帳戶&#x200B;**[!UICONTROL 欄位中指定]**&#x200B;儲存體帳戶的名稱。
 1. 在&#x200B;**[!UICONTROL Azure存取金鑰]**&#x200B;欄位中指定存取Azure儲存體帳戶的金鑰，並選取&#x200B;**[!UICONTROL 儲存]**。
 
 ## 建立表單資料模型 {#create-azure-form-data-model}
 
-建立[!DNL Azure]儲存體組態之後，您可以[建立表單資料模型](create-form-data-models.md)。 建立表單資料模型(FDM)時，請在&#x200B;**[!UICONTROL 資料Source設定]**&#x200B;欄位中指定包含[!DNL Azure]設定的資料夾。 然後，您可以從指定資料夾名稱中存在的設定清單中選取設定。
+建立[!DNL Azure]儲存體組態之後，您可以[建立表單資料模型](create-form-data-models.md)。 建立表單資料模型(FDM)時，請在[!DNL Azure]資料Source設定&#x200B;**[!UICONTROL 欄位中指定包含]**&#x200B;設定的資料夾。 然後，您可以從指定資料夾名稱中存在的設定清單中選取設定。
 
 ### 新增[!DNL Azure]服務至表單資料模型 {#add-azure-services}
 
@@ -65,7 +66,7 @@ ht-degree: 1%
      </tr>
      <tr>
       <td>從Azure取得具有二進位檔URL的Blob</td>
-      <td>使用ID或名稱，針對Azure儲存體中的二進位檔，擷取以Blob形式儲存的資料(URL)</td>
+      <td>使用ID或名稱，為Azure儲存體中的二進位檔擷取以Blob形式儲存的資料(URL)</td>
      </tr>
      <tr>
       <td>在Azure中儲存Blob</td>
@@ -73,7 +74,7 @@ ht-degree: 1%
      </tr>
      <tr>
       <td>在Azure中更新Blob</td>
-      <td>使用Blob ID更新Azure儲存體中的資料</td>
+      <td>使用Blob ID更新Azure儲存空間中的資料</td>
      </tr>
      <tr>
       <td>從Azure擷取Blob ID清單</td>
@@ -84,8 +85,8 @@ ht-degree: 1%
       <td>根據輸入請求中的Blob ID，從Azure擷取Blob的SAS URL。</td>
      </tr>
      <tr>
-      <td>從Azure刪除Blob</td>
-      <td>使用Blob ID從Azure儲存體中刪除資料</td>
+      <td>從Azure中刪除Blob</td>
+      <td>使用Blob ID從Azure儲存空間刪除資料</td>
      </tr>
     </tbody>
    </table>
@@ -102,7 +103,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->每個Azure實體只允許使用10個搜尋索引鍵，因為Azure僅允許每個Blob使用10個標籤，而且標示為搜尋索引鍵的屬性值會在雜湊後儲存在Azure索引標籤中。
+>每個Azure實體僅允許10個搜尋索引鍵，因為Azure僅允許每個Blob有10個標籤，而且標籤為搜尋索引鍵的屬性值在雜湊後會儲存在Azure索引標籤中。
 
 <!--
 

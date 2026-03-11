@@ -4,11 +4,12 @@ Description: This article explains how to send data from your Adaptive Form to a
 keywords: 如何連線SharePoint檔案庫取得最適化表單、提交至SharePoint、建立SharePoint檔案庫設定、在最適化表單中使用提交至SharePoint提交動作、AEM Forms資料模型SharePoint檔案庫、Forms資料模型SharePoint檔案庫、將Forms資料模型整合至SharePoint檔案庫
 feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery Services
 role: User, Developer
+badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: a00b4a93-2324-4c2a-824f-49146dc057b0
-source-git-commit: 1be7bafc1d93a65a81eeb2f7e86cac33cde7aa35
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '991'
-ht-degree: 28%
+source-wordcount: '997'
+ht-degree: 33%
 
 ---
 
@@ -110,13 +111,13 @@ ht-degree: 28%
 執行以下步驟，使用在Universal Editor中編寫的最適化表單中的SharePoint檔案庫儲存設定，如下所示：
 
 1. 開啟最適化表單進行編輯。
-1. 按一下編輯器上的&#x200B;**編輯表單屬性**&#x200B;擴充功能。
+1. 按一下編輯器上的&#x200B;**編輯表單屬性**擴充功能。
 **表單屬性**&#x200B;對話方塊就會顯示。
 
    >[!NOTE]
    >
-   > * 如果您在通用編輯器介面中看不到&#x200B;**編輯表單屬性**&#x200B;圖示，請在Extension Manager中啟用&#x200B;**編輯表單屬性**&#x200B;擴充功能。
-   > * 請參閱[Extension Manager功能焦點](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)文章，瞭解如何在通用編輯器中啟用或停用擴充功能。
+   > * 若您在通用編輯器介面中沒有看到「**編輯表單屬性**」圖示，請在 Extension Manager 中啟用&#x200B;**編輯表單屬性**&#x200B;擴充功能。
+   > * 請參閱 [Extension Manager 功能重點介紹](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)文章，了解如何在通用編輯器中啟用或停用擴充功能。
 
 1. 按一下「**提交**」標籤，然後選取「**[!UICONTROL 提交至SharePoint]**」提交動作。
    ![Sharepoint GIF](/help/forms/assets/submit-to-sharepoint-ue.png)

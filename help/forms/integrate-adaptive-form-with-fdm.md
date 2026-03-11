@@ -3,10 +3,12 @@ title: 如何將表單的表單資料模型(FDM)與最適化表單整合？
 description: 了解如何根據表單資料模型 (FDM) 建立表單。產生並編輯 FDM 中資料模型物件的樣本資料。
 feature: Edge Delivery Services, Adaptive Forms, Form Data Model
 role: Admin, User
-source-git-commit: 62134c5b67d610f801c407e696e761ed05e02c87
+badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
+exl-id: f08fb365-8750-4b81-9877-c382e7aebba0
+source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 27%
+source-wordcount: '670'
+ht-degree: 35%
 
 ---
 
@@ -42,8 +44,8 @@ ht-degree: 27%
 
    ![使用表單資料模型提交](/help/forms/assets/submit-uisng-fdm-fc.png)
 
-1. 選取建立的&#x200B;**[!UICONTROL 資料模型以提交]**&#x200B;組態。
-若要將附件提交至資料庫，請選取&#x200B;**提交表單附件**。 選取&#x200B;**提交記錄檔案**，記錄檔案(DoR)會儲存在資料庫中。
+1. 選取建立的&#x200B;**[!UICONTROL 資料模型以提交]**組態。
+若要將附件提交至資料庫，請選取**提交表單附件**。 選取&#x200B;**提交記錄檔案**，記錄檔案(DoR)會儲存在資料庫中。
 1. 按一下「**[!UICONTROL 儲存]**」以儲存「提交」設定。
 
 >[!TAB 核心元件]
@@ -57,8 +59,8 @@ ht-degree: 27%
 
    ![使用表單資料模型提交](/help/forms/assets/submit-uisng-fdm-cc.png)
 
-1. 選取建立的&#x200B;**[!UICONTROL 資料模型以提交]**&#x200B;組態。
-若要將附件提交至資料庫，請選取&#x200B;**提交表單附件**。 選取&#x200B;**提交記錄檔案**，記錄檔案(DoR)會儲存在資料庫中。
+1. 選取建立的&#x200B;**[!UICONTROL 資料模型以提交]**組態。
+若要將附件提交至資料庫，請選取**提交表單附件**。 選取&#x200B;**提交記錄檔案**，記錄檔案(DoR)會儲存在資料庫中。
 1. 按一下「**[!UICONTROL 儲存]**」以儲存「提交」設定。
 
 >[!TAB 通用編輯器]
@@ -72,13 +74,13 @@ ht-degree: 27%
 
    >[!NOTE]
    >
-   > * 如果您在通用編輯器介面中看不到&#x200B;**編輯表單屬性**&#x200B;圖示，請在Extension Manager中啟用&#x200B;**編輯表單屬性**&#x200B;擴充功能。
-   > * 請參閱[Extension Manager功能焦點](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)文章，瞭解如何在通用編輯器中啟用或停用擴充功能。
+   > * 若您在通用編輯器介面中沒有看到「**編輯表單屬性**」圖示，請在 Extension Manager 中啟用&#x200B;**編輯表單屬性**&#x200B;擴充功能。
+   > * 請參閱 [Extension Manager 功能重點介紹](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)文章，了解如何在通用編輯器中啟用或停用擴充功能。
 
 1. 按一下&#x200B;**提交**&#x200B;索引標籤，然後選取&#x200B;**[!UICONTROL 使用表單資料模型提交]**。
 
    ![OneDrive GIF](/help/forms/assets/submit-uisng-fdm-ue.png)
-如果您選取&#x200B;**以原始名稱儲存附件**，則附件會使用其原始檔案名稱儲存在資料夾中。 您也可以將記錄檔案(DoR)儲存在Azure Blob儲存體中。
+如果您選取**以原始名稱儲存附件**，則附件會使用其原始檔案名稱儲存在資料夾中。 您也可以將記錄檔案(DoR)儲存在Azure Blob儲存空間。
 
 1. 選取您要儲存資料的「**[!UICONTROL 儲存空間設定]**」。
 1. 按一下&#x200B;**[!UICONTROL 儲存並關閉]**
