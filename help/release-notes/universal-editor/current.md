@@ -1,20 +1,20 @@
 ---
-title: 通用編輯器 2026.03.05 發行說明
-description: 此為通用編輯器 2026.03.05 版本的發行說明。
+title: 通用編輯器 2026.03.12 發行說明
+description: 此為通用編輯器 2026.03.12 版本的發行說明。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 2148c2399c1d5121de155d512dba7eeed3315a31
+source-git-commit: ef6e65a72eaa5e7e8b15f8ec096cd43351bc2674
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 48%
+source-wordcount: '151'
+ht-degree: 56%
 
 ---
 
 
-# 通用編輯器 2026.03.05 發行說明 {#release-notes}
+# 通用編輯器 2026.03.12 發行說明 {#release-notes}
 
-以下是通用編輯器 2026 年 3 月 5 日版本的發行說明。
+以下是通用編輯器 2026 年 3 月 12 日版本的發行說明。
 
 >[!TIP]
 >
@@ -26,8 +26,7 @@ ht-degree: 48%
 
 ## 新增功能 {#what-is-new}
 
-* [元件選擇器](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components)有新的設計。
-* [RTE的檢色器](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)現已可用。
+* 現在可以透過容器的[內容功能表](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu)新增元件。
 
 ## 早期採用功能 {#early-adopter}
 
@@ -37,5 +36,4 @@ ht-degree: 48%
 
 ## 其他改善功能 {#other-improvements}
 
-* RTE[中的對齊、文字方向及縮排選項現已預設為](/help/implementing/universal-editor/configure-rte.md)啟用，前提是您的後端支援這些選項。
-* 現在透過Open API和UI結構描述使用內容片段時呈現索引標籤。
+* 已修正Document Authoring子元素不遵守nChild規則的問題。
