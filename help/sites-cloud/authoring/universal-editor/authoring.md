@@ -6,10 +6,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 1de2a860d96397863312f62b3c3c73e6deddd9d8
+source-git-commit: 57ea90c922b073828b4aede15bf2dd499ebbf0c2
 workflow-type: tm+mt
-source-wordcount: '2990'
-ht-degree: 18%
+source-wordcount: '3002'
+ht-degree: 17%
 
 ---
 
@@ -82,7 +82,7 @@ ht-degree: 18%
 
 隨即在RTF區塊上方開啟上下文功能表，提供上下文中的基本格式選項。 由於空間限制，某些選項可能會隱藏在省略符號按鈕後面。
 
-![&#x200B; RTF內容功能表](assets/rich-text-context-menu.png)
+![ RTF內容功能表](assets/rich-text-context-menu.png)
 
 一旦焦點離開已編輯的欄位，變更會自動儲存。
 
@@ -186,9 +186,15 @@ ht-degree: 18%
 
    ![選取要新增到容器的元件](assets/ue-add-component.png)
 
-1. 然後，在「屬性」面板中選取「新增」圖示。
+1. 然後，您可以：
 
-   ![選取新增圖示](assets/add-icon.png)
+   * 在屬性面板中選取&#x200B;**新增**&#x200B;圖示。
+
+     ![選取新增圖示](assets/add-icon.png)
+
+   * 在內容功能表中選取&#x200B;**新增**&#x200B;選項。
+
+     ![從內容功能表新增](assets/add-from-context-menu.png)
 
 1. 元件選取器對話方塊隨即開啟。
    * 使用左欄以依類別篩選元件，或使用搜尋以依名稱篩選。
@@ -207,21 +213,28 @@ ht-degree: 18%
 ### 在容器中複製元件 {#duplicating-components}
 
 1. 使用[內容樹狀結構](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)或編輯器選取容器中的元件。
-1. 然後在屬性面板中選取&#x200B;**複製**&#x200B;圖示。
 
-   ![選取要新增到容器的元件](assets/ue-duplicate-component.png)
-1. 元件會複製並插入選取元件的下方。
+1. 然後，您可以：
 
-該元件會被插入到容器中並可在編輯器中對其進行編輯。
+   * 在屬性面板中選取&#x200B;**複製**&#x200B;圖示。
+
+     ![選取要新增到容器的元件](assets/ue-duplicate-component.png)
+
+   * 從內容功能表選取&#x200B;**複製**&#x200B;選項。
+
+     ![從內容功能表複製](assets/duplicate-from-context-menu.png)
+
+元件會複製並插入選取元件的下方。
 
 ### 從容器中刪除元件 {#deleting-components}
 
-1. 在[內容樹狀結構](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)或編輯器中選取容器元件。
-1. 選取容器的>形箭號圖示，展開內容樹狀結構中的內容。
-1. 然後，在內容樹中，選取容器內的元件。
-1. 在「屬性」面板中選取「刪除」圖示。
+1. 在[內容樹狀結構](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)的容器中或在編輯器中選取元件。
+1. 然後，您可以：
+   * 在屬性面板中選取&#x200B;**刪除**&#x200B;圖示。
 
-   ![刪除元件](assets/ue-delete-component.png)
+     ![刪除元件](assets/ue-delete-component.png)
+   * 選取內容功能表中的&#x200B;**刪除**選項。
+     ![從內容功能表刪除](assets/delete-from-context-menu.png)
 
 選取的元件已刪除。
 
@@ -295,21 +308,23 @@ ht-degree: 18%
 ![貼上圖示](assets/paste.png)
 
 1. 在編輯器或內容樹中選取元件。
-1. **複製**&#x200B;圖示會出現在[屬性面板中。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel)點選或按一下它。
-1. 屬性面板中會顯示&#x200B;**貼上**&#x200B;圖示。
+1. 然後，您可以：
+   * 按一下&#x200B;**屬性面板中的**&#x200B;複製[圖示。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel)
+     ![從面板複製](assets/copy-from-panel.png)
+   * 在內容功能表中選取&#x200B;**複製**選項。
+     ![從內容功能表複製](assets/copy-from-context-menu.png)
 1. 選取您要貼上複製元件的元件&#x200B;_after_。
-1. 點選或按一下「貼上」。
-1. 複製的元件會在&#x200B;_之後貼上_&#x200B;選取的元件。
+1. 然後，您可以：
+   * 在屬性面板中，點選或按一下「**貼上**」。
+     從面板![貼上](assets/paste-from-panel.png)
+   * 在內容功能表中選取&#x200B;**貼上**。
+     從內容功能表貼上![](assets/paste-from-context-menu.png)
+
+複製的元件會在&#x200B;_之後貼上_&#x200B;選取的元件。
 
 >[!TIP]
 >
 >分別使用快速鍵`Command-C`或`Command-V`來複製或貼上。
-
-## 內容選項 {#context-options}
-
-就地編輯時，編輯器將透過按一下滑鼠右鍵提供內容相關的選項，例如複製、刪除或複製元件。
-
-![內容選項功能表](assets/context-options-menu.png)
 
 ## 預覽內容 {#previewing-content}
 

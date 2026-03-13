@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: 0aaa9904b3011adc3f3e3b01bfee8ee3e96f12e2
+source-git-commit: 0abd8b05a5afdbcb2e90dcb36b3a77df71054ccc
 workflow-type: tm+mt
-source-wordcount: '7111'
+source-wordcount: '7114'
 ht-degree: 95%
 
 ---
@@ -257,6 +257,7 @@ ht-degree: 95%
       + [通用編輯器最新發行說明](/help/release-notes/universal-editor/current.md)
       + [預覽通用編輯器的發行說明](/help/release-notes/universal-editor/preview.md)
       + 2026 {#2026}
+         + [2026.03.05 發行說明](/help/release-notes/universal-editor/2026/2026-03-05.md)
          + [2026.02.26 發行說明](/help/release-notes/universal-editor/2026/2026-02-26.md)
          + [2026.02.19 發行說明](/help/release-notes/universal-editor/2026/2026-02-19.md)
          + [2026.02.13 發行說明](/help/release-notes/universal-editor/2026/2026-02-13.md)
@@ -302,7 +303,7 @@ ht-degree: 95%
          + [2024.08.13 發行說明](/help/release-notes/universal-editor/2024/2024-08-13.md)
          + [2024.07.28 發行說明](/help/release-notes/universal-editor/2024/2024-07-28.md)
          + [2024.06.28 發行說明](/help/release-notes/universal-editor/2024/2024-06-28.md)
-   + [新增功能 &#x200B;](/help/release-notes/what-is-new.md)
+   + [新增功能 ](/help/release-notes/what-is-new.md)
    + [AEM Cloud Service 的重大變更](/help/release-notes/aem-cloud-changes.md)
    + [已過時和已移除的功能和 API](/help/release-notes/deprecated-removed-features.md)
    + [預發行通道](/help/release-notes/prerelease.md)
@@ -476,7 +477,7 @@ ht-degree: 95%
          + [使用專案工作流程](/help/sites-cloud/authoring/projects/workflows.md)
       + 頁面啟動 {#launches-for-pages}
          + [使用啟動](/help/sites-cloud/authoring/launches/overview.md)
-         + [建立啟動 &#x200B;](/help/sites-cloud/authoring/launches/creating.md)
+         + [建立啟動 ](/help/sites-cloud/authoring/launches/creating.md)
          + [管理啟動中的頁面](/help/sites-cloud/authoring/launches/managing-pages.md)
          + [編輯啟動](/help/sites-cloud/authoring/launches/editing.md)
          + [使用 Timewarp 預覽啟動](/help/sites-cloud/authoring/launches/preview.md)
@@ -540,7 +541,7 @@ ht-degree: 95%
             + [Live Copy 概觀主控台](/help/sites-cloud/administering/msm/live-copy-overview.md)
             + [轉出衝突](/help/sites-cloud/administering/msm/rollout-conflicts.md)
             + [MSM 最佳做法](/help/sites-cloud/administering/msm/best-practices.md)
-            + [疑難排解和常見問題 &#x200B;](/help/sites-cloud/administering/msm/troubleshooting.md)
+            + [疑難排解和常見問題 ](/help/sites-cloud/administering/msm/troubleshooting.md)
          + 翻譯 {#translation}
             + Sites 翻譯歷程 {#sites}
                + [了解 AEM 中的網站翻譯](/help/journey-sites/translation/overview.md)
@@ -550,7 +551,7 @@ ht-degree: 95%
                + [設定翻譯規則](/help/journey-sites/translation/translation-rules.md)
                + [翻譯內容](/help/journey-sites/translation/translate-content.md)
                + [發佈翻譯內容](/help/journey-sites/translation/publish-content.md)
-            + [Headless 翻譯歷程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html?lang=zh-Hant)
+            + [Headless 翻譯歷程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html)
             + [翻譯多語言網站的內容](/help/sites-cloud/administering/translation/overview.md)
             + [準備翻譯內容](/help/sites-cloud/administering/translation/preparation.md)
             + [管理翻譯專案](/help/sites-cloud/administering/translation/managing-projects.md)
@@ -570,16 +571,16 @@ ht-degree: 95%
       + [將內容片段匯出到 Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [將體驗片段匯出到 Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [與 Adobe Campaign 整合](/help/sites-cloud/integrating/campaign.md)
-      + [使用 Adobe Journey Optimizer 的內容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=zh-Hant)
+      + [使用 Adobe Journey Optimizer 的內容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [AEM as a Cloud Service 的操作遙測](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
    + [內容關聯式實驗](/help/sites-cloud/administering/contextual-experimentation.md)
 + Assets {#assets}
    + [概觀與新增功能](/help/assets/overview.md)
-   + [&#x200B; [!DNL Assets] as a [!DNL Cloud Service] 重大變更](/help/assets/assets-cloud-changes.md)
+   + [ [!DNL Assets] as a [!DNL Cloud Service] 重大變更](/help/assets/assets-cloud-changes.md)
    + [[!DNL Assets] 架構](/help/assets/architecture.md)
    + [支援的檔案格式](/help/assets/file-format-support.md)
    + [資產微服務概觀](/help/assets/asset-microservices-overview.md)
-   + [&#x200B; [!DNL Assets] 中的協助工具](/help/assets/accessibility.md)
+   + [ [!DNL Assets] 中的協助工具](/help/assets/accessibility.md)
    + [Assets as a Cloud Service Ultimate](/help/assets/assets-ultimate-overview.md)
    + [啟用 Assets as a Cloud Service Ultimate](/help/assets/enable-assets-ultimate.md)
    + [Assets as a Cloud Service Prime](/help/assets/assets-prime.md)
@@ -1124,7 +1125,7 @@ ht-degree: 95%
             + [AEM製作專案快速入門](/help/ai-in-aem/agents/brand-experience/modernization/getting-started-aem-authoring.md)
             + [現代化主控台](/help/ai-in-aem/agents/brand-experience/modernization/console.md)
             + [提示指南](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md)
-            + [AOE傳遞模型](/help/ai-in-aem/agents/brand-experience/modernization/delivery-model.md)
+            + [AOE傳送](/help/ai-in-aem/agents/brand-experience/modernization/aoe-delivery.md)
          + [開發代理程式](/help/ai-in-aem/agents/brand-experience/development/development.md)
       + 內容建議程式代理程式 {#content-advisor}
          + [概觀](/help/ai-in-aem/agents/content-advisor/overview.md)
@@ -1226,7 +1227,7 @@ ht-degree: 95%
             + [購物車和 Dispatcher 設定](/help/commerce-cloud/cif-storefront/configuring/shopping-cart-dispatcher.md)
             + [元件和 GraphQL 清除快取](/help/commerce-cloud/cif-storefront/configuring/clear-cache.md)
          + 開發 {#developing}
-            + [利用 AEM Cloud Service SDK 進行開發 &#x200B;](/help/commerce-cloud/cif-storefront/develop.md)
+            + [利用 AEM Cloud Service SDK 進行開發 ](/help/commerce-cloud/cif-storefront/develop.md)
             + [設定 CIF 元件樣式](/help/commerce-cloud/cif-storefront/customizing/style-cif-component.md)
             + [自訂 CIF 元件](/help/commerce-cloud/cif-storefront/customizing/customize-cif-components.md)
             + [使用 CIF 目錄選擇器](/help/commerce-cloud/cif-storefront/customizing/use-cif-pickers.md)
@@ -1303,7 +1304,7 @@ ht-degree: 95%
       + 編寫{#authoring}
          + [編寫](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=zh-hant)
          + [Markdown 編輯器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=zh-hant)
-      + [預覽片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=zh-Hant)
+      + [預覽片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [樹狀結構](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=zh-hant)
    + 內容片段選擇器 {#content-fragment-selector}
       + [微前端內容片段選擇器 - 概觀](/help/headless/content-fragment-selector/overview.md)
@@ -1531,7 +1532,7 @@ ht-degree: 95%
          + [SecurBank 範例應用程式](/help/implementing/universal-editor/securbank.md)
       + [Headless 體驗管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=zh-hant)
       + 混合式與 SPA 開發 {#hybrid}
-         + [使用 AEM 的混合式和 SPA](https://business.adobe.com/tw/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
+         + [使用 AEM 的混合式和 SPA](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
          + [為元件啟用 JSON 匯出](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=zh-hant)
          + [停止支援 SPA 編輯器](/help/implementing/developing/hybrid/spa-editor-deprecation.md)
          + [SPA 簡介和逐步解說](/help/implementing/developing/hybrid/introduction.md)
@@ -1575,7 +1576,7 @@ ht-degree: 95%
          + [使用 Adobe Developer App Builder 延伸 AEM](/help/implementing/developing/extending/app-builder/extending-aem-with-app-builder.md)
          + [App Builder 簡介](/help/implementing/developing/extending/app-builder/videos/introduction.md)
          + [Adobe Developer Console](/help/implementing/developing/extending/app-builder/videos/adobe-developer-console.md)
-         + [SDK 和 CLI &#x200B;](/help/implementing/developing/extending/app-builder/videos/sdks-and-cli.md)
+         + [SDK 和 CLI ](/help/implementing/developing/extending/app-builder/videos/sdks-and-cli.md)
          + [建立應用程式](/help/implementing/developing/extending/app-builder/videos/create.md)
          + [動作](/help/implementing/developing/extending/app-builder/videos/actions.md)
          + [儲存資料庫](/help/implementing/developing/extending/app-builder/videos/storage-libraries.md)
@@ -1606,7 +1607,7 @@ ht-degree: 95%
          + [擷取字串進行翻譯](/help/implementing/developing/extending/i18n/extract.md)
       + [擴充功能與 Extension Manager](/help/implementing/developing/extending/extension-manager.md)
    + 部署至 AEM as a Cloud Service  {#deploying}
-      + [部署至 AEM as a Cloud Service &#x200B;](/help/implementing/deploying/overview.md)
+      + [部署至 AEM as a Cloud Service ](/help/implementing/deploying/overview.md)
       + [AEM 版本更新](/help/implementing/deploying/aem-version-updates.md)
       + [暫停更新時段與暫停更新期間](/help/implementing/deploying/quiet-hours-update-free-periods.md)
       + [為 AEM as a Cloud Service 設定 OSGi](/help/implementing/deploying/configuring-osgi.md)
