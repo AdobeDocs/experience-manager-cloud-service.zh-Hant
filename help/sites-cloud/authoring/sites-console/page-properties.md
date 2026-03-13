@@ -7,10 +7,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 mini-toc-levels: 2
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 0c99c27e22fd14485b367fdda8dc76c03aff65dc
 workflow-type: tm+mt
-source-wordcount: '2144'
-ht-degree: 3%
+source-wordcount: '2211'
+ht-degree: 2%
 
 ---
 
@@ -57,7 +57,7 @@ ht-degree: 3%
 
 ### 品牌元素 {#branding}
 
-藉由將品牌概要附加至每個頁面標題，跨頁面套用一致的品牌識別。 此功能需要使用2.14.0版或更新版本的[核心元件。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)的頁面元件
+藉由將品牌概要附加至每個頁面標題，跨頁面套用一致的品牌識別。 此功能需要使用2.14.0版或更新版本的[核心元件。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)的頁面元件
 
 * **品牌概要**
 
@@ -155,17 +155,23 @@ ht-degree: 3%
    * 每個值都必須是範本的絕對路徑。
    * 使用`/.*`以允許此路徑下的所有範本。
 * **使用頁面作為範本** - [根據目前頁面建立新範本。](/help/sites-cloud/authoring/universal-editor/templates.md)
-   * 僅適用於搭配Universal Editor (善用Edge Delivery Services)使用而建立的頁面。
+   * 僅適用於搭配Universal Editor （善用Edge Delivery Services）使用而建立的頁面。
 
 ### 驗證需求 {#authentication}
 
 * **啟用** — 允許使用驗證來存取頁面
 
->[!NOTE]
->
->已關閉的使用者群組定義於&#x200B;**[許可權](#permissions)**&#x200B;索引標籤上。
+  >[!NOTE]
+  >
+  >已關閉的使用者群組定義於&#x200B;**[許可權](#permissions)**&#x200B;索引標籤上。
 
 * **登入頁面** — 要用於登入的頁面
+
+  >[!WARNING]
+  >
+  >指定的登入頁面&#x200B;**不得**&#x200B;指向本身受&#x200B;**驗證需求**&#x200B;保護的頁面。 您必須確定登入頁面是不受保護的公開頁面。 例如，專用頁面（例如`/content/<mysite>/en/login`）未啟用&#x200B;**驗證需求**。
+  >
+  >如果設定的登入頁面確實有&#x200B;**啟用**，則啟動時將無訊息移除該頁面的驗證需求，使其可公開存取。
 
 ### 匯出 {#export}
 
