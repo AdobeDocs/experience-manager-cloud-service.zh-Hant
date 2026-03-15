@@ -1,6 +1,6 @@
 ---
-title: 內容轉移工具綜覽
-description: 瞭解如何使用「內容轉移工具」，將內容從內部部署AEM例項轉移至AEM as a Cloud Service
+title: 內容轉移工具概觀
+description: 瞭解如何使用「內容轉移工具」，將內容從內部部署AEM例項轉移到AEM as a Cloud Service
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 feature: Migration
 role: Admin
@@ -18,9 +18,9 @@ ht-degree: 40%
 >id="aemcloud_ctt_overview"
 >title="概觀"
 >abstract="「內容轉移工具」是 Adobe 開發的工具，可用來起始將現有內容從來源 AEM 執行個體 (內部部署或 AMS) 移轉至目標 AEM Cloud Service 執行個體的作業。此工具也可以自動轉移群組。"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=zh-Hant" text="準則和最佳做法"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html" text="準則和最佳做法"
 
-「內容轉移工具」是Adobe開發的工具，可用來起始將現有內容從來源AEM例項（內部部署或AMS）移轉至目標AEM Cloud Service例項的作業。
+「內容轉移工具」是Adobe開發的工具，可用來起始將現有內容從來源AEM例項（內部部署或AMS）移轉至目標AEM雲端服務例項的作業。
 
 此工具也會自動傳輸群組。  如需詳細資訊，請參閱[群組移轉](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md)。
 
@@ -41,7 +41,7 @@ ht-degree: 40%
 
 1. **擷取**：擷取指的是從&#x200B;*移轉集*&#x200B;擷取內容，並存放至目標雲端服務例項。
 
-   如需詳細資訊，請參閱內容轉移[&#128279;](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)中的擷取程式。
+   如需詳細資訊，請參閱內容轉移[中的](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)擷取程式。
 
 ## 移轉集的屬性 {#attributes-migration-set}
 
@@ -79,4 +79,4 @@ ht-degree: 40%
 
 ## 後續步驟 {#whats-next}
 
-瞭解內容轉移工具及其概述後，瞭解此工具可用來將現有內容從來源AEM執行個體（內部部署或AMS）移至目標AEM Cloud Service執行個體時，您必須檢閱[內容轉移工具的先決條件](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)。
+瞭解內容轉移工具及其概述後，瞭解此工具可用來將現有內容從來源AEM執行個體（內部部署或AMS）移至目標AEM雲端服務執行個體，您必須檢閱[內容轉移工具的先決條件](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)。

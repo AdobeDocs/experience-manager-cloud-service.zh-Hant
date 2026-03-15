@@ -20,7 +20,7 @@ ht-degree: 9%
 >title="內容編製索引"
 >abstract="AEM 編製索引是指將內容移轉到 Cloud Service 執行個體後編製該內容索引。必須編製索引才能支援在該執行個體上搜尋內容。"
 
-當Cloud Acceleration Manager完成將內容擷取至Cloud Service例項時，就表示該例項可供使用。 一開始不會將內容編列索引，這可能會導致環境不穩定，發生無法搜尋的內容和效能降低等問題。 為獲得執行個體上的最佳效能，移轉程式將自動開始編制內容索引。 除了監視索引進度外，沒有其他要做的事。
+在Cloud Acceleration Manager完成將內容擷取至您的Cloud Service執行個體後，就可使用它了。 一開始不會將內容編列索引，這可能會導致環境不穩定，發生無法搜尋的內容和效能降低等問題。 為獲得執行個體上的最佳效能，移轉程式將自動開始編制內容索引。 除了監視索引進度外，沒有其他要做的事。
 
 > 如需如何開始內嵌的詳細資訊，請參閱[將內容內嵌至Cloud Service](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)。
 
@@ -60,7 +60,7 @@ ht-degree: 9%
 
 ![影像](/help/journey-migration/content-transfer-tool/assets-indexing/failed.png)
 
-## 下一步 {#whats-next}
+## 後續步驟 {#whats-next}
 
 一旦目標雲端服務執行個體編列索引後，您就可以檢視編列索引工作的記錄，並尋找詳細資訊和錯誤。
 

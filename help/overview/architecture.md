@@ -141,7 +141,7 @@ AEM as a Cloud Service 中的高層級可組合服務清單可以用兩個區段
 * 操作遙測服務：
    * 負責從客戶體驗中收集關鍵量度 (例如頁面瀏覽次數、Core Web Vitals、轉換事件)，並回應相關聯查詢 (例如過去 7 天內指定網域的熱門頁面瀏覽次數)。
 * Assets Compute 服務：
-   * 負責處理上傳的影像、影片和文件；例如 PDF 和 Adobe Photoshop 檔案。處理作業可使用Adobe AI擷取影像和視訊中繼資料（例如描述性標籤或主要色調），然後產生轉譯（例如不同大小或格式），並存取Adobe Photoshop和Adobe Lightroom API等API。
+   * 負責處理上傳的影像、影片和文件；例如 PDF 和 Adobe Photoshop 檔案。處理作業可使用Adobe AI來擷取影像和視訊中繼資料（例如描述性標籤或主要色調），然後產生轉譯（例如不同大小或格式），並存取Adobe Photoshop和Adobe Lightroom API等API。
 * Identity Management Service (IMS)：
    * 是負責管理和驗證指定 Adobe Experience Cloud 應用程式 (例如 Cloud Manager 或 AEM 製作層) 之使用者和使用者群組的中心位置。
    * 透過 Adobe Admin Console 存取。
@@ -239,4 +239,4 @@ Cloud Manager 會透過滾動式更新模式來更新所有服務節點，藉此
 * Edge Delivery Services：
    * [AEM as a Cloud Service 概觀 - 含 Edge Delivery Services](/help/edge/overview.md)
    * [使用 Edge Delivery Services](/help/edge/overview.md)
-   * [探索 AEM as a Cloud Service 含 Edge Delivery Services 的基本架構和重要元件。](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html?lang=zh-Hant)
+   * [探索 AEM as a Cloud Service 含 Edge Delivery Services 的基本架構和重要元件。](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html)

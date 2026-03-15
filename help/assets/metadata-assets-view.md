@@ -34,7 +34,7 @@ ht-degree: 77%
 
 ![檢視資產的中繼資料](assets/metadata-view.png)
 
-*圖：若要檢視資產及其中繼資料，請從工具列按一下&#x200B;**[!UICONTROL 詳細資訊]**&#x200B;或按兩下資產。*
+*圖：若要檢視資產及其中繼資料，請從工具列按一下&#x200B;**[!UICONTROL 詳細資訊]**或按兩下資產。*
 
 標題、說明和上傳日期之類的基本中繼資料可在[!UICONTROL 基本]標籤中取得。[!UICONTROL 進階]標籤包含更進階的中繼資料，例如相機型號、鏡頭詳細資訊和地理標籤。[!UICONTROL 標記]標籤會根據影像內容包含自動套用的標記。
 
@@ -50,13 +50,13 @@ ht-degree: 77%
 
 ![檢視資產的智慧型標記](assets/metadata-view-tags.png)
 
-*圖：若要檢視智慧標記，請從工具列按一下&#x200B;**[!UICONTROL 詳細資訊]**&#x200B;或按兩下資產。*
+*圖：若要檢視智慧標記，請從工具列按一下&#x200B;**[!UICONTROL 詳細資訊]**或按兩下資產。*
 
 智慧型標記也包含信賴分數 (以百分比呈現)。這表示與套用標記相關的信賴度。您可以審核自動套用的智慧型標記。
 
 ## 新增或更新關鍵字 {#manually-tag}
 
-除了使用 [!DNL Adobe AI] 智慧型服務自動新增的智慧型標記之外，您還可新增更多標記到您的資產。開啟要預覽的資產，按一下[!UICONTROL 標記]，然後在[!UICONTROL 關鍵字]欄位中輸入所需的關鍵字。若要新增標記，請按一下「Return」。[!DNL Assets view] 會近乎即時地編製關鍵字的索引，因此您的團隊很快就能使用新的關鍵字搜尋更新的資產。
+除了使用 [!DNL Adobe AI] 智慧型服務自動新增的智慧型標記之外，您還可新增更多標記到您的資產。開啟要預覽的資產，按一下[!UICONTROL 標記]，然後在[!UICONTROL 關鍵字]欄位中輸入所需的關鍵字。 若要新增標記，請按一下「Return」。[!DNL Assets view] 會近乎即時地編製關鍵字的索引，因此您的團隊很快就能使用新的關鍵字搜尋更新的資產。
 
 您也可以從[!UICONTROL 智慧標記]區段移除由 [!DNL Assets view] 自動新增到所有上傳資產的標記。
 
@@ -69,7 +69,7 @@ ht-degree: 77%
 >[!CONTEXTUALHELP]
 >id="assets_metadata_forms"
 >title="中繼資料表單"
->abstract="[!DNL Experience Manager Assets] 預設會提供許多標準中繼資料欄位。組織擁有其他中繼資料需求，並需要更多中繼資料欄位以新增特定企業中繼資料。 中繼資料表單可讓企業將自訂中繼資料欄位新增到資產的詳細資訊頁面。特定企業中繼資料能夠改善其資產的控管和探索。"
+>abstract="[!DNL Experience Manager Assets] 預設會提供許多標準中繼資料欄位。組織擁有其他中繼資料需求，並需要更多中繼資料欄位以新增特定企業中繼資料。 中繼資料表單可讓企業將自訂中繼資料欄位新增到資產的詳細資訊頁面。企業特定的後設資料能夠改善其資產的治理和探索。"
 
 Assets檢視預設會提供許多標準中繼資料欄位。 組織擁有其他中繼資料需求，並需要更多中繼資料欄位以新增特定企業中繼資料。中繼資料表單可讓企業將自訂中繼資料欄位新增到資產的[!UICONTROL 詳細資訊]頁面。企業特定的後設資料能夠改善其資產的治理和探索。您可以從零開始建立表單，或改變現有表單的用途。
 
@@ -86,7 +86,7 @@ MIME 子類型 > MIME 類型 > `default` 表單 > 現成可用的表單
 
 >[!IMPORTANT]
 >
->特定檔案類型的新中繼資料表單會完成取代 [!DNL Assets view] 所提供的預設中繼資料表單。如果您刪除或重新命名中繼資料表單，新資產便可再次使用預設中繼資料欄位。
+>特定檔案類型的新中繼資料表單會完成取代 [!DNL Assets view] 所提供的預設中繼資料表單。 如果您刪除或重新命名中繼資料表單，新資產便可再次使用預設中繼資料欄位。
 
 若要建立中繼資料表單，請依照下列步驟：
 
@@ -232,17 +232,17 @@ See [Assign metadata form to folders](#assign-metadata-form-folder). Follow the 
 1. 開啟索引標籤（**[!DNL Basic]**、**[!DNL Advanced]**&#x200B;或&#x200B;**[!DNL Tags]**）。
 1. 選取中繼資料屬性，以在&#x200B;**[!UICONTROL 設定]**&#x200B;面板中編輯其設定。 您可以在&#x200B;**[!UICONTROL 設定]**&#x200B;面板中更新屬性對應、重新命名標籤、修改或新增屬性值，以及執行更多此類編輯。
 1. 按一下&#x200B;**[!UICONTROL 預覽]**&#x200B;以檢閱表單變更，然後再儲存這些變更。
-1. 按一下[儲存]以套用變更。**&#x200B;**
+1. 按一下[儲存]以套用變更。****
 
 ## 後續步驟 {#next-steps}
 
-* [觀看在Assets檢視中管理中繼資料表單的相關影片](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html?lang=zh-Hant)
+* [觀看在Assets檢視中管理中繼資料表單的相關影片](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html)
 
 * 使用資產檢視使用者介面所提供的[!UICONTROL 意見回饋]選項提供產品意見回饋
 
 * 若要提供文件意見回饋，請使用右側邊欄提供的[!UICONTROL 編輯此頁面]![來編輯頁面](assets/do-not-localize/edit-page.png)或[!UICONTROL 記錄問題]![來建立 GitHub 問題](assets/do-not-localize/github-issue.png)
 
-* 聯絡[客戶服務](https://experienceleague.adobe.com/zh-hant?support-solution=General#support)
+* 聯絡[客戶服務](https://experienceleague.adobe.com/?support-solution=General#support)
 
 <!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
 To reuse an existing form to create a form, do one of these:

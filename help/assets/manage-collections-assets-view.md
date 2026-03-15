@@ -17,7 +17,7 @@ ht-degree: 78%
 >[!CONTEXTUALHELP]
 >id="assets_collections"
 >title="管理集合"
->abstract="收藏集是 Assets 檢視中的一組資產、檔案夾或其他集合。使用集合在使用者之間共用資產。和檔案夾不同，集合可包含來自不同位置的資產。您可以和使用者共用多個集合。每個集合都包含資產的參考資料。資產的參考完整性會跨越集合來維護。"
+>abstract="收藏集是 Assets 檢視中的一組資產、檔案夾或其他集合。使用集合在使用者之間共用資產。 和檔案夾不同，集合可包含來自不同位置的資產。您可以和使用者共用多個集合。每個集合都包含資產的參考資料。資產的參考完整性會跨越集合來維護。"
 
 集合是指 Adobe Experience Manager Assets 視圖中的一組資產、資料夾或其他集合。使用集合在使用者之間共用資產。
 
@@ -237,4 +237,4 @@ Click **[!UICONTROL Collections]** in the left rail and use the Search box to sp
 
 * 若要提供文件意見回饋，請使用右側邊欄提供的[!UICONTROL 編輯此頁面]![來編輯頁面](assets/do-not-localize/edit-page.png)或[!UICONTROL 記錄問題]![來建立 GitHub 問題](assets/do-not-localize/github-issue.png)
 
-* 聯絡[客戶服務](https://experienceleague.adobe.com/zh-hant?support-solution=General#support)
+* 聯絡[客戶服務](https://experienceleague.adobe.com/?support-solution=General#support)

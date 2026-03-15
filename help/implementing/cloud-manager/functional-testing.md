@@ -8,7 +8,7 @@ role: Admin, Developer
 source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
 workflow-type: tm+mt
 source-wordcount: '1323'
-ht-degree: 5%
+ht-degree: 7%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 5%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_functionaltesting"
 >title="功能測試"
->abstract="瞭解內建在AEM as a Cloud Service部署流程中的三種不同型別的功能測試。 測試可確保計畫碼的品質和可靠性。"
+>abstract="了解 AEM as a Cloud Service 部署流程中內建的三種不同類型功能測試。測試可確保您程式碼的品質和可靠性。"
 
 探索[AEM as a Cloud Service部署程式](/help/implementing/cloud-manager/deploy-code.md)中可用的品質閘道以及各種型別的內建功能測試。 瞭解如何在全方位的測試策略架構中，貢獻並最佳化其使用。
 
@@ -58,7 +58,7 @@ Adobe提供數個內建品質閘道，而其他閘道則需要您的介入以進
 
 建議您為AEM應用程式提供單元測試，這是每個測試策略的基礎。 這些設定旨在快速且經常地執行，並提供早期且快速的意見反應。 這些管道已緊密整合至開發人員工作流程、您自己的CI/CD和AEM雲端服務部署管道。
 
-它們會使用JUnit實作，並使用Maven執行。 請參閱AEM專案原型[的](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/developing/archetype/using#unit-tests)核心模組，以取得AEM的範例單元測試及快速入門。
+它們會使用JUnit實作，並使用Maven執行。 請參閱AEM專案原型[的](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using#unit-tests)核心模組，以取得AEM的範例單元測試及快速入門。
 
 ### 程式碼品質
 
@@ -91,7 +91,7 @@ Adobe提供數個內建品質閘道，而其他閘道則需要您的介入以進
 
 為了最大化客戶特定開發的風險控制，Adobe鼓勵您將關鍵UI測試擷取到AEM as a Cloud Service中。 限制使用量，但著重於最大化其對客戶體驗的影響。
 
-測試封裝在Docker影像中 — 設計為儘可能易變(支援Cypress、Playwright、Selenium、Java和JavaScript)。 它們遵循與自訂功能測試相同的特性和目的。
+測試封裝在Docker影像中 — 設計為儘可能易變（支援Cypress、Playwright、Selenium、Java和JavaScript）。 它們遵循與自訂功能測試相同的特性和目的。
 
 >[!NOTE]
 >

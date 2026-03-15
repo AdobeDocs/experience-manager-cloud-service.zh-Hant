@@ -53,7 +53,7 @@ Highlights upcoming features for Assets.
 1. 按一下「**[!UICONTROL 釘選]**」。
 
    選定的項目會顯示在「我的工作區」的「**[!UICONTROL 快速存取]**」區段。
-   ![工作區中的任務](assets/quick-access.png)
+   ![Workspace 中的任務](assets/quick-access.png)
 
 **Insights**
 

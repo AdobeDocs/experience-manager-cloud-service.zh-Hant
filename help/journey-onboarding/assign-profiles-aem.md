@@ -5,7 +5,7 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
 source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '878'
 ht-degree: 100%
 
@@ -102,7 +102,7 @@ ht-degree: 100%
 
 ## 歷程結尾？ {#the-end}
 
-恭喜！您指派給 AEM as a Cloud Service 產品設定檔的使用者現在可以存取 AEM 製作環境，並開始使用 AEM as a Cloud Service 建立內容。同樣，開發人員現在可以存取 Cloud Manager 以使用 Git 儲存自訂應用程式程式碼並進行部署。從這個角度來看，您的上線歷程已經完成，您的使用者現在可以使用 AEMaaCS。
+恭喜！您指派給 AEM as a Cloud Service 產品設定檔的使用者現在可以存取 AEM 製作環境，並開始使用 AEM as a Cloud Service 建立內容。同樣，開發人員現在可以存取 Cloud Manager 以使用 Git 儲存自訂應用計劃程式碼並進行部署。從這個角度來看，您的上線歷程已經完成，您的使用者現在可以使用 AEMaaCS。
 
 但是，如果您想更了解作者和開發人員如何使用該系統，您可以選擇繼續此上線歷程的兩個部分：
 
@@ -115,5 +115,5 @@ ht-degree: 100%
 
 * [AEM as a Cloud Service 團隊和產品設定檔](/help/onboarding/aem-cs-team-product-profiles.md) - 了解 AEM as a Cloud Service 團隊和產品設定檔如何授予和限制已授權 Adobe 解決方案的存取權。
 * [在 Admin Console 中管理產品和使用者存取權](/help/security/ims-support.md#managing-products-and-user-access-in-admin-console) - 了解如何使用 Admin Console 來管理使用存取權。
-* [設定 AEM 存取權逐步說明](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html?lang=zh-Hant) - 查看這個簡短的逐步說明，了解如何在 Admin Console 中設定 Adobe IMS 使用者、使用者群組和產品設定檔。
+* [設定 AEM 存取權逐步說明](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html) - 查看這個簡短的逐步說明，了解如何在 Admin Console 中設定 Adobe IMS 使用者、使用者群組和產品設定檔。
 
