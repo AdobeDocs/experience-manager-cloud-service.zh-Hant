@@ -3,7 +3,7 @@ title: 新視訊檢視器
 description: Dynamic Media的全新視訊檢視器提供更優異的視訊播放體驗
 role: User
 exl-id: null
-source-git-commit: 889a3d4b496a12db0715ac741961fec308164198
+source-git-commit: dd954aceb25a84fd0176f872fde46e662041aed8
 workflow-type: tm+mt
 source-wordcount: '1443'
 ht-degree: 2%
