@@ -4,7 +4,7 @@ description: 瞭解如何使用安靜時間和無更新期間，將AEM as a Clou
 feature: Deploying
 role: Admin
 exl-id: 54f86a58-eb56-43e6-ab51-7af7466a2d40
-source-git-commit: 09dec0a073b3e97d5c796f490ccdf88fcd7e1c72
+source-git-commit: 64bedfde08d6e8569c51ff3d9a754da76de65704
 workflow-type: tm+mt
 source-wordcount: '720'
 ht-degree: 0%
@@ -21,7 +21,7 @@ AEM as a Cloud Service [自動維護更新](/help/implementing/deploying/aem-ver
 您可以使用兩個排程選項來設定這些時間範圍：
 
 * **無訊息時數** — 您可以定義不會發生更新的每日時間間隔（最多8小時）。
-* **更新可用期間** — 您可以定義不會發生更新的7天期間。 在12個月的時間範圍內，您最多可以有三個更新可用期間。
+* **更新可用期間** — 您可以定義不會發生更新的7天期間。 在浮動的365天視窗中，您最多可以有三個更新自由期間。
 
 更新可用期間和無訊息時數功能是以「每個程式」為基礎進行設定。 請記住，只有具有&#x200B;**業務負責人**&#x200B;和&#x200B;**部署管理員**&#x200B;的「使用者角色」的使用者才能檢視和使用這些功能。
 
