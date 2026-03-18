@@ -3,13 +3,13 @@ title: 連結檢查程式
 description: 瞭解Link Checker如何協助作者，方法是在連結新增至內容時驗證連結，以及提供哪些設定選項。
 feature: Operations
 role: Admin
-source-git-commit: cc8e242715faaef5cda25b428c315947ec3d7e06
+exl-id: f5f71e2f-69e3-44f9-812d-71fe417896f8
+source-git-commit: 08771212329423a2bf182ff2cdaf63be8cc37f80
 workflow-type: tm+mt
 source-wordcount: '998'
 ht-degree: 0%
 
 ---
-
 
 # 連結檢查程式 {#link-checker}
 
@@ -36,7 +36,7 @@ ht-degree: 0%
 內部連結是指向AEM存放庫中其他內容的連結。 您可以使用路徑選擇器、RTF編輯器或自訂元件來新增內部連結。 例如：
 
 * 您建立頁面`/content/wknd/us/en/adventures/ski-touring`
-* 該頁面包含[文字元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/wcm-components/text)中`/content/wknd/us/en/adventures/extreme-ironing`的連結。
+* 該頁面包含`/content/wknd/us/en/adventures/extreme-ironing`文字元件[中](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/text)的連結。
 
 內容作者在頁面中新增內部連結後，就會驗證該連結。 如果連結失效：
 
@@ -52,7 +52,7 @@ ht-degree: 0%
 外部連結是指AEM存放庫外部內容的連結。 可以使用RTF編輯器或使用自訂元件來新增外部連結。 例如：
 
 * 您建立頁面`/content/wknd/us/en/adventures/ski-touring`
-* 該頁面包含[文字元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/wcm-components/text)中`https://bunwarmerthermalunderwear.com`的連結。
+* 該頁面包含`https://bunwarmerthermalunderwear.com`文字元件[中](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/text)的連結。
 
 系統會驗證外部連結的語法，並檢查其可用性。 此檢查會以可設定的間隔非同步完成。 如果連結檢查器發現外部連結無效：
 
@@ -69,10 +69,10 @@ ht-degree: 0%
 
 1. 每當內容作者儲存任何頁面的連結時，就會觸發事件處理常式。
 1. 事件處理常式會遍歷`/content`下的所有內容，檢查新的或更新連結，並將它們新增至連結檢查器的快取。
-1. **Day CQ Link Checker Service**&#x200B;會定期執行，以檢查快取中的專案是否為有效語法。
+1. 然後會定期執行&#x200B;**Adobe AEM連結檢查器服務**，以檢查快取中的專案是否為有效語法。
 1. 然後，語法驗證的連結會出現在[外部連結檢查器視窗中。](#external-using)但是它們會處於&#x200B;**擱置中**&#x200B;狀態。
-1. 然後會定期執行&#x200B;**Day CQ連結檢查器工作**，藉由進行GET呼叫來驗證連結。
-1. **天CQ連結檢查器工作**&#x200B;接著會以GET呼叫的結果更新[外部連結檢查器視窗](#external-using)中的專案。
+1. 接著，**Adobe AEM連結檢查器工作**&#x200B;會定期執行，藉由進行GET呼叫來驗證連結。
+1. **Adobe AEM連結檢查器工作**&#x200B;接著會以GET呼叫的結果更新[外部連結檢查器視窗](#external-using)中的專案。
 
 ### 使用外部連結檢查程式 {#external-using}
 
@@ -109,12 +109,12 @@ ht-degree: 0%
 
 「連結檢查器」可在AEM中自動使用並立即可用。 不過，有數個OSGi設定可以修改以變更其行為：
 
-* **天CQ連結檢查器資訊儲存服務** — 此服務會定義存放庫中連結檢查器快取的大小。
-* **Day CQ Link Checker Service** — 此服務會執行外部連結語法的非同步檢查。
+* **Adobe AEM連結檢查器資訊儲存服務** — 此服務會定義存放庫中連結檢查器快取的大小。
+* **Adobe AEM連結檢查器服務** — 此服務會執行外部連結語法的非同步檢查。
    * 您可以定義檢查期間，以及檢查器會略過哪些型別的連結，還有其他選項。
-* **天CQ連結檢查器工作** — 此服務會執行外部連結的GET驗證。
+* **Adobe AEM連結檢查器工作** — 此服務會執行外部連結的GET驗證。
    * 它允許間隔的單獨定義，以檢查其他選項中的壞連結和好連結。
-* **天CQ連結檢查器轉換器** — 此服務會根據使用者定義的規則集轉換連結。
+* **Adobe AEM連結檢查器轉換器** — 此服務會根據使用者定義的規則集轉換連結。
 
 如需有關如何變更OSGi設定的詳細資訊，請參閱檔案[設定OSGi](/help/implementing/deploying/configuring-osgi.md)。
 
@@ -123,7 +123,7 @@ ht-degree: 0%
 您可以選擇完全停用連結檢查器。 若要這麼做：
 
 1. 開啟OSGi主控台。
-1. 編輯&#x200B;**天CQ連結檢查器轉換器**
+1. 編輯&#x200B;**Adobe AEM連結檢查器轉換器**
 1. 勾選您要停用的選項：
    * **停用檢查** — 停用連結驗證
    * **停用重新寫入** — 停用連結轉換
