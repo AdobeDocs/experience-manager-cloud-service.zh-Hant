@@ -1,20 +1,20 @@
 ---
-title: 通用編輯器 2026.03.12 發行說明
-description: 此為通用編輯器 2026.03.12 版本的發行說明。
+title: 通用編輯器 2026.03.19 發行說明
+description: 此為通用編輯器 2026.03.19 版本的發行說明。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: ef6e65a72eaa5e7e8b15f8ec096cd43351bc2674
+source-git-commit: 8d9d162ec5bba99afb1ae86252a49a9880be4e68
 workflow-type: tm+mt
-source-wordcount: '151'
-ht-degree: 56%
+source-wordcount: '197'
+ht-degree: 42%
 
 ---
 
 
-# 通用編輯器 2026.03.12 發行說明 {#release-notes}
+# 通用編輯器 2026.03.19 發行說明 {#release-notes}
 
-以下是通用編輯器 2026 年 3 月 12 日版本的發行說明。
+以下是通用編輯器 2026 年 3 月 19 日版本的發行說明。
 
 >[!TIP]
 >
@@ -26,14 +26,17 @@ ht-degree: 56%
 
 ## 新增功能 {#what-is-new}
 
-* 現在可以透過容器的[內容功能表](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu)新增元件。
-
-## 早期採用功能 {#early-adopter}
-
-如果您有興趣測試下列即將推出的功能並分享您的回饋意見，請透過與您的Adobe相關聯的電子郵件地址，傳送電子郵件給您的Adobe ID客戶成功經理。
-
-* 已為內容片段實施淺層複製。
+* 現在當導覽回[主畫面時，屬性中的專案會摺疊。](/help/sites-cloud/authoring/universal-editor/navigation.md#home-button)
+* [資產選擇器](/help/implementing/universal-editor/configure-assets-selector.md)現在支援[篩選器定義。](/help/implementing/universal-editor/filtering.md)
+* 如果選取的專案沒有可用的動作，[內容功能表](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu)就不會再顯示>形箭號來存取動作。
 
 ## 其他改善功能 {#other-improvements}
 
-* 已修正Document Authoring子元素不遵守nChild規則的問題。
+* 如果有模型/篩選器/元件定義，則在編輯器中，從某個應用程式切換到另一個應用程式時，將會重新擷取該定義。
+* 使用DA做為後端時，移除影像不會再留下空白的影像標籤。
+* 現在當使用DA做為後端時，區塊中的類別可正確處理。
+* Open API現在會將遠端資產正確儲存為物件。
+
+## 重大變更 {#breaking-change}
+
+* 所有擴充功能都應更新為`@adobe/uix-guest` >= `1.1.7`以提高穩定性。

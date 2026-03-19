@@ -4,12 +4,13 @@ description: 瞭解如何在通用編輯器中設定RTF編輯器(RTE)。
 feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
-source-git-commit: 39137052e9fa409f7f5494be53fa7693aaa60b17
+source-git-commit: 0ed57393afaf9af3258dacdcb043487f4a098e03
 workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 1%
 
 ---
+
 
 # 為通用編輯器設定RTE {#configure-rte}
 
@@ -23,7 +24,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->啟動Universal Editor專案時，後端支援的所有RTF文字功能(AEM搭配Edge Delivery或Headless實作)都會自動啟用。
+>啟動Universal Editor專案時，後端支援的所有RTF文字功能（AEM搭配Edge Delivery或Headless實作）都會自動啟用。
 >
 >* 您可以停用這些不需要的選項。
 >* 不支援啟用與您的專案型別不相容的選項。
@@ -171,7 +172,7 @@ RTE組態包含兩個部分：
 }
 ```
 
-#### 資料表組態選項 {#table-configuration-options}
+####資料表組態選項 {#table-configuration-options}
 
 * `wrapInParagraphs`： `false` （預設） — 表格儲存格包含未包裝的文字內容
 * `wrapInParagraphs`： `true` — 表格儲存格將內容包裝在段落標籤中
@@ -295,7 +296,7 @@ RTE組態包含兩個部分：
 
 `paste_text`編輯器動作會啟用標準的純文字貼上工作流程。
 
-* **預設捷徑：** Mod-Shift-V (在macOS上為Cmd+Shift+V，在Windows/Linux上為Ctrl+Shift+V)
+* **預設捷徑：** Mod-Shift-V （在macOS上為Cmd+Shift+V，在Windows/Linux上為Ctrl+Shift+V）
 * **行為：**&#x200B;從文字/純文字貼上（忽略來源格式）
    * 在清單中，新行會建立新的清單專案。
 
