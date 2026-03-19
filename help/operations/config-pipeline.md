@@ -4,9 +4,9 @@ description: 瞭解如何使用設定管道在AEM as a Cloud Service中部署不
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 66ea803dbf8e8b12fecf6256a88c94c2ca6fa112
+source-git-commit: 882d7de9aeae22777e1e02cbf78438e95db11e9a
 workflow-type: tm+mt
-source-wordcount: '1445'
+source-wordcount: '1491'
 ht-degree: 2%
 
 ---
@@ -221,13 +221,11 @@ data:
 
 如果包含&#x200B;*envTypes*&#x200B;中繼資料欄位，則僅應使用值&#x200B;**prod** （省略envTypes中繼資料欄位也很好）。 對於&#x200B;*層* reqProperty，只應使用值&#x200B;**publish**。
 
-## 秘密環境變數 {#secret-env-vars}
+## 設定密碼  {#secret-in-configuration}
 
-組態檔支援型別為&#x200B;**機密**&#x200B;的Cloud Manager環境變數，因此不需要將機密資訊儲存在原始檔控制中。 對於某些設定（包括記錄轉送），某些屬性會強制使用秘密環境變數。
+由於不需要將敏感資訊儲存在原始檔控制中，組態檔支援從設定管道變數或環境變數參照機密。 對於某些設定（包括記錄轉送），某些屬性會強制使用秘密變數。 如需在CDN設定中使用密碼的詳細資訊，請參閱[設定CDN認證和驗證](/help/implementing/dispatcher/cdn-credentials-authentication.md)。
 
-請注意，秘密環境變數會用於發佈傳遞專案；請參閱Edge Delivery Services專案的「秘密管道變數」一節。
-
-下列程式碼片段是如何在設定中使用機密環境變數`${{SPLUNK_TOKEN}}`的範例。
+下列程式碼片段是如何在設定中使用機密變數`${{SPLUNK_TOKEN}}`的範例。
 
 ```
 kind: "LogForwarding"
@@ -241,12 +239,22 @@ data:
       index: "AEMaaCS"
 ```
 
-如需有關如何使用環境變數的詳細資訊，請參閱[Cloud Manager環境變數](/help/implementing/cloud-manager/environment-variables.md)。
 
-## 秘密管道變數 {#secret-pipeline-vars}
 
-若為Edge Delivery Services專案，請使用&#x200B;**機密**&#x200B;型別的Cloud Manager管線變數，這樣敏感資訊就不需要儲存在原始檔控制中。 *套用的步驟*&#x200B;選取方塊應使用&#x200B;**部署**&#x200B;選項。
+### 秘密管道變數 {#secret-pipeline-vars}
 
-語法與上一節中顯示的程式碼片段相同。
+**偏好方式**&#x200B;是使用型別&#x200B;**機密**&#x200B;的Cloud Manager管線變數，因此敏感資訊不需要儲存在原始檔控制中。 **套用的步驟**&#x200B;選取方塊應使用&#x200B;**部署**&#x200B;選項。
 
 如需有關如何使用管道變數的詳細資訊，請參閱[Cloud Manager中的管道變數](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)。
+
+
+### 秘密環境變數 {#secret-env-vars}
+
+當您想要讓每個環境的密碼值不同時，請使用密碼環境變數。
+
+如需有關如何使用環境變數的詳細資訊，請參閱[Cloud Manager環境變數](/help/implementing/cloud-manager/environment-variables.md)。
+
+>[!NOTE]
+>使用秘密環境變數會比較麻煩，且涉及嚴格的紀律：環境變數不會與設定管道一起部署。 您必須先部署這些專案，才能執行管道，在管道設定仍參考它們時，不得將其移除。 這就是為什麼偏好使用管道秘密。
+
+

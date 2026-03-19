@@ -4,9 +4,9 @@ description: 瞭解如何在設定檔案中宣告規則，再使用Cloud Manager
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: 68a41d468650228b4ac35315690a76465ffe4c0b
+source-git-commit: 9f264bab062d5013ff5a4b40b1228be1f922ef51
 workflow-type: tm+mt
-source-wordcount: '2028'
+source-wordcount: '2181'
 ht-degree: 3%
 
 ---
@@ -40,9 +40,28 @@ data:
     ...
 ```
 
+## 部署秘密：環境變數與管道變數的比較 {#deploying-secrets}
+
+您可以透過兩種方式部署CDN設定中使用的秘密：
+
+* **管道密碼變數** — 已在Cloud Manager中設定為型別[密碼](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)的&#x200B;**管道變數**，已套用&#x200B;**步驟**&#x200B;設定為&#x200B;**部署**。 這些可作為設定管道層級設定使用。
+
+* **環境密碼變數** — 已在Cloud Manager中設定為[環境變數](/help/implementing/cloud-manager/environment-variables.md) （型別為&#x200B;**密碼**），且套用的&#x200B;**服務**&#x200B;設定為&#x200B;**全部**。 這些可作為環境層級設定使用。
+
+**偏好：管道密碼變數。**&#x200B;儘可能使用管道密碼變數，因為它們會與您的設定一起部署在相同管道執行中。 如此可讓秘密和設定保持同步，並簡化轉出。
+
+您無法針對相同設定將管道密碼與環境密碼混合使用。 如果為部署步驟定義了管道秘密變數，則會優先使用這些變數。
+
+下圖顯示如何在Cloud Manager中設定管道機密變數：
+
+![設定管道密碼變數](/help/implementing/dispatcher/assets/pipeline-secrets-configuration.png)
+
+如需新增、編輯和管理管道變數（包括秘密）的完整詳細資訊，請參閱[Cloud Manager中的管道變數](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)。
+
+## 使用秘密的准則 {#secrets-guidelines}
+
 處理秘密時，請謹記以下一些准則：
 
-* 環境密碼必須解除部署為[Cloud Manager密碼型別的環境變數](/help/operations/config-pipeline.md#secret-env-vars)。 在「已套用服務」欄位中，選取全部。
 * 秘密參考不會內插在字串中(例如 `"Token ${{AUTH_TOKEN}}"`將無法運作)
 * 如果設定中仍參考參考某個參考的環境機密，則不應移除此環境機密。
 
@@ -88,7 +107,7 @@ data:
 
 請參閱[「使用設定管道」](/help/operations/config-pipeline.md#common-syntax)，取得 `data` 節點上方屬性的描述。`kind`屬性值應該是&#x200B;*CDN*，且`version`屬性應該設定為`1`。
 
-如需詳細資訊，請參閱[設定和部署HTTP標頭驗證CDN規則](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule)教學課程步驟。
+如需詳細資訊，請參閱[設定和部署HTTP標頭驗證CDN規則](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule)教學課程步驟。
 
 其他屬性包括：
 
@@ -142,7 +161,7 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H "X-Forwarded-H
 
 成功測試後，可移除其他條件並重新部署設定。
 
-### 移轉程式(如果Adobe支援先前產生`X-AEM-Edge-Key` HTTP標頭值) {#migrating-legacy}
+### 移轉程式（如果Adobe支援先前產生`X-AEM-Edge-Key` HTTP標頭值） {#migrating-legacy}
 
 >[!NOTE]
 >在繼續移轉之前，請排程中繼環境上的測試移轉以驗證策略。
@@ -152,7 +171,7 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H "X-Forwarded-H
 
 先前，與客戶管理的CDN整合的程式涉及客戶向Adobe支援請求X-AEM-Edge-Key HTTP標題值，而非自行定義值。 若要遷移到新的自助服務方法（您可定義自己的邊緣索引鍵值），請按照以下步驟以確保順利轉換且沒有停機時間：
 
-1. 使用指定為`edgeKey1`和`edgeKey2`的新（客戶產生）和舊(Adobe產生)密碼來設定CDN設定。 這是[旋轉秘密](/help/implementing/dispatcher/cdn-credentials-authentication.md#rotating-secrets)檔案的變數。
+1. 使用指定為`edgeKey1`和`edgeKey2`的新（客戶產生）和舊（Adobe產生）密碼來設定CDN設定。 這是[旋轉秘密](/help/implementing/dispatcher/cdn-credentials-authentication.md#rotating-secrets)檔案的變數。
 
 2. 部署秘密和自助CDN設定。 在這個程式中的這個階段，舊的Adobe定義密碼仍應維持為客戶管理的CDN所傳遞的X-AEM-Edge-Key值。
 
@@ -208,7 +227,7 @@ data:
 >[!NOTE]
 >在部署參考清除金鑰的組態之前，必須將清除金鑰設定為[機密型別Cloud Manager環境變數](/help/operations/config-pipeline.md#secret-env-vars)。 建議使用至少32個位元組長度的唯一隨機金鑰；例如，Open SSL密碼編譯程式庫可以透過執行命令openssl rand -hex 32來產生隨機金鑰
 
-您可以參考以設定清除金鑰和執行CDN快取清除為重點的[教學課程](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache)。
+您可以參考以設定清除金鑰和執行CDN快取清除為重點的[教學課程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache)。
 
 ## 基本驗證 {#basic-auth}
 
