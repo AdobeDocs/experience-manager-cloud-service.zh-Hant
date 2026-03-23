@@ -6,9 +6,9 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: 0b41fd1a-737f-495f-89da-6cc2e002b424
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 66bd3730062284a9d155b89a3c653ed7ab86466b
 workflow-type: tm+mt
-source-wordcount: '174'
+source-wordcount: '173'
 ht-degree: 15%
 
 ---
@@ -33,5 +33,5 @@ ht-degree: 15%
 
 >[!NOTE]
 >
-> 如需詳細的設定步驟，使用者可以遵循指南[使用自訂字型](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/use-custom-fonts)
+> 如需詳細的設定步驟，使用者可以遵循指南[使用自訂字型](/help/forms/use-custom-fonts.md)
 >完成步驟並執行管道後，自訂字型可直接在互動式通訊編輯器中使用。

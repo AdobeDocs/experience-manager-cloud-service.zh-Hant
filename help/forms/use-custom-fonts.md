@@ -5,16 +5,14 @@ badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: 88214d36-fb97-4d46-a9fe-71dbc7826eb1
 feature: Adaptive Forms
 role: Admin, User
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 0e2fbc2a20e5e482ced373176fdfbc890c54dfa6
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---
 
 # 使用自訂字型
-
-**Cloud Service Communications檔案為測試版**
 
 您可以使用Forms as a Cloud Service Communications將XDP範本、XDP型PDF檔案或Acrobat表單(AcroForm)與XML資料結合，以產生PDF檔案。 您也可以使用通訊來組合、重新排列和增加PDF和XDP檔案，以及取得有關PDF檔案的資訊。
 
