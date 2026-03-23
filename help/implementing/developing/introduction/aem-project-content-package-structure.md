@@ -15,7 +15,7 @@ ht-degree: 2%
 
 >[!TIP]
 >
->熟悉基本的[AEM Project Archetype use](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/overview#)和[FileVault Content Maven外掛程式](/help/implementing/developing/tools/maven-plugin.md)，因為本文將以這些學問和概念為基礎。
+>熟悉基本的[AEM Project Archetype use](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/developing/archetype/overview#)和[FileVault Content Maven外掛程式](/help/implementing/developing/tools/maven-plugin.md)，因為本文將以這些學問和概念為基礎。
 
 本文概述讓Adobe Experience Manager Maven專案與AEM as a Cloud Service相容所需的變更，確保專案遵守可變和不可變內容的分割。 此外，相依性會建立為建立不衝突、確定性的部署，並封裝成可部署結構。
 
@@ -62,7 +62,7 @@ AEM as a Cloud Service部署程式管理Oak索引(`/oak:index`)。 這是因為C
 + 會產生OSGi套件Jar檔案，並直接內嵌於所有專案中。
 
 + `ui.apps`封裝包含要部署的所有程式碼，且僅部署至`/apps`。 `ui.apps`封裝的通用元素包含但不限於：
-   + [元件定義和HTL](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/overview#)指令碼
+   + [元件定義和HTL](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-htl/content/overview#)指令碼
       + `/apps/my-app/components`
    + JavaScript和CSS （透過[使用者端資料庫](/help/implementing/developing/introduction/clientlibs.md)）
       + `/apps/my-app/clientlibs`
@@ -72,7 +72,7 @@ AEM as a Cloud Service部署程式管理Oak索引(`/oak:index`)。 這是因為C
       + `/apps/settings`
    + ACL （許可權）
       + `rep:policy`下的任何路徑的任何`/apps`
-   + [預先編譯的套裝指令碼](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/precompiled-bundled-scripts#)
+   + [預先編譯的套裝指令碼](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/developing/archetype/precompiled-bundled-scripts#)
 
 >[!NOTE]
 >
