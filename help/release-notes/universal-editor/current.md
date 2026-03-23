@@ -4,9 +4,9 @@ description: 此為通用編輯器 2026.03.19 版本的發行說明。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 8d9d162ec5bba99afb1ae86252a49a9880be4e68
+source-git-commit: 048e86fe7930173bb33de9252607e2910520b575
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '195'
 ht-degree: 42%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 42%
 
 * 現在當導覽回[主畫面時，屬性中的專案會摺疊。](/help/sites-cloud/authoring/universal-editor/navigation.md#home-button)
 * [資產選擇器](/help/implementing/universal-editor/configure-assets-selector.md)現在支援[篩選器定義。](/help/implementing/universal-editor/filtering.md)
-* 如果選取的專案沒有可用的動作，[內容功能表](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu)就不會再顯示>形箭號來存取動作。
+* 如果選取的專案沒有可用的動作，[內容功能表](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu)現在會顯示指示此動作的訊息。
 
 ## 其他改善功能 {#other-improvements}
 
