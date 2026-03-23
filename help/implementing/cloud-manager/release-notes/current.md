@@ -4,10 +4,10 @@ description: 了解 Adobe Experience Manager as a Cloud Service 中 Cloud Manage
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: eb3e826e27e14b8b1da534440f11d43e973130ec
+source-git-commit: 2556f606db8b74bce25cd504a183abdc43e31227
 workflow-type: tm+mt
-source-wordcount: '715'
-ht-degree: 20%
+source-wordcount: '731'
+ht-degree: 19%
 
 ---
 
@@ -50,7 +50,7 @@ AEM as a Cloud Service中的Cloud Manager 2026.3.0發行日期是2026年3月5日
 
 >[!IMPORTANT]
 >
->Beta發行版本可能包含瑕疵，並依「現況」提供，並無任何保固。 Adobe沒有義務維護、更正、更新、變更、修改或以其他方式支援(透過Adobe支援服務或其他方式)測試版。 Adobe建議客戶謹慎行事，不要依賴Beta版正確運作或效能，或依賴任何隨附的檔案或資料。 Beta版中的功能和API可能會有所變更，恕不另行通知。 因此，使用測試版完全由客戶自行承擔風險。
+>Beta發行版本可能包含瑕疵，並依「現況」提供，並無任何保固。 Adobe沒有義務維護、更正、更新、變更、修改或以其他方式支援（透過Adobe支援服務或其他方式）測試版。 Adobe建議客戶謹慎行事，不要依賴Beta版正確運作或效能，或依賴任何隨附的檔案或資料。 Beta版中的功能和API可能會有所變更，恕不另行通知。 因此，使用測試版完全由客戶自行承擔風險。
 
 另請參閱[AEM Beta計畫](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs)
 
@@ -85,7 +85,7 @@ Interested in the beta? Email [beta_exphubextensibility@adobe.com](mailto:beta_e
 
 ### 模組快取能加快建置速度 {#quick-build-cm-pipelines}
 
-新的建置模型會使用模組層級快取來編譯已變更的模組 (而非整個存放庫)，藉此縮短建置時間。此建置模型適用於程式碼品質、完整堆疊和僅限中繼管道。
+新的建置模型會使用模組層級快取來編譯已變更的模組 (而非整個存放庫)，藉此縮短建置時間。 此建置模型適用於程式碼品質、完整堆疊和僅限中繼管道。
 
 ![編輯非生產管道對話方塊，其中顯示兩個建置策略選項，即Full Build和Smart Build](/help/implementing/cloud-manager/release-notes/assets/non-production-pipeline-edit.png)
 *編輯非生產管道對話方塊，其中顯示兩個建置策略選項：完整建置和智慧型建置。*
@@ -95,9 +95,11 @@ Interested in the beta? Email [beta_exphubextensibility@adobe.com](mailto:beta_e
 * **完整組建** — 每次執行都會建置存放庫中的所有模組。
 * **智慧型組建** — 僅建置自上次認可後變更的模組，這會縮短整體建置時間。
 
-您控制哪些管道使用&#x200B;**智慧型組建**。 在Beta版期間，此選項僅針對&#x200B;**程式碼品質**&#x200B;和&#x200B;**開發部署**&#x200B;管道顯示。
+您控制哪些管道使用&#x200B;**智慧型組建**。 在Beta版期間，此選項僅針對&#x200B;**程式碼品質**&#x200B;和&#x200B;**開發完整棧疊部署**&#x200B;管道顯示。
 
-感興趣嗎？請寄送電子郵件至 [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com)，並附上您的 Adobe OrgID 和方案 ID。
+請參閱[關於在非生產管道中使用Smart Build](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#about-smart-build)和[新增非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code)
+
+感興趣嗎？ 請寄送電子郵件至 [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com)，並附上您的 Adobe OrgID 和方案 ID。
 
 <!-- You can deactivate incremental builds at the pipeline level by setting the property `CM_BUILD_DISABLE_MODULE_CACHING` to `true` (effective during the `BUILD` step). For how to add pipeline variables, see [Pipeline Variables in Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md).-->
 
