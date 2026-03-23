@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 了解 Experience Manager as a Cloud Service 的運作方式以及該軟體可以為您做哪些事。
 breadcrumb-title: 使用手冊
 user-guide-title: 'AEM as a Cloud Service '
-source-git-commit: e926ce5b20866497dd9f11a163ee4142f33778d0
+source-git-commit: 79f98664a3c4fddade7ed2ad1aa45ae6c3b501ce
 workflow-type: tm+mt
-source-wordcount: '7129'
+source-wordcount: '7158'
 ht-degree: 95%
 
 ---
@@ -305,7 +305,7 @@ ht-degree: 95%
          + [2024.08.13 發行說明](/help/release-notes/universal-editor/2024/2024-08-13.md)
          + [2024.07.28 發行說明](/help/release-notes/universal-editor/2024/2024-07-28.md)
          + [2024.06.28 發行說明](/help/release-notes/universal-editor/2024/2024-06-28.md)
-   + [新增功能 &#x200B;](/help/release-notes/what-is-new.md)
+   + [新增功能 ](/help/release-notes/what-is-new.md)
    + [AEM Cloud Service 的重大變更](/help/release-notes/aem-cloud-changes.md)
    + [已過時和已移除的功能和 API](/help/release-notes/deprecated-removed-features.md)
    + [預發行通道](/help/release-notes/prerelease.md)
@@ -479,7 +479,7 @@ ht-degree: 95%
          + [使用專案工作流程](/help/sites-cloud/authoring/projects/workflows.md)
       + 頁面啟動 {#launches-for-pages}
          + [使用啟動](/help/sites-cloud/authoring/launches/overview.md)
-         + [建立啟動 &#x200B;](/help/sites-cloud/authoring/launches/creating.md)
+         + [建立啟動 ](/help/sites-cloud/authoring/launches/creating.md)
          + [管理啟動中的頁面](/help/sites-cloud/authoring/launches/managing-pages.md)
          + [編輯啟動](/help/sites-cloud/authoring/launches/editing.md)
          + [使用 Timewarp 預覽啟動](/help/sites-cloud/authoring/launches/preview.md)
@@ -543,7 +543,7 @@ ht-degree: 95%
             + [Live Copy 概觀主控台](/help/sites-cloud/administering/msm/live-copy-overview.md)
             + [轉出衝突](/help/sites-cloud/administering/msm/rollout-conflicts.md)
             + [MSM 最佳做法](/help/sites-cloud/administering/msm/best-practices.md)
-            + [疑難排解和常見問題 &#x200B;](/help/sites-cloud/administering/msm/troubleshooting.md)
+            + [疑難排解和常見問題 ](/help/sites-cloud/administering/msm/troubleshooting.md)
          + 翻譯 {#translation}
             + Sites 翻譯歷程 {#sites}
                + [了解 AEM 中的網站翻譯](/help/journey-sites/translation/overview.md)
@@ -553,7 +553,7 @@ ht-degree: 95%
                + [設定翻譯規則](/help/journey-sites/translation/translation-rules.md)
                + [翻譯內容](/help/journey-sites/translation/translate-content.md)
                + [發佈翻譯內容](/help/journey-sites/translation/publish-content.md)
-            + [Headless 翻譯歷程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html?lang=zh-Hant)
+            + [Headless 翻譯歷程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/translation/overview.html)
             + [翻譯多語言網站的內容](/help/sites-cloud/administering/translation/overview.md)
             + [準備翻譯內容](/help/sites-cloud/administering/translation/preparation.md)
             + [管理翻譯專案](/help/sites-cloud/administering/translation/managing-projects.md)
@@ -573,16 +573,16 @@ ht-degree: 95%
       + [將內容片段匯出到 Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [將體驗片段匯出到 Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [與 Adobe Campaign 整合](/help/sites-cloud/integrating/campaign.md)
-      + [使用 Adobe Journey Optimizer 的內容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html?lang=zh-Hant)
+      + [使用 Adobe Journey Optimizer 的內容片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer.html)
    + [AEM as a Cloud Service 的操作遙測](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)
    + [內容關聯式實驗](/help/sites-cloud/administering/contextual-experimentation.md)
 + Assets {#assets}
    + [概觀與新增功能](/help/assets/overview.md)
-   + [&#x200B; [!DNL Assets] as a [!DNL Cloud Service] 重大變更](/help/assets/assets-cloud-changes.md)
+   + [ [!DNL Assets] as a [!DNL Cloud Service] 重大變更](/help/assets/assets-cloud-changes.md)
    + [[!DNL Assets] 架構](/help/assets/architecture.md)
    + [支援的檔案格式](/help/assets/file-format-support.md)
    + [資產微服務概觀](/help/assets/asset-microservices-overview.md)
-   + [&#x200B; [!DNL Assets] 中的協助工具](/help/assets/accessibility.md)
+   + [ [!DNL Assets] 中的協助工具](/help/assets/accessibility.md)
    + [Assets as a Cloud Service Ultimate](/help/assets/assets-ultimate-overview.md)
    + [啟用 Assets as a Cloud Service Ultimate](/help/assets/enable-assets-ultimate.md)
    + [Assets as a Cloud Service Prime](/help/assets/assets-prime.md)
@@ -614,7 +614,7 @@ ht-degree: 95%
       + [預覽 3D 資產](/help/assets/dynamic-media/previewing-3d-assets.md)
       + [影像的智慧型標記](/help/assets/smart-tags.md)
       + [智慧標記培訓](/help/assets/smart-tags-training.md)
-      + [使用AI產生的中繼資料增強內容探索](/help/assets/enhance-content-discovery-with-ai-generated-metadata.md)
+      + [Enhance content discovery with AI generated metadata](/help/assets/enhance-content-discovery-with-ai-generated-metadata.md)
       + [影片的智慧標記](/help/assets/smart-tags-for-videos.md)
       + [如何組織資產](/help/assets/organize-assets.md)
       + [使用 [!DNL Adobe Stock] 資產](/help/assets/aem-assets-adobe-stock.md)
@@ -756,7 +756,7 @@ ht-degree: 95%
       + [搜尋和探索資產](/help/assets/search-assets-view.md)
       + [自訂搜尋篩選器](/help/assets/custom-search-filters.md)
       + [資產管理任務](/help/assets/manage-organize-assets-view.md)
-      + [AI產生的中繼資料](/help/assets/ai-generated-metadata-assets-view.md)
+      + [AI generated metadata](/help/assets/ai-generated-metadata-assets-view.md)
       + [編輯影像](/help/assets/edit-images-assets-view.md)
       + [編輯影片](/help/assets/edit-videos-assets-view.md)
       + [檢視和管理轉譯版](/help/assets/renditions.md)
@@ -775,7 +775,7 @@ ht-degree: 95%
       + [AEM Assets檢視使用者介面可擴展性](/help/assets/aem-assets-view-ui-extensibility.md)
 
       + [管理報告](/help/assets/manage-reports-assets-view.md)
-      + [階層式中繼資料Assets檢視](/help/assets/cascading-metadata-assets-view.md)
+      + [Cascading Metadata Assets View](/help/assets/cascading-metadata-assets-view.md)
    + Content Hub {#content-hub}
       + [概觀](/help/assets/product-overview.md)
       + [Content Hub 最新資訊](/help/assets/whats-new.md)
@@ -893,10 +893,10 @@ ht-degree: 95%
             + [設定以核心元件為主的最適化表單版面](/help/forms/layout-capabilities-adaptive-forms-core-components.md)
             + [建立最適化表單片段](/help/forms/adaptive-form-fragments-core-components.md)
             + [為最適化表單建立主題 - 核心元件](/help/forms/using-themes-in-core-components.md)
-            + [將最適化Forms主題內嵌於AEM Sites主題](/help/forms/embed-adaptive-forms-theme-in-site-theme.md)
+            + [Embed an Adaptive Forms theme in an AEM Sites theme](/help/forms/embed-adaptive-forms-theme-in-site-theme.md)
             + [建立以核心元件為基礎的最適化表單範本](/help/forms/template-editor-core-components.md)
             + [以 XFA Form 範本為基礎建立最適化表單 (核心元件)](/help/forms/create-adaptive-form-using-xfa-templates.md)
-            + [產生最適化Forms的提交PDF （原記錄檔案）](/help/forms/generate-document-of-record-core-components.md)
+            + [Generate Submission PDF (formerly Document of Record) for Adaptive Forms](/help/forms/generate-document-of-record-core-components.md)
             + [自訂自動產生的記錄檔案範本](/help/forms/customize-document-of-record-template.md)
             + [提交PDF中支援的HTML標籤標籤](/help/forms/html-markup-tags-support-in-document-of-record.md)
             + [使用機器翻譯或人工翻譯來翻譯最適化表單](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
@@ -982,7 +982,7 @@ ht-degree: 95%
             + [將使用者資料中的資訊新增至表單提交中繼資料](/help/forms/form-submission-metadata.md)
             + [從最適化表單叫用表單資料模型 (FDM) 服務的 API](/help/forms/invoke-form-data-model-services.md)
          + [預填最適化表單欄位](/help/forms/prepopulate-adaptive-form-fields.md)
-         + [產生提交PDF （原稱為記錄檔案）](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
+         + [Generate Submission PDF (formerly Document of Record)](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
          + [將對新語言環境的支援新增至最適化表單](/help/forms/supporting-new-language-localization.md)
          + 新增或改進中繼資料 {#manage-metadata}
             + [新增、移除或編輯最適化表單的中繼資料](/help/forms/manage-form-metadata.md)
@@ -1024,7 +1024,7 @@ ht-degree: 95%
       + [HTML5 表單的指令碼支援](/help/forms/scripting-support.md)
       + [AEM Forms 的表單集](/help/forms/formset-in-aem-forms.md)
 + 互動式通訊 {#interactive-communication}
-   + 瞭解互動式通訊 {#overview}
+   + Understanding Interactive Communication {#overview}
       + [簡介](/help/forms/interactive-communication/introduction.md)
       + [快速入門](/help/forms/interactive-communication/getting-started.md)
       + [建立互動式通訊](/help/forms/interactive-communication/create-interactive-communication.md)
@@ -1038,11 +1038,11 @@ ht-degree: 95%
       + [影像欄位](/help/forms/interactive-communication/image-field.md)
       + [文字欄位](/help/forms/interactive-communication/text-field.md)
       + [數值欄位](/help/forms/interactive-communication/numeric-field.md)
-      + [日期/時間欄位](/help/forms/interactive-communication/date-time-field.md)
+      + [Date/Time Field](/help/forms/interactive-communication/date-time-field.md)
       + [日期欄位](/help/forms/interactive-communication/date-field.md)
       + [核取方塊](/help/forms/interactive-communication/check-box.md)
       + [選項按鈕](/help/forms/interactive-communication/radio-button.md)
-      + [子表單](/help/forms/interactive-communication/subform.md)
+      + [Subform](/help/forms/interactive-communication/subform.md)
       + [矩形](/help/forms/interactive-communication/rectangle.md)
       + [表格](/help/forms/interactive-communication//table.md)
       + [線條](/help/forms/interactive-communication/line.md)
@@ -1055,13 +1055,13 @@ ht-degree: 95%
       + [產生PDF預覽](/help/forms/interactive-communication/generate-pdf-preview.md)
       + [啟用範本鎖定](/help/forms/interactive-communication/enable-template-lock.md)
       + [實作動態頁面編號](/help/forms/interactive-communication/implement-dynamic-page-numbering.md)
-      + [處理內容溢位](/help/forms/interactive-communication/handle-content-overflow.md)
-      + [支援XDP編輯](/help/forms/interactive-communication/support-xdp-editing.md)
+      + [Handle Content Overflow](/help/forms/interactive-communication/handle-content-overflow.md)
+      + [Support XDP Editing](/help/forms/interactive-communication/support-xdp-editing.md)
       + [建立版本並新增註解](/help/forms/interactive-communication/versioning-and-commenting-in-interactive-communication-editor.md)
       + [複製並貼上互動式通訊](/help/forms/interactive-communication/copy-and-paste-interactive-communication.md)
    + 關聯UI {#associateui}
-      + [在互動式通訊編輯器中建立UI關聯](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
-      + [在您的應用程式中整合關聯UI](/help/forms/interactive-communication/invoke-associate-ui.md)
+      + [Associate UI in Interactive Communication Editor](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
+      + [Integrate Associate UI in Your Application](/help/forms/interactive-communication/invoke-associate-ui.md)
    + [常見問題](/help/forms/interactive-communications-faq.md)
 + 以 Forms 為中心的工作流程 {#create-form-centric-workflows}
    + [以 Forms 為中心的工作流程簡介](/help/forms/aem-forms-workflow.md)
@@ -1107,12 +1107,13 @@ ht-degree: 95%
    + MCP支援 {#mcp-support}
       + [搭配AEM as a Cloud Service使用MCP](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)
       + 聊天應用程式（網頁與案頭） {#chat-applications}
-         + [合唱團克勞德](/help/ai-in-aem/mcp-support/setup-claude.md)
-         + [OpenAI ChatGPT](/help/ai-in-aem/mcp-support/setup-chatgpt.md)
+         + [使用AEM MCP設定Anthropic Claude](/help/ai-in-aem/mcp-support/setup-claude.md)
+         + [使用AEM MCP設定OpenAI ChatGPT](/help/ai-in-aem/mcp-support/setup-chatgpt.md)
       + 開發人員工具（IDE擴充功能、案頭應用程式、CLI） {#developer-tools}
-         + [游標](/help/ai-in-aem/mcp-support/setup-cursor.md)
+         + [使用AEM MCP設定游標](/help/ai-in-aem/mcp-support/setup-cursor.md)
       + 企業平台 {#enterprise-platforms}
-         + [Microsoft Copilot Studio](/help/ai-in-aem/mcp-support/setup-microsoft-copilot-studio.md)
+         + [使用AEM MCP設定Microsoft Copilot Studio](/help/ai-in-aem/mcp-support/setup-microsoft-copilot-studio.md)
+         + [使用GitHub Copilot和AEM MCP設定JetBrains](/help/ai-in-aem/mcp-support/setup-jetbrains-copilot.md)
    + AEM中的代理程式 {#agents}
       + [概觀](/help/ai-in-aem/agents/overview.md)
       + Brand Experience Agent {#brand-experience}
@@ -1120,8 +1121,8 @@ ht-degree: 95%
          + Experience Production Agent {#experience-production}
             + [概觀](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md)
             + [內容更新工作](/help/ai-in-aem/agents/brand-experience/experience-production/content-update.md)
-            + [通訊建立工作](/help/ai-in-aem/agents/brand-experience/experience-production/communication-creation.md)
-            + [表單建立工作](/help/ai-in-aem/agents/brand-experience/experience-production/form-creation.md)
+            + [Communication Creation Job](/help/ai-in-aem/agents/brand-experience/experience-production/communication-creation.md)
+            + [Form Creation Job](/help/ai-in-aem/agents/brand-experience/experience-production/form-creation.md)
          + Experience Modernization Agent {#modernization}
             + [概觀](/help/ai-in-aem/agents/brand-experience/modernization/overview.md)
             + [快速入門](/help/ai-in-aem/agents/brand-experience/modernization/getting-started.md)
@@ -1132,11 +1133,11 @@ ht-degree: 95%
          + [開發代理程式](/help/ai-in-aem/agents/brand-experience/development/development.md)
       + 內容建議程式代理程式 {#content-advisor}
          + [概觀](/help/ai-in-aem/agents/content-advisor/overview.md)
-         + [內容探索代理](/help/ai-in-aem/agents/content-advisor/discovery.md)
-         + [內容最佳化代理程式](/help/ai-in-aem/agents/content-advisor/content-optimization.md)
+         + [Content Discovery Agent](/help/ai-in-aem/agents/content-advisor/discovery.md)
+         + [Content Optimization Agent](/help/ai-in-aem/agents/content-advisor/content-optimization.md)
       + Brand Governance Agent {#governance}
          + [概觀](/help/ai-in-aem/agents/governance/overview.md)
-         + [如何匯入品牌原則](/help/ai-in-aem/agents/governance/how-to-import-a-brand-policy.md)
+         + [How to Import a Brand Policy](/help/ai-in-aem/agents/governance/how-to-import-a-brand-policy.md)
    + AI 助理 {#ai-assistant}
       + [設定 AEM 中的 AI 助理](/help/implementing/cloud-manager/ai-assistant-in-aem-admin.md)
       + [關於 AEM 中的 AI 助理](/help/implementing/cloud-manager/ai-assistant-in-aem.md)
@@ -1230,7 +1231,7 @@ ht-degree: 95%
             + [購物車和 Dispatcher 設定](/help/commerce-cloud/cif-storefront/configuring/shopping-cart-dispatcher.md)
             + [元件和 GraphQL 清除快取](/help/commerce-cloud/cif-storefront/configuring/clear-cache.md)
          + 開發 {#developing}
-            + [利用 AEM Cloud Service SDK 進行開發 &#x200B;](/help/commerce-cloud/cif-storefront/develop.md)
+            + [利用 AEM Cloud Service SDK 進行開發 ](/help/commerce-cloud/cif-storefront/develop.md)
             + [設定 CIF 元件樣式](/help/commerce-cloud/cif-storefront/customizing/style-cif-component.md)
             + [自訂 CIF 元件](/help/commerce-cloud/cif-storefront/customizing/customize-cif-components.md)
             + [使用 CIF 目錄選擇器](/help/commerce-cloud/cif-storefront/customizing/use-cif-pickers.md)
@@ -1307,14 +1308,14 @@ ht-degree: 95%
       + 編寫{#authoring}
          + [編寫](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=zh-hant)
          + [Markdown 編輯器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=zh-hant)
-      + [預覽片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html?lang=zh-Hant)
+      + [預覽片段](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/preview.html)
       + [樹狀結構](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=zh-hant)
    + 內容片段選擇器 {#content-fragment-selector}
       + [微前端內容片段選擇器 - 概觀](/help/headless/content-fragment-selector/overview.md)
       + [內容片段選擇器 - 相關屬性](/help/headless/content-fragment-selector/properties.md)
-      + [與Adobe應用程式整合](/help/headless/content-fragment-selector/integrate-adobe-application.md)
-      + [與非Adobe或第三方應用程式整合](/help/headless/content-fragment-selector/integrate-non-adobe-application.md)
-      + [使用Vanilla JS整合內容片段選擇器](/help/headless/content-fragment-selector/integrate-using-vanilla-js.md)
+      + [](/help/headless/content-fragment-selector/integrate-adobe-application.md)
+      + [Integrate with non-Adobe or third party application](/help/headless/content-fragment-selector/integrate-non-adobe-application.md)
+      + [Integrate Content Fragment Selector using Vanilla JS](/help/headless/content-fragment-selector/integrate-using-vanilla-js.md)
    + [用於傳遞和管理結構化內容的 AEM API](/help/headless/apis-headless-and-content-fragments.md)
    + GraphQL API {#graphql-api}
       + [用於內容片段的 GraphQL API](/help/headless/graphql-api/content-fragments.md)
@@ -1536,7 +1537,7 @@ ht-degree: 95%
          + [SecurBank 範例應用程式](/help/implementing/universal-editor/securbank.md)
       + [Headless 體驗管理](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=zh-hant)
       + 混合式與 SPA 開發 {#hybrid}
-         + [使用 AEM 的混合式和 SPA](https://business.adobe.com/tw/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
+         + [使用 AEM 的混合式和 SPA](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
          + [為元件啟用 JSON 匯出](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=zh-hant)
          + [停止支援 SPA 編輯器](/help/implementing/developing/hybrid/spa-editor-deprecation.md)
          + [SPA 簡介和逐步解說](/help/implementing/developing/hybrid/introduction.md)
@@ -1580,7 +1581,7 @@ ht-degree: 95%
          + [使用 Adobe Developer App Builder 延伸 AEM](/help/implementing/developing/extending/app-builder/extending-aem-with-app-builder.md)
          + [App Builder 簡介](/help/implementing/developing/extending/app-builder/videos/introduction.md)
          + [Adobe Developer Console](/help/implementing/developing/extending/app-builder/videos/adobe-developer-console.md)
-         + [SDK 和 CLI &#x200B;](/help/implementing/developing/extending/app-builder/videos/sdks-and-cli.md)
+         + [SDK 和 CLI ](/help/implementing/developing/extending/app-builder/videos/sdks-and-cli.md)
          + [建立應用程式](/help/implementing/developing/extending/app-builder/videos/create.md)
          + [動作](/help/implementing/developing/extending/app-builder/videos/actions.md)
          + [儲存資料庫](/help/implementing/developing/extending/app-builder/videos/storage-libraries.md)
@@ -1611,7 +1612,7 @@ ht-degree: 95%
          + [擷取字串進行翻譯](/help/implementing/developing/extending/i18n/extract.md)
       + [擴充功能與 Extension Manager](/help/implementing/developing/extending/extension-manager.md)
    + 部署至 AEM as a Cloud Service  {#deploying}
-      + [部署至 AEM as a Cloud Service &#x200B;](/help/implementing/deploying/overview.md)
+      + [部署至 AEM as a Cloud Service ](/help/implementing/deploying/overview.md)
       + [AEM 版本更新](/help/implementing/deploying/aem-version-updates.md)
       + [暫停更新時段與暫停更新期間](/help/implementing/deploying/quiet-hours-update-free-periods.md)
       + [為 AEM as a Cloud Service 設定 OSGi](/help/implementing/deploying/configuring-osgi.md)
@@ -1646,7 +1647,7 @@ ht-degree: 95%
    + [AEM as a Cloud Service 中的基礎結構和服務監視](/help/operations/monitoring.md)
    + [維護任務](/help/operations/maintenance.md)
    + [還原內容](/help/operations/restore.md)
-   + [還原先前部署的程式碼](/help/operations/restore-previous-code-deployed.md)
+   + [Restore Previous Code Deployed](/help/operations/restore-previous-code-deployed.md)
    + [非同步作業](/help/operations/asynchronous-jobs.md)
    + [使用設定管道](/help/operations/config-pipeline.md)
    + [移除一般 lucene 索引](/help/operations/removal-generic-lucene-index.md)
