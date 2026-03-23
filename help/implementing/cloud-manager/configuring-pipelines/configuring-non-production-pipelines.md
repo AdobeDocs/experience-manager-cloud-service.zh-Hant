@@ -6,7 +6,7 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 2556f606db8b74bce25cd504a183abdc43e31227
+source-git-commit: 8391980183b8c5a91046e01474200b9eaf8e0546
 workflow-type: tm+mt
 source-wordcount: '1727'
 ht-degree: 21%
@@ -62,7 +62,7 @@ ht-degree: 21%
 1. 按一下「**繼續**」。
 
 1. 您用於完成非生產管道設定的剩餘步驟，取決於您選擇使用的原始碼型別。
-在&#x200B;**新增非生產管道**&#x200B;對話方塊的&#x200B;**Source程式碼**&#x200B;索引標籤上，選取非生產管道應處理的程式碼型別。
+在**新增非生產管道**&#x200B;對話方塊的&#x200B;**Source程式碼**&#x200B;索引標籤上，選取非生產管道應處理的程式碼型別。
 
    * **[我正在使用完整棧疊代碼](#full-stack-code)**
    * **[我正在使用目標部署](#targeted-deployment)**
@@ -89,7 +89,7 @@ ht-degree: 21%
      > 
      >請參閱[新增和管理存放庫](/help/implementing/cloud-manager/managing-code/managing-repositories.md)，以便了解如何在 Cloud Manager 中新增和管理存放庫，
 
-   * **Git分支** — 從下拉式清單中，選擇管道建置應在所選存放庫中的哪個分支。 預設值為`main`。 管道使用所選分支作為構建和部署的來源。 如有必要，請按一下[重新整理]&#x200B;**&#x200B;**&#x200B;來更新所選存放庫的可用分支清單。 如果最近建立的分支未出現在清單中，請使用此選項。
+   * **Git分支** — 從下拉式清單中，選擇管道建置應在所選存放庫中的哪個分支。 預設值為`main`。 管道使用所選分支作為構建和部署的來源。 如有必要，請按一下[重新整理]****&#x200B;來更新所選存放庫的可用分支清單。 如果最近建立的分支未出現在清單中，請使用此選項。
    * **建置策略**
       * **完整組建** — 每次都會建置存放庫中的所有模組
       * Beta **智慧型組建** — 僅建置自上次認可後已變更的模組。<br>進一步瞭解[在非生產管道中使用Smart Build](#about-smart-build)。
@@ -112,7 +112,7 @@ ht-degree: 21%
 1. 按一下「**儲存**」。
 
 管道已儲存，您現在可以[管理您的管道]&#x200B;(managing-pipe)
-lines.md) （位於&#x200B;**方案總覽**&#x200B;頁面上的&#x200B;**管道**&#x200B;卡上）。
+lines.md) （位於**方案總覽**&#x200B;頁面上的&#x200B;**管道**&#x200B;卡上）。
 
 ### 我正在使用目標部署 {#targeted-deployment}
 
@@ -210,7 +210,7 @@ Smart Build目前僅適用於下列專案：
 * 程式碼變更的頻率和範圍。
 * 跨模組的相依性分佈。
 
-一般而言，具有許多獨立模組的專案通常能看到最大的改善。
+一般而言，具有許多獨立模組的專案可以有最大的改善。
 
 ### 每個模組快取選擇退出{#smart-build-cache-optout}
 
