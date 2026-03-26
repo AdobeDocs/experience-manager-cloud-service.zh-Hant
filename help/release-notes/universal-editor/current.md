@@ -1,20 +1,20 @@
 ---
-title: 通用編輯器 2026.03.19 發行說明
-description: 此為通用編輯器 2026.03.19 版本的發行說明。
+title: 通用編輯器 2026.03.26 發行說明
+description: 此為通用編輯器 2026.03.26 版本的發行說明。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 048e86fe7930173bb33de9252607e2910520b575
+source-git-commit: abbc43adbe64149098c049810482d37f76034eab
 workflow-type: tm+mt
-source-wordcount: '195'
-ht-degree: 42%
+source-wordcount: '146'
+ht-degree: 56%
 
 ---
 
 
-# 通用編輯器 2026.03.19 發行說明 {#release-notes}
+# 通用編輯器 2026.03.26 發行說明 {#release-notes}
 
-以下是通用編輯器 2026 年 3 月 19 日版本的發行說明。
+以下是通用編輯器 2026 年 3 月 26 日版本的發行說明。
 
 >[!TIP]
 >
@@ -22,21 +22,14 @@ ht-degree: 42%
 
 >[!TIP]
 >
->如需 Adobe Experience Manager as a Cloud Service 的最新發行說明，請參閱[此頁面](/help/release-notes/release-notes-cloud/release-notes-current.md)。
+>如需有關 Adobe Experience Manager as a Cloud Service 的最新發行說明，請參閱[此頁面](/help/release-notes/release-notes-cloud/release-notes-current.md)。
 
 ## 新增功能 {#what-is-new}
 
-* 現在當導覽回[主畫面時，屬性中的專案會摺疊。](/help/sites-cloud/authoring/universal-editor/navigation.md#home-button)
-* [資產選擇器](/help/implementing/universal-editor/configure-assets-selector.md)現在支援[篩選器定義。](/help/implementing/universal-editor/filtering.md)
-* 如果選取的專案沒有可用的動作，[內容功能表](/help/sites-cloud/authoring/universal-editor/authoring.md#context-menu)現在會顯示指示此動作的訊息。
+* [Document Authoring資產組態](https://docs.da.live/administrators/guides/setup-aem-assets#setup-aem-assets)現已透過組態端點公開。
+* [擴充點](/help/implementing/universal-editor/extending.md#extending-ui)已新增至內容功能表。
+* 已在Extensibility DynamicIcon系統中新增自訂工作流程圖示，以在UI中顯示深/淺取消狀態。
 
 ## 其他改善功能 {#other-improvements}
 
-* 如果有模型/篩選器/元件定義，則在編輯器中，從某個應用程式切換到另一個應用程式時，將會重新擷取該定義。
-* 使用DA做為後端時，移除影像不會再留下空白的影像標籤。
-* 現在當使用DA做為後端時，區塊中的類別可正確處理。
-* Open API現在會將遠端資產正確儲存為物件。
-
-## 重大變更 {#breaking-change}
-
-* 所有擴充功能都應更新為`@adobe/uix-guest` >= `1.1.7`以提高穩定性。
+* 已修正Document Authoring類別無法使用多欄位的問題，因為這些類別需要字串。
