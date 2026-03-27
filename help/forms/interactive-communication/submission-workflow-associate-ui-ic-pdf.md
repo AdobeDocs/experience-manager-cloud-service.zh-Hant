@@ -83,11 +83,11 @@ Associates open the Associate UI on the Publish instance, using the integration 
 
 ![互動式通訊設定 — 關聯UI的工作流程組態](/help/forms/assets/associate-ui-configure-workflow.png)
 
-啟用&#x200B;**外部化工作流程資料儲存**&#x200B;時，請設定外部器，讓工作流程資料儲存在您的外部儲存空間（例如Azure）。 請參閱[外部化工作流程資料](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/create-aem-workflow/externalize-workflow.html)。
+啟用&#x200B;**外部化工作流程資料儲存**&#x200B;時，請設定外部器，讓工作流程資料儲存在您的外部儲存空間（例如Azure）。 請參閱[外部化工作流程資料](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/create-aem-workflow/externalize-workflow.html?lang=zh-Hant)。
 
 ## 另請參閱
 
 - [在互動式通訊編輯器中建立UI關聯](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
 - [啟用並設定互動式通訊的關聯UI](/help/forms/interactive-communication/enable-configure-associate-ui.md)
 - [在您的應用程式中整合關聯UI](/help/forms/interactive-communication/invoke-associate-ui.md)
-- [外部化工作流程資料](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/create-aem-workflow/externalize-workflow.html)
+- [外部化工作流程資料](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/create-aem-workflow/externalize-workflow.html?lang=zh-Hant)
