@@ -66,7 +66,7 @@ Associates open the Associate UI on the Publish instance, using the integration 
 
    ![工作流程變數](/help/forms/assets/associate-ui-add-variables.png)
 
-1. **步驟：**&#x200B;新增&#x200B;**IC轉譯PDF輸出**步驟。
+1. **步驟：**&#x200B;新增&#x200B;**IC轉譯PDF輸出**&#x200B;步驟。
    ![新增工作流程步驟](/help/forms/assets/associate-ui-add-step.png)
 
 1. 在它的&#x200B;**Input**&#x200B;索引標籤中，將&#x200B;**Select範本(JsonObject)**&#x200B;設定為&#x200B;**變數** → **communicationDom**。 儲存步驟和模型。
