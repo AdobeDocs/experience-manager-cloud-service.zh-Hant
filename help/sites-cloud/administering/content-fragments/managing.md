@@ -6,7 +6,7 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: a3dd861d005cab9010a449ddcd8420ae043a4907
+source-git-commit: bafb253be9b3834e1b77047dab52928ba84752a6
 workflow-type: tm+mt
 source-wordcount: '3342'
 ht-degree: 2%
@@ -533,7 +533,7 @@ AEM可讓您：
 1. 從工具列選取&#x200B;**簽入**。
 1. 確認&#x200B;**簽入**&#x200B;動作。
 
-## 強制（管理員）簽入 {#forced-adminstrator-check-in}
+### 強制（管理員）簽入 {#forced-adminstrator-check-in}
 
 已簽出內容片段的使用者可能無法簽入片段。
 
