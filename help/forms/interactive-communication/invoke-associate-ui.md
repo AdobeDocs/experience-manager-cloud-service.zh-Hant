@@ -6,9 +6,9 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: f946ccea-86d0-4086-8208-9583b8206244
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: f889498f9ee5e71a4d3695dbfbe194d1bbb11488
 workflow-type: tm+mt
-source-wordcount: '1080'
+source-wordcount: '1097'
 ht-degree: 2%
 
 ---
@@ -25,13 +25,13 @@ ht-degree: 2%
 
 - 已建立和發佈互動式通訊
 - 已啟用快顯視窗支援的瀏覽器
-- 關聯[使用者必須屬於Forms-associates群組](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
-- 使用AEM[支援的任何](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/authentication/authentication)驗證機制（例如SAML 2.0、OAuth或自訂驗證處理常式）所設定的驗證
+- 關聯[使用者必須屬於Forms-associates群組](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/administrator-help/setup-organize-users/creating-configuring-roles#assign-a-role-to-users-and-groups)
+- 使用AEM[支援的任何](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/authentication)驗證機制（例如SAML 2.0、OAuth或自訂驗證處理常式）所設定的驗證
 
 >[!NOTE]
 >
 >- 本文示範使用SAML 2.0搭配使用[Microsoft Entra ID (Azure AD)做為身分提供者](https://learn.microsoft.com/en-us/power-pages/security/authentication/openid-settings)的驗證設定。
->- 對於Associate UI，[SAML 2.0驗證](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)文章中所述的標準設定之外，還需要其他SAML設定。 如需詳細資訊，請參閱[關聯UI的其他SAML設定](#additional-saml-configurations-for-associate-ui)區段。
+>- 對於Associate UI，[SAML 2.0驗證](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0)文章中所述的標準設定之外，還需要其他SAML設定。 如需詳細資訊，請參閱[關聯UI的其他SAML設定](#additional-saml-configurations-for-associate-ui)區段。
 
 ### 關聯UI的其他SAML設定
 
@@ -445,7 +445,7 @@ const data = {
 
    ![範例HTML UI](/help/forms/assets/samplehtmlui.png)
 
-1. **按一下[啟動關聯UI]**：按一下[啟動關聯UI]&#x200B;**按鈕。**&#x200B;隨即開啟新瀏覽器視窗，其中顯示與互動式通訊預先載入的關聯UI。
+1. **按一下[啟動關聯UI]**：按一下[啟動關聯UI]**按鈕。**&#x200B;隨即開啟新瀏覽器視窗，其中顯示與互動式通訊預先載入的關聯UI。
 
 輸入資料，關聯UI就會顯示如下：
 
@@ -517,5 +517,7 @@ When implementing the Associate UI integration, follow these best practices:
 ## 另請參閱
 
 - [在互動式通訊編輯器中建立UI關聯](/help/forms/interactive-communication/associate-ui-in-interactive-communication-editor.md)
+- [啟用並設定互動式通訊的關聯UI](/help/forms/interactive-communication/enable-configure-associate-ui.md)
+- [關聯UI的提交工作流程 — IC產生PDF輸出](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md)
 - [雲端上的互動式通訊](/help/forms/early-access-ea-features.md#interactive-communications-on-cloud)
 - [搶先使用的功能](/help/forms/early-access-ea-features.md)

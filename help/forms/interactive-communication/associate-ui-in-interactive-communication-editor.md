@@ -6,9 +6,9 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: 9ba58659-b14c-4ebc-a6d9-e56a4b6aa48b
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: f889498f9ee5e71a4d3695dbfbe194d1bbb11488
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '639'
 ht-degree: 3%
 
 ---
@@ -57,7 +57,7 @@ ht-degree: 3%
 
 ### 2.作者
 
-使用「關聯UI」來設計及管理互動式通訊。 ß
+設計及管理互動式通訊，並將其設定為關聯UI （包括啟用關聯檢視和選擇性工作流程）。
 
 | 責任 | 焦點 |
 |---------------|-------|
@@ -78,7 +78,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
-> 關聯必須是&#x200B;**forms-associates**&#x200B;群組的一部分。
+> 關聯必須是&#x200B;**forms-associates**&#x200B;群組的一部分。 對於也從作者執行個體上的關聯UI提交的作者，將其也新增到&#x200B;**工作流程使用者**。
 
 ## 動態使用案例
 
@@ -92,36 +92,22 @@ ht-degree: 3%
 | **公共部門** | 現場產生警方驗證報告、公民服務收據、申訴確認信和案件更新摘要。 |
 | **政府** | 建立福利方案註冊的應用程式狀態摘要、服務核准信函和即時通訊。 |
 
-## 啟用關聯UI工作流程
+## 啟用關聯UI
 
-作者可以按照以下步驟設定和發佈互動式通訊(IC)以存取「關聯UI」：
+作者啟用「關聯UI」，並選擇性地設定在&#x200B;**互動式通訊設定**&#x200B;中提交的工作流程：
 
->[!NOTE]
->
-> 支援的關聯元件：日期欄位、數值欄位、文字欄位、日期時間欄位、日期欄位、核取方塊、選項按鈕、下拉式清單。
+1. **啟用關聯檢視** — 在&#x200B;**關聯屬性**&#x200B;中，勾選&#x200B;**啟用關聯檢視編輯**，然後按一下&#x200B;**套用變更**&#x200B;並儲存檔案。
+2. **設定工作流程（選擇性）** — 在&#x200B;**工作流程**&#x200B;中，開啟&#x200B;**設定更新的工作流程**，選取工作流程模型，並選擇設定成功訊息和重新導向URL。
+3. **設定可編輯的欄位** — 啟用關聯可以編輯和設定驗證的欄位。
+4. **發佈並共用** — 發佈IC並與關聯者共用連結。
 
-### 建立互動通訊
-
-設計及設定互動式通訊，確保品牌、資料繫結、法規遵循規則及整合皆正確設定。
-
-### 啟用關聯UI
-
-從頂端動作列中，啟用「關聯UI」選項，讓IC可用於關聯驅動。
-
-### 啟用元件中的關聯UI
-
-### 設定可編輯欄位
-
-在必填欄位區段中，啟用關聯可編輯的欄位。
-設定驗證以確保精確且受控的資料輸入。
-
-### 發佈互動通訊
-
-完成所有設定後，發佈互動式通訊以取得安全存取。
-
-### 與Associates共用已發佈的IC
-
-提供發行的IC連結至「關聯」，讓他們能夠驗證、輸入客戶特定資訊，並產生具有有效輸入的最終通訊。
+如需熒幕擷取畫面與提交/工作流程行為的逐步指示（作者發佈與關聯發佈），請參閱[啟用並設定互動式通訊的關聯UI](/help/forms/interactive-communication/enable-configure-associate-ui.md)。 若要建置從IC提交產生PDF的工作流程，請參閱[關聯UI的提交工作流程 — IC產生PDF輸出](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md)。
 
 **關聯UI**&#x200B;可縮短結構化內容製作與即時客戶參與之間的差距。\
 結合直覺式設計、強大的後端設定和嚴格的法規遵循控制，組織可以大規模提供&#x200B;**快速、精確和個人化的通訊**。
+
+## 另請參閱
+
+- [啟用並設定互動式通訊的關聯UI](/help/forms/interactive-communication/enable-configure-associate-ui.md)
+- [在您的應用程式中整合關聯UI](/help/forms/interactive-communication/invoke-associate-ui.md)
+- [關聯UI的提交工作流程 — IC產生PDF輸出](/help/forms/interactive-communication/submission-workflow-associate-ui-ic-pdf.md)
