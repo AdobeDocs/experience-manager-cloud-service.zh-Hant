@@ -6,9 +6,9 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: a3dd861d005cab9010a449ddcd8420ae043a4907
 workflow-type: tm+mt
-source-wordcount: '2943'
+source-wordcount: '3342'
 ht-degree: 2%
 
 ---
@@ -93,17 +93,20 @@ ht-degree: 2%
 
 主控台的主/右側面板（表格檢視）提供一系列有關您的內容片段的資訊。 有些專案也會提供進一步動作和/或資訊的直接連結：
 
+* **標題**
+   * 掛鎖圖示表示片段是[簽出](#check-out-and-check-in)並由一位使用者鎖定；選取掛鎖圖示會顯示已簽出片段的帳戶詳細資訊。
+   * 資訊(i)圖示可讓您快速存取右側面板中其他片段特定的資訊。
 * **名稱**
    * 提供在編輯器中開啟片段的連結。
 * **模型**
    * 僅供參考。
-   * 可用於[快速篩選](#fast-filtering)
+   * 可用於[快速篩選](#fast-filtering)。
 * **資料夾**
    * 提供可在主控台中開啟資料夾的連結。
 將游標停留在資料夾名稱上將顯示 JCR 路徑。
 * **狀態**
    * 僅供參考。
-   * 可用於[快速篩選](#fast-filtering)
+   * 可用於[快速篩選](#fast-filtering)。
 * **預覽**
    * 僅供參考：
       * **同步**： **作者**&#x200B;和&#x200B;**預覽**&#x200B;服務上的內容片段同步。
@@ -187,8 +190,8 @@ ht-degree: 2%
 * **[取代](#find-and-replace)**
 * **移動**
 * **重新命名**
+* **[取出並簽入](#check-out-and-check-in)**
 * **[刪除](#deleting-a-fragment)** （僅適用於未發佈的片段）
-
 
 >[!NOTE]
 >
@@ -481,6 +484,64 @@ FolderC
 >如果您選取20個以上的內容片段，您會看到訊息&#x200B;**找不到及取代**。
 
 ![確認取代](assets/cf-managing-confirm-replace.png)
+
+## 出庫與入庫 {#check-out-and-check-in}
+
+AEM可讓您：
+
+* [簽出](#check-out-a-content-fragment)內容片段，導致其他使用者無法使用片段
+* [簽入](#check-in-a-content-fragment)內容片段，允許其他使用者繼續使用該片段
+
+當您取出片段時，該片段已鎖定(`jcr:lock`)。 **標題**&#x200B;欄中的掛鎖圖示表示鎖定的片段。 選取掛鎖圖示可提供已取出片段的帳戶詳細資訊。
+
+您可以編輯、發佈、取消發佈、移動或刪除鎖定的片段。 在您簽入片段之前，其他使用者無法對片段執行任何這些動作；但他們仍然可以變更鎖定的片段的中繼資料。
+
+此功能有助於防止多個使用者共同編輯片段時發生衝突。
+
+>[!NOTE]
+>
+>若要能夠簽出/放入內容片段，您必須擁有寫入許可權。
+
+>[!CAUTION]
+>
+>您可以刪除包含已取出內容片段的資料夾。
+>
+>在刪除資料夾之前，請確保該資料夾不包含任何使用者已簽出的內容片段（或其他數位資產）。
+
+>[!NOTE]
+>
+>由於內容片段是以Assets的形式儲存在內部，此功能與Experience Manager DAM[中的](/help/assets/check-out-and-submit-assets.md)簽入和簽出檔案密切相關。
+
+### 簽出內容片段 {#check-out-a-content-fragment}
+
+要簽出片段：
+
+1. 在&#x200B;**內容片段**&#x200B;主控台導覽至內容片段的位置。
+1. 選取片段。
+1. 從工具列選取&#x200B;**簽出**。
+1. 確認&#x200B;**簽出**&#x200B;動作。
+
+   * **標題**&#x200B;欄中的掛鎖圖示表示片段已鎖定，只能由您編輯。
+   * 如果另一個使用者開啟片段進行編輯，他們會看到一則訊息，指出他們處於唯讀模式。
+
+### 簽入內容片段 {#check-in-a-content-fragment}
+
+若要將片段簽入：
+
+1. 在&#x200B;**內容片段**&#x200B;主控台導覽至內容片段的位置。
+1. 選取片段。
+1. 從工具列選取&#x200B;**簽入**。
+1. 確認&#x200B;**簽入**&#x200B;動作。
+
+## 強制（管理員）簽入 {#forced-adminstrator-check-in}
+
+已簽出內容片段的使用者可能無法簽入片段。
+
+在這種情況下，管理員可以執行&#x200B;**簽入**&#x200B;作業。
+
+>[!NOTE]
+>
+>另請參閱Assets [強制籤入](/help/assets/check-out-and-submit-assets.md#forced-check-in)。
 
 ## 刪除片段 {#deleting-a-fragment}
 
