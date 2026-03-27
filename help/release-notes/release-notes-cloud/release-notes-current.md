@@ -38,7 +38,7 @@ ht-degree: 27%
 
 Have a look at the March 2026 Release Overview video for a summary of the features added in the 2026.3.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3480399/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3480410/?captions=chi_hant&quality=12)
 
 -->
 
@@ -165,7 +165,7 @@ Forms Manager現在[支援最適化Forms （核心元件和基本元件）](/hel
 
 #### Cloud Manager MCP伺服器 {#cm-mcp-server}
 
->[!VIDEO](https://video.tv.adobe.com/v/3480340/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3480353/?captions=chi_hant&quality=12)
 
 現代IDE使用模型內容通訊協定(MCP)來啟用大型語言模型(LLM)，以叫用MCP伺服器公開的工具。 開發人員不必直接與低階API規格整合，只需以自然語言描述其意圖即可。
 
