@@ -6,10 +6,10 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: fc9f7f10d1797bda5f31d82005b0afbb6ea1e644
 workflow-type: tm+mt
-source-wordcount: '1402'
-ht-degree: 37%
+source-wordcount: '1903'
+ht-degree: 27%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 37%
 >
 >在設定前端管道之前，請參閱[AEM Quick Site建立歷程](/help/journey-sites/quick-site/overview.md)，以透過易於使用的AEM Quick Site建立工具取得端到端指南。 此歷程可幫助您簡化AEM網站的前端開發，讓您無需AEM後端知識即可快速自訂網站。
 
-1. 在 [experiece.adobe.com](https://experience.adobe.com) 登入 Cloud Manager。
+1. 在[experience.adobe.com](https://experience.adobe.com)登入Cloud Manager。
 1. 在「**快速存取**」區段中，按一下「**Experience Manager**」。
 1. 在左側面板中，按一下「**Cloud Manager**」。
 1. 選取您想要的組織。
@@ -71,14 +71,14 @@ ht-degree: 37%
 
 1. 在&#x200B;**Source程式碼**&#x200B;索引標籤上，選取管道應處理的程式碼型別。
 
-   * **[設定完整棧疊計畫碼管道](#full-stack-code)**
+   * **[我正在使用完整棧疊代碼](#full-stack-code)**
    * **[設定目標部署管道](#targeted-deployment)**
 
 如需有關管道型別的詳細資訊，請參閱[CI/CD管道](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)。
 
 完成建立生產流水線的步驟因所選原始計畫碼型別而異。 按照上面的連結跳到本文件的下一部分以便完成管道的設定。
 
-### 設定完整棧疊計畫碼管道 {#full-stack-code}
+### 我使用完整棧疊計畫碼 {#full-stack-code}
 
 完整棧疊計畫碼管道同時部署包含一個或多個AEM伺服器應用程式以及HTTPD/Dispatcher配置的後端和前端計畫碼構建。
 
@@ -96,8 +96,14 @@ ht-degree: 37%
    > 
    >請參閱[新增和管理存放庫](/help/implementing/cloud-manager/managing-code/managing-repositories.md)，瞭解如何在Cloud Manager中新增和管理存放庫。
 
-   * **Git分支** — 定義選取的管道應該從哪個分支擷取程式碼。
-輸入分支名稱的前幾個字元，此欄位的自動完成功能會尋找相符的分支以協助您選取。
+   * **Git分支** — 從下拉式清單中，選擇管道建置應在所選存放庫中的哪個分支。 預設為 `main`。 管道使用所選分支作為構建和部署的來源。 如有必要，請按一下[重新整理]****&#x200B;來更新所選存放庫的可用分支清單。 如果最近建立的分支未出現在清單中，請使用此選項。
+   * **建置策略**
+      * **完整組建** — 每次都會建置存放庫中的所有模組
+      * Beta **智慧型組建** — 僅建置自上次認可後已變更的模組。<br>進一步瞭解[在非生產管道中使用Smart Build](#about-smart-build-non-production-pipeline)。
+
+        >[!IMPORTANT]
+        >
+        >智慧型組建僅適用於計畫碼品質管道和開發完整棧疊計畫碼部署管道。
    * **忽略 Web 層設定**- 選取後，管道不會部署您的 Web 層設定。
    * **在部署到生產之前暫停** — 在部署到生產之前暫停管道。
    * **已排程** — 讓使用者啟用已排程的生產部署。
@@ -118,7 +124,7 @@ ht-degree: 37%
 
 管道已儲存，您現在可以在&#x200B;**計劃概觀**&#x200B;頁面的&#x200B;**管道**&#x200B;卡上[管理您的管道](managing-pipelines.md)。
 
-### 設定目標部署管道 {#targeted-deployment}
+### 我正在使用目標部署 {#targeted-deployment}
 
 目標部署只會為AEM應用程式的選定部分部署程式碼。 在這種部署中，您可以選擇&#x200B;**包含**&#x200B;下列其中一個型別的程式碼：
 
@@ -168,6 +174,80 @@ ht-degree: 37%
 1. 按一下「**儲存**」。
 
 管道已儲存，您現在可以在&#x200B;**計劃概觀**&#x200B;頁面的&#x200B;**管道**&#x200B;卡上[管理您的管道](managing-pipelines.md)。
+
+## Beta：關於在生產管道中使用Smart Build{#about-smart-build-production-pipeline}
+
+Cloud Manager中的&#x200B;**智慧型組建**&#x200B;是生產管道的最佳組建策略。 Smart Build會快取模組，並只重新建置自上次成功執行後已變更的模組，藉此縮短建置時間。 未變更的模組會從快取中重複使用，而只會重建已修改的模組及其相依性，進而提高反複開發工作流程的效率。
+
+>[!NOTE]
+>
+>對這個測試版感興趣嗎？ 請寄送電子郵件至 [beta_quickbuild_cmpipelines@adobe.com](mailto:beta_quickbuild_cmpipelines@adobe.com)，並附上您的 Adobe OrgID 和方案 ID。
+
+>[!IMPORTANT]
+>
+>啟用Smart Build後的首次執行行為類似於Full Build，因為快取是空的。
+
+發生下列情況時，建議使用Smart Build：
+
+* 您正在積極開發和提交頻繁的增量變更。
+* 您的專案包含多個Maven模組。
+* 完整組建需要相當長的時間。
+
+有以下情況時，Smart Build並不總是理想的選擇：
+
+* 您的組建嚴重依賴外掛程式，這些外掛程式會在Maven的相依性圖表之外執行操作。
+* 每次執行都需要完整重建驗證。
+
+### 瞭解組建效能{#smart-build-performance}
+
+使用Smart Build的效能提升取決於幾個因素，包括：
+
+* 專案中的模組數。
+* 程式碼變更的頻率和範圍。
+* 跨模組的相依性分佈。
+
+一般而言，具有許多獨立模組的專案可以有最大的改善。
+
+### 每個模組快取選擇退出{#smart-build-cache-optout}
+
+Smart Build提供可讓您停用特定模組快取的精細控制項。 此功能在某些模組中相當實用：
+
+* 使用外掛程式，例如`exec-maven-plugin`或`maven-antrun-plugin`。
+* 執行Maven相依性未追蹤的檔案操作。
+* 快取內容會產生不一致的結果。
+
+### 停用模組的快取{#smart-build-disable-caching}
+
+您可以將下列屬性新增至受影響模組的`pom.xml`：
+
+```xml
+<properties>
+  <maven.build.cache.enabled>false</maven.build.cache.enabled>
+</properties>
+```
+
+此語法會強制模組在每次管道執行時重建，而其他模組會繼續受益於快取。
+
+### 使用Smart Build時的限制和考量{#smart-build-limitations}
+
+使用Smart Build時，請記得下列事項：
+
+* Smart Build仰賴Maven相依性分析。
+* 相依性圖表以外的變更可能不會觸發重新建置。
+* 有些外掛程式可能與快取不完全相容。
+* 您可以透過編輯生產管道隨時切換回&#x200B;**完整組建**。
+
+如果您遇到非預期的建置行為，請考慮停用特定模組的快取，或暫時將建置策略切換為&#x200B;**完整建置**。
+
+### 疑難排解智慧型組建問題{#smart-build-troubleshoot}
+
+| 問題 | 建議的解決方案 |
+| --- | --- |
+| 建置結果不一致 | ·停用受影響模組的快取。<br>·驗證外掛程式行為（尤其是`exec`/`antrun`外掛程式）。 |
+| 沒有效能改善 | ·確認已執行多次（快取熱身）。<br>·檢查大多數模組是否頻繁變更。 |
+| 未預期的成品或遺失的變更 | ·檢閱變更是否在Maven相依性追蹤之外。<br>·使用&#x200B;**完整組建**&#x200B;進行驗證。 |
+
+請參閱[新增生產管道](#adding-production-pipeline)以啟用智慧建置。
 
 ## 跳過Dispatcher套件 {#skip-dispatcher-packages}
 

@@ -4,10 +4,10 @@ description: 了解如何使用 Edge Delivery Services 傳遞您的 Cloud Manage
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 897f6376c594604527231f6f5a05a8b85d6858f3
+source-git-commit: fc9f7f10d1797bda5f31d82005b0afbb6ea1e644
 workflow-type: tm+mt
-source-wordcount: '819'
-ht-degree: 100%
+source-wordcount: '1127'
+ht-degree: 73%
 
 ---
 
@@ -34,6 +34,41 @@ AEM as a Cloud Service 中的 Cloud Manager 可讓您為專案啟用 Edge Delive
 
 此外，您還可以獲得整合的體驗來管理所有 AEM 屬性，同時確保重要工作流程的一致性。這些工作流程包括網域名稱管理、SSL 憑證管理和內容傳遞網路對應。
 
+## 關於具有AEM製作功能的Edge Delivery Services (Beta) {#eds-aem-authoring}
+
+>[!NOTE]
+>
+>此處說明的彈性發佈層級和AEM編寫行人穿越道功能位於Beta。 若要加入Beta，請使用您的Adobe組織ID和計畫ID透過電子郵件傳送[grp-beta_xwalk-publish_config@adobe.com](mailto:grp-beta_xwalk-publish_config@adobe.com)。
+
+現代的Web體驗需要高效能傳遞，但許多組織也仰賴既有的AEM製作工作流程、控管和內容重複使用模式。 為協助您的團隊在不中斷編寫的情況下實現傳送現代化，Cloud Manager推出可讓您進行下列操作的功能：
+
+* 使用Edge Delivery Services提供體驗。
+* 繼續使用AEM Author建立內容。
+* 僅布建架構所需的基礎架構。
+
+這些功能可讓組織逐步採用現代化遞送，而不會犧牲現有的工作流程。
+
+### Edge Delivery網站的製作選項
+
+在Cloud Manager中建立Edge Delivery網站時，您可以選擇慣用的撰寫方法：
+
+* 檔案式製作 — 在Google Drive或SharePoint中製作內容。 不需要AEM環境。
+* AEM製作 — 使用通用編輯器在AEM中製作內容。 此方法需要AEM製作環境。 使用此選項，當Edge Delivery處理內容傳遞時，不需要發佈階層。
+
+組織可以根據其工作流程偏好設定，選擇或遞增使用這兩種方法。 請參閱[按一下即可建立您的第一個Edge Delivery網站](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)。
+
+### 彈性的發佈階層
+
+Cloud Manager可讓您設定是否針對您的方案環境布建發佈層級。 並非所有架構都需要發佈階層，如下表所示：
+
+| 架構 | 發佈階層 |
+| --- | --- |
+| 傳統AEM Sites | 必要 |
+| Headless / API優先 | 必要 |
+| Edge Delivery Services | 非必要 |
+
+透過只在需要時啟用發佈層級，團隊可以更快速地布建環境、簡化基礎建設，以及減少不必要的元件。 請參閱[彈性發佈階層(Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier)。
+
 ## 將 Adobe 建議路徑用於 Edge Delivery Services 的優勢 {#recommended-path-eds}
 
 透過 Cloud Manager 存取和使用您的 Edge Delivery Services 授權，藉此將 Adobe 的優勢提升至最高。這樣做可讓您善用幾個主要優勢。
@@ -59,6 +94,7 @@ AEM as a Cloud Service 中的 Cloud Manager 可讓您為專案啟用 Edge Delive
 | 我想要新增 Edge Delivery 網站至 Cloud Manager | 請參閱[新增 Edge Delivery 網站](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)。 |
 | 我現在要建立一個 Edge Delivery 網站 | 請參閱「[透過點選按鈕在 Cloud Manager 中快速建立 Edge Delivery 網站](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)」。 |
 | 我想將 Edge Delivery Services 新增到新的或現有的沙箱程式中。 | 請參閱[建立沙箱程式](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)。<br>建立沙箱程式時，預設會將 Edge Delivery Services 新增至該程式；您不需要選取它。<br>在 Edge Delivery 全面推出之前，現有的沙箱程式會自動繼承 Edge Delivery Services。 |
+| 我想要建立使用AEM製作的Edge Delivery網站 | 請參閱[建立Edge Delivery網站](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md#one-click-edge-delivery-site)。 搭配Edge Delivery使用AEM製作時，發佈層級為選用。 請參閱[彈性發佈階層(Beta)](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#flexible-publish-tier)。 |
 
 >[!NOTE]
 >
@@ -87,7 +123,7 @@ Cloud Manager 中的 **Edge Delivery 待辦事項清單**&#x200B;是上線任務
 | 8 | 設定推播驗證 | 請參閱「[為 Edge Delivery 網站設定推播驗證](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)」。 |
 | 9 | 上線 | 請參閱「[上線檢查清單](https://www.aem.live/docs/go-live-checklist)」。 |
 
->[!VIDEO](https://video.tv.adobe.com/v/3441574?captions=chi_hant&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## 記錄支援服務單 {#eds-support-ticket}
 
