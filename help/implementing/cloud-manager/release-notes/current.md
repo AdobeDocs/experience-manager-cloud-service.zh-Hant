@@ -34,7 +34,7 @@ AEM as a Cloud Service中的Cloud Manager 2026.4.0發行日期是2026年4月2日
 
   請參閱檔案[搭配AEM as a Cloud Service使用MCP](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)。
 
-  請參閱教學課程[Cloud Manager MCP伺服器](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager#)。
+  請參閱教學課程[Cloud Manager MCP伺服器](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager#)。
 
 * 使用模組快取加快建置速度&#x200B;**&#x200B;**
 
