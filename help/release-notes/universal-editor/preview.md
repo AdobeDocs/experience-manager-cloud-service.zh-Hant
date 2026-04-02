@@ -29,4 +29,4 @@ ht-degree: 49%
 ## 即將推出的功能 {#upcoming-features}
 
 * AgentBridge已引入AI助理和通用編輯器整合。
-* [ RTF編輯器(RTE)工具列](/help/implementing/universal-editor/configure-rte.md#image)中的新增影像選項，現在支援[在AEM as a Cloud Service中製作及保留內容的專案。](https://www.aem.live/docs/aem-authoring)
+* [&#x200B; RTF編輯器(RTE)工具列](/help/implementing/universal-editor/configure-rte.md#image)中的新增影像選項，現在支援[在AEM as a Cloud Service中製作及保留內容的專案。](https://www.aem.live/docs/aem-authoring)

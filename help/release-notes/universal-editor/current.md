@@ -26,7 +26,7 @@ ht-degree: 73%
 
 ## 新增功能 {#what-is-new}
 
-* [ RTF編輯器(RTE)工具列已新增](/help/implementing/universal-editor/configure-rte.md#special-characters)新增特殊字元[的可設定選項](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)。
+* [&#x200B; RTF編輯器(RTE)工具列已新增](/help/implementing/universal-editor/configure-rte.md#special-characters)新增特殊字元[的可設定選項](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)。
 
 ## 其他改善功能 {#other-improvements}
 
