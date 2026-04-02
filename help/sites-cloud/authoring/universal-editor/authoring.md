@@ -6,9 +6,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 57ea90c922b073828b4aede15bf2dd499ebbf0c2
+source-git-commit: 769ba806fc4c663b993fbda14f18555103946e0b
 workflow-type: tm+mt
-source-wordcount: '3002'
+source-wordcount: '3020'
 ht-degree: 17%
 
 ---
@@ -82,7 +82,7 @@ ht-degree: 17%
 
 隨即在RTF區塊上方開啟上下文功能表，提供上下文中的基本格式選項。 由於空間限制，某些選項可能會隱藏在省略符號按鈕後面。
 
-![&#x200B; RTF內容功能表](assets/rich-text-context-menu.png)
+![ RTF內容功能表](assets/rich-text-context-menu.png)
 
 一旦焦點離開已編輯的欄位，變更會自動儲存。
 
@@ -92,7 +92,9 @@ ht-degree: 17%
 
 屬性面板中的![RTF元件](assets/rich-text-properties-panel.png)
 
-點選專案以開啟對話方塊，顯示較大的畫布以編輯RTF文字。
+#### 模型編輯器 {#modal-editor}
+
+點選[屬性面板](#properties-rail)中的專案以開啟模式編輯器，此編輯器提供較大的畫布以編輯RTF文字。
 
 ![RTF編輯對話方塊](assets/rich-text-canvas.png)
 
@@ -136,6 +138,8 @@ ht-degree: 17%
 * **凸排**
 * **貼上成文字**
    * 在貼入通用編輯器之前，從剪貼簿上的文字移除格式。
+* **特殊字元**
+   * 在文字中插入特殊字元。
 * **移除所有格式**
    * 從選取的文字移除所有格式選項。
 
@@ -233,7 +237,7 @@ ht-degree: 17%
    * 在屬性面板中選取&#x200B;**刪除**&#x200B;圖示。
 
      ![刪除元件](assets/ue-delete-component.png)
-   * 選取內容功能表中的&#x200B;**刪除**&#x200B;選項。
+   * 選取內容功能表中的&#x200B;**刪除**選項。
      ![從內容功能表刪除](assets/delete-from-context-menu.png)
 
 選取的元件已刪除。
@@ -311,7 +315,7 @@ ht-degree: 17%
 1. 然後，您可以：
    * 按一下&#x200B;**屬性面板中的**&#x200B;複製[圖示。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel)
      ![從面板複製](assets/copy-from-panel.png)
-   * 在內容功能表中選取&#x200B;**複製**&#x200B;選項。
+   * 在內容功能表中選取&#x200B;**複製**選項。
      ![從內容功能表複製](assets/copy-from-context-menu.png)
 1. 選取您要貼上複製元件的元件&#x200B;_after_。
 1. 然後，您可以：

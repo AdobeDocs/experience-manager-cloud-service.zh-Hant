@@ -4,9 +4,9 @@ description: 瞭解如何在通用編輯器中設定RTF編輯器(RTE)。
 feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
-source-git-commit: 0ed57393afaf9af3258dacdcb043487f4a098e03
+source-git-commit: 769ba806fc4c663b993fbda14f18555103946e0b
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '1094'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->啟動Universal Editor專案時，後端支援的所有RTF文字功能（AEM搭配Edge Delivery或Headless實作）都會自動啟用。
+>當您啟動Universal Editor專案時，後端支援的所有RTF文字功能（AEM搭配Edge Delivery或Headless實作）都會自動啟用，並可在RTE的[模組編輯器視窗中使用。](/help/sites-cloud/authoring/universal-editor/authoring.md#modal-editor)
 >
 >* 您可以停用這些不需要的選項。
 >* 不支援啟用與您的專案型別不相容的選項。
@@ -77,7 +77,7 @@ RTE組態包含兩個部分：
     // List options
     "list": ["bullet_list", "ordered_list"],
     // Content insertion
-    "insert": ["link", "unlink", "image"],
+    "insert": ["link", "unlink", "image", "special_characters"],
     // Superscript/subscript
     "sr_script": ["superscript", "subscript"],
     // Editor utilities
@@ -172,7 +172,7 @@ RTE組態包含兩個部分：
 }
 ```
 
-#### 資料表組態選項 {#table-configuration-options}
+####資料表組態選項 {#table-configuration-options}
 
 * `wrapInParagraphs`： `false` （預設） — 表格儲存格包含未包裝的文字內容
 * `wrapInParagraphs`： `true` — 表格儲存格將內容包裝在段落標籤中
@@ -292,6 +292,82 @@ RTE組態包含兩個部分：
 >
 >透過Tab/Shift+Tab鍵的清單巢狀功能與一般縮排設定無關。
 
+### 特殊字元 {#special-characters}
+
+`special_characters`插入動作會開啟字元選擇器彈出視窗，以在游標位置插入特殊字元（符號、數學運運算元、貨幣符號、標點符號、箭頭等）。
+
+```json
+{
+  "toolbar": {
+    "insert": ["link", "unlink", "image", "table", "special_characters"],
+    "sections": ["insert"],
+  },
+  "actions": {
+    "special_characters": {
+      "label": "Special Characters"
+    }
+  }
+}
+```
+
+隨附現成可用的44個常用字元預設集。 字元清單可透過兩個設定選項自訂：
+
+* `appendCharacters` — 新增字元至預設集
+* `characters` — 完全取代預設集
+
+每個字元專案都有`character` （Unicode字元）和`title` （工具提示/可存取的名稱）。
+
+#### 將字元附加至預設值 {#append-special-characters}
+
+```json
+{
+  "actions": {
+    "special_characters": {
+      "appendCharacters": [
+        { "character": "\u2605", "title": "Black star" },
+        { "character": "\u2764", "title": "Heavy black heart" },
+      ];
+    }
+  }
+}
+```
+
+#### 取代預設特殊字元 {#replace-special-characters}
+
+```json
+{
+  "actions": {
+    "special_characters": {
+      "characters": [
+        { "character": "\u00A9", "title": "Copyright sign" },
+        { "character": "\u00AE", "title": "Registered sign" },
+        { "character": "\u2122", "title": "Trade mark sign" },
+      ];
+    }
+  }
+}
+```
+
+#### 兩個選項搭配使用 {#both-special-character-options}
+
+此範例使用`characters`作為基底，然後使用`appendCharacters`附加其他字元。
+
+```json
+{
+  "actions": {
+    "special_characters": {
+      "characters": [
+        { "character": "\u00A9", "title": "Copyright sign" },
+        { "character": "\u00AE", "title": "Registered sign" }
+      ],
+      "appendCharacters": [
+        { "character": "\u2605", "title": "Black star" }
+      ]
+    }
+  }
+}
+```
+
 ### 以文字格式貼上 {#paste-as-text}
 
 `paste_text`編輯器動作會啟用標準的純文字貼上工作流程。
@@ -364,7 +440,9 @@ RTE組態包含兩個部分：
         ],
         "insert": [
           "link",
-          "unlink"
+          "unlink",
+          "image",
+          "special_characters"
         ],
         "sections": [
           "format",
@@ -401,6 +479,17 @@ RTE組態包含兩個部分：
         },
         "unlink": {
           "label": "Remove Link"
+        },
+        // Image actions with picture wrapping
+        "image": {
+          "wrapInPicture": false, // Use <img> tag instead of <picture>
+          "shortcut": "Mod-Shift-I",
+          "label": "Insert Image",
+        },
+        // Special characters with custom additions
+        "special_characters": {
+          "label": "Special Characters",
+          "appendCharacters": [{ "character": "\u2605", "title": "Black star" }],
         },
         // Other actions with basic customization
         "h1": {

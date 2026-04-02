@@ -1,20 +1,20 @@
 ---
-title: 通用編輯器 2026.03.26 發行說明
-description: 此為通用編輯器 2026.03.26 版本的發行說明。
+title: 通用編輯器 2026.04.02 發行說明
+description: 此為通用編輯器 2026.04.02 版本的發行說明。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: abbc43adbe64149098c049810482d37f76034eab
+source-git-commit: f071d1c53f26429a791cc7a7f8f0aafa10f54e8d
 workflow-type: tm+mt
-source-wordcount: '146'
-ht-degree: 56%
+source-wordcount: '113'
+ht-degree: 73%
 
 ---
 
 
-# 通用編輯器 2026.03.26 發行說明 {#release-notes}
+# 通用編輯器 2026.04.02 發行說明 {#release-notes}
 
-以下是通用編輯器 2026 年 3 月 26 日版本的發行說明。
+以下是通用編輯器 2026 年 2 月 4 日版本的發行說明。
 
 >[!TIP]
 >
@@ -26,10 +26,8 @@ ht-degree: 56%
 
 ## 新增功能 {#what-is-new}
 
-* [Document Authoring資產組態](https://docs.da.live/administrators/guides/setup-aem-assets#setup-aem-assets)現已透過組態端點公開。
-* [擴充點](/help/implementing/universal-editor/extending.md#extending-ui)已新增至內容功能表。
-* 已在Extensibility DynamicIcon系統中新增自訂工作流程圖示，以在UI中顯示深/淺取消狀態。
+* [ RTF編輯器(RTE)工具列已新增](/help/implementing/universal-editor/configure-rte.md#special-characters)新增特殊字元[的可設定選項](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)。
 
 ## 其他改善功能 {#other-improvements}
 
-* 已修正Document Authoring類別無法使用多欄位的問題，因為這些類別需要字串。
+* OpenAPI配接器不會再錯誤地將標籤欄位傳回為多個欄位。
