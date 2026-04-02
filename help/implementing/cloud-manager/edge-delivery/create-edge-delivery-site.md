@@ -121,7 +121,7 @@ ht-degree: 64%
 
       ![按一下以啟動發佈層布建](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/click-to-activate-publish-tier-capabilities.png)
 
-   1. 在[啟動發佈層]對話方塊中，按一下[啟動]。****
+   1. 在[啟動發佈層]對話方塊中，按一下[啟動]。**&#x200B;**
 
       ![啟動發佈層對話方塊](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/activate-publish-tier.png)
 
