@@ -33,7 +33,7 @@ RTF編輯器(RTE)為作者提供編輯文字內容的廣泛功能。 提供圖�
 
 RTE介面為製作環境提供[回應式設計](/help/sites-cloud/authoring/page-editor/responsive-layout.md)。 此介面專為觸控和桌上型裝置所設計。
 
-![ RTF編輯器工具列](assets/rte-toolbar-full-screen-mode.png)
+![&#x200B; RTF編輯器工具列](assets/rte-toolbar-full-screen-mode.png)
 
 *圖： RTF編輯器工具列已啟用所有可用選項。*
 

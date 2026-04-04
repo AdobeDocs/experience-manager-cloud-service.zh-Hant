@@ -41,7 +41,7 @@ ht-degree: 99%
    1. 開啟 index.html 檔案以查看 API 參考文件。
 
 * **我可以從哪裡取得最適化表單的 [!DNL JavaScript™] API 參考？**
-您可以下載 [!DNL JavaScript™] API 參考文件，下載位置是 [!DNL  Maven Central Repository]。要下載：
+您可以下載 [!DNL JavaScript™] API 參考文件，下載位置是 [!DNL &#x200B; Maven Central Repository]。要下載：
    1. 開啟 [[!DNL Maven Central Repository]](https://mvnrepository.com/artifact/com.adobe.aem/aem-forms-sdk-api)。
    1. 找到並開啟包含最新版本 [!DNL Experience Manager Forms] SDK 的頁面。
    1. 按一下「查看全部」選項以查看所有檔案。

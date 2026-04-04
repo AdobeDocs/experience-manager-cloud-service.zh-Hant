@@ -19,7 +19,7 @@ ht-degree: 2%
 
 ## 目前進度 {#story-so-far}
 
-在此AEM內容和Commerce歷程的上一個檔案[瞭解AEM內容和Commerce ](/help/commerce-cloud/cif-storefront/introduction.md)中，您已瞭解Headless CMS的基本理論和概念，以及AEM內容和Commerce。
+在此AEM內容和Commerce歷程的上一個檔案[瞭解AEM內容和Commerce &#x200B;](/help/commerce-cloud/cif-storefront/introduction.md)中，您已瞭解Headless CMS的基本理論和概念，以及AEM內容和Commerce。
 
 本文基於這些基礎之上。
 

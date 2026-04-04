@@ -36,7 +36,7 @@ AEM as a Cloud Service中的Cloud Manager 2026.4.0發行日期是2026年4月2日
 
   請參閱教學課程[Cloud Manager MCP伺服器](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager#)。
 
-* 使用模組快取加快建置速度&#x200B;****
+* 使用模組快取加快建置速度&#x200B;**&#x200B;**
 
   新的建置模型會使用模組層級快取來編譯已變更的模組 (而非整個存放庫)，藉此縮短建置時間。 它適用於計畫碼品質非生產管道和開發完整棧疊非生產管道。
 

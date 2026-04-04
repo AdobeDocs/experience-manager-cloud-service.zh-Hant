@@ -50,7 +50,7 @@ ht-degree: 7%
 
 * （僅適用於沙箱）服務上線後，[建立](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/pipelines/production-pipelines.html?lang=en)和[執行生產和非生產管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html)。 它會啟用並將[!DNL AEM Forms] as a Cloud Service的最新功能帶入您的環境。
 
-您可以使用Forms as a Cloud Service建立最適化表單（數位註冊）或產生客戶通訊。 完成[ as a Cloud Service的](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=zh-hant)上線[!DNL Adobe Experience Manager]後，請執行下列動作以啟用Forms — 數位註冊或客戶通訊功能。<!--You can also enable both the features-->：
+您可以使用Forms as a Cloud Service建立最適化表單（數位註冊）或產生客戶通訊。 完成[&#x200B; as a Cloud Service的](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=zh-hant)上線[!DNL Adobe Experience Manager]後，請執行下列動作以啟用Forms — 數位註冊或客戶通訊功能。<!--You can also enable both the features-->：
 
 1. 登入 Cloud Manager 並開啟您的 AEM Forms as a Cloud Service 執行個體。
 1. 開啟編輯計畫選項，前往解決方案和附加元件索引標籤：
