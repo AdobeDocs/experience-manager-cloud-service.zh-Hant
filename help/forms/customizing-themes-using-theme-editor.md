@@ -15,7 +15,7 @@ ht-degree: 1%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html?lang=zh-Hant) |
 | AEM as a Cloud Service  | 本文章 |
 
 Adobe Experience Manager (AEM) Forms中的主題編輯器是一個視覺化介面，可讓您為最適化Forms建立和自訂主題，而無需手動編寫程式碼。 主題定義表單元件和面板的外觀與風格，包括背景顏色、字型樣式、框線、尺寸與間距。 套用主題時，指定的樣式會反映在相對應的元件上，而您可以在多個Adaptive Forms中重複使用相同主題。
@@ -212,7 +212,7 @@ The styles you define apply only when the component is in the selected state. Fo
 
    ![佈景主題編輯器中的裝置模擬器 — 尺標和裝置選項（案頭、平板電腦、iPad、小熒幕）](/help/forms/assets/custom-theme-emulator.png)
 
-因此，相同主題的每個裝置可以有不同的間距、字型大小或版面相關樣式，這符合回應式樣式的[AEM 6.5主題編輯器行為](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html)。
+因此，相同主題的每個裝置可以有不同的間距、字型大小或版面相關樣式，這符合回應式樣式的[AEM 6.5主題編輯器行為](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html?lang=zh-Hant)。
 
 ## 使用進階CSS覆寫 {#use-advanced-css-overrides}
 

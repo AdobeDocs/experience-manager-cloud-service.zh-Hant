@@ -28,9 +28,9 @@ ht-degree: 1%
 先決條件很簡單。
 
 * 確定AEM的執行個體在本機執行。
-* 使用[AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?#available-properties)建立基礎AEM SPA專案。
+* 使用[AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant&#available-properties)建立基礎AEM SPA專案。
    * Forms是AEM專案的基礎，已更新以包括外部SPA。
-   * 對於本檔案中的範例，Adobe使用[WKND SPA專案](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html#spa-editor)的起點。
+   * 對於本檔案中的範例，Adobe使用[WKND SPA專案](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=zh-Hant#spa-editor)的起點。
 * 隨時準備要整合的可使用外部React SPA。
 
 ## 將SPA上傳至AEM專案 {#upload-spa-to-aem-project}
@@ -373,8 +373,8 @@ RemotePage元件預期實作會提供資產資訊清單，例如GitHub[上的](h
 下列參考資料可協助您瞭解AEM內容中的SPA。
 
 * [AEM Headful 和 Headless 技術](/help/implementing/developing/headful-headless.md)
-* [AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
-* [WKND SPA專案](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html)
+* [AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)
+* [WKND SPA專案](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=zh-Hant)
 * [使用React在AEM中開始使用SPA](/help/implementing/developing/hybrid/getting-started-react.md)
 * [SPA參考資料（API參考）](/help/implementing/developing/hybrid/reference-materials.md)
 * [SPA Blueprint和PageModelManager](/help/implementing/developing/hybrid/blueprint.md#pagemodelmanager)

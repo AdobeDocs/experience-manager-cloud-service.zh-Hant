@@ -21,7 +21,7 @@ ht-degree: 1%
 
 >[!INFO]
 >
->您也可以觀看[此片段](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html)，快速瞭解如何使用存放庫瀏覽器偵錯AEM as a Cloud Service。
+>您也可以觀看[此片段](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html?lang=zh-Hant)，快速瞭解如何使用存放庫瀏覽器偵錯AEM as a Cloud Service。
 
 ## 簡介 {#introduction}
 
@@ -33,7 +33,7 @@ ht-degree: 1%
 
 要存取AEM as a Cloud Service Developer Console或存放庫瀏覽器，必須滿足以下條件
 
-若要存取AEM as a Cloud Service Developer Console，請參閱[Developer Console存取權](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access)。
+若要存取AEM as a Cloud Service Developer Console，請參閱[Developer Console存取權](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access)。
 
 若要存取存放庫瀏覽器，必須具備與AEM as a Cloud Service Developer Console （以上指定）相同的條件。 檢視特定執行處理的「儲存區域瀏覽器」內容：
 
@@ -41,7 +41,7 @@ ht-degree: 1%
 
 * 發佈執行個體：具有&#x200B;**發佈執行個體**&#x200B;之AEM使用者產品設定檔的使用者，能夠以最低的讀取存取權檢視存放庫瀏覽器。 若沒有該產品設定檔集，使用者將以匿名使用者身分導覽，且由於許可權有限，部分路徑將不會顯示。
 
-如需設定使用者許可權的詳細資訊，請參閱[Cloud Manager檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html)。
+如需設定使用者許可權的詳細資訊，請參閱[Cloud Manager檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html?lang=zh-Hant)。
 
 ### 啟動存放庫瀏覽器 {#launching-the-repository-browser}
 
