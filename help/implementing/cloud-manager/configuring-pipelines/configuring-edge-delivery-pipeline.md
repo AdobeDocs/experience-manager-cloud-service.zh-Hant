@@ -8,7 +8,7 @@ hide: false
 index: false
 hidefromtoc: false
 exl-id: 5ad342fa-dd71-4105-a9cb-2d999d402780
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '613'
 ht-degree: 14%
@@ -31,7 +31,7 @@ ht-degree: 14%
 >
 >* 已建立包含一個Edge Delivery Services網站和一個對應網域的計畫。 否則，稱為「**新增Edge Delivery管道**」的選項在使用者介面中會顯示為停用，工具提示會說明缺少的需求。 請參閱[在Cloud Manager中建立Edge Delivery網站](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
 >* Git存放庫至少有一個分支。 請參閱[在Cloud Manager中管理存放庫](/help/implementing/cloud-manager/managing-code/managing-repositories.md)。
->* 生產和中繼環境隨即建立。 請參閱[&#x200B; CI/CD管道簡介](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)。
+>* 生產和中繼環境隨即建立。 請參閱[ CI/CD管道簡介](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)。
 
 <!-- CMGR‑69680 -->
 
@@ -75,7 +75,7 @@ ht-degree: 14%
 
          >[!TIP]
          >
-         >在左上角附近，按一下「**篩選器**」，然後在「**傳遞型別**」區段下方，選取「**Edge傳遞**」核取方塊，將清單篩選為僅限Edge Delivery管道(也就是使用Edge Delivery Services的管道)。<!-- (CMGR-69682) -->
+         >在左上角附近，按一下「**篩選器**」，然後在「**傳遞型別**」區段下方，選取「**Edge傳遞**」核取方塊，將清單篩選為僅限Edge Delivery管道（也就是使用Edge Delivery Services的管道）。<!-- (CMGR-69682) -->
          >
          >![篩選器面板顯示新的傳遞類型包括邊緣傳遞與發佈傳遞](/help/implementing/cloud-manager/release-notes/assets/filter-delivery-type.png)
 

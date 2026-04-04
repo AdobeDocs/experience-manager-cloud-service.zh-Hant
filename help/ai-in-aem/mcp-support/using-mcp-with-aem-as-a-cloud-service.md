@@ -2,9 +2,9 @@
 title: 搭配AEM as a Cloud Service使用MCP
 description: 瞭解如何將模型上下文通訊協定與AEM as a Cloud Service搭配使用
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: ddb7fc8c-affc-4374-8e08-d45d96017109
-source-git-commit: 07c3f271ad288f3eed7207dfb4f324c96c5b0b8e
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '1704'
 ht-degree: 0%
@@ -64,7 +64,7 @@ AEM會公開MCP伺服器作為HTTP端點。 以下所列的端點為相對於：
 
 MCP使用者端會使用MCP通訊協定來擷取工具清單和結構描述，然後LLM就可以使用。
 
-請參考[Content MCP伺服器教學課程](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server)和[Cloud Manager MCP伺服器影片](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager)，瞭解其功能及使用方式的詳細資訊。
+請參考[Content MCP伺服器教學課程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server)和[Cloud Manager MCP伺服器影片](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager)，瞭解其功能及使用方式的詳細資訊。
 
 ## 支援的MCP應用程式 {#supported-mcp-applications}
 

@@ -2,14 +2,14 @@
 title: 如何匯入品牌原則
 description: 使用Adobe Governance Agent匯入品牌原則
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
-source-git-commit: 94d671ebbd5aeb5992fdbc9d779ffbca51f82585
+role: User, Admin, Developer
+exl-id: 8057e82b-36d4-4280-b433-f26cfcfe9fe6
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '949'
 ht-degree: 0%
 
 ---
-
 
 # 如何匯入品牌原則 {#how-to-import-a-brand-policy}
 
@@ -114,4 +114,3 @@ ht-degree: 0%
    ![設定檢查詳細資料](/help/ai-in-aem/agents/governance/assets/add_check_window.png)
 
 1. 最後，若要取得網域及其關聯品牌的清單，您可以按下&#x200B;**網域**&#x200B;索引標籤。 此區段可讓您新增、刪除或修改清單中的網域。
-

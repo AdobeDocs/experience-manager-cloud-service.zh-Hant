@@ -2,9 +2,9 @@
 title: 通訊建立工作
 description: 瞭解Experience Production Agents的通訊建立工作，以及如何使用自然語言建立互動式通訊。
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: 49111cdb-e714-4590-8b81-382377083d6e
-source-git-commit: baf12e49dadc7b25f5169279a52d5712380445de
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '613'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 [互動式通訊](/help/forms/introduction-to-interactive-communication.md)是個人化的資料導向檔案，專為商業通訊而設計，例如帳戶對帳單、原則檔案、帳單、歡迎套件和權益通知。 不同於從使用者收集輸入的表單，互動式通訊會產生具有動態、收件者特定內容的輸出檔案。
 
-通訊建立工作是[Experience Production Agent](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md)的一部分，設計使用自然語言提示來開發互動式通訊。 此工作會自動產生個人化、資料導向的列印對應(PDF格式)。 此工作透過AI助理顯示。
+通訊建立工作是[Experience Production Agent](/help/ai-in-aem/agents/brand-experience/experience-production/overview.md)的一部分，設計使用自然語言提示來開發互動式通訊。 此工作會自動產生個人化、資料導向的列印對應（PDF格式）。 此工作透過AI助理顯示。
 
 通訊建立工作的部分主要優點包括：
 

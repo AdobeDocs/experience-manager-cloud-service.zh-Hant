@@ -2,12 +2,12 @@
 title: 最適化Forms核心元件vs Edge Delivery Services Forms vs Foundation元件
 description: AEM Forms製作方法的技術比較 — 核心元件、Edge Delivery Services Forms和基礎元件。 架構、呈現、功能和使用案例。
 keywords: 調適型表單比較，核心元件， foundation元件， edge delivery services forms， AEM forms比較，表單產生器比較
-role: Architect, Developer, Admin
+role: Developer, Admin
 level: Intermediate
 feature: Adaptive Forms, Core Components, Edge Delivery Services
 badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: adaptive-forms-comparison
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '1959'
 ht-degree: 8%
@@ -223,7 +223,7 @@ EDS Forms支援兩種撰寫方法：
 - 工作表命名限製為`helix-default`和`shared-aem`
 - 最適合低複雜度表單
 - 有限的規則功能
-- 沒有AEM工作流程(沒有AEM發佈提交)
+- 沒有AEM工作流程（沒有AEM發佈提交）
 - 無表單資料模型整合
 
 **通用編輯器：**
@@ -311,7 +311,7 @@ Foundation元件使用伺服器端轉譯：
 
 ### 限制
 
-- **發佈**：僅限AEM (無Edge Delivery Services或Headless API)
+- **發佈**：僅限AEM （無Edge Delivery Services或Headless API）
 - **效能**：標準效能（未針對Lighthouse分數最佳化）
 - **架構**：不符合BEM規範的舊版架構
 - **開啟Source**：不是開放原始碼
@@ -345,7 +345,7 @@ Foundation元件使用伺服器端轉譯：
 | **正在發佈** | AEM + Edge Delivery + Headless API | 僅限 Edge Delivery Services | 僅限 AEM |
 | **編寫** | AEM Forms 編輯器 | 通用編輯器或試算表 | AEM Forms 編輯器 |
 | **效能** | 良好（改善於Foundation） | 極佳（Lighthouse分數較高） | 標準 |
-| **元件計數** | 30 | 20+ (所有HTML5輸入型別) | 40+ |
+| **元件計數** | 30 | 20+ （所有HTML5輸入型別） | 40+ |
 | **開啟Source** | 是(GitHub) | 是 | 否 |
 | **表單資料模型** | ✅ | ✅ （僅通用編輯器） | ✅ |
 | **JSON結構描述** | ✅ | 有限 | ✅ |
@@ -356,7 +356,7 @@ Foundation元件使用伺服器端轉譯：
 | **Adobe Sign** | ❌ | 透過整合 | ✅ （原生區塊） |
 | **記錄檔案** | ✅ | ✅ | ✅ |
 | **驗證碼選項** | reCAPTCHA、hCaptcha | reCAPTCHA Enterprise， hCaptcha | reCAPTCHA， hCaptcha， Turnstile |
-| **AEM工作流程** | ✅ | ✅ (透過AEM發佈) | ✅ |
+| **AEM工作流程** | ✅ | ✅ （透過AEM發佈） | ✅ |
 | **Headless API** | ✅ （自動） | ❌ | ❌ |
 | **無障礙功能** | 符合WCAG標準 | 符合WCAG標準 | 基本 |
 | **部署速度** | Pipeline型 | 即時（提交至即時） | Pipeline型 |
@@ -384,7 +384,7 @@ Foundation元件使用伺服器端轉譯：
 
 ### 從基礎元件轉換為核心元件
 
-- **工具**： AEM現代化工具(Forms轉換公用程式)
+- **工具**： AEM現代化工具（Forms轉換公用程式）
 - **工作量**：中到高取決於表單複雜度
 - **考量事項**：
    - 規則需要手動重新建立

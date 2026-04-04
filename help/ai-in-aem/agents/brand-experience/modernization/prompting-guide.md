@@ -2,14 +2,14 @@
 title: Experience現代化代理的提示指南
 description: 本指南提供有效提示Experience現代化代理程式，並說明其技能的作用。
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
-source-git-commit: e2a9c55644c0d9542f6a299f0df30a3dfd4a55de
+role: User, Admin, Developer
+exl-id: 4771606b-a327-48b3-b142-44e03e4dc41d
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '2696'
 ht-degree: 0%
 
 ---
-
 
 # Experience現代化代理的提示指南 {#prompting-guide}
 
@@ -91,7 +91,7 @@ ht-degree: 0%
 #### 須知事項 {#wtk-bulk-import}
 
 * 大量匯入取決於先前單頁移轉期間建立的匯入基礎結構。
-   * 這包括頁面範本（區段結構）、轉換器（全網站DOM清理）和剖析器(區塊特定的HTML到表格轉換)。
+   * 這包括頁面範本（區段結構）、轉換器（全網站DOM清理）和剖析器（區塊特定的HTML到表格轉換）。
 * 您必須先移轉每個範本至少一個代表頁面，才能執行大量匯入。
 * 大量匯入會重複使用在單頁移轉期間建立的結構和對應。
    * 它不會從頭開始推斷範本。
@@ -187,7 +187,7 @@ ht-degree: 0%
 * 區塊評論遵循六個步驟的工作流程：
    1. 它會使用XPath選取器從來源頁面擷取原始區塊。
    1. 這會初始化批評工作階段。
-   1. 它會檢查原始區塊(熒幕擷圖、樣式、HTML)。
+   1. 它會檢查原始區塊（熒幕擷圖、樣式、HTML）。
    1. 它會檢查已移轉的區塊。
    1. 它會比較元素並產生包含CSS修正的相似性分數。
    1. 它會套用修正並重新檢查，直到達到85%的目標。
@@ -320,7 +320,7 @@ ht-degree: 0%
       * 具有重複列樣式的表格
    * **設定：** API驅動或設定控制項顯示的動態內容（部落格清單、搜尋結果）
       * 含有索引鍵值設定列的表格。
-   * **自動封鎖：**&#x200B;作者建立為區段/預設內容的複雜結構，然後進行轉換(索引標籤、YouTube內嵌)
+   * **自動封鎖：**&#x200B;作者建立為區段/預設內容的複雜結構，然後進行轉換（索引標籤、YouTube內嵌）
 * 每列最多只能有四個儲存格。
    * 將相關元素群組至儲存格。
 * 如出現樣式差異，建議使用區塊變體而非設定儲存格。

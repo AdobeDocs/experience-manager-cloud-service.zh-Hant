@@ -4,7 +4,7 @@ description: 了解如何透過點按按鈕，在 Cloud Manager 中快速建立 
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 292bf0b4-990b-4980-b971-91b8aedde3de
-source-git-commit: fc9f7f10d1797bda5f31d82005b0afbb6ea1e644
+source-git-commit: aa8aba7f798e251c8a25ee247402e23517707e88
 workflow-type: tm+mt
 source-wordcount: '1373'
 ht-degree: 64%
@@ -17,9 +17,11 @@ ht-degree: 64%
 
 這種自動化有助於減少設定初始網站所需的手動工作。這可確保無縫的工作流程和可擴縮性，並在管理 Edge 內容方面提高團隊的效能。
 
-<!-- Check out this quick 2-minute video for a step-by-step walkthrough on creating your first Edge Delivery site—no hassle, just one click.
+<!--
+ Check out this quick 2-minute video for a step-by-step walkthrough on creating your first Edge Delivery site—no hassle, just one click.
 
->[!VIDEO](https://video.tv.adobe.com/v/3458975?quality=12&learn=on) -->
+>[!VIDEO](https://video.tv.adobe.com/v/3458975?quality=12&learn=on)
+-->
 
 
 
@@ -121,7 +123,7 @@ ht-degree: 64%
 
       ![按一下以啟動發佈層布建](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/click-to-activate-publish-tier-capabilities.png)
 
-   1. 在[啟動發佈層]對話方塊中，按一下[啟動]。**&#x200B;**
+   1. 在[啟動發佈層]對話方塊中，按一下[啟動]。****
 
       ![啟動發佈層對話方塊](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/activate-publish-tier.png)
 

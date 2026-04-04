@@ -6,7 +6,7 @@ feature: Selectors
 role: Admin,User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '5363'
 ht-degree: 38%
@@ -30,7 +30,8 @@ ht-degree: 38%
 * 能夠在 IMS 組織內切換存放庫以選擇資產。
 * 能夠按名稱、維度和大小對資產進行排序，並以清單、網格、圖庫或瀑布視圖檢視。
 
-<!--Perform the following tasks to integrate and use Asset Selector with your [!DNL Experience Manager Assets] repository:
+<!--
+Perform the following tasks to integrate and use Asset Selector with your [!DNL Experience Manager Assets] repository:
 
 1. [Install Asset Selector](#installation)
 2. [Integrate Asset Selector using Vanilla JS](#integration-using-vanilla-js)
@@ -273,7 +274,7 @@ onErrorReceived: (type, msg) => {
 * imsOrg
 * apikey
 
-Asset Selector支援使用Identity Management System (IMS)屬性（例如[!DNL Experience Manager Assets]或`imsScope`）驗證`imsClientID`存放庫(當您將其與非Adobe應用程式整合時)。
+Asset Selector支援使用Identity Management System (IMS)屬性（例如[!DNL Experience Manager Assets]或`imsScope`）驗證`imsClientID`存放庫（當您將其與非Adobe應用程式整合時）。
 
 +++**設定非Adobe應用程式的資產選擇器**
 若要為非Adobe應用程式設定Asset Selector，您必須先記錄布建的支援票證，然後進行整合步驟。
@@ -401,7 +402,7 @@ Asset Selector支援使用Identity Management System (IMS)屬性（例如[!DNL E
 
 * [通訊方法](#prereqs)
 * 若要使用OpenAPI功能存取Dynamic Media，您必須擁有下列專案的授權：
-   * Assets存放庫(例如Experience Manager Assets as a Cloud Service)。
+   * Assets存放庫（例如Experience Manager Assets as a Cloud Service）。
    * AEM Dynamic Media。
 * 只有[個核准的資產](#approved-assets.md)可供使用，以確保品牌一致性。
 
@@ -473,7 +474,7 @@ URL格式：
 
 +++
 
-+++**已準備好挑選動態傳遞URL**
++++ **已準備好挑選動態傳遞URL**
 所有選取的資產都由做為JSON物件的`handleSelection`函式執行。 例如 `JsonObj`。動態傳遞URL是透過結合以下電信業者來建立：
 
 | 物件 | JSON |
@@ -487,7 +488,7 @@ URL格式：
 
 ![動態傳遞URL](assets/dynamic-delivery-url.png)
 
-* **縮圖：**&#x200B;縮圖可為影像，資產為PDF、影片、影像等。 不過，您可以使用資產縮圖的高度和寬度屬性作為動態傳送轉譯。
+* **縮圖：**縮圖可為影像，資產為PDF、影片、影像等。 不過，您可以使用資產縮圖的高度和寬度屬性作為動態傳送轉譯。
 下列轉譯集可用於PDF型別資產：
 在sidekick中選取PDF後，選取內容會提供以下資訊。 以下為遍歷JSON物件的方式：
 
@@ -506,7 +507,7 @@ URL格式：
 
 在上述熒幕擷圖中，如果需要PDF，而非其縮圖，則需要將PDF原始轉譯的傳送URL合併至目標體驗。 例如 `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf`
 
-* **影片：**&#x200B;您可以使用內嵌iFrame的影片型別資產，使用影片播放器URL。 您可以在目標體驗中使用下列陣列轉譯：
+* **影片：**您可以使用內嵌iFrame的影片型別資產，使用影片播放器URL。 您可以在目標體驗中使用下列陣列轉譯：
   <!--![Video dynamic delivery url](image.png)-->
 
   ```
@@ -523,6 +524,8 @@ URL格式：
   上述熒幕擷取畫面中的程式碼片段為視訊資產的範例。 其中包含轉譯連結陣列。 摘錄中的`selection[5]`是影像縮圖的範例，可做為目標體驗中視訊縮圖的預留位置。 轉譯陣列中的`selection[5]`適用於視訊播放器。 此函式提供HTML，可設為iframe的`src`。 它支援自我調整位元速率串流，這是網頁最佳化的視訊傳送方式。
 
   在上述範例中，視訊播放器URL為`https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/play`
+
++++
 
 +++**具有OpenAPI功能的Dynamic Media資產選擇器使用者介面**
 
@@ -803,7 +806,7 @@ interface SelectedAsset {
 | *存放庫:createDate* | 字串 | 建立資產的日期與時間。 |
 | *存放庫:modifiedBy* | 字串 | 上次修改資產的使用者或系統。 |
 | *存放庫:modifyDate* | 字串 | 上次修改資產的日期和時間。 |
-| *dc:format* | 字串 | 資產的格式，例如檔案型別(例如JPEG、PNG等)。 |
+| *dc:format* | 字串 | 資產的格式，例如檔案型別（例如JPEG、PNG等）。 |
 | *tiff:imageWidth* | 數字 | 資產的寬度。 |
 | *tiff:imageLength* | 數字 | 資產的高度。 |
 | *computedMetadata* | `Record<string, any>` | 代表貯體的一個物件，可存放各種類型之所有資產中繼資料 (存放庫、應用程式或嵌入式中繼資料)。 |
@@ -821,10 +824,12 @@ interface SelectedAsset {
 
 資產選擇器可讓您控制已過期資產的使用方式。 您可以使用&#x200B;**即將到期**&#x200B;徽章來自訂已到期的資產，這可以協助您提前知道將在目前日期起30天內到期的資產。 此外，您也可以視需求自訂。 您也可以允許在畫布上選取過期的資產，反之亦然。 您可以使用某些程式碼片段，以各種方式自訂過期的資產：
 
-<!--{
+<!--
+{
     getExpiryStatus: function, // to control Expired/Expiring soon badges of the asset
     allowSelectionAndDrag: boolean, // set true to allow the selection of expired assets on canvas, set false, otherwise.
-}-->
+}
+-->
 
 ```
 expiryOptions: {
@@ -845,7 +850,8 @@ expiryOptions:{
 <!--
 Additionally, To do this, navigate to **[!UICONTROL Disable default expiry behavior]** under the [!UICONTROL Controls] tab and set the boolean value to `true` or `false` as per the requirement. If `true` is selected, you can see the select box over the expired asset, otherwise it remains unselected. You can hover to the info icon of an asset to know the details of an expired asset. 
 
-![Disable default expiry behavior](assets/disable-default-expiry-behavior.png)-->
+![Disable default expiry behavior](assets/disable-default-expiry-behavior.png)
+-->
 
 #### 設定過期資產的持續時間 {#set-duration-of-expired-asset}
 
@@ -1022,7 +1028,7 @@ const filterSchema = useMemo ((); => {
 
 ### 存放庫切換器 {#repository-switcher}
 
-資產選擇器也可讓您切換存放庫進行資產選擇。您可以從左側面板中的下拉清單中選擇您要的存放庫。下拉清單中可用的存放庫選項是根據`repositoryId` `index.html`檔案中定義的屬性。它是以登入使用者所存取的選定 IMS org 環境為基礎。消費者可以傳遞一個偏好的`repositoryID`，而且在該情況下，資產選擇器將停止呈現 repo 切換器，並僅從指定的存放庫呈現資產。
+資產選擇器也可讓您切換存放庫進行資產選擇。您可以從左側面板中的下拉清單中選擇您要的存放庫。下拉清單中可用的存放庫選項是根據`repositoryId``index.html`檔案中定義的屬性。它是以登入使用者所存取的選定 IMS org 環境為基礎。消費者可以傳遞一個偏好的`repositoryID`，而且在該情況下，資產選擇器將停止呈現 repo 切換器，並僅從指定的存放庫呈現資產。
 
 ### 資產存放庫
 

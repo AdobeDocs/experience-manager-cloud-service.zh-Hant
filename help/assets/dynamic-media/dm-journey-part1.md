@@ -12,7 +12,7 @@ hide: false
 hidefromtoc: false
 badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '3620'
 ht-degree: 3%
@@ -202,7 +202,7 @@ Dynamic Media的解決方案是取用那個主要視訊檔案，讓Dynamic Media
 
 | **問題** | **Dynamic Media解決方案** |
 |---|---|
-| 手動繪製、測量及剪下影像或視訊，以強調焦點並在所有熒幕大小和裝置上適當地顯示，既費時又費力。 | 使用Dynamic Media中的智慧型裁切功能(一項Adobe AI功能)，自動偵測任何影像或視訊中的焦點，並裁切以維持焦點。 |
+| 手動繪製、測量及剪下影像或視訊，以強調焦點並在所有熒幕大小和裝置上適當地顯示，既費時又費力。 | 使用Dynamic Media中的智慧型裁切功能（一項Adobe AI功能），自動偵測任何影像或視訊中的焦點，並裁切以維持焦點。 |
 | 可以更妥善地用於建立具高度影響力的體驗的時間損失。 | 擷取預期的興趣點，無論熒幕大小為何。 |
 | 為每個體驗和裝置建立的一次性資產。 | 省去繁瑣的手動工作，並提供高品質、快速載入的影像和視訊，在任何裝置或熒幕上都能完美呈現。 |
 
@@ -220,7 +220,7 @@ Dynamic Media的解決方案是取用那個主要視訊檔案，讓Dynamic Media
 ![Dynamic Media工作流程](/help/assets/dynamic-media/assets/dm-workflow.png)
 _資產如何流經Dynamic Media系統。_
 
-從建立階段開始，主要目標是要將主要資產放在結尾。 這些主要資產可能來自像片拍攝、視訊廠商，或可能是您已建立的部分音訊檔案。 您可以使用Adobe的Creative Suite應用程式(例如Adobe InDesign、Adobe Photoshop、Adobe Illustrator)來協助您編寫內容。
+從建立階段開始，主要目標是要將主要資產放在結尾。 這些主要資產可能來自像片拍攝、視訊廠商，或可能是您已建立的部分音訊檔案。 您可以使用Adobe的Creative Suite應用程式（例如Adobe InDesign、Adobe Photoshop、Adobe Illustrator）來協助您編寫內容。
 
 建立部分完成後，您需透過將資產上傳至Dynamic Media，將資產放入Authoring解決方案。 在Dynamic Media中，請確定您的網站針對各種網頁已設定適當的影像預設集和檢視器。
 
@@ -281,12 +281,13 @@ _Dynamic Media Help topics_
 * [How to preview 3D assets](/help/assets/dynamic-media/previewing-3d-assets.md)
 * [How to deliver Dynamic Media Assets](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
 * [How to publish assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
-* [Work with Selective Publish in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md) -->
+* [Work with Selective Publish in Dynamic Media](/help/assets/dynamic-media/selective-publishing.md)
+-->
 
 _動態媒體教學課程_
 
-* [搭配Experience Manager Assets使用Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=zh-Hant)
-* [Adobe Experience Manager內容庫](https://experienceleague.adobe.com/zh-hant?lang=en#recommended/solutions/experience-manager) （在&#x200B;_Dynamic Media_&#x200B;上搜尋）
+* [搭配Experience Manager Assets使用Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
+* [Adobe Experience Manager內容庫](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) （在&#x200B;_Dynamic Media_&#x200B;上搜尋）
 
 _Dynamic Media檢視器_
 

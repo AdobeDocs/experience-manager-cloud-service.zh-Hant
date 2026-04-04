@@ -7,7 +7,7 @@ feature: Adaptive Forms
 index: false
 badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 99%
@@ -21,14 +21,16 @@ ht-degree: 99%
 
 * **我可以在 Cloud Service 執行個體上建立基於 XFA 的最適化表單嗎？**&#x200B;是，您可以在 Cloud Service 執行個體上建立基於 XFA 的最適化表單。但是，AEM Forms as a Cloud Service SDK (本機開發環境) 不支援基於 XFA 的最適化表單。如果您打算搭配 XFA 型最適化表單使用 AEM Forms as a Cloud Service SDK，請聯絡 Adobe 支援並附上使用案例和特定要求的詳細資料。
 
-<!-- * **Can I use an XDP as a Document of Record (DoR) template? Is Forms Designer included in AEM Forms as a Cloud Service license?** 
+<!--
+ * **Can I use an XDP as a Document of Record (DoR) template? Is Forms Designer included in AEM Forms as a Cloud Service license?** 
 
-  Yes, you can use an XDP as a Document of Record template on Cloud Service instances. However, support to use XDP as a Document of Record template is not available for AEM Forms as a Cloud Service SDK (Local development environment). -->
+  Yes, you can use an XDP as a Document of Record template on Cloud Service instances. However, support to use XDP as a Document of Record template is not available for AEM Forms as a Cloud Service SDK (Local development environment).
+  -->
 
 * **我是否可以把內部部署或 [!DNL Adobe-Managed Services] 環境的內容移轉到 [!DNL Forms] as a Cloud Service 環境？**
 是的，您可以把內部部署或 [!DNL Adobe-Managed Services] 環境的自訂程式碼、內容和資產移轉到 [!DNL Forms] as a Cloud Service 環境。詳細指示請參閱「[移轉到 Forms as a Cloud Service](migrate-to-forms-as-a-cloud-service.md)」。
 
-<!-- You can use package manager or Experience Manager UI to [export and import Forms and related assets](import-export-forms-templates.md), use the migration utility to make your existing assets compatible with [!DNL Forms] as a Cloud Service, use the [Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=zh-Hant#best-practices-analyzer) tool to find the features and APIs that require changes and updated before migration, and use the [Content Transfer Tools](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/moving/home.html) to move your custom code without refactoring it. -->
+<!-- You can use package manager or Experience Manager UI to [export and import Forms and related assets](import-export-forms-templates.md), use the migration utility to make your existing assets compatible with [!DNL Forms] as a Cloud Service, use the [Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en#best-practices-analyzer) tool to find the features and APIs that require changes and updated before migration, and use the [Content Transfer Tools](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/home.html) to move your custom code without refactoring it. -->
 
 * **在哪裡可以取得 AEM[!DNL Forms] as a Cloud Service [!DNL Java™]API 參考文件？**
 您可以從 [!DNL Maven Central Repository] 下載 Java™ API 參考文件。要下載：
@@ -39,7 +41,7 @@ ht-degree: 99%
    1. 開啟 index.html 檔案以查看 API 參考文件。
 
 * **我可以從哪裡取得最適化表單的 [!DNL JavaScript™] API 參考？**
-您可以下載 [!DNL JavaScript™] API 參考文件，下載位置是 [!DNL &#x200B; Maven Central Repository]。要下載：
+您可以下載 [!DNL JavaScript™] API 參考文件，下載位置是 [!DNL  Maven Central Repository]。要下載：
    1. 開啟 [[!DNL Maven Central Repository]](https://mvnrepository.com/artifact/com.adobe.aem/aem-forms-sdk-api)。
    1. 找到並開啟包含最新版本 [!DNL Experience Manager Forms] SDK 的頁面。
    1. 按一下「查看全部」選項以查看所有檔案。
@@ -54,11 +56,13 @@ ht-degree: 99%
 * **我可以產生符合結構的資料嗎？**
 是的，您可以建立最適化表單來產生符合結構的資料。
 
-<!-- * **Can I pass custom parameters to the prefill service?**
-Custom parameters are planned for an upcoming release. -->
+<!--
+ * **Can I pass custom parameters to the prefill service?**
+Custom parameters are planned for an upcoming release.
+-->
 
 * **我可以快取安全內容嗎？**
-預設停用快取安全內容的功能。要啟用該功能，您可以執行「[快取安全內容](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=zh-Hant)」提供的指示。
+預設停用快取安全內容的功能。要啟用該功能，您可以執行「[快取安全內容](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html)」提供的指示。
 
 * **我有一個本地化的最適化表單；它並未轉譯本地化版本嗎？可能是什麼原因以及如何解決？**
 
@@ -104,7 +108,7 @@ Custom parameters are planned for an upcoming release. -->
 
   You can get started with Adobe Experience Manager easily with just a few steps:
 
-  1. Generate the Service credentials: Use Adobe Experience Manager Developer Console to [generate](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=zh-Hant&#generate-service-credentials) the service credentials.  
+  1. Generate the Service credentials: Use Adobe Experience Manager Developer Console to [generate](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?#generate-service-credentials) the service credentials.  
   
   1. Setup your connection: Add your service credentials to the Adobe Experience Manager Connector. You can get crdential from service credential JSON and copy these credential details to your one-time connection setup:
 

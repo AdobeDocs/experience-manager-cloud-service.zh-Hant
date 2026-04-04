@@ -5,7 +5,7 @@ feature: Administering
 role: Admin
 badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: 420f8d5e-27f9-4081-b174-b2d7752779f7
-source-git-commit: ef20e6df5e19596ea742e6ac267b1f37b7517cfa
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1805'
 ht-degree: 0%
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 實驗外掛程式用於[Edge Delivery Services](/help/edge/overview.md)的內容中，因此您需要Github帳戶、SharePoint或Google Drive之類的內容存放庫，此外也需要[AEM Sidekick](https://www.aem.live/docs/sidekick)。 另請參閱[快速入門 — Universal Editor開發人員教學課程頁面](https://www.aem.live/developer/tutorial)和[快速入門 — 開發人員教學課程](https://www.aem.live/developer/tutorial)。
 
-完成所有設定後，**請觀看此影片** （標題為[立即實驗](https://business.adobe.com/tw/products/experience-manager/sites/testing-optimization.html)），以簡短示範實驗外掛程式的運作方式。
+完成所有設定後，**請觀看此影片** （標題為[立即實驗](https://business.adobe.com/products/experience-manager/sites/testing-optimization.html)），以簡短示範實驗外掛程式的運作方式。
 
 ## 常用詞語 {#frequently-used-terms}
 
@@ -99,9 +99,11 @@ ht-degree: 0%
 
 當您準備好預覽和準備實驗時，請從左上角的側踢按一下預覽。 每當您預覽具有執行中實驗的頁面時，都會在`.aem.page`預覽環境中看到實驗覆蓋。 實驗覆蓋可讓您在實驗變體之間切換，並提供流量資料。
 
-<!--- ![experimentation-overlay](/help/sites-cloud/administering/assets/experimentation-overlay.png)
+<!--
+- ![experimentation-overlay](/help/sites-cloud/administering/assets/experimentation-overlay.png)
 
-By using the experimentation overlay, authors can get quick insights on the performance of experiments being run on the production site. These insights are helpful in making a decision about the duration of the experiment, but also about which variant is best suited for production.-->
+By using the experimentation overlay, authors can get quick insights on the performance of experiments being run on the production site. These insights are helpful in making a decision about the duration of the experiment, but also about which variant is best suited for production.
+-->
 
 測量每個變體有效性的資料收集是以AEM as a Cloud Service[中的](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)作業遙測服務為基礎。
 
@@ -117,7 +119,8 @@ By using the experimentation overlay, authors can get quick insights on the perf
 
 您可以使用完整頁面實驗，來測試同一頁面的兩個變體之間。 這是a/b測試的全頁變體，您有控制項和挑戰者頁面。 您將以不同型別的內容取代挑戰者變體中「原始」控制項的整個內容。 請記住，客戶流量預設會平均分割(50/50)，但如有需要，您可以建立自訂分割。
 
-<!--The metadata on the control page should look like this:
+<!--
+The metadata on the control page should look like this:
 
 METADATA SETUP
 
@@ -185,7 +188,8 @@ Audience: Chrome `https://{ref}--{repo}--{org}.hlx.page/page-for-chrome`
 
 After this configuration, the users will be triaged based on the browser they connect with and the appropriate challenger page will be served.
 
-Please keep in mind that the names above are only for illustration purposes. You can define the Audiences parameter and the challenger pages according to your needs, for example: Audience (Firefox) or Audience Firefox.-->
+Please keep in mind that the names above are only for illustration purposes. You can define the Audiences parameter and the challenger pages according to your needs, for example: Audience (Firefox) or Audience Firefox.
+-->
 
 ## 其他考量 {#other-considerations}
 
@@ -195,7 +199,7 @@ Please keep in mind that the names above are only for illustration purposes. You
 
 實驗已設定為處理轉換（追蹤頁面上的可點按元素）。 必須針對下列專案定義所有實驗：
 
-* 實驗型別
+* 實驗類型
 * 實驗將套用的體驗區塊
 * 實驗將包含多少變體
 * 每個變體的組成為何

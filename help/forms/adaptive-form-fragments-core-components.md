@@ -7,7 +7,7 @@ feature: Adaptive Forms, Core Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
 role: User, Developer
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1485'
 ht-degree: 13%
@@ -21,7 +21,7 @@ ht-degree: 13%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service (核心元件) | 本文章 |
 | AEM as a Cloud Service (基礎元件) | [按一下這裡](/help/forms/adaptive-form-fragments.md) |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html) |
 
 雖然每個表單都是為特定目的而設計，但大多數表單中都有一些常見的區段，例如提供個人詳細資訊，例如姓名和地址、家庭詳細資訊、收入詳細資訊。 每次建立新表單時，表單開發人員都必須建立這些通用區段。
 
@@ -33,7 +33,7 @@ ht-degree: 13%
 
 >[!NOTE]
 >
-> 您可以使用[表單片段元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/adaptive-form-fragment)的「設定」對話方塊和「設計」對話方塊，輕鬆自訂使用者的片段體驗。
+> 您可以使用[表單片段元件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/adaptive-form-fragment)的「設定」對話方塊和「設計」對話方塊，輕鬆自訂使用者的片段體驗。
 
 ## 建立自適應表單片段 {#create-a-fragment}
 
@@ -64,9 +64,10 @@ ht-degree: 13%
 
    ![表單資料模型(FDM)](assets/create-af-3.png)
 
-1. 按一下[建立]&#x200B;**&#x200B;**，然後按一下[開啟]&#x200B;**&#x200B;**，以編輯模式開啟具有預設範本的片段。 在編輯模式中，您可以將任何最適化表單元件新增到片段。
+1. 按一下[建立]****，然後按一下[開啟]****，以編輯模式開啟具有預設範本的片段。 在編輯模式中，您可以將任何最適化表單元件新增到片段。
 
-<!-- For information about Adaptive Form components, see [Introduction to authoring Adaptive Forms](../../forms/using/introduction-forms-authoring.md). --> 此外，如果您選取XML結構描述作為片段的表單模型，則內容尋找器中會顯示一個顯示表單模型階層的新索引標籤。 它可讓您將表單模型元素拖放至片段上。<!--The added form-model elements get converted into form components while retaining the original properties from the associated XDP or XSD. -->
+<!-- For information about Adaptive Form components, see [Introduction to authoring Adaptive Forms](../../forms/using/introduction-forms-authoring.md). --> 此外，如果您選取XML結構描述作為片段的表單模型，則內容尋找器中會顯示一個顯示表單模型階層的新索引標籤。 它可讓您將表單模型元素拖放至片段上。
+<!--The added form-model elements get converted into form components while retaining the original properties from the associated XDP or XSD. -->
 
 根據結構描述或表單資料模型(FDM)的自適應表單片段建立後，表單資料模型(FDM)或結構描述元素會顯示在自適應表單產生器之內容瀏覽器的資料來源標籤中。 您可以將表單模型元素拖放至片段上。 新增的表單模型元素會轉換為表單元件，同時保留關聯結構描述的原始屬性。
 
@@ -92,11 +93,13 @@ ht-degree: 13%
 
 最適化表單片段是參考最適化表單而新增，並與獨立的最適化表單片段保持同步。 這代表對最適化表單片段所做的任何修改，都會反映在片段併入最適化Forms的所有執行個體中。
 
-<!--### Embed a fragment in Adaptive Form {#embed-a-fragment-in-adaptive-form}
+<!--
+### Embed a fragment in Adaptive Form {#embed-a-fragment-in-adaptive-form}
 
 You can choose to embed an Adaptive Form fragment in an Adaptive Form by clicking the ![Embed](assets/Smock_Import_18_N.svg) icon the panel toolbar of the added fragment
 
-The embedded fragment is no longer linked with the standalone fragment. You can edit the components in the embedded fragment from within the Adaptive Form.-->
+The embedded fragment is no longer linked with the standalone fragment. You can edit the components in the embedded fragment from within the Adaptive Form.
+-->
 
 <!-- 
 ## Configure fragment appearance {#configure-fragment-appearance}

@@ -6,7 +6,7 @@ feature: Adaptive Forms
 role: User
 badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: 249ec8f2-4176-428a-bfcf-80b381ec7263
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 2%
@@ -32,7 +32,7 @@ ht-degree: 2%
 
    ![選取Forms選項](assets/installation-configuration-select-forms-option.png)
 
-1. [建立](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=zh-Hant#how-to-use)和[執行](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=zh-Hant)生產和非生產管道。
+1. [建立](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=en#how-to-use)和[執行](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)生產和非生產管道。
 
 建置和部署管道後，**[!UICONTROL 導覽]**&#x200B;頁面上的&#x200B;**[!UICONTROL Forms]**&#x200B;選項。
 
@@ -48,7 +48,8 @@ A missing profile can lead to environment creation failure. Check that the profi
 1. Click **[!UICONTROL New Profile]** in the Products tab.
 1. Specify Name, Display Name, and Description for the profile. Click **[!UICONTROL Done]**. A profile is created.
 
-If the profile exists and issues still persist, contact Adobe Support. -->
+If the profile exists and issues still persist, contact Adobe Support.
+-->
 
 ## 建置管道失敗 {#build-pipeline-fails}
 

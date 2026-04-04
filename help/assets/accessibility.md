@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Accessibility, Asset Management
 role: User, Developer, Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1923'
 ht-degree: 2%
@@ -43,7 +43,8 @@ Possible topics to cover in this article are below.
 
 若要閱讀包含詳細相容性層級的報表，請參閱[協助工具相容性報表](https://www.adobe.com/accessibility/compliance.html) (ACR)頁面。
 
-<!-- TBD: Add link after release.
+<!--
+ TBD: Add link after release.
 To know how [!DNL Dynamic Media] is accessible, see [accessibility in [!DNL Dynamic Media]](). 
 -->
 
@@ -70,7 +71,8 @@ To know how [!DNL Dynamic Media] is accessible, see [accessibility in [!DNL Dyna
 
 許多可使用指標點選或操作的使用者介面元素，也可以使用鍵盤來配合。 使用鍵盤時，使用者可專注於UI元素並採取適當的動作。 使用者可以直接使用鍵盤快速鍵來觸發命令或動作，而無需專注於UI元素並使用鍵盤來觸發。 例如，使用者可以使用鍵盤瀏覽至使用者介面控制項，並選取`Return`，然後選取`Alt + 2`鍵盤快速鍵，來開啟左側資產的時間軸。
 
-<!-- TBD items:
+<!--
+ TBD items:
 
 * The button/menu to toggle between list view and card view exposes relevant info to the screen readers. What about column view option? This info can go into 'basic handling' info aka article to 'understand and use the workspace'.
 * How to open and browse through the profile pop-up dialog in [!DNL Experience Manager] UI using a keyboard? The navigation does not match the order of visual display of options on the UI. This info can go into 'basic handling' info aka article to 'understand and use the workspace'. What about setting preferences and impersonating a user?
@@ -113,7 +115,8 @@ To know how [!DNL Dynamic Media] is accessible, see [accessibility in [!DNL Dyna
 
 如果使用者從功能表展開說明或使用者設定檔選項，熒幕助讀程式會宣告適當的選項或狀態。 如果使用者展開使用者設定檔選項，則可使用鍵盤選取可用的選項。 例如，管理員可以模擬其他使用者。 如果使用者從[!UICONTROL 說明]選項中搜尋字串，解說員會宣佈「搜尋說明」以表示搜尋正在進行中。
 
-<!-- TBD: Removing for now. Add a more informative video later. Host it on tv.adobe
+<!--
+ TBD: Removing for now. Add a more informative video later. Host it on tv.adobe
 
 ![Keyboard navigation of top options in [!DNL Experience Manager] user interface](assets/keyboard-navigation-in-aem.gif)
 
@@ -124,7 +127,8 @@ To know how [!DNL Dynamic Media] is accessible, see [accessibility in [!DNL Dyna
 
 在[!DNL Assets]使用者介面中，使用者可以使用鍵盤來瀏覽DAM存放庫中現有數位資產清單、預覽或下載資產、檢視產生的轉譯、切換檢視、檢視產生的轉譯、檢視時間軸和版本記錄、檢視註釋和參考，以及檢視和管理中繼資料。
 
-<!-- TBD: Not sure about the following list items mean:
+<!--
+ TBD: Not sure about the following list items mean:
 
 In [!DNL Experience Manager] header section, when navigating in browse mode, screen reader now announces,
   
@@ -150,7 +154,8 @@ Review CQ-4282133 before adding - Close button in a coral-dialog box was not acc
 * 資產時間軸中提供資產上的註解。 若使用鍵盤或鍵盤快速鍵存取左側邊欄，即可存取。
 * [!UICONTROL 中的]檢視設定[!DNL Experience Manager]可使用鍵盤存取。 使用者可以使用方向鍵瀏覽可用的卡片大小，並選取和Tab鍵瀏覽，以瀏覽和設定現有「檢視設定」檢視中的其他元素。
 
-<!-- TBD: Gradually, as more enhancements are done in these categories, add more content.
+<!--
+ TBD: Gradually, as more enhancements are done in these categories, add more content.
 
 ## Add and upload digital assets {#upload}
 
@@ -195,7 +200,8 @@ Review CQ-4282133 before adding - Close button in a coral-dialog box was not acc
 
 ## 共用資產 {#share-assets}
 
-<!-- TBD: Anything about accessibility in DA, BP? AAL team confirmed that there's no content for AAL a11y on helpx.
+<!--
+ TBD: Anything about accessibility in DA, BP? AAL team confirmed that there's no content for AAL a11y on helpx.
 -->
 
 共用資產時，下列功能可改善協助工具：

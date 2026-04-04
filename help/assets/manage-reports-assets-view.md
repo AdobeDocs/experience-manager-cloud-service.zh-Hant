@@ -7,7 +7,7 @@ feature: Asset Insights, Asset Reports
 role: User, Admin, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1510'
 ht-degree: 87%
@@ -43,7 +43,7 @@ AEM Assets檢視環境可透過報表控制面板提供全面的報告功能。 
 
 **若要建立報告：**
 
-1. 導覽至「**報告**」，並按一下「**建立報告**」(從右上角)。「**建立報告**」對話框會顯示以下欄位：
+1. 導覽至「**報告**」，並按一下「**建立報告**」(從右上角)。 「**建立報告**」對話框會顯示以下欄位：
    ![建立報告](/help/assets/assets/executed-reports1.svg)
 
    **在「設定」標籤中：**
@@ -143,7 +143,7 @@ AEM Assets檢視環境可透過報表控制面板提供全面的報告功能。 
 <!--
 >[!NOTE]
 > 
->To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html).
+>To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 -->
 
 ### 先決條件 {#prereqs-dynamic-media-delivery-reports}
@@ -188,7 +188,7 @@ AEM Assets檢視環境可透過報表控制面板提供全面的報告功能。 
 
 ## 檢視及下載現有報告 {#View-and-download-existing-report}
 
-現有報告會顯示在「**已執行的報告**」標籤下方。按一下「**報告**」，並選取「**已執行的報告**」，即可檢視狀態為「**已完成**」(表示已可供下載) 的所有已建立的報告。若要下載 CSV 格式的報告或刪除報告，請選取該報告列。然後，選取「**下載 CSV**」或「**刪除**」。
+現有報告會顯示在「**已執行的報告**」標籤下方。按一下「**報告**」，並選取「**已執行的報告**」，即可檢視狀態為「**已完成**」(表示已可供下載) 的所有已建立的報告。 若要下載 CSV 格式的報告或刪除報告，請選取該報告列。然後，選取「**下載 CSV**」或「**刪除**」。
 ![檢視及下載現有報告](/help/assets/assets/view-download-existing-report.png)
 
 
@@ -215,7 +215,7 @@ AEM Assets檢視環境可透過報表控制面板提供全面的報告功能。 
 
 ## 檢視排程報告 {#view-scheduled-reports}
 
-排程報告會以系統化組織的方式顯示在「**排程報告**」標籤下方。每個排程報告的所有已完成報告都會儲存在單一報告資料夾中。按一下![展開摺疊](/help/assets/assets/expand-icon1.svg)以檢視完成的報表。 例如，如果您安排了一個每日報告，則所有已完成的報告都會群組到一個資料夾中。這種組織方式簡化了報告的導覽和易尋性。若要檢視排程報告，請按一下「**報告**」，然後按一下「**排程報告**」。所有排程報告便會顯示，並包含如「進行中」或「已完成」狀態。已完成的報告可供下載。\
+排程報告會以系統化組織的方式顯示在「**排程報告**」標籤下方。每個排程報告的所有已完成報告都會儲存在單一報告資料夾中。按一下![展開摺疊](/help/assets/assets/expand-icon1.svg)以檢視完成的報表。 例如，如果您安排了一個每日報告，則所有已完成的報告都會群組到一個資料夾中。這種組織方式簡化了報告的導覽和易尋性。若要檢視排程報告，請按一下「**報告**」，然後按一下「**排程報告**」。所有排程報告便會顯示，並包含如「進行中」或「已完成」狀態。 已完成的報告可供下載。\
 ![排程報告](/help/assets/assets/scheduled-reports-tab.png)
 
 ## 編輯及取消排程報告 {#edit-cancel-scheduled-reports}
@@ -223,12 +223,12 @@ AEM Assets檢視環境可透過報表控制面板提供全面的報告功能。 
 1. 導覽至「**排程報告**」標籤。
 1. 選取該報告列。
 1. 按一下「**編輯**」。
-1. 按一下「**取消排程**」，然後按一下「**確認**」，以取消該排程報告。對於已取消的報告，下次執行時間會變為空白，而狀態則會顯示為已取消。
+1. 按一下「**取消排程**」，然後按一下「**確認**」，以取消該排程報告。 對於已取消的報告，下次執行時間會變為空白，而狀態則會顯示為已取消。
    ![編輯及取消排程報告](/help/assets/assets/cancel-edit-scheduled-reports.png)
 
 ### 恢復排程 {#resume-schedule}
 
-若要恢復已取消的排程，請選取該報告列，然後按一下「**恢復排程**」。恢復後，下次執行時間項目會再次顯示，而狀態則會顯示為進行中。
+若要恢復已取消的排程，請選取該報告列，然後按一下「**恢復排程**」。 恢復後，下次執行時間項目會再次顯示，而狀態則會顯示為進行中。
 ![恢復排程](/help/assets/assets/resume-schedule.png)
 
 >[!NOTE]
@@ -248,10 +248,13 @@ AEM Assets檢視環境可透過報表控制面板提供全面的報告功能。 
 
 * **上傳**：使用折線圖表示過去30天或12個月內上傳至Assets檢視環境的資產數量。
   ![分析 — 上傳](/help/assets/assets/insights-uplods2.svg)
-<!--* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.
+
+<!--
+* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.
 
 * **Storage usage**: The storage usage, in bytes, for the Assets view environment represented using a bar chart.
 ![insights-uploads](/help/assets/assets/insights-storage-usage1.svg)
+-->
 <!--* **Delivery**: The graph depicts the count of assets as the delivery dates.-->
 
 <!--* **Asset Count by Asset Type**: Represents count of various MIME types of the available assets. For example, application/zip, image/png, video/mp4, application/postscripte.-->
@@ -262,7 +265,7 @@ AEM Assets檢視環境可透過報表控制面板提供全面的報告功能。 
    ![Insights](assets/insights1.png)
    ![Insights](assets/insights2.png)
    -->
-* **依大小劃分的資產計數：**&#x200B;將資產視圖環境中的總資產計數劃分為不同的大小範圍，突出顯示每個大小範圍內的資產數量和百分比，以圓環圖表示。
-  ![依大小劃分的資產計數深入解析](/help/assets/assets/insights-assets-count-by-size.svg)
-* **依資產型別區分的資產計數：**&#x200B;區段Assets檢視環境中的資產總計計數，根據資產的檔案型別反白顯示資產的計數和百分比，以環形圖表示。
+* **依大小劃分的資產計數：**將資產視圖環境中的總資產計數劃分為不同的大小範圍，突出顯示每個大小範圍內的資產數量和百分比，以圓環圖表示。
+  ![依大小劃分的資產計數深入分析](/help/assets/assets/insights-assets-count-by-size.svg)
+* **依資產型別區分的資產計數：**區段Assets檢視環境中的資產總計計數，根據資產的檔案型別反白顯示資產的計數和百分比，以環形圖表示。
   ![依大小劃分的資產計數深入分析](/help/assets/assets/insights-assest-count-by-asset-type1.svg)

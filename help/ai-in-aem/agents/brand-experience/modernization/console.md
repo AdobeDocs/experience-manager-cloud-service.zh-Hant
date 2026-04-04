@@ -2,9 +2,9 @@
 title: Experience現代化主控台
 description: Experience現代化主控台介面和功能的參考指南
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: 43d8c124-fc87-4cec-a91d-ab12255ae321
-source-git-commit: 0aaa9904b3011adc3f3e3b01bfee8ee3e96f12e2
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '1083'
 ht-degree: 0%
@@ -105,14 +105,14 @@ Experience Modernization Console是Edge Delivery Services的託管、AI輔助開
    * **回應式檢視**，以在案頭、平板電腦或行動檢視中檢視轉譯的HTML內容
    * **設計模式** （繪圖筆刷圖示）可新增頁面元素至其他內容的提示
 * **檔案檢視** （檔案圖示）可分別檢視基礎檔案編寫內容結構
-* **Markdown檢視(AEM製作)** （程式碼圖示），以檢視基礎的Markdown內容結構
-* **JCR XML檢視(AEM製作)** （資料圖示）以檢視產生的JCR XML內容結構
+* **Markdown檢視（AEM製作）** （程式碼圖示），以檢視基礎的Markdown內容結構
+* **JCR XML檢視（AEM製作）** （資料圖示）以檢視產生的JCR XML內容結構
 
 您一律可以按一下&#x200B;**重新整理預覽**&#x200B;圖示來更新預覽面板。
 
 **刪除**&#x200B;按鈕會從工作區移除選取的頁面。 不會刪除預覽或發佈的內容。
 
-**錯誤**&#x200B;按鈕(AEM製作)會開啟一個模組視窗，以檢視所選頁面上的錯誤。
+**錯誤**&#x200B;按鈕（AEM製作）會開啟一個模組視窗，以檢視所選頁面上的錯誤。
 
 **上傳內容**&#x200B;按鈕會開啟模組視窗，以將檔案上傳至AEM。
 

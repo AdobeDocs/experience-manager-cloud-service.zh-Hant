@@ -5,7 +5,7 @@ badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
 feature: Adaptive Forms,APIs & Integrations
 role: Admin, Developer, User
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '731'
 ht-degree: 6%
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 # 使用同步處理 {#sync-processing-introduction}
 
-Forms as a Cloud Service - Communications API可讓您建立、彙總及提供品牌導向和個人化通訊，例如業務往來函、檔案、報表、索賠處理信函、利益通知、索賠處理信函、每月帳單和歡迎套件。 您可以使用Communications API將範本(XFA或PDF)與客戶資料結合，以產生PDF、PS、PCL、DPL、IPL和ZPL格式的檔案。
+Forms as a Cloud Service - Communications API可讓您建立、彙總及提供品牌導向和個人化通訊，例如業務往來函、檔案、報表、索賠處理信函、利益通知、索賠處理信函、每月帳單和歡迎套件。 您可以使用Communications API將範本（XFA或PDF）與客戶資料結合，以產生PDF、PS、PCL、DPL、IPL和ZPL格式的檔案。
 
 假設您有一或多個範本，且每個範本有多個XML資料記錄。 您可以使用Communications API為每筆記錄產生列印檔案。 <!-- You can also combine the records into a single document. -->結果為非互動式PDF檔案。 非互動式PDF檔案不允許使用者在其欄位中輸入資料。
 
@@ -37,7 +37,8 @@ Forms as a Cloud Service — 通訊功能提供隨選和批次API （非同步AP
 <!-- 
 ### Multi-tenant APIs
 
-* Document utility APIs -->
+* Document utility APIs
+-->
 
 
 ### 驗證單一租使用者API
@@ -48,11 +49,11 @@ Forms as a Cloud Service — 通訊功能提供隨選和批次API （非同步AP
 
 * **權杖式驗證：**&#x200B;權杖式驗證使用存取權杖（持有者驗證權杖）向Experience Manager as a Cloud Service提出要求。 AEM Forms as a Cloud Service提供API以安全地擷取存取Token。 若要擷取並使用權杖來驗證請求：
 
-   1. [從Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=zh-Hant)擷取Experience Manager as a Cloud Service認證。
-   1. [在您的環境中安裝Experience Manager as a Cloud Service認證](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=zh-Hant)。 (應用程式伺服器、網頁伺服器或其他非AEM伺服器)設定為傳送要求給（進行呼叫）雲端服務。
-   1. [產生JWT權杖並與Adobe IMS API交換存取權杖](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=zh-Hant)。
+   1. [從Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html)擷取Experience Manager as a Cloud Service認證。
+   1. [在您的環境中安裝Experience Manager as a Cloud Service認證](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html)。 （應用程式伺服器、網頁伺服器或其他非AEM伺服器）設定為傳送要求給（進行呼叫）雲端服務。
+   1. [產生JWT權杖並與Adobe IMS API交換存取權杖](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html)。
    1. 使用存取權杖作為持有者驗證權杖來執行Experience Manager API。
-   1. [在Experience Manager環境中為技術帳戶使用者設定適當的許可權](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=zh-Hant#configure-access-in-aem)。
+   1. [在Experience Manager環境中為技術帳戶使用者設定適當的許可權](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem)。
 
   >[!NOTE]
   >

@@ -6,7 +6,7 @@ role: Admin, User
 feature: Adaptive Forms
 badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1079'
 ht-degree: 3%
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/forms/manage-administer-aem-forms/import-export-forms-templates) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/manage-administer-aem-forms/import-export-forms-templates) |
 | AEM as a Cloud Service  | 本文章 |
 
 您可以在[!DNL AEM Forms]個執行個體之間移動最適化Forms和相關資產，例如最適化表單主題、表單資料模型(FDM)、最適化表單範本、片段和PDF forms。
@@ -99,7 +99,7 @@ ht-degree: 3%
 
    ![選取主題](/help/forms/assets/select-theme.png)
 
-1. 在[佈景主題]頁面上，按一下[建立&#x200B;**&#x200B; > [檔案上傳]**]。**&#x200B;**
+1. 在[佈景主題]頁面上，按一下[建立&#x200B;** > [檔案上傳]**]。****
 
    ![上傳佈景主題](/help/forms/assets/theme-upload.png)
 
@@ -182,7 +182,7 @@ ht-degree: 3%
 
    ![搜尋資產](/help/forms/assets/search-bar.png)
 
-如需有關使用搜尋的詳細資訊與指示，請參閱[搜尋](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=zh-Hant)。
+如需有關使用搜尋的詳細資訊與指示，請參閱[搜尋](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html)。
 
 <!--
 ## Export or create a package {#export-a-workflow-application}
@@ -293,7 +293,8 @@ To download all the Correspondence Management assets and related dependencies as
 
    To add the assets in the package to another instance of Correspondence Management, [import the package to an [!DNL AEM Forms] instance](import-export-forms-templates.md#p-upload-forms-documents-assets-p).
 
-<!-- ### Import Document Fragments, Letters and/or Data Dictionaries into Correspondence Management {#import-document-fragments-letters-and-or-data-dictionaries-into-correspondence-management}
+<!--
+ ### Import Document Fragments, Letters and/or Data Dictionaries into Correspondence Management {#import-document-fragments-letters-and-or-data-dictionaries-into-correspondence-management}
 
 You can import assets that are exported into a .cmp file. A .cmp file can have one or more letters, data dictionaries, document fragments, and dependent assets.
 
@@ -311,7 +312,8 @@ You can import assets that are exported into a .cmp file. A .cmp file can have o
 
    >[!NOTE]
    >
-   >For you to be able to upload XDPs (as part of the cmp file or otherwise), you need to be a part of forms-power-users group. For access rights, contact the administrator. -->
+   >For you to be able to upload XDPs (as part of the cmp file or otherwise), you need to be a part of forms-power-users group. For access rights, contact the administrator.
+   -->
 
 ## 另請參閱 {#see-also}
 

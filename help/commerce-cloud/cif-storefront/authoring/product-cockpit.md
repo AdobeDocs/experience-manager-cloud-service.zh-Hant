@@ -5,7 +5,7 @@ exl-id: 6dbf039c-e040-48f1-88f3-ebbd70cdf94d
 feature: Commerce Integration Framework
 role: Admin
 index: false
-source-git-commit: 80bd8da1531e009509e29e2433a7cbc8dfe58e60
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '451'
 ht-degree: 1%
@@ -39,7 +39,7 @@ ht-degree: 1%
 
 ## 開啟產品駕駛艙 {#opening-product-cockpit}
 
-存取產品駕駛艙最簡單的方式是透過AEM主要功能表中的「Commerce」功能表。 也可以使用Omnisearch (搜尋Commerce)或開啟`https://<yourAEMInstance>/commerce.html`。
+存取產品駕駛艙最簡單的方式是透過AEM主要功能表中的「Commerce」功能表。 也可以使用Omnisearch （搜尋Commerce）或開啟`https://<yourAEMInstance>/commerce.html`。
 
 ![AEM功能表](../assets/aem-menu.png)
 
@@ -85,6 +85,6 @@ ht-degree: 1%
 
 ### AEM內容標籤 {#content-tabs}
 
-這些按AEM內容型別(體驗片段、內容片段、相關Assets)分組的標籤會顯示與商業物件相關的AEM內容。 「檢視詳細資料」動作會開啟新的瀏覽器索引標籤，其中包含選取的內容。
+這些按AEM內容型別（體驗片段、內容片段、相關Assets）分組的標籤會顯示與商業物件相關的AEM內容。 「檢視詳細資料」動作會開啟新的瀏覽器索引標籤，其中包含選取的內容。
 
 ![內容屬性](../assets/content-properties.png)

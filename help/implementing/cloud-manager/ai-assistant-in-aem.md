@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Authoring, AI Assistant, AI Tools
 role: Admin, Developer, User
 exl-id: 81e7b1ac-50d0-4547-8622-bf145ebc3dc0
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1280'
 ht-degree: 5%
@@ -31,7 +31,7 @@ AI 助理會直接嵌入 AEM，並且可透過 AEM Experience Hub、Cloud Manage
 
 接下來的3分鐘25秒影片將逐步解說AEM中的AI Assistant。
 
->[!VIDEO](https://video.tv.adobe.com/v/3475369/?captions=chi_hant&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475357/?learn=on&enablevpops)
 
 ## 在AEM中存取AI助理{#get-access}
 
@@ -110,7 +110,8 @@ AEM中的AI助理在設計上特別強調隱私權、安全性和治理。
 
 ## 在AEM中使用AI助理 {#ai-use}
 
-<!-- UNHIDE AFTER BETA or at GA
+<!--
+ UNHIDE AFTER BETA or at GA
 ### Enable AI Assistant in AEM access through Admin Console 
 
 To use AI Assistant in AEM, your organization must opt in at the Admin Console level. A product administrator creates (or chooses) a user group and grants it the new "AI Assistant" permission. Anyone added to that group instantly gains access to the Assistant across AEM. If the goal is company-wide availability, the admin simply assigns all users to that group.
@@ -123,9 +124,10 @@ Administrators should keep normal Cloud Manager governance in mind. Hold product
 
 ![Technical support ticket creation in AI Assistant in AEM of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
 
-For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/accessing/overview). 
+For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview). 
 
-See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md). -->
+See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md).
+-->
 
 
 ### 在AEM對話中啟動AI助理
@@ -134,7 +136,7 @@ See also [Custom Permissions](/help/implementing/cloud-manager/custom-permission
 
 **若要在AEM交談中啟動AI小幫手：**
 
-1. 在AEM使用者介面(從Cloud Manager頁面或AEM環境的作者執行個體)的右上角附近，按一下&#x200B;**AI助理**&#x200B;圖示。
+1. 在AEM使用者介面（從Cloud Manager頁面或AEM環境的作者執行個體）的右上角附近，按一下&#x200B;**AI助理**&#x200B;圖示。
 
    工具列上的![AI助理圖示](/help/implementing/cloud-manager/assets/ai-assistant-icon.png)
 
@@ -193,7 +195,8 @@ AEM中的AI助理包含可發現性功能，可協助您探索支援的主題和
 * **AEM中的AI助理是否將個人資訊用於訓練資料？**\
   不行。AEM中的AI助理不會將個人資訊用於訓練目的。 避免與AEM中的AI助理分享您或其他人的個人資訊，包括姓名或聯絡詳細資訊。
 
-<!-- IS THE DOCUMENTATION BELOW STILL NEEDED? IF SO, GO AHEAD AND DELETE THE COMMENT TAGS!!
+<!--
+ IS THE DOCUMENTATION BELOW STILL NEEDED? IF SO, GO AHEAD AND DELETE THE COMMENT TAGS!!
 
 ## AEM Forms AI Assistant (Forms Experience Builder) {#ai-forms-builder}
 

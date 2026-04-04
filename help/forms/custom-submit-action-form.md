@@ -6,7 +6,7 @@ role: User, Developer
 level: Intermediate
 badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1703'
 ht-degree: 1%
@@ -17,8 +17,8 @@ ht-degree: 1%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/customize-aem-forms/custom-submit-action-form.html?lang=zh-Hant) |
-| AEM as a Cloud Service (核心元件) | [按一下這裡](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/custom-submit-action-for-adaptive-forms-based-on-core-components) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/customize-aem-forms/custom-submit-action-form.html) |
+| AEM as a Cloud Service (核心元件) | [按一下這裡](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/custom-submit-action-for-adaptive-forms-based-on-core-components) |
 | AEM as a Cloud Service (基礎元件) | 本文章 |
 
 最適化表單提供多個立即可用的提交動作(OOTB)。 提交動作可指定要透過最適化表單收集之資料上執行的動作細節。 例如，以電子郵件傳送資料。
@@ -51,7 +51,7 @@ ht-degree: 1%
 
 ### 動作欄位 {#action-fields}
 
-提交動作可以將隱藏的輸入欄位(使用HTML [input](https://developer.mozilla.org/en/docs/Web/HTML/Element/Input)標籤)新增到演算後的表單HTML。 這些隱藏欄位可包含處理表單提交時所需的值。 提交表單時，這些欄位值會傳回為請求引數，「提交動作」可在提交處理期間使用這些引數。 輸入欄位稱為動作欄位。
+提交動作可以將隱藏的輸入欄位（使用HTML [input](https://developer.mozilla.org/en/docs/Web/HTML/Element/Input)標籤）新增到演算後的表單HTML。 這些隱藏欄位可包含處理表單提交時所需的值。 提交表單時，這些欄位值會傳回為請求引數，「提交動作」可在提交處理期間使用這些引數。 輸入欄位稱為動作欄位。
 
 例如，同時擷取填寫表單所用時間的提交動作可以新增隱藏的輸入欄位`startTime`和`endTime`。
 
@@ -75,7 +75,7 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 
 將檔案附加至最適化表單時，伺服器會在最適化表單提交後驗證檔案附件，並在下列情況下傳回錯誤訊息：
 
-* 檔案附件包括以(.)字元開頭的檔案名稱，其中包含\ / ： * ？ 「 &lt; > | ； % $$個字元，或包含保留給Windows作業系統的特殊檔案名稱，例如`nul`、`prn`、`con`、`lpt`或`com`。
+* 檔案附件包括以(.)字元開頭的檔案名稱，其中包含\ / ： * ？ &quot; &lt; > | ； % $ characters，或包含保留給Windows作業系統的特殊檔案名稱，例如`nul`、`prn`、`con`、`lpt`或`com`。
 
 * 檔案附件的大小為0位元組。
 
@@ -102,8 +102,11 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 * **post.POST.jsp**： Submit servlet會呼叫此指令碼，其中包含您提交的資料以及前幾節中的其他資料。 在此頁面中只要提到要執行動作，就表示要執行post.POST.jsp命令檔。 若要向最適化Forms註冊提交動作以顯示於最適化表單編輯對話方塊中，請將這些屬性新增到`sling:Folder`：
 
    * **guideComponentType**，型別為String，值為&#x200B;**fd/af/components/guidesubmittype**
-   * **guideDataModel**，型別為String，指定適用提交動作的最適化表單型別。 以XSD為基礎的最適化Forms支援&#x200B;<!--**xfa** is supported for XFA-based Adaptive Forms while -->**xsd**。 不使用XDP或XSD的最適化Forms支援&#x200B;**basic**。 若要顯示多種最適化Forms型別的動作，請新增對應的字串。 以逗號分隔每個字串。 例如，若要讓動作顯示在<!--XFA- and -->XSD式Adaptive Forms上，請指定值為<!--**xfa** and--> **xsd**。
-
+   * **guideDataModel**，型別為String，指定適用提交動作的最適化表單型別。 以XSD為基礎的最適化Forms支援&#x200B;**xsd**。 不使用XDP或XSD的最適化Forms支援&#x200B;**basic**。 若要顯示多種最適化Forms型別的動作，請新增對應的字串。 以逗號分隔每個字串。 例如，若要讓動作顯示在XSD式Adaptive Forms上，請指定值為&#x200B;**xsd**。
+  <!--
+    Replace above?
+    * **guideDataModel** of type String that specifies the type of Adaptive Form for which the Submit Action is applicable. **xfa** is supported for XFA-based Adaptive Forms while **xsd** is supported for XSD-based Adaptive Forms. **basic** is supported for Adaptive Forms that do not use XDP or XSD. To display the action on multiple types of Adaptive Forms, add the corresponding strings. Separate each string by a comma. For example, to make an action visible on XFA- and XSD-based Adaptive Forms, specify the value as <**xfa** and **xsd**.
+    -->
    * **jcr:description**&#x200B;屬於字串型別。 此屬性的值會顯示在「最適化表單編輯」對話方塊之「提交動作」索引標籤的「提交動作」清單中。 OOTB動作存在於CRX存放庫中&#x200B;**/libs/fd/af/components/guidessubmittype**&#x200B;位置。
 
    * **submitService** （型別為String）。 如需詳細資訊，請參閱[排程自訂動作的最適化表單提交](#schedule-adaptive-form-submission)。
@@ -112,7 +115,7 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 
 >[!NOTE]
 >
-> 若要瞭解如何建立核心元件的自訂提交動作，請參閱[為最適化Forms （核心元件）建立自訂提交動作](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/custom-submit-action-for-adaptive-forms-based-on-core-components)。
+> 若要瞭解如何建立核心元件的自訂提交動作，請參閱[為最適化Forms （核心元件）建立自訂提交動作](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/custom-submit-action-for-adaptive-forms-based-on-core-components)。
 
 執行以下步驟來建立自訂提交動作，將資料儲存至CRX存放庫，然後傳送電子郵件給您。 最適化表單包含OOTB提交動作存放區內容（已棄用），可將資料儲存至CRX存放庫。 此外，AEM還提供可用於傳送電子郵件的[郵件](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/day/cq/mailer/package-summary.html) API。 使用Mail API之前，請透過系統主控台設定Day CQ Mail服務。 您可以重複使用「儲存內容（已棄用）」動作，將資料儲存在存放庫中。 存放區內容（已棄用）動作可在CRX存放庫中的/libs/fd/af/components/guidessubmittype/store位置取得。
 
@@ -210,7 +213,7 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 
 ## 使用自訂提交動作的submitService屬性 {#submitservice-property}
 
-當您設定包含`submitService`屬性的自訂提交動作時，表單會在提交時觸發[FormSubmitActionService](https://helpx.adobe.com/tw/experience-manager/6-5/forms/javadocs/com/adobe/aemds/guide/service/FormSubmitActionService.html)。 `FormSubmitActionService`使用`getServiceName`方法來擷取`submitService`屬性的值。 服務會根據`submitService`屬性的值，叫用適當的送出方法。 將`FormSubmitActionService`加入您上傳至[!DNL AEM Forms]伺服器的自訂套件組合。
+當您設定包含`submitService`屬性的自訂提交動作時，表單會在提交時觸發[FormSubmitActionService](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aemds/guide/service/FormSubmitActionService.html)。 `FormSubmitActionService`使用`getServiceName`方法來擷取`submitService`屬性的值。 服務會根據`submitService`屬性的值，叫用適當的送出方法。 將`FormSubmitActionService`加入您上傳至[!DNL AEM Forms]伺服器的自訂套件組合。
 
 將字串型別的`submitService`屬性新增至自訂提交動作的`sling:Folder`，以啟用最適化表單的[!DNL Adobe Sign]。 您必須先設定自訂提交動作的&#x200B;**[!UICONTROL 屬性值，才能在Adaptive Form容器屬性的]**&#x200B;電子簽章&#x200B;**[!UICONTROL 區段中選取]**&#x200B;啟用Adobe簽署`submitService`選項。
 

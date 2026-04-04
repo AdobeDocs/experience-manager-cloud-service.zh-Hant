@@ -4,7 +4,7 @@ description: 瞭解如何產生安全JWT權杖，以促進第三方伺服器與A
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
 feature: Developing
 role: Admin, Developer
-source-git-commit: 886c87b2408776e6ea877d835c81e574e5000acd
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2229'
 ht-degree: 0%
@@ -17,11 +17,13 @@ ht-degree: 0%
 
 伺服器對伺服器的流程如下所述，以及簡化的開發流程。 AEM as a Cloud Service [Developer Console](development-guidelines.md#crxde-lite-and-developer-console)是用來產生驗證程式所需的權杖。
 
-<!-- Alexandru: hiding this until the tutorials reflect the new UI
+<!--
+ Alexandru: hiding this until the tutorials reflect the new UI
 
 >[!NOTE]
 >
->In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=zh-Hant#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
+>In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html).
+-->
 
 ## 伺服器對伺服器流量 {#the-server-to-server-flow}
 
@@ -61,7 +63,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->IMS組織管理員(通常是透過Cloud Manager布建環境的相同使用者)也是AEM Author上的AEM使用者或AEM管理員產品設定檔的成員，必須首先存取Developer Console。 接著，按一下&#x200B;**建立新的技術帳戶**，即可產生認證，並由具有AEM as a Cloud Service環境管理員許可權的使用者於稍後擷取。 如果IMS組織管理員尚未建立技術帳戶，則會出現一則訊息，通知他們需要IMS組織管理員角色。
+>IMS組織管理員（通常是透過Cloud Manager布建環境的相同使用者）也是AEM Author上的AEM使用者或AEM管理員產品設定檔的成員，必須首先存取Developer Console。 接著，按一下&#x200B;**建立新的技術帳戶**，即可產生認證，並由具有AEM as a Cloud Service環境管理員許可權的使用者於稍後擷取。 如果IMS組織管理員尚未建立技術帳戶，則會出現一則訊息，通知他們需要IMS組織管理員角色。
 
 ### 在非AEM伺服器上安裝AEM服務認證 {#install-the-aem-service-credentials-on-a-non-aem-server}
 
@@ -127,7 +129,7 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
    ![新增使用者](/help/implementing/developing/introduction/assets/s2s-addusers.png)
 
-1. 新增您建立的技術帳戶（在此案例中為`84b2c3a2-d60a-40dc-84cb-e16b786c1673@techacct.adobe.com`），然後按一下[儲存]。**&#x200B;**
+1. 新增您建立的技術帳戶（在此案例中為`84b2c3a2-d60a-40dc-84cb-e16b786c1673@techacct.adobe.com`），然後按一下[儲存]。****
 
    ![新增技術帳戶](/help/implementing/developing/introduction/assets/s2s-addtechaccount.png)
 

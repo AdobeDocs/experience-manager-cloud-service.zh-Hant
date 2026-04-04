@@ -6,7 +6,7 @@ contentOwner: AG
 badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: 5936ace2-318e-4888-9ad4-23e6f6bfb857
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 98%
@@ -27,7 +27,7 @@ ht-degree: 98%
 
 [!DNL Assets view] 也支援各式各樣領先相機製造商的 Camera RAW 檔案 (採用 Adobe Camera Raw 技術)，包括 Canon (CR2/CR3)、Nikon (NEF)、Sony (SRW/SRF)、Fujifilm (RAF)、Olympus (ORF) 和其他廠商。
 
-各種檔案類型對於使用案例和功能有不同程度的支援，如下所述。請參閱圖例以了解支援程度。
+各種檔案類型對於使用案例和功能有不同程度的支援，如下所述。 請參閱圖例以了解支援程度。
 
 | 支援程度 | 說明 |
 |-------------------|-------------------------|
@@ -37,7 +37,8 @@ ht-degree: 98%
 
 ## 新增、上傳和檢視資產 {#support-to-upload-view}
 
-<!-- TBD: For AEM, AI files require the PDF option to be selected when saving the AI file.
+<!--
+ TBD: For AEM, AI files require the PDF option to be selected when saving the AI file.
 -->
 
 | 資產類型 | [瀏覽](/help/assets/navigate-assets-view.md) | 複製 | [上傳](/help/assets/add-delete-assets-view.md) | 建立 | [刪除](/help/assets/add-delete-assets-view.md#delete-assets) | 詳細資料 | 影像縮放 | [最近檢視的項目](/help/assets/navigate-assets-view.md) |
@@ -50,7 +51,8 @@ ht-degree: 98%
 | PSD、PSB、AI 和 INDD | ✓ | ✓ | ✓ | − | ✓ | ✓‡ | − | ✓ |
 | 其他二進位檔案 | ✓ | ✓ | ✓ | − | ✓ | ✓ | − | ✓ |
 
-<!-- Hiding CC Libraries (considered beta) as per PM feedback.
+<!--
+ Hiding CC Libraries (considered beta) as per PM feedback.
 | CC Libraries  | &#10003; | &minus;  | &#10003; | &#10003; | &#10003; | &#10003; | &minus;    | &minus;         |
 -->
 
@@ -108,7 +110,8 @@ ht-degree: 98%
 
 [!DNL Adobe Asset Link] 的使用者可以從支援的 [!DNL Adobe Creative Cloud] 桌面應用程式上傳和簽入 (上傳新版本) 檔案到 [!DNL Assets view] 存放庫。
 
-<!-- TBD: Saving the template table separately for later use.
+<!--
+ TBD: Saving the template table separately for later use.
 | Asset type    | Features |
 |---------------|----------|
 | Raster images |          |
@@ -131,4 +134,4 @@ ht-degree: 98%
 
 * 若要提供文件意見回饋，請使用右側邊欄提供的[!UICONTROL 編輯此頁面]![來編輯頁面](assets/do-not-localize/edit-page.png)或[!UICONTROL 記錄問題]![來建立 GitHub 問題](assets/do-not-localize/github-issue.png)
 
-* 聯絡[客戶服務](https://experienceleague.adobe.com/zh-hant?support-solution=General#support)
+* 聯絡[客戶服務](https://experienceleague.adobe.com/?support-solution=General#support)

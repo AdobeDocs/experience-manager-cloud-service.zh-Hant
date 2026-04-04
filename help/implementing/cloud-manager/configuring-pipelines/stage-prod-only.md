@@ -8,7 +8,7 @@ hide: false
 hidefromtoc: false
 index: true
 exl-id: 7d76a87c-122c-4c4d-8071-957bef4c9cf1
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1046'
 ht-degree: 49%
@@ -17,8 +17,10 @@ ht-degree: 49%
 
 # 分割僅限階段和僅限生產的管道 {#stage-prod-only}
 
-<!-- REMOVED AS PER CQDOC-23086 ON OCTOBER 3, 2025:
-badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#staging-production-only-pipelines" -->
+<!--
+ REMOVED AS PER CQDOC-23086 ON OCTOBER 3, 2025:
+badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#staging-production-only-pipelines"
+-->
 
 您可以使用專用管道來分割中繼和生產部署。
 
@@ -72,15 +74,15 @@ badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/releas
 
 1. 在&#x200B;**新增非生產管道**&#x200B;對話方塊的&#x200B;**組態**&#x200B;索引標籤上，為您的管道選取&#x200B;**部署管道**&#x200B;欄位。
 1. 在「非生產管線名稱」欄位中，輸入任意文字的名稱。
-1. 選取所需的部署選項，然後按一下[繼續]。**&#x200B;**
+1. 選取所需的部署選項，然後按一下[繼續]。****
 
    在新增非生產管道對話方塊中的![設定索引標籤](/help/implementing/cloud-manager/configuring-pipelines/assets/add-non-prod-pipeline-1.png)
 
-1. 在&#x200B;**Source程式碼**&#x200B;索引標籤上，選取&#x200B;**完整棧疊程式碼**。 此選項會建置和部署整個AEM應用程式(後端、Dispatcher/Web層設定，以及存放庫中的任何前端模組)。
+1. 在&#x200B;**Source程式碼**&#x200B;索引標籤上，選取&#x200B;**完整棧疊程式碼**。 此選項會建置和部署整個AEM應用程式（後端、Dispatcher/Web層設定，以及存放庫中的任何前端模組）。
 
 1. 在&#x200B;**合格的部署環境**&#x200B;下拉式清單中，選取&#x200B;**階段**&#x200B;環境作為您管道的部署環境。 選取階段會建立專用於階段環境的管道（生產升級會透過個別管道進行）。
 
-1. 在各自的下拉式清單中選取您的&#x200B;**存放庫**&#x200B;和&#x200B;**Git分支**，然後按一下[繼續]&#x200B;**&#x200B;**。
+1. 在各自的下拉式清單中選取您的&#x200B;**存放庫**&#x200B;和&#x200B;**Git分支**，然後按一下[繼續]****。
 
    在新增非生產管道對話方塊中的![Source程式碼索引標籤](/help/implementing/cloud-manager/configuring-pipelines/assets/add-non-prod-pipeline-2.png)
 
@@ -113,7 +115,8 @@ badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/releas
 
 您可以像啟動任何其他管道[一樣啟動新管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines)。 您也可以直接從僅限中繼管道的執行詳細資訊觸發僅限生產管道。
 
-<!-- * Stage-only and prod-only pipelines offer a new [emergency mode](#emergency-mode) to skip testing.
+<!--
+ * Stage-only and prod-only pipelines offer a new [emergency mode](#emergency-mode) to skip testing.
 Prod-only pipeline run can be triggered directly from the execution details of a [stage-only pipeline](#stage-only-run).
 
 
@@ -124,7 +127,8 @@ When starting production-only and staging-online pipelines, you are prompted to 
 * **Normal Mode** is a standard run and includes stage testing steps.
 * **Emergency Mode** skips stage testing steps.
 
-![Emergency Mode](/help/assets/configure-pipelines/emergency-mode.png) -->
+![Emergency Mode](/help/assets/configure-pipelines/emergency-mode.png)
+-->
 
 ### 執行階段專用管道 {#stage-only-run}
 

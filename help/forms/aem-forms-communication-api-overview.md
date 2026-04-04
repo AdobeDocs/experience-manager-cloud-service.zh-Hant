@@ -5,7 +5,7 @@ role: Developer, User
 feature: Adaptive Forms, APIs & Integrations
 badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: 1f9fb00c-c284-45c1-a8ba-51a59dbaee3d
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 4%
@@ -20,7 +20,7 @@ AEM Forms API的結構化可透過兩個主要主控台進行存取：
 
 * [Adobe Developer Console (ADC)](https://developer.adobe.com/developer-console/) - Adobe Developer Console是Adobe API、事件、執行階段和App Builder的閘道。
 
-* [AEM Developer Console](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console) - AEM Developer Console可提供環境層級詳細資訊、設定、技術帳戶和服務認證的存取權，以支援作業和整合工作。
+* [AEM Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console) - AEM Developer Console可提供環境層級詳細資訊、設定、技術帳戶和服務認證的存取權，以支援作業和整合工作。
 
 不同的API支援不同的[驗證方法](#authentication-methods)。
 
@@ -36,7 +36,8 @@ AEM Forms API的結構化可透過兩個主要主控台進行存取：
 <!--
 >[!NOTE]
 >
-> Adobe is standardizing authentication method across all APIs and is gradually onboarding APIs to the Adobe Developer Console, which supports the OAuth Server-to-Server authentication method.-->
+> Adobe is standardizing authentication method across all APIs and is gradually onboarding APIs to the Adobe Developer Console, which supports the OAuth Server-to-Server authentication method.
+ -->
 
 ## API分類概觀
 
@@ -70,7 +71,7 @@ AEM Forms API的結構化可透過兩個主要主控台進行存取：
 | [/adobe/forms/batch/output/config/{configName}/execution/{executionId}](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Execution/operation/GetBatchRunInstanceState) | 擷取批次工作的執行狀態。 | 非同步/批次 | [JWT](/help/forms/jwt-api-authentication.md) |
 | [/adobe/forms/batch/output/config/{configName}/executions](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-batch/#tag/Batch-Execution/operation/GetAllRunningInstancesForBatch) | 列出特定批次組態的所有執行中執行個體。 | 非同步/批次 | [JWT](/help/forms/jwt-api-authentication.md) |
 | [/adobe/forms/doc/v1/generatePDFOutput](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Communications-Services/paths/~1adobe~1forms~1doc~1v1~1generatePDFOutput/post) | 根據範本和資料同步產生PDF輸出。 | 同步 | [JWT](/help/forms/jwt-api-authentication.md) |
-| [/adobe/forms/doc/v1/generatePrintedOutput](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Batch-Execution/operation/GetAllRunningInstancesForBatch) | 產生可供列印的輸出格式(例如PCL、PostScript)。 | 同步 | [JWT](/help/forms/jwt-api-authentication.md) |
+| [/adobe/forms/doc/v1/generatePrintedOutput](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Batch-Execution/operation/GetAllRunningInstancesForBatch) | 產生可供列印的輸出格式（例如PCL、PostScript）。 | 同步 | [JWT](/help/forms/jwt-api-authentication.md) |
 | [/adobe/forms/doc/v1/generate/afp](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/api/output-sync/#tag/Communications-Services/paths/~1adobe~1forms~1doc~1v1~1generate~1afp/post) | 為大量列印產生AFP輸出。 | 同步 | [JWT](/help/forms/jwt-api-authentication.md) |
 | [/adobe/document/generate/pdfform](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFForm) | 轉譯含有合併資料的PDF表單(XFA/XDP)。 | 同步 | [OAuth](/help/forms/oauth-api-authetication.md) |
 | [/adobe/document/generate/pdfform/jobs/{id}/status](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/#operation/renderPDFFormJobStatus) | 擷取PDF表單產生工作的狀態。 | 同步 | [OAuth](/help/forms/oauth-api-authetication.md) |

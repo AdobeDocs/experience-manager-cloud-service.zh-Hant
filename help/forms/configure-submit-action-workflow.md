@@ -6,7 +6,7 @@ feature: Adaptive Forms, Core Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: b7788e3d-acd8-4867-b232-f9767cf6b2f5
 role: User, Developer
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1440'
 ht-degree: 64%
@@ -40,7 +40,8 @@ Before using the **[!UICONTROL Invoke an AEM Workflow]** Submit Action configure
 
 * **[!UICONTROL Processing Server User Name]**: Workflow user's username
 
-* **[!UICONTROL Processing Server Password]**: Workflow user's password -->
+* **[!UICONTROL Processing Server Password]**: Workflow user's password
+-->
 
 ## 將AEM工作流程與最適化Forms整合 {#steps-to-integrate-workflow-with-af}
 
@@ -106,7 +107,7 @@ Before using the **[!UICONTROL Invoke an AEM Workflow]** Submit Action configure
 若要針對在Universal Editor中編寫的最適化表單設定具有[AEM工作流程](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=zh-Hant#extending-aem)的自動化程式，請執行下列步驟：
 
 1. 開啟最適化表單進行編輯。
-1. 按一下編輯器上的&#x200B;**編輯表單屬性**&#x200B;擴充功能。
+1. 按一下編輯器上的&#x200B;**編輯表單屬性**擴充功能。
 **表單屬性**&#x200B;對話方塊就會顯示。
 
    >[!NOTE]
@@ -143,7 +144,8 @@ Before using the **[!UICONTROL Invoke an AEM Workflow]** Submit Action configure
 ## Best Practices
 
 * When configuring the **[!UICONTROL Invoke an AEM Workflow]** Submit Action, select the appropriate workflow model that aligns with the desired business process.
-* In case, the workflow involves external data storage, be sure to configure the workflow accordingly. It is recommended to set up variables appropriately and in accordance with any external storage requirements. -->
+* In case, the workflow involves external data storage, be sure to configure the workflow accordingly. It is recommended to set up variables appropriately and in accordance with any external storage requirements.
+-->
 
 ## 相關文章
 

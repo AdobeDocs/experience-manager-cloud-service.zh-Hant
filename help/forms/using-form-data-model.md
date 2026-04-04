@@ -6,7 +6,7 @@ role: Admin, User
 level: Beginner, Intermediate
 badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1423'
 ht-degree: 5%
@@ -17,7 +17,7 @@ ht-degree: 5%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/using-form-data-model.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/using-form-data-model.html) |
 | AEM as a Cloud Service  | 本文章 |
 
 
@@ -83,7 +83,8 @@ ht-degree: 5%
 
    您可以將資料模型物件拖放至最適化表單或片段來新增表單欄位。 新增的表單欄位會保留中繼資料屬性，並與資料模型物件屬性繫結。 繫結可確保欄位值在表單提交時更新到對應的資料來源中，並在表單轉譯時預先填充。
 
-<!-- ## Create interactive communications {#create-ic}
+<!--
+ ## Create interactive communications {#create-ic}
 
 You can create an interactive communication based on a Form Data Model that you can use to prefill interactive communication with data from configured data sources. In addition, the building blocks of an interactive communication, such as text, list, and condition document fragments can be based on a form data model.
 
@@ -101,13 +102,15 @@ For more information, see:
 
 [Conditions in Interactive Communications](conditions-interactive-communications.md)
 
-[List fragments](lists.md) -->
+[List fragments](lists.md)
+-->
 
 ## 使用範例資料預覽 {#preview-ic}
 
 表單資料模型編輯器可讓您為表單資料模型(FDM)中的資料模型物件產生和編輯範例資料。 您可以使用此資料來預覽和測試<!--interactive communications and-->最適化Forms。 您必須先產生範例資料再進行預覽，如[使用表單資料模型](work-with-form-data-model.md#sample)中所述。
 
-<!--To preview an interactive communication with sample Form Data Model data:
+<!--
+To preview an interactive communication with sample Form Data Model data:
 
 1. On [!DNL  Experience Manager] author instance, navigate to **[!UICONTROL Forms > Forms & Documents]**.
 1. Select an interactive communication and select **[!UICONTROL Preview]** in the toolbar to select **[!UICONTROL Web Channel]**, **[!UICONTROL Print Channel]**, or **[!UICONTROL Both Channels]** to preview the interactive communication.
@@ -115,23 +118,26 @@ For more information, see:
 
 The interactive communication opens with prefilled sample data.
 
-![web-preview](assets/web-preview.png)-->
+![web-preview](assets/web-preview.png)
+-->
 
 若要預覽含有範例資料的最適化表單，請在作者模式中開啟最適化表單，然後選取&#x200B;**[!UICONTROL 預覽]**。
 
 ## 使用表單資料模型服務預填 {#prefill}
 
-[!DNL Experience Manager Forms]提供現成可用的表單資料模型預填服務，您可針對以表單資料模型(FDM)為基礎的最適化Forms <!--and interactive communications-->啟用此服務。 預填服務會查詢最適化表單<!--and interactive communication-->中資料模型物件的資料來源，並在呈現表單或通訊時相應預填資料。
+[!DNL Experience Manager Forms]提供現成可用的表單資料模型預填服務，您可針對以表單資料模型(FDM)為基礎的最適化Forms <!--and interactive communications-->啟用此服務。 預填服務會查詢最適化表單中資料模型物件的資料來源，並在呈現表單或通訊時據以預填資料。
 
 若要啟用最適化表單的表單資料模型預填服務，請開啟「最適化表單容器」屬性，然後從「基本」摺疊式功能表的&#x200B;**[!UICONTROL 預填服務]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL 表單資料模型預填服務]**。 然後，儲存屬性。
 
 ![預填服務](assets/prefill-service.png)
 
-<!--To configure Form Data Model prefill service in an interactive communication, you can select Form Data Model Prefill Service in the Prefill Service drop-down while creating it or later by modifying the properties.
+<!--
+To configure Form Data Model prefill service in an interactive communication, you can select Form Data Model Prefill Service in the Prefill Service drop-down while creating it or later by modifying the properties.
 
 ![edit-ic-props](assets/edit-ic-props.png)
 
-Edit Properties dialog for an interactive communication-->
+Edit Properties dialog for an interactive communication
+-->
 
 ## 將提交的最適化表單資料寫入資料來源 {#write-af}
 

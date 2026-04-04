@@ -7,7 +7,7 @@ hidefromtoc: true
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: c4f838bc-a001-48e7-afaa-c2ff9034f5d4
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '1054'
 ht-degree: 5%
@@ -75,7 +75,7 @@ Forms Experience Builder是AI支援的表單建立工具，可讓您使用對話
 
 將現有檔案轉換為互動式數位表格。
 
-使用此選項之前，請先上傳您的PDF檔案或表單影像。 PDF可以是AcroForm或XFA型PDF表單。 對於[其他型別的PDF forms](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents)，請使用Adobe Acrobat中的[準備表單](https://helpx.adobe.com/in/acrobat/using/creating-distributing-pdf-forms.html)選項，將它們轉換為AcroForm
+使用此選項之前，請先上傳您的PDF檔案或表單影像。 PDF可以是AcroForm或XFA型PDF表單。 對於[其他型別的PDF forms](https://experienceleague.adobe.com/en/docs/experience-manager-learn/forms/document-services/pdf-forms-and-documents)，請使用Adobe Acrobat中的[準備表單](https://helpx.adobe.com/in/acrobat/using/creating-distributing-pdf-forms.html)選項，將它們轉換為AcroForm
 
 **使用時機：**
 
@@ -133,7 +133,7 @@ Forms Experience Builder是AI支援的表單建立工具，可讓您使用對話
     
      — 含選項的inquiryType：「一般問題」、「支援要求」、「銷售查詢」、「合作關係」
     
-     — 含選項的緊急等級(低、Medium、高)
+     — 含選項的緊急等級（低、Medium、高）
 
 
 ![已在Forms Experience Builder中使用自然語言提示新增下拉式清單元件](/help/forms/assets/forms-experience-builder-contact-us-form-add-dropdown.png)
@@ -144,7 +144,7 @@ Forms Experience Builder是AI支援的表單建立工具，可讓您使用對話
 新增下列規則來建立智慧型內容感知行為：
 
     隱藏表單載入上的@urgencyLevel下拉式清單
-    只有當@inquiryType等於「支援要求」時才顯示@urgencyLevel下拉式清單(低、Medium、高)
+    只有當@inquiryType等於「支援要求」時才顯示@urgencyLevel下拉式清單（低、Medium、高）
 
 以下是兩個獨立的規則：一個會在表單載入時隱藏緊急程度下拉式清單，另一個則僅在查詢型別為「支援要求」時顯示。 您需要使用單獨的提示來建立每個規則 — 一次只能建立一個規則。
 

@@ -5,7 +5,7 @@ role: Admin, Developer, User
 feature: Adaptive Forms
 badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '213'
 ht-degree: 22%
@@ -16,10 +16,10 @@ ht-degree: 22%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/forms-groups-privileges-tasks.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/forms-groups-privileges-tasks.html) |
 | AEM as a Cloud Service  | 本文章 |
 
-您可以[建立群組](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=zh-Hant#accessing)，並將原則和[使用者](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=zh-Hant#accessing)指派給群組。 這些原則可控制屬於群組之使用者的許可權。
+您可以[建立群組](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing)，並將原則和[使用者](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing)指派給群組。 這些原則可控制屬於群組之使用者的許可權。
 
 設定[!DNL AEM Forms] as a Cloud Service後，下表列出的群組（例如[!DNL forms-users]和forms-power-user）便會自動可供指派：
 
@@ -39,7 +39,8 @@ ht-degree: 22%
      <li>建立主題</li> 
     </ul> </td> 
   </tr>
-  <!-- <tr>
+  <!--
+   <tr>
    <td>[!DNL forms-power-user]</td> 
    <td>
     <ul> 
@@ -58,7 +59,8 @@ ht-degree: 22%
      <li>Review submissions</li> 
      <li>Approve or reject submissions</li> 
     </ul> </td> 
-  </tr> -->
+  </tr>
+  -->
   <tr>
    <td>[!DNL template-authors] <sup>[2]</sup></td> 
    <td>
@@ -73,28 +75,35 @@ ht-degree: 22%
      <li>建立和修改表單資料模型</li> 
     </ul> </td> 
   </tr>
-  <!-- <tr>
+  <!--
+   <tr>
    <td>cm-agent-users</td> 
    <td>
     <ul> 
      <li>Access Correspondence Management letters or interactive communications using Agent UI</li> 
     </ul> </td> 
-  </tr> --> 
-  <!-- <tr>
+  </tr>
+  -->
+  <!--
+   <tr>
    <td><p>workflow-editors</p> </td> 
    <td>
-    <ul> -->
+    <ul>
+    -->
     <!-- <li>Create an inbox application</li>  -->
-    <!-- <li>Create a workflow model</li> 
+    <!--
+     <li>Create a workflow model</li> 
     </ul> </td> 
   </tr>
   <tr>
    <td>[!DNL workflow-users]</td> 
    <td>
     <ul> 
-     <li>Use AEM inbox applications<br /> -->
+     <li>Use AEM inbox applications<br />
+     -->
      <!-- 
-     <strong>Note: </strong>You must have cm-agent-users and [!DNL workflow-users] group assignments to access Interactive Communications Agent UI in AEM inbox.</li>  -->
+     <strong>Note: </strong>You must have cm-agent-users and [!DNL workflow-users] group assignments to access Interactive Communications Agent UI in AEM inbox.</li>
+     -->
     </ul> </td> 
   </tr>
   <tr>

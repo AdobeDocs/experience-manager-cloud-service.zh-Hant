@@ -1,18 +1,18 @@
 ---
-title: Screens影片的縮圖支援as a Cloud Service
-description: 本頁說明如何在Screens中新增影片的縮圖支援as a Cloud Service。
+title: Screens as a Cloud Service影片的縮圖支援
+description: 本頁說明如何在Screens as a Cloud Service中新增影片的縮圖支援。
 index: true
 exl-id: 7b15d7cc-f089-4008-9039-5f48343a0f20
 feature: Developing Screens
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 1%
 
 ---
 
-# 影片的縮圖支援 {#thumbnail-support-videos}
+# 支援影片縮圖 {#thumbnail-support-videos}
 
 ## 簡介 {#introduction}
 
@@ -32,15 +32,15 @@ ht-degree: 1%
 ## 在視訊中使用縮圖 {#using-thumbnails}
 
 >[!IMPORTANT]
->**必備條件**
->在瞭解如何使用影片的縮圖之前，請務必先瞭解如何在Screensas a Cloud Service專案中建立頻道的影片轉譯。 請參閱[在Screens as a Cloud Service](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md)中建立視訊轉譯。
+>**先決條件**
+>在瞭解如何使用影片的縮圖之前，請務必瞭解如何在Screens as a Cloud Service專案中建立頻道的影片轉譯。 請參閱[在Screens as a Cloud Service中建立視訊轉譯](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md)。
 
 請依照下列步驟，在視訊中使用縮圖：
 
 1. 導覽至現有的Screens頻道或建立頻道。
 
    >[!NOTE]
-   >若要瞭解如何建立管道並將內容新增至管道，請參閱[在Screens中建立和管理管道as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html?lang=zh-Hant)。
+   >若要瞭解如何建立管道並將內容新增至管道，請參閱[在Screens as a Cloud Service中建立和管理管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/create-content/creating-channels-screens-cloud.html)。
 
 1. 選取頻道。 在動作列上，按一下&#x200B;**編輯**&#x200B;以開啟編輯器。
 

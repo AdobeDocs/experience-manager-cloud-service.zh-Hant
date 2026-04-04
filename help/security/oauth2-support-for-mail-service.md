@@ -4,7 +4,7 @@ description: Adobe Experience Manager as a Cloud Service 對郵件服務的 OAut
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
 feature: Security
 role: Admin
-source-git-commit: 8ceca10cc581c4b8e577ddd0a964a707c226c7fc
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '668'
 ht-degree: 100%
@@ -30,8 +30,10 @@ AEM as a Cloud Service 為其整合的郵件服務提供 OAuth2 支援，以允�
 
 1. 根據您的要求填寫資訊，然後按一下「**註冊**」。
 1. 前往已建立的應用程式，然後選取「**API 權限**」。
-<!-- Alexandru: removing as a result of CQDOC-20609 
-1. Click **Add Permission** > **Graph Permission** > **Delegated Permissions**. -->
+<!--
+ Alexandru: removing as a result of CQDOC-20609 
+1. Click **Add Permission** > **Graph Permission** > **Delegated Permissions**.
+-->
 1. 為您的應用程式選取以下權限，然後按一下「**新增權限**」：
 
    >[!NOTE]

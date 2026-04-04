@@ -5,7 +5,7 @@ badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1140'
 ht-degree: 1%
@@ -43,22 +43,24 @@ ht-degree: 1%
 * 正在造訪的網站的主機名稱，例如： `experienceleague.adobe.com`
 * 用來顯示頁面的廣泛使用者代理程式型別和作業系統，例如： `desktop:windows`或`mobile:ios`
 * 資料收集的時間，例如： `2021-06-26 06:00:02.596000 UTC (in order to preserve privacy, we round all minutes to the previous hour, so that only seconds and milliseconds are tracked)`
-* 正在瀏覽的頁面URL，例如： `https://experienceleague.adobe.com/docs?lang=zh-Hant`
+* 正在瀏覽的頁面URL，例如： `https://experienceleague.adobe.com/docs`
 * 反向連結URL （連結至目前頁面的頁面URL，如果使用者依循連結）
 * 隨機產生的頁面檢視識別碼，格式類似於： `2Ac6`
 * 取樣速率的加權或反向，例如： `100`。 這表示只記錄一百分之一的頁面檢視
 * 載入頁面順序中特定事件的檢查點或名稱。 或者，以訪客身分與其互動
 * 使用者與上述查核點互動的DOM元素來源或識別碼。 例如，它可能是影像
 * 使用者與上述查核點互動的外部頁面或資源的目標或連結。 例如：`https://blog.adobe.com/jp/publish/2022/06/29/media_162fb947c7219d0537cce36adf22315d64fb86e94.png`
-* [核心Web Vitals (CWV)](https://web.dev/articles/lcp)效能量度[最大內容繪製(LCP)](https://web.dev/articles/lcp)、[與下一個繪製(INP)的互動](https://web.dev/articles/inp)以及描述訪客體驗品質的[累積版面配置轉換(CLS)](https://web.dev/articles/cls)。
+* 描述訪客體驗品質的[Core Web Vitals (CWV)](https://web.dev/articles/lcp)效能量度[最大內容繪製(LCP)](https://web.dev/articles/lcp)、[與下一個繪製(INP)的互動](https://web.dev/articles/inp)和[累計版面配置轉換(CLS)](https://web.dev/articles/cls)。
 
 ## 作業遙測如何為客戶運作 {#how-operational-telemetry-works-for-a-customer}
 
 作業遙測會自動監視使用者端流量。 身為Adobe客戶，您不需要執行任何其他步驟，因為此服務已順暢整合至您現有的設定。 運作遙測服務已正式推出，您將自動受益於這項新功能。 操作遙測服務目前未公開任何面對客戶的量度以進行監視。 我們正在努力儘快為您提供此功能。
 
-<!-- Alexandru: hiding temporarily, until we figure out where this needs to be linked to 
+<!--
+ Alexandru: hiding temporarily, until we figure out where this needs to be linked to 
 
-If you wish to leverage more insights with this new feature to optimize your digital experiences effortlessly, please see here (link to Row 99). -->
+If you wish to leverage more insights with this new feature to optimize your digital experiences effortlessly, please see here (link to Row 99).
+-->
 
 ## Adobe如何使用作業遙測 {#how-operational-telemetry-data-is-being-used}
 
@@ -82,7 +84,8 @@ Here are key considerations for customers to keep in mind when interpreting thei
 
 ## 常見問題 {#faq}
 
-<!-- REMOVED THIS FAQ AS PER EMAIL REQUEST FROM SHWETA DUA, SEPTEMBER 4, 2024 TO THE DL-AEM-DOCS GROUP 
+<!--
+ REMOVED THIS FAQ AS PER EMAIL REQUEST FROM SHWETA DUA, SEPTEMBER 4, 2024 TO THE DL-AEM-DOCS GROUP 
 1. **Can customers integrate the Operational Telemetry service scripts with third-party systems like Dynatrace?**
 
    Yes.

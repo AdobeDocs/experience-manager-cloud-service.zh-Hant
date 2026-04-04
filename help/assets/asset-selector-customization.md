@@ -4,7 +4,7 @@ description: 使用函式來自訂應用程式內的資產選擇器。
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1252'
 ht-degree: 23%
@@ -183,7 +183,7 @@ interface SelectedAsset {
 | *存放庫:createDate* | 字串 | 建立資產的日期與時間。 |
 | *存放庫:modifiedBy* | 字串 | 上次修改資產的使用者或系統。 |
 | *存放庫:modifyDate* | 字串 | 上次修改資產的日期和時間。 |
-| *dc:format* | 字串 | 資產的格式，例如檔案型別(例如JPEG、PNG等)。 |
+| *dc:format* | 字串 | 資產的格式，例如檔案型別（例如JPEG、PNG等）。 |
 | *tiff:imageWidth* | 數字 | 資產的寬度。 |
 | *tiff:imageLength* | 數字 | 資產的高度。 |
 | *computedMetadata* | `Record<string, any>` | 代表貯體的一個物件，可存放各種類型之所有資產中繼資料 (存放庫、應用程式或嵌入式中繼資料)。 |
@@ -236,10 +236,12 @@ interface SelectedAsset {
 
 資產選擇器可讓您控制已過期資產的使用方式。 您可以使用&#x200B;**即將到期**&#x200B;徽章來自訂已到期的資產，這可以協助您提前知道將在目前日期起30天內到期的資產。 此外，您也可以視需求自訂。 您也可以允許在畫布上選取過期的資產，反之亦然。 您可以使用某些程式碼片段，以各種方式自訂過期的資產：
 
-<!--{
+<!--
+{
     getExpiryStatus: function, // to control Expired/Expiring soon badges of the asset
     allowSelectionAndDrag: boolean, // set true to allow the selection of expired assets on canvas, set false, otherwise.
-}-->
+}
+-->
 
 ```
 expiryOptions: {
@@ -260,7 +262,8 @@ expiryOptions:{
 <!--
 Additionally, To do this, navigate to **[!UICONTROL Disable default expiry behavior]** under the [!UICONTROL Controls] tab and set the boolean value to `true` or `false` as per the requirement. If `true` is selected, you can see the select box over the expired asset, otherwise it remains unselected. You can hover to the info icon of an asset to know the details of an expired asset. 
 
-![Disable default expiry behavior](assets/disable-default-expiry-behavior.png)-->
+![Disable default expiry behavior](assets/disable-default-expiry-behavior.png)
+-->
 
 ### 設定過期資產的持續時間 {#set-duration-of-expired-asset}
 

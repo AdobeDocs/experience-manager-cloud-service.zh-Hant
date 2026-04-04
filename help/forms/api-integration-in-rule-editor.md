@@ -7,7 +7,7 @@ level: Beginner, Intermediate
 keywords: 在規則編輯器中整合 API、叫用服務增強功能
 badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: fc51f86d-e672-4513-b473-6700757a0c3d
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: af79899657fc8f1d7a8b8037889af5c2dbb2cdcf
 workflow-type: tm+mt
 source-wordcount: '1040'
 ht-degree: 4%
@@ -20,7 +20,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
-> 視覺化規則編輯器支援Adaptive Forms中的API整合(根據核心元件和在Universal Editor[中編寫的](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)Edge Delivery Services Forms)。
+> 視覺化規則編輯器支援Adaptive Forms中的API整合（根據核心元件和在Universal Editor[中編寫的](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)Edge Delivery Services Forms）。
 
 最適化Forms中的視覺化規則編輯器支援直接API整合，而不需要建立表單資料模型。 您可以輸入API URL （JSON格式）或透過cURL命令匯入設定，以連線至API端點。 整合後，**Invoke Service**&#x200B;動作可用於呼叫API。
 
@@ -33,7 +33,7 @@ ht-degree: 4%
 | 層面 | API與表單資料模型(FDM)整合 | 直接API整合（透過&#x200B;*建立API整合*） |
 |--------------------------------|---------------------------------------------------------------------|-----------------------------------------------------------|
 | **用途** | 跨多個表單的集中式、可重複使用的API整合 | 快速、表單特定的API整合 |
-| **安裝位置** | 在表單資料模型編輯器(AEM主控台)中建立和編輯 | 直接在自適應表單規則編輯器中建立和編輯 |
+| **安裝位置** | 在表單資料模型編輯器（AEM主控台）中建立和編輯 | 直接在自適應表單規則編輯器中建立和編輯 |
 | **複雜度** | 更高的設定工作量（需要對應和設定） | 簡單輕量 |
 | **最適合** | 具有多種表單的企業或大型使用案例 | 小型表單、原型或一次性API呼叫 |
 
@@ -90,7 +90,7 @@ ht-degree: 4%
 6. 目的地國家/地區（下拉式清單）
 7. 預定抵達日期（日期）
 
-表單不會維護靜態的國家清單，而是使用&#x200B;**getcountryname API**&#x200B;動態擷取國家/地區資訊(大陸、資本、ISO Alpha代碼等)：
+表單不會維護靜態的國家清單，而是使用&#x200B;**getcountryname API**&#x200B;動態擷取國家/地區資訊（大陸、資本、ISO Alpha代碼等）：
 
 `https://secure.geonames.org/countryInfoJSON?username=aemforms`
 
@@ -107,7 +107,7 @@ ht-degree: 4%
 ![API REST端點設定](/help/forms/assets/api-restendpoint.png)
 
 * **API端點URL** → `https://secure.geonames.org/countryInfoJSON?username=aemforms`
-* GET→的&#x200B;**HTTP方法**
+* →的&#x200B;**HTTP方法**
 * **內容型別** → JSON
 * **輸入** → `username`已傳遞為查詢引數(`aemforms`)。
 * **輸出** →回應欄位（例如`continent`、`capital`、`countrynames`、`isoAlpha3`和`languages`）已對應至表單欄位。
@@ -124,7 +124,7 @@ ht-degree: 4%
 
 同樣地，**Passport Issuance**&#x200B;和&#x200B;**目的地國家/地區**&#x200B;使用相同的API呼叫，確保所有三個欄位中的資料一致且為最新狀態。
 
->
+>[!NOTE]
 >
 > 您可以叫用API並使用自訂函式[，從JSON陣列](/help/forms/invoke-service-enhancements-rule-editor.md#retrieve-property-values-from-a-json-array)擷取屬性值。 此方法可讓您擷取值，並將其直接繫結至表單欄位。
 

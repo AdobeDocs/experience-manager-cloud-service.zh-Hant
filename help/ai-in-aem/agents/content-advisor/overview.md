@@ -2,9 +2,9 @@
 title: 內容建議程式代理程式
 description: 瞭解Content Advisor Agent如何吸收內容探索和最佳化背後的繁重營運工作，消除內容演化的摩擦因素，協助團隊更快更自信地完成變更，迎接今天的AI時代。
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: 907c9558-0b59-453c-b710-40b095b19cf5
-source-git-commit: fc304f3e63c38006bf678abc797ccb17dcd8db39
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 1%

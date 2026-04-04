@@ -8,7 +8,7 @@ hidefromtoc: true
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: f43c2586-9075-47dc-aa45-5ed2d2979b6d
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '1066'
 ht-degree: 2%
@@ -112,7 +112,6 @@ AI會自動設定包含步驟間導覽的表單結構。
     將美國電話號碼格式驗證新增至@phoneNumber
     設定年齡驗證：@dateOfBirth
 必須是18歲或以上
-
 ## 進階功能
 
 ### 什麼是LLM增強型智慧型欄位？
@@ -140,7 +139,7 @@ LLM增強型智慧型欄位是智慧型表單欄位，已預先填入AI知識庫
 - 使用自訂範本提交電子郵件
 - REST API與外部服務整合
 - 雲端儲存整合(Azure、AWS、Google Cloud)
-- 工作流程整合(Power Automate、AEM工作流程)
+- 工作流程整合（Power Automate、AEM工作流程）
 
 ## 疑難排解
 

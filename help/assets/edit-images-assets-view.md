@@ -5,7 +5,7 @@ role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
 feature: Best Practices, Interactive Images, Smart Crop, Smart Imaging
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1162'
 ht-degree: 74%
@@ -27,12 +27,13 @@ Assets檢視UI可啟用由Adobe Express提供支援的基本影像編輯功能�
 ## 編輯影像 {#edit-image}
 
 移至Assets檢視UI，使用連結 — [Assets檢視](https://experience.adobe.com/#/assets)並選取正確的存放庫。 若要獲得存取權，請聯絡您組織的管理員。
-如需其他參考資訊，請參閱 — [開始使用Adobe Experience Manager Assets檢視](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view)、[瞭解Assets檢視使用者介面](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation)和[Assets檢視使用案例](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases)。
+如需其他參考資訊，請參閱 — [開始使用Adobe Experience Manager Assets檢視](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view)、[瞭解Assets檢視使用者介面](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation)和[Assets檢視使用案例](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases)。
 <!--
 >[!CONTEXTUALHELP]
 >id="assets_express_integration"
 >title="Adobe Express Integration"
->abstract="Easy and intuitive image-editing tools powered by Adobe Express available directly within AEM Assets to increase content reuse and accelerate content velocity."-->
+>abstract="Easy and intuitive image-editing tools powered by Adobe Express available directly within AEM Assets to increase content reuse and accelerate content velocity."
+-->
 
 ### 使用Adobe Express在Assets檢視上編輯影像 {#edit-image-on-assets-view-using-adobe-express}
 
@@ -48,7 +49,7 @@ Assets檢視UI可啟用由Adobe Express提供支援的基本影像編輯功能�
 1. 按一下「**[!UICONTROL 套用]**」以套用您的變更。
    ![使用 Adobe Express 進行影像編輯](assets/adobe-express-resize-image.png)
 
-   您已編輯的影像可供下載。您可以將編輯後的資產另存為同一資產的新版本，也可以將其另存為新資產。
+   您已編輯的影像可供下載。 您可以將編輯後的資產另存為同一資產的新版本，也可以將其另存為新資產。
    ![使用 Adobe Express 儲存影像](assets/adobe-express-resize-save.png)
 
 #### 移除背景 {#remove-background-using-express}
@@ -69,7 +70,7 @@ Assets檢視UI可啟用由Adobe Express提供支援的基本影像編輯功能�
 2. 拖曳影像角落上的控點，建立所要的裁切大小。
 3. 按一下「**[!UICONTROL 套用]**」。
    ![使用 Adobe Express 儲存影像](assets/adobe-express-crop-image.png)
-裁切後的影像可供下載。您可以將編輯後的資產另存為同一資產的新版本，也可以將其另存為新資產。
+裁切後的影像可供下載。 您可以將編輯後的資產另存為同一資產的新版本，也可以將其另存為新資產。
 
 #### 將 JPEG 轉換為 PNG {#convert-image-types-using-express}
 
@@ -155,7 +156,7 @@ The brush samples the retouched area and makes the repaired pixels blend seamles
 
 <!-- 
 TBD: See if we should give backlinks to PS docs for these concepts.
-For more information about how Spot Healing works in Photoshop, see [retouching and repairing photos](https://helpx.adobe.com/tw/photoshop/using/retouching-repairing-images.html). 
+For more information about how Spot Healing works in Photoshop, see [retouching and repairing photos](https://helpx.adobe.com/photoshop/using/retouching-repairing-images.html). 
 -->
 <!-- 
 ### Crop and straighten images {#crop-straighten-images-using-photoshop-express}
@@ -198,7 +199,7 @@ TBD: Insert a video of the available social media options.
 
 * 若要提供文件意見回饋，請使用右側邊欄提供的[!UICONTROL 編輯此頁面]![來編輯頁面](assets/do-not-localize/edit-page.png)或[!UICONTROL 記錄問題]![來建立 GitHub 問題](assets/do-not-localize/github-issue.png)。
 
-* 聯絡[客戶服務](https://experienceleague.adobe.com/zh-hant?support-solution=General#support)
+* 聯絡[客戶服務](https://experienceleague.adobe.com/?support-solution=General#support)
 
 >[!MORELIKETHIS]
 >

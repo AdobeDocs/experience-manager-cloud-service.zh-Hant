@@ -5,7 +5,7 @@ hidefromtoc: true
 exl-id: 6561870c-cbfe-40ef-9efc-ea75c88c4ed7
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1382'
 ht-degree: 0%
@@ -18,10 +18,12 @@ ht-degree: 0%
 
 伺服器對伺服器的流程如下所述，以及簡化的開發流程。 AEM as a Cloud Service [Developer Console](development-guidelines.md#crxde-lite-and-developer-console)是用來產生驗證程式所需的權杖。
 
-<!-- ERROR: Not Found (HTTP error 404)
+<!--
+ ERROR: Not Found (HTTP error 404)
 >[!NOTE]
 >
->In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=zh-Hant#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html). -->
+>In addition to this documentation, you can also consult the tutorials on [Token-based authentication for AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html#authentication) and [Getting a Login Token for Integrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html).
+-->
 
 ## 伺服器對伺服器流量 {#the-server-to-server-flow}
 
@@ -67,7 +69,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->IMS組織管理員(通常是透過Cloud Manager布建環境的使用者)也應是AEM Author上的AEM使用者或AEM管理員產品設定檔的成員，可存取Developer Console。 接著，他們必須按一下&#x200B;**產生服務認證**&#x200B;按鈕，才能產生認證，且稍後再由具有AEM as a Cloud Service環境管理員許可權的使用者擷取。 如果IMS組織管理員尚未完成此任務，則會出現一則訊息，通知他們需要IMS組織管理員角色。
+>IMS組織管理員（通常是透過Cloud Manager布建環境的使用者）也應是AEM Author上的AEM使用者或AEM管理員產品設定檔的成員，可存取Developer Console。 接著，他們必須按一下&#x200B;**產生服務認證**&#x200B;按鈕，才能產生認證，且稍後再由具有AEM as a Cloud Service環境管理員許可權的使用者擷取。 如果IMS組織管理員尚未完成此任務，則會出現一則訊息，通知他們需要IMS組織管理員角色。
 
 ### 在非AEM伺服器上安裝AEM服務認證 {#install-the-aem-service-credentials-on-a-non-aem-server}
 

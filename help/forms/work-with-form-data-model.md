@@ -6,7 +6,7 @@ role: Admin, User
 level: Beginner, Intermediate
 badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: c17c0443-d4dc-41f8-9315-6cc49e6c471f
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '4152'
 ht-degree: 1%
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/work-with-form-data-model.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/work-with-form-data-model.html) |
 | AEM as a Cloud Service  | 本文章 |
 
 
@@ -110,7 +110,7 @@ ht-degree: 1%
 
 1. 選取&#x200B;**[!UICONTROL 完成]**&#x200B;以儲存子屬性，並選取&#x200B;**[!UICONTROL 儲存]**&#x200B;以儲存表單資料模型(FDM)。 子屬性現在已新增至資料模型物件。
 
-建立資料模型物件和屬性後，您可以繼續根據表單資料模型(FDM)建立最適化Forms <!--and interactive communications-->。 之後，當您有可用的資料來源且已設定資料來源時，可以將表單資料模型(FDM)與資料來源繫結。 繫結會自動在關聯的Adaptive Forms <!--and interactive communications-->中更新。 如需使用表單資料模型(FDM)建立最適化Forms <!--and interactive communications-->的詳細資訊，請參閱[使用表單資料模型](using-form-data-model.md)。
+建立資料模型物件和屬性後，您可以繼續根據表單資料模型(FDM)建立最適化Forms <!--and interactive communications-->。 之後，當您有可用的資料來源且已設定資料來源時，可以將表單資料模型(FDM)與資料來源繫結。 繫結會在關聯的調適型Forms中自動更新。 如需使用表單資料模型(FDM)建立最適化Forms的詳細資訊，請參閱[使用表單資料模型](using-form-data-model.md)。
 
 ### 繫結資料模型物件和屬性 {#bind-data-model-objects-and-properties}
 
@@ -197,7 +197,7 @@ ht-degree: 1%
 
 1. 從&#x200B;**[!UICONTROL 繫結至]**&#x200B;下拉式功能表中選取&#x200B;**[!UICONTROL 要求屬性]**，並在&#x200B;**[!UICONTROL 繫結值]**&#x200B;欄位中輸入屬性名稱。
 
-1. 為head.jsp建立[覆蓋](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/overlays.html?lang=zh-Hant#developing)。 若要建立覆蓋，請開啟CRX DE並將`https://<server-name>:<port number>/crx/de/index.jsp#/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`檔案複製到`https://<server-name>:<port number>/crx/de/index.jsp#/apps/fd/af/components/page2/afStaticTemplatePage/head.jsp`
+1. 為head.jsp建立[覆蓋](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/overlays.html?lang=en#developing)。 若要建立覆蓋，請開啟CRX DE並將`https://<server-name>:<port number>/crx/de/index.jsp#/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`檔案複製到`https://<server-name>:<port number>/crx/de/index.jsp#/apps/fd/af/components/page2/afStaticTemplatePage/head.jsp`
 
    >[!NOTE]
    >

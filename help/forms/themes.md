@@ -5,7 +5,7 @@ feature: Adaptive Forms, Foundation Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
 role: User, Developer, Admin
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '5564'
 ht-degree: 1%
@@ -16,14 +16,14 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-> Adobe建議針對[建立新的Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant)或[將Adaptive Forms新增至AEM Sites頁面](/help/forms/creating-adaptive-form-core-components.md)，使用現代且可擴充的資料擷取[核心元件](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文說明使用基礎元件製作最適化Forms的舊方法。
+> Adobe建議針對[建立新的Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)或[將Adaptive Forms新增至AEM Sites頁面](/help/forms/creating-adaptive-form-core-components.md)，使用現代且可擴充的資料擷取[核心元件](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文說明使用基礎元件製作最適化Forms的舊方法。
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html) |
 | AEM as a Cloud Service  | 本文章 |
 
-您可以建立並套用主題，使最適化表單<!-- or an interactive communication-->風格化。 主題包含元件和面板的樣式詳細資訊。 樣式包括背景顏色、狀態顏色、透明度、對齊方式和大小等屬性。套用主題時，指定的樣式會反映在對應的元件上。在不參考最適化表單<!-- or interactive communication -->的情況下獨立管理主題。
+您可以建立並套用主題，使最適化表單<!-- or an interactive communication-->風格化。 主題包含元件和面板的樣式詳細資訊。 樣式包括背景顏色、狀態顏色、透明度、對齊方式和大小等屬性。套用主題時，指定的樣式會反映在對應的元件上。 主題可獨立管理，不需參考最適化表單。
 
 您可以從[!DNL AEM Forms]軟體發佈[入口網站下載並安裝](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)參考內容封裝，以將參考主題和範本匯入您的環境。
 
@@ -58,7 +58,7 @@ ht-degree: 1%
 
 * 不提供使用者端程式庫選項。 您無法指定使用者端程式庫類別和路徑。
 
-* 沒有/apps位置的寫入和更新許可權(Forms-user群組沒有/apps位置的寫入和更新許可權)。
+* 沒有/apps位置的寫入和更新許可權（Forms-user群組沒有/apps位置的寫入和更新許可權）。
 
 * 將以[!DNL Experience Manager Forms] 6.5或舊版建立的主題上傳到Cloud Service執行個體之前，請確定使用者端資料庫位置已設為`etc/clientlibs/fd/themes`。 如果`etc`資料夾中不存在使用者端資料庫，請手動將位置更新為`etc/clientlibs/fd/themes`。  您可以在[!DNL Experience Manager Forms] 6.5或舊版執行個體上進行變更。 設定使用者端資料庫的位置後，管理員可以將主題上傳到Cloud Service執行個體，或使用「內容轉移工具」將主題從6.5版或舊版執行個體移轉至Cloud Service執行個體。
 
@@ -86,8 +86,8 @@ ht-degree: 1%
 
 1. 按一下&#x200B;**[!UICONTROL Adobe Experience Manager]**，按一下&#x200B;**[!UICONTROL Forms]**，然後按一下&#x200B;**[!UICONTROL 主題]**。
 
-1. 在[佈景主題]頁面中，按一下[建立&#x200B;**&#x200B; > [檔案上傳]**]。**&#x200B;**
-1. 在[檔案上傳]提示中，瀏覽並選取您電腦上的主題封裝，然後按一下[上傳]。**&#x200B;**
+1. 在[佈景主題]頁面中，按一下[建立&#x200B;** > [檔案上傳]**]。****
+1. 在[檔案上傳]提示中，瀏覽並選取您電腦上的主題封裝，然後按一下[上傳]。****
 上傳的主題可在主題頁面中使用。
 
 ## 主題的中繼資料 {#metadata-of-a-theme}
@@ -166,7 +166,8 @@ ht-degree: 1%
    <td>是</td>
    <td>附加至用於識別的主題的標籤，用於改善搜尋。</td>
   </tr>
-  <!-- <tr>
+  <!--
+   <tr>
    <td>11.</td>
    <td>References</td>
    <td>Links</td>
@@ -199,19 +200,21 @@ ht-degree: 1%
      <li>Default value - computed using theme location.</li>
      <li>When this value is changed, the category name is updated on the corresponding clientlib node. Updating Clientlib Category Name in the jsp files is not required because clientlib category name is used by reference.</li>
     </ul> </td>
-  </tr> -->
+  </tr>
+  -->
  </tbody>
 </table>
 
 ## 關於主題編輯器 {#about-the-theme-editor}
 
-主題編輯器是適合企業使用者和Web設計人員/開發人員的介面，提供輕鬆指定各種最適化表單<!-- and interactive communication -->元素樣式所需的功能。 當您建立佈景主題時，佈景主題會儲存為獨立的實體，如表單<!--  , interactive communications, letters, document fragments, and data dictionaries-->。
+主題編輯器是適合企業使用者和Web設計人員/開發人員的介面，提供輕鬆指定各種最適化表單<!-- and interactive communication -->元素樣式所需的功能。 當您建立主題時，它會儲存為單獨的實體，例如表單。
+<!--  , interactive communications, letters, document fragments, and data dictionaries -->
 
 主題編輯器可讓您自訂主題中樣式化元件的樣式。 您可以自訂表單<!-- or interactive communication -->在裝置上的外觀。
 
 主題編輯器分為兩個面板：
 
-* **畫布** — 顯示在右側。 它會顯示一個最適化表單<!--  or interactive communication -->的範例，其中所有樣式變更都會立即反映。 您也可以直接從畫布中選取物件，以查詢與物件相關聯的樣式，並編輯這些樣式。 上方的裝置解析度尺標可控制畫布。 從尺標選取解析度中斷點，會顯示個別解析度的範例表單<!--  or interactive communication -->預覽。 畫布的詳細討論如下[&#128279;](themes.md#using-canvas)。
+* **畫布** — 顯示在右側。 它會顯示一個最適化表單<!--  or interactive communication -->的範例，其中所有樣式變更都會立即反映。 您也可以直接從畫布中選取物件，以查詢與物件相關聯的樣式，並編輯這些樣式。 上方的裝置解析度尺標可控制畫布。 從尺標選取解析度中斷點，會顯示個別解析度的範例表單預覽。 畫布的詳細討論如下[](themes.md#using-canvas)。
 
 * **側欄***出現在左側。 它有下列專案：
 
@@ -282,7 +285,9 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->先使用表單<!-- or interactive communication-->建立主題，然後套用至不同的表單<!-- or interactive communications-->。 用於建立佈景主題的中斷點可能與套用佈景主題的<!-- or interactive communication -->形式不同。 CSS媒體查詢是以主題建立中所使用的表單<!-- or interactive communication -->為基礎，而不是以套用主題的表單<!-- or interactive communication -->為基礎。
+>主題會先使用表單建立，然後套用至不同的表單。 用於建立佈景主題的中斷點可能與套用佈景主題的表單不同。 CSS媒體查詢是以建立主題時所用的表單為基礎，而不是以套用主題的表單為基礎。
+
+<!-- ADD: or interactive communication above throughout? -->
 
 ### 選取物件時，側邊欄中的樣式屬性前後關聯變更 {#styling-properties-context-changes-in-sidebar-on-selecting-objects}
 
@@ -309,7 +314,7 @@ ht-degree: 1%
 當您提供樣式的自訂名稱時，該樣式會繫結至主題，且無法再用於其他主題。 若要刪除已儲存的樣式：
 
 1. 在「畫布」工具列上，按一下&#x200B;**[!UICONTROL 主題選項]** ![主題選項](assets/theme-options.png) > **[!UICONTROL 管理樣式]**。
-1. 在[管理樣式]對話方塊中，選取已儲存的樣式，按一下[刪除]。**&#x200B;**
+1. 在[管理樣式]對話方塊中，選取已儲存的樣式，按一下[刪除]。****
 
    ![刪除儲存的樣式](assets/manage-styles.png)
 
@@ -350,7 +355,7 @@ ht-degree: 1%
 
 ### 使用畫布 {#using-canvas}
 
-主題是使用現成可用的表單，或使用您選擇的表單<!-- or interactive communication -->來建立。 畫布顯示表單或<!-- interactive communication -->的預覽，用於使用主題中指定的自訂來建立主題。 表單上方的尺標是用來根據裝置的顯示大小決定版面。
+主題是使用現成可用的表單，或使用您選擇的表單<!-- or interactive communication -->來建立。 畫布會顯示表單的預覽，或用來使用主題中指定的自訂來建立主題。 表單上方的尺標是用來根據裝置的顯示大小決定版面。
 
 在「畫布」工具列中，您會看到：
 
@@ -457,7 +462,7 @@ ht-degree: 1%
 
 1. 選取&#x200B;**[!UICONTROL 數值方塊Widget]**。
 1. 側欄標題會變更為數值方塊Widget，並顯示自訂其外觀的選項。
-在側邊欄中使用&#x200B;**[!UICONTROL Dimension和位置]**&#x200B;選項來自訂元件的大小。 確定狀態為&#x200B;**[!UICONTROL 預設]**。
+在側邊欄中使用**[!UICONTROL Dimension和位置]**&#x200B;選項來自訂元件的大小。 確定狀態為&#x200B;**[!UICONTROL 預設]**。
 
 不要選取&#x200B;**[!UICONTROL 數值方塊Widget]**，請在元件工具列中選取&#x200B;**[!UICONTROL 欄位Widget]**，然後執行上述步驟。 當您選取&#x200B;**[!UICONTROL 欄位Widget]**&#x200B;選項的維度時，除了數值方塊之外，其他所有文字方塊的大小都相同。
 
@@ -488,7 +493,7 @@ ht-degree: 1%
 1. 使用側邊欄，針對選取的顯示大小，自訂主題中表單<!-- or interactive communication -->元件的樣式。
 1. 確保已儲存自訂。
 
-您可以為多個裝置設定表單<!-- or interactive communication -->元件的樣式。 桌上型電腦和行動裝置的表單<!-- and interactive communication -->元件可以有完全不同的樣式。
+您可以為多個裝置設定表單<!-- or interactive communication -->元件的樣式。 桌上型電腦和行動裝置的表單元件可能有完全不同的樣式。
 
 ### 在主題中使用Web Fonts {#using-web-fonts-in-a-theme}
 
@@ -497,7 +502,7 @@ ht-degree: 1%
 若要在Experience Manager中設定Adobe Fonts，請執行以下步驟：
 
 1. 在作者執行個體中，按一下![Adobe Experience Manager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 工具]** ![槌子](assets/hammer.png) > **[!UICONTROL 部署]** > **[!UICONTROL 雲端服務]**。
-1. 在&#x200B;**[!UICONTROL 雲端服務]**&#x200B;頁面上，瀏覽並開啟&#x200B;**[!UICONTROL Adobe Fonts]**&#x200B;選項。 開啟設定資料夾，然後按一下[建立]。**&#x200B;**
+1. 在&#x200B;**[!UICONTROL 雲端服務]**&#x200B;頁面上，瀏覽並開啟&#x200B;**[!UICONTROL Adobe Fonts]**&#x200B;選項。 開啟設定資料夾，然後按一下[建立]。****
 1. 在&#x200B;**[!UICONTROL 建立組態]**&#x200B;對話方塊中，指定組態的標題，然後按一下&#x200B;**[!UICONTROL 建立]**。
 
    系統會將您重新導向至設定頁面。
@@ -568,14 +573,16 @@ You can use the theme configuration service to add more fonts to the theme edito
 
 您也可以在建立最適化表單時為其定義主題。
 
-<!-- To apply a theme to an interactive communication:
+<!--
+ To apply a theme to an interactive communication:
 
 1. Open your interactive communication in edit mode. To open a interactive communication in edit mode, select a form and click **Open**.
 1. In the edit mode, select a component, then click ![field-level](assets/field-level.png) &gt;**Document Container**, and then click ![cmppr](assets/cmppr.png).
 
    You can edit properties of your form in the sidebar.
 
-1. In the sidebar, under **Basic**, select your theme from the **Theme** drop-down and click **Done** ![check-button](assets/check-button.png) -->
+1. In the sidebar, under **Basic**, select your theme from the **Theme** drop-down and click **Done** ![check-button](assets/check-button.png)
+-->
 
 ### 在執行階段變更表單主題 {#change-theme-of-a-form-at-runtime}
 
@@ -642,7 +649,8 @@ You can use the theme configuration service to add more fonts to the theme edito
 
 * 如果從其他主題新增資產，且移動或刪除了其他主題，您可能會遇到目前主題的問題。 建議您避免瀏覽和從其他主題新增資產。
 
-<!-- * **Using base clientlib, theme editor, and inline styling**
+<!--
+ * **Using base clientlib, theme editor, and inline styling**
 
     * **Base clientlib**:
 
@@ -654,7 +662,8 @@ You can use the theme configuration service to add more fonts to the theme edito
         1. In the Advanced tab, in the Clientlib Location field, browse, and select the client-library you want to use.
         1. Click **[!UICONTROL Save]**.
 
-      The styling you specify in client library is imported in the theme that uses it. For example, you specify styling for text box, numeric box, and switch in the client library. When you import your client library in the theme, styling for text box, numeric box, and switch is imported. You can then style other components using theme editor. -->
+      The styling you specify in client library is imported in the theme that uses it. For example, you specify styling for text box, numeric box, and switch in the client library. When you import your client library in the theme, styling for text box, numeric box, and switch is imported. You can then style other components using theme editor.
+      -->
     您也可以建立佈景主題、建立佈景主題復本，然後針對類似的使用案例修改複製佈景主題中提供的樣式。
     請參閱[使用佈景主題取得特定外觀](#specific-af-appearance)
     
@@ -666,9 +675,11 @@ You can use the theme configuration service to add more fonts to the theme edito
     
     您可以使用樣式模式來樣式化元件，格式為&lt;！ — 或互動式通訊 — >使用表單時的多頻道編輯器。 使用樣式模式變更表單元件樣式會覆寫主題中指定的樣式。 如果您想要變更特定表單之特定元件的樣式，請參閱[元件的內嵌樣式](inline-style-adaptive-forms.md)。
 
-<!-- * **Using client-side libraries**
+<!--
+ * **Using client-side libraries**
 
-  If you want to create client libraries to import styling information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/clientlibs.html). After you create a client library, you can import it in your theme using the steps mentioned above. -->
+  If you want to create client libraries to import styling information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/clientlibs.html). After you create a client library, you can import it in your theme using the steps mentioned above.
+  -->
 
 * **變更容器面板配置寬度**
 

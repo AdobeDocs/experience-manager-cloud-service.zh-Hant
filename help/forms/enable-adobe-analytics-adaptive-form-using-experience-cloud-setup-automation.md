@@ -6,7 +6,7 @@ feature: Adaptive Forms
 role: Admin, User
 badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: 0e1aa040-08b4-4c1a-b247-ad6fff410187
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1602'
 ht-degree: 51%
@@ -22,7 +22,7 @@ ht-degree: 51%
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service  | 本文章 |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/configure-analytics-forms-documents.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/configure-analytics-forms-documents.html) |
 
 Experience Cloud Setup Automation協助將Adobe Analytics連結到Adaptive Forms，這有助於快速追蹤分析使用者與您的表單的互動，並提供訪客互動和參與情況的深入分析。 Experience Cloud Setup Automation 也可協助監控表單效能，其中涉及評估像是完成時間和退出點等量度。此分析有助於優化表單以提供更好的使用者體驗，同時根據登入狀態 (例如匿名使用者) 區分使用者行為，以識別整體趨勢和模式。
 
@@ -63,9 +63,9 @@ Adobe Analytics提供全方位的Adaptive Forms效能量度，旨在提供表單
 Analytics, Data Collection (Formerly Adobe Launch), and Experience Manager (experience.adobe.com)
 -->
 
-Experience Cloud Setup Automation需要&#x200B;**Adobe Analytics授權**、**Data Collection (先前稱為Adobe Launch)**&#x200B;來管理追蹤指令碼，以及&#x200B;**Experience Manager Forms授權**&#x200B;來簡化資料彙總與insight產生。
+Experience Cloud Setup Automation需要&#x200B;**Adobe Analytics授權**、**Data Collection （先前稱為Adobe Launch）**&#x200B;來管理追蹤指令碼，以及&#x200B;**Experience Manager Forms授權**&#x200B;來簡化資料彙總與insight產生。
 
-如果您有&#x200B;**Adobe Analytics**&#x200B;和&#x200B;**Experience Manager Forms**&#x200B;的有效授權，而且您已與&#x200B;**資料收集(先前稱為Adobe Launch)**&#x200B;整合，您應在開發人員主控台中驗證其可用性。
+如果您有&#x200B;**Adobe Analytics**&#x200B;和&#x200B;**Experience Manager Forms**&#x200B;的有效授權，而且您已與&#x200B;**資料收集（先前稱為Adobe Launch）**&#x200B;整合，您應在開發人員主控台中驗證其可用性。
 
 若要確認上述可適用於您的Forms as a Cloud Service環境，請造訪[開發人員主控台](https://developer.adobe.com/console/projects)，瀏覽至專案並使用方案ID — 環境ID搜尋您的專案，例如，使用URL `https://author-p45913-e175111-cmstg.adobeaemcloud.com/index.html`、方案ID — 環境ID為`p45913-e175111`的環境。 確保有列出 Experience Cloud Setup Automation、Adobe Analytics 和 Experience Platform Launch API。如果列出了這些專案，您可以啟用Adobe Analytics，以快速追蹤分析您的最適化Forms。
 
@@ -76,7 +76,8 @@ Experience Cloud Setup Automation需要&#x200B;**Adobe Analytics授權**、**Dat
 > If you have an active licenses for Experience Cloud Setup Automation, Adobe Analytics, and Experience Platform Launch API, you should verify their availability within your developer console.
 -->
 
-<!-- For more information about your available integrations, see [troubleshooting Adaptive Forms with Analytics Integration](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html?lang=zh-Hant)
+<!--
+ For more information about your available integrations, see [troubleshooting Adaptive Forms with Analytics Integration](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html)
 -->
 
 ## 設定 Adobe Analytics {#configure-adobe-analytics}
@@ -154,7 +155,7 @@ Experience Cloud Setup Automation需要&#x200B;**Adobe Analytics授權**、**Dat
 
 若要在AEM Sites頁面中連線最適化表單以啟用Analytics以進行快速追蹤分析，請使用AEM Archetype/Git存放庫和部署管道，將`customfooterlibs`使用者端程式庫包含到AEM Sites頁面。
 
-1. 在文字編輯器中開啟您的[AEM Forms原型或複製的Git存放庫](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)專案。 例如，Visual Studio Code。
+1. 在文字編輯器中開啟您的[AEM Forms原型或複製的Git存放庫](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)專案。 例如，Visual Studio Code。
 
 1. 導覽至您最適化表單所在的網站頁面，例如，在此示範專案中，我們有`ui.apps/src/main/content/jcr_root/apps/corecomponents/components/page/.content.xml`。
 
@@ -177,7 +178,7 @@ Experience Cloud Setup Automation需要&#x200B;**Adobe Analytics授權**、**Dat
 
    `customfooterlibs.html`用於JavaScript。
 
-1. [執行管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html?lang=zh-Hant)以部署變更。
+1. [執行管道](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html)以部署變更。
 
 ### 啟用表單分析規則至網站中的Forms {#bind-forms-analytics-rules-to-forms-in-sites}
 

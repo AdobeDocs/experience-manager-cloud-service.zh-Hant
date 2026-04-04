@@ -4,7 +4,7 @@ description: 使用資產選擇器集合。
 role: Admin,User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: 1687e7d5-eb7e-4eb7-8747-e5dc6afacd5b
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 7%
@@ -28,7 +28,8 @@ Asset Selector中的Micro Front-end Collections可立即在唯讀模式下使用
 邊欄檢視中的![集合](assets/collections-rail-modal-view.png)
 
 <!--
-Additionally, you can [customize](/help/assets/asset-selector-customization.md) the `featureSet` property to enable or disable collections in Asset Selector. See [enable or disable Collections tab](#enable-disable-collections-tab).-->
+Additionally, you can [customize](/help/assets/asset-selector-customization.md) the `featureSet` property to enable or disable collections in Asset Selector. See [enable or disable Collections tab](#enable-disable-collections-tab).
+-->
 
 此外，您也可以自訂「系列」標籤下資產的選擇。 若要這麼做，您可以使用`handleSelection`自訂它。 請參閱[使用物件結構描述](/help/assets/asset-selector-customization.md#handling-selection)處理Assets的選取專案。
 

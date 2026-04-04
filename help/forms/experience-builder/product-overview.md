@@ -8,7 +8,7 @@ hidefromtoc: true
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: 183e999c-9896-49a2-b29b-7c77da380df9
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 32%
@@ -73,7 +73,8 @@ Experience Builder需要具有[最適化AEM Forms as a Cloud Service核心元件
 |:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | *自適應表單編輯器* | *通用編輯器* |
 
-<!-- >
+<!--
+ >
 
 ## Learn more on key capabilities {#key-capabilities-forms-experience-builder}
 
@@ -163,7 +164,8 @@ Experience Builder需要具有[最適化AEM Forms as a Cloud Service核心元件
       <em>Get responses to common questions about Forms Experience Builder capabilities and usage.</em>
    </p>
 </td>
-</table> -->
+</table>
+-->
 
 
 
@@ -193,7 +195,8 @@ Configure form submissions to integrate with your existing business systems:
 
 - **與您的系統整合**：設定表單提交以與您現有的業務工作流程連結，不論是傳送資料至REST API、在您的CRM中建立新的銷售機會，還是將檔案儲存至雲端儲存空間。 [了解更多](/help/forms/experience-builder/forms-experience-builder-prompt-examples-library.md#data-integration--submission)。
 
-<!-- ## Onboarding
+<!--
+ ## Onboarding
 
 The Forms Experience Builder is currently available through an Early Access Program. To request access, follow these steps:
 

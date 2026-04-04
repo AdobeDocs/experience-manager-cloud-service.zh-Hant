@@ -7,7 +7,7 @@ hidefromtoc: true
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: 7268c4be-1e4a-4d31-aa76-9076d7ee83ce
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '827'
 ht-degree: 2%
@@ -34,7 +34,7 @@ Forms Experience Builder的智慧型匯入和轉換功能可讓您使用AI支援
 
 **XFA型PDF：**
 
-- 舊版XFA (XML Forms架構)表單
+- 舊版XFA （XML Forms架構）表單
 - 具有進階版面的複雜業務表單
 - 政府與企業表單
 
@@ -94,7 +94,7 @@ PDF檔案的&#x200B;**：**
 
 **影像檔：**
 
-1. 上傳影像(PNG、JPG等)
+1. 上傳影像（PNG、JPG等）
 2. AI將分析版面和文字
 3. 檢閱偵測到的表單欄位
 4. 視需要進行調整

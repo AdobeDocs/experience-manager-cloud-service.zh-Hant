@@ -1,11 +1,11 @@
 ---
-title: 移轉至AEM Commerce integration framework (CIF)附加元件
-description: 如何從舊版移轉至AEM Commerce integration framework (CIF)附加元件
+title: 移轉至AEM Commerce Integration Framework (CIF)附加元件
+description: 如何從舊版移轉至AEM Commerce Integration Framework (CIF)附加元件
 exl-id: 0db03a05-f527-4853-b52f-f113bce929cf
 feature: Commerce Integration Framework
 role: Admin
 index: false
-source-git-commit: 0664e5dc4a7619a52cd28c171a44ba02c592ea3d
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '466'
 ht-degree: 10%
@@ -48,7 +48,7 @@ Classic CIF 及其相依性已不再可用。依賴此CIF版本（使用`com.ado
 
 >[!TIP]
 >
->如果沒有可用的即時API，則應使用具有API的外部產品快取進行整合。 範例[Magento開放原始碼。](https://business.adobe.com/tw/products/magento/open-source.html)
+>如果沒有可用的即時API，則應使用具有API的外部產品快取進行整合。 範例[Magento開放原始碼。](https://business.adobe.com/products/magento/open-source.html)
 
 ## 具有AEM轉譯的產品目錄體驗 {#aem-rendering}
 

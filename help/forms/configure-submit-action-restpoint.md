@@ -6,7 +6,7 @@ feature: Adaptive Forms, Core Components, Foundation Components, Edge Delivery S
 role: User, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: 58c63ba6-aec5-4961-a70a-265990ab9cc8
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1477'
 ht-degree: 60%
@@ -188,7 +188,8 @@ AEM as a Cloud Service提供多種立即可用的提交動作，用於處理表�
 
 >[!ENDTABS]
 
-<!-- ### Configure submit action based on Service Rest Endpoint {#config-service-endpoint-auth}
+<!--
+ ### Configure submit action based on Service Rest Endpoint {#config-service-endpoint-auth}
 
 
 
@@ -200,7 +201,8 @@ AEM as a Cloud Service提供多種立即可用的提交動作，用於處理表�
 6. Specify the REST endpoint URL.
 7. Select the Configuration you have created for your Service Rest Endpoint Authentication Type and the Content Types. To know more about Authentication Type and the Content Types, visit [configure data sources](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint).
     ![Configuring Rest Endpoint](assets/rest-service-endpoint-config.png)
-8. Click Done. -->
+8. Click Done.
+-->
 
 
 

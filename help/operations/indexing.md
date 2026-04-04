@@ -4,9 +4,9 @@ description: 瞭解AEM as a Cloud Service中的內容搜尋和索引。
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 feature: Operations
 role: Admin
-source-git-commit: 8d881caf5181e9c3cdc6dcb69f0deabc2d5eeed8
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
-source-wordcount: '2918'
+source-wordcount: '2906'
 ht-degree: 1%
 
 ---
@@ -59,7 +59,7 @@ ht-degree: 1%
 
 2. OOTB索引的自訂。 若要自訂OOTB索引，請附加`-custom-`及數字。 例如，`/oak:index/damAssetLucene-8-custom-1`是OOTB索引`/oak:index/damAssetLucene-8`的自訂。 自訂通常是OOTB索引的副本，加上需要編制索引的其他屬性。
 
-3. 完全自訂索引：您可以從頭開始建立全新的索引。 這些索引還需要以`-custom-`和版本編號結尾。 此外，為了避免命名衝突，請在索引名稱中使用首碼。 例如： `/oak:index/acme.product-1-custom-2`，其中`acme.`是前置詞。
+3. 完全自訂索引：確實可以從頭開始建立全新的索引。 這些索引還需要以`-custom-`和版本編號結尾。 此外，為了避免命名衝突，請在索引名稱中使用首碼。 例如： `/oak:index/acme.product-1-custom-2`，其中`acme.`是前置詞。
 
 >[!NOTE]
 >
@@ -69,7 +69,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->自訂立即可用索引（例如`damAssetLucene-8`）時，請使用CRX DE封裝管理員(`/crx/packmgr/`)從&#x200B;*Cloud Service環境*&#x200B;複製最新的立即可用索引定義。 將其重新命名為`damAssetLucene-8-custom-1` （或更高版本），並在XML檔案中新增自訂內容。 如果雲端環境中的索引是型別`elasticsearch`，則需要其他變更：將`type`屬性變更為`lucene`，將`async`屬性變更為`[async,nrt]`，並將屬性`similarityTags`變更為`true`。 這可確保不會無意中移除所需的設定。 例如，部署至AEM Cloud Service環境的自訂索引中需要`/oak:index/damAssetLucene-8/tika`底下的`tika`節點，但本機AEM SDK上並不存在。
+>自訂立即可用索引（例如`damAssetLucene-8`）時，請使用CRX DE封裝管理員(*)從* Cloud Service環境`/crx/packmgr/`複製最新的立即可用索引定義。 將其重新命名為`damAssetLucene-8-custom-1` （或更高版本），並在XML檔案中新增自訂內容。 如果雲端環境中的索引是型別`elasticsearch`，則需要其他變更：將`type`屬性變更為`lucene`，將`async`屬性變更為`[async,nrt]`，並將屬性`similarityTags`變更為`true`。 這可確保不會無意中移除所需的設定。 例如，部署至AEM Cloud Service環境的自訂索引中需要`tika`底下的`/oak:index/damAssetLucene-8/tika`節點，但本機AEM SDK上並不存在。
 
 若要自訂OOTB索引，請準備包含自訂或自訂索引定義的新套件。 索引名稱必須遵循命名模式：
 
@@ -79,12 +79,14 @@ ht-degree: 1%
 
 `<prefix>.<indexName>-<productVersion>-custom-<customVersion>`
 
-如限制區段中所述，即使使用封裝管理員擷取的索引定義是其他型別（例如`elasticsearch`），自訂索引定義的`type`必須一律設為`lucene`。
-如果擷取的索引定義設為`elastic-async`，也必須變更`async`屬性。 對於自訂索引定義，`async`屬性必須設定為下列其中一個： `[async]`、`[async,nrt]`或`[fulltext-async]`。
+如限制區段中所述，即使使用封裝管理員擷取的索引定義是其他型別（例如`type`），自訂索引定義的`lucene`必須一律設為`elasticsearch`。
+如果擷取的索引定義設為`async`，也必須變更`elastic-async`屬性。 對於自訂索引定義，`async`屬性必須設定為下列其中一個： `[async]`、`[async,nrt]`或`[fulltext-async]`。
 
-<!-- Alexandru: temporarily drafting this statement due to CQDOC-17701
+<!--
+ Alexandru: temporarily drafting this statement due to CQDOC-17701
 
-The package from the above sample is built as `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`. -->
+The package from the above sample is built as `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`.
+-->
 
 >[!NOTE]
 >
@@ -168,7 +170,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 ## 專案設定
 
-我們強烈建議使用Jackrabbit `filevault-package-maven-plugin`的>= `1.3.2`版。 將其整合至專案的步驟如下：
+我們強烈建議使用Jackrabbit `1.3.2`的>= `filevault-package-maven-plugin`版。 將其整合至專案的步驟如下：
 
 1. 更新最上層`pom.xml`中的版本：
 
@@ -215,7 +217,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
    </plugin>
    ```
 
-3. 在`ui.apps/pom.xml`和`ui.apps.structure/pom.xml`中，必須在`filevault-package-maven-plugin`中啟用`allowIndexDefinitions`和`noIntermediateSaves`選項。 啟用`allowIndexDefinitions`可允許自訂索引定義，而`noIntermediateSaves`可確保自動新增設定。
+3. 在`ui.apps/pom.xml`和`ui.apps.structure/pom.xml`中，必須在`allowIndexDefinitions`中啟用`noIntermediateSaves`和`filevault-package-maven-plugin`選項。 啟用`allowIndexDefinitions`可允許自訂索引定義，而`noIntermediateSaves`可確保自動新增設定。
 
    檔案名稱： `ui.apps/pom.xml`和`ui.apps.structure/pom.xml`
 
@@ -233,7 +235,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
    </plugin>
    ```
 
-4. 在`ui.apps.structure/pom.xml`中新增`/oak:index`的篩選器：
+4. 在`/oak:index`中新增`ui.apps.structure/pom.xml`的篩選器：
 
    ```xml
    <filters>
@@ -242,7 +244,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
    </filters>
    ```
 
-新增索引定義後，請使用Cloud Manager部署新的應用程式。 此部署會起始兩個工作，負責將索引定義分別新增（並在必要時合併）至MongoDB和Azure區段存放區以供製作和發佈。 在切換之前，基礎存放庫會使用更新的索引定義重新索引。
+新增索引定義後，請使用Cloud Manager部署新的應用程式。 此部署會起始兩個工作，負責將索引定義分別新增（並在必要時合併）至MongoDB和Azure區段存放區，以供製作和發佈。 在切換之前，基礎存放庫會使用更新的索引定義重新索引。
 
 >[!TIP]
 >
@@ -266,9 +268,9 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 * */應用程式（唯讀）*
 * **/content**
 * */libs （唯讀）*
-* **/oak：index**
-* **/oak：index/acme.**
-* **/jcr：system**
+* **/oak:index**
+* **/oak:index/acme.**
+* **/jcr:system**
 * **/系統**
 * **/var**
 
@@ -292,11 +294,11 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 | 索引 | 現成索引 | 用於版本1 | 用於版本2 |
 |---|---|---|---|
-| /oak：index/damAssetLucene-8 | 是 | 是 | 否 |
-| /oak：index/damAssetLucene-8-custom-1 | 是（自訂） | 否 | 是 |
-| /oak：index/acme.product-1-custom-1 | 否 | 是 | 否 |
-| /oak：index/acme.product-1-custom-2 | 否 | 否 | 是 |
-| /oak：index/cqPageLucene-2 | 是 | 是 | 是 |
+| /oak:index/damAssetLucene-8 | 是 | 是 | 否 |
+| /oak:index/damAssetLucene-8-custom-1 | 是（自訂） | 否 | 是 |
+| /oak:index/acme.product-1-custom-1 | 否 | 是 | 否 |
+| /oak:index/acme.product-1-custom-2 | 否 | 否 | 是 |
+| /oak:index/cqPageLucene-2 | 是 | 是 | 是 |
 
 每次變更索引時，版本號碼都會增加。 若要避免自訂索引名稱與產品本身的索引名稱衝突，自訂索引以及對現成索引的變更必須以`-custom-<number>`結尾。
 
@@ -306,14 +308,14 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 | 索引 | 現成索引 | 用於版本2 | 用於版本3 |
 |---|---|---|---|
-| /oak：index/damAssetLucene-1-custom-1 | 是（自訂） | 是 | 否 |
-| /oak：index/damAssetLucene-2-custom-1 | 是（自動從damAssetLucene-1-custom-1和damAssetLucene-2合併） | 否 | 是 |
-| /oak：index/cqPageLucene-1 | 是 | 是 | 否 |
-| /oak：index/cqPageLucene-2 | 是 | 否 | 是 |
+| /oak:index/damAssetLucene-1-custom-1 | 是（自訂） | 是 | 否 |
+| /oak:index/damAssetLucene-2-custom-1 | 是（自動從damAssetLucene-1-custom-1和damAssetLucene-2合併） | 否 | 是 |
+| /oak:index/cqPageLucene-1 | 是 | 是 | 否 |
+| /oak:index/cqPageLucene-2 | 是 | 否 | 是 |
 
-請務必注意，環境可能使用不同的AEM版本。 例如： `dev`環境在發行版本`X+1`上，而階段和生產仍在發行版本`X`上，且在`dev`上執行必要的測試後，正在等待升級至發行版本`X+1`。 如果版本`X+1`隨附已自訂的較新版本產品索引，且需要對該索引進行新的自訂，則下表將說明根據AEM版本需要設定哪些版本：
+請務必注意，環境可能使用不同的AEM版本。 例如： `dev`環境在發行版本`X+1`上，而階段和生產仍在發行版本`X`上，且在`X+1`上執行必要的測試後，正在等待升級至發行版本`dev`。 如果版本`X+1`隨附已自訂的較新版本產品索引，且需要對該索引進行新的自訂，則下表將說明根據AEM版本需要設定哪些版本：
 
-| 環境(AEM發行版本) | 產品索引版本 | 現有的自訂索引版本 | 新的自訂索引版本 |
+| 環境（AEM發行版本） | 產品索引版本 | 現有的自訂索引版本 | 新的自訂索引版本 |
 |-----------------------------------|-----------------------|-------------------------------|----------------------------|
 | 開發(X+1) | damAssetLucene-11 | damAssetLucene-11-custom-1 | damAssetLucene-11-custom-2 |
 | 階段(X) | damAssetLucene-10 | damAssetLucene-10-custom-1 | damAssetLucene-10-custom-2 |
@@ -379,7 +381,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 #### 移除現成索引的自訂專案
 
-請依照[使用OOTB索引的定義作為新版本來復原變更](#undoing-a-change-undoing-a-change)中說明的步驟操作。 例如，如果您已經部署`damAssetLucene-8-custom-3`，但不再需要自訂，並且要切換回預設的`damAssetLucene-8`索引，則需要新增包含`damAssetLucene-8`的索引定義的索引`damAssetLucene-8-custom-4`。
+請依照[使用OOTB索引的定義作為新版本來復原變更](#undoing-a-change-undoing-a-change)中說明的步驟操作。 例如，如果您已經部署`damAssetLucene-8-custom-3`，但不再需要自訂，並且要切換回預設的`damAssetLucene-8`索引，則需要新增包含`damAssetLucene-8-custom-4`的索引定義的索引`damAssetLucene-8`。
 
 #### 移除完全自訂索引
 

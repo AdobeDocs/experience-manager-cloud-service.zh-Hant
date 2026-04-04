@@ -6,7 +6,7 @@ feature: Asset Management,Image Profiles,Video Profiles
 role: Admin,User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1397'
 ht-degree: 0%
@@ -55,7 +55,8 @@ ht-degree: 0%
 >
 >您必須在Dynamic Media伺服器上停用移轉發佈代理程式，才能讓重新處理工作流程如預期般運作。
 
-<!-- LEAVE IN PLACE, MAY BE USED IN THE FUTURE
+<!--
+ LEAVE IN PLACE, MAY BE USED IN THE FUTURE
 
 Batch size is the number of assets that are amalgamated into a single IPS (Dynamic Media's Image Production System) job. When you run the Dynamic Media Reprocess workflow, the job is triggered on IPS. The number of IPS jobs that are triggered is based on the total number of assets in the folder, divided by the batch size. For example, suppose you had a folder with 150 assets and a batch size of 50. In this case, three IPS jobs are triggered. The assets are updated when the entire batch size (50 in our example) is processed in IPS. The job then moves onto the next IPS job and so on until complete. If you increase the batch size, you may notice a longer delay with assets getting updated. 
 
@@ -103,7 +104,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 1. 在「動態媒體重新處理工作流程」頁面的右上角附近，選取「**[!UICONTROL 編輯]**」以「解除鎖定」工作流程。
 1. 在工作流程中，選取Scene7批次上傳元件以開啟工具列，然後在工具列中選取&#x200B;**[!UICONTROL 設定]**。
 
-   ![&#x200B; 「Dynamic Media重新處理」頁面上的「Scene7批次上傳」元件熒幕擷圖，滑鼠指標停留在「設定」圖示上](/help/assets/dynamic-media/assets/reprocess-assets8.png)。
+   ![ 「Dynamic Media重新處理」頁面上的「Scene7批次上傳」元件熒幕擷圖，滑鼠指標停留在「設定」圖示上](/help/assets/dynamic-media/assets/reprocess-assets8.png)。
 
 1. 在&#x200B;**[!UICONTROL 批次上傳至Scene7 — 步驟屬性]**&#x200B;對話方塊上，設定下列專案：
    * 在&#x200B;**[!UICONTROL 標題]**&#x200B;和&#x200B;**[!UICONTROL 描述]**&#x200B;文字欄位中，視需要輸入新的標題和描述。
@@ -123,7 +124,8 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 1. 關閉顯示「動態媒體重新處理」工作流程模型的瀏覽器標籤。
 
-<!-- MAY BE NEEDED IN THE FUTURE
+<!--
+ MAY BE NEEDED IN THE FUTURE
 
 1. Return to the browser tab that has the open Workflow Models page, then press **Esc** to exit the selection.
 1. In the upper-left corner of the page, select **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then select the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL General > CRXDE Lite]**.

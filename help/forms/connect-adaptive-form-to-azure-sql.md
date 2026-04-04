@@ -1,14 +1,14 @@
 ---
-Title: How to Connect AEM Adaptive Forms with Azure SQL Storage
-Description: Learn how to configure an Azure SQL Database connection in AEM Forms and integrate it with your Adaptive Forms to store or retrieve data efficiently using JDBC.
-Keywords: Azure SQL integration with AEM Forms, Connecting Adaptive Forms to Azure SQL Database, JDBC connection for Azure SQL in AEM Forms, Storing Adaptive Form data in Azure SQL
+title: 如何連結AEM Adaptive Forms與Azure SQL Storage
+description: 瞭解如何在AEM Forms中設定Azure SQL資料庫連線，並將其與您的Adaptive Forms整合，以使用JDBC有效儲存或擷取資料。
+deywords: Azure SQL integration with AEM Forms, Connecting Adaptive Forms to Azure SQL Database, JDBC connection for Azure SQL in AEM Forms, Storing Adaptive Form data in Azure SQL
 feature: Adaptive Forms, Core Components
 role: User, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: 111accf7-bf34-499c-832e-c001ea68f6d3
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: e69201c40b72f4eaabe3da634ecf05bd04769f6b
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '644'
 ht-degree: 2%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 2%
 Adobe Experience Manager (AEM)中的最適化Forms可與外部資料庫整合，以儲存或擷取資料。
 本文概述如何透過AEM as a Cloud Service使用JDBC將調適型表單連結至Azure SQL資料庫。
 
->
+>[!NOTE]
 > 
 > 本指南適用於已啟用進階網路的非沙箱AEM as a Cloud Service環境。
 
@@ -42,7 +42,7 @@ Adobe Experience Manager (AEM)中的最適化Forms可與外部資料庫整合，
 
   ![建立Azure Db](/help/forms/assets/create-azure-db.png)
 
-* 啟用為已建立的Azure資料庫使用專用輸出IP[設定的](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/networking/dedicated-egress-ip-address)進階網路。
+* 啟用為已建立的Azure資料庫使用專用輸出IP[設定的](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/dedicated-egress-ip-address)進階網路。
 
   >[!NOTE]
   >
@@ -52,10 +52,10 @@ Adobe Experience Manager (AEM)中的最適化Forms可與外部資料庫整合，
 
 * 在雲端環境中使用下列專案設定連線埠轉送：
    * **連線埠原點**：介於`30000–30999`之間
-   * **portDest**： `1433` (Azure SQL的預設連線埠)
+   * **portDest**： `1433` （Azure SQL的預設連線埠）
 例如： `portOrigin: 30433 → portDest: 1433`
 
-     >
+     >[!NOTE]
      > 
      > 您可以聯絡Adobe Cloud Manager支援以設定連線埠轉送。
 
@@ -74,7 +74,7 @@ Adobe Experience Manager (AEM)中的最適化Forms可與外部資料庫整合，
 
    **在哪裡可以找到此資訊？**
 
-   如需尋找這些詳細資訊的逐步指示，請參閱Adobe Experience League文章&quot;[存取Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=zh-Hant#accessing-git)&quot;。
+   如需尋找這些詳細資訊的逐步指示，請參閱Adobe Experience League文章&quot;[存取Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)&quot;。
 
    當命令成功完成時，您會看到在本機目錄中建立的新資料夾。 此資料夾是以您的應用程式命名。
 
@@ -86,7 +86,7 @@ Adobe Experience Manager (AEM)中的最適化Forms可與外部資料庫整合，
 
 >[!NOTE]
 >
-> 若要在專案中包含SQL相依性，請參閱[SQL驅動程式相依性](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool#mysql-driver-dependencies)區段。
+> 若要在專案中包含SQL相依性，請參閱[SQL驅動程式相依性](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool#mysql-driver-dependencies)區段。
 
 **步驟3：新增JDBC設定**
 
@@ -117,7 +117,7 @@ Adobe Experience Manager (AEM)中的最適化Forms可與外部資料庫整合，
        }
    ```
 
-   >
+   >[!NOTE]
    >
    > 將`jdbc.username`替換為實際的Azure使用者名稱，並將`jdbc.password`替換為實際的安全密碼。
 
@@ -144,7 +144,7 @@ git push
 1. 導覽至&#x200B;**工具** > **Forms** > **資料整合**。
 1. 建立新的&#x200B;**表單資料模型**。
 1. 在&#x200B;**資料來源**&#x200B;索引標籤中，選取已建立的JDBC組態。
-1. 按一下[建立&#x200B;**&#x200B;**]並驗證連線。
+1. 按一下[建立&#x200B;****]並驗證連線。
 
 ![建立表單資料模型](/help/forms/assets/create-azure-sql-fdm.png)
 

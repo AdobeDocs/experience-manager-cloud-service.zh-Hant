@@ -5,7 +5,7 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 4ddf90277a24e3ec30ebdd8a9c09b69f80825655
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2084'
 ht-degree: 2%
@@ -26,22 +26,24 @@ ht-degree: 2%
 
 ## 關於Cloud Service內容請求 {#understanding-cloud-service-content-requests}
 
-*頁面要求*&#x200B;參考的HTTP要求會擷取轉譯首頁面體驗所需的核心結構化內容(例如HTML或JSON)。 其中不包含對資產的請求，例如影像或指令碼。
+*頁面要求*&#x200B;參考的HTTP要求會擷取轉譯首頁面體驗所需的核心結構化內容（例如HTML或JSON）。 其中不包含對資產的請求，例如影像或指令碼。
 
 對於使用現成CDN的客戶，AEM as a Cloud Service會以伺服器端層級的測量來計算內容請求。 此測量會自動進行，不依賴使用者端分析追蹤。
 
 AEM (Adobe Experience Manager) as a Cloud Service會根據AEM執行個體產生並在CDN收到的回應型別來識別內容請求。 具體來說，會計算傳回HTML (`text/html`)或JSON (`application/json`)的請求。 這些格式通常會針對傳統網站呈現或Headless傳送來傳送主要頁面內容。
 
-對靜態資產(例如JavaScript檔案、CSS樣式表和影像)的請求不會計為內容請求。
+對靜態資產（例如JavaScript檔案、CSS樣式表和影像）的請求不會計為內容請求。
 
 >[!NOTE]
 >如果API請求傳回作為頁面層級內容的HTML或JSON （例如，在Headless傳送中），根據其內容，它可能仍會計為內容請求。
 
 測量內容請求，無論回應是從CDN快取提供，還是轉送至原始AEM環境。
 
-<!-- REMOVED AS PER EMAIL REQUEST FROM SHWETA DUA, JULY 30, 2024 TO RICK BROUGH AND ALEXANDRU SARCHIZ   For customers employing their own CDN, client-side collection offers a more precise reflection of interactions, ensuring a reliable measure of website engagement via the [Real Use Monitoring](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md) service. This gives customers advanced insights into their page traffic and performance. While it is beneficial for all customers, it offers a representative reflection of user interactions, ensuring a reliable measure of website engagement by capturing the number of page views from the client side. 
+<!--
+ REMOVED AS PER EMAIL REQUEST FROM SHWETA DUA, JULY 30, 2024 TO RICK BROUGH AND ALEXANDRU SARCHIZ   For customers employing their own CDN, client-side collection offers a more precise reflection of interactions, ensuring a reliable measure of website engagement via the [Real Use Monitoring](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md) service. This gives customers advanced insights into their page traffic and performance. While it is beneficial for all customers, it offers a representative reflection of user interactions, ensuring a reliable measure of website engagement by capturing the number of page views from the client side. 
 
-For customers that bring their own CDN on top of AEM as a Cloud Service, server-side reporting results in numbers that cannot be used to compare with the licensed content requests. With the [Real Use Monitoring](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md), Adobe can reflect a reliable measure of website  engagement. -->
+For customers that bring their own CDN on top of AEM as a Cloud Service, server-side reporting results in numbers that cannot be used to compare with the licensed content requests. With the [Real Use Monitoring](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md), Adobe can reflect a reliable measure of website  engagement.
+-->
 
 ### Cloud Service內容請求的差異 {#content-requests-variances}
 
@@ -55,7 +57,7 @@ For customers that bring their own CDN on top of AEM as a Cloud Service, server-
 | 機器人 | AEM未預先識別和移除的未知機器人可能會導致追蹤差異。 |
 | 報表套裝 | 同一AEM例項中的頁面可報告至不同的Analytics報表套裝。 此程式可依設定將資料分割至多個套裝。 |
 | 第三方監控和安全工具 | 監控和安全掃描工具（例如正常運行時間檢查程式或弱點掃描器）可能會請求頁面，從而產生分析報表中不可見的伺服器端內容請求。 |
-| API存取 | 透過API (例如，透過Adobe Experience Manager as a Headless CMS)對AEM頁面或內容的請求仍會計為內容請求，但不會觸發Analytics追蹤。 |
+| API存取 | 透過API （例如，透過Adobe Experience Manager as a Headless CMS）對AEM頁面或內容的請求仍會計為內容請求，但不會觸發Analytics追蹤。 |
 | 預取請求 | 預先擷取（例如使用Service Worker或Edge函式）可以透過預先請求頁面來增加流量。 這些要求會在伺服器端計算，但不會執行使用者端分析程式碼。 |
 | DDOS | Adobe會使用篩選功能來偵測及封鎖許多DDoS攻擊。 不過，在套用篩選器之前，部分攻擊請求可能仍會被計為內容請求。 |
 | 流量攔截器 | 瀏覽器中的隱私權功能或企業防火牆可能會阻擋分析指令碼載入。 這些使用者仍會產生伺服器端內容請求。 |
@@ -65,7 +67,7 @@ For customers that bring their own CDN on top of AEM as a Cloud Service, server-
 
 ## 伺服器端收集規則 {#serverside-collection}
 
-AEM as a Cloud Service會套用伺服器端收集規則來計數內容請求。 這些規則會排除已知機器人(例如搜尋引擎爬蟲)，包括已辨識的AI/LLM爬蟲，以及一組會定期Ping網站內容的監控服務。 其他不在排除清單中的合成、自動化或監控型別流量，則計為計費內容請求。
+AEM as a Cloud Service會套用伺服器端收集規則來計數內容請求。 這些規則會排除已知機器人（例如搜尋引擎爬蟲），包括已辨識的AI/LLM爬蟲，以及一組會定期Ping網站內容的監控服務。 其他不在排除清單中的合成、自動化或監控型別流量，則計為計費內容請求。
 
 下表列出包含和排除的內容請求型別，以及每種請求的簡短說明。
 
@@ -78,7 +80,7 @@ AEM as a Cloud Service會套用伺服器端收集規則來計數內容請求。 
 | --- | --- | --- |
 | HTTP代碼100-299 | 已包含 | 包括傳回完整或部分HTML或JSON內容的成功請求。<br>HTTP程式碼206：這些要求只會傳遞完整內容的一部分。 部分請求會在其傳送轉譯頁面內容所使用的一部份HTML或JSON回應時納入。 |
 | 用於自動化的HTTP程式庫 | 已包含 | 擷取頁面內容的工具或程式庫提出的請求。 範例包含下列專案： <br>· Amazon CloudFront<br>· Apache Http Client<br>·非同步HTTP使用者端<br>· Axios<br>· Azureus<br>· Curl<br>· GitHub節點擷取<br>· Guzzle<br>· Go-http-client<br>· Headless Chrome<br>· Java™ Client<br>· Jersey<br>· Node Oembed<br>· Okhttp<br>· python請求<br>· Reactor Netty<br>· Wget<br>· WinHTTP<br>· Fast HTTP<br>· GitHub節點提取<br>· Reactor Netty<br><br>當流量未分類為已知機器人時，它還可以包含自定義代理或人工智慧驅動的自動化。 |
-| 監視和健康狀態檢查工具 | 已包含 | 用來監督頁面健康狀態或可用性的要求。<br>檢視[排除的內容要求型別](#excluded-content-request)。<br>範例包含下列專案：<br>· `Amazon-Route53-Health-Check-Service`<br>· EyeMonIT_bot_version_0.1_[(https://eyemonit.com/)](https://eyemonit.com/)<br>· Investis-Site24x7<br>· Mozilla/5.0+ (相容； UptimeRobot/2.0； [https://uptimerobot.com/](https://uptimerobot.com/))<br>· ThousandEyes-Dragonfly-x1<br>· OmtrBot/1.0<br>· WebMon/2.0.0 |
+| 監視和健康狀態檢查工具 | 已包含 | 用來監督頁面健康狀態或可用性的要求。<br>檢視[排除的內容要求型別](#excluded-content-request)。<br>範例包含下列專案：<br>· `Amazon-Route53-Health-Check-Service`<br>· EyeMonIT_bot_version_0.1_[(https://eyemonit.com/)](https://eyemonit.com/)<br>· Investis-Site24x7<br>· Mozilla/5.0+ （相容； UptimeRobot/2.0； [https://uptimerobot.com/](https://uptimerobot.com/)）<br>· ThousandEyes-Dragonfly-x1<br>· OmtrBot/1.0<br>· WebMon/2.0.0 |
 | `<link rel="prefetch">`個請求 | 已包含 | 當客戶預先載入或預先擷取內容（例如，使用`<link rel="prefetch">`）時，系統會計算這些伺服器端請求。 請注意，此方法可能會增加流量，端視預先擷取的頁面數量而定。 |
 | 封鎖Adobe Analytics或Google Analytics報告的流量 | 已包含 | 網站訪客安裝隱私權軟體（廣告封鎖程式等）而影響Google Analytics或Adobe Analytics正確性的現象較為常見。 AEM as a Cloud Service會計算Adobe運作之基礎結構的第一個進入點上的請求，而非使用者端。 |
 
@@ -112,7 +114,7 @@ AEM as a Cloud Service會套用伺服器端收集規則來計數內容請求。 
 * 確保任何「找不到頁面」回應皆會以HTTP狀態404傳送。  如果以200狀態傳回，則會計入內容請求。
 * 將健康情況檢查或監視工具路由到/system/probes/health URL或使用HEAD方法而不是GET以避免發生內容請求。
 * 針對您與網站整合的任何自訂搜尋爬蟲，在內容新鮮度的需求與AEM授權成本之間取得平衡。  過於侵略性的爬蟲可能會消耗許多內容請求。
-* 將任何重新導向視為伺服器端（狀態301或302）而非使用者端(狀態200搭配JavaScript重新導向)來處理，以避免兩個不同的內容請求。
+* 將任何重新導向視為伺服器端（狀態301或302）而非使用者端（狀態200搭配JavaScript重新導向）來處理，以避免兩個不同的內容請求。
 * 合併或減少API呼叫，這些是來自AEM的JSON回應，可載入以轉譯頁面。
 * 請確認瀏覽器的使用者代理程式已正確傳遞至AEM。 執行此動作會運用上述的「知名搜尋引擎」內容請求排除規則。  有時，某些Headless實施或CDN設定會遺失原始使用者代理。 如果發生此情況，它可能會防止排除，並導致比傳遞使用者代理時更高的內容請求。
 

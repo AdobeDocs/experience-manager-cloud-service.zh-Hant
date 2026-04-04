@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 2021.10.0 版
 exl-id: ab584923-5f06-4b54-941b-e00bc1158b81
 feature: Release Information
 role: Admin
-source-git-commit: 281a8efcd18920dd926d92db9c757c0513d599fd
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1436'
 ht-degree: 66%
@@ -21,7 +21,7 @@ ht-degree: 66%
 
 >[!NOTE]
 >
->請參閱[近期文件更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=zh-Hant)瞭解與版本不直接相關的文件更新的詳細資料。
+>請參閱[近期文件更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)瞭解與版本不直接相關的文件更新的詳細資料。
 
 ## 發行日期 {#release-date}
 
@@ -50,7 +50,8 @@ ht-degree: 66%
 
 * 智慧標籤會自動套用至使用資產微服務的資產，而非智慧內容服務。 基礎模型已更新，以改善標籤結果並減少偏差。<!-- As it uses asset microservices, it is now possible to develop custom workers using Stock10-based Smart Tags. -->
 
-<!-- Leave this commented.
+<!--
+ Leave this commented.
 ### Bugs fixed in [!DNL Assets] {#assets-bugs-fixed}
 
 No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.

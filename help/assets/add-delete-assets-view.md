@@ -5,7 +5,7 @@ role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: 01af3b66-dba8-4b09-aadf-ba4ae09b824f
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 90%
@@ -21,8 +21,10 @@ ht-degree: 90%
 * 在使用者介面上拖曳資產或資料夾，然後依照螢幕上的指示進行。
 * 從工具列按一下「**[!UICONTROL 新增資產]**」選項，然後將部分檔案新增到上傳對話方塊。
 
-<!-- TBD: Update this GIF
-![Asset and nested folder upload demo](assets/do-not-localize/upload-assets.gif) -->
+<!--
+ TBD: Update this GIF
+![Asset and nested folder upload demo](assets/do-not-localize/upload-assets.gif)
+-->
 
 您可以在建立資料夾後使用任一方法上傳資產。若要建立空的資料夾，請從工具列按一下「**[!UICONTROL 建立資料夾]**」。雖然 [!DNL Assets view] 提供強大的全文檢索搜尋功能，但您也可以使用資料夾更妥善組織您的資產。
 
@@ -85,7 +87,8 @@ ht-degree: 90%
 >[!TIP]
 >
 >您可以在[!DNL Creative Cloud]案頭應用程式內直接將資產上傳到DAM存放庫。
-<!--TBD
+<!--
+TBD
 See how [[!DNL Assets view] integrates with [!DNL Adobe Asset Link]](/help/assets/integration-assets-view.md).
 -->
 
@@ -103,10 +106,10 @@ See how [[!DNL Assets view] integrates with [!DNL Adobe Asset Link]](/help/asset
 
 ## 後續步驟 {#next-steps}
 
-* [觀看在Assets檢視中上傳資產的相關影片](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/creating.html?lang=zh-Hant)
+* [觀看在Assets檢視中上傳資產的相關影片](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/creating.html)
 
 * 使用資產檢視使用者介面所提供的[!UICONTROL 意見回饋]選項提供產品意見回饋
 
 * 若要提供文件意見回饋，請使用右側邊欄提供的[!UICONTROL 編輯此頁面]![來編輯頁面](assets/do-not-localize/edit-page.png)或[!UICONTROL 記錄問題]![來建立 GitHub 問題](assets/do-not-localize/github-issue.png)
 
-* 聯絡[客戶服務](https://experienceleague.adobe.com/zh-hant?support-solution=General#support)
+* 聯絡[客戶服務](https://experienceleague.adobe.com/?support-solution=General#support)

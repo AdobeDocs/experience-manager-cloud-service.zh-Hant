@@ -6,7 +6,7 @@ role: User, Developer
 badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: bafb253be9b3834e1b77047dab52928ba84752a6
+source-git-commit: af79899657fc8f1d7a8b8037889af5c2dbb2cdcf
 workflow-type: tm+mt
 source-wordcount: '3342'
 ht-degree: 2%
@@ -300,7 +300,7 @@ ht-degree: 2%
 ```xml
 FolderA 
     FragmentA (inside FolderA)
-    | 
+    |
     |___FolderB/FragmentB (referenced by FragmentA)
 
 FolderB
@@ -312,7 +312,7 @@ FolderB
 ```xml
 FolderA 
     FragmentA (inside FolderA)
-    | 
+    |
     |___FolderB/FragmentB (referenced by FragmentA)
 
 FolderB
@@ -321,7 +321,7 @@ FolderB
 
 FolderC
     Copy_of_FragmentA
-    | 
+    |
     |___FolderB/Copy_of_FragmentB (referenced by Copy_of_FragmentA)
 ```
 
@@ -334,7 +334,7 @@ FolderC
 ```xml
 FolderA 
     FragmentA (inside FolderA)
-    | 
+    |
     |___FolderB/FragmentB (referenced by FragmentA)
 
 
@@ -347,7 +347,7 @@ FolderB
 ```xml
 FolderA 
     FragmentA (inside FolderA) 
-    | 
+    |
     |___FolderB/FragmentB (referenced by FragmentA) 
 
 FolderB 
@@ -356,7 +356,7 @@ FolderB
 
 FolderC
    Copy_of_FragmentA
-   | 
+   |
    |___./Copy_of_FragmentB (referenced by FragmentA)
    Copy_of_FragmentB
 ```

@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '3320'
 ht-degree: 1%
@@ -112,7 +112,7 @@ ht-degree: 1%
 In the following video, Adaptive Form components are bound with corresponding Acroform template fields and the Document of Record is sent as an email attachment.
 -->
 
-您可以使用提交動作(例如「傳送電子郵件」、「叫用AEM工作流程」、「叫用Power Automate流程」及其他[提交動作](configuring-submit-actions.md))來接收提交PDF。
+您可以使用提交動作（例如「傳送電子郵件」、「叫用AEM工作流程」、「叫用Power Automate流程」及其他[提交動作](configuring-submit-actions.md)）來接收提交PDF。
 ![影像提交動作](/help/forms/assets/submit-actions-img.png)
 
 
@@ -148,7 +148,7 @@ The form developer binds Adaptive Forms fields with corresponding Document of Re
 
 現在，提交最適化表單時，會產生更新的提交PDF。
 
-![已更新 — &#x200B;](assets/we-retail-new-invoice-sent-to-customer.png)
+![已更新 — ](assets/we-retail-new-invoice-sent-to-customer.png)
 
 ## 使用提交PDF時的主要考量事項 {#key-considerations-when-working-with-document-of-record}
 
@@ -159,7 +159,8 @@ The form developer binds Adaptive Forms fields with corresponding Document of Re
 * 不支援在提交PDF中為以XML結構描述為基礎的最適化表單產生的內容繫結。
 * 當使用者請求轉譯提交PDF時，會根據地區設定建立本地化版本的提交PDF。 提交PDF本地化時，最適化表單也會本地化。<!-- For more information on localization of Document of Record and Adaptive Forms see Using AEM translation workflow to localize Adaptive Forms and Document of Record.-->
 
-<!-- ## Configure an adaptive form to generate  Document of Record {#adaptive-form-types-and-their-documents-of-record}
+<!--
+ ## Configure an adaptive form to generate  Document of Record {#adaptive-form-types-and-their-documents-of-record}
 
 While creating an adaptive form, in the Form Model tab of Adaptive Form properties, select one the following option: 
 
@@ -172,7 +173,8 @@ While creating an adaptive form, in the Form Model tab of Adaptive Form properti
 * **[Generate Document of Record](creating-adaptive-form.md#create-an-adaptive-form-based-on-xml-or-json-schema)**
   Select the option to use an XFA Form as a template. When the option is selected, the Document of Record is automatically generated for your Adaptive Form. When you use an XML schema as a template for an Adaptive Form, ensure that the adaptive form and associated XFA Form use the same XML schema as your Adaptive Form
 
-When you select a form model, configure Document of Record using options available under Document of Record Template Configuration. See [Document of Record Template Configuration](#document-of-record-template-configuration). -->
+When you select a form model, configure Document of Record using options available under Document of Record Template Configuration. See [Document of Record Template Configuration](#document-of-record-template-configuration).
+-->
 
 ## 最適化表單元素的對應 {#mapping-of-adaptive-form-elements}
 
@@ -312,7 +314,7 @@ When you select a form model, configure Document of Record using options availab
 
 1. 選取&#x200B;**[!UICONTROL Forms — 記錄檔案]**&#x200B;類別。
 1. 選取&#x200B;**[!UICONTROL DoR基底範本]**。
-1. 按一下[下一步]&#x200B;**&#x200B;**&#x200B;並提供必要的資訊。
+1. 按一下[下一步]****&#x200B;並提供必要的資訊。
 
 1. （選用）修改您要套用至提交PDF中欄位的樣式和外觀。
 1. 儲存表單。
@@ -418,7 +420,7 @@ When you select a form model, configure Document of Record using options availab
 
 * **在DoR中包含未繫結的欄位：**&#x200B;設定屬性包含提交PDF中結構描述型最適化表單中未繫結的欄位。 預設為true。
 
-## 常見問題 {#faq}
+## 常見問答 {#faq}
 
 **問：變更未出現在提交PDF中。**
 **ANS：**&#x200B;在Adaptive Forms編輯器中開啟表單、進行微幅編輯（例如，調整欄位標籤或重新排序欄位），然後儲存表單。 這會重新產生提交PDF範本，而變更會顯示在下一個產生的PDF中。

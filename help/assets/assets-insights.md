@@ -6,7 +6,7 @@ feature: Asset Insights, Asset Reports
 role: User, Leader
 badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '907'
 ht-degree: 20%
@@ -17,7 +17,7 @@ ht-degree: 20%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/asset-insights.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/asset-insights.html?lang=en) |
 | AEM as a Cloud Service  | 本文章 |
 
 Assets Insights功能可讓您追蹤用於協力廠商網站、行銷活動及Adobe創意解決方案之影像的使用者評分和使用情況統計資料。 它有助於提供影像效能和人氣的相關深入分析。
@@ -77,7 +77,8 @@ Assets Insights功能可讓您追蹤用於協力廠商網站、行銷活動及Ad
 1. 按一下工具列中的&#x200B;**[!UICONTROL 配置]**&#x200B;選項，然後選擇&#x200B;**[!UICONTROL 前瞻分析檢視]**。
 1. 頁面會顯示資產的使用情況分數。 比較各種資產的評等並得出深入見解。
 
-<!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
+<!--
+ TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
 
 ## Schedule background job {#scheduling-background-job}
 
@@ -119,7 +120,7 @@ Assets Insights fetches usage data for assets from Adobe Analytics report suites
 
 1. 在[!DNL Experience Manager]設定您的報表套裝後，按一下&#x200B;**[!UICONTROL 完成]**。
 
-如需詳細資訊，請參閱[Adobe Analytics網站服務](https://experienceleague.adobe.com/docs/analytics/admin/company-settings/web-services-admin.html?lang=zh-Hant#api-access-information)。
+如需詳細資訊，請參閱[Adobe Analytics網站服務](https://experienceleague.adobe.com/docs/analytics/admin/company-settings/web-services-admin.html#api-access-information)。
 
 ### 頁面追蹤器 {#page-tracker}
 
@@ -129,7 +130,7 @@ Assets Insights fetches usage data for assets from Adobe Analytics report suites
 
    ![chlimage_1-73](assets/chlimage_1-73.png)
 
-1. 在導覽頁 **[!UICONTROL 面中]** ，按一下 **&#x200B;**&#x200B;洞察頁面追蹤器卡片。
+1. 在導覽頁 **[!UICONTROL 面中]** ，按一下 **** 洞察頁面追蹤器卡片。
 1. 按一下&#x200B;**[!UICONTROL 下載]**&#x200B;以下載頁面追蹤程式碼。
 
 <!--

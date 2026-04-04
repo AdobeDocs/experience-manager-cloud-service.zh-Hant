@@ -2,9 +2,9 @@
 title: Development Agent概述
 description: 瞭解AEM中的開發代理程式如何分析Cloud Manager中的失敗管道和建置記錄檔，以建議程式碼修正並加快偵錯速度。
 feature: Agentic AI, AI Assistant, AI Tools, User Roles
-role: User, Admin, Architect, Developer
+role: User, Admin, Developer
 exl-id: 2194556f-aac2-4cdd-8f7f-00c92c8c4424
-source-git-commit: 778c65a65e246c9cc3fc5e8b233edcd07c876261
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 代理程式可以擷取管道狀態，並透過建議修正來協助您疑難排解失敗的建置步驟，以節省在開發、中繼和生產環境中偵錯AEM as a Cloud Service部署的時間。 它會檢查組建記錄檔和相關程式碼，以建議您可以手動套用的修正。
 
->[!VIDEO](https://video.tv.adobe.com/v/3478018?captions=chi_hant&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3478006?quality=12&learn=on)
 
 >[!IMPORTANT]
 >
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 若要存取此代理程式，請參閱[發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md#aem-beta-programs)以瞭解如何註冊Beta版計畫的說明，請務必指出您對開發代理程式的興趣。 您也可以將開發代理程式的特定意見回饋透過電子郵件傳送至[aem-devagent@adobe.com。](mailto:aem-devagent@adobe.com)
 
-[觀看教學課程](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/ai/agents/development-agent-troubleshoot-ci-cd-pipeline)，瞭解如何使用開發代理程式來疑難排解管道故障。
+[觀看教學課程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/agents/development-agent-troubleshoot-ci-cd-pipeline)，瞭解如何使用開發代理程式來疑難排解管道故障。
 
 ## 透過Cloud Manager存取開發代理程式 {#how-to-access-the-agent}
 
@@ -52,7 +52,7 @@ ht-degree: 0%
 
    >[!IMPORTANT]
    >
-   >顯示的Widget、工具和成品取決於使用者角色、權益和AEM部署型別(AEM as a Cloud Service或Managed Services 6.5/6.5 LTS)。
+   >顯示的Widget、工具和成品取決於使用者角色、權益和AEM部署型別（AEM as a Cloud Service或Managed Services 6.5/6.5 LTS）。
 
 1. 在左側邊欄的&#x200B;**方案**&#x200B;下，按一下&#x200B;**![總覽圖示](/help/implementing/cloud-manager/configuring-pipelines/assets/overview.svg)總覽**。
 
@@ -64,7 +64,7 @@ ht-degree: 0%
 
    ![在建置和程式碼掃描頁面中看到管道失敗](/help/ai-in-aem/agents/brand-experience/development/assets/dev-agent-pipeline-failure.png)
 
-1. 在AEM使用者介面(從Cloud Manager頁面或AEM環境的作者執行個體)的右上角附近，按一下&#x200B;**AI助理**&#x200B;圖示。
+1. 在AEM使用者介面（從Cloud Manager頁面或AEM環境的作者執行個體）的右上角附近，按一下&#x200B;**AI助理**&#x200B;圖示。
 
    工具列上的![AI助理圖示](/help/implementing/cloud-manager/assets/ai-assistant-icon.png)
 

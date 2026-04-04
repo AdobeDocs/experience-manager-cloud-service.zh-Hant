@@ -8,8 +8,8 @@ exl-id: b8ab2525-3f15-4844-866c-da47bfc7518c
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
-workflow-type: ht
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+workflow-type: tm+mt
 source-wordcount: '2526'
 ht-degree: 100%
 
@@ -47,7 +47,7 @@ ht-degree: 100%
 1. 選擇內容的語言根，讓 AEM 根據內容路徑自動建立翻譯專案。
 1. 建立空白專案並手動選擇要新增至翻譯專案的內容
 
-兩種都是有效的方法，通常只是根據執行翻譯的角色而不同：
+兩種都是有效的方法，通常只是根據執行翻譯的人物誌而不同：
 
 * 翻譯專案經理 (TPM) 通常需要靈活地手動選擇翻譯專案的內容。
 * 如果內容所有者也負責翻譯，讓 AEM 根據所選的內容路徑自動建立專案通常是更輕鬆的方法。

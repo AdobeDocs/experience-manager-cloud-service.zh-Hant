@@ -11,7 +11,7 @@ hide: true
 hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: b01ca24b-aa39-4b30-9d55-224b103a1e83
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 2%
@@ -35,7 +35,7 @@ ht-degree: 2%
 * 條款與條件
 * 條款與條件含草稿
 
-安裝套件時，會在Forms和檔案下方建立包含參考片段的參考片段資料夾。 若要安裝封裝，請參閱[透過Cloud Manager和封裝管理員部署內容封裝](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=zh-Hant#deploying-content-packages-via-cloud-manager-and-package-manager)以及[如何使用封裝](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=zh-Hant)。
+安裝套件時，會在Forms和檔案下方建立包含參考片段的參考片段資料夾。 若要安裝封裝，請參閱[透過Cloud Manager和封裝管理員部署內容封裝](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#deploying-content-packages-via-cloud-manager-and-package-manager)以及[如何使用封裝](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)。
 
 ![列出所有片段](assets/ootb-frags.png)
 
@@ -45,9 +45,11 @@ ht-degree: 2%
 
 ![位址片段](assets/address.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/address-1.png)-->
+](assets/address-1.png)
+-->
 
 ## 連絡資訊 {#contact-information}
 
@@ -55,9 +57,11 @@ ht-degree: 2%
 
 ![連絡資訊片段](assets/contact-info.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/contact-info-1.png)-->
+](assets/contact-info-1.png)
+-->
 
 ## 信用卡資訊 {#credit-card-information}
 
@@ -70,9 +74,11 @@ ht-degree: 2%
 
 ![目前的僱用片段](assets/current-emp.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/current-emp-1.png)-->
+](assets/current-emp-1.png)
+-->
 
 ## 相依物件資訊 {#dependents-information}
 
@@ -80,9 +86,11 @@ ht-degree: 2%
 
 ![相依專案資訊片段](assets/dependents-info.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/dependents-info-1.png)-->
+](assets/dependents-info-1.png)
+-->
 
 ## 僱用歷史記錄 {#employment-history}
 
@@ -90,9 +98,11 @@ ht-degree: 2%
 
 ![僱用記錄片段](assets/emp-history.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/emp-history-1.png)-->
+](assets/emp-history-1.png)
+-->
 
 ## 收入與支出 {#income-expenditure}
 
@@ -100,9 +110,11 @@ ht-degree: 2%
 
 ![收入與支出片段](assets/income.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/income-1.png)-->
+](assets/income-1.png)
+-->
 
 ## 名稱 {#name}
 
@@ -110,9 +122,11 @@ ht-degree: 2%
 
 ![名稱片段](assets/name.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/name-1.png)-->
+](assets/name-1.png)
+-->
 
 ## 條款與條件 {#terms-conditions}
 
@@ -120,9 +134,11 @@ ht-degree: 2%
 
 ![條款與條件片段](assets/tnc.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/tnc-1.png)-->
+](assets/tnc-1.png)
+-->
 
 ## 條款與條件含草稿 {#terms-conditions-with-scribble}
 
@@ -130,6 +146,8 @@ ht-degree: 2%
 
 ![含草寫字的條款與條件](assets/tnc-scribble.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/tnc-scribble-1.png)-->
+](assets/tnc-scribble-1.png)
+-->

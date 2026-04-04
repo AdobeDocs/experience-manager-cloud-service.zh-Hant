@@ -3,8 +3,8 @@ title: 掌握自適應表單區塊欄位屬性
 description: 使用試算表和自適應表單區塊欄位屬性，更快速地製作功能強大的表單！本指南列出 EDS 表單區塊支援的所有屬性。
 feature: Edge Delivery Services
 exl-id: e86ccc36-bda0-4e9d-8d65-ae7cb3fa79b7
-source-git-commit: 41dd61425ce3b7536ee805580f3841e32e40ee99
-workflow-type: ht
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+workflow-type: tm+mt
 source-wordcount: '930'
 ht-degree: 100%
 
@@ -368,7 +368,8 @@ data-maxItems="3">
 如需更多詳細資訊，請參閱 `blocks/form/form.js` 和 `blocks/form/util.js` 中的實作。
 
 
-<!--Each form field is represented as a dedicated row in the spreadsheet, analogous to fields in a database table. The column headers act as labels for the various properties supported by the form field block.
+<!--
+Each form field is represented as a dedicated row in the spreadsheet, analogous to fields in a database table. The column headers act as labels for the various properties supported by the form field block.
 
 Think of your form as a table in a spreadsheet, where each line represents a different question or piece of information you want to collect. The table headings tell you what kind of answers you can expect for each section.
 
@@ -393,4 +394,5 @@ This table details all the properties you can use to customize your Adaptive For
 | **Multiple** | Allow multiple file selections | `true`, `false` |
 | **Options** | Comma-separated list for dropdown menus | `"Option 1, Option 2, Option 3"` |
 | **Checked** | Default-selected radio button/checkbox | `true`, `false` |
-| **Fieldset** | Group fields together | Fieldset name (e.g., `"Personal Information"`) |-->
+| **Fieldset** | Group fields together | Fieldset name (e.g., `"Personal Information"`) |
+-->

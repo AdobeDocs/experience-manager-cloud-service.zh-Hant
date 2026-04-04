@@ -10,7 +10,7 @@ hidefromtoc: true
 index: false
 badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: e8c37209-4d8e-4eaf-9e29-ffe32b841eb1
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '1938'
 ht-degree: 1%
@@ -49,7 +49,7 @@ ht-degree: 1%
 - **🔗直接API整合** — 無需設定表單資料模型即可連線至API
 - **📊Forms最佳化** - AI支援的效能分析和轉換改善
 
-[要求存取→](mailto:aem-forms-ea@adobe.com) | [深入瞭解→](/help/forms/early-access-ea-features.md)
+[要求存取權→](mailto:aem-forms-ea@adobe.com) | [深入瞭解→](/help/forms/early-access-ea-features.md)
 
 ## 📋表單建立與編寫 {#form-creation}
 
@@ -79,7 +79,7 @@ ht-degree: 1%
 
 | **Edge Delivery Forms** |
 |---|
-| 使用熟悉的工具(如Microsoft Excel)建立高效能表單。 獲得卓越的載入速度和SEO效能。 |
+| 使用熟悉的工具（如Microsoft Excel）建立高效能表單。 獲得卓越的載入速度和SEO效能。 |
 | **它的功能：**&#x200B;使用Excel試算表建立表單，以最佳的Google Lighthouse分數發佈到高效能邊緣傳遞網路。 |
 | **何時使用：**&#x200B;效能關鍵應用程式、以SEO為中心的專案、內容作者導向的表單建立、全域內容傳遞。 |
 | ⚡ Excel式編寫⚡快如閃電的載入⚡最佳化SEO ⚡全域CDN傳遞 |

@@ -2,15 +2,14 @@
 title: 開始使用AEM製作專案的Experience Modernization Agent
 description: 瞭解使用Experience Modernization Console開始使用Experience Modernization Agent時，AEM編寫專案所需的特定設定步驟。
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
-exl-id: a1b2c3d4-e5f6-4789-a012-3456789abcde
-source-git-commit: df23c3a4c497943135f8719425225526ae14aa92
+role: User, Admin, Developer
+exl-id: 94a5e40b-af4a-42ed-922b-b1ec9bb82e24
+source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 1%
 
 ---
-
 
 # 開始使用AEM製作專案的Experience Modernization Agent {#getting-started-aem-authoring}
 
@@ -18,7 +17,7 @@ ht-degree: 1%
 
 ## 建立您的Edge Delivery Services專案存放庫 {#create-repo}
 
-1. 使用[`aem-block-collection-xwalk`](https://github.com/adobe-rnd/aem-block-collection-xwalk)存放庫作為您的範本(不是標準Edge Delivery Services樣板)。
+1. 使用[`aem-block-collection-xwalk`](https://github.com/adobe-rnd/aem-block-collection-xwalk)存放庫作為您的範本（不是標準Edge Delivery Services樣板）。
 1. 請依照[通用編輯器教學課程](https://www.aem.live/developer/ue-tutorial)中的說明來設定您的存放庫。
    * 系統要求您在AEM中建立網站時停止。
 1. 刪除`paths.json`並將此變更提交至`main`。
@@ -58,8 +57,8 @@ ht-degree: 1%
 
 ## 驗證內容 {#validate-content}
 
-在預覽面板中驗證所選頁面的內容。 按一下&#x200B;**錯誤**&#x200B;按鈕即可顯示任何錯誤。
-繼續您與代理的聊天對話以修正錯誤。 使用&#x200B;**新增至聊天**&#x200B;功能，針對頁面、剖析器檔案或轉換器檔案的特定元素進行修正。
+在預覽面板中驗證所選頁面的內容。 按一下&#x200B;**錯誤**按鈕即可顯示任何錯誤。
+繼續您與代理的聊天對話以修正錯誤。 使用**新增至聊天**&#x200B;功能，針對頁面、剖析器檔案或轉換器檔案的特定元素進行修正。
 
 ![內容聊天](assets/contextual-chat.png)
 

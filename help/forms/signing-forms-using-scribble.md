@@ -8,7 +8,7 @@ feature: Adaptive Forms, Foundation Components
 badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
 role: User, Developer
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 56%
@@ -19,11 +19,11 @@ ht-degree: 56%
 
 >[!NOTE]
 >
-> Adobe建議針對[建立新的Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant)或[將Adaptive Forms新增至AEM Sites頁面](/help/forms/creating-adaptive-form-core-components.md)，使用現代且可擴充的資料擷取[核心元件](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文說明使用基礎元件製作最適化Forms的舊方法。
+> Adobe建議針對[建立新的Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)或[將Adaptive Forms新增至AEM Sites頁面](/help/forms/creating-adaptive-form-core-components.md)，使用現代且可擴充的資料擷取[核心元件](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文說明使用基礎元件製作最適化Forms的舊方法。
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/signing-forms-using-scribble.html?lang=zh-Hant) |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/signing-forms-using-scribble.html) |
 | AEM as a Cloud Service  | 本文章 |
 
 
@@ -74,7 +74,7 @@ ht-degree: 56%
 
 * **名稱** - 在表單和規則編輯器中，您可以使用其唯一名稱輕鬆識別表單元件，但該名稱不得包含空格或特殊字元。
 
-* **標題** - 您可以使用其標題輕鬆識別表單中的元件，預設情況下，標題會顯示在元件上方。若未新增標題，則會顯示該元件的名稱而非標題文字。
+* **標題** - 您可以使用其標題輕鬆識別表單中的元件，預設情況下，標題會顯示在元件上方。 若未新增標題，則會顯示該元件的名稱而非標題文字。
 
 * **允許標題使用 RTF 文字** - 此功能可讓使用者格式化純文字標題，整合粗體、斜體、底線文字、各種字型、字體大小、顏色等功能，以及可增強視覺呈現和自訂的其他選項。提供更大的靈活性和創意控制，讓標題在文件、網站或應用程式中脫穎而出。\
   選取&#x200B;**允許標題使用 RTF 文字**&#x200B;核取方塊後，即可看到格式選項，以設定元件標題的樣式。若要存取所有可用的格式選項，您可以按一下 ![全螢幕圖示](/help/forms/assets/fullscreen-icon.png) 索引標籤。
@@ -85,8 +85,8 @@ ht-degree: 56%
 * **必要欄位** — 選取選項，讓欄位成為必要欄位。
 * **必要欄位訊息** - **必要欄位訊息**&#x200B;是當使用者嘗試提交表單而未填寫必要欄位時，顯示給使用者的可自訂訊息。
 * **資料模型繫結參考** — 繫結參考是儲存在外部資料來源中，並在表單中使用的資料元素的參考。 繫結參考可讓您將資料動態繫結至表單欄位，讓表單可以顯示資料來源的最新資料。例如，繫結參考可用於根據輸入至表單的客戶 ID，在表單中顯示客戶的姓名和地址。繫結參考也可用於使用已輸入至表單中的資料更新資料來源。透過此方式，AEM Forms 可讓您建立與外部資料來源互動的表單，提供順暢無礙的使用者體驗，以收集和管理資料。
-* **隱藏物件** — 選取選項，以隱藏表單中的元件。 元件仍可供其他用途存取，例如將其用於規則編輯器中的計算。這在您需要儲存使用者不需看到或直接變更的資訊時十分有用。
-* **停用物件** — 選取選項以停用元件。 一般使用者無法啟動或編輯已停用的元件。使用者可以看到該欄位的值，但無法修改。元件仍可供其他用途存取，例如將其用於規則編輯器中的計算。
+* **隱藏物件** — 選取選項，以隱藏表單中的元件。 元件仍可供其他用途存取，例如將其用於規則編輯器中的計算。 這在您需要儲存使用者不需看到或直接變更的資訊時十分有用。
+* **停用物件** — 選取選項以停用元件。 一般使用者無法啟動或編輯已停用的元件。使用者可以看到該欄位的值，但無法修改。 元件仍可供其他用途存取，例如將其用於規則編輯器中的計算。
 * **長寬比** — 手寫簽名元件的長寬比定義了寬度和高度之間的比例關係。
 * **欄位配置** - **欄位配置**&#x200B;選項決定表單元素(包括標籤（標題）和錯誤訊息)相對於元件的放置方式。 **標題和錯誤位於Widget**&#x200B;頂端，將欄位的標題（標籤）和錯誤訊息放置在元件上方。 **繼承自最適化表單設定**&#x200B;使用最適化表單設定中指定的預設欄位配置設定。
 * **CSS類別** - **CSS類別**&#x200B;可讓您指派樣式表中定義的一或多個CSS類別，將自訂樣式套用至元件。 它可讓您在最適化表單中自訂一致的樣式和版面。
@@ -138,7 +138,8 @@ ht-degree: 56%
 
    ![Complete the signing process](assets/scribblecomplete.jpg)
 
-The signatures are added to the form and the form control moves to the next panel. -->
+The signatures are added to the form and the form control moves to the next panel.
+-->
 
 ## 另請參閱 {#see-also}
 

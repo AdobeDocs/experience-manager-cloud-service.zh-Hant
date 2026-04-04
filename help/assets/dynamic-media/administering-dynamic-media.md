@@ -7,7 +7,7 @@ feature: Configuration,Viewer Presets,Image Presets,Dynamic Media
 role: Admin,User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: 83b70b17-7ee3-41cb-be90-c92ca161660e
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '290'
 ht-degree: 5%
@@ -18,9 +18,10 @@ ht-degree: 5%
 
 {{work-with-dynamic-media}}
 
-[Dynamic Media](https://business.adobe.com/tw/products/experience-manager/assets/dynamic-media.html)可依需求提供豐富的視覺銷售和行銷資產，並自動針對網路、行動及社交網站的消費進行縮放，協助您管理資產。 Dynamic Media使用一組主要來源資產，透過其可擴充且效能最佳化的全域網路即時產生並傳送多種多樣的豐富內容。
+[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html)可依需求提供豐富的視覺銷售和行銷資產，並自動針對網路、行動及社交網站的消費進行縮放，協助您管理資產。 Dynamic Media使用一組主要來源資產，透過其可擴充且效能最佳化的全域網路即時產生並傳送多種多樣的豐富內容。
 
-<!-- OBSOLETE UNTIL THE INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
+<!--
+ OBSOLETE UNTIL THE INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
 >[!NOTE]
 >

@@ -8,7 +8,7 @@ role: User, Developer
 level: Intermediate
 badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: 6ade40f1-bad5-4f5e-aa0e-84b7c6a82e02
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '951'
 ht-degree: 6%
@@ -35,7 +35,7 @@ ht-degree: 6%
 **發佈**&#x200B;選項可讓您立即發佈表單。 若要使用工具列上的&#x200B;**發佈**&#x200B;按鈕來發佈Experience Manager表單。 若要使用發佈選項發佈表單，請執行下列動作：
 
 1. 從 Experience Manager Forms 主控台瀏覽至父系資料夾，並選取要發佈的表單。
-1. 按一下工具列中的「發佈&#x200B;**&#x200B;**」選項，檢視所有將隨表單發佈的參考資產。
+1. 按一下工具列中的「發佈&#x200B;****」選項，檢視所有將隨表單發佈的參考資產。
 1. 點擊&#x200B;**[!UICONTROL 發佈]**。
 
    ![發佈和取消發佈表單](/help/edge/docs/forms/assets/publish-form-option.png)
@@ -91,10 +91,10 @@ ht-degree: 6%
       * **現在**：立即發佈表單
       * **稍後**：根據&#x200B;**啟用日期**&#x200B;或時間發佈表單
 
-1. 按一下[下一步]&#x200B;**&#x200B;**&#x200B;繼續。
+1. 按一下[下一步]****&#x200B;繼續。
 1. （選擇性）在&#x200B;**範圍**&#x200B;索引標籤中，使用[新增內容](#add-content)選項來新增更多發佈內容。 例如，您可以新增更多Forms或記錄檔案檔案。
    ![範圍標籤](/help/forms/assets/scope-tab.png)
-1. 按一下&#x200B;**[!UICONTROL 發佈]**&#x200B;以發佈表單和相關資產，成功訊息就會出現。
+1. 按一下&#x200B;**[!UICONTROL 發佈]**以發佈表單和相關資產，成功訊息就會出現。
    ![成功發佈訊息](/help/forms/assets/publish-successful.png)
 
 ### 新增內容
@@ -143,7 +143,8 @@ By default, publishing a folder to Experience Manager Forms publishes all the as
         Selecting the **[!UICONTROL Include folder contents]** checkbox enables the **[!UICONTROL Include only immediate folder contents]** checkbox for selection.
 
         * If you select both options, all the forms and assets of the selected folder, subfolders (empty), and references are published. The forms and assets of the subfolders are not published.
-        * -->
+        *
+        -->
 
 
 ### 稍後發佈或取消發佈表單
@@ -168,7 +169,7 @@ By default, publishing a folder to Experience Manager Forms publishes all the as
 
 1. 選取&#x200B;**[!UICONTROL 啟用日期]**&#x200B;並指定日期和時間。
 1. 按一下&#x200B;**[!UICONTROL 下一步]**。
-1. （選擇性）在&#x200B;**範圍**&#x200B;索引標籤中，使用&#x200B;**[!UICONTROL 新增內容]**&#x200B;來新增內容。
+1. （選擇性）在&#x200B;**範圍**&#x200B;索引標籤中，使用&#x200B;**[!UICONTROL 新增內容]**來新增內容。
    ![稍後再管理出版物新增內容](/help/forms/assets/publish-later-add-content.png)
 1. 按一下「**[!UICONTROL 下一步]**」。
 1. 在&#x200B;**工作流程**&#x200B;索引標籤中，指定&#x200B;**[!UICONTROL 工作流程標題]**。

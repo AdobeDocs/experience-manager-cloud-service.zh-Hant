@@ -4,7 +4,7 @@ description: 瞭解Cloud Manager中的專業測試環境如何提供專屬空間
 feature: Cloud Manager, Developing
 role: Admin, Developer
 exl-id: 815fb5c3-a171-4531-8727-b79183d85f06
-source-git-commit: 837f1d0eb0bd0f8cf8c0e283db823255f4e53ae1
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '522'
 ht-degree: 12%
@@ -13,7 +13,8 @@ ht-degree: 12%
 
 # 新增專門的測試環境{#add-special-test-enviro}
 
-<!-- badge: label="Private beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
+<!--
+ badge: label="Private beta" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 -->
 
 >[!NOTE]
@@ -56,7 +57,7 @@ ht-degree: 12%
 1. 執行下列任一項作業：
 
    * 在&#x200B;**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;主控台的&#x200B;**環境**&#x200B;卡片上，按一下&#x200B;**新增環境**。
-如果&#x200B;**新增環境**&#x200B;選項變暗（已停用），可能是因為缺少許可權或依賴授權的資源。
+如果**新增環境**&#x200B;選項變暗（已停用），可能是因為缺少許可權或依賴授權的資源。
 
      ![環境卡](assets/no-environments.png)
 
@@ -79,6 +80,6 @@ ht-degree: 12%
 
 ## 其他資源 {#additional-resources}
 
-* 影片： [瞭解AEM Cloud Manager中的環境型別](https://experienceleague.adobe.com/zh-hant/perspectives/cloud-manager-environment-types)
+* 影片： [瞭解AEM Cloud Manager中的環境型別](https://experienceleague.adobe.com/en/perspectives/cloud-manager-environment-types)
 * [管理環境](/help/implementing/cloud-manager/manage-environments.md)
 

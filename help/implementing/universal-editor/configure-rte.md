@@ -4,7 +4,7 @@ description: 瞭解如何在通用編輯器中設定RTF編輯器(RTE)。
 feature: Developing
 role: Admin, Developer
 exl-id: 350eab0a-f5bc-49c0-8e4d-4a36a12030a1
-source-git-commit: 769ba806fc4c663b993fbda14f18555103946e0b
+source-git-commit: 8fcad5e212b1c64d3939065ab277e426935cb5ec
 workflow-type: tm+mt
 source-wordcount: '1094'
 ht-degree: 1%
@@ -172,7 +172,7 @@ RTE組態包含兩個部分：
 }
 ```
 
-#### 資料表組態選項 {#table-configuration-options}
+#### 表格組態選項 {#table-configuration-options}
 
 * `wrapInParagraphs`： `false` （預設） — 表格儲存格包含未包裝的文字內容
 * `wrapInParagraphs`： `true` — 表格儲存格將內容包裝在段落標籤中

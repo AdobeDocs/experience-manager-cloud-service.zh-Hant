@@ -12,7 +12,7 @@ hide: false
 hidefromtoc: false
 badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
 workflow-type: tm+mt
 source-wordcount: '2629'
 ht-degree: 0%
@@ -62,10 +62,10 @@ URL紅色的第一部分是參照伺服器網域本身。 在此案例中，Dyna
 
 請注意，已產生新的手錶轉譯。 要瞭解這項變更影像寬度簡易練習，關鍵是要注意，看到的影像是100%以動態方式產生。
 
-現在將`500`畫素的寬度值變更為`1000`畫素，然後按&#x200B;**[!UICONTROL Enter]**。 [試用](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000){target=_blank}。
-當您按下&#x200B;**[!UICONTROL Enter]**&#x200B;時，瀏覽器會回到Dynamic Media影像伺服器。 它會根據您剛輸入的新寬度值，產生全新的手錶轉譯，然後將新影像傳回瀏覽器，並加以快取。
+現在將`500`畫素的寬度值變更為`1000`畫素，然後按&#x200B;**[!UICONTROL Enter]**。 [試用](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000){target=&quot;_blank}。
+當您按下**[!UICONTROL Enter]**&#x200B;時，瀏覽器會回到Dynamic Media影像伺服器。 它會根據您剛輸入的新寬度值，產生全新的手錶轉譯，然後將新影像傳回瀏覽器，並加以快取。
 
-Dynamic Media有許多影像處理引數，可用來微調網頁上的影像資產。 您可以[在這裡](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=zh-Hant)檢視他們的清單。
+Dynamic Media有許多影像處理引數，可用來微調網頁上的影像資產。 您可以[在這裡](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=en)檢視他們的清單。
 
 現在嘗試將旋轉引數新增到觀看影像。 URL路徑的結尾，緊接在`wid=1000`之後，輸入`&rotate=90`，然後按&#x200B;**[!UICONTROL Enter]**。 [試用](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&rotate=90){target="_blank"}。
 
@@ -117,7 +117,7 @@ _從[基本]索引標籤開始建立影像預設集。_
 
 _Medium_&#x200B;影像預設集具有500畫素的寬度和800畫素的高度。 在此歷程的第一部分中，您已閱讀有關以不同格式傳送資產的資訊。 從&#x200B;**[!UICONTROL 格式]**&#x200B;下拉式功能表中，您可以選擇以JPEG、PNG、TIFF或數種其他格式傳送資產。 您可以靈活處理。
 
-選取&#x200B;**[!UICONTROL 進階]**&#x200B;索引標籤，可為您提供資產色域的選項。 根據您在&#x200B;**[!UICONTROL 基本]**&#x200B;標籤中選取的格式(在上述範例中是選取JPEG)，您可以在RGB、灰階或CMYK中傳送資產。 從&#x200B;**[!UICONTROL 色彩設定檔]**&#x200B;下拉式功能表中，您可以選取如何傳遞要用於列印的CMYK影像資產。 也請注意，您可以套用其他引數來銳利化影像。 在此情況下，已套用&#x200B;**[!UICONTROL 不銳利化遮色片]**。
+選取&#x200B;**[!UICONTROL 進階]**&#x200B;索引標籤，可為您提供資產色域的選項。 根據您在&#x200B;**[!UICONTROL 基本]**&#x200B;標籤中選取的格式（在上述範例中是選取JPEG），您可以在RGB、灰階或CMYK中傳送資產。 從&#x200B;**[!UICONTROL 色彩設定檔]**&#x200B;下拉式功能表中，您可以選取如何傳遞要用於列印的CMYK影像資產。 也請注意，您可以套用其他引數來銳利化影像。 在此情況下，已套用&#x200B;**[!UICONTROL 不銳利化遮色片]**。
 
 ![從[進階]索引標籤選取選項，以建立影像預設集](/help/assets/dynamic-media/assets/dm-image-preset-advancedtab.png)
 _從[進階]索引標籤選取選項，以建立影像預設集。_
@@ -217,17 +217,18 @@ _套用了彈出式檢視器的`Running`影像集。_
 _Dynamic Media Help topics_
 
 * [How to create image presets](/help/assets/dynamic-media/image-presets.md)
-* A list of [image processing parameters](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=zh-Hant) that you can use in the Image Modifier field when you create an image preset
+* A list of [image processing parameters](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html) that you can use in the Image Modifier field when you create an image preset
 * [How to preview assets](/help/assets/dynamic-media/previewing-assets.md)
 * [How to preview 3D assets](/help/assets/dynamic-media/previewing-3d-assets.md)
 * [How to create Image sets](/help/assets/dynamic-media/image-sets.md)
 * [How to create Spin sets](/help/assets/dynamic-media/spin-sets.md)
-* [How to create Mixed Media sets](/help/assets/dynamic-media/mixed-media-sets.md) -->
+* [How to create Mixed Media sets](/help/assets/dynamic-media/mixed-media-sets.md)
+-->
 
 _動態媒體教學課程_
 
-* [搭配Experience Manager Assets使用Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=zh-Hant)
-* [Adobe Experience Manager內容庫](https://experienceleague.adobe.com/zh-hant?lang=en#recommended/solutions/experience-manager) （在&#x200B;_Dynamic Media_&#x200B;上搜尋）
+* [搭配Experience Manager Assets使用Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
+* [Adobe Experience Manager內容庫](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) （在&#x200B;_Dynamic Media_&#x200B;上搜尋）
 
 _Dynamic Media檢視器_
 
