@@ -38,7 +38,7 @@ ht-degree: 28%
 
 請觀看 2026 年 3 月發行概觀影片，以了解 2026.3.0 版本新增功能摘要：
 
->[!VIDEO](https://video.tv.adobe.com/v/3483060/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3483071/?captions=chi_hant&quality=12)
 
 ## AEM Beta計畫 {#aem-beta-programs}
 
