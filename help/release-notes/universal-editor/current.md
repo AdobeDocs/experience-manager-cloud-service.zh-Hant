@@ -26,6 +26,6 @@ ht-degree: 59%
 
 ## 新增功能 {#what-is-new}
 
-* [ RTF編輯器(RTE)工具列](/help/implementing/universal-editor/configure-rte.md#image)中的新增影像選項，現在支援[在AEM as a Cloud Service中製作及保留內容的專案。](https://www.aem.live/docs/aem-authoring)
+* [&#x200B; RTF編輯器(RTE)工具列](/help/implementing/universal-editor/configure-rte.md#image)中的新增影像選項，現在支援[在AEM as a Cloud Service中製作及保留內容的專案。](https://www.aem.live/docs/aem-authoring)
 * [現在，從編輯器導覽回](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)主畫面時，屬性面板[可摺疊。](/help/sites-cloud/authoring/universal-editor/navigation.md#home-button)
    * 如果您想要使用此功能，請聯絡Adobe客戶服務。
