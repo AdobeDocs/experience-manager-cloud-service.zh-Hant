@@ -5,7 +5,7 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 5f25d73203fea21122a8f77b82fcfa6383561001
+source-git-commit: 090a890e25ee45fb8a46255c097f243a24b00756
 workflow-type: tm+mt
 source-wordcount: '2303'
 ht-degree: 25%
@@ -185,7 +185,7 @@ Adobe 非常重視應用程式的監控、可用性和效能。AEM as a Cloud Se
 
    ![變更網頁交易時間圖表上的追蹤器指標](/help/implementing/cloud-manager/assets/new-relic/new-relic-web-transactions-time.png)
 
-1. 按一下表格中的任何變更事件以開啟詳細檢視。
+1. 按一下圖表中的任何變更事件以開啟詳細檢視。
 
    ![反白顯示deepLink URL的部署屬性面板](/help/implementing/cloud-manager/assets/new-relic/new-relic-deeplink.png) <i>變更事件的詳細檢視。</i>
 
