@@ -5,10 +5,10 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 087285bf1023f844fe8d63817e0202276e01c411
+source-git-commit: 5f25d73203fea21122a8f77b82fcfa6383561001
 workflow-type: tm+mt
-source-wordcount: '2274'
-ht-degree: 27%
+source-wordcount: '2303'
+ht-degree: 25%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 27%
 
 Adobe 非常重視應用程式的監控、可用性和效能。AEM as a Cloud Service包括存取New Relic One監控，讓團隊在標準產品方案中可全面掌握系統和環境效能量度。
 
-本檔案概述如何在AEM as a Cloud Service環境中管理對New Relic One應用程式效能監控(APM)功能的存取。 有效管理這些功能可支援最佳效能，並將AEM as a Cloud Service的優點最大化。
+本文概述如何在AEM as a Cloud Service環境中管理對New Relic One應用程式效能監控(APM)功能的存取。 有效管理這些功能可支援最佳效能，並將AEM as a Cloud Service的優點最大化。
 
 建立新的生產計畫時，會自動建立與您的AEM as a Cloud Service計畫關聯的New Relic One子帳戶。 [必須啟動此子帳戶](#activate-sub-account)才能開始擷取資料。
 
@@ -45,15 +45,17 @@ Adobe 非常重視應用程式的監控、可用性和效能。AEM as a Cloud Se
 >
 >具有&#x200B;**業務負責人**&#x200B;角色的使用者必須登入才能管理New Relic One子帳戶。
 
-1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
+**啟用您的New Relic One子帳戶：**
 
-1. 在&#x200B;**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**&#x200B;主控台上，按一下您要管理New Relic One使用者的程式。
+1. 在[experience.adobe.com](https://experience.adobe.com)登入Cloud Manager。
+   1. 在「**快速存取**」區段中，按一下「**Experience Manager**」。
+   1. 在左側面板中，按一下「**Cloud Manager**」。
+1. 選取您想要的組織。
+1. 在&#x200B;**我的程式**&#x200B;主控台上，按一下您要管理New Relic One使用者的程式。
+1. 從左側功能表的&#x200B;**服務**&#x200B;下方，按一下![資料圖示或環境圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **環境**。
+1. 在「環境」頁面的右上角，按一下「![更多」圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，然後按一下「**啟動New Relic**」。
 
-1. 在計畫總覽頁面的&#x200B;**環境**&#x200B;卡片底部，按一下![更多圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)並選取&#x200B;**啟用New Relic**。
-
-   ![管理使用者](assets/newrelic-activate-sub-account.png)
-
-   * 您也可以存取&#x200B;**管理使用者**&#x200B;選項。 在程式的&#x200B;**環境**&#x200B;畫面頂端，按一下![更多煙幕圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
+   ![啟動New Relic](/help/implementing/cloud-manager/assets/new-relic/new-relic-activate.png)
 
 1. [對相同的環境執行管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines)以成功完成，以完成子帳戶啟用。
 
@@ -61,31 +63,36 @@ Adobe 非常重視應用程式的監控、可用性和效能。AEM as a Cloud Se
 
 ## 管理New Relic One使用者 {#manage-users}
 
-按照以下步驟定義與您的 AEM as a Cloud Service 計畫關聯的 New Relic One 子帳戶的使用者。
+您可以定義與您的AEM as a Cloud Service方案相關聯之New Relic One子帳戶的使用者。
 
 >[!NOTE]
 >
 >具有&#x200B;**業務負責人**&#x200B;或&#x200B;**部署管理員**&#x200B;角色的使用者必須登入才能管理New Relic One使用者。
 
-1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
+**若要管理New Relic One使用者：**
 
-1. 按一下您要為其管理New Relic One使用者的計畫。
+1. 在[experience.adobe.com](https://experience.adobe.com)登入Cloud Manager。
+   1. 在「**快速存取**」區段中，按一下「**Experience Manager**」。
+   1. 在左側面板中，按一下「**Cloud Manager**」。
+1. 選取您想要的組織。
+1. 在&#x200B;**我的程式**&#x200B;主控台上，按一下您要管理New Relic One使用者的程式。
+1. 從左側功能表的&#x200B;**服務**&#x200B;下方，按一下![資料圖示或環境圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **環境**。
+1. 在「環境」頁面的右上角，按一下「![更多」圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，然後按一下「**管理使用者**」。
 
-1. 在計畫總覽頁面的&#x200B;**環境**&#x200B;卡片底部，按一下![更多圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)並選取&#x200B;**管理使用者**。
+   ![管理New Relic使用者](/help/implementing/cloud-manager/assets/new-relic/new-relic-manage-users.png)
 
-   ![管理使用者](assets/newrelic-manage-users.png)
+1. 在&#x200B;**管理New Relic使用者**&#x200B;對話方塊中，執行下列動作：
 
-   * 您也可以存取&#x200B;**管理使用者**&#x200B;選項。 在程式的&#x200B;**環境**&#x200B;畫面頂端，按一下![更多煙幕圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
-
-1. 在&#x200B;**管理New Relic使用者**&#x200B;對話方塊中，輸入您要新增的使用者的名字和姓氏，然後按一下&#x200B;**新增**&#x200B;按鈕。 對您要新增的所有使用者重複此步驟。
+   * 輸入要新增的使用者的名字和姓氏
+   * 輸入他們相關聯的電子郵件地址
+   * 按一下「![新增」圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg)「**新增**」。 對要新增的每個使用者重複此步驟。
+   * 按一下![刪除圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DeleteOutline_18_N.svg)以移除使用者。
 
    ![新增使用者](assets/newrelic-add-users.png)
 
-1. 若要移除New Relic One使用者，請按一下代表該使用者之列右端的刪除按鈕。
+1. 按一下&#x200B;**儲存**。
 
-1. 按一下&#x200B;**儲存**&#x200B;以建立收藏集。
-
-定義使用者後，New Relic 會向您授予存取權限的每個使用者發送一封確認電子郵件，以便使用者完成設定過程並登入。
+定義使用者後，New Relic會傳送確認電子郵件給每一位使用者。 接著，他們便能完成啟用程式並登入。
 
 >[!NOTE]
 >
@@ -111,25 +118,25 @@ Adobe 非常重視應用程式的監控、可用性和效能。AEM as a Cloud Se
 
 如果您沒有收到來自New Relic的確認電子郵件，請參閱[疑難排解小節](#troubshooting)。
 
-## 存取New Relic One {#accessing-new-relic}
+## 開啟New Relic One {#accessing-new-relic}
 
-在您[啟動您的New Relic帳戶](#activate-account)後，您可以透過Cloud Manager或直接存取New Relic One。
+在您[啟動您的New Relic帳戶](#activate-account)後，您可以透過Cloud Manager或直接開啟New Relic One。
 
-**透過Cloud Manager存取New Relic One：**
+**透過Cloud Manager開啟New Relic One：**
 
-1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager 並選取適當的組織。
+1. 在[experience.adobe.com](https://experience.adobe.com)登入Cloud Manager。
+   1. 在「**快速存取**」區段中，按一下「**Experience Manager**」。
+   1. 在左側面板中，按一下「**Cloud Manager**」。
+1. 選取您想要的組織。
+1. 在&#x200B;**我的程式**&#x200B;主控台上，按一下您要開啟New Relic One的程式。
+1. 從左側功能表的&#x200B;**服務**&#x200B;下方，按一下![資料圖示或環境圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **環境**。
+1. 在「環境」頁面的右上角，按一下「![更多」圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)，然後按一下「**開啟New Relic**」。
 
-1. 按一下您要存取New Relic One的方案。
-
-1. 在計畫總覽頁面的&#x200B;**環境**&#x200B;卡片底部，按一下![更多圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)並選取&#x200B;**開啟New Relic**。
-
-   ![管理使用者](assets/newrelic-access.png)
-
-   * 您也可以存取New Relic。 在程式的&#x200B;**環境**&#x200B;畫面頂端，按一下![更多煙幕圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
+   ![開啟New Relic](/help/implementing/cloud-manager/assets/new-relic/new-relic-open-new-relic.png)
 
 1. 在打開的新瀏覽器索引標籤中，登入到 New Relic One。
 
-**若要直接存取New Relic One：**
+**若要直接開啟New Relic One：**
 
 1. 前往[New Relic的登入頁面](https://login.newrelic.com/login)。
 
@@ -149,11 +156,11 @@ Adobe 非常重視應用程式的監控、可用性和效能。AEM as a Cloud Se
 
 <!-- See also [Introduction to change tracking](https://docs.newrelic.com/docs/change-tracking/overview/) and [Record and view deployments](https://docs.newrelic.com/docs/apm/apm-ui-pages/events/record-deployments/). -->
 
-### 支援的管道和流程 {#supported-pipelines}
+### 支援的管道和工作流程 {#supported-pipelines}
 
-以下Cloud Manager管道和最後兩種流程型別會在New Relic One中產生變更追蹤器：
+以下Cloud Manager管道和最後兩種工作流程型別會在New Relic One中產生變更追蹤器：
 
-| 管道/流量型別 | 說明 |
+| 管道/工作流程型別 | 說明 |
 |---|---|
 | **完整棧疊（CI_CD部署）** | 全棧疊管道執行。 追蹤包含管道名稱和執行ID。 |
 | **網頁層設定** | Web層設定管道執行。 追蹤包含管道名稱和執行ID。 |
