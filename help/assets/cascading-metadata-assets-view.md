@@ -5,10 +5,10 @@ feature: Metadata
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: e7c80792-f4db-4604-a51f-b20f066b2c1b
-source-git-commit: 0938d8170a4af2fc19c065c72c97d45080a215c8
+source-git-commit: a34dfbaafce0b43c9e48400175e28ae43153ab83
 workflow-type: tm+mt
-source-wordcount: '1198'
-ht-degree: 5%
+source-wordcount: '1171'
+ht-degree: 4%
 
 ---
 
@@ -26,10 +26,6 @@ ht-degree: 5%
 * 根據在其他欄位中指定的值，將欄位指定為必填欄位。
 * 根據在其他欄位中指定的值變更針對特定欄位顯示的選項。
 * 根據在其他欄位中指定的值，在特定欄位中設定預設中繼資料值。
-
->[!IMPORTANT]
->
->階層式中繼資料功能以「有限可用性」功能提供。 您可以[建立並提交 Adobe 客戶支援案例](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html)，以針對您的部署將其啟用。
 
 ## 在[!DNL Experience Manager]中設定階層式中繼資料 {#configure-cascading-metadata-in-aem}
 
@@ -148,10 +144,10 @@ ht-degree: 5%
 
 ## 後續步驟 {#next-steps}
 
-* [觀看在Assets檢視中管理中繼資料表單的相關影片](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html?lang=zh-Hant)
+* [觀看在Assets檢視中管理中繼資料表單的相關影片](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html)
 
 * 使用資產檢視使用者介面所提供的[!UICONTROL 意見回饋]選項提供產品意見回饋
 
 * 若要提供文件意見回饋，請使用右側邊欄提供的[!UICONTROL 編輯此頁面]![來編輯頁面](assets/do-not-localize/edit-page.png)或[!UICONTROL 記錄問題]![來建立 GitHub 問題](assets/do-not-localize/github-issue.png)
 
-* 聯絡[客戶服務](https://experienceleague.adobe.com/zh-hant?support-solution=General#support)
+* 聯絡[客戶服務](https://experienceleague.adobe.com/?support-solution=General#support)
