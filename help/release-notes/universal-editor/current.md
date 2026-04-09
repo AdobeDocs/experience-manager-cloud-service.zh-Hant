@@ -1,20 +1,20 @@
 ---
-title: 通用編輯器 2026.04.02 發行說明
-description: 此為通用編輯器 2026.04.02 版本的發行說明。
+title: 通用編輯器 2026.04.09 發行說明
+description: 此為通用編輯器 2026.04.09 版本的發行說明。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: f071d1c53f26429a791cc7a7f8f0aafa10f54e8d
+source-git-commit: a5f3b703706beab106591477372328e45f881b44
 workflow-type: tm+mt
-source-wordcount: '113'
-ht-degree: 73%
+source-wordcount: '138'
+ht-degree: 59%
 
 ---
 
 
-# 通用編輯器 2026.04.02 發行說明 {#release-notes}
+# 通用編輯器 2026.04.09 發行說明 {#release-notes}
 
-以下是通用編輯器 2026 年 2 月 4 日版本的發行說明。
+以下是通用編輯器 2026 年 9 月 4 日版本的發行說明。
 
 >[!TIP]
 >
@@ -26,8 +26,6 @@ ht-degree: 73%
 
 ## 新增功能 {#what-is-new}
 
-* [&#x200B; RTF編輯器(RTE)工具列已新增](/help/implementing/universal-editor/configure-rte.md#special-characters)新增特殊字元[的可設定選項](/help/sites-cloud/authoring/universal-editor/authoring.md#formatting-options)。
-
-## 其他改善功能 {#other-improvements}
-
-* OpenAPI配接器不會再錯誤地將標籤欄位傳回為多個欄位。
+* [ RTF編輯器(RTE)工具列](/help/implementing/universal-editor/configure-rte.md#image)中的新增影像選項，現在支援[在AEM as a Cloud Service中製作及保留內容的專案。](https://www.aem.live/docs/aem-authoring)
+* [現在，從編輯器導覽回](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)主畫面時，屬性面板[可摺疊。](/help/sites-cloud/authoring/universal-editor/navigation.md#home-button)
+   * 如果您想要使用此功能，請聯絡Adobe客戶服務。

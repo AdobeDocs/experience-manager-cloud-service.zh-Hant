@@ -4,17 +4,17 @@ description: 這是通用編輯器預覽版本的發行說明。
 feature: Release Information
 role: Admin
 exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
-source-git-commit: f071d1c53f26429a791cc7a7f8f0aafa10f54e8d
+source-git-commit: 95c52db6257f6141fb2991ae84a1c73278cfc062
 workflow-type: tm+mt
-source-wordcount: '165'
-ht-degree: 49%
+source-wordcount: '147'
+ht-degree: 54%
 
 ---
 
 
 # 通用編輯器預覽發行說明 {#preview}
 
-這是通用編輯器&#x200B;**預覽版本**&#x200B;的發行說明。您目前可以在通用編輯器&#x200B;**預覽環境**&#x200B;中使用這些功能。這些功能預計於2026年4月9日正式發佈。
+這是通用編輯器&#x200B;**預覽版本**&#x200B;的發行說明。您目前可以在通用編輯器&#x200B;**預覽環境**&#x200B;中使用這些功能。這些功能預計於2026年4月30日正式發行。
 
 提供這些&#x200B;**預覽**&#x200B;版本注意事項是為了方便您瞭解即將對通用編輯器進行哪些變更，而且您可以透過[切換至預覽版本來測試這些變更。](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
 
@@ -28,5 +28,4 @@ ht-degree: 49%
 
 ## 即將推出的功能 {#upcoming-features}
 
-* AgentBridge已引入AI助理和通用編輯器整合。
-* [&#x200B; RTF編輯器(RTE)工具列](/help/implementing/universal-editor/configure-rte.md#image)中的新增影像選項，現在支援[在AEM as a Cloud Service中製作及保留內容的專案。](https://www.aem.live/docs/aem-authoring)
+* 已修正以下問題：[可編輯專案](/help/sites-cloud/authoring/universal-editor/authoring.md#editing-content)的徽章在某些情況下會遮蔽其背後的專案。
