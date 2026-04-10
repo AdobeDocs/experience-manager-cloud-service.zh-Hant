@@ -5,7 +5,7 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 090a890e25ee45fb8a46255c097f243a24b00756
+source-git-commit: 93d22e32dc2f21bddccf7ad1305aab7d22b8345a
 workflow-type: tm+mt
 source-wordcount: '2303'
 ht-degree: 25%
@@ -86,7 +86,7 @@ Adobe 非常重視應用程式的監控、可用性和效能。AEM as a Cloud Se
    * 輸入要新增的使用者的名字和姓氏
    * 輸入他們相關聯的電子郵件地址
    * 按一下「![新增」圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg)「**新增**」。 對要新增的每個使用者重複此步驟。
-   * 按一下![刪除圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DeleteOutline_18_N.svg)以移除使用者。
+   * 按一下![關閉圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg)以移除使用者。
 
    ![新增使用者](assets/newrelic-add-users.png)
 
