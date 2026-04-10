@@ -4,10 +4,10 @@ description: 了解如何使用 Edge Delivery Services 傳遞您的 Cloud Manage
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: 96e80f49c6e01a266aa5cf1a69cd67045277c8c6
+source-git-commit: 71d514b2eaf83732cc0856f6b508ab814fe7f469
 workflow-type: tm+mt
-source-wordcount: '1127'
-ht-degree: 73%
+source-wordcount: '1426'
+ht-degree: 56%
 
 ---
 
@@ -22,17 +22,39 @@ Edge Delivery Services 是一組可組合的服務，可讓您以高度靈活的
 
 您可以透過通用編輯器與文件型製作來使用 AEM 內容管理和所見即所得製作。
 
-AEM as a Cloud Service 中的 Cloud Manager 可讓您為專案啟用 Edge Delivery Service。
+AEM as a Cloud Service中的Cloud Manager可讓您為專案啟用Edge Delivery服務。
 
 >[!TIP]
 >
->有關 Edge Delivery Service 及其如何與 AEM 搭配使用的詳細資訊，請參閱 [Edge Delivery Services 概觀](/help/edge/overview.md)。
+>有關 Edge Delivery Service 及其如何與 AEM 搭配使用的詳細資訊，請參閱 [Edge Delivery Services 概觀](/help/edge/overview.md#how-does-it-work)。
 
 ## 關於 Cloud Manager 中的 Edge Delivery Services {#edge-in-cloud-manager}
 
 如果您已在 Adobe Experience Manager Sites 中獲得 Edge Delivery Services 授權，現在可以直接在 Cloud Manager 中使用 Edge Delivery Services 讓您的網站上線，並[使用引導式自助服務體驗](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)來啟用網站。
 
 此外，您還可以獲得整合的體驗來管理所有 AEM 屬性，同時確保重要工作流程的一致性。這些工作流程包括網域名稱管理、SSL 憑證管理和內容傳遞網路對應。
+
+Cloud Manager為Adobe Managed CDN中的Edge Delivery Services提供兩種部署型別，且具有不同功能。 [了解更多](#edge-delivery-deployment-options)。
+
+>[!NOTE]
+>
+>Edge Delivery Services也可以使用設定管道和來源選擇器整合到現有AEM Sites as a Cloud Service環境中。 如需詳細資訊，請參閱[代理至Edge Delivery Services](/help/implementing/dispatcher/cdn-configuring-traffic.md#proxying-to-edge-delivery)和[從現有環境設定Proxy](https://www.aem.live/docs/byo-cdn-adobe-managed#option-1-setup-a-proxy-from-an-existing-environment)。
+
+## Adobe Managed CDN中的Edge Delivery Services部署選項 {#edge-delivery-deployment-options}
+
+Adobe Managed CDN中Edge Delivery Services有兩種部署型別：
+
+1. **使用現有的AEMaaCS環境** — 從現有的AEM Sites as a Cloud Service環境設定HTTP Proxy。 如果您已有現有的環境，而且想要將網站的部分內容移轉至Edge Delivery Services，通常就會使用此方法。 請參閱[從現有環境設定Proxy](https://www.aem.live/docs/byo-cdn-adobe-managed#option-1-setup-a-proxy-from-an-existing-environment)。
+
+1. **沒有現有的AEMaaCS環境（Edge環境）** — 獨立於AEM Sites as a Cloud Service環境設定新的Edge Delivery網站。 如果您沒有AEM製作或發佈環境，而且想要自行使用Edge Delivery Services，您可使用這種方法。 請參閱[在沒有現有環境的情況下設定Edge Delivery網站](https://www.aem.live/docs/byo-cdn-adobe-managed#option-2-setup-an-edge-delivery-site-without-an-existing-environment)。
+
+這兩個選項也有不同的功能：
+
+* **設定管道**&#x200B;可用於AEM as a Cloud Service環境。
+* **設定管道**&#x200B;目前只能透過有限的Beta程式提供給Edge環境使用。
+
+如需完整的設定指示，請參閱[Adobe Managed CDN](https://www.aem.live/docs/byo-cdn-adobe-managed)
+
 
 ## 關於具有AEM製作功能的Edge Delivery Services (Beta) {#eds-aem-authoring}
 
@@ -74,8 +96,10 @@ Cloud Manager可讓您設定是否針對您的方案環境布建發佈層級。 
 透過 Cloud Manager 存取和使用您的 Edge Delivery Services 授權，藉此將 Adobe 的優勢提升至最高。這樣做可讓您善用幾個主要優勢。
 
 * [使用您選擇之程式的授權](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)，或[更新其他程式](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)，或者兩者兼具。
+* [使用外部Git存放庫](/help/implementing/cloud-manager/managing-code/external-repositories.md) （自備Git）來同步和部署您的Edge Delivery Services網站程式碼。 若要運用此功能，您必須先在Cloud Manager[中](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)加入您的網站。<!-- NEW from CQDOC-22867 -->
+* [使用Edge Delivery Config Pipeline](/help/implementing/dispatcher/cdn-configuring-traffic.md)，定義流量篩選器、來源選取器和重新導向等規則，為您的Edge Delivery網站設定Adobe管理的CDN設定。<!-- NEW from CQDOC-22867 -->
 * 善用 [API 優先](https://developer.adobe.com/experience-cloud/experience-manager-apis/)優勢來執行 CRUD (建立、讀取、更新、刪除) 操作。
-* [存取 SLA 報告](/help/implementing/cloud-manager/reports/report-sla.md)
+* [存取SLA報告](/help/implementing/cloud-manager/reports/report-sla.md)。
 * 為您註冊的生產程式[獲取 Adobe 支援](/help/edge/overview.md#support-ticket)。
 
 如果擁有 Edge Delivery Services (EDS) 授權，則可以在您的 Edge Delivery 網站上使用 [Adobe 管理的內容傳遞網路](/help/implementing/dispatcher/cdn.md#aem-managed-cdn)。這樣做可啟用自助式內容傳遞網路管理，以及每三個月自動續約的 DV 憑證，除非您刪除該憑證。
@@ -123,7 +147,7 @@ Cloud Manager 中的 **Edge Delivery 待辦事項清單**&#x200B;是上線任務
 | 8 | 設定推播驗證 | 請參閱「[為 Edge Delivery 網站設定推播驗證](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)」。 |
 | 9 | 上線 | 請參閱「[上線檢查清單](https://www.aem.live/docs/go-live-checklist)」。 |
 
->[!VIDEO](https://video.tv.adobe.com/v/3441574?captions=chi_hant&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## 記錄支援服務單 {#eds-support-ticket}
 
