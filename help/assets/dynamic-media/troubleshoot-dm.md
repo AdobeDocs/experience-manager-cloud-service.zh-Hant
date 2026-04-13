@@ -6,9 +6,9 @@ feature: Troubleshooting,Image Sets,Viewers
 role: Admin,User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 69f83da6eee02e0b1d116d71c5d0b022c91e3ba0
 workflow-type: tm+mt
-source-wordcount: '1150'
+source-wordcount: '1260'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 請參閱[新Dynamic Media組態的疑難排解](/help/assets/dynamic-media/config-dm.md#troubleshoot-dm-config)。
 
-## 一般(所有Assets) {#general-all-assets}
+## 一般（所有Assets） {#general-all-assets}
 
 以下是適用於所有資產的一些一般提示和訣竅。
 
@@ -38,7 +38,7 @@ ht-degree: 1%
 
 ### 同步記錄 {#synchronization-logging}
 
-同步處理錯誤和問題記錄在`error.log` (Experience Manager伺服器目錄`/crx-quickstart/logs/`)。 有充足的記錄可判斷大部分問題的根本原因，但您可以透過Sling主控台(`com.adobe.cq.dam.ips`https://localhost[/system/console/slinglog:4502)增加](https://localhost:4502/system/console/slinglog)套件上DEBUG的記錄以收集詳細資訊。
+同步處理錯誤和問題記錄在`error.log` （Experience Manager伺服器目錄`/crx-quickstart/logs/`）。 有充足的記錄可判斷大部分問題的根本原因，但您可以透過Sling主控台(`com.adobe.cq.dam.ips`https://localhost[/system/console/slinglog:4502)增加](https://localhost:4502/system/console/slinglog)套件上DEBUG的記錄以收集詳細資訊。
 
 ### 版本控制 {#version-control}
 
@@ -220,6 +220,34 @@ ht-degree: 1%
 1. 在雲端服務底下，導覽至Dynamic Media設定頁面，然後開啟Dynamic Media - S7設定的設定對話方塊。
 1. 不做任何變更，選取&#x200B;**儲存**。
 這個儲存動作會再次觸發邏輯，以建立並同步範例資產、檢視器預設集CSS和圖稿。
+
+### 問題：開啟「頻寬與儲存」索引標籤時發#2046錯誤 {#error-2046-bandwidth-storage}
+
+**如何偵錯**
+
+![錯誤#2046顯示在Dynamic Media Classic的[頻寬與儲存]索引標籤中](assets/2046-error.png)
+
+* 使用者在Dynamic Media Classic (Scene7)案頭應用程式中開啟「頻寬與儲存」索引標籤時遇到「錯誤#2046」。
+* 該問題是由於Adobe AIR架構使用的快取RSL （執行階段共用程式庫）中的數位簽署憑證過期所導致。
+* 本機憑證重新驗證期間發生失敗。
+
+**解決方案**
+
+清除本機快取，以強制Adobe AIR下載更新的RSL （執行階段共用程式庫）。
+
+**macOS**
+
+1. 瀏覽到:
+   `~/Library/Caches/Adobe/Flash Player/AssetCache/<folder>/`
+2. 刪除所有`.swz`和`.heu`檔案。
+
+**Windows**
+
+1. 瀏覽到:
+   `%APPDATA%\Adobe\Flash Player\AssetCache\<folder>\`
+2. 刪除資料夾中的所有檔案。
+
+清除快取之後，請重新啟動應用程式。
 
 ### 問題：檢視器預設集製作中未載入影像預覽 {#image-preview-not-loading}
 
