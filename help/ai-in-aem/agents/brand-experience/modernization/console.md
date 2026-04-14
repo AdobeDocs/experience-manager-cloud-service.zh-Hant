@@ -4,9 +4,9 @@ description: Experience現代化主控台介面和功能的參考指南
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 43d8c124-fc87-4cec-a91d-ab12255ae321
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: 95e3046fca3cc2ede57d9e1e9a4ff01a0ba566c3
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1220'
 ht-degree: 0%
 
 ---
@@ -157,12 +157,18 @@ Experience Modernization Console是Edge Delivery Services的託管、AI輔助開
 
 ## 設定檢視 {#settings-view}
 
-設定檢視可讓您管理主控台的基本設定。
+設定檢視可讓您管理主控台的基本設定，並分為下列各節。
 
 ![設定檢視](assets/settings-view.png)
 
+如果您變更任何區段中的任何值，請按一下&#x200B;**儲存**，將這些變更儲存至個別區段。
+
 * **專案**&#x200B;可讓您檢視及編輯專案設定，例如自訂資料庫URL。
-* **支援**&#x200B;可讓您向AEM支援團隊請求協助。
+   * **資料庫URL** — 此URL指向library.json檔案，該檔案定義了可用的區塊、其變數和範例內容。
+   * **網站基底URL** — 正在移轉的網站原始URL
+* **代理程式許可權** — 允許代理程式存取組態選項
+   * **允許LLM代表我存取admin.hlx.page** — 啟用後，AI助理可以使用您的IMS憑證從Adobe Experience Manager擷取網站設定和中繼資料。
+   * **自訂IMS權杖** — 您可以提供自訂IMS權杖來使用，而不是預設工作階段權杖。
 * **認證**&#x200B;可讓您為Figma指定個人存取權杖，讓[主控台可以存取您專案的設計區塊。](/help/ai-in-aem/agents/brand-experience/modernization/prompting-guide.md#figma-block-migration)
    * 權杖需要下列唯讀範圍：
       * `file_content:read`
@@ -173,4 +179,7 @@ Experience Modernization Console是Edge Delivery Services的託管、AI輔助開
       * `file_dev_resources:read`
       * `projects:read`
    * [如需設定個人存取權杖的詳細資訊，請參閱Figma檔案](https://help.figma.com/hc/en-us/articles/8085703771159-Manage-personal-access-tokens)。
-* **重設工作區**&#x200B;將主控台還原為開始狀態，所有未推送或未上傳的變更將會遺失。
+* **支援**&#x200B;在您提出支援要求時，會摘要與Adobe支援團隊共用的資訊。
+   * **要求支援** — 按一下即可開始向Adobe要求支援，無需離開主控台。
+* **危險區域**&#x200B;包含可還原工作區的設定。
+   * **重設工作區** — 按一下以將工作區重設為初始狀態。 此動作無法還原。
