@@ -4,10 +4,10 @@ description: 瞭解AEM as a Cloud Service中的內容搜尋和索引。
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 feature: Operations
 role: Admin
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 54168b195bd234b0ca7932ca52c11056558dc53d
 workflow-type: tm+mt
-source-wordcount: '2906'
-ht-degree: 1%
+source-wordcount: '3321'
+ht-degree: 0%
 
 ---
 
@@ -21,13 +21,13 @@ ht-degree: 1%
 
 1. 使用者無法再存取單一AEM執行個體的索引管理器，以除錯、設定或維護索引。 它僅用於本機開發和內部部署。
 1. 使用者不會變更單一AEM例項上的索引，也不必再擔心一致性檢查或重新編制索引。
-1. 一般而言，索引變更會在進入生產階段前開始，以免迴避Cloud Manager CI/CD管道中的品質閘道，及不影響生產階段的業務KPI。
+1. 一般而言，索引變更是在進入生產階段前開始，以免迴避Cloud Manager CI/CD管道中的品質閘道，以及影響生產階段的業務KPI。
 1. 客戶可在執行階段使用所有相關量度（包括生產環境中的搜尋效能），提供搜尋和建立索引主題的整體檢視。
 1. 客戶可以根據需求設定警報。
 1. SRE全天候監控系統健康狀況，並儘早採取動作。
 1. 索引設定已透過部署變更。 索引定義變更的設定方式與其他內容變更相同。
 1. 在AEM as a Cloud Service的高階層，隨著推出[滾動部署模型](#index-management-using-rolling-deployments)，有兩組索引存在：一組用於舊版本，另一組用於新版本。
-1. 客戶可以在Cloud Manager建置頁面上檢視索引工作是否完成，並會在新版本準備好接收流量時收到通知。
+1. 客戶可以在Cloud Manager建置頁面上檢視索引工作是否完成，並在新版本準備好接收流量時收到通知。
 
 限制:
 
@@ -40,7 +40,6 @@ ht-degree: 1%
 >
 >如需Oak索引和查詢的詳細資訊，包括進階搜尋和索引功能的詳細說明，請參閱[Apache Oak檔案](https://jackrabbit.apache.org/oak/docs/query/query.html)。
 
-
 ## 使用方式 {#how-to-use}
 
 索引定義可以分為三個主要使用案例，如下所示：
@@ -51,6 +50,202 @@ ht-degree: 1%
 
 針對上述第1點和第2點，您需要在個別的Cloud Manager發行排程中，建立索引定義，作為自訂程式碼庫的一部分。 如需詳細資訊，請參閱[部署至AEM as a Cloud Service](/help/implementing/deploying/overview.md)檔案。
 
+如果需要變更索引組態，請確定您的組態符合[專案組態](#project-configuration)區段中提供的准則。 相應地進行任何必要的調整。
+
+## 專案設定
+
+將其整合至專案的步驟如下：
+
+1. 我們強烈建議使用Jackrabbit `1.3.2`的>= `filevault-package-maven-plugin`版。 如有需要，請更新最上層`pom.xml`中的版本：
+
+   ```xml
+   <plugin>
+       <groupId>org.apache.jackrabbit</groupId>
+           <artifactId>filevault-package-maven-plugin</artifactId>
+           ...
+           <version>1.3.2</version>
+       ...
+   </plugin>
+   ```
+
+2. 新增下列專案至最上層`pom.xml`：
+
+   ```xml
+   <jackrabbit-packagetype>
+       <options>   
+           <immutableRootNodeNames>apps,libs,oak:index</immutableRootNodeNames>
+       </options>
+   </jackrabbit-packagetype>
+   ```
+
+   以下是包含上述設定的專案最上層`pom.xml`檔案的範例：
+
+   檔案名稱： `pom.xml`
+
+   ```xml
+   <plugin>
+       <groupId>org.apache.jackrabbit</groupId>
+           <artifactId>filevault-package-maven-plugin</artifactId>
+           ...
+           <version>1.3.2</version>
+           <configuration>
+               ...
+               <validatorsSettings>
+                   <jackrabbit-packagetype>
+                       <options>
+                           <immutableRootNodeNames>apps,libs,oak:index</immutableRootNodeNames>
+                       </options>
+                   </jackrabbit-packagetype>
+                   ...
+               ...
+   </plugin>
+   ```
+
+3. 在`ui.apps/pom.xml`和`ui.apps.structure/pom.xml`中，必須在`allowIndexDefinitions`中啟用`noIntermediateSaves`和`filevault-package-maven-plugin`選項。 啟用`allowIndexDefinitions`可允許自訂索引定義，而`noIntermediateSaves`可確保自動新增設定。
+
+   檔案名稱： `ui.apps/pom.xml`和`ui.apps.structure/pom.xml`
+
+   ```xml
+   <plugin>
+       <groupId>org.apache.jackrabbit</groupId>
+           <artifactId>filevault-package-maven-plugin</artifactId>
+           <configuration>
+               <allowIndexDefinitions>true</allowIndexDefinitions>
+               <properties>
+                   <cloudManagerTarget>none</cloudManagerTarget>
+                   <noIntermediateSaves>true</noIntermediateSaves>
+               </properties>
+       ...
+   </plugin>
+   ```
+
+4. 在`/oak:index`中新增`ui.apps.structure/pom.xml`的篩選器：
+
+   ```xml
+   <filters>
+       ...
+       <filter><root>/oak:index</root></filter>
+   </filters>
+   ```
+
+>[!TIP]
+>
+>如需AEM as a Cloud Service所需套件結構的詳細資訊，請參閱[AEM專案結構](/help/implementing/developing/introduction/aem-project-content-package-structure.md)。
+
+## 使用差異索引簡化索引管理
+
+大部分的AEM索引都可使用簡化的索引管理來設定。
+這可讓您透過簡單的方式自訂立即可用(OOTB)索引，並使用一個JSON檔案來定義自訂索引。
+
+>[!TIP]
+>
+>有一個線上工具可協助設定AEM索引： [Oak索引工具](https://oak-indexing.github.io/oakTools/index.html)。 它有[有關簡化索引管理](https://oak-indexing.github.io/oakTools/simplified.html)的區段，其中包含逐步指南和其他工具，可協助將自訂索引轉換為此新格式。
+
+限制：簡化索引管理目前不適用於包含`/apps`、`/libs`的索引。
+它可用於具有`includedPaths`屬性的所有索引，例如`/content`。
+針對沒有`includedPaths`屬性的索引，或`includedPaths`包含`/apps`或`/libs`的索引，
+請考慮變更查詢或使用下方的舊版索引設定模式。
+
+簡化的索引管理能夠自訂現有的開箱即用(OOTB)索引，並新增完全自訂的索引。
+使用簡化的索引管理，就不需要復制定義或明確定義版本。
+索引定義自訂會自動與最新的現成可用索引合併。
+並視需要建立新的索引版本。
+
+對於大多數索引，可以使用`diff.index`封裝建立自訂索引以及現有索引的自訂。
+若要設定這類索引，請使用下列逐步指南。
+下列範例自訂`damAssetLucene`索引
+並同時引進完全自訂的索引。
+程式如下：
+
+1. 在名為`ui.apps`的`ui.apps/src/main/content/jcr_root/_oak_index/diff.index`目錄中建立新資料夾。
+
+2. 新增包含下列內容的設定檔`.content.xml` （這是必要的預留位置設定，不是一般索引定義）： `ui.apps/src/main/content/jcr_root/_oak_index/diff.index/.content.xml`
+
+   ```xml
+   <?xml version="1.0" encoding="UTF-8"?><jcr:root
+       xmlns:jcr="http://www.jcp.org/jcr/1.0"
+       xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+       jcr:primaryType="nt:unstructured"
+       type="lucene" includedPaths="/same" queryPaths="/same" async="async">
+   <diff.json jcr:primaryType="nt:file"/></jcr:root>
+   ```
+
+3. 建立包含下列內容的文字檔`diff.json`。
+在此範例中，我們自訂立即可用的索引`damAssetLucene`
+為名為`test`的屬性加上索引。 我們也會定義
+名為`acme.testIndex`的完整自訂索引，用於索引`testing`節點中的屬性`nt:unstructured`：
+
+   `ui.apps/src/main/content/jcr_root/_oak_index/diff.index/diff.json`
+
+   ```json
+   {
+       "damAssetLucene": {
+           "indexRules": {
+               "dam:Asset": {
+                   "properties": {
+                       "test": {
+                           "name": "test",
+                           "propertyIndex": true
+                       }
+                   }
+               }
+           }
+       },
+       "acme.testIndex": {
+           "async": [ "async" ],
+           "compatVersion": 2,
+           "evaluatePathRestrictions": true,
+           "includedPaths": [ "/content" ],
+           "queryPaths": [ "/content" ],
+           "selectionPolicy": "tag",
+           "tags": [ "testing" ],
+           "type": "lucene",
+           "indexRules": {
+               "nt:unstructured": {
+                   "properties": {
+                       "testing": {
+                           "name": "testing",
+                           "propertyIndex": true
+                       }
+                   }
+               }
+           }
+       }
+   }
+   ```
+
+4. 在`ui.apps/src/main/content/META-INF/vault/filter.xml`中新增專案至FileVault篩選器：
+
+   ```xml
+   <?xml version="1.0" encoding="UTF-8"?>
+   <workspaceFilter version="1.0">
+       ...
+       <filter root="/oak:index/diff.index"/> 
+   </workspaceFilter>
+   ```
+
+套用變更後，請使用Cloud Manager部署新的應用程式。
+此部署會起始兩個新增的工作（並在必要時合併）
+製作和發佈的索引定義。
+在切換之前，基礎存放庫會使用更新的索引定義重新編制索引。
+
+## 舊版索引設定
+
+無法使用簡化的索引管理來設定索引
+需要使用舊版設定模式。
+
+舊版索引設定僅適用於不能有`includedPaths`屬性的索引
+或具有需要涵蓋`/apps`、`/libs`或`/`之屬性的使用者。
+一些現成的索引涵蓋這些路徑：
+
+* `cqPageLucene`：如果您需要自訂此索引，
+請考慮移轉您的查詢以改用`cqPageContent`，
+`includedPaths`的`/content`值和標籤。
+* `ntBaseLucene`：最佳做法是避免變更此索引，
+而改用具有前置詞（例如`acme.`）的完整自訂索引，
+僅涵蓋必要的路徑。
+如需詳細資訊，請參閱簡化的索引管理一節。
+
 ## 索引名稱 {#index-names}
 
 索引定義可以屬於以下類別之一：
@@ -59,7 +254,7 @@ ht-degree: 1%
 
 2. OOTB索引的自訂。 若要自訂OOTB索引，請附加`-custom-`及數字。 例如，`/oak:index/damAssetLucene-8-custom-1`是OOTB索引`/oak:index/damAssetLucene-8`的自訂。 自訂通常是OOTB索引的副本，加上需要編制索引的其他屬性。
 
-3. 完全自訂索引：確實可以從頭開始建立全新的索引。 這些索引還需要以`-custom-`和版本編號結尾。 此外，為了避免命名衝突，請在索引名稱中使用首碼。 例如： `/oak:index/acme.product-1-custom-2`，其中`acme.`是前置詞。
+3. 完全自訂索引：您可以從頭開始建立全新的索引。 這些索引還需要以`-custom-`和版本編號結尾。 此外，為了避免命名衝突，請在索引名稱中使用首碼。 例如： `/oak:index/acme.product-1-custom-2`，其中`acme.`是前置詞。
 
 >[!NOTE]
 >
@@ -167,88 +362,6 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
    ```
 
 5. 請確定您的設定符合[專案設定](#project-configuration)區段中提供的准則。 相應地進行任何必要的調整。
-
-## 專案設定
-
-我們強烈建議使用Jackrabbit `1.3.2`的>= `filevault-package-maven-plugin`版。 將其整合至專案的步驟如下：
-
-1. 更新最上層`pom.xml`中的版本：
-
-   ```xml
-   <plugin>
-       <groupId>org.apache.jackrabbit</groupId>
-           <artifactId>filevault-package-maven-plugin</artifactId>
-           ...
-           <version>1.3.2</version>
-       ...
-   </plugin>
-   ```
-
-2. 新增下列專案至最上層`pom.xml`：
-
-   ```xml
-   <jackrabbit-packagetype>
-       <options>   
-           <immutableRootNodeNames>apps,libs,oak:index</immutableRootNodeNames>
-       </options>
-   </jackrabbit-packagetype>
-   ```
-
-   以下是包含上述設定的專案最上層`pom.xml`檔案的範例：
-
-   檔案名稱： `pom.xml`
-
-   ```xml
-   <plugin>
-       <groupId>org.apache.jackrabbit</groupId>
-           <artifactId>filevault-package-maven-plugin</artifactId>
-           ...
-           <version>1.3.2</version>
-           <configuration>
-               ...
-               <validatorsSettings>
-                   <jackrabbit-packagetype>
-                       <options>
-                           <immutableRootNodeNames>apps,libs,oak:index</immutableRootNodeNames>
-                       </options>
-                   </jackrabbit-packagetype>
-                   ...
-               ...
-   </plugin>
-   ```
-
-3. 在`ui.apps/pom.xml`和`ui.apps.structure/pom.xml`中，必須在`allowIndexDefinitions`中啟用`noIntermediateSaves`和`filevault-package-maven-plugin`選項。 啟用`allowIndexDefinitions`可允許自訂索引定義，而`noIntermediateSaves`可確保自動新增設定。
-
-   檔案名稱： `ui.apps/pom.xml`和`ui.apps.structure/pom.xml`
-
-   ```xml
-   <plugin>
-       <groupId>org.apache.jackrabbit</groupId>
-           <artifactId>filevault-package-maven-plugin</artifactId>
-           <configuration>
-               <allowIndexDefinitions>true</allowIndexDefinitions>
-               <properties>
-                   <cloudManagerTarget>none</cloudManagerTarget>
-                   <noIntermediateSaves>true</noIntermediateSaves>
-               </properties>
-       ...
-   </plugin>
-   ```
-
-4. 在`/oak:index`中新增`ui.apps.structure/pom.xml`的篩選器：
-
-   ```xml
-   <filters>
-       ...
-       <filter><root>/oak:index</root></filter>
-   </filters>
-   ```
-
-新增索引定義後，請使用Cloud Manager部署新的應用程式。 此部署會起始兩個工作，負責將索引定義分別新增（並在必要時合併）至MongoDB和Azure區段存放區，以供製作和發佈。 在切換之前，基礎存放庫會使用更新的索引定義重新索引。
-
->[!TIP]
->
->如需AEM as a Cloud Service所需套件結構的詳細資訊，請參閱[AEM專案結構](/help/implementing/developing/introduction/aem-project-content-package-structure.md)。
 
 ## 使用滾動式部署的索引管理 {#index-management-using-rolling-deployments}
 
@@ -360,7 +473,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 ### 復原變更 {#undoing-a-change}
 
-有時候，必須復原索引定義中的修改，例如由於錯誤或不再需要該修改。 例如，如果索引定義`damAssetLucene-8-custom-3`包含錯誤，您可能想要回復到先前的定義`damAssetLucene-8-custom-2`。 若要完成此作業，請建立名稱為`damAssetLucene-8-custom-4`的新索引，此索引為先前索引`damAssetLucene-8-custom-2.`的復本
+有時候，必須復原索引定義中的修改，例如由於錯誤或不再需要該修改。 例如，如果索引定義`damAssetLucene-8-custom-3`包含錯誤，您可能想要回復到先前的定義`damAssetLucene-8-custom-2`。 若要完成此作業，請建立名稱為`damAssetLucene-8-custom-4`的新索引，此索引為先前索引`damAssetLucene-8-custom-2`的復本。
 
 ### 移除索引 {#removing-an-index}
 
