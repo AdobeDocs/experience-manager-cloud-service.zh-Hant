@@ -4,9 +4,9 @@ description: 瞭解使用Experience Modernization Console開始使用Experience 
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 94a5e40b-af4a-42ed-922b-b1ec9bb82e24
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: 7b880e6d776e2eb9c53cef4552b876b051bdc7ba
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '630'
 ht-degree: 1%
 
 ---
@@ -18,6 +18,8 @@ ht-degree: 1%
 ## 建立您的Edge Delivery Services專案存放庫 {#create-repo}
 
 1. 使用[`aem-block-collection-xwalk`](https://github.com/adobe-rnd/aem-block-collection-xwalk)存放庫作為您的範本（不是標準Edge Delivery Services樣板）。
+1. 驗證`fstab.yaml`是否指向您的AEM主機、Git擁有者和Git存放庫，並在連線GitHub應用程式之前認可對`main`所做的任何變更。
+   * 如需指示，請參閱[設定內容來源](/help/implementing/cloud-manager/edge-delivery/configure-content-source.md)。
 1. 請依照[通用編輯器教學課程](https://www.aem.live/developer/ue-tutorial)中的說明來設定您的存放庫。
    * 系統要求您在AEM中建立網站時停止。
 1. 刪除`paths.json`並將此變更提交至`main`。
@@ -35,8 +37,6 @@ ht-degree: 1%
 1. 按一下「**建立**」。
    * 系統會將您重新導向至「網站」頁面。
    * 如果新網站未立即顯示，請重新整理頁面。
-1. 如果您在[設定存放庫時尚未執行此動作，](#create-repo)會更新`fstab.yaml`，使其指向您的AEM主機、Git擁有者和Git存放庫，並將這些變更提交至`main`。
-   * 如需指示，請參閱[設定內容來源](/help/implementing/cloud-manager/edge-delivery/configure-content-source.md)。
 
 ## 繼續進行標準快速入門步驟 {#continue}
 
@@ -57,8 +57,8 @@ ht-degree: 1%
 
 ## 驗證內容 {#validate-content}
 
-在預覽面板中驗證所選頁面的內容。 按一下&#x200B;**錯誤**&#x200B;按鈕即可顯示任何錯誤。
-繼續您與代理的聊天對話以修正錯誤。 使用&#x200B;**新增至聊天**&#x200B;功能，針對頁面、剖析器檔案或轉換器檔案的特定元素進行修正。
+在預覽面板中驗證所選頁面的內容。 按一下&#x200B;**錯誤**按鈕即可顯示任何錯誤。
+繼續您與代理的聊天對話以修正錯誤。 使用**新增至聊天**&#x200B;功能，針對頁面、剖析器檔案或轉換器檔案的特定元素進行修正。
 
 ![內容聊天](assets/contextual-chat.png)
 
