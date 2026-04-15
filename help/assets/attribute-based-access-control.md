@@ -29,7 +29,7 @@ ht-degree: 3%
 
 * 減少重複的數量，提高資產完整性。當相同的資產與不同的群組共用時，資料夾型權限需要進行重複。
 
->[!VIDEO](https://video.tv.adobe.com/v/3475413/?learn=on&enablevpops){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3475425/?captions=chi_hant&learn=on&enablevpops){transcript=true}
 
 ## 如何啟用以屬性為基礎的存取控制？ {#enable-attribute-based-access-control}
 
