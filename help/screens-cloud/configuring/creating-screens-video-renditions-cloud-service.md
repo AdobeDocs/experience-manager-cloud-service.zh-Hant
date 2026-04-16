@@ -1,17 +1,17 @@
 ---
-title: 在Screens中建立視訊轉譯as a Cloud Service
-description: 本頁面說明如何在Screens中建立視訊轉譯as a Cloud Service。
+title: 在Screens as a Cloud Service中建立視訊轉譯
+description: 本頁面說明如何在Screens as a Cloud Service中建立視訊轉譯。
 exl-id: a9c46036-cd29-47fa-81d9-c865cf22c98a
 feature: Administering Screens
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 210997fa8568245ab9e4e5d44d7faf99bc108ee3
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '342'
 ht-degree: 0%
 
 ---
 
-# 在Screens中建立視訊轉譯as a Cloud Service {#creating-screens-video-renditions}
+# 在Screens as a Cloud Service中建立視訊轉譯 {#creating-screens-video-renditions}
 
 ## 簡介 {#introduction}
 
@@ -20,14 +20,14 @@ ht-degree: 0%
 >[!IMPORTANT]
 >如果您打算在Screens管道中使用影片，則必須設定本節中重點說明的步驟。
 
-## 在Screens中建立視訊轉譯的步驟as a Cloud Service {#steps-creating-screens-video-renditions}
+## 在Screens as a Cloud Service中建立視訊轉譯的步驟 {#steps-creating-screens-video-renditions}
 
 請依照下列步驟，從Screens內容提供者在Screens as a Cloud Service中建立視訊轉譯：
 
 1. 在Screens內容提供者中導覽至您的管道。
 
    >[!NOTE]
-   >如需詳細資訊，請參閱[使用Screens內容提供者](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=zh-Hant#screens-content-provider)。
+   >如需詳細資訊，請參閱[使用Screens內容提供者](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html#screens-content-provider)。
 
 1. 從左側導覽列按一下[工具]區段，然後按一下&#x200B;**Assets**，然後按一下&#x200B;**處理設定檔**。
 
@@ -53,15 +53,15 @@ ht-degree: 0%
    >使用以「screens — 」開頭的編碼名稱。 在Screens as a Cloud Service中播放視訊體驗時，只會考慮使用這些視訊轉譯。 輸入適合您視訊的位元速率（720-px視訊為2500 kbps，1080 px為5000 kbps）。
 
    >[!NOTE]
-   >您可以新增多種視訊轉譯，並具有不同的寬度/高度/位元速率，以使用您的視訊。 Screens裝置會下載所有熒幕和轉譯，即使裝置僅播放視訊轉譯亦然。
+   >您可以新增多種視訊轉譯，並具有不同的寬度/高度/位元速率，以使用您的視訊。
 
-1. 按一下「**儲存**」。
+1. 按一下&#x200B;**儲存**。
 
 1. 選取處理設定檔，然後按一下&#x200B;**將設定檔套用至資料夾**。
 
    ![將設定檔套用至資料夾](/help/screens-cloud/assets/configure/screens-video-5.png)
 
-1. 選取保留Screens影片的資料夾，然後按一下[套用]。**&#x200B;**
+1. 選取保留Screens影片的資料夾，然後按一下[套用]。****
 
    ![按一下套用](/help/screens-cloud/assets/configure/screens-video-6.png)
 
