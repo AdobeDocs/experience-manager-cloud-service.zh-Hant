@@ -61,7 +61,7 @@ ht-degree: 0%
 
    ![將設定檔套用至資料夾](/help/screens-cloud/assets/configure/screens-video-5.png)
 
-1. 選取保留Screens影片的資料夾，然後按一下[套用]。****
+1. 選取保留Screens影片的資料夾，然後按一下[套用]。**&#x200B;**
 
    ![按一下套用](/help/screens-cloud/assets/configure/screens-video-6.png)
 
