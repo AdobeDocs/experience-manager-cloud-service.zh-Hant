@@ -6,9 +6,9 @@ feature: Configuration,Dynamic Media
 role: Admin,User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: f186d0570623007cd3a0685dde2703184c63256c
 workflow-type: tm+mt
-source-wordcount: '3145'
+source-wordcount: '3175'
 ht-degree: 5%
 
 ---
@@ -30,6 +30,10 @@ ht-degree: 5%
 >自 2025 年 4 月的 AEM as a Cloud Service 版本開始，會設有技術限制以防止在具有增強式安全性的環境中設定 Dynamic Media (Scene7)。因此，在這些環境中，於「**工具** > **雲端服務**」下不會再出現 **Dynamic Media 設定**&#x200B;卡片。
 >
 >此外，使用 AEM 6.5 的客戶應注意 Dynamic Media (Scene7) 堆疊不符合 HIPAA 標準。
+
+>[!NOTE]
+>
+>另請參閱[Adobe Experience Manager as a Cloud Service的HIPAA整備程度](/help/compliance/hipaa/hipaa-readiness.md)，以取得Adobe提供的檔案，協助您瞭解HIPAA整備程度，並符合法規。
 
 ## Dynamic Media架構圖 {#architecture-diagram-of-dynamic-media}
 
@@ -77,7 +81,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 ## 在雲端服務中建立Dynamic Media設定 {#configuring-dynamic-media-cloud-services}
 
-<!-- **Before you creating a Dynamic Media Configuration in Cloud Services**: After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=zh-Hant#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials. -->
+<!-- **Before you creating a Dynamic Media Configuration in Cloud Services**: After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials. -->
 
 1. 在Experience Manager as a Cloud Service中，選取Experience Manager as a Cloud Service標誌以存取全域導覽主控台。
 1. 在主控台左側，選取[工具]圖示，然後前往&#x200B;**[!UICONTROL 雲端服務> Dynamic Media設定]**。
@@ -135,7 +139,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 1. 為了在發佈Dynamic Media內容之前安全地預覽該內容，Experience Manager as a Cloud Service會使用權杖型驗證，因此Experience Manager Author預設會預覽Dynamic Media內容。 不過，您可以&#x200B;*加入允許清單*&#x200B;更多IP，讓使用者能夠安全地預覽內容。 若要在Experience Manager as a Cloud Service中設定此動作，請參閱主題[設定影像伺服器的Dynamic Media發佈設定 — 安全性索引標籤](/help/assets/dynamic-media/dm-publish-settings.md#security-tab)。<!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
 
 <!--
-    * Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=zh-Hant#getting-started), then sign in to your account. Your credentials and sign-in details were provided by Adobe at the time of provisioning. If you do not have this information, contact Adobe Customer Support.
+    * Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account. Your credentials and sign-in details were provided by Adobe at the time of provisioning. If you do not have this information, contact Adobe Customer Support.
     * On the navigation bar near the upper right corner of the page, go to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]**.
     * On the Image Server Publish page, in the **[!UICONTROL Publish Context]** drop-down list, select **[!UICONTROL Test Image Serving]**.
     * For the Client Address Filter, select **[!UICONTROL Add]**.
@@ -248,7 +252,7 @@ When you run Dynamic Media on AEM as a Cloud Service, it currently forwards `/is
 
 使用Dynamic Media Classic使用者介面變更您的Dynamic Media設定。
 
-<!-- Some of the tasks above require that you open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=zh-Hant#getting-started), then sign in to your account. -->
+<!-- Some of the tasks above require that you open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account. -->
 
 設定和組態工作包括下列各項：
 
@@ -279,10 +283,10 @@ Dynamic Media色彩管理可讓您校正資產的色彩。 透過色彩校正，
 
 若要設定預設色彩屬性，以便在要求影像時啟用色彩校正：
 
-1. 開啟[Dynamic Media Classic案頭應用程式](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started)，然後使用布建期間提供的認證登入您的帳戶。
+1. 開啟[Dynamic Media Classic案頭應用程式](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started)，然後使用布建期間提供的認證登入您的帳戶。
 1. 移至&#x200B;**[!UICONTROL 設定>應用程式設定]**。
-1. 展開&#x200B;**[!UICONTROL `Publish Setup`]**&#x200B;區域並選取&#x200B;**[!UICONTROL 影像伺服器]**。 設定發 **[!UICONTROL 布例項的預設值]** ，將「發佈內容」設 **&#x200B;**&#x200B;定為「影像伺服」。
-1. 捲動至您必須變更的屬性，例如&#x200B;**[!UICONTROL 色彩管理屬性]**&#x200B;區域中的屬性。
+1. 展開&#x200B;**[!UICONTROL `Publish Setup`]**&#x200B;區域並選取&#x200B;**[!UICONTROL 影像伺服器]**。 設定發 **[!UICONTROL 布例項的預設值]** ，將「發佈內容」設 **** 定為「影像伺服」。
+1. 捲動至您必須變更的屬性，例如&#x200B;**[!UICONTROL 色彩管理屬性]**區域中的屬性。
 您可以設定下列色彩校正屬性：
 
    | 屬性 | 說明 |
@@ -294,7 +298,7 @@ Dynamic Media色彩管理可讓您校正資產的色彩。 透過色彩校正，
 
 1. 選取「**[!UICONTROL 儲存]**」。
 
-例如，您可以將「 **[!UICONTROL RGB預設顏色空間]** 」設 *為sRGB*，將「 **[!UICONTROL CMYK預設顏色空間」設為]**&#x200B;** WebCobatedCholor。
+例如，您可以將「 **[!UICONTROL RGB預設顏色空間]** 」設 *為sRGB*，將「 **[!UICONTROL CMYK預設顏色空間」設為]**** WebCobatedCholor。
 
 這麼做會執行下列動作：
 
