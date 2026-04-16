@@ -128,7 +128,7 @@ Dynamic Media轉譯提供立即可用且通道最佳化的資產版本，包括[
 
 ![預覽Dynamic Media轉譯](assets/content-advisor-dm-preview.png)
 
-按一下&#x200B;**[!UICONTROL 新增修飾元]**，在文字方塊中指定修飾元，然後按Enter鍵以即時套用轉換至所有資產轉譯。 同樣地，您可以將多個修飾元新增至轉譯並預覽這些轉換。 按一下轉譯名稱，然後按一下&#x200B;**[!UICONTROL 選取]**，讓轉譯可在您的主機應用程式中使用。 套用這些修飾元後的轉譯不會儲存。 檢視[Dynamic Media Scene7](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference)和[Dynamic Media with OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat)支援的修飾元清單。
+按一下&#x200B;**[!UICONTROL 新增修飾元]**，在文字方塊中指定修飾元，然後按Enter鍵以即時套用轉換至所有資產轉譯。 同樣地，您可以將多個修飾元新增至轉譯並預覽這些轉換。 按一下轉譯名稱，然後按一下&#x200B;**[!UICONTROL 選取]**，讓轉譯可在您的主機應用程式中使用。 套用這些修飾元後的轉譯不會儲存。 檢視[Dynamic Media Scene7](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference)和[Dynamic Media with OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat)支援的修飾元清單。
 
 ### 探索內容片段 {#content-fragments-discovery-content-advisor}
 
