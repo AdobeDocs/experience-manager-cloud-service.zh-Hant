@@ -380,7 +380,7 @@ Adobe 會定期檢閱包括 API 和設定在內的功能，確保其符合 AEM a
 
 本區段反映上表中各種 API 的 API 移除指引。
 
-若要識別您的程式碼正在使用哪些已棄用的Java API，請將[AEM as a Cloud Service SDK Build Analyzer Maven外掛程式](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin)整合到您的Maven專案中，並在本機執行。 此報表會列出所有偵測到的已棄用API使用方式，並指出哪個OSGi套件組合正在參考每個API。 請參考[本教學課程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal)以瞭解如何使用Maven外掛程式。
+若要識別您的程式碼正在使用哪些已棄用的Java API，請將[AEM as a Cloud Service SDK Build Analyzer Maven外掛程式](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin)整合到您的Maven專案中，並在本機執行。 此報表會列出所有偵測到的已棄用API使用方式，並指出哪個OSGi套件組合正在參考每個API。 請參考[本教學課程](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/developing/advanced/deprecated-apis-find-removal)以瞭解如何使用Maven外掛程式。
 
 雖然您應隨著時間修正所有已棄用的API，但請優先處理「已棄用API」表格中列出的任何API，且目標移除日期為2026年2月26日（或更早日期）。 AEM Analyzer報表中，這些API的實際移除日期為2025年8月31日。
 
