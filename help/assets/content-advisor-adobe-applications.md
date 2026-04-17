@@ -5,9 +5,9 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 feature: Collaboration
 role: User
 exl-id: fa737a57-d346-4e6d-a9cd-99bcb6b344fe
-source-git-commit: 98ba709098bdf1c8a9f02b99e1e63ec97cb00ab4
+source-git-commit: 2ae4533890cbf01183df8b5283109fff0b9eae60
 workflow-type: tm+mt
-source-wordcount: '1901'
+source-wordcount: '1945'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,8 @@ Content Advisor可跨Adobe應用程式提供統一的內容探索體驗。 Conte
 Content Advisor將智慧型內容感知探索直接匯入撰寫體驗中，協助您根據自己的意圖，快速找到相關且經過核准的內容。 藉由智慧建議、Dynamic Media轉譯和詳細資產中繼資料等功能，您能夠在不離開應用程式介面的情況下，有效評估和重複使用內容，進而加快內容建立速度，同時維持品牌一致性。
 
 ![內容顧問橫幅影像](assets/content-advisor-banner-image-updated.png)
+
+Adobe Experience Manager (AEM) Assets也與Adobe Express原生整合，可讓您使用「內容顧問」，直接在Express介面中探索、存取及使用AEM Assets的資產。 如需詳細資訊，請參閱[在Adobe Express中使用內容警告器來存取AEM Assets](/help/assets/native-integration-adobe-express.md)。
 
 
 ## 先決條件 {#prerequisites}
@@ -128,7 +130,7 @@ Dynamic Media轉譯提供立即可用且通道最佳化的資產版本，包括[
 
 ![預覽Dynamic Media轉譯](assets/content-advisor-dm-preview.png)
 
-按一下&#x200B;**[!UICONTROL 新增修飾元]**，在文字方塊中指定修飾元，然後按Enter鍵以即時套用轉換至所有資產轉譯。 同樣地，您可以將多個修飾元新增至轉譯並預覽這些轉換。 按一下轉譯名稱，然後按一下&#x200B;**[!UICONTROL 選取]**，讓轉譯可在您的主機應用程式中使用。 套用這些修飾元後的轉譯不會儲存。 檢視[Dynamic Media Scene7](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference)和[Dynamic Media with OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat)支援的修飾元清單。
+按一下&#x200B;**[!UICONTROL 新增修飾元]**，在文字方塊中指定修飾元，然後按Enter鍵以即時套用轉換至所有資產轉譯。 同樣地，您可以將多個修飾元新增至轉譯並預覽這些轉換。 按一下轉譯名稱，然後按一下&#x200B;**[!UICONTROL 選取]**，讓轉譯可在您的主機應用程式中使用。 套用這些修飾元後的轉譯不會儲存。 檢視[Dynamic Media Scene7](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference)和[Dynamic Media with OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat)支援的修飾元清單。
 
 ### 探索內容片段 {#content-fragments-discovery-content-advisor}
 
