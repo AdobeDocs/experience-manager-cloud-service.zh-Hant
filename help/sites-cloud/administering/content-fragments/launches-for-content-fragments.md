@@ -6,10 +6,10 @@ role: User, Developer
 solution: Experience Manager Sites
 badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: c0b9e571-3be5-42ab-8d56-d93e8ef4c2f7
-source-git-commit: 345f91b742813d81e3eb236eeb86c854d757bc4d
+source-git-commit: e59faf3943b18fac50d1d504f633ab2ff0236aee
 workflow-type: tm+mt
-source-wordcount: '1784'
-ht-degree: 2%
+source-wordcount: '1851'
+ht-degree: 1%
 
 ---
 
@@ -187,7 +187,7 @@ ht-degree: 2%
 
 ## 比較啟動與來源 {#compare-launch-to-source}
 
-在任何「重新布基」或「提升」動作之前，建議您一律比較來源和啟動以確認變更及其對您內容的影響（兩個動作都會覆寫目標內容）：
+建議您在執行&#x200B;**[Rebase](#rebase-a-launch-from-source)**&#x200B;或&#x200B;**[Promote](#promote-a-launch-to-source)**&#x200B;動作之前，一律比較來源和啟動專案，確認變更及其對您內容的影響（兩個動作都會覆寫目標內容）：
 
 1. 導覽至內容片段主控台。
 
@@ -239,9 +239,9 @@ ht-degree: 2%
 1. 選取：
 
    * 放大鏡圖示可開啟特定工作的完整詳細資訊。
-這會傳回&#x200B;**[將啟動項與Source比較](#compare-launch-to-source)**&#x200B;檢視，其中包含可用的動作。
-   * **檢視記錄**&#x200B;以檢視所有工作的詳細資訊概觀。
-您也可以從這裡選取特定工作，然後顯示&#x200B;**結果**。 這會帶您返回&#x200B;**[將啟動項與Source比較](#compare-launch-to-source)**&#x200B;檢視，其中包含可用的動作。
+這會傳回**[將啟動項與Source比較](#compare-launch-to-source)**&#x200B;檢視，其中包含可用的動作。
+   * **檢視記錄**以檢視所有工作的詳細資訊概觀。
+您也可以從這裡選取特定工作，然後顯示**結果**。 這會帶您返回&#x200B;**[將啟動項與Source比較](#compare-launch-to-source)**&#x200B;檢視，其中包含可用的動作。
 
    這兩個動作都會將您帶往適當的&#x200B;**比較啟動項與Source**&#x200B;工作。 從這裡，您可以&#x200B;**[重設](#rebase-a-launch-from-source)**&#x200B;或&#x200B;**[升級](#promote-a-launch-to-source)**&#x200B;您的啟動項，如同當時一樣。
 
@@ -261,9 +261,17 @@ ht-degree: 2%
 >
 >您也可以從&#x200B;**比較啟動項與Source**&#x200B;來&#x200B;**[重新布建](#compare-launch-to-source)**&#x200B;啟動項。
 
+>[!NOTE]
+>
+>建議您在執行&#x200B;**Rebase**&#x200B;或&#x200B;**Promote**&#x200B;動作之前，一律[比較來源和啟動項](#compare-launch-to-source)，以確認變更及其對您內容的影響，因為這兩個動作都會覆寫目標內容。
+
 ## 提升啟動（至Source） {#promote-a-launch-to-source}
 
 當您的啟動項準備好要發佈時，應將其複製到來源。 您可以在主控台中執行此作業，或設定在特定日期和時間自動執行此作業的設定。
+
+>[!NOTE]
+>
+>建議您在執行&#x200B;**Rebase**&#x200B;或&#x200B;**Promote**&#x200B;動作之前，一律[比較來源和啟動項](#compare-launch-to-source)，以確認變更及其對您內容的影響，因為這兩個動作都會覆寫目標內容。
 
 ### 手動提升 {#promote-manually}
 
