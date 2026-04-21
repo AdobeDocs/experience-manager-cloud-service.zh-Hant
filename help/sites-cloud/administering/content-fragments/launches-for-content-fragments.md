@@ -6,9 +6,9 @@ role: User, Developer
 solution: Experience Manager Sites
 badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: c0b9e571-3be5-42ab-8d56-d93e8ef4c2f7
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: 345f91b742813d81e3eb236eeb86c854d757bc4d
 workflow-type: tm+mt
-source-wordcount: '1588'
+source-wordcount: '1784'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 2%
 >
 >如需完整詳細資訊，請參閱[啟動頁面](/help/sites-cloud/authoring/launches/overview.md)。
 
-您建立&#x200B;*啟動項*，然後在&#x200B;*啟動項*&#x200B;中編輯和更新您的內容片段。 如果在此階段期間變更&#x200B;*Source*&#x200B;片段，您可以透過&#x200B;*Rebase*&#x200B;作業將其複製到&#x200B;*Launch*。 準備就緒後，*Promote*&#x200B;會將啟動內容複製回來源。 然後，您可以手動或自動啟動來源片段（取決於建立和編輯啟動時設定的欄位）。 您也可以指定是否將參照的片段包含在此程式中。
+您建立&#x200B;*啟動項*，然後在&#x200B;*啟動項*&#x200B;中編輯和更新您的內容片段。 如果在此階段期間對&#x200B;*Source*&#x200B;片段進行變更，您可以使用&#x200B;*Rebase*&#x200B;作業將&#x200B;*Source* （包括變更）複製到&#x200B;**[Launch](#rebase-a-launch-from-source)**。 準備就緒後，*Promote*&#x200B;會將啟動內容複製回來源。 然後，您可以手動或自動啟動來源片段（取決於建立和編輯啟動時設定的欄位）。 您也可以指定是否將參照的片段包含在此程式中。
 
 例如，您線上商店的季節性產品片段會每季更新，以便精選產品與目前季節一致。 若要準備下一次每季更新，您可以建立適當片段的啟動。 在整個季度中，以下變更會累積在啟動副本中：
 
@@ -88,9 +88,9 @@ ht-degree: 2%
 
    * **發佈就緒**；啟用此切換功能會在啟動項提升至來源時自動發佈片段。
 
-* 並且還定義：
+* 定義&#x200B;**升級日期**&#x200B;和時間：是否要自動升級[啟動](#promote-automatically)
 
-   * **升級日期**&#x200B;和時間：如果[啟動項將自動升級](#promote-automatically)
+* 檢視已執行的&#x200B;**[工作](#jobs-history)** （**比較啟動項與Source**），並對其採取進一步的動作
 
 ## 建立啟動項 {#create-a-launch}
 
@@ -203,7 +203,6 @@ ht-degree: 2%
          * Source：藍色
          * Launch：粉紅色
          * 衝突：黃色
-   * [Promote](#promote-a-launch-to-source)和[Rebase](#rebase-a-launch-from-source)動作可從右上角使用。
    * **找到更新**：在左上角顯示所有更新的摘要。 以藍色顯示的來源更新數、以粉紅色顯示的啟動更新數，以及以黃色顯示的兩個（衝突）更新數。
       * 眼睛圖示可讓您顯示或隱藏實際內容更新，以更清楚概述。
    * **包含**&#x200B;滑桿可讓您定義要包含在後續Promote或Rebase作業中的內容片段：
@@ -217,11 +216,38 @@ ht-degree: 2%
    * 片段內容會顯示在欄位層級（內容片段元素/資料型別層級）；反白顯示會指出變更。
    * 選取&#x200B;**檢視**&#x200B;以重新計算差異。
 
+1. [Promote](#promote-a-launch-to-source)和[Rebase](#rebase-a-launch-from-source)動作可從右上角使用。
+
+1. **上一步**&#x200B;會帶您返回主控台。 如果您想再次檢視這些特定差異，可以檢視&#x200B;**[工作](#jobs-history)**&#x200B;專案。
+
    ![比較Source和Launch](/help/sites-cloud/administering/content-fragments/assets/cf-launches-compare.png)
 
-## 為Launch重新設定基礎(來自Source) {#rebase-a-launch-from-source}
+## 工作歷史記錄 {#jobs-history}
 
-來源片段已進行更新，而您想要將這些變更複製到啟動項時：
+若要檢視過去&#x200B;**與已執行Source**&#x200B;個工作的比較詳細資料：
+
+1. 導覽至內容片段主控台。
+
+1. 開啟&#x200B;**啟動**&#x200B;標籤。
+
+1. 選取您的啟動項，資訊面板將在右側開啟。
+
+1. 在「**工作**」區段中，您會看到每個&#x200B;**與已執行的Source**&#x200B;工作比較的&#x200B;**launchDifferences**&#x200B;專案：
+
+   ![工作歷史記錄](/help/sites-cloud/administering/content-fragments/assets/cf-launches-jobs.png)
+
+1. 選取：
+
+   * 放大鏡圖示可開啟特定工作的完整詳細資訊。
+這會傳回**[將啟動項與Source比較](#compare-launch-to-source)**&#x200B;檢視，其中包含可用的動作。
+   * **檢視記錄**以檢視所有工作的詳細資訊概觀。
+您也可以從這裡選取特定工作，然後顯示**結果**。 這會帶您返回&#x200B;**[將啟動項與Source比較](#compare-launch-to-source)**&#x200B;檢視，其中包含可用的動作。
+
+   這兩個動作都會將您帶往適當的&#x200B;**比較啟動項與Source**&#x200B;工作。 從這裡，您可以&#x200B;**[重設](#rebase-a-launch-from-source)**&#x200B;或&#x200B;**[升級](#promote-a-launch-to-source)**&#x200B;您的啟動項，如同當時一樣。
+
+## 為Launch重新設定基礎（來自Source） {#rebase-a-launch-from-source}
+
+當來源片段已進行更新時，您可以使用&#x200B;**Rebase**&#x200B;動作將來源（包括變更）複製到您的啟動項：
 
 1. 導覽至內容片段主控台。
 
@@ -235,7 +261,7 @@ ht-degree: 2%
 >
 >您也可以從&#x200B;**比較啟動項與Source**&#x200B;來&#x200B;**[重新布建](#compare-launch-to-source)**&#x200B;啟動項。
 
-## 提升啟動(至Source) {#promote-a-launch-to-source}
+## 提升啟動（至Source） {#promote-a-launch-to-source}
 
 當您的啟動項準備好要發佈時，應將其複製到來源。 您可以在主控台中執行此作業，或設定在特定日期和時間自動執行此作業的設定。
 
