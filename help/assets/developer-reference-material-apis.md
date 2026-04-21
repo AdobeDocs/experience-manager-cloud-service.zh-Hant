@@ -6,10 +6,10 @@ feature: Assets HTTP API
 role: Developer, Admin
 badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 17203fffbea1fcb7e4712041623275affab68f3c
 workflow-type: tm+mt
-source-wordcount: '1876'
-ht-degree: 5%
+source-wordcount: '1916'
+ht-degree: 4%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 5%
 | × | 不支援。 請勿使用。 |
 | - | 無法使用 |
 
-| 使用案例 | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager / Sling / JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) Java API | [資產計算服務](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=zh-Hant) | [[!DNL Assets] HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=zh-Hant#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) servlet | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=zh-Hant) |
+| 使用案例 | [aem-upload](https://github.com/adobe/aem-upload) | [Experience Manager / Sling / JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) Java API | [資產計算服務](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html) | [[!DNL Assets] HTTP API](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html#create-an-asset) | Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) servlet | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) |
 | ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
 | **原始二進位檔** |  |  |  |  |  |  |
 | 建立原始檔案 | ✓ | × | - | × | × | - |
@@ -64,6 +64,10 @@ ht-degree: 5%
 | 刪除資料夾 | ✓ | ✓ | - | ✓ | - | - |
 | 複製資料夾 | ✓ | ✓ | - | ✓ | - | - |
 | 行動資料夾 | ✓ | ✓ | - | ✓ | - | - |
+
+>[!NOTE]
+>
+> Adobe不建議上傳資產的套件，因為它違反了我們避免在AEM中處理二進位檔案的最佳做法。 透過JCR套件上傳資產不會在AEM as a Cloud Service中觸發這些資產的處理。
 
 ## 資產上傳 {#asset-upload}
 
