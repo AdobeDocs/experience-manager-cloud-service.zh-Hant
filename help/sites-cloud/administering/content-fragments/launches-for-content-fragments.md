@@ -6,16 +6,16 @@ role: User, Developer
 solution: Experience Manager Sites
 badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: c0b9e571-3be5-42ab-8d56-d93e8ef4c2f7
-source-git-commit: e59faf3943b18fac50d1d504f633ab2ff0236aee
+source-git-commit: 29b646d024287bfbc0801c90843e5c36e5fd57ea
 workflow-type: tm+mt
-source-wordcount: '1851'
+source-wordcount: '1852'
 ht-degree: 1%
 
 ---
 
 # 內容片段的啟動 {#launches-for-content-fragments}
 
-在Adobe Experience Manager (AEM) as a Cloud Service中，啟動可讓您有效率地開發未來版本的內容。
+在Adobe Experience Manager (AEM) as a Cloud Service中，Launch可讓您有效率地開發未來版本的內容。
 
 *Launch*&#x200B;已建立，可讓您在維護目前內容的同時，進行變更以準備未來出版物。 對於內容片段，這表示您同時有效地編輯兩個版本：目前發佈的內容以及未來要同時發佈的該內容的版本。 到時，您可以取代原始內容片段的內容並發佈新版本。
 
@@ -239,9 +239,9 @@ ht-degree: 1%
 1. 選取：
 
    * 放大鏡圖示可開啟特定工作的完整詳細資訊。
-這會傳回&#x200B;**[將啟動項與Source比較](#compare-launch-to-source)**&#x200B;檢視，其中包含可用的動作。
-   * **檢視記錄**&#x200B;以檢視所有工作的詳細資訊概觀。
-您也可以從這裡選取特定工作，然後顯示&#x200B;**結果**。 這會帶您返回&#x200B;**[將啟動項與Source比較](#compare-launch-to-source)**&#x200B;檢視，其中包含可用的動作。
+這會傳回**[將啟動項與Source比較](#compare-launch-to-source)**&#x200B;檢視，其中包含可用的動作。
+   * **檢視記錄**以檢視所有工作的詳細資訊概觀。
+您也可以從這裡選取特定工作，然後顯示**結果**。 這會帶您返回&#x200B;**[將啟動項與Source比較](#compare-launch-to-source)**&#x200B;檢視，其中包含可用的動作。
 
    這兩個動作都會將您帶往適當的&#x200B;**比較啟動項與Source**&#x200B;工作。 從這裡，您可以&#x200B;**[重設](#rebase-a-launch-from-source)**&#x200B;或&#x200B;**[升級](#promote-a-launch-to-source)**&#x200B;您的啟動項，如同當時一樣。
 
