@@ -6,9 +6,9 @@ feature: Interactive Communication
 role: User, Developer, Admin
 badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: 50709c68-8666-47da-8788-fad793d870e6
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 682b5dbf587b6b06f35f29bfb74a96b2c40fb3d7
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '420'
 ht-degree: 5%
 
 ---
@@ -45,17 +45,19 @@ ht-degree: 5%
 
 | **功能** | **主要功能** |
 |--------------------------------------|---------------------------------------------------------------------------------------|
-| **WYSIWYG編輯器** |  — 完美畫素以精確呈現<br> — 字型樣式控制項<br> — 專業設計的彈性版面配置 |
-| **配置控制項** |  — 定位（絕對和流動） <br> — 簡單的拖放功能<br> — 使用主版頁面來定義一致的版面 |
-| **元件** |  — 存取新匯入的元件，包括表格、圖表和條碼<br> — 可快速設計的現成元件 |
-| **資料繫結** |  — 將元件直接連結到資料來源<br> — 自動預填個人化通訊的欄位 |
-| **規則編輯器** |  — 設定動態驗證<br> — 新增互動的計算和條件式邏輯 |
-| **片段資料庫** |  — 建立模組化建置區塊（頁首、頁尾、免責宣告、圖示） <br> — 維持多重通訊的一致性 |
-| **範本** |  — 確保通訊的品牌和結構統一 |
+| **WYSIWYG編輯器** |  — 完美畫素以精確呈現<br> - [字型樣式控制項](/help/forms/interactive-communication/add-custom-fonts.md) <br> — 專業設計的彈性版面配置 |
+| [**配置控制項**](/help/forms/interactive-communication/handle-content-overflow.md) |  — 定位（絕對和流動） <br> — 簡單的拖放功能<br> — 使用主版頁面來定義一致的版面 |
+| **元件** |  — 存取新推出的元件，包括[表格](/help/forms/interactive-communication/dynamic-table-in-interactive-communication-editor.md)、圖表和[條碼](/help/forms/interactive-communication/barcode.md) <br> — 可立即使用的元件，以加快設計速度 |
+| [**資料繫結**](/help/forms/interactive-communication/configure-data-binding.md) |  — 將元件直接連結到資料來源<br> — 自動預填個人化通訊的欄位 |
+| [**規則編輯器**](/help/forms/interactive-communication/use-the-rule-editor.md) |  — 設定動態驗證<br> — 新增互動的計算和條件式邏輯 |
+| [**片段資料庫**](/help/forms/interactive-communication/create-interactive-communication-fragment.md) |  — 建立模組化建置區塊（頁首、頁尾、免責宣告、圖示） <br> — 維持多重通訊的一致性 |
+| [**範本**](/help/forms/interactive-communication/create-interactive-communication-template.md) |  — 確保通訊的品牌和結構統一 |
 
 ## 上線
 
 互動式通訊(IC)功能可透過Early Access (EA)程式提供。 若要要求存取權，請使用您的環境ID與組織ID，以您的正式電子郵件識別碼傳送電子郵件[aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)。 Adobe確認註冊後，請依照[服務上線](/help/forms/setup-forms-cloud-service.md)檔案操作，在AEM Forms環境中啟用互動式通訊。
+
+https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/interactive-communication/overview/create-interactive-communication-template
 
 ## 後續步驟
 
