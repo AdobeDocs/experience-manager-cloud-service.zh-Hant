@@ -57,7 +57,7 @@ ht-degree: 5%
 
 互動式通訊(IC)功能可透過Early Access (EA)程式提供。 若要要求存取權，請使用您的環境ID與組織ID，以您的正式電子郵件識別碼傳送電子郵件[aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)。 Adobe確認註冊後，請依照[服務上線](/help/forms/setup-forms-cloud-service.md)檔案操作，在AEM Forms環境中啟用互動式通訊。
 
-https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/interactive-communication/overview/create-interactive-communication-template
+https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/interactive-communication/overview/create-interactive-communication-template
 
 ## 後續步驟
 
