@@ -116,7 +116,7 @@ For a detailed overview of MSM concepts see [Reusing Content: Multi Site Manager
 
 1. 在內容片段控制檯導覽至片段的位置。
 1. 選取您的片段。
-1. 選取片段之&#x200B;**Title**欄中的資訊(i)圖示。
+1. 選取片段之&#x200B;**Title**&#x200B;欄中的資訊(i)圖示。
 右邊的資訊面板將會開啟。
 1. 選取&#x200B;**即時副本詳細資料**&#x200B;的索引標籤。
 
