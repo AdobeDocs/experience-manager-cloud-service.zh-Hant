@@ -6,7 +6,7 @@ exl-id: f050b2d1-856c-4cdb-ac74-bc78016f144a
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: 633a89c533edfe7e932284b100aeac6f3d3708bc
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 12%
@@ -38,17 +38,27 @@ ht-degree: 12%
 
 內容片段的MSM結合內容片段編輯器中的功能，可讓您中斷並恢復欄位層級的繼承。
 
+<!-- CQDOC-23473 - feature is beta, activate when GA -->
+
 >[!CAUTION]
 >
 >只有在透過&#x200B;**Assets**&#x200B;主控台使用內容片段時，才能使用內容片段的MSM。
 >
 >使用&#x200B;*內容片段*&#x200B;主控台時，MSM功能&#x200B;**無法**&#x200B;使用。
 
+<!--
+>[!NOTE]
+>
+>This page covers MSM functionality when using the **Assets** console.
+>
+>MSM for Content Fragments is also available when using [the **Content Fragments** console](/help/sites-cloud/administering/content-fragments/msm-for-content-fragments.md).
+-->
+
 ## 操作說明 {#how-to}
 
-請參閱下列檔案，以取得有關使用MSM處理內容片段(亦適用於Assets)的詳細資訊：
+請參閱下列檔案，以取得有關使用MSM處理內容片段（亦適用於Assets）的詳細資訊：
 
-* 如何針對內容片段(和Assets)使用[MSM](/help/assets/reuse-assets-using-msm.md)
+* 如何針對內容片段（和Assets）使用[MSM](/help/assets/reuse-assets-using-msm.md)
 
 * [建立 Live Copy](/help/assets/reuse-assets-using-msm.md)
 
@@ -63,7 +73,7 @@ ht-degree: 12%
    * [相關資產的中繼資料](/help/assets/content-fragments/content-fragments-variations.md#canceling-reenabling-inheritance-individual-items)
 * [暫停並繼續關係](/help/assets/reuse-assets-using-msm.md#suspend-resume)
 * [移除即時關係](/help/assets/reuse-assets-using-msm.md#detach)
-* [比較內容片段(和Assets)的MSM與網站的MSM](/help/assets/reuse-assets-using-msm.md#comparison)
+* [比較內容片段（和Assets）的MSM與網站的MSM](/help/assets/reuse-assets-using-msm.md#comparison)
 
 ## 限制 {#limitations}
 
