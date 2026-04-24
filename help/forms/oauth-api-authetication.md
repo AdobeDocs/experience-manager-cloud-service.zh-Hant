@@ -5,10 +5,13 @@ role: Admin, Developer, User
 feature: Adaptive Forms, APIs & Integrations
 badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: 24fa5751-c006-4c39-bdc3-b46a4974638e
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+hide: true
+hidefromToC: true
+index: false
+source-git-commit: 44d7e7357c86183d1ddfa8dce9c26b48448554f6
 workflow-type: tm+mt
-source-wordcount: '839'
-ht-degree: 3%
+source-wordcount: '908'
+ht-degree: 4%
 
 ---
 
@@ -20,7 +23,7 @@ OAuth伺服器對伺服器驗證允許以權杖為基礎的安全存取AEM Forms
 
 開始之前，請確定符合下列必要條件：
 
-* 確保您擁有[存取您使用環境專屬的Adobe Developer Console](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-manager/content/requirements/access-rights)的許可權。
+* 確保您擁有[存取您使用環境專屬的Adobe Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/access-rights)的許可權。
 * [在Adobe Admin Console中指派系統管理員或開發人員角色](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions)以啟用Adobe Developer Console的存取權。
 
 ## 如何使用OAuth伺服器對伺服器驗證產生存取權杖？
@@ -52,95 +55,95 @@ OAuth伺服器對伺服器驗證允許以權杖為基礎的安全存取AEM Forms
 
    ![編輯專案名稱](/help/forms/assets/adc-edit-projectname.png)
 
->[!TAB 瀏覽至您現有的專案]
+>[!TAB To navigate to your existing project]
 
-1. 從Adobe Developer Console按一下&#x200B;**所有專案**
+1. Click **All Projects** from the Adobe Developer Console
 
-   ![搜尋專案](/help/forms/assets/search-adc-project.png)
+   ![Search Projects](/help/forms/assets/search-adc-project.png)
 
-2. 找到您的專案，然後按一下以開啟。
+2. Locate your project and click to open it.
 
-   ![尋找專案](/help/forms/assets/locate-adc-project.png)
+   ![Locate Projects](/help/forms/assets/locate-adc-project.png)
 
 >[!ENDTABS]
 
-### 2.新增Forms API
+### 2. Add Forms APIs
 
-根據您想要做的以下工作新增Forms API：
+Add Forms APIs based on what you want to do:
 
-* **AEM Forms Communications API**：需要產生、轉換、組合或保護檔案(PDF及相關格式)時使用。
-* **Adaptive Forms Runtime API** — 在執行階段需要轉譯、提交或處理Adaptive Forms時使用。
+* **AEM Forms Communications APIs**: use when you need to generate, convert, assemble, or secure documents (PDF and related formats).
+* **Adaptive Forms Runtime APIs** – use when you need to render, submit, or process Adaptive Forms at runtime.
 
 >[!BEGINTABS]
 
->[!TAB 適用於AEM Forms Communications API的] 
+>[!TAB For AEM Forms Communications APIs]
 
-1. 按一下&#x200B;**新增API**
+1. Click **Add API**
 
-   ![新增API](/help/forms/assets/adc-add-api.png)
+   ![Add api](/help/forms/assets/adc-add-api.png)
 
-2. 選取&#x200B;**Forms通訊API**
-   1. 在&#x200B;_新增API_&#x200B;對話方塊中，依&#x200B;**Experience Cloud**&#x200B;篩選
-   2. 選取&#x200B;**「Forms通訊API」**
+2. Select **Forms Communication APIs**
+   1. In the _Add API_ dialog, filter by **Experience Cloud**
+   2. Select **&quot;Forms Communication APIs&quot;**
 
-      ![新增Forms通訊API](/help/forms/assets/adc-add-forms-api.png)
-
-   3. 按一下「**下一步**」。
-   4. 選取&#x200B;**OAuth伺服器對伺服器**&#x200B;驗證方法
-
-      ![選取驗證方法](/help/forms/assets/adc-add-authentication-method.png)
-
->[!TAB 最適化Forms執行階段API的] 
-
-1. **按一下[新增API]**
-
-   ![新增API](/help/forms/assets/adc-add-api.png)
-
-2. **選取AEM Forms傳遞和執行階段API**
-   1. 在&#x200B;_新增API_&#x200B;對話方塊中，依&#x200B;**Experience Cloud**&#x200B;篩選
-   2. 選取&#x200B;**「AEM Forms傳遞和執行階段API」**
-      ![新增Forms通訊API](/help/forms/assets/adc-add-runtime-api.png)
+      ![Add Forms Communication API](/help/forms/assets/adc-add-forms-api.png)
 
    3. 按一下「**下一步**」。
-   4. 選取&#x200B;**OAuth伺服器對伺服器**&#x200B;驗證方法。
-      ![選取驗證方法](/help/forms/assets/adc-add-authentication-method.png)
+   4. Select **OAuth Server-to-Server** authentication method
+
+      ![Select Authentication method](/help/forms/assets/adc-add-authentication-method.png)
+
+>[!TAB For Adaptive Forms Runtime APIs]
+
+1. **Click Add API**
+
+   ![Add api](/help/forms/assets/adc-add-api.png)
+
+2. **Select AEM Forms Delivery and Runtime API**
+   1. In the _Add API_ dialog, filter by **Experience Cloud**
+   2. Select **&quot;AEM Forms Delivery and Runtime API&quot;**
+      ![Add Forms Communication API](/help/forms/assets/adc-add-runtime-api.png)
+
+   3. 按一下「**下一步**」。
+   4. Select **OAuth Server-to-Server** authentication method.
+      ![Select Authentication method](/help/forms/assets/adc-add-authentication-method.png)
 
 >[!ENDTABS]
 
-您也可以按一下&#x200B;**新增至專案** > **API**，將API和驗證方法新增至您現有的專案\
-![新增API至現有的專案](/help/forms/assets/add-api-existing-project.png)
+You can also  add the API and authentication method to your existing project by clicking **Add to Project** > **API**\
+![Add API to existing Project](/help/forms/assets/add-api-existing-project.png)
 
-### 3.新增產品設定檔
+### 3. Add Product Profile
 
-產品設定檔提供存取AEM資源的憑證許可權（或授權）。
+Product profile provides permissions (or authorization) for credentials to access the AEM resources.
 
-1. 選取符合您AEM執行個體URL (**)的**&#x200B;產品設定檔`https://Service Type -Environment Type-Program XXX-Environment XXX.adobeaemcloud.com`。
+1. Select the **Product Profile** that matches your AEM instance URL (`https://Service Type -Environment Type-Program XXX-Environment XXX.adobeaemcloud.com`).
 
-   * **服務型別** — 指定與AEM執行個體關聯的服務或許可權
+   * **Service Type** –  specifies services or permissions associated with the AEM instance
 
-   * **環境型別** — 指定環境是用於作者或發佈服務
+   * **Environment Type** – specifies whether the envrionment is for Author or Publish service
 
-   * **方案XXX** — 識別Cloud Manager方案識別碼
+   * **Program XXX** – identifies the Cloud Manager program ID
 
-   * **環境XXX** — 識別該程式中的特定環境ID
+   * **Environment XXX** – identifies the specific environment ID within that program
 
    >[!NOTE]
    >
-   > 產品設定檔會繫結至特定的AEM執行個體（程式+環境）。 一律選擇符合執行個體URL的設定檔。
+   > Product profiles are tied to a specific AEM instance (program + environment). Always choose the profile that matches your instance URL.
 
-2. 按一下&#x200B;**「儲存已設定的 API」**。API和產品描述檔已新增到您的專案
+2. 按一下&#x200B;**「儲存已設定的 API」**。 The API and Product Profile are added to your project
 
-   ![選取專案組態](/help/forms/assets/adc-add-product-profile.png)
+   ![Select Project Configuration](/help/forms/assets/adc-add-product-profile.png)
 
-### 4.產生並儲存認證
+### 4. Generate and Save Credentials
 
-1. 在Adobe Developer Console中導覽至您的專案
-2. 按一下&#x200B;**OAuth伺服器對伺服器**&#x200B;認證
-3. 檢視&#x200B;**認證詳細資料**&#x200B;區段
+1. Navigate to your project in Adobe Developer Console
+2. Click **OAuth Server-to-Server** credential
+3. View the **Credential details** section
 
-   ![檢視認證](/help/forms/assets/adc-view-credential.png)
+   ![View Credentials](/help/forms/assets/adc-view-credential.png)
 
-**記錄API認證**
+**Record API Credentials**
 
 ```text
     API Credentials:
@@ -152,15 +155,15 @@ OAuth伺服器對伺服器驗證允許以權杖為基礎的安全存取AEM Forms
     Scopes: AdobeID,openid,read_organizations
 ```
 
-### 5.產生存取權杖
+### 5. Access Token Generation
 
-手動或以程式設計方式產生存取權杖：
+Generate the Access token either manually or programmatically:
 
 >[!BEGINTABS]
 
->[!TAB 以進行測試]
+>[!TAB For Testing]
 
-在Adobe Developer Console中手動產生存取權杖：
+Generate access tokens manually in Adobe Developer Console:
 
 1. **瀏覽至您的專案**
    1. 在Adobe Developer Console中，開啟您的專案
@@ -178,7 +181,7 @@ OAuth伺服器對伺服器驗證允許以權杖為基礎的安全存取AEM Forms
 
 >[!TAB 用於生產]
 
-使用[Adobe IMS](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service) API以程式設計方式產生權杖：
+使用[Adobe IMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service) API以程式設計方式產生權杖：
 
 **必要的認證：**
 
@@ -257,7 +260,7 @@ curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' \
                     <p class="is-size-6">瞭解如何設定同步（隨選） Forms Communications API的環境，以便立即產生或處理檔案。 </p>
                 </div>
                 <a href="/help/forms/aem-forms-cloud-service-communications-on-demand-processing.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解更多</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">進一步瞭解</span>
                 </a>
             </div>
         </div>
@@ -281,7 +284,7 @@ curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' \
                     <p class="is-size-6">瞭解如何為非同步（批次） Forms Communications API設定環境，以排程方式產生或處理多個檔案。</p>
                 </div>
                 <a href="/help/forms/aem-forms-cloud-service-communications-batch-processing.md" target="_self" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">了解更多</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">進一步瞭解</span>
                 </a>
             </div>
         </div>
