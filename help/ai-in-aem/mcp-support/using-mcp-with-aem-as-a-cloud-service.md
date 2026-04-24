@@ -55,7 +55,7 @@ AEM會公開MCP伺服器作為HTTP端點。 以下所列的端點為相對於：
 | **內容** | `/content` | 內容作業包括建立、讀取、更新和刪除(CRUD)頁面和內容片段，以及資產匯入。 |
 | **內容（唯讀）** | `/content-readonly` | 頁面和內容片段的唯讀內容操作（取得、清單/搜尋）。 |
 | **Cloud Manager** | `/cloudmanager` | 管理Cloud Manager實體，包括也可以觸發的方案、環境、存放庫和管道。 |
-| **體驗控管** | `/experience-governance` | 根據品牌治理規則評估內容（文字、影像、頁面），並列出品牌設定和檢查。<br/>客戶必須註冊[代理程式試用版或擁有付費授權](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial?lang=en)，才能存取Experience Governance MCP。 |
+| **體驗控管** | `/experience-governance` | 根據品牌治理規則評估內容（文字、影像、頁面），並列出品牌設定和檢查。<br/>客戶必須註冊[代理程式試用版或擁有付費授權](https://experienceleague.adobe.com/zh-hant/docs/experience-cloud-ai/experience-cloud-ai/agents/trial?lang=en)，才能存取Experience Governance MCP。 |
 
 每個MCP伺服器公開的特定工具可能會隨著時間而改變。 實際上，您可以要求啟用MCP的應用程式透過提示來探索工具，例如：
 
@@ -65,7 +65,7 @@ AEM會公開MCP伺服器作為HTTP端點。 以下所列的端點為相對於：
 
 MCP使用者端會使用MCP通訊協定來擷取工具清單和結構描述，然後LLM就可以使用。
 
-請參考[Content MCP伺服器教學課程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server)和[Cloud Manager MCP伺服器影片](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager)，瞭解其功能及使用方式的詳細資訊。
+請參考[Content MCP伺服器教學課程](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server)和[Cloud Manager MCP伺服器影片](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager)，瞭解其功能及使用方式的詳細資訊。
 
 ## 支援的MCP應用程式 {#supported-mcp-applications}
 
