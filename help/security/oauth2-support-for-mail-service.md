@@ -23,7 +23,7 @@ AEM支援Microsoft® 365的兩個OAuth2型傳輸選項：
 * **SMTP + OAuth2** — 使用SMTP搭配OAuth2驗證的標準路徑。
 * **Microsoft Graph API** — 當您的組織不允許以SMTP為基礎的傳送（例如，在Microsoft® 365中停用全租使用者SMTP驗證時），會透過Microsoft Graph傳送郵件的替代路徑，這會防止使用SMTP和OAuth2。
 
-如需關於 AEM as a Cloud Service 郵件服務的詳細資訊，請參閱[傳送電子郵件 ](/help/implementing/developing/introduction/development-guidelines.md#sending-email)。
+如需關於 AEM as a Cloud Service 郵件服務的詳細資訊，請參閱[傳送電子郵件 &#x200B;](/help/implementing/developing/introduction/development-guidelines.md#sending-email)。
 
 ## Microsoft® Outlook {#microsoft-outlook}
 
