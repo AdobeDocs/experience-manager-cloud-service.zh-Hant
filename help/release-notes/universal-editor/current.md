@@ -1,20 +1,20 @@
 ---
-title: 通用編輯器 2026.04.09 發行說明
-description: 此為通用編輯器 2026.04.09 版本的發行說明。
+title: Universal Editor 2026.04.30發行說明
+description: 這些是2026.04.30版通用編輯器的發行說明。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: a5f3b703706beab106591477372328e45f881b44
+source-git-commit: a6293278e50507943cd3f1055bc7c7f8dc479613
 workflow-type: tm+mt
-source-wordcount: '138'
-ht-degree: 59%
+source-wordcount: '97'
+ht-degree: 22%
 
 ---
 
 
-# 通用編輯器 2026.04.09 發行說明 {#release-notes}
+# Universal Editor 2026.04.30發行說明 {#release-notes}
 
-以下是通用編輯器 2026 年 9 月 4 日版本的發行說明。
+這些是2026年4月30日發行的Universal Editor的發行說明。
 
 >[!TIP]
 >
@@ -22,10 +22,8 @@ ht-degree: 59%
 
 >[!TIP]
 >
->如需有關 Adobe Experience Manager as a Cloud Service 的最新發行說明，請參閱[此頁面](/help/release-notes/release-notes-cloud/release-notes-current.md)。
+>如需Adobe Experience Manager as a Cloud Service目前的發行說明，請參閱[此頁面。](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
-## 新增功能 {#what-is-new}
+## 改善功能 {#other-improvements}
 
-* [&#x200B; RTF編輯器(RTE)工具列](/help/implementing/universal-editor/configure-rte.md#image)中的新增影像選項，現在支援[在AEM as a Cloud Service中製作及保留內容的專案。](https://www.aem.live/docs/aem-authoring)
-* [現在，從編輯器導覽回](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)主畫面時，屬性面板[可摺疊。](/help/sites-cloud/authoring/universal-editor/navigation.md#home-button)
-   * 如果您想要使用此功能，請聯絡Adobe客戶服務。
+* 已修正以下問題：[可編輯專案](/help/sites-cloud/authoring/universal-editor/authoring.md#editing-content)的徽章在某些情況下會遮蔽其背後的專案。
