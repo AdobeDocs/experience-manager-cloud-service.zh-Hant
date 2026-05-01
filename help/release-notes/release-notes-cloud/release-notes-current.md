@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 0ba0b95eac6b3a3ca0aa6ed0a816edcc63b9d50f
+source-git-commit: 687be0c3895cbcd8a9530d25f279100f610efe96
 workflow-type: tm+mt
-source-wordcount: '2009'
-ht-degree: 31%
+source-wordcount: '2054'
+ht-degree: 30%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 31%
 
 Have a look at the April 2026 Release Overview video for a summary of the features added in the 2026.4.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3483071/?captions=chi_hant&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3483060/?quality=12)
 -->
 
 ## AEM Beta計畫 {#aem-beta-programs}
@@ -91,6 +91,10 @@ Customers selected for participation will be notified directly by Adobe. Partici
 
 AEM使用者現在可以利用大型語言模型(LLM)進行內容翻譯，以機器翻譯的速度提供人力翻譯品質。 與傳統第三方翻譯服務類似，Azure OpenAI可設定為AEM中的翻譯提供者，並支援未來版本預計提供的其他LLM。 客戶使用自己的LLM授權來實現此功能。 此外，企業翻譯風格指南可上傳至AEM，讓您擷取翻譯規則，確保品牌和風格的一致性。 如需詳細資訊，請參閱[設定AI翻譯整合](/help/sites-cloud/administering/translation/ai-translation-integration.md)。
 
+### 內容片段編輯器 {#cf-editor}
+
+新的內容片段編輯器現在可讓您預覽內容片段的JSON表示法。 這有助於獨立於呈現之外驗證內容結構，並在此功能中恢復與AEM Touch UI中先前內容片段編輯器的同位關係。
+
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 **內容顧問現在可用於Adobe Workfront和非Adobe應用程式**
@@ -133,7 +137,7 @@ Java棧疊團隊越來越多地在Cursor、Claude Code、Visual Studio和Intelli
 
 Experience Governance MCP Server現已正式推出(GA)。 它與支援「模型內容通訊協定」(MCP)的AI開發人員工具和聊天機器人整合，可讓您在聊天機器人或IDE中使用自然語言提示來維護品牌完整性和法規遵循。 您可以根據品牌治理規則評估內容（文字、影像、頁面），並擷取品牌設定和可用的治理檢查。
 
-深入瞭解[AEM MCP伺服器](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)和[治理代理程式](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview)。
+深入瞭解[AEM MCP伺服器](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)和[治理代理程式](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview)。
 
 #### 克勞德聯結器 {#aem-claude-connector}
 
