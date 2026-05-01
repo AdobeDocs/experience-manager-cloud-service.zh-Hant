@@ -73,7 +73,7 @@ AEM Forms as a Cloud Service支援下列驗證碼解決方案：
     1. In the Edit Component dialog, specify the name, project ID, site key, API key (obtained in steps 2 and 3), select the key type, and enter the threshold score. Select **[!UICONTROL Save Settings]** and then select **[!UICONTROL OK]** to complete the configuration.
 -->
 
-reCAPTCHA Enterprise服務啟用後，就可在調適型表單中使用。 請參閱在最適化表單](#using-reCAPTCHA)中使用驗證碼[。
+reCAPTCHA Enterprise服務啟用後，就可在調適型表單中使用。 請參閱在最適化表單[&#128279;](#using-reCAPTCHA)中使用驗證碼。
 
 <!--
 ![reCAPTCHA Enterprise](/help/forms/assets/recaptcha1-enterprise.png)
@@ -120,7 +120,7 @@ reCAPTCHA Enterprise服務啟用後，就可在調適型表單中使用。 請�
 
 1. 選取您新增的Captcha元件，並選取![cmppr](assets/cmppr.png)以編輯其屬性。
 1. 指定驗證碼介面工具集的標題。 預設值為&#x200B;**驗證碼**。 如果您不想顯示標題，請選取&#x200B;**隱藏標題**。
-1. 從&#x200B;**Captcha服務**&#x200B;下拉式清單中，選取&#x200B;**reCAPTCHA**&#x200B;以啟用reCAPTCHA服務（若您已依照Google](#google-reCAPTCHA)的[reCAPTCHA服務說明進行設定）。
+1. 從&#x200B;**Captcha服務**&#x200B;下拉式清單中，選取&#x200B;**reCAPTCHA**&#x200B;以啟用reCAPTCHA服務（若您已依照Google[&#128279;](#google-reCAPTCHA)的reCAPTCHA服務說明進行設定）。
 1. 從「設定」下拉式清單中選取&#x200B;**reCAPTCHA Enterprise**&#x200B;或&#x200B;**reCAPTCHA v2**&#x200B;的組態
    1. 若您選取&#x200B;**reCAPTCHA Enterprise**&#x200B;版本，金鑰型別可以是&#x200B;**核取方塊**&#x200B;或&#x200B;**以分數為基礎**，其依據是您在設定網站的[網站金鑰時的選擇](https://cloud.google.com/recaptcha-enterprise/docs/create-key#create-key)：
 
@@ -208,7 +208,7 @@ reCAPTCHA Enterprise服務啟用後，就可在調適型表單中使用。 請�
    1. 您可以為reCAPTCHA Widget選取大小為&#x200B;**[!UICONTROL Normal]**&#x200B;或&#x200B;**[!UICONTROL Compact]**。
    1. 您可以選取&#x200B;**[!UICONTROL 隱藏]**&#x200B;選項，只在可疑活動時才顯示驗證碼質詢。
 
-   已針對最適化表單啟用reCAPTCHA服務。 您可以預覽表單，並檢視驗證碼是否正常運作。 受reCAPTCHA **保護的**徽章（如下所示）會顯示在受保護的表單上。
+   已針對最適化表單啟用reCAPTCHA服務。 您可以預覽表單，並檢視驗證碼是否正常運作。 受reCAPTCHA **保護的**&#x200B;徽章（如下所示）會顯示在受保護的表單上。
    ![受reCAPTCHA徽章保護的Google](/help/forms/assets/google-recaptcha-v2.png)
 
 1. 儲存屬性。
@@ -392,7 +392,7 @@ reCAPTCHA服務使用`https://www.recaptcha.net/`做為預設網域。 您可以
 
    >[!NOTE]
    >
-   >在Cloud Manager中新增`projectId`、`siteKey`和`secretKey`作為環境變數和密碼，以便它們套用至&#x200B;**作者**、**預覽**&#x200B;和&#x200B;**發佈** （在&#x200B;**環境設定**&#x200B;對話方塊中使用&#x200B;**套用的步驟**）。 檢視Cloud Manager](/help/implementing/cloud-manager/environment-variables.md)中的[環境變數。
+   >在Cloud Manager中新增`projectId`、`siteKey`和`secretKey`作為環境變數和密碼，以便它們套用至&#x200B;**作者**、**預覽**&#x200B;和&#x200B;**發佈** （在&#x200B;**環境設定**&#x200B;對話方塊中使用&#x200B;**套用的步驟**）。 檢視Cloud Manager[&#128279;](/help/implementing/cloud-manager/environment-variables.md)中的環境變數。
 
    ![Recaptcha覆寫](/help/forms/assets/recaptcha-override.png)
 

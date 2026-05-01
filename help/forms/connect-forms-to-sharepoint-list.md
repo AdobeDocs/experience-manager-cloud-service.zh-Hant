@@ -54,7 +54,7 @@ SharePoint清單設定的<span class="preview">憑證式驗證在早期採用者
 1. 將&#x200B;**[!UICONTROL 驗證型別]**&#x200B;設定為&#x200B;**憑證式驗證**。
 1. 指定&#x200B;**[!UICONTROL 標題]**、**[!UICONTROL 使用者端識別碼]**、**[!UICONTROL 憑證別名]**、**[!UICONTROL 租使用者識別碼]**&#x200B;和&#x200B;**[!UICONTROL 租使用者名稱稱]**。
 1. 輸入&#x200B;**[!UICONTROL SharePoint網站URL]**，視需要驗證網站連線，然後選取&#x200B;**[!UICONTROL SharePoint清單]**。
-1. 按一下[連線]以驗證連線，然後按一下[儲存並關閉]以儲存組態。********
+1. 按一下[連線]以驗證連線，然後按一下[儲存並關閉]以儲存組態。**&#x200B;**&#x200B;**&#x200B;**
 
 以下熒幕擷圖顯示具有&#x200B;**憑證式驗證**&#x200B;的SharePoint清單組態：
 
@@ -72,9 +72,9 @@ SharePoint清單設定的<span class="preview">憑證式驗證在早期採用者
 
 熒幕擷圖顯示新增憑證後的金鑰存放區。 **[!UICONTROL 別名]**&#x200B;必須符合SharePoint清單雲端設定中的&#x200B;**[!UICONTROL 憑證別名]**：
 
-具有憑證別名](/help/forms/assets/fd-cloudservice-keystore-certificate.png){width=50%, height=50%, align=center}的![fd-cloudservice使用者金鑰存放區
+具有憑證別名![&#128279;](/help/forms/assets/fd-cloudservice-keystore-certificate.png){width=50%, height=50%, align=center}的fd-cloudservice使用者金鑰存放區
 
-在Microsoft Azure中&#x200B;****
+在Microsoft Azure中&#x200B;**&#x200B;**
 
 1. 開啟您的應用程式註冊，並移至&#x200B;**憑證與密碼** > **憑證**。
 1. 選取&#x200B;**上傳憑證**&#x200B;並上傳Azure必須信任該應用程式的憑證檔案（公開金鑰）。
