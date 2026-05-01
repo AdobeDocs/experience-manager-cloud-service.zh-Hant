@@ -38,7 +38,7 @@ Content Hub中的ABAC規則可使用以下方法設定：
 * 支援跨品牌和區域的可擴充控管
 * 改善資產管理
 
->[!VIDEO](https://video.tv.adobe.com/v/3475413/?learn=on&enablevpops){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3475425/?captions=chi_hant&learn=on&enablevpops){transcript=true}
 
 ## 如何啟用以屬性為基礎的存取控制 {#enable-attribute-based-access-control}
 
