@@ -37,7 +37,7 @@ ht-degree: 92%
          + [2026.2.0版發行說明](/help/release-notes/release-notes-cloud/2026/2026-2-0.md)
          + [2026.1.0版發行說明](/help/release-notes/release-notes-cloud/2026/2026-1-0.md)
       + 2025 {#2025}
-         + [2025.12.0](/help/release-notes/release-notes-cloud/2025/release-notes-2025-12-0.md)版發行說明
+         + [2025.12.0版發行說明](/help/release-notes/release-notes-cloud/2025/release-notes-2025-12-0.md)
          + [2025.11.0 版發行說明](/help/release-notes/release-notes-cloud/2025/release-notes-2025-11-0.md)
          + [2025.10.0 版發行說明](/help/release-notes/release-notes-cloud/2025/release-notes-2025-10-0.md)
          + [2025.9.0 版發行說明](/help/release-notes/release-notes-cloud/2025/release-notes-2025-9-0.md)
@@ -588,11 +588,11 @@ ht-degree: 92%
    + [內容關聯式實驗](/help/sites-cloud/administering/contextual-experimentation.md)
 + Assets {#assets}
    + [概觀與新增功能](/help/assets/overview.md)
-   + [ [!DNL Assets] as a [!DNL Cloud Service] 重大變更](/help/assets/assets-cloud-changes.md)
+   + [&#x200B; [!DNL Assets] as a [!DNL Cloud Service] 重大變更](/help/assets/assets-cloud-changes.md)
    + [[!DNL Assets] 架構](/help/assets/architecture.md)
    + [支援的檔案格式](/help/assets/file-format-support.md)
    + [資產微服務概觀](/help/assets/asset-microservices-overview.md)
-   + [ [!DNL Assets] 中的協助工具](/help/assets/accessibility.md)
+   + [&#x200B; [!DNL Assets] 中的協助工具](/help/assets/accessibility.md)
    + [Assets as a Cloud Service Ultimate](/help/assets/assets-ultimate-overview.md)
    + [啟用 Assets as a Cloud Service Ultimate](/help/assets/enable-assets-ultimate.md)
    + [Assets as a Cloud Service Prime](/help/assets/assets-prime.md)
