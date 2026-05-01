@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: d389f158ddd71f90b5ee9b707050f5b593ec595a
+source-git-commit: 0ba0b95eac6b3a3ca0aa6ed0a816edcc63b9d50f
 workflow-type: tm+mt
-source-wordcount: '2030'
+source-wordcount: '2009'
 ht-degree: 31%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 31%
 
 Have a look at the April 2026 Release Overview video for a summary of the features added in the 2026.4.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3483071/?captions=chi_hant&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3483060/?quality=12)
 -->
 
 ## AEM Beta計畫 {#aem-beta-programs}
@@ -101,16 +101,18 @@ Content Advisor現在可供Adobe Workfront和非Adobe （協力廠商）應用�
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### AEM Forms 的搶先體驗功能 {#forms-early-access-features}
+### AEM Forms中的新功能
 
-**在提交PDF中顯示多選下拉式清單的標籤**
-最適化Forms中的多選下拉式元件現在會在[產生的提交PDF](/help/forms/generate-document-of-record-core-components.md)中轉譯其選取的顯示標籤，以確保檔案準確地反映使用者在表單上看到的內容。
+* **使用OSGi覆寫reCAPTCHA雲端設定** 
+reCAPTCHA [新增內容感知設定覆寫並透過Cloud Manager](/help/forms/captcha-adaptive-forms.md#override-recaptcha-osgi)部署後，您與來源檔案一起保留的Enterprise專案ID、網站金鑰和密碼可以解析為每個Cloud Service環境上的不同值。
 
-**核取方塊、選項按鈕和面板元件的增強協助工具**
-最適化Forms核心元件為[核取方塊群組(v2)](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox-group)、[選項按鈕群組(v2)](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/radio-button)和[面板元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel)引入符合WCAG 2.2的語意標籤。 這些元件運用`<fieldset>`和`<legend>` HTML元素，在群組標籤與其選項之間建立有意義的關係，讓熒幕助讀程式和其他輔助技術能夠精確解讀。
+* **憑證式驗證** 
+提交至Microsoft SharePoint清單的最適化Forms現在支援[憑證式驗證](/help/forms/connect-forms-to-sharepoint-list.md#certificate-based-authentication)以及OAuth URL驗證。 如需憑證式登入，請在AEM和Microsoft Azure中註冊憑證別名和租使用者詳細資訊。
 
-Forms Manager中的&#x200B;**版本設定支援**
-Forms Manager現在[支援最適化Forms （核心元件和基本元件）](/help/forms/manage-form-versions-forms-manager.md)、表單片段、主題、XDP範本和二進位資產的版本設定。 直接從Forms和檔案主控台建立版本、檢視完整的版本記錄，以及還原表單資產的舊版狀態。
+* **規則編輯器增強功能**
+
+   * 最適化Forms規則編輯器現在支援現成(OOTB)觸發程式和自訂事件的[傳送事件和觸發程式事件規則](/help/forms/rule-editor-enhancements-use-cases.md#simplified-grammar-for-ootb-and-custom-events)的簡化語法，因此作者不限於自訂觸發程式的語法。
+   * 當根據核心元件的最適化Forms規則現在包含[檔案附件元件以及使用AND或OR邏輯](/help/forms/rule-editor-enhancements-use-cases.md#combined-when-conditions-with-the-file-attachment-component)的其他條件時，因此只有當附件狀態和其他檢查都評估為符合預期時，規則才會執行其動作。
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] 基礎 {#foundation}
 
@@ -131,7 +133,7 @@ Java棧疊團隊越來越多地在Cursor、Claude Code、Visual Studio和Intelli
 
 Experience Governance MCP Server現已正式推出(GA)。 它與支援「模型內容通訊協定」(MCP)的AI開發人員工具和聊天機器人整合，可讓您在聊天機器人或IDE中使用自然語言提示來維護品牌完整性和法規遵循。 您可以根據品牌治理規則評估內容（文字、影像、頁面），並擷取品牌設定和可用的治理檢查。
 
-深入瞭解[AEM MCP伺服器](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)和[治理代理程式](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview)。
+深入瞭解[AEM MCP伺服器](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)和[治理代理程式](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview)。
 
 #### 克勞德聯結器 {#aem-claude-connector}
 

@@ -9,10 +9,10 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: 23a6c298df67355160d3ec4b2519f6d1bde2b254
 workflow-type: tm+mt
-source-wordcount: '1748'
-ht-degree: 9%
+source-wordcount: '2147'
+ht-degree: 10%
 
 ---
 
@@ -20,17 +20,17 @@ ht-degree: 9%
 
 >[!NOTE]
 >
-> Adobe建議針對[建立新的Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hant)或[將Adaptive Forms新增至AEM Sites頁面](/help/forms/creating-adaptive-form-core-components.md)，使用現代且可擴充的資料擷取[核心元件](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。本文說明使用基礎元件製作最適化Forms的舊方法。
+> Adobe建議針對[建立新的Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md)或[將Adaptive Forms新增至AEM Sites頁面](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)，使用現代且可擴充的資料擷取[核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)。 這些元件代表最適化表單建立方面的重大進步，可確保令人印象深刻的使用者體驗。 本文說明使用基礎元件製作最適化Forms的舊方法。
 
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/captcha-adaptive-forms.html?lang=zh-Hant) |
-| AEM as a Cloud Service  | 本文章 |
-| 套用至 | 根據Foundation元件的最適化表單。 針對以核心元件為基礎的最適化表單<br>，[按一下這裡](/help/forms/captcha-adaptive-forms-core-components.md)。 |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/captcha-adaptive-forms.html) |
+| AEM as a Cloud Service | 本文章 |
+| 套用至 | 根據Foundation元件的最適化表單。<br> 針對以核心元件為基礎的最適化表單，[按一下這裡](/help/forms/captcha-adaptive-forms-core-components.md)。 |
 
 
-CAPTCHA （完全自動化公用圖靈測試來區分電腦和人之間的差異）是一種常用於線上交易的程式，以區分人和自動化程式或機器人。 它會提出質詢並評估使用者的回應，以判斷與網站互動的是真人還是機器人。它可防止使用者在測試失敗時繼續操作，並透過防止機器人發佈垃圾郵件或惡意目的來確保線上交易的安全。
+CAPTCHA （完全自動化公用圖靈測試來區分電腦和人之間的差異）是一種常用於線上交易的程式，以區分人和自動化程式或機器人。 它會提出質詢並評估使用者的回應，以判斷與網站互動的是真人還是機器人。 它可防止使用者在測試失敗時繼續操作，並透過防止機器人發佈垃圾郵件或惡意目的來確保線上交易的安全。
 
 AEM Forms as a Cloud Service支援下列驗證碼解決方案：
 
@@ -66,14 +66,14 @@ AEM Forms as a Cloud Service支援下列驗證碼解決方案：
    1. 選取&#x200B;**[!UICONTROL reCAPTCHA]**。 「組態」頁面隨即開啟。 選取您建立的組態容器，並選取&#x200B;**[!UICONTROL 建立]**。
    1. 選取版本為[!DNL reCAPTCHA Enterprise]，並指定reCAPTCHA Enterprise服務的名稱、專案ID、網站金鑰和API金鑰（在步驟2中取得）。
    1. 選取金鑰型別，金鑰型別應與您在[Google Cloud專案](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#before-you-begin)中設定的網站金鑰相同，例如，**核取方塊網站金鑰**&#x200B;或&#x200B;**以分數為基礎的網站金鑰**。
-   1. 指定 [0 到 1 範圍內的閥值分數](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores)。分數大於或等於臨界值分數會識別人類互動，否則會被視為機器人互動。
+   1. 指定 [0 到 1 範圍內的閥值分數](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores)。 分數大於或等於臨界值分數會識別人類互動，否則會被視為機器人互動。
    1. 選取「**[!UICONTROL 建立]**」，以建立雲端服務設定。
 
 <!--
     1. In the Edit Component dialog, specify the name, project ID, site key, API key (obtained in steps 2 and 3), select the key type, and enter the threshold score. Select **[!UICONTROL Save Settings]** and then select **[!UICONTROL OK]** to complete the configuration.
 -->
 
-reCAPTCHA Enterprise服務啟用後，就可在調適型表單中使用。 請參閱在最適化表單[中使用驗證碼](#using-reCAPTCHA)。
+reCAPTCHA Enterprise服務啟用後，就可在調適型表單中使用。 請參閱在最適化表單](#using-reCAPTCHA)中使用驗證碼[。
 
 <!--
 ![reCAPTCHA Enterprise](/help/forms/assets/recaptcha1-enterprise.png)
@@ -120,7 +120,7 @@ reCAPTCHA Enterprise服務啟用後，就可在調適型表單中使用。 請�
 
 1. 選取您新增的Captcha元件，並選取![cmppr](assets/cmppr.png)以編輯其屬性。
 1. 指定驗證碼介面工具集的標題。 預設值為&#x200B;**驗證碼**。 如果您不想顯示標題，請選取&#x200B;**隱藏標題**。
-1. 從&#x200B;**Captcha服務**&#x200B;下拉式清單中，選取&#x200B;**reCAPTCHA**&#x200B;以啟用reCAPTCHA服務（若您已依照Google[的](#google-reCAPTCHA)reCAPTCHA服務說明進行設定）。
+1. 從&#x200B;**Captcha服務**&#x200B;下拉式清單中，選取&#x200B;**reCAPTCHA**&#x200B;以啟用reCAPTCHA服務（若您已依照Google](#google-reCAPTCHA)的[reCAPTCHA服務說明進行設定）。
 1. 從「設定」下拉式清單中選取&#x200B;**reCAPTCHA Enterprise**&#x200B;或&#x200B;**reCAPTCHA v2**&#x200B;的組態
    1. 若您選取&#x200B;**reCAPTCHA Enterprise**&#x200B;版本，金鑰型別可以是&#x200B;**核取方塊**&#x200B;或&#x200B;**以分數為基礎**，其依據是您在設定網站的[網站金鑰時的選擇](https://cloud.google.com/recaptcha-enterprise/docs/create-key#create-key)：
 
@@ -208,7 +208,7 @@ reCAPTCHA Enterprise服務啟用後，就可在調適型表單中使用。 請�
    1. 您可以為reCAPTCHA Widget選取大小為&#x200B;**[!UICONTROL Normal]**&#x200B;或&#x200B;**[!UICONTROL Compact]**。
    1. 您可以選取&#x200B;**[!UICONTROL 隱藏]**&#x200B;選項，只在可疑活動時才顯示驗證碼質詢。
 
-   已針對最適化表單啟用reCAPTCHA服務。 您可以預覽表單，並檢視驗證碼是否正常運作。 受reCAPTCHA **保護的**&#x200B;徽章（如下所示）會顯示在受保護的表單上。
+   已針對最適化表單啟用reCAPTCHA服務。 您可以預覽表單，並檢視驗證碼是否正常運作。 受reCAPTCHA **保護的**徽章（如下所示）會顯示在受保護的表單上。
    ![受reCAPTCHA徽章保護的Google](/help/forms/assets/google-recaptcha-v2.png)
 
 1. 儲存屬性。
@@ -347,6 +347,64 @@ reCAPTCHA服務使用`https://www.recaptcha.net/`做為預設網域。 您可以
 ```
 
 若要設定值，請[使用 AEM SDK 產生 OSGi 設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=zh-Hant#generating-osgi-configurations-using-the-aem-sdk-quickstart)，並[將設定部署至](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=zh-Hant#deployment-process)您的 Cloud Service 執行個體。
+
+## 使用OSGi覆寫reCAPTCHA雲端設定 {#override-recaptcha-osgi}
+
+若要在每個環境中使用不同的專案ID、網站金鑰或密碼，請為&#x200B;**[!UICONTROL Apache Sling內容感知設定覆寫提供者： OSGi設定]**&#x200B;新增OSGi設定。
+
+### 在您的專案中新增OSGi覆寫 {#override-recaptcha-steps}
+
+1. 複製您AEM專案的Cloud Manager Git存放庫。
+
+   ```shell
+   git clone <your-cloud-manager-repository-url>
+   ```
+
+1. 在文字編輯器中開啟複製的存放庫。
+
+1. 移至應用程式下的`ui.config`資料夾（將`<your-application-folder>`取代為您專案中`/apps`下的資料夾名稱）：
+
+   * **作者：** `ui.config/src/main/content/jcr_root/apps/<your-application-folder>/osgiconfig/config.author`
+   * **用於發佈：** `ui.config/src/main/content/jcr_root/apps/<your-application-folder>/osgiconfig/config.publish`
+
+   >[!NOTE]
+   >
+   > 建立`osgiconfig`、`config.author`和`config.publish`資料夾（如果尚未存在）。
+
+1. 在兩個執行模式資料夾中建立OSGi覆寫檔案，並在每個資料夾中使用相同的檔案名稱：
+
+   * **對於作者：`config.author`資料夾中的**，請建立`org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider-integrationTest.cfg.json`。
+   * **若要在`config.publish`資料夾中發佈：**，請建立`org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider-integrationTest.cfg.json`。
+
+1. 將下列JSON貼到每個檔案中（或視需要個別調整作者和發佈內容）。 在`overrides`下的每個路徑中，將`<environment-name>`取代為reCAPTCHA Enterprise雲端組態的名稱。 使用[Sling覆寫語法](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-override.html#override-syntax)。
+
+   ```json
+   {
+     "enabled": true,
+     "description": "recaptchaITOverrideConfig",
+     "overrides": [
+       "cloudconfigs/recaptcha/<environment-name>/projectId=\"$[env:projectId]\"",
+       "cloudconfigs/recaptcha/<environment-name>/secretKey=\"$[secret:secretKey]\"",
+       "cloudconfigs/recaptcha/<environment-name>/siteKey=\"$[env:siteKey]\""
+     ]
+   }
+   ```
+
+   >[!NOTE]
+   >
+   >在Cloud Manager中新增`projectId`、`siteKey`和`secretKey`作為環境變數和密碼，以便它們套用至&#x200B;**作者**、**預覽**&#x200B;和&#x200B;**發佈** （在&#x200B;**環境設定**&#x200B;對話方塊中使用&#x200B;**套用的步驟**）。 檢視Cloud Manager](/help/implementing/cloud-manager/environment-variables.md)中的[環境變數。
+
+   ![Recaptcha覆寫](/help/forms/assets/recaptcha-override.png)
+
+1. 提交並推送您的變更：
+
+   ```shell
+   git add ui.config/src/main/content/jcr_root/apps/<your-application-folder>/osgiconfig/
+   git commit -m "Add reCAPTCHA context-aware configuration OSGi overrides"
+   git push origin <your-branch-name>
+   ```
+
+1. 執行部署此存放庫的Cloud Manager管道。 部署後，覆寫會從該環境定義的變數和密碼中提供`projectId`、`siteKey`和`secretKey`。
 
 ## 另請參閱 {#see-also}
 

@@ -6,16 +6,16 @@ role: User, Developer
 level: Beginner, Intermediate
 badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: 062ed441-6e1f-4279-9542-7c0fedc9b200
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: 0e5045b87719781301d91874c7355eda9426beef
 workflow-type: tm+mt
-source-wordcount: '1981'
-ht-degree: 0%
+source-wordcount: '2396'
+ht-degree: 1%
 
 ---
 
 # 規則編輯器增強功能和使用案例
 
-<span class="preview">這些是透過我們的<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=zh-Hant#new-features">發行前通道</a>提供的發行前功能。 這些增強功能也適用於Edge Delivery Services Forms。
+<span class="preview">這些是透過我們的<a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features">發行前通道</a>提供的發行前功能。 這些增強功能也適用於Edge Delivery Services Forms。
 
 本文介紹Adaptive Forms中規則編輯器的最新增強功能。 這些更新可協助您更輕鬆地定義表單行為，而不需撰寫自訂程式碼，並建立更動態、回應速度更快、更個人化的表單體驗。
 
@@ -28,11 +28,12 @@ ht-degree: 0%
 | [動態變數](#support-for-dynamic-variables-in-rules) | 使用根據使用者輸入或其他條件而變更的變數來建立規則。 |  — 啟用彈性的規則條件<br> — 減少重複邏輯<br>的需求 — 消除建立隱藏欄位的要求 |
 | [自訂事件型規則](#custom-event-based-rules-support) | 定義可回應標準觸發程式以外自訂事件的規則。 |  — 支援進階使用案例<br> — 更深入控制執行規則的時間和方式<br> — 增強互動性 |
 | [內容感知可重複面板執行](#context-based-rule-execution-for-repeatable-panels) | 規則現在會在每個重複面板的正確內容中執行，而非僅在最後一個例項中執行。 |  — 每個重複執行個體<br>的精確規則應用程式 — 減少動態區段<br>中的錯誤 — 改善使用者對重複內容的體驗 |
+| [與File Attachment元件](#combined-when-conditions-with-the-file-attachment-component)結合When條件 | 使用「新增條件」和AND或OR邏輯，為檔案附件元件建立When規則，以便與其他驗證一起評估附件。 |  — 僅當附件狀態和其他檢查評估為預期時，才會執行動作<br> — 上傳案例的鏈結規則較少<br> — 需要檔案和已驗證輸入一起的表單的撰寫作業更清晰 |
 | [支援查詢字串、UTM和瀏覽器引數](#url-and-browser-parameter-based-rules-in-adaptive-forms) | 建立可根據URL引數或瀏覽器特定值來調整表單行為的規則。 |  — 根據來源或環境<br>啟用個人化 — 對行銷或追蹤特定流程<br>很有用 — 不需要額外的指令碼或自訂 |
 
 >[!NOTE]
 >
-> 增強功能也適用於Edge Delivery Services Forms[的](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)規則編輯器。
+> 增強功能也適用於Edge Delivery Services Forms](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)的[規則編輯器。
 
 現在，讓我們透過特定使用案例來詳細探索每個方法，以幫助您瞭解如何使用這些功能為使用者提供個人化體驗
 
@@ -93,7 +94,7 @@ ht-degree: 0%
 
 ## 支援規則中的動態變數
 
-增強型規則編輯器支援建立和使用動態（暫時）變數。 您可以使用內建的&#x200B;**設定變數值**&#x200B;和&#x200B;**取得變數值**&#x200B;函式，在表單的整個生命週期中設定及擷取這些變數。
+增強型規則編輯器支援建立和使用動態（暫時）變數。 您可以使用內建的&#x200B;**設定變數值**&#x200B;和&#x200B;**取得變數值**函式，在表單的整個生命週期中設定及擷取這些變數。
 這些變數：
 
 * 未隨表單資料一起提交。
@@ -119,12 +120,12 @@ ht-degree: 0%
 
 ![取得變數值](/help/forms/assets/getvalue.png)
 
-**總出貨成本**&#x200B;欄位會隨著使用者變更國家或數量而動態更新，以反映產品成本和出貨費用。
+**總出貨成本**欄位會隨著使用者變更國家或數量而動態更新，以反映產品成本和出貨費用。
 ![輸出](/help/forms/assets/getsetvalue-output.png)
 
 >[!NOTE]
 >
-> 您也可以在When條件中新增&#x200B;**Get Variable value**&#x200B;函式。
+> 您也可以在When條件中新增&#x200B;**Get Variable value**函式。
 > ![條件](/help/forms/assets/when-get-variable.png){width=50%，height=50%，align=center}中的取得變數值函式
 
 此方法可啟用動態即時計算，而不會在表單中新增額外欄位，保持結構簡潔且方便使用。
@@ -138,7 +139,6 @@ ht-degree: 0%
 此表單不是直接將邏輯繫結至欄位，而是使用包含&#x200B;**分派事件**&#x200B;和&#x200B;**觸發事件**&#x200B;的事件型方法，以改善模組化及可維護性。
 
 **使用分派事件和觸發事件時的實作**
-
 
 >[!VIDEO](https://video.tv.adobe.com/v/3471610/dispatch-trigger-final/?quality=12&learn=on)
 
@@ -158,6 +158,10 @@ ht-degree: 0%
 
 自訂事件支援可讓開發人員建立和觸發自訂事件，這些事件可在規則編輯器中作為條件使用。
 
+### 簡化OOTB和自訂事件的文法 {#simplified-grammar-for-ootb-and-custom-events}
+
+增強型規則編輯器針對使用&#x200B;**分派事件**&#x200B;和&#x200B;**觸發事件**&#x200B;的事件型規則，包含&#x200B;**簡化文法**。 以前，此文法僅套用至&#x200B;**自訂**&#x200B;事件；不支援現成(OOTB)事件，這通常需要&#x200B;**OOTB觸發器的**&#x200B;規則以及自訂事件的&#x200B;**觸發事件上的**&#x200B;規則。 OOTB事件現在支援相同的簡化語法，啟用一致的撰寫模式，而不需根據觸發程式是OOTB或自訂，在&#x200B;**When**&#x200B;與&#x200B;**On觸發程式事件**&#x200B;之間切換。
+
 ## 可重複面板的內容型規則執行
 
 最適化Forms支援可重複面板的內容感知規則執行。 這可讓規則專門套用至使用者互動的面板執行個體，而非影響所有執行個體或預設為最後一個執行個體。
@@ -175,6 +179,26 @@ ht-degree: 0%
 變更數量時，規則會擷取所選產品的單價，並只計算該面板的總成本。
 
 ![內容感知規則輸出](/help/forms/assets/context-aware-rule-output.png)
+
+## 與File Attachment元件結合When條件 {#combined-when-conditions-with-the-file-attachment-component}
+
+增強型規則編輯器支援使用&#x200B;**AND**&#x200B;或&#x200B;**OR**&#x200B;邏輯將&#x200B;**檔案附件**&#x200B;元件與其他條件結合的&#x200B;**When**&#x200B;規則。 **在** When **子句中新增條件**&#x200B;可以包含檔案附件狀態以及其他欄位或面板驗證的檢查，因此動作只有在符合每個選取的條件時才執行。
+
+**情節**：寵物登錄檔單會收集&#x200B;**寵物識別碼**、**寵物名稱**&#x200B;和&#x200B;**寵物類別**，並包含&#x200B;**新增像片**&#x200B;檔案附件。 表單執行動作，例如，當附件變更&#x200B;**和**&#x200B;其他欄位上的設定條件（其值）符合時，清除或重新整理&#x200B;**新增像片**。
+
+**使用When條件在規則編輯器中搭配檔案附件元件來實作**
+
+已在目標物件上設定規則（例如&#x200B;**新增像片**）。 **When**&#x200B;區段使用&#x200B;**新增條件**&#x200B;將檔案附件觸發程式與一個或多個其他欄位的條件結合，因此動作取決於附件和這些欄位值。
+
+以下熒幕擷圖顯示具有多個條件和&#x200B;**新增條件**&#x200B;選項的&#x200B;**When**&#x200B;條件：
+
+![當規則具有多個條件並新增條件](/help/forms/assets/rule-editor-when-file-attachment-conditions.png)
+
+當&#x200B;**When**&#x200B;子句針對已設定的&#x200B;**AND**&#x200B;或&#x200B;**OR**&#x200B;邏輯評估為true時，規則會執行已設定的動作。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3483735/file-attachment/?quality=12&learn=on)
+
+當&#x200B;**寵物識別碼**&#x200B;包含`101`時，**新增像片**&#x200B;附件會清除；同樣地，當&#x200B;**寵物名稱**&#x200B;包含`a`時，附件會清除。
 
 ## Adaptive Forms中的URL和瀏覽器引數型規則
 
