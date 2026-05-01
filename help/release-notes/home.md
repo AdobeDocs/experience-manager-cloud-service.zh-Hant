@@ -4,9 +4,9 @@ description: Adobe Experience Manager (AEM) as a Cloud Service 的發行說明�
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 feature: Release Information
 role: Admin
-source-git-commit: 8b477bea40eec0b0c5aadea68f5b40577a2aa294
+source-git-commit: a1fc361dd4d060bf2aa4a085188ddc28d996c62a
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '678'
 ht-degree: 99%
 
 ---
@@ -14,15 +14,15 @@ ht-degree: 99%
 
 # 發行資訊 {#release-information}
 
-| 產品 | Adobe Experience Manager as a Cloud Service  |
+| 產品 | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| 版本 | 2026.3.0 |
+| 版本 | 2026.4.0 |
 | 類型 | 持續更新 |
 | 推出日期 | 持續更新 |
 
 ## AEM 發行排程 {#release-schedule}
 
-因為 [!DNL Adobe Experience Manager] as a Cloud Service 採用持續發行模型，應用程式會持續自動更新。更新有兩種類型，包括功能版本和維護版本：
+因為 [!DNL Adobe Experience Manager] as a Cloud Service 採用持續發行模型，應用程式會持續自動更新。 更新有兩種類型，包括功能版本和維護版本：
 
 * **功能發行以可預測的每月頻率進行，並專注於新功能和產品創新。**
    * 查看[最新發行說明](/help/release-notes/release-notes-cloud/release-notes-current.md)，了解最新功能版本的詳細資訊。
@@ -30,7 +30,7 @@ ht-degree: 99%
    * 這可確保 [!DNL Adobe Experience Manager] as a Cloud Service 始終保持最新狀態並安裝任何重要修正。
    * 查看[最新維護發行說明](/help/release-notes/maintenance/latest.md)，了解最新維護版本的詳細資訊。
 
-此模型可確保持續發行且服務不會中斷。通常會在一個版本中宣布即將推出的功能，然後在下一個版本中公開發行。透過這種方式，您可以評估即將推出的功能並針對自己的專案實施該功能的可能情形進行規劃。這樣一來，您便可以在下一個功能版本發佈 (即功能正式推出) 之前先行規劃。
+此模型可確保持續發行且服務不會中斷。 通常會在一個版本中宣布即將推出的功能，然後在下一個版本中公開發行。 透過這種方式，您可以評估即將推出的功能並針對自己的專案實施該功能的可能情形進行規劃。 這樣一來，您便可以在下一個功能版本發佈 (即功能正式推出) 之前先行規劃。
 
 例如，如果現在是五月，您可以評估即將推出的功能，而那些功能將在下一次發佈 (例如六月) 時正式推出。
 
@@ -51,7 +51,7 @@ ht-degree: 99%
 
 ## 標示您的行事曆 {#mark-calendars}
 
-功能發行都會事先安排好，並於 [Adobe Experience League](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=zh-Hant#aem-as-cloud-service) 上發佈功能發行啟用日期。
+功能發行都會事先安排好，並於 [Adobe Experience League](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service) 上發佈功能發行啟用日期。
 
 記下發行日期，以便規劃時間來檢視和測試即將推出的功能。
 
@@ -59,7 +59,7 @@ ht-degree: 99%
 
 在行事曆上標示發行日期後，請務必在發行當天查看 [Adobe Experience League](/help/release-notes/release-notes-cloud/release-notes-current.md) 網站以取得最新的發行說明。
 
-每個版本都附有發行說明，不僅記錄了該版本中的新功能，也記錄了即將推出的功能，以方便評估。取提前掌握情況，並為利用 AEMaaCS 的最新功能進行規劃！
+每個版本都附有發行說明，不僅記錄了該版本中的新功能，也記錄了即將推出的功能，以方便評估。 取提前掌握情況，並為利用 AEMaaCS 的最新功能進行規劃！
 
 您還可以查看與每個版本一起發佈的[已知問題](/help/release-notes/maintenance/latest.md)，這樣您也可以了解可能對您評估或最終採用任何新功能構成挑戰的任何技術問題。
 
@@ -81,8 +81,8 @@ ht-degree: 99%
 
 Adobe Experience League 提供了用來學習 AEMaaCS 的大量資源。
 
-* [AEMaaCS 文件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=zh-Hant)
-* [教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-tutorials/overview.html?lang=zh-Hant)
+* [AEMaaCS檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=zh-Hant)
+* [教學課程](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-tutorials/overview.html)
 * 發行說明中的[每月發行概觀影片](/help/release-notes/release-notes-cloud/release-notes-current.md#release-video)
 
 ## 重要版本資訊 {#key-articles}
