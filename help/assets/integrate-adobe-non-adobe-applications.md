@@ -65,7 +65,7 @@ Adobe Experience Manager (AEM) Assets也與Adobe Express原生整合，可讓您
 
 傳統關鍵字式搜尋會尋找精確字詞，而AI 搜尋則解譯字詞、概念和使用者意圖之間的關係。 這可確保使用者找到他們要尋找的內容 — 即使他們的查詢用詞不同、包含拼寫錯誤或使用另一種語言。
 
-內容警告器](assets/content-advisor-ai-search.png)中的資產![AI 搜尋
+內容警告器![&#128279;](assets/content-advisor-ai-search.png)中的資產AI 搜尋
 
 如果其主要優點包括：
 
