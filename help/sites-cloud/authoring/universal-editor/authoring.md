@@ -6,10 +6,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 769ba806fc4c663b993fbda14f18555103946e0b
+source-git-commit: a03eb72ee1b46756f003a60709019aa3122d26f2
 workflow-type: tm+mt
-source-wordcount: '3020'
-ht-degree: 17%
+source-wordcount: '3101'
+ht-degree: 18%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 17%
 
 通用編輯器可讓您編輯任何實作中任何內容的任何方面，因此您可以提供卓越的體驗並提高內容速度。
 
-為此，Universal Editor 為內容作者提供直觀的 UI，只需要最基本的培訓就能立即進入狀況並開始編輯內容。本文件說明了 Universal Editor 的編寫體驗。
+為此，Universal Editor 為內容作者提供直觀的 UI，只需要最基本的培訓就能立即進入狀況並開始編輯內容。 本文件說明了 Universal Editor 的編寫體驗。
 
 >[!NOTE]
 >
@@ -34,7 +34,7 @@ ht-degree: 17%
 
 ## 編輯內容 {#editing-content}
 
-編輯內容很簡單又直覺。當您將滑鼠移至編輯器中的內容上時，可編輯的內容會以淺藍色外框和徽章反白顯示。
+編輯內容很簡單又直覺。 當您將滑鼠移至編輯器中的內容上時，可編輯的內容會以淺藍色外框和徽章反白顯示。
 
 ![可編輯的內容以淺藍色方塊醒目提示](assets/editable-content.png)
 
@@ -64,7 +64,7 @@ ht-degree: 17%
 
 薄的淺藍色外框會變成深藍色外框來指示選取範圍，並且會出現游標。 進行變更，然後按下Enter/Return或在文字方塊外選取，以儲存變更。
 
-當您選取文字元件時，其詳細資訊會顯示在[屬性面板中。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)您也可以在面板中編輯文字。
+當您選取文字元件時，其詳細資料會顯示在[屬性面板中。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) 您也可以在面板中編輯文字。
 
 ![正在編輯屬性面板中的文字](assets/ue-editing-text-component-rail.png)
 
@@ -82,7 +82,7 @@ ht-degree: 17%
 
 隨即在RTF區塊上方開啟上下文功能表，提供上下文中的基本格式選項。 由於空間限制，某些選項可能會隱藏在省略符號按鈕後面。
 
-![&#x200B; RTF內容功能表](assets/rich-text-context-menu.png)
+![ RTF內容功能表](assets/rich-text-context-menu.png)
 
 一旦焦點離開已編輯的欄位，變更會自動儲存。
 
@@ -124,7 +124,7 @@ ht-degree: 17%
 * **取消連結**
    * 從選取的文字移除連結。
 * **影像**
-   * 指定URL或使用[資產選擇器](/help/assets/overview-asset-selector.md#using-asset-selector)從AEM中選取資產。
+   * 指定URL或使用[內容警告器](/help/assets/integrate-adobe-non-adobe-applications.md)從AEM中選取資產。
 * **表格**
    * 使用下拉式清單，插入所選欄和列數的新表格，或插入和移除新欄/列。
 * **對齊方式**
@@ -152,7 +152,7 @@ ht-degree: 17%
 ![編輯媒體](assets/ue-edit-media.png)
 
 1. 在屬性面板中，點選或按一下所選影像的預覽。
-1. [資產選擇器](/help/assets/overview-asset-selector.md#using-asset-selector)視窗會開啟，讓您可選取資產。
+1. [內容警告器](/help/assets/integrate-adobe-non-adobe-applications.md)視窗會開啟，讓您選取資產。
 1. 選取「 」以選取新資產。
 1. 選取&#x200B;**選取**&#x200B;以返回取代資產的屬性面板。
 
@@ -237,7 +237,7 @@ ht-degree: 17%
    * 在屬性面板中選取&#x200B;**刪除**&#x200B;圖示。
 
      ![刪除元件](assets/ue-delete-component.png)
-   * 選取內容功能表中的&#x200B;**刪除**&#x200B;選項。
+   * 選取內容功能表中的&#x200B;**刪除**選項。
      ![從內容功能表刪除](assets/delete-from-context-menu.png)
 
 選取的元件已刪除。
@@ -276,7 +276,7 @@ ht-degree: 17%
 1. 如果尚未處於[內容樹狀結構模式](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)，請切換至該模式。
 1. 在內容樹或編輯器中選取容器元件。
 1. 選取容器的>形箭號圖示，展開內容樹狀結構中的內容。
-1. 拖曳容器內的元件旁的手柄圖示證明您可以將它們重新排序。拖曳元件，在容器內將它們重新排序。
+1. 拖曳容器內的元件旁的手柄圖示證明您可以將它們重新排序。 拖曳元件，在容器內將它們重新排序。
 
    ![重新排序元件](assets/ue-reordering-components.png)
 
@@ -304,7 +304,7 @@ ht-degree: 17%
 
 ### 複製並貼上 {#copy-paste}
 
-您可以複製並貼上[容器內的元件。](/help/implementing/universal-editor/field-types.md#container)只有在目標容器未設定[篩選器](/help/implementing/universal-editor/filtering.md)，或篩選器允許貼上元件時，才可以執行此操作。
+您可以複製並貼上[容器內的元件。](/help/implementing/universal-editor/field-types.md#container) 只有在目標容器未設定[篩選器](/help/implementing/universal-editor/filtering.md)或具有允許貼上元件的篩選器時，才可以執行此操作。
 
 如果標籤已經開啟，複製和貼上可在相同的瀏覽器標籤上或瀏覽器標籤之間。 您不能複製專案然後開啟新的瀏覽器標籤以貼上。
 
@@ -313,9 +313,9 @@ ht-degree: 17%
 
 1. 在編輯器或內容樹中選取元件。
 1. 然後，您可以：
-   * 按一下&#x200B;**屬性面板中的**&#x200B;複製[圖示。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel)
+   * 按一下「[」屬性面板中的「**複製**」圖示。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel)
      ![從面板複製](assets/copy-from-panel.png)
-   * 在內容功能表中選取&#x200B;**複製**&#x200B;選項。
+   * 在內容功能表中選取&#x200B;**複製**選項。
      ![從內容功能表複製](assets/copy-from-context-menu.png)
 1. 選取您要貼上複製元件的元件&#x200B;_after_。
 1. 然後，您可以：
@@ -332,7 +332,7 @@ ht-degree: 17%
 
 ## 預覽內容 {#previewing-content}
 
-內容編輯完成後，您通常會希望瀏覽其內容，以查看它在其他頁面內容中的樣子。在[預覽模式](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)中，您可以點選連結，像讀者一樣瀏覽您的內容。內容在編輯器中呈現的樣子就是將會發佈的樣子。
+內容編輯完成後，您通常會希望瀏覽其內容，以查看它在其他頁面內容中的樣子。 在[預覽模式](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)中，您可以點選連結，像讀者一樣瀏覽您的內容。 內容在編輯器中呈現的樣子就是將會發佈的樣子。
 
 在預覽模式中，點選或按一下內容的反應就像對內容的讀者一樣。 若要選取要編輯的內容，請切換出[預覽模式。](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode)
 

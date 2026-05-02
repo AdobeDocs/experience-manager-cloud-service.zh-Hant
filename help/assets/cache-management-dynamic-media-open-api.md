@@ -4,10 +4,10 @@ description: Dynamic Media中Open API的快取管理
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: 203a5291-edb5-4900-8b0a-32e1ebae5395
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: a03eb72ee1b46756f003a60709019aa3122d26f2
 workflow-type: tm+mt
-source-wordcount: '598'
-ht-degree: 1%
+source-wordcount: '660'
+ht-degree: 0%
 
 ---
 
@@ -19,17 +19,17 @@ ht-degree: 1%
 
 ## CDN層快取 {#cdn-layer-caching}
 
-資產傳遞回應會在[Adobe Managed CDN](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn#aem-managed-cdn)快取很長一段時間，以最大化效能並將原始端的負載降至最低。 此快取完全由Adobe管理，以確保為一般使用者提供一致的高品質體驗。 快取期間是特意針對效能最佳化，使用者無法加以自訂，以維持所有客戶的可靠性和有效內容傳遞。
+資產傳遞回應會在[Adobe Managed CDN](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn#aem-managed-cdn)快取很長一段時間，以最大化效能並將原始端的負載降至最低。 此快取完全由Adobe管理，以確保為一般使用者提供一致的高品質體驗。 快取期間是特意針對效能最佳化，使用者無法加以自訂，以維持所有客戶的可靠性和有效內容傳遞。
 
 所有傳送URL都會在邊緣(Fastly)快取很長一段時間，以確保最佳效能。 快取的傳送物件包括靜態轉譯、影片、原始影像二進位檔和動態轉換影像，例如透過URL引數產生的已調整大小或重新格式化的資產。<!--The CDN is designed to serve these assets directly from the cache without revalidating them, unless an explicit purge is performed.-->
 
 ## 外部快取控制（BYOCDN和瀏覽器快取） {#byocdn-browser-caching}
 
-針對下游快取層，資產傳遞回應包含預設`Cache-Control`為`max-age`10分鐘&#x200B;**的**&#x200B;標頭。 這適用於自訂&#x200B;*自攜CDN (BYOCDN)設定*、*一般使用者瀏覽器*&#x200B;和任何&#x200B;*中繼快取代理*，以確保在整個傳遞路徑中擁有一致的快取控制。
+針對下游快取層，資產傳遞回應包含預設`max-age`為&#x200B;**10分鐘**&#x200B;的`Cache-Control`標頭。 這適用於自訂&#x200B;*自攜CDN (BYOCDN)設定*、*一般使用者瀏覽器*&#x200B;和任何&#x200B;*中繼快取代理*，以確保在整個傳遞路徑中擁有一致的快取控制。
 
 ### 自訂快取控制標題 {#customizing-cache-control-headers}
 
-增加快取存留時間值超過預設設定，會增加提供過時內容的可能性，這可能會延遲一般使用者體驗中內容更新的可見度。 如果您需要修改特定使用案例的快取控制行為，可以設定自訂CDN規則以調整回應標頭。 這可讓您根據需求設定不同的快取持續時間。 請參閱回應標頭的[AEM自訂CDN規則](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic)。
+增加快取存留時間值超過預設設定，會增加提供過時內容的可能性，這可能會延遲一般使用者體驗中內容更新的可見度。 如果您需要修改特定使用案例的快取控制行為，可以設定自訂CDN規則以調整回應標頭。 這可讓您根據需求設定不同的快取持續時間。 請參閱回應標頭的[AEM自訂CDN規則](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic)。
 
 ```
 responseTransformations:
@@ -55,7 +55,7 @@ responseTransformations:
 
 ### 手動清除快取 {#manual-cache-purging}
 
-當需要手動清除快取內容時，您可以使用AEM的快取失效功能來清除。 有關如何清除特定快取URL的詳細說明，請參閱[AEM CDN快取失效](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-cache-purge#single-purge)。
+當需要手動清除快取內容時，您可以使用AEM的快取失效功能來清除。 有關如何清除特定快取URL的詳細說明，請參閱[AEM CDN快取失效](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-cache-purge#single-purge)。
 
 ## 常見問題{#faq-cache-management}
 
@@ -108,9 +108,3 @@ The following mechanisms can be followed:
 若要選擇退出長期快取，請連絡[Adobe支援](https://helpx.adobe.com/in/contact.html)，並提供您要求的理由。
 
 +++
-
-
->[!MORELIKETHIS]
->
->- [整合資產選擇器與各種應用程式](/help/assets/integrate-asset-selector.md)
->- [虛名URL](/help/assets/vanity-urls.md)

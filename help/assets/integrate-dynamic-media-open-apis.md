@@ -4,10 +4,10 @@ description: 將 AEM Assets 與下游應用程式整合
 role: User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: abd48b5d-2b43-453c-8eb6-31ff509245ca
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: a03eb72ee1b46756f003a60709019aa3122d26f2
 workflow-type: tm+mt
-source-wordcount: '161'
-ht-degree: 18%
+source-wordcount: '145'
+ht-degree: 13%
 
 ---
 
@@ -15,16 +15,10 @@ ht-degree: 18%
 
 Experience Manager資產存放庫中所有可用的[已核准資產](/help/assets/approve-assets.md)都可傳送給下游應用程式。
 
-您可以使用搜尋和傳送API將您自己的自訂使用者介面與Experience Manager Assets存放庫整合，或使用Adobe的微前端資產選擇器。
+您可以使用搜尋和傳送API或使用Experience Manager Assets的內容建議程式，將您自己的自訂使用者介面與Adobe存放庫整合。
 
 ![與AEM Assets存放庫整合](assets/asset-selector-integration.png)
 
 這些API可讓您從AEM Assets存放庫搜尋已核准的資產，然後使用傳送URL將資產傳送給下游應用程式。 如需詳細資訊，請參閱[搜尋](/help/assets/search-assets-api.md)和[傳遞](/help/assets/deliver-assets-apis.md) API。
 
-Adobe的Micro-Frontend Asset Selector提供使用者介面，可輕鬆與[!DNL Experience Manager Assets as a Cloud Service]存放庫整合，因此您可以瀏覽或搜尋存放庫中可用的已核准數位資產，並在您的應用程式編寫體驗中使用這些資產。 如需詳細資訊，請參閱[微前端資產選擇器](/help/assets/overview-asset-selector.md)。
-
->[!MORELIKETHIS]
->
->* [整合資產選擇器與各種應用程式](/help/assets/integrate-asset-selector.md)
->* [資產選擇器屬性](/help/assets/asset-selector-properties.md)
->* [資產選擇器自訂](/help/assets/asset-selector-customization.md)
+內容警告器提供使用者介面，可輕鬆與[!DNL Experience Manager Assets as a Cloud Service]存放庫整合，因此您可以瀏覽或搜尋存放庫中可用的已核准數位資產，並在您的應用程式編寫體驗中使用這些資產。 如需詳細資訊，請參閱[內容顧問](/help/assets/integrate-adobe-non-adobe-applications.md)。

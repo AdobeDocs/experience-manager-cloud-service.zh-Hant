@@ -3,13 +3,13 @@ title: 設定通用編輯器的Assets選取器
 description: 瞭解如何設定資產選擇器以用於通用編輯器。
 feature: Developing
 role: Admin, Developer
-source-git-commit: 0ed57393afaf9af3258dacdcb043487f4a098e03
+exl-id: 0bf7b418-5ecd-454f-ac46-03792268c59c
+source-git-commit: a03eb72ee1b46756f003a60709019aa3122d26f2
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 1%
+source-wordcount: '315'
+ht-degree: 0%
 
 ---
-
 
 # 設定通用編輯器的Assets選取器 {#configure-assets-selector}
 
@@ -17,9 +17,9 @@ ht-degree: 1%
 
 ## 概觀 {#overview}
 
-Universal Editor使用[資產選擇器](/help/assets/overview-asset-selector.md#using-asset-selector)來允許作者瀏覽及選取要插入其內容的資產。
+Universal Editor使用資產選擇器，讓作者可以瀏覽及選取要插入其內容的資產。
 
-可以使用[元件篩選器，在通用編輯器中設定資產選取器。](/help/implementing/universal-editor/filtering.md)本檔案說明可用的組態選項。
+可以使用[元件篩選器，在通用編輯器中設定資產選取器。](/help/implementing/universal-editor/filtering.md) 本檔案說明可用的組態選項。
 
 >[!NOTE]
 >
@@ -93,6 +93,10 @@ Universal Editor使用[資產選擇器](/help/assets/overview-asset-selector.md#
 ]
 ```
 
-## 其他資源 {#additional-resources}
+<!--
 
-如需有關資產選擇器的詳細資訊，請參閱資產檔案中的檔案[Micro-Frontend資產選擇器](/help/assets/overview-asset-selector.md#using-asset-selector)。
+## Additional Resources {#additional-resources}
+
+For details on the assets selector, please see the document [Micro-Frontend Asset Selector](/help/assets/overview-asset-selector.md#using-asset-selector) in the assets documentation.
+
+-->
