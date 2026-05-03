@@ -6,19 +6,20 @@ role: Admin
 badgeSaas: label="AEM Sites" type="Positive" tooltip="適用於AEM Sites)。"
 exl-id: c3e89719-4d08-401b-b9dd-19d1db03d72c
 solution: Experience Manager Sites
-source-git-commit: 98c0c9b6adbc3d7997bc68311575b1bb766872a6
+source-git-commit: a27d861061d4ee41bdfc080bc50a942de60f593b
 workflow-type: tm+mt
-source-wordcount: '294'
-ht-degree: 81%
+source-wordcount: '340'
+ht-degree: 70%
 
 ---
 
 # 翻譯多語言網站的內容 {#translating-content-for-multilingual-sites}
 
-自動翻譯頁面內容和資產以建立和維護多語言網站。若要自動化翻譯工作流程，您可以將翻譯服務提供商與 AEM 相整合，並建立用於將內容翻譯成多種語言的專案。AEM 支援人工和機器翻譯工作流程。
+自動翻譯頁面內容和資產以建立和維護多語言網站。 若要自動化翻譯工作流程，您可以將翻譯服務提供商與 AEM 相整合，並建立用於將內容翻譯成多種語言的專案。 AEM 支援人工和機器翻譯工作流程。
 
-* **人工翻譯：**&#x200B;內容將傳送給您的翻譯提供商並由專業翻譯人員翻譯。完成後，翻譯後的內容將傳回並匯入到 AEM 中。如果您的翻譯提供商與 AEM 相整合，內容會在 AEM 和翻譯提供商之間自動傳送。
+* **人工翻譯：**&#x200B;內容將傳送給您的翻譯提供商並由專業翻譯人員翻譯。 完成後，翻譯後的內容將傳回並匯入到 AEM 中。 如果您的翻譯提供商與 AEM 相整合，內容會在 AEM 和翻譯提供商之間自動傳送。
 * **機器翻譯：**&#x200B;機器翻譯服務會立即翻譯您的內容。
+* **代理翻譯（AI翻譯整合）：**&#x200B;透過Translation Cloud Services將AEM連線到大型語言模型，並使用與其他提供者相同的翻譯專案和工作流程。 您可以上傳樣式指南，讓AEM根據地區設定產生翻譯規則。 請參閱[設定AI翻譯整合](ai-translation-integration.md)。
 
 >[!TIP]
 >
