@@ -70,5 +70,5 @@ AI翻譯整合可讓您使用&#x200B;**大型語言模型(LLM)**&#x200B;作為�
 
 >[!NOTE]
 >
->AI翻譯整合是&#x200B;**無法**&#x200B;從Adobe Experience Manager](/help/implementing/cloud-manager/ai-assistant-in-aem.md)聊天UI中的[AI助理或從Experience Production Agent介面取得。 使用本文所述的翻譯工作流程和控制檯。
+>AI翻譯整合是&#x200B;**無法**&#x200B;從Adobe Experience Manager[&#128279;](/help/implementing/cloud-manager/ai-assistant-in-aem.md)聊天UI中的AI助理或從Experience Production Agent介面取得。 使用本文所述的翻譯工作流程和控制檯。
 

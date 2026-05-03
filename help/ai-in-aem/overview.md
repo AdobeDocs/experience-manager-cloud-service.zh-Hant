@@ -18,7 +18,7 @@ ht-degree: 50%
 
 ## AI 助理 {#ai-assistant}
 
-](/help/implementing/cloud-manager/ai-assistant-in-aem.md)Adobe Experience Manager 中的 AI 助理[提供對話式介面，旨在簡化尋找與 AEM 相關查詢的答案。
+[&#128279;](/help/implementing/cloud-manager/ai-assistant-in-aem.md)Adobe Experience Manager 中的 AI 助理提供對話式介面，旨在簡化尋找與 AEM 相關查詢的答案。
 
 ## AEM中的Agentic AI {#agentic-ai-in-aem}
 
