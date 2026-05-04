@@ -120,7 +120,7 @@ AEM as a Cloud Service會套用伺服器端收集規則來計數內容請求。 
 
 ### 管理內容請求的流量篩選規則 {#traffic-filter-rules-to-manage-crs}
 
-為了更能控制您的內容請求，請在定義篩選規則之前分析您的CDN流量。 [CDN記錄分析工具](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/cloud-manager/devops/cdn-log-analysis)可協助您深入瞭解CDN效能和請求模式。 首先瞭解流量的來源以及是否存在非預期的訊號模式（常見的機器人模式是使用空的使用者代理）。
+為了更能控制您的內容請求，請在定義篩選規則之前分析您的CDN流量。 [CDN記錄分析工具](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/cloud-manager/devops/cdn-log-analysis)可協助您深入瞭解CDN效能和請求模式。 首先瞭解流量的來源以及是否存在非預期的訊號模式（常見的機器人模式是使用空的使用者代理）。
 
 **要觀看和記錄的專案：**
 
