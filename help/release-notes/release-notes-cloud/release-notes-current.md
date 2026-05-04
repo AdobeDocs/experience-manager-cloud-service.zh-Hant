@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 687be0c3895cbcd8a9530d25f279100f610efe96
+source-git-commit: eff4f08ec399314df49246eb7431f5b100493780
 workflow-type: tm+mt
 source-wordcount: '2054'
 ht-degree: 30%
@@ -39,7 +39,7 @@ ht-degree: 30%
 
 Have a look at the April 2026 Release Overview video for a summary of the features added in the 2026.4.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3483071/?captions=chi_hant&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3483060/?quality=12)
 -->
 
 ## AEM Beta計畫 {#aem-beta-programs}
@@ -137,7 +137,10 @@ Java棧疊團隊越來越多地在Cursor、Claude Code、Visual Studio和Intelli
 
 Experience Governance MCP Server現已正式推出(GA)。 它與支援「模型內容通訊協定」(MCP)的AI開發人員工具和聊天機器人整合，可讓您在聊天機器人或IDE中使用自然語言提示來維護品牌完整性和法規遵循。 您可以根據品牌治理規則評估內容（文字、影像、頁面），並擷取品牌設定和可用的治理檢查。
 
-深入瞭解[AEM MCP伺服器](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)和[治理代理程式](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview)。
+深入瞭解[AEM MCP伺服器](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)和[治理代理程式](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/agents/governance/overview)。
+
+
+>[!VIDEO](https://video.tv.adobe.com/v/3486258/?learn=on&enablevpops)
 
 #### 克勞德聯結器 {#aem-claude-connector}
 
