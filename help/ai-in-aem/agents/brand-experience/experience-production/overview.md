@@ -4,7 +4,7 @@ description: 瞭解AEM中的Experience Production Agent如何協助您加速內�
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 1dec50e6-d728-41d4-8868-5f9db568d15b
-source-git-commit: db46770763d070e7f9e0bf3df936402ad90f6800
+source-git-commit: d9e892bd0f43fd32ef6c9e614273993baff2571e
 workflow-type: tm+mt
 source-wordcount: '345'
 ht-degree: 5%
@@ -14,7 +14,7 @@ ht-degree: 5%
 
 # Experience Production Agent概述 {#experience-production-agent}
 
-Experience Production Agent可自動處理大量及大量工作。 它可讓團隊運作，並將手動數週的流程轉換為快速的AI輔助工作流程，讓每個體驗保持最新且一致，進而協助企業達成目標。
+Experience Production Agent可自動處理大量及大量工作。 它讓團隊強大，並將手動數週的流程轉換為快速的AI輔助工作流程，讓每個體驗保持最新且一致，進而協助企業達成目標。
 
 ## 工作 {#jobs}
 
