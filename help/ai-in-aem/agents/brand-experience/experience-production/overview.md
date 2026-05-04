@@ -4,10 +4,10 @@ description: 瞭解AEM中的Experience Production Agent如何協助您加速內�
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 1dec50e6-d728-41d4-8868-5f9db568d15b
-source-git-commit: 0666d9660d657876bca77835d333d9dfe536b374
+source-git-commit: db46770763d070e7f9e0bf3df936402ad90f6800
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 2%
+source-wordcount: '345'
+ht-degree: 5%
 
 ---
 
@@ -51,3 +51,9 @@ Experience Production Agent可自動處理大量及大量工作。 它可讓團�
 代理程式能夠與其他代理程式技能搭配使用，範例包括：
 
 * 從Experience Advisory代理程式取得來源資產
+
+## 其他資源 {#additional-resources}
+
+當您繼續探索Experience Production Agent時，以下資源可能會很有用：
+
+* 您也可以使用[Experience Production Agent活頁簿](https://main--summit-labs--aemsites.aem.page/brand-visibility/l339/)，取得引導式的實作指示。
