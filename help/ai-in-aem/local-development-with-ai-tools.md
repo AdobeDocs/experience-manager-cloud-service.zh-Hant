@@ -4,9 +4,9 @@ description: 瞭解如何使用專案內容、代理程式技能和MCP伺服器�
 feature: Developing
 role: Developer
 exl-id: 09d6257d-36ad-49e5-831f-c44b356f1800
-source-git-commit: 0fb601ee1479bdcbb4932592185c5984d56171ef
+source-git-commit: 827cf0dada4e624418dc967a9bce8ebf728f7ad7
 workflow-type: tm+mt
-source-wordcount: '1423'
+source-wordcount: '1601'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->本文主要介紹使用AI工具進行&#x200B;**AEM Java棧疊開發**&#x200B;的本機開發。 若為Edge Delivery Services，請參閱[使用AI工具開發](https://www.aem.live/developer/ai-coding-agents)。
+>本文主要介紹使用AI工具針對&#x200B;**AEM Java棧疊開發**&#x200B;進行本機開發。 若為Edge Delivery Services，請參閱[使用AI工具開發](https://www.aem.live/developer/ai-coding-agents)。
 
 AI編碼代理程式（Claude Code、Cursor、GitHub Copilot和類似工具）對AEM的基礎技術(Java、OSGi、Sling、JCR、HTL)有廣泛的瞭解，但不一定知道產生程式碼和設定的最佳實務，或如何偵錯常見的AEM開發問題。
 
@@ -27,6 +27,8 @@ AI編碼代理程式（Claude Code、Cursor、GitHub Copilot和類似工具）�
 | **代理程式技能** | 可重複使用的指令集用於週期性開發任務，例如元件建立和Dispatcher設定 |
 | **AEM Quickstart本機MCP伺服器** | 公開本機AEM SDK執行個體的即時執行階段資料，以支援疑難排解 |
 | **Dispatcher本機MCP伺服器** | 啟用本機Dispatcher執行個體的執行階段驗證和檢查 |
+
+請檢閱[AI輔助開發教學課程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/overview)，以取得其他動手操作說明。
 
 >[!NOTE]
 >
@@ -57,7 +59,7 @@ Adobe已在&#x200B;**[adobe/skills](https://github.com/adobe/skills/tree/main/pl
 
 ### 安裝技能 {#install-skills}
 
-選擇與您的AI編碼工具相符的方法。 一旦安裝技能，即可供該電腦上的所有專案使用。
+選擇與您的AI編碼工具相符的方法。 一旦安裝技能，即可供該電腦上的所有專案使用。 請參閱[設定AEM代理程式技能教學課程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/setup/agent-skills)，以取得具體逐步解說。
 
 #### 克勞德程式碼 {#claude-code}
 
@@ -92,7 +94,7 @@ gh upskill adobe/skills --path skills/aem/cloud-service --all
 
 ### 使用建立元件技能 {#use-the-create-component-skill}
 
-第一次使用時，技能會自動從`project`和現有元件中偵測`package`、`group`和`pom.xml`，要求您確認偵測到的值，然後在專案根目錄中建立`.aem-skills-config.yaml`。 首次使用前不需要手動設定。
+第一次使用時，技能會自動從`pom.xml`和現有元件中偵測`project`、`package`和`group`，要求您確認偵測到的值，然後在專案根目錄中建立`.aem-skills-config.yaml`。 首次使用前不需要手動設定。
 
 如果您偏好預先建立檔案，請將`.aem-skills-config.yaml`置於專案根目錄，其結構如下：
 
@@ -121,6 +123,8 @@ CTA Link (ctaLink) - Pathfield
 
 代理程式會回應欄位規格以進行確認，然後產生所有元件檔案。 支援的模式包括含有複合巢狀專案的多欄位、條件式顯示/隱藏邏輯、透過Sling Resource Merger的核心元件擴充功能，以及使用AEM Mocks的JUnit 5測試。
 
+使用AEM代理程式技能教學課程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development)進行[元件開發以瞭解更多資訊。
+
 ### 使用Dispatcher技能 {#use-the-dispatcher-skill}
 
 叫用任何Dispatcher或Apache HTTPD設定工作的Dispatcher技能。 此技能會根據請求的性質，將請求路由到六個專業子技能中的一個：
@@ -144,7 +148,7 @@ Dispatcher技能可處理協調和建議指導。 Dispatcher MCP伺服器（如�
 
 ### 安裝內容封裝 {#install-the-content-package}
 
-從[軟體發佈入口網站](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=mcp*&1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Atooling&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=3)下載內容封裝，並在`com.adobe.aem:com.adobe.aem.mcp-server-contribs-content`使用封裝管理員將`/crx/packmgr`安裝至您的本機Quickstart。
+從[軟體發佈入口網站](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=mcp*&1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3AsoftwareType&1_group.propertyvalues.operation=equals&1_group.propertyvalues.0_values=software-type%3Atooling&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=3)下載內容封裝，並在`/crx/packmgr`使用封裝管理員將`com.adobe.aem:com.adobe.aem.mcp-server-contribs-content`安裝至您的本機Quickstart。
 
 **相容性：**&#x200B;已透過AEM SDK `2026.2.24678.20260226T154829Z-260200`和更新版本驗證。
 
@@ -189,7 +193,7 @@ Dispatcher技能可處理協調和建議指導。 Dispatcher MCP伺服器（如�
 
 #### 其他IDE {#other-ides}
 
-任何MCP使用者端都可以指向帶有`http://localhost:4502/bin/mcp`標頭的`Authorization: Basic YWRtaW46YWRtaW4=`來連線。 使用IDE的MCP設定來設定自訂標頭。
+任何MCP使用者端都可以指向帶有`Authorization: Basic YWRtaW46YWRtaW4=`標頭的`http://localhost:4502/bin/mcp`來連線。 使用IDE的MCP設定來設定自訂標頭。
 
 >[!NOTE]
 >
@@ -214,7 +218,7 @@ Dispatcher MCP伺服器與AEM Dispatcher SDK搭配。 它可讓AI工具驗證Dis
 
 >[!NOTE]
 >
->如果您看見`client version 1.43 is too new`，請在殼層或`DOCKER_API_VERSION=1.41`中設定`mcp.json`。
+>如果您看見`client version 1.43 is too new`，請在殼層或`mcp.json`中設定`DOCKER_API_VERSION=1.41`。
 
 ### 安裝Dispatcher SDK {#install-the-dispatcher-sdk}
 
@@ -257,7 +261,7 @@ Expand-Archive aem-sdk-dispatcher-tools-<version>-windows.zip
 }
 ```
 
-以擷取的Dispatcher SDK位置取代`<path_to_dispatcher_sdk>`，並以專案的Dispatcher `<path_to_dispatcher_src>`目錄取代`src`。 將`DISPATCHER_CONFIG_PATH`設為包含已定義`/docroot`之檔案的設定根目錄。 `MCP_LOG_LEVEL`和`MCP_LOG_FILE`是選擇性偵錯設定。 如果您看見`client version 1.43 is too new`，請將`DOCKER_API_VERSION`設為`1.41`。 如果已設定其他MCP伺服器，請新增`aem-dispatcher-mcp`專案而不取代它們。 儲存後重新啟動游標。
+以擷取的Dispatcher SDK位置取代`<path_to_dispatcher_sdk>`，並以專案的Dispatcher `src`目錄取代`<path_to_dispatcher_src>`。 將`DISPATCHER_CONFIG_PATH`設為包含已定義`/docroot`之檔案的設定根目錄。 `MCP_LOG_LEVEL`和`MCP_LOG_FILE`是選擇性偵錯設定。 如果您看見`client version 1.43 is too new`，請將`DOCKER_API_VERSION`設為`1.41`。 如果已設定其他MCP伺服器，請新增`aem-dispatcher-mcp`專案而不取代它們。 儲存後重新啟動游標。
 
 其他IDE也可以以類似的方式進行設定。 SDK的`docs/DispatcherMCP.md`包含Claude Desktop和VS Code的完整範例。
 
