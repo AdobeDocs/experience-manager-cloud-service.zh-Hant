@@ -4,9 +4,9 @@ description: 瞭解如何在AEM as a Cloud Service中將記錄轉送給記錄廠
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Developer
-source-git-commit: 41605c0feb5b8cf651ecb2971a05fde12bcb86d8
+source-git-commit: ac4ce2421cdeb29aec7183f515ae32bfca37e82f
 workflow-type: tm+mt
-source-wordcount: '2482'
+source-wordcount: '2560'
 ht-degree: 3%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->記錄轉送現在以自助方式設定，有別於傳統方法(需要提交Adobe支援票證)。 如果您的記錄轉送是由Adobe設定，請參閱[移轉](#legacy-migration)區段。
+>記錄轉送現在以自助方式設定，有別於傳統方法（需要提交Adobe支援票證）。 如果您的記錄轉送是由Adobe設定，請參閱[移轉](#legacy-migration)區段。
 
-擁有記錄廠商授權或託管記錄產品的客戶可以將AEM記錄(包括Apache/Dispatcher)和CDN記錄轉送至相關聯的記錄目的地。 AEM as a Cloud Service支援下列記錄目的地：
+擁有記錄廠商授權或託管記錄產品的客戶可以將AEM記錄（包括Apache/Dispatcher）和CDN記錄轉送至相關聯的記錄目的地。 AEM as a Cloud Service支援下列記錄目的地：
 
 <table>
   <tbody>
@@ -79,7 +79,7 @@ ht-degree: 3%
       <td>相撲邏輯</td>
       <td>是</td>
       <td>是</td>
-      <td style="background-color: #ffb3b3;">未來</td>
+      <td>是</td>
     </tr>
   </tbody>
 </table>
@@ -106,7 +106,7 @@ AEM和Apache/Dispatcher記錄檔可選擇透過AEM的進階網路基礎結構（
 
 ## 設定 {#setup}
 
-1. 建立一個名為 `logForwarding.yaml` 的檔案。它應該包含中繼資料，如[設定管道](/help/operations/config-pipeline.md#common-syntax)文章中所述（**kind**&#x200B;應該設定為`LogForwarding`且版本設定為&quot;1&quot;），其設定類似於以下內容（我們使用Splunk作為範例）。
+1. 建立一個名為 `logForwarding.yaml` 的檔案。 它應該包含中繼資料，如[設定管道](/help/operations/config-pipeline.md#common-syntax)文章中所述（**kind**&#x200B;應該設定為`LogForwarding`且版本設定為&quot;1&quot;），其設定類似於以下內容（我們使用Splunk作為範例）。
 
    ```yaml
    kind: "LogForwarding"
@@ -128,7 +128,7 @@ AEM和Apache/Dispatcher記錄檔可選擇透過AEM的進階網路基礎結構（
 
 設定中的權杖（例如`${{SPLUNK_TOKEN}}`）代表不應儲存在Git中的秘密。 請改為宣告為Cloud Manager [秘密環境變數](/help/operations/config-pipeline.md#secret-env-vars)。 請務必選取「**全部**」作為「已套用服務」欄位的下拉式清單值，以便將記錄檔轉送至作者、發佈及預覽層級。
 
-您可以在CDN記錄檔與AEM記錄檔(包括Apache/Dispatcher)之間設定不同的值，方法是在&#x200B;**預設**&#x200B;區塊之後加入額外的&#x200B;**cdn**&#x200B;和/或&#x200B;**aem**&#x200B;區塊，其中的屬性可以覆寫&#x200B;**預設**&#x200B;區塊中定義的屬性；只需要啟用的屬性。 一個可能的使用案例是對CDN記錄使用不同的Splunk索引，如以下範例所示。
+您可以在CDN記錄檔與AEM記錄檔（包括Apache/Dispatcher）之間設定不同的值，方法是在&#x200B;**預設**&#x200B;區塊之後加入額外的&#x200B;**cdn**&#x200B;和/或&#x200B;**aem**&#x200B;區塊，其中的屬性可以覆寫&#x200B;**預設**&#x200B;區塊中定義的屬性；只需要啟用的屬性。 一個可能的使用案例是對CDN記錄使用不同的Splunk索引，如以下範例所示。
 
 ```yaml
    kind: "LogForwarding"
@@ -146,7 +146,7 @@ AEM和Apache/Dispatcher記錄檔可選擇透過AEM的進階網路基礎結構（
          index: "AEMaaCS_CDN"   
 ```
 
-另一種情況是停用CDN記錄或AEM記錄(包括Apache/Dispatcher)的轉送。 例如，若只要轉送CDN記錄檔，即可設定下列專案：
+另一種情況是停用CDN記錄或AEM記錄（包括Apache/Dispatcher）的轉送。 例如，若只要轉送CDN記錄檔，即可設定下列專案：
 
 ```yaml
    kind: "LogForwarding"
@@ -205,7 +205,7 @@ AEM和Apache/Dispatcher記錄檔可選擇透過AEM的進階網路基礎結構（
 >
 > 進階網路設定是[兩步驟程式](/help/security/configuring-advanced-networking.md#configuring-and-enabling-advanced-networking-configuring-enabling)，需要在程式和環境層級啟用。
 
-對於AEM記錄檔(包括Apache/Dispatcher)，如果您已設定[進階網路](/help/security/configuring-advanced-networking.md)，則可以使用`aem.advancedNetworking`屬性從專用輸出IP位址或透過VPN轉送記錄檔。
+對於AEM記錄檔（包括Apache/Dispatcher），如果您已設定[進階網路](/help/security/configuring-advanced-networking.md)，則可以使用`aem.advancedNetworking`屬性從專用輸出IP位址或透過VPN轉送記錄檔。
 
 以下範例說明如何使用進階網路在標準HTTPS連線埠上設定登入。
 
@@ -224,7 +224,7 @@ data:
       advancedNetworking: true
 ```
 
-針對CDN記錄，您可以將IP位址加入允許清單，如[Fastly檔案 — 公用IP清單](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/)中所述。 如果共用IP位址清單太大，請考慮傳送流量至https伺服器或(非Adobe) Azure Blob存放區，其中可寫入邏輯，以將已知IP的記錄傳送至其最終目的地。
+針對CDN記錄，您可以將IP位址加入允許清單，如[Fastly檔案 — 公用IP清單](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/)中所述。 如果共用IP位址清單太大，請考慮傳送流量至https伺服器或（非Adobe） Azure Blob存放區，其中可寫入邏輯，以將已知IP的記錄傳送至其最終目的地。
 
 >[!NOTE]
 >
@@ -334,7 +334,7 @@ aemcdn/
 
 #### Azure Blob儲存AEM記錄 {#azureblob-aem}
 
-AEM記錄(包括Apache/Dispatcher)會顯示在具有以下命名慣例的資料夾下方：
+AEM記錄（包括Apache/Dispatcher）會顯示在具有以下命名慣例的資料夾下方：
 
 * aemaccess
 * aemerror
@@ -422,7 +422,7 @@ data:
 #### 考量事項
 
 * URL字串必須包含&#x200B;**https://**，否則驗證將會失敗。
-* url可能包含連線埠。 例如 `https://example.com:8443/aem_logs/aem`。如果url字串中未包含任何連線埠，則會假設是連線埠443 （預設的HTTPS連線埠）。
+* url可能包含連線埠。 例如 `https://example.com:8443/aem_logs/aem`。 如果url字串中未包含任何連線埠，則會假設是連線埠443 （預設的HTTPS連線埠）。
 
 #### HTTPS CDN記錄 {#https-cdn}
 
@@ -517,8 +517,6 @@ data:
 
 ### 相撲邏輯 {#sumologic}
 
-記錄檔轉送至Sumo Logic支援AEM和Dispatcher記錄檔；尚不支援CDN記錄檔。
-
 在設定Sumo Logic以進行資料擷取時，您將會看到「HTTP Source位址」，該位址會在單一字串中提供主機、接收者URI和私密金鑰。  例如：
 
 `https://collectors.de.sumologic.com/receiver/v1/http/ZaVnC...`
@@ -538,13 +536,16 @@ data:
 ```
 
 >[!NOTE]
->已規劃在未來提供SumoLogic的CDN記錄支援。 請傳送電子郵件給[aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com)以註冊感興趣的內容。
+>`index`欄位行為取決於記錄型別：
 >
-> 您需要Sumo Logic Enterprise訂閱才能使用「索引」欄位功能。  非企業訂閱的記錄檔會以標準形式路由至`sumologic_default`資料分割。  如需詳細資訊，請參閱[Sumo邏輯分割檔案](https://help.sumologic.com/docs/search/optimize-search-partitions/)。
+>* **AEM記錄檔（包括Apache/Dispatcher）**：已路由傳送至`index`所指定的資料分割，但前提是您有Sumo Logic Enterprise訂閱。 非Enterprise訂閱會改路由至`sumologic_default`磁碟分割。
+>* **CDN記錄檔**：已忽略`index`欄位，因為轉送至Sumo Logic的CDN記錄檔在技術上不支援索引。 CDN記錄檔一律會路由至`sumologic_default`資料分割。
+>
+>如需詳細資訊，請參閱[Sumo邏輯分割檔案](https://help.sumologic.com/docs/search/optimize-search-partitions/)。
 
 ## 記錄專案格式 {#log-formats}
 
-請參閱[AEM as a Cloud Service的記錄](/help/implementing/developing/introduction/logging.md)，以瞭解每個個別記錄型別(CDN記錄檔和AEM記錄檔，包括Apache/Dispatcher)的格式。
+請參閱[AEM as a Cloud Service的記錄](/help/implementing/developing/introduction/logging.md)，以瞭解每個個別記錄型別（CDN記錄檔和AEM記錄檔，包括Apache/Dispatcher）的格式。
 
 由於來自多個程式和環境的記錄可能會轉發到相同的記錄目標，除了記錄文章中所述的輸出之外，以下屬性將包含在每個記錄專案中：
 
