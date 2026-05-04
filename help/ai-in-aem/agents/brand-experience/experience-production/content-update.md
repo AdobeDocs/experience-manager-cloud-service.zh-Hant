@@ -4,7 +4,7 @@ description: 瞭解Brand Experience Agent的內容更新工作以及這項工作
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: e2d1dae8-38de-4357-bb14-ad35acb71aee
-source-git-commit: d9e892bd0f43fd32ef6c9e614273993baff2571e
+source-git-commit: b6f9448b0c7e22277b1efba79a10b22f1126392a
 workflow-type: tm+mt
 source-wordcount: '866'
 ht-degree: 1%
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 內容更新工作會更新現有內容，包括內容片段、頁面、表單及資產。 這項工作可以執行更新、移除、取代或新增內容元素等動作，讓體驗保持精確且最新。 輸入可以是自然語言說明，在搭配Jira PDF使用時，熒幕擷取畫面也可以提供輸入。
 
-內容更新工作會將您透過自然語言或視覺效果提供的詳細資料轉換為頁面上的內容更新。 您可以提供需要更新的頁面URL，以及需要更新的詳細資訊，而代理程式技能會完成您的工作。 與AEM as a Cloud Service搭配使用時，此工作會建立新的[啟動](/help/sites-cloud/authoring/launches/overview.md)，讓您在套用之前可以檢閱更新。 搭配檔案編寫使用時，工作會建立新的[版本](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/sites/document-authoring/how-to/document-versions#)。
+內容更新工作會將您透過自然語言或視覺效果提供的詳細資料轉換為頁面上的內容更新。 您可以提供需要更新的頁面URL，以及需要更新的詳細資訊，而代理程式技能會完成您的工作。 與AEM as a Cloud Service搭配使用時，此工作會建立新的[啟動](/help/sites-cloud/authoring/launches/overview.md)，讓您在套用之前可以檢閱更新。 搭配檔案編寫使用時，工作會建立新的[版本](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/document-authoring/how-to/document-versions#)。
 
 ## 功能 {#capabilities}
 
@@ -134,4 +134,4 @@ ht-degree: 1%
 
 當您繼續探索Experience Production Agent時，以下資源可能會很有用：
 
-* 您也可以使用[Experience Production Agent活頁簿](https://main--summit-labs--aemsites.aem.page/brand-visibility/l339/)，取得引導式的實作指示。
+* 您也可以使用[Experience Production Agent活頁簿](https://main--summit-labs--aemsites.aem.live/brand-visibility/l339/)，取得引導式的實作指示。
