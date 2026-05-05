@@ -112,7 +112,7 @@ AEM as a Cloud Service不支援從發佈到作者的反向復寫。 如果需要
 
 對於本機開發，記錄專案會寫入`/crx-quickstart/logs`資料夾中的本機檔案。
 
-在雲端環境中，開發人員可以透過Cloud Manager下載記錄，或使用命令列工具追蹤記錄。<!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
+在雲端環境中，開發人員可以透過Cloud Manager下載記錄，或使用命令列工具追蹤記錄。<!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=zh-Hant) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
 
 **正在設定記錄層級**
 
@@ -214,7 +214,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 ![開發主控台4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-對於生產計畫，AEM as a Cloud Service Developer Console的存取權由Adobe Admin Console中的「Cloud Manager — 開發人員角色」定義，而對於沙箱計畫，AEM as a Cloud Service Developer Console則可供任何擁有產品設定檔並授與對AEM as a Cloud Service存取權的使用者使用。 對於所有程式，狀態傾印需要「Cloud Manager — 開發人員角色」，存放庫瀏覽器和使用者也必須在AEM使用者或AEM管理員產品設定檔中，針對作者和發佈服務進行定義，以便檢視來自這兩個服務的資料。 如需設定使用者許可權的詳細資訊，請參閱[Cloud Manager檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)。
+對於生產計畫，AEM as a Cloud Service Developer Console的存取權由Adobe Admin Console中的「Cloud Manager — 開發人員角色」定義，而對於沙箱計畫，AEM as a Cloud Service Developer Console則可供任何擁有產品設定檔並授與對AEM as a Cloud Service存取權的使用者使用。 對於所有程式，狀態傾印需要「Cloud Manager — 開發人員角色」，存放庫瀏覽器和使用者也必須在AEM使用者或AEM管理員產品設定檔中，針對作者和發佈服務進行定義，以便檢視來自這兩個服務的資料。 如需設定使用者許可權的詳細資訊，請參閱[Cloud Manager檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=zh-Hant)。
 
 ### 效能監控 {#performance-monitoring}
 
@@ -238,13 +238,13 @@ Adobe會監控應用程式效能，並在發現問題時採取措施解決效能
 
 ### 傳送電子郵件 {#sending-emails}
 
-應使用[Day CQ Mail Service OSGI服務](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)，且必須將電子郵件傳送至支援要求中指出的郵件伺服器，而非直接傳送給收件者。
+應使用[Day CQ Mail Service OSGI服務](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=zh-Hant#configuring-the-mail-service)，且必須將電子郵件傳送至支援要求中指出的郵件伺服器，而非直接傳送給收件者。
 
 ### 設定 {#email-configuration}
 
-AEM中的電子郵件應使用[Day CQ Mail Service OSGI服務](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)傳送。
+AEM中的電子郵件應使用[Day CQ Mail Service OSGI服務](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=zh-Hant#configuring-the-mail-service)傳送。
 
-如需設定電子郵件設定的詳細資訊，請參閱[AEM 6.5檔案](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html)。 對於AEM as a Cloud Service，請注意對`com.day.cq.mailer.DefaultMailService` OSGi服務的下列必要調整：
+如需設定電子郵件設定的詳細資訊，請參閱[AEM 6.5檔案](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=zh-Hant)。 對於AEM as a Cloud Service，請注意對`com.day.cq.mailer.DefaultMailService` OSGi服務的下列必要調整：
 
 * SMTP伺服器主機名稱應該設定為$[env:AEM_PROXY_HOST；default=proxy.tunnel]
 * SMTP伺服器連線埠應該設定為設定進階網路時，在API呼叫中使用的portForwards引數中設定的原始Proxy連線埠值。 例如，30465 （而非465）

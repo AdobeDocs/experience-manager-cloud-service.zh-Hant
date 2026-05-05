@@ -58,7 +58,7 @@ Developer Console僅供在某些程式中擁有特定角色的使用者存取。
 
 若要檢視來自作者與發佈服務的資料，使用者也必須同時被指派給這兩個服務上的「AEM使用者」或「AEM管理員產品設定檔」。
 
-如需設定使用者許可權的詳細資訊，請參閱[Cloud Manager檔案。](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles)
+如需設定使用者許可權的詳細資訊，請參閱[Cloud Manager檔案。](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-manager/content/requirements/users-and-roles)
 
 ## OSGi套件組合標籤 {#osgi-bundles}
 
