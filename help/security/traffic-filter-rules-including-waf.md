@@ -4,10 +4,10 @@ description: 設定流量篩選規則，包括 Web 應用程式防火牆 (WAF) �
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: d967706a000edc8c06193d1a8a39a1931fffbb99
+source-git-commit: 13efa829fb1d1f6533645b9661063a38180db179
 workflow-type: tm+mt
-source-wordcount: '4610'
-ht-degree: 97%
+source-wordcount: '4819'
+ht-degree: 96%
 
 ---
 
@@ -20,11 +20,11 @@ ht-degree: 97%
 * 建立速率限制，以減少受到容量 DoS 攻擊的影響
 * 防止已知的惡意 IP 位址目標定位您的頁面
 
-許多流量篩選規則可供所有 AEM as a Cloud Service Sites 和 Forms 客戶使用。可將其稱之為&#x200B;*標準流量篩選規則*，主要根據要求屬性和要求標頭進行運作，包括 IP、主機名稱、路徑以及使用者代理程式。標準流量篩選規則包括速率限制規則，以防止流量尖峰。
+許多流量篩選規則可供所有 AEM as a Cloud Service Sites 和 Forms 客戶使用。 可將其稱之為&#x200B;*標準流量篩選規則*，主要根據要求屬性和要求標頭進行運作，包括 IP、主機名稱、路徑以及使用者代理程式。 標準流量篩選規則包括速率限制規則，以防止流量尖峰。
 
-流量篩選規則的子類別需要擴充安全性(先前稱為WAF-DdS保護)或醫療保健的擴充安全性（先前稱為增強安全性）授權。 這些強大的規則也稱為 WAF (網頁應用程式防火牆) 流量篩選規則 (或簡稱為 *WAF 規則*)，且可以存取本文稍後將進行說明的 [WAF 標幟](#waf-flags-list)。
+流量篩選規則的子類別需要擴充安全性（先前稱為WAF-DdS保護）或醫療保健的擴充安全性（先前稱為增強安全性）授權。 這些強大的規則也稱為 WAF (網頁應用程式防火牆) 流量篩選規則 (或簡稱為 *WAF 規則*)，且可以存取本文稍後將進行說明的 [WAF 標幟](#waf-flags-list)。
 
-流量篩選器規則可以透過 Cloud Manager 設定管道，部署至開發、中繼和生產環境類型。可以使用命令列工具將設定檔案部署至快速開發環境 (RDE) 中。
+流量篩選器規則可以透過 Cloud Manager 設定管道，部署至開發、中繼和生產環境類型。 可以使用命令列工具將設定檔案部署至快速開發環境 (RDE) 中。
 
 [按照教學課程進行操作](#tutorial)，快速建立此功能的具體專業知識。
 
@@ -39,7 +39,7 @@ ht-degree: 97%
 * **流量保護概觀：**&#x200B;了解如何保護您以避免受惡意流量的傷害。
 * **設定規則的建議流程：**&#x200B;閱讀關於保護網站的高級方法。
 * **設定：**&#x200B;了解如何設定、配置和部署流量篩選規則，包括進階的 WAF 規則。
-* **規則語法：**&#x200B;閱讀有關如何在 `cdn.yaml` 設定檔案宣告流量篩選規則。此包括可供所有 Sites 和 Forms 客戶使用的流量篩選規則，以及針對那些授權該功能者所提供的 WAF 規則子類別。
+* **規則語法：**&#x200B;閱讀有關如何在 `cdn.yaml` 設定檔案宣告流量篩選規則。 此包括可供所有 Sites 和 Forms 客戶使用的流量篩選規則，以及針對那些授權該功能者所提供的 WAF 規則子類別。
 * **規則範例：**&#x200B;查看已宣告的規則範例以協助您進行。
 * **速率限制規則：**&#x200B;了解如何使用速率限制規則保護您的網站避免受到大量的攻擊。
 * **流量篩選規則警報**：設定警報，以便在觸發規則時收到通知。
@@ -51,17 +51,17 @@ ht-degree: 97%
 
 ## 流量保護概觀 {#traffic-protection-overview}
 
-在目前的數位環境中，惡意流量是一種揮之不去的威脅。Adobe 了解風險的嚴重性，並提供多種方法保護客戶應用程式，以及在發生時減輕攻擊。
+在目前的數位環境中，惡意流量是一種揮之不去的威脅。 Adobe 了解風險的嚴重性，並提供多種方法保護客戶應用程式，以及在發生時減輕攻擊。
 
 在邊緣，Adobe 管理的內容傳遞網路會吸收網路層上的 DoS 攻擊 (第 3 層和第 4 層)，包括洪水攻擊和反射/放大攻擊。
 
-預設情況下，Adobe 會採取措施來防止因超出特定臨界值的意外突發高流量所導致的效能降低。如果有影響網站可用性的 DoS 攻擊，Adobe 的營運團隊會收到警報並採取減輕影響的步驟。
+預設情況下，Adobe 會採取措施來防止因超出特定臨界值的意外突發高流量所導致的效能降低。 如果有影響網站可用性的 DoS 攻擊，Adobe 的營運團隊會收到警報並採取減輕影響的步驟。
 
 客戶可以透過在不同層的內容傳遞流程設定規則，以採取主動式措施減輕應用程式層攻擊 (第 7 層)。
 
 例如，在 Apache 層，客戶可以設定 [Dispatcher 模組](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter)或 [ModSecurity](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection) 以限制對特定內容的存取。
 
-如本文所述，使用 Cloud Manager 的[設定管道](/help/operations/config-pipeline.md)可以將流量篩選規則部署到 Adobe 管理的內容傳遞網路。除了根據如 IP 位址、路徑及標頭等屬性的&#x200B;*標準流量篩選規則*，或根據設定速率限制的規則之外，客戶也可以授權稱為 *WAF 規則*&#x200B;的強大流量篩選規則子類別。
+如本文所述，使用 Cloud Manager 的[設定管道](/help/operations/config-pipeline.md)可以將流量篩選規則部署到 Adobe 管理的內容傳遞網路。 除了根據如 IP 位址、路徑及標頭等屬性的&#x200B;*標準流量篩選規則*，或根據設定速率限制的規則之外，客戶也可以授權稱為 *WAF 規則*&#x200B;的強大流量篩選規則子類別。
 
 ## 建議的流程 {#suggested-process}
 
@@ -69,15 +69,15 @@ ht-degree: 97%
 
 1. 設定非生產和生產設定管道，如[設定](#setup)章節的敘述。
 1. 已獲得 *WAF 流量篩選規則*&#x200B;的客戶應於 Cloud Manager 加以啟用。
-1. 閱讀並嘗試本教學課程，以具體了解如何使用流量篩選規則，包括 WAF 規則 (若已獲得授權)。本教學課程將引導您將規則部署到開發環境、模擬惡意流量、下載 [CDN 日誌](#cdn-logs)，以及在[儀表板工具](#dashboard-tooling)中進行分析。
+1. 閱讀並嘗試本教學課程，以具體了解如何使用流量篩選規則，包括 WAF 規則 (若已獲得授權)。 本教學課程將引導您將規則部署到開發環境、模擬惡意流量、下載 [CDN 日誌](#cdn-logs)，以及在[儀表板工具](#dashboard-tooling)中進行分析。
 1. 將建議的入門規則複製至 `cdn.yaml`，並在記錄模式中使用部分規則將設定部署至生產環境。
-1. 收集一些流量之後，使用[儀表板工具](#dashboard-tooling)分析結果，以了解是否有任何符合的項目。留意誤報並進行任何必要的調整，最終在區塊模式下啟用所有入門規則。
+1. 收集一些流量之後，使用[儀表板工具](#dashboard-tooling)分析結果，以了解是否有任何符合的項目。 留意誤報並進行任何必要的調整，最終在區塊模式下啟用所有入門規則。
 1. 如有需要，請根據 CDN 記錄分析新增自訂規則，首先在開發環境中使用模擬流量進行測試，再以記錄模式部署至中繼和生產環境，然後在區塊模式進行部署。
 1. 持續監控流量，隨著威脅態勢的發展來變更規則。
 
 ## 設定 {#setup}
 
-1. 建立包含一組流量篩選規則 (包括 WAF 規則) 的 `cdn.yaml` 檔案。例如：
+1. 建立包含一組流量篩選規則 (包括 WAF 規則) 的 `cdn.yaml` 檔案。 例如：
 
    ```
    kind: "CDN"
@@ -96,7 +96,7 @@ ht-degree: 97%
          action: block
    ```
 
-   請參閱[「使用設定管道」](/help/operations/config-pipeline.md#common-syntax)，取得 `data` 節點上方屬性的描述。`kind` 屬性值應設定為 *CDN*，版本應設定為 `1`。
+   請參閱[「使用設定管道」](/help/operations/config-pipeline.md#common-syntax)，取得 `data` 節點上方屬性的描述。 `kind` 屬性值應設定為 *CDN*，版本應設定為 `1`。
 
 
 1. 如果 WAF 規則已獲得授權，您應該在 Cloud Manager 中啟用該功能，如下針對新方案案例和現有方案案例所述。
@@ -105,13 +105,13 @@ ht-degree: 97%
 
    1. 若要在現有方案上設定 WAF，[編輯您的方案](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)並在「**安全性**」標籤隨時取消勾選或勾選「**WAF-DDOS**」選項。
 
-1. 依照[設定管道文章](/help/operations/config-pipeline.md#managing-in-cloud-manager)所述，在 Cloud Manager 中建立設定管道。管道將參考頂層 `config` 資料夾，並將 `cdn.yaml` 檔案放在下方的某個位置，請參閱「[使用設定管道](/help/operations/config-pipeline.md#folder-structure)」。
+1. 依照[設定管道文章](/help/operations/config-pipeline.md#managing-in-cloud-manager)所述，在 Cloud Manager 中建立設定管道。 管道將參考頂層 `config` 資料夾，並將 `cdn.yaml` 檔案放在下方的某個位置，請參閱「[使用設定管道](/help/operations/config-pipeline.md#folder-structure)」。
 
 ## 流量篩選規則語法 {#rules-syntax}
 
 您可以將&#x200B;*流量篩選規則*&#x200B;設定為符合 IPS、使用者代理、要求標頭、主機名稱、地理位置和 URL 等模式。
 
-授權延伸安全性(先前名為WAF-DDoS Protection)或醫療保健延伸安全性（先前名為Enhanced Security）產品的客戶，也可以設定稱為&#x200B;*WAF流量篩選規則* (或簡稱&#x200B;*WAF規則*)的特殊流量篩選規則類別，以參考一或多個[WAF旗標](#waf-flags-list)。
+授權延伸安全性（先前名為WAF-DDoS Protection）或醫療保健延伸安全性（先前名為Enhanced Security）產品的客戶，也可以設定稱為&#x200B;*WAF流量篩選規則* （或簡稱&#x200B;*WAF規則*）的特殊流量篩選規則類別，以參考一或多個[WAF旗標](#waf-flags-list)。
 
 以下是一組流量篩選規則的範例，其中也包括 WAF 規則。
 
@@ -135,15 +135,15 @@ data:
           wafFlags: [ SQLI, XSS]
 ```
 
-`cdn.yaml` 檔案中流量篩選規則的格式如下所述。請參閱後面章節的一些[其他範例](#examples)，和關於[速率限制規則](#rate-limit-rules)的獨立章節。
+`cdn.yaml` 檔案中流量篩選規則的格式如下所述。 請參閱後面章節的一些[其他範例](#examples)，和關於[速率限制規則](#rate-limit-rules)的獨立章節。
 
 
 | **屬性** | **大部分流量篩選規則** | **WAF 流量篩選規則** | **類型** | **預設值** | **說明** |
 |---|---|---|---|---|---|
 | 名稱 | X | X | `string` | - | 規則名稱 (64 個字元的長度，只能包含英數字元和 -) |
 | 時間 | X | X | `Condition` | - | 基本結構是：<br><br>`{ <getter>: <value>, <predicate>: <value> }`<br><br>[請參閱下面的條件結構語法，其中會說明 getter、述詞以及結合多個條件的方式。](#condition-structure) |
-| 動作 | X | X | `Action` | 記錄 | 記錄、允許、封鎖或動作物件。預設為記錄 |
-| rateLimit | X |   | `RateLimit` | 未定義 | 速率限制設定。若未定義，則停用速率限制。<br><br>以下會有一個單獨的章節說明 rateLimit 語法以及範例。 |
+| 動作 | X | X | `Action` | 記錄 | 記錄、允許、封鎖或動作物件。 預設為記錄 |
+| rateLimit | X |   | `RateLimit` | 未定義 | 速率限制設定。 若未定義，則停用速率限制。<br><br>以下會有一個單獨的章節說明 rateLimit 語法以及範例。 |
 
 ### 條件結構 {#condition-structure}
 
@@ -171,18 +171,18 @@ data:
 
 | **屬性** | **類型** | **含義** |
 |---|---|---|
-| **allOf** | `array[Condition]` | **和** 作業。如果所有列出的條件都傳回 true，則為 true |
-| **anyOf** | `array[Condition]` | **或** 作業。如果任何列出的條件都傳回 true，則為 true |
+| **allOf** | `array[Condition]` | **和** 作業。 如果所有列出的條件都傳回 true，則為 true |
+| **anyOf** | `array[Condition]` | **或** 作業。 如果任何列出的條件都傳回 true，則為 true |
 
 **Getter**
 
 | **屬性** | **類型** | **說明** |
 |---|---|---|
-| reqProperty | `string` | 要求屬性。<br><br>之一：<br><ul><li>`path`：傳回不包含查詢參數的 URL 完整路徑。(使用未轉義變體的 `pathRaw`)</li><li>`url`：傳回含查詢參數的完整 URL。(使用未轉義變體的 `urlRaw`)</li><li>`queryString`：傳回 URL 的查詢部分</li><li>`method`：傳回要求中所使用的 HTTP 方法。</li><li>`tier`：傳回 `author`、`preview` 或 `publish` 其中之一。</li><li>`domain`：傳回小寫的網域屬性 (如 `Host` 標頭的定義)</li><li>`clientIp`：傳回用戶端 IP 位址。</li><li>`forwardedDomain`：傳回`X-Forwarded-Host` 標頭內定義的第一個小寫網域</li><li>`forwardedIp`：傳回 `X-Forwarded-For` 標頭中的第一個 IP 位址。</li><li>`clientRegion`：傳回國家/地區細分代碼，指出客戶所在的區域，如 [ISO 3166-2](https://zh.wikipedia.org/wiki/tw/ISO_3166-2) 所述。</li><li>`clientCountry`：傳回兩個字母的代碼 ([區域指示符](https://zh.wikipedia.org/wiki/tw/Regional_indicator_symbol))，可識別客戶位於哪個國家/地區。</li><li>`clientContinent`：傳回兩個字母的代碼 (AF、AN、AS、EU、NA、OC、SA)，可識別客戶位於哪個洲。</li><li>`clientAsNumber`：傳回與用戶端 IP 相關的[自治系統](https://zh.wikipedia.org/wiki/tw/Autonomous_system_(網際網路))編號。</li><li>`clientAsName`：傳回與自治系統編號相關的名稱。</li></ul> |
+| reqProperty | `string` | 要求屬性。<br><br>之一：<br><ul><li>`path`：傳回不包含查詢參數的 URL 完整路徑。 (使用未轉義變體的 `pathRaw`)</li><li>`originalPath`：傳回要求的不變原始路徑（不含查詢引數），亦即任何CDN要求轉換之前的路徑。</li><li>`url`：傳回含查詢參數的完整 URL。 (使用未轉義變體的 `urlRaw`)</li><li>`originalUrl`：傳回要求不可變的原始完整URL，包括查詢引數 — 任何CDN要求轉換之前的URL。</li><li>`queryString`：傳回 URL 的查詢部分</li><li>`method`：傳回要求中所使用的 HTTP 方法。</li><li>`tier`：傳回 `author`、`preview` 或 `publish` 其中之一。</li><li>`domain`：傳回小寫的網域屬性 (如 `Host` 標頭的定義)</li><li>`clientIp`：傳回用戶端 IP 位址。</li><li>`forwardedDomain`：傳回`X-Forwarded-Host` 標頭內定義的第一個小寫網域</li><li>`forwardedIp`：傳回 `X-Forwarded-For` 標頭中的第一個 IP 位址。</li><li>`clientRegion`：傳回國家/地區細分代碼，指出客戶所在的區域，如 [ISO 3166-2](https://zh.wikipedia.org/wiki/tw/ISO_3166-2) 所述。</li><li>`clientCountry`：傳回兩個字母的代碼 ([區域指示符](https://zh.wikipedia.org/wiki/tw/Regional_indicator_symbol))，可識別客戶位於哪個國家/地區。</li><li>`clientContinent`：傳回兩個字母的代碼 (AF、AN、AS、EU、NA、OC、SA)，可識別客戶位於哪個洲。</li><li>`clientAsNumber`：傳回與用戶端 IP 相關的[自治系統](https://zh.wikipedia.org/wiki/tw/Autonomous_system_(網際網路))編號。</li><li>`clientAsName`：傳回與自治系統編號相關的名稱。</li></ul> |
 | reqHeader | `string` | 傳回具有指定名稱的要求標頭 |
 | queryParam | `string` | 傳回具有指定名稱的查詢參數 |
 | reqCookie | `string` | 傳回具有指定名稱的 Cookie |
-| postParam | `string` | 從要求內文傳回具有指定名稱的 Post 參數。只有當內文為內容類型 `application/x-www-form-urlencoded` 時才有效 |
+| postParam | `string` | 從要求內文傳回具有指定名稱的 Post 參數。 只有當內文為內容類型 `application/x-www-form-urlencoded` 時才有效 |
 
 **述詞**
 
@@ -200,7 +200,7 @@ data:
 
 **附註**
 
-* 要求屬性 `clientIp` 只能與以下述詞一起使用：`equals`、`doesNotEqual`、`in`、`notIn`。`clientIp` 也可以比對 IP 範圍 (在使用 `in` 和 `notIn` 述詞時)。以下範例將實施一項條件，以評估用戶端 IP 是否在 192.168.0.0/24 的 IP 範圍內 (即從 192.168.0.0 到 192.168.0.255)：
+* 要求屬性 `clientIp` 只能與以下述詞一起使用：`equals`、`doesNotEqual`、`in`、`notIn`。 `clientIp` 也可以比對 IP 範圍 (在使用 `in` 和 `notIn` 述詞時)。 以下範例將實施一項條件，以評估用戶端 IP 是否在 192.168.0.0/24 的 IP 範圍內 (即從 192.168.0.0 到 192.168.0.255)：
 
 ```
 when:
@@ -208,7 +208,7 @@ when:
   in: [ "192.168.0.0/24" ]
 ```
 
-* Adobe 建議使用 [regex101](https://regex101.com/)，以及在搭配規則運算式時使用 [Fastly Fiddle](https://fiddle.fastly.dev/)。您也可以從 [fastly 文件 - Fastly VCL 中的規則運算式](https://www.fastly.com/documentation/reference/vcl/regex/#best-practices-and-common-mistakes)，了解 Fastly 如何處理規則運算式的詳細資訊。
+* Adobe 建議使用 [regex101](https://regex101.com/)，以及在搭配規則運算式時使用 [Fastly Fiddle](https://fiddle.fastly.dev/)。 您也可以從 [fastly 文件 - Fastly VCL 中的規則運算式](https://www.fastly.com/documentation/reference/vcl/regex/#best-practices-and-common-mistakes)，了解 Fastly 如何處理規則運算式的詳細資訊。
 
 
 ### 動作結構 {#action-structure}
@@ -221,9 +221,9 @@ when:
 
 | **名稱** | **允許的屬性** | **含義** |
 |---|---|---|
-| **允許** | `wafFlags` (可選)，`alert` (可選) | 如果沒有 wafFlags，則停止進一步處理規則並繼續提供回應。如果有 wafFlags，這將停用指定的 WAF 保護並繼續進一步處理規則。<br>如果已指定要發送警報，則當規則在 5 分鐘內觸發 10 次時，系統將發送行動中心通知。一旦觸發特定規則的警報，直到第二天 (UTC) 它才會再次觸發。 |
-| **封鎖** | `status, wafFlags` (可選且互斥)，`alert` (可選) | 如果沒有 wafFlags，則繞過所有其他屬性來傳回 HTTP 錯誤，錯誤代碼由狀態屬性定義或預設為 406。如果有 wafFlags，這將啟用指定的 WAF 保護並繼續進一步處理規則。<br>如果已指定要發送警報，則當規則在 5 分鐘內觸發 10 次時，系統將發送行動中心通知。一旦觸發特定規則的警報，直到第二天 (UTC) 它才會再次觸發。 |
-| **記錄** | `wafFlags` (可選)，`alert` (可選) | 記錄規則已觸發的事實，否則不影響處理作業。wafFlags 沒有影響。<br>如果已指定要發送警報，則當規則在 5 分鐘內觸發 10 次時，系統將發送行動中心通知。一旦觸發特定規則的警報，直到第二天 (UTC) 它才會再次觸發。 |
+| **允許** | `wafFlags` (可選)，`alert` (可選) | 如果沒有 wafFlags，則停止進一步處理規則並繼續提供回應。 如果有 wafFlags，這將停用指定的 WAF 保護並繼續進一步處理規則。 <br>如果已指定要發送警報，則當規則在 5 分鐘內觸發 10 次時，系統將發送行動中心通知。 一旦觸發特定規則的警報，直到第二天 (UTC) 它才會再次觸發。 |
+| **封鎖** | `status, wafFlags` (可選且互斥)，`alert` (可選) | 如果沒有 wafFlags，則繞過所有其他屬性來傳回 HTTP 錯誤，錯誤代碼由狀態屬性定義或預設為 406。 如果有 wafFlags，這將啟用指定的 WAF 保護並繼續進一步處理規則。 <br>如果已指定要發送警報，則當規則在 5 分鐘內觸發 10 次時，系統將發送行動中心通知。 一旦觸發特定規則的警報，直到第二天 (UTC) 它才會再次觸發。 |
+| **記錄** | `wafFlags` (可選)，`alert` (可選) | 記錄規則已觸發的事實，否則不影響處理作業。 wafFlags 沒有影響。 <br>如果已指定要發送警報，則當規則在 5 分鐘內觸發 10 次時，系統將發送行動中心通知。 一旦觸發特定規則的警報，直到第二天 (UTC) 它才會再次觸發。 |
 
 ### WAF 標幟清單 {#waf-flags-list}
 
@@ -233,8 +233,8 @@ when:
 
 | **標幟 ID** | **標幟名稱** | **說明** |
 |---|---|---|
-| 攻擊 | 攻擊 | 與惡意流量 (SQLI、CMDEXE、XSS 等) 相關的標幟彙總。請參閱[建議的 WAF 規則區段](#recommended-waf-starter-rules)，了解如何有效使用此標幟。 |
-| ATTACK-FROM-BAD-IP | 來自惡意 IP 的攻擊 | 與 ATTACK 標幟類似，但透過 `BAD-IP` 標幟進行「邏輯上的 AND 運算」，因此如果請求同時符合 ATTACK 和 BAD-IP，則會對其進行標記。請參閱[建議的 WAF 規則區段](#recommended-waf-starter-rules)，了解如何有效使用此標幟。 |
+| 攻擊 | 攻擊 | 與惡意流量 (SQLI、CMDEXE、XSS 等) 相關的標幟彙總。 請參閱[建議的 WAF 規則區段](#recommended-waf-starter-rules)，了解如何有效使用此標幟。 |
+| ATTACK-FROM-BAD-IP | 來自惡意 IP 的攻擊 | 與 ATTACK 標幟類似，但透過 `BAD-IP` 標幟進行「邏輯上的 AND 運算」，因此如果請求同時符合 ATTACK 和 BAD-IP，則會對其進行標記。 請參閱[建議的 WAF 規則區段](#recommended-waf-starter-rules)，了解如何有效使用此標幟。 |
 | SQLI | SQL 注入 | SQL 注入指試圖透過執行任意資料庫查詢以取得對應用程式的存取權或獲取特權資訊。 |
 | BACKDOOR | 後門 | 後門訊號指試圖決定系統是否存在常見後門檔案的要求。 |
 | CMDEXE | 命令執行 | 命令執行指試圖透過由使用者輸入的任意系統命令獲取控制或毀損目標系統。 |
@@ -243,7 +243,7 @@ when:
 | 周遊 | 目錄周遊 | 目錄周遊指試圖瀏覽整個系統中的特權檔案，期望能獲取敏感資訊。 |
 | USERAGENT | 攻擊工具 | 攻擊工具指使用自動化軟體識別安全漏洞或試圖惡意探索發現的漏洞。 |
 | LOG4J-JNDI | Log4J JNDI | Log4J JNDI 攻擊會試圖惡意探索出現在 2.16.0 之前的 Log4J 版本中的 [Log4Shell 漏洞](https://zh.wikipedia.org/wiki/tw/Log4Shell) |
-| CVE | CVE | 可識別 CVE 的旗標。一律與 `CVE-<CVE Number>` 旗標結合使用。請聯絡 Adobe 以深入了解 Adobe 能保護您免受哪些 CVE 侵害。 |
+| CVE | CVE | 可識別 CVE 的旗標。 一律與 `CVE-<CVE Number>` 旗標結合使用。 請聯絡 Adobe 以深入了解 Adobe 能保護您免受哪些 CVE 侵害。 |
 
 #### 可疑流量
 
@@ -253,12 +253,12 @@ when:
 | 惡意-IP | 惡意 IP | 識別來自已知為惡意 IP 位址的請求，由於這些請求包含在如 `SANS` 和 `TORNODE` 等資料集，或根據 WAF 先前偵測到的惡意行為 |
 | BHH | 錯誤跳躍標頭 | 錯誤跳躍標頭指透過格式錯誤的傳輸編碼 (TE) 或內容長度 (CL) 標頭或格式正確的 TE 和 CL 標頭進行的 HTTP 走私嘗試 |
 | CODEINJECTION | 程式碼注入 | 程式碼注入是指試圖透過由使用者輸入的任意應用程式碼命令獲取控制或毀損目標系統。 |
-| 已壓縮 | 偵測到壓縮 | POST 要求內文被壓縮，並且無法檢查。例如，如果指定了 `Content-Encoding: gzip` 請求標頭，且 POST 內文並非純文字。 |
+| 已壓縮 | 偵測到壓縮 | POST 要求內文被壓縮，並且無法檢查。 例如，如果指定了 `Content-Encoding: gzip` 請求標頭，且 POST 內文並非純文字。 |
 | RESPONSESPLIT | HTTP 回應拆分 | 會識別何時將 CRLF 字元作為輸入提交給應用程式，以將標頭注入 HTTP 回應 |
 | NOTUTF8 | 無效的編碼 | 無效的編碼可能會導致伺服器將要求中的惡意字元翻譯為回應，進而導致拒絕服務或 XSS |
-| MALFORMED-DATA | 要求內文中格式錯誤的資料 | 根據「Content-Type」要求標頭，格式錯誤的 POST、PUT 或 PATCH 要求內文。例如，如果指定了「Content-Type: application/x-www-form-urlencoded」要求標頭並包含 json 的 POST 內文。這經常是程式設計錯誤、自動化或惡意要求。需要代理程式 3.2 或更高版本。 |
+| MALFORMED-DATA | 要求內文中格式錯誤的資料 | 根據「Content-Type」要求標頭，格式錯誤的 POST、PUT 或 PATCH 要求內文。 例如，如果指定了「Content-Type: application/x-www-form-urlencoded」要求標頭並包含 json 的 POST 內文。 這經常是程式設計錯誤、自動化或惡意要求。 需要代理程式 3.2 或更高版本。 |
 | SANS | 惡意的 IP 流量 | [SANS 網際網路風暴中心](https://isc.sans.edu/)進行惡意活動的被舉報 IP 位址清單 |
-| NO-CONTENT-TYPE | 缺少「Content-Type」要求標頭 | 沒有「Content-Type」要求標頭的 POST、PUT 或 PATCH 要求。在此案例中，預設情況下應用程式伺服器應假設「Content-Type: text/plain; charset=us-ascii」。許多自動化和惡意要求可能會缺少「內容類型」。 |
+| NO-CONTENT-TYPE | 缺少「Content-Type」要求標頭 | 沒有「Content-Type」要求標頭的 POST、PUT 或 PATCH 要求。 在此案例中，預設情況下應用程式伺服器應假設「Content-Type: text/plain; charset=us-ascii」。 許多自動化和惡意要求可能會缺少「內容類型」。 |
 | NOUA | 沒有使用者代理程式 | 指示請求不包含「使用者代理」標頭或未設定的標頭值。 |
 | NULLBYTE | 空位元 | 空位元通常不會出現在要求中，因為這表示該要求的格式錯誤且可能是惡意的。 |
 | OOB-DOMAIN | 頻外網域 | 頻外網域通常用於滲透測試期間，以識別出允許網路存取的漏洞所在。 |
@@ -269,15 +269,15 @@ when:
 
 | **標幟 ID** | **標幟名稱** | **說明** |
 |---|---|---|
-| DATACENTER | 資料中心 | 將請求識別為來自已知的主機提供者。這種類型的流量通常和真正的一般使用者無關。 |
+| DATACENTER | 資料中心 | 將請求識別為來自已知的主機提供者。 這種類型的流量通常和真正的一般使用者無關。 |
 | DOUBLEENCODING | 雙重編碼 | 雙重編碼會檢查雙重編碼 html 字元的規避技術 |
-| JSON-ERROR | JSON 編碼錯誤 | 指定為在「Content-Type」要求標頭中包含 JSON 但包含 JSON 剖析錯誤的 POST、PUT 或 PATCH 要求內文。這經常和程式設計錯誤或自動化亦或惡意要求有關。 |
-| TORNODE | Tor 流量 | Tor 是可隱藏使用者身份的軟體。Tor 流量激增可能表示有攻擊者試圖掩飾其位置。 |
-| XML-ERROR | XML 編碼錯誤 | 指定為在「Content-Type」要求標頭中包含 XML 但包含 XML 剖析錯誤的 POST、PUT 或 PATCH 要求內文。這經常和程式設計錯誤或自動化亦或惡意要求有關。 |
+| JSON-ERROR | JSON 編碼錯誤 | 指定為在「Content-Type」要求標頭中包含 JSON 但包含 JSON 剖析錯誤的 POST、PUT 或 PATCH 要求內文。 這經常和程式設計錯誤或自動化亦或惡意要求有關。 |
+| TORNODE | Tor 流量 | Tor 是可隱藏使用者身份的軟體。 Tor 流量激增可能表示有攻擊者試圖掩飾其位置。 |
+| XML-ERROR | XML 編碼錯誤 | 指定為在「Content-Type」要求標頭中包含 XML 但包含 XML 剖析錯誤的 POST、PUT 或 PATCH 要求內文。 這經常和程式設計錯誤或自動化亦或惡意要求有關。 |
 
 ## 考量事項 {#considerations}
 
-* 建立兩個衝突規則時，允許的規則總是優先於封鎖規則。例如，如果您建立一條封鎖特定路徑的規則，又建立一條允許特定 IP 位址的規則，則來自遭封鎖路徑上的該 IP 位址的要求會受到允許。
+* 建立兩個衝突規則時，允許的規則總是優先於封鎖規則。 例如，如果您建立一條封鎖特定路徑的規則，又建立一條允許特定 IP 位址的規則，則來自遭封鎖路徑上的該 IP 位址的要求會受到允許。
 
 * 如果規則相符並遭封鎖，CDN 會以 `406` 傳回代碼回應。
 
@@ -289,7 +289,7 @@ when:
 
 ## 規則範例 {#examples}
 
-下面是一些規則範例。如需進一步探討速率限制規則的範例，請參閱[「速率限制」一節](#rate-limit-rules)。
+下面是一些規則範例。 如需進一步探討速率限制規則的範例，請參閱[「速率限制」一節](#rate-limit-rules)。
 
 **範例 1**
 
@@ -352,7 +352,7 @@ data:
 
 **範例 4**
 
-此規則會封鎖發佈時對路徑 `/block-me` 的要求，並封鎖和 `SQLI` 或 `XSS` 模式相符的每個要求。此範例包含 WAF 流量篩選規則，其參考了 `SQLI` 和 `XSS`[WAF 標幟](#waf-flags-list)，因此需要單獨的授權。
+此規則會封鎖發佈時對路徑 `/block-me` 的要求，並封鎖和 `SQLI` 或 `XSS` 模式相符的每個要求。 此範例包含 WAF 流量篩選規則，其參考了 `SQLI` 和 `XSS`[WAF 標幟](#waf-flags-list)，因此需要單獨的授權。
 
 ```
 kind: "CDN"
@@ -408,11 +408,11 @@ data:
 
 ## 速率限制規則
 
-有時，如果流量超過傳入要求的特定速率 (基於特定條件)，則需要封鎖流量。設定 `rateLimit` 屬性的值會限制那些和規則條件相符的要求的速率。
+有時，如果流量超過傳入要求的特定速率 (基於特定條件)，則需要封鎖流量。 設定 `rateLimit` 屬性的值會限制那些和規則條件相符的要求的速率。
 
-速率限制規則不能參考 WAF 標幟。它們提供給所有網站和表單客戶使用。
+速率限制規則不能參考 WAF 標幟。 它們提供給所有網站和表單客戶使用。
 
-速率限制是根據 CDN POP 計算的。例如，假設蒙特婁、邁阿密和都柏林的 POP 流量分別為每秒 80、90 和 120 個請求。並且，速率限制規則設定在以 100 為限。在這種情況下，只有到都柏林的流量會受到速率限制。
+速率限制是根據 CDN POP 計算的。 例如，假設蒙特婁、邁阿密和都柏林的 POP 流量分別為每秒 80、90 和 120 個請求。 並且，速率限制規則設定在以 100 為限。 在這種情況下，只有到都柏林的流量會受到速率限制。
 
 速率限制是根據到達邊緣的流量、到達來源的流量或錯誤數量進行評估。
 
@@ -421,7 +421,7 @@ data:
 | **屬性** | **類型** | **預設** | **含義** |
 |---|---|---|---|
 | 限制 | 10 到 10000 之間的整數 | 必要 | 觸發規則的要求速率是以每秒要求數為單位 (per CDN POP)。 |
-| 視窗 | 整數列舉：1、10 或 60 | 10 | 計算要求速率的取樣期間 (秒數)。計數器的準確性取決於時間範圍的大小 (範圍愈大，準確度愈高)。例如，1 秒時間範圍的準確度預計為 50%，60 秒時間範圍的準確度預計為 90%。 |
+| 視窗 | 整數列舉：1、10 或 60 | 10 | 計算要求速率的取樣期間 (秒數)。 計數器的準確性取決於時間範圍的大小 (範圍愈大，準確度愈高)。 例如，1 秒時間範圍的準確度預計為 50%，60 秒時間範圍的準確度預計為 90%。 |
 | 懲罰 | 60 到 3600 之間的整數 | 300 (5 分鐘) | 封鎖相符要求時間的秒數 (四捨五入到最接近的分鐘)。 |
 | 計數 | 所有、擷取、錯誤 | 全部 | 根據邊緣流量 (全部)、來源流量 (擷取) 或錯誤數量 (錯誤) 進行評估。 |
 | groupBy | array[Getter] | 無 | 速率限制器計數器將由一組要求屬性 (例如 clientIp) 彙總。 |
@@ -472,9 +472,11 @@ data:
         rateLimit: { limit: 100, window: 10, penalty: 60, count: fetches }
 ```
 
+如需進階案例的其他程式碼片段，請參閱[常見案例的CDN設定片段](/help/implementing/dispatcher/cdn-configuration-snippets-common-scenarios.md)文章。
+
 ## CVE 規則 {#cve-rules}
 
-如果 WAF 已獲得授權，Adobe 就會自動套用封鎖規則來防範許多已知的 CVE (常見漏洞和暴露)，而新的 CVE 可能會在發現後立即新增。客戶不應也不需自行設定 CVE 規則。
+如果 WAF 已獲得授權，Adobe 就會自動套用封鎖規則來防範許多已知的 CVE (常見漏洞和暴露)，而新的 CVE 可能會在發現後立即新增。 客戶不應也不需自行設定 CVE 規則。
 
 如果流量請求符合 CVE，就會顯示在對應的內容傳遞網路記錄項目中。
 
@@ -482,7 +484,7 @@ data:
 
 ## 流量篩選規則警報 {#traffic-filter-rules-alerts}
 
-規則可設定為在 5 分鐘時間內觸發十次時發送行動中心通知。當出現某些流量模式時，此類規則會向您發送警報，以便您採取任何必要的措施。一旦觸發特定規則的警報，直到第二天 (UTC) 它才會再次觸發。
+規則可設定為在 5 分鐘時間內觸發十次時發送行動中心通知。 當出現某些流量模式時，此類規則會向您發送警報，以便您採取任何必要的措施。 一旦觸發特定規則的警報，直到第二天 (UTC) 它才會再次觸發。
 
 了解更多關於[行動中心](/help/operations/actions-center.md)，包括如何設定接收電子郵件所需的通知設定檔。
 
@@ -511,9 +513,9 @@ data:
 
 有大量流量傳送到來源，且其中來自相同 IP 位址的請求臨界值相當高，因而暗示可能發生 DDoS 攻擊時，將傳送[行動中心](/help/operations/actions-center.md)電子郵件通知。
 
-如果達到此臨界值，Adobe 將阻止來自該 IP 位址的流量，但建議採取其他措施來保護您的來源，包括設定速率限制流量篩選規則，以便在臨界值較低時阻擋流量尖峰。請參閱[「使用流量篩選器規則封鎖 DoS 和 DDoS 攻擊」教學課程](#tutorial-blocking-DDoS-with-rules)以瞭解引導式逐步說明。
+如果達到此臨界值，Adobe 將阻止來自該 IP 位址的流量，但建議採取其他措施來保護您的來源，包括設定速率限制流量篩選規則，以便在臨界值較低時阻擋流量尖峰。 請參閱[「使用流量篩選器規則封鎖 DoS 和 DDoS 攻擊」教學課程](#tutorial-blocking-DDoS-with-rules)以瞭解引導式逐步說明。
 
-此警報預設為啟用，但可以將 *defaultTrafficAlerts* 屬性設定為 False 來加以停用。一旦觸發特定規則的警報，直到第二天 (UTC) 它才會再次觸發。
+此警報預設為啟用，但可以將 *defaultTrafficAlerts* 屬性設定為 False 來加以停用。 一旦觸發特定規則的警報，直到第二天 (UTC) 它才會再次觸發。
 
 ```
 kind: "CDN"
@@ -525,7 +527,7 @@ data:
 
 ## CDN 記錄 {#cdn-logs}
 
-AEM as a Cloud Service 會提供對 CDN 記錄的存取權，這對於包括快取命中率最佳化以及設定流量篩選規則等使用案例都非常有幫助。選取作者或發佈服務時，CDN 記錄會顯示在 Cloud Manager **下載記錄**&#x200B;對話框中。
+AEM as a Cloud Service 會提供對 CDN 記錄的存取權，這對於包括快取命中率最佳化以及設定流量篩選規則等使用案例都非常有幫助。 選取作者或發佈服務時，CDN 記錄會顯示在 Cloud Manager **下載記錄**&#x200B;對話框中。
 
 CDN 記錄可能會延遲最多五分鐘。
 
@@ -545,7 +547,7 @@ CDN 記錄可能會延遲最多五分鐘。
 
 * 任何符合規則的客戶宣告規則名稱會列於 `match` 屬性中。
 * `action` 屬性會確定規則是阻止、允許或記錄。
-* 如果 WAF 已取得授權並啟用， `waf` 屬性會列出所有偵測到的 WAF 標幟 (例如 SQLI)。無論 WAF 標幟是否列在任何規則中，都是如此。這是提供深入分析要宣告的潛在新規則。
+* 如果 WAF 已取得授權並啟用， `waf` 屬性會列出所有偵測到的 WAF 標幟 (例如 SQLI)。 無論 WAF 標幟是否列在任何規則中，都是如此。 這是提供深入分析要宣告的潛在新規則。
 * 如果沒有客戶宣告的規則相符且沒有 WAF 規則相符，則 `rules` 屬性為空。
 
 如前所述，WAF 規則的符合項目只會出現在 CDN 未命中和通過的 CDN 記錄中，而非點擊的記錄中。
@@ -616,7 +618,7 @@ data:
 | **欄位名稱** | **說明** |
 |---|---|
 | *timestamp* | TLS 終止後要求開始的時間。 |
-| *ttfb* | *首位元組時間 (Time To First Byte)* 的縮寫。發出要求開始到回應內文開始串流的時間之間的時間間隔。 |
+| *ttfb* | *首位元組時間 (Time To First Byte)* 的縮寫。 發出要求開始到回應內文開始串流的時間之間的時間間隔。 |
 | *cli_ip* | 用戶端 IP 位址。 |
 | *cli_country* | 雙字母 [ISO 3166-1](https://zh.wikipedia.org/wiki/tw/ISO_3166-1) 用戶端國家/地區的 alpha-2 國家/地區代碼。 |
 | *rid* | 用於唯一識別要求的要求標頭的值。 |
@@ -625,15 +627,15 @@ data:
 | *url* | 包括查詢參數的完整路徑。 |
 | *方法* | 用戶端傳送的 HTTP 方法，例如「GET」或「POST」。 |
 | *res_ctype* | 此內容類型用於指明資源的原始媒體類型。 |
-| *cache* | 快取的狀態。可能的值包括 HIT、MISS 或 PASS |
+| *cache* | 快取的狀態。 可能的值包括 HIT、MISS 或 PASS |
 | *狀態* | 作為整數值的 HTTP 狀態代碼。 |
 | *res_age* | 回應已經 (在所有的節點) 快取的時間量 (以秒為單位)。 |
 | *pop* | CDN 快取伺服器的資料中心。 |
-| *rules* | 任何符合的規則其名稱。<br><br>還會指出該相符程度是否導致封鎖。<br><br>例如，「`match=Enable-SQL-Injection-and-XSS-waf-rules-globally,waf=SQLI,action=blocked`」<br><br>如果沒有相符的規則，則為空白。 |
+| *rules* | 任何符合的規則其名稱。<br><br>還會指出該相符程度是否導致封鎖。 <br><br>例如，「`match=Enable-SQL-Injection-and-XSS-waf-rules-globally,waf=SQLI,action=blocked`」<br><br>如果沒有相符的規則，則為空白。 |
 
 ## 儀表板工具 {#dashboard-tooling}
 
-Adobe 提供了將儀表板工具下載到您電腦上的機制，以擷取透過 Cloud Manager 下載的 CDN 日誌。使用此工具，您可以分析流量，以協助制定要宣告的適當流量篩選規則，包括 WAF 規則。
+Adobe 提供了將儀表板工具下載到您電腦上的機制，以擷取透過 Cloud Manager 下載的 CDN 日誌。 使用此工具，您可以分析流量，以協助制定要宣告的適當流量篩選規則，包括 WAF 規則。
 
 儀表板工具可以直接從 [AEMCS-CDN-Log-Analysis-Tooling](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) GitHub 存放庫原地複製。
 
@@ -641,14 +643,14 @@ Adobe 提供了將儀表板工具下載到您電腦上的機制，以擷取透�
 
 ## 建議的入門規則 {#recommended-starter-rules}
 
-Adobe 建議從以下的流量篩選規則開始，然後隨著時間的變化進行調整。*Sites或Forms授權可使用*&#x200B;標準規則，而&#x200B;*WAF規則*&#x200B;需要延伸安全性(先前名為WAF-DDoS Protection)或醫療保健延伸安全性（先前名為Enhanced Security）授權。
+Adobe 建議從以下的流量篩選規則開始，然後隨著時間的變化進行調整。 *Sites或Forms授權可使用*&#x200B;標準規則，而&#x200B;*WAF規則*&#x200B;需要延伸安全性（先前名為WAF-DDoS Protection）或醫療保健延伸安全性（先前名為Enhanced Security）授權。
 
 ### 建議的入門規則 {#recommended-nonwaf-starter-rules}
 
 從以下規則開始：
 
 1. 速率限制 (記錄模式)：
-   * 當來自特定 IP 的流量超過速率限制時進行記錄。驗證未收到警報後會變更為封鎖模式；如果收到警報，則表示限制值太低。
+   * 當來自特定 IP 的流量超過速率限制時進行記錄。 驗證未收到警報後會變更為封鎖模式；如果收到警報，則表示限制值太低。
 2. 特定國家 (封鎖模式)：
    * 封鎖來自特定國家的流量 (根據您的業務需求修改國家代碼)
 
@@ -713,14 +715,14 @@ data:
 
 1. ATTACK-FROM-BAD-IP 標幟 (封鎖模式)：
    * 立即封鎖同時符合可疑模式 (包括 [WAF 標幟清單](#waf-flags-list)中的數種模式) 且來自已知為惡意 IP 位址的流量。
-   * ATTACK-FROM-BAD-IP 標幟本質上滿足兩種條件 (模式符合和已知惡意 IP)，將誤報的風險降至最低。因此，您可以立即以封鎖模式安全地套用此規則。
+   * ATTACK-FROM-BAD-IP 標幟本質上滿足兩種條件 (模式符合和已知惡意 IP)，將誤報的風險降至最低。 因此，您可以立即以封鎖模式安全地套用此規則。
 2. ATTACK 標誌 (記錄模式)：
-   * 最初記錄 (而非封鎖) 符合可疑模式但並非來自已知惡意 IP 位址的流量。這種謹慎的記錄而非封鎖的方法有助於避免無意間封鎖合法流量 (誤報)。
-   * 部署此規則後，仔細分析 CDN 記錄以驗證並未錯誤標記合法請求。您確信合法流量未受影響後，請切換至封鎖模式。
+   * 最初記錄 (而非封鎖) 符合可疑模式但並非來自已知惡意 IP 位址的流量。 這種謹慎的記錄而非封鎖的方法有助於避免無意間封鎖合法流量 (誤報)。
+   * 部署此規則後，仔細分析 CDN 記錄以驗證並未錯誤標記合法請求。 您確信合法流量未受影響後，請切換至封鎖模式。
 
 >[!NOTE]
 >
-> 我們的經驗指出：與 ATTACK 標幟相關的誤報相當罕見。因此，立即封鎖所有可疑流量 (即使此 IP 位址並非已知為惡意的)，並隨後使用 CDN 記錄分析來識別並引入合法流量的允許規則，這可能是實用的策略。每個組織皆應評估自身對於風險的容許度，權衡加強保護的保護與無意間封鎖合法請求的風險。
+> 我們的經驗指出：與 ATTACK 標幟相關的誤報相當罕見。 因此，立即封鎖所有可疑流量 (即使此 IP 位址並非已知為惡意的)，並隨後使用 CDN 記錄分析來識別並引入合法流量的允許規則，這可能是實用的策略。 每個組織皆應評估自身對於風險的容許度，權衡加強保護的保護與無意間封鎖合法請求的風險。
 
 ```
     # blocks likely attack traffic, which also comes from suspected IPs
@@ -745,7 +747,7 @@ data:
 
 ### 舊版建議的 WAF 規則 {#previous-waf-starter-rules}
 
-在 2025 年 7 月之前，Adobe 建議使用以下列出的 WAF 規則，這些規則在防禦惡意流量方面仍然有效。請參閱教學課程，了解有關移轉至新建議規則的考量。
+在 2025 年 7 月之前，Adobe 建議使用以下列出的 WAF 規則，這些規則在防禦惡意流量方面仍然有效。 請參閱教學課程，了解有關移轉至新建議規則的考量。
 
 +++ 展開以查看舊版建議的 WAF 規則。
 

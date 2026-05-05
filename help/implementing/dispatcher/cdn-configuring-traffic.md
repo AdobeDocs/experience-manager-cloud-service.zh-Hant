@@ -4,9 +4,9 @@ description: 瞭解如何在設定檔案中宣告規則和篩選器，並使用C
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 15c49efa8ccb7d61fc506a0603b201c50a17edee
+source-git-commit: 13efa829fb1d1f6533645b9661063a38180db179
 workflow-type: tm+mt
-source-wordcount: '1932'
+source-wordcount: '2051'
 ht-degree: 1%
 
 ---
@@ -21,11 +21,13 @@ AEM as a Cloud Service提供可在[Adobe管理的CDN](/help/implementing/dispatc
 * [伺服器端重新導向](#server-side-redirectors) — 觸發瀏覽器重新導向。
 * [來源選取器](#origin-selectors) — 代理至不同的來源後端。
 
-在CDN也可以設定的是流量篩選規則(包括WAF)，其可控制CDN允許或拒絕的流量。 此功能已發行，您可以在[流量篩選器規則(包括WAF規則)](/help/security/traffic-filter-rules-including-waf.md)頁面中瞭解更多相關資訊。
+在CDN也可以設定的是流量篩選規則（包括WAF），其可控制CDN允許或拒絕的流量。 此功能已發行，您可以在[流量篩選器規則（包括WAF規則）](/help/security/traffic-filter-rules-including-waf.md)頁面中瞭解更多相關資訊。
 
 此外，如果CDN無法連絡其來源，您可以撰寫規則來參考自行託管的自訂錯誤頁面（然後呈現）。 閱讀[設定CDN錯誤頁面](/help/implementing/dispatcher/cdn-error-pages.md)文章以進一步瞭解此專案。
 
 所有這些在原始檔控制的設定檔案中宣告的規則，都是使用Cloud Manager [設定管道](/help/operations/config-pipeline.md)來部署。 請注意，設定檔案的累積大小（包括流量篩選規則）不得超過100KB。
+
+如需常見案例的其他程式碼片段，請參閱[常見案例的CDN設定片段](/help/implementing/dispatcher/cdn-configuration-snippets-common-scenarios.md)文章。
 
 ## 評估順序 {#order-of-evaluation}
 
@@ -384,6 +386,8 @@ data:
 
 您可以運用AEM CDN將流量路由至不同的後端，包括非Adobe應用程式（可能依路徑或子網域為基礎）。
 
+要求屬性`originalPath`和`originalUrl`分別是不可變的原始路徑（沒有查詢引數）和完整URL （包括查詢引數），在任何CDN [要求轉換](#request-transformations)之前執行。 當您需要將規則錨定在使用者端最初傳送的內容上時，請在`when`條件中使用它們，而不是在評估序列中較早重寫的值。 使用`originalPath`進行僅路徑比對；當查詢字串必須是條件的一部分時（例如，路由或篩選特定初始請求URL），請使用`originalUrl`。
+
 設定範例：
 
 ```
@@ -393,7 +397,7 @@ data:
   originSelectors:
     rules:
       - name: example-com
-        when: { reqProperty: path, like: /proxy* }
+        when: { reqProperty: originalPath, like: /proxy* }
         action:
           type: selectOrigin
           originName: example-com
@@ -443,7 +447,7 @@ data:
 
 ### 將自訂網域代理至AEM靜態層 {#proxy-custom-domain-static}
 
-來源選取器可用來將AEM發佈流量路由到使用[前端管道](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)部署的AEM靜態內容。 使用案例包括在與頁面相同的網域(例如example.com/static)上或在明確不同的網域(例如static.example.com)上提供靜態資源。
+來源選取器可用來將AEM發佈流量路由到使用[前端管道](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)部署的AEM靜態內容。 使用案例包括在與頁面相同的網域（例如example.com/static）上或在明確不同的網域（例如static.example.com）上提供靜態資源。
 
 以下是可實現此目標的原點選取器規則的範例：
 
@@ -497,7 +501,7 @@ data:
 
 >[!NOTE]
 >
->因為已使用Adobe Managed CDN，請依照Edge Delivery Services **安裝程式推送失效檔案**，確定在[Managed](https://www.aem.live/docs/byo-dns#setup-push-invalidation)模式中設定推送失效。
+>因為已使用Adobe Managed CDN，請依照Edge Delivery Services [安裝程式推送失效檔案](https://www.aem.live/docs/byo-dns#setup-push-invalidation)，確定在&#x200B;**Managed**&#x200B;模式中設定推送失效。
 
 
 ### 代理至AEMaaCS環境 {#proxying-to-aemaacs}
@@ -524,7 +528,7 @@ data:
           allOf:
             - reqProperty: domain
               equals: www.example.com
-            - reqProperty: path
+            - reqProperty: originalPath
               like: /graphql*
         action:
           type: selectOrigin
@@ -552,13 +556,13 @@ data:
   redirects:
     rules:
       - name: redirect-absolute
-        when: { reqProperty: path, equals: "/page.html" }
+        when: { reqProperty: originalPath, equals: "/page.html" }
         action:
           type: redirect
           status: 301
           location: https://example.com/page
       - name: redirect-relative
-        when: { reqProperty: path, equals: "/anotherpage.html" }
+        when: { reqProperty: originalPath, equals: "/anotherpage.html" }
         action:
           type: redirect
           location: /anotherpage
@@ -569,7 +573,7 @@ data:
 | **重新導向** | 位置 | 「Location」標頭的值。 |
 |     | 狀態（選擇性，預設為301） | 重新導向訊息中使用的HTTP狀態，預設為301，允許值為： 301、302、303、307、308。 |
 
-重新導向的位置可以是字串常值(例如https://www.example.com/page)，或是由以下語法選擇性轉換的屬性（例如path）所產生：
+重新導向的位置可以是字串常值（例如https://www.example.com/page），或是由以下語法選擇性轉換的屬性（例如path）所產生：
 
 ```
 redirects:

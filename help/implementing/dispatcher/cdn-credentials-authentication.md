@@ -4,10 +4,10 @@ description: 瞭解如何在設定檔案中宣告規則，再使用Cloud Manager
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: 9f264bab062d5013ff5a4b40b1228be1f922ef51
+source-git-commit: 4ec024236cc1054206ea789d755dd4e76fb9cd79
 workflow-type: tm+mt
-source-wordcount: '2181'
-ht-degree: 3%
+source-wordcount: '2282'
+ht-degree: 2%
 
 ---
 
@@ -44,11 +44,11 @@ data:
 
 您可以透過兩種方式部署CDN設定中使用的秘密：
 
-* **管道密碼變數** — 已在Cloud Manager中設定為型別[密碼](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)的&#x200B;**管道變數**，已套用&#x200B;**步驟**&#x200B;設定為&#x200B;**部署**。 這些可作為設定管道層級設定使用。
+* **管道密碼變數** — 已在Cloud Manager中設定為型別&#x200B;**密碼**&#x200B;的[管道變數](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)，已套用&#x200B;**步驟**&#x200B;設定為&#x200B;**部署**。 這些可作為設定管道層級設定使用。
 
 * **環境密碼變數** — 已在Cloud Manager中設定為[環境變數](/help/implementing/cloud-manager/environment-variables.md) （型別為&#x200B;**密碼**），且套用的&#x200B;**服務**&#x200B;設定為&#x200B;**全部**。 這些可作為環境層級設定使用。
 
-**偏好：管道密碼變數。**&#x200B;儘可能使用管道密碼變數，因為它們會與您的設定一起部署在相同管道執行中。 如此可讓秘密和設定保持同步，並簡化轉出。
+**偏好：管道密碼變數。** 儘可能使用管道機密變數，因為它們會與您的設定一起部署在相同管道執行中。 如此可讓秘密和設定保持同步，並簡化轉出。
 
 您無法針對相同設定將管道密碼與環境密碼混合使用。 如果為部署步驟定義了管道秘密變數，則會優先使用這些變數。
 
@@ -76,11 +76,11 @@ data:
 
 ## 客戶管理的CDN HTTP標頭值 {#CDN-HTTP-value}
 
-如AEM as a Cloud Service[頁面中的](/help/implementing/dispatcher/cdn.md#point-to-point-CDN)CDN中所述，客戶可以選擇透過自己的CDN路由流量，這稱為「客戶CDN」（有時也稱為BYOCDN）。
+如AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md#point-to-point-CDN)頁面中的[CDN中所述，客戶可以選擇透過自己的CDN路由流量，這稱為「客戶CDN」（有時也稱為BYOCDN）。
 
 在設定過程中，Adobe CDN和客戶CDN必須同意`X-AEM-Edge-Key` HTTP標題的值。 此值在傳送至Adobe CDN之前，會先在客戶CDN的每個要求上設定，接著由CDN驗證值是否如預期般符合，因此可信任其他HTTP標頭，包括有助於將要求傳送至適當AEM來源的標頭。
 
-*X-AEM-Edge-Key*&#x200B;值由名為`edgeKey1`或類似檔案中的`edgeKey2`和`cdn.yaml`屬性參考，位於最上層`config`資料夾的某個位置。 閱讀[使用設定管道](/help/operations/config-pipeline.md#folder-structure)，以取得資料夾結構以及如何部署設定的詳細資訊。  以下範例說明語法。
+*X-AEM-Edge-Key*&#x200B;值由名為`cdn.yaml`或類似檔案中的`edgeKey1`和`edgeKey2`屬性參考，位於最上層`config`資料夾的某個位置。 閱讀[使用設定管道](/help/operations/config-pipeline.md#folder-structure)，以取得資料夾結構以及如何部署設定的詳細資訊。  以下範例說明語法。
 
 如需進一步偵錯資訊和常見錯誤，請檢查[常見錯誤](/help/implementing/dispatcher/cdn.md#common-errors)。
 
@@ -105,13 +105,15 @@ data:
           authenticator: edge-auth
 ```
 
-請參閱[「使用設定管道」](/help/operations/config-pipeline.md#common-syntax)，取得 `data` 節點上方屬性的描述。`kind`屬性值應該是&#x200B;*CDN*，且`version`屬性應該設定為`1`。
+如需常見案例的其他程式碼片段，請參閱[常見案例的CDN設定片段](/help/implementing/dispatcher/cdn-configuration-snippets-common-scenarios.md)文章。
 
-如需詳細資訊，請參閱[設定和部署HTTP標頭驗證CDN規則](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule)教學課程步驟。
+請參閱[「使用設定管道」](/help/operations/config-pipeline.md#common-syntax)，取得 `data` 節點上方屬性的描述。 `kind`屬性值應該是&#x200B;*CDN*，且`version`屬性應該設定為`1`。
+
+如需詳細資訊，請參閱[設定和部署HTTP標頭驗證CDN規則](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule)教學課程步驟。
 
 其他屬性包括：
 
-* 包含子`Data`節點的`authentication`節點。
+* 包含子`authentication`節點的`Data`節點。
 * 在`authentication`底下，有一個`authenticators`節點和一個`rules`節點，兩者都是陣列。
 * 驗證者：可讓您宣告權杖或認證的型別，在此例中是邊緣金鑰。 其內容包含下列屬性：
    * name — 描述性字串。
@@ -208,11 +210,11 @@ data:
            authenticator: purge-auth
 ```
 
-請參閱[「使用設定管道」](/help/operations/config-pipeline.md#common-syntax)，取得 `data` 節點上方屬性的描述。`kind`屬性值應該是&#x200B;*CDN*，且`version`屬性應該設定為`1`。
+請參閱[「使用設定管道」](/help/operations/config-pipeline.md#common-syntax)，取得 `data` 節點上方屬性的描述。 `kind`屬性值應該是&#x200B;*CDN*，且`version`屬性應該設定為`1`。
 
 其他屬性包括：
 
-* 包含子`data`節點的`authentication`節點。
+* 包含子`authentication`節點的`data`節點。
 * 在`authentication`底下，有一個`authenticators`節點和一個`rules`節點，兩者都是陣列。
 * 驗證者：可讓您宣告權杖或認證的型別，在此例中為清除金鑰。 其內容包含下列屬性：
    * name — 描述性字串。
@@ -227,11 +229,11 @@ data:
 >[!NOTE]
 >在部署參考清除金鑰的組態之前，必須將清除金鑰設定為[機密型別Cloud Manager環境變數](/help/operations/config-pipeline.md#secret-env-vars)。 建議使用至少32個位元組長度的唯一隨機金鑰；例如，Open SSL密碼編譯程式庫可以透過執行命令openssl rand -hex 32來產生隨機金鑰
 
-您可以參考以設定清除金鑰和執行CDN快取清除為重點的[教學課程](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache)。
+您可以參考以設定清除金鑰和執行CDN快取清除為重點的[教學課程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache)。
 
 ## 基本驗證 {#basic-auth}
 
-透過彈出要求使用者名稱和密碼的基本驗證對話方塊來保護某些內容資源。此功能主要用於輕度驗證使用案例（例如業務利害關係人審查內容），而不是作為一般使用者存取權的完整解決方案。
+透過彈出要求使用者名稱和密碼的基本驗證對話方塊來保護某些內容資源。 此功能主要用於輕度驗證使用案例（例如業務利害關係人審查內容），而不是作為一般使用者存取權的完整解決方案。
 
 一般使用者會看到基本驗證對話方塊突然出現，如下所示：
 
@@ -261,11 +263,11 @@ data:
            authenticator: my-basic-authenticator
 ```
 
-請參閱[「使用設定管道」](/help/operations/config-pipeline.md#common-syntax)，取得 `data` 節點上方屬性的描述。`kind`屬性值應該是&#x200B;*CDN*，且`version`屬性應該設定為`1`。
+請參閱[「使用設定管道」](/help/operations/config-pipeline.md#common-syntax)，取得 `data` 節點上方屬性的描述。 `kind`屬性值應該是&#x200B;*CDN*，且`version`屬性應該設定為`1`。
 
 此外，語法包括：
 
-* 包含`data`節點的`authentication`節點。
+* 包含`authentication`節點的`data`節點。
 * 在`authentication`底下，有一個`authenticators`節點和一個`rules`節點，兩者都是陣列。
 * 驗證者：在此案例中，會宣告基本驗證者，其結構如下：
    * 名稱 — 描述性字串

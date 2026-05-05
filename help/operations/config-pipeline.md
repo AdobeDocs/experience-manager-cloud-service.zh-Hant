@@ -4,9 +4,9 @@ description: 瞭解如何使用設定管道在AEM as a Cloud Service中部署不
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 882d7de9aeae22777e1e02cbf78438e95db11e9a
+source-git-commit: 4ec024236cc1054206ea789d755dd4e76fb9cd79
 workflow-type: tm+mt
-source-wordcount: '1491'
+source-wordcount: '1530'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ Cloud Manager設定管道將設定檔案（以YAML格式建立）部署到目標
 
 對於&#x200B;**發佈傳遞**&#x200B;專案，可透過Cloud Manager將設定管道部署到開發、中繼和生產環境型別。 組態檔可以使用[命令列工具](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline)部署至快速開發環境(RDE)。 當您需要為附加到發佈傳遞環境的網域設定流量時，請使用目標部署&#x200B;[**發佈傳遞管道**](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#targeted-deployment) （[生產](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#targeted-deployment)或[非生產](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#targeted-deployment)）。
 
-也可以透過Cloud Manager為&#x200B;**Edge Delivery**&#x200B;專案部署設定管道。 當網域附加至&#x200B;[**Edge Delivery網站**](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)&#x200B;時，使用&#x200B;**Edge Delivery管道**。
+也可以透過Cloud Manager為&#x200B;**Edge Delivery**&#x200B;專案部署設定管道。 當網域附加至&#x200B;**Edge Delivery網站**&#x200B;時，使用&#x200B;[**Edge Delivery管道**](/help/implementing/cloud-manager/configuring-pipelines/configuring-edge-delivery-pipeline.md)。
 
 本檔案的以下章節提供了有關如何使用設定管道以及如何為其構建配置的重要資訊的概述。 它說明在配置管道所支援的所有功能或功能子集之間共用的一般概念。
 
@@ -35,6 +35,8 @@ Cloud Manager設定管道將設定檔案（以YAML格式建立）部署到目標
 ## 支援的設定 {#configurations}
 
 下表提供這類設定的完整清單，以及描述其不同設定語法和其他資訊的專用檔案的連結。
+
+若要瞭解與CDN相關的設定，除了表格中連結的文章之外，另請參閱常見案例的[CDN設定程式碼片段](/help/implementing/dispatcher/cdn-configuration-snippets-common-scenarios.md)文章。
 
 | 類型 | YAML `kind`值 | 說明 | 發佈傳遞 | Edge Delivery |
 |---|---|---|---|---|
