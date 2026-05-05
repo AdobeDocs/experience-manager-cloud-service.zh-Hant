@@ -4,9 +4,9 @@ description: 瞭解AEM as a Cloud Service Developer Console及其一組針對雲
 feature: Developing
 role: Admin, Developer
 exl-id: 4b0fc3e9-b7c4-4c95-bd97-8b24e4d5cb3d
-source-git-commit: 51c14ba3c15e0136911003752253d21ed673a0eb
+source-git-commit: 4d8131d6734baeb8c0c50af911cbf9d636c38e1f
 workflow-type: tm+mt
-source-wordcount: '1188'
+source-wordcount: '1191'
 ht-degree: 1%
 
 ---
@@ -30,6 +30,7 @@ AEM as a Cloud Service Developer Console包含一組唯讀工具，可用於偵�
 >Developer Console是唯讀的。 如果您使用SDK進行本機開發，並且需要修改OSGi設定或存放庫內容，您可以使用：
 >
 >* [CRXDE Lite](/help/implementing/developing/tools/crxde.md)
+>* [網頁主控台](/help/implementing/developing/tools/web-console.md)
 
 <!--
 There are multiple ways of accessing it:
@@ -57,7 +58,7 @@ Developer Console僅供在某些程式中擁有特定角色的使用者存取。
 
 若要檢視來自作者與發佈服務的資料，使用者也必須同時被指派給這兩個服務上的「AEM使用者」或「AEM管理員產品設定檔」。
 
-如需設定使用者許可權的詳細資訊，請參閱[Cloud Manager檔案。](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-manager/content/requirements/users-and-roles)
+如需設定使用者許可權的詳細資訊，請參閱[Cloud Manager檔案。](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles)
 
 ## OSGi套件組合標籤 {#osgi-bundles}
 

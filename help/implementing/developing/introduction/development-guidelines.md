@@ -4,12 +4,13 @@ description: 了解在 AEM as a Cloud Service 上進行開發的準則，以及�
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 feature: Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 925ed3687b17108b8d42a4a25d1f2b87edaaf76f
 workflow-type: tm+mt
-source-wordcount: '2767'
+source-wordcount: '2890'
 ht-degree: 4%
 
 ---
+
 
 # AEM as a Cloud Service 開發指南 {#aem-as-a-cloud-service-development-guidelines}
 
@@ -63,9 +64,9 @@ Adobe建議使用提供的[Apache HttpComponents Client 4.x程式庫](https://hc
 
 已知可以運作，但可能需要自行提供相依性的替代方法是：
 
-* [java.net.URL](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html)及/或[java.net.URLConnection](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html) (由AEM提供)
+* [java.net.URL](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URL.html)及/或[java.net.URLConnection](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html) （由AEM提供）
 * [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/) （不建議使用，因為它已過時且已由4.x版取代）
-* [確定Http](https://square.github.io/okhttp/) (AEM未提供)
+* [確定Http](https://square.github.io/okhttp/) （AEM未提供）
 
 除了提供逾時功能外，也應對這類逾時功能進行適當處理，以及非預期的HTTP狀態代碼。
 
@@ -111,11 +112,11 @@ AEM as a Cloud Service不支援從發佈到作者的反向復寫。 如果需要
 
 對於本機開發，記錄專案會寫入`/crx-quickstart/logs`資料夾中的本機檔案。
 
-在雲端環境中，開發人員可以透過Cloud Manager下載記錄，或使用命令列工具追蹤記錄。<!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=zh-Hant) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
+在雲端環境中，開發人員可以透過Cloud Manager下載記錄，或使用命令列工具追蹤記錄。<!-- See the [Cloud Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) for more details. Custom logs are not supported and so all logs should be output to the error log. -->
 
 **正在設定記錄層級**
 
-若要變更雲端環境的記錄層級，應修改Sling記錄OSGI設定，然後進行完整重新部署。 由於這並非立即發生，因此在接收大量流量的生產環境中，在啟用詳細記錄時請務必謹慎。 未來可能會有更快速變更紀錄層級的機制。
+若要變更雲端環境的記錄層級，應修改Sling記錄OSGi設定，然後進行完整重新部署。 由於這並非立即發生，因此在接收大量流量的生產環境中，在啟用詳細記錄時請務必謹慎。 未來可能會有更快速變更紀錄層級的機制。
 
 >[!NOTE]
 >
@@ -146,7 +147,7 @@ AEM as a Cloud Service不支援從發佈到作者的反向復寫。 如果需要
 
 | 環境 | 按執行模式列出的OSGi設定位置 | `org.apache.sling.commons.log.level`屬性值 |
 | - | - | - |
-| 開發 | /apps/example/config/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | 偵錯 |
+| 開發 | /apps/example/config/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | 除錯 |
 | 測試 | /apps/example/config.stage/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | 警告 |
 | 生產 | /apps/example/config.prod/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | 錯誤 |
 
@@ -172,24 +173,22 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 ### 本機開發 {#local-development}
 
-對於本機開發，開發人員擁有CRXDE Lite (`/crx/de`)和AEM Web Console (`/system/console`)的完整存取權。
+對於本機開發，開發人員擁有[CRXDE Lite](/help/implementing/developing/tools/crxde.md) (`/crx/de`)和[Web主控台](/help/implementing/developing/tools/web-console.md) (`/system/console`)的完整存取權。
 
-在本機開發(使用SDK)中，`/apps`和`/libs`可以直接寫入到，這與雲端環境不同，因為雲端環境中的這些頂層資料夾是不可變的。
+對於本機開發（使用SDK），`/apps`和`/libs`可以直接寫入到，這與雲端環境不同，因為雲端環境中的這些頂層資料夾是不可變的。
 
 ### AEM as a Cloud Service 開發工具 {#aem-as-a-cloud-service-development-tools}
 
 >[!NOTE]
->不應混淆AEM as a Cloud Service Developer Console與類似名稱的&#x200B;[*Adobe Developer Console*](https://developer.adobe.com/developer-console/)。
 >
-
->[!NOTE]
->部分客戶可選擇試用改版的AEM Cloud Service Developer Console體驗。 如需詳細資訊，請參閱[本文章](/help/implementing/developing/introduction/aem-developer-console.md)。
+>* 部分客戶可選擇試用改版的AEM Cloud Service Developer Console體驗。 如需詳細資訊，請參閱[本文章](/help/implementing/developing/introduction/aem-developer-console.md)。
+>* 不應混淆AEM as a Cloud Service Developer Console與類似名稱的&#x200B;[*Adobe Developer Console*](https://developer.adobe.com/developer-console/)。
 
 客戶可以在作者層的開發環境中存取CRXDE Lite，但不能在預備或生產環境中存取。 無法在執行階段寫入不可變的存放庫(`/libs`， `/apps`)，因此嘗試這樣做將會導致錯誤。
 
 您可以從AEM as a Cloud Service Developer Console啟動存放庫瀏覽器，為作者、發佈和預覽層級的所有環境提供存放庫的唯讀檢視。 如需詳細資訊，請參閱[存放庫瀏覽器](/help/implementing/developing/tools/repository-browser.md)。
 
-AEM as a Cloud Service Developer Console中針對RDE、開發、測試和生產環境提供了一組用於偵錯AEM as a Cloud Service開發人員環境的工具。 此URL可透過調整作者或發佈服務URL來確定，如下所示：
+[AEM as a Cloud Service Developer Console](/help/implementing/developing/introduction/aem-developer-console.md)中提供了一組用於偵錯AEM as a Cloud Service開發人員環境的工具，適用於RDE、開發、測試和生產環境。 此URL可透過調整作者或發佈服務URL來確定，如下所示：
 
 `https://dev-console-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
@@ -201,7 +200,7 @@ AEM as a Cloud Service Developer Console中針對RDE、開發、測試和生產�
 
 開發人員可以產生狀態資訊並解析各種資源。
 
-如下圖所示，可用狀態資訊包括套件組合、元件、OSGI設定、Oak索引、OSGI服務和Sling工作的狀態。
+如下圖所示，可用狀態資訊包括套件組合、元件、OSGi設定、Oak索引、OSGi服務和Sling工作的狀態。
 
 ![開發主控台1](/help/implementing/developing/introduction/assets/devconsole1.png)
 
@@ -215,7 +214,7 @@ AEM as a Cloud Service Developer Console中針對RDE、開發、測試和生產�
 
 ![開發主控台4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-對於生產計畫，AEM as a Cloud Service Developer Console的存取權由Adobe Admin Console中的「Cloud Manager — 開發人員角色」定義，而對於沙箱計畫，AEM as a Cloud Service Developer Console則可供任何擁有產品設定檔並授與對AEM as a Cloud Service存取權的使用者使用。 對於所有程式，狀態傾印需要「Cloud Manager — 開發人員角色」，存放庫瀏覽器和使用者也必須在AEM使用者或AEM管理員產品設定檔中，針對作者和發佈服務進行定義，以便檢視來自這兩個服務的資料。 如需設定使用者許可權的詳細資訊，請參閱[Cloud Manager檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=zh-Hant)。
+對於生產計畫，AEM as a Cloud Service Developer Console的存取權由Adobe Admin Console中的「Cloud Manager — 開發人員角色」定義，而對於沙箱計畫，AEM as a Cloud Service Developer Console則可供任何擁有產品設定檔並授與對AEM as a Cloud Service存取權的使用者使用。 對於所有程式，狀態傾印需要「Cloud Manager — 開發人員角色」，存放庫瀏覽器和使用者也必須在AEM使用者或AEM管理員產品設定檔中，針對作者和發佈服務進行定義，以便檢視來自這兩個服務的資料。 如需設定使用者許可權的詳細資訊，請參閱[Cloud Manager檔案](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html)。
 
 ### 效能監控 {#performance-monitoring}
 
@@ -233,19 +232,19 @@ Adobe會監控應用程式效能，並在發現問題時採取措施解決效能
 
 預設會停用用來傳送電子郵件的連線埠。 若要啟用連線埠，請設定[進階網路](/help/security/configuring-advanced-networking.md)，並確定為每個必要的環境設定`PUT /program/<program_id>/environment/<environment_id>/advancedNetworking`端點的連線埠轉送規則，將預期的連線埠（例如465或587）對應到Proxy連線埠。
 
-建議使用`kind`引數設為`flexiblePortEgress`來設定進階網路，因為Adobe可以最佳化彈性連線埠輸出流量的效能。 如果需要唯一輸出IP位址，請選擇`kind`的`dedicatedEgressIp`引數。 如果您因其他原因已設定VPN，您也可以使用該進階網路變數所提供的唯一IP位址。
+建議使用`kind`引數設為`flexiblePortEgress`來設定進階網路，因為Adobe可以最佳化彈性連線埠輸出流量的效能。 如果需要唯一輸出IP位址，請選擇`dedicatedEgressIp`的`kind`引數。 如果您因其他原因已設定VPN，您也可以使用該進階網路變數所提供的唯一IP位址。
 
 您必須透過郵件伺服器傳送電子郵件，而非直接傳送給電子郵件使用者端。 否則，可能會封鎖電子郵件。
 
 ### 傳送電子郵件 {#sending-emails}
 
-應使用[Day CQ Mail Service OSGI服務](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=zh-Hant#configuring-the-mail-service)，且必須將電子郵件傳送至支援要求中指出的郵件伺服器，而非直接傳送給收件者。
+應使用[Day CQ Mail Service OSGI服務](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)，且必須將電子郵件傳送至支援要求中指出的郵件伺服器，而非直接傳送給收件者。
 
 ### 設定 {#email-configuration}
 
-AEM中的電子郵件應使用[Day CQ Mail Service OSGi服務](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=zh-Hant#configuring-the-mail-service)傳送。
+AEM中的電子郵件應使用[Day CQ Mail Service OSGI服務](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service)傳送。
 
-如需設定電子郵件設定的詳細資訊，請參閱[AEM 6.5檔案](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=zh-Hant)。 若為AEM as a Cloud Service，請注意下列對`com.day.cq.mailer.DefaultMailService OSGI`服務的必要調整：
+如需設定電子郵件設定的詳細資訊，請參閱[AEM 6.5檔案](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html)。 對於AEM as a Cloud Service，請注意對`com.day.cq.mailer.DefaultMailService` OSGi服務的下列必要調整：
 
 * SMTP伺服器主機名稱應該設定為$[env:AEM_PROXY_HOST；default=proxy.tunnel]
 * SMTP伺服器連線埠應該設定為設定進階網路時，在API呼叫中使用的portForwards引數中設定的原始Proxy連線埠值。 例如，30465 （而非465）
@@ -269,7 +268,7 @@ AEM中的電子郵件應使用[Day CQ Mail Service OSGi服務](https://experienc
 
 ### 舊版電子郵件設定 {#legacy-email-configuration}
 
-在2021.9.0版之前，電子郵件是透過客戶支援要求所設定。 請注意下列對`com.day.cq.mailer.DefaultMailService OSGI`服務的必要調整：
+在2021.9.0版之前，電子郵件是透過客戶支援要求所設定。 請注意下列對`com.day.cq.mailer.DefaultMailService` OSGi服務的必要調整：
 
 AEM as a Cloud Service需要透過連線埠465傳送郵件。 如果郵件伺服器不支援連線埠465，只要啟用TLS選項，就可以使用連線埠587。
 
@@ -283,7 +282,7 @@ AEM as a Cloud Service需要透過連線埠465傳送郵件。 如果郵件伺服
 * 將`smtp.port`設為`587`
 * 將`smtp.ssl`設為`false`
 
-`smtp.starttls`屬性將由AEM as a Cloud Service在執行階段自動設定為適當的值。 因此，如果`smtp.ssl`設定為true，則會忽略`smtp.startls`。 如果`smtp.ssl`設定為false，則`smtp.starttls`設定為true。 這與OSGI設定中設定的`smtp.starttls`值無關。
+`smtp.starttls`屬性將由AEM as a Cloud Service在執行階段自動設定為適當的值。 因此，如果`smtp.ssl`設定為true，則會忽略`smtp.startls`。 如果`smtp.ssl`設定為false，則`smtp.starttls`設定為true。 這與OSGi設定中設定的`smtp.starttls`值無關。
 
 SMTP伺服器主機應該設定為郵件伺服器的主機。
 

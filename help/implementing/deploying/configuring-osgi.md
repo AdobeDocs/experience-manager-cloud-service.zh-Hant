@@ -4,35 +4,35 @@ description: 具有機密值和環境特定值的OSGi設定
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: ce0158b1f4d1a1cf9f6102a79c1ca29ee7edd3b5
 workflow-type: tm+mt
-source-wordcount: '3321'
-ht-degree: 1%
+source-wordcount: '3437'
+ht-degree: 2%
 
 ---
 
 
 # 為Adobe Experience Manager as a Cloud Service設定OSGi {#configuring-osgi-for-aem-as-a-cloud-service}
 
-[OSGi](https://www.osgi.org/)是Adobe Experience Manager (AEM)技術棧疊中的基本元素。 它可用來控制AEM的複合套件組合及其組態。
+[OSGi](https://www.osgi.org/)是Adobe Experience Manager (AEM)技術棧疊中的基本元素。 它可用來控制AEM的複合套件組合及其設定。
 
-OSGi提供標準化的原語，允許使用小型、可重複使用的合作元件來建構應用程式。 這些元件可組成應用程式並進行部署。 這可讓您輕鬆管理OSGi套件組合，因為它們可以個別停止、安裝和啟動。 系統會自動處理相依性。 每個OSGi元件都包含在各種套件組合中。 如需詳細資訊，請參閱[OSGi規格](https://help.eclipse.org/latest/index.jsp)。
+OSGi提供標準化的原語，允許使用小型、可重複使用的合作元件來建構應用程式。 這些元件可組成應用程式並進行部署。 這可讓您輕鬆管理OSGi套件組合，因為它們可以個別停止、安裝和啟動。 系統會自動處理相依性。 每個OSGi元件都包含在各種套件組合中。 如需詳細資訊，請參閱[OSGi規格。](https://help.eclipse.org/latest/index.jsp)
 
-您可以透過AEM程式碼專案一部分的組態檔案來管理OSGi元件的組態設定。
+您可以透過AEM程式碼專案一部分的設定檔案來管理OSGi元件的組態設定。
 
 >[!TIP]
 >
->您可以使用Cloud Manager來設定環境變數。 如需詳細資訊，請參閱檔案[這裡](/help/implementing/cloud-manager/environment-variables.md)。
+>您可以使用Cloud Manager來設定環境變數。 如需詳細資訊，請參閱檔案[這裡。](/help/implementing/cloud-manager/environment-variables.md)
 
 ## OSGi組態檔 {#osgi-configuration-files}
 
-組態變更在AEM Project的程式碼封裝(`ui.config`)中定義為runmode特定組態資料夾下的組態檔(`.cfg.json`)：
+組態變更在AEM專案的程式碼封裝(`ui.config`)中定義為runmode特定組態資料夾下的組態檔(`.cfg.json`)：
 
 `/apps/example/config.<runmode>`
 
 OSGi設定檔案的格式是以JSON為基礎，使用Apache Sling專案定義的`.cfg.json`格式。
 
-OSGi設定會透過元件的持續身分識別(PID) (預設為OSGi元件的Java™類別名稱)來鎖定OSGi元件。 例如，若要為以下實施的OSGi服務提供OSGi設定：
+OSGi設定會透過元件的持續身分識別(PID) （預設為OSGi元件的Java類別名稱）來鎖定OSGi元件。 例如，若要為以下實施的OSGi服務提供OSGi設定：
 
 `com.example.workflow.impl.ApprovalWorkflow.java`
 
@@ -44,19 +44,21 @@ OSGi設定檔案定義於：
 
 >[!NOTE]
 >
->舊版AEM支援的OSGi組態檔使用不同的檔案格式，例如`.cfg`、`.config`，並做為XML `sling:OsgiConfig`資源定義。 這些格式已由`.cfg.json` OSGi組態格式取代。
+>舊版AEM支援使用不同檔案格式的OSGi設定檔，例如`.cfg`、`.config`和XML `sling:OsgiConfig`資源定義。 這些格式已由`.cfg.json` OSGi組態格式取代。
 
 >[!NOTE]
 >
->OSGi設定不會像雲端中的典型AEM例項那樣儲存在外部位置中的/apps底下。 簽入Cloud Manager [Developer Console](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#configurations)以檢視OSGi設定。
+>在AEM as a Cloud Service中，OSGi設定未儲存在`/apps`下。 簽入Cloud Manager [Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#configurations)以檢視OSGi設定。
 
 ## 執行模式解析度 {#runmode-resolution}
 
->[!TIP]
->
->AEM 6.x支援自訂執行模式，但AEM as a Cloud Service不支援。 AEM as a Cloud Service支援[一組確切的執行模式](./overview.md#runmodes)。 必須使用[OSGi設定環境變數](#environment-specific-configuration-values)處理AEM as a Cloud Service環境之間的OSGi設定任何差異。
+AEM as a Cloud Service支援[一組精確的執行模式。](./overview.md#runmodes) 必須使用[OSGi設定環境變數處理AEM as a Cloud Service環境之間OSGi設定的任何變數。](#environment-specific-configuration-values)
 
-特定OSGi設定可以透過使用執行模式以特定AEM執行個體為目標。 若要使用runmode，請在`/apps/example`下建立設定資料夾（範例為專案名稱），格式為：
+>[!NOTE]
+>
+>AEM 6.x支援自訂執行模式，但AEM as a Cloud Service不支援。
+
+特定OSGi設定可以透過使用執行模式鎖定至特定AEM執行個體。 若要使用runmode，請在`/apps/example`下建立設定資料夾（範例為專案名稱），格式為：
 
 `/apps/example/config.<author|publish>.<dev|stage|prod>/`
 
@@ -72,7 +74,7 @@ OSGi設定檔案定義於：
 >
 >`config.preview` OSGi設定資料夾&#x200B;**無法**&#x200B;以宣告`config.publish`資料夾的方式宣告。 預覽層級會繼承發佈層級值的OSGi設定。
 
-在本機開發時，執行模式啟動參數 `-r` 用於指定執行模式 OSGI 設定。
+在本機開發時，使用執行模式啟動引數`-r`來指定執行模式OSGi設定。
 
 ```shell
 $ java -jar aem-sdk-quickstart-xxxx.x.xxx.xxxx-xxxx.jar -r publish,dev
@@ -80,24 +82,23 @@ $ java -jar aem-sdk-quickstart-xxxx.x.xxx.xxxx-xxxx.jar -r publish,dev
 
 ### 驗證執行模式
 
-AEM as a Cloud Service執行模式會根據環境型別和服務妥善定義。 檢閱可用AEM as a Cloud Service執行模式的[完整清單](./overview.md#runmodes)。
+AEM as a Cloud Service執行模式會根據環境型別和服務妥善定義。 檢閱可用AEM as a Cloud Service執行模式的[完整清單。](./overview.md#runmodes)
 
 可由以下驗證執行模式指定的OSGi設定值：
 
-1. 正在開啟AEM as a Cloud Service環境的[Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=zh-Hant)
+1. 正在開啟AEM as a Cloud Services環境的[Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html)
 1. 使用&#x200B;__Pod__&#x200B;下拉式清單選取要檢查的服務層
 1. 正在選取&#x200B;__狀態__&#x200B;標籤
 1. 從&#x200B;__狀態傾印__&#x200B;下拉式清單中選取&#x200B;__組態__
 1. 選取&#x200B;__取得狀態__&#x200B;按鈕
 
-產生的檢視會顯示所選階層的所有OSGi元件設定及其適用的OSGi設定值。 這些值可以與AEM專案原始程式碼中`/apps/example/osgiconfig/config.<runmode(s)>`下的OSGi設定值互動參照。
-
+產生的檢視會顯示所選階層的所有OSGi元件設定及其適用的OSGi設定值。 這些值可以與AEM專案原始程式碼中的OSGi設定值（位於`/apps/example/osgiconfig/config.<runmode(s)>`下）互動參照。
 
 若要確認已套用適當的OSGi設定值：
 
 1. 在Developer Console的設定輸出中
 1. 找出代表要驗證OSGi設定的`pid`；這是AEM專案原始碼中的OSGi設定檔名稱。
-1. Inspect `pid`的`properties`清單，並驗證金鑰和值是否符合正在驗證之執行模式的AEM專案原始碼中的OSGi設定檔。
+1. 檢查`pid`的`properties`清單，並驗證金鑰和值是否與AEM專案原始碼中，正在驗證執行模式的OSGi設定檔相符。
 
 
 ## OSGi設定值的型別 {#types-of-osgi-configuration-values}
@@ -120,7 +121,7 @@ AEM as a Cloud Service執行模式會根據環境型別和服務妥善定義。 
    } 
    ```
 
-1. **環境特定值**，這些值在開發環境之間會有所不同，因此無法由執行模式精準定位(因為Adobe Experience Manager as a Cloud Service中有單一`dev`執行模式)。 例如：
+1. **環境特定值**，這些值在開發環境之間會有所不同，因此無法由執行模式精準定位（因為Adobe Experience Manager as a Cloud Service中有單一`dev`執行模式）。 例如：
 
    ```json
    {
@@ -152,9 +153,9 @@ OSGi的常見情況是使用內嵌OSGi設定值。 特定環境的設定僅用�
 
 內嵌組態值會視為標準方法，並應儘可能使用。 內嵌組態具備以下優點：
 
-* 這些區段會進行維護，並在Git中進行控管和版本記錄
-* 值會隱含繫結至程式碼部署
-* 它們不需要任何其他部署考量或協調
+* 這些區段會進行維護，並在Git中進行控管和版本記錄。
+* 值會隱含繫結至程式碼部署。
+* 它們不需要任何其他部署考量或協調。
 
 每當定義OSGi設定值時，請從內嵌值開始，並根據使用案例的需要僅選取密碼或環境特定的設定。
 
@@ -187,15 +188,11 @@ OSGi組態處理站檔案名稱使用`<factoryPID>-<name>.cfg.json`命名慣例
 1. 將變更儲存至新的`.cfg.json`檔案
 1. 新增新的OSGi設定檔案並將其提交到Git
 
-### 使用AEM SDK快速入門產生OSGi設定 {#generating-osgi-configurations-using-the-aem-sdk-quickstart}
+### 使用Web主控台產生OSGi設定 {#generating-osgi-configurations-using-the-web-console}
 
-AEM SDK Quickstart Jar的AEM Web Console可用於設定OSGi元件，以及將OSGi設定匯出為JSON。 這對於設定AEM提供的OSGi元件而言，若開發人員在AEM專案中定義OSGi設定，可能無法深入瞭解這些元件的OSGi屬性及其值格式。
+AEM SDK的[Web主控台](/help/implementing/developing/tools/web-console.md)可用來設定OSGi元件，以及將OSGi設定匯出為JSON。 這對於設定AEM提供的OSGi元件而言，若開發人員在AEM專案中定義OSGi設定，可能無法深入瞭解這些元件的OSGi屬性及其值格式。
 
->[!NOTE]
->
->AEM Web Console的設定UI不會將`.cfg.json`檔案寫入存放庫。 因此，請注意此工作流程，以避免在本機開發期間，當AEM專案定義的OSGi設定可能與產生的設定不同時，出現潛在的非預期行為。
-
-1. 以管理員使用者身分在`https://<host>:<port>/system/console`登入AEM SDK Quickstart Jar的AEM Web主控台
+1. 以管理員使用者身分登入`https://<host>:<port>/system/console`的AEM SDK Web主控台
 1. 瀏覽至&#x200B;**OSGi** > **設定**
 1. 若要設定，請找到OSGi元件並選取其標題以進行編輯
    ![OSGi設定](./assets/configuring-osgi/configuration.png)
@@ -213,6 +210,9 @@ AEM SDK Quickstart Jar的AEM Web Console可用於設定OSGi元件，以及將OSG
 1. 將變更儲存至新的`.cfg.json`檔案。
 1. 新增新的OSGi設定檔案並將其提交到Git。
 
+>[!WARNING]
+>
+>Web主控台的設定UI會將`.cfg.json`個檔案寫入存放庫。 請注意這點，以避免在本機開發期間，當AEM專案定義的OSGi設定可能與產生的設定不同時，出現潛在的意外行為。
 
 ## OSGi設定屬性格式 {#osgi-configuration-property-formats}
 
@@ -236,7 +236,7 @@ OSGi設定應為要根據環境定義的變數指派預留位置：
 use $[env:ENV_VAR_NAME]
 ```
 
-客戶應該僅將此技巧用於與其自訂程式碼相關的OSGi設定屬性；不得使用此技巧來覆寫Adobe定義的OSGi設定。
+客戶應僅將此技巧用於與其自訂程式碼相關的OSGi設定屬性；不得使用此技巧來覆寫Adobe定義的OSGi設定。
 
 >[!NOTE]
 >
@@ -266,7 +266,7 @@ use $[secret:SECRET_VAR_NAME]
 >
 >有些規則與變數名稱使用某些首碼有關：
 >
->1. 前置詞為`INTERNAL_`、`ADOBE_`或`CONST_`的變數名稱已由Adobe保留。 任何以這些首碼開頭的客戶設定變數都會被忽略。
+>1. 前置詞為`INTERNAL_`、`ADOBE_`或`CONST_`的變數名稱是由Adobe所保留。 任何以這些首碼開頭的客戶設定變數都會被忽略。
 >
 >1. 客戶不得參考帶有`INTERNAL_`或`ADOBE_`首碼的變數。
 >
@@ -315,14 +315,13 @@ export ENV_VAR_NAME=my_value
 org.apache.felix.configadmin.plugin.interpolation.secretsdir=${sling.home}/secretsdir
 ```
 
-### 作者與Publish設定 {#author-vs-publish-configuration}
+### 作者與發佈設定 {#author-vs-publish-configuration}
 
 如果OSGi屬性對author和publish需要不同的值：
 
 * 必須使用個別的`config.author`和`config.publish` OSGi資料夾，如[執行模式解析區段](#runmode-resolution)所述。
 * 建立獨立變數名稱有兩個選項，應該使用：
    * 建議使用的第一個選項：在宣告要定義不同值的所有OSGi資料夾（例如`config.author`和`config.publish`）中，使用相同的變數名稱。 例如
-
      `$[env:ENV_VAR_NAME;default=<value>]`，其中預設值對應至該階層（作者或發佈）的預設值。 透過[Cloud Manager API](#cloud-manager-api-format-for-setting-properties)或透過使用者端設定環境變數時，請依照[Cloud Manager API參考檔案](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)所述，使用「服務」引數來區分層級。 「service」引數會將變數的值繫結至適當的OSGi層。 它可以是「作者」、「發佈」或「預覽」。
    * 第二個選項是使用前置詞（例如`author_<samevariablename>`和`publish_<samevariablename>`）宣告不同的變數
 
@@ -349,11 +348,11 @@ config
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1"： "val"，
  "my_var2"： "abc"，
  "my_var3"：500
-&rbrace;
+}
 </pre>
 </td>
 </tr>
@@ -363,11 +362,11 @@ config.dev
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1" ： "$[env：my_var1]"
  "my_var2"： "abc"，
  "my_var3"：500
-&rbrace;
+}
 </pre>
 </td>
 </tr>
@@ -392,11 +391,11 @@ config.stage
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1"： "val1"，
  "my_var2"： "abc"，
  "my_var3"：500
-&rbrace;
+}
 </pre>
 </td>
 </tr>
@@ -406,11 +405,11 @@ config.prod
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1"： "val2"，
  "my_var2"： "abc"，
  "my_var3"：500
-&rbrace;
+}
 </pre>
 </td>
 </tr>
@@ -420,11 +419,11 @@ config.dev
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1" ： "$[env：my_var1]"
  "my_var2"： "abc"，
  "my_var3"：500
-&rbrace;
+}
 </pre>
 </td>
 </tr>
@@ -449,11 +448,11 @@ config
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1"： "val1"，
  "my_var2"： "abc"，
  "my_var3"：500
-&rbrace;
+}
 </pre>
 </td>
 </tr>
@@ -463,11 +462,11 @@ config.dev
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1" ： "$[env：my_var1]"
  "my_var2"： "abc"，
  "my_var3"：500
-&rbrace;
+}
 </pre>
 </td>
 </tr>
@@ -490,11 +489,11 @@ config
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1"： "val1"，
  "my_var2"： "abc"，
  "my_var3"：500
-&rbrace;
+}
 </pre>
 </td>
 </tr>
@@ -504,11 +503,11 @@ config.dev
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1"： "$[env：my_var1；default=val1]"
  "my_var2"： "abc"，
  "my_var3"：500
-&rbrace;
+}
 </pre>
 </td>
 </tr>
@@ -516,7 +515,7 @@ config.dev
 
 ## 用於設定屬性的Cloud Manager API格式 {#cloud-manager-api-format-for-setting-properties}
 
-如需Cloud Manager API的相關資訊以及設定方式，請參閱[在Adobe Developer網站](https://developer.adobe.com/experience-cloud/cloud-manager/docs/)上AdobeCloud Manager 。
+如需Adobe API的相關資訊以及設定方式，請參閱Adobe Developer網站](https://developer.adobe.com/experience-cloud/cloud-manager/docs/)上的[Cloud Manager Cloud Manager 。
 
 >[!NOTE]
 >
@@ -596,7 +595,7 @@ $ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --delete MY_VAR1 MY_
 
 >[!NOTE]
 >
->請參閱GitHub[&#128279;](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid)上的aio-cli-plugin-cloudmanager，以取得有關如何使用Cloud Manager外掛程式為Adobe I/OCLI設定值的詳細資訊。
+>請參閱GitHub](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid)上的[aio-cli-plugin-cloudmanager，以取得有關如何使用Adobe I/O CLI的Cloud Manager外掛程式來設定值的詳細資訊。
 
 ### 變數數量 {#number-of-variables}
 
@@ -612,7 +611,7 @@ $ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --delete MY_VAR1 MY_
 
 >[!NOTE]
 >
->當管道正在使用中(AEM更新或客戶部署)時，API可能不會成功，具體取決於當時端對端管道執行的部分。 錯誤回應會指出要求不成功，但不會指出特定原因。
+>視當時端對端管道執行的部分而定，管道使用中（AEM更新或客戶部署）時API可能無法成功。 錯誤回應會指出要求不成功，但不會指出特定原因。
 
 在某些情況下，已排程的客戶程式碼部署會依賴現有變數來擁有新值，而這對目前的程式碼而言是不合適的。 如果這令人擔憂，建議以累加方式進行變數修改。 若要這麼做，請建立新的變數名稱，而非只變更舊變數的值，讓舊程式碼絕不會參考新值。 然後，當新的客戶版本看起來穩定時，您可以選擇移除舊的值。
 
