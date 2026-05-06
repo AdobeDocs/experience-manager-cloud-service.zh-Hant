@@ -4,10 +4,10 @@ description: 瞭解如何使用內容探索代理程式，透過天然的對話�
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 676300cd-b799-4c53-a58e-043e58a2cbc5
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: d4b216294791958c29a4cca736bc041a7bf4ad0c
 workflow-type: tm+mt
-source-wordcount: '2073'
-ht-degree: 0%
+source-wordcount: '2375'
+ht-degree: 1%
 
 ---
 
@@ -94,16 +94,43 @@ DAM資料庫管理員可以標幟缺少組織所設定的中繼資料標準的�
 
 範例提示：
 
-* **根據標籤搜尋**：在資料夾`office`中顯示標籤了`WKND`的影像。
+* **根據標籤搜尋**：在資料夾`WKND`中顯示標籤了`office`的影像。
 * **根據檔案格式、資產型別、資產狀態和「已依電子郵件ID發佈」進行搜尋**：以`.PNG`格式顯示`approved`和`published by <user email ID>`的影像。
 * **根據檔案格式、資產型別、資產狀態和[由電子郵件ID建立]進行搜尋**：以`.mp4`格式顯示已核准和`created by <user email ID>`的視訊。
 * **根據檔案格式、資產型別、資產狀態和建立日期進行搜尋**：以`.PNG`格式顯示2025年1月1日和`published by <user email ID>`之後建立的影像
-* **依據MIME型別、建立日期及依電子郵件ID發佈**&#x200B;搜尋：在`image/jpeg`與`January 1, 2025`之後建立的節目`published by <user email ID>`。
-* **根據檔案格式和自訂中繼資料屬性搜尋**：以`.JPEG`格式顯示具有`Product SKU ID = <SKU value>`的影像（必須是中繼資料屬性=值格式）。
+* **依據MIME型別、建立日期及依電子郵件ID發佈**&#x200B;搜尋：在`January 1, 2025`與`published by <user email ID>`之後建立的節目`image/jpeg`。
 
 * **搜尋遺失中繼資料的資產**：顯示過去90天內建立的具有`<Name of metadata property including custom properties>`的資產為空白。
 
 * **使用檔案大小、影像寬度和影像高度來搜尋資產**：顯示寬度大於2000畫素且高度大於1200畫素且大於5 MB的影像。
+
+**自訂中繼資料的自然語言支援**
+
+內容探索代理程式支援查詢中繼資料結構中定義的自訂中繼資料屬性。 您可以直接在提示中參考中繼資料值，而不需要使用嚴格的機碼值格式來指定它們。 代理程式會自動解譯意圖並比對相關的中繼資料欄位。
+
+範例提示：
+
+* **尋找具有屬性值的資產未設定**：尋找未設定行銷活動名稱的資產（屬性必須索引以取得適當的結果）。
+
+* **尋找具有屬性值集的資產**：尋找已設定行銷活動名稱的資產（屬性必須編制索引才能取得適當的結果）。
+
+* **尋找屬性值設定為X**&#x200B;的資產：尋找促銷活動名稱為Coffee-day的資產。
+
+* **尋找屬性值設定為值X、Y**&#x200B;集的資產：尋找行銷活動名稱為Coffee-day的資產，以及行銷活動名稱為tea-day的資產。
+
+* **顯示特定屬性欄位的值**：給我咖啡資產也會顯示這些資產的促銷活動名稱。
+
+* **尋找符合日期型屬性條件的資產**：取得授權未過期的資產。
+
+
+
+
+
+
+
+
+
+
 
 
 **資料夾式內容探索：**\
@@ -112,8 +139,8 @@ DAM資料庫管理員可以標幟缺少組織所設定的中繼資料標準的�
 範例提示：
 
 * 資料夾`WKND`中是否有任何svg？
-* 顯示資料夾`Nov 1 2025`中在`WKND`之後修改的資產。
-* 在資料夾`lifestyle`中列出`WKND`影像。
+* 顯示資料夾`WKND`中在`Nov 1 2025`之後修改的資產。
+* 在資料夾`WKND`中列出`lifestyle`影像。
 
 **啟用資料夾式內容探索的其他問題**
 
@@ -161,6 +188,10 @@ DAM資料庫管理員可以標幟缺少組織所設定的中繼資料標準的�
 
 * 顯示依名稱遞增順序排序的山地影像（顯示以字母A開頭後接B的影像名稱，依此類推）。
 
+**內容感知環境偵測**
+
+在「管理員」檢視中，「內容探索」代理程式會自動偵測製作環境，並使用它來解析提示，而不需要您明確指定製作URL。
+
 ### AEM Sites頁面 {#content-discovery-agent-aem-sites-pages}
 
 內容探索代理程式可解譯參考頁面主題、行銷活動或其他內容關鍵字的自然語言提示，協助使用者快速找到相關的AEM Sites頁面。 代理程式會根據提示中的關鍵字執行全文檢索搜尋，以識別AEM存放庫中的相符頁面，而不需要手動瀏覽Sites結構。
@@ -203,19 +234,21 @@ DAM資料庫管理員可以標幟缺少組織所設定的中繼資料標準的�
 
 ### Assets {#discovery-agent-search-results-assets}
 
-內容探索代理程式會傳回每個查詢的前幾個結果（依相關性排序），以確保首先出現完全相符的內容。 代理程式結合中繼資料導向的查詢與語意搜尋，以組合可能符合的重點集合，然後使用LLM根據使用者意圖來排名。 這種混合式方法可提供精確的內容感知結果，而不完全取決於直接的關鍵字比對。
+內容探索代理程式會傳回每個查詢的前幾個結果（依相關性排序），以確保完全相符的內容會先出現。 代理程式結合中繼資料導向的查詢與語意搜尋，以組合可能符合的重點集合，然後使用LLM根據使用者意圖來排名。 這種混合式方法可提供精確的內容感知結果，而不完全取決於直接的關鍵字比對。
 
-每個結果都包含資產名稱以及重要的資產中繼資料，例如資產路徑、建立者、建立日期、標題、說明、格式、上次修改者、上次修改日期、檔案大小、維度、[動態媒體URL](/help/assets/dynamic-media/dynamic-media.md)和相關標籤。 如果資產處於已核准狀態，結果也會包含具有OpenAPI URL的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md)。
+每個結果都會顯示為資產卡，顯示資產名稱、預覽和關鍵中繼資料，例如說明和格式。 您可以按一下資訊卡上的「資訊」圖示，以檢視其他資產屬性。
 
-您可以按一下資產路徑，順暢地導覽至AEM內的資產位置。
+使用&#x200B;**顯示表格**&#x200B;選項，以表格格式顯示結果。 按一下&#x200B;**顯示所有結果**，在右窗格中檢視20個已擷取資產的完整集合。
 
-![使用內容探索代理程式搜尋資產](/help/ai-in-aem/agents/content-advisor/assets/search-results-discovery-agent.png)
+每個結果也包含關鍵資產中繼資料，例如資產路徑、大小、建立日期和建立者、修改日期以及修改資產的使用者、格式和說明。 如果資產處於已核准狀態，結果也會包含具有OpenAPI URL的[Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md)。 您可以按一下資產路徑，順暢地導覽至AEM內的資產位置。
+
+![使用內容探索代理程式搜尋資產](/help/ai-in-aem/agents/content-advisor/assets/search-results-content-discovery-agent.png)
 
 您可以使用這些資產詳細資料快速評估資產是否符合要求，而無需瀏覽至每個資產以檢視這些詳細資訊。
 
 >[!NOTE]
 >
->[Dynamic Media URL](/help/assets/dynamic-media/dynamic-media.md)欄位只有在資產已發佈且您具備有效的Dynamic Media授權時，才會顯示在搜尋結果中。 同樣地，只有當您具備有效的Dynamic Media授權且您的AEM as a Cloud Service執行個體已啟用具有OpenAPI的Dynamic Media時，才會顯示[具有OpenAPI URL的Dynamic Media &#x200B;](/help/assets/dynamic-media-open-apis-overview.md)欄位。
+>[Dynamic Media URL](/help/assets/dynamic-media/dynamic-media.md)欄位只有在資產已發佈且您具備有效的Dynamic Media授權時，才會顯示在搜尋結果中。 同樣地，只有當您具備有效的Dynamic Media授權且您的AEM as a Cloud Service執行個體已啟用具有OpenAPI的Dynamic Media時，才會顯示[具有OpenAPI URL的Dynamic Media ](/help/assets/dynamic-media-open-apis-overview.md)欄位。
 
 ### 內容片段 {#discovery-agent-search-results-content-fragments}
 
