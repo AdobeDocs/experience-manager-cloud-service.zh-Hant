@@ -4,9 +4,9 @@ description: 瞭解如何使用快速開發環境在雲端環境中進行快速�
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Developer
-source-git-commit: 161d6be186a6124840d93672470de91399481f20
+source-git-commit: 1548c70e63dcccd545d8d5838a1249ef6909f6a2
 workflow-type: tm+mt
-source-wordcount: '5835'
+source-wordcount: '6011'
 ht-degree: 3%
 
 ---
@@ -30,7 +30,7 @@ RDE可讓開發人員快速部署和檢閱變更，將測試經證實可在本�
 >[!VIDEO](https://video.tv.adobe.com/v/3415582/?quality=12&learn=on)
 
 
-您可以看到其他示範[如何設定](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup)、[如何使用它](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use)以及使用RDE的[開發生命週期](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle)的影片。
+您可以看到其他示範[如何設定](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup)、[如何使用它](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use)以及使用RDE的[開發生命週期](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/development-life-cycle)的影片。
 
 ## 簡介 {#introduction}
 
@@ -86,7 +86,7 @@ RDE可用於程式碼、內容以及Apache或Dispatcher設定。 不像一般的
 
 >[!IMPORTANT]
 >
->請確定您已為Adobe I/O (AIO) CLI和相關外掛程式安裝[的](https://nodejs.org/en/download/)節點和NPM版本20，以便正常運作。
+>請確定您已為Adobe I/O (AIO) CLI和相關外掛程式安裝](https://nodejs.org/en/download/)的[節點和NPM版本20，以便正常運作。
 
 
 1. 依照此[程式](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/tools/cli-install)安裝AIO CLI工具。
@@ -106,7 +106,7 @@ RDE可用於程式碼、內容以及Apache或Dispatcher設定。 不像一般的
    登入資訊（代號）儲存在全域aio設定中，因此僅支援一個登入和組織。 如果您想要使用需要不同登入或組織的多個RDE，請遵循以下範例來介紹內容。
 
    <details><summary>請依照此範例為其中一個RDE登入設定本機內容</summary>
-   若要將登入資訊本機儲存在特定內容目前目錄的'.aio'檔案中，請執行下列步驟。 設定上下文也是設定CI/CD環境或指令碼的聰明方法。  若要使用此功能，請確定至少使用aio-cli 10.3.1版。請使用'npm install -g @adobe/aio-cli'進行更新。
+   若要將登入資訊本機儲存在特定內容目前目錄的'.aio'檔案中，請執行下列步驟。 設定上下文也是設定CI/CD環境或指令碼的聰明方法。  若要使用此功能，請確定至少使用aio-cli 10.3.1版。 請使用'npm install -g @adobe/aio-cli'進行更新。
 
    現在，在呼叫登入命令之前，先建立名為m`ycontext`的前後關聯（您使用auth外掛程式設定為預設的前後關聯）。
 
@@ -119,7 +119,7 @@ RDE可用於程式碼、內容以及Apache或Dispatcher設定。 不像一般的
    >[!NOTE]
    > 包含`--no-open`選項的登入命令會在終端機中輸出URL，而不是開啟預設瀏覽器。 您可以使用瀏覽器的&#x200B;**無痕視窗**&#x200B;來複製並開啟它。 此功能可確保主瀏覽器視窗中的目前工作階段不受影響，讓您以工作所需的特定帳戶和組織登入。
 
-   第一個命令會在您的本機`mycontext`組態檔中建立新的登入內容組態，稱為`.aio` （視需要建立檔案）。 第二個命令會將內容`mycontext`設定為「目前」內容；亦即預設值。
+   第一個命令會在您的本機`.aio`組態檔中建立新的登入內容組態，稱為`mycontext` （視需要建立檔案）。 第二個命令會將內容`mycontext`設定為「目前」內容；亦即預設值。
 
    設定好此組態後，登入命令會自動將登入權杖儲存在內容`mycontext`中，因此可保持其本機狀態。
 
@@ -184,7 +184,7 @@ retrieving programs of your organization ...
 
    `aio config:set cloudmanager_orgid 4E03EQC05D34GL1A0B49421C@AdobeOrg`
 
-   * 您可以使用[檢視您的組織ID](https://experienceleague.adobe.com/zh-hant/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255)下記錄的方法查詢您自己的組織ID。
+   * 您可以使用[檢視您的組織ID](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255)下記錄的方法查詢您自己的組織ID。
 
 1. 接下來，設定您的程式ID：
 
@@ -200,7 +200,7 @@ retrieving programs of your organization ...
 
    這些步驟需要您成為Cloud Manager **開發人員 — Cloud Service**&#x200B;產品設定檔的成員。 檢視[將團隊成員指派給Cloud Manager產品設定檔 — 指派開發人員產品設定檔](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer)以取得詳細資訊。
 
-如需詳細資訊和示範，請觀看教學課程影片[如何設定RDE (06:24)](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup)。
+如需詳細資訊和示範，請觀看教學課程影片[如何設定RDE (06:24)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup)。
 </details>
 
 ## 開發新功能時使用RDE {#using-rde-while-developing-a-new-feature}
@@ -362,7 +362,7 @@ RDE一次支援一個專案。 由於程式碼會從本機開發環境同步至R
 
 `mvn clean package`
 
-或從`src`模組的`dispatcher`目錄使用下列zip命令：
+或從`dispatcher`模組的`src`目錄使用下列zip命令：
 
 `zip -y -r dispatcher.zip .`
 
@@ -529,7 +529,7 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 #14: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on publish - done by karl at 2022-09-12T22:01:12.979Z
 ```
 
-如需詳細資訊和示範，請參閱教學影片[如何使用RDE命令(10:01)](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use)。
+如需詳細資訊和示範，請參閱教學影片[如何使用RDE命令(10:01)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use)。
 
 
 ## 從外部Git提供者部署至RDE {#deploy-to-rde}
@@ -565,7 +565,7 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
    GitLab上的![程式碼品質驗證訊息](/help/implementing/developing/introduction/assets/rde-gitlab-code-quality-validation-message.png)
 
    在Bitbucket上的外觀：
-   位元貯體![上的](/help/implementing/developing/introduction/assets/rde-bitbucket-code-quality-validation-message.png)程式碼品質驗證訊息
+   位元貯體](/help/implementing/developing/introduction/assets/rde-bitbucket-code-quality-validation-message.png)上的![程式碼品質驗證訊息
 
 1. **使用註解觸發部署。**
 
@@ -715,6 +715,8 @@ RDE重設開始後，通常需要幾分鐘才能完成並將環境還原成預�
 >此功能位於Beta中。 如果您有興趣使用這項新功能並分享您的意見回饋，請傳送電子郵件至[aemcs-rde-support@adobe.com](mailto:aemcs-rde-support@adobe.com)，說明您的使用案例。
 
 RDE支援對程式碼和內容的目前狀態製作快照，以供稍後還原。 在同步可能需要還原的程式碼時，或在開發不同功能之間切換時，快照會很有用。 也可以只從快照還原可變內容，作為測試的已知起點。
+
+請注意，特定RDE的快照無法還原到其他RDE上。
 
 每個RDE環境最多有七個快照。 標示為要刪除但仍在7天保留期內的快照會繼續計入該限制，直到它們完全移除為止。 如果您達到限制並需要立即使用新快照的容量，請依照[刪除快照](#delete-snapshot)中的說明使用強制刪除，而非標準刪除。
 
@@ -1169,7 +1171,7 @@ RDE支援對程式碼和內容的目前狀態製作快照，以供稍後還原�
 >
 >RDE OSGI組態是唯一的，因為它會繼承套件組合的`dev`執行模式所宣告的任何OSGI屬性的值。
 
-RDE與其他環境不同，因為內容可以安裝在`install.rde`下的`install.author.rde`資料夾（或`install.publish.rde`或`/apps`）中。 此功能可讓您使用命令列工具將內容提交到Git並將其傳遞到RDE。
+RDE與其他環境不同，因為內容可以安裝在`/apps`下的`install.rde`資料夾（或`install.author.rde`或`install.publish.rde`）中。 此功能可讓您使用命令列工具將內容提交到Git並將其傳遞到RDE。
 
 ## 填入內容 {#populating-content}
 
@@ -1177,7 +1179,7 @@ RDE與其他環境不同，因為內容可以安裝在`install.rde`下的`instal
 
 1. 使用命令列工具將內容套件明確同步至RDE
 
-1. 將範例內容放入`install.rde`下的`/apps`資料夾內並提交Git中，然後使用命令列工具將整體內容套件同步到RDE。
+1. 將範例內容放入`/apps`下的`install.rde`資料夾內並提交Git中，然後使用命令列工具將整體內容套件同步到RDE。
 
 1. 使用[內容複製工具](/help/implementing/developing/tools/content-copy.md)，從生產、階段或開發環境或其他RDE複製已定義的內容集。
 
@@ -1224,7 +1226,7 @@ Forms開發人員可使用AEM Forms Cloud Service快速開發環境來快速開�
 
 ## rde教學課程
 
-若要瞭解AEM as a Cloud Service中的RDE，請觀看示範[如何設定、如何使用以及開發生命週期(01:25)](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/developing/rde/overview)的影片教學課程。
+若要瞭解AEM as a Cloud Service中的RDE，請觀看示範[如何設定、如何使用以及開發生命週期(01:25)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/overview)的影片教學課程。
 
 ## 疑難排解 {#troubleshooting}
 
@@ -1232,7 +1234,7 @@ Forms開發人員可使用AEM Forms Cloud Service快速開發環境來快速開�
 
 #### 如何取得現有RDE適用的最新AEM版本 {#get-latest-aem-version}
 
-建立後，RDE會設定為最新可用的Adobe Experience Manager (AEM)版本。 可以使用Cloud Manager或[命令執行的](#reset-rde)RDE重設`aio aem:rde:reset`會循環RDE並將其設定為最新可用的AEM版本。
+建立後，RDE會設定為最新可用的Adobe Experience Manager (AEM)版本。 可以使用Cloud Manager或`aio aem:rde:reset`命令執行的[RDE重設](#reset-rde)會循環RDE並將其設定為最新可用的AEM版本。
 
 ### 疑難排解aio RDE外掛程式 {#aio-rde-plugin-troubleshooting}
 
