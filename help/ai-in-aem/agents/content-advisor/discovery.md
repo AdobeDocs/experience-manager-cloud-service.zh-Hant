@@ -4,7 +4,7 @@ description: 瞭解如何使用內容探索代理程式，透過天然的對話�
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 676300cd-b799-4c53-a58e-043e58a2cbc5
-source-git-commit: d4b216294791958c29a4cca736bc041a7bf4ad0c
+source-git-commit: c5a3d3de3b99aea43169e7a503a4ea8ed5d480d8
 workflow-type: tm+mt
 source-wordcount: '2375'
 ht-degree: 1%
@@ -236,7 +236,7 @@ DAM資料庫管理員可以標幟缺少組織所設定的中繼資料標準的�
 
 內容探索代理程式會傳回每個查詢的前幾個結果（依相關性排序），以確保完全相符的內容會先出現。 代理程式結合中繼資料導向的查詢與語意搜尋，以組合可能符合的重點集合，然後使用LLM根據使用者意圖來排名。 這種混合式方法可提供精確的內容感知結果，而不完全取決於直接的關鍵字比對。
 
-每個結果都會顯示為資產卡，顯示資產名稱、預覽和關鍵中繼資料，例如說明和格式。 您可以按一下資訊卡上的「資訊」圖示，以檢視其他資產屬性。
+每個結果都會顯示為資產卡片，並顯示資產名稱、預覽和關鍵中繼資料，例如說明和格式。 您可以按一下資訊卡上的「資訊」圖示，以檢視其他資產屬性。
 
 使用&#x200B;**顯示表格**&#x200B;選項，以表格格式顯示結果。 按一下&#x200B;**顯示所有結果**，在右窗格中檢視20個已擷取資產的完整集合。
 
@@ -248,7 +248,7 @@ DAM資料庫管理員可以標幟缺少組織所設定的中繼資料標準的�
 
 >[!NOTE]
 >
->[Dynamic Media URL](/help/assets/dynamic-media/dynamic-media.md)欄位只有在資產已發佈且您具備有效的Dynamic Media授權時，才會顯示在搜尋結果中。 同樣地，只有當您具備有效的Dynamic Media授權且您的AEM as a Cloud Service執行個體已啟用具有OpenAPI的Dynamic Media時，才會顯示[具有OpenAPI URL的Dynamic Media &#x200B;](/help/assets/dynamic-media-open-apis-overview.md)欄位。
+>[Dynamic Media URL](/help/assets/dynamic-media/dynamic-media.md)欄位只有在資產已發佈且您具備有效的Dynamic Media授權時，才會顯示在搜尋結果中。 同樣地，只有當您具備有效的Dynamic Media授權且您的AEM as a Cloud Service執行個體已啟用具有OpenAPI的Dynamic Media時，才會顯示[具有OpenAPI URL的Dynamic Media ](/help/assets/dynamic-media-open-apis-overview.md)欄位。
 
 ### 內容片段 {#discovery-agent-search-results-content-fragments}
 
