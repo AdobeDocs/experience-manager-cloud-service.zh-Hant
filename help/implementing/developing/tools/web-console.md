@@ -6,7 +6,8 @@ topic-tags: configuring
 feature: Configuring
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: ce0158b1f4d1a1cf9f6102a79c1ca29ee7edd3b5
+exl-id: 3aaa615f-d3bf-4d1a-9dff-b6e271f0e9a6
+source-git-commit: 3995e0090e1b0be1cbc430c3da7458b6ce867e09
 workflow-type: tm+mt
 source-wordcount: '962'
 ht-degree: 0%
@@ -22,19 +23,20 @@ ht-degree: 0%
 
 AEM as a Cloud Service將[組態和程式碼視為在執行階段不可變動。](/help/release-notes/aem-cloud-changes.md#apps-libs-immutable) 這表示所有設定都必須像在生產環境中編碼一樣進行部署。 對於生產執行個體，這可確保傳遞品質門檻，並提供您目前環境的穩定性和清晰度等級。
 
-然而，出於開發目的，通常需要進行OSGi設定更新和套件組合變更以測試臨時開發變更。 做為AEM as a Cloud Service SDK的一部分，Web主控台允許這一點。 如需有關Adobe Experience Manager as a Cloud Service的OSGi設定的詳細資訊，請參閱檔案[為AEM as a Cloud Service設定OSGi](/help/implementing/deploying/configuring-osgi.md)。
+不過，測試本機開發通常需要臨機[OSGi設定](/help/implementing/deploying/configuring-osgi.md)更新和套件組合變更。 作為[AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)的一部分，網頁主控台會啟用這類即時更新。
 
-可以從`http://<host>:<port>/system/console`存取主控台
+在AEM as a Cloud Service本機執行的情況下，可以從`http://<host>:<port>/system/console`存取主控台。
 
-Web控制檯提供用於維護OSGi套件組合的選購畫面，包括：
+Web控制檯提供一組用於維護OSGi套裝的畫面和選項，包括：
 
-* [組態](#configuration)：用於設定OSGi組合，因此是設定AEM系統引數的基礎機制
+* [設定](#configuration)：用於設定OSGi組合，因此是設定AEM系統引數的基礎機制
 * [組合](#bundles)：用於安裝組合
-* [元件](#components)：用於控制AEM所需元件的狀態
+* [元件](#components)：用來控制AEM所需元件的狀態
+* [產生OSGi設定](#generating-osgi-configurations)：用於以JSON自動產生OSGi設定
 
-所做的任何變更都會立即套用至執行中的開發系統。 不需要重新啟動。
+所做的任何變更會立即套用至執行中的SDK。 不需要重新啟動。
 
-在Web主控台中，提及預設設定的任何說明都與Sling預設值有關。 AEM有其本身的預設值，因此預設集可能會與主控台上的記錄不同。
+在Web主控台中，提及預設設定的任何說明都與Sling預設值有關。 AEM有其本身的預設值，因此預設集可能會與主控台所記錄的有所不同。
 
 Adobe Experience Manager (AEM)中的Web主控台是以[Apache Felix Web管理主控台](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html)為基礎。 Apache Felix是社群努力實施OSGi R4服務平台，其中包括OSGi架構和標準服務。
 
@@ -55,14 +57,14 @@ Adobe Experience Manager (AEM)中的Web主控台是以[Apache Felix Web管理主
 
 隨即顯示設定清單：
 
-![configMgr](assets/config-mgr.png)
+![設定畫面](assets/configuration.png)
 
-此畫面上的下拉式清單提供兩種型別的設定：
+此畫面上的清單提供兩種型別的設定：
 
 * **設定**&#x200B;可讓您更新現有的設定。 這些具有持續性身分(PID)，可以是：
    * AEM的標準與完整 — 如果刪除這些值，會傳回預設設定，則需使用這些值。
    * 從工廠組態建立的執行處理 — 這些執行處理是由使用者建立的，刪除會移除執行處理。
-* **工廠組態**&#x200B;可讓您建立所需功能物件的執行個體。 這會配置給「持續性身分」，並列在「組態」下拉式清單中。
+* **工廠組態**&#x200B;可讓您建立所需功能物件的執行個體。 這會配置給持續性身分，並列在設定清單中。
 
 從清單中選取任何專案時，會顯示與該組態相關的引數：
 
@@ -82,13 +84,13 @@ Adobe Experience Manager (AEM)中的Web主控台是以[Apache Felix Web管理主
 
 >[!TIP]
 >
->如需詳細資訊，請參閱使用Web主控台[OSGi設定](/help/implementing/deploying/configuring-osgi.md)。
+>請參閱[為Adobe Experience Manager as a Cloud Service設定OSGi](/help/implementing/deploying/configuring-osgi.md)，以取得有關OSGi設定的詳細資料。
 
 ## 組合 {#bundles}
 
 **組合**&#x200B;畫面是用來安裝AEM所需的OSGi組合。 您可以透過下列其中一種方法來存取畫面：
 
-* 下拉式功能表： **OSGi -> Bundels**
+* 下拉式功能表： **OSGi ->組合**
 * URL： `http://<host>:<port>/system/console/bundles`
 
 隨即顯示套件組合清單：
@@ -117,25 +119,24 @@ Adobe Experience Manager (AEM)中的Web主控台是以[Apache Felix Web管理主
 **元件**&#x200B;畫面可讓您啟用和停用元件。 您可透過以下任一方式存取該區域：
 
 * 下拉式功能表： **主要 — >元件**
-
 * URL： `http://<host>:<port>/system/console/components`
 
-隨即顯示元件清單。 有各種圖示可讓您啟用、停用或（在適當時）開啟特定元件的組態詳細資訊。
+隨即顯示元件清單。 每一列都有圖示，可讓您啟用、停用或（在適當時）開啟特定元件的組態詳細資訊。
 
 ![元件](assets/components.png)
 
 按一下特定元件的名稱會顯示其狀態的進一步資訊。 您也可以在此處啟用、停用或重新載入元件。
 
-![元件詳細資料](assets/component-detail.png)
+![元件詳細資料](assets/component-details.png)
 
 >[!NOTE]
 >
->啟用或停用元件只適用於SDK重新啟動。
+>啟用或停用元件只適用於SDK重新啟動之前。
 >
 >開始狀態是在元件描述項中定義，在開發期間產生並在套件建立時儲存在套件中。
 
 ## 產生OSGi設定 {#generating-osgi-configs}
 
-此Web主控台可用於設定OSGi元件，以及將OSGi設定匯出為JSON。 這對於設定AEM提供的OSGi元件而言，若開發人員在AEM專案中定義OSGi設定，可能無法深入瞭解這些元件的OSGi屬性及其值格式。
+此Web主控台可用於設定OSGi元件，以及將OSGi設定匯出為JSON。 這對於設定AEM提供的OSGi元件非常有用，當您在AEM專案中定義OSGi設定時，您可能不熟悉這些元件的OSGi屬性和值格式。
 
 如需詳細資訊，請參閱檔案[為Adobe Experience Manager as a Cloud Service](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-web-console)設定OSGi。
