@@ -59,7 +59,7 @@ AEM as a Cloud Service 提供以下進階網路選項：
 
 >[!CAUTION]
 >
->如果您已佈建舊版專用輸出技術並想設定這些進階網路選項之一，[聯絡 Adobe Client Care](https://experienceleague.adobe.com/?support-solution=Experience+Manager#home)。
+>如果您已佈建舊版專用輸出技術並想設定這些進階網路選項之一，[聯絡 Adobe Client Care](https://experienceleague.adobe.com/zh-hant?support-solution=Experience+Manager#home)。
 >
 >嘗試使用舊版專用輸出技術設定進階網路時，可能會影響網站連線。
 
