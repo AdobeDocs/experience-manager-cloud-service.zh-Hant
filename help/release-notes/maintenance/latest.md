@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Experience Manager]  as a Cloud Service 的目前維�
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 82b3b4bdcd09aa86974518f4f62e73c9f377c83f
+source-git-commit: d00af3aee8c2a42233bfc0f914a4e24abe921e08
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '783'
 ht-degree: 30%
 
 ---
@@ -16,13 +16,17 @@ ht-degree: 30%
 
 下節是 Experience Manager as a Cloud Service 目前維護版本的技術版本發行說明。
 
-## 發行說25821 {#release-25821}
+## 發行說25892 {#release-25892}
 
-以下摘要說明維護版本25821數的持續改善，該版本於2026年5月5日公開發佈。 先前的維護發行版本為發行說25520。
+以下摘要說明維護版本25892數的持續改善，該版本於2026年5月7日公開發佈。 先前的維護發行版本為發行說25520。
 
 2026.5.0功能啟動將提供此維護版本的完整功能集。 如需詳細資訊，請參閱 [Experience Manager 發行藍圖](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap)。
 
-### 增強功能 {#enhancements-25821}
+>[!NOTE]
+>
+>發行說25821已設為私人。
+
+### 增強功能 {#enhancements-25892}
 
 * CQ-4362304：建立指引前端並更新LLM設定UI。
 * GRANITE-39546：將Apache Tika升級至3.x。
@@ -52,7 +56,7 @@ ht-degree: 30%
 * SKYOPS-138356：將`com.adobe.granite.oauth.server`更新為1.1.36。
 * SKYOPS-138739：將SnakeYAML更新至2.6。
 
-### 已修正的問題 {#fixed-issues-25821}
+### 已修正的問題 {#fixed-issues-25892}
 
 * Assets-59546：移除已棄用commons-lang程式庫的相依性。
 * Assets-64831： AssetProcessorProcess重設處理嘗試計數導致資產停滯。
@@ -67,7 +71,7 @@ ht-degree: 30%
 * SITES-39267：還原關係鏈結專案中的pagePath。
 * SITES-43715：許可權驗證無法讀取資源狀態。
 
-#### AEM Guides {#guides-25821}
+#### AEM Guides {#guides-25892}
 
 * GUIDES-45110：使用&#x200B;**選取檔案**&#x200B;對話方塊在編輯器中選取影像時，只會顯示點陣格式（例如JPG、PNG和GIF）。 向量檔案（例如`.ai`和`.eps`）未顯示且無法選取。
 * GUIDES-41938：在名稱中包含空格的資料夾中建立主題時，會錯誤地建立一個重複的資料夾，其中空格會被連字型大小取代，且主題會儲存在那裡而不是原始資料夾。
@@ -77,19 +81,19 @@ ht-degree: 30%
 
 如需更多有關該版本中新增功能和增強功能以及已修復問題的資訊，請查看 [Experience Manager Guides 發行藍圖](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap)。
 
-### 已知問題 {#known-issues-25821}
+### 已知問題 {#known-issues-25892}
 
 無。
 
-### 已過時的功能和 API {#deprecated-25821}
+### 已過時的功能和 API {#deprecated-25892}
 
 [「已過時和已移除的功能及 API」](/help/release-notes/deprecated-removed-features.md)文件中詳細介紹 AEM as a Cloud Service 中已過時和已移除的功能及 API。
 
-### 安全性修正 {#security-25821}
+### 安全性修正 {#security-25892}
 
 AEM as a Cloud Service 專門負責將您的平台的安全性與效能最佳化。 此維護發行版本解決19個已識別的弱點，強化我們提供強大系統保護的承諾。
 
-### 嵌入技術 {#embedded-tech-25821}
+### 嵌入技術 {#embedded-tech-25892}
 
 | 技術 | 版本 | 連結 |
 |---|---|---|
