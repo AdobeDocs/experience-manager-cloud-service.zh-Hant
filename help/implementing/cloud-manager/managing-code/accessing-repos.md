@@ -5,7 +5,7 @@ exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: 0c156a295dc49d7e12f4e4f9ce1743d06c7fcdaf
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 96%
@@ -28,7 +28,7 @@ Cloud Manager 可以使用&#x200B;**管道**&#x200B;卡上的&#x200B;**存取存
 * Cloud Manager Git 存放庫的 URL。
 * 預先建立的 Git 指令，可快速新增遠端連線至 Git 存放庫並推送程式碼。
 
-![存放庫資訊視窗](assets/repository-info.png)
+  ![存放庫資訊視窗](assets/repository-info.png)
 
 Cloud Manager 不會提供[私人存放庫](private-repositories.md)的存取資訊。
 
@@ -66,4 +66,4 @@ Cloud Manager 不會提供[私人存放庫](private-repositories.md)的存取資
 
 您可以隨時撤銷存取密碼。
 
-若要如此做，請[為此請求建立支援服務單](https://experienceleague.adobe.com/zh-hant?support-solution=Experience+Manager&support-tab=home#support)。 此服務單會以高優先性處理，且通常會在一天內撤銷。
+若要如此做，請[為此請求建立支援服務單](https://experienceleague.adobe.com/?support-solution=Experience+Manager&support-tab=home#support)。 此服務單會以高優先性處理，且通常會在一天內撤銷。
