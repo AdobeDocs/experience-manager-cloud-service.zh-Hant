@@ -6,9 +6,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: a03eb72ee1b46756f003a60709019aa3122d26f2
+source-git-commit: 4f66cd6048d7a78bea33c0f9c21017983b9032d5
 workflow-type: tm+mt
-source-wordcount: '3101'
+source-wordcount: '3159'
 ht-degree: 18%
 
 ---
@@ -82,7 +82,7 @@ ht-degree: 18%
 
 隨即在RTF區塊上方開啟上下文功能表，提供上下文中的基本格式選項。 由於空間限制，某些選項可能會隱藏在省略符號按鈕後面。
 
-![&#x200B; RTF內容功能表](assets/rich-text-context-menu.png)
+![ RTF內容功能表](assets/rich-text-context-menu.png)
 
 一旦焦點離開已編輯的欄位，變更會自動儲存。
 
@@ -237,7 +237,7 @@ ht-degree: 18%
    * 在屬性面板中選取&#x200B;**刪除**&#x200B;圖示。
 
      ![刪除元件](assets/ue-delete-component.png)
-   * 選取內容功能表中的&#x200B;**刪除**&#x200B;選項。
+   * 選取內容功能表中的&#x200B;**刪除**選項。
      ![從內容功能表刪除](assets/delete-from-context-menu.png)
 
 選取的元件已刪除。
@@ -248,7 +248,18 @@ ht-degree: 18%
 
 ### 重新排序和移動元件 {#reordering-components}
 
-您可以使用前後關聯選單或內容樹來移動和重新排序元件。
+您可以使用拖放、前後關聯功能表或內容樹來移動和重新排序元件。
+
+>[!NOTE]
+>
+>如果目標容器[元件篩選器](/help/implementing/universal-editor/filtering.md)允許選取的元件，則元件只能在容器之間移動。
+
+#### 使用拖放功能移動元件 {#drag-and-drop-move}
+
+1. 按一下並拖曳您要移動的元件。
+   * 將游標移至目的地時，編輯器會顯示元件在放置時的位置（以藍色水平線放置）。
+     ![拖放元件以移動它](assets/drag-and-drop-component-move.png)
+1. 放置元件以將其重新定位。
 
 #### 使用快顯選單移動元件 {#move-context-menu}
 
@@ -271,7 +282,7 @@ ht-degree: 18%
 >
 >前後關聯功能表選項只能移動其容器內的元件。 如果您想要在容器之間移動元件，[請使用內容樹狀結構。](#reorder-content-tree)
 
-#### 使用內容樹重新排序元件 {#reorder-content-tree}
+#### 使用內容樹狀結構移動元件 {#reorder-content-tree}
 
 1. 如果尚未處於[內容樹狀結構模式](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)，請切換至該模式。
 1. 在內容樹或編輯器中選取容器元件。
@@ -283,10 +294,6 @@ ht-degree: 18%
 1. 拖曳的元件在內容樹狀結構中會呈現灰色，而您的插入點會以藍線表示。 將元件鬆開並放在新位置中。
 
 元件會在內容樹和編輯器中重新排序。
-
->[!NOTE]
->
->如果目標容器[元件篩選器](/help/implementing/universal-editor/filtering.md)允許選取的元件，則元件只能在容器之間移動。
 
 ### 還原與重做 {#undo-redo}
 
@@ -315,7 +322,7 @@ ht-degree: 18%
 1. 然後，您可以：
    * 按一下「[」屬性面板中的「**複製**」圖示。](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel)
      ![從面板複製](assets/copy-from-panel.png)
-   * 在內容功能表中選取&#x200B;**複製**&#x200B;選項。
+   * 在內容功能表中選取&#x200B;**複製**選項。
      ![從內容功能表複製](assets/copy-from-context-menu.png)
 1. 選取您要貼上複製元件的元件&#x200B;_after_。
 1. 然後，您可以：
