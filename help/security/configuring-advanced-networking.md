@@ -4,27 +4,27 @@ description: 了解如何為 AEM as a Cloud Service 設定進階網路功能 (�
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: bfb39bd630c451b4649955af3c264bacefd1c477
+source-git-commit: 3d2b4b7aad0c7d15d14b7f9328945303ed31d71b
 workflow-type: tm+mt
-source-wordcount: '5549'
-ht-degree: 99%
+source-wordcount: '5860'
+ht-degree: 90%
 
 ---
 
 
 # 設定 AEM as a Cloud Service 的進階網路 {#configuring-advanced-networking}
 
-本文介紹 AEM as a Cloud Service 所提供的進階網路功能。這些功能包括 VPN、非標準連接埠和專用輸出 IP 位址的自助服務與 API 佈建。
+本文介紹 AEM as a Cloud Service 所提供的進階網路功能。 這些功能包括 VPN、非標準連接埠和專用輸出 IP 位址的自助服務與 API 佈建。
 
-除了本文件以外，還有一系列教學課程，旨在引導您逐步了解每個進階網路選項。請參閱[進階網路](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/networking/advanced-networking)。
+除了本文件以外，還有一系列教學課程，旨在引導您逐步了解每個進階網路選項。 請參閱[進階網路](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/networking/advanced-networking)。
 
 >[!IMPORTANT]
 >
 >您可以透過 Cloud Manager UI 或使用 Cloud Manager API (例如 cURL)，設定 AEM as a Cloud Service 的進階網路。
 >
->本文的重點是說明如何使用 UI 方法。如果想要透過 API 將設定自動化，請參閱[虛擬私人網路 (VPN) 教學課程](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/networking/vpn)。
+>本文的重點是說明如何使用 UI 方法。 如果想要透過 API 將設定自動化，請參閱[虛擬私人網路 (VPN) 教學課程](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/networking/vpn)。
 >
->**使用 API 將進階網路設定自動化**
+>**使用API自動化進階網路**
 >若要將進階網路設定 (例如建立 VPN) 自動化，可以使用 Cloud Manager API：
 >
 >```bash
@@ -55,11 +55,11 @@ AEM as a Cloud Service 提供以下進階網路選項：
 * [專用輸出 IP 位址](#dedicated-egress-ip-address) - 將 AEM as a Cloud Service 的對外流量設定為源自唯一的 IP。
 * [虛擬私人網路 (VPN)](#vpn) - 如果您有 VPN，可保護您的基礎結構與 AEM as a Cloud Service 之間的流量。
 
-本文首先會詳細說明每個選項以及為什麼您可能會使用這些選項，然後會說明如何使用 Cloud Manager UI 和 API 來設定選項。本文最後提供了一些進階用例。
+本文首先會詳細說明每個選項以及為什麼您可能會使用這些選項，然後會說明如何使用 Cloud Manager UI 和 API 來設定選項。 本文最後提供了一些進階用例。
 
 >[!CAUTION]
 >
->如果您已佈建舊版專用輸出技術並想設定這些進階網路選項之一，[聯絡 Adobe Client Care](https://experienceleague.adobe.com/zh-hant?support-solution=Experience+Manager#home)。
+>如果您已佈建舊版專用輸出技術並想設定這些進階網路選項之一，[聯絡 Adobe Client Care](https://experienceleague.adobe.com/?support-solution=Experience+Manager#home)。
 >
 >嘗試使用舊版專用輸出技術設定進階網路時，可能會影響網站連線。
 
@@ -88,7 +88,7 @@ AEM as a Cloud Service 提供以下進階網路選項：
 
 * 使用 Cloud Manager UI 時，這表示要使用程式層級的精靈建立進階網路設定，然後編輯您想要啟用設定的每個環境。
 
-* 使用 Cloud Manager API 時，系統會在程式層級呼叫 `/networkInfrastructures` API 端點來宣告所需的進階網路類型。接下來是對每個環境的 `/advancedNetworking` 端點的呼叫，以啟用基礎設施並設定環境特定的參數。
+* 使用 Cloud Manager API 時，系統會在程式層級呼叫 `/networkInfrastructures` API 端點來宣告所需的進階網路類型。 接下來是對每個環境的 `/advancedNetworking` 端點的呼叫，以啟用基礎設施並設定環境特定的參數。
 
 ## 彈性連接埠輸出 {#flexible-port-egress}
 
@@ -96,11 +96,11 @@ AEM as a Cloud Service 提供以下進階網路選項：
 
 >[!TIP]
 >
->在決定使用彈性連接埠輸出或專用輸出 IP 位址時，如果不需要特定的 IP 位址，建議您選擇彈性連接埠輸出。這是因為 Adobe 可以將彈性的連接埠輸出流量效能最佳化。
+>在決定使用彈性連接埠輸出或專用輸出 IP 位址時，如果不需要特定的 IP 位址，建議您選擇彈性連接埠輸出。 這是因為 Adobe 可以將彈性的連接埠輸出流量效能最佳化。
 
 >[!NOTE]
 >
->在建立後，彈性連接埠輸出基礎架構類型將無法編輯。變更設定值的唯一方法是刪除並重新建立。
+>在建立後，彈性連接埠輸出基礎架構類型將無法編輯。 變更設定值的唯一方法是刪除並重新建立。
 
 ### UI 設定 {#configuring-flexible-port-egress-provision-ui}
 
@@ -108,7 +108,7 @@ AEM as a Cloud Service 提供以下進階網路選項：
 
 1. 在「**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**」控制台中，選取程式。
 
-1. 從「**程式概觀**」頁面，導覽至「**環境**」標籤，然後在左側面板選取「**網路基礎設施**」。
+1. 從&#x200B;**計畫總覽**&#x200B;頁面，瀏覽至&#x200B;**環境**&#x200B;標籤，並在左側面板中選取&#x200B;**網路基礎結構**。
 
    ![新增網路基礎結構](assets/advanced-networking-ui-network-infrastructure.png)
 
@@ -117,13 +117,13 @@ AEM as a Cloud Service 提供以下進階網路選項：
 
    ![設定彈性連接埠輸出](assets/advanced-networking-ui-flexible-port-egress.png)
 
-1. 「**確認**」標籤會總結您的選擇和後續步驟。按一下「**儲存**」並建立內容結構。
+1. 「**確認**」標籤會總結您的選擇和後續步驟。 按一下「**儲存**」並建立內容結構。
 
    ![確認彈性連接埠輸出的設定](assets/advanced-networking-ui-flexible-port-egress-confirmation.png)
 
-側面板的「**網路基礎結構**」標題下方會出現一筆新的記錄。其中包括基礎結構類型、狀態、區域以及啟用的環境等詳細資訊。
+側面板的「**網路基礎結構**」標題下方會出現一筆新的記錄。 其中包括基礎結構類型、狀態、區域以及啟用的環境等詳細資訊。
 
-![網路基礎架構下方的新項目](assets/advanced-networking-ui-flexible-port-egress-new-entry.png)
+![網路基礎建設下的新專案](assets/advanced-networking-ui-flexible-port-egress-new-entry.png)
 
 >[!NOTE]
 >
@@ -131,9 +131,9 @@ AEM as a Cloud Service 提供以下進階網路選項：
 
 ### API 設定 {#configuring-flexible-port-egress-provision-api}
 
-對每個程式會叫用一次 POST`/program/<programId>/networkInfrastructures` 端點，直接傳遞 `flexiblePortEgress` 的值 (`kind` 參數和區域)。端點會以 `network_id` 及其他資訊回應，包括狀態。
+對每個程式會叫用一次 POST`/program/<programId>/networkInfrastructures` 端點，直接傳遞 `flexiblePortEgress` 的值 (`kind` 參數和區域)。 端點會以 `network_id` 及其他資訊回應，包括狀態。
 
-呼叫後，通常需要大約 15 分鐘的時間來佈建網路基礎結構。對 Cloud Manager 的[網路基礎結構 GET 端點](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure)的呼叫會顯示「**就緒**」狀態。
+呼叫後，通常需要大約 15 分鐘的時間來佈建網路基礎結構。 對 Cloud Manager 的[網路基礎結構 GET 端點](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure)的呼叫會顯示「**就緒**」狀態。
 
 >[!TIP]
 >
@@ -162,7 +162,7 @@ HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
 
 如果使用非標準 Java™ 網路程式庫，請使用上述屬性為所有流量設定 Proxy。
 
-目標流經 `portForwards` 參數中宣告的連接埠的非 http/s 流量應該參照一個名為 `AEM_PROXY_HOST` 的屬性，以及對應的連接埠。例如：
+目標流經`portForwards`引數中宣告的連線埠的非HTTP/S流量應該參照名為`AEM_PROXY_HOST`的屬性，以及對應的連線埠。 例如：
 
 ```java
 DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + ":53306/test");
@@ -190,7 +190,7 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
   </tr> 
   <tr>
     <td></td>
-    <td>流經使用以下環境變數和 Proxy 連接埠號碼設定的 http proxy 的非標準流量 (在 80 或 443 以外的其他連接埠上)。請勿在 Cloud Manager API 呼叫的 portForwards 參數中宣告目標連接埠：<br><ul>
+    <td>流經使用以下環境變數和 Proxy 連接埠號碼設定的 http proxy 的非標準流量 (在 80 或 443 以外的其他連接埠上)。 請勿在 Cloud Manager API 呼叫的 portForwards 參數中宣告目標連接埠：<br><ul>
      <li>AEM_PROXY_HOST (在 AEM 版本 &lt; 6094 中預設為 `proxy.tunnel`)</li>
      <li>AEM_HTTPS_PROXY_PORT (在 AEM 版本 &lt; 6094 中預設為連接埠 3128)</li>
     </ul>
@@ -242,27 +242,27 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 ## 專用輸出 IP 位址 {#dedicated-egress-ip-address}
 
-在與 SaaS 廠商 (如 CRM 廠商) 整合或在 AEM as a Cloud Service 之外有提供 IP 位址允許清單的其他整合時，專用的 IP 位址可以增強安全性。新增專用的 IP 位址新增至允許清單，可確保只允許來自 AEM Cloud Service 的流量流向外部服務。此方法是對任何其他已允許 IP 流量的額外補充。
+在與 SaaS 廠商 (如 CRM 廠商) 整合或在 AEM as a Cloud Service 之外有提供 IP 位址允許清單的其他整合時，專用的 IP 位址可以增強安全性。 新增專用的 IP 位址新增至允許清單，可確保只允許來自 AEM Cloud Service 的流量流向外部服務。 此方法是對任何其他已允許 IP 流量的額外補充。
 
 相同的專用 IP 適用於方案中的所有環境，並且適用於製作和發佈服務。
 
-如果沒有啟用專用 IP 位址功能，AEM as a Cloud Service 的流量會流經一組共用的 IP。這些是 AEM as a Cloud Service 的其他客戶所使用的 IP。
+如果沒有啟用專用 IP 位址功能，AEM as a Cloud Service 的流量會流經一組共用的 IP。 這些是 AEM as a Cloud Service 的其他客戶所使用的 IP。
 
-設定專用輸出 IP 位址類似於[彈性的連接埠輸出](#flexible-port-egress)。主要區別在於設定後，流量一律從專用的唯一 IP 輸出。若要尋找該 IP，請使用 DNS 解析器識別與 `p{PROGRAM_ID}.external.adobeaemcloud.com` 相關聯的 IP 位址。該 IP 位址預期不會變更，但如果必須變更會事先通知。
+設定專用輸出 IP 位址類似於[彈性的連接埠輸出](#flexible-port-egress)。 主要差異在於，在設定之後，流量一律會從專用的唯一IP傳出。 若要尋找該 IP，請使用 DNS 解析器識別與 `p{PROGRAM_ID}.external.adobeaemcloud.com` 相關聯的 IP 位址。 該 IP 位址預期不會變更，但如果必須變更會事先通知。
 
 >[!TIP]
 >
->在決定使用彈性連接埠輸出或專用輸出 IP 位址時，如果不需要特定的 IP 位址，可選擇彈性連接埠輸出。這是因為 Adobe 可以將彈性的連接埠輸出流量效能最佳化。
+>在決定使用彈性連接埠輸出或專用輸出 IP 位址時，如果不需要特定的 IP 位址，可選擇彈性連接埠輸出。 這是因為 Adobe 可以將彈性的連接埠輸出流量效能最佳化。
 
 >[!NOTE]
 >
 >如果在 2021.09.30 之前 (即 2021 年 9 月版本之前) 已為您佈建專用輸出 IP，則您的專用輸出 IP 功能僅支援 HTTP 和 HTTPS 連接埠。
 >
->此結果包含 HTTP/1.1，若加密也會包含 HTTP/2。此外，一個專用輸出端點可以分別透過連接埠 80/443 上的 HTTP/HTTPS 與任何目標通訊。
+>此結果包含 HTTP/1.1，若加密也會包含 HTTP/2。 此外，一個專用輸出端點可以分別透過連接埠 80/443 上的 HTTP/HTTPS 與任何目標通訊。
 
 >[!NOTE]
 >
->建立後，專用輸出 IP 位址基礎架構類型將無法編輯。變更設定值的唯一方法是刪除並重新建立。
+>建立後，專用輸出 IP 位址基礎架構類型將無法編輯。 變更設定值的唯一方法是刪除並重新建立。
 
 ### UI 設定 {#configuring-dedicated-egress-provision-ui}
 
@@ -270,7 +270,7 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 1. 在「**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**」控制台中，選取程式。
 
-1. 從「**程式概觀**」頁面，導覽至「**環境**」標籤，然後在左側面板選取「**網路基礎設施**」。
+1. 從&#x200B;**計畫總覽**&#x200B;頁面，瀏覽至&#x200B;**環境**&#x200B;標籤，並在左側面板中選取&#x200B;**網路基礎結構**。
 
    ![新增網路基礎結構](assets/advanced-networking-ui-network-infrastructure.png)
 
@@ -279,13 +279,13 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
    ![設定專用輸出 IP 位址](assets/advanced-networking-ui-dedicated-egress.png)
 
-1. 「**確認**」標籤會總結您的選擇和後續步驟。按一下「**儲存**」並建立內容結構。
+1. 「**確認**」標籤會總結您的選擇和後續步驟。 按一下「**儲存**」並建立內容結構。
 
    ![確認彈性連接埠輸出的設定](assets/advanced-networking-ui-dedicated-egress-confirmation.png)
 
-側面板的「**網路基礎結構**」標題下方會出現一筆新的記錄。其中包括基礎結構類型、狀態、區域以及啟用的環境等詳細資訊。
+新記錄會顯示在側邊面板中的&#x200B;**網路基礎結構**&#x200B;標題下方。 其中包括基礎結構類型、狀態、區域以及啟用的環境等詳細資訊。
 
-![網路基礎架構下方的新項目](assets/advanced-networking-ui-flexible-port-egress-new-entry.png)
+![網路基礎建設下的新專案](assets/advanced-networking-ui-flexible-port-egress-new-entry.png)
 
 >[!NOTE]
 >
@@ -293,9 +293,9 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 ### API 設定 {#configuring-dedicated-egress-provision-api}
 
-對每個程式會叫用一次 POST`/program/<programId>/networkInfrastructures` 端點，直接傳遞 `dedicatedEgressIp` 的值 (`kind` 參數和區域)。端點會以 `network_id` 及其他資訊回應，包括狀態。
+對每個程式會叫用一次 POST`/program/<programId>/networkInfrastructures` 端點，直接傳遞 `dedicatedEgressIp` 的值 (`kind` 參數和區域)。 端點會以 `network_id` 及其他資訊回應，包括狀態。
 
-呼叫後，通常需要大約 15 分鐘的時間來佈建網路基礎結構。對 Cloud Manager 的[網路基礎結構 GET 端點](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure)的呼叫會顯示「**就緒**」狀態。
+呼叫後，通常需要大約 15 分鐘的時間來佈建網路基礎結構。 對 Cloud Manager 的[網路基礎結構 GET 端點](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure)的呼叫會顯示「**就緒**」狀態。
 
 >[!TIP]
 >
@@ -303,9 +303,9 @@ ProxyPassReverse "/somepath" "https://example.com:8443"
 
 ### 流量路由 {#dedicated-egress-ip-traffic-routing}
 
-Http 或 https 流量會流經預先設定的 Proxy，前提是它們使用標準 Java™ 系統屬性進行 Proxy 設定。
+HTTP或HTTPS流量會流經預先設定的Proxy，前提是它們使用標準Java™系統屬性進行Proxy設定。
 
-目標流經 `portForwards` 參數中宣告的連接埠的非 http/s 流量應該參照一個名為 `AEM_PROXY_HOST` 的屬性，以及對應的連接埠。例如：
+目標流經 `portForwards` 參數中宣告的連接埠的非 http/s 流量應該參照一個名為 `AEM_PROXY_HOST` 的屬性，以及對應的連接埠。 例如：
 
 ```java
 DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + ":53306/test");
@@ -383,7 +383,7 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
 
 ### 功能使用情況 {#feature-usage}
 
-功能與導致輸出流量的 Java™ 程式碼或資料庫相容，前提是它們使用標準 Java™ 系統屬性進行 Proxy 設定。實際上，此方法應該包括最常見的資料庫。
+功能與導致輸出流量的 Java™ 程式碼或資料庫相容，前提是它們使用標準 Java™ 系統屬性進行 Proxy 設定。 實際上，此方法應該包括最常見的資料庫。
 
 以下是程式碼範例：
 
@@ -403,9 +403,9 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 一些資料庫需要明確設定才能使用標準 Java™ 系統屬性進行 Proxy 設定。
 
-使用 Apache HttpClient 的範例，需要明確呼叫
-[`HttpClientBuilder.useSystemProperties()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClientBuilder.html) 或使用 
-[`HttpClients.createSystem()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClients.html#createSystem())：
+使用Apache HttpClient的範例，需要明確呼叫
+[`HttpClientBuilder.useSystemProperties()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClientBuilder.html)或使用
+[`HttpClients.createSystem()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClients.html#createSystem()):
 
 ```java
 public JSONObject getJsonObject(String relativePath, String queryString) throws IOException, JSONException {
@@ -423,13 +423,13 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 ### 偵錯考量 {#debugging-considerations}
 
-若要驗證流量確實在預期的專用 IP 位址上傳出，請檢查目標服務中的記錄 (如果可用)。否則，呼叫偵錯服務可能會有幫助，例如 [https://ifconfig.me/ip](https://ifconfig.me/ip) 會傳回呼叫的 IP 位址。
+若要驗證流量確實在預期的專用 IP 位址上傳出，請檢查目標服務中的記錄 (如果可用)。 否則，呼叫偵錯服務可能會有幫助，例如 [https://ifconfig.me/ip](https://ifconfig.me/ip) 會傳回呼叫的 IP 位址。
 
 ## 虛擬私人網路 (VPN) {#vpn}
 
-VPN 允許從製作、發佈或預覽執行個體連線到內部部署基礎結構或資料中心。例如，此能力對於保護資料庫存取很有用。VPN 還允許連線到 SaaS 廠商，例如支援 VPN 的 CRM 廠商。
+VPN 允許從製作、發佈或預覽執行個體連線到內部部署基礎結構或資料中心。 例如，此能力對於保護資料庫存取很有用。 VPN 還允許連線到 SaaS 廠商，例如支援 VPN 的 CRM 廠商。
 
-支援大多數採用 IPSec 技術的 VPN 裝置。請查閱[本裝置清單](https://learn.microsoft.com/zh-tw/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable)內 **RouteBased 設定指示**&#x200B;欄中的資訊。按照表格所述設定裝置。
+支援大多數採用 IPSec 技術的 VPN 裝置。 請查閱[本裝置清單](https://learn.microsoft.com/zh-tw/azure/vpn-gateway/vpn-gateway-about-vpn-devices#devicetable)內 **RouteBased 設定指示**&#x200B;欄中的資訊。 按照表格所述設定裝置。
 
 >[!NOTE]
 >
@@ -444,7 +444,7 @@ VPN 允許從製作、發佈或預覽執行個體連線到內部部署基礎結�
 
 1. 在「**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**」控制台中，選取程式。
 
-1. 從「**程式概觀**」頁面，導覽至「**環境**」標籤，然後在左側面板選取「**網路基礎設施**」。
+1. 從&#x200B;**計畫總覽**&#x200B;頁面，瀏覽至&#x200B;**環境**&#x200B;標籤，並在左側面板中選取&#x200B;**網路基礎結構**。
 
    ![新增網路基礎結構](assets/advanced-networking-ui-network-infrastructure.png)
 
@@ -476,21 +476,21 @@ VPN 允許從製作、發佈或預覽執行個體連線到內部部署基礎結�
 
    ![新增 VPN 連線](assets/advanced-networking-ui-vpn-adding-connection.png)
 
-1. 對話框關閉，您會返回精靈的「**連線**」索引標籤。按一下&#x200B;**「繼續」**。
+1. 對話框關閉，您會返回精靈的「**連線**」索引標籤。 按一下&#x200B;**「繼續」**。
 
    ![新增 VPN 連線](assets/advanced-networking-ui-vpn-connection-added.png)
 
-1. 「**確認**」標籤會總結您的選擇和後續步驟。按一下「**儲存**」並建立內容結構。
+1. 「**確認**」標籤會總結您的選擇和後續步驟。 按一下「**儲存**」並建立內容結構。
 
    ![確認彈性連接埠輸出的設定](assets/advanced-networking-ui-vpn-confirm.png)
 
-側面板的「**網路基礎結構**」標題下方會出現一筆新的記錄。其中包括基礎結構類型、狀態、區域以及啟用的環境等詳細資訊。
+新記錄會顯示在側邊面板中的&#x200B;**網路基礎結構**&#x200B;標題下方。 其中包括基礎結構類型、狀態、區域以及啟用的環境等詳細資訊。
 
 ### API 設定 {#configuring-vpn-api}
 
-對每個程式會叫用一次 POST `/program/<programId>/networkInfrastructures` 端點，這會傳遞設定資訊的承載該資訊包括 `kind` 參數、區域、位址空間 (CIDR 清單 - 請注意，以後無法修改此值)、DNS 解析器 (用於解析網路中的名稱) 的 **vpn** 值。還包括 VPN 連接訊息，例如網關設定、共享 VPN 金鑰和 IP 安全性原則。端點會以 `network_id` 及其他資訊回應，包括狀態。
+對每個程式會叫用一次 POST `/program/<programId>/networkInfrastructures` 端點， 這會傳遞設定資訊的承載 該資訊包括 `kind` 參數、區域、位址空間 (CIDR 清單 - 請注意，以後無法修改此值)、DNS 解析器 (用於解析網路中的名稱) 的 **vpn** 值。 還包括 VPN 連接訊息，例如網關設定、共享 VPN 金鑰和 IP 安全性原則。 端點會以 `network_id` 及其他資訊回應，包括狀態。
 
-呼叫後，通常需要 45 至 60 分鐘的時間進行網路基礎結構佈建。可以呼叫 API 中的 GET 方法傳回目前狀態，這最終會從 `creating` 轉成 `ready`。請參閱 API 文件以了解各種狀態。
+呼叫後，通常需要 45 至 60 分鐘的時間進行網路基礎結構佈建。 可以呼叫 API 中的 GET 方法傳回目前狀態，這最終會從 `creating` 轉成 `ready`。 請參閱 API 文件以了解各種狀態。
 
 >[!TIP]
 >
@@ -587,7 +587,7 @@ VPN 允許從製作、發佈或預覽執行個體連線到內部部署基礎結�
 
 ### 供設定的實用網域 {#vpn-useful-domains-for-configuration}
 
-下圖提供了一組網域和相關聯的 IP 的視覺化表示，對設定和開發很有幫助。圖表下方的表格描述了這些網域和 IP。
+下圖提供了一組網域和相關聯的 IP 的視覺化表示，對設定和開發很有幫助。 圖表下方的表格描述了這些網域和 IP。
 
 ![VPN 網域設定](/help/security/assets/AdvancedNetworking.jpg)
 
@@ -605,7 +605,7 @@ VPN 允許從製作、發佈或預覽執行個體連線到內部部署基礎結�
   </tr>
   <tr>
     <td><code>p{PROGRAM_ID}.{REGION}-gateway.external.adobeaemcloud.com</code></td>
-    <td>AEM 端 VPN 閘道的 IP。您的網路工程團隊可以使用此 IP，僅允許來自特定 IP 位址的 VPN 連線進入您的 VPN 閘道。 </td>
+    <td>AEM 端 VPN 閘道的 IP。 您的網路工程團隊可以使用此 IP，僅允許來自特定 IP 位址的 VPN 連線進入您的 VPN 閘道。 </td>
   </tr>
 </tbody>
 </table>
@@ -622,8 +622,8 @@ VPN 允許從製作、發佈或預覽執行個體連線到內部部署基礎結�
    * 對於每個目標主機，您必須將預期的目標連接埠對應到 30000 到 30999 之間的連接埠。
    * 連接埠轉送規則適用於所有進階網路類型。
 
-* **非代理主機** - 非代理主機可讓您宣告一組主機，這些主機應透過共用 IP 位址範圍 (而非專用 IP) 進行路由。
-   * 此方法可能很有用，因為可以進一步最佳化透過共用 IP 輸出的流量。
+* **非Proxy主機** — 非Proxy主機可讓您宣告一組應該透過共用IP位址範圍而不是專用IP路由的主機。
+   * 此方法可能相當實用，因為流經共用IP位址的流量可能會進一步最佳化。
    * 非代理主機僅適用於專用輸出進階 IP 位址和 VPN 進階網路類型。
 
 >[!NOTE]
@@ -642,16 +642,16 @@ VPN 允許從製作、發佈或預覽執行個體連線到內部部署基礎結�
 
 1. 「**設定進階網路**」對話框開啟。
 
-1. 在「**非代理主機**」標籤上，對於專用輸出 IP 位址和 VPN，您可以選擇性定義一組主機。這些主機應透過共用 IPS 位址範圍進行路由 (而非專用的 IP)，方法是在「**非代理主機**」欄位中提供主機名，然後按一下「**新增**」。
+1. 在「**非代理主機**」標籤上，對於專用輸出 IP 位址和 VPN，您可以選擇性定義一組主機。 在&#x200B;**非Proxy主機**&#x200B;欄位中提供主機名稱，然後按一下&#x200B;**新增**，這些已定義的主機應該透過共用IP位址範圍而不是專用的IP進行路由。
 
    * 該主機將會新增至標籤上的主機清單。
    * 如果您想要新增多個主機，可重複此步驟。
-   * 如果您想要移除主機，可按一下該列右側的 X。
+   * 如果要移除主機，請按一下列右側的X。
    * 此標籤不適用於彈性連接埠輸出設定。
 
    ![新增非代理主機](assets/advanced-networking-ui-enable-non-proxy-hosts.png)
 
-1. 在「**連接埠轉送**」標籤上，如果不使用 HTTP 或 HTTPS，您可以選擇為除 80/443 以外的任何目標連接埠定義連接埠轉送規則。提供&#x200B;**名稱**、 **連接埠來源**&#x200B;和&#x200B;**連接埠目標**，然後按一下「**新增**」。
+1. 在「**連接埠轉送**」標籤上，如果不使用 HTTP 或 HTTPS，您可以選擇為除 80/443 以外的任何目標連接埠定義連接埠轉送規則。 提供&#x200B;**名稱**、 **連接埠來源**&#x200B;和&#x200B;**連接埠目標**，然後按一下「**新增**」。
 
    * 該規則將會新增至標籤上的規則清單中。
    * 如果您想要新增多個規則，可重複此步驟。
@@ -661,7 +661,7 @@ VPN 允許從製作、發佈或預覽執行個體連線到內部部署基礎結�
 
 1. 在對話框中，按一下「**儲存**」，以便您可將設定套用至環境。
 
-進階網路設定將適用於所選環境中。返回「**環境**」標籤，您可以查看套用於所選環境的設定詳細資訊及其狀態。
+進階網路設定將適用於所選環境中。 返回「**環境**」標籤，您可以查看套用於所選環境的設定詳細資訊及其狀態。
 
 ![已設定進階網路的環境](assets/advanced-networking-ui-configured-environment.png)
 
@@ -669,11 +669,11 @@ VPN 允許從製作、發佈或預覽執行個體連線到內部部署基礎結�
 
 若要為環境啟用進階網路設定，必須為每個環境叫用 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` 端點。
 
-API 應該會在幾秒鐘內做出回應，指示 `updating` 的狀態。約 10 分鐘後，對 Cloud Manager 環境 GET 端點的呼叫會顯示  `ready` 的狀態，這表示已套用環境更新。
+API 應該會在幾秒鐘內做出回應，指示 `updating` 的狀態。 約 10 分鐘後，對 Cloud Manager 環境 GET 端點的呼叫會顯示  `ready` 的狀態，這表示已套用環境更新。
 
 每個環境的連接埠轉送規則可以透過叫用 `PUT /program/{programId}/environment/{environmentId}/advancedNetworking` 端點來更新，包括完整的設定參數集而非子集。
 
-專用輸出 IP 位址和 VPN 進階網路類型支援 `nonProxyHosts` 參數。透過這項支援，您可以宣告應透過共用的 IP 位址範圍 (而非專用的 IP) 進行路由的一組主機。`nonProxyHost` URL 可能遵循 `example.com` 或`*.example.com` 的模式，其中僅在網域開頭支援萬用字元。
+專用輸出 IP 位址和 VPN 進階網路類型支援 `nonProxyHosts` 參數。 這項支援可讓您宣告一組應該透過共用IP位址範圍而不是專用IP路由的主機。 `nonProxyHost` URL 可能遵循 `example.com` 或`*.example.com` 的模式，其中僅在網域開頭支援萬用字元。
 
 即使沒有環境流量路由規則 (主機或旁路)，仍然必須用空白承載呼叫 `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking`。
 
@@ -716,7 +716,7 @@ API 應該會在幾秒鐘內做出回應，指示 `updating` 的狀態。約 10 
 
 ## 編輯和刪除程式的網路基礎結構 {#editing-deleting-program}
 
-一旦為程式建立了網路基礎結構，就只能編輯有限的屬性。如果您不需要，您可以刪除整個程式的進階網路基礎架構。
+一旦為程式建立了網路基礎結構，就只能編輯有限的屬性。 如果您不再需要它，可以刪除整個程式的進階網路基礎結構。
 
 >[!NOTE]
 >
@@ -727,37 +727,41 @@ API 應該會在幾秒鐘內做出回應，指示 `updating` 的狀態。約 10 
 >* 建立後，只能編輯 VPN 進階網路基礎架構類型，然後，只能編輯有限的欄位。
 >* 基於安全理由，在編輯進階 VPN 網路基礎架構時，一定要隨時提供&#x200B;**共用金鑰**，即使您未編輯金鑰也一樣要提供。
 
-### 使用 UI 編輯和刪除 {#delete-ui}
+### 使用UI編輯、測試或刪除 {#delete-ui}
 
 1. 在 [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) 登入 Cloud Manager，並選取適當的組織。
 
 1. 在「**[我的程式](/help/implementing/cloud-manager/navigation.md#my-programs)**」控制台中，選取程式。
 
 1. 從「**方案概觀**」頁面，導覽至「**環境**」索引標籤。
-1. 在左側面板中，按一下「**網路基礎結構**」。
-1. 按一下您想要刪除之基礎結構旁的![「更多」圖示，省略符號](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)按鈕。
+1. 在左側面板中，按一下&#x200B;**網路基礎結構**。
+1. 按一下您要編輯、測試或刪除之基礎結構旁的![更多圖示，省略符號](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)。
 
-   ![在方案層級選取編輯或刪除進階網路](assets/advanced-networking-ui-delete-infrastructure.png)
+   ![在程式層級選取編輯或刪除進階網絡](assets/advanced-networking-ui-delete-infrastructure.png)
 
-1. 按一下「**編輯**」或「**刪除**」。
+1. 按一下&#x200B;**編輯**、**測試**&#x200B;或&#x200B;**刪除**。
 
 1. 執行下列任一項作業：
 
-   * 如果您已選擇「**編輯**」，則「**編輯網路基礎結構**」精靈會開啟。請依照建立基礎結構時說明的步驟，依需要進行編輯。
+   * 如果您已選擇「**編輯**」，則「**編輯網路基礎結構**」精靈會開啟。 請依照建立基礎結構時說明的步驟，依需要進行編輯。
+
+   * 如果您選擇&#x200B;**測試**&#x200B;在環境層級啟用連線之前先自我測試連線，請在&#x200B;**最近測試**&#x200B;下拉式功能表中，選取專案以重新載入其組態，然後按一下&#x200B;**測試**。 如果未執行任何測試，功能表會顯示&#x200B;*沒有最近的測試*。
+
+     或者，在&#x200B;**主機**&#x200B;文字欄位中輸入必要的目標主機名稱。 然後，在&#x200B;**連線埠**&#x200B;下拉式功能表中，選取所需的適當連線埠。 按一下&#x200B;**測試**。 結果會顯示在對話方塊的&#x200B;**測試結果**&#x200B;區段中。
 
    * 如果您選擇「**刪除**」，請在「**刪除網路設定**」對話框中使用「**刪除**」以確認刪除，或使用「**取消**」中止。
 
 變更會反映在「**環境**」標籤上。
 
-### 使用 API 編輯和刪除 {#delete-api}
+### 使用API編輯和刪除 {#delete-api}
 
 要&#x200B;**刪除**&#x200B;程式的網路基礎結構，請叫用 `DELETE /program/{program ID}/networkinfrastructure/{networkinfrastructureID}`。
 
-## 變更程式的進階網路基礎架構類型 {#changing-program}
+## 變更程式的進階網路基礎架構型別 {#changing-program}
 
-一個方案一次只能設定一種類型的進階網路基礎結構。進階網路基礎結構必須是彈性連接埠輸出、專用輸出 IP 位址或 VPN。
+一個方案一次只能設定一種類型的進階網路基礎結構。 進階網路基礎結構必須是彈性連接埠輸出、專用輸出 IP 位址或 VPN。
 
-如果您決定需要其他進階網路基礎架構類型，而不需要已設定的網路基礎架構類型，可刪除現有的網路基礎架構類型並建立另一個網路基礎架構類型。請執行下列動作：
+如果您決定需要進階網路基礎架構型別，而不是您已經設定的型別，請刪除現有的型別，然後建立另一個型別。 請執行下列動作：
 
 1. [刪除所有環境中的進階網路](#editing-deleting-environments)。
 1. [刪除進階網路基礎結構](#editing-deleting-program)。
@@ -769,50 +773,50 @@ API 應該會在幾秒鐘內做出回應，指示 `updating` 的狀態。約 10 
 > 此程序會導致進階網路服務在刪除和重新建立之間停機。
 > 如果停機導致顯著的業務衝擊，請聯絡客戶支援以尋求協助，描述已經建立的內容和變更的原因。
 
-## 其他發佈區域的進階網路設定 {#advanced-networking-configuration-for-additional-publish-regions}
+## 適用於其他發佈區域的進階網路設定 {#advanced-networking-configuration-for-additional-publish-regions}
 
-當已設定進階網路的環境中新增額外的區域時，來自額外發佈區域的流量會遵循現有規則。預設情況下，相符的流量將路由經過主要區域。但是，如果主要區域變成無法使用，並且在額外區域中尚未啟用進階網路，則進階網路流量會下降。如果您想在其中一個區域發生中斷時將延遲最佳化並提高可用性，則有必要啟用額外發佈區域的進階網路。以下章節會說明兩種不同的案例。
+當已設定進階網路的環境中新增額外的區域時，來自額外發佈區域的流量會遵循現有規則。 預設情況下，相符的流量將路由經過主要區域。 但是，如果主要區域變成無法使用，並且在額外區域中尚未啟用進階網路，則進階網路流量會下降。 如果您想在其中一個區域發生中斷時將延遲最佳化並提高可用性，則有必要啟用額外發佈區域的進階網路。 以下章節會說明兩種不同的案例。
 
 >[!NOTE]
 >
 >所有區域都共用[環境進階網路設定](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration)，因此無法根據流量輸出的區域將流量路由至不同的目標。
 
-### 專用的輸出 IP 位址 {#additional-publish-regions-dedicated-egress}
+### 專用輸出IP地址 {#additional-publish-regions-dedicated-egress}
 
 #### 進階網路已在主要區域中啟用 {#already-enabled}
 
 如果已在主要區域中啟用進階網路設定，請依照下列步驟進行：
 
-1. 如果您已鎖定基礎結構，以便將專用的 AEM IP 位址加入允許清單，可暫時停用該基礎結構中的任何否決規則。如果跳過此步驟，您的基礎結構將暫時拒絕來自新區域 IP 位址的請求。如果您已使用完整網域名稱 (FQDN) (例如 `p1234.external.adobeaemcloud.com`) 鎖定基礎結構，則不需要執行這個步驟。所有 AEM 區域都從同一個 FQDN 輸出進階網路流量。
-1. 根據進階網路文件中的說明，可透過對 Cloud Manager Create Network Infrastructure API 的 POST 呼叫為次要區域建立計畫範圍的網路基礎結構。承載的 JSON 設定相對於主要區域的唯一差異是區域屬性
-1. 如果您必須要透過 IP 鎖定基礎結構以允許 AEM 流量，請新增對應於 `p1234.external.adobeaemcloud.com` 的 IP。每個區域都應該有一個。
+1. 如果您已鎖定基礎結構，以便將專用的 AEM IP 位址加入允許清單，可暫時停用該基礎結構中的任何否決規則。 如果跳過此步驟，您的基礎結構將暫時拒絕來自新區域 IP 位址的請求。 如果您已使用完整網域名稱 (FQDN) (例如 `p1234.external.adobeaemcloud.com`) 鎖定基礎結構，則不需要執行這個步驟。 所有 AEM 區域都從同一個 FQDN 輸出進階網路流量。
+1. 根據進階網路文件中的說明，可透過對 Cloud Manager Create Network Infrastructure API 的 POST 呼叫為次要區域建立計畫範圍的網路基礎結構。 承載的 JSON 設定相對於主要區域的唯一差異是區域屬性
+1. 如果您需要透過IP鎖定您的基礎結構以允許AEM流量，請新增對應至`p1234.external.adobeaemcloud.com`的IP位址。 每個區域都應該有一個。
 
 #### 尚未在任何區域中設定進階網路 {#not-yet-configured}
 
-此程序和先前的說明大部分類似。但是，如果尚未啟用進階網路的生產環境，則有機會先在中繼環境中啟用以測試該設定：
+此程序和先前的說明大部分類似。 但是，如果尚未啟用進階網路的生產環境，則有機會先在中繼環境中啟用以測試該設定：
 
-1. 透過對 [Cloud Manager Create Network Infrastructure API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Network-infrastructure/operation/createNetworkInfrastructure) 的 POST 呼叫建立所有區域的網路基礎結構。承載的 JSON 設定相對於主要區域的唯一差異是區域屬性。
-1. 若是中繼環境，可透過執行 `PUT api/program/{programId}/environment/{environmentId}/advancedNetworking` 啟用和設定環境範圍的進階網路。如需詳細資訊，請參閱 [API 文件](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration/operation/enableEnvironmentAdvancedNetworkingConfiguration)
-1. 如有必要，可鎖定外部基礎結構，最好透過 FQDN (例如 `p1234.external.adobeaemcloud.com`)。不然可透過 IP 位址進行
+1. 透過對 [Cloud Manager Create Network Infrastructure API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Network-infrastructure/operation/createNetworkInfrastructure) 的 POST 呼叫建立所有區域的網路基礎結構。 承載的 JSON 設定相對於主要區域的唯一差異是區域屬性。
+1. 若是中繼環境，可透過執行 `PUT api/program/{programId}/environment/{environmentId}/advancedNetworking` 啟用和設定環境範圍的進階網路。 如需詳細資訊，請參閱 [API 文件](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration/operation/enableEnvironmentAdvancedNetworkingConfiguration)
+1. 如有必要，可鎖定外部基礎結構，最好透過 FQDN (例如 `p1234.external.adobeaemcloud.com`)。 不然可透過 IP 位址進行
 1. 如果中繼環境按預期運作，請啟用並設定環境範圍的進階網路設定以進行生產。
 
 #### VPN {#vpn-regions}
 
-該程序和專用的輸出 IP 位址說明幾乎相同。唯一的差異是區域屬性的設定與主要區域不同。此外，您也可以選擇設定 `connections.gateway` 欄位。此設定可路由至由貴組織操作的不同 VPN 端點，在地理位置上更接近新區域。
+該程序和專用的輸出 IP 位址說明幾乎相同。 唯一的差異是區域屬性的設定與主要區域不同。 此外，您也可以選擇設定 `connections.gateway` 欄位。 此設定可路由至由貴組織操作的不同 VPN 端點，在地理位置上更接近新區域。
 
 ## 疑難排解
 
-請注意，以下幾點資訊是供您參考的準則，並包含疑難排解的最佳實務。這些建議旨在協助有效診斷和解決問題。
+請注意，以下幾點提供資訊性指南，並包含疑難排解的最佳作法。 這些建議旨在協助有效診斷和解決問題。
 
 ### 連線集區 {#connection-pooling-advanced-networking}
 
-連線集區是一種專門用來建立和維持連線存放庫的技術，隨時可供任何可能需要連線的執行緒立即使用。在各種線上平台和資源中可以找到許多連線集區技術，每種技術都有其獨特的優點和考量。Adobe 建議客戶研究這些方法，以找出與其系統架構最為相容的方法。
+連線集區是一種專門用來建立和維持連線存放庫的技術，隨時可供任何可能需要連線的執行緒立即使用。 在各種線上平台和資源中可以找到許多連線集區技術，每種技術都有其獨特的優點和考量。 Adobe 建議客戶研究這些方法，以找出與其系統架構最為相容的方法。
 
-實作適當的連線集區策略是主動修正系統設定中常見疏忽的措施，因為這種疏忽經常導致效能不佳。用正確的方式建立連線集區，可協助 Adobe Experience Manager (AEM) 改善外部呼叫的效率。此方法不但可以減少資源消耗，亦可緩解服務中斷的風險，並降低與上游伺服器通訊時發生請求失敗的機率。
+實作適當的連線集區策略是主動修正系統設定中常見疏忽的措施，因為這種疏忽經常導致效能不佳。 用正確的方式建立連線集區，可協助 Adobe Experience Manager (AEM) 改善外部呼叫的效率。 此方法不但可以減少資源消耗，亦可緩解服務中斷的風險，並降低與上游伺服器通訊時發生請求失敗的機率。
 
-Adobe 建議您根據這些資訊檢查目前的 AEM 設定。也可以考慮刻意在進階網路設定中使用連線集區。管理並行連線的數量並減少過時連線有助於網路效能最佳化。這些動作可降低 Proxy 伺服器達到其連線數量限制的風險。因此，此策略實作旨在降低請求無法與外部端點連接通訊的可能性。
+Adobe 建議您根據這些資訊檢查目前的 AEM 設定。 也可以考慮刻意在進階網路設定中使用連線集區。 管理並行連線的數量並減少過時連線有助於網路效能最佳化。 這些動作可降低 Proxy 伺服器達到其連線數量限制的風險。 因此，此策略實作旨在降低請求無法與外部端點連接通訊的可能性。
 
-#### 連線限制常見問題
+#### 連線限制常見問題集
 
 使用進階網路時，連線數量會受到限制，以確保各個環境之間保持穩定性，並避免較低階的環境耗盡可用的連線。
 
@@ -822,7 +826,7 @@ Adobe 建議您根據這些資訊檢查目前的 AEM 設定。也可以考慮刻
 
 此限制只適用於使用進階網路的連線 (非標準連接埠上的輸出、使用專用輸出 IP 或 VPN)。
 
-##### 輸出連線的數量似乎沒有明顯增加。為什麼現在才收到通知？
+##### 輸出連線的數量似乎沒有明顯增加。 為什麼現在才收到通知？
 
 如果客戶動態建立連線 (例如，每個請求建立一個或多個連線)，流量增加可能會導致連線數量激增。
 
@@ -832,7 +836,7 @@ Adobe 建議您根據這些資訊檢查目前的 AEM 設定。也可以考慮刻
 
 ##### 如果達到限制上限會發生什麼？
 
-達到硬性數量限制時，來自 AEM 並經過進階網路 (非標準連接埠上的輸出、使用專用輸出 IP 或 VPN) 的新輸出連線將中斷，以避免 DoS 攻擊。
+當達到硬性限制時，將捨棄從AEM透過進階網路（非標準連線埠上的輸出，使用專用輸出IP或VPN）的新輸出連線，以防止DoS攻擊。
 
 ##### 可以提高限制嗎？
 
@@ -840,20 +844,20 @@ Adobe 建議您根據這些資訊檢查目前的 AEM 設定。也可以考慮刻
 
 ##### AEM 系統會在一段時間後自動關閉連線嗎？
 
-是的，會在 JVM 層級以及在網路基礎結構的不同點上關閉連線。但此工作流程對任何生產服務而言，都只是亡羊補牢。當您不再使用連線時應確實關閉該連線，或在使用連線集區的情況下讓連線返回集區中。否則，資源會過度消耗，並可能導致資源耗盡。
+是的，會在 JVM 層級以及在網路基礎結構的不同點上關閉連線。 但此工作流程對任何生產服務而言，都只是亡羊補牢。 當您不再使用連線時應確實關閉該連線，或在使用連線集區的情況下讓連線返回集區中。 否則，資源會過度消耗，並可能導致資源耗盡。
 
 ##### 如果達到連線限制上限，是否會影響授權並導致額外費用？
 
-不會，沒有與此限制相關的授權或費用。這是一個技術限制。
+不會，沒有與此限制相關的授權或費用。 這是一個技術限制。
 
-##### 目前的使用量距離數量限制還有多遠？數量限制的允許上限是多少？
+##### 目前的使用量距離數量限制還有多遠？ 數量限制的允許上限是多少？
 
-當連線數超過 750 時，將觸發警報。每個 AEM 執行個體的連線數上限為 1000 個。
+當連線數超過 750 時，將觸發警報。 每個 AEM 執行個體的連線數上限為 1000 個。
 
 ##### 此限制適用於 VPN 嗎？
 
 是的，此限制適用於使用進階網路 (包括 VPN) 的連線。
 
-##### 在使用專用輸出 IP 時，是否仍然適用該限制？
+##### 使用專用輸出IP時限制是否仍適用？
 
 是的，如果使用專用輸出 IP，仍然適用該限制。
