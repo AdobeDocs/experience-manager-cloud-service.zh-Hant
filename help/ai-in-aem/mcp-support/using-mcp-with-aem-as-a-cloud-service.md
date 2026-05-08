@@ -4,9 +4,9 @@ description: 瞭解如何將模型上下文通訊協定與AEM as a Cloud Service
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: ddb7fc8c-affc-4374-8e08-d45d96017109
-source-git-commit: c5a3d3de3b99aea43169e7a503a4ea8ed5d480d8
+source-git-commit: a596f02b7b2e70cfff9eba6e74a65f28aaf65020
 workflow-type: tm+mt
-source-wordcount: '1892'
+source-wordcount: '1901'
 ht-degree: 0%
 
 ---
@@ -55,17 +55,17 @@ AEM會公開MCP伺服器作為HTTP端點。 以下所列的端點為相對於：
 | **內容** | `/content` | 內容作業包括建立、讀取、更新和刪除(CRUD)頁面和內容片段，以及資產匯入和資產搜尋。                                                                          <br>傳送電子郵件給`aemagentsteam@adobe.com`以啟用&#x200B;**資產搜尋**。 在電子郵件中包含組織名稱及使用案例。 |
 | **內容（唯讀）** | `/content-readonly` | 頁面和內容片段以及資產搜尋的唯讀內容作業（取得、清單/搜尋）。                                                                             <br>傳送電子郵件給`aemagentsteam@adobe.com`以啟用&#x200B;**資產搜尋**。 在電子郵件中包含組織名稱及使用案例。 |
 | **Cloud Manager** | `/cloudmanager` | 管理Cloud Manager實體，包括也可以觸發的方案、環境、存放庫和管道。 |
-| **體驗控管** | `/experience-governance` | 根據品牌治理規則評估內容（文字、影像、頁面），並列出品牌設定和檢查。<br/>客戶必須註冊[代理程式試用版或擁有付費授權](https://experienceleague.adobe.com/zh-hant/docs/experience-cloud-ai/experience-cloud-ai/agents/trial?lang=en)，才能存取Experience Governance MCP。 |
+| **體驗控管** | `/experience-governance` | 根據品牌治理規則評估內容（文字、影像、頁面），並列出品牌設定和檢查。<br/>客戶必須註冊[代理程式試用版或擁有付費授權](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/trial?lang=en)，才能存取Experience Governance MCP。 |
 
 每個MCP伺服器公開的特定工具可能會隨著時間而改變。 實際上，您可以要求啟用MCP的應用程式透過提示來探索工具，例如：
 
 ```
-"List all AEM MCP tools available from this server and describe what they do."
+"List all AEM tools available from this server and describe what they do."
 ```
 
 MCP使用者端會使用MCP通訊協定來擷取工具清單和結構描述，然後LLM就可以使用。
 
-請參考[Content MCP伺服器教學課程](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server)和[Cloud Manager MCP伺服器影片](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager)，瞭解其功能及使用方式的詳細資訊。
+請參考[Content MCP伺服器教學課程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/accelerate-content-operations-with-aem-mcp-server)和[Cloud Manager MCP伺服器影片](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/mcp-servers/cloud-manager)，瞭解其功能及使用方式的詳細資訊。
 
 ## 支援的MCP應用程式 {#supported-mcp-applications}
 
@@ -97,12 +97,12 @@ AEM的MCP伺服器可搭配一組已定義的MCP相容應用程式運作。 每�
 
 為AEM設定MCP涉及兩個主要部分：
 
-1. **每個MCP使用者端應用程式中的設定**，讓應用程式知道如何連線至AEM MCP伺服器並執行OAuth登入
+1. **每個MCP使用者端應用程式中的設定**，讓應用程式知道如何連線至AEM的MCP伺服器並執行OAuth登入
 1. **在開始提示之前選取MCP伺服器**，讓MCP使用者端知道要使用它。
 
 涵蓋兩個步驟的逐步指南適用於：
 
-* [合唱團克勞德](/help/ai-in-aem/mcp-support/setup-claude.md)
+* [Anthropic Claude （既可手動設定MCP伺服器，也可安裝AEM Claude Connector）](/help/ai-in-aem/mcp-support/setup-claude.md)
 * [OpenAI ChatGPT](/help/ai-in-aem/mcp-support/setup-chatgpt.md)
 * [游標](/help/ai-in-aem/mcp-support/setup-cursor.md)
 * [JetBrains搭配GitHub Copilot](/help/ai-in-aem/mcp-support/setup-jetbrains-copilot.md)
@@ -130,10 +130,10 @@ AEM的MCP伺服器可搭配一組已定義的MCP相容應用程式運作。 每�
 
 每個使用者都會執行此步驟，或者MCP使用者端應用程式的管理員可以在支援時執行此步驟。 不同應用程式的設定詳細資料稍有不同。 MCP使用者端正在迅速成長，對遠端MCP伺服器的支援也正在積極開發中。 您可能需要啟用「開發人員模式」才能存取新增遠端伺服器的功能，但一般程式為：
 
-1. 新增一或多個AEM MCP伺服器URL
+1. 新增一或多個MCP伺服器URL
    * 從上表設定一或多個MCP端點。 例如：`https://mcp.adobeaemcloud.com/adobe/mcp/content-readonly`
 1. 觸發連線
-   * 儲存或啟動設定，讓MCP使用者端應用程式嘗試連線至AEM MCP伺服器
+   * 儲存或啟動設定，讓MCP使用者端應用程式嘗試連線到MCP伺服器
 1. 使用Adobe ID登入
    * 出現提示時，請完成Adobe登入流程，讓應用程式能夠取得與您的Adobe ID繫結的OAuth權杖
 1. 驗證探索到的工具
@@ -145,7 +145,7 @@ AEM的MCP伺服器可搭配一組已定義的MCP相容應用程式運作。 每�
 
 Adobe代管的MCP伺服器會實作OAuth，並與Adobe的身分識別系統整合。
 
-* 當MCP使用者端應用程式連線至AEM MCP伺服器時，使用者會看到Adobe登入對話方塊，並使用其&#x200B;**Adobe ID**&#x200B;進行驗證
+* 當MCP使用者端應用程式連線到MCP伺服器時，使用者會看到Adobe登入對話方塊，並使用其&#x200B;**Adobe ID**&#x200B;進行驗證
 * 成功登入後，系統會驗證貴組織是否允許MCP使用者端應用程式，以及是否允許請求的MCP伺服器。 如果任一檢查失敗，則會顯示錯誤訊息。
 
 ![不允許的MCP使用者端錯誤](assets/MCP-Client-not-permitted.png)
