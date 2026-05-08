@@ -1,0 +1,159 @@
+---
+title: 將內容警告器與Dynamic Media Open API整合
+description: 將「內容建議程式」與各種Adobe、非Adobe及協力廠商應用程式整合。
+role: Admin, User
+badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
+exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
+source-git-commit: d5d3ff8d2bbeea8a10f950f533e4b104907ab387
+workflow-type: tm+mt
+source-wordcount: '850'
+ht-degree: 1%
+
+---
+
+# 整合Dynamic Media與OpenAPI功能 {#integrate-dynamic-media-openapis}
+
+內容警告器可讓您整合使用各種Adobe應用程式，讓這些應用程式能夠順暢地協同工作。
+
+## 先決條件 {#prereqs-polaris}
+
+如果要將「內容建議程式」與Dynamic Media與OpenAPI功能整合，請使用下列先決條件：
+
+* [通訊方法](/help/assets/content-advisor-properties.md#prereqs)
+* 若要使用OpenAPI功能存取Dynamic Media，您必須擁有下列專案的授權：
+   * Assets存放庫（例如Experience Manager Assets as a Cloud Service）。
+   * AEM Dynamic Media。
+* 只有[個核准的資產](/help/assets/approve-assets.md)可供使用，以確保品牌一致性。
+
+## 整合Dynamic Media與OpenAPI功能 {#adobe-app-integration-polaris}
+
+將「內容建議程式」與Dynamic Media OpenAPI程式整合涉及各種步驟，包括建立自訂的Dynamic Media URL或準備挑選Dynamic Media URL等。
+
+### 將Dynamic Media的內容顧問與OpenAPI功能整合 {#integrate-dynamic-media}
+
+`rootPath`和`path`屬性不應該是具有OpenAPI功能的Dynamic Media的一部分。 您可以改為設定`aemTierType`屬性。 以下是設定的語法：
+
+```
+aemTierType:[1: "delivery"]
+```
+
+此設定可讓您檢視所有核准的資產，而不使用資料夾或以平面結構檢視。 如需詳細資訊，請導覽至[內容警告器屬性](/help/assets/content-advisor-properties.md)下的`aemTierType`屬性。
+
+
+### 從已核准的資產建立動態傳送URL {#create-dynamic-media-url}
+
+設定「內容建議程式」後，系統會使用物件的綱要，從選取的資產建立動態傳送URL。
+例如，從選取資產時收到的物件陣列中的一個物件的結構描述：
+
+```
+{
+"dc:format": "image/jpeg",
+"repo:assetId": "urn:aaid:aem:xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+"repo:name": "image-7.jpg",
+"repo:repositoryId": "delivery-pxxxx-exxxxxx.adobe.com",
+...
+}
+```
+
+所有選取的資產都由做為JSON物件的`handleSelection`函式執行。 例如 `JsonObj`。 動態傳遞URL是透過結合以下電信業者來建立：
+
+| 物件 | JSON |
+|---|---|
+| 主機 | `assetJsonObj["repo:repositoryId"]` |
+| API根目錄 | `/adobe/assets` |
+| asset-id | `assetJsonObj["repo:assetId"]` |
+| seo-name | `assetJsonObj["repo:name"].split(".").slice(0,-1).join(".")` |
+| 格式 | `.jpg` |
+
+#### 核准的資產傳送API規格 {#approved-assets-delivery-api-specification}
+
+URL格式：
+`https://<delivery-api-host>/adobe/assets/<asset-id>/as/<seo-name>.<format>?<image-modification-query-parameters>`
+
+其中，
+
+* 主機為`https://delivery-pxxxxx-exxxxxx.adobe.com`
+* API根目錄為`"/adobe/assets"`
+* `<asset-id>`為資產識別碼
+* `as`是open API規格的常數部分，指出要參照的資產名稱
+* `<seo-name>`為資產名稱
+* `<format>`為輸出格式
+* `<image modification query parameters>`為已核准資產的傳遞API規格所支援
+
+#### 核准的資產原始轉譯傳送API {#approved-assets-delivery-api}
+
+動態傳送URL擁有下列語法：
+`https://<delivery-api-host>/adobe/assets/<asset-id>/original/as/<seo-name>`，其中，
+
+* 主機為`https://delivery-pxxxxx-exxxxxx.adobe.com`
+* 原始轉譯傳遞的API根為`"/adobe/assets"`
+* `<asset-id>`為資產識別碼
+* `/original/as`是open API規格的常數部分，指出原始轉譯稱為
+* `<seo-name>`為具有或不具有副檔名的資產名稱
+
+### 準備挑選動態傳遞URL {#ready-to-pick-dynamic-delivery-url}
+
+所有選取的資產都由做為JSON物件的`handleSelection`函式執行。 例如 `JsonObj`。 動態傳遞URL是透過結合以下電信業者來建立：
+
+| 物件 | JSON |
+|---|---|
+| 主機 | `assetJsonObj["repo:repositoryId"]` |
+| API根目錄 | `/adobe/assets` |
+| asset-id | `assetJsonObj["repo:assetId"]` |
+| seo-name | `assetJsonObj["repo:name"]` |
+
+以下是遍歷JSON物件的兩種方式：
+
+![動態傳遞URL](assets/dynamic-delivery-url.png)
+
+* **縮圖：**縮圖可為影像，資產為PDF、影片、影像等。 不過，您可以使用資產縮圖的高度和寬度屬性作為動態傳送轉譯。
+下列轉譯集可用於PDF型別資產：
+在sidekick中選取PDF後，選取內容會提供以下資訊。 以下為遍歷JSON物件的方式：
+
+  <!--![Thumbnail dynamic delivery url](image-1.png)-->
+
+  您可以在上方熒幕擷圖中，參考`selection[0].....selection[4]`以取得一系列轉譯連結。 例如，其中一個縮圖轉譯的關鍵屬性包括：
+
+  ```
+  { 
+      "height": 319, 
+      "width": 319, 
+      "href": "https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/as/algorithm design.jpg?width=319&height=319", 
+      "type": "image/webp" 
+  } 
+  ```
+
+在上述熒幕擷圖中，如果需要PDF，而非其縮圖，則需要將PDF原始轉譯的傳送URL合併至目標體驗。 例如 `https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf`
+
+* **影片：**您可以使用內嵌iFrame的影片型別資產，使用影片播放器URL。 您可以在目標體驗中使用下列陣列轉譯：
+  <!--![Video dynamic delivery url](image.png)-->
+
+  ```
+  { 
+      "height": 319, 
+      "width": 319, 
+      "href": "https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/as/DragDrop.2.jpg?width=319&height=319", 
+      "type": "image/webp" 
+  } 
+  ```
+
+  您可以在上方熒幕擷圖中，參考`selection[0].....selection[4]`以取得一系列轉譯連結。 例如，其中一個縮圖轉譯的關鍵屬性包括：
+
+  上述熒幕擷取畫面中的程式碼片段為視訊資產的範例。 其中包含轉譯連結陣列。 摘錄中的`selection[5]`是影像縮圖的範例，可做為目標體驗中視訊縮圖的預留位置。 轉譯陣列中的`selection[5]`適用於視訊播放器。 此函式提供HTML，可設為iframe的`src`。 它支援自我調整位元速率串流，這是網頁最佳化的視訊傳送方式。
+
+  在上述範例中，視訊播放器URL為`https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/play`
+
+### 設定自訂篩選器 {#configure-custom-filters-dynamic-media-open-api}
+
+Dynamic Media內容警告器搭配OpenAPI功能，可讓您設定自訂屬性以及基於自訂屬性的篩選器。 `filterSchema`屬性是用來設定這類屬性。 自訂可公開為`metadata.<metadata bucket>.<property name>.`，以便針對其設定篩選器，其中，
+
+* `metadata`是資產的資訊
+* `embedded`是用於設定的靜態引數，並且
+* `<propertyname>`是您正在設定的篩選器名稱
+
+對於設定，定義在`jcr:content/metadata/`層級的屬性會針對您要設定的篩選器，公開為`metadata.<metadata bucket>.<property name>.`。
+
+例如，在具有OpenAPI功能的Dynamic Media內容警告程式中，`asset jcr:content/metadata/client_name:market`上的屬性已轉換為`metadata.embedded.client_name:market`以進行篩選器設定。
+
+若要取得名稱，必須完成一次性活動。 對資產發出搜尋API呼叫，並取得屬性名稱（基本上是貯體）。
+
