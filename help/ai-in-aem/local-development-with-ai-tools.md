@@ -123,7 +123,7 @@ CTA Link (ctaLink) - Pathfield
 
 代理程式會回應欄位規格以進行確認，然後產生所有元件檔案。 支援的模式包括含有複合巢狀專案的多欄位、條件式顯示/隱藏邏輯、透過Sling Resource Merger的核心元件擴充功能，以及使用AEM Mocks的JUnit 5測試。 設計可來自各種來源，包括文字說明、影像或使用Figma MCP伺服器的Figma設計URL。
 
-使用AEM代理程式技能教學課程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development)進行[元件開發以瞭解更多資訊。
+使用AEM代理程式技能教學課程[&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development)進行元件開發以瞭解更多資訊。
 
 ### 使用Dispatcher技能 {#use-the-dispatcher-skill}
 
