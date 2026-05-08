@@ -4,9 +4,9 @@ description: 瞭解如何使用專案內容、代理程式技能和MCP伺服器�
 feature: Developing
 role: Developer
 exl-id: 09d6257d-36ad-49e5-831f-c44b356f1800
-source-git-commit: 827cf0dada4e624418dc967a9bce8ebf728f7ad7
+source-git-commit: 6fe463cb3f350f84e3853950e667eac851f672ef
 workflow-type: tm+mt
-source-wordcount: '1601'
+source-wordcount: '1623'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ AI編碼代理程式（Claude Code、Cursor、GitHub Copilot和類似工具）�
 | **AEM Quickstart本機MCP伺服器** | 公開本機AEM SDK執行個體的即時執行階段資料，以支援疑難排解 |
 | **Dispatcher本機MCP伺服器** | 啟用本機Dispatcher執行個體的執行階段驗證和檢查 |
 
-請檢閱[AI輔助開發教學課程](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/overview)，以取得其他動手操作說明。
+請檢閱[AI輔助開發教學課程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/overview)，以取得其他動手操作說明。
 
 >[!NOTE]
 >
@@ -59,7 +59,7 @@ Adobe已在&#x200B;**[adobe/skills](https://github.com/adobe/skills/tree/main/pl
 
 ### 安裝技能 {#install-skills}
 
-選擇與您的AI編碼工具相符的方法。 一旦安裝技能，即可供該電腦上的所有專案使用。 請參閱[設定AEM代理程式技能教學課程](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/setup/agent-skills)，以取得具體逐步解說。
+選擇與您的AI編碼工具相符的方法。 一旦安裝技能，即可供該電腦上的所有專案使用。 請參閱[設定AEM代理程式技能教學課程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/setup/agent-skills)，以取得具體逐步解說。
 
 #### 克勞德程式碼 {#claude-code}
 
@@ -121,9 +121,9 @@ CTA Text (ctaText) - Textfield
 CTA Link (ctaLink) - Pathfield
 ```
 
-代理程式會回應欄位規格以進行確認，然後產生所有元件檔案。 支援的模式包括含有複合巢狀專案的多欄位、條件式顯示/隱藏邏輯、透過Sling Resource Merger的核心元件擴充功能，以及使用AEM Mocks的JUnit 5測試。
+代理程式會回應欄位規格以進行確認，然後產生所有元件檔案。 支援的模式包括含有複合巢狀專案的多欄位、條件式顯示/隱藏邏輯、透過Sling Resource Merger的核心元件擴充功能，以及使用AEM Mocks的JUnit 5測試。 設計可來自各種來源，包括文字說明、影像或使用Figma MCP伺服器的Figma設計URL。
 
-使用AEM代理程式技能教學課程[&#128279;](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development)進行元件開發以瞭解更多資訊。
+使用AEM代理程式技能教學課程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development)進行[元件開發以瞭解更多資訊。
 
 ### 使用Dispatcher技能 {#use-the-dispatcher-skill}
 
