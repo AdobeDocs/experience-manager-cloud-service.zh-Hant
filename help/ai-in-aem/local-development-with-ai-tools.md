@@ -4,12 +4,13 @@ description: 瞭解如何使用專案內容、代理程式技能和MCP伺服器�
 feature: Developing
 role: Developer
 exl-id: 09d6257d-36ad-49e5-831f-c44b356f1800
-source-git-commit: 6fe463cb3f350f84e3853950e667eac851f672ef
+source-git-commit: 236c9edfdd2d540fd767dcc91058aab32eb035c8
 workflow-type: tm+mt
-source-wordcount: '1623'
+source-wordcount: '1648'
 ht-degree: 0%
 
 ---
+
 
 # 使用AI工具進行本機開發 {#local-development-with-ai-tools}
 
@@ -17,32 +18,32 @@ ht-degree: 0%
 >
 >本文主要介紹使用AI工具針對&#x200B;**AEM Java棧疊開發**&#x200B;進行本機開發。 若為Edge Delivery Services，請參閱[使用AI工具開發](https://www.aem.live/developer/ai-coding-agents)。
 
-AI編碼代理程式（Claude Code、Cursor、GitHub Copilot和類似工具）對AEM的基礎技術(Java、OSGi、Sling、JCR、HTL)有廣泛的瞭解，但不一定知道產生程式碼和設定的最佳實務，或如何偵錯常見的AEM開發問題。
+AI編碼代理程式（Claude Code、Cursor、GitHub Copilot和類似工具）對AEM的基礎技術(Java、OSGi、Sling、JCR、HTL)有廣泛的瞭解，但不一定知道產生程式碼和設定或如何偵錯常見AEM開發問題的最佳實務。
 
 有四個補充元件可解決此問題：
 
 | 元件 | 用途 |
 |---|---|
-| **代理程式.md** | 特定專案的內容檔案，可在每個工作階段的AEM Cloud Service專案中建立AI |
+| **代理程式.md** | 特定專案的內容檔案，可在您每個作業階段的AEM as a Cloud Service專案中建立AI |
 | **代理程式技能** | 可重複使用的指令集用於週期性開發任務，例如元件建立和Dispatcher設定 |
 | **AEM Quickstart本機MCP伺服器** | 公開本機AEM SDK執行個體的即時執行階段資料，以支援疑難排解 |
 | **Dispatcher本機MCP伺服器** | 啟用本機Dispatcher執行個體的執行階段驗證和檢查 |
 
-請檢閱[AI輔助開發教學課程](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/overview)，以取得其他動手操作說明。
+請檢閱[AI輔助開發教學課程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/overview)，以取得其他動手操作說明。
 
->[!NOTE]
+>[!TIP]
 >
-> AEM雲端服務的遠端MCP伺服器對於本機開發也很有用，但本文未予說明。 在[搭配使用MCP與Cloud Service文章](/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)中進一步瞭解這些功能。
+>AEM Cloud Service的遠端MCP伺服器對於本機開發也很有用。 在[搭配使用MCP與Cloud Service文章]中進一步瞭解這些功能。(/help/ai-in-aem/mcp-support/using-mcp-with-aem-as-a-cloud-service.md)
 
 ## AGENTS.md {#agentsmd}
 
-`AGENTS.md`是位於AEM專案根目錄的Markdown檔案，AI編碼工具會在每個工作階段開始時自動載入，以便以基本的AEM Cloud Service Java棧疊網域專業知識為基礎（而不是其他AEM解決方案，例如AEM 6.5或Edge Delivery Services）。
+`AGENTS.md`是位於AEM專案根目錄的Markdown檔案。 AI編碼工具會在每個工作階段開始時自動載入此檔案，以便透過基本的AEM Cloud Service Java棧疊網域專業知識（而不是其他AEM解決方案，例如AEM 6.5或Edge Delivery Services）紮根。
 
-`AGENTS.md`不是您複製的靜態檔案 — 它是由下一節中說明的`ensure-agents-md`技能產生的。 此技能會讀取您的`pom.xml`來解析專案名稱、探索模組，以及偵測已安裝的附加元件，產生針對您特定專案量身打造的檔案。
+`AGENTS.md`不是您複製的靜態檔案。 它是由本檔案下一節中說明的`ensure-agents-md`技能所產生。 此技能會讀取您的`pom.xml`來解析專案名稱、探索模組，以及偵測已安裝的附加元件，產生針對您特定專案量身打造的檔案。
 
 >[!NOTE]
 >
->一旦`AGENTS.md`存在於專案根目錄中，`ensure-agents-md`技能便不再執行。 如果您的專案結構變更，請直接編輯檔案。
+>一旦專案根目錄中有`AGENTS.md`，`ensure-agents-md`技能就不再執行。 如果您的專案結構變更，請直接編輯檔案。
 
 ## 代理程式技能 {#agent-skills}
 
@@ -55,11 +56,11 @@ Adobe已在&#x200B;**[adobe/skills](https://github.com/adobe/skills/tree/main/pl
 | `ensure-agents-md` | 啟動程式`AGENTS.md`和`CLAUDE.md`根據專案的實際模組結構量身打造 |
 | `create-component` | 支架完整的AEM元件：元件定義、對話方塊XML、HTL範本、Sling模型、單元測試和clientlibs |
 | `dispatcher` | AI支援的Dispatcher和Apache HTTPD設定小幫手，涵蓋設定編寫、技術諮詢、事件回應、效能調整和安全性強化 |
-| `workflow` | 所有AEM as a Cloud Service工作流程技能的單一進入點。 涵蓋工作流程模型設計、自訂流程步驟和參與者選擇器開發、啟動器設定、工作流程觸發和生產支援，包括偵錯停滯/失敗的工作流程、透過Cloud Manager記錄擷取事件、執行緒集區分析，以及Granite工作流程引擎的Sling作業診斷。 |
+| `workflow` | 這是所有AEM as a Cloud Service工作流程技能的單一進入點。 內容涵蓋工作流程模型設計、自訂流程步驟和參與者選擇器開發、啟動器設定、工作流程觸發和生產支援，包括偵錯停滯/失敗的工作流程、透過Cloud Manager記錄擷取事件、執行緒集區分析，以及Granite工作流程引擎的Sling作業診斷。 |
 
 ### 安裝技能 {#install-skills}
 
-選擇與您的AI編碼工具相符的方法。 一旦安裝技能，即可供該電腦上的所有專案使用。 請參閱[設定AEM代理程式技能教學課程](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/setup/agent-skills)，以取得具體逐步解說。
+選擇與您的AI編碼工具相符的方法。 一旦安裝技能，即可供該電腦上的所有專案使用。 請參閱[設定AEM代理程式技能教學課程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/setup/agent-skills)，以取得具體逐步解說。
 
 #### 克勞德程式碼 {#claude-code}
 
@@ -85,16 +86,16 @@ npx skills add https://github.com/adobe/skills/tree/main/skills/aem/cloud-servic
 gh extension install ai-ecoverse/gh-upskill
 
 # Install all available skills
-gh upskill adobe/skills --path skills/aem/cloud-service --all
+gh upskill adobe/skills --path plugins/aem/cloud-service --all
 ```
 
 ### 使用secure-agents-md技能 {#use-the-ensure-agents-md-skill}
 
-安裝技能後，在尚未有`AGENTS.md`的任何AEM Cloud Service專案中開啟您的AI助理。 此技能會在處理您的第一個要求之前自動執行，在專案根目錄建立兩個檔案時不需要明確叫用。
+安裝技能後，在尚未有`AGENTS.md`的任何AEM as a Cloud Service專案中開啟您的AI助理。 此技能會在處理您的第一個要求之前自動執行，在專案根目錄建立兩個檔案時不需要明確叫用。
 
 ### 使用建立元件技能 {#use-the-create-component-skill}
 
-第一次使用時，技能會自動從`pom.xml`和現有元件中偵測`project`、`package`和`group`，要求您確認偵測到的值，然後在專案根目錄中建立`.aem-skills-config.yaml`。 首次使用前不需要手動設定。
+第一次使用時，技能會自動從`pom.xml`和現有元件中偵測`project`、`package`和`group`，並要求您確認偵測到的值。 然後在專案根目錄建立`.aem-skills-config.yaml`。 首次使用前不需要手動設定。
 
 如果您偏好預先建立檔案，請將`.aem-skills-config.yaml`置於專案根目錄，其結構如下：
 
@@ -123,7 +124,7 @@ CTA Link (ctaLink) - Pathfield
 
 代理程式會回應欄位規格以進行確認，然後產生所有元件檔案。 支援的模式包括含有複合巢狀專案的多欄位、條件式顯示/隱藏邏輯、透過Sling Resource Merger的核心元件擴充功能，以及使用AEM Mocks的JUnit 5測試。 設計可來自各種來源，包括文字說明、影像或使用Figma MCP伺服器的Figma設計URL。
 
-使用AEM代理程式技能教學課程[&#128279;](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development)進行元件開發以瞭解更多資訊。
+依照[使用AEM Agent技能的元件開發教學課程，以瞭解更多資訊。](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/ai/ai-assisted-development/use-cases/component-development)
 
 ### 使用Dispatcher技能 {#use-the-dispatcher-skill}
 
@@ -140,11 +141,11 @@ CTA Link (ctaLink) - Pathfield
 
 若是廣泛或首次要求，請從`workflow-orchestrator`子技能開始。 針對鎖定目標工作，請向適當的專員說明特定的關注事項和技能路線。
 
-Dispatcher技能可處理協調和建議指導。 Dispatcher MCP伺服器（如下所述）提供技能在需要本機證據時所使用的七項驗證和執行階段工具。
+Dispatcher技能可處理協調和建議指導。 Dispatcher MCP伺服器（如下節所述）提供技能在需要本機證據時所使用的七種驗證和執行階段工具。
 
 ## AEM快速入門MCP伺服器 {#aem-quickstart-mcp-server}
 
-模型上下文通訊協定(MCP)是一種開放標準，允許AI編碼工具連線到外部資料來源和服務。 AEM Quickstart MCP伺服器是一個內容套件，一旦安裝在本機AEM SDK執行個體中，就會將執行階段資料直接公開給連線的AI工具，讓代理程式能夠擷取記錄、診斷OSGi失敗並在不離開IDE的情況下檢查請求處理。
+模型上下文通訊協定(MCP)是一種開放標準，允許AI編碼工具連線到外部資料來源和服務。 AEM Quickstart MCP伺服器是一個內容套件，一旦安裝在本機AEM SDK執行個體中，就會將執行階段資料直接公開給連線的AI工具，讓代理程式擷取記錄、診斷OSGi失敗並在不離開IDE的情況下檢查請求處理。
 
 ### 安裝內容封裝 {#install-the-content-package}
 
