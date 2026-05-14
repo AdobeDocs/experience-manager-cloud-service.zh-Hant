@@ -5,9 +5,9 @@ badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 feature: Collaboration
 role: User
 exl-id: fa737a57-d346-4e6d-a9cd-99bcb6b344fe
-source-git-commit: c92611e4b815e49887e175943b81177e60623067
+source-git-commit: 13d79aaa9508282c0d0672fd864afd5b384c034e
 workflow-type: tm+mt
-source-wordcount: '2165'
+source-wordcount: '2171'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ Adobe Experience Manager (AEM) Assets也與Adobe Express原生整合，可讓您
 
 傳統關鍵字式搜尋會尋找精確字詞，而AI 搜尋則解譯字詞、概念和使用者意圖之間的關係。 這可確保使用者找到他們要尋找的內容 — 即使他們的查詢用詞不同、包含拼寫錯誤或使用另一種語言。
 
-內容警告器![&#128279;](assets/content-advisor-ai-search.png)中的資產AI 搜尋
+內容警告器](assets/content-advisor-ai-search.png)中的資產![AI 搜尋
 
 如果其主要優點包括：
 
@@ -126,7 +126,7 @@ Dynamic Media轉譯提供立即可用且通道最佳化的資產版本，包括[
 
 ![預覽Dynamic Media轉譯](assets/content-advisor-dm-preview.png)
 
-按一下&#x200B;**[!UICONTROL 新增修飾元]**，在文字方塊中指定修飾元，然後按Enter鍵以即時套用轉換至所有資產轉譯。 同樣地，您可以將多個修飾元新增至轉譯並預覽這些轉換。 按一下轉譯名稱，然後按一下&#x200B;**[!UICONTROL 選取]**，讓轉譯可在您的主機應用程式中使用。 套用這些修飾元後的轉譯不會儲存。 檢視[Dynamic Media Scene7](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference)和[Dynamic Media with OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat)支援的修飾元清單。
+按一下&#x200B;**[!UICONTROL 新增修飾元]**，在文字方塊中指定修飾元，然後按Enter鍵以即時套用轉換至所有資產轉譯。 同樣地，您可以將多個修飾元新增至轉譯並預覽這些轉換。 按一下轉譯名稱，然後按一下&#x200B;**[!UICONTROL 選取]**，讓轉譯可在您的主機應用程式中使用。 套用這些修飾元後的轉譯不會儲存。 檢視[Dynamic Media Scene7](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference)和[Dynamic Media with OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/assets/delivery/#operation/getAssetSeoFormat)支援的修飾元清單。
 
 ### 探索內容片段 {#content-fragments-discovery-content-advisor}
 
@@ -201,6 +201,8 @@ Assets （檔案）支援自訂篩選結構描述，但是資料夾和集合尚�
 | AEM Sites — 內容片段編輯器（僅在「內容參考」欄位中） | ✓ | ✓ | ✓ | − |
 | Adobe Workfront工作流程 | ✓ | ✓ | − | ✓ |
 | Adobe Workfront規劃 | ✓ | ✓ | − | ✓ |
+| [AEM Assets檢視](/help/assets/assets-view-introduction.md) | ✓ | − | − | − |
+| [AEM Content Hub](/help/assets/product-overview.md) | ✓ | ✓ | − | − |
 
 ## 非Adobe應用程式中的「內容建議程式」功能支援 {#content-advisor-feature-support-non-adobe-applications}
 
