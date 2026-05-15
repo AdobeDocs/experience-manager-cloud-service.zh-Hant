@@ -46,7 +46,7 @@ ht-degree: 2%
 
 在設定實驗之前，請記住，您需要使用AEM網站作為內容來源，才能在通用編輯器中創作。 如有需要，您可以依照[設定AEM as a Content Source](https://www.aem.live/developer/ue-tutorial)頁面中提供的教學課程，將現有的專案轉換為內容來源的AEM Sites網站。 當您準備好在Universal Editor中設定實驗時，請遵循下列步驟：
 
-1. 在Universal Editor中開啟專案，並檢查&#x200B;**A/B**圖示延伸。 如果圖示未顯示，請確認您是否已在擴充功能管理員中啟用該功能。 如果未啟用，請啟用或要求存取權。
+1. 在Universal Editor中開啟專案，並檢查&#x200B;**A/B**&#x200B;圖示延伸。 如果圖示未顯示，請確認您是否已在擴充功能管理員中啟用該功能。 如果未啟用，請啟用或要求存取權。
    <!--1. Open your GitHub repository and check if the `plugins/experimention` folder exists. If not, you will need to set up the experimentation engine and MFE first (see the note above).-->
 1. 將您的`fstab.yaml`設定指向您的專案設定，並將其連結至您的AEM作者執行個體。 另請參閱[將您的程式碼連線至您的內容](https://www.aem.live/developer/ue-tutorial#connect-your-code-to-your-content)
 1. 開啟您的AEM執行個體，如果您已準備好專案，請直接在Universal Editor中開啟。
@@ -75,7 +75,7 @@ ht-degree: 2%
 [作業遙測服務](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)會收集資料，例如，控制頁面與挑戰者頁面的訪客數。 然後您可使用這些資料為您的網站選取必要的改善專案。 只要您維持在網站既定設計語言內並使用現有功能，您就應該能夠設定實驗變體，並在幾分鐘內將其傳送至生產環境。
 
 >[!NOTE]
->請記得，外掛程式不會使用或持續使用任何可能導致使用者身分識別的一般使用者資料。 使用AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)中使用[作業遙測服務的預設設定時，不需要使用者選擇加入或Cookie同意。
+>請記得，外掛程式不會使用或持續使用任何可能導致使用者身分識別的一般使用者資料。 使用AEM as a Cloud Service[&#128279;](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)中使用作業遙測服務的預設設定時，不需要使用者選擇加入或Cookie同意。
 
 <!--### Frequently used terms {#frequently-used-terms}
 
@@ -141,7 +141,7 @@ Before following the rest of the guide to set up your first experiment, there ar
 
 ### 在Edge Delivery Services中搭配AEM Sidekick使用實驗
 
-如果您已安裝AEM Sidekick，則可以直接在Edge Delivery Service中將實驗邊欄用於您的專案，而不使用通用編輯器。 功能基本上與上述A/B測試相同，請記住，您必須處於&#x200B;**預覽**&#x200B;模式才能編輯和設定測試。 完成設定測試之後，請按一下[啟動]，將控制項和挑戰者變體推上線，並開始收集遙測資料。****
+如果您已安裝AEM Sidekick，則可以直接在Edge Delivery Service中將實驗邊欄用於您的專案，而不使用通用編輯器。 功能基本上與上述A/B測試相同，請記住，您必須處於&#x200B;**預覽**&#x200B;模式才能編輯和設定測試。 完成設定測試之後，請按一下[啟動]，將控制項和挑戰者變體推上線，並開始收集遙測資料。**&#x200B;**
 
 <!-- ### Experiment Identifier {#experiment-identifier}
 
@@ -298,7 +298,7 @@ Adobe Experience Manager 使用[操作遙測](/help/sites-cloud/administering/op
 
 ### 隱私策略 {#privacy-experimentation}
 
-AEM as a Cloud Service](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)中的[作業遙測服務是專為保留訪客隱私權及最小化資料收集而設計。 身為訪客，這表示Adobe不會嘗試收集您的個人資訊或可追蹤回您的資訊。 身為網站操作者，請檢閱以下收集的資料專案以瞭解其是否需要同意。
+AEM as a Cloud Service[&#128279;](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md)中的作業遙測服務是專為保留訪客隱私權及最小化資料收集而設計。 身為訪客，這表示Adobe不會嘗試收集您的個人資訊或可追蹤回您的資訊。 身為網站操作者，請檢閱以下收集的資料專案以瞭解其是否需要同意。
 AEM作業遙測不使用任何使用者端狀態或ID （例如Cookie或`localStorage`、`sessionStorage`或類似專案）來收集使用量度。 資料是透過`Navigator.sendBeacon`呼叫以透明方式提交，而非透過畫素或類似技術提交。 裝置或個人無法透過其IP位址、使用者代理字串或任何其他資料進行「指紋識別」，以擷取取樣資料。
 
 不允許將任何個人資料新增至作業遙測資料收集，且作業遙測資料不得用於超出絕對必要範圍的使用案例。
