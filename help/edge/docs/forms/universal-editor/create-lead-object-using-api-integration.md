@@ -20,7 +20,7 @@ ht-degree: 89%
 
 此使用案例會逐步說明如何在 Salesforce 中使用 API 整合來建立 Lead。 完成此流程後，您可以：
 
-設定 ](https://help.salesforce.com/s/articleView?id=platform.ev_relay_create_connected_app.htm&type=5)Salesforce 中已連線的應用程式[來啟用安全的 API 存取權。
+設定 [&#128279;](https://help.salesforce.com/s/articleView?id=platform.ev_relay_create_connected_app.htm&type=5)Salesforce 中已連線的應用程式來啟用安全的 API 存取權。
 
 設定 CORS (跨來源資源共用) 來允許在網頁瀏覽器中執行的程式碼 (例如 JavaScript) 從特定來源與 Salesforce 進行通訊，將此來源新增至允許清單，如下所示：
 

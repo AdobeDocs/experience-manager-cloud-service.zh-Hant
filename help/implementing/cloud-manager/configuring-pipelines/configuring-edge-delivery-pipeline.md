@@ -30,7 +30,7 @@ ht-degree: 15%
 >
 >* 已建立包含一個Edge Delivery Services網站和一個對應網域的計畫。 否則，稱為「**新增Edge Delivery管道**」的選項在使用者介面中會顯示為停用，工具提示會說明缺少的需求。 請參閱[在Cloud Manager中建立Edge Delivery網站](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md)
 >* Git存放庫至少有一個分支。 請參閱[在Cloud Manager中管理存放庫](/help/implementing/cloud-manager/managing-code/managing-repositories.md)。
->* 生產和中繼環境隨即建立。 請參閱[ CI/CD管道簡介](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)。
+>* 生產和中繼環境隨即建立。 請參閱[&#x200B; CI/CD管道簡介](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)。
 
 <!-- CMGR‑69680 -->
 
@@ -97,7 +97,7 @@ ht-degree: 15%
 
      另請參閱[新增和管理存放庫](/help/implementing/cloud-manager/managing-code/managing-repositories.md)，瞭解如何在Cloud Manager中新增和管理存放庫。
 
-   * **Git分支** — 使用下拉式清單選取所選存放庫中的特定分支。 如有必要，請按一下[回收]圖示或[重新整理]圖示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg)，在最近的推播之後重新載入Git分支下拉式清單。![
+   * **Git分支** — 使用下拉式清單選取所選存放庫中的特定分支。 如有必要，請按一下[回收]圖示或[重新整理]圖示![&#128279;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg)，在最近的推播之後重新載入Git分支下拉式清單。
    * **程式碼位置** — 定義存放庫中的資料夾路徑，管道就緒的程式碼會在此存放庫開始（ `/`等於存放庫根目錄）。
 
    ![設定管道](/help/implementing/cloud-manager/configuring-pipelines/assets/add-edge-delivery-pipeline-sourcecode.png)
