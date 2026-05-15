@@ -3,10 +3,9 @@ title: AEM as a Cloud Service中的內容實驗
 description: 瞭解如何使用實驗邊欄將實驗功能新增到您的網站。
 feature: Administering
 role: Admin
-exl-id: 420f8d5e-27f9-4081-b174-b2d7752779f7
-source-git-commit: 4764d9b3343ca88e0de7506d955741e8cac2f2e1
+source-git-commit: c948abf5391e61f01912f769b17e1ac0bd81a745
 workflow-type: tm+mt
-source-wordcount: '1953'
+source-wordcount: '1949'
 ht-degree: 2%
 
 ---
@@ -55,7 +54,7 @@ ht-degree: 2%
 1. 按一下A/B圖示以開啟實驗擴充功能。
 
 >[!NOTE]
->如果您在設定專案的實驗時遇到問題，請連絡[aem-contextual-experimentation@adobe.com](mailto:aem-contextual-experimentation@adobe.com)。
+>如果您在為專案設定實驗時遇到問題，請聯絡`aem-contextual-experimentation@adobe.com`。
 
 >[!NOTE]
 >如需如何設定及設定實驗引擎的詳細資訊，請參閱以下[存放庫](https://github.com/adobe/aem-experimentation/tree/v2-ui)的檔案區段。
