@@ -177,7 +177,7 @@ x-aem-debug: edge=true,x-forwarded-host=www.example.com, x-forwarded-for=....
 >您可以使用快速開發環境(RDE)來部署和測試您的設定：
 >
 >* [快速開發環境](/help/implementing/developing/introduction/rapid-development-environments.md)
->* [如何使用快速開發環境](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
+>* [如何使用快速開發環境](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use#deploy-configuration-yaml-files)
 
 ### CDN廠商設定範例 {#sample-configurations}
 
