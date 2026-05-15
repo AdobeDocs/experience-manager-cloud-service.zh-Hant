@@ -4,17 +4,17 @@ description: 這是通用編輯器預覽版本的發行說明。
 feature: Release Information
 role: Admin
 exl-id: e8d031aa-4676-4e45-977b-e5dffcc404c4
-source-git-commit: a622916de4edd29b5ecbbd0e0e7f4b2d87ff0511
+source-git-commit: b6a8b340f89e079047db668d6418e7952185a41f
 workflow-type: tm+mt
-source-wordcount: '153'
-ht-degree: 52%
+source-wordcount: '131'
+ht-degree: 61%
 
 ---
 
 
 # 通用編輯器預覽發行說明 {#preview}
 
-這是通用編輯器&#x200B;**預覽版本**&#x200B;的發行說明。 您目前可以在通用編輯器&#x200B;**預覽環境**&#x200B;中使用這些功能。 這些功能預計於2026年5月14日正式發行。
+這是通用編輯器&#x200B;**預覽版本**&#x200B;的發行說明。 您目前可以在通用編輯器&#x200B;**預覽環境**&#x200B;中使用這些功能。 這些功能預計於2026年5月21日正式發行。
 
 提供這些&#x200B;**預覽**&#x200B;版本注意事項是為了方便您瞭解即將對通用編輯器進行哪些變更，而且您可以透過[切換至預覽版本來測試這些變更。](/help/sites-cloud/authoring/universal-editor/navigation.md#user-properties)
 
@@ -26,7 +26,6 @@ ht-degree: 52%
 >
 >實際發行內容及發行日期可能會有所變動。
 
-## 其他即將推出的改善專案 {#other-improvements}
+## 近期變更 {#upcoming-improvements}
 
-* 畫布面板現在依預設會開啟。
-* [擴充功能圖示已移轉至Spectrum 2。](https://developer.adobe.com/uix/docs/services/aem-universal-editor/api/header-menu/)
+* 微幅改進和修正

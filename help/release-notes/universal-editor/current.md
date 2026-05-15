@@ -1,20 +1,20 @@
 ---
-title: Universal Editor 2026.05.07發行說明
-description: 這些是2026.05.07版通用編輯器的發行說明。
+title: Universal Editor 2026.05.14發行說明
+description: 這些是2026.05.14版通用編輯器的發行說明。
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 4f66cd6048d7a78bea33c0f9c21017983b9032d5
+source-git-commit: 409ec2536b650f5b7135fc8009d955f54079dff8
 workflow-type: tm+mt
-source-wordcount: '188'
-ht-degree: 12%
+source-wordcount: '123'
+ht-degree: 20%
 
 ---
 
 
-# Universal Editor 2026.05.07發行說明 {#release-notes}
+# Universal Editor 2026.05.14發行說明 {#release-notes}
 
-以下是2026年5月7日發行的Universal Editor的發行說明。
+以下是2026年5月14日發行的Universal Editor的發行說明。
 
 >[!TIP]
 >
@@ -26,13 +26,9 @@ ht-degree: 12%
 
 ## 新增功能 {#what-is-new}
 
-* 您現在可以在編輯器中[拖放元件，以移動它們。](/help/sites-cloud/authoring/universal-editor/authoring.md#drag-and-drop-move)
-* 引入了Service Worker來減少通用編輯器UI與後端系統之間的延遲。
-* 內容片段（AEM 6.5、OpenAPI和GraphQL）的所有配接卡現在都包含資產選擇器的篩選器，以確保一致性且使用者只能選取允許的資產。
-* 現已提供`content:patch`目的。
-* 為協助處理無障礙問題，已定義作者流程和地標。
+* [屬性面板](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel)現在預設會開啟。
+* [擴充功能圖示已移轉至Spectrum 2。](https://developer.adobe.com/uix/docs/services/aem-universal-editor/api/header-menu/)
 
-## 其他即將推出的改善專案 {#other-improvements}
+## 其他改良功能 {#other-improvements}
 
-* `assignImageDimensionFields`中不必要的型別判斷提示已移除。
-* 已修正伺服器端處理`add`作業迭代字串值，將其視為物件而非修補程式的問題。
+* RTF編輯器儲存含空格和/或特殊字元的URL時，現在會正確使用百分比編碼。
