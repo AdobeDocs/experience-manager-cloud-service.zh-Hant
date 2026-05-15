@@ -4,9 +4,9 @@ description: 本指南提供有效提示Experience現代化代理程式，並說
 feature: Edge Delivery Services, Agentic AI
 role: User, Admin, Developer
 exl-id: 4771606b-a327-48b3-b142-44e03e4dc41d
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: 65a35ce2a47187f7939991a45b67692312331774
 workflow-type: tm+mt
-source-wordcount: '2696'
+source-wordcount: '3121'
 ht-degree: 0%
 
 ---
@@ -104,12 +104,12 @@ ht-degree: 0%
 
 建議的工作流程具有反複性：先在小集合上驗證，然後放大。
 
-1. **請先執行單頁移轉。** — 為您計畫大量匯入的範本移轉一個代表頁面。
+1. **請先執行單頁移轉。**  — 為您計畫大量匯入的範本移轉一個代表頁面。
    * 這會建立所需的匯入基礎結構。
-1. **在少量的頁面上執行大量匯入。** — 要求代理程式執行大量匯入，並提供遵循相同範本的URL簡短清單。
-1. **檢閱並調整結果。** — 檢查匯入的頁面。
+1. **在少量的頁面上執行大量匯入。**  — 要求代理程式執行大量匯入，並提供遵循相同範本的URL簡短清單。
+1. **檢閱並調整結果。**  — 檢查匯入的頁面。
    * 如果有任何內容看起來不正確，請要求代理程式調整剖析器、轉換器或匯入邏輯。
-1. **放大。** — 當結果看起來正確時，請提供完整的URL清單。
+1. **放大。**  — 當結果看起來正確時，提供URL的完整清單。
    * 代理程式將重複使用相同的匯入邏輯，並大規模執行大量匯入。
 
 ### 正在刮取網頁 {#scraping-webpages}
@@ -166,7 +166,7 @@ ht-degree: 0%
    1. 階段2會移轉個別區塊樣式，並在`/blocks/{name}/{name}.css`中建立區塊特定的CSS。
 * 區塊樣式（階段2）需要先完成全網站設計（階段1）。
    * 全域設計系統提供封鎖參考的CSS自訂屬性。
-* 估計時間：
+* 估計時間:
    * 階段1:5到10分鐘
    * 階段2:10-15分鐘
 * 模稜兩可的請求預設為完成移轉（兩個階段）。
@@ -245,7 +245,7 @@ ht-degree: 0%
    1. **對應到現有區塊** — 代理程式會識別專案區塊庫中最接近的相符區塊，並建立自訂變體。
    1. **CSS產生** — 代理程式會寫入參照擷取之CSS自訂屬性的樣式，以確保設計的一致性。
    1. **資產下載** — 代理程式會將影像和圖示從Figma儲存到託管環境的工作區。
-   1. **Edge Delivery Services內容產生** — 代理程式會依照EDS區塊結構建立Markdown檔案
+   1. **Edge Delivery Services內容產生** — 代理程式會依照Edge Delivery Services區塊結構建立Markdown檔案
    1. **輸出驗證** — 代理程式會預覽結果，並執行與原始Figma設計的視覺比較。
 * 此技能會先讀取中繼資料（步驟1）以瞭解結構，然後擷取詳細的設計上下文（步驟2-5）。
    * 這種分階段的方法可以防止大型或複雜的Figma檔案發生問題。
@@ -253,6 +253,60 @@ ht-degree: 0%
    * 在寫入任何CSS之前，所有樣式都會擷取為CSS自訂屬性（設計權杖）。
    * 這可確保移轉的區塊與您的設計系統一致。
 * 此提示需要直接輸入Figma URL （含`fileKey`和選擇性`node-id`）或Figma檔案金鑰。
+
+### 使用圖形衍生的區塊重新設計移轉 {#figma-redesign-migration}
+
+當現有的網站正移轉至重新設計的體驗時，請使用此提示。
+
+在此工作流程中，您必須先從Figma建立目標區塊集合。 然後網站移轉會針對已上線的來源網站執行，並將來源內容對應至從Figma建立的區塊。
+
+* **Figma**&#x200B;是目標設計與區塊程式庫來源。
+* **已上線的網站**&#x200B;仍然是內容的來源。
+
+#### 提示範例 {#example-figma-redesign}
+
+1. 從Figma建立區塊集合：
+
+   * 「從這些Figma元件建立Edge Delivery Services區塊集合： `https://figma.com/design/{fileKey}?node-id={nodeId}`」
+
+1. 將來源內容移轉至這些區塊：
+
+   * 「移轉這些頁面並將內容對應至Figma衍生的區塊集合：URL1、URL2、URL3」
+
+#### 須知事項 {#wtk-figma-redesign}
+
+* 先使用Figma來建立重新設計的區塊集。
+* 網站移轉接著會將實際的網站內容對應至該區塊集。
+* 已針對來源網站完成&#x200B;**內容驗證**。
+* 已針對Figma衍生的區塊集合與設計系統完成&#x200B;**視覺驗證**。
+* 只有當現有Figma衍生的區塊無法代表來源內容時，才應建立新的區塊變體。
+
+#### 建議的工作流程 {#figma-redesign-workflow}
+
+1. 識別重新設計網站所需的Figma元件。
+1. 將這些元件移轉至Edge Delivery Services區塊或變體中。
+1. 檢閱產生的區塊集合和設計權杖。
+1. 在代表性來源頁面上執行網站移轉。
+1. 將來源內容對應至圖形衍生的區塊。
+1. 針對來源網站驗證內容。
+1. 對照目標Figma設計驗證視覺輸出。
+1. 調整區塊或對應，然後縮放至更多頁面。
+
+### 從Figma建立新頁面 {#figma-new-page-from-figma}
+
+當來源網站上不存在頁面，且虛擬頁面或框架應會推動建立新的Edge Delivery Services頁面時，請使用此提示。
+
+#### 提示範例 {#example-figma-new-page}
+
+* 「將此Figma頁面移轉至Edge Delivery Services： `https://figma.com/design/{fileKey}?node-id={nodeId}`」
+
+#### 須知事項 {#wtk-figma-new-page}
+
+* 此提示最適合用於&#x200B;**特定的Figma框架或頁面**，而非整個檔案。
+* 框架應組織成&#x200B;**清除頁面區段**。
+* 區段會對應至現有區塊、預設內容或新變體。
+* 文字和資產來自圖表。
+* 搜尋、計算器、個人化或存放區定位器等動態功能可能需要在Figma移轉產生的範圍之外&#x200B;**個別的區塊開發**。
 
 ### 導覽設定 {#navigation-setup}
 
@@ -404,7 +458,7 @@ ht-degree: 0%
 
 * 常見問題有已知模式：
    * **顯示「大約:error」的影像**：通常在區塊JS中遺失`createOptimizedPicture`呼叫，或在DOM重新調整之前呼叫
-   * **區塊未呈現**：檢查Markdown中的區塊名稱格式，並確認區塊在`.js`中同時有`.css`和`blocks/`個檔案。
+   * **區塊未呈現**：檢查Markdown中的區塊名稱格式，並確認區塊在`blocks/`中同時有`.js`和`.css`個檔案。
    * **CSS未載入**：檢查檔案路徑、確認CSS檔案存在，以及檢查瀏覽器中的[網路]索引標籤。
    * **未出現的變更**：程式碼同步需要3-5秒。 嘗試重新整理(Ctrl+Shift+R)。
 * 代理程式會系統地檢查每個圖層：
@@ -413,3 +467,9 @@ ht-degree: 0%
    1. 區塊代碼
    1. 瀏覽器主控台
 * 代理程式能夠在`http://localhost:3000`檢查本機預覽。
+
+<!--
+## Additional Sections {#additional-sections}
+
+@gwalt, is the additional content in the prompting guide wiki ready to be added here?
+-->
