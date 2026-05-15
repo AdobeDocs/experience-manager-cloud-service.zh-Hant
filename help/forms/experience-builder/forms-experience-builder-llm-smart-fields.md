@@ -7,10 +7,10 @@ hidefromtoc: true
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: a03b247c-1e50-4dee-9182-bc81fb83a48b
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1480'
-ht-degree: 24%
+source-wordcount: '1469'
+ht-degree: 19%
 
 ---
 
@@ -84,11 +84,11 @@ LLM增強型智慧型欄位是表單欄位，會使用AI的內建知識庫自動
 
 **產業與企業實體型別：**
 
-    新增使用 NAICS 代碼進行行業分類的欄位
-    建立企業實體類型 (有限責任公司、公司、合夥企業等) 的下拉式選單
-    新增公司規模類別欄位 (新創公司、中小型企業、大型企業)
-    包含大型組織的部門選項
-    新增專業服務類型欄位
+    新增具有NAICS代碼的產業分類欄位
+    建立商業實體型別（LLC、Corporation、Partnership等）的下拉式清單
+    新增公司規模類別（啟動、SME、企業）的欄位
+    包含大型組織的部門選擇
+    新增專業服務型別的欄位
 
 **範例提示：**
 

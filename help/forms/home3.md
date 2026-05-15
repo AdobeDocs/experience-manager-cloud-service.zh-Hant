@@ -10,9 +10,9 @@ hidefromtoc: true
 index: false
 badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: e8c37209-4d8e-4eaf-9e29-ffe32b841eb1
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1938'
+source-wordcount: '1990'
 ht-degree: 1%
 
 ---
@@ -49,7 +49,7 @@ ht-degree: 1%
 - **🔗直接API整合** — 無需設定表單資料模型即可連線至API
 - **📊Forms最佳化** - AI支援的效能分析和轉換改善
 
-[要求存取權→](mailto:aem-forms-ea@adobe.com) | [深入瞭解→](/help/forms/early-access-ea-features.md)
+[要求存取→](mailto:aem-forms-ea@adobe.com) | [進一步瞭解→](/help/forms/early-access-ea-features.md)
 
 ## 📋表單建立與編寫 {#form-creation}
 
@@ -303,7 +303,7 @@ ht-degree: 1%
 
 **針對現有專案：**&#x200B;以[Foundation元件Forms](/help/forms/creating-adaptive-form.md)開始
 
-針對XFA現代化：**從** HTML5 Forms[開始](/help/forms/introductionhtml5.md)
+針對XFA現代化：**從[HTML5 Forms](/help/forms/introductionhtml5.md)開始**
 
 **檔案通訊：**&#x200B;以[互動式通訊](/help/forms/interactive-communication/create-interactive-communication.md)開始
 

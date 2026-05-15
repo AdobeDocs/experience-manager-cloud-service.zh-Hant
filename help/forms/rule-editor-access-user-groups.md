@@ -6,15 +6,15 @@ role: User
 level: Beginner, Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+exl-id: 2ef0e685-458b-4117-b02a-55dd3472577e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 2%
+source-wordcount: '330'
+ht-degree: 6%
 
 ---
 
-
-# 將規則編輯器存取權授予給所選的使用者群組 {#grant-rule-editor-access-to-select-user-groups}
+# 將規則編輯器存取權授予所選的使用者群組 {#grant-rule-editor-access-to-select-user-groups}
 
 ## 概觀 {#overview}
 
@@ -29,7 +29,7 @@ ht-degree: 2%
 
    ![1-2](assets/1-2.png)
 
-1. 在[!UICONTROL 網頁主控台]視窗中，找到並按一下&#x200B;**[!UICONTROL 最適化表單設定服務]**。 **[!UICONTROL 最適化表單設定服務]**&#x200B;對話方塊就會顯示。 不要變更任何值，然後按一下[儲存]。**&#x200B;**
+1. 在[!UICONTROL 網頁主控台]視窗中，找到並按一下&#x200B;**[!UICONTROL 最適化表單設定服務]**。 **[!UICONTROL 最適化表單設定服務]**&#x200B;對話方塊就會顯示。 不要變更任何值，然後按一下[儲存]。****
 
    它會在CRX-repository中建立檔案`/apps/system/config/com.adobe.aemds.guide.service.impl.AdaptiveFormConfigurationServiceImpl.config`。
 
@@ -44,7 +44,7 @@ ht-degree: 2%
 
    ![建立使用者](assets/create_user_new.png)
 
-   現在，當使用者不是指定使用者群組的一部分時(此處    `RuleEditorsUserGroup`)點選欄位，「元件」工具列中無法使用「編輯規則」圖示(![edit-rules1](assets/edit-rules1.png))：
+   現在，當不屬於指定使用者群組（此處`RuleEditorsUserGroup`）的使用者點選欄位時，「元件」工具列中無法使用「編輯規則」圖示(![edit-rules1](assets/edit-rules1.png))：
 
    ![componentstolbarwithre](assets/componentstoolbarwithre.png)
 
@@ -54,5 +54,4 @@ ht-degree: 2%
 
    沒有規則編輯器存取許可權的使用者看得見的元件工具列
 
-   如需將使用者新增至群組的說明，請參閱[使用者管理與安全性](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=zh-Hant)。
-
+   如需將使用者新增至群組的說明，請參閱[使用者管理與安全性](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html)。

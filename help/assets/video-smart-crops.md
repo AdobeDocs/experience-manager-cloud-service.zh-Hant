@@ -4,9 +4,9 @@ description: Dynamic Media具有OpenAPI功能，可讓您為Adobe Experience Man
 role: Admin, User
 badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: video-smartcrop-dmwoapi
-source-git-commit: 8ddd2ade491069e4592becf3b77c04e6bbb2c06a
+source-git-commit: c2b849ef25afd0809891a822a99ddd3059bf1919
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '409'
 ht-degree: 2%
 
 ---
@@ -48,7 +48,10 @@ ht-degree: 2%
 
 視訊資產中繼資料表單現在提供&#x200B;**建立視訊智慧裁切**&#x200B;選項。
 
-![建立視訊智慧裁切欄位](/help/assets/assets/video-smartcrop-metadata-field.png)
+<!--
+broken link
+![Create Video Smartcrops field](/help/assets/assets/video-smartcrop-metadata-field.png)
+-->
 
 ## 將視訊智慧型裁切套用至核准的視訊 {#apply-video-smart-crops}
 

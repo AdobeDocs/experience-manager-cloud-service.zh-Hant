@@ -10,10 +10,10 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 1496d7517d586c99c5f1001fff13d88275e91d09
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1991'
-ht-degree: 1%
+source-wordcount: '2069'
+ht-degree: 2%
 
 ---
 
@@ -34,7 +34,7 @@ HTML5 Forms功能會部署為內嵌AEM執行個體中的套件，並使用RESTfu
 
 如需REST端點和支援的要求引數的詳細資訊，請參閱[轉譯表單範本](/help/forms/rendering-form-template.md)。
 
-當使用者從使用者端裝置(例如iOS或Android™瀏覽器)提出請求時，Sling會先根據請求URL解析設定檔節點。 從這個設定檔節點，它會讀取&#x200B;**sling:resourceSuperType**&#x200B;和&#x200B;**sling:resourceType**，以決定可處理此表單轉譯器請求的所有可用指令碼。 接著，它會使用Sling要求選取器搭配request方法，以識別最適合處理此要求的指令碼。 請求到達設定檔轉譯器JSP後，JSP會呼叫Forms OSGi服務。
+當使用者從使用者端裝置（例如iOS或Android™瀏覽器）提出請求時，Sling會先根據請求URL解析設定檔節點。 從這個設定檔節點，它會讀取&#x200B;**sling:resourceSuperType**&#x200B;和&#x200B;**sling:resourceType**，以決定可處理此表單轉譯器請求的所有可用指令碼。 接著，它會使用Sling要求選取器搭配request方法，以識別最適合處理此要求的指令碼。 請求到達設定檔轉譯器JSP後，JSP會呼叫Forms OSGi服務。
 
 如需Sling指令碼解析的詳細資訊，請參閱[AEM Sling速查表](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hant)或[Apache Sling Url分解](https://sling.apache.org/documentation/the-sling-engine/url-decomposition.html)。
 
@@ -112,7 +112,7 @@ HTML5 forms會使用LRU策略執行記憶體中的快取。 如果快取策略�
 
 組態服務可讓您調整HTML5表單的組態引數和快取設定。
 
-若要更新這些設定，請前往CQ Felix Admin Console (位於https://&lt;&#39;[server]：[連線埠]&#39;/system/console/configMgr)，搜尋並選取「行動Forms設定」。
+若要更新這些設定，請前往CQ Felix Admin Console （位於https://&lt;&#39;[伺服器]：[連線埠]&#39;/system/console/configMgr），搜尋並選取「行動Forms設定」。
 
 您可以使用設定服務來設定快取大小或停用快取。 您也可以使用「偵錯選項」引數來啟用偵錯。 如需有關除錯表單的詳細資訊，請參閱[除錯HTML5表單](/help/forms/debug.md)。
 
@@ -177,7 +177,7 @@ Sling套件包含與設定檔和設定檔轉譯器相關的內容。
 
 設定檔節點具有屬性&#x200B;**sling:resourceSuperType**，值為&#x200B;**xfaforms/profile**。 此屬性會在內部將要求轉寄給&#x200B;**/libs/xfaforms/profile**&#x200B;資料夾中設定檔節點的sling指令碼。 這些指令碼是JSP頁面，是用來組合HTML表單和必要JS/CSS成品的容器。 這些頁面包含對下列專案的參照：
 
-* **xfaforms.I18N。&lt;locale>**：此程式庫包含當地語系化的資料。
+* **xfaforms.I18N.&lt;locale>**：此程式庫包含當地語系化的資料。
 * **xfaforms.profile**：此程式庫包含XFA指令碼和配置引擎的實作。
 
 這些程式庫被模型化為CQ使用者端程式庫，這些程式庫會利用CQ架構JavaScript程式庫的自動串連、縮制和壓縮功能。

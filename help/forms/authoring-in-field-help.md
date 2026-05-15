@@ -9,10 +9,10 @@ hide: true
 hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: 9abc6e42-3b53-4dca-bd6a-ced5cf6c6ac4
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '375'
-ht-degree: 2%
+source-wordcount: '392'
+ht-degree: 4%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 2%
 
 您可以使用側邊欄中「屬性」標籤的「說明內容」區段中的下列選項來指定內容內說明。
 
-* [簡短說明](authoring-in-field-help.md#p-short-description-p)
+* [簡要說明](authoring-in-field-help.md#p-short-description-p)
 * [詳細說明](authoring-in-field-help.md#p-long-description-p)
 
 ![表單欄位的內容內說明](assets/descriptions.png)
@@ -37,7 +37,7 @@ ht-degree: 2%
 >
 >完整說明會覆寫簡短說明。 如果您同時指定兩者，則只會顯示完整說明。
 
-### 簡短說明 {#short-description}
+### 簡要說明 {#short-description}
 
 「簡短說明」欄位可提供有關填寫表單欄位的快速簡短提示。 將滑鼠懸停在簡短說明欄位中時，該欄位中指定的文字會顯示為工具提示。
 
@@ -55,7 +55,7 @@ ht-degree: 2%
 
 ![新增多媒體作為表單欄位的內容內說明](assets/long-descriptions.png)
 
-新增完整說明會顯示&#x200B;**嗎？欄位旁的**&#x200B;圖示。 按一下圖示會顯示新增至詳細說明區段的內容。
+新增完整說明會顯示&#x200B;**？** 圖示加以存取。 按一下圖示會顯示新增至詳細說明區段的內容。
 
 ![多媒體內容說明範例](assets/photoshop.png)
 
@@ -65,6 +65,6 @@ ht-degree: 2%
 
 ![正在新增表單面板的內容內說明](assets/panel-level-help.png)
 
-新增面板的說明會顯示&#x200B;**嗎？面板說明旁的**&#x200B;圖示。 按一下圖示會顯示新增在面板編輯對話方塊的「說明內容」區段中的內容。
+新增面板的說明會顯示&#x200B;**？** 圖示加以存取（位於面板說明旁）。 按一下圖示會顯示新增在面板編輯對話方塊的「說明內容」區段中的內容。
 
 ![表單面板層級](assets/photoshop-1.png)的內容內說明範例

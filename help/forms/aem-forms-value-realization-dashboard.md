@@ -6,19 +6,19 @@ role: Admin, Developer, Leader, User
 hide: true
 hidefromtoc: true
 exl-id: 9405ebd4-ae40-4edd-8f74-58eb421ab1b9
-source-git-commit: 09d383638d6caba596d22a7c6b544768de5245a0
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '511'
-ht-degree: 0%
+source-wordcount: '523'
+ht-degree: 3%
 
 ---
 
-# 瞭解您的價值實現儀表板
+# 了解您的價值實現儀表板
 
 ![Fvalue實現儀表板](/help/edge/docs/forms/universal-editor/assets/forms-insights-banner.svg)
 
 
-<span class="preview">此功能可透過搶先存取計畫使用。 若要要求存取權，請從您的官方地址傳送電子郵件至aem-forms-ea@adobe.com。<span>
+<span class="preview">您可以透過搶先體驗方案使用這項功能。 若要要求存取權，請從您的官方地址傳送電子郵件至aem-forms-ea@adobe.com。<span>
 
 
 歡迎光臨一站式商店，瞭解表單帶來的價值！ 此儀表板可為您提供寶貴的見解，以最佳化您的表單、簡化工作流程，並最終更快地實現您的目標。
@@ -58,9 +58,9 @@ ht-degree: 0%
 
 讓我們將這些發現轉譯為可操作的步驟！
 
-* **低提交量？**&#x200B;調查表單的清晰度及方便使用者的程度。 時間太長或有令人困惑的問題？ 考慮修訂以取得更好的使用者體驗。
-* **高建立時間？**&#x200B;劃分建立程式。 是否有不必要的步驟或功能沒有得到有效使用？ 使用範本等省時的功能。
-* **未充分利用的片段？**&#x200B;確保片段井然有序、可搜尋且易於理解。 請考慮在團隊中提升片段使用。
+* **低提交量？** 調查表單的清晰度及方便使用者的程度。 時間太長或有令人困惑的問題？ 考慮修訂以取得更好的使用者體驗。
+* **高建立次數？** 劃分建立程式。 是否有不必要的步驟或功能沒有得到有效使用？ 使用範本等省時的功能。
+* **未充分利用的片段？** 確保片段井然有序、可搜尋且易於理解。 請考慮在團隊中提升片段使用。
 
 透過分析這些趨勢，您可以建立更好的表單、節省建立時間，並運用可重複使用的元件。 這可轉化為更流暢的工作流程、更快樂的使用者，最終為您的投資帶來更高的回報。
 

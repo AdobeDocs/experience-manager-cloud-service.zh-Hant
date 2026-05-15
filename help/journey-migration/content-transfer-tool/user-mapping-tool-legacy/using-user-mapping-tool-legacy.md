@@ -6,10 +6,10 @@ hide: true
 hidefromtoc: true
 feature: Migration
 role: Admin
-source-git-commit: e5fd1b351047213adbb83ef1d1722352958ce823
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '803'
-ht-degree: 1%
+source-wordcount: '839'
+ht-degree: 2%
 
 ---
 
@@ -20,11 +20,11 @@ ht-degree: 1%
 >
 >本檔案是指該工具的已棄用版本。 如需最新版本的詳細資訊，請參閱[群組移轉](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md)。
 
-使用者對應工具使用API，可透過電子郵件查詢AdobeIdentity Management系統(IMS)使用者並傳回其IMS ID。 此API要求使用者為其組織建立使用者端ID、使用者端密碼以及存取或持有人權杖。
+使用者對應工具使用API，可透過電子郵件查詢Adobe Identity Management System (IMS)使用者並傳回其IMS ID。 此API要求使用者為其組織建立使用者端ID、使用者端密碼以及存取或持有人權杖。
 
 ## 設定使用者對應工具 {#setting-up-user-mapping}
 
-**先決條件：**&#x200B;使用者對應要求每個要對應至其IMS ID的使用者，在其AEM和IMS的設定檔中都需有電子郵件地址。 即使使用者使用電子郵件地址作為使用者ID登入，除非該電子郵件地址也位於設定檔以及IMS中，否則對應無法用於該使用者。
+**先決條件：**&#x200B;使用者對應要求每個要對應至其IMS ID的使用者，在其AEM和IMS的設定檔中都有電子郵件地址。 即使使用者使用電子郵件地址作為使用者ID登入，除非該電子郵件地址也位於設定檔以及IMS中，否則對應無法用於該使用者。
 
 請依照下列步驟進行此設定：
 
@@ -62,7 +62,7 @@ ht-degree: 1%
    ![影像](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-access3.png)
 
 
-   * **組織ID**：輸入要移轉使用者之組織的AdobeIdentity Management System (IMS)組織ID。
+   * **組織ID**：輸入要移轉使用者之組織的Adobe Identity Management System (IMS)組織ID。
 
      >[!NOTE]
      >若要取得組織ID，請登入[Admin Console](https://adminconsole.adobe.com/)，並選擇您的組織（在右上角區域） （如果您屬於多個組織）。 組織ID位於該頁面的URL中，格式如`xx@AdobeOrg`，其中xx是IMS組織ID。 或者，您可以在產生「存取Token」的[Adobe Developer Console](https://developer.adobe.com/console/)頁面中找到組織ID。
@@ -74,7 +74,7 @@ ht-degree: 1%
      >[!NOTE]
      >存取Token每24小時過期一次，且必須建立新的Token。 若要建立Token，請返回[Adobe Developer Console](https://developer.adobe.com/console/)，選擇您的專案，按一下&#x200B;**使用者管理API**，然後將相同的私密金鑰貼到方塊中。
 
-1. 填入欄位後，按一下&#x200B;**測試組態**&#x200B;以測試使用者管理API服務的連線。 如果連線成功，您可以按一下[儲存]儲存組態。**&#x200B;**
+1. 填入欄位後，按一下&#x200B;**測試組態**&#x200B;以測試使用者管理API服務的連線。 如果連線成功，您可以按一下[儲存]儲存組態。****
 
    ![影像](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-access4.png)
 
@@ -97,7 +97,7 @@ ht-degree: 1%
 
    >[!IMPORTANT]
    >
-   >* 使用者對應完成後，您可以使用階層連結導覽回「內容移轉」頁面。 「使用者對應」卡片會顯示狀態和時間戳記。 按一下&#x200B;**內容轉移**，以便建立移轉集以執行擷取。 如需詳細資訊，請參閱[執行內容轉移工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=zh-Hant#running-tool)。
+   >* 使用者對應完成後，您可以使用階層連結導覽回「內容移轉」頁面。 「使用者對應」卡片會顯示狀態和時間戳記。 按一下&#x200B;**內容轉移**，以便建立移轉集以執行擷取。 如需詳細資訊，請參閱[執行內容轉移工具](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#running-tool)。
 
 ### 繼續使用者對應程式 {#resume-user-mapping-process}
 

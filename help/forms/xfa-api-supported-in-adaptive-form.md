@@ -10,9 +10,9 @@ hide: true
 hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: 59ae0eed-d832-4f46-9f99-7bcca9f82306
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '695'
 ht-degree: 7%
 
 ---
@@ -61,7 +61,7 @@ ht-degree: 7%
   </tr>
   <tr>
    <td><p>手寫簽名</p> </td>
-   <td><p>手寫簽名</p> </td>
+   <td><p>草寫簽名</p> </td>
   </tr>
   <tr>
    <td><p>數值欄位 </p> </td>

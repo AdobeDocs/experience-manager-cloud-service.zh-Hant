@@ -7,16 +7,16 @@ feature: Asset Insights, Asset Reports
 role: User, Admin, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1510'
-ht-degree: 87%
+source-wordcount: '1530'
+ht-degree: 86%
 
 ---
 
 # 管理報告 {#manage-reports}
 
-資產報告讓管理員能夠檢視 Adobe Experience Manager Assets 視圖環境的活動。此資料提供有關使用者如何與內容和產品互動的有用資訊。所有使用者可以存取「深入分析」儀表板，且獲指派至管理員產品設定檔的使用者可以建立使用者定義的報告。
+資產報告讓管理員能夠檢視 Adobe Experience Manager Assets 視圖環境的活動。 此資料提供有關使用者如何與內容和產品互動的有用資訊。 所有使用者可以存取「深入分析」儀表板，且獲指派至管理員產品設定檔的使用者可以建立使用者定義的報告。
 
 ## 存取報告 {#access-reports}
 
@@ -51,7 +51,7 @@ AEM Assets檢視環境可透過報表控制面板提供全面的報告功能。 
    1. **報告類型：**&#x200B;選項：[!UICONTROL 上傳]、[!UICONTROL 下載]或 [Dynamic Media 傳遞報告](#dynamic-media-delivery-reports)類型。
    1. **標題：**&#x200B;為報告新增標題。
    1. **說明：**&#x200B;為報告新增選擇性說明。
-   1. **選取資料夾路徑：**&#x200B;選取資料夾路徑，以產生該特定資料夾中已上傳和下載資產的報告。例如，如果您需要上傳到某個資料夾的資產報告，請指定該資料夾的路徑。
+   1. **選取資料夾路徑：**&#x200B;選取資料夾路徑，以產生該特定資料夾中已上傳和下載資產的報告。 例如，如果您需要上傳到某個資料夾的資產報告，請指定該資料夾的路徑。
    1. **選取日期間隔：**&#x200B;選取日期範圍，以檢視資料夾內的上傳或下載活動。
    <br>
 
@@ -59,7 +59,7 @@ AEM Assets檢視環境可透過報表控制面板提供全面的報告功能。 
    >
    > 資產檢視會將所有本地時區轉換為世界協調時間 (UTC)。
 
-   **在「欄」標籤中：**&#x200B;選取要在報告中顯示的欄名稱。下表說明了所有欄的用途：
+   **在「欄」標籤中：**&#x200B;選取要在報告中顯示的欄名稱。 下表說明了所有欄的用途：
 
    <table>
     <tbody>
@@ -138,12 +138,12 @@ AEM Assets檢視環境可透過報表控制面板提供全面的報告功能。 
 
 ## Dynamic Media 傳遞報告 {#dynamic-media-delivery-reports}
 
-取得透過 Dynamic Media 傳遞之資產的傳遞深入分析，以及資產層級傳遞計數、反向連結資訊、AEM Assets 中的資產路徑和唯一資產 ID。可以針對 AEM Assets 存放庫或 AEM Assets 中特定的資料夾階層，為透過 Dynamic Media 傳遞的所有資產產生報告。此外，Dynamic Media 傳遞報告深入分析有助於測量所傳遞資產的 ROI、測量管道效能，且有助於為資產執行明智的資產管理任務。
+取得透過 Dynamic Media 傳遞之資產的傳遞深入分析，以及資產層級傳遞計數、反向連結資訊、AEM Assets 中的資產路徑和唯一資產 ID。 可以針對 AEM Assets 存放庫或 AEM Assets 中特定的資料夾階層，為透過 Dynamic Media 傳遞的所有資產產生報告。 此外，Dynamic Media 傳遞報告深入分析有助於測量所傳遞資產的 ROI、測量管道效能，且有助於為資產執行明智的資產管理任務。
 
 <!--
 >[!NOTE]
 > 
->To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/tw/enterprise/using/support-for-experience-cloud.html).
+>To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 -->
 
 ### 先決條件 {#prereqs-dynamic-media-delivery-reports}
@@ -153,7 +153,7 @@ AEM Assets檢視環境可透過報表控制面板提供全面的報告功能。 
 >[!IMPORTANT]
 > 
 >* 報告是為透過 Dynamic Media 所傳遞的資產所提供。
->* 報告是針對前 100 萬列產生。若要擷取此限制內的所有檔案，請考慮包括較小資料夾的反向連結欄。
+>* 前100萬列會產生報表。 若要擷取此限制內的所有檔案，請考慮納入較小資料夾的反向連結欄。
 >* 僅能產生過去 3 個月的報告。
 
 ### 建立 Dynamic Media 傳遞報告{#create-dynamic-media-delivery-report}
@@ -176,7 +176,7 @@ AEM Assets檢視環境可透過報表控制面板提供全面的報告功能。 
 建立報告後，您可以執行以下動作：
 
 * **[!UICONTROL 刪除]**：您可以刪除所選取的報告。
-* **[!UICONTROL 下載 CSV]**：您可以以 CSV 格式下載所選取的報告。下載的報告包含名稱、路徑、DynamicMediaID、反向連結和點選欄。
+* **[!UICONTROL 下載 CSV]**：您可以以 CSV 格式下載所選取的報告。 下載的報告包含名稱、路徑、DynamicMediaID、反向連結和點選欄。
    * **反向連結**&#x200B;欄列出傳遞或包括資產的 URL。
 
    * **點選**&#x200B;欄列出資產傳遞的次數 (傳遞計數)。
@@ -188,13 +188,13 @@ AEM Assets檢視環境可透過報表控制面板提供全面的報告功能。 
 
 ## 檢視及下載現有報告 {#View-and-download-existing-report}
 
-現有報告會顯示在「**已執行的報告**」標籤下方。按一下「**報告**」，並選取「**已執行的報告**」，即可檢視狀態為「**已完成**」(表示已可供下載) 的所有已建立的報告。 若要下載 CSV 格式的報告或刪除報告，請選取該報告列。然後，選取「**下載 CSV**」或「**刪除**」。
+現有報告會顯示在「**已執行的報告**」標籤下方。 按一下「**報告**」，並選取「**已執行的報告**」，即可檢視狀態為「**已完成**」(表示已可供下載) 的所有已建立的報告。 若要下載 CSV 格式的報告或刪除報告，請選取該報告列。 然後，選取「**下載 CSV**」或「**刪除**」。
 ![檢視及下載現有報告](/help/assets/assets/view-download-existing-report.png)
 
 
 ## 安排報告 {#schedule-report}
 
-在AEM Assets檢視UI中，**排程報表**&#x200B;會設定在指定的未來間隔（例如每日、每週、每月或每年）自動生成報表。 此功能可協助簡化定期報告的需求並確保及時更新資料，而「**建立報告**」則是產生過去日期的報告。已完成的報告會列在「**已執行的報告**」下方，即將執行的報告則可在「**排程報告**」下方找到。
+在AEM Assets檢視UI中，**排程報表**&#x200B;會設定在指定的未來間隔（例如每日、每週、每月或每年）自動生成報表。 此功能可協助簡化定期報告的需求並確保及時更新資料， 而「**建立報告**」則是產生過去日期的報告。 已完成的報告會列在「**已執行的報告**」下方，即將執行的報告則可在「**排程報告**」下方找到。
 
 若要安排報告，請依照下列步驟操作：
 
@@ -207,7 +207,7 @@ AEM Assets檢視環境可透過報表控制面板提供全面的報告功能。 
    1. 切換「**安排報告**」開關：切換此開關以安排稍後或重複發生的報告。
       ![安排報告](/help/assets/assets/schedule-reports1.svg)
 
-   1. **選擇頻率：**&#x200B;指定產生報告的時間間隔 (例如，每日、每週、每月、每年或一次)，並設定執行報告的日期和時間以及重複的結束日期。對於一次性報告，請選取 AEM 環境中選定活動類型的報告的日期範圍。例如，如果您需要特定月份的 10 至 29 日 (未來日期) 的已下載資產的報告，請在「**選取日期間隔**」欄位中選取這些日期。
+   1. **選擇頻率：**&#x200B;指定產生報告的時間間隔 (例如，每日、每週、每月、每年或一次)，並設定執行報告的日期和時間以及重複的結束日期。 對於一次性報告，請選取 AEM 環境中選定活動類型的報告的日期範圍。 例如，如果您需要特定月份的 10 至 29 日 (未來日期) 的已下載資產的報告，請在「**選取日期間隔**」欄位中選取這些日期。
 
    >[!NOTE]
    >
@@ -215,7 +215,7 @@ AEM Assets檢視環境可透過報表控制面板提供全面的報告功能。 
 
 ## 檢視排程報告 {#view-scheduled-reports}
 
-排程報告會以系統化組織的方式顯示在「**排程報告**」標籤下方。每個排程報告的所有已完成報告都會儲存在單一報告資料夾中。按一下![展開摺疊](/help/assets/assets/expand-icon1.svg)以檢視完成的報表。 例如，如果您安排了一個每日報告，則所有已完成的報告都會群組到一個資料夾中。這種組織方式簡化了報告的導覽和易尋性。若要檢視排程報告，請按一下「**報告**」，然後按一下「**排程報告**」。所有排程報告便會顯示，並包含如「進行中」或「已完成」狀態。 已完成的報告可供下載。\
+排程報告會以系統化組織的方式顯示在「**排程報告**」標籤下方。 每個排程報告的所有已完成報告都會儲存在單一報告資料夾中。 按一下![展開摺疊](/help/assets/assets/expand-icon1.svg)以檢視完成的報表。 例如，如果您安排了一個每日報告，則所有已完成的報告都會群組到一個資料夾中。 這種組織方式簡化了報告的導覽和易尋性。 若要檢視排程報告，請按一下「**報告**」，然後按一下「**排程報告**」。 所有排程報告便會顯示，並包含如「進行中」或「已完成」狀態。 已完成的報告已可供進行下載。\
 ![排程報告](/help/assets/assets/scheduled-reports-tab.png)
 
 ## 編輯及取消排程報告 {#edit-cancel-scheduled-reports}
@@ -237,7 +237,7 @@ AEM Assets檢視環境可透過報表控制面板提供全面的報告功能。 
 
 ## 檢視 Insights {#view-live-statistics}
 
-資產檢視使您能夠使用 Insights 儀表板查看資產檢視環境的即時資料。您可以查看過去 30 天或過去 12 個月的即時事件度量。
+資產檢視使您能夠使用 Insights 儀表板查看資產檢視環境的即時資料。 您可以查看過去 30 天或過去 12 個月的即時事件度量。
 
 <!--![Toolbar options when you select an asset](assets/assets-view-live-statistics.png)-->
 
@@ -265,7 +265,7 @@ AEM Assets檢視環境可透過報表控制面板提供全面的報告功能。 
    ![Insights](assets/insights1.png)
    ![Insights](assets/insights2.png)
    -->
-* **依大小劃分的資產計數：**&#x200B;將資產視圖環境中的總資產計數劃分為不同的大小範圍，突出顯示每個大小範圍內的資產數量和百分比，以圓環圖表示。
+* **依大小劃分的資產計數：**將資產視圖環境中的總資產計數劃分為不同的大小範圍，突出顯示每個大小範圍內的資產數量和百分比，以圓環圖表示。
   ![依大小劃分的資產計數深入分析](/help/assets/assets/insights-assets-count-by-size.svg)
-* **依資產型別區分的資產計數：**&#x200B;區段Assets檢視環境中的資產總計計數，根據資產的檔案型別反白顯示資產的計數和百分比，以環形圖表示。
+* **依資產型別區分的資產計數：**區段Assets檢視環境中的資產總計計數，根據資產的檔案型別反白顯示資產的計數和百分比，以環形圖表示。
   ![依大小劃分的資產計數深入分析](/help/assets/assets/insights-assest-count-by-asset-type1.svg)

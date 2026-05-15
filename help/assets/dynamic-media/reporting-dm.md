@@ -8,10 +8,10 @@ hide: true
 hidefromtoc: true
 badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: 2488f813-df15-4dbb-8747-f827ee5925e1
-source-git-commit: a641933d1049cd07ee8935672c8ef357a5bbf18c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '266'
-ht-degree: 1%
+source-wordcount: '289'
+ht-degree: 7%
 
 ---
 
@@ -31,6 +31,6 @@ ht-degree: 1%
 
 1. [傳送電子郵件至reports-dynamic-media@adobe.com](mailto:reports-dynamic-media@adobe.com)，其中包含與您的Dynamic Media帳戶相關聯的公司名稱。
 
-   如果您不知道公司名稱，請參閱[Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html?lang=zh-Hant#configuring-dynamic-media-cloud-services) > **[!UICONTROL 工具]** > **[!UICONTROL 雲端服務]** > **[!UICONTROL 動態媒體設定]**&#x200B;中的&#x200B;**[!UICONTROL 動態媒體設定]**&#x200B;頁面。 在[Dynamic Media設定瀏覽器]頁面上，按一下&#x200B;**[!UICONTROL global]**，選取&#x200B;*[Dynamic_Media_folder_icon]*&#x200B;核取方塊，然後選取&#x200B;**[!UICONTROL 編輯]**。 您必須在AEM中擁有管理員許可權，才能存取Dynamic Media設定頁面。
+   如果您不知道公司名稱，請參閱&#x200B;**[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 工具]** > **[!UICONTROL 雲端服務]** > **[!UICONTROL 動態媒體設定]**&#x200B;中的[動態媒體設定](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html?lang=zh-Hant#configuring-dynamic-media-cloud-services)頁面。 在[Dynamic Media設定瀏覽器]頁面上，按一下&#x200B;**[!UICONTROL global]**，選取&#x200B;*[Dynamic_Media_folder_icon]*&#x200B;核取方塊，然後選取&#x200B;**[!UICONTROL 編輯]**。 您必須在AEM中擁有管理員許可權，才能存取Dynamic Media設定頁面。
 
    ![存取Dynamic Media設定頁面。](/help/assets/dynamic-media/assets/reporting-accessdmconfig.png)

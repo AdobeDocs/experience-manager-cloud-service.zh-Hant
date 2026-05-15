@@ -9,10 +9,10 @@ hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
 feature: Adaptive Forms, Core Components
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1074'
-ht-degree: 7%
+source-wordcount: '1109'
+ht-degree: 8%
 
 ---
 
@@ -56,7 +56,7 @@ Forms轉換公用程式會將以舊版基礎元件為基礎的最適化Forms轉�
 
 * [設定AEM Forms的本機開發環境](/help/forms/setup-local-development-environment.md)。
 * 安裝最新的Far，為AEM Cloud Service環境啟用最適化Forms核心元件。
-* 將您的使用者新增至[!DNL forms-users]群組。 [!DNL forms-users]群組的成員具有建立最適化表單的許可權。
+* 將您的使用者新增至[!DNL forms-users]群組。 [!DNL forms-users] 群組的成員擁有建立最適化表單的權限。
 * 具有下列角色的使用者有權在AEM環境中安裝AEM現代化工具：
 
    * 開發人員角色
@@ -137,8 +137,8 @@ Forms轉換公用程式會將以舊版基礎元件為基礎的最適化Forms轉�
 
    在本例中，已選取&#x200B;**複製到目標**&#x200B;選項。 如果選取&#x200B;**複製到目標**&#x200B;選項，**[!UICONTROL Source路徑]**&#x200B;和&#x200B;**[!UICONTROL 目標路徑]**&#x200B;選項就會變成可見。
 
-1. 在`source folder`Source路徑&#x200B;**[!UICONTROL 中指定]**&#x200B;名稱。
-1. 在`target folder`目標路徑&#x200B;**[!UICONTROL 中指定]**&#x200B;名稱。
+1. 在&#x200B;**[!UICONTROL Source路徑]**&#x200B;中指定`source folder`名稱。
+1. 在&#x200B;**[!UICONTROL 目標路徑]**&#x200B;中指定`target folder`名稱。
 1. 選取&#x200B;**[!UICONTROL 「下一步」]**。
 1. 按一下&#x200B;**[!UICONTROL 新增Forms]**。 `source folder`中的所有表單都會出現在畫面上。
 1. 選取以基礎元件為基礎的最適化Forms ，以將它轉換為以核心元件為基礎的表單。 您也可以選取多個表單。
@@ -159,12 +159,12 @@ Forms轉換公用程式會將以舊版基礎元件為基礎的最適化Forms轉�
 
    ![AEM現代化工具目的地資料夾](/help/forms/assets/aem-modernize-tools-destination-folder.png)
 
-1. 選取&#x200B;**[!UICONTROL 儲存並關閉]**&#x200B;以再次儲存轉換表單的內容。
+1. 選取&#x200B;**[!UICONTROL 儲存並關閉]**以再次儲存轉換表單的內容。
    ![AEM現代化工具最適化表單屬性](/help/forms/assets/aem-modernize-tools-af-properties.png)
 
 您現在可以看到，以Foundation Components為基礎的最適化表單已轉換為以核心元件為基礎的最適化表單。
 
 ## 最佳做法 {#best-practices}
 
-* 確定您的Foundation元件式表單，僅使用具有同等可用[核心元件](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type)的元件。 若您使用沒有對等核心元件的基礎元件，則不會轉換基礎元件。 因此，它在編寫表單時無法正常運作
+* 確定您的Foundation元件式表單，僅使用具有同等可用[核心元件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type)的元件。 若您使用沒有對等核心元件的基礎元件，則不會轉換基礎元件。 因此，它在編寫表單時無法正常運作
 * 請確定將基礎元件轉換為核心元件的規則已格式化為XML。

@@ -8,14 +8,13 @@ content-type: reference
 feature: Image Profiles,Best Practices
 role: User, Admin
 mini-toc-levels: 4
-hide: false
 hidefromtoc: false
 badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '3620'
-ht-degree: 3%
+source-wordcount: '3692'
+ht-degree: 4%
 
 ---
 
@@ -48,7 +47,7 @@ _第二部分_
 * 建立影像預設集以轉譯資產的基礎知識
 * 影像集、迴轉集及混合媒體集
 
-**_對象_**
+**_個對象_**
 剛接觸Experience Manager上Dynamic Media的以下受眾最適合此歷程的讀者：
 
 * 管理員
@@ -66,7 +65,7 @@ _第二部分_
 
 ## 什麼是Dynamic Media以及它如何協助您？ {#dm-journey-a}
 
-Dynamic Media 能協助您按照需求提供豐富的視覺化銷售和行銷資產。亦能協助您建立與提供互動式檢視體驗，包括縮放、360 度迴轉和影片。您的資產會動態擴展，以供網頁、行動裝置及社交網站使用。Dynamic Media 使用一組主要來源資產 (例如影像、影片和 3D)，透過其全球可擴展、效能最佳化的 CDN (內容傳遞網路) 即時產生並傳遞此豐富內容的多種變化版本。
+Dynamic Media 能協助您按照需求提供豐富的視覺化銷售和行銷資產。 亦能協助您建立與提供互動式檢視體驗，包括縮放、360 度迴轉和影片。 您的資產會動態擴展，以供網頁、行動裝置及社交網站使用。 Dynamic Media 使用一組主要來源資產 (例如影像、影片和 3D)，透過其全球可擴展、效能最佳化的 CDN (內容傳遞網路) 即時產生並傳遞此豐富內容的多種變化版本。
 
 Dynamic Media整合Adobe Experience Manager Assets數位資產管理解決方案的工作流程，以簡化及簡化數位行銷活動管理程式。
 
@@ -105,7 +104,7 @@ Dynamic Media在最佳化資產以及確保每個資產可透過CDN在行動裝�
 
 智慧型影像可依據客戶的瀏覽器功能，自動最佳化影像的格式和檔案大小，以提供更優異的影像資產傳送效能。 它可搭配您現有的影像預設集運作（此歷程第二部分將討論影像預設集），並在傳送時使用情報。
 
-此智慧功能可依據瀏覽器和網路連線速度，進一步縮小影像檔案大小。 由於影像資產佔頁面載入時間的大部分，因此效能提升會對關鍵業務指標產生徹底影響，例如：
+這項智慧型功能可以根據瀏覽器和網路連線速度，進一步縮小影像檔案的大小。 由於影像資產佔頁面載入時間的大部分，因此效能提升會對關鍵業務指標產生徹底影響，例如：
 
 * 較高的轉換
 * 網站逗留時間
@@ -114,7 +113,7 @@ Dynamic Media在最佳化資產以及確保每個資產可透過CDN在行動裝�
 整體而言，使用智慧型影像處理，視您現有的影像預設集設定和特定使用者特性而定，效能可望提升22%至47%。 同時保持影像品質，如同從未接觸過一樣。
 
 ![智慧型影像](/help/assets/dynamic-media/assets/dm-smart-imaging.png)
-_智慧型影像處理會根據客戶的瀏覽器功能和網路速度，自動最佳化影像的格式和檔案大小。_
+_智慧型影像會根據客戶的瀏覽器功能和網路速度，自動最佳化影像的格式和檔案大小。_
 
 智慧型影像處理預設不會開啟，因為您需要與Adobe Dynamic Media技術支援人員協調運作。 此外，啟用智慧型影像處理需要完全清除CDN快取，然後重新填入時間。 如果您有興趣使用智慧型影像，可以透過Adobe提交技術支援票證來開啟。 然後，技術支援會提供URL引數，讓您預先嘗試智慧型影像。 您可以在任何網頁或影像上試用，瞭解獲得的效能和節省的成本。 接著，您就可以為完整網站開啟智慧型影像處理。
 
@@ -126,7 +125,7 @@ _智慧型影像處理會根據客戶的瀏覽器功能和網路速度，自動�
 
 「自我調整視訊集」會將使用不同位元速率和格式編碼的相同視訊版本分組。
 
-您會從上傳至系統的原始主要影片開始。Dynamic Media會自動調整視訊大小，或將&#x200B;_轉碼為_&#x200B;多個視訊。 然後，在傳遞時，其會智慧地判定使用何種影片畫面、何種畫質以及何種格式，將其傳遞至手機、平板電腦或桌上型電腦。
+您會從上傳至系統的原始主要影片開始。 Dynamic Media會自動調整視訊大小，或將&#x200B;_轉碼為_&#x200B;多個視訊。 然後，在傳遞時，其會智慧地判定使用何種影片畫面、何種畫質以及何種格式，將其傳遞至手機、平板電腦或桌上型電腦。
 
 例如，在iOS行動裝置上，它會偵測4G、5G或Wi-Fi等頻寬。 之後，它會從「自我調整視訊集」中的各種視訊位元速率中，自動選取正確的編碼視訊。 影片會串流至行動裝置、平板電腦或桌上型電腦。
 
@@ -247,7 +246,7 @@ Adobe建議您以無損格式上傳資產。 一般來說，最好避免JPEG，�
 
 ### 發佈和預覽資產
 
-將資產上傳到Dynamic Media之後，請選取資產，然後按一下Dynamic Media中的&#x200B;_發佈_&#x200B;或&#x200B;**[!UICONTROL 快速發佈]**，以便&#x200B;**[!UICONTROL 發佈]**&#x200B;資產，這是不錯的作法。 如果您想要在任何體驗中使用資產，則必須發佈資產。 發佈資產後，您可使用複製的動態媒體產生URL或透過將程式碼內嵌在頁面上，將資產納入網頁中。
+將資產上傳到Dynamic Media之後，請選取資產，然後按一下Dynamic Media中的&#x200B;**[!UICONTROL 發佈]**&#x200B;或&#x200B;**[!UICONTROL 快速發佈]**，以便&#x200B;_發佈_&#x200B;資產，這是不錯的作法。 如果您想要在任何體驗中使用資產，則必須發佈資產。 發佈資產後，您可使用複製的動態媒體產生URL或透過將程式碼內嵌在頁面上，將資產納入網頁中。
 
 除了手動發佈資產外，您可以設定Dynamic Media，以便在上傳時立即發佈資產（無需任何使用者介入）。
 
@@ -260,7 +259,7 @@ _根據選取的「大」影像預設集預覽資產的轉譯。 已按一下URL
 
 另一種預覽資產的方法是選取影像資產，然後選取&#x200B;_檢視器_&#x200B;預設集，如下所示。
 
-![根據Zoom Vertical Light檢視器預設集預覽資產](/help/assets/dynamic-media/assets/dm-viewer-preset.png)
+![根據縮放垂直光源檢視器預設集預覽資產](/help/assets/dynamic-media/assets/dm-viewer-preset.png)
 _根據選取的「ZoomVertical_light」檢視器預設集預覽資產。 滑鼠指標(`+`)移到手錶上以放大。 請注意URL和內嵌按鈕。_
 
 以上轉譯為即時轉譯！ [試用](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&config=jpearldemo/ZoomVertical_light){target="_blank"}。
@@ -286,8 +285,8 @@ _Dynamic Media Help topics_
 
 _動態媒體教學課程_
 
-* [搭配Experience Manager Assets使用Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=zh-Hant)
-* [Adobe Experience Manager內容庫](https://experienceleague.adobe.com/zh-hant?lang=en#recommended/solutions/experience-manager) （在&#x200B;_Dynamic Media_&#x200B;上搜尋）
+* [搭配Experience Manager Assets使用Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
+* [Adobe Experience Manager內容庫](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) （在&#x200B;_Dynamic Media_&#x200B;上搜尋）
 
 _Dynamic Media檢視器_
 

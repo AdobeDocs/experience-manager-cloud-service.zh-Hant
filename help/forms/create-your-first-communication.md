@@ -7,9 +7,9 @@ hide: true
 hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: c58ea216-7de0-40e1-9493-9ceb472e5ef8
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '772'
 ht-degree: 5%
 
 ---
@@ -93,7 +93,7 @@ ht-degree: 5%
    | 預設集單位 | 選取檔案尺寸（例如，公厘、英吋）的度量單位。 |
    | 預設集方向 | 選擇檔案的方向 — 直向或橫向。 |
 
-1. 按一下「**建立**」。通訊會在編輯器中開啟。
+1. 按一下「**建立**」。 通訊會在編輯器中開啟。
 1. 拖放元件和片段以設計互動式通訊。
 
    * 使用&#x200B;**主版頁面**&#x200B;處理跨頁面共用的內容。 主版頁面被指定來格式化頁面，它們有助於促進設計的一致性，因為它們可以為檔案設計中的多個頁面提供背景和版面配置格式。

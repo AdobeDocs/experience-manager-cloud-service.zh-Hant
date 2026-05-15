@@ -8,13 +8,12 @@ content-type: reference
 feature: Image Profiles,Best Practices
 role: User, Admin
 mini-toc-levels: 4
-hide: false
 hidefromtoc: false
 badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '2629'
+source-wordcount: '2853'
 ht-degree: 0%
 
 ---
@@ -39,7 +38,7 @@ ht-degree: 0%
 
 上傳和發佈Dynamic Media資產後，您可以複製資產產生的URL，並將其貼到瀏覽器中，以檢視向客戶呈現資產的方式。 下列鐘錶影像的複製URL會依顏色劃分，以便於閱讀和理解。
 
-![Dynamic Media URL剖析](/help/assets/dynamic-media/assets/dm-colored-url.png)
+![動態媒體URL剖析](/help/assets/dynamic-media/assets/dm-colored-url.png)
 _動態媒體URL剖析。_
 
 URL紅色的第一部分是參照伺服器網域本身。 在此案例中，Dynamic Media是在一般伺服器網域`https://s7d1.scene7.com/is/image/`上執行。 只要檢視伺服器網域，就能輕鬆檢視一組影像，並瞭解Dynamic Media是否提供這些影像。 URL將相當一致。 不過，有些Dynamic Media客戶已切換至專用伺服器網域，而該網域可能為`name-of-your-company.scene7.com`。 智慧型影像需要專用的伺服器網域。
@@ -62,10 +61,10 @@ URL紅色的第一部分是參照伺服器網域本身。 在此案例中，Dyna
 
 請注意，已產生新的手錶轉譯。 要瞭解這項變更影像寬度簡易練習，關鍵是要注意，看到的影像是100%以動態方式產生。
 
-現在將`500`畫素的寬度值變更為`1000`畫素，然後按&#x200B;**[!UICONTROL Enter]**。 [試用](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000){target=_blank}。
-當您按下&#x200B;**[!UICONTROL Enter]**&#x200B;時，瀏覽器會回到Dynamic Media影像伺服器。 它會根據您剛輸入的新寬度值，產生全新的手錶轉譯，然後將新影像傳回瀏覽器，並加以快取。
+現在將`500`畫素的寬度值變更為`1000`畫素，然後按&#x200B;**[!UICONTROL Enter]**。 [試用](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000){target=&quot;_blank}。
+當您按下**[!UICONTROL Enter]**&#x200B;時，瀏覽器會回到Dynamic Media影像伺服器。 它會根據您剛輸入的新寬度值，產生全新的手錶轉譯，然後將新影像傳回瀏覽器，並加以快取。
 
-Dynamic Media有許多影像處理引數，可用來微調網頁上的影像資產。 您可以[在這裡](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=zh-Hant)檢視他們的清單。
+Dynamic Media有許多影像處理引數，可用來微調網頁上的影像資產。 您可以[在這裡](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=en)檢視他們的清單。
 
 現在嘗試將旋轉引數新增到觀看影像。 URL路徑的結尾，緊接在`wid=1000`之後，輸入`&rotate=90`，然後按&#x200B;**[!UICONTROL Enter]**。 [試用](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&rotate=90){target="_blank"}。
 
@@ -110,7 +109,7 @@ _最佳：一個檔案使用影像預設集即時建立多個轉譯，例如`Sea
 
 讓我們暫時瞭解一下如何在Dynamic Media中建立影像預設集。
 
-![從基本索引標籤開始建立影像預設集](/help/assets/dynamic-media/assets/dm-image-preset-basictab.png)
+![從[基本]索引標籤開始建立影像預設集](/help/assets/dynamic-media/assets/dm-image-preset-basictab.png)
 _從[基本]索引標籤開始建立影像預設集。_
 
 在上述範例中，您可以看到已建立名稱為&#x200B;_Medium_&#x200B;的新影像預設集。 Dynamic Media使用現成可用的影像（揹包）範例，協助您在建立影像預設集時檢視其特性。
@@ -175,20 +174,20 @@ _影像集編輯器可讓您新增影像資產，以及重新排序影像資產�
 
 這是Experience Manager Assets中的`Running`影像集。
 
-![Experience Manager Assets中正在執行的影像集，卡片檢視](/help/assets/dynamic-media/assets/dm-image-set.png)
+![Experience Manager Assets中的執行中影像集，卡片檢視](/help/assets/dynamic-media/assets/dm-image-set.png)
 _Experience Manager Assets卡片檢視中的`Running`影像集。_
 
 無論您是否已建立影像集、混合媒體集、迴轉集或任何其他互動式媒體，當您建立該集後，都可以檢視它對於客戶的顯示和行為方式。 Dynamic Media有許多內建檢視器，可讓您這麼做。
 
 首先，請選取建置的影像集，以在預覽中開啟該影像集，如下列範例所示。
 
-![已選取[檢視器]選項預覽中的[執行中的影像]集](/help/assets/dynamic-media/assets/dm-image-set-viewer.png)
+![已選取[檢視器]選項，預覽中設定的[執行中]影像](/help/assets/dynamic-media/assets/dm-image-set-viewer.png)
 _已選取檢視器選項，預覽中設定的`Running`影像。_
 
 請注意，在預覽中，您可以選取跑步鞋色票，並放大和縮小鞋子。 若要將檢視器套用至集合，請從下拉式功能表中選取&#x200B;**[!UICONTROL 檢視器]**。
 
-![套用飛出檢視器的執行中影像集](/help/assets/dynamic-media/assets/dm-image-set-flyout-viewer.png)
-_套用了彈出式檢視器的`Running`影像集。_
+![套用了彈出式檢視器的執行中影像集](/help/assets/dynamic-media/assets/dm-image-set-flyout-viewer.png)
+_套用彈出式檢視器的`Running`影像集。_
 
 在此案例中，已選取`Flyout`檢視器。 此時，您可以預覽檢視器中設定的影像。 不過，最好還是透過瀏覽器檢視，也就是客戶如何檢視。 您選取左下方的&#x200B;**[!UICONTROL URL]**，然後複製URL並貼至瀏覽器。 [試用](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&config=jpearldemo/Flyout){target="_blank"}。
 
@@ -217,7 +216,7 @@ _套用了彈出式檢視器的`Running`影像集。_
 _Dynamic Media Help topics_
 
 * [How to create image presets](/help/assets/dynamic-media/image-presets.md)
-* A list of [image processing parameters](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=zh-Hant) that you can use in the Image Modifier field when you create an image preset
+* A list of [image processing parameters](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html) that you can use in the Image Modifier field when you create an image preset
 * [How to preview assets](/help/assets/dynamic-media/previewing-assets.md)
 * [How to preview 3D assets](/help/assets/dynamic-media/previewing-3d-assets.md)
 * [How to create Image sets](/help/assets/dynamic-media/image-sets.md)
@@ -227,8 +226,8 @@ _Dynamic Media Help topics_
 
 _動態媒體教學課程_
 
-* [搭配Experience Manager Assets使用Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html?lang=zh-Hant)
-* [Adobe Experience Manager內容庫](https://experienceleague.adobe.com/zh-hant?lang=en#recommended/solutions/experience-manager) （在&#x200B;_Dynamic Media_&#x200B;上搜尋）
+* [搭配Experience Manager Assets使用Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
+* [Adobe Experience Manager內容庫](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) （在&#x200B;_Dynamic Media_&#x200B;上搜尋）
 
 _Dynamic Media檢視器_
 

@@ -2,14 +2,14 @@
 title: 專案檔案技能
 description: 瞭解Experience現代化代理程式的檔案技能如何協助您加速專案移交。
 feature: Edge Delivery Services, Agentic AI
-role: User, Admin, Architect, Developer
-source-git-commit: 90fb75c7febc8a8138e13a2f3ff872f38eeb3baa
+role: User, Admin, Developer
+exl-id: 111cc47d-085f-4cf4-81bc-332e6a31bbeb
+source-git-commit: c2b849ef25afd0809891a822a99ddd3059bf1919
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '477'
 ht-degree: 0%
 
 ---
-
 
 # 專案檔案技能 {#project-documentation}
 
@@ -55,7 +55,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果您無權存取Edge Delivery Services admin API，或控制檯設定中的&#x200B;**允許LLM代表我存取admin.hlx.page** [選項。](/help/ai-in-aem/agents/brand-experience/modernization/console.md#settings-view)未啟用，代理程式將會根據其可存取的程式碼庫產生檔案。
+>如果您無權存取Edge Delivery Services admin API，或控制檯設定中的&#x200B;**允許LLM代表我存取admin.hlx.page** [選項。](/help/ai-in-aem/agents/brand-experience/modernization/console.md#settings-view) 未啟用，代理程式將會根據其可存取的程式碼庫產生檔案。
 
 ## 疑難排解 {#troubleshooting}
 

@@ -8,9 +8,9 @@ hidefromtoc: true
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: f43c2586-9075-47dc-aa45-5ed2d2979b6d
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1066'
+source-wordcount: '1079'
 ht-degree: 2%
 
 ---
@@ -112,7 +112,6 @@ AI會自動設定包含步驟間導覽的表單結構。
     將美國電話號碼格式驗證新增至@phoneNumber
     設定年齡驗證：@dateOfBirth
 必須是18歲或以上
-
 ## 進階功能
 
 ### 什麼是LLM增強型智慧型欄位？

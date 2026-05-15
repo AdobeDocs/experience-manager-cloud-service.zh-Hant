@@ -8,9 +8,10 @@ solution: Experience Manager Sites
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 85b72909597a95531aea51719c841bc5db9c1a21
+exl-id: 5039cf92-21ff-4d6c-a684-72eab13b519d
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '950'
 ht-degree: 3%
 
 ---
@@ -116,7 +117,7 @@ For a detailed overview of MSM concepts see [Reusing Content: Multi Site Manager
 
 1. 在內容片段控制檯導覽至片段的位置。
 1. 選取您的片段。
-1. 選取片段之&#x200B;**Title**&#x200B;欄中的資訊(i)圖示。
+1. 選取片段之&#x200B;**Title**欄中的資訊(i)圖示。
 右邊的資訊面板將會開啟。
 1. 選取&#x200B;**即時副本詳細資料**&#x200B;的索引標籤。
 

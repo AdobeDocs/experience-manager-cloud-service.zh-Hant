@@ -4,13 +4,12 @@ description: 了解如何使用專用管道，分割中繼和生產部署。
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-hide: false
 hidefromtoc: false
 index: true
 exl-id: 7d76a87c-122c-4c4d-8071-957bef4c9cf1
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1046'
+source-wordcount: '1120'
 ht-degree: 49%
 
 ---
@@ -26,18 +25,18 @@ badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/releas
 
 ## 概觀 {#overview}
 
-中繼環境和生產環境緊密耦合。依預設，其部署連結到單一管道。也就是同時部署到該方案中的中繼環境和生產環境的部署管道。雖然這種耦合通常是適當的，但對某些使用案例來說卻存在缺點：
+中繼環境和生產環境緊密耦合。 依預設，其部署連結到單一管道。 也就是同時部署到該方案中的中繼環境和生產環境的部署管道。 雖然這種耦合通常是適當的，但對某些使用案例來說卻存在缺點：
 
-* 如果您想部署到僅限中繼，您會拒絕管道中的「**提升至生產**」步驟。然而，該執行會被標記為已取消。
+* 如果您想部署到僅限中繼，您會拒絕管道中的「**提升至生產**」步驟。 然而，該執行會被標記為已取消。
 * 如果您想將中繼環境中的最新程式碼部署到生產環境中，則需要重新部署整個管道，包括中繼部署，即使其中的程式碼未變更。
-* 部署期間無法更新環境。如果您於提升至生產前暫停流程，在中繼環境中測試幾天，則生產環境會維持鎖定狀態且無法更新。此情境會使無相依性的工作 (例如更新[環境變數](/help/implementing/cloud-manager/environment-variables.md)) 無法進行。
+* 部署期間無法更新環境。 如果您於提升至生產前暫停流程，在中繼環境中測試幾天，則生產環境會維持鎖定狀態且無法更新。 此情境會使無相依性的工作 (例如更新[環境變數](/help/implementing/cloud-manager/environment-variables.md)) 無法進行。
 
 僅限中繼和僅限生產的管道透過提供專用部署選項為這些使用案例提供解決方案。
 
-* **僅限中繼部署管道：**&#x200B;僅部署到中繼環境，在部署和測試完成後，執行即完成。僅限中繼管道的行為與標準耦合全端生產管道相同，但沒有生產部署步驟 (核准、排程、部署)。
-* **僅限生產環境的部署管道：**&#x200B;僅透過選取最近成功的階段執行來部署到生產環境。 然後將其成品部署到生產中。僅限生產管道重複使用中繼部署成品，繞過建置階段。
+* **僅限中繼部署管道：**&#x200B;僅部署到中繼環境，在部署和測試完成後，執行即完成。 僅限中繼管道的行為與標準耦合全端生產管道相同，但沒有生產部署步驟 (核准、排程、部署)。
+* **僅限生產環境的部署管道：**&#x200B;僅透過選取最近成功的階段執行來部署到生產環境。 然後將其成品部署到生產中。 僅限生產管道重複使用中繼部署成品，繞過建置階段。
 
-當全端生產管道正在進行時，僅限中繼管道和僅限生產管道不會執行，反之亦然。如果僅限中繼和全端生產管道皆設定「**在 Git 變更時**」觸發程序，並且指向相同的分支與存放庫，則只有僅限中繼管道會自動啟動。僅限生產管道不會啟動 **`On Git Changes`**，因其沒有直接連結到存放庫。
+當全端生產管道正在進行時，僅限中繼管道和僅限生產管道不會執行，反之亦然。 如果僅限中繼和全端生產管道皆設定「**在 Git 變更時**」觸發程序，並且指向相同的分支與存放庫，則只有僅限中繼管道會自動啟動。 僅限生產管道不會啟動 **`On Git Changes`**，因其沒有直接連結到存放庫。
 
 僅限生產管道為手動觸發，因其沒有針對「**在 Git 變更時**」直接連結到存放庫。
 
@@ -45,7 +44,7 @@ badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/releas
 
 >[!NOTE]
 >
->僅限生產管道需始終使用僅限中繼管道中的成品。即使標準耦合生產管道同時部署了其他要中繼的內容，此流程仍然有效。
+>僅限生產管道需始終使用僅限中繼管道中的成品。 即使標準耦合生產管道同時部署了其他要中繼的內容，此流程仍然有效。
 >
 >* 這種情境可能會導致不必要的程式碼復原。
 >* Adobe 建議在開始使用僅限生產和僅限中繼管道後，停止使用標準耦合生產管道。
@@ -53,7 +52,7 @@ badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/releas
 
 ## 管道建立 {#pipeline-creation}
 
-僅限生產和僅限中繼管道的建立方式類似於標準耦合[生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)和[非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)。請參閱這些文件，以了解詳細資訊。
+僅限生產和僅限中繼管道的建立方式類似於標準耦合[生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)和[非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)。 請參閱這些文件，以了解詳細資訊。
 
 1. 在&#x200B;**管道**&#x200B;視窗中，按一下&#x200B;**新增管道**。
 
@@ -74,7 +73,7 @@ badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/releas
 
 1. 在&#x200B;**新增非生產管道**&#x200B;對話方塊的&#x200B;**組態**&#x200B;索引標籤上，為您的管道選取&#x200B;**部署管道**&#x200B;欄位。
 1. 在「非生產管線名稱」欄位中，輸入任意文字的名稱。
-1. 選取所需的部署選項，然後按一下[繼續]。**&#x200B;**
+1. 選取所需的部署選項，然後按一下[繼續]。****
 
    在新增非生產管道對話方塊中的![設定索引標籤](/help/implementing/cloud-manager/configuring-pipelines/assets/add-non-prod-pipeline-1.png)
 
@@ -82,7 +81,7 @@ badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/releas
 
 1. 在&#x200B;**合格的部署環境**&#x200B;下拉式清單中，選取&#x200B;**階段**&#x200B;環境作為您管道的部署環境。 選取階段會建立專用於階段環境的管道（生產升級會透過個別管道進行）。
 
-1. 在各自的下拉式清單中選取您的&#x200B;**存放庫**&#x200B;和&#x200B;**Git分支**，然後按一下[繼續]&#x200B;**&#x200B;**。
+1. 在各自的下拉式清單中選取您的&#x200B;**存放庫**&#x200B;和&#x200B;**Git分支**，然後按一下[繼續]****。
 
    在新增非生產管道對話方塊中的![Source程式碼索引標籤](/help/implementing/cloud-manager/configuring-pipelines/assets/add-non-prod-pipeline-2.png)
 
@@ -100,7 +99,7 @@ badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/releas
 ### 建立僅限生產環境的管線 {#prod-only}
 
 1. 在對話方塊&#x200B;**新增僅生產管道**&#x200B;中，在&#x200B;**管道名稱**&#x200B;文字欄位中，輸入管道的自由文字名稱。
-1. 在&#x200B;**管道名稱**&#x200B;欄位中，輸入您想要的名稱。
+1. 在「**管道名稱**」欄位中輸入想要的名稱。
 1. 在&#x200B;**生產部署選項**&#x200B;下，選取&#x200B;**在部署到生產之前暫停**。
 
    此選項會在生產步驟之前插入手動核准入口。 管道將停止並等待核准者（例如部署管理員或企業所有者）核准或取消生產部署。
@@ -113,7 +112,7 @@ badge: label="Beta" type="Positive" url="/help/implementing/cloud-manager/releas
 
 ## 執行僅限階段和僅限生產環境的管道 {#running}
 
-您可以像啟動任何其他管道[一樣啟動新管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines)。 您也可以直接從僅限中繼管道的執行詳細資訊觸發僅限生產管道。
+您可以像啟動任何其他管道](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines)一樣啟動新管道[。 您也可以直接從僅限中繼管道的執行詳細資訊觸發僅限生產管道。
 
 <!--
  * Stage-only and prod-only pipelines offer a new [emergency mode](#emergency-mode) to skip testing.

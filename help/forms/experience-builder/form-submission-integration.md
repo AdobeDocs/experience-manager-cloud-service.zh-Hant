@@ -8,10 +8,10 @@ hidefromtoc: true
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: c772556b-dab6-4fa8-b728-1fe52c6596a4
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 0%
+source-wordcount: '912'
+ht-degree: 1%
 
 ---
 
@@ -146,7 +146,7 @@ Forms Experience Builder提供強大的整合功能，將您的表單與外部�
 
     在Azure中儲存表單提交：
      — 容器：表單提交
-     — 資料夾： /{year}/{month}/{day}/
+     — 資料夾：/{year}/{month}/{day}/
      — 檔案格式：具有附件的JSON
      — 存取層級：私人
 
@@ -163,10 +163,10 @@ Forms Experience Builder提供強大的整合功能，將您的表單與外部�
 
 **實作：**
 將客戶意見回饋表單提交至：
-1.電子郵件<support@company.com>包含表單詳細資料
-2.張貼至CRM API以建立客戶記錄
-3.觸發支援票證建立工作流程
-4.傳送感謝電子郵件給客戶
+1. 電子郵件<support@company.com>包含表單詳細資料
+2. 發佈至CRM API以建立客戶記錄
+3. 觸發支援票證建立工作流程
+4. 傳送感謝電子郵件給客戶
 
 ### 員工入職表單
 
@@ -179,10 +179,10 @@ Forms Experience Builder提供強大的整合功能，將您的表單與外部�
 
 **實作：**
 處理員工上線：
-1.電子郵件<hr@company.com>包含員工詳細資料
-2.將檔案上傳至SharePoint員工資料夾
-3.在Power Automate中開始入門工作流程
-4.在HR系統、電子郵件和其他工具中建立帳戶
+1. 電子郵件<hr@company.com>包含員工詳細資料
+2. 將檔案上傳至SharePoint員工資料夾
+3. 在Power Automate中開始入門工作流程
+4. 在HR系統、電子郵件和其他工具中建立帳戶
 
 ### 潛在客戶產生表單
 
@@ -195,10 +195,10 @@ Forms Experience Builder提供強大的整合功能，將您的表單與外部�
 
 **實作：**
 處理銷售機會開發：
-1.將潛在客戶資料發佈至Marketo API
-2.在Salesforce中建立潛在客戶記錄
-3.傳送電子郵件給銷售團隊，其中包含潛在客戶詳細資訊
-4.開始自動化電子郵件培養程式
+1. 將潛在客戶資料發佈至Marketo API
+2. 在Salesforce中建立潛在客戶記錄
+3. 傳送電子郵件給銷售團隊，包含潛在客戶詳細資訊
+4. 開始自動化電子郵件培養順序
 
 ## 進階整合案例
 

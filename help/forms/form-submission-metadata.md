@@ -8,9 +8,9 @@ hide: true
 hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: 12c54be1-378d-4dbe-9129-93ddc7c343a4
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '699'
+source-wordcount: '705'
 ht-degree: 1%
 
 ---
@@ -58,7 +58,7 @@ ht-degree: 1%
 
 ![從核取方塊儲存多個值](assets/checkbox-metadata.png)
 
-您選取最適化表單容器，然後在表單屬性中新增儲存`cb1`的中繼資料索引鍵`checkbox1.value`，並發佈表單。 當客戶填寫表單時，客戶會在核取方塊欄位中選取「護照和社會安全號碼」選項。 值1和2在提交中繼資料的cb1欄位中儲存為1， 2。
+您選取最適化表單容器，然後在表單屬性中新增儲存`checkbox1.value`的中繼資料索引鍵`cb1`，並發佈表單。 當客戶填寫表單時，客戶會在核取方塊欄位中選取「護照和社會安全號碼」選項。 值1和2在提交中繼資料的cb1欄位中儲存為1， 2。
 
 在核取方塊欄位中選取多個值的![中繼資料專案](assets/metadata-entry.png)
 

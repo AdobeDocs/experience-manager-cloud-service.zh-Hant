@@ -6,22 +6,22 @@ hide: true
 hidefromtoc: true
 role: Admin, Developer
 exl-id: 77e90657-38db-4a49-9aac-3f3774b62624
-source-git-commit: ff06dbd86c11ff5ab56b3db85d70016ad6e9b981
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '625'
 ht-degree: 100%
 
 ---
 
 # 建立自訂元件
 
-AEM Forms 適用的 Edge Delivery Services 讓您可以自訂[原生 HTML 表單元件](/help/edge/docs/forms/form-components.md)，並建立容易使用的互動式表單。它讓您能使用預先定義標記修改表單元件，如[表單欄位樣式](/help/edge/docs/forms/style-theme-forms.md)所述，使用自訂 CSS (階層樣式表) 和自訂程式碼來裝飾元件，進而增強最適化 Forms 區塊中表單欄位外觀。
+AEM Forms 適用的 Edge Delivery Services 讓您可以自訂[原生 HTML 表單元件](/help/edge/docs/forms/form-components.md)，並建立容易使用的互動式表單。 它讓您能使用預先定義標記修改表單元件，如[表單欄位樣式](/help/edge/docs/forms/style-theme-forms.md)所述，使用自訂 CSS (階層樣式表) 和自訂程式碼來裝飾元件，進而增強最適化 Forms 區塊中表單欄位外觀。
 
 ![自訂元件](/help/edge/assets/custom-component-image.png)
 
 本文件概述透過設定原生 HTML 表單元件的樣式來建立自訂元件的步驟，以改善使用者體驗並增加表單的視覺吸引力。
 
-我們以在表單上顯示 `Estimated trip cost` 的 `range` 元件為例。`range` 元件顯示為一條直線，不顯示任何值，例如最小值、最大值或選取值。
+我們以在表單上顯示 `Estimated trip cost` 的 `range` 元件為例。 `range` 元件顯示為一條直線，不顯示任何值，例如最小值、最大值或選取值。
 
 ![原生範圍元件](/help/edge/assets/native-range-component.png)
 
@@ -59,7 +59,7 @@ AEM Forms 適用的 Edge Delivery Services 讓您可以自訂[原生 HTML 表單
 若要新增自訂函數：
 
 1. 瀏覽至 `[../Form Block/components]`。
-1. 找到一個名為 `range.js` 的檔案。如果不存在，則建立一個。
+1. 找到一個名為 `range.js` 的檔案。 如果不存在，則建立一個。
 1. 新增以下程式碼行：
 
    ```javascript
@@ -121,7 +121,7 @@ AEM Forms 適用的 Edge Delivery Services 讓您可以自訂[原生 HTML 表單
 
 ### 將裝飾器插入表單區塊中
 
-`[Form Block]` 使用語義 HTML 來呈現表單欄位，包括輸入欄位、標籤和說明文字，且具有標準屬性以方便取用。若要讓 `[Form Block]` 對指定元件使用自訂裝飾器，請在 `mappings.js` 檔案中定義。`mappings.js` 檔案匯入一個函數，該函數會傳回負責裝飾特定元件的模組。此函數取得欄位屬性並傳回表單欄位的裝飾器函數。
+`[Form Block]` 使用語義 HTML 來呈現表單欄位，包括輸入欄位、標籤和說明文字，且具有標準屬性以方便取用。 若要讓 `[Form Block]` 對指定元件使用自訂裝飾器，請在 `mappings.js` 檔案中定義。 `mappings.js` 檔案匯入一個函數，該函數會傳回負責裝飾特定元件的模組。 此函數取得欄位屬性並傳回表單欄位的裝飾器函數。
 
 在我們的案例中，該函數檢查欄位的 `fieldType` 屬性，並從 `[../Form Block/components]` 中的 `range.js` 檔案傳回自訂範圍裝飾器。
 
@@ -146,9 +146,9 @@ AEM Forms 適用的 Edge Delivery Services 讓您可以自訂[原生 HTML 表單
 
 ### 在 CSS 檔案中新增元件的樣式
 
-您可以用 CSS 選擇器，根據欄位類型和欄位名稱設定表單欄位的外觀，依據需求呈現一致或獨特的樣式。若要設定元件樣式，請在 `form.css` 檔案中新增程式碼，以修改表單元件的外觀。
+您可以用 CSS 選擇器，根據欄位類型和欄位名稱設定表單欄位的外觀，依據需求呈現一致或獨特的樣式。 若要設定元件樣式，請在 `form.css` 檔案中新增程式碼，以修改表單元件的外觀。
 
-若要自訂 `range` 元件的樣式，請加入一個 CSS 程式碼片段，用於設定表單中 `range` 輸入元素及其關聯元件的樣式。這裡假設一個結構化的 HTML 版面配置，其中包含  `.form`  和  `.range-wrapper` 等類別。
+若要自訂 `range` 元件的樣式，請加入一個 CSS 程式碼片段，用於設定表單中 `range` 輸入元素及其關聯元件的樣式。 這裡假設一個結構化的 HTML 版面配置，其中包含  `.form`  和  `.range-wrapper` 等類別。
 
 若要在 CSS 檔案中加入元件的樣式：
 

@@ -9,16 +9,16 @@ exl-id: 55835ffe-1b77-449b-b76d-16c0a343cf5c
 hide: true
 hidefromtoc: true
 index: false
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '310'
-ht-degree: 100%
+source-wordcount: '329'
+ht-degree: 89%
 
 ---
 
 # 使用 API 整合建立 Salesforce Lead 物件
 
-此使用案例會逐步說明如何在 Salesforce 中使用 API 整合來建立 Lead。完成此流程後，您可以：
+此使用案例會逐步說明如何在 Salesforce 中使用 API 整合來建立 Lead。 完成此流程後，您可以：
 
 設定 ](https://help.salesforce.com/s/articleView?id=platform.ev_relay_create_connected_app.htm&type=5)Salesforce 中已連線的應用程式[來啟用安全的 API 存取權。
 
@@ -28,7 +28,7 @@ ht-degree: 100%
 
 ## 已連線應用程式設定
 
-以下設定用於已連線的應用程式中。您可以根據自身需求指派 OAuth 範圍。
+以下設定用於已連線的應用程式中。 您可以根據自身需求指派 OAuth 範圍。
 ![connected-app-settings](assets/salesforce-connected-app-settings.png)
 
 ## 建立 API 整合
@@ -61,16 +61,15 @@ ht-degree: 100%
 
 ## 建立表單
 
-使用通用編輯器建立簡易的自適應表單，來擷取 Lead 物件的詳細資訊，如下所示 
-![lead-object-form](assets/create-lead.png)
+使用Universal Editor建立簡易的最適化表單，以擷取Lead物件的詳細資訊，如下所示
+![潛在客戶物件表單](assets/create-lead.png)
 
-使用規則編輯器處理「建立 Lead」核取方塊上的點按事件。將輸入參數對應至適當表單物件的值，如下所示。在 `leadid` 文字欄位物件中顯示新建立的 Lead 物件 ID
-![rule-editor](assets/create-leade-rule-editor.png)
+使用規則編輯器處理「建立 Lead」核取方塊上的點按事件。 將輸入參數對應至適當表單物件的值，如下所示。 顯示`leadid` TextField物件中新建立之Lead物件的識別碼
+![規則編輯器](assets/create-leade-rule-editor.png)
 
 ## 測試整合
 
 - 預覽此表單
-
 - 輸入一些有意義的值
 - 選取「`Create Lead`」核取方塊來觸發 API 呼叫
 - 新建立 Lead 物件的 Lead ID 已顯示於 `Lead ID` 文字欄位中。

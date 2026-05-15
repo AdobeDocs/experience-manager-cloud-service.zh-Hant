@@ -9,15 +9,15 @@ feature: Adaptive Forms
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+exl-id: f19b7e4f-d4aa-45da-b0dd-7ae8d119da74
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1146'
-ht-degree: 0%
+source-wordcount: '1151'
+ht-degree: 1%
 
 ---
 
-
-# 同步最適化Forms與XFA表單範本{#synchronizing-adaptive-forms-with-xfa-form-templates}
+# 將最適化表單與 XFA Form 範本同步{#synchronizing-adaptive-forms-with-xfa-form-templates}
 
 ## 簡介 {#introduction}
 
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 * [建立最適化表單](creating-adaptive-form.md)
 
-* XFA (XML Forms架構)
+* XFA （XML Forms架構）
 
 若要使用文章範例中提供的資產，請下載範例套件，如下一節[範例套件](synchronizing-adaptive-forms-xfa.md#p-sample-package-p)中所述。
 
@@ -130,7 +130,7 @@ ht-degree: 0%
 
 已刪除的欄位也會標示圖示，以指出欄位中的錯誤。
 
-欄位![&#128279;](assets/error-field.png)中的錯誤圖示
+欄位](assets/error-field.png)中的![錯誤圖示
 
 >[!NOTE]
 >

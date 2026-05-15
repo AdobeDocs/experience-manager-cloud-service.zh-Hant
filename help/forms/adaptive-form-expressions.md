@@ -7,9 +7,9 @@ hide: true
 hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: e5b77cc1-5fb1-4f73-afe6-64f1c407e42b
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '2688'
+source-wordcount: '2738'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 最適化Forms透過動態指令碼功能，為使用者提供最佳化和簡化的表單填寫體驗。 它可讓您編寫運算式以新增各種行為，例如動態顯示/隱藏欄位和面板。 它也可讓您新增計算欄位、讓欄位成為唯讀、新增驗證邏輯等。 動態行為取決於使用者輸入或預填的資料。
 
-JavaScript™是最適化Forms的運算式語言。 所有運算式都是有效的JavaScript™運算式，並使用最適化Forms指令碼模型API。 這些運算式會傳回某些型別的值。 如需最適化Forms類別、事件、物件和公用API的完整清單，請參閱最適化Forms的[JavaScript™資料庫API參考](https://helpx.adobe.com/tw/experience-manager/6-5/forms/javascript-api/index.html)。
+™是最適化Forms的運算式語言。 所有運算式都是有效的™運算式，並使用最適化Forms指令碼模型API。 這些運算式會傳回某些型別的值。 如需最適化Forms類別、事件、物件和公用API的完整清單，請參閱最適化Forms的[JavaScript™資料庫API參考](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html)。
 
 ## 撰寫運算式的最佳作法 {#best-practices-for-writing-expressions}
 
@@ -33,7 +33,7 @@ JavaScript™是最適化Forms的運算式語言。 所有運算式都是有效�
 * 若要建立重複面板，請在面板對話方塊中開啟設定，並將最大計數欄位的值設定為大於1。
 * 面板重複設定的最小計數值可以是一個或多個，但不能超過最大計數值。
 * 當運算式參考重複面板的欄位時，運算式中的欄位名稱會解析為最接近的重複元素。
-* 最適化Forms提供一些特殊函式，可簡化可重複面板的計算，例如sum、count、min、max、filter等等。 如需完整的函式清單，請參閱[最適化Forms的JavaScript™資料庫API參考](https://helpx.adobe.com/tw/aem-forms/6/javascript-api/af.html)
+* 最適化Forms提供一些特殊函式，可簡化可重複面板的計算，例如sum、count、min、max、filter等等。 如需完整的函式清單，請參閱[最適化Forms的JavaScript™資料庫API參考](https://helpx.adobe.com/aem-forms/6/javascript-api/af.html)
 * 用於操控重複面板執行個體的API包括：
 
    * 若要新增面板執行個體： `panel1.instanceManager.addInstance()`
@@ -68,18 +68,18 @@ JavaScript™是最適化Forms的運算式語言。 所有運算式都是有效�
 
 ### 計算運算式 {#calculate-expression}
 
-計算運算式用於使用運算式自動計算欄位的值。 通常，這類運算式會使用其他欄位的值屬性。 例如 `field2.value + field3.value`。每當`field2`或`field3`的值變更時，就會重新觸發運算式並重新計算值。
+計算運算式用於使用運算式自動計算欄位的值。 通常，這類運算式會使用其他欄位的值屬性。 例如 `field2.value + field3.value`。 每當`field2`或`field3`的值變更時，就會重新觸發運算式並重新計算值。
 
 **套用至**：欄位
 
 **傳回型別**：運算式傳回與顯示運算式結果的欄位相容的值（例如，小數）。
 
-**範例**：顯示&#x200B;**欄位1**&#x200B;中兩個欄位總和的計算運算式是：
+**範例**：顯示&#x200B;**欄位1**中兩個欄位總和的計算運算式是：
 `field2.value + field3.value`
 
 ### 按一下運算式 {#click-expression}
 
-click運算式會處理對按鈕的點選事件執行的動作。 GuideBridge開箱即用地提供API來執行各種功能，例如提交、驗證以及按一下運算式使用。 如需完整的API清單，請參閱[GuideBridge API](https://helpx.adobe.com/tw/aem-forms/6/javascript-api/GuideBridge.html)。
+click運算式會處理對按鈕的點選事件執行的動作。 GuideBridge開箱即用地提供API來執行各種功能，例如提交、驗證以及按一下運算式使用。 如需完整的API清單，請參閱[GuideBridge API](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html)。
 
 **套用至**：按鈕欄位
 
@@ -134,7 +134,7 @@ click運算式會處理對按鈕的點選事件執行的動作。 GuideBridge開
 
 **套用至**：欄位
 
-**傳回型別**：運算式傳回代表欄位驗證狀態的布林值。 值&#x200B;**false**&#x200B;表示欄位無效，**true**&#x200B;表示欄位有效。
+**傳回型別**：運算式傳回代表欄位驗證狀態的布林值。 值&#x200B;**false**&#x200B;表示欄位無效，**true**表示欄位有效。
 **範例**：對於代表UK郵遞區號的欄位，驗證運算式為：
 
 (**this.value** &amp;&amp; `this.value.match(/^(GIR 0AA|[A-Z]{1,2}\d[A-Z0-9]? ?[0-9][A-Z]{2}\s*)$/i) == null) ? false : true`
@@ -156,7 +156,7 @@ click運算式會處理對按鈕的點選事件執行的動作。 GuideBridge開
 
 **傳回型別：**&#x200B;值認可指令碼運算式未傳回任何值。 如果有任何運算式傳回值，則會忽略值。
 
-**範例：**&#x200B;若要將在欄位中輸入的字母大小寫轉換成認可時的大寫，值認可運算式為：
+**範例：**若要將在欄位中輸入的字母大小寫轉換成認可時的大寫，值認可運算式為：
 `this.value=this.value.toUpperCase()`
 
 >[!NOTE]
@@ -210,7 +210,7 @@ click運算式會處理對按鈕的點選事件執行的動作。 GuideBridge開
 
 ### GuideBridge - API和事件 {#guidebridge-apis-and-events}
 
-GuideBridge是API的集合，可用來在瀏覽器的記憶體模型中與Adaptive Forms互動。 如需指南Bridge API、類別方法、公開事件的詳細介紹，請參閱最適化Forms的[JavaScript™資料庫API參考](https://helpx.adobe.com/tw/aem-forms/6/javascript-api/)。
+GuideBridge是API的集合，可用來在瀏覽器的記憶體模型中與Adaptive Forms互動。 如需指南Bridge API、類別方法、公開事件的詳細介紹，請參閱最適化Forms的[JavaScript™資料庫API參考](https://helpx.adobe.com/aem-forms/6/javascript-api/)。
 
 >[!NOTE]
 >
@@ -228,7 +228,7 @@ GuideBridge是API的集合，可用來在瀏覽器的記憶體模型中與Adapti
 
 您也可以在運算式之外使用GuideBridge API。 例如，您可以使用GuideBridge API來設定託管最適化表單和表單模型的頁面HTML之間的通訊。 此外，您也可以設定來自託管表單之Iframe父級的值。
 
-若要針對上述範例使用GuideBridge API，請擷取GuideBridge的例項。 若要擷取執行個體，請接聽`bridgeInitializeStart`物件的`window`事件：
+若要針對上述範例使用GuideBridge API，請擷取GuideBridge的例項。 若要擷取執行個體，請接聽`window`物件的`bridgeInitializeStart`事件：
 
 ```javascript
 window.addEventListener("bridgeInitializeStart", function(evnt) {
@@ -256,7 +256,7 @@ window.addEventListener("bridgeInitializeStart", function(evnt) {
 
 #### GuideBridge事件 {#guidebridge-events}
 
-GuideBridge也在託管頁面上提供某些外部指令碼事件。 外部指令碼可監聽這些事件並執行各種作業。 例如，每當表單中的使用者名稱變更時，顯示在頁面標題中的名稱也會變更。 如需這類事件的詳細資訊，請參閱最適化Forms的[JavaScript™資料庫API參考](https://helpx.adobe.com/tw/aem-forms/6/javascript-api/GuideBridge.html)。
+GuideBridge也在託管頁面上提供某些外部指令碼事件。 外部指令碼可監聽這些事件並執行各種作業。 例如，每當表單中的使用者名稱變更時，顯示在頁面標題中的名稱也會變更。 如需這類事件的詳細資訊，請參閱最適化Forms的[JavaScript™資料庫API參考](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html)。
 
 請使用下列程式碼來註冊處理常式：
 
@@ -280,7 +280,7 @@ guideBridge.on("elementValueChanged", function (event, data)  {
 
 1. 此屬性的值會依您要定義模式的欄位而有所不同。 對於數值欄位，`guideComponentType`屬性的值為&#x200B;*fd/af/components/formatter/guideNumericBox*。 Datepicker欄位的值為&#x200B;*fd/af/components/formatter/guideDatepicker*。
 &quot;
-1. 您可以指派屬性給`textboxpatterns`節點，以新增自訂模式。 新增具有名稱（例如`pattern1`）的屬性，並將其值設定為您要新增的模式。 例如，新增值為Fax=text{99-999-`pattern1`的屬性9999999}。 此模式適用於您在Adaptive Forms中使用的所有文字方塊。
+1. 您可以指派屬性給`textboxpatterns`節點，以新增自訂模式。 新增具有名稱（例如`pattern1`）的屬性，並將其值設定為您要新增的模式。 例如，新增值為Fax=text{99-999-9999999}的屬性`pattern1`。 此模式適用於您在Adaptive Forms中使用的所有文字方塊。
 
    ![在CrxDe中建立欄位的自訂模式](assets/creating-custom-patterns.png)
 

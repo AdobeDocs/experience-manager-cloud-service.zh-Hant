@@ -10,9 +10,9 @@ role: User, Admin
 mini-toc-levels: 4
 badgeSaas: label="AEM Assets" type="Positive" tooltip="適用於AEM Assets)。"
 exl-id: a4d28786-cffa-42ab-98d3-90a15313e401
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '2512'
+source-wordcount: '2567'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 # 設定Dynamic Media一般設定
 
 <!--
- hide: yes
+ hide: true
 hidefromtoc: yes
 -->
 
@@ -58,9 +58,9 @@ hidefromtoc: yes
    * [Illustrator](#illustrator-tab)索引標籤
 
    ![Dynamic Media一般設定頁面](/help/assets/assets-dm/dm-general-settings.png)
-   *Dynamic Media一般設定頁面，已選取&#x200B;**[!UICONTROL 影像編輯]**&#x200B;標籤。*<br><br>
+   *Dynamic Media一般設定頁面，已選取&#x200B;**[!UICONTROL 影像編輯]**標籤。*<br><br>
 
-1. 完成後，在頁面的右上角附近，按一下[儲存]。**&#x200B;**
+1. 完成後，在頁面的右上角附近，按一下[儲存]。****
 
 ## 伺服器 {#server-general-setting}
 
@@ -68,7 +68,7 @@ hidefromtoc: yes
 
 | 選項 | 說明 |
 | --- | --- |
-| **[!UICONTROL 已發佈的伺服器名稱]** | 必要。<br>名稱在路徑中必須使用`https://`。<br>此伺服器是所有系統產生、特定於您帳戶的URL呼叫中所使用的即時CDN （內容傳遞網路）伺服器。 只有在Adobe技術支援指示變更此伺服器名稱時，才可以變更。 |
+| **[!UICONTROL 已發佈的伺服器名稱]** | 必填。<br>名稱必須在路徑中使用`https://`。<br>此伺服器是所有系統產生、特定於您帳戶的URL呼叫中所使用的即時CDN （內容傳遞網路）伺服器。 只有在Adobe技術支援指示變更此伺服器名稱時，才可以變更。 |
 | **[!UICONTROL 原始伺服器名稱]** | 必要。<br>此伺服器僅用於品質保證測試。 只有在Adobe技術支援指示變更此伺服器名稱時，才可以變更。 |
 
 ## 上傳至應用程式 {#upload-to-application}
@@ -92,7 +92,7 @@ hidefromtoc: yes
 
   控制任何現有手動裁切定義的保留。
 
-  另請參閱Dynamic Media檢視器參考指南中的`preserveCrop`UploadPostJob[和](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job)ReprocessAssetsJob[中的](https://experienceleague.adobe.com/zh-hant/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job)。
+  另請參閱Dynamic Media檢視器參考指南中的[UploadPostJob](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job)和[ReprocessAssetsJob](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job)中的`preserveCrop`。
 
 ## 預設上傳選項 {#default-upload-options}
 
@@ -104,12 +104,12 @@ hidefromtoc: yes
 
 | 「不銳利化遮色片」選項 | 說明 |
 | --- | --- |
-| **[!UICONTROL 金額]** | 必要。<br>它會控制套用至邊緣畫素的對比量。<br>將其視為效果的強度。 「不銳利化遮色片」的量值在Adobe Dynamic Media和Adobe Photoshop之間有所不同。 Photoshop提供的金額範圍是1%到500%。 而在Adobe Dynamic Media中，值範圍為`0.0`到`5.0`。 Adobe Dynamic Media中的5.0值約略等同於Photoshop中的500%；0.9值等同於90%，以此類推。 |
+| **[!UICONTROL 金額]** | 必要。<br>它控制套用至邊緣畫素的對比量。<br>將其視為效果的強度。 「不銳利化遮色片」的量值在Adobe Dynamic Media和Adobe Photoshop之間有所不同。 Photoshop提供的金額範圍是1%到500%。 而在Adobe Dynamic Media中，值範圍為`0.0`到`5.0`。 Adobe Dynamic Media中的5.0值約略等同於Photoshop中的500%；0.9值等同於90%，以此類推。 |
 | **[!UICONTROL 半徑]** | 必要。<br>控制效果的半徑。<br>值範圍為`0`到`250`。 此效果會在影像中的所有畫素上執行，並從所有方向的所有畫素向外輻射。 半徑是以畫素來測量。 例如，若要針對2000 x 2000畫素影像和500 x 500畫素影像取得類似的銳利化效果，您可以在2000 x 2000畫素影像上設定兩個畫素的半徑。 然後在500 x 500畫素影像上設定一個畫素的半徑值。 較大的值適用於畫素較多的影像。 |
-| **[!UICONTROL 閾值]** | 必要。<br>臨界值是套用「遮色片銳利化調整」濾鏡時忽略的對比範圍。 此效果很重要，因此使用此濾鏡時，影像不會引入「雜訊」。 值範圍是`0` - `255`，這是灰階影像中的亮度階數。 `0`=黑色，`128`=50%灰色和`255`=白色。<br>閾值為`12`時，會忽略膚色亮度的細微變化，以避免增加雜訊，但還是會增加邊緣對比度，讓相異區域如睫毛與皮膚相遇的區域。<br>如果您有某個人的臉部像片，「遮色片銳利化調整」會影響影像的反差部分。 例如，睫毛和皮膚會合，以建立明顯的對比區域，以及平滑的皮膚本身。 即使最平滑的皮膚也會顯示亮度值的細微變化。 如果您不使用臨界值，濾鏡會強調外觀畫素中的這些細微變化。 反過來，會建立雜訊和不想要的效果，同時增加睫毛的對比，增強銳利度。<br>為了避免此問題，系統引入臨界值，告訴濾鏡忽略不會大幅改變對比度的畫素，例如平滑外觀。<br>在先前顯示的拉鍊圖形中，請注意拉鍊旁的紋理。 因為臨界值太低，無法抑制雜訊，所以會顯示影像雜訊。 |
-| **[!UICONTROL 單色]** | 選取「 」以取消遮色片影像亮度（強度）的銳利化。<br>取消選取以分別取消銳利化遮色片每個色彩元件。 |
+| **[!UICONTROL 閾值]** | 必要。<br>臨界值是套用「遮色片銳利化調整」濾鏡時忽略的對比範圍。 此效果很重要，因此使用此濾鏡時，影像不會引入「雜訊」。 值範圍是`0` - `255`，這是灰階影像中的亮度階數。 `0`=黑色、`128`=50%灰色和`255`=白色。<br>閾值為`12`會忽略膚色亮度的細微變化，以避免增加雜訊，但還是會增加邊緣對比度，讓相異區域如睫毛與皮膚相遇的區域。<br>如果您有某個人的臉部像片，「遮色片銳利化調整」會影響影像的反差部分。 例如，睫毛和皮膚會合，以建立明顯的對比區域，以及平滑的皮膚本身。 即使最平滑的皮膚也會顯示亮度值的細微變化。 如果您不使用臨界值，濾鏡會強調外觀畫素中的這些細微變化。 反過來，會建立雜訊和不想要的效果，同時增加睫毛的對比，增強銳利度。<br>為了避免此問題，系統引入臨界值，告訴濾鏡忽略不會大幅改變對比度的畫素，例如平滑外觀。<br>在先前顯示的拉鍊圖形中，請注意拉鍊旁的紋理。 因為臨界值太低，無法抑制雜訊，所以會顯示影像雜訊。 |
+| **[!UICONTROL 單色]** | 選取此選項可取消遮色片銳利化影像亮度（強度）。<br>取消選取此選項可分別取消遮色片銳利化每個色彩元件。 |
 
-另請參閱[在Adobe Dynamic Media和影像伺服器](https://experienceleague.adobe.com/docs/experience-manager-65/assets/sharpening_images.pdf?lang=zh-Hant)上銳利化影像。
+另請參閱[在Adobe Dynamic Media和影像伺服器](https://experienceleague.adobe.com/docs/experience-manager-65/assets/sharpening_images.pdf?lang=en)上銳利化影像。
 
 ### PostScript索引標籤 {#postscript-tab}
 
@@ -124,7 +124,7 @@ hidefromtoc: yes
 | **[!UICONTROL 正在處理]** | 選擇「點陣化」，將檔案中的向量圖形轉換為點陣圖格式。 |
 | **[!UICONTROL 在演算後的影像中維持透明背景]** | 它會保留檔案的背景透明度。 |
 | **[!UICONTROL 解析度（畫素/英吋）]** | 決定解析度設定。 此設定決定檔案中每英吋顯示的畫素數目。 |
-| **[!UICONTROL 色域]** | · **[!UICONTROL 自動偵測]** — 保留檔案的色域。<br>· **[!UICONTROL 強製為RGB]** — 其會轉換為RGB色域。<br>· **[!UICONTROL 強製為CMYK]** — 轉換為CMYK色域。<br>· **[!UICONTROL 強製為灰階]** — 它會轉換為灰階色域。 |
+| **[!UICONTROL 色域]** | · **[!UICONTROL 自動偵測]** — 保留檔案的色域。<br>· **[!UICONTROL 強製為RGB]** — 它轉換為RGB色域。<br>· **[!UICONTROL 強製為CMYK]** — 轉換為CMYK色域。<br>· **[!UICONTROL 強製為灰階]** — 它轉換為灰階色域。 |
 
 ### Photoshop索引標籤 {#photoshop-tab}
 
@@ -136,7 +136,7 @@ hidefromtoc: yes
 | **[!UICONTROL 建立範本]** | 從PSD檔案中的圖層建立範本。 |
 | **[!UICONTROL 擷取文字]** | 擷取文字，讓使用者能在檢視器中搜尋文字。 |
 | **[!UICONTROL 將圖層延伸至背景大小]** | 將擷取的影像圖層大小延伸至背景圖層大小。 |
-| **[!UICONTROL 圖層命名]** | 將擷取的影像圖層大小延伸至背景圖層大小。<br>· **[!UICONTROL 圖層名稱]** — 將影像命名為PSD檔案中的圖層名稱。 例如，原始PSD檔案中名為「價格標籤」的圖層會變成名為「價格標籤」的影像。 不過，如果PSD檔案中的圖層名稱是預設的Photoshop圖層名稱（「背景」、「圖層1」、「圖層2」等等），則會以PSD檔案中的圖層編號來命名影像。 <br>· **[!UICONTROL Photoshop和圖層編號]** — 將影像命名為PSD檔案中的圖層編號，略過原始圖層名稱。 影像的命名方式為Photoshop檔案名稱及附加的圖層編號。 例如，名為`Spring Ad.psd`之檔案的第二個層名為`Spring Ad_2`，即使它在Photoshop中有非預設名稱。<br>· **[!UICONTROL Photoshop和圖層名稱]** — 將影像命名為PSD檔案之後，加上圖層名稱或圖層編號。 如果PSD檔案中的圖層名稱是預設的Photoshop圖層名稱，則會使用圖層編號。 例如，名為`Price Tag`的PSD檔案中名為`SpringAd`的圖層名為`Spring Ad_Price Tag`。 預設名稱為「圖層2」的圖層稱為`Spring Ad_2`。 |
+| **[!UICONTROL 圖層命名]** | 將擷取的影像圖層大小延伸至背景圖層大小。<br>· **[!UICONTROL 圖層名稱]** — 將影像命名為PSD檔案中的圖層名稱。 例如，原始PSD檔案中名為「價格標籤」的圖層會變成名為「價格標籤」的影像。 不過，如果PSD檔案中的圖層名稱是預設的Photoshop圖層名稱（「背景」、「圖層1」、「圖層2」等等），則會以PSD檔案中的圖層編號來命名影像。 <br>· **[!UICONTROL Photoshop和圖層編號]** — 將影像命名為PSD檔案中的圖層編號，略過原始圖層名稱。 影像的命名方式為Photoshop檔案名稱及附加的圖層編號。 例如，名為`Spring Ad.psd`之檔案的第二個圖層名為`Spring Ad_2`，即使它在Photoshop中有非預設名稱。<br>· **[!UICONTROL Photoshop和圖層名稱]** — 將影像命名為PSD檔案後接圖層名稱或圖層編號。 如果PSD檔案中的圖層名稱是預設的Photoshop圖層名稱，則會使用圖層編號。 例如，名為`SpringAd`的PSD檔案中名為`Price Tag`的圖層名為`Spring Ad_Price Tag`。 預設名稱為「圖層2」的圖層稱為`Spring Ad_2`。 |
 | **[!UICONTROL 錨點]** | 指定影像錨定在範本中的方式，範本是從PSD檔案產生的圖層構成所產生。 依預設，錨點是中心。 無論取代影像的外觀比例為何，置中錨點都可讓取代影像以最佳方式填滿相同的空間。 以不同外觀取代此影像的影像，在參照範本並使用引數替代時，實際上會佔據相同的空間。 如果您的應用程式需要替代影像來填滿範本中配置的空間，請變更為其他設定。 |
 
 ### PDF索引標籤 {#pdf-tab}
@@ -148,9 +148,9 @@ PDF在擷取時最多可考慮5000頁以供新上傳使用。 2022年12月31日�
 | PDF選項 | 說明 |
 | --- | --- |
 | **[!UICONTROL 正在處理]** | · **[!UICONTROL 無]** — 未完成任何PDF處理。<br>· **[!UICONTROL 縮圖]** — 擷取PDF檔案中的每個頁面，並將其轉換為縮圖影像。<br> · **[!UICONTROL 點陣化]** — 擷取PDF檔案中的頁面，並將向量影象轉換為點陣圖影像。 若要建立eCatalog，請選擇此選項。 |
-| **[!UICONTROL 擷取]** | · **[!UICONTROL 無]** — 未從PDF擷取任何搜尋字詞或連結。<br>· **[!UICONTROL 搜尋字詞]** — 系統會從PDF檔案擷取搜尋字詞，以啟用eCatalog檢視器的關鍵字搜尋。<br>· **[!UICONTROL 連結]** — 從PDF檔案中擷取連結，並將其轉換成eCatalog檢視器中使用的影像地圖。<br>· **[!UICONTROL 搜尋字詞和連結]** — 擷取搜尋字詞和連結，以用於eCatalog檢視器。 |
+| **[!UICONTROL 擷取]** | · **[!UICONTROL 無]** — 不會從PDF擷取搜尋字詞或連結。<br>· **[!UICONTROL 搜尋字詞]** — 系統會從PDF檔案擷取搜尋字詞，以啟用eCatalog檢視器的關鍵字搜尋。<br>· **[!UICONTROL 連結]** — 從PDF檔案擷取連結，並將其轉換成eCatalog檢視器中使用的影像地圖。<br>· **[!UICONTROL 搜尋字詞和連結]** — 擷取搜尋字詞和連結以用於eCatalog檢視器。 |
 | **[!UICONTROL 解析度（畫素/英吋）]** | 決定解析度設定。 此設定決定每英吋在PDF檔案中顯示的畫素數。 預設值為150。 |
-| **[!UICONTROL 色域]** | · **[!UICONTROL 自動偵測]** — 保留PDF檔案的色域。<br>· **[!UICONTROL 強製為RGB]** — 其會轉換為RGB色域。<br>· **[!UICONTROL 強製為CMYK]** — 它轉換為CMYK色域。<br>· **[!UICONTROL 強製為灰階]** — 轉換為灰階色域。 |
+| **[!UICONTROL 色域]** | · **[!UICONTROL 自動偵測]** — 保留PDF檔案的色域。<br>· **[!UICONTROL 強製為RGB]** — 它轉換為RGB色域。<br>· **[!UICONTROL 強製為CMYK]** — 它轉換為CMYK色域。<br>· **[!UICONTROL 強製為灰階]** — 轉換為灰階色域。 |
 
 ### Illustrator索引標籤 {#illustrator-tab}
 
@@ -166,4 +166,4 @@ PDF在擷取時最多可考慮5000頁以供新上傳使用。 2022年12月31日�
 | **[!UICONTROL 正在處理]** | 選擇「點陣化」，將檔案中的向量圖形轉換為點陣圖格式。 |
 | **[!UICONTROL 在演算後的影像中維持透明背景]** | 它會保留檔案的背景透明度。 |
 | **[!UICONTROL 解析度（畫素/英吋）]** | 決定解析度設定。 此設定決定檔案中每英吋顯示的畫素數目。 |
-| **[!UICONTROL 色域]** | · **[!UICONTROL 自動偵測]** — 保留檔案的色域。<br>· **[!UICONTROL 強製為RGB]** — 其會轉換為RGB色域。<br>· **[!UICONTROL 強製為CMYK]** — 轉換為CMYK色域。<br>· **[!UICONTROL 強製為灰階]** — 轉換為灰階色域。 |
+| **[!UICONTROL 色域]** | · **[!UICONTROL 自動偵測]** — 保留檔案的色域。<br>· **[!UICONTROL 強製為RGB]** — 它轉換為RGB色域。<br>· **[!UICONTROL 強製為CMYK]** — 轉換為CMYK色域。<br>· **[!UICONTROL 強製為灰階]** — 轉換為灰階色域。 |

@@ -5,10 +5,10 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Developer
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: c2b849ef25afd0809891a822a99ddd3059bf1919
 workflow-type: tm+mt
-source-wordcount: '2662'
-ht-degree: 54%
+source-wordcount: '2888'
+ht-degree: 55%
 
 ---
 
@@ -18,17 +18,17 @@ ht-degree: 54%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_uitesting"
 >title="UI 測試"
->abstract="自訂 UI 測試是一項選擇性功能，可讓您為應用程式建立和自動執行 UI 測試。使用者介面測試為 Selenium 型測試，打包在 Docker 影像中，能對語言和框架進行廣泛的選擇。例如 Java 和 Maven、Node 和 WebDriver.io，或任何其他以 Selenium 為基礎的架構和技術。"
+>abstract="自訂 UI 測試是一項選擇性功能，可讓您為應用程式建立和自動執行 UI 測試。 使用者介面測試為 Selenium 型測試，打包在 Docker 影像中，能對語言和框架進行廣泛的選擇。 例如 Java 和 Maven、Node 和 WebDriver.io，或任何其他以 Selenium 為基礎的架構和技術。"
 
 自訂 UI 測試是一項選擇性功能，可讓您為應用程式建立和自動執行 UI 測試。
 
 ## 概觀 {#custom-ui-testing}
 
-AEM 提供了[Cloud Manager 品質關卡](/help/implementing/cloud-manager/custom-code-quality-rules.md)整合套件，以確保自訂應用程序順利更新。尤其是 IT 測試門已經支援使用 AEM API 建立和自動化自訂測試。
+AEM 提供了[Cloud Manager 品質關卡](/help/implementing/cloud-manager/custom-code-quality-rules.md)整合套件，以確保自訂應用程序順利更新。 尤其是 IT 測試門已經支援使用 AEM API 建立和自動化自訂測試。
 
-UI 測試是封裝在 Docker 映像檔中，提供廣泛的語言和架構 (例如 Cypress、Selenium、Java 和 Maven 以及 JavaScript) 選擇。此外，使用[AEM專案原型](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/developing/archetype/overview)可輕鬆產生UI測試專案。
+UI 測試是封裝在 Docker 映像檔中，提供廣泛的語言和架構 (例如 Cypress、Selenium、Java 和 Maven 以及 JavaScript) 選擇。 此外，使用[AEM專案原型](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-core-components/using/developing/archetype/overview)可輕鬆產生UI測試專案。
 
-Adobe 鼓勵使用 Cypress，因為它提供即時重新載入和自動等待功能，有助於節省時間及提高測試期間的工作效率。Cypress也提供簡單且直覺式的語法，讓您輕鬆學習及使用，即使是初次測試的使用者亦然。
+Adobe 鼓勵使用 Cypress，因為它提供即時重新載入和自動等待功能，有助於節省時間及提高測試期間的工作效率。 Cypress也提供簡單且直覺式的語法，讓您輕鬆學習及使用，即使是初次測試的使用者亦然。
 
 UI測試會在&#x200B;[**自訂UI測試**](/help/implementing/cloud-manager/deploy-code.md)&#x200B;步驟中作為品質閘道執行 — 在[生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)中是必要的，在[非生產管道](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)中是選用的。 包括回歸和新功能在內的任何 UI 測試都可以偵測和報告錯誤。
 
@@ -64,7 +64,7 @@ UI測試會在&#x200B;[**自訂UI測試**](/help/implementing/cloud-manager/depl
 
 ## 建立UI測試 {#building-ui-tests}
 
-一個 Maven 項目會產生一個 Docker 建置內容。此 Docker 建置內容旨在說明如何建立包含 UI 測試的 Docker 映像，Cloud Manager 會用來透過該影像產生包含實際 UI 測試的 Docker 映像。
+一個 Maven 項目會產生一個 Docker 建置內容。 此 Docker 建置內容旨在說明如何建立包含 UI 測試的 Docker 映像，Cloud Manager 會用來透過該影像產生包含實際 UI 測試的 Docker 映像。
 
 本節介紹將 UI 測試項目新增到存放庫所需的步驟。
 
@@ -94,7 +94,7 @@ UI測試會在&#x200B;[**自訂UI測試**](/help/implementing/cloud-manager/depl
 └── wait-for-grid.sh
 ```
 
-這`pom.xml`文件負責 Maven 構建。將執行新增到 Maven 程序集插件，類似於以下內容。
+這`pom.xml`文件負責 Maven 構建。 將執行新增到 Maven 程序集插件，類似於以下內容。
 
 ```xml
 <plugin>
@@ -118,7 +118,7 @@ UI測試會在&#x200B;[**自訂UI測試**](/help/implementing/cloud-manager/depl
 </plugin>
 ```
 
-此執行指示 Maven 程序集插件根據包含在`assembly-ui-test-docker-context.xml`，稱為&#x200B;**程序集描述符**&#x200B;在插件的行話中。程序集描述符列出了必須是歸檔一部分的所有文件。
+此執行指示 Maven 程序集插件根據包含在`assembly-ui-test-docker-context.xml`，稱為&#x200B;**程序集描述符**&#x200B;在插件的行話中。 程序集描述符列出了必須是歸檔一部分的所有文件。
 
 ```xml
 <assembly>
@@ -147,17 +147,17 @@ UI測試會在&#x200B;[**自訂UI測試**](/help/implementing/cloud-manager/depl
 </assembly>
 ```
 
-程序集描述符指示插件建立類型的封存`.tar.gz`並指派`ui-test-docker-context`分類器。此外，它列出了必須包含在封存中的檔案，包括以下內容：
+程序集描述符指示插件建立類型的封存`.tar.gz`並指派`ui-test-docker-context`分類器。 此外，它列出了必須包含在封存中的檔案，包括以下內容：
 
 * 一個 `Dockerfile`，構建 Docker 映像所必需的
 * `wait-for-grid.sh` 腳本，其用途如下所述
 * 由 Node.js 項目實現的實際 UI 測試`test-module`資料夾
 
-程序集描述符還排除了在本機執行 UI 測試時可能產生的一些文件。這保證了更小的封存和更快的建構。
+程序集描述符還排除了在本機執行 UI 測試時可能產生的一些文件。 這保證了更小的封存和更快的建構。
 
 Cloud Manager在部署管道期間自動提取Docker build-context封存並構建測試映像。 最後，Cloud Manager會執行Docker影像，對您的應用程式執行UI測試。
 
-建構應產生零個或一個封存。如果產生零個封存，則測試步驟預設透過。如果建置產生多個封存，則無法確定要選擇哪個封存。
+建構應產生零個或一個封存。 如果產生零個封存，則測試步驟預設透過。 如果建置產生多個封存，則無法確定要選擇哪個封存。
 
 ### 客戶選擇加入 {#customer-opt-in}
 
@@ -186,7 +186,7 @@ Cloud Manager在部署管道期間自動提取Docker build-context封存並構�
 >
 >如果您的專案不包含此行，請編輯檔案以選擇進行UI測試。
 >
->檔案可能包含一行，顯示&#x200B;*DO NOT MODIFY*。 這只是舊版範本/範例的舊版警告，並&#x200B;*不會*&#x200B;阻止您進行Cloud Manager UI測試所需的選擇加入編輯。 您可以安全地忽略建議；遵循選擇加入步驟時（例如，加入`assembly-ui-test-docker-context.xml`），您可以在`pom.xml`您的專案&#x200B;*中編輯*&#x200B;和`testing.properties`。
+>檔案可能包含一行，顯示&#x200B;*DO NOT MODIFY*。 這只是舊版範本/範例的舊版警告，並&#x200B;*不會*&#x200B;阻止您進行Cloud Manager UI測試所需的選擇加入編輯。 您可以安全地忽略建議；遵循選擇加入步驟時（例如，加入`testing.properties`），您可以在&#x200B;*您的專案*&#x200B;中編輯`assembly-ui-test-docker-context.xml`和`pom.xml`。
 
 如果您是使用 Adobe 提供的範例：
 
@@ -204,7 +204,7 @@ Cloud Manager在部署管道期間自動提取Docker build-context封存並構�
 
 ## 編寫UI測試 {#writing-ui-tests}
 
-本節介紹包含 UI 測試的 Docker 映像必須遵循的約定。Docker 映像是根據上一節中描述的 Docker 建置內容建構的。
+本節介紹包含 UI 測試的 Docker 映像必須遵循的約定。 Docker 映像是根據上一節中描述的 Docker 建置內容建構的。
 
 ### 環境變數 {#environment-variables}
 
@@ -246,13 +246,13 @@ Cypress: 使用標準函數 `Cypress.env('VARIABLE_NAME')`
 
 ### 產生測試報告 {#generate-test-reports}
 
-Docker 映像必須產生 JUnit XML 格式的測試報告，並保存在環境變數 `REPORTS_PATH` 指定的路徑中。JUnit XML 格式是廣泛使用的測試結果報告格式。如果 Docker 映像使用 Java 和 Maven，標準測試模組如 [Maven Surefire 插件](https://maven.apache.org/surefire/maven-surefire-plugin/)和 [Maven 故障安全插件](https://maven.apache.org/surefire/maven-failsafe-plugin/)可以開箱即用地產生此類報告。
+Docker 映像必須產生 JUnit XML 格式的測試報告，並保存在環境變數 `REPORTS_PATH` 指定的路徑中。 JUnit XML 格式是廣泛使用的測試結果報告格式。 如果 Docker 映像使用 Java 和 Maven，標準測試模組如 [Maven Surefire 插件](https://maven.apache.org/surefire/maven-surefire-plugin/)和 [Maven 故障安全插件](https://maven.apache.org/surefire/maven-failsafe-plugin/)可以開箱即用地產生此類報告。
 
 如果 Docker 映像是使用其他編程語言或測試執行計畫實現的，請查看所選工具的文件以了解如何產生 JUnit XML 報告。
 
 >[!NOTE]
 >
->UI 測試步驟的結果僅根據測試報告進行評估。確保為您的測試執行產生相應的報告。
+>UI 測試步驟的結果僅根據測試報告進行評估。 確保為您的測試執行產生相應的報告。
 >
 >使用斷言而不是僅將錯誤記錄到 STDERR 或返回非零退出程式碼，否則您的部署管道可能會正常進行。
 >
@@ -276,7 +276,7 @@ Docker 映像必須產生 JUnit XML 格式的測試報告，並保存在環境�
 | 建議的持續時間 | 15m | Adobe建議在此時間限制內進行測試。 |
 
 * 如果目標作者/發佈受到IP允許清單的保護，則管道UI測試基礎結構必須列入允許清單，否則UI測試可能會失敗並出現403禁止名單。
-另請參閱[由於IP允許清單](https://experienceleague.adobe.com/zh-hant/docs/experience-cloud-kcs/kbarticles/ka-26654#)和[IP允許清單簡介](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)，AEMaaCS中的UI測試失敗。
+另請參閱[由於IP允許清單](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26654#)和[IP允許清單簡介](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)，AEMaaCS中的UI測試失敗。
 
 >[!NOTE]
 >
@@ -290,7 +290,7 @@ Docker 映像必須產生 JUnit XML 格式的測試報告，並保存在環境�
 
 ### 等待Selenium準備就緒 {#waiting-for-selenium}
 
-在測試開始之前，Docker 映像負責確保 Selenium 伺服器啟動並執行。等待 Selenium 服務有兩個步驟。
+在測試開始之前，Docker 映像負責確保 Selenium 伺服器啟動並執行。 等待 Selenium 服務有兩個步驟。
 
 1. 從 `SELENIUM_BASE_URL` 環境變數中讀取 Selenium 服務的 URL。
 1. 定期輪詢Selenium API公開的[狀態端點](https://github.com/SeleniumHQ/docker-selenium/#waiting-for-the-grid-to-be-ready)。
@@ -302,7 +302,7 @@ Adobe的UI測試範例使用`wait-for-grid.sh`。 它在Docker啟動時執行，
 
 ### 擷取螢幕擷圖和影片 {#capture-screenshots}
 
-Docker 映像檔可能會產生額外的測試輸出 (例如螢幕擷圖或影片)，並保存在環境變數 `REPORTS_PATH` 指定的路徑中。在 `REPORTS_PATH` 下找到的任何檔案都包含在測試結果封存檔中。
+Docker 映像檔可能會產生額外的測試輸出 (例如螢幕擷圖或影片)，並保存在環境變數 `REPORTS_PATH` 指定的路徑中。 在 `REPORTS_PATH` 下找到的任何檔案都包含在測試結果封存檔中。
 
 Adobe 提供的測試範例依預設為任何失敗的測試建立螢幕擷圖。
 
@@ -314,11 +314,11 @@ Adobe 提供的測試範例依預設為任何失敗的測試建立螢幕擷圖�
 * Java: [Commands](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java)
 -->
 
-如果在UI測試執行期間建立測試結果封存檔，您可以按一下`Download Details`自訂UI測試&#x200B;[**步驟**&#x200B;下的](/help/implementing/cloud-manager/deploy-code.md)按鈕，從Cloud Manager下載它。
+如果在UI測試執行期間建立測試結果封存檔，您可以按一下&#x200B;[**自訂UI測試**&#x200B;步驟](/help/implementing/cloud-manager/deploy-code.md)下的`Download Details`按鈕，從Cloud Manager下載它。
 
 ### 上傳檔案 {#upload-files}
 
-測試有時必須將文件上傳到被測試的應用程式。為了使Selenium的部署相對於您的測試保持靈活，不能直接將資產上傳到Selenium。 相反，上傳文件需要以下步驟。
+測試有時必須將文件上傳到被測試的應用程式。 為了使Selenium的部署相對於您的測試保持靈活，不能直接將資產上傳到Selenium。 相反，上傳文件需要以下步驟。
 
 1. 在指定的 URL 上傳檔案 `UPLOAD_URL` 環境變數。
    * 上傳必須在一個帶有多部分表單的 POST 要求中執行。
@@ -559,6 +559,6 @@ if (proxyServer !== '') {
 
 >[!NOTE]
 >
->記錄檔案會儲存在您的存放庫的 `target/reports` 資料夾中.
+>記錄檔案會儲存在您的存放庫的 `target/reports` 資料夾中。
 >
 >如需詳細資訊，請參閱[AEM測試範例存放庫](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md)。

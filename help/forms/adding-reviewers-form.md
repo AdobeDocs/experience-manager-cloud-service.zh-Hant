@@ -11,10 +11,10 @@ hide: true
 hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: 27c52969-1213-4fd3-8e16-988caafb4ad6
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 0%
+source-wordcount: '514'
+ht-degree: 2%
 
 ---
 
@@ -61,13 +61,13 @@ ht-degree: 0%
 執行以下步驟之前，請參閱[先決條件](adding-reviewers-form.md#prerequisite)。
 
 若要建立群組並新增成員，請瀏覽至&#x200B;**工具** > **作業** > **安全性** > **群組**。
-如需詳細資訊，請參閱[使用者管理與服務](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=zh-Hant)。
+如需詳細資訊，請參閱[使用者管理與服務](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html)。
 請確定您將建立的群組新增為現成使用者群組的成員： **forms-submission-reviewers**。 此使用者群組已隨附[!DNL AEM Forms]，而且可確保將使用者新增為提交稽核者。
 
 若要將使用者群組與最適化表單產生關聯：
 
 1. 在撰寫模式中，導覽至&#x200B;**Forms** > **Forms和檔案**。
-1. 使用&#x200B;**選取**&#x200B;選項選取最適化表單，然後按一下&#x200B;**檢視屬性**。
+1. 使用&#x200B;**選取**&#x200B;選項選取最適化表單，然後按一下**檢視屬性**。
 1. 在表單的[內容]視窗中，按一下[**編輯**]，然後按一下[**進階**]。
 1. 在提交稽核者群組欄位中輸入群組，然後按一下&#x200B;**完成**。
 

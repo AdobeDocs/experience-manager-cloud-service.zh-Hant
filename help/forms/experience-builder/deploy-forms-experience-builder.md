@@ -7,9 +7,9 @@ hidefromtoc: true
 role: Admin, Developer
 badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: 977f227e-e941-4797-ba74-53d5b8c60ca9
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1428'
 ht-degree: 75%
 
 ---
@@ -22,9 +22,9 @@ ht-degree: 75%
 
 >[!IMPORTANT]
 >
-> **文件內容可能隨時變更**：此文件目前正在針對產品進行測試，可能會進行更新和修訂。隨著表單體驗建立工具在搶先體驗方案期間持續發展，相關的功能、命令和範例可能會有所變更。
+> **文件內容可能隨時變更**：此文件目前正在針對產品進行測試，可能會進行更新和修訂。 隨著表單體驗建立工具在搶先體驗方案期間持續發展，相關的功能、命令和範例可能會有所變更。
 
-本綜合指南能協助您開始使用對話式 AI 技術建立和管理表單。無論您是想要建立第一個表單的新手，還是希望善用複雜功能的進階使用者，都能夠找到詳細資訊和實際範例引導您了解表單體驗建立工具的功能。
+本綜合指南能協助您開始使用對話式 AI 技術建立和管理表單。 無論您是想要建立第一個表單的新手，還是希望善用複雜功能的進階使用者，都能夠找到詳細資訊和實際範例引導您了解表單體驗建立工具的功能。
 
 ## 必要條件和設定
 
@@ -48,7 +48,7 @@ ht-degree: 75%
 
 如果您使用Edge Delivery Services Forms，且主要使用通用編輯器。 [為Edge Delivery Services Forms準備專案](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)。 此為一次性設定，可啟用Forms Experience Builder。
 
-針對核心元件型表單&#x200B;**&#x200B;**
+針對核心元件型表單&#x200B;****
 
 如果您在AEM製作環境中使用以Forms核心元件為基礎的調適型，請確定已針對您的環境啟用[調適型Forms核心元件](/help/forms/enable-adaptive-forms-core-components.md)。
 
@@ -90,7 +90,7 @@ ht-degree: 75%
 
 | 代碼 | 用途 | 使用範例 |
 |--------|---------|---------------|
-| `/` | 快速動作和快速鍵 | `/create-form contact form`、`/help validation rules`、`/update-layout wizard` |
+| `/` | 快速動作和快速鍵 | `/create-form contact form`, `/help validation rules`, `/update-layout wizard` |
 | `@` | 參照現有的表單欄位 | `@email`、`@firstName`、`Make @phoneNumber required` |
 | 純文字 | 自然對話 | 「新增必填的電話號碼欄位」、「建立電子郵件驗證」 |
 

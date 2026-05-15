@@ -5,10 +5,10 @@ role: Admin, Developer, User
 feature: Adaptive Forms
 badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
-source-git-commit: fa8035f826a4d08c18bc0d2b7664015c6fc82698
+source-git-commit: c2b849ef25afd0809891a822a99ddd3059bf1919
 workflow-type: tm+mt
-source-wordcount: '213'
-ht-degree: 22%
+source-wordcount: '259'
+ht-degree: 19%
 
 ---
 
@@ -16,10 +16,10 @@ ht-degree: 22%
 
 | 版本 | 文章連結 |
 | -------- | ---------------------------- |
-| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/forms-groups-privileges-tasks.html?lang=zh-Hant) |
-| AEM as a Cloud Service  | 本文章 |
+| AEM 6.5 | [按一下這裡](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/forms-groups-privileges-tasks.html) |
+| AEM as a Cloud Service | 本文章 |
 
-您可以[建立群組](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=zh-Hant#accessing)，並將原則和[使用者](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=zh-Hant#accessing)指派給群組。 這些原則可控制屬於群組之使用者的許可權。
+您可以[建立群組](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing)，並將原則和[使用者](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing)指派給群組。 這些原則可控制屬於群組之使用者的許可權。
 
 設定[!DNL AEM Forms] as a Cloud Service後，下表列出的群組（例如[!DNL forms-users]和forms-power-user）便會自動可供指派：
 
@@ -52,7 +52,7 @@ ht-degree: 22%
      <li>Import packages containing XDP</li> 
     </ul> </td> 
   </tr>
- <tr>
+  <tr>
    <td>forms-submission-reviewers</td> 
    <td>
     <ul> 
@@ -83,16 +83,12 @@ ht-degree: 22%
      <li>Access Correspondence Management letters or interactive communications using Agent UI</li> 
     </ul> </td> 
   </tr>
-  -->
-  <!--
-   <tr>
+  <tr>
    <td><p>workflow-editors</p> </td> 
    <td>
     <ul>
-    -->
-    <!-- <li>Create an inbox application</li>  -->
-    <!--
-     <li>Create a workflow model</li> 
+    <li>Create an inbox application</li>
+    <li>Create a workflow model</li> 
     </ul> </td> 
   </tr>
   <tr>
@@ -100,12 +96,10 @@ ht-degree: 22%
    <td>
     <ul> 
      <li>Use AEM inbox applications<br />
-     -->
-     <!-- 
      <strong>Note: </strong>You must have cm-agent-users and [!DNL workflow-users] group assignments to access Interactive Communications Agent UI in AEM inbox.</li>
-     -->
-    </ul> </td> 
+  </ul> </td> 
   </tr>
+  -->
   <tr>
    <td>[!DNL fd-administrators]</td> 
    <td>
@@ -124,7 +118,7 @@ ht-degree: 22%
 
 ## AEM Forms是否適用於保險營運的企業級？
 
-可以。AEM Forms提供企業功能，例如角色型存取控制、稽核軌跡、工作流程協調、檔案產生和部署彈性，這些都是大規模保險業務所需的功能。
+可以。 AEM Forms提供企業功能，例如角色型存取控制、稽核軌跡、工作流程協調、檔案產生和部署彈性，這些都是大規模保險業務所需的功能。
 
 ## 另請參閱
 

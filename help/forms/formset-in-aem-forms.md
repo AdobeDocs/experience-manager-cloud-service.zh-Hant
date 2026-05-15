@@ -12,9 +12,9 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '2809'
+source-wordcount: '2856'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ AEM Forms應用程式也支援表單集，可讓您的欄位員工離線建立�
 
 您可以將多個XDP或使用Designer建立的表單範本關聯到表單集中。 接著，即可使用表單集，根據使用者在初始表單及其設定檔中輸入的值，選擇性地轉譯XDP。
 
-使用[AEM Forms使用者介面](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/forms/getting-started/introduction-managing-forms)管理您的所有表單、表單集和相關資產。
+使用[AEM Forms使用者介面](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/getting-started/introduction-managing-forms)管理您的所有表單、表單集和相關資產。
 
 ### 建立表單集 {#create-a-form-set}
 
@@ -52,7 +52,7 @@ AEM Forms應用程式也支援表單集，可讓您的欄位員工離線建立�
    * Title：指定檔案的標題。 標題可協助您識別AEM Forms使用者介面中設定的表單。
    * 說明：指定檔案的詳細資訊。
    * 標籤：指定可唯一識別表單集的標籤。 標籤有助於搜尋表單集。 若要建立標籤，請在「標籤」方塊中鍵入新標簽名稱。
-   * 提交URL：指定針對表單集的獨立轉譯(非AEM Forms應用程式使用案例)發佈已提交資料的URL。 資料會透過下列請求引數，以multipart/formdata形式提交至此端點：
+   * 提交URL：指定針對表單集的獨立轉譯（非AEM Forms應用程式使用案例）發佈已提交資料的URL。 資料會透過下列請求引數，以multipart/formdata形式提交至此端點：
    * dataXML：此引數包含已提交表單集資料的XML表示法。 如果表單集中的所有表單都使用共同綱要，則會根據該綱要產生XML。 否則，XML根標籤會針對表單集中每個已填入的表單，包含一個子標籤，其中包含表單附件的資料。
    * formsetPath： CRXDE中已提交之表單集的路徑。
    * HTML演算設定檔：您可以設定某些選項，例如浮動欄位、附件和草稿支援（適用於獨立表單集轉譯），以自訂表單集的外觀、行為和互動。 您可以自訂或擴充現有設定檔，以變更任何HTML表單設定檔設定。
@@ -69,7 +69,7 @@ AEM Forms應用程式也支援表單集，可讓您的欄位員工離線建立�
 
    * 表單順序：拖放表單以重新排序。 表單順序會定義在AEM Forms應用程式和獨立轉譯中向一般使用者顯示表單的順序。
    * 表單識別碼：指定要用於適用性運算式之表單的唯一身分。
-   * 資料根：針對表單集中的每個表單，作者可以設定XPATH，該特定表單的資料會放置於提交的XML中。 預設值為/。 如果表單集中的所有表單都是結構描述繫結並共用相同的XML結構描述，您可以變更此值。 建議表單中的每個欄位都有XDP中指定的適當資料繫結。 如果兩個不同表單中的兩個欄位共用相同的資料繫結，則第二個表單中的欄位會顯示第一個表單中的預填值。 請勿將內部內容相同的兩個子表單繫結至相同的XML節點。 如需表單集的XML結構的詳細資訊，請參閱[預填表單集的XML](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/forms/html5-forms/formset-in-aem-forms#prefill-xml-for-form-set)。
+   * 資料根：針對表單集中的每個表單，作者可以設定XPATH，該特定表單的資料會放置於提交的XML中。 預設值為/。 如果表單集中的所有表單都是結構描述繫結並共用相同的XML結構描述，您可以變更此值。 建議表單中的每個欄位都有XDP中指定的適當資料繫結。 如果兩個不同表單中的兩個欄位共用相同的資料繫結，則第二個表單中的欄位會顯示第一個表單中的預填值。 請勿將內部內容相同的兩個子表單繫結至相同的XML節點。 如需表單集的XML結構的詳細資訊，請參閱[預填表單集的XML](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/html5-forms/formset-in-aem-forms#prefill-xml-for-form-set)。
    * 適用性運算式：指定JavaScript運算式，用於評估布林值並指示表單集中的表單是否符合填寫條件。 如果為false，則不會要求使用者填寫表單，甚至不會向其顯示要填寫的表單。 通常，運算式會根據此表單前擷取的欄位值。 運算式也包含對表單集API fs.valueOf的呼叫，以擷取使用者在表單集表單的欄位中填入的值：
 
    *fs.valueOf(&lt;Form Identifier>， &lt;fieldSom expression>) > &lt;value>*
@@ -377,11 +377,11 @@ AEM Forms應用程式可讓現場工作者將其行動裝置與AEM Forms伺服�
   </tr>
   <tr>
    <td>多個資料模式</td>
-   <td>num{zz，zzz} | num{z，zzz，zzz}</td>
+   <td>num{zz，zzz} |數字{z，zzz，zzz}</td>
   </tr>
   <tr>
    <td>速記模式 </td>
-   <td><p>num.integer{},</p> <p>num.decimal{},</p> <p>數字。%{}，或</p> <p>num.currency{}</p> </td>
+   <td><p>num.integer{}，</p> <p>num.decimal{}，</p> <p>數字。%{}，或</p> <p>num.currency{}</p> </td>
   </tr>
  </tbody>
 </table>

@@ -5,17 +5,17 @@ feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 role: User
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+exl-id: e53535a8-cd6b-4f30-9523-773243098757
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '338'
-ht-degree: 4%
+source-wordcount: '394'
+ht-degree: 5%
 
 ---
 
+# 建立和管理最適化表單的評論 {#review-step-forms-aem-sites-page}
 
-# 建立和管理最適化表單的稽核 {#review-step-forms-aem-sites-page}
-
-稽核者使用AEM工作流程的[指派步驟](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=zh-Hant#assign-task-step)，稽核提交的表單並對其執行動作。 若要使用「指派工作」步驟來複查已提交的表單，請遵循下列步驟：
+稽核者使用AEM工作流程的[指派步驟](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html#assign-task-step)，稽核提交的表單並對其執行動作。 若要使用「指派工作」步驟來複查已提交的表單，請遵循下列步驟：
 
 1. [建立AEM工作流程](#create-an-aem-workflow)
 1. [設定最適化表單容器的提交動作](#configure-submit-action)
@@ -46,7 +46,7 @@ ht-degree: 4%
 
 1. 移至網站的頁面。
 1. 選取最適化表單容器的![settings_icon](assets/settings_icon.png)。 **[!UICONTROL 最適化表單容器]**&#x200B;對話方塊開啟。
-1. 開啟&#x200B;**[!UICONTROL 提交]**&#x200B;索引標籤並指定&#x200B;**[!UICONTROL 提交動作]**&#x200B;至[叫用AEM工作流程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=zh-Hant#invoke-an-aem-workflow)
+1. 開啟&#x200B;**[!UICONTROL 提交]**&#x200B;索引標籤並指定&#x200B;**[!UICONTROL 提交動作]**&#x200B;至[叫用AEM工作流程](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=en#invoke-an-aem-workflow)
 
 1. 按一下[完成]以儲存設定。
 

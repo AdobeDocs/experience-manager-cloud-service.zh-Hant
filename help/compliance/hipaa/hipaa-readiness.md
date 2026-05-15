@@ -2,11 +2,12 @@
 title: Adobe Experience Manager as a Cloud Service的HIPAA整備
 description: 瞭解對HIPAA法規的Experience Manager as a Cloud Service支援，以及實作新的AEM as a Cloud Service專案時如何遵守。
 feature: Compliance
-role: Admin, Architect, Developer, Leader
-source-git-commit: 49721ac71bc2bde10eb5f25db58ee1b07c8a82e5
+role: Admin, Developer, Leader
+exl-id: 9928811e-3487-430a-9e2f-04959460c95f
+source-git-commit: c2b849ef25afd0809891a822a99ddd3059bf1919
 workflow-type: tm+mt
-source-wordcount: '983'
-ht-degree: 6%
+source-wordcount: '1029'
+ht-degree: 7%
 
 ---
 
@@ -132,7 +133,7 @@ Adobe HIPAA就緒服務仰賴共擔責任安全模式，要求客戶和Adobe各�
 
 下表顯示環境型別可在何處支援為HIPAA就緒。
 
-| | RDE | 開發 | 階段  | Prod |
+| | RDE | 開發 | 測試  | Prod |
 | --- | --- | --- | --- | --- |
 | 環境型別  | 否  | 否  | 否  | 是  |
 

@@ -10,9 +10,9 @@ hidefromtoc: true
 index: false
 badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: 50d7ce19-7d76-4ea1-a54c-8ca0e5379982
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '2329'
+source-wordcount: '2397'
 ht-degree: 1%
 
 ---
@@ -58,7 +58,7 @@ Adobe Experience Manager Forms as a Cloud Service提供全方位的平台，可�
 **加入程式：**
 率先存取創新內容，並協助塑造AEM Forms的未來。
 
-[要求存取權→](mailto:aem-forms-ea@adobe.com) | [深入瞭解→](/help/forms/early-access-ea-features.md)
+[要求存取→](mailto:aem-forms-ea@adobe.com) | [進一步瞭解→](/help/forms/early-access-ea-features.md)
 
 
 ## 核心功能 {#core-capabilities}
@@ -67,11 +67,11 @@ AEM Forms支援從初始建立到持續最佳化的完整數位表單歷程。 �
 
 **AEM Forms工作流程歷程：**
 
-    建立→控管→發佈→擷取→程式→整合→追蹤→封存→改善
-    ↓        ↓        ↓         ↓         ↓         ↓          ↓       ↓        ↓
-    設計   檢閱   部署   收集   控點   連線   監視器存放區   最佳化
-    ↑                                                                              ↓
-    ←←←←←←←←←←←←←←←持續改善回圈←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←
+    建立→控管→發佈→擷取→處理序→整合→追蹤→封存→改善
+    ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↑
+    設計檢閱部署收集控制代碼連線監視器存放區最佳化
+    ↓ ←←←←←←←←←←←←←←←
+    ←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←持續改善回圈
 
 ### 建立：表單設計與開發 {#create}
 
@@ -84,12 +84,12 @@ AEM Forms支援從初始建立到持續最佳化的完整數位表單歷程。 �
 透過[Edge Delivery Services](/help/edge/docs/forms/overview.md)，使用熟悉的工具（例如Microsoft Excel）建立表單。 此方法可讓內容作者在不具備技術專業知識的情況下建立高效能表單，同時取得優異的Google Lighthouse分數。
 
 **範本和主題**
-使用預先建立的[範本](/help/forms/template-editor-core-components.md) （定義結構和初始內容）加速表單建立。 套用一致品牌化與[主題](/help/forms/using-themes-in-core-components.md)，控制多個表單的視覺樣式，確保設計一致並縮短開發時間。
+使用定義結構和初始內容的預先建立[範本](/help/forms/template-editor-core-components.md)加速表單建立。 套用一致品牌化與[主題](/help/forms/using-themes-in-core-components.md)，控制多個表單的視覺樣式，確保設計一致並縮短開發時間。
 
 **資料整合**
 在設計階段將表單連線到後端系統。 [表單資料模型](/help/forms/create-form-data-models.md)提供可連線多個資料來源的統一介面，啟用[預先填入](/help/forms/prepopulate-adaptive-form-fields.md)、[驗證規則](/help/forms/rule-editor-core-components.md)，以及表單與業務系統之間的順暢資料流。
 
-**驗證和條件邏輯**
+**驗證和條件式邏輯**
 實作[條件式邏輯](/help/forms/rule-editor-core-components.md)、漸進式揭露和調適型驗證，以引導使用者完成複雜的程式。 [儲存並繼續功能](/help/forms/save-core-component-based-form-as-draft.md)可讓使用者跨多個工作階段完成表單。
 
 **HTML5 Forms**
@@ -116,7 +116,7 @@ AEM Forms支援從初始建立到持續最佳化的完整數位表單歷程。 �
 跨多個管道和接觸點部署表單，以便聯絡任何位置的使用者。
 
 **全通路發佈**
-將表單發佈至[AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md)、獨立網頁、行動應用程式，或[內嵌在協力廠商系統](/help/forms/embed-adaptive-form-core-components-external-web-page.md)。 單一來源發佈可確保一致性，同時適應不同的頻道需求。
+將表單發佈至[AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md)、獨立網頁、行動應用程式，或[內嵌於協力廠商系統](/help/forms/embed-adaptive-form-core-components-external-web-page.md)。 單一來源發佈可確保一致性，同時適應不同的頻道需求。
 
 **本地化與Personalization**
 使用[AEM的翻譯工作流程](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)以多種語言傳遞表單，同時支援[由左至右及由右至左的語言](/help/forms/right-left-languages.md)。 與Adobe Target整合，根據使用者區段、行為或內容資料來個人化表單體驗。
@@ -138,7 +138,7 @@ Forms會自動適應不同的熒幕大小和輸入方法。 觸控最佳化的�
 整合[Adobe Sign](/help/forms/working-with-adobe-sign.md)，以在表單體驗中取得合法繫結的電子簽章。 使用者無需離開表單即可簽署檔案，簡化核准流程並減少放棄情形。
 
 **提交動作**
-設定[提交動作](/help/forms/configure-submit-actions-core-components.md)，以定義使用者完成並提交表單時會發生的情況。 將資料路由至電子郵件、資料庫、工作流程或外部系統，同時提供立即的意見回饋和確認給使用者。
+設定[提交動作](/help/forms/configure-submit-actions-core-components.md)以定義使用者完成並提交表單時會發生什麼情況。 將資料路由至電子郵件、資料庫、工作流程或外部系統，同時提供立即的意見回饋和確認給使用者。
 
 ### 處理：提交處理與路由 {#process}
 
@@ -148,7 +148,7 @@ Forms會自動適應不同的熒幕大小和輸入方法。 觸控最佳化的�
 透過伺服器端驗證和自動化處理規則，確保資料完整性。 為使用者產生回條、確認或後續追蹤資料時，轉換、驗證及遞送提交的資料。
 
 **通訊API**
-透過[RESTful API](/help/forms/aem-forms-cloud-service-communications-introduction.md)以程式設計方式產生、操控及保護檔案。 建立PDF、可供列印的格式、組合檔案、套用數位簽章，以及處理企業規模檔案工作流程的大量批次作業[&#128279;](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)。
+透過[RESTful API](/help/forms/aem-forms-cloud-service-communications-introduction.md)以程式設計方式產生、操控及保護檔案。 建立PDF、可供列印的格式、組合檔案、套用數位簽章，以及處理企業規模檔案工作流程的大量批次作業[](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)。
 
 **記錄檔案**
 自動產生表單提交的PDF記錄，以供遵循和使用者確認。 [記錄檔案](/help/forms/generate-document-of-record-core-components.md)會建立已完成表單的格式化、可列印版本，其中包含提交的資料，提供交易和法規要求的正式檔案。
@@ -192,7 +192,7 @@ Forms會自動適應不同的熒幕大小和輸入方法。 觸控最佳化的�
 
 安全地儲存和管理表單提交和產生的檔案，以供長期保留和法規遵循。
 
-**檔案儲存空間**
+**檔案儲存**
 在AEM的數位資產管理系統中儲存產生的檔案和表單提交，或與外部檔案存放庫（例如[SharePoint](/help/forms/configure-submit-action-sharepoint.md)、[OneDrive](/help/forms/configure-submit-action-onedrive.md)或[Azure Blob儲存空間](/help/forms/configure-submit-action-azure-blob-storage.md)）整合。
 
 **法規遵循與保留**
@@ -299,7 +299,7 @@ Forms會自動適應不同的熒幕大小和輸入方法。 觸控最佳化的�
 表單工作流程自動化會透過核准程式遞送提交、指派任務給團隊成員，以及在其他業務系統中觸發動作。 如此可免除手動處理，並確保以一致的方式處理表單資料。
 
 **如何讓殘障人士也能使用表格？**
-[可存取的表單](/help/forms/creating-accessible-adaptive-forms.md)包括適當的標籤、鍵盤導覽、熒幕閱讀器相容性，以及符合WCAG准則。 這可確保所有使用者都能完成表單，無論其能力或輔助技術為何。
+[可存取的表單](/help/forms/creating-accessible-adaptive-forms.md)包含適當的標籤、鍵盤導覽、熒幕閱讀器相容性，以及符合WCAG准則。 這可確保所有使用者都能完成表單，無論其能力或輔助技術為何。
 
 **表單產生器的費用是多少？**
 AEM Forms as a Cloud Service的定價取決於您的特定需求、使用量和功能需求。 如需詳細的定價資訊，以及討論適合您組織的解決方案，請聯絡Adobe銷售人員或您的Adobe代表。

@@ -1,6 +1,6 @@
 ---
 title: 最適化Forms快速入門。
-description: 請透過我們的逐步教學課程了解如何建立行動回應式最適化表單。這些表單可以在裝置之間無縫調適，確保流暢的體驗。
+description: 請透過我們的逐步教學課程了解如何建立行動回應式最適化表單。 這些表單可以在裝置之間無縫調適，確保流暢的體驗。
 keywords: 最適化Forms、回應式Forms、HTML5 Forms
 feature: Adaptive Forms, Core Components
 role: User, Developer
@@ -9,9 +9,9 @@ hide: true
 hidefromtoc: true
 badgeSaas: label="AEM Forms" type="Positive" tooltip="適用於AEM Forms)。"
 exl-id: b59cb56c-9629-48e4-b5c9-a861013a1360
-source-git-commit: 89b0f2a8ca9d2f60365a5c3962b0b4e826f79b3e
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '1035'
 ht-degree: 3%
 
 ---
@@ -69,7 +69,7 @@ AEM Forms提供基礎元件和核心元件，以建立表單體驗。 核心元�
 
 **準備開始嗎？**
 
-1. [設定AEM專案的開發工具](/help/forms/setup-local-development-environment.md#set-up-development-tools-for-aem-projects)：下載並安裝最新版本的[Java 11™](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=zh-Hant#local-development-environment-set-up)、[Git](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=zh-Hant#install-git)、[Node.js (npm)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=zh-Hant#node-js)和[Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=zh-Hant#install-maven)。 另外安裝純文字編輯器，本教學課程中的範例是以Visual Studio Code為基礎。
+1. [設定AEM專案的開發工具](/help/forms/setup-local-development-environment.md#set-up-development-tools-for-aem-projects)：下載並安裝最新版本的[Java 11™](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=en#local-development-environment-set-up)、[Git](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=en#install-git)、[Node.js (npm)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=en#node-js)和[Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=en#install-maven)。 另外安裝純文字編輯器，本教學課程中的範例是以Visual Studio Code為基礎。
 
 1. [安裝AEM SDK](/help/forms/setup-local-development-environment.md#set-up-local-experience-manager-environment-for-development)：下載並安裝最新版的AEM SDK。 這提供了AEM開發的基本工具。 記下AEM SDK版本。
 

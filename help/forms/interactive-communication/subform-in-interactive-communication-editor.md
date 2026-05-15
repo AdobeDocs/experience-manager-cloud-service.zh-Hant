@@ -7,10 +7,10 @@ role: User, Developer, Admin
 hide: true
 index: false
 hidefromtoc: true
-source-git-commit: 81f85045212ca6fd92f2b665aeceaa0d4b92318c
+source-git-commit: cc3cd74ad87f4213a200f36745ab3d335edca02d
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 2%
+source-wordcount: '484'
+ht-degree: 4%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 2%
 
 透過使用子表單，作者可以維持一致性、管理分頁，並將整個區段繫結到結構化資料來源。
 
-## 2.屬性
+## &#x200B;2. 屬性
 
 2.1表單設計版面配置
 
@@ -53,7 +53,7 @@ ht-degree: 2%
 
 - 根據資料結構，支援靜態和動態內容母體。
 
-## 3.使用狀況
+## &#x200B;3. 用途
 
 子表單廣泛用於：
 
@@ -69,7 +69,7 @@ ht-degree: 2%
 
 作者可以將子表單從「物件庫」拖曳到畫布中，並從「屬性」面板調整其版面、定位和繫結。
 
-## 4.最佳作法
+## &#x200B;4. 最佳做法
 
 - **明智地選擇版面配置：**&#x200B;針對需要確切位置的表單，使用固定版面配置；針對動態、資料導向的通訊，使用可流動的版面配置。
 
